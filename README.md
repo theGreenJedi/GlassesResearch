@@ -18,17 +18,28 @@ GlassesResearch exists to make scattered information about the W610/W6xx smart-g
 - **Prefer user control.** Explore local-first and vendor-independent integrations.
 - **Avoid needless rediscovery.** Record repeatable procedures and prior results.
 
+## Model chapters
+
+Each glasses model receives its own self-contained chapter under [`models/`](models/README.md). Device-specific hardware, BLE research, firmware, applications, manufacturing intelligence, diagnostics, diagrams, schematics, evidence, resources, and research history remain together inside that model's hierarchy.
+
+### Current model
+
+- [`models/W610/`](models/W610/README.md) — dedicated W610 research chapter
+
+Shared documents remain available for cross-model methods and repository-wide guidance.
+
 ## Repository map
 
-- [`docs/Hardware.md`](docs/Hardware.md) — physical design, components, controls, and teardown notes
-- [`docs/BLE.md`](docs/BLE.md) — discovery, services, characteristics, and protocol observations
-- [`docs/Firmware.md`](docs/Firmware.md) — firmware identification, acquisition, preservation, and analysis
+- [`models/`](models/README.md) — model-specific research chapters
+- [`docs/Hardware.md`](docs/Hardware.md) — shared physical research methods and initial notes
+- [`docs/BLE.md`](docs/BLE.md) — shared discovery and protocol methodology
+- [`docs/Firmware.md`](docs/Firmware.md) — firmware acquisition, preservation, and analysis guidance
 - [`docs/SDK.md`](docs/SDK.md) — vendor apps, SDKs, APIs, and integration notes
 - [`docs/AmazonModels.md`](docs/AmazonModels.md) — retail listings and model-family comparisons
-- [`docs/ReverseEngineering.md`](docs/ReverseEngineering.md) — methodology, experiments, and reproducible findings
+- [`docs/ReverseEngineering.md`](docs/ReverseEngineering.md) — methodology and reproducible experiment guidance
 - [`docs/AI610-Notes.md`](docs/AI610-Notes.md) — private-notebook findings prepared for public documentation
-- [`docs/ResearchLog.md`](docs/ResearchLog.md) — dated engineering-notebook entries and session findings
-- [`images/`](images/) — photographs, screenshots, diagrams, and other visual evidence
+- [`docs/ResearchLog.md`](docs/ResearchLog.md) — repository-wide dated engineering notes
+- [`images/`](images/) — shared photographs, screenshots, diagrams, and other visual evidence
 
 ## Evidence workflow
 
@@ -40,10 +51,10 @@ Recommended naming pattern:
 images/YYYY-MM-DD-topic/
 ```
 
-Example:
+Model-specific evidence should normally be stored inside the appropriate model chapter, such as:
 
 ```text
-images/2026-08-03-unboxing/
+models/W610/evidence/photos/YYYY-MM-DD-topic/
 ```
 
 See [`images/README.md`](images/README.md) for naming, provenance, privacy, and cataloging guidance.
