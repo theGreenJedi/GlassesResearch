@@ -27,7 +27,26 @@ GlassesResearch exists to make scattered information about the W610/W6xx smart-g
 - [`docs/AmazonModels.md`](docs/AmazonModels.md) — retail listings and model-family comparisons
 - [`docs/ReverseEngineering.md`](docs/ReverseEngineering.md) — methodology, experiments, and reproducible findings
 - [`docs/AI610-Notes.md`](docs/AI610-Notes.md) — private-notebook findings prepared for public documentation
-- [`images/`](images/) — photographs, diagrams, screenshots, and other visual evidence
+- [`docs/ResearchLog.md`](docs/ResearchLog.md) — dated engineering-notebook entries and session findings
+- [`images/`](images/) — photographs, screenshots, diagrams, and other visual evidence
+
+## Evidence workflow
+
+Visual evidence should be preserved alongside written observations rather than treated as decoration. Each photo set should have a dated folder and a short index describing what each image shows, where it came from, and whether it is original evidence or a third-party source.
+
+Recommended naming pattern:
+
+```text
+images/YYYY-MM-DD-topic/
+```
+
+Example:
+
+```text
+images/2026-08-03-unboxing/
+```
+
+See [`images/README.md`](images/README.md) for naming, provenance, privacy, and cataloging guidance.
 
 ## Current status
 
