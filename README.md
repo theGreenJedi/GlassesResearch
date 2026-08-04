@@ -9,6 +9,11 @@ The repository I wish I had when I began.
 ## Start here
 
 - [`WHY.md`](WHY.md) — why this project exists and what success means
+- [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — what GlassesResearch is building
+- [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — no orphan knowledge, no empty merges, and other operating rules
+- [`docs/INVESTIGATION_WORKFLOW.md`](docs/INVESTIGATION_WORKFLOW.md) — how investigations become durable pull requests
+- [`glossary/README.md`](glossary/README.md) — canonical homes for recurring organizations, components, applications, standards, and other entities
+- [`models/W610/resources/RESEARCH_PORTAL.md`](models/W610/resources/RESEARCH_PORTAL.md) — annotated, clickable routes for further W610 research
 - [`models/W610/QUESTIONS.md`](models/W610/QUESTIONS.md) — enter the W610 chapter through the question you are trying to answer
 - [`docs/EVIDENCE_STANDARD.md`](docs/EVIDENCE_STANDARD.md) — claim status, confidence, sourcing, and correction rules
 - [`models/W610/RESEARCH_BACKLOG.md`](models/W610/RESEARCH_BACKLOG.md) — the living investigation queue
@@ -25,6 +30,8 @@ GlassesResearch exists to make scattered information about the W610/W6xx smart-g
 - **Prefer user control.** Explore local-first and vendor-independent integrations.
 - **Avoid needless rediscovery.** Record repeatable procedures and prior results.
 - **Preserve corrections.** Mark disproven claims and retain the reasoning trail.
+- **No orphan knowledge.** Give recurring entities one canonical home and link back to it.
+- **No empty merges.** New structure must provide immediate value.
 
 ## Model chapters
 
@@ -34,11 +41,16 @@ Each glasses model receives its own self-contained chapter under [`models/`](mod
 
 - [`models/W610/`](models/W610/README.md) — dedicated W610 research chapter
 
-Shared documents remain available for cross-model methods and repository-wide guidance.
+Shared entities and repository-wide methods remain in canonical locations such as [`glossary/`](glossary/README.md) and [`docs/`](docs/).
 
 ## Repository map
 
 - [`models/`](models/README.md) — model-specific research chapters
+- [`glossary/`](glossary/README.md) — canonical homes for recurring entities
+- [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — repository mission and intended visitor experience
+- [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — daily engineering rules
+- [`docs/INVESTIGATION_WORKFLOW.md`](docs/INVESTIGATION_WORKFLOW.md) — investigation and pull-request process
+- [`docs/KISS_WORKING_NOTES.md`](docs/KISS_WORKING_NOTES.md) — future subject-independent framework notes that do not block GlassesResearch
 - [`docs/EVIDENCE_STANDARD.md`](docs/EVIDENCE_STANDARD.md) — evidence and confidence rules
 - [`docs/Hardware.md`](docs/Hardware.md) — shared physical research methods and initial notes
 - [`docs/BLE.md`](docs/BLE.md) — shared discovery and protocol methodology
@@ -71,11 +83,11 @@ See [`images/README.md`](images/README.md) for naming, provenance, privacy, and 
 
 ## Current status
 
-This repository is building its institutional foundation: a reliable device baseline, durable source preservation, repeatable experiments, question-led navigation, and a model-specific research system that can grow without losing its evidence chain.
+This repository is actively converting investigations into useful, cross-linked knowledge. The W610 chapter is the current reference implementation for the glossary, resource catalog, evidence system, and investigation workflow.
 
 ## Contributing
 
-Contributions should clearly distinguish observed facts, sourced claims, interpretations, hypotheses, and disproven claims. Include reproduction steps whenever possible and follow the evidence standard.
+Contributions should clearly distinguish observed facts, sourced claims, interpretations, hypotheses, and disproven claims. Include reproduction steps whenever possible and follow the evidence standard, repository laws, and investigation workflow.
 
 ## Safety and legal note
 
