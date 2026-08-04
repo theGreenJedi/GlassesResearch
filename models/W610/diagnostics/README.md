@@ -1,15 +1,23 @@
 # W610 Diagnostics
 
-Use this section for reproducible tests, normal-state baselines, fault symptoms, log interpretation, recovery attempts, battery behavior, charging, connectivity failures, audio/camera checks, and known issues.
+This section records normal-state baselines, reproducible fault tests, charging and connectivity behavior, audio/camera checks, and recovery attempts.
 
-## Suggested records
+## Current baseline
 
-- `baseline-checklist.md`
-- `power-and-charging.md`
-- `connectivity.md`
-- `audio.md`
-- `camera.md`
-- `known-issues.md`
-- `recovery-procedures.md`
+- Power control is the rear button on the right temple in current testing.
+- Power activation produces an audible tone and a brief LED flash near the right hinge.
+- The Bluetooth name observed is `HeyCyan Glasses`.
+- Initial pairing was inconsistent, and later scans showed two device entries. This requires a controlled retest before assigning a fault cause.
+- The vendor app was intentionally avoided during the initial baseline.
 
-Every procedure should state prerequisites, steps, expected result, observed result, risks, and device/firmware version.
+## First diagnostic checklist
+
+1. Record charge source, cable/adapter, LED response, and elapsed charging time.
+2. Test cold boot, short press, long press, and power-cycle behavior.
+3. Scan Bluetooth from two independent hosts and record advertisements.
+4. Check microphones, speakers, camera trigger, and storage behavior without changing firmware.
+5. Photograph every state and record exact timestamps.
+
+## Reporting format
+
+Every test must state prerequisites, steps, expected result, observed result, device state, risks, and date. A failed pairing attempt is an observation, not proof of defective hardware.

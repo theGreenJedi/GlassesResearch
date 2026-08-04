@@ -1,14 +1,31 @@
 # W610 Hardware
 
-Use this section for physical construction, dimensions, controls, indicators, batteries, cameras, microphones, speakers, sensors, lenses, temples, PCB observations, component identifications, teardown notes, and repairability.
+This section records the physical device baseline, controls, indicators, optics, internal architecture, and component evidence for the received W610-class glasses.
 
-## Suggested records
+## Current observations
 
-- `physical-overview.md`
-- `measurements.md`
-- `controls-and-indicators.md`
-- `components.md`
-- `teardown.md`
-- `optics-and-lenses.md`
+- Electronics are concentrated in the right temple; the left temple is visibly slimmer.
+- The right temple has two physical controls. The rear control functions as the power control in current testing.
+- An indicator LED is located near the right hinge.
+- A power-button press produces an audible tone and a brief LED flash.
+- The device includes a camera, microphones, speakers, and magnetic charging contacts.
+- Retail and OEM sources repeatedly claim an 8 MP camera and approximately 270 mAh battery, but these remain commercial claims until measured or confirmed from device internals.
 
-Record tools, measurement uncertainty, device revision, date, and supporting photographs for each observation.
+## Component leads
+
+- [CMP-0001 — JL7018F](../../../glossary/components/CMP-0001-jl7018f.md)
+- [CMP-0002 — Allwinner V821L2](../../../glossary/components/CMP-0002-allwinner-v821l2.md)
+
+Neither component is yet confirmed from PCB markings on the received unit.
+
+## Priority measurements
+
+1. Photograph and measure both temples, controls, charging contacts, lens opening, and hinge geometry.
+2. Record mass and battery charge/discharge behavior.
+3. Preserve package, manual, QR-code, and label markings.
+4. Identify non-destructive access points before any teardown.
+5. Create a lens-shape template suitable for prescription-lens research.
+
+## Evidence rules
+
+Record date, device revision, tools, uncertainty, and photographs. Distinguish direct observation from vendor claims and inferred architecture.
