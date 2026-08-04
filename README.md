@@ -60,7 +60,6 @@ Shared entities and repository-wide methods remain in canonical locations such a
 - [`docs/ReverseEngineering.md`](docs/ReverseEngineering.md) — methodology and reproducible experiment guidance
 - [`docs/AI610-Notes.md`](docs/AI610-Notes.md) — private-notebook findings prepared for public documentation
 - [`docs/ResearchLog.md`](docs/ResearchLog.md) — repository-wide dated engineering notes
-- [`docs/GITHUB_PROFILE_STRATEGY.md`](docs/GITHUB_PROFILE_STRATEGY.md) — presentation strategy for the broader GitHub profile
 - [`images/`](images/) — shared photographs, screenshots, diagrams, and other visual evidence
 
 ## Evidence workflow
