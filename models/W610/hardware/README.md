@@ -2,6 +2,11 @@
 
 This section records the physical device baseline, controls, indicators, optics, internal architecture, and component evidence for the received W610-class glasses.
 
+## Owned-device records
+
+- [Physical overview](physical-overview.md) — construction, fit, optics, and mission assessment
+- [Controls and indicators](controls-and-indicators.md) — confirmed button behavior, startup response, and open tests
+
 ## Current observations
 
 - Electronics are concentrated in the right temple; the left temple is visibly slimmer.
@@ -9,6 +14,7 @@ This section records the physical device baseline, controls, indicators, optics,
 - An indicator LED is located near the right hinge.
 - A power-button press produces an audible tone and a brief LED flash.
 - The device includes a camera, microphones, speakers, and magnetic charging contacts.
+- The frame is tight on the owner’s larger head, and the supplied tinted lenses do not provide premium sunglass optics.
 - Retail and OEM sources repeatedly claim an 8 MP camera and approximately 270 mAh battery, but these remain commercial claims until measured or confirmed from device internals.
 
 ## Component leads
