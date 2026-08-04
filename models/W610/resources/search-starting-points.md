@@ -1,47 +1,44 @@
-# W610 Search Starting Points
+# W610 Investigation Starting Points
 
-Use this page as a repeatable discovery map for finding new W610 evidence.
+This page records the identifiers and exact searches currently useful for W610 research.
 
-## Databases and source classes
+## Confirmed or observed identifiers
 
-- FCC equipment authorization records
-- Bluetooth SIG listings
-- CE, UKCA, RoHS, and WEEE documentation
-- Patent databases
-- Import/export and customs records
-- Trade directories and exhibition catalogs
-- OEM and ODM product catalogs
-- Retail marketplaces and historical listings
-- GitHub and other code forges
-- App stores and APK archives
-- Web archives and cached pages
-- Forums, Reddit, Discord, and specialist communities
+- Model string: `W610`
+- Bluetooth name observed on owned device: `HeyCyan Glasses`
+- Companion app name: `HeyCyan`
+- App operator: `Shenzhen Qingcheng Future Technology Co., Ltd.`
+- Claimed main controller: `JL7018F`
+- Claimed coprocessor: `Allwinner V821L2`
+- Recurring claimed battery: `270mAh`
+- Recurring claimed storage: `4GB` / `32Gbit`
 
-## Useful search concepts
+## Exact searches worth repeating
 
-Record proven identifiers as they emerge, including:
+- GitHub: https://github.com/search?q=%22HeyCyan%22&type=code
+- GitHub: https://github.com/search?q=%22JL7018F%22&type=code
+- GitHub: https://github.com/search?q=%22V821L2%22&type=code
+- Google: https://www.google.com/search?q=%22W610%22+%22HeyCyan%22
+- Google: https://www.google.com/search?q=%22HeyCyan+Glasses%22
+- Google Patents: https://patents.google.com/?q=%22W610%22+smart+glasses
+- FCC equipment authorization: https://www.fcc.gov/oet/ea/fccid
+- Bluetooth SIG listings: https://launchstudio.bluetooth.com/Listings/Search
+- Internet Archive: https://web.archive.org/
 
-- W610 and W6xx model strings
-- Bluetooth advertised names
-- FCC IDs and certification numbers
-- App package names
-- Firmware filenames and version strings
-- Manufacturer, seller, and factory names
-- PCB markings, chip part numbers, and module IDs
-- Product image hashes and distinctive phrases
+## Company names to pivot on
 
-## Search log template
+- Dongguan Zhiyang Electronic Technology Co., Ltd.
+- Goodway Techs
+- Shenzhen Qingcheng Future Technology Co., Ltd.
+- Dongguan Cenyuan Electronic Technology Co., Ltd.
 
-```text
-Date:
-Research question:
-Search service or database:
-Exact query:
-Filters used:
-Useful results:
-Dead ends:
-New identifiers discovered:
-Follow-up actions:
-```
+## Highest-value next pivots
 
-Preserving unsuccessful searches is useful because it prevents repeated dead ends and reveals when new material appears later.
+1. Preserve the exact Amazon listing used for the owned specimen.
+2. Record every package, manual, QR-code, and device-label identifier.
+3. Extract the HeyCyan package name and version from an APK.
+4. Capture BLE services and Device Information values.
+5. Search FCC and Bluetooth SIG only after obtaining stronger company or radio identifiers.
+6. Compare product photography across supplier pages to identify common mold and control layout.
+
+This is an investigation aid, not a blank search-log template. Add only identifiers or queries that have already produced useful evidence.

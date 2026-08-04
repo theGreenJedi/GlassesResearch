@@ -1,63 +1,27 @@
 # W610 Resources
 
-This section is the W610 research launchpad. It should help both project maintainers and new visitors quickly find the best places to continue learning, verify claims, locate primary sources, and discover related work.
+This directory contains sources that have already contributed to W610 investigation. It is not a catalog of empty categories.
 
-## Start here
+## Populated resources
 
-- **[W610 Research Portal](RESEARCH_PORTAL.md)** — a populated, clickable directory covering GitHub, Reddit, Discord discovery, Telegram discovery, QQ and Chinese-language communities, forums, YouTube, blogs, reviewers, manufacturers, marketplaces, regulatory databases, patents, and archives. Every entry explains why it is worth visiting and what limitations to keep in mind.
-- **[GlassesResearch Glossary](../../../glossary/README.md)** — canonical pages for organizations, components, applications, standards, and other recurring entities. This implements the rule: **no orphan knowledge**.
+- **[Official and vendor-controlled sources](official.md)** — Goodway, HeyCyan, Allwinner, and JieLi sources with relevance and reliability notes.
+- **[Retailer and marketplace evidence](retailers.md)** — Alibaba, Made-in-China, Amazon, and AliExpress routes used to identify rebrands, prices, sellers, and repeated platform claims.
+- **[Manufacturing sources](manufacturing.md)** — direct Zhiyang, Huaqiangbei, Goodway, and supplier-landscape evidence supporting the shared-platform hypothesis.
+- **[Investigation starting points](search-starting-points.md)** — confirmed identifiers, exact searches, company pivots, and highest-value next steps.
+- **[Research Portal](RESEARCH_PORTAL.md)** — broader discovery routes, regulatory databases, and ecosystem searches.
 
-Resources should be model-specific whenever possible. Cross-model sources belong here only when they materially help explain the W610 or its likely W6xx family relationships.
+## What was removed
 
-## Resource indexes
+Empty pages for communities, repositories, videos, regulatory records, manuals, and archives were removed. Those categories can return only when we have an actual W610-specific resource to put in them.
 
-- [`official.md`](official.md) — manufacturer, brand, app, support, and product documentation
-- [`retailers.md`](retailers.md) — current and historical listings, seller claims, model variants, and pricing evidence
-- [`communities.md`](communities.md) — forums, Reddit threads, Discord servers, social groups, and user discussions
-- [`repositories.md`](repositories.md) — source code, reverse-engineering projects, tools, SDKs, and related GitHub repositories
-- [`videos.md`](videos.md) — reviews, demos, teardowns, setup guides, and technical walkthroughs
-- [`regulatory.md`](regulatory.md) — FCC, Bluetooth SIG, CE, UKCA, RoHS, WEEE, patents, and certification records
-- [`manufacturing.md`](manufacturing.md) — OEMs, ODMs, factories, trade directories, supplier pages, and product-family clues
-- [`manuals-and-files.md`](manuals-and-files.md) — manuals, APKs, firmware, SDKs, datasheets, and preserved downloads
-- [`search-starting-points.md`](search-starting-points.md) — useful databases, marketplaces, search terms, identifiers, and repeatable discovery methods
-- [`archive-index.md`](archive-index.md) — preserved copies, dead links, mirrors, and archived snapshots
+## Current source-backed conclusions
 
-## Resource quality labels
+1. W610 appears across many retail brands and supplier pages.
+2. A recurring specification fingerprint links those listings: JL7018F, Allwinner V821L2, HeyCyan, 8 MP camera claims, 270 mAh battery claims, Wi-Fi media transfer, and magnetic charging.
+3. Dongguan Zhiyang and Goodway are strong supply-chain leads, but neither is yet proven to be the sole platform owner or manufacturer.
+4. The owned specimen confirms the `HeyCyan Glasses` Bluetooth identity and the physical/control baseline, but does not yet confirm internal chips or vendor battery claims.
+5. No mature W610-specific open-source or community reverse-engineering project has yet been verified.
 
-Use one of these labels for each entry:
+## Admission rule
 
-- **Primary** — official filing, manufacturer document, source code, captured device output, or other first-hand evidence
-- **Strong secondary** — technically competent analysis with reproducible evidence
-- **Community lead** — potentially useful discussion or claim that still requires verification
-- **Commercial claim** — retailer, reseller, or manufacturer marketing that may be incomplete or inaccurate
-- **Archived** — preserved material whose original source has disappeared or changed
-
-## Entry format
-
-Each resource should include:
-
-```text
-Title:
-URL:
-Publisher / author:
-Resource type:
-Quality label:
-First published:
-Last checked:
-W610 relevance:
-Key information:
-Reliability notes:
-Archived copy:
-Related local evidence:
-```
-
-## Curation rules
-
-1. Explain why a resource matters instead of collecting unexplained links.
-2. Prefer deep links to the exact relevant page, filing, thread, file, or video.
-3. Record the date last checked because listings and product pages change.
-4. Preserve disappearing evidence when legally permitted.
-5. Separate confirmed W610 sources from likely W6xx-family analogues.
-6. Mark affiliate links, sponsored reviews, copied listings, and vendor-controlled communities.
-7. Never treat repeated seller language as independent confirmation.
-8. Cross-reference findings into the appropriate hardware, BLE, firmware, software, manufacturing, or diagnostics section.
+A new resource page must begin with at least one real entry. A category name alone is not enough reason to create a file.

@@ -1,33 +1,29 @@
 # W610 Retailer and Marketplace Resources
 
-Track current and historical listings that may reveal branding, specifications, packaging, accessories, regional variants, prices, seller identities, and copied product-family language.
+## Alibaba — W610 smart-glasses search
+- **URL:** https://www.alibaba.com/trade/search?SearchText=W610+AI+smart+glasses
+- **Quality:** Commercial claim
+- **Use:** Rebrands, supplier names, product images, MOQ, customization, and conflicting specifications.
 
-## Active listings
+## Alibaba — Dongguan Zhiyang W610
+- **URL:** https://www.alibaba.com/trade/search?SearchText=Dongguan+Zhiyang+W610
+- **Quality:** Commercial claim
+- **Use:** OEM/ODM language, company identity, and repeated JL7018F/V821L2 platform claims.
 
-_Add currently accessible listings here._
+## Made-in-China — W610 search
+- **URL:** https://www.made-in-china.com/products-search/hot-china-products/W610_Smart_Glasses.html
+- **Quality:** Commercial claim
+- **Use:** Additional suppliers and exporter identities outside Alibaba.
 
-## Historical or removed listings
+## Amazon
+- **URL:** https://www.amazon.com/s?k=W610+smart+glasses
+- **Quality:** Commercial claim and owner-review lead
+- **Use:** Retail brands, prices, packaging, returns, user photos, and review history.
+- **Owned specimen:** Purchased through Amazon for approximately $40–$50; exact listing URL still needs preservation.
 
-_Add archived, delisted, or sold-out listings here._
+## AliExpress
+- **URL:** https://www.aliexpress.com/wholesale?SearchText=W610+smart+glasses
+- **Quality:** Commercial claim
+- **Use:** Variant images, seller-specific names, accessories, and historical pricing.
 
-## Seller-claim cautions
-
-Retail listings are evidence of what was advertised, not automatic proof of hardware or software capabilities. Note duplicated descriptions, reused photography, conflicting specifications, and likely seller rebranding.
-
-## Entry template
-
-```text
-Listing title:
-URL:
-Marketplace / seller:
-Region:
-Observed price:
-First observed:
-Last checked:
-Status: active | sold out | removed | archived
-Claimed model:
-Distinctive claims or images:
-Quality label: Commercial claim | Archived
-Archived copy:
-Related evidence:
-```
+Repeated seller language is not independent confirmation. Preserve exact listing URLs and screenshots when a page materially supports an investigation.
