@@ -2,6 +2,11 @@
 
 This section is the W610 research launchpad. It should help both project maintainers and new visitors quickly find the best places to continue learning, verify claims, locate primary sources, and discover related work.
 
+## Start here
+
+- **[W610 Research Portal](RESEARCH_PORTAL.md)** — a populated, clickable directory covering GitHub, Reddit, Discord discovery, Telegram discovery, QQ and Chinese-language communities, forums, YouTube, blogs, reviewers, manufacturers, marketplaces, regulatory databases, patents, and archives. Every entry explains why it is worth visiting and what limitations to keep in mind.
+- **[GlassesResearch Glossary](../../../glossary/README.md)** — canonical pages for organizations, components, applications, standards, and other recurring entities. This implements the rule: **no orphan knowledge**.
+
 Resources should be model-specific whenever possible. Cross-model sources belong here only when they materially help explain the W610 or its likely W6xx family relationships.
 
 ## Resource indexes
