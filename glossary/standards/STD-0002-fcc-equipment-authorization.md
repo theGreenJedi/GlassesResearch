@@ -18,6 +18,6 @@ A retail model name may not appear in the filing. Search packaging labels, manua
 
 ## Related
 
-- [W610 regulatory resources](../../models/W610/resources/regulatory.md)
+- [W610 Research Portal — regulatory and technical registries](../../models/W610/resources/RESEARCH_PORTAL.md#regulatory-and-technical-registries)
 - [W610 manufacturing map](../../models/W610/manufacturing/INTELLIGENCE_MAP.md)
 - [INV-0001 — W610 Identity](../../models/W610/investigations/001-identity.md)

@@ -14,7 +14,7 @@ The website does not maintain a second copy of the research. `scripts/prepare_si
 
 - `README.md` becomes the site home page.
 - `WHY.md` remains the mission page.
-- `docs/`, `models/`, and `glossary/` are copied without rewriting their content.
+- `docs/`, `models/`, `glossary/`, and `images/` are copied without rewriting their content.
 - `mkdocs.yml` supplies the public navigation and presentation layer.
 
 The temporary `.site-src/` directory and generated `site/` directory are build products, not canonical content.
