@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / ".site-src"
 
-COPY_DIRS = ("docs", "models", "glossary")
+COPY_DIRS = ("docs", "models", "glossary", "images")
 COPY_FILES = ("WHY.md",)
 
 
