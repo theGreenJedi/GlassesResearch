@@ -48,12 +48,12 @@ Each glasses model receives its own self-contained chapter under [`models/`](mod
 - [`models/CATALOG.md`](models/CATALOG.md) — broader research registry with real starting sources
 - [`models/W610/`](models/W610/README.md) — current hands-on reference chapter
 
-Shared entities and repository-wide methods remain in canonical locations such as [`glossary/`](glossary/README.md) and [`docs/`](docs/).
+Shared entities and repository-wide methods remain in canonical locations such as the [`glossary`](glossary/README.md) and [project documentation](docs/PROJECT_VISION.md).
 
 ## Repository map
 
 - [`models/`](models/README.md) — The List, model-specific research chapters, and ecosystem registry
-- [`AGENTS.md`](AGENTS.md) — standing directives for every future engineering session
+- [Standing engineering directives](https://github.com/theGreenJedi/GlassesResearch/blob/main/AGENTS.md) — repository-maintenance rules retained in GitHub rather than duplicated into the public reading layer
 - [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — model-agnostic scope and evidence lanes
 - [`docs/faq/README.md`](docs/faq/README.md) — buyer, use-case, technical, privacy, accessibility, and development FAQ
 - [`docs/news/README.md`](docs/news/README.md) — current news hub, release tracker, source watchlist, and weekly workflow
@@ -71,7 +71,7 @@ Shared entities and repository-wide methods remain in canonical locations such a
 - [`docs/ReverseEngineering.md`](docs/ReverseEngineering.md) — methodology and reproducible experiment guidance
 - [`docs/AI610-Notes.md`](docs/AI610-Notes.md) — private-notebook findings prepared for public documentation
 - [`docs/ResearchLog.md`](docs/ResearchLog.md) — repository-wide dated engineering notes
-- [`images/`](images/) — shared photographs, screenshots, diagrams, and other visual evidence
+- [`images/`](images/README.md) — shared photographs, screenshots, diagrams, and other visual evidence
 
 ## Evidence workflow
 
