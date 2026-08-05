@@ -1,12 +1,13 @@
 # Model Chapters
 
-The [`model registry`](CATALOG.md) tracks substantive starting points across the smart-glasses ecosystem. A model receives a self-contained chapter under `models/` when enough real evidence exists to make that chapter useful.
+[`The List`](THE_LIST.md) is the canonical purchaser-history ledger with stable IDs. The [`model registry`](CATALOG.md) tracks substantive starting points across the smart-glasses ecosystem. A model receives a self-contained chapter under `models/` when enough real evidence exists to make that chapter useful.
 
 A model chapter should keep device-specific evidence, notes, diagrams, software, diagnostics, manufacturing intelligence, and reverse-engineering work together. Cross-model material belongs in shared top-level areas only when it genuinely applies to multiple devices.
 
-## Ecosystem registry
+## Ecosystem indexes
 
-- [Smart-glasses model registry](CATALOG.md) — populated cross-manufacturer discovery layer
+- [The List](THE_LIST.md) — 112 verified purchasable models and generations, past and present
+- [Smart-glasses model registry](CATALOG.md) — broader discovery layer for platforms, prototypes, unnamed devices, and research leads
 
 ## Current substantive chapters
 
