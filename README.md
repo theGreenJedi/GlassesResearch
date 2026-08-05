@@ -13,6 +13,7 @@ The repository I wish I had when I began.
 - [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — ecosystem-wide scope and evidence lanes
 - [`models/THE_LIST.md`](models/THE_LIST.md) — **The List:** 119 purchasable smart-glasses models and generations, past and present
 - [`models/CATALOG.md`](models/CATALOG.md) — broader cross-ecosystem research registry
+- [`resources/ECOSYSTEM_RESOURCE_CATALOG.md`](resources/ECOSYSTEM_RESOURCE_CATALOG.md) — cross-model SDK, firmware, protocol, hardware, and preservation intake catalog
 - [`docs/faq/README.md`](docs/faq/README.md) — 100 current smart-glasses questions and evidence-aware answers
 - [`docs/news/README.md`](docs/news/README.md) — weekly ecosystem research, news, releases, upgrades, and availability tracking
 - [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — no orphan knowledge, no empty merges, and other operating rules
@@ -53,6 +54,7 @@ Shared entities and repository-wide methods remain in canonical locations such a
 ## Repository map
 
 - [`models/`](models/README.md) — The List, model-specific research chapters, and ecosystem registry
+- [`resources/ECOSYSTEM_RESOURCE_CATALOG.md`](resources/ECOSYSTEM_RESOURCE_CATALOG.md) — ecosystem-wide resource intake and artifact-preservation queue
 - [Standing engineering directives](https://github.com/theGreenJedi/GlassesResearch/blob/main/AGENTS.md) — repository-maintenance rules retained in GitHub rather than duplicated into the public reading layer
 - [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — model-agnostic scope and evidence lanes
 - [`docs/faq/README.md`](docs/faq/README.md) — buyer, use-case, technical, privacy, accessibility, and development FAQ
