@@ -8,6 +8,8 @@ The repository I wish I had when I began.
 
 ## Start here
 
+- [`FOUNDING_CHARTER.md`](FOUNDING_CHARTER.md) — the constitutional mission and standard for every future merge
+- [`docs/INSTITUTIONAL_COLLECTIONS.md`](docs/INSTITUTIONAL_COLLECTIONS.md) — map of the research institution and its interconnected collections
 - [`WHY.md`](WHY.md) — why this project exists and what success means
 - [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — what GlassesResearch is building
 - [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — ecosystem-wide scope and evidence lanes
@@ -16,6 +18,8 @@ The repository I wish I had when I began.
 - [`resources/ECOSYSTEM_RESOURCE_CATALOG.md`](resources/ECOSYSTEM_RESOURCE_CATALOG.md) — cross-model SDK, firmware, protocol, hardware, and preservation intake catalog
 - [`docs/faq/README.md`](docs/faq/README.md) — 100 current smart-glasses questions and evidence-aware answers
 - [`docs/news/README.md`](docs/news/README.md) — weekly ecosystem research, news, releases, upgrades, and availability tracking
+- [`docs/INDUSTRY_TIMELINE.md`](docs/INDUSTRY_TIMELINE.md) — historical research index from wearable-computing foundations through AI glasses
+- [`docs/PRESERVATION_PROGRAM.md`](docs/PRESERVATION_PROGRAM.md) — archive-first workflow, metadata, provenance, and legal boundaries
 - [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — no orphan knowledge, no empty merges, and other operating rules
 - [`docs/INVESTIGATION_WORKFLOW.md`](docs/INVESTIGATION_WORKFLOW.md) — how investigations become durable pull requests
 - [`glossary/README.md`](glossary/README.md) — canonical homes for recurring organizations, components, applications, standards, and other entities
@@ -26,7 +30,7 @@ The repository I wish I had when I began.
 
 ## Mission
 
-GlassesResearch exists to make scattered information across the smart-glasses ecosystem easier to find, verify, preserve, and build upon. It covers potentially hundreds of models across hardware, BLE behavior, firmware, SDKs and apps, optics, retail variants, reverse engineering, manufacturing intelligence, community resources, and user-controlled AI integrations. The W610 is the current hands-on reference device, not the repository boundary.
+GlassesResearch is a digital research institution dedicated to preserving, understanding, and advancing the global smart-glasses ecosystem. It makes scattered information easier to find, verify, preserve, compare, and build upon. It covers potentially hundreds of models across hardware, BLE behavior, firmware, SDKs and apps, optics, retail variants, reverse engineering, manufacturing intelligence, community resources, and user-controlled AI integrations. The W610 is the current hands-on reference device, not the repository boundary.
 
 ## Principles
 
@@ -36,12 +40,29 @@ GlassesResearch exists to make scattered information across the smart-glasses ec
 - **Prefer user control.** Explore local-first and vendor-independent integrations.
 - **Avoid needless rediscovery.** Record repeatable procedures and prior results.
 - **Preserve corrections.** Mark disproven claims and retain the reasoning trail.
+- **Archive first when knowledge is at risk.** Organization can improve later; a vanished source cannot.
 - **No orphan knowledge.** Give recurring entities one canonical home and link back to it.
 - **No empty merges.** New structure must provide immediate value.
+- **Measure preserved knowledge, not page count.** Infrastructure exists to serve evidence and discovery.
+
+## Institutional collections
+
+GlassesResearch organizes existing and future work into interconnected collections:
+
+- global device database and model dossiers;
+- manufacturer, ODM, rebrand, and product-family history;
+- firmware, SDK, API, application, BLE, and protocol research;
+- hardware, optics, display, audio, sensor, repair, and prescription resources;
+- AI capability and integration research;
+- papers, patents, standards, and historical timelines;
+- community, developer, and preservation directories;
+- comparison tools, indexes, glossary entities, and a knowledge graph.
+
+See [`docs/INSTITUTIONAL_COLLECTIONS.md`](docs/INSTITUTIONAL_COLLECTIONS.md) for the canonical collection map.
 
 ## Model chapters
 
-Each glasses model receives its own self-contained chapter under [`models/`](models/README.md). Device-specific hardware, BLE research, firmware, applications, manufacturing intelligence, diagnostics, diagrams, schematics, evidence, resources, questions, chronology, genealogy, and research history remain together inside that model's hierarchy.
+Each glasses model receives its own self-contained research dossier under [`models/`](models/README.md). Device-specific hardware, BLE research, firmware, applications, manufacturing intelligence, diagnostics, diagrams, schematics, evidence, resources, questions, chronology, genealogy, and research history remain together inside that model's hierarchy.
 
 ### Registry and current hands-on model
 
@@ -53,6 +74,10 @@ Shared entities and repository-wide methods remain in canonical locations such a
 
 ## Repository map
 
+- [`FOUNDING_CHARTER.md`](FOUNDING_CHARTER.md) — institutional identity, mission, research principles, and highest measure of success
+- [`docs/INSTITUTIONAL_COLLECTIONS.md`](docs/INSTITUTIONAL_COLLECTIONS.md) — collection architecture and discovery plan
+- [`docs/PRESERVATION_PROGRAM.md`](docs/PRESERVATION_PROGRAM.md) — lawful preservation workflow and archive status vocabulary
+- [`docs/INDUSTRY_TIMELINE.md`](docs/INDUSTRY_TIMELINE.md) — initial historical index and research backlog
 - [`models/`](models/README.md) — The List, model-specific research chapters, and ecosystem registry
 - [`resources/ECOSYSTEM_RESOURCE_CATALOG.md`](resources/ECOSYSTEM_RESOURCE_CATALOG.md) — ecosystem-wide resource intake and artifact-preservation queue
 - [Standing engineering directives](https://github.com/theGreenJedi/GlassesResearch/blob/main/AGENTS.md) — repository-maintenance rules retained in GitHub rather than duplicated into the public reading layer
@@ -99,8 +124,8 @@ This repository is actively converting investigations into useful, cross-linked 
 
 ## Contributing
 
-Contributions should clearly distinguish observed facts, sourced claims, interpretations, hypotheses, and disproven claims. Include reproduction steps whenever possible and follow the evidence standard, repository laws, and investigation workflow.
+Contributions should clearly distinguish observed facts, sourced claims, interpretations, hypotheses, and disproven claims. Include reproduction steps whenever possible and follow the founding charter, evidence standard, repository laws, preservation program, and investigation workflow.
 
 ## Safety and legal note
 
-Research only hardware and software you are authorized to inspect. Do not publish credentials, personal data, proprietary secrets, or material whose distribution is prohibited.
+Research only hardware and software you are authorized to inspect. Do not publish credentials, personal data, proprietary secrets, unlawfully distributed files, or material whose distribution is prohibited.
