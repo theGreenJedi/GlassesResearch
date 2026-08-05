@@ -2,6 +2,8 @@
 
 The glossary is the canonical home for important nouns in the research: organizations, components, applications, standards, people, firmware, Bluetooth identifiers, photos, and other recurring entities.
 
+Models use stable `GLS-####` identities in [The List](../models/THE_LIST.md). The glossary holds the organizations, components, applications, standards, people, and other entities linked from those models.
+
 ## Core rule
 
 **No orphan knowledge.** If an entity matters enough to appear repeatedly, it receives one canonical glossary page. Other documents link to that page instead of redefining it.
