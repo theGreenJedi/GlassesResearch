@@ -6,7 +6,7 @@ A model chapter should keep device-specific evidence, notes, diagrams, software,
 
 ## Ecosystem indexes
 
-- [The List](THE_LIST.md) — 112 verified purchasable models and generations, past and present
+- [The List](THE_LIST.md) — 119 verified purchasable models and generations, past and present
 - [Smart-glasses model registry](CATALOG.md) — broader discovery layer for platforms, prototypes, unnamed devices, and research leads
 
 ## Current substantive chapters
