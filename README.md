@@ -12,6 +12,7 @@ The repository I wish I had when I began.
 - [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — what GlassesResearch is building
 - [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — ecosystem-wide scope and evidence lanes
 - [`models/CATALOG.md`](models/CATALOG.md) — populated cross-ecosystem model registry
+- [`docs/faq/README.md`](docs/faq/README.md) — 100 current smart-glasses questions and evidence-aware answers
 - [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — no orphan knowledge, no empty merges, and other operating rules
 - [`docs/INVESTIGATION_WORKFLOW.md`](docs/INVESTIGATION_WORKFLOW.md) — how investigations become durable pull requests
 - [`glossary/README.md`](glossary/README.md) — canonical homes for recurring organizations, components, applications, standards, and other entities
@@ -51,6 +52,7 @@ Shared entities and repository-wide methods remain in canonical locations such a
 - [`models/`](models/README.md) — model-specific research chapters and ecosystem registry
 - [`AGENTS.md`](AGENTS.md) — standing directives for every future engineering session
 - [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — model-agnostic scope and evidence lanes
+- [`docs/faq/README.md`](docs/faq/README.md) — buyer, use-case, technical, privacy, accessibility, and development FAQ
 - [`glossary/`](glossary/README.md) — canonical homes for recurring entities
 - [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — repository mission and intended visitor experience
 - [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — daily engineering rules
