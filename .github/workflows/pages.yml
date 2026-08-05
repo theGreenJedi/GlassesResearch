@@ -3,6 +3,8 @@ name: Deploy documentation site
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,8 +13,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -31,6 +33,13 @@ jobs:
       - name: Install documentation dependencies
         run: pip install -r requirements-docs.txt
 
+      - name: Audit repository links and preservation records
+        run: python scripts/audit_repository.py --external-output build/external-links.txt
+
+      - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+
       - name: Stage repository documentation
         run: python scripts/prepare_site.py
 
@@ -38,11 +47,19 @@ jobs:
         run: mkdocs build --strict
 
       - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
+      - name: Upload external-link inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: external-link-inventory
+          path: build/external-links.txt
+
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
