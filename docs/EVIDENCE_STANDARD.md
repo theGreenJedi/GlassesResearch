@@ -5,11 +5,19 @@ Every important technical claim should show how it is known.
 ## Claim status
 
 - **Verified** — reproduced directly or supported by authoritative primary evidence.
-- **Community confirmed** — independently reported by multiple credible sources.
+- **Community confirmed** — independently reported by multiple credible sources, but not automatically eligible for publication as a working procedure.
+- **Not Verified Yet** — plausible, sourced, or community-reported material awaiting qualifying reproduction. It belongs in a research queue and must not be written as a working guide.
 - **Personally observed** — observed on a documented device but not yet independently reproduced.
 - **Hypothesis** — plausible interpretation awaiting testing.
 - **Disproven** — tested and found false or contradicted by stronger evidence.
+- **Historical** — preserved because it once existed or may illuminate prior device behavior; not represented as currently functional.
 - **Unknown** — open question with insufficient evidence.
+
+## Working-guide publication rule
+
+Only a procedure that has been reproduced successfully with an identified model, hardware revision when available, firmware and tool versions, date, evidence, expected result, and recovery information may be published as **Verified Working**.
+
+Community confirmation is valuable evidence, but it does not by itself promote a procedure into the working-guide library. Community-reported procedures remain clearly labeled outside that library until qualifying verification is complete.
 
 ## Required claim record
 
@@ -17,12 +25,16 @@ Every important technical claim should show how it is known.
 Claim:
 Status:
 Model / revision:
+Firmware / software versions:
 Source or experiment:
 Date checked:
 Contributor:
 Confidence:
 Reproduction steps:
+Expected result:
+Actual result:
 Evidence path or archive:
+Recovery / rollback:
 Contradictory evidence:
 Notes:
 ```
@@ -34,6 +46,19 @@ Use plain-language confidence: **high**, **moderate**, or **low**. Confidence sh
 ## Sources
 
 Prefer primary sources: direct measurements, captures, photographs, manuals, firmware, regulatory filings, manufacturer documents, and reproducible experiments. Secondary sources remain valuable when clearly labeled and attributed.
+
+## Promotion path
+
+A claim or procedure can move through the repository only when the evidence record justifies the change:
+
+```text
+Not Verified Yet -> Community confirmed -> Verified
+Not Verified Yet -> Disproven
+Hypothesis -> Not Verified Yet, Verified, or Disproven
+Verified -> Historical or Disproven when later evidence requires correction
+```
+
+Popularity is not verification. Reproducibility is verification.
 
 ## Corrections
 
