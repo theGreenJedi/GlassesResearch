@@ -8,7 +8,7 @@ Keep GlassesResearch useful as both a chronological news archive and a current c
 
 ## Weekly procedure
 
-1. Read the latest `main`, this workflow, the source watchlist, latest digest, release tracker, model registry, FAQ, and affected model chapters.
+1. Read the latest `main`, this workflow, the source watchlist, latest digest, release tracker, [The List](../../models/THE_LIST.md), model registry, FAQ, and affected model chapters.
 2. Search the entire watchlist plus broad web/news/research queries for the preceding 14 days. The overlap catches late-indexed reports and corrections.
 3. Search exact model names, companion apps, firmware/release-note pages, GitHub repositories, regulators, standards databases, and relevant non-English identifiers.
 4. Deduplicate rewrites back to the earliest primary source.
@@ -25,7 +25,7 @@ Keep GlassesResearch useful as both a chronological news archive and a current c
    - repository pages that must change.
 8. Archive fragile lawful-to-preserve sources when practical, with URL, retrieval date, hash, license/redistribution status, and authenticity caveat.
 9. Create `docs/news/digests/YYYY-MM-DD.md` only when there is material new information.
-10. Update `docs/news/README.md`, `RELEASE_TRACKER.md`, the model registry, glossary, resource pages, FAQ answers, and backlogs as required.
+10. Update `docs/news/README.md`, `RELEASE_TRACKER.md`, [The List](../../models/THE_LIST.md), the model registry, glossary, resource pages, FAQ answers, and backlogs as required.
 11. Open a reviewable GitHub pull request. Do not auto-merge unattended work.
 12. If nothing material changed, do not create an empty digest or PR; report “no material update” with the searches completed.
 
@@ -48,6 +48,7 @@ An item is material when it changes at least one of:
 - [ ] Event dates are distinguished from publication/discovery dates.
 - [ ] Announcement, preorder, shipping, verification, and hands-on status are not conflated.
 - [ ] Existing digests were not silently rewritten; corrections are explicit.
+- [ ] The List was checked for launches, order openings, shipping, region changes, and discontinuations.
 - [ ] Canonical pages were updated when news changed current knowledge.
 - [ ] Fragile resources were archived or the reason for link-only preservation is stated.
 - [ ] No placeholder or empty weekly file was created.
