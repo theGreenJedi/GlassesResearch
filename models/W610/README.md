@@ -14,6 +14,7 @@ This chapter collects everything specific to the W610:
 - BLE behavior and protocol research
 - firmware and update mechanisms
 - companion applications, SDKs, APIs, and integrations
+- open hacking, owner control, and vendor-independence research
 - manufacturing and supply-chain intelligence
 - diagnostics and reproducible test procedures
 - diagrams and schematics
@@ -38,6 +39,7 @@ These observations are provisional until tied to dated evidence or repeated test
 ## Primary navigation
 
 - [Questions](QUESTIONS.md)
+- [Open-hacking dossier](hacking/README.md)
 - [Research backlog](RESEARCH_BACKLOG.md)
 - [Timeline](TIMELINE.md)
 - [W6xx genealogy](GENEALOGY.md)
@@ -45,6 +47,7 @@ These observations are provisional until tied to dated evidence or repeated test
 
 ## Technical chapter map
 
+- [Open hacking and vendor independence](hacking/README.md)
 - [Hardware](hardware/README.md)
   - [Component database](hardware/COMPONENTS.md)
 - [BLE and protocol](ble/README.md)
@@ -57,6 +60,10 @@ These observations are provisional until tied to dated evidence or repeated test
 - [Evidence archive](evidence/README.md)
 - [Resources](resources/README.md)
 - [Research log](research-log/README.md)
+
+## Hacking publication rule
+
+Only procedures verified working on an identified device environment may appear as working guides. Community leads and plausible methods remain clearly labeled **Not Verified Yet** until qualifying reproduction and evidence are complete.
 
 ## Evidence rule
 
