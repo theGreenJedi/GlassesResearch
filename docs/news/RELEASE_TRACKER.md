@@ -1,0 +1,29 @@
+# Smart-Glasses Release and Availability Tracker
+
+**Last checked:** 2026-08-05
+
+This table distinguishes announcement, preorder, targeted shipping, confirmed shipping, and independent verification. A vendor date is not a shipment until evidence confirms it.
+
+| Product / platform | Category | Current state | Announced or updated | Availability claim | Evidence | Next check |
+|---|---|---|---|---|---|---|
+| Meta Glasses | Camera/audio AI | Announced / launching | 2026-06-23 | Starts at $299; 26 styles; regional details require tracking | [Primary](https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/) | Retail availability, complete specs, prescription range |
+| Google/Samsung x Gentle Monster | Camera/audio AI companion | Previewed | 2026-05-19 | Fall 2026 | [Google](https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/) / [Samsung](https://news.samsung.com/us/samsung-google-first-look-new-intelligent-eyewear) | Final name, price, exact date, regions |
+| Google/Samsung x Warby Parker | Camera/audio AI companion | Previewed | 2026-05-19 | Fall 2026 | [Google](https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/) / [Samsung](https://news.samsung.com/us/samsung-google-first-look-new-intelligent-eyewear) | Final name, price, exact date, regions |
+| Snap SPECS | Standalone spatial AR | Preorder | 2026-06-16 | Fall 2026; US, UK, France; $2,195 | [Primary](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses) | First shipments, SDK state, independent testing |
+| VITURE Helix | Industrial camera/audio AI safety glasses | Pilot / reservation | 2026-06-16 | Q1 2027; starts at $599 | [Primary commercial claim](https://www.viture.com/en-US/blog/viture-unveils-helix-the-first-ai-safety-glasses-built-on-nvidia-s-xr-ai-solution-at-awe-2026) | ANSI certification, production specs, pilots |
+| Meta AI-glasses firmware v26 | Software release | Rolling out | Week of 2026-06-29 | Ray-Ban Meta, Oakley Meta, Meta Glasses | [Release notes](https://www.meta.com/help/ai-glasses/1809764829519902/) | Archive next version and model-specific differences |
+| Anko HeyCyan camera glasses | Low-cost camera/audio AI | Retail launch; reported sold out | 2026-08-04 report | Australia; AU$89 reported | [Independent report](https://www.theguardian.com/australia-news/2026/aug/04/kmart-camera-glasses-anko-meta-smartglasses-australia) | Listing archive, manual, model ID, restock |
+| Brilliant Labs Halo | Open-source display AI | Order / shipping status requires recheck | Current product page | Product page says shipping begins soon | [Primary](https://brilliant.xyz/products/halo) | Fulfillment evidence, final firmware and hardware |
+| ams OSRAM microLED RGB arrays | AR component platform | Development milestone | 2026-08-04 | Toward mass-production readiness; no product date | [Primary](https://ams-osram.com/news/press-releases/q2-2026-results) | Named design wins, production start |
+
+## Status vocabulary
+
+- **Rumored:** reported without primary confirmation.
+- **Previewed:** demonstrated or described without an order path.
+- **Announced:** vendor confirms product or feature.
+- **Preorder/reservation:** money or a place in line is accepted; not proof of shipment.
+- **Targeted shipping:** vendor provides a future window.
+- **Shipping:** credible evidence of customer fulfillment exists.
+- **Independently tested:** a non-vendor source has used production-equivalent hardware.
+- **Hands-on:** this project has documented an identified specimen.
+- **Discontinued:** vendor sales/support ended or reliable evidence confirms withdrawal.

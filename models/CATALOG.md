@@ -8,6 +8,7 @@ This is the cross-ecosystem discovery layer. Inclusion means that a model has a 
 |---|---|---|---|---|---|
 | Shared OEM/ODM ecosystem | [W610](W610/README.md) | Camera/audio AI glasses | Hands-on specimen + commercial and primary-source leads | HeyCyan app; BLE and firmware investigation active | [W610 research portal](W610/resources/RESEARCH_PORTAL.md) |
 | Meta / EssilorLuxottica | Ray-Ban Meta | Camera/audio AI glasses | Primary | Large deployed ecosystem; vendor-controlled software | [Meta product page](https://www.meta.com/ai-glasses/ray-ban-meta/) |
+| Meta / EssilorLuxottica | Meta Glasses | Camera/audio AI glasses | Primary announcement | New multi-style family announced June 2026; availability tracking active | [Meta announcement](https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/) |
 | Meta / EssilorLuxottica | Oakley Meta | Camera/audio sport glasses | Primary | Related Meta wearable platform | [Meta AI glasses](https://www.meta.com/ai-glasses/) |
 | Even Realities | G1 / G2 | Display smart glasses | Primary | Third-party platform compatibility reported by MentraOS | [Even Realities](https://www.evenrealities.com/) |
 | Brilliant Labs | Frame | Developer-oriented AI/AR glasses | Primary + public source repositories | Public hardware/software organization and documentation | [Brilliant Labs GitHub](https://github.com/brilliantlabsAR) |
@@ -22,10 +23,15 @@ This is the cross-ecosystem discovery layer. Inclusion means that a model has a 
 | Rokid | Rokid Glasses | AI/AR glasses | Primary | SDK/platform and translation workflow research | [Rokid](https://global.rokid.com/) |
 | Amazon | Echo Frames | Audio smart glasses | Primary | Discontinued/current-generation history and Alexa integration | [Amazon Echo Frames](https://www.amazon.com/echo-frames/) |
 | Snap | Spectacles | Standalone AR developer glasses | Primary | Snap OS and developer platform | [Spectacles](https://www.spectacles.com/) |
+| Snap | SPECS | Standalone spatial AR glasses | Primary; preorder | Consumer-orderable platform announced June 2026; fall shipping target | [Snap launch](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses) |
 | Xiaomi | AI Glasses family | Camera/audio AI glasses | Primary | Regional app, firmware, and ecosystem research | [Xiaomi](https://www.mi.com/global/) |
 | HTC | VIVE Eagle | Camera/audio AI glasses | Primary | Multi-model AI-provider and regional-platform research | [VIVE](https://www.vive.com/) |
 | Halliday | Halliday Glasses | Display AI glasses | Primary | Near-eye display architecture and companion-platform research | [Halliday](https://hallidayglobal.com/) |
 | Google | Android XR glasses ecosystem | Platform / reference ecosystem | Primary | Shared OS, SDK, and partner-device mapping | [Android XR](https://www.android.com/xr/) |
+| Google / Samsung / Gentle Monster | Intelligent eyewear | Camera/audio AI companion | Primary preview | Fall 2026 target; final product identity unresolved | [Samsung preview](https://news.samsung.com/us/samsung-google-first-look-new-intelligent-eyewear) |
+| Google / Samsung / Warby Parker | Intelligent eyewear | Camera/audio AI companion | Primary preview | Fall 2026 target; final product identity unresolved | [Google announcement](https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/) |
+| VITURE / NVIDIA | Helix | Industrial camera/audio AI safety glasses | Primary commercial claim; pilot | Q1 2027 target; safety certification in progress | [VITURE announcement](https://www.viture.com/en-US/blog/viture-unveils-helix-the-first-ai-safety-glasses-built-on-nvidia-s-xr-ai-solution-at-awe-2026) |
+| Anko / HeyCyan ecosystem | Anko camera glasses | Low-cost camera/audio AI glasses | Independent report + commercial lead | Australian mass-retail launch; W610/HeyCyan relationship requires testing | [Guardian report](https://www.theguardian.com/australia-news/2026/aug/04/kmart-camera-glasses-anko-meta-smartglasses-australia) |
 
 ## Registry rules
 
