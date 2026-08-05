@@ -4,8 +4,10 @@ Smart-glasses knowledge is fragmented across vendor pages, retail listings, apps
 
 This project serves two equal purposes:
 
-1. A public, community-focused knowledge base for the W610 and related W6xx ecosystem.
+1. A public, community-focused knowledge base for the entire smart-glasses ecosystem, designed to scale across manufacturers and potentially hundreds of models.
 2. A canonical research library that lets future investigations build on prior discoveries instead of repeatedly rediscovering them.
+
+Hands-on work currently concentrates on the W610 because a specimen is available. Externally sourced knowledge about other devices remains first-class repository material when its provenance and evidence status are explicit.
 
 ## What we value
 
