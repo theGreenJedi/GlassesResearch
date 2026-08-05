@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage repository Markdown for the GlassesResearch MkDocs site."""
+"""Stage repository Markdown and site assets for the GlassesResearch MkDocs site."""
 
 from __future__ import annotations
 
@@ -9,8 +9,19 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / ".site-src"
 
-COPY_DIRS = ("docs", "models", "glossary", "images")
-COPY_FILES = ("WHY.md",)
+COPY_DIRS = (
+    "buyers",
+    "docs",
+    "glossary",
+    "hacking",
+    "images",
+    "models",
+    "resources",
+)
+COPY_FILES = (
+    "FOUNDING_CHARTER.md",
+    "WHY.md",
+)
 
 
 def main() -> None:
@@ -25,8 +36,9 @@ def main() -> None:
 
     for filename in COPY_FILES:
         source = ROOT / filename
-        if source.exists():
-            shutil.copy2(source, DEST / filename)
+        if not source.exists():
+            raise FileNotFoundError(f"Required documentation file missing: {filename}")
+        shutil.copy2(source, DEST / filename)
 
     for dirname in COPY_DIRS:
         source = ROOT / dirname
