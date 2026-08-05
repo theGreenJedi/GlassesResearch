@@ -11,7 +11,8 @@ The repository I wish I had when I began.
 - [`WHY.md`](WHY.md) — why this project exists and what success means
 - [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — what GlassesResearch is building
 - [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — ecosystem-wide scope and evidence lanes
-- [`models/CATALOG.md`](models/CATALOG.md) — populated cross-ecosystem model registry
+- [`models/THE_LIST.md`](models/THE_LIST.md) — **The List:** 112 purchasable smart-glasses models and generations, past and present
+- [`models/CATALOG.md`](models/CATALOG.md) — broader cross-ecosystem research registry
 - [`docs/faq/README.md`](docs/faq/README.md) — 100 current smart-glasses questions and evidence-aware answers
 - [`docs/news/README.md`](docs/news/README.md) — weekly ecosystem research, news, releases, upgrades, and availability tracking
 - [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — no orphan knowledge, no empty merges, and other operating rules
@@ -43,14 +44,15 @@ Each glasses model receives its own self-contained chapter under [`models/`](mod
 
 ### Registry and current hands-on model
 
-- [`models/CATALOG.md`](models/CATALOG.md) — cross-ecosystem registry with real starting sources
+- [`models/THE_LIST.md`](models/THE_LIST.md) — canonical purchaser-history ledger with stable model IDs
+- [`models/CATALOG.md`](models/CATALOG.md) — broader research registry with real starting sources
 - [`models/W610/`](models/W610/README.md) — current hands-on reference chapter
 
 Shared entities and repository-wide methods remain in canonical locations such as [`glossary/`](glossary/README.md) and [`docs/`](docs/).
 
 ## Repository map
 
-- [`models/`](models/README.md) — model-specific research chapters and ecosystem registry
+- [`models/`](models/README.md) — The List, model-specific research chapters, and ecosystem registry
 - [`AGENTS.md`](AGENTS.md) — standing directives for every future engineering session
 - [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — model-agnostic scope and evidence lanes
 - [`docs/faq/README.md`](docs/faq/README.md) — buyer, use-case, technical, privacy, accessibility, and development FAQ
