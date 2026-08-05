@@ -31,3 +31,9 @@ Before opening a pull request, state:
 ## Architecture rule
 
 Use `models/<canonical-model-id>/` for model-specific knowledge and shared catalogs for cross-model discovery. Do not force every model into the W610 chapter shape before evidence warrants it. Add a model to the registry first; create its chapter when real material exists.
+
+## Recurring news and research updates
+
+Follow `docs/news/WORKFLOW.md` for periodic ecosystem sweeps. News is an intake layer, not a substitute for canonical knowledge: material developments must update the release tracker and affected model, glossary, resource, FAQ, or backlog pages in the same pull request when practical.
+
+Never create empty weekly digests. Distinguish announcement, preorder, targeted shipping, confirmed shipping, independent verification, and project hands-on status. Preserve corrections rather than silently rewriting old digests.
