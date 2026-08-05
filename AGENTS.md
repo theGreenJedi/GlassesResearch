@@ -16,17 +16,21 @@ The W610 is the current hands-on reference device, not the boundary of the repos
 6. **Model coverage is cumulative.** Each merge should preserve existing model knowledge and, whenever practical, improve cross-model discovery or add substantive coverage beyond the current hands-on device.
 7. **Claims remain revisable.** Preserve corrections and contradictory evidence. Do not silently convert copied marketing claims into confirmation.
 8. **Repository-first memory.** Durable project decisions belong in Git, not only in chat history.
+9. **Every merge tells its story.** Every pull request must contain a plain-language merge description explaining what was accomplished and why it mattered. A small or routine merge requires at least one complete sentence. A major merge requires a concise paragraph of three to seven sentences describing the outcome, purpose, repository impact, and important evidence or limitations. Lists may supplement the description but may not replace it.
 
 ## Required pull-request check
 
 Before opening a pull request, state:
 
+- a plain-language merge description meeting the length standard above;
 - which real research question or preservation need the change addresses;
 - which models or ecosystem layers it affects;
 - whether each important claim is hands-on, primary-source, community-sourced, or inferred;
 - which fragile resources were archived or why only links could be recorded;
 - how the change improves future ecosystem-wide work;
 - what validation was performed.
+
+The merge description should remain useful years later when viewed in repository history without requiring the reader to reconstruct the work from filenames or commit diffs.
 
 ## Architecture rule
 
