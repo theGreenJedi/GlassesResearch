@@ -11,7 +11,7 @@ The repository I wish I had when I began.
 - [`WHY.md`](WHY.md) — why this project exists and what success means
 - [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — what GlassesResearch is building
 - [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — ecosystem-wide scope and evidence lanes
-- [`models/THE_LIST.md`](models/THE_LIST.md) — **The List:** 112 purchasable smart-glasses models and generations, past and present
+- [`models/THE_LIST.md`](models/THE_LIST.md) — **The List:** 119 purchasable smart-glasses models and generations, past and present
 - [`models/CATALOG.md`](models/CATALOG.md) — broader cross-ecosystem research registry
 - [`docs/faq/README.md`](docs/faq/README.md) — 100 current smart-glasses questions and evidence-aware answers
 - [`docs/news/README.md`](docs/news/README.md) — weekly ecosystem research, news, releases, upgrades, and availability tracking
