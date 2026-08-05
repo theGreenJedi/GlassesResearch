@@ -168,7 +168,7 @@ The list deliberately starts with models supported by a usable primary trail. Th
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 112-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 119-row count:
 
 - Snap SPECS (2026): order intent is tracked, but the final purchasable SKU and delivery evidence still need reconciliation.
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
