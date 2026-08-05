@@ -15,9 +15,11 @@ GlassesResearch is simultaneously:
 
 It is not merely a collection of links, product claims, disconnected notes, or empty folder structures. Every addition should help a reader answer a question, verify a claim, locate a source, reproduce an observation, or identify what remains unknown.
 
-## Model-centric organization
+## Ecosystem-wide, model-centric organization
 
-Each model receives a dedicated chapter under `models/`. Device-specific hardware, BLE, firmware, software, manufacturing, diagnostics, evidence, resources, and research history stay together inside that model hierarchy.
+The repository is designed to accommodate the full smart-glasses ecosystem and potentially hundreds of models. The populated model registry is the discovery layer. A dedicated chapter under `models/` is created when substantive evidence exists; device-specific hardware, BLE, firmware, software, manufacturing, diagnostics, evidence, resources, and research history then stay together inside that model hierarchy.
+
+The W610 is the current hands-on reference implementation, not the scope boundary. Models that maintainers do not own remain in scope through attributed manufacturer, regulatory, archival, repository, and community evidence.
 
 Shared entities belong in canonical repository-wide locations such as `glossary/`. Model chapters reference those canonical pages rather than duplicating definitions.
 
@@ -45,6 +47,12 @@ Readers should be able either to use the repository's synthesis or follow the ev
 ## Reference implementation
 
 GlassesResearch is the first practical implementation of a broader investigation method currently referred to by the working title **KISS**. KISS will be extracted gradually from practices that prove useful here. GlassesResearch remains focused on glasses research; it does not wait for the general template to be complete.
+
+## Standing preservation priority
+
+Archive first, organize second. When lawful and practical, fragile firmware, APKs, SDKs, packet captures, protocol notes, model files, manuals, flashing procedures, recovery methods, tools, repositories, and community material should be preserved with provenance, hashes, licensing, and redistribution notes before link rot removes them.
+
+Hands-on findings, externally sourced claims, community reports, and inferences must remain visibly distinct.
 
 ## Standard of success
 

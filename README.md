@@ -10,6 +10,8 @@ The repository I wish I had when I began.
 
 - [`WHY.md`](WHY.md) — why this project exists and what success means
 - [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — what GlassesResearch is building
+- [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — ecosystem-wide scope and evidence lanes
+- [`models/CATALOG.md`](models/CATALOG.md) — populated cross-ecosystem model registry
 - [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — no orphan knowledge, no empty merges, and other operating rules
 - [`docs/INVESTIGATION_WORKFLOW.md`](docs/INVESTIGATION_WORKFLOW.md) — how investigations become durable pull requests
 - [`glossary/README.md`](glossary/README.md) — canonical homes for recurring organizations, components, applications, standards, and other entities
@@ -20,7 +22,7 @@ The repository I wish I had when I began.
 
 ## Mission
 
-GlassesResearch exists to make scattered information about the W610/W6xx smart-glasses ecosystem easier to find, verify, preserve, and build upon. It covers hardware, BLE behavior, firmware, SDKs and apps, optics, retail variants, reverse engineering, manufacturing intelligence, community resources, and user-controlled AI integrations.
+GlassesResearch exists to make scattered information across the smart-glasses ecosystem easier to find, verify, preserve, and build upon. It covers potentially hundreds of models across hardware, BLE behavior, firmware, SDKs and apps, optics, retail variants, reverse engineering, manufacturing intelligence, community resources, and user-controlled AI integrations. The W610 is the current hands-on reference device, not the repository boundary.
 
 ## Principles
 
@@ -37,15 +39,18 @@ GlassesResearch exists to make scattered information about the W610/W6xx smart-g
 
 Each glasses model receives its own self-contained chapter under [`models/`](models/README.md). Device-specific hardware, BLE research, firmware, applications, manufacturing intelligence, diagnostics, diagrams, schematics, evidence, resources, questions, chronology, genealogy, and research history remain together inside that model's hierarchy.
 
-### Current model
+### Registry and current hands-on model
 
-- [`models/W610/`](models/W610/README.md) — dedicated W610 research chapter
+- [`models/CATALOG.md`](models/CATALOG.md) — cross-ecosystem registry with real starting sources
+- [`models/W610/`](models/W610/README.md) — current hands-on reference chapter
 
 Shared entities and repository-wide methods remain in canonical locations such as [`glossary/`](glossary/README.md) and [`docs/`](docs/).
 
 ## Repository map
 
-- [`models/`](models/README.md) — model-specific research chapters
+- [`models/`](models/README.md) — model-specific research chapters and ecosystem registry
+- [`AGENTS.md`](AGENTS.md) — standing directives for every future engineering session
+- [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — model-agnostic scope and evidence lanes
 - [`glossary/`](glossary/README.md) — canonical homes for recurring entities
 - [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — repository mission and intended visitor experience
 - [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — daily engineering rules
@@ -82,7 +87,7 @@ See [`images/README.md`](images/README.md) for naming, provenance, privacy, and 
 
 ## Current status
 
-This repository is actively converting investigations into useful, cross-linked knowledge. The W610 chapter is the current reference implementation for the glossary, resource catalog, evidence system, and investigation workflow.
+This repository is actively converting investigations into useful, cross-linked knowledge across the smart-glasses ecosystem. The W610 chapter is the current hands-on reference implementation; the model registry provides the growth path for devices not yet physically available to maintainers.
 
 ## Contributing
 

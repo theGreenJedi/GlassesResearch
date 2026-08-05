@@ -75,3 +75,21 @@ Do not silently erase a disproven theory or obsolete conclusion when its history
 ## 10. Leave every page useful
 
 A reader opening any newly merged page should immediately learn something, find something, verify something, or understand the next research step.
+
+## 11. The W610 is a laboratory, not a boundary
+
+Hands-on testing may concentrate on hardware the maintainers own, currently the W610. Repository architecture and research scope must continue to support the broader smart-glasses ecosystem and potentially hundreds of models.
+
+Do not imply hands-on verification for externally sourced models. Preserve and label manufacturer, regulatory, archival, repository, commercial, and community evidence on its own terms.
+
+## 12. Archive first, organize second
+
+When a lawful, fragile resource may disappear, preserve it before perfecting its taxonomy. Priority material includes firmware, APKs, SDKs, packet captures, protocol notes, model files, manuals, flashing and recovery procedures, tools, repositories, and community posts.
+
+Record source URL, retrieval date, hashes, license or redistribution status, and any authenticity caveat. A link is useful; a well-provenanced preservation copy is more durable.
+
+## 13. Every merge strengthens ecosystem coverage
+
+Every future merge must preserve the model-agnostic architecture. Whenever practical, it should improve cross-model discovery, add substantive model coverage, connect shared components or software, or preserve ecosystem resources beyond the current hands-on device.
+
+Never satisfy this rule by creating empty model folders.
