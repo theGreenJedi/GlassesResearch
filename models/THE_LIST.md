@@ -2,7 +2,7 @@
 
 **Edition:** 2026-08-05  
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 112 distinct purchasable models or explicitly marketed product generations
+**Count:** 119 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -150,6 +150,13 @@ Status is last checked on the edition date and can vary by country. Frame colors
 | GLS-0110 | Epson | Moverio BT-35E | 2018 | legacy | tethered display | enterprise | primary support; [source](https://tech.moverio.epson.com/en/software_updates/) |
 | GLS-0111 | Epson | Moverio BT-40 / BT-40S | 2021 | enterprise | binocular display | enterprise/store | primary support; [source](https://tech.moverio.epson.com/en/software_updates/) |
 | GLS-0112 | Epson | Moverio BT-45C / BT-45CS | 2022 | enterprise | binocular display | enterprise/store | primary support; [source](https://tech.moverio.epson.com/en/software_updates/) |
+| GLS-0113 | Sony | SmartEyeglass Developer Edition SED-E1 | 2015 | legacy/developer | binocular display | developer sale | primary release with price; [source](https://www.sony.com/en/SonyInfo/News/Press/201502/15-016E/) |
+| GLS-0114 | Lenovo | ThinkReality A3 PC Edition | 2021 | legacy/enterprise | XR display | enterprise/retail | primary product page; [source](https://www.lenovo.com/us/en/thinkrealitya3/) |
+| GLS-0115 | Lenovo | ThinkReality A3 Industrial Edition | 2021 | legacy/enterprise | XR display | enterprise | primary release; [source](https://news.lenovo.com/pressroom/press-releases/thinkreality-a3-most-versatile-smart-glasses-ever-designed-for-the-enterprise/) |
+| GLS-0116 | Iristick | G2 | c. 2021 | enterprise | camera/display | enterprise/store | primary store; [source](https://shop.iristick.com/products) |
+| GLS-0117 | Iristick | G2 PRO | c. 2022 | current/enterprise | camera/display | enterprise/store | primary price and buy route; [source](https://iristick.com/tools/Iristick.G2-PRO/) |
+| GLS-0118 | Iristick | H1 | c. 2022 | legacy/enterprise | enterprise monocular | enterprise/store | primary product documentation; [source](https://docs.iristick.com/smart-glasses/) |
+| GLS-0119 | Iristick | G3 | 2026 | current/enterprise | camera/display | enterprise/store | primary store and documentation; [source](https://docs.iristick.com/smart-glasses/specifications/) |
 
 ## Google Glass is in scope
 
@@ -157,13 +164,13 @@ Google Glass is not a footnote or a prototype in this catalog. The Explorer Edit
 
 ## Known gaps and candidate queue
 
-The list deliberately starts with models supported by a usable primary trail. The next archival pass should adjudicate older or region-specific families including ODG R-series, Sony SmartEyeglass, Recon Jet, Optinvent ORA, Toshiba dynaEdge AR100, DAQRI Smart Glasses, Lenovo ThinkReality A3/A6, ThirdEye, Iristick, Pivothead, Mutrics, Chamelo, NuEyes, OrCam, Envision, and headset-adjacent HoloLens/Magic Leap devices. They are **not silently counted** until model-level acquisition evidence and category boundaries are documented.
+The list deliberately starts with models supported by a usable primary trail. The next archival pass should adjudicate older or region-specific families including ODG R-series, Recon Jet, Optinvent ORA, Toshiba dynaEdge AR100, DAQRI Smart Glasses, Lenovo ThinkReality A6, ThirdEye, Pivothead, Mutrics, Chamelo, NuEyes, OrCam, Envision, and headset-adjacent HoloLens/Magic Leap devices. They are **not silently counted** until model-level acquisition evidence and category boundaries are documented.
 
 ## Not rows yet
 
 An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 112-row count:
 
-- Snap SPECS (2026): preorder status is tracked, but the final purchasable SKU and delivery evidence still need reconciliation.
+- Snap SPECS (2026): order intent is tracked, but the final purchasable SKU and delivery evidence still need reconciliation.
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
 - North Focals 2.0: announced and cancelled; no public sale.
@@ -172,4 +179,3 @@ An announcement is not a purchasable model. The following remain in the [researc
 ## Maintenance contract
 
 Every material release or availability finding in the [weekly news workflow](../docs/news/WORKFLOW.md) must check this page. Add a row only when a source establishes an acquisition route; change state without deleting history; link a dedicated chapter when one exists; and add recurring makers, apps, components, or standards to the [glossary](../glossary/README.md). Corrections should preserve the old claim in git history and explain the changed assessment in the next news digest.
-
