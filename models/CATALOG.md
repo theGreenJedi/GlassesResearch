@@ -1,6 +1,6 @@
 # Smart-Glasses Model Registry
 
-This is the cross-ecosystem discovery layer. Inclusion means that a model has a useful source or research lead; it does **not** imply endorsement, ownership, specification verification, or architectural equivalence.
+This is the cross-ecosystem discovery layer. For the canonical purchaser-history ledger with stable model IDs, use [The List](THE_LIST.md). Inclusion means that a model has a useful source or research lead; it does **not** imply endorsement, ownership, specification verification, or architectural equivalence.
 
 **Evidence key:** `hands-on` = tested by this project; `primary` = manufacturer or project-controlled source; `community` = attributed third-party work; `commercial` = seller or marketplace claim.
 
@@ -45,7 +45,7 @@ This is the cross-ecosystem discovery layer. Inclusion means that a model has a 
 ## Highest-value next expansions
 
 1. Map open repositories, SDKs, firmware projects, and compatibility lists across the registered models.
-2. Add historical families such as Google Glass, North Focals, Bose Frames, Razer Anzu, Vue, Nreal/XREAL predecessors, Epson Moverio, RealWear, and enterprise Vuzix models using primary or archived sources.
+2. Promote candidate families from [The List](THE_LIST.md) into dedicated chapters when substantive evidence accumulates.
 3. Build an OEM/rebrand registry for low-cost HeyCyan-compatible camera glasses beyond W610.
 4. Preserve downloadable artifacts with retrieval dates, hashes, license status, and redistribution notes.
 5. Add per-model chapters only as evidence accumulates.
