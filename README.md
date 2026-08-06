@@ -4,127 +4,79 @@ Independent research into AI eyeglasses, smart eyewear, and open, user-controlle
 
 **Knowledge over marketing. Evidence over speculation. Openness over lock-in.**
 
-The repository I wish I had when I began.
+GlassesResearch is a public, vendor-neutral knowledge base for smart glasses: current devices, discontinued systems, open development, practical ownership, community discoveries, and the history of wearable computing.
 
-## Start here
+## Explore the research
 
-- [`FOUNDING_CHARTER.md`](FOUNDING_CHARTER.md) — the constitutional mission and standard for every future merge
-- [`docs/INSTITUTIONAL_COLLECTIONS.md`](docs/INSTITUTIONAL_COLLECTIONS.md) — map of the research institution and its interconnected collections
-- [`WHY.md`](WHY.md) — why this project exists and what success means
-- [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — what GlassesResearch is building
-- [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — ecosystem-wide scope and evidence lanes
-- [`models/THE_LIST.md`](models/THE_LIST.md) — **The List:** 119 purchasable smart-glasses models and generations, past and present
-- [`models/CATALOG.md`](models/CATALOG.md) — broader cross-ecosystem research registry
-- [`resources/ECOSYSTEM_RESOURCE_CATALOG.md`](resources/ECOSYSTEM_RESOURCE_CATALOG.md) — cross-model SDK, firmware, protocol, hardware, and preservation intake catalog
-- [`docs/faq/README.md`](docs/faq/README.md) — 100 current smart-glasses questions and evidence-aware answers
-- [`docs/news/README.md`](docs/news/README.md) — weekly ecosystem research, news, releases, upgrades, and availability tracking
-- [`docs/INDUSTRY_TIMELINE.md`](docs/INDUSTRY_TIMELINE.md) — historical research index from wearable-computing foundations through AI glasses
-- [`docs/PRESERVATION_PROGRAM.md`](docs/PRESERVATION_PROGRAM.md) — archive-first workflow, metadata, provenance, and legal boundaries
-- [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — no orphan knowledge, no empty merges, and other operating rules
-- [`docs/INVESTIGATION_WORKFLOW.md`](docs/INVESTIGATION_WORKFLOW.md) — how investigations become durable pull requests
-- [`glossary/README.md`](glossary/README.md) — canonical homes for recurring organizations, components, applications, standards, and other entities
-- [`models/W610/resources/RESEARCH_PORTAL.md`](models/W610/resources/RESEARCH_PORTAL.md) — annotated, clickable routes for further W610 research
-- [`models/W610/QUESTIONS.md`](models/W610/QUESTIONS.md) — enter the W610 chapter through the question you are trying to answer
-- [`docs/EVIDENCE_STANDARD.md`](docs/EVIDENCE_STANDARD.md) — claim status, confidence, sourcing, and correction rules
-- [`models/W610/RESEARCH_BACKLOG.md`](models/W610/RESEARCH_BACKLOG.md) — the living investigation queue
+### [Research by model](models/THE_LIST.md)
 
-## Mission
+Browse **119 purchasable models and generations**, past and present. Follow model names to the best available GlassesResearch chapter or external primary source.
 
-GlassesResearch is a digital research institution dedicated to preserving, understanding, and advancing the global smart-glasses ecosystem. It makes scattered information easier to find, verify, preserve, compare, and build upon. It covers potentially hundreds of models across hardware, BLE behavior, firmware, SDKs and apps, optics, retail variants, reverse engineering, manufacturing intelligence, community resources, and user-controlled AI integrations. The W610 is the current hands-on reference device, not the repository boundary.
+### [Buyer and openness guide](buyers/BUYER_AND_OPENNESS_GUIDE.md)
 
-## Principles
+Compare devices through the questions that matter after purchase: account dependence, offline operation, data control, app requirements, repairability, development access, and vendor lock-in.
 
-- **Document before modifying.** Preserve original behavior, evidence, and sources.
-- **Verify claims.** Separate confirmed findings from hypotheses and open questions.
-- **Attribute sources.** Credit vendors, researchers, community posts, and archived materials.
-- **Prefer user control.** Explore local-first and vendor-independent integrations.
-- **Avoid needless rediscovery.** Record repeatable procedures and prior results.
-- **Preserve corrections.** Mark disproven claims and retain the reasoning trail.
-- **Archive first when knowledge is at risk.** Organization can improve later; a vanished source cannot.
-- **No orphan knowledge.** Give recurring entities one canonical home and link back to it.
-- **No empty merges.** New structure must provide immediate value.
-- **Measure preserved knowledge, not page count.** Infrastructure exists to serve evidence and discovery.
+### [Open hacking and development](hacking/README.md)
 
-## Institutional collections
+Find verified work on firmware, BLE, SDKs, applications, recovery, reverse engineering, interoperability, and vendor-independent use. Unverified leads remain clearly marked rather than presented as fact.
 
-GlassesResearch organizes existing and future work into interconnected collections:
+### [Research and news](docs/news/README.md)
 
-- global device database and model dossiers;
-- manufacturer, ODM, rebrand, and product-family history;
-- firmware, SDK, API, application, BLE, and protocol research;
-- hardware, optics, display, audio, sensor, repair, and prescription resources;
-- AI capability and integration research;
-- papers, patents, standards, and historical timelines;
-- community, developer, and preservation directories;
-- comparison tools, indexes, glossary entities, and a knowledge graph.
+Track releases, upgrades, availability, industry developments, source changes, and research worth preserving.
 
-See [`docs/INSTITUTIONAL_COLLECTIONS.md`](docs/INSTITUTIONAL_COLLECTIONS.md) for the canonical collection map.
+### [100 smart-glasses questions](docs/faq/README.md)
 
-## Model chapters
+Start with a real question about buying, displays, battery life, privacy, accessibility, AI, development, ownership, or the future of the category.
 
-Each glasses model receives its own self-contained research dossier under [`models/`](models/README.md). Device-specific hardware, BLE research, firmware, applications, manufacturing intelligence, diagnostics, diagrams, schematics, evidence, resources, questions, chronology, genealogy, and research history remain together inside that model's hierarchy.
+### [The historical collection](docs/INDUSTRY_TIMELINE.md)
 
-### Registry and current hands-on model
+Explore wearable-computing foundations, early pioneers, discontinued products, modern AI glasses, obscure OEM families, and the material that will become the GlassesResearch Museum.
 
-- [`models/THE_LIST.md`](models/THE_LIST.md) — canonical purchaser-history ledger with stable model IDs
-- [`models/CATALOG.md`](models/CATALOG.md) — broader research registry with real starting sources
-- [`models/W610/`](models/W610/README.md) — current hands-on reference chapter
+## Current research
 
-Shared entities and repository-wide methods remain in canonical locations such as the [`glossary`](glossary/README.md) and [project documentation](docs/PROJECT_VISION.md).
+- **The List** currently records 119 purchasable models and generations.
+- The **W610 dossier** is the active hands-on reference investigation, covering hardware, BLE, firmware, software, manufacturing, diagnostics, and open hacking.
+- The ecosystem resource catalog preserves SDK, firmware, protocol, application, teardown, and community-research leads across manufacturers.
+- The news program tracks releases, updates, availability, and developments on a recurring evidence-aware workflow.
+- The preservation program records artifacts and sources at risk of disappearing.
 
-## Repository map
+## Current hands-on investigation: W610
 
-- [`FOUNDING_CHARTER.md`](FOUNDING_CHARTER.md) — institutional identity, mission, research principles, and highest measure of success
-- [`docs/INSTITUTIONAL_COLLECTIONS.md`](docs/INSTITUTIONAL_COLLECTIONS.md) — collection architecture and discovery plan
-- [`docs/PRESERVATION_PROGRAM.md`](docs/PRESERVATION_PROGRAM.md) — lawful preservation workflow and archive status vocabulary
-- [`docs/INDUSTRY_TIMELINE.md`](docs/INDUSTRY_TIMELINE.md) — initial historical index and research backlog
-- [`models/`](models/README.md) — The List, model-specific research chapters, and ecosystem registry
-- [`resources/ECOSYSTEM_RESOURCE_CATALOG.md`](resources/ECOSYSTEM_RESOURCE_CATALOG.md) — ecosystem-wide resource intake and artifact-preservation queue
-- [Standing engineering directives](https://github.com/theGreenJedi/GlassesResearch/blob/main/AGENTS.md) — repository-maintenance rules retained in GitHub rather than duplicated into the public reading layer
-- [`docs/ECOSYSTEM_SCOPE.md`](docs/ECOSYSTEM_SCOPE.md) — model-agnostic scope and evidence lanes
-- [`docs/faq/README.md`](docs/faq/README.md) — buyer, use-case, technical, privacy, accessibility, and development FAQ
-- [`docs/news/README.md`](docs/news/README.md) — current news hub, release tracker, source watchlist, and weekly workflow
-- [`glossary/`](glossary/README.md) — canonical homes for recurring entities
-- [`docs/PROJECT_VISION.md`](docs/PROJECT_VISION.md) — repository mission and intended visitor experience
-- [`docs/REPOSITORY_LAWS.md`](docs/REPOSITORY_LAWS.md) — daily engineering rules
-- [`docs/INVESTIGATION_WORKFLOW.md`](docs/INVESTIGATION_WORKFLOW.md) — investigation and pull-request process
-- [`docs/KISS_WORKING_NOTES.md`](docs/KISS_WORKING_NOTES.md) — future subject-independent framework notes that do not block GlassesResearch
-- [`docs/EVIDENCE_STANDARD.md`](docs/EVIDENCE_STANDARD.md) — evidence and confidence rules
-- [`docs/Hardware.md`](docs/Hardware.md) — shared physical research methods and initial notes
-- [`docs/BLE.md`](docs/BLE.md) — shared discovery and protocol methodology
-- [`docs/Firmware.md`](docs/Firmware.md) — firmware acquisition, preservation, and analysis guidance
-- [`docs/SDK.md`](docs/SDK.md) — vendor apps, SDKs, APIs, and integration notes
-- [`docs/AmazonModels.md`](docs/AmazonModels.md) — retail listings and model-family comparisons
-- [`docs/ReverseEngineering.md`](docs/ReverseEngineering.md) — methodology and reproducible experiment guidance
-- [`docs/AI610-Notes.md`](docs/AI610-Notes.md) — private-notebook findings prepared for public documentation
-- [`docs/ResearchLog.md`](docs/ResearchLog.md) — repository-wide dated engineering notes
-- [`images/`](images/README.md) — shared photographs, screenshots, diagrams, and other visual evidence
+The W610 is the project's current physical reference device, not the boundary of the project.
 
-## Evidence workflow
+- [W610 chapter](models/W610/README.md)
+- [Questions and answers](models/W610/QUESTIONS.md)
+- [Open hacking dossier](models/W610/hacking/README.md)
+- [Research portal](models/W610/resources/RESEARCH_PORTAL.md)
+- [Research backlog](models/W610/RESEARCH_BACKLOG.md)
 
-Visual evidence should be preserved alongside written observations rather than treated as decoration. Each photo set should have a dated folder and a short index describing what each image shows, where it came from, and whether it is original evidence or a third-party source.
+## Contribute what you know
 
-Recommended naming pattern:
+Own an unusual device? Found a manual? Tested a feature? Preserved an APK? Captured BLE traffic? Repaired a frame? Corrected a model name?
 
-```text
-images/YYYY-MM-DD-topic/
-```
+[**Visit the contribution portal.**](docs/CONTRIBUTE.md)
 
-Model-specific evidence should normally be stored inside the appropriate model chapter, such as:
+Contributions may be credited by real name, handle, project name, or pseudonym—or submitted anonymously. Community reports are welcome when honestly labeled.
 
-```text
-models/W610/evidence/photos/YYYY-MM-DD-topic/
-```
+## Privacy
 
-See [`images/README.md`](images/README.md) for naming, provenance, privacy, and cataloging guidance.
+GlassesResearch exists to preserve knowledge, not attention.
 
-## Current status
+**No advertising. No tracking cookies. No behavioral profiling. No sale of visitor data.**
 
-This repository is actively converting investigations into useful, cross-linked knowledge across the smart-glasses ecosystem. The W610 chapter is the current hands-on reference implementation; the model registry provides the growth path for devices not yet physically available to maintainers.
+Read the [privacy statement](docs/PRIVACY.md).
 
-## Contributing
+## About the institution
 
-Contributions should clearly distinguish observed facts, sourced claims, interpretations, hypotheses, and disproven claims. Include reproduction steps whenever possible and follow the founding charter, evidence standard, repository laws, preservation program, and investigation workflow.
+The mission, evidence rules, preservation methods, governance documents, and engineering standards remain available for contributors and anyone who wants to understand how GlassesResearch operates. They support the research without standing between visitors and the information.
+
+- [Why GlassesResearch exists](WHY.md)
+- [Founding Charter](FOUNDING_CHARTER.md)
+- [Evidence Standard](docs/EVIDENCE_STANDARD.md)
+- [Preservation Program](docs/PRESERVATION_PROGRAM.md)
+- [Institutional Collections](docs/INSTITUTIONAL_COLLECTIONS.md)
+- [Repository Laws](docs/REPOSITORY_LAWS.md)
+- [Investigation Workflow](docs/INVESTIGATION_WORKFLOW.md)
 
 ## Safety and legal note
 
