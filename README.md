@@ -28,9 +28,9 @@ Track releases, upgrades, availability, industry developments, source changes, a
 
 Start with a real question about buying, displays, battery life, privacy, accessibility, AI, development, ownership, or the future of the category.
 
-### [The historical collection](docs/INDUSTRY_TIMELINE.md)
+### [The GlassesResearch Museum](docs/MUSEUM.md)
 
-Explore wearable-computing foundations, early pioneers, discontinued products, modern AI glasses, obscure OEM families, and the material that will become the GlassesResearch Museum.
+Explore wearable-computing foundations, early pioneers, discontinued products, developer editions, obscure OEM families, failed experiments, and the history behind modern AI glasses.
 
 ## Current research
 
