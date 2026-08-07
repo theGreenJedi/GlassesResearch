@@ -44,5 +44,12 @@ Submitted questions are added to the [Community Questions](COMMUNITY_QUESTIONS.m
 - **Answered** — a supported answer exists and is linked.
 - **Added to Knowledge Base** — the result has been promoted into a model chapter, guide, FAQ, glossary entry, or other canonical research page.
 - **Unable to Verify** — evidence remains insufficient or contradictory.
+- **Removed — Off Topic** — the question does not materially concern smart glasses, AI glasses, wearable display systems, their software, hardware, ownership, privacy, accessibility, development, repair, history, or closely related research.
 
-A broadly useful answered question may eventually become part of the main FAQ collection. The original community question remains preserved so the research path is not lost.
+A broadly useful answered question may eventually become part of the main FAQ collection.
+
+## Moderation
+
+GlassesResearch is a focused research hub, not a general discussion board. Questions that are clearly off topic, spam, promotional, abusive, duplicative without adding new information, or otherwise unrelated to the project's research scope may be removed from the public Community Questions queue.
+
+Removal from the public queue is editorial housekeeping, not a judgment about the person asking. When practical, an associated GitHub issue may be closed with a short reason. The public research queue does not need to preserve material that does not belong in the research corpus.
