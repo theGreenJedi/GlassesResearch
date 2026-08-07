@@ -50,6 +50,20 @@ def main() -> None:
             ignore=shutil.ignore_patterns("__pycache__", "*.pyc"),
         )
 
+    cname = ROOT / "CNAME"
+    if cname.exists():
+        shutil.copy2(cname, DEST / "CNAME")
+
+    (DEST / "robots.txt").write_text(
+        "User-agent: *\nAllow: /\n\nSitemap: https://glassesresearch.org/sitemap.xml\n",
+        encoding="utf-8",
+    )
+    (DEST / "humans.txt").write_text(
+        "GlassesResearch\nIndependent, privacy-first smart-glasses research.\n"
+        "Repository: https://github.com/theGreenJedi/GlassesResearch\n",
+        encoding="utf-8",
+    )
+
     print(f"Staged documentation at {DEST}")
 
 
