@@ -1,14 +1,21 @@
 # GlassesResearch
 
-## Find what you came for
+Evidence-based research into smart glasses, AI glasses, and open user-controlled eyewear.
 
-### [100 Questions](docs/faq/README.md)
+## Start with your question
 
-Practical answers about buying, battery life, displays, privacy, accessibility, AI, cameras, development, ownership, and the future of smart glasses.
+- **What glasses exist?** → [Browse The List](models/THE_LIST.md)
+- **What should I buy?** → [Buyer & Openness Guide](buyers/BUYER_AND_OPENNESS_GUIDE.md)
+- **I already own a pair.** → [Find the model](models/THE_LIST.md)
+- **I want to hack or develop.** → [Hacking & Open Development](hacking/README.md)
+- **What is happening now?** → [Research & News](docs/news/README.md)
+- **I have a practical question.** → [100 Questions](docs/faq/README.md)
+- **I need terminology.** → [Glossary](glossary/README.md)
+- **I am researching older devices.** → [Museum](docs/MUSEUM.md)
 
-### [Hacking & Open Development](hacking/README.md)
+[**Not sure where to begin? Start Here.**](docs/START_HERE.md)
 
-Verified firmware, BLE, SDK, application, recovery, reverse-engineering, interoperability, and vendor-independence research. Leads that are not yet reproduced remain clearly labeled.
+## Core research collections
 
 ### [Models — The List](models/THE_LIST.md)
 
@@ -18,30 +25,25 @@ Browse **119 purchasable models and generations**, past and present, with links 
 
 Compare account dependence, offline operation, data control, app requirements, repairability, prescription options, development access, and vendor lock-in.
 
+### [Hacking & Open Development](hacking/README.md)
+
+Verified firmware, BLE, SDK, application, recovery, reverse-engineering, interoperability, and vendor-independence research. Unverified leads remain clearly labeled.
+
 ### [Research & News](docs/news/README.md)
 
 Follow releases, upgrades, availability changes, industry developments, and research worth preserving.
 
-### [GlassesResearch Museum](docs/MUSEUM.md)
+### [100 Questions](docs/faq/README.md)
 
-Explore early wearable computing, discontinued products, developer editions, obscure OEM families, failed experiments, and the history behind modern AI glasses.
-
-### [Glossary](glossary/README.md)
-
-Identify recurring manufacturers, suppliers, components, applications, standards, and technical terms without rediscovering them across unrelated pages.
+Practical answers about buying, battery life, displays, privacy, accessibility, AI, cameras, development, ownership, and the future of smart glasses.
 
 ### [W610 Hands-On Research](models/W610/README.md)
 
-Enter the current physical reference investigation: hardware, BLE, firmware, software, manufacturing, diagnostics, community resources, and open hacking.
+Current physical-reference investigation covering hardware, BLE, firmware, software, manufacturing, diagnostics, community resources, and open hacking.
 
-## Active collections
+## Evidence standard
 
-- **119 models and generations** in The List.
-- **100 evidence-aware questions** across ten practical subject areas.
-- **Open-development research** with verified and not-yet-verified work kept distinct.
-- **A living Museum** for historical, discontinued, obscure, and unsuccessful systems.
-- **A hands-on W610 dossier** backed by original observations and external research.
-- **A preservation ledger** for SDKs, firmware references, manuals, protocols, applications, teardowns, and at-risk sources.
+GlassesResearch keeps firsthand observations, primary sources, community reports, hypotheses, historical material, and disproven claims distinct. Repetition is not verification.
 
 ## Contribute knowledge
 
@@ -49,7 +51,7 @@ Own a device? Found a manual? Tested a feature? Preserved an APK? Captured BLE t
 
 [**Contribute what you know.**](docs/CONTRIBUTE.md)
 
-Community reports are welcome when honestly labeled. Contributors may use a real name, handle, project name, pseudonym, or remain anonymous.
+Community reports are welcome when honestly labeled.
 
 ## Safety and legal note
 
