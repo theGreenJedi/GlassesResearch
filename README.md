@@ -2,6 +2,12 @@
 
 Evidence-based research into smart glasses, AI glasses, and open user-controlled eyewear.
 
+## Start with The List
+
+[**Browse The List — 119 purchasable smart-glasses models and generations, past and present.**](models/THE_LIST.md)
+
+The List is the central index for GlassesResearch. Start with a model, then branch into buying guidance, model chapters, hacking and open-development research, news, community questions, glossary entries, and the strongest available primary sources.
+
 ## Start with your question
 
 - **What glasses exist?** → [Browse The List](models/THE_LIST.md)
@@ -17,9 +23,11 @@ Evidence-based research into smart glasses, AI glasses, and open user-controlled
 
 ## Core research collections
 
-### [Models — The List](models/THE_LIST.md)
+### [The List](models/THE_LIST.md)
 
-Browse **119 purchasable models and generations**, past and present, with links to GlassesResearch dossiers or the strongest available external source.
+Browse **119 purchasable models and generations**, past and present. On the website, The List can be searched and filtered by maker, status, and device type, with each model linked to a GlassesResearch chapter when one exists or otherwise to the strongest available source.
+
+**Missing a model?** [Ask us to investigate it](docs/faq/ASK_YOUR_OWN_QUESTION.md) or [contribute what you know](docs/CONTRIBUTE.md).
 
 ### [Buyer & Openness Guide](buyers/BUYER_AND_OPENNESS_GUIDE.md)
 
