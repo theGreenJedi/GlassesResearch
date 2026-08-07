@@ -46,6 +46,9 @@ jobs:
       - name: Build site
         run: mkdocs build --strict
 
+      - name: Verify search discoverability signals
+        run: python scripts/verify_discoverability.py
+
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
@@ -69,3 +72,21 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify live search endpoints
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3 4 5; do
+            if curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/robots.txt -o /tmp/robots.txt \
+              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/sitemap.xml -o /tmp/sitemap.xml \
+              && grep -Fq 'Sitemap: https://glassesresearch.org/sitemap.xml' /tmp/robots.txt \
+              && grep -Fq 'https://glassesresearch.org/' /tmp/sitemap.xml; then
+              echo 'Live discoverability endpoints verified.'
+              exit 0
+            fi
+            echo "Attempt ${attempt}/5 failed; waiting for Pages/DNS propagation..."
+            sleep 15
+          done
+          echo 'Live discoverability verification failed.' >&2
+          exit 1
