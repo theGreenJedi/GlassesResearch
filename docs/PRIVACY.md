@@ -10,10 +10,20 @@ The project website is intentionally simple:
 - no tracking cookies;
 - no behavioral profiling;
 - no sale of visitor data;
-- no third-party analytics added by this project;
-- no attempt to identify visitors across pages or visits.
+- no cross-site visitor identification;
+- no attempt to build individual visitor profiles.
 
 We preserve knowledge, not attention.
+
+## Aggregate analytics
+
+GlassesResearch permits one narrowly scoped analytics service: **Cloudflare Web Analytics**.
+
+It is used only to understand aggregate site usage and page performance so the project can learn which research is useful and where the public site needs improvement. The project does not use analytics for advertising, retargeting, user scoring, personalization, or cross-site tracking.
+
+Cloudflare Web Analytics is designed without cookies or persistent browser storage and does not track individual users across Cloudflare customers' sites. If the GlassesResearch Cloudflare site token is not configured, the analytics bootstrap remains inactive and sends nothing.
+
+The analytics configuration is public in the repository so visitors and contributors can inspect exactly what the project loads.
 
 ## Community-specific greetings
 
@@ -52,8 +62,8 @@ Contributors should not submit private personal information about themselves or 
 
 ## Services outside the project
 
-The site is hosted through GitHub Pages. Following links to GitHub, manufacturers, archives, videos, forums, or other outside services means those services apply their own privacy practices. GlassesResearch cannot control external sites.
+The site is hosted through GitHub Pages. Cloudflare Web Analytics may receive the privacy-preserving performance beacon described above. Following links to GitHub, manufacturers, archives, videos, forums, or other outside services means those services apply their own privacy practices. GlassesResearch cannot control external sites.
 
 ## Changes to this promise
 
-Any future proposal to add analytics, advertising, persistent visitor identification, or tracking must be explicit, publicly documented, and reviewed as a project-policy change. The default remains: **no cookies, no tracking, no profiling.**
+Any future proposal to add advertising, tracking cookies, persistent visitor identification, profiling, or a materially broader analytics system must be explicit, publicly documented, and reviewed as a project-policy change. The default remains: **no cookies, no profiling, no surveillance.**
