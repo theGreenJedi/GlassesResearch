@@ -58,16 +58,7 @@ A pull request should add verified information, strengthen sourcing, preserve us
 
 Infrastructure-only work should be exceptional and justified by a concrete research need.
 
-## Active research agenda
-
-### Highest priority
-
-1. Reduce **Unknown** and **Not Verified** entries across the site by locating stronger sources.
-2. Expand W610 / HeyCyan research: firmware, SDK, BLE, companion-app alternatives, FCC records, manuals, hardware revisions, recovery methods, and community projects.
-3. Replace generic community/resource placeholders with concrete, identifiable resources.
-4. Populate comparison records with sourced data for additional models.
-5. Deepen the industry timeline with sourced milestones and historical context.
-6. Preserve disappearing smart-glasses resources before links and files vanish.
+## Coverage
 
 ### Model coverage
 
