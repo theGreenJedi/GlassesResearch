@@ -1,5 +1,19 @@
 /* Keep the primary navigation compact, readable, and within the viewport. */
 
+/* Make links in page content unmistakably clickable. */
+.md-content a:not(.headerlink) {
+  color: var(--md-typeset-a-color);
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
+  font-weight: 600;
+}
+
+.md-content a:not(.headerlink):hover,
+.md-content a:not(.headerlink):focus {
+  text-decoration-thickness: 0.14em;
+}
+
 @media screen and (min-width: 76.25em) {
   .md-tabs__list {
     gap: 0;
