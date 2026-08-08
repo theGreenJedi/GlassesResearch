@@ -2,19 +2,23 @@
 
 {% block extrahead %}
   {{ super() }}
-  {% set canonical_url = config.site_url.rstrip('/') ~ '/' ~ page.url %}
-  {% set page_description = page.meta.description or config.site_description %}
-  <link rel="canonical" href="{{ canonical_url }}">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="GlassesResearch">
-  <meta property="og:title" content="{{ page.title }} | GlassesResearch">
-  <meta property="og:description" content="{{ page_description }}">
-  <meta property="og:url" content="{{ canonical_url }}">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ page.title }} | GlassesResearch">
-  <meta name="twitter:description" content="{{ page_description }}">
-  <script type="application/ld+json">{{ page.meta.seo_core_json | safe }}</script>
-  {% if page.meta.seo_faq_json %}
-  <script type="application/ld+json">{{ page.meta.seo_faq_json | safe }}</script>
+  {% if page %}
+    {% set canonical_url = config.site_url.rstrip('/') ~ '/' ~ page.url %}
+    {% set page_description = page.meta.description or config.site_description %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GlassesResearch">
+    <meta property="og:title" content="{{ page.title }} | GlassesResearch">
+    <meta property="og:description" content="{{ page_description }}">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title }} | GlassesResearch">
+    <meta name="twitter:description" content="{{ page_description }}">
+    <script type="application/ld+json">{{ page.meta.seo_core_json | safe }}</script>
+    {% if page.meta.seo_faq_json %}
+    <script type="application/ld+json">{{ page.meta.seo_faq_json | safe }}</script>
+    {% endif %}
+  {% else %}
+    <meta name="robots" content="noindex,follow">
   {% endif %}
 {% endblock %}
