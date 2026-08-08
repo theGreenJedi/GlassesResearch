@@ -1,62 +1,50 @@
 # W610 Research Portal
 
-This is the model-specific launchpad for continuing W610 research. It complements the knowledge pages: the repository records what we currently believe, while this portal shows where readers can investigate the evidence and ecosystem themselves.
+This page contains **resources we actually found** for W610 / HeyCyan research. Generic discovery routes such as “search Reddit,” “check YouTube,” or “look for a Discord” are intentionally excluded from the public portal until a concrete, useful resource is identified.
 
-Every link includes a reason to visit and a caution where appropriate. Commercial listings are leads, not independent verification.
+For the machine-readable source-of-truth, see the [Evidence Corpus](../../../evidence/README.md).
 
-## Communities and discovery channels
+## Concrete community and development resources
 
-| Resource | Direct link | Why visit | Notes before clicking |
+| Resource | Type | Why it matters | Evidence state |
 |---|---|---|---|
-| GitHub — HeyCyan search | [Search code and repositories](https://github.com/search?q=HeyCyan&type=code) | Find package names, integrations, reverse-engineering notes, strings, and mirrors | No mature W610-specific project was identified in the first pass; search again as identifiers accumulate |
-| GitHub — package-name search | [Search `com.glasssutdio.wear`](https://github.com/search?q=%22com.glasssutdio.wear%22&type=code) | Locate APK references and extracted application artifacts | Package spelling is provisional until verified from an APK |
-| GitHub — JL7018F search | [Search code](https://github.com/search?q=%22JL7018F%22&type=code) | Find SDKs, build files, strings, and related hardware projects | Adjacent chipset work may be useful even when not W610-specific |
-| Reddit smart-glasses search | [Search Reddit for W610 smart glasses](https://www.reddit.com/search/?q=W610%20smart%20glasses) | Owner reports, troubleshooting, rebrand identification, purchase history | Results are fragmented; preserve exact posts rather than citing a subreddit generally |
-| Reddit HeyCyan search | [Search Reddit for HeyCyan](https://www.reddit.com/search/?q=HeyCyan) | App failures, setup reports, cloud behavior, and rebrand clues | User reports are leads, not controlled tests |
-| YouTube W610 search | [Search videos](https://www.youtube.com/results?search_query=W610+AI+smart+glasses) | Visual confirmation of packaging, controls, app screens, camera output, and possible teardown footage | Many videos repeat seller claims; prioritize original footage and disassembly |
-| YouTube HeyCyan search | [Search videos](https://www.youtube.com/results?search_query=HeyCyan+glasses) | App walkthroughs and pairing behavior across retail brands | Note exact brand, model markings, app version, and upload date |
-| Google Groups / web forum search | [Search forums for W610 HeyCyan](https://www.google.com/search?q=%22W610%22+HeyCyan+forum) | Surface niche forums, support discussions, translated posts, and cached pages | Search across languages and archive useful pages |
-| Discord discovery search | [Google search for W610 or HeyCyan Discord](https://www.google.com/search?q=%28W610+OR+HeyCyan%29+Discord) | Find invite pages, smart-glasses servers, embedded communities, and vendor support groups | No confirmed dedicated W610 Discord has been found yet; expired invites should be recorded rather than silently removed |
-| Telegram discovery search | [Google search for W610 or HeyCyan Telegram](https://www.google.com/search?q=%28W610+OR+HeyCyan%29+Telegram) | Find vendor groups, reseller channels, firmware shares, and regional communities | Treat binaries and claims as untrusted until preserved and checked |
-| QQ / Chinese-community discovery | [Baidu search for W610 HeyCyan QQ](https://www.baidu.com/s?wd=W610%20HeyCyan%20QQ) | Chinese-language support groups, supplier contacts, firmware discussions, and factory leads | Access may require an account and translation; preserve group identifiers and invitation provenance |
+| [HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK) | GitHub SDK / reverse-engineering resource | Cross-platform BLE SDK for HeyCyan-compatible glasses; repository topics explicitly include W610, and the project preserves a manufacturer-original branch. | Community-primary; not yet GlassesResearch reproduced |
+| [CyanBridge / Alternative HeyCyan App and SDK](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK) | Alternative Android companion app / SDK | Concrete vendor-app replacement project with media sync, assistant integration, local-AI work, and published APK releases. | Community-primary; not yet GlassesResearch reproduced |
+| [CyanBridge releases](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases) | Release / APK archive | Versioned release notes and downloadable Android artifacts, including local-AI releases. | Community-primary; preserve metadata and hashes before testing |
+| [CyanBridge v2.0.0 discussion on r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/comments/1sg1fyr/alternative_heycyan_app_massive_release_v200/) | Specific Reddit thread | Concrete community discussion around CyanBridge 2.0.0 and local-AI support; useful for reports, testing feedback, and follow-up leads. | Community-report |
+| [CyanBridge v1.0.2 discussion on r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/comments/1qr7n6z/release_use_gemini_chatgpt_with_heycyan_smart/) | Specific Reddit thread | Documents an earlier public release of Gemini / ChatGPT assistant replacement work for HeyCyan-compatible glasses. | Community-report |
+| [Cheap W610 always-on voice question on r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/comments/1r88qjl/do_cheap_smart_glasses_support_alwayson_voice/) | Specific Reddit thread | A real W610 owner/buyer question about wake-word versus button-triggered assistant behavior. Useful as a concrete question to test, not proof of behavior. | Community-report |
 
-## Organizations and suppliers
+## Regulatory and identity evidence
 
-| Resource | Direct link | Why visit | Reliability note |
+| Resource | Type | Why it matters | Evidence state |
 |---|---|---|---|
-| Goodway Techs W610 | [Product page](https://www.goodwaytechs.com/goodway-ai-smart-glasses-with-8mp-camera-real-time-translation-ip65-waterproof-42g-lightweight-w610.html) | One of the clearest W610 specification and customization pages | Vendor-controlled commercial claim; see [ORG-0002](../../../glossary/organizations/ORG-0002-goodway-techs.md) |
-| Dongguan Zhiyang on Alibaba | [Search current listings](https://www.alibaba.com/trade/search?SearchText=Dongguan+Zhiyang+W610) | OEM/ODM language, supplier identity, MOQ, customization, and repeated platform specifications | Marketplace claim; see [ORG-0003](../../../glossary/organizations/ORG-0003-dongguan-zhiyang.md) |
-| HeyCyan app operator | [Google Play search](https://play.google.com/store/search?q=HeyCyan&c=apps) | Developer identity, app versions, permissions, support and privacy links | Strong source for software operator, not proof of hardware manufacture; see [ORG-0001](../../../glossary/organizations/ORG-0001-hecyan-qingcheng-future.md) |
-| Alibaba — generic W610 search | [Search W610 smart glasses](https://www.alibaba.com/trade/search?SearchText=W610+AI+smart+glasses) | Discover rebrands, suppliers, product images, MOQ, and specification variants | Listings are volatile and frequently copy one another |
-| Made-in-China | [Search W610 smart glasses](https://www.made-in-china.com/products-search/hot-china-products/W610_Smart_Glasses.html) | Additional factory and exporter leads outside Alibaba | Verify company names and original product photographs |
+| [FCC ID 2BNVK-W610](https://fccid.io/2BNVK-W610) | FCC equipment authorization | Direct W610 regulatory identity tied to Shenzhen Zhijing Innovation Technology Co., Ltd, with exhibits useful for OEM, radio, label, and hardware research. | Regulatory-primary |
+| [W610 label exhibit](https://fccid.io/2BNVK-W610/Label/Label-and-Location-9003637) | FCC label / location document | Concrete W610 label record with applicant, equipment class, certification date, and published file hash. | Regulatory-primary |
+| [SANVNET manual record containing W610 source title](https://fccid.io/2BSQU-SANVNET/User-Manual/Users-Manual-8800707) | FCC user manual | The FCC document title explicitly references `W610英文说明书2025-7-21.cdr`, providing concrete rebrand/OEM lineage evidence and a published SHA-256. | Regulatory-primary |
+| [Yetrue W100 change-in-ID record](https://fccid.io/2BWON-W100) | FCC change-in-identification record | Explicitly states that W100 is a change in identification of original FCC ID `2BNVK-W610`, providing strong evidence of shared/rebranded hardware lineage. | Regulatory-primary |
 
-## Regulatory and technical registries
+## Manufacturer / supplier material
 
-| Resource | Direct link | Why visit | Notes |
+| Resource | Type | Why it matters | Evidence state |
 |---|---|---|---|
-| Bluetooth SIG qualification search | [Launch Studio search](https://launchstudio.bluetooth.com/Listings/Search) | Applicant names, product declarations, controller and profile relationships | Search aliases and component vendors; see [STD-0001](../../../glossary/standards/STD-0001-bluetooth-sig.md) |
-| FCC Equipment Authorization | [FCC ID search](https://www.fcc.gov/oet/ea/fccid) | Internal photos, test reports, labels, block diagrams, and applicant identities | Requires an FCC ID or strong applicant lead; see [STD-0002](../../../glossary/standards/STD-0002-fcc-equipment-authorization.md) |
-| Google Patents | [Search W610 smart glasses](https://patents.google.com/?q=%22W610%22+smart+glasses) | Industrial design, optics, electronics, and company relationships | Model numbers can collide across industries; inspect assignees and drawings |
-| Internet Archive | [Search archived W610 pages](https://web.archive.org/web/*/W610%20smart%20glasses) | Preserve disappearing listings, manuals, support pages, and historical claims | Archive exact URLs whenever possible rather than relying on broad searches |
+| [Goodway W610 product/specification page](https://www.goodwaytechs.com/goodway-ai-smart-glasses-with-8mp-camera-real-time-translation-ip65-waterproof-42g-lightweight-w610.html) | Supplier specification | Names W610 directly and publishes chipset, camera, battery, software, firmware-feature, and customization claims. | Vendor-primary; claims require independent verification |
 
-## Media, blogs, and reviewers
+## What is intentionally absent
 
-No reviewer or blog has yet earned a canonical glossary page. The links below are discovery routes until a creator publishes original W610-specific work worth preserving.
+There is currently **no public placeholder entry** for a W610 Discord, Telegram group, QQ group, YouTube teardown, firmware mirror, or dedicated forum unless GlassesResearch can name and link a concrete resource that has research value.
 
-| Discovery route | Direct link | What earns promotion to a canonical entry |
-|---|---|---|
-| YouTube reviewers | [W610 review search](https://www.youtube.com/results?search_query=W610+smart+glasses+review) | Original device footage, disclosed retail brand, app/version details, repeatable tests, or teardown evidence |
-| Blogs and review sites | [Web search](https://www.google.com/search?q=%22W610%22+%22smart+glasses%22+review) | Independent photographs, testing methodology, corrections, and durable technical detail |
-| Repair and teardown channels | [YouTube teardown search](https://www.youtube.com/results?search_query=W610+smart+glasses+teardown) | Internal images, component markings, non-destructive opening methods, and measured dimensions |
+Those channels remain valid places for **internal discovery work**, but discovery instructions are not evidence and should not appear as if they were populated resources.
 
 ## Investigation links
 
-- [INV-0001 — W610 Identity](../investigations/001-identity.md)
+- [W610 Open-Hacking Dossier](../hacking/README.md)
 - [W610 Community Map](../COMMUNITY_MAP.md)
 - [W610 Genealogy](../GENEALOGY.md)
 - [Manufacturing Intelligence Map](../manufacturing/INTELLIGENCE_MAP.md)
+- [Evidence Corpus](../../../evidence/README.md)
 - [Canonical Glossary](../../../glossary/README.md)
 
-## Maintenance rule
+## Promotion rule
 
-When a resource becomes important enough to cite repeatedly, create one canonical glossary entry and replace repeated explanations with links. Record the first-added date, last-verified date, reliability, best information, access requirements, archive copy, and related investigations.
+When a newly discovered external resource proves useful enough to cite, add it to the evidence corpus with a stable `EV-####` identifier, direct URL, evidence state, last-verified date, and explanation of why it matters. Public pages should then cross-reference that record instead of adding another generic search link.
