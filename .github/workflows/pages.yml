@@ -45,6 +45,9 @@ jobs:
       - name: Validate artifact preservation archive
         run: python scripts/validate_artifact_archive.py
 
+      - name: Validate evidence corpus
+        run: python scripts/validate_evidence_corpus.py
+
       - name: Validate living industry timeline
         run: python scripts/validate_timeline.py
 
@@ -67,7 +70,9 @@ jobs:
           set -euo pipefail
           test -s site/timeline/events.json
           test -s site/timeline/auto-events.json
+          test -s site/evidence/resources.json
           grep -Fq 'TL-0001' site/timeline/events.json
+          grep -Fq 'EV-0001' site/evidence/resources.json
           grep -Fq 'industry-timeline-app' site/docs/INDUSTRY_TIMELINE/index.html
 
       - name: Upload Pages artifact
