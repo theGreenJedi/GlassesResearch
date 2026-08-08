@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / ".site-src"
 
 COPY_DIRS = (
+    "artifacts",
     "buyers",
     "comparisons",
     "docs",
@@ -47,11 +48,10 @@ def main() -> None:
         source = ROOT / dirname
         if not source.exists():
             raise FileNotFoundError(f"Required documentation directory missing: {dirname}")
-        shutil.copytree(
-            source,
-            DEST / dirname,
-            ignore=shutil.ignore_patterns("__pycache__", "*.pyc"),
-        )
+        ignore = shutil.ignore_patterns("__pycache__", "*.pyc")
+        if dirname == "artifacts":
+            ignore = shutil.ignore_patterns("__pycache__", "*.pyc", "files")
+        shutil.copytree(source, DEST / dirname, ignore=ignore)
 
     cname = ROOT / "CNAME"
     if cname.exists():

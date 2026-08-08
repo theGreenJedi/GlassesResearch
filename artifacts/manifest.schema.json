@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "required": [
+    "record_id",
+    "platforms",
+    "title",
+    "source_owner",
+    "artifact_type",
+    "canonical_url",
+    "retrieved_utc",
+    "redistribution",
+    "preservation_status"
+  ],
+  "artifact_types": [
+    "firmware",
+    "sdk",
+    "app",
+    "manual",
+    "regulatory",
+    "tool",
+    "hardware",
+    "source-repository",
+    "commercial-source",
+    "documentation"
+  ],
+  "redistribution_values": ["allowed", "restricted", "unknown", "per-license"],
+  "preservation_states": [
+    "linked",
+    "metadata-preserved",
+    "archive-requested",
+    "artifact-preserved",
+    "restricted",
+    "lost-unavailable"
+  ],
+  "hash_algorithm": "sha256",
+  "rules": {
+    "artifact-preserved_requires_sha256": true,
+    "artifact-preserved_requires_local_path": true,
+    "local_path_must_be_under": "artifacts/files/"
+  }
+}
