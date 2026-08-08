@@ -1,53 +1,43 @@
-# W610 Community and Research-Source Map
+# W610 Community Resources
 
-This map records communities, organizations, marketplaces, and service operators that currently contain W610-specific knowledge or useful adjacent expertise. Inclusion is a research lead, not an endorsement.
+Concrete public W610/HeyCyan resources and discussions. Generic instructions to search Reddit, YouTube, Discord, or GitHub are intentionally omitted.
 
-## Confirmed W610-specific sources
+## Development projects
 
-| Source | Type | W610 value | Status | Reliability |
-|---|---|---|---|---|
-| HeyCyan app and developer listing | Companion-app ecosystem | Confirms the shared app identity used by multiple W610 retail brands; app reviews provide field reports about pairing, Wi-Fi transfer, and AI behavior | Active | Strong secondary / operator-controlled |
-| Goodway Techs W610 page | OEM product page | Publishes a W610 specification sheet, chipset claims, battery, camera, IP65, customization options, company address, and commercial contact | Active | Commercial claim; useful manufacturing lead |
-| Dongguan Zhiyang Electronic Technology / Alibaba | OEM/ODM marketplace listing | Identifies W610 as an OEM/ODM product and repeats the JL7018F + Allwinner V821L2 platform fingerprint | Active | Commercial claim; strong platform lead |
-| Huaqiangbei Electronics Market listing | Wholesale marketplace | Provides OEM pricing tiers, configuration options, app name, chipset, battery, camera, storage, and customization claims | Active | Commercial claim |
-| Manuals+ W610 manuals | Manual mirror / generated support pages | Preserves manuals or manual-derived instructions for KLSYQ and Mingtawn-branded W610 units | Active | Secondary; verify against original manuals |
-| Mingdaln W610 storefront | Retail brand | Confirms another rebrand using HeyCyan, 270 mAh battery claims, removable/prescription-lens claims, and the same feature family | Active | Commercial claim |
-| NJYUAN W610 listing | Retail / technical reseller | Publishes the same JL7018F + V821L2, 8 MP, 270 mAh, HeyCyan specification fingerprint | Active | Commercial claim |
+### HeyCyanSmartGlassesSDK
 
-## Broader communities to monitor
+[GitHub repository](https://github.com/ebowwa/HeyCyanSmartGlassesSDK)
 
-| Community | Focus | Likely value | Current W610 signal |
-|---|---|---|---|
-| GitHub smart-glasses and BLE projects | Reverse engineering, mobile apps, protocol tooling | Code, APK analysis, BLE tooling, firmware utilities | No high-confidence W610-specific repository identified in the initial search |
-| Reddit smart-glasses communities | Ownership reports, troubleshooting, purchasing | Real-world failures, app behavior, rebrand identification | No durable W610-specific hub identified in the initial search |
-| YouTube teardown and smart-glasses reviewers | Demonstrations, disassembly, comparisons | Visual confirmation of controls, internals, camera behavior, and packaging | Needs targeted channel-by-channel review |
-| Bluetooth, embedded, and hardware-security communities | Protocol and firmware expertise | Methodology and assistance once captures or binaries are available | Adjacent expertise rather than W610-specific knowledge |
+Cross-platform community SDK and BLE implementation for HeyCyan-compatible glasses. The repository includes W610 tagging and code paths for device information, media and BLE interaction.
 
-## App operator lead
+### CyanBridge / Alternative HeyCyan App and SDK
 
-The Google Play listing identifies the HeyCyan developer as **Shenzhen Qingcheng Future Technology Co., Ltd.** (深圳市青橙未来科技有限公司) and provides a Shenzhen address and support contact. Treat this as a confirmed app-operator identity, not yet as proof that the company designed or manufactured the glasses.
+[GitHub repository](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK) · [Releases](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases)
 
-## Research priorities
+Alternative Android companion stack for HeyCyan-compatible glasses. Public releases document vendor-independent assistant integrations, media synchronization and local-model work.
 
-1. Find original HeyCyan privacy-policy, support, and corporate pages.
-2. Identify any official support groups, Discord, Telegram, QQ, or WeChat channels referenced by packaging, manuals, app screens, or vendors.
-3. Search GitHub by app package name (`com.glasssutdio.wear`), Bluetooth name (`HeyCyan Glasses`), chipset names, firmware strings, and discovered UUIDs.
-4. Preserve exact community posts and credit original contributors.
-5. Archive useful commercial pages because marketplace listings frequently disappear.
+## Specific community discussions
 
-## Resource record
+### CyanBridge v2.0.0 release discussion
 
-```text
-Name:
-Platform:
-URL:
-Focus:
-W610 relevance:
-Notable contributors:
-Useful threads or files:
-Access requirements:
-Activity level:
-Last checked:
-Reliability notes:
-Archive or citation:
-```
+[Reddit — r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/comments/1sg1fyr/alternative_heycyan_app_massive_release_v200/)
+
+Concrete community discussion of the CyanBridge 2.0.0 release and its HeyCyan-compatible functionality.
+
+### CyanBridge v1.0.2 / Gemini + ChatGPT discussion
+
+[Reddit — r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/comments/1qr7n6z/release_use_gemini_chatgpt_with_heycyan_smart/)
+
+Earlier release discussion documenting third-party assistant integration work for HeyCyan-compatible glasses.
+
+## Regulatory and OEM evidence
+
+- [FCC ID 2BNVK-W610](https://fccid.io/2BNVK-W610) — direct W610 equipment authorization tied to Shenzhen Zhijing Innovation Technology Co., Ltd.
+- [SANVNET FCC manual with W610-linked source title](https://fccid.io/2BSQU-SANVNET/User-Manual/Users-Manual-8800707) — concrete regulatory evidence of W610/rebrand lineage.
+- [Goodway W610 specification page](https://www.goodwaytechs.com/goodway-ai-smart-glasses-with-8mp-camera-real-time-translation-ip65-waterproof-42g-lightweight-w610.html) — supplier specifications, chipset/software claims and OEM customization information.
+
+## Evidence records
+
+These resources are also indexed with stable IDs in the [Evidence Corpus](../../evidence/README.md) and `evidence/resources.json`.
+
+If a Discord, Telegram, QQ, YouTube channel, forum or other community becomes useful enough to list here, GlassesResearch will add the exact resource and direct URL—not an empty category saying one might exist.

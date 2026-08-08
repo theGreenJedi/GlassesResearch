@@ -1,82 +1,91 @@
 # Smart-Glasses Ecosystem Resource Catalog
 
-This catalog is the cross-model intake layer for software, firmware, SDKs, protocols, hardware files, developer documentation, community projects, and fragile research leads.
+A cross-model catalog of concrete software, SDK, documentation, regulatory, source-code, and preservation resources. Entries are here because a real resource was found and can be linked directly.
 
-It is deliberately broader than the current W610 hands-on work. Inclusion means that a resource is relevant enough to preserve and investigate; it does **not** mean that GlassesResearch has tested it, endorses it, or has verified every claim it contains.
+## W610 / HeyCyan
 
-## Evidence and preservation labels
+- [HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK) — community SDK/BLE implementation.
+- [CyanBridge](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK) — alternative Android companion application and SDK.
+- [CyanBridge releases](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases) — versioned Android artifacts and release notes.
+- [FCC ID 2BNVK-W610](https://fccid.io/2BNVK-W610) — W610 equipment authorization and exhibits.
+- [Goodway W610 specification page](https://www.goodwaytechs.com/goodway-ai-smart-glasses-with-8mp-camera-real-time-translation-ip65-waterproof-42g-lightweight-w610.html) — supplier specifications and customization claims.
+- [W610 Research Portal](../models/W610/resources/RESEARCH_PORTAL.md) — GlassesResearch source map and rebrand/regulatory links.
 
-- `project-primary` — maintained by the project or manufacturer responsible for the platform.
-- `community` — maintained by an identifiable third party or community.
-- `commercial` — seller, marketplace, or marketing source.
-- `hands-on` — independently exercised by this repository's maintainers.
-- `linked` — canonical URL recorded, but no local preservation copy exists.
-- `metadata-preserved` — provenance, retrieval date, license, and hash information recorded.
-- `artifact-preserved` — a lawful redistributable copy is stored or attached to a durable release.
-- `restricted` — redistribution is not currently justified; preserve metadata and acquisition route only.
+## Brilliant Labs
 
-## Active resource catalog
+- [Brilliant Labs documentation](https://docs.brilliant.xyz/) — Frame/Halo/Monocle documentation hub.
+- [Frame hardware manual](https://docs.brilliant.xyz/frame/hardware/) — schematics, block diagram, optics/electronics, battery, sensors and firmware information.
+- [Frame SDK](https://docs.brilliant.xyz/frame/frame-sdk/) — Python, Flutter, Lua, BLE and firmware-development entry points.
+- [Frame Bluetooth specification](https://docs.brilliant.xyz/frame/frame-sdk-bluetooth-specs) — BLE services and characteristic protocol documentation.
+- [Brilliant Labs GitHub](https://github.com/brilliantlabsAR) — official source repositories.
+- [Frame Python SDK](https://github.com/brilliantlabsAR/frame-sdk-python) — official Python SDK.
+- [Frame firmware codebase](https://github.com/brilliantlabsAR/frame-codebase) — public firmware/source repository.
 
-| Ecosystem / models | Resource | Type | Evidence lane | Preservation state | Why it matters | Next action |
-|---|---|---|---|---|---|---|
-| W610 / HeyCyan ecosystem | [W610 Research Portal](../models/W610/resources/RESEARCH_PORTAL.md) | Annotated research index | hands-on + mixed sourced leads | Repository-native | Canonical entry point for W610 apps, regulatory records, community work, firmware leads, and testing routes | Continue converting external links into provenance-rich records |
-| Brilliant Labs Frame and related devices | [Brilliant Labs GitHub organization](https://github.com/brilliantlabsAR) | Public source repositories | project-primary | linked | Hardware and software repositories provide unusually strong visibility into an AI-glasses platform | Inventory repositories, licenses, releases, hardware files, and protocol documentation |
-| Mentra-compatible glasses | [MentraOS](https://github.com/Mentra-Community/MentraOS) | Open-source operating system and SDK | project-primary/community | linked | Cross-device application platform and SDK with compatibility implications beyond one glasses model | Record supported devices, build instructions, API boundaries, releases, and license |
-| Open hardware smart glasses | [Open Source Smart Glasses](https://github.com/Mentra-Community/OpenSourceSmartGlasses) | Mechanical, electrical, and software project | project-primary/community | linked | Publishes design files and implementation details that can inform repairability, architecture comparison, and independent builds | Preserve release metadata, BOM, CAD, PCB, firmware, and license details |
-| Vuzix Z100 | [Vuzix Z100 product and developer entry point](https://www.vuzix.com/products/z100-smart-glasses) | Product and developer documentation lead | project-primary | linked | Monocular display platform with SDK and cross-platform compatibility research value | Locate canonical SDK docs, sample code, firmware/update procedure, and supported-host matrix |
-| Snap Spectacles | [Spectacles developer platform](https://www.spectacles.com/) | Device and developer platform | project-primary | linked | Standalone AR platform with a distinct OS, SDK, interaction model, and developer ecosystem | Map SDK, emulator, publishing path, hardware generations, and archival availability |
-| XREAL One and related display glasses | [XREAL One](https://www.xreal.com/one/) | Product/platform source | project-primary | linked | Important tethered-display family for USB-C video, accessories, tracking, and compatibility research | Locate developer docs, firmware tools, USB behavior, accessory protocols, and revision history |
-| RayNeo Air family | [RayNeo AR glasses collection](https://www.rayneo.com/collections/ar-glasses) | Product-family source | project-primary | linked | Large tethered-display family useful for cross-model compatibility and naming/revision analysis | Split family into canonical models and record firmware, accessories, and host requirements |
-| RayNeo X3 Pro | [RayNeo platform](https://www.rayneo.com/) | Standalone AI/AR platform lead | project-primary | linked | Android-derived standalone architecture warrants software, developer, and update-path investigation | Identify SDK, OS lineage, application model, regional variants, and recovery path |
-| Meta / Ray-Ban Meta / Oakley Meta | [Meta AI glasses](https://www.meta.com/ai-glasses/) | Product and platform source | project-primary | linked | Widely deployed camera/audio ecosystem; valuable baseline for privacy, update, app, and capability comparison | Map generations, companion app, firmware/update behavior, public APIs, and regulatory filings |
-| Even Realities G1 / G2 | [Even Realities](https://www.evenrealities.com/) | Product/platform source | project-primary | linked | Display-first architecture and third-party platform compatibility create a useful contrast with camera/audio glasses | Locate developer interfaces, firmware/update mechanisms, optical architecture sources, and compatibility evidence |
-| Solos AirGo family | [Solos](https://solosglasses.com/) | Product-family and integration source | project-primary | linked | Multi-assistant and modular product-family claims make it relevant to vendor-independence research | Separate generations, identify app/API surfaces, and verify replaceable-module claims |
-| Rokid glasses ecosystem | [Rokid global site](https://global.rokid.com/) | Product and developer ecosystem lead | project-primary | linked | Translation, display, Android/XR, and SDK workflows span several relevant smart-glasses categories | Inventory models, SDKs, firmware tools, regional applications, and host dependencies |
-| Android XR partner ecosystem | [Android XR](https://www.android.com/xr/) | Operating-system and partner-platform source | project-primary | linked | Shared platform layer may connect multiple future manufacturers and models | Track SDK releases, supported device classes, partner hardware, and application portability |
-| Amazon Echo Frames | [Echo Frames](https://www.amazon.com/echo-frames/) | Product/history source | project-primary/commercial | linked | Useful historical audio-glasses case study involving cloud assistant dependence, generations, and discontinuation risk | Preserve generation history, app requirements, update status, manuals, and end-of-life evidence |
+## Mentra ecosystem / open hardware
 
-## Artifact-preservation record
+- [MentraOS](https://github.com/Mentra-Community/MentraOS) — MIT-licensed operating system and SDK for smart-glasses applications.
+- [MentraOS releases](https://github.com/Mentra-Community/MentraOS/releases) — versioned builds, release notes, APKs and checksums.
+- [Mentra Community](https://github.com/Mentra-Community) — organization index for SDKs, examples and compatibility projects.
+- [Open Source Smart Glasses](https://github.com/Mentra-Community/OpenSourceSmartGlasses) — open mechanical, electrical, firmware and software design.
+- [MentraOS Display Example App](https://github.com/Mentra-Community/MentraOS-Display-Example-App) — public example application.
 
-Before storing or mirroring an external artifact, add a record containing:
+## Vuzix Z100
 
-```yaml
-resource_id: stable-kebab-case-id
-models:
-  - canonical-model-id
-resource_type: firmware | apk | sdk | source | packet-capture | manual | cad | pcb | tool | procedure | community-post | other
-source_url: https://example.invalid/resource
-source_owner: person-or-organization
-retrieved_utc: 2026-08-05T00:00:00Z
-version_or_revision: unknown
-sha256: unknown
-license: unknown
-redistribution: allowed | restricted | unknown
-preservation_state: linked | metadata-preserved | artifact-preserved | restricted
-claim_lane: hands-on | project-primary | community | commercial | inference
-notes: >-
-  Explain what the artifact is, why it matters, and any uncertainty.
-```
+- [Z100 product page](https://www.vuzix.com/products/z100-smart-glasses) — official specifications and product details.
+- [Z100 documentation](https://support.vuzix.com/docs/z100-documentation) — official manual/documentation index.
+- [Ultralite SDK overview](https://support.vuzix.com/docs/overview-28) — official developer API capabilities.
+- [Android SDK](https://support.vuzix.com/docs/sdk-for-android) — Android integration documentation.
+- [Z100 connection guide](https://support.vuzix.com/docs/how-to-connect-to-the-z100) — official pairing and Vuzix Connect workflow.
 
-## Intake rules
+## Snap Spectacles
 
-1. Preserve the canonical source URL even when an artifact is mirrored.
-2. Never treat a repository fork, marketplace listing, or repost as independent confirmation of an upstream claim.
-3. Record hashes for downloaded files before analysis or modification.
-4. Keep originals immutable; store derived or patched files separately with explicit provenance.
-5. Do not redistribute files merely because they are downloadable. Record license and redistribution status first.
-6. Promote model-specific findings into `models/<canonical-model-id>/` when enough substantive evidence exists.
-7. Record dead links and replacements rather than silently deleting historical routes.
-8. Prefer real resource entries over empty category pages.
+- [Spectacles developer portal](https://developers.snap.com/spectacles/home) — official development entry point.
+- [Spectacles feature/API overview](https://developers.snap.com/spectacles/about-spectacles-features/overview) — device APIs and modules.
+- [Compatibility list](https://developers.snap.com/spectacles/about-spectacles-features/compatibility-list) — API/feature support matrix.
+- [Asset library](https://developers.snap.com/spectacles/about-spectacles-features/asset-library) — packages and sample resources.
+- [Spectacles samples](https://github.com/specs-devs/samples) — public sample code referenced by Snap documentation.
 
-## Priority preservation queue
+## XREAL
 
-1. W610/HeyCyan APKs, firmware, protocol notes, flashing/recovery procedures, and community repositories.
-2. Public hardware and software releases from Brilliant Labs and the Open Source Smart Glasses project.
-3. MentraOS releases, device compatibility records, SDK documentation, and examples.
-4. SDKs, firmware tools, manuals, and compatibility documentation for Vuzix, XREAL, RayNeo, Rokid, and Snap.
-5. Manuals, app requirements, regulatory filings, and end-of-life records for discontinued or cloud-dependent glasses.
-6. OEM/rebrand evidence connecting low-cost camera glasses to shared hardware, applications, firmware, or BLE behavior.
+- [XREAL SDK](https://docs.xreal.com/) — official development documentation.
+- [XREAL One specifications](https://tutorials.xreal.com/docs/glasses/one-series/spec/) — official display/audio/hardware specs.
+- [XREAL One device connection](https://tutorials.xreal.com/docs/glasses/one-series/first-use/connect-device/) — USB-C DisplayPort, power and host guidance.
+- [XREAL One FAQ](https://tutorials.xreal.com/docs/glasses/one-series/faq/) — firmware updates and operation.
 
-## Relationship to model chapters
+## RayNeo
 
-This catalog answers **where useful ecosystem resources are and what must be preserved**. Model chapters answer **what those resources establish about a particular device**. A resource may appear here before a dedicated model chapter exists; that is intentional and allows the repository to scale without creating empty scaffolding.
+- [OpenClaw for RayNeo X3 Pro](https://github.com/RayNeo-AI-2025/OpenClaw) — public X3 Pro application/source with build and device API examples.
+- [OpenClaw English development guide](https://github.com/RayNeo-AI-2025/OpenClaw/blob/main/README_EN.md) — Mercury SDK, dual-eye rendering, temple input, camera, IMU and ADB development notes.
+- [RayNeo Air 3S Pro OpenVR](https://github.com/verncat/RayNeo-Air-3S-Pro-OpenVR) — community C/C++ OpenVR work for Air 3S Pro.
+
+## Rokid
+
+- [Rokid terminal SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/) — official SDK index, quick start, samples and API references.
+- [Rokid glasses SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/glasses/) — device-side media, voice, recognition, messaging, state, Bluetooth and P2P APIs.
+
+## Solos AirGo
+
+- [Solos developer SDK](https://solosglasses.com/pages/developers) — official SDK program covering AirGo V 1/2 and AirGo 3/A5, BLE control, Wi-Fi V2 data, microphones, sensors, touch, camera access, webhooks/RTMP and mobile wrappers.
+
+## Meta / Ray-Ban Meta
+
+- [Ray-Ban Meta FAQ](https://www.ray-ban.com/usa/c/frequently-asked-questions-ray-ban-meta-smart-glasses) — official setup, Meta AI app, Bluetooth/Wi-Fi transfer, firmware-update and troubleshooting documentation.
+- [Meta multimodal AI system card](https://ai.meta.com/tools/system-cards/multimodal-generative-ai-systems) — primary description of image/voice inputs and model processing used by Ray-Ban Meta.
+- [Meta AI glasses](https://www.meta.com/ai-glasses/) — current Meta product-family entry point.
+
+## Even Realities
+
+- [G2 specifications](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs) — official display, battery, BLE, microphone and hardware specifications.
+- [G2 general Q&A](https://support.evenrealities.com/hc/en-us/articles/14601104557839-G2-General-Q-A) — official connectivity, speaker, companion-app, AI and offline-operation information.
+- [Even translation glasses](https://www.evenrealities.com/en-CA/translation-glasses) — official live-translation feature description.
+
+## Android XR
+
+- [Android XR developer hub](https://developer.android.com/develop/xr/get-started) — official development paths for headsets, wired XR glasses, audio glasses and display glasses.
+- [Android XR OpenXR](https://developer.android.com/develop/xr/openxr) — official OpenXR 1.1 development path.
+- [Virtual XR-glasses devices](https://developer.android.com/develop/xr/jetpack-xr-sdk/run/create-avds/xr-headsets-glasses) — Android Studio emulator support for glasses form factors.
+- [Android XR distribution](https://developer.android.com/develop/xr/package-and-distribute) — Google Play packaging/distribution guidance by XR device class.
+
+## Catalog rule
+
+No empty resource categories. No rows whose only content is a future action. If we cannot point to a concrete resource yet, it stays out of the public catalog until we find one.

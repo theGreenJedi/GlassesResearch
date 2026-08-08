@@ -1,66 +1,63 @@
-# Artifact Preservation Archive
+# Manuals, SDKs, Firmware & Technical Files
 
-GlassesResearch preserves the **existence, provenance, integrity, and retrieval history** of smart-glasses artifacts even when redistribution is not permitted.
+This page points to technical artifacts that have actually been identified. Where redistribution is unclear, GlassesResearch links the canonical source rather than republishing the file.
 
-This archive complements [`resources/PRIMARY_ARTIFACT_PRESERVATION_LEDGER.md`](../resources/PRIMARY_ARTIFACT_PRESERVATION_LEDGER.md). The ledger is the human research queue; `artifacts/records/` contains machine-valid preservation records.
+## W610 / HeyCyan
 
-## What belongs here
+- [FCC ID 2BNVK-W610](https://fccid.io/2BNVK-W610) — equipment authorization, labels and regulatory exhibits.
+- [SANVNET FCC-hosted W610-linked user manual](https://fccid.io/2BSQU-SANVNET/User-Manual/Users-Manual-8800707) — regulatory-hosted manual useful for identifying W610/OEM relationships.
+- [HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK) — community SDK and BLE implementation.
+- [CyanBridge source](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK) — alternative companion application and SDK work.
+- [CyanBridge releases](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases) — versioned Android artifacts and release notes.
 
-- firmware and firmware-update packages;
-- SDKs, API packages, headers, examples, and release archives;
-- Android APK metadata and other companion-application packages;
-- manuals, quick-start guides, service documentation, safety sheets, and product sheets;
-- FCC and other regulatory exhibits tied to an identified device or applicant;
-- flashing, recovery, BLE, packet-capture, reverse-engineering, and diagnostic utilities;
-- open hardware, CAD, PCB, BOM, and manufacturing files.
+## Brilliant Labs Frame
 
-## Archive-first rule
+- [Frame hardware manual](https://docs.brilliant.xyz/frame/hardware/) — schematics, architecture, components and mechanical information.
+- [Frame Bluetooth specification](https://docs.brilliant.xyz/frame/frame-sdk-bluetooth-specs) — BLE protocol documentation.
+- [Frame Python SDK](https://github.com/brilliantlabsAR/frame-sdk-python) — official SDK source.
+- [Frame firmware codebase](https://github.com/brilliantlabsAR/frame-codebase) — public firmware/source code.
 
-A useful artifact should not disappear merely because its original host disappears. Preserve at least its metadata and canonical source immediately. Preserve the bytes only when doing so is lawful and appropriate.
+## Mentra / open hardware
 
-A missing local file does **not** mean an artifact is unimportant. Records may intentionally be `metadata-preserved`, `archive-requested`, or `restricted`.
+- [MentraOS source](https://github.com/Mentra-Community/MentraOS) — MIT-licensed OS/SDK.
+- [MentraOS releases](https://github.com/Mentra-Community/MentraOS/releases) — published builds, APKs, release notes and checksums.
+- [Open Source Smart Glasses](https://github.com/Mentra-Community/OpenSourceSmartGlasses) — mechanical, electrical, firmware and software design files.
 
-## Directory model
+## Vuzix Z100
 
-```text
-artifacts/
-  README.md
-  manifest.schema.json
-  records/             # one JSON provenance record per PA identifier
-  files/               # lawful preserved originals only
-    firmware/
-    sdk/
-    apps/
-    manuals/
-    regulatory/
-    tools/
-    hardware/
-```
+- [Z100 documentation](https://support.vuzix.com/docs/z100-documentation) — official manuals/documentation.
+- [Ultralite SDK overview](https://support.vuzix.com/docs/overview-28) — API documentation.
+- [Android SDK documentation](https://support.vuzix.com/docs/sdk-for-android) — SDK integration and sample-code route.
+- [iOS SDK documentation](https://support.vuzix.com/docs/sdk-for-ios) — Apple-platform SDK route.
 
-The repository should never contain unexplained binaries. Every file under `artifacts/files/` must have a matching record containing its original filename, SHA-256, source owner, canonical URL, retrieval timestamp, media type, license/redistribution status, and preservation status.
+## Snap Spectacles
 
-## Preservation states
+- [Spectacles developer documentation](https://developers.snap.com/spectacles/home) — official SDK/development material.
+- [Spectacles asset library](https://developers.snap.com/spectacles/about-spectacles-features/asset-library) — official development packages and sample routes.
+- [Spectacles samples](https://github.com/specs-devs/samples) — public sample source.
 
-- `linked` — canonical source is known.
-- `metadata-preserved` — provenance metadata has been captured.
-- `archive-requested` — a durable capture should be created or checked.
-- `artifact-preserved` — lawful original bytes and SHA-256 are preserved.
-- `restricted` — artifact is known but local redistribution is not justified.
-- `lost-unavailable` — known artifact/source cannot currently be retrieved.
+## XREAL
 
-## Integrity rule
+- [XREAL SDK](https://docs.xreal.com/) — official SDK documentation.
+- [XREAL One specifications](https://tutorials.xreal.com/docs/glasses/one-series/spec/) — primary hardware/display specifications.
+- [XREAL One firmware/operation FAQ](https://tutorials.xreal.com/docs/glasses/one-series/faq/) — update and operating documentation.
 
-When original bytes are preserved:
+## RayNeo X3 Pro
 
-1. hash the untouched original first;
-2. record SHA-256 in the matching record;
-3. never overwrite the original with an analyzed or modified copy;
-4. store transformed/extracted material separately and identify its parent artifact.
+- [OpenClaw source](https://github.com/RayNeo-AI-2025/OpenClaw) — public X3 Pro application and development examples.
+- [OpenClaw development guide](https://github.com/RayNeo-AI-2025/OpenClaw/blob/main/README_EN.md) — build, camera, IMU, input, rendering and debugging information.
 
-## Licensing rule
+## Rokid
 
-Open-source does not mean every file on a vendor site is redistributable. Record licensing and redistribution status per artifact. When uncertain, preserve metadata and links rather than copying bytes.
+- [Rokid terminal SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/) — SDK index and API documentation.
+- [Rokid glasses SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/glasses/) — glasses-side API documentation.
 
-## Current seed set
+## Meta / Ray-Ban Meta
 
-PR #42 seeds records covering official documentation, SDK routes, open-source repositories, the W610 supplier/app investigation routes, and regulatory search infrastructure. It does not claim that every firmware/APK/manual has already been recovered. Unknown binaries remain preservation targets rather than guessed artifacts.
+- [Ray-Ban Meta FAQ and manuals](https://www.ray-ban.com/usa/c/frequently-asked-questions-ray-ban-meta-smart-glasses) — official setup, update, controls, media-transfer and support information.
+
+## Provenance records
+
+The machine-readable `artifacts/records/` directory records source URLs, owners, dates, licensing/redistribution status, and hashes for locally preserved bytes. The human-readable [Primary Artifact Preservation Ledger](../resources/PRIMARY_ARTIFACT_PRESERVATION_LEDGER.md) lists the concrete records currently considered important.
+
+An artifact that has not actually been located is not presented here as content.

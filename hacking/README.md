@@ -1,123 +1,60 @@
-# Open Hacking and Vendor Independence
+# Developer Resources and Vendor Independence
 
-GlassesResearch supports lawful owner control, repair, interoperability, preservation, and modification of smart glasses.
+Concrete resources for developing, repairing, understanding, and extending smart-glasses platforms.
 
-This collection documents ways owners and researchers can understand their devices, reduce vendor dependence, preserve abandoned functionality, and build open integrations.
+## Start with the resources
 
-## Start here
+- [Open Development Resource Ledger](OPEN_HACKING_RESOURCE_LEDGER.md) — direct SDKs, source repositories, developer documentation, protocol resources, samples, and open-hardware projects across W610/HeyCyan, Brilliant Labs, MentraOS, Vuzix, Snap, XREAL, RayNeo, Rokid, and Android XR.
+- [W610 Research Portal](../models/W610/resources/RESEARCH_PORTAL.md) — direct W610/HeyCyan SDK, alternative-app, FCC, rebrand, and supplier sources.
+- [Research Library](../evidence/README.md) — machine-readable evidence records with stable identifiers.
+- [Manuals, Firmware & Technical Files](../artifacts/README.md) — identified technical artifacts and preservation records.
 
-- [Open Hacking Resource Ledger](OPEN_HACKING_RESOURCE_LEDGER.md) — populated cross-platform index of concrete public projects, SDKs, open-source platforms, and preservation targets.
-- [Ecosystem Resource Catalog](../resources/ECOSYSTEM_RESOURCE_CATALOG.md) — broader intake layer for software, firmware, SDKs, protocols, hardware files, developer documentation, and fragile research leads.
-- [Preserved Artifact Ledger](../resources/PRIMARY_ARTIFACT_PRESERVATION_LEDGER.md) — provenance and preservation records for artifacts worth keeping.
-- [W610 Open-Hacking Dossier](../models/W610/hacking/README.md) — current hands-on owner-control research, including verified baseline behavior and the active unverified queue.
+## Platforms with usable public development material
+
+### W610 / HeyCyan
+
+Community developers have published a [HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK) and the [CyanBridge alternative companion stack](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK). The [W610 FCC record](https://fccid.io/2BNVK-W610) adds regulatory identity and hardware exhibits. GlassesResearch also maintains hands-on observations in the [W610 dossier](../models/W610/hacking/README.md).
+
+### Brilliant Labs Frame
+
+Brilliant Labs publishes an unusually open development stack. The [Frame SDK](https://docs.brilliant.xyz/frame/frame-sdk/) covers Python, Flutter, Lua, direct BLE development, and firmware customization. The [hardware manual](https://docs.brilliant.xyz/frame/hardware/) publishes architecture, schematics, camera, microphone, battery, FPGA/MCU and mechanical information. Public source is available through the [Brilliant Labs GitHub organization](https://github.com/brilliantlabsAR) and [Frame firmware codebase](https://github.com/brilliantlabsAR/frame-codebase).
+
+### MentraOS and open hardware
+
+[MentraOS](https://github.com/Mentra-Community/MentraOS) is an MIT-licensed smart-glasses operating system and SDK with application runtime, pairing, hardware access and cross-device compatibility. Versioned builds and checksums are published in [MentraOS releases](https://github.com/Mentra-Community/MentraOS/releases). The same community publishes [Open Source Smart Glasses](https://github.com/Mentra-Community/OpenSourceSmartGlasses), including mechanical, electrical, firmware and software material.
+
+### Vuzix Z100
+
+Vuzix publishes [Z100 documentation](https://support.vuzix.com/docs/z100-documentation), an [Ultralite SDK overview](https://support.vuzix.com/docs/overview-28), and an [Android SDK route](https://support.vuzix.com/docs/sdk-for-android). The SDK exposes connection state, display content, power/display state, tap events, battery and charger state.
+
+### Snap Spectacles
+
+Snap publishes a full [Spectacles developer portal](https://developers.snap.com/spectacles/home), a [feature/API overview](https://developers.snap.com/spectacles/about-spectacles-features/overview), [compatibility list](https://developers.snap.com/spectacles/about-spectacles-features/compatibility-list), [asset library](https://developers.snap.com/spectacles/about-spectacles-features/asset-library), and public [sample code](https://github.com/specs-devs/samples).
+
+### XREAL
+
+XREAL publishes its [SDK documentation](https://docs.xreal.com/) along with [One-family specifications](https://tutorials.xreal.com/docs/glasses/one-series/spec/), [host connection documentation](https://tutorials.xreal.com/docs/glasses/one-series/first-use/connect-device/), and [firmware/operation FAQ](https://tutorials.xreal.com/docs/glasses/one-series/faq/).
+
+### RayNeo
+
+RayNeo's public [OpenClaw project for X3 Pro](https://github.com/RayNeo-AI-2025/OpenClaw) includes source, build instructions, gesture control, speech/LLM integration, and a detailed X3 development guide. Community work also includes [RayNeo Air 3S Pro OpenVR](https://github.com/verncat/RayNeo-Air-3S-Pro-OpenVR).
+
+### Rokid
+
+Rokid publishes a unified [terminal SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/) and a specific [glasses-side SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/glasses/) covering media capture, voice, recognition, messaging, device state, Bluetooth and P2P on supported models.
+
+### Solos AirGo
+
+Solos publishes a [developer SDK program](https://solosglasses.com/pages/developers) for AirGo V 1/2 camera models and AirGo 3/A5 audio models. The vendor documents BLE control, Wi-Fi data on V2, microphones, sensors, touch, camera access, webhooks/RTMP endpoints, and iOS/Android application wrappers.
+
+### Android XR
+
+Google's [Android XR developer hub](https://developer.android.com/develop/xr/get-started) covers headsets, wired XR glasses, audio glasses and display glasses. Google also publishes [OpenXR guidance](https://developer.android.com/develop/xr/openxr), [virtual XR-glasses devices for Android Studio](https://developer.android.com/develop/xr/jetpack-xr-sdk/run/create-avds/xr-headsets-glasses), and [distribution guidance](https://developer.android.com/develop/xr/package-and-distribute).
+
+## Safety boundary
+
+Research only devices and services you own or are authorized to inspect. Do not publish credentials, private user traffic, unlawfully distributed proprietary files, or instructions intended to compromise another person's device or account.
 
 ## Publication rule
 
-> **Only procedures verified working on an identified model, hardware revision, firmware version, and toolchain may be published as working guides.**
-
-A popular post, video, repository, or repeated claim is not automatically a working guide. Reproducibility is the standard.
-
-Unverified material may be preserved only in a clearly marked **Not Verified Yet** research queue. It must not be written as an instruction, recommendation, or established capability.
-
-## Status vocabulary
-
-- **Verified Working** — reproduced successfully with recorded model, revision, versions, date, evidence, and recovery notes.
-- **Community Confirmed** — multiple independent reports exist, but GlassesResearch has not completed a qualifying verification. This remains outside the working-guide library.
-- **Not Verified Yet** — plausible lead awaiting controlled testing. Never presented as a working procedure.
-- **Hypothesis** — proposed technical explanation or experiment without adequate evidence.
-- **Disproven** — tested and found not to work under the recorded conditions.
-- **Historical** — preserved because it once existed or may aid future research; not represented as currently functional.
-
-## Research lanes
-
-The hacking collection actively tracks:
-
-- alternative companion applications and vendor-app replacement;
-- BLE advertising, GATT services, packet captures, and writable controls;
-- unofficial APIs, SDKs, libraries, and protocol documentation;
-- local-first AI, OCR, speech, and user-selected model integrations;
-- firmware acquisition, hashing, lawful preservation, replacement, and modification;
-- bootloader, flashing, rollback, and recovery procedures;
-- vendor-cloud dependencies and lawful bypass or replacement paths on owned devices;
-- UART, JTAG, PCB, teardown, and hardware-revision evidence;
-- repair, parts substitution, optics, and hardware modifications;
-- FCC/regulatory records that reveal chipsets, radios, internal photos, or model relationships;
-- open-source projects, build environments, and cross-device platforms;
-- abandoned-device restoration and long-term preservation.
-
-## What does not belong here
-
-- stolen credentials or private keys;
-- attacks against services or devices without authorization;
-- instructions whose only purpose is bypassing payment, licensing, or access controls unlawfully;
-- proprietary files distributed without permission;
-- personal data or captured traffic belonging to others;
-- untested procedures described as working.
-
-## Required record for every verified guide
-
-```text
-Title:
-Status: Verified Working
-Model:
-Hardware revision:
-Firmware version:
-Companion-app version:
-Host OS / phone:
-Tools and versions:
-Date verified:
-Verified by:
-Original discoverer / source:
-Risk level:
-Prerequisites:
-Procedure:
-Expected result:
-Evidence:
-Recovery / rollback:
-Known limitations:
-Last rechecked:
-```
-
-## Risk levels
-
-- **Low** — read-only inspection or easily reversible configuration.
-- **Moderate** — writes settings or installs software but has a documented rollback.
-- **High** — modifies firmware, partitions, boot state, or hardware.
-- **Brick Risk** — failure may make the device unusable or require specialized recovery.
-
-Risk labeling does not replace judgment. A procedure without a tested recovery path cannot be called low risk.
-
-## Model-by-model index
-
-| Model or family | Working evidence | Open research | Current state |
-|---|---|---|---|
-| W610 / HeyCyan variants | [Verified baseline](../models/W610/hacking/README.md#verified-working) | [Active queue](../models/W610/hacking/README.md#not-verified-yet) | Hands-on control baseline established; protocol, firmware, recovery, and assistant-replacement research remains open. |
-| Brilliant Labs Frame family | Public source ecosystem indexed in the [resource ledger](OPEN_HACKING_RESOURCE_LEDGER.md) | Build, firmware, protocol, hardware, and portability research | Publicly inspectable platform; GlassesResearch reproduction pending. |
-| Mentra-compatible devices | MentraOS and open-hardware projects indexed in the [resource ledger](OPEN_HACKING_RESOURCE_LEDGER.md) | Compatibility, SDK, build, and vendor-independence testing | High-value cross-device open-development target. |
-| Vuzix / Snap / XREAL / RayNeo / Rokid | Project-primary developer/platform sources indexed | SDK, firmware, update, recovery, protocol, and host-dependency research | Intake and preservation underway; no GlassesResearch working-guide status implied. |
-
-## Promotion workflow
-
-```text
-Not Verified Yet
-        |
-        +--> controlled test fails --> Disproven
-        |
-        +--> evidence remains incomplete --> Not Verified Yet
-        |
-        +--> multiple independent reports --> Community Confirmed
-        |
-        +--> qualifying reproduction + evidence --> Verified Working
-```
-
-A status change must record what changed, who tested it, the date, the exact device and software environment, and the evidence path.
-
-## Archive first, organize second
-
-When firmware, APKs, SDKs, protocol notes, repositories, manuals, packet captures, flashing instructions, recovery procedures, or hardware evidence appear likely to disappear, preserve provenance immediately. Record the canonical source, owner, retrieval date, version, license or redistribution status, and hashes where appropriate. Do not delay preservation merely because the final taxonomy is unfinished.
-
-## Institutional principle
-
-> **Ownership should include the practical ability to understand, maintain, repair, interoperate with, and lawfully modify the device.**
-
-The purpose of this collection is not novelty hacking. It is durable owner control.
+A procedure is presented as working only when the evidence supports that specific procedure on an identified device/software environment. Public resource pages themselves should contain useful resources, not queues of things we hope to find later.

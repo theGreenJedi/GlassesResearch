@@ -1,79 +1,36 @@
 # Primary Artifact Preservation Ledger
 
-**Ledger opened:** 2026-08-05
+Concrete primary sources and technical artifacts worth preserving because they document hardware, software, developer interfaces, regulatory identity, or product history. This public ledger does not list hypothetical firmware, generic search pages, or artifacts we have not actually identified.
 
-This ledger records primary technical and product sources that are valuable enough to preserve, hash, archive, or monitor. It does not imply permission to redistribute every downloadable file.
+| Record | Platform | Artifact or source | Owner | What it contains |
+|---|---|---|---|---|
+| PA-0001 | Brilliant Labs Frame | [Frame hardware manual](https://docs.brilliant.xyz/frame/hardware/) | Brilliant Labs | Block diagram, schematics, MCU/FPGA, camera, microphone, display, battery, mechanical, prescription and firmware-development information. |
+| PA-0002 | Brilliant Labs ecosystem | [Brilliant Labs GitHub organization](https://github.com/brilliantlabsAR) | Brilliant Labs | Public SDK, firmware, application and hardware repositories across Brilliant Labs devices. |
+| PA-0003 | Brilliant Labs Halo | [Halo product/specification page](https://brilliant.xyz/products/halo) | Brilliant Labs | Primary launch specifications, prescription information, product positioning and availability claims. |
+| PA-0004 | Vuzix Z100 | [Z100 product page](https://www.vuzix.com/products/z100-smart-glasses) | Vuzix | Display, BLE, battery, prescription and product specifications. |
+| PA-0005 | Vuzix Z100 | [Ultralite SDK overview](https://support.vuzix.com/docs/overview-28) | Vuzix | Official developer API capabilities for connection, display, taps, power, battery and charger state. |
+| PA-0006 | Vuzix Z100 | [Android SDK documentation](https://support.vuzix.com/docs/sdk-for-android) | Vuzix | Android SDK requirements, integration route and sample-code links. |
+| PA-0007 | Vuzix Z100 | [iOS SDK documentation](https://support.vuzix.com/docs/sdk-for-ios) | Vuzix | iOS-family SDK integration documentation. |
+| PA-0008 | Mentra ecosystem | [MentraOS repository](https://github.com/Mentra-Community/MentraOS) | Mentra Community | MIT-licensed OS/SDK source, application platform, device compatibility work and releases. |
+| PA-0009 | Open smart-glasses hardware | [OpenSourceSmartGlasses repository](https://github.com/Mentra-Community/OpenSourceSmartGlasses) | Mentra Community | Mechanical, electrical, firmware and software material for an open smart-glasses design. |
+| PA-0010 | Solos AirGo | [Solos developer SDK](https://solosglasses.com/pages/developers) | Solos | SDK coverage for AirGo V 1/2 and AirGo 3/A5; BLE control, V2 Wi-Fi data, audio, sensors, touch, camera, webhooks and RTMP. |
+| PA-0011 | W610 / HeyCyan | [HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK) | Community project | Cross-platform SDK/BLE implementation with W610 references and preserved upstream/manufacturer-oriented material. |
+| PA-0012 | W610 / Goodway | [Goodway W610 product/specification page](https://www.goodwaytechs.com/goodway-ai-smart-glasses-with-8mp-camera-real-time-translation-ip65-waterproof-42g-lightweight-w610.html) | Goodway Techs | W610 chipset, camera, battery, firmware-feature and customization claims. |
+| PA-0013 | W610 | [FCC ID 2BNVK-W610](https://fccid.io/2BNVK-W610) | US FCC / applicant filing | Equipment authorization, labels and regulatory exhibits tied directly to W610 identity. |
+| PA-0014 | W610 / SANVNET lineage | [SANVNET FCC-hosted W610-linked manual](https://fccid.io/2BSQU-SANVNET/User-Manual/Users-Manual-8800707) | FCC filing | User-manual record whose document title references W610, useful for rebrand/OEM lineage. |
+| PA-0015 | W610 / HeyCyan | [CyanBridge repository](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK) | Community project | Alternative Android companion stack, SDK work, local-AI integrations and source history. |
+| PA-0016 | W610 / HeyCyan | [CyanBridge releases](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases) | Community project | Versioned Android release artifacts and release notes. |
+| PA-0017 | Snap Spectacles | [Spectacles developer documentation](https://developers.snap.com/spectacles/home) | Snap | Primary SDK/developer entry point for current Spectacles. |
+| PA-0018 | Snap Spectacles | [Spectacles sample repository](https://github.com/specs-devs/samples) | Snap developer ecosystem | Public sample code linked from Snap's developer documentation. |
+| PA-0019 | XREAL One | [XREAL One specifications](https://tutorials.xreal.com/docs/glasses/one-series/spec/) | XREAL | Primary optics, display, audio and hardware specifications. |
+| PA-0020 | XREAL ecosystem | [XREAL SDK documentation](https://docs.xreal.com/) | XREAL | Official development stack and XR integration documentation. |
+| PA-0021 | RayNeo X3 Pro | [OpenClaw](https://github.com/RayNeo-AI-2025/OpenClaw) | RayNeo AI project | Public application source and X3 Pro development examples covering input, camera, IMU, rendering and debugging. |
+| PA-0022 | Rokid ecosystem | [Rokid terminal SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/) | Rokid | Official glasses/phone SDK index, samples and API documentation. |
+| PA-0023 | Meta / Ray-Ban Meta | [Ray-Ban Meta FAQ](https://www.ray-ban.com/usa/c/frequently-asked-questions-ray-ban-meta-smart-glasses) | Ray-Ban / Meta | Pairing, app dependency, Bluetooth/Wi-Fi transfer, firmware update, controls and troubleshooting documentation. |
+| PA-0024 | Even Realities G2 | [G2 specifications](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs) | Even Realities | Display, battery, BLE, microphones and hardware specifications. |
 
-## Status vocabulary
+## Preservation rule
 
-- **linked** — canonical source recorded.
-- **metadata-preserved** — title, owner, version/date, retrieval date and redistribution status recorded.
-- **archive-requested** — an archival capture should be created or checked.
-- **artifact-preserved** — lawful copy and hash stored in an approved durable location.
-- **restricted** — useful artifact exists, but redistribution is not justified.
-- **lost/unavailable** — previously known source cannot currently be retrieved.
+When a lawful copy can be preserved, record provenance and a cryptographic hash before analysis or modification. When redistribution is restricted, preserve the canonical source, version/date and enough metadata to identify the artifact without republishing restricted bytes.
 
-## Active records
-
-| Record | Platform | Artifact or source | Owner | Type | Status | Redistribution | Research value | Next action |
-|---|---|---|---|---|---|---|---|---|
-| PA-0001 | Brilliant Labs Frame | [Frame hardware manual](https://docs.brilliant.xyz/frame/hardware/) | Brilliant Labs | Hardware manual / schematics index | linked | Site terms and repository licenses must be checked per artifact | Documents display, camera, battery, sensors, Bluetooth, mechanical data and schematic routes | Record page revision; inventory linked schematic and mechanical files; preserve licenses and hashes where allowed |
-| PA-0002 | Brilliant Labs ecosystem | [Brilliant Labs GitHub organization](https://github.com/brilliantlabsAR) | Brilliant Labs | Source repositories and releases | linked | Per-repository license | Strong primary source for firmware, applications, SDKs and hardware history | Inventory repositories, default branches, releases, tags and licenses; identify Frame versus legacy Monocle material |
-| PA-0003 | Brilliant Labs Halo | [Halo product and specification page](https://brilliant.xyz/products/halo) | Brilliant Labs | Product specification / availability record | metadata-preserved | Commercial page; archive rather than mirror | Captures launch claims, prescription route, openness claims, subscription and shipping statements | Archive dated snapshot and compare delivered hardware/source releases against launch claims |
-| PA-0004 | Vuzix Z100 | [Official product page](https://www.vuzix.com/products/z100-smart-glasses) | Vuzix | Product specification | metadata-preserved | Commercial page; archive rather than mirror | Records display, BLE, battery, prescription inserts and SDK availability | Archive dated page and downloadable product sheet; hash distributable documents if terms permit |
-| PA-0005 | Vuzix Z100 | [Developer overview](https://support.vuzix.com/docs/overview-28) | Vuzix | Developer documentation | linked | Documentation terms must be reviewed | Defines supported phone-to-glasses functions and official SDK model | Preserve documentation index and SDK repository links; record Android/iOS requirements by version |
-| PA-0006 | Vuzix Z100 | [Android SDK documentation](https://support.vuzix.com/docs/sdk-for-android) | Vuzix | SDK documentation / repository route | linked | Per SDK repository license | Establishes Android requirements and supported operations | Record exact GitHub repository, latest release/tag, license and dependency on Vuzix Connect |
-| PA-0007 | Vuzix Z100 | [iOS SDK documentation](https://support.vuzix.com/docs/sdk-for-ios) | Vuzix | SDK documentation / repository route | linked | Per SDK repository license | Establishes iOS, watchOS and macOS support route | Record repository, release/tag, license and minimum platform versions |
-| PA-0008 | Mentra ecosystem | [MentraOS repository](https://github.com/Mentra-Community/MentraOS) | Mentra Community | Source repository / platform | linked | Per repository license | Cross-device application and compatibility platform | Preserve release/tag metadata, supported-device matrix, license, package names and migration history from AugmentOS naming |
-| PA-0009 | Open smart-glasses hardware | [OpenSourceSmartGlasses repository](https://github.com/Mentra-Community/OpenSourceSmartGlasses) | Mentra Community | Hardware/software project | linked | Per repository license | BOM, CAD, PCB, firmware and build research potential | Inventory directories and licenses; identify released manufacturing files and reproducible build state |
-| PA-0010 | Solos AirGo | [Solos developer page](https://solosglasses.com/pages/developers) | Solos | SDK capability statement | metadata-preserved | Commercial documentation; SDK license separate | Defines model coverage, BLE control and Wi-Fi data differences | Locate canonical SDK downloads/repositories, version history, API docs and license |
-| PA-0011 | W610 / HeyCyan | [W610 research portal](../models/W610/resources/RESEARCH_PORTAL.md) | GlassesResearch | Curated source map | repository-native | Project content | Canonical route to volatile seller, app, registry and community sources | Convert each high-value external lead into its own preservation record rather than citing broad searches |
-| PA-0012 | W610 / Goodway | [Goodway W610 product page](https://www.goodwaytechs.com/goodway-ai-smart-glasses-with-8mp-camera-real-time-translation-ip65-waterproof-42g-lightweight-w610.html) | Goodway Techs | Supplier specification | archive-requested | Commercial page; archive rather than mirror | One of the clearest W610 supplier and customization claims | Capture dated page, images and downloadable materials; compare claims with other suppliers and hands-on evidence |
-| PA-0013 | Smart-glasses regulation | [FCC Equipment Authorization search](https://www.fcc.gov/oet/ea/fccid) | US FCC | Regulatory database | linked | Public record; individual exhibits may have grant-specific confidentiality | Internal photos, labels, reports and applicant identity | Add device-specific records only after an FCC ID/applicant match is established |
-| PA-0014 | Bluetooth products | [Bluetooth SIG qualification search](https://launchstudio.bluetooth.com/Listings/Search) | Bluetooth SIG | Qualification database | linked | Database terms apply | Applicant, product and component relationships | Add stable records for exact declarations only; do not infer product identity from chipset qualification alone |
-| PA-0015 | W610 / HeyCyan | [HeyCyan Google Play discovery route](https://play.google.com/store/search?q=HeyCyan&c=apps) | App operator/developer identity pending exact package verification | Companion application / APK target | archive-requested | APK redistribution restricted pending rights review | App package identity, versions, signing certificate, permissions, update behavior and supported-device identifiers may unlock firmware/update research | Verify exact package from authoritative store metadata or acquired APK; preserve version metadata, certificate fingerprints and SHA-256 before analysis |
-| PA-0016 | W610 / HeyCyan | [W610 firmware research page](../models/W610/firmware/README.md) | Unknown pending update endpoint identification | Firmware / update-package target | archive-requested | Proprietary firmware must not be mirrored without permission | Firmware identity, version strings, manifests, update URLs and package hashes are central to recovery and owner-control research | Capture version/update metadata first; preserve any lawfully acquired original package hash before extraction or modification |
-
-## Machine-readable archive
-
-The `artifacts/` directory now carries machine-valid preservation records corresponding to selected `PA-####` entries. CI validates provenance fields, preservation states, local paths, and SHA-256 integrity for any artifact bytes stored in the repository.
-
-## Minimum record for a downloaded artifact
-
-```yaml
-record_id: PA-0000
-platforms:
-  - canonical-platform-id
-title: Exact artifact title
-source_owner: Organization or person
-canonical_url: https://example.invalid
-retrieved_utc: 2026-08-05T00:00:00Z
-published_or_version: unknown
-filename: original-filename.ext
-sha256: lowercase-hex
-media_type: application/pdf
-license: unknown
-redistribution: allowed | restricted | unknown
-preservation_status: metadata-preserved | artifact-preserved | restricted
-archive_url: unknown
-notes: >-
-  Explain provenance, relevance, uncertainty and any transformation.
-```
-
-## Preservation priorities
-
-1. Volatile W610 supplier pages, manuals, application metadata and support routes.
-2. Official SDK repositories, tagged releases and documentation indexes.
-3. Open hardware files whose licenses permit durable preservation.
-4. Regulatory exhibits tied to a verified model or applicant.
-5. End-of-life application, firmware and manual records for discontinued products.
-
-## Legal and quality rules
-
-- Preserve a canonical URL even when a lawful local copy exists.
-- Record the license before mirroring source, binaries, CAD or documentation.
-- Hash original files before analysis or conversion.
-- Never replace an original with a modified copy.
-- Do not treat an archived commercial claim as independent verification.
-- Record retrieval failures and dead links; disappearance is itself historical evidence.
-- Prefer one complete, provenance-rich record over many unexplained downloads.
+If an artifact has not actually been located, it does not appear in this public ledger.
