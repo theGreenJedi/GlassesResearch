@@ -42,6 +42,9 @@ jobs:
       - name: Validate comparison engine
         run: python scripts/build_comparison_engine.py --validate-only
 
+      - name: Validate artifact preservation archive
+        run: python scripts/validate_artifact_archive.py
+
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
