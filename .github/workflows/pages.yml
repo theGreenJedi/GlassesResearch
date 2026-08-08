@@ -39,6 +39,9 @@ jobs:
       - name: Validate canonical device database
         run: python scripts/build_device_database.py --validate-only
 
+      - name: Validate comparison engine
+        run: python scripts/build_comparison_engine.py --validate-only
+
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
