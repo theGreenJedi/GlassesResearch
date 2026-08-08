@@ -72,17 +72,20 @@ jobs:
           test -s site/timeline/auto-events.json
           test -s site/evidence/resources.json
           test -s site/data/comparisons.json
+          test -s site/data/devices.json
           test -s site/docs/COMPARISON_ENGINE/index.html
           test -s site/docs/START_BY_NEED/index.html
           test -s site/docs/RESEARCH_STANDARDS/index.html
           test -s site/docs/CONTRIBUTORS/index.html
           test -s site/docs/PRESERVATION/index.html
           test -s site/docs/ROADMAP_V1/index.html
+          test -s site/docs/javascripts/comparison-engine.js
           grep -Fq 'TL-0001' site/timeline/events.json
           grep -Fq 'EV-0001' site/evidence/resources.json
+          grep -Fq '"record_count": 119' site/data/devices.json
           grep -Fq 'industry-timeline-app' site/docs/INDUSTRY_TIMELINE/index.html
           grep -Fq 'comparison-engine-app' site/docs/COMPARISON_ENGINE/index.html
-          grep -Fq 'Roadmap Version 1.0' site/index.html
+          grep -Fq 'models available for comparison' site/docs/javascripts/comparison-engine.js
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
@@ -108,7 +111,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Verify live search and timeline endpoints
+      - name: Verify live site data
         shell: bash
         run: |
           set -euo pipefail
@@ -117,11 +120,15 @@ jobs:
               && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/sitemap.xml -o /tmp/sitemap.xml \
               && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/timeline/events.json -o /tmp/timeline.json \
               && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/data/comparisons.json -o /tmp/comparisons.json \
+              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/data/devices.json -o /tmp/devices.json \
+              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/docs/javascripts/comparison-engine.js -o /tmp/comparison-engine.js \
               && grep -Fq 'Sitemap: https://glassesresearch.org/sitemap.xml' /tmp/robots.txt \
               && grep -Fq 'https://glassesresearch.org/' /tmp/sitemap.xml \
               && grep -Fq 'TL-0001' /tmp/timeline.json \
-              && grep -Fq 'record_count' /tmp/comparisons.json; then
-              echo 'Live discoverability, timeline, and comparison endpoints verified.'
+              && grep -Fq 'record_count' /tmp/comparisons.json \
+              && grep -Fq '"record_count": 119' /tmp/devices.json \
+              && grep -Fq 'models available for comparison' /tmp/comparison-engine.js; then
+              echo 'Live site verified with all 119 canonical models available to comparison.'
               exit 0
             fi
             echo "Attempt ${attempt}/5 failed; waiting for Pages/DNS propagation..."
