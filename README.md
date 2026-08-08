@@ -1,73 +1,75 @@
 # GlassesResearch
 
-Evidence-based research into smart glasses, AI glasses, and open user-controlled eyewear.
+Independent, evidence-based research into smart glasses, AI glasses, and user-controlled eyewear.
 
-## Start with The List
+## Find what you need
 
-[**Browse The List — 119 purchasable smart-glasses models and generations, past and present.**](models/THE_LIST.md)
+- [**Browse smart-glasses models**](models/THE_LIST.md) — 119 models and generations, past and present.
+- [**Compare devices**](docs/COMPARISON_ENGINE.md) — side-by-side research using the same evidence-backed fields.
+- [**Explore the industry timeline**](docs/INDUSTRY_TIMELINE.md) — major products, technologies, companies, and milestones over time.
+- [**Developer resources**](hacking/README.md) — firmware, BLE, SDKs, APIs, repair, reverse engineering, and open-development research.
+- [**Buyer guide**](buyers/BUYER_AND_OPENNESS_GUIDE.md) — ownership, privacy, offline use, repairability, prescription options, and vendor lock-in.
+- [**Ask a practical question**](docs/faq/README.md) — buying, battery, displays, privacy, accessibility, AI, cameras, and development.
 
-The List is the central index for GlassesResearch. Start with a model, then branch into buying guidance, model chapters, hacking and open-development research, news, community questions, glossary entries, and the strongest available primary sources.
+Use the **Search GlassesResearch…** box above to search the entire site for a model, feature, firmware version, company, protocol, manual, or research topic.
 
-## Start with your question
+## What makes this site different
 
-- **What glasses exist?** → [Browse The List](models/THE_LIST.md)
-- **What should I buy?** → [Buyer & Openness Guide](buyers/BUYER_AND_OPENNESS_GUIDE.md)
-- **I already own a pair.** → [Find the model](models/THE_LIST.md)
-- **I want to hack or develop.** → [Hacking & Open Development](hacking/README.md)
-- **What is happening now?** → [Research & News](docs/news/README.md)
-- **I have a practical question.** → [100 Questions](docs/faq/README.md)
-- **I need terminology.** → [Glossary](glossary/README.md)
-- **I am researching older devices.** → [Museum](docs/MUSEUM.md)
+GlassesResearch is not a review blog and does not rank products for sponsorship or affiliate sales. We collect sources, preserve useful technical material, test what we can, and separate what is known from what remains unknown or disputed.
 
-[**Not sure where to begin? Start Here.**](docs/START_HERE.md)
+When a claim is supported, we show the source. When evidence conflicts, we say so. When we do not know, we keep researching rather than filling the gap with speculation.
 
-## Core research collections
+## Start with the two core resources
 
 ### [The List](models/THE_LIST.md)
 
-Browse **119 purchasable models and generations**, past and present. On the website, The List can be searched and filtered by maker, status, and device type, with each model linked to a GlassesResearch chapter when one exists or otherwise to the strongest available source.
+A searchable index of smart-glasses models and generations across manufacturers and years. Start here when you know the device—or when you want to see what exists.
 
-**Missing a model?** [Ask us to investigate it](docs/faq/ASK_YOUR_OWN_QUESTION.md) or [contribute what you know](docs/CONTRIBUTE.md).
+### [Smart-Glasses Industry Timeline](docs/INDUSTRY_TIMELINE.md)
 
-### [Buyer & Openness Guide](buyers/BUYER_AND_OPENNESS_GUIDE.md)
+A living, sourced history of the industry: major releases, technology shifts, company changes, open-source milestones, and verified future announcements.
 
-Compare account dependence, offline operation, data control, app requirements, repairability, prescription options, development access, and vendor lock-in.
+## Research by need
 
-### [Hacking & Open Development](hacking/README.md)
+### [Developer Resources](hacking/README.md)
 
-Verified firmware, BLE, SDK, application, recovery, reverse-engineering, interoperability, and vendor-independence research. Unverified leads remain clearly labeled.
+Concrete public resources for firmware, SDKs, BLE, APIs, recovery, repair, reverse engineering, alternative apps, and vendor-independent development. Generic “search Reddit” or “check GitHub” placeholders do not count as resources; we link what we actually find.
 
-### [Research & News](docs/news/README.md)
+### [Research Library](evidence/README.md)
 
-Follow releases, upgrades, availability changes, industry developments, and research worth preserving.
+The underlying evidence used across the site: manufacturer documentation, regulatory filings, repositories, community research, manuals, technical sources, and other directly identifiable material.
 
-### [100 Questions](docs/faq/README.md)
+### [Manuals, Firmware & Technical Files](artifacts/README.md)
 
-Practical answers about buying, battery life, displays, privacy, accessibility, AI, cameras, development, ownership, and the future of smart glasses.
+Preservation records for firmware, SDKs, applications, manuals, regulatory documents, tools, and other artifacts that may otherwise disappear.
 
-### [W610 Hands-On Research](models/W610/README.md)
+### [Questions & Answers](docs/faq/README.md)
 
-Current physical-reference investigation covering hardware, BLE, firmware, software, manufacturing, diagnostics, community resources, and open hacking.
+Plain-language answers for people who want useful information without reading the repository structure behind it.
 
 ## Evidence standard
 
-GlassesResearch keeps firsthand observations, primary sources, community reports, hypotheses, historical material, and disproven claims distinct. Repetition is not verification.
+Public-facing status is intentionally simple:
 
-## Found an error? Challenge our research.
+- **Verified** — enough evidence exists to support the claim, with sources.
+- **Unknown** — we have not yet found adequate evidence.
+- **Disputed** — credible evidence conflicts and the claim remains under review.
 
-GlassesResearch is a living research project. Every factual claim is open to challenge, and stronger evidence wins. If you believe a claim is wrong, incomplete, outdated, or supported by better evidence, we want the dispute preserved and reviewed rather than hidden.
+The source itself tells you whether the evidence came from hands-on testing, a manufacturer, an FCC filing, a research paper, a repository, or community work.
 
-[**Submit a correction or research challenge.**](docs/RESEARCH_CHALLENGES.md)
+## Found an error?
 
-Challenges and their evidence are retained as a public review record so substantive corrections remain traceable over time.
+Every factual claim is open to challenge. Stronger evidence wins.
 
-## Contribute knowledge
+[**Challenge our research or submit a correction.**](docs/RESEARCH_CHALLENGES.md)
 
-Own a device? Found a manual? Tested a feature? Preserved an APK? Captured BLE traffic? Repaired a frame? Corrected a model name?
+Substantive disputes and resolutions are preserved publicly so corrections remain traceable.
+
+## Contribute
+
+Own a device? Found a manual? Tested a feature? Preserved firmware or an APK? Captured BLE traffic? Repaired a frame?
 
 [**Contribute what you know.**](docs/CONTRIBUTE.md)
-
-Community reports are welcome when honestly labeled.
 
 ## Safety and legal note
 
