@@ -1,91 +1,83 @@
 # Smart-Glasses Industry Timeline
 
-This timeline is a research index, not a claim that the listed milestones were the only important developments. Dates and descriptions should be refined as primary sources are added.
+The **GlassesResearch Smart-Glasses Industry Timeline** is a living, evidence-backed historical graph of major product, company, technology, open-source, regulatory, research, and GlassesResearch milestones.
 
-## Foundations before consumer smart glasses
+The uncluttered default view emphasizes significance **4–5** events. Use the filters to reveal the deeper chronology, GlassesResearch milestones, and automatically discovered primary-source signals.
 
-### 1960s–1990s — head-mounted display research
+<div id="industry-timeline-app"></div>
 
-Military, university, industrial, and virtual-reality programs established the foundations of head-mounted displays, wearable computing, eye-level information, and hands-free interaction. These systems were generally not consumer eyeglasses, but they created the technical lineage later products inherited.
+## How to read the graph
 
-### 1990s — wearable-computing research communities
+Marker size reflects the event's **significance score**. Solid markers are events that occurred. Outlined markers represent announced future milestones. Delayed and cancelled milestones retain their place in history rather than disappearing. Automatically discovered items are shown as a separate **Live signal** state until reviewed and promoted into the canonical historical record.
 
-Academic and independent researchers demonstrated always-available computers, body-worn cameras, heads-up displays, and context-aware interfaces. The period established many of the social, privacy, ergonomics, and interface questions that remain unresolved.
+Every canonical event has a stable `TL-####` identifier. Selecting a marker exposes its sources and a permalink, so a reporter, researcher, or another website can cite a specific milestone rather than linking only to the homepage.
 
-## Early commercial and industrial era
+## Significance scale
 
-### 2000s — enterprise monocular displays and video eyewear
+| Score | Meaning | Main graph behavior |
+|---|---|---|
+| **5** | Industry-changing | Always prominent |
+| **4** | Major | Prominent by default |
+| **3** | Important | Visible when the threshold is expanded |
+| **2** | Minor but historically useful | Detailed chronology |
+| **1** | Routine | Retained only when useful to the historical record |
 
-Companies including Vuzix and others commercialized head-worn displays for industrial, military, media-viewing, and specialist applications. Product lines from this period helped establish enterprise smart glasses as a durable category distinct from consumer fashion eyewear.
+Significance is not a product rating. It describes how much an event changed the smart-glasses ecosystem or the way the ecosystem is understood.
 
-### 2012–2015 — Google Glass public emergence
+## A living record, not a frozen poster
 
-Google publicly introduced Glass, distributed Explorer Edition hardware, and drove smart glasses into mainstream discussion. The program demonstrated camera, voice, notifications, navigation, and developer applications while also exposing major privacy, social-acceptance, battery, and product-positioning challenges.
+The canonical timeline lives in [`timeline/events.json`](../timeline/events.json). A scheduled primary-source watcher checks configured industry feeds and writes newly discovered relevant items into [`timeline/auto-events.json`](../timeline/auto-events.json) as **provisional live signals**.
 
-### 2015 onward — Google Glass enterprise transition
+Automation is deliberately conservative. Discovery is automatic; historical authority is not. A press release can appear quickly as a live signal, but it does not receive a permanent `TL-####` identity until its source, date, relevance, and significance have been reviewed. Future announcements remain distinguishable from events that actually happened, and delays or cancellations are recorded instead of silently rewriting the past.
 
-After the consumer Explorer phase ended, Glass continued as an enterprise product family. This transition became an important example of consumer-facing wearable technology finding clearer value in logistics, manufacturing, healthcare, field service, and guided work.
+This design lets the graph keep pace with the industry without lowering the evidence standard that makes the timeline worth citing.
 
-## Display and augmented-reality expansion
+## Historical interpretation
 
-### Mid-to-late 2010s — enterprise AR growth
+### Consumer form factor became part of the technology
 
-Vuzix, Epson, RealWear, Microsoft, and other companies expanded enterprise head-worn computing. Approaches ranged from lightweight monocular viewers to larger mixed-reality headsets. The period clarified differences among smart glasses, assisted-reality devices, and immersive spatial-computing headsets.
+Early head-mounted systems proved many technical concepts, but consumer adoption repeatedly exposed a second engineering problem: people have to be willing to wear the device. Ray-Ban Stories and later Ray-Ban Meta generations made conventional eyewear design, social acceptability, camera signaling, weight, battery placement, and companion-phone integration part of the core smart-glasses problem rather than peripheral styling questions.
 
-### 2019 — consumer audio and camera eyewear diversify
+### The market split into several different product classes
 
-The market increasingly separated into product classes: audio glasses, camera glasses, notification displays, enterprise viewers, and immersive AR devices. Many products adopted familiar frames while moving computation to a paired phone or cloud service.
+"Smart glasses" now includes camera-and-audio eyewear, discreet notification displays, tethered private displays, enterprise assisted-reality devices, standalone AR systems, and developer-oriented open platforms. Treating all of them as one interchangeable category obscures the industry's actual evolution. The timeline therefore links milestones back to canonical device identities where possible.
 
-## AI, camera, and phone-assisted era
+### AI changed expectations faster than optics did
 
-### 2021 — Ray-Ban Stories
+The 2023–2026 period accelerated the shift from capture and notifications toward conversational assistance, translation, visual understanding, and agent-like behavior. Many of those capabilities still depend heavily on a phone or cloud service, which makes privacy, continuity, vendor dependence, and user control historically important alongside camera resolution or display technology.
 
-Meta and EssilorLuxottica launched Ray-Ban Stories, bringing integrated cameras and open-ear audio into a conventional eyewear brand. The product did not provide an in-lens display, but it established a commercially significant camera-and-audio glasses category.
+### Platform competition is re-emerging
 
-### 2022–2023 — display glasses and private-display accessories expand
+Snap OS, Android XR, vendor SDKs, community software, and open-hardware projects show that the future of smart glasses is also a platform contest. The durable historical question is not only which frame sold best, but which hardware and software ecosystems allowed useful capabilities to survive vendor pivots and product discontinuation.
 
-XREAL, Rokid, TCL/RayNeo, VITURE, and related vendors expanded glasses designed primarily as wearable displays for phones, computers, and game systems. These products strengthened a category that differs from autonomous camera glasses and enterprise assisted-reality devices.
+## Citation and reuse
 
-### 2023 — Ray-Ban Meta generation
+When citing the overall visualization, use:
 
-The second Meta/Ray-Ban generation improved camera, audio, livestreaming, and assistant functions. Subsequent multimodal AI features helped shift public expectations from simple capture toward conversational visual assistance.
+> **GlassesResearch Smart-Glasses Industry Timeline**, GlassesResearch, https://glassesresearch.org/docs/INDUSTRY_TIMELINE/
 
-### 2023–2025 — AI-assistant glasses proliferate
+For a particular milestone, select it in the graph and use the generated `#TL-####` permalink. Cite the underlying primary source as well when the specific factual claim matters.
 
-Startups, ODM products, crowdfunding projects, and established vendors introduced glasses centered on translation, transcription, reminders, visual assistance, and access to large language models. Many depended heavily on companion phones and cloud services, making openness, privacy, continuity, and vendor dependence central research questions.
+The machine-readable canonical record is available at:
 
-### 2024 onward — open and developer-controlled platforms re-emerge
+`https://glassesresearch.org/timeline/events.json`
 
-Projects including open-source or developer-oriented glasses, alternative operating environments, community firmware, and phone-controlled pipelines renewed interest in user-selected AI models and local-first processing. The ecosystem increasingly includes both polished consumer products and experimental hardware intended for extension.
+The provisional live-signal feed is available at:
 
-## Recurring historical patterns
+`https://glassesresearch.org/timeline/auto-events.json`
 
-Across the timeline, several patterns repeat:
+## Editorial rules
 
-- consumer products often depend on enterprise or research foundations;
-- fashionable frames improve adoption but constrain battery, heat, optics, and repairability;
-- cloud dependence accelerates features while increasing lock-in and continuity risks;
-- discontinued applications and support pages can make functional hardware unusable;
-- privacy and social acceptance are engineering requirements, not merely marketing concerns;
-- product categories frequently overlap, so terminology must remain precise;
-- community preservation becomes most valuable after vendors pivot, discontinue products, or remove downloads.
+- Prefer primary, regulatory, repository, and original research sources.
+- Preserve disagreement and uncertainty instead of forcing a clean narrative.
+- Never convert absence of evidence into evidence of absence.
+- Keep announced future events visually and semantically distinct from occurred history.
+- Record delays and cancellations rather than deleting inconvenient predictions.
+- Deduplicate repeated coverage of the same underlying announcement.
+- Give stable IDs only to canonical events.
+- Keep routine product news from overwhelming the main graph by using significance thresholds.
+- Link device milestones to `GLS-####` records whenever identity is established.
 
-## Timeline research backlog
+## Coverage backlog
 
-Future revisions should add primary-source citations and detailed milestones for:
-
-- early wearable-computing laboratories and prototypes;
-- Vuzix product generations;
-- Epson Moverio;
-- Google Glass editions and enterprise lifecycle;
-- Microsoft HoloLens and the boundary with spatial-computing headsets;
-- RealWear and enterprise assisted reality;
-- North Focals and subsequent acquisition history;
-- Snap Spectacles generations;
-- Bose Frames and audio-glasses development;
-- Amazon Echo Frames;
-- Ray-Ban Stories and Ray-Ban Meta releases;
-- XREAL/Nreal, Rokid, VITURE, and RayNeo display-glasses families;
-- Brilliant Labs, Even Realities, Solos, Halliday, Mentra, and other emerging platforms;
-- open-source, community-firmware, and reverse-engineering milestones;
-- standards, regulatory developments, and major privacy controversies.
+The graph is now a maintained system, but historical depth remains an active research program. High-priority additions include early wearable-computing laboratories, Google Glass editions and enterprise lifecycle, Vuzix and Epson generations, North Focals, RealWear, Bose Frames, Echo Frames, Snap Spectacles generations, XREAL/Nreal, Rokid, VITURE, RayNeo, Brilliant Labs, Even Realities, Solos, Halliday, Mentra, regulatory milestones, major privacy controversies, and well-sourced open-source or reverse-engineering breakthroughs.
