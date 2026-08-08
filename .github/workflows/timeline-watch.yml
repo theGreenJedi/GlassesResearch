@@ -1,0 +1,57 @@
+name: Update living industry timeline
+
+on:
+  schedule:
+    - cron: "17 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: timeline-watch
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Scan curated primary sources
+        run: python scripts/update_timeline_signals.py
+
+      - name: Validate timeline data
+        run: python scripts/validate_timeline.py
+
+      - name: Commit changed live signals
+        id: commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- timeline/auto-events.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No new timeline signals."
+            exit 0
+          fi
+          git config user.name "glassesresearch-timeline-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add timeline/auto-events.json
+          git commit -m "Update timeline live signals"
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Redeploy site after timeline update
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main

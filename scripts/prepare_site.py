@@ -21,6 +21,7 @@ COPY_DIRS = (
     "images",
     "models",
     "resources",
+    "timeline",
 )
 COPY_FILES = (
     "FOUNDING_CHARTER.md",
