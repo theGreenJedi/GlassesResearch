@@ -1,6 +1,8 @@
 # W610 Community Resources
 
-This page contains **direct links to real resources**. It does not list generic places to search or empty research targets.
+This is the **W610 / HeyCyan-specific appendix** to the site-wide [Community & Development Hub](../../resources/COMMUNITY_AND_DEVELOPMENT.md). GlassesResearch is not W610-centric; ecosystem-wide communities and development resources belong in the global hub.
+
+This page contains **direct links to real W610/HeyCyan resources**. It does not list generic places to search or empty research targets.
 
 ## Development projects
 
@@ -27,6 +29,7 @@ This page contains **direct links to real resources**. It does not list generic 
 
 ## Related GlassesResearch sources
 
+- [Community & Development Hub](../../resources/COMMUNITY_AND_DEVELOPMENT.md) — ecosystem-wide communities, developer groups, forums, and open projects.
 - [Evidence Corpus](../../evidence/README.md) — stable evidence records used across the site.
 - [W610 Research Portal](resources/RESEARCH_PORTAL.md) — model-specific source map.
 - [W610 Development & Hacking Research](hacking/README.md) — technical and owner-control research.
