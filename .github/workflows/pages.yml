@@ -36,6 +36,9 @@ jobs:
       - name: Audit repository links and preservation records
         run: python scripts/audit_repository.py --external-output build/external-links.txt
 
+      - name: Validate canonical device database
+        run: python scripts/build_device_database.py --validate-only
+
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
