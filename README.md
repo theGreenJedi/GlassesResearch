@@ -4,8 +4,9 @@ Independent, evidence-based research into smart glasses, AI glasses, and user-co
 
 ## Find what you need
 
+- [**Start by what you need**](docs/START_BY_NEED.md) — buyer, developer, researcher, journalist, manufacturer, or contributor.
 - [**Browse smart-glasses models**](models/THE_LIST.md) — 119 models and generations, past and present.
-- [**Compare devices**](docs/COMPARISON_ENGINE.md) — side-by-side research using the same evidence-backed fields.
+- [**Compare devices**](docs/COMPARISON_ENGINE.md) — interactive side-by-side research using the same evidence-backed fields.
 - [**Explore the industry timeline**](docs/INDUSTRY_TIMELINE.md) — major products, technologies, companies, and milestones over time.
 - [**Developer resources**](hacking/README.md) — firmware, BLE, SDKs, APIs, repair, reverse engineering, and open-development research.
 - [**Buyer guide**](buyers/BUYER_AND_OPENNESS_GUIDE.md) — ownership, privacy, offline use, repairability, prescription options, and vendor lock-in.
@@ -57,6 +58,8 @@ Public-facing status is intentionally simple:
 
 The source itself tells you whether the evidence came from hands-on testing, a manufacturer, an FCC filing, a research paper, a repository, or community work.
 
+Read the full [Research Standards](docs/RESEARCH_STANDARDS.md).
+
 ## Found an error?
 
 Every factual claim is open to challenge. Stronger evidence wins.
@@ -69,7 +72,17 @@ Substantive disputes and resolutions are preserved publicly so corrections remai
 
 Own a device? Found a manual? Tested a feature? Preserved firmware or an APK? Captured BLE traffic? Repaired a frame?
 
-[**Contribute what you know.**](docs/CONTRIBUTE.md)
+[**Contribute what you know.**](docs/CONTRIBUTE.md) Contributors who want public credit can also be recognized in the [Hall of Contributors](docs/CONTRIBUTORS.md).
+
+## Roadmap status
+
+**Roadmap Version 1.0 — Framework Complete**
+
+The major site systems are now in place. The current phase is **Evidence Acquisition**: replace unknowns and placeholders with verified information, preserve fragile resources, correct mistakes, and deepen the existing research rather than continuously adding new site machinery.
+
+See [Roadmap v1.0](docs/ROADMAP_V1.md).
+
+> **Information first. Infrastructure second.**
 
 ## Safety and legal note
 
