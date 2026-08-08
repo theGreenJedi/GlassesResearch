@@ -1,42 +1,55 @@
 # Comparison Engine
 
-GlassesResearch is building a device comparison system that separates **research facts** from **comparison presentation**.
+Compare researched smart-glasses records side by side using the same evidence-backed field definitions.
 
-The engine exists now, and PR #41 begins populating it with sourced model records. The engine still does not declare winners, rankings, or purchase recommendations.
+<div id="comparison-engine-app">
+Loading comparison data…
+</div>
 
-## Current state
+## How to use it
 
-- Canonical comparison schema: [`comparisons/schema.json`](../comparisons/schema.json)
-- Stable field-level evidence states: `hands-on`, `community`, `primary`, `unknown`
-- Explicit unknown handling: missing research is rendered as **Unknown**, never silently converted to false or unsupported
-- Validator and normalizer: `scripts/build_comparison_engine.py`
-- Model research records: `comparisons/data/GLS-####.json`
+Choose two researched device records above. The comparison updates immediately, highlights differing values, exposes supporting source links, and keeps unsupported fields visible as **Unknown**.
 
-## Initial researched coverage
+The URL records the selected pair, so a comparison can be shared directly. The print control produces a cleaner printable view.
 
-PR #41 seeds the engine with six deliberately different devices so that the same schema is exercised across camera/audio glasses, discreet display glasses, tethered XR displays, enterprise HUDs, and open developer hardware:
+## What the engine does
+
+- uses one canonical comparison schema across devices;
+- preserves field-level source links;
+- shows missing research as **Unknown** rather than treating omission as “No”;
+- provides shareable pair URLs;
+- supports print-friendly output;
+- highlights differences without declaring a winner;
+- leaves rankings and purchase recommendations outside the engine itself.
+
+## Current researched coverage
+
+The initial research set deliberately spans different device categories so the same schema is exercised across camera/audio glasses, discreet display glasses, tethered XR displays, enterprise HUDs, and open developer hardware:
 
 | GLS ID | Device | Research emphasis |
 |---|---|---|
 | `GLS-0003` | Ray-Ban Meta (Gen 2) | camera/audio, companion-app dependence, battery and connectivity |
-| `GLS-0039` | W610 | hands-on project observations only; unverified specifications remain Unknown |
+| `GLS-0039` | W610 | hands-on project observations; unsupported specifications remain Unknown |
 | `GLS-0048` | Even G2 | discreet display, prescription support, BLE, battery, cloud-dependent features |
 | `GLS-0051` | Brilliant Labs Frame | open hardware/software, BLE protocol, firmware and developer access |
-| `GLS-0056` | Vuzix Z100 | enterprise monocular display, SDK access, BLE and all-day runtime |
-| `GLS-0074` | XREAL One | tethered XR display, optics, audio, X1 compute and wired power/data path |
+| `GLS-0056` | Vuzix Z100 | enterprise monocular display, SDK access, BLE and runtime |
+| `GLS-0074` | XREAL One | tethered XR display, optics, audio, compute and wired power/data path |
 
-This is a research seed set, not a claim that these six products are the market's best or most important devices.
+This is a research seed set, not a claim that these devices are the market's best or most important products. Additional models belong here as evidence is acquired.
 
 ## Evidence discipline
 
-Every populated field must carry both an evidence state and at least one source. Missing fields stay absent in the source record and normalize to **Unknown**.
+Every populated field carries an evidence state and at least one source in the underlying research record. Missing fields normalize to **Unknown**.
 
-A manufacturer omission is not treated as proof that a feature is absent. Negative values such as `camera_count = 0` or `No speakers` are recorded only when the source explicitly supports them.
+A manufacturer omission is not proof that a feature is absent. Negative values such as `camera_count = 0` are recorded only when the supporting evidence establishes them.
 
-Conflicting sources are preserved rather than silently reconciled. For example, current official XREAL sources list different weights for XREAL One, so the comparison record leaves weight Unknown and records the discrepancy in its research notes.
+Conflicting credible sources should remain visible rather than being silently reconciled. See [Research Standards](RESEARCH_STANDARDS.md).
 
-## Planned output
+## Technical sources
 
-With comparison data now populated, the site can render selected models side-by-side using the same field order and evidence vocabulary. A missing field stays visible as **Unknown** so the comparison exposes both what is known and where further research is needed.
+- Canonical schema: [`comparisons/schema.json`](../comparisons/schema.json)
+- Validator and normalizer: `scripts/build_comparison_engine.py`
+- Model research records: `comparisons/data/GLS-####.json`
+- Generated site bundle: `/data/comparisons.json`
 
-No rankings, winners, or purchase recommendations are generated by the engine itself.
+The comparison framework is complete; future work should primarily increase the amount and quality of verified device data rather than expand the comparison machinery.
