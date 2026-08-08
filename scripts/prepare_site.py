@@ -16,6 +16,7 @@ COPY_DIRS = (
     "buyers",
     "comparisons",
     "docs",
+    "evidence",
     "glossary",
     "hacking",
     "images",
@@ -70,29 +71,13 @@ def main() -> None:
 
     database_output = DEST / "data" / "devices.json"
     subprocess.run(
-        [
-            sys.executable,
-            str(ROOT / "scripts" / "build_device_database.py"),
-            "--source",
-            str(ROOT / "models" / "THE_LIST.md"),
-            "--output",
-            str(database_output),
-        ],
+        [sys.executable, str(ROOT / "scripts" / "build_device_database.py"), "--source", str(ROOT / "models" / "THE_LIST.md"), "--output", str(database_output)],
         check=True,
     )
 
     comparison_output = DEST / "data" / "comparisons.json"
     subprocess.run(
-        [
-            sys.executable,
-            str(ROOT / "scripts" / "build_comparison_engine.py"),
-            "--schema",
-            str(ROOT / "comparisons" / "schema.json"),
-            "--data-dir",
-            str(ROOT / "comparisons" / "data"),
-            "--output",
-            str(comparison_output),
-        ],
+        [sys.executable, str(ROOT / "scripts" / "build_comparison_engine.py"), "--schema", str(ROOT / "comparisons" / "schema.json"), "--data-dir", str(ROOT / "comparisons" / "data"), "--output", str(comparison_output)],
         check=True,
     )
 
