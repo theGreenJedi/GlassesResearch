@@ -53,6 +53,14 @@ Current physical-reference investigation covering hardware, BLE, firmware, softw
 
 GlassesResearch keeps firsthand observations, primary sources, community reports, hypotheses, historical material, and disproven claims distinct. Repetition is not verification.
 
+## Found an error? Challenge our research.
+
+GlassesResearch is a living research project. Every factual claim is open to challenge, and stronger evidence wins. If you believe a claim is wrong, incomplete, outdated, or supported by better evidence, we want the dispute preserved and reviewed rather than hidden.
+
+[**Submit a correction or research challenge.**](docs/RESEARCH_CHALLENGES.md)
+
+Challenges and their evidence are retained as a public review record so substantive corrections remain traceable over time.
+
 ## Contribute knowledge
 
 Own a device? Found a manual? Tested a feature? Preserved an APK? Captured BLE traffic? Repaired a frame? Corrected a model name?

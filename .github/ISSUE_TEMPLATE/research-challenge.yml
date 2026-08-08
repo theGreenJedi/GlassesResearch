@@ -1,0 +1,79 @@
+name: Challenge our research
+description: Dispute a factual claim, submit stronger evidence, or request a correction.
+title: "[Research challenge] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        GlassesResearch welcomes good-faith challenges to its factual claims. Stronger evidence wins.
+
+        Please identify the exact claim and provide the strongest evidence you can. A disagreement is not treated as hostility; it is part of the research process.
+
+  - type: input
+    id: page
+    attributes:
+      label: Page or record
+      description: Link to the page, model, timeline event, comparison record, or other material you are challenging.
+      placeholder: https://glassesresearch.org/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim being challenged
+      description: Quote or precisely summarize the factual claim you believe should be reviewed.
+      placeholder: The page currently states...
+    validations:
+      required: true
+
+  - type: textarea
+    id: challenge
+    attributes:
+      label: Why do you believe it is incorrect or incomplete?
+      description: Explain the problem, including any relevant context or ambiguity.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Provide primary sources when possible, followed by any useful secondary or community sources.
+      placeholder: |
+        Primary source: https://...
+        Additional source: https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the information
+      description: Optional context only. Evidence is evaluated on its merits regardless of who submits it.
+      options:
+        - Independent researcher / reader
+        - Device owner / tester
+        - Manufacturer / vendor / developer
+        - Journalist / analyst
+        - Community contributor
+        - Prefer not to say
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Anything else that would help us reproduce, verify, or understand the challenge.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: good_faith
+    attributes:
+      label: Good-faith submission
+      options:
+        - label: I am submitting this challenge in good faith and understand that GlassesResearch may uphold the original claim if the available evidence supports it.
+          required: true
