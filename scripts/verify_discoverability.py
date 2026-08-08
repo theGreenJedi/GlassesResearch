@@ -137,7 +137,7 @@ def main() -> None:
     if cname.read_text(encoding="utf-8").strip() != "glassesresearch.org":
         fail("CNAME does not contain glassesresearch.org")
 
-    html_files = sorted(SITE.rglob("*.html"))
+    html_files = sorted(path for path in SITE.rglob("*.html") if path.name != "404.html")
     if not html_files:
         fail("no rendered HTML pages found")
 
@@ -168,7 +168,7 @@ def main() -> None:
 
         if parser.meta_property.get("og:url") != [url]:
             errors.append(f"{html_path}: Open Graph URL must match canonical URL")
-        if not any(parser.meta_property.get(key) for key in ("og:title", "og:description")):
+        if not parser.meta_property.get("og:title") or not parser.meta_property.get("og:description"):
             errors.append(f"{html_path}: missing Open Graph title/description")
         if not parser.meta_name.get("twitter:card"):
             errors.append(f"{html_path}: missing Twitter card metadata")
@@ -199,7 +199,7 @@ def main() -> None:
         fail("discoverability audit failed:\n  " + "\n  ".join(errors[:50]))
 
     print(
-        f"Discoverability audit passed for {len(html_files)} HTML pages: "
+        f"Discoverability audit passed for {len(html_files)} indexable HTML pages: "
         "canonical URLs, unique descriptions, social metadata, structured data, FAQ schema, "
         "robots.txt, sitemap.xml, and CNAME are coherent."
     )
