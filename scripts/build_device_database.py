@@ -50,9 +50,13 @@ def parse(source: Path) -> tuple[int, list[dict[str, object]]]:
         if not line.startswith("| GLS-"):
             continue
         cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
-        if len(cells) != 8:
-            raise ValueError(f"line {line_number}: expected 8 model columns, found {len(cells)}")
-        stable_id, maker, model, era, state, device_type, access, evidence = cells
+        if len(cells) < 8:
+            raise ValueError(f"line {line_number}: expected at least 8 model columns, found {len(cells)}")
+        stable_id, maker, model, era, state, device_type, access = cells[:7]
+        # A small number of legacy rows use a visual pipe between evidence text
+        # and the source link. Preserve that content rather than treating it as
+        # a ninth schema column.
+        evidence = " | ".join(cells[7:])
         if not ID_RE.match(stable_id):
             raise ValueError(f"line {line_number}: malformed stable ID {stable_id!r}")
         records.append(
@@ -64,7 +68,7 @@ def parse(source: Path) -> tuple[int, list[dict[str, object]]]:
                 "state": clean(state),
                 "type": clean(device_type),
                 "access": clean(access),
-                "evidence": clean(evidence.split(";", 1)[0]),
+                "evidence": clean(evidence.split(";", 1)[0].split(" | ", 1)[0]),
                 "links": links(evidence),
                 "ledger_line": line_number,
             }
