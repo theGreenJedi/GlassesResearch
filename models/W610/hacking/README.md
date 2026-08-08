@@ -45,49 +45,6 @@ The entries below are limited to behavior directly observed on the current hands
 - **Risk:** Low
 - **Limitations:** This does not prove that all functions operate without the vendor app.
 
-## Not Verified Yet
-
-The following are preserved as research targets only. They are **not instructions** and must not be represented as working capabilities until qualifying tests are completed.
-
-| Research target | Current status | Verification needed |
-|---|---|---|
-| Enumerate BLE GATT services and characteristics | Not Verified Yet | Capture from identified hardware and firmware; repeat scan; preserve raw output |
-| Identify writable BLE controls | Not Verified Yet | Controlled writes with packet capture, expected-response record, and rollback |
-| Replace the vendor assistant | Not Verified Yet | Demonstrate an open client performing a defined function without vendor-cloud dependence |
-| Use a third-party or community companion app | Not Verified Yet | Reproduce installation, pairing, function, and recovery on the hands-on unit |
-| Obtain and preserve firmware packages | Not Verified Yet | Establish lawful source, hashes, model compatibility, and retrieval date |
-| Flash community or modified firmware | Not Verified Yet | Verified image provenance, exact revision match, successful flash, and tested recovery path |
-| Replace embedded AI models | Not Verified Yet | Identify where inference runs, model format, deployment path, and reproducible result |
-| Capture microphone or camera data through an open interface | Not Verified Yet | Authorized capture with documented protocol and privacy controls |
-| Operate core functions entirely offline | Not Verified Yet | Define core functions and reproduce them with network isolation |
-| Recover from failed update or flash | Not Verified Yet | Repeatable recovery method tested on matching hardware |
-| Identify ODM/rebrand compatibility | Not Verified Yet | Hardware, firmware, protocol, and accessory comparison across physical units |
-| Prescription-lens or optics workarounds | Not Verified Yet | Dimensional verification, fit test, optical safety review, and repeatability |
-
-## Verification priorities
-
-1. Record hardware and firmware identifiers without altering the device.
-2. Capture complete Bluetooth advertisements and service enumeration.
-3. Establish pairing behavior and profiles on a controlled phone.
-4. Preserve raw evidence before interpreting packet behavior.
-5. Test one reversible command at a time.
-6. Document recovery before attempting firmware writes.
-7. Promote only successfully reproduced procedures into Verified Working.
-
-## Required evidence paths
-
-Future experiments should preserve material under the W610 chapter:
-
-```text
-models/W610/evidence/
-models/W610/ble/
-models/W610/firmware/
-models/W610/software/
-models/W610/research-log/
-```
-
-Each experiment should include date, device identity, tool versions, raw output, interpretation, result, and contradictory observations.
-
 ## Safety boundary
 
 Research must be limited to owned or explicitly authorized devices and services. Do not publish credentials, private user traffic, unlawfully obtained firmware, or procedures intended to compromise another person's device or account.
