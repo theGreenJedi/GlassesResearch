@@ -1,32 +1,27 @@
-# Model Chapters
+# Model Research Chapters
 
-[`The List`](THE_LIST.md) is the canonical purchaser-history ledger with stable IDs. The [`model registry`](CATALOG.md) tracks substantive starting points across the smart-glasses ecosystem. A model receives a self-contained chapter under `models/` when enough real evidence exists to make that chapter useful.
+[`The List`](THE_LIST.md) is the canonical index of 119 purchasable smart-glasses models and generations. These chapters provide deeper source-backed research where enough concrete information exists to be useful.
 
-A model chapter should keep device-specific evidence, notes, diagrams, software, diagnostics, manufacturing intelligence, and reverse-engineering work together. Cross-model material belongs in shared top-level areas only when it genuinely applies to multiple devices.
+## Current research chapters
 
-## Ecosystem indexes
+| Model / family | ID(s) | What is documented |
+|---|---|---|
+| [Ray-Ban Meta Gen 2](RayBanMetaGen2/README.md) | GLS-0003 | Camera/media behavior, app and network dependencies, AI processing and primary support sources. |
+| [Solos AirGo family](SolosAirGo/README.md) | GLS-0026–0029 | Developer SDK, BLE/Wi-Fi transport, sensors, audio/camera access and model-family coverage. |
+| [W610 / HeyCyan](W610/README.md) | GLS-0039 | Hands-on hardware observations, source map, community SDK/app work, FCC/rebrand research and open-development evidence. |
+| [Even Realities G2](EvenG2/README.md) | GLS-0048 | Display, battery, BLE, microphones, prescription support, app/cloud behavior and primary specifications. |
+| [Brilliant Labs Frame](BrilliantFrame/README.md) | GLS-0051 | Hardware architecture, schematics, BLE, SDKs, firmware source and developer/debug access. |
+| [Vuzix Z100](VuzixZ100/README.md) | GLS-0056 | Display/optics, BLE, prescription support, SDK capabilities, pairing and developer documentation. |
+| [Rokid Glasses](RokidGlasses/README.md) | GLS-0064 | MicroLED display, AR1/RT600 hardware, camera/audio, connectivity, battery, app and SDK resources. |
+| [Snap Spectacles 5](SnapSpectacles5/README.md) | GLS-0068 | Spectacles development platform, device APIs, compatibility matrix and public sample code. |
+| [XREAL One](XREALOne/README.md) | GLS-0074 | Micro-OLED display, wired host architecture, X1 compute, audio, spatial modes, SDK and firmware guidance. |
 
-- [The List](THE_LIST.md) — 119 verified purchasable models and generations, past and present
-- [Smart-glasses model registry](CATALOG.md) — broader discovery layer for platforms, prototypes, unnamed devices, and research leads
+## Shared research
 
-## Current substantive chapters
+- [Compare devices](../docs/COMPARISON_ENGINE.md)
+- [Developer resources](../hacking/README.md)
+- [Research library](../evidence/README.md)
+- [Technical artifacts](../resources/PRIMARY_ARTIFACT_PRESERVATION_LEDGER.md)
+- [Industry timeline](../docs/INDUSTRY_TIMELINE.md)
 
-- [W610](W610/README.md) — current hands-on reference device
-
-## Standard chapter layout
-
-Each model may include:
-
-- `hardware/` — physical construction, components, measurements, teardowns
-- `ble/` — advertisements, services, characteristics, captures, protocol notes
-- `firmware/` — versions, dumps, update paths, hashes, analysis
-- `software/` — apps, SDKs, APIs, integrations, compatibility
-- `manufacturing/` — OEM/ODM relationships, factories, suppliers, product-family evidence
-- `diagnostics/` — test procedures, symptoms, logs, known failures
-- `diagrams/` — block diagrams, signal flows, architecture drawings
-- `schematics/` — traced or sourced circuit information, clearly labeled by confidence
-- `evidence/` — photographs, manuals, listings, regulatory records, raw captures
-- `resources/` — model-specific links, communities, repositories, vendors, references
-- `research-log/` — chronological experiments and findings
-
-Not every registered model needs a chapter immediately, and not every chapter needs every directory. Add sections only when evidence exists, while preserving these names when they fit. The W610 chapter is a reference implementation, not a mandatory empty template.
+A chapter is created only when it contains actual information and sources. We do not publish empty model templates.
