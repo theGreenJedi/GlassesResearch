@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import shutil
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,6 +64,19 @@ def main() -> None:
         "GlassesResearch\nIndependent, privacy-first smart-glasses research.\n"
         "Repository: https://github.com/theGreenJedi/GlassesResearch\n",
         encoding="utf-8",
+    )
+
+    database_output = DEST / "data" / "devices.json"
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "build_device_database.py"),
+            "--source",
+            str(ROOT / "models" / "THE_LIST.md"),
+            "--output",
+            str(database_output),
+        ],
+        check=True,
     )
 
     print(f"Staged documentation at {DEST}")
