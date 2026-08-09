@@ -4,8 +4,6 @@ A cross-ecosystem library of directly identifiable sources used by GlassesResear
 
 ## Current coverage
 
-The library currently contains concrete sources for:
-
 - W610 / HeyCyan — SDKs, alternative companion software, release discussions, FCC records and supplier specifications;
 - Brilliant Labs Frame — hardware manual, SDK, Bluetooth specification and firmware source;
 - MentraOS / open smart-glasses hardware — operating-system source, releases and open hardware;
@@ -21,10 +19,4 @@ The library currently contains concrete sources for:
 
 ## Evidence types
 
-**Regulatory primary** records come from government/standards filings tied to an identified device. **Vendor primary** records come from the manufacturer or platform owner. **Community primary** records are the originating public project/repository/release. **Community report** records are specific attributable discussions or reports. **GlassesResearch verified** is reserved for observations or tests actually reproduced by this project.
-
-The source tells readers what supports a claim; the public pages do not need rows of empty verification states.
-
-## Rule
-
-A resource appears here only when we can identify it and provide a direct URL or preserved record. “Search Reddit,” “look on GitHub,” “find a Discord,” and similar discovery instructions are not research content.
+**Regulatory primary** records come from government or standards filings tied to an identified device. **Vendor primary** records come from the manufacturer or platform owner. **Community primary** records are originating public projects, repositories, or releases. **Community report** records are specific attributable discussions or reports. **GlassesResearch verified** identifies observations or tests reproduced by this project.
