@@ -5,7 +5,7 @@ Concrete resources for developing, repairing, understanding, and extending smart
 ## Start with the resources
 
 - [Open Development Resource Ledger](OPEN_HACKING_RESOURCE_LEDGER.md) — direct SDKs, source repositories, developer documentation, protocol resources, samples, and open-hardware projects across W610/HeyCyan, Brilliant Labs, MentraOS, Vuzix, Snap, XREAL, RayNeo, Rokid, and Android XR.
-- [W610 Research Portal](../models/W610/resources/RESEARCH_PORTAL.md) — direct W610/HeyCyan SDK, alternative-app, FCC, rebrand, and supplier sources.
+- [Community & Development](../resources/COMMUNITY_AND_DEVELOPMENT.md) — Reddit, Discord, GitHub, XDA, developer forums, and independent technical communities.
 - [Research Library](../evidence/README.md) — machine-readable evidence records with stable identifiers.
 - [Manuals, Firmware & Technical Files](../artifacts/README.md) — identified technical artifacts and preservation records.
 
@@ -54,7 +54,3 @@ Google's [Android XR developer hub](https://developer.android.com/develop/xr/get
 ## Safety boundary
 
 Research only devices and services you own or are authorized to inspect. Do not publish credentials, private user traffic, unlawfully distributed proprietary files, or instructions intended to compromise another person's device or account.
-
-## Publication rule
-
-A procedure is presented as working only when the evidence supports that specific procedure on an identified device/software environment. Public resource pages themselves should contain useful resources, not queues of things we hope to find later.
