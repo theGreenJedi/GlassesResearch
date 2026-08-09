@@ -2,6 +2,8 @@
 
 This directory is the dedicated research chapter for the W610 smart-glasses platform and closely related W610-branded retail variants.
 
+**Technology lineage:** [HeyCyan](../../lineages/HEYCYAN.md)
+
 ## Begin with a question
 
 Use [`QUESTIONS.md`](QUESTIONS.md) as the human-facing entrance. It organizes the chapter around practical questions rather than requiring readers to understand the file hierarchy first.
@@ -38,6 +40,7 @@ These observations are provisional until tied to dated evidence or repeated test
 
 ## Primary navigation
 
+- [HeyCyan lineage](../../lineages/HEYCYAN.md)
 - [Questions](QUESTIONS.md)
 - [Open-hacking dossier](hacking/README.md)
 - [Research backlog](RESEARCH_BACKLOG.md)
