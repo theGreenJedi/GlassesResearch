@@ -74,6 +74,11 @@ def parse(source: Path) -> tuple[int, list[dict[str, object]]]:
             }
         )
 
+    # The human-readable list is grouped by practical product category, so a
+    # newly discovered model can legitimately appear in its category even when
+    # its stable ID is newer. Machine-readable consumers should always receive
+    # canonical stable-ID order independent of the page's editorial grouping.
+    records.sort(key=lambda record: int(str(record["id"]).split("-", 1)[1]))
     return declared_count, records
 
 
