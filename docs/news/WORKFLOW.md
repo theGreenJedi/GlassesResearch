@@ -7,7 +7,7 @@ GlassesResearch treats news as an **input to the research institution**, not the
 ## Cadence
 
 - **Daily:** automated discovery gathers potentially material developments into `research/news-candidates/`.
-- **Periodic survey:** maintainers review what has accumulated, change dispositions, and decide what deserves deeper research.
+- **Periodic survey:** maintainers review what has accumulated in `research/news-reviews/`, change dispositions, and decide what deserves deeper research.
 - **As needed:** important glasses-related developments are promoted into canonical research.
 - **Periodic synthesis:** public news digests summarize meaningful changes without turning the site into a noisy ticker.
 
@@ -67,6 +67,23 @@ For every retained candidate ask:
 > **Will this still make GlassesResearch more useful one year from now?**
 
 The answer does not need to be yes immediately. Some items are deliberately retained as `watch` because their significance may only become clear later.
+
+## Where surveys happen
+
+Raw intake remains in `research/news-candidates/`. Human editorial surveys live in `research/news-reviews/`.
+
+For each survey session:
+
+1. Choose a candidate date range (weekly, monthly, or any useful window).
+2. Copy `research/news-reviews/SURVEY_TEMPLATE.md` to a dated survey file.
+3. Group duplicate coverage and follow-up stories into underlying developments.
+4. Verify promising developments against the strongest available sources.
+5. Assign each development a disposition: publish, watch, archive, superseded, or reject.
+6. Record why the decision was made and which candidate IDs were considered.
+7. For publish decisions, identify every canonical repository destination that needs an update.
+8. Commit the completed survey as the durable editorial record.
+
+This makes it possible to return months or years later and see not only what was published, but what the institution observed and how it evaluated it at the time.
 
 ## Candidate review procedure
 
