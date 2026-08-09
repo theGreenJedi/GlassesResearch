@@ -17,11 +17,11 @@ This directory is the maintainer-facing operational control room for GlassesRese
 
 ## Research inbox
 
-The daily collector writes raw intake to `research/news-candidates/`. Periodic editorial surveys are performed in `research/news-reviews/` using `SURVEY_TEMPLATE.md`.
+The daily collector writes raw intake to `research/news-candidates/`. The maintainer working layer is `research/inbox/`, and completed editorial decisions are preserved in `research/news-reviews/`.
 
 Maintainer path:
 
-**Control Room → Research Inbox (`research/news-candidates/`) → Survey (`research/news-reviews/`) → Promote selected glasses-relevant findings into canonical research.**
+**Control Room → Raw Collection (`research/news-candidates/`) → Research Inbox (`research/inbox/`) → Durable Review (`research/news-reviews/`) → Promote selected glasses-relevant findings into canonical research.**
 
 The collector is deliberately broader than the public site. Adjacent wearable-HCI developments may be retained for future reference, but for now only concrete smart-glasses / AI-eyeglasses / eyewear developments are eligible for public promotion.
 
@@ -40,7 +40,7 @@ Track these systems as independent layers so failures can be isolated quickly.
 | Search indexing | Verified | Google Search Console | Sitemap and robots.txt should remain reachable |
 | Web analytics | Enabled globally | Cloudflare Web Analytics | Privacy-first RUM enabled globally |
 | Daily news collector | Scheduled and healthy | GitHub Actions | Raw candidates are review-only, never canonical automatically |
-| Research surveys | Periodic | `research/news-reviews/` | Record dispositions and canonical follow-ups |
+| Research surveys | Periodic | `research/inbox/` → `research/news-reviews/` | Record dispositions and canonical follow-ups |
 
 ## Operational metrics
 
