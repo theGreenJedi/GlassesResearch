@@ -20,6 +20,7 @@ COPY_DIRS = (
     "glossary",
     "hacking",
     "images",
+    "lineages",
     "models",
     "resources",
     "timeline",
@@ -69,6 +70,17 @@ def main() -> None:
         target = DEST / relpath
         if target.exists():
             target.unlink()
+
+    # Keep public links aimed at public research pages even when the canonical
+    # repository source mentions an internal maintenance document.
+    public_list = DEST / "models" / "THE_LIST.md"
+    if public_list.exists():
+        text = public_list.read_text(encoding="utf-8")
+        text = text.replace(
+            "[weekly news workflow](../docs/news/WORKFLOW.md)",
+            "[weekly news coverage](../docs/news/README.md)",
+        )
+        public_list.write_text(text, encoding="utf-8")
 
     cname = ROOT / "CNAME"
     if cname.exists():
