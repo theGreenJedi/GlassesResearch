@@ -7,6 +7,6 @@ This directory contains cross-model resource discovery and preservation work.
 - [Resource Preservation Checklist](PRESERVATION_CHECKLIST.md) — practical intake and preservation workflow.
 - [Resource Record Template](RESOURCE_RECORD_TEMPLATE.yaml) — reusable provenance and artifact metadata record.
 
-Model-specific resources remain inside their model chapters. For example, W610-specific material belongs under [`models/W610/resources/`](../models/W610/resources/). Cross-model resources live here until evidence supports promotion into one or more dedicated model chapters.
+Model-specific resources remain inside their model chapters. For example, W610-specific material belongs under [`models/W610/resources/`](../models/W610/resources/README.md). Cross-model resources live here until evidence supports promotion into one or more dedicated model chapters.
 
 The resource layer follows a content-first rule: new categories are added only when they contain useful sources, findings, or preservation targets.
