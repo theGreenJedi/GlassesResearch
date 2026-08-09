@@ -1,8 +1,8 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-08-05  
+**Edition:** 2026-08-08  
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 119 distinct purchasable models or explicitly marketed product generations
+**Count:** 120 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -65,6 +65,7 @@ Status is last checked on the edition date and can vary by country. Frame colors
 | GLS-0040 | Snap | Spectacles (1st Gen) | 2016 | legacy | camera | retail/vending | primary; [source](https://www.spectacles.com/) |
 | GLS-0041 | Snap | Spectacles 2 | 2018 | legacy | camera | retail | primary; [source](https://www.spectacles.com/) |
 | GLS-0042 | Snap | Spectacles 3 | 2019 | legacy | stereo camera | retail | primary; [source](https://www.spectacles.com/) |
+| GLS-0120 | Anko / Kmart Australia | Camera Glasses | 2026 | current/region-limited | camera/audio | retail | secondary + commercial; [chapter](AnkoCameraGlasses/README.md); [source](https://www.theguardian.com/australia-news/2026/aug/04/kmart-camera-glasses-anko-meta-smartglasses-australia) |
 
 ## Discreet display and standalone AR glasses
 
@@ -168,7 +169,7 @@ The list deliberately starts with models supported by a usable primary trail. Th
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 119-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 120-row count:
 
 - Snap SPECS (2026): order intent is tracked, but the final purchasable SKU and delivery evidence still need reconciliation.
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
