@@ -1,61 +1,89 @@
-# Weekly Smart-Glasses News Workflow
+# Smart-Glasses News Collection and Promotion Workflow
 
-This is the durable method for the weekly research task.
+GlassesResearch treats news as an **input to the research institution**, not the final product. The goal is to detect material change quickly, verify it, preserve evidence, and update the durable pages readers rely on.
 
-## Goal
+## Cadence
 
-Keep GlassesResearch useful as both a chronological news archive and a current canonical reference. The task is not to summarize every article. It is to detect material change, verify it, preserve fragile evidence, and update the pages that readers rely on.
+- **Daily:** automated discovery gathers potentially material ecosystem developments into `research/news-candidates/`.
+- **As needed:** important developments are reviewed and promoted immediately into canonical research.
+- **Periodic synthesis:** public news digests summarize meaningful changes without turning the site into a noisy ticker.
 
-## Weekly procedure
+The candidate store is repository-side intake and is not itself a public factual record.
 
-1. Read the latest `main`, this workflow, the source watchlist, latest digest, release tracker, [The List](../../models/THE_LIST.md), model registry, FAQ, and affected model chapters.
-2. Search the entire watchlist plus broad web/news/research queries for the preceding 14 days. The overlap catches late-indexed reports and corrections.
-3. Search exact model names, companion apps, firmware/release-note pages, GitHub repositories, regulators, standards databases, and relevant non-English identifiers.
-4. Deduplicate rewrites back to the earliest primary source.
-5. Classify each candidate by evidence type and consequence.
-6. Reject rumors without material corroboration, routine promotions, affiliate lists, and trivial variants.
-7. For every accepted item, record:
-   - event date and discovery date;
-   - headline written by this project;
-   - concise description;
-   - why it matters;
-   - affected models/entities;
-   - source type and direct links;
-   - uncertainty or contradiction;
-   - repository pages that must change.
-8. Archive fragile lawful-to-preserve sources when practical, with URL, retrieval date, hash, license/redistribution status, and authenticity caveat.
-9. Create `docs/news/digests/YYYY-MM-DD.md` only when there is material new information.
-10. Update `docs/news/README.md`, `RELEASE_TRACKER.md`, [The List](../../models/THE_LIST.md), the model registry, glossary, resource pages, FAQ answers, and backlogs as required.
-11. Open a reviewable GitHub pull request. Do not auto-merge unattended work.
-12. If nothing material changed, do not create an empty digest or PR; report “no material update” with the searches completed.
+## Daily collector coverage
 
-## Consequence test
+The collector searches broadly across:
 
-An item is material when it changes at least one of:
+- smart-glasses and AI-glasses news queries;
+- known manufacturers, retailers, and technology lineages;
+- manufacturer newsrooms and release pages;
+- SDKs, firmware, GitHub releases, companion apps, and developer platforms;
+- display, optical, AI, chipset, battery, connectivity, accessibility, privacy, security, and standards developments that can materially affect the ecosystem;
+- OEM/ODM, retail-rebrand, regulatory, certification, and supply-chain developments.
+
+The source and query map lives in `research/news-collector-sources.json` and should expand as the ecosystem expands.
+
+## Candidate review procedure
+
+1. Read the latest `main`, candidate intake, [The List](../../models/THE_LIST.md), lineage pages, model registry, comparison data, timeline, community/development hub, FAQ, and affected model chapters.
+2. Trace each candidate back to the best available primary source; use independent reporting for context, contradictions, and cases where primary material is unavailable.
+3. Deduplicate rewrites and syndication.
+4. Distinguish announcement, preorder, shipping, hands-on verification, firmware rollout, discontinuation, and rumor.
+5. Reject routine promotions, affiliate lists, SEO rewrites, trivial color/style variants, and rumors without material corroboration.
+6. For accepted items, record event date, discovery date, source type, affected models/lineages, what changed, uncertainty, and which canonical pages must change.
+7. Preserve fragile lawful-to-preserve evidence when practical.
+8. Promote the finding into durable research rather than leaving it only as a news item.
+
+## Materiality / consequence test
+
+An item is newsworthy when it materially changes at least one of:
 
 - what exists or can be purchased;
-- a release, shipment, delay, discontinuation, recall, or region;
-- a device’s capability, compatibility, security, privacy, repair, or support;
-- an SDK, protocol, app, firmware, model, or open-source path;
-- a component or manufacturing constraint;
-- credible scientific understanding or human-factors evidence;
+- a model launch, preorder, shipment, delay, discontinuation, recall, or regional availability;
+- a technology lineage, rebrand relationship, compatibility relationship, or ecosystem boundary;
+- a device's capability, compatibility, security, privacy, repair, support, accessibility, or user control;
+- an SDK, API, protocol, app, firmware, model, open-source project, or developer path;
+- a meaningful AI, software, hardware, optics, display, chipset, battery, sensor, connectivity, or manufacturing development likely to influence smart glasses;
+- a component or supply-chain constraint;
+- credible scientific or human-factors evidence;
 - a canonical claim already present in this repository.
 
-## Pull-request checklist
+## Promotion destinations
 
-- [ ] All accepted items have direct sources.
+A verified development should update every durable layer it materially affects:
+
+- `models/THE_LIST.md` for new or materially changed purchasable models;
+- `models/<Model>/` for model-specific research;
+- `lineages/` for lineage membership, evolution, shared technology, compatibility, pros/cons, current models, and use cases;
+- comparison data when new comparable facts become available;
+- timeline data for significant milestones;
+- `resources/COMMUNITY_AND_DEVELOPMENT.md` for community/developer ecosystem changes;
+- release tracker and public digest when useful to readers;
+- glossary, FAQ, artifacts, evidence corpus, buyer guidance, and research pages where relevant.
+
+A single event can update several of these at once.
+
+## Review and publication rule
+
+The automated collector may open a pull request containing **raw candidates only**. Those files are not canonical facts and should not be treated as publication-ready research.
+
+Canonical updates require evidence review. Important developments may be promoted immediately; lower-priority items can be synthesized periodically. Empty public digests are not created.
+
+## Pull-request checklist for promoted news
+
+- [ ] Accepted claims have direct sources.
 - [ ] Primary sources are preferred and independent context is separated.
 - [ ] Event dates are distinguished from publication/discovery dates.
 - [ ] Announcement, preorder, shipping, verification, and hands-on status are not conflated.
-- [ ] Existing digests were not silently rewritten; corrections are explicit.
-- [ ] The List was checked for launches, order openings, shipping, region changes, and discontinuations.
-- [ ] Canonical pages were updated when news changed current knowledge.
-- [ ] Fragile resources were archived or the reason for link-only preservation is stated.
-- [ ] No placeholder or empty weekly file was created.
+- [ ] New models were checked against The List and relevant lineage pages.
+- [ ] Lineage implications were evaluated explicitly.
+- [ ] Canonical model/comparison/timeline/community pages were updated when knowledge changed.
+- [ ] Fragile resources were archived or a link-only preservation choice was made deliberately.
+- [ ] Existing public digests were not silently rewritten; corrections are explicit.
 - [ ] Internal links and MkDocs navigation resolve.
-- [ ] PR explains models/layers affected and validations performed.
+- [ ] PR explains which models, lineages, and research layers changed and why.
 
-## Digest template
+## Public digest template
 
 ```markdown
 # Smart-Glasses Ecosystem Digest — YYYY-MM-DD
@@ -66,7 +94,7 @@ An item is material when it changes at least one of:
 
 ## Executive summary
 
-## Releases and availability
+## New models, releases, and availability
 
 ### Project-written headline
 - **Event date:**
@@ -74,20 +102,18 @@ An item is material when it changes at least one of:
 - **Evidence:**
 - **What happened:**
 - **Why it matters:**
-- **Affected models/entities:**
+- **Affected models / lineages:**
 - **Sources:**
 - **Uncertainty:**
-- **Repository updates:**
+- **Canonical research updated:**
 
-## Software, firmware, SDKs, and security
+## Lineage developments
 
-## Components, standards, manufacturing, and regulation
+## Software, firmware, SDKs, AI, and security
+
+## Hardware, optics, components, standards, manufacturing, and regulation
 
 ## Community and preservation discoveries
 
-## Research radar
-
 ## Corrections and changed assessments
-
-## Immediate repository follow-ups
 ```
