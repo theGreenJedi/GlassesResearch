@@ -2,6 +2,8 @@
 
 Use this file for periodic maintainer snapshots. Do not fabricate missing metrics; leave a field blank or mark it unavailable when a platform has not yet accumulated data.
 
+Do not record provider-specific identifiers, assigned nameservers, account IDs, tokens, recovery data, or private dashboard metadata in this public file.
+
 ## Snapshot template
 
 ### YYYY-MM-DD
@@ -40,4 +42,4 @@ Use this file for periodic maintainer snapshots. Do not fabricate missing metric
 
 ## 2026-08-09 — Analytics baseline established
 
-Cloudflare became authoritative for `glassesresearch.org` after the Namecheap nameservers were changed to `dane.ns.cloudflare.com` and `elle.ns.cloudflare.com`. Cloudflare Web Analytics / Real User Measurements was enabled globally. This snapshot establishes the beginning of reliable Cloudflare-side visitor measurement; earlier website traffic should not be inferred from these future analytics totals.
+Cloudflare became authoritative for `glassesresearch.org` after the registrar delegation was changed to Cloudflare. Cloudflare Web Analytics / Real User Measurements was enabled globally. This snapshot establishes the beginning of reliable Cloudflare-side visitor measurement; earlier website traffic should not be inferred from these future analytics totals.
