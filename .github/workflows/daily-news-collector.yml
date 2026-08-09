@@ -1,0 +1,62 @@
+name: Daily ecosystem news collector
+
+on:
+  schedule:
+    - cron: "17 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Collect ecosystem candidates
+        run: python scripts/collect_daily_news.py
+
+      - name: Detect collector changes
+        id: changes
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- research/news-candidates)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open review PR when new candidates exist
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          DATE="$(date -u +%F)"
+          BRANCH="news-candidates-${DATE}-${GITHUB_RUN_ID}"
+          git config user.name "glassesresearch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add research/news-candidates
+          git commit -m "Collect ecosystem news candidates for ${DATE}"
+          git push origin "$BRANCH"
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "Daily ecosystem news candidates — ${DATE}" \
+            --body "Automated intake only. Review candidates for materiality and evidence, then promote verified developments into the appropriate model, lineage, timeline, comparison, community/development, glossary, FAQ, or news pages. Do not merge raw candidates as canonical research without review."
+
+      - name: No new candidates
+        if: steps.changes.outputs.changed == 'false'
+        run: echo "No new review candidates; no PR opened."
