@@ -1,8 +1,6 @@
 # Community & Development
 
-GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-first directory of real communities, developer groups, forums, repositories, reverse-engineering discussions, SDKs, and project spaces across manufacturers and platforms.
-
-The goal is not to reproduce vendor marketing. Useful independent communities — Reddit, GitHub, XDA, Discord, forums, open-source projects, and developer groups — belong beside official manufacturer resources.
+GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-first directory of communities, developer groups, forums, repositories, reverse-engineering discussions, SDKs, and project spaces across manufacturers and platforms.
 
 ## Cross-vendor and independent communities
 
@@ -14,11 +12,7 @@ The goal is not to reproduce vendor marketing. Useful independent communities �
 
 ## XDA and independent technical troubleshooting
 
-XDA is useful where glasses interact with Android phones, USB-C DisplayPort, audio routing, companion applications, ADB, firmware, and device-specific workarounds. These are community reports, not manufacturer documentation.
-
-- [XDA: Rokid Max / Android USB-C audio-routing troubleshooting](https://xdaforums.com/t/two-issues-with-apps-after-software-updates-in-march-2024.4672628/) — concrete community troubleshooting involving Rokid Max AR glasses and Android USB-C DisplayPort audio behavior.
-
-Add XDA material here when there is a concrete glasses-specific thread or development result. Do not add generic XDA search links.
+- [XDA: Rokid Max / Android USB-C audio-routing troubleshooting](https://xdaforums.com/t/two-issues-with-apps-after-software-updates-in-march-2024.4672628/) — community troubleshooting involving Rokid Max AR glasses and Android USB-C DisplayPort audio behavior.
 
 ## XREAL
 
@@ -73,24 +67,8 @@ Add XDA material here when there is a concrete glasses-specific thread or develo
 
 ## W610 / HeyCyan-compatible ecosystem
 
-The W610 is one device family within GlassesResearch, not the center of the project.
-
 - [HeyCyanSmartGlassesSDK — GitHub](https://github.com/ebowwa/HeyCyanSmartGlassesSDK) — community SDK and BLE implementation for HeyCyan-compatible glasses.
 - [CyanBridge / Alternative HeyCyan App and SDK — GitHub](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK) — alternative Android companion stack.
 - [CyanBridge releases](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases) — release artifacts and notes.
 - [CyanBridge v2.0.0 discussion — r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/comments/1sg1fyr/alternative_heycyan_app_massive_release_v200/) — community discussion of the alternative stack.
-- [W610 Community Resources](../models/W610/COMMUNITY_MAP.md) — model-specific appendix.
-
-## What belongs here
-
-Community and development coverage is **not limited to manufacturers** and is **not limited to models we own or have tested**. For every model family in [The List](../models/THE_LIST.md), actively look for:
-
-- Reddit communities and model-specific technical threads;
-- GitHub organizations, SDKs, reverse-engineering repositories, tools, firmware projects, and applications;
-- Discord servers and developer groups;
-- XDA threads involving Android integration, firmware, ADB, USB-C, companion apps, or reproducible workarounds;
-- manufacturer developer forums and SDK documentation;
-- independent owner forums and support communities;
-- research/open-hardware groups whose work applies across multiple glasses.
-
-**Rule:** add the actual resource, not a sentence telling visitors where they might search. If a concrete link cannot be found, do not create a placeholder.
+- [W610 Community Resources](../models/W610/COMMUNITY_MAP.md) — model-specific resources.
