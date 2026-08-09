@@ -1,6 +1,6 @@
 # Model Research Chapters
 
-[`The List`](THE_LIST.md) is the canonical index of 119 purchasable smart-glasses models and generations. These chapters provide deeper source-backed research for selected models and families.
+[`The List`](THE_LIST.md) is the canonical index of 120 purchasable smart-glasses models and generations. These chapters provide deeper source-backed research for selected models and families.
 
 ## Current research chapters
 
@@ -20,9 +20,11 @@
 | [RayNeo X3 Pro](RayNeoX3Pro/README.md) | GLS-0066 | Full-color MicroLED, Snapdragon AR1, cameras, AIOS, sensors, connectivity, Gemini and developer access. |
 | [Snap Spectacles 5](SnapSpectacles5/README.md) | GLS-0068 | Spectacles development platform, device APIs, compatibility matrix and public sample code. |
 | [XREAL One](XREALOne/README.md) | GLS-0074 | Micro-OLED display, wired host architecture, X1 compute, audio, spatial modes, SDK and firmware guidance. |
+| [Anko Camera Glasses](AnkoCameraGlasses/README.md) | GLS-0120 | Kmart Australia retail availability, HeyCyan software relationship, capabilities supported by reporting, and the boundary between software-platform evidence and unproven hardware equivalence. |
 
-## Shared research
+## Cross-model research
 
+- [Retail Rebrands & OEM Ecosystems](RETAIL_REBRANDS.md)
 - [Compare devices](../docs/COMPARISON_ENGINE.md)
 - [Developer resources](../hacking/README.md)
 - [Community & Development](../resources/COMMUNITY_AND_DEVELOPMENT.md)
