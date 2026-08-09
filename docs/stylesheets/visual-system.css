@@ -1,0 +1,274 @@
+/* GlassesResearch visual system: 50% quiet editorial, 50% calm future-tech.
+   Presentation only: no information architecture changes. */
+
+:root {
+  --gr-bg: #f6f8f7;
+  --gr-surface: rgba(255, 255, 255, 0.86);
+  --gr-surface-strong: #ffffff;
+  --gr-ink: #111817;
+  --gr-muted: #66706d;
+  --gr-line: rgba(17, 24, 23, 0.12);
+  --gr-line-strong: rgba(17, 24, 23, 0.2);
+  --gr-accent: #2f7d72;
+  --gr-accent-soft: rgba(47, 125, 114, 0.11);
+  --gr-glow: rgba(76, 168, 154, 0.16);
+  --gr-radius-sm: 0.55rem;
+  --gr-radius-md: 0.9rem;
+  --gr-radius-lg: 1.25rem;
+  --gr-shadow: 0 18px 50px rgba(24, 42, 38, 0.08);
+  --gr-shadow-soft: 0 8px 28px rgba(24, 42, 38, 0.06);
+  --gr-ease: 180ms ease;
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: var(--gr-bg);
+  --md-default-fg-color: var(--gr-ink);
+  --md-typeset-a-color: var(--gr-accent);
+  --md-accent-fg-color: var(--gr-accent);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at 85% 8%, var(--gr-glow), transparent 24rem),
+    linear-gradient(180deg, #fafcfb 0%, var(--gr-bg) 38rem, var(--gr-bg) 100%);
+  color: var(--gr-ink);
+}
+
+.md-main__inner {
+  margin-top: 1.4rem;
+}
+
+.md-content__inner {
+  max-width: 54rem;
+  padding-bottom: 4rem;
+}
+
+.md-content__inner > h1:first-child {
+  max-width: 14ch;
+  margin: 0 0 1.25rem;
+  font-size: clamp(2.25rem, 5vw, 4.9rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  font-weight: 680;
+}
+
+.md-typeset h2 {
+  margin-top: 2.8rem;
+  margin-bottom: 0.85rem;
+  font-size: clamp(1.45rem, 2.2vw, 2.05rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  font-weight: 650;
+}
+
+.md-typeset h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.55rem;
+  font-size: 1.08rem;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset p,
+.md-typeset li {
+  line-height: 1.72;
+}
+
+.md-typeset p {
+  max-width: 72ch;
+}
+
+.md-typeset blockquote {
+  margin: 1.6rem 0;
+  padding: 0.2rem 0 0.2rem 1.15rem;
+  border-left: 2px solid var(--gr-accent);
+  color: var(--gr-muted);
+  font-size: 1.03rem;
+}
+
+.md-typeset hr {
+  border-bottom: 1px solid var(--gr-line);
+  margin: 2.6rem 0;
+}
+
+.md-typeset table:not([class]) {
+  overflow: hidden;
+  border: 1px solid var(--gr-line);
+  border-radius: var(--gr-radius-md);
+  background: var(--gr-surface);
+  box-shadow: 0 1px 0 rgba(255,255,255,.7) inset;
+}
+
+.md-typeset table:not([class]) th {
+  background: rgba(47, 125, 114, 0.06);
+  font-weight: 650;
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border-color: var(--gr-line);
+}
+
+.md-typeset code {
+  border-radius: 0.35rem;
+}
+
+.md-button,
+button,
+select,
+input[type="text"],
+input[type="search"] {
+  transition: border-color var(--gr-ease), box-shadow var(--gr-ease), background-color var(--gr-ease), transform var(--gr-ease);
+}
+
+.md-button,
+button {
+  border-radius: 999px !important;
+}
+
+.md-button:hover,
+button:hover {
+  transform: translateY(-1px);
+}
+
+input:focus,
+select:focus,
+button:focus-visible,
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--gr-accent-soft);
+}
+
+.md-header {
+  background: rgba(246, 248, 247, 0.78);
+  color: var(--gr-ink);
+  backdrop-filter: blur(16px) saturate(140%);
+  border-bottom: 1px solid var(--gr-line);
+  box-shadow: none;
+}
+
+.md-header__title,
+.md-header__button {
+  color: var(--gr-ink);
+}
+
+.md-tabs {
+  background: rgba(246, 248, 247, 0.84);
+  border-bottom: 1px solid var(--gr-line);
+  box-shadow: none;
+  backdrop-filter: blur(14px);
+}
+
+.md-tabs__link {
+  color: var(--gr-muted);
+  opacity: 1;
+  transition: color var(--gr-ease);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--gr-ink);
+}
+
+.md-search__form {
+  background: rgba(255,255,255,.7) !important;
+  border: 1px solid var(--gr-line) !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+
+.md-search__input {
+  color: var(--gr-ink) !important;
+}
+
+.md-search__input::placeholder {
+  color: var(--gr-muted) !important;
+}
+
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+}
+
+.md-nav__link {
+  transition: color var(--gr-ease), transform var(--gr-ease);
+}
+
+.md-nav__link:hover {
+  color: var(--gr-accent);
+}
+
+.md-footer {
+  background: #edf2f0;
+  border-top: 1px solid var(--gr-line);
+}
+
+.md-footer-meta {
+  background: #e6ece9;
+}
+
+/* Give the homepage's first resource list an editorial landing-page feel without creating cards everywhere. */
+.md-content__inner > h2:first-of-type + ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 1rem 0 2.2rem;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--gr-line-strong);
+}
+
+.md-content__inner > h2:first-of-type + ul > li {
+  margin: 0;
+  padding: 1rem 1rem 1.05rem 0;
+  border-bottom: 1px solid var(--gr-line);
+}
+
+.md-content__inner > h2:first-of-type + ul > li:nth-child(odd) {
+  padding-right: 1.4rem;
+}
+
+.md-content__inner > h2:first-of-type + ul > li:nth-child(even) {
+  padding-left: 1.4rem;
+  border-left: 1px solid var(--gr-line);
+}
+
+/* Small screens: preserve whitespace and clarity, never shrink desktop layouts into place. */
+@media screen and (max-width: 60rem) {
+  .md-main__inner {
+    margin-top: 0.7rem;
+  }
+
+  .md-content__inner {
+    padding-top: 0.4rem;
+    padding-bottom: 3rem;
+  }
+
+  .md-content__inner > h1:first-child {
+    max-width: 11ch;
+    margin-top: 0.2rem;
+    font-size: clamp(2.35rem, 11vw, 4rem);
+  }
+
+  .md-content__inner > h2:first-of-type + ul {
+    grid-template-columns: 1fr;
+  }
+
+  .md-content__inner > h2:first-of-type + ul > li,
+  .md-content__inner > h2:first-of-type + ul > li:nth-child(odd),
+  .md-content__inner > h2:first-of-type + ul > li:nth-child(even) {
+    padding: 0.9rem 0;
+    border-left: 0;
+  }
+
+  .md-typeset table:not([class]) {
+    border-radius: var(--gr-radius-sm);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
