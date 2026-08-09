@@ -30,13 +30,13 @@ jobs:
         id: changes
         shell: bash
         run: |
-          if git diff --quiet -- research/news-candidates; then
+          if [ -z "$(git status --porcelain -- research/news-candidates)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Open review PR when candidates exist
+      - name: Open review PR when new candidates exist
         if: steps.changes.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -44,7 +44,7 @@ jobs:
         run: |
           set -euo pipefail
           DATE="$(date -u +%F)"
-          BRANCH="news-candidates-${DATE}"
+          BRANCH="news-candidates-${DATE}-${GITHUB_RUN_ID}"
           git config user.name "glassesresearch-bot"
           git config user.email "actions@users.noreply.github.com"
           git checkout -b "$BRANCH"
@@ -57,6 +57,6 @@ jobs:
             --title "Daily ecosystem news candidates — ${DATE}" \
             --body "Automated intake only. Review candidates for materiality and evidence, then promote verified developments into the appropriate model, lineage, timeline, comparison, community/development, glossary, FAQ, or news pages. Do not merge raw candidates as canonical research without review."
 
-      - name: No material candidates
+      - name: No new candidates
         if: steps.changes.outputs.changed == 'false'
-        run: echo "No new candidate file changes; no PR opened."
+        run: echo "No new review candidates; no PR opened."
