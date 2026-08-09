@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Collect potentially material smart-glasses ecosystem news into a review queue.
 
-The collector is deliberately conservative: it gathers and ranks candidates but does not
-promote them into canonical model/lineage claims. Promotion remains a reviewed research step.
+The collector gathers and ranks candidates but never promotes them into canonical
+model/lineage claims. Promotion remains a reviewed research step.
 """
 from __future__ import annotations
 
@@ -65,8 +65,8 @@ def parse_feed(blob: bytes, source: str, keywords: list[str]) -> list[dict]:
     for e in entries[:50]:
         if atom:
             ns = "{http://www.w3.org/2005/Atom}"
-            title = clean((e.findtext(ns + "title") or ""))
-            summary = clean((e.findtext(ns + "summary") or e.findtext(ns + "content") or ""))
+            title = clean(e.findtext(ns + "title") or "")
+            summary = clean(e.findtext(ns + "summary") or e.findtext(ns + "content") or "")
             link = ""
             le = e.find(ns + "link")
             if le is not None:
@@ -102,10 +102,24 @@ def manufacturer_candidate(url: str, blob: bytes, keywords: list[str]) -> dict |
     if s == 0:
         return None
     return {
-        "id": item_id(url, title), "title": f"Source page changed/contains material terms: {title}",
+        "id": item_id(url, title), "title": f"Manufacturer/source watch: {title}",
         "url": url, "source": "manufacturer-watch", "published": "", "summary": body[:1000],
         "materiality_score": max(1, s // 2), "keyword_hits": hits[:20], "status": "candidate"
     }
+
+
+def prior_ids() -> set[str]:
+    seen: set[str] = set()
+    if not OUTDIR.exists():
+        return seen
+    for path in OUTDIR.glob("*.json"):
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            seen.update(c.get("id", "") for c in payload.get("candidates", []))
+        except Exception:
+            continue
+    seen.discard("")
+    return seen
 
 
 def main() -> int:
@@ -130,16 +144,19 @@ def main() -> int:
         except Exception as exc:
             errors.append({"url": url, "error": str(exc)[:300]})
 
-    # Deduplicate by normalized URL/title identity and keep the highest materiality score.
     dedup: dict[str, dict] = {}
     for c in candidates:
         key = re.sub(r"[?#].*$", "", c["url"]).rstrip("/").lower() or c["id"]
         if key not in dedup or c["materiality_score"] > dedup[key]["materiality_score"]:
             dedup[key] = c
 
+    seen = prior_ids()
     ranked = sorted(dedup.values(), key=lambda x: (-x["materiality_score"], x["title"].lower()))
-    # Avoid repository churn from low-signal search results.
-    ranked = [x for x in ranked if x["materiality_score"] >= 2][:150]
+    ranked = [x for x in ranked if x["materiality_score"] >= 2 and x["id"] not in seen][:150]
+
+    if not ranked:
+        print(f"No new materiality candidates; {len(errors)} source errors")
+        return 0
 
     today = dt.datetime.now(dt.timezone.utc).date().isoformat()
     OUTDIR.mkdir(parents=True, exist_ok=True)
@@ -150,10 +167,9 @@ def main() -> int:
         "collector_errors": errors,
         "candidates": ranked,
     }
-    json_path = OUTDIR / f"{today}.json"
-    json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (OUTDIR / f"{today}.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    lines = [f"# Daily ecosystem candidates — {today}", "", f"Collected **{len(ranked)}** review candidates.", "",
+    lines = [f"# Daily ecosystem candidates — {today}", "", f"Collected **{len(ranked)}** new review candidates.", "",
              "This file is an intake queue, not a publication. Candidates become public facts only after verification and promotion into canonical research.", ""]
     for c in ranked[:50]:
         hits = ", ".join(c["keyword_hits"][:8]) or "general ecosystem match"
@@ -162,7 +178,7 @@ def main() -> int:
     if errors:
         lines += ["## Collector warnings", ""] + [f"- {e['url']}: {e['error']}" for e in errors]
     (OUTDIR / f"{today}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"Collected {len(ranked)} candidates; {len(errors)} source errors")
+    print(f"Collected {len(ranked)} new candidates; {len(errors)} source errors")
     return 0
 
 
