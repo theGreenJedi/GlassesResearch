@@ -82,16 +82,21 @@ jobs:
           test -s site/docs/CONTRIBUTORS/index.html
           test -s site/docs/PRESERVATION/index.html
           test -s site/resources/COMMUNITY_AND_DEVELOPMENT/index.html
+          test -s site/models/AnkoCameraGlasses/index.html
+          test -s site/models/RETAIL_REBRANDS/index.html
           test -s site/docs/javascripts/comparison-engine.js
           grep -Fq 'TL-0001' site/timeline/events.json
           grep -Fq 'EV-0001' site/evidence/resources.json
-          grep -Fq '"record_count": 119' site/data/devices.json
+          grep -Fq '"record_count": 120' site/data/devices.json
+          grep -Fq 'GLS-0120' site/data/devices.json
           grep -Fq 'industry-timeline-app' site/docs/INDUSTRY_TIMELINE/index.html
           grep -Fq 'comparison-engine-app' site/docs/COMPARISON_ENGINE/index.html
           grep -Fq 'models available for comparison' site/docs/javascripts/comparison-engine.js
           grep -Fq 'https://www.reddit.com/r/SmartGlasses/' site/resources/COMMUNITY_AND_DEVELOPMENT/index.html
           grep -Fq 'https://github.com/Mentra-Community' site/resources/COMMUNITY_AND_DEVELOPMENT/index.html
           grep -Fq 'https://xdaforums.com/' site/resources/COMMUNITY_AND_DEVELOPMENT/index.html
+          grep -Fq 'HeyCyan' site/models/AnkoCameraGlasses/index.html
+          grep -Fq 'Retail Rebrands' site/models/RETAIL_REBRANDS/index.html
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
@@ -129,16 +134,21 @@ jobs:
               && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/data/devices.json -o /tmp/devices.json \
               && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/docs/javascripts/comparison-engine.js -o /tmp/comparison-engine.js \
               && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/resources/COMMUNITY_AND_DEVELOPMENT/ -o /tmp/community.html \
+              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/models/AnkoCameraGlasses/ -o /tmp/anko.html \
+              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/models/RETAIL_REBRANDS/ -o /tmp/rebrands.html \
               && grep -Fq 'Sitemap: https://glassesresearch.org/sitemap.xml' /tmp/robots.txt \
               && grep -Fq 'https://glassesresearch.org/' /tmp/sitemap.xml \
               && grep -Fq 'TL-0001' /tmp/timeline.json \
               && grep -Fq 'record_count' /tmp/comparisons.json \
-              && grep -Fq '"record_count": 119' /tmp/devices.json \
+              && grep -Fq '"record_count": 120' /tmp/devices.json \
+              && grep -Fq 'GLS-0120' /tmp/devices.json \
               && grep -Fq 'models available for comparison' /tmp/comparison-engine.js \
               && grep -Fq 'https://www.reddit.com/r/SmartGlasses/' /tmp/community.html \
               && grep -Fq 'https://github.com/Mentra-Community' /tmp/community.html \
-              && grep -Fq 'https://xdaforums.com/' /tmp/community.html; then
-              echo 'Live site verified: comparison data and ecosystem-wide community links are present.'
+              && grep -Fq 'https://xdaforums.com/' /tmp/community.html \
+              && grep -Fq 'HeyCyan' /tmp/anko.html \
+              && grep -Fq 'Retail Rebrands' /tmp/rebrands.html; then
+              echo 'Live site verified: 120-device catalog, Anko coverage, comparison data, and ecosystem-wide community links are present.'
               exit 0
             fi
             echo "Attempt ${attempt}/5 failed; waiting for Pages/DNS propagation..."
