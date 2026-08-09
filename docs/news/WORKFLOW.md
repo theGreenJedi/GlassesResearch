@@ -3,11 +3,14 @@
 GlassesResearch treats news as an **input to the research institution**, not the final product. The intake system observes broadly across smart glasses and adjacent wearable human-computer interfaces, preserves potentially useful developments, and publishes selectively.
 
 > **Collect broadly. Publish selectively. Preserve everything worth remembering.**
+>
+> **We strive to be complete in collection, but selective in publication.**
 
 ## Cadence
 
 - **Daily:** automated discovery gathers potentially material developments into `research/news-candidates/`.
-- **Periodic survey:** maintainers review what has accumulated in `research/news-reviews/`, change dispositions, and decide what deserves deeper research.
+- **Periodic inbox survey:** maintainers review accumulated candidates through `research/inbox/`.
+- **Durable editorial record:** completed decisions are retained in `research/news-reviews/`.
 - **As needed:** important glasses-related developments are promoted into canonical research.
 - **Periodic synthesis:** public news digests summarize meaningful changes without turning the site into a noisy ticker.
 
@@ -70,18 +73,18 @@ The answer does not need to be yes immediately. Some items are deliberately reta
 
 ## Where surveys happen
 
-Raw intake remains in `research/news-candidates/`. Human editorial surveys live in `research/news-reviews/`.
+Raw intake remains in `research/news-candidates/`. The working survey layer lives in `research/inbox/`. Completed editorial decisions live in `research/news-reviews/`.
 
 For each survey session:
 
 1. Choose a candidate date range (weekly, monthly, or any useful window).
-2. Copy `research/news-reviews/SURVEY_TEMPLATE.md` to a dated survey file.
+2. Copy `research/inbox/INBOX_TEMPLATE.md` to a dated inbox survey file.
 3. Group duplicate coverage and follow-up stories into underlying developments.
 4. Verify promising developments against the strongest available sources.
-5. Assign each development a disposition: publish, watch, archive, superseded, or reject.
+5. Assign each development exactly one disposition: publish, watch, archive, superseded, or reject.
 6. Record why the decision was made and which candidate IDs were considered.
 7. For publish decisions, identify every canonical repository destination that needs an update.
-8. Commit the completed survey as the durable editorial record.
+8. Move the completed decision record into `research/news-reviews/` or reproduce it there as the durable editorial record.
 
 This makes it possible to return months or years later and see not only what was published, but what the institution observed and how it evaluated it at the time.
 
