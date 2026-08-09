@@ -2,6 +2,8 @@
 
 This directory is the maintainer-facing operational control room for GlassesResearch. It is repository infrastructure, not public research content, and is not intended for the website navigation.
 
+> **OPSEC policy:** Document architecture and procedures, not provider-specific identifiers. Assigned nameservers, zone/account IDs, API tokens, recovery codes, private dashboard screenshots, billing data, and account-specific recovery details are intentionally omitted from the public repository.
+
 ## Current architecture
 
 - Public site: https://glassesresearch.org/
@@ -20,7 +22,7 @@ Track these systems as independent layers so failures can be isolated quickly.
 | Layer | Expected state | Where to check | Notes |
 |---|---|---|---|
 | Domain registration | Active | Namecheap | `glassesresearch.org` |
-| Authoritative DNS | Cloudflare active | Cloudflare Overview / DNS | Assigned nameservers: `dane.ns.cloudflare.com`, `elle.ns.cloudflare.com` |
+| Authoritative DNS | Cloudflare active | Cloudflare Overview / DNS | Provider assignment details intentionally omitted |
 | DNSSEC | Off during migration; enable later through Cloudflare if desired | Cloudflare DNS / Namecheap | Do not leave stale registrar-side DS records |
 | Origin hosting | GitHub Pages healthy | GitHub Actions / Pages | Custom domain configured in repository |
 | TLS | Full | Cloudflare SSL/TLS | HTTPS should terminate at Cloudflare and remain encrypted to GitHub Pages |
@@ -81,7 +83,7 @@ If the public site fails:
 3. Check Cloudflare SSL/TLS mode and certificate health.
 4. Check the latest GitHub Pages workflow run.
 5. Check GitHub Pages custom-domain configuration and `CNAME`.
-6. Verify the four GitHub Pages apex A records remain present in Cloudflare.
+6. Verify the expected GitHub Pages apex records remain present in Cloudflare without publishing provider-specific assignment details here.
 7. Confirm no recent DNS, caching, redirect, or SSL change caused the failure.
 8. Use Cloudflare Development Mode only temporarily when diagnosing stale cache behavior.
 
@@ -100,6 +102,20 @@ If search indexing falls:
 3. Check Google Search Console coverage/indexing warnings.
 4. Confirm canonical domain and HTTPS redirects are stable.
 5. Verify recent site builds did not remove or rename major pages without redirects.
+
+## Sensitive operational data
+
+Keep the following outside the public repository:
+
+- provider-assigned nameservers when there is no documentation need to publish them;
+- Cloudflare zone IDs, account IDs, API tokens, and scoped credentials;
+- registrar account identifiers and recovery details;
+- private dashboard screenshots that expose account metadata;
+- billing information;
+- MFA recovery codes or backup credentials;
+- private email addresses or phone numbers used for service recovery.
+
+A local `operations-private/` directory may be used for non-secret maintainer notes and is excluded by `.gitignore`, but credentials and recovery secrets should live in a proper password manager or secrets store rather than plaintext files.
 
 ## Change log discipline
 
