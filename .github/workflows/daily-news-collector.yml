@@ -1,4 +1,4 @@
-name: Daily ecosystem news collector
+name: Daily institutional knowledge intake
 
 on:
   schedule:
@@ -23,10 +23,10 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Collect ecosystem candidates
+      - name: Collect glasses and adjacent HCI candidates
         run: python scripts/collect_daily_news.py
 
-      - name: Detect collector changes
+      - name: Detect intake changes
         id: changes
         shell: bash
         run: |
@@ -36,7 +36,7 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Open review PR when new candidates exist
+      - name: Open research-inbox PR when new candidates exist
         if: steps.changes.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -44,19 +44,19 @@ jobs:
         run: |
           set -euo pipefail
           DATE="$(date -u +%F)"
-          BRANCH="news-candidates-${DATE}-${GITHUB_RUN_ID}"
+          BRANCH="knowledge-intake-${DATE}-${GITHUB_RUN_ID}"
           git config user.name "glassesresearch-bot"
           git config user.email "actions@users.noreply.github.com"
           git checkout -b "$BRANCH"
           git add research/news-candidates
-          git commit -m "Collect ecosystem news candidates for ${DATE}"
+          git commit -m "Collect institutional knowledge intake for ${DATE}"
           git push origin "$BRANCH"
           gh pr create \
             --base main \
             --head "$BRANCH" \
-            --title "Daily ecosystem news candidates — ${DATE}" \
-            --body "Automated intake only. Review candidates for materiality and evidence, then promote verified developments into the appropriate model, lineage, timeline, comparison, community/development, glossary, FAQ, or news pages. Do not merge raw candidates as canonical research without review."
+            --title "Institutional knowledge intake — ${DATE}" \
+            --body "Automated research inbox only. Collect broadly, publish selectively. Core smart-glasses candidates may be promoted only after editorial review. Adjacent HCI candidates are retained as research radar and must not become public site content until a concrete smart-glasses/eyewear connection exists. Review dispositions: collected, watch, archived, published, superseded, rejected."
 
       - name: No new candidates
         if: steps.changes.outputs.changed == 'false'
-        run: echo "No new review candidates; no PR opened."
+        run: echo "No new research-inbox candidates; no PR opened."
