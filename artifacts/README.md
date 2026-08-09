@@ -1,6 +1,6 @@
 # Manuals, SDKs, Firmware & Technical Files
 
-This page points to technical artifacts that have actually been identified. Where redistribution is unclear, GlassesResearch links the canonical source rather than republishing the file.
+Technical artifacts and source records across the smart-glasses ecosystem. Where redistribution is unclear, GlassesResearch links the canonical source rather than republishing the file.
 
 ## W610 / HeyCyan
 
@@ -58,6 +58,4 @@ This page points to technical artifacts that have actually been identified. Wher
 
 ## Provenance records
 
-The machine-readable `artifacts/records/` directory records source URLs, owners, dates, licensing/redistribution status, and hashes for locally preserved bytes. The human-readable [Primary Artifact Preservation Ledger](../resources/PRIMARY_ARTIFACT_PRESERVATION_LEDGER.md) lists the concrete records currently considered important.
-
-An artifact that has not actually been located is not presented here as content.
+The machine-readable `artifacts/records/` directory records source URLs, owners, dates, licensing/redistribution status, and hashes for locally preserved bytes. The [Primary Artifact Preservation Ledger](../resources/PRIMARY_ARTIFACT_PRESERVATION_LEDGER.md) lists important preserved records.

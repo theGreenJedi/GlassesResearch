@@ -1,6 +1,6 @@
 # Model Research Chapters
 
-[`The List`](THE_LIST.md) is the canonical index of 119 purchasable smart-glasses models and generations. These chapters provide deeper source-backed research where enough concrete information exists to be useful.
+[`The List`](THE_LIST.md) is the canonical index of 119 purchasable smart-glasses models and generations. These chapters provide deeper source-backed research for selected models and families.
 
 ## Current research chapters
 
@@ -20,8 +20,7 @@
 
 - [Compare devices](../docs/COMPARISON_ENGINE.md)
 - [Developer resources](../hacking/README.md)
+- [Community & Development](../resources/COMMUNITY_AND_DEVELOPMENT.md)
 - [Research library](../evidence/README.md)
 - [Technical artifacts](../resources/PRIMARY_ARTIFACT_PRESERVATION_LEDGER.md)
 - [Industry timeline](../docs/INDUSTRY_TIMELINE.md)
-
-A chapter is created only when it contains actual information and sources. We do not publish empty model templates.

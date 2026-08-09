@@ -29,6 +29,16 @@ COPY_FILES = (
     "WHY.md",
 )
 
+# Repository-maintenance documents remain in GitHub but are not part of the
+# public research site. Public pages should present research rather than
+# narrating internal planning, workflow, SEO, or editorial housekeeping.
+PUBLIC_SITE_EXCLUDES = (
+    "docs/RESEARCH_AGENDA.md",
+    "docs/ROADMAP_V1.md",
+    "docs/SEO_DISCOVERABILITY.md",
+    "docs/news/WORKFLOW.md",
+)
+
 
 def main() -> None:
     if DEST.exists():
@@ -54,6 +64,11 @@ def main() -> None:
         if dirname == "artifacts":
             ignore = shutil.ignore_patterns("__pycache__", "*.pyc", "files")
         shutil.copytree(source, DEST / dirname, ignore=ignore)
+
+    for relpath in PUBLIC_SITE_EXCLUDES:
+        target = DEST / relpath
+        if target.exists():
+            target.unlink()
 
     cname = ROOT / "CNAME"
     if cname.exists():
