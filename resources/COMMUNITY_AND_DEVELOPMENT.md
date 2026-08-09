@@ -24,7 +24,8 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 ## Brilliant Labs — Frame, Halo, Monocle
 
 - [Brilliant Labs GitHub](https://github.com/brilliantlabsAR) — official open-source organization containing firmware, applications, libraries, examples, and development projects.
-- [Brilliant Labs Discord](https://discord.gg/brilliantlabs) — developer/support community referenced by Brilliant's documentation.
+- [Brilliant Labs Discord](https://discord.gg/brilliantlabs) — general Brilliant Labs community and support server.
+- [Brilliant Labs Developer Discord](https://discord.gg/7w3DFxek4p) — developer-focused community linked directly from Brilliant Labs' official GitHub for project help and seeing what other builders are creating.
 - [Brilliant Documentation](https://docs.brilliant.xyz/) — hardware, SDK, Bluetooth, firmware, and development documentation.
 - [Brilliant Community Projects](https://docs.brilliant.xyz/community/) — community-created applications, libraries, examples, and tools.
 
