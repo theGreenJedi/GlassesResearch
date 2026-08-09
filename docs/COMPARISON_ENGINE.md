@@ -26,4 +26,12 @@ Add promising models to the comparison table or choose them directly. Compare **
 
 The URL records the selected devices, so a comparison can be shared directly. The print control produces a cleaner printable view.
 
+## Report cards
+
+GlassesResearch also uses a ten-dimension [Report Card](REPORT_CARD.md) for evaluated products: **Hardware, Wearability, Visual AI, Software, Display / HUD, Openness, Owner Control, Cloud Independence, Hackability, and Value**.
+
+The report card is deliberately multidimensional rather than a single opaque score. A device can excel at hardware while scoring poorly for owner control, or be highly hackable while lacking a HUD. If a dimension genuinely does not apply — for example, a product designed without a display — it receives **N/A**, not a failing grade, and N/A is excluded from any aggregate calculation.
+
+Product grades will appear only when enough information exists to assign them responsibly. Missing information is not treated as failure and scores will not be invented merely to fill a table.
+
 The comparison uses consistent fields and links supporting sources where available. Conflicting credible sources remain visible when relevant. See [Research Standards](RESEARCH_STANDARDS.md).
