@@ -6,9 +6,9 @@ Independent, evidence-based research into smart glasses, AI glasses, and user-co
 
 ## Find what you need
 
-- [**Start by what you need**](docs/START_BY_NEED.md) — buyer, developer, researcher, journalist, manufacturer, or contributor.
+- [**Find & compare smart glasses**](docs/COMPARISON_ENGINE.md) — start with your constraints, rank close matches, then compare two to four devices side by side.
 - [**Browse smart-glasses models**](models/THE_LIST.md) — 119 models and generations, past and present.
-- [**Compare devices**](docs/COMPARISON_ENGINE.md) — interactive side-by-side research using consistent fields and sources.
+- [**Start by what you need**](docs/START_BY_NEED.md) — buyer, developer, researcher, journalist, manufacturer, or contributor.
 - [**Explore the industry timeline**](docs/INDUSTRY_TIMELINE.md) — major products, technologies, companies, and milestones over time.
 - [**Community**](resources/COMMUNITY_AND_DEVELOPMENT.md) — Reddit, Discord, GitHub, XDA, developer forums, open-source projects, and cross-vendor communities.
 - [**Developer resources**](hacking/README.md) — firmware, BLE, SDKs, APIs, repair, reverse engineering, and open-development research.
@@ -19,6 +19,10 @@ Use the **Search GlassesResearch…** box above to search the site for a model, 
 
 ## Core resources
 
+### [Find & Compare Smart Glasses](docs/COMPARISON_ENGINE.md)
+
+Search across the model catalog using practical constraints, see near-matches when no device satisfies everything, and compare two to four candidates using consistent hardware and software fields.
+
 ### [The List](models/THE_LIST.md)
 
 A searchable index of smart-glasses models and generations across manufacturers and years.
@@ -26,10 +30,6 @@ A searchable index of smart-glasses models and generations across manufacturers 
 ### [Smart-Glasses Industry Timeline](docs/INDUSTRY_TIMELINE.md)
 
 A sourced history of major releases, technology shifts, company changes, open-source milestones, and announced future events.
-
-### [Comparison Engine](docs/COMPARISON_ENGINE.md)
-
-Side-by-side comparisons across the canonical model database, with source-backed fields where research is available.
 
 ### [Community & Development](resources/COMMUNITY_AND_DEVELOPMENT.md)
 
