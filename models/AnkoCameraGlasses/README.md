@@ -4,6 +4,7 @@
 **Brand / retailer:** Anko / Kmart Australia  
 **First documented retail availability:** 2026  
 **Category:** camera/audio smart glasses  
+**Technology lineage:** [HeyCyan](../../lineages/HEYCYAN.md)  
 **Software ecosystem:** HeyCyan
 
 ## What is established
@@ -26,6 +27,8 @@ The Anko product demonstrates how smart-glasses platforms can appear under mass-
 
 ## Related GlassesResearch pages
 
+- [HeyCyan lineage](../../lineages/HEYCYAN.md)
+- [Technology Lineages](../../lineages/README.md)
 - [Retail Rebrands & OEM Ecosystems](../RETAIL_REBRANDS.md)
 - [Community & Development](../../resources/COMMUNITY_AND_DEVELOPMENT.md)
 - [W610 / HeyCyan research](../W610/README.md)
