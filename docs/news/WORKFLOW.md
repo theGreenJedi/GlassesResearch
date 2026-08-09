@@ -8,11 +8,13 @@ GlassesResearch treats news as an **input to the research institution**, not the
 
 ## Cadence
 
-- **Daily:** automated discovery gathers potentially material developments into `research/news-candidates/`.
+- **Daily at 12:01 AM Eastern (America/New_York):** automated discovery gathers potentially material developments into `research/news-candidates/`. The workflow handles both EST and EDT automatically.
 - **Periodic inbox survey:** maintainers review accumulated candidates through `research/inbox/`.
 - **Durable editorial record:** completed decisions are retained in `research/news-reviews/`.
 - **As needed:** important glasses-related developments are promoted into canonical research.
 - **Periodic synthesis:** public news digests summarize meaningful changes without turning the site into a noisy ticker.
+
+**Daily research intake occurs at 12:01 AM Eastern. Collection is automatic; review and publication remain deliberate human editorial processes.** GitHub Actions schedules in UTC, so the workflow carries both UTC equivalents of 12:01 AM Eastern and activates only the one matching the current `America/New_York` offset. Manual workflow dispatch remains available for testing or exceptional runs.
 
 The candidate store is repository-side intake and is not itself a public factual record.
 
