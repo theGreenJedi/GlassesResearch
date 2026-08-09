@@ -2,7 +2,10 @@ name: Daily institutional knowledge intake
 
 on:
   schedule:
-    - cron: "17 10 * * *"
+    # GitHub Actions cron is UTC. Run both possible UTC equivalents of
+    # 12:01 AM America/New_York, then gate on the current Eastern offset.
+    - cron: "1 4 * * *"  # 12:01 AM EDT
+    - cron: "1 5 * * *"  # 12:01 AM EST
   workflow_dispatch:
 
 permissions:
@@ -13,20 +16,50 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
+      - name: Enforce 12:01 AM Eastern cadence
+        id: cadence
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Manual run requested."
+            exit 0
+          fi
+
+          OFFSET="$(TZ=America/New_York date +%z)"
+          SCHEDULE="${{ github.event.schedule }}"
+
+          if [ "$SCHEDULE" = "1 4 * * *" ] && [ "$OFFSET" = "-0400" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Running 12:01 AM Eastern intake on EDT schedule."
+          elif [ "$SCHEDULE" = "1 5 * * *" ] && [ "$OFFSET" = "-0500" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Running 12:01 AM Eastern intake on EST schedule."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping inactive DST counterpart schedule."
+          fi
+
       - name: Check out repository
+        if: steps.cadence.outputs.run == 'true'
         uses: actions/checkout@v4
         with:
           ref: main
 
       - name: Set up Python
+        if: steps.cadence.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
       - name: Collect glasses and adjacent HCI candidates
+        if: steps.cadence.outputs.run == 'true'
         run: python scripts/collect_daily_news.py
 
       - name: Detect intake changes
+        if: steps.cadence.outputs.run == 'true'
         id: changes
         shell: bash
         run: |
@@ -37,13 +70,14 @@ jobs:
           fi
 
       - name: Open research-inbox PR when new candidates exist
-        if: steps.changes.outputs.changed == 'true'
+        if: steps.cadence.outputs.run == 'true' && steps.changes.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
+          TZ: America/New_York
         shell: bash
         run: |
           set -euo pipefail
-          DATE="$(date -u +%F)"
+          DATE="$(date +%F)"
           BRANCH="knowledge-intake-${DATE}-${GITHUB_RUN_ID}"
           git config user.name "glassesresearch-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -58,5 +92,9 @@ jobs:
             --body "Automated research inbox only. Collect broadly, publish selectively. Core smart-glasses candidates may be promoted only after editorial review. Adjacent HCI candidates are retained as research radar and must not become public site content until a concrete smart-glasses/eyewear connection exists. Review dispositions: collected, watch, archived, published, superseded, rejected."
 
       - name: No new candidates
-        if: steps.changes.outputs.changed == 'false'
+        if: steps.cadence.outputs.run == 'true' && steps.changes.outputs.changed == 'false'
         run: echo "No new research-inbox candidates; no PR opened."
+
+      - name: Inactive DST counterpart
+        if: steps.cadence.outputs.run == 'false'
+        run: echo "This UTC schedule is inactive for the current Eastern offset; no collection performed."
