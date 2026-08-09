@@ -65,10 +65,12 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 - [Meta Community: Ray-Ban SDK discussion](https://communityforums.atmeta.com/discussions/dev-general/suggestion-for-developing-an-sdk-for-meta-ray-ban-glasses/1196341) — developer discussion documenting demand for Ray-Ban access and Meta responses.
 - [r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/) — independent cross-vendor discussion including extensive Meta/Ray-Ban ownership, privacy, buying, and comparison threads.
 
-## W610 / HeyCyan-compatible ecosystem
+## HeyCyan-compatible and retail-rebrand ecosystem
 
 - [HeyCyanSmartGlassesSDK — GitHub](https://github.com/ebowwa/HeyCyanSmartGlassesSDK) — community SDK and BLE implementation for HeyCyan-compatible glasses.
 - [CyanBridge / Alternative HeyCyan App and SDK — GitHub](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK) — alternative Android companion stack.
 - [CyanBridge releases](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases) — release artifacts and notes.
 - [CyanBridge v2.0.0 discussion — r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/comments/1sg1fyr/alternative_heycyan_app_massive_release_v200/) — community discussion of the alternative stack.
-- [W610 Community Resources](../models/W610/COMMUNITY_MAP.md) — model-specific resources.
+- [Anko Camera Glasses](../models/AnkoCameraGlasses/README.md) — Kmart Australia retail-branded HeyCyan product documented in 2026.
+- [Retail Rebrands & OEM Ecosystems](../models/RETAIL_REBRANDS.md) — cross-brand research connecting retail names to underlying software, OEM, firmware and hardware ecosystems where evidence permits.
+- [W610 Community Resources](../models/W610/COMMUNITY_MAP.md) — model-specific resources for one HeyCyan-compatible branch of the ecosystem.
