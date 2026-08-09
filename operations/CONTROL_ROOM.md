@@ -15,6 +15,16 @@ This directory is the maintainer-facing operational control room for GlassesRese
 - Privacy analytics: Cloudflare Web Analytics / RUM
 - Automated research intake: daily ecosystem news collector
 
+## Research inbox
+
+The daily collector writes raw intake to `research/news-candidates/`. Periodic editorial surveys are performed in `research/news-reviews/` using `SURVEY_TEMPLATE.md`.
+
+Maintainer path:
+
+**Control Room → Research Inbox (`research/news-candidates/`) → Survey (`research/news-reviews/`) → Promote selected glasses-relevant findings into canonical research.**
+
+The collector is deliberately broader than the public site. Adjacent wearable-HCI developments may be retained for future reference, but for now only concrete smart-glasses / AI-eyeglasses / eyewear developments are eligible for public promotion.
+
 ## Service health
 
 Track these systems as independent layers so failures can be isolated quickly.
@@ -30,6 +40,7 @@ Track these systems as independent layers so failures can be isolated quickly.
 | Search indexing | Verified | Google Search Console | Sitemap and robots.txt should remain reachable |
 | Web analytics | Enabled globally | Cloudflare Web Analytics | Privacy-first RUM enabled globally |
 | Daily news collector | Scheduled and healthy | GitHub Actions | Raw candidates are review-only, never canonical automatically |
+| Research surveys | Periodic | `research/news-reviews/` | Record dispositions and canonical follow-ups |
 
 ## Operational metrics
 
@@ -64,6 +75,8 @@ Record snapshots periodically rather than turning the public site into an intern
 - Manuals / firmware / technical artifacts preserved
 - Timeline events
 - Open research candidates
+- Last research-inbox survey date
+- Watch/archive/publish dispositions awaiting follow-up
 
 ### Automation
 
