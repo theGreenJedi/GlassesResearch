@@ -64,6 +64,17 @@ jobs:
       - name: Build site
         run: mkdocs build --strict
 
+      - name: Verify built-site internal links and fragments
+        run: python scripts/verify_built_site_links.py
+
+      - name: Verify built JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(find site -type f -name '*.js' -print0)
+
       - name: Verify search discoverability signals
         run: python scripts/verify_discoverability.py
 
