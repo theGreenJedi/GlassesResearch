@@ -41,7 +41,7 @@ Every preservation record should capture:
 
 ## Priority queue
 
-Highest priority goes to unique information that is both technically valuable and likely to disappear, including:
+Especially valuable preservation targets are sources that contain unique technical information and are likely to disappear, including:
 
 - discontinued-device support pages;
 - firmware and companion-app releases;
