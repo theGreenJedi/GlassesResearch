@@ -93,7 +93,15 @@ Bring evidence. Bring research. Bring law. Bring technical solutions. Bring coun
 
 If a challenge changes our understanding, we want the record of that change preserved rather than silently rewriting the question until it appears we knew the answer all along.
 
-[Challenge this argument or contribute evidence.](../RESEARCH_CHALLENGES.md)
+## Join the conversation
+
+This page now has a dedicated public response thread. You can post an argument, challenge the opening proposition, add evidence, propose a technical solution, or respond to someone else's point.
+
+[**Respond to this discussion →**](https://github.com/theGreenJedi/GlassesResearch/issues/79)
+
+The thread is intentionally open-ended. Strong arguments and evidence may be summarized back into this page while preserving the original proposition and the evolution of the discussion.
+
+You can also [challenge the research or submit evidence](../RESEARCH_CHALLENGES.md).
 
 ---
 
