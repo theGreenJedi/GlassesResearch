@@ -11,6 +11,7 @@ Independent, evidence-based research into smart glasses, AI glasses, and user-co
 - [**Start by what you need**](docs/START_BY_NEED.md) — buyer, developer, researcher, journalist, manufacturer, or contributor.
 - [**Explore the industry timeline**](docs/INDUSTRY_TIMELINE.md) — major products, technologies, companies, and milestones over time.
 - [**Research & News**](docs/RESEARCH_NEWS.md) — dated developments that materially affect smart-glasses research, development, ownership, privacy, or interoperability.
+- [**Discussion: Who Owns the Record?**](docs/discussions/WHO_OWNS_THE_RECORD.md) — smart glasses, surveillance, privacy, accountability, and the question of who gains power when individuals can keep their own record.
 - [**Community**](resources/COMMUNITY_AND_DEVELOPMENT.md) — Reddit, Discord, GitHub, XDA, developer forums, open-source projects, and cross-vendor communities.
 - [**Developer resources**](hacking/README.md) — firmware, BLE, SDKs, APIs, repair, reverse engineering, local AI agents, and open-development research.
 - [**Buyer guide**](buyers/BUYER_AND_OPENNESS_GUIDE.md) — ownership, privacy, offline use, repairability, prescription options, and vendor lock-in.
@@ -35,6 +36,10 @@ A sourced history of major releases, technology shifts, company changes, open-so
 ### [Research & News](docs/RESEARCH_NEWS.md)
 
 Dated developments selected for their durable relevance to smart-glasses technology, ownership, privacy, interoperability, and the broader wearable-computing ecosystem.
+
+### [Discussion: Who Owns the Record?](docs/discussions/WHO_OWNS_THE_RECORD.md)
+
+An open argument about smart glasses, surveillance, privacy, individual evidence, bystander rights, local ownership, and whether wearable recording concentrates power or redistributes it. The opening proposition is deliberately challengeable: bring evidence and convince us.
 
 ### [Community & Development](resources/COMMUNITY_AND_DEVELOPMENT.md)
 
