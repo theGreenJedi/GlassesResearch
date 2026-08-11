@@ -10,8 +10,9 @@ Independent, evidence-based research into smart glasses, AI glasses, and user-co
 - [**Browse smart-glasses models**](models/THE_LIST.md) — 119 models and generations, past and present.
 - [**Start by what you need**](docs/START_BY_NEED.md) — buyer, developer, researcher, journalist, manufacturer, or contributor.
 - [**Explore the industry timeline**](docs/INDUSTRY_TIMELINE.md) — major products, technologies, companies, and milestones over time.
+- [**Research & News**](docs/RESEARCH_NEWS.md) — dated developments that materially affect smart-glasses research, development, ownership, privacy, or interoperability.
 - [**Community**](resources/COMMUNITY_AND_DEVELOPMENT.md) — Reddit, Discord, GitHub, XDA, developer forums, open-source projects, and cross-vendor communities.
-- [**Developer resources**](hacking/README.md) — firmware, BLE, SDKs, APIs, repair, reverse engineering, and open-development research.
+- [**Developer resources**](hacking/README.md) — firmware, BLE, SDKs, APIs, repair, reverse engineering, local AI agents, and open-development research.
 - [**Buyer guide**](buyers/BUYER_AND_OPENNESS_GUIDE.md) — ownership, privacy, offline use, repairability, prescription options, and vendor lock-in.
 - [**Questions & Answers**](docs/faq/README.md) — buying, battery, displays, privacy, accessibility, AI, cameras, and development.
 
@@ -31,13 +32,17 @@ A searchable index of smart-glasses models and generations across manufacturers 
 
 A sourced history of major releases, technology shifts, company changes, open-source milestones, and announced future events.
 
+### [Research & News](docs/RESEARCH_NEWS.md)
+
+Dated developments selected for their durable relevance to smart-glasses technology, ownership, privacy, interoperability, and the broader wearable-computing ecosystem.
+
 ### [Community & Development](resources/COMMUNITY_AND_DEVELOPMENT.md)
 
 Direct links to smart-glasses communities, developer groups, repositories, forums, SDK ecosystems, reverse-engineering work, and independent technical discussions.
 
 ### [Developer Resources](hacking/README.md)
 
-Firmware, SDKs, BLE, APIs, recovery, repair, reverse engineering, alternative apps, and vendor-independent development resources.
+Firmware, SDKs, BLE, APIs, recovery, repair, reverse engineering, alternative apps, local AI agent architectures, and vendor-independent development resources.
 
 ### [Research Library](evidence/README.md)
 
