@@ -4,6 +4,7 @@ Concrete resources for developing, repairing, understanding, and extending smart
 
 ## Start with the resources
 
+- [Local AI Agents and Smart Glasses](LOCAL_AI_AGENTS.md) — owner-controlled architectures that separate the wearable interface from local perception, reasoning, memory, and tool use.
 - [Open Development Resource Ledger](OPEN_HACKING_RESOURCE_LEDGER.md) — direct SDKs, source repositories, developer documentation, protocol resources, samples, and open-hardware projects across W610/HeyCyan, Brilliant Labs, MentraOS, Vuzix, Snap, XREAL, RayNeo, Rokid, and Android XR.
 - [Community & Development](../resources/COMMUNITY_AND_DEVELOPMENT.md) — Reddit, Discord, GitHub, XDA, developer forums, and independent technical communities.
 - [Research Library](../evidence/README.md) — machine-readable evidence records with stable identifiers.
