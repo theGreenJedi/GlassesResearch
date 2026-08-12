@@ -7,7 +7,7 @@ Independent, evidence-based research into smart glasses, AI glasses, and user-co
 ## Find what you need
 
 - [**Find & compare smart glasses**](docs/COMPARISON_ENGINE.md) — start with your constraints, rank close matches, then compare two to four devices side by side.
-- [**Browse smart-glasses models**](models/THE_LIST.md) — 119 models and generations, past and present.
+- [**Browse smart-glasses models**](models/THE_LIST.md) — 121 models and generations, past and present.
 - [**Start by what you need**](docs/START_BY_NEED.md) — buyer, developer, researcher, journalist, manufacturer, or contributor.
 - [**Explore the industry timeline**](docs/INDUSTRY_TIMELINE.md) — major products, technologies, companies, and milestones over time.
 - [**Research & News**](docs/RESEARCH_NEWS.md) — dated developments that materially affect smart-glasses research, development, ownership, privacy, or interoperability.
@@ -49,34 +49,15 @@ Direct links to smart-glasses communities, developer groups, repositories, forum
 
 Firmware, SDKs, BLE, APIs, recovery, repair, reverse engineering, alternative apps, local AI agent architectures, and vendor-independent development resources.
 
-### [Research Library](evidence/README.md)
+## Research posture
 
-Manufacturer documentation, regulatory filings, repositories, community research, manuals, technical sources, and other evidence used across the site.
+GlassesResearch separates hands-on observations, primary-source claims, secondary reporting, and unresolved hypotheses. Unknowns stay unknown until evidence supports them. Corrections are welcome and preserved in repository history.
 
-### [Manuals, Firmware & Technical Files](artifacts/README.md)
+## Project links
 
-Technical artifacts and source records for firmware, SDKs, applications, manuals, regulatory documents, tools, and related material.
-
-### [Questions & Answers](docs/faq/README.md)
-
-Plain-language answers covering common smart-glasses questions.
-
-## About the research
-
-GlassesResearch is independent and does not rank products for sponsorship or affiliate sales. Sources are linked wherever practical, conflicting evidence is retained when relevant, and corrections are welcome.
-
-Read the full [Research Standards](docs/RESEARCH_STANDARDS.md).
-
-## Found an error?
-
-[**Challenge our research or submit a correction.**](docs/RESEARCH_CHALLENGES.md)
-
-## Contribute
-
-Own a device? Found a manual? Tested a feature? Preserved firmware or an APK? Captured BLE traffic? Repaired a frame?
-
-[**Contribute what you know.**](docs/CONTRIBUTE.md) Contributors who want public credit can also be recognized in the [Hall of Contributors](docs/CONTRIBUTORS.md).
-
-## Safety and legal note
-
-Research only hardware and software you are authorized to inspect. Do not publish credentials, personal data, proprietary secrets, unlawfully distributed files, or material whose distribution is prohibited.
+- [About GlassesResearch](docs/ABOUT.md)
+- [Research Standards](docs/RESEARCH_STANDARDS.md)
+- [Challenge Our Research](docs/RESEARCH_CHALLENGES.md)
+- [Contribute](docs/CONTRIBUTE.md)
+- [Privacy Policy](docs/PRIVACY.md)
+- [GitHub repository](https://github.com/theGreenJedi/GlassesResearch)
