@@ -99,18 +99,7 @@ jobs:
           test -s site/docs/javascripts/comparison-engine.js
           grep -Fq 'TL-0001' site/timeline/events.json
           grep -Fq 'EV-0001' site/evidence/resources.json
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          payload = json.loads(Path('site/data/devices.json').read_text(encoding='utf-8'))
-          records = payload.get('records', [])
-          count = payload.get('record_count')
-          assert isinstance(count, int) and count > 0, f'invalid record_count: {count!r}'
-          assert count == len(records), f'record_count {count} != parsed records {len(records)}'
-          ids = [record.get('id') for record in records]
-          assert len(ids) == len(set(ids)), 'duplicate GLS IDs in built device database'
-          print(f'Built catalog verified dynamically: {count} devices')
-          PY
+          python -c "import json; p=json.load(open('site/data/devices.json', encoding='utf-8')); r=p.get('records', []); c=p.get('record_count'); assert isinstance(c, int) and c > 0; assert c == len(r); ids=[x.get('id') for x in r]; assert len(ids) == len(set(ids)); print(f'Built catalog verified dynamically: {c} devices')"
           grep -Fq 'Google Glass' site/lineages/index.html
           grep -Fq 'Vuzix' site/lineages/index.html
           grep -Fq 'industry-timeline-app' site/docs/INDUSTRY_TIMELINE/index.html
@@ -165,16 +154,7 @@ jobs:
               && grep -Fq 'https://glassesresearch.org/' /tmp/sitemap.xml \
               && grep -Fq 'TL-0001' /tmp/timeline.json \
               && grep -Fq 'record_count' /tmp/comparisons.json \
-              && python - <<'PY'
-          import json
-          from pathlib import Path
-          payload = json.loads(Path('/tmp/devices.json').read_text(encoding='utf-8'))
-          records = payload.get('records', [])
-          count = payload.get('record_count')
-          assert isinstance(count, int) and count > 0, f'invalid live record_count: {count!r}'
-          assert count == len(records), f'live record_count {count} != records {len(records)}'
-          print(f'Live catalog verified dynamically: {count} devices')
-          PY
+              && python -c "import json; p=json.load(open('/tmp/devices.json', encoding='utf-8')); r=p.get('records', []); c=p.get('record_count'); assert isinstance(c, int) and c > 0; assert c == len(r); print(f'Live catalog verified dynamically: {c} devices')" \
               && grep -Fq 'models available for comparison' /tmp/comparison-engine.js \
               && grep -Fq 'https://www.reddit.com/r/SmartGlasses/' /tmp/community.html \
               && grep -Fq 'https://github.com/Mentra-Community' /tmp/community.html \
