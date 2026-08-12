@@ -6,6 +6,10 @@
 
 [**Smart-Glasses Model Profiles**](PROFILES.md) is the human-readable layer: concise evidence-backed explanations of what each device really is, where it shines, and what tradeoffs matter. The target is one useful profile for every canonical model. If we cannot write a defensible paragraph yet, that model is flagged for more research rather than filled with generic prose.
 
+Additional editorial volumes continue the same encyclopedia:
+
+- [AR, Display, and Enterprise Platforms](PROFILES_AR_DISPLAY.md)
+
 ## Current research chapters
 
 | Model / family | ID(s) | What is documented |
@@ -33,6 +37,7 @@
 ## Cross-model research
 
 - [Human-readable model profiles](PROFILES.md)
+- [AR, Display, and Enterprise profiles](PROFILES_AR_DISPLAY.md)
 - [Technology lineages](../lineages/README.md)
 - [Retail Rebrands & OEM Ecosystems](RETAIL_REBRANDS.md)
 - [Compare devices](../docs/COMPARISON_ENGINE.md)
