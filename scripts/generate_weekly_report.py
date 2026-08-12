@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, os, re, sys
+import base64, json, os, re, sys
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from urllib.parse import quote
@@ -57,23 +57,50 @@ def search_console():
     return {'start':start,'end':end,'queries':queries,'pages':pages,'clicks':total.get('clicks',0),'impressions':total.get('impressions',0),'ctr':total.get('ctr',0),'position':total.get('position',0)}
 
 def collector():
-    repo=os.environ.get('GITHUB_REPOSITORY',''); headers={'Authorization':f"Bearer {os.environ.get('GH_TOKEN','')}",'Accept':'application/vnd.github+json'}; prs=[]
-    if repo:
-        r=requests.get(f'https://api.github.com/repos/{repo}/pulls',headers=headers,params={'state':'all','per_page':100,'sort':'updated','direction':'desc'},timeout=30)
-        if r.ok:
-            cutoff=datetime.now(timezone.utc)-timedelta(days=7)
-            for p in r.json():
-                updated=datetime.fromisoformat(p['updated_at'].replace('Z','+00:00')); title=p.get('title','')
-                if updated>=cutoff and ('Institutional knowledge intake' in title or p.get('head',{}).get('ref','').startswith('knowledge-intake-')):
-                    prs.append({'number':p['number'],'title':title,'state':p['state']})
-    files=[]; root='research/news-candidates'
-    if os.path.isdir(root):
-        cutoff=(datetime.now()-timedelta(days=7)).timestamp()
-        for dp,_,names in os.walk(root):
-            for n in names:
-                path=os.path.join(dp,n)
-                if os.path.getmtime(path)>=cutoff: files.append(path)
-    return {'prs':prs,'files':sorted(files)}
+    repo=os.environ.get('GITHUB_REPOSITORY','')
+    headers={'Authorization':f"Bearer {os.environ.get('GH_TOKEN','')}",'Accept':'application/vnd.github+json'}
+    cutoff=datetime.now(timezone.utc)-timedelta(days=7)
+    prs=[]; branches=[]; total_candidates=0
+    scope_counts=defaultdict(int); source_errors=0
+    if not repo:
+        return {'prs':prs,'branches':branches,'candidate_count':0,'scope_counts':{},'source_errors':0}
+
+    r=requests.get(f'https://api.github.com/repos/{repo}/pulls',headers=headers,params={'state':'all','per_page':100,'sort':'updated','direction':'desc'},timeout=30)
+    if r.ok:
+        for p in r.json():
+            updated=datetime.fromisoformat(p['updated_at'].replace('Z','+00:00')); title=p.get('title','')
+            if updated>=cutoff and ('Institutional knowledge intake' in title or p.get('head',{}).get('ref','').startswith('knowledge-intake-')):
+                prs.append({'number':p['number'],'title':title,'state':p['state'],'branch':p.get('head',{}).get('ref','')})
+
+    r=requests.get(f'https://api.github.com/repos/{repo}/branches',headers=headers,params={'per_page':100},timeout=30)
+    if r.ok:
+        for b in r.json():
+            name=b.get('name','')
+            m=re.match(r'^knowledge-intake-(\d{4}-\d{2}-\d{2})-',name)
+            if not m: continue
+            try:
+                intake_date=date.fromisoformat(m.group(1))
+            except ValueError:
+                continue
+            if intake_date < (date.today()-timedelta(days=7)): continue
+            branch={'name':name,'date':m.group(1),'candidate_count':None,'scope_counts':{},'source_errors':None}
+            file_url=f'https://api.github.com/repos/{repo}/contents/research/news-candidates/{m.group(1)}.json'
+            fr=requests.get(file_url,headers=headers,params={'ref':name},timeout=30)
+            if fr.ok:
+                payload=fr.json()
+                try:
+                    data=json.loads(base64.b64decode(payload.get('content','')).decode('utf-8'))
+                    branch['candidate_count']=int(data.get('candidate_count',0))
+                    branch['scope_counts']=data.get('scope_counts',{}) or {}
+                    branch['source_errors']=len(data.get('collector_errors',[]) or [])
+                    total_candidates += branch['candidate_count']
+                    source_errors += branch['source_errors']
+                    for k,v in branch['scope_counts'].items(): scope_counts[k]+=int(v)
+                except Exception:
+                    pass
+            branches.append(branch)
+
+    return {'prs':prs,'branches':branches,'candidate_count':total_candidates,'scope_counts':dict(scope_counts),'source_errors':source_errors}
 
 def main():
     cf=cloudflare(); sc=search_console(); co=collector()
@@ -87,9 +114,16 @@ def main():
     lines += ['','### Search-result pages','']
     if not sc['pages']: lines.append('- No finalized page rows yet.')
     for r in sc['pages'][:15]: lines.append(f'- `{(r.get("keys") or ["(unknown)"])[0]}` — {r.get("clicks",0):g} clicks, {r.get("impressions",0):g} impressions, position {r.get("position",0):.2f}')
-    lines += ['','## 3. Research collector — last 7 days','',f'- Intake PRs touched: **{len(co["prs"])}**',f'- Candidate files created/updated in checkout window: **{len(co["files"])}**','']
+    lines += ['','## 3. Research collector — last 7 days','',f'- Intake PRs touched: **{len(co["prs"])}**',f'- Preserved intake branches: **{len(co["branches"])}**',f'- Candidates collected: **{co["candidate_count"]}**']
+    if co['scope_counts']:
+        lines.append('- Scope mix: ' + ', '.join(f'**{k} {v}**' for k,v in sorted(co['scope_counts'].items())))
+    lines.append(f'- Collector source errors recorded: **{co["source_errors"]}**')
+    lines.append('')
     for p in co['prs'][:20]: lines.append(f'- PR #{p["number"]}: {p["title"]} — {p["state"]}')
-    for f in co['files'][:30]: lines.append(f'- `{f}`')
+    for b in co['branches'][:20]:
+        count='unknown' if b['candidate_count'] is None else b['candidate_count']
+        mix=', '.join(f'{k}={v}' for k,v in sorted(b['scope_counts'].items())) or 'scope mix unavailable'
+        lines.append(f'- `{b["name"]}` — {count} candidates ({mix})')
     lines += ['','## 4. Friday review checklist','','- Investigate surprising or high-position search queries.','- Review collector candidates and promote only source-backed material.','- Note pages gaining impressions but not clicks.','- Check traffic for obvious crawler/scanner inflation before interpreting growth.','- Turn genuine ecosystem gaps into model, lineage, development, timeline, or research work.','']
     open(OUT,'w',encoding='utf-8').write('\n'.join(lines)); print(open(OUT,encoding='utf-8').read())
 
