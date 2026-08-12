@@ -15,7 +15,7 @@ Use the stable `GLS-####` identifier when linking from the [glossary](../glossar
 | State | `current` = manufacturer still offers it; `preorder` = money/reservation accepted but broad delivery is not established; `legacy` = formerly obtainable; `enterprise` = sold primarily by quote/deployment channel; `developer` = access restricted to developers or program members |
 | Type | `camera/audio`, `audio`, `display`, `XR display`, `enterprise monocular`, `accessibility`, or `open/developer` |
 | Evidence | `primary` = maker store, support, manual, release, or maintained product history; `commercial` = documented retail route; `secondary` = reputable contemporaneous reporting used when old primary pages are unavailable |
-| Era | First documented sale or order year, not prototype announcement year; `c.` marks an approximate year pending archival confirmation |
+| Era | First documented sale or order year, not prototype announcement year; `c.` marks an approximate year pending archival confirmation; `≤2026` means the current evidence proves the product was obtainable by this edition but has not yet pinned the earliest sale year |
 
 Status is last checked on the edition date and can vary by country. Frame colors, lens packages, prescription options, storage bundles, and unchanged co-brands are not separate models. A materially named generation or different hardware platform is.
 
@@ -25,7 +25,7 @@ Status is last checked on the edition date and can vary by country. Frame colors
 |---|---|---:|---:|---|---|---|---|
 | GLS-0001 | Meta / Ray-Ban | Ray-Ban Stories | 2021 | legacy | camera/audio | retail | primary; [FAQ](../docs/faq/06-ai-cameras-audio.md); [source](https://about.fb.com/news/2021/09/ray-ban-and-facebook-introduce-ray-ban-stories-first-generation-smart-glasses/) |
 | GLS-0002 | Meta / Ray-Ban | Ray-Ban Meta (Gen 1) | 2023 | legacy | camera/audio | retail | primary; [registry](CATALOG.md); [source](https://www.meta.com/ai-glasses/ray-ban-meta/) |
-| GLS-0003 | Meta / Ray-Ban | Ray-Ban Meta (Gen 2) | 2025 | legacy | camera/audio | retail | primary; [news](../docs/news/RELEASE_TRACKER.md); [source](https://www.meta.com/ai-glasses/) |
+| GLS-0003 | Meta / Ray-Ban | Ray-Ban Meta (Gen 2) | 2025 | current | camera/audio | retail | primary; [news](../docs/news/RELEASE_TRACKER.md); [source](https://www.meta.com/ai-glasses/) |
 | GLS-0004 | Meta / Ray-Ban | Meta Ray-Ban Display | 2025 | current | display + camera/audio | retail | primary; [news](../docs/news/RELEASE_TRACKER.md); [source](https://www.meta.com/ai-glasses/) |
 | GLS-0005 | Meta / Ray-Ban | Ray-Ban Meta Blayzer Optics | 2026 | current | camera/audio | optical retail | primary; [news](../docs/news/RELEASE_TRACKER.md); [source](https://www.meta.com/ai-glasses/) |
 | GLS-0006 | Meta / Ray-Ban | Ray-Ban Meta Scriber Optics | 2026 | current | camera/audio | optical retail | primary; [news](../docs/news/RELEASE_TRACKER.md); [source](https://www.meta.com/ai-glasses/) |
@@ -171,10 +171,10 @@ These rows were admitted after whole-lineage investigation. They use the same ac
 | GLS-0134 | Pivothead | Camera Glasses — first generation | c. 2012 | legacy | camera eyewear | retail | commercial + lineage research; [packet](../docs/report-cards/LINEAGE_PIVOTHEAD.md) |
 | GLS-0135 | Pivothead | SMART / Architect Edition | c. 2015 | legacy | connected camera eyewear | crowdfunding/retail/developer | commercial + lineage research; [packet](../docs/report-cards/LINEAGE_PIVOTHEAD.md) |
 | GLS-0136 | Mutrics | M1 / smart audio eyewear generation | c. 2019 | legacy | audio | retail | commercial + design/distributor evidence; [packet](../docs/report-cards/LINEAGE_MUTRICS.md) |
-| GLS-0137 | Chamelo | Dusk Classic | current | current | electrochromic/audio | retail | primary; [packet](../docs/report-cards/LINEAGE_CHAMELO.md) |
-| GLS-0138 | Chamelo | Music Shield Gen 2 | current | current | electrochromic/audio sport | retail | primary; [packet](../docs/report-cards/LINEAGE_CHAMELO.md) |
-| GLS-0139 | Chamelo | Aura | current | current | electronically color-changing eyewear | retail | primary; [packet](../docs/report-cards/LINEAGE_CHAMELO.md) |
-| GLS-0145 | Envision | Ally Solos | current | current | assistive AI/audio-camera eyewear | retail | primary; [packet](../docs/report-cards/LINEAGE_ENVISION.md) |
+| GLS-0137 | Chamelo | Dusk Classic | ≤2026 | current | electrochromic/audio | retail | primary; [packet](../docs/report-cards/LINEAGE_CHAMELO.md) |
+| GLS-0138 | Chamelo | Music Shield Gen 2 | ≤2026 | current | electrochromic/audio sport | retail | primary; [packet](../docs/report-cards/LINEAGE_CHAMELO.md) |
+| GLS-0139 | Chamelo | Aura | ≤2026 | current | electronically color-changing eyewear | retail | primary; [packet](../docs/report-cards/LINEAGE_CHAMELO.md) |
+| GLS-0145 | Envision | Ally Solos | ≤2026 | current | assistive AI/audio-camera eyewear | retail | primary; [packet](../docs/report-cards/LINEAGE_ENVISION.md) |
 
 ### Standalone AR, HUD, and enterprise eyewear
 
@@ -190,17 +190,17 @@ These rows were admitted after whole-lineage investigation. They use the same ac
 | GLS-0129 | DAQRI | Smart Glasses | 2017 | legacy | enterprise AR | enterprise/store | primary; [packet](../docs/report-cards/LINEAGE_DAQRI_PROFESSIONAL_AR.md) |
 | GLS-0130 | Lenovo | ThinkReality A6 | 2019 | legacy/enterprise | binocular AR | developer/enterprise | primary; [packet](../docs/report-cards/LINEAGE_LENOVO_THINKREALITY_A6.md) |
 | GLS-0131 | ThirdEye | X1 Smart Glasses | c. 2018 | enterprise/legacy unclear | mixed-reality eyewear | enterprise | primary; [packet](../docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md) |
-| GLS-0132 | ThirdEye | X2 MR Glasses | current | current/enterprise | mixed-reality eyewear | enterprise/store | primary; [chapter](ThirdEyeXSeries/README.md); [packet](../docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md) |
-| GLS-0133 | ThirdEye | Alpha1 MR Glasses | current | enterprise | mixed-reality eyewear | enterprise | primary; [chapter](ThirdEyeXSeries/README.md); [packet](../docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md) |
+| GLS-0132 | ThirdEye | X2 MR Glasses | ≤2026 | current/enterprise | mixed-reality eyewear | enterprise/store | primary; [chapter](ThirdEyeXSeries/README.md); [packet](../docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md) |
+| GLS-0133 | ThirdEye | Alpha1 MR Glasses | ≤2026 | enterprise | mixed-reality eyewear | enterprise | primary; [chapter](ThirdEyeXSeries/README.md); [packet](../docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md) |
 
 ### Accessibility and assistive eyewear
 
 | ID | Maker | Model | Era | State | Type | Access | Evidence / links |
 |---|---|---:|---:|---|---|---|---|
-| GLS-0140 | NuEyes | e2+ | current | current | assistive standalone display | retail | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
+| GLS-0140 | NuEyes | e2+ | ≤2026 | current | assistive standalone display | retail | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
 | GLS-0141 | NuEyes | Pro 3 | 2020 | legacy | assistive/enterprise AR | retail/enterprise | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
 | GLS-0142 | NuEyes | Pro 3e | 2021 | legacy/current unclear | tethered assistive display | retail | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
-| GLS-0143 | NuEyes | Pro 4 | current | current | assistive camera/display | retail/enterprise | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
+| GLS-0143 | NuEyes | Pro 4 | ≤2026 | current | assistive camera/display | retail/enterprise | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
 | GLS-0144 | Envision | Envision Glasses | c. 2020 | current/legacy transition | assistive visual-AI eyewear | retail | primary; [packet](../docs/report-cards/LINEAGE_ENVISION.md) |
 
 ## Google Glass is in scope
