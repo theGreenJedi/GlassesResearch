@@ -11,6 +11,7 @@ Additional editorial volumes continue the same encyclopedia:
 - [Foundations and Early Platforms](PROFILES_FOUNDATIONS.md)
 - [Legacy Display and Early Platforms](PROFILES_LEGACY_DISPLAY.md)
 - [AR, Display, and Enterprise Platforms](PROFILES_AR_DISPLAY.md)
+- [Open Camera Platforms](PROFILES_OPEN_CAMERA.md)
 
 ## Current research chapters
 
@@ -42,6 +43,7 @@ Additional editorial volumes continue the same encyclopedia:
 - [Foundations and Early Platforms profiles](PROFILES_FOUNDATIONS.md)
 - [Legacy Display and Early Platforms profiles](PROFILES_LEGACY_DISPLAY.md)
 - [AR, Display, and Enterprise profiles](PROFILES_AR_DISPLAY.md)
+- [Open Camera Platform profiles](PROFILES_OPEN_CAMERA.md)
 - [Technology lineages](../lineages/README.md)
 - [Retail Rebrands & OEM Ecosystems](RETAIL_REBRANDS.md)
 - [Compare devices](../docs/COMPARISON_ENGINE.md)
