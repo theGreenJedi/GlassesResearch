@@ -15,7 +15,11 @@ This is the cross-ecosystem discovery layer. For the canonical purchaser-history
 | Brilliant Labs | Halo | AI glasses | Primary | Developer ecosystem lead; verify model-specific source material | [Brilliant Labs](https://brilliant.xyz/) |
 | Mentra | Mentra Live | Camera/audio AI glasses | Primary + public source repository | MentraOS is published as an open-source glasses OS and SDK | [MentraOS repository](https://github.com/Mentra-Community/MentraOS) |
 | Team Open Smart Glasses / H20 community | Open Source Smart Glasses | Open hardware project | Community/project primary | Mechanical, electrical, and software files published | [Project repository](https://github.com/Mentra-Community/OpenSourceSmartGlasses) |
-| Vuzix | Z100 | Monocular display glasses | Primary | SDK and MentraOS compatibility lead | [Vuzix Z100](https://www.vuzix.com/products/z100-smart-glasses) |
+| Vuzix | [Z100](VuzixZ100/README.md) | Phone-driven monocular display | Primary | Android/iOS development path; Bluetooth peripheral architecture; Mentra compatibility lead | [Vuzix lineage](../lineages/VUZIX.md) |
+| Vuzix | [M400 / M4000](VuzixM400/README.md) | Standalone Android enterprise monocular | Primary | Standard Android APIs, Vuzix SDKs, APK deployment/debug tooling | [Vuzix Developer Resources](https://support.vuzix.com/docs/developer-resources) |
+| Vuzix | [Blade 2](VuzixBlade2/README.md) | Standalone Android monocular display | Primary | SDKs, sample projects, HUD resources and Android Studio tooling | [Blade 2 docs](https://support.vuzix.com/docs/blade-2) |
+| Vuzix | [Shield](VuzixShield/README.md) | Standalone Android smart glasses | Primary | Connectivity SDK, HUD SDK, USB debugging/APK path | [Vuzix Developer Resources](https://support.vuzix.com/docs/developer-resources) |
+| Vuzix | [LX1](VuzixLX1/README.md) | Standalone Android enterprise glasses | Primary | Android development and Vuzix View deployment/debug tooling | [Vuzix Developer Resources](https://support.vuzix.com/docs/developer-resources) |
 | Solos | AirGo family | Audio/camera AI glasses | Primary | Developer and multi-assistant integration lead | [Solos](https://solosglasses.com/) |
 | XREAL | One family | Tethered display/XR glasses | Primary | Developer ecosystem and accessory protocols merit mapping | [XREAL One](https://www.xreal.com/one/) |
 | RayNeo | X3 Pro | Standalone AI/AR glasses | Primary | Android-derived platform and developer investigation lead | [RayNeo](https://www.rayneo.com/) |
