@@ -14,6 +14,7 @@ import argparse
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -43,10 +44,11 @@ def links(value: str) -> list[dict[str, str]]:
 
 
 def slugify_heading(value: str) -> str:
-    """Approximate Python-Markdown/MkDocs heading IDs for our ASCII model headings."""
-    value = value.lower().replace("×", " ")
-    value = re.sub(r"[^a-z0-9]+", "-", value)
-    return value.strip("-")
+    """Mirror Python-Markdown's default TOC slugifier used by MkDocs."""
+    value = unicodedata.normalize("NFKD", value)
+    value = value.encode("ascii", "ignore").decode("ascii")
+    value = re.sub(r"[^\w\s-]", "", value).strip().lower()
+    return re.sub(r"[-\s]+", "-", value)
 
 
 def public_research_paths() -> dict[str, dict[str, str]]:
