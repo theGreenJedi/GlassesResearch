@@ -2,6 +2,8 @@ name: Cloudflare Traffic Breakdown
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '10 6 * * *'
 
 permissions:
   contents: read
@@ -125,12 +127,14 @@ jobs:
           bot_visits = bot_requests = 0
           humanish_visits = humanish_requests = 0
           unclassified_visits = unclassified_requests = 0
+          sampled_visits = 0
           known_bots = []
 
           for row in z.get('userAgents', []):
               ua = row.get('dimensions', {}).get('userAgent') or ''
               req = row.get('count', 0)
               visits = row.get('sum', {}).get('visits', 0)
+              sampled_visits += visits
               if known_bot.search(ua):
                   bot_visits += visits
                   bot_requests += req
@@ -141,6 +145,8 @@ jobs:
               else:
                   unclassified_visits += visits
                   unclassified_requests += req
+
+          outside_sample_visits = max(total_visits - sampled_visits, 0)
 
           scanner_requests = 0
           scanner_paths = []
@@ -158,9 +164,11 @@ jobs:
           print(f'  Visits:   {total_visits}')
 
           print('\nVISIT CLASSIFICATION (heuristic; based on top user-agent groups)')
-          print(f'  Human-like visits:      {humanish_visits}')
-          print(f'  Known crawler visits:   {bot_visits}')
-          print(f'  Unclassified visits:    {unclassified_visits}')
+          print(f'  Human-like visits:        {humanish_visits}')
+          print(f'  Known crawler visits:     {bot_visits}')
+          print(f'  Unclassified in sample:   {unclassified_visits}')
+          print(f'  Outside sampled UA groups:{outside_sample_visits:>5}')
+          print(f'  Reconciled total:         {humanish_visits + bot_visits + unclassified_visits + outside_sample_visits}')
           print('  Note: browser user agents can be spoofed, so "human-like" is not a person count.')
 
           print('\nREQUEST SIGNALS')
