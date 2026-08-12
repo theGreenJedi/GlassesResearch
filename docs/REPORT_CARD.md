@@ -10,6 +10,8 @@ Scores are deliberately conservative and are assigned only where the available e
 
 A lightweight, display-first design with an unusually strong official developer story. Vuzix documents a 640×480 monochrome microLED waveguide, 30° field of view, BLE connectivity, two-plus-day runtime, prescription support, and Android/iOS SDKs with sample code. The SDK can send text, images, and animations and monitor taps, screen state, battery, and connection state.
 
+**What it means:** Z100 is one of the clearest examples of smart glasses that do less on the face in exchange for giving developers more control. It is not trying to be a self-contained AI computer; it is a lightweight HUD endpoint with a well-documented phone-side development path. That trade produces unusually good owner control, cloud independence, and hackability for something that still looks and wears like glasses.
+
 | Dimension | Score | Grade | Why |
 |---|---:|:---:|---|
 | Hardware | 7.5 | B | Purpose-built, very light display hardware and long runtime, but intentionally narrow capability. |
@@ -28,6 +30,8 @@ Sources: [Vuzix Z100 product page](https://www.vuzix.com/products/z100-smart-gla
 ### Google Glass Enterprise Edition 2
 
 Glass EE2 remains an important owner-control benchmark because Google shipped it on Android Open Source Project rather than a sealed appliance stack. Google documents Android 8.1/AOSP, standard Android API development, ADB and fastboot access, USB debugging, screen mirroring, 32 GB storage, Bluetooth 5.0, Wi-Fi, an 8 MP camera, RGB display, microphones, sensors, and USB-C.
+
+**What it means:** Glass EE2 is dated as a consumer product but still remarkably modern as an ownership model. It behaves much more like a small Android computer you happen to wear than a sealed accessory tied to one companion app. That is why its camera and display no longer look impressive beside current hardware while its Openness, Owner Control, Cloud Independence, and Hackability remain benchmark-level strengths.
 
 | Dimension | Score | Grade | Why |
 |---|---:|:---:|---|
@@ -48,6 +52,8 @@ Sources: [Google Glass EE2 developer guide](https://developers.google.com/glass-
 
 Frame is one of the strongest owner-control examples in the current catalog. Brilliant Labs publishes not only product specifications but also schematics, block diagrams, BLE documentation, SDKs, public firmware source, direct-Bluetooth development paths, and a documented SWD debug interface.
 
+**What it means:** Frame is less polished than some closed consumer products, but that is not the interesting part. The interesting part is that Brilliant Labs gives the owner the map to the machine: firmware source, BLE protocol, schematics, SDKs, and even low-level debug access. For developers and researchers, that makes Frame one of the rare glasses where curiosity does not immediately run into a locked door.
+
 | Dimension | Score | Grade | Why |
 |---|---:|:---:|---|
 | Hardware | 7.5 | B | Color OLED, 720p camera, microphone, sensors, FPGA/MCU architecture and documented internals make it capable and unusually inspectable, though battery capacity is modest. |
@@ -66,6 +72,8 @@ Sources: [Frame hardware manual](https://docs.brilliant.xyz/frame/hardware/), [F
 ### Even Realities G2
 
 G2 takes almost the opposite approach from camera-first AI glasses: discreet binocular information display, no outward-facing camera, no speakers, and a strong emphasis on looking like ordinary eyewear.
+
+**What it means:** G2 may be one of the best answers to the question “can smart glasses just be glasses?” Its strengths are discretion, comfort, prescription support, and a useful binocular HUD rather than cameras or spectacle-sized computing. The cost of that elegance is control: much of the intelligence lives in the companion software and cloud, so the wearer gets a refined product but not nearly the same freedom to replace the stack underneath it.
 
 | Dimension | Score | Grade | Why |
 |---|---:|:---:|---|
@@ -86,6 +94,8 @@ Sources: [Even G2 specifications](https://support.evenrealities.com/hc/en-us/art
 
 XREAL One is fundamentally a tethered spatial display rather than a standalone AI computer. That narrow architecture produces a very different report card: high display capability and strong cloud independence, but little reason to score camera-based visual AI at all.
 
+**What it means:** XREAL One is easiest to understand as a private spatial monitor that happens to be worn on your face. That focus gives it a much better display than most everyday smart glasses and avoids much of the vendor-cloud problem because the connected host remains the real computer. The tradeoff is obvious: it is less autonomous and less socially invisible than ordinary eyewear, but for display-first use it is operating in a different league.
+
 | Dimension | Score | Grade | Why |
 |---|---:|:---:|---|
 | Hardware | 8.5 | A- | Dual 1080p Micro-OLED displays, up to 120 Hz, X1 spatial compute, electrochromic dimming and open-ear audio form a strong display-focused hardware package. |
@@ -104,6 +114,8 @@ Sources: [XREAL SDK](https://docs.xreal.com/), [XREAL One specifications](https:
 ### Solos AirGo family
 
 Solos is notable because its public developer program exposes a surprisingly broad set of useful interfaces across both audio and camera-equipped AirGo models: BLE control, sensors, microphones, audio I/O, touch, camera access on supported models, video streaming, webhooks and RTMP endpoints.
+
+**What it means:** Solos is interesting less because of any single AirGo model than because the company exposes enough of the plumbing to let developers route the glasses into their own systems. BLE, microphones, sensors, camera access on supported models, webhooks, and RTMP make the family unusually adaptable. It is not open firmware in the Brilliant Labs sense, but it gives builders far more useful handles than the typical companion-app-only consumer product.
 
 Because the family spans materially different hardware, dimensions that depend on the exact camera/display configuration are withheld rather than pretending one grade fits every AirGo generation.
 
@@ -125,6 +137,8 @@ Sources: [Solos SDK / Developer Program](https://solosglasses.com/pages/develope
 ### W610 / HeyCyan family — hands-on card in progress
 
 The W610 is the first GlassesResearch hands-on platform. We have directly observed the `HeyCyan Glasses` Bluetooth identity, electronics concentrated primarily in the right temple, two right-temple controls, a hinge-area status LED, and basic startup behavior. Initial testing intentionally avoided the vendor application so that owner-controlled interfaces could be investigated first.
+
+**What it means:** W610 is where source research becomes laboratory work. Unlike the cards above, we can eventually grade this family using our own repeated observations of BLE behavior, firmware, battery, controls, and owner-controlled software paths. For now the absence of scores is intentional: this is the card where we can afford to wait for direct evidence instead of borrowing confidence from a spec sheet.
 
 We are **not converting curiosity into fake precision**. The W610 card remains unscored until the BLE, firmware, software, battery, and owner-control investigations produce enough repeatable evidence for dimension-level grades. Its eventual scores will therefore have a different evidentiary character from source-only cards: they can include direct GlassesResearch testing.
 
