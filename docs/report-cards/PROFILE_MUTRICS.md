@@ -1,0 +1,5 @@
+# Evidence-derived profile — Mutrics
+
+## Mutrics M1 / retail audio-glasses generation
+
+Mutrics belongs to the audio-eyewear branch of smart glasses rather than the display or visual-AI branch. The strongest surviving evidence establishes a real retail product built around conventional-looking sunglasses with integrated audio/bone-conduction functionality and a commercial launch in Japan in late 2019. Its historical importance is less about computational sophistication than about making electronic eyewear look and behave much more like ordinary glasses than the industrial AR systems of the same period. That earns strong wearability and cloud-independence marks, while the absence of a documented public SDK, open firmware, camera-based AI or display keeps openness, hackability and software depth modest. The archival record is incomplete enough that style names should not be promoted into separate hardware generations without proof.
