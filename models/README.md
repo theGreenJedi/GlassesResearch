@@ -14,6 +14,7 @@ Additional editorial volumes continue the same encyclopedia:
 - [Open Camera Platforms](PROFILES_OPEN_CAMERA.md)
 - [High-Throughput Profiles — Batch 01](PROFILES_HIGH_THROUGHPUT_01.md)
 - [Consumer Audio and Emerging AR — Batch 02](PROFILES_CONSUMER_AR.md)
+- [XR Display Lineages — Batch 03](PROFILES_XR_DISPLAY.md)
 
 ## Current research chapters
 
@@ -48,6 +49,7 @@ Additional editorial volumes continue the same encyclopedia:
 - [Open Camera Platform profiles](PROFILES_OPEN_CAMERA.md)
 - [High-Throughput Batch 01 profiles](PROFILES_HIGH_THROUGHPUT_01.md)
 - [Consumer Audio and Emerging AR profiles](PROFILES_CONSUMER_AR.md)
+- [XR Display Lineage profiles](PROFILES_XR_DISPLAY.md)
 - [Technology lineages](../lineages/README.md)
 - [Retail Rebrands & OEM Ecosystems](RETAIL_REBRANDS.md)
 - [Compare devices](../docs/COMPARISON_ENGINE.md)
