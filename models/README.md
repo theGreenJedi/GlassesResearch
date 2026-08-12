@@ -8,6 +8,7 @@
 
 Additional editorial volumes continue the same encyclopedia:
 
+- [Foundations and Early Platforms](PROFILES_FOUNDATIONS.md)
 - [AR, Display, and Enterprise Platforms](PROFILES_AR_DISPLAY.md)
 
 ## Current research chapters
@@ -37,6 +38,7 @@ Additional editorial volumes continue the same encyclopedia:
 ## Cross-model research
 
 - [Human-readable model profiles](PROFILES.md)
+- [Foundations and Early Platforms profiles](PROFILES_FOUNDATIONS.md)
 - [AR, Display, and Enterprise profiles](PROFILES_AR_DISPLAY.md)
 - [Technology lineages](../lineages/README.md)
 - [Retail Rebrands & OEM Ecosystems](RETAIL_REBRANDS.md)
