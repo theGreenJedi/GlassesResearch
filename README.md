@@ -1,14 +1,14 @@
 # GlassesResearch
 
-Independent, evidence-based research into smart glasses, AI glasses, and user-controlled eyewear.
+Independent, evidence-based research into smart glasses, AI glasses, and user-controlled wearable human-computer interfaces.
 
 **The resource we wish had existed when we started looking.**
 
-> **Discover, verify, preserve, and freely share the world's smart-glasses knowledge.**
+> **Discover, verify, preserve, and freely share the world's smart-glasses and wearable-HCI knowledge.**
 
 ## Worth reading now
 
-### [Courts in England and Wales prohibit Meta smart glasses](docs/RESEARCH_NEWS.md#august-11-2026--courts-in-england-and-wales-prohibit-meta-smart-glasses)
+### [Courts in England and Wales prohibit Meta smart glasses](docs/RESEARCH_NEWS.md#august-11-2026-courts-in-england-and-wales-prohibit-meta-smart-glasses)
 
 Smart glasses are beginning to receive device-specific institutional rules rather than simply inheriting smartphone policy. That matters for social acceptance, privacy, and where camera-equipped eyewear can actually be worn.
 
@@ -20,7 +20,7 @@ New local multimodal models strengthen an owner-controlled architecture in which
 
 Retail names can hide shared OEM hardware, companion apps, firmware families, protocols, and development paths. Lineage research connects those relationships without claiming equivalence where the evidence does not support it.
 
-### [Vuzix enterprise deployments show a different smart-glasses market](docs/RESEARCH_NEWS.md#april-1-2025--vuzix-receives-500k-augmex-smart-glasses-reorder)
+### [Vuzix enterprise deployments show a different smart-glasses market](docs/RESEARCH_NEWS.md#april-1-2025-vuzix-receives-500k-augmex-smart-glasses-reorder)
 
 Consumer AI glasses get most of the attention, but repeat enterprise orders provide evidence that smart glasses are also becoming durable working infrastructure in logistics, field service, healthcare, and other operational environments.
 
@@ -32,7 +32,9 @@ An open argument about wearable recording, surveillance, bystander rights, indiv
 
 - [**Find & compare smart glasses**](docs/COMPARISON_ENGINE.md) — rank close matches and compare devices side by side.
 - [**GlassesResearch Report Card**](docs/REPORT_CARD.md) — compare hardware, wearability, visual AI, software, HUD, openness, owner control, cloud independence, hackability, and value without hiding tradeoffs in one score.
-- [**Browse 121 models and generations**](models/THE_LIST.md) — the cross-vendor model index, past and present.
+- [**Browse 145 smart-glasses models and generations**](models/THE_LIST.md) — the cross-vendor eyewear index, past and present.
+- [**Browse adjacent wearable-HCI devices**](models/ADJACENT_WEARABLES.md) — headsets, helmets, clip-on assistive modules, over-ear AR and future non-eyewear form factors, kept separate from the glasses count.
+- [**Wearable-HCI taxonomy**](docs/taxonomy/WEARABLE_HCI.md) — the form-factor, lineage, evidence and counting rules that keep the catalogs precise.
 - [**Model research chapters**](models/README.md) — deeper source-backed dossiers for selected devices and families.
 - [**Technology lineages**](lineages/README.md) — OEM, rebrand, firmware, app, and platform relationships across device families.
 - [**Industry timeline**](docs/INDUSTRY_TIMELINE.md) — major products, technologies, companies, and milestones over time.

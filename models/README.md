@@ -1,6 +1,13 @@
 # Model Research Chapters
 
-[`The List`](THE_LIST.md) is the canonical index of 121 purchasable smart-glasses models and generations. These chapters provide deeper source-backed research for selected models and families.
+[`The List`](THE_LIST.md) is the canonical smart-glasses index. Following the 2026-08-12 lineage reconciliation, the smart-glasses ledger contains **145** purchasable models and generations; the stable additions `GLS-0122` through `GLS-0145` are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md). Devices that belong to the same augmented-human research universe but are not fundamentally eyewear live in the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) and are never silently included in the smart-glasses count.
+
+## Canonical catalogs
+
+- [**Smart glasses — The List**](THE_LIST.md) — eyewear only; stable `GLS-####` identifiers.
+- [**2026-08-12 reconciliation ledger**](THE_LIST_RECONCILIATION_2026-08-12.md) — stable IDs and admission decisions from the completed lineage queue.
+- [**Adjacent Wearable-HCI Catalog**](ADJACENT_WEARABLES.md) — headsets, helmets, over-ear AR, eyeglass-mounted modules and future non-eyewear form factors; stable `ADJ-####` identifiers.
+- [**Wearable-HCI taxonomy**](../docs/taxonomy/WEARABLE_HCI.md) — the form-factor and shared-evidence rules governing all catalogs.
 
 ## Read the models, not just the database
 
@@ -15,6 +22,7 @@ Additional editorial volumes continue the same encyclopedia:
 - [High-Throughput Profiles — Batch 01](PROFILES_HIGH_THROUGHPUT_01.md)
 - [Consumer Audio and Emerging AR — Batch 02](PROFILES_CONSUMER_AR.md)
 - [XR Display Lineages — Batch 03](PROFILES_XR_DISPLAY.md)
+- [Lineage-Reconciled Smart-Glasses Profiles](PROFILES_LINEAGE_RECONCILED.md) — `GLS-0122` through `GLS-0145`, with evidence-bound paragraphs and explicit uncertainty where generation-specific specifications remain incomplete.
 
 ## Current research chapters
 
@@ -29,16 +37,21 @@ Additional editorial volumes continue the same encyclopedia:
 | [Even Realities G2](EvenG2/README.md) | GLS-0048 | Display, battery, BLE, microphones, prescription support, app/cloud behavior and primary specifications. |
 | [Brilliant Labs Frame](BrilliantFrame/README.md) | GLS-0051 | Hardware architecture, schematics, BLE, SDKs, firmware source and developer/debug access. |
 | [Brilliant Labs Halo](BrilliantHalo/README.md) | GLS-0052 | Open hardware/software positioning, display, audio, sensors, Alif B1 compute, ZephyrOS and battery. |
-| [Vuzix Blade 2](VuzixBlade2/README.md) | GLS-0055 | Standalone Android architecture, SDKs, HUD resources, sample projects and developer downloads. |
+| [Vuzix Blade 2](VuzixBlade2/README.md) | GLS-0055 | Standalone Android architecture, SDKs, sample projects, HUD resources and Android Studio tooling. |
 | [Vuzix Z100](VuzixZ100/README.md) | GLS-0056 | Display/optics, BLE, prescription support, SDK capabilities, pairing and developer documentation. |
 | [Vuzix M400 / M4000](VuzixM400/README.md) | GLS-0098–0099 | Standalone Android wearable-computer architecture, app deployment, connectivity SDK and Vuzix View tooling. |
 | [Vuzix Shield](VuzixShield/README.md) | GLS-0121 | Android developer platform, connectivity/HUD SDK support and APK deployment path. |
-| [Vuzix LX1](VuzixLX1/README.md) | GLS-0100 | Standalone Android architecture and Vuzix View developer/debug tooling. |
+| [Vuzix LX1](VuzixLX1/README.md) | GLS-0100 | Standalone Android architecture and Vuzix View deployment/debug tooling. |
 | [Rokid Glasses](RokidGlasses/README.md) | GLS-0064 | MicroLED display, AR1/RT600 hardware, camera/audio, connectivity, battery, app and SDK resources. |
 | [RayNeo X3 Pro](RayNeoX3Pro/README.md) | GLS-0066 | Full-color MicroLED, Snapdragon AR1, cameras, AIOS, sensors, connectivity, Gemini and developer access. |
 | [Snap Spectacles 5](SnapSpectacles5/README.md) | GLS-0068 | Spectacles development platform, device APIs, compatibility matrix and public sample code. |
 | [XREAL One](XREALOne/README.md) | GLS-0074 | Micro-OLED display, wired host architecture, X1 compute, audio, spatial modes, SDK and firmware guidance. |
 | [Anko Camera Glasses](AnkoCameraGlasses/README.md) | GLS-0120 | Kmart Australia retail availability, HeyCyan software relationship, capabilities supported by reporting, and the boundary between software-platform evidence and unproven hardware equivalence. |
+| [ThirdEye X-series](ThirdEyeXSeries/README.md) | GLS-0131–0133 | X1/X2/Alpha1 lineage boundaries, commercial evidence and generation-specific scoring; MIDAS routed to the adjacent catalog. |
+
+## Completed lineage packets awaiting or supporting chapter-level expansion
+
+The report-card library now contains lineage-first evidence packages for ODG R-series, Recon Jet, Optinvent ORA, Toshiba/Dynabook dynaEdge AR100, DAQRI, Lenovo ThinkReality A6, ThirdEye, Pivothead, Mutrics, Chamelo, NuEyes, OrCam, Envision, Microsoft HoloLens and Magic Leap. Canonical ID assignments and shelf routing are summarized in the [reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md).
 
 ## Cross-model research
 
@@ -50,6 +63,7 @@ Additional editorial volumes continue the same encyclopedia:
 - [High-Throughput Batch 01 profiles](PROFILES_HIGH_THROUGHPUT_01.md)
 - [Consumer Audio and Emerging AR profiles](PROFILES_CONSUMER_AR.md)
 - [XR Display Lineage profiles](PROFILES_XR_DISPLAY.md)
+- [Lineage-reconciled profiles](PROFILES_LINEAGE_RECONCILED.md)
 - [Technology lineages](../lineages/README.md)
 - [Retail Rebrands & OEM Ecosystems](RETAIL_REBRANDS.md)
 - [Compare devices](../docs/COMPARISON_ENGINE.md)

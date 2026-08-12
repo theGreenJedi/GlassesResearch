@@ -8,6 +8,12 @@ GlassesResearch begins with smart glasses, but the research subject is broader: 
 
 A device belongs in a catalog only after model-level evidence establishes a documented route to acquisition. Prototypes, concepts, components, and unshipped announcements remain in the research registry until that threshold is crossed.
 
+The current canonical shelves are:
+
+- [Smart glasses — The List](../../models/THE_LIST.md), with `GLS-####` IDs.
+- [Adjacent Wearable-HCI Catalog](../../models/ADJACENT_WEARABLES.md), with `ADJ-####` IDs for qualifying non-eyewear wearables.
+- [2026-08-12 catalog reconciliation ledger](../../models/THE_LIST_RECONCILIATION_2026-08-12.md), recording the lineage decisions that expanded the smart-glasses ledger from 121 to 145 rows while routing adjacent devices separately.
+
 ## Form-factor catalogs
 
 1. **Smart glasses / eyewear** — devices fundamentally worn as glasses. Includes audio glasses, camera/AI glasses, discreet displays, AR glasses, XR display glasses, accessibility eyewear, and enterprise monocular/binocular eyewear.
@@ -17,12 +23,13 @@ A device belongs in a catalog only after model-level evidence establishes a docu
 5. **Pendants / body-worn cameras and assistants** — chest-, neck-, clothing-, or lanyard-worn devices providing sensing, capture, AI assistance, or contextual memory.
 6. **Watches / rings / peripheral wearables** — wrist, finger, and other peripheral devices when they materially participate in the augmented-human interface rather than merely existing as generic consumer electronics.
 7. **Composite systems** — deliberately integrated multi-device systems whose meaningful capability emerges from the combination: for example glasses + neural band, glasses + earbuds, or wearable sensors + a local compute node.
+8. **Eyeglass-mounted modules** — cameras, AI assistants or other modules that attach to ordinary eyeglasses but are not themselves the eyewear. OrCam MyEye belongs here: physically close to glasses, but counted separately rather than inflating the smart-glasses ledger.
 
 ## Delineation matters
 
-Catalog membership is based on physical form and interface role, not marketing language. A display-equipped headphone does not become smart glasses because it overlaps with AR. A pair of audio glasses remains eyewear even when its primary function resembles headphones. A wrist controller paired with glasses remains a wrist interface and can also be documented as part of a composite system.
+Catalog membership is based on physical form and interface role, not marketing language. A display-equipped headphone does not become smart glasses because it overlaps with AR. A pair of audio glasses remains eyewear even when its primary function resembles headphones. A wrist controller paired with glasses remains a wrist interface and can also be documented as part of a composite system. A clip-on camera attached to ordinary eyeglasses remains a clip-on module rather than becoming a pair of smart glasses.
 
-Counts remain separate. The smart-glasses count must never silently include headphones, pendants, rings, headsets, or other adjacent wearables.
+Counts remain separate. The smart-glasses count must never silently include headphones, pendants, rings, headsets, helmets, clip-on modules or other adjacent wearables.
 
 ## Shared report-card ruler
 
@@ -40,7 +47,8 @@ Research remains lineage-first inside each form-factor catalog:
 4. never inherit a specification or score merely because adjacent generations are related;
 5. score each qualifying model on the fixed catalog-wide ruler;
 6. generate or audit prose from the completed evidence package;
-7. preserve related prototypes and non-qualifying products as lineage context rather than silently counting them.
+7. preserve related prototypes and non-qualifying products as lineage context rather than silently counting them;
+8. reconcile every completed lineage into one of four outcomes: `GLS-` smart-glasses row, `ADJ-` adjacent wearable row, registry/archive candidate, or documented non-wearable lineage relative.
 
 A lineage, not an arbitrary model quota, defines a research batch.
 

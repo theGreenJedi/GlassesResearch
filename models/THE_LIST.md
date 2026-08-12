@@ -1,12 +1,12 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-08-11  
+**Edition:** 2026-08-12  
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 121 distinct purchasable models or explicitly marketed product generations
+**Count:** 145 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
-Use the stable `GLS-####` identifier when linking from the [glossary](../glossary/README.md), [FAQ](../docs/faq/README.md), [news archive](../docs/news/README.md), model chapters, issues, or research notes. The broader [research registry](CATALOG.md) remains the place for platforms, prototypes, unnamed partner devices, and early leads.
+Use the stable `GLS-####` identifier when linking from the [glossary](../glossary/README.md), [FAQ](../docs/faq/README.md), [news archive](../docs/news/README.md), model chapters, issues, or research notes. The broader [research registry](CATALOG.md) remains the place for platforms, prototypes, unnamed partner devices, and early leads. Non-eyewear products in the broader wearable-HCI research universe are kept separately in the [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md); they are never silently included in this count. The 2026-08-12 lineage admissions are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md).
 
 ## How to read the list
 
@@ -15,7 +15,7 @@ Use the stable `GLS-####` identifier when linking from the [glossary](../glossar
 | State | `current` = manufacturer still offers it; `preorder` = money/reservation accepted but broad delivery is not established; `legacy` = formerly obtainable; `enterprise` = sold primarily by quote/deployment channel; `developer` = access restricted to developers or program members |
 | Type | `camera/audio`, `audio`, `display`, `XR display`, `enterprise monocular`, `accessibility`, or `open/developer` |
 | Evidence | `primary` = maker store, support, manual, release, or maintained product history; `commercial` = documented retail route; `secondary` = reputable contemporaneous reporting used when old primary pages are unavailable |
-| Era | First documented sale or order year, not prototype announcement year; `c.` marks an approximate year pending archival confirmation |
+| Era | First documented sale or order year, not prototype announcement year; `c.` marks an approximate year pending archival confirmation; `≤2026` means the current evidence proves the product was obtainable by this edition but has not yet pinned the earliest sale year |
 
 Status is last checked on the edition date and can vary by country. Frame colors, lens packages, prescription options, storage bundles, and unchanged co-brands are not separate models. A materially named generation or different hardware platform is.
 
@@ -160,22 +160,68 @@ Status is last checked on the edition date and can vary by country. Frame colors
 | GLS-0118 | Iristick | H1 | c. 2022 | legacy/enterprise | enterprise monocular | enterprise/store | primary product documentation; [source](https://docs.iristick.com/smart-glasses/) |
 | GLS-0119 | Iristick | G3 | 2026 | current/enterprise | camera/display | enterprise/store | primary store and documentation; [source](https://docs.iristick.com/smart-glasses/specifications/) |
 
+## Lineage-reconciled additions — 2026-08-12
+
+These rows were admitted after whole-lineage investigation. They use the same acquisition threshold and stable-ID contract as the original ledger. Related non-eyewear devices are routed to the [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md), not counted here.
+
+### Camera, audio, adaptive-lens, and everyday eyewear
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0134 | Pivothead | Camera Glasses — first generation | c. 2012 | legacy | camera eyewear | retail | commercial + lineage research; [packet](../docs/report-cards/LINEAGE_PIVOTHEAD.md) |
+| GLS-0135 | Pivothead | SMART / Architect Edition | c. 2015 | legacy | connected camera eyewear | crowdfunding/retail/developer | commercial + lineage research; [packet](../docs/report-cards/LINEAGE_PIVOTHEAD.md) |
+| GLS-0136 | Mutrics | M1 / smart audio eyewear generation | c. 2019 | legacy | audio | retail | commercial + design/distributor evidence; [packet](../docs/report-cards/LINEAGE_MUTRICS.md) |
+| GLS-0137 | Chamelo | Dusk Classic | ≤2026 | current | electrochromic/audio | retail | primary; [packet](../docs/report-cards/LINEAGE_CHAMELO.md) |
+| GLS-0138 | Chamelo | Music Shield Gen 2 | ≤2026 | current | electrochromic/audio sport | retail | primary; [packet](../docs/report-cards/LINEAGE_CHAMELO.md) |
+| GLS-0139 | Chamelo | Aura | ≤2026 | current | electronically color-changing eyewear | retail | primary; [packet](../docs/report-cards/LINEAGE_CHAMELO.md) |
+| GLS-0145 | Envision | Ally Solos | ≤2026 | current | assistive AI/audio-camera eyewear | retail | primary; [packet](../docs/report-cards/LINEAGE_ENVISION.md) |
+
+### Standalone AR, HUD, and enterprise eyewear
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0122 | ODG | R-7 | 2015 | legacy | standalone enterprise AR | enterprise | primary/secondary archival; [packet](../docs/report-cards/LINEAGE_ODG_R_SERIES.md) |
+| GLS-0123 | Recon | Jet | 2015 | legacy | sport HUD | retail | primary/commercial; [packet](../docs/report-cards/LINEAGE_RECON_JET.md) |
+| GLS-0124 | Recon / Intel | Jet Pro | c. 2016 | legacy | enterprise/sport HUD | enterprise/retail | primary support + commercial; [packet](../docs/report-cards/LINEAGE_RECON_JET.md) |
+| GLS-0125 | Recon / Intel | Jet Pro+ | c. 2016 | legacy | enterprise/sport HUD | enterprise/retail | primary support + commercial; [packet](../docs/report-cards/LINEAGE_RECON_JET.md) |
+| GLS-0126 | Optinvent | ORA-1 | c. 2014 | legacy/developer | standalone AR | developer/crowdfunding | primary; [packet](../docs/report-cards/LINEAGE_OPTINVENT_ORA.md) |
+| GLS-0127 | Optinvent | ORA-2 | c. 2016 | legacy/current stock unclear | standalone AR | retail/developer | primary; [packet](../docs/report-cards/LINEAGE_OPTINVENT_ORA.md) |
+| GLS-0128 | Toshiba / Dynabook | dynaEdge AR100 + DE-100 | 2018 | legacy/enterprise | enterprise monocular system | enterprise/developer kit | primary; [packet](../docs/report-cards/LINEAGE_TOSHIBA_DYNAEDGE_AR100.md) |
+| GLS-0129 | DAQRI | Smart Glasses | 2017 | legacy | enterprise AR | enterprise/store | primary; [packet](../docs/report-cards/LINEAGE_DAQRI_PROFESSIONAL_AR.md) |
+| GLS-0130 | Lenovo | ThinkReality A6 | 2019 | legacy/enterprise | binocular AR | developer/enterprise | primary; [packet](../docs/report-cards/LINEAGE_LENOVO_THINKREALITY_A6.md) |
+| GLS-0131 | ThirdEye | X1 Smart Glasses | c. 2018 | enterprise/legacy unclear | mixed-reality eyewear | enterprise | primary; [packet](../docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md) |
+| GLS-0132 | ThirdEye | X2 MR Glasses | ≤2026 | current/enterprise | mixed-reality eyewear | enterprise/store | primary; [chapter](ThirdEyeXSeries/README.md); [packet](../docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md) |
+| GLS-0133 | ThirdEye | Alpha1 MR Glasses | ≤2026 | enterprise | mixed-reality eyewear | enterprise | primary; [chapter](ThirdEyeXSeries/README.md); [packet](../docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md) |
+
+### Accessibility and assistive eyewear
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0140 | NuEyes | e2+ | ≤2026 | current | assistive standalone display | retail | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
+| GLS-0141 | NuEyes | Pro 3 | 2020 | legacy | assistive/enterprise AR | retail/enterprise | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
+| GLS-0142 | NuEyes | Pro 3e | 2021 | legacy/current unclear | tethered assistive display | retail | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
+| GLS-0143 | NuEyes | Pro 4 | ≤2026 | current | assistive camera/display | retail/enterprise | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
+| GLS-0144 | Envision | Envision Glasses | c. 2020 | current/legacy transition | assistive visual-AI eyewear | retail | primary; [packet](../docs/report-cards/LINEAGE_ENVISION.md) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
 
-## Known gaps and candidate queue
+## Reconciliation status and remaining archival queue
 
-The list deliberately starts with models supported by a usable primary trail. The next archival pass should adjudicate older or region-specific families including ODG R-series, Recon Jet, Optinvent ORA, Toshiba dynaEdge AR100, DAQRI Smart Glasses, Lenovo ThinkReality A6, ThirdEye, Pivothead, Mutrics, Chamelo, NuEyes, OrCam, Envision, and headset-adjacent HoloLens/Magic Leap devices. They are **not silently counted** until model-level acquisition evidence and category boundaries are documented.
+The former known-gap queue has been adjudicated. ODG R-7, Recon Jet/Jet Pro/Jet Pro+, Optinvent ORA-1/ORA-2, Toshiba dynaEdge AR100, DAQRI Smart Glasses, Lenovo ThinkReality A6, ThirdEye X-series eyewear, Pivothead, Mutrics, Chamelo, NuEyes and Envision now have canonical `GLS-` rows. HoloLens, Magic Leap, Optinvent ORA-X, DAQRI Smart Helmet, ThirdEye MIDAS and OrCam MyEye were deliberately routed to the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) because their physical form is not fundamentally smart glasses.
+
+Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unnamed early NuEyes devices, earlier poorly archived OrCam MyEye hardware, and other region-specific or historically obscure families for which acquisition evidence is still incomplete. No row is created merely because a product was announced or demonstrated.
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 121-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 145-row count:
 
 - Snap SPECS (2026): order intent is tracked, but the final purchasable SKU and delivery evidence still need reconciliation.
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
 - North Focals 2.0: announced and cancelled; no public sale.
+- ODG R-8 and R-9: announced with intended pricing/availability, but the current evidence package does not establish a sufficiently clean completed acquisition route before ODG's collapse.
 - Meta Orion, Google Project Aura, Samsung Project Moohan prototypes, and reference designs: prototypes/platforms, not retail models.
 
 ## Maintenance contract

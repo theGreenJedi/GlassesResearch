@@ -1,6 +1,6 @@
 # Smart-Glasses Model Profiles — Foundations and Early Platforms
 
-These profiles continue the human-readable GlassesResearch catalog. Each paragraph explains what the device really is, why it matters, and the tradeoff that matters most. Structured specifications and Report Cards remain supporting evidence rather than the main reading experience.
+This volume traces early consumer and developer platforms that established many of today's smart-glasses patterns: ambient audio, camera capture, phone dependence, early displays, and the first serious attempts at everyday wearability. Each paragraph emphasizes the historical design decision and tradeoff that still matters when comparing later generations.
 
 ## GLS-0009 — Amazon Echo Frames (1st Gen)
 
