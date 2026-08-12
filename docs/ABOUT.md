@@ -34,14 +34,6 @@ The site uses no project-added advertising, tracking cookies, behavioral profili
 
 Community greetings rely only on an explicit `?from=` value in a shared link and are not retained.
 
-## Website and maintenance
-
-- [Website notes](WEBSITE.md)
-- [Homepage design principle](HOMEPAGE_DESIGN_NOTES.md)
-- [KISS working notes](KISS_WORKING_NOTES.md)
-
-These are maintenance documents rather than front-page reading. They remain public for transparency and future contributors.
-
 ## Core principle
 
 > **Lead with content. Keep structure available. Explain the institution only when the reader asks for it.**
