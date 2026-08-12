@@ -1,0 +1,11 @@
+# Evidence-Derived Profile — Toshiba / Dynabook dynaEdge AR100
+
+## Toshiba / Dynabook dynaEdge AR100 + DE-100
+
+Toshiba's dynaEdge AR Smart Glasses took a deliberately enterprise-first route: instead of forcing a full computer into the eyewear, the 47 g AR100 head-mounted display connected over USB-C to a waist-mounted DE-100 Windows 10 Pro mini PC. The result was less elegant than ordinary glasses but unusually flexible for its era. The HMD supplied a 640×360 see-through display, 5 MP autofocus camera, speaker, dual microphones, touch controls and motion/environment sensors, while the DE-100 supplied Intel x86 compute, up to 16 GB RAM, M.2 SSD storage, Wi-Fi/Bluetooth, microSD and enterprise security. Dynabook sold the system through explicit developer-kit and enterprise purchase routes, with complete kits documented from roughly $1,900 to $2,900.
+
+The system's strongest ownership advantage was its software architecture. Dynabook provided a complete reference SDK, while the compute unit remained a general Windows PC capable of running owner- or partner-selected applications. Vision DE Suite added document viewing, live video, photo/video capture, barcode scanning, messaging, voice commands and task-flow functions, but it was not the only possible application path. That gives dynaEdge substantially more Owner Control and Cloud Independence than cloud-bound appliance glasses, even though the HMD firmware, optics and electronics remained proprietary.
+
+Its weakness is equally clear: the system achieved capability by distributing the wearable across the head and waist. Multiple frame, safety-glass, helmet and headband mounts made it adaptable to industrial work, and prescription-compatible safety frames helped, but a cabled 310 g compute puck keeps it far from ordinary-eyewear wearability. On the common catalog ruler, dynaEdge is best understood as a capable, locally controllable enterprise wearable PC with a modest HUD rather than as a discreet smart-glasses endpoint.
+
+**Research packet:** `docs/report-cards/LINEAGE_TOSHIBA_DYNAEDGE_AR100.md`
