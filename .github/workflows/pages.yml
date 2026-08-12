@@ -95,11 +95,24 @@ jobs:
           test -s site/resources/COMMUNITY_AND_DEVELOPMENT/index.html
           test -s site/models/AnkoCameraGlasses/index.html
           test -s site/models/RETAIL_REBRANDS/index.html
+          test -s site/lineages/index.html
           test -s site/docs/javascripts/comparison-engine.js
           grep -Fq 'TL-0001' site/timeline/events.json
           grep -Fq 'EV-0001' site/evidence/resources.json
-          grep -Fq '"record_count": 120' site/data/devices.json
-          grep -Fq 'GLS-0120' site/data/devices.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          payload = json.loads(Path('site/data/devices.json').read_text(encoding='utf-8'))
+          records = payload.get('records', [])
+          count = payload.get('record_count')
+          assert isinstance(count, int) and count > 0, f'invalid record_count: {count!r}'
+          assert count == len(records), f'record_count {count} != parsed records {len(records)}'
+          ids = [record.get('id') for record in records]
+          assert len(ids) == len(set(ids)), 'duplicate GLS IDs in built device database'
+          print(f'Built catalog verified dynamically: {count} devices')
+          PY
+          grep -Fq 'Google Glass' site/lineages/index.html
+          grep -Fq 'Vuzix' site/lineages/index.html
           grep -Fq 'industry-timeline-app' site/docs/INDUSTRY_TIMELINE/index.html
           grep -Fq 'comparison-engine-app' site/docs/COMPARISON_ENGINE/index.html
           grep -Fq 'models available for comparison' site/docs/javascripts/comparison-engine.js
@@ -147,19 +160,30 @@ jobs:
               && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/resources/COMMUNITY_AND_DEVELOPMENT/ -o /tmp/community.html \
               && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/models/AnkoCameraGlasses/ -o /tmp/anko.html \
               && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/models/RETAIL_REBRANDS/ -o /tmp/rebrands.html \
+              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/lineages/ -o /tmp/lineages.html \
               && grep -Fq 'Sitemap: https://glassesresearch.org/sitemap.xml' /tmp/robots.txt \
               && grep -Fq 'https://glassesresearch.org/' /tmp/sitemap.xml \
               && grep -Fq 'TL-0001' /tmp/timeline.json \
               && grep -Fq 'record_count' /tmp/comparisons.json \
-              && grep -Fq '"record_count": 120' /tmp/devices.json \
-              && grep -Fq 'GLS-0120' /tmp/devices.json \
+              && python - <<'PY'
+          import json
+          from pathlib import Path
+          payload = json.loads(Path('/tmp/devices.json').read_text(encoding='utf-8'))
+          records = payload.get('records', [])
+          count = payload.get('record_count')
+          assert isinstance(count, int) and count > 0, f'invalid live record_count: {count!r}'
+          assert count == len(records), f'live record_count {count} != records {len(records)}'
+          print(f'Live catalog verified dynamically: {count} devices')
+          PY
               && grep -Fq 'models available for comparison' /tmp/comparison-engine.js \
               && grep -Fq 'https://www.reddit.com/r/SmartGlasses/' /tmp/community.html \
               && grep -Fq 'https://github.com/Mentra-Community' /tmp/community.html \
               && grep -Fq 'https://xdaforums.com/' /tmp/community.html \
               && grep -Fq 'HeyCyan' /tmp/anko.html \
-              && grep -Fq 'Retail Rebrands' /tmp/rebrands.html; then
-              echo 'Live site verified: 120-device catalog, Anko coverage, comparison data, and ecosystem-wide community links are present.'
+              && grep -Fq 'Retail Rebrands' /tmp/rebrands.html \
+              && grep -Fq 'Google Glass' /tmp/lineages.html \
+              && grep -Fq 'Vuzix' /tmp/lineages.html; then
+              echo 'Live site verified: dynamic device catalog, Google Glass/Vuzix lineages, comparison data, and ecosystem-wide community links are present.'
               exit 0
             fi
             echo "Attempt ${attempt}/5 failed; waiting for Pages/DNS propagation..."
