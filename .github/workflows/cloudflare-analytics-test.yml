@@ -1,4 +1,4 @@
-name: Cloudflare Analytics Test
+name: Cloudflare Traffic Breakdown
 
 on:
   workflow_dispatch:
@@ -7,10 +7,10 @@ permissions:
   contents: read
 
 jobs:
-  test-cloudflare-analytics:
+  traffic-breakdown:
     runs-on: ubuntu-latest
     steps:
-      - name: Query Cloudflare GraphQL Analytics API
+      - name: Query Cloudflare end-user traffic breakdown
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
@@ -27,14 +27,61 @@ jobs:
             exit 1
           fi
 
-          START_DATE=$(date -u -d '7 days ago' +%F)
-          END_DATE=$(date -u +%F)
+          START=$(date -u -d '7 days ago' +%FT%TZ)
+          END=$(date -u +%FT%TZ)
 
-          cat > /tmp/query.json <<EOF
-          {
-            "query": "query { viewer { zones(filter: {zoneTag: \"${CLOUDFLARE_ZONE_ID}\"}) { httpRequests1dGroups(limit: 10, filter: {date_geq: \"${START_DATE}\", date_leq: \"${END_DATE}\"}, orderBy: [date_ASC]) { dimensions { date } sum { requests pageViews } uniq { uniques } } } } }"
+          python - <<'PY'
+          import json, os
+
+          zone = os.environ['CLOUDFLARE_ZONE_ID']
+          start = os.popen("date -u -d '7 days ago' +%FT%TZ").read().strip()
+          end = os.popen("date -u +%FT%TZ").read().strip()
+
+          query = '''query TrafficBreakdown($zoneTag: string, $filter: filter) {
+            viewer {
+              zones(filter: {zoneTag: $zoneTag}) {
+                totals: httpRequestsAdaptiveGroups(limit: 1, filter: $filter) {
+                  count
+                  sum { visits edgeResponseBytes }
+                }
+                countries: httpRequestsAdaptiveGroups(limit: 20, filter: $filter, orderBy: [count_DESC]) {
+                  count
+                  sum { visits }
+                  dimensions { clientCountryName }
+                }
+                paths: httpRequestsAdaptiveGroups(limit: 25, filter: $filter, orderBy: [count_DESC]) {
+                  count
+                  sum { visits }
+                  dimensions { clientRequestPath }
+                }
+                devices: httpRequestsAdaptiveGroups(limit: 10, filter: $filter, orderBy: [count_DESC]) {
+                  count
+                  sum { visits }
+                  dimensions { clientDeviceType }
+                }
+                userAgents: httpRequestsAdaptiveGroups(limit: 20, filter: $filter, orderBy: [count_DESC]) {
+                  count
+                  sum { visits }
+                  dimensions { userAgent }
+                }
+              }
+            }
+          }'''
+
+          payload = {
+            'query': query,
+            'variables': {
+              'zoneTag': zone,
+              'filter': {
+                'datetime_geq': start,
+                'datetime_lt': end,
+                'requestSource': 'eyeball'
+              }
+            }
           }
-          EOF
+          with open('/tmp/query.json', 'w', encoding='utf-8') as f:
+              json.dump(payload, f)
+          PY
 
           HTTP_STATUS=$(curl --silent --show-error \
             --output /tmp/response.json \
@@ -46,7 +93,6 @@ jobs:
             --data @/tmp/query.json)
 
           echo "Cloudflare HTTP status: ${HTTP_STATUS}"
-
           if [ "${HTTP_STATUS}" != "200" ]; then
             echo "Cloudflare request failed."
             cat /tmp/response.json
@@ -54,8 +100,7 @@ jobs:
           fi
 
           python - <<'PY'
-          import json
-          import sys
+          import json, sys
 
           with open('/tmp/response.json', encoding='utf-8') as f:
               payload = json.load(f)
@@ -67,15 +112,26 @@ jobs:
 
           zones = payload.get('data', {}).get('viewer', {}).get('zones', [])
           if not zones:
-              print('Authentication succeeded, but no matching zone was returned.')
+              print('No matching zone returned.')
               sys.exit(1)
 
-          groups = zones[0].get('httpRequests1dGroups', [])
-          print('Cloudflare authentication and analytics query succeeded.')
-          print(f'Daily analytics rows returned: {len(groups)}')
-          for row in groups:
-              date = row.get('dimensions', {}).get('date')
-              sums = row.get('sum', {})
-              uniq = row.get('uniq', {})
-              print(f"{date}: requests={sums.get('requests', 0)}, pageViews={sums.get('pageViews', 0)}, uniques={uniq.get('uniques', 0)}")
+          z = zones[0]
+          print('\n=== CLOUDFLARE END-USER TRAFFIC DIAGNOSTIC ===')
+          print('Filter: requestSource=eyeball; rolling 7 days')
+
+          totals = z.get('totals', [])
+          if totals:
+              t = totals[0]
+              print(f"\nTOTALS: requests={t.get('count', 0)}, visits={t.get('sum', {}).get('visits', 0)}, bytes={t.get('sum', {}).get('edgeResponseBytes', 0)}")
+
+          def show(title, rows, dim):
+              print(f'\n--- {title} ---')
+              for row in rows:
+                  label = row.get('dimensions', {}).get(dim) or '(unknown/direct)'
+                  print(f"{label}: requests={row.get('count', 0)}, visits={row.get('sum', {}).get('visits', 0)}")
+
+          show('TOP COUNTRIES', z.get('countries', []), 'clientCountryName')
+          show('TOP PATHS', z.get('paths', []), 'clientRequestPath')
+          show('DEVICE TYPES', z.get('devices', []), 'clientDeviceType')
+          show('TOP USER AGENTS', z.get('userAgents', []), 'userAgent')
           PY
