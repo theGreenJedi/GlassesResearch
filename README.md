@@ -2,6 +2,8 @@
 
 Independent, evidence-based research into smart glasses, AI glasses, and user-controlled eyewear.
 
+**The resource we wish had existed when we started looking.**
+
 > **Discover, verify, preserve, and freely share the world's smart-glasses knowledge.**
 
 ## Worth reading now
