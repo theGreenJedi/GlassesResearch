@@ -10,7 +10,7 @@ jobs:
   traffic-breakdown:
     runs-on: ubuntu-latest
     steps:
-      - name: Query Cloudflare end-user traffic breakdown
+      - name: Query and classify Cloudflare traffic
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
@@ -46,17 +46,12 @@ jobs:
                   sum { visits }
                   dimensions { clientCountryName }
                 }
-                paths: httpRequestsAdaptiveGroups(limit: 25, filter: $filter, orderBy: [count_DESC]) {
+                paths: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) {
                   count
                   sum { visits }
                   dimensions { clientRequestPath }
                 }
-                devices: httpRequestsAdaptiveGroups(limit: 10, filter: $filter, orderBy: [count_DESC]) {
-                  count
-                  sum { visits }
-                  dimensions { clientDeviceType }
-                }
-                userAgents: httpRequestsAdaptiveGroups(limit: 20, filter: $filter, orderBy: [count_DESC]) {
+                userAgents: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) {
                   count
                   sum { visits }
                   dimensions { userAgent }
@@ -97,7 +92,7 @@ jobs:
           fi
 
           python - <<'PY'
-          import json, sys
+          import json, re, sys
 
           with open('/tmp/response.json', encoding='utf-8') as f:
               payload = json.load(f)
@@ -113,22 +108,77 @@ jobs:
               sys.exit(1)
 
           z = zones[0]
-          print('\n=== CLOUDFLARE END-USER TRAFFIC DIAGNOSTIC ===')
-          print('Filter: requestSource=eyeball; rolling 24 hours')
-
           totals = z.get('totals', [])
-          if totals:
-              t = totals[0]
-              print(f"\nTOTALS: requests={t.get('count', 0)}, visits={t.get('sum', {}).get('visits', 0)}, bytes={t.get('sum', {}).get('edgeResponseBytes', 0)}")
+          t = totals[0] if totals else {}
+          total_requests = t.get('count', 0)
+          total_visits = t.get('sum', {}).get('visits', 0)
 
-          def show(title, rows, dim):
-              print(f'\n--- {title} ---')
-              for row in rows:
-                  label = row.get('dimensions', {}).get(dim) or '(unknown/direct)'
-                  print(f"{label}: requests={row.get('count', 0)}, visits={row.get('sum', {}).get('visits', 0)}")
+          known_bot = re.compile(
+              r'(bot|crawler|spider|slurp|semrush|seranking|ahrefs|bytespider|applebot|googlebot|bingbot|duckduckbot|baiduspider|yandex|facebookexternalhit|petalbot|mj12bot|dotbot)',
+              re.I,
+          )
+          suspicious_path = re.compile(
+              r'(^|/)(\.git|\.env|env\.json|stripe-keys\.json|serverless\.yml|\.aws|wp-admin|wp-login|phpmyadmin|config\.php|credentials|id_rsa|passwd|actuator|rest/executions|rest/users|api/user)(/|$)',
+              re.I,
+          )
 
-          show('TOP COUNTRIES', z.get('countries', []), 'clientCountryName')
-          show('TOP PATHS', z.get('paths', []), 'clientRequestPath')
-          show('DEVICE TYPES', z.get('devices', []), 'clientDeviceType')
-          show('TOP USER AGENTS', z.get('userAgents', []), 'userAgent')
+          bot_visits = bot_requests = 0
+          humanish_visits = humanish_requests = 0
+          unclassified_visits = unclassified_requests = 0
+          known_bots = []
+
+          for row in z.get('userAgents', []):
+              ua = row.get('dimensions', {}).get('userAgent') or ''
+              req = row.get('count', 0)
+              visits = row.get('sum', {}).get('visits', 0)
+              if known_bot.search(ua):
+                  bot_visits += visits
+                  bot_requests += req
+                  known_bots.append((visits, req, ua))
+              elif visits > 0 and ua:
+                  humanish_visits += visits
+                  humanish_requests += req
+              else:
+                  unclassified_visits += visits
+                  unclassified_requests += req
+
+          scanner_requests = 0
+          scanner_paths = []
+          for row in z.get('paths', []):
+              path = row.get('dimensions', {}).get('clientRequestPath') or ''
+              req = row.get('count', 0)
+              if suspicious_path.search(path):
+                  scanner_requests += req
+                  scanner_paths.append((req, path))
+
+          print('\n=== GLASSESRESEARCH TRAFFIC CLASSIFIER ===')
+          print('Window: rolling 24 hours; Cloudflare requestSource=eyeball')
+          print('\nRAW TOTALS')
+          print(f'  Requests: {total_requests}')
+          print(f'  Visits:   {total_visits}')
+
+          print('\nVISIT CLASSIFICATION (heuristic; based on top user-agent groups)')
+          print(f'  Human-like visits:      {humanish_visits}')
+          print(f'  Known crawler visits:   {bot_visits}')
+          print(f'  Unclassified visits:    {unclassified_visits}')
+          print('  Note: browser user agents can be spoofed, so "human-like" is not a person count.')
+
+          print('\nREQUEST SIGNALS')
+          print(f'  Human-like UA requests: {humanish_requests}')
+          print(f'  Known crawler requests: {bot_requests}')
+          print(f'  Suspicious scan-path requests among top paths: {scanner_requests}')
+
+          print('\nTOP COUNTRIES')
+          for row in z.get('countries', [])[:12]:
+              print(f"  {row.get('dimensions', {}).get('clientCountryName') or '(unknown)'}: requests={row.get('count', 0)}, visits={row.get('sum', {}).get('visits', 0)}")
+
+          print('\nKNOWN CRAWLERS')
+          for visits, req, ua in sorted(known_bots, reverse=True)[:12]:
+              print(f'  visits={visits}, requests={req}: {ua}')
+
+          print('\nSUSPICIOUS SCAN PATHS')
+          for req, path in sorted(scanner_paths, reverse=True)[:20]:
+              print(f'  requests={req}: {path}')
+          if not scanner_paths:
+              print('  None found among top paths.')
           PY
