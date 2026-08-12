@@ -1,0 +1,22 @@
+name: waybackglasses
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - preservation/waybackglasses.trigger
+
+permissions:
+  contents: read
+
+jobs:
+  stamp-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Stamp current public site into Wayback Machine
+        run: python3 scripts/waybackglasses.py --root https://glassesresearch.org/ --max-pages 500 --delay 2.5
