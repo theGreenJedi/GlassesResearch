@@ -2,7 +2,15 @@
 
 The glossary is the canonical home for important nouns in the research: organizations, components, applications, standards, people, firmware, Bluetooth identifiers, photos, and other recurring entities.
 
-Models use stable `GLS-####` identities in [The List](../models/THE_LIST.md). The glossary holds the organizations, components, applications, standards, people, and other entities linked from those models.
+## What is a GLS ID?
+
+Models use stable `GLS-####` identities in [The List](../models/THE_LIST.md). A GLS ID is a **GlassesResearch reference number, not a manufacturer model number**. It gives each cataloged device a permanent project identity so the same device can be linked consistently across research, comparisons, lineages, historical records, issues, and source notes.
+
+The GLS ID does **not** replace real-world product nomenclature. Wherever evidence is available, model records should also preserve the manufacturer's official product name and searchable identifiers such as model numbers, SKUs or part numbers, FCC/regulatory model designations, OEM/internal identifiers, former or alternate names, regional names, rebrand names, and common spelling variants.
+
+This matters both for research and discovery: someone searching the web for an obscure model number should still be able to find the corresponding GlassesResearch record. Unknown identifiers remain unknown; GlassesResearch does not invent aliases for search traffic.
+
+The glossary holds the organizations, components, applications, standards, people, and other entities linked from those models.
 
 ## Core rule
 
