@@ -31,6 +31,7 @@ An open argument about wearable recording, surveillance, bystander rights, indiv
 ## Research tools
 
 - [**Find & compare smart glasses**](docs/COMPARISON_ENGINE.md) — rank close matches and compare devices side by side.
+- [**GlassesResearch Report Card**](docs/REPORT_CARD.md) — compare hardware, wearability, visual AI, software, HUD, openness, owner control, cloud independence, hackability, and value without hiding tradeoffs in one score.
 - [**Browse 121 models and generations**](models/THE_LIST.md) — the cross-vendor model index, past and present.
 - [**Model research chapters**](models/README.md) — deeper source-backed dossiers for selected devices and families.
 - [**Technology lineages**](lineages/README.md) — OEM, rebrand, firmware, app, and platform relationships across device families.
