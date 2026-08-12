@@ -32,11 +32,16 @@ COPY_FILES = (
 
 # Repository-maintenance documents remain in GitHub but are not part of the
 # public research site. Public pages should present research rather than
-# narrating internal planning, workflow, SEO, or editorial housekeeping.
+# narrating internal planning, workflow, SEO, editorial housekeeping, or
+# future framework design.
 PUBLIC_SITE_EXCLUDES = (
+    "docs/HOMEPAGE_DESIGN_NOTES.md",
+    "docs/KISS_WORKING_NOTES.md",
+    "docs/LEGACY_STRUCTURE_AUDIT.md",
     "docs/RESEARCH_AGENDA.md",
     "docs/ROADMAP_V1.md",
     "docs/SEO_DISCOVERABILITY.md",
+    "docs/WEBSITE.md",
     "docs/news/WORKFLOW.md",
 )
 
