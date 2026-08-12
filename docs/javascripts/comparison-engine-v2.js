@@ -23,6 +23,15 @@
       `<a href="${esc(src)}" target="_blank" rel="noopener">source${entry.sources.length > 1 ? ` ${i + 1}` : ''}</a>`).join(' · ')}</div>`;
   };
 
+  const researchLinks = (record) => {
+    const paths = record.public || {};
+    const links = [];
+    if (paths.profile) links.push(`<a href="${esc(paths.profile)}">Read profile</a>`);
+    if (paths.report_card) links.push(`<a href="${esc(paths.report_card)}">Report card</a>`);
+    if (paths.lineage) links.push(`<a href="${esc(paths.lineage)}">Lineage research</a>`);
+    return links.length ? `<div class="comparison-research-links">${links.join(' · ')}</div>` : '';
+  };
+
   Promise.all([
     fetch('../../data/comparisons.json', { cache: 'no-store' }).then((r) => {
       if (!r.ok) throw new Error(`Comparison data HTTP ${r.status}`);
@@ -81,7 +90,7 @@
 
     host.innerHTML = `
       <section class="discovery-panel">
-        <div class="discovery-heading"><h2>Find glasses that fit your constraints</h2><p>Choose what matters. Exact matches rise to the top; near-matches show which requirements they miss.</p></div>
+        <div class="discovery-heading"><h2>Find glasses that fit your constraints</h2><p>Choose what matters. Exact matches rise to the top; near-matches show which requirements they miss. Every canonical model links back into its editorial research.</p></div>
         <label class="discovery-search">Search models, brands, categories or hardware <input id="discovery-query" type="search" placeholder="e.g. AR1, Solos, display, camera"></label>
         <div class="discovery-constraints">${constraints.map((c) => `<label><input type="checkbox" value="${c.id}"> ${esc(c.label)}</label>`).join('')}</div>
         <div class="discovery-actions"><label><input id="exact-only" type="checkbox"> Exact matches only</label><button type="button" id="clear-filters">Clear filters</button></div>
@@ -90,7 +99,7 @@
       </section>
 
       <section class="compare-panel">
-        <div class="compare-heading"><h2>Compare side by side</h2><p>Compare two to four models. Turn on “differences only” when the table gets noisy.</p></div>
+        <div class="compare-heading"><h2>Compare side by side</h2><p>Compare two to four models. Turn on “differences only” when the table gets noisy. Profile, report-card, and lineage links stay attached to the selected devices.</p></div>
         <div class="comparison-controls">
           <label>Device A <select data-slot="0"></select></label>
           <label>Device B <select data-slot="1"></select></label>
@@ -101,6 +110,7 @@
           <button type="button" id="comparison-print">Print</button>
         </div>
         <p id="comparison-status" class="comparison-status"></p>
+        <div id="comparison-selected-research"></div>
         <div id="comparison-results"></div>
       </section>`;
 
@@ -112,6 +122,7 @@
     const compareSelects = [...host.querySelectorAll('.comparison-controls select[data-slot]')];
     const comparisonResults = host.querySelector('#comparison-results');
     const comparisonStatus = host.querySelector('#comparison-status');
+    const comparisonSelectedResearch = host.querySelector('#comparison-selected-research');
     const differencesOnly = host.querySelector('#differences-only');
 
     const optionHtml = records.map((r) => `<option value="${esc(r.id)}">${esc(r.maker)} ${esc(r.model)}</option>`).join('');
@@ -156,10 +167,10 @@
         const hits = checks.filter((x) => x.ok).map((x) => constraintById.get(x.id).label);
         const score = total ? `<strong>${matched}/${total} constraints matched</strong>` : `<strong>${esc(record.type || 'Smart glasses')}</strong>`;
         return `<article class="discovery-card ${total && matched === total ? 'exact-match' : ''}">
-          <div class="discovery-card-head"><div><h3>${esc(record.maker)} ${esc(record.model)}</h3><div class="discovery-meta">${esc(record.era || '')} · ${esc(record.state || '')} · ${esc(record.type || '')}</div></div><div class="match-score">${score}</div></div>
+          <div class="discovery-card-head"><div><h3>${esc(record.maker)} ${esc(record.model)}</h3><div class="discovery-meta">${esc(record.id)} · ${esc(record.era || '')} · ${esc(record.state || '')} · ${esc(record.type || '')}</div></div><div class="match-score">${score}</div></div>
           ${hits.length ? `<div class="match-hits">✓ ${esc(hits.join(' · '))}</div>` : ''}
           ${misses.length ? `<div class="match-misses">Missing / not documented: ${esc(misses.join(' · '))}</div>` : ''}
-          <button type="button" data-compare-id="${esc(record.id)}">Add to comparison</button>
+          <div class="discovery-card-actions"><button type="button" data-compare-id="${esc(record.id)}">Add to comparison</button>${researchLinks(record)}</div>
         </article>`;
       }).join('') || '<p>No models match the current search and filters.</p>';
 
@@ -174,6 +185,7 @@
       if (selected.length < 2) {
         comparisonResults.innerHTML = '<p>Select at least two different devices.</p>';
         comparisonStatus.textContent = '';
+        comparisonSelectedResearch.innerHTML = '';
         return;
       }
 
@@ -182,6 +194,10 @@
         if (selected[i]) url.searchParams.set(key, selected[i].id); else url.searchParams.delete(key);
       });
       history.replaceState({}, '', url);
+
+      comparisonSelectedResearch.innerHTML = selected.map((record) =>
+        `<div class="comparison-selected-device"><strong>${esc(record.id)} · ${esc(record.maker)} ${esc(record.model)}</strong>${researchLinks(record)}</div>`
+      ).join('');
 
       const grouped = new Map();
       for (const [fieldId, meta] of fieldMap.entries()) {
