@@ -3,7 +3,9 @@
 
 The human-maintained source of truth remains models/THE_LIST.md. This script
 parses every GLS record, validates the stable-ID ledger, and can emit a JSON
-representation for the website and downstream research tools.
+representation for the website and downstream research tools. The emitted
+records also carry public paths into the editorial profile, report-card, and
+lineage layers when those surfaces exist.
 """
 
 from __future__ import annotations
@@ -21,6 +23,8 @@ COUNT_RE = re.compile(r"\*\*Count:\*\*\s*(\d+)")
 ID_RE = re.compile(r"^GLS-(\d{4})$")
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 MARKDOWN_RE = re.compile(r"[`*_~]")
+PROFILE_HEADING_RE = re.compile(r"^##\s+(GLS-\d{4})\s+—\s+(.+?)\s*$", re.MULTILINE)
+REPORT_HEADING_RE = re.compile(r"^#{2,3}\s+(GLS-\d{4})\s+—\s+(.+?)\s*$", re.MULTILINE)
 
 
 def clean(value: str) -> str:
@@ -38,12 +42,62 @@ def links(value: str) -> list[dict[str, str]]:
     return found
 
 
+def slugify_heading(value: str) -> str:
+    """Approximate Python-Markdown/MkDocs heading IDs for our ASCII model headings."""
+    value = value.lower().replace("×", " ")
+    value = re.sub(r"[^a-z0-9]+", "-", value)
+    return value.strip("-")
+
+
+def public_research_paths() -> dict[str, dict[str, str]]:
+    paths: dict[str, dict[str, str]] = {}
+
+    for profile in sorted((ROOT / "models").glob("PROFILES*.md")):
+        text = profile.read_text(encoding="utf-8")
+        for match in PROFILE_HEADING_RE.finditer(text):
+            model_id = match.group(1)
+            heading = f"{model_id} — {match.group(2)}"
+            paths.setdefault(model_id, {}).setdefault(
+                "profile",
+                f"/models/{profile.stem}/#{slugify_heading(heading)}",
+            )
+
+    report_dir = ROOT / "docs" / "report-cards"
+    for report in sorted(report_dir.glob("*.md")):
+        text = report.read_text(encoding="utf-8")
+        for match in REPORT_HEADING_RE.finditer(text):
+            model_id = match.group(1)
+            heading = f"{model_id} — {match.group(2)}"
+            paths.setdefault(model_id, {}).setdefault(
+                "report_card",
+                f"/docs/report-cards/{report.stem}/#{slugify_heading(heading)}",
+            )
+
+        if report.name.startswith("LINEAGE_"):
+            for model_id in sorted(set(re.findall(r"\bGLS-\d{4}\b", text))):
+                paths.setdefault(model_id, {}).setdefault(
+                    "lineage",
+                    f"/docs/report-cards/{report.stem}/",
+                )
+
+    for lineage in sorted((ROOT / "lineages").glob("*.md")):
+        if lineage.name == "README.md":
+            continue
+        text = lineage.read_text(encoding="utf-8")
+        for model_id in sorted(set(re.findall(r"\bGLS-\d{4}\b", text))):
+            # Dedicated lineage chapters are preferred over report-card packets.
+            paths.setdefault(model_id, {})["lineage"] = f"/lineages/{lineage.stem}/"
+
+    return paths
+
+
 def parse(source: Path) -> tuple[int, list[dict[str, object]]]:
     text = source.read_text(encoding="utf-8")
     count_match = COUNT_RE.search(text)
     if not count_match:
         raise ValueError("THE_LIST.md is missing its declared Count")
     declared_count = int(count_match.group(1))
+    research_paths = public_research_paths()
 
     records: list[dict[str, object]] = []
     for line_number, line in enumerate(text.splitlines(), start=1):
@@ -70,6 +124,7 @@ def parse(source: Path) -> tuple[int, list[dict[str, object]]]:
                 "access": clean(access),
                 "evidence": clean(evidence.split(";", 1)[0].split(" | ", 1)[0]),
                 "links": links(evidence),
+                "public": research_paths.get(stable_id, {}),
                 "ledger_line": line_number,
             }
         )
@@ -108,6 +163,8 @@ def validate(declared_count: int, records: list[dict[str, object]]) -> None:
             errors.append(f"{record['id']}: evidence classification must not be empty")
         if not record["links"]:
             errors.append(f"{record['id']}: at least one research/source link is required")
+        if "profile" not in record.get("public", {}):
+            errors.append(f"{record['id']}: no public editorial profile path found")
 
     if errors:
         raise ValueError("device database validation failed:\n  " + "\n  ".join(errors))
@@ -115,7 +172,7 @@ def validate(declared_count: int, records: list[dict[str, object]]) -> None:
 
 def payload(records: list[dict[str, object]]) -> dict[str, object]:
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "canonical_source": "models/THE_LIST.md",
         "record_count": len(records),
         "records": records,
