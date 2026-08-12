@@ -69,7 +69,7 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Open research-inbox PR when new candidates exist
+      - name: Preserve research inbox branch and open PR when permitted
         if: steps.cadence.outputs.run == 'true' && steps.changes.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -85,15 +85,24 @@ jobs:
           git add research/news-candidates
           git commit -m "Collect institutional knowledge intake for ${DATE}"
           git push origin "$BRANCH"
-          gh pr create \
+
+          # Some repositories disable the GitHub setting that allows Actions to
+          # create pull requests. The branch itself is the durable inbox record,
+          # so preserve it and keep the collection run successful if PR creation
+          # is blocked. The Friday report discovers both PRs and inbox branches.
+          if gh pr create \
             --base main \
             --head "$BRANCH" \
             --title "Institutional knowledge intake — ${DATE}" \
-            --body "Automated research inbox only. Collect broadly, publish selectively. Core smart-glasses candidates may be promoted only after editorial review. Adjacent HCI candidates are retained as research radar and must not become public site content until a concrete smart-glasses/eyewear connection exists. Review dispositions: collected, watch, archived, published, superseded, rejected."
+            --body "Automated research inbox only. Collect broadly, publish selectively. Core smart-glasses candidates may be promoted only after editorial review. Adjacent HCI candidates are retained as research radar and must not become public site content until a concrete smart-glasses/eyewear connection exists. Review dispositions: collected, watch, archived, published, superseded, rejected."; then
+            echo "Research-inbox PR opened."
+          else
+            echo "PR creation is not permitted for GitHub Actions; preserved intake on branch ${BRANCH}."
+          fi
 
       - name: No new candidates
         if: steps.cadence.outputs.run == 'true' && steps.changes.outputs.changed == 'false'
-        run: echo "No new research-inbox candidates; no PR opened."
+        run: echo "No new research-inbox candidates; no branch or PR opened."
 
       - name: Inactive DST counterpart
         if: steps.cadence.outputs.run == 'false'
