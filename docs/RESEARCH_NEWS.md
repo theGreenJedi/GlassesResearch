@@ -50,7 +50,7 @@ Hackaday summarized an iFixit teardown of Meta's Ray-Ban Display glasses. The te
 
 **Why it matters:** teardown evidence helps separate theoretical owner control from practical owner control. A device may be physically openable while still being difficult to repair because parts, documentation, firmware access, or calibration tooling are unavailable.
 
-Source: [Hackaday — The Fascinating Waveguide Technology Inside Meta's Ray-Ban Display Glasses](https://hackaday.com/2025/10/09/the-fascinating-waveguide-technology-inside-meta-s-ray-ban-display-glasses/)
+Source: [Hackaday — The Fascinating Waveguide Technology Inside Meta's Ray-Ban Display Glasses](https://hackaday.com/2025/10/09/the-fascinating-waveguide-technology-inside-metas-ray-ban-display-glasses/)
 
 ---
 
