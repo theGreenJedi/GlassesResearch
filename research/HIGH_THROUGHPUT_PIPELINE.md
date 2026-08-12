@@ -24,10 +24,27 @@ Evidence priority remains:
 
 1. manufacturer/developer documentation and manuals
 2. SDK/API/firmware/source repositories
-3. regulatory or archived first-party material
+3. regulatory or **archived first-party material, including Internet Archive Wayback Machine captures of manufacturer, developer, support, manual, and launch pages**
 4. credible independent testing
 5. commercial/secondary evidence when primary material is unavailable
 6. GlassesResearch hands-on observations, clearly identified as such
+
+#### Wayback / web-archive recovery
+
+For discontinued, renamed, region-removed, or poorly documented products, check the Internet Archive Wayback Machine before downgrading the evidence quality or leaving a field unresolved. Treat a dated capture of a manufacturer's own page as archived first-party evidence and preserve both the original URL and the archive capture URL in the evidence package.
+
+Use archived material especially to recover:
+
+- original product/specification pages
+- launch announcements and generation names
+- manuals and support pages
+- SDK/API/developer documentation
+- firmware/download pages and historical compatibility claims
+- pricing, availability, and product-positioning context when relevant to a time-specific Value judgment
+
+Archive captures do not make an ambiguous claim certain: record capture date and provenance, distinguish archived manufacturer claims from independent verification, and cross-check conflicting captures or later corrections when possible.
+
+For investigation-heavy models, a dead current manufacturer URL is therefore a **Wayback trigger**, not the end of the research path.
 
 ### 3. Normalize canonical facts
 
@@ -51,6 +68,8 @@ The paragraph remains an output of the evidence and Report Card, not a substitut
 
 A poorly documented model must not block an otherwise strong batch. Move models requiring archival work, uncertain OEM identification, dead manufacturer pages, contradictory evidence, or difficult regional sourcing into a separate investigation-heavy queue. Record the reason and continue the fast/evidence-rich queue.
 
+The investigation-heavy queue should explicitly run Wayback/web-archive recovery against known historical manufacturer URLs, likely product slugs, support domains, and developer portals before declaring primary evidence unavailable.
+
 ### 7. Repository transaction budget
 
 For a normal 12–20 model packet:
@@ -71,7 +90,7 @@ Report Cards should migrate toward machine-readable per-model records containing
 - canonical identity and lineage
 - ten dimension scores/statuses
 - evidence notes per dimension
-- primary-source URLs
+- primary-source URLs, including archive capture URLs where used
 - canonical corrections
 - editorial audit state
 
