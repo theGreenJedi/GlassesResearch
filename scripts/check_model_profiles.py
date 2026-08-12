@@ -12,8 +12,8 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-THE_LIST = ROOT / "models" / "THE_LIST.md"
-PROFILES = ROOT / "models" / "PROFILES.md"
+MODELS = ROOT / "models"
+THE_LIST = MODELS / "THE_LIST.md"
 ID_RE = re.compile(r"\bGLS-\d{4}\b")
 PROFILE_HEADING_RE = re.compile(r"^##\s+(GLS-\d{4})\s+—\s+", re.MULTILINE)
 
@@ -24,7 +24,8 @@ def main() -> int:
     args = parser.parse_args()
 
     canonical_text = THE_LIST.read_text(encoding="utf-8")
-    profile_text = PROFILES.read_text(encoding="utf-8")
+    profile_files = sorted(MODELS.glob("PROFILES*.md"))
+    profile_text = "\n".join(path.read_text(encoding="utf-8") for path in profile_files)
 
     canonical = sorted(set(ID_RE.findall(canonical_text)))
     profiled = sorted(set(PROFILE_HEADING_RE.findall(profile_text)))
@@ -33,6 +34,7 @@ def main() -> int:
     extra = sorted(set(profiled) - set(canonical))
 
     print(f"Canonical models: {len(canonical)}")
+    print(f"Editorial profile volumes: {len(profile_files)}")
     print(f"Editorial profiles: {len(profiled)}")
     print(f"Coverage: {len(profiled)}/{len(canonical)}")
 
