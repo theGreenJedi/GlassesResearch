@@ -33,6 +33,7 @@ Each lineage is analyzed as a research subject in its own right: current models,
 
 - [HeyCyan](HEYCYAN.md) — shared companion/software ecosystem spanning W610 and retail-branded devices including Anko.
 - [Meta smart glasses](META.md) — Ray-Ban and Oakley smart-glasses generations built around Meta's wearable platform.
+- [Google Glass](GOOGLE_GLASS.md) — Explorer Edition through Enterprise Edition 2; a foundational corporate/product lineage spanning consumer experimentation and enterprise assisted reality.
 - [Vuzix](VUZIX.md) — corporate lineage split into the Z100 phone-peripheral branch and standalone Android wearable-computer branches including M400/M4000, Blade 2, Shield, and LX1.
 - [XREAL / Nreal](XREAL.md) — Nreal/XREAL personal-display and spatial-computing glasses.
 - [Brilliant Labs](BRILLIANT_LABS.md) — Monocle, Frame, and Halo open/developer lineage.
