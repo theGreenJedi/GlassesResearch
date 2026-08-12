@@ -2,6 +2,10 @@
 
 [`The List`](THE_LIST.md) is the canonical index of 121 purchasable smart-glasses models and generations. These chapters provide deeper source-backed research for selected models and families.
 
+## Read the models, not just the database
+
+[**Smart-Glasses Model Profiles**](PROFILES.md) is the human-readable layer: concise evidence-backed explanations of what each device really is, where it shines, and what tradeoffs matter. The target is one useful profile for every canonical model. If we cannot write a defensible paragraph yet, that model is flagged for more research rather than filled with generic prose.
+
 ## Current research chapters
 
 | Model / family | ID(s) | What is documented |
@@ -28,6 +32,7 @@
 
 ## Cross-model research
 
+- [Human-readable model profiles](PROFILES.md)
 - [Technology lineages](../lineages/README.md)
 - [Retail Rebrands & OEM Ecosystems](RETAIL_REBRANDS.md)
 - [Compare devices](../docs/COMPARISON_ENGINE.md)
