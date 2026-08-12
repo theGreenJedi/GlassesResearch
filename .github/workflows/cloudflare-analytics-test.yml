@@ -1,0 +1,81 @@
+name: Cloudflare Analytics Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-cloudflare-analytics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query Cloudflare GraphQL Analytics API
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ -z "${CLOUDFLARE_API_TOKEN:-}" ]; then
+            echo "CLOUDFLARE_API_TOKEN is not available."
+            exit 1
+          fi
+          if [ -z "${CLOUDFLARE_ZONE_ID:-}" ]; then
+            echo "CLOUDFLARE_ZONE_ID is not available."
+            exit 1
+          fi
+
+          START_DATE=$(date -u -d '7 days ago' +%F)
+          END_DATE=$(date -u +%F)
+
+          cat > /tmp/query.json <<EOF
+          {
+            "query": "query { viewer { zones(filter: {zoneTag: \"${CLOUDFLARE_ZONE_ID}\"}) { httpRequests1dGroups(limit: 10, filter: {date_geq: \"${START_DATE}\", date_leq: \"${END_DATE}\"}, orderBy: [date_ASC]) { dimensions { date } sum { requests pageViews } uniq { uniques } } } } }"
+          }
+          EOF
+
+          HTTP_STATUS=$(curl --silent --show-error \
+            --output /tmp/response.json \
+            --write-out '%{http_code}' \
+            --request POST \
+            --url https://api.cloudflare.com/client/v4/graphql \
+            --header "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            --header 'Content-Type: application/json' \
+            --data @/tmp/query.json)
+
+          echo "Cloudflare HTTP status: ${HTTP_STATUS}"
+
+          if [ "${HTTP_STATUS}" != "200" ]; then
+            echo "Cloudflare request failed."
+            cat /tmp/response.json
+            exit 1
+          fi
+
+          python - <<'PY'
+          import json
+          import sys
+
+          with open('/tmp/response.json', encoding='utf-8') as f:
+              payload = json.load(f)
+
+          if payload.get('errors'):
+              print('Cloudflare GraphQL returned errors:')
+              print(json.dumps(payload['errors'], indent=2))
+              sys.exit(1)
+
+          zones = payload.get('data', {}).get('viewer', {}).get('zones', [])
+          if not zones:
+              print('Authentication succeeded, but no matching zone was returned.')
+              sys.exit(1)
+
+          groups = zones[0].get('httpRequests1dGroups', [])
+          print('Cloudflare authentication and analytics query succeeded.')
+          print(f'Daily analytics rows returned: {len(groups)}')
+          for row in groups:
+              date = row.get('dimensions', {}).get('date')
+              sums = row.get('sum', {})
+              uniq = row.get('uniq', {})
+              print(f"{date}: requests={sums.get('requests', 0)}, pageViews={sums.get('pageViews', 0)}, uniques={uniq.get('uniques', 0)}")
+          PY
