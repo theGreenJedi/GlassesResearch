@@ -7,7 +7,9 @@ on:
       - 'models/**'
       - 'lineages/**'
       - 'mkdocs.yml'
+      - 'scripts/build_device_database.py'
       - 'scripts/check_catalog_consistency.py'
+      - 'scripts/check_model_profiles.py'
   push:
     branches: [main]
     paths:
@@ -15,7 +17,9 @@ on:
       - 'models/**'
       - 'lineages/**'
       - 'mkdocs.yml'
+      - 'scripts/build_device_database.py'
       - 'scripts/check_catalog_consistency.py'
+      - 'scripts/check_model_profiles.py'
   workflow_dispatch:
 
 permissions:
@@ -28,3 +32,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: Check canonical model and lineage propagation
         run: python scripts/check_catalog_consistency.py
+      - name: Require an editorial profile for every canonical model
+        run: python scripts/check_model_profiles.py --strict
+      - name: Validate public device research paths
+        run: python scripts/build_device_database.py --validate-only
