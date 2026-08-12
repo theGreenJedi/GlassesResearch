@@ -100,6 +100,54 @@ HUAWEI Eyewear 2 shows how mature display-less smart glasses can become when the
 
 Sources: [Huawei — Eyewear 2 specifications](https://consumer.huawei.com/en/audio/huawei-eyewear-2/specs/), [Huawei — Eyewear 2](https://consumer.huawei.com/en/audio/huawei-eyewear-2/)
 
+## GLS-0026 — Solos AirGo 2
+
+AirGo 2 belongs to the audio-first branch of Solos' ecosystem: lightweight connected eyewear built around microphones, open-ear audio, sensors and phone-side intelligence rather than a display or outward-facing camera. What makes the family more interesting than a generic Bluetooth headset is the platform continuity around it—Solos later exposed BLE control, sensor access and mobile SDK pathways across newer AirGo generations. AirGo 2 therefore matters as an early step toward **consumer glasses that can become programmable interfaces rather than sealed accessories**. Its limitation is generational: it predates the richer camera and streaming capabilities of later AirGo V models, so it is best understood as the foundation of the ecosystem rather than its technical peak.
+
+Sources: [Solos product site](https://solosglasses.com/), [GlassesResearch — Solos AirGo family](SolosAirGo/README.md)
+
+## GLS-0027 — Solos AirGo 3
+
+AirGo 3 is one of the more compelling display-less smart-glasses designs because Solos treats audio eyewear as a software platform instead of merely a pair of Bluetooth speakers. The current developer program covers AirGo 3 with BLE control, microphone and audio I/O, motion and compass sensors, touch gestures and voice-activation detection through mobile SDKs. There is no camera or HUD, but the absence of those components keeps the product focused on **voice, hearing and sensor-driven interaction while preserving ordinary-eyewear form**. For owner-control research, the important distinction is that developers have documented interfaces to work with rather than being forced to reverse-engineer a closed companion app from scratch.
+
+Source: [Solos SDK / Developer Program](https://solosglasses.com/pages/developers)
+
+## GLS-0028 — Solos AirGo Vision
+
+AirGo Vision is where Solos' audio-glasses lineage crosses into visual AI. By adding a camera to a platform that already exposes audio, microphones, sensors and touch, the glasses can act as a wearable perception endpoint while the paired phone or external services provide the heavier intelligence. Solos' developer documentation exposes camera/photo access on supported AirGo V hardware, which makes Vision more interesting to us than a camera whose output is trapped inside one vendor application. The architecture is still phone- and service-assisted rather than a self-contained local-AI computer, but that can be a strength: **the glasses become sensors and interfaces while the owner has more freedom over where reasoning happens**.
+
+Source: [Solos SDK / Developer Program](https://solosglasses.com/pages/developers)
+
+## GLS-0029 — Solos AirGo V2
+
+AirGo V2 pushes Solos' developer-friendly camera architecture further by adding Wi-Fi data transport, video streaming and recording, webhooks and RTMP endpoints to the BLE/audio/sensor foundation. That combination makes it unusually useful for experimentation because the camera is not just there to feed a single branded assistant; developers can route media and events into their own workflows. In practical terms, V2 is less about putting a giant computer in the frame and more about building a **networked wearable sensor node with open integration points**. The tradeoff is that richer streaming naturally increases network and battery dependence, but from an owner-control perspective the ability to choose endpoints is far more valuable than a closed cloud-only pipeline.
+
+Source: [Solos SDK / Developer Program](https://solosglasses.com/pages/developers)
+
+## GLS-0039 — W610 / HeyCyan ecosystem
+
+W610 is the model that turned GlassesResearch from cataloging into hands-on investigation. Our unit identifies over Bluetooth as `HeyCyan Glasses`, concentrates most electronics in the right temple, uses two right-side controls and a hinge-area status LED, and belongs to a broader OEM/rebrand ecosystem rather than a single clean retail identity. The compelling question is not whether its stock assistant is impressive; it is whether inexpensive commodity camera/audio glasses can be **reclaimed as an owner-controlled wearable interface**. That is why we have deliberately prioritized BLE behavior, firmware, lineage and community tooling over simply installing the vendor app. W610's report card remains incomplete because direct evidence matters more here than filling blanks with assumptions.
+
+Sources: [GlassesResearch — W610 chapter](W610/README.md), [HeyCyan lineage](../lineages/HEYCYAN.md)
+
+## GLS-0048 — Even Realities G2
+
+Even Realities G2 is one of the clearest answers to the question, “Can smart glasses still just look like glasses?” At about 36 g, it packages binocular 640×350 green MicroLED waveguides, four microphones, BLE, IP65 protection and prescription support into a frame designed around discretion rather than camera capture. There is no outward-facing camera and no speaker, so G2's job is **quiet visual information rather than recording the world**. That gives it exceptional wearability and a focused HUD experience, but the elegance comes with a control tradeoff: many functions rely on the Even companion app, internet connectivity and cloud-assisted services rather than an open firmware or broad developer stack.
+
+Sources: [Even G2 specifications](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs), [GlassesResearch — Even G2](EvenG2/README.md)
+
+## GLS-0051 — Brilliant Labs Frame
+
+Brilliant Labs Frame is one of the rare smart-glasses products where curiosity does not immediately run into a locked door. The glasses combine a 640×400 color OLED, 720p camera, microphone, sensors, Bluetooth MCU and FPGA with public schematics, block diagrams, a documented BLE protocol, Python/Flutter/Lua tooling, public firmware source and even a documented SWD debug path. That makes Frame less polished as invisible consumer eyewear than some closed competitors, but dramatically more valuable as **a computer the owner is actually invited to understand and modify**. Its modest battery and relatively conspicuous electronics are real compromises; its openness is not marketing garnish but a defining hardware feature.
+
+Sources: [Brilliant Labs Frame hardware manual](https://docs.brilliant.xyz/frame/hardware/), [GlassesResearch — Brilliant Frame](BrilliantFrame/README.md)
+
+## GLS-0052 — Brilliant Labs Halo
+
+Halo takes Brilliant Labs' open-development philosophy and aims it at a more complete everyday AI-glasses platform. Brilliant describes a color micro-OLED display, bone-conduction audio, dual microphones, IMU, optical sensing and an Alif Balletto B1 processor with Cortex-M55 CPU and NPU, all on a ZephyrOS/Lua software foundation with roughly 14 hours of advertised battery life. The important part is not just the component list: Halo is being positioned as **open hardware and software with enough local compute to make on-device AI a first-class possibility**. Because it remains a newer platform, shipping maturity and real-world software quality still need evidence, but architecturally it represents exactly the direction GlassesResearch cares about—capable eyewear without assuming the vendor must own every layer.
+
+Sources: [Brilliant Labs](https://brilliant.xyz/), [GlassesResearch — Brilliant Halo](BrilliantHalo/README.md)
+
 ---
 
 ## Coverage rule
