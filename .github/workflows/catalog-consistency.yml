@@ -1,0 +1,30 @@
+name: Catalog consistency
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'models/**'
+      - 'lineages/**'
+      - 'mkdocs.yml'
+      - 'scripts/check_catalog_consistency.py'
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'models/**'
+      - 'lineages/**'
+      - 'mkdocs.yml'
+      - 'scripts/check_catalog_consistency.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  consistency:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check canonical model and lineage propagation
+        run: python scripts/check_catalog_consistency.py
