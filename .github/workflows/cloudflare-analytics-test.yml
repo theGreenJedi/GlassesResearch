@@ -27,14 +27,11 @@ jobs:
             exit 1
           fi
 
-          START=$(date -u -d '7 days ago' +%FT%TZ)
-          END=$(date -u +%FT%TZ)
-
           python - <<'PY'
           import json, os
 
           zone = os.environ['CLOUDFLARE_ZONE_ID']
-          start = os.popen("date -u -d '7 days ago' +%FT%TZ").read().strip()
+          start = os.popen("date -u -d '24 hours ago' +%FT%TZ").read().strip()
           end = os.popen("date -u +%FT%TZ").read().strip()
 
           query = '''query TrafficBreakdown($zoneTag: string, $filter: filter) {
@@ -117,7 +114,7 @@ jobs:
 
           z = zones[0]
           print('\n=== CLOUDFLARE END-USER TRAFFIC DIAGNOSTIC ===')
-          print('Filter: requestSource=eyeball; rolling 7 days')
+          print('Filter: requestSource=eyeball; rolling 24 hours')
 
           totals = z.get('totals', [])
           if totals:
