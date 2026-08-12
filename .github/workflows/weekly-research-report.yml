@@ -37,7 +37,7 @@ jobs:
 
       - name: Check out repository
         if: steps.cadence.outputs.run == 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install report dependencies
         if: steps.cadence.outputs.run == 'true'
@@ -57,7 +57,7 @@ jobs:
 
       - name: Upload Friday report
         if: steps.cadence.outputs.run == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: glassesresearch-weekly-report
           path: weekly-report.md
