@@ -63,6 +63,9 @@ def candidate_key(c):
         return 'url:'+str(c['url']).strip().lower().rstrip('/')
     return 'title:'+re.sub(r'\s+',' ',str(c.get('title','')).strip().lower())
 
+def lane_rank(lane):
+    return {'core_glasses':0,'adjacent_hci':1,'research_radar':2}.get(lane,3)
+
 def collector():
     repo=os.environ.get('GITHUB_REPOSITORY','')
     headers={'Authorization':f"Bearer {os.environ.get('GH_TOKEN','')}",'Accept':'application/vnd.github+json'}
@@ -70,7 +73,7 @@ def collector():
     prs=[]; branches=[]; raw_candidates=0
     raw_scope_counts=defaultdict(int); source_errors=0
     if not repo:
-        return {'prs':prs,'branches':branches,'raw_count':0,'unique_count':0,'repeat_observations':0,'repeated_candidates':0,'raw_scope_counts':{},'unique_scope_counts':{},'source_errors':0,'latest_new':0,'latest_repeat':0}
+        return {'prs':prs,'branches':branches,'raw_count':0,'unique_count':0,'repeat_observations':0,'repeated_candidates':0,'raw_scope_counts':{},'unique_scope_counts':{},'source_errors':0,'latest_new':0,'latest_repeat':0,'ranked_candidates':[]}
 
     r=requests.get(f'https://api.github.com/repos/{repo}/pulls',headers=headers,params={'state':'all','per_page':100,'sort':'updated','direction':'desc'},timeout=30)
     if r.ok:
@@ -109,7 +112,8 @@ def collector():
             branches.append(branch)
 
     branches.sort(key=lambda b:(b['date'],b['name']))
-    seen=set(); occurrence_counts=defaultdict(int); unique_scope_counts=defaultdict(int)
+    latest_name=branches[-1]['name'] if branches else None
+    seen=set(); occurrence_counts=defaultdict(int); unique_scope_counts=defaultdict(int); records={}
     for b in branches:
         for c in b['candidates']:
             key=candidate_key(c)
@@ -120,7 +124,29 @@ def collector():
                 seen.add(key); b['new_count']+=1
                 lane=c.get('scope_lane') or c.get('source_lane') or 'unknown'
                 unique_scope_counts[lane]+=1
+            score=int(c.get('materiality_score',0) or 0)
+            lane=c.get('scope_lane') or c.get('source_lane') or 'unknown'
+            rec=records.get(key)
+            if rec is None:
+                records[key]={
+                    'key':key,'title':c.get('title') or '(untitled)','url':c.get('url') or '',
+                    'source':c.get('source') or 'unknown','lane':lane,'materiality_score':score,
+                    'publication_eligible':bool(c.get('publication_eligible')),'first_seen':b['name'],
+                    'last_seen':b['name'],'occurrences':1,'seen_latest':b['name']==latest_name,
+                    'new_latest':b['name']==latest_name
+                }
+            else:
+                rec['last_seen']=b['name']; rec['occurrences']+=1; rec['seen_latest']=rec['seen_latest'] or b['name']==latest_name
+                if score>rec['materiality_score']:
+                    rec['materiality_score']=score
+                if lane_rank(lane)<lane_rank(rec['lane']):
+                    rec['lane']=lane
+                rec['publication_eligible']=rec['publication_eligible'] or bool(c.get('publication_eligible'))
+                if not rec['url'] and c.get('url'): rec['url']=c['url']
+                if rec['source']=='unknown' and c.get('source'): rec['source']=c['source']
 
+    ranked=list(records.values())
+    ranked.sort(key=lambda c:(-c['materiality_score'],lane_rank(c['lane']),0 if c['new_latest'] else 1,-c['occurrences'],c['title'].lower()))
     unique_count=len(seen)
     repeat_observations=max(raw_candidates-unique_count,0)
     repeated_candidates=sum(1 for n in occurrence_counts.values() if n>1)
@@ -130,7 +156,8 @@ def collector():
         'repeat_observations':repeat_observations,'repeated_candidates':repeated_candidates,
         'raw_scope_counts':dict(raw_scope_counts),'unique_scope_counts':dict(unique_scope_counts),
         'source_errors':source_errors,'latest_new':latest['new_count'] if latest else 0,
-        'latest_repeat':latest['repeat_count'] if latest else 0,'latest_name':latest['name'] if latest else None
+        'latest_repeat':latest['repeat_count'] if latest else 0,'latest_name':latest_name,
+        'ranked_candidates':ranked
     }
 
 def main():
@@ -159,7 +186,19 @@ def main():
         count='unknown' if b['candidate_count'] is None else b['candidate_count']
         mix=', '.join(f'{k}={v}' for k,v in sorted(b['scope_counts'].items())) or 'scope mix unavailable'
         lines.append(f'- `{b["name"]}` — {count} observations; {b["new_count"]} new / {b["repeat_count"]} previously seen ({mix})')
-    lines += ['','## 4. Friday review checklist','','- Investigate surprising or high-position search queries.','- Review collector candidates and promote only source-backed material.','- Prioritize new candidates while treating repeat sightings as possible corroboration.','- Note pages gaining impressions but not clicks.','- Check traffic for obvious crawler/scanner inflation before interpreting growth.','- Turn genuine ecosystem gaps into model, lineage, development, timeline, or research work.','']
+
+    lines += ['','### Ranked candidate survey — all unique candidates','',
+              '> Nothing is hidden from the survey. Ranking uses the collector’s existing materiality score as the primary signal; ties favor core-glasses relevance, then candidates first seen in the latest intake, then repeated sightings as corroboration.','']
+    if not co['ranked_candidates']:
+        lines.append('- No candidates available.')
+    for i,c in enumerate(co['ranked_candidates'],1):
+        status='NEW' if c['new_latest'] else ('SEEN AGAIN' if c['occurrences']>1 else 'EARLIER')
+        title=str(c['title']).replace('[','\\[').replace(']','\\]')
+        linked=f'[{title}]({c["url"]})' if c['url'] else title
+        eligibility='public-review eligible' if c['publication_eligible'] else 'research inbox'
+        lines.append(f'{i}. **{linked}** — interest **{c["materiality_score"]}** · `{c["lane"]}` · **{status}** · seen {c["occurrences"]}x · {eligibility} · source `{c["source"]}`')
+
+    lines += ['','## 4. Friday review checklist','','- Survey the full ranked candidate list; do not discard lower-ranked items solely because of rank.','- Investigate surprising or high-position search queries.','- Review collector candidates and promote only source-backed material.','- Prioritize new candidates while treating repeat sightings as possible corroboration.','- Note pages gaining impressions but not clicks.','- Check traffic for obvious crawler/scanner inflation before interpreting growth.','- Turn genuine ecosystem gaps into model, lineage, development, timeline, or research work.','']
     open(OUT,'w',encoding='utf-8').write('\n'.join(lines)); print(open(OUT,encoding='utf-8').read())
 
 if __name__=='__main__':
