@@ -1,6 +1,13 @@
 # Model Research Chapters
 
-[`The List`](THE_LIST.md) is the canonical index of 121 purchasable smart-glasses models and generations. These chapters provide deeper source-backed research for selected models and families.
+[`The List`](THE_LIST.md) is the canonical smart-glasses index. Following the 2026-08-12 lineage reconciliation, the smart-glasses ledger contains **145** purchasable models and generations; the stable additions `GLS-0122` through `GLS-0145` are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md). Devices that belong to the same augmented-human research universe but are not fundamentally eyewear live in the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) and are never silently included in the smart-glasses count.
+
+## Canonical catalogs
+
+- [**Smart glasses — The List**](THE_LIST.md) — eyewear only; stable `GLS-####` identifiers.
+- [**2026-08-12 reconciliation ledger**](THE_LIST_RECONCILIATION_2026-08-12.md) — stable IDs and admission decisions from the completed lineage queue.
+- [**Adjacent Wearable-HCI Catalog**](ADJACENT_WEARABLES.md) — headsets, helmets, over-ear AR, eyeglass-mounted modules and future non-eyewear form factors; stable `ADJ-####` identifiers.
+- [**Wearable-HCI taxonomy**](../docs/taxonomy/WEARABLE_HCI.md) — the form-factor and shared-evidence rules governing all catalogs.
 
 ## Read the models, not just the database
 
@@ -39,6 +46,11 @@ Additional editorial volumes continue the same encyclopedia:
 | [Snap Spectacles 5](SnapSpectacles5/README.md) | GLS-0068 | Spectacles development platform, device APIs, compatibility matrix and public sample code. |
 | [XREAL One](XREALOne/README.md) | GLS-0074 | Micro-OLED display, wired host architecture, X1 compute, audio, spatial modes, SDK and firmware guidance. |
 | [Anko Camera Glasses](AnkoCameraGlasses/README.md) | GLS-0120 | Kmart Australia retail availability, HeyCyan software relationship, capabilities supported by reporting, and the boundary between software-platform evidence and unproven hardware equivalence. |
+| [ThirdEye X-series](ThirdEyeXSeries/README.md) | GLS-0131–0133 | X1/X2/Alpha1 lineage boundaries, commercial evidence and generation-specific scoring; MIDAS routed to the adjacent catalog. |
+
+## Completed lineage packets awaiting or supporting chapter-level expansion
+
+The report-card library now contains lineage-first evidence packages for ODG R-series, Recon Jet, Optinvent ORA, Toshiba/Dynabook dynaEdge AR100, DAQRI, Lenovo ThinkReality A6, ThirdEye, Pivothead, Mutrics, Chamelo, NuEyes, OrCam, Envision, Microsoft HoloLens and Magic Leap. Canonical ID assignments and shelf routing are summarized in the [reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md).
 
 ## Cross-model research
 
