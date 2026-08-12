@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Check that every canonical GLS model eventually receives a useful editorial profile.
 
-This guard is intentionally non-failing while the 121-model editorial pass is in progress.
+This guard is intentionally non-failing while the canonical editorial pass is in progress.
 Use --strict once coverage reaches 100% to make missing profiles a CI failure.
+The canonical model total is always read from models/THE_LIST.md rather than hard-coded.
 """
 
 from __future__ import annotations
