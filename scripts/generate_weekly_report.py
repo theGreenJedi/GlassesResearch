@@ -56,14 +56,21 @@ def search_console():
     queries=query(['query'],50); pages=query(['page'],25); totals=query([],1); total=totals[0] if totals else {}
     return {'start':start,'end':end,'queries':queries,'pages':pages,'clicks':total.get('clicks',0),'impressions':total.get('impressions',0),'ctr':total.get('ctr',0),'position':total.get('position',0)}
 
+def candidate_key(c):
+    if c.get('id'):
+        return 'id:'+str(c['id'])
+    if c.get('url'):
+        return 'url:'+str(c['url']).strip().lower().rstrip('/')
+    return 'title:'+re.sub(r'\s+',' ',str(c.get('title','')).strip().lower())
+
 def collector():
     repo=os.environ.get('GITHUB_REPOSITORY','')
     headers={'Authorization':f"Bearer {os.environ.get('GH_TOKEN','')}",'Accept':'application/vnd.github+json'}
     cutoff=datetime.now(timezone.utc)-timedelta(days=7)
-    prs=[]; branches=[]; total_candidates=0
-    scope_counts=defaultdict(int); source_errors=0
+    prs=[]; branches=[]; raw_candidates=0
+    raw_scope_counts=defaultdict(int); source_errors=0
     if not repo:
-        return {'prs':prs,'branches':branches,'candidate_count':0,'scope_counts':{},'source_errors':0}
+        return {'prs':prs,'branches':branches,'raw_count':0,'unique_count':0,'repeat_observations':0,'repeated_candidates':0,'raw_scope_counts':{},'unique_scope_counts':{},'source_errors':0,'latest_new':0,'latest_repeat':0}
 
     r=requests.get(f'https://api.github.com/repos/{repo}/pulls',headers=headers,params={'state':'all','per_page':100,'sort':'updated','direction':'desc'},timeout=30)
     if r.ok:
@@ -83,7 +90,7 @@ def collector():
             except ValueError:
                 continue
             if intake_date < (date.today()-timedelta(days=7)): continue
-            branch={'name':name,'date':m.group(1),'candidate_count':None,'scope_counts':{},'source_errors':None}
+            branch={'name':name,'date':m.group(1),'candidate_count':None,'scope_counts':{},'source_errors':None,'candidates':[],'new_count':0,'repeat_count':0}
             file_url=f'https://api.github.com/repos/{repo}/contents/research/news-candidates/{m.group(1)}.json'
             fr=requests.get(file_url,headers=headers,params={'ref':name},timeout=30)
             if fr.ok:
@@ -93,14 +100,38 @@ def collector():
                     branch['candidate_count']=int(data.get('candidate_count',0))
                     branch['scope_counts']=data.get('scope_counts',{}) or {}
                     branch['source_errors']=len(data.get('collector_errors',[]) or [])
-                    total_candidates += branch['candidate_count']
+                    branch['candidates']=data.get('candidates',[]) or []
+                    raw_candidates += branch['candidate_count']
                     source_errors += branch['source_errors']
-                    for k,v in branch['scope_counts'].items(): scope_counts[k]+=int(v)
+                    for k,v in branch['scope_counts'].items(): raw_scope_counts[k]+=int(v)
                 except Exception:
                     pass
             branches.append(branch)
 
-    return {'prs':prs,'branches':branches,'candidate_count':total_candidates,'scope_counts':dict(scope_counts),'source_errors':source_errors}
+    branches.sort(key=lambda b:(b['date'],b['name']))
+    seen=set(); occurrence_counts=defaultdict(int); unique_scope_counts=defaultdict(int)
+    for b in branches:
+        for c in b['candidates']:
+            key=candidate_key(c)
+            occurrence_counts[key]+=1
+            if key in seen:
+                b['repeat_count']+=1
+            else:
+                seen.add(key); b['new_count']+=1
+                lane=c.get('scope_lane') or c.get('source_lane') or 'unknown'
+                unique_scope_counts[lane]+=1
+
+    unique_count=len(seen)
+    repeat_observations=max(raw_candidates-unique_count,0)
+    repeated_candidates=sum(1 for n in occurrence_counts.values() if n>1)
+    latest=branches[-1] if branches else None
+    return {
+        'prs':prs,'branches':branches,'raw_count':raw_candidates,'unique_count':unique_count,
+        'repeat_observations':repeat_observations,'repeated_candidates':repeated_candidates,
+        'raw_scope_counts':dict(raw_scope_counts),'unique_scope_counts':dict(unique_scope_counts),
+        'source_errors':source_errors,'latest_new':latest['new_count'] if latest else 0,
+        'latest_repeat':latest['repeat_count'] if latest else 0,'latest_name':latest['name'] if latest else None
+    }
 
 def main():
     cf=cloudflare(); sc=search_console(); co=collector()
@@ -114,17 +145,21 @@ def main():
     lines += ['','### Search-result pages','']
     if not sc['pages']: lines.append('- No finalized page rows yet.')
     for r in sc['pages'][:15]: lines.append(f'- `{(r.get("keys") or ["(unknown)"])[0]}` — {r.get("clicks",0):g} clicks, {r.get("impressions",0):g} impressions, position {r.get("position",0):.2f}')
-    lines += ['','## 3. Research collector — last 7 days','',f'- Intake PRs touched: **{len(co["prs"])}**',f'- Preserved intake branches: **{len(co["branches"])}**',f'- Candidates collected: **{co["candidate_count"]}**']
-    if co['scope_counts']:
-        lines.append('- Scope mix: ' + ', '.join(f'**{k} {v}**' for k,v in sorted(co['scope_counts'].items())))
+    lines += ['','## 3. Research collector — last 7 days','',f'- Intake PRs touched: **{len(co["prs"])}**',f'- Preserved intake branches: **{len(co["branches"])}**',f'- Raw candidate observations: **{co["raw_count"]}**',f'- Unique candidates: **{co["unique_count"]}**',f'- Repeat observations: **{co["repeat_observations"]}**',f'- Candidates seen in more than one intake: **{co["repeated_candidates"]}**']
+    if co['latest_name']:
+        lines.append(f'- Latest intake: **{co["latest_new"]} new / {co["latest_repeat"]} previously seen** (`{co["latest_name"]}`)')
+    if co['raw_scope_counts']:
+        lines.append('- Raw scope mix: ' + ', '.join(f'**{k} {v}**' for k,v in sorted(co['raw_scope_counts'].items())))
+    if co['unique_scope_counts']:
+        lines.append('- Unique scope mix: ' + ', '.join(f'**{k} {v}**' for k,v in sorted(co['unique_scope_counts'].items())))
     lines.append(f'- Collector source errors recorded: **{co["source_errors"]}**')
-    lines.append('')
+    lines += ['', '> Candidate identity uses the collector’s stable candidate ID, with normalized URL/title fallbacks. A repeat observation is useful corroboration, not automatically a duplicate to discard.','']
     for p in co['prs'][:20]: lines.append(f'- PR #{p["number"]}: {p["title"]} — {p["state"]}')
     for b in co['branches'][:20]:
         count='unknown' if b['candidate_count'] is None else b['candidate_count']
         mix=', '.join(f'{k}={v}' for k,v in sorted(b['scope_counts'].items())) or 'scope mix unavailable'
-        lines.append(f'- `{b["name"]}` — {count} candidates ({mix})')
-    lines += ['','## 4. Friday review checklist','','- Investigate surprising or high-position search queries.','- Review collector candidates and promote only source-backed material.','- Note pages gaining impressions but not clicks.','- Check traffic for obvious crawler/scanner inflation before interpreting growth.','- Turn genuine ecosystem gaps into model, lineage, development, timeline, or research work.','']
+        lines.append(f'- `{b["name"]}` — {count} observations; {b["new_count"]} new / {b["repeat_count"]} previously seen ({mix})')
+    lines += ['','## 4. Friday review checklist','','- Investigate surprising or high-position search queries.','- Review collector candidates and promote only source-backed material.','- Prioritize new candidates while treating repeat sightings as possible corroboration.','- Note pages gaining impressions but not clicks.','- Check traffic for obvious crawler/scanner inflation before interpreting growth.','- Turn genuine ecosystem gaps into model, lineage, development, timeline, or research work.','']
     open(OUT,'w',encoding='utf-8').write('\n'.join(lines)); print(open(OUT,encoding='utf-8').read())
 
 if __name__=='__main__':
