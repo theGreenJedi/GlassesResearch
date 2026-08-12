@@ -48,16 +48,3 @@ Direct links to smart-glasses communities, developer groups, repositories, forum
 ### [Developer Resources](hacking/README.md)
 
 Firmware, SDKs, BLE, APIs, recovery, repair, reverse engineering, alternative apps, local AI agent architectures, and vendor-independent development resources.
-
-## Research posture
-
-GlassesResearch separates hands-on observations, primary-source claims, secondary reporting, and unresolved hypotheses. Unknowns stay unknown until evidence supports them. Corrections are welcome and preserved in repository history.
-
-## Project links
-
-- [About GlassesResearch](docs/ABOUT.md)
-- [Research Standards](docs/RESEARCH_STANDARDS.md)
-- [Challenge Our Research](docs/RESEARCH_CHALLENGES.md)
-- [Contribute](docs/CONTRIBUTE.md)
-- [Privacy Policy](docs/PRIVACY.md)
-- [GitHub repository](https://github.com/theGreenJedi/GlassesResearch)
