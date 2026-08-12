@@ -15,7 +15,11 @@
 | [Even Realities G2](EvenG2/README.md) | GLS-0048 | Display, battery, BLE, microphones, prescription support, app/cloud behavior and primary specifications. |
 | [Brilliant Labs Frame](BrilliantFrame/README.md) | GLS-0051 | Hardware architecture, schematics, BLE, SDKs, firmware source and developer/debug access. |
 | [Brilliant Labs Halo](BrilliantHalo/README.md) | GLS-0052 | Open hardware/software positioning, display, audio, sensors, Alif B1 compute, ZephyrOS and battery. |
+| [Vuzix Blade 2](VuzixBlade2/README.md) | GLS-0055 | Standalone Android architecture, SDKs, HUD resources, sample projects and developer downloads. |
 | [Vuzix Z100](VuzixZ100/README.md) | GLS-0056 | Display/optics, BLE, prescription support, SDK capabilities, pairing and developer documentation. |
+| [Vuzix M400 / M4000](VuzixM400/README.md) | see The List | Standalone Android wearable-computer architecture, app deployment, connectivity SDK and Vuzix View tooling. |
+| [Vuzix Shield](VuzixShield/README.md) | see The List | Android developer platform, connectivity/HUD SDK support and APK deployment path. |
+| [Vuzix LX1](VuzixLX1/README.md) | see The List | Standalone Android architecture and Vuzix View developer/debug tooling. |
 | [Rokid Glasses](RokidGlasses/README.md) | GLS-0064 | MicroLED display, AR1/RT600 hardware, camera/audio, connectivity, battery, app and SDK resources. |
 | [RayNeo X3 Pro](RayNeoX3Pro/README.md) | GLS-0066 | Full-color MicroLED, Snapdragon AR1, cameras, AIOS, sensors, connectivity, Gemini and developer access. |
 | [Snap Spectacles 5](SnapSpectacles5/README.md) | GLS-0068 | Spectacles development platform, device APIs, compatibility matrix and public sample code. |
@@ -24,6 +28,7 @@
 
 ## Cross-model research
 
+- [Technology lineages](../lineages/README.md)
 - [Retail Rebrands & OEM Ecosystems](RETAIL_REBRANDS.md)
 - [Compare devices](../docs/COMPARISON_ENGINE.md)
 - [Developer resources](../hacking/README.md)
