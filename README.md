@@ -8,7 +8,7 @@ Independent, evidence-based research into smart glasses, AI glasses, and user-co
 
 ## Worth reading now
 
-### [Courts in England and Wales prohibit Meta smart glasses](docs/RESEARCH_NEWS.md#august-11-2026--courts-in-england-and-wales-prohibit-meta-smart-glasses)
+### [Courts in England and Wales prohibit Meta smart glasses](docs/RESEARCH_NEWS.md#august-11-2026-courts-in-england-and-wales-prohibit-meta-smart-glasses)
 
 Smart glasses are beginning to receive device-specific institutional rules rather than simply inheriting smartphone policy. That matters for social acceptance, privacy, and where camera-equipped eyewear can actually be worn.
 
@@ -20,7 +20,7 @@ New local multimodal models strengthen an owner-controlled architecture in which
 
 Retail names can hide shared OEM hardware, companion apps, firmware families, protocols, and development paths. Lineage research connects those relationships without claiming equivalence where the evidence does not support it.
 
-### [Vuzix enterprise deployments show a different smart-glasses market](docs/RESEARCH_NEWS.md#april-1-2025--vuzix-receives-500k-augmex-smart-glasses-reorder)
+### [Vuzix enterprise deployments show a different smart-glasses market](docs/RESEARCH_NEWS.md#april-1-2025-vuzix-receives-500k-augmex-smart-glasses-reorder)
 
 Consumer AI glasses get most of the attention, but repeat enterprise orders provide evidence that smart glasses are also becoming durable working infrastructure in logistics, field service, healthcare, and other operational environments.
 
