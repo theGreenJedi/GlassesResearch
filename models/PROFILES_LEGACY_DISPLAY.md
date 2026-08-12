@@ -28,9 +28,9 @@ Sources: [North support archive via Google](https://support.google.com/), [Glass
 
 ## GLS-0047 — Even Realities G1
 
-Even Realities G1 revived the discreet-display idea with a much more modern emphasis on weight, aesthetics and prescription-friendly everyday wear. The glasses use a minimalist green heads-up display for navigation, translation, notes, teleprompter-style prompts and AI-assisted information rather than full-color spatial graphics. That restraint is the point: G1 is designed to behave like glasses first and a computer second. The resulting tradeoff is attractive but real—**excellent discretion and low visual intrusion, but a tightly managed companion-app experience with far less owner control than open developer platforms**.
+Even Realities G1 is one of the strongest current examples of smart glasses that deliberately choose **wearability over maximal capability**. Its binocular green MicroLED HUD, prescription support, light conventional frame and long battery life earned it a 9.5/10 Wearability score, while the display is strong enough for navigation, translation, notes, teleprompter prompts and lightweight AI information without turning the glasses into a headset. The tradeoff appears on the ownership side: there is no outward-facing camera, so Visual AI is genuinely not applicable, and the public developer/control surface is much narrower than open platforms. Much of the useful intelligence remains tied to Even's companion software and network services. In other words, G1 succeeds because it behaves like **good eyewear with a restrained computer inside it**, not because it gives the owner deep access to the machine.
 
-Source: [Even Realities](https://www.evenrealities.com/)
+Sources: [Even Realities](https://www.evenrealities.com/), [GlassesResearch Report Card Batch 01](../docs/report-cards/BATCH_01.md)
 
 ## GLS-0049 — Halliday Glasses
 
