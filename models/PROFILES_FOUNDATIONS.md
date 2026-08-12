@@ -1,6 +1,6 @@
 # Smart-Glasses Model Profiles — Foundations and Early Platforms
 
-These profiles continue the human-readable GlassesResearch catalog. Each paragraph explains what the device really is, why it matters, and the tradeoff that matters most. Structured specifications and Report Cards remain supporting evidence rather than the main reading experience.
+This volume traces the early consumer and developer platforms that established many of today's smart-glasses patterns: ambient audio, camera capture, phone dependence, early displays, and the first serious attempts at everyday wearability. Each paragraph emphasizes the historical design decision and tradeoff that still matters when comparing later generations.
 
 ## GLS-0009 — Amazon Echo Frames (1st Gen)
 
@@ -16,36 +16,48 @@ Source: [Amazon — Echo Frames available to everyone](https://www.aboutamazon.c
 
 ## GLS-0011 — Amazon Echo Frames (3rd Gen)
 
-The 2023 Echo Frames generation is Amazon's clearest attempt to make smart audio glasses feel like ordinary eyewear first and electronics second. Amazon slimmed the temples, expanded style and lens choices, redesigned the open-ear audio system, improved speech recognition in noisy environments, added multipoint pairing and pushed battery life to roughly six hours of continuous media or calls. There is still no camera or HUD, which keeps the glasses socially simple but also limits them to **audio, notifications and Alexa-mediated intelligence rather than visual computing**. Their strongest lesson is that mature smart glasses do not necessarily need more sensors; sometimes the meaningful progress is better fit, better sound, longer endurance and less visible technology.
+Third-generation Echo Frames refine the same idea into something much closer to conventional optical frames. Amazon reduced temple bulk, expanded styles, improved audio and call performance, and continued to support prescription lenses while keeping the product display-free and camera-free. That makes this generation a useful counterpoint to the industry's camera-and-AI race: **sometimes the most wearable smart-glasses architecture is the one that deliberately leaves visual sensing out**. The tradeoff is equally clear. Alexa remains the defining intelligence and there is no broad developer path or owner-replaceable assistant stack, so physical discretion improved faster than software ownership.
 
-Source: [Amazon — next-generation Echo Frames](https://press.aboutamazon.com/2023/9/amazon-unveils-next-generation-echo-show-8-all-new-echo-hub-and-new-echo-frames)
+Source: [Amazon — New Echo Frames](https://www.aboutamazon.com/news/devices/amazon-echo-frames-carrera-smart-glasses)
 
-## GLS-0012 — Carrera Smart Glasses with Alexa
+## GLS-0012 — Amazon / Carrera Smart Glasses with Alexa
 
-Carrera Smart Glasses take the third-generation Echo Frames electronics and package them through an established fashion-eyewear brand. That collaboration matters because it shifts part of the design authority away from a technology company and toward a company whose core product is already something people choose to wear on their face. The glasses offer the same Alexa-first, open-ear, no-camera and no-display model as Echo Frames, but the Carrera Cruiser and Sprinter styles make **brand identity and normal eyewear aesthetics part of the computing platform**. Technically they remain closed consumer accessories rather than developer hardware, but culturally they are evidence that smart-glasses adoption may depend as much on eyewear design and retail familiarity as on AI capability.
+Carrera Smart Glasses with Alexa take the third-generation Echo Frames platform and move the design further into recognizable fashion eyewear through a partnership with Safilo's Carrera brand. Functionally they remain audio-first Alexa glasses with no camera or display, but the co-brand matters because it shows a recurring smart-glasses strategy: **technology companies borrow established eyewear design and distribution instead of asking consumers to accept a visibly technological frame**. That improves wearability and social normalcy, while the underlying ownership tradeoff remains unchanged—useful Bluetooth audio survives independently, but the “smart” layer is still principally Amazon's Alexa ecosystem.
 
-Source: [Amazon — Carrera Smart Glasses with Alexa](https://www.aboutamazon.com/news/devices/introducing-next-generation-echo-frames-carrera-smart-glasses-with-alexa)
+Source: [Amazon — Echo Frames and Carrera Smart Glasses](https://www.aboutamazon.com/news/devices/amazon-echo-frames-carrera-smart-glasses)
 
-## GLS-0043 — Google Glass Explorer Edition
+## GLS-0013 — Bose Frames Alto
 
-Google Glass Explorer Edition is the model that made modern smart glasses culturally unavoidable. Its monocular display, camera, microphone, touchpad and Android-based software created a real wearable-computing platform years before today's AI-glasses boom, and Google exposed a Glass Developer Kit so software could run directly on the device. That openness to application development made Glass far more than a camera accessory, but its social footprint became equally important: the visible hardware and always-available camera triggered privacy backlash and taught the entire industry that **technical possibility and social acceptability are separate engineering problems**. Explorer Edition's greatest legacy may therefore be both positive and cautionary—it proved the category could exist and demonstrated exactly how quickly public trust can become part of the product specification.
+Bose Frames Alto were among the products that made “audio glasses” a coherent category rather than a novelty. The Wayfarer-like frame concealed open-ear speakers and motion sensing while deliberately omitting camera and display, allowing music, calls and voice-assistant access without earbuds. Bose also experimented with Bose AR, an audio-augmented-reality platform using head motion and phone location, which briefly suggested a developer-facing future. The product therefore sits at an interesting historical junction: **excellent proof that glasses can be an audio interface, paired with a software platform that did not survive long enough to become durable infrastructure**.
 
-Source: [Google for Developers — Glass Explorer Edition](https://developers.google.com/glass)
+Sources: [Bose support — Frames](https://www.bose.com/c/support/smart_glasses_support.html), [Bose AR archive via product history](https://www.bose.com/)
 
-## GLS-0044 — Google Glass Enterprise Edition
+## GLS-0014 — Bose Frames Rondo
 
-Glass Enterprise Edition was Google's answer to the lesson that a wearable computer does not need to win over everyone if it solves a valuable job extremely well. The enterprise version shifted the product away from consumer lifestyle ambitions and toward hands-free work, where glanceable instructions, camera capture, voice interaction and purpose-built applications could justify the visible hardware. In that environment, Glass's weaknesses as fashion eyewear became less important than **repeatable workflow, safety, training and access to information without occupying the user's hands**. The move also established a pattern still visible across Vuzix and other industrial devices: enterprise smart glasses often become more useful when they stop trying to look invisible and instead optimize for the task.
+Bose Frames Rondo shared the first-generation Bose electronics with a rounder fashion frame. Treating it as a distinct commercial model is appropriate because Bose sold Alto and Rondo as separate named products, but the technical lesson is the same: open-ear audio can be integrated into socially ordinary eyewear with very little visual-computing baggage. The Rondo's strongest scores therefore come from wearability and cloud-independent Bluetooth audio rather than Visual AI, HUD capability or openness. **It is smart eyewear by interface placement, not by trying to put a computer screen in front of the eye.**
 
-Source: [Google for Developers — Glass Enterprise Edition](https://developers.google.com/glass/distribute/glass-enterprise)
+Source: [Bose support — Frames](https://www.bose.com/c/support/smart_glasses_support.html)
 
-## GLS-0045 — Google Glass Enterprise Edition 2
+## GLS-0015 — Bose Frames Tempo
 
-Glass Enterprise Edition 2 is one of the strongest historical examples of owner-programmable smart glasses because Google treated it as a real Android computer rather than a sealed accessory. It runs AOSP-based Android Oreo 8.1, supports standard Android APIs, APK installation over ADB, fastboot access, system images and developer samples for camera, voice, gestures, QR scanning and WebRTC. It lacks Google Mobile Services, which is a constraint for some applications but also reinforces how directly developers can interact with the underlying platform. Google ended sales in March 2023 and support in September 2023, yet existing devices and software remain usable. That makes EE2 a useful benchmark for **what smart-glasses ownership looks like when the vendor provides ordinary development tools instead of forcing all capability through a companion app or cloud assistant**.
+Tempo was the performance-sport branch of Bose's second-generation Frames family, with larger drivers, stronger battery life, sport-oriented fit and better environmental durability. It demonstrates that audio glasses did not evolve only toward fashion: the same architecture could replace earbuds for cycling, running and other activities where open ears can be an advantage. There is still no camera or display and the abandoned Bose AR developer experiment limits the long-term software story, but the device remains a strong example of **wearable specialization improving hardware usefulness without increasing platform openness**.
 
-Sources: [Google — Glass EE2 developer guide](https://developers.google.com/glass-enterprise/guides/get-started), [Google — Glass Enterprise Edition announcement FAQ](https://support.google.com/glass-enterprise/customer/answer/13417888)
+Source: [Bose support — Frames Tempo](https://www.bose.com/c/support/smart_glasses_support.html)
 
-## GLS-0050 — Brilliant Labs Monocle
+## GLS-0016 — Bose Frames Tenor
 
-Brilliant Labs Monocle is not the most wearable device in the catalog, but it is currently one of the clearest examples of what true owner control looks like. The tiny clip-on module combines a 640×400 color OLED, 5 MP camera, microphone, touch input, Bluetooth and FPGA acceleration with MicroPython, custom firmware support, custom FPGA images, published schematics, mechanical files and documented SWD/JTAG access. That combination is why its Report Card sets the present **10/10 benchmark for Openness and Hackability**: the owner is not merely given an SDK, but meaningful access to the software, hardware design and low-level programming path. The tradeoff is equally clear. Monocle is asymmetrical, visibly technical and constrained by a very small battery, so it is a poor model for invisible everyday eyewear. But as a research and development platform, it asks a more important question than most polished consumer products: **what can smart glasses become when the person who buys the hardware is actually allowed to own the machine?**
+Tenor took Bose's second-generation audio platform in a more conventional square fashion frame, improving sound, battery life and touch interaction while retaining prescription-capable everyday eyewear. Compared with early Alto/Rondo, it is less historically novel but more mature as a product: **the electronics recede while the glasses become better at simply being glasses**. The limitation is that Bose's software ambitions receded too. With Bose AR discontinued, Tenor's durable value is mostly standard Bluetooth audio rather than a programmable wearable-computing platform.
 
-Sources: [Brilliant Labs — Monocle documentation](https://docs.brilliant.xyz/monocle/monocle/), [Brilliant Labs — Monocle hardware](https://docs.brilliant.xyz/monocle/hardware/), [GlassesResearch Report Card Batch 01](../docs/report-cards/BATCH_01.md)
+Source: [Bose support — Frames Tenor](https://www.bose.com/c/support/smart_glasses_support.html)
+
+## GLS-0017 — Bose Frames Soprano
+
+Soprano is the cat-eye counterpart to Tenor, sharing the second-generation Bose audio architecture while targeting a different frame style. It earns its place as a separately marketed model but should not be mistaken for a different computing generation. Its importance to the catalog is partly methodological: **fashion variants can deserve model rows when sold as distinct products, while lineage research still prevents us from inventing technical differences that are not there**. Like Tenor, it remains highly useful as Bluetooth eyewear but weak as an owner-programmable platform.
+
+Source: [Bose support — Frames Soprano](https://www.bose.com/c/support/smart_glasses_support.html)
+
+## GLS-0018 — Razer Anzu
+
+Razer Anzu approached audio glasses from the gaming/peripheral world rather than eyewear or voice assistants. It combined low-latency Bluetooth audio, touch controls, microphones and interchangeable blue-light/sunglass lenses in a conventional frame, with no camera or display. That makes Anzu architecturally simple and highly cloud-independent: once paired, its core value is standard local audio. The flip side is almost no meaningful developer surface. **Anzu is easy to own because it does less, not because Razer opened the platform.**
+
+Source: [Razer — Anzu support](https://mysupport.razer.com/app/answers/detail/a_id/3872/)
