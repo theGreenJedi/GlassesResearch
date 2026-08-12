@@ -2,7 +2,7 @@
 // The Markdown remains the canonical evidence ledger; this layer adds navigation
 // and client-side filtering without changing the underlying research record.
 
-function enhanceTheList() {
+async function enhanceTheList() {
   const article = document.querySelector("article.md-content__inner");
   if (!article) return;
 
@@ -17,24 +17,39 @@ function enhanceTheList() {
   });
   if (!tables.length) return;
 
-  // Prefer a repository model chapter when one exists; otherwise use the row's
-  // canonical external source. This leaves the evidence/source column intact.
+  let deviceMap = new Map();
+  try {
+    const response = await fetch("/data/devices.json", { cache: "no-store" });
+    if (response.ok) {
+      const payload = await response.json();
+      deviceMap = new Map((payload.records || []).map((record) => [record.id, record]));
+    }
+  } catch (_) {
+    // The ledger remains usable even if the enhancement data cannot load.
+  }
+
+  // Prefer a dedicated repository chapter, then the evidence-derived editorial
+  // profile, then the strongest available source. Every canonical row receives
+  // a profile path from the device-database validation layer.
   tables.forEach((table) => {
     const headers = Array.from(table.querySelectorAll("thead th")).map((cell) =>
       cell.textContent.trim().toLowerCase()
     );
+    const idIndex = headers.indexOf("id");
     const modelIndex = headers.indexOf("model");
     const evidenceIndex = headers.indexOf("evidence / links");
-    if (modelIndex < 0 || evidenceIndex < 0) return;
+    if (idIndex < 0 || modelIndex < 0 || evidenceIndex < 0) return;
 
     table.querySelectorAll("tbody tr").forEach((row) => {
       const cells = row.querySelectorAll("td");
+      const idCell = cells[idIndex];
       const modelCell = cells[modelIndex];
       const evidenceCell = cells[evidenceIndex];
-      if (!modelCell || !evidenceCell || modelCell.querySelector("a")) return;
+      if (!idCell || !modelCell || !evidenceCell) return;
 
+      const modelId = idCell.textContent.trim();
+      const publicPaths = deviceMap.get(modelId)?.public || {};
       const links = Array.from(evidenceCell.querySelectorAll("a[href]"));
-      if (!links.length) return;
       const chapterLink = links.find((link) =>
         /\/models\/[A-Za-z0-9._-]+\/(?:README\.md)?(?:$|[#?])/.test(link.getAttribute("href") || "")
       );
@@ -42,21 +57,38 @@ function enhanceTheList() {
         (link) => link.textContent.trim().toLowerCase() === "source"
       );
       const externalLink = links.find((link) => /^https?:\/\//.test(link.href));
-      const destination = chapterLink || namedSource || externalLink || links[0];
-      if (!destination) return;
 
-      const anchor = document.createElement("a");
-      anchor.href = destination.href;
-      anchor.textContent = modelCell.textContent.trim();
-      anchor.className = "model-index-link";
-      anchor.title = chapterLink
-        ? "Open the GlassesResearch model chapter"
-        : "Open the best available model source";
-      if (!chapterLink && /^https?:\/\//.test(destination.href)) {
-        anchor.target = "_blank";
-        anchor.rel = "noopener noreferrer";
+      if (!modelCell.querySelector("a")) {
+        const destination = chapterLink?.href || publicPaths.profile || namedSource?.href || externalLink?.href || links[0]?.href;
+        if (destination) {
+          const anchor = document.createElement("a");
+          anchor.href = destination;
+          anchor.textContent = modelCell.textContent.trim();
+          anchor.className = "model-index-link";
+          anchor.title = chapterLink
+            ? "Open the GlassesResearch model chapter"
+            : publicPaths.profile
+              ? "Open the GlassesResearch editorial profile"
+              : "Open the best available model source";
+          if (!chapterLink && !publicPaths.profile && /^https?:\/\//.test(destination)) {
+            anchor.target = "_blank";
+            anchor.rel = "noopener noreferrer";
+          }
+          modelCell.replaceChildren(anchor);
+        }
       }
-      modelCell.replaceChildren(anchor);
+
+      if (modelCell.querySelector(".model-research-paths")) return;
+      const research = [];
+      if (publicPaths.profile) research.push(`<a href="${publicPaths.profile}">Profile</a>`);
+      if (publicPaths.report_card) research.push(`<a href="${publicPaths.report_card}">Report card</a>`);
+      if (publicPaths.lineage) research.push(`<a href="${publicPaths.lineage}">Lineage</a>`);
+      if (research.length) {
+        const paths = document.createElement("div");
+        paths.className = "model-research-paths";
+        paths.innerHTML = research.join(" · ");
+        modelCell.appendChild(paths);
+      }
     });
   });
 
@@ -76,19 +108,19 @@ function enhanceTheList() {
   const makers = unique("maker");
   const states = unique("state");
   const types = unique("type");
-  const evidence = unique("evidence / links");
 
   const controls = document.createElement("section");
   controls.className = "model-hub-controls";
   controls.innerHTML = `
     <h2>Explore the smart-glasses ecosystem</h2>
-    <p><strong>The List is the central index for GlassesResearch.</strong> Search the catalog, narrow it by maker, status, or device type, then follow each model into its chapter or strongest available source.</p>
+    <p><strong>The List is the central index for GlassesResearch.</strong> Search all canonical glasses, narrow by maker, status, or device type, then follow each row into its profile, Report Card, lineage research, model chapter, or strongest available source.</p>
     <div class="model-hub-links">
-      <a href="../buyers/BUYER_AND_OPENNESS_GUIDE.md">Buyer & openness guide</a> ·
-      <a href="../hacking/README.md">Hacking & open development</a> ·
-      <a href="../docs/news/README.md">Research & news</a> ·
-      <a href="../docs/faq/COMMUNITY_QUESTIONS.md">Community questions</a> ·
-      <a href="../glossary/README.md">Glossary</a>
+      <a href="/docs/COMPARISON_ENGINE/">Find & compare</a> ·
+      <a href="/docs/REPORT_CARD/">Report Cards</a> ·
+      <a href="/lineages/">Technology lineages</a> ·
+      <a href="/models/ADJACENT_WEARABLES/">Adjacent wearable-HCI</a> ·
+      <a href="/buyers/BUYER_AND_OPENNESS_GUIDE/">Buyer & openness guide</a> ·
+      <a href="/hacking/">Development & hacking</a>
     </div>
     <div class="model-filter-grid">
       <label>Search <input type="search" data-model-filter="search" placeholder="Model, maker, ID, feature…" /></label>
@@ -102,7 +134,7 @@ function enhanceTheList() {
       <summary><strong>Verification & evidence legend</strong></summary>
       <p><strong>Hands-on</strong> = directly exercised by GlassesResearch. <strong>Primary</strong> = manufacturer, official support, manual, release, or maintained product history. <strong>Commercial</strong> = documented retail route. <strong>Secondary</strong> = reputable reporting used when stronger historical sources are unavailable. Community and inferred claims remain explicitly labeled elsewhere in the repository.</p>
     </details>
-    <p><strong>Missing a model?</strong> <a href="../docs/faq/ASK_YOUR_OWN_QUESTION.md">Ask us to investigate it</a> or <a href="../docs/CONTRIBUTE.md">contribute what you know</a>.</p>
+    <p><strong>Missing a model?</strong> <a href="/docs/faq/ASK_YOUR_OWN_QUESTION/">Ask us to investigate it</a> or <a href="/docs/CONTRIBUTE/">contribute what you know</a>.</p>
   `;
 
   const firstTable = tables[0];
@@ -130,7 +162,7 @@ function enhanceTheList() {
     tables.forEach((table) => {
       const anyVisible = Array.from(table.querySelectorAll("tbody tr")).some((row) => !row.hidden);
       table.style.display = anyVisible ? "" : "none";
-      let sibling = table.previousElementSibling;
+      const sibling = table.previousElementSibling;
       if (sibling && /^H[2-4]$/.test(sibling.tagName)) sibling.style.display = anyVisible ? "" : "none";
     });
   };
@@ -147,7 +179,7 @@ function enhanceTheList() {
 }
 
 if (typeof document$ !== "undefined") {
-  document$.subscribe(enhanceTheList);
+  document$.subscribe(() => { enhanceTheList(); });
 } else {
-  document.addEventListener("DOMContentLoaded", enhanceTheList);
+  document.addEventListener("DOMContentLoaded", () => { enhanceTheList(); });
 }
