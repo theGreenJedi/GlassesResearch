@@ -22,6 +22,7 @@ Additional editorial volumes continue the same encyclopedia:
 - [High-Throughput Profiles — Batch 01](PROFILES_HIGH_THROUGHPUT_01.md)
 - [Consumer Audio and Emerging AR — Batch 02](PROFILES_CONSUMER_AR.md)
 - [XR Display Lineages — Batch 03](PROFILES_XR_DISPLAY.md)
+- [Lineage-Reconciled Smart-Glasses Profiles](PROFILES_LINEAGE_RECONCILED.md) — `GLS-0122` through `GLS-0145`, with evidence-bound paragraphs and explicit uncertainty where generation-specific specifications remain incomplete.
 
 ## Current research chapters
 
@@ -36,11 +37,11 @@ Additional editorial volumes continue the same encyclopedia:
 | [Even Realities G2](EvenG2/README.md) | GLS-0048 | Display, battery, BLE, microphones, prescription support, app/cloud behavior and primary specifications. |
 | [Brilliant Labs Frame](BrilliantFrame/README.md) | GLS-0051 | Hardware architecture, schematics, BLE, SDKs, firmware source and developer/debug access. |
 | [Brilliant Labs Halo](BrilliantHalo/README.md) | GLS-0052 | Open hardware/software positioning, display, audio, sensors, Alif B1 compute, ZephyrOS and battery. |
-| [Vuzix Blade 2](VuzixBlade2/README.md) | GLS-0055 | Standalone Android architecture, SDKs, HUD resources, sample projects and developer downloads. |
+| [Vuzix Blade 2](VuzixBlade2/README.md) | GLS-0055 | Standalone Android architecture, SDKs, sample projects, HUD resources and Android Studio tooling. |
 | [Vuzix Z100](VuzixZ100/README.md) | GLS-0056 | Display/optics, BLE, prescription support, SDK capabilities, pairing and developer documentation. |
 | [Vuzix M400 / M4000](VuzixM400/README.md) | GLS-0098–0099 | Standalone Android wearable-computer architecture, app deployment, connectivity SDK and Vuzix View tooling. |
 | [Vuzix Shield](VuzixShield/README.md) | GLS-0121 | Android developer platform, connectivity/HUD SDK support and APK deployment path. |
-| [Vuzix LX1](VuzixLX1/README.md) | GLS-0100 | Standalone Android architecture and Vuzix View developer/debug tooling. |
+| [Vuzix LX1](VuzixLX1/README.md) | GLS-0100 | Standalone Android architecture and Vuzix View deployment/debug tooling. |
 | [Rokid Glasses](RokidGlasses/README.md) | GLS-0064 | MicroLED display, AR1/RT600 hardware, camera/audio, connectivity, battery, app and SDK resources. |
 | [RayNeo X3 Pro](RayNeoX3Pro/README.md) | GLS-0066 | Full-color MicroLED, Snapdragon AR1, cameras, AIOS, sensors, connectivity, Gemini and developer access. |
 | [Snap Spectacles 5](SnapSpectacles5/README.md) | GLS-0068 | Spectacles development platform, device APIs, compatibility matrix and public sample code. |
@@ -62,6 +63,7 @@ The report-card library now contains lineage-first evidence packages for ODG R-s
 - [High-Throughput Batch 01 profiles](PROFILES_HIGH_THROUGHPUT_01.md)
 - [Consumer Audio and Emerging AR profiles](PROFILES_CONSUMER_AR.md)
 - [XR Display Lineage profiles](PROFILES_XR_DISPLAY.md)
+- [Lineage-reconciled profiles](PROFILES_LINEAGE_RECONCILED.md)
 - [Technology lineages](../lineages/README.md)
 - [Retail Rebrands & OEM Ecosystems](RETAIL_REBRANDS.md)
 - [Compare devices](../docs/COMPARISON_ENGINE.md)
