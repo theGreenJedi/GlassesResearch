@@ -11,10 +11,11 @@
 
 ## Read the models, not just the database
 
-[**Smart-Glasses Model Profiles**](PROFILES.md) is the human-readable layer: concise evidence-backed explanations of what each device really is, where it shines, and what tradeoffs matter. The target is one useful profile for every canonical model. If we cannot write a defensible paragraph yet, that model is flagged for more research rather than filled with generic prose.
+The human-readable profile library now contains an evidence-backed paragraph for **every one of the 145 canonical smart-glasses records**. A paragraph is not permission to guess: when acquisition is established but generation-specific internals remain incomplete, the profile says so explicitly and points to the unresolved archival work rather than borrowing specifications from a neighboring generation.
 
-Additional editorial volumes continue the same encyclopedia:
+Editorial volumes:
 
+- [Smart-Glasses Model Profiles](PROFILES.md)
 - [Foundations and Early Platforms](PROFILES_FOUNDATIONS.md)
 - [Legacy Display and Early Platforms](PROFILES_LEGACY_DISPLAY.md)
 - [AR, Display, and Enterprise Platforms](PROFILES_AR_DISPLAY.md)
@@ -22,7 +23,8 @@ Additional editorial volumes continue the same encyclopedia:
 - [High-Throughput Profiles — Batch 01](PROFILES_HIGH_THROUGHPUT_01.md)
 - [Consumer Audio and Emerging AR — Batch 02](PROFILES_CONSUMER_AR.md)
 - [XR Display Lineages — Batch 03](PROFILES_XR_DISPLAY.md)
-- [Lineage-Reconciled Smart-Glasses Profiles](PROFILES_LINEAGE_RECONCILED.md) — `GLS-0122` through `GLS-0145`, with evidence-bound paragraphs and explicit uncertainty where generation-specific specifications remain incomplete.
+- [Lineage-Reconciled Smart-Glasses Profiles](PROFILES_LINEAGE_RECONCILED.md) — `GLS-0122` through `GLS-0145`, with explicit uncertainty where generation-specific specifications remain incomplete.
+- [Evidence-Boundary Completion](PROFILES_COMPLETION_GAPS.md) — the final eleven editorial gaps discovered by the public-site audit; conservative profiles for models whose acquisition evidence is stronger than their current generation-specific technical record.
 
 ## Current research chapters
 
@@ -51,20 +53,13 @@ Additional editorial volumes continue the same encyclopedia:
 
 ## Completed lineage packets awaiting or supporting chapter-level expansion
 
-The report-card library now contains lineage-first evidence packages for ODG R-series, Recon Jet, Optinvent ORA, Toshiba/Dynabook dynaEdge AR100, DAQRI, Lenovo ThinkReality A6, ThirdEye, Pivothead, Mutrics, Chamelo, NuEyes, OrCam, Envision, Microsoft HoloLens and Magic Leap. Canonical ID assignments and shelf routing are summarized in the [reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md).
+The report-card library now contains lineage-first evidence packages for ODG R-series, Recon Jet, Optinvent ORA, Toshiba/Dynabook dynaEdge AR100, DAQRI, Lenovo ThinkReality A6, ThirdEye, Pivothead, Mutrics, Chamelo, NuEyes, OrCam, Envision, Microsoft HoloLens and Magic Leap. Canonical ID assignments and shelf routing are summarized in the [reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md) and surfaced from the public [Technology Lineages](../lineages/README.md) index.
 
 ## Cross-model research
 
-- [Human-readable model profiles](PROFILES.md)
-- [Foundations and Early Platforms profiles](PROFILES_FOUNDATIONS.md)
-- [Legacy Display and Early Platforms profiles](PROFILES_LEGACY_DISPLAY.md)
-- [AR, Display, and Enterprise profiles](PROFILES_AR_DISPLAY.md)
-- [Open Camera Platform profiles](PROFILES_OPEN_CAMERA.md)
-- [High-Throughput Batch 01 profiles](PROFILES_HIGH_THROUGHPUT_01.md)
-- [Consumer Audio and Emerging AR profiles](PROFILES_CONSUMER_AR.md)
-- [XR Display Lineage profiles](PROFILES_XR_DISPLAY.md)
-- [Lineage-reconciled profiles](PROFILES_LINEAGE_RECONCILED.md)
+- [All editorial profile volumes](#read-the-models-not-just-the-database)
 - [Technology lineages](../lineages/README.md)
+- [Report Cards](../docs/REPORT_CARD.md)
 - [Retail Rebrands & OEM Ecosystems](RETAIL_REBRANDS.md)
 - [Compare devices](../docs/COMPARISON_ENGINE.md)
 - [Developer resources](../hacking/README.md)
