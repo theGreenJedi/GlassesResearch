@@ -1,0 +1,118 @@
+name: Search Console Connectivity Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-search-console:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query Google Search Console
+        env:
+          GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
+          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ -z "${GOOGLE_SEARCH_CONSOLE_CREDENTIALS:-}" ]; then
+            echo "GOOGLE_SEARCH_CONSOLE_CREDENTIALS is not available."
+            exit 1
+          fi
+          if [ -z "${GOOGLE_SEARCH_CONSOLE_SITE_URL:-}" ]; then
+            echo "GOOGLE_SEARCH_CONSOLE_SITE_URL is not available."
+            exit 1
+          fi
+
+          python -m pip install --quiet google-auth requests
+
+          python - <<'PY'
+          import json
+          import os
+          import sys
+          from datetime import date, timedelta
+          from urllib.parse import quote
+
+          import google.auth.transport.requests
+          from google.oauth2 import service_account
+          import requests
+
+          raw = os.environ['GOOGLE_SEARCH_CONSOLE_CREDENTIALS']
+          site_url = os.environ['GOOGLE_SEARCH_CONSOLE_SITE_URL']
+
+          try:
+              info = json.loads(raw)
+          except json.JSONDecodeError as exc:
+              print(f'Credential JSON could not be parsed: {exc}')
+              sys.exit(1)
+
+          scopes = ['https://www.googleapis.com/auth/webmasters.readonly']
+          credentials = service_account.Credentials.from_service_account_info(info, scopes=scopes)
+          auth_request = google.auth.transport.requests.Request()
+          credentials.refresh(auth_request)
+
+          end_date = date.today() - timedelta(days=2)
+          start_date = end_date - timedelta(days=6)
+
+          endpoint = (
+              'https://searchconsole.googleapis.com/webmasters/v3/sites/'
+              + quote(site_url, safe='')
+              + '/searchAnalytics/query'
+          )
+          payload = {
+              'startDate': start_date.isoformat(),
+              'endDate': end_date.isoformat(),
+              'dimensions': ['query'],
+              'rowLimit': 10,
+              'dataState': 'final',
+          }
+
+          response = requests.post(
+              endpoint,
+              headers={
+                  'Authorization': f'Bearer {credentials.token}',
+                  'Content-Type': 'application/json',
+              },
+              json=payload,
+              timeout=30,
+          )
+
+          print(f'Search Console HTTP status: {response.status_code}')
+          if response.status_code != 200:
+              print('Search Console request failed:')
+              try:
+                  err = response.json()
+                  # Print API error details only; never credential material.
+                  print(json.dumps(err, indent=2))
+              except Exception:
+                  print(response.text[:2000])
+              sys.exit(1)
+
+          data = response.json()
+          rows = data.get('rows', [])
+
+          print('\n=== SEARCH CONSOLE CONNECTIVITY TEST ===')
+          print(f'Property: {site_url}')
+          print(f'Window: {start_date} through {end_date} (final data)')
+          print(f'Rows returned: {len(rows)}')
+
+          total_clicks = sum(float(r.get('clicks', 0)) for r in rows)
+          total_impressions = sum(float(r.get('impressions', 0)) for r in rows)
+          print(f'Top-10 query clicks: {total_clicks:g}')
+          print(f'Top-10 query impressions: {total_impressions:g}')
+
+          print('\nTOP QUERIES')
+          if not rows:
+              print('  No query rows returned yet. Authentication still succeeded.')
+          for row in rows:
+              query = (row.get('keys') or ['(unknown)'])[0]
+              print(
+                  f"  {query}: clicks={row.get('clicks', 0):g}, "
+                  f"impressions={row.get('impressions', 0):g}, "
+                  f"ctr={row.get('ctr', 0) * 100:.2f}%, "
+                  f"position={row.get('position', 0):.2f}"
+              )
+          PY
