@@ -2,9 +2,9 @@
 
 Smart glasses are full of tradeoffs that disappear when everything is collapsed into one overall score. GlassesResearch grades **ten independent dimensions** so a buyer, developer, researcher, or owner can see where a device is strong — and where control has been traded away.
 
-## Inaugural report cards
+## Published report cards
 
-These are the first published cards. Scores are deliberately conservative and are assigned only where the available evidence is strong enough to support a judgment. **Not yet graded** means exactly that; it is not a zero.
+Scores are deliberately conservative and are assigned only where the available evidence is strong enough to support a judgment. **Not yet graded** means exactly that; it is not a zero. **N/A** is reserved for dimensions that genuinely do not apply.
 
 ### Vuzix Z100
 
@@ -43,6 +43,84 @@ Glass EE2 remains an important owner-control benchmark because Google shipped it
 | Value | Not yet graded | — | It is discontinued enterprise hardware with a secondary-market value proposition that changes substantially over time. |
 
 Sources: [Google Glass EE2 developer guide](https://developers.google.com/glass-enterprise/guides/get-started), [Google Glass EE2 specifications](https://support.google.com/glass-enterprise/customer/answer/9220200).
+
+### Brilliant Labs Frame
+
+Frame is one of the strongest owner-control examples in the current catalog. Brilliant Labs publishes not only product specifications but also schematics, block diagrams, BLE documentation, SDKs, public firmware source, direct-Bluetooth development paths, and a documented SWD debug interface.
+
+| Dimension | Score | Grade | Why |
+|---|---:|:---:|---|
+| Hardware | 7.5 | B | Color OLED, 720p camera, microphone, sensors, FPGA/MCU architecture and documented internals make it capable and unusually inspectable, though battery capacity is modest. |
+| Wearability | 7.5 | B | Built as glasses rather than an industrial headset and supports prescription clips, but the electronics remain more conspicuous than ordinary eyewear. |
+| Visual AI | 7.0 | B- | Camera access and an open software stack make visual-AI workflows practical, though the glasses are better treated as an open interface than as a self-contained high-end inference platform. |
+| Software | 8.5 | A- | Python, Flutter, Lua and direct-BLE development provide several supported ways to build useful applications. |
+| Display / HUD | 7.5 | B | A 640×400 color OLED at roughly 20° FOV is useful and developer-accessible, but not a wide-field XR display. |
+| Openness | 10.0 | A+ | Schematics, BLE protocol documentation, multiple SDKs, public firmware source and hardware documentation set an exceptional openness benchmark. |
+| Owner Control | 9.5 | A+ | Owners can choose software stacks, communicate directly over BLE and modify firmware rather than remaining confined to one vendor application. |
+| Cloud Independence | 9.0 | A | Core hardware control, display, camera and firmware development do not inherently depend on a vendor cloud service. |
+| Hackability | 10.0 | A+ | Public firmware source, BLE specifications, schematics and documented SWD access provide both supported and low-level experimentation paths. |
+| Value | Not yet graded | — | Value should be scored against current purchase price and competing hardware at the time of evaluation. |
+
+Sources: [Frame hardware manual](https://docs.brilliant.xyz/frame/hardware/), [Frame SDK](https://docs.brilliant.xyz/frame/frame-sdk/), [Frame Bluetooth specification](https://docs.brilliant.xyz/frame/frame-sdk-bluetooth-specs), [Frame firmware source](https://github.com/brilliantlabsAR/frame-codebase).
+
+### Even Realities G2
+
+G2 takes almost the opposite approach from camera-first AI glasses: discreet binocular information display, no outward-facing camera, no speakers, and a strong emphasis on looking like ordinary eyewear.
+
+| Dimension | Score | Grade | Why |
+|---|---:|:---:|---|
+| Hardware | 8.0 | B+ | Binocular MicroLED waveguides, four microphones, IP65 protection and a 36 g frame create a focused and well-integrated information-display package. |
+| Wearability | 9.5 | A+ | At 36 g with conventional-eyewear styling and prescription options, discretion and everyday wearability are central strengths. |
+| Visual AI | N/A | N/A | G2 has no outward-facing camera, so visual understanding of what the wearer sees is not part of the hardware design. |
+| Software | 7.5 | B | The companion app provides useful AI, translation and information functions, but the product remains materially dependent on that software layer. |
+| Display / HUD | 8.5 | A- | Binocular 640×350 MicroLED waveguides, 27.5° FOV and 60 Hz prioritize glanceable information while retaining normal-eyewear form. |
+| Openness | 5.5 | C- | BLE is documented as a transport, but the public development surface is narrower than platforms built around broad SDK and firmware access. |
+| Owner Control | 5.0 | D+ | The wearer controls use and presentation but does not receive the same degree of firmware, endpoint or platform substitution available on open developer glasses. |
+| Cloud Independence | 4.5 | D | Even documents Bluetooth plus internet requirements for current functions and cloud-assisted AI/translation services. |
+| Hackability | 5.0 | D+ | BLE provides an interface surface, but low-level access and supported modification paths are limited compared with open developer platforms. |
+| Value | Not yet graded | — | A durable value score requires contemporaneous pricing and comparison with competing prescription-ready HUD glasses. |
+
+Sources: [Even G2 specifications](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs), [Even G2 Q&A](https://support.evenrealities.com/hc/en-us/articles/14601104557839-G2-General-Q-A), [Even translation glasses](https://www.evenrealities.com/en-CA/translation-glasses).
+
+### XREAL One
+
+XREAL One is fundamentally a tethered spatial display rather than a standalone AI computer. That narrow architecture produces a very different report card: high display capability and strong cloud independence, but little reason to score camera-based visual AI at all.
+
+| Dimension | Score | Grade | Why |
+|---|---:|:---:|---|
+| Hardware | 8.5 | A- | Dual 1080p Micro-OLED displays, up to 120 Hz, X1 spatial compute, electrochromic dimming and open-ear audio form a strong display-focused hardware package. |
+| Wearability | 7.5 | B | Much lighter and more glasses-like than a headset, though wired host dependence limits everyday freedom compared with untethered eyewear. |
+| Visual AI | N/A | N/A | XREAL One is a display/interaction device without an outward-facing visual-AI camera architecture. |
+| Software | 7.5 | B | XREAL provides SDK documentation and spatial modes, but useful operation still depends heavily on the connected host ecosystem. |
+| Display / HUD | 9.0 | A | 1920×1080 per eye, up to 120 Hz and roughly 50° FOV make display quality the defining strength. |
+| Openness | 7.5 | B | Official Unity/XR development support and documentation provide meaningful developer access without opening the entire firmware stack. |
+| Owner Control | 8.0 | B+ | Standard USB-C DisplayPort hosts give owners broad freedom over the source device and displayed content. |
+| Cloud Independence | 9.5 | A+ | Core display and spatial operation are driven by a local wired host and do not inherently require cloud services. |
+| Hackability | 7.0 | B- | Standard host interfaces and SDKs offer useful experimentation, while deeper firmware and hardware control remain more limited. |
+| Value | Not yet graded | — | Value is highly sensitive to current retail price and whether the buyer specifically needs a private large-screen spatial display. |
+
+Sources: [XREAL SDK](https://docs.xreal.com/), [XREAL One specifications](https://tutorials.xreal.com/docs/glasses/one-series/spec/), [XREAL One connection guide](https://tutorials.xreal.com/docs/glasses/one-series/first-use/connect-device/), [XREAL One firmware FAQ](https://tutorials.xreal.com/docs/glasses/one-series/faq/).
+
+### Solos AirGo family
+
+Solos is notable because its public developer program exposes a surprisingly broad set of useful interfaces across both audio and camera-equipped AirGo models: BLE control, sensors, microphones, audio I/O, touch, camera access on supported models, video streaming, webhooks and RTMP endpoints.
+
+Because the family spans materially different hardware, dimensions that depend on the exact camera/display configuration are withheld rather than pretending one grade fits every AirGo generation.
+
+| Dimension | Score | Grade | Why |
+|---|---:|:---:|---|
+| Hardware | Not yet graded | — | AirGo 3/A5 audio models and AirGo V camera models differ enough that a single family hardware grade would be misleading. |
+| Wearability | Not yet graded | — | Form, weight and camera hardware vary by model generation. |
+| Visual AI | Not yet graded | — | Camera-equipped AirGo V models support visual workflows, while audio-only models do not. |
+| Software | 8.0 | B+ | The SDK exposes audio, microphones, sensors, touch, camera/video on supported models, webhooks, RTMP and application wrappers. |
+| Display / HUD | N/A | N/A | The currently documented AirGo family is audio/camera oriented rather than a visual HUD platform. |
+| Openness | 8.5 | A- | A commercial SDK with documented BLE, Wi-Fi, sensor, audio and camera interfaces creates a substantial supported development surface. |
+| Owner Control | 8.0 | B+ | Custom mobile applications, endpoints, webhooks and RTMP workflows let developers redirect much of the intelligence and data path. |
+| Cloud Independence | 7.5 | B | BLE/local application control is available, while some assistant and streaming workflows naturally use network services. |
+| Hackability | 7.5 | B | Supported SDK access substantially reduces the need for reverse engineering, though firmware-level control is not documented as open. |
+| Value | Not yet graded | — | Family-wide pricing and capability differences make a single value score inappropriate. |
+
+Sources: [Solos SDK / Developer Program](https://solosglasses.com/pages/developers), [Solos product site](https://solosglasses.com/).
 
 ### W610 / HeyCyan family — hands-on card in progress
 
