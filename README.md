@@ -32,6 +32,11 @@ An open argument about wearable recording, surveillance, bystander rights, indiv
 
 - [**Find & compare smart glasses**](docs/COMPARISON_ENGINE.md) — rank close matches and compare devices side by side.
 - [**GlassesResearch Report Card**](docs/REPORT_CARD.md) — compare hardware, wearability, visual AI, software, HUD, openness, owner control, cloud independence, hackability, and value without hiding tradeoffs in one score.
+- [**Companion App Database**](docs/COMPANION_APP_DATABASE.md) — track the software layer that controls pairing, firmware, accounts, AI, media, and long-term survivability.
+- [**SDK / API Compatibility Matrix**](docs/SDK_API_MATRIX.md) — compare documented developer access to displays, cameras, audio, sensors, transports, and custom AI integration.
+- [**Survival / Cloud-Independence Matrix**](docs/SURVIVAL_MATRIX.md) — ask what useful functions remain if an app, account system, hosted AI service, or vendor disappears.
+- [**Smart-Glasses Technology Primers**](docs/TECHNOLOGY_PRIMERS.md) — understand waveguides, birdbath optics, microOLED, microLED, LCOS, IMUs, SLAM, eye tracking, audio systems, and compute architectures.
+- [**Standard Hands-On Test Protocol**](docs/HANDS_ON_TEST_PROTOCOL.md) — a repeatable evidence protocol for physical inspection, onboarding, offline use, battery, thermals, cameras, audio, HUDs, wearability, software, ownership, and survival.
 - [**Browse 145 smart-glasses models and generations**](models/THE_LIST.md) — the cross-vendor eyewear index, past and present.
 - [**Browse adjacent wearable-HCI devices**](models/ADJACENT_WEARABLES.md) — headsets, helmets, clip-on assistive modules, over-ear AR and future non-eyewear form factors, kept separate from the glasses count.
 - [**Wearable-HCI taxonomy**](docs/taxonomy/WEARABLE_HCI.md) — the form-factor, lineage, evidence and counting rules that keep the catalogs precise.
