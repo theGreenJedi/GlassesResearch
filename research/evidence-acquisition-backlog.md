@@ -8,15 +8,15 @@ This backlog converts the normalized `research/populated/` layer into explicit e
 
 These items block clean model-level conclusions and should be resolved before broad enrichment.
 
-| Target | Why it matters | Required evidence | Completion condition |
-|---|---|---|---|
-| Mijia Smart Audio Glasses — GLS-0022 | Catalog may conflate a 2022-era product with a newer product using the same name. | Generation-specific Xiaomi product pages, manuals, regulatory records, launch dates and model numbers. | Exact identity and generation boundary established; report card can be scored without borrowing later hardware. |
-| Mijia Camera Glasses — GLS-0023 | Existing first-party page is too sparse for a complete card. | Archived/manual/regulatory specifications, connectivity, battery, software and service behavior. | Complete evidence-backed card or explicit retained unknowns after archival exhaustion. |
-| Lucyd Lyte 2.1 — GLS-0032 | Separate hardware-generation status is unproven. | Archived Lucyd/Innovative Eyewear product pages, SEC material, manuals and SKU/model evidence. | Verify as distinct generation or correct catalog identity. |
-| Lucyd Lyte 2.3 — GLS-0033 | Same identity problem as 2.1. | Archived product/SEC/manual/SKU evidence. | Verify as distinct generation or correct catalog identity. |
-| INMO Air 3 — GLS-0060 | Normalized record imported only part of the completed card. | Copy the already completed common-ruler values from `HIGH_THROUGHPUT_BATCH_02.md`. | Full card present verbatim in normalized record. |
-| INMO GO — GLS-0059 | Normalized record omitted several already-completed scores. | Copy the already completed common-ruler values from `HIGH_THROUGHPUT_BATCH_02.md`. | Full card present verbatim in normalized record. |
-| Solos AirGo V2 — GLS-0029 | Normalized record intentionally stopped after H/W/VAI. | Copy remaining completed common-ruler values from `HIGH_THROUGHPUT_BATCH_01.md`. | Full card present verbatim in normalized record. |
+| Target | Status | Required next evidence / action |
+|---|---|---|
+| Mijia Smart Audio Glasses — GLS-0022 | **Partially resolved.** EV-0034 proves Xiaomi Smart Audio Glasses and the current Mijia Smart Audio Glasses are distinct generations/products; current Mijia specifications must not be copied into the 2022 row. | Recover 2022 mainland-China launch/store/manual/regulatory evidence and exact model number, then rename or split GLS-0022 if required. |
+| Mijia Camera Glasses — GLS-0023 | **Identity confirmed; specification depth still unresolved.** Xiaomi still hosts the MIJIA Glasses Camera product/spec pages, but parsed engineering detail is insufficient for a full card. | Recover archived/manual/regulatory specifications, connectivity, battery, software and present-day service behavior. |
+| Lucyd Lyte 2.1 — GLS-0032 | **Resolved as unsupported generation label.** EV-0035 finds no company/SEC evidence of a distinct Lyte 2.1 commercial hardware generation. | Catalog reconciliation: preserve stable-ID correction history; do not inherit Lyte 2.0 scores. |
+| Lucyd Lyte 2.3 — GLS-0033 | **Resolved as unsupported generation label.** Company/SEC history instead establishes Lyte XL after Lyte 2.0. | Catalog reconciliation: replace unsupported generation naming with evidence-backed Lyte XL where appropriate; build XL card from exact evidence. |
+| INMO Air 3 — GLS-0060 | **Completed.** Full common-ruler card imported from `HIGH_THROUGHPUT_BATCH_02.md`. | Move to ordinary enrichment queue. |
+| INMO GO — GLS-0059 | **Completed.** Full common-ruler card imported from `HIGH_THROUGHPUT_BATCH_02.md`. | Move to ordinary enrichment queue. |
+| Solos AirGo V2 — GLS-0029 | **Completed.** Full common-ruler card imported from `HIGH_THROUGHPUT_BATCH_01.md`. | Move to firmware/service-survival enrichment queue. |
 
 ## Priority 1 — cloud/service survival
 
@@ -43,7 +43,12 @@ Completion condition: function-by-function service-dependence matrix with dated 
 
 For every ordinary-eyewear-form product, record direct corrective-lens support, exact correction limits, progressive support, replacement lens availability, and whether an ordinary independent optical shop can service it.
 
-First wave: HeyCyan/W610, Meta/Ray-Ban/Oakley, Even G1/G2, Brilliant Frame/Halo, Solos, Lucyd, Huawei, Vuzix Z100/Blade 2, Rokid Glasses, RayNeo X3 Pro, Iristick G3, Ampere Dusk and Chamelo.
+**Completed evidence in this mission:**
+- Lucyd Lyte family: EV-0035 supports **ordinary optical service**; Innovative Eyewear says frames are designed for fitting by any optician and support prescription/sunglass/reading/blue-light formats.
+- Xiaomi Smart Audio Glasses optical version: EV-0034 supports **ordinary optical service** via professional optical shops.
+- Current Mijia Smart Audio Glasses: EV-0034 supports **ordinary optical service**; Xiaomi says ordinary-glasses lens thicknesses are supported and directs fitting to offline optical shops.
+
+Next first wave: HeyCyan/W610, Meta/Ray-Ban/Oakley, Even G1/G2, Brilliant Frame/Halo, Solos, Huawei, Vuzix Z100/Blade 2, Rokid Glasses, RayNeo X3 Pro, Iristick G3, Ampere Dusk and Chamelo.
 
 Do not treat `prescription compatible` as equivalent to independent serviceability.
 
