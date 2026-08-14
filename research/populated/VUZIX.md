@@ -1,6 +1,6 @@
 # Vuzix — populated research record
 
-Primary evidence includes Z100 documentation (`EV-0016`), Ultralite SDK (`EV-0017`), Vuzix developer/support resources, `docs/report-cards/BATCH_01.md`, and `HIGH_THROUGHPUT_BATCH_05.md`.
+Primary evidence includes Z100 documentation (`EV-0016`), Ultralite SDK (`EV-0017`), optical-service evidence (`EV-0038`), Vuzix developer/support resources, `docs/report-cards/BATCH_01.md`, and `HIGH_THROUGHPUT_BATCH_05.md`.
 
 ## Architecture branches
 Vuzix spans a phone-assisted Z100/Ultralite display branch and multiple standalone Android wearable-computer branches. Corporate lineage does not imply shared hardware architecture.
@@ -10,12 +10,22 @@ Phone-assisted BLE display peripheral with 640×480 monochrome green microLED wa
 
 Anchor: H7.5 W9.0 VAI N/A S8.0 O7.5 OC8.0 CI9.5 Hack7.5 HUD8.0 V7.0; $499 general-availability price basis.
 
+### Z100 optical serviceability
+Vuzix sells a prescription-insert kit made to the owner's prescription and explicitly describes it as a do-it-yourself lens-change kit. The insert ships separately from the glasses and Vuzix publishes installation guidance.
+
+Serviceability state: **owner-installable prescription insert**. This is stronger than vendor-return-only service, although it is not the same as an ordinary optician cutting directly into the electronics-bearing frame.
+
 ## Blade 2 — GLS-0055
 Enterprise-oriented standalone Android smart glasses with right-eye 480×480 full-color waveguide display (~20° FOV), autofocus HD camera, stereo speakers, noise-cancelling microphones, Wi-Fi/Bluetooth, touch/voice interaction and Android/Vuzix developer tooling.
 
 Report-card anchor: H8.0 W7.0 VAI7.0 S8.5 O8.0 OC8.0 CI8.5 Hack8.0 HUD7.0; Value not yet graded.
 
 Blade 2 is more glasses-like than the head-mounted M-series while retaining meaningful Android application control. Firmware-level openness remains below Brilliant-class benchmarks.
+
+### Blade 2 optical serviceability
+Vuzix lists Blade 2 prescription lenses and publishes an owner installation guide. The prescription assembly is installed by removing the nose-bridge screw and fitting the replacement prescription frame assembly.
+
+Serviceability state: **owner-installable specialist insert/frame assembly**.
 
 ## Standalone Android M/LX1/Shield generations
 - **M100 — GLS-0095:** H4.5 W3.5 VAI3.5 S4.5 O5.0 OC6.0 CI8.0 Hack5.5 HUD4.0; Value not yet graded.
@@ -33,10 +43,10 @@ M400/M4000 use Qualcomm XR1, 6 GB RAM, 64 GB storage, 12.8 MP/4K camera, orienta
 LX1 is a 2026 warehouse-focused Android 15 system with 7000 mAh long-shift battery, rugged/freezer-oriented design and NFC pairing. Shield uses Snapdragon XR1, binocular full-color microLED waveguides, stereo HD cameras and prescription-ready safety-glasses framing.
 
 ## Ownership interpretation
-Vuzix is unusually owner-controllable for commercial enterprise eyewear because standard Android app development, APK installation, sensor APIs and Vuzix SDKs are real. This remains proprietary hardware: application programmability must not be inflated into open firmware/schematics or unrestricted bootloader access.
+Vuzix is unusually owner-controllable for commercial enterprise eyewear because standard Android app development, APK installation, sensor APIs and Vuzix SDKs are real. Owner-installable prescription systems on Z100 and Blade 2 add a separate, practical ownership advantage. This remains proprietary hardware: application programmability must not be inflated into open firmware/schematics or unrestricted bootloader access.
 
 ## Cloud independence
 Z100 is host-dependent rather than inherently cloud-dependent; standalone Android products can run local applications. Vendor cloud/licensing features remain model-specific, but core functionality has strong local architecture.
 
 ## Research priorities
-Current prices, bootloader/firmware access, exact sensor exposure, prescription service paths, battery/parts repairability, support horizon and service/account dependencies by model.
+Current prices, bootloader/firmware access, exact sensor exposure, repairability beyond optical assemblies, battery/parts availability, support horizon and service/account dependencies by model.
