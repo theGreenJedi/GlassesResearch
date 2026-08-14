@@ -22,9 +22,9 @@ The company's filings repeatedly describe the product line in these terms. No pr
 SEC filings also provide unusually strong optical-serviceability evidence: the company states its frame fronts are designed for easy lens fitting by any optician, and that all frames can be fitted with prescription, sunglass, reading and blue-light lens formats. This is evidence of ordinary independent optical serviceability rather than merely vendor-sold prescription availability.
 
 ## Catalog implication
-The canonical rows `GLS-0032 — Lyte 2.1` and `GLS-0033 — Lyte 2.3` are not supported as distinct commercial hardware generations by the primary corporate history reviewed here. They should not inherit Lyte 2.0 scores based on naming similarity.
+Reconciliation is complete. `GLS-0032 — Lyte 2.1` is retired from the canonical model count because no distinct commercial generation is supported. `GLS-0033` now maps to the defensible October 2023 successor, **Lyte XL**; its former `Lyte 2.3` label is unsupported. Neither row inherits Lyte 2.0 scores.
 
-The defensible named successor after Lyte 2.0 is **Lyte XL**. Catalog reconciliation should replace unsupported generation labels while preserving stable IDs/history in a correction ledger rather than silently rewriting provenance.
+Both former labels and their disposition are preserved in `models/CATALOG_CORRECTIONS.md`, so the correction is explicit and reversible if new primary acquisition evidence appears.
 
 ## Ownership implication
 Lucyd's ordinary-optician fitting statement materially strengthens Optical Serviceability / Owner Control for the Lyte family. Core audio remains standard Bluetooth architecture; firmware/system openness remains a separate question.
