@@ -28,6 +28,8 @@ Concrete primary sources and technical artifacts worth preserving because they d
 | PA-0022 | Rokid ecosystem | [Rokid terminal SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/) | Rokid | Official glasses/phone SDK index, samples and API documentation. |
 | PA-0023 | Meta / Ray-Ban Meta | [Ray-Ban Meta FAQ](https://www.ray-ban.com/usa/c/frequently-asked-questions-ray-ban-meta-smart-glasses) | Ray-Ban / Meta | Pairing, app dependency, Bluetooth/Wi-Fi transfer, firmware update, controls and troubleshooting documentation. |
 | PA-0024 | Even Realities G2 | [G2 specifications](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs) | Even Realities | Display, battery, BLE, microphones and hardware specifications. |
+| PA-0025 | Mentra Live | [Bluetooth SDK source and documentation](https://github.com/Mentra-Community/MentraOS/tree/dev/mobile/modules/bluetooth-sdk) | Mentra Community | React Native/Expo, Android and iOS host SDK; direct BLE control, capture, audio, settings, streaming, telemetry controls and version-linked OTA behavior. |
+| PA-0026 | Mentra Live | [Persistent Bluetooth SDK OTA release](https://github.com/Mentra-Community/MentraOS/releases/tag/bluetooth-sdk-ota) | Mentra Community | Version-keyed ASG client APK and firmware manifests intended to remain immutable for each published SDK version. |
 
 ## Preservation rule
 
