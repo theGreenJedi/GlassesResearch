@@ -1,42 +1,34 @@
-# Solos — populated research fields
+# Solos AirGo — populated research record
 
-This record applies the GlassesResearch evidence frameworks to the current Solos AirGo ecosystem.
+This record combines the existing Solos developer-evidence framework with generation-specific findings from `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`. Primary developer evidence includes the official Solos SDK (`EV-0026`).
 
-## Evidence base
+## AirGo 2 — GLS-0026
+Audio-first predecessor. Existing research documents Bluetooth 5.0/BLE, Android/iOS support, roughly 11 hours music, eight hours calls, quick charging and prescription-compatible frame options. The current Solos SDK does not list AirGo 2 among supported targets.
 
-Primary evidence includes the official Solos developer SDK (`EV-0026`), covering current AirGo audio and camera glasses.
+Report-card anchor: H6.0 W7.5 VAI N/A S5.5 O4.0 OC5.5 CI8.5 Hack4.5 HUD N/A; Value not yet graded.
 
-## Product architecture
+## AirGo 3 — GLS-0027
+Solos documents ~39 g examples, Bluetooth 5.2/BLE, IP67, ~10 hours music/seven hours calls and an official SDK exposing audio I/O, motion, compass and touch APIs.
 
-Solos spans lightweight audio-first glasses and camera-enabled AI-glasses variants. These should remain separate model classes within one corporate/software lineage rather than inherit capabilities from one another.
+Report-card anchor: H7.5 W8.5 VAI N/A S8.0 O7.5 OC8.0 CI8.5 Hack7.5 HUD N/A; Value not yet graded.
 
-## Connectivity and developer access
+Developer access materially improves application-level owner control, while firmware/bootloader access remains unestablished.
 
-The official SDK documents supported connectivity and device interaction, including Bluetooth and, on supported models, additional network and camera-related capabilities. This is strong evidence of an intentional developer surface.
+## AirGo Vision / AirGo V — GLS-0028
+Camera-enabled generation on the shared mobile development platform. Official SDK access includes audio, sensors, touch, photo-taking and photo-streaming functions. Visual AI is applicable because owners/developers can route imagery into downstream processing rather than being limited to a single vendor assistant.
 
-SDK availability does not establish unrestricted firmware access, bootloader access or every sensor being exposed.
+Report-card anchor: H7.5 W8.0 VAI8.0 S8.5 O8.0 OC8.5 CI8.5 Hack8.0 HUD N/A; Value not yet graded.
 
-## Visual AI and sensing
+## AirGo V2 — GLS-0029
+Expanded camera generation with video recording/streaming, Wi-Fi data transport, BLE control, voice-command, firmware-update, webhook and RTMP pathways while retaining V1 APIs.
 
-Camera-equipped AirGo variants can support visually aware functions, while audio-only models cannot be assumed to do so. Visual AI must therefore be scored per model from documented camera-assisted behavior.
+Report-card anchor from the completed batch begins with H8.5 W8.0 VAI8.5; the remaining dimensions should be imported only from the complete scored source rather than guessed from V1. The documented protocol/API expansion itself strongly supports continued high developer-access and owner-control research priority.
 
-## Owner control and cloud independence
+## Lineage interpretation
+Solos spans audio-only and camera-enabled glasses within one modular ecosystem. Audio-only models have Visual AI and HUD marked N/A. Camera models can support owner-selected downstream processing because official APIs expose capture functions. SDK availability does not prove open firmware, bootloader access or unrestricted exposure of every sensor.
 
-Public SDK access improves owner/developer control at the application layer. Exact ability to replace the default assistant, choose model endpoints, operate locally, or continue functioning without Solos services remains model- and software-specific.
+## Cloud independence
+Core Bluetooth audio and custom host applications can operate without Solos cloud AI on supported models. Individual vendor AI features, transcription, remote endpoints and network workflows must be scored separately. Custom host control is a genuine positive signal but not proof that every first-party feature is locally self-sufficient.
 
-## Wearability and prescription
-
-The lineage's ordinary-eyewear form factor is a major research dimension. Prescription compatibility, lens replacement, frame options, weight distribution and long-duration comfort should be populated per model rather than inferred from product styling.
-
-## Report-card implications
-
-- Wearability: structurally promising, but needs model-specific fit evidence.
-- Visual AI: N/A on audio-only variants; applicable on camera variants.
-- Openness: official SDK is a strong positive signal.
-- Owner Control: meaningful at application level, unknown at firmware/system level.
-- Cloud Independence: unresolved for AI features and account/service dependencies.
-- Hackability: stronger than closed consumer-only products because a supported developer interface exists.
-
-## Unknowns retained
-
-Firmware replacement, bootloader state, full sensor exposure, exact offline behavior, subscription dependence, repairability, battery aging, prescription serviceability by model and long-term service survival remain open.
+## Remaining evidence targets
+Firmware replacement/boot chain, full sensor exposure, exact offline behavior, subscription/account dependence, repairability, battery aging, prescription serviceability by model, regional differences and long-term service survival remain open.
