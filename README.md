@@ -4,7 +4,7 @@ Independent, evidence-based research into smart glasses, AI glasses, and user-co
 
 ## Finder
 
-Choose what matters. The Finder checks the full 144-model catalog and shows exact documented matches, then leads into comparisons, model research, and Report Cards.
+Choose what matters. The Finder checks the full living catalog and shows exact documented matches, then leads into comparisons, model research, and Report Cards.
 
 <div id="homepage-finder-app">
 Loading the compact Glasses Finder…
