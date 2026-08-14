@@ -13,10 +13,10 @@ The shared catalog-wide benchmark ruler in `research/REPORT_CARD_BENCHMARKS.md` 
 | GLS-0095 | Vuzix M100 | 4.5 | 3.5 | 3.5 | 4.5 | 5.0 | 6.0 | 8.0 | 5.5 | 4.0 | Not yet graded |
 | GLS-0096 | Vuzix M300 | 6.0 | 4.5 | 5.5 | 6.0 | 6.5 | 7.0 | 8.5 | 6.5 | 5.0 | Not yet graded |
 | GLS-0097 | Vuzix M300XL | 6.5 | 4.5 | 6.0 | 6.0 | 6.5 | 7.0 | 8.5 | 6.5 | 5.0 | Not yet graded |
-| GLS-0098 | Vuzix M400 | 8.0 | 5.5 | 7.5 | 7.5 | 7.0 | 8.0 | 9.0 | 7.0 | 6.0 | Not yet graded |
-| GLS-0099 | Vuzix M4000 | 8.0 | 5.5 | 7.5 | 7.5 | 7.0 | 8.0 | 9.0 | 7.0 | 7.0 | Not yet graded |
-| GLS-0100 | Vuzix LX1 | 8.0 | 4.5 | 6.5 | 7.5 | 7.0 | 8.0 | 9.0 | 7.0 | 6.5 | Not yet graded |
-| GLS-0121 | Vuzix Shield | 8.5 | 6.5 | 8.0 | 7.5 | 7.0 | 8.0 | 9.0 | 7.0 | 8.5 | Not yet graded |
+| GLS-0098 | Vuzix M400 | 8.0 | 5.5 | 7.5 | 7.5 | 7.0 | 8.0 | 9.0 | 7.0 | 6.0 | 5.5 |
+| GLS-0099 | Vuzix M4000 | 8.0 | 5.5 | 7.5 | 7.5 | 7.0 | 8.0 | 9.0 | 7.0 | 7.0 | 4.5 |
+| GLS-0100 | Vuzix LX1 | 8.0 | 4.5 | 6.5 | 7.5 | 7.0 | 8.0 | 9.0 | 7.0 | 6.5 | 5.0 |
+| GLS-0121 | Vuzix Shield | 8.5 | 6.5 | 8.0 | 7.5 | 7.0 | 8.0 | 9.0 | 7.0 | 8.5 | 5.0 |
 | GLS-0101 | RealWear HMT-1 | 6.5 | 4.0 | 5.5 | 6.5 | 6.0 | 7.0 | 8.0 | 6.0 | 5.0 | Not yet graded |
 | GLS-0102 | RealWear HMT-1Z1 | 7.0 | 3.5 | 5.5 | 6.5 | 6.0 | 7.0 | 8.0 | 6.0 | 5.0 | Not yet graded |
 | GLS-0103 | RealWear Navigator 500 | 8.0 | 4.5 | 7.0 | 7.5 | 6.5 | 7.5 | 8.5 | 6.5 | 5.5 | Not yet graded |
@@ -40,6 +40,10 @@ Shield is the most optically ambitious Vuzix system in this packet: Snapdragon X
 HMT-1/HMT-1Z1 established RealWear's rugged voice-first monocular model. Their 854×480 0.32-inch displays remain useful but modest on the catalog-wide display ruler. HMT-1Z1's intrinsically safe construction is a hardware advantage for hazardous environments but does not translate into ordinary-eyewear wearability. Both are now end-of-support, with firmware ending at 12.6; HMT-1 nevertheless reached Android 10 and supports local dictation in English, German and Mandarin, showing that core operation was not wholly cloud-bound.
 
 Navigator 500 modernized the platform with a modular camera and swappable battery while retaining an 854×480 display. Navigator 520 and Navigator Z1 move to 1280×720 0.35-inch HD displays; Z1 adds intrinsically safe construction. RealWear states that Navigator 500, 520 and Z1 remain supported through at least December 2030 and plans Android-16-based software for currently supported devices in 2026. Their Android enterprise application model gives owners meaningful deployment control, but the platform remains proprietary and therefore stays well below the Monocle/Frame openness benchmark.
+
+### Current-value boundary
+
+Checked US prices on 2026-08-14 were $1,499.99 for M400, $2,499.99 for M4000, $2,199.99 for LX1 and $2,499.99 for Shield. Their Android deployment, ruggedness and replaceable-power advantages create real ownership utility, but a hypothetical enterprise productivity return is not a substitute for catalog-wide acquisition value. EV-0053 records the dated price basis and recheck triggers.
 
 ## Primary-source families
 
