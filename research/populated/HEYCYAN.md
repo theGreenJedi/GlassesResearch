@@ -16,6 +16,7 @@ Core evidence includes:
 - EV-0008 — Goodway W610 specification/customization page
 - [`evidence/EV-0033-CyanBridge-v2.1.1.md`](../../evidence/EV-0033-CyanBridge-v2.1.1.md) — current CyanBridge 2.1.1 evidence
 - [`evidence/EV-0044-W610-community-protocol-and-owner-access.md`](../../evidence/EV-0044-W610-community-protocol-and-owner-access.md) — bounded protocol and owner-access assessment
+- [`evidence/EV-0061-CyanBridge-Qwen-local-model-boundary.md`](../../evidence/EV-0061-CyanBridge-Qwen-local-model-boundary.md) — Qwen2.5 phone-local inference boundary
 
 ## W610 connectivity / software
 GlassesResearch directly observed Bluetooth identity `HeyCyan Glasses`. Public community projects demonstrate Bluetooth/BLE interaction and independent Android companion software. Community work also documents Bluetooth-to-Wi-Fi media-transfer behavior on compatible devices.
@@ -37,6 +38,9 @@ This supports strong application/companion-level Openness, Owner Control and Hac
 
 ## AI architecture
 The ecosystem supports owner-selected downstream assistant/model workflows through companion software. Current evidence does not establish that general AI inference runs on the glasses themselves; the glasses primarily serve as capture/audio/control hardware with phone and/or external model processing.
+
+## Qwen local-model boundary
+CyanBridge v2.0.0 names Qwen2.5 0.5B and 1.5B as phone-local model options through its llama.cpp/GGUF runtime. This supports a concrete glasses-to-phone-to-owner-selected-model architecture. The release assigns multimodal image/audio input to LiteRT Gemma 4 models, not Qwen; Qwen multimodality, on-glasses inference, end-to-end offline speech, and performance on Pete's W610 remain unverified.
 
 ## Cloud independence
 Basic startup and Bluetooth discovery have been observed without the vendor application. Independent companion software reduces dependence on the original vendor stack. EV-0044 documents a concrete community media path: BLE requests transfer mode and reports the glasses address, while Wi-Fi Direct and a local HTTP manifest carry media. That makes media continuity plausible without the official user interface. It is still community-source evidence, retains vendor-library dependencies, and must be reproduced on the owned W610 with the official app stopped. AI, configuration, authentication and firmware functions still need function-by-function offline testing.
