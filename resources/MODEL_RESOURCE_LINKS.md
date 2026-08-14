@@ -4,6 +4,15 @@ This is the model-ID-level resource index for GlassesResearch. Each listed produ
 
 Links are labeled by provenance. A family-level support/developer/community resource may legitimately serve several generations; model-specific links are preferred where available. No placeholder links.
 
+## Coverage map
+
+- **GLS-0001–0042:** consumer camera/audio block — populated below.
+- **GLS-0043–0094:** discreet display, standalone AR, and tethered XR — [`model-links/GLS-0043-0094.md`](model-links/GLS-0043-0094.md).
+- **GLS-0095–0121:** enterprise, industrial, field-service and safety eyewear — [`model-links/GLS-0095-0121.md`](model-links/GLS-0095-0121.md).
+- **GLS-0122–0145:** 2026-08-12 lineage-reconciled admissions — [`model-links/GLS-0122-0145.md`](model-links/GLS-0122-0145.md).
+
+**All 145 canonical GLS model IDs now have a corresponding resource entry.** External-link richness remains an enrichment target; internal evidence/report-card links are retained where a historical external resource still needs archival recovery.
+
 ## Camera, audio, and everyday AI glasses — GLS-0001 through GLS-0042
 
 | ID | Model | Concrete resources |
@@ -55,4 +64,4 @@ Links are labeled by provenance. A family-level support/developer/community reso
 
 A model is considered **link-covered** when at least one concrete model-appropriate external resource or explicit internal preservation/correction record exists. `Manufacturer root only` is provisional coverage and should be upgraded when a product-specific, support, developer, archive, regulatory, or community resource is found.
 
-The mission continues through all remaining GLS IDs. Resource richness matters more than link count.
+The next resource mission is **external-link enrichment**: replace manufacturer-root-only or internal-evidence-only coverage with stronger product-specific, support, developer, regulatory, archive and community links. Resource richness matters more than link count.
