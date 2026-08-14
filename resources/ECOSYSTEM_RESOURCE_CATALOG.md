@@ -1,33 +1,54 @@
 # Smart-Glasses Ecosystem Resource Catalog
 
-A cross-model catalog of concrete software, SDK, documentation, regulatory, source-code, and preservation resources. Entries are here because a real resource was found and can be linked directly.
+A cross-model catalog of concrete software, SDK, documentation, regulatory, source-code, community and preservation resources. Entries are here because a real resource was found and can be linked directly.
+
+## Resource-link schema
+
+Every cataloged model or lineage should receive concrete links where they exist. Do not create placeholder links merely to make a row look complete.
+
+Preferred provenance labels:
+
+- **Official product** — manufacturer product or lineage page.
+- **Official support** — manuals, FAQ, firmware, repair, optical or parts documentation.
+- **Official developer** — SDK/API/developer documentation supplied by the manufacturer or platform owner.
+- **Official source** — manufacturer-maintained source repository.
+- **Open source** — public source project directly relevant to the device/ecosystem.
+- **Community** — useful independent project, forum, Discord, Reddit, XDA or other technical community.
+- **Reverse engineering** — protocol/firmware/hardware investigation not supplied by the manufacturer.
+- **Regulatory** — FCC or equivalent equipment records.
+- **Preservation/archive** — archived official material or preservation resources for discontinued products.
+
+A model can have multiple links in a category or none. Missing resources stay missing until a real resource is found.
 
 ## W610 / HeyCyan
 
-- [HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK) — community SDK/BLE implementation.
-- [CyanBridge](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK) — alternative Android companion application and SDK.
-- [CyanBridge releases](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases) — versioned Android artifacts and release notes.
-- [FCC ID 2BNVK-W610](https://fccid.io/2BNVK-W610) — W610 equipment authorization and exhibits.
-- [Goodway W610 specification page](https://www.goodwaytechs.com/goodway-ai-smart-glasses-with-8mp-camera-real-time-translation-ip65-waterproof-42g-lightweight-w610.html) — supplier specifications and customization claims.
-- [W610 Research Portal](../models/W610/resources/RESEARCH_PORTAL.md) — GlassesResearch source map and rebrand/regulatory links.
+- **Community:** [HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK) — community SDK/BLE implementation.
+- **Community / alternative companion:** [CyanBridge](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK) — alternative Android companion application and SDK.
+- **Community releases:** [CyanBridge releases](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases) — versioned Android artifacts and release notes.
+- **Regulatory:** [FCC ID 2BNVK-W610](https://fccid.io/2BNVK-W610) — W610 equipment authorization and exhibits.
+- **Supplier specification:** [Goodway W610 specification page](https://www.goodwaytechs.com/goodway-ai-smart-glasses-with-8mp-camera-real-time-translation-ip65-waterproof-42g-lightweight-w610.html) — supplier specifications and customization claims.
+- **Research portal:** [W610 Research Portal](../models/W610/resources/RESEARCH_PORTAL.md) — GlassesResearch source map and rebrand/regulatory links.
 
 ## Brilliant Labs
 
-- [Brilliant Labs documentation](https://docs.brilliant.xyz/) — Frame/Halo/Monocle documentation hub.
-- [Frame hardware manual](https://docs.brilliant.xyz/frame/hardware/) — schematics, block diagram, optics/electronics, battery, sensors and firmware information.
-- [Frame SDK](https://docs.brilliant.xyz/frame/frame-sdk/) — Python, Flutter, Lua, BLE and firmware-development entry points.
-- [Frame Bluetooth specification](https://docs.brilliant.xyz/frame/frame-sdk-bluetooth-specs) — BLE services and characteristic protocol documentation.
-- [Brilliant Labs GitHub](https://github.com/brilliantlabsAR) — official source repositories.
-- [Frame Python SDK](https://github.com/brilliantlabsAR/frame-sdk-python) — official Python SDK.
-- [Frame firmware codebase](https://github.com/brilliantlabsAR/frame-codebase) — public firmware/source repository.
+- **Official developer:** [Brilliant Labs documentation](https://docs.brilliant.xyz/) — Frame/Halo/Monocle documentation hub.
+- **Official hardware:** [Frame hardware manual](https://docs.brilliant.xyz/frame/hardware/) — schematics, block diagram, optics/electronics, battery, sensors and firmware information.
+- **Official developer:** [Frame SDK](https://docs.brilliant.xyz/frame/frame-sdk/) — Python, Flutter, Lua, BLE and firmware-development entry points.
+- **Official protocol:** [Frame Bluetooth specification](https://docs.brilliant.xyz/frame/frame-sdk-bluetooth-specs) — BLE services and characteristic protocol documentation.
+- **Official source:** [Brilliant Labs GitHub](https://github.com/brilliantlabsAR) — official source repositories.
+- **Official source:** [Frame Python SDK](https://github.com/brilliantlabsAR/frame-sdk-python) — official Python SDK.
+- **Official source:** [Frame firmware codebase](https://github.com/brilliantlabsAR/frame-codebase) — public firmware/source repository.
 
 ## Mentra ecosystem / open hardware
 
-- [MentraOS](https://github.com/Mentra-Community/MentraOS) — MIT-licensed operating system and SDK for smart-glasses applications.
-- [MentraOS releases](https://github.com/Mentra-Community/MentraOS/releases) — versioned builds, release notes, APKs and checksums.
-- [Mentra Community](https://github.com/Mentra-Community) — organization index for SDKs, examples and compatibility projects.
-- [Open Source Smart Glasses](https://github.com/Mentra-Community/OpenSourceSmartGlasses) — open mechanical, electrical, firmware and software design.
-- [MentraOS Display Example App](https://github.com/Mentra-Community/MentraOS-Display-Example-App) — public example application.
+- **Official product:** [Mentra Live](https://mentraglass.com/) — Mentra's camera/audio smart-glasses product page.
+- **Official source / platform:** [MentraOS](https://github.com/Mentra-Community/MentraOS) — MIT-licensed operating system and SDK for smart-glasses applications.
+- **Official releases:** [MentraOS releases](https://github.com/Mentra-Community/MentraOS/releases) — versioned builds, release notes, APKs and checksums.
+- **Official source organization:** [Mentra Community](https://github.com/Mentra-Community) — organization index for SDKs, examples and compatibility projects.
+- **Official developer:** [Mentra Bluetooth SDK Starter Kit](https://github.com/Mentra-Community/Mentra-Bluetooth-SDK-Starter-Kit) — direct Bluetooth SDK starter kit for compatible glasses and host applications.
+- **Open source hardware:** [Open Source Smart Glasses](https://github.com/Mentra-Community/OpenSourceSmartGlasses) — open mechanical, electrical, firmware and software design.
+- **Official example:** [MentraOS Display Example App](https://github.com/Mentra-Community/MentraOS-Display-Example-App) — public example application.
+- **Community / offline AI:** [Edge AI Smart Glasses](https://github.com/Mentra-Community/Edge_AI_SmartGlasses) — experimental local/offline STT, TTS and LLM/VLM smart-glasses work.
 
 ## Vuzix Z100
 
