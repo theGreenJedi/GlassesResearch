@@ -1,6 +1,6 @@
 # Solos AirGo — populated research record
 
-This record combines the existing Solos developer-evidence framework with generation-specific findings from `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`. Primary developer evidence includes the official Solos SDK (`EV-0026`).
+This record combines the existing Solos developer-evidence framework with generation-specific findings from `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`. Primary developer evidence includes the official Solos SDK (`EV-0026`); optical-service evidence is captured in `EV-0037`.
 
 ## AirGo 2 — GLS-0026
 Audio-first predecessor. Existing research documents Bluetooth 5.0/BLE, Android/iOS support, roughly 11 hours music, eight hours calls, quick charging and prescription-compatible frame options. The current Solos SDK does not list AirGo 2 among supported targets.
@@ -26,6 +26,11 @@ Report-card anchor: H8.5 W8.0 VAI8.5 S9.0 O8.5 OC9.0 CI9.0 Hack8.5 HUD N/A; Valu
 
 The documented protocol/API expansion makes V2 one of the catalog's strongest officially supported screen-free development platforms below fully open hardware.
 
+## Prescription / optical serviceability
+Solos accepts externally issued prescriptions and supports custom lens production, including alternate lens indices and finishes. The modular architecture separates front frames from smart temples on supported collections, making optical replacement structurally more practical than on sealed integrated-display eyewear.
+
+Current vendor-primary evidence confirms **vendor/specialist prescription service** and external-prescription compatibility. It does not yet prove that every supported Solos model can be serviced by any ordinary independent optical shop. Ordinary-independent service therefore remains provisional pending an explicit vendor statement or repeatable independent fitting evidence.
+
 ## Lineage interpretation
 Solos spans audio-only and camera-enabled glasses within one modular ecosystem. Audio-only models have Visual AI and HUD marked N/A. Camera models can support owner-selected downstream processing because official APIs expose capture functions. SDK availability does not prove open firmware, bootloader access or unrestricted exposure of every sensor.
 
@@ -33,4 +38,4 @@ Solos spans audio-only and camera-enabled glasses within one modular ecosystem. 
 Core Bluetooth audio and custom host applications can operate without Solos cloud AI on supported models. AirGo V2 goes further by supporting owner-directed media/events, webhooks, RTMP and private/local endpoints. Individual vendor AI features and transcription services must still be scored separately.
 
 ## Remaining evidence targets
-Firmware replacement/boot chain, full sensor exposure, exact offline behavior, subscription/account dependence, repairability, battery aging, prescription serviceability by model, regional differences and long-term service survival remain open.
+Firmware replacement/boot chain, full sensor exposure, exact offline behavior, subscription/account dependence, ordinary-independent optical service by model, repairability, battery aging, regional differences and long-term service survival remain open.
