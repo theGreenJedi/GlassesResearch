@@ -11,7 +11,7 @@ Links are labeled by provenance. A family-level support/developer/community reso
 - **GLS-0095–0121:** enterprise, industrial, field-service and safety eyewear — [`model-links/GLS-0095-0121.md`](model-links/GLS-0095-0121.md).
 - **GLS-0122–0145:** 2026-08-12 lineage-reconciled admissions — [`model-links/GLS-0122-0145.md`](model-links/GLS-0122-0145.md).
 
-**All 145 canonical GLS model IDs now have a corresponding resource entry.** External-link richness remains an enrichment target; internal evidence/report-card links are retained where a historical external resource still needs archival recovery.
+**All 144 active canonical GLS model IDs, plus the retired GLS-0032 correction record, have a corresponding resource entry.** External-link richness remains an enrichment target; internal evidence/report-card links are retained where a historical external resource still needs archival recovery.
 
 ## Camera, audio, and everyday AI glasses — GLS-0001 through GLS-0042
 
