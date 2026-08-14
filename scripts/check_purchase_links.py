@@ -15,6 +15,7 @@ import ssl
 import time
 import urllib.error
 import urllib.request
+from urllib.parse import urlparse
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -57,6 +58,8 @@ def classify(code: int | None, original: str, final_url: str | None, error: str 
         return "blocked_or_rate_limited", f"HTTP {code}; retailer may block automated checks"
     if code in (404, 410):
         return "dead", f"HTTP {code}"
+    if code == 503 and "amazon." in urlparse(original).netloc.lower():
+        return "blocked_or_rate_limited", "HTTP 503; Amazon blocks automated link checks"
     if 300 <= code < 400:
         return "redirected", f"HTTP {code}"
     if 500 <= code < 600:
@@ -119,6 +122,8 @@ def load_purchase_records() -> list[dict]:
         for j, source in enumerate(sources):
             if not source.get("url"):
                 raise SystemExit(f"purchase source {model_id}[{j}] missing url")
+            if source.get("availability") == "unavailable":
+                continue
             flat.append({"model_id": model_id, **source})
     return flat
 
