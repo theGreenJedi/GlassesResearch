@@ -44,5 +44,17 @@ For these exact documented products this supports **ordinary optical service** r
 ## Catalog implication
 `GLS-0022` is corrected to **Mijia Smart Audio Glasses (1st generation), 2023**. Contemporaneous reporting dated April 10, 2023 records Xiaomi Youpin crowdfunding from April 12–26 at 799 yuan. The former 2022 era conflated this audio branch with the August 2022 Mijia Glasses Camera. Do **not** replace first-generation details with specifications from Xiaomi's later global Mijia product.
 
+## First-generation identity closure — 2026-08-14
+
+The first-generation product is now strongly tied to model **MJSS010FC**:
+
+- Chinese MIIT record `2023DP1554` names `MJSS010FC` and Beijing Fengchao Century Technology Co., Ltd.;
+- a Bluetooth Launch Studio certificate index maps both Chinese and English Mijia Smart Audio Glasses names to `MJSS010FC` on 2023-03-15;
+- period JD retail evidence names the same model at the June 2023 retail launch;
+- a model-specific teardown reports Xiaomi Communications as commissioning party and Beijing Fengchao Century as manufacturer;
+- a surviving independent manual transcription describes the same 38.1 g, Bluetooth 5.2, IP54, dual-device, detachable-frame generation.
+
+This closes the model-number blocker and supports a conservative generation-specific Report Card. The original Xiaomi Youpin page and manufacturer-hosted manual remain preservation targets; the independent transcription is not promoted to manufacturer-primary status.
+
 ## Remaining action
-Recover the first-generation Xiaomi Youpin page, manual, regulatory record and exact model number. The identity/year correction is complete; generation-specific scoring remains deferred until those primary materials are preserved.
+Recover and preserve the original Xiaomi Youpin page and manufacturer-hosted manual; test app independence, update behavior, repairability and current secondary-market operation.
