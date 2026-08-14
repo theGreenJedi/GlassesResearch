@@ -66,6 +66,23 @@ def candidate_key(c):
 def lane_rank(lane):
     return {'core_glasses':0,'adjacent_hci':1,'research_radar':2}.get(lane,3)
 
+def github_pages(url,headers,params=None,max_pages=10):
+    """Read bounded GitHub list pagination instead of silently trusting page one."""
+    items=[]; base=dict(params or {})
+    per_page=int(base.pop('per_page',100))
+    for page in range(1,max_pages+1):
+        query={**base,'per_page':per_page,'page':page}
+        r=requests.get(url,headers=headers,params=query,timeout=30)
+        if not r.ok:
+            r.raise_for_status()
+        batch=r.json()
+        if not isinstance(batch,list):
+            raise RuntimeError(f'Expected a GitHub list response from {url}')
+        items.extend(batch)
+        if len(batch)<per_page:
+            break
+    return items
+
 def collector():
     repo=os.environ.get('GITHUB_REPOSITORY','')
     headers={'Authorization':f"Bearer {os.environ.get('GH_TOKEN','')}",'Accept':'application/vnd.github+json'}
@@ -82,9 +99,12 @@ def collector():
             if updated>=cutoff and ('Institutional knowledge intake' in title or p.get('head',{}).get('ref','').startswith('knowledge-intake-')):
                 prs.append({'number':p['number'],'title':title,'state':p['state'],'branch':p.get('head',{}).get('ref','')})
 
-    r=requests.get(f'https://api.github.com/repos/{repo}/branches',headers=headers,params={'per_page':100},timeout=30)
-    if r.ok:
-        for b in r.json():
+    try:
+        all_branches=github_pages(f'https://api.github.com/repos/{repo}/branches',headers,{'per_page':100})
+    except requests.RequestException:
+        all_branches=[]
+    if all_branches:
+        for b in all_branches:
             name=b.get('name','')
             m=re.match(r'^knowledge-intake-(\d{4}-\d{2}-\d{2})-',name)
             if not m: continue
