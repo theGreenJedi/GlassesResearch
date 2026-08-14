@@ -2,11 +2,11 @@
 
 **Edition:** 2026-08-12  
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 145 distinct purchasable models or explicitly marketed product generations
+**Count:** 144 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
-Use the stable `GLS-####` identifier when linking from the [glossary](../glossary/README.md), [FAQ](../docs/faq/README.md), [news archive](../docs/news/README.md), model chapters, issues, or research notes. The broader [research registry](CATALOG.md) remains the place for platforms, prototypes, unnamed partner devices, and early leads. Non-eyewear products in the broader wearable-HCI research universe are kept separately in the [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md); they are never silently included in this count. The 2026-08-12 lineage admissions are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md).
+Use the stable `GLS-####` identifier when linking from the [glossary](../glossary/README.md), [FAQ](../docs/faq/README.md), [news archive](../docs/news/README.md), model chapters, issues, or research notes. The broader [research registry](CATALOG.md) remains the place for platforms, prototypes, unnamed partner devices, and early leads. Non-eyewear products in the broader wearable-HCI research universe are kept separately in the [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md); they are never silently included in this count. The 2026-08-12 lineage admissions are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md). Later identity corrections, including retired IDs, are recorded in [catalog corrections](CATALOG_CORRECTIONS.md).
 
 ## How to read the list
 
@@ -44,8 +44,8 @@ Status is last checked on the edition date and can vary by country. Frame colors
 | GLS-0019 | Huawei / Gentle Monster | Eyewear | 2019 | legacy | audio | retail | primary/support; [source](https://consumer.huawei.com/en/support/) |
 | GLS-0020 | Huawei / Gentle Monster | Eyewear II | 2020 | legacy | audio | retail | primary/support; [source](https://consumer.huawei.com/en/support/) |
 | GLS-0021 | Huawei | Eyewear 2 | 2023 | current/region-limited | audio | retail | primary; [source](https://consumer.huawei.com/en/wearables/huawei-eyewear-2/) |
-| GLS-0022 | Xiaomi | Mijia Smart Audio Glasses | 2022 | current/region-limited | audio | retail | primary; [source](https://www.mi.com/) |
-| GLS-0023 | Xiaomi | Mijia Camera Glasses | 2022 | legacy/region-limited | camera/display | crowdfunding/retail | primary; [registry](CATALOG.md); [source](https://www.mi.com/) |
+| GLS-0022 | Xiaomi | Mijia Smart Audio Glasses (1st generation) | 2023 | legacy/region-limited | audio | crowdfunding/retail | secondary launch record + primary lineage comparison; [evidence](../evidence/EV-0034-Xiaomi-smart-audio-generation-comparison.md); [source](https://www.mi.com/global/product/mijia-smart-audio-glasses/) |
+| GLS-0023 | Xiaomi | Mijia Glasses Camera | 2022 | legacy/region-limited | camera/display | crowdfunding/retail | primary + secondary launch record; [registry](CATALOG.md); [source](https://www.mi.com/mjglass) |
 | GLS-0024 | Xiaomi | Xiaomi AI Glasses | 2025 | current/region-limited | camera/audio | retail | primary; [registry](CATALOG.md); [source](https://www.mi.com/) |
 | GLS-0025 | HTC | VIVE Eagle | 2025 | current/region-limited | camera/audio | retail | primary; [registry](CATALOG.md); [source](https://www.vive.com/) |
 | GLS-0026 | Solos | AirGo 2 | c. 2021 | legacy | audio | retail | primary; [source](https://solosglasses.com/) |
@@ -54,8 +54,7 @@ Status is last checked on the edition date and can vary by country. Frame colors
 | GLS-0029 | Solos | AirGo V2 | 2026 | current | camera/audio | retail | primary; [source](https://solosglasses.com/) |
 | GLS-0030 | Lucyd | Lyte (1.0) | 2021 | legacy | audio | retail | primary; [source](https://lucyd.co/) |
 | GLS-0031 | Lucyd | Lyte 2.0 | 2022 | legacy | audio | retail | primary; [source](https://lucyd.co/) |
-| GLS-0032 | Lucyd | Lyte 2.1 | 2023 | legacy | audio | retail | primary; [source](https://lucyd.co/) |
-| GLS-0033 | Lucyd | Lyte 2.3 | 2024 | current | audio | retail | primary; [source](https://lucyd.co/) |
+| GLS-0033 | Lucyd | Lyte XL | 2023 | legacy/current unclear | audio | retail | primary company + SEC history; [evidence](../evidence/EV-0035-Lucyd-Lyte-generation-history.md); [source](https://lucyd.co/blogs/blog/innovative-eyewear-inc-launches-the-lyte-xl-smart-eyewear-collection) |
 | GLS-0034 | Fauna | Audio Glasses | 2020 | legacy | audio | retail | primary/support; [source](https://fauna.com/) |
 | GLS-0035 | Vue | Vue Lite | 2020 | legacy | audio | crowdfunding/retail | primary; [source](https://www.vueglasses.com/) |
 | GLS-0036 | Vue | Vue Pro | 2023 | legacy/current unclear | audio | preorder/retail | primary; [source](https://www.vueglasses.com/) |
