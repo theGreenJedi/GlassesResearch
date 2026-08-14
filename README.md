@@ -6,6 +6,14 @@ Independent, evidence-based research into smart glasses, AI glasses, and user-co
 
 > **Discover, verify, preserve, and freely share the world's smart-glasses and wearable-HCI knowledge.**
 
+## Looking for glasses?
+
+### [Find glasses by what you need →](docs/COMPARISON_ENGINE.md)
+
+You do **not** need to read the whole research site first. Check the things you actually want — for example **prescription lenses + video recording**, camera + audio, no display, open source, offline operation, or **under $500** — and Glasses Finder narrows the full 145-model catalog to candidates.
+
+From the shortlist you can see **manufacturer and retail purchase routes, used / secondary-market searches, verified price observations when available, and link freshness**, then select up to four candidates and compare them side by side. Advanced users can also filter by Report Card scores such as Openness, Owner Control, Cloud Independence, Hackability, and Value.
+
 ## Worth reading now
 
 ### [Courts in England and Wales prohibit Meta smart glasses](docs/RESEARCH_NEWS.md#august-11-2026-courts-in-england-and-wales-prohibit-meta-smart-glasses)
@@ -30,7 +38,7 @@ An open argument about wearable recording, surveillance, bystander rights, indiv
 
 ## Research tools
 
-- [**Find & compare smart glasses**](docs/COMPARISON_ENGINE.md) — rank close matches and compare devices side by side.
+- [**Glasses Finder & Compare**](docs/COMPARISON_ENGINE.md) — filter all 145 models by practical needs, buying route, price and advanced Report Card thresholds, then shortlist and compare.
 - [**GlassesResearch Report Card**](docs/REPORT_CARD.md) — compare hardware, wearability, visual AI, software, HUD, openness, owner control, cloud independence, hackability, and value without hiding tradeoffs in one score.
 - [**Companion App Database**](docs/COMPANION_APP_DATABASE.md) — track the software layer that controls pairing, firmware, accounts, AI, media, and long-term survivability.
 - [**SDK / API Compatibility Matrix**](docs/SDK_API_MATRIX.md) — compare documented developer access to displays, cameras, audio, sensors, transports, and custom AI integration.
