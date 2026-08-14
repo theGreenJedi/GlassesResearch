@@ -37,11 +37,11 @@ Links are labeled by provenance. A family-level support/developer/community reso
 | GLS-0018 | Razer Anzu | **Official support:** https://mysupport.razer.com/app/answers/detail/a_id/3872/ |
 | GLS-0019 | Huawei / Gentle Monster Eyewear | **Official support:** https://consumer.huawei.com/en/support/ |
 | GLS-0020 | Huawei / Gentle Monster Eyewear II | **Official support:** https://consumer.huawei.com/en/support/ |
-| GLS-0021 | Huawei Eyewear 2 | **Official product:** https://consumer.huawei.com/en/wearables/huawei-eyewear-2/ · **Official support:** https://consumer.huawei.com/en/support/ |
+| GLS-0021 | Huawei Eyewear 2 | **Official product:** https://consumer.huawei.com/en/wearables/huawei-eyewear-2/ · **Official support:** https://consumer.huawei.com/en/support/ · **Official service/modularity:** https://consumer.huawei.com/en/support/content/en-us15974344/ |
 | GLS-0022 | Xiaomi / Mijia Smart Audio Glasses | **Official current Mijia product:** https://www.mi.com/global/product/mijia-smart-audio-glasses/ · **Official comparison predecessor:** https://www.mi.com/global/product/xiaomi-smart-audio-glasses/ · **Research note:** exact 2022 row identity remains provisional; do not transfer current-generation specs automatically. |
 | GLS-0023 | Xiaomi Mijia Camera Glasses | **Official manufacturer root:** https://www.mi.com/ · **Research registry:** ../models/CATALOG.md · **Preservation status:** dedicated 2022 product/manual link still required. |
-| GLS-0024 | Xiaomi AI Glasses | **Official manufacturer:** https://www.mi.com/ · **Research registry:** ../models/CATALOG.md |
-| GLS-0025 | HTC VIVE Eagle | **Official manufacturer:** https://www.vive.com/ · **Research registry:** ../models/CATALOG.md |
+| GLS-0024 | Xiaomi AI Glasses | **Official product:** https://www.mi.com/prod/xiaomi-ai-glasses · **Official launch/specification:** https://www.mi.com/global/discover/article?id=5172 · **Prescription/instructions route:** https://www.mi.com/prod/xiaomi-ai-glasses/desc |
+| GLS-0025 | HTC VIVE Eagle | **Official product:** https://www.vive.com/us/product/vive-eagle/overview/ · **Official support:** https://www.vive.com/sea/support/vive-eagle/ · **Official launch:** https://www.vive.com/us/newsroom/2025-08-14/ |
 | GLS-0026 | Solos AirGo 2 | **Official product family:** https://solosglasses.com/ · **Official developer:** https://solosglasses.com/pages/developers |
 | GLS-0027 | Solos AirGo 3 | **Official product family:** https://solosglasses.com/ · **Official developer:** https://solosglasses.com/pages/developers |
 | GLS-0028 | Solos AirGo Vision | **Official product family:** https://solosglasses.com/ · **Official developer:** https://solosglasses.com/pages/developers |
