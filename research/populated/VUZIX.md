@@ -1,6 +1,6 @@
 # Vuzix — populated research record
 
-Primary evidence includes Z100 documentation (`EV-0016`), Ultralite SDK (`EV-0017`), optical-service evidence (`EV-0038`), Vuzix developer/support resources, `docs/report-cards/BATCH_01.md`, `HIGH_THROUGHPUT_BATCH_05.md`, and [EV-0051](../../evidence/EV-0051-replaceable-power-and-modular-parts-wave-one.md).
+Primary evidence includes Z100 documentation (`EV-0016`), Ultralite SDK (`EV-0017`), optical-service evidence (`EV-0038`), Vuzix developer/support resources, `docs/report-cards/BATCH_01.md`, `HIGH_THROUGHPUT_BATCH_05.md`, [EV-0051](../../evidence/EV-0051-replaceable-power-and-modular-parts-wave-one.md), and [EV-0053](../../evidence/EV-0053-current-value-wave-two.md).
 
 ## Architecture branches
 Vuzix spans a phone-assisted Z100/Ultralite display branch and multiple standalone Android wearable-computer branches. Corporate lineage does not imply shared hardware architecture.
@@ -18,7 +18,7 @@ Serviceability state: **owner-installable prescription insert**. This is stronge
 ## Blade 2 — GLS-0055
 Enterprise-oriented standalone Android smart glasses with right-eye 480×480 full-color waveguide display (~20° FOV), autofocus HD camera, stereo speakers, noise-cancelling microphones, Wi-Fi/Bluetooth, touch/voice interaction and Android/Vuzix developer tooling.
 
-Report-card anchor: H8.0 W7.0 VAI7.0 S8.5 O8.0 OC8.0 CI8.5 Hack8.0 HUD7.0; Value not yet graded.
+Report-card anchor: H8.0 W7.0 VAI7.0 S8.5 O8.0 OC8.0 CI8.5 Hack8.0 HUD7.0; **V6.5 at $799.99 (US, checked 2026-08-14).**
 
 Blade 2 is more glasses-like than the head-mounted M-series while retaining meaningful Android application control. Firmware-level openness remains below Brilliant-class benchmarks.
 
@@ -31,10 +31,10 @@ Serviceability state: **owner-installable specialist insert/frame assembly**.
 - **M100 — GLS-0095:** H4.5 W3.5 VAI3.5 S4.5 O5.0 OC6.0 CI8.0 Hack5.5 HUD4.0; Value not yet graded.
 - **M300 — GLS-0096:** H6.0 W4.5 VAI5.5 S6.0 O6.5 OC7.0 CI8.5 Hack6.5 HUD5.0; Value not yet graded.
 - **M300XL — GLS-0097:** H6.5 W4.5 VAI6.0 S6.0 O6.5 OC7.0 CI8.5 Hack6.5 HUD5.0; Value not yet graded. Developer treatment is substantially shared with M300; XL changes battery connection and camera behavior.
-- **M400 — GLS-0098:** H8.0 W5.5 VAI7.5 S7.5 O7.0 OC8.0 CI9.0 Hack7.0 HUD6.0; Value not yet graded.
-- **M4000 — GLS-0099:** H8.0 W5.5 VAI7.5 S7.5 O7.0 OC8.0 CI9.0 Hack7.0 HUD7.0; Value not yet graded.
-- **LX1 — GLS-0100:** H8.0 W4.5 VAI6.5 S7.5 O7.0 OC8.0 CI9.0 Hack7.0 HUD6.5; Value not yet graded.
-- **Shield — GLS-0121:** H8.5 W6.5 VAI8.0 S7.5 O7.0 OC8.0 CI9.0 Hack7.0 HUD8.5; Value not yet graded.
+- **M400 — GLS-0098:** H8.0 W5.5 VAI7.5 S7.5 O7.0 OC8.0 CI9.0 Hack7.0 HUD6.0; **V5.5 at $1,499.99 (US, checked 2026-08-14).**
+- **M4000 — GLS-0099:** H8.0 W5.5 VAI7.5 S7.5 O7.0 OC8.0 CI9.0 Hack7.0 HUD7.0; **V4.5 at $2,499.99 (US, checked 2026-08-14).**
+- **LX1 — GLS-0100:** H8.0 W4.5 VAI6.5 S7.5 O7.0 OC8.0 CI9.0 Hack7.0 HUD6.5; **V5.0 at $2,199.99 (US, checked 2026-08-14).**
+- **Shield — GLS-0121:** H8.5 W6.5 VAI8.0 S7.5 O7.0 OC8.0 CI9.0 Hack7.0 HUD8.5; **V5.0 at $2,499.99 (US, checked 2026-08-14).**
 
 The M400/M4000 values above retain the later standardized high-throughput calibration rather than silently replacing it with earlier Batch 02 scores that used a more generous application-openness interpretation.
 
