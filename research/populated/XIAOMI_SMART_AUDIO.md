@@ -2,10 +2,10 @@
 
 Primary evidence: `EV-0034` and Xiaomi vendor product/support pages reviewed 2026-08-13.
 
-## Identity warning
-The current canonical row `GLS-0022 — Mijia Smart Audio Glasses — 2022` is not yet safe to treat as the same hardware as Xiaomi's current product named **Mijia Smart Audio Glasses**. Xiaomi's own current documentation explicitly compares **Xiaomi Smart Audio Glasses** with **Mijia Smart Audio Glasses** as different products/generations.
+## Identity resolution
+`GLS-0022` now maps to the **first-generation Mijia Smart Audio Glasses**, offered through Xiaomi Youpin crowdfunding in April 2023. The former 2022 era was incorrect and likely conflated this audio branch with the August 2022 Mijia Glasses Camera. Xiaomi's current documentation compares later Xiaomi Smart Audio Glasses and Mijia Smart Audio Glasses hardware; those specifications must not be copied backward into GLS-0022.
 
-Until 2022 China-specific launch/store/manual evidence is recovered, the exact mapping of GLS-0022 remains provisional.
+The 2023 mapping is supported by contemporaneous launch reporting. A preserved first-generation Xiaomi page, manual, regulatory record and exact model number remain required before detailed scoring.
 
 ## Xiaomi Smart Audio Glasses
 Xiaomi documents open-ear audio, wear detection, Bluetooth 5.2, two microphones, first-generation quick-release/flexible-hinge architecture, about 10 hours continuous playback and seven hours calls. Weight without lenses is 33.4 g in Xiaomi's comparison.
@@ -28,11 +28,11 @@ Independent optical-shop fitting is a strong owner-control and long-term-surviva
 No public firmware, hardware SDK or low-level owner-development path is established by this evidence pass.
 
 ## Report-card status
-Do not assign a new GLS-0022 score until the 2022 identity is resolved. The current Mijia generation merits a separate catalog/report-card decision if its acquisition history is established independently.
+Identity is resolved, but do not assign a detailed GLS-0022 score until first-generation documentation is recovered. The current global Mijia generation merits a separate catalog/report-card decision if its acquisition history is established independently.
 
 ## Next evidence actions
-1. Recover 2022 mainland-China launch/store/manual/regulatory records and exact model number.
-2. Determine whether GLS-0022 should be renamed or split.
-3. Establish launch year/regions for Xiaomi Smart Audio Glasses and current Mijia Smart Audio Glasses.
+1. Recover the April 2023 Xiaomi Youpin page, first-generation manual/regulatory records and exact model number.
+2. Establish launch year/regions for Xiaomi Smart Audio Glasses and current global Mijia Smart Audio Glasses.
+3. Decide whether the later current Mijia generation requires a new stable catalog ID.
 4. Establish exact correction ranges/progressive support.
 5. Test app-independent operation and firmware/update behavior.
