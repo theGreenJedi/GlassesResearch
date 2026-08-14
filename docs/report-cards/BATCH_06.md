@@ -48,7 +48,7 @@ This batch applies the shared 0–10 benchmark ruler and the report-card-first r
 
 **Canonical check:** no correction required. The catalog correctly identifies Mentra Live as a current camera/audio product sold to retail and developer users.
 
-**Evidence basis:** Mentra documents a 43 g frame, 119° camera, 3264×2448 stills, 1080p video, stereo speakers, three microphones, touch/buttons, Wi-Fi, Bluetooth, 260 mAh glasses battery, 2200 mAh charging case, 12+ hours mixed use, and MentraOS. Mentra states that developers can build Android/iOS apps that directly control camera, speakers, microphone, touchpad and buttons, including offline operation without Mentra-hosted cloud infrastructure. MentraOS is MIT-licensed and publicly developed.
+**Evidence basis:** Mentra documents a 43 g frame, 119° camera, 3264×2448 stills, 1080p video, stereo speakers, three microphones, touch/buttons, Wi-Fi, Bluetooth, 260 mAh glasses battery, 2200 mAh charging case, 12+ hours mixed use, and MentraOS. Mentra states that developers can build Android/iOS apps that directly control camera, speakers, microphone, touchpad and buttons, including offline operation without Mentra-hosted cloud infrastructure. MentraOS is MIT-licensed and publicly developed. The public SDK further documents a glasses-side command path and version-linked durable OTA manifests; it also documents default usage telemetry, including a manufacturing serial, that owner-built apps can disable. [EV-0060](../../evidence/EV-0060-Mentra-Bluetooth-SDK-OTA-owner-control.md) preserves the architecture, release policy, privacy control and claim limits.
 
 | Dimension | Score | Grade | Evidence-based judgment |
 |---|---:|:---:|---|
@@ -63,7 +63,7 @@ This batch applies the shared 0–10 benchmark ruler and the report-card-first r
 | Hackability | 9.0 | A | Open source OS/SDK and direct hardware-control paths make it highly hackable, though the hardware itself is not documented at Monocle/Frame schematic/firmware depth. |
 | Value | Not yet graded | — | Current retail price is documented, but a full catalog-relative value comparison is still required. |
 
-**Primary sources:** https://mentraglass.com/live ; https://github.com/Mentra-Community/MentraOS
+**Primary sources:** https://mentraglass.com/live ; https://github.com/Mentra-Community/MentraOS ; https://github.com/Mentra-Community/MentraOS/blob/dev/mobile/modules/bluetooth-sdk/README.md ; https://github.com/Mentra-Community/MentraOS/blob/dev/mobile/modules/bluetooth-sdk/RELEASING_CI.md
 
 ## GLS-0051 — Brilliant Labs Frame
 
