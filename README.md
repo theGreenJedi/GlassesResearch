@@ -6,13 +6,15 @@ Independent, evidence-based research into smart glasses, AI glasses, and user-co
 
 > **Discover, verify, preserve, and freely share the world's smart-glasses and wearable-HCI knowledge.**
 
-## Looking for glasses?
+## Find glasses by what you need
 
-### [Find glasses by what you need →](docs/COMPARISON_ENGINE.md)
+Choose what matters. The Finder checks the full 145-model catalog and shows exact documented matches before you enter the complete comparison workspace.
 
-You do **not** need to read the whole research site first. Check the things you actually want — for example **prescription lenses + video recording**, camera + audio, no display, open source, offline operation, or **under $500** — and Glasses Finder narrows the full 145-model catalog to candidates.
+<div id="homepage-finder-app">
+Loading the compact Glasses Finder…
+</div>
 
-From the shortlist you can see **manufacturer and retail purchase routes, used / secondary-market searches, verified price observations when available, and link freshness**, then select up to four candidates and compare them side by side. Advanced users can also filter by Report Card scores such as Openness, Owner Control, Cloud Independence, Hackability, and Value.
+[Open the complete Glasses Finder & Compare →](docs/COMPARISON_ENGINE.md)
 
 ## Worth reading now
 
