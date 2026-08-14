@@ -32,6 +32,12 @@ Fifth-generation Spectacles are among the most capable AR development glasses in
 
 Sources: [Snap Spectacles developer portal](https://developers.snap.com/spectacles/home), [GlassesResearch — Spectacles 5](SnapSpectacles5/README.md), [Report Card Batch 01](../docs/report-cards/BATCH_01.md)
 
+## GLS-0146 — Snap SPECS
+
+SPECS are Snap's attempt to turn the Spectacles development lineage into a consumer spatial computer that can actually be ordered. The improvement over fifth-generation Spectacles is unusually concrete: Snap cut the frame from roughly 226 g to 132–136 g, expanded endurance from about 45 minutes to a claimed four hours of mixed use, added a case with four further charges, and retained standalone binocular AR with a 51° full-color field of view, hand tracking, dual Snapdragon processors and visual AI. Prescription inserts, two frame sizes and electrochromic lenses make the physical proposition more credible, while Lens Studio, Snap OS, a new Native Development Kit and hundreds of existing Lenses preserve a substantial developer surface. But **lighter is not light**: 132 g remains several times ordinary eyewear, the $2,195 preorder price is workstation territory, and Snap still controls the operating system and distribution stack. SPECS therefore look less like finished everyday glasses than the first Spectacles generation whose battery, access route and weight make a serious consumer trial possible.
+
+Source: [Snap — Introducing SPECS Augmented Reality Glasses](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses)
+
 ## GLS-0074 — XREAL One
 
 XREAL One is best understood as **a private spatial monitor worn on your face**, not as autonomous AI glasses. It receives DisplayPort video and power from a connected USB-C host, while its own X1 processor stabilizes and manages spatial display modes. The optical hardware is the star: dual 1080p Micro-OLED panels, up to 120 Hz refresh, roughly 50° field of view, electrochromic dimming and open-ear audio. Because the source computer can be a phone, laptop or other compatible device, the owner has broad freedom over what software and content drive the glasses, and the core experience does not inherently require cloud services. The tradeoff is tethering: **excellent visual output and unusually strong host freedom, but very little independence from the device connected by cable**.

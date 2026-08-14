@@ -25,6 +25,7 @@ These source-bound notes preserve the claim limits and verification status behin
 cross-model findings:
 
 - [CyanBridge v2.1.1](EV-0033-CyanBridge-v2.1.1.md)
+- [Snap SPECS primary preorder record](EV-0059-Snap-SPECS-primary-preorder.md)
 - [Service-survival controls](EV-0036-service-survival-controls.md) and [wave two](EV-0037-service-and-optical-survival-wave-two.md)
 - Optical and repair waves [three](EV-0038-optical-service-wave-three.md), [four](EV-0039-optical-and-repair-wave-four.md), [five](EV-0040-repairability-cloud-survival-wave-five.md), [six](EV-0041-replaceable-modules-wave-six.md), [continued](EV-0049-optical-serviceability-wave-six.md), and [seven](EV-0050-mainstream-optical-serviceability-wave-seven.md)
 - Replaceable power and modular parts [wave one](EV-0051-replaceable-power-and-modular-parts-wave-one.md)

@@ -1,5 +1,9 @@
 # Snap Spectacles — populated research record
 
+## SPECS / 2026 consumer generation — GLS-0146
+
+Snap opened SPECS preorders on June 16, 2026 at $2,195 with a $200 refundable deposit and a fall shipping target for the United States, United Kingdom and France. Primary documentation describes a standalone 132–136 g binocular AR system with a 51° full-color display, dual Snapdragon processors, four-hour mixed-use claim, charging case, prescription inserts, electrochromic lenses, Snap OS, Lens Studio and a Native Development Kit. Shipment and independent performance remain unresolved. See [EV-0059](../../evidence/EV-0059-Snap-SPECS-primary-preorder.md).
+
 Primary evidence: official developer portal (`EV-0018`), API compatibility list (`EV-0019`), sample code (`EV-0020`) and `docs/report-cards/BATCH_01.md`.
 
 ## Spectacles 5 / 2024 generation — GLS-0068

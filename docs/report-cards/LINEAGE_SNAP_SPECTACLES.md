@@ -25,3 +25,25 @@ Lens Studio gave selected creators a serious supported authoring and wireless de
 
 Sources: [Snap launch record](https://newsroom.snap.com/introducing-the-next-generation-of-spectacles), [Lens Studio release history](https://developers.snap.com/lens-studio/4.55.1/download/release-notes), [evidence packet](../../evidence/EV-0056-Snap-Spectacles-2021-primary-platform.md).
 
+## GLS-0146 — Snap SPECS
+
+**Evidence lane:** vendor-primary announcement and preorder documentation. Scores describe the documented product; shipping and hands-on performance remain unverified.
+
+SPECS materially improve the fifth-generation Spectacles proposition. Snap documents two frame sizes at 132 g and 136 g, a 51° full-color LCoS/waveguide display, dual Snapdragon processors, 7 ms measured motion-to-photon latency, prescription inserts, electrochromic lenses, and up to four hours of mixed use. The included case adds four claimed charges. The platform combines Snap OS, Lens Studio, hundreds of Lenses, agentic development integrations and a Native Development Kit.
+
+The $2,195 preorder and fall 2026 shipping target establish a genuine acquisition route but not delivered-product value. On-device processing and user storage controls are positive architectural claims; they do not prove full offline independence or owner control over Snap OS.
+
+| Dimension | Score | Judgment |
+|---|---:|---|
+| Hardware | 9.5 | Dual processors, spatial tracking, electrochromic optics, charging case and standalone AR form one of the strongest documented glasses packages. |
+| Wearability | 6.5 | The reduction to 132–136 g and two sizes is major progress, but the frame remains far heavier than ordinary eyewear. |
+| Visual AI | 9.5 | World-aware AI, computer vision, hand tracking and spatial anchoring are central documented capabilities. |
+| Software | 9.5 | Snap OS, Lens Studio, hundreds of Lenses, developer agents and an NDK create a mature spatial-development stack. |
+| Display / HUD | 9.5 | A 51° binocular full-color LCoS waveguide and 7 ms measured latency are flagship-level documented optics. |
+| Openness | 7.5 | Lens Studio and the NDK expose substantial supported development while the platform remains Snap-governed. |
+| Owner Control | 6.0 | Users receive storage and permission controls, but not documented control over Snap OS, firmware or distribution. |
+| Cloud Independence | 6.5 | On-device processing is prioritized, yet full useful operation without Snap services is not established. |
+| Hackability | 6.5 | The NDK expands native-code possibilities, but no low-level firmware or unrestricted sideloading path is documented. |
+| Value | 5.5 | The capability is exceptional, but $2,195 is expensive and preorder hardware has not yet established delivered value. |
+
+Source: [Snap — Introducing SPECS](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses). Evidence packet: [EV-0059](../../evidence/EV-0059-Snap-SPECS-primary-preorder.md).

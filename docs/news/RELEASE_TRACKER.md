@@ -1,6 +1,6 @@
 # Smart-Glasses Release and Availability Tracker
 
-**Last checked:** 2026-08-05
+**Last checked:** 2026-08-14
 
 This table distinguishes announcement, preorder, targeted shipping, confirmed shipping, and independent verification. A vendor date is not a shipment until evidence confirms it.
 
