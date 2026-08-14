@@ -15,6 +15,7 @@ COPY_DIRS = (
     "artifacts",
     "buyers",
     "comparisons",
+    "data",
     "docs",
     "evidence",
     "glossary",
@@ -30,10 +31,6 @@ COPY_FILES = (
     "WHY.md",
 )
 
-# Repository-maintenance documents remain in GitHub but are not part of the
-# public research site. Public pages should present research rather than
-# narrating internal planning, workflow, SEO, editorial housekeeping, or
-# future framework design.
 PUBLIC_SITE_EXCLUDES = (
     "docs/HOMEPAGE_DESIGN_NOTES.md",
     "docs/KISS_WORKING_NOTES.md",
@@ -76,8 +73,6 @@ def main() -> None:
         if target.exists():
             target.unlink()
 
-    # Keep public links aimed at public research pages even when the canonical
-    # repository source mentions an internal maintenance document.
     public_list = DEST / "models" / "THE_LIST.md"
     if public_list.exists():
         text = public_list.read_text(encoding="utf-8")
@@ -110,6 +105,29 @@ def main() -> None:
     comparison_output = DEST / "data" / "comparisons.json"
     subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "build_comparison_engine.py"), "--schema", str(ROOT / "comparisons" / "schema.json"), "--data-dir", str(ROOT / "comparisons" / "data"), "--output", str(comparison_output)],
+        check=True,
+    )
+
+    capability_output = DEST / "data" / "finder-capabilities.json"
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "build_finder_capabilities.py"),
+            "--models", str(ROOT / "models" / "THE_LIST.md"),
+            "--comparisons", str(comparison_output),
+            "--overrides", str(ROOT / "data" / "finder-capability-overrides.json"),
+            "--output", str(capability_output),
+        ],
+        check=True,
+    )
+
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "apply_finder_capabilities.py"),
+            "--comparisons", str(comparison_output),
+            "--capabilities", str(capability_output),
+        ],
         check=True,
     )
 
