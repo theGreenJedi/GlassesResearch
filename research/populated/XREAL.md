@@ -1,6 +1,6 @@
 # Nreal / XREAL — populated research record
 
-Primary evidence includes XREAL SDK documentation (`EV-0021`), One specifications (`EV-0022`), manufacturer history/product pages and `docs/report-cards/HIGH_THROUGHPUT_BATCH_03.md`.
+Primary evidence includes XREAL SDK documentation (`EV-0021`), One specifications (`EV-0022`), manufacturer history/product pages `docs/report-cards/HIGH_THROUGHPUT_BATCH_03.md`, and [EV-0053](../../evidence/EV-0053-current-value-wave-two.md).
 
 ## Lineage pattern
 Nreal Light → XREAL Air → Air 2 / Air 2 Pro / Air 2 Ultra → One / One Pro. Most of the lineage is host-driven display eyewear: the owner chooses the phone/PC/console and the glasses provide local display/spatial functions. Air 2 Ultra is the major sensing-oriented exception.
@@ -35,7 +35,7 @@ This model should not inherit ordinary camera-glasses assumptions: environment s
 ## XREAL One — GLS-0074
 On-glasses X1 spatial-computing chip, binocular Micro-OLED display, spatial stabilization and host-driven content architecture.
 
-Anchor: H9.0 W7.5 VAI N/A S8.5 O5.5 OC8.5 CI9.5 Hack5.5 HUD9.2; Value not yet graded.
+Anchor: H9.0 W7.5 VAI N/A S8.5 O5.5 OC8.5 CI9.5 Hack5.5 HUD9.2; **V8.0 at $399 sale / V7.5 at $499 regular (US, checked 2026-08-14).**
 
 ## XREAL One Pro — GLS-0075
 X Prism optical engine, 57° FOV, up to 171-inch virtual screen, two IPD size ranges, 120 Hz and dedicated spatial compute.
