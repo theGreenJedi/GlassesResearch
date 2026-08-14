@@ -142,6 +142,18 @@ def main() -> None:
         check=True,
     )
 
+    purchase_fallback_output = DEST / "data" / "purchase-fallbacks.json"
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "build_purchase_fallbacks.py"),
+            "--models", str(ROOT / "models" / "THE_LIST.md"),
+            "--curated", str(ROOT / "data" / "purchase-sources.json"),
+            "--output", str(purchase_fallback_output),
+        ],
+        check=True,
+    )
+
     print(f"Staged documentation at {DEST}")
 
 
