@@ -1,6 +1,6 @@
 # Solos AirGo — populated research record
 
-This record combines the existing Solos developer-evidence framework with generation-specific findings from `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`. Primary developer evidence includes the official Solos SDK (`EV-0026`); optical-service evidence is captured in `EV-0037`.
+This record combines the existing Solos developer-evidence framework with generation-specific findings from `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`. Primary developer evidence includes the official Solos SDK (`EV-0026`); optical-service evidence is captured in `EV-0037`; modular-repair evidence is in `EV-0041`.
 
 ## AirGo 2 — GLS-0026
 Audio-first predecessor. Existing research documents Bluetooth 5.0/BLE, Android/iOS support, roughly 11 hours music, eight hours calls, quick charging and prescription-compatible frame options. The current Solos SDK does not list AirGo 2 among supported targets.
@@ -31,6 +31,13 @@ Solos accepts externally issued prescriptions and supports custom lens productio
 
 Current vendor-primary evidence confirms **vendor/specialist prescription service** and external-prescription compatibility. It does not yet prove that every supported Solos model can be serviced by any ordinary independent optical shop. Ordinary-independent service therefore remains provisional pending an explicit vendor statement or repeatable independent fitting evidence.
 
+## Modular electronics / repairability
+Solos explicitly documents detachable frame fronts and temples. AirGo V troubleshooting guidance instructs owners to detach the left temple to stop the camera module drawing standby power, confirming that temple removal is an owner-supported physical operation rather than teardown-only access.
+
+Solos currently sells an **AirGo A5 Temple Kit** that attaches to compatible AirGo 3 frame fronts, allowing the smart-electronics temples to be upgraded/replaced without replacing the optical front. Historical manuals also preserve an **AirGo Battery Temple Kit** for AirGo 1.
+
+This supports a genuine **owner-removable modular electronics** classification for specific Solos generations. Do not infer that every AirGo generation has a retail replacement temple/battery module; current policy and product availability remain generation-specific.
+
 ## Lineage interpretation
 Solos spans audio-only and camera-enabled glasses within one modular ecosystem. Audio-only models have Visual AI and HUD marked N/A. Camera models can support owner-selected downstream processing because official APIs expose capture functions. SDK availability does not prove open firmware, bootloader access or unrestricted exposure of every sensor.
 
@@ -38,4 +45,4 @@ Solos spans audio-only and camera-enabled glasses within one modular ecosystem. 
 Core Bluetooth audio and custom host applications can operate without Solos cloud AI on supported models. AirGo V2 goes further by supporting owner-directed media/events, webhooks, RTMP and private/local endpoints. Individual vendor AI features and transcription services must still be scored separately.
 
 ## Remaining evidence targets
-Firmware replacement/boot chain, full sensor exposure, exact offline behavior, subscription/account dependence, ordinary-independent optical service by model, repairability, battery aging, regional differences and long-term service survival remain open.
+Firmware replacement/boot chain, full sensor exposure, exact offline behavior, subscription/account dependence, ordinary-independent optical service by model, temple/battery module availability by generation, battery aging, regional differences and long-term service survival remain open.
