@@ -97,6 +97,16 @@ Purchase links are separate from research/resource links. Each purchase record p
 
 For secondary markets, prefer durable exact-model marketplace searches when individual listings are ephemeral. A current-listing layer may highlight individual listings, but permanent model data should not depend on a listing that disappears after sale.
 
+## Purchase-link health and replacement
+
+Purchase URLs are maintained data rather than permanent assumptions.
+
+A scheduled GitHub Action runs `scripts/check_purchase_links.py` daily and writes `data/purchase-link-health.json`. Each route is classified separately as reachable, redirected, dead, unreachable, temporarily failing, unknown, or blocked/rate-limited by the retailer.
+
+The checker deliberately does **not** silently delete or replace canonical purchase URLs. Suspicious routes are written to `research/purchase-link-replacement-queue.md` so an exact-model replacement can be verified before the canonical dataset changes. Retailers that block automated requests remain distinct from confirmed dead links because a bot-blocked page may still work perfectly for a shopper.
+
+The health ledger proves reachability/freshness only. Exact-model inventory, price and condition require a higher-level verification pass and should retain their own last-verified dates.
+
 ## Evidence semantics
 
 Filters operate from canonical structured data, not prose scraping. Boolean-like capability fields use yes / no / unknown / N/A semantics. Unknown never silently becomes no. Exact-match filtering excludes unknowns where a requirement cannot be established; near-match mode surfaces the gap instead.
@@ -113,14 +123,17 @@ Filters operate from canonical structured data, not prose scraping. Boolean-like
 - manufacturer, Amazon and secondary-market seed routes;
 - purchase links retained when candidates move into comparison;
 - two-to-four-device comparison, differences-only, shareable URL and print behavior;
-- mobile-responsive grouped facets.
+- mobile-responsive grouped facets;
+- canonical purchase-link health ledger and replacement queue;
+- daily scheduled link-health checker that preserves bot-blocked versus actually dead links.
 
 ### Next waves
 1. Expand purchase-source coverage from the seed set to all 145 models where legitimate acquisition routes exist.
 2. Normalize capability fields so fewer filters rely on compatibility aliases/heuristics.
-3. Add price fields and price-band/range controls.
-4. Add Report Card minimum-score controls under Advanced filters.
-5. Add selection checkboxes and one `Compare selected` action for shortlist workflows.
-6. Add price/availability freshness auditing and dead-link checks.
+3. Make Finder candidate buttons consume the health ledger, suppressing confirmed dead routes while displaying freshness state for checked links.
+4. Add price fields and price-band/range controls.
+5. Add Report Card minimum-score controls under Advanced filters.
+6. Add selection checkboxes and one `Compare selected` action for shortlist workflows.
+7. Add higher-level price/inventory/model-match verification above simple URL health.
 
 The walls of research remain available downstream. The Finder exists so a shopper can reach the right wall first.
