@@ -25,6 +25,7 @@ These source-bound notes preserve the claim limits and verification status behin
 cross-model findings:
 
 - [CyanBridge v2.1.1](EV-0033-CyanBridge-v2.1.1.md)
+- [CyanBridge Qwen2.5 local-model boundary](EV-0061-CyanBridge-Qwen-local-model-boundary.md)
 - [Mentra Bluetooth SDK, durable OTA manifests, and direct host control](EV-0060-Mentra-Bluetooth-SDK-OTA-owner-control.md)
 - [Snap SPECS primary preorder record](EV-0059-Snap-SPECS-primary-preorder.md)
 - [Service-survival controls](EV-0036-service-survival-controls.md) and [wave two](EV-0037-service-and-optical-survival-wave-two.md)
