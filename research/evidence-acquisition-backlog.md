@@ -1,6 +1,6 @@
 # Evidence Acquisition Backlog
 
-Last reviewed: 2026-08-13
+Last reviewed: 2026-08-14
 
 This backlog converts the normalized `research/populated/` layer into explicit evidence-acquisition work. It is ordered by research value rather than by catalog ID.
 
@@ -23,7 +23,7 @@ These items block clean model-level conclusions and should be resolved before br
 This is the highest-value ownership research because it distinguishes a durable device from a service terminal.
 
 ### Closed/current AI glasses
-- Meta / Ray-Ban / Oakley: separate local capture/audio/translation from Meta-AI-dependent functions; record first-run account/app/network requirements.
+- Meta / Ray-Ban / Oakley: **source boundary completed in EV-0045** — passive optics, local storage, phone-audio residue and Gen 2 offline translation are separated from the mandatory first-run phone/account/app/network gate and service-backed AI. Remaining: empirical offline capture/import, sign-out, endpoint-blocking and previously downloaded translation-pack tests.
 - Xiaomi AI Glasses: local-vs-cloud inference, companion/account requirements and regional feature differences.
 - HTC VIVE Eagle: **offline boundary completed in EV-0041** — button capture, onboard storage and narrow commands survive offline; media management uses VIVE Connect; advanced VIVE AI requires app connection plus phone internet. Remaining: first-run/account, sign-out, standard file access, provider/region limits and backend-shutdown testing.
 - Rokid Glasses: translation/navigation/transcription/AI offline boundaries, companion requirements and SDK behavior without Rokid services.
