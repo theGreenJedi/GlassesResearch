@@ -1,6 +1,6 @@
 # Recon Jet — populated research record
 
-Source basis: `docs/report-cards/LINEAGE_RECON_JET.md` (2026-08-12) and its cited Recon/Intel/teardown sources.
+Source basis: `docs/report-cards/LINEAGE_RECON_JET.md` (2026-08-12), Recon/Intel/teardown sources and `EV-0036` service-survival evidence.
 
 ## Lineage
 Recon Jet is treated as Jet → Jet Pro → Jet Pro+. Snow2/MOD Live belong to an earlier HUD branch and are not silently merged into Jet.
@@ -18,8 +18,15 @@ Intel explicitly recognizes Jet Pro as a shipped customer product. Existing tear
 ## Jet Pro+
 Intel separately names Jet Pro+ as a discontinued customer product. Admission is evidence-backed; hardware inheritance from Jet Pro is not. Current anchor: CI4.0; most other fields not yet graded, Visual AI N/A.
 
-## Lifecycle
-The lineage is historically important because it demonstrates a real shipped SDK-capable wearable whose vendor service shutdown later impaired ownership. Preserve both facts: strong original developer access and poor present-day service survivability.
+## Service survival
+Intel support explicitly states that Intel stopped supporting Recon Engage and the Snow2, Jet, Jet Pro and Jet Pro+ products. A vendor support thread specifically concerns bypassing the Jet activation screen after that support loss.
+
+**Service status:** **Degraded.** The known failure mechanism is not merely “old hardware”; it is activation/account-service dependence. This makes Recon a strong preservation example of how a once-open SDK platform can still lose practical owner control when mandatory service infrastructure disappears.
+
+The remaining question is exactly how much local function can be restored or bypassed through community methods. That must be tested rather than assumed.
+
+## Lifecycle lesson
+Preserve both sides of the history: strong original developer access and poor present-day service survivability. Openness at launch did not guarantee activation independence.
 
 ## Evidence gaps
-Recover archival product sheets/manuals for Pro and Pro+, determine local functionality after service loss, document battery/repair/parts survivability, and separate activation dependence from functions that still operate offline.
+Recover archival product sheets/manuals for Pro and Pro+, document community activation bypasses and present-day local functionality, battery/repair/parts survivability, and separate functions that remain usable from those blocked by service loss.
