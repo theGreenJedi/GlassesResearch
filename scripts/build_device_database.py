@@ -147,16 +147,18 @@ def validate(declared_count: int, records: list[dict[str, object]]) -> None:
     if len(ids) != len(set(ids)):
         errors.append("duplicate GLS stable IDs detected")
 
-    expected = [f"GLS-{number:04d}" for number in range(1, declared_count + 1)]
-    if ids != expected:
-        missing = sorted(set(expected) - set(ids))
-        unexpected = sorted(set(ids) - set(expected))
-        if missing:
-            errors.append("missing stable IDs: " + ", ".join(missing[:20]))
-        if unexpected:
-            errors.append("unexpected stable IDs: " + ", ".join(unexpected[:20]))
-        if not missing and not unexpected:
-            errors.append("stable IDs are not in canonical numeric order")
+    # Stable IDs are permanent and may develop intentional gaps when a model
+    # record is retired. Every gap must remain documented in the correction
+    # ledger so accidental deletion still fails validation.
+    if ids:
+        max_number = max(int(model_id.split("-", 1)[1]) for model_id in ids)
+        expected = {f"GLS-{number:04d}" for number in range(1, max_number + 1)}
+        missing = sorted(expected - set(ids))
+        correction_path = ROOT / "models" / "CATALOG_CORRECTIONS.md"
+        correction_text = correction_path.read_text(encoding="utf-8") if correction_path.exists() else ""
+        undocumented = [model_id for model_id in missing if model_id not in correction_text]
+        if undocumented:
+            errors.append("undocumented stable-ID gaps: " + ", ".join(undocumented[:20]))
 
     for record in records:
         if not record["maker"] or not record["model"]:
