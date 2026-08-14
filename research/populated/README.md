@@ -75,6 +75,10 @@ A populated record should preserve model/lineage boundaries, report-card anchors
 6. **Later standardized calibration wins.** If an older report-card batch and a later common-ruler batch assign different numeric scores, preserve the later standardized score and retain older descriptive evidence rather than silently mixing calibrations.
 7. **Editorial prose comes downstream.** Public model summaries and comparisons should be generated from populated evidence, not used as the source of truth.
 
+## Active evidence-acquisition mission
+
+The normalized layer now feeds [`../evidence-acquisition-backlog.md`](../evidence-acquisition-backlog.md). That backlog prioritizes unresolved catalog identities first, then service/cloud survival, optical serviceability, normalized battery evidence, firmware/protocol depth, repairability/aging, and value/ownership cost.
+
 ## Next mission layer
 
-With the completed lineage/report-card packets normalized, remaining work should shift from bulk conversion to targeted evidence acquisition: exact offline survival, prescription/optical serviceability, battery normalization, repairability, firmware/protocol access, regional/version variance, current value, and lifecycle/service-shutdown evidence. These fields can then feed comparison filters, report cards, model prose, genealogy maps and the discontinued-product archive.
+With the completed lineage/report-card packets normalized, remaining work shifts from bulk conversion to targeted evidence acquisition: exact offline survival, prescription/optical serviceability, battery normalization, repairability, firmware/protocol access, regional/version variance, current value, and lifecycle/service-shutdown evidence. These fields can then feed comparison filters, report cards, model prose, genealogy maps and the discontinued-product archive.
