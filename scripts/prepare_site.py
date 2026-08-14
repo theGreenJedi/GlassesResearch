@@ -175,6 +175,11 @@ def main() -> None:
         check=True,
     )
 
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "build_internal_model_links.py"), "--output-root", str(DEST)],
+        check=True,
+    )
+
     print(f"Staged documentation at {DEST}")
 
 
