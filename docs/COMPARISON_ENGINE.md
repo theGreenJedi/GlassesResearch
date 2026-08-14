@@ -1,39 +1,49 @@
-# Find & Compare Smart Glasses
+# Glasses Finder & Compare
 
 Start with what you need, not with a brand name.
 
 <div id="comparison-engine-app">
-Loading discovery and comparison data…
+Loading Glasses Finder data…
 </div>
 
-## Find first
+## Shop first
 
-The discovery pool is the **full canonical smart-glasses ledger**, not a hand-picked shortlist. Use the search box and practical constraints to narrow all currently cataloged models. Results are ranked by how many selected requirements they meet, and near-matches show what is missing or not yet documented. Turn on **Exact matches only** when a requirement is non-negotiable.
+The Finder searches the **full canonical smart-glasses ledger**, not a hand-picked shortlist. Choose practical requirements — prescription lenses, video recording, microphones, speakers, display, AI, translation, SDK/API access, offline operation, or where you are willing to buy — and the candidate count narrows immediately.
 
-Every result also carries its public research path: an evidence-derived editorial profile for every canonical model, plus Report Card and lineage links where those layers exist. That lets discovery lead back to the research instead of ending at a product name.
+The primary experience is deliberately shopper-first. Someone who wants **prescription lenses + video recording** should be able to reach a useful shortlist without reading the research corpus first.
 
-This is designed for questions such as:
+Filters are grouped into:
 
-- Which glasses have a camera **and** prescription support?
-- Which models have a display, Bluetooth, and Wi-Fi?
-- Which devices expose an SDK or API?
-- Which currently available models support translation?
-- Which candidates come closest when no product satisfies every requirement?
+- **Vision** — prescription, progressives, ordinary-optician service, adjustable diopter.
+- **Camera** — camera, photos, video recording, live video/streaming.
+- **Audio** — speakers, microphones, calls, music.
+- **Display** — HUD/display, full color, binocular, or no display.
+- **AI & utility** — assistant, visual AI, translation, transcription, navigation.
+- **Connectivity & ownership** — Bluetooth/BLE, Wi-Fi, SDK/API, open source, custom AI, offline/local operation, self-hosting.
+- **Buying** — available new, manufacturer, Amazon, major/optical retailers, secondary market, and used hardware.
 
-A missing value is not silently treated as a negative. If a capability has not been documented in the structured comparison data, the model may appear as a near-match rather than an exact match. The canonical ledger and editorial profile still remain available even when detailed comparison fields have not yet been populated.
+Each filter shows a live count so the shopper can see how much a requirement narrows the catalog before clicking it.
+
+## Candidate cards
+
+Results are compact shopping cards rather than mini-articles. They show the exact model and GLS ID, matched requirements, important missing/undocumented requirements, purchase/acquisition links where populated, a path into the research, and an **Add to comparison** action.
+
+Purchase links are intentionally separate from research links. Current manufacturer routes and durable marketplace searches can coexist with secondary-market links for discontinued hardware. A secondary-market search is an acquisition route, not a claim that a specific listing is currently available.
+
+When no exact match exists, turn off **Exact matches only** to surface near-matches and models whose relevant capability is still undocumented. Unknown is never silently treated as `No` in the research data.
 
 ## Then compare
 
-Add promising models to the comparison table or choose them directly. Compare **two to four devices** side by side. The **Differences only** switch removes identical rows so the characteristics that separate the candidates are easier to see.
+Add promising candidates to the comparison table or choose them directly. Compare **two to four devices** side by side. The **Differences only** switch removes identical rows so the characteristics that separate the candidates are easier to see.
 
-The URL records the selected devices, so a comparison can be shared directly. The print control produces a cleaner printable view. Selected devices keep links to their profile, Report Card, and lineage research above the comparison table.
+The URL records the selected devices, so a comparison can be shared directly. The print control produces a cleaner printable view. Candidate purchase links and public research paths remain attached above the comparison table.
 
-## Report cards
+## Advanced research filters
 
-GlassesResearch also uses a ten-dimension [Report Card](REPORT_CARD.md) for evaluated products: **Hardware, Wearability, Visual AI, Software, Display / HUD, Openness, Owner Control, Cloud Independence, Hackability, and Value**.
+GlassesResearch also uses a ten-dimension [Report Card](REPORT_CARD.md): **Hardware, Wearability, Visual AI, Software, Display / HUD, Openness, Owner Control, Cloud Independence, Hackability, and Value**.
 
-The report card is deliberately multidimensional rather than a single opaque score. A device can excel at hardware while scoring poorly for owner control, or be highly hackable while lacking a HUD. If a dimension genuinely does not apply — for example, a product designed without a display — it receives **N/A**, not a failing grade, and N/A is excluded from any aggregate calculation.
+These belong in the Finder as an advanced layer rather than forcing ordinary shoppers to understand them before searching. Future Finder waves will expose minimum-score controls for the dimensions that have responsibly assigned scores.
 
-Product grades appear only when enough information exists to assign them responsibly. Missing information is not treated as failure and scores are not invented merely to fill a table.
+N/A remains distinct from a failing score, and unknown remains distinct from both. Missing information is not treated as failure and scores are not invented merely to fill a table.
 
-The comparison uses consistent fields and links supporting sources where available. Conflicting credible sources remain visible when relevant. See [Research Standards](RESEARCH_STANDARDS.md), [Technology Lineages](../lineages/README.md), and the separate [Adjacent Wearable-HCI Catalog](../models/ADJACENT_WEARABLES.md).
+See [Glasses Finder architecture](GLASSES_FINDER.md), [Research Standards](RESEARCH_STANDARDS.md), [Technology Lineages](../lineages/README.md), and the [Model Resource Links](../resources/MODEL_RESOURCE_LINKS.md).
