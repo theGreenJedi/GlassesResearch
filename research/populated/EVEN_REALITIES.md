@@ -1,6 +1,6 @@
 # Even Realities — populated research record
 
-Primary evidence: G2 `EV-0029`/`EV-0030`, Even Hub developer documentation, `docs/report-cards/BATCH_01.md`, and `HIGH_THROUGHPUT_BATCH_02.md`.
+Primary evidence: G2 `EV-0029`/`EV-0030`, Even Hub developer documentation, `EV-0037`, `docs/report-cards/BATCH_01.md`, and `HIGH_THROUGHPUT_BATCH_02.md`.
 
 ## Family boundary
 G1 and G2 are separate generations in one discreet binocular-HUD lineage. Neither includes an outward-facing camera in the documented architecture; Visual AI based on wearer-view imaging is therefore N/A rather than a low score.
@@ -23,8 +23,12 @@ Even Hub exposes display, microphone and touch inputs to phone-hosted plugins. T
 ## Audio/sensing boundary
 G2 has microphones but no speaker; do not infer audio playback from assistant features. G1/G2 no-camera architecture means voice/text/location-based AI can exist without wearer-view visual AI.
 
-## Prescription / serviceability
-Prescription-ready positioning is a strong wearability signal, but exact correction ranges, independent optical service, repair path, battery replacement and parts availability remain dedicated research fields.
+## Prescription / optical serviceability
+Even documents G2 prescription support across roughly -12.00 to +12.00 for supported single-vision prescriptions. Online orders support single vision; progressive and individualized UltraFit lenses are available through authorized/certified optician partners.
+
+Even also documents replacement lenses when a prescription changes without replacing the frame. Because the digital lens and display are integrated and the supported progressive pathway uses certified opticians, current serviceability state is **specialist/authorized optical service**, not ordinary-independent optical service.
+
+This is materially stronger than a vendor-only sealed optical unit, but it should not be over-scored as unrestricted local-optician service.
 
 ## Research priorities
-G1/G2 offline comparison, plugin behavior without Even services, BLE/protocol characterization, account/first-run requirements, independent optical service, repairability, battery aging and current value.
+G1/G2 offline comparison, plugin behavior without Even services, BLE/protocol characterization, account/first-run requirements, battery/repairability evidence, long-term lens replacement economics and current value.
