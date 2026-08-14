@@ -17,7 +17,8 @@ MODEL_RE = re.compile(r"^\| (GLS-\d{4}) \|")
 ALLOWED_STATES = {"yes", "no", "unknown", "na"}
 ALLOWED_SOURCE_TYPES = {"manufacturer", "amazon", "major_retailer", "optical_retailer", "specialist_retailer", "secondary_market"}
 ALLOWED_CONDITIONS = {"new", "refurbished", "used", "collector", "parts"}
-ALLOWED_AVAILABILITY = {"available", "out_of_stock", "unavailable", "unknown", "search"}
+LIVE_PRICE_AVAILABILITY = {"available"}
+HISTORY_PRICE_AVAILABILITY = {"out_of_stock", "unavailable", "unknown"}
 
 
 def load(path: str):
@@ -31,6 +32,23 @@ def canonical_ids():
         if m:
             ids.append(m.group(1))
     return ids
+
+
+def validate_price_record(observation, idset, errors, ledger, allowed_availability):
+    model_id = observation.get("id")
+    if model_id not in idset:
+        errors.append(f"{ledger} price observation references non-canonical ID {model_id}")
+    try:
+        if float(observation.get("price_usd")) <= 0:
+            raise ValueError
+    except (TypeError, ValueError):
+        errors.append(f"{model_id} has invalid {ledger} price {observation.get('price_usd')!r}")
+    if observation.get("availability") not in allowed_availability:
+        errors.append(f"{model_id} has invalid {ledger} price availability {observation.get('availability')}; allowed={sorted(allowed_availability)}")
+    if not observation.get("observed_at"):
+        errors.append(f"{model_id} {ledger} price is missing observed_at")
+    if not str(observation.get("source_url", "")).startswith("https://"):
+        errors.append(f"{model_id} {ledger} price source is not https")
 
 
 def fail(errors):
@@ -93,22 +111,19 @@ def main():
             if source.get("condition") not in ALLOWED_CONDITIONS:
                 errors.append(f"{model_id} has invalid purchase condition {source.get('condition')}")
 
-    prices = load("data/price-observations.json")
-    for observation in prices.get("records", []):
-        model_id = observation.get("id")
-        if model_id not in idset:
-            errors.append(f"price observation references non-canonical ID {model_id}")
-        try:
-            if float(observation.get("price_usd")) <= 0:
-                raise ValueError
-        except (TypeError, ValueError):
-            errors.append(f"{model_id} has invalid price {observation.get('price_usd')!r}")
-        if observation.get("availability") not in ALLOWED_AVAILABILITY:
-            errors.append(f"{model_id} has invalid price availability {observation.get('availability')}")
-        if not observation.get("observed_at"):
-            errors.append(f"{model_id} price is missing observed_at")
-        if not str(observation.get("source_url", "")).startswith("https://"):
-            errors.append(f"{model_id} price source is not https")
+    live_prices = load("data/price-observations.json")
+    for observation in live_prices.get("records", []):
+        validate_price_record(observation, idset, errors, "live", LIVE_PRICE_AVAILABILITY)
+
+    history_prices = load("data/price-history.json")
+    for observation in history_prices.get("records", []):
+        validate_price_record(observation, idset, errors, "history", HISTORY_PRICE_AVAILABILITY)
+
+    live_keys = {(r.get("id"), r.get("source_url"), r.get("observed_at")) for r in live_prices.get("records", [])}
+    history_keys = {(r.get("id"), r.get("source_url"), r.get("observed_at")) for r in history_prices.get("records", [])}
+    duplicates = live_keys & history_keys
+    if duplicates:
+        errors.append(f"price observations appear in both live and history ledgers: {sorted(duplicates)}")
 
     with tempfile.TemporaryDirectory() as tmp:
         fallback_path = Path(tmp) / "purchase-fallbacks.json"
@@ -133,7 +148,7 @@ def main():
 
     if errors:
         fail(errors)
-    print(f"Finder consistency OK: {len(ids)} canonical models; every model has a secondary-market continuation path.")
+    print(f"Finder consistency OK: {len(ids)} canonical models; live price filters exclude unavailable price history; every model has a secondary-market continuation path.")
 
 
 if __name__ == "__main__":
