@@ -20,6 +20,12 @@ Anchor: H6.5 W8.5 VAI N/A S5.5 O3.0 OC4.0 CI9.0 Hack3.0 HUD N/A; Value not yet g
 
 Anchor: H7.0 W9.0 VAI N/A S6.5 O3.5 OC4.5 CI9.0 Hack3.5 HUD N/A; Value not yet graded.
 
+## Prescription / optical serviceability
+
+Huawei documents ordinary optician fitting for supported optical-frame variants. HUAWEI × GENTLE MONSTER Eyewear II uses universal lens mounting and directs owners to replace decorative lenses with prescribed optical lenses; HUAWEI Eyewear 2 regional purchase guidance tells prescription users to contact an optician. Huawei warns against heating/bending electronics-bearing temples and ultrasonic cleaning.
+
+Serviceability state: **ordinary optician prescription fitting supported for documented optical variants**, with model-specific geometry and electronics handling restrictions. Do not transfer this conclusion automatically to sunglass variants. See [EV-0049](../../evidence/EV-0049-optical-serviceability-wave-six.md).
+
 ## Ownership interpretation
 Core audio/call behavior is Bluetooth-local across the family, making cloud independence consistently strong. AI Life/gesture software adds convenience but does not turn core playback into a vendor-cloud function. No broad public SDK, firmware replacement or low-level owner interface is established.
 
