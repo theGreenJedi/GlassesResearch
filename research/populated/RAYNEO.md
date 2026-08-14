@@ -1,6 +1,6 @@
 # RayNeo — populated research record
 
-Primary evidence includes the public X3 Pro source project (`EV-0023`), `docs/report-cards/BATCH_02.md`, Air display-lineage research in `HIGH_THROUGHPUT_BATCH_04.md`, and [EV-0048](../../evidence/EV-0048-RayNeo-X3-Pro-service-survival.md).
+Primary evidence includes the public X3 Pro source project (`EV-0023`), `docs/report-cards/BATCH_02.md`, Air display-lineage research in `HIGH_THROUGHPUT_BATCH_04.md`, [EV-0048](../../evidence/EV-0048-RayNeo-X3-Pro-service-survival.md), and [EV-0050](../../evidence/EV-0050-mainstream-optical-serviceability-wave-seven.md).
 
 ## Family boundary
 RayNeo spans host-driven Air display glasses and integrated AR/AI products such as X3 Pro. They share a brand ecosystem but must not inherit camera, AI, SDK or service-dependence properties across classes.
@@ -18,6 +18,12 @@ X3 Pro has substantial standalone residue: AIOS, onboard compute/storage, camera
 
 The correct label is **recoverable local application platform with cloud-dependent defining AI**. Creator Mode improves application survival but does not establish open firmware, bootloader access, unrestricted sensors, owner-selected AI endpoints or recovery images. EV-0048 preserves the privilege and endpoint-blocked validation queue.
 
+## X3 Pro prescription / optical serviceability
+
+RayNeo documents prescription support through global lens partners using a magnetic insert route. This is a concrete replaceable optical carrier, but the current first-party material does not establish open insert geometry or ordinary-independent fabrication. The defensible state is **partner optical service; ordinary-independent service unverified**.
+
+Do not convert magnetic attachment into an owner-fabrication claim, and do not let lens replacement imply battery, display, temple or board repairability.
+
 ## RayNeo Air display lineage
 Host-driven USB-C wearable displays. Visual AI is N/A absent separate wearer-view sensing; local owner-selected host compute yields high practical control and service independence.
 
@@ -31,4 +37,4 @@ Host-driven USB-C wearable displays. Visual AI is N/A absent separate wearer-vie
 RayNeo illustrates two opposite architectures inside one brand: Air-series products are closed devices but highly cloud-independent peripherals; X3 Pro is much more programmable and visually intelligent but more service-connected. Openness and Cloud Independence therefore move independently.
 
 ## Research priorities
-X3 Pro exact offline AI behavior, firmware/bootloader state, Creator Mode/API limits, prescription serviceability and current value; Air-series optical/USB specifications, firmware behavior, repairability and price dates.
+X3 Pro exact offline AI behavior, firmware/bootloader state, Creator Mode/API limits, ordinary-optician availability, replacement-insert pricing and current value; Air-series optical/USB specifications, firmware behavior, repairability and price dates.
