@@ -1,42 +1,28 @@
-# RayNeo — populated research fields
+# RayNeo — populated research record
 
-This record applies the GlassesResearch evidence frameworks to the current RayNeo ecosystem, with emphasis on the X3 Pro development surface.
+Primary evidence includes RayNeo's public X3 Pro source project (`EV-0023`) plus the display-lineage research in `docs/report-cards/HIGH_THROUGHPUT_BATCH_04.md`.
 
-## Evidence base
+## Family boundary
+RayNeo spans at least two materially different product classes: the Air host-driven display lineage and integrated AR/AI products such as X3 Pro. They share a brand ecosystem but must not inherit camera, SDK or AI properties across classes.
 
-Primary evidence currently includes RayNeo's public X3 Pro source project (`EV-0023`), which demonstrates device API use for camera, motion/input and AI-oriented application work.
+## RayNeo Air display lineage
+These are principally USB-C/host-driven wearable displays. Visual AI is N/A unless independent sensing is documented; owner-selected host compute gives them strong practical control and cloud independence even though firmware/optics remain proprietary.
 
-## Product architecture
+- **RayNeo Air — GLS-0087:** H7.0 W7.0 VAI N/A S5.5 O3.0 OC8.0 CI9.5 Hack3.5 HUD7.5 V7.0.
+- **RayNeo Air 2 — GLS-0088:** H8.0 W8.0 VAI N/A S6.0 O3.5 OC8.0 CI9.5 Hack4.0 HUD8.5 V8.0.
+- **RayNeo Air 2s — GLS-0089:** H8.0 W8.0 VAI N/A S6.0 O3.5 OC8.0 CI9.5 Hack4.0 HUD8.5 V8.0.
+- **RayNeo Air 3s — GLS-0090:** H8.5 W8.0 VAI N/A S6.5 O3.5 OC8.5 CI9.5 Hack4.0 HUD9.0 V8.5.
+- **RayNeo Air 3s Pro — GLS-0091:** H9.0 W7.5 VAI N/A S6.5 O3.5 OC8.5 CI9.5 Hack4.0 HUD9.5 V8.0.
 
-RayNeo spans display and AI-oriented glasses. The X3 Pro sits in the integrated AR/AI-glasses class rather than pure display-only viewers. Exact capabilities remain model-specific.
+The progression primarily reflects improving Micro-OLED display quality, audio and ergonomics rather than a move toward standalone AI compute.
 
-## Developer access
+## X3 Pro integrated AR/AI branch
+The public X3 Pro source project demonstrates camera, motion/input and AI-oriented device API examples. This is concrete evidence of a supported application-development surface and makes camera/sensor access more defensible than generic SDK marketing.
 
-The public X3 Pro source project is strong evidence that RayNeo exposes a supported application-development surface for at least part of the device stack. It also provides concrete examples rather than marketing-only claims.
+Display/HUD and Visual AI are applicable on X3 Pro-class hardware, but exact optics, perception behavior, cloud inference and service dependence remain model-specific. Public examples do not establish unrestricted firmware or bootloader access.
 
-This does not establish unrestricted firmware or bootloader access.
+## Ownership interpretation
+Air-family Cloud Independence is high because ordinary display use is local and host-selected. X3 Pro has stronger application-layer openness but may carry more AI/service dependence. These are different ownership profiles inside one brand.
 
-## Sensing and visual AI
-
-Public examples demonstrate use of camera and motion/input APIs, making sensor access more concrete than on ecosystems that expose only a generic SDK landing page. Visual AI should still be scored from demonstrated perception/reasoning behavior, not hardware presence alone.
-
-## Display/HUD
-
-Display is applicable and central on X3 Pro-class hardware. Exact optics and display characteristics should remain tied to primary specifications for each model.
-
-## Cloud independence and owner control
-
-Public application development improves owner/developer control. Whether AI inference, account services, updates or core applications depend on RayNeo cloud services remains a separate field and should be tested function by function.
-
-## Report-card implications
-
-- HUD: applicable.
-- Visual AI: positive evidence exists for camera-aware application development, with user-facing AI behavior still model-specific.
-- Openness: public source examples and device APIs are strong positive signals.
-- Owner Control: meaningful at application level; system-level control remains unknown.
-- Cloud Independence: unresolved for AI/service layers.
-- Hackability: stronger than closed consumer-only products because public device examples exist.
-
-## Unknowns retained
-
-Firmware replacement, bootloader state, repairability, prescription serviceability, long-term battery aging, exact offline AI behavior, service shutdown resilience and regional firmware differences remain open.
+## Research priorities
+Populate exact Air-series optical/USB specifications and price dates, X3 Pro offline/service behavior, firmware/bootloader status, prescription serviceability, repairability, battery aging where applicable, and regional firmware differences.
