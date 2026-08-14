@@ -1,6 +1,6 @@
 # Rokid — populated research record
 
-Primary evidence includes the official terminal SDK (`EV-0024`), Rokid Glasses specifications (`EV-0025`), optical-service evidence (`EV-0038`), `docs/report-cards/BATCH_02.md`, display-lineage research from `HIGH_THROUGHPUT_BATCH_04.md`, and [EV-0047](../../evidence/EV-0047-Rokid-Glasses-service-survival.md).
+Primary evidence includes the official terminal SDK (`EV-0024`), Rokid Glasses specifications (`EV-0025`), optical-service evidence (`EV-0038`), `docs/report-cards/BATCH_02.md`, display-lineage research from `HIGH_THROUGHPUT_BATCH_04.md`, [EV-0047](../../evidence/EV-0047-Rokid-Glasses-service-survival.md), and [EV-0052](../../evidence/EV-0052-current-value-wave-one.md).
 
 ## Family boundary
 Rokid spans host-driven display glasses (Air/Max) and integrated camera/display/AI glasses (Rokid Glasses). Do not transfer camera, onboard processing, AI or cloud-dependence claims across classes.
@@ -8,7 +8,7 @@ Rokid spans host-driven display glasses (Air/Max) and integrated camera/display/
 ## Rokid Glasses — GLS-0064
 Integrated AI/AR eyewear. Rokid documents a 49 g frame, Snapdragon AR1 Gen 1 + NXP RT600, 2 GB RAM, 32 GB storage, dual-eye monochrome MicroLED waveguides at 480×640, 30° FOV, up to 1500 nits, 12 MP Sony IMX681 camera, four microphones, dual open-ear speakers, Wi-Fi 6, Bluetooth 5.3, 210 mAh battery, prescription support, translation, navigation, transcription and multimodal AI.
 
-Report-card anchor: H8.5 W8.5 VAI8.5 S8.0 O7.0 OC6.5 CI5.5 Hack6.5 HUD8.5; Value not yet graded.
+Report-card anchor: H8.5 W8.5 VAI8.5 S8.0 O7.0 OC6.5 CI5.5 Hack6.5 HUD8.5; **V7.5 at $699 sale / V7.0 at $799 regular (US, checked 2026-08-14).**
 
 This is a strong everyday-form-factor HUD/AI product, but many headline AI services remain network/companion dependent. SDK/developer ecosystem is meaningful without approaching open-firmware/hardware benchmarks.
 

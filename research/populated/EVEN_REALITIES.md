@@ -1,6 +1,6 @@
 # Even Realities — populated research record
 
-Primary evidence: G2 `EV-0029`/`EV-0030`, Even Hub developer documentation, `EV-0037`, `docs/report-cards/BATCH_01.md`, `HIGH_THROUGHPUT_BATCH_02.md`, and [EV-0046](../../evidence/EV-0046-Even-G1-G2-service-survival.md).
+Primary evidence: G2 `EV-0029`/`EV-0030`, Even Hub developer documentation, `EV-0037`, `docs/report-cards/BATCH_01.md`, `HIGH_THROUGHPUT_BATCH_02.md`, [EV-0046](../../evidence/EV-0046-Even-G1-G2-service-survival.md), and [EV-0052](../../evidence/EV-0052-current-value-wave-one.md).
 
 ## Family boundary
 G1 and G2 are separate generations in one discreet binocular-HUD lineage. Neither includes an outward-facing camera in the documented architecture; Visual AI based on wearer-view imaging is therefore N/A rather than a low score.
@@ -15,7 +15,7 @@ G1's product strength is wearability and glanceable information, while public de
 ## Even Realities G2 — GLS-0048
 Even documents binocular green MicroLED waveguides, 640×350, 27.5° FoV, up to 1200 nits, four microphones, BLE, IP65 and roughly two-day battery. The glasses intentionally omit both camera and speaker.
 
-Report-card anchor: H8.0 W9.5 VAI N/A S8.0 O7.0 OC7.0 CI8.0 Hack6.5 HUD8.5; Value not yet graded.
+Report-card anchor: H8.0 W9.5 VAI N/A S8.0 O7.0 OC7.0 CI8.0 Hack6.5 HUD8.5; **V7.5 at $599 (US, checked 2026-08-14).**
 
 ## G2 developer surface
 Even Hub exposes display, microphone and touch inputs to phone-hosted plugins. This is meaningful supported application openness and improves Owner Control/Cloud Independence relative to a purely first-party appliance. It does not prove open firmware, bootloader access, schematics or unrestricted BLE control.
