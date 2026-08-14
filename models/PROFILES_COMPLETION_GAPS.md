@@ -36,7 +36,7 @@ The original **Rokid Glass** is a 2018 legacy standalone-AR product that reached
 
 ## GLS-0067 — Snap Spectacles (2021, 4th Gen)
 
-The 2021 **fourth-generation Spectacles** were Snap's transition from consumer camera glasses into true standalone AR eyewear. Access was through a creator program rather than normal retail, but that documented acquisition route is enough for the canonical ledger. Their historical significance is clearer than their current ownership value: this generation established Snap's developer-oriented AR direction before the later paid-developer Spectacles generation. GlassesResearch keeps 4th Gen separate from 5th Gen and avoids transferring later platform specifications backward until a dedicated generation-specific evidence pass is complete. [Canonical record and primary source lead](THE_LIST.md)
+The 2021 **fourth-generation Spectacles** were Snap's transition from consumer camera glasses into true standalone AR eyewear. Snap's launch record documents dual 3D waveguides, XR1 compute, two RGB cameras, spatial tracking, Lens Studio development and wireless Lens deployment, alongside the experimental reality of a 134 g frame and roughly 30 minutes per charge. Access came through a selected-creator program rather than retail, and platform control remained with Snap even though Lens creators received substantial authoring freedom. [Canonical record](THE_LIST.md) · [evidence and Report Card](../docs/report-cards/LINEAGE_SNAP_SPECTACLES.md)
 
 ## GLS-0120 — Anko / Kmart Australia Camera Glasses
 
