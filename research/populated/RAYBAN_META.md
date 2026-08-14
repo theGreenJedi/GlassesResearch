@@ -1,6 +1,6 @@
 # Meta / Ray-Ban / Oakley smart eyewear — populated research record
 
-Primary evidence includes Ray-Ban Meta operations (`EV-0027`), Meta multimodal system documentation (`EV-0028`), `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, `docs/report-cards/BATCH_03.md`, `EV-0040`, and [EV-0045](../../evidence/EV-0045-Meta-RayBan-Oakley-service-survival.md). Claims remain model-scoped.
+Primary evidence includes Ray-Ban Meta operations (`EV-0027`), Meta multimodal system documentation (`EV-0028`), `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, `docs/report-cards/BATCH_03.md`, `EV-0040`, [EV-0045](../../evidence/EV-0045-Meta-RayBan-Oakley-service-survival.md), and [EV-0050](../../evidence/EV-0050-mainstream-optical-serviceability-wave-seven.md). Claims remain model-scoped.
 
 ## Ray-Ban Stories — GLS-0001
 First-generation capture/audio product: dual-camera capture, open-ear audio, microphones, voice control, prescription/lens options and Facebook View workflow. Camera capture existed, but meaningful scene-understanding AI did not.
@@ -40,6 +40,12 @@ Specialized high-intensity sport design: wraparound frame, IP67, up to nine hour
 Anchor: H9.0 W7.5 VAI9.0 S8.5 O3.5 OC4.5 CI4.0 Hack3.0 HUD N/A; Value not yet graded.
 
 External fitness integrations increase workflow choice but do not amount to a public device SDK or replaceable system stack. Do not automatically transfer the HSTN battery/service finding to Vanguard unless Oakley documents the same repair policy for that model.
+
+## Optical serviceability boundary
+
+Ray-Ban documents prescription configurations and instructions for ordering prescription lenses, while Oakley sells model-specific HSTN replacement lenses. Oakley further states that, depending on region, an existing HSTN may receive prescription lenses through the owner's optometrist or preferred optical provider. That supports **ordinary optical service for HSTN in documented regions**, but it must not be generalized to every Meta frame or market.
+
+For Ray-Ban Meta generally, the current first-party evidence supports a brand/authorized prescription and warranty path; ordinary-independent reglazing remains model- and region-dependent. Optical serviceability does not change the sealed-electronics or service-dependence findings.
 
 ## Service-survival boundary
 
