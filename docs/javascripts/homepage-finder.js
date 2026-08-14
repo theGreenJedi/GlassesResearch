@@ -69,7 +69,7 @@
       const selected = filters.filter((filter) => selectedIds.includes(filter.id));
       const matches = selected.length ? devices.filter((device) => selected.every((filter) => passes(device, filter))) : [];
       status.innerHTML = selected.length
-        ? `<strong>${matches.length}</strong> of ${devices.length} models match ${selected.length} requirement${selected.length === 1 ? '' : 's'}.`
+        ? `<strong>${matches.length}</strong> candidate${matches.length === 1 ? '' : 's'} fulfill${matches.length === 1 ? 's' : ''} your search criteria.`
         : `<strong>${devices.length}</strong> models are ready to filter.`;
       preview.innerHTML = selected.length
         ? (matches.slice(0, 3).map((device) => `<article><strong>${esc(device.maker)} ${esc(device.model)}</strong><span>${esc(device.type || 'Smart glasses')} · ${esc(device.state || 'Status unknown')}</span></article>`).join('') || '<p><strong>0 found.</strong> No candidates fulfill all of your criteria.</p>')
