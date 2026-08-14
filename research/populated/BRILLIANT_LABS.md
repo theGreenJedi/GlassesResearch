@@ -1,6 +1,6 @@
 # Brilliant Labs — populated research record
 
-Primary evidence: Frame hardware/SDK/Bluetooth/codebase (`EV-0009` through `EV-0012`), Brilliant primary product/docs, `docs/report-cards/BATCH_01.md`, `BATCH_06.md`, and `HIGH_THROUGHPUT_BATCH_02.md`.
+Primary evidence: Frame hardware/SDK/Bluetooth/codebase (`EV-0009` through `EV-0012`), Brilliant primary product/docs, `EV-0039`, `docs/report-cards/BATCH_01.md`, `BATCH_06.md`, and `HIGH_THROUGHPUT_BATCH_02.md`.
 
 ## Lineage
 Monocle → Frame → Halo. Shared corporate/open-development philosophy does not justify copying hardware, sensors or firmware details between generations.
@@ -17,16 +17,24 @@ Prescription-capable glasses with 640×400 color OLED, 20° FOV, 720p camera, mi
 
 Report-card anchor: H8.5 W7.5 VAI8.5 S9.5 O10.0 OC10.0 CI9.5 Hack10.0 HUD7.5; Value not yet graded.
 
+### Frame optical and repair boundary
+Brilliant publishes a dedicated prescription/Rx clip mechanical design and prescription-lens mechanical drawing. That is unusually strong optical-interface documentation and improves preservation potential, but it does not by itself establish that an ordinary optical shop will fabricate/service the lens system.
+
+Repairability is similarly component-specific. Frame publishes schematics, mechanical files, source code and physical SWD debug access, making diagnosis and preservation unusually feasible. However, Brilliant explicitly warns users not to remove the built-in lithium battery because shorted terminals can overheat or ignite. Open design documentation therefore must not be converted into an unsupported `user-replaceable battery` claim.
+
 ## Halo — GLS-0052
 Shipping/current open-source platform (shipping began Q1 2026 in the completed source packet). Brilliant documents color OLED, dual bone-conduction speakers, dual microphones, optical sensor, 6-axis IMU, Bluetooth 5.3, Alif B1 Cortex-M55/NPU, ZephyrOS + Lua, all-day battery and open hardware/software/design files.
 
 Report-card anchor: H8.5 W9.0 VAI8.0 S8.5 O10.0 OC9.5 CI9.0 Hack10.0 HUD7.5 V8.5. Price basis: $349.
 
+### Halo prescription path
+Brilliant documents prescription and sunglass lens options through partner SmartBuyGlasses and states the display optic can be adjusted approximately +2 to -6 diopters. This is a documented partner prescription path; ordinary independent-optician service is not yet established.
+
 ## Common-ruler interpretation
 Brilliant Labs establishes the high end of the catalog's Openness/Hackability ruler. Open source alone is not enough for every other dimension: wearability, optics, battery, visual AI and value stay generation-specific. Cloud features such as bundled assistants are optional layers rather than the sole route to hardware use.
 
 ## Preservation / repair
-Published schematics, mechanical files, firmware and source materially improve long-term preservation potential. Actual replacement-part availability and practical repair procedures should still be evidenced separately.
+Published schematics, mechanical files, firmware and source materially improve long-term preservation potential. Actual replacement-part availability, safe component replacement and practical repair procedures remain component-specific evidence questions.
 
 ## Research priorities
-Normalized battery measurements, exact prescription/optical serviceability, parts sourcing, long-term firmware support, current Halo/Frame local-AI capability and hands-on repairability.
+Normalized battery measurements, ordinary-optician serviceability for Frame/Halo, parts sourcing, long-term firmware support, current Halo/Frame local-AI capability and hands-on repairability.
