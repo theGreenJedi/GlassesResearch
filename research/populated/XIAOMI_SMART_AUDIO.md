@@ -5,7 +5,7 @@ Primary evidence: `EV-0034` and Xiaomi vendor product/support pages reviewed 202
 ## Identity resolution
 `GLS-0022` now maps to the **first-generation Mijia Smart Audio Glasses**, offered through Xiaomi Youpin crowdfunding in April 2023. The former 2022 era was incorrect and likely conflated this audio branch with the August 2022 Mijia Glasses Camera. Xiaomi's current documentation compares later Xiaomi Smart Audio Glasses and Mijia Smart Audio Glasses hardware; those specifications must not be copied backward into GLS-0022.
 
-The 2023 mapping is supported by contemporaneous launch reporting. A preserved first-generation Xiaomi page, manual, regulatory record and exact model number remain required before detailed scoring.
+The 2023 mapping and model identity are now strongly corroborated as **MJSS010FC** by MIIT record `2023DP1554`, a Bluetooth certificate index, period retail evidence, a model-specific teardown and a surviving independent manual transcription. This supports a conservative generation-specific card while the original Xiaomi Youpin page and manufacturer-hosted manual remain preservation targets.
 
 ## Separate 2022 camera/display branch
 
@@ -32,10 +32,10 @@ Independent optical-shop fitting is a strong owner-control and long-term-surviva
 No public firmware, hardware SDK or low-level owner-development path is established by this evidence pass.
 
 ## Report-card status
-Identity is resolved, but do not assign a detailed GLS-0022 score until first-generation documentation is recovered. The current global Mijia generation merits a separate catalog/report-card decision if its acquisition history is established independently.
+Identity is resolved and GLS-0022 now has a conservative generation-specific card in [`LINEAGE_XIAOMI_MIJIA_AUDIO.md`](../../docs/report-cards/LINEAGE_XIAOMI_MIJIA_AUDIO.md). The current global Mijia generation merits a separate catalog/report-card decision if its acquisition history is established independently.
 
 ## Next evidence actions
-1. Recover the April 2023 Xiaomi Youpin page, first-generation manual/regulatory records and exact model number.
+1. Recover the April 2023 Xiaomi Youpin page and manufacturer-hosted manual; preserve direct copies where lawful.
 2. Establish launch year/regions for Xiaomi Smart Audio Glasses and current global Mijia Smart Audio Glasses.
 3. Decide whether the later current Mijia generation requires a new stable catalog ID.
 4. Establish exact correction ranges/progressive support.
