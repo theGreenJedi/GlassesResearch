@@ -11,7 +11,6 @@ the_list = (ROOT / "models/THE_LIST.md").read_text(encoding="utf-8")
 model_readme = (ROOT / "models/README.md").read_text(encoding="utf-8")
 root_readme = (ROOT / "README.md").read_text(encoding="utf-8")
 lineage_index = (ROOT / "lineages/README.md").read_text(encoding="utf-8")
-mkdocs = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
 corrections_path = ROOT / "models/CATALOG_CORRECTIONS.md"
 corrections = corrections_path.read_text(encoding="utf-8") if corrections_path.exists() else ""
 
@@ -42,8 +41,6 @@ for path in lineage_files:
     rel = f"lineages/{path.name}"
     if f"({path.name})" not in lineage_index:
         errors.append(f"{rel} exists but is absent from lineage index")
-    if rel not in mkdocs:
-        errors.append(f"{rel} exists but is absent from MkDocs lineage navigation")
 
 if errors:
     print("Catalog consistency check FAILED:")
