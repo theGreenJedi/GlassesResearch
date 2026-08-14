@@ -1,55 +1,52 @@
-# XREAL — populated research fields
+# Nreal / XREAL — populated research record
 
-This record applies the GlassesResearch evidence frameworks to the current XREAL ecosystem, with emphasis on the XREAL One family.
+Primary evidence includes XREAL SDK documentation (`EV-0021`), One specifications (`EV-0022`), manufacturer history/product pages and `docs/report-cards/HIGH_THROUGHPUT_BATCH_03.md`.
 
-## Evidence base
+## Lineage pattern
+Nreal Light → XREAL Air → Air 2 / Air 2 Pro / Air 2 Ultra → One / One Pro. Most of the lineage is host-driven display eyewear: the owner chooses the phone/PC/console and the glasses provide local display/spatial functions. Air 2 Ultra is the major sensing-oriented exception.
 
-Primary evidence includes the official XREAL SDK documentation (`EV-0021`) and XREAL One specifications (`EV-0022`).
+## Nreal Light — GLS-0069
+Early 52°-FOV 6DoF consumer AR device with a mobile host and developer path.
 
-## Product architecture
+Anchor: H7.5 W6.5 VAI4.0 S7.0 O6.0 OC6.5 CI8.5 Hack6.0 HUD8.0; Value not yet graded.
 
-XREAL One belongs to the display-glasses / spatial-viewer class rather than the camera-first AI-glasses class. Its core value is visual output and spatial display behavior. Confidence: confirmed from vendor-primary evidence.
+## XREAL Air — GLS-0070
+2021 mass-market host-powered Micro-OLED display generation.
 
-## Connectivity
+Anchor: H7.5 W7.5 VAI N/A S7.0 O5.5 OC7.5 CI9.0 Hack5.5 HUD8.0; Value not yet graded.
 
-Official documentation establishes a host-connected XR development model. Exact transport support, accessory dependence and device-specific wired modes should remain tied to model documentation rather than generalized across the entire XREAL catalog.
+## Air 2 — GLS-0071
+72 g, 46° FOV, Sony 0.55-inch Micro-OLED, 1920×1080 per eye, up to 120 Hz, 500 nits, stereo speakers and prescription insert support.
+
+Anchor: H8.0 W8.0 VAI N/A S7.5 O5.5 OC8.0 CI9.5 Hack5.5 HUD8.5 V8.5. Official US price basis in the completed packet: ~$199.
+
+## Air 2 Pro — GLS-0072
+Air 2 optical platform plus three-level electrochromic dimming, ~75 g.
+
+Anchor: H8.5 W8.0 VAI N/A S7.5 O5.5 OC8.0 CI9.5 Hack5.5 HUD8.8 V8.5. Price basis: ~$249.
+
+## Air 2 Ultra — GLS-0073
+83 g titanium frame, 52° FOV, 1080p-per-eye Micro-OLED, 120 Hz 2D/90 Hz 3D, dual environment sensors, hand/head tracking, 6DoF, depth mesh, spatial anchors and plane/image tracking.
+
+Anchor: H9.0 W7.0 VAI7.0 S8.5 O7.0 OC8.0 CI9.0 Hack7.0 HUD9.0; Value not yet graded.
+
+This model should not inherit ordinary camera-glasses assumptions: environment sensing supports spatial understanding, but it is not primarily a photo/video capture device.
+
+## XREAL One — GLS-0074
+On-glasses X1 spatial-computing chip, binocular Micro-OLED display, spatial stabilization and host-driven content architecture.
+
+Anchor: H9.0 W7.5 VAI N/A S8.5 O5.5 OC8.5 CI9.5 Hack5.5 HUD9.2; Value not yet graded.
+
+## XREAL One Pro — GLS-0075
+X Prism optical engine, 57° FOV, up to 171-inch virtual screen, two IPD size ranges, 120 Hz and dedicated spatial compute.
+
+Anchor: H9.3 W7.5 VAI N/A S8.5 O5.5 OC8.5 CI9.5 Hack5.5 HUD9.5 V7.5. Completed-packet price basis: ~$599.
+
+## Ownership interpretation
+The lineage scores unusually well in practical Owner Control and Cloud Independence because host selection controls content and compute, while the display itself does not need an AI cloud. That is different from system-level openness: firmware/hardware remain proprietary, so host freedom should not be confused with open internals.
 
 ## Developer access
+Official SDK support is meaningful application-layer openness. Air 2 Ultra's spatial APIs materially deepen the development surface. No claim is made here for open firmware, unlocked bootloaders or unrestricted low-level control.
 
-XREAL maintains an official SDK and development path for XR applications, including Unity-oriented development. This is strong evidence of application-layer openness for supported functions.
-
-It does not by itself establish firmware access, unrestricted hardware control, bootloader access or independence from XREAL-specific runtime layers.
-
-## Display and HUD
-
-Visual output is a defining capability rather than optional behavior. The One family should receive a populated HUD/display field rather than N/A. Exact display characteristics belong to model-specific specifications.
-
-## Sensors and visual AI
-
-XREAL's display products should not automatically receive Visual AI credit. Display capability, tracking sensors and environmental visual understanding are separate fields. Camera or AI capabilities, where present in accessories or later models, require separate evidence.
-
-## Cloud independence
-
-The architecture is favorable to local display use because much of the application/rendering workload can reside on the attached host device. Cloud dependence should be assessed per application rather than assumed from the glasses themselves.
-
-## Owner control
-
-Official SDK support provides meaningful developer access, but owner control is constrained by whatever functions XREAL exposes through its platform. Custom applications and host-side computation are stronger evidence than low-level device control.
-
-## Prescription and wearability
-
-Prescription-insert support, optical fit, IPD constraints, comfort and long-duration wear should be populated per model. These remain high-priority ownership fields because display glasses can be technically capable yet impractical for individual users.
-
-## Report-card implications
-
-- Hardware: display/optics are core strengths and should be scored from model-specific evidence.
-- HUD: applicable and central.
-- Visual AI: do not infer from XR branding.
-- Openness: official SDK provides meaningful application-level access.
-- Owner Control: moderate-to-strong at the host/app layer; low-level access remains unknown.
-- Cloud Independence: potentially strong for basic display functions, subject to accessory/app requirements.
-- Hackability: official SDK is a positive signal, but firmware and protocol access require separate evidence.
-
-## Unknowns retained
-
-Firmware access, bootloader state, exact sensor exposure, repairability, battery aging, regional firmware differences and long-term accessory/service dependence remain unknown unless supported by model-specific evidence.
+## Research priorities
+Populate exact USB/display transport by model, accessory/Beam dependence, prescription insert/service details, repairability, firmware/update behavior, sensor exposure, regional differences and historical/current acquisition value where still ungraded.
