@@ -2,13 +2,9 @@
 
 Independent, evidence-based research into smart glasses, AI glasses, and user-controlled wearable human-computer interfaces.
 
-**The resource we wish had existed when we started looking.**
+## Finder
 
-> **Discover, verify, preserve, and freely share the world's smart-glasses and wearable-HCI knowledge.**
-
-## Find glasses by what you need
-
-Choose what matters. The Finder checks the full 144-model catalog and shows exact documented matches before you enter the complete comparison workspace.
+Choose what matters. The Finder checks the full 144-model catalog and shows exact documented matches, then leads into comparisons, model research, and Report Cards.
 
 <div id="homepage-finder-app">
 Loading the compact Glasses Finder…
@@ -16,47 +12,24 @@ Loading the compact Glasses Finder…
 
 [Open the complete Glasses Finder & Compare →](docs/COMPARISON_ENGINE.md)
 
-## Worth reading now
+## Research & News
 
 ### [Courts in England and Wales prohibit Meta smart glasses](docs/RESEARCH_NEWS.md#august-11-2026-courts-in-england-and-wales-prohibit-meta-smart-glasses)
 
-Smart glasses are beginning to receive device-specific institutional rules rather than simply inheriting smartphone policy. That matters for social acceptance, privacy, and where camera-equipped eyewear can actually be worn.
+Device-specific institutional rules are beginning to define where camera-equipped eyewear can actually be worn.
 
 ### [Local AI agents can move the intelligence out of the glasses](hacking/LOCAL_AI_AGENTS.md)
 
-New local multimodal models strengthen an owner-controlled architecture in which glasses act as sensors and interfaces while a phone, laptop, or nearby computer provides perception, reasoning, memory, and tool use.
+Glasses can act as sensors and interfaces while owner-controlled devices provide perception, reasoning, memory, and tool use.
 
-### [Technology lineages reveal when different brands are really part of the same ecosystem](lineages/README.md)
+### [Technology lineages reveal when different brands share an ecosystem](lineages/README.md)
 
-Retail names can hide shared OEM hardware, companion apps, firmware families, protocols, and development paths. Lineage research connects those relationships without claiming equivalence where the evidence does not support it.
+Lineage research connects OEM hardware, companion apps, firmware families, protocols, and development paths.
 
-### [Vuzix enterprise deployments show a different smart-glasses market](docs/RESEARCH_NEWS.md#april-1-2025-vuzix-receives-500k-augmex-smart-glasses-reorder)
+[Read all Research & News →](docs/RESEARCH_NEWS.md)
 
-Consumer AI glasses get most of the attention, but repeat enterprise orders provide evidence that smart glasses are also becoming durable working infrastructure in logistics, field service, healthcare, and other operational environments.
+## Tools
 
-### [Who owns the record?](docs/discussions/WHO_OWNS_THE_RECORD.md)
+Report Cards, model research, comparisons, SDK and API references, cloud-survival analysis, development and hacking resources, test protocols, primers, community links, and the complete catalog live in one research workspace.
 
-An open argument about wearable recording, surveillance, bystander rights, individual evidence, and whether smart glasses concentrate power or redistribute it.
-
-## Research tools
-
-- [**Glasses Finder & Compare**](docs/COMPARISON_ENGINE.md) — filter all 144 models by practical needs, buying route, price and advanced Report Card thresholds, then shortlist and compare.
-- [**GlassesResearch Report Card**](docs/REPORT_CARD.md) — compare hardware, wearability, visual AI, software, HUD, openness, owner control, cloud independence, hackability, and value without hiding tradeoffs in one score.
-- [**Companion App Database**](docs/COMPANION_APP_DATABASE.md) — track the software layer that controls pairing, firmware, accounts, AI, media, and long-term survivability.
-- [**SDK / API Compatibility Matrix**](docs/SDK_API_MATRIX.md) — compare documented developer access to displays, cameras, audio, sensors, transports, and custom AI integration.
-- [**Survival / Cloud-Independence Matrix**](docs/SURVIVAL_MATRIX.md) — ask what useful functions remain if an app, account system, hosted AI service, or vendor disappears.
-- [**Smart-Glasses Technology Primers**](docs/TECHNOLOGY_PRIMERS.md) — understand waveguides, birdbath optics, microOLED, microLED, LCOS, IMUs, SLAM, eye tracking, audio systems, and compute architectures.
-- [**Standard Hands-On Test Protocol**](docs/HANDS_ON_TEST_PROTOCOL.md) — a repeatable evidence protocol for physical inspection, onboarding, offline use, battery, thermals, cameras, audio, HUDs, wearability, software, ownership, and survival.
-- [**Browse 144 smart-glasses models and generations**](models/THE_LIST.md) — the cross-vendor eyewear index, past and present.
-- [**Browse adjacent wearable-HCI devices**](models/ADJACENT_WEARABLES.md) — headsets, helmets, clip-on assistive modules, over-ear AR and future non-eyewear form factors, kept separate from the glasses count.
-- [**Wearable-HCI taxonomy**](docs/taxonomy/WEARABLE_HCI.md) — the form-factor, lineage, evidence and counting rules that keep the catalogs precise.
-- [**Model research chapters**](models/README.md) — deeper source-backed dossiers for selected devices and families.
-- [**Technology lineages**](lineages/README.md) — OEM, rebrand, firmware, app, and platform relationships across device families.
-- [**Industry timeline**](docs/INDUSTRY_TIMELINE.md) — major products, technologies, companies, and milestones over time.
-- [**Research & News**](docs/RESEARCH_NEWS.md) — dated developments selected for durable relevance.
-- [**Developer resources**](hacking/README.md) — SDKs, firmware, BLE, APIs, repair, reverse engineering, local AI, and vendor-independent development.
-- [**Community**](resources/COMMUNITY_AND_DEVELOPMENT.md) — direct links to Reddit, Discord, GitHub, XDA, developer forums, and cross-vendor communities.
-- [**Buyer guide**](buyers/BUYER_AND_OPENNESS_GUIDE.md) — ownership, privacy, offline use, repairability, prescription options, and vendor lock-in.
-- [**Questions & Answers**](docs/faq/README.md) — buying, battery, displays, privacy, accessibility, AI, cameras, and development.
-
-Use the **Search GlassesResearch…** box above to search for a model, feature, firmware version, company, protocol, manual, or research topic.
+[Explore all research tools →](docs/TOOLS.md)

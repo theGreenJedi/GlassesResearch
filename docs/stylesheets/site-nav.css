@@ -21,11 +21,30 @@
 
   .md-tabs__link {
     margin-top: 0.65rem;
-    padding-left: 0.45rem;
-    padding-right: 0.45rem;
-    font-size: 0.72rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    font-size: 0.78rem;
     letter-spacing: 0.01em;
     white-space: nowrap;
+  }
+
+  /* The top tabs carry site-level navigation. Keep the page contents in the
+     left reading rail and leave the right side visually open. */
+  .md-sidebar--primary {
+    display: none;
+  }
+
+  .md-sidebar--secondary {
+    order: -1;
+  }
+
+  .md-sidebar--secondary .md-sidebar__scrollwrap {
+    border-right: 1px solid rgba(17, 24, 23, 0.12);
+    padding-right: 0.8rem;
+  }
+
+  .md-content {
+    min-width: 0;
   }
 
   /* Material already provides full-site search; keep it visible and obvious. */
@@ -47,9 +66,9 @@
 
 @media screen and (min-width: 100em) {
   .md-tabs__link {
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    font-size: 0.76rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .md-search {
