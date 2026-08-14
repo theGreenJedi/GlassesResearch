@@ -72,7 +72,7 @@
         ? `<strong>${matches.length}</strong> of ${devices.length} models match ${selected.length} requirement${selected.length === 1 ? '' : 's'}.`
         : `<strong>${devices.length}</strong> models are ready to filter.`;
       preview.innerHTML = selected.length
-        ? (matches.slice(0, 3).map((device) => `<article><strong>${esc(device.maker)} ${esc(device.model)}</strong><span>${esc(device.type || 'Smart glasses')} · ${esc(device.state || 'Status unknown')}</span></article>`).join('') || '<p>No exact documented matches. The complete Finder can show near matches and unknowns.</p>')
+        ? (matches.slice(0, 3).map((device) => `<article><strong>${esc(device.maker)} ${esc(device.model)}</strong><span>${esc(device.type || 'Smart glasses')} · ${esc(device.state || 'Status unknown')}</span></article>`).join('') || '<p><strong>0 found.</strong> No candidates fulfill all of your criteria.</p>')
         : '<p>Choose a requirement to reveal matching models.</p>';
       open.href = selectedIds.length
         ? `docs/COMPARISON_ENGINE/?filters=${encodeURIComponent(selectedIds.join(','))}`
