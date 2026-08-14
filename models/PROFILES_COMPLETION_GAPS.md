@@ -16,7 +16,7 @@ Primary company and SEC records establish **Lyte XL** as the named October 2023 
 
 ## GLS-0034 — Fauna Audio Glasses
 
-**Fauna Audio Glasses** are preserved as a 2020 retail audio-eyewear product: smart glasses whose primary interface was sound rather than a camera or display. That makes them part of the same broad historical shift represented by Bose, Huawei, Amazon, Lucyd, and Vue—moving phone audio and voice access into something worn as eyewear. The current repository does not yet carry enough model-specific primary material for a full ten-dimension Report Card, so this profile deliberately stops at what the canonical record establishes instead of manufacturing detail from category resemblance. [Canonical record and primary-support lead](THE_LIST.md)
+**Fauna Audio Glasses** were 2020 screen-free Bluetooth eyewear built around acetate frames, optician-adjustable fit, prescription retrofitting and a two-way MEMS/electrodynamic open-ear audio system. Music, calls and phone assistants survive as standard Bluetooth functions even though USound now describes the Fauna project as completed. That makes cloud independence and optical serviceability stronger than the closed electronics and absent developer platform. [Canonical record](THE_LIST.md) · [evidence and Report Card](../docs/report-cards/LINEAGE_FAUNA_AUDIO.md)
 
 ## GLS-0061 — Rokid Glass
 
