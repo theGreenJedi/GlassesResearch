@@ -12,6 +12,9 @@ This section covers companion applications, permissions, network behavior, SDKs,
 
 ## Investigation priorities
 
+The [companion-app research note](companion-app.md) records the current app path,
+known boundaries, and verification work.
+
 1. Acquire the official APK from a trustworthy source.
 2. Record package name, version, signing certificate, permissions, SDK targets, domains, and supported-device strings.
 3. Compare behavior with and without the vendor app.
