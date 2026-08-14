@@ -8,7 +8,7 @@ Independent, evidence-based research into smart glasses, AI glasses, and user-co
 
 ## Find glasses by what you need
 
-Choose what matters. The Finder checks the full 145-model catalog and shows exact documented matches before you enter the complete comparison workspace.
+Choose what matters. The Finder checks the full 144-model catalog and shows exact documented matches before you enter the complete comparison workspace.
 
 <div id="homepage-finder-app">
 Loading the compact Glasses Finder…
@@ -40,14 +40,14 @@ An open argument about wearable recording, surveillance, bystander rights, indiv
 
 ## Research tools
 
-- [**Glasses Finder & Compare**](docs/COMPARISON_ENGINE.md) — filter all 145 models by practical needs, buying route, price and advanced Report Card thresholds, then shortlist and compare.
+- [**Glasses Finder & Compare**](docs/COMPARISON_ENGINE.md) — filter all 144 models by practical needs, buying route, price and advanced Report Card thresholds, then shortlist and compare.
 - [**GlassesResearch Report Card**](docs/REPORT_CARD.md) — compare hardware, wearability, visual AI, software, HUD, openness, owner control, cloud independence, hackability, and value without hiding tradeoffs in one score.
 - [**Companion App Database**](docs/COMPANION_APP_DATABASE.md) — track the software layer that controls pairing, firmware, accounts, AI, media, and long-term survivability.
 - [**SDK / API Compatibility Matrix**](docs/SDK_API_MATRIX.md) — compare documented developer access to displays, cameras, audio, sensors, transports, and custom AI integration.
 - [**Survival / Cloud-Independence Matrix**](docs/SURVIVAL_MATRIX.md) — ask what useful functions remain if an app, account system, hosted AI service, or vendor disappears.
 - [**Smart-Glasses Technology Primers**](docs/TECHNOLOGY_PRIMERS.md) — understand waveguides, birdbath optics, microOLED, microLED, LCOS, IMUs, SLAM, eye tracking, audio systems, and compute architectures.
 - [**Standard Hands-On Test Protocol**](docs/HANDS_ON_TEST_PROTOCOL.md) — a repeatable evidence protocol for physical inspection, onboarding, offline use, battery, thermals, cameras, audio, HUDs, wearability, software, ownership, and survival.
-- [**Browse 145 smart-glasses models and generations**](models/THE_LIST.md) — the cross-vendor eyewear index, past and present.
+- [**Browse 144 smart-glasses models and generations**](models/THE_LIST.md) — the cross-vendor eyewear index, past and present.
 - [**Browse adjacent wearable-HCI devices**](models/ADJACENT_WEARABLES.md) — headsets, helmets, clip-on assistive modules, over-ear AR and future non-eyewear form factors, kept separate from the glasses count.
 - [**Wearable-HCI taxonomy**](docs/taxonomy/WEARABLE_HCI.md) — the form-factor, lineage, evidence and counting rules that keep the catalogs precise.
 - [**Model research chapters**](models/README.md) — deeper source-backed dossiers for selected devices and families.
