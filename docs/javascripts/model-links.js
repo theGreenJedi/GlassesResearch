@@ -28,9 +28,7 @@ async function enhanceTheList() {
     // The ledger remains usable even if the enhancement data cannot load.
   }
 
-  // Prefer a dedicated repository chapter, then the evidence-derived editorial
-  // profile, then the strongest available source. Every canonical row receives
-  // a profile path from the device-database validation layer.
+  // Every ledger row links to its stable, individually indexable model page.
   tables.forEach((table) => {
     const headers = Array.from(table.querySelectorAll("thead th")).map((cell) =>
       cell.textContent.trim().toLowerCase()
@@ -59,13 +57,15 @@ async function enhanceTheList() {
       const externalLink = links.find((link) => /^https?:\/\//.test(link.href));
 
       if (!modelCell.querySelector("a")) {
-        const destination = chapterLink?.href || publicPaths.profile || namedSource?.href || externalLink?.href || links[0]?.href;
+        const destination = publicPaths.model_page || chapterLink?.href || publicPaths.profile || namedSource?.href || externalLink?.href || links[0]?.href;
         if (destination) {
           const anchor = document.createElement("a");
           anchor.href = destination;
           anchor.textContent = modelCell.textContent.trim();
           anchor.className = "model-index-link";
-          anchor.title = chapterLink
+          anchor.title = publicPaths.model_page
+            ? "Open the canonical GlassesResearch model page"
+            : chapterLink
             ? "Open the GlassesResearch model chapter"
             : publicPaths.profile
               ? "Open the GlassesResearch editorial profile"
@@ -80,6 +80,7 @@ async function enhanceTheList() {
 
       if (modelCell.querySelector(".model-research-paths")) return;
       const research = [];
+      if (publicPaths.model_page) research.push(`<a href="${publicPaths.model_page}">Model page</a>`);
       if (publicPaths.profile) research.push(`<a href="${publicPaths.profile}">Profile</a>`);
       if (publicPaths.report_card) research.push(`<a href="${publicPaths.report_card}">Report card</a>`);
       if (publicPaths.lineage) research.push(`<a href="${publicPaths.lineage}">Lineage</a>`);

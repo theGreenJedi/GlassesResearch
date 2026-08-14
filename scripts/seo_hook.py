@@ -131,6 +131,27 @@ def _faq_schema(markdown: str, canonical_url: str) -> str | None:
     )
 
 
+def _model_schema(meta: dict[str, Any], description: str, canonical_url: str) -> str | None:
+    """Describe canonical model subjects without inventing offers or ratings."""
+    if not meta.get("model_id"):
+        return None
+    return json.dumps(
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "@id": f"{canonical_url}#product",
+            "name": meta.get("model_name"),
+            "model": meta.get("model_id"),
+            "brand": {"@type": "Brand", "name": meta.get("model_maker")},
+            "category": meta.get("model_category"),
+            "description": description,
+            "url": canonical_url,
+        },
+        ensure_ascii=False,
+        separators=(",", ":"),
+    )
+
+
 def on_page_markdown(markdown: str, page: Any, config: Any, files: Any) -> str:
     """Populate per-page metadata before Material renders the page."""
     page_title = page.title or config.site_name
@@ -148,5 +169,9 @@ def on_page_markdown(markdown: str, page: Any, config: Any, files: Any) -> str:
     faq_json = _faq_schema(markdown, canonical_url)
     if faq_json:
         page.meta["seo_faq_json"] = faq_json
+
+    model_json = _model_schema(page.meta, page.meta["description"], canonical_url)
+    if model_json:
+        page.meta["seo_model_json"] = model_json
 
     return markdown

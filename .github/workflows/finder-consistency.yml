@@ -14,6 +14,7 @@ on:
       - 'scripts/apply_finder_capabilities.py'
       - 'scripts/build_report_card_scores.py'
       - 'scripts/build_purchase_fallbacks.py'
+      - 'scripts/build_model_pages.py'
       - 'scripts/check_finder_consistency.py'
       - 'scripts/prepare_site.py'
       - 'mkdocs.yml'
@@ -31,6 +32,7 @@ on:
       - 'scripts/apply_finder_capabilities.py'
       - 'scripts/build_report_card_scores.py'
       - 'scripts/build_purchase_fallbacks.py'
+      - 'scripts/build_model_pages.py'
       - 'scripts/check_finder_consistency.py'
       - 'scripts/prepare_site.py'
       - 'mkdocs.yml'
@@ -57,6 +59,12 @@ jobs:
           test -s .site-src/data/purchase-fallbacks.json
           test -s .site-src/data/purchase-sources.json
           test -s .site-src/data/price-observations.json
+      - name: Require canonical model pages and intent guides
+        run: |
+          test "$(find .site-src/models/catalog -maxdepth 1 -name 'gls-*.md' | wc -l)" -eq 144
+          test "$(find .site-src/guides -maxdepth 1 -name '*.md' ! -name 'index.md' | wc -l)" -eq 12
+          test -s .site-src/models/catalog/index.md
+          test -s .site-src/guides/index.md
       - name: Check Finder JavaScript syntax
         run: |
           node --check docs/javascripts/glasses-finder-v3.js
