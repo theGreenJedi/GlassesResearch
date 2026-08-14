@@ -1,46 +1,37 @@
-# Ray-Ban Meta — populated research fields
+# Meta / Ray-Ban smart eyewear — populated research record
 
-This record applies the GlassesResearch evidence frameworks to Ray-Ban Meta smart glasses.
+This record combines the existing Ray-Ban Meta evidence framework with generation-specific findings from `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`. Claims remain model-scoped rather than inherited automatically across the family.
 
-## Evidence base
+## Ray-Ban Stories — GLS-0001
+Meta's first-generation Ray-Ban capture/audio product: dual-camera capture, open-ear audio, microphones, voice control, prescription/lens options and Facebook View phone workflow. It was not a meaningful visual-AI platform despite having cameras.
 
-Primary evidence includes the Ray-Ban Meta operational FAQ (`EV-0027`) and Meta's multimodal AI system documentation (`EV-0028`).
+Report-card anchor: H6.5 W9.0 VAI1.5 S6.0 O2.5 OC3.0 CI6.0 Hack2.5 HUD N/A; Value not yet graded.
 
-## Product architecture
+## Ray-Ban Meta — current screen-free AI class
+Primary evidence includes the operational FAQ (`EV-0027`) and Meta multimodal AI documentation (`EV-0028`). Bluetooth/Wi-Fi, companion-app setup, media transfer and firmware-update behavior are documented. Camera and voice input participate in multimodal AI processing, so Visual AI is strongly applicable. There is no wearer-facing HUD on the screen-free class.
 
-Ray-Ban Meta is a camera/audio AI-glasses platform with no wearer-facing HUD. Display/HUD is therefore N/A for the current product class.
+Core capture/audio functions must be separated from service-backed multimodal AI when assessing Cloud Independence. Current evidence does not establish a public owner SDK, custom AI endpoints, firmware replacement, unrestricted sensor access or a replaceable assistant stack.
 
-## Connectivity and software dependence
+## Meta Ray-Ban Display — GLS-0004
+Meta documents a full-color high-resolution in-lens display, cameras, microphones, speakers, Meta AI, six-hour mixed-use battery, charging case and Meta Neural Band EMG control.
 
-Vendor documentation establishes Bluetooth/Wi-Fi use, companion-application setup, media transfer and firmware-update behavior. The product is tightly integrated with Meta's companion software ecosystem.
+Report-card anchor: H9.0 W8.0 VAI9.0 S9.0 O2.5 OC3.0 CI4.0 Hack2.5 HUD8.5; Value not yet graded.
 
-## Visual AI
+The display materially changes the product class: visual AI can return wearer-facing information rather than only audio/phone output. This does not imply broad platform openness; the hardware/software stack remains tightly integrated and proprietary in the current evidence set.
 
-Meta's system documentation establishes that camera and voice inputs can participate in multimodal AI processing. This is strong evidence that visual input is part of the AI stack, not merely a separate camera feature.
+## Gen 2 prescription-first optical variants
+### Ray-Ban Meta Blayzer Optics — GLS-0005
+Meta documents near-universal prescription support, overextension hinges, interchangeable nose pads, optician-adjustable temple tips and Gen 2 Meta AI hardware/software.
 
-## Cloud independence
+Anchor: H8.5 W9.5 VAI9.0 S9.0 O2.5 OC3.0 CI4.0 Hack2.5 HUD N/A; Value not yet graded.
 
-Core capture/audio functions and AI functions should be separated. Multimodal AI relies on Meta's service stack, while some local device functions may continue without cloud access. Exact survival behavior should be measured function by function.
+### Ray-Ban Meta Scriber Optics — GLS-0006
+Rounder optical variant sharing the documented Gen 2 electronics and prescription-first fit system.
 
-## Owner control
+Anchor: H8.5 W9.5 VAI9.0 S9.0 O2.5 OC3.0 CI4.0 Hack2.5 HUD N/A; Value not yet graded.
 
-Current evidence supports normal user controls and first-party software operation, but does not establish a public owner SDK, custom AI endpoints, firmware replacement or unrestricted sensor access. Those fields remain unknown or unsupported unless additional evidence is found.
+## Family-level ownership interpretation
+Meta/Ray-Ban leads in mainstream eyewear integration and multimodal consumer AI but remains weak on public developer access, assistant replacement and system-level owner control. Service dependence is most important for AI features; local capture/audio behavior should be tested separately. Display-equipped and screen-free models must not share HUD scores.
 
-## Privacy and institutional research
-
-Because the product combines cameras, microphones and cloud AI in an ordinary-eyewear form factor, recording indicators, media handling, permissions, service retention and institutional restrictions are especially important fields.
-
-## Report-card implications
-
-- Hardware: strong consumer integration evidence, with exact scores kept model-specific.
-- Wearability: ordinary-eyewear form factor is a positive structural signal; fit requires evidence.
-- HUD: N/A.
-- Visual AI: strongly applicable and supported by primary documentation.
-- Software: strong first-party ecosystem support.
-- Openness: limited evidence for public developer access compared with SDK-oriented competitors.
-- Owner Control: custom endpoints/local AI/firmware access are not established.
-- Cloud Independence: AI layer is service-dependent; local non-AI functions require separate testing.
-
-## Unknowns retained
-
-Repairability, low-level protocol access, firmware replacement, bootloader state, independent AI endpoint selection, exact offline function survival, battery aging and long-term post-service survivability remain open.
+## Research priorities
+Populate exact regional/version differences, prescription-service workflows, repairability, battery aging, offline survival, account dependence, media-export behavior, recording indicators/privacy controls, current value and post-service survivability for each generation.
