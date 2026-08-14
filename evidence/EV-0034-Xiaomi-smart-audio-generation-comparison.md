@@ -1,0 +1,41 @@
+# EV-0034 — Xiaomi smart-audio generation comparison
+
+Verified: 2026-08-13
+Source class: vendor primary
+Confidence: confirmed for the compared products; historical launch-year mapping remains provisional
+Scope: Xiaomi Smart Audio Glasses and current Mijia Smart Audio Glasses
+
+## Sources
+- Xiaomi Global — Xiaomi Smart Audio Glasses: https://www.mi.com/global/product/xiaomi-smart-audio-glasses/
+- Xiaomi Global — Mijia Smart Audio Glasses: https://www.mi.com/global/product/mijia-smart-audio-glasses/
+- Xiaomi regional specification page: https://www.mi.com/my/product/mijia-smart-audio-glasses/specs/
+- Xiaomi support FAQ — Xiaomi Smart Audio Glasses lens replacement: https://www.mi.com/global/support/faq/details/KA-512814/
+
+## Finding
+Xiaomi itself presents **Xiaomi Smart Audio Glasses** and **Mijia Smart Audio Glasses** as distinct generations/products in a direct comparison table. The current Mijia product is not safe to use as evidence for an earlier catalog row merely because the words “Mijia Smart Audio Glasses” also appeared historically.
+
+Xiaomi's comparison documents these differences:
+
+| Field | Xiaomi Smart Audio Glasses | Mijia Smart Audio Glasses |
+|---|---|---|
+| Weight without lenses | 33.4 g | from 27.6 g |
+| Microphones | 2 | 4 |
+| Continuous playback | 10 h | 13 h |
+| Continuous calls | 7 h | 9 h |
+| Charging time | ~2 h | ~1 h |
+| Bluetooth | 5.2 | 5.4 |
+| Dual-device connection | not supported | supported |
+| Fast Pair | not supported | Google Fast Pair |
+| Recording | not listed | surrounding sound / meetings / calls / media scenarios |
+| Hinge | first-generation flexible hinge | new-generation piano-wire hinge |
+| Quick-release | first generation | second generation |
+
+Current Mijia specifications additionally document 114 mAh ×2 batteries, USB-C charging, IP54, Android 10/iOS 14 minimums and three frame styles. Xiaomi describes the current Mijia product as using a second-generation quick-release/hinge system relative to Xiaomi Smart Audio Glasses.
+
+Xiaomi support explicitly says the optical version of Xiaomi Smart Audio Glasses can have lenses replaced at a professional optical store. This is direct evidence of independent optical-service compatibility for that product; it should not automatically be transferred to every Mijia variant without confirmation.
+
+## Catalog implication
+`GLS-0022 — Mijia Smart Audio Glasses — 2022` is likely an identity conflation. Do **not** replace it automatically with the specifications of the current Mijia product. Resolve the 2022 acquisition evidence/model name first. The current vendor evidence proves at least two distinct audio-glasses generations and provides a clean technical boundary between them.
+
+## Next action
+Recover the 2022 China launch/store/manual/regulatory evidence to determine whether GLS-0022 should be renamed to an earlier Mijia domestic product, Xiaomi Smart Audio Glasses, or another exact model identity. Until then, keep the catalog-era mapping provisional.
