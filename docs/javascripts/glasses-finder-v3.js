@@ -22,10 +22,12 @@
     fetchJson('../../data/finder-schema.json', 'Finder schema'),
     fetchJson('../../data/purchase-sources.json', 'Purchase sources'),
     fetchJson('../../data/finder-capabilities.json', 'Finder capability matrix'),
-  ]).then(([bundle, deviceBundle, finderSchema, purchaseBundle, capabilityBundle]) => {
+    fetchJson('../../data/report-card-scores.json', 'Report Card scores'),
+  ]).then(([bundle, deviceBundle, finderSchema, purchaseBundle, capabilityBundle, reportCardBundle]) => {
     const researched = new Map((bundle.records || []).map((r) => [r.id, r]));
     const purchaseById = new Map((purchaseBundle.records || []).map((r) => [r.id, r.sources || []]));
     const capabilityById = new Map((capabilityBundle.records || []).map((r) => [r.id, r.capabilities || {}]));
+    const reportCardById = new Map((reportCardBundle.records || []).map((r) => [r.id, r.scores || {}]));
     const devices = deviceBundle.records || [];
     if (!devices.length) throw new Error('No canonical device records are available.');
 
@@ -39,7 +41,13 @@
       if (!fields.release_year) fields.release_year = sourced(device.era, sources);
       if (!fields.status) fields.status = sourced(device.state, sources);
       if (!fields.category) fields.category = sourced(device.type, sources);
-      return { ...device, fields, purchaseSources: purchaseById.get(device.id) || [], capabilityFacts: capabilityById.get(device.id) || {} };
+      return {
+        ...device,
+        fields,
+        purchaseSources: purchaseById.get(device.id) || [],
+        capabilityFacts: capabilityById.get(device.id) || {},
+        reportCardScores: reportCardById.get(device.id) || {},
+      };
     });
 
     const fieldMap = new Map();
@@ -88,16 +96,23 @@
       return false;
     };
 
-    const filterMatches = (r, filter) => {
+    const filterState = (r, filter) => {
       if (filter.type === 'capability') {
         const canonical = capabilityState(r, filter.field);
-        if (canonical === 'yes') return true;
-        if (canonical === 'no' || canonical === 'na') return false;
+        if (canonical === 'yes') return 'yes';
+        if (canonical === 'no') return 'no';
+        if (canonical === 'na') return 'na';
         const fn = aliases[filter.field];
-        return fn ? Boolean(fn(r)) : yes(r, filter.field);
+        return (fn ? Boolean(fn(r)) : yes(r, filter.field)) ? 'inferred-yes' : 'unknown';
       }
-      return purchaseMatches(r, filter);
+      if (filter.type === 'report_score') {
+        const score = r.reportCardScores?.[filter.field];
+        if (typeof score !== 'number') return score === 'na' ? 'na' : 'unknown';
+        return score >= filter.min ? 'yes' : 'no';
+      }
+      return purchaseMatches(r, filter) ? 'yes' : 'no';
     };
+    const filterMatches = (r, filter) => ['yes', 'inferred-yes'].includes(filterState(r, filter));
 
     const params = new URLSearchParams(location.search);
     const initialCompare = ['left','right','third','fourth'].map((k) => params.get(k)).filter((id) => records.some((r) => r.id === id));
@@ -113,11 +128,18 @@
         <div class="finder-options">${(group.filters || []).map((f) => `<label><input type="checkbox" value="${esc(f.id)}"> <span>${esc(f.label)}</span><small data-count-for="${esc(f.id)}"></small></label>`).join('')}</div>
       </fieldset>`).join('');
 
+    const advancedMarkup = (reportCardBundle.dimensions || []).map((dimension) => `
+      <div class="finder-score-filter">
+        <label><input type="checkbox" data-score-enable="${esc(dimension.id)}"> ${esc(dimension.label)} ≥ <output data-score-output="${esc(dimension.id)}">7</output></label>
+        <input type="range" data-score-range="${esc(dimension.id)}" min="0" max="10" step="0.5" value="7" disabled aria-label="Minimum ${esc(dimension.label)} score">
+      </div>`).join('');
+
     host.innerHTML = `
       <section class="discovery-panel glasses-finder">
         <div class="discovery-heading"><h2>Find glasses that do what you need</h2><p>Pick requirements like prescription lenses, video recording, audio, AI, display, or where you are willing to buy. Results narrow immediately. Open the research only after you have a useful shortlist.</p></div>
         <label class="discovery-search">Search by model or brand <input id="discovery-query" type="search" placeholder="e.g. Solos, Meta, Rokid, Vuzix"></label>
         <div class="finder-groups">${filterMarkup}</div>
+        <details class="finder-advanced"><summary>Advanced filters · Report Card scores</summary><p>Enable only the dimensions you care about. Models without a documented score do not pass an enabled minimum.</p><div class="finder-score-grid">${advancedMarkup}</div></details>
         <div class="discovery-actions"><label><input id="exact-only" type="checkbox" checked> Exact matches only</label><button type="button" id="clear-filters">Clear filters</button></div>
         <p id="discovery-status" class="comparison-status"></p>
         <div id="discovery-results" class="discovery-results"></div>
@@ -136,6 +158,8 @@
     const queryInput = host.querySelector('#discovery-query');
     const exactOnly = host.querySelector('#exact-only');
     const boxes = [...host.querySelectorAll('.finder-options input[type=checkbox]')];
+    const scoreEnables = [...host.querySelectorAll('[data-score-enable]')];
+    const scoreRanges = [...host.querySelectorAll('[data-score-range]')];
     const results = host.querySelector('#discovery-results');
     const status = host.querySelector('#discovery-status');
     const compareSelects = [...host.querySelectorAll('.comparison-controls select[data-slot]')];
@@ -146,6 +170,7 @@
 
     const filters = new Map();
     (finderSchema.groups || []).forEach((g) => (g.filters || []).forEach((f) => filters.set(f.id, { ...f, group: g.label })));
+    const reportLabels = new Map((reportCardBundle.dimensions || []).map((d) => [d.id, d.label]));
     const optionHtml = records.map((r) => `<option value="${esc(r.id)}">${esc(r.maker)} ${esc(r.model)}</option>`).join('');
     compareSelects.forEach((s, i) => { s.innerHTML = `${i >= 2 ? '<option value="">— none —</option>' : ''}${optionHtml}`; s.value = initialCompare[i] || ''; });
 
@@ -162,7 +187,15 @@
       return `<a class="purchase-link" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(label)}${esc(condition)}</a>`;
     }).join(' ');
     const searchable = (r) => [r.id,r.maker,r.model,r.type,r.state].join(' ').toLowerCase();
-    const chosen = () => boxes.filter((b) => b.checked).map((b) => filters.get(b.value));
+    const chosen = () => {
+      const basic = boxes.filter((b) => b.checked).map((b) => filters.get(b.value));
+      const advanced = scoreEnables.filter((b) => b.checked).map((b) => {
+        const id = b.dataset.scoreEnable;
+        const range = host.querySelector(`[data-score-range="${CSS.escape(id)}"]`);
+        return { id: `score_${id}`, type: 'report_score', field: id, min: Number(range?.value || 0), label: `${reportLabels.get(id) || id} ≥ ${range?.value || 0}`, group: 'Report Card' };
+      });
+      return [...basic, ...advanced];
+    };
 
     const addToCompare = (id) => {
       const empty = compareSelects.find((s, i) => i >= 2 && !s.value);
@@ -172,7 +205,7 @@
 
     const compute = (selected, query) => records.map((record) => {
       if (query && !searchable(record).includes(query)) return null;
-      const checks = selected.map((f) => ({ filter: f, ok: filterMatches(record, f) }));
+      const checks = selected.map((f) => ({ filter: f, state: filterState(record, f), ok: filterMatches(record, f) }));
       const matched = checks.filter((x) => x.ok).length;
       return { record, checks, matched, total: selected.length };
     }).filter(Boolean);
@@ -196,12 +229,14 @@
       status.textContent = selected.length ? `${scored.length} candidates match your current view · ${selected.length} requirements selected` : `${scored.length} glasses in the catalog · choose a requirement to narrow the field`;
       results.innerHTML = scored.slice(0,80).map(({record,checks,matched,total}) => {
         const hits = checks.filter((x) => x.ok).map((x) => x.filter.label);
-        const misses = checks.filter((x) => !x.ok).map((x) => x.filter.label);
+        const knownMisses = checks.filter((x) => !x.ok && ['no','na'].includes(x.state)).map((x) => x.filter.label);
+        const unknownMisses = checks.filter((x) => !x.ok && !['no','na'].includes(x.state)).map((x) => x.filter.label);
         const buys = purchaseLinks(record);
         return `<article class="discovery-card ${total && matched===total?'exact-match':''}">
           <div class="discovery-card-head"><div><h3>${esc(record.maker)} ${esc(record.model)}</h3><div class="discovery-meta">${esc(record.id)} · ${esc(record.era||'')} · ${esc(record.state||'')}</div></div><div class="match-score"><strong>${total?`${matched}/${total} matched`:esc(record.type||'Smart glasses')}</strong></div></div>
           ${hits.length?`<div class="match-hits">✓ ${esc(hits.join(' · '))}</div>`:''}
-          ${misses.length?`<div class="match-misses">Missing or not documented: ${esc(misses.join(' · '))}</div>`:''}
+          ${knownMisses.length?`<div class="match-misses">Does not match: ${esc(knownMisses.join(' · '))}</div>`:''}
+          ${unknownMisses.length?`<div class="match-misses">Not documented: ${esc(unknownMisses.join(' · '))}</div>`:''}
           ${buys?`<div class="purchase-sources"><strong>Buy / find one:</strong> ${buys}</div>`:'<div class="purchase-sources purchase-unknown">Purchase links not populated yet.</div>'}
           <div class="discovery-card-actions"><button type="button" data-compare-id="${esc(record.id)}">Add to comparison</button><span>${researchLinks(record)}</span></div>
         </article>`;
@@ -222,8 +257,26 @@
       comparisonResults.innerHTML=html||'<p>No documented comparison fields are available for this selection.</p>'; comparisonStatus.textContent=`${selected.map((r)=>`${r.maker} ${r.model}`).join(' vs ')} · ${records.length} models in Finder`;
     };
 
-    queryInput.addEventListener('input', renderDiscovery); boxes.forEach((b)=>b.addEventListener('change',renderDiscovery)); exactOnly.addEventListener('change',renderDiscovery);
-    host.querySelector('#clear-filters').addEventListener('click',()=>{queryInput.value='';boxes.forEach((b)=>{b.checked=false;});exactOnly.checked=true;renderDiscovery();});
+    queryInput.addEventListener('input', renderDiscovery);
+    boxes.forEach((b)=>b.addEventListener('change',renderDiscovery));
+    exactOnly.addEventListener('change',renderDiscovery);
+    scoreEnables.forEach((b) => b.addEventListener('change', () => {
+      const id = b.dataset.scoreEnable;
+      const range = host.querySelector(`[data-score-range="${CSS.escape(id)}"]`);
+      if (range) range.disabled = !b.checked;
+      renderDiscovery();
+    }));
+    scoreRanges.forEach((range) => range.addEventListener('input', () => {
+      const id = range.dataset.scoreRange;
+      const output = host.querySelector(`[data-score-output="${CSS.escape(id)}"]`);
+      if (output) output.value = range.value;
+      renderDiscovery();
+    }));
+    host.querySelector('#clear-filters').addEventListener('click',()=>{
+      queryInput.value=''; boxes.forEach((b)=>{b.checked=false;}); exactOnly.checked=true;
+      scoreEnables.forEach((b)=>{b.checked=false;}); scoreRanges.forEach((r)=>{r.value='7';r.disabled=true;});
+      host.querySelectorAll('[data-score-output]').forEach((o)=>{o.value='7';}); renderDiscovery();
+    });
     compareSelects.forEach((s)=>s.addEventListener('change',renderComparison)); differencesOnly.addEventListener('change',renderComparison);
     host.querySelector('#comparison-copy-link').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);comparisonStatus.textContent='Comparison link copied.';}catch{comparisonStatus.textContent='Copy failed; copy the browser URL instead.';}});
     host.querySelector('#comparison-print').addEventListener('click',()=>window.print());
