@@ -23,11 +23,17 @@
     fetchJson('../../data/purchase-sources.json', 'Purchase sources'),
     fetchJson('../../data/finder-capabilities.json', 'Finder capability matrix'),
     fetchJson('../../data/report-card-scores.json', 'Report Card scores'),
-  ]).then(([bundle, deviceBundle, finderSchema, purchaseBundle, capabilityBundle, reportCardBundle]) => {
+    fetchJson('../../data/price-observations.json', 'Price observations'),
+  ]).then(([bundle, deviceBundle, finderSchema, purchaseBundle, capabilityBundle, reportCardBundle, priceBundle]) => {
     const researched = new Map((bundle.records || []).map((r) => [r.id, r]));
     const purchaseById = new Map((purchaseBundle.records || []).map((r) => [r.id, r.sources || []]));
     const capabilityById = new Map((capabilityBundle.records || []).map((r) => [r.id, r.capabilities || {}]));
     const reportCardById = new Map((reportCardBundle.records || []).map((r) => [r.id, r.scores || {}]));
+    const priceById = new Map();
+    (priceBundle.records || []).forEach((observation) => {
+      if (!priceById.has(observation.id)) priceById.set(observation.id, []);
+      priceById.get(observation.id).push(observation);
+    });
     const devices = deviceBundle.records || [];
     if (!devices.length) throw new Error('No canonical device records are available.');
 
@@ -47,6 +53,7 @@
         purchaseSources: purchaseById.get(device.id) || [],
         capabilityFacts: capabilityById.get(device.id) || {},
         reportCardScores: reportCardById.get(device.id) || {},
+        priceObservations: priceById.get(device.id) || [],
       };
     });
 
@@ -110,6 +117,11 @@
         if (typeof score !== 'number') return score === 'na' ? 'na' : 'unknown';
         return score >= filter.min ? 'yes' : 'no';
       }
+      if (filter.type === 'price_max') {
+        const prices = (r.priceObservations || []).map((p) => Number(p.price_usd)).filter(Number.isFinite);
+        if (!prices.length) return 'unknown';
+        return Math.min(...prices) <= Number(filter.value) ? 'yes' : 'no';
+      }
       return purchaseMatches(r, filter) ? 'yes' : 'no';
     };
     const filterMatches = (r, filter) => ['yes', 'inferred-yes'].includes(filterState(r, filter));
@@ -136,7 +148,7 @@
 
     host.innerHTML = `
       <section class="discovery-panel glasses-finder">
-        <div class="discovery-heading"><h2>Find glasses that do what you need</h2><p>Pick requirements like prescription lenses, video recording, audio, AI, display, or where you are willing to buy. Results narrow immediately. Open the research only after you have a useful shortlist.</p></div>
+        <div class="discovery-heading"><h2>Find glasses that do what you need</h2><p>Pick requirements like prescription lenses, video recording, audio, AI, display, price, or where you are willing to buy. Results narrow immediately. Open the research only after you have a useful shortlist.</p></div>
         <label class="discovery-search">Search by model or brand <input id="discovery-query" type="search" placeholder="e.g. Solos, Meta, Rokid, Vuzix"></label>
         <div class="finder-groups">${filterMarkup}</div>
         <details class="finder-advanced"><summary>Advanced filters · Report Card scores</summary><p>Enable only the dimensions you care about. Models without a documented score do not pass an enabled minimum.</p><div class="finder-score-grid">${advancedMarkup}</div></details>
@@ -186,6 +198,14 @@
       const condition = s.condition && s.condition !== 'new' ? ` · ${s.condition}` : '';
       return `<a class="purchase-link" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(label)}${esc(condition)}</a>`;
     }).join(' ');
+    const lowestPrice = (r) => (r.priceObservations || []).filter((p) => Number.isFinite(Number(p.price_usd))).sort((a,b) => Number(a.price_usd)-Number(b.price_usd))[0] || null;
+    const priceLine = (r) => {
+      const p = lowestPrice(r);
+      if (!p) return '';
+      const date = p.observed_at ? ` · checked ${p.observed_at}` : '';
+      const condition = p.condition ? ` · ${p.condition}` : '';
+      return `<div class="finder-price"><strong>$${Number(p.price_usd).toLocaleString(undefined,{minimumFractionDigits:Number(p.price_usd)%1?2:0,maximumFractionDigits:2})}</strong>${esc(condition)}${esc(date)}</div>`;
+    };
     const searchable = (r) => [r.id,r.maker,r.model,r.type,r.state].join(' ').toLowerCase();
     const chosen = () => {
       const basic = boxes.filter((b) => b.checked).map((b) => filters.get(b.value));
@@ -234,6 +254,7 @@
         const buys = purchaseLinks(record);
         return `<article class="discovery-card ${total && matched===total?'exact-match':''}">
           <div class="discovery-card-head"><div><h3>${esc(record.maker)} ${esc(record.model)}</h3><div class="discovery-meta">${esc(record.id)} · ${esc(record.era||'')} · ${esc(record.state||'')}</div></div><div class="match-score"><strong>${total?`${matched}/${total} matched`:esc(record.type||'Smart glasses')}</strong></div></div>
+          ${priceLine(record)}
           ${hits.length?`<div class="match-hits">✓ ${esc(hits.join(' · '))}</div>`:''}
           ${knownMisses.length?`<div class="match-misses">Does not match: ${esc(knownMisses.join(' · '))}</div>`:''}
           ${unknownMisses.length?`<div class="match-misses">Not documented: ${esc(unknownMisses.join(' · '))}</div>`:''}
@@ -250,7 +271,7 @@
       const selected = [...new Set(compareSelects.map((s)=>s.value).filter(Boolean))].map((id)=>records.find((r)=>r.id===id)).filter(Boolean);
       if (selected.length < 2) { comparisonResults.innerHTML='<p>Select at least two different devices.</p>'; comparisonStatus.textContent=''; comparisonSelectedResearch.innerHTML=''; return; }
       const url = new URL(location.href); ['left','right','third','fourth'].forEach((k,i)=>selected[i]?url.searchParams.set(k,selected[i].id):url.searchParams.delete(k)); history.replaceState({},'',url);
-      comparisonSelectedResearch.innerHTML = selected.map((r)=>`<div class="comparison-selected-device"><strong>${esc(r.id)} · ${esc(r.maker)} ${esc(r.model)}</strong><div>${researchLinks(r)}</div>${purchaseLinks(r)?`<div class="purchase-sources"><strong>Buy / find:</strong> ${purchaseLinks(r)}</div>`:''}</div>`).join('');
+      comparisonSelectedResearch.innerHTML = selected.map((r)=>`<div class="comparison-selected-device"><strong>${esc(r.id)} · ${esc(r.maker)} ${esc(r.model)}</strong>${priceLine(r)}<div>${researchLinks(r)}</div>${purchaseLinks(r)?`<div class="purchase-sources"><strong>Buy / find:</strong> ${purchaseLinks(r)}</div>`:''}</div>`).join('');
       const grouped = new Map();
       for (const [fieldId,meta] of fieldMap.entries()) { const entries=selected.map((r)=>r.fields[fieldId]); if(!entries.some(known)) continue; const vals=entries.map((e)=>known(e)?formatValue(e.value):'—'); if(differencesOnly.checked&&new Set(vals).size<=1) continue; if(!grouped.has(meta.groupLabel)) grouped.set(meta.groupLabel,[]); grouped.get(meta.groupLabel).push([fieldId,meta]); }
       let html=''; for(const [groupLabel,fields] of grouped.entries()){ html+=`<h3>${esc(groupLabel)}</h3><div class="comparison-table-wrap"><table><thead><tr><th>Field</th>${selected.map((r)=>`<th>${esc(r.maker)} ${esc(r.model)}</th>`).join('')}</tr></thead><tbody>`; for(const [fieldId,meta] of fields){const entries=selected.map((r)=>r.fields[fieldId]); const vals=entries.map((e)=>known(e)?formatValue(e.value):'—'); html+=`<tr class="${new Set(vals).size>1?'comparison-different':''}"><th>${esc(meta.label)}</th>${entries.map((e,i)=>`<td>${esc(vals[i])}${known(e)?sourceLinks(e):''}</td>`).join('')}</tr>`;} html+='</tbody></table></div>'; }
