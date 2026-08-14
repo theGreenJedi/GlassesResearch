@@ -182,7 +182,7 @@ Unknown fields are deliberately preserved as unknown. To supply primary document
 '''
 
 
-def guide_page(spec: tuple, candidates: list[dict], score_map: dict, cap_map: dict) -> str:
+def guide_page(spec: tuple, candidates: list[dict], score_map: dict, cap_map: dict, catalog_count: int) -> str:
     slug, title, criteria, heading, caveat = spec
     decisions, faqs = GUIDE_DETAILS[slug]
     crit = " and ".join(f"**{field.replace('_', ' ')} = {value}**" for field, value in criteria)
@@ -226,11 +226,11 @@ This guide answers a specific search question using the GlassesResearch verified
 
 ## Method
 
-The shortlist is generated from the same 144-record canonical catalog used by the Finder. A model is included only when every criterion above is explicitly `yes` in the capability matrix. Report Card availability is shown as research depth, not converted into a universal product ranking.
+The shortlist is generated from the same {catalog_count}-record canonical catalog used by the Finder. A model is included only when every criterion above is explicitly `yes` in the capability matrix. Report Card availability is shown as research depth, not converted into a universal product ranking.
 
 {faq_text}
 
-See [all buying and use-case guides](/guides/) or [browse all 144 canonical models](/models/catalog/).
+See [all buying and use-case guides](/guides/) or [browse all {catalog_count} canonical models](/models/catalog/).
 '''
 
 
@@ -272,9 +272,9 @@ def main() -> None:
         chosen = [r for r in records if all(cap_map[r["id"]]["capabilities"].get(field, {}).get("value") == value for field, value in criteria)]
         chosen.sort(key=lambda r: (r["state"] == "current", score_average(score_map.get(r["id"])), r["era"]), reverse=True)
         chosen = chosen[:18]
-        (guide_dir / f"{slug}.md").write_text(guide_page(spec, chosen, score_map, cap_map), encoding="utf-8")
+        (guide_dir / f"{slug}.md").write_text(guide_page(spec, chosen, score_map, cap_map, len(records)), encoding="utf-8")
         guide_links.append(f"- [{title}](/guides/{slug}/) — {len(chosen)} models meet the verified criteria")
-    (guide_dir / "index.md").write_text("# Smart-glasses buying and use-case guides\n\nThese guides translate the verified 144-model database into focused shortlists. Unknown facts never qualify a model, and Report Card coverage is shown separately from capability evidence.\n\n" + "\n".join(guide_links) + "\n\n[Browse all canonical model pages](/models/catalog/) · [Open the Glasses Finder](/docs/COMPARISON_ENGINE/)\n", encoding="utf-8")
+    (guide_dir / "index.md").write_text(f"# Smart-glasses buying and use-case guides\n\nThese guides translate the verified {len(records)}-model database into focused shortlists. Unknown facts never qualify a model, and Report Card coverage is shown separately from capability evidence.\n\n" + "\n".join(guide_links) + "\n\n[Browse all canonical model pages](/models/catalog/) · [Open the Glasses Finder](/docs/COMPARISON_ENGINE/)\n", encoding="utf-8")
     print(f"Generated {len(records)} canonical model pages and {len(GUIDES)} search-intent guides")
 
 

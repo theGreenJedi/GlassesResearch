@@ -1,8 +1,8 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-08-12  
+**Edition:** 2026-08-14  
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 144 distinct purchasable models or explicitly marketed product generations
+**Count:** 145 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -96,6 +96,7 @@ Status is last checked on the edition date and can vary by country. Frame colors
 | GLS-0066 | RayNeo | X3 Pro | 2025 | current | standalone AR | retail/developer | primary; [registry](CATALOG.md); [source](https://www.rayneo.com/) |
 | GLS-0067 | Snap | Spectacles (2021, 4th Gen) | 2021 | developer | standalone AR | creator program | primary; [source](https://www.spectacles.com/) |
 | GLS-0068 | Snap | Spectacles (2024, 5th Gen) | 2024 | developer | standalone AR | paid developer program | primary; [registry](CATALOG.md); [source](https://www.spectacles.com/) |
+| GLS-0146 | Snap | SPECS | 2026 | preorder | standalone AR | preorder | primary; [news](../docs/news/RELEASE_TRACKER.md); [source](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses) |
 
 ## Tethered personal-display and XR glasses
 

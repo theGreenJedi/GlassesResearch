@@ -63,11 +63,12 @@ jobs:
           test -s .site-src/data/price-observations.json
       - name: Require canonical model pages and intent guides
         run: |
-          test "$(find .site-src/models/catalog -maxdepth 1 -name 'gls-*.md' | wc -l)" -eq 144
+          expected="$(python -c "import json; print(json.load(open('.site-src/data/devices.json'))['record_count'])")"
+          test "$(find .site-src/models/catalog -maxdepth 1 -name 'gls-*.md' | wc -l)" -eq "$expected"
           test "$(find .site-src/guides -maxdepth 1 -name '*.md' ! -name 'index.md' | wc -l)" -eq 12
           test -s .site-src/models/catalog/index.md
           test -s .site-src/guides/index.md
-          test "$(grep -Rho '/models/catalog/gls-[0-9]\{4\}/' .site-src/models/PROFILES*.md .site-src/docs/report-cards/*.md | wc -l)" -ge 144
+          test "$(grep -Rho '/models/catalog/gls-[0-9]\{4\}/' .site-src/models/PROFILES*.md .site-src/docs/report-cards/*.md | wc -l)" -ge "$expected"
       - name: Check Finder JavaScript syntax
         run: |
           node --check docs/javascripts/glasses-finder-v3.js
