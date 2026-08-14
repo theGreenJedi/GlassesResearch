@@ -79,79 +79,48 @@ Each numeric dimension can eventually be constrained by minimum score. N/A remai
 
 ## Candidate cards
 
-Each surviving candidate should show only the information needed to decide whether to investigate further:
+Each surviving candidate shows only the information needed to decide whether to investigate further:
 
 - maker + exact model / GLS ID
 - current / discontinued status
 - matched shopper requirements
 - important unknowns
-- current price or price range when verified
 - purchase-source buttons
-- Compare checkbox/button
-- View research
+- Add to comparison
+- research/report-card/lineage links
 
-The card should not reproduce the full model article.
+The card does not reproduce the full model article.
 
 ## Purchase-source model
 
-Purchase links are separate from research/resource links. Each purchase record should preserve:
+Purchase links are separate from research/resource links. Each purchase record preserves exact GLS model ID, retailer/marketplace, source type, condition, URL, exact-model confidence, observed price when practical, availability state, last-verified date, and useful notes.
 
-- exact GLS model ID
-- retailer / marketplace
-- source type: manufacturer, Amazon, major retailer, optical retailer, specialist retailer, secondary market
-- condition: new, refurbished, used, collector/parts where applicable
-- URL
-- exact-model confidence
-- observed price when practical
-- availability state
-- last-verified date
-- notes such as region, carrier, prescription bundle or accessory requirement
-
-For secondary markets, prefer durable exact-model marketplace searches when individual listings are ephemeral. A current-listing layer may highlight individual listings, but permanent model data should not depend on a listing that will disappear after sale.
+For secondary markets, prefer durable exact-model marketplace searches when individual listings are ephemeral. A current-listing layer may highlight individual listings, but permanent model data should not depend on a listing that disappears after sale.
 
 ## Evidence semantics
 
-Filters must operate from canonical structured data, not prose scraping.
+Filters operate from canonical structured data, not prose scraping. Boolean-like capability fields use yes / no / unknown / N/A semantics. Unknown never silently becomes no. Exact-match filtering excludes unknowns where a requirement cannot be established; near-match mode surfaces the gap instead.
 
-Boolean-like capability fields need at least four states:
+## Implementation status
 
-- yes
-- no
-- unknown
-- N/A
+### Implemented in Finder v3
+- grouped shopper facets for Vision, Camera, Audio, Display, AI/utility, Ownership/connectivity, and Buying;
+- live per-filter candidate counts;
+- exact-match mode plus near-match mode;
+- full canonical model discovery pool;
+- compact candidate cards;
+- purchase-source buttons on candidate cards;
+- manufacturer, Amazon and secondary-market seed routes;
+- purchase links retained when candidates move into comparison;
+- two-to-four-device comparison, differences-only, shareable URL and print behavior;
+- mobile-responsive grouped facets.
 
-Unknown must never silently become no. Exact-match filtering may exclude unknowns while near-match mode can surface them as `not yet documented`.
-
-## Data architecture
-
-The Finder should consume the same canonical GLS records used by comparison and research layers. New structured domains should include:
-
-1. `capabilities` — shopper-facing yes/no/unknown/N/A fields.
-2. `specs` — weight, camera resolution, storage, RAM, FoV, battery and other range-filterable values.
-3. `report_card` — normalized 0–10 dimensions plus N/A/unknown.
-4. `purchase_sources` — current and secondary-market acquisition routes.
-5. `public` — profile, report card, lineage, evidence and resource links.
-
-This avoids maintaining a second hand-curated shopping database.
-
-## Result behavior
-
-Example:
-
-**Prescription lenses ✓ + Records video ✓ + Used okay ✓ + Under $250 ✓**
-
-The result count should narrow immediately as filters change. Exact matches appear first. Near matches may remain visible only when the user allows them, with the missing or unknown requirement clearly identified.
-
-Selected candidates flow directly into the existing side-by-side comparison engine.
-
-## Mission phases
-
-1. Define canonical Finder/filter and purchase-source schema.
-2. Map existing structured comparison fields into shopper capabilities.
-3. Populate purchase-source records model-by-model, including secondary markets for discontinued hardware.
-4. Upgrade the discovery UI into grouped faceted controls with live candidate counts.
-5. Add price/range and Report Card advanced filters.
-6. Add candidate purchase buttons and Compare Selected workflow.
-7. Add freshness auditing for prices, availability and dead purchase links.
+### Next waves
+1. Expand purchase-source coverage from the seed set to all 145 models where legitimate acquisition routes exist.
+2. Normalize capability fields so fewer filters rely on compatibility aliases/heuristics.
+3. Add price fields and price-band/range controls.
+4. Add Report Card minimum-score controls under Advanced filters.
+5. Add selection checkboxes and one `Compare selected` action for shortlist workflows.
+6. Add price/availability freshness auditing and dead-link checks.
 
 The walls of research remain available downstream. The Finder exists so a shopper can reach the right wall first.
