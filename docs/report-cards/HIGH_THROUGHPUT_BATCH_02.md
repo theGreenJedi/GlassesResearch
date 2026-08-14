@@ -248,9 +248,9 @@ Primary sources: https://www.inmoxr.com/pages/about-us ; https://support.inmoxr.
 
 Primary sources: https://www.inmoxr.com/products/inmo-air3-ar-glasses-all-in-one-full-color-waveguide ; https://www.inmoxr.com/pages/inmo-air3 ; https://support.inmoxr.com/air3/
 
-## Investigation-heavy queue additions
+## Identity-correction outcome
 
-- **GLS-0032 — Lucyd Lyte 2.1:** current Lucyd/SEC first-party history does not cleanly substantiate this as a separately marketed hardware generation. Run Wayback recovery before grading.
-- **GLS-0033 — Lucyd Lyte 2.3:** same problem; do not transfer 2.0 scores merely from naming similarity. Run Wayback recovery before grading.
+- **GLS-0032 — retired `Lucyd Lyte 2.1` label:** company and SEC history do not substantiate a distinct commercial generation. The row is removed from the canonical model count and retained in the correction ledger only.
+- **GLS-0033 — Lucyd Lyte XL:** corrected to the evidence-backed October 2023 successor to Lyte 2.0. Exact XL documentation is still required before grading; no 2.0 score is inherited.
 
-These two catalog identities should be verified or corrected rather than silently inherited from the Lyte 2.0 lineage.
+This correction reduces the canonical count from 145 to 144 and preserves the mistaken labels in `models/CATALOG_CORRECTIONS.md`.
