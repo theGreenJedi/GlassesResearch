@@ -1,6 +1,6 @@
 # Meta / Ray-Ban / Oakley smart eyewear — populated research record
 
-Primary evidence includes Ray-Ban Meta operations (`EV-0027`), Meta multimodal system documentation (`EV-0028`), `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, `docs/report-cards/BATCH_03.md`, and `EV-0040`. Claims remain model-scoped.
+Primary evidence includes Ray-Ban Meta operations (`EV-0027`), Meta multimodal system documentation (`EV-0028`), `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, `docs/report-cards/BATCH_03.md`, `EV-0040`, and [EV-0045](../../evidence/EV-0045-Meta-RayBan-Oakley-service-survival.md). Claims remain model-scoped.
 
 ## Ray-Ban Stories — GLS-0001
 First-generation capture/audio product: dual-camera capture, open-ear audio, microphones, voice control, prescription/lens options and Facebook View workflow. Camera capture existed, but meaningful scene-understanding AI did not.
@@ -40,6 +40,12 @@ Specialized high-intensity sport design: wraparound frame, IP67, up to nine hour
 Anchor: H9.0 W7.5 VAI9.0 S8.5 O3.5 OC4.5 CI4.0 Hack3.0 HUD N/A; Value not yet graded.
 
 External fitness integrations increase workflow choice but do not amount to a public device SDK or replaceable system stack. Do not automatically transfer the HSTN battery/service finding to Vanguard unless Oakley documents the same repair policy for that model.
+
+## Service-survival boundary
+
+Current first-party documentation creates a sharper split than a single cloud-independence score can show. Passive optics survive; local flash preserves captures before import; ordinary Bluetooth phone-audio value may remain after setup; and Gen 2 offers narrow downloaded translation packs. Against that, first-run operation requires a compatible phone, wireless internet, Meta account and Meta AI app. Media import, settings, updates, reassignment and defining multimodal AI remain ecosystem-controlled. See EV-0045 for the function table and required offline/sign-out tests.
+
+The defensible label is **dependent with limited local residue**. Do not claim that local storage alone makes capture independently recoverable: first-party import is routed through Meta AI, and no standard mass-storage or documented independent importer is established.
 
 ## Family ownership pattern
 The Meta family scores exceptionally high in mainstream wearability, camera hardware, visual AI and polished software while consistently scoring low in Openness, system Owner Control, Cloud Independence and Hackability. Local capture/audio and service-backed AI must be separated function by function.
