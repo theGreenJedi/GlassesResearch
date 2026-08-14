@@ -1,6 +1,6 @@
 # Meta / Ray-Ban / Oakley smart eyewear — populated research record
 
-Primary evidence includes Ray-Ban Meta operations (`EV-0027`), Meta multimodal system documentation (`EV-0028`), `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, and `docs/report-cards/BATCH_03.md`. Claims remain model-scoped.
+Primary evidence includes Ray-Ban Meta operations (`EV-0027`), Meta multimodal system documentation (`EV-0028`), `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, `docs/report-cards/BATCH_03.md`, and `EV-0040`. Claims remain model-scoped.
 
 ## Ray-Ban Stories — GLS-0001
 First-generation capture/audio product: dual-camera capture, open-ear audio, microphones, voice control, prescription/lens options and Facebook View workflow. Camera capture existed, but meaningful scene-understanding AI did not.
@@ -31,14 +31,21 @@ This is a materially different display-equipped class; screen-free Meta scores m
 Performance-oriented screen-free AI eyewear with up to eight hours typical battery, 3K video, integrated Meta AI, open-ear speakers, IPX4 and prescription-compatible configurations.
 Anchor: H8.5 W8.5 VAI9.0 S8.5 O3.5 OC4.0 CI4.0 Hack3.0 HUD N/A; Value not yet graded.
 
+Oakley's own FAQ states that the embedded battery in both the glasses and charging case **cannot be replaced**, and that the glasses battery cannot be removed by the end user. Oakley does sell replacement lenses and prescription configurations, so optical consumables are materially more serviceable than the electronics.
+
+Oakley also documents that normal use requires a compatible smartphone, wireless internet access, a valid Meta account and the Meta AI app, with software features subject to change or withdrawal. This is direct service/account-dependence evidence rather than inference from the brand ecosystem.
+
 ### Oakley Meta Vanguard — GLS-0008
 Specialized high-intensity sport design: wraparound frame, IP67, up to nine hours battery, centered 12 MP 122° camera with up to 3K video, five wind-optimized microphones, louder open-ear speakers and Garmin/Strava/health-platform integrations.
 Anchor: H9.0 W7.5 VAI9.0 S8.5 O3.5 OC4.5 CI4.0 Hack3.0 HUD N/A; Value not yet graded.
 
-External fitness integrations increase workflow choice but do not amount to a public device SDK or replaceable system stack.
+External fitness integrations increase workflow choice but do not amount to a public device SDK or replaceable system stack. Do not automatically transfer the HSTN battery/service finding to Vanguard unless Oakley documents the same repair policy for that model.
 
 ## Family ownership pattern
 The Meta family scores exceptionally high in mainstream wearability, camera hardware, visual AI and polished software while consistently scoring low in Openness, system Owner Control, Cloud Independence and Hackability. Local capture/audio and service-backed AI must be separated function by function.
 
+## Repairability interpretation
+The HSTN is a useful example of why repairability must be decomposed: replaceable lenses/prescription options coexist with a manufacturer-declared non-replaceable battery and tightly integrated electronics. Optical serviceability must not inflate battery/electronic repair scores.
+
 ## Research priorities
-Current value, exact regional/version rollout, prescription service workflows, repairability, battery aging, account/offline survival, media export, recording/privacy indicators, developer access evolution and post-service survivability.
+Current value, exact regional/version rollout, prescription service workflows by model, battery aging, warranty/depot repair, account/offline survival, media export, recording/privacy indicators, developer access evolution and post-service survivability.
