@@ -195,7 +195,7 @@
       if (p.lineage) links.push(`<a href="${esc(p.lineage)}">Lineage</a>`);
       return links.join(' · ');
     };
-    const purchaseLinks = (r) => (r.purchaseSources || []).filter((s) => s.url).map((s) => {
+    const purchaseLinks = (r) => (r.purchaseSources || []).filter((s) => s.url && s.availability !== 'unavailable').map((s) => {
       const label = s.label || s.retailer || s.source_type.replaceAll('_',' ');
       const condition = s.condition && s.condition !== 'new' ? ` · ${s.condition}` : '';
       return `<a class="purchase-link" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(label)}${esc(condition)}</a>`;
