@@ -9,7 +9,7 @@ Each identifiable component should receive a durable record rather than only app
 | Main processor / SoC | Unknown | Unknown | Core processing | Unknown | Pending teardown | — | Unknown | — |
 | Bluetooth controller | Unknown | Unknown | BLE / wireless | Unknown | BLE behavior observed | — | Low | — |
 | Camera module | Unknown | Unknown | Image capture | Frame front | Device observation | — | Moderate | — |
-| Battery | Unknown | Unknown | Power | Temple, presumed | Pending teardown | — | Low | Measure before replacement |
+| Battery | Unknown | Unknown | Power | Temple, presumed | Repeated commercial specification: 270 mAh Li-poly; [EV-0043](../../../evidence/EV-0043-W610-battery-evidence-and-verification.md) | — | Moderate for family claim; unverified on owned unit | Telemetry appears accessible; cell identity, dimensions and replacement path unknown |
 | Speaker(s) | Unknown | Unknown | Audio output | Temple area | Device observation | — | Moderate | — |
 | Microphone(s) | Unknown | Unknown | Audio input | Unknown | Functional observation | — | Moderate | — |
 | Charging / PMIC | Unknown | Unknown | Charging and power | Unknown | Pending teardown | — | Unknown | — |

@@ -26,8 +26,8 @@ This is the living investigation queue. GitHub issues may later mirror individua
 
 ## Priority 3 — Hardware and firmware
 
-- Measure physical dimensions and battery characteristics
-- Perform a documented nondestructive inspection
+- Execute the [EV-0043 battery protocol](../../evidence/EV-0043-W610-battery-evidence-and-verification.md): verify installed capacity hypothesis, workload runtime, charge behavior, telemetry and low-power cutoffs
+- Identify a battery service path, cell dimensions/markings, protection circuit and connector/weld method only after the nondestructive gate is satisfied
 - Identify components, test pads, debug interfaces, and storage
 - Acquire and hash firmware or update packages when lawful
 - Develop recovery and restore procedures before risky modification

@@ -15,7 +15,7 @@ This section records the physical device baseline, controls, indicators, optics,
 - A power-button press produces an audible tone and a brief LED flash.
 - The device includes a camera, microphones, speakers, and magnetic charging contacts.
 - The frame is tight on the owner’s larger head, and the supplied tinted lenses do not provide premium sunglass optics.
-- Retail and OEM sources repeatedly claim an 8 MP camera and approximately 270 mAh battery, but these remain commercial claims until measured or confirmed from device internals.
+- Retail and OEM sources repeatedly claim an 8 MP camera and 270 mAh lithium-polymer battery. [EV-0043](../../../evidence/EV-0043-W610-battery-evidence-and-verification.md) records the claim cluster, HeyCyan low-power thresholds, community battery telemetry surface and a non-destructive test protocol; capacity and replaceability remain unverified on the owned unit.
 
 ## Component leads
 
@@ -27,7 +27,7 @@ Neither component is yet confirmed from PCB markings on the received unit.
 ## Priority measurements
 
 1. Photograph and measure both temples, controls, charging contacts, lens opening, and hinge geometry.
-2. Record mass and battery charge/discharge behavior.
+2. Execute the EV-0043 battery protocol: record charge input, fixed-workload discharge, telemetry, the 15%/10% feature cutoffs, temperature and repeatability.
 3. Preserve package, manual, QR-code, and label markings.
 4. Identify non-destructive access points before any teardown.
 5. Create a lens-shape template suitable for prescription-lens research.
