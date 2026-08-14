@@ -124,9 +124,9 @@ Primary source: https://developer.xreal.com/?lang=en
 | Owner Control | 8.5 | Owner controls the host/content stack and gains on-glasses spatial processing. |
 | Cloud Independence | 9.5 | Core value is entirely local. |
 | Hackability | 5.5 | Strong host freedom, limited low-level firmware access. |
-| Value | Not yet graded | Requires current price check against newer One-series models. |
+| Value | 8.0 | At the checked $399 US sale price, dedicated spatial silicon and cloud-independent host freedom provide strong catalog-wide capability per dollar; score falls to 7.5 at the $499 regular price. |
 
-Primary source: https://tutorials.xreal.com/docs/glasses/one-series/spec/
+Primary sources: https://tutorials.xreal.com/docs/glasses/one-series/spec/ ; https://us.shop.xreal.com/collections/xreal-one-series ; EV-0053
 
 ## GLS-0075 — XREAL One Pro
 
