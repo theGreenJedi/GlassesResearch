@@ -29,7 +29,7 @@ The documented protocol/API expansion makes V2 one of the catalog's strongest of
 ## Prescription / optical serviceability
 Solos accepts externally issued prescriptions and supports custom lens production, including alternate lens indices and finishes. The modular architecture separates front frames from smart temples on supported collections, making optical replacement structurally more practical than on sealed integrated-display eyewear.
 
-Current vendor-primary evidence confirms **vendor/specialist prescription service** and external-prescription compatibility. It does not yet prove that every supported Solos model can be serviced by any ordinary independent optical shop. Ordinary-independent service therefore remains provisional pending an explicit vendor statement or repeatable independent fitting evidence.
+Current vendor-primary evidence now confirms **ordinary independent optical service** for supported frames: Solos explicitly says owners may take the glasses to any optical eyewear shop because the lenses are swappable. Vendor-produced prescription lenses remain an optional route. Exact frame compatibility and parts availability are still generation-specific; see [EV-0049](../../evidence/EV-0049-optical-serviceability-wave-six.md).
 
 ## Modular electronics / repairability
 Solos explicitly documents detachable frame fronts and temples. AirGo V troubleshooting guidance instructs owners to detach the left temple to stop the camera module drawing standby power, confirming that temple removal is an owner-supported physical operation rather than teardown-only access.
