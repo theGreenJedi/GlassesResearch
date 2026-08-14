@@ -82,9 +82,9 @@ This batch follows the report-card-first pipeline: investigate, reconcile the ca
 | Owner Control | 8.0 | B+ | Owners/developers can deploy purpose-built Android applications rather than being confined to a single companion-app workflow. |
 | Cloud Independence | 8.5 | A- | Core Android applications and device functions can operate locally without inherent dependence on a vendor AI cloud. |
 | Hackability | 8.0 | B+ | Supported Android/SDK access gives a strong experimentation surface, though firmware-level openness is below Brilliant Labs devices. |
-| Value | Not yet graded | — | Current enterprise/retail pricing and use-case value need a contemporaneous comparison. |
+| Value | 6.5 | C+ | At the checked $799.99 US price, Android owner control, standalone sensing and owner-installable prescription optics are meaningful; aging display hardware and enterprise pricing prevent a stronger catalog-wide value score. |
 
-**Primary sources:** Vuzix Blade 2 product page; Vuzix Blade developer overview and SDK documentation.
+**Primary sources:** Vuzix Blade 2 product page; Vuzix Blade developer overview and SDK documentation; EV-0053 current-value evidence.
 
 ## Batch result
 
