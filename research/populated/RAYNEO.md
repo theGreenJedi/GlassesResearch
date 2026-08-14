@@ -1,6 +1,6 @@
 # RayNeo — populated research record
 
-Primary evidence includes the public X3 Pro source project (`EV-0023`), `docs/report-cards/BATCH_02.md`, Air display-lineage research in `HIGH_THROUGHPUT_BATCH_04.md`, [EV-0048](../../evidence/EV-0048-RayNeo-X3-Pro-service-survival.md), and [EV-0050](../../evidence/EV-0050-mainstream-optical-serviceability-wave-seven.md).
+Primary evidence includes the public X3 Pro source project (`EV-0023`), `docs/report-cards/BATCH_02.md`, Air display-lineage research in `HIGH_THROUGHPUT_BATCH_04.md`, [EV-0048](../../evidence/EV-0048-RayNeo-X3-Pro-service-survival.md), [EV-0050](../../evidence/EV-0050-mainstream-optical-serviceability-wave-seven.md), and [EV-0052](../../evidence/EV-0052-current-value-wave-one.md).
 
 ## Family boundary
 RayNeo spans host-driven Air display glasses and integrated AR/AI products such as X3 Pro. They share a brand ecosystem but must not inherit camera, AI, SDK or service-dependence properties across classes.
@@ -8,7 +8,7 @@ RayNeo spans host-driven Air display glasses and integrated AR/AI products such 
 ## RayNeo X3 Pro — GLS-0066
 Current binocular full-color AI+AR platform. RayNeo documents binocular full-color MicroLED diffractive waveguides, 640×480, 30° FOV, 3500-nit average/6000-nit peak brightness, Snapdragon AR1 Gen 1, 4 GB RAM, 32 GB storage, 245 mAh battery, RGB + spatial cameras, 12 MP Sony IMX681 imaging, RayNeo AIOS, Gemini Live, prescription support and Creator Mode.
 
-Report-card anchor: H9.0 W7.5 VAI9.0 S8.5 O7.5 OC7.0 CI5.5 Hack7.0 HUD9.0; Value not yet graded.
+Report-card anchor: H9.0 W7.5 VAI9.0 S8.5 O7.5 OC7.0 CI5.5 Hack7.0 HUD9.0; **V6.5 at $1,299 (US, checked 2026-08-14).**
 
 The public source project and Creator Mode are concrete evidence of a supported application-development surface. They do not establish open firmware/OS, unrestricted bootloader access or benchmark-level hardware ownership. Gemini and other flagship connected services lower Cloud Independence relative to the Air display branch.
 
