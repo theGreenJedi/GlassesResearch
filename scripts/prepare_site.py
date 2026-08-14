@@ -131,6 +131,17 @@ def main() -> None:
         check=True,
     )
 
+    report_card_output = DEST / "data" / "report-card-scores.json"
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "build_report_card_scores.py"),
+            "--input-dir", str(ROOT / "docs" / "report-cards"),
+            "--output", str(report_card_output),
+        ],
+        check=True,
+    )
+
     print(f"Staged documentation at {DEST}")
 
 
