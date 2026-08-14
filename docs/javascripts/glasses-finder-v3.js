@@ -21,9 +21,11 @@
     fetchJson('../../data/devices.json', 'Device data'),
     fetchJson('../../data/finder-schema.json', 'Finder schema'),
     fetchJson('../../data/purchase-sources.json', 'Purchase sources'),
-  ]).then(([bundle, deviceBundle, finderSchema, purchaseBundle]) => {
+    fetchJson('../../data/finder-capabilities.json', 'Finder capability matrix'),
+  ]).then(([bundle, deviceBundle, finderSchema, purchaseBundle, capabilityBundle]) => {
     const researched = new Map((bundle.records || []).map((r) => [r.id, r]));
     const purchaseById = new Map((purchaseBundle.records || []).map((r) => [r.id, r.sources || []]));
+    const capabilityById = new Map((capabilityBundle.records || []).map((r) => [r.id, r.capabilities || {}]));
     const devices = deviceBundle.records || [];
     if (!devices.length) throw new Error('No canonical device records are available.');
 
@@ -37,7 +39,7 @@
       if (!fields.release_year) fields.release_year = sourced(device.era, sources);
       if (!fields.status) fields.status = sourced(device.state, sources);
       if (!fields.category) fields.category = sourced(device.type, sources);
-      return { ...device, fields, purchaseSources: purchaseById.get(device.id) || [] };
+      return { ...device, fields, purchaseSources: purchaseById.get(device.id) || [], capabilityFacts: capabilityById.get(device.id) || {} };
     });
 
     const fieldMap = new Map();
@@ -76,6 +78,7 @@
       self_hostable: (r) => yes(r, 'self_hostable') || /self-host|self host|local cloud/.test(`${textOf(r, 'cloud_independence')} ${textOf(r, 'owner_control')}`),
     };
 
+    const capabilityState = (r, field) => r.capabilityFacts?.[field]?.value || 'unknown';
     const currentAvailable = (r) => /current|shipping|available|preorder/i.test(`${r.state} ${textOf(r, 'status')}`) && !/legacy|discontinued|end of life|eol/i.test(`${r.state} ${textOf(r, 'status')}`);
     const purchaseMatches = (r, filter) => {
       const sources = r.purchaseSources || [];
@@ -87,6 +90,9 @@
 
     const filterMatches = (r, filter) => {
       if (filter.type === 'capability') {
+        const canonical = capabilityState(r, filter.field);
+        if (canonical === 'yes') return true;
+        if (canonical === 'no' || canonical === 'na') return false;
         const fn = aliases[filter.field];
         return fn ? Boolean(fn(r)) : yes(r, filter.field);
       }
