@@ -156,7 +156,7 @@ Primary source: https://www.mi.com/global/discover/article?id=5172
 | Dimension | Score | Judgment |
 |---|---:|---|
 | Hardware | 8.5 | Strong modern camera/audio/connectivity package with meaningful local storage. |
-| Wearability | 8.5 | Roughly 49–52 g with lens and conventional eyewear design. |
+| Wearability | 8.5 | Roughly 49–52 g with lens and conventional eyewear design; EV-0042 confirms professional prescription-lens replacement from -8D to +4D. |
 | Visual AI | 9.0 | Camera-driven translation, recall, note and assistant workflows are first-class features. |
 | Software | 8.5 | Rich VIVE AI feature set and multi-model access, though still a vendor-defined experience. |
 | Display / HUD | N/A | No display. |
@@ -166,7 +166,7 @@ Primary source: https://www.mi.com/global/discover/article?id=5172
 | Hackability | 3.5 | Standard connectivity is accessible, but deeper development paths are not documented. |
 | Value | Not yet graded | Regional/current price comparison remains pending. |
 
-Primary sources: https://www.vive.com/us/product/vive-eagle/spec/ ; https://www.vive.com/us/newsroom/2025-08-14/ ; [service-survival evidence](../../evidence/EV-0041-HTC-VIVE-Eagle-service-survival.md)
+Primary sources: https://www.vive.com/us/product/vive-eagle/spec/ ; https://www.vive.com/us/newsroom/2025-08-14/ ; [service-survival evidence](../../evidence/EV-0041-HTC-VIVE-Eagle-service-survival.md) ; [optical-serviceability evidence](../../evidence/EV-0042-HTC-VIVE-Eagle-optical-serviceability.md)
 
 ## GLS-0026 — Solos AirGo 2
 
