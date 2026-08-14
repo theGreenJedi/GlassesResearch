@@ -1,6 +1,6 @@
 # RealWear — populated research record
 
-Source basis: `docs/report-cards/HIGH_THROUGHPUT_BATCH_05.md`, RealWear support/firmware sources, and `EV-0037`.
+Source basis: `docs/report-cards/HIGH_THROUGHPUT_BATCH_05.md`, RealWear support/firmware sources, `EV-0037`, and `EV-0041`.
 
 ## Lineage
 HMT-1 / HMT-1Z1 → Navigator 500 → Navigator 520 / Navigator Z1. The lineage is rugged, voice-first monocular enterprise wear rather than ordinary-eyeglass form.
@@ -24,8 +24,15 @@ Release 12 documentation distinguishes local from cloud dictation. English, Germ
 
 Navigator 500/520/Z1 remain supported through at least December 2030 according to RealWear's current firmware-support policy, with an Android-16-based OS planned for currently supported devices in 2026.
 
+## Battery and replacement modules
+Navigator 500/520/Z1 use a field-swappable external battery architecture. RealWear documents hot swapping on the Navigator line and currently sells a dedicated Navigator 520 spare battery pack and standalone charger. The 520 specification lists a 2600 mAh / 3.8 V lithium-polymer pack, and the battery can be exchanged in the field within seconds without a normal full shutdown when the documented hot-swap procedure is followed.
+
+Battery-service class for Navigator 500/520/Z1: **owner-removable / field-replaceable module**, with current first-party replacement-part availability confirmed for Navigator 520.
+
+Do not transfer this backward across the lineage: RealWear explicitly identifies HMT-1Z1 as having an internal, non-swappable battery; HMT-1/HMT-1Z1 power repairability remains a separate archival/service question.
+
 ## Ownership interpretation
-Android enterprise application deployment gives meaningful owner/application control and practical local operation. The platform remains proprietary, so public app deployment should not be confused with open firmware, schematics or unrestricted low-level access. HMT-1/HMT-1Z1 demonstrate that proprietary hardware can nevertheless retain useful local operation after vendor EOS.
+Android enterprise application deployment gives meaningful owner/application control and practical local operation. The platform remains proprietary, so public app deployment should not be confused with open firmware, schematics or unrestricted low-level access. HMT-1/HMT-1Z1 demonstrate that proprietary hardware can nevertheless retain useful local operation after vendor EOS; Navigator adds unusually strong field-serviceable power hardware.
 
 ## Evidence gaps
-Current pricing/value, exact SDK/API exposure by generation, account/MDM dependence, repairability, battery/parts availability, prescription/PPE fit, firmware access and long-term third-party-app survival remain open.
+Current value by generation, exact SDK/API exposure, account/MDM dependence, non-battery module/parts availability, prescription/PPE fit, firmware access and long-term third-party-app survival remain open.
