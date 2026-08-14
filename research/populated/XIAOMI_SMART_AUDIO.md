@@ -11,15 +11,19 @@ Until 2022 China-specific launch/store/manual evidence is recovered, the exact m
 Xiaomi documents open-ear audio, wear detection, Bluetooth 5.2, two microphones, first-generation quick-release/flexible-hinge architecture, about 10 hours continuous playback and seven hours calls. Weight without lenses is 33.4 g in Xiaomi's comparison.
 
 ### Optical serviceability
-Xiaomi support explicitly recommends professional optical-store replacement for the optical version. This is direct evidence that lens replacement is not restricted to Xiaomi service. Exact prescription ranges/progressive support remain unresolved.
+Xiaomi support explicitly recommends professional optical-store replacement for the optical version. This supports **ordinary optical service** for that version. Exact prescription ranges/progressive support remain unresolved.
 
 ## Current Mijia Smart Audio Glasses
 Xiaomi documents a materially revised generation with three frame styles, weight from 27.6 g without lenses, four microphones, Bluetooth 5.4, dual-device support, Google Fast Pair, built-in recording workflows, newer hinge/quick-release architecture, 114 mAh ×2 batteries, ~13 hours playback, ~9 hours calls, ~1 hour full charge and IP54.
 
-This product therefore must not silently donate its specifications to the earlier GLS-0022 row.
+Xiaomi's support FAQ says current Mijia Smart Audio Glasses can accommodate the same lens thicknesses as ordinary glasses and directs users to an offline optical shop for fitting. This supports **ordinary optical service** for the documented current Mijia models, while exact prescription ranges and progressive support remain unresolved.
+
+This current product must not silently donate its specifications to the earlier GLS-0022 row.
 
 ## Ownership interpretation
 Both products are fundamentally Bluetooth audio eyewear rather than camera/HUD systems. Core playback/calls are structurally local. Current Mijia adds a Xiaomi Glasses application for recordings, notifications, gestures and device management, so those added functions have a stronger app dependence than basic Bluetooth audio.
+
+Independent optical-shop fitting is a strong owner-control and long-term-survivability signal for both exact products documented here.
 
 No public firmware, hardware SDK or low-level owner-development path is established by this evidence pass.
 
@@ -30,5 +34,5 @@ Do not assign a new GLS-0022 score until the 2022 identity is resolved. The curr
 1. Recover 2022 mainland-China launch/store/manual/regulatory records and exact model number.
 2. Determine whether GLS-0022 should be renamed or split.
 3. Establish launch year/regions for Xiaomi Smart Audio Glasses and current Mijia Smart Audio Glasses.
-4. Record current Mijia optical-serviceability and exact prescription support separately.
+4. Establish exact correction ranges/progressive support.
 5. Test app-independent operation and firmware/update behavior.
