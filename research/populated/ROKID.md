@@ -1,47 +1,26 @@
-# Rokid — populated research fields
+# Rokid — populated research record
 
-This record applies the GlassesResearch evidence frameworks to the current Rokid glasses ecosystem.
+Primary evidence includes the official Rokid terminal SDK (`EV-0024`), Rokid Glasses specifications (`EV-0025`) and display-lineage research from `docs/report-cards/HIGH_THROUGHPUT_BATCH_04.md`.
 
-## Evidence base
+## Family boundary
+Rokid spans host-driven display glasses such as Air/Max and more integrated camera/AI glasses. Do not transfer camera, onboard-processing or SDK claims automatically between those classes.
 
-Primary evidence includes the official Rokid terminal SDK (`EV-0024`) and official Rokid Glasses specifications (`EV-0025`).
+## Rokid Air / Max display lineage
+These models follow the host-driven wearable-display architecture: Visual AI is N/A for the glasses themselves where no wearer-view camera system is established, while Cloud Independence and practical Owner Control are high because standard host compute drives content locally.
 
-## Product architecture
+- **Rokid Air — GLS-0092:** H7.0 W7.0 VAI N/A S6.0 O4.0 OC8.0 CI9.0 Hack4.5 HUD7.5 V7.0.
+- **Rokid Max — GLS-0093:** H8.0 W7.5 VAI N/A S6.5 O4.0 OC8.5 CI9.5 Hack4.5 HUD8.5 V8.0.
+- **Rokid Max 2 — GLS-0094:** H8.5 W8.0 VAI N/A S6.5 O4.0 OC8.5 CI9.5 Hack4.5 HUD9.0 V8.0.
 
-Rokid's current glasses combine visual display capability with camera, audio and onboard processing. They belong to the display/AI-glasses class rather than simple audio-camera glasses. Exact functions remain model-specific.
+The Max generations improve display quality, refresh behavior, ergonomics and ecosystem integration without becoming open standalone AR computers.
 
-## Developer access
+## Integrated Rokid Glasses branch
+Official specifications establish display, camera, audio and onboard processing for current Rokid Glasses, making HUD and Visual AI applicable there. The terminal SDK is strong evidence of supported application-layer development and API access.
 
-Rokid publishes an official terminal SDK and development documentation. This is strong evidence of supported application-layer development and API access.
+SDK availability does not establish firmware replacement, unrestricted system privileges, bootloader access or universal sensor exposure. On-device processing is a positive independence signal, but exact offline AI and account/service dependence remain function-specific.
 
-SDK availability does not establish firmware replacement, unrestricted system privileges, bootloader access or all-sensor access.
+## Ownership interpretation
+Rokid's display-only products are highly service-independent as host peripherals. Integrated AI products have a richer developer surface but potentially more vendor/service dependence. The family therefore needs model-class-specific Cloud Independence rather than one brand-wide score.
 
-## Display and sensing
-
-Display/HUD is applicable and central. Official specifications also establish camera and other hardware capability, but access must be distinguished between hardware presence, first-party use and developer exposure.
-
-## Visual AI
-
-The combination of camera and AI-oriented product functions makes Visual AI applicable, but scoring should rely on documented behavior such as scene understanding, translation or other perception-assisted functions rather than device category alone.
-
-## Cloud independence
-
-On-device processing capability is a positive structural signal, but exact offline AI, account dependence and service requirements remain to be tested function by function.
-
-## Owner control
-
-Official SDK support provides meaningful owner/developer access at the application layer. Low-level control remains unproven where documentation does not establish it.
-
-## Report-card implications
-
-- Hardware: display, camera, audio and onboard processing are documented strengths.
-- HUD: applicable.
-- Visual AI: applicable, with exact features requiring model-specific evidence.
-- Openness: official SDK is a strong positive signal.
-- Owner Control: meaningful at application level, unknown at firmware/system level.
-- Cloud Independence: potentially moderate-to-strong depending on local execution, but not yet verified function by function.
-- Hackability: supported APIs improve practical hackability without proving unrestricted platform control.
-
-## Unknowns retained
-
-Bootloader state, firmware replacement, full sensor exposure, repairability, prescription serviceability, battery aging, exact offline AI behavior, region-specific restrictions and long-term service survival remain open.
+## Research priorities
+Exact host compatibility and optics for Air/Max, current pricing, terminal-SDK model coverage, local-vs-cloud AI, bootloader/firmware access, prescription serviceability, repairability, battery aging and regional restrictions.
