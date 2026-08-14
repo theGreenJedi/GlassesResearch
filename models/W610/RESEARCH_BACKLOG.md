@@ -18,7 +18,13 @@ This is the living investigation queue. GitHub issues may later mirror individua
 
 ## Priority 2 — BLE and software
 
-- Enumerate services and characteristics
+Community research is now preserved in [EV-0044](../../evidence/EV-0044-W610-community-protocol-and-owner-access.md). It maps a BLE-triggered, Wi-Fi Direct/local-HTTP media path but does not substitute for testing on the owned W610.
+
+- Enumerate services and characteristics on the owned unit
+- Reproduce transfer request `02 01 04`, address notification `08`, and reset request `02 01 0F`
+- Retrieve `/files/media.config` and one disposable test capture with the official app force-stopped
+- Determine authentication and privacy boundaries of the local HTTP surface
+- Separate vendor-AAR behavior from commands that can be independently reimplemented
 - Capture pairing and normal command sequences
 - Map commands, notifications, state, and error behavior
 - Determine what works without internet or the vendor app

@@ -14,7 +14,7 @@ This matrix tracks what smart-glasses manufacturers and projects officially expo
 | XREAL One family | Developer ecosystem exists | Host/platform dependent | Core capability | Accessory/model dependent | Host/model dependent | Spatial features model-dependent | Host/display pathways plus vendor tooling | Moderate | Basic display usefulness can be more durable than proprietary spatial features. |
 | Ray-Ban Meta / Meta AI glasses | Consumer platform; not a general-purpose hardware SDK comparable to open development platforms | Meta consumer ecosystem | No HUD in current camera/audio category | Consumer feature access | Consumer feature access | Limited third-party hardware surface | Vendor-controlled | Low | Strong consumer product, limited general hardware programmability. |
 | Even Realities G1/G2 | Public integrations exist; verify current third-party developer access | Mobile ecosystem | Supported | Generation-dependent | Generation-dependent | Product-dependent | Vendor-controlled unless documented otherwise | Moderate / uncertain | Do not infer broad developer access from consumer integrations alone. |
-| W610 / HeyCyan variants | No independently verified public SDK | Vendor app / research environment | No confirmed HUD on hands-on W610 | Camera advertised; programmable access not yet verified | Audio present; developer access not yet verified | Not yet verified | BLE observed; documented developer interface not yet verified | Unknown | Research target; openness should be scored only from demonstrated capability. |
+| W610 / HeyCyan variants | Community CyanBridge project plus bundled vendor SDK artifacts; not an independently open official SDK | Android is the active community path; iOS vendor-demo shell also present | No confirmed HUD on hands-on W610 | Community path exposes camera/media commands through vendor library; direct independent control pending | Audio/recording transfer documented; full direct developer access pending | Device information and battery surfaces claimed by community code; hands-on inventory pending | BLE control plus Wi-Fi Direct/local HTTP media transfer documented by community source | Moderate potential, unscored pending owned-unit validation | EV-0044 establishes a concrete owner-directed companion path, but it presently retains vendor-binary dependencies and uncertain licensing. |
 
 ## Access levels
 
@@ -34,3 +34,5 @@ For each SDK/API claim, record the exact device and hardware revision, SDK versi
 ## Report-card relationship
 
 This matrix supports the **Openness**, **Owner Control**, **Cloud Independence**, and **Hackability** grades. Grades should change when stronger documentation or hands-on evidence changes the underlying facts.
+
+For the W610 boundary, see [EV-0044 — community protocol and owner-access surface](../evidence/EV-0044-W610-community-protocol-and-owner-access.md).
