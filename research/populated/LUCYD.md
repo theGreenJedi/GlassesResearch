@@ -29,7 +29,7 @@ This is unusually strong owner-control evidence for consumer smart eyewear becau
 Standard Bluetooth interoperability gives practical owner choice across phone assistants and audio services, and core calls/audio do not require a Lucyd cloud. Ordinary-optician lens fitting strengthens long-term owner control and survivability. No public device SDK, firmware replacement or low-level sensor interface is established by the current evidence set.
 
 ## Catalog action
-Preserve the stable IDs and correction history, but reconcile unsupported `Lyte 2.1` / `Lyte 2.3` model labels against the primary company sequence. `Lyte XL` is presently the evidence-backed named successor to 2.0.
+Completed: `GLS-0032` is retired from the canonical model count and preserved in `models/CATALOG_CORRECTIONS.md`; `GLS-0033` now maps to the evidence-backed **Lyte XL**. The unsupported `Lyte 2.1` and `Lyte 2.3` labels remain searchable as correction history, not purchasable generations.
 
 ## Remaining evidence gaps
 Exact Lyte XL electronics/battery specifications, Bluetooth profiles/codecs, app/account requirements, firmware/update mechanism, battery aging/replacement, current value, later licensed-brand hardware differences and any generation after XL.

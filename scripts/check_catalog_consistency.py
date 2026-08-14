@@ -12,6 +12,8 @@ model_readme = (ROOT / "models/README.md").read_text(encoding="utf-8")
 root_readme = (ROOT / "README.md").read_text(encoding="utf-8")
 lineage_index = (ROOT / "lineages/README.md").read_text(encoding="utf-8")
 mkdocs = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
+corrections_path = ROOT / "models/CATALOG_CORRECTIONS.md"
+corrections = corrections_path.read_text(encoding="utf-8") if corrections_path.exists() else ""
 
 ids = re.findall(r"^\| (GLS-\d{4}) \|", the_list, flags=re.M)
 unique_ids = set(ids)
@@ -30,7 +32,8 @@ for label, text in (("models/README.md", model_readme), ("README.md", root_readm
             errors.append(f"{label} says {count} models; canonical ledger has {len(unique_ids)}")
 
 chapter_ids = set(re.findall(r"GLS-\d{4}", model_readme))
-missing_ids = sorted(chapter_ids - unique_ids)
+retired_ids = set(re.findall(r"\| (GLS-\d{4}) \|[^\n]*\*\*Retired", corrections))
+missing_ids = sorted(chapter_ids - unique_ids - retired_ids)
 if missing_ids:
     errors.append("Model research references IDs absent from The List: " + ", ".join(missing_ids))
 

@@ -11,7 +11,7 @@ Links are labeled by provenance. A family-level support/developer/community reso
 - **GLS-0095–0121:** enterprise, industrial, field-service and safety eyewear — [`model-links/GLS-0095-0121.md`](model-links/GLS-0095-0121.md).
 - **GLS-0122–0145:** 2026-08-12 lineage-reconciled admissions — [`model-links/GLS-0122-0145.md`](model-links/GLS-0122-0145.md).
 
-**All 145 canonical GLS model IDs now have a corresponding resource entry.** External-link richness remains an enrichment target; internal evidence/report-card links are retained where a historical external resource still needs archival recovery.
+**All 144 active canonical GLS model IDs, plus the retired GLS-0032 correction record, have a corresponding resource entry.** External-link richness remains an enrichment target; internal evidence/report-card links are retained where a historical external resource still needs archival recovery.
 
 ## Camera, audio, and everyday AI glasses — GLS-0001 through GLS-0042
 
@@ -38,8 +38,8 @@ Links are labeled by provenance. A family-level support/developer/community reso
 | GLS-0019 | Huawei / Gentle Monster Eyewear | **Official support:** https://consumer.huawei.com/en/support/ |
 | GLS-0020 | Huawei / Gentle Monster Eyewear II | **Official support:** https://consumer.huawei.com/en/support/ |
 | GLS-0021 | Huawei Eyewear 2 | **Official product:** https://consumer.huawei.com/en/wearables/huawei-eyewear-2/ · **Official support:** https://consumer.huawei.com/en/support/ · **Official service/modularity:** https://consumer.huawei.com/en/support/content/en-us15974344/ |
-| GLS-0022 | Xiaomi / Mijia Smart Audio Glasses | **Official current Mijia product:** https://www.mi.com/global/product/mijia-smart-audio-glasses/ · **Official comparison predecessor:** https://www.mi.com/global/product/xiaomi-smart-audio-glasses/ · **Research note:** exact 2022 row identity remains provisional; do not transfer current-generation specs automatically. |
-| GLS-0023 | Xiaomi Mijia Camera Glasses | **Official manufacturer root:** https://www.mi.com/ · **Research registry:** ../models/CATALOG.md · **Preservation status:** dedicated 2022 product/manual link still required. |
+| GLS-0022 | Xiaomi Mijia Smart Audio Glasses (1st generation) | **Secondary launch record:** https://www.gizmochina.com/2023/04/10/xiaomi-smart-audio-glasses-launch/ · **Official later-generation comparison:** https://www.mi.com/global/product/mijia-smart-audio-glasses/ · **Evidence note:** ../evidence/EV-0034-Xiaomi-smart-audio-generation-comparison.md |
+| GLS-0023 | Xiaomi Mijia Glasses Camera | **Official product:** https://www.mi.com/mjglass · **Research registry:** ../models/CATALOG.md · **Preservation status:** manual/regulatory record still required. |
 | GLS-0024 | Xiaomi AI Glasses | **Official product:** https://www.mi.com/prod/xiaomi-ai-glasses · **Official launch/specification:** https://www.mi.com/global/discover/article?id=5172 · **Prescription/instructions route:** https://www.mi.com/prod/xiaomi-ai-glasses/desc |
 | GLS-0025 | HTC VIVE Eagle | **Official product:** https://www.vive.com/us/product/vive-eagle/overview/ · **Official support:** https://www.vive.com/sea/support/vive-eagle/ · **Official launch:** https://www.vive.com/us/newsroom/2025-08-14/ |
 | GLS-0026 | Solos AirGo 2 | **Official product family:** https://solosglasses.com/ · **Official developer:** https://solosglasses.com/pages/developers |
@@ -48,8 +48,8 @@ Links are labeled by provenance. A family-level support/developer/community reso
 | GLS-0029 | Solos AirGo V2 | **Official product family:** https://solosglasses.com/ · **Official developer:** https://solosglasses.com/pages/developers |
 | GLS-0030 | Lucyd Lyte 1.0 | **Official manufacturer:** https://lucyd.co/ · **Research note:** corporate/SEC generation history retained in populated research. |
 | GLS-0031 | Lucyd Lyte 2.0 | **Official manufacturer:** https://lucyd.co/ · **Research note:** corporate/SEC generation history retained in populated research. |
-| GLS-0032 | Lucyd Lyte 2.1 | **Catalog-correction status:** no separate primary hardware-generation evidence established; see `research/populated/LUCYD.md`. |
-| GLS-0033 | Lucyd Lyte 2.3 | **Catalog-correction status:** no separate primary hardware-generation evidence established; see `research/populated/LUCYD.md`. |
+| GLS-0032 | Retired Lucyd `Lyte 2.1` record | **Catalog-correction status:** unsupported as a distinct commercial generation; preserved only in `../models/CATALOG_CORRECTIONS.md`. |
+| GLS-0033 | Lucyd Lyte XL | **Official launch:** https://lucyd.co/blogs/blog/innovative-eyewear-inc-launches-the-lyte-xl-smart-eyewear-collection · **SEC confirmation:** https://www.sec.gov/Archives/edgar/data/1808377/000182912624003302/innovative_10q.htm · **Evidence note:** ../evidence/EV-0035-Lucyd-Lyte-generation-history.md |
 | GLS-0034 | Fauna Audio Glasses | **Official manufacturer/support root:** https://fauna.com/ |
 | GLS-0035 | Vue Lite | **Official manufacturer:** https://www.vueglasses.com/ |
 | GLS-0036 | Vue Pro | **Official manufacturer:** https://www.vueglasses.com/ |

@@ -1,8 +1,8 @@
 # EV-0034 — Xiaomi smart-audio generation comparison
 
 Verified: 2026-08-13
-Source class: vendor primary
-Confidence: confirmed for the compared products; historical launch-year mapping remains provisional
+Source class: vendor primary + contemporaneous secondary launch record
+Confidence: confirmed product separation; high-confidence April 2023 first-generation launch mapping
 Scope: Xiaomi Smart Audio Glasses and current Mijia Smart Audio Glasses
 
 ## Sources
@@ -11,6 +11,7 @@ Scope: Xiaomi Smart Audio Glasses and current Mijia Smart Audio Glasses
 - Xiaomi regional specification page: https://www.mi.com/my/product/mijia-smart-audio-glasses/specs/
 - Xiaomi support FAQ — Xiaomi Smart Audio Glasses lens replacement: https://www.mi.com/global/support/faq/details/KA-512814/
 - Xiaomi support FAQ — Mijia Smart Audio Glasses: https://www.mi.com/uk/support/faq/details/KA-652551/
+- Contemporaneous April 2023 launch report: https://www.gizmochina.com/2023/04/10/xiaomi-smart-audio-glasses-launch/
 
 ## Finding
 Xiaomi itself presents **Xiaomi Smart Audio Glasses** and **Mijia Smart Audio Glasses** as distinct generations/products in a direct comparison table. The current Mijia product is not safe to use as evidence for an earlier catalog row merely because the words “Mijia Smart Audio Glasses” also appeared historically.
@@ -41,7 +42,7 @@ For the current Mijia Smart Audio Glasses, Xiaomi support states that the glasse
 For these exact documented products this supports **ordinary optical service** rather than merely vendor prescription availability. Exact diopter ranges, progressive support and every regional frame option remain separate fields.
 
 ## Catalog implication
-`GLS-0022 — Mijia Smart Audio Glasses — 2022` is likely an identity conflation. Do **not** replace it automatically with the specifications of the current Mijia product. Resolve the 2022 acquisition evidence/model name first. The current vendor evidence proves at least two distinct audio-glasses generations and provides a clean technical boundary between them.
+`GLS-0022` is corrected to **Mijia Smart Audio Glasses (1st generation), 2023**. Contemporaneous reporting dated April 10, 2023 records Xiaomi Youpin crowdfunding from April 12–26 at 799 yuan. The former 2022 era conflated this audio branch with the August 2022 Mijia Glasses Camera. Do **not** replace first-generation details with specifications from Xiaomi's later global Mijia product.
 
-## Next action
-Recover the 2022 China launch/store/manual/regulatory evidence to determine whether GLS-0022 should be renamed to an earlier Mijia domestic product, Xiaomi Smart Audio Glasses, or another exact model identity. Until then, keep the catalog-era mapping provisional.
+## Remaining action
+Recover the first-generation Xiaomi Youpin page, manual, regulatory record and exact model number. The identity/year correction is complete; generation-specific scoring remains deferred until those primary materials are preserved.

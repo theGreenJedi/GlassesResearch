@@ -2,21 +2,17 @@
 
 This volume closes the remaining canonical editorial-profile gaps discovered by the public-site integration audit. These are intentionally conservative profiles. Several entries exist precisely because the catalog has stronger evidence for acquisition and product identity than it currently has for generation-specific internals. Where that is the case, the profile explains the uncertainty instead of inheriting specifications from a neighboring model.
 
-## GLS-0022 — Xiaomi Mijia Smart Audio Glasses
+## GLS-0022 — Xiaomi Mijia Smart Audio Glasses (1st generation)
 
-The 2022-era **Mijia Smart Audio Glasses** remain in the canonical ledger because Xiaomi sold a named audio-eyewear product through a documented retail route, but this generation needs identity reconciliation before it should receive a detailed Report Card. Xiaomi has reused closely related naming for later products, so current product pages cannot safely be treated as a specification sheet for the 2022 row. What is defensible today is the role of the device: region-limited consumer **audio smart glasses**, not a camera or HUD platform. GlassesResearch therefore preserves the model while withholding generation-specific scores until archival material cleanly separates the 2022 hardware from later Mijia audio eyewear. [Canonical record](THE_LIST.md) · [investigation note](../docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md)
+The first documented **Mijia Smart Audio Glasses** entered Xiaomi Youpin crowdfunding in April 2023, not 2022. This region-limited screen-free audio product is distinct from both the 2022 Mijia Glasses Camera and Xiaomi's later globally documented Mijia audio hardware. The exact first-generation manual and regulatory model number remain archival targets, so later specifications are not backfilled into this row. [Canonical record](THE_LIST.md) · [evidence](../evidence/EV-0034-Xiaomi-smart-audio-generation-comparison.md)
 
-## GLS-0023 — Xiaomi Mijia Camera Glasses
+## GLS-0023 — Xiaomi Mijia Glasses Camera
 
-**Mijia Camera Glasses** crossed the acquisition threshold in 2022 through Xiaomi's crowdfunding/retail channel and belong to a different branch from Xiaomi's later screen-free AI glasses. The canonical evidence establishes a camera/display product, but surviving first-party material does not yet provide enough parsed generation-specific detail for a responsible catalog-wide Report Card. That makes this an important archival target rather than a blank to be filled by analogy: the model is real, purchasable history, while its detailed hardware, software, openness, and owner-control story still needs recovery from period documentation. [Canonical record](THE_LIST.md) · [investigation note](../docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md)
+**Mijia Glasses Camera** crossed the acquisition threshold in August 2022 through Xiaomi's China-only crowdfunding channel. Xiaomi's surviving dedicated page confirms that this is the camera/display branch, separate from the 2023 screen-free Mijia audio glasses. Period reporting identifies model `MJSV01FC`; regulatory/manual recovery is still required before treating that identifier or the full engineering specification as primary evidence. [Canonical record](THE_LIST.md) · [official product](https://www.mi.com/mjglass)
 
-## GLS-0032 — Lucyd Lyte 2.1
+## GLS-0033 — Lucyd Lyte XL
 
-**Lucyd Lyte 2.1** is retained as a separately marketed legacy audio-eyewear generation, but the current Lucyd and SEC record does not yet cleanly prove which hardware changes distinguish 2.1 from the better-documented Lyte 2.0. That distinction matters because GlassesResearch does not award a new generation a copied score simply because the name is numerically adjacent. The product remains useful catalog history as prescription-oriented Bluetooth audio eyewear, while its generation-specific Report Card is deferred pending archived product-page or manual recovery. [Canonical record](THE_LIST.md) · [investigation note](../docs/report-cards/HIGH_THROUGHPUT_BATCH_02.md)
-
-## GLS-0033 — Lucyd Lyte 2.3
-
-**Lucyd Lyte 2.3** presents the same evidence problem as 2.1: the canonical ledger records a separately marketed 2024 generation, but the surviving first-party history is not yet strong enough to justify transferring Lyte 2.0 specifications or scores into it. The safe conclusion is narrower but still useful: this is part of Lucyd's prescription-ready Bluetooth audio-glasses lineage, with ordinary-phone interoperability as a core architectural trait. A deeper profile should wait until period-specific documentation establishes what materially changed in 2.3. [Canonical record](THE_LIST.md) · [investigation note](../docs/report-cards/HIGH_THROUGHPUT_BATCH_02.md)
+Primary company and SEC records establish **Lyte XL** as the named October 2023 successor to Lyte 2.0. Six styles introduced improved speaker and microphone quality, flexible wide-fit hinges, thinner temples, and broad prescription/custom-lens support. The former `Lyte 2.3` label is unsupported and retained only in the correction ledger; no Lyte 2.0 scores are inherited without exact XL evidence. [Canonical record](THE_LIST.md) · [evidence](../evidence/EV-0035-Lucyd-Lyte-generation-history.md)
 
 ## GLS-0034 — Fauna Audio Glasses
 

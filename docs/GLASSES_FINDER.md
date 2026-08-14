@@ -128,7 +128,7 @@ Filters operate from canonical structured data, not prose scraping. Boolean-like
 - daily scheduled link-health checker that preserves bot-blocked versus actually dead links.
 
 ### Next waves
-1. Expand purchase-source coverage from the seed set to all 145 models where legitimate acquisition routes exist.
+1. Expand purchase-source coverage from the seed set to all 144 active models where legitimate acquisition routes exist.
 2. Normalize capability fields so fewer filters rely on compatibility aliases/heuristics.
 3. Make Finder candidate buttons consume the health ledger, suppressing confirmed dead routes while displaying freshness state for checked links.
 4. Add price fields and price-band/range controls.

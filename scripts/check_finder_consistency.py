@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from build_finder_capabilities import CAPABILITIES  # noqa: E402
 
 MODEL_RE = re.compile(r"^\| (GLS-\d{4}) \|")
+COUNT_RE = re.compile(r"\*\*Count:\*\*\s*(\d+)")
 ALLOWED_STATES = {"yes", "no", "unknown", "na"}
 ALLOWED_SOURCE_TYPES = {"manufacturer", "amazon", "major_retailer", "optical_retailer", "specialist_retailer", "secondary_market"}
 ALLOWED_CONDITIONS = {"new", "refurbished", "used", "collector", "parts"}
@@ -26,12 +27,16 @@ def load(path: str):
 
 
 def canonical_ids():
+    text = (ROOT / "models" / "THE_LIST.md").read_text(encoding="utf-8")
+    count_match = COUNT_RE.search(text)
+    if not count_match:
+        raise ValueError("canonical list is missing its declared Count")
     ids = []
-    for line in (ROOT / "models" / "THE_LIST.md").read_text(encoding="utf-8").splitlines():
+    for line in text.splitlines():
         m = MODEL_RE.match(line)
         if m:
             ids.append(m.group(1))
-    return ids
+    return int(count_match.group(1)), ids
 
 
 def validate_price_record(observation, idset, errors, ledger, allowed_availability):
@@ -60,10 +65,10 @@ def fail(errors):
 
 def main():
     errors = []
-    ids = canonical_ids()
+    declared_count, ids = canonical_ids()
     idset = set(ids)
-    if len(ids) != 145:
-        errors.append(f"canonical Finder model count is {len(ids)}, expected 145")
+    if len(ids) != declared_count:
+        errors.append(f"canonical Finder model count is {len(ids)}, declared {declared_count}")
     if len(idset) != len(ids):
         errors.append("canonical GLS IDs are not unique")
 

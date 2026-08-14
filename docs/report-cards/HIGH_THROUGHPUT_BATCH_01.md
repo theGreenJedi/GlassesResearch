@@ -254,10 +254,10 @@ Primary sources: https://solosglasses.com/pages/developers ; https://solosglasse
 
 ## Investigation-heavy queue
 
-Two nearby Xiaomi records were deliberately excluded rather than allowed to block this batch:
+Two nearby Xiaomi records were initially excluded from scoring. Their identities have since been reconciled:
 
-- **GLS-0022 — Mijia Smart Audio Glasses:** Xiaomi currently uses this name for a newer globally listed generation, while the catalog records a 2022-era product. Identity/generation reconciliation is required before scoring.
-- **GLS-0023 — Mijia Camera Glasses:** Xiaomi still hosts the product page, but parsed first-party specifications are too sparse to support a complete catalog-relative card without deeper archival/manual work.
+- **GLS-0022 — Mijia Smart Audio Glasses (1st generation):** corrected to the April 2023 Xiaomi Youpin generation. Its exact first-generation manual/model number remains required before scoring.
+- **GLS-0023 — Mijia Glasses Camera:** confirmed as the separate August 2022 camera/display branch through Xiaomi's dedicated `mi.com/mjglass` route. Manual/regulatory depth remains required before scoring.
 
 ## Editorial audit
 
