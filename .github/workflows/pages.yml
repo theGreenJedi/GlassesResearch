@@ -98,11 +98,17 @@ jobs:
           test -s site/resources/COMMUNITY_AND_DEVELOPMENT/index.html
           test -s site/models/AnkoCameraGlasses/index.html
           test -s site/models/RETAIL_REBRANDS/index.html
+          test -s site/models/catalog/gls-0001/index.html
+          test -s site/models/catalog/gls-0147/index.html
+          test -s site/guides/index.html
+          test -s site/guides/prescription-smart-glasses/index.html
           test -s site/lineages/index.html
           test -s site/docs/javascripts/comparison-engine.js
           grep -Fq 'TL-0001' site/timeline/events.json
           grep -Fq 'EV-0001' site/evidence/resources.json
           python -c "import json; p=json.load(open('site/data/devices.json', encoding='utf-8')); r=p.get('records', []); c=p.get('record_count'); assert isinstance(c, int) and c > 0; assert c == len(r); ids=[x.get('id') for x in r]; assert len(ids) == len(set(ids)); print(f'Built catalog verified dynamically: {c} devices')"
+          test "$(find site/models/catalog -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -eq 144
+          test "$(find site/guides -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -eq 12
           grep -Fq 'Google Glass' site/lineages/index.html
           grep -Fq 'Vuzix' site/lineages/index.html
           grep -Fq 'industry-timeline-app' site/docs/INDUSTRY_TIMELINE/index.html

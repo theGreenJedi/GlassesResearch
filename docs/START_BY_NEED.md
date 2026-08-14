@@ -6,6 +6,8 @@ GlassesResearch contains consumer, research, historical, and developer material.
 
 Start with the [Buyer Guide](../buyers/BUYER_AND_OPENNESS_GUIDE.md), then browse [The List](../models/THE_LIST.md) and use the [Comparison Engine](COMPARISON_ENGINE.md) when you have narrowed the field.
 
+For focused questions—prescription compatibility, camera-free designs, displays, audio, visual AI, developer access, open source, offline operation, calls, video, or Bluetooth—use the [verified buying and use-case guides](../guides/index.md).
+
 Pay particular attention to prescription support, offline behavior, account requirements, companion-app dependence, repairability, battery replacement, and whether advertised features continue working without a vendor cloud service.
 
 ## I am comparing specific devices

@@ -126,7 +126,10 @@ def parse(source: Path) -> tuple[int, list[dict[str, object]]]:
                 "access": clean(access),
                 "evidence": clean(evidence.split(";", 1)[0].split(" | ", 1)[0]),
                 "links": links(evidence),
-                "public": research_paths.get(stable_id, {}),
+                "public": {
+                    "model_page": f"/models/catalog/{stable_id.lower()}/",
+                    **research_paths.get(stable_id, {}),
+                },
                 "ledger_line": line_number,
             }
         )

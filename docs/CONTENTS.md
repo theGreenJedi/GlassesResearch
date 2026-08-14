@@ -6,6 +6,8 @@ A compact map of GlassesResearch. Use the Finder when choosing glasses; use Rese
 
 - [Glasses Finder & Compare](COMPARISON_ENGINE.md)
 - [Browse all smart-glasses models](../models/THE_LIST.md)
+- [Canonical pages for all 144 models](../models/catalog/index.md)
+- [Buying and use-case guides](../guides/index.md)
 - [Start by what you need](START_BY_NEED.md)
 - [Buyer guide](../buyers/BUYER_AND_OPENNESS_GUIDE.md)
 

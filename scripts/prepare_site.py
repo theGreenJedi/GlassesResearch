@@ -19,6 +19,7 @@ COPY_DIRS = (
     "docs",
     "evidence",
     "glossary",
+    "guides",
     "hacking",
     "images",
     "lineages",
@@ -160,6 +161,16 @@ def main() -> None:
             "--models", str(ROOT / "models" / "THE_LIST.md"),
             "--curated", str(ROOT / "data" / "purchase-sources.json"),
             "--output", str(purchase_fallback_output),
+        ],
+        check=True,
+    )
+
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "build_model_pages.py"),
+            "--data-dir", str(DEST / "data"),
+            "--output-root", str(DEST),
         ],
         check=True,
     )
