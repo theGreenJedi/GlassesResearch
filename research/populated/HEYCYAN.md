@@ -15,6 +15,7 @@ Core evidence includes:
 - EV-0007 — SANVNET W610-linked regulatory manual
 - EV-0008 — Goodway W610 specification/customization page
 - [`evidence/EV-0033-CyanBridge-v2.1.1.md`](../../evidence/EV-0033-CyanBridge-v2.1.1.md) — current CyanBridge 2.1.1 evidence
+- [`evidence/EV-0044-W610-community-protocol-and-owner-access.md`](../../evidence/EV-0044-W610-community-protocol-and-owner-access.md) — bounded protocol and owner-access assessment
 
 ## W610 connectivity / software
 GlassesResearch directly observed Bluetooth identity `HeyCyan Glasses`. Public community projects demonstrate Bluetooth/BLE interaction and independent Android companion software. Community work also documents Bluetooth-to-Wi-Fi media-transfer behavior on compatible devices.
@@ -38,7 +39,7 @@ This supports strong application/companion-level Openness, Owner Control and Hac
 The ecosystem supports owner-selected downstream assistant/model workflows through companion software. Current evidence does not establish that general AI inference runs on the glasses themselves; the glasses primarily serve as capture/audio/control hardware with phone and/or external model processing.
 
 ## Cloud independence
-Basic startup and Bluetooth discovery have been observed without the vendor application. Independent companion software reduces dependence on the original vendor stack. Individual AI, media-transfer, configuration and firmware functions still need function-by-function offline testing.
+Basic startup and Bluetooth discovery have been observed without the vendor application. Independent companion software reduces dependence on the original vendor stack. EV-0044 documents a concrete community media path: BLE requests transfer mode and reports the glasses address, while Wi-Fi Direct and a local HTTP manifest carry media. That makes media continuity plausible without the official user interface. It is still community-source evidence, retains vendor-library dependencies, and must be reproduced on the owned W610 with the official app stopped. AI, configuration, authentication and firmware functions still need function-by-function offline testing.
 
 ## Anko Camera Glasses
 Anko/Kmart Australia is a confirmed HeyCyan software-ecosystem member. Photo/video and connected assistant/audio functions are documented, but direct W610 protocol, hardware, firmware and community-tool compatibility remain provisional until tested on the retail unit.
