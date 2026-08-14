@@ -28,7 +28,7 @@ This is the highest-value ownership research because it distinguishes a durable 
 - HTC VIVE Eagle: **offline boundary completed in EV-0041** — button capture, onboard storage and narrow commands survive offline; media management uses VIVE Connect; advanced VIVE AI requires app connection plus phone internet. Remaining: first-run/account, sign-out, standard file access, provider/region limits and backend-shutdown testing.
 - Rokid Glasses: translation/navigation/transcription/AI offline boundaries, companion requirements and SDK behavior without Rokid services.
 - RayNeo X3 Pro: Creator Mode local execution versus Gemini/service dependence.
-- Even G1/G2: display/plugin behavior without Even services, account requirements and phone-only custom-plugin survivability.
+- Even G1/G2: **source boundary completed in EV-0046** — G1 offline QuickNote buffering and G2's official dual-BLE/Even Hub recovery surface are separated from logged-in first pairing and service-backed Conversate/translation/navigation/AI. Remaining: account-free demo connection, portal-free plugin install, sign-out and endpoint-blocked tests.
 
 ### Preservation controls
 - Magic Leap 1: exact functionality lost after 2024-12-31 shutdown versus any surviving local behavior.
