@@ -12,7 +12,7 @@ The first documented **Mijia Smart Audio Glasses** entered Xiaomi Youpin crowdfu
 
 ## GLS-0033 — Lucyd Lyte XL
 
-Primary company and SEC records establish **Lyte XL** as the named October 2023 successor to Lyte 2.0. Six styles introduced improved speaker and microphone quality, flexible wide-fit hinges, thinner temples, and broad prescription/custom-lens support. The former `Lyte 2.3` label is unsupported and retained only in the correction ledger; no Lyte 2.0 scores are inherited without exact XL evidence. [Canonical record](THE_LIST.md) · [evidence](../evidence/EV-0035-Lucyd-Lyte-generation-history.md)
+Primary company and SEC records establish **Lyte XL** as the named October 2023 successor to Lyte 2.0. Six conventional styles introduced improved audio/call quality, flexible wide-fit hinges, thinner temples and ordinary-optician prescription support. Its screen-free Bluetooth architecture offers strong everyday wearability and durable basic music/calling utility, but no meaningful public SDK or firmware path. The Report Card withholds generation-specific internals that Lucyd documented only for Lyte 2.0. [Canonical record](THE_LIST.md) · [evidence and Report Card](../docs/report-cards/LINEAGE_LUCYD_LYTE.md)
 
 ## GLS-0034 — Fauna Audio Glasses
 
