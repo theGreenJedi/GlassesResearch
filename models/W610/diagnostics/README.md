@@ -12,6 +12,8 @@ This section records normal-state baselines, reproducible fault tests, charging 
 
 ## First diagnostic checklist
 
+Use the [baseline checklist](baseline-checklist.md) for the repeatable procedure.
+
 1. Record charge source, cable/adapter, LED response, and elapsed charging time.
 2. Test cold boot, short press, long press, and power-cycle behavior.
 3. Scan Bluetooth from two independent hosts and record advertisements.
