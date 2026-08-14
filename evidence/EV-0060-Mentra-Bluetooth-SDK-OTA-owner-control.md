@@ -5,7 +5,7 @@
 - **Evidence class:** community primary source and vendor primary source
 - **Reviewed:** 2026-08-14
 - **Status:** source-verified; no GlassesResearch hands-on reproduction
-- **Canonical model:** [GLS-0038 — Mentra Live](../models/catalog/gls-0038.md)
+- **Canonical model:** [GLS-0038 — Mentra Live](../models/PROFILES_OPEN_CAMERA.md#gls-0038--mentra-live)
 
 ## Finding
 
