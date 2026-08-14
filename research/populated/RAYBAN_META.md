@@ -1,37 +1,44 @@
-# Meta / Ray-Ban smart eyewear — populated research record
+# Meta / Ray-Ban / Oakley smart eyewear — populated research record
 
-This record combines the existing Ray-Ban Meta evidence framework with generation-specific findings from `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`. Claims remain model-scoped rather than inherited automatically across the family.
+Primary evidence includes Ray-Ban Meta operations (`EV-0027`), Meta multimodal system documentation (`EV-0028`), `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, and `docs/report-cards/BATCH_03.md`. Claims remain model-scoped.
 
 ## Ray-Ban Stories — GLS-0001
-Meta's first-generation Ray-Ban capture/audio product: dual-camera capture, open-ear audio, microphones, voice control, prescription/lens options and Facebook View phone workflow. It was not a meaningful visual-AI platform despite having cameras.
+First-generation capture/audio product: dual-camera capture, open-ear audio, microphones, voice control, prescription/lens options and Facebook View workflow. Camera capture existed, but meaningful scene-understanding AI did not.
+Anchor: H6.5 W9.0 VAI1.5 S6.0 O2.5 OC3.0 CI6.0 Hack2.5 HUD N/A; Value not yet graded.
 
-Report-card anchor: H6.5 W9.0 VAI1.5 S6.0 O2.5 OC3.0 CI6.0 Hack2.5 HUD N/A; Value not yet graded.
+## Ray-Ban Meta Gen 1 — GLS-0002
+2023 successor with 12 MP ultrawide camera, livestreaming, improved audio and Meta AI; later updates added Meta AI with Vision.
+Anchor: H8.0 W9.0 VAI8.5 S8.0 O3.5 OC4.0 CI3.5 Hack3.0 HUD N/A; Value not yet graded.
 
-## Ray-Ban Meta — current screen-free AI class
-Primary evidence includes the operational FAQ (`EV-0027`) and Meta multimodal AI documentation (`EV-0028`). Bluetooth/Wi-Fi, companion-app setup, media transfer and firmware-update behavior are documented. Camera and voice input participate in multimodal AI processing, so Visual AI is strongly applicable. There is no wearer-facing HUD on the screen-free class.
+## Ray-Ban Meta Gen 2 — GLS-0003
+2025 hardware generation with up to eight hours typical battery, 3K Ultra HD video with ultrawide HDR up to 60 fps, 50% charge in 20 minutes, charging case with up to 48 additional hours, live translation including downloadable offline language packs and continued multimodal Meta AI.
+Anchor: H8.5 W9.0 VAI9.0 S8.5 O3.5 OC4.0 CI4.0 Hack3.0 HUD N/A; Value not yet graded.
 
-Core capture/audio functions must be separated from service-backed multimodal AI when assessing Cloud Independence. Current evidence does not establish a public owner SDK, custom AI endpoints, firmware replacement, unrestricted sensor access or a replaceable assistant stack.
+Offline translation packs slightly improve independence, but defining Meta AI functions remain materially service-dependent.
 
 ## Meta Ray-Ban Display — GLS-0004
-Meta documents a full-color high-resolution in-lens display, cameras, microphones, speakers, Meta AI, six-hour mixed-use battery, charging case and Meta Neural Band EMG control.
+Full-color high-resolution in-lens display, cameras, microphones, speakers, Meta AI, six-hour mixed-use battery, charging case and Meta Neural Band EMG control.
+Anchor: H9.0 W8.0 VAI9.0 S9.0 O2.5 OC3.0 CI4.0 Hack2.5 HUD8.5; Value not yet graded.
 
-Report-card anchor: H9.0 W8.0 VAI9.0 S9.0 O2.5 OC3.0 CI4.0 Hack2.5 HUD8.5; Value not yet graded.
-
-The display materially changes the product class: visual AI can return wearer-facing information rather than only audio/phone output. This does not imply broad platform openness; the hardware/software stack remains tightly integrated and proprietary in the current evidence set.
+This is a materially different display-equipped class; screen-free Meta scores must not be copied to HUD.
 
 ## Gen 2 prescription-first optical variants
-### Ray-Ban Meta Blayzer Optics — GLS-0005
-Meta documents near-universal prescription support, overextension hinges, interchangeable nose pads, optician-adjustable temple tips and Gen 2 Meta AI hardware/software.
+- **Blayzer Optics — GLS-0005:** near-universal prescription support, overextension hinges, interchangeable nose pads and optician-adjustable temple tips. Anchor H8.5 W9.5 VAI9.0 S9.0 O2.5 OC3.0 CI4.0 Hack2.5 HUD N/A; Value not yet graded.
+- **Scriber Optics — GLS-0006:** rounder frame using the same documented Gen 2 prescription-first system. Same current anchor as Blayzer.
 
-Anchor: H8.5 W9.5 VAI9.0 S9.0 O2.5 OC3.0 CI4.0 Hack2.5 HUD N/A; Value not yet graded.
+## Oakley Meta performance branch
+### Oakley Meta HSTN — GLS-0007
+Performance-oriented screen-free AI eyewear with up to eight hours typical battery, 3K video, integrated Meta AI, open-ear speakers, IPX4 and prescription-compatible configurations.
+Anchor: H8.5 W8.5 VAI9.0 S8.5 O3.5 OC4.0 CI4.0 Hack3.0 HUD N/A; Value not yet graded.
 
-### Ray-Ban Meta Scriber Optics — GLS-0006
-Rounder optical variant sharing the documented Gen 2 electronics and prescription-first fit system.
+### Oakley Meta Vanguard — GLS-0008
+Specialized high-intensity sport design: wraparound frame, IP67, up to nine hours battery, centered 12 MP 122° camera with up to 3K video, five wind-optimized microphones, louder open-ear speakers and Garmin/Strava/health-platform integrations.
+Anchor: H9.0 W7.5 VAI9.0 S8.5 O3.5 OC4.5 CI4.0 Hack3.0 HUD N/A; Value not yet graded.
 
-Anchor: H8.5 W9.5 VAI9.0 S9.0 O2.5 OC3.0 CI4.0 Hack2.5 HUD N/A; Value not yet graded.
+External fitness integrations increase workflow choice but do not amount to a public device SDK or replaceable system stack.
 
-## Family-level ownership interpretation
-Meta/Ray-Ban leads in mainstream eyewear integration and multimodal consumer AI but remains weak on public developer access, assistant replacement and system-level owner control. Service dependence is most important for AI features; local capture/audio behavior should be tested separately. Display-equipped and screen-free models must not share HUD scores.
+## Family ownership pattern
+The Meta family scores exceptionally high in mainstream wearability, camera hardware, visual AI and polished software while consistently scoring low in Openness, system Owner Control, Cloud Independence and Hackability. Local capture/audio and service-backed AI must be separated function by function.
 
 ## Research priorities
-Populate exact regional/version differences, prescription-service workflows, repairability, battery aging, offline survival, account dependence, media-export behavior, recording indicators/privacy controls, current value and post-service survivability for each generation.
+Current value, exact regional/version rollout, prescription service workflows, repairability, battery aging, account/offline survival, media export, recording/privacy indicators, developer access evolution and post-service survivability.
