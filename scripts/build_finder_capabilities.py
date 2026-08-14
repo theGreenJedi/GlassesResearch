@@ -3,13 +3,15 @@
 
 Every canonical GLS model receives every shopper-facing capability field with one of:
 yes, no, unknown, na. Explicit comparison data and curated overrides win. Conservative
-category-derived positives are allowed; absence of evidence never becomes `no`.
+category-derived facts are allowed only when the catalog type itself establishes them;
+absence of evidence never becomes `no`.
 """
 from __future__ import annotations
 
 import argparse
 import json
 import re
+from collections import Counter
 from pathlib import Path
 
 CAPABILITIES = [
@@ -107,19 +109,42 @@ def explicit_from_comparison(record, field):
     return None, None
 
 
-def category_positive(model, field):
-    t = model["type"].lower()
+def category_fact(model, field):
+    """Return only facts that are encoded by the canonical product type itself.
+
+    This intentionally stays conservative. For example, `audio` establishes that a
+    product is audio-capable and lacks a display/camera when the type contains no such
+    modifier. A generic `display` type does *not* establish that there is no camera,
+    because several AR/display products include environmental cameras without encoding
+    that detail in the short type label.
+    """
+    t = model["type"].strip().lower()
+    has_camera = "camera" in t
+    has_audio = "audio" in t
+    has_display = any(x in t for x in ("display", " ar", "ar ", "xr", "monocular", "hud"))
+    pure_audio_family = has_audio and not has_camera and not has_display
+    camera_audio_nodisplay = has_camera and has_audio and not has_display
+    camera_only_nodisplay = has_camera and not has_audio and not has_display
+
     positives = {
-        "camera": "camera" in t,
-        "photo_capture": "camera" in t,
-        "speakers": "audio" in t,
-        "microphones": "audio" in t or "camera" in t,
-        "display": any(x in t for x in ("display", "ar", "xr", "monocular")),
+        "camera": has_camera,
+        "photo_capture": has_camera,
+        "speakers": has_audio,
+        "microphones": has_audio or has_camera,
+        "music": has_audio,
+        "display": has_display,
+        "no_display": pure_audio_family or camera_audio_nodisplay or camera_only_nodisplay,
     }
-    if field in positives and positives[field]:
+    if positives.get(field):
         return "yes", "catalog-type"
-    if field == "no_display" and "audio" in t and not any(x in t for x in ("display", "ar", "xr", "monocular")):
-        return "yes", "catalog-type"
+
+    # Definitive negatives only where the type taxonomy excludes the capability.
+    if pure_audio_family and field in {"camera", "photo_capture", "video_recording", "live_video", "display", "full_color_display", "binocular_display"}:
+        return "no", "catalog-type-negative"
+    if (camera_audio_nodisplay or camera_only_nodisplay) and field in {"display", "full_color_display", "binocular_display"}:
+        return "no", "catalog-type-negative"
+    if has_display and field == "no_display":
+        return "no", "catalog-type-negative"
     return None, None
 
 
@@ -142,12 +167,13 @@ def main():
     comparisons = comparison_map(Path(args.comparisons))
     overrides = load_overrides(Path(args.overrides))
     out = []
+    summary = Counter()
     for model in models:
         caps = {}
         for field in CAPABILITIES:
             value, provenance = explicit_from_comparison(comparisons.get(model["id"]), field)
             if not value:
-                value, provenance = category_positive(model, field)
+                value, provenance = category_fact(model, field)
             override = overrides.get(model["id"], {}).get(field)
             if override:
                 if isinstance(override, str):
@@ -155,7 +181,9 @@ def main():
                 else:
                     value = override.get("value", value)
                     provenance = override.get("provenance", "curated-override")
-            caps[field] = {"value": value or "unknown", "provenance": provenance or "unresolved"}
+            final = value or "unknown"
+            caps[field] = {"value": final, "provenance": provenance or "unresolved"}
+            summary[final] += 1
         if caps["display"]["value"] == "yes":
             caps["no_display"] = {"value": "no", "provenance": "logical-inverse"}
         elif caps["no_display"]["value"] == "yes":
@@ -164,14 +192,15 @@ def main():
 
     payload = {
         "schema_version": 1,
-        "semantics": "yes/no/unknown/na; absence of evidence never becomes no",
+        "semantics": "yes/no/unknown/na; negatives are emitted only from explicit evidence, curated overrides, logical inverse, or definitive canonical type",
         "capability_fields": CAPABILITIES,
+        "summary": dict(summary),
         "records": out,
     }
     target = Path(args.output)
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(out)} Finder capability records to {target}")
+    print(f"Wrote {len(out)} Finder capability records to {target}; states={dict(summary)}")
 
 
 if __name__ == "__main__":
