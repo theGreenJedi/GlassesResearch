@@ -1,6 +1,6 @@
 # Vuzix — populated research record
 
-Primary evidence includes Z100 documentation (`EV-0016`), Ultralite SDK (`EV-0017`), optical-service evidence (`EV-0038`), Vuzix developer/support resources, `docs/report-cards/BATCH_01.md`, and `HIGH_THROUGHPUT_BATCH_05.md`.
+Primary evidence includes Z100 documentation (`EV-0016`), Ultralite SDK (`EV-0017`), optical-service evidence (`EV-0038`), Vuzix developer/support resources, `docs/report-cards/BATCH_01.md`, `HIGH_THROUGHPUT_BATCH_05.md`, and [EV-0051](../../evidence/EV-0051-replaceable-power-and-modular-parts-wave-one.md).
 
 ## Architecture branches
 Vuzix spans a phone-assisted Z100/Ultralite display branch and multiple standalone Android wearable-computer branches. Corporate lineage does not imply shared hardware architecture.
@@ -40,6 +40,12 @@ The M400/M4000 values above retain the later standardized high-throughput calibr
 
 M400/M4000 use Qualcomm XR1, 6 GB RAM, 64 GB storage, 12.8 MP/4K camera, orientation sensors, triple microphones, touch/buttons/voice and standard Android application deployment. M400 uses occluded 640×360 OLED; M4000 uses 854×480 see-through waveguide. Vuzix View supports APK installation with USB debugging.
 
+### M400 / M4000 / LX1 battery and parts serviceability
+
+M400 and M4000 use an external runtime battery and support true hot swapping through a small internal bridge cell. Vuzix currently sells compatible rail-mounted 3200 mAh and 4800 mAh packs, and its support documentation says a suitable 1.5 A supply can power the devices. This establishes **owner-replaceable runtime power** but not serviceability of the internal bridge cell.
+
+LX1 uses a current 7000 mAh long-shift clip-in battery with a separately available multi-battery charger. Combined with its easy-release mount and current accessory sales, LX1 has **owner-removable runtime power and mounting modules**. Neither finding proves board, display, camera or internal-cell repairability.
+
 LX1 is a 2026 warehouse-focused Android 15 system with 7000 mAh long-shift battery, rugged/freezer-oriented design and NFC pairing. Shield uses Snapdragon XR1, binocular full-color microLED waveguides, stereo HD cameras and prescription-ready safety-glasses framing.
 
 ## Ownership interpretation
@@ -49,4 +55,4 @@ Vuzix is unusually owner-controllable for commercial enterprise eyewear because 
 Z100 is host-dependent rather than inherently cloud-dependent; standalone Android products can run local applications. Vendor cloud/licensing features remain model-specific, but core functionality has strong local architecture.
 
 ## Research priorities
-Current prices, bootloader/firmware access, exact sensor exposure, repairability beyond optical assemblies, battery/parts availability, support horizon and service/account dependencies by model.
+Current prices, bootloader/firmware access, exact sensor exposure, internal bridge-cell service, board/display repair, support horizon and service/account dependencies by model.

@@ -1,6 +1,6 @@
 # Solos AirGo — populated research record
 
-This record combines the existing Solos developer-evidence framework with generation-specific findings from `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`. Primary developer evidence includes the official Solos SDK (`EV-0026`); optical-service evidence is captured in `EV-0037`; modular-repair evidence is in `EV-0041`.
+This record combines the existing Solos developer-evidence framework with generation-specific findings from `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`. Primary developer evidence includes the official Solos SDK (`EV-0026`); optical-service evidence is captured in `EV-0037`; modular-repair evidence is in `EV-0041` and [EV-0051](../../evidence/EV-0051-replaceable-power-and-modular-parts-wave-one.md).
 
 ## AirGo 2 — GLS-0026
 Audio-first predecessor. Existing research documents Bluetooth 5.0/BLE, Android/iOS support, roughly 11 hours music, eight hours calls, quick charging and prescription-compatible frame options. The current Solos SDK does not list AirGo 2 among supported targets.
@@ -45,4 +45,4 @@ Solos spans audio-only and camera-enabled glasses within one modular ecosystem. 
 Core Bluetooth audio and custom host applications can operate without Solos cloud AI on supported models. AirGo V2 goes further by supporting owner-directed media/events, webhooks, RTMP and private/local endpoints. Individual vendor AI features and transcription services must still be scored separately.
 
 ## Remaining evidence targets
-Firmware replacement/boot chain, full sensor exposure, exact offline behavior, subscription/account dependence, ordinary-independent optical service by model, temple/battery module availability by generation, battery aging, regional differences and long-term service survival remain open.
+Firmware replacement/boot chain, full sensor exposure, exact offline behavior, subscription/account dependence, ordinary-independent optical service by model, temple-kit stock/firmware pairing, battery-cell service by generation, battery aging, regional differences and long-term service survival remain open.
