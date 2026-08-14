@@ -170,6 +170,8 @@
     const queryInput = host.querySelector('#discovery-query');
     const exactOnly = host.querySelector('#exact-only');
     const boxes = [...host.querySelectorAll('.finder-options input[type=checkbox]')];
+    const requestedFilters = new Set((params.get('filters') || '').split(',').map((id) => id.trim()).filter(Boolean));
+    boxes.forEach((box) => { box.checked = requestedFilters.has(box.value); });
     const scoreEnables = [...host.querySelectorAll('[data-score-enable]')];
     const scoreRanges = [...host.querySelectorAll('[data-score-range]')];
     const results = host.querySelector('#discovery-results');
