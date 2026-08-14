@@ -27,7 +27,7 @@ This is the highest-value ownership research because it distinguishes a durable 
 - Xiaomi AI Glasses: local-vs-cloud inference, companion/account requirements and regional feature differences.
 - HTC VIVE Eagle: **offline boundary completed in EV-0041** — button capture, onboard storage and narrow commands survive offline; media management uses VIVE Connect; advanced VIVE AI requires app connection plus phone internet. Remaining: first-run/account, sign-out, standard file access, provider/region limits and backend-shutdown testing.
 - Rokid Glasses: **source boundary completed in EV-0047** — pre-provisioned six-language offline translation and plausible Bluetooth/capture residue are separated from the mandatory phone/account/app activation gate and service-backed AI/navigation/online translation. Remaining: sign-out, endpoint-blocked, processing-location and standard-media-access tests.
-- RayNeo X3 Pro: Creator Mode local execution versus Gemini/service dependence.
+- RayNeo X3 Pro: **source boundary completed in EV-0048** — standalone AIOS/capture/storage, selected Android apps, local wake/basic scene detection and Creator Mode are separated from Gemini reasoning and connected translation/navigation/news services. Remaining: endpoint-blocked Creator Mode install, sensor privilege, APK signing, AI-endpoint and recovery-image tests.
 - Even G1/G2: **source boundary completed in EV-0046** — G1 offline QuickNote buffering and G2's official dual-BLE/Even Hub recovery surface are separated from logged-in first pairing and service-backed Conversate/translation/navigation/AI. Remaining: account-free demo connection, portal-free plugin install, sign-out and endpoint-blocked tests.
 
 ### Preservation controls
