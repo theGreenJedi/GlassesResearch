@@ -1,6 +1,6 @@
 # Even Realities — populated research record
 
-Primary evidence: G2 `EV-0029`/`EV-0030`, Even Hub developer documentation, `EV-0037`, `docs/report-cards/BATCH_01.md`, and `HIGH_THROUGHPUT_BATCH_02.md`.
+Primary evidence: G2 `EV-0029`/`EV-0030`, Even Hub developer documentation, `EV-0037`, `docs/report-cards/BATCH_01.md`, `HIGH_THROUGHPUT_BATCH_02.md`, and [EV-0046](../../evidence/EV-0046-Even-G1-G2-service-survival.md).
 
 ## Family boundary
 G1 and G2 are separate generations in one discreet binocular-HUD lineage. Neither includes an outward-facing camera in the documented architecture; Visual AI based on wearer-view imaging is therefore N/A rather than a low score.
@@ -19,6 +19,12 @@ Report-card anchor: H8.0 W9.5 VAI N/A S8.0 O7.0 OC7.0 CI8.0 Hack6.5 HUD8.5; Valu
 
 ## G2 developer surface
 Even Hub exposes display, microphone and touch inputs to phone-hosted plugins. This is meaningful supported application openness and improves Owner Control/Cloud Independence relative to a purely first-party appliance. It does not prove open firmware, bootloader access, schematics or unrestricted BLE control.
+
+## Service-survival boundary
+
+G1 and G2 should no longer share one uncertain survival label. G1 documents temporary offline QuickNote buffering, but completed AI organization and the broader feature set remain app/network mediated. G2 adds a materially stronger recovery route: Even publishes a dual-BLE demo plus MIT-licensed Even Hub templates for display, touch, microphone and phone-hosted plugin workflows. Conversely, first pairing still uses the logged-in Even App, and Conversate is explicitly unavailable when the phone is offline.
+
+The current labels are **G1: dependent with narrow offline buffering** and **G2: recoverable phone-hosted HUD potential, service-dependent first-party AI**. Account-free demo connection, portal-free plugin installation and endpoint-blocked operation remain empirical tests.
 
 ## Audio/sensing boundary
 G2 has microphones but no speaker; do not infer audio playback from assistant features. G1/G2 no-camera architecture means voice/text/location-based AI can exist without wearer-view visual AI.
