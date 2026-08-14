@@ -9,3 +9,11 @@ Prefer evidence-backed descriptions over a single serviceability score when info
 Do not assume that visually similar lineage members use interchangeable parts. Demonstrated compatibility and suspected common design are separate claims.
 
 Serviceability findings should inform Owner Control, Hardware, Value, and discontinued-device survivability.
+
+## Evidence-backed serviceability records
+
+| Model | Optical service | Battery service | Other repair path | Current classification | Evidence |
+|---|---|---|---|---|---|
+| HTC VIVE Eagle | Qualified eye-care professional may replace lenses; HTC states -8D to +4D support | Unknown | Spare magnetic charging cable is regionally advertised; internal parts and repair documentation remain unverified | **Specialist-serviceable optics; remainder unknown** | [EV-0042](../evidence/EV-0042-HTC-VIVE-Eagle-optical-serviceability.md) |
+
+A positive result in one column must not be generalized to the whole device. VIVE Eagle's documented lens path, for example, improves optical durability but does not establish replaceable batteries or owner-serviceable electronics.
