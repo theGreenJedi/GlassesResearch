@@ -83,7 +83,6 @@ def check_url(record: dict) -> CheckResult:
         with urllib.request.urlopen(req, timeout=TIMEOUT, context=ssl.create_default_context()) as response:
             code = response.getcode()
             final_url = response.geturl()
-            # Read only a small amount; reachability is the automated guarantee in v1.
             response.read(2048)
     except urllib.error.HTTPError as exc:
         code = exc.code
@@ -109,13 +108,19 @@ def check_url(record: dict) -> CheckResult:
 
 def load_purchase_records() -> list[dict]:
     data = json.loads(PURCHASE_PATH.read_text(encoding="utf-8"))
-    records = data.get("records", [])
-    required = {"model_id", "url"}
-    for i, record in enumerate(records):
-        missing = required - record.keys()
-        if missing:
-            raise SystemExit(f"purchase record {i} missing: {', '.join(sorted(missing))}")
-    return records
+    flat: list[dict] = []
+    for i, model in enumerate(data.get("records", [])):
+        model_id = model.get("id")
+        if not model_id:
+            raise SystemExit(f"purchase model record {i} missing id")
+        sources = model.get("sources", [])
+        if not isinstance(sources, list):
+            raise SystemExit(f"purchase model record {model_id} has non-list sources")
+        for j, source in enumerate(sources):
+            if not source.get("url"):
+                raise SystemExit(f"purchase source {model_id}[{j}] missing url")
+            flat.append({"model_id": model_id, **source})
+    return flat
 
 
 def write_health(results: list[CheckResult]) -> None:
@@ -170,7 +175,7 @@ def write_queue(results: list[CheckResult]) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=0, help="Check only the first N records (0 = all)")
+    parser.add_argument("--limit", type=int, default=0, help="Check only the first N source URLs (0 = all)")
     parser.add_argument("--delay", type=float, default=0.35, help="Delay between requests")
     args = parser.parse_args()
 
