@@ -25,7 +25,7 @@ This is the highest-value ownership research because it distinguishes a durable 
 ### Closed/current AI glasses
 - Meta / Ray-Ban / Oakley: separate local capture/audio/translation from Meta-AI-dependent functions; record first-run account/app/network requirements.
 - Xiaomi AI Glasses: local-vs-cloud inference, companion/account requirements and regional feature differences.
-- HTC VIVE Eagle: provider selection limits, local encrypted-storage behavior, offline capture/audio and AI failure modes.
+- HTC VIVE Eagle: **offline boundary completed in EV-0041** — button capture, onboard storage and narrow commands survive offline; media management uses VIVE Connect; advanced VIVE AI requires app connection plus phone internet. Remaining: first-run/account, sign-out, standard file access, provider/region limits and backend-shutdown testing.
 - Rokid Glasses: translation/navigation/transcription/AI offline boundaries, companion requirements and SDK behavior without Rokid services.
 - RayNeo X3 Pro: Creator Mode local execution versus Gemini/service dependence.
 - Even G1/G2: display/plugin behavior without Even services, account requirements and phone-only custom-plugin survivability.
