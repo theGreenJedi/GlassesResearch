@@ -1,5 +1,8 @@
 # Research & News
 
+[Who owns the record?](discussions/WHO_OWNS_THE_RECORD.md) examines why independent,
+durable documentation matters when products, services, and vendor pages disappear.
+
 ## August 11, 2026 — Courts in England and Wales prohibit Meta smart glasses
 
 His Majesty's Courts and Tribunals Service (HMCTS) confirmed that Meta smart glasses are prohibited in court and tribunal buildings because of restrictions on unauthorized recording. According to reporting by *The Guardian*, people entering with the glasses will have them held on entry and returned when they leave.

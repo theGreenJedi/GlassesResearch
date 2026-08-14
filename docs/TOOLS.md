@@ -18,6 +18,7 @@ The GlassesResearch working library: ways to find devices, evaluate evidence, in
 - [**Survival / Cloud-Independence Matrix**](SURVIVAL_MATRIX.md) — what remains useful when an app, account system, AI service, or vendor disappears.
 - [**Industry timeline**](INDUSTRY_TIMELINE.md) — products, technologies, companies, and milestones over time.
 - [**Historical archive**](HISTORICAL_ARCHIVE.md) — preserved devices and research that should not disappear.
+- [**Museum**](MUSEUM.md) — the preservation-oriented collection view.
 
 ## Development and hacking
 
@@ -25,7 +26,12 @@ The GlassesResearch working library: ways to find devices, evaluate evidence, in
 - [**SDK / API Compatibility Matrix**](SDK_API_MATRIX.md) — documented access to displays, cameras, audio, sensors, transports, and custom AI integration.
 - [**Projects & SDKs**](../hacking/OPEN_HACKING_RESOURCE_LEDGER.md) — open projects and development resources.
 - [**Manuals, firmware, and technical files**](../artifacts/README.md) — preserved primary technical materials.
+- [**Artifact-preservation method**](ARTIFACT_PRESERVATION.md) — how technical materials and their provenance are retained.
+- [**Preservation program**](PRESERVATION.md) — what the project preserves and why.
+- [**Reverse engineering**](ReverseEngineering.md) — a safety- and evidence-conscious path for investigating undocumented systems.
+- [**Image evidence archive**](../images/README.md) — provenance rules for photographs and visual evidence.
 - [**Ecosystem resource catalog**](../resources/ECOSYSTEM_RESOURCE_CATALOG.md) — cross-vendor technical resources.
+- [**Resource library index**](../resources/README.md) — community, protocol, project, and preservation resources.
 
 ## Methods and reference
 

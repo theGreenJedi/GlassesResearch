@@ -67,6 +67,9 @@ jobs:
       - name: Verify built-site internal links and fragments
         run: python scripts/verify_built_site_links.py
 
+      - name: Verify every public page has an intentional path
+        run: python scripts/verify_public_reachability.py
+
       - name: Verify built JavaScript syntax
         shell: bash
         run: |

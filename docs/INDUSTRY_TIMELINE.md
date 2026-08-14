@@ -44,6 +44,9 @@ Snap OS, Android XR, vendor SDKs, community software, and open-hardware projects
 
 ## Citation and reuse
 
+See [How to cite the timeline](TIMELINE_CITATION.md) for stable event identifiers,
+scope, and reuse guidance.
+
 When citing the overall visualization, use:
 
 > **GlassesResearch Smart-Glasses Industry Timeline**, GlassesResearch, https://glassesresearch.org/docs/INDUSTRY_TIMELINE/

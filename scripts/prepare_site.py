@@ -32,6 +32,9 @@ COPY_FILES = (
 )
 
 PUBLIC_SITE_EXCLUDES = (
+    "comparisons/README.md",
+    "docs/AI610-Notes.md",
+    "docs/CONTENT_GAPS_WAVE_TWO.md",
     "docs/HOMEPAGE_DESIGN_NOTES.md",
     "docs/KISS_WORKING_NOTES.md",
     "docs/LEGACY_STRUCTURE_AUDIT.md",
@@ -39,7 +42,14 @@ PUBLIC_SITE_EXCLUDES = (
     "docs/ROADMAP_V1.md",
     "docs/SEO_DISCOVERABILITY.md",
     "docs/WEBSITE.md",
+    "docs/START_HERE.md",
     "docs/news/WORKFLOW.md",
+    "docs/report-cards/PROFILE_AUDIT_03_06.md",
+    "docs/report-cards/SOURCES_01.md",
+    "resources/CHANGE_SCOPE.md",
+    "resources/PR_NOTES.md",
+    "resources/VALIDATION.md",
+    "timeline/README.md",
 )
 
 
