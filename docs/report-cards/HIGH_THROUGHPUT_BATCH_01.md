@@ -162,11 +162,11 @@ Primary source: https://www.mi.com/global/discover/article?id=5172
 | Display / HUD | N/A | No display. |
 | Openness | 4.0 | Choice of AI providers is positive, but no broad public hardware SDK is documented. |
 | Owner Control | 5.0 | Local storage and AI-provider plurality improve control, but the core system remains vendor-governed. |
-| Cloud Independence | 5.5 | Capture/storage are local; multiple AI and transcription functions use cloud services. |
+| Cloud Independence | 5.5 | EV-0041 confirms offline button capture, onboard storage and narrow offline commands; media management uses VIVE Connect, while advanced VIVE AI requires the connected app and phone internet. |
 | Hackability | 3.5 | Standard connectivity is accessible, but deeper development paths are not documented. |
 | Value | Not yet graded | Regional/current price comparison remains pending. |
 
-Primary sources: https://www.vive.com/us/product/vive-eagle/spec/ ; https://www.vive.com/us/newsroom/2025-08-14/
+Primary sources: https://www.vive.com/us/product/vive-eagle/spec/ ; https://www.vive.com/us/newsroom/2025-08-14/ ; [service-survival evidence](../../evidence/EV-0041-HTC-VIVE-Eagle-service-survival.md)
 
 ## GLS-0026 — Solos AirGo 2
 
