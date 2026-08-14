@@ -48,6 +48,12 @@ Muse Glimmer is useful here as an **example, not a dependency**. GlassesResearch
 
 Primary source: [Meta AI Research — Introducing Muse Glimmer: An Open Agentic Model That Runs on Your Device](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model)
 
+## CyanBridge and Qwen2.5 as a phone-local example
+
+CyanBridge v2.0.0 provides a smaller phone-class example for HeyCyan-compatible glasses. Its curated catalog names Qwen2.5 0.5B and 1.5B for local use through llama.cpp/GGUF, with inference described as remaining on the Android phone when local models are selected. This demonstrates the architecture **glasses → phone → owner-selected local language model** without claiming that Qwen runs inside the frames.
+
+The evidence boundary matters: CyanBridge attributes multimodal image/audio input through LiteRT to Gemma 4 models. Its release does not establish those multimodal capabilities for Qwen2.5. Nor has GlassesResearch yet reproduced the full workflow on the owned W610. See [EV-0061](../evidence/EV-0061-CyanBridge-Qwen-local-model-boundary.md).
+
 ## Why this changes how glasses should be evaluated
 
 A wearable whose vendor assistant is mediocre may still be valuable if the hardware exposes enough of itself to an owner-controlled host. Conversely, excellent hardware may have a short useful life if all meaningful functions depend on a proprietary cloud service that cannot be replaced.
