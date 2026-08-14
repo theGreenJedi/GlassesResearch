@@ -1,6 +1,6 @@
 # Rokid — populated research record
 
-Primary evidence includes the official terminal SDK (`EV-0024`), Rokid Glasses specifications (`EV-0025`), optical-service evidence (`EV-0038`), `docs/report-cards/BATCH_02.md`, and display-lineage research from `HIGH_THROUGHPUT_BATCH_04.md`.
+Primary evidence includes the official terminal SDK (`EV-0024`), Rokid Glasses specifications (`EV-0025`), optical-service evidence (`EV-0038`), `docs/report-cards/BATCH_02.md`, display-lineage research from `HIGH_THROUGHPUT_BATCH_04.md`, and [EV-0047](../../evidence/EV-0047-Rokid-Glasses-service-survival.md).
 
 ## Family boundary
 Rokid spans host-driven display glasses (Air/Max) and integrated camera/display/AI glasses (Rokid Glasses). Do not transfer camera, onboard processing, AI or cloud-dependence claims across classes.
@@ -11,6 +11,12 @@ Integrated AI/AR eyewear. Rokid documents a 49 g frame, Snapdragon AR1 Gen 1 + N
 Report-card anchor: H8.5 W8.5 VAI8.5 S8.0 O7.0 OC6.5 CI5.5 Hack6.5 HUD8.5; Value not yet graded.
 
 This is a strong everyday-form-factor HUD/AI product, but many headline AI services remain network/companion dependent. SDK/developer ecosystem is meaningful without approaching open-firmware/hardware benchmarks.
+
+## Service-survival boundary
+
+Rokid's first-party FAQ establishes a meaningful split. Operation and first activation require a phone, wireless internet, Rokid account and Hi Rokid app; account reassignment clears device information, and settings/firmware/media management remain app-mediated. However, six-language offline translation can run after pairing, activation and model download, while Bluetooth phone audio and onboard capture leave plausible residual value.
+
+The correct label is **recoverable with pre-provisioned local translation and phone-peripheral residue; defining AI remains service-dependent**. EV-0047 preserves the complete function table and the sign-out/endpoint-blocked test queue. “Offline” must not be rewritten as account-free or phone-free first use.
 
 ## Prescription / optical serviceability
 Rokid Glasses use an official magnetic prescription frame. Rokid explicitly states that owners may take that frame to a local optical store and have lenses made by a professional optician. Current FAQ material documents prescription customization from approximately +6.00D to -16.00D and support for myopia and astigmatism, with a lens-curvature constraint for proper fit.
