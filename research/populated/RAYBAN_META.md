@@ -1,6 +1,6 @@
 # Meta / Ray-Ban / Oakley smart eyewear — populated research record
 
-Primary evidence includes Ray-Ban Meta operations (`EV-0027`), Meta multimodal system documentation (`EV-0028`), `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, `docs/report-cards/BATCH_03.md`, `EV-0040`, [EV-0045](../../evidence/EV-0045-Meta-RayBan-Oakley-service-survival.md), and [EV-0050](../../evidence/EV-0050-mainstream-optical-serviceability-wave-seven.md). Claims remain model-scoped.
+Primary evidence includes Ray-Ban Meta operations (`EV-0027`), Meta multimodal system documentation (`EV-0028`), `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, `docs/report-cards/BATCH_03.md`, `EV-0040`, [EV-0045](../../evidence/EV-0045-Meta-RayBan-Oakley-service-survival.md), [EV-0050](../../evidence/EV-0050-mainstream-optical-serviceability-wave-seven.md), and [EV-0052](../../evidence/EV-0052-current-value-wave-one.md). Claims remain model-scoped.
 
 ## Ray-Ban Stories — GLS-0001
 First-generation capture/audio product: dual-camera capture, open-ear audio, microphones, voice control, prescription/lens options and Facebook View workflow. Camera capture existed, but meaningful scene-understanding AI did not.
@@ -29,7 +29,7 @@ This is a materially different display-equipped class; screen-free Meta scores m
 ## Oakley Meta performance branch
 ### Oakley Meta HSTN — GLS-0007
 Performance-oriented screen-free AI eyewear with up to eight hours typical battery, 3K video, integrated Meta AI, open-ear speakers, IPX4 and prescription-compatible configurations.
-Anchor: H8.5 W8.5 VAI9.0 S8.5 O3.5 OC4.0 CI4.0 Hack3.0 HUD N/A; Value not yet graded.
+Anchor: H8.5 W8.5 VAI9.0 S8.5 O3.5 OC4.0 CI4.0 Hack3.0 HUD N/A; **V7.0 at $479 (US, checked 2026-08-14).**
 
 Oakley's own FAQ states that the embedded battery in both the glasses and charging case **cannot be replaced**, and that the glasses battery cannot be removed by the end user. Oakley does sell replacement lenses and prescription configurations, so optical consumables are materially more serviceable than the electronics.
 
