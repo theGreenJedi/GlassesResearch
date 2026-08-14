@@ -27,6 +27,21 @@ GUIDES = [
     ("bluetooth-smart-glasses", "Best Bluetooth smart glasses", [("bluetooth", "yes")], "Models with verified Bluetooth support", "Bluetooth support alone does not prove standard audio profiles, multipoint pairing, BLE access, or compatibility with every phone."),
 ]
 
+GUIDE_DETAILS = {
+    "prescription-smart-glasses": (["Supported prescription range and lens type", "Ordinary-optician versus restricted-partner fitting", "Frame weight, bridge fit, and all-day comfort"], [("Can every prescription use these smart glasses?", "No. Verified prescription support does not establish support for every sphere, cylinder, prism, progressive, or high-index requirement. Confirm the exact frame and prescription range."), ("Should I choose the frame before ordering lenses?", "Yes. Lens shape, mounting method, warranty terms, and electronics placement can constrain the fitting route.")]),
+    "smart-glasses-without-cameras": (["Whether microphones or cloud assistants remain active", "Display versus audio-only operation", "Account, app, and offline requirements"], [("Are camera-free smart glasses private?", "They remove image capture, but microphones, telemetry, companion apps, accounts, and cloud processing can still create privacy exposure."), ("Can eyewear be smart without a camera?", "Yes. Audio, displays, sensors, accessibility functions, and phone interaction can augment eyewear without image capture.")]),
+    "smart-glasses-with-displays": (["Monocular versus binocular optics", "Field of view, resolution, brightness, and focus distance", "Prescription compatibility and visual comfort"], [("Is every smart-glasses display augmented reality?", "No. Some are private monitors or simple notification HUDs and do not anchor graphics to the physical world."), ("Does display support mean full color?", "No. Full color, binocular output, transparency, and spatial tracking are separate capabilities.")]),
+    "audio-smart-glasses": (["Call quality and wind handling", "Sound leakage and environmental awareness", "Runtime, charging method, and frame comfort"], [("Can audio glasses replace earbuds?", "Sometimes, especially for calls and situational awareness, but bass, isolation, leakage, and noisy-environment performance differ."), ("Do audio glasses need a special app?", "Some use standard Bluetooth audio while others reserve controls or updates for a companion app.")]),
+    "visual-ai-smart-glasses": (["What the assistant can actually recognize", "Account, phone, network, and cloud dependencies", "Capture indicators, storage, and bystander privacy"], [("Can visual AI glasses work without internet access?", "Do not assume so. Offline operation is separately verified and remains unknown for most models."), ("Does every camera model qualify as visual AI?", "No. Inclusion requires verified visual-AI capability rather than inferring intelligence from a camera.")]),
+    "smart-glasses-for-developers": (["Current SDK/API availability and license terms", "Sensor, camera, display, and raw-data access", "Firmware, community, and service longevity"], [("Does an SDK make smart glasses open?", "No. It can expose a narrow vendor-controlled surface while firmware, accounts, AI, and hardware remain closed."), ("What should a prototype team verify first?", "Verify that the exact hardware revision and its documentation, credentials, and deployment path are still obtainable.")]),
+    "open-source-smart-glasses": (["Which software and hardware layers are open", "Build instructions, source completeness, and licenses", "Community activity and reproducibility"], [("Does open-source software mean open hardware?", "No. Applications, firmware, PCB files, mechanical designs, and model weights are independent layers."), ("Are open-source glasses automatically self-hostable?", "No. Self-hosting requires a verified replacement path for the relevant service.")]),
+    "offline-smart-glasses": (["Which useful functions work offline", "Whether setup or periodic activation still needs a server", "Local storage, export, and recovery behavior"], [("Does offline operation mean cloud independent?", "Not necessarily. Setup, updates, AI, or media export may still depend on vendor services."), ("Why are so few models listed?", "The database refuses to infer offline operation; models remain excluded until documentation or testing verifies it.")]),
+    "self-hosted-ai-smart-glasses": (["Which component can be self-hosted", "Phone, local-network, and on-device processing boundaries", "Behavior when vendor infrastructure disappears"], [("Is custom AI the same as self-hosted AI?", "No. A custom endpoint does not necessarily place the complete system under owner control."), ("Does self-hosting guarantee long-term survival?", "No. Firmware, apps, authentication, batteries, and replacement parts still matter.")]),
+    "smart-glasses-for-calls-and-music": (["Verified support for both calls and playback", "Microphone wind handling and sound leakage", "Multipoint pairing, controls, comfort, and runtime"], [("Will every Bluetooth model support calls and music?", "No. Bluetooth presence does not prove the required audio profiles or reliable control behavior."), ("Why is this shortlist small?", "Both capabilities must be explicitly verified; plausible but unresolved models remain unknown.")]),
+    "smart-glasses-with-video-recording": (["Resolution, frame rate, clip limits, and stabilization", "Recording indicator and privacy behavior", "Storage, export workflow, and service dependence"], [("Does camera support guarantee video recording?", "No. Still capture and video are tracked separately."), ("What matters besides resolution?", "Stabilization, microphones, clip limits, orientation, storage, export friction, and thermal behavior can matter more.")]),
+    "bluetooth-smart-glasses": (["Bluetooth audio versus BLE data access", "Supported phone platforms and multipoint behavior", "Whether core functions require a proprietary app"], [("Does Bluetooth mean compatibility with every phone?", "No. Profiles, codecs, apps, permissions, and operating-system restrictions can still limit compatibility."), ("Is Bluetooth the same as BLE?", "No. Bluetooth Classic commonly carries audio; Bluetooth Low Energy often handles control or sensor data.")]),
+}
+
 
 def load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -90,6 +105,10 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
     if public.get("lineage"):
         paths.append(f"[Lineage research]({public['lineage']})")
     related_rows = "\n".join(f"- [{r['maker']} {r['model']}]({r['public']['model_page']}) — {r['state']}, {r['type']}" for r in related[:5])
+    guide_rows = []
+    for slug, guide_title, criteria, _, _ in GUIDES:
+        if all(capability["capabilities"].get(field, {}).get("value") == value for field, value in criteria):
+            guide_rows.append(f"- [{guide_title}](/guides/{slug}/)")
     fact_rows = "\n".join(f"| {a} | {b} | {c} |" for a, b, c in facts) or "| Research depth | No structured specification record yet | unknown |"
     cap_rows = "\n".join(f"| {name} | Yes | {prov} |" for name, prov in confirmed) or "| Confirmed capabilities | None yet | unresolved |"
     neg_text = ", ".join(negatives) if negatives else "No capability negatives are currently verified."
@@ -153,6 +172,10 @@ The [canonical catalog row](/models/THE_LIST/) is the stable identity ledger. So
 
 {related_rows or '- No closely related catalog entry is currently identified.'}
 
+## Relevant buying and use-case guides
+
+{chr(10).join(guide_rows) if guide_rows else '- This model does not currently meet the verified inclusion criteria for a focused guide.'}
+
 ## Corrections and research gaps
 
 Unknown fields are deliberately preserved as unknown. To supply primary documentation or challenge a claim, use the [research challenge process](/docs/RESEARCH_CHALLENGES/).
@@ -161,12 +184,15 @@ Unknown fields are deliberately preserved as unknown. To supply primary document
 
 def guide_page(spec: tuple, candidates: list[dict], score_map: dict, cap_map: dict) -> str:
     slug, title, criteria, heading, caveat = spec
+    decisions, faqs = GUIDE_DETAILS[slug]
     crit = " and ".join(f"**{field.replace('_', ' ')} = {value}**" for field, value in criteria)
     rows = []
     for r in candidates:
         avg = score_average(score_map.get(r["id"]))
         depth = "Report Card available" if avg >= 0 else "catalog + capability record"
         rows.append(f"| [{r['maker']} {r['model']}]({r['public']['model_page']}) | {r['state']} | {r['type']} | {depth} |")
+    decision_rows = "\n".join(f"- {item}" for item in decisions)
+    faq_text = "\n\n".join(f"## {question}\n\n{answer}" for question, answer in faqs)
     return f'''---
 title: "{title}"
 description: "{title}: a verified shortlist from canonical model and capability records, with unresolved claims left unknown."
@@ -194,9 +220,15 @@ This guide answers a specific search question using the GlassesResearch verified
 3. Follow the primary sources and check current availability, software support, account requirements, and service dependence.
 4. Use the [Glasses Finder](/docs/COMPARISON_ENGINE/) for additional filters and side-by-side comparison.
 
+### What to compare closely
+
+{decision_rows}
+
 ## Method
 
 The shortlist is generated from the same 144-record canonical catalog used by the Finder. A model is included only when every criterion above is explicitly `yes` in the capability matrix. Report Card availability is shown as research depth, not converted into a universal product ranking.
+
+{faq_text}
 
 See [all buying and use-case guides](/guides/) or [browse all 144 canonical models](/models/catalog/).
 '''
