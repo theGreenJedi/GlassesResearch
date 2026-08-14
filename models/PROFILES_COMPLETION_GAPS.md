@@ -32,7 +32,7 @@ The original **Rokid Glass** is a 2018 legacy standalone-AR product that reached
 
 ## GLS-0065 — RayNeo X2
 
-**RayNeo X2** is the commercially obtainable 2023 standalone-AR generation that precedes X3 Pro. Its canonical status matters because it shows RayNeo already shipping self-contained AR eyewear before the newer platform became the better-documented developer target. The repository currently has much stronger model-specific evidence for X3 Pro than X2, so X2's profile stays intentionally conservative: it is a real retail/developer AR generation, but its scores should come from X2-specific documentation rather than being reverse-inherited from X3 Pro. [Canonical record and primary source lead](THE_LIST.md)
+**RayNeo X2** is the commercially obtainable 2023 standalone-AR generation that precedes X3 Pro. RayNeo's surviving product and support material now establishes an XR2/6 GB/128 GB untethered platform with binocular MicroLED waveguides, a 16 MP camera, onboard sensing, prescription support and a particularly useful owner-access path: third-party Android APKs can be installed through ADB, and RayNeo documents mirroring, microphone routing and developer thermal limits. Some headline translation and visual-assistant functions use Microsoft Azure and GPT-4 with Vision, so X2 combines strong local application control with only moderate independence from network services. [Canonical record](THE_LIST.md) · [evidence and Report Card](../docs/report-cards/LINEAGE_RAYNEO_X.md)
 
 ## GLS-0067 — Snap Spectacles (2021, 4th Gen)
 
