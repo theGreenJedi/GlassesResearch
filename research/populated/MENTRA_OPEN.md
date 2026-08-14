@@ -1,43 +1,27 @@
-# Mentra / open smart-glasses ecosystem — populated research fields
+# Mentra / open smart-glasses ecosystem — populated research record
 
-This record applies the GlassesResearch evidence frameworks to the MentraOS and open smart-glasses ecosystem.
+Primary evidence includes MentraOS (`EV-0013`), MentraOS releases (`EV-0014`), Open Source Smart Glasses (`EV-0015`), Mentra Live product material and `docs/report-cards/BATCH_06.md`.
 
-## Evidence base
+## Ecosystem architecture
+Mentra is an open software/hardware ecosystem rather than one uniform hardware lineage. Device compatibility and sensors remain implementation-specific. Public source, SDK/application work and open hardware provide some of the strongest owner-inspectability evidence in GlassesResearch.
 
-Primary evidence includes MentraOS (`EV-0013`), MentraOS releases (`EV-0014`), and the Open Source Smart Glasses project (`EV-0015`).
+## Mentra Live — GLS-0038
+Current retail/developer camera/audio glasses. Mentra documents a 43 g frame, 119° camera, 3264×2448 stills, 1080p video, stereo speakers, three microphones, touch/buttons, Wi-Fi, Bluetooth, 260 mAh glasses battery, 2200 mAh charging case and 12+ hours mixed use.
 
-## Architecture
+Mentra states developers can build Android/iOS apps that directly control camera, speakers, microphone, touchpad and buttons, including offline operation without Mentra-hosted cloud infrastructure. MentraOS is MIT-licensed and publicly developed.
 
-This is an open software/hardware ecosystem rather than one consumer product lineage. Device compatibility and hardware capability must therefore be recorded per implementation.
+Report-card anchor: H8.0 W9.0 VAI8.5 S9.0 O9.5 OC9.5 CI9.5 Hack9.0 HUD N/A; Value not yet graded.
 
-## Developer access
+This is a near-benchmark example of open camera/audio eyewear. It remains below Monocle/Frame's 10/10 hardware-level benchmark because the commercial hardware itself is not documented at the same schematic/firmware/debug depth.
 
-Public source, releases, SDK/application work and open hardware are direct evidence of a strong developer surface. The open-hardware project additionally provides mechanical, electrical, firmware and software design material.
+## Open Source Smart Glasses branch
+EV-0015 provides mechanical, electrical, firmware and software design material for independently buildable glasses. This branch may exceed commercial Mentra-compatible hardware in repairability/inspectability; do not transfer those attributes automatically to every compatible product.
 
-## Owner control
+## Owner control and cloud independence
+The ecosystem structurally supports owner-selected companion applications and services. Mentra Live provides concrete evidence that core custom applications can run without Mentra cloud. Cloud AI remains an optional downstream choice rather than a required sole path for owner-written workflows.
 
-This ecosystem provides some of the strongest evidence in GlassesResearch for owner inspectability and replaceability because source and build artifacts exist publicly. Exact control still depends on the hardware target and installed software stack.
+## Connectivity/sensor rule
+Mentra compatibility is not evidence that every device has the same radio, camera, display or sensors. Populate capability per hardware target.
 
-## Cloud independence
-
-Open companion software and owner-selected services are favorable structural signals. Exact local operation, offline AI capability and service requirements should still be tested per hardware/software combination.
-
-## Connectivity and sensors
-
-Mentra-compatible devices vary. Public platform support should not be converted into claims about radios, cameras, displays or sensors on every compatible device.
-
-## Repairability and preservation
-
-Open mechanical/electrical documentation substantially improves preservation potential for the open-hardware branch. Commercial hardware used with MentraOS may have very different serviceability.
-
-## Report-card implications
-
-- Openness: very strong evidence at software and, for the open-hardware project, hardware-design levels.
-- Owner Control: structurally strong where the open stack is actually deployable.
-- Cloud Independence: potentially strong because service substitution is feasible, but exact offline functions require testing.
-- Hackability: strong due to public source, releases and buildable hardware resources.
-- Hardware/Wearability/Value: remain device-specific.
-
-## Unknowns retained
-
-For each compatible commercial device, firmware replacement, bootloader state, exact sensor access, battery behavior, optical serviceability and long-term repairability remain model-specific.
+## Research priorities
+Mentra Live current value, hardware-level firmware/debug access, battery/charging-case aging, optical serviceability, repair parts, exact BLE/Wi-Fi protocol surfaces and long-term compatibility across MentraOS releases.
