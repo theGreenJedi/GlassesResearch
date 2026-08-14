@@ -169,7 +169,7 @@ def guide_page(spec: tuple, candidates: list[dict], score_map: dict, cap_map: di
         rows.append(f"| [{r['maker']} {r['model']}]({r['public']['model_page']}) | {r['state']} | {r['type']} | {depth} |")
     return f'''---
 title: "{title}"
-description: "A verified GlassesResearch shortlist built from canonical catalog records and explicit capability evidence, with unknowns left unknown."
+description: "{title}: a verified shortlist from canonical model and capability records, with unresolved claims left unknown."
 ---
 
 # {title}
