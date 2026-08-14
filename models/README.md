@@ -25,6 +25,10 @@ Editorial volumes:
 - [XR Display Lineages — Batch 03](PROFILES_XR_DISPLAY.md)
 - [Lineage-Reconciled Smart-Glasses Profiles](PROFILES_LINEAGE_RECONCILED.md) — `GLS-0122` through `GLS-0145`, with explicit uncertainty where generation-specific specifications remain incomplete.
 - [Evidence-Boundary Completion](PROFILES_COMPLETION_GAPS.md) — the final eleven editorial gaps discovered by the public-site audit; conservative profiles for models whose acquisition evidence is stronger than their current generation-specific technical record.
+- [Additional high-throughput profiles — Batch 05](PROFILES_HIGH_THROUGHPUT_05.md)
+- [Additional high-throughput profiles — Batch 06](PROFILES_HIGH_THROUGHPUT_06.md)
+- [Additional XR display profiles](PROFILES_XR_DISPLAY_02.md)
+- Lineage profile volumes: [DAQRI](PROFILES_DAQRI_PROFESSIONAL_AR.md), [Optinvent ORA](PROFILES_LINEAGE_OPTINVENT_ORA.md), [Recon Jet](PROFILES_LINEAGE_RECON_JET.md), and [Toshiba dynaEdge](PROFILES_LINEAGE_TOSHIBA_DYNAEDGE.md)
 
 ## Current research chapters
 
@@ -67,3 +71,8 @@ The report-card library now contains lineage-first evidence packages for ODG R-s
 - [Research library](../evidence/README.md)
 - [Technical artifacts](../resources/PRIMARY_ARTIFACT_PRESERVATION_LEDGER.md)
 - [Industry timeline](../docs/INDUSTRY_TIMELINE.md)
+- [Device database format](DEVICE_DATABASE.md)
+- [Stable identifier policy](IDENTIFIER_POLICY.md)
+- [ODG R7 profile](ODG_R7_PROFILE.md)
+- [Pivothead lineage profile](profiles/PIVOTHEAD_LINEAGE.md)
+- [Amazon-listed model research](../docs/AmazonModels.md)
