@@ -1,0 +1,133 @@
+name: Daily research evidence verification
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 11:55 PM America/New_York, DST-aware.
+    - cron: "55 3 * * *"  # 11:55 PM EDT
+    - cron: "55 4 * * *"  # 11:55 PM EST
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enforce 11:55 PM Eastern cadence
+        id: cadence
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          OFFSET="$(TZ=America/New_York date +%z)"
+          SCHEDULE="${{ github.event.schedule }}"
+          if [ "$SCHEDULE" = "55 3 * * *" ] && [ "$OFFSET" = "-0400" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ "$SCHEDULE" = "55 4 * * *" ] && [ "$OFFSET" = "-0500" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out repository
+        if: steps.cadence.outputs.run == 'true'
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Locate tonight's intake branch
+        if: steps.cadence.outputs.run == 'true'
+        id: intake
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TZ: America/New_York
+        shell: bash
+        run: |
+          set -euo pipefail
+          DATE="$(date +%F)"
+          PREFIX="knowledge-intake-${DATE}-"
+          BRANCH=""
+          for attempt in 1 2 3 4 5; do
+            BRANCH="$(git ls-remote --heads origin "refs/heads/${PREFIX}*" | awk '{print $2}' | sed 's#refs/heads/##' | sort | tail -1)"
+            [ -n "$BRANCH" ] && break
+            sleep 60
+          done
+          if [ -z "$BRANCH" ]; then
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            echo "No completed intake branch found after retry window." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "found=true" >> "$GITHUB_OUTPUT"
+            echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+            git fetch origin "$BRANCH"
+            git checkout -B verification-intake "origin/$BRANCH"
+          fi
+
+      - name: Verify collected source evidence
+        if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'
+        env:
+          TZ: America/New_York
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, pathlib, urllib.request, urllib.error, datetime
+
+          date = datetime.datetime.now().astimezone().strftime('%Y-%m-%d')
+          path = pathlib.Path('research/news-candidates') / f'{date}.json'
+          if not path.exists():
+              raise SystemExit(f'Expected intake file not found: {path}')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          candidates = data.get('candidates', [])
+          seen = set()
+          rows = []
+          for item in candidates:
+              url = item.get('url', '').strip()
+              if not url or url in seen:
+                  continue
+              seen.add(url)
+              status = 'unreachable'
+              code = ''
+              try:
+                  req = urllib.request.Request(url, headers={'User-Agent':'GlassesResearch-evidence-verifier/1.0'})
+                  with urllib.request.urlopen(req, timeout=15) as response:
+                      code = response.status
+                      status = 'reachable' if 200 <= response.status < 400 else 'review'
+              except urllib.error.HTTPError as exc:
+                  code = exc.code
+                  status = 'review'
+              except Exception as exc:
+                  code = type(exc).__name__
+              rows.append((status, str(code), item.get('source_lane',''), item.get('title',''), url))
+
+          reachable = sum(r[0] == 'reachable' for r in rows)
+          report = [
+              '# Daily evidence verification', '',
+              f'- Intake date: {date}',
+              f'- Unique candidate sources checked: {len(rows)}',
+              f'- Reachable sources: {reachable}',
+              f'- Sources requiring review: {len(rows)-reachable}', '',
+              'This automated pass verifies source reachability and intake integrity. It does not by itself prove a factual claim or authorize publication; factual promotion still requires the repository evidence/editorial rules.', '',
+              '| Status | HTTP/result | Lane | Candidate | Source |',
+              '|---|---:|---|---|---|'
+          ]
+          for status, code, lane, title, url in rows:
+              title = title.replace('|','\\|')[:120]
+              report.append(f'| {status} | {code} | {lane} | {title} | {url} |')
+          pathlib.Path('daily-verification.md').write_text('\n'.join(report)+'\n', encoding='utf-8')
+          PY
+          cat daily-verification.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload verification report
+        if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'
+        uses: actions/upload-artifact@v6
+        with:
+          name: glassesresearch-daily-evidence-verification
+          path: daily-verification.md
+          retention-days: 90
+
+      - name: Inactive DST counterpart
+        if: steps.cadence.outputs.run == 'false'
+        run: echo 'Inactive Eastern-time schedule; no verification performed.'

@@ -3,9 +3,9 @@ name: Daily institutional knowledge intake
 on:
   schedule:
     # GitHub Actions cron is UTC. Run both possible UTC equivalents of
-    # 11:59 PM America/New_York, then gate on the current Eastern offset.
-    - cron: "59 3 * * *"  # 11:59 PM EDT
-    - cron: "59 4 * * *"  # 11:59 PM EST
+    # 11:51 PM America/New_York, then gate on the current Eastern offset.
+    - cron: "51 3 * * *"  # 11:51 PM EDT
+    - cron: "51 4 * * *"  # 11:51 PM EST
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - name: Enforce 11:59 PM Eastern cadence
+      - name: Enforce 11:51 PM Eastern cadence
         id: cadence
         shell: bash
         run: |
@@ -31,12 +31,12 @@ jobs:
           OFFSET="$(TZ=America/New_York date +%z)"
           SCHEDULE="${{ github.event.schedule }}"
 
-          if [ "$SCHEDULE" = "59 3 * * *" ] && [ "$OFFSET" = "-0400" ]; then
+          if [ "$SCHEDULE" = "51 3 * * *" ] && [ "$OFFSET" = "-0400" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Running 11:59 PM Eastern intake on EDT schedule."
-          elif [ "$SCHEDULE" = "59 4 * * *" ] && [ "$OFFSET" = "-0500" ]; then
+            echo "Running 11:51 PM Eastern intake on EDT schedule."
+          elif [ "$SCHEDULE" = "51 4 * * *" ] && [ "$OFFSET" = "-0500" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Running 11:59 PM Eastern intake on EST schedule."
+            echo "Running 11:51 PM Eastern intake on EST schedule."
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
             echo "Skipping inactive DST counterpart schedule."
@@ -86,10 +86,6 @@ jobs:
           git commit -m "Collect institutional knowledge intake for ${DATE}"
           git push origin "$BRANCH"
 
-          # Some repositories disable the GitHub setting that allows Actions to
-          # create pull requests. The branch itself is the durable inbox record,
-          # so preserve it and keep the collection run successful if PR creation
-          # is blocked. The Friday report discovers both PRs and inbox branches.
           if gh pr create \
             --base main \
             --head "$BRANCH" \

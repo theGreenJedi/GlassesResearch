@@ -3,10 +3,10 @@ name: Weekly GlassesResearch Report
 on:
   workflow_dispatch:
   schedule:
-    # 2:35 PM Eastern Friday, ten minutes before the 2:45 review.
+    # 1:45 PM Eastern Friday.
     # Run both UTC equivalents and gate on the active Eastern offset.
-    - cron: '35 18 * * 5' # EDT
-    - cron: '35 19 * * 5' # EST
+    - cron: '45 17 * * 5' # EDT
+    - cron: '45 18 * * 5' # EST
 
 permissions:
   contents: read
@@ -16,7 +16,7 @@ jobs:
   weekly-report:
     runs-on: ubuntu-latest
     steps:
-      - name: Enforce Friday Eastern cadence
+      - name: Enforce Friday 1:45 PM Eastern cadence
         id: cadence
         shell: bash
         run: |
@@ -27,9 +27,9 @@ jobs:
           fi
           OFFSET="$(TZ=America/New_York date +%z)"
           SCHEDULE="${{ github.event.schedule }}"
-          if [ "$SCHEDULE" = "35 18 * * 5" ] && [ "$OFFSET" = "-0400" ]; then
+          if [ "$SCHEDULE" = "45 17 * * 5" ] && [ "$OFFSET" = "-0400" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-          elif [ "$SCHEDULE" = "35 19 * * 5" ] && [ "$OFFSET" = "-0500" ]; then
+          elif [ "$SCHEDULE" = "45 18 * * 5" ] && [ "$OFFSET" = "-0500" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
@@ -43,7 +43,7 @@ jobs:
         if: steps.cadence.outputs.run == 'true'
         run: python -m pip install --quiet google-auth requests
 
-      - name: Generate combined report
+      - name: Generate combined analytics report
         if: steps.cadence.outputs.run == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -55,7 +55,7 @@ jobs:
         shell: bash
         run: python scripts/generate_weekly_report.py
 
-      - name: Upload Friday report
+      - name: Upload Friday analytics report
         if: steps.cadence.outputs.run == 'true'
         uses: actions/upload-artifact@v6
         with:
