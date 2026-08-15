@@ -13,7 +13,7 @@ This directory is the maintainer-facing operational control room for GlassesRese
 - Registrar: Namecheap
 - Search indexing: Google Search Console
 - Privacy analytics: Cloudflare Web Analytics / RUM
-- Automated research intake: daily ecosystem news collector at **12:01 AM Eastern (`America/New_York`)**
+- Automated research intake: daily ecosystem news collector at **11:59 PM Eastern (`America/New_York`)**
 
 ## Research inbox
 
@@ -39,12 +39,12 @@ Track these systems as independent layers so failures can be isolated quickly.
 | Site deployment | Green | GitHub Actions | Pages workflow validates built endpoints and live deployment |
 | Search indexing | Verified | Google Search Console | Sitemap and robots.txt should remain reachable |
 | Web analytics | Enabled globally | Cloudflare Web Analytics | Privacy-first RUM enabled globally |
-| Daily news collector | **12:01 AM Eastern daily** | GitHub Actions | Uses `America/New_York` DST-aware gating; raw candidates are review-only, never canonical automatically |
+| Daily news collector | **11:59 PM Eastern daily** | GitHub Actions | Uses `America/New_York` DST-aware gating; raw candidates are review-only, never canonical automatically |
 | Research surveys | Periodic | `research/inbox/` → `research/news-reviews/` | Record dispositions and canonical follow-ups |
 
 ## Collector schedule implementation
 
-GitHub Actions cron uses UTC and does not provide an `America/New_York` timezone setting. The collector therefore schedules both UTC equivalents of 12:01 AM Eastern—04:01 UTC for EDT and 05:01 UTC for EST—and checks the current Eastern UTC offset before doing any collection. The inactive DST counterpart exits without collecting. Manual workflow dispatch remains available and bypasses the schedule gate.
+GitHub Actions cron uses UTC and does not provide an `America/New_York` timezone setting. The collector therefore schedules both UTC equivalents of 11:59 PM Eastern—03:59 UTC for EDT and 04:59 UTC for EST—and checks the current Eastern UTC offset before doing any collection. The inactive DST counterpart exits without collecting. Manual workflow dispatch remains available and bypasses the schedule gate.
 
 The institutional rule remains simple: **collection is automatic; review and publication are human editorial decisions.**
 

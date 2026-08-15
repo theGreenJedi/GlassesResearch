@@ -3,9 +3,9 @@ name: Daily institutional knowledge intake
 on:
   schedule:
     # GitHub Actions cron is UTC. Run both possible UTC equivalents of
-    # 12:01 AM America/New_York, then gate on the current Eastern offset.
-    - cron: "1 4 * * *"  # 12:01 AM EDT
-    - cron: "1 5 * * *"  # 12:01 AM EST
+    # 11:59 PM America/New_York, then gate on the current Eastern offset.
+    - cron: "59 3 * * *"  # 11:59 PM EDT
+    - cron: "59 4 * * *"  # 11:59 PM EST
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - name: Enforce 12:01 AM Eastern cadence
+      - name: Enforce 11:59 PM Eastern cadence
         id: cadence
         shell: bash
         run: |
@@ -31,12 +31,12 @@ jobs:
           OFFSET="$(TZ=America/New_York date +%z)"
           SCHEDULE="${{ github.event.schedule }}"
 
-          if [ "$SCHEDULE" = "1 4 * * *" ] && [ "$OFFSET" = "-0400" ]; then
+          if [ "$SCHEDULE" = "59 3 * * *" ] && [ "$OFFSET" = "-0400" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Running 12:01 AM Eastern intake on EDT schedule."
-          elif [ "$SCHEDULE" = "1 5 * * *" ] && [ "$OFFSET" = "-0500" ]; then
+            echo "Running 11:59 PM Eastern intake on EDT schedule."
+          elif [ "$SCHEDULE" = "59 4 * * *" ] && [ "$OFFSET" = "-0500" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Running 12:01 AM Eastern intake on EST schedule."
+            echo "Running 11:59 PM Eastern intake on EST schedule."
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
             echo "Skipping inactive DST counterpart schedule."
