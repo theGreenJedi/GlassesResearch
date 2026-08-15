@@ -28,7 +28,7 @@
 {# The homepage already has the permanent site navigation on the left. #}
 {# Suppress Material's generated right-hand page TOC there only. #}
 {% block toc %}
-  {% if page and page.url %}
+  {% if page and not page.is_homepage %}
     {{ super() }}
   {% endif %}
 {% endblock %}
