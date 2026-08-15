@@ -80,9 +80,9 @@
   <div class="gr-section-heading">
     <div>
       <p class="gr-kicker">Explore the research</p>
-      <h2 id="gr-explore-title">A deep archive behind a simple front door.</h2>
+      <h2 id="gr-explore-title">Find the part of the ecosystem you want to understand.</h2>
     </div>
-    <p>The homepage stays curated even as the underlying research grows. Enter through the question you are trying to answer.</p>
+    <p>Start with a model, a score, a development path, or the history behind the technology.</p>
   </div>
 
   <div class="gr-explore-grid">
