@@ -130,6 +130,8 @@ A verified glasses-related development should update every durable layer it mate
 
 A single event can update several of these at once.
 
+Every new review uses `news_promotion_schema: 1`. A `publish` disposition must name affected models, affected lineages/platforms/resources, and resolvable canonical repository destinations. When a category or destination is genuinely unaffected, record `none —` followed by a concrete rationale. Public digest publication alone is not a substitute for canonical promotion. Other dispositions retain their existing requirements. The validator applies incrementally to schema-marked reviews, so historical editorial records remain intact.
+
 ## Review and publication rule
 
 The automated intake workflow may open a pull request containing **raw candidates only**. Those files are research-inbox material, not canonical facts and not publication-ready content.
