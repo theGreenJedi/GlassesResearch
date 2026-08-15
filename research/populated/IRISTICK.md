@@ -25,8 +25,11 @@ Strongest eyewear-oriented design in the packet: ~95 g safety-glasses form, 640Ã
 
 Anchor: H9.0 W8.0 VAI8.5 S8.5 O6.5 OC8.5 CI9.0 Hack6.5 HUD8.0 V8.0.
 
+### Optical serviceability
+Current Iristick documentation explicitly provides an optional magnetic prescription insert: the wearer takes it to an optician for lens fitting and then attaches it to the G3. This supports **ordinary-optician service through an owner-removable insert**, not direct service of the certified safety lens, HUD optics or electronics. Exact correction/progressive limits, materials, price, stock, certification effects and cross-model insert compatibility remain unknown. See [EV-0069](../../evidence/EV-0069-Iristick-prescription-insert-serviceability.md).
+
 ## Ownership interpretation
 Host-phone architecture keeps apps/networking under substantial owner/enterprise control and makes core operation less vendor-cloud-bound than sealed standalone appliances. Proprietary device electronics/firmware keep openness below open-hardware benchmarks.
 
 ## Evidence gaps
-Exact SDK/API licensing and sensor access, phone compatibility by model, firmware/update behavior, independent optical service, repairability, battery/parts availability, current pricing and post-vendor/service survival.
+Exact SDK/API licensing and sensor access, phone compatibility by model, firmware/update behavior, G3 correction limits and insert supply, non-optical repairability, battery/parts availability, current pricing and post-vendor/service survival.
