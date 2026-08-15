@@ -79,7 +79,7 @@ Highest-value targets are products where application openness is already known b
 
 - W610: complete BLE/Wi-Fi transfer characterization, firmware update path, chipset mapping, debug/boot behavior.
 - Solos AirGo 3/V/V2: **application/media and firmware claim boundary completed in EV-0072** — public V2 methods cover video, Wi-Fi, file enumeration/download/delete and owner endpoints; Firmware Update API is named but firmware images, signatures, rollback, recovery and offline continuity remain unresolved, and the SDK kit was unavailable at verification. Remaining: obtain SDK, endpoint-blocked reproduction, firmware-package capture and complete sensor exposure.
-- Even G2: protocol behavior below Even Hub plugin layer.
+- Even G2: **official-platform/direct-BLE boundary completed in EV-0073** — Even Hub is account, upload, review and cloud-sync mediated, while community projects demonstrate direct dual-arm BLE authentication, display, events/audio and local gateways on version-scoped official firmware. Remaining: endpoint-blocked reproduction, `.ehp` versus raw-BLE privilege comparison, firmware compatibility and update/recovery ownership.
 - Rokid Glasses / RayNeo X3 Pro / INMO Air 3: developer-mode privilege boundaries, bootloader/firmware status and sensor exposure.
 - Vuzix Android branches / RealWear / Epson / Lenovo / Iristick: APK/application access versus privileged/system access.
 
