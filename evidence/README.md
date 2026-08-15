@@ -39,3 +39,5 @@ cross-model findings:
 - [`EV-0063-Recon-Jet-service-survival.md`](EV-0063-Recon-Jet-service-survival.md) — function-level boundary between local Jet capabilities and dead Engage/Uplink activation paths.
 
 - [`EV-0064-Magic-Leap-1-shutdown-matrix.md`](EV-0064-Magic-Leap-1-shutdown-matrix.md) — destructive identity, certificate and device-management shutdown control.
+
+- [`EV-0065-Bose-Frames-service-survival.md`](EV-0065-Bose-Frames-service-survival.md) — Bluetooth survival versus discontinued Bose AR across all five canonical models.
