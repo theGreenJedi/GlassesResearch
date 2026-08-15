@@ -62,6 +62,8 @@ Do not treat `prescription compatible` as equivalent to independent serviceabili
 
 Use `research/battery-normalization.md`. Preserve manufacturer claims separately from measured results.
 
+**Source-bound claim pass completed:** EV-0071 normalizes the published claim boundaries for Even G2, Brilliant Halo, Ray-Ban Meta Gen 2 and Solos AirGo V2 without ranking unlike workloads or combining case capacity with on-face runtime.
+
 First measured candidates:
 1. W610 — hands-on control device.
 2. Even G2 — two-day claim / HUD workload.
