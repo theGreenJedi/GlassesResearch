@@ -153,6 +153,18 @@ def main() -> None:
         check=True,
     )
 
+    site_status_output = DEST / "data" / "site-status.json"
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "build_site_status.py"),
+            "--devices", str(database_output),
+            "--report-cards", str(report_card_output),
+            "--output", str(site_status_output),
+        ],
+        check=True,
+    )
+
     purchase_fallback_output = DEST / "data" / "purchase-fallbacks.json"
     subprocess.run(
         [
