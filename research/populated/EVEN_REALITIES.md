@@ -38,3 +38,7 @@ This is materially stronger than a vendor-only sealed optical unit, but it shoul
 
 ## Research priorities
 G1/G2 offline comparison, plugin behavior without Even services, BLE/protocol characterization, account/first-run requirements, battery/repairability evidence, long-term lens replacement economics and current value.
+
+## G2 owner-access boundary
+
+See [EV-0073](../../evidence/EV-0073-Even-G2-owner-access-boundary.md): official Even Hub is portal mediated, while community projects demonstrate direct BLE control. Firmware ownership and update/recovery remain unresolved.
