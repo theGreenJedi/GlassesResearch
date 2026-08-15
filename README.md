@@ -9,9 +9,9 @@ Independent, evidence-based research that helps people find, understand, and con
 </div>
 
 <div class="home-paths">
-  <a href="docs/COMPARISON_ENGINE.md"><strong>Find glasses</strong><span>Turn real needs into documented matches.</span></a>
-  <a href="docs/MODEL_RESEARCH.md"><strong>Research a model</strong><span>Follow claims through Report Cards and evidence.</span></a>
-  <a href="lineages/README.md"><strong>Explore the ecosystem</strong><span>Trace platforms, apps, protocols, and shared lineages.</span></a>
+  <a href="docs/COMPARISON_ENGINE/"><strong>Find glasses</strong><span>Turn real needs into documented matches.</span></a>
+  <a href="docs/MODEL_RESEARCH/"><strong>Research a model</strong><span>Follow claims through Report Cards and evidence.</span></a>
+  <a href="lineages/"><strong>Explore the ecosystem</strong><span>Trace platforms, apps, protocols, and shared lineages.</span></a>
 </div>
 
 ## Finder
