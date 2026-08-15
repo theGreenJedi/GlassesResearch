@@ -114,9 +114,9 @@ No lineage-wide chipset claim is promoted yet. EV-0008 contains supplier-side ch
 
 ### W610
 
-Current GlassesResearch research interest includes independent lens replacement, lens geometry, blanks/templates, and prescription conversion, but a complete evidence-backed prescription service classification has not yet been established.
+EV-0008's Goodway W610 page claims removable lenses and customizable prescription options under B2B OEM/ODM customization. The project-owned specimen supplies a concrete hands-on test surface, but its exact retention method, lens geometry, correction range and compatibility with the advertised configuration have not yet been documented. No source currently establishes replacement parts, an authorized optical channel, or acceptance by an ordinary independent optician.
 
-**State:** unknown / research in progress.
+**State:** prescription-compatible supplier claim; ordinary optical service unverified. See [EV-0068](../evidence/EV-0068-W610-optical-serviceability-boundary.md).
 
 ### Anko Camera Glasses
 
@@ -168,6 +168,6 @@ The HeyCyan relationship makes Anko a high-priority test target because a mass-m
 2. Convert the existing W610 hands-on observations into dated GlassesResearch-verified evidence records.
 3. Run the normalized offline/service-dependence test on W610.
 4. Run battery workloads on the physical W610 unit.
-5. Build an independent optical-serviceability record for W610.
+5. Execute the EV-0068 specimen measurement, lens-tracing and independent-optician closure protocol.
 6. Test CyanBridge/community-SDK compatibility on Anko when hardware becomes available.
 7. Continue OEM/regulatory correlation without assuming that software lineage equals manufacturer lineage.

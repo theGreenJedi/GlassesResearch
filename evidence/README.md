@@ -45,3 +45,5 @@ cross-model findings:
 - [`EV-0066-HoloLens-service-survival.md`](EV-0066-HoloLens-service-survival.md) — graceful HoloLens 1 survival and HoloLens 2 offline provisioning/recovery boundary.
 
 - [`EV-0067-Xiaomi-AI-Glasses-service-survival.md`](EV-0067-Xiaomi-AI-Glasses-service-survival.md) — conservative local-hardware versus unresolved AI/app/account boundary for GLS-0024.
+
+- [`EV-0068-W610-optical-serviceability-boundary.md`](EV-0068-W610-optical-serviceability-boundary.md) — supplier prescription/removable-lens claim separated from unverified ordinary optical service and a hands-on closure protocol.
