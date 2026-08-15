@@ -41,3 +41,5 @@ cross-model findings:
 - [`EV-0064-Magic-Leap-1-shutdown-matrix.md`](EV-0064-Magic-Leap-1-shutdown-matrix.md) — destructive identity, certificate and device-management shutdown control.
 
 - [`EV-0065-Bose-Frames-service-survival.md`](EV-0065-Bose-Frames-service-survival.md) — Bluetooth survival versus discontinued Bose AR across all five canonical models.
+
+- [`EV-0066-HoloLens-service-survival.md`](EV-0066-HoloLens-service-survival.md) — graceful HoloLens 1 survival and HoloLens 2 offline provisioning/recovery boundary.
