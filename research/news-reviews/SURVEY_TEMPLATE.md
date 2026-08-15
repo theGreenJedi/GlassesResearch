@@ -1,5 +1,7 @@
 # Research Inbox Survey — YYYY-MM-DD to YYYY-MM-DD
 
+<!-- news_promotion_schema: 1 -->
+
 **Survey date:** YYYY-MM-DD  
 **Candidate window:**  
 **Candidate files reviewed:**  
@@ -24,8 +26,9 @@
 - **Why it matters:**
 - **Best primary source:**
 - **Independent context:**
-- **Affected models / lineages:**
-- **Canonical destinations to update:**
+- **Affected models:** list GLS IDs/model paths, or `none — rationale`
+- **Affected lineages / platforms / resources:** list paths, or `none — rationale`
+- **Canonical destinations:** backtick-wrapped repository paths that this decision updated, or `none — rationale` when canonical research truly did not change
 - **Uncertainty / contradictions:**
 - **Candidate IDs / intake dates:**
 
