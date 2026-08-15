@@ -34,7 +34,7 @@ Primary sources:
 
 Bose states Frames are no longer available for purchase on Bose.com but that it still supports owners. Bose Connect still lists Alto/Rondo, and the Bose app lists Tempo/Tenor/Soprano. Core Frames architecture is standard Bluetooth audio; historical Bose AR is a separable software layer.
 
-Service-survival interpretation: **Discontinued-functional / supported-owner**. The product sale ended, but core local Bluetooth use and current vendor support surfaces remain. Bose AR abandonment should not be conflated with total glasses failure.
+Service-survival interpretation: **Discontinued-functional / supported-owner**. EV-0065 separates local Bluetooth audio, calls and physical controls from abandoned Bose AR experiences and identifies the remaining reset-pairing/app/firmware tests.
 
 ## Recon Jet / Pro / Pro+ — vendor support lost with activation risk
 Primary/vendor-support source: https://community.intel.com/t5/Wireless/How-to-bypass-the-recon-jet-activation-screen/m-p/1379242
