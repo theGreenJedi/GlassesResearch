@@ -11,7 +11,7 @@ The machine-readable source is [`data/ecosystem-relations.json`](../data/ecosyst
 | HeyCyan | Anko Camera Glasses; W610 | lineage, software platform, companion app, CyanBridge community project | [HeyCyan lineage](../lineages/HEYCYAN.md) |
 | Solos | AirGo V2 | AirGo lineage, Solos SDK, BLE control | [Solos lineage](../lineages/SOLOS.md) |
 | Even Realities | G2 | Even companion application, cloud AI and translation services | [G2 model research](../models/EvenG2/README.md) |
-| Mentra | Mentra Live | MentraOS, SDK, BLE transport, Mentra Community | [Mentra research](../research/populated/MENTRA_OPEN.md) |
+| Mentra | Mentra Live | MentraOS, SDK, BLE transport, Mentra Community | [Mentra Live in the canonical ledger](../models/THE_LIST.md) |
 
 ## How to read a relationship
 
