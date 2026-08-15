@@ -32,7 +32,7 @@ This is the highest-value ownership research because it distinguishes a durable 
 
 ### Preservation controls
 - Magic Leap 1: exact functionality lost after 2024-12-31 shutdown versus any surviving local behavior.
-- Recon Jet / Jet Pro / Pro+: activation/login dependence after Recon Engage shutdown and what still works locally.
+- Recon Jet / Jet Pro / Pro+: **source boundary completed in EV-0063** — the manual's mandatory Engage/Uplink first activation and Intel-confirmed shutdown are separated from documented post-activation local apps/sensors. Remaining: hands-on activated-vs-reset boot, ADB, local app, sensor and reboot-persistent bypass testing.
 - Bose Frames: what survived Bose AR discontinuation; distinguish Bluetooth audio from abandoned AR software.
 - RealWear HMT-1/HMT-1Z1: present-day local operation after end of support and firmware 12.6.
 - HoloLens 1/2: post-support local application/install/account constraints.
