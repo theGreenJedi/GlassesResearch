@@ -9,7 +9,7 @@ The 2023 mapping and model identity are now strongly corroborated as **MJSS010FC
 
 ## Separate 2022 camera/display branch
 
-GLS-0023 Mijia Glasses Camera is now bounded separately in [EV-0062](../../evidence/EV-0062-Mijia-Glasses-Camera-identity-boundary.md). Xiaomi-hosted coverage, a Bluetooth-certificate index and a peer-reviewed use record strongly associate the camera/display device with model `MJSV01FC`. Its camera, Micro OLED display and 2022 launch identity must not be merged with the 2023 audio-glasses branch. Detailed scoring remains deferred until the direct certificate, manual and software/service-survival evidence are preserved.
+GLS-0023 Mijia Glasses Camera is bounded separately in [EV-0062](../../evidence/EV-0062-Mijia-Glasses-Camera-identity-boundary.md). A Beijing municipal-government product list directly maps Beijing Fengchao, Glasses Camera and model `MJSV01FC`; Xiaomi-hosted coverage, a Bluetooth-certificate index and peer-reviewed use records independently converge on the same 2022 camera/display branch. Its camera and Micro OLED architecture must not be merged with the 2023 audio-glasses branch. A conservative generation-specific card now lives in [`LINEAGE_XIAOMI_MIJIA_CAMERA.md`](../../docs/report-cards/LINEAGE_XIAOMI_MIJIA_CAMERA.md); manual and software/service-survival work remains ordinary enrichment.
 
 ## Xiaomi Smart Audio Glasses
 Xiaomi documents open-ear audio, wear detection, Bluetooth 5.2, two microphones, first-generation quick-release/flexible-hinge architecture, about 10 hours continuous playback and seven hours calls. Weight without lenses is 33.4 g in Xiaomi's comparison.
