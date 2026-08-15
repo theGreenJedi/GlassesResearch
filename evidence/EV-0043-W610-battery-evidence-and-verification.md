@@ -36,6 +36,8 @@ No teardown photo, cell label, charging trace, measured watt-hours, cycle-life s
 
 ## Non-destructive verification protocol
 
+Use the repository's [W610 normalized battery benchmark log](../models/W610/diagnostics/battery-benchmark-log.md), preserving one completed copy per run.
+
 1. Record exact device/revision identifiers, firmware, app/SDK version and ambient temperature.
 2. Charge to the device-reported 100%; record input voltage/current with an inline magnetic-cable power meter if electrically compatible.
 3. Leave connected for a defined taper period; record total input Wh while explicitly noting conversion loss means input Wh is not cell Wh.
