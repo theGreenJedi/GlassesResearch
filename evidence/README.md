@@ -49,3 +49,5 @@ cross-model findings:
 - [`EV-0068-W610-optical-serviceability-boundary.md`](EV-0068-W610-optical-serviceability-boundary.md) — supplier prescription/removable-lens claim separated from unverified ordinary optical service and a hands-on closure protocol.
 
 - [`EV-0069-Iristick-prescription-insert-serviceability.md`](EV-0069-Iristick-prescription-insert-serviceability.md) — ordinary-optician fitting through the owner-removable G3 magnetic insert, with correction and certification limits kept unknown.
+
+- [`EV-0070-adaptive-Rx-optical-boundaries.md`](EV-0070-adaptive-Rx-optical-boundaries.md) — Dusk Rx and Aura Rx vendor prescription configurations separated from unverified independent reglazing and replacement service.
