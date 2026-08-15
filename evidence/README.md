@@ -51,3 +51,5 @@ cross-model findings:
 - [`EV-0069-Iristick-prescription-insert-serviceability.md`](EV-0069-Iristick-prescription-insert-serviceability.md) — ordinary-optician fitting through the owner-removable G3 magnetic insert, with correction and certification limits kept unknown.
 
 - [`EV-0070-adaptive-Rx-optical-boundaries.md`](EV-0070-adaptive-Rx-optical-boundaries.md) — Dusk Rx and Aura Rx vendor prescription configurations separated from unverified independent reglazing and replacement service.
+
+- [`EV-0071-normalized-battery-claims-wave-one.md`](EV-0071-normalized-battery-claims-wave-one.md) — workload-specific battery claims for Even G2, Brilliant Halo, Ray-Ban Meta Gen 2 and Solos AirGo V2 kept separate from measured endurance and case replenishment.
