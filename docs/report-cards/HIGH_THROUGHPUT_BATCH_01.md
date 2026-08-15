@@ -141,11 +141,11 @@ Primary source: https://consumer.huawei.com/es/gentle-monster-eyewear2/specs/
 | Display / HUD | N/A | No visual display is documented. |
 | Openness | 3.0 | No broad public SDK/firmware program located. |
 | Owner Control | 3.5 | Strong device features but little evidence owners can substitute core AI/software. |
-| Cloud Independence | 4.5 | Some local device processing/storage exists, but headline AI services are materially connected. |
+| Cloud Independence | 4.5 | EV-0067 confirms local capture/storage architecture but leaves account-free activation, media access and on-device versus phone/cloud AI processing explicitly unresolved. |
 | Hackability | 3.0 | Strong hardware, weak documented modification path. |
 | Value | Not yet graded | Launch price is known, but catalog-relative value pass remains pending. |
 
-Primary source: https://www.mi.com/global/discover/article?id=5172
+Primary sources: https://www.mi.com/global/discover/article?id=5172 ; [service-survival boundary](../../evidence/EV-0067-Xiaomi-AI-Glasses-service-survival.md)
 
 ## GLS-0025 — HTC VIVE Eagle
 
