@@ -20,7 +20,7 @@ Bose states that Frames are no longer available for purchase on Bose.com but tha
 
 **Service status:** **Discontinued-functional / supported-owner.** Product sales have ended, but vendor support surfaces and companion-app compatibility remain. Historical Bose AR abandonment is therefore a loss of one software layer, not evidence that the glasses as Bluetooth audio devices are dead.
 
-This distinction materially supports Cloud Independence: local Bluetooth audio/calling survives separately from abandoned location/motion-driven AR services.
+EV-0065 locks the function-level boundary: local Bluetooth audio/calling and physical controls survive separately from abandoned Bose AR experiences. Current Bose compatibility pages still list both generations, while app-mediated firmware status, account-free reset pairing and regional support remain empirical follow-up.
 
 ## Ownership interpretation
 Core Bluetooth playback/calls remain useful without a Bose cloud. Historical Bose AR created a limited developer-facing sensor experience but did not open firmware/hardware. Later generations became more polished consumer audio products and less developer-oriented, explaining lower openness/hackability despite improved hardware.
@@ -29,4 +29,4 @@ Core Bluetooth playback/calls remain useful without a Bose cloud. Historical Bos
 No camera and no wearer display: Visual AI and HUD are N/A across the lineage unless future evidence establishes a materially different product.
 
 ## Evidence gaps
-Exact Bose AR shutdown chronology, remaining firmware-update capability, battery/repair/lens serviceability, current used-market value and whether every regional app/support path remains functional.
+Source boundary completed in EV-0065. Remaining: one reset-device test per generation covering account-free pairing, app discovery, firmware, retained settings, endpoint blocking, battery/repair/lens serviceability and current used-market value.
