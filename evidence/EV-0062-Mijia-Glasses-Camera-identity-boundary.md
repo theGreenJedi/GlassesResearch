@@ -1,6 +1,6 @@
 # EV-0062 — Mijia Glasses Camera identity and evidence boundary
 
-**Status:** Model identity strongly corroborated; manual and direct regulatory record still sought  
+**Status:** Model identity resolved for catalog/report-card use; manufacturer manual and direct Bluetooth exhibit still sought  
 **Model:** Xiaomi Mijia Glasses Camera  
 **Candidate model number:** `MJSV01FC`  
 **Launch period:** August 2022  
@@ -12,7 +12,7 @@ Can GLS-0023 be separated cleanly from Xiaomi's audio-glasses branches and tied 
 
 ## Finding
 
-The surviving Xiaomi route at `https://www.mi.com/mjglass`, Xiaomi-hosted product-trial coverage, contemporaneous launch reporting, a Bluetooth-certification index, commercial records, and a 2025 peer-reviewed study converge on a distinct 2022 camera/display product identified as **Mijia Glasses Camera** and associated with model **MJSV01FC**.
+A Beijing municipal-government new-product list directly names **Beijing Fengchao Century Technology Co., Ltd.**, product **Glasses Camera**, and model **MJSV01FC**. That primary identity record converges with the surviving Xiaomi route at `https://www.mi.com/mjglass`, Xiaomi-hosted product-trial coverage, contemporaneous launch reporting, a Bluetooth-certification index, commercial records, and peer-reviewed use records.
 
 This is not the 2023 Mijia Smart Audio Glasses. The 2022 device has cameras and a near-eye AR display; the audio branch is ordinary-form open-ear Bluetooth eyewear without that camera/display architecture.
 
@@ -22,13 +22,17 @@ This is not the 2023 Mijia Smart Audio Glasses. The 2022 device has cameras and 
 
 A Xiaomi community/product-trial page describes a dual-camera product with a Sony Micro OLED and external free-form AR optical engine. Because this is hosted by Xiaomi but written as a trial/review account, GlassesResearch records it as **Xiaomi-hosted community evidence**, not a formal specification sheet.
 
+### Primary identity record
+
+The Beijing Municipal Science and Technology Commission's 2023 second-batch new-product list records Beijing Fengchao Century Technology Co., Ltd., the product name 眼镜相机 (Glasses Camera), and model `MJSV01FC`. This is direct government-hosted evidence for the company/product/model mapping, though it is not a technical datasheet.
+
 ### Independent identity corroboration
 
 - A Bluetooth Launch Studio certificate index records the Chinese and English product names with model `MJSV01FC` and a 2022-08-02 date.
 - A 2025 peer-reviewed medical-training study identifies the eyeglass camera used in its protocol as `MJSV01FC`.
 - Multiple period commercial records use the same model number for the Mijia Glasses Camera and its dedicated charging accessory.
 
-These independent records make the model mapping substantially stronger, but the direct Bluetooth certificate and manufacturer manual remain preferable preservation targets.
+Together with the government list, these records close the catalog identity question. The direct Bluetooth certificate and manufacturer manual remain preferable technical preservation targets.
 
 ## Conservatively supported characteristics
 
@@ -56,10 +60,11 @@ Period reporting and commercial records additionally describe 32 GB storage, Sna
 
 ## Catalog and Report Card effect
 
-GLS-0023 remains a valid separate model with its 2022 identity strengthened. Detailed scoring should remain deferred: camera/display hardware is established, but Software, Openness, Owner Control, Cloud Independence and Hackability cannot be graded responsibly from the surviving evidence packet.
+GLS-0023 is a valid separate canonical model and now has a conservative card in [`LINEAGE_XIAOMI_MIJIA_CAMERA.md`](../docs/report-cards/LINEAGE_XIAOMI_MIJIA_CAMERA.md). Hardware/display strengths are graded from the established architecture; Software, Openness, Owner Control, Cloud Independence and Hackability remain deliberately low-confidence and conservative because present-day service and owner-access behavior is untested.
 
 ## Sources
 
+- [Beijing municipal-government new-product list (PDF)](https://kw.beijing.gov.cn/zwgk/tzgg/202312/P020240919619054378012.pdf)
 - [Surviving Xiaomi product route](https://www.mi.com/mjglass)
 - [Xiaomi-hosted product-trial account](https://web.vip.miui.com/page/info/mio/mio/detail?app_version=dev.20051&postId=38575976)
 - [Contemporaneous August 2022 launch report](https://mashdigi.com/xiaomi-launched-the-mijia-glasses-camera-allowing-users-eyes-to-learn-to-zoom-and-record-the-first-10-seconds-of-the-momentary-picture/)
