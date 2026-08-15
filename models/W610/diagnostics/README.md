@@ -12,7 +12,7 @@ This section records normal-state baselines, reproducible fault tests, charging 
 
 ## First diagnostic checklist
 
-Use the [baseline checklist](baseline-checklist.md) for the repeatable procedure.
+Use the [baseline checklist](baseline-checklist.md) for the repeatable procedure. Battery runs use the [normalized battery benchmark log](battery-benchmark-log.md); preserve one completed copy per run rather than replacing earlier evidence.
 
 1. Record charge source, cable/adapter, LED response, and elapsed charging time.
 2. Test cold boot, short press, long press, and power-cycle behavior.
