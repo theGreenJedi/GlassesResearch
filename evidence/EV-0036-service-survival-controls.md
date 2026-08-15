@@ -24,7 +24,7 @@ Primary source: https://learn.microsoft.com/en-us/hololens/hololens-release-note
 
 Microsoft documents November 2024 as the final feature release for HoloLens 2 while monthly security servicing continues through December 2027. Windows 10 branches reached their final monthly servicing in December 2024, with Windows 11 recommended for continued servicing.
 
-Service-survival interpretation: **Maintenance / winding down**, not dead. OS version materially changes support horizon.
+Service-survival interpretation: **Maintenance / winding down**, not dead. EV-0066 documents local-account offline provisioning, USB/Device Portal application installation and pre-downloaded FFU recovery, while retaining the default network/account OOBE boundary. OS version materially changes support horizon.
 
 ## Bose Frames — product discontinued, owner support persists
 Primary sources:
