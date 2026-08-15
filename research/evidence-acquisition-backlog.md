@@ -33,7 +33,7 @@ This is the highest-value ownership research because it distinguishes a durable 
 ### Preservation controls
 - Magic Leap 1: **source boundary completed in EV-0064** — annual Identity re-authentication, signing-certificate renewal, Device Manager, Private App Sharing, Backup/Restore and application install/update loss are separated from still-unknown electrical boot/local residue. Remaining: authenticated-vs-expired/reset hands-on boot, app, USB/ADB, media and endpoint tests.
 - Recon Jet / Jet Pro / Pro+: **source boundary completed in EV-0063** — the manual's mandatory Engage/Uplink first activation and Intel-confirmed shutdown are separated from documented post-activation local apps/sensors. Remaining: hands-on activated-vs-reset boot, ADB, local app, sensor and reboot-persistent bypass testing.
-- Bose Frames: what survived Bose AR discontinuation; distinguish Bluetooth audio from abandoned AR software.
+- Bose Frames: **source boundary completed in EV-0065** — ordinary Bluetooth audio/calls and physical controls are separated from abandoned Bose AR experiences; current Bose compatibility pages still list both generations. Remaining: reset-device pairing, app/account, firmware, retained-settings, region and endpoint-blocked tests.
 - RealWear HMT-1/HMT-1Z1: present-day local operation after end of support and firmware 12.6.
 - HoloLens 1/2: post-support local application/install/account constraints.
 
