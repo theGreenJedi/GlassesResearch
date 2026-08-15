@@ -37,3 +37,5 @@ cross-model findings:
 **Regulatory primary** records come from government or standards filings tied to an identified device. **Vendor primary** records come from the manufacturer or platform owner. **Community primary** records are originating public projects, repositories, or releases. **Community report** records are specific attributable discussions or reports. **GlassesResearch verified** identifies observations or tests reproduced by this project.
 
 - [`EV-0063-Recon-Jet-service-survival.md`](EV-0063-Recon-Jet-service-survival.md) — function-level boundary between local Jet capabilities and dead Engage/Uplink activation paths.
+
+- [`EV-0064-Magic-Leap-1-shutdown-matrix.md`](EV-0064-Magic-Leap-1-shutdown-matrix.md) — destructive identity, certificate and device-management shutdown control.
