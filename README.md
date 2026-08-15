@@ -16,6 +16,11 @@
     <div class="gr-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
     <p class="gr-panel-label">The research system</p>
     <p class="gr-panel-title">Research.<br>Preserve.<br>Compare.</p>
+    <div class="gr-device-graphic" aria-hidden="true">
+      <span class="lens lens-left"></span><span class="lens lens-right"></span><span class="bridge"></span>
+      <span class="temple temple-left"></span><span class="temple temple-right"></span>
+      <span class="sensor sensor-a"></span><span class="sensor sensor-b"></span><span class="signal"></span>
+    </div>
     <div class="home-status" id="homepage-status" aria-label="Research status">
       <div><strong data-site-stat="models">Living catalog</strong><span>canonical models</span></div>
       <div><strong data-site-stat="report-cards">Scored research</strong><span>Report Cards</span></div>
@@ -55,6 +60,7 @@
 
   <div class="gr-editorial-grid">
     <a class="gr-feature-story" href="docs/RESEARCH_NEWS/#august-11-2026-courts-in-england-and-wales-prohibit-meta-smart-glasses">
+      <span class="gr-story-art" aria-hidden="true"></span>
       <span class="gr-story-tag">Policy &amp; use</span>
       <strong>Courts in England and Wales prohibit Meta smart glasses</strong>
       <span>Device-specific institutional rules are beginning to define where camera-equipped eyewear can actually be worn.</span>
