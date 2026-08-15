@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "nodes": [
+    {
+      "id": "model:gls-0146-anko",
+      "type": "model",
+      "label": "Anko Camera Glasses",
+      "path": "models/AnkoCameraGlasses/README.md",
+      "status": "current"
+    },
+    {
+      "id": "model:w610",
+      "type": "model",
+      "label": "W610 camera glasses",
+      "path": "models/W610/README.md",
+      "status": "current"
+    },
+    {
+      "id": "lineage:hecyan",
+      "type": "lineage",
+      "label": "HeyCyan ecosystem",
+      "path": "lineages/HEYCYAN.md",
+      "status": "current"
+    },
+    {
+      "id": "platform:hecyan",
+      "type": "operating_platform",
+      "label": "HeyCyan software platform",
+      "path": "lineages/HEYCYAN.md",
+      "status": "current"
+    },
+    {
+      "id": "app:hecyan",
+      "type": "companion_app",
+      "label": "HeyCyan companion app",
+      "path": "lineages/HEYCYAN.md",
+      "status": "current"
+    },
+    {
+      "id": "community:cyanbridge",
+      "type": "community_project",
+      "label": "CyanBridge",
+      "url": "https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK",
+      "status": "current"
+    },
+    {
+      "id": "model:gls-0029",
+      "type": "model",
+      "label": "Solos AirGo V2",
+      "path": "models/SolosAirGo/README.md",
+      "status": "current"
+    },
+    {
+      "id": "lineage:solos",
+      "type": "lineage",
+      "label": "Solos AirGo family",
+      "path": "lineages/SOLOS.md",
+      "status": "current"
+    },
+    {
+      "id": "sdk:solos",
+      "type": "sdk_api",
+      "label": "Solos SDK",
+      "path": "docs/SDK_API_MATRIX.md",
+      "status": "current"
+    },
+    {
+      "id": "protocol:ble",
+      "type": "protocol_transport",
+      "label": "Bluetooth Low Energy",
+      "path": "docs/BLE.md",
+      "status": "current"
+    },
+    {
+      "id": "model:gls-0048",
+      "type": "model",
+      "label": "Even Realities G2",
+      "path": "models/EvenG2/README.md",
+      "status": "current"
+    },
+    {
+      "id": "app:even",
+      "type": "companion_app",
+      "label": "Even companion application",
+      "path": "models/EvenG2/README.md",
+      "status": "current"
+    },
+    {
+      "id": "service:even-ai",
+      "type": "ai_service",
+      "label": "Even cloud AI and translation services",
+      "path": "evidence/EV-0073-Even-G2-owner-access-boundary.md",
+      "status": "current"
+    },
+    {
+      "id": "model:gls-0038",
+      "type": "model",
+      "label": "Mentra Live",
+      "path": "models/THE_LIST.md",
+      "status": "current"
+    },
+    {
+      "id": "platform:mentraos",
+      "type": "operating_platform",
+      "label": "MentraOS",
+      "path": "research/populated/MENTRA_OPEN.md",
+      "status": "current"
+    },
+    {
+      "id": "sdk:mentraos",
+      "type": "sdk_api",
+      "label": "MentraOS SDK",
+      "path": "hacking/OPEN_HACKING_RESOURCE_LEDGER.md",
+      "status": "current"
+    },
+    {
+      "id": "community:mentra",
+      "type": "community_project",
+      "label": "Mentra Community",
+      "url": "https://github.com/Mentra-Community",
+      "status": "current"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel:anko-hecyan-lineage",
+      "from": "model:gls-0146-anko",
+      "to": "lineage:hecyan",
+      "type": "member_of",
+      "evidence": [
+        {
+          "path": "models/AnkoCameraGlasses/README.md",
+          "claim": "The model page identifies HeyCyan as the technology lineage."
+        }
+      ],
+      "provenance": "independent",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:w610-hecyan-lineage",
+      "from": "model:w610",
+      "to": "lineage:hecyan",
+      "type": "member_of",
+      "evidence": [
+        {
+          "path": "lineages/HEYCYAN.md",
+          "claim": "The lineage research includes W610-class hardware."
+        }
+      ],
+      "provenance": "mixed",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:anko-hecyan-platform",
+      "from": "model:gls-0146-anko",
+      "to": "platform:hecyan",
+      "type": "uses_platform",
+      "evidence": [
+        {
+          "path": "models/AnkoCameraGlasses/README.md",
+          "claim": "Independent reporting documents use of the HeyCyan software platform."
+        }
+      ],
+      "provenance": "independent",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:anko-hecyan-app",
+      "from": "model:gls-0146-anko",
+      "to": "app:hecyan",
+      "type": "requires_app",
+      "evidence": [
+        {
+          "path": "models/AnkoCameraGlasses/README.md",
+          "claim": "The documented features and media transfer are mediated by HeyCyan software."
+        }
+      ],
+      "provenance": "independent",
+      "confidence": "medium",
+      "status": "established"
+    },
+    {
+      "id": "rel:cyanbridge-hecyan",
+      "from": "community:cyanbridge",
+      "to": "platform:hecyan",
+      "type": "community_supports",
+      "evidence": [
+        {
+          "path": "models/AnkoCameraGlasses/README.md",
+          "claim": "CyanBridge is documented as an alternative HeyCyan app and SDK."
+        }
+      ],
+      "provenance": "community",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:airgo-solos",
+      "from": "model:gls-0029",
+      "to": "lineage:solos",
+      "type": "member_of",
+      "evidence": [
+        {
+          "path": "models/SolosAirGo/README.md",
+          "claim": "AirGo V2 is listed in the Solos AirGo family."
+        }
+      ],
+      "provenance": "primary",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:airgo-sdk",
+      "from": "model:gls-0029",
+      "to": "sdk:solos",
+      "type": "exposes_sdk",
+      "evidence": [
+        {
+          "path": "models/SolosAirGo/README.md",
+          "claim": "The Solos developer program explicitly covers AirGo V2."
+        }
+      ],
+      "provenance": "primary",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:airgo-ble",
+      "from": "model:gls-0029",
+      "to": "protocol:ble",
+      "type": "uses_protocol",
+      "evidence": [
+        {
+          "path": "models/SolosAirGo/README.md",
+          "claim": "The SDK documentation identifies BLE for control."
+        }
+      ],
+      "provenance": "primary",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:even-app",
+      "from": "model:gls-0048",
+      "to": "app:even",
+      "type": "requires_app",
+      "evidence": [
+        {
+          "path": "models/EvenG2/README.md",
+          "claim": "The G2 uses the Even companion application."
+        }
+      ],
+      "provenance": "primary",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:even-service",
+      "from": "model:gls-0048",
+      "to": "service:even-ai",
+      "type": "depends_on_service",
+      "evidence": [
+        {
+          "path": "evidence/EV-0073-Even-G2-owner-access-boundary.md",
+          "claim": "Current AI and translation functions cross the documented service boundary."
+        }
+      ],
+      "provenance": "primary",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:mentra-platform",
+      "from": "model:gls-0038",
+      "to": "platform:mentraos",
+      "type": "uses_platform",
+      "evidence": [
+        {
+          "path": "research/populated/MENTRA_OPEN.md",
+          "claim": "Mentra Live is documented in the MentraOS research record."
+        }
+      ],
+      "provenance": "primary",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:mentra-sdk",
+      "from": "platform:mentraos",
+      "to": "sdk:mentraos",
+      "type": "exposes_sdk",
+      "evidence": [
+        {
+          "path": "evidence/EV-0060-Mentra-Bluetooth-SDK-OTA-owner-control.md",
+          "claim": "The evidence record documents the SDK and owner-access boundary."
+        }
+      ],
+      "provenance": "mixed",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:mentra-ble",
+      "from": "model:gls-0038",
+      "to": "protocol:ble",
+      "type": "uses_protocol",
+      "evidence": [
+        {
+          "path": "evidence/EV-0060-Mentra-Bluetooth-SDK-OTA-owner-control.md",
+          "claim": "Bluetooth transport is documented for Mentra Live."
+        }
+      ],
+      "provenance": "primary",
+      "confidence": "high",
+      "status": "established"
+    },
+    {
+      "id": "rel:mentra-community",
+      "from": "community:mentra",
+      "to": "platform:mentraos",
+      "type": "community_supports",
+      "evidence": [
+        {
+          "path": "resources/COMMUNITY_AND_DEVELOPMENT.md",
+          "claim": "The cross-vendor community ledger links the Mentra community organization."
+        }
+      ],
+      "provenance": "community",
+      "confidence": "high",
+      "status": "established"
+    }
+  ]
+}

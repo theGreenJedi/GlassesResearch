@@ -33,6 +33,10 @@ Relationships or technical conclusions derived from incomplete evidence. State t
 
 These lanes may support one another, but they must never be silently collapsed.
 
+## Relationship layer
+
+The [Ecosystem relationship map](ECOSYSTEM_MAP.md) represents cross-layer claims as evidence-backed edges instead of prose-only associations. Models, lineages, manufacturers, platforms, companion apps, SDKs/APIs, firmware families, transports, AI services, and community projects remain distinct node classes. Each relation records provenance, confidence, and whether it is established, inferred, or unresolved.
+
 ## Growth path
 
 1. Add a real model or platform to the populated registry with at least one useful source.

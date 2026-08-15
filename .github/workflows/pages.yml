@@ -54,6 +54,9 @@ jobs:
       - name: Validate news promotion destinations
         run: python scripts/verify_news_promotion.py --self-test
 
+      - name: Validate ecosystem relationships
+        run: python scripts/validate_ecosystem_relations.py
+
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
