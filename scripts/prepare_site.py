@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 import shutil
 import subprocess
 import sys
@@ -52,6 +53,65 @@ PUBLIC_SITE_EXCLUDES = (
     "resources/VALIDATION.md",
     "timeline/README.md",
 )
+
+# Public presentation should show the result of the research system, not narrate
+# the machinery that produced it. Internal methodology remains in the repository.
+PUBLIC_NARRATION_REPLACEMENTS = (
+    (
+        "A model entry is not complete merely because it appears in a catalog. Each GlassesResearch profile should explain, in ordinary language, **what the glasses really are, what is interesting about them, where they are strong, and what tradeoffs matter**. The structured Report Card remains useful underneath; this page is the human-readable layer.\n\nProfiles are published only when the available evidence supports something more useful than generic product description. Missing profiles are research work to be done, not invitations to manufacture filler.\n\n",
+        "",
+    ),
+    (
+        "Only confirmed facts are presented as positive. An unresolved field is not treated as a negative.\n\n",
+        "",
+    ),
+    (
+        "The [canonical catalog row](/models/THE_LIST/) is the stable identity ledger. Source links document the catalog claim; deeper specifications may have their own citations in the comparison record.\n\n",
+        "",
+    ),
+    (
+        "Unknown fields are deliberately preserved as unknown. To supply primary documentation or challenge a claim, use the [research challenge process](/docs/RESEARCH_CHALLENGES/).",
+        "See an error or have stronger evidence? [Submit a research challenge](/docs/RESEARCH_CHALLENGES/).",
+    ),
+    (
+        "W610's report card remains incomplete because direct evidence matters more here than filling blanks with assumptions.",
+        "W610 report card fields without sufficient evidence remain unscored.",
+    ),
+)
+
+
+def strip_public_infrastructure_narration() -> None:
+    """Remove editorial/build-process narration from visitor-facing presentation pages."""
+    targets = []
+    targets.extend((DEST / "models").glob("PROFILES*.md"))
+    targets.extend((DEST / "models" / "catalog").glob("*.md"))
+    targets.extend((DEST / "guides").glob("*.md"))
+
+    for path in targets:
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        for old, new in PUBLIC_NARRATION_REPLACEMENTS:
+            text = text.replace(old, new)
+
+        # Generated model pages should state the coverage result directly rather
+        # than explaining the epistemic policy that created it.
+        text = re.sub(
+            r"\*\*Coverage note:\*\* (\d+) capability fields remain unknown\. That is a research status, not a product limitation\.",
+            r"**Unknown capabilities:** \1",
+            text,
+        )
+
+        # Search-intent guides should lead with the selection itself, not explain
+        # the database pipeline. Keep the criteria visible and useful.
+        text = re.sub(
+            r"This guide answers a specific search question using the GlassesResearch verified database\. Inclusion requires (.+?); unknown values never qualify\. It is a research shortlist rather than an affiliate ranking, and it changes when stronger evidence enters the database\.",
+            r"Included models have verified \1.",
+            text,
+        )
+        text = re.sub(r"\n## Method\n\n.*?(?=\n## |\Z)", "\n", text, flags=re.DOTALL)
+
+        path.write_text(text, encoding="utf-8")
 
 
 def main() -> None:
@@ -186,6 +246,8 @@ def main() -> None:
         ],
         check=True,
     )
+
+    strip_public_infrastructure_narration()
 
     subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "build_internal_model_links.py"), "--output-root", str(DEST)],
