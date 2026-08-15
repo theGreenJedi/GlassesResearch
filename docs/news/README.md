@@ -13,7 +13,9 @@ This is the news archive and research-intake landing for GlassesResearch. Curren
 
 ## Freshness
 
-Automated research retrieval runs **every day at 11:59 PM Eastern (`America/New_York`)**. Retrieval is intentionally broader than publication: new candidates enter the research inbox first, then verified developments are promoted into the public Research & News record and other canonical pages when warranted.
+Automated research retrieval runs **every day at 11:51 PM Eastern (`America/New_York`)**. A separate automated evidence-verification pass begins at **11:55 PM Eastern**, checks the completed nightly intake and its source evidence, and records anything requiring further review. Retrieval is intentionally broader than publication: candidates enter the research inbox first, and only developments that satisfy the project's evidence and editorial rules may be promoted into the public Research & News record and other canonical pages.
+
+The weekly analytics report runs **Fridays at 1:45 PM Eastern** and is operationally separate from nightly research retrieval and verification.
 
 A dated digest is a durable snapshot, not a claim that no newer research exists. The current Research & News page is the authoritative public landing for the latest reviewed developments.
 
