@@ -17,7 +17,7 @@ HMT-1/HMT-1Z1 established the rugged monocular Android model with 854×480 displ
 
 RealWear now explicitly classifies HMT-1/HMT-1Z1 as End of Life / End of Support. Firmware 12.6 is the final firmware line and no further security updates are planned. Crucially, RealWear also states that an end-of-life device **will still work**, while warning that third-party applications may eventually fail and no new Android security patches will arrive.
 
-Service-survival state: **discontinued-functional**, not nonfunctional. This is a useful Cloud Independence control case: vendor support ended without remotely disabling the core device.
+Service-survival state: **discontinued-functional**, not nonfunctional. This source boundary is now reflected in structured records GLS-0101 and GLS-0102: vendor support ended without remotely disabling the core device.
 
 ## Function-level offline evidence
 Release 12 documentation distinguishes local from cloud dictation. English, German and Mandarin Chinese support local dictation without internet connectivity; other supported dictation languages rely on cloud dictation. Core operation is therefore neither wholly offline nor wholly cloud-bound.
@@ -35,4 +35,4 @@ Do not transfer this backward across the lineage: RealWear explicitly identifies
 Android enterprise application deployment gives meaningful owner/application control and practical local operation. The platform remains proprietary, so public app deployment should not be confused with open firmware, schematics or unrestricted low-level access. HMT-1/HMT-1Z1 demonstrate that proprietary hardware can nevertheless retain useful local operation after vendor EOS; Navigator adds unusually strong field-serviceable power hardware.
 
 ## Evidence gaps
-Current value by generation, exact SDK/API exposure, account/MDM dependence, non-battery module/parts availability, prescription/PPE fit, firmware access and long-term third-party-app survival remain open.
+Source boundary completed. Remaining: hands-on reset, app deployment, MDM/account, endpoint blocking and third-party-app survival; plus current value, SDK/API depth, parts, power repairability and PPE fit.

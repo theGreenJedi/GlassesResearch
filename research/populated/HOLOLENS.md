@@ -23,8 +23,12 @@ Microsoft documents November 2024 as the final feature release while monthly sec
 
 Report-card anchor: H9.0 W2.5 VAI7.5 S9.0 O7.0 OC8.0 CI8.0 Hack7.5 HUD9.5; Value not yet graded.
 
+## Service-survival matrix
+
+EV-0066 establishes that HoloLens 1 continues functioning with local Device Portal/Visual Studio deployment after support. For HoloLens 2, ordinary first run requires network plus Microsoft/Entra identity, but Microsoft also documents local-account secure-offline provisioning, signed Appx installation by USB/File Explorer, Device Portal deployment and offline FFU recovery when the image was downloaded in advance.
+
 ## Ownership interpretation
 Both generations support local spatial-computing applications and meaningful developer control. HoloLens 1's continued function after support ends is direct positive service-survival evidence. HoloLens 2's first-run account/network requirements and OS-version-specific servicing show that Cloud Independence and support lifetime are related but distinct dimensions.
 
 ## Evidence gaps
-Recover clean acquisition-price evidence, repairability/parts/battery aging, exact post-support Store/app-install constraints, offline provisioning/recovery options and long-term service survivability after 2027.
+Source boundary completed in EV-0066. Remaining: post-2027 hands-on Store, sign-out, certificate trust, reset, endpoint blocking and recovery tests; plus acquisition price, repairability, parts and battery aging.
