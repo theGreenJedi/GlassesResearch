@@ -43,3 +43,5 @@ cross-model findings:
 - [`EV-0065-Bose-Frames-service-survival.md`](EV-0065-Bose-Frames-service-survival.md) — Bluetooth survival versus discontinued Bose AR across all five canonical models.
 
 - [`EV-0066-HoloLens-service-survival.md`](EV-0066-HoloLens-service-survival.md) — graceful HoloLens 1 survival and HoloLens 2 offline provisioning/recovery boundary.
+
+- [`EV-0067-Xiaomi-AI-Glasses-service-survival.md`](EV-0067-Xiaomi-AI-Glasses-service-survival.md) — conservative local-hardware versus unresolved AI/app/account boundary for GLS-0024.
