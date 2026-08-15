@@ -35,3 +35,5 @@ cross-model findings:
 - Current value [wave one](EV-0052-current-value-wave-one.md) and [wave two](EV-0053-current-value-wave-two.md)
 
 **Regulatory primary** records come from government or standards filings tied to an identified device. **Vendor primary** records come from the manufacturer or platform owner. **Community primary** records are originating public projects, repositories, or releases. **Community report** records are specific attributable discussions or reports. **GlassesResearch verified** identifies observations or tests reproduced by this project.
+
+- [`EV-0063-Recon-Jet-service-survival.md`](EV-0063-Recon-Jet-service-survival.md) — function-level boundary between local Jet capabilities and dead Engage/Uplink activation paths.
