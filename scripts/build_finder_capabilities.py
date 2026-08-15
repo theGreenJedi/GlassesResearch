@@ -154,7 +154,6 @@ def category_fact(model, field):
         return "no", "catalog-type-negative"
     if pure_audio_family and field == "no_camera":
         return "yes", "catalog-type"
-        return "no", "catalog-type-negative"
     if (camera_audio_nodisplay or camera_only_nodisplay) and field in {"display", "full_color_display", "binocular_display"}:
         return "no", "catalog-type-negative"
     if has_display and field == "no_display":
