@@ -10,7 +10,7 @@ Primary source: https://www.magicleap.care/hc/en-us/articles/18878883445645-Magi
 
 Magic Leap states that authorized purchases ended 2022-12-31. As of 2024-12-31, Magic Leap 1 no longer receives OS updates or Care support, cloud services are unavailable, and the company describes the device and apps' core functionality as end-of-life.
 
-Service-survival interpretation: **Degraded / potentially nonfunctional for advertised ecosystem use**. This is direct evidence that a vendor service shutdown can materially destroy the ownership value of otherwise intact hardware.
+Service-survival interpretation: **Destructive shutdown / end-of-life**. EV-0064 records the exact mechanism: annual Identity re-authentication and certificate-controlled app installation/update fail alongside Device Manager, Private App Sharing and Backup/Restore. Electrical boot or unsupported local residue remains unknown pending hands-on testing.
 
 ## Microsoft HoloLens 1 — graceful local-survival control
 Primary source: https://learn.microsoft.com/en-us/previous-versions/mixed-reality/hololens-1/hololens1-release-notes

@@ -31,7 +31,7 @@ This is the highest-value ownership research because it distinguishes a durable 
 - Even G1/G2: **source boundary completed in EV-0046** — G1 offline QuickNote buffering and G2's official dual-BLE/Even Hub recovery surface are separated from logged-in first pairing and service-backed Conversate/translation/navigation/AI. Remaining: account-free demo connection, portal-free plugin install, sign-out and endpoint-blocked tests.
 
 ### Preservation controls
-- Magic Leap 1: exact functionality lost after 2024-12-31 shutdown versus any surviving local behavior.
+- Magic Leap 1: **source boundary completed in EV-0064** — annual Identity re-authentication, signing-certificate renewal, Device Manager, Private App Sharing, Backup/Restore and application install/update loss are separated from still-unknown electrical boot/local residue. Remaining: authenticated-vs-expired/reset hands-on boot, app, USB/ADB, media and endpoint tests.
 - Recon Jet / Jet Pro / Pro+: **source boundary completed in EV-0063** — the manual's mandatory Engage/Uplink first activation and Intel-confirmed shutdown are separated from documented post-activation local apps/sensors. Remaining: hands-on activated-vs-reset boot, ADB, local app, sensor and reboot-persistent bypass testing.
 - Bose Frames: what survived Bose AR discontinuation; distinguish Bluetooth audio from abandoned AR software.
 - RealWear HMT-1/HMT-1Z1: present-day local operation after end of support and firmware 12.6.
