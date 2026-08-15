@@ -23,10 +23,10 @@ Intel support explicitly states that Intel stopped supporting Recon Engage and t
 
 **Service status:** **Degraded.** The known failure mechanism is not merely “old hardware”; it is activation/account-service dependence. This makes Recon a strong preservation example of how a once-open SDK platform can still lose practical owner control when mandatory service infrastructure disappears.
 
-The remaining question is exactly how much local function can be restored or bypassed through community methods. That must be tested rather than assumed.
+EV-0063 now separates activated-unit local functions from the new/reset-device activation failure. The original manual documents local camera, gallery, music, compass, maps, GPS and ANT+ functions, but dead Engage/Uplink services can prevent an unactivated unit from reaching them. Community bypass reports remain recovery leads, not a universal verified procedure.
 
 ## Lifecycle lesson
 Preserve both sides of the history: strong original developer access and poor present-day service survivability. Openness at launch did not guarantee activation independence.
 
 ## Evidence gaps
-Recover archival product sheets/manuals for Pro and Pro+, document community activation bypasses and present-day local functionality, battery/repair/parts survivability, and separate functions that remain usable from those blocked by service loss.
+Recover archival product sheets/manuals for Pro and Pro+, then perform EV-0063's two-device test: one previously activated unit and one new/reset unit, recording boot, ADB, local apps, sensors and reboot-persistent recovery. Preserve battery/repair/parts survivability.
