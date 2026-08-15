@@ -19,6 +19,8 @@ Current Chamelo product/collection pages sell Aura Rx and describe Aura configur
 
 Do not generalize Aura Rx support to Dusk Classic or Music Shield Gen 2 without model-specific evidence. Ordinary independent-optician service, replacement-lens procedure and prescription range remain unknown.
 
+**Optical classification:** vendor-integrated Aura Rx prescription configuration; independent optical service unverified. See [EV-0070](../../evidence/EV-0070-adaptive-Rx-optical-boundaries.md).
+
 ## Report-card anchors
 - Dusk Classic: H5.0 W9.0 VAI N/A S4.0 O2.0 OC7.5 CI9.0 Hack2.0 HUD N/A V7.0.
 - Music Shield Gen 2: H6.0 W7.5 VAI N/A S4.0 O2.0 OC8.0 CI9.5 Hack2.0 HUD N/A V7.5.

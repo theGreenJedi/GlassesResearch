@@ -14,6 +14,8 @@ Ampere documents a distinct Dusk Rx product with prescription-ready electronic t
 
 This evidence establishes vendor prescription support for Dusk Rx only. It does not establish that ordinary Dusk lenses can be independently replaced or that a local optician can service the electronic prescription lens system. The current product page is marked sold out and still contains an old Spring 2025 pre-order estimate, so present lifecycle/availability requires separate verification.
 
+**Optical classification:** vendor-integrated prescription configuration; independent optical service unverified. See [EV-0070](../../evidence/EV-0070-adaptive-Rx-optical-boundaries.md).
+
 ## Ownership interpretation
 Physical tint controls preserve useful operation without the companion app, making core lens functionality unusually cloud-independent. Standard Bluetooth supports ordinary audio use. No public SDK, open firmware or deep low-level hardware interface is established by the current packet.
 
