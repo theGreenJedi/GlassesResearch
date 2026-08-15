@@ -91,7 +91,7 @@
       <strong>Models</strong>
       <span>Browse the living catalog and historical archive without reducing every device to a shopping listing.</span>
     </a>
-    <a href="docs/report-cards/">
+    <a href="docs/REPORT_CARD/">
       <span class="gr-card-number">02</span>
       <strong>Report Cards</strong>
       <span>See hardware, software, openness, owner control, cloud independence, hackability, and value scored explicitly.</span>
@@ -101,7 +101,7 @@
       <strong>Development</strong>
       <span>Follow SDKs, APIs, BLE, firmware, local AI, companion apps, and routes around unnecessary lock-in.</span>
     </a>
-    <a href="timeline/">
+    <a href="docs/INDUSTRY_TIMELINE/">
       <span class="gr-card-number">04</span>
       <strong>History &amp; lineages</strong>
       <span>Preserve what disappeared and connect products that share hardware, software, and platform ancestry.</span>
