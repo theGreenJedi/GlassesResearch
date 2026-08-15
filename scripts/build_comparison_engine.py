@@ -20,7 +20,7 @@ DEFAULT_SCHEMA = ROOT / "comparisons" / "schema.json"
 DEFAULT_DATA_DIR = ROOT / "comparisons" / "data"
 GLS_RE = re.compile(r"^GLS-\d{4}$")
 ALLOWED_TYPES = {"text", "number", "boolean", "list"}
-REQUIRED_EVIDENCE = {"hands-on", "community", "primary", "unknown"}
+REQUIRED_EVIDENCE = {"hands-on", "community", "primary", "community-primary", "unresolved", "unknown"}
 
 
 def load_json(path: Path) -> Any:
@@ -138,7 +138,7 @@ def load_records(data_dir: Path, fields: list[dict[str, Any]]) -> tuple[list[str
             evidence = entry.get("evidence")
             if evidence not in REQUIRED_EVIDENCE - {"unknown"}:
                 errors.append(
-                    f"{path}: field {field_id} evidence must be hands-on, community, or primary"
+                    f"{path}: field {field_id} evidence must be hands-on, community, primary, community-primary, or unresolved"
                 )
             if "value" not in entry or not validate_value(field_map[field_id], entry.get("value")):
                 errors.append(

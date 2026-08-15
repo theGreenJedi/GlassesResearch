@@ -16,7 +16,7 @@ from pathlib import Path
 
 CAPABILITIES = [
     "prescription_support", "progressive_lenses", "ordinary_optician", "adjustable_diopter",
-    "camera", "photo_capture", "video_recording", "live_video",
+    "camera", "no_camera", "photo_capture", "video_recording", "live_video",
     "speakers", "microphones", "phone_calls", "music",
     "display", "full_color_display", "binocular_display", "no_display",
     "ai_assistant", "visual_ai", "translation", "transcription", "navigation",
@@ -99,6 +99,17 @@ def explicit_from_comparison(record, field):
         "offline_operation": ["offline_operation"],
         "self_hostable": ["self_hostable"],
     }
+    if field == "no_camera":
+        entry = fields.get("camera_count")
+        if entry and entry.get("evidence") != "unknown":
+            try:
+                return ("yes" if int(entry.get("value")) == 0 else "no"), "comparison"
+            except (TypeError, ValueError):
+                pass
+        camera = fields.get("camera") or fields.get("camera_present")
+        camera_state = state(camera.get("value")) if camera and camera.get("evidence") != "unknown" else None
+        if camera_state in {"yes", "no"}:
+            return ("no" if camera_state == "yes" else "yes"), "comparison"
     for candidate in aliases.get(field, [field]):
         entry = fields.get(candidate)
         if not entry or entry.get("evidence") == "unknown":
@@ -141,6 +152,8 @@ def category_fact(model, field):
     # Definitive negatives only where the type taxonomy excludes the capability.
     if pure_audio_family and field in {"camera", "photo_capture", "video_recording", "live_video", "display", "full_color_display", "binocular_display"}:
         return "no", "catalog-type-negative"
+    if pure_audio_family and field == "no_camera":
+        return "yes", "catalog-type"
     if (camera_audio_nodisplay or camera_only_nodisplay) and field in {"display", "full_color_display", "binocular_display"}:
         return "no", "catalog-type-negative"
     if has_display and field == "no_display":
@@ -184,6 +197,10 @@ def main():
             final = value or "unknown"
             caps[field] = {"value": final, "provenance": provenance or "unresolved"}
             summary[final] += 1
+        if caps["camera"]["value"] == "yes":
+            caps["no_camera"] = {"value": "no", "provenance": "logical-inverse"}
+        elif caps["no_camera"]["value"] == "yes":
+            caps["camera"] = {"value": "no", "provenance": "logical-inverse"}
         if caps["display"]["value"] == "yes":
             caps["no_display"] = {"value": "no", "provenance": "logical-inverse"}
         elif caps["no_display"]["value"] == "yes":
