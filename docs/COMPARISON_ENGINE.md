@@ -2,6 +2,17 @@
 
 Start with what you need, not with a brand name.
 
+## Common questions
+
+- [Prescription lenses + video recording](?filters=prescription,video_recording)
+- [Display + no camera](?filters=display,no_camera)
+- [SDK/API + custom AI](?filters=sdk,custom_ai)
+- [Local/offline operation](?filters=offline)
+- [Display + translation](?filters=display,translation)
+- [Documented under $500](?filters=under_500)
+
+Each preset uses the same canonical Finder data and the same shareable `?filters=` contract as manually selected criteria.
+
 <div id="comparison-engine-app">
 Loading Glasses Finder data…
 </div>
@@ -23,6 +34,10 @@ Filters are grouped into:
 - **Buying** — available new, price bands, manufacturer, Amazon, major/optical retailers, secondary market, and used hardware.
 
 Each basic filter shows a live count so the shopper can see how much a requirement narrows the catalog before clicking it.
+
+## Investigation ladder
+
+Use the same path for every candidate: **summary → shortlist/compare → canonical model → Report Card → evidence**. The cards keep those steps together so a match can be investigated without losing its provenance.
 
 ## Candidate cards
 
