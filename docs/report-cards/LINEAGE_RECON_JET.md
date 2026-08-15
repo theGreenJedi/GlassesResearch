@@ -8,7 +8,7 @@ This packet applies the lineage-first protocol to Recon Instruments' Jet eyewear
 
 Recon Jet clearly crossed the acquisition threshold. Recon's April 2015 launch material states that Jet was available through specialty stores, Amazon.com in the United States, and reconinstruments.com at a US retail price of $699. Contemporaneous trade reporting documents actual shipment beginning in April 2015 and a later US price reduction to $499.
 
-Intel's later support record explicitly names three separate products — Recon Jet Smart Eyewear, Recon Jet Pro Smart Eyewear, and Recon Jet Pro+ Smart Eyewear — and directs owners to their place of purchase for warranty/support. That is strong post-acquisition evidence that Pro and Pro+ were real customer products, not merely announced concepts. Generation-specific technical documentation for Pro and especially Pro+ is much thinner than for the original Jet, so this packet does not copy Jet's scores into later variants without evidence.
+EV-0063 adds a function-by-function post-shutdown boundary: the original manual makes Engage/Uplink first activation mandatory while documenting local camera, gallery, music, compass, maps, GPS and ANT+ functions after activation. Intel's later support record explicitly names three separate products — Recon Jet Smart Eyewear, Recon Jet Pro Smart Eyewear, and Recon Jet Pro+ Smart Eyewear — and directs owners to their place of purchase for warranty/support. That is strong post-acquisition evidence that Pro and Pro+ were real customer products, not merely announced concepts. Generation-specific technical documentation for Pro and especially Pro+ is much thinner than for the original Jet, so this packet does not copy Jet's scores into later variants without evidence.
 
 ## Recon Jet — admit
 
@@ -63,6 +63,10 @@ The correct result is an admitted model with explicit evidence gaps, not a copie
 - Bicycle Retailer contemporaneous shipment report (April 2015): https://www.bicycleretailer.com/product-tech/2015/04/16/recon-instruments-begins-shipping-long-awaited-smart-sunglass
 - Bicycle Retailer contemporaneous price reduction to $499 (September 2015): https://www.bicycleretailer.com/product-tech/2015/09/15/recon-lowers-price-its-smart-glasses
 - TechInsights teardown record for a US-purchased Recon Jet Pro RI-JET, including measured weight and recorded purchase price: https://www.techinsights.com/products/ddt-1804-805
+
+## Service-survival evidence
+
+See [EV-0063](../../evidence/EV-0063-Recon-Jet-service-survival.md). It does not claim that all hardware is dead or that a community bypass universally works: it distinguishes local architecture on activated Jet units from the confirmed activation failure affecting new/reset hardware after Engage/Uplink shutdown.
 
 ## Archival follow-up
 
