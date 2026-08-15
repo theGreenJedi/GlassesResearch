@@ -55,3 +55,5 @@ cross-model findings:
 - [`EV-0071-normalized-battery-claims-wave-one.md`](EV-0071-normalized-battery-claims-wave-one.md) — workload-specific battery claims for Even G2, Brilliant Halo, Ray-Ban Meta Gen 2 and Solos AirGo V2 kept separate from measured endurance and case replenishment.
 
 - [`EV-0072-Solos-AirGo-V2-owner-access-boundary.md`](EV-0072-Solos-AirGo-V2-owner-access-boundary.md) — public video/Wi-Fi/media APIs separated from undocumented firmware ownership, update continuity and currently unavailable SDK acquisition.
+
+- [`EV-0073-Even-G2-owner-access-boundary.md`](EV-0073-Even-G2-owner-access-boundary.md) — vendor-mediated Even Hub separated from community-demonstrated direct BLE control and unresolved firmware ownership.
