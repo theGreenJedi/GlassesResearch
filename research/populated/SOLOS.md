@@ -26,6 +26,8 @@ Report-card anchor: H8.5 W8.0 VAI8.5 S9.0 O8.5 OC9.0 CI9.0 Hack8.5 HUD N/A; Valu
 
 The documented protocol/API expansion makes V2 one of the catalog's strongest officially supported screen-free development platforms below fully open hardware.
 
+EV-0072 tightens the boundary: the public V2 specification documents video, Wi-Fi and media-file methods, while the developer page only names a Firmware Update API without publishing its image, signature, rollback, recovery or offline-update behavior. The US$1,999 SDK kit was marked unavailable at verification. Classification: **strong documented application/media access; firmware ownership and present SDK acquisition unresolved**.
+
 ## Prescription / optical serviceability
 Solos accepts externally issued prescriptions and supports custom lens production, including alternate lens indices and finishes. The modular architecture separates front frames from smart temples on supported collections, making optical replacement structurally more practical than on sealed integrated-display eyewear.
 
@@ -45,4 +47,4 @@ Solos spans audio-only and camera-enabled glasses within one modular ecosystem. 
 Core Bluetooth audio and custom host applications can operate without Solos cloud AI on supported models. AirGo V2 goes further by supporting owner-directed media/events, webhooks, RTMP and private/local endpoints. Individual vendor AI features and transcription services must still be scored separately.
 
 ## Remaining evidence targets
-Firmware replacement/boot chain, full sensor exposure, exact offline behavior, subscription/account dependence, ordinary-independent optical service by model, temple-kit stock/firmware pairing, battery-cell service by generation, battery aging, regional differences and long-term service survival remain open.
+Firmware replacement/boot chain (bounded in EV-0072), current SDK acquisition, full sensor exposure, exact offline behavior, subscription/account dependence, ordinary-independent optical service by model, temple-kit stock/firmware pairing, battery-cell service by generation, battery aging, regional differences and long-term service survival remain open.
