@@ -63,6 +63,12 @@
 
     const aliases = {
       camera: (r) => Number(valueOf(r, 'camera_count')) > 0 || /camera/.test(`${r.type} ${textOf(r, 'category')}`.toLowerCase()),
+      no_camera: (r) => {
+        const count = valueOf(r, 'camera_count');
+        if (count !== null) return Number(count) === 0;
+        const camera = r.capabilityFacts?.camera?.value;
+        return camera === 'no' || camera === 'na';
+      },
       photo_capture: (r) => yes(r, 'photo_capture') || yes(r, 'photos') || Number(valueOf(r, 'camera_count')) > 0,
       video_recording: (r) => yes(r, 'video_recording') || /video/.test(`${textOf(r, 'camera')} ${textOf(r, 'recording')} ${textOf(r, 'video')}`),
       live_video: (r) => yes(r, 'live_video') || yes(r, 'streaming') || /stream|rtmp|live video/.test(`${textOf(r, 'api')} ${textOf(r, 'sdk')} ${textOf(r, 'video')}`),
@@ -190,9 +196,9 @@
 
     const researchLinks = (r) => {
       const p = r.public || {}; const links = [];
-      if (p.profile) links.push(`<a href="${esc(p.profile)}">Research</a>`);
-      if (p.report_card) links.push(`<a href="${esc(p.report_card)}">Report card</a>`);
-      if (p.lineage) links.push(`<a href="${esc(p.lineage)}">Lineage</a>`);
+      if (p.profile) links.push(`<a href="${esc(p.profile)}">Canonical model</a>`);
+      if (p.report_card) links.push(`<a href="${esc(p.report_card)}">Report Card</a>`);
+      if (p.lineage) links.push(`<a href="${esc(p.lineage)}">Evidence / lineage</a>`);
       return links.join(' · ');
     };
     const purchaseLinks = (r) => (r.purchaseSources || []).filter((s) => s.url && s.availability !== 'unavailable').map((s) => {
@@ -261,10 +267,20 @@
           ${knownMisses.length?`<div class="match-misses">Does not match: ${esc(knownMisses.join(' · '))}</div>`:''}
           ${unknownMisses.length?`<div class="match-misses">Not documented: ${esc(unknownMisses.join(' · '))}</div>`:''}
           ${buys?`<div class="purchase-sources"><strong>Buy / find one:</strong> ${buys}</div>`:'<div class="purchase-sources purchase-unknown">Purchase links not populated yet.</div>'}
-          <div class="discovery-card-actions"><button type="button" data-compare-id="${esc(record.id)}">Add to comparison</button><span>${researchLinks(record)}</span></div>
+          <div class="discovery-card-actions"><button type="button" data-compare-id="${esc(record.id)}">Shortlist / compare</button><span><strong>Research path:</strong> Summary → ${researchLinks(record) || 'canonical research pending'}</span></div>
         </article>`;
-      }).join('') || '<p>No exact matches. Turn off “Exact matches only” to see near matches and undocumented candidates.</p>';
+      }).join('') || `<div class="finder-zero"><strong>No exact matches.</strong><p>Unknown, No, and N/A are not treated as matches. Remove one criterion or include near matches to continue.</p><button type="button" data-remove-criterion ${selected.length ? '' : 'disabled'}>Remove last criterion</button> <button type="button" data-show-near>Show near matches</button></div>`;
       results.querySelectorAll('[data-compare-id]').forEach((b) => b.addEventListener('click', () => addToCompare(b.dataset.compareId)));
+      results.querySelector('[data-remove-criterion]')?.addEventListener('click', () => {
+        const checked = boxes.filter((box) => box.checked);
+        const last = checked[checked.length - 1];
+        if (last) last.checked = false;
+        renderDiscovery();
+      });
+      results.querySelector('[data-show-near]')?.addEventListener('click', () => {
+        exactOnly.checked = false;
+        renderDiscovery();
+      });
     };
 
     const sourceLinks = (entry) => entry?.sources?.length ? `<div class="comparison-sources">${entry.sources.map((src,i)=>`<a href="${esc(src)}" target="_blank" rel="noopener">source${entry.sources.length>1?` ${i+1}`:''}</a>`).join(' · ')}</div>` : '';
