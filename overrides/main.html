@@ -24,3 +24,11 @@
     <meta name="robots" content="noindex,follow">
   {% endif %}
 {% endblock %}
+
+{# The homepage already has the permanent site navigation on the left. #}
+{# Suppress Material's generated right-hand page TOC there only. #}
+{% block toc %}
+  {% if page and page.url %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
