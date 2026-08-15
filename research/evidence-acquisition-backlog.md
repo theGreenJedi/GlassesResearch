@@ -47,13 +47,14 @@ For every ordinary-eyewear-form product, record direct corrective-lens support, 
 - Lucyd Lyte family: EV-0035 supports **ordinary optical service**; Innovative Eyewear says frames are designed for fitting by any optician and support prescription/sunglass/reading/blue-light formats.
 - Xiaomi Smart Audio Glasses optical version: EV-0034 supports **ordinary optical service** via professional optical shops.
 - Current Mijia Smart Audio Glasses: EV-0034 supports **ordinary optical service**; Xiaomi says ordinary-glasses lens thicknesses are supported and directs fitting to offline optical shops.
+- Ampere Dusk Rx and Chamelo Aura Rx: EV-0070 establishes **vendor-integrated prescription configurations with independent optical service unverified**; Dusk Rx publishes approximately ±7 SPH/±2 CYL while sold out, and Aura Rx has a current vendor ordering path but no primary correction range or independent-reglazing proof.
 - Iristick G3: EV-0069 supports **ordinary-optician service through an owner-removable magnetic insert**; exact correction/progressive limits, material requirements, price/stock and safety-certification effects remain unknown.
 - HeyCyan/W610: EV-0068 supports a **prescription-compatible supplier claim only**; Goodway advertises removable/customizable prescription lenses for OEM/ODM buyers, while the exact retail variant, correction limits, replacement supply and ordinary-optician path remain unverified.
 - Solos supported frames: EV-0049 supports **ordinary independent optical service**; the vendor explicitly permits any optical eyewear shop because lenses are swappable.
 - Huawei documented optical-frame variants: EV-0049 supports **ordinary optician fitting** with electronics-specific handling restrictions.
 - Vuzix Z100 and Blade 2: EV-0049 reconfirms **owner-installable specialist inserts/frame assemblies** and preserves the current kit price basis.
 
-Next first wave: Ampere Dusk and Chamelo. Meta/Ray-Ban/Oakley, Even G1/G2, Brilliant Frame/Halo, Rokid Glasses and RayNeo X3 Pro are covered in EV-0049/EV-0050; W610 now has a source boundary in EV-0068 but still requires the hands-on closure protocol.
+First-wave source boundaries are complete. Meta/Ray-Ban/Oakley, Even G1/G2, Brilliant Frame/Halo, Rokid Glasses and RayNeo X3 Pro are covered in EV-0049/EV-0050; W610 has a source boundary in EV-0068 but still requires the hands-on closure protocol. Remaining optical work is evidence enrichment: exact ranges, progressive support, replacement availability, regional variance and ordinary-independent service verification.
 
 Do not treat `prescription compatible` as equivalent to independent serviceability.
 
