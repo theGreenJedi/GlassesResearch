@@ -1,5 +1,7 @@
 # Research Inbox Survey — YYYY-MM-DD to YYYY-MM-DD
 
+<!-- news_promotion_schema: 1 -->
+
 **Reviewer:**
 **Candidate files surveyed:**
 **Total raw candidates considered:**
@@ -32,6 +34,9 @@
 - **Public-site eligible now:** yes / no
 - **Disposition:** `publish` / `watch` / `archive` / `superseded` / `reject`
 - **Reason for disposition:**
+- **Affected models:** list GLS IDs/model paths, or `none — rationale`
+- **Affected lineages / platforms / resources:** list paths, or `none — rationale`
+- **Canonical destinations:** backtick-wrapped repository paths updated by a publish decision, or `none — rationale`
 - **Canonical follow-up if published:**
   - [ ] Model page
   - [ ] The List
