@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import os
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
@@ -57,6 +58,11 @@ def target_url(source: Path, href: str) -> str | None:
     return page_url(full) if full.is_file() and full.suffix == ".html" else None
 
 
+def github_escape(value: str) -> str:
+    """Escape a value for a GitHub Actions workflow command."""
+    return value.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+
+
 def main() -> int:
     if not SITE.is_dir():
         print("site/ is missing; build the site first", file=sys.stderr)
@@ -77,6 +83,8 @@ def main() -> int:
         print("Public pages with no inbound path:", file=sys.stderr)
         for url in orphans:
             print(f"  {url}", file=sys.stderr)
+            if os.environ.get("GITHUB_ACTIONS") == "true":
+                print(f"::error title=Orphan public page::{github_escape(url)}")
         return 1
     print(f"Public reachability verified: {len(pages)} HTML pages, no orphan pages.")
     return 0
