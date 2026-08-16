@@ -3,6 +3,66 @@
 [Who owns the record?](discussions/WHO_OWNS_THE_RECORD.md) examines why independent,
 durable documentation matters when products, services, and vendor pages disappear.
 
+<div class="verified-alerts" data-verified-research-alerts markdown>
+
+## Verified Research Alerts
+
+Receive only verified, published GlassesResearch work. Choose what you follow, what you never want, and how often we write.
+
+<form data-verified-research-alerts>
+  <label for="alerts-email"><strong>Email address</strong></label>
+  <input id="alerts-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+
+  <fieldset>
+    <legend>Delivery cadence</legend>
+    <select name="cadence" required>
+      <option value="as_verified">As verified</option>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+      <option value="annually">Annually</option>
+    </select>
+  </fieldset>
+
+  <div class="alert-grid">
+    <fieldset>
+      <legend>Follow</legend>
+      <label>Models <input name="include_models" type="text" placeholder="W620, Vuzix Z100"></label>
+      <label>Brands / lineages <input name="include_brands" type="text" placeholder="HeyCyan, Even Realities"></label>
+      <div class="alert-checks">
+        <label><input type="checkbox" name="include_topics" value="hacks_development"> Hacks / Development</label>
+        <label><input type="checkbox" name="include_topics" value="firmware_software"> Firmware / Software</label>
+        <label><input type="checkbox" name="include_topics" value="hardware_teardown"> Hardware / Teardown</label>
+        <label><input type="checkbox" name="include_topics" value="privacy_policy"> Privacy / Policy</label>
+        <label><input type="checkbox" name="include_topics" value="release_availability"> Releases / Availability</label>
+        <label><input type="checkbox" name="include_topics" value="research_science"> Research / Science</label>
+        <label><input type="checkbox" name="include_topics" value="standards_regulation"> Standards / Regulation</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Exclude</legend>
+      <label>Models <input name="exclude_models" type="text" placeholder="Ray-Ban Meta"></label>
+      <label>Brands / lineages <input name="exclude_brands" type="text" placeholder="Meta"></label>
+      <div class="alert-checks">
+        <label><input type="checkbox" name="exclude_topics" value="hacks_development"> Hacks / Development</label>
+        <label><input type="checkbox" name="exclude_topics" value="firmware_software"> Firmware / Software</label>
+        <label><input type="checkbox" name="exclude_topics" value="hardware_teardown"> Hardware / Teardown</label>
+        <label><input type="checkbox" name="exclude_topics" value="privacy_policy"> Privacy / Policy</label>
+        <label><input type="checkbox" name="exclude_topics" value="release_availability"> Releases / Availability</label>
+        <label><input type="checkbox" name="exclude_topics" value="research_science"> Research / Science</label>
+        <label><input type="checkbox" name="exclude_topics" value="standards_regulation"> Standards / Regulation</label>
+      </div>
+    </fieldset>
+  </div>
+
+  <p class="alert-note">Exclusions always win. Leave Follow empty to receive all verified research except anything you exclude. Every email links directly to the corresponding published GlassesResearch work and includes Manage subscription / unsubscribe.</p>
+  <button type="submit" class="md-button md-button--primary">Subscribe to verified research</button>
+  <p class="alert-status" data-alert-status aria-live="polite"></p>
+</form>
+
+</div>
+
 ## August 11, 2026 — Courts in England and Wales prohibit Meta smart glasses
 
 His Majesty's Courts and Tribunals Service (HMCTS) confirmed that Meta smart glasses are prohibited in court and tribunal buildings because of restrictions on unauthorized recording. According to reporting by *The Guardian*, people entering with the glasses will have them held on entry and returned when they leave.
@@ -53,7 +113,7 @@ Hackaday summarized an iFixit teardown of Meta's Ray-Ban Display glasses. The te
 
 **Why it matters:** teardown evidence helps separate theoretical owner control from practical owner control. A device may be physically openable while still being difficult to repair because parts, documentation, firmware access, or calibration tooling are unavailable.
 
-Source: [Hackaday — The Fascinating Waveguide Technology Inside Meta's Ray-Ban Display Glasses](https://hackaday.com/2025/10/09/the-fascinating-waveguide-technology-inside-metas-ray-ban-display-glasses/)
+Source: [Hackaday — The Fascinating Waveguide Technology Inside Meta's Ray-Ban Display Glasses](https://hackaday.com/2025/10/09/the-fascinating-waveguide-technology-inside-meta-ray-ban-display-glasses/)
 
 ---
 
