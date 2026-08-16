@@ -1,0 +1,19 @@
+{
+  "name": "glassesresearch-alerts",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-01",
+  "workers_dev": true,
+  "triggers": { "crons": ["17 * * * *"] },
+  "vars": {
+    "SITE_ORIGIN": "https://glassesresearch.org",
+    "PUBLIC_BASE_URL": "https://alerts.glassesresearch.org",
+    "MAIL_FROM": "GlassesResearch <alerts@glassesresearch.org>"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "glassesresearch-alerts",
+      "database_id": "REPLACE_AFTER_D1_CREATION"
+    }
+  ]
+}
