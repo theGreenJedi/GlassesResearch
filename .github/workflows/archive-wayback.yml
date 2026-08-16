@@ -1,0 +1,68 @@
+name: Archive site to Wayback Machine
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/archive_wayback.py
+      - .github/workflows/archive-wayback.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wayback-full-site-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Archive canonical sitemap to Internet Archive
+        id: archive
+        continue-on-error: true
+        env:
+          SITEMAP_URL: https://glassesresearch.org/sitemap.xml
+          WAYBACK_DELAY_SECONDS: "12"
+          WAYBACK_RETRIES: "3"
+          WAYBACK_RESULTS: wayback-results.csv
+        run: python3 scripts/archive_wayback.py
+
+      - name: Summarize archival run
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import csv
+          from pathlib import Path
+          p = Path('wayback-results.csv')
+          if not p.exists():
+              print('No results file was produced.')
+              raise SystemExit(1)
+          rows = list(csv.DictReader(p.open(encoding='utf-8')))
+          ok = sum(r['success'] == 'yes' for r in rows)
+          bad = len(rows) - ok
+          print(f'Wayback archival results: {ok}/{len(rows)} successful; {bad} failed.')
+          if bad:
+              print('Failed URLs:')
+              for r in rows:
+                  if r['success'] != 'yes':
+                      print(f"- {r['http_status']} {r['url']}")
+          PY
+
+      - name: Upload Wayback results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wayback-results-${{ github.run_number }}
+          path: wayback-results.csv
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Fail if archival had misses
+        if: steps.archive.outcome != 'success'
+        run: exit 1
