@@ -11,4 +11,8 @@ The public preference interface supports:
 
 The preference contract is defined in [SUBSCRIPTION_SPEC.md](SUBSCRIPTION_SPEC.md).
 
-The repository-side interface is intentionally fail-closed until a production subscription API endpoint is provisioned. In that state, the form collects and transmits no email address. Activating delivery requires the backend to provide double opt-in, signed management links, direct canonical research links, preference editing, suppression handling, and unsubscribe support required by the project privacy policy.
+Subscriptions use double opt-in. A new address is not activated until its confirmation link is used. Every delivered alert links directly to the corresponding published GlassesResearch work and includes a signed Manage subscription / unsubscribe path. Subscribers can change cadence and Follow/Exclude preferences or unsubscribe completely.
+
+GlassesResearch retains subscriber email addresses only to operate the requested alert service. Subscriber addresses are not sold or used for advertising.
+
+[Choose your alerts on Research & News](../RESEARCH_NEWS.md#verified-research-alerts).
