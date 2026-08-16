@@ -2,9 +2,61 @@
   const CADENCES = ["as_verified", "daily", "weekly", "monthly", "annually"];
   const PANEL_SELECTOR = ".verified-alerts";
   const ENDPOINT = "https://alerts.glassesresearch.org/subscribe";
+  const TOPICS = [
+    ["hacks_development", "Hacks / Development"],
+    ["firmware_software", "Firmware / Software"],
+    ["hardware_teardown", "Hardware / Teardown"],
+    ["privacy_policy", "Privacy / Policy"],
+    ["release_availability", "Releases / Availability"],
+    ["research_science", "Research / Science"],
+    ["standards_regulation", "Standards / Regulation"],
+  ];
 
   function normalizeList(value) {
     return String(value || "").split(",").map((item) => item.trim()).filter(Boolean).slice(0, 50);
+  }
+
+  function topicChecks(name) {
+    return TOPICS.map(([value, label]) => `<label><input type="checkbox" name="${name}" value="${value}"> ${label}</label>`).join("");
+  }
+
+  function renderPanel(root) {
+    if (root.dataset.alertsHydrated === "true") return;
+    root.dataset.alertsHydrated = "true";
+    root.innerHTML = `
+      <h2 id="verified-research-alerts">Verified Research Alerts</h2>
+      <p>Receive only verified, published GlassesResearch work. Choose what you follow, what you never want, and how often we write. <a href="../alerts/">How Verified Research Alerts work</a>.</p>
+      <form data-verified-research-alerts>
+        <label for="alerts-email"><strong>Email address</strong></label>
+        <input id="alerts-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+        <fieldset>
+          <legend>Delivery cadence</legend>
+          <select name="cadence" required>
+            <option value="as_verified">As verified</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="annually">Annually</option>
+          </select>
+        </fieldset>
+        <div class="alert-grid">
+          <fieldset>
+            <legend>Follow</legend>
+            <label>Models <input name="include_models" type="text" placeholder="W620, Vuzix Z100"></label>
+            <label>Brands / lineages <input name="include_brands" type="text" placeholder="HeyCyan, Even Realities"></label>
+            <div class="alert-checks">${topicChecks("include_topics")}</div>
+          </fieldset>
+          <fieldset>
+            <legend>Exclude</legend>
+            <label>Models <input name="exclude_models" type="text" placeholder="Ray-Ban Meta"></label>
+            <label>Brands / lineages <input name="exclude_brands" type="text" placeholder="Meta"></label>
+            <div class="alert-checks">${topicChecks("exclude_topics")}</div>
+          </fieldset>
+        </div>
+        <p class="alert-note">Exclusions always win. Leave Follow empty to receive all verified research except anything you exclude. Every email links directly to the corresponding published GlassesResearch work and includes Manage subscription / unsubscribe.</p>
+        <button type="button" class="md-button md-button--primary" data-alert-submit>Subscribe to verified research</button>
+        <p class="alert-status" data-alert-status aria-live="polite"></p>
+      </form>`;
   }
 
   function value(root, name) {
@@ -14,7 +66,6 @@
   function payloadFrom(root) {
     const cadence = value(root, "cadence");
     if (!CADENCES.includes(cadence)) throw new Error("Choose a valid delivery cadence.");
-
     return {
       schema: 1,
       email: value(root, "email").trim(),
@@ -33,35 +84,18 @@
     };
   }
 
-  function cleanupPanel(root) {
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-    const nodes = [];
-    while (walker.nextNode()) nodes.push(walker.currentNode);
-    for (const node of nodes) {
-      if (node.nodeValue?.includes("</fieldset>")) {
-        node.nodeValue = node.nodeValue.replaceAll("</fieldset>", "");
-      }
-    }
-  }
-
   function resetPanel(root) {
-    root.querySelectorAll('input[type="email"], input[type="text"]').forEach((input) => { input.value = ""; });
-    root.querySelectorAll('input[type="checkbox"]').forEach((input) => { input.checked = false; });
-    const cadence = root.querySelector('[name="cadence"]');
-    if (cadence) cadence.value = "as_verified";
+    root.querySelector("form")?.reset();
   }
 
   async function submitPanel(root, button) {
     const status = root.querySelector("[data-alert-status]");
-    if (!status || !button || button.dataset.submitting === "true") return;
-
-    cleanupPanel(root);
-    status.textContent = "";
+    if (!status || button.dataset.submitting === "true") return;
 
     let payload;
     try {
       payload = payloadFrom(root);
-      if (!payload.email || !payload.email.includes("@")) throw new Error("Enter a valid email address.");
+      if (!/^\S+@\S+\.\S+$/.test(payload.email)) throw new Error("Enter a valid email address.");
     } catch (error) {
       status.textContent = error instanceof Error ? error.message : "Check the subscription form and try again.";
       return;
@@ -78,9 +112,7 @@
         body: JSON.stringify(payload),
       });
       const result = await response.json().catch(() => ({}));
-      if (!response.ok || result.ok === false) {
-        throw new Error(result.message || "Subscription service is temporarily unavailable.");
-      }
+      if (!response.ok || result.ok === false) throw new Error(result.message || "Subscription service is temporarily unavailable.");
       status.textContent = result.message || "Check your email to confirm your subscription.";
       resetPanel(root);
     } catch (error) {
@@ -92,7 +124,7 @@
   }
 
   document.addEventListener("click", (event) => {
-    const button = event.target instanceof Element ? event.target.closest(`${PANEL_SELECTOR} button[type="submit"]`) : null;
+    const button = event.target instanceof Element ? event.target.closest("[data-alert-submit]") : null;
     if (!button) return;
     const root = button.closest(PANEL_SELECTOR);
     if (!root) return;
@@ -100,19 +132,10 @@
     submitPanel(root, button);
   });
 
-  document.addEventListener("submit", (event) => {
-    const form = event.target instanceof HTMLFormElement ? event.target : null;
-    const root = form?.closest(PANEL_SELECTOR);
-    if (!root) return;
-    event.preventDefault();
-    const button = root.querySelector('button[type="submit"]');
-    if (button) submitPanel(root, button);
-  });
-
-  function cleanAll() {
-    document.querySelectorAll(PANEL_SELECTOR).forEach(cleanupPanel);
+  function renderAll() {
+    document.querySelectorAll(PANEL_SELECTOR).forEach(renderPanel);
   }
 
-  cleanAll();
-  new MutationObserver(cleanAll).observe(document.documentElement, { childList: true, subtree: true });
+  renderAll();
+  new MutationObserver(renderAll).observe(document.documentElement, { childList: true, subtree: true });
 })();
