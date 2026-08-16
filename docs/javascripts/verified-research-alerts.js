@@ -1,6 +1,5 @@
 (() => {
   const CADENCES = ["as_verified", "daily", "weekly", "monthly", "annually"];
-  const DEFAULT_ENDPOINT = "https://subscriptions.glassesresearch.org/api/subscribe";
 
   function normalizeList(value) {
     return value.split(",").map((item) => item.trim()).filter(Boolean).slice(0, 50);
@@ -31,7 +30,13 @@
   function init(form) {
     const status = form.querySelector("[data-alert-status]");
     const button = form.querySelector('button[type="submit"]');
-    const endpoint = form.dataset.endpoint || DEFAULT_ENDPOINT;
+    const endpoint = form.dataset.endpoint || "";
+
+    if (!endpoint) {
+      button.disabled = true;
+      status.textContent = "Verified Research Alerts are being activated. No email address is collected until the subscription service is live.";
+      return;
+    }
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
@@ -55,12 +60,12 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
         });
-        if (!response.ok) throw new Error("Subscription service is not available yet.");
+        if (!response.ok) throw new Error("Subscription service is temporarily unavailable.");
         const result = await response.json().catch(() => ({}));
         status.textContent = result.message || "Check your email to confirm your subscription.";
         if (result.ok !== false) form.reset();
       } catch (error) {
-        status.textContent = error.message || "Subscription service is not available yet.";
+        status.textContent = error.message || "Subscription service is temporarily unavailable.";
       } finally {
         button.disabled = false;
       }
@@ -68,6 +73,6 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("[data-verified-research-alerts]").forEach(init);
+    document.querySelectorAll("form[data-verified-research-alerts]").forEach(init);
   });
 })();
