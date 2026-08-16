@@ -7,9 +7,9 @@ durable documentation matters when products, services, and vendor pages disappea
 
 ## Verified Research Alerts
 
-Receive only verified, published GlassesResearch work. Choose what you follow, what you never want, and how often we write.
+Receive only verified, published GlassesResearch work. Choose what you follow, what you never want, and how often we write. [How Verified Research Alerts work](alerts/README.md).
 
-<form data-verified-research-alerts>
+<form data-verified-research-alerts data-endpoint="https://alerts.glassesresearch.org/subscribe">
   <label for="alerts-email"><strong>Email address</strong></label>
   <input id="alerts-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
 
