@@ -1,6 +1,13 @@
 name: Canonical catalog auto-sync
 
 on:
+  pull_request:
+    paths:
+      - 'models/THE_LIST.md'
+      - 'models/THE_LIST_RECONCILIATION_*.md'
+      - 'models/README.md'
+      - 'scripts/sync_catalog_counts.py'
+      - '.github/workflows/catalog-count-autosync.yml'
   push:
     branches: [main]
     paths:
@@ -8,6 +15,7 @@ on:
       - 'models/THE_LIST_RECONCILIATION_*.md'
       - 'models/README.md'
       - 'scripts/sync_catalog_counts.py'
+      - '.github/workflows/catalog-count-autosync.yml'
   workflow_dispatch:
 
 permissions:
@@ -25,7 +33,10 @@ jobs:
           python-version: '3.x'
       - name: Synchronize approved admissions and derived counts
         run: python scripts/sync_catalog_counts.py
+      - name: Validate synchronized canonical ledger
+        run: python scripts/check_catalog_consistency.py
       - name: Commit mechanical synchronization when needed
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         shell: bash
         run: |
           if git diff --quiet; then
