@@ -36,6 +36,7 @@ on:
       - 'scripts/audit_discovery_recall.py'
       - 'scripts/collect_web_discovery.py'
       - 'scripts/collect_discovery_watches.py'
+      - '.github/workflows/model-discovery-audit.yml'
 
 permissions:
   contents: read
@@ -79,6 +80,15 @@ jobs:
       - name: Smoke-test live broad-web discovery
         if: steps.cadence.outputs.run == 'true'
         run: python scripts/collect_web_discovery.py
+
+      - name: Retain discovery intake for identity resolution
+        if: steps.cadence.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-intake
+          path: research/discovery-candidates/*
+          if-no-files-found: error
+          retention-days: 7
 
       - name: Exercise durable discovered-source watches
         if: steps.cadence.outputs.run == 'true'
