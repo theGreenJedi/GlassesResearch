@@ -10,8 +10,11 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 from pathlib import Path
 from typing import Any
+
+MODEL_NODE_RE = re.compile(r"^model:(gls-\d{4})$")
 
 
 def load(path: Path) -> Any:
@@ -51,6 +54,7 @@ def main() -> int:
     report_cards = by_id(load(args.report_cards))
     ecosystem = load(args.ecosystem)
     evidence = load(args.evidence)
+    valid_model_ids = {str(record.get("id")) for record in devices.get("records", [])}
 
     nodes = {str(n.get("id")): n for n in ecosystem.get("nodes", []) if n.get("id")}
     relations_by_model: dict[str, list[dict[str, Any]]] = {}
@@ -58,8 +62,13 @@ def main() -> int:
         endpoints = (str(rel.get("from", "")), str(rel.get("to", "")))
         for endpoint in endpoints:
             node = nodes.get(endpoint, {})
-            if node.get("type") == "model" and str(node.get("id", "")).startswith("gls-"):
-                model_id = str(node["id"]).upper()
+            if node.get("type") != "model":
+                continue
+            match = MODEL_NODE_RE.fullmatch(str(node.get("id", "")))
+            if not match:
+                continue
+            model_id = match.group(1).upper()
+            if model_id in valid_model_ids:
                 relations_by_model.setdefault(model_id, []).append(rel)
 
     evidence_resources = evidence.get("resources", [])
@@ -95,6 +104,7 @@ def main() -> int:
     model_dir.mkdir(parents=True, exist_ok=True)
     (out / "schema.json").write_text(args.schema.read_text(encoding="utf-8"), encoding="utf-8")
     (out / "evidence-resources.json").write_text(json.dumps({"schema_version": evidence.get("schema_version"), "resources": evidence_resources}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (out / "ecosystem-relations.json").write_text(json.dumps(ecosystem, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     aggregate = {
         "schema_version": 1,
