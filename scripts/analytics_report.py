@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate a single GlassesResearch analytics snapshot.
 
-Inputs come from GitHub Actions secrets/variables.  Search Console is the
+Inputs come from GitHub Actions secrets/variables. Search Console is the
 primary discovery signal. Cloudflare HTTP analytics is included as a secondary
 infrastructure signal and is deliberately labelled as such so request traffic
 is never mistaken for human readership.
@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote
@@ -111,8 +112,6 @@ def collect_gsc():
     token, site, error = gsc_client()
     if error:
         return {"available": False, "error": error}
-    # Google's final Search Console data normally trails real time. Query
-    # through two days ago so comparisons are made from final data only.
     end = date.today() - timedelta(days=2)
     current_start = end - timedelta(days=6)
     previous_end = current_start - timedelta(days=1)
@@ -178,40 +177,78 @@ def cf_query(token, zone, start, end):
     return zones[0]
 
 
-def cf_period(token, zone, hours):
-    end = datetime.now(timezone.utc).replace(microsecond=0)
-    start = end - timedelta(hours=hours)
-    z = cf_query(token, zone, start.isoformat().replace("+00:00", "Z"), end.isoformat().replace("+00:00", "Z"))
+def _cf_slice(token, zone, start, end):
+    z = cf_query(
+        token,
+        zone,
+        start.isoformat().replace("+00:00", "Z"),
+        end.isoformat().replace("+00:00", "Z"),
+    )
     totals = (z.get("totals") or [{}])[0]
     return {
-        "start": start.isoformat(),
-        "end": end.isoformat(),
         "requests": int(totals.get("count", 0)),
         "visits": int(totals.get("sum", {}).get("visits", 0)),
         "bytes": int(totals.get("sum", {}).get("edgeResponseBytes", 0)),
+        "countries": z.get("countries", []),
+        "paths": z.get("paths", []),
+        "user_agents": z.get("userAgents", []),
+    }
+
+
+def cf_period(token, zone, hours):
+    """Collect a period without exceeding Cloudflare's 1-day query window.
+
+    Some zones/plans reject Adaptive Groups queries wider than one day. Split
+    longer periods into <=24h slices, then aggregate the dimensions locally.
+    """
+    end = datetime.now(timezone.utc).replace(microsecond=0)
+    start = end - timedelta(hours=hours)
+    cursor = start
+    slices = []
+    while cursor < end:
+        slice_end = min(cursor + timedelta(hours=24), end)
+        slices.append(_cf_slice(token, zone, cursor, slice_end))
+        cursor = slice_end
+
+    countries = defaultdict(lambda: [0, 0])
+    paths = defaultdict(lambda: [0, 0])
+    user_agents = defaultdict(lambda: [0, 0])
+    requests_total = visits_total = bytes_total = 0
+
+    for item in slices:
+        requests_total += item["requests"]
+        visits_total += item["visits"]
+        bytes_total += item["bytes"]
+        for r in item["countries"]:
+            key = r.get("dimensions", {}).get("clientCountryName") or "unknown"
+            countries[key][0] += int(r.get("count", 0))
+            countries[key][1] += int(r.get("sum", {}).get("visits", 0))
+        for r in item["paths"]:
+            key = r.get("dimensions", {}).get("clientRequestPath") or ""
+            paths[key][0] += int(r.get("count", 0))
+            paths[key][1] += int(r.get("sum", {}).get("visits", 0))
+        for r in item["user_agents"]:
+            key = r.get("dimensions", {}).get("userAgent") or ""
+            user_agents[key][0] += int(r.get("count", 0))
+            user_agents[key][1] += int(r.get("sum", {}).get("visits", 0))
+
+    return {
+        "start": start.isoformat(),
+        "end": end.isoformat(),
+        "requests": requests_total,
+        "visits": visits_total,
+        "bytes": bytes_total,
         "countries": [
-            {
-                "country": r.get("dimensions", {}).get("clientCountryName") or "unknown",
-                "requests": int(r.get("count", 0)),
-                "visits": int(r.get("sum", {}).get("visits", 0)),
-            }
-            for r in z.get("countries", [])
+            {"country": k, "requests": v[0], "visits": v[1]}
+            for k, v in sorted(countries.items(), key=lambda kv: kv[1][0], reverse=True)[:15]
         ],
         "paths": [
-            {
-                "path": r.get("dimensions", {}).get("clientRequestPath") or "",
-                "requests": int(r.get("count", 0)),
-                "visits": int(r.get("sum", {}).get("visits", 0)),
-            }
-            for r in z.get("paths", [])
+            {"path": k, "requests": v[0], "visits": v[1]}
+            for k, v in sorted(paths.items(), key=lambda kv: kv[1][0], reverse=True)[:25]
         ],
         "user_agents": [
-            {
-                "user_agent": r.get("dimensions", {}).get("userAgent") or "",
-                "requests": int(r.get("count", 0)),
-                "visits": int(r.get("sum", {}).get("visits", 0)),
-            }
-            for r in z.get("userAgents", [])
+            {"user_agent": k, "requests": v[0], "visits": v[1]}
+            for k, v in sorted(user_agents.items(), key=lambda kv: kv[1][0], reverse=True)[:25]
         ],
     }
 
@@ -229,8 +266,6 @@ def collect_cloudflare():
             "note": "HTTP edge analytics; includes automated clients and is not a human-reader count.",
         }
     except Exception as exc:
-        # Never prevent the Search Console report from being generated just
-        # because the Cloudflare token has lost analytics.read permission.
         return {"available": False, "error": str(exc)}
 
 
@@ -275,23 +310,25 @@ def render(report):
     c = report["cloudflare"]
     lines += ["## Cloudflare edge traffic", ""]
     if c.get("available"):
-        d = c["rolling_24h"]
+        d24 = c["rolling_24h"]
+        d7 = c["rolling_7d"]
         lines += [
-            f"- Rolling 24h: **{d['requests']:,} requests**, **{d['visits']:,} HTTP visits**, **{d['bytes']/1024/1024:.1f} MB** served.",
+            f"- Rolling 24h: **{d24['requests']:,} requests**, **{d24['visits']:,} HTTP visits**, **{d24['bytes']/1024/1024:.1f} MB** served.",
+            f"- Rolling 7d: **{d7['requests']:,} requests**, **{d7['visits']:,} HTTP visits**, **{d7['bytes']/1024/1024:.1f} MB** served.",
             "- These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.",
             "",
-            "### Top countries by request count",
+            "### Top countries by request count — rolling 24h",
             "",
             "| Country | Requests | HTTP visits |",
             "|---|---:|---:|",
         ]
-        for row in d["countries"][:10]:
+        for row in d24["countries"][:10]:
             lines.append(f"| {row['country']} | {row['requests']:,} | {row['visits']:,} |")
         lines.append("")
     else:
         lines += [
             f"- **Cloudflare API unavailable:** {c.get('error', 'unknown error')}",
-            "- The report still succeeds with Search Console data. Restore a token with Zone Analytics Read permission to re-enable this section.",
+            "- The report still succeeds with Search Console data.",
             "",
         ]
 
@@ -321,7 +358,6 @@ def main():
     stamp = datetime.now(timezone.utc).date().isoformat()
     (HISTORY / f"{stamp}.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print((OUT / "latest.md").read_text(encoding="utf-8"))
-    # Only fail when both sources are unavailable; partial reports are useful.
     if not report["google_search_console"].get("available") and not report["cloudflare"].get("available"):
         return 1
     return 0
