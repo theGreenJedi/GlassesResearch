@@ -17,13 +17,15 @@ def canonical(model_id: str) -> str:
     return f"/models/catalog/{model_id.lower()}/"
 
 
-def link_model_headings(path: Path) -> int:
+def link_model_headings(path: Path, valid_ids: set[str]) -> int:
     text = path.read_text(encoding="utf-8")
     count = 0
 
     def replace(match: re.Match[str]) -> str:
         nonlocal count
         model_id = match.group(2)
+        if model_id not in valid_ids:
+            return match.group(0)
         following = text[match.end():match.end() + 180]
         if canonical(model_id) in following:
             return match.group(0)
@@ -50,11 +52,11 @@ def link_catalog_rows(path: Path) -> int:
     return count
 
 
-def link_lineage_ids(path: Path) -> int:
+def link_lineage_ids(path: Path, valid_ids: set[str]) -> int:
     text = path.read_text(encoding="utf-8")
     if "<!-- generated-canonical-model-links -->" in text:
         return 0
-    ids = sorted(set(MODEL_ID.findall(text)))
+    ids = sorted(set(MODEL_ID.findall(text)) & valid_ids)
     if not ids:
         return 0
     links = " · ".join(f"[{model_id}]({canonical(model_id)})" for model_id in ids)
@@ -123,10 +125,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-root", type=Path, required=True)
     args = parser.parse_args()
-    heading_links = sum(link_model_headings(path) for path in sorted((args.output_root / "models").glob("PROFILES*.md")))
-    heading_links += sum(link_model_headings(path) for path in sorted((args.output_root / "docs" / "report-cards").glob("*.md")))
+    valid_ids = set(load_map(args.output_root / "data" / "devices.json"))
+    heading_links = sum(link_model_headings(path, valid_ids) for path in sorted((args.output_root / "models").glob("PROFILES*.md")))
+    heading_links += sum(link_model_headings(path, valid_ids) for path in sorted((args.output_root / "docs" / "report-cards").glob("*.md")))
     catalog_links = link_catalog_rows(args.output_root / "models" / "THE_LIST.md")
-    lineage_links = sum(link_lineage_ids(path) for path in sorted((args.output_root / "lineages").glob("*.md")))
+    lineage_links = sum(link_lineage_ids(path, valid_ids) for path in sorted((args.output_root / "lineages").glob("*.md")))
     enriched = enrich_catalog_pages(args.output_root)
     print(f"Added {heading_links} heading links, {catalog_links} catalog links, {lineage_links} lineage links, and enriched {enriched} canonical model pages")
 
