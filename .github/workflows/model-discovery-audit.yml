@@ -1,0 +1,64 @@
+name: Model discovery coverage
+
+on:
+  schedule:
+    - cron: "20 4 * * *"  # 12:20 AM EDT
+    - cron: "20 5 * * *"  # 12:20 AM EST
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'data/model-candidates.json'
+      - 'data/model-candidates.schema.json'
+      - 'models/CATALOG.md'
+      - 'models/THE_LIST.md'
+      - 'research/news-candidates/**'
+      - 'scripts/audit_model_candidates.py'
+      - '.github/workflows/model-discovery-audit.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'data/model-candidates.json'
+      - 'data/model-candidates.schema.json'
+      - 'models/CATALOG.md'
+      - 'models/THE_LIST.md'
+      - 'research/news-candidates/**'
+      - 'scripts/audit_model_candidates.py'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gate scheduled runs to 12:20 AM Eastern
+        id: cadence
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          OFFSET="$(TZ=America/New_York date +%z)"
+          SCHEDULE="${{ github.event.schedule }}"
+          if { [ "$SCHEDULE" = "20 4 * * *" ] && [ "$OFFSET" = "-0400" ]; } || { [ "$SCHEDULE" = "20 5 * * *" ] && [ "$OFFSET" = "-0500" ]; }; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v6
+        if: steps.cadence.outputs.run == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.cadence.outputs.run == 'true'
+        with:
+          python-version: '3.x'
+
+      - name: Validate candidate ledger and report coverage
+        if: steps.cadence.outputs.run == 'true'
+        run: python scripts/audit_model_candidates.py --github-summary
+
+      - name: Inactive DST counterpart
+        if: steps.cadence.outputs.run == 'false'
+        run: echo "Skipping inactive Eastern-time cron counterpart."

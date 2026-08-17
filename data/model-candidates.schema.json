@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://glassesresearch.org/data/model-candidates.schema.json",
+  "title": "GlassesResearch model candidate ledger",
+  "type": "object",
+  "required": ["schema_version", "candidates"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "maker", "model", "category", "discovered_at", "status", "sources", "rationale"],
+        "properties": {
+          "candidate_id": {"type": "string", "pattern": "^[A-Z0-9][A-Z0-9._-]+$"},
+          "maker": {"type": "string", "minLength": 1},
+          "model": {"type": "string", "minLength": 1},
+          "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+          "category": {"type": "string", "minLength": 1},
+          "discovered_at": {"type": "string", "format": "date"},
+          "status": {"enum": ["untriaged", "in-scope", "out-of-scope", "duplicate-rebrand", "needs-evidence", "cataloged"]},
+          "canonical_id": {"type": ["string", "null"], "pattern": "^GLS-[0-9]{4}$"},
+          "pre_release": {"type": "boolean"},
+          "registry_entry": {"type": "boolean"},
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["url", "kind"],
+              "properties": {
+                "url": {"type": "string", "format": "uri"},
+                "kind": {"enum": ["primary", "developer-primary", "independent-hands-on", "community", "commercial", "regulatory", "user-lead"]},
+                "verified_at": {"type": ["string", "null"], "format": "date"}
+              },
+              "additionalProperties": false
+            }
+          },
+          "rationale": {"type": "string", "minLength": 1},
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
