@@ -5,10 +5,34 @@ This is the first lineage-level population pass using the research frameworks no
 ## Lineage identity
 
 **Confirmed commonality:** HeyCyan software ecosystem.  
-**Confirmed members:** W610 (GLS-0039) and Anko Camera Glasses (GLS-0120).  
-**Not yet established lineage-wide:** common PCB, exact chipset, firmware image, charging system, mechanical design, or ODM/manufacturer.
+**Confirmed canonical members:** W610 (GLS-0039) and Anko Camera Glasses (GLS-0120).  
+**Verified W610 market identities:** BooaBei, Zbna W610, Mingtawn W610, ESTG W610; STARK Horizon is a strong W610 market-identity match because STARK itself calls the underlying glasses `STARK W610`.  
+**Documented HeyCyan sibling platforms:** W611 Pro, W620, W630, W640, W650 and additional supplier-side W/N-series products. These are not automatically W610 rebrands merely because they share software or some silicon.
 
-Evidence basis: EV-0001 through EV-0008 plus the model and lineage chapters. Software compatibility must not be treated as proof of hardware identity.
+Evidence now shows that the low-cost HeyCyan market contains both **true retail rebrands of a common platform** and **distinct sibling platforms that reuse software, silicon families, or naming conventions**. GlassesResearch therefore treats market identity, canonical model identity, software lineage, and OEM/manufacturer identity as separate layers.
+
+## Market identity resolution
+
+A visitor may know only the seller name printed on a box or marketplace order. Verified aliases should therefore remain searchable even when they do not add another canonical model count.
+
+| Market identity | Resolution | Count behavior |
+|---|---|---|
+| BooaBei | W610 / HeyCyan lineage | Does not add a model; routes to GLS-0039 research. |
+| Zbna W610 | W610 / HeyCyan lineage | Does not add a model; routes to GLS-0039 research. |
+| Mingtawn W610 | W610 / HeyCyan lineage | Does not add a model; routes to GLS-0039 research. |
+| ESTG W610 | W610 / HeyCyan lineage | Does not add a model; routes to GLS-0039 research. |
+| STARK Horizon | Strong W610 market identity | Does not add a model while the W610 identity remains the best-supported underlying platform; seller-specific differences are preserved. |
+
+The reusable alias map lives in `data/lineage-aliases.json`. Search surfaces should accept the market name a purchaser actually knows, explain the mapping, and then lead to the canonical model and lineage evidence.
+
+## HeyCyan sibling platforms are not aliases by default
+
+Supplier and manufacturer pages independently document W611 Pro, W620, W630, W640 and W650 as named products. Shared HeyCyan software and even shared JL7018F/V821-family silicon do **not** prove that these are W610 aliases. For example, W640 is documented with a 290 mAh battery, IP66 rating and sport frame, while W650 is documented with a 220 mAh battery and different chassis/power characteristics. These require their own admission/lineage decisions rather than being collapsed into GLS-0039.
+
+This distinction prevents both errors:
+
+1. **over-counting** a seller rename such as BooaBei as a new model; and
+2. **under-counting** a materially distinct sibling platform merely because it also uses HeyCyan.
 
 ## Connectivity
 
@@ -97,8 +121,9 @@ Cloud/service survival has not yet been hands-on verified. The HeyCyan ecosystem
 - FCC records identify W610-linked regulatory evidence (EV-0006).
 - A SANVNET regulatory manual references W610 (EV-0007).
 - Goodway publishes a W610 specification/customization page (EV-0008).
+- Current retail/manual evidence also exposes multiple branded W610 market identities, including Zbna, Mingtawn and ESTG.
 
-These are meaningful supply-chain clues but do not yet justify collapsing Goodway, SANVNET, every W610 seller, and HeyCyan into one manufacturer identity. Brand, software platform, applicant, supplier, and ODM roles remain distinct until directly evidenced.
+These are meaningful supply-chain clues but do not justify collapsing Goodway, SANVNET, every W610 seller, and HeyCyan into one manufacturer identity. Brand, software platform, applicant, supplier, ODM and retail-market identity remain distinct until directly evidenced.
 
 ### Anko Camera Glasses
 
@@ -108,7 +133,7 @@ These are meaningful supply-chain clues but do not yet justify collapsing Goodwa
 
 ## Silicon genealogy
 
-No lineage-wide chipset claim is promoted yet. EV-0008 contains supplier-side chipset/software details for W610 and should be mined into the silicon map at the exact-model level. Shared HeyCyan software does not prove shared silicon across Anko or other suspected family members.
+No lineage-wide chipset claim is promoted. W610 and W640 supplier documentation both expose JL7018F + Allwinner V821-family architecture, but shared silicon does not establish product identity. W650 documentation materially differs in battery and chassis details even while remaining in the HeyCyan ecosystem.
 
 ## Prescription and optical serviceability
 
@@ -164,10 +189,10 @@ The HeyCyan relationship makes Anko a high-priority test target because a mass-m
 
 ## Next evidence actions
 
-1. Mine EV-0008 into exact W610 silicon fields.
-2. Convert the existing W610 hands-on observations into dated GlassesResearch-verified evidence records.
-3. Run the normalized offline/service-dependence test on W610.
-4. Run battery workloads on the physical W610 unit.
-5. Execute the EV-0068 specimen measurement, lens-tracing and independent-optician closure protocol.
-6. Test CyanBridge/community-SDK compatibility on Anko when hardware becomes available.
-7. Continue OEM/regulatory correlation without assuming that software lineage equals manufacturer lineage.
+1. Expand the market-identity resolver as additional verified seller names are discovered.
+2. Reconcile W611 Pro, W620, W630, W640 and W650 against the canonical ledger as distinct candidate platforms rather than W610 aliases.
+3. Mine supplier documentation into exact silicon and power fields without treating shared parts as identity proof.
+4. Convert the existing W610 hands-on observations into dated GlassesResearch-verified evidence records.
+5. Run the normalized offline/service-dependence and battery tests on W610.
+6. Execute the EV-0068 specimen measurement, lens-tracing and independent-optician closure protocol.
+7. Test CyanBridge/community-SDK compatibility on Anko when hardware becomes available.
