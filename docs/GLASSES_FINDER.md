@@ -6,6 +6,10 @@ The Glasses Finder is the simple front door:
 
 **Choose needs → narrow candidates → see where to buy → compare → open deep research.**
 
+## Current capability contract
+
+The live Finder currently supports practical-needs filtering, buying-route filtering, exact/near-match discovery, purchase-source routes, and two-to-four-device comparison. **Price-band/range controls and Report Card minimum-score filters are planned; they are not yet live controls.** The implementation-status section below is the source of truth for what has shipped versus what remains next.
+
 ## Shopper-first filters
 
 ### Vision
@@ -58,7 +62,7 @@ The Glasses Finder is the simple front door:
 - Specialist retailer
 - Secondary market
 - New / refurbished / used
-- Price bands
+- Price bands *(planned control)*
 
 ## Advanced filters
 
@@ -75,7 +79,7 @@ The Report Card is an advanced filter layer, not a prerequisite for using the Fi
 - Hackability
 - Value
 
-Each numeric dimension can eventually be constrained by minimum score. N/A remains semantically distinct from a low score, and unknown remains unknown.
+Minimum-score controls for these numeric dimensions are **planned, not currently shipped**. When implemented, N/A will remain semantically distinct from a low score, and unknown will remain unknown.
 
 ## Candidate cards
 
