@@ -13,6 +13,7 @@ The GlassesResearch working library: ways to find devices, evaluate evidence, in
 
 - [**GlassesResearch Report Card**](REPORT_CARD.md) — the common evaluation system for hardware, wearability, visual AI, software, HUD, openness, owner control, cloud independence, hackability, and value.
 - [**Model research chapters**](../models/README.md) — source-backed device and family dossiers.
+- [**Data & downloads**](../data/README.md) — public JSON, CSV, per-model bundles, schemas, evidence resources, and lower-level structured endpoints.
 - [**Ecosystem relationship map**](ECOSYSTEM_MAP.md) — evidence-backed connections among models, lineages, apps, platforms, SDKs, protocols, services, and communities.
 - [**Technology lineages**](../lineages/README.md) — OEM, rebrand, firmware, app, and platform relationships.
 - [**Companion App Database**](COMPANION_APP_DATABASE.md) — pairing, firmware, accounts, AI, media, and long-term survivability.
