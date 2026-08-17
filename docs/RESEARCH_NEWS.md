@@ -8,17 +8,17 @@ The newest verified changes, useful tools, developments we are watching, and res
 
 | Date | What changed | Go deeper |
 |---|---|---|
-| Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [Model page](/models/catalog/gls-0159/) · [GLS resolver](/gls/gls-0159/) |
-| Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026--halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](/models/catalog/gls-0049/) |
-| Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026--cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](/models/catalog/gls-0039/) |
+| Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [Model page](https://glassesresearch.org/models/catalog/gls-0159/) · [GLS resolver](https://glassesresearch.org/gls/gls-0159/) |
+| Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026--halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) |
+| Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026--cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](https://glassesresearch.org/models/catalog/gls-0039/) |
 
 ### August 17, 2026 — Lucyd Armor enters the canonical catalog as GLS-0159
 
-Discovery reconciliation identified **Lucyd Armor** as a genuine catalog omission rather than another fashion-frame alias. Armor is Innovative Eyewear / Lucyd's smart-safety-eyewear product line, with a distinct protective-equipment use case and product architecture. It now has its own canonical identity, **[GLS-0159](/models/catalog/gls-0159/)**, and its own unknown-safe Core Report Card rather than inheriting scores from Lucyd Lyte models.
+Discovery reconciliation identified **Lucyd Armor** as a genuine catalog omission rather than another fashion-frame alias. Armor is Innovative Eyewear / Lucyd's smart-safety-eyewear product line, with a distinct protective-equipment use case and product architecture. It now has its own canonical identity, **[GLS-0159](https://glassesresearch.org/models/catalog/gls-0159/)**, and its own unknown-safe Core Report Card rather than inheriting scores from Lucyd Lyte models.
 
 **Why it matters:** discovery did what it is supposed to do: a broad search lead became an identity investigation, then a verified canonical admission. The catalog now contains **158** purchasable models or explicitly marketed product generations.
 
-Continue: [GLS-0159 model page](/models/catalog/gls-0159/) · [resolve GLS-0159](/gls/gls-0159/) · [compare in Finder](/docs/COMPARISON_ENGINE/?left=GLS-0159) · [follow Lucyd Armor](?model=GLS-0159%2C%20Lucyd%20Armor#verified-research-alerts)
+Continue: [GLS-0159 model page](https://glassesresearch.org/models/catalog/gls-0159/) · [resolve GLS-0159](https://glassesresearch.org/gls/gls-0159/) · [compare in Finder](/docs/COMPARISON_ENGINE/?left=GLS-0159) · [follow Lucyd Armor](?model=GLS-0159%2C%20Lucyd%20Armor#verified-research-alerts)
 
 Primary source: [Lucyd — Lucyd Armor](https://lucyd.co/products/lucyd-armor)
 
@@ -30,9 +30,9 @@ Items here are credible and relevant but have not crossed the threshold for a ca
 
 Halliday documents **G2** as a materially distinct successor to its current DigiWindow generation, with binocular waveguides and dual microLED optical engines. Halliday currently offers a refundable **$10 Priority Access reservation** and says actual G2 preorders open in late August 2026.
 
-G2 therefore remains a **pre-release registry item**, not a new canonical GLS record yet. It is also not permitted to inherit scores from **[GLS-0049 Halliday Glasses](/models/catalog/gls-0049/)** simply because the products share a maker and lineage.
+G2 therefore remains a **pre-release registry item**, not a new canonical GLS record yet. It is also not permitted to inherit scores from **[GLS-0049 Halliday Glasses](https://glassesresearch.org/models/catalog/gls-0049/)** simply because the products share a maker and lineage.
 
-Continue: [current Halliday model](/models/catalog/gls-0049/) · [compare current Halliday Glasses](/docs/COMPARISON_ENGINE/?left=GLS-0049) · [follow Halliday](?brand=Halliday#verified-research-alerts)
+Continue: [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) · [compare current Halliday Glasses](/docs/COMPARISON_ENGINE/?left=GLS-0049) · [follow Halliday](?brand=Halliday#verified-research-alerts)
 
 Primary sources: [Halliday](https://www.hallidayglobal.com/) · [Priority Access / purchase](https://www.hallidayglobal.com/purchase) · [Halliday support FAQ](https://support.hallidayglobal.com/hc/en-us/articles/60154389484825-General-FAQs)
 
@@ -42,9 +42,9 @@ Primary sources: [Halliday](https://www.hallidayglobal.com/) · [Priority Access
 
 The community **CyanBridge v2.1.1** release adds or improves Meta DAT pairing diagnostics, TuneBuds compatibility, HeyCyan media synchronization and Wi-Fi Direct handling, expanded logging, and setup/firmware guidance. It also supports remote OpenAI-compatible model URLs, including Ollama-style endpoints reachable over a private network such as Tailscale.
 
-For the **[W610 / GLS-0039](/models/catalog/gls-0039/)** ecosystem, this is useful evidence about what owners can do outside the stock vendor experience. It does not by itself change a Report Card score; the specific capability and evidence still have to support that judgment.
+For the **[W610 / GLS-0039](https://glassesresearch.org/models/catalog/gls-0039/)** ecosystem, this is useful evidence about what owners can do outside the stock vendor experience. It does not by itself change a Report Card score; the specific capability and evidence still have to support that judgment.
 
-Continue: [W610 model page](/models/catalog/gls-0039/) · [W610 research](/models/W610/) · [compare W610](/docs/COMPARISON_ENGINE/?left=GLS-0039) · [follow W610 hacks](?model=GLS-0039%2C%20W610&topic=hacks_development#verified-research-alerts)
+Continue: [W610 model page](https://glassesresearch.org/models/catalog/gls-0039/) · [W610 research](/models/W610/) · [compare W610](/docs/COMPARISON_ENGINE/?left=GLS-0039) · [follow W610 hacks](?model=GLS-0039%2C%20W610&topic=hacks_development#verified-research-alerts)
 
 Source: [CyanBridge v2.1.1 release](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.1.1)
 
