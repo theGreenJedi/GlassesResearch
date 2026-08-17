@@ -9,11 +9,17 @@ The GlassesResearch working library: ways to find devices, evaluate evidence, in
 - [**Start by what you need**](START_BY_NEED.md) — begin with use cases instead of brands.
 - [**Buyer guide**](../buyers/BUYER_AND_OPENNESS_GUIDE.md) — ownership, privacy, offline use, repairability, prescription options, and vendor lock-in.
 
+## Follow, cite, and reuse
+
+- [**Research & News RSS feed**](https://glassesresearch.org/feed.xml) — title, date, and summary in your feed reader; each item returns to the canonical GlassesResearch article for the full research and citations.
+- [**How to cite GlassesResearch**](CITING_GLASSESRESEARCH.md) — stable GLS/TL identifiers, attribution formats, canonical URLs, and dataset citation guidance.
+- [**Data & downloads**](../data/README.md) — public JSON, CSV, per-model bundles, schemas, evidence resources, and lower-level structured endpoints.
+- [**Community**](../resources/COMMUNITY_AND_DEVELOPMENT.md) — direct links to Reddit, Discord, GitHub, XDA, developer forums, and cross-vendor communities.
+
 ## Report Cards and research
 
 - [**GlassesResearch Report Card**](REPORT_CARD.md) — the common evaluation system for hardware, wearability, visual AI, software, HUD, openness, owner control, cloud independence, hackability, and value.
 - [**Model research chapters**](../models/README.md) — source-backed device and family dossiers.
-- [**Data & downloads**](../data/README.md) — public JSON, CSV, per-model bundles, schemas, evidence resources, and lower-level structured endpoints.
 - [**Ecosystem relationship map**](ECOSYSTEM_MAP.md) — evidence-backed connections among models, lineages, apps, platforms, SDKs, protocols, services, and communities.
 - [**Technology lineages**](../lineages/README.md) — OEM, rebrand, firmware, app, and platform relationships.
 - [**Companion App Database**](COMPANION_APP_DATABASE.md) — pairing, firmware, accounts, AI, media, and long-term survivability.
@@ -42,4 +48,3 @@ The GlassesResearch working library: ways to find devices, evaluate evidence, in
 - [**Wearable-HCI taxonomy**](taxonomy/WEARABLE_HCI.md) — form-factor, lineage, evidence, and counting rules.
 - [**Adjacent wearable-HCI devices**](../models/ADJACENT_WEARABLES.md) — related non-eyewear form factors kept separate from the glasses count.
 - [**Questions & Answers**](faq/README.md) — buying, battery, displays, privacy, accessibility, AI, cameras, and development.
-- [**Community**](../resources/COMMUNITY_AND_DEVELOPMENT.md) — direct links to Reddit, Discord, GitHub, XDA, developer forums, and cross-vendor communities.
