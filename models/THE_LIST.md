@@ -2,7 +2,7 @@
 
 **Edition:** 2026-08-14  
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 152 distinct purchasable models or explicitly marketed product generations
+**Count:** 157 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -218,6 +218,19 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0152 | INMO | GO2 | ≤2026 | current/support-established | discreet display | retail/support | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://support.inmoxr.com/go2/) |
 | GLS-0153 | INMO | GO3 | ≤2026 | current | discreet display / AI translation | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://www.inmoxr.com/pages/inmo-go3-ai-glasses) |
 
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0154 | RayNeo / Thunderbird Innovation | V3 (Thunderbird V3, model XRGF50) | ≤2026 | current/region-limited | camera/audio AI | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17_302.md); [source](https://device.report/rayneo) |
+| GLS-0155 | RayNeo | Air 4 Pro | ≤2026 | current | XR display | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17_302.md); [source](https://www.rayneo.com/products/rayneo-air-4-pro-ar-smart-glasses) |
+| GLS-0156 | XREAL | 1S | ≤2026 | current | XR display | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17_302.md); [source](https://us.shop.xreal.com/products/xreal-1s) |
+| GLS-0157 | Shared W100 / Ear Dance OEM ecosystem | W100 | ≤2026 | current/OEM-retail | audio / AI translation | retail/OEM | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17_302.md); [source](https://www.goodwaytechs.com/ai-smart-glasses-manufacturer.html) |
+| GLS-0158 | Goodway / shared HeyCyan OEM ecosystem | W630 | ≤2026 | current/OEM-retail | camera/audio AI | retail/OEM | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17_302.md); [source](https://www.goodwaytechs.com/ai-camera-glasses-w630.html) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -230,7 +243,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 152-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 157-row count:
 
 - Snap SPECS (2026): order intent is tracked, but the final purchasable SKU and delivery evidence still need reconciliation.
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
