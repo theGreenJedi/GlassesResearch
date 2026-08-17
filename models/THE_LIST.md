@@ -2,7 +2,7 @@
 
 **Edition:** 2026-08-14  
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 145 distinct purchasable models or explicitly marketed product generations
+**Count:** 152 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -203,6 +203,21 @@ These rows were admitted after whole-lineage investigation. They use the same ac
 | GLS-0143 | NuEyes | Pro 4 | ≤2026 | current | assistive camera/display | retail/enterprise | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
 | GLS-0144 | Envision | Envision Glasses | c. 2020 | current/legacy transition | assistive visual-AI eyewear | retail | primary; [packet](../docs/report-cards/LINEAGE_ENVISION.md) |
 
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0147 | Everysight | Maverick Sport | ≤2026 | current | display / sport AR | retail/developer | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://www.everysight.com/products/maverick) |
+| GLS-0148 | Dymesty | AI Glasses Cook Edge | ≤2026 | current | camera/audio AI | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://dymesty.com/collections/catalog-sales) |
+| GLS-0149 | Dymesty | AI Glasses Jobs Circle | ≤2026 | current | camera/audio AI | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://dymesty.com/collections/catalog-sales) |
+| GLS-0150 | Dymesty | AI Sunglasses Moore Vision | ≤2026 | current | camera/audio AI | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://dymesty.com/collections/catalog-sales) |
+| GLS-0151 | L'Atitude 52°N | Berlin | ≤2026 | current/region-limited | camera/audio AI | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://www.latitude52n.com/products/berlin-smart-glasses) |
+| GLS-0152 | INMO | GO2 | ≤2026 | current/support-established | discreet display | retail/support | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://support.inmoxr.com/go2/) |
+| GLS-0153 | INMO | GO3 | ≤2026 | current | discreet display / AI translation | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://www.inmoxr.com/pages/inmo-go3-ai-glasses) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -215,7 +230,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 145-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 152-row count:
 
 - Snap SPECS (2026): order intent is tracked, but the final purchasable SKU and delivery evidence still need reconciliation.
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
