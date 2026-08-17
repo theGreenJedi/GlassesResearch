@@ -40,6 +40,12 @@ The standing workflow is:
 
 **Discover → Verify → Preserve → Organize → Cross-reference**
 
+## Structured data follows visible evidence
+
+Machine-readable metadata is another representation of the public research, not a place to make stronger claims. Product identity, model, brand, category, descriptions, ratings, reviews, prices, availability, and offers may be marked up only when the same information is visibly supported on the page and satisfies the relevant format requirements.
+
+A multi-axis GlassesResearch Report Card is not silently converted into a single aggregate star rating. Review or rating markup should be added only when the site publishes a defensible corresponding review or overall rating for that exact product. Unknown prices and availability remain unknown rather than being supplied merely to qualify for a rich result.
+
 ## Preservation
 
 Where law, licensing, and practicality allow, fragile technical material should be preserved with provenance and integrity metadata. A preservation record is not permission to redistribute material whose distribution is restricted.
