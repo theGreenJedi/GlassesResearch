@@ -49,6 +49,7 @@ def main():
     run(ROOT/"scripts/build_site_status.py","--devices",database,"--report-cards",cards,"--output",DEST/"data/site-status.json")
     run(ROOT/"scripts/build_purchase_fallbacks.py","--models",ROOT/"models/THE_LIST.md","--curated",ROOT/"data/purchase-sources.json","--output",DEST/"data/purchase-fallbacks.json")
     run(ROOT/"scripts/build_model_pages.py","--data-dir",DEST/"data","--output-root",DEST)
+    run(ROOT/"scripts/build_report_card_hub.py","--devices",database,"--scores",cards,"--aliases",ROOT/"data/lineage-aliases.json","--output",DEST/"docs/REPORT_CARD.md")
     strip_public_infrastructure_narration()
     run(ROOT/"scripts/build_internal_model_links.py","--output-root",DEST)
     run(ROOT/"scripts/build_rss_feed.py","--source",ROOT/"docs/RESEARCH_NEWS.md","--output",DEST/"feed.xml")
