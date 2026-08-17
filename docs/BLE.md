@@ -1,4 +1,9 @@
-# Bluetooth Low Energy
+---
+title: "Smart Glasses Bluetooth & BLE Research"
+description: "Hands-on and community-sourced Bluetooth Low Energy research for smart glasses, including W610/W6xx discovery, pairing, GATT analysis, protocol testing, and media-transfer investigation."
+---
+
+# Smart Glasses Bluetooth & BLE Research
 
 ## Purpose
 

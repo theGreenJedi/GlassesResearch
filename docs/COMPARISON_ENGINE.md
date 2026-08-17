@@ -1,4 +1,9 @@
-# Glasses Finder & Compare
+---
+title: "Smart Glasses Finder & Comparison Tool"
+description: "Compare smart glasses across prescription support, cameras, displays, AI, translation, Bluetooth, SDK/API access, offline operation, price, openness, and Report Card evidence."
+---
+
+# Smart Glasses Finder & Comparison Tool
 
 Start with what you need, not with a brand name.
 
