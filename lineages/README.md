@@ -14,7 +14,7 @@ These are maintained as public, evolving lineage chapters:
 
 - [HeyCyan](HEYCYAN.md) — shared companion/software ecosystem spanning W610 and retail-branded devices including Anko.
 - [HeyCyan population ledger](HEYCYAN_POPULATION.md) — model-population, retail-identity mapping, sibling-platform boundaries, and evidence propagation record for the lineage.
-- [W100 / Ear Dance](W100_EARDANCE/README.md) — commodity audio/translation lineage resolving retail names such as EarlySincere, Astrum W100, Tiglon TG-W100 and LEEDOAR-associated W100 hardware into the underlying platform family without inflating the model count.
+- [W100 / Ear Dance](W100_EARDANCE/) — commodity audio/translation lineage resolving retail names such as EarlySincere, Astrum W100, Tiglon TG-W100 and LEEDOAR-associated W100 hardware into the underlying platform family without inflating the model count.
 - [Meta smart glasses](META.md) — Ray-Ban and Oakley smart-glasses generations built around Meta's wearable platform.
 - [Google Glass](GOOGLE_GLASS.md) — Explorer Edition through Enterprise Edition 2; a foundational corporate/product lineage spanning consumer experimentation and enterprise assisted reality.
 - [Vuzix](VUZIX.md) — corporate lineage split into the Z100 phone-peripheral branch and standalone Android wearable-computer branches including M400/M4000, Blade 2, Shield, and LX1.
