@@ -6,11 +6,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/analytics_report.py'
-      - 'scripts/analytics_report_v2.py'
       - '.github/workflows/analytics-report.yml'
   schedule:
-    # 07:15 UTC = 03:15 EDT. Runs after the nightly collectors and before
-    # daytime reviews. Search Console itself may trail by 2–3 days.
     - cron: '15 7 * * *'
 
 permissions:
@@ -43,7 +40,7 @@ jobs:
           GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
-        run: python scripts/analytics_report_v2.py
+        run: python scripts/analytics_report.py
 
       - name: Publish latest snapshot and history
         shell: bash
@@ -57,7 +54,22 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add analytics/latest.md analytics/latest.json analytics/history/
           git commit -m "analytics: refresh automated report"
-          git push
+
+          # Other site automations may write to main at the same time. Rebase the
+          # report commit onto the current remote tip before pushing so a benign
+          # concurrent write does not make analytics fail.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            if [ "$attempt" -eq 3 ]; then
+              echo 'Unable to publish analytics after 3 synchronization attempts.' >&2
+              exit 1
+            fi
+            sleep $((attempt * 3))
+          done
 
       - name: Job summary
         if: always()
