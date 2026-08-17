@@ -25,6 +25,8 @@ This is the cross-ecosystem discovery layer. For the canonical purchaser-history
 | RayNeo | X3 Pro | Standalone AI/AR glasses | Primary | Android-derived platform and developer investigation lead | [RayNeo](https://www.rayneo.com/) |
 | RayNeo | Air family | Tethered display/XR glasses | Primary | Cross-model display and accessory research | [RayNeo products](https://www.rayneo.com/collections/ar-glasses) |
 | Rokid | Rokid Glasses | AI/AR glasses | Primary | SDK/platform and translation workflow research | [Rokid](https://global.rokid.com/) |
+| Everysight | Maverick AI | Full-color AR + AI smart glasses | Primary; pre-release | Public Android/iOS SDK; tethered host architecture; owner-control boundary requires evaluation | [Everysight](https://www.everysight.com/pages/maverick-ai) |
+| Everysight | Maverick AI Pro | Full-color AR + AI smart glasses with eye tracking | Primary; pre-release + user-supplied hands-on lead | Pro adds GazeIntent eye tracking; SDK certificate path depends on Everysight-issued keys/server | [Everysight](https://www.everysight.com/pages/maverick-ai) |
 | Amazon | Echo Frames | Audio smart glasses | Primary | Discontinued/current-generation history and Alexa integration | [Amazon Echo Frames](https://www.amazon.com/echo-frames/) |
 | Snap | Spectacles | Standalone AR developer glasses | Primary | Snap OS and developer platform | [Spectacles](https://www.spectacles.com/) |
 | Snap | SPECS | Standalone spatial AR glasses | Primary; preorder | Consumer-orderable platform announced June 2026; fall shipping target | [Snap launch](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses) |
