@@ -11,14 +11,17 @@ on:
       - 'data/model-candidates.schema.json'
       - 'models/CATALOG.md'
       - 'models/THE_LIST.md'
+      - 'models/THE_LIST_RECONCILIATION_*.md'
       - 'research/news-candidates/**'
       - 'research/discovery-candidates/**'
+      - 'research/discovery-resolutions/**'
       - 'research/discovery-benchmark.json'
       - 'research/discovery-sources.json'
       - 'scripts/audit_model_candidates.py'
       - 'scripts/audit_discovery_recall.py'
       - 'scripts/collect_web_discovery.py'
       - 'scripts/collect_discovery_watches.py'
+      - 'scripts/resolve_discovery_candidates.py'
       - '.github/workflows/model-discovery-audit.yml'
       - '.github/workflows/daily-news-collector.yml'
   push:
@@ -28,14 +31,18 @@ on:
       - 'data/model-candidates.schema.json'
       - 'models/CATALOG.md'
       - 'models/THE_LIST.md'
+      - 'models/THE_LIST_RECONCILIATION_*.md'
       - 'research/news-candidates/**'
       - 'research/discovery-candidates/**'
+      - 'research/discovery-resolutions/**'
       - 'research/discovery-benchmark.json'
       - 'research/discovery-sources.json'
       - 'scripts/audit_model_candidates.py'
       - 'scripts/audit_discovery_recall.py'
       - 'scripts/collect_web_discovery.py'
       - 'scripts/collect_discovery_watches.py'
+      - 'scripts/resolve_discovery_candidates.py'
+      - '.github/workflows/model-discovery-audit.yml'
 
 permissions:
   contents: read
@@ -74,11 +81,26 @@ jobs:
 
       - name: Verify discovery collector syntax
         if: steps.cadence.outputs.run == 'true'
-        run: python -m py_compile scripts/collect_web_discovery.py scripts/collect_discovery_watches.py scripts/audit_discovery_recall.py
+        run: python -m py_compile scripts/collect_web_discovery.py scripts/collect_discovery_watches.py scripts/audit_discovery_recall.py scripts/resolve_discovery_candidates.py
 
       - name: Smoke-test live broad-web discovery
         if: steps.cadence.outputs.run == 'true'
         run: python scripts/collect_web_discovery.py
+
+      - name: Resolve every retained discovery URL
+        if: steps.cadence.outputs.run == 'true'
+        run: python scripts/resolve_discovery_candidates.py
+
+      - name: Retain discovery intake and dispositions
+        if: steps.cadence.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-resolution
+          path: |
+            research/discovery-candidates/*
+            research/discovery-resolutions/*
+          if-no-files-found: error
+          retention-days: 7
 
       - name: Exercise durable discovered-source watches
         if: steps.cadence.outputs.run == 'true'
