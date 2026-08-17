@@ -1,6 +1,20 @@
 name: Lighthouse performance
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'docs/**'
+      - 'models/**'
+      - 'lineages/**'
+      - 'guides/**'
+      - 'overrides/**'
+      - 'scripts/**'
+      - 'mkdocs.yml'
+      - 'requirements-docs.txt'
+      - 'lighthouserc.cjs'
+      - '.github/workflows/lighthouse-performance.yml'
   pull_request:
     branches: [main]
     paths:
@@ -59,10 +73,11 @@ jobs:
         shell: python
         run: |
           import json
+          import os
           from pathlib import Path
 
           manifest_path = Path('lhci-results/manifest.json')
-          summary = Path(__import__('os').environ['GITHUB_STEP_SUMMARY'])
+          summary = Path(os.environ['GITHUB_STEP_SUMMARY'])
           if not manifest_path.exists():
               summary.write_text('## Lighthouse\n\nNo Lighthouse manifest was produced.\n', encoding='utf-8')
               raise SystemExit(0)
@@ -81,7 +96,7 @@ jobs:
               report = json.loads(Path(entry['jsonPath']).read_text(encoding='utf-8'))
               cats = report['categories']
               audits = report['audits']
-              path = report['finalDisplayedUrl'].replace('http://localhost:', 'localhost:')
+              page = report['finalDisplayedUrl']
               def score(name):
                   value = cats[name]['score']
                   return f'{value * 100:.0f}' if value is not None else '—'
@@ -91,7 +106,7 @@ jobs:
                       return '—'
                   return f'{value:.{decimals}f}'
               lines.append(
-                  f"| {path} | {score('performance')} | {score('accessibility')} | "
+                  f"| {page} | {score('performance')} | {score('accessibility')} | "
                   f"{score('best-practices')} | {score('seo')} | "
                   f"{metric('largest-contentful-paint')} ms | "
                   f"{metric('cumulative-layout-shift', 3)} | "
