@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SAFE_ALIAS_TYPES = {"rebrand", "retail-brand", "market-name"}
 DEEP_HEADING = re.compile(r"^###\s+(.+?)\s*$", re.MULTILINE)
 GLS_HEADING = re.compile(r"^#{2,3}\s+(GLS-\d{4})\s+[—-]\s+", re.MULTILINE)
+NON_PUBLIC_REPORT_PREFIXES = ("PROFILE_AUDIT_", "SOURCES_")
 
 
 def load(path: Path) -> dict:
@@ -58,9 +59,9 @@ def pretty_stem(stem: str, prefix: str) -> str:
 def library_links() -> tuple[dict[str, list[str]], int]:
     """Return links for every published report-card research page.
 
-    Every markdown file under docs/report-cards must land in exactly one visible
-    bucket. This keeps the public-path audit useful: adding a new research page
-    cannot silently leave it orphaned from the Report Cards front door.
+    Every public markdown file under docs/report-cards must land in exactly one
+    visible bucket. Source/audit support files are intentionally excluded because
+    they are not built as public pages.
     """
     report_dir = ROOT / "docs" / "report-cards"
     groups: dict[str, list[str]] = {
@@ -73,6 +74,8 @@ def library_links() -> tuple[dict[str, list[str]], int]:
     deep_ids: set[str] = set()
 
     for path in sorted(report_dir.glob("*.md")):
+        if path.name.startswith(NON_PUBLIC_REPORT_PREFIXES):
+            continue
         text = path.read_text(encoding="utf-8")
         deep_ids.update(GLS_HEADING.findall(text))
         link = f"/docs/report-cards/{path.stem}/"
