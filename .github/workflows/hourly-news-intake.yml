@@ -1,4 +1,4 @@
-name: Hourly smart-glasses news intake
+name: Hourly smart-glasses knowledge intake
 
 on:
   schedule:
@@ -7,10 +7,9 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
-  group: hourly-smart-glasses-news-intake
+  group: knowledge-intake-writer
   cancel-in-progress: false
 
 jobs:
@@ -21,46 +20,60 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: main
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Collect recent smart-glasses news
-        run: python scripts/collect_daily_news.py
-
-      - name: Detect new news candidates
-        id: changes
-        shell: bash
-        run: |
-          if [ -z "$(git status --porcelain -- research/news-candidates)" ]; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Preserve hourly news inbox
-        if: steps.changes.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TZ: America/New_York
+      - name: Open durable knowledge-intake branch
         shell: bash
         run: |
           set -euo pipefail
-          STAMP="$(date +%Y-%m-%d-%H%M)"
-          BRANCH="news-intake-${STAMP}-${GITHUB_RUN_ID}"
           git config user.name "glassesresearch-bot"
           git config user.email "actions@users.noreply.github.com"
-          git checkout -b "$BRANCH"
-          git add research/news-candidates
-          git commit -m "Collect hourly smart-glasses news ${STAMP} ET"
-          git push origin "$BRANCH"
-          gh pr create \
-            --base main \
-            --head "$BRANCH" \
-            --title "Hourly smart-glasses news intake — ${STAMP} ET" \
-            --body "Automated high-recall news inbox. Discovery is not publication. Deduplicate underlying events, privilege primary sources, verify factual claims, and publish only evidence-backed developments. Verified publication can then be sent immediately to subscribers who selected as-verified delivery through the alerts Worker."
+          git fetch origin main
+          if git ls-remote --exit-code --heads origin knowledge-intake >/dev/null 2>&1; then
+            git fetch origin knowledge-intake
+            git checkout -B knowledge-intake origin/knowledge-intake
+            git merge --no-edit origin/main
+          else
+            git checkout -B knowledge-intake origin/main
+          fi
 
-      - name: No new news
-        if: steps.changes.outputs.changed == 'false'
-        run: echo "No new news candidates this hour."
+      - name: Validate classifier
+        run: python scripts/test_knowledge_flow.py
+
+      - name: Preserve previous same-day snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          DATE="$(date -u +%F)"
+          STAMP="$(date -u +%Y-%m-%dT%H%M%SZ)"
+          for EXT in json md; do
+            SRC="research/news-candidates/${DATE}.${EXT}"
+            if [ -f "$SRC" ]; then
+              mv "$SRC" "research/news-candidates/${STAMP}.${EXT}"
+            fi
+          done
+
+      - name: Discover, classify, triage, and route recent candidates
+        run: python scripts/collect_daily_news.py
+
+      - name: Persist durable intake queue
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add research/news-candidates
+          if ! git diff --cached --quiet; then
+            STAMP="$(TZ=America/New_York date +%Y-%m-%d-%H%M)"
+            git commit -m "Persist classified smart-glasses intake ${STAMP} ET"
+          fi
+          git push origin HEAD:knowledge-intake
+
+          {
+            echo "### Knowledge intake"
+            echo ""
+            echo "The durable queue is stored on the \`knowledge-intake\` branch."
+            echo "Collection is not publication; candidates carry relationship, type, triage, and routing metadata before editorial review."
+          } >> "$GITHUB_STEP_SUMMARY"
