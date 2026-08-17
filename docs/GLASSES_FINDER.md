@@ -4,11 +4,13 @@ GlassesResearch contains deep research, but a shopper should not need to read th
 
 The Glasses Finder is the simple front door:
 
-**Choose needs → narrow candidates → see where to buy → compare → open deep research.**
+**Choose needs → narrow candidates → shortlist → compare → open model research → follow new evidence.**
 
 ## Current capability contract
 
-The live Finder currently supports practical-needs filtering, buying-route filtering, exact/near-match discovery, purchase-source routes, and two-to-four-device comparison. **Price-band/range controls and Report Card minimum-score filters are planned; they are not yet live controls.** The implementation-status section below is the source of truth for what has shipped versus what remains next.
+The live Finder currently supports practical-needs filtering, buying-route filtering, verified price-ceiling filters, Report Card minimum-score filters, exact/near-match discovery, purchase-source routes, shortlist checkboxes, and two-to-four-device comparison.
+
+Price filtering uses only current documented acquisition-price observations. A model without a usable observation remains unknown and does not silently pass a budget filter. Report Card thresholds likewise require a documented numeric score; `N/A` and unknown remain distinct from a low score.
 
 ## Shopper-first filters
 
@@ -55,6 +57,7 @@ The live Finder currently supports practical-needs filtering, buying-route filte
 
 ### Buying
 - Available new now
+- Verified price ceilings: under $100, $250, $500, and $1,000
 - Manufacturer purchase
 - Amazon
 - Major retailer
@@ -62,11 +65,10 @@ The live Finder currently supports practical-needs filtering, buying-route filte
 - Specialist retailer
 - Secondary market
 - New / refurbished / used
-- Price bands *(planned control)*
 
 ## Advanced filters
 
-The Report Card is an advanced filter layer, not a prerequisite for using the Finder:
+The Report Card is an advanced filter layer, not a prerequisite for using the Finder. Minimum-score controls are live for the numeric dimensions published in the structured Report Card dataset, including:
 
 - Hardware
 - Wearability
@@ -79,7 +81,7 @@ The Report Card is an advanced filter layer, not a prerequisite for using the Fi
 - Hackability
 - Value
 
-Minimum-score controls for these numeric dimensions are **planned, not currently shipped**. When implemented, N/A will remain semantically distinct from a low score, and unknown will remain unknown.
+An enabled minimum requires a documented numeric score. `N/A` remains semantically distinct from a low score, and unknown remains unknown.
 
 ## Candidate cards
 
@@ -89,11 +91,16 @@ Each surviving candidate shows only the information needed to decide whether to 
 - current / discontinued status
 - matched shopper requirements
 - important unknowns
+- verified current price when one is documented
 - purchase-source buttons
-- Add to comparison
+- shortlist selection
 - research/report-card/lineage links
 
 The card does not reproduce the full model article.
+
+## Continue the research
+
+The Finder is deliberately a route, not a destination. A visitor can move from a filtered candidate into its canonical model page, Report Card, lineage/evidence, purchase routes, and comparison. Canonical model pages then expose the next research paths and a **Follow this model** route into Verified Research Alerts, prefilled with the model being researched.
 
 ## Purchase-source model
 
@@ -107,9 +114,9 @@ Purchase URLs are maintained data rather than permanent assumptions.
 
 A scheduled GitHub Action runs `scripts/check_purchase_links.py` daily and writes `data/purchase-link-health.json`. Each route is classified separately as reachable, redirected, dead, unreachable, temporarily failing, unknown, or blocked/rate-limited by the retailer.
 
-The checker deliberately does **not** silently delete or replace canonical purchase URLs. Suspicious routes are written to `research/purchase-link-replacement-queue.md` so an exact-model replacement can be verified before the canonical dataset changes. Retailers that block automated requests remain distinct from confirmed dead links because a bot-blocked page may still work perfectly for a shopper.
+Finder purchase buttons consume that health ledger. Confirmed dead routes are suppressed in the visitor interface and queued for replacement; bot-blocked or temporarily failing routes remain distinct from confirmed dead links because an automated check can fail while the retailer page still works for a shopper.
 
-The health ledger proves reachability/freshness only. Exact-model inventory, price and condition require a higher-level verification pass and should retain their own last-verified dates.
+The health ledger proves reachability/freshness only. Exact-model inventory, price and condition require a higher-level verification pass and retain their own last-verified dates.
 
 ## Evidence semantics
 
@@ -119,25 +126,28 @@ Filters operate from canonical structured data, not prose scraping. Boolean-like
 
 ### Implemented in Finder v3
 - grouped shopper facets for Vision, Camera, Audio, Display, AI/utility, Ownership/connectivity, and Buying;
+- normalized capability data across the full canonical model pool;
 - live per-filter candidate counts;
 - exact-match mode plus near-match mode;
 - full canonical model discovery pool;
+- model/brand/GLS search with verified alias and rebrand routing;
 - compact candidate cards;
 - purchase-source buttons on candidate cards;
-- manufacturer, Amazon and secondary-market seed routes;
+- manufacturer, Amazon and secondary-market routes where populated;
+- verified acquisition-price observations and price-ceiling filters;
+- Report Card minimum-score filters;
+- shortlist checkboxes with one `Compare selected` action for two-to-four models;
 - purchase links retained when candidates move into comparison;
 - two-to-four-device comparison, differences-only, shareable URL and print behavior;
 - mobile-responsive grouped facets;
 - canonical purchase-link health ledger and replacement queue;
-- daily scheduled link-health checker that preserves bot-blocked versus actually dead links.
+- Finder suppression of confirmed dead purchase routes while retaining distinct blocked/temporary states;
+- daily scheduled link-health checker.
 
 ### Next waves
-1. Expand purchase-source coverage across the full living catalog wherever legitimate acquisition routes exist.
-2. Normalize capability fields so fewer filters rely on compatibility aliases/heuristics.
-3. Make Finder candidate buttons consume the health ledger, suppressing confirmed dead routes while displaying freshness state for checked links.
-4. Add price fields and price-band/range controls.
-5. Add Report Card minimum-score controls under Advanced filters.
-6. Add selection checkboxes and one `Compare selected` action for shortlist workflows.
-7. Add higher-level price/inventory/model-match verification above simple URL health.
+1. Expand legitimate purchase-source coverage across the full living catalog.
+2. Expand current verified price observations so budget filters cover more models without guessing.
+3. Add higher-level price/inventory/exact-model verification above simple URL health.
+4. Reduce remaining unknown capability fields through source-backed research rather than inference.
 
-The walls of research remain available downstream. The Finder exists so a shopper can reach the right wall first.
+The walls of research remain available downstream. The Finder exists so a visitor can reach the right wall first.
