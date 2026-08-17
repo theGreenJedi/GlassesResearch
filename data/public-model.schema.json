@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://glassesresearch.org/data/public/schema.json",
+  "title": "GlassesResearch public model record",
+  "type": "object",
+  "required": ["schema_version", "id", "identity", "public", "claims", "finder_capabilities", "ecosystem_relations"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "id": {"type": "string", "pattern": "^GLS-[0-9]{4}$"},
+    "identity": {
+      "type": "object",
+      "required": ["maker", "model", "era", "state", "type", "access"],
+      "properties": {
+        "maker": {"type": ["string", "null"]},
+        "model": {"type": ["string", "null"]},
+        "era": {"type": ["string", "null"]},
+        "state": {"type": ["string", "null"]},
+        "type": {"type": ["string", "null"]},
+        "access": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "public": {"type": "object"},
+    "catalog_evidence": {"type": ["string", "null"]},
+    "catalog_links": {"type": "array"},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "value", "evidence_state", "sources", "confidence", "verified_at"],
+        "properties": {
+          "field": {"type": "string"},
+          "value": {},
+          "evidence_state": {"type": "string"},
+          "sources": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"type": ["string", "null"]},
+          "verified_at": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "finder_capabilities": {"type": "object"},
+    "report_card": {"type": ["object", "null"]},
+    "ecosystem_relations": {"type": "array"}
+  },
+  "additionalProperties": false
+}

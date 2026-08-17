@@ -2,13 +2,14 @@
 """Audit GlassesResearch Markdown links and evidence-oriented records.
 
 Uses only the Python standard library. The script checks repository-relative
-Markdown links, reports external links for later archival review, and flags
-preservation-ledger rows that do not contain a recognizable PA record ID.
+and site-root Markdown links, reports external links for later archival review,
+and flags preservation-ledger rows that do not contain a recognizable PA ID.
 """
 
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import sys
 from dataclasses import dataclass
@@ -17,7 +18,7 @@ from urllib.parse import unquote, urlparse
 
 LINK_RE = re.compile(r"(?<!!)\[[^\]]*\]\(([^)]+)\)")
 PA_ID_RE = re.compile(r"\bPA-\d{4}\b")
-SKIP_DIRS = {".git", ".venv", "site", "node_modules", "__pycache__"}
+SKIP_DIRS = {".git", ".venv", ".site-src", "site", "node_modules", "__pycache__"}
 
 
 @dataclass(frozen=True)
@@ -39,10 +40,23 @@ def clean_target(raw: str) -> str:
     target = raw.strip()
     if target.startswith("<") and target.endswith(">"):
         target = target[1:-1]
-    # Markdown permits an optional quoted title after the URL.
     if " \"" in target:
         target = target.split(" \"", 1)[0]
     return unquote(target)
+
+
+def site_root_candidate(root: Path, relative: str) -> Path:
+    """Map a clean site URL such as /docs/BLE/ back to repository Markdown."""
+    clean = relative.lstrip("/").rstrip("/")
+    candidate = root / clean
+    if candidate.is_dir():
+        return candidate / "README.md"
+    if candidate.exists():
+        return candidate
+    markdown_candidate = root / f"{clean}.md"
+    if markdown_candidate.exists():
+        return markdown_candidate
+    return candidate
 
 
 def audit_markdown(root: Path) -> tuple[list[Finding], set[str]]:
@@ -67,21 +81,20 @@ def audit_markdown(root: Path) -> tuple[list[Finding], set[str]]:
                 relative = parsed.path
                 if not relative:
                     continue
-                candidate = (path.parent / relative).resolve()
-                try:
-                    candidate.relative_to(root.resolve())
-                except ValueError:
-                    findings.append(
-                        Finding(path, line_number, f"link escapes repository: {target}")
-                    )
-                    continue
+                if relative.startswith("/"):
+                    candidate = site_root_candidate(root, relative)
+                else:
+                    candidate = (path.parent / relative).resolve()
+                    try:
+                        candidate.relative_to(root.resolve())
+                    except ValueError:
+                        findings.append(Finding(path, line_number, f"link escapes repository: {target}"))
+                        continue
+                    if candidate.is_dir():
+                        candidate = candidate / "README.md"
 
-                if candidate.is_dir():
-                    candidate = candidate / "README.md"
                 if not candidate.exists():
-                    findings.append(
-                        Finding(path, line_number, f"missing local target: {target}")
-                    )
+                    findings.append(Finding(path, line_number, f"missing local target: {target}"))
 
     return findings, external
 
@@ -94,20 +107,14 @@ def audit_preservation_ledger(root: Path) -> list[Finding]:
     findings: list[Finding] = []
     for line_number, line in enumerate(ledger.read_text(encoding="utf-8").splitlines(), 1):
         if line.startswith("|") and "PA-" in line and not PA_ID_RE.search(line):
-            findings.append(
-                Finding(ledger, line_number, "malformed preservation record ID")
-            )
+            findings.append(Finding(ledger, line_number, "malformed preservation record ID"))
     return findings
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path.cwd())
-    parser.add_argument(
-        "--external-output",
-        type=Path,
-        help="Write sorted external URLs for archival/link-check workflows.",
-    )
+    parser.add_argument("--external-output", type=Path, help="Write sorted external URLs for archival/link-check workflows.")
     args = parser.parse_args()
     root = args.root.resolve()
 
@@ -130,6 +137,9 @@ def main() -> int:
             except ValueError:
                 shown = finding.path
             print(f"ERROR {shown}:{finding.line}: {finding.message}")
+            if os.getenv("GITHUB_ACTIONS") == "true":
+                safe = finding.message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+                print(f"::error file={shown},line={max(finding.line, 1)}::{safe}")
         return 1
 
     print("Repository audit passed.")

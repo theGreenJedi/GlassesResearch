@@ -33,14 +33,22 @@ For BLE, firmware, ecosystem, lineage, Report Card, or other research pages, cit
 
 ## Machine-readable datasets
 
-Public structured endpoints include:
+The preferred reusable model endpoints are:
+
+- Canonical aggregate model dataset: `https://glassesresearch.org/data/public/models.json`
+- Flat catalog CSV: `https://glassesresearch.org/data/public/models.csv`
+- Per-model bundle: `https://glassesresearch.org/data/public/models/gls-####.json`
+- Per-model JSON Schema: `https://glassesresearch.org/data/public/schema.json`
+- Evidence-resource registry: `https://glassesresearch.org/data/public/evidence-resources.json`
+
+Lower-level public structured endpoints remain available:
 
 - Canonical device catalog: `https://glassesresearch.org/data/devices.json`
 - Comparison data: `https://glassesresearch.org/data/comparisons.json`
 - Timeline record: `https://glassesresearch.org/timeline/events.json`
 - Live timeline signals: `https://glassesresearch.org/timeline/auto-events.json`
 
-When reproducibility matters, record the access date and the specific GLS or TL identifiers used rather than relying only on array order or display position.
+When reproducibility matters, record the access date, schema version, and specific GLS or TL identifiers used rather than relying only on array order or display position. Claim-level `confidence` or `verified_at` values may be `null` when the underlying research has not recorded those values; do not convert missing provenance into certainty.
 
 ## Linking and reuse
 
