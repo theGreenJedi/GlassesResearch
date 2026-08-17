@@ -18,6 +18,7 @@ on:
       - 'scripts/audit_model_candidates.py'
       - 'scripts/audit_discovery_recall.py'
       - 'scripts/collect_web_discovery.py'
+      - 'scripts/collect_discovery_watches.py'
       - '.github/workflows/model-discovery-audit.yml'
       - '.github/workflows/daily-news-collector.yml'
   push:
@@ -34,6 +35,7 @@ on:
       - 'scripts/audit_model_candidates.py'
       - 'scripts/audit_discovery_recall.py'
       - 'scripts/collect_web_discovery.py'
+      - 'scripts/collect_discovery_watches.py'
 
 permissions:
   contents: read
@@ -72,11 +74,15 @@ jobs:
 
       - name: Verify discovery collector syntax
         if: steps.cadence.outputs.run == 'true'
-        run: python -m py_compile scripts/collect_web_discovery.py scripts/audit_discovery_recall.py
+        run: python -m py_compile scripts/collect_web_discovery.py scripts/collect_discovery_watches.py scripts/audit_discovery_recall.py
 
       - name: Smoke-test live broad-web discovery
         if: steps.cadence.outputs.run == 'true'
         run: python scripts/collect_web_discovery.py
+
+      - name: Exercise durable discovered-source watches
+        if: steps.cadence.outputs.run == 'true'
+        run: python scripts/collect_discovery_watches.py
 
       - name: Validate discovery recall architecture and observed benchmark
         if: steps.cadence.outputs.run == 'true'
