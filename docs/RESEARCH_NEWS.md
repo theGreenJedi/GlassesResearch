@@ -2,15 +2,15 @@
 
 The newest verified changes, useful tools, developments we are watching, and research that changes how smart glasses should be understood.
 
-**[Latest verified](#latest-verified)** · **[Watching](#watching)** · **[Hacks & tools](#hacks--tools)** · **[Policy & society](#policy--society)** · **[Deep research](#deep-research)** · **[Full archive](news/ARCHIVE.md)** · **[RSS](https://glassesresearch.org/feed.xml)**
+**[Latest verified](#latest-verified)** · **[Watching](#watching)** · **[Hacks & tools](#hacks-tools)** · **[Policy & society](#policy-society)** · **[Deep research](#deep-research)** · **[Full archive](news/ARCHIVE.md)** · **[RSS](https://glassesresearch.org/feed.xml)**
 
 ## Latest verified
 
 | Date | What changed | Go deeper |
 |---|---|---|
 | Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [Model page](https://glassesresearch.org/models/catalog/gls-0159/) · [GLS resolver](https://glassesresearch.org/gls/gls-0159/) |
-| Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026--halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) |
-| Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026--cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](https://glassesresearch.org/models/catalog/gls-0039/) |
+| Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026-halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) |
+| Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026-cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](https://glassesresearch.org/models/catalog/gls-0039/) |
 
 ### August 17, 2026 — Lucyd Armor enters the canonical catalog as GLS-0159
 
@@ -26,7 +26,7 @@ Primary source: [Lucyd — Lucyd Armor](https://lucyd.co/products/lucyd-armor)
 
 Items here are credible and relevant but have not crossed the threshold for a canonical purchaser-history record or settled factual treatment.
 
-### August 17, 2026 — Halliday G2 remains on Watching until preorders open
+### August 17, 2026 — Halliday G2 remains on Watching until preorders open {#august-17-2026-halliday-g2-remains-on-watching-until-preorders-open}
 
 Halliday documents **G2** as a materially distinct successor to its current DigiWindow generation, with binocular waveguides and dual microLED optical engines. Halliday currently offers a refundable **$10 Priority Access reservation** and says actual G2 preorders open in late August 2026.
 
@@ -36,9 +36,9 @@ Continue: [current Halliday model](https://glassesresearch.org/models/catalog/gl
 
 Primary sources: [Halliday](https://www.hallidayglobal.com/) · [Priority Access / purchase](https://www.hallidayglobal.com/purchase) · [Halliday support FAQ](https://support.hallidayglobal.com/hc/en-us/articles/60154389484825-General-FAQs)
 
-## Hacks & tools
+## Hacks & tools {#hacks-tools}
 
-### August 13, 2026 — CyanBridge v2.1.1 expands HeyCyan/W610 owner-control paths
+### August 13, 2026 — CyanBridge v2.1.1 expands HeyCyan/W610 owner-control paths {#august-13-2026-cyanbridge-v211-expands-heycyanw610-owner-control-paths}
 
 The community **CyanBridge v2.1.1** release adds or improves Meta DAT pairing diagnostics, TuneBuds compatibility, HeyCyan media synchronization and Wi-Fi Direct handling, expanded logging, and setup/firmware guidance. It also supports remote OpenAI-compatible model URLs, including Ollama-style endpoints reachable over a private network such as Tailscale.
 
@@ -48,7 +48,7 @@ Continue: [W610 model page](https://glassesresearch.org/models/catalog/gls-0039/
 
 Source: [CyanBridge v2.1.1 release](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.1.1)
 
-## Policy & society
+## Policy & society {#policy-society}
 
 ### August 11, 2026 — Courts in England and Wales prohibit Meta smart glasses
 
