@@ -7,7 +7,8 @@
     <p class="gr-hero-lede">GlassesResearch investigates smart glasses and wearable AI as products, platforms, interfaces, and long-lived systems — with evidence linked back to the claims.</p>
     <div class="gr-hero-actions">
       <a class="gr-button gr-button-primary" href="docs/COMPARISON_ENGINE/">Find glasses</a>
-      <a class="gr-button gr-button-secondary" href="models/">Browse the model archive</a>
+      <a class="gr-button gr-button-secondary" href="models/catalog/">Research a model</a>
+      <a class="gr-button gr-button-secondary" href="docs/ECOSYSTEM_MAP/">Explore ecosystem</a>
     </div>
     <p class="gr-hero-note">No sponsored rankings. Unknown stays unknown. Owner control matters.</p>
   </div>
