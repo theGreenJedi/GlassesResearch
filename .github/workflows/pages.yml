@@ -33,9 +33,6 @@ jobs:
       - name: Install documentation dependencies
         run: pip install -r requirements-docs.txt
 
-      - name: Audit repository links and preservation records
-        run: python scripts/audit_repository.py --external-output build/external-links.txt
-
       - name: Validate canonical device database
         run: python scripts/build_device_database.py --validate-only
 
@@ -75,6 +72,10 @@ jobs:
             --evidence evidence/resources.json \
             --schema data/public-model.schema.json \
             --output-dir .site-src/data/public
+          python -c "import json; d=json.load(open('.site-src/data/devices.json')); p=json.load(open('.site-src/data/public/models.json')); assert p['record_count']==d['record_count']; assert len(p['records'])==p['record_count']; assert all('claims' in r and 'finder_capabilities' in r for r in p['records']); print(f'Public dataset pre-build verified: {p[\"record_count\"]} models')"
+
+      - name: Audit repository links and preservation records
+        run: python scripts/audit_repository.py --external-output build/external-links.txt
 
       - name: Audit public editorial content
         run: python scripts/audit_public_editorial.py
