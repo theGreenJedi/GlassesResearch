@@ -1,0 +1,124 @@
+name: Lighthouse performance
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'docs/**'
+      - 'models/**'
+      - 'lineages/**'
+      - 'guides/**'
+      - 'overrides/**'
+      - 'scripts/**'
+      - 'mkdocs.yml'
+      - 'requirements-docs.txt'
+      - 'lighthouserc.cjs'
+      - '.github/workflows/lighthouse-performance.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'docs/**'
+      - 'models/**'
+      - 'lineages/**'
+      - 'guides/**'
+      - 'overrides/**'
+      - 'scripts/**'
+      - 'mkdocs.yml'
+      - 'requirements-docs.txt'
+      - 'lighthouserc.cjs'
+      - '.github/workflows/lighthouse-performance.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: pip
+          cache-dependency-path: requirements-docs.txt
+
+      - name: Install documentation dependencies
+        run: pip install -r requirements-docs.txt
+
+      - name: Stage repository documentation
+        run: python scripts/prepare_site.py
+
+      - name: Build production site
+        run: mkdocs build --strict
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Lighthouse CI
+        run: npm install --global @lhci/cli@0.15.x
+
+      - name: Measure representative pages
+        run: lhci autorun --config=./lighthouserc.cjs
+
+      - name: Summarize representative runs
+        if: always()
+        shell: python
+        run: |
+          import json
+          import os
+          from pathlib import Path
+
+          manifest_path = Path('lhci-results/manifest.json')
+          summary = Path(os.environ['GITHUB_STEP_SUMMARY'])
+          if not manifest_path.exists():
+              summary.write_text('## Lighthouse\n\nNo Lighthouse manifest was produced.\n', encoding='utf-8')
+              raise SystemExit(0)
+
+          manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+          rows = [entry for entry in manifest if entry.get('isRepresentativeRun')]
+          lines = [
+              '## Lighthouse lab measurements',
+              '',
+              '> These are repeatable CI lab measurements, not Chrome UX Report field data.',
+              '',
+              '| Page | Performance | Accessibility | Best Practices | SEO | LCP | CLS | TBT |',
+              '|---|---:|---:|---:|---:|---:|---:|---:|',
+          ]
+          for entry in rows:
+              report = json.loads(Path(entry['jsonPath']).read_text(encoding='utf-8'))
+              cats = report['categories']
+              audits = report['audits']
+              page = report['finalDisplayedUrl']
+              def score(name):
+                  value = cats[name]['score']
+                  return f'{value * 100:.0f}' if value is not None else '—'
+              def metric(name, decimals=0):
+                  value = audits[name].get('numericValue')
+                  if value is None:
+                      return '—'
+                  return f'{value:.{decimals}f}'
+              lines.append(
+                  f"| {page} | {score('performance')} | {score('accessibility')} | "
+                  f"{score('best-practices')} | {score('seo')} | "
+                  f"{metric('largest-contentful-paint')} ms | "
+                  f"{metric('cumulative-layout-shift', 3)} | "
+                  f"{metric('total-blocking-time')} ms |"
+              )
+          summary.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+      - name: Upload Lighthouse reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-reports
+          path: lhci-results/
+          if-no-files-found: warn
+          retention-days: 30
