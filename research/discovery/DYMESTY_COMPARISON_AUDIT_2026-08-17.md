@@ -1,33 +1,38 @@
 # Dymesty comparison discovery audit — 2026-08-17
 
-Source reviewed: Dymesty, “Smart Glasses Comparison Chart 2026.” Dymesty is used here as a discovery surface, not specification authority.
+Source reviewed: Dymesty, “Smart Glasses Comparison Chart 2026.” Dymesty is used here as a discovery surface, not specification authority. Every disposition below was reconciled against the canonical ledger and independent evidence.
 
-## Confirmed findings
+## Final dispositions
 
-| Lead | Disposition | Independent evidence |
-|---|---|---|
-| Brilliant Labs Halo | Already canonical (`GLS-0052`) | Existing GlassesResearch canonical ledger / Brilliant Labs primary source |
-| BooaBei AI Smart Glasses | **W610 rebrand/retail identity; no new GLS ID** | Multiple manuals identify model W610/BE610 and the HeyCyan companion app; preserve under W610 lineage |
-| Halliday G2 | **Distinct new generation; pre-release / priority reservation** | Halliday manufacturer page and purchase page identify G2, $599 starting MSRP, August 2026 availability and $10 priority access. Keep registry/candidate until product-order threshold is unambiguous. |
-| RayNeo Air 3s Pro | **Distinct purchasable model; canonical-admission candidate** | RayNeo currently sells Air 3s Pro separately from Air 3s/Air 2 family. |
-| RayNeo Air 4 Pro | **Distinct purchasable model; canonical-admission candidate** | RayNeo currently sells Air 4 Pro as a separate HDR10 generation. Limited Justice/Chaos editions are cosmetic editions, not separate models. |
-| Thunderbird V3 AI Camera Glasses | **RayNeo V3 / Thunderbird V3 identity; investigate lineage, do not double-count** | Awinic launch coverage names Thunderbird Innovation and V3; Wellsenn material alternates RayNeo V3 and Thunderbird V3. Treat as one identity pending primary purchasing-history reconciliation. |
-| VITURE Luma | **Distinct purchasable model; canonical-admission candidate** | VITURE current store lists Luma at $399. |
-| VITURE Luma Pro | **Distinct purchasable model; canonical-admission candidate** | VITURE current store lists Luma Pro at $499. |
-| VITURE Luma Ultra | **Distinct purchasable model; canonical-admission candidate** | VITURE current store lists Luma Ultra at $599. |
-| VITURE Beast | **Distinct purchasable model; canonical-admission candidate** | VITURE current product page lists Beast at $549 and in stock. |
-| XREAL 1S | **Distinct purchasable model; canonical-admission candidate** | XREAL current store lists 1S at $449 with direct purchase. |
+| Lead | Final disposition |
+|---|---|
+| Brilliant Labs Halo | Already canonical as **GLS-0052**. |
+| BooaBei AI Smart Glasses | Verified **W610 / HeyCyan** market identity; routes to **GLS-0039**, no additional model count. |
+| Vital Smart Glasses | Verified **W100 / Ear Dance** market identity; routes to **GLS-0157**, no additional model count. |
+| EarlySincere | W100-class audio/translation product is verified in the **W100 / Ear Dance** lineage and routes to **GLS-0157**. The exact Dymesty-described “4K camera” EarlySincere listing is not silently conflated with that audio product; absent stronger identity evidence it remains a commercial lead rather than a second model. |
+| Halliday G2 | Distinct pre-release generation. As of 2026-08-17 Halliday sells priority access to a future preorder rather than the G2 product itself. Registry-only until the acquisition threshold is crossed. |
+| RayNeo Air 3s | Already canonical as **GLS-0090**. |
+| RayNeo Air 3s Pro | Already canonical as **GLS-0091**. |
+| RayNeo Air 4 Pro | Distinct current purchasable generation; admitted as **GLS-0155**. |
+| Thunderbird V3 / RayNeo V3 | One product identity, model **XRGF50**, not two models. Admitted once as **GLS-0154** with both market/corporate names preserved. |
+| VITURE Luma | Already canonical as **GLS-0079**. |
+| VITURE Luma Pro | Already canonical as **GLS-0080**. |
+| VITURE Luma Ultra | Already canonical as **GLS-0081**. |
+| VITURE Beast | Already canonical as **GLS-0082**. |
+| XREAL One | Already canonical as **GLS-0074**. |
+| XREAL One Pro | Already canonical as **GLS-0075**. |
+| XREAL 1S | Distinct current purchasable generation; admitted as **GLS-0156**. |
+| IOOIOO AI Smart Glasses | Commercial listing is real, but targeted searches did not establish a durable model number, manufacturer/OEM lineage, manual, or certification identity. Retain as a commercial discovery lead; no GLS ID. |
 
-## Leads still requiring stronger identity/provenance work
+## Follow-on lineage findings from the same investigation
 
-- **IOOIOO AI Smart Glasses** — retail/Amazon-class brand evidence exists, but no sufficiently durable manufacturer identity/source was established in this pass. Keep as a commercial discovery lead.
-- **Vital Smart Glasses** — name is too ambiguous to admit without manufacturer/model-number provenance.
-- **EarlySincere 4K Camera AI Smart Glasses** — marketplace-style identity; investigate OEM/model number before deciding whether it is a rebrand.
+The alias-resolution search exposed two important commodity houses:
 
-## Catalog action
+- **W100 / Ear Dance** — now canonical once as GLS-0157, with Vital, EarlySincere, Astrum W100, Tiglon TG-W100, LEEDOAR-associated W100 and other verified seller identities routed into it rather than counted separately.
+- **W630 / HeyCyan** — now canonical once as GLS-0158, with Giinova W630 and GUHUAVMI W630 routed into it rather than counted separately.
 
-The verified purchasable identities above should enter the normal candidate/admission pipeline rather than being copied directly from Dymesty. Existing canonical IDs and lineages must be checked immediately before assigning new GLS IDs. Cosmetic editions and known rebrands must not inflate the canonical count.
+It also exposed separately named HeyCyan sibling platforms **W611/W611 Pro, W620, W640 and W650**. Shared HeyCyan software or JL7018F/V821-family silicon is not sufficient to collapse those products into W610. They remain explicit follow-on model candidates for independent admission/duplicate checks.
 
-## Discovery lesson
+## Discovery and UX lesson
 
-A competitor comparison page surfaced multiple current purchasable generations that our public catalog/discovery view did not make obvious. This page is therefore retained as a discovery-regression input. The broad collector should continue monitoring manufacturer product-family pages, not merely news articles.
+The Dymesty page did two useful things for GlassesResearch: it exposed catalog/discovery gaps and demonstrated a more readable presentation pattern. PR #303 implemented the abbreviated, category-first comparison surface while preserving evidence depth on demand. PRs #303 and #304 also introduced a market-identity resolver so a visitor can search the name printed on a box and be routed to the underlying canonical model/lineage without inflating the canonical count.
