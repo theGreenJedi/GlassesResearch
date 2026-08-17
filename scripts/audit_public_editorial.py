@@ -53,6 +53,9 @@ REQUIRED_CONTRACTS = {
         "verified price-ceiling filters",
         "Report Card minimum-score filters",
         "shortlist checkboxes",
+        "- No camera",
+        "- Under $1,000",
+        "- Used okay",
         "## Implementation status",
     ),
     "docs/COMPARISON_ENGINE.md": (
@@ -60,6 +63,14 @@ REQUIRED_CONTRACTS = {
         "verified price ceilings",
         "Report Card minimum-score thresholds",
         "shortlist checkboxes",
+    ),
+}
+
+FORBIDDEN_CONTRACTS = {
+    "docs/GLASSES_FINDER.md": (
+        "First-person camera",
+        "Specialist retailer",
+        "New / refurbished / used",
     ),
 }
 
@@ -107,6 +118,16 @@ def main() -> int:
         for phrase in phrases:
             if phrase not in text:
                 failures.append((rel, f"missing capability/coverage contract: {phrase}"))
+
+    for rel, phrases in FORBIDDEN_CONTRACTS.items():
+        path = SITE / rel
+        if not path.exists():
+            failures.append((rel, "missing visitor-facing contract page"))
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        for phrase in phrases:
+            if phrase in text:
+                failures.append((rel, f"phantom capability/control in public contract: {phrase}"))
 
     for rel, phrases in SOURCE_CONTRACTS.items():
         path = ROOT / rel

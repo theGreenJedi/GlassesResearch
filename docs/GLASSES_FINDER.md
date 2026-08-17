@@ -21,10 +21,11 @@ Price filtering uses only current documented acquisition-price observations. A m
 - Adjustable diopter
 
 ### Camera
+- Camera
+- No camera
 - Takes photos
 - Records video
 - Live video / streaming
-- First-person camera
 
 ### Audio
 - Speakers
@@ -52,19 +53,21 @@ Price filtering uses only current documented acquisition-price observations. A m
 - SDK / API
 - Open source
 - Custom / replaceable AI
-- Local or offline operation
+- Local / offline operation
 - Self-hostable
 
 ### Buying
 - Available new now
-- Verified price ceilings: under $100, $250, $500, and $1,000
-- Manufacturer purchase
+- Under $100
+- Under $250
+- Under $500
+- Under $1,000
+- Manufacturer
 - Amazon
 - Major retailer
 - Optical retailer
-- Specialist retailer
 - Secondary market
-- New / refurbished / used
+- Used okay
 
 ## Advanced filters
 
