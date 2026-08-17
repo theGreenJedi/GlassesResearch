@@ -1,3 +1,7 @@
+---
+description: Current Everysight primary evidence for Maverick AI and AI Pro product specifications, prescription support, lens options, and pre-release status.
+---
+
 # EV-0074 — Everysight Maverick AI / AI Pro primary product evidence
 
 **Evidence state:** vendor-primary  
