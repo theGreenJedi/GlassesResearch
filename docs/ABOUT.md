@@ -19,7 +19,7 @@ The public site leads with research. This page gathers the mission, operating pr
 
 These documents explain how the project separates direct observation, primary-source documentation, community reporting, inference, uncertainty, and disproven claims. Report Card dimensions remain separate rather than being hidden behind a single weighted winner score; unknown and N/A fields are not treated as zero.
 
-GlassesResearch does not sell rankings. Lineage/OEM relationships, owner control, cloud independence, preservation, and reproducibility are treated as research questions in their own right. The project demonstrates those differences through its evidence and methods rather than by attacking other publications.
+GlassesResearch does not sell rankings. Lineage/OEM relationships, owner control, cloud independence, preservation, and reproducibility are treated as research questions in their own right.
 
 ## Preservation and scope
 
