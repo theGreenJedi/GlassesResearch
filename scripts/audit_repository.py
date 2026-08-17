@@ -2,8 +2,8 @@
 """Audit GlassesResearch Markdown links and evidence-oriented records.
 
 Uses only the Python standard library. The script checks repository-relative
-Markdown links, reports external links for later archival review, and flags
-preservation-ledger rows that do not contain a recognizable PA record ID.
+and site-root Markdown links, reports external links for later archival review,
+and flags preservation-ledger rows that do not contain a recognizable PA ID.
 """
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ from urllib.parse import unquote, urlparse
 
 LINK_RE = re.compile(r"(?<!!)\[[^\]]*\]\(([^)]+)\)")
 PA_ID_RE = re.compile(r"\bPA-\d{4}\b")
-SKIP_DIRS = {".git", ".venv", "site", "node_modules", "__pycache__"}
+SKIP_DIRS = {".git", ".venv", ".site-src", "site", "node_modules", "__pycache__"}
 
 
 @dataclass(frozen=True)
@@ -45,6 +45,20 @@ def clean_target(raw: str) -> str:
     return unquote(target)
 
 
+def site_root_candidate(root: Path, relative: str) -> Path:
+    """Map a clean site URL such as /docs/BLE/ back to repository Markdown."""
+    clean = relative.lstrip("/").rstrip("/")
+    candidate = root / clean
+    if candidate.is_dir():
+        return candidate / "README.md"
+    if candidate.exists():
+        return candidate
+    markdown_candidate = root / f"{clean}.md"
+    if markdown_candidate.exists():
+        return markdown_candidate
+    return candidate
+
+
 def audit_markdown(root: Path) -> tuple[list[Finding], set[str]]:
     findings: list[Finding] = []
     external: set[str] = set()
@@ -67,15 +81,18 @@ def audit_markdown(root: Path) -> tuple[list[Finding], set[str]]:
                 relative = parsed.path
                 if not relative:
                     continue
-                candidate = (path.parent / relative).resolve()
-                try:
-                    candidate.relative_to(root.resolve())
-                except ValueError:
-                    findings.append(Finding(path, line_number, f"link escapes repository: {target}"))
-                    continue
+                if relative.startswith("/"):
+                    candidate = site_root_candidate(root, relative)
+                else:
+                    candidate = (path.parent / relative).resolve()
+                    try:
+                        candidate.relative_to(root.resolve())
+                    except ValueError:
+                        findings.append(Finding(path, line_number, f"link escapes repository: {target}"))
+                        continue
+                    if candidate.is_dir():
+                        candidate = candidate / "README.md"
 
-                if candidate.is_dir():
-                    candidate = candidate / "README.md"
                 if not candidate.exists():
                     findings.append(Finding(path, line_number, f"missing local target: {target}"))
 
