@@ -20,12 +20,40 @@
     return TOPICS.map(([value, label]) => `<label><input type="checkbox" name="${name}" value="${value}"> ${label}</label>`).join("");
   }
 
+  function contextFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+      model: params.get("model") || "",
+      brand: params.get("brand") || "",
+      topic: params.get("topic") || "",
+      cadence: params.get("cadence") || "",
+    };
+  }
+
+  function applyContext(root) {
+    const context = contextFromUrl();
+    const model = root.querySelector('[name="include_models"]');
+    const brand = root.querySelector('[name="include_brands"]');
+    const cadence = root.querySelector('[name="cadence"]');
+    if (model && context.model) model.value = context.model;
+    if (brand && context.brand) brand.value = context.brand;
+    if (cadence && CADENCES.includes(context.cadence)) cadence.value = context.cadence;
+    if (context.topic && TOPICS.some(([value]) => value === context.topic)) {
+      const topic = root.querySelector(`input[name="include_topics"][value="${context.topic}"]`);
+      if (topic) topic.checked = true;
+    }
+    const contextual = Boolean(context.model || context.brand || context.topic);
+    if (contextual) {
+      const note = root.querySelector("[data-alert-context]");
+      if (note) note.hidden = false;
+    }
+  }
+
   function renderPanel(root) {
     if (root.dataset.alertsHydrated === "true") return;
     root.dataset.alertsHydrated = "true";
     root.innerHTML = `
-      <h2 id="verified-research-alerts">Verified Research Alerts</h2>
-      <p>Receive only verified, published GlassesResearch work. Choose what you follow, what you never want, and how often we write. <a href="../alerts/">How Verified Research Alerts work</a>.</p>
+      <p data-alert-context hidden>This form has been prefilled from the model or topic you were researching. Adjust anything before subscribing.</p>
       <form data-verified-research-alerts>
         <label for="alerts-email"><strong>Email address</strong></label>
         <input id="alerts-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
@@ -57,6 +85,7 @@
         <button type="button" class="md-button md-button--primary" data-alert-submit>Subscribe to verified research</button>
         <p class="alert-status" data-alert-status aria-live="polite"></p>
       </form>`;
+    applyContext(root);
   }
 
   function value(root, name) {
