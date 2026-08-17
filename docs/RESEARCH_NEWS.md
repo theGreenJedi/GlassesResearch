@@ -1,6 +1,6 @@
 # Research & News
 
-Follow new published research without an account or email address: **[subscribe by RSS](/feed.xml)**. Feed entries carry the title, date, and a short summary; selecting an item returns to the canonical GlassesResearch page for the full article, citations, corrections, and related research.
+Follow new published research without an account or email address: **[subscribe by RSS](https://glassesresearch.org/feed.xml)**. Feed entries carry the title, date, and a short summary; selecting an item returns to the canonical GlassesResearch page for the full article, citations, corrections, and related research.
 
 [Who owns the record?](discussions/WHO_OWNS_THE_RECORD.md) examines why independent,
 durable documentation matters when products, services, and vendor pages disappear.
