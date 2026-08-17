@@ -50,20 +50,38 @@ jobs:
             echo 'Analytics snapshot unchanged; nothing to commit.'
             exit 0
           fi
+
           git config user.name 'glassesresearch-analytics-bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add analytics/latest.md analytics/latest.json analytics/history/
-          git commit -m "analytics: refresh automated report"
 
-          # Other site automations may write to main at the same time. Rebase the
-          # report commit onto the current remote tip before pushing so a benign
-          # concurrent write does not make analytics fail.
+          tmpdir="$(mktemp -d)"
+          history_file="analytics/history/$(date -u +%F).json"
+          mkdir -p "$tmpdir/analytics/history"
+          cp analytics/latest.md "$tmpdir/analytics/latest.md"
+          cp analytics/latest.json "$tmpdir/analytics/latest.json"
+          cp "$history_file" "$tmpdir/$history_file"
+
+          # Re-apply only this run's generated files to the current remote tip.
+          # This avoids rebase conflicts when another automation updates main.
           for attempt in 1 2 3; do
             git fetch origin main
-            if git rebase origin/main && git push origin HEAD:main; then
+            git reset --hard origin/main
+            mkdir -p analytics/history
+            cp "$tmpdir/analytics/latest.md" analytics/latest.md
+            cp "$tmpdir/analytics/latest.json" analytics/latest.json
+            cp "$tmpdir/$history_file" "$history_file"
+
+            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json "$history_file")" ]; then
+              echo 'Analytics snapshot already current.'
               exit 0
             fi
-            git rebase --abort 2>/dev/null || true
+
+            git add analytics/latest.md analytics/latest.json "$history_file"
+            git commit -m "analytics: refresh automated report"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
             if [ "$attempt" -eq 3 ]; then
               echo 'Unable to publish analytics after 3 synchronization attempts.' >&2
               exit 1
