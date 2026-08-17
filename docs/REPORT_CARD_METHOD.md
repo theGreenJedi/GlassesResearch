@@ -2,30 +2,42 @@
 
 GlassesResearch Report Cards are evidence-linked technical evaluations, not sponsored rankings. They are designed to make tradeoffs visible without collapsing unlike products into a single winner.
 
-## Dimensions
+## Core Report Card
 
-A Report Card may evaluate these dimensions when evidence supports a judgment:
+Every canonical model receives the same compact six-dimension Core Report Card. A model does not need a long-form editorial review before it can participate in the Report Card system or the Finder.
 
-- **Hardware** — capability and quality of the physical platform: sensing, compute, connectivity, optics, power, and relevant device architecture.
-- **Wearability** — fit, mass, balance, conventional-eyewear practicality, prescription accommodation, endurance, and other evidence-backed factors affecting routine wear.
-- **Visual AI** — the device's evidence-backed ability to sense and support computation about the wearer's visual environment. A device with no outward-facing camera may be marked N/A rather than penalized for a capability it was not designed to provide.
-- **Software** — quality and breadth of the supported software surface, applications, APIs, tooling, updates, and development environment.
-- **Display / HUD** — display usefulness where a display exists: optical architecture, field of view, resolution, brightness, binocular/monocular presentation, and practical limitations. Camera/audio glasses without a display may be N/A.
-- **Openness** — documented access to protocols, SDKs, source code, schematics, firmware, APIs, or other interfaces that permit independent development and inspection.
-- **Owner Control** — how much meaningful control remains with the owner, including application substitution, direct device access, firmware/platform control where available, and freedom from a single prescribed vendor path.
-- **Cloud Independence** — how much useful operation survives without the manufacturer's cloud or hosted services. Local or owner-selected services score more strongly than mandatory vendor-cloud dependence.
-- **Hackability** — the practical experimentation surface: documented interfaces, debugging/programming access, replaceable software, accessible hardware, community tooling, and reproducible modification paths.
-- **Value** — capability and limitations relative to contemporaneous price and alternatives. Value is left ungraded when current pricing evidence is insufficient.
+- **Discreetness** — how closely the product presents and functions as ordinary eyewear in routine public use, including visible bulk, obvious electronics, capture indicators, and social practicality.
+- **Camera** — the usefulness of the outward-facing camera system for wearer-perspective capture. Presence alone does not establish a high score; still/video capability, access, limitations, and practical capture quality matter.
+- **Visual AI** — the evidence-backed ability to understand what the wearer is looking at and turn visual context into useful machine understanding.
+- **Hackability** — the practical experimentation surface: BLE or wired access, SDK/API access, firmware paths, reverse-engineering potential, sideloading, exposed interfaces, and community tooling.
+- **Owner Control** — how much meaningful control remains with the owner, including direct device access, replaceable AI, local processing, custom endpoints, sideloading, and freedom from a single prescribed vendor path.
+- **Android Compatibility** — the depth and quality of Android support, from basic companion-app compatibility through direct SDK/device access, standard interfaces, and owner-controlled integration.
+
+These six dimensions are the canonical shopper/developer comparison surface. Finder score filters use these same fields rather than a separate subset of specially reviewed models.
+
+## Extended ratings
+
+Deep research may add ratings beyond the Core Report Card when the evidence warrants them. The established extended dimensions include **Hardware, Wearability, Software, Display / HUD, Openness, Cloud Independence, and Value**. Long-form research may also add narrowly scoped measurements when useful.
+
+Extended ratings do not determine whether a model has a Core Report Card and do not remove a model from Finder merely because deep research is incomplete.
+
+During migration from the earlier ten-dimension Report Card, **Visual AI, Hackability, and Owner Control** carry directly into the Core Report Card because their meanings are equivalent. Broader legacy scores are preserved as extended ratings rather than silently relabeled. In particular, Wearability is not automatically converted into Discreetness, and generic Hardware is not automatically converted into Camera quality.
 
 ## Scoring scale
 
 Scores use a 0–10 scale with letter grades as a readable shorthand. The numerical score is the primary value; the grade does not add a second hidden calculation.
 
-A high score means the evidence strongly supports that dimension. A low score means evidence supports meaningful limitations in that dimension. **Unknown is not zero. N/A is not zero.** If evidence is insufficient, the field remains unscored.
+A high score means the evidence strongly supports that dimension. A low score means evidence supports meaningful limitations in that dimension. **Unknown is not zero. N/A is not zero.** If evidence is insufficient, the field remains unscored. A verified absence of a camera can support a Camera score of 0; mere camera presence does not justify inventing a quality score.
+
+## Catalog-wide cards
+
+The Core Report Card builder emits a record for every canonical GLS model. Each of the six fields therefore exists for every model even when its current value is `unknown` or `na`. This makes missing research visible without confusing missing evidence with product failure.
+
+Evidence-backed scores can be supplied through the curated Core Report Card override dataset. The builder preserves provenance for migrated and curated scores, allowing the catalog to become more complete incrementally without weakening the evidence standard.
 
 ## No hidden overall weighting
 
-GlassesResearch does **not** currently calculate a single weighted overall winner score. The dimensions are intentionally shown separately because different users value different properties. A developer may care most about openness and hackability; a daily wearer may care most about wearability; a preservation researcher may care about cloud independence and owner control.
+GlassesResearch does **not** calculate a single weighted overall winner score. The dimensions are intentionally shown separately because different users value different properties. A developer may care most about hackability and owner control; a daily wearer may care most about discreetness; another buyer may require a camera, visual AI, and strong Android integration.
 
 If an overall weighting system is introduced in the future, its weights and calculation must be public on this page before the resulting score is published.
 
@@ -43,7 +55,7 @@ A field observation can describe practical details that specifications miss—pa
 
 ## Lineage and owner-control emphasis
 
-Lineage/OEM relationships, owner control, and cloud independence are first-class research questions because branding alone does not reveal who controls the hardware/software stack or what remains usable if a vendor service disappears. Where evidence exists, Report Cards should connect those judgments to the relevant lineage and technical research rather than treating each branded product as an isolated object.
+Lineage/OEM relationships, owner control, and cloud independence remain first-class research questions because branding alone does not reveal who controls the hardware/software stack or what remains usable if a vendor service disappears. Where evidence exists, Core and extended ratings should connect those judgments to the relevant lineage and technical research rather than treating each branded product as an isolated object.
 
 ## Corrections
 
