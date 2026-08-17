@@ -23,6 +23,7 @@ A compact map of GlassesResearch. Use the Finder when choosing glasses; use Rese
 
 - [All research tools](TOOLS.md)
 - [Report Cards](REPORT_CARD.md)
+- [Report Card Method](REPORT_CARD_METHOD.md)
 - [Model research](../models/README.md)
 - [Technology lineages](../lineages/README.md)
 - [Development and hacking](../hacking/README.md)
