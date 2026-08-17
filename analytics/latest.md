@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-08-17T02:02:58+00:00**
+Generated automatically: **2026-08-17T02:26:16+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -42,8 +42,24 @@ Generated automatically: **2026-08-17T02:02:58+00:00**
 
 ## Cloudflare edge traffic
 
-- **Cloudflare API unavailable:** Actor 'com.cloudflare.api.token.148556ec36d612b76cb4c8cec6882605' does not have permission 'com.cloudflare.api.account.zone.analytics.read' for zone 63c709cde1d90d9aa9ab2ed2aa2b5472
-- The report still succeeds with Search Console data. Restore a token with Zone Analytics Read permission to re-enable this section.
+- Rolling 24h: **3,502 requests**, **1,141 HTTP visits**, **36.5 MB** served.
+- Rolling 7d: **21,481 requests**, **5,362 HTTP visits**, **315.7 MB** served.
+- These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
+
+### Top countries by request count — rolling 24h
+
+| Country | Requests | HTTP visits |
+|---|---:|---:|
+| US | 1,886 | 813 |
+| BE | 419 | 1 |
+| CA | 301 | 198 |
+| SG | 290 | 32 |
+| NL | 182 | 6 |
+| DE | 143 | 19 |
+| LU | 38 | 1 |
+| UA | 35 | 6 |
+| GB | 35 | 2 |
+| CH | 26 | 0 |
 
 ## What to watch
 
