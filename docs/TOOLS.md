@@ -4,7 +4,7 @@ The GlassesResearch working library: ways to find devices, evaluate evidence, in
 
 ## Find and compare
 
-- [**Glasses Finder & Compare**](COMPARISON_ENGINE.md) — filter the full catalog by practical needs and buying routes, compare candidates, then open deeper evidence. Price-band controls and Report Card minimum-score filters are planned rather than currently implied.
+- [**Glasses Finder & Compare**](COMPARISON_ENGINE.md) — filter the full catalog by practical needs, buying routes, verified price ceilings, and Report Card minimum scores; shortlist two-to-four candidates, compare them, then open deeper model evidence.
 - [**Browse all smart-glasses models**](../models/THE_LIST.md) — the cross-vendor eyewear index, past and present.
 - [**Start by what you need**](START_BY_NEED.md) — begin with use cases instead of brands.
 - [**Buyer guide**](../buyers/BUYER_AND_OPENNESS_GUIDE.md) — ownership, privacy, offline use, repairability, prescription options, and vendor lock-in.
