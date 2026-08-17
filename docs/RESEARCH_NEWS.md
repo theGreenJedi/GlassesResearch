@@ -56,7 +56,7 @@ His Majesty's Courts and Tribunals Service (HMCTS) confirmed that Meta smart gla
 
 **Why it matters:** smart glasses are beginning to receive device-specific institutional rules rather than simply inheriting smartphone policy. That matters for social acceptance, privacy, wearability in public institutions, and the practical limits of camera-equipped eyewear.
 
-Continue: [camera-free smart glasses guide](/guides/smart-glasses-without-cameras/) · [Finder](/docs/COMPARISON_ENGINE/) · [follow privacy/policy](?topic=privacy_policy#verified-research-alerts)
+Continue: [camera-free smart glasses guide](https://glassesresearch.org/guides/smart-glasses-without-cameras/) · [Finder](/docs/COMPARISON_ENGINE/) · [follow privacy/policy](?topic=privacy_policy#verified-research-alerts)
 
 Source: [The Guardian — Meta glasses banned from courts in England and Wales](https://www.theguardian.com/technology/2026/aug/11/meta-glasses-banned-from-courts-in-england-and-wales)
 
@@ -70,7 +70,7 @@ For smart glasses, the important point is architectural rather than brand-specif
 
 **Why it matters:** local multimodal agents may allow smart glasses to act primarily as sensors and interfaces while a phone, laptop, or nearby owner-controlled computer provides perception, reasoning, memory, and tool use. That design can materially affect owner control, cloud independence, privacy, hackability, and the useful lifetime of glasses hardware.
 
-Continue: [Local AI Agents and Smart Glasses](../hacking/LOCAL_AI_AGENTS.md) · [self-hosted AI glasses guide](/guides/self-hosted-ai-smart-glasses/) · [developer glasses guide](/guides/smart-glasses-for-developers/) · [follow research](?topic=research_science#verified-research-alerts)
+Continue: [Local AI Agents and Smart Glasses](../hacking/LOCAL_AI_AGENTS.md) · [self-hosted AI glasses guide](https://glassesresearch.org/guides/self-hosted-ai-smart-glasses/) · [developer glasses guide](https://glassesresearch.org/guides/smart-glasses-for-developers/) · [follow research](?topic=research_science#verified-research-alerts)
 
 Primary source: [Meta AI Research — Introducing Muse Glimmer: An Open Agentic Model That Runs on Your Device](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model)
 
