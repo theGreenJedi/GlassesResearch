@@ -25,7 +25,7 @@ CHANNEL_KEYS = {
     "community": "community_discovery_queries",
     "manufacturer_catalog": "manufacturer_catalog_pages",
 }
-WATCH_CHANNELS = {"research_watch", "community_watch", "retail_watch"}
+WATCH_CHANNELS = {"manufacturer_watch", "research_watch", "community_watch", "retail_watch"}
 
 
 def norm_text(value: str) -> str:
