@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail when internal editorial/process narration leaks into public research pages."""
+"""Fail when internal narration leaks publicly or visitor-facing capability contracts drift."""
 
 from pathlib import Path
 import sys
@@ -29,6 +29,30 @@ BANNED = (
     "add the actual resource, not a sentence",
 )
 
+# These are not prose-style preferences. They are visitor-facing contracts that
+# must remain explicit because multiple pages describe the same systems.
+REQUIRED_CONTRACTS = {
+    "docs/REPORT_CARD.md": (
+        "Core Report Cards — one for every canonical model in the catalog.",
+        "They add depth; they do not define catalog coverage.",
+        "## Extended Research",
+    ),
+    "docs/TOOLS.md": (
+        "Price-band controls and Report Card minimum-score filters are planned",
+        "six-subject Core Report Cards for every canonical model",
+        "Extended Research",
+    ),
+    "docs/GLASSES_FINDER.md": (
+        "## Current capability contract",
+        "Price-band/range controls and Report Card minimum-score filters are planned",
+        "## Implementation status",
+    ),
+    "docs/COMPARISON_ENGINE.md": (
+        "**Current live controls:**",
+        "**Planned controls:** price-band/range filtering and Report Card minimum-score thresholds.",
+    ),
+}
+
 
 def main() -> int:
     failures = []
@@ -40,15 +64,25 @@ def main() -> int:
         lower = text.lower()
         for phrase in BANNED:
             if phrase.lower() in lower:
-                failures.append((rel, phrase))
+                failures.append((rel, f"banned narration: {phrase}"))
+
+    for rel, phrases in REQUIRED_CONTRACTS.items():
+        path = SITE / rel
+        if not path.exists():
+            failures.append((rel, "missing visitor-facing contract page"))
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        for phrase in phrases:
+            if phrase not in text:
+                failures.append((rel, f"missing capability/coverage contract: {phrase}"))
 
     if failures:
         print("Public editorial audit failed:")
-        for rel, phrase in failures:
-            print(f"- {rel}: {phrase}")
+        for rel, issue in failures:
+            print(f"- {rel}: {issue}")
         return 1
 
-    print("Public editorial audit passed.")
+    print("Public editorial and capability-contract audit passed.")
     return 0
 
 

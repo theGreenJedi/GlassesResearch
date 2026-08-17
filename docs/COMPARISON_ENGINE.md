@@ -7,7 +7,9 @@ description: "Find and compare smart glasses quickly, then open deeper evidence 
 
 **Start with the answer you need, not the size of our database.**
 
-The quick view keeps unlike products understandable. Pick a category, scan the essentials, then compare two models using fields that matter for that kind of glasses. The deeper GlassesResearch evidence remains one click lower rather than occupying the whole screen at once.
+The quick view keeps unlike products understandable. Pick a category, scan the essentials, then compare two-to-four models using fields that matter for that kind of glasses. The deeper GlassesResearch evidence remains one click lower rather than occupying the whole screen at once.
+
+**Current live controls:** practical-needs filters, buying-route filters, exact/near-match discovery, purchase routes, and multi-device comparison. **Planned controls:** price-band/range filtering and Report Card minimum-score thresholds. See the [Finder architecture and implementation status](GLASSES_FINDER.md) for the explicit shipped-versus-planned contract.
 
 <div id="comparison-engine-app">
 Loading Glasses Finder data…
@@ -15,7 +17,7 @@ Loading Glasses Finder data…
 
 ## Need the full research?
 
-The abbreviated comparison is only the front door. Canonical model pages and Report Cards retain source provenance, contradictions, evidence confidence, owner control, cloud independence, SDK/API access, firmware/ADB information, local operation, subscriptions, and other research fields.
+The abbreviated comparison is only the front door. Canonical model pages and Core Report Cards retain source provenance, contradictions, evidence confidence, owner control, hackability, Android compatibility, and other research fields; deeper ten-dimension material remains available as Extended Research where published.
 
 Unknown stays **unknown**. A cleaner interface does not mean weaker evidence standards.
 

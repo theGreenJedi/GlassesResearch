@@ -4,7 +4,7 @@ The GlassesResearch working library: ways to find devices, evaluate evidence, in
 
 ## Find and compare
 
-- [**Glasses Finder & Compare**](COMPARISON_ENGINE.md) — filter the full catalog by practical needs, buying route, price, and Report Card thresholds.
+- [**Glasses Finder & Compare**](COMPARISON_ENGINE.md) — filter the full catalog by practical needs and buying routes, compare candidates, then open deeper evidence. Price-band controls and Report Card minimum-score filters are planned rather than currently implied.
 - [**Browse all smart-glasses models**](../models/THE_LIST.md) — the cross-vendor eyewear index, past and present.
 - [**Start by what you need**](START_BY_NEED.md) — begin with use cases instead of brands.
 - [**Buyer guide**](../buyers/BUYER_AND_OPENNESS_GUIDE.md) — ownership, privacy, offline use, repairability, prescription options, and vendor lock-in.
@@ -18,7 +18,7 @@ The GlassesResearch working library: ways to find devices, evaluate evidence, in
 
 ## Report Cards and research
 
-- [**GlassesResearch Report Card**](REPORT_CARD.md) — the common evaluation system for hardware, wearability, visual AI, software, HUD, openness, owner control, cloud independence, hackability, and value.
+- [**GlassesResearch Report Cards**](REPORT_CARD.md) — six-subject Core Report Cards for every canonical model, with deeper ten-dimension cards, batch research, lineage packets, and profiles retained as Extended Research.
 - [**Model research chapters**](../models/README.md) — source-backed device and family dossiers.
 - [**Ecosystem relationship map**](ECOSYSTEM_MAP.md) — evidence-backed connections among models, lineages, apps, platforms, SDKs, protocols, services, and communities.
 - [**Technology lineages**](../lineages/README.md) — OEM, rebrand, firmware, app, and platform relationships.
