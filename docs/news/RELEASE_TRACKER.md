@@ -1,6 +1,6 @@
 # Smart-Glasses Release and Availability Tracker
 
-**Last checked:** 2026-08-14
+**Last checked:** 2026-08-17
 
 This table distinguishes announcement, preorder, targeted shipping, confirmed shipping, and independent verification. A vendor date is not a shipment until evidence confirms it.
 
@@ -10,6 +10,8 @@ This table distinguishes announcement, preorder, targeted shipping, confirmed sh
 | Google/Samsung x Gentle Monster | Camera/audio AI companion | Previewed | 2026-05-19 | Fall 2026 | [Google](https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/) / [Samsung](https://news.samsung.com/us/samsung-google-first-look-new-intelligent-eyewear) | Final name, price, exact date, regions |
 | Google/Samsung x Warby Parker | Camera/audio AI companion | Previewed | 2026-05-19 | Fall 2026 | [Google](https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/) / [Samsung](https://news.samsung.com/us/samsung-google-first-look-new-intelligent-eyewear) | Final name, price, exact date, regions |
 | Snap SPECS | Standalone spatial AR | Preorder | 2026-06-16 | Fall 2026; US, UK, France; $2,195 | [Primary](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses) | First shipments, SDK state, independent testing |
+| Everysight Maverick AI | Full-color AR + AI | In development / pre-release | Support material current 2026-06 to 2026-07 | Vendor says still in development; shipping evidence not yet established | [Primary](https://www.everysight.com/pages/maverick-ai) | First production shipments, final specs, production-hardware testing |
+| Everysight Maverick AI Pro | Full-color AR + AI with native eye tracking | In development / pre-release | Support material current 2026-06 to 2026-07 | Vendor says still in development; shipping evidence not yet established | [Primary](https://www.everysight.com/pages/maverick-ai) / [SDK](https://everysight.github.io/maverick-ai-docs/getting-started/api-key/) | First production shipments, final GazeIntent behavior, SDK/runtime-key policy |
 | VITURE Helix | Industrial camera/audio AI safety glasses | Pilot / reservation | 2026-06-16 | Q1 2027; starts at $599 | [Primary commercial claim](https://www.viture.com/en-US/blog/viture-unveils-helix-the-first-ai-safety-glasses-built-on-nvidia-s-xr-ai-solution-at-awe-2026) | ANSI certification, production specs, pilots |
 | Meta AI-glasses firmware v26 | Software release | Rolling out | Week of 2026-06-29 | Ray-Ban Meta, Oakley Meta, Meta Glasses | [Release notes](https://www.meta.com/help/ai-glasses/1809764829519902/) | Archive next version and model-specific differences |
 | Anko HeyCyan camera glasses | Low-cost camera/audio AI | Retail launch; reported sold out | 2026-08-04 report | Australia; AU$89 reported | [Independent report](https://www.theguardian.com/australia-news/2026/aug/04/kmart-camera-glasses-anko-meta-smartglasses-australia) | Listing archive, manual, model ID, restock |
