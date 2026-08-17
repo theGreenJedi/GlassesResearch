@@ -51,26 +51,52 @@ def legacy_deep_sections() -> str:
     return "\n\n".join(sections)
 
 
-def library_links() -> tuple[list[str], list[str], list[str], int]:
+def pretty_stem(stem: str, prefix: str) -> str:
+    return stem.removeprefix(prefix).replace("_", " ").title()
+
+
+def library_links() -> tuple[dict[str, list[str]], int]:
+    """Return links for every published report-card research page.
+
+    Every markdown file under docs/report-cards must land in exactly one visible
+    bucket. This keeps the public-path audit useful: adding a new research page
+    cannot silently leave it orphaned from the Report Cards front door.
+    """
     report_dir = ROOT / "docs" / "report-cards"
-    batches: list[str] = []
-    throughput: list[str] = []
-    lineages: list[str] = []
+    groups: dict[str, list[str]] = {
+        "batches": [],
+        "throughput": [],
+        "lineages": [],
+        "profiles": [],
+        "other": [],
+    }
     deep_ids: set[str] = set()
+
     for path in sorted(report_dir.glob("*.md")):
         text = path.read_text(encoding="utf-8")
         deep_ids.update(GLS_HEADING.findall(text))
         link = f"/docs/report-cards/{path.stem}/"
+
         if path.name.startswith("HIGH_THROUGHPUT_BATCH_"):
             label = path.stem.removeprefix("HIGH_THROUGHPUT_BATCH_")
-            throughput.append(f"[High-throughput batch {label}]({link})")
+            groups["throughput"].append(f"[High-throughput batch {label}]({link})")
         elif path.name.startswith("BATCH_"):
             label = path.stem.removeprefix("BATCH_")
-            batches.append(f"[Core batch {label}]({link})")
-        elif path.name.startswith("LINEAGE_") and not path.name.startswith("LINEAGE_PROFILES_"):
-            label = path.stem.removeprefix("LINEAGE_").replace("_", " ").title()
-            lineages.append(f"[{label}]({link})")
-    return batches, throughput, lineages, len(deep_ids)
+            groups["batches"].append(f"[Core batch {label}]({link})")
+        elif path.name.startswith("LINEAGE_PROFILES_"):
+            label = pretty_stem(path.stem, "LINEAGE_PROFILES_")
+            groups["profiles"].append(f"[Lineage profile: {label}]({link})")
+        elif path.name.startswith("LINEAGE_"):
+            label = pretty_stem(path.stem, "LINEAGE_")
+            groups["lineages"].append(f"[{label}]({link})")
+        elif path.name.startswith("PROFILE_"):
+            label = pretty_stem(path.stem, "PROFILE_")
+            groups["profiles"].append(f"[Model profile: {label}]({link})")
+        else:
+            label = path.stem.replace("_", " ").title()
+            groups["other"].append(f"[{label}]({link})")
+
+    return groups, len(deep_ids)
 
 
 def alias_map(path: Path | None) -> dict[str, list[str]]:
@@ -86,6 +112,10 @@ def alias_map(path: Path | None) -> dict[str, list[str]]:
         if canonical_id and alias and alias not in found[canonical_id]:
             found[canonical_id].append(alias)
     return found
+
+
+def joined(items: list[str], empty_message: str) -> str:
+    return " · ".join(items) if items else empty_message
 
 
 def main() -> int:
@@ -114,38 +144,62 @@ def main() -> int:
             f"missing={missing_cards[:10]} extra={extra_cards[:10]}"
         )
     if len(dimension_ids) != 6:
-        raise RuntimeError(f"Expected six Core Report Card dimensions, found {len(dimension_ids)}")
+        raise RuntimeError(
+            f"Expected six Core Report Card dimensions, found {len(dimension_ids)}"
+        )
 
     aliases = alias_map(args.aliases)
     rows: list[str] = []
-    for record in sorted(records, key=lambda item: (str(item["maker"]).casefold(), str(item["model"]).casefold(), item["id"])):
+    sorted_records = sorted(
+        records,
+        key=lambda item: (
+            str(item["maker"]).casefold(),
+            str(item["model"]).casefold(),
+            item["id"],
+        ),
+    )
+    for record in sorted_records:
         model_id = record["id"]
         model_name = f"{record['maker']} {record['model']}"
         known_as = aliases.get(model_id, [])
         alias_text = ""
         if known_as:
-            alias_text = "<br><small>Known as: " + " · ".join(html.escape(name) for name in known_as) + "</small>"
+            alias_text = (
+                "<br><small>Known as: "
+                + " · ".join(html.escape(name) for name in known_as)
+                + "</small>"
+            )
         search_terms = " ".join([model_id, model_name, *known_as]).casefold()
-        cells = "".join(f"<td>{html.escape(format_score(score_records[model_id]['scores'].get(dim)))}</td>" for dim in dimension_ids)
+        cells = "".join(
+            f"<td>{html.escape(format_score(score_records[model_id]['scores'].get(dim)))}</td>"
+            for dim in dimension_ids
+        )
         rows.append(
             f'<tr data-search="{html.escape(search_terms, quote=True)}">'
-            f'<td><a href="{html.escape(record["public"]["model_page"], quote=True)}"><strong>{html.escape(model_name)}</strong></a>{alias_text}</td>'
-            f'<td><code>{html.escape(model_id)}</code></td>{cells}</tr>'
+            f'<td><a href="{html.escape(record["public"]["model_page"], quote=True)}">'
+            f"<strong>{html.escape(model_name)}</strong></a>{alias_text}</td>"
+            f"<td><code>{html.escape(model_id)}</code></td>{cells}</tr>"
         )
 
     resolved_any = 0
     resolved_all = 0
     for item in score_records.values():
         values = [item["scores"].get(dim) for dim in dimension_ids]
-        resolved = [value for value in values if isinstance(value, (int, float)) or str(value).lower() == "na"]
+        resolved = [
+            value
+            for value in values
+            if isinstance(value, (int, float)) or str(value).lower() == "na"
+        ]
         if resolved:
             resolved_any += 1
         if len(resolved) == len(dimension_ids):
             resolved_all += 1
 
-    batches, throughput, lineages, deep_id_count = library_links()
+    library, deep_id_count = library_links()
     deep_sections = legacy_deep_sections()
-    header_cells = "".join(f"<th>{html.escape(labels.get(dim, dim))}</th>" for dim in dimension_ids)
+    header_cells = "".join(
+        f"<th>{html.escape(labels.get(dim, dim))}</th>" for dim in dimension_ids
+    )
     count = len(records)
 
     page = f'''---
@@ -218,19 +272,27 @@ Type a manufacturer, model, canonical ID, or verified retail/rebrand name. The d
 
 ## Extended Research
 
-The deeper research layer currently references **{deep_id_count} canonical GLS identities** across scored batches and lineage packets. These pages may use the older ten-dimension framework because they preserve more detailed research than the compact Core card.
+The deeper research layer currently references **{deep_id_count} canonical GLS identities** across scored batches, lineage packets, and profiles. These pages may use the older ten-dimension framework because they preserve more detailed research than the compact Core card.
 
 ### Batch research
 
-{' · '.join(batches) if batches else 'No batch pages are currently published.'}
+{joined(library['batches'], 'No batch pages are currently published.')}
 
 ### High-throughput research
 
-{' · '.join(throughput) if throughput else 'No high-throughput batch pages are currently published.'}
+{joined(library['throughput'], 'No high-throughput batch pages are currently published.')}
 
 ### Lineage research
 
-{' · '.join(lineages) if lineages else 'No lineage packets are currently published.'}
+{joined(library['lineages'], 'No lineage packets are currently published.')}
+
+### Model and lineage profiles
+
+{joined(library['profiles'], 'No profile pages are currently published.')}
+
+### Additional report-card research
+
+{joined(library['other'], 'No additional report-card pages are currently published.')}
 
 ## Deep-card highlights
 
