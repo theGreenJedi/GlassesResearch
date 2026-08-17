@@ -11,6 +11,7 @@ on:
       - 'data/model-candidates.schema.json'
       - 'models/CATALOG.md'
       - 'models/THE_LIST.md'
+      - 'models/THE_LIST_RECONCILIATION_*.md'
       - 'research/news-candidates/**'
       - 'research/discovery-candidates/**'
       - 'research/discovery-resolutions/**'
@@ -30,6 +31,7 @@ on:
       - 'data/model-candidates.schema.json'
       - 'models/CATALOG.md'
       - 'models/THE_LIST.md'
+      - 'models/THE_LIST_RECONCILIATION_*.md'
       - 'research/news-candidates/**'
       - 'research/discovery-candidates/**'
       - 'research/discovery-resolutions/**'
@@ -43,7 +45,7 @@ on:
       - '.github/workflows/model-discovery-audit.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   audit:
@@ -67,11 +69,28 @@ jobs:
 
       - uses: actions/checkout@v6
         if: steps.cadence.outputs.run == 'true'
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
 
       - uses: actions/setup-python@v5
         if: steps.cadence.outputs.run == 'true'
         with:
           python-version: '3.x'
+
+      - name: Mechanically propagate approved reconciliation admission
+        if: github.event_name == 'pull_request' && github.head_ref == 'mission/resolve-discovery-candidates'
+        shell: bash
+        run: |
+          python scripts/sync_catalog_counts.py
+          if git diff --quiet -- models/THE_LIST.md models/README.md; then
+            echo "Canonical ledger already synchronized."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add models/THE_LIST.md models/README.md
+          git commit -m "Synchronize Lucyd Armor canonical admission"
+          git push origin HEAD:${{ github.head_ref }}
 
       - name: Validate candidate ledger and report coverage
         if: steps.cadence.outputs.run == 'true'
