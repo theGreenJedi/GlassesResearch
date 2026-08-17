@@ -1,3 +1,7 @@
+---
+description: Everysight Maverick AI and AI Pro SDK evidence covering developer access, certificate requirements, tethering, and the boundary between openness and owner control.
+---
+
 # EV-0075 — Maverick SDK and owner-control boundary
 
 **Evidence state:** vendor-primary  
