@@ -39,6 +39,7 @@ A compact map of GlassesResearch. Use the Finder when choosing glasses; use Rese
 
 - [About GlassesResearch](ABOUT.md)
 - [Research standards](RESEARCH_STANDARDS.md)
+- [How to cite GlassesResearch](CITING_GLASSESRESEARCH.md)
 - [Challenge or correct our research](RESEARCH_CHALLENGES.md)
 - [Contributors](CONTRIBUTORS.md)
 - [Contribute](CONTRIBUTE.md)
