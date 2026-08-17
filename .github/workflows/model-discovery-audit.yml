@@ -70,13 +70,17 @@ jobs:
         if: steps.cadence.outputs.run == 'true'
         run: python scripts/audit_model_candidates.py --github-summary
 
-      - name: Validate discovery recall architecture and benchmark
-        if: steps.cadence.outputs.run == 'true'
-        run: python scripts/audit_discovery_recall.py --github-summary
-
       - name: Verify discovery collector syntax
         if: steps.cadence.outputs.run == 'true'
         run: python -m py_compile scripts/collect_web_discovery.py scripts/audit_discovery_recall.py
+
+      - name: Smoke-test live broad-web discovery
+        if: steps.cadence.outputs.run == 'true'
+        run: python scripts/collect_web_discovery.py
+
+      - name: Validate discovery recall architecture and observed benchmark
+        if: steps.cadence.outputs.run == 'true'
+        run: python scripts/audit_discovery_recall.py --github-summary
 
       - name: Inactive DST counterpart
         if: steps.cadence.outputs.run == 'false'
