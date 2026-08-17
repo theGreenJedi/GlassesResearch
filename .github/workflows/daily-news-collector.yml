@@ -44,7 +44,7 @@ jobs:
 
       - name: Check out repository
         if: steps.cadence.outputs.run == 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: main
 
@@ -54,16 +54,24 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Collect glasses and adjacent HCI candidates
+      - name: Collect recent-news and adjacent-HCI candidates
         if: steps.cadence.outputs.run == 'true'
         run: python scripts/collect_daily_news.py
+
+      - name: Collect broad-web discovery candidates
+        if: steps.cadence.outputs.run == 'true'
+        run: python scripts/collect_web_discovery.py
+
+      - name: Retain durable discovered-source watches
+        if: steps.cadence.outputs.run == 'true'
+        run: python scripts/collect_discovery_watches.py
 
       - name: Detect intake changes
         if: steps.cadence.outputs.run == 'true'
         id: changes
         shell: bash
         run: |
-          if [ -z "$(git status --porcelain -- research/news-candidates)" ]; then
+          if [ -z "$(git status --porcelain -- research/news-candidates research/discovery-candidates)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -82,7 +90,7 @@ jobs:
           git config user.name "glassesresearch-bot"
           git config user.email "actions@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          git add research/news-candidates
+          git add research/news-candidates research/discovery-candidates
           git commit -m "Collect institutional knowledge intake for ${DATE}"
           git push origin "$BRANCH"
 
@@ -90,7 +98,7 @@ jobs:
             --base main \
             --head "$BRANCH" \
             --title "Institutional knowledge intake — ${DATE}" \
-            --body "Automated research inbox only. Collect broadly, publish selectively. Core smart-glasses candidates may be promoted only after editorial review. Adjacent HCI candidates are retained as research radar and must not become public site content until a concrete smart-glasses/eyewear connection exists. Review dispositions: collected, watch, archived, published, superseded, rejected."; then
+            --body "Automated research inbox only. The intake combines recent-news collection with high-recall ordinary-web, retail, developer, research, community, manufacturer-catalog, and durable-source watch discovery. Discovery is never publication. Core smart-glasses candidates may be promoted only after verification and editorial review; retail/OEM leads require identity and rebrand resolution first."; then
             echo "Research-inbox PR opened."
           else
             echo "PR creation is not permitted for GitHub Actions; preserved intake on branch ${BRANCH}."
