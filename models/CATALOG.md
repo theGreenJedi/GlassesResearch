@@ -27,6 +27,10 @@ This is the cross-ecosystem discovery layer. For the canonical purchaser-history
 | Rokid | Rokid Glasses | AI/AR glasses | Primary | SDK/platform and translation workflow research | [Rokid](https://global.rokid.com/) |
 | Everysight | [Maverick AI](EverysightMaverick/README.md) | Full-color AR + AI smart glasses | Primary; pre-release | Public Android/iOS SDK; tethered host architecture; owner-control boundary requires evaluation | [Everysight](https://www.everysight.com/pages/maverick-ai) |
 | Everysight | [Maverick AI Pro](EverysightMaverick/README.md) | Full-color AR + AI smart glasses with eye tracking | Primary; pre-release + user-supplied hands-on lead | Pro adds GazeIntent eye tracking; SDK certificate path depends on Everysight-issued keys/server | [Everysight](https://www.everysight.com/pages/maverick-ai) |
+| Everysight | Maverick Sport | Full-color monocular sport AR glasses | Primary; current retail | Separate Sport SDK/developer portal; phone-tethered architecture merits owner-control mapping | [Maverick Sport](https://www.everysight.com/pages/maverick-sport) |
+| Dymesty | Cook Edge / Jobs Circle / Moore Vision | Camera/audio AI eyewear family | Primary; current retail | Three separately named retail products; app/subscription and upstream-platform relationships require investigation | [Dymesty catalog](https://dymesty.com/collections/catalog-sales) |
+| L'Atitude 52°N | Berlin / Milan | Camera/audio AI glasses | Primary; Berlin retail, Milan pre-release | Shared electronics platform; Goya/Gemini, local media storage, privacy LED behavior and app/cloud boundaries merit testing | [L'Atitude 52°N](https://www.latitude52n.com/) |
+| INMO | Air / Air2 / Air3 / GO / GO2 / GO3 | Standalone/discreet display AR and AI glasses | Primary + developer-primary | Air2 documents ADB/APK installation; GO2 exposes flashing/development material; Air3 exposes Android 14 SDK/API path | [INMO](https://www.inmoxr.com/) |
 | Amazon | Echo Frames | Audio smart glasses | Primary | Discontinued/current-generation history and Alexa integration | [Amazon Echo Frames](https://www.amazon.com/echo-frames/) |
 | Snap | Spectacles | Standalone AR developer glasses | Primary | Snap OS and developer platform | [Spectacles](https://www.spectacles.com/) |
 | Snap | SPECS | Standalone spatial AR glasses | Primary; preorder | Consumer-orderable platform announced June 2026; fall shipping target | [Snap launch](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses) |
@@ -55,3 +59,4 @@ This is the cross-ecosystem discovery layer. For the canonical purchaser-history
 3. Build an OEM/rebrand registry for low-cost HeyCyan-compatible camera glasses beyond W610.
 4. Preserve downloadable artifacts with retrieval dates, hashes, license status, and redistribution notes.
 5. Add per-model chapters only as evidence accumulates.
+6. Continue the [2026-08-17 brain-dump reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md), including unresolved marketplace/OEM identity work and the Milan acquisition threshold.

@@ -12,14 +12,9 @@
       "canonical_id": null,
       "pre_release": true,
       "registry_entry": true,
-      "sources": [
-        {"url": "https://www.everysight.com/pages/maverick-ai", "kind": "primary", "verified_at": "2026-08-17"},
-        {"url": "https://support.everysight.com/hc/en-us/articles/27996880767260-What-are-Maverick-AI-and-AI-Pro-and-how-do-they-work", "kind": "primary", "verified_at": "2026-08-17"},
-        {"url": "https://everysight.github.io/maverick-ai-docs/getting-started/start-development/", "kind": "developer-primary", "verified_at": "2026-08-17"},
-        {"url": "https://www.youtube.com/watch?v=pYf1E9316iI", "kind": "user-lead", "verified_at": null}
-      ],
-      "rationale": "Distinct named Everysight product in the smart-glasses scope. Current primary material says the product is still in development, so it belongs in the discovery registry and release tracker until the purchaser-history ledger's acquisition threshold is satisfied.",
-      "notes": "Current primary FOV is 22 degrees. Preserve older 28-degree reporting as a temporal specification conflict rather than merging the values."
+      "sources": [{"url":"https://www.everysight.com/pages/maverick-ai","kind":"primary","verified_at":"2026-08-17"}],
+      "rationale": "Distinct named pre-release Everysight product; keep in discovery registry until purchaser-history threshold is met.",
+      "notes": "Do not conflate with Sport or AI Pro."
     },
     {
       "candidate_id": "EVS-MAVERICK-AI-PRO",
@@ -32,14 +27,9 @@
       "canonical_id": null,
       "pre_release": true,
       "registry_entry": true,
-      "sources": [
-        {"url": "https://www.everysight.com/pages/maverick-ai", "kind": "primary", "verified_at": "2026-08-17"},
-        {"url": "https://support.everysight.com/hc/en-us/articles/27996880767260-What-are-Maverick-AI-and-AI-Pro-and-how-do-they-work", "kind": "primary", "verified_at": "2026-08-17"},
-        {"url": "https://everysight.github.io/maverick-ai-docs/getting-started/api-key/", "kind": "developer-primary", "verified_at": "2026-08-17"},
-        {"url": "https://www.youtube.com/watch?v=pYf1E9316iI", "kind": "user-lead", "verified_at": null}
-      ],
-      "rationale": "Distinct Pro variant with manufacturer-documented native GazeIntent eye tracking. Current primary material says the product is still in development, so no stable GLS purchaser-history ID is assigned yet.",
-      "notes": "SDK access is real but certificate generation depends on an Everysight API key/server path; openness must not be conflated with cloud independence or unrestricted owner control."
+      "sources": [{"url":"https://www.everysight.com/pages/maverick-ai","kind":"primary","verified_at":"2026-08-17"}],
+      "rationale": "Distinct Pro variant with manufacturer-documented eye-tracking differentiation; still pre-release.",
+      "notes": "SDK access does not imply unrestricted owner control."
     },
     {
       "candidate_id": "EVS-MAVERICK-SPORT",
@@ -48,67 +38,124 @@
       "aliases": [],
       "category": "sport AR smart glasses",
       "discovered_at": "2026-08-17",
-      "status": "needs-evidence",
-      "canonical_id": null,
+      "status": "cataloged",
+      "canonical_id": "GLS-0147",
       "pre_release": false,
-      "registry_entry": false,
+      "registry_entry": true,
       "sources": [
-        {"url": "https://www.everysight.com/pages/maverick-sport", "kind": "user-lead", "verified_at": null}
+        {"url":"https://www.everysight.com/pages/maverick-sport","kind":"primary","verified_at":"2026-08-17"},
+        {"url":"https://www.everysight.com/products/maverick","kind":"primary-commercial","verified_at":"2026-08-17"}
       ],
-      "rationale": "A casual generic smart-glasses web search surfaced a dedicated Everysight Maverick Sport product page that the existing discovery process missed. Preserve it immediately as a distinct investigation target while primary-source verification and lineage reconciliation proceed.",
-      "notes": "Do not conflate with Maverick AI or Maverick AI Pro. Determine lifecycle, current availability, SDK relationship, and canonical identity."
+      "rationale": "Everysight directly sells Maverick Sport and documents it separately from Maverick AI / AI Pro.",
+      "notes": "Canonical admission recorded in models/THE_LIST_RECONCILIATION_2026-08-17.md."
     },
     {
       "candidate_id": "DYM-COOK-EDGE",
       "maker": "Dymesty",
       "model": "AI Glasses Cook Edge",
       "aliases": ["Cook Edge"],
-      "category": "AI smart glasses",
+      "category": "camera/audio AI smart glasses",
       "discovered_at": "2026-08-17",
-      "status": "needs-evidence",
-      "canonical_id": null,
+      "status": "cataloged",
+      "canonical_id": "GLS-0148",
       "pre_release": false,
-      "registry_entry": false,
-      "sources": [
-        {"url": "https://dymesty.com/products/dymesty-ai-glasses-cook-edge", "kind": "user-lead", "verified_at": null},
-        {"url": "https://dymesty.com/", "kind": "user-lead", "verified_at": null}
-      ],
-      "rationale": "A generic smart-glasses search surfaced a named Dymesty product absent from current discovery coverage. Add to the ledger before deeper family enumeration and source verification.",
-      "notes": "Enumerate Dymesty's full eyewear family and resolve model/variant relationships before catalog promotion."
+      "registry_entry": true,
+      "sources": [{"url":"https://dymesty.com/collections/catalog-sales","kind":"primary-commercial","verified_at":"2026-08-17"}],
+      "rationale": "Dymesty's own catalog establishes a named direct retail product and separately enumerates Jobs Circle and Moore Vision.",
+      "notes": "Detailed performance claims remain manufacturer claims pending independent testing."
+    },
+    {
+      "candidate_id": "DYM-JOBS-CIRCLE",
+      "maker": "Dymesty",
+      "model": "AI Glasses Jobs Circle",
+      "aliases": ["Jobs Circle"],
+      "category": "camera/audio AI smart glasses",
+      "discovered_at": "2026-08-17",
+      "status": "cataloged",
+      "canonical_id": "GLS-0149",
+      "pre_release": false,
+      "registry_entry": true,
+      "sources": [{"url":"https://dymesty.com/products/dymesty-ai-glasses-jobs-circle","kind":"primary-commercial","verified_at":"2026-08-17"}],
+      "rationale": "Dymesty separately names and sells Jobs Circle.",
+      "notes": "Family relationship preserved in registry."
+    },
+    {
+      "candidate_id": "DYM-MOORE-VISION",
+      "maker": "Dymesty",
+      "model": "AI Sunglasses Moore Vision",
+      "aliases": ["Moore Vision"],
+      "category": "camera/audio AI sunglasses",
+      "discovered_at": "2026-08-17",
+      "status": "cataloged",
+      "canonical_id": "GLS-0150",
+      "pre_release": false,
+      "registry_entry": true,
+      "sources": [{"url":"https://dymesty.com/products/dymesty-ai-sunglasses","kind":"primary-commercial","verified_at":"2026-08-17"}],
+      "rationale": "Dymesty separately names and sells Moore Vision.",
+      "notes": "Family relationship preserved in registry."
     },
     {
       "candidate_id": "LAT52-BERLIN",
-      "maker": "Latitude 52N",
-      "model": "Berlin Smart Glasses",
-      "aliases": ["Berlin"],
-      "category": "AI smart glasses",
+      "maker": "L'Atitude 52°N",
+      "model": "Berlin",
+      "aliases": ["Berlin Smart Glasses"],
+      "category": "camera/audio AI smart glasses",
       "discovered_at": "2026-08-17",
-      "status": "needs-evidence",
-      "canonical_id": null,
+      "status": "cataloged",
+      "canonical_id": "GLS-0151",
       "pre_release": false,
-      "registry_entry": false,
-      "sources": [
-        {"url": "https://www.latitude52n.com/products/berlin-smart-glasses", "kind": "user-lead", "verified_at": null}
-      ],
-      "rationale": "A generic smart-glasses search surfaced a dedicated manufacturer product page absent from the existing discovery system.",
-      "notes": "Verify manufacturer naming, platform lineage, regional variants, and whether other Latitude 52N frames share the same electronics platform."
+      "registry_entry": true,
+      "sources": [{"url":"https://www.latitude52n.com/products/berlin-smart-glasses","kind":"primary-commercial","verified_at":"2026-08-17"}],
+      "rationale": "Manufacturer page establishes Berlin as a named purchasable frame on the L'Atitude platform.",
+      "notes": "Milan shares the platform but remains pre-release."
     },
     {
-      "candidate_id": "INMO-FAMILY-ENUMERATION",
-      "maker": "INMO",
-      "model": "INMO smart-glasses family",
-      "aliases": ["INMO glasses", "INMO XR"],
-      "category": "AR/AI smart-glasses family",
+      "candidate_id": "LAT52-MILAN",
+      "maker": "L'Atitude 52°N",
+      "model": "Milan",
+      "aliases": ["Milan Smart Glasses"],
+      "category": "camera/audio AI smart glasses",
       "discovered_at": "2026-08-17",
-      "status": "needs-evidence",
+      "status": "in-scope",
       "canonical_id": null,
+      "pre_release": true,
+      "registry_entry": true,
+      "sources": [{"url":"https://www.latitude52n.com/products/milan-smart-glasses","kind":"primary","verified_at":"2026-08-17"}],
+      "rationale": "Manufacturer explicitly presents Milan as a distinct named frame but currently marks it COMING SOON / Notify me.",
+      "notes": "No GLS ID until acquisition threshold is met."
+    },
+    {
+      "candidate_id": "INMO-GO2",
+      "maker": "INMO",
+      "model": "GO2",
+      "aliases": ["INMO GO2"],
+      "category": "discreet display AI glasses",
+      "discovered_at": "2026-08-17",
+      "status": "cataloged",
+      "canonical_id": "GLS-0152",
       "pre_release": false,
-      "registry_entry": false,
+      "registry_entry": true,
       "sources": [
-        {"url": "https://www.inmoxr.com/collections/vendors?page=2&q=inmo", "kind": "user-lead", "verified_at": null}
+        {"url":"https://support.inmoxr.com/go2/","kind":"primary-support","verified_at":"2026-08-17"},
+        {"url":"https://www.inmoxr.com/pages/manuals-downloads","kind":"primary","verified_at":"2026-08-17"}
       ],
-      "rationale": "The existing collector already contained an INMO query yet a casual ordinary-web search surfaced the vendor family while automated discovery did not. Preserve the family as an enumeration task rather than prematurely collapsing multiple products into one model.",
-      "notes": "Enumerate current and historical INMO products, SDK/developer surfaces, Android/ADB/firmware evidence, and model lineage before assigning individual canonical identities."
+      "rationale": "Current INMO support and app/download material establishes GO2 as distinct from GO and provides development documentation.",
+      "notes": "Investigate flashing/owner-control path in depth."
+    },
+    {
+      "candidate_id": "INMO-GO3",
+      "maker": "INMO",
+      "model": "GO3",
+      "aliases": ["INMO GO3", "IMG301"],
+      "category": "discreet display AI translation glasses",
+      "discovered_at": "2026-08-17",
+      "status": "cataloged",
+      "canonical_id": "GLS-0153",
+      "pre_release": false,
+      "registry_entry": true,
+      "sources": [{"url":"https://www.inmoxr.com/pages/inmo-go3-ai-glasses","kind":"primary-commercial","verified_at":"2026-08-17"}],
+      "rationale": "INMO currently offers GO3 as a separately named $599 product and identifies model IMG301.",
+      "notes": "Current product family also retains Air3."
     },
     {
       "candidate_id": "WMT-TITANIUM-AI-20091507313",
@@ -121,11 +168,9 @@
       "canonical_id": null,
       "pre_release": false,
       "registry_entry": false,
-      "sources": [
-        {"url": "https://www.walmart.com/ip/20091507313", "kind": "commercial", "verified_at": null}
-      ],
-      "rationale": "A generic smart-glasses search surfaced a Walmart marketplace product absent from the candidate system. Preserve it as a commercial/OEM lead without accepting the marketplace title as canonical identity.",
-      "notes": "Resolve seller, brand, model number, upstream OEM/ODM, and possible rebrand relationship before any catalog entry."
+      "sources": [{"url":"https://www.walmart.com/ip/20091507313","kind":"commercial","verified_at":null}],
+      "rationale": "Marketplace product remains useful as an OEM/rebrand lead but its title does not establish trustworthy canonical identity.",
+      "notes": "Resolve seller, brand, model number, upstream OEM/ODM, and possible rebrand relationship before catalog admission."
     }
   ]
 }
