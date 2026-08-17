@@ -9,7 +9,7 @@ description: "Find and compare smart glasses quickly, then open deeper evidence 
 
 The quick view keeps unlike products understandable. Pick a category, scan the essentials, then compare two-to-four models using fields that matter for that kind of glasses. The deeper GlassesResearch evidence remains one click lower rather than occupying the whole screen at once.
 
-**Current live controls:** practical-needs filters, buying-route filters, exact/near-match discovery, purchase routes, and multi-device comparison. **Planned controls:** price-band/range filtering and Report Card minimum-score thresholds. See the [Finder architecture and implementation status](GLASSES_FINDER.md) for the explicit shipped-versus-planned contract.
+**Current live controls:** practical-needs filters, buying-route filters, verified price ceilings, Report Card minimum-score thresholds, exact/near-match discovery, purchase routes, shortlist checkboxes, and multi-device comparison. Price filters only use documented current acquisition-price observations; models without a usable price observation remain unknown rather than being guessed into a budget.
 
 <div id="comparison-engine-app">
 Loading Glasses Finder data…
