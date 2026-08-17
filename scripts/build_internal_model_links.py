@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Add crawlable canonical-model links to staged editorial research pages."""
+"""Add crawlable model links and evidence-led research summaries to staged pages."""
 
 from __future__ import annotations
 
 import argparse
+import json
 import re
 from pathlib import Path
 
@@ -61,6 +62,63 @@ def link_lineage_ids(path: Path) -> int:
     return len(ids)
 
 
+def load_map(path: Path) -> dict[str, dict]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return {row["id"]: row for row in payload.get("records", [])}
+
+
+def yn(capabilities: dict, field: str) -> str:
+    state = capabilities.get(field, {}).get("value", "unknown")
+    return {"yes": "Yes", "no": "No", "unknown": "Not yet verified"}.get(state, str(state))
+
+
+def research_links(capabilities: dict) -> list[str]:
+    links = ["[Compare in the Glasses Finder](/docs/COMPARISON_ENGINE/)", "[Industry timeline](/docs/INDUSTRY_TIMELINE/)"]
+    if capabilities.get("bluetooth", {}).get("value") == "yes":
+        links.append("[Bluetooth and BLE research](/docs/BLE/)")
+    if any(capabilities.get(k, {}).get("value") == "yes" for k in ("sdk_api", "open_source", "self_hostable")):
+        links.append("[Firmware research](/docs/Firmware/)")
+    return links
+
+
+def enrich_catalog_pages(output_root: Path) -> int:
+    devices = load_map(output_root / "data" / "devices.json")
+    capabilities = load_map(output_root / "data" / "finder-capabilities.json")
+    comparisons = load_map(output_root / "data" / "comparisons.json")
+    scores = load_map(output_root / "data" / "report-card-scores.json")
+    changed = 0
+
+    for model_id, record in devices.items():
+        path = output_root / "models" / "catalog" / f"{model_id.lower()}.md"
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        if "<!-- generated-research-snapshot -->" in text:
+            continue
+
+        caps = capabilities.get(model_id, {}).get("capabilities", {})
+        yes_count = sum(v.get("value") == "yes" for v in caps.values())
+        no_count = sum(v.get("value") == "no" for v in caps.values())
+        unknown_count = sum(v.get("value") == "unknown" for v in caps.values())
+        comp = comparisons.get(model_id, {}).get("fields", {})
+        verified_specs = sum(
+            fact.get("evidence") != "unknown" and str(fact.get("value", "")).lower() != "unknown"
+            for fact in comp.values()
+        )
+        source_count = sum(1 for item in record.get("links", []) if item.get("kind") == "external")
+        report_depth = "A GlassesResearch Report Card is available." if model_id in scores else "No Report Card has been published yet."
+        links = " · ".join(research_links(caps))
+
+        snapshot = f'''\n## Research snapshot\n\n<!-- generated-research-snapshot -->\n**{record['maker']} {record['model']}** is cataloged as **{record['type']}** with lifecycle state **{record['state']}** and era/release year **{record['era']}**. GlassesResearch currently has **{yes_count} confirmed capabilities**, **{no_count} verified absences**, and **{unknown_count} unresolved capability fields** for this model. The structured comparison record contains **{verified_specs} verified specification fields**, and this page links to **{source_count} external source{'s' if source_count != 1 else ''}**. {report_depth}\n\n### Common questions\n\n- **Does it have a camera?** {yn(caps, 'camera')}\n- **Does it have a display?** {yn(caps, 'display')}\n- **Does it support Bluetooth?** {yn(caps, 'bluetooth')}\n- **Is an SDK or API verified?** {yn(caps, 'sdk_api')}\n- **Is open-source support verified?** {yn(caps, 'open_source')}\n- **Is offline operation verified?** {yn(caps, 'offline_operation')}\n\n### Continue researching\n\n{links}\n'''
+        marker = "\n## At a glance\n"
+        if marker not in text:
+            continue
+        text = text.replace(marker, snapshot + marker, 1)
+        path.write_text(text, encoding="utf-8")
+        changed += 1
+    return changed
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-root", type=Path, required=True)
@@ -69,7 +127,8 @@ def main() -> None:
     heading_links += sum(link_model_headings(path) for path in sorted((args.output_root / "docs" / "report-cards").glob("*.md")))
     catalog_links = link_catalog_rows(args.output_root / "models" / "THE_LIST.md")
     lineage_links = sum(link_lineage_ids(path) for path in sorted((args.output_root / "lineages").glob("*.md")))
-    print(f"Added {heading_links} heading links, {catalog_links} catalog links, and {lineage_links} lineage links")
+    enriched = enrich_catalog_pages(args.output_root)
+    print(f"Added {heading_links} heading links, {catalog_links} catalog links, {lineage_links} lineage links, and enriched {enriched} canonical model pages")
 
 
 if __name__ == "__main__":
