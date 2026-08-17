@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fail CI when canonical model/lineage surfaces drift out of sync."""
 from pathlib import Path
+import json
 import re
 import sys
 
@@ -13,6 +14,7 @@ root_readme = (ROOT / "README.md").read_text(encoding="utf-8")
 lineage_index = (ROOT / "lineages/README.md").read_text(encoding="utf-8")
 corrections_path = ROOT / "models/CATALOG_CORRECTIONS.md"
 corrections = corrections_path.read_text(encoding="utf-8") if corrections_path.exists() else ""
+candidates_path = ROOT / "data/model-candidates.json"
 
 ids = re.findall(r"^\| (GLS-\d{4}) \|", the_list, flags=re.M)
 unique_ids = set(ids)
@@ -29,6 +31,28 @@ for label, text in (("models/README.md", model_readme), ("README.md", root_readm
     for count in counts:
         if count != len(unique_ids):
             errors.append(f"{label} says {count} models; canonical ledger has {len(unique_ids)}")
+
+if candidates_path.exists():
+    payload = json.loads(candidates_path.read_text(encoding="utf-8"))
+    cataloged_ids = []
+    for candidate in payload.get("candidates", []):
+        if candidate.get("status") != "cataloged":
+            continue
+        canonical_id = candidate.get("canonical_id")
+        candidate_id = candidate.get("candidate_id", "<unknown-candidate>")
+        if not canonical_id:
+            errors.append(f"Cataloged candidate {candidate_id} has no canonical_id")
+            continue
+        cataloged_ids.append(canonical_id)
+        if canonical_id not in unique_ids:
+            errors.append(
+                f"Cataloged candidate {candidate_id} points to {canonical_id}, but that GLS row is absent from The List"
+            )
+    duplicated_catalog_ids = sorted({gid for gid in cataloged_ids if cataloged_ids.count(gid) > 1})
+    if duplicated_catalog_ids:
+        errors.append(
+            "Multiple cataloged candidates claim the same canonical GLS ID: " + ", ".join(duplicated_catalog_ids)
+        )
 
 chapter_ids = set(re.findall(r"GLS-\d{4}", model_readme))
 retired_ids = set(re.findall(r"\| (GLS-\d{4}) \|[^\n]*\*\*Retired", corrections))
