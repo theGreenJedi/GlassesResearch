@@ -32,24 +32,56 @@ BANNED = (
 # These are not prose-style preferences. They are visitor-facing contracts that
 # must remain explicit because multiple pages describe the same systems.
 REQUIRED_CONTRACTS = {
+    "index.md": (
+        "Find glasses",
+        "Research a model",
+        "Explore ecosystem",
+    ),
     "docs/REPORT_CARD.md": (
         "Core Report Cards — one for every canonical model in the catalog.",
         "They add depth; they do not define catalog coverage.",
         "## Extended Research",
     ),
     "docs/TOOLS.md": (
-        "Price-band controls and Report Card minimum-score filters are planned",
+        "verified price ceilings",
+        "Report Card minimum scores",
         "six-subject Core Report Cards for every canonical model",
         "Extended Research",
     ),
     "docs/GLASSES_FINDER.md": (
         "## Current capability contract",
-        "Price-band/range controls and Report Card minimum-score filters are planned",
+        "verified price-ceiling filters",
+        "Report Card minimum-score filters",
+        "shortlist checkboxes",
         "## Implementation status",
     ),
     "docs/COMPARISON_ENGINE.md": (
         "**Current live controls:**",
-        "**Planned controls:** price-band/range filtering and Report Card minimum-score thresholds.",
+        "verified price ceilings",
+        "Report Card minimum-score thresholds",
+        "shortlist checkboxes",
+    ),
+}
+
+# Public capability claims must also remain anchored to the implementation. This
+# prevents a later editorial edit from claiming a control that the Finder no
+# longer ships, or source changes from silently outrunning the visitor contract.
+SOURCE_CONTRACTS = {
+    "docs/javascripts/glasses-finder-v3.js": (
+        "price-observations.json",
+        "filter.type === 'price_max'",
+        "data-score-enable",
+        "report-card-scores.json",
+    ),
+    "docs/javascripts/finder-shortlist.js": (
+        "data-shortlist-id",
+        "data-compare-selected",
+        "Compare selected",
+    ),
+    "docs/javascripts/model-knowledge-flow.js": (
+        "Follow this model",
+        "Continue researching",
+        "#verified-research-alerts",
     ),
 }
 
@@ -75,6 +107,16 @@ def main() -> int:
         for phrase in phrases:
             if phrase not in text:
                 failures.append((rel, f"missing capability/coverage contract: {phrase}"))
+
+    for rel, phrases in SOURCE_CONTRACTS.items():
+        path = ROOT / rel
+        if not path.exists():
+            failures.append((rel, "missing shipped-capability source"))
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        for phrase in phrases:
+            if phrase not in text:
+                failures.append((rel, f"missing shipped-capability marker: {phrase}"))
 
     if failures:
         print("Public editorial audit failed:")
