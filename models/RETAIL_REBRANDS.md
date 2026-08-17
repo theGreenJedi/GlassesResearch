@@ -16,11 +16,11 @@ A shared application or software platform is evidence of an ecosystem relationsh
 | ESTG W610 | W610 / HeyCyan | Alias; does not add a model beyond GLS-0039 | Published W610 documentation matches the W610 platform; [HeyCyan lineage](../lineages/HEYCYAN.md) |
 | STARK Horizon | Strong W610 market-identity match | No additional count while W610 remains the supported underlying identity | STARK product material calls the underlying glasses `STARK W610`; [HeyCyan population research](../lineages/HEYCYAN_POPULATION.md) |
 | Anko Camera Glasses | HeyCyan software ecosystem; hardware equivalence to W610 not established | Already canonical as GLS-0120 because it crossed the acquisition/identity threshold independently | [Anko Camera Glasses](AnkoCameraGlasses/README.md) |
-| EarlySincere | W100 / Ear Dance | Retail identity; no separate count | Manuals pair to Bluetooth device `W100`; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE/README.md) |
-| Vital Smart Glasses | W100 / Ear Dance | Retail identity; no separate count | Setup documentation pairs to `W100` and uses Ear Dance; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE/README.md) |
-| Astrum W100 | W100 / Ear Dance | Retail identity; no separate count | Astrum directly names W100 and Ear Dance; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE/README.md) |
-| Tiglon TG-W100 | W100 / Ear Dance | Retail identity; no separate count | Tiglon documents W100/AB5712F/Ear Dance; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE/README.md) |
-| LEEDOAR-associated W100 | W100 / Ear Dance | Retail identity; no separate count | W100 documentation identifies AB5712F + Ear Dance; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE/README.md) |
+| EarlySincere | W100 / Ear Dance | Retail identity; no separate count | Manuals pair to Bluetooth device `W100`; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE.md) |
+| Vital Smart Glasses | W100 / Ear Dance | Retail identity; no separate count | Setup documentation pairs to `W100` and uses Ear Dance; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE.md) |
+| Astrum W100 | W100 / Ear Dance | Retail identity; no separate count | Astrum directly names W100 and Ear Dance; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE.md) |
+| Tiglon TG-W100 | W100 / Ear Dance | Retail identity; no separate count | Tiglon documents W100/AB5712F/Ear Dance; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE.md) |
+| LEEDOAR-associated W100 | W100 / Ear Dance | Retail identity; no separate count | W100 documentation identifies AB5712F + Ear Dance; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE.md) |
 | Giinova W630 | W630 / HeyCyan sibling platform | Retail identity of W630; not a W610 alias | Manual identifies W630 + HeyCyan; Goodway separately documents W630 architecture; [HeyCyan population research](../lineages/HEYCYAN_POPULATION.md) |
 | GUHUAVMI W630 | W630 / HeyCyan sibling platform | Retail identity of W630; not a W610 alias | Manual identifies W630 + HeyCyan/Bluetooth/Wi-Fi; [HeyCyan population research](../lineages/HEYCYAN_POPULATION.md) |
 
@@ -46,7 +46,7 @@ Useful cross-links:
 - [W610 / HeyCyan](W610/README.md)
 - [HeyCyan lineage](../lineages/HEYCYAN.md)
 - [HeyCyan populated research](../lineages/HEYCYAN_POPULATION.md)
-- [W100 / Ear Dance lineage](../lineages/W100_EARDANCE/README.md)
+- [W100 / Ear Dance lineage](../lineages/W100_EARDANCE.md)
 - [HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK)
 - [CyanBridge / Alternative HeyCyan App and SDK](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK)
 - [Community & Development](../resources/COMMUNITY_AND_DEVELOPMENT.md)
