@@ -11,7 +11,7 @@ The GlassesResearch working library: ways to find devices, evaluate evidence, in
 
 ## Follow, cite, and reuse
 
-- [**Research & News RSS feed**](/feed.xml) — title, date, and summary in your feed reader; each item returns to the canonical GlassesResearch article for the full research and citations.
+- [**Research & News RSS feed**](https://glassesresearch.org/feed.xml) — title, date, and summary in your feed reader; each item returns to the canonical GlassesResearch article for the full research and citations.
 - [**How to cite GlassesResearch**](CITING_GLASSESRESEARCH.md) — stable GLS/TL identifiers, attribution formats, canonical URLs, and dataset citation guidance.
 - [**Data & downloads**](../data/README.md) — public JSON, CSV, per-model bundles, schemas, evidence resources, and lower-level structured endpoints.
 - [**Community**](../resources/COMMUNITY_AND_DEVELOPMENT.md) — direct links to Reddit, Discord, GitHub, XDA, developer forums, and cross-vendor communities.
