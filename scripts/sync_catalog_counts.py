@@ -91,7 +91,7 @@ def sync_models_readme(text: str, count: int) -> str:
         text,
     )
     text = re.sub(
-        r"(every one of the \*\*)\d+( active canonical smart-glasses records\*\*)",
+        r"(\*\*every one of the )\d+( active canonical smart-glasses records\*\*)",
         rf"\g<1>{count}\g<2>",
         text,
     )
