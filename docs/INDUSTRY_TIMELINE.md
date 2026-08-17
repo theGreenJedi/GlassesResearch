@@ -1,16 +1,35 @@
-# Smart-Glasses Industry Timeline
+---
+title: "Smart Glasses Timeline: History of AR & AI Glasses"
+description: "Evidence-backed smart glasses timeline covering the history of AR glasses, AI glasses, major devices, platforms, companies, open-source projects, research, and industry milestones."
+---
 
-The **GlassesResearch Smart-Glasses Industry Timeline** is an evidence-backed historical graph of major product, company, technology, open-source, regulatory, research, and GlassesResearch milestones.
+# Smart Glasses Timeline: History of AR & AI Glasses
+
+The **GlassesResearch Smart Glasses Industry Timeline** is an evidence-backed history of smart glasses: major products, companies, AR and AI technologies, open-source projects, regulatory events, research, and platform milestones. It connects early head-mounted systems to modern AI glasses, display glasses, developer platforms, and emerging wearable-computing ecosystems.
 
 The default view emphasizes significance **4–5** events. Use the filters to reveal the deeper chronology, GlassesResearch milestones, and newly discovered primary-source signals.
 
 <div id="industry-timeline-app"></div>
 
-## How to read the graph
+## How to read the smart-glasses timeline
 
 Marker size reflects the event's **significance score**. Solid markers are events that occurred. Outlined markers represent announced future milestones. Delayed and cancelled milestones retain their place in the chronology. Newly discovered items appear as **Live signals** until incorporated into the canonical record.
 
-Every canonical event has a stable `TL-####` identifier. Selecting a marker exposes its sources and a permalink.
+Every canonical event has a stable `TL-####` identifier. Selecting a marker exposes its sources and a permalink. This makes the timeline useful both as a visual history and as a citation path back to the evidence behind individual milestones.
+
+## What this timeline covers
+
+The chronology deliberately treats smart glasses as more than a single product category. It tracks the development of:
+
+- camera-and-audio AI glasses;
+- augmented-reality and spatial-display glasses;
+- notification and heads-up displays;
+- enterprise assisted-reality devices;
+- developer-oriented and open smart-glasses platforms;
+- companion software, SDKs, operating systems, and AI services;
+- important discontinuations, acquisitions, regulatory events, and research milestones.
+
+For the current device landscape, use the [Glasses Finder and comparison engine](/docs/COMPARISON_ENGINE/). For the project's definition of the wider field, see [Ecosystem Scope](/docs/ECOSYSTEM_SCOPE/). Developers investigating device communications can start with [Bluetooth and BLE research](/docs/BLE/) and [firmware research](/docs/Firmware/).
 
 ## Significance scale
 
@@ -42,14 +61,22 @@ The 2023–2026 period accelerated the shift from capture and notifications towa
 
 Snap OS, Android XR, vendor SDKs, community software, and open-hardware projects show that the future of smart glasses is also a platform contest. The durable historical question is not only which frame sold best, but which hardware and software ecosystems allowed useful capabilities to survive vendor pivots and product discontinuation.
 
+## Related GlassesResearch resources
+
+- [Browse the canonical smart-glasses model catalog](/models/THE_LIST/)
+- [Compare models in the Glasses Finder](/docs/COMPARISON_ENGINE/)
+- [Read the ecosystem map](/docs/ECOSYSTEM_MAP/)
+- [Explore Bluetooth and BLE research](/docs/BLE/)
+- [Explore firmware research](/docs/Firmware/)
+- [See the evidence standard used by GlassesResearch](/docs/EVIDENCE_STANDARD/)
+
 ## Citation and reuse
 
-See [How to cite the timeline](TIMELINE_CITATION.md) for stable event identifiers,
-scope, and reuse guidance.
+See [How to cite the timeline](TIMELINE_CITATION.md) for stable event identifiers, scope, and reuse guidance. Researchers, developers, journalists, community projects, and other sites are welcome to link to the timeline or individual milestone permalinks when they are useful; the underlying primary source should also be cited when the specific factual claim matters.
 
 When citing the overall visualization, use:
 
-> **GlassesResearch Smart-Glasses Industry Timeline**, GlassesResearch, https://glassesresearch.org/docs/INDUSTRY_TIMELINE/
+> **GlassesResearch Smart Glasses Industry Timeline**, GlassesResearch, https://glassesresearch.org/docs/INDUSTRY_TIMELINE/
 
 For a particular milestone, select it in the graph and use the generated `#TL-####` permalink. Cite the underlying primary source as well when the specific factual claim matters.
 

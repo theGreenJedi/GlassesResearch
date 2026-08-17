@@ -7,6 +7,7 @@ on:
     paths:
       - 'scripts/analytics_report.py'
       - 'scripts/analytics_history.py'
+      - 'scripts/search_opportunities.py'
       - '.github/workflows/analytics-report.yml'
   schedule:
     - cron: '15 7 * * *'
@@ -43,6 +44,12 @@ jobs:
           CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
         run: python scripts/analytics_report.py
 
+      - name: Build page-query search opportunities
+        env:
+          GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
+          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
+        run: python scripts/search_opportunities.py
+
       - name: Update long-range analytics series
         env:
           GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
@@ -51,7 +58,7 @@ jobs:
           CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
         run: python scripts/analytics_history.py
 
-      - name: Publish latest snapshot and history
+      - name: Publish latest snapshot, opportunities, and history
         shell: bash
         run: |
           set -euo pipefail
@@ -68,30 +75,30 @@ jobs:
           mkdir -p "$tmpdir/analytics/history" "$tmpdir/analytics/series"
           cp analytics/latest.md "$tmpdir/analytics/latest.md"
           cp analytics/latest.json "$tmpdir/analytics/latest.json"
+          cp analytics/search-opportunities.md "$tmpdir/analytics/search-opportunities.md"
+          cp analytics/search-opportunities.json "$tmpdir/analytics/search-opportunities.json"
           cp "$history_file" "$tmpdir/$history_file"
           cp -a analytics/series/. "$tmpdir/analytics/series/"
 
-          # Re-apply only analytics-owned generated files to the current remote
-          # tip. The analytics workflow is serialized, so replacing series/
-          # cannot clobber another analytics run, while unrelated site writes
-          # remain untouched.
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
             mkdir -p analytics/history
             cp "$tmpdir/analytics/latest.md" analytics/latest.md
             cp "$tmpdir/analytics/latest.json" analytics/latest.json
+            cp "$tmpdir/analytics/search-opportunities.md" analytics/search-opportunities.md
+            cp "$tmpdir/analytics/search-opportunities.json" analytics/search-opportunities.json
             cp "$tmpdir/$history_file" "$history_file"
             rm -rf analytics/series
             mkdir -p analytics/series
             cp -a "$tmpdir/analytics/series/." analytics/series/
 
-            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json "$history_file" analytics/series/)" ]; then
+            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json analytics/search-opportunities.md analytics/search-opportunities.json "$history_file" analytics/series/)" ]; then
               echo 'Analytics snapshot already current.'
               exit 0
             fi
 
-            git add analytics/latest.md analytics/latest.json "$history_file" analytics/series/
+            git add analytics/latest.md analytics/latest.json analytics/search-opportunities.md analytics/search-opportunities.json "$history_file" analytics/series/
             git commit -m "analytics: refresh automated report"
             if git push origin HEAD:main; then
               exit 0
@@ -112,4 +119,8 @@ jobs:
             cat analytics/latest.md >> "$GITHUB_STEP_SUMMARY"
           else
             echo 'Analytics report was not generated.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f analytics/search-opportunities.md ]; then
+            printf '\n\n' >> "$GITHUB_STEP_SUMMARY"
+            cat analytics/search-opportunities.md >> "$GITHUB_STEP_SUMMARY"
           fi
