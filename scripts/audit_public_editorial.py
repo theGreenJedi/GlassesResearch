@@ -142,7 +142,7 @@ def main() -> int:
     if failures:
         print("Public editorial audit failed:")
         for rel, issue in failures:
-            print(f"- {rel}: {issue}"))
+            print(f"- {rel}: {issue}")
         return 1
 
     print("Public editorial and capability-contract audit passed.")
