@@ -16,6 +16,7 @@ The human-readable profile library now contains an evidence-backed paragraph for
 Editorial volumes:
 
 - [Smart-Glasses Model Profiles](PROFILES.md)
+- [Issue #302 admissions profiles](PROFILES_2026_08_17_302_ADMISSIONS.md) — RayNeo/Thunderbird V3, RayNeo Air 4 Pro, XREAL 1S, W100/Ear Dance and W630/HeyCyan reconciliation profiles.
 - [Foundations and Early Platforms](PROFILES_FOUNDATIONS.md)
 - [Legacy Display and Early Platforms](PROFILES_LEGACY_DISPLAY.md)
 - [AR, Display, and Enterprise Platforms](PROFILES_AR_DISPLAY.md)
