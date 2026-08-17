@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/analytics_report.py'
+      - 'scripts/analytics_history.py'
       - '.github/workflows/analytics-report.yml'
   schedule:
     - cron: '15 7 * * *'
@@ -42,6 +43,14 @@ jobs:
           CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
         run: python scripts/analytics_report.py
 
+      - name: Update long-range analytics series
+        env:
+          GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
+          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
+        run: python scripts/analytics_history.py
+
       - name: Publish latest snapshot and history
         shell: bash
         run: |
@@ -56,13 +65,16 @@ jobs:
 
           tmpdir="$(mktemp -d)"
           history_file="analytics/history/$(date -u +%F).json"
-          mkdir -p "$tmpdir/analytics/history"
+          mkdir -p "$tmpdir/analytics/history" "$tmpdir/analytics/series"
           cp analytics/latest.md "$tmpdir/analytics/latest.md"
           cp analytics/latest.json "$tmpdir/analytics/latest.json"
           cp "$history_file" "$tmpdir/$history_file"
+          cp -a analytics/series/. "$tmpdir/analytics/series/"
 
-          # Re-apply only this run's generated files to the current remote tip.
-          # This avoids rebase conflicts when another automation updates main.
+          # Re-apply only analytics-owned generated files to the current remote
+          # tip. The analytics workflow is serialized, so replacing series/
+          # cannot clobber another analytics run, while unrelated site writes
+          # remain untouched.
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
@@ -70,13 +82,16 @@ jobs:
             cp "$tmpdir/analytics/latest.md" analytics/latest.md
             cp "$tmpdir/analytics/latest.json" analytics/latest.json
             cp "$tmpdir/$history_file" "$history_file"
+            rm -rf analytics/series
+            mkdir -p analytics/series
+            cp -a "$tmpdir/analytics/series/." analytics/series/
 
-            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json "$history_file")" ]; then
+            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json "$history_file" analytics/series/)" ]; then
               echo 'Analytics snapshot already current.'
               exit 0
             fi
 
-            git add analytics/latest.md analytics/latest.json "$history_file"
+            git add analytics/latest.md analytics/latest.json "$history_file" analytics/series/
             git commit -m "analytics: refresh automated report"
             if git push origin HEAD:main; then
               exit 0
