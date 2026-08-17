@@ -52,6 +52,7 @@ def probe(url: str) -> tuple[str, str, str | None]:
 def main() -> int:
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     watch_sets = {
+        "manufacturer_watch": cfg.get("manufacturer_watch_pages", []),
         "research_watch": cfg.get("research_watch_pages", []),
         "community_watch": cfg.get("community_watch_pages", []),
         "retail_watch": cfg.get("retail_watch_pages", []),
@@ -70,7 +71,7 @@ def main() -> int:
                 "summary": summary,
                 "discovery_channel": channel,
                 "source": "configured durable watch",
-                "scope_lane": "core_glasses" if channel != "research_watch" else "research_radar",
+                "scope_lane": "research_radar" if channel == "research_watch" else "core_glasses",
                 "status": "candidate",
                 "publication_eligible": False,
                 "publication_gate_reason": "watch retention is not verification or publication",
