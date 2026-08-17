@@ -2,8 +2,8 @@
 """High-recall web discovery for GlassesResearch.
 
 This collector complements the news intake. It deliberately searches the ordinary
-web, retail surfaces, developer material, research sources, and manufacturer
-catalogs. Nothing collected here is published automatically.
+web, retail surfaces, developer material, research sources, community sources, and
+manufacturer catalogs. Nothing collected here is published automatically.
 """
 from __future__ import annotations
 
@@ -64,10 +64,8 @@ def bing_rss(query: str) -> str:
 
 def classify_scope(channel: str, title: str, summary: str) -> str:
     hay = f"{title} {summary}".lower()
-    if channel in {"broad_web", "retail", "developer", "manufacturer_catalog"}:
+    if channel in {"broad_web", "retail", "developer", "manufacturer_catalog", "community"}:
         return "core_glasses" if any(term in hay for term in GLASSES_TERMS) else "research_radar"
-    if channel == "research":
-        return "research_radar"
     return "research_radar"
 
 
@@ -165,6 +163,7 @@ def main() -> int:
         "retail": cfg.get("retail_discovery_queries", []),
         "developer": cfg.get("developer_discovery_queries", []),
         "research": cfg.get("research_discovery_queries", []),
+        "community": cfg.get("community_discovery_queries", []),
     }
     for channel, queries in lanes.items():
         for query in queries:
