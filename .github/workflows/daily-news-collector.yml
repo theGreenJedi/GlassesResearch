@@ -10,7 +10,10 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
+
+concurrency:
+  group: knowledge-intake-writer
+  cancel-in-progress: false
 
 jobs:
   collect:
@@ -33,13 +36,10 @@ jobs:
 
           if [ "$SCHEDULE" = "51 3 * * *" ] && [ "$OFFSET" = "-0400" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Running 11:51 PM Eastern intake on EDT schedule."
           elif [ "$SCHEDULE" = "51 4 * * *" ] && [ "$OFFSET" = "-0500" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Running 11:51 PM Eastern intake on EST schedule."
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "Skipping inactive DST counterpart schedule."
           fi
 
       - name: Check out repository
@@ -47,6 +47,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           ref: main
+          fetch-depth: 0
 
       - name: Set up Python
         if: steps.cadence.outputs.run == 'true'
@@ -54,7 +55,43 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Collect recent-news and adjacent-HCI candidates
+      - name: Open durable knowledge-intake branch
+        if: steps.cadence.outputs.run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "glassesresearch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git fetch origin main
+          if git ls-remote --exit-code --heads origin knowledge-intake >/dev/null 2>&1; then
+            git fetch origin knowledge-intake
+            git checkout -B knowledge-intake origin/knowledge-intake
+            git merge --no-edit origin/main
+          else
+            git checkout -B knowledge-intake origin/main
+          fi
+
+      - name: Validate classifier
+        if: steps.cadence.outputs.run == 'true'
+        run: python scripts/test_knowledge_flow.py
+
+      - name: Preserve previous same-day snapshots
+        if: steps.cadence.outputs.run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          DATE="$(date -u +%F)"
+          STAMP="$(date -u +%Y-%m-%dT%H%M%SZ)"
+          for DIR in research/news-candidates research/discovery-candidates; do
+            for EXT in json md; do
+              SRC="${DIR}/${DATE}.${EXT}"
+              if [ -f "$SRC" ]; then
+                mv "$SRC" "${DIR}/${STAMP}.${EXT}"
+              fi
+            done
+          done
+
+      - name: Collect recent news and adjacent-HCI candidates
         if: steps.cadence.outputs.run == 'true'
         run: python scripts/collect_daily_news.py
 
@@ -66,47 +103,24 @@ jobs:
         if: steps.cadence.outputs.run == 'true'
         run: python scripts/collect_discovery_watches.py
 
-      - name: Detect intake changes
+      - name: Persist durable intake queue
         if: steps.cadence.outputs.run == 'true'
-        id: changes
-        shell: bash
-        run: |
-          if [ -z "$(git status --porcelain -- research/news-candidates research/discovery-candidates)" ]; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Preserve research inbox branch and open PR when permitted
-        if: steps.cadence.outputs.run == 'true' && steps.changes.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TZ: America/New_York
         shell: bash
         run: |
           set -euo pipefail
-          DATE="$(date +%F)"
-          BRANCH="knowledge-intake-${DATE}-${GITHUB_RUN_ID}"
-          git config user.name "glassesresearch-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git checkout -b "$BRANCH"
           git add research/news-candidates research/discovery-candidates
-          git commit -m "Collect institutional knowledge intake for ${DATE}"
-          git push origin "$BRANCH"
-
-          if gh pr create \
-            --base main \
-            --head "$BRANCH" \
-            --title "Institutional knowledge intake — ${DATE}" \
-            --body "Automated research inbox only. The intake combines recent-news collection with high-recall ordinary-web, retail, developer, research, community, manufacturer-catalog, and durable-source watch discovery. Discovery is never publication. Core smart-glasses candidates may be promoted only after verification and editorial review; retail/OEM leads require identity and rebrand resolution first."; then
-            echo "Research-inbox PR opened."
-          else
-            echo "PR creation is not permitted for GitHub Actions; preserved intake on branch ${BRANCH}."
+          if ! git diff --cached --quiet; then
+            DATE="$(TZ=America/New_York date +%F)"
+            git commit -m "Persist institutional knowledge intake ${DATE}"
           fi
+          git push origin HEAD:knowledge-intake
 
-      - name: No new candidates
-        if: steps.cadence.outputs.run == 'true' && steps.changes.outputs.changed == 'false'
-        run: echo "No new research-inbox candidates; no branch or PR opened."
+          {
+            echo "### Durable knowledge intake"
+            echo ""
+            echo "News and broad-web discovery are preserved on the \`knowledge-intake\` branch."
+            echo "Candidates are classified before review; no PR is required for the conveyor to retain its payload."
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Inactive DST counterpart
         if: steps.cadence.outputs.run == 'false'

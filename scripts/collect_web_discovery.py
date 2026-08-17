@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""High-recall web discovery for GlassesResearch.
+"""High-recall ordinary-web discovery for GlassesResearch.
 
-This collector complements the news intake. It deliberately searches the ordinary
-web, retail surfaces, developer material, research sources, community sources, and
-manufacturer catalogs. Nothing collected here is published automatically.
+This intentionally imitates a curious human searching the wider web: products,
+reviews, videos, rumors, developer tools, research, optics, retail, community,
+manufacturer catalogs, and adjacent wearables. Classification happens after
+discovery, and nothing collected here is published automatically.
 """
 from __future__ import annotations
 
@@ -18,14 +19,24 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+from knowledge_flow import CONTENT_TYPES, RELATIONSHIPS, enrich_candidate, term_hits
+
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "research" / "discovery-sources.json"
 OUTDIR = ROOT / "research" / "discovery-candidates"
-UA = "GlassesResearch-Discovery/1.0 (+https://glassesresearch.org/)"
+UA = "GlassesResearch-Discovery/2.0 (+https://glassesresearch.org/)"
 
-GLASSES_TERMS = (
-    "smart glasses", "ai glasses", "ar glasses", "smart eyewear", "eyewear",
-    "glasses", "spectacles", "maverick", "inmo", "dymesty", "latitude52",
+EXTRA_DIRECT_TERMS = (
+    "maverick", "everysight", "inmo", "dymesty", "latitude52", "latitude 52",
+    "halliday", "lucyd", "heycyan", "mentra", "xreal", "rayneo", "rokid",
+    "viture", "even realities", "brilliant labs", "vuzix", "solos airgo",
+    "project aria",
+)
+MATERIAL_TERMS = (
+    "launch", "released", "announced", "preorder", "shipping", "review",
+    "hands-on", "sdk", "api", "firmware", "open source", "github", "teardown",
+    "privacy", "lawsuit", "patent", "rumor", "waveguide", "microled",
+    "prescription", "oem", "odm", "rebrand", "research", "study",
 )
 
 
@@ -50,7 +61,9 @@ def clean(value: str) -> str:
 
 def normalize_url(url: str) -> str:
     parsed = urllib.parse.urlsplit(url)
-    return urllib.parse.urlunsplit((parsed.scheme.lower(), parsed.netloc.lower(), parsed.path.rstrip("/"), "", ""))
+    return urllib.parse.urlunsplit(
+        (parsed.scheme.lower(), parsed.netloc.lower(), parsed.path.rstrip("/"), "", "")
+    )
 
 
 def candidate_id(url: str, title: str) -> str:
@@ -62,16 +75,40 @@ def bing_rss(query: str) -> str:
     return f"https://www.bing.com/search?q={encoded}&format=rss&count=30"
 
 
-def classify_scope(channel: str, title: str, summary: str) -> str:
-    hay = f"{title} {summary}".lower()
-    if channel in {"broad_web", "retail", "developer", "manufacturer_catalog", "community"}:
-        return "core_glasses" if any(term in hay for term in GLASSES_TERMS) else "research_radar"
+def source_lane(channel: str) -> str:
+    if channel == "adjacent":
+        return "adjacent_hci"
+    if channel == "research":
+        return "research"
     return "research_radar"
 
 
-def make_candidate(*, title: str, url: str, summary: str, channel: str, query: str = "", source: str = "") -> dict:
-    scope = classify_scope(channel, title, summary)
-    return {
+def materiality(title: str, summary: str, channel: str) -> tuple[int, list[str]]:
+    hits = term_hits(f"{title} {summary}", MATERIAL_TERMS)
+    base = {
+        "broad_web": 2,
+        "retail": 2,
+        "developer": 3,
+        "research": 2,
+        "community": 1,
+        "adjacent": 1,
+        "manufacturer_catalog": 3,
+    }.get(channel, 1)
+    return base + len(hits), hits
+
+
+def make_candidate(
+    *,
+    title: str,
+    url: str,
+    summary: str,
+    channel: str,
+    query: str = "",
+    source: str = "",
+    trusted_direct_source: bool = False,
+) -> dict:
+    score, hits = materiality(title, summary, channel)
+    candidate = {
         "id": candidate_id(url, title),
         "title": title,
         "url": url,
@@ -79,12 +116,19 @@ def make_candidate(*, title: str, url: str, summary: str, channel: str, query: s
         "discovery_channel": channel,
         "query": query,
         "source": source or channel,
-        "scope_lane": scope,
+        "source_lane": source_lane(channel),
+        "materiality_score": score,
+        "keyword_hits": hits,
         "status": "candidate",
-        "publication_eligible": False,
-        "publication_gate_reason": "discovery is a lead only; verification and editorial review are required",
         "disposition": "collected",
     }
+    return enrich_candidate(
+        candidate,
+        source_lane=source_lane(channel),
+        extra_direct_terms=EXTRA_DIRECT_TERMS,
+        trusted_direct_source=trusted_direct_source,
+        channel_hint=channel,
+    )
 
 
 def parse_rss(blob: bytes, channel: str, query: str) -> list[dict]:
@@ -99,7 +143,16 @@ def parse_rss(blob: bytes, channel: str, query: str) -> list[dict]:
         summary = clean(item.findtext("description") or "")
         if not title or not url:
             continue
-        out.append(make_candidate(title=title, url=url, summary=summary, channel=channel, query=query, source="Bing web RSS"))
+        out.append(
+            make_candidate(
+                title=title,
+                url=url,
+                summary=summary,
+                channel=channel,
+                query=query,
+                source="Bing web RSS",
+            )
+        )
     return out
 
 
@@ -118,22 +171,31 @@ def same_domain_product_links(base_url: str, blob: bytes) -> list[dict]:
         if normalized in seen:
             continue
         anchor = clean(anchor_html)
-        hay = f"{anchor} {parsed.path}".lower()
-        product_signal = any(term in hay for term in (
-            "glass", "eyewear", "spectacle", "maverick", "inmo", "cook", "berlin",
-            "product", "collection", "developer", "sdk", "support",
-        ))
+        hay = f"{anchor} {parsed.path}"
+        product_signal = bool(
+            term_hits(
+                hay,
+                (
+                    "glass", "glasses", "eyewear", "spectacle", "maverick", "inmo",
+                    "cook", "berlin", "milan", "product", "collection", "developer",
+                    "sdk", "support",
+                ),
+            )
+        )
         if not product_signal:
             continue
         seen.add(normalized)
         title = anchor or parsed.path.rsplit("/", 1)[-1].replace("-", " ") or base.netloc
-        out.append(make_candidate(
-            title=f"Manufacturer catalog lead: {title}",
-            url=url,
-            summary=f"Same-domain catalog/developer link discovered from {base_url}",
-            channel="manufacturer_catalog",
-            source=base_url,
-        ))
+        out.append(
+            make_candidate(
+                title=f"Manufacturer catalog lead: {title}",
+                url=url,
+                summary=f"Same-domain catalog/developer link discovered from {base_url}",
+                channel="manufacturer_catalog",
+                source=base_url,
+                trusted_direct_source=True,
+            )
+        )
         if len(out) >= 100:
             break
     return out
@@ -164,6 +226,7 @@ def main() -> int:
         "developer": cfg.get("developer_discovery_queries", []),
         "research": cfg.get("research_discovery_queries", []),
         "community": cfg.get("community_discovery_queries", []),
+        "adjacent": cfg.get("adjacent_discovery_queries", []),
     }
     for channel, queries in lanes.items():
         for query in queries:
@@ -171,22 +234,29 @@ def main() -> int:
             try:
                 candidates.extend(parse_rss(fetch(url), channel, query))
             except Exception as exc:
-                errors.append({"channel": channel, "query": query, "url": url, "error": str(exc)[:300]})
+                errors.append(
+                    {"channel": channel, "query": query, "url": url, "error": str(exc)[:300]}
+                )
 
     for url in cfg.get("manufacturer_catalog_pages", []):
         try:
             blob = fetch(url)
             body = clean(blob.decode("utf-8", "ignore"))[:1200]
-            candidates.append(make_candidate(
-                title=f"Manufacturer catalog watch: {urllib.parse.urlsplit(url).netloc}",
-                url=url,
-                summary=body,
-                channel="manufacturer_catalog",
-                source="configured manufacturer catalog",
-            ))
+            candidates.append(
+                make_candidate(
+                    title=f"Manufacturer catalog watch: {urllib.parse.urlsplit(url).netloc}",
+                    url=url,
+                    summary=body,
+                    channel="manufacturer_catalog",
+                    source="configured manufacturer catalog",
+                    trusted_direct_source=True,
+                )
+            )
             candidates.extend(same_domain_product_links(url, blob))
         except Exception as exc:
-            errors.append({"channel": "manufacturer_catalog", "url": url, "error": str(exc)[:300]})
+            errors.append(
+                {"channel": "manufacturer_catalog", "url": url, "error": str(exc)[:300]}
+            )
 
     dedup: dict[str, dict] = {}
     for item in candidates:
@@ -195,58 +265,119 @@ def main() -> int:
             dedup[key] = item
         else:
             prior = dedup[key]
-            channels = sorted(set(str(prior.get("discovery_channel", "")).split("+")) | {item["discovery_channel"]})
+            channels = sorted(
+                set(str(prior.get("discovery_channel", "")).split("+"))
+                | {item["discovery_channel"]}
+            )
             prior["discovery_channel"] = "+".join(channels)
             if item.get("query") and item["query"] not in str(prior.get("query", "")):
-                prior["query"] = "; ".join(x for x in [str(prior.get("query", "")), item["query"]] if x)
+                prior["query"] = "; ".join(
+                    value for value in [str(prior.get("query", "")), item["query"]] if value
+                )
+            if item["triage_priority"] == "high" and prior["triage_priority"] != "high":
+                dedup[key] = item
 
     seen = prior_ids()
-    ranked = [item for item in dedup.values() if item["id"] not in seen]
-    ranked.sort(key=lambda item: (item["discovery_channel"], item["title"].lower()))
+    new_items = [item for item in dedup.values() if item["id"] not in seen]
+    precision_rejected = sum(item["relationship"] == "irrelevant" for item in new_items)
+    ranked = [item for item in new_items if item["relationship"] != "irrelevant"]
+    ranked.sort(
+        key=lambda item: (
+            {"high": 0, "normal": 1, "low": 2}[item["triage_priority"]],
+            -item["materiality_score"],
+            item["title"].lower(),
+        )
+    )
     ranked = ranked[:400]
 
     if not ranked:
-        print(f"No new web-discovery candidates; {len(errors)} source errors")
+        print(
+            f"No new web-discovery candidates after classification; "
+            f"{precision_rejected} noise results rejected; {len(errors)} source errors"
+        )
         return 0
 
     now = dt.datetime.now(dt.timezone.utc)
     day = now.date().isoformat()
     OUTDIR.mkdir(parents=True, exist_ok=True)
-    counts: dict[str, int] = {}
+
+    channel_counts: dict[str, int] = {}
+    relationship_counts = {
+        relationship: sum(1 for item in ranked if item["relationship"] == relationship)
+        for relationship in RELATIONSHIPS
+    }
+    type_counts = {
+        kind: sum(1 for item in ranked if kind in item["content_types"])
+        for kind in CONTENT_TYPES
+    }
+    route_counts: dict[str, int] = {}
     for item in ranked:
         for channel in item["discovery_channel"].split("+"):
-            counts[channel] = counts.get(channel, 0) + 1
+            channel_counts[channel] = channel_counts.get(channel, 0) + 1
+        for route in item["routing_targets"]:
+            route_counts[route] = route_counts.get(route, 0) + 1
+
     payload = {
-        "schema": 1,
+        "schema": 2,
         "discovered_utc": now.isoformat(),
         "candidate_count": len(ranked),
-        "channel_counts": counts,
+        "precision_rejected_count": precision_rejected,
+        "channel_counts": dict(sorted(channel_counts.items())),
+        "relationship_counts": relationship_counts,
+        "type_counts": {key: value for key, value in type_counts.items() if value},
+        "routing_counts": dict(sorted(route_counts.items())),
         "policy": cfg.get("policy", {}),
         "collector_errors": errors,
         "candidates": ranked,
     }
-    (OUTDIR / f"{day}.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (OUTDIR / f"{day}.json").write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
 
     lines = [
-        f"# Web discovery intake — {day}", "",
-        f"Collected **{len(ranked)}** new high-recall discovery leads.", "",
-        "**Rule:** discovery is not verification and never publishes automatically.", "",
+        f"# Web discovery intake — {day}",
+        "",
+        f"Collected **{len(ranked)}** classified leads; rejected **{precision_rejected}** unrelated search results before review.",
+        "",
+        "**Flow:** discover → classify → triage → verify → route → publish → deliver.",
+        "",
+        "**Rule:** discovery is not verification and never publishes automatically.",
+        "",
+        "## Search surfaces",
+        "",
     ]
-    for channel, count in sorted(counts.items()):
+    for channel, count in sorted(channel_counts.items()):
         lines.append(f"- {channel}: {count}")
+    lines += ["", "## Relationship", ""]
+    for relationship in RELATIONSHIPS:
+        if relationship_counts[relationship]:
+            lines.append(f"- {relationship}: {relationship_counts[relationship]}")
     lines.append("")
     for item in ranked[:120]:
         lines += [
-            f"## {item['title']}", "",
+            f"## {item['title']}",
+            "",
             f"- URL: {item['url']}",
-            f"- Channel: {item['discovery_channel']}",
+            f"- Search surface: {item['discovery_channel']}",
             f"- Query/source: {item.get('query') or item.get('source')}",
-            f"- Scope: {item['scope_lane']}", "",
+            f"- Relationship: {item['relationship']}",
+            f"- Type: {', '.join(item['content_types'])}",
+            f"- Routes: {', '.join(item['routing_targets'])}",
+            f"- Triage: {item['triage_priority']}",
+            "",
         ]
     if errors:
-        lines += ["## Collector warnings", ""] + [f"- {e.get('channel')}: {e.get('url')}: {e['error']}" for e in errors]
+        lines += ["## Collector warnings", ""] + [
+            f"- {error.get('channel')}: {error.get('url')}: {error['error']}"
+            for error in errors
+        ]
     (OUTDIR / f"{day}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"Collected {len(ranked)} web-discovery candidates across {counts}; {len(errors)} source errors")
+    print(
+        f"Collected {len(ranked)} web-discovery candidates; "
+        f"rejected_noise={precision_rejected}; relationships={relationship_counts}; "
+        f"routes={route_counts}; {len(errors)} source errors"
+    )
     return 0
 
 

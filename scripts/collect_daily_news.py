@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Collect durable wearable-HCI research candidates into a review queue.
+"""Collect durable wearable-HCI research candidates into the knowledge-flow queue.
 
-The collector observes broadly and publishes nothing automatically. Glasses-related
-items may be considered for promotion after review; adjacent HCI items are retained
-as research radar until a concrete glasses connection exists.
+Discovery is intentionally high-recall. Every candidate is classified after
+collection by relationship, content type, triage priority, and routing target.
+Nothing collected here is published automatically.
 """
 from __future__ import annotations
 
@@ -18,10 +18,12 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+from knowledge_flow import CONTENT_TYPES, RELATIONSHIPS, enrich_candidate, term_hits
+
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "research" / "news-collector-sources.json"
 OUTDIR = ROOT / "research" / "news-candidates"
-UA = "GlassesResearch-KnowledgeIntake/2.0 (+https://glassesresearch.org/)"
+UA = "GlassesResearch-KnowledgeIntake/3.0 (+https://glassesresearch.org/)"
 
 
 def fetch(url: str, timeout: int = 20) -> bytes:
@@ -32,8 +34,8 @@ def fetch(url: str, timeout: int = 20) -> bytes:
             "Accept": "application/rss+xml, application/atom+xml, text/html;q=0.9, */*;q=0.5",
         },
     )
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        return response.read()
 
 
 def clean(text: str) -> str:
@@ -44,61 +46,53 @@ def clean(text: str) -> str:
 
 
 def score(title: str, summary: str, keywords: list[str]) -> tuple[int, list[str]]:
-    hay = f"{title} {summary}".lower()
-    hits = sorted({k for k in keywords if k.lower() in hay})
-    s = len(hits)
-    if any(k in hay for k in ("launch", "released", "announced", "preorder", "shipping", "discontinued", "recall")):
-        s += 3
-    if any(k in hay for k in ("sdk", "api", "firmware", "security", "vulnerability", "open source")):
-        s += 2
-    if any(k in hay for k in ("brain-computer", "brain computer", "neural", "emg", "eye tracking", "retinal", "haptic")):
-        s += 1
-    return s, hits
+    hay = f"{title} {summary}"
+    hits = term_hits(hay, keywords)
+    value = len(hits)
+    if term_hits(hay, ("launch", "released", "announced", "preorder", "shipping", "discontinued", "recall")):
+        value += 3
+    if term_hits(hay, ("sdk", "api", "firmware", "security", "vulnerability", "open source")):
+        value += 2
+    if term_hits(hay, ("brain-computer", "brain computer", "neural", "emg", "eye tracking", "retinal", "haptic")):
+        value += 1
+    return value, hits
 
 
 def item_id(url: str, title: str) -> str:
     return hashlib.sha256(f"{url}\n{title}".encode()).hexdigest()[:16]
 
 
-def classify_scope(title: str, summary: str, source_lane: str, glasses_terms: list[str]) -> tuple[str, bool, str]:
-    hay = f"{title} {summary}".lower()
-    direct_glasses = any(term.lower() in hay for term in glasses_terms)
-    if direct_glasses or source_lane == "core_glasses":
-        return "core_glasses", True, "direct smart-glasses or eyewear relevance"
-    if source_lane == "adjacent_hci":
-        return "adjacent_hci", False, "wearable-HCI relevance without a concrete glasses connection yet"
-    return "research_radar", False, "potential ecosystem relevance retained for later review"
-
-
 def institution_test(title: str, summary: str) -> str:
-    hay = f"{title} {summary}".lower()
+    hay = f"{title} {summary}"
     durable = (
         "launch", "released", "announced", "sdk", "api", "firmware", "security", "vulnerability",
         "patent", "certification", "research", "study", "acquisition", "partnership", "discontinued",
         "recall", "open source", "brain-computer", "neural", "emg", "eye tracking", "waveguide",
         "microled", "micro-oled", "retinal", "haptic", "accessibility",
     )
-    return "likely durable" if any(term in hay for term in durable) else "review durability"
+    return "likely durable" if term_hits(hay, durable) else "review durability"
 
 
-def enrich(candidate: dict, source_lane: str, glasses_terms: list[str]) -> dict:
-    scope, publication_eligible, reason = classify_scope(
-        candidate["title"], candidate.get("summary", ""), source_lane, glasses_terms
+def enrich(candidate: dict, source_lane: str, glasses_terms: list[str], *, trusted_direct_source: bool = False) -> dict:
+    enrich_candidate(
+        candidate,
+        source_lane=source_lane,
+        extra_direct_terms=glasses_terms,
+        trusted_direct_source=trusted_direct_source,
     )
-    candidate.update(
-        {
-            "scope_lane": scope,
-            "publication_eligible": publication_eligible,
-            "publication_gate_reason": reason,
-            "disposition": "collected",
-            "site_action": "none_pending_editorial_review",
-            "institution_test": institution_test(candidate["title"], candidate.get("summary", "")),
-        }
-    )
+    candidate["institution_test"] = institution_test(candidate["title"], candidate.get("summary", ""))
     return candidate
 
 
-def parse_feed(blob: bytes, source: str, source_lane: str, keywords: list[str], glasses_terms: list[str]) -> list[dict]:
+def parse_feed(
+    blob: bytes,
+    source: str,
+    source_lane: str,
+    keywords: list[str],
+    glasses_terms: list[str],
+    *,
+    trusted_direct_source: bool = False,
+) -> list[dict]:
     out = []
     try:
         root = ET.fromstring(blob)
@@ -109,24 +103,24 @@ def parse_feed(blob: bytes, source: str, source_lane: str, keywords: list[str], 
     if not entries:
         entries = root.findall("{http://www.w3.org/2005/Atom}entry")
         atom = True
-    for e in entries[:50]:
+    for entry in entries[:50]:
         if atom:
             ns = "{http://www.w3.org/2005/Atom}"
-            title = clean((e.findtext(ns + "title") or ""))
-            summary = clean((e.findtext(ns + "summary") or e.findtext(ns + "content") or ""))
+            title = clean(entry.findtext(ns + "title") or "")
+            summary = clean(entry.findtext(ns + "summary") or entry.findtext(ns + "content") or "")
             link = ""
-            le = e.find(ns + "link")
-            if le is not None:
-                link = le.attrib.get("href", "")
-            published = e.findtext(ns + "published") or e.findtext(ns + "updated") or ""
+            link_element = entry.find(ns + "link")
+            if link_element is not None:
+                link = link_element.attrib.get("href", "")
+            published = entry.findtext(ns + "published") or entry.findtext(ns + "updated") or ""
         else:
-            title = clean(e.findtext("title") or "")
-            summary = clean(e.findtext("description") or "")
-            link = (e.findtext("link") or "").strip()
-            published = (e.findtext("pubDate") or "").strip()
+            title = clean(entry.findtext("title") or "")
+            summary = clean(entry.findtext("description") or "")
+            link = (entry.findtext("link") or "").strip()
+            published = (entry.findtext("pubDate") or "").strip()
         if not title or not link:
             continue
-        s, hits = score(title, summary, keywords)
+        materiality, hits = score(title, summary, keywords)
         candidate = {
             "id": item_id(link, title),
             "title": title,
@@ -135,17 +129,24 @@ def parse_feed(blob: bytes, source: str, source_lane: str, keywords: list[str], 
             "source_lane": source_lane,
             "published": published,
             "summary": summary[:1000],
-            "materiality_score": s,
+            "materiality_score": materiality,
             "keyword_hits": hits,
             "status": "candidate",
         }
-        out.append(enrich(candidate, source_lane, glasses_terms))
+        out.append(
+            enrich(
+                candidate,
+                source_lane,
+                glasses_terms,
+                trusted_direct_source=trusted_direct_source,
+            )
+        )
     return out
 
 
 def google_news_url(query: str) -> str:
-    q = urllib.parse.quote(query)
-    return f"https://news.google.com/rss/search?q={q}+when:2d&hl=en-US&gl=US&ceid=US:en"
+    encoded = urllib.parse.quote(query)
+    return f"https://news.google.com/rss/search?q={encoded}+when:2d&hl=en-US&gl=US&ceid=US:en"
 
 
 def manufacturer_candidate(url: str, blob: bytes, keywords: list[str], glasses_terms: list[str]) -> dict | None:
@@ -153,8 +154,8 @@ def manufacturer_candidate(url: str, blob: bytes, keywords: list[str], glasses_t
     title_match = re.search(r"<title[^>]*>(.*?)</title>", text, re.I | re.S)
     title = clean(title_match.group(1)) if title_match else urllib.parse.urlparse(url).netloc
     body = clean(text)[:15000]
-    s, hits = score(title, body, keywords)
-    if s == 0:
+    materiality, hits = score(title, body, keywords)
+    if materiality == 0:
         return None
     candidate = {
         "id": item_id(url, title),
@@ -164,7 +165,7 @@ def manufacturer_candidate(url: str, blob: bytes, keywords: list[str], glasses_t
         "source_lane": "research_radar",
         "published": "",
         "summary": body[:1000],
-        "materiality_score": max(1, s // 2),
+        "materiality_score": max(1, materiality // 2),
         "keyword_hits": hits[:20],
         "status": "candidate",
     }
@@ -178,7 +179,7 @@ def prior_ids() -> set[str]:
     for path in OUTDIR.glob("*.json"):
         try:
             payload = json.loads(path.read_text(encoding="utf-8"))
-            seen.update(c.get("id", "") for c in payload.get("candidates", []))
+            seen.update(candidate.get("id", "") for candidate in payload.get("candidates", []))
         except Exception:
             continue
     seen.discard("")
@@ -192,89 +193,147 @@ def main() -> int:
     candidates: list[dict] = []
     errors: list[dict] = []
 
-    feeds: list[tuple[str, str, str]] = []
-    feeds += [(google_news_url(q), f"Google News: {q}", "core_glasses") for q in cfg["core_queries"]]
-    feeds += [(google_news_url(q), f"Google News: {q}", "adjacent_hci") for q in cfg["adjacent_hci_queries"]]
-    feeds += [(u, "direct-feed", "research_radar") for u in cfg["direct_feeds"]]
+    feeds: list[tuple[str, str, str, bool]] = []
+    feeds += [
+        (google_news_url(query), f"Google News: {query}", "core_glasses", False)
+        for query in cfg["core_queries"]
+    ]
+    feeds += [
+        (google_news_url(query), f"Google News: {query}", "adjacent_hci", False)
+        for query in cfg["adjacent_hci_queries"]
+    ]
+    feeds += [(url, "direct-feed", "research_radar", True) for url in cfg["direct_feeds"]]
 
-    for url, source, source_lane in feeds:
+    for url, source, source_lane, trusted_direct_source in feeds:
         try:
-            candidates.extend(parse_feed(fetch(url), source, source_lane, keywords, glasses_terms))
+            candidates.extend(
+                parse_feed(
+                    fetch(url),
+                    source,
+                    source_lane,
+                    keywords,
+                    glasses_terms,
+                    trusted_direct_source=trusted_direct_source,
+                )
+            )
         except Exception as exc:
             errors.append({"url": url, "error": str(exc)[:300]})
 
     for url in cfg["manufacturer_pages"]:
         try:
-            c = manufacturer_candidate(url, fetch(url), keywords, glasses_terms)
-            if c:
-                candidates.append(c)
+            candidate = manufacturer_candidate(url, fetch(url), keywords, glasses_terms)
+            if candidate:
+                candidates.append(candidate)
         except Exception as exc:
             errors.append({"url": url, "error": str(exc)[:300]})
 
     dedup: dict[str, dict] = {}
-    for c in candidates:
-        key = re.sub(r"[?#].*$", "", c["url"]).rstrip("/").lower() or c["id"]
-        if key not in dedup or c["materiality_score"] > dedup[key]["materiality_score"]:
-            dedup[key] = c
+    for candidate in candidates:
+        key = re.sub(r"[?#].*$", "", candidate["url"]).rstrip("/").lower() or candidate["id"]
+        if key not in dedup or candidate["materiality_score"] > dedup[key]["materiality_score"]:
+            dedup[key] = candidate
 
     seen = prior_ids()
-    ranked = sorted(dedup.values(), key=lambda x: (-x["materiality_score"], x["title"].lower()))
-    ranked = [x for x in ranked if x["materiality_score"] >= 2 and x["id"] not in seen][:200]
+    new_items = [item for item in dedup.values() if item["id"] not in seen]
+    precision_rejected = sum(item["relationship"] == "irrelevant" for item in new_items)
+    ranked = [item for item in new_items if item["relationship"] != "irrelevant"]
+    ranked.sort(
+        key=lambda item: (
+            {"high": 0, "normal": 1, "low": 2}[item["triage_priority"]],
+            -item["materiality_score"],
+            item["title"].lower(),
+        )
+    )
+    ranked = [item for item in ranked if item["materiality_score"] >= 2][:200]
 
     if not ranked:
-        print(f"No new intake candidates; {len(errors)} source errors")
+        print(
+            f"No new intake candidates after classification; "
+            f"{precision_rejected} noise results rejected; {len(errors)} source errors"
+        )
         return 0
 
-    today = dt.datetime.now(dt.timezone.utc).date().isoformat()
+    now = dt.datetime.now(dt.timezone.utc)
+    today = now.date().isoformat()
     OUTDIR.mkdir(parents=True, exist_ok=True)
-    counts = {
-        lane: sum(1 for c in ranked if c["scope_lane"] == lane)
-        for lane in ("core_glasses", "adjacent_hci", "research_radar")
+
+    relationship_counts = {
+        relationship: sum(1 for candidate in ranked if candidate["relationship"] == relationship)
+        for relationship in RELATIONSHIPS
     }
+    type_counts = {
+        kind: sum(1 for candidate in ranked if kind in candidate["content_types"])
+        for kind in CONTENT_TYPES
+    }
+    route_counts: dict[str, int] = {}
+    for candidate in ranked:
+        for route in candidate["routing_targets"]:
+            route_counts[route] = route_counts.get(route, 0) + 1
+
     payload = {
-        "schema": 2,
-        "discovered_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "schema": 3,
+        "discovered_utc": now.isoformat(),
         "candidate_count": len(ranked),
-        "scope_counts": counts,
-        "publication_policy": "collect broadly; only glasses-relevant items are eligible for site promotion after editorial review",
+        "precision_rejected_count": precision_rejected,
+        "relationship_counts": relationship_counts,
+        "type_counts": {key: value for key, value in type_counts.items() if value},
+        "routing_counts": dict(sorted(route_counts.items())),
+        "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
         "collector_errors": errors,
         "candidates": ranked,
     }
-    (OUTDIR / f"{today}.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (OUTDIR / f"{today}.json").write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
 
     lines = [
-        f"# Institutional knowledge intake — {today}",
+        f"# Knowledge intake — {today}",
         "",
-        f"Collected **{len(ranked)}** new review candidates.",
+        f"Collected **{len(ranked)}** new review candidates after precision filtering; rejected **{precision_rejected}** unrelated search results.",
         "",
-        f"- Core glasses: {counts['core_glasses']}",
-        f"- Adjacent HCI radar: {counts['adjacent_hci']}",
-        f"- General research radar: {counts['research_radar']}",
-        "",
-        "**Publishing rule:** collection is not publication. Only items with a concrete smart-glasses/eyewear connection are eligible for promotion to the public site, and even those require editorial review.",
-        "",
-        "Default disposition for every new item is **collected**. Later editorial dispositions are: watch, archived, published, superseded, or rejected.",
+        "## Relationship to smart glasses",
         "",
     ]
-    for c in ranked[:80]:
-        hits = ", ".join(c["keyword_hits"][:8]) or "general ecosystem match"
+    for relationship in RELATIONSHIPS:
+        if relationship_counts[relationship]:
+            lines.append(f"- {relationship}: {relationship_counts[relationship]}")
+    lines += ["", "## Content types", ""]
+    for kind, count in type_counts.items():
+        if count:
+            lines.append(f"- {kind}: {count}")
+    lines += [
+        "",
+        "**Flow:** discover → classify → triage → verify → route → publish → deliver.",
+        "",
+        "**Publishing rule:** collection is not publication. Direct/enabling items can enter editorial verification; speculative items route to Watching; adjacent items remain radar until a concrete glasses relationship exists.",
+        "",
+    ]
+    for candidate in ranked[:80]:
+        hits = ", ".join(candidate["keyword_hits"][:8]) or "context match"
         lines += [
-            f"## {c['title']}",
+            f"## {candidate['title']}",
             "",
-            f"- Source: {c['url']}",
-            f"- Scope: {c['scope_lane']}",
-            f"- Publication eligible now: {'yes' if c['publication_eligible'] else 'no'}",
-            f"- Disposition: {c['disposition']}",
-            f"- Institution test: {c['institution_test']}",
-            f"- Materiality score: {c['materiality_score']}",
+            f"- Source: {candidate['url']}",
+            f"- Relationship: {candidate['relationship']}",
+            f"- Type: {', '.join(candidate['content_types'])}",
+            f"- Routes: {', '.join(candidate['routing_targets'])}",
+            f"- Triage: {candidate['triage_priority']}",
+            f"- Publication eligible after verification: {'yes' if candidate['publication_eligible'] else 'no'}",
+            f"- Disposition: {candidate['disposition']}",
+            f"- Institution test: {candidate['institution_test']}",
+            f"- Materiality score: {candidate['materiality_score']}",
             f"- Signals: {hits}",
-            f"- Published by source: {c['published'] or 'not supplied by source'}",
+            f"- Published by source: {candidate['published'] or 'not supplied by source'}",
             "",
         ]
     if errors:
-        lines += ["## Collector warnings", ""] + [f"- {e['url']}: {e['error']}" for e in errors]
+        lines += ["## Collector warnings", ""] + [f"- {error['url']}: {error['error']}" for error in errors]
     (OUTDIR / f"{today}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"Collected {len(ranked)} new candidates; {counts}; {len(errors)} source errors")
+    print(
+        f"Collected {len(ranked)} new candidates; rejected_noise={precision_rejected}; "
+        f"relationships={relationship_counts}; routes={route_counts}; {len(errors)} source errors"
+    )
     return 0
 
 
