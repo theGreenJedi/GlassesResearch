@@ -16,7 +16,7 @@ These profiles cover the five product/platform identities admitted by `THE_LIST_
 
 ## GLS-0157 — W100 / Ear Dance OEM ecosystem
 
-**W100** is the underlying audio/AI-translation platform identity exposed by several retail brands. Current OEM material identifies W100 as an obtainable smart-glasses platform, while manuals and seller documentation repeatedly direct owners to a Bluetooth device named W100 and the **Ear Dance** companion app. Retail names such as Vital, EarlySincere, Astrum, Tiglon and LEEDOAR-associated W100 products remain searchable market identities rather than separate canonical models. Variant-specific lenses, firmware, frames, batteries and packaging must still be preserved when documented. [Canonical record](THE_LIST.md) · [lineage](../lineages/W100_EARDANCE/README.md) · [reconciliation](THE_LIST_RECONCILIATION_2026-08-17_302.md)
+**W100** is the underlying audio/AI-translation platform identity exposed by several retail brands. Current OEM material identifies W100 as an obtainable smart-glasses platform, while manuals and seller documentation repeatedly direct owners to a Bluetooth device named W100 and the **Ear Dance** companion app. Retail names such as Vital, EarlySincere, Astrum, Tiglon and LEEDOAR-associated W100 products remain searchable market identities rather than separate canonical models. Variant-specific lenses, firmware, frames, batteries and packaging must still be preserved when documented. [Canonical record](THE_LIST.md) · [lineage](../lineages/W100_EARDANCE.md) · [reconciliation](THE_LIST_RECONCILIATION_2026-08-17_302.md)
 
 ## GLS-0158 — W630 / HeyCyan OEM ecosystem
 
