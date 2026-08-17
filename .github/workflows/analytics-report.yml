@@ -48,7 +48,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- analytics/; then
+          if [ -z "$(git status --porcelain -- analytics/)" ]; then
             echo 'Analytics snapshot unchanged; nothing to commit.'
             exit 0
           fi
