@@ -2,6 +2,11 @@ name: GlassesResearch Analytics Report
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/analytics_report.py'
+      - '.github/workflows/analytics-report.yml'
   schedule:
     # 07:15 UTC = 03:15 EDT. Runs after the nightly collectors and before
     # daytime reviews. Search Console itself may trail by 2–3 days.
