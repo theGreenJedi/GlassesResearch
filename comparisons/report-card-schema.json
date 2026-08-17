@@ -1,22 +1,34 @@
 {
-  "schema_version": 1,
-  "name": "GlassesResearch Report Card",
+  "schema_version": 2,
+  "name": "GlassesResearch Core Report Card",
   "score_min": 0,
   "score_max": 10,
   "na_allowed": true,
+  "unknown_allowed": true,
   "na_excluded_from_aggregate": true,
-  "dimensions": [
-    {"id":"hardware","label":"Hardware","description":"Camera/vision, audio, microphones, battery, weight, thermals, build quality, and core physical capability. Display performance is graded separately."},
-    {"id":"wearability","label":"Wearability","description":"Looks like glasses, comfort, size, discretion, fit, and everyday practicality."},
-    {"id":"visual_ai","label":"Visual AI","description":"Can the glasses understand what the wearer is looking at and turn visual context into useful machine understanding?"},
-    {"id":"software","label":"Software","description":"App quality, stability, features, updates, integrations, and day-to-day software experience."},
-    {"id":"display_hud","label":"Display / HUD","description":"Readability, resolution, brightness, field of view, color, monocular/binocular implementation, information density, outdoor usability, and integration into the wearer's view."},
-    {"id":"openness","label":"Openness","description":"SDK/API access, sensor access, documentation, open-source components, and supported developer access."},
-    {"id":"owner_control","label":"Owner Control","description":"Sideloading, replaceable AI, local processing, custom endpoints, and the owner's ability to choose the intelligence layer."},
-    {"id":"cloud_independence","label":"Cloud Independence","description":"What continues working without the manufacturer's servers, account services, or cloud AI."},
-    {"id":"hackability","label":"Hackability","description":"BLE access, firmware access, reverse-engineering potential, sideloading paths, exposed interfaces, and community tooling."},
-    {"id":"value","label":"Value","description":"Useful capability relative to purchase price."}
+  "unknown_excluded_from_filters": true,
+  "core_dimensions": [
+    {"id":"discreetness","label":"Discreetness","description":"How closely the product functions and presents as ordinary eyewear in routine public use, including visual bulk, obvious electronics, capture indicators, and everyday social practicality."},
+    {"id":"camera","label":"Camera","description":"The usefulness of the outward-facing camera system for wearer-perspective capture, including still/video capability, access, limitations, and practical image capture rather than camera presence alone."},
+    {"id":"visual_ai","label":"Visual AI","description":"Can the glasses understand what the wearer is looking at and turn visual context into useful machine understanding, including object/text/environment recognition where supported?"},
+    {"id":"hackability","label":"Hackability","description":"The practical experimentation surface: BLE or wired access, SDK/API access, firmware paths, reverse-engineering potential, sideloading, exposed interfaces, and community tooling."},
+    {"id":"owner_control","label":"Owner Control","description":"How much meaningful control remains with the owner, including direct device access, replaceable AI, local processing, custom endpoints, sideloading, and freedom from a single prescribed vendor path."},
+    {"id":"android_compatibility","label":"Android Compatibility","description":"The depth and quality of Android support, from basic companion-app compatibility through direct SDK/device access, standard interfaces, and owner-controlled integration."}
   ],
+  "extended_dimensions": [
+    {"id":"hardware","label":"Hardware"},
+    {"id":"wearability","label":"Wearability"},
+    {"id":"software","label":"Software"},
+    {"id":"display_hud","label":"Display / HUD"},
+    {"id":"openness","label":"Openness"},
+    {"id":"cloud_independence","label":"Cloud Independence"},
+    {"id":"value","label":"Value"}
+  ],
+  "migration": {
+    "direct_core_carry_forward": ["visual_ai", "hackability", "owner_control"],
+    "preserved_as_extended": ["hardware", "wearability", "software", "display_hud", "openness", "cloud_independence", "value"],
+    "rule": "Do not relabel a broader legacy score as a Core score unless the meaning is equivalent. Unknown remains unknown until evidence supports a judgment."
+  },
   "grade_bands": [
     {"min":9.5,"max":10.0,"grade":"A+"},
     {"min":9.0,"max":9.49,"grade":"A"},
