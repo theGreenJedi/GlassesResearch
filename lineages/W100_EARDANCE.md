@@ -22,6 +22,7 @@ The exact seller package, lenses, firmware revision, waterproof claim, Bluetooth
 | Market identity | Relationship | Evidence |
 |---|---|---|
 | EarlySincere smart glasses | W100 / Ear Dance retail identity | Manuals instruct pairing to a device named `W100` and installing Ear Dance. |
+| Vital Smart Glasses / FREEZE2TRIM Vital | W100 / Ear Dance retail identity | Setup documentation explicitly instructs owners to pair Bluetooth device `W100`; Vital's own site identifies Ear Dance as the companion app. |
 | Astrum W100 | Direct W100 retail identity | Astrum names the product W100 and documents Ear Dance plus the dual-85 mAh architecture. |
 | Tiglon TG-W100 | W100 retail identity | Tiglon names TG-W100 and documents AB5712F + Ear Dance. |
 | LEEDOAR-associated W100 | W100 retail identity | Published W100 documentation shows AB5712F, dual 85 mAh cells and Ear Dance. |
@@ -29,7 +30,7 @@ The exact seller package, lenses, firmware revision, waterproof claim, Bluetooth
 
 ## Owner guidance
 
-If the name on the box is **EarlySincere**, **Astrum W100**, **TG-W100**, **LEEDOAR W100**, or another seller name that resolves here, start troubleshooting and compatibility research with the **W100 / Ear Dance** platform identity. Preserve the seller name when reporting variant-specific behavior, because firmware, frame construction, lenses, packaging and accessories may differ.
+If the name on the box is **EarlySincere**, **Vital Smart Glasses**, **Astrum W100**, **TG-W100**, **LEEDOAR W100**, or another seller name that resolves here, start troubleshooting and compatibility research with the **W100 / Ear Dance** platform identity. Preserve the seller name when reporting variant-specific behavior, because firmware, frame construction, lenses, packaging and accessories may differ.
 
 ## Counting rule
 
@@ -39,6 +40,8 @@ Retail brands and aliases in this table do **not** each become new canonical mod
 
 - https://manuals.plus/asin/B0F4P785KQ
 - https://manuals.plus/asin/B0F4P2CZY8
+- https://manuals.plus/asin/B0FLYTMCKP
+- https://www.vital-glasses.com/
 - https://astrumworld.com/product/smart-ai-glasses-w100/
 - https://www.tiglonele.com/es/product-page/ai-smart-glasses-tg-w100
 - https://manuals.plus/ae/1005008605776017
