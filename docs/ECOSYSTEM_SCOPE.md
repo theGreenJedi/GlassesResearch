@@ -1,4 +1,9 @@
-# Ecosystem-Wide Scope
+---
+title: "Smart Glasses Ecosystem Scope & Research Map"
+description: "GlassesResearch scope for the smart-glasses ecosystem: AI glasses, AR displays, enterprise eyewear, developer platforms, rebrands, companion apps, firmware, protocols, and evidence standards."
+---
+
+# Smart Glasses Ecosystem Scope & Research Map
 
 GlassesResearch covers the broader smart-glasses ecosystem, not one device family.
 
