@@ -142,6 +142,7 @@ def main() -> int:
         print(f"Built-site link audit failed with {len(failures)} issue(s):")
         for item in failures:
             print(f"ERROR {item}")
+            print(f"::error::{item}")
         return 1
 
     print(
