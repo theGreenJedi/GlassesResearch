@@ -58,6 +58,10 @@ NOISE_TITLE_TERMS = (
 )
 
 
+def norm_text(value: object) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", str(value or "").lower()).strip()
+
+
 def norm_url(value: str) -> str:
     p = urllib.parse.urlsplit(value.strip())
     host = p.netloc.lower().removeprefix("www.")
@@ -70,42 +74,136 @@ def host_path(value: str) -> str:
     return f"{p.netloc}{p.path}".lower()
 
 
-def canonical_sources(path: Path) -> dict[str, str]:
+def host_of(value: str) -> str:
+    return urllib.parse.urlsplit(norm_url(value)).netloc
+
+
+def canonical_records(path: Path) -> tuple[dict[str, str], list[dict]]:
     text = path.read_text(encoding="utf-8")
-    result: dict[str, str] = {}
+    sources: dict[str, str] = {}
+    records: list[dict] = []
     for line in text.splitlines():
         match = MODEL_ROW.match(line)
         if not match:
             continue
-        model_id = match.group(1)
+        model_id, maker, model = (part.strip() for part in match.groups())
+        record = {"id": model_id, "maker": maker, "model": model}
+        records.append(record)
         for raw in URL.findall(line):
-            result[norm_url(raw)] = model_id
-    return result
+            sources[norm_url(raw)] = model_id
+    return sources, records
 
 
-def candidate_sources(path: Path) -> dict[str, dict]:
+def candidate_records(path: Path) -> tuple[dict[str, list[dict]], list[dict]]:
     payload = json.loads(path.read_text(encoding="utf-8"))
-    result: dict[str, dict] = {}
-    for record in payload.get("candidates", []):
+    records = payload.get("candidates", [])
+    sources: dict[str, list[dict]] = {}
+    for record in records:
         for source in record.get("sources", []):
             url = source.get("url")
             if url:
-                result[norm_url(url)] = record
-    return result
+                sources.setdefault(norm_url(url), []).append(record)
+    return sources, records
 
 
-def classify(item: dict, canonical: dict[str, str], registry: dict[str, dict]) -> tuple[str, str | None, str]:
+def identity_haystack(item: dict) -> str:
+    return norm_text(" ".join([
+        str(item.get("title", "")),
+        str(item.get("summary", "")),
+        urllib.parse.unquote(str(item.get("url", ""))),
+    ]))
+
+
+def phrase_present(phrase: str, hay: str) -> bool:
+    phrase = norm_text(phrase)
+    if not phrase:
+        return False
+    return re.search(rf"(?:^| )({re.escape(phrase)})(?: |$)", hay) is not None
+
+
+def identity_match(maker: str, model: str, aliases: list[str], hay: str, page_host: str, source_hosts: set[str]) -> bool:
+    model_n = norm_text(model)
+    maker_n = norm_text(maker)
+    alias_hits = [norm_text(a) for a in aliases if len(norm_text(a)) >= 3 and phrase_present(a, hay)]
+    if alias_hits:
+        return True
+    if not model_n or not phrase_present(model_n, hay):
+        return False
+    # Short/generic model names such as Air, GO, One, Frame, or G2 need either
+    # maker context or a page on a source domain already tied to that identity.
+    distinctive = len(model_n) >= 5 or any(ch.isdigit() for ch in model_n) and len(model_n) >= 3
+    return distinctive or phrase_present(maker_n, hay) or page_host in source_hosts
+
+
+def registry_identity_matches(item: dict, records: list[dict]) -> list[dict]:
+    hay = identity_haystack(item)
+    page_host = host_of(str(item.get("url", "")))
+    matches = []
+    for record in records:
+        source_hosts = {host_of(s.get("url", "")) for s in record.get("sources", []) if s.get("url")}
+        if identity_match(record.get("maker", ""), record.get("model", ""), record.get("aliases", []), hay, page_host, source_hosts):
+            matches.append(record)
+    # Prefer the longest model phrase so "Maverick AI" does not accidentally
+    # capture "Maverick AI Pro" and vice versa.
+    if len(matches) > 1:
+        lengths = [len(norm_text(r.get("model", ""))) for r in matches]
+        longest = max(lengths)
+        exact_long = [r for r in matches if len(norm_text(r.get("model", ""))) == longest and phrase_present(r.get("model", ""), hay)]
+        if exact_long:
+            matches = exact_long
+    return matches
+
+
+def canonical_identity_matches(item: dict, records: list[dict]) -> list[dict]:
+    hay = identity_haystack(item)
+    matches = []
+    for record in records:
+        if identity_match(record["maker"], record["model"], [], hay, "", set()):
+            matches.append(record)
+    if len(matches) > 1:
+        longest = max(len(norm_text(r["model"])) for r in matches)
+        matches = [r for r in matches if len(norm_text(r["model"])) == longest]
+    return matches
+
+
+def classify(
+    item: dict,
+    canonical_sources: dict[str, str],
+    canonical: list[dict],
+    registry_sources: dict[str, list[dict]],
+    registry: list[dict],
+) -> tuple[str, str | None, str]:
     url = norm_url(item.get("url", ""))
     title = str(item.get("title", ""))
     low = title.lower()
     hp = host_path(url)
-    host = urllib.parse.urlsplit(url).netloc
+    host = host_of(url)
 
-    if url in canonical:
-        return "duplicate-canonical", canonical[url], "URL is already evidence for a canonical GLS record"
+    # First resolve explicit registry identities from the page text. This is
+    # necessary for shared family pages and for current URLs that differ from
+    # the historical source URL stored in the canonical ledger.
+    reg_matches = registry_identity_matches(item, registry)
+    if len(reg_matches) == 1:
+        reg = reg_matches[0]
+        status = reg.get("status")
+        if reg.get("canonical_id"):
+            return "duplicate-canonical", reg["canonical_id"], f"Identity matches resolved candidate {reg.get('candidate_id')}"
+        if status == "duplicate-rebrand":
+            return "alias-rebrand", reg.get("candidate_id"), "Registry already resolved this presentation as a rebrand/duplicate"
+        if status == "in-scope":
+            return "registry-sibling", reg.get("candidate_id"), "Distinct identity retained upstream of canonical admission"
 
-    reg = registry.get(url)
-    if reg:
+    canonical_matches = canonical_identity_matches(item, canonical)
+    if len(canonical_matches) == 1:
+        record = canonical_matches[0]
+        return "duplicate-canonical", record["id"], f"Maker/model identity matches canonical {record['maker']} {record['model']}"
+
+    if url in canonical_sources:
+        return "duplicate-canonical", canonical_sources[url], "URL is already evidence for a canonical GLS record"
+
+    exact_registry = registry_sources.get(url, [])
+    if len(exact_registry) == 1:
+        reg = exact_registry[0]
         status = reg.get("status")
         if reg.get("canonical_id"):
             return "duplicate-canonical", reg["canonical_id"], f"Already resolved by candidate registry {reg.get('candidate_id')}"
@@ -125,7 +223,7 @@ def classify(item: dict, canonical: dict[str, str], registry: dict[str, dict]) -
 
     channel = str(item.get("discovery_channel", ""))
     if "manufacturer_catalog" in channel:
-        return "source-page-no-distinct-model", None, "Relevant manufacturer page, but this URL does not establish a new model identity"
+        return "source-page-no-distinct-model", None, "Relevant manufacturer page, but this URL does not establish a distinct unresolved model identity"
 
     if item.get("scope_lane") != "core_glasses":
         return "research-radar-not-model", None, "Relevant research radar item, not a smart-glasses product identity"
@@ -151,12 +249,12 @@ def main() -> int:
 
     source = Path(args.input) if args.input else latest_intake(ROOT / "research" / "discovery-candidates")
     payload = json.loads(source.read_text(encoding="utf-8"))
-    canonical = canonical_sources(ROOT / "models" / "THE_LIST.md")
-    registry = candidate_sources(ROOT / "data" / "model-candidates.json")
+    canonical_sources, canonical = canonical_records(ROOT / "models" / "THE_LIST.md")
+    registry_sources, registry = candidate_records(ROOT / "data" / "model-candidates.json")
 
     resolved = []
     for item in payload.get("candidates", []):
-        disposition, target, reason = classify(item, canonical, registry)
+        disposition, target, reason = classify(item, canonical_sources, canonical, registry_sources, registry)
         resolved.append({
             "id": item.get("id"),
             "title": item.get("title"),
