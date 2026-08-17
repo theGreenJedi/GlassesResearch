@@ -9,6 +9,7 @@ preservation-ledger rows that do not contain a recognizable PA record ID.
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import sys
 from dataclasses import dataclass
@@ -39,7 +40,6 @@ def clean_target(raw: str) -> str:
     target = raw.strip()
     if target.startswith("<") and target.endswith(">"):
         target = target[1:-1]
-    # Markdown permits an optional quoted title after the URL.
     if " \"" in target:
         target = target.split(" \"", 1)[0]
     return unquote(target)
@@ -71,17 +71,13 @@ def audit_markdown(root: Path) -> tuple[list[Finding], set[str]]:
                 try:
                     candidate.relative_to(root.resolve())
                 except ValueError:
-                    findings.append(
-                        Finding(path, line_number, f"link escapes repository: {target}")
-                    )
+                    findings.append(Finding(path, line_number, f"link escapes repository: {target}"))
                     continue
 
                 if candidate.is_dir():
                     candidate = candidate / "README.md"
                 if not candidate.exists():
-                    findings.append(
-                        Finding(path, line_number, f"missing local target: {target}")
-                    )
+                    findings.append(Finding(path, line_number, f"missing local target: {target}"))
 
     return findings, external
 
@@ -94,20 +90,14 @@ def audit_preservation_ledger(root: Path) -> list[Finding]:
     findings: list[Finding] = []
     for line_number, line in enumerate(ledger.read_text(encoding="utf-8").splitlines(), 1):
         if line.startswith("|") and "PA-" in line and not PA_ID_RE.search(line):
-            findings.append(
-                Finding(ledger, line_number, "malformed preservation record ID")
-            )
+            findings.append(Finding(ledger, line_number, "malformed preservation record ID"))
     return findings
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path.cwd())
-    parser.add_argument(
-        "--external-output",
-        type=Path,
-        help="Write sorted external URLs for archival/link-check workflows.",
-    )
+    parser.add_argument("--external-output", type=Path, help="Write sorted external URLs for archival/link-check workflows.")
     args = parser.parse_args()
     root = args.root.resolve()
 
@@ -130,6 +120,9 @@ def main() -> int:
             except ValueError:
                 shown = finding.path
             print(f"ERROR {shown}:{finding.line}: {finding.message}")
+            if os.getenv("GITHUB_ACTIONS") == "true":
+                safe = finding.message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+                print(f"::error file={shown},line={max(finding.line, 1)}::{safe}")
         return 1
 
     print("Repository audit passed.")
