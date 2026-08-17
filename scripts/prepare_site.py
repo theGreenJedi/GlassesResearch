@@ -45,7 +45,7 @@ def main():
     comparisons=DEST/"data"/"comparisons.json"; run(ROOT/"scripts/build_comparison_engine.py","--schema",ROOT/"comparisons/schema.json","--data-dir",ROOT/"comparisons/data","--output",comparisons)
     caps=DEST/"data"/"finder-capabilities.json"; run(ROOT/"scripts/build_finder_capabilities.py","--models",ROOT/"models/THE_LIST.md","--comparisons",comparisons,"--overrides",ROOT/"data/finder-capability-overrides.json","--output",caps)
     run(ROOT/"scripts/apply_finder_capabilities.py","--comparisons",comparisons,"--capabilities",caps)
-    cards=DEST/"data"/"report-card-scores.json"; run(ROOT/"scripts/build_report_card_scores.py","--input-dir",ROOT/"docs/report-cards","--output",cards)
+    cards=DEST/"data"/"report-card-scores.json"; run(ROOT/"scripts/build_report_card_scores.py","--input-dir",ROOT/"docs/report-cards","--models",ROOT/"models/THE_LIST.md","--capabilities",caps,"--overrides",ROOT/"data/core-report-card-overrides.json","--output",cards)
     run(ROOT/"scripts/build_site_status.py","--devices",database,"--report-cards",cards,"--output",DEST/"data/site-status.json")
     run(ROOT/"scripts/build_purchase_fallbacks.py","--models",ROOT/"models/THE_LIST.md","--curated",ROOT/"data/purchase-sources.json","--output",DEST/"data/purchase-fallbacks.json")
     run(ROOT/"scripts/build_model_pages.py","--data-dir",DEST/"data","--output-root",DEST)
