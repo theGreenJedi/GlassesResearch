@@ -1,4 +1,9 @@
-# Firmware
+---
+title: "Smart Glasses Firmware Research & Analysis"
+description: "Evidence-led smart glasses firmware research covering acquisition, preservation, version comparison, binary analysis, recovery risk, and W610/W6xx investigation."
+---
+
+# Smart Glasses Firmware Research & Analysis
 
 ## Purpose
 
