@@ -62,6 +62,10 @@ jobs:
         if: steps.cadence.outputs.run == 'true'
         run: python scripts/collect_web_discovery.py
 
+      - name: Retain durable discovered-source watches
+        if: steps.cadence.outputs.run == 'true'
+        run: python scripts/collect_discovery_watches.py
+
       - name: Detect intake changes
         if: steps.cadence.outputs.run == 'true'
         id: changes
@@ -94,7 +98,7 @@ jobs:
             --base main \
             --head "$BRANCH" \
             --title "Institutional knowledge intake — ${DATE}" \
-            --body "Automated research inbox only. The intake now combines recent-news collection with high-recall ordinary-web, retail, developer, research, and manufacturer-catalog discovery. Discovery is never publication. Core smart-glasses candidates may be promoted only after verification and editorial review; retail/OEM leads require identity and rebrand resolution first."; then
+            --body "Automated research inbox only. The intake combines recent-news collection with high-recall ordinary-web, retail, developer, research, community, manufacturer-catalog, and durable-source watch discovery. Discovery is never publication. Core smart-glasses candidates may be promoted only after verification and editorial review; retail/OEM leads require identity and rebrand resolution first."; then
             echo "Research-inbox PR opened."
           else
             echo "PR creation is not permitted for GitHub Actions; preserved intake on branch ${BRANCH}."
