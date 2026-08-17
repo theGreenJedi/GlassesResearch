@@ -13,10 +13,12 @@ Google Search Console page/query pairs for **2026-07-19 → 2026-08-15**.
 | https://glassesresearch.org/models/RayBanMetaGen2/ | "even reality glasses" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com | 1 | 0 | 0.00% | 5.0 |
 | https://glassesresearch.org/models/XREALOne/ | xreal one firmware | 1 | 0 | 0.00% | 7.0 |
 | https://glassesresearch.org/models/SolosAirGo/ | solos airgo v2 | 1 | 0 | 0.00% | 9.0 |
+| https://glassesresearch.org/models/HuaweiEyewear2/ | eyewear 2 huawei | 2 | 0 | 0.00% | 28.5 |
 | https://glassesresearch.org/models/EvenG2/ | g2 even realities | 1 | 0 | 0.00% | 13.0 |
 | https://glassesresearch.org/lineages/SNAP/ | snap eyewear | 1 | 0 | 0.00% | 16.0 |
 | https://glassesresearch.org/models/RayNeoX3Pro/ | vuzix | 1 | 0 | 0.00% | 16.0 |
 | https://glassesresearch.org/docs/faq/01-basics/ | monocular ar glasses | 1 | 0 | 0.00% | 17.0 |
+| https://glassesresearch.org/models/HuaweiEyewear2/ | huawei eyewear 2022 | 1 | 0 | 0.00% | 18.0 |
 | https://glassesresearch.org/resources/COMMUNITY_AND_DEVELOPMENT/ | what wearable ar glasses have an active community of wearers sharing what they are seeing and experiencing? | 1 | 0 | 0.00% | 20.0 |
 | https://glassesresearch.org/models/RETAIL_REBRANDS/ | vuzix | 1 | 0 | 0.00% | 21.0 |
 | https://glassesresearch.org/docs/faq/10-ownership-future/ | future of smart glasses ownership | 1 | 0 | 0.00% | 22.0 |
