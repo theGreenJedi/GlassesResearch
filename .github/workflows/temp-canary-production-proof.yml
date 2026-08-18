@@ -1,0 +1,26 @@
+name: Temporary alert canary production proof
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  prove:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Prove real recipient-side delivery
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${PUBLISH_TOKEN:-}"
+          python scripts/verified_publications.py --publish
