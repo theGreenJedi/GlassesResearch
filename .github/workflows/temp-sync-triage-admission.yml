@@ -1,0 +1,48 @@
+name: Temporary sync triage admission branch
+
+on:
+  push:
+    branches:
+      - mission/verify-first-triage-backlog
+    paths:
+      - 'models/THE_LIST_RECONCILIATION_2026-08-18_TRIAGE.md'
+      - 'models/THE_LIST.md'
+      - 'models/README.md'
+      - '.github/workflows/temp-sync-triage-admission.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: temp-sync-triage-admission
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: mission/verify-first-triage-backlog
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Synchronize approved canonical admission
+        run: |
+          python scripts/sync_catalog_counts.py
+          python scripts/check_catalog_consistency.py
+      - name: Persist only mechanical synchronization
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- models/THE_LIST.md models/README.md; then
+            echo 'Mission branch already synchronized.'
+            exit 0
+          fi
+          git config user.name 'glassesresearch-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add models/THE_LIST.md models/README.md
+          git commit -m 'Synchronize GLS-0160 canonical admission'
+          git push origin HEAD:mission/verify-first-triage-backlog
