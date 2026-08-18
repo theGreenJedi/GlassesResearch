@@ -6,6 +6,9 @@ on:
       - "scripts/knowledge_flow.py"
       - "scripts/triage_news_reviews.py"
       - "scripts/test_triage_news_reviews.py"
+      - "scripts/apply_editorial_decisions.py"
+      - "scripts/test_apply_editorial_decisions.py"
+      - "research/news-reviews/editorial-decisions.json"
       - ".github/workflows/daily-news-verification.yml"
       - ".github/workflows/editorial-triage-check.yml"
   push:
@@ -14,6 +17,9 @@ on:
       - "scripts/knowledge_flow.py"
       - "scripts/triage_news_reviews.py"
       - "scripts/test_triage_news_reviews.py"
+      - "scripts/apply_editorial_decisions.py"
+      - "scripts/test_apply_editorial_decisions.py"
+      - "research/news-reviews/editorial-decisions.json"
       - ".github/workflows/daily-news-verification.yml"
       - ".github/workflows/editorial-triage-check.yml"
 
@@ -30,7 +36,8 @@ jobs:
           python-version: "3.x"
       - name: Validate knowledge-flow classification
         run: python scripts/test_knowledge_flow.py
-      - name: Validate durable triage state
+      - name: Validate durable triage state and explicit decisions
         run: |
-          python -m py_compile scripts/triage_news_reviews.py
+          python -m py_compile scripts/triage_news_reviews.py scripts/apply_editorial_decisions.py
           python scripts/test_triage_news_reviews.py
+          python scripts/test_apply_editorial_decisions.py
