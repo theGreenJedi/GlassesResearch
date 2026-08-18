@@ -1,0 +1,84 @@
+name: Temporary production alerts audit
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN_RAW: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - name: Audit live Worker and D1 state without subscriber addresses
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "${CLOUDFLARE_ACCOUNT_ID:-}" ] || [ -z "${CLOUDFLARE_API_TOKEN_RAW:-}" ]; then
+            echo 'Cloudflare audit secrets unavailable.' >&2
+            exit 1
+          fi
+
+          token="$(printf '%s' "$CLOUDFLARE_API_TOKEN_RAW" | tr -d '\r\n' | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//; s/^Bearer[[:space:]]+//I')"
+          api='https://api.cloudflare.com/client/v4'
+          auth=(-H "Authorization: Bearer $token" -H 'Content-Type: application/json')
+
+          curl --fail --silent --show-error --location --max-time 20 \
+            https://alerts.glassesresearch.org/health -o /tmp/health.json
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/health.json'))
+          assert p.get('ok') is True and p.get('service') == 'verified-research-alerts', p
+          print('WORKER_HEALTH ok')
+          PY
+
+          curl --fail --silent --show-error "${auth[@]}" \
+            "$api/accounts/$CLOUDFLARE_ACCOUNT_ID/d1/database?name=glassesresearch-alerts" \
+            -o /tmp/dbs.json
+          DB_ID="$(python - <<'PY'
+          import json
+          p=json.load(open('/tmp/dbs.json'))
+          assert p.get('success') is True, p.get('errors')
+          rows=p.get('result') or []
+          match=[r for r in rows if r.get('name')=='glassesresearch-alerts']
+          assert match, 'glassesresearch-alerts D1 database not found'
+          print(match[0]['uuid'])
+          PY
+          )"
+
+          query() {
+            local sql="$1" out="$2"
+            jq -nc --arg sql "$sql" '{sql:$sql}' > /tmp/query.json
+            curl --fail --silent --show-error "${auth[@]}" \
+              -X POST "$api/accounts/$CLOUDFLARE_ACCOUNT_ID/d1/database/$DB_ID/query" \
+              --data-binary @/tmp/query.json -o "$out"
+          }
+
+          query "SELECT COUNT(*) AS total, SUM(CASE WHEN status='active' THEN 1 ELSE 0 END) AS active, SUM(CASE WHEN status='pending' THEN 1 ELSE 0 END) AS pending, SUM(CASE WHEN status='suppressed' THEN 1 ELSE 0 END) AS suppressed, SUM(CASE WHEN last_sent_at IS NOT NULL THEN 1 ELSE 0 END) AS subscribers_with_research_send, MIN(created_at) AS first_created_at, MAX(confirmed_at) AS latest_confirmed_at, MAX(last_sent_at) AS latest_last_sent_at FROM subscribers" /tmp/subscribers.json
+          query "SELECT status, cadence, COUNT(*) AS count FROM subscribers GROUP BY status, cadence ORDER BY status, cadence" /tmp/cadences.json
+          query "SELECT COUNT(*) AS total, MIN(published_at) AS first_published_at, MAX(published_at) AS latest_published_at FROM published_items" /tmp/published.json
+          query "SELECT COUNT(*) AS total, MIN(delivered_at) AS first_delivered_at, MAX(delivered_at) AS latest_delivered_at FROM deliveries" /tmp/deliveries.json
+
+          python - <<'PY'
+          import json
+
+          def rows(path):
+              p=json.load(open(path))
+              assert p.get('success') is True, p.get('errors')
+              result=p.get('result') or []
+              assert result and result[0].get('success') is True, result
+              return result[0].get('results') or []
+
+          subscribers=rows('/tmp/subscribers.json')
+          cadences=rows('/tmp/cadences.json')
+          published=rows('/tmp/published.json')
+          deliveries=rows('/tmp/deliveries.json')
+          print('SUBSCRIBER_SUMMARY', json.dumps(subscribers[0] if subscribers else {}, sort_keys=True))
+          print('CADENCE_SUMMARY', json.dumps(cadences, sort_keys=True))
+          print('PUBLISHED_SUMMARY', json.dumps(published[0] if published else {}, sort_keys=True))
+          print('DELIVERY_SUMMARY', json.dumps(deliveries[0] if deliveries else {}, sort_keys=True))
+          PY
