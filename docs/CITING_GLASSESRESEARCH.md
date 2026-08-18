@@ -17,6 +17,17 @@ Preferred form:
 
 Use the stable GLS identifier when model names, rebrands, or manufacturer labels may be ambiguous.
 
+### Machine-ready model citations
+
+Every canonical model has citation exports generated from the same stable identity ledger:
+
+- BibTeX: `https://glassesresearch.org/data/citations/gls-####.bib`
+- CSL-JSON: `https://glassesresearch.org/data/citations/gls-####.json`
+- Citation index: `https://glassesresearch.org/data/citations/index.json`
+- Aggregate canonical-model BibTeX: `https://glassesresearch.org/data/citations/glassesresearch-models.bib`
+
+The GitHub repository also publishes a root `CITATION.cff`, allowing GitHub's **Cite this repository** control to provide standardized citation metadata for the project as a whole.
+
 ## Industry timeline events
 
 Canonical timeline events have stable `TL-####` identifiers and permalink fragments.
@@ -50,9 +61,13 @@ Lower-level public structured endpoints remain available:
 
 When reproducibility matters, record the access date, schema version, and specific GLS or TL identifiers used rather than relying only on array order or display position. Claim-level `confidence` or `verified_at` values may be `null` when the underlying research has not recorded those values; do not convert missing provenance into certainty.
 
-## Linking and reuse
+## Linking, embedding, and reuse
 
 No permission is needed to link to public GlassesResearch pages. Deep links to individual canonical models, timeline events, technical research, evidence records, and comparisons are encouraged when they help readers verify a claim or continue an investigation.
+
+A compact [embeddable model card](EMBED_GLASSESRESEARCH.md) is available for every canonical GLS model. It is static, cookie-free, and links the reader back to the canonical evidence page rather than copying an untraceable rating into another site.
+
+The [Reference Desk](REFERENCE_DESK.md) collects the fastest paths for journalists, researchers, developers, and community writers who need stable identities, data, citations, or evidence.
 
 Do not describe an unresolved GlassesResearch field as a verified negative. `Unknown`, `N/A`, and verified `No` are intentionally different states.
 
