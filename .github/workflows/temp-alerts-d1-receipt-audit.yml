@@ -36,10 +36,24 @@ jobs:
         run: |
           set -euo pipefail
           runq() {
-            local label="$1" sql="$2"
+            local label="$1" sql="$2" tmp
+            tmp="/tmp/${label}.json"
             echo "--- $label ---"
-            npx wrangler d1 execute glassesresearch-alerts --remote --json --command "$sql" \
-              | jq '[.[].results[]]'
+            npx wrangler d1 execute glassesresearch-alerts --remote --json --command "$sql" > "$tmp"
+            python - "$tmp" <<'PY'
+          import json, sys
+          p=json.load(open(sys.argv[1]))
+          rows=[]
+          if isinstance(p, list):
+              for entry in p:
+                  if isinstance(entry, dict):
+                      if isinstance(entry.get('results'), list): rows.extend(entry['results'])
+                      if isinstance(entry.get('result'), list): rows.extend(entry['result'])
+          elif isinstance(p, dict):
+              if isinstance(p.get('results'), list): rows.extend(p['results'])
+              if isinstance(p.get('result'), list): rows.extend(p['result'])
+          print(json.dumps(rows, sort_keys=True))
+          PY
           }
           runq SUBSCRIPTIONS "SELECT status, cadence, COUNT(*) AS count, SUM(CASE WHEN last_sent_at IS NOT NULL THEN 1 ELSE 0 END) AS with_research_send, MAX(last_sent_at) AS latest_last_sent_at FROM subscribers GROUP BY status, cadence ORDER BY status, cadence;"
           runq PUBLICATION "SELECT id, title, published_at FROM published_items WHERE id='gr-2026-08-17-lucyd-armor-gls-0159';"
