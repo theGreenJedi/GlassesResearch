@@ -57,3 +57,11 @@ cross-model findings:
 - [`EV-0072-Solos-AirGo-V2-owner-access-boundary.md`](EV-0072-Solos-AirGo-V2-owner-access-boundary.md) — public video/Wi-Fi/media APIs separated from undocumented firmware ownership, update continuity and currently unavailable SDK acquisition.
 
 - [`EV-0073-Even-G2-owner-access-boundary.md`](EV-0073-Even-G2-owner-access-boundary.md) — vendor-mediated Even Hub separated from community-demonstrated direct BLE control and unresolved firmware ownership.
+
+- [`EV-0074-Maverick-AI-primary-product.md`](EV-0074-Maverick-AI-primary-product.md) — current manufacturer product/specification evidence for Everysight Maverick AI / AI Pro.
+
+- [`EV-0075-Maverick-SDK-owner-control.md`](EV-0075-Maverick-SDK-owner-control.md) — public Maverick SDK surface separated from Everysight-issued runtime certificates and unresolved owner-control boundaries.
+
+- [`EV-0076-Maverick-AI-Pro-user-video-lead.md`](EV-0076-Maverick-AI-Pro-user-video-lead.md) — user-supplied hands-on lead preserved without promoting claims that could not be reproduced.
+
+- [`EV-0077-MemoMind-One-primary-product.md`](EV-0077-MemoMind-One-primary-product.md) — MemoMind/XGIMI primary product and lineage evidence, with crowdfunding and owner-control unknowns preserved.
