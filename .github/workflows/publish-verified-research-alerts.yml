@@ -6,8 +6,10 @@ on:
     paths:
       - 'data/verified-publications.json'
       - 'docs/RESEARCH_NEWS.md'
+      - 'docs/news/articles/**'
       - 'scripts/verified_publications.py'
       - 'scripts/stage_verified_publications.py'
+      - 'scripts/validate_alert_articles.py'
       - '.github/workflows/publish-verified-research-alerts.yml'
       - 'cloudflare/verified-research-alerts/**'
       - 'cloudflare/verified-research-canary/**'
@@ -16,8 +18,10 @@ on:
     paths:
       - 'data/verified-publications.json'
       - 'docs/RESEARCH_NEWS.md'
+      - 'docs/news/articles/**'
       - 'scripts/verified_publications.py'
       - 'scripts/stage_verified_publications.py'
+      - 'scripts/validate_alert_articles.py'
       - '.github/workflows/publish-verified-research-alerts.yml'
       - 'cloudflare/verified-research-alerts/**'
       - 'cloudflare/verified-research-canary/**'
@@ -42,8 +46,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python -m py_compile scripts/verified_publications.py scripts/stage_verified_publications.py
+          python -m py_compile scripts/verified_publications.py scripts/stage_verified_publications.py scripts/validate_alert_articles.py
           python scripts/verified_publications.py
+          python scripts/validate_alert_articles.py
 
   publish:
     if: github.event_name != 'pull_request'
@@ -76,6 +81,7 @@ jobs:
             echo '### Verified Research Alerts end-to-end proof'
             echo ''
             echo '- Public research ledger validated.'
+            echo '- Every dispatch-enabled alert resolves to a dated GlassesResearch article.'
             echo '- Watching and discovery intake are excluded by validation.'
             echo '- Dispatch-enabled entries were staged at the authenticated Worker before canary proof, so real subscriber delivery is not blocked by canary availability.'
             echo '- The run passes end to end only after the synthetic canary recipient records each exact publication ID after SMTP delivery.'
