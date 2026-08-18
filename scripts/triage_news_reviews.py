@@ -29,9 +29,11 @@ PRIORITY_ORDER = {"high": 0, "normal": 1, "low": 2}
 STATE_ORDER = {
     "needs_editorial_verification": 0,
     "source_review": 1,
-    "watching": 2,
-    "adjacent_radar": 3,
-    "rejected_noise": 4,
+    "catalog_review": 2,
+    "source_monitor": 3,
+    "watching": 4,
+    "adjacent_radar": 5,
+    "rejected_noise": 6,
 }
 
 # "Prescription" is useful eyewear vocabulary but also produces broad-web noise.
@@ -107,9 +109,7 @@ def review_key(item: dict) -> str:
 
 
 def haystack(item: dict) -> str:
-    return " ".join(
-        str(item.get(field, "")) for field in ("title", "summary", "url")
-    ).lower()
+    return " ".join(str(item.get(field, "")) for field in ("title", "summary", "url")).lower()
 
 
 def contains_any(text: str, terms: tuple[str, ...]) -> bool:
@@ -124,8 +124,27 @@ def generic_pharmacy_noise(item: dict) -> bool:
 
 
 def strong_enabling_context(item: dict) -> bool:
-    text = haystack(item)
-    return contains_any(text, STRONG_ENABLING_TERMS + DIRECT_CONTEXT_TERMS)
+    return contains_any(haystack(item), STRONG_ENABLING_TERMS + DIRECT_CONTEXT_TERMS)
+
+
+def standing_source_watch(item: dict) -> bool:
+    """A configured source surface is a monitor, not a newly discovered event."""
+    title = str(item.get("title", "")).strip().lower()
+    source = str(item.get("source", "")).strip().lower()
+    return (
+        source == "manufacturer-watch"
+        or title.startswith("manufacturer/source watch:")
+        or title.startswith("manufacturer catalog watch:")
+    )
+
+
+def catalog_discovery_lead(item: dict) -> bool:
+    """A crawled manufacturer link is catalog research, not news publication work."""
+    if standing_source_watch(item):
+        return False
+    title = str(item.get("title", "")).strip().lower()
+    channel = str(item.get("discovery_channel", "")).strip().lower()
+    return channel == "manufacturer_catalog" or title.startswith("manufacturer catalog lead:")
 
 
 def load_existing() -> dict[str, dict]:
@@ -182,7 +201,7 @@ def collect(cutoff: dt.datetime) -> tuple[dict[str, dict], int]:
 
 def check_url(url: str, timeout: float) -> dict:
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "GlassesResearch-editorial-triage/2.1"})
+        req = urllib.request.Request(url, headers={"User-Agent": "GlassesResearch-editorial-triage/2.2"})
         with urllib.request.urlopen(req, timeout=timeout) as response:
             return {"status": "reachable" if 200 <= response.status < 400 else "review", "result": str(response.status)}
     except urllib.error.HTTPError as exc:
@@ -192,6 +211,8 @@ def check_url(url: str, timeout: float) -> dict:
 
 
 def should_check_source(item: dict) -> bool:
+    if standing_source_watch(item) or catalog_discovery_lead(item):
+        return False
     relationship = str(item.get("relationship", ""))
     if relationship == "direct":
         return True
@@ -227,6 +248,10 @@ def state_for(item: dict, source: dict) -> str:
         return "adjacent_radar"
     if generic_pharmacy_noise(item):
         return "rejected_noise"
+    if standing_source_watch(item):
+        return "source_monitor"
+    if catalog_discovery_lead(item):
+        return "catalog_review"
     if relationship == "enabling" and not strong_enabling_context(item):
         return "source_review"
     if relationship in {"direct", "enabling"}:
@@ -291,7 +316,7 @@ def build(config: argparse.Namespace) -> dict:
         str(item.get("title", "")).lower(),
     ))
     return {
-        "schema": 3,
+        "schema": 4,
         "generated_utc": now.isoformat(),
         "lookback_days": config.lookback_days,
         "intake_files_inspected": file_count,
@@ -327,8 +352,10 @@ def markdown(queue: dict) -> str:
         ))
     lines += [
         "", "## Meaning of states", "",
-        "- `needs_editorial_verification` — direct/enabling glasses material ready for factual review.",
+        "- `needs_editorial_verification` — a concrete direct/enabling development ready for factual review.",
         "- `source_review` — potentially relevant, but the source or enabling relationship needs manual attention.",
+        "- `catalog_review` — a static manufacturer catalog/developer link that can improve model research but is not a news event.",
+        "- `source_monitor` — a configured standing source surface retained for future change detection, not a new editorial event.",
         "- `watching` — rumor/speculation; retain without public promotion.",
         "- `adjacent_radar` — neighboring wearable/HCI material without a concrete glasses publication gate.",
         "- `rejected_noise` — irrelevant or generic non-eyewear material that should not advance.", "",
