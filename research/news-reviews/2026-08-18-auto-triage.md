@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-18T15:55:51.981297+00:00`
+Generated: `2026-08-18T15:59:15.831320+00:00`
 
 - Intake files inspected: **17**
 - Candidates retained in this review window/history: **256**
@@ -9,9 +9,11 @@ Generated: `2026-08-18T15:55:51.981297+00:00`
 ## Queue state
 
 - `adjacent_radar`: 42
-- `needs_editorial_verification`: 81
+- `editorial_published`: 2
+- `editorial_watch`: 1
+- `needs_editorial_verification`: 76
 - `rejected_noise`: 9
-- `source_review`: 102
+- `source_review`: 104
 - `watching`: 22
 
 ## Action queue
@@ -19,8 +21,6 @@ Generated: `2026-08-18T15:55:51.981297+00:00`
 | Priority | State | Relationship | Candidate | Source check | Routes |
 |---|---|---|---|---|---|
 | high | needs_editorial_verification | direct | [Manufacturer/source watch: News – Rokid](https://global.rokid.com/blogs/news) | reachable (200) | research_news_review, report_card_evidence, development_hacking, research_optics |
-| high | needs_editorial_verification | direct | [CyanBridge v2.1.1](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.1.1) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| high | needs_editorial_verification | direct | [Leopard Bird iO Series to be Released on August 21, Focused on Human Augmentation AI Glasses - news.aibase.com](https://news.google.com/rss/articles/CBMiSkFVX3lxTE5PQkE2NURZa3JORkc5UWthV1pleHkzc25HN0g3VS1XM3N5OUxPTkM4RjA5LTMycDZWb1Rtckg2SE4zRklZN1VsU0VB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Manufacturer catalog watch: lucyd.co](https://lucyd.co/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking, research_optics, policy_privacy |
 | high | needs_editorial_verification | direct | [Manufacturer catalog watch: www.vuzix.com](https://www.vuzix.com/pages/smart-glasses) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking, research_optics |
 | high | needs_editorial_verification | direct | [Manufacturer catalog lead: Prescription Lenses](https://www.evenrealities.com/prescription-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
@@ -28,7 +28,6 @@ Generated: `2026-08-18T15:55:51.981297+00:00`
 | high | needs_editorial_verification | direct | [Manufacturer catalog lead: Talk to Our OEM Team](https://www.vuzix.com/pages/learn-more-about-ai-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [Manufacturer catalog watch: www.hallidayglobal.com](https://www.hallidayglobal.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, deep_research |
 | high | needs_editorial_verification | direct | [Manufacturer catalog watch: www.inmoxr.com](https://www.inmoxr.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, research_optics |
-| high | needs_editorial_verification | direct | [MemoMind One Smart Glasses Launch on Kickstarter For $399 - Geeky Gadgets](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9HVjJ6OE1nX002cGVyT20zNmt1X2dDaFdQYzRPaFF6bGozTjlNaWVjSF9rSFl3bTViTHlWdm5FbkZGMnd6YjFQZkRHYlo0N2RFTHRxR1VzRi1aOGZUcWZ4d05ia3FjUVFz?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses With Prescription Lenses - Vision Center](https://www.visioncenter.org/eyeglasses/smart-glasses/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Manufacturer catalog lead: ALL SMART EYEWEAR](https://lucyd.co/pages/all-collections) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
@@ -78,8 +77,6 @@ Generated: `2026-08-18T15:55:51.981297+00:00`
 | normal | needs_editorial_verification | direct | [Manufacturer catalog watch: www.latitude52n.com](https://www.latitude52n.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (August 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI Glasses are Here. So Is the Privacy Problem - sify.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUTZPLUljc3Q4WXJzVzZsVlc5NUEyOEUyc1JNNG5iRUJhdFRuc0hwUlZTQTM0UUZGaTY0RzVacmcwaVBTY2tHejFfdURGenRCNzlieTlkWERtNktJVzZkTExudUt2eTdycVRHV1VxdWtmdV9PSnJVNy0yZHh1ZkxQcUhSSzctRmM?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
@@ -102,6 +99,8 @@ Generated: `2026-08-18T15:55:51.981297+00:00`
 | normal | source_review | enabling | [America's Best Eyecare + Eyewear](https://www.americasbest.com/) | reachable (200) | research_news_review, research_optics |
 | normal | source_review | direct | [Manufacturer catalog lead: Contact Support](https://www.evenrealities.com/contact) | review (403) | research_news_review, model_catalog_review, development_hacking |
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
+| normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
+| normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
 | low | source_review |  | [Manufacturer/source watch: VITURE Blog \| XR Glasses News, Reviews & Guides \| VITURE](https://www.viture.com/blog) | reachable (200) |  |
 | low | source_review |  | [CyanBridge v2.0.0 - Local AI Support](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.0.0) | reachable (200) |  |
@@ -268,6 +267,9 @@ Generated: `2026-08-18T15:55:51.981297+00:00`
 | normal | rejected_noise | enabling | [Amazon Pharmacy \| Online Prescription](https://pharmacy.amazon.com/) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | rejected_noise | enabling | [CVS - Online Drugstore, Pharmacy, Prescriptions & Health Information](https://www.cvs.com/) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | normal | rejected_noise | enabling | [CVS Pharmacy \| Online Prescriptions, Transfers & Refills](https://www.cvs.com/pharmacy) | reachable (200) | research_news_review, research_optics |
+| normal | rejected_noise | enabling | [Drug Price Search, Find Prescription Coupons - GoodRx](https://www.goodrx.com/search) | review (403) | research_news_review, research_optics, retail_rebrand_review |
+| normal | rejected_noise | enabling | [Drugs & Medications A to Z - Drugs.com](https://www.drugs.com/drug_information.html) | review (403) | research_news_review, research_optics |
+| normal | rejected_noise | enabling | [Drugs.com – Know More. Be Sure.](https://www.drugs.com/) | review (403) | research_news_review, research_optics |
 
 ## Meaning of states
 
