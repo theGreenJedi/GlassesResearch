@@ -1,0 +1,36 @@
+name: Editorial triage contract
+
+on:
+  pull_request:
+    paths:
+      - "scripts/knowledge_flow.py"
+      - "scripts/triage_news_reviews.py"
+      - "scripts/test_triage_news_reviews.py"
+      - ".github/workflows/daily-news-verification.yml"
+      - ".github/workflows/editorial-triage-check.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/knowledge_flow.py"
+      - "scripts/triage_news_reviews.py"
+      - "scripts/test_triage_news_reviews.py"
+      - ".github/workflows/daily-news-verification.yml"
+      - ".github/workflows/editorial-triage-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate knowledge-flow classification
+        run: python scripts/test_knowledge_flow.py
+      - name: Validate durable triage state
+        run: |
+          python -m py_compile scripts/triage_news_reviews.py
+          python scripts/test_triage_news_reviews.py
