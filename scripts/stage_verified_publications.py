@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Stage dispatch-enabled verified publications at the alerts Worker.
 
-This is intentionally separate from synthetic-canary proof. Real subscriber
-mail must not be held behind canary availability; the Worker and deliveries
-remain idempotent by publication ID.
+Real subscriber mail must not be held behind synthetic-canary availability, but
+it also must not outrun the public site deployment. Each alert is staged only
+after its GlassesResearch article URL is reachable. Worker ingestion and
+subscriber deliveries remain idempotent by publication ID.
 """
 
 from __future__ import annotations
@@ -12,6 +13,7 @@ import os
 import sys
 import time
 import urllib.error
+import urllib.request
 
 from verified_publications import (
     ALERTS_BASE,
@@ -22,6 +24,30 @@ from verified_publications import (
     request_json,
     validate,
 )
+
+
+def wait_until_article_live(item: dict, *, timeout_seconds: int = 300) -> None:
+    url = str(item["canonical_url"])
+    deadline = time.monotonic() + timeout_seconds
+    last_error: Exception | None = None
+    while time.monotonic() < deadline:
+        try:
+            request = urllib.request.Request(
+                url,
+                headers={"User-Agent": "GlassesResearch-alert-publication-gate/1.0"},
+            )
+            with urllib.request.urlopen(request, timeout=20) as response:
+                if 200 <= response.status < 300:
+                    print(f"Public article reachable: {item['id']} {url}")
+                    return
+                last_error = RuntimeError(f"unexpected HTTP status {response.status}")
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
+            last_error = exc
+        time.sleep(10)
+    raise RuntimeError(
+        f"Refusing to stage {item['id']} before its public article is reachable: {url}; "
+        f"last error: {last_error}"
+    )
 
 
 def stage() -> int:
@@ -38,6 +64,7 @@ def stage() -> int:
             return 0
 
         for item in enabled:
+            wait_until_article_live(item)
             payload = publication_payload(item)
             last_error: Exception | None = None
             for attempt in range(1, 6):
