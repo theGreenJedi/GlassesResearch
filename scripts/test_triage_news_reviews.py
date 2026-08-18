@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Regression checks for durable editorial triage state."""
-from triage_news_reviews import automated_state, preserve_editorial_fields
+from triage_news_reviews import automated_state, preserve_editorial_fields, review_key
 
 
 def main() -> int:
@@ -24,6 +24,42 @@ def main() -> int:
         {"relationship": "irrelevant", "content_types": ["news"]},
         {"status": "reachable"},
     ) == "rejected_noise"
+
+    pharmacy = {
+        "relationship": "enabling",
+        "content_types": ["optics"],
+        "title": "Amazon Pharmacy | Online Prescription",
+        "summary": "Prescription delivery, transfers, and refills",
+        "url": "https://pharmacy.amazon.com/",
+    }
+    assert automated_state(pharmacy, {"status": "not_checked"}) == "rejected_noise"
+
+    weak_eyecare = {
+        "relationship": "enabling",
+        "content_types": ["optics"],
+        "title": "Eyecare appointments and prescription services",
+        "summary": "General vision care",
+        "url": "https://example.invalid/eyecare",
+    }
+    assert automated_state(weak_eyecare, {"status": "not_checked"}) == "source_review"
+
+    waveguide = {
+        "relationship": "enabling",
+        "content_types": ["research", "optics"],
+        "title": "New waveguide for near-eye displays",
+        "summary": "Optical research",
+        "url": "https://example.invalid/waveguide",
+    }
+    assert automated_state(waveguide, {"status": "reachable"}) == "needs_editorial_verification"
+
+    # Collector IDs are observations, not review identity. The same source URL must
+    # consume one editorial slot even when two discovery lanes assign different IDs.
+    assert review_key({"id": "aaa", "url": "https://example.com/item/"}) == review_key(
+        {"id": "bbb", "url": "https://example.com/item#details"}
+    )
+    assert review_key({"id": "aaa", "url": "https://example.com/item"}) != review_key(
+        {"id": "bbb", "url": "https://example.com/other"}
+    )
 
     record = {"title": "new observation"}
     preserve_editorial_fields(
