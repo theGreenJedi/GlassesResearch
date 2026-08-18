@@ -31,10 +31,33 @@ jobs:
           test -n "${CLOUDFLARE_API_TOKEN_RAW:-}"
           token="$(printf '%s' "$CLOUDFLARE_API_TOKEN_RAW" | tr -d '\r\n' | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//; s/^Bearer[[:space:]]+//I')"
           printf 'CLOUDFLARE_API_TOKEN=%s\n' "$token" >> "$GITHUB_ENV"
+      - name: Resolve production D1 database
+        shell: bash
+        run: |
+          set -euo pipefail
+          DB_ID="$(npx wrangler d1 list --json | jq -r '.[] | select(.name == "glassesresearch-alerts") | .uuid' | head -n1)"
+          test -n "$DB_ID"
+          node <<'NODE'
+          import fs from 'node:fs';
+          const path='wrangler.jsonc';
+          const config=JSON.parse(fs.readFileSync(path,'utf8'));
+          config.d1_databases[0].database_id=process.env.DB_ID;
+          fs.writeFileSync(path, JSON.stringify(config,null,2)+'\n');
+          NODE
+        env:
+          DB_ID: ${{ env.DB_ID }}
       - name: Query privacy-safe production aggregates
         shell: bash
         run: |
           set -euo pipefail
+          DB_ID="$(npx wrangler d1 list --json | jq -r '.[] | select(.name == "glassesresearch-alerts") | .uuid' | head -n1)"
+          node <<NODE
+          import fs from 'node:fs';
+          const path='wrangler.jsonc';
+          const config=JSON.parse(fs.readFileSync(path,'utf8'));
+          config.d1_databases[0].database_id='${DB_ID}';
+          fs.writeFileSync(path, JSON.stringify(config,null,2)+'\n');
+          NODE
           runq() {
             local label="$1" sql="$2" tmp
             tmp="/tmp/${label}.json"
