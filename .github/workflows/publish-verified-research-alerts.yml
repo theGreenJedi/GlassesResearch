@@ -7,6 +7,7 @@ on:
       - 'data/verified-publications.json'
       - 'docs/RESEARCH_NEWS.md'
       - 'scripts/verified_publications.py'
+      - 'scripts/stage_verified_publications.py'
       - '.github/workflows/publish-verified-research-alerts.yml'
       - 'cloudflare/verified-research-alerts/**'
       - 'cloudflare/verified-research-canary/**'
@@ -16,6 +17,7 @@ on:
       - 'data/verified-publications.json'
       - 'docs/RESEARCH_NEWS.md'
       - 'scripts/verified_publications.py'
+      - 'scripts/stage_verified_publications.py'
       - '.github/workflows/publish-verified-research-alerts.yml'
       - 'cloudflare/verified-research-alerts/**'
       - 'cloudflare/verified-research-canary/**'
@@ -36,8 +38,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Validate verified publication ledger
-        run: python scripts/verified_publications.py
+      - name: Validate verified publication ledger and publisher syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/verified_publications.py scripts/stage_verified_publications.py
+          python scripts/verified_publications.py
 
   publish:
     if: github.event_name != 'pull_request'
@@ -59,7 +65,9 @@ jobs:
             echo 'Missing required GitHub Actions secret: PUBLISH_TOKEN' >&2
             exit 1
           fi
-      - name: Publish verified research and prove recipient-side delivery
+      - name: Stage verified research for real subscribers
+        run: python scripts/stage_verified_publications.py
+      - name: Prove recipient-side delivery with synthetic canary
         run: python scripts/verified_publications.py --publish
       - name: Record end-to-end alert contract
         shell: bash
@@ -69,7 +77,7 @@ jobs:
             echo ''
             echo '- Public research ledger validated.'
             echo '- Watching and discovery intake are excluded by validation.'
-            echo '- Only entries with `dispatch: true` were offered to the authenticated Worker endpoint.'
-            echo '- The run passed only after the synthetic canary recipient recorded the exact publication ID after SMTP delivery.'
-            echo '- Re-running is safe because publication ingestion and canary receipts are idempotent by publication ID.'
+            echo '- Dispatch-enabled entries were staged at the authenticated Worker before canary proof, so real subscriber delivery is not blocked by canary availability.'
+            echo '- The run passes end to end only after the synthetic canary recipient records each exact publication ID after SMTP delivery.'
+            echo '- Re-running is safe because publication ingestion, subscriber deliveries, and canary receipts are idempotent by publication ID.'
           } >> "$GITHUB_STEP_SUMMARY"
