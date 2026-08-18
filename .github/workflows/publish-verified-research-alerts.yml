@@ -8,6 +8,8 @@ on:
       - 'docs/RESEARCH_NEWS.md'
       - 'scripts/verified_publications.py'
       - '.github/workflows/publish-verified-research-alerts.yml'
+      - 'cloudflare/verified-research-alerts/**'
+      - 'cloudflare/verified-research-canary/**'
   push:
     branches: [main]
     paths:
@@ -15,6 +17,8 @@ on:
       - 'docs/RESEARCH_NEWS.md'
       - 'scripts/verified_publications.py'
       - '.github/workflows/publish-verified-research-alerts.yml'
+      - 'cloudflare/verified-research-alerts/**'
+      - 'cloudflare/verified-research-canary/**'
   workflow_dispatch:
 
 permissions:
@@ -39,6 +43,7 @@ jobs:
     if: github.event_name != 'pull_request'
     needs: validate
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
       PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
     steps:
@@ -54,16 +59,17 @@ jobs:
             echo 'Missing required GitHub Actions secret: PUBLISH_TOKEN' >&2
             exit 1
           fi
-      - name: Publish explicitly authorized verified research
+      - name: Publish verified research and prove recipient-side delivery
         run: python scripts/verified_publications.py --publish
-      - name: Record publication bridge contract
+      - name: Record end-to-end alert contract
         shell: bash
         run: |
           {
-            echo '### Verified Research Alerts publication bridge'
+            echo '### Verified Research Alerts end-to-end proof'
             echo ''
             echo '- Public research ledger validated.'
             echo '- Watching and discovery intake are excluded by validation.'
             echo '- Only entries with `dispatch: true` were offered to the authenticated Worker endpoint.'
-            echo '- Re-running is safe because the Worker records deliveries by subscriber + publication ID.'
+            echo '- The run passed only after the synthetic canary recipient recorded the exact publication ID after SMTP delivery.'
+            echo '- Re-running is safe because publication ingestion and canary receipts are idempotent by publication ID.'
           } >> "$GITHUB_STEP_SUMMARY"
