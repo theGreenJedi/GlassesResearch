@@ -8,15 +8,30 @@ The newest verified changes, useful tools, developments we are watching, and res
 
 | Date | What changed | Go deeper |
 |---|---|---|
+| Aug. 18 | MemoMind One crossed the documented-acquisition threshold as **GLS-0160**, with state `preorder/crowdfunding`; broad fulfillment remains unproven. | [Model page](https://glassesresearch.org/models/catalog/gls-0160/) · [research](/models/MemoMindOne/) |
 | Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [Model page](https://glassesresearch.org/models/catalog/gls-0159/) · [GLS resolver](https://glassesresearch.org/gls/gls-0159/) |
 | Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026-halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) |
 | Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026-cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](https://glassesresearch.org/models/catalog/gls-0039/) |
+
+### August 18, 2026 — MemoMind One enters the canonical catalog as GLS-0160 {#august-18-2026-memomind-one-enters-the-canonical-catalog-as-gls-0160}
+
+A collector lead about **MemoMind One** crossed the verification boundary after being checked against current MemoMind and XGIMI primary material. MemoMind currently presents the product as camera-free dual-eye display AI glasses, lists a starting price of **$399**, and routes acquisition through Kickstarter. Under GlassesResearch's existing purchaser-history rule, a paid preorder/crowdfunding route is enough to cross from announcement into a documented acquisition path, so MemoMind One is admitted as **[GLS-0160](https://glassesresearch.org/models/catalog/gls-0160/)** with state `preorder/crowdfunding`.
+
+Current vendor specifications include a dual Micro-LED display, open-ear audio, microphones, prescription options and AI-assisted recording, translation and teleprompter functions. The earlier XGIMI launch material used **Memo One** for the flagship; current manufacturer material uses **MemoMind One**, so the earlier name is preserved as launch-era lineage/alias evidence rather than a second model.
+
+**What we are not claiming:** canonical identity does not establish broad purchaser fulfillment, independently measured performance, a public SDK, owner-controlled firmware, local AI execution, cloud independence or ordinary-optician serviceability. Those remain unknown and receive no inferred score.
+
+The canonical purchaser-history ledger now contains **159** active models or explicitly marketed product generations.
+
+Continue: [GLS-0160 model page](https://glassesresearch.org/models/catalog/gls-0160/) · [MemoMind One research](/models/MemoMindOne/) · [EV-0077 primary evidence](/evidence/EV-0077-MemoMind-One-primary-product/) · [follow GLS-0160](?model=GLS-0160%2C%20MemoMind%20One&topic=release_availability#verified-research-alerts)
+
+Primary sources: [MemoMind One](https://www.memo-mind.com/pages/memomind-one) · [MemoMind](https://www.memo-mind.com/) · [XGIMI CES 2026 MemoMind announcement](https://us.xgimi.com/blogs/news/xgimi-ces-2026-with-memomind-ai-glasses)
 
 ### August 17, 2026 — Lucyd Armor enters the canonical catalog as GLS-0159
 
 Discovery reconciliation identified **Lucyd Armor** as a genuine catalog omission rather than another fashion-frame alias. Armor is Innovative Eyewear / Lucyd's smart-safety-eyewear product line, with a distinct protective-equipment use case and product architecture. It now has its own canonical identity, **[GLS-0159](https://glassesresearch.org/models/catalog/gls-0159/)**, and its own unknown-safe Core Report Card rather than inheriting scores from Lucyd Lyte models.
 
-**Why it matters:** discovery did what it is supposed to do: a broad search lead became an identity investigation, then a verified canonical admission. The catalog now contains **158** purchasable models or explicitly marketed product generations.
+**Why it matters:** discovery did what it is supposed to do: a broad search lead became an identity investigation, then a verified canonical admission. At that admission the catalog contained **158** purchasable models or explicitly marketed product generations.
 
 Continue: [GLS-0159 model page](https://glassesresearch.org/models/catalog/gls-0159/) · [resolve GLS-0159](https://glassesresearch.org/gls/gls-0159/) · [compare in Finder](/docs/COMPARISON_ENGINE/?left=GLS-0159) · [follow Lucyd Armor](?model=GLS-0159%2C%20Lucyd%20Armor#verified-research-alerts)
 
