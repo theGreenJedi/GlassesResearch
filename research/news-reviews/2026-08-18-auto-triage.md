@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-18T22:45:20.394169+00:00`
+Generated: `2026-08-18T23:41:36.755153+00:00`
 
-- Intake files inspected: **24**
-- Candidates retained in this review window/history: **282**
+- Intake files inspected: **25**
+- Candidates retained in this review window/history: **283**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,17 +12,16 @@ Generated: `2026-08-18T22:45:20.394169+00:00`
 - `catalog_review`: 45
 - `editorial_published`: 2
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 23
+- `needs_editorial_verification`: 22
 - `rejected_noise`: 9
 - `source_monitor`: 16
-- `source_review`: 96
-- `watching`: 43
+- `source_review`: 97
+- `watching`: 44
 
 ## Action queue
 
 | Priority | State | Relationship | Candidate | Source check | Routes |
 |---|---|---|---|---|---|
-| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses With Prescription Lenses - Vision Center](https://www.visioncenter.org/eyeglasses/smart-glasses/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (August 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI Glasses are Here. So Is the Privacy Problem - sify.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUTZPLUljc3Q4WXJzVzZsVlc5NUEyOEUyc1JNNG5iRUJhdFRuc0hwUlZTQTM0UUZGaTY0RzVacmcwaVBTY2tHejFfdURGenRCNzlieTlkWERtNktJVzZkTExudUt2eTdycVRHV1VxdWtmdV9PSnJVNy0yZHh1ZkxQcUhSSzctRmM?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -45,6 +44,7 @@ Generated: `2026-08-18T22:45:20.394169+00:00`
 | normal | needs_editorial_verification | direct | [VITURE: Next Gen XR Glasses](https://www.viture.com/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top Models So ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
+| normal | source_review | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | review (503) | research_news_review, model_catalog_review, retail_rebrand_review |
 | normal | source_review | enabling | [America's Best Eyecare + Eyewear](https://www.americasbest.com/) | reachable (200) | research_news_review, research_optics |
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
 | normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
@@ -228,6 +228,7 @@ Generated: `2026-08-18T22:45:20.394169+00:00`
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - Lebanon Democrat](https://news.google.com/rss/articles/CBMiigJBVV95cUxNZW9fVC1DYThXQnhMcy1yTUoyd3ZpRnJ3b1pNUFJtbElXSzEtQUNSQ25idWlpSzM1S3hFRUFIVmIwZXVfVlVfQWEwaDFvMkJjQXhUcWNkYUdBWUhEU2tUbTB3cmZ2c2pTWUl2YlBvaXVSbkpnM0t3eW5QSUlVT2M4NzRHOGcwQ0xqVi1Ya05NOVFjLVJITUxaNUZTVkpaeDJrN1BqLU5Fa2ViNHBiVDZGc0V5TEZEbG5TOWFuZG5McHlkOGpPVjRsSXVYQUFTUWdzNUJvQTF1dVB4dWYyR2ZhSHpIanB6Q3dIUGxaNHU4cVZ5QWFiUWpOaE0takE4QTRSTlIyVFMtTnhBdw?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - NonStop Local Billings](https://news.google.com/rss/articles/CBMi8AFBVV95cUxOcnhzeEVMWndMN2Y4d3FZWmFBbHBJRzFZNnpsWF9ZRVRZeFhhUVFnblY5QnkzN1EwcF9XTWdPRldzdnpQRE1vajNwQjJyWGs0S2N2LVIxMTgwLWZRZWtrc21OX2N1bG96ZTl3ajdnZURvamZSQklMSWtzbFJhblcwTWVFa3BrRnhWVTUyY3ZjQWpLWDFGOWJtTG5BNUw2amwyam9yOU5nUHVNUFozbHp2NDl3Q1BsRElfckI3V2EwMEt3RUZ1TXMyYVFRS3pEQU5XN0FGNlhIdm1oeXJQQ3EyUWVSRk1yb1NHQXpHWWFmV2g?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - Purdue Exponent](https://news.google.com/rss/articles/CBMi_AFBVV95cUxPS3hORXYtdnBSWi1vZmxQSkRPTEZXM08tY1lyOEp5T1htZUZTeFdSUG03T1dsRHBaMWtTUVd4ZVhoU1NORjdjUzg1SmdEUEMtZklSSUloMDZUOTZ2WVdzMnFQMU10V0pJckdRaUJkdHlMMG5sRy1iMXJyTDhYZFBwb0xKZURGNWs1XzJYY09YRXpuZG1ZeWg3MWFzNmk0TWJpdWFBS3dQNFVoeGlYSXBheTNsSmZLcVNrRWFKMndUVDFiOWJHNUR5N1Z5ZUZMbk1HYlJTdkFRNEhuVTBqNjR5TEVIenVQeW9GekphZlVXZHB5YlluMGsyNFJoVkU?oc=5) | not_checked | research_news_review, watching |
+| low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - SF Weekly](https://news.google.com/rss/articles/CBMi9AFBVV95cUxOc181b1pxTUZ6Vm12Y2xTMktKTHlwLUhPbXNCZWhLUUVyUE12ejRxS2NCZlZmekpyV2ltSGh3WkkwZThSZkRkWElQZm1ZdnhLQXFyV2xkV21TVFY4UWczYXBuUG9jandOOF9mUGpWQ0ZzdXBqaTZXay1OaGpjcXhPa2wwM2ZvbEEtSE9rUVpWdWllaUVxcC1TODhIZ0FvTUZva2lkbXA1SVVTNWJBaUVTQkktdFdMdFpVTVJaa2NDanY4SW82TUpWcDg0MlQ1MXVjUVVNcFRaWU00Q05JVFR2XzRhNXdBbFNWcnhXYTNJZkNDeVZ6?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - shelbynews.com](https://news.google.com/rss/articles/CBMi9wFBVV95cUxQUzVZOTZlR2loRXBfN0NDZm5tUGhUTEtLSXZBbG16LTdjdVpwYUF4aENQSk9QMUNHaVFqRVJlSllQWUVqck5pVUhrTXY1YU5HejBpUGpJYUZJNnJQanRzV3pMdl9oejA1b1RkYmJnUUx4R3dBdl9CLUFmak9PNU1xV2hMT0dONWdhMFA1OVNPMDBnQnh3bS13TXJ0ejUxZi1oQk5SeldBUVNxVDVfWkJLaVJDaENsYjRDbTQwQ0JwRnR3OUxNWG9UcFY0UW9GVWZpRHBnUFJsazFKbWZIVnlMSlJ0SXZuUFRxZzR6cFRWV2FyUU1aMGgw?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - swiowanewssource.com](https://news.google.com/rss/articles/CBMimgFBVV95cUxOY09XZzh2SzhiUXNvbnN2YU9RQ0g0RFNLcDU4WmE4UTNnbjVOTFRnOEtSVE04ZEhUckpvNDBRSzZoMEFPMzNuOVNfTF9aSHktUU9hSFZ1V256aDlVb2k3VDN1ZzFQd0YxQl9KaHZ5WjBpd0xpaDVaUi00VldSd2I4TVNUMWF5N0N3SEhVdFptcWtrbXRyd1pXUkdB?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - The Advocate & Democrat](https://news.google.com/rss/articles/CBMinwFBVV95cUxQWXJ1YTBHRGJTcUhXUXVnZDZBRzdxYW8tWVd4TWUxeEx1UVowb1pKVGNjUGtzbmZzdGI5REZlZzdGM0daNHVidkFGT292cEJEYzJtX0pPeHFmcGRWQkhfNDBsNWJVNGxOWVpKcC0xM3dkaFg4YUYtT0VzVWo2bl83djFNTUJ1eGNQVkhuT28wVEV2dDAtVW9pOVFzZFc3aGM?oc=5) | not_checked | research_news_review, watching |
@@ -271,7 +272,6 @@ Generated: `2026-08-18T22:45:20.394169+00:00`
 | low | adjacent_radar | adjacent | [Exchange Online EWS, Your Time is Almost Up \| Microsoft Community Hub](https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361) | reachable (200) | research_news_review, model_catalog_review, community_evidence_review, adjacent_radar |
 | low | adjacent_radar | adjacent | [Galaxy Wearable](https://galaxystore.samsung.com/detail/com.samsung.android.app.watchmanager) | reachable (200) | research_news_review, development_hacking, adjacent_radar |
 | low | adjacent_radar | adjacent | [Galaxy Wearable - Samsung US](https://www.samsung.com/us/support/owners/app/galaxy-wearable-watch) | reachable (200) | research_news_review, report_card_evidence, development_hacking, adjacent_radar |
-| low | adjacent_radar | adjacent | [Get ready for Windows 11, version 26H2 - Windows IT Pro Blog](https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/get-ready-for-windows-11-version-26h2/4529367) | reachable (200) | research_news_review, model_catalog_review, adjacent_radar |
 
 ## Meaning of states
 
