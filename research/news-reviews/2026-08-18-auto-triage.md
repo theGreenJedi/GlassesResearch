@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-18T16:07:02.737251+00:00`
+Generated: `2026-08-18T16:09:06.566910+00:00`
 
 - Intake files inspected: **17**
 - Candidates retained in this review window/history: **256**
@@ -9,75 +9,26 @@ Generated: `2026-08-18T16:07:02.737251+00:00`
 ## Queue state
 
 - `adjacent_radar`: 42
+- `catalog_review`: 45
 - `editorial_published`: 2
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 74
+- `needs_editorial_verification`: 23
 - `rejected_noise`: 9
-- `source_review`: 106
+- `source_monitor`: 16
+- `source_review`: 96
 - `watching`: 22
 
 ## Action queue
 
 | Priority | State | Relationship | Candidate | Source check | Routes |
 |---|---|---|---|---|---|
-| high | needs_editorial_verification | direct | [Manufacturer/source watch: News – Rokid](https://global.rokid.com/blogs/news) | reachable (200) | research_news_review, report_card_evidence, development_hacking, research_optics |
-| high | needs_editorial_verification | direct | [Manufacturer catalog watch: lucyd.co](https://lucyd.co/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking, research_optics, policy_privacy |
-| high | needs_editorial_verification | direct | [Manufacturer catalog watch: www.vuzix.com](https://www.vuzix.com/pages/smart-glasses) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking, research_optics |
-| high | needs_editorial_verification | direct | [Manufacturer catalog lead: Prescription Lenses](https://www.evenrealities.com/prescription-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
-| high | needs_editorial_verification | direct | [Manufacturer catalog lead: Request SDK](https://www.everysight.com/pages/sdk) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| high | needs_editorial_verification | direct | [Manufacturer catalog lead: Talk to Our OEM Team](https://www.vuzix.com/pages/learn-more-about-ai-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| high | needs_editorial_verification | direct | [Manufacturer catalog watch: www.hallidayglobal.com](https://www.hallidayglobal.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, deep_research |
-| high | needs_editorial_verification | direct | [Manufacturer catalog watch: www.inmoxr.com](https://www.inmoxr.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, research_optics |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses With Prescription Lenses - Vision Center](https://www.visioncenter.org/eyeglasses/smart-glasses/) | reachable (200) | research_news_review, research_optics |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: ALL SMART EYEWEAR](https://lucyd.co/pages/all-collections) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: berlin smart glasses](https://www.latitude52n.com/products/berlin-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: BUY NOW](https://www.everysight.com/products/maverick) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Compare Smart Glasses](https://www.vuzix.com/pages/compare-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Cook Edge](https://dymesty.com/pages/ai-glasses-cook-edge) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Cook Edge](https://dymesty.com/products/dymesty-ai-glasses-cook-edge) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: departure collection](https://www.latitude52n.com/collections/departure-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: DEVELOPERS](https://www.everysight.com/pages/developer) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: EDDIE BAUER](https://lucyd.co/pages/eddie-bauer-collection-web) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Even AI](https://www.evenrealities.com/ai-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Even G2](https://www.evenrealities.com/smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Even G2: The everyday display smart glasses.](https://www.evenrealities.com/smart-glasses/selection) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Explore More Explore More](https://dymesty.com/pages/cook-edge-detail) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Explore now](https://www.latitude52n.com/products/milan-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: GLASSES](https://www.everysight.com/pages/glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: GO3 Bundles](https://www.inmoxr.com/collections/inmo-go3-bundles) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: HUD](https://www.evenrealities.com/hud-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: INMO Air3 Health Safety Warnings](https://www.inmoxr.com/policies/legal-notice) | reachable (200) | research_news_review, model_catalog_review, development_hacking, policy_privacy |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: INMO GO3](https://www.inmoxr.com/products/inmo-go3) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: introducing the milan frame the departure collection s newest addition](https://www.latitude52n.com/blogs/news/introducing-the-milan-frame-the-departure-collection-s-newest-addition) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Jobs Circle](https://dymesty.com/products/dymesty-ai-glasses-jobs-circle) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: keeping your smart glasses safe with ip65](https://www.latitude52n.com/blogs/news/keeping-your-smart-glasses-safe-with-ip65) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: latitude 52 n at berlin fashion week impari partnership](https://www.latitude52n.com/blogs/news/latitude-52-n-at-berlin-fashion-week-impari-partnership) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: LUCYD LYTE](https://lucyd.co/pages/lyte-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: MAVERICK AI](https://www.everysight.com/pages/maverick-ai) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: MAVERICK SPORT](https://www.everysight.com/pages/maverick-sport) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: REEBOK EYEGLASSES](https://lucyd.co/pages/reebok-optical-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Remote Support](https://www.vuzix.com/pages/remote-mentor) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: RX ADAPTER](https://www.everysight.com/products/maverick-sport-rx-adapter) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Sales](https://www.evenrealities.com/smart-glasses-for-sales) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Sign up to get 10% OFF your order! Sign up to get 10% OFF your order!](https://www.inmoxr.com/pages/inmo-go3-ai-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Smart Eyewear](https://www.vuzix.com/pages/smart-eyewear) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: SPORTS](https://lucyd.co/pages/reebok-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Support](https://www.vuzix.com/pages/support) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Support](https://www.vuzix.com/pages/contact-technical-support) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: support@dymesty.com](https://dymesty.com/policies/contact-information) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Teleprompt](https://www.evenrealities.com/teleprompter-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Transcribe](https://www.evenrealities.com/subtitle-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Translate](https://www.evenrealities.com/translation-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Vuzix LX1™](https://www.vuzix.com/products/vuzix-lx1-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Vuzix M400™](https://www.vuzix.com/products/m400-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog watch: dymesty.com](https://dymesty.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking, research_optics |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog watch: www.evenrealities.com](https://www.evenrealities.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog watch: www.everysight.com](https://www.everysight.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog watch: www.latitude52n.com](https://www.latitude52n.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (August 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI Glasses are Here. So Is the Privacy Problem - sify.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUTZPLUljc3Q4WXJzVzZsVlc5NUEyOEUyc1JNNG5iRUJhdFRuc0hwUlZTQTM0UUZGaTY0RzVacmcwaVBTY2tHejFfdURGenRCNzlieTlkWERtNktJVzZkTExudUt2eTdycVRHV1VxdWtmdV9PSnJVNy0yZHh1ZkxQcUhSSzctRmM?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best smart glasses and AR specs: We test Ray-Ban Meta ... - Wareable](https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Best smart glasses in 2026 — top AR and AI glasses worth your money ...](https://www.tomsguide.com/computing/vr-ar/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses in 2026: Wait for Google - CNET](https://www.cnet.com/tech/computing/best-smart-glasses/) | reachable (200) | research_news_review |
@@ -94,21 +45,16 @@ Generated: `2026-08-18T16:07:02.737251+00:00`
 | normal | needs_editorial_verification | direct | [VITURE: Next Gen XR Glasses](https://www.viture.com/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top Models So ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
-| normal | source_review | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | review (503) | research_news_review, model_catalog_review, retail_rebrand_review |
 | normal | source_review | enabling | [America's Best Eyecare + Eyewear](https://www.americasbest.com/) | reachable (200) | research_news_review, research_optics |
-| normal | source_review | direct | [Manufacturer catalog lead: Contact Support](https://www.evenrealities.com/contact) | review (403) | research_news_review, model_catalog_review, development_hacking |
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
 | normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
-| normal | source_review | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | review (403) | research_news_review |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
-| low | source_review |  | [Manufacturer/source watch: VITURE Blog \| XR Glasses News, Reviews & Guides \| VITURE](https://www.viture.com/blog) | reachable (200) |  |
 | low | source_review |  | [CyanBridge v2.0.0 - Local AI Support](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.0.0) | reachable (200) |  |
 | low | source_review |  | [Release v24.248.0928](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v24.248.0928) | reachable (200) |  |
 | low | source_review |  | [Release v24.276.1359](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v24.276.1359) | reachable (200) |  |
 | low | source_review |  | [Fix HeyCyan WiFi connection issues and improve Bluetooth-to-WiFi handoff](https://github.com/ebowwa/HeyCyanSmartGlassesSDK/commit/7d276ef74128220df704bef706d2aae7a2ea102d) | reachable (200) |  |
 | low | source_review |  | [Fix WiFi connectivity workflow and implement media gallery for smart …](https://github.com/ebowwa/HeyCyanSmartGlassesSDK/commit/0e6095e53172c02c9ac4c8ed0378a3eddfd5bcfe) | reachable (200) |  |
-| low | source_review |  | [Manufacturer/source watch: Vuzix Blog – Vuzix Corporation](https://www.vuzix.com/blogs/vuzix-blog) | reachable (200) |  |
 | low | source_review |  | [Release v25.008.1013](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v25.008.1013) | reachable (200) |  |
 | low | source_review |  | [Release v25.080.0838](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v25.080.0838) | reachable (200) |  |
 | low | source_review |  | [Release v25.278.1113](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v25.278.1113) | reachable (200) |  |
@@ -117,8 +63,6 @@ Generated: `2026-08-18T16:07:02.737251+00:00`
 | low | source_review |  | [CyanBridge v1.0.3](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/cyanbridge-v1.0.3) | reachable (200) |  |
 | low | source_review |  | [CyanBridge v2.0.4](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.0.4) | reachable (200) |  |
 | low | source_review |  | [Example OEM app builds (rolling)](https://github.com/Mentra-Community/MentraOS/releases/tag/oem-app-builds) | reachable (200) |  |
-| low | source_review |  | [Manufacturer/source watch: Latest Smart Glasses News Today – RayNeo](https://www.rayneo.com/blogs/news) | reachable (200) |  |
-| low | source_review |  | [Manufacturer/source watch: Newsroom \| Meta Newsroom](https://about.fb.com/news/) | reachable (200) |  |
 | low | source_review |  | [Release v25.031.0924](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v25.031.0924) | reachable (200) |  |
 | low | source_review |  | [Tongyi Qianwen Open Platform Launches, Conversational-as-a-Service Enables Full-Chain Integration in Daily Life Scenarios - AIBase](https://news.google.com/rss/articles/CBMiSkFVX3lxTE16UjZ1WUFucHotdXMxTW5pNWpPWUJHSjZISGFwcElKVXpuOW5GblROdU9KaWhGZGJ5TENrZVlGck55R0JBemtQZUtR?oc=5) | reachable (200) |  |
 | low | source_review |  | [v2.10](https://github.com/Mentra-Community/MentraOS/releases/tag/v2.10) | reachable (200) |  |
@@ -126,9 +70,6 @@ Generated: `2026-08-18T16:07:02.737251+00:00`
 | low | source_review |  | [Add comprehensive WiFi transfer architecture documentation](https://github.com/ebowwa/HeyCyanSmartGlassesSDK/commit/d1d6f12b32d258df56f14184735143ebd0ba0bde) | reachable (200) |  |
 | low | source_review |  | [Caviar's $6,840 Gold Smart Glasses Launch During Privacy Crisis - Memeburn](https://news.google.com/rss/articles/CBMib0FVX3lxTE5ZakFBM0lrMnk0aDUtbzBIZS15WFRGVENlUXRCY0ZrVE0tQUVTTllGSXk1aUdQVW9YN2szaV92cTRfbjc3TmJONlZhUW1Bam84dnpnMTdZS080a1BULXVrYWVvUnZ3bEFTZmVQQ29Jaw?oc=5) | reachable (200) |  |
 | low | source_review |  | [CyanBridge 2.1.0 alpha](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.1.0-alpha) | reachable (200) |  |
-| low | source_review |  | [Manufacturer/source watch: Smart Glasses Blog & Guides \| Even Realities](https://www.evenrealities.com/blog) | reachable (200) |  |
-| low | source_review |  | [Manufacturer/source watch: Snapchat News, Announcements, & Updates \| Snap Newsroom](https://newsroom.snap.com/) | reachable (200) |  |
-| low | source_review |  | [Manufacturer/source watch: XREAL News \| News and Announcements](https://www.xreal.com/news/) | reachable (200) |  |
 | low | source_review |  | [Meta Launches $399 Oakley AI Glasses Is Spotify Down (SiDOKbYZQH) - Mshale](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsaDNzU05WOWhyb1ZpWENTNXV2ZzlWSFlZWC1vZ3I1VkFFOXdJRml3aEFkRnB2dVdhRTh4VGk4dlZTMTNfNW90Mi1DTGJRcjhsWkNVOUlRdlVKamM?oc=5) | reachable (200) |  |
 | low | source_review |  | [Release v24.255.0646](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v24.255.0646) | reachable (200) |  |
 | low | source_review |  | [Snap CEO addresses Specs preorder interest during Q2 earnings call - Mashable](https://news.google.com/rss/articles/CBMidkFVX3lxTE9DZk8xUFFGMmVzM0J6b3hEMUV5SVl4V2VKbXRQNzhPVVRFYzh4am1HU19rSkdrRXFlRTl0UVFGR1hpVEtqNFJUajJxZVA4ZjN1dzdDY3cyc1lIY2pMd1BZM3ptX3pRNXZubjFhLVhoRXFmU0NmeWc?oc=5) | reachable (200) |  |
@@ -200,6 +141,67 @@ Generated: `2026-08-18T16:07:02.737251+00:00`
 | low | source_review |  | [Durable retail watch: Dymesty, AI Smart Glasses, Titanium Frame, Real-Time Translation - Walmart.com](https://www.walmart.com/ip/20091507313) | reachable (200) |  |
 | low | source_review |  | [Durable retail watch: www.amazon.com](https://www.amazon.com/Smart-Glasses/b?ie=UTF8&node=10048708011) | reachable (200) |  |
 | low | source_review |  | [Durable retail watch: www.targetoptical.com](https://www.targetoptical.com/to-us/ai-glasses) | reachable (200) |  |
+| high | catalog_review | direct | [Manufacturer catalog lead: Prescription Lenses](https://www.evenrealities.com/prescription-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
+| high | catalog_review | direct | [Manufacturer catalog lead: Request SDK](https://www.everysight.com/pages/sdk) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| high | catalog_review | direct | [Manufacturer catalog lead: Talk to Our OEM Team](https://www.vuzix.com/pages/learn-more-about-ai-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: ALL SMART EYEWEAR](https://lucyd.co/pages/all-collections) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: berlin smart glasses](https://www.latitude52n.com/products/berlin-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: BUY NOW](https://www.everysight.com/products/maverick) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Compare Smart Glasses](https://www.vuzix.com/pages/compare-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Contact Support](https://www.evenrealities.com/contact) | review (403) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Cook Edge](https://dymesty.com/pages/ai-glasses-cook-edge) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Cook Edge](https://dymesty.com/products/dymesty-ai-glasses-cook-edge) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: departure collection](https://www.latitude52n.com/collections/departure-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: DEVELOPERS](https://www.everysight.com/pages/developer) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: EDDIE BAUER](https://lucyd.co/pages/eddie-bauer-collection-web) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Even AI](https://www.evenrealities.com/ai-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Even G2](https://www.evenrealities.com/smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Even G2: The everyday display smart glasses.](https://www.evenrealities.com/smart-glasses/selection) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Explore More Explore More](https://dymesty.com/pages/cook-edge-detail) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Explore now](https://www.latitude52n.com/products/milan-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: GLASSES](https://www.everysight.com/pages/glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: GO3 Bundles](https://www.inmoxr.com/collections/inmo-go3-bundles) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: HUD](https://www.evenrealities.com/hud-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: INMO Air3 Health Safety Warnings](https://www.inmoxr.com/policies/legal-notice) | reachable (200) | research_news_review, model_catalog_review, development_hacking, policy_privacy |
+| normal | catalog_review | direct | [Manufacturer catalog lead: INMO GO3](https://www.inmoxr.com/products/inmo-go3) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: introducing the milan frame the departure collection s newest addition](https://www.latitude52n.com/blogs/news/introducing-the-milan-frame-the-departure-collection-s-newest-addition) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Jobs Circle](https://dymesty.com/products/dymesty-ai-glasses-jobs-circle) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: keeping your smart glasses safe with ip65](https://www.latitude52n.com/blogs/news/keeping-your-smart-glasses-safe-with-ip65) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: latitude 52 n at berlin fashion week impari partnership](https://www.latitude52n.com/blogs/news/latitude-52-n-at-berlin-fashion-week-impari-partnership) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: LUCYD LYTE](https://lucyd.co/pages/lyte-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: MAVERICK AI](https://www.everysight.com/pages/maverick-ai) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: MAVERICK SPORT](https://www.everysight.com/pages/maverick-sport) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: REEBOK EYEGLASSES](https://lucyd.co/pages/reebok-optical-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Remote Support](https://www.vuzix.com/pages/remote-mentor) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: RX ADAPTER](https://www.everysight.com/products/maverick-sport-rx-adapter) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Sales](https://www.evenrealities.com/smart-glasses-for-sales) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Sign up to get 10% OFF your order! Sign up to get 10% OFF your order!](https://www.inmoxr.com/pages/inmo-go3-ai-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Smart Eyewear](https://www.vuzix.com/pages/smart-eyewear) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: SPORTS](https://lucyd.co/pages/reebok-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Support](https://www.vuzix.com/pages/support) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Support](https://www.vuzix.com/pages/contact-technical-support) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: support@dymesty.com](https://dymesty.com/policies/contact-information) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Teleprompt](https://www.evenrealities.com/teleprompter-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Transcribe](https://www.evenrealities.com/subtitle-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Translate](https://www.evenrealities.com/translation-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Vuzix LX1™](https://www.vuzix.com/products/vuzix-lx1-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| normal | catalog_review | direct | [Manufacturer catalog lead: Vuzix M400™](https://www.vuzix.com/products/m400-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| high | source_monitor | direct | [Manufacturer/source watch: News – Rokid](https://global.rokid.com/blogs/news) | reachable (200) | research_news_review, report_card_evidence, development_hacking, research_optics |
+| high | source_monitor | direct | [Manufacturer catalog watch: lucyd.co](https://lucyd.co/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking, research_optics, policy_privacy |
+| high | source_monitor | direct | [Manufacturer catalog watch: www.vuzix.com](https://www.vuzix.com/pages/smart-glasses) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking, research_optics |
+| high | source_monitor | direct | [Manufacturer catalog watch: www.hallidayglobal.com](https://www.hallidayglobal.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, deep_research |
+| high | source_monitor | direct | [Manufacturer catalog watch: www.inmoxr.com](https://www.inmoxr.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, research_optics |
+| normal | source_monitor | direct | [Manufacturer catalog watch: dymesty.com](https://dymesty.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking, research_optics |
+| normal | source_monitor | direct | [Manufacturer catalog watch: www.evenrealities.com](https://www.evenrealities.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, retail_rebrand_review |
+| normal | source_monitor | direct | [Manufacturer catalog watch: www.everysight.com](https://www.everysight.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking |
+| normal | source_monitor | direct | [Manufacturer catalog watch: www.latitude52n.com](https://www.latitude52n.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
+| low | source_monitor |  | [Manufacturer/source watch: VITURE Blog \| XR Glasses News, Reviews & Guides \| VITURE](https://www.viture.com/blog) | reachable (200) |  |
+| low | source_monitor |  | [Manufacturer/source watch: Vuzix Blog – Vuzix Corporation](https://www.vuzix.com/blogs/vuzix-blog) | reachable (200) |  |
+| low | source_monitor |  | [Manufacturer/source watch: Latest Smart Glasses News Today – RayNeo](https://www.rayneo.com/blogs/news) | reachable (200) |  |
+| low | source_monitor |  | [Manufacturer/source watch: Newsroom \| Meta Newsroom](https://about.fb.com/news/) | reachable (200) |  |
+| low | source_monitor |  | [Manufacturer/source watch: Smart Glasses Blog & Guides \| Even Realities](https://www.evenrealities.com/blog) | reachable (200) |  |
+| low | source_monitor |  | [Manufacturer/source watch: Snapchat News, Announcements, & Updates \| Snap Newsroom](https://newsroom.snap.com/) | reachable (200) |  |
+| low | source_monitor |  | [Manufacturer/source watch: XREAL News \| News and Announcements](https://www.xreal.com/news/) | reachable (200) |  |
 | normal | watching | adjacent | [Apple AirPods With Cameras: macOS Leak Reveals Visual Intelligence Feature – Check Expected Design, Price, Launch Date, Features, Specificat](https://news.google.com/rss/articles/CBMipgJBVV95cUxQZUFiT0hEXzQzM2Zwc0k3VUJmQ3pkVDEwWUYwMl9zM0Y0WXdqRWVuLWZOWktrRzE4amxCdHZIRHRXQ01iVkJEaXZiRk4wTHc5WXdiVkFSVmhBN09OQS1nM0NBY1M5MUJobVhQR1lVbGcyZ1dZLU9Za2xyTU1pR0tkTDZ5WWstYVFtQV94aHJhVWFxbS0wWDlnbFNMZ0c5Y0hVWDg3UjBMbEVOcWJJV1laNi1SVVV6WldDZmZEMXJZYkp6ZXJjN1dBMENtbVU5MDZCNWh0QTVDdjh1bTg3UlhIam5HZ1dzaE96WnViVW9oN2VVVlpDN1ZtVUJHTHFUdG9MWVB0V2R0c1VZajh1UVMxNnhhcTdpZjdfZHcwVXBBZ2NZWWlJYkHSAaYCQVVfeXFMUGVBYk9IRF80MzNmcHNJN1VCZkN6ZFQxMFlGMDJfczNGNFl3akVlbi1mTlpLa0cxOGpsQnR2SER0V0NNYlZCRGl2YkZOMEx3OVl3YlZBUlZoQTdPTkEtZzNDQWNTOTFCaG1YUEdZVWxnMmdXWS1PWWtsck1NaUdLZEw2eVlrLWFRbUFfeGhyYVVhcW0tMFg5Z2xTTGdHOWNIVVg4N1IwTGxFTnFiSVdZWjYtUlVVelpXQ2ZmRDFyWWJKemVyYzdXQTBDbW1VOTA2QjVodEE1Q3Y4dW04N1JYSGpuR2dXc2hPelp1YlVvaDdlVVZaQzdWbVVCR0xxVHRvTFlQdFdkdHNVWWo4dVFTMTZ4YXE3aWY3X2R3MFVwQWdjWVlpSWJB?oc=5) | reachable (200) | research_news_review, watching, model_catalog_review, retail_rebrand_review, adjacent_radar |
 | normal | watching | speculative | [Apple iPhone 18 event — all the new products expected to launch in September - tomsguide.com](https://news.google.com/rss/articles/CBMitgFBVV95cUxNWWZiTDR6S1pvWXhwMFFCbmhCTW5abjRmLVRTcWFxUzVrdUJxSWN2Smh0b3BVRU02aDlIaHVTQ3dJNHphcnhXRFY2dVI4SXZ5VlhhWjVEZ3l3bWlKa1pJNWRWSWtxR2gtc3d3aGE1ZldkQjMxdFNFZzFHZXhpWm1tR1RwanJ1TFBpRHhjVlpIYWNydDJSSzZJaVhhMTlRczJPS0kweG9jUEtDNmFWN0x1X3ZhYVpHUQ?oc=5) | reachable (200) | research_news_review, watching, model_catalog_review |
 | low | watching | speculative | [(VIDEO) Samsung Galaxy S27 Ultra Design Leak Points to Major Horizontal Camera Redesign for 2027 Flagship - ibtimes.com.au](https://news.google.com/rss/articles/CBMihwFBVV95cUxPVWptaFZWbVI3UGQwNGFPZUZVX3RRT2YtY3pkN0ZzaE9mbWVyVGxoYW1kMWpGZ3pJYzhGZlRBRHdPdnh5Y3Znd2FXcUd6VWlWNTZGdjIwaFVUX1A1N3k5aDJNY0tRS2Q2ODNjRzJqYkV5TkdhZ0REblRUX0NBVVVzQlJwUVFNVE0?oc=5) | reachable (200) | research_news_review, watching, report_card_evidence |
@@ -273,8 +275,10 @@ Generated: `2026-08-18T16:07:02.737251+00:00`
 
 ## Meaning of states
 
-- `needs_editorial_verification` — direct/enabling glasses material ready for factual review.
+- `needs_editorial_verification` — a concrete direct/enabling development ready for factual review.
 - `source_review` — potentially relevant, but the source or enabling relationship needs manual attention.
+- `catalog_review` — a static manufacturer catalog/developer link that can improve model research but is not a news event.
+- `source_monitor` — a configured standing source surface retained for future change detection, not a new editorial event.
 - `watching` — rumor/speculation; retain without public promotion.
 - `adjacent_radar` — neighboring wearable/HCI material without a concrete glasses publication gate.
 - `rejected_noise` — irrelevant or generic non-eyewear material that should not advance.
