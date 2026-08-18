@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Regression checks for durable editorial triage state."""
-from triage_news_reviews import automated_state, preserve_editorial_fields, review_key
+from triage_news_reviews import (
+    automated_state,
+    preserve_editorial_fields,
+    review_key,
+    should_check_source,
+)
 
 
 def main() -> int:
@@ -51,6 +56,39 @@ def main() -> int:
         "url": "https://example.invalid/waveguide",
     }
     assert automated_state(waveguide, {"status": "reachable"}) == "needs_editorial_verification"
+    assert should_check_source(waveguide) is True
+
+    standing_watch = {
+        "relationship": "direct",
+        "content_types": ["model", "video"],
+        "title": "Manufacturer/source watch: News – Rokid",
+        "source": "manufacturer-watch",
+        "url": "https://global.rokid.com/blogs/news",
+    }
+    assert automated_state(standing_watch, {"status": "reachable"}) == "source_monitor"
+    assert should_check_source(standing_watch) is False
+
+    catalog_watch = {
+        "relationship": "direct",
+        "content_types": ["model"],
+        "title": "Manufacturer catalog watch: lucyd.co",
+        "source": "configured manufacturer catalog",
+        "discovery_channel": "manufacturer_catalog",
+        "url": "https://lucyd.co/",
+    }
+    assert automated_state(catalog_watch, {"status": "reachable"}) == "source_monitor"
+    assert should_check_source(catalog_watch) is False
+
+    catalog_lead = {
+        "relationship": "direct",
+        "content_types": ["sdk"],
+        "title": "Manufacturer catalog lead: Request SDK",
+        "source": "https://www.everysight.com/",
+        "discovery_channel": "manufacturer_catalog",
+        "url": "https://www.everysight.com/pages/sdk",
+    }
+    assert automated_state(catalog_lead, {"status": "reachable"}) == "catalog_review"
+    assert should_check_source(catalog_lead) is False
 
     # Collector IDs are observations, not review identity. The same source URL must
     # consume one editorial slot even when two discovery lanes assign different IDs.
