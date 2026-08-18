@@ -1,14 +1,14 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-18T19:44:49.098315+00:00`
+Generated: `2026-08-18T20:44:00.552206+00:00`
 
-- Intake files inspected: **21**
-- Candidates retained in this review window/history: **269**
+- Intake files inspected: **22**
+- Candidates retained in this review window/history: **270**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 44
+- `adjacent_radar`: 45
 - `catalog_review`: 45
 - `editorial_published`: 2
 - `editorial_watch`: 1
@@ -244,6 +244,7 @@ Generated: `2026-08-18T19:44:49.098315+00:00`
 | low | adjacent_radar | adjacent | [Apple AirPods with camera spotted in macOS update: First look at new AI-powered earbuds and what they do - Business Today](https://news.google.com/rss/articles/CBMihwJBVV95cUxQamNLLVl3LVoxMEpqMV9oNTRHeEkxYlpSdmxOTDloeTdXNHBjblRkYTVmM3VVZVN0WWFYWnFORU81Rk56TVluekw1VE5OVzFDMDh4aUlYOGFMNGhZek5WOE1pQlNYN0oxaUxwVmZpSXpzZnU5RkJMMUMxc0JhTkw1TnVvbXRrN3dYeXZYWDNZQzFndXVDOHFFZlRSMUpRbjRtdS1xQndTbmlfRGVsR09CaHRhVDl1VWl0UVFHTW15WndRSHhUV3F1Z1pWRlF3Ujh6YzFtRGJBTVpBUThKOWJHTmQwdTIzbXlIem84VXBqXzAwREhETXA4amt0MDZ4NjlfM3lURS0wONIBhwJBVV95cUxQamNLLVl3LVoxMEpqMV9oNTRHeEkxYlpSdmxOTDloeTdXNHBjblRkYTVmM3VVZVN0WWFYWnFORU81Rk56TVluekw1VE5OVzFDMDh4aUlYOGFMNGhZek5WOE1pQlNYN0oxaUxwVmZpSXpzZnU5RkJMMUMxc0JhTkw1TnVvbXRrN3dYeXZYWDNZQzFndXVDOHFFZlRSMUpRbjRtdS1xQndTbmlfRGVsR09CaHRhVDl1VWl0UVFHTW15WndRSHhUV3F1Z1pWRlF3Ujh6YzFtRGJBTVpBUThKOWJHTmQwdTIzbXlIem84VXBqXzAwREhETXA4amt0MDZ4NjlfM3lURS0wOA?oc=5) | reachable (200) | research_news_review, adjacent_radar |
 | low | adjacent_radar | adjacent | [BTQ Technologies Appoints Dr. Michael Grace to Advance QCIM Product Security and Commercialization - StreetInsider](https://news.google.com/rss/articles/CBMi6AFBVV95cUxOOTI5MzAyaUtYYzR5Vzd6SFNFNUpFcGFscDNSdG82eVQ5d1pJVWJ6Tkl5ZV9xZWlUYjUyTDFTS09RWDh1X19TbVduVFRrcmducG1KWjBaN1IyRGVLR0E3R0Fad1VjbW1rWGdILVJ4RWtRWHpMMVZmUFM1YVQ1RTRRczJtNF9uZldpU185R3c4MHdjb0ExWkJaMVlGT2h3MmV1bE01Q25lV1dGSUZBSVdzWS1nQmhuWDR0QWdLbi1UZWd5QWZ4TjllZ3o3Z215aUJRb2FGT0VjaWY5LWNQbWxJczU0Z2o0S1It?oc=5) | not_checked | research_news_review, adjacent_radar |
 | low | adjacent_radar | adjacent | [Apple Leaks Camera-Enabled AirPods in macOS Code - techbuzz.ai](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcmhCMGxyX1JmTmlCUmozY3JxTzNOUUcxM251VWZZTllRaEF4MUk2STdpSl9KUTM2RHFJcEtSOVJTRjZabDc5TWQ5QXNGMVFkRjhOM2h1aFlPQ0FvZTBCeV9OeFh2M1dOUWJFa05nSGo3bmNnNkFJd3hST3JGcTY1dzZ6OWg3RGx1?oc=5) | not_checked | research_news_review, adjacent_radar |
+| low | adjacent_radar | adjacent | [Brain-Computer Interface Technology Makes School More Accessible - EdTech Magazine](https://news.google.com/rss/articles/CBMitgFBVV95cUxPRng5WDcybzEwWGVGNW9vREFwVlJ2UlY1ZmI0SHNYWjZ1SEJsVk44YkJWeXJCby1uelFrY3FXbUVOWVl3T19NeV9mZXc3TGI2UlgwOU9IWnJ5UG1jVVJPVWRzZHJWanJQbUtLbHV1ejBYRFh0VnBjaUhFS3drUnFzbUsxT2Q0WXNoSjhUREpVNHpQWU1JTXpKWGgzVWQ0U184NXZySEpJckM1amFORmNXZGVTQ2swZw?oc=5) | not_checked | research_news_review, adjacent_radar |
 | low | adjacent_radar | adjacent | [Aluminium details on AutoCAD 392 free CAD blocks \| Bibliocad](https://www.bibliocad.com/en/library/doors-and-windows/aluminium-details/) | reachable (200) | research_news_review, development_hacking, adjacent_radar |
 | low | adjacent_radar | adjacent | [aluminium profile - Recent models \| 3D CAD Model Collection - GrabCAD](https://grabcad.com/library/tag/aluminium%20profile) | review (403) | research_news_review, development_hacking, community_evidence_review, adjacent_radar |
 | low | adjacent_radar | adjacent | [Aluminum Profile: 3D models - SOLIDWORKS, Inventor, CATIA V5, AutoCAD ...](https://www.traceparts.com/en/search/forrun-mechanical-standard-parts-aluminum-profile?CatalogPath=FORRUN%3AFORRUN.010.090) | review (403) | research_news_review, adjacent_radar |
@@ -271,7 +272,6 @@ Generated: `2026-08-18T19:44:49.098315+00:00`
 | low | adjacent_radar | adjacent | [NEAR: The Currency of Agents](https://www.near.org/) | reachable (200) | research_news_review, adjacent_radar |
 | low | adjacent_radar | adjacent | [NEAR: The Definitive Guide](https://www.near.org/blog/what-is-near-protocol) | reachable (200) | research_news_review, adjacent_radar |
 | low | adjacent_radar | adjacent | [Nearmap Login \| MapBrowser and MyAccount](https://apps.nearmap.com/maps/) | reachable (200) | research_news_review, adjacent_radar |
-| low | adjacent_radar | adjacent | [Share your calendar in Outlook \| Microsoft Support](https://support.microsoft.com/en-us/outlook/training/share-your-calendar-in-outlook) | reachable (200) | research_news_review, report_card_evidence, adjacent_radar |
 
 ## Meaning of states
 
