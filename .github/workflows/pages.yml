@@ -83,6 +83,30 @@ jobs:
       - name: Build site
         run: mkdocs build --strict
 
+      - name: Stamp deployment provenance
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          payload = {
+              "schema_version": 1,
+              "sha": os.environ["GITHUB_SHA"],
+              "repository": os.environ["GITHUB_REPOSITORY"],
+              "ref": os.environ["GITHUB_REF"],
+              "workflow": os.environ["GITHUB_WORKFLOW"],
+              "run_id": os.environ["GITHUB_RUN_ID"],
+              "run_number": os.environ["GITHUB_RUN_NUMBER"],
+              "event_name": os.environ["GITHUB_EVENT_NAME"],
+          }
+          Path("site/deployment.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+          Path("site/deployment.txt").write_text(payload["sha"] + "\n", encoding="utf-8")
+          print(f"Stamped deployment provenance for {payload['sha']}")
+          PY
+
       - name: Verify built-site internal links and fragments
         run: python scripts/verify_built_site_links.py
 
@@ -104,6 +128,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          test -s site/deployment.json
+          test -s site/deployment.txt
           test -s site/timeline/events.json
           test -s site/timeline/auto-events.json
           test -s site/evidence/resources.json
@@ -114,11 +140,18 @@ jobs:
           test -s site/data/public/schema.json
           test -s site/data/public/models/gls-0001.json
           test -s site/data/public/models/gls-0146.json
+          test -s site/data/citations/index.json
+          test -s site/data/citations/gls-0039.bib
+          test -s site/data/citations/gls-0039.json
+          test -s site/javascripts/glassesresearch-model-card.js
+          test -s site/docs/REFERENCE_DESK/index.html
+          test -s site/docs/EMBED_GLASSESRESEARCH/index.html
           test -s site/docs/COMPARISON_ENGINE/index.html
           test -s site/docs/START_BY_NEED/index.html
           test -s site/docs/RESEARCH_STANDARDS/index.html
           test -s site/docs/CONTRIBUTORS/index.html
           test -s site/docs/PRESERVATION/index.html
+          test -s site/docs/TOOLS/index.html
           test -s site/resources/COMMUNITY_AND_DEVELOPMENT/index.html
           test -s site/models/AnkoCameraGlasses/index.html
           test -s site/models/RETAIL_REBRANDS/index.html
@@ -130,12 +163,20 @@ jobs:
           test -s site/docs/javascripts/comparison-engine.js
           grep -Fq 'TL-0001' site/timeline/events.json
           grep -Fq 'EV-0001' site/evidence/resources.json
+          python -c "import json, os; p=json.load(open('site/deployment.json')); assert p['sha']==os.environ['GITHUB_SHA']; print(f'Built provenance verified: {p[\"sha\"]}')"
           python -c "import json; p=json.load(open('site/data/devices.json', encoding='utf-8')); r=p.get('records', []); c=p.get('record_count'); assert isinstance(c, int) and c > 0; assert c == len(r); ids=[x.get('id') for x in r]; assert len(ids) == len(set(ids)); print(f'Built catalog verified dynamically: {c} devices')"
           python -c "import json; d=json.load(open('site/data/devices.json')); p=json.load(open('site/data/public/models.json')); assert p['record_count']==d['record_count']; assert len(p['records'])==p['record_count']; assert all('claims' in r and 'finder_capabilities' in r for r in p['records']); print(f'Public dataset verified dynamically: {p[\"record_count\"]} models')"
+          python -c "import json; d=json.load(open('site/data/devices.json')); c=json.load(open('site/data/citations/index.json')); assert c['record_count']==d['record_count']; assert any(r['id']=='GLS-0039' for r in c['records']); print(f'Citation distribution verified dynamically: {c[\"record_count\"]} models')"
           expected="$(python -c "import json; print(json.load(open('site/data/devices.json'))['record_count'])")"
           test "$(find site/data/public/models -maxdepth 1 -name 'gls-*.json' | wc -l)" -eq "$expected"
+          test "$(find site/data/citations -maxdepth 1 -name 'gls-*.json' | wc -l)" -eq "$expected"
+          test "$(find site/data/citations -maxdepth 1 -name 'gls-*.bib' | wc -l)" -eq "$expected"
           test "$(find site/models/catalog -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -eq "$expected"
           test "$(find site/guides -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -eq 12
+          grep -Fq 'verified price ceilings, and Report Card minimum scores' site/docs/TOOLS/index.html
+          grep -Fq 'Reference desk' site/docs/REFERENCE_DESK/index.html
+          grep -Fq 'Embed a GlassesResearch model card' site/docs/EMBED_GLASSESRESEARCH/index.html
+          grep -Fq 'cookie-free' site/javascripts/glassesresearch-model-card.js
           grep -Fq 'Google Glass' site/lineages/index.html
           grep -Fq 'Vuzix' site/lineages/index.html
           grep -Fq 'industry-timeline-app' site/docs/INDUSTRY_TIMELINE/index.html
@@ -171,30 +212,52 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Verify live site data
+      - name: Verify live deployment provenance and features
         shell: bash
         run: |
           set -euo pipefail
-          for attempt in 1 2 3 4 5; do
-            if curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/robots.txt -o /tmp/robots.txt \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/sitemap.xml -o /tmp/sitemap.xml \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/timeline/events.json -o /tmp/timeline.json \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/data/comparisons.json -o /tmp/comparisons.json \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/data/devices.json -o /tmp/devices.json \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/data/public/models.json -o /tmp/public-models.json \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/data/public/models.csv -o /tmp/public-models.csv \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/docs/javascripts/comparison-engine.js -o /tmp/comparison-engine.js \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/resources/COMMUNITY_AND_DEVELOPMENT/ -o /tmp/community.html \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/models/AnkoCameraGlasses/ -o /tmp/anko.html \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/models/RETAIL_REBRANDS/ -o /tmp/rebrands.html \
-              && curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/lineages/ -o /tmp/lineages.html \
+          base='https://glassesresearch.org'
+          for attempt in $(seq 1 12); do
+            bust="deploy=${GITHUB_SHA}-${GITHUB_RUN_ID}-${attempt}"
+            curl_live() {
+              curl --fail --silent --show-error --location --max-time 20 \
+                -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+                "${base}${1}?${bust}" -o "$2"
+            }
+
+            if curl_live /deployment.json /tmp/deployment.json \
+              && curl_live /robots.txt /tmp/robots.txt \
+              && curl_live /sitemap.xml /tmp/sitemap.xml \
+              && curl_live /timeline/events.json /tmp/timeline.json \
+              && curl_live /data/comparisons.json /tmp/comparisons.json \
+              && curl_live /data/devices.json /tmp/devices.json \
+              && curl_live /data/public/models.json /tmp/public-models.json \
+              && curl_live /data/public/models.csv /tmp/public-models.csv \
+              && curl_live /data/citations/index.json /tmp/citations.json \
+              && curl_live /data/citations/gls-0039.bib /tmp/gls-0039.bib \
+              && curl_live /javascripts/glassesresearch-model-card.js /tmp/model-card.js \
+              && curl_live /docs/TOOLS/ /tmp/tools.html \
+              && curl_live /docs/REFERENCE_DESK/ /tmp/reference-desk.html \
+              && curl_live /docs/EMBED_GLASSESRESEARCH/ /tmp/embed.html \
+              && curl_live /docs/javascripts/comparison-engine.js /tmp/comparison-engine.js \
+              && curl_live /resources/COMMUNITY_AND_DEVELOPMENT/ /tmp/community.html \
+              && curl_live /models/AnkoCameraGlasses/ /tmp/anko.html \
+              && curl_live /models/RETAIL_REBRANDS/ /tmp/rebrands.html \
+              && curl_live /lineages/ /tmp/lineages.html \
+              && python -c "import json, os; p=json.load(open('/tmp/deployment.json')); expected=os.environ['GITHUB_SHA']; actual=p.get('sha'); assert actual==expected, f'stale production: expected {expected}, got {actual}'; print(f'Live deployment SHA verified: {actual}')" \
               && grep -Fq 'Sitemap: https://glassesresearch.org/sitemap.xml' /tmp/robots.txt \
               && grep -Fq 'https://glassesresearch.org/' /tmp/sitemap.xml \
               && grep -Fq 'TL-0001' /tmp/timeline.json \
               && grep -Fq 'record_count' /tmp/comparisons.json \
               && python -c "import json; p=json.load(open('/tmp/devices.json', encoding='utf-8')); r=p.get('records', []); c=p.get('record_count'); assert isinstance(c, int) and c > 0; assert c == len(r); print(f'Live catalog verified dynamically: {c} devices')" \
               && python -c "import json; d=json.load(open('/tmp/devices.json')); p=json.load(open('/tmp/public-models.json')); assert p['record_count']==d['record_count']; print(f'Live public dataset verified: {p[\"record_count\"]} models')" \
+              && python -c "import json; d=json.load(open('/tmp/devices.json')); c=json.load(open('/tmp/citations.json')); assert c['record_count']==d['record_count']; assert any(r['id']=='GLS-0039' for r in c['records']); print(f'Live citation distribution verified: {c[\"record_count\"]} models')" \
               && grep -Fq 'id,maker,model,era,state,type,access' /tmp/public-models.csv \
+              && grep -Fq 'verified price ceilings, and Report Card minimum scores' /tmp/tools.html \
+              && grep -Fq 'Reference desk' /tmp/reference-desk.html \
+              && grep -Fq 'Embed a GlassesResearch model card' /tmp/embed.html \
+              && grep -Fq 'GLS-0039' /tmp/gls-0039.bib \
+              && grep -Fq 'cookie-free' /tmp/model-card.js \
               && grep -Fq 'models available for comparison' /tmp/comparison-engine.js \
               && grep -Fq 'https://www.reddit.com/r/SmartGlasses/' /tmp/community.html \
               && grep -Fq 'https://github.com/Mentra-Community' /tmp/community.html \
@@ -203,11 +266,11 @@ jobs:
               && grep -Fq 'Retail Rebrands' /tmp/rebrands.html \
               && grep -Fq 'Google Glass' /tmp/lineages.html \
               && grep -Fq 'Vuzix' /tmp/lineages.html; then
-              echo 'Live site verified: canonical public dataset, dynamic device catalog, lineages, comparison data, and ecosystem-wide community links are present.'
+              echo "Live site verified at exact deployment SHA ${GITHUB_SHA}; deployment provenance and current feature smoke tests passed."
               exit 0
             fi
-            echo "Attempt ${attempt}/5 failed; waiting for Pages/DNS propagation..."
+            echo "Attempt ${attempt}/12 did not yet match deployment ${GITHUB_SHA}."
             sleep 15
           done
-          echo 'Live endpoint verification failed.' >&2
+          echo "Live deployment verification failed: production did not prove SHA ${GITHUB_SHA} with required feature surfaces." >&2
           exit 1
