@@ -173,7 +173,7 @@ jobs:
           test "$(find site/data/citations -maxdepth 1 -name 'gls-*.bib' | wc -l)" -eq "$expected"
           test "$(find site/models/catalog -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -eq "$expected"
           test "$(find site/guides -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -eq 12
-          grep -Fq 'Price-band controls and Report Card minimum-score filters are planned' site/docs/TOOLS/index.html
+          grep -Fq 'verified price ceilings, and Report Card minimum scores' site/docs/TOOLS/index.html
           grep -Fq 'Reference desk' site/docs/REFERENCE_DESK/index.html
           grep -Fq 'Embed a GlassesResearch model card' site/docs/EMBED_GLASSESRESEARCH/index.html
           grep -Fq 'cookie-free' site/javascripts/glassesresearch-model-card.js
@@ -253,7 +253,7 @@ jobs:
               && python -c "import json; d=json.load(open('/tmp/devices.json')); p=json.load(open('/tmp/public-models.json')); assert p['record_count']==d['record_count']; print(f'Live public dataset verified: {p[\"record_count\"]} models')" \
               && python -c "import json; d=json.load(open('/tmp/devices.json')); c=json.load(open('/tmp/citations.json')); assert c['record_count']==d['record_count']; assert any(r['id']=='GLS-0039' for r in c['records']); print(f'Live citation distribution verified: {c[\"record_count\"]} models')" \
               && grep -Fq 'id,maker,model,era,state,type,access' /tmp/public-models.csv \
-              && grep -Fq 'Price-band controls and Report Card minimum-score filters are planned' /tmp/tools.html \
+              && grep -Fq 'verified price ceilings, and Report Card minimum scores' /tmp/tools.html \
               && grep -Fq 'Reference desk' /tmp/reference-desk.html \
               && grep -Fq 'Embed a GlassesResearch model card' /tmp/embed.html \
               && grep -Fq 'GLS-0039' /tmp/gls-0039.bib \
