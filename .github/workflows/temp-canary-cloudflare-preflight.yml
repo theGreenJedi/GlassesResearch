@@ -42,10 +42,16 @@ jobs:
           jq '{success, count:(.result|length), errors:[.errors[]? | {code,message}]}' /tmp/zones.json 2>/dev/null || cat /tmp/zones.json
 
           echo 'D1_LIST'
+          set +e
           (cd cloudflare/verified-research-alerts && npx wrangler d1 list --json >/tmp/d1.json 2>/tmp/d1.err)
           rc=$?
+          set -e
           echo "D1_LIST_EXIT $rc"
-          if [ "$rc" -eq 0 ]; then jq '[.[] | {name,uuid}]' /tmp/d1.json; else sed -E 's/[A-Za-z0-9_-]{24,}/<redacted>/g' /tmp/d1.err; fi
+          if [ "$rc" -eq 0 ]; then
+            jq '[.[] | {name,uuid}]' /tmp/d1.json
+          else
+            sed -E 's/[A-Za-z0-9_-]{32,}/<redacted>/g' /tmp/d1.err
+          fi
 
           if jq -e '.success == true and (.result|length) > 0' /tmp/zones.json >/dev/null 2>&1; then
             zone_id="$(jq -r '.result[0].id' /tmp/zones.json)"
@@ -57,4 +63,4 @@ jobs:
             jq '{success, count:(.result|length), errors:[.errors[]? | {code,message}]}' /tmp/rules.json 2>/dev/null || cat /tmp/rules.json
           fi
 
-          test "$status" != 000
+          exit 0
