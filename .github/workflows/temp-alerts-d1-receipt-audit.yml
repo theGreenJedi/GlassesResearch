@@ -1,0 +1,48 @@
+name: Temporary alerts D1 receipt audit
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN_RAW: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    defaults:
+      run:
+        working-directory: cloudflare/verified-research-alerts
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - name: Install Wrangler
+        run: npm install
+      - name: Normalize Cloudflare token
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${CLOUDFLARE_ACCOUNT_ID:-}"
+          test -n "${CLOUDFLARE_API_TOKEN_RAW:-}"
+          token="$(printf '%s' "$CLOUDFLARE_API_TOKEN_RAW" | tr -d '\r\n' | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//; s/^Bearer[[:space:]]+//I')"
+          printf 'CLOUDFLARE_API_TOKEN=%s\n' "$token" >> "$GITHUB_ENV"
+      - name: Query privacy-safe production aggregates
+        shell: bash
+        run: |
+          set -euo pipefail
+          runq() {
+            local label="$1" sql="$2"
+            echo "--- $label ---"
+            npx wrangler d1 execute glassesresearch-alerts --remote --json --command "$sql" \
+              | jq '[.[].results[]]'
+          }
+          runq SUBSCRIPTIONS "SELECT status, cadence, COUNT(*) AS count, SUM(CASE WHEN last_sent_at IS NOT NULL THEN 1 ELSE 0 END) AS with_research_send, MAX(last_sent_at) AS latest_last_sent_at FROM subscribers GROUP BY status, cadence ORDER BY status, cadence;"
+          runq PUBLICATION "SELECT id, title, published_at FROM published_items WHERE id='gr-2026-08-17-lucyd-armor-gls-0159';"
+          runq LUCYD_DELIVERIES "SELECT COUNT(*) AS delivery_receipts, MAX(delivered_at) AS latest_delivery_receipt FROM deliveries WHERE publication_id='gr-2026-08-17-lucyd-armor-gls-0159';"
+          runq TOTAL_DELIVERIES "SELECT COUNT(*) AS total_delivery_receipts, MAX(delivered_at) AS latest_delivery_receipt FROM deliveries;"
+          runq FILTER_SHAPE "SELECT status, cadence, COUNT(*) AS count, SUM(CASE WHEN json_array_length(json_extract(include_json,'$.models')) + json_array_length(json_extract(include_json,'$.brands_lineages')) + json_array_length(json_extract(include_json,'$.topics')) = 0 THEN 1 ELSE 0 END) AS follow_everything, SUM(CASE WHEN json_array_length(json_extract(exclude_json,'$.models')) + json_array_length(json_extract(exclude_json,'$.brands_lineages')) + json_array_length(json_extract(exclude_json,'$.topics')) = 0 THEN 1 ELSE 0 END) AS exclude_nothing FROM subscribers GROUP BY status, cadence ORDER BY status, cadence;"
