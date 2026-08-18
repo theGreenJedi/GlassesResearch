@@ -1,0 +1,60 @@
+name: Temporary seed durable triage backlog
+
+on:
+  pull_request:
+    branches:
+      - knowledge-intake
+    paths:
+      - '.github/workflows/seed-triage-backlog-temp.yml'
+      - 'scripts/triage_news_reviews.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seed-triage-backlog-temp
+  cancel-in-progress: false
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out seed branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Stop when the durable queue is already seeded
+        id: state
+        shell: bash
+        run: |
+          if [ -f research/news-reviews/queue.json ] && [ -f research/news-reviews/latest.md ]; then
+            echo 'seed=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'seed=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        if: steps.state.outputs.seed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate durable triage backlog
+        if: steps.state.outputs.seed == 'true'
+        run: |
+          python -m py_compile scripts/triage_news_reviews.py
+          python scripts/triage_news_reviews.py --lookback-days 14 --verify-reachability --timeout 8 --workers 12
+          cat research/news-reviews/latest.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit seeded queue to this branch
+        if: steps.state.outputs.seed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'glassesresearch-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add research/news-reviews/queue.json research/news-reviews/latest.md research/news-reviews/*-auto-triage.md
+          git commit -m 'Seed durable editorial triage backlog'
+          git push origin HEAD:${{ github.head_ref }}
