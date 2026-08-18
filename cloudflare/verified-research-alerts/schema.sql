@@ -35,3 +35,17 @@ CREATE TABLE IF NOT EXISTS deliveries (
   delivered_at TEXT NOT NULL,
   PRIMARY KEY (subscriber_id, publication_id)
 );
+
+CREATE TABLE IF NOT EXISTS canary_dispatches (
+  publication_id TEXT PRIMARY KEY,
+  attempted_at TEXT NOT NULL,
+  provider_accepted_at TEXT,
+  provider_message_id TEXT,
+  last_error TEXT
+);
+
+CREATE TABLE IF NOT EXISTS canary_receipts (
+  publication_id TEXT PRIMARY KEY,
+  received_at TEXT NOT NULL,
+  received_message_id TEXT
+);

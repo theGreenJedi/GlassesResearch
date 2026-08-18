@@ -1,10 +1,14 @@
-name: Validate Verified Research Alerts Worker
+name: Validate Verified Research Alerts Workers
 
 on:
   pull_request:
     paths:
       - 'cloudflare/verified-research-alerts/**'
+      - 'cloudflare/verified-research-canary/**'
+      - 'scripts/verified_publications.py'
       - '.github/workflows/alerts-worker-check.yml'
+      - '.github/workflows/deploy-alerts-worker.yml'
+      - '.github/workflows/publish-verified-research-alerts.yml'
   workflow_dispatch:
 
 jobs:
@@ -15,13 +19,34 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
       - name: Check Worker JavaScript syntax
-        working-directory: cloudflare/verified-research-alerts
-        run: node --check src/index.js
-      - name: Verify D1 schema exists
-        run: test -s cloudflare/verified-research-alerts/schema.sql
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check cloudflare/verified-research-alerts/src/index.js
+          node --check cloudflare/verified-research-canary/src/index.js
+      - name: Verify canary schema and configuration contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q 'CREATE TABLE IF NOT EXISTS canary_dispatches' cloudflare/verified-research-alerts/schema.sql
+          grep -q 'CREATE TABLE IF NOT EXISTS canary_receipts' cloudflare/verified-research-alerts/schema.sql
+          grep -q 'delivery@canary.glassesresearch.org' cloudflare/verified-research-alerts/wrangler.jsonc
+          grep -q 'delivery@canary.glassesresearch.org' cloudflare/verified-research-canary/wrangler.jsonc
+          grep -q '/delivery-proof' cloudflare/verified-research-alerts/src/index.js
+          grep -q 'async email(message, env)' cloudflare/verified-research-canary/src/index.js
+      - name: Validate publication ledger and Python syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/verified_publications.py
+          python scripts/verified_publications.py
       - name: Verify secrets are placeholders only
         shell: bash
         run: |
           set -euo pipefail
-          ! grep -R -E '(re_[A-Za-z0-9]{20,}|Bearer [A-Za-z0-9_-]{24,})' cloudflare/verified-research-alerts
+          ! grep -R -E '(re_[A-Za-z0-9]{20,}|Bearer [A-Za-z0-9_-]{24,}|cfat_[A-Za-z0-9_-]{20,})' \
+            cloudflare/verified-research-alerts cloudflare/verified-research-canary scripts/verified_publications.py
