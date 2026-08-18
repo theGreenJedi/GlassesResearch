@@ -1,26 +1,37 @@
-name: Daily research evidence verification
+name: Daily research editorial triage
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/daily-news-verification.yml"
+      - "scripts/triage_news_reviews.py"
+      - "scripts/test_triage_news_reviews.py"
   schedule:
     # 11:55 PM America/New_York, DST-aware.
     - cron: "55 3 * * *"  # 11:55 PM EDT
     - cron: "55 4 * * *"  # 11:55 PM EST
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: knowledge-intake-writer
+  cancel-in-progress: false
 
 jobs:
-  verify:
+  triage:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - name: Enforce 11:55 PM Eastern cadence
         id: cadence
         shell: bash
         run: |
           set -euo pipefail
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "${{ github.event_name }}" = "push" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
@@ -47,11 +58,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          git config user.name "glassesresearch-bot"
+          git config user.email "actions@users.noreply.github.com"
           FOUND=false
           for attempt in 1 2 3 4 5; do
             if git ls-remote --exit-code --heads origin knowledge-intake >/dev/null 2>&1; then
-              git fetch origin knowledge-intake
+              git fetch origin knowledge-intake main
               git checkout -B knowledge-intake origin/knowledge-intake
+              git merge --no-edit origin/main
               FOUND=true
               break
             fi
@@ -68,126 +82,41 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Validate classification contract
+      - name: Validate classification and triage contracts
         if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'
-        run: python scripts/test_knowledge_flow.py
+        run: |
+          python scripts/test_knowledge_flow.py
+          python scripts/test_triage_news_reviews.py
+          python -m py_compile scripts/triage_news_reviews.py
 
-      - name: Verify recent candidate sources and routing metadata
+      - name: Triage durable intake and verify source reachability
+        if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'
+        run: |
+          python scripts/triage_news_reviews.py --lookback-days 14 --verify-reachability --timeout 12
+          cat research/news-reviews/latest.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Persist durable editorial triage
         if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'
         shell: bash
         run: |
-          python - <<'PY'
-          import datetime as dt
-          import json
-          import pathlib
-          import urllib.error
-          import urllib.request
+          set -euo pipefail
+          git add research/news-reviews
+          if ! git diff --cached --quiet; then
+            STAMP="$(TZ=America/New_York date +%Y-%m-%d-%H%M)"
+            git commit -m "Persist editorial triage ${STAMP} ET"
+          fi
+          git push origin HEAD:knowledge-intake
 
-          now = dt.datetime.now(dt.timezone.utc)
-          cutoff = now - dt.timedelta(hours=30)
-          candidates = []
-          files = []
-
-          for directory in (pathlib.Path('research/news-candidates'), pathlib.Path('research/discovery-candidates')):
-              if not directory.exists():
-                  continue
-              for path in directory.glob('*.json'):
-                  try:
-                      payload = json.loads(path.read_text(encoding='utf-8'))
-                      discovered = payload.get('discovered_utc', '')
-                      stamp = dt.datetime.fromisoformat(discovered.replace('Z', '+00:00')) if discovered else None
-                      if stamp is not None and stamp < cutoff:
-                          continue
-                      files.append(path)
-                      candidates.extend(payload.get('candidates', []))
-                  except Exception:
-                      continue
-
-          dedup = {}
-          for item in candidates:
-              url = str(item.get('url', '')).strip()
-              if not url:
-                  continue
-              prior = dedup.get(url)
-              if prior is None or item.get('triage_priority') == 'high':
-                  dedup[url] = item
-
-          priority = {'high': 0, 'normal': 1, 'low': 2}
-          items = sorted(
-              dedup.values(),
-              key=lambda item: (priority.get(item.get('triage_priority', 'low'), 2), -int(item.get('materiality_score', 0) or 0)),
-          )[:250]
-
-          metadata_missing = 0
-          relationship_counts = {}
-          route_counts = {}
-          rows = []
-          seen = set()
-          for item in items:
-              relationship = item.get('relationship', '')
-              types = item.get('content_types', [])
-              routes = item.get('routing_targets', [])
-              if not relationship or not types or not routes:
-                  metadata_missing += 1
-              relationship_counts[relationship or 'legacy/unclassified'] = relationship_counts.get(relationship or 'legacy/unclassified', 0) + 1
-              for route in routes:
-                  route_counts[route] = route_counts.get(route, 0) + 1
-
-              url = item.get('url', '').strip()
-              if not url or url in seen:
-                  continue
-              seen.add(url)
-              status = 'unreachable'
-              code = ''
-              try:
-                  req = urllib.request.Request(url, headers={'User-Agent':'GlassesResearch-evidence-verifier/2.0'})
-                  with urllib.request.urlopen(req, timeout=12) as response:
-                      code = response.status
-                      status = 'reachable' if 200 <= response.status < 400 else 'review'
-              except urllib.error.HTTPError as exc:
-                  code = exc.code
-                  status = 'review'
-              except Exception as exc:
-                  code = type(exc).__name__
-              rows.append((status, str(code), relationship or 'legacy', ', '.join(types), item.get('title',''), url))
-
-          reachable = sum(row[0] == 'reachable' for row in rows)
-          report = [
-              '# Daily evidence and routing verification', '',
-              f'- Recent intake files inspected: {len(files)}',
-              f'- Unique candidate sources checked: {len(rows)}',
-              f'- Reachable sources: {reachable}',
-              f'- Sources requiring review: {len(rows)-reachable}',
-              f'- Candidates missing knowledge-flow metadata: {metadata_missing}', '',
-              '## Relationship mix', '',
-          ]
-          for key, value in sorted(relationship_counts.items()):
-              report.append(f'- {key}: {value}')
-          report += ['', '## Routing mix', '']
-          for key, value in sorted(route_counts.items()):
-              report.append(f'- {key}: {value}')
-          report += [
-              '',
-              'This automated pass verifies source reachability, classification integrity, and routing metadata. It does not prove a factual claim or authorize publication.', '',
-              '| Status | HTTP/result | Relationship | Type | Candidate | Source |',
-              '|---|---:|---|---|---|---|',
-          ]
-          for status, code, relationship, types, title, url in rows:
-              title = title.replace('|','\\|')[:120]
-              report.append(f'| {status} | {code} | {relationship} | {types} | {title} | {url} |')
-
-          pathlib.Path('daily-verification.md').write_text('\n'.join(report)+'\n', encoding='utf-8')
-          PY
-          cat daily-verification.md >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Upload verification report
+      - name: Upload triage report
         if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'
         uses: actions/upload-artifact@v6
         with:
-          name: glassesresearch-daily-evidence-verification
-          path: daily-verification.md
+          name: glassesresearch-daily-editorial-triage
+          path: |
+            research/news-reviews/latest.md
+            research/news-reviews/queue.json
           retention-days: 90
 
       - name: Inactive DST counterpart
         if: steps.cadence.outputs.run == 'false'
-        run: echo 'Inactive Eastern-time schedule; no verification performed.'
+        run: echo 'Inactive Eastern-time schedule; no editorial triage performed.'
