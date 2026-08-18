@@ -1,0 +1,60 @@
+name: Temporary canary Cloudflare deployment preflight
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN_RAW: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - name: Install Wrangler
+        run: npm install --prefix cloudflare/verified-research-alerts
+      - name: Test Cloudflare credential and read-only capabilities
+        shell: bash
+        run: |
+          set -u
+          if [ -z "${CLOUDFLARE_ACCOUNT_ID:-}" ] || [ -z "${CLOUDFLARE_API_TOKEN_RAW:-}" ]; then
+            echo 'PREFLIGHT missing_secret'
+            exit 1
+          fi
+          token="$(printf '%s' "$CLOUDFLARE_API_TOKEN_RAW" | tr -d '\r\n' | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//; s/^Bearer[[:space:]]+//I')"
+          export CLOUDFLARE_API_TOKEN="$token"
+          api='https://api.cloudflare.com/client/v4'
+          auth=(-H "Authorization: Bearer $token" -H 'Content-Type: application/json')
+
+          status="$(curl --silent --show-error -o /tmp/verify.json -w '%{http_code}' -H "Authorization: Bearer $token" "$api/user/tokens/verify" || true)"
+          echo "TOKEN_VERIFY_HTTP $status"
+          jq '{success, result_status:(.result.status // null), errors:[.errors[]? | {code,message}]}' /tmp/verify.json 2>/dev/null || cat /tmp/verify.json
+
+          status="$(curl --silent --show-error -o /tmp/zones.json -w '%{http_code}' "${auth[@]}" "$api/zones?name=glassesresearch.org&status=active" || true)"
+          echo "ZONE_READ_HTTP $status"
+          jq '{success, count:(.result|length), errors:[.errors[]? | {code,message}]}' /tmp/zones.json 2>/dev/null || cat /tmp/zones.json
+
+          echo 'D1_LIST'
+          (cd cloudflare/verified-research-alerts && npx wrangler d1 list --json >/tmp/d1.json 2>/tmp/d1.err)
+          rc=$?
+          echo "D1_LIST_EXIT $rc"
+          if [ "$rc" -eq 0 ]; then jq '[.[] | {name,uuid}]' /tmp/d1.json; else sed -E 's/[A-Za-z0-9_-]{24,}/<redacted>/g' /tmp/d1.err; fi
+
+          if jq -e '.success == true and (.result|length) > 0' /tmp/zones.json >/dev/null 2>&1; then
+            zone_id="$(jq -r '.result[0].id' /tmp/zones.json)"
+            status="$(curl --silent --show-error -o /tmp/email-dns.json -w '%{http_code}' "${auth[@]}" "$api/zones/$zone_id/email/routing/dns?subdomain=canary.glassesresearch.org" || true)"
+            echo "EMAIL_ROUTING_READ_HTTP $status"
+            jq '{success, error_count:((.result.errors // [])|length), errors:[.errors[]? | {code,message}]}' /tmp/email-dns.json 2>/dev/null || cat /tmp/email-dns.json
+            status="$(curl --silent --show-error -o /tmp/rules.json -w '%{http_code}' "${auth[@]}" "$api/zones/$zone_id/email/routing/rules?per_page=5" || true)"
+            echo "EMAIL_RULES_READ_HTTP $status"
+            jq '{success, count:(.result|length), errors:[.errors[]? | {code,message}]}' /tmp/rules.json 2>/dev/null || cat /tmp/rules.json
+          fi
+
+          test "$status" != 000
