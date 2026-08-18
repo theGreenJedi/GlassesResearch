@@ -2,6 +2,11 @@ name: Daily research editorial triage
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "Hourly smart-glasses knowledge intake"
+      - "Daily institutional knowledge intake"
+    types: [completed]
   push:
     branches:
       - main
@@ -10,7 +15,7 @@ on:
       - "scripts/triage_news_reviews.py"
       - "scripts/test_triage_news_reviews.py"
   schedule:
-    # 11:55 PM America/New_York, DST-aware.
+    # 11:55 PM America/New_York, DST-aware backstop.
     - cron: "55 3 * * *"  # 11:55 PM EDT
     - cron: "55 4 * * *"  # 11:55 PM EST
 
@@ -26,13 +31,22 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - name: Enforce 11:55 PM Eastern cadence
+      - name: Enforce trigger and Eastern cadence
         id: cadence
         shell: bash
         run: |
           set -euo pipefail
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "${{ github.event_name }}" = "push" ]; then
+          EVENT="${{ github.event_name }}"
+          if [ "$EVENT" = "workflow_dispatch" ] || [ "$EVENT" = "push" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$EVENT" = "workflow_run" ]; then
+            if [ "${{ github.event.workflow_run.conclusion }}" = "success" ]; then
+              echo "run=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "run=false" >> "$GITHUB_OUTPUT"
+            fi
             exit 0
           fi
           OFFSET="$(TZ=America/New_York date +%z)"
@@ -89,10 +103,10 @@ jobs:
           python scripts/test_triage_news_reviews.py
           python -m py_compile scripts/triage_news_reviews.py
 
-      - name: Triage durable intake and verify source reachability
+      - name: Triage durable intake and verify actionable source reachability
         if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'
         run: |
-          python scripts/triage_news_reviews.py --lookback-days 14 --verify-reachability --timeout 12
+          python scripts/triage_news_reviews.py --lookback-days 14 --verify-reachability --timeout 8 --workers 12
           cat research/news-reviews/latest.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Persist durable editorial triage
@@ -117,6 +131,6 @@ jobs:
             research/news-reviews/queue.json
           retention-days: 90
 
-      - name: Inactive DST counterpart
+      - name: Inactive trigger counterpart
         if: steps.cadence.outputs.run == 'false'
-        run: echo 'Inactive Eastern-time schedule; no editorial triage performed.'
+        run: echo 'Collector did not complete successfully or this is the inactive Eastern-time schedule; no editorial triage performed.'
