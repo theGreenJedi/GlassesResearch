@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Validate and publish the explicit Verified Research Alerts publication ledger.
+"""Validate, publish, and prove Verified Research Alerts delivery.
 
-The ledger is the editorial authorization boundary between public research and mail.
-Discovery candidates and Watching items are deliberately outside this path.
+The publication ledger is the editorial authorization boundary between public
+research and subscriber mail. Discovery candidates and Watching items are
+outside this path. A dispatch is successful only when the synthetic canary
+recipient records the exact publication ID after real SMTP delivery.
 """
 
 from __future__ import annotations
@@ -14,6 +16,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -21,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MANIFEST = ROOT / "data" / "verified-publications.json"
 RESEARCH_NEWS = ROOT / "docs" / "RESEARCH_NEWS.md"
 SITE_ORIGIN = "https://glassesresearch.org"
+ALERTS_BASE = "https://alerts.glassesresearch.org"
 TOPICS = {
     "hacks_development",
     "firmware_software",
@@ -110,8 +114,7 @@ def validate(path: Path) -> dict:
         seen_headings.add(source_heading)
 
         for field in ("title", "summary"):
-            value = str(item.get(field, "")).strip()
-            if not value:
+            if not str(item.get(field, "")).strip():
                 errors.append(f"{publication_id or label}: {field} is required")
 
         canonical_url = str(item.get("canonical_url", "")).strip()
@@ -149,8 +152,15 @@ def validate(path: Path) -> dict:
     return manifest
 
 
-def request_json(url: str, *, method: str = "GET", token: str | None = None, payload: dict | None = None) -> dict:
-    headers = {"User-Agent": "GlassesResearch-verified-publication-bridge/1.0"}
+def request_json(
+    url: str,
+    *,
+    method: str = "GET",
+    token: str | None = None,
+    payload: dict | None = None,
+    timeout: int = 25,
+) -> dict:
+    headers = {"User-Agent": "GlassesResearch-verified-publication-bridge/2.0"}
     data = None
     if token:
         headers["Authorization"] = f"Bearer {token}"
@@ -158,9 +168,75 @@ def request_json(url: str, *, method: str = "GET", token: str | None = None, pay
         headers["Content-Type"] = "application/json"
         data = json.dumps(payload, separators=(",", ":")).encode("utf-8")
     request = urllib.request.Request(url, data=data, headers=headers, method=method)
-    with urllib.request.urlopen(request, timeout=25) as response:
+    with urllib.request.urlopen(request, timeout=timeout) as response:
         body = response.read().decode("utf-8")
         return json.loads(body or "{}")
+
+
+def publication_payload(item: dict) -> dict:
+    return {
+        key: item[key]
+        for key in (
+            "id",
+            "title",
+            "canonical_url",
+            "summary",
+            "models",
+            "brands_lineages",
+            "topics",
+            "published_at",
+        )
+    }
+
+
+def wait_for_canary(item: dict, endpoint: str, token: str, *, timeout_seconds: int = 360) -> dict:
+    publication_id = item["id"]
+    base = endpoint.rsplit("/", 1)[0]
+    proof_url = f"{base}/delivery-proof?{urllib.parse.urlencode({'publication_id': publication_id})}"
+    deadline = time.monotonic() + timeout_seconds
+    next_replay = 0.0
+    last_proof: dict = {}
+    last_error: Exception | None = None
+
+    while time.monotonic() < deadline:
+        now_mono = time.monotonic()
+        if now_mono >= next_replay:
+            try:
+                replay = request_json(endpoint, method="POST", token=token, payload=publication_payload(item))
+                if replay.get("ok") is not True:
+                    raise RuntimeError(f"publisher replay returned non-success response: {replay}")
+            except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, RuntimeError, json.JSONDecodeError) as exc:
+                last_error = exc
+            next_replay = now_mono + 45
+
+        try:
+            proof = request_json(proof_url, token=token)
+            last_proof = proof
+            if proof.get("ok") is True and proof.get("provider_accepted") is True and proof.get("received") is True:
+                print(
+                    "End-to-end canary delivery proven: "
+                    f"{publication_id} provider_message_id={proof.get('provider_message_id') or 'unavailable'} "
+                    f"received_at={proof.get('received_at')}"
+                )
+                return proof
+            if proof.get("last_error"):
+                print(f"Canary delivery pending for {publication_id}: {proof['last_error']}", file=sys.stderr)
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+        except (urllib.error.URLError, TimeoutError, RuntimeError, json.JSONDecodeError) as exc:
+            last_error = exc
+
+        time.sleep(10)
+
+    safe = {
+        "dispatch_attempted": last_proof.get("dispatch_attempted"),
+        "provider_accepted": last_proof.get("provider_accepted"),
+        "received": last_proof.get("received"),
+        "received_at": last_proof.get("received_at"),
+        "last_error": last_proof.get("last_error"),
+    }
+    detail = f"; last request error: {last_error}" if last_error else ""
+    raise RuntimeError(f"End-to-end canary delivery was not proven for {publication_id}: {safe}{detail}")
 
 
 def publish(manifest: dict, endpoint: str, token: str) -> None:
@@ -170,19 +246,7 @@ def publish(manifest: dict, endpoint: str, token: str) -> None:
         return
 
     for item in enabled:
-        payload = {
-            key: item[key]
-            for key in (
-                "id",
-                "title",
-                "canonical_url",
-                "summary",
-                "models",
-                "brands_lineages",
-                "topics",
-                "published_at",
-            )
-        }
+        payload = publication_payload(item)
         last_error: Exception | None = None
         for attempt in range(1, 6):
             try:
@@ -199,12 +263,30 @@ def publish(manifest: dict, endpoint: str, token: str) -> None:
         else:
             raise RuntimeError(f"Failed publishing {item['id']}: {last_error}")
 
+        wait_for_canary(item, endpoint, token)
+
+
+def wait_for_canary_capable_worker(*, timeout_seconds: int = 300) -> None:
+    deadline = time.monotonic() + timeout_seconds
+    last: object = None
+    while time.monotonic() < deadline:
+        try:
+            health = request_json(f"{ALERTS_BASE}/health")
+            last = health
+            if health.get("ok") is True and health.get("service") == "verified-research-alerts" and health.get("canary") is True:
+                print("Verified Research Alerts Worker health check passed with canary support.")
+                return
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError) as exc:
+            last = exc
+        time.sleep(10)
+    raise ValidationError(f"Canary-capable Verified Research Alerts Worker did not become healthy: {last}")
+
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
-    parser.add_argument("--publish", action="store_true", help="POST dispatch-enabled entries after validation")
-    parser.add_argument("--endpoint", default="https://alerts.glassesresearch.org/published")
+    parser.add_argument("--publish", action="store_true", help="POST dispatch-enabled entries and prove canary receipt")
+    parser.add_argument("--endpoint", default=f"{ALERTS_BASE}/published")
     args = parser.parse_args()
 
     try:
@@ -213,10 +295,7 @@ def main() -> int:
             token = os.environ.get("PUBLISH_TOKEN", "").strip()
             if not token:
                 raise ValidationError("PUBLISH_TOKEN is required for --publish")
-            health = request_json("https://alerts.glassesresearch.org/health")
-            if health.get("ok") is not True or health.get("service") != "verified-research-alerts":
-                raise ValidationError(f"Verified Research Alerts Worker health check failed: {health}")
-            print("Verified Research Alerts Worker health check passed.")
+            wait_for_canary_capable_worker()
             publish(manifest, args.endpoint, token)
     except (ValidationError, RuntimeError, urllib.error.URLError, urllib.error.HTTPError) as exc:
         print(str(exc), file=sys.stderr)
