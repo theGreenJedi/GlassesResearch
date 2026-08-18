@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-18T15:39:39.139088+00:00`
+Generated: `2026-08-18T15:40:01.789653+00:00`
 
 - Intake files inspected: **16**
 - Candidates retained in this review window/history: **244**
@@ -9,9 +9,9 @@ Generated: `2026-08-18T15:39:39.139088+00:00`
 ## Queue state
 
 - `adjacent_radar`: 42
-- `needs_editorial_verification`: 79
+- `needs_editorial_verification`: 78
 - `rejected_noise`: 9
-- `source_review`: 103
+- `source_review`: 104
 - `watching`: 11
 
 ## Action queue
@@ -78,7 +78,6 @@ Generated: `2026-08-18T15:39:39.139088+00:00`
 | normal | needs_editorial_verification | direct | [Manufacturer catalog watch: www.latitude52n.com](https://www.latitude52n.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (August 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI Glasses are Here. So Is the Privacy Problem - sify.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUTZPLUljc3Q4WXJzVzZsVlc5NUEyOEUyc1JNNG5iRUJhdFRuc0hwUlZTQTM0UUZGaTY0RzVacmcwaVBTY2tHejFfdURGenRCNzlieTlkWERtNktJVzZkTExudUt2eTdycVRHV1VxdWtmdV9PSnJVNy0yZHh1ZkxQcUhSSzctRmM?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best smart glasses and AR specs: We test Ray-Ban Meta ... - Wareable](https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest) | reachable (200) | research_news_review, policy_privacy |
@@ -100,6 +99,7 @@ Generated: `2026-08-18T15:39:39.139088+00:00`
 | normal | source_review | enabling | [America's Best Eyecare + Eyewear](https://www.americasbest.com/) | reachable (200) | research_news_review, research_optics |
 | normal | source_review | direct | [Manufacturer catalog lead: Contact Support](https://www.evenrealities.com/contact) | review (403) | research_news_review, model_catalog_review, development_hacking |
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
+| normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
 | low | source_review |  | [Manufacturer/source watch: VITURE Blog \| XR Glasses News, Reviews & Guides \| VITURE](https://www.viture.com/blog) | reachable (200) |  |
