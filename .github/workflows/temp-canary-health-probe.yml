@@ -1,0 +1,27 @@
+name: Temporary canary health probe
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    env:
+      PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+    steps:
+      - name: Read live health and delivery proof
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo 'HEALTH'
+          curl --fail --silent --show-error https://alerts.glassesresearch.org/health | tee /tmp/health.json
+          echo
+          echo 'PROOF'
+          status="$(curl --silent --show-error -o /tmp/proof.json -w '%{http_code}' -H "Authorization: Bearer $PUBLISH_TOKEN" 'https://alerts.glassesresearch.org/delivery-proof?publication_id=gr-2026-08-17-lucyd-armor-gls-0159' || true)"
+          echo "HTTP $status"
+          cat /tmp/proof.json || true
+          echo
