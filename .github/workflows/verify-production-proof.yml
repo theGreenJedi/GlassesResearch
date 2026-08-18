@@ -1,0 +1,47 @@
+name: Temporary production deployment proof
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  prove-production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prove live site matches current main
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://glassesresearch.org'
+          expected="$(curl --fail --silent --show-error --location --max-time 20 \
+            -H 'Accept: application/vnd.github+json' \
+            https://api.github.com/repos/theGreenJedi/GlassesResearch/commits/main \
+            | python -c "import json,sys; print(json.load(sys.stdin)['sha'])")"
+
+          bust="proof=${expected}-${GITHUB_RUN_ID}"
+          curl_live() {
+            curl --fail --silent --show-error --location --max-time 20 \
+              -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+              "${base}${1}?${bust}" -o "$2"
+          }
+
+          curl_live /deployment.json /tmp/deployment.json
+          curl_live /docs/TOOLS/ /tmp/tools.html
+          curl_live /docs/REFERENCE_DESK/ /tmp/reference-desk.html
+          curl_live /docs/EMBED_GLASSESRESEARCH/ /tmp/embed.html
+          curl_live /data/citations/index.json /tmp/citations.json
+          curl_live /data/citations/gls-0039.bib /tmp/gls-0039.bib
+          curl_live /javascripts/glassesresearch-model-card.js /tmp/model-card.js
+          curl_live /data/devices.json /tmp/devices.json
+
+          python -c "import json; p=json.load(open('/tmp/deployment.json')); expected='${expected}'; actual=p.get('sha'); assert actual==expected, f'production stale: expected current main {expected}, got {actual}'; print(f'Production SHA proof passed: {actual}')"
+          python -c "import json; d=json.load(open('/tmp/devices.json')); c=json.load(open('/tmp/citations.json')); assert c['record_count']==d['record_count']; assert any(r['id']=='GLS-0039' for r in c['records']); print(f'Citation proof passed for {c[\"record_count\"]} models')"
+          grep -Fq 'verified price ceilings, and Report Card minimum scores' /tmp/tools.html
+          grep -Fq 'Reference desk' /tmp/reference-desk.html
+          grep -Fq 'Embed a GlassesResearch model card' /tmp/embed.html
+          grep -Fq 'GLS-0039' /tmp/gls-0039.bib
+          grep -Fq 'cookie-free' /tmp/model-card.js
+          echo "Production matches current main ${expected} and required feature surfaces are live."
