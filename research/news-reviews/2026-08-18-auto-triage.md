@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-18T15:30:18.222112+00:00`
+Generated: `2026-08-18T15:35:52.387794+00:00`
 
 - Intake files inspected: **16**
 - Candidates retained in this review window/history: **257**
@@ -9,8 +9,8 @@ Generated: `2026-08-18T15:30:18.222112+00:00`
 ## Queue state
 
 - `adjacent_radar`: 43
-- `needs_editorial_verification`: 88
-- `source_review`: 111
+- `needs_editorial_verification`: 87
+- `source_review`: 112
 - `watching`: 15
 
 ## Action queue
@@ -60,7 +60,6 @@ Generated: `2026-08-18T15:30:18.222112+00:00`
 | normal | needs_editorial_verification | direct | [Manufacturer catalog lead: latitude 52 n at berlin fashion week impari partnership](https://www.latitude52n.com/blogs/news/latitude-52-n-at-berlin-fashion-week-impari-partnership) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Manufacturer catalog lead: LUCYD LYTE](https://lucyd.co/pages/lyte-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Manufacturer catalog lead: MAVERICK AI](https://www.everysight.com/pages/maverick-ai) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Manufacturer catalog lead: MAVERICK SPORT](https://www.everysight.com/pages/maverick-sport) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Manufacturer catalog lead: REEBOK EYEGLASSES](https://lucyd.co/pages/reebok-optical-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 | normal | needs_editorial_verification | direct | [Manufacturer catalog lead: Remote Support](https://www.vuzix.com/pages/remote-mentor) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Manufacturer catalog lead: RX ADAPTER](https://www.everysight.com/products/maverick-sport-rx-adapter) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
@@ -109,6 +108,7 @@ Generated: `2026-08-18T15:30:18.222112+00:00`
 | normal | source_review | enabling | [Drugs & Medications A to Z - Drugs.com](https://www.drugs.com/drug_information.html) | review (403) | research_news_review, research_optics |
 | normal | source_review | enabling | [Drugs.com – Know More. Be Sure.](https://www.drugs.com/) | review (403) | research_news_review, research_optics |
 | normal | source_review | direct | [Manufacturer catalog lead: Contact Support](https://www.evenrealities.com/contact) | review (403) | research_news_review, model_catalog_review, development_hacking |
+| normal | source_review | direct | [Manufacturer catalog lead: MAVERICK SPORT](https://www.everysight.com/pages/maverick-sport) | review (500) | research_news_review, model_catalog_review, development_hacking |
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
 | normal | source_review | enabling | [Prescription Prices, Coupons & Pharmacy Information - GoodRx](https://www.goodrx.com/) | review (403) | research_news_review, research_optics |
 | normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
