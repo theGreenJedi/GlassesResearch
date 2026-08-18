@@ -5,6 +5,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 from collections import Counter
+from zoneinfo import ZoneInfo
 
 from triage_news_reviews import LATEST_PATH, QUEUE_PATH, REVIEWS_DIR, markdown, review_key
 
@@ -61,9 +62,9 @@ def write_outputs(queue: dict) -> None:
     text = markdown(queue)
     LATEST_PATH.write_text(text, encoding="utf-8")
     generated = dt.datetime.fromisoformat(str(queue["generated_utc"]).replace("Z", "+00:00"))
-    day = generated.astimezone().date().isoformat()
-    # The triage generator already created the dated snapshot. Rewrite every matching
-    # dated snapshot for this generated day so the human-readable state stays aligned.
+    day = generated.astimezone(ZoneInfo("America/New_York")).date().isoformat()
+    # The triage generator already created the dated snapshot. Rewrite it so the
+    # human-readable state remains aligned with the machine queue after decisions.
     for path in REVIEWS_DIR.glob(f"{day}-auto-triage.md"):
         path.write_text(text, encoding="utf-8")
 
