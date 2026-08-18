@@ -9,8 +9,8 @@ Use this page when you need a verifiable smart-glasses fact, a stable model iden
 
 ## Find the canonical model
 
-- [Browse the complete canonical catalog](/models/catalog/)
-- [Resolve a GLS identifier](/gls/)
+- [Browse the complete canonical catalog](https://glassesresearch.org/models/catalog/)
+- [Resolve a GLS identifier](https://glassesresearch.org/gls/)
 - [Use the Glasses Finder](/docs/COMPARISON_ENGINE/) to filter and compare models
 - [Check retail aliases and rebrands](/models/RETAIL_REBRANDS/)
 
@@ -47,5 +47,5 @@ For a specific factual claim, follow the model page to the underlying source and
 - [Development & Hacking](/hacking/)
 - [Industry timeline](/docs/INDUSTRY_TIMELINE/)
 - [Technology lineages](/lineages/)
-- [Evidence resources](/data/public/evidence-resources.json)
+- [Evidence resources](https://glassesresearch.org/data/public/evidence-resources.json)
 - [Artifact preservation](/docs/ARTIFACT_PRESERVATION/)
