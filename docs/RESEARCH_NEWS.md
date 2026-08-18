@@ -8,9 +8,22 @@ The newest verified changes, useful tools, developments we are watching, and res
 
 | Date | What changed | Go deeper |
 |---|---|---|
+| Aug. 18 | MemoMind One was verified from current MemoMind/XGIMI primary sources and published as a **pre-GLS research profile**; purchaser fulfillment remains unproven. | [MemoMind One](/models/MemoMindOne/) · [evidence](/evidence/EV-0077-MemoMind-One-primary-product/) |
 | Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [Model page](https://glassesresearch.org/models/catalog/gls-0159/) · [GLS resolver](https://glassesresearch.org/gls/gls-0159/) |
 | Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026-halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) |
 | Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026-cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](https://glassesresearch.org/models/catalog/gls-0039/) |
+
+### August 18, 2026 — MemoMind One verified from primary sources {#august-18-2026-memomind-one-verified-from-primary-sources}
+
+A collector lead about **MemoMind One** crossed the verification boundary after being checked against current MemoMind and XGIMI primary material. The manufacturer currently presents MemoMind One as camera-free dual-eye display AI glasses, lists a starting price of **$399**, and routes purchases through Kickstarter. Current vendor specifications include a dual Micro-LED display, open-ear audio, microphones, prescription options and AI-assisted recording, translation and teleprompter functions.
+
+**What we are not claiming:** this verification does not establish purchaser fulfillment, independently measured performance, a public SDK, owner-controlled firmware, local AI execution, cloud independence or ordinary-optician serviceability. Those remain unknown.
+
+Because GlassesResearch has not established ordinary purchaser acquisition/delivery evidence, MemoMind One is published as a **pre-GLS research profile rather than being assigned a purchaser-history GLS ID**.
+
+Continue: [MemoMind One research](/models/MemoMindOne/) · [EV-0077 primary evidence](/evidence/EV-0077-MemoMind-One-primary-product/) · [follow release/availability research](?brand=MemoMind&topic=release_availability#verified-research-alerts)
+
+Primary sources: [MemoMind One](https://www.memo-mind.com/pages/memomind-one) · [MemoMind](https://www.memo-mind.com/) · [XGIMI CES 2026 MemoMind announcement](https://us.xgimi.com/blogs/news/xgimi-ces-2026-with-memomind-ai-glasses)
 
 ### August 17, 2026 — Lucyd Armor enters the canonical catalog as GLS-0159
 
