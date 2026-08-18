@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-18T15:27:23.055510+00:00`
+Generated: `2026-08-18T15:29:58.299365+00:00`
 
 - Intake files inspected: **16**
 - Candidates retained in this review window/history: **257**
@@ -9,8 +9,8 @@ Generated: `2026-08-18T15:27:23.055510+00:00`
 ## Queue state
 
 - `adjacent_radar`: 43
-- `needs_editorial_verification`: 87
-- `source_review`: 112
+- `needs_editorial_verification`: 88
+- `source_review`: 111
 - `watching`: 15
 
 ## Action queue
@@ -24,6 +24,7 @@ Generated: `2026-08-18T15:27:23.055510+00:00`
 | high | needs_editorial_verification | direct | [Manufacturer catalog watch: lucyd.co](https://lucyd.co/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking, research_optics, policy_privacy |
 | high | needs_editorial_verification | direct | [Manufacturer catalog watch: www.vuzix.com](https://www.vuzix.com/pages/smart-glasses) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking, research_optics |
 | high | needs_editorial_verification | direct | [Manufacturer catalog lead: Prescription Lenses](https://www.evenrealities.com/prescription-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
+| high | needs_editorial_verification | direct | [Manufacturer catalog lead: Request SDK](https://www.everysight.com/pages/sdk) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [Manufacturer catalog lead: Talk to Our OEM Team](https://www.vuzix.com/pages/learn-more-about-ai-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [Manufacturer catalog watch: www.hallidayglobal.com](https://www.hallidayglobal.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, deep_research |
 | high | needs_editorial_verification | direct | [Manufacturer catalog watch: www.inmoxr.com](https://www.inmoxr.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, research_optics |
@@ -104,7 +105,6 @@ Generated: `2026-08-18T15:27:23.055510+00:00`
 | normal | needs_editorial_verification | direct | [VITURE: Next Gen XR Glasses](https://www.viture.com/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top Models So ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
-| high | source_review | direct | [Manufacturer catalog lead: Request SDK](https://www.everysight.com/pages/sdk) | review (500) | research_news_review, model_catalog_review, development_hacking |
 | normal | source_review | enabling | [Drug Price Search, Find Prescription Coupons - GoodRx](https://www.goodrx.com/search) | review (403) | research_news_review, research_optics, retail_rebrand_review |
 | normal | source_review | enabling | [Drugs & Medications A to Z - Drugs.com](https://www.drugs.com/drug_information.html) | review (403) | research_news_review, research_optics |
 | normal | source_review | enabling | [Drugs.com – Know More. Be Sure.](https://www.drugs.com/) | review (403) | research_news_review, research_optics |
