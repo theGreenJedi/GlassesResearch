@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-07-19 → 2026-08-15**.
+Google Search Console page/query pairs for **2026-07-20 → 2026-08-16**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
