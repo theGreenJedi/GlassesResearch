@@ -16,6 +16,7 @@ import urllib.error
 import urllib.request
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib.parse import urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -32,6 +33,24 @@ STATE_ORDER = {
     "adjacent_radar": 3,
     "rejected_noise": 4,
 }
+
+# "Prescription" is useful eyewear vocabulary but also produces broad-web noise.
+# These checks stop ordinary medication/pharmacy pages from consuming editorial
+# verification capacity while retaining genuine optical/enabling evidence.
+PHARMACY_NOISE_TERMS = (
+    "pharmacy", "drugstore", "prescriptions", "prescription delivery",
+    "refill", "refills", "medication", "medications", "medicine",
+)
+STRONG_ENABLING_TERMS = (
+    "waveguide", "microled", "micro-oled", "micro oled", "optics", "optical",
+    "lens", "lenses", "retinal", "holographic", "camera module", "snapdragon ar1",
+    "display engine", "eye tracking", "gaze tracking", "near-eye display",
+    "near eye display",
+)
+DIRECT_CONTEXT_TERMS = (
+    "smart glasses", "smartglasses", "ai glasses", "ar glasses", "smart eyewear",
+    "ai eyewear", "ar eyewear", "camera glasses", "audio glasses", "display glasses",
+)
 
 
 def args() -> argparse.Namespace:
@@ -70,12 +89,66 @@ def candidate_id(item: dict) -> str:
     return hashlib.sha256(str(item.get("url", "")).encode()).hexdigest()[:16]
 
 
+def normalized_url(item: dict) -> str:
+    """Stable review identity for the same source URL across collector IDs."""
+    raw = str(item.get("url", "")).strip()
+    if not raw:
+        return ""
+    try:
+        parts = urlsplit(raw)
+        path = parts.path.rstrip("/") or "/"
+        return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), path, parts.query, ""))
+    except ValueError:
+        return raw
+
+
+def review_key(item: dict) -> str:
+    return normalized_url(item) or candidate_id(item)
+
+
+def haystack(item: dict) -> str:
+    return " ".join(
+        str(item.get(field, "")) for field in ("title", "summary", "url")
+    ).lower()
+
+
+def contains_any(text: str, terms: tuple[str, ...]) -> bool:
+    return any(term in text for term in terms)
+
+
+def generic_pharmacy_noise(item: dict) -> bool:
+    if str(item.get("relationship", "")) != "enabling":
+        return False
+    text = haystack(item)
+    return contains_any(text, PHARMACY_NOISE_TERMS) and not contains_any(text, STRONG_ENABLING_TERMS + DIRECT_CONTEXT_TERMS)
+
+
+def strong_enabling_context(item: dict) -> bool:
+    text = haystack(item)
+    return contains_any(text, STRONG_ENABLING_TERMS + DIRECT_CONTEXT_TERMS)
+
+
 def load_existing() -> dict[str, dict]:
     try:
         payload = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
     except Exception:
         return {}
-    return {str(item["id"]): item for item in payload.get("candidates", []) if isinstance(item, dict) and item.get("id")}
+    return {
+        review_key(item): item
+        for item in payload.get("candidates", [])
+        if isinstance(item, dict) and review_key(item)
+    }
+
+
+def prefer_new(new: dict, old: dict) -> bool:
+    """Prefer higher-priority/material candidates, then the newest observation."""
+    new_rank = (PRIORITY_ORDER.get(str(new.get("triage_priority", "low")), 9), -int(new.get("materiality_score", 0) or 0))
+    old_rank = (PRIORITY_ORDER.get(str(old.get("triage_priority", "low")), 9), -int(old.get("materiality_score", 0) or 0))
+    if new_rank != old_rank:
+        return new_rank < old_rank
+    new_stamp = parse_stamp(str(new.get("intake_discovered_utc", "")))
+    old_stamp = parse_stamp(str(old.get("intake_discovered_utc", "")))
+    return bool(new_stamp and (old_stamp is None or new_stamp >= old_stamp))
 
 
 def collect(cutoff: dt.datetime) -> tuple[dict[str, dict], int]:
@@ -97,20 +170,19 @@ def collect(cutoff: dt.datetime) -> tuple[dict[str, dict], int]:
                 if not isinstance(item, dict) or not str(item.get("url", "")).strip():
                     continue
                 record = dict(item)
-                key = candidate_id(record)
-                record["id"] = key
+                record["id"] = candidate_id(record)
                 record["intake_file"] = str(path.relative_to(ROOT))
                 record["intake_discovered_utc"] = stamp.isoformat() if stamp else ""
+                key = review_key(record)
                 prior = found.get(key)
-                prior_stamp = parse_stamp(str((prior or {}).get("intake_discovered_utc", "")))
-                if prior is None or (stamp and (prior_stamp is None or stamp >= prior_stamp)):
+                if prior is None or prefer_new(record, prior):
                     found[key] = record
     return found, file_count
 
 
 def check_url(url: str, timeout: float) -> dict:
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "GlassesResearch-editorial-triage/2.0"})
+        req = urllib.request.Request(url, headers={"User-Agent": "GlassesResearch-editorial-triage/2.1"})
         with urllib.request.urlopen(req, timeout=timeout) as response:
             return {"status": "reachable" if 200 <= response.status < 400 else "review", "result": str(response.status)}
     except urllib.error.HTTPError as exc:
@@ -119,13 +191,17 @@ def check_url(url: str, timeout: float) -> dict:
         return {"status": "unreachable", "result": type(exc).__name__}
 
 
+def should_check_source(item: dict) -> bool:
+    relationship = str(item.get("relationship", ""))
+    if relationship == "direct":
+        return True
+    return relationship == "enabling" and strong_enabling_context(item) and not generic_pharmacy_noise(item)
+
+
 def source_checks(incoming: dict[str, dict], config: argparse.Namespace, now: dt.datetime) -> dict[str, dict]:
     if not config.verify_reachability:
         return {}
-    actionable = {
-        key: item for key, item in incoming.items()
-        if str(item.get("relationship", "")) in {"direct", "enabling"}
-    }
+    actionable = {key: item for key, item in incoming.items() if should_check_source(item)}
     if not actionable:
         return {}
     results: dict[str, dict] = {}
@@ -149,6 +225,10 @@ def state_for(item: dict, source: dict) -> str:
         return "watching"
     if relationship == "adjacent":
         return "adjacent_radar"
+    if generic_pharmacy_noise(item):
+        return "rejected_noise"
+    if relationship == "enabling" and not strong_enabling_context(item):
+        return "source_review"
     if relationship in {"direct", "enabling"}:
         return "source_review" if source.get("status") in {"review", "unreachable"} else "needs_editorial_verification"
     return "source_review"
@@ -198,8 +278,9 @@ def build(config: argparse.Namespace) -> dict:
         )
         records.append(record)
 
+    incoming_keys = set(incoming)
     for key, prior in existing.items():
-        if key not in incoming and str(prior.get("editorial_disposition", "pending")) in FINAL_DISPOSITIONS:
+        if key not in incoming_keys and str(prior.get("editorial_disposition", "pending")) in FINAL_DISPOSITIONS:
             records.append(prior)
 
     records.sort(key=lambda item: (
@@ -210,7 +291,7 @@ def build(config: argparse.Namespace) -> dict:
         str(item.get("title", "")).lower(),
     ))
     return {
-        "schema": 2,
+        "schema": 3,
         "generated_utc": now.isoformat(),
         "lookback_days": config.lookback_days,
         "intake_files_inspected": file_count,
@@ -247,10 +328,10 @@ def markdown(queue: dict) -> str:
     lines += [
         "", "## Meaning of states", "",
         "- `needs_editorial_verification` — direct/enabling glasses material ready for factual review.",
-        "- `source_review` — potentially relevant, but the source needs manual attention.",
+        "- `source_review` — potentially relevant, but the source or enabling relationship needs manual attention.",
         "- `watching` — rumor/speculation; retain without public promotion.",
         "- `adjacent_radar` — neighboring wearable/HCI material without a concrete glasses publication gate.",
-        "- `rejected_noise` — irrelevant material that should not advance.", "",
+        "- `rejected_noise` — irrelevant or generic non-eyewear material that should not advance.", "",
         "Only an explicitly published/authorized editorial record may feed canonical publication and Verified Research Alerts.", "",
     ]
     return "\n".join(lines)
