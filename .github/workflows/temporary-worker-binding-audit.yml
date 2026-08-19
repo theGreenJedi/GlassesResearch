@@ -1,0 +1,49 @@
+name: Temporary alert Worker binding audit
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN_RAW: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - name: Normalize Cloudflare token
+        shell: bash
+        run: |
+          set -euo pipefail
+          token="$(printf '%s' "$CLOUDFLARE_API_TOKEN_RAW" | tr -d '\r\n' | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//; s/^Bearer[[:space:]]+//I')"
+          test -n "$token"
+          printf 'CLOUDFLARE_API_TOKEN=%s\n' "$token" >> "$GITHUB_ENV"
+      - name: Read deployed Worker settings and binding identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/glassesresearch-alerts/settings"
+          status="$(curl --silent --show-error -o /tmp/settings.json -w '%{http_code}' -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$api" || true)"
+          echo "Worker settings HTTP $status"
+          jq -c '{success, bindings:[.result.bindings[]? | {name,type,database_id:(.database_id // null)}], errors:(.errors // [])}' /tmp/settings.json || cat /tmp/settings.json
+          test "$status" = 200
+          jq -e '.success == true' /tmp/settings.json >/dev/null
+      - name: Probe deployed code signature and public health
+        shell: bash
+        run: |
+          set -euo pipefail
+          content_api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/glassesresearch-alerts/content/v2"
+          status="$(curl --silent --show-error -o /tmp/worker-content -w '%{http_code}' -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$content_api" || true)"
+          echo "Worker content HTTP $status"
+          if grep -a -q 'cadence_jitter_tolerance_ms' /tmp/worker-content; then
+            echo 'CADENCE_FIX_DEPLOYED=true'
+          else
+            echo 'CADENCE_FIX_DEPLOYED=false'
+          fi
+          echo -n 'HEALTH='
+          curl --fail --silent --show-error https://alerts.glassesresearch.org/health
+          echo
