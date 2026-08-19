@@ -142,15 +142,15 @@
       if (!parent || !child) continue;
       const p = parent.getBoundingClientRect();
       const c = child.getBoundingClientRect();
-      const x1 = p.right - stageBox.left;
-      const y1 = p.top + p.height / 2 - stageBox.top;
-      const x2 = c.left - stageBox.left;
-      const y2 = c.top + c.height / 2 - stageBox.top;
-      const bend = Math.max(28, (x2 - x1) / 2);
+      const x1 = p.left + p.width / 2 - stageBox.left;
+      const y1 = p.bottom - stageBox.top;
+      const x2 = c.left + c.width / 2 - stageBox.left;
+      const y2 = c.top - stageBox.top;
+      const bend = Math.max(24, (y2 - y1) / 2);
       const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       path.setAttribute('class', 'ft-link');
       path.dataset.status = edge.status;
-      path.setAttribute('d', `M ${x1} ${y1} C ${x1 + bend} ${y1}, ${x2 - bend} ${y2}, ${x2} ${y2}`);
+      path.setAttribute('d', `M ${x1} ${y1} C ${x1} ${y1 + bend}, ${x2} ${y2 - bend}, ${x2} ${y2}`);
       links.append(path);
     }
   }
