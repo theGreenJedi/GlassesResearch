@@ -1,8 +1,8 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-19T13:14:10.143098+00:00`
+Generated: `2026-08-19T14:02:18.088223+00:00`
 
-- Intake files inspected: **39**
+- Intake files inspected: **40**
 - Candidates retained in this review window/history: **348**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
@@ -12,10 +12,10 @@ Generated: `2026-08-19T13:14:10.143098+00:00`
 - `catalog_review`: 45
 - `editorial_published`: 2
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 42
+- `needs_editorial_verification`: 43
 - `rejected_noise`: 9
 - `source_monitor`: 16
-- `source_review`: 100
+- `source_review`: 99
 - `watching`: 53
 
 ## Action queue
@@ -26,7 +26,7 @@ Generated: `2026-08-19T13:14:10.143098+00:00`
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best smart glasses and AR specs: We test Ray-Ban ... - Wareable](https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses With Prescription Lenses - Vision Center](https://www.visioncenter.org/eyeglasses/smart-glasses/) | reachable (200) | research_news_review, research_optics |
-| normal | needs_editorial_verification | enabling | [Hands-on: Immersix may revolutionize eye tracking with its accuracy - The Ghost Howls](https://news.google.com/rss/articles/CBMiekFVX3lxTE5sT0FSX0J4S24zRExSWHA1WmZaTkZ6SjJ4M3l2dzExU1I4UXlISU1NMW9tRGdNZVlVdHdZSXRqSi1ZWXpwdW1mem54TzJUeTVNbXRYdTFMNE5Rb2hRSHd6djN5ME1DakxEN1BXcDRxZFlPak1FWF9MejNR?oc=5) | reachable (200) | research_news_review, report_card_evidence, research_optics |
+| normal | needs_editorial_verification | enabling | [Hands-on: Immersix may revolutionize eye tracking with its accuracy - skarredghost.com](https://news.google.com/rss/articles/CBMiekFVX3lxTE5sT0FSX0J4S24zRExSWHA1WmZaTkZ6SjJ4M3l2dzExU1I4UXlISU1NMW9tRGdNZVlVdHdZSXRqSi1ZWXpwdW1mem54TzJUeTVNbXRYdTFMNE5Rb2hRSHd6djN5ME1DakxEN1BXcDRxZFlPak1FWF9MejNR?oc=5) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [Rollme launches new $99.99 smart camera glasses with AI live translation and a Sony 12MP camera - Notebookcheck](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPb3poWEFzTUU3LUpiZ2tTeEw4TW05UkFCdWlWSFEyclV3VTktSkxKTVRsd2FLMTNia3BfWFdLNG9ZWlFjc2RhcUk0eXVsbFUzeFFzV0dMR2tvZzVsSXdPTXBCNzFqa3dLTVJrRm1fQ0lPcmlrNXlCMzNDSUJoNVRpUWo3bXZGZG1GTHIwQmUwdE8yUGpjTlhVRWdka1VOYlJwMy1pc1FDVUtWM3Q3TVdYSmZZYmNIdHkwbm55WlpkTk8ybHhhdURNbVNrT2E1ODFEQjZzVFZB?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [The 10 Best Smart Glasses of 2026 (Reviews) - FindThisBest](https://www.findthisbest.com/best-smart-glasses) | reachable (200) | research_news_review, deep_research |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (August 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
@@ -62,6 +62,7 @@ Generated: `2026-08-19T13:14:10.143098+00:00`
 | normal | needs_editorial_verification | direct | [The Best Smart Glasses We've Tested for 2026 \| PCMag](https://www.pcmag.com/picks/the-best-smart-glasses) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [VITURE: Next Gen XR Glasses](https://www.viture.com/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.m.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | high | source_review | direct | [2026 AI glasses buyer's guide: research-based comparison](https://cybernews.com/vr-ar/best-ai-glasses/) | review (403) | research_news_review, report_card_evidence, research_optics, retail_rebrand_review, deep_research |
@@ -71,7 +72,6 @@ Generated: `2026-08-19T13:14:10.143098+00:00`
 | normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
-| normal | source_review | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | review (403) | research_news_review, report_card_evidence, policy_privacy |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
 | low | source_review |  | [CyanBridge v2.0.0 - Local AI Support](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.0.0) | reachable (200) |  |
 | low | source_review |  | [Release v24.248.0928](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v24.248.0928) | reachable (200) |  |
