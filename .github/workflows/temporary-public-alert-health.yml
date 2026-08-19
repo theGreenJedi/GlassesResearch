@@ -1,0 +1,27 @@
+name: Temporary public alert health probe
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Probe production health
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            if curl --fail --silent --show-error --max-time 15 https://alerts.glassesresearch.org/health | tee /tmp/health.json; then
+              echo
+              jq -c . /tmp/health.json
+              exit 0
+            fi
+            sleep 5
+          done
+          exit 1
