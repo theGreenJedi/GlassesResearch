@@ -5,7 +5,7 @@ const base = 'http://127.0.0.1:4173/__beta/FAMILY_TREE/';
 await fs.mkdir('family-tree-beta-artifacts', { recursive: true });
 const browser = await chromium.launch({ headless: true });
 
-async function assert(condition, message) {
+function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
