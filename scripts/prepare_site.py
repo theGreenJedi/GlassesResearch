@@ -56,6 +56,7 @@ def main():
     if catalog_index.exists():
         catalog_index.write_text(catalog_index.read_text(encoding="utf-8")+"\n[Resolve any GLS identifier](/gls/) · [Machine-readable GLS index](/data/gls-index.json)\n",encoding="utf-8")
     run(ROOT/"scripts/build_report_card_hub.py","--devices",database,"--scores",cards,"--aliases",ROOT/"data/lineage-aliases.json","--output",DEST/"docs/REPORT_CARD.md")
+    run(ROOT/"scripts/build_family_tree_surfaces.py","--site-root",DEST,"--families",ROOT/"data/family-trees.json")
     strip_public_infrastructure_narration()
     run(ROOT/"scripts/build_internal_model_links.py","--output-root",DEST)
     run(ROOT/"scripts/build_rss_feed.py","--source",ROOT/"docs/RESEARCH_NEWS.md","--output",DEST/"feed.xml")
