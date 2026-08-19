@@ -1,0 +1,87 @@
+.family-tree-trigger {
+  display: inline-grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: .2rem;
+  vertical-align: middle;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 24%, transparent);
+  border-radius: .35rem;
+  background: transparent;
+  color: var(--md-default-fg-color--light);
+  cursor: pointer;
+}
+.family-tree-trigger:hover,
+.family-tree-trigger:focus-visible {
+  color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  outline: none;
+}
+.family-tree-trigger svg { width: 1rem; height: 1rem; }
+.family-tree-model-trigger { display: inline-block; margin: -.35rem 0 .35rem; }
+
+.family-tree-dialog {
+  width: min(74rem, calc(100vw - 2rem));
+  max-height: min(88vh, 58rem);
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 24%, transparent);
+  border-radius: .9rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  box-shadow: 0 1.2rem 3rem rgb(0 0 0 / .28);
+}
+.family-tree-dialog::backdrop { background: rgb(0 0 0 / .46); }
+.family-tree-dialog-shell { padding: 1.1rem; overflow: auto; max-height: inherit; }
+.family-tree-dialog-head { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
+.family-tree-dialog-head h2 { margin: 0; }
+.family-tree-eyebrow { font-size: .68rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--md-primary-fg-color); }
+.family-tree-close { border: 0; background: transparent; color: inherit; font-size: 1.8rem; line-height: 1; cursor: pointer; }
+.family-tree-summary { color: var(--md-default-fg-color--light); margin: .55rem 0 .8rem; }
+.family-tree-controls { display: flex; flex-wrap: wrap; gap: .7rem 1.1rem; font-size: .78rem; margin-bottom: .8rem; }
+.family-tree-controls label { display: flex; align-items: center; gap: .4rem; }
+.family-tree-stage-wrap { border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 20%, transparent); border-radius: .8rem; background: color-mix(in srgb, var(--md-default-bg-color) 97%, var(--md-primary-fg-color)); overflow: hidden; }
+.family-tree-stage { position: relative; padding: 1rem; }
+.family-tree-levels { position: relative; z-index: 2; display: grid; gap: 2.2rem; }
+.family-tree-level { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: .7rem; }
+.family-tree-level::before { content: attr(data-level-label); grid-column: 1 / -1; font-size: .62rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--md-default-fg-color--lighter); }
+.family-tree-level:first-child .family-tree-node { width: min(100%, 22rem); justify-self: center; }
+.family-tree-node { position: relative; display: block; width: 100%; min-height: 4.6rem; padding: .65rem .72rem; text-align: left; border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 24%, transparent); border-radius: .65rem; background: color-mix(in srgb, var(--md-default-bg-color) 95%, var(--md-primary-fg-color)); color: var(--md-default-fg-color); cursor: pointer; font: inherit; }
+.family-tree-node:hover,
+.family-tree-node:focus-visible,
+.family-tree-node[aria-pressed="true"] { border-color: var(--md-primary-fg-color); outline: none; box-shadow: 0 0 0 2px color-mix(in srgb, var(--md-primary-fg-color) 18%, transparent); }
+.family-tree-node.is-current { border-width: 2px; border-color: var(--md-primary-fg-color); }
+.family-tree-node[data-type="alias"],
+.family-tree-node[data-status="inferred"] { border-style: dashed; box-shadow: none; }
+.family-tree-node-type { display: block; margin-bottom: .16rem; font-size: .59rem; font-weight: 750; letter-spacing: .07em; text-transform: uppercase; color: var(--md-primary-fg-color); }
+.family-tree-node-label { display: block; font-size: .82rem; font-weight: 700; line-height: 1.25; }
+.family-tree-node-id,
+.family-tree-node-relation { display: block; margin-top: .22rem; font-size: .62rem; line-height: 1.25; color: var(--md-default-fg-color--light); }
+.family-tree-links { position: absolute; inset: 0; z-index: 1; overflow: visible; pointer-events: none; }
+.family-tree-link { fill: none; stroke: color-mix(in srgb, var(--md-default-fg-color) 28%, transparent); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.family-tree-link.is-inferred { stroke-dasharray: 5 5; }
+.family-tree-detail { margin-top: .8rem; padding: .85rem; border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 20%, transparent); border-radius: .7rem; }
+.family-tree-detail h3 { margin: 0 0 .55rem; font-size: 1rem; }
+.family-tree-detail dl { display: grid; grid-template-columns: auto 1fr; gap: .28rem .65rem; margin: .5rem 0; font-size: .72rem; }
+.family-tree-detail dt { font-weight: 700; }
+.family-tree-detail dd { margin: 0; }
+.family-tree-detail ul { margin: .3rem 0; padding-left: 1rem; font-size: .68rem; }
+.family-tree-boundary { margin: .7rem 0; padding: .55rem .65rem; border-left: .18rem solid var(--md-primary-fg-color); background: color-mix(in srgb, var(--md-primary-fg-color) 7%, var(--md-default-bg-color)); font-size: .7rem; }
+.family-tree-mobile[hidden], .family-tree-levels[hidden] { display: none !important; }
+
+@media (max-width: 600px) {
+  .family-tree-dialog { width: calc(100vw - .8rem); max-height: 94vh; }
+  .family-tree-dialog-shell { padding: .75rem; }
+  .family-tree-controls { display: grid; gap: .45rem; }
+  .family-tree-stage { padding: .55rem; }
+  .family-tree-links { display: none; }
+  .family-tree-mobile { display: grid; gap: .65rem; }
+  .family-tree-mobile-branch { margin-left: calc(var(--family-depth, 0) * .7rem); padding-left: calc(var(--family-depth, 0) * .15rem); }
+  .family-tree-mobile-branch .family-tree-mobile-branch { margin-top: .55rem; border-left: 2px solid color-mix(in srgb, var(--md-primary-fg-color) 20%, transparent); padding-left: .55rem; }
+  .family-tree-node { min-height: 0; }
+  .family-tree-alias-group { margin: .4rem 0 .15rem .7rem; padding-left: .5rem; border-left: 1px dashed color-mix(in srgb, var(--md-default-fg-color) 28%, transparent); }
+  .family-tree-alias-group summary { cursor: pointer; font-size: .72rem; font-weight: 650; color: var(--md-default-fg-color--light); }
+  .family-tree-alias-list { display: grid; gap: .4rem; margin-top: .4rem; }
+  .family-tree-alias-list .family-tree-node { padding: .5rem .6rem; }
+  .family-tree-detail dl { grid-template-columns: 1fr; gap: .12rem; }
+  .family-tree-detail dt { margin-top: .28rem; }
+}

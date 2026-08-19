@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "rules": {
+    "score_inheritance": false,
+    "relationship_inheritance": false,
+    "unknown_relationships_remain_unknown": true
+  },
+  "families": [
+    {
+      "id": "lucyd",
+      "label": "Lucyd / Innovative Eyewear",
+      "summary": "A corporate product family with a documented Lyte generation chain and a distinct Armor safety-eyewear branch.",
+      "root_id": "lucyd-root",
+      "nodes": [
+        {"id":"lucyd-root","type":"family","label":"Lucyd / Innovative Eyewear","status":"established"},
+        {"id":"lucyd-lyte","type":"branch","label":"Lyte audio-eyewear branch","status":"established"},
+        {"id":"gls-0030","type":"model","label":"Lucyd Lyte 1.0","canonical_id":"GLS-0030","href":"/models/catalog/gls-0030/","status":"established"},
+        {"id":"gls-0031","type":"model","label":"Lucyd Lyte 2.0","canonical_id":"GLS-0031","href":"/models/catalog/gls-0031/","status":"established"},
+        {"id":"gls-0033","type":"model","label":"Lucyd Lyte XL","canonical_id":"GLS-0033","href":"/models/catalog/gls-0033/","status":"established"},
+        {"id":"lucyd-armor","type":"branch","label":"Armor safety-eyewear branch","status":"established"},
+        {"id":"gls-0159","type":"model","label":"Lucyd Armor","canonical_id":"GLS-0159","href":"/models/catalog/gls-0159/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"lucyd-root","child":"lucyd-lyte","relationship":"product_branch","label":"product branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/LUCYD.md"]},
+        {"parent":"lucyd-lyte","child":"gls-0030","relationship":"member_of","label":"generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/LUCYD.md"]},
+        {"parent":"gls-0030","child":"gls-0031","relationship":"successor","label":"successor","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/LUCYD.md"]},
+        {"parent":"gls-0031","child":"gls-0033","relationship":"successor","label":"successor","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/LUCYD.md"]},
+        {"parent":"lucyd-root","child":"lucyd-armor","relationship":"product_branch","label":"parallel branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["models/PROFILES_06.md"]},
+        {"parent":"lucyd-armor","child":"gls-0159","relationship":"member_of","label":"member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/news/articles/2026-08-17-lucyd-armor-gls-0159.md"]}
+      ]
+    },
+    {
+      "id": "memomind",
+      "label": "XGIMI optical engineering → MemoMind",
+      "summary": "A technology-origin relationship that became a new brand, with one current canonical model and a preserved launch-era alias.",
+      "root_id": "xgimi-optics",
+      "nodes": [
+        {"id":"xgimi-optics","type":"origin","label":"XGIMI optical engineering","status":"established"},
+        {"id":"memomind-brand","type":"family","label":"MemoMind / Qinglai Innovation","status":"established"},
+        {"id":"gls-0160","type":"model","label":"MemoMind One","canonical_id":"GLS-0160","href":"/models/catalog/gls-0160/","status":"established"},
+        {"id":"memo-one-alias","type":"alias","label":"Memo One","status":"established"}
+      ],
+      "edges": [
+        {"parent":"xgimi-optics","child":"memomind-brand","relationship":"derived_from","label":"incubated from","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["models/MemoMindOne/README.md","evidence/EV-0077-MemoMind-One-primary-product.md"]},
+        {"parent":"memomind-brand","child":"gls-0160","relationship":"member_of","label":"current model","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["models/MemoMindOne/README.md"]},
+        {"parent":"gls-0160","child":"memo-one-alias","relationship":"alias_of","label":"launch-era name","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["models/MemoMindOne/README.md"]}
+      ]
+    },
+    {
+      "id": "hecyan",
+      "label": "HeyCyan W6xx ecosystem",
+      "summary": "A dense OEM/rebrand topology: W610 is one canonical platform with many retail identities, while W630 is a distinct sibling platform in the same broader ecosystem.",
+      "root_id": "hecyan-root",
+      "nodes": [
+        {"id":"hecyan-root","type":"family","label":"HeyCyan W6xx ecosystem","status":"established"},
+        {"id":"w610-branch","type":"branch","label":"W610 platform branch","status":"established"},
+        {"id":"gls-0039","type":"model","label":"W610","canonical_id":"GLS-0039","href":"/models/catalog/gls-0039/","status":"established"},
+        {"id":"boobei","type":"alias","label":"BooaBei","status":"established"},
+        {"id":"zbna-w610","type":"alias","label":"Zbna W610","status":"established"},
+        {"id":"mingtawn-w610","type":"alias","label":"Mingtawn W610","status":"established"},
+        {"id":"estg-w610","type":"alias","label":"ESTG W610","status":"established"},
+        {"id":"stark-horizon","type":"alias","label":"STARK Horizon","status":"inferred"},
+        {"id":"w630-branch","type":"branch","label":"W630 sibling-platform branch","status":"established"},
+        {"id":"gls-0158","type":"model","label":"W630","canonical_id":"GLS-0158","href":"/models/catalog/gls-0158/","status":"established"},
+        {"id":"giinova-w630","type":"alias","label":"Giinova W630","status":"established"},
+        {"id":"guhuavmi-w630","type":"alias","label":"GUHUAVMI W630","status":"established"}
+      ],
+      "edges": [
+        {"parent":"hecyan-root","child":"w610-branch","relationship":"product_branch","label":"platform branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/HEYCYAN.md"]},
+        {"parent":"w610-branch","child":"gls-0039","relationship":"member_of","label":"canonical model","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/HEYCYAN.md"]},
+        {"parent":"gls-0039","child":"boobei","relationship":"rebrand_of","label":"rebrand","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0039","child":"zbna-w610","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0039","child":"mingtawn-w610","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0039","child":"estg-w610","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0039","child":"stark-horizon","relationship":"rebrand_of","label":"market identity","confidence":"medium","status":"inferred","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"hecyan-root","child":"w630-branch","relationship":"product_branch","label":"sibling platform","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"w630-branch","child":"gls-0158","relationship":"member_of","label":"canonical model","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0158","child":"giinova-w630","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0158","child":"guhuavmi-w630","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]}
+      ]
+    }
+  ]
+}
