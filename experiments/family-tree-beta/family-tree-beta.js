@@ -85,9 +85,11 @@
     detail.append(title);
     const facts = document.createElement('dl');
     const incoming = current.edges.find((edge) => edge.child === nodeId);
+    const parent = incoming ? current.byId.get(incoming.parent) : null;
     const rows = [
       ['Node', typeName(node)],
       ...(node.canonical_id ? [['Canonical ID', node.canonical_id]] : []),
+      ...(parent ? [['Parent', parent.label]] : []),
       ['Relationship', incoming ? incoming.label : 'family root'],
       ['Status', incoming ? incoming.status : node.status],
       ['Confidence', incoming ? incoming.confidence : '—'],
@@ -169,6 +171,7 @@
       column.style.setProperty('--ft-depth', level);
       for (const node of current.nodes.filter((candidate) => depths.get(candidate.id) === level)) {
         const incoming = current.edges.find((edge) => edge.child === node.id);
+        const parent = incoming ? current.byId.get(incoming.parent) : null;
         const button = document.createElement('button');
         button.type = 'button';
         button.className = 'ft-node';
@@ -192,7 +195,7 @@
         if (incoming) {
           const relation = document.createElement('span');
           relation.className = 'ft-node-relation';
-          relation.textContent = `↳ ${incoming.label}`;
+          relation.textContent = `↳ ${parent ? parent.label : incoming.parent} · ${incoming.label}`;
           button.append(relation);
         }
         button.addEventListener('click', () => showDetail(item, current, node.id));
