@@ -1,0 +1,82 @@
+name: Temporary alerts delivery audit
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN_RAW: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    defaults:
+      run:
+        working-directory: cloudflare/verified-research-alerts
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - name: Install Wrangler
+        run: npm install
+      - name: Normalize and verify Cloudflare credential
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${CLOUDFLARE_ACCOUNT_ID:-}"
+          test -n "${CLOUDFLARE_API_TOKEN_RAW:-}"
+          token="$(printf '%s' "$CLOUDFLARE_API_TOKEN_RAW" | tr -d '\r\n' | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//; s/^Bearer[[:space:]]+//I')"
+          test -n "$token"
+          printf 'CLOUDFLARE_API_TOKEN=%s\n' "$token" >> "$GITHUB_ENV"
+          status="$(curl --silent --show-error -o /tmp/token.json -w '%{http_code}' -H "Authorization: Bearer $token" https://api.cloudflare.com/client/v4/user/tokens/verify || true)"
+          echo "Cloudflare token verification HTTP $status"
+          jq -c '{success, status:(.result.status // null), errors:(.errors // [])}' /tmp/token.json || true
+          test "$status" = 200
+          jq -e '.success == true and .result.status == "active"' /tmp/token.json >/dev/null
+      - name: Resolve production D1 and query privacy-safe delivery state
+        shell: bash
+        run: |
+          set -euo pipefail
+          DB_ID="$(npx wrangler d1 list --json | jq -r '.[] | select(.name == "glassesresearch-alerts") | .uuid' | head -n1)"
+          test -n "$DB_ID"
+          node <<NODE
+          import fs from 'node:fs';
+          const path='wrangler.jsonc';
+          const config=JSON.parse(fs.readFileSync(path,'utf8'));
+          config.d1_databases[0].database_id='${DB_ID}';
+          fs.writeFileSync(path, JSON.stringify(config,null,2)+'\n');
+          NODE
+          runq() {
+            local label="$1" sql="$2" tmp
+            tmp="/tmp/${label}.json"
+            echo "--- $label ---"
+            npx wrangler d1 execute glassesresearch-alerts --remote --json --command "$sql" > "$tmp"
+            python - "$tmp" <<'PY'
+          import json, sys
+          p=json.load(open(sys.argv[1]))
+          rows=[]
+          if isinstance(p, list):
+              for entry in p:
+                  if isinstance(entry, dict):
+                      if isinstance(entry.get('results'), list): rows.extend(entry['results'])
+                      if isinstance(entry.get('result'), list): rows.extend(entry['result'])
+          elif isinstance(p, dict):
+              if isinstance(p.get('results'), list): rows.extend(p['results'])
+              if isinstance(p.get('result'), list): rows.extend(p['result'])
+          print(json.dumps(rows, sort_keys=True))
+          PY
+          }
+          echo '--- HEALTH ---'
+          curl --fail --silent --show-error https://alerts.glassesresearch.org/health
+          echo
+          runq SUBSCRIPTIONS "SELECT status,cadence,COUNT(*) AS count,SUM(CASE WHEN last_sent_at IS NOT NULL THEN 1 ELSE 0 END) AS with_research_send,MIN(last_sent_at) AS earliest_last_sent_at,MAX(last_sent_at) AS latest_last_sent_at FROM subscribers GROUP BY status,cadence ORDER BY status,cadence;"
+          runq DAILY_STATE "SELECT cadence,created_at,confirmed_at,last_sent_at FROM subscribers WHERE status='active' AND cadence='daily' ORDER BY created_at;"
+          runq MEMOMIND_PUBLICATION "SELECT id,title,published_at,created_at FROM published_items WHERE id='gr-2026-08-18-memomind-one';"
+          runq MEMOMIND_DELIVERIES "SELECT COUNT(*) AS delivery_receipts,MIN(delivered_at) AS first_delivery_receipt,MAX(delivered_at) AS latest_delivery_receipt FROM deliveries WHERE publication_id='gr-2026-08-18-memomind-one';"
+          runq LATEST_DELIVERIES "SELECT publication_id,COUNT(*) AS delivery_receipts,MAX(delivered_at) AS latest_delivery_receipt FROM deliveries GROUP BY publication_id ORDER BY latest_delivery_receipt DESC LIMIT 10;"
+          runq DAILY_FILTER_SHAPE "SELECT COUNT(*) AS active_daily,SUM(CASE WHEN json_array_length(json_extract(include_json,'$.models')) + json_array_length(json_extract(include_json,'$.brands_lineages')) + json_array_length(json_extract(include_json,'$.topics')) = 0 THEN 1 ELSE 0 END) AS follow_everything,SUM(CASE WHEN json_array_length(json_extract(exclude_json,'$.models')) + json_array_length(json_extract(exclude_json,'$.brands_lineages')) + json_array_length(json_extract(exclude_json,'$.topics')) = 0 THEN 1 ELSE 0 END) AS exclude_nothing FROM subscribers WHERE status='active' AND cadence='daily';"
