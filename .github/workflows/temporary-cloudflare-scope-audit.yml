@@ -1,0 +1,40 @@
+name: Temporary Cloudflare scope audit
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN_RAW: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - name: Compare site zone account to configured account without exposing identifiers
+        shell: bash
+        run: |
+          set -euo pipefail
+          token="$(printf '%s' "$CLOUDFLARE_API_TOKEN_RAW" | tr -d '\r\n' | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//; s/^Bearer[[:space:]]+//I')"
+          test -n "$token"
+          test -n "${CLOUDFLARE_ACCOUNT_ID:-}"
+          status="$(curl --silent --show-error -o /tmp/zone.json -w '%{http_code}' \
+            -H "Authorization: Bearer $token" \
+            'https://api.cloudflare.com/client/v4/zones?name=glassesresearch.org&status=active' || true)"
+          echo "Zone lookup HTTP $status"
+          python - <<'PY'
+          import json, os
+          p=json.load(open('/tmp/zone.json'))
+          rows=p.get('result') or [] if isinstance(p,dict) else []
+          configured=os.environ.get('CLOUDFLARE_ACCOUNT_ID','')
+          print(json.dumps({
+            'success': bool(p.get('success')) if isinstance(p,dict) else False,
+            'zone_found': bool(rows),
+            'account_matches_configured_secret': bool(rows and str((rows[0].get('account') or {}).get('id') or '') == configured),
+            'error_codes': [e.get('code') for e in (p.get('errors') or [])] if isinstance(p,dict) else [],
+          }, sort_keys=True))
+          PY
