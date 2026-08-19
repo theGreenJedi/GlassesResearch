@@ -11,6 +11,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: family-tree-beta-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   beta-preview:
     runs-on: ubuntu-latest
@@ -48,10 +52,18 @@ jobs:
       - name: Validate beta JavaScript syntax
         run: node --check experiments/family-tree-beta/family-tree-beta.js
 
-      - name: Install Playwright Chromium
+      - name: Use runner browser for Playwright
+        shell: bash
         run: |
+          set -euo pipefail
           npm install --no-save playwright@1.55.0
-          npx playwright install --with-deps chromium
+          browser="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$browser" ]; then
+            echo 'No compatible browser is present on this runner.' >&2
+            exit 1
+          fi
+          echo "CHROME_PATH=$browser" >> "$GITHUB_ENV"
+          echo "Using runner browser: $browser"
 
       - name: Serve private beta build
         shell: bash
