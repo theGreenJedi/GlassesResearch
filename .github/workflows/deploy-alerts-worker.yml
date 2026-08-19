@@ -8,7 +8,6 @@ on:
     paths:
       - '.github/workflows/deploy-alerts-worker.yml'
       - 'cloudflare/verified-research-alerts/**'
-      - 'cloudflare/verified-research-canary/**'
 
 permissions:
   contents: read
@@ -20,15 +19,12 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 20
     env:
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       CLOUDFLARE_API_TOKEN_RAW: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
-      CANARY_DOMAIN: canary.glassesresearch.org
-      CANARY_ADDRESS: delivery@canary.glassesresearch.org
-      CANARY_WORKER: glassesresearch-alert-canary
 
     steps:
       - uses: actions/checkout@v6
@@ -37,14 +33,10 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Install Wrangler for alert and canary Workers
-        shell: bash
-        run: |
-          set -euo pipefail
-          npm install --prefix cloudflare/verified-research-alerts
-          npm install --prefix cloudflare/verified-research-canary
+      - name: Install Wrangler for alerts Worker
+        run: npm install --prefix cloudflare/verified-research-alerts
 
-      - name: Verify and normalize deployment secrets
+      - name: Verify deployment credentials and core Cloudflare scopes
         shell: bash
         run: |
           set -euo pipefail
@@ -66,71 +58,81 @@ jobs:
           fi
           printf 'CLOUDFLARE_API_TOKEN=%s\n' "$token" >> "$GITHUB_ENV"
 
-          status="$(curl --silent --show-error -o /tmp/token.json -w '%{http_code}' \
-            -H "Authorization: Bearer $token" \
-            https://api.cloudflare.com/client/v4/user/tokens/verify || true)"
+          api='https://api.cloudflare.com/client/v4'
+          auth=(-H "Authorization: Bearer $token")
+
+          status="$(curl --silent --show-error -o /tmp/token.json -w '%{http_code}' "${auth[@]}" "$api/user/tokens/verify" || true)"
           if [ "$status" != 200 ] || ! jq -e '.success == true and .result.status == "active"' /tmp/token.json >/dev/null 2>&1; then
-            echo "Cloudflare API token is not currently valid (HTTP $status). Refresh CLOUDFLARE_API_TOKEN before production canary provisioning can complete." >&2
+            echo "Cloudflare API token is not active (HTTP $status)." >&2
             exit 1
           fi
 
-      - name: Resolve zone and D1 database
-        id: cloudflare
+          status="$(curl --silent --show-error -o /tmp/zone.json -w '%{http_code}' "${auth[@]}" "$api/zones?name=glassesresearch.org&status=active" || true)"
+          if [ "$status" != 200 ] || ! jq -e --arg account "$CLOUDFLARE_ACCOUNT_ID" '.success == true and (.result | length) > 0 and .result[0].account.id == $account' /tmp/zone.json >/dev/null 2>&1; then
+            echo 'Cloudflare token cannot read the glassesresearch.org zone in the configured account. Grant Zone Read for glassesresearch.org.' >&2
+            exit 1
+          fi
+
+          status="$(curl --silent --show-error -o /tmp/worker-settings.json -w '%{http_code}' "${auth[@]}" "$api/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/glassesresearch-alerts/settings" || true)"
+          if [ "$status" = 403 ]; then
+            echo 'Cloudflare token is active but lacks Workers Scripts access for this account. Grant Account -> Workers Scripts Write.' >&2
+            exit 1
+          fi
+          if [ "$status" != 200 ] && [ "$status" != 404 ]; then
+            echo "Unable to inspect the alerts Worker before deployment (HTTP $status)." >&2
+            cat /tmp/worker-settings.json >&2 || true
+            exit 1
+          fi
+
+      - name: Resolve D1 database
+        id: d1
+        working-directory: cloudflare/verified-research-alerts
         shell: bash
         run: |
           set -euo pipefail
-          api='https://api.cloudflare.com/client/v4'
-          auth=(-H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H 'Content-Type: application/json')
-
-          curl --fail --silent --show-error "${auth[@]}" \
-            "$api/zones?name=glassesresearch.org&status=active" -o /tmp/zones.json
-          ZONE_ID="$(jq -r '.result[0].id // empty' /tmp/zones.json)"
-          if [ -z "$ZONE_ID" ]; then
-            echo 'Unable to resolve active glassesresearch.org Cloudflare zone. Token needs Zone Read for the site zone.' >&2
-            exit 1
+          set +e
+          npx wrangler d1 list --json > /tmp/d1-list.json 2>/tmp/d1-list.err
+          rc=$?
+          set -e
+          if [ "$rc" -ne 0 ]; then
+            echo 'Cloudflare token cannot list the production D1 database. Grant Account -> D1 Write (or D1 Read plus the write permission required for schema updates).' >&2
+            cat /tmp/d1-list.err >&2 || true
+            exit "$rc"
           fi
 
-          cd cloudflare/verified-research-alerts
-          DB_ID="$(npx wrangler d1 list --json | jq -r --arg name 'glassesresearch-alerts' '.[] | select(.name == $name) | .uuid' | head -n1)"
+          DB_ID="$(jq -r --arg name 'glassesresearch-alerts' '.[] | select(.name == $name) | .uuid' /tmp/d1-list.json | head -n1)"
           if [ -z "$DB_ID" ]; then
             npx wrangler d1 create glassesresearch-alerts
-            DB_ID="$(npx wrangler d1 list --json | jq -r --arg name 'glassesresearch-alerts' '.[] | select(.name == $name) | .uuid' | head -n1)"
+            npx wrangler d1 list --json > /tmp/d1-list.json
+            DB_ID="$(jq -r --arg name 'glassesresearch-alerts' '.[] | select(.name == $name) | .uuid' /tmp/d1-list.json | head -n1)"
           fi
           if [ -z "$DB_ID" ]; then
-            echo 'Unable to resolve D1 database ID. Token needs D1 write access.' >&2
+            echo 'Unable to resolve production D1 database ID.' >&2
             exit 1
           fi
-
-          echo "zone_id=$ZONE_ID" >> "$GITHUB_OUTPUT"
           echo "database_id=$DB_ID" >> "$GITHUB_OUTPUT"
 
-      - name: Build production Wrangler configurations
+      - name: Build production Wrangler configuration
         shell: bash
         env:
-          D1_DATABASE_ID: ${{ steps.cloudflare.outputs.database_id }}
+          D1_DATABASE_ID: ${{ steps.d1.outputs.database_id }}
         run: |
           set -euo pipefail
           node <<'NODE'
           import fs from 'node:fs';
-          for (const path of [
-            'cloudflare/verified-research-alerts/wrangler.jsonc',
-            'cloudflare/verified-research-canary/wrangler.jsonc'
-          ]) {
-            const config = JSON.parse(fs.readFileSync(path, 'utf8'));
-            config.d1_databases[0].database_id = process.env.D1_DATABASE_ID;
-            if (path.includes('verified-research-alerts')) {
-              config.workers_dev = false;
-              config.routes = [{ pattern: 'alerts.glassesresearch.org', custom_domain: true }];
-            }
-            fs.writeFileSync(path, JSON.stringify(config, null, 2) + '\n');
-          }
+          const path = 'cloudflare/verified-research-alerts/wrangler.jsonc';
+          const config = JSON.parse(fs.readFileSync(path, 'utf8'));
+          config.d1_databases[0].database_id = process.env.D1_DATABASE_ID;
+          config.workers_dev = false;
+          config.routes = [{ pattern: 'alerts.glassesresearch.org', custom_domain: true }];
+          fs.writeFileSync(path, JSON.stringify(config, null, 2) + '\n');
           NODE
 
       - name: Apply production D1 schema
         working-directory: cloudflare/verified-research-alerts
         run: npx wrangler d1 execute glassesresearch-alerts --remote --file=schema.sql --yes
 
-      - name: Deploy alert Worker and install secrets
+      - name: Deploy subscriber alert Worker and install secrets
         working-directory: cloudflare/verified-research-alerts
         shell: bash
         run: |
@@ -139,100 +141,18 @@ jobs:
           printf '%s' "$RESEND_API_KEY" | npx wrangler secret put RESEND_API_KEY
           printf '%s' "$PUBLISH_TOKEN" | npx wrangler secret put PUBLISH_TOKEN
 
-      - name: Deploy receiving canary Worker and install verifier secret
-        working-directory: cloudflare/verified-research-canary
-        shell: bash
-        run: |
-          set -euo pipefail
-          npx wrangler deploy
-          printf '%s' "$PUBLISH_TOKEN" | npx wrangler secret put PUBLISH_TOKEN
-
-      - name: Provision isolated Email Routing canary
-        shell: bash
-        env:
-          ZONE_ID: ${{ steps.cloudflare.outputs.zone_id }}
-        run: |
-          set -euo pipefail
-          api='https://api.cloudflare.com/client/v4'
-          auth=(-H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H 'Content-Type: application/json')
-
-          for type in MX TXT; do
-            curl --fail --silent --show-error "${auth[@]}" \
-              "$api/zones/$ZONE_ID/dns_records?type=$type&name=glassesresearch.org&per_page=100" \
-              | jq -S '[.result[] | {type,name,content,priority:(.priority // null)}] | sort_by(.type,.name,.content,.priority)' \
-              > "/tmp/apex-$type-before.json"
-          done
-
-          curl --fail --silent --show-error "${auth[@]}" \
-            "$api/zones/$ZONE_ID/email/routing/dns?subdomain=$CANARY_DOMAIN" -o /tmp/canary-dns-before.json
-          configured="$(jq -r '(.success == true) and ((.result.errors // []) | length == 0)' /tmp/canary-dns-before.json)"
-          if [ "$configured" != true ]; then
-            status="$(curl --silent --show-error -o /tmp/canary-enable.json -w '%{http_code}' \
-              -X POST "${auth[@]}" \
-              --data "$(jq -nc --arg name "$CANARY_DOMAIN" '{name:$name}')" \
-              "$api/zones/$ZONE_ID/email/routing/dns" || true)"
-            if [ "$status" -lt 200 ] || [ "$status" -ge 300 ] || ! jq -e '.success == true' /tmp/canary-enable.json >/dev/null 2>&1; then
-              echo "Unable to enable Email Routing for $CANARY_DOMAIN (HTTP $status). Token needs Zone Settings Write." >&2
-              cat /tmp/canary-enable.json >&2 || true
-              exit 1
-            fi
-          fi
-
-          for attempt in 1 2 3 4 5 6; do
-            curl --fail --silent --show-error "${auth[@]}" \
-              "$api/zones/$ZONE_ID/email/routing/dns?subdomain=$CANARY_DOMAIN" -o /tmp/canary-dns.json
-            if jq -e '.success == true and ((.result.errors // []) | length == 0)' /tmp/canary-dns.json >/dev/null; then
-              break
-            fi
-            if [ "$attempt" -eq 6 ]; then
-              echo "Email Routing DNS for $CANARY_DOMAIN is not ready." >&2
-              cat /tmp/canary-dns.json >&2
-              exit 1
-            fi
-            sleep 10
-          done
-
-          desired="$(jq -nc --arg address "$CANARY_ADDRESS" --arg worker "$CANARY_WORKER" '{name:"GlassesResearch verified-alert delivery canary",enabled:true,matchers:[{type:"literal",field:"to",value:$address}],actions:[{type:"worker",value:[$worker]}],source:"api"}')"
-          curl --fail --silent --show-error "${auth[@]}" \
-            "$api/zones/$ZONE_ID/email/routing/rules?per_page=100" -o /tmp/rules.json
-          RULE_ID="$(jq -r --arg address "$CANARY_ADDRESS" '.result[] | select(any(.matchers[]?; .type == "literal" and .field == "to" and .value == $address)) | .id' /tmp/rules.json | head -n1)"
-          if [ -n "$RULE_ID" ]; then
-            curl --fail --silent --show-error -X PUT "${auth[@]}" --data "$desired" \
-              "$api/zones/$ZONE_ID/email/routing/rules/$RULE_ID" -o /tmp/rule-write.json
-          else
-            curl --fail --silent --show-error -X POST "${auth[@]}" --data "$desired" \
-              "$api/zones/$ZONE_ID/email/routing/rules" -o /tmp/rule-write.json
-          fi
-          if ! jq -e --arg address "$CANARY_ADDRESS" --arg worker "$CANARY_WORKER" \
-            '.success == true and .result.enabled == true and any(.result.matchers[]?; .value == $address) and any(.result.actions[]?; .type == "worker" and (.value // [] | index($worker)))' \
-            /tmp/rule-write.json >/dev/null; then
-            echo 'Canary Email Routing rule could not be created/updated. Token needs Email Routing Rules Write.' >&2
-            cat /tmp/rule-write.json >&2
-            exit 1
-          fi
-
-          for type in MX TXT; do
-            curl --fail --silent --show-error "${auth[@]}" \
-              "$api/zones/$ZONE_ID/dns_records?type=$type&name=glassesresearch.org&per_page=100" \
-              | jq -S '[.result[] | {type,name,content,priority:(.priority // null)}] | sort_by(.type,.name,.content,.priority)' \
-              > "/tmp/apex-$type-after.json"
-            diff -u "/tmp/apex-$type-before.json" "/tmp/apex-$type-after.json" || {
-              echo "Refusing canary deployment: apex $type records changed while configuring isolated subdomain." >&2
-              exit 1
-            }
-          done
-
-      - name: Verify deployed health endpoint
+      - name: Verify current subscriber alert Worker is live
         shell: bash
         run: |
           set -euo pipefail
           for attempt in 1 2 3 4 5 6; do
             if curl --fail --silent --show-error --max-time 15 https://alerts.glassesresearch.org/health | tee /tmp/alerts-health.json; then
-              if jq -e '.ok == true and .service == "verified-research-alerts" and .canary == true' /tmp/alerts-health.json >/dev/null; then
+              if jq -e '.ok == true and .service == "verified-research-alerts" and .cadence_jitter_tolerance_ms == 300000' /tmp/alerts-health.json >/dev/null; then
                 exit 0
               fi
             fi
             sleep 10
           done
-          echo 'Health verification failed or deployed Worker lacks canary support.' >&2
+          echo 'Production Worker did not expose the current cadence-fix health signature after deployment.' >&2
+          cat /tmp/alerts-health.json >&2 || true
           exit 1
