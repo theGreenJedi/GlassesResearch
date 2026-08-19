@@ -43,7 +43,6 @@
 
 .ft-family-summary {
   margin: .8rem 0;
-  max-width: 72rem;
   color: var(--md-default-fg-color--light);
 }
 
@@ -63,15 +62,11 @@
 }
 
 .ft-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(15rem, 19rem);
-  gap: 1rem;
-  align-items: start;
+  display: block;
 }
 
 .ft-stage-scroll {
-  overflow: auto;
-  overscroll-behavior-inline: contain;
+  overflow: visible;
   padding: .5rem;
   border: 1px solid var(--ft-line);
   border-radius: .8rem;
@@ -80,8 +75,8 @@
 
 .ft-stage {
   position: relative;
-  min-width: 42rem;
-  min-height: 24rem;
+  min-width: 0;
+  min-height: 0;
   padding: 1rem;
 }
 
@@ -89,22 +84,23 @@
   position: relative;
   z-index: 2;
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(11.5rem, 1fr);
-  gap: 4.25rem;
+  grid-template-columns: 1fr;
+  gap: 2.35rem;
   align-items: start;
 }
 
 .ft-level {
   display: grid;
-  gap: 1.15rem;
-  align-content: start;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: .75rem;
+  align-items: stretch;
 }
 
 .ft-level::before {
   content: attr(data-level-label);
+  grid-column: 1 / -1;
   display: block;
-  margin-bottom: -.55rem;
+  margin-bottom: -.25rem;
   font-size: .63rem;
   font-weight: 700;
   letter-spacing: .08em;
@@ -112,11 +108,16 @@
   color: var(--md-default-fg-color--lighter);
 }
 
+.ft-level:first-child .ft-node {
+  width: min(100%, 21rem);
+  justify-self: center;
+}
+
 .ft-node {
   position: relative;
   display: block;
   width: 100%;
-  min-height: 5.1rem;
+  min-height: 5rem;
   padding: .72rem .78rem;
   text-align: left;
   border: 1px solid var(--ft-line);
@@ -148,7 +149,7 @@
 
 .ft-node-label {
   display: block;
-  font-size: .86rem;
+  font-size: .84rem;
   font-weight: 700;
   line-height: 1.25;
 }
@@ -157,12 +158,13 @@
 .ft-node-relation {
   display: block;
   margin-top: .28rem;
-  font-size: .66rem;
+  font-size: .64rem;
   line-height: 1.25;
   color: var(--md-default-fg-color--light);
 }
 
 .ft-node[data-node-type="alias"] {
+  min-height: 4.25rem;
   border-style: dashed;
   box-shadow: none;
 }
@@ -191,8 +193,7 @@
 }
 
 .ft-detail {
-  position: sticky;
-  top: 4.5rem;
+  margin-top: 1rem;
   padding: 1rem;
   border: 1px solid var(--ft-line);
   border-radius: .8rem;
@@ -240,15 +241,6 @@
   font-weight: 650;
 }
 
-@media (max-width: 900px) {
-  .ft-layout {
-    grid-template-columns: 1fr;
-  }
-  .ft-detail {
-    position: static;
-  }
-}
-
 @media (max-width: 600px) {
   .ft-toolbar {
     display: grid;
@@ -258,27 +250,19 @@
     width: 100%;
   }
   .ft-stage {
-    min-width: 0;
-    min-height: 0;
     padding: .35rem;
   }
   .ft-levels {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: 1fr;
     gap: 1rem;
   }
   .ft-level {
+    grid-template-columns: 1fr;
     gap: .65rem;
-    padding-left: calc(var(--ft-depth, 0) * .6rem);
   }
   .ft-links {
     display: none;
   }
   .ft-node {
     min-height: 0;
-  }
-  .ft-stage-scroll {
-    overflow: visible;
   }
 }
