@@ -1,0 +1,58 @@
+name: Temporary Resend alert audit
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+    steps:
+      - name: Query privacy-safe sent-alert metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${RESEND_API_KEY:-}"
+          status="$(curl --silent --show-error -o /tmp/emails.json -w '%{http_code}' \
+            -H "Authorization: Bearer $RESEND_API_KEY" \
+            'https://api.resend.com/emails?limit=100' || true)"
+          echo "Resend list HTTP $status"
+          test "$status" = 200
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone, timedelta
+
+          payload=json.load(open('/tmp/emails.json'))
+          rows=payload.get('data', []) if isinstance(payload, dict) else []
+          cutoff=datetime.now(timezone.utc)-timedelta(hours=48)
+          safe=[]
+          for row in rows:
+              created=row.get('created_at') or ''
+              try:
+                  dt=datetime.fromisoformat(created.replace('Z','+00:00'))
+              except Exception:
+                  continue
+              if dt < cutoff:
+                  continue
+              sender=str(row.get('from') or '').lower()
+              subject=str(row.get('subject') or '')
+              if 'alerts@glassesresearch.org' not in sender and not subject.startswith('GlassesResearch'):
+                  continue
+              recipients=row.get('to') or []
+              is_canary=any(str(x).lower()=='delivery@canary.glassesresearch.org' for x in recipients)
+              safe.append({
+                  'created_at': created,
+                  'subject': subject,
+                  'last_event': row.get('last_event'),
+                  'recipient_class': 'canary' if is_canary else 'subscriber',
+                  'recipient_count': len(recipients),
+              })
+          safe.sort(key=lambda x:x['created_at'])
+          print(json.dumps({'count':len(safe),'emails':safe}, indent=2, sort_keys=True))
+          PY
