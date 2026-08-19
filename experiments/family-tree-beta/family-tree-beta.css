@@ -241,28 +241,105 @@
   font-weight: 650;
 }
 
+.ft-mobile-tree,
+.ft-mobile-subtree,
+.ft-mobile-children,
+.ft-alias-list {
+  display: grid;
+}
+
 @media (max-width: 600px) {
+  .family-tree-beta {
+    margin-top: .8rem;
+  }
   .ft-toolbar {
     display: grid;
+    gap: .55rem;
+    padding: .75rem;
   }
   .ft-toolbar select {
     min-width: 0;
     width: 100%;
   }
-  .ft-stage {
-    padding: .35rem;
+  .ft-toolbar .ft-check {
+    min-height: 1.5rem;
+    font-size: .72rem;
   }
-  .ft-levels {
-    gap: 1rem;
+  .ft-family-summary {
+    margin: .65rem 0 .8rem;
+    font-size: .77rem;
+    line-height: 1.45;
   }
-  .ft-level {
-    grid-template-columns: 1fr;
-    gap: .65rem;
-  }
-  .ft-links {
+  .ft-key {
     display: none;
+  }
+  .ft-stage-scroll {
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+  .ft-stage {
+    padding: 0;
+  }
+  .ft-links,
+  .ft-levels {
+    display: none;
+  }
+  .ft-mobile-tree {
+    position: relative;
+    z-index: 2;
+    gap: .7rem;
+  }
+  .ft-mobile-subtree {
+    gap: .55rem;
+  }
+  .ft-mobile-children {
+    gap: .65rem;
+    margin-left: .55rem;
+    padding-left: .7rem;
+    border-left: 2px solid var(--ft-line);
   }
   .ft-node {
     min-height: 0;
+    padding: .62rem .68rem;
+    border-radius: .62rem;
+    box-shadow: none;
+  }
+  .ft-node-type {
+    font-size: .55rem;
+  }
+  .ft-node-label {
+    font-size: .8rem;
+  }
+  .ft-node-id,
+  .ft-node-relation {
+    font-size: .61rem;
+  }
+  .ft-alias-group {
+    margin-top: .1rem;
+    border: 1px dashed var(--ft-line);
+    border-radius: .62rem;
+    background: var(--ft-card);
+    overflow: hidden;
+  }
+  .ft-alias-group > summary {
+    padding: .62rem .7rem;
+    cursor: pointer;
+    font-size: .7rem;
+    font-weight: 700;
+    color: var(--md-default-fg-color--light);
+  }
+  .ft-alias-group[open] > summary {
+    border-bottom: 1px dashed var(--ft-line);
+  }
+  .ft-alias-list {
+    gap: .45rem;
+    padding: .55rem;
+  }
+  .ft-alias-list .ft-node {
+    background: var(--md-default-bg-color);
+  }
+  .ft-detail {
+    display: none;
   }
 }
