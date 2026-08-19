@@ -14,6 +14,9 @@
     owner_control: 'Owner Control',
     android_compatibility: 'Android Compatibility',
   };
+  const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+  }[char]));
 
   const section = document.createElement('section');
   section.className = 'community-review-model-card';
@@ -34,14 +37,26 @@
       const n = Number(model.accepted_review_count || 0);
       const evidenceCount = Number(model.ownership_evidence_count || 0);
       summary.textContent = `${n} accepted independent hands-on review${n === 1 ? '' : 's'} · ${evidenceCount} with ownership evidence supplied. These observations do not overwrite GlassesResearch scores.`;
-      const rows = Object.entries(model.ratings || {})
+      const scoreRows = Object.entries(model.ratings || {})
         .filter(([, value]) => Number(value?.n || 0) > 0)
-        .map(([key, value]) => `<div class="community-review-mini-score"><span>${labels[key] || key}</span><strong>${value.median}/10</strong><small>median · n=${value.n} · range ${value.min}–${value.max}</small></div>`)
+        .map(([key, value]) => `<div class="community-review-mini-score"><span>${esc(labels[key] || key)}</span><strong>${esc(value.median)}/10</strong><small>median · n=${esc(value.n)} · range ${esc(value.min)}–${esc(value.max)}</small></div>`)
         .join('');
-      if (rows) {
-        ratings.innerHTML = `<div class="community-review-mini-grid">${rows}</div><p class="community-review-method-note">Community medians expose owner experience without collapsing it into the canonical evidence score. Open individual provenance through contributor histories and source issues as accepted reviews accumulate.</p>`;
-        ratings.hidden = false;
-      }
+      const reviewRows = (Array.isArray(model.reviews) ? model.reviews : []).map((review) => {
+        const name = esc(review.display_name || 'Anonymous contributor');
+        const contributor = review.contributor_url
+          ? `<a href="${esc(review.contributor_url)}">${name}</a>`
+          : name;
+        const reviewId = esc(review.review_id || 'Review');
+        const provenance = review.source_issue
+          ? `<a href="${esc(review.source_issue)}">${reviewId}</a>`
+          : reviewId;
+        const evidence = review.ownership_evidence && review.ownership_evidence !== 'none'
+          ? ' · ownership evidence supplied'
+          : '';
+        return `<li>${provenance} — ${contributor} · accepted ${esc(review.accepted_at || 'date unknown')}${evidence}</li>`;
+      }).join('');
+      ratings.innerHTML = `${scoreRows ? `<div class="community-review-mini-grid">${scoreRows}</div>` : ''}${reviewRows ? `<h3>Accepted review provenance</h3><ul>${reviewRows}</ul>` : ''}<p class="community-review-method-note">Community medians expose owner experience without collapsing it into the canonical evidence score. Each accepted review remains traceable to its source submission and, when requested, its persistent contributor history.</p>`;
+      ratings.hidden = false;
     })
     .catch(() => {
       const summary = document.getElementById('community-review-model-summary');
