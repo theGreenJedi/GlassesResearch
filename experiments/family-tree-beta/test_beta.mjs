@@ -47,6 +47,8 @@ await desktop.selectOption('[data-ft-family]', 'hecyan');
 await desktop.waitForTimeout(100);
 assert(await desktop.locator('.ft-node').count() === 12, 'HeyCyan beta should render twelve nodes with aliases');
 await assertDesktopTreeFits(desktop, 'HeyCyan');
+assert((await desktop.locator('.ft-node', { hasText: 'BooaBei' }).innerText()).includes('W610'), 'W610 alias must name W610 as its parent');
+assert((await desktop.locator('.ft-node', { hasText: 'Giinova W630' }).innerText()).includes('W630'), 'W630 alias must name W630 as its parent');
 await desktop.uncheck('[data-ft-aliases]');
 await desktop.waitForTimeout(100);
 assert(await desktop.locator('.ft-node').count() === 5, 'HeyCyan alias toggle should collapse to five structural nodes');
@@ -61,8 +63,10 @@ await desktop.screenshot({ path: 'family-tree-beta-artifacts/hecyan-desktop.png'
 await desktop.selectOption('[data-ft-family]', 'lucyd');
 await desktop.check('[data-ft-inferred]');
 await desktop.locator('.ft-node', { hasText: 'Lucyd Armor' }).click();
-assert((await desktop.locator('[data-ft-detail]').innerText()).includes('No evidence inheritance'), 'Detail panel must state the inheritance boundary');
-assert((await desktop.locator('[data-ft-detail]').innerText()).includes('GLS-0159'), 'Detail panel must retain canonical GLS identity');
+const armorDetail = await desktop.locator('[data-ft-detail]').innerText();
+assert(armorDetail.includes('No evidence inheritance'), 'Detail panel must state the inheritance boundary');
+assert(armorDetail.includes('GLS-0159'), 'Detail panel must retain canonical GLS identity');
+assert(armorDetail.includes('Armor safety-eyewear branch'), 'Detail panel must name the selected model parent');
 
 const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true });
 await mobile.goto(base, { waitUntil: 'networkidle' });
@@ -71,7 +75,9 @@ const overflow = await mobile.evaluate(() => document.documentElement.scrollWidt
 assert(overflow <= 1, `Mobile preview has horizontal page overflow: ${overflow}px`);
 await mobile.selectOption('[data-ft-family]', 'hecyan');
 await mobile.waitForTimeout(100);
+assert((await mobile.locator('.ft-node', { hasText: 'BooaBei' }).innerText()).includes('W610'), 'Mobile alias must preserve visible W610 parentage without connector lines');
+assert((await mobile.locator('.ft-node', { hasText: 'GUHUAVMI W630' }).innerText()).includes('W630'), 'Mobile alias must preserve visible W630 parentage without connector lines');
 await mobile.screenshot({ path: 'family-tree-beta-artifacts/hecyan-mobile.png', fullPage: true });
 
 await browser.close();
-console.log('Family-tree beta browser tests passed: branching, aliases, inferred filtering, detail provenance, desktop fit, and mobile layout.');
+console.log('Family-tree beta browser tests passed: branching, aliases, explicit parentage, inferred filtering, detail provenance, desktop fit, and mobile layout.');
