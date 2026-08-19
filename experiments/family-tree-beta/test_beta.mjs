@@ -71,13 +71,23 @@ assert(armorDetail.includes('Armor safety-eyewear branch'), 'Detail panel must n
 const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true });
 await mobile.goto(base, { waitUntil: 'networkidle' });
 await mobile.waitForSelector('.ft-node');
-const overflow = await mobile.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-assert(overflow <= 1, `Mobile preview has horizontal page overflow: ${overflow}px`);
 await mobile.selectOption('[data-ft-family]', 'hecyan');
 await mobile.waitForTimeout(100);
-assert((await mobile.locator('.ft-node', { hasText: 'BooaBei' }).innerText()).includes('W610'), 'Mobile alias must preserve visible W610 parentage without connector lines');
-assert((await mobile.locator('.ft-node', { hasText: 'GUHUAVMI W630' }).innerText()).includes('W630'), 'Mobile alias must preserve visible W630 parentage without connector lines');
+const overflow = await mobile.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+assert(overflow <= 1, `Mobile preview has horizontal page overflow: ${overflow}px`);
+assert(await mobile.locator('.ft-alias-group').count() === 2, 'HeyCyan mobile should group aliases under the two canonical models');
+assert(await mobile.locator('.ft-alias-group[open]').count() === 0, 'Mobile alias groups must be collapsed by default');
+assert(await mobile.locator('.ft-node:visible').count() === 5, 'Collapsed mobile genealogy should show only the five structural nodes');
+assert((await mobile.locator('.ft-alias-group > summary').nth(0).innerText()).includes('W610'), 'First mobile alias group must identify W610');
+assert((await mobile.locator('.ft-alias-group > summary').nth(1).innerText()).includes('W630'), 'Second mobile alias group must identify W630');
 await mobile.screenshot({ path: 'family-tree-beta-artifacts/hecyan-mobile.png', fullPage: true });
 
+await mobile.locator('.ft-alias-group > summary').nth(0).click();
+await mobile.waitForTimeout(50);
+assert((await mobile.locator('.ft-node', { hasText: 'BooaBei' }).innerText()).includes('W610'), 'Expanded W610 alias must preserve explicit parentage');
+await mobile.locator('.ft-alias-group > summary').nth(1).click();
+await mobile.waitForTimeout(50);
+assert((await mobile.locator('.ft-node', { hasText: 'GUHUAVMI W630' }).innerText()).includes('W630'), 'Expanded W630 alias must preserve explicit parentage');
+
 await browser.close();
-console.log('Family-tree beta browser tests passed: branching, aliases, explicit parentage, inferred filtering, detail provenance, desktop fit, and mobile layout.');
+console.log('Family-tree beta browser tests passed: branching, aliases, explicit parentage, inferred filtering, detail provenance, desktop fit, and collapsed mobile genealogy.');
