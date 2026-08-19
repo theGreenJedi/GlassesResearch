@@ -5,13 +5,20 @@ Every important technical claim should show how it is known.
 ## Claim status
 
 - **Verified** — reproduced directly or supported by authoritative primary evidence.
-- **Community confirmed** — independently reported by multiple credible sources, but not automatically eligible for publication as a working procedure.
+- **Community confirmed** — independently reported by multiple credible, unrelated sources, but not automatically eligible for publication as a working procedure.
+- **Independent hands-on review** — an accepted, provenance-bearing community report from a contributor who attests that they personally used or handled the identified device. Acceptance verifies that the report meets the intake and evidence-record requirements; it does **not** make every claim in the review Verified.
 - **Not Verified Yet** — plausible, sourced, or community-reported material awaiting qualifying reproduction. It belongs in a research queue and must not be written as a working guide.
-- **Personally observed** — observed on a documented device but not yet independently reproduced.
+- **Personally observed** — a claim-level label for something directly observed on a documented device but not yet independently reproduced. It may appear inside a GlassesResearch experiment or an independent hands-on review when the observer and device context are explicit.
 - **Hypothesis** — plausible interpretation awaiting testing.
 - **Disproven** — tested and found false or contradicted by stronger evidence.
 - **Historical** — preserved because it once existed or may illuminate prior device behavior; not represented as currently functional.
 - **Unknown** — open question with insufficient evidence.
+
+## Independent review rule
+
+Community submissions remain a separate evidence layer from GlassesResearch's own physical inspection and experiments. One accepted owner report is labeled **Independent hands-on review**. Compatible findings from multiple unrelated reviewers can support **Community confirmed** status when the evidence record justifies it. Neither label silently replaces a canonical GlassesResearch Report Card score.
+
+A contributor's history is provenance, not authority. Prior accepted work may help readers understand experience and context, but every new claim must still stand on its own evidence, device context, reproducibility, and corroboration.
 
 ## Working-guide publication rule
 
@@ -52,6 +59,7 @@ Prefer primary sources: direct measurements, captures, photographs, manuals, fir
 A claim or procedure can move through the repository only when the evidence record justifies the change:
 
 ```text
+Independent hands-on review -> Community confirmed -> Verified
 Not Verified Yet -> Community confirmed -> Verified
 Not Verified Yet -> Disproven
 Hypothesis -> Not Verified Yet, Verified, or Disproven

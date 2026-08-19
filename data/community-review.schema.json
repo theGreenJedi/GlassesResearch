@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://glassesresearch.org/data/community-review.schema.json",
+  "title": "GlassesResearch accepted independent hands-on review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["review_id", "status", "model_id", "reviewer_id", "public_attribution", "submitted_at", "accepted_at", "ownership_basis", "ownership_evidence", "device_context", "ratings", "observations", "disclosure", "evidence", "source_issue"],
+  "properties": {
+    "review_id": {"type": "string", "pattern": "^GR-CR-[0-9]{4,}$"},
+    "status": {"enum": ["accepted", "withdrawn", "superseded"]},
+    "model_id": {"type": "string", "pattern": "^GLS-[0-9]{4}$"},
+    "reviewer_id": {"type": ["string", "null"], "pattern": "^GR-C-[0-9]{4,}$"},
+    "public_attribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "display_name", "profile_url"],
+      "properties": {
+        "mode": {"enum": ["anonymous", "pseudonym", "identified"]},
+        "display_name": {"type": ["string", "null"], "maxLength": 120},
+        "profile_url": {"type": ["string", "null"], "format": "uri"}
+      }
+    },
+    "submitted_at": {"type": "string", "format": "date"},
+    "accepted_at": {"type": "string", "format": "date"},
+    "ownership_basis": {"enum": ["purchased", "borrowed", "review_sample", "employer_provided", "retailer_demo", "other"]},
+    "ownership_evidence": {"enum": ["none", "supplied_private", "supplied_public"]},
+    "device_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["retail_name", "hardware_revision", "firmware_version", "companion_app_version", "phone_model", "phone_os", "usage_length", "purchase_date", "notes"],
+      "properties": {
+        "retail_name": {"type": ["string", "null"], "maxLength": 160},
+        "hardware_revision": {"type": ["string", "null"], "maxLength": 120},
+        "firmware_version": {"type": ["string", "null"], "maxLength": 120},
+        "companion_app_version": {"type": ["string", "null"], "maxLength": 120},
+        "phone_model": {"type": ["string", "null"], "maxLength": 120},
+        "phone_os": {"type": ["string", "null"], "maxLength": 120},
+        "usage_length": {"type": ["string", "null"], "maxLength": 120},
+        "purchase_date": {"type": ["string", "null"], "maxLength": 40},
+        "notes": {"type": ["string", "null"], "maxLength": 2000}
+      }
+    },
+    "ratings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["discreetness", "camera", "visual_ai", "hackability", "owner_control", "android_compatibility"],
+      "properties": {
+        "discreetness": {"$ref": "#/$defs/score"},
+        "camera": {"$ref": "#/$defs/score"},
+        "visual_ai": {"$ref": "#/$defs/score"},
+        "hackability": {"$ref": "#/$defs/score"},
+        "owner_control": {"$ref": "#/$defs/score"},
+        "android_compatibility": {"$ref": "#/$defs/score"}
+      }
+    },
+    "observations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["discreetness", "camera", "visual_ai", "hackability", "owner_control", "android_compatibility", "battery_life", "reliability", "expected_but_missing", "personally_observed_claims", "freeform"],
+      "properties": {
+        "discreetness": {"type": ["string", "null"], "maxLength": 4000},
+        "camera": {"type": ["string", "null"], "maxLength": 4000},
+        "visual_ai": {"type": ["string", "null"], "maxLength": 4000},
+        "hackability": {"type": ["string", "null"], "maxLength": 4000},
+        "owner_control": {"type": ["string", "null"], "maxLength": 4000},
+        "android_compatibility": {"type": ["string", "null"], "maxLength": 4000},
+        "battery_life": {"type": ["string", "null"], "maxLength": 2000},
+        "reliability": {"type": ["string", "null"], "maxLength": 2000},
+        "expected_but_missing": {"type": ["string", "null"], "maxLength": 2000},
+        "personally_observed_claims": {"type": "array", "items": {"type": "string", "maxLength": 1000}, "maxItems": 30},
+        "freeform": {"type": ["string", "null"], "maxLength": 6000}
+      }
+    },
+    "disclosure": {"type": ["string", "null"], "maxLength": 2000},
+    "evidence": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "url", "note"],
+        "properties": {
+          "type": {"enum": ["photo", "screenshot", "log", "link", "document", "other"]},
+          "url": {"type": "string", "format": "uri"},
+          "note": {"type": ["string", "null"], "maxLength": 1000}
+        }
+      }
+    },
+    "source_issue": {"type": "string", "format": "uri"}
+  },
+  "$defs": {
+    "score": {
+      "anyOf": [
+        {"type": "integer", "minimum": 0, "maximum": 10},
+        {"type": "null"}
+      ]
+    }
+  }
+}
