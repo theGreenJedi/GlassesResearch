@@ -13,6 +13,7 @@
   const levels = shell.querySelector('[data-ft-levels]');
   const links = shell.querySelector('[data-ft-links]');
   const detail = shell.querySelector('[data-ft-detail]');
+  const mobileQuery = matchMedia('(max-width: 600px)');
   let selectedFamily = data.families[0].id;
   let selectedNode = null;
 
@@ -30,6 +31,7 @@
   function graph(item) {
     const byId = new Map(item.nodes.map((node) => [node.id, node]));
     const allowed = (node) => {
+      if (!node) return false;
       if (!aliasToggle.checked && node.type === 'alias') return false;
       if (!inferredToggle.checked && node.status === 'inferred') return false;
       return true;
@@ -75,6 +77,45 @@
     return ({model: 'GLS model', branch: 'Branch', alias: 'Alias / rebrand', origin: 'Technology origin', family: 'Family'})[node.type] || node.type;
   }
 
+  function incomingEdge(current, nodeId) {
+    return current.edges.find((edge) => edge.child === nodeId);
+  }
+
+  function nodeButton(item, current, node) {
+    const incoming = incomingEdge(current, node.id);
+    const parent = incoming ? current.byId.get(incoming.parent) : null;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'ft-node';
+    button.dataset.nodeId = node.id;
+    button.dataset.nodeType = node.type;
+    button.dataset.status = incoming ? incoming.status : node.status;
+    button.setAttribute('aria-pressed', 'false');
+
+    const type = document.createElement('span');
+    type.className = 'ft-node-type';
+    type.textContent = typeName(node);
+    const label = document.createElement('span');
+    label.className = 'ft-node-label';
+    label.textContent = node.label;
+    button.append(type, label);
+
+    if (node.canonical_id) {
+      const id = document.createElement('span');
+      id.className = 'ft-node-id';
+      id.textContent = node.canonical_id;
+      button.append(id);
+    }
+    if (incoming) {
+      const relation = document.createElement('span');
+      relation.className = 'ft-node-relation';
+      relation.textContent = `↳ ${parent ? parent.label : incoming.parent} · ${incoming.label}`;
+      button.append(relation);
+    }
+    button.addEventListener('click', () => showDetail(item, current, node.id));
+    return button;
+  }
+
   function showDetail(item, current, nodeId) {
     const node = current.byId.get(nodeId);
     if (!node) return;
@@ -84,12 +125,12 @@
     title.textContent = node.label;
     detail.append(title);
     const facts = document.createElement('dl');
-    const incoming = current.edges.find((edge) => edge.child === nodeId);
+    const incoming = incomingEdge(current, nodeId);
     const parent = incoming ? current.byId.get(incoming.parent) : null;
     const rows = [
       ['Node', typeName(node)],
       ...(node.canonical_id ? [['Canonical ID', node.canonical_id]] : []),
-      ...(parent ? [['Parent', parent.label]] : []),
+      ['Parent', parent ? parent.label : '—'],
       ['Relationship', incoming ? incoming.label : 'family root'],
       ['Status', incoming ? incoming.status : node.status],
       ['Confidence', incoming ? incoming.confidence : '—'],
@@ -131,7 +172,7 @@
 
   function draw(current) {
     links.replaceChildren();
-    if (matchMedia('(max-width: 600px)').matches) return;
+    if (mobileQuery.matches) return;
     const stageBox = stage.getBoundingClientRect();
     const width = Math.max(stage.scrollWidth, stage.clientWidth);
     const height = Math.max(stage.scrollHeight, stage.clientHeight);
@@ -157,52 +198,73 @@
     }
   }
 
-  function render() {
-    const item = family();
-    const current = graph(item);
+  function renderDesktop(item, current) {
     const depths = depthMap(item, current);
     const maxDepth = Math.max(...depths.values());
-    summary.textContent = `${item.label} — ${item.summary} (${current.nodes.length} visible nodes)`;
+    levels.className = 'ft-levels';
     levels.replaceChildren();
     for (let level = 0; level <= maxDepth; level += 1) {
       const column = document.createElement('div');
       column.className = 'ft-level';
       column.dataset.levelLabel = level === 0 ? 'Origin / family' : `Generation / layer ${level}`;
-      column.style.setProperty('--ft-depth', level);
       for (const node of current.nodes.filter((candidate) => depths.get(candidate.id) === level)) {
-        const incoming = current.edges.find((edge) => edge.child === node.id);
-        const parent = incoming ? current.byId.get(incoming.parent) : null;
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.className = 'ft-node';
-        button.dataset.nodeId = node.id;
-        button.dataset.nodeType = node.type;
-        button.dataset.status = incoming ? incoming.status : node.status;
-        button.setAttribute('aria-pressed', 'false');
-        const type = document.createElement('span');
-        type.className = 'ft-node-type';
-        type.textContent = typeName(node);
-        const label = document.createElement('span');
-        label.className = 'ft-node-label';
-        label.textContent = node.label;
-        button.append(type, label);
-        if (node.canonical_id) {
-          const id = document.createElement('span');
-          id.className = 'ft-node-id';
-          id.textContent = node.canonical_id;
-          button.append(id);
-        }
-        if (incoming) {
-          const relation = document.createElement('span');
-          relation.className = 'ft-node-relation';
-          relation.textContent = `↳ ${parent ? parent.label : incoming.parent} · ${incoming.label}`;
-          button.append(relation);
-        }
-        button.addEventListener('click', () => showDetail(item, current, node.id));
-        column.append(button);
+        column.append(nodeButton(item, current, node));
       }
       levels.append(column);
     }
+  }
+
+  function renderMobile(item, current) {
+    levels.className = 'ft-mobile-tree';
+    levels.replaceChildren();
+    const children = new Map(current.nodes.map((node) => [node.id, []]));
+    for (const edge of current.edges) {
+      children.get(edge.parent)?.push(edge.child);
+    }
+
+    const walk = (nodeId) => {
+      const node = current.byId.get(nodeId);
+      const subtree = document.createElement('div');
+      subtree.className = 'ft-mobile-subtree';
+      subtree.append(nodeButton(item, current, node));
+
+      const childIds = children.get(nodeId) || [];
+      const aliases = childIds.map((id) => current.byId.get(id)).filter((child) => child.type === 'alias');
+      const structural = childIds.map((id) => current.byId.get(id)).filter((child) => child.type !== 'alias');
+
+      if (structural.length) {
+        const branch = document.createElement('div');
+        branch.className = 'ft-mobile-children';
+        for (const child of structural) branch.append(walk(child.id));
+        subtree.append(branch);
+      }
+
+      if (aliases.length) {
+        const group = document.createElement('details');
+        group.className = 'ft-alias-group';
+        const groupLabel = document.createElement('summary');
+        const noun = aliases.length === 1 ? 'retail identity / alias' : 'retail identities / aliases';
+        groupLabel.textContent = `${aliases.length} ${noun} for ${node.label}`;
+        group.append(groupLabel);
+        const aliasList = document.createElement('div');
+        aliasList.className = 'ft-alias-list';
+        for (const alias of aliases) aliasList.append(nodeButton(item, current, alias));
+        group.append(aliasList);
+        subtree.append(group);
+      }
+      return subtree;
+    };
+
+    levels.append(walk(item.root_id));
+  }
+
+  function render() {
+    const item = family();
+    const current = graph(item);
+    summary.textContent = `${item.label} — ${item.summary} (${current.nodes.length} total nodes)`;
+    if (mobileQuery.matches) renderMobile(item, current);
+    else renderDesktop(item, current);
+
     if (!current.nodes.some((node) => node.id === selectedNode)) selectedNode = item.root_id;
     showDetail(item, current, selectedNode);
     requestAnimationFrame(() => requestAnimationFrame(() => draw(current)));
@@ -215,7 +277,10 @@
   });
   aliasToggle.addEventListener('change', render);
   inferredToggle.addEventListener('change', render);
-  addEventListener('resize', render);
+  mobileQuery.addEventListener('change', render);
+  addEventListener('resize', () => {
+    if (!mobileQuery.matches) requestAnimationFrame(() => draw(graph(family())));
+  });
   familySelect.value = selectedFamily;
   render();
 })();
