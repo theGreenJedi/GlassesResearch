@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-19T05:16:09.030625+00:00`
+Generated: `2026-08-19T05:50:57.560635+00:00`
 
-- Intake files inspected: **32**
-- Candidates retained in this review window/history: **337**
+- Intake files inspected: **33**
+- Candidates retained in this review window/history: **339**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 76
+- `adjacent_radar`: 77
 - `catalog_review`: 45
 - `editorial_published`: 2
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 37
+- `needs_editorial_verification`: 39
 - `rejected_noise`: 9
 - `source_monitor`: 16
-- `source_review`: 102
-- `watching`: 49
+- `source_review`: 100
+- `watching`: 50
 
 ## Action queue
 
@@ -29,6 +29,7 @@ Generated: `2026-08-19T05:16:09.030625+00:00`
 | normal | needs_editorial_verification | direct | [The 10 Best Smart Glasses of 2026 (Reviews) - FindThisBest](https://www.findthisbest.com/best-smart-glasses) | reachable (200) | research_news_review, deep_research |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (August 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [15 Best Smart Glasses 2026: Expert Tested & Reviewed](https://www.thebuyersreviews.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [2026 Smart Glasses Breakthrough: Lightweight Design and AI Agents Drive ...](https://wonford.com/2026/08/14/2026-smart-glasses-breakthrough-lightweight-design-and-ai-agents-drive-spatial-computing-popularization/) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [7 Smart Glasses In 2026 That Reveal The Biggest Wearable Shifts – Here ...](https://glassalmanac.com/7-smart-glasses-in-2026-that-reveal-the-biggest-wearable-shifts-heres-why/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses are Here. So Is the Privacy Problem - sify.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUTZPLUljc3Q4WXJzVzZsVlc5NUEyOEUyc1JNNG5iRUJhdFRuc0hwUlZTQTM0UUZGaTY0RzVacmcwaVBTY2tHejFfdURGenRCNzlieTlkWERtNktJVzZkTExudUt2eTdycVRHV1VxdWtmdV9PSnJVNy0yZHh1ZkxQcUhSSzctRmM?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
@@ -36,7 +37,8 @@ Generated: `2026-08-19T05:16:09.030625+00:00`
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026: Ranked By The Experts \| VITURE](https://www.viture.com/blog/best-ar-glasses-2026-ranked-by-the-experts) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (202) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: AR, Audio And Top Picks Compared](https://wearablexp.com/smart-glasses/best-smart-glasses/) | reachable (200) | research_news_review |
@@ -63,11 +65,9 @@ Generated: `2026-08-19T05:16:09.030625+00:00`
 | normal | source_review | direct | [AI Glasses \| Innovative Eyewear at LensCrafters](https://www.lenscrafters.com/lc-us/ai-glasses) | review (403) | research_news_review, model_catalog_review, research_optics, policy_privacy |
 | normal | source_review | enabling | [America's Best Eyecare + Eyewear](https://www.americasbest.com/) | reachable (200) | research_news_review, research_optics |
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
-| normal | source_review | direct | [2026 Smart Glasses Breakthrough: Lightweight Design and AI Agents Drive ...](https://wonford.com/2026/08/14/2026-smart-glasses-breakthrough-lightweight-design-and-ai-agents-drive-spatial-computing-popularization/) | unreachable (URLError) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
-| normal | source_review | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | review (403) | research_news_review |
 | normal | source_review | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | review (403) | research_news_review, report_card_evidence, policy_privacy |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
 | low | source_review |  | [CyanBridge v2.0.0 - Local AI Support](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.0.0) | reachable (200) |  |
@@ -223,6 +223,7 @@ Generated: `2026-08-19T05:16:09.030625+00:00`
 | low | source_monitor |  | [Manufacturer/source watch: Snapchat News, Announcements, & Updates \| Snap Newsroom](https://newsroom.snap.com/) | reachable (200) |  |
 | low | source_monitor |  | [Manufacturer/source watch: XREAL News \| News and Announcements](https://www.xreal.com/news/) | reachable (200) |  |
 | normal | watching | adjacent | [Apple AirPods With Cameras: macOS Leak Reveals Visual Intelligence Feature – Check Expected Design, Price, Launch Date, Features, Specificat](https://news.google.com/rss/articles/CBMipgJBVV95cUxQZUFiT0hEXzQzM2Zwc0k3VUJmQ3pkVDEwWUYwMl9zM0Y0WXdqRWVuLWZOWktrRzE4amxCdHZIRHRXQ01iVkJEaXZiRk4wTHc5WXdiVkFSVmhBN09OQS1nM0NBY1M5MUJobVhQR1lVbGcyZ1dZLU9Za2xyTU1pR0tkTDZ5WWstYVFtQV94aHJhVWFxbS0wWDlnbFNMZ0c5Y0hVWDg3UjBMbEVOcWJJV1laNi1SVVV6WldDZmZEMXJZYkp6ZXJjN1dBMENtbVU5MDZCNWh0QTVDdjh1bTg3UlhIam5HZ1dzaE96WnViVW9oN2VVVlpDN1ZtVUJHTHFUdG9MWVB0V2R0c1VZajh1UVMxNnhhcTdpZjdfZHcwVXBBZ2NZWWlJYkHSAaYCQVVfeXFMUGVBYk9IRF80MzNmcHNJN1VCZkN6ZFQxMFlGMDJfczNGNFl3akVlbi1mTlpLa0cxOGpsQnR2SER0V0NNYlZCRGl2YkZOMEx3OVl3YlZBUlZoQTdPTkEtZzNDQWNTOTFCaG1YUEdZVWxnMmdXWS1PWWtsck1NaUdLZEw2eVlrLWFRbUFfeGhyYVVhcW0tMFg5Z2xTTGdHOWNIVVg4N1IwTGxFTnFiSVdZWjYtUlVVelpXQ2ZmRDFyWWJKemVyYzdXQTBDbW1VOTA2QjVodEE1Q3Y4dW04N1JYSGpuR2dXc2hPelp1YlVvaDdlVVZaQzdWbVVCR0xxVHRvTFlQdFdkdHNVWWo4dVFTMTZ4YXE3aWY3X2R3MFVwQWdjWVlpSWJB?oc=5) | reachable (200) | research_news_review, watching, model_catalog_review, retail_rebrand_review, adjacent_radar |
+| normal | watching | speculative | [SNAP Stock Falls For Second Day After Costly AR Glasses Launch: Analyst Can't See Demand Clearly But Spots 'Patent Value' At Minimum - Stock](https://news.google.com/rss/articles/CBMingJBVV95cUxOaVUxMktUdm4yZnF0ODR0cnpXN3c4SG1DSHhrZ0pacDV5bGY1bFN0emRCRi16N1pqTjZ0eW91LVNoRWhYTjFGWXJJTXNXdE9DUGpCV1djLXc0cWg4dUFJWTZWdi1ZOTd2MEY1VWlwcE1xaTc0SDdxTHZzc2xYdXpHRFo3SDc2QklxOVRqX1NvSUttM3Q5VmNaZ09GZzFfM3EydTE5SEs2dWc4WlptQ3lINzZTNlB2aXNyOENIMTVuUFExMFhzZ01HOXBRMDFQU3cxN2hCRTJESERlb2ZoemlCV0ltZVNHVm9ubUJLRS0xdzM0UnJMbzNXbU9qc0JWRDJJTjRsMVNiRVdkeWJCc2JLZHRHNTJnT3h3Y2VkVEtn?oc=5) | not_checked | research_news_review, watching, model_catalog_review |
 | normal | watching | speculative | [Apple iPhone 18 event — all the new products expected to launch in September - tomsguide.com](https://news.google.com/rss/articles/CBMitgFBVV95cUxNWWZiTDR6S1pvWXhwMFFCbmhCTW5abjRmLVRTcWFxUzVrdUJxSWN2Smh0b3BVRU02aDlIaHVTQ3dJNHphcnhXRFY2dVI4SXZ5VlhhWjVEZ3l3bWlKa1pJNWRWSWtxR2gtc3d3aGE1ZldkQjMxdFNFZzFHZXhpWm1tR1RwanJ1TFBpRHhjVlpIYWNydDJSSzZJaVhhMTlRczJPS0kweG9jUEtDNmFWN0x1X3ZhYVpHUQ?oc=5) | reachable (200) | research_news_review, watching, model_catalog_review |
 | low | watching | adjacent | [Apple's Camera AirPods Leak: Stock Up 2% Amid AI Push - whalesbook.com](https://news.google.com/rss/articles/CBMizgFBVV95cUxPYWQ4ZEh6Yl9fTTVaaHlZekRKcDY4WThRaWF3TjNzckRDQjllT09jemtDQ1VGZ0NTRjlZTmpGamgxMDYwWmY5VXdMVlRYUHFtblBkWkpoLU9Sd2dwRTBWNHRndS1ILVRyRklIVUpBZEdiVlhMZEJWeWlHVlp4cTNMdG41Q0s0MnBSX29LVGpPS2FkdndvVWtfYWVDWVFMN2NQYzA5cXdaM1BHckgxZXB4ZThPNnhTZUl6YmpDSWhpOTh3WGQzQXFTN1NiX2g3UQ?oc=5) | not_checked | research_news_review, watching, adjacent_radar |
 | low | watching | speculative | [(VIDEO) Samsung Galaxy S27 Ultra Design Leak Points to Major Horizontal Camera Redesign for 2027 Flagship - ibtimes.com.au](https://news.google.com/rss/articles/CBMihwFBVV95cUxPVWptaFZWbVI3UGQwNGFPZUZVX3RRT2YtY3pkN0ZzaE9mbWVyVGxoYW1kMWpGZ3pJYzhGZlRBRHdPdnh5Y3Znd2FXcUd6VWlWNTZGdjIwaFVUX1A1N3k5aDJNY0tRS2Q2ODNjRzJqYkV5TkdhZ0REblRUX0NBVVVzQlJwUVFNVE0?oc=5) | reachable (200) | research_news_review, watching, report_card_evidence |
@@ -271,7 +272,6 @@ Generated: `2026-08-19T05:16:09.030625+00:00`
 | low | watching | speculative | [Meta smart glasses patent reignites facial recognition debate - Biometric Update](https://news.google.com/rss/articles/CBMiogFBVV95cUxOaVdWRU1ROVdVckNGNVhuSnZLalZXOG4zaUU5Q05ndmZBdVdSak1TRUg0amx2X2xkM1ZaaU1IcDJ2TVd6WHhNUWNOanZCTHJNZ3R6NTRDdVdnY2RjRDA2a0tCdWpzSTA2cHVwY1g1MjBiTFJzS1kxMDZKQ1dibVVWN1pTQTJkWnllbHZobF8zQTBGdV9tQl96OFhsU05KTXRMSmc?oc=5) | reachable (200) | research_news_review, watching |
 | low | watching | speculative | [Rare Apple leak: AirPods Pro 4 promo video confirms new camera feature - Notebookcheck](https://news.google.com/rss/articles/CBMitAFBVV95cUxQZnpNSEY1Uno1SUFSdjVQM3FmUk84OG02T1NfUmJKRGl2UVZBWlZhOGotc28xSVA1ZnhPNnNFbVZLZ0FrUFM1SG04UkZSYzF4VEZUa093R21SR0RYNUdXSU5fWjBVZWo4X2N6Tl9DYTNPclZ3QS1DeUtESHJZWUlweXctTXR0ZS14WElidXFIZlhlVENPaUFjY3RiWXRRRVEtVVJ3OTlZZkY1aW9YZUExQ29SRVg?oc=5) | reachable (200) | research_news_review, watching, report_card_evidence |
 | low | watching | speculative | [Smartglasses - Wikipedia](https://en.m.wikipedia.org/wiki/Smartglasses) | not_checked | research_news_review, watching |
-| normal | adjacent_radar | adjacent | [Apple’s AI-Powered Camera AirPods May Be Closer to Launch Than Expected: Here's How They Could Work - gizbot.com](https://news.google.com/rss/articles/CBMizwFBVV95cUxPMDUtdTQ4Y05NdGI2d3B3WG1adDY3SmpnTHQ1VmUyaXEyQ1dMdHFibDBqQmZBVk1QTUwwUl9pQklwSGpvR0I5aUlvem14WHhtRUlKa2M0aTRpektyR1hlNE1fTWF4ay1DakVSb1BCNGZUWnQxRTRlN0ZRemt2SnMzaEpCNElZc2o3QWV1WVhzejFEMkE2SlhBVDF2bmVINEwtQkh4M205dkRTbHR4N0Z1bWNKRjRzYWdtdDJJRHpiSnNVMDlMMjU5cXRpQnJsVk0?oc=5) | reachable (200) | research_news_review, model_catalog_review, adjacent_radar |
 
 ## Meaning of states
 
