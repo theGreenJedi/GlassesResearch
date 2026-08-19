@@ -1,6 +1,7 @@
 const CADENCES = new Set(['as_verified','daily','weekly','monthly','annually']);
 const TOPICS = new Set(['hacks_development','firmware_software','hardware_teardown','privacy_policy','release_availability','research_science','standards_regulation']);
 const ID_RE = /^gr-\d{4}-\d{2}-\d{2}-[a-z0-9][a-z0-9-]*$/;
+const CADENCE_JITTER_TOLERANCE_MS = 5 * 60 * 1000;
 const encoder = new TextEncoder();
 
 export default {
@@ -15,7 +16,7 @@ export default {
       if (request.method === 'POST' && url.pathname === '/unsubscribe') return await unsubscribe(request, env);
       if (request.method === 'POST' && url.pathname === '/published') return await ingestPublished(request, env, ctx);
       if (request.method === 'GET' && url.pathname === '/delivery-proof') return await deliveryProof(request, url, env);
-      if (request.method === 'GET' && url.pathname === '/health') return json({ok:true, service:'verified-research-alerts', canary: Boolean(env.CANARY_TO)});
+      if (request.method === 'GET' && url.pathname === '/health') return json({ok:true, service:'verified-research-alerts', canary: Boolean(env.CANARY_TO), cadence_jitter_tolerance_ms: CADENCE_JITTER_TOLERANCE_MS});
       return new Response('Not found',{status:404});
     } catch (error) {
       console.error(error);
@@ -124,7 +125,7 @@ function intersects(a,b){for(const x of a)if(b.has(x))return true;return false}
 function eligible(s,item){const inc=JSON.parse(s.include_json||'{}'),exc=JSON.parse(s.exclude_json||'{}');const im=lowerSet(item.models),ib=lowerSet(item.brands),it=lowerSet(item.topics);if(intersects(lowerSet(exc.models),im)||intersects(lowerSet(exc.brands_lineages),ib)||intersects(lowerSet(exc.topics),it))return false;const hasInclude=(inc.models?.length||0)+(inc.brands_lineages?.length||0)+(inc.topics?.length||0)>0;if(!hasInclude)return true;return intersects(lowerSet(inc.models),im)||intersects(lowerSet(inc.brands_lineages),ib)||intersects(lowerSet(inc.topics),it)}
 async function activeByCadence(env,cadence){return (await env.DB.prepare("SELECT * FROM subscribers WHERE status='active' AND cadence=?").bind(cadence).all()).results||[]}
 async function deliverAsVerified(item,env){for(const s of await activeByCadence(env,'as_verified')){if(!eligible(s,item))continue;const sent=await env.DB.prepare('SELECT 1 FROM deliveries WHERE subscriber_id=? AND publication_id=?').bind(s.id,item.id).first();if(sent)continue;await sendResearch(env,s,[item]);await recordDelivery(env,s,[item]);}}
-function due(cadence,last){if(!last)return true;const age=Date.now()-Date.parse(last);return age>=({daily:864e5,weekly:7*864e5,monthly:28*864e5,annually:365*864e5}[cadence]||Infinity)}
+function due(cadence,last,at=Date.now()){if(!last)return true;const period=({daily:864e5,weekly:7*864e5,monthly:28*864e5,annually:365*864e5}[cadence]||Infinity);const previous=Date.parse(last);if(!Number.isFinite(previous))return false;return at-previous>=period-CADENCE_JITTER_TOLERANCE_MS}
 async function deliverDigests(env){const all=(await env.DB.prepare("SELECT * FROM subscribers WHERE status='active' AND cadence!='as_verified'").all()).results||[];for(const s of all){if(!due(s.cadence,s.last_sent_at))continue;const since=s.last_sent_at||s.confirmed_at||s.created_at;const rows=(await env.DB.prepare('SELECT * FROM published_items WHERE published_at>? ORDER BY published_at ASC').bind(since).all()).results||[];const items=rows.map(r=>({...r,models:JSON.parse(r.models_json||'[]'),brands:JSON.parse(r.brands_json||'[]'),topics:JSON.parse(r.topics_json||'[]')})).filter(i=>eligible(s,i));if(!items.length)continue;await sendResearch(env,s,items);await recordDelivery(env,s,items)}}
 async function recordDelivery(env,s,items){const ts=now();for(const i of items)await env.DB.prepare('INSERT OR IGNORE INTO deliveries(subscriber_id,publication_id,delivered_at) VALUES(?,?,?)').bind(s.id,i.id,ts).run();await env.DB.prepare('UPDATE subscribers SET last_sent_at=?,updated_at=? WHERE id=?').bind(ts,ts,s.id).run()}
 async function sendResearch(env,s,items){const manage=randomToken(),manageHash=await digest(manage);await env.DB.prepare('UPDATE subscribers SET manage_token_hash=?,updated_at=? WHERE id=?').bind(manageHash,now(),s.id).run();const manageUrl=`${env.PUBLIC_BASE_URL}/manage?token=${encodeURIComponent(manage)}`;const subject=items.length===1?`GlassesResearch: ${items[0].title}`:`GlassesResearch: ${items.length} verified updates`;const lines=items.map(i=>`${i.title}\n${i.summary}\n${i.canonical_url}`).join('\n\n');const cards=items.map(i=>`<h3><a href="${esc(i.canonical_url)}">${esc(i.title)}</a></h3><p>${esc(i.summary)}</p>`).join('');await sendMail(env,{to:s.email,subject,text:`${lines}\n\nManage subscription / unsubscribe: ${manageUrl}`,html:`${cards}<hr><p><a href="${esc(manageUrl)}">Manage subscription / unsubscribe</a></p>`,headers:{'List-Unsubscribe':`<${manageUrl}>`}})}
