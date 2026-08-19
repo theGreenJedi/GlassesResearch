@@ -78,6 +78,206 @@
         {"parent":"gls-0158","child":"giinova-w630","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
         {"parent":"gls-0158","child":"guhuavmi-w630","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]}
       ]
+    },
+    {
+      "id": "meta",
+      "label": "Meta smart glasses",
+      "summary": "Meta's consumer smart-glasses platform across Ray-Ban and Oakley branded products, kept as a corporate/software/platform lineage rather than a hardware-equivalence claim.",
+      "root_id": "meta-root",
+      "nodes": [
+        {"id":"meta-root","type":"family","label":"Meta smart-glasses platform","status":"established"},
+        {"id":"meta-rayban","type":"branch","label":"Ray-Ban branded branch","status":"established"},
+        {"id":"meta-oakley","type":"branch","label":"Oakley branded branch","status":"established"},
+        {"id":"gls-0001","type":"model","label":"Ray-Ban Stories","canonical_id":"GLS-0001","href":"/models/catalog/gls-0001/","status":"established"},
+        {"id":"gls-0002","type":"model","label":"Ray-Ban Meta (Gen 1)","canonical_id":"GLS-0002","href":"/models/catalog/gls-0002/","status":"established"},
+        {"id":"gls-0003","type":"model","label":"Ray-Ban Meta (Gen 2)","canonical_id":"GLS-0003","href":"/models/catalog/gls-0003/","status":"established"},
+        {"id":"gls-0004","type":"model","label":"Meta Ray-Ban Display","canonical_id":"GLS-0004","href":"/models/catalog/gls-0004/","status":"established"},
+        {"id":"gls-0005","type":"model","label":"Ray-Ban Meta Blayzer Optics","canonical_id":"GLS-0005","href":"/models/catalog/gls-0005/","status":"established"},
+        {"id":"gls-0006","type":"model","label":"Ray-Ban Meta Scriber Optics","canonical_id":"GLS-0006","href":"/models/catalog/gls-0006/","status":"established"},
+        {"id":"gls-0007","type":"model","label":"Oakley Meta HSTN","canonical_id":"GLS-0007","href":"/models/catalog/gls-0007/","status":"established"},
+        {"id":"gls-0008","type":"model","label":"Oakley Meta Vanguard","canonical_id":"GLS-0008","href":"/models/catalog/gls-0008/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"meta-root","child":"meta-rayban","relationship":"product_branch","label":"brand branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/META.md"]},
+        {"parent":"meta-root","child":"meta-oakley","relationship":"product_branch","label":"brand branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/META.md"]},
+        {"parent":"meta-rayban","child":"gls-0001","relationship":"member_of","label":"platform member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/META.md"]},
+        {"parent":"meta-rayban","child":"gls-0002","relationship":"member_of","label":"platform member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/META.md"]},
+        {"parent":"meta-rayban","child":"gls-0003","relationship":"member_of","label":"platform member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/META.md"]},
+        {"parent":"meta-rayban","child":"gls-0004","relationship":"member_of","label":"platform member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/META.md"]},
+        {"parent":"meta-rayban","child":"gls-0005","relationship":"member_of","label":"platform member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/META.md"]},
+        {"parent":"meta-rayban","child":"gls-0006","relationship":"member_of","label":"platform member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/META.md"]},
+        {"parent":"meta-oakley","child":"gls-0007","relationship":"member_of","label":"platform member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/META.md"]},
+        {"parent":"meta-oakley","child":"gls-0008","relationship":"member_of","label":"platform member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/META.md"]}
+      ]
+    },
+    {
+      "id": "google-glass",
+      "label": "Google Glass",
+      "summary": "A corporate/product-generation lineage spanning the original Explorer program and the later enterprise Glass generations.",
+      "root_id": "google-glass-root",
+      "nodes": [
+        {"id":"google-glass-root","type":"family","label":"Google Glass","status":"established"},
+        {"id":"glass-explorer-branch","type":"branch","label":"Explorer program","status":"established"},
+        {"id":"glass-enterprise-branch","type":"branch","label":"Enterprise Editions","status":"established"},
+        {"id":"gls-0043","type":"model","label":"Google Glass Explorer Edition","canonical_id":"GLS-0043","href":"/models/catalog/gls-0043/","status":"established"},
+        {"id":"gls-0044","type":"model","label":"Glass Enterprise Edition","canonical_id":"GLS-0044","href":"/models/catalog/gls-0044/","status":"established"},
+        {"id":"gls-0045","type":"model","label":"Glass Enterprise Edition 2","canonical_id":"GLS-0045","href":"/models/catalog/gls-0045/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"google-glass-root","child":"glass-explorer-branch","relationship":"product_branch","label":"consumer / explorer branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/GOOGLE_GLASS.md"]},
+        {"parent":"glass-explorer-branch","child":"gls-0043","relationship":"member_of","label":"Explorer generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/GOOGLE_GLASS.md"]},
+        {"parent":"google-glass-root","child":"glass-enterprise-branch","relationship":"product_branch","label":"enterprise branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/GOOGLE_GLASS.md"]},
+        {"parent":"glass-enterprise-branch","child":"gls-0044","relationship":"member_of","label":"enterprise generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/GOOGLE_GLASS.md"]},
+        {"parent":"gls-0044","child":"gls-0045","relationship":"successor","label":"second enterprise generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/GOOGLE_GLASS.md"]}
+      ]
+    },
+    {
+      "id": "brilliant-labs",
+      "label": "Brilliant Labs",
+      "summary": "Brilliant Labs' developer-oriented wearable-computing family spanning Monocle, Frame, and Halo.",
+      "root_id": "brilliant-root",
+      "nodes": [
+        {"id":"brilliant-root","type":"family","label":"Brilliant Labs","status":"established"},
+        {"id":"gls-0050","type":"model","label":"Monocle","canonical_id":"GLS-0050","href":"/models/catalog/gls-0050/","status":"established"},
+        {"id":"gls-0051","type":"model","label":"Frame","canonical_id":"GLS-0051","href":"/models/catalog/gls-0051/","status":"established"},
+        {"id":"gls-0052","type":"model","label":"Halo","canonical_id":"GLS-0052","href":"/models/catalog/gls-0052/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"brilliant-root","child":"gls-0050","relationship":"member_of","label":"product family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/BRILLIANT_LABS.md"]},
+        {"parent":"brilliant-root","child":"gls-0051","relationship":"member_of","label":"product family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/BRILLIANT_LABS.md"]},
+        {"parent":"brilliant-root","child":"gls-0052","relationship":"member_of","label":"product family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/BRILLIANT_LABS.md"]}
+      ]
+    },
+    {
+      "id": "snap",
+      "label": "Snap Spectacles",
+      "summary": "Snap's Spectacles family from consumer camera glasses through developer AR eyewear and the later consumer spatial-computing generation.",
+      "root_id": "snap-root",
+      "nodes": [
+        {"id":"snap-root","type":"family","label":"Snap Spectacles","status":"established"},
+        {"id":"snap-camera","type":"branch","label":"Consumer camera-glasses generations","status":"established"},
+        {"id":"snap-ar","type":"branch","label":"AR / spatial-computing generations","status":"established"},
+        {"id":"gls-0040","type":"model","label":"Spectacles (1st Gen)","canonical_id":"GLS-0040","href":"/models/catalog/gls-0040/","status":"established"},
+        {"id":"gls-0041","type":"model","label":"Spectacles 2","canonical_id":"GLS-0041","href":"/models/catalog/gls-0041/","status":"established"},
+        {"id":"gls-0042","type":"model","label":"Spectacles 3","canonical_id":"GLS-0042","href":"/models/catalog/gls-0042/","status":"established"},
+        {"id":"gls-0067","type":"model","label":"Spectacles (2021, 4th Gen)","canonical_id":"GLS-0067","href":"/models/catalog/gls-0067/","status":"established"},
+        {"id":"gls-0068","type":"model","label":"Spectacles (2024, 5th Gen)","canonical_id":"GLS-0068","href":"/models/catalog/gls-0068/","status":"established"},
+        {"id":"gls-0146","type":"model","label":"SPECS (2026 consumer generation)","canonical_id":"GLS-0146","href":"/models/catalog/gls-0146/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"snap-root","child":"snap-camera","relationship":"product_branch","label":"camera-glasses phase","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SNAP.md"]},
+        {"parent":"snap-root","child":"snap-ar","relationship":"product_branch","label":"AR / spatial phase","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SNAP.md"]},
+        {"parent":"snap-camera","child":"gls-0040","relationship":"member_of","label":"generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SNAP.md"]},
+        {"parent":"snap-camera","child":"gls-0041","relationship":"member_of","label":"generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SNAP.md"]},
+        {"parent":"snap-camera","child":"gls-0042","relationship":"member_of","label":"generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SNAP.md"]},
+        {"parent":"snap-ar","child":"gls-0067","relationship":"member_of","label":"generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SNAP.md"]},
+        {"parent":"snap-ar","child":"gls-0068","relationship":"member_of","label":"generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SNAP.md"]},
+        {"parent":"snap-ar","child":"gls-0146","relationship":"member_of","label":"generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SNAP.md"]}
+      ]
+    },
+    {
+      "id": "solos",
+      "label": "Solos AirGo",
+      "summary": "Solos' AirGo smart-glasses family spanning audio-first and later camera-capable products without assuming feature compatibility across generations.",
+      "root_id": "solos-root",
+      "nodes": [
+        {"id":"solos-root","type":"family","label":"Solos AirGo","status":"established"},
+        {"id":"gls-0026","type":"model","label":"AirGo 2","canonical_id":"GLS-0026","href":"/models/catalog/gls-0026/","status":"established"},
+        {"id":"gls-0027","type":"model","label":"AirGo 3","canonical_id":"GLS-0027","href":"/models/catalog/gls-0027/","status":"established"},
+        {"id":"gls-0028","type":"model","label":"AirGo Vision","canonical_id":"GLS-0028","href":"/models/catalog/gls-0028/","status":"established"},
+        {"id":"gls-0029","type":"model","label":"AirGo V2","canonical_id":"GLS-0029","href":"/models/catalog/gls-0029/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"solos-root","child":"gls-0026","relationship":"member_of","label":"AirGo family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SOLOS.md"]},
+        {"parent":"solos-root","child":"gls-0027","relationship":"member_of","label":"AirGo family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SOLOS.md"]},
+        {"parent":"solos-root","child":"gls-0028","relationship":"member_of","label":"AirGo family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SOLOS.md"]},
+        {"parent":"solos-root","child":"gls-0029","relationship":"member_of","label":"AirGo family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/SOLOS.md"]}
+      ]
+    },
+    {
+      "id": "xreal",
+      "label": "XREAL / Nreal",
+      "summary": "The Nreal-to-XREAL personal-display and spatial-computing glasses family, represented as a brand/product lineage rather than a claim of identical architecture.",
+      "root_id": "xreal-root",
+      "nodes": [
+        {"id":"xreal-root","type":"family","label":"XREAL / Nreal","status":"established"},
+        {"id":"gls-0069","type":"model","label":"Nreal Light","canonical_id":"GLS-0069","href":"/models/catalog/gls-0069/","status":"established"},
+        {"id":"gls-0070","type":"model","label":"Nreal / XREAL Air","canonical_id":"GLS-0070","href":"/models/catalog/gls-0070/","status":"established"},
+        {"id":"gls-0071","type":"model","label":"XREAL Air 2","canonical_id":"GLS-0071","href":"/models/catalog/gls-0071/","status":"established"},
+        {"id":"gls-0072","type":"model","label":"XREAL Air 2 Pro","canonical_id":"GLS-0072","href":"/models/catalog/gls-0072/","status":"established"},
+        {"id":"gls-0073","type":"model","label":"XREAL Air 2 Ultra","canonical_id":"GLS-0073","href":"/models/catalog/gls-0073/","status":"established"},
+        {"id":"gls-0074","type":"model","label":"XREAL One","canonical_id":"GLS-0074","href":"/models/catalog/gls-0074/","status":"established"},
+        {"id":"gls-0075","type":"model","label":"XREAL One Pro","canonical_id":"GLS-0075","href":"/models/catalog/gls-0075/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"xreal-root","child":"gls-0069","relationship":"member_of","label":"product family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/XREAL.md"]},
+        {"parent":"xreal-root","child":"gls-0070","relationship":"member_of","label":"product family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/XREAL.md"]},
+        {"parent":"xreal-root","child":"gls-0071","relationship":"member_of","label":"product family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/XREAL.md"]},
+        {"parent":"xreal-root","child":"gls-0072","relationship":"member_of","label":"product family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/XREAL.md"]},
+        {"parent":"xreal-root","child":"gls-0073","relationship":"member_of","label":"product family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/XREAL.md"]},
+        {"parent":"xreal-root","child":"gls-0074","relationship":"member_of","label":"product family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/XREAL.md"]},
+        {"parent":"xreal-root","child":"gls-0075","relationship":"member_of","label":"product family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/XREAL.md"]}
+      ]
+    },
+    {
+      "id": "w100-eardance",
+      "label": "W100 / Ear Dance",
+      "summary": "A commodity audio-and-translation platform resolved to one canonical W100 model with multiple documented retail identities.",
+      "root_id": "w100-root",
+      "nodes": [
+        {"id":"w100-root","type":"family","label":"W100 / Ear Dance OEM ecosystem","status":"established"},
+        {"id":"gls-0157","type":"model","label":"W100","canonical_id":"GLS-0157","href":"/models/catalog/gls-0157/","status":"established"},
+        {"id":"earlysincere","type":"alias","label":"EarlySincere","status":"established"},
+        {"id":"vital-smart-glasses","type":"alias","label":"Vital Smart Glasses","status":"established"},
+        {"id":"freeze2trim-vital","type":"alias","label":"FREEZE2TRIM Vital Smart Glasses","status":"established"},
+        {"id":"astrum-w100","type":"alias","label":"Astrum W100","status":"established"},
+        {"id":"tiglon-tg-w100","type":"alias","label":"Tiglon TG-W100","status":"established"},
+        {"id":"leedoar-w100","type":"alias","label":"LEEDOAR W100","status":"established"}
+      ],
+      "edges": [
+        {"parent":"w100-root","child":"gls-0157","relationship":"member_of","label":"canonical platform","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/W100_EARDANCE.md"]},
+        {"parent":"gls-0157","child":"earlysincere","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0157","child":"vital-smart-glasses","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0157","child":"freeze2trim-vital","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0157","child":"astrum-w100","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0157","child":"tiglon-tg-w100","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]},
+        {"parent":"gls-0157","child":"leedoar-w100","relationship":"rebrand_of","label":"retail identity","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["data/lineage-aliases.json"]}
+      ]
+    },
+    {
+      "id": "vuzix",
+      "label": "Vuzix smart glasses",
+      "summary": "A corporate lineage deliberately split into phone-peripheral, standalone Android, and legacy Android enterprise branches because those architectures are materially different.",
+      "root_id": "vuzix-root",
+      "nodes": [
+        {"id":"vuzix-root","type":"family","label":"Vuzix smart glasses","status":"established"},
+        {"id":"vuzix-peripheral","type":"branch","label":"Z100 / Ultralite phone-peripheral branch","status":"established"},
+        {"id":"vuzix-standalone","type":"branch","label":"Standalone Android wearable-computer branch","status":"established"},
+        {"id":"vuzix-legacy","type":"branch","label":"Legacy Android enterprise branch","status":"established"},
+        {"id":"gls-0056","type":"model","label":"Vuzix Z100","canonical_id":"GLS-0056","href":"/models/catalog/gls-0056/","status":"established"},
+        {"id":"gls-0055","type":"model","label":"Vuzix Blade 2","canonical_id":"GLS-0055","href":"/models/catalog/gls-0055/","status":"established"},
+        {"id":"gls-0098","type":"model","label":"Vuzix M400","canonical_id":"GLS-0098","href":"/models/catalog/gls-0098/","status":"established"},
+        {"id":"gls-0099","type":"model","label":"Vuzix M4000","canonical_id":"GLS-0099","href":"/models/catalog/gls-0099/","status":"established"},
+        {"id":"gls-0100","type":"model","label":"Vuzix LX1","canonical_id":"GLS-0100","href":"/models/catalog/gls-0100/","status":"established"},
+        {"id":"gls-0121","type":"model","label":"Vuzix Shield","canonical_id":"GLS-0121","href":"/models/catalog/gls-0121/","status":"established"},
+        {"id":"gls-0095","type":"model","label":"Vuzix M100","canonical_id":"GLS-0095","href":"/models/catalog/gls-0095/","status":"established"},
+        {"id":"gls-0096","type":"model","label":"Vuzix M300","canonical_id":"GLS-0096","href":"/models/catalog/gls-0096/","status":"established"},
+        {"id":"gls-0097","type":"model","label":"Vuzix M300XL","canonical_id":"GLS-0097","href":"/models/catalog/gls-0097/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"vuzix-root","child":"vuzix-peripheral","relationship":"product_branch","label":"phone-peripheral branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md"]},
+        {"parent":"vuzix-root","child":"vuzix-standalone","relationship":"product_branch","label":"standalone Android branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md"]},
+        {"parent":"vuzix-root","child":"vuzix-legacy","relationship":"product_branch","label":"legacy Android enterprise branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md","research/populated/VUZIX.md"]},
+        {"parent":"vuzix-peripheral","child":"gls-0056","relationship":"member_of","label":"architecture branch member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md","research/populated/VUZIX.md"]},
+        {"parent":"vuzix-standalone","child":"gls-0055","relationship":"member_of","label":"architecture branch member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md","research/populated/VUZIX.md"]},
+        {"parent":"vuzix-standalone","child":"gls-0098","relationship":"member_of","label":"architecture branch member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md","research/populated/VUZIX.md"]},
+        {"parent":"vuzix-standalone","child":"gls-0099","relationship":"member_of","label":"architecture branch member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md","research/populated/VUZIX.md"]},
+        {"parent":"vuzix-standalone","child":"gls-0100","relationship":"member_of","label":"architecture branch member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md","research/populated/VUZIX.md"]},
+        {"parent":"vuzix-standalone","child":"gls-0121","relationship":"member_of","label":"architecture branch member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md","research/populated/VUZIX.md"]},
+        {"parent":"vuzix-legacy","child":"gls-0095","relationship":"member_of","label":"architecture branch member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md","research/populated/VUZIX.md"]},
+        {"parent":"vuzix-legacy","child":"gls-0096","relationship":"member_of","label":"architecture branch member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md","research/populated/VUZIX.md"]},
+        {"parent":"vuzix-legacy","child":"gls-0097","relationship":"member_of","label":"architecture branch member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["lineages/VUZIX.md","research/populated/VUZIX.md"]}
+      ]
     }
   ]
 }
