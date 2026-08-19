@@ -1,0 +1,78 @@
+name: Validate Community Review Intake
+
+on:
+  pull_request:
+    paths:
+      - '.github/ISSUE_TEMPLATE/community-review.yml'
+      - '.github/workflows/community-review-check.yml'
+      - 'data/community-review.schema.json'
+      - 'data/community-reviews.json'
+      - 'data/community-reviewers.json'
+      - 'docs/COMMUNITY_REVIEWS.md'
+      - 'docs/javascripts/community-review-intake.js'
+      - 'docs/javascripts/community-review-model.js'
+      - 'docs/stylesheets/community-review.css'
+      - 'scripts/build_community_reviews.py'
+      - 'scripts/prepare_site.py'
+      - 'mkdocs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Validate Python and JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/build_community_reviews.py
+          node --check docs/javascripts/community-review-intake.js
+          node --check docs/javascripts/community-review-model.js
+
+      - name: Validate review ledgers and generated summaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          tmp="$(mktemp -d)"
+          python scripts/build_device_database.py --source models/THE_LIST.md --output "$tmp/devices.json"
+          python scripts/build_community_reviews.py \
+            --reviews data/community-reviews.json \
+            --reviewers data/community-reviewers.json \
+            --devices "$tmp/devices.json" \
+            --summary-output "$tmp/community-review-summary.json" \
+            --profile-root "$tmp/contributors" \
+            --index-output "$tmp/COMMUNITY_REVIEWERS.md"
+          python - "$tmp/community-review-summary.json" <<'PY'
+          import json, sys
+          p=json.load(open(sys.argv[1], encoding='utf-8'))
+          expected=['discreetness','camera','visual_ai','hackability','owner_control','android_compatibility']
+          assert p['schema_version'] == 1
+          assert p['report_card_dimensions'] == expected
+          assert p['evidence_class'] == 'independent_hands_on'
+          assert isinstance(p['models'], dict)
+          print(f"Community review summary valid: {p['accepted_review_count']} accepted reviews")
+          PY
+          test -s "$tmp/COMMUNITY_REVIEWERS.md"
+
+      - name: Verify intake contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -Fq 'Independent hands-on review' docs/COMMUNITY_REVIEWS.md
+          grep -Fq 'Persistent contributor history' .github/ISSUE_TEMPLATE/community-review.yml
+          grep -Fq 'community-review-summary.json' docs/javascripts/community-review-model.js
+          grep -Fq 'lineage-aliases.json' docs/javascripts/community-review-intake.js
+          grep -Fq 'community-review.css' mkdocs.yml
+          grep -Fq 'community-review-intake.js' mkdocs.yml
+          grep -Fq 'community-review-model.js' mkdocs.yml

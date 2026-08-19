@@ -8,8 +8,8 @@ The newest verified changes, useful tools, developments we are watching, and res
 
 | Date | What changed | Go deeper |
 |---|---|---|
-| Aug. 18 | MemoMind One crossed the documented-acquisition threshold as **GLS-0160**, with state `preorder/crowdfunding`; broad fulfillment remains unproven. | [Model page](https://glassesresearch.org/models/catalog/gls-0160/) · [research](/models/MemoMindOne/) |
-| Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [Model page](https://glassesresearch.org/models/catalog/gls-0159/) · [GLS resolver](https://glassesresearch.org/gls/gls-0159/) |
+| Aug. 18 | MemoMind One crossed the documented-acquisition threshold as **GLS-0160**, with state `preorder/crowdfunding`; broad fulfillment remains unproven. | [verified article](news/articles/2026-08-18-memomind-one-gls-0160.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0160/) · [research](/models/MemoMindOne/) |
+| Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [verified article](news/articles/2026-08-17-lucyd-armor-gls-0159.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0159/) · [GLS resolver](https://glassesresearch.org/gls/gls-0159/) |
 | Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026-halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) |
 | Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026-cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](https://glassesresearch.org/models/catalog/gls-0039/) |
 
@@ -23,7 +23,7 @@ Current vendor specifications include a dual Micro-LED display, open-ear audio, 
 
 The canonical purchaser-history ledger now contains **159** active models or explicitly marketed product generations.
 
-Continue: [GLS-0160 model page](https://glassesresearch.org/models/catalog/gls-0160/) · [MemoMind One research](/models/MemoMindOne/) · [EV-0077 primary evidence](/evidence/EV-0077-MemoMind-One-primary-product/) · [follow GLS-0160](?model=GLS-0160%2C%20MemoMind%20One&topic=release_availability#verified-research-alerts)
+Continue: [verified article](news/articles/2026-08-18-memomind-one-gls-0160.md) · [GLS-0160 model page](https://glassesresearch.org/models/catalog/gls-0160/) · [MemoMind One research](/models/MemoMindOne/) · [EV-0077 primary evidence](/evidence/EV-0077-MemoMind-One-primary-product/) · [follow GLS-0160](?model=GLS-0160%2C%20MemoMind%20One&topic=release_availability#verified-research-alerts)
 
 Primary sources: [MemoMind One](https://www.memo-mind.com/pages/memomind-one) · [MemoMind](https://www.memo-mind.com/) · [XGIMI CES 2026 MemoMind announcement](https://us.xgimi.com/blogs/news/xgimi-ces-2026-with-memomind-ai-glasses)
 
@@ -33,7 +33,7 @@ Discovery reconciliation identified **Lucyd Armor** as a genuine catalog omissio
 
 **Why it matters:** discovery did what it is supposed to do: a broad search lead became an identity investigation, then a verified canonical admission. At that admission the catalog contained **158** purchasable models or explicitly marketed product generations.
 
-Continue: [GLS-0159 model page](https://glassesresearch.org/models/catalog/gls-0159/) · [resolve GLS-0159](https://glassesresearch.org/gls/gls-0159/) · [compare in Finder](/docs/COMPARISON_ENGINE/?left=GLS-0159) · [follow Lucyd Armor](?model=GLS-0159%2C%20Lucyd%20Armor#verified-research-alerts)
+Continue: [verified article](news/articles/2026-08-17-lucyd-armor-gls-0159.md) · [GLS-0159 model page](https://glassesresearch.org/models/catalog/gls-0159/) · [resolve GLS-0159](https://glassesresearch.org/gls/gls-0159/) · [compare in Finder](/docs/COMPARISON_ENGINE/?left=GLS-0159) · [follow Lucyd Armor](?model=GLS-0159%2C%20Lucyd%20Armor#verified-research-alerts)
 
 Primary source: [Lucyd — Lucyd Armor](https://lucyd.co/products/lucyd-armor)
 

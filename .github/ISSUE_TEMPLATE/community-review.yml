@@ -1,0 +1,233 @@
+name: Community hands-on review
+description: Submit a standardized independent hands-on review of smart glasses for moderation and evidence incorporation.
+title: "[Community review] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing hands-on evidence. One accepted report is labeled **Independent hands-on review**. Multiple compatible independent reports may support **Community confirmed** status. A community report does not automatically become GlassesResearch **Verified** evidence.
+
+        Do not include private email addresses, account identifiers, unredacted serial numbers, or other unnecessary personal information in this public issue.
+
+  - type: input
+    id: model
+    attributes:
+      label: Exact model, GLS number, or retail alias
+      description: Use the canonical GLS ID when known. Retail names such as BooaBei or W610 are also useful because we resolve aliases to canonical records.
+      placeholder: GLS-0039 / W610 / BooaBei
+    validations:
+      required: true
+
+  - type: input
+    id: retail_name
+    attributes:
+      label: Name printed on the box/listing
+      placeholder: Retail brand, regional name, or alias if different
+
+  - type: dropdown
+    id: ownership_basis
+    attributes:
+      label: How did you access the device?
+      options:
+        - Purchased / personally owned
+        - Borrowed
+        - Review sample / loaner
+        - Employer / organization provided
+        - Retailer / event demo
+        - Other hands-on access
+    validations:
+      required: true
+
+  - type: input
+    id: usage_length
+    attributes:
+      label: Approximate hands-on use
+      placeholder: 3 months daily / 2-hour demo / etc.
+
+  - type: input
+    id: hardware_revision
+    attributes:
+      label: Hardware revision
+      placeholder: If known
+
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware version
+      placeholder: If known
+
+  - type: input
+    id: companion_app
+    attributes:
+      label: Companion app and version
+      placeholder: If used
+
+  - type: input
+    id: host
+    attributes:
+      label: Phone / host device and OS
+      placeholder: Pixel 9 Pro XL / Android 16
+
+  - type: dropdown
+    id: attribution
+    attributes:
+      label: Public attribution preference
+      options:
+        - Anonymous
+        - Persistent handle / pseudonym
+        - Public name
+    validations:
+      required: true
+
+  - type: input
+    id: public_name
+    attributes:
+      label: Public name or handle
+      description: Leave blank for anonymous. If you want a persistent contributor profile, use the same public identity on future submissions.
+      placeholder: Bob / cyberglass42
+
+  - type: input
+    id: public_link
+    attributes:
+      label: Optional public profile/project link
+      placeholder: https://...
+
+  - type: checkboxes
+    id: persistent_profile
+    attributes:
+      label: Persistent contributor history
+      options:
+        - label: If this review is accepted, I want this public identity linked to a persistent contributor profile for future accepted reviews.
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Core Report Card observations
+        Use **Not evaluated** when you do not have enough hands-on evidence. Unknown is not zero.
+
+  - type: dropdown
+    id: discreetness_score
+    attributes:
+      label: Discreetness score
+      options: [Not evaluated, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    validations:
+      required: true
+  - type: textarea
+    id: discreetness_notes
+    attributes:
+      label: Discreetness — personally observed basis
+
+  - type: dropdown
+    id: camera_score
+    attributes:
+      label: Camera score
+      options: [Not evaluated, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    validations:
+      required: true
+  - type: textarea
+    id: camera_notes
+    attributes:
+      label: Camera — personally observed basis
+
+  - type: dropdown
+    id: visual_ai_score
+    attributes:
+      label: Visual AI score
+      options: [Not evaluated, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    validations:
+      required: true
+  - type: textarea
+    id: visual_ai_notes
+    attributes:
+      label: Visual AI — personally observed basis
+
+  - type: dropdown
+    id: hackability_score
+    attributes:
+      label: Hackability score
+      options: [Not evaluated, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    validations:
+      required: true
+  - type: textarea
+    id: hackability_notes
+    attributes:
+      label: Hackability — personally observed basis
+
+  - type: dropdown
+    id: owner_control_score
+    attributes:
+      label: Owner Control score
+      options: [Not evaluated, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    validations:
+      required: true
+  - type: textarea
+    id: owner_control_notes
+    attributes:
+      label: Owner Control — personally observed basis
+
+  - type: dropdown
+    id: android_score
+    attributes:
+      label: Android Compatibility score
+      options: [Not evaluated, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    validations:
+      required: true
+  - type: textarea
+    id: android_notes
+    attributes:
+      label: Android Compatibility — personally observed basis
+
+  - type: textarea
+    id: battery
+    attributes:
+      label: Observed battery life and test conditions
+      placeholder: Runtime, features in use, approximate volume/brightness, network state, etc.
+
+  - type: textarea
+    id: reliability
+    attributes:
+      label: Reliability, failures, pairing problems, heat, crashes, resets, or quirks
+
+  - type: textarea
+    id: expected_missing
+    attributes:
+      label: What did you reasonably expect the glasses to do that they cannot do?
+
+  - type: textarea
+    id: observed_claims
+    attributes:
+      label: Personally observed claims
+      description: One claim per line is ideal. Separate observations from things learned elsewhere.
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and attachments
+      description: Add public links or drag permitted photos/screenshots/logs into this field. Redact unnecessary personal information.
+
+  - type: textarea
+    id: freeform
+    attributes:
+      label: Anything else?
+
+  - type: textarea
+    id: disclosure
+    attributes:
+      label: Conflicts or relationships
+      description: Examples include free review unit, vendor employment, affiliate relationship, or none.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: attestation
+    attributes:
+      label: Attestation
+      options:
+        - label: I personally used or handled the exact device described above.
+          required: true
+        - label: I separated my own observations from things I merely read or heard elsewhere.
+          required: true
+        - label: I have the right to share the evidence I attach or link.
+          required: true
+        - label: I understand this public submission will be moderated before incorporation into GlassesResearch.
+          required: true

@@ -36,11 +36,17 @@ A compact map of GlassesResearch. Use the Finder when choosing glasses; use Rese
 - [Ask your own question](faq/ASK_YOUR_OWN_QUESTION.md)
 - [Community](../resources/COMMUNITY_AND_DEVELOPMENT.md)
 
+## Contribute hands-on evidence
+
+- [Submit an independent hands-on review](COMMUNITY_REVIEWS.md)
+- [Community contributor histories](COMMUNITY_REVIEWERS.md)
+- [Challenge or correct our research](RESEARCH_CHALLENGES.md)
+- [General contribution guide](CONTRIBUTE.md)
+
 ## About
 
 - [About GlassesResearch](ABOUT.md)
 - [Research standards](RESEARCH_STANDARDS.md)
 - [How to cite GlassesResearch](CITING_GLASSESRESEARCH.md)
-- [Challenge or correct our research](RESEARCH_CHALLENGES.md)
 - [Contributors](CONTRIBUTORS.md)
 - [Contribute](CONTRIBUTE.md)

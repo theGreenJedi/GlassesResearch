@@ -49,6 +49,7 @@ def main():
     run(ROOT/"scripts/build_site_status.py","--devices",database,"--report-cards",cards,"--output",DEST/"data/site-status.json")
     run(ROOT/"scripts/build_purchase_fallbacks.py","--models",ROOT/"models/THE_LIST.md","--curated",ROOT/"data/purchase-sources.json","--output",DEST/"data/purchase-fallbacks.json")
     run(ROOT/"scripts/build_model_pages.py","--data-dir",DEST/"data","--output-root",DEST)
+    run(ROOT/"scripts/build_community_reviews.py","--reviews",ROOT/"data/community-reviews.json","--reviewers",ROOT/"data/community-reviewers.json","--devices",database,"--summary-output",DEST/"data/community-review-summary.json","--profile-root",DEST/"contributors","--index-output",DEST/"docs/COMMUNITY_REVIEWERS.md")
     run(ROOT/"scripts/build_gls_resolver.py","--devices",database,"--output-root",DEST)
     run(ROOT/"scripts/build_citation_distribution.py","--devices",database,"--scores",cards,"--output-root",DEST)
     catalog_index=DEST/"models"/"catalog"/"index.md"
