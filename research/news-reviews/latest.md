@@ -1,8 +1,8 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-19T22:45:59.862677+00:00`
+Generated: `2026-08-19T23:42:07.942786+00:00`
 
-- Intake files inspected: **47**
+- Intake files inspected: **48**
 - Candidates retained in this review window/history: **355**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
