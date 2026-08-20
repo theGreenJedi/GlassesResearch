@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-19T23:42:07.942786+00:00`
+Generated: `2026-08-20T01:55:58.555032+00:00`
 
-- Intake files inspected: **48**
-- Candidates retained in this review window/history: **355**
+- Intake files inspected: **49**
+- Candidates retained in this review window/history: **356**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,7 +12,7 @@ Generated: `2026-08-19T23:42:07.942786+00:00`
 - `catalog_review`: 45
 - `editorial_published`: 2
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 44
+- `needs_editorial_verification`: 45
 - `rejected_noise`: 9
 - `source_monitor`: 16
 - `source_review`: 99
@@ -57,6 +57,7 @@ Generated: `2026-08-19T23:42:07.942786+00:00`
 | normal | needs_editorial_verification | direct | [Meta's AI Glasses Are Selling Millions But Critics Warn They Could Become a Privacy Nightmare - ibtimes.co.uk](https://news.google.com/rss/articles/CBMihwFBVV95cUxPNmg0OUkwUE9BUUp6UkkzLTlNR1htNE5mLTRNZ2R1NENJZWZlTEJRaExhU0I2ZGpYeGw0SXY0aHZsODdtamtEaEVIU21WWXBQTC04RHhsU0RYb1Q3dXdNWkZ4WWlXQm5jY09lVUVnWlo5aTFGWTJ4eFZGcXR0OF9HT1RjUnp0bmc?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta's AI Glasses Are Selling Millions But Critics Warn They Could Become a Privacy Nightmare - inkl](https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUZ5Tm1sSDNwU0VHVEc5NHFxZGpfMTBYZ3pBQU1mTDRuM0gxWi1iZGlhajRJRThycVNQdzdOSVFrTXZ2ZnlxZUdFeEw3OUVvRnlIUjg0WFJFc2Q4czVFZlNVTEV5Y2xEcEU5QVJ5b3h5TGFjNWRIQmsxUklDTE9kZUswc2VRX2ZjejBneG5kRkp4UDdMVDZDWXBsMlFCUWtxOHhkSWEyVTJRVkNvRzREMDFXZ1FuVnFRV0E?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Our 10 Best Smart Glasses With Camera in the US - August 2026 ...](https://www.bestproductsreviews.com/smart-glasses-with-camera) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Prescription Lenses Could Be the Key to Making AI Glasses Mainstream - Insider Paper](https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ0F6TW5vVUtrcUV6dmRkUVloR0IyaHkyZ2tWN09HT3ZtWHd5VEhSMlNiWjRfbzd0WDNCZl82Q0J5bDQ5Y2w3Y3RCeXd1b0lndjlrYnlrZ25GX0QxbWlEYnNFYXVIbmt6cG8zcEcwY1ZmZldHOWRuT1JXOHRrVlR1ZEl1akh6b1JZRDVzcjlSd0ttY1g0QjgyWGlR?oc=5) | reachable (200) | research_news_review, research_optics, deep_research |
 | normal | needs_editorial_verification | direct | [Ranking the Best Smart Glasses: Meta, Viture, & More (2026 ...](https://www.wired.com/gallery/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Smart Glasses with AI and Bluetooth Features](https://www.walmart.com/browse/electronics/smart-glasses/3944_1229723_2776031) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [The 13 Best Augmented Reality Glasses You Can Buy](https://arvrtips.com/best-augmented-reality-glasses/) | reachable (200) | research_news_review |
@@ -271,7 +272,6 @@ Generated: `2026-08-19T23:42:07.942786+00:00`
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - The Elkhart Truth](https://news.google.com/rss/articles/CBMi-gFBVV95cUxNZjlvV3dSV0xGNlRLSlNQZGVtMWNXU3ZUVHpxN3hYMWZDSEdkZ016cWNPUTRBRENnU3V1QTdnOE5DN3MwTXlCQ2x2djducXA0TmlpWUVhU0V4cE5SY2R0WWZYOHFudjQtd2ZjMGRuMmdfNzl2V2VBOElFVWo4dG9PdjJxZUZlWVh1MEQ2UmM5Qld4emVQZm1QbmQtaDJnRWVlbVhoQ29GQ2VqMXV5ODJQdlE0QXQzU0NQOFlrdVpPRzE0SDRHYzJDNVhzTHJGbnFHT19aaWNwMkxOMGZ2Vm5NVV9SN19McmlqWjZodnBHV3lIR0t3UG4wRHZ3?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - The Laconia Daily Sun](https://news.google.com/rss/articles/CBMi_wFBVV95cUxQTGppc3NIdjVDTU5pSzNzcU9qZzR4VFZabTZMbzRRaThtMVBNME5jVmxzSjgyOGRELWRJMS1BdzFMSGFvRTBKMXVjVDg0Z045V2t3Zl9zeTJDWkx3dnB5bjF4VEZCN3d3Y3ZhZjV6RFRsZzdyVmVqUWx4eGExVVlGN21CT3BaVDRHbDFXYXRSVm91Slp5LU1oSGxOd1VLZ0RTZHhscGp6d1d0eU05RVFBYlUxQTZsN3BEN2NreEdTYVBKenh1VFJCZFZ5U0ZDTEtkZ2lCOE5YY0pCdE5VZjdoNnVfZ0hORmtDbTJFTTlTbzNCYnM1ZEpyMHRLUWxHaEk?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - thepress.net](https://news.google.com/rss/articles/CBMi9AFBVV95cUxOVEhsRk9PZ3FaM3IzbXBfT0FEc21RTVIxMVhycDZRaDhLblpmdEM1Wk9VZTdUUERHU3lzenJ6djRkRjkwejNjczlWTlhEWm1Gb3RPZ2prZlZRa1lkNmE4c29CbUt5WXhaZ3JkUHgzNDlFRWlpZGc1cEluLW5oLTYySUU4WUdCQ2JhOEtYSUdTWjBGT1lvNzMxSW1rVFB1UFNxX3g4V1BIWVFSaHlZdUx2Z2wwR0FjbE5KSEVpVFhGYnlUeGhkQTFSMDBwV0dfMkdzeVEyZjlaTVl3bkJFZmZ4elphcDd3RXJJXzJid0t5UDd0R1Bp?oc=5) | not_checked | research_news_review, watching |
-| low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - Tioga Publishing](https://news.google.com/rss/articles/CBMi-wFBVV95cUxOX1VDYVlVU2ZTS0g1RkdVaDBmdm9vNjRlMzhqbjdtdE9EaVN0b2MzMzVrdEZFdUgxc0s0WkRhcnhVM0QteGU2NU9LYUpwVHFNR3FxVjE5VC1hY2xOSzdCaU1sSWxQNk9vb05YNkZtZlFYa1RiSEE0U3NKOFZmOGsxX3o4MHczUmNHczV2N2xKOHViX2ZjSGFOLW5nSHN5Q3FpVkNQSEMycWdWSzJuTm80VmQwRjRxOG9ieDRxREpEaEV4cXlMNmxrV2tQbmQwVmdXNExOT2RsYjRISHo1V2EtT0lod0NSMThsYmJLU2xMZG9BdGdVbkZLZFR4SQ?oc=5) | not_checked | research_news_review, watching |
 
 ## Meaning of states
 
