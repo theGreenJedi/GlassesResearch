@@ -1,3 +1,59 @@
+.follow-research {
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .8rem;
+  background: color-mix(in srgb, var(--md-default-bg-color) 94%, var(--md-primary-fg-color) 6%);
+}
+
+.follow-research__heading h2,
+.follow-research__option h3 { margin-top: 0; }
+
+.follow-research__heading > p:last-child { margin-bottom: 1rem; }
+
+.follow-research__eyebrow {
+  margin: 0 0 .35rem;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  opacity: .68;
+}
+
+.follow-research__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: .9rem;
+}
+
+.follow-research__option {
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .65rem;
+  background: var(--md-default-bg-color);
+}
+
+.follow-research__option p { margin: .4rem 0 .9rem; }
+
+.follow-research__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+}
+
+.follow-research__actions .md-button {
+  margin: 0;
+  cursor: pointer;
+}
+
+.follow-research__status {
+  min-height: 1.25rem;
+  margin: .6rem 0 0 !important;
+  font-size: .82rem;
+  font-weight: 600;
+  opacity: .82;
+}
+
 .verified-alerts {
   margin: 1.5rem 0 2rem;
   padding: 1.25rem;
@@ -33,3 +89,30 @@
 .verified-alerts .alert-note { font-size: .9rem; opacity: .82; }
 .verified-alerts .alert-status { min-height: 1.4rem; margin-top: .7rem; font-weight: 600; }
 .verified-alerts button { margin-top: .75rem; }
+
+.gr-follow-footer {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-footer-bg-color);
+  color: var(--md-footer-fg-color);
+}
+
+.gr-follow-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .35rem .55rem;
+  min-height: 2.5rem;
+  padding: .55rem .8rem;
+  font-size: .72rem;
+}
+
+.gr-follow-footer__label { font-weight: 700; }
+.gr-follow-footer a { color: inherit; text-decoration: underline; text-underline-offset: .15em; }
+.gr-follow-footer a:hover { opacity: .82; }
+
+@media (max-width: 44rem) {
+  .follow-research { padding: 1rem; }
+  .follow-research__grid { grid-template-columns: 1fr; }
+  .follow-research__actions .md-button { flex: 1 1 auto; text-align: center; }
+  .gr-follow-footer__inner { justify-content: center; text-align: center; }
+}

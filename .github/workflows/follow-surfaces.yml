@@ -1,0 +1,38 @@
+name: Follow surface contract
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'overrides/main.html'
+      - 'docs/RESEARCH_NEWS.md'
+      - 'docs/javascripts/verified-research-alerts.js'
+      - 'docs/stylesheets/verified-research-alerts.css'
+      - 'scripts/verify_follow_surfaces.py'
+      - '.github/workflows/follow-surfaces.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'overrides/main.html'
+      - 'docs/RESEARCH_NEWS.md'
+      - 'docs/javascripts/verified-research-alerts.js'
+      - 'docs/stylesheets/verified-research-alerts.css'
+      - 'scripts/verify_follow_surfaces.py'
+      - '.github/workflows/follow-surfaces.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Verify unified follow surface contract
+        run: python scripts/verify_follow_surfaces.py
+      - name: Verify follow JavaScript syntax
+        run: node --check docs/javascripts/verified-research-alerts.js
