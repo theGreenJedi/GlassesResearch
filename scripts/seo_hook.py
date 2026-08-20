@@ -152,6 +152,37 @@ def _model_schema(meta: dict[str, Any], description: str, canonical_url: str) ->
     )
 
 
+def _dataset_schema(meta: dict[str, Any], description: str, canonical_url: str, site_url: str) -> str | None:
+    """Describe the generated open dataset only when the visible dataset page opts in."""
+    if meta.get("dataset_schema") is not True:
+        return None
+    root = site_url.rstrip("/")
+    payload: dict[str, Any] = {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "@id": f"{canonical_url}#dataset",
+        "name": meta.get("dataset_name") or "GlassesResearch Open Smart-Glasses Dataset",
+        "description": description,
+        "url": canonical_url,
+        "version": meta.get("dataset_version"),
+        "license": "https://opensource.org/license/mit",
+        "creator": {"@type": "Organization", "name": "GlassesResearch", "url": root + "/"},
+        "isAccessibleForFree": True,
+        "keywords": ["smart glasses", "AI eyewear", "augmented reality", "wearable computing", "open dataset"],
+        "distribution": [
+            {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": root + "/data/public/models.json"},
+            {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": root + "/data/public/models.csv"},
+            {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": root + "/data/public/lineages.json"},
+            {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": root + "/data/public/relationships.json"},
+        ],
+    }
+    if meta.get("dataset_date_modified") and meta.get("dataset_date_modified") != "unknown":
+        payload["dateModified"] = meta["dataset_date_modified"]
+    if meta.get("dataset_record_count") is not None:
+        payload["size"] = str(meta["dataset_record_count"]) + " canonical model records"
+    return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+
+
 def on_page_markdown(markdown: str, page: Any, config: Any, files: Any) -> str:
     """Populate per-page metadata before Material renders the page."""
     page_title = page.title or config.site_name
@@ -173,5 +204,9 @@ def on_page_markdown(markdown: str, page: Any, config: Any, files: Any) -> str:
     model_json = _model_schema(page.meta, page.meta["description"], canonical_url)
     if model_json:
         page.meta["seo_model_json"] = model_json
+
+    dataset_json = _dataset_schema(page.meta, page.meta["description"], canonical_url, config.site_url)
+    if dataset_json:
+        page.meta["seo_dataset_json"] = dataset_json
 
     return markdown

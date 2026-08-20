@@ -61,18 +61,8 @@ jobs:
       - name: Stage repository documentation
         run: python scripts/prepare_site.py
 
-      - name: Build canonical public dataset
-        run: |
-          python scripts/build_public_dataset.py \
-            --devices .site-src/data/devices.json \
-            --comparisons .site-src/data/comparisons.json \
-            --capabilities .site-src/data/finder-capabilities.json \
-            --report-cards .site-src/data/report-card-scores.json \
-            --ecosystem data/ecosystem-relations.json \
-            --evidence evidence/resources.json \
-            --schema data/public-model.schema.json \
-            --output-dir .site-src/data/public
-          python -c "import json; d=json.load(open('.site-src/data/devices.json')); p=json.load(open('.site-src/data/public/models.json')); assert p['record_count']==d['record_count']; assert len(p['records'])==p['record_count']; assert all('claims' in r and 'finder_capabilities' in r for r in p['records']); print(f'Public dataset pre-build verified: {p[\"record_count\"]} models')"
+      - name: Verify open dataset release
+        run: python scripts/verify_open_dataset.py --site-root .site-src
 
       - name: Audit repository links and preservation records
         run: python scripts/audit_repository.py --external-output build/external-links.txt
@@ -137,6 +127,10 @@ jobs:
           test -s site/data/devices.json
           test -s site/data/public/models.json
           test -s site/data/public/models.csv
+          test -s site/data/public/lineages.json
+          test -s site/data/public/relationships.json
+          test -s site/data/public/manifest.json
+          test -s site/data/public/SHA256SUMS.txt
           test -s site/data/public/schema.json
           test -s site/data/public/models/gls-0001.json
           test -s site/data/public/models/gls-0146.json
@@ -144,6 +138,7 @@ jobs:
           test -s site/data/citations/gls-0039.bib
           test -s site/data/citations/gls-0039.json
           test -s site/javascripts/glassesresearch-model-card.js
+          test -s site/dataset/index.html
           test -s site/docs/REFERENCE_DESK/index.html
           test -s site/docs/EMBED_GLASSESRESEARCH/index.html
           test -s site/docs/COMPARISON_ENGINE/index.html
@@ -165,15 +160,22 @@ jobs:
           grep -Fq 'EV-0001' site/evidence/resources.json
           python -c "import json, os; p=json.load(open('site/deployment.json')); assert p['sha']==os.environ['GITHUB_SHA']; print(f'Built provenance verified: {p[\"sha\"]}')"
           python -c "import json; p=json.load(open('site/data/devices.json', encoding='utf-8')); r=p.get('records', []); c=p.get('record_count'); assert isinstance(c, int) and c > 0; assert c == len(r); ids=[x.get('id') for x in r]; assert len(ids) == len(set(ids)); print(f'Built catalog verified dynamically: {c} devices')"
-          python -c "import json; d=json.load(open('site/data/devices.json')); p=json.load(open('site/data/public/models.json')); assert p['record_count']==d['record_count']; assert len(p['records'])==p['record_count']; assert all('claims' in r and 'finder_capabilities' in r for r in p['records']); print(f'Public dataset verified dynamically: {p[\"record_count\"]} models')"
+          python -c "import json; d=json.load(open('site/data/devices.json')); p=json.load(open('site/data/public/models.json')); l=json.load(open('site/data/public/lineages.json')); r=json.load(open('site/data/public/relationships.json')); m=json.load(open('site/data/public/manifest.json')); assert p['record_count']==d['record_count']; assert len(p['records'])==p['record_count']; assert m['record_count']==p['record_count']; assert m['lineage_model_count']==l['model_count']; assert m['relationship_count']==r['relationship_count']; assert m['version'].startswith('GRD-'); print(f'Open dataset built: {m[\"version\"]}, {m[\"record_count\"]} models, {m[\"family_count\"]} families')"
           python -c "import json; d=json.load(open('site/data/devices.json')); c=json.load(open('site/data/citations/index.json')); assert c['record_count']==d['record_count']; assert any(r['id']=='GLS-0039' for r in c['records']); print(f'Citation distribution verified dynamically: {c[\"record_count\"]} models')"
           expected="$(python -c "import json; print(json.load(open('site/data/devices.json'))['record_count'])")"
+          version="$(python -c "import json; print(json.load(open('site/data/public/manifest.json'))['version'].lower())")"
+          test -s "site/data/public/releases/${version}/manifest.json"
+          test -s "site/data/public/releases/${version}/models.json"
           test "$(find site/data/public/models -maxdepth 1 -name 'gls-*.json' | wc -l)" -eq "$expected"
           test "$(find site/data/citations -maxdepth 1 -name 'gls-*.json' | wc -l)" -eq "$expected"
           test "$(find site/data/citations -maxdepth 1 -name 'gls-*.bib' | wc -l)" -eq "$expected"
           test "$(find site/models/catalog -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -eq "$expected"
           test "$(find site/guides -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -eq 12
           grep -Fq 'verified price ceilings, and Report Card minimum scores' site/docs/TOOLS/index.html
+          grep -Fq 'Open Smart-Glasses Dataset' site/docs/TOOLS/index.html
+          grep -Fq 'GlassesResearch Open Smart-Glasses Dataset' site/dataset/index.html
+          grep -Fq 'application/ld+json' site/dataset/index.html
+          grep -Fq '"@type":"Dataset"' site/dataset/index.html
           grep -Fq 'Reference desk' site/docs/REFERENCE_DESK/index.html
           grep -Fq 'Embed a GlassesResearch model card' site/docs/EMBED_GLASSESRESEARCH/index.html
           grep -Fq 'cookie-free' site/javascripts/glassesresearch-model-card.js
@@ -233,6 +235,11 @@ jobs:
               && curl_live /data/devices.json /tmp/devices.json \
               && curl_live /data/public/models.json /tmp/public-models.json \
               && curl_live /data/public/models.csv /tmp/public-models.csv \
+              && curl_live /data/public/lineages.json /tmp/lineages.json \
+              && curl_live /data/public/relationships.json /tmp/relationships.json \
+              && curl_live /data/public/manifest.json /tmp/dataset-manifest.json \
+              && curl_live /data/public/SHA256SUMS.txt /tmp/dataset-sums.txt \
+              && curl_live /dataset/ /tmp/dataset.html \
               && curl_live /data/citations/index.json /tmp/citations.json \
               && curl_live /data/citations/gls-0039.bib /tmp/gls-0039.bib \
               && curl_live /javascripts/glassesresearch-model-card.js /tmp/model-card.js \
@@ -243,31 +250,38 @@ jobs:
               && curl_live /resources/COMMUNITY_AND_DEVELOPMENT/ /tmp/community.html \
               && curl_live /models/AnkoCameraGlasses/ /tmp/anko.html \
               && curl_live /models/RETAIL_REBRANDS/ /tmp/rebrands.html \
-              && curl_live /lineages/ /tmp/lineages.html \
-              && python -c "import json, os; p=json.load(open('/tmp/deployment.json')); expected=os.environ['GITHUB_SHA']; actual=p.get('sha'); assert actual==expected, f'stale production: expected {expected}, got {actual}'; print(f'Live deployment SHA verified: {actual}')" \
-              && grep -Fq 'Sitemap: https://glassesresearch.org/sitemap.xml' /tmp/robots.txt \
-              && grep -Fq 'https://glassesresearch.org/' /tmp/sitemap.xml \
-              && grep -Fq 'TL-0001' /tmp/timeline.json \
-              && grep -Fq 'record_count' /tmp/comparisons.json \
-              && python -c "import json; p=json.load(open('/tmp/devices.json', encoding='utf-8')); r=p.get('records', []); c=p.get('record_count'); assert isinstance(c, int) and c > 0; assert c == len(r); print(f'Live catalog verified dynamically: {c} devices')" \
-              && python -c "import json; d=json.load(open('/tmp/devices.json')); p=json.load(open('/tmp/public-models.json')); assert p['record_count']==d['record_count']; print(f'Live public dataset verified: {p[\"record_count\"]} models')" \
-              && python -c "import json; d=json.load(open('/tmp/devices.json')); c=json.load(open('/tmp/citations.json')); assert c['record_count']==d['record_count']; assert any(r['id']=='GLS-0039' for r in c['records']); print(f'Live citation distribution verified: {c[\"record_count\"]} models')" \
-              && grep -Fq 'id,maker,model,era,state,type,access' /tmp/public-models.csv \
-              && grep -Fq 'verified price ceilings, and Report Card minimum scores' /tmp/tools.html \
-              && grep -Fq 'Reference desk' /tmp/reference-desk.html \
-              && grep -Fq 'Embed a GlassesResearch model card' /tmp/embed.html \
-              && grep -Fq 'GLS-0039' /tmp/gls-0039.bib \
-              && grep -Fq 'cookie-free' /tmp/model-card.js \
-              && grep -Fq 'models available for comparison' /tmp/comparison-engine.js \
-              && grep -Fq 'https://www.reddit.com/r/SmartGlasses/' /tmp/community.html \
-              && grep -Fq 'https://github.com/Mentra-Community' /tmp/community.html \
-              && grep -Fq 'https://xdaforums.com/' /tmp/community.html \
-              && grep -Fq 'HeyCyan' /tmp/anko.html \
-              && grep -Fq 'Retail Rebrands' /tmp/rebrands.html \
-              && grep -Fq 'Google Glass' /tmp/lineages.html \
-              && grep -Fq 'Vuzix' /tmp/lineages.html; then
-              echo "Live site verified at exact deployment SHA ${GITHUB_SHA}; deployment provenance and current feature smoke tests passed."
-              exit 0
+              && curl_live /lineages/ /tmp/lineages.html; then
+              version="$(python -c "import json; print(json.load(open('/tmp/dataset-manifest.json'))['version'].lower())")"
+              if curl_live "/data/public/releases/${version}/manifest.json" /tmp/dataset-release-manifest.json \
+                && python -c "import json, os; p=json.load(open('/tmp/deployment.json')); expected=os.environ['GITHUB_SHA']; actual=p.get('sha'); assert actual==expected, f'stale production: expected {expected}, got {actual}'; print(f'Live deployment SHA verified: {actual}')" \
+                && grep -Fq 'Sitemap: https://glassesresearch.org/sitemap.xml' /tmp/robots.txt \
+                && grep -Fq 'https://glassesresearch.org/' /tmp/sitemap.xml \
+                && grep -Fq 'TL-0001' /tmp/timeline.json \
+                && grep -Fq 'record_count' /tmp/comparisons.json \
+                && python -c "import json; p=json.load(open('/tmp/devices.json', encoding='utf-8')); r=p.get('records', []); c=p.get('record_count'); assert isinstance(c, int) and c > 0; assert c == len(r); print(f'Live catalog verified dynamically: {c} devices')" \
+                && python -c "import json; d=json.load(open('/tmp/devices.json')); p=json.load(open('/tmp/public-models.json')); l=json.load(open('/tmp/lineages.json')); r=json.load(open('/tmp/relationships.json')); m=json.load(open('/tmp/dataset-manifest.json')); rm=json.load(open('/tmp/dataset-release-manifest.json')); assert p['record_count']==d['record_count']==m['record_count']; assert m['lineage_model_count']==l['model_count']; assert m['relationship_count']==r['relationship_count']; assert rm['version']==m['version']; print(f'Live open dataset verified: {m[\"version\"]}, {m[\"record_count\"]} models')" \
+                && python -c "import json; d=json.load(open('/tmp/devices.json')); c=json.load(open('/tmp/citations.json')); assert c['record_count']==d['record_count']; assert any(r['id']=='GLS-0039' for r in c['records']); print(f'Live citation distribution verified: {c[\"record_count\"]} models')" \
+                && grep -Fq 'id,maker,model,era,state,type,access' /tmp/public-models.csv \
+                && grep -Fq 'models.json' /tmp/dataset-sums.txt \
+                && grep -Fq 'GlassesResearch Open Smart-Glasses Dataset' /tmp/dataset.html \
+                && grep -Fq '"@type":"Dataset"' /tmp/dataset.html \
+                && grep -Fq 'verified price ceilings, and Report Card minimum scores' /tmp/tools.html \
+                && grep -Fq 'Open Smart-Glasses Dataset' /tmp/tools.html \
+                && grep -Fq 'Reference desk' /tmp/reference-desk.html \
+                && grep -Fq 'Embed a GlassesResearch model card' /tmp/embed.html \
+                && grep -Fq 'GLS-0039' /tmp/gls-0039.bib \
+                && grep -Fq 'cookie-free' /tmp/model-card.js \
+                && grep -Fq 'models available for comparison' /tmp/comparison-engine.js \
+                && grep -Fq 'https://www.reddit.com/r/SmartGlasses/' /tmp/community.html \
+                && grep -Fq 'https://github.com/Mentra-Community' /tmp/community.html \
+                && grep -Fq 'https://xdaforums.com/' /tmp/community.html \
+                && grep -Fq 'HeyCyan' /tmp/anko.html \
+                && grep -Fq 'Retail Rebrands' /tmp/rebrands.html \
+                && grep -Fq 'Google Glass' /tmp/lineages.html \
+                && grep -Fq 'Vuzix' /tmp/lineages.html; then
+                echo "Live site verified at exact deployment SHA ${GITHUB_SHA}; deployment provenance and open dataset smoke tests passed."
+                exit 0
+              fi
             fi
             echo "Attempt ${attempt}/12 did not yet match deployment ${GITHUB_SHA}."
             sleep 15
