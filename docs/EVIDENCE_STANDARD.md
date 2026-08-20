@@ -31,7 +31,7 @@ Community confirmation is valuable evidence, but it does not by itself promote a
 ```text
 Claim:
 Status:
-Model / revision:
+Model / revision or Relationship ID:
 Firmware / software versions:
 Source or experiment:
 Date checked:
@@ -45,6 +45,8 @@ Recovery / rollback:
 Contradictory evidence:
 Notes:
 ```
+
+A claim about lineage itself may target the stable `GLR-*` Relationship ID emitted by the family-tree lineage index. Relationship evidence establishes only that relationship. It does not transfer specifications, scores, community findings, firmware behavior, or verification status between the connected models.
 
 ## Confidence
 
