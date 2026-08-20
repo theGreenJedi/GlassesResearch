@@ -17,4 +17,4 @@ Subscriptions use double opt-in. A new address is not activated until its confir
 
 GlassesResearch retains subscriber email addresses only to operate the requested alert service. Subscriber addresses are not sold or used for advertising.
 
-[Choose your alerts on Research & News](../RESEARCH_NEWS.md#verified-research-alerts) · [Browse verified changes](/changes/)
+[Choose your alerts on Research & News](../RESEARCH_NEWS.md#verified-research-alerts) · [Browse verified changes](../../changes/index.md)
