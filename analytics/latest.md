@@ -1,65 +1,66 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-08-19T07:53:52+00:00**
+Generated automatically: **2026-08-20T07:56:51+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-08-11 → 2026-08-17):** 660 impressions, 0 clicks, 0.00% CTR, average position 35.0.
-- **7-day change:** impressions +178.5%; clicks n/a.
-- **Rolling 28 days:** 897 impressions, 0 clicks, 0.00% CTR, average position 30.2.
+- **Google, latest final 7 days (2026-08-12 → 2026-08-18):** 786 impressions, 1 clicks, 0.13% CTR, average position 37.9.
+- **7-day change:** impressions +124.6%; clicks n/a.
+- **Rolling 28 days:** 1136 impressions, 1 clicks, 0.09% CTR, average position 32.1.
+- **Milestone:** organic Google clicks appeared after a previous zero-click week.
 
 ## Google — top queries
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
 | 3d eyewear database | 0 | 1 | 0.00% | 59.0 |
-| 6dof glasses | 0 | 1 | 0.00% | 32.0 |
 | almer arc 2 | 0 | 1 | 0.00% | 68.0 |
-| ar glasses sdk | 0 | 2 | 0.00% | 56.5 |
-| ar glasses specs | 0 | 1 | 0.00% | 40.0 |
-| ar glasses with diopter adjustment | 0 | 1 | 0.00% | 32.0 |
+| ar glasses open source | 0 | 2 | 0.00% | 69.0 |
+| ar glasses sdk | 0 | 3 | 0.00% | 47.3 |
+| ar glasses with screen | 0 | 1 | 0.00% | 30.0 |
 | ar headset measurement | 0 | 1 | 0.00% | 63.0 |
-| ar monocle | 0 | 1 | 0.00% | 59.0 |
+| ar monocle | 0 | 2 | 0.00% | 73.0 |
 | ar smart glasses case studies | 0 | 1 | 0.00% | 56.0 |
 | ar smart glasses for fieldwork | 0 | 1 | 0.00% | 78.0 |
+| augmented reality headset measurement | 0 | 1 | 0.00% | 77.0 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/ | 0 | 9 | 0.00% | 21.7 |
-| https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 2 | 0.00% | 1.0 |
-| https://glassesresearch.org/WHY/ | 0 | 4 | 0.00% | 4.0 |
-| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 2 | 0.00% | 43.5 |
-| https://glassesresearch.org/docs/ABOUT/ | 0 | 4 | 0.00% | 5.8 |
-| https://glassesresearch.org/docs/BLE/ | 0 | 3 | 0.00% | 6.0 |
+| https://glassesresearch.org/glossary/organizations/ORG-0002-goodway-techs/ | 1 | 2 | 50.00% | 8.0 |
+| https://glassesresearch.org/ | 0 | 10 | 0.00% | 20.5 |
+| https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 3 | 0.00% | 1.0 |
+| https://glassesresearch.org/WHY/ | 0 | 5 | 0.00% | 5.0 |
+| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 3 | 0.00% | 32.0 |
+| https://glassesresearch.org/docs/ABOUT/ | 0 | 5 | 0.00% | 5.4 |
+| https://glassesresearch.org/docs/BLE/ | 0 | 4 | 0.00% | 24.0 |
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 2 | 0.00% | 10.5 |
-| https://glassesresearch.org/docs/CONTRIBUTE/ | 0 | 2 | 0.00% | 10.0 |
+| https://glassesresearch.org/docs/CONTRIBUTE/ | 0 | 3 | 0.00% | 8.7 |
 | https://glassesresearch.org/docs/ECOSYSTEM_SCOPE/ | 0 | 2 | 0.00% | 5.5 |
-| https://glassesresearch.org/docs/Firmware/ | 0 | 2 | 0.00% | 7.5 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **5,613 requests**, **581 HTTP visits**, **55.3 MB** served.
-- Rolling 7d: **25,112 requests**, **5,667 HTTP visits**, **392.1 MB** served.
+- Rolling 24h: **5,882 requests**, **1,195 HTTP visits**, **59.8 MB** served.
+- Rolling 7d: **28,257 requests**, **5,853 HTTP visits**, **411.7 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| NL | 3,155 | 1 |
-| US | 1,724 | 359 |
-| SG | 203 | 14 |
-| CA | 146 | 136 |
-| IN | 110 | 4 |
-| BY | 42 | 1 |
-| DE | 33 | 13 |
-| HK | 28 | 2 |
-| GB | 22 | 1 |
-| CN | 22 | 11 |
+| US | 5,118 | 1,014 |
+| SG | 296 | 26 |
+| CA | 84 | 67 |
+| BR | 79 | 7 |
+| JP | 68 | 15 |
+| FR | 57 | 5 |
+| NL | 52 | 1 |
+| GB | 38 | 0 |
+| CN | 24 | 11 |
+| DE | 19 | 16 |
 
 ## What to watch
 
