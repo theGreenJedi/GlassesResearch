@@ -57,6 +57,7 @@ def main():
     run(ROOT/"scripts/build_report_card_hub.py","--devices",database,"--scores",cards,"--aliases",ROOT/"data/lineage-aliases.json","--output",DEST/"docs/REPORT_CARD.md")
     lineage_index=DEST/"data"/"lineage-index.json"
     run(ROOT/"scripts/build_family_tree_surfaces.py","--site-root",DEST,"--families",ROOT/"data/family-trees.json","--additional-families",ROOT/"data/family-trees-bounded.json","--additional-families",ROOT/"data/family-trees-researched.json","--corrections",ROOT/"data/family-tree-audit-overrides.json","--index-output",lineage_index)
+    run(ROOT/"scripts/apply_lineage_search.py","--lineage-index",lineage_index,"--devices",database,"--finder-js",DEST/"docs/javascripts/glasses-finder-v3.js")
     run(ROOT/"scripts/build_community_reviews.py","--reviews",ROOT/"data/community-reviews.json","--reviewers",ROOT/"data/community-reviewers.json","--devices",database,"--lineage-index",lineage_index,"--summary-output",DEST/"data/community-review-summary.json","--profile-root",DEST/"contributors","--index-output",DEST/"docs/COMMUNITY_REVIEWERS.md")
     strip_public_infrastructure_narration()
     run(ROOT/"scripts/build_internal_model_links.py","--output-root",DEST)
