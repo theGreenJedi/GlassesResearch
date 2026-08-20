@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "source_class": "populated_research_records",
+  "rules": {
+    "score_inheritance": false,
+    "relationship_inheritance": false,
+    "unknown_relationships_remain_unknown": true
+  },
+  "families": [
+    {
+      "id": "amazon-echo-frames",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/AMAZON_ECHO_FRAMES.md",
+      "label": "Amazon Echo Frames",
+      "summary": "Amazon's screenless Alexa/audio eyewear lineage from Echo Frames Gen 1 through Gen 3, with Carrera as a parallel frame implementation of the 2023 smart-audio architecture.",
+      "root_id": "amazon-echo-root",
+      "nodes": [
+        {"id":"amazon-echo-root","type":"family","label":"Amazon smart-audio eyewear","status":"established"},
+        {"id":"gls-0009","type":"model","label":"Echo Frames (1st Gen)","status":"established","canonical_id":"GLS-0009","href":"/models/catalog/gls-0009/"},
+        {"id":"gls-0010","type":"model","label":"Echo Frames (2nd Gen)","status":"established","canonical_id":"GLS-0010","href":"/models/catalog/gls-0010/"},
+        {"id":"amazon-echo-2023","type":"branch","label":"2023 smart-audio architecture","status":"established"},
+        {"id":"gls-0011","type":"model","label":"Echo Frames (3rd Gen)","status":"established","canonical_id":"GLS-0011","href":"/models/catalog/gls-0011/"},
+        {"id":"gls-0012","type":"model","label":"Carrera Smart Glasses with Alexa","status":"established","canonical_id":"GLS-0012","href":"/models/catalog/gls-0012/"}
+      ],
+      "edges": [
+        {"parent":"amazon-echo-root","child":"gls-0009","relationship":"member_of","label":"first generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/AMAZON_ECHO_FRAMES.md"]},
+        {"parent":"gls-0009","child":"gls-0010","relationship":"successor","label":"second generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/AMAZON_ECHO_FRAMES.md"]},
+        {"parent":"gls-0010","child":"amazon-echo-2023","relationship":"successor","label":"2023 architecture generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/AMAZON_ECHO_FRAMES.md"]},
+        {"parent":"amazon-echo-2023","child":"gls-0011","relationship":"member_of","label":"Echo Frames implementation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/AMAZON_ECHO_FRAMES.md"]},
+        {"parent":"amazon-echo-2023","child":"gls-0012","relationship":"member_of","label":"Carrera implementation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/AMAZON_ECHO_FRAMES.md"]}
+      ]
+    },
+    {
+      "id": "bose-frames",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/BOSE_FRAMES.md",
+      "label": "Bose Frames",
+      "summary": "Two documented Bose audio-eyewear generations: Alto/Rondo first generation and Tempo/Tenor/Soprano second-generation architecture.",
+      "root_id": "bose-root",
+      "nodes": [
+        {"id":"bose-root","type":"family","label":"Bose Frames","status":"established"},
+        {"id":"bose-gen1","type":"branch","label":"First-generation Frames","status":"established"},
+        {"id":"gls-0013","type":"model","label":"Bose Frames Alto","status":"established","canonical_id":"GLS-0013","href":"/models/catalog/gls-0013/"},
+        {"id":"gls-0014","type":"model","label":"Bose Frames Rondo","status":"established","canonical_id":"GLS-0014","href":"/models/catalog/gls-0014/"},
+        {"id":"bose-gen2","type":"branch","label":"Second-generation Frames","status":"established"},
+        {"id":"gls-0015","type":"model","label":"Bose Frames Tempo","status":"established","canonical_id":"GLS-0015","href":"/models/catalog/gls-0015/"},
+        {"id":"gls-0016","type":"model","label":"Bose Frames Tenor","status":"established","canonical_id":"GLS-0016","href":"/models/catalog/gls-0016/"},
+        {"id":"gls-0017","type":"model","label":"Bose Frames Soprano","status":"established","canonical_id":"GLS-0017","href":"/models/catalog/gls-0017/"}
+      ],
+      "edges": [
+        {"parent":"bose-root","child":"bose-gen1","relationship":"product_branch","label":"first generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/BOSE_FRAMES.md"]},
+        {"parent":"bose-gen1","child":"gls-0013","relationship":"member_of","label":"first-generation style","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/BOSE_FRAMES.md"]},
+        {"parent":"bose-gen1","child":"gls-0014","relationship":"member_of","label":"first-generation style","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/BOSE_FRAMES.md"]},
+        {"parent":"bose-gen1","child":"bose-gen2","relationship":"successor","label":"second-generation audio architecture","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/BOSE_FRAMES.md"]},
+        {"parent":"bose-gen2","child":"gls-0015","relationship":"member_of","label":"second-generation style","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/BOSE_FRAMES.md"]},
+        {"parent":"bose-gen2","child":"gls-0016","relationship":"member_of","label":"second-generation style","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/BOSE_FRAMES.md"]},
+        {"parent":"bose-gen2","child":"gls-0017","relationship":"member_of","label":"second-generation style","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/BOSE_FRAMES.md"]}
+      ]
+    },
+    {
+      "id": "huawei-smart-eyewear",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/HUAWEI_SMART_EYEWEAR.md",
+      "label": "Huawei smart eyewear",
+      "summary": "Huawei's audio-first smart-eyewear generations from the Gentle Monster collaboration through Huawei Eyewear 2, without importing camera or HUD claims from unrelated Huawei wearables.",
+      "root_id": "huawei-eyewear-root",
+      "nodes": [
+        {"id":"huawei-eyewear-root","type":"family","label":"Huawei smart eyewear","status":"established"},
+        {"id":"gls-0019","type":"model","label":"HUAWEI × GENTLE MONSTER Eyewear","status":"established","canonical_id":"GLS-0019","href":"/models/catalog/gls-0019/"},
+        {"id":"gls-0020","type":"model","label":"HUAWEI × GENTLE MONSTER Eyewear II","status":"established","canonical_id":"GLS-0020","href":"/models/catalog/gls-0020/"},
+        {"id":"gls-0021","type":"model","label":"Huawei Eyewear 2","status":"established","canonical_id":"GLS-0021","href":"/models/catalog/gls-0021/"}
+      ],
+      "edges": [
+        {"parent":"huawei-eyewear-root","child":"gls-0019","relationship":"member_of","label":"first documented generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/HUAWEI_SMART_EYEWEAR.md"]},
+        {"parent":"gls-0019","child":"gls-0020","relationship":"successor","label":"second generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/HUAWEI_SMART_EYEWEAR.md"]},
+        {"parent":"gls-0020","child":"gls-0021","relationship":"successor","label":"later Huawei-branded generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/HUAWEI_SMART_EYEWEAR.md"]}
+      ]
+    },
+    {
+      "id": "xiaomi-smart-eyewear",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/XIAOMI_SMART_AUDIO.md",
+      "label": "Xiaomi smart eyewear",
+      "summary": "Three distinct Xiaomi eyewear branches are preserved without cross-inheritance: Mijia smart-audio eyewear, the 2022 Mijia camera/display product, and the later Xiaomi AI Glasses camera/audio branch.",
+      "root_id": "xiaomi-eyewear-root",
+      "nodes": [
+        {"id":"xiaomi-eyewear-root","type":"family","label":"Xiaomi smart eyewear","status":"established"},
+        {"id":"xiaomi-audio-branch","type":"branch","label":"Mijia smart-audio branch","status":"established"},
+        {"id":"gls-0022","type":"model","label":"Mijia Smart Audio Glasses (1st generation)","status":"established","canonical_id":"GLS-0022","href":"/models/catalog/gls-0022/"},
+        {"id":"xiaomi-camera-display-branch","type":"branch","label":"Mijia camera/display branch","status":"established"},
+        {"id":"gls-0023","type":"model","label":"Mijia Glasses Camera","status":"established","canonical_id":"GLS-0023","href":"/models/catalog/gls-0023/"},
+        {"id":"xiaomi-ai-branch","type":"branch","label":"Xiaomi AI camera/audio branch","status":"established"},
+        {"id":"gls-0024","type":"model","label":"Xiaomi AI Glasses","status":"established","canonical_id":"GLS-0024","href":"/models/catalog/gls-0024/"}
+      ],
+      "edges": [
+        {"parent":"xiaomi-eyewear-root","child":"xiaomi-audio-branch","relationship":"product_branch","label":"screen-free audio branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/XIAOMI_SMART_AUDIO.md"]},
+        {"parent":"xiaomi-audio-branch","child":"gls-0022","relationship":"member_of","label":"first canonical audio generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/XIAOMI_SMART_AUDIO.md"]},
+        {"parent":"xiaomi-eyewear-root","child":"xiaomi-camera-display-branch","relationship":"product_branch","label":"camera/display branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/XIAOMI_SMART_AUDIO.md"]},
+        {"parent":"xiaomi-camera-display-branch","child":"gls-0023","relationship":"member_of","label":"2022 camera/display product","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/XIAOMI_SMART_AUDIO.md"]},
+        {"parent":"xiaomi-eyewear-root","child":"xiaomi-ai-branch","relationship":"product_branch","label":"camera/audio AI branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/XIAOMI_AI_GLASSES.md"]},
+        {"parent":"xiaomi-ai-branch","child":"gls-0024","relationship":"member_of","label":"canonical AI glasses product","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/XIAOMI_AI_GLASSES.md"]}
+      ]
+    },
+    {
+      "id": "vue-smart-eyewear",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/VUE.md",
+      "label": "Vue smart eyewear",
+      "summary": "Vue Pro is the Original Vue generation; Vue Lite is a later distinct legacy generation. Canonical GLS numbering is not used as chronology.",
+      "root_id": "vue-root",
+      "nodes": [
+        {"id":"vue-root","type":"family","label":"Vue smart eyewear","status":"established"},
+        {"id":"gls-0036","type":"model","label":"Vue Pro / Original Vue","status":"established","canonical_id":"GLS-0036","href":"/models/catalog/gls-0036/"},
+        {"id":"gls-0035","type":"model","label":"Vue Lite","status":"established","canonical_id":"GLS-0035","href":"/models/catalog/gls-0035/"}
+      ],
+      "edges": [
+        {"parent":"vue-root","child":"gls-0036","relationship":"member_of","label":"original Vue generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VUE.md"]},
+        {"parent":"gls-0036","child":"gls-0035","relationship":"successor","label":"later Vue Lite generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VUE.md"]}
+      ]
+    },
+    {
+      "id": "even-realities",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/EVEN_REALITIES.md",
+      "label": "Even Realities",
+      "summary": "A discreet binocular-HUD lineage with G1 and G2 preserved as separate generations and no wearer-view camera inferred for either.",
+      "root_id": "even-root",
+      "nodes": [
+        {"id":"even-root","type":"family","label":"Even Realities G-series","status":"established"},
+        {"id":"gls-0047","type":"model","label":"Even Realities G1","status":"established","canonical_id":"GLS-0047","href":"/models/catalog/gls-0047/"},
+        {"id":"gls-0048","type":"model","label":"Even Realities G2","status":"established","canonical_id":"GLS-0048","href":"/models/catalog/gls-0048/"}
+      ],
+      "edges": [
+        {"parent":"even-root","child":"gls-0047","relationship":"member_of","label":"first canonical generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EVEN_REALITIES.md"]},
+        {"parent":"gls-0047","child":"gls-0048","relationship":"successor","label":"second generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EVEN_REALITIES.md"]}
+      ]
+    },
+    {
+      "id": "inmo",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/INMO.md",
+      "label": "INMO wearable-display eyewear",
+      "summary": "INMO contains a standalone Air branch and a distinct translation-first GO branch. GO2 and GO3 are separate admitted products rather than aliases of GO.",
+      "root_id": "inmo-root",
+      "nodes": [
+        {"id":"inmo-root","type":"family","label":"INMO wearable-display ecosystem","status":"established"},
+        {"id":"inmo-air-branch","type":"branch","label":"Air standalone-AR branch","status":"established"},
+        {"id":"gls-0057","type":"model","label":"INMO Air","status":"established","canonical_id":"GLS-0057","href":"/models/catalog/gls-0057/"},
+        {"id":"gls-0058","type":"model","label":"INMO Air 2","status":"established","canonical_id":"GLS-0058","href":"/models/catalog/gls-0058/"},
+        {"id":"gls-0060","type":"model","label":"INMO Air 3","status":"established","canonical_id":"GLS-0060","href":"/models/catalog/gls-0060/"},
+        {"id":"inmo-go-branch","type":"branch","label":"GO translation-HUD branch","status":"established"},
+        {"id":"gls-0059","type":"model","label":"INMO GO","status":"established","canonical_id":"GLS-0059","href":"/models/catalog/gls-0059/"},
+        {"id":"gls-0152","type":"model","label":"INMO GO2","status":"established","canonical_id":"GLS-0152","href":"/models/catalog/gls-0152/"},
+        {"id":"gls-0153","type":"model","label":"INMO GO3","status":"established","canonical_id":"GLS-0153","href":"/models/catalog/gls-0153/"}
+      ],
+      "edges": [
+        {"parent":"inmo-root","child":"inmo-air-branch","relationship":"product_branch","label":"standalone Air branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/INMO.md"]},
+        {"parent":"inmo-air-branch","child":"gls-0057","relationship":"member_of","label":"first Air generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/INMO.md"]},
+        {"parent":"gls-0057","child":"gls-0058","relationship":"successor","label":"Air 2 generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/INMO.md"]},
+        {"parent":"gls-0058","child":"gls-0060","relationship":"successor","label":"Air 3 generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/INMO.md"]},
+        {"parent":"inmo-root","child":"inmo-go-branch","relationship":"product_branch","label":"translation-first GO branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/INMO.md"]},
+        {"parent":"inmo-go-branch","child":"gls-0059","relationship":"member_of","label":"original GO product","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/INMO.md"]},
+        {"parent":"gls-0059","child":"gls-0152","relationship":"successor","label":"distinct GO2 product","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/INMO.md","models/THE_LIST_RECONCILIATION_2026-08-17.md"]},
+        {"parent":"gls-0152","child":"gls-0153","relationship":"successor","label":"distinct GO3 product","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["models/THE_LIST_RECONCILIATION_2026-08-17.md"]}
+      ]
+    },
+    {
+      "id": "rokid",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/ROKID.md",
+      "label": "Rokid eyewear",
+      "summary": "Rokid spans an early standalone-AR Glass lineage, a later camera/audio AI branch, current integrated Rokid Glasses, and a host-driven Air/Max display branch. Architecture-specific claims do not cross branches.",
+      "root_id": "rokid-root",
+      "nodes": [
+        {"id":"rokid-root","type":"family","label":"Rokid eyewear","status":"established"},
+        {"id":"rokid-standalone-branch","type":"branch","label":"Standalone AR Glass branch","status":"established"},
+        {"id":"gls-0061","type":"model","label":"Rokid Glass","status":"established","canonical_id":"GLS-0061","href":"/models/catalog/gls-0061/"},
+        {"id":"gls-0062","type":"model","label":"Rokid Glass 2","status":"established","canonical_id":"GLS-0062","href":"/models/catalog/gls-0062/"},
+        {"id":"rokid-ai-branch","type":"branch","label":"Camera/audio AI branch","status":"established"},
+        {"id":"gls-0063","type":"model","label":"Rokid AI Glasses","status":"established","canonical_id":"GLS-0063","href":"/models/catalog/gls-0063/"},
+        {"id":"rokid-current-integrated","type":"branch","label":"Current integrated display-AI branch","status":"established"},
+        {"id":"gls-0064","type":"model","label":"Rokid Glasses","status":"established","canonical_id":"GLS-0064","href":"/models/catalog/gls-0064/"},
+        {"id":"rokid-display-branch","type":"branch","label":"Air / Max host-driven display branch","status":"established"},
+        {"id":"gls-0092","type":"model","label":"Rokid Air","status":"established","canonical_id":"GLS-0092","href":"/models/catalog/gls-0092/"},
+        {"id":"gls-0093","type":"model","label":"Rokid Max","status":"established","canonical_id":"GLS-0093","href":"/models/catalog/gls-0093/"},
+        {"id":"gls-0094","type":"model","label":"Rokid Max 2","status":"established","canonical_id":"GLS-0094","href":"/models/catalog/gls-0094/"}
+      ],
+      "edges": [
+        {"parent":"rokid-root","child":"rokid-standalone-branch","relationship":"product_branch","label":"early standalone-AR branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["models/PROFILES_COMPLETION_GAPS.md"]},
+        {"parent":"rokid-standalone-branch","child":"gls-0061","relationship":"member_of","label":"original Rokid Glass","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["models/PROFILES_COMPLETION_GAPS.md"]},
+        {"parent":"gls-0061","child":"gls-0062","relationship":"successor","label":"enterprise successor","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["models/PROFILES_COMPLETION_GAPS.md"]},
+        {"parent":"rokid-root","child":"rokid-ai-branch","relationship":"product_branch","label":"camera/audio AI branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["models/PROFILES_COMPLETION_GAPS.md"]},
+        {"parent":"rokid-ai-branch","child":"gls-0063","relationship":"member_of","label":"2024 region-limited AI product","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["models/PROFILES_COMPLETION_GAPS.md"]},
+        {"parent":"rokid-root","child":"rokid-current-integrated","relationship":"product_branch","label":"integrated display-AI branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/ROKID.md"]},
+        {"parent":"rokid-current-integrated","child":"gls-0064","relationship":"member_of","label":"current integrated product","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/ROKID.md"]},
+        {"parent":"rokid-root","child":"rokid-display-branch","relationship":"product_branch","label":"host-driven display branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/ROKID.md"]},
+        {"parent":"rokid-display-branch","child":"gls-0092","relationship":"member_of","label":"Air display product","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/ROKID.md"]},
+        {"parent":"gls-0092","child":"gls-0093","relationship":"successor","label":"Max generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/ROKID.md"]},
+        {"parent":"gls-0093","child":"gls-0094","relationship":"successor","label":"Max 2 generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/ROKID.md"]}
+      ]
+    },
+    {
+      "id": "rayneo",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/RAYNEO.md",
+      "label": "RayNeo eyewear",
+      "summary": "RayNeo has a standalone X-series AR/AI branch and a separate host-driven Air display branch. Shared branding does not imply shared camera, AI, SDK or service-dependence properties.",
+      "root_id": "rayneo-root",
+      "nodes": [
+        {"id":"rayneo-root","type":"family","label":"RayNeo eyewear","status":"established"},
+        {"id":"rayneo-x-branch","type":"branch","label":"X-series standalone AR/AI branch","status":"established"},
+        {"id":"gls-0065","type":"model","label":"RayNeo X2","status":"established","canonical_id":"GLS-0065","href":"/models/catalog/gls-0065/"},
+        {"id":"gls-0066","type":"model","label":"RayNeo X3 Pro","status":"established","canonical_id":"GLS-0066","href":"/models/catalog/gls-0066/"},
+        {"id":"rayneo-air-branch","type":"branch","label":"Air host-driven display branch","status":"established"},
+        {"id":"gls-0087","type":"model","label":"RayNeo Air","status":"established","canonical_id":"GLS-0087","href":"/models/catalog/gls-0087/"},
+        {"id":"gls-0088","type":"model","label":"RayNeo Air 2","status":"established","canonical_id":"GLS-0088","href":"/models/catalog/gls-0088/"},
+        {"id":"gls-0089","type":"model","label":"RayNeo Air 2s","status":"established","canonical_id":"GLS-0089","href":"/models/catalog/gls-0089/"},
+        {"id":"gls-0090","type":"model","label":"RayNeo Air 3s","status":"established","canonical_id":"GLS-0090","href":"/models/catalog/gls-0090/"},
+        {"id":"gls-0091","type":"model","label":"RayNeo Air 3s Pro","status":"established","canonical_id":"GLS-0091","href":"/models/catalog/gls-0091/"}
+      ],
+      "edges": [
+        {"parent":"rayneo-root","child":"rayneo-x-branch","relationship":"product_branch","label":"standalone X-series branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_RAYNEO_X.md"]},
+        {"parent":"rayneo-x-branch","child":"gls-0065","relationship":"member_of","label":"X2 generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_RAYNEO_X.md"]},
+        {"parent":"gls-0065","child":"gls-0066","relationship":"successor","label":"separate later X3 Pro generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_RAYNEO_X.md"]},
+        {"parent":"rayneo-root","child":"rayneo-air-branch","relationship":"product_branch","label":"host-driven Air branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/RAYNEO.md"]},
+        {"parent":"rayneo-air-branch","child":"gls-0087","relationship":"member_of","label":"Air-series member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/RAYNEO.md"]},
+        {"parent":"rayneo-air-branch","child":"gls-0088","relationship":"member_of","label":"Air-series member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/RAYNEO.md"]},
+        {"parent":"rayneo-air-branch","child":"gls-0089","relationship":"member_of","label":"Air-series member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/RAYNEO.md"]},
+        {"parent":"rayneo-air-branch","child":"gls-0090","relationship":"member_of","label":"Air-series member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/RAYNEO.md"]},
+        {"parent":"rayneo-air-branch","child":"gls-0091","relationship":"member_of","label":"Air-series member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/RAYNEO.md"]}
+      ]
+    },
+    {
+      "id": "viture",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/VITURE.md",
+      "label": "VITURE XR glasses",
+      "summary": "VITURE's host-driven XR lineage runs from One through One Lite and Pro, then branches into the Luma family and the high-performance Beast display branch.",
+      "root_id": "viture-root",
+      "nodes": [
+        {"id":"viture-root","type":"family","label":"VITURE XR glasses","status":"established"},
+        {"id":"gls-0076","type":"model","label":"VITURE One","status":"established","canonical_id":"GLS-0076","href":"/models/catalog/gls-0076/"},
+        {"id":"gls-0077","type":"model","label":"VITURE One Lite","status":"established","canonical_id":"GLS-0077","href":"/models/catalog/gls-0077/"},
+        {"id":"gls-0078","type":"model","label":"VITURE Pro","status":"established","canonical_id":"GLS-0078","href":"/models/catalog/gls-0078/"},
+        {"id":"viture-luma-branch","type":"branch","label":"Luma family","status":"established"},
+        {"id":"gls-0079","type":"model","label":"VITURE Luma","status":"established","canonical_id":"GLS-0079","href":"/models/catalog/gls-0079/"},
+        {"id":"gls-0080","type":"model","label":"VITURE Luma Pro","status":"established","canonical_id":"GLS-0080","href":"/models/catalog/gls-0080/"},
+        {"id":"gls-0081","type":"model","label":"VITURE Luma Ultra","status":"established","canonical_id":"GLS-0081","href":"/models/catalog/gls-0081/"},
+        {"id":"viture-beast-branch","type":"branch","label":"Beast high-performance branch","status":"established"},
+        {"id":"gls-0082","type":"model","label":"VITURE Beast","status":"established","canonical_id":"GLS-0082","href":"/models/catalog/gls-0082/"}
+      ],
+      "edges": [
+        {"parent":"viture-root","child":"gls-0076","relationship":"member_of","label":"One generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VITURE.md"]},
+        {"parent":"gls-0076","child":"gls-0077","relationship":"successor","label":"One Lite generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VITURE.md"]},
+        {"parent":"gls-0077","child":"gls-0078","relationship":"successor","label":"Pro generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VITURE.md"]},
+        {"parent":"gls-0078","child":"viture-luma-branch","relationship":"product_branch","label":"Luma family branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VITURE.md"]},
+        {"parent":"viture-luma-branch","child":"gls-0079","relationship":"member_of","label":"Luma family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VITURE.md"]},
+        {"parent":"viture-luma-branch","child":"gls-0080","relationship":"member_of","label":"Luma family member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VITURE.md"]},
+        {"parent":"viture-luma-branch","child":"gls-0081","relationship":"member_of","label":"Luma spatial member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VITURE.md"]},
+        {"parent":"gls-0078","child":"viture-beast-branch","relationship":"product_branch","label":"high-performance display branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VITURE.md"]},
+        {"parent":"viture-beast-branch","child":"gls-0082","relationship":"member_of","label":"Beast branch member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/VITURE.md"]}
+      ]
+    },
+    {
+      "id": "tcl-nxtwear",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/TCL_NXTWEAR.md",
+      "label": "TCL NXTWEAR",
+      "summary": "The TCL/RayNeo NXTWEAR display lineage is kept separate from the later RayNeo Air branch despite related corporate/product history.",
+      "root_id": "tcl-nxtwear-root",
+      "nodes": [
+        {"id":"tcl-nxtwear-root","type":"family","label":"TCL NXTWEAR","status":"established"},
+        {"id":"gls-0083","type":"model","label":"TCL / RayNeo NXTWEAR G","status":"established","canonical_id":"GLS-0083","href":"/models/catalog/gls-0083/"},
+        {"id":"gls-0084","type":"model","label":"TCL NXTWEAR G+","status":"established","canonical_id":"GLS-0084","href":"/models/catalog/gls-0084/"},
+        {"id":"gls-0085","type":"model","label":"TCL NXTWEAR S","status":"established","canonical_id":"GLS-0085","href":"/models/catalog/gls-0085/"},
+        {"id":"gls-0086","type":"model","label":"TCL NXTWEAR S+","status":"established","canonical_id":"GLS-0086","href":"/models/catalog/gls-0086/"}
+      ],
+      "edges": [
+        {"parent":"tcl-nxtwear-root","child":"gls-0083","relationship":"member_of","label":"NXTWEAR G generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/TCL_NXTWEAR.md"]},
+        {"parent":"gls-0083","child":"gls-0084","relationship":"successor","label":"G+ generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/TCL_NXTWEAR.md"]},
+        {"parent":"gls-0084","child":"gls-0085","relationship":"successor","label":"S generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/TCL_NXTWEAR.md"]},
+        {"parent":"gls-0085","child":"gls-0086","relationship":"successor","label":"S+ generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/TCL_NXTWEAR.md"]}
+      ]
+    },
+    {
+      "id": "realwear",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/REALWEAR.md",
+      "label": "RealWear rugged eyewear",
+      "summary": "RealWear's rugged monocular lineage progresses from the HMT generation to Navigator 500 and then the parallel Navigator 520 and Z1 variants.",
+      "root_id": "realwear-root",
+      "nodes": [
+        {"id":"realwear-root","type":"family","label":"RealWear rugged eyewear","status":"established"},
+        {"id":"realwear-hmt-generation","type":"branch","label":"HMT generation","status":"established"},
+        {"id":"gls-0101","type":"model","label":"RealWear HMT-1","status":"established","canonical_id":"GLS-0101","href":"/models/catalog/gls-0101/"},
+        {"id":"gls-0102","type":"model","label":"RealWear HMT-1Z1","status":"established","canonical_id":"GLS-0102","href":"/models/catalog/gls-0102/"},
+        {"id":"realwear-navigator-generation","type":"branch","label":"Navigator generation","status":"established"},
+        {"id":"gls-0103","type":"model","label":"RealWear Navigator 500","status":"established","canonical_id":"GLS-0103","href":"/models/catalog/gls-0103/"},
+        {"id":"realwear-navigator-2023","type":"branch","label":"Navigator 520 / Z1 generation","status":"established"},
+        {"id":"gls-0104","type":"model","label":"RealWear Navigator 520","status":"established","canonical_id":"GLS-0104","href":"/models/catalog/gls-0104/"},
+        {"id":"gls-0105","type":"model","label":"RealWear Navigator Z1","status":"established","canonical_id":"GLS-0105","href":"/models/catalog/gls-0105/"}
+      ],
+      "edges": [
+        {"parent":"realwear-root","child":"realwear-hmt-generation","relationship":"product_branch","label":"HMT generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/REALWEAR.md"]},
+        {"parent":"realwear-hmt-generation","child":"gls-0101","relationship":"member_of","label":"HMT-1 member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/REALWEAR.md"]},
+        {"parent":"realwear-hmt-generation","child":"gls-0102","relationship":"member_of","label":"intrinsically safe HMT variant","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/REALWEAR.md"]},
+        {"parent":"realwear-hmt-generation","child":"realwear-navigator-generation","relationship":"successor","label":"Navigator successor generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/REALWEAR.md"]},
+        {"parent":"realwear-navigator-generation","child":"gls-0103","relationship":"member_of","label":"Navigator 500 generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/REALWEAR.md"]},
+        {"parent":"gls-0103","child":"realwear-navigator-2023","relationship":"successor","label":"later Navigator generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/REALWEAR.md"]},
+        {"parent":"realwear-navigator-2023","child":"gls-0104","relationship":"member_of","label":"Navigator 520 variant","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/REALWEAR.md"]},
+        {"parent":"realwear-navigator-2023","child":"gls-0105","relationship":"member_of","label":"Navigator Z1 variant","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/REALWEAR.md"]}
+      ]
+    },
+    {
+      "id": "epson-moverio",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/EPSON_MOVERIO.md",
+      "label": "Epson Moverio",
+      "summary": "Moverio evolves from early self-contained Android/controller AR into modern USB-C host-driven and enterprise sensing generations, with parallel models retained where the evidence describes a generation split.",
+      "root_id": "epson-moverio-root",
+      "nodes": [
+        {"id":"epson-moverio-root","type":"family","label":"Epson Moverio","status":"established"},
+        {"id":"gls-0106","type":"model","label":"Moverio BT-100","status":"established","canonical_id":"GLS-0106","href":"/models/catalog/gls-0106/"},
+        {"id":"gls-0107","type":"model","label":"Moverio BT-200","status":"established","canonical_id":"GLS-0107","href":"/models/catalog/gls-0107/"},
+        {"id":"gls-0108","type":"model","label":"Moverio BT-300","status":"established","canonical_id":"GLS-0108","href":"/models/catalog/gls-0108/"},
+        {"id":"epson-30-35-generation","type":"branch","label":"BT-30C / BT-35E generation","status":"established"},
+        {"id":"gls-0109","type":"model","label":"Moverio BT-30C","status":"established","canonical_id":"GLS-0109","href":"/models/catalog/gls-0109/"},
+        {"id":"gls-0110","type":"model","label":"Moverio BT-35E","status":"established","canonical_id":"GLS-0110","href":"/models/catalog/gls-0110/"},
+        {"id":"epson-40-generation","type":"branch","label":"BT-40 / BT-40S generation","status":"established"},
+        {"id":"gls-0111","type":"model","label":"Moverio BT-40 / BT-40S","status":"established","canonical_id":"GLS-0111","href":"/models/catalog/gls-0111/"},
+        {"id":"epson-45-generation","type":"branch","label":"BT-45C / BT-45CS generation","status":"established"},
+        {"id":"gls-0112","type":"model","label":"Moverio BT-45C / BT-45CS","status":"established","canonical_id":"GLS-0112","href":"/models/catalog/gls-0112/"}
+      ],
+      "edges": [
+        {"parent":"epson-moverio-root","child":"gls-0106","relationship":"member_of","label":"BT-100 generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EPSON_MOVERIO.md"]},
+        {"parent":"gls-0106","child":"gls-0107","relationship":"successor","label":"BT-200 generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EPSON_MOVERIO.md"]},
+        {"parent":"gls-0107","child":"gls-0108","relationship":"successor","label":"BT-300 generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EPSON_MOVERIO.md"]},
+        {"parent":"gls-0108","child":"epson-30-35-generation","relationship":"successor","label":"BT-30C / BT-35E generation split","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EPSON_MOVERIO.md"]},
+        {"parent":"epson-30-35-generation","child":"gls-0109","relationship":"member_of","label":"host-driven model","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EPSON_MOVERIO.md"]},
+        {"parent":"epson-30-35-generation","child":"gls-0110","relationship":"member_of","label":"enterprise sensing model","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EPSON_MOVERIO.md"]},
+        {"parent":"epson-30-35-generation","child":"epson-40-generation","relationship":"successor","label":"BT-40 family generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EPSON_MOVERIO.md"]},
+        {"parent":"epson-40-generation","child":"gls-0111","relationship":"member_of","label":"BT-40 / 40S member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EPSON_MOVERIO.md"]},
+        {"parent":"epson-40-generation","child":"epson-45-generation","relationship":"successor","label":"BT-45 family generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EPSON_MOVERIO.md"]},
+        {"parent":"epson-45-generation","child":"gls-0112","relationship":"member_of","label":"BT-45C / 45CS member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/EPSON_MOVERIO.md"]}
+      ]
+    },
+    {
+      "id": "lenovo-thinkreality-a3",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/LENOVO_THINKREALITY_A3.md",
+      "label": "Lenovo ThinkReality A3",
+      "summary": "A3 PC and Industrial editions share the same documented hardware platform but have materially different host/deployment emphasis. They remain separate canonical configurations and separate from A6.",
+      "root_id": "lenovo-a3-root",
+      "nodes": [
+        {"id":"lenovo-a3-root","type":"family","label":"Lenovo ThinkReality A3 shared hardware","status":"established"},
+        {"id":"gls-0114","type":"model","label":"ThinkReality A3 PC Edition","status":"established","canonical_id":"GLS-0114","href":"/models/catalog/gls-0114/"},
+        {"id":"gls-0115","type":"model","label":"ThinkReality A3 Industrial Edition","status":"established","canonical_id":"GLS-0115","href":"/models/catalog/gls-0115/"}
+      ],
+      "edges": [
+        {"parent":"lenovo-a3-root","child":"gls-0114","relationship":"member_of","label":"PC Edition configuration","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/LENOVO_THINKREALITY_A3.md"]},
+        {"parent":"lenovo-a3-root","child":"gls-0115","relationship":"member_of","label":"Industrial Edition configuration","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/LENOVO_THINKREALITY_A3.md"]}
+      ]
+    },
+    {
+      "id": "iristick",
+      "source_class": "populated_research_record",
+      "source_path": "research/populated/IRISTICK.md",
+      "label": "Iristick smart glasses",
+      "summary": "Iristick combines an eyewear-oriented G-series with a rugged H1 industrial/PPE branch, all using owner-host-friendly phone-connected architecture.",
+      "root_id": "iristick-root",
+      "nodes": [
+        {"id":"iristick-root","type":"family","label":"Iristick smart glasses","status":"established"},
+        {"id":"iristick-g-branch","type":"branch","label":"G-series eyewear branch","status":"established"},
+        {"id":"gls-0116","type":"model","label":"Iristick G2","status":"established","canonical_id":"GLS-0116","href":"/models/catalog/gls-0116/"},
+        {"id":"gls-0117","type":"model","label":"Iristick G2 PRO","status":"established","canonical_id":"GLS-0117","href":"/models/catalog/gls-0117/"},
+        {"id":"gls-0119","type":"model","label":"Iristick G3","status":"established","canonical_id":"GLS-0119","href":"/models/catalog/gls-0119/"},
+        {"id":"iristick-h-branch","type":"branch","label":"Rugged H-series branch","status":"established"},
+        {"id":"gls-0118","type":"model","label":"Iristick H1","status":"established","canonical_id":"GLS-0118","href":"/models/catalog/gls-0118/"}
+      ],
+      "edges": [
+        {"parent":"iristick-root","child":"iristick-g-branch","relationship":"product_branch","label":"eyewear-oriented G-series","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/IRISTICK.md"]},
+        {"parent":"iristick-g-branch","child":"gls-0116","relationship":"member_of","label":"G-series member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/IRISTICK.md"]},
+        {"parent":"iristick-g-branch","child":"gls-0117","relationship":"member_of","label":"G-series PRO member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/IRISTICK.md"]},
+        {"parent":"iristick-g-branch","child":"gls-0119","relationship":"member_of","label":"G3 member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/IRISTICK.md"]},
+        {"parent":"iristick-root","child":"iristick-h-branch","relationship":"product_branch","label":"rugged industrial/PPE branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/IRISTICK.md"]},
+        {"parent":"iristick-h-branch","child":"gls-0118","relationship":"member_of","label":"H1 rugged member","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["research/populated/IRISTICK.md"]}
+      ]
+    }
+  ]
+}
