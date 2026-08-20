@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-20T20:51:15.515658+00:00`
+Generated: `2026-08-20T21:48:11.594687+00:00`
 
-- Intake files inspected: **64**
-- Candidates retained in this review window/history: **413**
+- Intake files inspected: **65**
+- Candidates retained in this review window/history: **414**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 111
+- `adjacent_radar`: 112
 - `catalog_review`: 46
 - `editorial_published`: 2
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 51
+- `needs_editorial_verification`: 52
 - `rejected_noise`: 9
 - `source_monitor`: 16
-- `source_review`: 103
+- `source_review`: 102
 - `watching`: 74
 
 ## Action queue
@@ -45,6 +45,7 @@ Generated: `2026-08-20T20:51:15.515658+00:00`
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026: Ranked By The Experts \| VITURE](https://www.viture.com/blog/best-ar-glasses-2026-ranked-by-the-experts) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
@@ -83,7 +84,6 @@ Generated: `2026-08-20T20:51:15.515658+00:00`
 | normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
-| normal | source_review | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | review (403) | research_news_review |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
 | low | source_review |  | [CyanBridge v2.0.0 - Local AI Support](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.0.0) | reachable (200) |  |
 | low | source_review |  | [Release v24.248.0928](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v24.248.0928) | reachable (200) |  |
@@ -252,7 +252,7 @@ Generated: `2026-08-20T20:51:15.515658+00:00`
 | normal | watching | speculative | [Apple iPhone 18 event — all the new products expected to launch in September - tomsguide.com](https://news.google.com/rss/articles/CBMitgFBVV95cUxNWWZiTDR6S1pvWXhwMFFCbmhCTW5abjRmLVRTcWFxUzVrdUJxSWN2Smh0b3BVRU02aDlIaHVTQ3dJNHphcnhXRFY2dVI4SXZ5VlhhWjVEZ3l3bWlKa1pJNWRWSWtxR2gtc3d3aGE1ZldkQjMxdFNFZzFHZXhpWm1tR1RwanJ1TFBpRHhjVlpIYWNydDJSSzZJaVhhMTlRczJPS0kweG9jUEtDNmFWN0x1X3ZhYVpHUQ?oc=5) | reachable (200) | research_news_review, watching, model_catalog_review |
 | low | watching | adjacent | [Apple's Camera AirPods Leak: Stock Up 2% Amid AI Push - whalesbook.com](https://news.google.com/rss/articles/CBMizgFBVV95cUxPYWQ4ZEh6Yl9fTTVaaHlZekRKcDY4WThRaWF3TjNzckRDQjllT09jemtDQ1VGZ0NTRjlZTmpGamgxMDYwWmY5VXdMVlRYUHFtblBkWkpoLU9Sd2dwRTBWNHRndS1ILVRyRklIVUpBZEdiVlhMZEJWeWlHVlp4cTNMdG41Q0s0MnBSX29LVGpPS2FkdndvVWtfYWVDWVFMN2NQYzA5cXdaM1BHckgxZXB4ZThPNnhTZUl6YmpDSWhpOTh3WGQzQXFTN1NiX2g3UQ?oc=5) | not_checked | research_news_review, watching, adjacent_radar |
 | low | watching | speculative | [Apple's Camera-Equipped AI AirPods Remain On Track For 2027 Despite Video Leak - NDTV Profit](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQLWhucXZWTEJqVTgwSHJaQllBaWtnX3dWYmp1eFY1ZTNlVU5LVnpwZ3B1SVV2bnF6X1c5VER4ZFJwQVhqRjNJTkpjTzNNTHlLTk1TaVNuVGlJOXVqWl82UDQxa3B4TFE1ZzdHMjZwYWZnMmVxOU9NVXV4X3BLWkljZnBHcWhGVG5TejJNaG9udUpSa2hIVW1TamFNMXNoMGE2WXFPcDVBYjhBdnViQXlHaGNMeEVCRVJHU19rTUlNdHVfZ9IBygFBVV95cUxOREo5SHU5NkNFc2VzZUdxaTRVa0JnVl9SakNIUVQySzFaZmpVSjdpQXJ2a3VSZVp0N0Q2dU40aFBGX25CazhwZzNvbGV2QkgwZTM2SEpGMGhBZ0pnMkFVSGV4bWxTUl9xemk2dzFFNEJNY21sYlNub3FHNnhlR2stXzZHNVJ3ZnFjRkxieW9sb21qUWhZcm5NS00ybHQzZHF5d3pLTVRpZkxUR1hFUUhrMWVZRk5XX0h6ZnpET1J1TzZtbzhJejhXYUZB?oc=5) | not_checked | research_news_review, watching, report_card_evidence |
-| low | watching | adjacent | [Apple’s Camera-Equipped AI AirPods Remain on Track for 2027 Despite Video Leak - Bloomberg.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSVVraUU4YnVxbnhZVXBveHhSdVp5MHZJVXBub0NDN2dwUFg0eGs0eWR1Ri1wMHRaMzI3UTFiZFJWU3NHb3lOZVNrX2FVaURGTFBrUlA4TmozVlZKbEt5WXFQc19kN0NjZXFYWFdWT1VUQzE4cVluXzJhaGNmM05mUERIckFRc0RhbkxCd3o1dnd3WkItdHhUY3pVeWt2c0R0dE1OYWdCbzJaaU9kRWRrVXl6cDF3YmNTVy04WV9GTnR4NWdtTHozSQ?oc=5) | not_checked | research_news_review, watching, report_card_evidence, adjacent_radar |
+| low | watching | adjacent | [Apple’s Camera-Equipped AI AirPods Remain on Track for 2027 Despite Video Leak - Bloomberg](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSVVraUU4YnVxbnhZVXBveHhSdVp5MHZJVXBub0NDN2dwUFg0eGs0eWR1Ri1wMHRaMzI3UTFiZFJWU3NHb3lOZVNrX2FVaURGTFBrUlA4TmozVlZKbEt5WXFQc19kN0NjZXFYWFdWT1VUQzE4cVluXzJhaGNmM05mUERIckFRc0RhbkxCd3o1dnd3WkItdHhUY3pVeWt2c0R0dE1OYWdCbzJaaU9kRWRrVXl6cDF3YmNTVy04WV9GTnR4NWdtTHozSQ?oc=5) | not_checked | research_news_review, watching, report_card_evidence, adjacent_radar |
 | low | watching | speculative | [Apple’s camera-equipped AI AirPods remain on track for 2027 despite video leak - The Business Times](https://news.google.com/rss/articles/CBMivgFBVV95cUxNb19XbzQ5VXVzNjJSdm9vRHFvaU1UdW1mMURzSFlwMG92WWhzcHJoT0NUTXg4RFJaUm5GZ0I1ZzRtdEZhaFFFQWc5WEMtUFE0cDZUR3AtcUd3RVl6ODVRVDVFdWMzN0d1cG5DcTZPcVlqLVFOTzcxd29lQTBxWXdOZHBiaWdORDNzYUxheG43M09pUVBCbHlrLXAzWXQtZ3l3bGsxX3lPMVVqcGR4alJBYi02alBiMEI5VWd2ekhn?oc=5) | not_checked | research_news_review, watching, report_card_evidence |
 | low | watching | speculative | [Apple’s camera-equipped AI AirPods remain on track for 2027 despite video leak - The Mercury News](https://news.google.com/rss/articles/CBMivgFBVV95cUxNYXRod0ZZNndvT194a25SV0hUbkUteExzRFRTcWRXZVN3Y0NrTmI0eFFvejlJNllvLXF0NXJBSUljRVM3NDFLVVZ4aXBTUjhPclQ5VE5OOGZKZVJiSXZiNGRKdEEwQ21CalZLZmctU0s2dFZ1YnBpZlZ1V3pHTWtiX1BqUXhnd1FISGk0VzN6Wjk3Sl91dFBSVVRGcmJBa3dia2VNaUNUSWEzTWc1RlJ6RmNweTBXbEJLLW9IWHd30gG-AUFVX3lxTE1hdGh3Rlk2d29PX3hrblJXSFRuRS14THNEVFNxZFdlU3djQ2tOYjR4UW96OUk2WW8tcXQ1ckFJSWNFUzc0MUtVVnhpcFNSOE9yVDlUTk44ZkplUmJJdmI0ZEp0QTBDbUJqVktmZy1TSzZ0VnVicGlmVnVXekdNa2JfUGpReGd3UUhIaTRXM3paOTdKX3V0UFJVVEZyYkFrd2JrZU1pQ1RJYTNNZzVGUnpGY3B5MFdsQkstb0hYd3c?oc=5) | not_checked | research_news_review, watching, report_card_evidence |
 | low | watching | speculative | [(VIDEO) Samsung Galaxy S27 Ultra Design Leak Points to Major Horizontal Camera Redesign for 2027 Flagship - ibtimes.com.au](https://news.google.com/rss/articles/CBMihwFBVV95cUxPVWptaFZWbVI3UGQwNGFPZUZVX3RRT2YtY3pkN0ZzaE9mbWVyVGxoYW1kMWpGZ3pJYzhGZlRBRHdPdnh5Y3Znd2FXcUd6VWlWNTZGdjIwaFVUX1A1N3k5aDJNY0tRS2Q2ODNjRzJqYkV5TkdhZ0REblRUX0NBVVVzQlJwUVFNVE0?oc=5) | reachable (200) | research_news_review, watching, report_card_evidence |
