@@ -65,5 +65,6 @@ def main():
     run(ROOT/"scripts/build_verified_change_surfaces.py","--site-root",DEST,"--changes",ROOT/"data/verified-changes.json")
     run(ROOT/"scripts/build_internal_model_links.py","--output-root",DEST)
     run(ROOT/"scripts/build_rss_feed.py","--changes",ROOT/"data/verified-changes.json","--output",DEST/"feed.xml")
+    run(ROOT/"scripts/verify_verified_change_surfaces.py","--site-root",DEST,"--changes",ROOT/"data/verified-changes.json")
     print(f"Staged documentation at {DEST}")
 if __name__=="__main__": main()
