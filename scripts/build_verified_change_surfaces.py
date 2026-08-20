@@ -67,11 +67,7 @@ def change_page(event: dict[str, Any]) -> str:
     lines += ["## Evidence", ""]
     for url in event["evidence_urls"]:
         lines.append(f"- {url}")
-    lines += [
-        "",
-        "This change record does not transfer specifications, scores, firmware behavior, community observations, or verification status to related models through lineage.",
-        "",
-    ]
+    lines.append("")
     return "\n".join(lines)
 
 
@@ -120,12 +116,13 @@ def homepage_latest_section(events: list[dict[str, Any]]) -> str:
 
     feature = latest[0]
     feature_pub = feature["publication"]
-    feature_href = f"/changes/{feature['id'].lower()}/"
+    feature_href = html.escape(feature_pub["canonical_url"], quote=True)
     stack = []
     for event in latest[1:]:
         publication = event["publication"]
+        publication_href = html.escape(publication["canonical_url"], quote=True)
         stack.append(
-            f'''      <a href="/changes/{event['id'].lower()}/" data-home-gre="{event['id']}">
+            f'''      <a href="{publication_href}" data-home-gre="{event['id']}">
         <span class="gr-story-tag">{html.escape(change_label(event['change_type']))} · {html.escape(display_date(publication['published_at']))}</span>
         <strong>{html.escape(publication['title'])}</strong>
         <span>{html.escape(publication['summary'])}</span>
@@ -147,7 +144,7 @@ def homepage_latest_section(events: list[dict[str, Any]]) -> str:
       <span class="gr-story-tag">{html.escape(change_label(feature['change_type']))} · {html.escape(display_date(feature_pub['published_at']))}</span>
       <strong>{html.escape(feature_pub['title'])}</strong>
       <span>{html.escape(feature_pub['summary'])}</span>
-      <em>Read the verified change →</em>
+      <em>Read the research →</em>
     </a>
 
     <div class="gr-story-stack">
@@ -162,7 +159,7 @@ def homepage_follow_panel() -> str:
   <div class="follow-research__heading">
     <p class="follow-research__eyebrow">Follow GlassesResearch</p>
     <h2 id="home-follow-research-title">Follow verified research</h2>
-    <p>Choose tailored email alerts or follow the same verified-change stream in your own RSS reader.</p>
+    <p>Choose tailored email alerts or follow the same verified research in your own RSS reader.</p>
   </div>
   <div class="follow-research__grid">
     <section class="follow-research__option" aria-labelledby="home-follow-email-title">
@@ -172,7 +169,7 @@ def homepage_follow_panel() -> str:
     </section>
     <section class="follow-research__option" aria-labelledby="home-follow-rss-title">
       <h3 id="home-follow-rss-title">RSS — no email required</h3>
-      <p>Receive every verified GRE change. Watching and unverified discovery items are excluded.</p>
+      <p>Receive every verified published update. Watching and unverified discovery items are excluded.</p>
       <div class="follow-research__actions">
         <a class="md-button" href="https://glassesresearch.org/feed.xml">RSS feed</a>
         <a class="md-button" href="https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml" target="_blank" rel="noopener noreferrer">Feedly</a>
@@ -226,7 +223,7 @@ def inject_research_news(site_root: Path, events: list[dict[str, Any]]) -> int:
                 insert_at = len(text) if newline < 0 else newline + 1
         if index < 0 or insert_at < 0:
             raise RuntimeError(f"Cannot inject GRE reference for missing Research & News heading: {heading}")
-        note = f"\n{marker}\n<small>Verified change: [{event['id']}](/changes/{event['id'].lower()}/)</small>\n"
+        note = f"\n{marker}\n"
         text = text[:insert_at] + note + text[insert_at:]
         injected += 1
     path.write_text(text, encoding="utf-8")
