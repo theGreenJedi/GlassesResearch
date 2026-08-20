@@ -45,6 +45,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
@@ -57,6 +59,14 @@ jobs:
           python scripts/verified_publications.py
           python scripts/validate_alert_articles.py
           python scripts/validate_dispatch_timestamps.py
+      - name: Prove migration does not replay unchanged historical alerts
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+          output="$(python scripts/detect_dispatch_delta.py --previous-ref HEAD^)"
+          echo "$output"
+          grep -Fq 'historical delivery payloads unchanged' <<< "$output"
 
   publish:
     if: github.event_name != 'pull_request'
