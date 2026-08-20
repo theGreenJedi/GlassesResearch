@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-07-21 → 2026-08-17**.
+Google Search Console page/query pairs for **2026-07-22 → 2026-08-18**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -8,14 +8,17 @@ Google Search Console page/query pairs for **2026-07-21 → 2026-08-17**.
 
 | Page | Query | Impressions | Clicks | CTR | Position |
 |---|---|---:|---:|---:|---:|
-| https://glassesresearch.org/lineages/HEYCYAN/ | cyanbridge | 14 | 0 | 0.00% | 9.0 |
+| https://glassesresearch.org/lineages/HEYCYAN/ | cyanbridge | 19 | 0 | 0.00% | 9.2 |
 | https://glassesresearch.org/models/VuzixZ100/ | vuzix | 1 | 0 | 0.00% | 2.0 |
 | https://glassesresearch.org/models/RayBanMetaGen2/ | "even reality glasses" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com | 1 | 0 | 0.00% | 5.0 |
 | https://glassesresearch.org/models/XREALOne/ | xreal one firmware | 1 | 0 | 0.00% | 7.0 |
 | https://glassesresearch.org/models/SolosAirGo/ | solos airgo v2 | 1 | 0 | 0.00% | 9.0 |
 | https://glassesresearch.org/models/HuaweiEyewear2/ | eyewear 2 | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/models/BrilliantHalo/ | brilliant labs halo | 3 | 0 | 0.00% | 23.3 |
+| https://glassesresearch.org/models/VuzixZ100/ | vuzix sdk | 2 | 0 | 0.00% | 20.0 |
 | https://glassesresearch.org/models/HuaweiEyewear2/ | eyewear 2 huawei | 2 | 0 | 0.00% | 28.5 |
+| https://glassesresearch.org/models/EvenG2/ | even 2 | 2 | 0 | 0.00% | 29.0 |
+| https://glassesresearch.org/resources/ECOSYSTEM_RESOURCE_CATALOG/ | smart glasses sdk | 2 | 0 | 0.00% | 29.0 |
 | https://glassesresearch.org/models/EvenG2/ | g2 even realities | 1 | 0 | 0.00% | 13.0 |
 | https://glassesresearch.org/lineages/SNAP/ | snap eyewear | 1 | 0 | 0.00% | 16.0 |
 | https://glassesresearch.org/models/RayNeoX3Pro/ | vuzix | 1 | 0 | 0.00% | 16.0 |
@@ -26,10 +29,10 @@ Google Search Console page/query pairs for **2026-07-21 → 2026-08-17**.
 | https://glassesresearch.org/docs/faq/10-ownership-future/ | future of smart glasses ownership | 1 | 0 | 0.00% | 22.0 |
 | https://glassesresearch.org/docs/faq/01-basics/ | virtual glasses | 1 | 0 | 0.00% | 23.0 |
 | https://glassesresearch.org/lineages/META/ | vuzix | 1 | 0 | 0.00% | 23.0 |
-| https://glassesresearch.org/models/VuzixZ100/ | vuzix sdk | 1 | 0 | 0.00% | 25.0 |
 | https://glassesresearch.org/lineages/SNAP/ | snap spectacles logo | 1 | 0 | 0.00% | 27.0 |
 | https://glassesresearch.org/docs/faq/01-basics/ | 6dof ar glasses | 1 | 0 | 0.00% | 28.0 |
 | https://glassesresearch.org/models/EvenG2/ | even realities secretlab | 1 | 0 | 0.00% | 29.0 |
+| https://glassesresearch.org/docs/faq/01-basics/ | ar glasses with screen | 1 | 0 | 0.00% | 30.0 |
 
 ## How to use this report
 
