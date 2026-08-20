@@ -2,7 +2,7 @@
 
 {% block extrahead %}
   {{ super() }}
-  <link rel="alternate" type="application/rss+xml" title="GlassesResearch — Research & News" href="{{ config.site_url.rstrip('/') }}/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="GlassesResearch — Verified Changes" href="{{ config.site_url.rstrip('/') }}/feed.xml">
   {% if page %}
     {% set canonical_url = config.site_url.rstrip('/') ~ '/' ~ page.url %}
     {% set page_description = page.meta.description or config.site_description %}
@@ -25,4 +25,18 @@
 
 {% block toc %}
   {% if page and not page.is_homepage %}{{ super() }}{% endif %}
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+  <div class="gr-follow-footer">
+    <nav class="md-grid gr-follow-footer__inner" aria-label="Follow GlassesResearch">
+      <span class="gr-follow-footer__label">Follow verified research:</span>
+      <a href="{{ config.site_url.rstrip('/') }}/docs/RESEARCH_NEWS/#verified-research-alerts">Email alerts</a>
+      <span aria-hidden="true">·</span>
+      <a href="{{ config.site_url.rstrip('/') }}/feed.xml">RSS</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml" target="_blank" rel="noopener noreferrer">Feedly</a>
+    </nav>
+  </div>
 {% endblock %}

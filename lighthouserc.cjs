@@ -5,6 +5,7 @@ module.exports = {
       numberOfRuns: 3,
       url: [
         'http://localhost/',
+        'http://localhost/docs/RESEARCH_NEWS/',
         'http://localhost/docs/COMPARISON_ENGINE/',
         'http://localhost/docs/INDUSTRY_TIMELINE/',
         'http://localhost/models/catalog/gls-0050/',
