@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "purpose": "Explicit post-population relationship corrections discovered by lineage red-team review. Corrections alter relationship representation only; they never transfer specifications, evidence, or Report Card scores.",
+  "corrections": [
+    {
+      "id": "FTA-0001",
+      "family_id": "inmo",
+      "reason": "The canonical reconciliation establishes INMO GO, GO2, and GO3 as distinct products in the GO line, but does not establish a direct GO -> GO2 -> GO3 successor chain.",
+      "evidence": [
+        "research/populated/INMO.md",
+        "models/THE_LIST_RECONCILIATION_2026-08-17.md"
+      ],
+      "remove_edges": [
+        {"parent": "gls-0059", "child": "gls-0152", "relationship": "successor"},
+        {"parent": "gls-0152", "child": "gls-0153", "relationship": "successor"}
+      ],
+      "add_edges": [
+        {
+          "parent": "inmo-go-branch",
+          "child": "gls-0152",
+          "relationship": "member_of",
+          "label": "distinct GO-family product",
+          "confidence": "high",
+          "status": "established",
+          "inheritance_allowed": false,
+          "evidence": ["models/THE_LIST_RECONCILIATION_2026-08-17.md"]
+        },
+        {
+          "parent": "inmo-go-branch",
+          "child": "gls-0153",
+          "relationship": "member_of",
+          "label": "distinct GO-family product",
+          "confidence": "high",
+          "status": "established",
+          "inheritance_allowed": false,
+          "evidence": ["models/THE_LIST_RECONCILIATION_2026-08-17.md"]
+        }
+      ]
+    }
+  ]
+}
