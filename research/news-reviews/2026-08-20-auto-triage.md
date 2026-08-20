@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-20T10:52:02.571802+00:00`
+Generated: `2026-08-20T11:47:37.841397+00:00`
 
-- Intake files inspected: **56**
-- Candidates retained in this review window/history: **395**
+- Intake files inspected: **57**
+- Candidates retained in this review window/history: **396**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,11 +12,11 @@ Generated: `2026-08-20T10:52:02.571802+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 2
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 46
+- `needs_editorial_verification`: 47
 - `rejected_noise`: 9
 - `source_monitor`: 16
-- `source_review`: 102
-- `watching`: 65
+- `source_review`: 101
+- `watching`: 66
 
 ## Action queue
 
@@ -37,11 +37,11 @@ Generated: `2026-08-20T10:52:02.571802+00:00`
 | normal | needs_editorial_verification | direct | [7 Smart Glasses In 2026 That Reveal The Biggest Wearable Shifts – Here ...](https://glassalmanac.com/7-smart-glasses-in-2026-that-reveal-the-biggest-wearable-shifts-heres-why/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses are Here. So Is the Privacy Problem - sify.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUTZPLUljc3Q4WXJzVzZsVlc5NUEyOEUyc1JNNG5iRUJhdFRuc0hwUlZTQTM0UUZGaTY0RzVacmcwaVBTY2tHejFfdURGenRCNzlieTlkWERtNktJVzZkTExudUt2eTdycVRHV1VxdWtmdV9PSnJVNy0yZHh1ZkxQcUhSSzctRmM?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026: Ranked By The Experts \| VITURE](https://www.viture.com/blog/best-ar-glasses-2026-ranked-by-the-experts) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
@@ -66,6 +66,7 @@ Generated: `2026-08-20T10:52:02.571802+00:00`
 | normal | needs_editorial_verification | direct | [The Best Smart Glasses We've Tested for 2026 \| PCMag](https://www.pcmag.com/picks/the-best-smart-glasses) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [VITURE: Next Gen XR Glasses](https://www.viture.com/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.m.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | high | source_review | direct | [2026 AI glasses buyer's guide: research-based comparison](https://cybernews.com/vr-ar/best-ai-glasses/) | review (403) | research_news_review, report_card_evidence, research_optics, retail_rebrand_review, deep_research |
@@ -75,9 +76,8 @@ Generated: `2026-08-20T10:52:02.571802+00:00`
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
 | normal | source_review | direct | [AI Glasses - Best Buy](https://www.bestbuy.com/site/smart-ai-glasses/ai-glasses/pcmcat1780433669350.c?id=pcmcat1780433669350) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
-| normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
-| normal | source_review | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | review (403) | research_news_review, report_card_evidence, policy_privacy |
+| normal | source_review | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | review (403) | research_news_review |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
 | low | source_review |  | [CyanBridge v2.0.0 - Local AI Support](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.0.0) | reachable (200) |  |
 | low | source_review |  | [Release v24.248.0928](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v24.248.0928) | reachable (200) |  |
@@ -251,6 +251,7 @@ Generated: `2026-08-20T10:52:02.571802+00:00`
 | low | watching | speculative | [AirPods with cameras: Apple leak shows privacy debate isn’t just about glasses - smartcompany.com.au](https://news.google.com/rss/articles/CBMipAFBVV95cUxOMkZuWWN1OUJ0Z1YyUl9XaDhOSnJsV2FBbzlDQUUtN2tuWWpTdkFoTXlIT2trd0EtcC1EVmcyNFloVGFidExGZ2JGNXRiT1pId0l3bTl4b1Z0SUlRbDNoZmhibnpncUw2ekdXc0lkT3I2a3JJTTlYVlRoajFjSHpfMXA3TmNsemF6eWdaTVpZZm1FSk8zRFE1bVo0UWwxckI3eGtjYw?oc=5) | not_checked | research_news_review, watching, policy_privacy |
 | low | watching | adjacent | [Apple camera AirPods leak ahead of iPhone 18 Pro - newskarnataka.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxPYjlDdC0wc29wYTVwYVd5WTM4WklRZ1lVcW5sQmdNN2FnaWFqU2Q3ZkNzTTZiNC1MOHo5WWhKdi1xRFNLUlF6N25UeVVYemVZT19oWFdxNDh6MUZpS1hpOUQxU1lWSVJJYlpSdm5uaUtjVzlrd0VtNjdGRjhRQjJpbExZd2RnVTg2cEJpUk42THlPWm1nSW1WVm9HOA?oc=5) | reachable (200) | research_news_review, watching, adjacent_radar |
 | low | watching | adjacent | [Apple camera AirPods leak ahead of iPhone 18 Pro - newskarnataka.com](https://news.google.com/rss/articles/CBMiSkFVX3lxTFBZTGJZZVVDM0R2ZzJhdkdZQlFLeDZ1MTc1czJ2aGxSZjlkb3dhbENEQ3lRUVNFZWpleEhlREVpX1dBUkxHczNSRVNn?oc=5) | not_checked | research_news_review, watching, adjacent_radar |
+| low | watching | speculative | [Apple Delays Camera AirPods to 2027 Despite Software Leak - Techeconomy](https://news.google.com/rss/articles/CBMiekFVX3lxTE9xQzkyTndRSXg4aGpqTnFRcEJlMkl6NEQwdmtYeVhxYlNTSV9XLXhqVFVIYUowOTB5aXZfVGtmUjd2U0dXZ1g1aV9hYWo1SGRQd0xabFZuTE9hN05xdXJRMmIzTEcxY1NqUU9fWnluM0FyZThhN0JXX25n?oc=5) | not_checked | research_news_review, watching |
 | low | watching | adjacent | [Apple Just Leaked Camera-Equipped AirPods and They Look More Like Wearable AI Than Headphones - ecoustics.com](https://news.google.com/rss/articles/CBMiYkFVX3lxTFBEZkozV1hOTzI5X2NoWFhmVjBaU1VOYlNLdDI4WEZoTi1MNjF0b1VXaHhSS29BZVZMQUY1RVZNTnBOZVdnZ3FKNHBtUVVORU1oSENGbW1QclhoVmZod3hnaTdn?oc=5) | not_checked | research_news_review, watching, adjacent_radar |
 | low | watching | adjacent | [Apple Leak Hints at Major New Product Lineup: Foldable iPhone, Camera AirPods and More - newsalert.com.pk](https://news.google.com/rss/articles/CBMirwFBVV95cUxNQXktb1d5SWlGdWxwZUJWV1pOMXJEeElfZFZZOEM1T1lkcmF1VUJQXzFOaVNobHpjdkxyMnJGN0k3SVpzd2NZVkdoZ1ozTTRYRjVmT2I2NnZ3a3d5djh5MkFoVFlmUzJtWlJQd2JITHJtTnZiZmhGM1BCY3I3NHNfeEdicUhWQUhRNmdER2FlUElXMUpyOXo5V0JSeTBFNzUtd0ZTdTdXWlZoNlNEMm9J?oc=5) | not_checked | research_news_review, watching, adjacent_radar |
 | low | watching | adjacent | [Apple’s Camera-Equipped AirPods Confirmed in macOS Leak - TechRepublic](https://news.google.com/rss/articles/CBMif0FVX3lxTE1nUnRFWUlfOUxjS1F1Ykl1UU9pblZ6LW04bGtTQVgwU25HY2g3Mjh0bXgyV2RZS0Q1YlhtWmdwUElxQ1oyS05mMzdNR2xXYmlMcUpLLTVfaGdCbVphTmtpS25nX2FHd2x0djN5TlpsVGNlUUdRY25IM0xwRlR1X0U?oc=5) | not_checked | research_news_review, watching, adjacent_radar |
@@ -271,7 +272,6 @@ Generated: `2026-08-20T10:52:02.571802+00:00`
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - indianagazette.com](https://news.google.com/rss/articles/CBMi_AFBVV95cUxNWjgtejNPZXZYZmFtUlhlQ2E2RFBOS2N4NmQ3dEFLMVhQSnBwczBlUlFzeHlrQXJEMW5uS1lKd19pQklEYndGU3gzOUk5ZHc3RE9QX0hPQjQtcEZaY3czWXFJTUt2NnNiczh2a3pOdm4tYTE2X3Itb1hGVDNicDFQTWxXVm9xdzNWVk9wWi13c2FBVGs5OFlSZjBOOE1HeVhaUHJUd2V1Vk03cWxOMk1NQVAzcGx4SlFPdnVXOWNGSTNDalFiYUkxWEt0NS0yVHplWTRlYnhFU1Fha0stMncxSFVXdG1tb3drNmRaVXBPYl9OYnc5VVZYbnNXNG0?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - iosconews.com](https://news.google.com/rss/articles/CBMikAFBVV95cUxPUThGRGpRSkNYWTJYX1pOc29VQWpUWFVyZ0lvcDBDdjdWQnVvY1d1Q3oybXJiMGgxZjZZMERoemJmZ0hicDNIczh3RUJ6cGIyWWREY3FfZVViLS0zbHZVRmNaQUMyZGQxTTh3UmZtNEtOaVFSMUl2MjFiM0RqRkI2dXhpdzFaTTBTeUhMeEZWZDc?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - Jambalaya News Louisiana](https://news.google.com/rss/articles/CBMi-wFBVV95cUxPc3ZIUHVTMi02cFFqUUFJb1Z6SktaQzhRMGhIR0Nzakh4Z3NLNkpPSDUxdmFYUTNOcV9PdWloSHJibFNndXBPZzRWNVR3dk14Z3owSUhOeU1kd3B4S2QtN0NUb3BQbzVUbjlRQktVczVIZ2Fjc1RjSlFGUUhqN0NNbHllRFRYT0FPdld1R050ekJURlM1c0FWa2x1dUpkaE1xanNUZFY2UkhucEVJYmFhX0p1bnpxdlBSQXBwMnlsQWpNNmxKQ1dyd3I3TWVEN2RMbm5vbkZMWVN4RDRXV3E5YkE1Z1gza0ZYZjB6MjBpZExRU2lSSXE2WjRUQQ?oc=5) | not_checked | research_news_review, watching |
-| low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - Key Biscayne Portal](https://news.google.com/rss/articles/CBMigAJBVV95cUxQbVRMSW5Mbm1iMUZ2NnpWUWp0ZHFCSXAtdEFiQnBhRTFtYjVPMWdpRmk1MVYyeWgwTHhaaEd3bnl5dUFRaU1tMjk2dXFUNENJTGJJenlha2xpOXVyM3BoSHYwdEh4V2JQNlZXOFNOSVN0NnhiaDhyY2RQNV9JUFgzZkdfRkp5UUFNamotZU9rakx1X2NsSVJlTjBPalgzNWFZS096WWJqS3pMM1VFN3FLOThJRWwwbjBtUHJ0M1JUMTh1dzg4UC1GTkduV1U3UlZhYjR2c0hkR3RnZUlPNTA3RUFacldqV053RU9aajJQMXNub0dIUkJBb3QzWXh5dG1r?oc=5) | not_checked | research_news_review, watching |
 
 ## Meaning of states
 
