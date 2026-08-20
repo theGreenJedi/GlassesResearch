@@ -2,6 +2,8 @@
 
 Verified Research Alerts is the subscription layer for verified, publicly published GlassesResearch work.
 
+The durable authorization object is a **Verified Change** with a stable `GRE-*` identifier. A GRE event records what changed, affected canonical model and relationship IDs when applicable, evidence, verification time, and the corresponding public research. Discovery candidates and **Watching** items cannot enter this ledger. Subscriber-delivery payloads are derived from GRE events while retaining the historical `gr-YYYY-MM-DD-*` publication IDs used for delivery idempotency.
+
 The public preference interface supports:
 
 - Follow filters for models, brands/lineages, and research topics;
@@ -15,4 +17,4 @@ Subscriptions use double opt-in. A new address is not activated until its confir
 
 GlassesResearch retains subscriber email addresses only to operate the requested alert service. Subscriber addresses are not sold or used for advertising.
 
-[Choose your alerts on Research & News](../RESEARCH_NEWS.md#verified-research-alerts).
+[Choose your alerts on Research & News](../RESEARCH_NEWS.md#verified-research-alerts) · [Browse verified changes](../../changes/index.md)

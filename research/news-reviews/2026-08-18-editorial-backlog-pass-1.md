@@ -20,7 +20,7 @@ Canonical destinations:
 - `evidence/EV-0077-MemoMind-One-primary-product.md`
 - `models/THE_LIST_RECONCILIATION_2026-08-18_TRIAGE.md`
 - `docs/RESEARCH_NEWS.md`
-- `data/verified-publications.json`
+- `data/verified-changes.json` — stable verified change `GRE-000005`
 
 Primary evidence:
 
@@ -41,7 +41,7 @@ Existing destinations:
 - `evidence/EV-0033-CyanBridge-v2.1.1.md`
 - `docs/RESEARCH_NEWS.md`
 - `models/W610/`
-- verified publication ID `gr-2026-08-13-cyanbridge-v2-1-1`
+- verified change `GRE-000003` / historical delivery ID `gr-2026-08-13-cyanbridge-v2-1-1`
 
 ## 3. Leopard Bird iO Series — Watching
 
