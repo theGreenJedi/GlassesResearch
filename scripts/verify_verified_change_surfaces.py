@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify staged GRE change surfaces and GRE-driven RSS behavior."""
+"""Verify staged GRE change surfaces, homepage freshness, and GRE-driven RSS behavior."""
 from __future__ import annotations
 
 import argparse
@@ -33,6 +33,31 @@ def main() -> int:
         if not page.is_file() or event_id not in page.read_text(encoding="utf-8"):
             raise SystemExit(f"Verified change resolver missing or malformed: {event_id}")
 
+    homepage = (args.site_root / "index.md").read_text(encoding="utf-8")
+    latest = sorted(events, key=lambda item: item["publication"]["published_at"], reverse=True)[:3]
+    if "data-home-verified-stream" not in homepage:
+        raise SystemExit("Homepage is not generated from the verified-change stream")
+    positions: list[int] = []
+    for event in latest:
+        marker = f'data-home-gre="{event["id"]}"'
+        if homepage.count(marker) != 1:
+            raise SystemExit(f"Homepage latest-verified item missing or duplicated: {event['id']}")
+        positions.append(homepage.index(marker))
+        if event["publication"]["title"] not in homepage:
+            raise SystemExit(f"Homepage is missing current verified title: {event['id']}")
+    if positions != sorted(positions):
+        raise SystemExit("Homepage verified changes are not newest-first")
+    for required in (
+        'class="follow-research gr-home-follow"',
+        '/docs/RESEARCH_NEWS/#verified-research-alerts',
+        'https://glassesresearch.org/feed.xml',
+        'feedly.com/i/discover/sources/search/feed/',
+        'inoreader.com/feed/',
+        'data-copy-feed',
+    ):
+        if required not in homepage:
+            raise SystemExit(f"Homepage follow surface missing: {required}")
+
     news = (args.site_root / "docs" / "RESEARCH_NEWS.md").read_text(encoding="utf-8")
     for event in events:
         marker = f"<!-- verified-change:{event['id']} -->"
@@ -60,7 +85,8 @@ def main() -> int:
         raise SystemExit("Watching item leaked into GRE verified RSS feed")
 
     print(
-        f"GRE surfaces verified: {len(events)} events, {len(affected_models)} affected model histories, "
+        f"GRE surfaces verified: {len(events)} events, homepage newest {','.join(e['id'] for e in latest)}, "
+        f"homepage follow surface present, {len(affected_models)} affected model histories, "
         f"{len(items)} verified RSS items; Watching excluded"
     )
     return 0
