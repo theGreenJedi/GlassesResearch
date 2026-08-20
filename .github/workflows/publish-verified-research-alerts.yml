@@ -12,6 +12,7 @@ on:
       - 'scripts/stage_verified_publications.py'
       - 'scripts/validate_alert_articles.py'
       - 'scripts/validate_dispatch_timestamps.py'
+      - 'scripts/detect_dispatch_delta.py'
       - '.github/workflows/publish-verified-research-alerts.yml'
       - 'cloudflare/verified-research-alerts/**'
       - 'cloudflare/verified-research-canary/**'
@@ -26,6 +27,7 @@ on:
       - 'scripts/stage_verified_publications.py'
       - 'scripts/validate_alert_articles.py'
       - 'scripts/validate_dispatch_timestamps.py'
+      - 'scripts/detect_dispatch_delta.py'
       - '.github/workflows/publish-verified-research-alerts.yml'
       - 'cloudflare/verified-research-alerts/**'
       - 'cloudflare/verified-research-canary/**'
@@ -50,7 +52,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python -m py_compile scripts/verified_changes.py scripts/verified_publications.py scripts/stage_verified_publications.py scripts/validate_alert_articles.py scripts/validate_dispatch_timestamps.py
+          python -m py_compile scripts/verified_changes.py scripts/verified_publications.py scripts/stage_verified_publications.py scripts/validate_alert_articles.py scripts/validate_dispatch_timestamps.py scripts/detect_dispatch_delta.py
           python scripts/verified_changes.py
           python scripts/verified_publications.py
           python scripts/validate_alert_articles.py
@@ -65,10 +67,16 @@ jobs:
       PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+      - name: Detect new or changed dispatch payloads
+        id: dispatch
+        run: python scripts/detect_dispatch_delta.py --previous-ref HEAD^
       - name: Require publisher credential
+        if: steps.dispatch.outputs.needs_dispatch == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -77,21 +85,27 @@ jobs:
             exit 1
           fi
       - name: Stage GRE-derived verified research for real subscribers
+        if: steps.dispatch.outputs.needs_dispatch == 'true'
         run: python scripts/stage_verified_publications.py
       - name: Prove recipient-side delivery with synthetic canary
+        if: steps.dispatch.outputs.needs_dispatch == 'true'
         run: python scripts/verified_publications.py --publish
       - name: Record end-to-end alert contract
         shell: bash
         run: |
           {
-            echo '### Verified Research Alerts end-to-end proof'
+            echo '### Verified Research Alerts event contract'
             echo ''
             echo '- Canonical GRE verified-change ledger validated.'
             echo '- Subscriber publication payloads are derived from GRE events while retaining existing publication IDs for idempotency.'
             echo '- Every dispatch-enabled alert resolves to a dated GlassesResearch article.'
             echo '- Every dispatch-enabled publication carries a precise UTC publication timestamp so digest cutoffs cannot lose same-day work.'
             echo '- Watching and discovery intake are excluded by GRE validation.'
-            echo '- Dispatch-enabled entries were staged at the authenticated Worker before canary proof, so real subscriber delivery is not blocked by canary availability.'
-            echo '- The run passes end to end only after the synthetic canary recipient records each exact publication ID after SMTP delivery.'
+            if [ '${{ steps.dispatch.outputs.needs_dispatch }}' = 'true' ]; then
+              echo '- New or changed dispatch payloads were staged at the authenticated Worker and synthetic-canary delivery proof was required.'
+              echo '- Dispatch IDs: ${{ steps.dispatch.outputs.publication_ids }}'
+            else
+              echo '- No subscriber-delivery payload changed, so historical publications were not replayed and canary delivery was not invoked.'
+            fi
             echo '- Re-running is safe because publication ingestion, subscriber deliveries, and canary receipts remain idempotent by the historical publication ID.'
           } >> "$GITHUB_STEP_SUMMARY"
