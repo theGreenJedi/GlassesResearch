@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-20T13:16:17.233907+00:00`
+Generated: `2026-08-20T14:05:44.237366+00:00`
 
-- Intake files inspected: **58**
-- Candidates retained in this review window/history: **400**
+- Intake files inspected: **59**
+- Candidates retained in this review window/history: **402**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 108
+- `adjacent_radar`: 109
 - `catalog_review`: 46
 - `editorial_published`: 2
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 48
 - `rejected_noise`: 9
 - `source_monitor`: 16
-- `source_review`: 102
+- `source_review`: 103
 - `watching`: 68
 
 ## Action queue
@@ -65,9 +65,9 @@ Generated: `2026-08-20T13:16:17.233907+00:00`
 | normal | needs_editorial_verification | direct | [Smart Glasses with AI and Bluetooth Features](https://www.walmart.com/browse/electronics/smart-glasses/3944_1229723_2776031) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [The 13 Best Augmented Reality Glasses You Can Buy](https://arvrtips.com/best-augmented-reality-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [The Best Smart Glasses We've Tested for 2026 \| PCMag](https://www.pcmag.com/picks/the-best-smart-glasses) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [UK cinemas restricting Meta AI and other smart glasses over piracy concerns - Global Banking & Finance Review](https://news.google.com/rss/articles/CBMingFBVV95cUxQY2p6VlMzcVNMMnJjcnM3cjRCWFlsQmt1RFBzVGh2WTU1RUh2VVRMYU5CWnBGeUJOWnZGRUwzc191THdSaDFEd2pqY2Q4bkpBR3VJMEVyc2pwY2MwOVFLb2x4dUpkMENGSVBQNjZERUFrYXBSV3U1R0NOVjcwT1NZUGk1cTFUOW9TRTZtRHVZa01fN3VLUElrSlE4LU9mZw?oc=5) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [VITURE: Next Gen XR Glasses](https://www.viture.com/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.m.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | high | source_review | direct | [2026 AI glasses buyer's guide: research-based comparison](https://cybernews.com/vr-ar/best-ai-glasses/) | review (403) | research_news_review, report_card_evidence, research_optics, retail_rebrand_review, deep_research |
@@ -80,6 +80,7 @@ Generated: `2026-08-20T13:16:17.233907+00:00`
 | normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
+| normal | source_review | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | review (403) | research_news_review, report_card_evidence, policy_privacy |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
 | low | source_review |  | [CyanBridge v2.0.0 - Local AI Support](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.0.0) | reachable (200) |  |
 | low | source_review |  | [Release v24.248.0928](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v24.248.0928) | reachable (200) |  |
@@ -271,7 +272,6 @@ Generated: `2026-08-20T13:16:17.233907+00:00`
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - HomeTown Register](https://news.google.com/rss/articles/CBMikwJBVV95cUxOMHlJTjR4Nzd1bEY0WmRKajZ1VFlZRHZ1WDgzTl94dlV0T1lBOWotZUxSbk5TOWJzLUdLMTNoTmxwazVYcExJa2oydUpNWE9wSkhXWkU4UFVsMWp0OFk2bFdLa1RFd0t3OGVzNGljVFV0YmxUWHplZEFuY2NsRGlPRGh3MGVTNHNjc0x2ZTdpeUVzUVpnMFY5aGduSUUzZ0ctRHFXb0xfR3JUb3dValRheEFiT2ppdUZDRG1IblZKcnRWRzBUZFJDYnJ2eVlnaEhWRjZfdXpRVVhjMGNwbmRSTnBna0I1b3FyNXRMRmNrTjhEOWVzNWdWSUc2OTdpWE9VejVsV0RabzA5c0pYOEQ3UXZDbw?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - Idaho County Free Press](https://news.google.com/rss/articles/CBMihAJBVV95cUxPN0FSNllZRHVMb1d0SktzS3p6MjJGZXlxTjVSWTNUbThGN0swSDdaLWxkSWw4MTcwckl2SjJ2cXVSSjlHNTdjX1h0RHhacHdYOGx6VWxvN3lPdV9aUEhvbGhLb2p3Z0k0MkpvenhWVlloa2U4bk5fYy1GOWpXWmY2SWRVRndEbUZNTFRQNkdaVTJsNG5LRFJkSjZzdjRhbENLVTVSNkRMZEhicWltYzF2d0RaelExZ3k5aE9wQVVrc1VSMnRXdlJTV2RnLVFJNmtDZjRObUFlbVNvaDJBM3ZIanRqWV9zemNZN2tJWVY5bFRUR1VxY2NBci1FU3Nvd0VnM05sNg?oc=5) | not_checked | research_news_review, watching |
 | low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - indexjournal.com](https://news.google.com/rss/articles/CBMi-gFBVV95cUxORTVyZURTdFBuNmM2WWJBcjh0MmctaURLeUxnaktQcnc3Y2kxTzhoUVNsRXYyMHlYZ2s1c2dlZXhidE1Kb3FybVJtR2YwM2xPX2hXTERVMWdnc1A2SGpLb2lCX294VlFJTFNBUFo4RnZTcHZ1d2pfRU1Kb2VxaHRnQTl3M19lakk3QmNKMWxDQk9wVWlsYzlmc1RIeGh5VlNmQmk4RW84TTVKOFBwQlJBTmpydWNFbmVSal9oU1NualF1dzNGaHZnUHVwVG1vaC1VODNFTlg1TnJaSmtwTXVSc1Q1MWM1TTBidVhmaVAxR2l2cENmbDAtTnpR?oc=5) | not_checked | research_news_review, watching |
-| low | watching | speculative | [Meta files patent for AI glasses that can record memories without command - indianagazette.com](https://news.google.com/rss/articles/CBMi_AFBVV95cUxNWjgtejNPZXZYZmFtUlhlQ2E2RFBOS2N4NmQ3dEFLMVhQSnBwczBlUlFzeHlrQXJEMW5uS1lKd19pQklEYndGU3gzOUk5ZHc3RE9QX0hPQjQtcEZaY3czWXFJTUt2NnNiczh2a3pOdm4tYTE2X3Itb1hGVDNicDFQTWxXVm9xdzNWVk9wWi13c2FBVGs5OFlSZjBOOE1HeVhaUHJUd2V1Vk03cWxOMk1NQVAzcGx4SlFPdnVXOWNGSTNDalFiYUkxWEt0NS0yVHplWTRlYnhFU1Fha0stMncxSFVXdG1tb3drNmRaVXBPYl9OYnc5VVZYbnNXNG0?oc=5) | not_checked | research_news_review, watching |
 
 ## Meaning of states
 
