@@ -27,6 +27,7 @@ def main() -> int:
                 "decided_utc": "2026-08-18T15:30:00Z",
                 "editorial_notes": "verified",
                 "canonical_destinations": ["https://glassesresearch.org/example/"],
+                "verified_change_id": "GRE-000123",
                 "verified_publication_id": "gr-example",
             }
         ]
@@ -39,6 +40,7 @@ def main() -> int:
     assert item["publication_authorized"] is True
     assert item["publication_gate"] == "authorized"
     assert item["triage_state"] == "editorial_published"
+    assert item["verified_change_id"] == "GRE-000123"
     assert item["verified_publication_id"] == "gr-example"
     assert result["editorial_decisions_applied"] == 1
 
