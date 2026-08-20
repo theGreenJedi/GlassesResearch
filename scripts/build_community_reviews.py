@@ -2,7 +2,8 @@
 """Validate accepted community reviews and build public summaries/profiles.
 
 Community scores remain a separate evidence layer. They never overwrite the
-canonical GlassesResearch Report Card.
+canonical GlassesResearch Report Card, and lineage context never propagates a
+review from one canonical model to another.
 """
 from __future__ import annotations
 
@@ -62,6 +63,19 @@ def score_summary(values: list[int]) -> dict:
 
 def reviewer_public_name(reviewer: dict) -> str:
     return str(reviewer.get("public_name") or reviewer["reviewer_id"])
+
+
+def lineage_context(model_id: str, lineage_models: dict[str, dict]) -> dict | None:
+    record = lineage_models.get(model_id)
+    if not record:
+        return None
+    return {
+        "family_id": record.get("family_id"),
+        "family_label": record.get("family_label"),
+        "branch_path": record.get("branch_path", []),
+        "relationship_ids": record.get("relationship_ids", []),
+        "applies_to_exact_model_only": True,
+    }
 
 
 def render_profile(reviewer: dict, reviews: list[dict], devices: dict[str, dict]) -> str:
@@ -133,6 +147,7 @@ def main() -> None:
     parser.add_argument("--reviews", required=True, type=Path)
     parser.add_argument("--reviewers", required=True, type=Path)
     parser.add_argument("--devices", required=True, type=Path)
+    parser.add_argument("--lineage-index", type=Path)
     parser.add_argument("--summary-output", required=True, type=Path)
     parser.add_argument("--profile-root", required=True, type=Path)
     parser.add_argument("--index-output", required=True, type=Path)
@@ -141,14 +156,21 @@ def main() -> None:
     review_doc = load(args.reviews)
     reviewer_doc = load(args.reviewers)
     device_doc = load(args.devices)
+    lineage_doc = load(args.lineage_index) if args.lineage_index else {"models": {}}
+    lineage_models = lineage_doc.get("models", {})
 
     require(review_doc.get("schema_version") == 1, "community reviews: unsupported schema_version")
     require(reviewer_doc.get("schema_version") == 1, "community reviewers: unsupported schema_version")
     require(tuple(review_doc.get("report_card_dimensions", [])) == DIMENSIONS, "community reviews: report-card dimensions drifted from canonical six")
+    if args.lineage_index:
+        require(lineage_doc.get("schema_version") == 1, "community reviews: unsupported lineage index schema_version")
+        require(isinstance(lineage_models, dict), "community reviews: lineage index models must be an object")
+        require(all(MODEL_ID.fullmatch(str(model_id)) for model_id in lineage_models), "community reviews: lineage index contains invalid model IDs")
 
     device_list = device_doc.get("records", [])
     devices = {str(item.get("id")): item for item in device_list}
     require(len(devices) == len(device_list), "community reviews: duplicate canonical model ID in device dataset")
+    require(set(lineage_models).issubset(devices), "community reviews: lineage index references unknown canonical models")
 
     reviewers = reviewer_doc.get("reviewers", [])
     reviewer_by_id: dict[str, dict] = {}
@@ -209,11 +231,13 @@ def main() -> None:
                 value = review["ratings"].get(dimension)
                 if isinstance(value, int) and not isinstance(value, bool):
                     rating_values[dimension].append(value)
+        exact_lineage = lineage_context(model_id, lineage_models)
         model_summary[model_id] = {
             "accepted_review_count": len(items),
             "persistent_reviewer_count": sum(review.get("reviewer_id") is not None for review in items),
             "anonymous_review_count": sum(review.get("reviewer_id") is None for review in items),
             "ownership_evidence_count": sum(review.get("ownership_evidence") in {"supplied_private", "supplied_public"} for review in items),
+            "lineage_context": exact_lineage,
             "ratings": {dimension: score_summary(values) for dimension, values in rating_values.items()},
             "reviews": [
                 {
@@ -234,6 +258,7 @@ def main() -> None:
                     "ownership_evidence": review.get("ownership_evidence"),
                     "ratings": review.get("ratings"),
                     "source_issue": review.get("source_issue"),
+                    "lineage_context": exact_lineage,
                 }
                 for review in sorted(items, key=lambda item: (item.get("accepted_at") or "", item["review_id"]), reverse=True)
             ],
@@ -242,6 +267,7 @@ def main() -> None:
     summary = {
         "schema_version": 1,
         "evidence_class": "independent_hands_on",
+        "lineage_semantics": "Lineage is context only. Every community review applies only to its exact canonical model_id and is never inherited by predecessors, successors, siblings, aliases, rebrands, or other family members.",
         "accepted_review_count": len(accepted),
         "persistent_reviewer_count": len([reviewer_id for reviewer_id, items in reviewer_reviews.items() if items]),
         "model_count": len(model_summary),
@@ -262,7 +288,10 @@ def main() -> None:
 
     args.index_output.parent.mkdir(parents=True, exist_ok=True)
     args.index_output.write_text(render_index(reviewers, reviewer_reviews), encoding="utf-8")
-    print(f"Community review evidence verified: {len(accepted)} accepted reviews, {len(model_summary)} models")
+    print(
+        f"Community review evidence verified: {len(accepted)} accepted reviews, {len(model_summary)} models; "
+        f"lineage_context_models={sum(model_id in lineage_models for model_id in model_summary)}"
+    )
 
 
 if __name__ == "__main__":

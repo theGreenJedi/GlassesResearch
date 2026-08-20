@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const safeTypes = new Set(['rebrand', 'retail-brand', 'market-name']);
   let aliases = [];
   let aliasByCanonicalId = new Map();
+  let lineageTermMap = new Map();
+  let lineageSuggestions = [];
 
   const withinOneEdit = (left, right) => {
     if (left === right) return true;
@@ -50,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return { entry: candidates[0], fuzzy: true };
   };
 
+  const resolveLineageTerm = (value) => lineageTermMap.get(normalize(value)) || null;
   const aliasesFor = (canonicalId) => aliasByCanonicalId.get(String(canonicalId || '').toUpperCase()) || [];
   const aliasText = (entries) => entries.map((entry) => entry.alias).join(' · ');
 
@@ -74,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const finderLabel = document.querySelector('.discovery-search');
     if (finderLabel && !finderLabel.dataset.aliasAware) {
       const firstText = [...finderLabel.childNodes].find((node) => node.nodeType === Node.TEXT_NODE);
-      if (firstText) firstText.textContent = 'Search by model, brand, or alias ';
+      if (firstText) firstText.textContent = 'Search by model, brand, alias, or family ';
       finderLabel.dataset.aliasAware = 'true';
     }
 
@@ -122,38 +125,76 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new MutationObserver(scheduleFinderDecoration);
   observer.observe(document.body, { childList: true, subtree: true });
 
-  fetch('/data/lineage-aliases.json', { cache: 'no-store' })
-    .then((response) => response.ok ? response.json() : Promise.reject(new Error(`Alias index HTTP ${response.status}`)))
-    .then((payload) => {
-      aliases = (payload.aliases || []).filter((entry) => entry.alias && entry.canonical_id && safeTypes.has(entry.alias_type));
-      aliasByCanonicalId = new Map();
-      aliases.forEach((entry) => {
-        const canonicalId = String(entry.canonical_id).toUpperCase();
-        if (!aliasByCanonicalId.has(canonicalId)) aliasByCanonicalId.set(canonicalId, []);
-        aliasByCanonicalId.get(canonicalId).push(entry);
+  Promise.all([
+    fetch('/data/lineage-aliases.json', { cache: 'no-store' }).then((response) =>
+      response.ok ? response.json() : Promise.reject(new Error(`Alias index HTTP ${response.status}`))),
+    fetch('/data/lineage-index.json', { cache: 'no-store' }).then((response) =>
+      response.ok ? response.json() : Promise.reject(new Error(`Lineage index HTTP ${response.status}`))),
+  ]).then(([aliasPayload, lineagePayload]) => {
+    aliases = (aliasPayload.aliases || []).filter((entry) => entry.alias && entry.canonical_id && safeTypes.has(entry.alias_type));
+    aliasByCanonicalId = new Map();
+    aliases.forEach((entry) => {
+      const canonicalId = String(entry.canonical_id).toUpperCase();
+      if (!aliasByCanonicalId.has(canonicalId)) aliasByCanonicalId.set(canonicalId, []);
+      aliasByCanonicalId.get(canonicalId).push(entry);
+    });
+
+    lineageTermMap = new Map();
+    const suggestionSet = new Set();
+    Object.entries(lineagePayload.models || {}).forEach(([canonicalId, context]) => {
+      const terms = new Set([
+        context.family_label,
+        context.model_label,
+        ...(context.branch_path || []).map((item) => item.label),
+        ...(context.aliases || []).map((item) => item.label),
+        ...(context.search_terms || []),
+      ].filter(Boolean));
+      terms.forEach((term) => {
+        const key = normalize(term);
+        if (!key) return;
+        if (!lineageTermMap.has(key)) lineageTermMap.set(key, new Set());
+        lineageTermMap.get(key).add(canonicalId);
       });
+      if (context.family_label) suggestionSet.add(context.family_label);
+      (context.branch_path || []).forEach((item) => { if (item.label) suggestionSet.add(item.label); });
+      (context.aliases || []).forEach((item) => { if (item.label) suggestionSet.add(item.label); });
+    });
+    lineageSuggestions = [...suggestionSet].sort((a, b) => a.localeCompare(b));
 
-      if (input) {
-        const list = document.createElement('datalist');
-        list.id = 'glassesresearch-market-identities';
-        list.innerHTML = aliases.map((entry) => `<option value="${entry.alias.replaceAll('"', '&quot;')}">${entry.canonical_name || entry.canonical_id}</option>`).join('');
-        document.body.appendChild(list);
-        input.setAttribute('list', list.id);
-      }
+    if (input) {
+      const list = document.createElement('datalist');
+      list.id = 'glassesresearch-market-identities';
+      const aliasOptions = aliases.map((entry) => `<option value="${entry.alias.replaceAll('"', '&quot;')}">${entry.canonical_name || entry.canonical_id}</option>`);
+      const lineageOptions = lineageSuggestions.map((term) => `<option value="${String(term).replaceAll('"', '&quot;')}">lineage</option>`);
+      list.innerHTML = [...aliasOptions, ...lineageOptions].join('');
+      document.body.appendChild(list);
+      input.setAttribute('list', list.id);
+    }
 
-      decorateCanonicalPage();
-      decorateFinderCards();
-    })
-    .catch((error) => console.warn('Market identity search unavailable:', error));
+    decorateCanonicalPage();
+    decorateFinderCards();
+  }).catch((error) => console.warn('Identity / lineage search unavailable:', error));
 
   if (input) {
     input.addEventListener('keydown', (event) => {
       if (event.key !== 'Enter') return;
       const match = resolveAlias(input.value);
-      if (!match) return;
+      if (match) {
+        event.preventDefault();
+        event.stopPropagation();
+        location.assign(`/models/catalog/${match.entry.canonical_id.toLowerCase()}/`);
+        return;
+      }
+      const lineageIds = resolveLineageTerm(input.value);
+      if (!lineageIds?.size) return;
       event.preventDefault();
       event.stopPropagation();
-      location.assign(`/models/catalog/${match.entry.canonical_id.toLowerCase()}/`);
+      if (lineageIds.size === 1) {
+        const canonicalId = [...lineageIds][0];
+        location.assign(`/models/catalog/${canonicalId.toLowerCase()}/`);
+      } else {
+        location.assign(`/docs/COMPARISON_ENGINE/?q=${encodeURIComponent(input.value)}`);
+      }
     }, true);
   }
 });

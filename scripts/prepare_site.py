@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / ".site-src"
 COPY_DIRS = ("artifacts","buyers","comparisons","data","docs","evidence","glossary","guides","hacking","images","lineages","models","resources","timeline")
 COPY_FILES = ("FOUNDING_CHARTER.md","WHY.md","CITATION.cff")
-PUBLIC_SITE_EXCLUDES = ("comparisons/README.md","data/family-trees-bounded.json","data/family-trees-researched.json","docs/AI610-Notes.md","docs/CONTENT_GAPS_WAVE_TWO.md","docs/HOMEPAGE_DESIGN_NOTES.md","docs/KISS_WORKING_NOTES.md","docs/LEGACY_STRUCTURE_AUDIT.md","docs/RESEARCH_AGENDA.md","docs/ROADMAP_V1.md","docs/SEO_DISCOVERABILITY.md","docs/WEBSITE.md","docs/START_HERE.md","docs/news/WORKFLOW.md","docs/report-cards/PROFILE_AUDIT_03_06.md","docs/report-cards/SOURCES_01.md","resources/CHANGE_SCOPE.md","resources/PR_NOTES.md","resources/VALIDATION.md","timeline/README.md")
+PUBLIC_SITE_EXCLUDES = ("comparisons/README.md","data/family-trees-bounded.json","data/family-trees-researched.json","data/family-tree-audit-overrides.json","docs/AI610-Notes.md","docs/CONTENT_GAPS_WAVE_TWO.md","docs/HOMEPAGE_DESIGN_NOTES.md","docs/KISS_WORKING_NOTES.md","docs/LEGACY_STRUCTURE_AUDIT.md","docs/RESEARCH_AGENDA.md","docs/ROADMAP_V1.md","docs/SEO_DISCOVERABILITY.md","docs/WEBSITE.md","docs/START_HERE.md","docs/news/WORKFLOW.md","docs/report-cards/PROFILE_AUDIT_03_06.md","docs/report-cards/SOURCES_01.md","resources/CHANGE_SCOPE.md","resources/PR_NOTES.md","resources/VALIDATION.md","timeline/README.md")
 PUBLIC_NARRATION_REPLACEMENTS = (
 ("A model entry is not complete merely because it appears in a catalog. Each GlassesResearch profile should explain, in ordinary language, **what the glasses really are, what is interesting about them, where they are strong, and what tradeoffs matter**. The structured Report Card remains useful underneath; this page is the human-readable layer.\n\nProfiles are published only when the available evidence supports something more useful than generic product description. Missing profiles are research work to be done, not invitations to manufacture filler.\n\n",""),
 ("Only confirmed facts are presented as positive. An unresolved field is not treated as a negative.\n\n",""),
@@ -49,14 +49,16 @@ def main():
     run(ROOT/"scripts/build_site_status.py","--devices",database,"--report-cards",cards,"--output",DEST/"data/site-status.json")
     run(ROOT/"scripts/build_purchase_fallbacks.py","--models",ROOT/"models/THE_LIST.md","--curated",ROOT/"data/purchase-sources.json","--output",DEST/"data/purchase-fallbacks.json")
     run(ROOT/"scripts/build_model_pages.py","--data-dir",DEST/"data","--output-root",DEST)
-    run(ROOT/"scripts/build_community_reviews.py","--reviews",ROOT/"data/community-reviews.json","--reviewers",ROOT/"data/community-reviewers.json","--devices",database,"--summary-output",DEST/"data/community-review-summary.json","--profile-root",DEST/"contributors","--index-output",DEST/"docs/COMMUNITY_REVIEWERS.md")
     run(ROOT/"scripts/build_gls_resolver.py","--devices",database,"--output-root",DEST)
     run(ROOT/"scripts/build_citation_distribution.py","--devices",database,"--scores",cards,"--output-root",DEST)
     catalog_index=DEST/"models"/"catalog"/"index.md"
     if catalog_index.exists():
         catalog_index.write_text(catalog_index.read_text(encoding="utf-8")+"\n[Resolve any GLS identifier](/gls/) · [Machine-readable GLS index](/data/gls-index.json)\n",encoding="utf-8")
     run(ROOT/"scripts/build_report_card_hub.py","--devices",database,"--scores",cards,"--aliases",ROOT/"data/lineage-aliases.json","--output",DEST/"docs/REPORT_CARD.md")
-    run(ROOT/"scripts/build_family_tree_surfaces.py","--site-root",DEST,"--families",ROOT/"data/family-trees.json","--additional-families",ROOT/"data/family-trees-bounded.json","--additional-families",ROOT/"data/family-trees-researched.json")
+    lineage_index=DEST/"data"/"lineage-index.json"
+    run(ROOT/"scripts/build_family_tree_surfaces.py","--site-root",DEST,"--families",ROOT/"data/family-trees.json","--additional-families",ROOT/"data/family-trees-bounded.json","--additional-families",ROOT/"data/family-trees-researched.json","--corrections",ROOT/"data/family-tree-audit-overrides.json","--index-output",lineage_index)
+    run(ROOT/"scripts/apply_lineage_search.py","--lineage-index",lineage_index,"--devices",database,"--finder-js",DEST/"docs/javascripts/glasses-finder-v3.js")
+    run(ROOT/"scripts/build_community_reviews.py","--reviews",ROOT/"data/community-reviews.json","--reviewers",ROOT/"data/community-reviewers.json","--devices",database,"--lineage-index",lineage_index,"--summary-output",DEST/"data/community-review-summary.json","--profile-root",DEST/"contributors","--index-output",DEST/"docs/COMMUNITY_REVIEWERS.md")
     strip_public_infrastructure_narration()
     run(ROOT/"scripts/build_internal_model_links.py","--output-root",DEST)
     run(ROOT/"scripts/build_rss_feed.py","--source",ROOT/"docs/RESEARCH_NEWS.md","--output",DEST/"feed.xml")
