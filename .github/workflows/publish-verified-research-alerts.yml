@@ -4,9 +4,10 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - 'data/verified-publications.json'
+      - 'data/verified-changes.json'
       - 'docs/RESEARCH_NEWS.md'
       - 'docs/news/articles/**'
+      - 'scripts/verified_changes.py'
       - 'scripts/verified_publications.py'
       - 'scripts/stage_verified_publications.py'
       - 'scripts/validate_alert_articles.py'
@@ -17,9 +18,10 @@ on:
   push:
     branches: [main]
     paths:
-      - 'data/verified-publications.json'
+      - 'data/verified-changes.json'
       - 'docs/RESEARCH_NEWS.md'
       - 'docs/news/articles/**'
+      - 'scripts/verified_changes.py'
       - 'scripts/verified_publications.py'
       - 'scripts/stage_verified_publications.py'
       - 'scripts/validate_alert_articles.py'
@@ -44,11 +46,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Validate verified publication ledger and publisher syntax
+      - name: Validate GRE ledger and publisher syntax
         shell: bash
         run: |
           set -euo pipefail
-          python -m py_compile scripts/verified_publications.py scripts/stage_verified_publications.py scripts/validate_alert_articles.py scripts/validate_dispatch_timestamps.py
+          python -m py_compile scripts/verified_changes.py scripts/verified_publications.py scripts/stage_verified_publications.py scripts/validate_alert_articles.py scripts/validate_dispatch_timestamps.py
+          python scripts/verified_changes.py
           python scripts/verified_publications.py
           python scripts/validate_alert_articles.py
           python scripts/validate_dispatch_timestamps.py
@@ -73,7 +76,7 @@ jobs:
             echo 'Missing required GitHub Actions secret: PUBLISH_TOKEN' >&2
             exit 1
           fi
-      - name: Stage verified research for real subscribers
+      - name: Stage GRE-derived verified research for real subscribers
         run: python scripts/stage_verified_publications.py
       - name: Prove recipient-side delivery with synthetic canary
         run: python scripts/verified_publications.py --publish
@@ -83,11 +86,12 @@ jobs:
           {
             echo '### Verified Research Alerts end-to-end proof'
             echo ''
-            echo '- Public research ledger validated.'
+            echo '- Canonical GRE verified-change ledger validated.'
+            echo '- Subscriber publication payloads are derived from GRE events while retaining existing publication IDs for idempotency.'
             echo '- Every dispatch-enabled alert resolves to a dated GlassesResearch article.'
             echo '- Every dispatch-enabled publication carries a precise UTC publication timestamp so digest cutoffs cannot lose same-day work.'
-            echo '- Watching and discovery intake are excluded by validation.'
+            echo '- Watching and discovery intake are excluded by GRE validation.'
             echo '- Dispatch-enabled entries were staged at the authenticated Worker before canary proof, so real subscriber delivery is not blocked by canary availability.'
             echo '- The run passes end to end only after the synthetic canary recipient records each exact publication ID after SMTP delivery.'
-            echo '- Re-running is safe because publication ingestion, subscriber deliveries, and canary receipts are idempotent by publication ID.'
+            echo '- Re-running is safe because publication ingestion, subscriber deliveries, and canary receipts remain idempotent by the historical publication ID.'
           } >> "$GITHUB_STEP_SUMMARY"
