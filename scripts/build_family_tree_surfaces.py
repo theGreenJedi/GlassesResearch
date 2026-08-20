@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate family-tree data and inject optional triggers into staged public pages."""
+"""Validate family-tree data, merge source tiers, and inject optional public triggers."""
 from __future__ import annotations
 
 import argparse
@@ -11,6 +11,11 @@ ICON = '''<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d=
 ALLOWED_NODE_TYPES = {"family", "branch", "origin", "model", "alias"}
 ALLOWED_STATUS = {"established", "inferred", "unresolved"}
 ALLOWED_CONFIDENCE = {"high", "medium", "low"}
+REQUIRED_RULES = {
+    "score_inheritance": False,
+    "relationship_inheritance": False,
+    "unknown_relationships_remain_unknown": True,
+}
 
 
 def button(model_id: str) -> str:
@@ -18,6 +23,19 @@ def button(model_id: str) -> str:
         f'<button class="family-tree-trigger" type="button" data-family-tree-model="{model_id}" '
         f'aria-label="View family tree for {model_id}" title="View family tree">{ICON}</button>'
     )
+
+
+def load_source(path: Path) -> dict:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("schema_version") != 1:
+        raise RuntimeError(f"family tree schema_version must be 1: {path}")
+    rules = payload.get("rules", {})
+    for key, expected in REQUIRED_RULES.items():
+        if rules.get(key) is not expected:
+            raise RuntimeError(f"family tree source {path} violates required rule {key}={expected}")
+    if not isinstance(payload.get("families"), list):
+        raise RuntimeError(f"family tree source {path} must contain a families list")
+    return payload
 
 
 def validate_family(family: dict, known: set[str], repo_root: Path, model_to_family: dict[str, str]) -> None:
@@ -48,7 +66,10 @@ def validate_family(family: dict, known: set[str], repo_root: Path, model_to_fam
         if model_id not in known:
             raise RuntimeError(f"family tree references non-canonical model {model_id}")
         if model_id in model_to_family:
-            raise RuntimeError(f"model {model_id} appears in multiple family trees")
+            raise RuntimeError(
+                f"model {model_id} appears in multiple family trees: "
+                f"{model_to_family[model_id]} and {family_id}"
+            )
         model_to_family[model_id] = family_id
     if not canonical_count:
         raise RuntimeError(f"family {family_id} has no canonical models")
@@ -88,6 +109,7 @@ def validate_family(family: dict, known: set[str], repo_root: Path, model_to_fam
 
     visiting: set[str] = set()
     visited: set[str] = set()
+
     def walk(node_id: str) -> None:
         if node_id in visiting:
             raise RuntimeError(f"family {family_id} contains a cycle at {node_id}")
@@ -98,6 +120,7 @@ def validate_family(family: dict, known: set[str], repo_root: Path, model_to_fam
             walk(child_id)
         visiting.remove(node_id)
         visited.add(node_id)
+
     walk(root_id)
     if visited != set(node_map):
         raise RuntimeError(f"family {family_id} has unreachable nodes: {sorted(set(node_map) - visited)}")
@@ -107,23 +130,30 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site-root", type=Path, required=True)
     parser.add_argument("--families", type=Path, required=True)
+    parser.add_argument("--additional-families", type=Path, action="append", default=[])
     args = parser.parse_args()
 
-    payload = json.loads(args.families.read_text(encoding="utf-8"))
-    if payload.get("schema_version") != 1:
-        raise RuntimeError("family tree schema_version must be 1")
-    rules = payload.get("rules", {})
-    if rules.get("score_inheritance") is not False or rules.get("relationship_inheritance") is not False:
-        raise RuntimeError("family tree data must explicitly forbid score and relationship inheritance")
-    if rules.get("unknown_relationships_remain_unknown") is not True:
-        raise RuntimeError("family tree data must preserve unknown relationships as unknown")
+    source_paths = [args.families, *args.additional_families]
+    payloads = [load_source(path) for path in source_paths]
+    merged_payload = {
+        "schema_version": 1,
+        "rules": dict(REQUIRED_RULES),
+        "source_sets": [
+            {
+                "source_class": payload.get("source_class", "maintained_lineages"),
+                "family_count": len(payload.get("families", [])),
+            }
+            for payload in payloads
+        ],
+        "families": [family for payload in payloads for family in payload.get("families", [])],
+    }
 
     devices = json.loads((args.site_root / "data/devices.json").read_text(encoding="utf-8"))
     known = {item["id"] for item in devices.get("records", [])}
     repo_root = args.families.resolve().parents[1]
     model_to_family: dict[str, str] = {}
     family_ids: set[str] = set()
-    for family in payload.get("families", []):
+    for family in merged_payload["families"]:
         family_id = str(family.get("id") or "")
         if family_id in family_ids:
             raise RuntimeError(f"duplicate family id {family_id}")
@@ -131,6 +161,9 @@ def main() -> int:
         validate_family(family, known, repo_root, model_to_family)
     if not model_to_family:
         raise RuntimeError("family tree data contains no canonical models")
+
+    public_payload = args.site_root / "data/family-trees.json"
+    public_payload.write_text(json.dumps(merged_payload, indent=2) + "\n", encoding="utf-8")
 
     injected_models = 0
     for model_id in sorted(model_to_family):
@@ -169,7 +202,10 @@ def main() -> int:
             f"family-tree trigger coverage mismatch: expected {expected}, "
             f"model_pages={injected_models}, report_rows={injected_rows}"
         )
-    print(f"Family-tree surfaces validated: {len(family_ids)} families, {expected} canonical models")
+    print(
+        f"Family-tree surfaces validated: {len(family_ids)} families, {expected} canonical models "
+        f"from {len(source_paths)} source sets"
+    )
     return 0
 
 

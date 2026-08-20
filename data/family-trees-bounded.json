@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "source_class": "bounded_evidence_packets",
+  "rules": {
+    "score_inheritance": false,
+    "relationship_inheritance": false,
+    "unknown_relationships_remain_unknown": true
+  },
+  "families": [
+    {
+      "id": "odg-r-series",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_ODG_R_SERIES.md",
+      "label": "ODG R-Series",
+      "summary": "The admitted ODG lineage currently contains R-7. R-8 and R-9 remain documented but unadmitted until stronger acquisition evidence is recovered.",
+      "root_id": "odg-r-root",
+      "nodes": [
+        {"id":"odg-r-root","type":"family","label":"Osterhout Design Group R-Series","status":"established"},
+        {"id":"gls-0122","type":"model","label":"ODG R-7","canonical_id":"GLS-0122","href":"/models/catalog/gls-0122/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"odg-r-root","child":"gls-0122","relationship":"member_of","label":"admitted commercial generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_ODG_R_SERIES.md","models/PROFILES_LINEAGE_RECONCILED.md"]}
+      ]
+    },
+    {
+      "id": "recon-jet",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_RECON_JET.md",
+      "label": "Recon Jet",
+      "summary": "A documented commercial generation chain from Recon Jet through Jet Pro and Jet Pro+, with generation-specific evidence gaps preserved rather than inherited.",
+      "root_id": "recon-jet-root",
+      "nodes": [
+        {"id":"recon-jet-root","type":"family","label":"Recon / Intel Jet eyewear","status":"established"},
+        {"id":"gls-0123","type":"model","label":"Recon Jet","canonical_id":"GLS-0123","href":"/models/catalog/gls-0123/","status":"established"},
+        {"id":"gls-0124","type":"model","label":"Recon / Intel Jet Pro","canonical_id":"GLS-0124","href":"/models/catalog/gls-0124/","status":"established"},
+        {"id":"gls-0125","type":"model","label":"Recon / Intel Jet Pro+","canonical_id":"GLS-0125","href":"/models/catalog/gls-0125/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"recon-jet-root","child":"gls-0123","relationship":"member_of","label":"original commercial generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_RECON_JET.md"]},
+        {"parent":"gls-0123","child":"gls-0124","relationship":"successor","label":"professional successor","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_RECON_JET.md","models/PROFILES_LINEAGE_RECONCILED.md"]},
+        {"parent":"gls-0124","child":"gls-0125","relationship":"successor","label":"later commercial generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_RECON_JET.md"]}
+      ]
+    },
+    {
+      "id": "optinvent-ora",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_OPTINVENT_ORA.md",
+      "label": "Optinvent ORA",
+      "summary": "The smart-glasses lineage is ORA-1 to ORA-2. ORA-X is an adjacent headphone-form display, ORA-EYE is software, and ORA-H is a helmet prototype rather than canonical glasses generations.",
+      "root_id": "optinvent-ora-root",
+      "nodes": [
+        {"id":"optinvent-ora-root","type":"family","label":"Optinvent ORA smart glasses","status":"established"},
+        {"id":"gls-0126","type":"model","label":"Optinvent ORA-1","canonical_id":"GLS-0126","href":"/models/catalog/gls-0126/","status":"established"},
+        {"id":"gls-0127","type":"model","label":"Optinvent ORA-2","canonical_id":"GLS-0127","href":"/models/catalog/gls-0127/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"optinvent-ora-root","child":"gls-0126","relationship":"member_of","label":"first delivered generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_OPTINVENT_ORA.md"]},
+        {"parent":"gls-0126","child":"gls-0127","relationship":"successor","label":"commercial successor","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_OPTINVENT_ORA.md"]}
+      ]
+    },
+    {
+      "id": "toshiba-dynaedge-ar100",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_TOSHIBA_DYNAEDGE_AR100.md",
+      "label": "Toshiba / Dynabook dynaEdge AR100",
+      "summary": "One documented glasses generation: the AR100 head-mounted display paired with the DE-100 Windows compute unit. Mounts, processor/storage configurations and Vision DE Suite revisions are not separate glasses generations.",
+      "root_id": "dynaedge-root",
+      "nodes": [
+        {"id":"dynaedge-root","type":"family","label":"Toshiba / Dynabook dynaEdge AR","status":"established"},
+        {"id":"gls-0128","type":"model","label":"dynaEdge AR100 + DE-100","canonical_id":"GLS-0128","href":"/models/catalog/gls-0128/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"dynaedge-root","child":"gls-0128","relationship":"member_of","label":"AR100 HMD + DE-100 system","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_TOSHIBA_DYNAEDGE_AR100.md"]}
+      ]
+    },
+    {
+      "id": "daqri-professional-ar",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_DAQRI_PROFESSIONAL_AR.md",
+      "label": "DAQRI Professional AR",
+      "summary": "DAQRI Smart Glasses are the canonical eyewear member. Smart Helmet is adjacent industrial head-worn AR and Smart HUD is a non-wearable display platform, so neither inflates the smart-glasses tree.",
+      "root_id": "daqri-root",
+      "nodes": [
+        {"id":"daqri-root","type":"family","label":"DAQRI professional AR ecosystem","status":"established"},
+        {"id":"gls-0129","type":"model","label":"DAQRI Smart Glasses","canonical_id":"GLS-0129","href":"/models/catalog/gls-0129/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"daqri-root","child":"gls-0129","relationship":"member_of","label":"smart-glasses form-factor branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_DAQRI_PROFESSIONAL_AR.md"]}
+      ]
+    },
+    {
+      "id": "lenovo-thinkreality-a6",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_LENOVO_THINKREALITY_A6.md",
+      "label": "Lenovo ThinkReality A6",
+      "summary": "A6 is preserved as its own commercial ThinkReality generation. The later A3 family is materially different and is not presented as an A6 revision.",
+      "root_id": "lenovo-a6-root",
+      "nodes": [
+        {"id":"lenovo-a6-root","type":"family","label":"Lenovo ThinkReality A6 generation","status":"established"},
+        {"id":"gls-0130","type":"model","label":"Lenovo ThinkReality A6","canonical_id":"GLS-0130","href":"/models/catalog/gls-0130/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"lenovo-a6-root","child":"gls-0130","relationship":"member_of","label":"commercial A6 generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_LENOVO_THINKREALITY_A6.md"]}
+      ]
+    },
+    {
+      "id": "thirdeye-x-series",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md",
+      "label": "ThirdEye X-Series",
+      "summary": "ThirdEye X1, X2 and Alpha1 are documented generations in one enterprise mixed-reality eyewear family. Their chronology is preserved without treating X2 specifications as inherited by X1 or Alpha1.",
+      "root_id": "thirdeye-root",
+      "nodes": [
+        {"id":"thirdeye-root","type":"family","label":"ThirdEye enterprise MR eyewear","status":"established"},
+        {"id":"gls-0131","type":"model","label":"ThirdEye X1 Smart Glasses","canonical_id":"GLS-0131","href":"/models/catalog/gls-0131/","status":"established"},
+        {"id":"gls-0132","type":"model","label":"ThirdEye X2 MR Glasses","canonical_id":"GLS-0132","href":"/models/catalog/gls-0132/","status":"established"},
+        {"id":"gls-0133","type":"model","label":"ThirdEye Alpha1 MR Glasses","canonical_id":"GLS-0133","href":"/models/catalog/gls-0133/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"thirdeye-root","child":"gls-0131","relationship":"member_of","label":"earlier X-series generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md","models/PROFILES_LINEAGE_RECONCILED.md"]},
+        {"parent":"thirdeye-root","child":"gls-0132","relationship":"member_of","label":"best-documented X-series generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md"]},
+        {"parent":"thirdeye-root","child":"gls-0133","relationship":"member_of","label":"later documented generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md","models/PROFILES_LINEAGE_RECONCILED.md"]}
+      ]
+    },
+    {
+      "id": "pivothead",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_PIVOTHEAD.md",
+      "label": "Pivothead camera eyewear",
+      "summary": "Two principal hardware generations are supported: first-generation Pivothead camera glasses and the later SMART / Architect Edition platform. Frame/style names remain variants unless electronics evidence proves otherwise.",
+      "root_id": "pivothead-root",
+      "nodes": [
+        {"id":"pivothead-root","type":"family","label":"Pivothead camera eyewear","status":"established"},
+        {"id":"gls-0134","type":"model","label":"Pivothead Camera Glasses (Gen 1)","canonical_id":"GLS-0134","href":"/models/catalog/gls-0134/","status":"established"},
+        {"id":"gls-0135","type":"model","label":"Pivothead SMART / Architect Edition","canonical_id":"GLS-0135","href":"/models/catalog/gls-0135/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"pivothead-root","child":"gls-0134","relationship":"member_of","label":"first hardware generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_PIVOTHEAD.md"]},
+        {"parent":"gls-0134","child":"gls-0135","relationship":"successor","label":"second major generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_PIVOTHEAD.md"]}
+      ]
+    },
+    {
+      "id": "mutrics",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_MUTRICS.md",
+      "label": "Mutrics smart audio eyewear",
+      "summary": "The surviving evidence supports one canonical M1 / retail audio-glasses generation. Style names and later marketing variants are not split without materially different electronics evidence.",
+      "root_id": "mutrics-root",
+      "nodes": [
+        {"id":"mutrics-root","type":"family","label":"Mutrics smart audio eyewear","status":"established"},
+        {"id":"gls-0136","type":"model","label":"Mutrics M1","canonical_id":"GLS-0136","href":"/models/catalog/gls-0136/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"mutrics-root","child":"gls-0136","relationship":"member_of","label":"documented retail generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_MUTRICS.md"]}
+      ]
+    },
+    {
+      "id": "chamelo",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_CHAMELO.md",
+      "label": "Chamelo smart eyewear",
+      "summary": "Chamelo is a branching smart-lens family rather than a linear camera/AI lineage: Dusk/Eclipse tint eyewear, Music Shield tint-plus-audio sport eyewear, and Aura/Prismatic color-changing eyewear.",
+      "root_id": "chamelo-root",
+      "nodes": [
+        {"id":"chamelo-root","type":"family","label":"Chamelo smart-lens eyewear","status":"established"},
+        {"id":"chamelo-dusk-branch","type":"branch","label":"Dusk / Eclipse tint branch","status":"established"},
+        {"id":"chamelo-music-branch","type":"branch","label":"Music Shield tint + audio branch","status":"established"},
+        {"id":"chamelo-aura-branch","type":"branch","label":"Aura / Prismatic color branch","status":"established"},
+        {"id":"gls-0137","type":"model","label":"Chamelo Dusk Classic","canonical_id":"GLS-0137","href":"/models/catalog/gls-0137/","status":"established"},
+        {"id":"gls-0138","type":"model","label":"Chamelo Music Shield Gen 2","canonical_id":"GLS-0138","href":"/models/catalog/gls-0138/","status":"established"},
+        {"id":"gls-0139","type":"model","label":"Chamelo Aura","canonical_id":"GLS-0139","href":"/models/catalog/gls-0139/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"chamelo-root","child":"chamelo-dusk-branch","relationship":"product_branch","label":"electrochromic tint branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_CHAMELO.md"]},
+        {"parent":"chamelo-dusk-branch","child":"gls-0137","relationship":"member_of","label":"documented Dusk generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_CHAMELO.md"]},
+        {"parent":"chamelo-root","child":"chamelo-music-branch","relationship":"product_branch","label":"sport tint + audio branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_CHAMELO.md"]},
+        {"parent":"chamelo-music-branch","child":"gls-0138","relationship":"member_of","label":"explicit second generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_CHAMELO.md"]},
+        {"parent":"chamelo-root","child":"chamelo-aura-branch","relationship":"product_branch","label":"Prismatic color branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_CHAMELO.md"]},
+        {"parent":"chamelo-aura-branch","child":"gls-0139","relationship":"member_of","label":"documented Aura generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_CHAMELO.md"]}
+      ]
+    },
+    {
+      "id": "nueyes",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_NUEYES.md",
+      "label": "NuEyes assistive smart glasses",
+      "summary": "NuEyes branches into an early self-contained low-vision line culminating in e2+ and a lighter Pro line evolving through Pro 3, Pro 3e and Pro 4. Unnamed early predecessors remain archival context rather than invented rows.",
+      "root_id": "nueyes-root",
+      "nodes": [
+        {"id":"nueyes-root","type":"family","label":"NuEyes assistive smart glasses","status":"established"},
+        {"id":"nueyes-standalone-branch","type":"branch","label":"Self-contained low-vision branch","status":"established"},
+        {"id":"nueyes-pro-branch","type":"branch","label":"Lighter Pro branch","status":"established"},
+        {"id":"gls-0140","type":"model","label":"NuEyes e2+","canonical_id":"GLS-0140","href":"/models/catalog/gls-0140/","status":"established"},
+        {"id":"gls-0141","type":"model","label":"NuEyes Pro 3","canonical_id":"GLS-0141","href":"/models/catalog/gls-0141/","status":"established"},
+        {"id":"gls-0142","type":"model","label":"NuEyes Pro 3e","canonical_id":"GLS-0142","href":"/models/catalog/gls-0142/","status":"established"},
+        {"id":"gls-0143","type":"model","label":"NuEyes Pro 4","canonical_id":"GLS-0143","href":"/models/catalog/gls-0143/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"nueyes-root","child":"nueyes-standalone-branch","relationship":"product_branch","label":"self-contained assistive branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_NUEYES.md"]},
+        {"parent":"nueyes-standalone-branch","child":"gls-0140","relationship":"member_of","label":"documented culmination","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_NUEYES.md"]},
+        {"parent":"nueyes-root","child":"nueyes-pro-branch","relationship":"product_branch","label":"lighter tethered Pro branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_NUEYES.md"]},
+        {"parent":"nueyes-pro-branch","child":"gls-0141","relationship":"member_of","label":"Pro 3 generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_NUEYES.md"]},
+        {"parent":"gls-0141","child":"gls-0142","relationship":"successor","label":"Pro-line evolution","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_NUEYES.md"]},
+        {"parent":"gls-0142","child":"gls-0143","relationship":"successor","label":"current Pro successor","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_NUEYES.md","models/PROFILES_LINEAGE_RECONCILED.md"]}
+      ]
+    },
+    {
+      "id": "envision-assistive",
+      "source_class": "bounded_evidence_packet",
+      "source_path": "docs/report-cards/LINEAGE_ENVISION.md",
+      "label": "Envision assistive eyewear",
+      "summary": "Envision has two distinct hardware branches: Envision Glasses on Google Glass Enterprise Edition 2 hardware and Ally Solos on Solos hardware. Read/Home/Professional are software/support editions, not hardware generations.",
+      "root_id": "envision-root",
+      "nodes": [
+        {"id":"envision-root","type":"family","label":"Envision assistive eyewear","status":"established"},
+        {"id":"envision-glass-branch","type":"branch","label":"Google Glass EE2-based branch","status":"established"},
+        {"id":"envision-solos-branch","type":"branch","label":"Solos-based Ally branch","status":"established"},
+        {"id":"gls-0144","type":"model","label":"Envision Glasses","canonical_id":"GLS-0144","href":"/models/catalog/gls-0144/","status":"established"},
+        {"id":"gls-0145","type":"model","label":"Envision Ally Solos","canonical_id":"GLS-0145","href":"/models/catalog/gls-0145/","status":"established"}
+      ],
+      "edges": [
+        {"parent":"envision-root","child":"envision-glass-branch","relationship":"product_branch","label":"Glass EE2 hardware branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_ENVISION.md"]},
+        {"parent":"envision-glass-branch","child":"gls-0144","relationship":"member_of","label":"Envision accessibility product","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_ENVISION.md","models/PROFILES_LINEAGE_RECONCILED.md"]},
+        {"parent":"envision-root","child":"envision-solos-branch","relationship":"product_branch","label":"Solos hardware branch","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_ENVISION.md"]},
+        {"parent":"envision-solos-branch","child":"gls-0145","relationship":"member_of","label":"Ally Solos hardware generation","confidence":"high","status":"established","inheritance_allowed":false,"evidence":["docs/report-cards/LINEAGE_ENVISION.md","models/PROFILES_LINEAGE_RECONCILED.md"]}
+      ]
+    }
+  ]
+}
