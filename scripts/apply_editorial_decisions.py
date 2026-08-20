@@ -37,6 +37,8 @@ def apply_decision(item: dict, decision: dict) -> dict:
     record["publication_authorized"] = authorized
     record["resolved_utc"] = str(decision.get("decided_utc", ""))
     record["canonical_destinations"] = list(decision.get("canonical_destinations", []) or [])
+    if decision.get("verified_change_id"):
+        record["verified_change_id"] = str(decision["verified_change_id"])
     if decision.get("verified_publication_id"):
         record["verified_publication_id"] = str(decision["verified_publication_id"])
     record["triage_state"] = f"editorial_{disposition}"
@@ -63,8 +65,6 @@ def write_outputs(queue: dict) -> None:
     LATEST_PATH.write_text(text, encoding="utf-8")
     generated = dt.datetime.fromisoformat(str(queue["generated_utc"]).replace("Z", "+00:00"))
     day = generated.astimezone(ZoneInfo("America/New_York")).date().isoformat()
-    # The triage generator already created the dated snapshot. Rewrite it so the
-    # human-readable state remains aligned with the machine queue after decisions.
     for path in REVIEWS_DIR.glob(f"{day}-auto-triage.md"):
         path.write_text(text, encoding="utf-8")
 
