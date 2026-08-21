@@ -1,13 +1,13 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-08-20T07:56:51+00:00**
+Generated automatically: **2026-08-21T07:57:18+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-08-12 → 2026-08-18):** 786 impressions, 1 clicks, 0.13% CTR, average position 37.9.
-- **7-day change:** impressions +124.6%; clicks n/a.
+- **Google, latest final 7 days (2026-08-13 → 2026-08-19):** 667 impressions, 1 clicks, 0.15% CTR, average position 38.7.
+- **7-day change:** impressions +42.2%; clicks n/a.
 - **Rolling 28 days:** 1136 impressions, 1 clicks, 0.09% CTR, average position 32.1.
 - **Milestone:** organic Google clicks appeared after a previous zero-click week.
 
@@ -34,7 +34,7 @@ Generated automatically: **2026-08-20T07:56:51+00:00**
 | https://glassesresearch.org/ | 0 | 10 | 0.00% | 20.5 |
 | https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 3 | 0.00% | 1.0 |
 | https://glassesresearch.org/WHY/ | 0 | 5 | 0.00% | 5.0 |
-| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 3 | 0.00% | 32.0 |
+| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 2 | 0.00% | 46.0 |
 | https://glassesresearch.org/docs/ABOUT/ | 0 | 5 | 0.00% | 5.4 |
 | https://glassesresearch.org/docs/BLE/ | 0 | 4 | 0.00% | 24.0 |
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 2 | 0.00% | 10.5 |
@@ -43,24 +43,24 @@ Generated automatically: **2026-08-20T07:56:51+00:00**
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **5,882 requests**, **1,195 HTTP visits**, **59.8 MB** served.
-- Rolling 7d: **28,257 requests**, **5,853 HTTP visits**, **411.7 MB** served.
+- Rolling 24h: **3,623 requests**, **757 HTTP visits**, **46.4 MB** served.
+- Rolling 7d: **29,834 requests**, **5,941 HTTP visits**, **401.9 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 5,118 | 1,014 |
-| SG | 296 | 26 |
-| CA | 84 | 67 |
-| BR | 79 | 7 |
-| JP | 68 | 15 |
-| FR | 57 | 5 |
-| NL | 52 | 1 |
-| GB | 38 | 0 |
-| CN | 24 | 11 |
-| DE | 19 | 16 |
+| US | 2,278 | 622 |
+| SG | 482 | 19 |
+| DE | 229 | 18 |
+| NL | 114 | 0 |
+| GB | 68 | 2 |
+| BR | 63 | 18 |
+| FR | 58 | 3 |
+| SE | 56 | 6 |
+| BE | 52 | 4 |
+| CA | 50 | 6 |
 
 ## What to watch
 
