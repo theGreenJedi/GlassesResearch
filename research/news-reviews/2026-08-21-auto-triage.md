@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-21T07:12:10.214520+00:00`
+Generated: `2026-08-21T08:01:46.107437+00:00`
 
-- Intake files inspected: **70**
-- Candidates retained in this review window/history: **455**
+- Intake files inspected: **71**
+- Candidates retained in this review window/history: **456**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -15,7 +15,7 @@ Generated: `2026-08-21T07:12:10.214520+00:00`
 - `needs_editorial_verification`: 67
 - `rejected_noise`: 9
 - `source_monitor`: 16
-- `source_review`: 102
+- `source_review`: 103
 - `watching`: 76
 
 ## Action queue
@@ -76,6 +76,7 @@ Generated: `2026-08-21T07:12:10.214520+00:00`
 | normal | needs_editorial_verification | direct | [Our 10 Best Smart Glasses With Camera in the US - August 2026 ...](https://www.bestproductsreviews.com/smart-glasses-with-camera) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Prescription Lenses Could Be the Key to Making AI Glasses Mainstream - Insider Paper](https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ0F6TW5vVUtrcUV6dmRkUVloR0IyaHkyZ2tWN09HT3ZtWHd5VEhSMlNiWjRfbzd0WDNCZl82Q0J5bDQ5Y2w3Y3RCeXd1b0lndjlrYnlrZ25GX0QxbWlEYnNFYXVIbmt6cG8zcEcwY1ZmZldHOWRuT1JXOHRrVlR1ZEl1akh6b1JZRDVzcjlSd0ttY1g0QjgyWGlR?oc=5) | reachable (200) | research_news_review, research_optics, deep_research |
 | normal | needs_editorial_verification | direct | [Ranking the Best Smart Glasses: Meta, Viture, & More (2026) - WIRED](https://www.wired.com/gallery/best-smart-glasses/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [RayNeo reveals privacy focused iO smart glasses with 1,300-nit display - NewsBytes](https://news.google.com/rss/articles/CBMitwFBVV95cUxPNlNBNTR2czdDVXZOWm92S0JxUmRNellBWlVSOVZ3TkFJb1hkNzVnZV9CeUpnNTBZM2ZqWURIZmdtVGdHb1ZVMXVpbFF5QlZMLV96LUFhS19VMlFoWlBvOEV2UVd0eXc2Z0lObDhENzR6bTlFWGZkR2xfZTladWtzcVN1MDZvR3doV052Y1A5aGlYdUZGWXNXbFhQMXhnSG1jTTkyalprZlVvTFdZdEJic1EzaHdnSlU?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Smart Glasses Market Growth 2026: Why AI, AR and Display-Less - openPR.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxPUXA2b0tiVlRRendhMGdGMkMyRm9vcmxTRWFiQU84ckdvVUdfQzFhN1lJdURoOHdMbHFjaDhNMUMtMEJOX2Uza0JnUmFpOTk5MnhvZUtoNUs5RFJaWC1tYUd0enhpVFJzLXJzRk5PNW1jaDBQcXQ2Mk54LUpULUozSjZTT3N6bWxNMW5SV2VLQzFIUmxaQmhQQlAwOA?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Smart Glasses with AI and Bluetooth Features](https://www.walmart.com/browse/electronics/smart-glasses/3944_1229723_2776031) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [The 13 Best Augmented Reality Glasses You Can Buy](https://arvrtips.com/best-augmented-reality-glasses/) | reachable (200) | research_news_review |
@@ -85,7 +86,6 @@ Generated: `2026-08-21T07:12:10.214520+00:00`
 | normal | needs_editorial_verification | direct | [UK cinemas restricting Meta AI and other smart glasses over piracy concerns - Global Banking & Finance Review](https://news.google.com/rss/articles/CBMingFBVV95cUxQY2p6VlMzcVNMMnJjcnM3cjRCWFlsQmt1RFBzVGh2WTU1RUh2VVRMYU5CWnBGeUJOWnZGRUwzc191THdSaDFEd2pqY2Q4bkpBR3VJMEVyc2pwY2MwOVFLb2x4dUpkMENGSVBQNjZERUFrYXBSV3U1R0NOVjcwT1NZUGk1cTFUOW9TRTZtRHVZa01fN3VLUElrSlE4LU9mZw?oc=5) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [VITURE: Next Gen XR Glasses](https://www.viture.com/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.m.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearables - Wareable](https://www.wareable.com/category/wearable-tech) | reachable (200) | research_news_review, development_hacking |
@@ -100,6 +100,7 @@ Generated: `2026-08-21T07:12:10.214520+00:00`
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [OpenGlass: Turn Any Glasses into AI Smart Glasses for Just $20 with ...](https://www.seeedstudio.com/blog/2024/05/23/openglass-turn-any-glasses-into-ai-smart-glasses-for-just-20-with-xiao-esp32s3-sense/) | review (403) | research_news_review |
 | normal | source_review | direct | [Smart & AI Glasses - Best Buy](https://www.bestbuy.com/site/wearable-technology/smart-ai-glasses/pcmcat1780433535084.c?id=pcmcat1780433535084) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
+| normal | source_review | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | review (403) | research_news_review, report_card_evidence, policy_privacy |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
 | low | source_review |  | [CyanBridge v2.0.0 - Local AI Support](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.0.0) | reachable (200) |  |
 | low | source_review |  | [Release v24.248.0928](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v24.248.0928) | reachable (200) |  |
@@ -271,7 +272,6 @@ Generated: `2026-08-21T07:12:10.214520+00:00`
 | low | watching | adjacent | [Apple’s Camera-Equipped AI AirPods Remain on Track for 2027 Despite Video Leak - Bloomberg](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSVVraUU4YnVxbnhZVXBveHhSdVp5MHZJVXBub0NDN2dwUFg0eGs0eWR1Ri1wMHRaMzI3UTFiZFJWU3NHb3lOZVNrX2FVaURGTFBrUlA4TmozVlZKbEt5WXFQc19kN0NjZXFYWFdWT1VUQzE4cVluXzJhaGNmM05mUERIckFRc0RhbkxCd3o1dnd3WkItdHhUY3pVeWt2c0R0dE1OYWdCbzJaaU9kRWRrVXl6cDF3YmNTVy04WV9GTnR4NWdtTHozSQ?oc=5) | not_checked | research_news_review, watching, report_card_evidence, adjacent_radar |
 | low | watching | speculative | [Apple’s camera-equipped AI AirPods remain on track for 2027 despite video leak - The Business Times](https://news.google.com/rss/articles/CBMivgFBVV95cUxNb19XbzQ5VXVzNjJSdm9vRHFvaU1UdW1mMURzSFlwMG92WWhzcHJoT0NUTXg4RFJaUm5GZ0I1ZzRtdEZhaFFFQWc5WEMtUFE0cDZUR3AtcUd3RVl6ODVRVDVFdWMzN0d1cG5DcTZPcVlqLVFOTzcxd29lQTBxWXdOZHBiaWdORDNzYUxheG43M09pUVBCbHlrLXAzWXQtZ3l3bGsxX3lPMVVqcGR4alJBYi02alBiMEI5VWd2ekhn?oc=5) | not_checked | research_news_review, watching, report_card_evidence |
 | low | watching | speculative | [Apple’s camera-equipped AI AirPods remain on track for 2027 despite video leak - The Mercury News](https://news.google.com/rss/articles/CBMivgFBVV95cUxNYXRod0ZZNndvT194a25SV0hUbkUteExzRFRTcWRXZVN3Y0NrTmI0eFFvejlJNllvLXF0NXJBSUljRVM3NDFLVVZ4aXBTUjhPclQ5VE5OOGZKZVJiSXZiNGRKdEEwQ21CalZLZmctU0s2dFZ1YnBpZlZ1V3pHTWtiX1BqUXhnd1FISGk0VzN6Wjk3Sl91dFBSVVRGcmJBa3dia2VNaUNUSWEzTWc1RlJ6RmNweTBXbEJLLW9IWHd30gG-AUFVX3lxTE1hdGh3Rlk2d29PX3hrblJXSFRuRS14THNEVFNxZFdlU3djQ2tOYjR4UW96OUk2WW8tcXQ1ckFJSWNFUzc0MUtVVnhpcFNSOE9yVDlUTk44ZkplUmJJdmI0ZEp0QTBDbUJqVktmZy1TSzZ0VnVicGlmVnVXekdNa2JfUGpReGd3UUhIaTRXM3paOTdKX3V0UFJVVEZyYkFrd2JrZU1pQ1RJYTNNZzVGUnpGY3B5MFdsQkstb0hYd3c?oc=5) | not_checked | research_news_review, watching, report_card_evidence |
-| low | watching | speculative | [(VIDEO) Samsung Galaxy S27 Ultra Design Leak Points to Major Horizontal Camera Redesign for 2027 Flagship - ibtimes.com.au](https://news.google.com/rss/articles/CBMihwFBVV95cUxPVWptaFZWbVI3UGQwNGFPZUZVX3RRT2YtY3pkN0ZzaE9mbWVyVGxoYW1kMWpGZ3pJYzhGZlRBRHdPdnh5Y3Znd2FXcUd6VWlWNTZGdjIwaFVUX1A1N3k5aDJNY0tRS2Q2ODNjRzJqYkV5TkdhZ0REblRUX0NBVVVzQlJwUVFNVE0?oc=5) | reachable (200) | research_news_review, watching, report_card_evidence |
 
 ## Meaning of states
 
