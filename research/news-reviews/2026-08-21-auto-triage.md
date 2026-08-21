@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-21T11:46:39.363294+00:00`
+Generated: `2026-08-21T13:15:53.610857+00:00`
 
-- Intake files inspected: **73**
-- Candidates retained in this review window/history: **459**
+- Intake files inspected: **74**
+- Candidates retained in this review window/history: **461**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,11 +12,11 @@ Generated: `2026-08-21T11:46:39.363294+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 2
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 69
+- `needs_editorial_verification`: 70
 - `rejected_noise`: 9
 - `source_monitor`: 16
-- `source_review`: 103
-- `watching`: 76
+- `source_review`: 102
+- `watching`: 78
 
 ## Action queue
 
@@ -88,6 +88,7 @@ Generated: `2026-08-21T11:46:39.363294+00:00`
 | normal | needs_editorial_verification | direct | [UK cinemas restricting Meta AI and other smart glasses over piracy concerns - Global Banking & Finance Review](https://news.google.com/rss/articles/CBMingFBVV95cUxQY2p6VlMzcVNMMnJjcnM3cjRCWFlsQmt1RFBzVGh2WTU1RUh2VVRMYU5CWnBGeUJOWnZGRUwzc191THdSaDFEd2pqY2Q4bkpBR3VJMEVyc2pwY2MwOVFLb2x4dUpkMENGSVBQNjZERUFrYXBSV3U1R0NOVjcwT1NZUGk1cTFUOW9TRTZtRHVZa01fN3VLUElrSlE4LU9mZw?oc=5) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [VITURE: Next Gen XR Glasses](https://www.viture.com/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.m.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearables - Wareable](https://www.wareable.com/category/wearable-tech) | reachable (200) | research_news_review, development_hacking |
@@ -102,7 +103,6 @@ Generated: `2026-08-21T11:46:39.363294+00:00`
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [OpenGlass: Turn Any Glasses into AI Smart Glasses for Just $20 with ...](https://www.seeedstudio.com/blog/2024/05/23/openglass-turn-any-glasses-into-ai-smart-glasses-for-just-20-with-xiao-esp32s3-sense/) | review (403) | research_news_review |
 | normal | source_review | direct | [Smart & AI Glasses - Best Buy](https://www.bestbuy.com/site/wearable-technology/smart-ai-glasses/pcmcat1780433535084.c?id=pcmcat1780433535084) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
-| normal | source_review | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | review (403) | research_news_review, report_card_evidence, policy_privacy |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
 | low | source_review |  | [CyanBridge v2.0.0 - Local AI Support](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.0.0) | reachable (200) |  |
 | low | source_review |  | [Release v24.248.0928](https://github.com/brilliantlabsAR/frame-codebase/releases/tag/v24.248.0928) | reachable (200) |  |
