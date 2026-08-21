@@ -8,10 +8,27 @@ The newest verified changes, useful tools, developments we are watching, and res
 
 | Date | What changed | Go deeper |
 |---|---|---|
+| Aug. 21 | RayNeo formally announced **iO**, **GT**, and **GT Max** with September 4 availability messaging; canonical GLS admission remains pending a documented paid acquisition path. | [verified article](news/articles/2026-08-21-rayneo-io-gt-series.md) · [follow RayNeo](?brand=RayNeo&topic=release_availability#verified-research-alerts) |
 | Aug. 18 | MemoMind One crossed the documented-acquisition threshold as **GLS-0160**, with state `preorder/crowdfunding`; broad fulfillment remains unproven. | [verified article](news/articles/2026-08-18-memomind-one-gls-0160.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0160/) · [research](/models/MemoMindOne/) |
 | Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [verified article](news/articles/2026-08-17-lucyd-armor-gls-0159.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0159/) · [GLS resolver](https://glassesresearch.org/gls/gls-0159/) |
 | Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026-halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) |
 | Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026-cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](https://glassesresearch.org/models/catalog/gls-0039/) |
+
+### August 21, 2026 — RayNeo announces iO, GT and GT Max for September 4
+
+A high-priority collector lead about three new RayNeo products crossed the verification boundary after being checked against RayNeo-provided launch material plus RayNeo's own product and support pages. RayNeo has formally named **RayNeo iO**, **RayNeo GT**, and **RayNeo GT Max** as distinct products.
+
+RayNeo positions iO as lightweight everyday heads-up/AI glasses and the GT family as wearable display/spatial-entertainment glasses. The company's August 21 announcement says both product lines will be demonstrated at IFA 2026 in Berlin from September 4–8. Current first-party iO and GT pages also display **Coming September 4** / near-term availability messaging.
+
+The iO support surface is already unusually detailed for a pre-release product: it documents Bluetooth pairing through the required RayNeo app, Smart Crown controls, a heads-up dashboard, live captions and translation, voice memo/AI summaries, teleprompter functions, and RayNeo AI features.
+
+**Catalog status:** this verified announcement does **not** create three new GLS records yet. At verification time we did not confirm a paid preorder or ordinary purchase path for iO, GT, or GT Max. Under the existing purchaser-history rule, a stated future launch date is not enough by itself for canonical admission. We will recheck when a paid acquisition path appears or at the September 4 launch milestone.
+
+**What we are not claiming:** final retail pricing, purchaser fulfillment, independently measured performance, public SDK access, owner-controlled firmware, cloud independence, repairability, ordinary-optician serviceability, and cross-model hardware equivalence remain unverified.
+
+Continue: [verified article](news/articles/2026-08-21-rayneo-io-gt-series.md) · [follow RayNeo](?brand=RayNeo&topic=release_availability#verified-research-alerts)
+
+Primary sources: [RayNeo launch announcement](https://www.prnewswire.com/news-releases/rayneo-expands-consumer-ar-lineup-unveiling-rayneo-io-smart-glasses-and-cinematic-rayneo-gt-series-302856466.html) · [RayNeo iO](https://www.rayneo.com/en-ca/pages/rayneo-io-ai-glasses) · [RayNeo iO Help Center](https://www.rayneo.com/pages/support-rayneo-io-ai-glasses) · [RayNeo GT Series](https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses)
 
 ### August 18, 2026 — MemoMind One enters the canonical catalog as GLS-0160 {#august-18-2026-memomind-one-enters-the-canonical-catalog-as-gls-0160}
 
