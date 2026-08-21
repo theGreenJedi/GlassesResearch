@@ -190,6 +190,9 @@ def main() -> None:
         if relative.startswith("docs/faq/") and relative.split("/")[-2][:2].isdigit():
             if "FAQPage" not in types:
                 errors.append(f"{html_path}: question collection is missing FAQPage structured data")
+        if relative.startswith("docs/news/articles/"):
+            if "Article" not in types:
+                errors.append(f"{html_path}: verified research article is missing Article structured data")
 
     duplicates = {description: paths for description, paths in descriptions.items() if len(paths) > 1}
     for description, paths in list(duplicates.items())[:10]:
@@ -200,7 +203,7 @@ def main() -> None:
 
     print(
         f"Discoverability audit passed for {len(html_files)} indexable HTML pages: "
-        "canonical URLs, unique descriptions, social metadata, structured data, FAQ schema, "
+        "canonical URLs, unique descriptions, social metadata, structured data, FAQ/article schema, "
         "robots.txt, sitemap.xml, and CNAME are coherent."
     )
 
