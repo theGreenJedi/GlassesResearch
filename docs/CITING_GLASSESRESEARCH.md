@@ -1,6 +1,6 @@
 ---
 title: "How to Cite GlassesResearch"
-description: "Stable citation guidance for GlassesResearch model records, smart-glasses timeline events, research pages, and machine-readable datasets."
+description: "Stable citation guidance for GlassesResearch model records, verified research publications, smart-glasses timeline events, research pages, and machine-readable datasets."
 ---
 
 # How to Cite GlassesResearch
@@ -27,6 +27,19 @@ Every canonical model has citation exports generated from the same stable identi
 - Aggregate canonical-model BibTeX: `https://glassesresearch.org/data/citations/glassesresearch-models.bib`
 
 The GitHub repository also publishes a root `CITATION.cff`, allowing GitHub's **Cite this repository** control to provide standardized citation metadata for the project as a whole.
+
+## Verified Research & News publications
+
+Each item that crosses the verified publication boundary receives a permanent `GRE-######` change identity. The **human-readable publication URL remains the URL to cite**; the GRE identifier makes the publication unambiguous and keeps its citation export stable even if model names or surrounding indexes change.
+
+Machine-ready verified-research citations are generated from the same verified-change ledger that powers Research & News, RSS, and subscriber alerts:
+
+- BibTeX: `https://glassesresearch.org/data/citations/verified-research/gre-######.bib`
+- CSL-JSON: `https://glassesresearch.org/data/citations/verified-research/gre-######.json`
+- Citation index: `https://glassesresearch.org/data/citations/verified-research/index.json`
+- Aggregate verified-research BibTeX: `https://glassesresearch.org/data/citations/verified-research/glassesresearch-verified-research.bib`
+
+Standalone verified articles expose their BibTeX and CSL-JSON links directly on the article. Older verified publications that live inside a broader research page remain available through the verified-research citation index.
 
 ## Industry timeline events
 
@@ -59,11 +72,11 @@ Lower-level public structured endpoints remain available:
 - Timeline record: `https://glassesresearch.org/timeline/events.json`
 - Live timeline signals: `https://glassesresearch.org/timeline/auto-events.json`
 
-When reproducibility matters, record the access date, schema version, and specific GLS or TL identifiers used rather than relying only on array order or display position. Claim-level `confidence` or `verified_at` values may be `null` when the underlying research has not recorded those values; do not convert missing provenance into certainty.
+When reproducibility matters, record the access date, schema version, and specific GLS, GRE, or TL identifiers used rather than relying only on array order or display position. Claim-level `confidence` or `verified_at` values may be `null` when the underlying research has not recorded those values; do not convert missing provenance into certainty.
 
 ## Linking, embedding, and reuse
 
-No permission is needed to link to public GlassesResearch pages. Deep links to individual canonical models, timeline events, technical research, evidence records, and comparisons are encouraged when they help readers verify a claim or continue an investigation.
+No permission is needed to link to public GlassesResearch pages. Deep links to individual canonical models, verified research publications, timeline events, technical research, evidence records, and comparisons are encouraged when they help readers verify a claim or continue an investigation.
 
 A compact [embeddable model card](EMBED_GLASSESRESEARCH.md) is available for every canonical GLS model. It is static, cookie-free, and links the reader back to the canonical evidence page rather than copying an untraceable rating into another site.
 

@@ -16,17 +16,19 @@ Use this page when you need a verifiable smart-glasses fact, a stable model iden
 
 Every canonical model has a stable `GLS-####` identifier. Use that identifier when a product has multiple seller names, rebrands, or changing market labels.
 
-## Cite a model or dataset
+## Cite a model, verified publication, or dataset
 
 - [How to Cite GlassesResearch](CITING_GLASSESRESEARCH.md)
 - Per-model BibTeX: `https://glassesresearch.org/data/citations/gls-####.bib`
 - Per-model CSL-JSON: `https://glassesresearch.org/data/citations/gls-####.json`
-- Citation index: `https://glassesresearch.org/data/citations/index.json`
+- Model citation index: `https://glassesresearch.org/data/citations/index.json`
 - Aggregate model BibTeX: `https://glassesresearch.org/data/citations/glassesresearch-models.bib`
+- Verified-research citation index: `https://glassesresearch.org/data/citations/verified-research/index.json`
+- Aggregate verified-research BibTeX: `https://glassesresearch.org/data/citations/verified-research/glassesresearch-verified-research.bib`
 - Canonical public model dataset: `https://glassesresearch.org/data/public/models.json`
 - Flat catalog CSV: `https://glassesresearch.org/data/public/models.csv`
 
-For a specific factual claim, follow the model page to the underlying source and cite that primary source as well when practical.
+Standalone verified Research & News articles expose BibTeX and CSL-JSON directly. For a specific factual claim, follow the publication or model page to the underlying source and cite that primary source as well when practical.
 
 ## Reuse a model card
 
