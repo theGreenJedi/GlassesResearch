@@ -1,14 +1,14 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-21T13:15:53.610857+00:00`
+Generated: `2026-08-21T14:03:45.029260+00:00`
 
-- Intake files inspected: **74**
-- Candidates retained in this review window/history: **461**
+- Intake files inspected: **75**
+- Candidates retained in this review window/history: **462**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 137
+- `adjacent_radar`: 138
 - `catalog_review`: 46
 - `editorial_published`: 2
 - `editorial_watch`: 1
