@@ -36,7 +36,7 @@ def _first_description(markdown: str, page_title: str) -> str:
         stripped = block.strip()
         if not stripped or stripped.startswith("#"):
             continue
-        if stripped.startswith(("```", "---", "!!!", "???")):
+        if stripped.startswith(("```", "---", "!!!", "???", "**Published:**", "Cite this research:")):
             continue
         text = _plain_text(stripped)
         if len(text) >= 40:
