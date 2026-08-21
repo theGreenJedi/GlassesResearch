@@ -59,14 +59,12 @@ jobs:
           python scripts/verified_publications.py
           python scripts/validate_alert_articles.py
           python scripts/validate_dispatch_timestamps.py
-      - name: Prove migration does not replay unchanged historical alerts
+      - name: Allow new dispatch IDs while freezing historical deliveries
         if: github.event_name == 'pull_request'
         shell: bash
         run: |
           set -euo pipefail
-          output="$(python scripts/detect_dispatch_delta.py --previous-ref HEAD^)"
-          echo "$output"
-          grep -Fq 'historical delivery payloads unchanged' <<< "$output"
+          python scripts/detect_dispatch_delta.py --previous-ref HEAD^ --reject-historical-mutation
 
   publish:
     if: github.event_name != 'pull_request'
@@ -110,6 +108,7 @@ jobs:
             echo '- Subscriber publication payloads are derived from GRE events while retaining existing publication IDs for idempotency.'
             echo '- Every dispatch-enabled alert resolves to a dated GlassesResearch article.'
             echo '- Every dispatch-enabled publication carries a precise UTC publication timestamp so digest cutoffs cannot lose same-day work.'
+            echo '- New dispatch publication IDs are allowed; historical dispatch payloads are immutable and must be superseded by a new event rather than edited in place.'
             echo '- Watching and discovery intake are excluded by GRE validation.'
             if [ '${{ steps.dispatch.outputs.needs_dispatch }}' = 'true' ]; then
               echo '- New or changed dispatch payloads were staged at the authenticated Worker and synthetic-canary delivery proof was required.'
