@@ -6,9 +6,11 @@ from __future__ import annotations
 import html
 import json
 import re
+from datetime import datetime
 from typing import Any
 
 FAQ_HEADING = re.compile(r"^##\s+(?:\d+\.\s+)?(.+\?)\s*$", re.MULTILINE)
+PUBLISHED = re.compile(r"^\*\*Published:\*\*\s+(.+?)\s*$", re.MULTILINE)
 LINK = re.compile(r"!?\[([^\]]+)\]\([^\)]+\)")
 HTML_TAG = re.compile(r"<[^>]+>")
 MARKDOWN_MARKS = re.compile(r"[`*_~]+")
@@ -183,6 +185,49 @@ def _dataset_schema(meta: dict[str, Any], description: str, canonical_url: str, 
     return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
 
 
+def _article_schema(
+    markdown: str,
+    page_title: str,
+    description: str,
+    canonical_url: str,
+    site_url: str,
+    source_uri: str,
+) -> str | None:
+    """Describe standalone verified Research & News articles from visible publication data."""
+    if not source_uri.startswith("docs/news/articles/") or "**Status:** Verified" not in markdown:
+        return None
+    published = PUBLISHED.search(markdown)
+    if not published:
+        return None
+    raw_date = published.group(1).strip()
+    try:
+        date_published = datetime.strptime(raw_date, "%B %d, %Y").date().isoformat()
+    except ValueError:
+        try:
+            date_published = datetime.fromisoformat(raw_date.replace("Z", "+00:00")).date().isoformat()
+        except ValueError:
+            return None
+
+    root = site_url.rstrip("/") + "/"
+    return json.dumps(
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "@id": f"{canonical_url}#article",
+            "headline": page_title,
+            "description": description,
+            "url": canonical_url,
+            "datePublished": date_published,
+            "author": {"@id": f"{root}#organization"},
+            "publisher": {"@id": f"{root}#organization"},
+            "mainEntityOfPage": {"@id": f"{canonical_url}#webpage"},
+            "isPartOf": {"@id": f"{root}#website"},
+        },
+        ensure_ascii=False,
+        separators=(",", ":"),
+    )
+
+
 def on_page_markdown(markdown: str, page: Any, config: Any, files: Any) -> str:
     """Populate per-page metadata before Material renders the page."""
     page_title = page.title or config.site_name
@@ -208,5 +253,17 @@ def on_page_markdown(markdown: str, page: Any, config: Any, files: Any) -> str:
     dataset_json = _dataset_schema(page.meta, page.meta["description"], canonical_url, config.site_url)
     if dataset_json:
         page.meta["seo_dataset_json"] = dataset_json
+
+    source_uri = getattr(getattr(page, "file", None), "src_uri", "") or ""
+    article_json = _article_schema(
+        markdown,
+        page_title,
+        page.meta["description"],
+        canonical_url,
+        config.site_url,
+        source_uri,
+    )
+    if article_json:
+        page.meta["seo_article_json"] = article_json
 
     return markdown
