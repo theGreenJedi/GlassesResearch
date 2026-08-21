@@ -1,18 +1,18 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-21T10:52:45.737425+00:00`
+Generated: `2026-08-21T11:46:39.363294+00:00`
 
-- Intake files inspected: **72**
-- Candidates retained in this review window/history: **457**
+- Intake files inspected: **73**
+- Candidates retained in this review window/history: **459**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 136
+- `adjacent_radar`: 137
 - `catalog_review`: 46
 - `editorial_published`: 2
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 68
+- `needs_editorial_verification`: 69
 - `rejected_noise`: 9
 - `source_monitor`: 16
 - `source_review`: 103
@@ -22,6 +22,7 @@ Generated: `2026-08-21T10:52:45.737425+00:00`
 
 | Priority | State | Relationship | Candidate | Source check | Routes |
 |---|---|---|---|---|---|
+| high | needs_editorial_verification | direct | [RayNeo Just Announced Three New Smart Glasses Ahead of IFA, and They Look Impressive - Android Headlines](https://news.google.com/rss/articles/CBMic0FVX3lxTFBWbEU2TTFhaVREcmhUTml0Z01PNUZUdlVMX2U3dG9TRGZvSk1CVmRzbEt4Qzl6N1FMVXgwN2hsZ2U0WVVmNXFQWEJoNmFEOXdzNW9aTWhMTk0tNkJwQ1Bvd1cwNGszVXJfdGN5c2lMbHBrZVk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Xreal Aura reservations hit 10,000 as global launch nears - GamesBeat](https://news.google.com/rss/articles/CBMihgFBVV95cUxNNV9kNG1TRVFnUDRCZTJyaDVfYUtURTF4QmtDbk1SU1FPMmZmYm1sVE42ZGlwUVB2SlpmcVZCWHQ1Zkh3VU5rcW42cjU0U2R1YlNadmV1Tm1NenJOVzZVLXR0WklfUjNBeUMwV1pKaWpBMnQ0RUt6SDR1RkNaOVgwRHNTbG52dw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XREAL AURA Surpasses 10,000 Unit Reservations Ahead of Launch This Fall - Road to VR](https://news.google.com/rss/articles/CBMif0FVX3lxTE41MTA1QTBVdjVmNHltcDI4RF81dXprdWI2SnhhT194VUtIdXNxOWZtcEFwbGEwZGRGVXBQZ2lmVFRBbkZKYXE2czNMTHgzYjgzOEdHQWFyMHdzTGNTUG96Y0RTRHNGcUhSR1pKaFlYTk4wc0hyNXQ4N19icV9DUjA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XREAL AURA XR Glasses Surpass 10,000 Reservations Ahead of Launch - iPhone in Canada](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPa2JkVV9yV3F4dEtBcEJYTDdaZFhvUkZtMmNGb0Fod1k2WFo4TFdWbE5yS0lPblBUWFZiZUd4aUxjNmktdmVQdm01TXQ1SG85MUlRU0lIVXZsdHpLdWtfLWhndkMwY1o3TlNvNGdETEhQRUhJaGhPam5tOVZ6QUNzcU00cXloWkcyV1dDMHNGM29vWmV5aTRWUEl0a0U2UWZVaWxWY1o2bzNBQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -55,7 +56,7 @@ Generated: `2026-08-21T10:52:45.737425+00:00`
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026: Ranked By The Experts \| VITURE](https://www.viture.com/blog/best-ar-glasses-2026-ranked-by-the-experts) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (202) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: AR, Audio And Top Picks Compared](https://wearablexp.com/smart-glasses/best-smart-glasses/) | reachable (200) | research_news_review |
@@ -271,7 +272,6 @@ Generated: `2026-08-21T10:52:45.737425+00:00`
 | low | watching | adjacent | [Apple's Camera AirPods Leak: Stock Up 2% Amid AI Push - whalesbook.com](https://news.google.com/rss/articles/CBMizgFBVV95cUxPYWQ4ZEh6Yl9fTTVaaHlZekRKcDY4WThRaWF3TjNzckRDQjllT09jemtDQ1VGZ0NTRjlZTmpGamgxMDYwWmY5VXdMVlRYUHFtblBkWkpoLU9Sd2dwRTBWNHRndS1ILVRyRklIVUpBZEdiVlhMZEJWeWlHVlp4cTNMdG41Q0s0MnBSX29LVGpPS2FkdndvVWtfYWVDWVFMN2NQYzA5cXdaM1BHckgxZXB4ZThPNnhTZUl6YmpDSWhpOTh3WGQzQXFTN1NiX2g3UQ?oc=5) | not_checked | research_news_review, watching, adjacent_radar |
 | low | watching | speculative | [Apple's Camera-Equipped AI AirPods Remain On Track For 2027 Despite Video Leak - NDTV Profit](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQLWhucXZWTEJqVTgwSHJaQllBaWtnX3dWYmp1eFY1ZTNlVU5LVnpwZ3B1SVV2bnF6X1c5VER4ZFJwQVhqRjNJTkpjTzNNTHlLTk1TaVNuVGlJOXVqWl82UDQxa3B4TFE1ZzdHMjZwYWZnMmVxOU9NVXV4X3BLWkljZnBHcWhGVG5TejJNaG9udUpSa2hIVW1TamFNMXNoMGE2WXFPcDVBYjhBdnViQXlHaGNMeEVCRVJHU19rTUlNdHVfZ9IBygFBVV95cUxOREo5SHU5NkNFc2VzZUdxaTRVa0JnVl9SakNIUVQySzFaZmpVSjdpQXJ2a3VSZVp0N0Q2dU40aFBGX25CazhwZzNvbGV2QkgwZTM2SEpGMGhBZ0pnMkFVSGV4bWxTUl9xemk2dzFFNEJNY21sYlNub3FHNnhlR2stXzZHNVJ3ZnFjRkxieW9sb21qUWhZcm5NS00ybHQzZHF5d3pLTVRpZkxUR1hFUUhrMWVZRk5XX0h6ZnpET1J1TzZtbzhJejhXYUZB?oc=5) | not_checked | research_news_review, watching, report_card_evidence |
 | low | watching | adjacent | [Apple’s Camera-Equipped AI AirPods Remain on Track for 2027 Despite Video Leak - Bloomberg](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSVVraUU4YnVxbnhZVXBveHhSdVp5MHZJVXBub0NDN2dwUFg0eGs0eWR1Ri1wMHRaMzI3UTFiZFJWU3NHb3lOZVNrX2FVaURGTFBrUlA4TmozVlZKbEt5WXFQc19kN0NjZXFYWFdWT1VUQzE4cVluXzJhaGNmM05mUERIckFRc0RhbkxCd3o1dnd3WkItdHhUY3pVeWt2c0R0dE1OYWdCbzJaaU9kRWRrVXl6cDF3YmNTVy04WV9GTnR4NWdtTHozSQ?oc=5) | not_checked | research_news_review, watching, report_card_evidence, adjacent_radar |
-| low | watching | speculative | [Apple’s camera-equipped AI AirPods remain on track for 2027 despite video leak - The Business Times](https://news.google.com/rss/articles/CBMivgFBVV95cUxNb19XbzQ5VXVzNjJSdm9vRHFvaU1UdW1mMURzSFlwMG92WWhzcHJoT0NUTXg4RFJaUm5GZ0I1ZzRtdEZhaFFFQWc5WEMtUFE0cDZUR3AtcUd3RVl6ODVRVDVFdWMzN0d1cG5DcTZPcVlqLVFOTzcxd29lQTBxWXdOZHBiaWdORDNzYUxheG43M09pUVBCbHlrLXAzWXQtZ3l3bGsxX3lPMVVqcGR4alJBYi02alBiMEI5VWd2ekhn?oc=5) | not_checked | research_news_review, watching, report_card_evidence |
 
 ## Meaning of states
 
