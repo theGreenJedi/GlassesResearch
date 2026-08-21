@@ -1,6 +1,25 @@
-# HeyCyan Lineage
+---
+description: "HeyCyan and CyanBridge smart-glasses lineage research covering W610, Anko, BLE, alternative companion software, owner control, and compatibility boundaries."
+---
+
+# HeyCyan / CyanBridge smart-glasses lineage
 
 The HeyCyan lineage groups smart glasses that are documented to participate in the same **HeyCyan software ecosystem**. This is a software/ecosystem lineage first. It does not imply that every member shares the same PCB, enclosure, ODM, firmware image, or manufacturer.
+
+## CyanBridge and the alternative HeyCyan software path
+
+**CyanBridge** is an independent community companion application and SDK for HeyCyan-compatible smart glasses. It matters because it demonstrates that at least part of the HeyCyan ecosystem can be used outside the stock vendor experience, including Bluetooth/BLE interaction, media handling, diagnostics, and owner-selected downstream AI endpoints.
+
+Current GlassesResearch evidence for CyanBridge includes:
+
+- the public [CyanBridge / Alternative HeyCyan App and SDK](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK) project;
+- its [release history](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases);
+- documented W610/HeyCyan media-transfer and owner-access research;
+- CyanBridge v2.1.1 support for remote OpenAI-compatible endpoints, including owner-controlled servers reachable over private networking.
+
+That is strong evidence for **companion-level openness and owner control**. It is not evidence that every HeyCyan-branded or marketplace rebrand is protocol-compatible, and it does not establish open firmware, an unlocked boot chain, or unrestricted low-level sensor access.
+
+See the [W610 research record](../research/populated/HEYCYAN.md) and [W610 community resources](../models/W610/COMMUNITY_MAP.md) for the deeper protocol and owner-control trail.
 
 ## Current confirmed members
 
