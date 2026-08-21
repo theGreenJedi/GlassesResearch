@@ -1,14 +1,14 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-08-21T07:57:18+00:00**
+Generated automatically: **2026-08-21T23:39:48+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-08-13 → 2026-08-19):** 667 impressions, 1 clicks, 0.15% CTR, average position 38.7.
-- **7-day change:** impressions +42.2%; clicks n/a.
-- **Rolling 28 days:** 1136 impressions, 1 clicks, 0.09% CTR, average position 32.1.
+- **Google, latest final 7 days (2026-08-13 → 2026-08-19):** 764 impressions, 2 clicks, 0.26% CTR, average position 38.3.
+- **7-day change:** impressions +62.9%; clicks n/a.
+- **Rolling 28 days:** 1233 impressions, 2 clicks, 0.16% CTR, average position 32.4.
 - **Milestone:** organic Google clicks appeared after a previous zero-click week.
 
 ## Google — top queries
@@ -31,36 +31,36 @@ Generated automatically: **2026-08-21T07:57:18+00:00**
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
 | https://glassesresearch.org/glossary/organizations/ORG-0002-goodway-techs/ | 1 | 2 | 50.00% | 8.0 |
+| https://glassesresearch.org/models/RayBanMetaGen2/ | 1 | 9 | 11.11% | 51.2 |
 | https://glassesresearch.org/ | 0 | 10 | 0.00% | 20.5 |
 | https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 3 | 0.00% | 1.0 |
 | https://glassesresearch.org/WHY/ | 0 | 5 | 0.00% | 5.0 |
-| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 2 | 0.00% | 46.0 |
+| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 3 | 0.00% | 61.3 |
 | https://glassesresearch.org/docs/ABOUT/ | 0 | 5 | 0.00% | 5.4 |
-| https://glassesresearch.org/docs/BLE/ | 0 | 4 | 0.00% | 24.0 |
+| https://glassesresearch.org/docs/BLE/ | 0 | 5 | 0.00% | 21.2 |
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 2 | 0.00% | 10.5 |
 | https://glassesresearch.org/docs/CONTRIBUTE/ | 0 | 3 | 0.00% | 8.7 |
-| https://glassesresearch.org/docs/ECOSYSTEM_SCOPE/ | 0 | 2 | 0.00% | 5.5 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **3,623 requests**, **757 HTTP visits**, **46.4 MB** served.
-- Rolling 7d: **29,834 requests**, **5,941 HTTP visits**, **401.9 MB** served.
+- Rolling 24h: **10,654 requests**, **672 HTTP visits**, **54.9 MB** served.
+- Rolling 7d: **34,833 requests**, **5,587 HTTP visits**, **372.2 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 2,278 | 622 |
-| SG | 482 | 19 |
-| DE | 229 | 18 |
-| NL | 114 | 0 |
-| GB | 68 | 2 |
-| BR | 63 | 18 |
-| FR | 58 | 3 |
-| SE | 56 | 6 |
-| BE | 52 | 4 |
-| CA | 50 | 6 |
+| FR | 6,805 | 224 |
+| US | 2,307 | 298 |
+| SG | 471 | 21 |
+| NL | 379 | 5 |
+| DE | 168 | 18 |
+| GB | 119 | 2 |
+| CA | 113 | 10 |
+| BR | 59 | 14 |
+| SE | 53 | 5 |
+| AU | 49 | 5 |
 
 ## What to watch
 
