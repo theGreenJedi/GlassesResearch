@@ -19,7 +19,7 @@ Current GlassesResearch evidence for CyanBridge includes:
 
 That is strong evidence for **companion-level openness and owner control**. It is not evidence that every HeyCyan-branded or marketplace rebrand is protocol-compatible, and it does not establish open firmware, an unlocked boot chain, or unrestricted low-level sensor access.
 
-See the [W610 research record](../research/populated/HEYCYAN.md) and [W610 community resources](../models/W610/COMMUNITY_MAP.md) for the deeper protocol and owner-control trail.
+See the [W610 research page](../models/W610/README.md) and [W610 community resources](../models/W610/COMMUNITY_MAP.md) for the deeper protocol and owner-control trail.
 
 ## Current confirmed members
 
