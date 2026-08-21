@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-21T04:27:06.754378+00:00`
+Generated: `2026-08-21T04:57:47.236745+00:00`
 
 - Intake files inspected: **70**
 - Candidates retained in this review window/history: **455**
@@ -55,7 +55,7 @@ Generated: `2026-08-21T04:27:06.754378+00:00`
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026: Ranked By The Experts \| VITURE](https://www.viture.com/blog/best-ar-glasses-2026-ranked-by-the-experts) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (202) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: AR, Audio And Top Picks Compared](https://wearablexp.com/smart-glasses/best-smart-glasses/) | reachable (200) | research_news_review |
