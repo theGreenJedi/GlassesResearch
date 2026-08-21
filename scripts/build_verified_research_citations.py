@@ -103,15 +103,11 @@ def main() -> int:
     index_records = []
     aggregate = []
     patched_articles = 0
-    seen_urls: set[str] = set()
 
     for event in events:
         event_id = event["id"]
         publication = event["publication"]
         suffix = event_id.lower()
-        if publication["canonical_url"] in seen_urls:
-            raise RuntimeError(f"Verified publications share a canonical URL: {publication['canonical_url']}")
-        seen_urls.add(publication["canonical_url"])
 
         csl = citation_record(event)
         (out_dir / f"{suffix}.json").write_text(
