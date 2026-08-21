@@ -46,7 +46,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 2
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
@@ -64,7 +64,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/detect_dispatch_delta.py --previous-ref HEAD^ --reject-historical-mutation
+          python scripts/detect_dispatch_delta.py --previous-ref "${{ github.event.pull_request.base.sha }}" --reject-historical-mutation
 
   publish:
     if: github.event_name != 'pull_request'
