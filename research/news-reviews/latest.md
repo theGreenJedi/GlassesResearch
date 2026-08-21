@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-21T14:13:15.377439+00:00`
+Generated: `2026-08-21T14:57:37.000423+00:00`
 
-- Intake files inspected: **75**
-- Candidates retained in this review window/history: **462**
+- Intake files inspected: **76**
+- Candidates retained in this review window/history: **464**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 138
+- `adjacent_radar`: 139
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 69
 - `rejected_noise`: 9
 - `source_monitor`: 16
-- `source_review`: 102
+- `source_review`: 103
 - `watching`: 78
 
 ## Action queue
@@ -54,7 +54,6 @@ Generated: `2026-08-21T14:13:15.377439+00:00`
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026: Ranked By The Experts \| VITURE](https://www.viture.com/blog/best-ar-glasses-2026-ranked-by-the-experts) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
@@ -69,6 +68,7 @@ Generated: `2026-08-21T14:13:15.377439+00:00`
 | normal | needs_editorial_verification | direct | [Danish political party seeks ban on Meta AI glasses over privacy, consent issues - aa.com.tr](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSHI1Q1RRN0ZvZXF4bjF3d3hUUV9jcDdlVDNTc2RMcHZZaEFsZnNWdFRKRnRkcnA2Z2JjX2E4Uzh5cHdhMEo3NjFZT2xpeXl2NGtTVG1TZW45N2h0Z202NmxzNWt3TVhTMWpSMk14Z2dJNng5dVU4REhkbzNNMVpKUmpMajBVaG5aSkFHTERmZ2FGTEJfSm5GV0VvME42b2ZUelVMT1EtMVVkWkJQVjM4NG5zMWNjLXIzUUE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Deploy Smart Glasses for Real-World Work \| Mentra](https://mentraglass.com/) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Google Gemini’s Biggest Update Yet: AI Agents, Omni AI, And Smart Glasses Legionnaires Disease (QfNVj64lLl) - Mshale](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBaX3Zvc3JZemhoNmNYWHE4emVJTzZVcXJOb2hFNHdWUl9mWTBmdjVuZ244WUViaF9RWF92UmdHSEM5OG1BMldFY2stYWpKUjhkaGExV0R5eWFJVlk?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Looking into the privacy safeguard features of AI smart glasses - CBS News](https://news.google.com/rss/articles/CBMimgFBVV95cUxOU2ctMW9RdUZ6ZWFtdUx6clJPeU04aVJER09jNENBN2JHZHJubWc1UmRyRW5RZmthakVlUmFSNFAxd21TR2hqNURlTFBsbnV6U3BrM21DSV9GTF9jOE1la2tpWVJ3UHJvNHdwaFJuOHIxTzRtai0wSV96dDlFZVBHZjY1MkxiM1RDeElzNlhGckJPdmE3VlN5YzFn?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta AI Glasses: Ray-Ban Meta & Oakley Meta](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta's AI Glasses Are Selling Millions But Critics Warn They Could Become a Privacy Nightmare - ibtimes.co.uk](https://news.google.com/rss/articles/CBMihwFBVV95cUxPNmg0OUkwUE9BUUp6UkkzLTlNR1htNE5mLTRNZ2R1NENJZWZlTEJRaExhU0I2ZGpYeGw0SXY0aHZsODdtamtEaEVIU21WWXBQTC04RHhsU0RYb1Q3dXdNWkZ4WWlXQm5jY09lVUVnWlo5aTFGWTJ4eFZGcXR0OF9HT1RjUnp0bmc?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta's AI Glasses Are Selling Millions But Critics Warn They Could Become a Privacy Nightmare - inkl](https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUZ5Tm1sSDNwU0VHVEc5NHFxZGpfMTBYZ3pBQU1mTDRuM0gxWi1iZGlhajRJRThycVNQdzdOSVFrTXZ2ZnlxZUdFeEw3OUVvRnlIUjg0WFJFc2Q4czVFZlNVTEV5Y2xEcEU5QVJ5b3h5TGFjNWRIQmsxUklDTE9kZUswc2VRX2ZjejBneG5kRkp4UDdMVDZDWXBsMlFCUWtxOHhkSWEyVTJRVkNvRzREMDFXZ1FuVnFRV0E?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -100,6 +100,7 @@ Generated: `2026-08-21T14:13:15.377439+00:00`
 | normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
+| normal | source_review | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | review (403) | research_news_review |
 | normal | source_review | direct | [OpenGlass: Turn Any Glasses into AI Smart Glasses for Just $20 with ...](https://www.seeedstudio.com/blog/2024/05/23/openglass-turn-any-glasses-into-ai-smart-glasses-for-just-20-with-xiao-esp32s3-sense/) | review (403) | research_news_review |
 | normal | source_review | direct | [Smart & AI Glasses - Best Buy](https://www.bestbuy.com/site/wearable-technology/smart-ai-glasses/pcmcat1780433535084.c?id=pcmcat1780433535084) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
 | low | source_review |  | [staging-pre-resync-2026-05-24: dev to staging (#2863)](https://github.com/Mentra-Community/MentraOS/releases/tag/staging-pre-resync-2026-05-24) | reachable (200) |  |
@@ -271,7 +272,6 @@ Generated: `2026-08-21T14:13:15.377439+00:00`
 | low | watching | adjacent | [Apple's Camera AirPods Leak: Stock Up 2% Amid AI Push - whalesbook.com](https://news.google.com/rss/articles/CBMizgFBVV95cUxPYWQ4ZEh6Yl9fTTVaaHlZekRKcDY4WThRaWF3TjNzckRDQjllT09jemtDQ1VGZ0NTRjlZTmpGamgxMDYwWmY5VXdMVlRYUHFtblBkWkpoLU9Sd2dwRTBWNHRndS1ILVRyRklIVUpBZEdiVlhMZEJWeWlHVlp4cTNMdG41Q0s0MnBSX29LVGpPS2FkdndvVWtfYWVDWVFMN2NQYzA5cXdaM1BHckgxZXB4ZThPNnhTZUl6YmpDSWhpOTh3WGQzQXFTN1NiX2g3UQ?oc=5) | not_checked | research_news_review, watching, adjacent_radar |
 | low | watching | speculative | [Apple's Camera-Equipped AI AirPods Remain On Track For 2027 Despite Video Leak - NDTV Profit](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQLWhucXZWTEJqVTgwSHJaQllBaWtnX3dWYmp1eFY1ZTNlVU5LVnpwZ3B1SVV2bnF6X1c5VER4ZFJwQVhqRjNJTkpjTzNNTHlLTk1TaVNuVGlJOXVqWl82UDQxa3B4TFE1ZzdHMjZwYWZnMmVxOU9NVXV4X3BLWkljZnBHcWhGVG5TejJNaG9udUpSa2hIVW1TamFNMXNoMGE2WXFPcDVBYjhBdnViQXlHaGNMeEVCRVJHU19rTUlNdHVfZ9IBygFBVV95cUxOREo5SHU5NkNFc2VzZUdxaTRVa0JnVl9SakNIUVQySzFaZmpVSjdpQXJ2a3VSZVp0N0Q2dU40aFBGX25CazhwZzNvbGV2QkgwZTM2SEpGMGhBZ0pnMkFVSGV4bWxTUl9xemk2dzFFNEJNY21sYlNub3FHNnhlR2stXzZHNVJ3ZnFjRkxieW9sb21qUWhZcm5NS00ybHQzZHF5d3pLTVRpZkxUR1hFUUhrMWVZRk5XX0h6ZnpET1J1TzZtbzhJejhXYUZB?oc=5) | not_checked | research_news_review, watching, report_card_evidence |
 | low | watching | adjacent | [Apple’s Camera-Equipped AI AirPods Remain on Track for 2027 Despite Video Leak - Bloomberg](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSVVraUU4YnVxbnhZVXBveHhSdVp5MHZJVXBub0NDN2dwUFg0eGs0eWR1Ri1wMHRaMzI3UTFiZFJWU3NHb3lOZVNrX2FVaURGTFBrUlA4TmozVlZKbEt5WXFQc19kN0NjZXFYWFdWT1VUQzE4cVluXzJhaGNmM05mUERIckFRc0RhbkxCd3o1dnd3WkItdHhUY3pVeWt2c0R0dE1OYWdCbzJaaU9kRWRrVXl6cDF3YmNTVy04WV9GTnR4NWdtTHozSQ?oc=5) | not_checked | research_news_review, watching, report_card_evidence, adjacent_radar |
-| low | watching | speculative | [Apple’s camera-equipped AI AirPods remain on track for 2027 despite video leak - The Business Times](https://news.google.com/rss/articles/CBMivgFBVV95cUxNb19XbzQ5VXVzNjJSdm9vRHFvaU1UdW1mMURzSFlwMG92WWhzcHJoT0NUTXg4RFJaUm5GZ0I1ZzRtdEZhaFFFQWc5WEMtUFE0cDZUR3AtcUd3RVl6ODVRVDVFdWMzN0d1cG5DcTZPcVlqLVFOTzcxd29lQTBxWXdOZHBiaWdORDNzYUxheG43M09pUVBCbHlrLXAzWXQtZ3l3bGsxX3lPMVVqcGR4alJBYi02alBiMEI5VWd2ekhn?oc=5) | not_checked | research_news_review, watching, report_card_evidence |
 
 ## Meaning of states
 
