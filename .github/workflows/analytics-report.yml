@@ -8,6 +8,8 @@ on:
       - 'scripts/analytics_report.py'
       - 'scripts/analytics_history.py'
       - 'scripts/search_opportunities.py'
+      - 'scripts/search_impact.py'
+      - 'analytics/search-interventions.json'
       - '.github/workflows/analytics-report.yml'
   schedule:
     - cron: '15 7 * * *'
@@ -36,6 +38,9 @@ jobs:
       - name: Install analytics dependencies
         run: python -m pip install --quiet requests google-auth
 
+      - name: Validate search intervention manifest
+        run: python scripts/search_impact.py --validate-only
+
       - name: Generate consolidated report
         env:
           GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
@@ -50,6 +55,12 @@ jobs:
           GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
         run: python scripts/search_opportunities.py
 
+      - name: Measure evidence-led search impact
+        env:
+          GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
+          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
+        run: python scripts/search_impact.py
+
       - name: Update long-range analytics series
         env:
           GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
@@ -58,7 +69,7 @@ jobs:
           CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
         run: python scripts/analytics_history.py
 
-      - name: Publish latest snapshot, opportunities, and history
+      - name: Publish latest snapshot, opportunities, impact, and history
         shell: bash
         run: |
           set -euo pipefail
@@ -77,6 +88,8 @@ jobs:
           cp analytics/latest.json "$tmpdir/analytics/latest.json"
           cp analytics/search-opportunities.md "$tmpdir/analytics/search-opportunities.md"
           cp analytics/search-opportunities.json "$tmpdir/analytics/search-opportunities.json"
+          cp analytics/search-impact.md "$tmpdir/analytics/search-impact.md"
+          cp analytics/search-impact.json "$tmpdir/analytics/search-impact.json"
           cp "$history_file" "$tmpdir/$history_file"
           cp -a analytics/series/. "$tmpdir/analytics/series/"
 
@@ -88,17 +101,19 @@ jobs:
             cp "$tmpdir/analytics/latest.json" analytics/latest.json
             cp "$tmpdir/analytics/search-opportunities.md" analytics/search-opportunities.md
             cp "$tmpdir/analytics/search-opportunities.json" analytics/search-opportunities.json
+            cp "$tmpdir/analytics/search-impact.md" analytics/search-impact.md
+            cp "$tmpdir/analytics/search-impact.json" analytics/search-impact.json
             cp "$tmpdir/$history_file" "$history_file"
             rm -rf analytics/series
             mkdir -p analytics/series
             cp -a "$tmpdir/analytics/series/." analytics/series/
 
-            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json analytics/search-opportunities.md analytics/search-opportunities.json "$history_file" analytics/series/)" ]; then
+            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/)" ]; then
               echo 'Analytics snapshot already current.'
               exit 0
             fi
 
-            git add analytics/latest.md analytics/latest.json analytics/search-opportunities.md analytics/search-opportunities.json "$history_file" analytics/series/
+            git add analytics/latest.md analytics/latest.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/
             git commit -m "analytics: refresh automated report"
             if git push origin HEAD:main; then
               exit 0
@@ -123,4 +138,8 @@ jobs:
           if [ -f analytics/search-opportunities.md ]; then
             printf '\n\n' >> "$GITHUB_STEP_SUMMARY"
             cat analytics/search-opportunities.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f analytics/search-impact.md ]; then
+            printf '\n\n' >> "$GITHUB_STEP_SUMMARY"
+            cat analytics/search-impact.md >> "$GITHUB_STEP_SUMMARY"
           fi
