@@ -16,7 +16,7 @@ EXPECTED_RESOURCES = {
     "relationships": ("relationships.json", "application/json"),
     "evidence-resources": ("evidence-resources.json", "application/json"),
     "ecosystem-relations": ("ecosystem-relations.json", "application/json"),
-    "model-schema": ("schema.json", "application/schema+json"),
+    "model-schema": ("schema.json", "application/json"),
 }
 
 
