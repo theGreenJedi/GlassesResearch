@@ -23,3 +23,9 @@ Sources: [December 2025 Quark launch](https://www.alibabacloud.com/blog/602717) 
 Qwen Glasses G1 is Alibaba's camera-first, no-display everyday AI-glasses series, originally launched as **Quark AI Glasses G1** and renamed under the Qwen Glasses brand alongside S1. Alibaba states that G1 shares the S1's core hardware except for the display and claims a 40 g weight, but GlassesResearch does not inherit S1 specifications or Report Card scores into G1 without model-specific evidence. China retail availability is established; international availability, direct-device development access, owner-selectable AI, firmware access and cloud-independent operation remain unverified.
 
 Sources: [December 2025 Quark launch](https://www.alibabacloud.com/blog/602717) · [March 2026 Qwen launch](https://www.alibabacloud.com/blog/alibaba-unveils-qwen-glasses-at-mwc-barcelona-accelerating-ai-hardware-ambitions_602920)
+
+## GLS-0163 — L'Atitude 52°N Milan
+
+Milan is the panto-frame sibling to L'Atitude 52°N's canonical Berlin model, marketed as a distinct frame in the Departure Collection rather than as a colorway or alias. On 2026-08-21 its manufacturer page crossed the canonical acquisition threshold by accepting a **$449 paid preorder**, with Obsidian shipment stated from August 25 and Olive from September 6. Milan's own page documents a 12 MP Sony IMX681 camera, 1080p30 video, five microphones, dual open-ear speakers, Wi-Fi 6, Bluetooth 5.4 LE, 32 GB storage, a 200 mAh battery, prescription-ready local-optician fitting, and Goya AI powered by Google Gemini. Firmware ownership, direct-device SDK/API access and cloud-independent operation remain unknown.
+
+Source: [L'Atitude 52°N — Milan](https://www.latitude52n.com/products/milan-smart-glasses)
