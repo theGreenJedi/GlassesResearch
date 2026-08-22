@@ -17,7 +17,7 @@ RESOURCE_SPECS = (
     ("relationships", "relationships.json", "Stable lineage relationships", "json", "application/json"),
     ("evidence-resources", "evidence-resources.json", "Evidence-resource registry", "json", "application/json"),
     ("ecosystem-relations", "ecosystem-relations.json", "Ecosystem relationship graph", "json", "application/json"),
-    ("model-schema", "schema.json", "Per-model JSON Schema", "json", "application/schema+json"),
+    ("model-schema", "schema.json", "Per-model JSON Schema", "json", "application/json"),
 )
 
 CSV_SCHEMA = {
