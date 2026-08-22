@@ -117,7 +117,10 @@ def main() -> int:
             fail(f"DCAT checksum node missing for {name}")
         if checksum.get("spdx:algorithm", {}).get("@id") != "http://spdx.org/rdf/terms#checksumAlgorithm_sha256":
             fail(f"DCAT checksum algorithm drifted for {name}")
-        if checksum.get("spdx:checksumValue") != checksums.get(filename):
+        checksum_value = checksum.get("spdx:checksumValue", {})
+        if checksum_value.get("@type") != "xsd:hexBinary":
+            fail(f"DCAT checksum value is not typed as xsd:hexBinary for {name}")
+        if checksum_value.get("@value") != checksums.get(filename):
             fail(f"DCAT checksum value drifted for {name}")
 
     page = (dataset / "index.md").read_text(encoding="utf-8")
