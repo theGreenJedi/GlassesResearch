@@ -1,6 +1,6 @@
 # Model Research Chapters
 
-[`The List`](THE_LIST.md) is the canonical smart-glasses index. Following the 2026-08-12 lineage reconciliation, the smart-glasses ledger reached **145** purchasable models and generations; the later retirement of unsupported `GLS-0032` reduced that to **144 active canonical records**, and the subsequent addition of `GLS-0146` (Snap SPECS) returns the active canonical count to **159**. The stable additions `GLS-0122` through `GLS-0145` are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md), while later corrections and additions remain anchored by the permanent identifier policy. Devices that belong to the same augmented-human research universe but are not fundamentally eyewear live in the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) and are never silently included in the smart-glasses count.
+[`The List`](THE_LIST.md) is the canonical smart-glasses index. Following the 2026-08-12 lineage reconciliation, the smart-glasses ledger reached **145** purchasable models and generations; the later retirement of unsupported `GLS-0032` reduced that to **144 active canonical records**, and the subsequent addition of `GLS-0146` (Snap SPECS) returns the active canonical count to **161**. The stable additions `GLS-0122` through `GLS-0145` are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md), while later corrections and additions remain anchored by the permanent identifier policy. Devices that belong to the same augmented-human research universe but are not fundamentally eyewear live in the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) and are never silently included in the smart-glasses count.
 
 ## Canonical catalogs
 
@@ -11,7 +11,7 @@
 
 ## Read the models, not just the database
 
-The human-readable profile library now contains an evidence-backed paragraph for **every one of the 159 active canonical smart-glasses records**. A paragraph is not permission to guess: when acquisition is established but generation-specific internals remain incomplete, the profile says so explicitly and points to the unresolved archival work rather than borrowing specifications from a neighboring generation.
+The human-readable profile library now contains an evidence-backed paragraph for **every one of the 161 active canonical smart-glasses records**. A paragraph is not permission to guess: when acquisition is established but generation-specific internals remain incomplete, the profile says so explicitly and points to the unresolved archival work rather than borrowing specifications from a neighboring generation.
 
 Editorial volumes:
 
