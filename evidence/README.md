@@ -65,3 +65,5 @@ cross-model findings:
 - [`EV-0076-Maverick-AI-Pro-user-video-lead.md`](EV-0076-Maverick-AI-Pro-user-video-lead.md) — user-supplied hands-on lead preserved without promoting claims that could not be reproduced.
 
 - [`EV-0077-MemoMind-One-primary-product.md`](EV-0077-MemoMind-One-primary-product.md) — MemoMind/XGIMI primary product and lineage evidence, with crowdfunding and owner-control unknowns preserved.
+
+- [`EV-0079-AG05-NAMIOT-regulatory-identity.md`](EV-0079-AG05-NAMIOT-regulatory-identity.md) — FCC original-equipment identity and filed hardware/companion-app evidence, with manufacturer-claim boundaries preserved.
