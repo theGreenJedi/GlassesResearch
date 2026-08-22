@@ -1,6 +1,6 @@
 # GlassesResearch Search Impact
 
-Google Search Console finalized data through **2026-08-19**.
+Google Search Console finalized data through **2026-08-20**.
 
 > This report measures evidence-led research changes. It is not a ranking target, keyword quota, or instruction to optimize irrelevant queries.
 

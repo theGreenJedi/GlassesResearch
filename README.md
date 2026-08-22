@@ -100,7 +100,7 @@
     </a>
     <a href="hacking/">
       <span class="gr-card-number">03</span>
-      <strong>Development &amp; Hacking</strong>
+      <strong>Development</strong>
       <span>Follow SDKs, APIs, BLE, firmware, local AI, companion apps, and routes around unnecessary lock-in.</span>
     </a>
     <a href="docs/INDUSTRY_TIMELINE/">
