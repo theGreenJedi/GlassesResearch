@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-22T13:56:30.359659+00:00`
+Generated: `2026-08-22T14:42:39.838737+00:00`
 
-- Intake files inspected: **97**
-- Candidates retained in this review window/history: **553**
+- Intake files inspected: **98**
+- Candidates retained in this review window/history: **554**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,10 +12,10 @@ Generated: `2026-08-22T13:56:30.359659+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 117
+- `needs_editorial_verification`: 120
 - `rejected_noise`: 9
 - `source_monitor`: 16
-- `source_review`: 105
+- `source_review`: 103
 - `watching`: 83
 
 ## Action queue
@@ -57,12 +57,14 @@ Generated: `2026-08-22T13:56:30.359659+00:00`
 | normal | needs_editorial_verification | direct | [7 Smart Glasses In 2026 That Reveal The Biggest Wearable Shifts – Here ...](https://glassalmanac.com/7-smart-glasses-in-2026-that-reveal-the-biggest-wearable-shifts-heres-why/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses are Here. So Is the Privacy Problem - sify.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUTZPLUljc3Q4WXJzVzZsVlc5NUEyOEUyc1JNNG5iRUJhdFRuc0hwUlZTQTM0UUZGaTY0RzVacmcwaVBTY2tHejFfdURGenRCNzlieTlkWERtNktJVzZkTExudUt2eTdycVRHV1VxdWtmdV9PSnJVNy0yZHh1ZkxQcUhSSzctRmM?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026: Ranked By The Experts \| VITURE](https://www.viture.com/blog/best-ar-glasses-2026-ranked-by-the-experts) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Best New Smart Glasses Arriving in 2026 - Geeky Gadgets](https://www.geeky-gadgets.com/best-smart-glasses-2026-compared/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (202) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: AR, Audio And Top Picks Compared](https://wearablexp.com/smart-glasses/best-smart-glasses/) | reachable (200) | research_news_review |
@@ -111,6 +113,7 @@ Generated: `2026-08-22T13:56:30.359659+00:00`
 | normal | needs_editorial_verification | direct | [TOZO AIVU AI Glasses Surpass $100,000 on Kickstarter with Tinted Waveguide Innovation - ACCESS Newswire](https://news.google.com/rss/articles/CBMi5AFBVV95cUxNc0tsaHB1RUFIU2NtZEhuanhMSHFrTU9VSTktMFFrblVqdWdQeUNQQktGRkN3V2R6X0dkWWgzS05DcTNURDlZd1NtZXVUcWRNakphNFdLWUpTOUROdzVFY2kwM2M1ZzJ0Rkd2SjEwRjJvZi1BMzJWSmJIbk04OFp3ZHFkZ2ZvSmRvVE1xXzRuWFhoYkMxQmhGOUpBZExNMEtNZFE5VkQwVG5PRVU0RUlkVVJBY2hiUm53S09McEtoY3lIZmpYcDFFQjRuYU1pMFFRTVktNUU3bmJQM05wZXJ3ZEJ1alA?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [TOZO AIVU AI Glasses Surpass $100,000 on Kickstarter with Tinted Waveguide Innovation - citynewsokc.com](https://news.google.com/rss/articles/CBMingJBVV95cUxQVTJldUpSMjRuWTVsRmx5YU5jd19Zc3l4MTBzX0Qyakk0OGJoY3pFemQ5bWRQYUphQVg3dUNOUzRVU2dmYmxyRmxPRmNFRkJYckhEVEZhVDhJZmlRUDNCVnUyZWdURjZhSHpkckJWTi1waFlOcnlOVWxrLTBzYnhTdmJOdERaSzNFNXpwWGkzUnJScVhwSWg2YUp1eXNfTmVkYUF2OWZCbXpRa3RkcmRzeFJISGVEYVNfQW8xYk52UnI4NF9xQ3pFbkZpMC1Qb3Z1Nmxxd2tvOHAtODlzOXNFZEZQRTVUSjVLNGZnSVdNZDl4Mjh6ckpuZG5EVUg1WkFjb09CaVRqMjNYWnFwMEhnRE52eTNFdWh6TDh3TUFB?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [TOZO AIVU AI Glasses Surpass $100,000 on Kickstarter with Tinted Waveguide Innovation - Digital Journal](https://news.google.com/rss/articles/CBMioAFBVV95cUxOMzFkMVZwWmVvZWFkVEd1N0pSNTBIMmZsUG91dk5kM0tDV3RvQ0cwRWQ4MEZ1OFZ5WVIyVk80MWxZWEo0TGxCSUtUb2Z3dHVxRkJCOTdlTkkxRVdjWFVNa2dYT2FTVGpvNEp4ajF0TVdELXVQdnEtY0ZNMmlVNGZSczIyQnZxa0ZGazh4ME1FTF9FLUJ2dV9IZ0RodnhyUXd5?oc=5) | reachable (200) | research_news_review, research_optics, deep_research |
+| normal | needs_editorial_verification | direct | [TOZO AIVU AI Glasses Surpass $100,000 on Kickstarter with Tinted Waveguide Innovation - Fairbanks Daily News-Miner](https://news.google.com/rss/articles/CBMimwJBVV95cUxQUzVZLW5tMDV2ZUNtYWhncEc2clM4emZVcEpzZFdBeW1OZ2tJTmE3eEVFMHdSbnpEVkhWY0ltTDF1Y1JDQlYxU0xtZTZvRXQ0SW5JWnFmcGh4VzFTRTJKSmR6QW83czRyUGpuVXVOWE81UVpXLV96YmZrTTdYWmpITXhLMEJsODNWbVYteUM5NThDbUJqUzJlbW1aTW5jUVlZWnJrWTY5U0JtYTBHMFVVWlBDOGlYTHc4YkliOFVIV3hsMUhUU1hkUVVhTURWVVdiS2NCTXRIUU01WjJKbnJXREd4QVVGbW5ad0NYZGxReERnQUJrOGZMOEFya3RYSVNzRnlpZktZcVlfTUltYmRjcUstd2pab2RJc2w4?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [TOZO AIVU AI Glasses Surpass $100,000 on Kickstarter with Tinted Waveguide Innovation - Fairfax County Times](https://news.google.com/rss/articles/CBMinwJBVV95cUxOTS1JcGhmOWlqRVVQV25rYkluRkRhRGdZcmNheDRwTUVUMjVnS05xRTBHVDczTlROQVJBTGhGbEpmYWk4TjJGbGFzdnY2T3hsTTJNcVhlZkFkYTZrZEM5VWYtU21hNHBsY2I1MmtFSHJfMVA0MmN1TkRiNThDOHJkU2o5UHdZUmkzZFhRYTI1SVpSaGRLamZ6Y3lzMW5DNU1jTEgwT3hWZV8wVzdLb2NiZVJTSFB2U1RXMElTSkdkOEtVVXBzaGIzRzVyVmVTXzRWclBwN25tNjJkakhNTWYtRzdSalMwYklxeUZfdWlQZ3FnYVlHajlaWWN4LVI5UzhScGJMTFBoTVNUWW5ibGpPYmg1dXd6bVdZb3RJME1Rbw?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [TOZO AIVU AI Glasses Surpass $100,000 on Kickstarter with Tinted Waveguide Innovation - FinancialContent](https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTks5SFVLS25rblQtT2xaMEhkb3hyRWNadnpORnJTRVlST3BUV3ZWaHFXSWx4VlktcVEtTFd6UGpGeTNULW10N3JReC0yM2trNTYyaHEtMkFLc093NnI4Rl9scFN3a1VoWTRmMklndUxBYUlKWlM4X28teTJ1MVBVWWNMcFVNTEN6cHlFcXA3TWtabnUzQkVHTDZzV1M3UnpSWHVpV3E4Q2dQd2JfMFVITDhDNmFNbkVmZlh2Uk1ZeHpudFFqZGFHenZLaHFEdlB2QWZ6bkoxeHBYQ3Nx?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [TOZO AIVU AI Glasses Surpass $100,000 on Kickstarter with Tinted Waveguide Innovation - FinancialContent](https://news.google.com/rss/articles/CBMi6AFBVV95cUxQc21IeEE5dGpLVEdhbU52a2UwcnRZU053bmY0YWhpaEZYWUJsbXlIZUlySVFXd3JDLV8tNUZqSXh6aWJ3ejdDRlZHWWJObFY2SVNCX3ZrM0Nud2VPTVF5aTZxLVlTZ0M5dU5Wb1pDLU00M1JDT2phTTRoT25ib0Jfa3BGOXdZWHM5T1RWVElpUVJQRm4yMVBCdXlPXzJqSGdWS3VNU1VyZ0lseGpyZFBYRF82RUhRZ2pOZHNSNklOR3NUWXg3OUFMeWlnOWxiZ1hUMGQtN1ZtLWNTNm9oT2xZSUVSZk1UYXVB?oc=5) | reachable (200) | research_news_review, research_optics |
@@ -147,9 +150,7 @@ Generated: `2026-08-22T13:56:30.359659+00:00`
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
 | normal | source_review | direct | [AI Glasses - Best Buy](https://www.bestbuy.com/site/smart-ai-glasses/ai-glasses/pcmcat1780433669350.c?id=pcmcat1780433669350) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
-| normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
-| normal | source_review | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | review (403) | research_news_review |
 | normal | source_review | direct | [Best Smart Glasses 2026: VITURE Wins Both AR/XR Glasses Crowns ...](https://shop.viture.com/blogs/preview/best-smart-glasses-2026-viture-wins-both-ar-xr-glasses-crowns-flagship-and-budget) | review (404) | research_news_review |
 | normal | source_review | direct | [OpenGlass: Turn Any Glasses into AI Smart Glasses for Just $20 with ...](https://www.seeedstudio.com/blog/2024/05/23/openglass-turn-any-glasses-into-ai-smart-glasses-for-just-20-with-xiao-esp32s3-sense/) | review (403) | research_news_review |
 | normal | source_review | direct | [Smart & AI Glasses - Best Buy](https://www.bestbuy.com/site/wearable-technology/smart-ai-glasses/pcmcat1780433535084.c?id=pcmcat1780433535084) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
@@ -271,7 +272,6 @@ Generated: `2026-08-22T13:56:30.359659+00:00`
 | normal | catalog_review | direct | [Manufacturer catalog lead: keeping your smart glasses safe with ip65](https://www.latitude52n.com/blogs/news/keeping-your-smart-glasses-safe-with-ip65) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | catalog_review | direct | [Manufacturer catalog lead: latitude 52 n at berlin fashion week impari partnership](https://www.latitude52n.com/blogs/news/latitude-52-n-at-berlin-fashion-week-impari-partnership) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | catalog_review | direct | [Manufacturer catalog lead: LUCYD LYTE](https://lucyd.co/pages/lyte-collection) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | catalog_review | direct | [Manufacturer catalog lead: MAVERICK AI](https://www.everysight.com/pages/maverick-ai) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 
 ## Meaning of states
 
