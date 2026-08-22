@@ -14,6 +14,7 @@ A compact map of GlassesResearch. Use the Finder when choosing glasses; use Rese
 ## Research & News
 
 - [Research & News](RESEARCH_NEWS.md)
+- [Who Actually Makes These Glasses? — Shenzhen smart-glasses supply-chain investigation](SHENZHEN_SMART_GLASSES_SUPPLY_CHAIN.md)
 - [Industry timeline](INDUSTRY_TIMELINE.md)
 - [News archive and trackers](news/README.md)
 - [Technical evidence library](../evidence/README.md)
