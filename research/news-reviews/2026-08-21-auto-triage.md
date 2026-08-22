@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-22T01:54:24.532047+00:00`
+Generated: `2026-08-22T03:11:53.769670+00:00`
 
-- Intake files inspected: **84**
-- Candidates retained in this review window/history: **485**
+- Intake files inspected: **85**
+- Candidates retained in this review window/history: **487**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,7 +12,7 @@ Generated: `2026-08-22T01:54:24.532047+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 86
+- `needs_editorial_verification`: 88
 - `rejected_noise`: 9
 - `source_monitor`: 16
 - `source_review`: 103
@@ -56,7 +56,7 @@ Generated: `2026-08-22T01:54:24.532047+00:00`
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026: Ranked By The Experts \| VITURE](https://www.viture.com/blog/best-ar-glasses-2026-ranked-by-the-experts) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (202) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: AR, Audio And Top Picks Compared](https://wearablexp.com/smart-glasses/best-smart-glasses/) | reachable (200) | research_news_review |
@@ -75,7 +75,9 @@ Generated: `2026-08-22T01:54:24.532047+00:00`
 | normal | needs_editorial_verification | direct | [Meta AI glasses spark fears about privacy - Modern Ghana](https://news.google.com/rss/articles/CBMiX0FVX3lxTFBZSDF2VTFobEhydnN2RmozWDBKVWw2SF9MTVlwblJNTWtfdTZXRWJGdm1UenlwLVpCajlwdU1mTDBSZEx5aTNXb0cwU3F6NDFXUllTY3JsbmRsSFVYalJJ0gFcQVVfeXFMTmxhMEN4R3BuN2FPU3hWNmNYMTFLaWRlbjJ1djhSbkNGNzZLZ2t1TnZxQVJ1eV9vRFN1dUNPNGVaeENEVEx5NWFwd3Z0al9Xc1NYdUtQemN0bUpjNEg?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta AI glasses spark fears about privacy - Modern Ghana](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jakduMVBWZk1pQTNrUDNYVTA0bzVGdHpzR2FYWEpXYmNCUVNKemhzWFo1V0VQVXlqQWpQNXBJTk1uWUU5Z01aUUxyLVJFMmJLNGVfR1dMc09heHppb2xV0gFcQVVfeXFMTmxhMEN4R3BuN2FPU3hWNmNYMTFLaWRlbjJ1djhSbkNGNzZLZ2t1TnZxQVJ1eV9vRFN1dUNPNGVaeENEVEx5NWFwd3Z0al9Xc1NYdUtQemN0bUpjNEg?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta AI glasses spark privacy concerns over covert recording - cbs19.tv](https://news.google.com/rss/articles/CBMiywFBVV95cUxPZWdDaFNIblpzWjRTWmc3TEdndnF1eVBhenNGaUk4ZVRDbGFmRXZOZklQejNKNWpPUndFRUxZZmJEdGgwUG5PX0NjUG9MOEhxTVJfdEM5eTN1SnJtRFBsSHF0NXVfRDg5elJ1MFJvLWVjUTlMNG5MXzJncE02eFBmUTAxY0NQNk82MFVTMWcxTlNOc0tTdENyZFRocHZ3RkQxY1lNbWx2VGV2ekxvNlV0VXdEQ3FvYTI5WnI4ZEliTVAzUHIxdlFiaUlyZw?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Meta AI glasses spark privacy debate after viral covert video - cbs8.com](https://news.google.com/rss/articles/CBMizwFBVV95cUxQRllmS0gyaFVLc2pjYnZMb3ZCT1Uwek9GUmZkTktaOUlzNjBVMGlJSkFKYjgzUDJwVDlsRzMzb0ZlOXEwcERuaUlLVnpsWHRxRnBXLVJPWDQxcVVLTmV2UHhxdlQ3eHU2bXJ4TG9sdXVwT0NUTXllaWNaUG9LODVBMy1fV2NkSjJLQlp3TmhGOVYtcG96bl95VFhPRlVzdVZQd1JTcFZWM3ZkWFFuZmRnY19FNkYxT0NYcV9MbGwtd3ZFakh3b1V3TU43c1V1c1E?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta AI Glasses: Ray-Ban Meta & Oakley Meta](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Meta AI Smart Glasses Raise Privacy Questions After Woman Says She Was Secretly Recorded - Law Commentary](https://news.google.com/rss/articles/CBMixgFBVV95cUxQeUllSTRURlVqZHZKdFRndlBBMUdRSDBZMko4ejF3eDlsU2RGQmJJbk9UbW9oLWtHM0xSWG1vOUl2djJENE5zRkUzcDlvZWUtUllvakc5eFZOejhnRl85RHg0T09pWjZhY3FtQkdSemJ6RnFKcmFvOHN4YlppTlU4UnlTT0dYeWtLS3JhS1p4My1DWDVtUjBCdVZDZ1dwcGhjd0tKVWsyYVMyU0pkbjRxWWE4VERsbC1mMGlKWUdUdzFIbGJ1ZEE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta's AI Glasses Are Selling Millions But Critics Warn They Could Become a Privacy Nightmare - ibtimes.co.uk](https://news.google.com/rss/articles/CBMihwFBVV95cUxPNmg0OUkwUE9BUUp6UkkzLTlNR1htNE5mLTRNZ2R1NENJZWZlTEJRaExhU0I2ZGpYeGw0SXY0aHZsODdtamtEaEVIU21WWXBQTC04RHhsU0RYb1Q3dXdNWkZ4WWlXQm5jY09lVUVnWlo5aTFGWTJ4eFZGcXR0OF9HT1RjUnp0bmc?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta's AI Glasses Are Selling Millions But Critics Warn They Could Become a Privacy Nightmare - inkl](https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUZ5Tm1sSDNwU0VHVEc5NHFxZGpfMTBYZ3pBQU1mTDRuM0gxWi1iZGlhajRJRThycVNQdzdOSVFrTXZ2ZnlxZUdFeEw3OUVvRnlIUjg0WFJFc2Q4czVFZlNVTEV5Y2xEcEU5QVJ5b3h5TGFjNWRIQmsxUklDTE9kZUswc2VRX2ZjejBneG5kRkp4UDdMVDZDWXBsMlFCUWtxOHhkSWEyVTJRVkNvRzREMDFXZ1FuVnFRV0E?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta's AI glasses spark privacy concerns - CBS News](https://news.google.com/rss/articles/CBMihAFBVV95cUxPbjVEWldJdnpYZ2txalhUeDRQZ2FoVFZFMTYteHVsUnBWT0Utb3piSDJ3ZnItN2Q3LVZSTFNrT3FXYUxjcVc5WExCcXJIMkFld3g2OXBPQWlYUWRiWUZ6REtEVjJGNUxiVHdhZjVaRjNyNHZQVTF0Nmo2aVRhWm1OWGNrU3Y?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -270,8 +272,6 @@ Generated: `2026-08-22T01:54:24.532047+00:00`
 | low | source_monitor |  | [Manufacturer/source watch: Vuzix Blog – Vuzix Corporation](https://www.vuzix.com/blogs/vuzix-blog) | reachable (200) |  |
 | low | source_monitor |  | [Manufacturer/source watch: Latest Smart Glasses News Today – RayNeo](https://www.rayneo.com/blogs/news) | reachable (200) |  |
 | low | source_monitor |  | [Manufacturer/source watch: Newsroom \| Meta Newsroom](https://about.fb.com/news/) | reachable (200) |  |
-| low | source_monitor |  | [Manufacturer/source watch: Smart Glasses Blog & Guides \| Even Realities](https://www.evenrealities.com/blog) | reachable (200) |  |
-| low | source_monitor |  | [Manufacturer/source watch: Snapchat News, Announcements, & Updates \| Snap Newsroom](https://newsroom.snap.com/) | reachable (200) |  |
 
 ## Meaning of states
 
