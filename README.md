@@ -20,7 +20,7 @@
     <div class="home-status" id="homepage-status" aria-label="Research status">
       <div><strong data-site-stat="models">Living catalog</strong><span>canonical models</span></div>
       <div><strong data-site-stat="report-cards">Scored research</strong><span>Report Cards</span></div>
-      <div><strong data-site-stat="freshness">Continuously built</strong><span>site freshness</span></div>
+      <div><strong data-site-stat="freshness">Continuously built</strong><span>catalog updated</span></div>
     </div>
   </div>
 </section>
