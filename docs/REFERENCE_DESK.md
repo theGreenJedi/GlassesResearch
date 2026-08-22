@@ -45,8 +45,9 @@ Standalone verified Research & News articles expose BibTeX and CSL-JSON directly
 
 `Unknown`, `N/A`, and verified `No` are different states. A missing score or capability is not a negative finding. The [Research Standards](/docs/RESEARCH_STANDARDS/) explain evidence handling, and the [research challenge process](/docs/RESEARCH_CHALLENGES/) is the correction path for stronger or conflicting evidence.
 
-## Technical and historical material
+## Technical, provenance, and historical material
 
+- [Who Actually Makes These Glasses?](SHENZHEN_SMART_GLASSES_SUPPLY_CHAIN.md) — living investigation into the silicon vendors, solution houses, ODMs, factories, app operators, brands, and resellers behind recurring Shenzhen smart-glasses platforms
 - [Open Development Resource Ledger](../hacking/OPEN_HACKING_RESOURCE_LEDGER.md) — direct SDK, API, BLE-protocol, firmware, open-hardware, and developer resources with primary/community evidence boundaries
 - [Development & Hacking](/hacking/)
 - [Industry timeline](/docs/INDUSTRY_TIMELINE/)
