@@ -53,6 +53,7 @@ def resource_descriptor(public: Path, manifest: dict, name: str, filename: str, 
     if not path.is_file() or not checksum:
         raise RuntimeError(f"dataset interoperability resource is missing or unhashed: {filename}")
     descriptor = {
+        "profile": "data-resource",
         "name": name,
         "path": f"{PUBLIC_URL}/{filename}",
         "title": title,
@@ -71,6 +72,7 @@ def resource_descriptor(public: Path, manifest: dict, name: str, filename: str, 
 def build_datapackage(public: Path, manifest: dict) -> dict:
     resources = [resource_descriptor(public, manifest, *spec) for spec in RESOURCE_SPECS]
     return {
+        "profile": "data-package",
         "name": "glassesresearch-open-smart-glasses-dataset",
         "id": DATASET_URL,
         "title": "GlassesResearch Open Smart-Glasses Dataset",
