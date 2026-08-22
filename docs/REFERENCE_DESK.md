@@ -47,6 +47,7 @@ Standalone verified Research & News articles expose BibTeX and CSL-JSON directly
 
 ## Technical and historical material
 
+- [Open Development Resource Ledger](../hacking/OPEN_HACKING_RESOURCE_LEDGER.md) — direct SDK, API, BLE-protocol, firmware, open-hardware, and developer resources with primary/community evidence boundaries
 - [Development & Hacking](/hacking/)
 - [Industry timeline](/docs/INDUSTRY_TIMELINE/)
 - [Technology lineages](/lineages/)
