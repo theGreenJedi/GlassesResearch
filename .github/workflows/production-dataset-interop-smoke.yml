@@ -1,0 +1,189 @@
+name: Verify production dataset interoperability
+
+on:
+  workflow_run:
+    workflows: ["Deploy documentation site"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-dataset-interop-smoke
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify live dataset descriptors and resources
+        shell: bash
+        env:
+          WORKFLOW_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          set -euo pipefail
+          expected_sha="${WORKFLOW_HEAD_SHA:-$GITHUB_SHA}"
+          export EXPECTED_SHA="$expected_sha"
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          import time
+          import urllib.error
+          import urllib.request
+
+          BASE = "https://glassesresearch.org"
+          EXPECTED_SHA = os.environ["EXPECTED_SHA"]
+          RUN_ID = os.environ["GITHUB_RUN_ID"]
+
+          def fetch(path: str, *, attempts: int = 6) -> bytes:
+              separator = "&" if "?" in path else "?"
+              url = f"{BASE}{path}{separator}production-smoke={EXPECTED_SHA}-{RUN_ID}"
+              last_error = None
+              for attempt in range(1, attempts + 1):
+                  request = urllib.request.Request(
+                      url,
+                      headers={
+                          "Cache-Control": "no-cache",
+                          "Pragma": "no-cache",
+                          "User-Agent": "GlassesResearch-production-smoke/1.0",
+                      },
+                  )
+                  try:
+                      with urllib.request.urlopen(request, timeout=25) as response:
+                          if response.status != 200:
+                              raise RuntimeError(f"{path}: HTTP {response.status}")
+                          return response.read()
+                  except (urllib.error.URLError, TimeoutError, RuntimeError) as exc:
+                      last_error = exc
+                      if attempt < attempts:
+                          time.sleep(10)
+              raise RuntimeError(f"{path}: failed after {attempts} attempts: {last_error}")
+
+          def as_json(path: str) -> dict:
+              return json.loads(fetch(path).decode("utf-8"))
+
+          deployment = as_json("/deployment.json")
+          if deployment.get("sha") != EXPECTED_SHA:
+              raise RuntimeError(
+                  f"stale production deployment: expected {EXPECTED_SHA}, got {deployment.get('sha')}"
+              )
+
+          manifest = as_json("/data/public/manifest.json")
+          package = as_json("/dataset/datapackage.json")
+          dcat = as_json("/dataset/dcat.jsonld")
+          landing = fetch("/dataset/").decode("utf-8", errors="replace")
+
+          if package.get("profile") != "data-package":
+              raise RuntimeError("live Data Package profile is not data-package")
+          if package.get("glassesresearchVersion") != manifest.get("version"):
+              raise RuntimeError("live Data Package GRD version drifted from manifest")
+
+          expected = {
+              "models-csv": ("models.csv", "text/csv", "tabular-data-resource"),
+              "models-json": ("models.json", "application/json", "data-resource"),
+              "lineages": ("lineages.json", "application/json", "data-resource"),
+              "relationships": ("relationships.json", "application/json", "data-resource"),
+              "evidence-resources": ("evidence-resources.json", "application/json", "data-resource"),
+              "ecosystem-relations": ("ecosystem-relations.json", "application/json", "data-resource"),
+              "model-schema": ("schema.json", "application/json", "data-resource"),
+          }
+          resources = package.get("resources")
+          if not isinstance(resources, list):
+              raise RuntimeError("live Data Package resources is not a list")
+          by_name = {
+              resource.get("name"): resource
+              for resource in resources
+              if isinstance(resource, dict) and resource.get("name")
+          }
+          if set(by_name) != set(expected):
+              raise RuntimeError(
+                  f"live Data Package resource set drifted: {sorted(by_name)}"
+              )
+
+          checksums = manifest.get("checksums", {})
+          for name, (filename, media_type, profile) in expected.items():
+              resource = by_name[name]
+              expected_url = f"{BASE}/data/public/{filename}"
+              if resource.get("path") != expected_url:
+                  raise RuntimeError(f"{name}: canonical URL drifted")
+              if resource.get("mediatype") != media_type:
+                  raise RuntimeError(f"{name}: media type drifted")
+              if resource.get("profile") != profile:
+                  raise RuntimeError(f"{name}: resource profile drifted")
+              expected_digest = checksums.get(filename)
+              if not expected_digest:
+                  raise RuntimeError(f"{name}: missing canonical checksum")
+              if resource.get("hash") != f"sha256:{expected_digest}":
+                  raise RuntimeError(f"{name}: Data Package checksum drifted")
+
+              body = fetch(f"/data/public/{filename}")
+              actual_digest = hashlib.sha256(body).hexdigest()
+              if actual_digest != expected_digest:
+                  raise RuntimeError(
+                      f"{name}: production bytes do not match canonical SHA-256"
+                  )
+              if resource.get("bytes") != len(body):
+                  raise RuntimeError(f"{name}: production byte count drifted")
+
+          context = dcat.get("@context", {})
+          if context.get("dcat") != "http://www.w3.org/ns/dcat#":
+              raise RuntimeError("live DCAT namespace drifted")
+          graph = dcat.get("@graph")
+          if not isinstance(graph, list):
+              raise RuntimeError("live DCAT graph is missing")
+          nodes = {
+              node.get("@id"): node
+              for node in graph
+              if isinstance(node, dict) and node.get("@id")
+          }
+          dataset_url = f"{BASE}/dataset/"
+          dataset = nodes.get(dataset_url)
+          if not dataset or dataset.get("@type") != "dcat:Dataset":
+              raise RuntimeError("live DCAT dataset node is missing")
+          if dataset.get("dcat:version") != manifest.get("version"):
+              raise RuntimeError("live DCAT GRD version drifted from manifest")
+
+          refs = {
+              item.get("@id")
+              for item in dataset.get("dcat:distribution", [])
+              if isinstance(item, dict)
+          }
+          expected_refs = {
+              f"{dataset_url}#distribution-{name}" for name in expected
+          }
+          if refs != expected_refs:
+              raise RuntimeError("live DCAT distribution set drifted")
+
+          for name, (filename, media_type, _profile) in expected.items():
+              node = nodes.get(f"{dataset_url}#distribution-{name}")
+              if not node or node.get("@type") != "dcat:Distribution":
+                  raise RuntimeError(f"{name}: live DCAT distribution missing")
+              if node.get("dcat:downloadURL", {}).get("@id") != f"{BASE}/data/public/{filename}":
+                  raise RuntimeError(f"{name}: live DCAT download URL drifted")
+              expected_media = f"https://www.iana.org/assignments/media-types/{media_type}"
+              if node.get("dcat:mediaType", {}).get("@id") != expected_media:
+                  raise RuntimeError(f"{name}: live DCAT media type drifted")
+              checksum = node.get("spdx:checksum", {})
+              value = checksum.get("spdx:checksumValue", {})
+              if checksum.get("spdx:algorithm", {}).get("@id") != (
+                  "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+              ):
+                  raise RuntimeError(f"{name}: live DCAT checksum algorithm drifted")
+              if value.get("@type") != "xsd:hexBinary":
+                  raise RuntimeError(f"{name}: live DCAT checksum datatype drifted")
+              if value.get("@value") != checksums.get(filename):
+                  raise RuntimeError(f"{name}: live DCAT checksum value drifted")
+
+          for href in ("/dataset/datapackage.json", "/dataset/dcat.jsonld"):
+              if href not in landing:
+                  raise RuntimeError(f"dataset landing page does not link {href}")
+
+          print(
+              "Production dataset interoperability verified: "
+              f"{EXPECTED_SHA}, {manifest['version']}, {len(expected)} distributions"
+          )
+          PY
