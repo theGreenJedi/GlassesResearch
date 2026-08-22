@@ -3,21 +3,32 @@
 {% block extrahead %}
   {{ super() }}
   <link rel="alternate" type="application/rss+xml" title="GlassesResearch — Verified Changes" href="{{ config.site_url.rstrip('/') }}/feed.xml">
+  <link rel="alternate" type="application/feed+json" title="GlassesResearch — Verified Changes" href="{{ config.site_url.rstrip('/') }}/feed.json">
+  <link rel="describedby" type="text/plain" href="{{ config.site_url.rstrip('/') }}/docs/llms.txt">
   {% if page %}
     {% set canonical_url = config.site_url.rstrip('/') ~ '/' ~ page.url %}
     {% set page_description = page.meta.description or config.site_description %}
+    {% set social_image = config.site_url.rstrip('/') ~ '/images/social-card.png' %}
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="GlassesResearch">
     <meta property="og:title" content="{{ page.title }} | GlassesResearch">
     <meta property="og:description" content="{{ page_description }}">
     <meta property="og:url" content="{{ canonical_url }}">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="{{ social_image }}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="GlassesResearch — independent evidence for smart glasses">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page.title }} | GlassesResearch">
     <meta name="twitter:description" content="{{ page_description }}">
+    <meta name="twitter:image" content="{{ social_image }}">
+    <meta name="twitter:image:alt" content="GlassesResearch — independent evidence for smart glasses">
     <script type="application/ld+json">{{ page.meta.seo_core_json | safe }}</script>
     {% if page.meta.seo_faq_json %}<script type="application/ld+json">{{ page.meta.seo_faq_json | safe }}</script>{% endif %}
     {% if page.meta.seo_model_json %}<script type="application/ld+json">{{ page.meta.seo_model_json | safe }}</script>{% endif %}
     {% if page.meta.seo_dataset_json %}<script type="application/ld+json">{{ page.meta.seo_dataset_json | safe }}</script>{% endif %}
+    {% if page.meta.seo_article_json %}<script type="application/ld+json">{{ page.meta.seo_article_json | safe }}</script>{% endif %}
   {% else %}
     <meta name="robots" content="noindex,follow">
   {% endif %}
