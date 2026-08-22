@@ -39,6 +39,8 @@ def main() -> int:
     checksums = manifest.get("checksums", {})
 
     datapackage = load(dataset / "datapackage.json")
+    if datapackage.get("profile") != "data-package":
+        fail("Data Package does not explicitly declare the data-package profile")
     if datapackage.get("name") != "glassesresearch-open-smart-glasses-dataset":
         fail("Data Package has the wrong stable name")
     if datapackage.get("id") != DATASET_URL or datapackage.get("homepage") != DATASET_URL:
@@ -57,6 +59,9 @@ def main() -> int:
         fail("Data Package resource names drifted")
     for name, (filename, media) in EXPECTED_RESOURCES.items():
         entry = by_name[name]
+        expected_profile = "tabular-data-resource" if name == "models-csv" else "data-resource"
+        if entry.get("profile") != expected_profile:
+            fail(f"Data Package resource profile drifted for {name}")
         if entry.get("path") != f"{PUBLIC_URL}/{filename}":
             fail(f"Data Package path drifted for {name}")
         if entry.get("mediatype") != media:
@@ -68,8 +73,6 @@ def main() -> int:
             fail(f"Data Package byte count drifted for {name}")
 
     csv_resource = by_name["models-csv"]
-    if csv_resource.get("profile") != "tabular-data-resource":
-        fail("models.csv is not declared as a tabular-data-resource")
     schema = csv_resource.get("schema", {})
     fields = schema.get("fields", [])
     expected_fields = [
