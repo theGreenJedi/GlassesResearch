@@ -18,6 +18,7 @@ Every canonical model has a stable `GLS-####` identifier. Use that identifier wh
 
 ## Cite a model, verified publication, or dataset
 
+- [Smart-Glasses Purchaser-History Census — August 2026](SMART_GLASSES_CENSUS_2026.md) — dated, reproducible 162-model acquisition-history snapshot
 - [How to Cite GlassesResearch](CITING_GLASSESRESEARCH.md)
 - Per-model BibTeX: `https://glassesresearch.org/data/citations/gls-####.bib`
 - Per-model CSL-JSON: `https://glassesresearch.org/data/citations/gls-####.json`
