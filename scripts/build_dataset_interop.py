@@ -116,7 +116,7 @@ def checksum_node(digest: str) -> dict:
     return {
         "@type": "spdx:Checksum",
         "spdx:algorithm": {"@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"},
-        "spdx:checksumValue": digest,
+        "spdx:checksumValue": {"@value": digest, "@type": "xsd:hexBinary"},
     }
 
 
