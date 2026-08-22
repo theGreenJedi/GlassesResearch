@@ -47,7 +47,7 @@ GlassesResearch uses **documented acquisition** as the boundary because it is in
 The census is backed by the same canonical data used by the rest of GlassesResearch:
 
 - [The List — human-readable canonical ledger](/models/THE_LIST/)
-- [Open Smart-Glasses Dataset](/dataset/)
+- [Open Smart-Glasses Dataset](../dataset/index.md)
 - [Canonical model JSON](https://glassesresearch.org/data/public/models.json)
 - [Canonical model CSV](https://glassesresearch.org/data/public/models.csv)
 - [Dataset manifest](https://glassesresearch.org/data/public/manifest.json)
