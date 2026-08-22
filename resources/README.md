@@ -3,6 +3,7 @@
 This directory contains cross-model resource discovery and preservation work.
 
 - [Open Projects, Protocols, and Developer Resources](OPEN_PROJECTS_AND_PROTOCOLS.md) — populated research ledger covering active and archived open-source platforms, reverse-engineered BLE work, complete hardware projects, official developer ecosystems, research tools, and successor relationships.
+- [Open-project intake — 2026-08-22](OPEN_PROJECTS_INTAKE_2026-08-22.md) — WIS → SmartGlassesManager lineage plus Nimbo X1 and NIMO/MentraOS developer-surface verification targets from the August 22 community source batch.
 - [Smart-Glasses Ecosystem Resource Catalog](ECOSYSTEM_RESOURCE_CATALOG.md) — cross-model SDK, firmware, protocol, hardware, and preservation intake catalog.
 - [Resource Preservation Checklist](PRESERVATION_CHECKLIST.md) — practical intake and preservation workflow.
 - [Resource Record Template](RESOURCE_RECORD_TEMPLATE.yaml) — reusable provenance and artifact metadata record.
