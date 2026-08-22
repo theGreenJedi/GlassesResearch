@@ -8,6 +8,10 @@ import os
 from datetime import UTC, datetime
 from pathlib import Path
 
+from catalog_metadata import canonical_updated_at
+
+ROOT = Path(__file__).resolve().parents[1]
+
 
 def load(path: str) -> dict:
     return json.loads(Path(path).read_text(encoding="utf-8"))
@@ -39,15 +43,19 @@ def main() -> None:
             scored += 1
 
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "canonical_model_count": model_count,
+        "catalog_updated_at": canonical_updated_at(ROOT),
         "scored_report_card_count": scored,
         "generated_at": generated_at(),
     }
     target = Path(args.output)
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    print(f"Built site status for {model_count} canonical models and {scored} scored Report Cards")
+    print(
+        f"Built site status for {model_count} canonical models; "
+        f"catalog updated {payload['catalog_updated_at']}; {scored} scored Report Cards"
+    )
 
 
 if __name__ == "__main__":

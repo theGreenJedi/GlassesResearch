@@ -13,9 +13,14 @@
     .then((status) => {
       set("models", Number(status.canonical_model_count).toLocaleString());
       set("report-cards", Number(status.scored_report_card_count).toLocaleString());
-      const built = new Date(status.generated_at);
-      if (!Number.isNaN(built.valueOf())) {
-        set("freshness", built.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }));
+
+      const rawDate = status.catalog_updated_at;
+      if (typeof rawDate === "string" && /^\d{4}-\d{2}-\d{2}$/.test(rawDate)) {
+        const [year, month, day] = rawDate.split("-").map(Number);
+        const updated = new Date(year, month - 1, day);
+        if (!Number.isNaN(updated.valueOf())) {
+          set("freshness", updated.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }));
+        }
       }
     })
     .catch(() => {});
