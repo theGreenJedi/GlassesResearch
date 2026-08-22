@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Synchronize canonical smart-glasses admissions and all declared model counts.
+"""Synchronize canonical smart-glasses admissions and derived catalog metadata.
 
 Evidence/admission decisions remain human-controlled in reconciliation packets.
 This script performs only mechanical propagation:
 - insert missing GLS rows already approved in THE_LIST_RECONCILIATION_*.md packets;
 - derive the canonical count from actual unique GLS rows in THE_LIST.md;
+- derive the Edition date from dated canonical admissions and corrections;
 - update count statements in THE_LIST.md and models/README.md.
 
 Use --check to fail if running the synchronizer would change tracked source files.
@@ -15,6 +16,8 @@ import argparse
 from pathlib import Path
 import re
 import sys
+
+from catalog_metadata import canonical_updated_at, synchronize_edition
 
 ROOT = Path(__file__).resolve().parents[1]
 THE_LIST = ROOT / "models" / "THE_LIST.md"
@@ -46,7 +49,6 @@ def packet_admissions() -> list[tuple[str, str]]:
                 continue
             gls_id, maker, model, state, kind, access, evidence = parts[:7]
             source = evidence if evidence.startswith("http") else ""
-            packet_rel = path.relative_to(ROOT).as_posix()
             evidence_cell = f"primary; [reconciliation]({path.name})"
             if source:
                 evidence_cell += f"; [source]({source})"
@@ -79,6 +81,9 @@ def sync_the_list(text: str) -> str:
     if replacements != 1:
         raise RuntimeError("THE_LIST Count field missing or ambiguous")
     text = re.sub(r"not in the \d+-row count", f"not in the {count}-row count", text)
+
+    updated_at = canonical_updated_at(ROOT, text)
+    text = synchronize_edition(text, updated_at)
     return text
 
 
@@ -106,6 +111,7 @@ def main() -> int:
     original_list = THE_LIST.read_text(encoding="utf-8")
     synced_list = sync_the_list(original_list)
     count = len(set(GLS_ROW_RE.findall(synced_list)))
+    updated_at = canonical_updated_at(ROOT, synced_list)
 
     original_models = MODELS_README.read_text(encoding="utf-8")
     synced_models = sync_models_readme(original_models, count)
@@ -121,14 +127,17 @@ def main() -> int:
             print("Canonical model synchronization required:")
             for path, _ in changes:
                 print(f"- {path.relative_to(ROOT)}")
-            print(f"Derived canonical count: {count}")
+            print(f"Derived canonical metadata: {count} models; edition {updated_at}")
             return 1
-        print(f"Canonical model synchronization clean: {count} models.")
+        print(f"Canonical model synchronization clean: {count} models; edition {updated_at}.")
         return 0
 
     for path, content in changes:
         path.write_text(content, encoding="utf-8")
-    print(f"Canonical model synchronization complete: {count} models; {len(changes)} file(s) updated.")
+    print(
+        f"Canonical model synchronization complete: {count} models; edition {updated_at}; "
+        f"{len(changes)} file(s) updated."
+    )
     return 0
 
 
