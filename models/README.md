@@ -54,6 +54,7 @@ Editorial volumes:
 | [Snap Spectacles 5](SnapSpectacles5/README.md) | GLS-0068 | Spectacles development platform, device APIs, compatibility matrix and public sample code. |
 | [XREAL One](XREALOne/README.md) | GLS-0074 | Micro-OLED display, wired host architecture, X1 compute, audio, spatial modes, SDK and firmware guidance. |
 | [Anko Camera Glasses](AnkoCameraGlasses/README.md) | GLS-0120 | Kmart Australia retail availability, HeyCyan software relationship, capabilities supported by reporting, and the boundary between software-platform evidence and unproven hardware equivalence. |
+| [Qwen Glasses S1 / G1](QwenGlasses/README.md) | GLS-0161–0162 | Product identity, Quark-to-Qwen rename, S1/G1 boundaries, China availability, AI features and unresolved owner-control dependencies. |
 | [ThirdEye X-series](ThirdEyeXSeries/README.md) | GLS-0131–0133 | X1/X2/Alpha1 lineage boundaries, commercial evidence and generation-specific scoring; MIDAS routed to the adjacent catalog. |
 
 ## Completed lineage packets awaiting or supporting chapter-level expansion
