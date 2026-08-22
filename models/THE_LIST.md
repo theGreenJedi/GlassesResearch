@@ -1,6 +1,6 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-08-14  
+**Edition:** 2026-08-21  
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
 **Count:** 162 distinct purchasable models or explicitly marketed product generations
 

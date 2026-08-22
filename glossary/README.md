@@ -22,6 +22,7 @@ The glossary holds the organizations, components, applications, standards, peopl
 - [ORG-0001 — Shenzhen Qingcheng Future Technology / HeyCyan](organizations/ORG-0001-hecyan-qingcheng-future.md)
 - [ORG-0002 — Goodway Techs](organizations/ORG-0002-goodway-techs.md)
 - [ORG-0003 — Dongguan Zhiyang Electronic Technology](organizations/ORG-0003-dongguan-zhiyang.md)
+- [ORG-0004 — Shenzhen Qingcheng Wireless Technology](organizations/ORG-0004-qingcheng-wireless.md)
 
 ### Components
 - [CMP-0001 — JL7018F](components/CMP-0001-jl7018f.md)

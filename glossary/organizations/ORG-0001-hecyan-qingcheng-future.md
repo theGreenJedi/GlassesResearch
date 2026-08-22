@@ -7,11 +7,13 @@
 - **Associated product:** HeyCyan companion application
 - **Model relevance:** W610 and related HeyCyan-supported retail variants
 - **Confidence:** Confirmed as app operator; hardware-manufacturing role unresolved
-- **Last checked:** 2026-08-03
+- **Last checked:** 2026-08-22
 
 ## Why it matters
 
 The received W610 advertises as `HeyCyan Glasses`, and multiple commercial W610 listings direct buyers to the HeyCyan application. The application operator is therefore a central lead for pairing behavior, supported-device lists, cloud endpoints, privacy policies, firmware delivery, and protocol discovery.
+
+A separate organization now has its own research record: [ORG-0004 — Shenzhen Qingcheng Wireless Technology](ORG-0004-qingcheng-wireless.md). Industry-event evidence places Qingcheng Wireless in Allwinner V821/V881 complete smart-glasses solution development. The similar names make the relationship worth investigating, but **GlassesResearch does not currently treat Qingcheng Future and Qingcheng Wireless as aliases or the same legal entity**.
 
 ## Useful links
 
@@ -23,8 +25,12 @@ The received W610 advertises as `HeyCyan Glasses`, and multiple commercial W610 
 
 The application listing is strong evidence about who operates the software, but it is **not** proof that the same company designed or manufactured the glasses. Look for privacy-policy domains, support addresses, package names, update endpoints, and supported-device identifiers.
 
+Do not transfer the V821/V881 solution-house evidence for Qingcheng Wireless onto this company without evidence that resolves the corporate relationship.
+
 ## Related
 
+- [ORG-0004 — Shenzhen Qingcheng Wireless Technology](ORG-0004-qingcheng-wireless.md)
+- [Who Actually Makes These Glasses? Shenzhen supply-chain investigation](../../docs/SHENZHEN_SMART_GLASSES_SUPPLY_CHAIN.md)
 - [APP-0001 — HeyCyan](../applications/APP-0001-hecyan.md)
 - [W610 Community Map](../../models/W610/COMMUNITY_MAP.md)
 - [INV-0001 — W610 Identity](../../models/W610/investigations/001-identity.md)
