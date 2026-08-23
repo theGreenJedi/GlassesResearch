@@ -1,13 +1,13 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-08-22T07:46:11+00:00**
+Generated automatically: **2026-08-23T07:47:25+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-08-14 → 2026-08-20):** 704 impressions, 2 clicks, 0.28% CTR, average position 37.4.
-- **7-day change:** impressions +17.5%; clicks n/a.
+- **Google, latest final 7 days (2026-08-15 → 2026-08-21):** 591 impressions, 2 clicks, 0.34% CTR, average position 37.8.
+- **7-day change:** impressions -17.0%; clicks n/a.
 - **Rolling 28 days:** 1303 impressions, 2 clicks, 0.15% CTR, average position 32.7.
 - **Milestone:** organic Google clicks appeared after a previous zero-click week.
 
@@ -32,35 +32,35 @@ Generated automatically: **2026-08-22T07:46:11+00:00**
 |---|---:|---:|---:|---:|
 | https://glassesresearch.org/glossary/organizations/ORG-0002-goodway-techs/ | 1 | 2 | 50.00% | 8.0 |
 | https://glassesresearch.org/models/RayBanMetaGen2/ | 1 | 8 | 12.50% | 49.9 |
-| https://glassesresearch.org/ | 0 | 11 | 0.00% | 27.0 |
+| https://glassesresearch.org/ | 0 | 7 | 0.00% | 30.6 |
 | https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 3 | 0.00% | 1.0 |
-| https://glassesresearch.org/WHY/ | 0 | 5 | 0.00% | 5.0 |
+| https://glassesresearch.org/WHY/ | 0 | 3 | 0.00% | 7.0 |
 | https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 2 | 0.00% | 50.5 |
-| https://glassesresearch.org/docs/ABOUT/ | 0 | 6 | 0.00% | 16.3 |
-| https://glassesresearch.org/docs/BLE/ | 0 | 5 | 0.00% | 21.2 |
+| https://glassesresearch.org/docs/ABOUT/ | 0 | 4 | 0.00% | 22.8 |
+| https://glassesresearch.org/docs/BLE/ | 0 | 3 | 0.00% | 32.7 |
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 2 | 0.00% | 10.5 |
 | https://glassesresearch.org/docs/CONTRIBUTE/ | 0 | 3 | 0.00% | 8.7 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **10,679 requests**, **646 HTTP visits**, **69.3 MB** served.
-- Rolling 7d: **36,076 requests**, **5,695 HTTP visits**, **390.9 MB** served.
+- Rolling 24h: **3,871 requests**, **1,119 HTTP visits**, **36.5 MB** served.
+- Rolling 7d: **36,879 requests**, **6,052 HTTP visits**, **394.3 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| FR | 6,805 | 224 |
-| US | 2,514 | 211 |
-| SG | 487 | 24 |
-| NL | 329 | 5 |
-| CA | 217 | 76 |
-| GB | 56 | 2 |
-| PH | 50 | 1 |
-| BR | 46 | 10 |
-| DE | 29 | 22 |
-| ES | 28 | 2 |
+| US | 1,889 | 260 |
+| DE | 1,055 | 650 |
+| GB | 282 | 5 |
+| CA | 245 | 113 |
+| SG | 157 | 18 |
+| NL | 86 | 2 |
+| BE | 30 | 10 |
+| RO | 27 | 3 |
+| CN | 14 | 5 |
+| BR | 14 | 8 |
 
 ## What to watch
 
