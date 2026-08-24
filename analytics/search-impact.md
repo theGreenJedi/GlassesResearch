@@ -1,6 +1,6 @@
 # GlassesResearch Search Impact
 
-Google Search Console finalized data through **2026-08-21**.
+Google Search Console finalized data through **2026-08-22**.
 
 > This report measures evidence-led research changes. It is not a ranking target, keyword quota, or instruction to optimize irrelevant queries.
 
@@ -10,11 +10,11 @@ Google Search Console finalized data through **2026-08-21**.
 
 Baseline: **2026-07-23 → 2026-08-19**. Post window: **2026-08-21 → 2026-09-17**.
 
-Status: **collecting** — 1/28 finalized post-intervention days available.
+Status: **collecting** — 2/28 finalized post-intervention days available.
 
 | Page / exact query | Baseline impressions | Baseline clicks | Baseline CTR | Baseline position | Post impressions | Post clicks | Post CTR | Post position |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| /lineages/HEYCYAN/<br>`cyanbridge` | 21 | 0 | 0.00% | 9.1 | 0 | 0 | 0.00% | — |
+| /lineages/HEYCYAN/<br>`cyanbridge` | 21 | 0 | 0.00% | 9.1 | 2 | 0 | 0.00% | 9.5 |
 | /models/BrilliantHalo/<br>`brilliant labs halo` | 3 | 0 | 0.00% | 23.3 | 0 | 0 | 0.00% | — |
 | /models/VuzixZ100/<br>`vuzix sdk` | 2 | 0 | 0.00% | 20.0 | 0 | 0 | 0.00% | — |
 | /models/EvenG2/<br>`g2 even realities` | 1 | 0 | 0.00% | 13.0 | 0 | 0 | 0.00% | — |
