@@ -67,3 +67,11 @@ cross-model findings:
 - [`EV-0077-MemoMind-One-primary-product.md`](EV-0077-MemoMind-One-primary-product.md) — MemoMind/XGIMI primary product and lineage evidence, with crowdfunding and owner-control unknowns preserved.
 
 - [`EV-0079-AG05-NAMIOT-regulatory-identity.md`](EV-0079-AG05-NAMIOT-regulatory-identity.md) — FCC original-equipment identity and filed hardware/companion-app evidence, with manufacturer-claim boundaries preserved.
+
+- [`EV-0081-AR-smart-glasses-acceptance-review.md`](EV-0081-AR-smart-glasses-acceptance-review.md) — peer-reviewed review of empirical AR smart-glasses acceptance research.
+
+- [`EV-0082-MIT-smart-eyewear-platforms.md`](EV-0082-MIT-smart-eyewear-platforms.md) — MIT research-platform evidence for socially wearable physiological and environmental sensing.
+
+- [`EV-0083-smart-glasses-eye-strain-study.md`](EV-0083-smart-glasses-eye-strain-study.md) — six-month observational evidence on visual acuity and eye-strain outcomes in logistics work.
+
+- [`EV-0084-smart-glasses-environmental-health.md`](EV-0084-smart-glasses-environmental-health.md) — Duke framing evidence for environmental context in digital-health research.
