@@ -8,11 +8,40 @@ The newest verified changes, useful tools, developments we are watching, and res
 
 | Date | What changed | Go deeper |
 |---|---|---|
+| Aug. 24 | **Meta Adventurer** entered the canonical catalog as **GLS-0165** through verified Meta and Best Buy acquisition routes. | [verified article](news/articles/2026-08-24-meta-adventurer-gls-0165.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0165/) |
+| Aug. 24 | **Nautica / Lucyd Corsair** entered the canonical catalog as **GLS-0164** through verified Lucyd and Best Buy acquisition routes. | [verified article](news/articles/2026-08-24-nautica-lucyd-corsair-gls-0164.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0164/) |
+| Aug. 24 | A cross-model reading of WIRED's current field guide adds **eyebox, repositioning, shade dependence, sustained comfort, control latency, software maturity and two-sided privacy** to the investigation checklist. | [verified synthesis](news/articles/2026-08-24-wired-smart-glasses-testing-lessons.md) · [follow research](?topic=research_science#verified-research-alerts) |
 | Aug. 21 | RayNeo formally announced **iO**, **GT**, and **GT Max** with September 4 availability messaging; canonical GLS admission remains pending a documented paid acquisition path. | [verified article](news/articles/2026-08-21-rayneo-io-gt-series.md) · [follow RayNeo](?brand=RayNeo&topic=release_availability#verified-research-alerts) |
 | Aug. 18 | MemoMind One crossed the documented-acquisition threshold as **GLS-0160**, with state `preorder/crowdfunding`; broad fulfillment remains unproven. | [verified article](news/articles/2026-08-18-memomind-one-gls-0160.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0160/) · [research](/models/MemoMindOne/) |
 | Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [verified article](news/articles/2026-08-17-lucyd-armor-gls-0159.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0159/) · [GLS resolver](https://glassesresearch.org/gls/gls-0159/) |
 | Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026-halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) |
 | Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026-cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](https://glassesresearch.org/models/catalog/gls-0039/) |
+
+### August 24, 2026 — Meta Adventurer enters the canonical catalog as GLS-0165
+
+Meta's named **Adventurer** frame now has a direct manufacturer purchase route and an exact Best Buy retail identity, so it enters the purchaser-history ledger as **GLS-0165**. First-party material supports a 12-megapixel camera, up-to-3K video, open-ear audio, prescription support and Meta AI app dependence. No scores or unsupported component claims transfer from Meta's Ray-Ban or Oakley frames.
+
+Continue: [verified article](news/articles/2026-08-24-meta-adventurer-gls-0165.md) · [model page](https://glassesresearch.org/models/catalog/gls-0165/) · [follow Meta Adventurer](?model=GLS-0165%2C%20Meta%20Adventurer#verified-research-alerts)
+
+### August 24, 2026 — Nautica / Lucyd Corsair enters the canonical catalog as GLS-0164
+
+The named **Corsair** audio smart-sunglasses frame now has matching first-party Lucyd evidence and an exact Best Buy acquisition route, so it enters the purchaser-history ledger as **GLS-0164**. It receives an unknown-safe record rather than inheriting scores from another Lucyd frame.
+
+Continue: [verified article](news/articles/2026-08-24-nautica-lucyd-corsair-gls-0164.md) · [model page](https://glassesresearch.org/models/catalog/gls-0164/) · [follow Corsair](?model=GLS-0164%2C%20Nautica%20Corsair#verified-research-alerts)
+
+### August 24, 2026 — What WIRED's guide reveals that specification sheets miss
+
+WIRED's current smart-glasses guide is more useful as attributed field evidence than as a universal ranking. Its product set spans camera/audio glasses, sports glasses, discreet information displays and tethered wearable monitors—categories whose jobs and failure modes are too different for one undifferentiated “best” score.
+
+The hands-on accounts identify practical questions that product specifications routinely omit: whether a display has a forgiving eyebox, whether a frame must be repositioned to sharpen the image, whether a shade is needed in bright conditions, whether extended adjustment causes discomfort, whether physical controls lag, and whether enabling software is mature enough for the advertised experience.
+
+The guide also makes privacy a two-sided investigation: bystander sensing and recording on one side, wearer app permissions and cloud handling on the other. We excluded one apparently inconsistent statement about Even Realities G2 microphones; first-party specifications support a camera-free design **with microphones**.
+
+These observations are now recorded as attributed independent evidence and investigation questions. They do not transfer WIRED's preferences into GlassesResearch scores.
+
+Continue: [verified synthesis](news/articles/2026-08-24-wired-smart-glasses-testing-lessons.md) · [EV-0085 evidence](/evidence/EV-0085-WIRED-cross-model-field-review/) · [follow research](?topic=research_science&topic=privacy_policy#verified-research-alerts)
+
+Source: [WIRED — The Best Smart Glasses That Aren't Just a Gimmick](https://www.wired.com/gallery/best-smart-glasses/)
 
 ### August 21, 2026 — RayNeo announces iO, GT and GT Max for September 4
 
