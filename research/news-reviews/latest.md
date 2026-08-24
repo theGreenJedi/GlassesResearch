@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-24T22:48:24.260011+00:00`
+Generated: `2026-08-24T23:41:31.780287+00:00`
 
-- Intake files inspected: **131**
-- Candidates retained in this review window/history: **712**
+- Intake files inspected: **132**
+- Candidates retained in this review window/history: **713**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,7 +12,7 @@ Generated: `2026-08-24T22:48:24.260011+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 171
+- `needs_editorial_verification`: 172
 - `rejected_noise`: 9
 - `source_monitor`: 16
 - `source_review`: 127
@@ -24,6 +24,7 @@ Generated: `2026-08-24T22:48:24.260011+00:00`
 |---|---|---|---|---|---|
 | high | needs_editorial_verification | direct | [China's Beifa AI Smart Glasses Launch on Makuake with Up to 38% Off - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE9qUnRrQW5DRFM4OWZtaDN5cWdMTGpYdzR4QVFtMURMdkxIWS01T1ZjR0FCc1did2NkczYwR0RPMG5JWk5sV0V0YzExaHpNakt5VFNOdkpTOVJBdXBMbURpUDdDemt2OERXUS1aZGhCRnViTmdkZWc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [HTC's VIVE Eagle camera glasses will launch in the U.S. in September - Stock Titan](https://news.google.com/rss/articles/CBMitgFBVV95cUxPeThRQ0U2X0dhY2dVVFVuYWxSVUVERUN5WnY1RzlOYWYySENTMWppd3FhYzdWZThLX2p6ZlVmTlkwbWNmUURUZHFXUFA2YzdCcDFydXFHc0hpdUxNVnBrRTNwUmZUWEgzc0dOaDk2NEJnbkpvUC03NjExUHR0czdvSV9aX1FZZ0QzU0h2V2tKNWxwVmx0X0F0WERTYWExWVdiMlQ1NzdkbWFINzNrTENLOVlxeEgyZw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Meta Readies Ray-Ban Smart Glasses Launch As Privacy Concerns Mount 03/27/2026 - MediaPost](https://news.google.com/rss/articles/CBMirgFBVV95cUxNNGlWZFJfUkRNb3ZtY1AwNkhidndMMThhUEV1V19lN2V6bm52R1V4TUxEYWhqc0diS01laF9uMFFlSWdGNE12bFpmek8zd0pUd3A1a2hRY21DZTFYUU80ZWRlQUhCTjVXa2dzLXF6d0ZWUEJYaWVRUzlIVWhQNzNXb19aTHZYaWUxa3BfempJOWpkQkt6YVJTNEdnTjFXZ3RoSzktc3EzMjRWekdlQ0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Kr \| Smart AR Glasses Thunderbird iO Officially Unveiled: Next-Generation Thinking Glasses with Initial Launch Price Starting at 1996 Yuan ](https://news.google.com/rss/articles/CBMiU0FVX3lxTE00ZFFiRi0zQm9rWmNDSkJwMkRqVjdFTGRlX251NDBmSU9SR2NibDhZQ2hKeXFSY0tSQ2RNR1B1TmhrV0UxNHdodnduNnJnbVByYzVj?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Outlet Expansion, Ray-Ban Meta Smart Glasses Launch Keeps Focus Point In Sight - BusinessToday Malaysia](https://news.google.com/rss/articles/CBMivwFBVV95cUxPTVB0dkplSzkxMjh3a2dwWm9kZTZRQjQ0TUVIQWE0aHdnZGk3alZlVFJleE1Qckx0ZnZ1WkkwTm55cVNyU2tUSjl5cWJKNF9sX2wzdGlWVDBkaTFTTkVVYTJKbFNHOTdGLV9ZcW9fc0hJd3dFWkItVnozMWRWNTFKTVZGOWdGQzJwSTB4ZGItbmxjVnk3ei1HTnRubGJ0bUdvRzA3SXZuVzhCNENDQ0xoSUR0NFpDNWxMODRTNG1xQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Tekcapital portfolio firm Innovative Eyewear inks HTC deal for U.S. launch of VIVE Eagle smart glasses - TipRanks](https://news.google.com/rss/articles/CBMi6AFBVV95cUxPTThQRFVpNy1lVER1QlhWV3FQU25RSzAteTQ5V2RMWUNuRmNaWHlTWGpSOEk2ZkRLdWxXN2NMZVRremJJTzdORVo0a3ZnMFhaUkRwT3R0NXR0TGNOYnQ1Zm1tZ013UGFjdjNYSi13eHUtS3dPaTdnYjhwOUxZSjM0NzB6ZzB2WWlWYWdXQlZSS1RDWGdPVXItN2c5WlNWelBLYWdybHZ6OHNQMG44dlpwNXFsX1VubGt1eFVDSE5ic0VHU2ZJNVo5dU0tVk9OTG5GaHBLODdSRE50OVBaNE00dFBnUnpudzdW?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,7 +272,6 @@ Generated: `2026-08-24T22:48:24.260011+00:00`
 | low | source_review |  | [DuckDuckGo's anti-AI sunglasses are a viral hit - Billings Gazette](https://news.google.com/rss/articles/CBMipwFBVV95cUxPRkF5Yk9jRC1xZXExb0Q0Z2dORmRVcjFMb0thNXVqMVA2QzBzbXhzLXVCNWVERlB0R0J4YmNoemlXelE5WUUybzlvVnVjZG9mRC1rTUtZQVdVbmEzclRON2JEckYyZDFUYjdDQi1VY2N1LV9tRXZqOFdmTGVfWl9uSHFTS21KLXd6ZWlPY0V1dHVGWlYyS0RoOFR3NE1qV1IzZVFWNmEwWQ?oc=5) | reachable (200) |  |
 | low | source_review |  | [Finnish SeeTrue Technologies secures €2.2 million to bring ultra-low-power eye tracking to smart glasses - - ArcticStartup](https://news.google.com/rss/articles/CBMibkFVX3lxTE5lUHdNYXBWYk1haDZ6Zmg0QXIzeE91THZ0YmRJUnJUU1pVSlpwTXlGTHJoeGh1RklPZGFtY05FREk3MklYc1BkTEYyOFE1Zks2Ui0tUFE2VTFuN29Vb3gzWV94OFh1aUkwUVkwZVl30gFuQVVfeXFMTmVQd01hcFZiTWFoNnpmaDRBcjN4T3VMdnRiZElSclRTWlVKWnBNeUZMcmh4aHVGSU9kYW1jTkVESTcySVhzUGRMRjI4UTVmSzZSLS1QUTZVMW43b1VveDNZX3g4WHVpSTBRWTBlWXc?oc=5) | reachable (200) |  |
 | low | source_review |  | [Finnish SeeTrue Technologies secures €2.2 million to bring ultra-low-power eye tracking to smart glasses - BeBeez International](https://news.google.com/rss/articles/CBMizwFBVV95cUxNUzJadG5LdzZvX3p2VTFUcTBhZmdOVEVlSERWTjdmdnJtOENUV2JGTG1aMDRNVHh4QTlkNWxQQUxadktUOWFOSW1KUVIzcmxUb3lnNXctU0w4aUtGcnlGWnBwV2RlNzZIT1ppNTdoaXQ3cVJlYl80UjNkVVFTTzV5UWxSUzFYRHptUzRtX1cwbF9Ib1FyMjJXWUxsb1I3ejFhQWJfcndGcWRqOEc3TTJBTWlCWTBLdmZveUtjaFNicGZXWjFVSXZWYVVHN1RCVm8?oc=5) | reachable (200) |  |
-| low | source_review |  | [Fix media gallery to show all media types including OPUS audio files](https://github.com/ebowwa/HeyCyanSmartGlassesSDK/commit/935d3d7b6c1be2dae6984cfb9888efcafc8b05dd) | reachable (200) |  |
 
 ## Meaning of states
 
