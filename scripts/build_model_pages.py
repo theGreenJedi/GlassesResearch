@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 HEADING = re.compile(r"^##\s+(GLS-\d{4})\s+—\s+.+?\s*$", re.MULTILINE)
 LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+INVERSE_HELPER_CAPABILITIES = {"no_camera", "no_display"}
 
 GUIDES = [
     ("prescription-smart-glasses", "Best prescription-compatible smart glasses", [("prescription_support", "yes")], "Models with verified prescription support", "Prescription compatibility is model- and frame-specific. Confirm the supported prescription range and fitting route before buying."),
@@ -89,7 +90,7 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
     title = f"{record['maker']} {record['model']} ({record['id']})"
     description = f"Verified specifications, capabilities, status, sources, and research links for {record['maker']} {record['model']} smart glasses."
     confirmed = [(labels.get(k, k.replace("_", " ").title()), v["provenance"]) for k, v in capability["capabilities"].items() if v["value"] == "yes"]
-    negatives = [labels.get(k, k.replace("_", " ").title()) for k, v in capability["capabilities"].items() if v["value"] == "no"]
+    negatives = [labels.get(k, k.replace("_", " ").title()) for k, v in capability["capabilities"].items() if v["value"] == "no" and k not in INVERSE_HELPER_CAPABILITIES]
     unknown_count = sum(v["value"] == "unknown" for v in capability["capabilities"].values())
     facts = []
     if comparison:
