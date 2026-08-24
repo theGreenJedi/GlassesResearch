@@ -29,3 +29,15 @@ Sources: [December 2025 Quark launch](https://www.alibabacloud.com/blog/602717) 
 Milan is the panto-frame sibling to L'Atitude 52°N's canonical Berlin model, marketed as a distinct frame in the Departure Collection rather than as a colorway or alias. On 2026-08-21 its manufacturer page crossed the canonical acquisition threshold by accepting a **$449 paid preorder**, with Obsidian shipment stated from August 25 and Olive from September 6. Milan's own page documents a 12 MP Sony IMX681 camera, 1080p30 video, five microphones, dual open-ear speakers, Wi-Fi 6, Bluetooth 5.4 LE, 32 GB storage, a 200 mAh battery, prescription-ready local-optician fitting, and Goya AI powered by Google Gemini. Firmware ownership, direct-device SDK/API access and cloud-independent operation remain unknown.
 
 Source: [L'Atitude 52°N — Milan](https://www.latitude52n.com/products/milan-smart-glasses)
+
+## GLS-0164 — Nautica Corsair Powered by Lucyd
+
+Corsair is a named Nautica fashion frame powered by Lucyd's audio-smart-eyewear platform. Lucyd directly sells it and Best Buy identifies the exact retail model as LCD007-60. It is admitted as a distinct marketed frame because both partners consistently name and sell Corsair, while lens/color packages remain variants. Calls, music, assistant access and the Lucyd app are manufacturer-supported claims; firmware ownership, electronics-generation identity, cloud independence and repairability remain unknown. No scores are inherited from other Lucyd or Nautica frames.
+
+Sources: [Lucyd — Corsair](https://lucyd.co/products/corsair) · [Best Buy — LCD007-60](https://www.bestbuy.com/product/nautica-smart-eyewear-powered-by-lucyd-corsair/J3R8ZC6LGC/sku/6589919)
+
+## GLS-0165 — Meta Adventurer
+
+Adventurer is a Meta-branded rectangular camera/audio AI frame sold directly by Meta and through Best Buy, rather than a Ray-Ban or Oakley style name. Meta currently markets four colors, adjustable nose pads, prescription compatibility, a 12 MP camera and up-to-3K video from $299. Those claims establish the named product and acquisition route, not independent performance or owner control. Adventurer receives an unknown-safe record and does not inherit Report Card scores from the related Ray-Ban Meta or Oakley Meta platform branches.
+
+Sources: [Meta — Adventurer](https://www.meta.com/ai-glasses/meta-glasses/adventurer/) · [Best Buy — SK-1001882-01](https://www.bestbuy.com/product/meta-adventurer-ai-glasses-smart-features-like-12mp-camera-live-translate-8-hour-battery-range-of-sizes-brown-lenses-classic-tortoise/J3LHRV8436/sku/6677832)
