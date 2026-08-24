@@ -1,14 +1,14 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-08-23T07:47:25+00:00**
+Generated automatically: **2026-08-24T08:04:24+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-08-15 → 2026-08-21):** 591 impressions, 2 clicks, 0.34% CTR, average position 37.8.
-- **7-day change:** impressions -17.0%; clicks n/a.
-- **Rolling 28 days:** 1303 impressions, 2 clicks, 0.15% CTR, average position 32.7.
+- **Google, latest final 7 days (2026-08-16 → 2026-08-22):** 564 impressions, 3 clicks, 0.53% CTR, average position 38.0.
+- **7-day change:** impressions -27.9%; clicks n/a.
+- **Rolling 28 days:** 1371 impressions, 3 clicks, 0.22% CTR, average position 33.0.
 - **Milestone:** organic Google clicks appeared after a previous zero-click week.
 
 ## Google — top queries
@@ -16,7 +16,8 @@ Generated automatically: **2026-08-23T07:47:25+00:00**
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
 | 3d eyewear database | 0 | 1 | 0.00% | 59.0 |
-| ar eyeglass development case study | 0 | 1 | 0.00% | 57.0 |
+| ai glasses timeline | 0 | 1 | 0.00% | 30.0 |
+| ar eyeglass development case study | 0 | 3 | 0.00% | 56.0 |
 | ar glasses open source | 0 | 2 | 0.00% | 69.0 |
 | ar glasses sdk | 0 | 2 | 0.00% | 33.0 |
 | ar glasses with screen | 0 | 1 | 0.00% | 30.0 |
@@ -24,43 +25,42 @@ Generated automatically: **2026-08-23T07:47:25+00:00**
 | ar monocle | 0 | 1 | 0.00% | 87.0 |
 | ar smart glasses case studies | 0 | 1 | 0.00% | 49.0 |
 | augmented reality headset measurement | 0 | 1 | 0.00% | 77.0 |
-| best open source smart glasses | 0 | 1 | 0.00% | 82.0 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/glossary/organizations/ORG-0002-goodway-techs/ | 1 | 2 | 50.00% | 8.0 |
-| https://glassesresearch.org/models/RayBanMetaGen2/ | 1 | 8 | 12.50% | 49.9 |
-| https://glassesresearch.org/ | 0 | 7 | 0.00% | 30.6 |
-| https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 3 | 0.00% | 1.0 |
-| https://glassesresearch.org/WHY/ | 0 | 3 | 0.00% | 7.0 |
+| https://glassesresearch.org/glossary/organizations/ORG-0002-goodway-techs/ | 1 | 3 | 33.33% | 8.7 |
+| https://glassesresearch.org/models/BrilliantHalo/ | 1 | 25 | 4.00% | 16.7 |
+| https://glassesresearch.org/models/RayBanMetaGen2/ | 1 | 6 | 16.67% | 46.3 |
+| https://glassesresearch.org/ | 0 | 6 | 0.00% | 24.3 |
+| https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 2 | 0.00% | 1.0 |
+| https://glassesresearch.org/WHY/ | 0 | 2 | 0.00% | 7.5 |
 | https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 2 | 0.00% | 50.5 |
-| https://glassesresearch.org/docs/ABOUT/ | 0 | 4 | 0.00% | 22.8 |
-| https://glassesresearch.org/docs/BLE/ | 0 | 3 | 0.00% | 32.7 |
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 2 | 0.00% | 10.5 |
-| https://glassesresearch.org/docs/CONTRIBUTE/ | 0 | 3 | 0.00% | 8.7 |
+| https://glassesresearch.org/docs/ABOUT/ | 0 | 3 | 0.00% | 27.7 |
+| https://glassesresearch.org/docs/BLE/ | 0 | 4 | 0.00% | 43.0 |
+| https://glassesresearch.org/docs/CONTRIBUTE/ | 0 | 2 | 0.00% | 8.0 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **3,871 requests**, **1,119 HTTP visits**, **36.5 MB** served.
-- Rolling 7d: **36,879 requests**, **6,052 HTTP visits**, **394.3 MB** served.
+- Rolling 24h: **1,413 requests**, **271 HTTP visits**, **27.1 MB** served.
+- Rolling 7d: **34,371 requests**, **4,985 HTTP visits**, **355.8 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 1,889 | 260 |
-| DE | 1,055 | 650 |
-| GB | 282 | 5 |
-| CA | 245 | 113 |
-| SG | 157 | 18 |
-| NL | 86 | 2 |
-| BE | 30 | 10 |
-| RO | 27 | 3 |
-| CN | 14 | 5 |
-| BR | 14 | 8 |
+| US | 837 | 172 |
+| SG | 176 | 19 |
+| RO | 73 | 0 |
+| BR | 61 | 5 |
+| IT | 50 | 1 |
+| NL | 48 | 5 |
+| FR | 27 | 2 |
+| CA | 21 | 8 |
+| CN | 21 | 6 |
+| DE | 15 | 10 |
 
 ## What to watch
 
