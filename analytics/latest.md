@@ -1,13 +1,13 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-08-24T08:04:24+00:00**
+Generated automatically: **2026-08-25T07:58:52+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-08-16 → 2026-08-22):** 564 impressions, 3 clicks, 0.53% CTR, average position 38.0.
-- **7-day change:** impressions -27.9%; clicks n/a.
+- **Google, latest final 7 days (2026-08-17 → 2026-08-23):** 474 impressions, 3 clicks, 0.63% CTR, average position 38.2.
+- **7-day change:** impressions -38.8%; clicks n/a.
 - **Rolling 28 days:** 1371 impressions, 3 clicks, 0.22% CTR, average position 33.0.
 - **Milestone:** organic Google clicks appeared after a previous zero-click week.
 
@@ -15,52 +15,52 @@ Generated automatically: **2026-08-24T08:04:24+00:00**
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| 3d eyewear database | 0 | 1 | 0.00% | 59.0 |
 | ai glasses timeline | 0 | 1 | 0.00% | 30.0 |
 | ar eyeglass development case study | 0 | 3 | 0.00% | 56.0 |
 | ar glasses open source | 0 | 2 | 0.00% | 69.0 |
 | ar glasses sdk | 0 | 2 | 0.00% | 33.0 |
 | ar glasses with screen | 0 | 1 | 0.00% | 30.0 |
-| ar headset measurement | 0 | 1 | 0.00% | 63.0 |
 | ar monocle | 0 | 1 | 0.00% | 87.0 |
 | ar smart glasses case studies | 0 | 1 | 0.00% | 49.0 |
-| augmented reality headset measurement | 0 | 1 | 0.00% | 77.0 |
+| best open source smart glasses | 0 | 1 | 0.00% | 82.0 |
+| brilliant labs halo github | 0 | 1 | 0.00% | 8.0 |
+| cyanbridge | 0 | 12 | 0.00% | 9.3 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
 | https://glassesresearch.org/glossary/organizations/ORG-0002-goodway-techs/ | 1 | 3 | 33.33% | 8.7 |
-| https://glassesresearch.org/models/BrilliantHalo/ | 1 | 25 | 4.00% | 16.7 |
-| https://glassesresearch.org/models/RayBanMetaGen2/ | 1 | 6 | 16.67% | 46.3 |
-| https://glassesresearch.org/ | 0 | 6 | 0.00% | 24.3 |
-| https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 2 | 0.00% | 1.0 |
-| https://glassesresearch.org/WHY/ | 0 | 2 | 0.00% | 7.5 |
+| https://glassesresearch.org/models/BrilliantHalo/ | 1 | 22 | 4.55% | 13.0 |
+| https://glassesresearch.org/models/RayBanMetaGen2/ | 1 | 3 | 33.33% | 34.0 |
+| https://glassesresearch.org/ | 0 | 5 | 0.00% | 28.2 |
+| https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 1 | 0.00% | 1.0 |
+| https://glassesresearch.org/WHY/ | 0 | 1 | 0.00% | 9.0 |
 | https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 2 | 0.00% | 50.5 |
-| https://glassesresearch.org/docs/ABOUT/ | 0 | 3 | 0.00% | 27.7 |
-| https://glassesresearch.org/docs/BLE/ | 0 | 4 | 0.00% | 43.0 |
-| https://glassesresearch.org/docs/CONTRIBUTE/ | 0 | 2 | 0.00% | 8.0 |
+| https://glassesresearch.org/docs/ABOUT/ | 0 | 2 | 0.00% | 37.5 |
+| https://glassesresearch.org/docs/BLE/ | 0 | 3 | 0.00% | 54.0 |
+| https://glassesresearch.org/docs/CONTRIBUTE/ | 0 | 1 | 0.00% | 6.0 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **1,413 requests**, **271 HTTP visits**, **27.1 MB** served.
-- Rolling 7d: **34,371 requests**, **4,985 HTTP visits**, **355.8 MB** served.
+- Rolling 24h: **1,451 requests**, **594 HTTP visits**, **13.5 MB** served.
+- Rolling 7d: **32,587 requests**, **5,168 HTTP visits**, **309.1 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 837 | 172 |
-| SG | 176 | 19 |
-| RO | 73 | 0 |
-| BR | 61 | 5 |
-| IT | 50 | 1 |
-| NL | 48 | 5 |
-| FR | 27 | 2 |
-| CA | 21 | 8 |
-| CN | 21 | 6 |
-| DE | 15 | 10 |
+| US | 1,072 | 512 |
+| DE | 94 | 19 |
+| T1 | 67 | 2 |
+| SG | 52 | 6 |
+| BO | 49 | 0 |
+| CN | 16 | 3 |
+| BR | 11 | 5 |
+| GB | 10 | 2 |
+| KR | 8 | 5 |
+| JP | 8 | 6 |
 
 ## What to watch
 
