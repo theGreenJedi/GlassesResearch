@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-25T10:54:09.758807+00:00`
+Generated: `2026-08-25T11:48:50.684840+00:00`
 
-- Intake files inspected: **135**
-- Candidates retained in this review window/history: **644**
+- Intake files inspected: **136**
+- Candidates retained in this review window/history: **646**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,11 +12,11 @@ Generated: `2026-08-25T10:54:09.758807+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 178
+- `needs_editorial_verification`: 179
 - `rejected_noise`: 9
 - `source_monitor`: 9
 - `source_review`: 47
-- `watching`: 94
+- `watching`: 95
 
 ## Action queue
 
@@ -35,7 +35,6 @@ Generated: `2026-08-25T10:54:09.758807+00:00`
 | high | needs_editorial_verification | direct | [XREAL Aura Secures 10,000 Deposits for Fall 2026 Launch - Geeky Gadgets](https://news.google.com/rss/articles/CBMiakFVX3lxTE5mNTJNYnRXV2VzNUlFU2hMbjFZT1FHcUFwRGFoVDFjUDlxbUpMdXBtMFNMWDNNSmxDa0QtWjZBMF9vZWVBaThkLTRjUFFITENCT1dBOEpTT1RlLXhiQVc1VW5RQUUxbzk5bmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XREAL AURA Surpasses 10,000 Unit Reservations Ahead of Launch This Fall - Road to VR](https://news.google.com/rss/articles/CBMif0FVX3lxTE41MTA1QTBVdjVmNHltcDI4RF81dXprdWI2SnhhT194VUtIdXNxOWZtcEFwbGEwZGRGVXBQZ2lmVFRBbkZKYXE2czNMTHgzYjgzOEdHQWFyMHdzTGNTUG96Y0RTRHNGcUhSR1pKaFlYTk4wc0hyNXQ4N19icV9DUjA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XREAL AURA XR Glasses Surpass 10,000 Reservations Ahead of Launch - iPhone in Canada](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPa2JkVV9yV3F4dEtBcEJYTDdaZFhvUkZtMmNGb0Fod1k2WFo4TFdWbE5yS0lPblBUWFZiZUd4aUxjNmktdmVQdm01TXQ1SG85MUlRU0lIVXZsdHpLdWtfLWhndkMwY1o3TlNvNGdETEhQRUhJaGhPam5tOVZ6QUNzcU00cXloWkcyV1dDMHNGM29vWmV5aTRWUEl0a0U2UWZVaWxWY1o2bzNBQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| normal | needs_editorial_verification | direct | [AI Smart Glasses Review: Hands-On Features & Verdict \| TikTok](https://www.tiktok.com/@tadoshioore/video/7662191753780333838) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Open Source Smart Glasses - GitHub](https://github.com/Mentra-Community/OpenSourceSmartGlasses) | reachable (200) | research_news_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [OpenGlass - Open Source Smart Glasses - GitHub](https://github.com/BasedHardware/openglass) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [5 Best AI Smart Glasses in 2026 - Comparison and Review](https://gagadget.com/en/673684-ai-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
@@ -44,9 +43,7 @@ Generated: `2026-08-25T10:54:09.758807+00:00`
 | normal | needs_editorial_verification | direct | [Affordable Smart Glasses Review: Hands-Free AI Glasses That Record ...](https://www.tiktok.com/@driekaspeaks/video/7663933299512986910) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI Glasses \| Innovative Smart Eyewear at Target Optical](https://www.targetoptical.com/to-us/ai-glasses) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, research_optics, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses 2026: Big Players, Features & Privacy - Ai Miracle](https://www.aimiracle.ai/ai-news/ai-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
-| normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review #smartglasses #productreview #techtok ...](https://www.tiktok.com/@stubbsy_finds/video/7675473386063105302) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [AI Smart Glasses Review: Coolest Gadget I Bought \| TikTok](https://www.tiktok.com/@shopwithjord_/video/7650863677612100866) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [AI Smart Glasses: Review & Price \| TikTok](https://www.tiktok.com/@iamsmarttips/video/7623463929636982039) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses With Prescription Lenses](https://www.amazon.com/smart-glasses-prescription-lenses/s?k=smart+glasses+with+prescription+lenses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best smart glasses and AR specs: We test Ray-Ban ... - Wareable](https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses with Prescription Lenses (2026 Guide)](https://smartglasses.computer/blog/smart-glasses-with-prescription) | reachable (200) | research_news_review, research_optics |
@@ -72,7 +69,6 @@ Generated: `2026-08-25T10:54:09.758807+00:00`
 | normal | needs_editorial_verification | direct | [TeamOpenSmartGlasses – Building open source smart glasses tech to ...](https://teamopensmartglasses.com/) | reachable (200) | research_news_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [The 10 Best Smart Glasses of 2026 (Reviews) - FindThisBest](https://www.findthisbest.com/best-smart-glasses) | reachable (200) | research_news_review, deep_research |
 | normal | needs_editorial_verification | direct | [tiktok smart glasses review - TikTok Shop](https://shop.tiktok.com/us/k/tiktok-smart-glasses-review) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Unboxing and Review of AI Smart Glasses \| TikTok](https://www.tiktok.com/@aishaboutique01/video/7616054036097191190) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [#smartsunglasses - TikTok](https://www.tiktok.com/tag/smartsunglasses) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (August 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [15 Best Smart Glasses 2026: Expert Tested & Reviewed](https://www.thebuyersreviews.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
@@ -84,7 +80,11 @@ Generated: `2026-08-25T10:54:09.758807+00:00`
 | normal | needs_editorial_verification | direct | [7 Smart Glasses In 2026 That Reveal The Biggest Wearable Shifts – Here ...](https://glassalmanac.com/7-smart-glasses-in-2026-that-reveal-the-biggest-wearable-shifts-heres-why/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses are Here. So Is the Privacy Problem - sify.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUTZPLUljc3Q4WXJzVzZsVlc5NUEyOEUyc1JNNG5iRUJhdFRuc0hwUlZTQTM0UUZGaTY0RzVacmcwaVBTY2tHejFfdURGenRCNzlieTlkWERtNktJVzZkTExudUt2eTdycVRHV1VxdWtmdV9PSnJVNy0yZHh1ZkxQcUhSSzctRmM?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Ai Smart Glasses With Camera](https://www.amazon.com/ai-smart-glasses-camera/s?k=ai+smart+glasses+with+camera) | reachable (200) | research_news_review, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses With Built-in Camera](https://www.amazon.com/smart-glasses-built-in-camera/s?k=smart+glasses+with+built-in+camera) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026 - VR.org](https://vr.org/ar-glasses) | reachable (200) | research_news_review, policy_privacy |
@@ -93,6 +93,7 @@ Generated: `2026-08-25T10:54:09.758807+00:00`
 | normal | needs_editorial_verification | direct | [Best New Smart Glasses Arriving in 2026 - Geeky Gadgets](https://www.geeky-gadgets.com/best-smart-glasses-2026-compared/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AI Glasses in 2026: 15 Models Reviewed](https://treeview.studio/blog/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
@@ -143,6 +144,7 @@ Generated: `2026-08-25T10:54:09.758807+00:00`
 | normal | needs_editorial_verification | direct | [RayNeo iO Ai Smart Glasses Full Review \| Apple Meta Should Be Scared...! - t.co](https://news.google.com/rss/articles/CBMiO0FVX3lxTE12WUdiZXVSYVNwc2tjeTdTUWNMa0pxa0s5dUNOdGJzY1pMcjFqQXJHMmJUcjJVcWlLZ3ow?oc=5) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [RayNeo iO Smart Glasses Bring AI to Your Sightline, Minus the Camera - The Gadgeteer](https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0U4M0Q0c2hwdTB4dW53VlBPOVNkc3AwSzI0ZGlJUFZfWFliSmY2dUVzY3UxWUFyZzZwSlUzMFJ4cHNqUWRUTGh4aFFaZ3h5eXlkeWZ5NVFWeGRPUFV2OE0xSWJQeXg5NkVNNEl3RnZFbVoxR2hraDR3QkI2b2k0QUxNTEpQeHktanJ3Nk0tNVVrWHdm?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [RayNeo reveals privacy focused iO smart glasses with 1,300-nit display - NewsBytes](https://news.google.com/rss/articles/CBMitwFBVV95cUxPNlNBNTR2czdDVXZOWm92S0JxUmRNellBWlVSOVZ3TkFJb1hkNzVnZV9CeUpnNTBZM2ZqWURIZmdtVGdHb1ZVMXVpbFF5QlZMLV96LUFhS19VMlFoWlBvOEV2UVd0eXc2Z0lObDhENzR6bTlFWGZkR2xfZTladWtzcVN1MDZvR3doV052Y1A5aGlYdUZGWXNXbFhQMXhnSG1jTTkyalprZlVvTFdZdEJic1EzaHdnSlU?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [RayNeo Smart Glasses: Can Camera-Free AI Win at Work? - UC Today](https://news.google.com/rss/articles/CBMijwFBVV95cUxQSEdwUWRfZTZmV2FjWUh3V1dTak1ubDJXSGZMTUk0UHdaeTN0M01aQktDdGVZeDhSWTFwbkRadjgxR3ZpWVcxWjJtc3lKWXdCLUxIaTRnMnRzUUdCODJ4WDFjR3MtSER3YVZxY1JtSTNoT04xYmF0cloza2NBSi1QRW5GSlNtUlVSekZTRFF4TQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [RayNeo's new AI glasses skip the camera, focus on text overlays - the-decoder.com](https://news.google.com/rss/articles/CBMijwFBVV95cUxQZ2JOcHZWUUs0MUpGU05aZV9GMmdqWkgwb1l5WEtpaFgtWk02MVJFNlpzODVpRnktYzRfekZrT0Y0UzhLNl9jQkxoNWtmVzVMb1ljVERwZzMyaTNOa2E3ME1tVFA1bWZjYzlKZE8tVG1BNGJzWWJxSXN4Ulp5U1M3QVFXV1JPZThaTmxnNjZBVQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [S2026 \| Do AI smart glasses privacy protections work? - CBS](https://news.google.com/rss/articles/CBMicEFVX3lxTE5BZzZxTWxiZF9tbXZnU25CVnNQMHhLSEp1d29USjlsbHRST1NHX3BIX2tUaERMNVhWZUpHbFlRSG1FSnI3MThaYXdiSUlhSWI0STd2MVJHUzhfSEltY1pEYmdzcmdqUy1DVFo4eThQdjE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Smart Eyewear - Essilor](https://www.essilorluxottica.com/en/brands/smart-eyewear-solutions/) | reachable (200) | research_news_review, development_hacking, deep_research |
@@ -196,32 +198,31 @@ Generated: `2026-08-25T10:54:09.758807+00:00`
 | normal | needs_editorial_verification | direct | [Vuzix advances AI data center optical interconnects using U.S.-developed planar waveguide technology - Traders Union](https://news.google.com/rss/articles/CBMiggFBVV95cUxPeDVUOGk3NlBXazExNVA5RlVNck9tbUpIemJRbFZnaWVvNmJTS1QwNlhGQnBWdWQtdS1Tb1lVeS1sZy1lamdEMGZpX3FoYzJ1N1VNQTUwWERBTVhKZzZESzljdml4QzlwaGYybHJobGhWaXR3SGFIci1uWnRXcVlScTZn?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Woman covertly filmed by Meta AI smart glasses raises privacy and consent concerns: "I had no say" - CBS News](https://news.google.com/rss/articles/CBMif0FVX3lxTE42emlnYXJZb3ZYNVQ5dHhsVUxPTElVeFI5aHRScEdUS1FKZTRQUUNsNVFFUWZBSEUzRkhwMG52bEk2amgzZHZBX3R6eEg2UlphSXZ1aFlkYnNZaVZMNldCTkcxYlhrRlZJS2hQZDhqMHhRQk5lMXB3YkFtNmoxb1k?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.m.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearables - Wareable](https://www.wareable.com/category/wearable-tech) | reachable (200) | research_news_review, development_hacking |
 | high | source_review | direct | [2026 AI glasses buyer's guide: research-based comparison](https://cybernews.com/vr-ar/best-ai-glasses/) | review (403) | research_news_review, report_card_evidence, research_optics, retail_rebrand_review, deep_research |
+| normal | source_review | direct | [AI Smart Glasses Review: Hands-On Features & Verdict \| TikTok](https://www.tiktok.com/@tadoshioore/video/7662191753780333838) | unreachable (TimeoutError) | research_news_review, report_card_evidence |
 | normal | source_review | direct | [AI Glasses \| Innovative Eyewear at LensCrafters](https://www.lenscrafters.com/lc-us/ai-glasses) | review (403) | research_news_review, model_catalog_review, research_optics, policy_privacy |
-| normal | source_review | direct | [Amazon.com: Smart Glasses With Prescription Lenses](https://www.amazon.com/smart-glasses-prescription-lenses/s?k=smart+glasses+with+prescription+lenses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
+| normal | source_review | direct | [AI Smart Glasses Honest Review #smartglasses #productreview #techtok ...](https://www.tiktok.com/@stubbsy_finds/video/7675473386063105302) | unreachable (TimeoutError) | research_news_review, report_card_evidence |
+| normal | source_review | direct | [AI Smart Glasses Review: Coolest Gadget I Bought \| TikTok](https://www.tiktok.com/@shopwithjord_/video/7650863677612100866) | unreachable (TimeoutError) | research_news_review, report_card_evidence |
+| normal | source_review | direct | [AI Smart Glasses: Review & Price \| TikTok](https://www.tiktok.com/@iamsmarttips/video/7623463929636982039) | unreachable (TimeoutError) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | source_review | enabling | [America's Best Eyecare + Eyewear](https://www.americasbest.com/) | reachable (200) | research_news_review, research_optics |
 | normal | source_review | direct | [B by Lenskart - Smart Glasses](https://www.lenskart.com/b-smartglasses-by-lenskart) | review (404) | research_news_review, model_catalog_review, research_optics |
 | normal | source_review | direct | [Best prescription smart glasses in 2026 - Cybernews](https://cybernews.com/vr-ar/best-prescription-smart-glasses/) | review (403) | research_news_review, research_optics |
 | normal | source_review | direct | [Detailed Guide to Best Camera Glasses in 2026 - Cybernews](https://cybernews.com/vr-ar/best-camera-glasses/) | review (403) | research_news_review, report_card_evidence |
 | normal | source_review | enabling | [Medical prescription - Wikipedia](https://en.wikipedia.org/wiki/Medical_prescription) | not_checked | research_news_review, research_optics |
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
+| normal | source_review | direct | [Unboxing and Review of AI Smart Glasses \| TikTok](https://www.tiktok.com/@aishaboutique01/video/7616054036097191190) | unreachable (TimeoutError) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | source_review | direct | [AI Glasses - Best Buy](https://www.bestbuy.com/site/smart-ai-glasses/ai-glasses/pcmcat1780433669350.c?id=pcmcat1780433669350) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | source_review | direct | [AI Glasses \| Buy your Smart Sunglasses on Sunglass Hut® US](https://www.sunglasshut.com/us/ai-glasses) | review (403) | research_news_review |
-| normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
-| normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
-| normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
-| normal | source_review | direct | [Amazon.com: Smart Glasses With Built-in Camera](https://www.amazon.com/smart-glasses-built-in-camera/s?k=smart+glasses+with+built-in+camera) | review (503) | research_news_review, report_card_evidence, retail_rebrand_review |
-| normal | source_review | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | review (403) | research_news_review |
 | normal | source_review | direct | [Best Smart Glasses 2026: Top AR & AI Glasses Compared - Cybernews](https://cybernews.com/vr-ar/best-smart-glasses/) | review (403) | research_news_review, policy_privacy |
 | normal | source_review | direct | [Best Smart Glasses 2026: VITURE Wins Both AR/XR Glasses Crowns ...](https://shop.viture.com/blogs/preview/best-smart-glasses-2026-viture-wins-both-ar-xr-glasses-crowns-flagship-and-budget) | review (404) | research_news_review |
 | normal | source_review | direct | [Best Smart Glasses With Cameras 2026: Top Picks - Cybernews](https://cybernews.com/vr-ar/best-smart-glasses-with-cameras/) | review (403) | research_news_review |
 | normal | source_review | direct | [OpenGlass: Turn Any Glasses into AI Smart Glasses for Just $20 with ...](https://www.seeedstudio.com/blog/2024/05/23/openglass-turn-any-glasses-into-ai-smart-glasses-for-just-20-with-xiao-esp32s3-sense/) | review (403) | research_news_review |
 | normal | source_review | direct | [Smart & AI Glasses - Best Buy](https://www.bestbuy.com/site/wearable-technology/smart-ai-glasses/pcmcat1780433535084.c?id=pcmcat1780433535084) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | source_review | direct | [Smart Glasses - Best Buy](https://www.bestbuy.com/site/smart-ai-glasses/smart-glasses/pcmcat1647544943469.c?id=pcmcat1647544943469) | unreachable (TimeoutError) | research_news_review, retail_rebrand_review, deep_research |
+| normal | source_review | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | review (403) | research_news_review, report_card_evidence, policy_privacy |
 | low | source_review | enabling | [Biomedical Device - an overview \| ScienceDirect Topics](https://www.sciencedirect.com/topics/engineering/biomedical-device) | review (403) | research_news_review, research_optics |
 | low | source_review |  | [Durable community watch: www.reddit.com](https://www.reddit.com/r/SmartGlasses/) | review (403) |  |
 | low | source_review |  | [Durable community watch: www.reddit.com](https://www.reddit.com/r/SmartGlasses/comments/1ssuhcp/i_tested_9_ai_smart_glasses_across_4_realworld/) | review (403) |  |
@@ -271,7 +272,6 @@ Generated: `2026-08-25T10:54:09.758807+00:00`
 | normal | catalog_review | direct | [Manufacturer catalog lead: INMO GO3](https://www.inmoxr.com/products/inmo-go3) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | catalog_review | direct | [Manufacturer catalog lead: introducing the milan frame the departure collection s newest addition](https://www.latitude52n.com/blogs/news/introducing-the-milan-frame-the-departure-collection-s-newest-addition) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | catalog_review | direct | [Manufacturer catalog lead: Jobs Circle](https://dymesty.com/products/dymesty-ai-glasses-jobs-circle) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | catalog_review | direct | [Manufacturer catalog lead: keeping your smart glasses safe with ip65](https://www.latitude52n.com/blogs/news/keeping-your-smart-glasses-safe-with-ip65) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 
 ## Meaning of states
 
