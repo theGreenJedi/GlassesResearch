@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-25T19:03:17.176496+00:00`
+Generated: `2026-08-25T19:49:48.597314+00:00`
 
-- Intake files inspected: **139**
-- Candidates retained in this review window/history: **651**
+- Intake files inspected: **140**
+- Candidates retained in this review window/history: **652**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,10 +12,10 @@ Generated: `2026-08-25T19:03:17.176496+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 182
+- `needs_editorial_verification`: 184
 - `rejected_noise`: 9
 - `source_monitor`: 9
-- `source_review`: 48
+- `source_review`: 47
 - `watching`: 96
 
 ## Action queue
@@ -119,6 +119,7 @@ Generated: `2026-08-25T19:03:17.176496+00:00`
 | normal | needs_editorial_verification | direct | [L'Atitude 52°N Smart Glasses Review: The Smart Glasses Camera That Actually Beats Meta - Android Headlines](https://news.google.com/rss/articles/CBMidEFVX3lxTFBCZVhFLWxLRngtR0VBVkZBbU9KQmtibzZ1OTQ3eXFMbDRfcWxEbXRxaVBDNkRBb184dGswSkplTGJTM3k3Q2FNdjZXX1poTGhJQ1h6R2hPV2dkazQ5WnVRbm9KT1JqV3EyVFVaX25NVjA1cGtV?oc=5) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Looking into the privacy safeguard features of AI smart glasses - CBS News](https://news.google.com/rss/articles/CBMimgFBVV95cUxOU2ctMW9RdUZ6ZWFtdUx6clJPeU04aVJER09jNENBN2JHZHJubWc1UmRyRW5RZmthakVlUmFSNFAxd21TR2hqNURlTFBsbnV6U3BrM21DSV9GTF9jOE1la2tpWVJ3UHJvNHdwaFJuOHIxTzRtai0wSV96dDlFZVBHZjY1MkxiM1RDeElzNlhGckJPdmE3VlN5YzFn?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Looking into the privacy safeguard features of AI smart glasses - Yahoo](https://news.google.com/rss/articles/CBMijwFBVV95cUxPNVVzN25hbk9LYWNqQno5MU11VnJKNlR4TmllbkZEUGRMTkc3dWRoVmxuQzdidW1MaHlYcER6NXI1XzNWOXYzVjljWGQ4enhtQnJkNWJMMFl1VldmdnpKMGVocm9ONEpLWEZ0VXU2X3hWZThGUElNTExqRGxURlFPLWN4aU0xdjFRbXVvb2ctNA?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.1](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.1) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Meta AI glasses spark fears about privacy (Video) - Social News XYZ](https://news.google.com/rss/articles/CBMijwFBVV95cUxQblJpVUtFakF6S1pnTWY4SHZlX1ctcUhvSkdqUzJhNDMtYi1Vd3BEQmhfVzFJVmV4S2VlcHh5cHVqNEpoa3VQSXlGYy1ob0k5V3h2RkJ6UkFFdTJudjd5bHVxbjZVX2VNWm1iRm1yNDRrZDJuS0xXRWZfd3ZtTXVnMlZUUXl1aXd3TGdsUndsVdIBjwFBVV95cUxQblJpVUtFakF6S1pnTWY4SHZlX1ctcUhvSkdqUzJhNDMtYi1Vd3BEQmhfVzFJVmV4S2VlcHh5cHVqNEpoa3VQSXlGYy1ob0k5V3h2RkJ6UkFFdTJudjd5bHVxbjZVX2VNWm1iRm1yNDRrZDJuS0xXRWZfd3ZtTXVnMlZUUXl1aXd3TGdsUndsVQ?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta AI glasses spark fears about privacy - CBS News](https://news.google.com/rss/articles/CBMifEFVX3lxTE0tYW0zNUpOMEFhYi0wbDltUzNNeWx5RlA0ZE8zZ2dmM1o5NDdFaERMWUs0UHA0Zm5EaEJhMG5LenJ5SEZ0UzR0eERXVi1DQ19QQ1VQa1RXd0ljM2dId1RQMGFUUXZCUlJxYzVSOG1TSThHd3JaWnhFblVGNmQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta AI glasses spark fears about privacy - Modern Ghana](https://news.google.com/rss/articles/CBMiX0FVX3lxTFBZSDF2VTFobEhydnN2RmozWDBKVWw2SF9MTVlwblJNTWtfdTZXRWJGdm1UenlwLVpCajlwdU1mTDBSZEx5aTNXb0cwU3F6NDFXUllTY3JsbmRsSFVYalJJ0gFcQVVfeXFMTmxhMEN4R3BuN2FPU3hWNmNYMTFLaWRlbjJ1djhSbkNGNzZLZ2t1TnZxQVJ1eV9vRFN1dUNPNGVaeENEVEx5NWFwd3Z0al9Xc1NYdUtQemN0bUpjNEg?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -201,6 +202,7 @@ Generated: `2026-08-25T19:03:17.176496+00:00`
 | normal | needs_editorial_verification | direct | [Vuzix advances AI data center optical interconnects using U.S.-developed planar waveguide technology - Traders Union](https://news.google.com/rss/articles/CBMiggFBVV95cUxPeDVUOGk3NlBXazExNVA5RlVNck9tbUpIemJRbFZnaWVvNmJTS1QwNlhGQnBWdWQtdS1Tb1lVeS1sZy1lamdEMGZpX3FoYzJ1N1VNQTUwWERBTVhKZzZESzljdml4QzlwaGYybHJobGhWaXR3SGFIci1uWnRXcVlScTZn?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Woman covertly filmed by Meta AI smart glasses raises privacy and consent concerns: "I had no say" - CBS News](https://news.google.com/rss/articles/CBMif0FVX3lxTE42emlnYXJZb3ZYNVQ5dHhsVUxPTElVeFI5aHRScEdUS1FKZTRQUUNsNVFFUWZBSEUzRkhwMG52bEk2amgzZHZBX3R6eEg2UlphSXZ1aFlkYnNZaVZMNldCTkcxYlhrRlZJS2hQZDhqMHhRQk5lMXB3YkFtNmoxb1k?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.m.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearables - Wareable](https://www.wareable.com/category/wearable-tech) | reachable (200) | research_news_review, development_hacking |
@@ -226,7 +228,6 @@ Generated: `2026-08-25T19:03:17.176496+00:00`
 | normal | source_review | direct | [OpenGlass: Turn Any Glasses into AI Smart Glasses for Just $20 with ...](https://www.seeedstudio.com/blog/2024/05/23/openglass-turn-any-glasses-into-ai-smart-glasses-for-just-20-with-xiao-esp32s3-sense/) | review (403) | research_news_review |
 | normal | source_review | direct | [Smart & AI Glasses - Best Buy](https://www.bestbuy.com/site/wearable-technology/smart-ai-glasses/pcmcat1780433535084.c?id=pcmcat1780433535084) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | source_review | direct | [Smart Glasses - Best Buy](https://www.bestbuy.com/site/smart-ai-glasses/smart-glasses/pcmcat1647544943469.c?id=pcmcat1647544943469) | unreachable (TimeoutError) | research_news_review, retail_rebrand_review, deep_research |
-| normal | source_review | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | review (403) | research_news_review, report_card_evidence, policy_privacy |
 | low | source_review | enabling | [Biomedical Device - an overview \| ScienceDirect Topics](https://www.sciencedirect.com/topics/engineering/biomedical-device) | review (403) | research_news_review, research_optics |
 | low | source_review |  | [Durable community watch: www.reddit.com](https://www.reddit.com/r/SmartGlasses/) | review (403) |  |
 | low | source_review |  | [Durable community watch: www.reddit.com](https://www.reddit.com/r/SmartGlasses/comments/1ssuhcp/i_tested_9_ai_smart_glasses_across_4_realworld/) | review (403) |  |
@@ -271,7 +272,6 @@ Generated: `2026-08-25T19:03:17.176496+00:00`
 | normal | catalog_review | direct | [Manufacturer catalog lead: Explore More Explore More](https://dymesty.com/pages/cook-edge-detail) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | catalog_review | direct | [Manufacturer catalog lead: GLASSES](https://www.everysight.com/pages/glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | catalog_review | direct | [Manufacturer catalog lead: GO3 Bundles](https://www.inmoxr.com/collections/inmo-go3-bundles) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| normal | catalog_review | direct | [Manufacturer catalog lead: HUD](https://www.evenrealities.com/hud-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 
 ## Meaning of states
 
