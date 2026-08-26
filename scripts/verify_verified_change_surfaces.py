@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -52,7 +53,7 @@ def main() -> int:
         if homepage.count(marker) != 1:
             raise SystemExit(f"Homepage latest-verified item missing or duplicated: {event['id']}")
         positions.append(homepage.index(marker))
-        if event["publication"]["title"] not in homepage:
+        if html.escape(event["publication"]["title"]) not in homepage:
             raise SystemExit(f"Homepage is missing current verified title: {event['id']}")
         canonical_href = f'href="{event["publication"]["canonical_url"]}"'
         if canonical_href not in homepage:
