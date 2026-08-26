@@ -1,21 +1,29 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-08-26T15:55:34.376728+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 163,
+  "discovered_utc": "2026-08-26T18:06:49.561908+00:00",
+  "candidate_count": 3,
+  "precision_rejected_count": 123,
   "relationship_counts": {
-    "direct": 1,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 0,
+    "adjacent": 1,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "optics": 1
+    "model": 2,
+    "news": 1,
+    "tool": 1,
+    "community": 1,
+    "rumor": 1
   },
   "routing_counts": {
-    "research_news_review": 1,
-    "research_optics": 1
+    "adjacent_radar": 1,
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 2,
+    "research_news_review": 3,
+    "watching": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -26,34 +34,99 @@
   ],
   "candidates": [
     {
-      "id": "fc271ab46ff264bb",
-      "title": "Vuzix sends initial waveguide bridge samples to boost AI data center connectivity - Traders Union",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbGJ0alVlV0ViZG5lMkVqSi0xQXJIajZkU3RsNmROcm5fTEpkaEQ4MU5VSEdTQW16RkpoX1pNUmhLZU9pT1VwbElpVGd0VFVnOTZxcHExNnRDazYzNXVOSVFULVM4WHQwSnU3QTl6Y1VwR0hyZHRjUUJvY3JaeW15WXVmaFN6bUk?oc=5",
-      "source": "Google News: Vuzix smart glasses",
-      "source_lane": "core_glasses",
-      "published": "Wed, 26 Aug 2026 13:30:30 GMT",
-      "summary": "Vuzix sends initial waveguide bridge samples to boost AI data center connectivity Traders Union",
+      "id": "aba2625393c67505",
+      "title": "Apple AirPods 5 Could Launch in September as Apple Tightens Its Audio Ecosystem - eCoustics",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1DQjdZUWRVbWVka3dsbUl0N2xMOEgtV1kycjNQQWVDQzJnVmNtSVN0Mjl2WWJRakRlaUZVOEhIS0E4Z09BM2VtT3RFMWtIQ19PVHF2bkVzWS0yNHJEQndqYTJ5cVJkaVBQRWU2MWFxR1dza0tu?oc=5",
+      "source": "Google News: AI wearable camera",
+      "source_lane": "adjacent_hci",
+      "published": "Wed, 26 Aug 2026 16:28:02 GMT",
+      "summary": "Apple AirPods 5 Could Launch in September as Apple Tightens Its Audio Ecosystem eCoustics",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "launch"
+      ],
+      "status": "candidate",
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "rumor"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "watching",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "6a21774f9bbcdd65",
+      "title": "Mentra 3.1.0-dev.17",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.17",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-08-26T17:43:11Z",
+      "summary": "Coordinated Mentra release 3.1.0-dev.17 is in progress. Its immutable OTA assets are available; the completed release manifest is published only after every target succeeds.",
       "materiality_score": 2,
       "keyword_hits": [
-        "ai",
-        "waveguide"
+        "available",
+        "release"
       ],
       "status": "candidate",
       "relationship": "direct",
       "content_types": [
-        "optics"
+        "model",
+        "tool",
+        "community"
       ],
-      "primary_type": "optics",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "research_optics"
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: vuzix",
+      "publication_gate_reason": "known smart-glasses source",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "likely durable"
+      "institution_test": "review durability"
+    },
+    {
+      "id": "5f7c170f9d52a2b6",
+      "title": "Snapdragon AR1 vs XR2: Which Chip Is Actually Better for Smart Glasses in 2026? - BBN Times",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZk1DLVRyUjNFWDhEX2taM0FudHY0QnJXMnFkUzhoampnMUFPT01DMGFJTTV2aDlUWm5MeEdnTXF2ZE9PVjV3Nmc5MHJKaW5qSDJacm9BUHQ4UktQMlE5aENvYXVwcGtVTjBLZmtGdHlGd2ZTdnV0MzJOblZPSkdFSGMxRVpTVHU4aDRTanA3eVViWXVack1qLVBpd0d0M3Q4TEp4TXFTTkV5cmptaDdhcllXaw?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Wed, 26 Aug 2026 16:28:40 GMT",
+      "summary": "Snapdragon AR1 vs XR2: Which Chip Is Actually Better for Smart Glasses in 2026? BBN Times",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "chip",
+        "snapdragon"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
     }
   ]
 }
