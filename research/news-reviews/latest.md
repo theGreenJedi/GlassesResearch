@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-26T11:50:19.352437+00:00`
+Generated: `2026-08-26T13:27:22.821684+00:00`
 
-- Intake files inspected: **149**
-- Candidates retained in this review window/history: **679**
+- Intake files inspected: **150**
+- Candidates retained in this review window/history: **683**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 266
+- `adjacent_radar`: 267
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 199
+- `needs_editorial_verification`: 202
 - `rejected_noise`: 9
 - `source_monitor`: 9
-- `source_review`: 49
-- `watching`: 97
+- `source_review`: 48
+- `watching`: 98
 
 ## Action queue
 
@@ -27,6 +27,7 @@ Generated: `2026-08-26T11:50:19.352437+00:00`
 | high | needs_editorial_verification | direct | [Innovative Eyewear Expands Smart Eyewear Lineup With HTC Partnership and Vive Eagle September Launch - VisionMonday.com](https://news.google.com/rss/articles/CBMi5AFBVV95cUxPY3lnczB1Z0hyREhzZ18zblNXaGt6Q1kwOG5mclhvSXFQNjgzVmlwUEQxQ2Z6UkRkcEN2S0hra0N0b0lRc1FsQlFuNzhUV3pDLS1Vb2o2UWdrLXZJclZUUXk1SV9tVUpQZXhkRjRCbHFTNXRoV0U1dVZTelRKcFNCMEY2b2N0czk0M2JuejhuUDBrcUdNaC1WWG9PTVdBZEZPbDhpWGRlS3dudHhvZEc1aXUtaGNJTnlYWGRCMHNmSjh4QTlZbUtEYk9wS3laRnF6dTFVNGN5MWpWNWJVbnh1UWthYnM?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Innovative Eyewear Expands Smart Eyewear Lineup With HTC Partnership and Vive Eagle September Launch - VisionMonday.com](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMUw2Y1ZkbVdFVFlpRzZiTHVmaDRXMXNta0tEU19nNURYakpxREtmZUNlbm1LN2xrOHhhS3hUSVJDYTZVVmY0Um1ncHRCOU5yYXJlM2tIam5XbUVIZThudFhsWkFFS0ZsQXl3SzBjWl9TN0p5UTBjS3hNd0VRdmVQT3IwVDVOTk5WTHRxSERhNWJsQkQ3ZnRGV2dYRU9qVGNsZFZlT1lyTlJlSHF2dldNZVJTa0xrWUh5MXR2MUJNT1FkWWZReGZ0SEpYYmR3UThyVUtFV3RTWHQ3RnQtSkhlRGVnYw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Innovative Eyewear Expands Smart Eyewear Lineup With HTC Partnership and Vive Eagle September Launch - VisionMonday.com](https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUHh6UnJZako5RHNndjZSc2QzQmo3NDczZVRQZTRuX05sbFpWT2pVMU9EWXF5MURwbFJNRVlkT3NielBLblJRZkhjRXpwcmVIQktNQXktUkRvbzJoa2xVUFp0RUktOWMwWHZOWVVEcWFmZHB5dHhqODRqcXhHYS1pZW1MUk92WnpBanlIeGhhQWlZd3Z4WFoyOThMMFBQOTdmMEpaQ1ZfLUxiNDRmX2JGck9ydFhPaFg2T291dzZVdG5UWTgyQUF4MnBlYklSUUoyUW53Sm9xOUdiU0hkZWhCSg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Legato Raises $12 Million to Launch AI Glasses for Hearing Support - Межа. Новини України.](https://news.google.com/rss/articles/CBMiZkFVX3lxTE13NEEwYzhTcnNRV2hjSEpaX3AyVjFhRkhLSHFDcFpVVFFkXy1JdHY4bGtUaHdyc09qQmZRYW9uY0NHWnBEeUItUENqX2twazd4SkNSZ1RXWUNLRFRZTTg4YTR4WDNRUQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta Readies Ray-Ban Smart Glasses Launch As Privacy Concerns Mount 03/27/2026 - MediaPost](https://news.google.com/rss/articles/CBMirgFBVV95cUxNNGlWZFJfUkRNb3ZtY1AwNkhidndMMThhUEV1V19lN2V6bm52R1V4TUxEYWhqc0diS01laF9uMFFlSWdGNE12bFpmek8zd0pUd3A1a2hRY21DZTFYUU80ZWRlQUhCTjVXa2dzLXF6d0ZWUEJYaWVRUzlIVWhQNzNXb19aTHZYaWUxa3BfempJOWpkQkt6YVJTNEdnTjFXZ3RoSzktc3EzMjRWekdlQ0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Innovative Eyewear partners with HTC to launch VIVE Eagle smart glasses in the US this September - Pluang](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZUpvRnoyU2dOdWZkUzJRSEJ0amlpdzVZMzZuMFZrMnh1ZGR1OWFpdGZ2Z3VwMko1UVdhODRGei11SHV2MlAzTkJIRWJtalBzcDV6QW5YVjRQM3ZzRFRENVRuN2Rwdm01Q0hhMGZIQ3RTeUZyekZ6SDBRY1RKdVhNS0dIY3Zqdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Kr \| Smart AR Glasses Thunderbird iO Officially Unveiled: Next-Generation Thinking Glasses with Initial Launch Price Starting at 1996 Yuan ](https://news.google.com/rss/articles/CBMiU0FVX3lxTE00ZFFiRi0zQm9rWmNDSkJwMkRqVjdFTGRlX251NDBmSU9SR2NibDhZQ2hKeXFSY0tSQ2RNR1B1TmhrV0UxNHdodnduNnJnbVByYzVj?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -92,6 +93,7 @@ Generated: `2026-08-26T11:50:19.352437+00:00`
 | normal | needs_editorial_verification | direct | [7 Smart Glasses In 2026 That Reveal The Biggest Wearable Shifts – Here ...](https://glassalmanac.com/7-smart-glasses-in-2026-that-reveal-the-biggest-wearable-shifts-heres-why/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses are Here. So Is the Privacy Problem - sify.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUTZPLUljc3Q4WXJzVzZsVlc5NUEyOEUyc1JNNG5iRUJhdFRuc0hwUlZTQTM0UUZGaTY0RzVacmcwaVBTY2tHejFfdURGenRCNzlieTlkWERtNktJVzZkTExudUt2eTdycVRHV1VxdWtmdV9PSnJVNy0yZHh1ZkxQcUhSSzctRmM?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026 - VR.org](https://vr.org/ar-glasses) | reachable (200) | research_news_review, policy_privacy |
@@ -100,8 +102,7 @@ Generated: `2026-08-26T11:50:19.352437+00:00`
 | normal | needs_editorial_verification | direct | [Best New Smart Glasses Arriving in 2026 - Geeky Gadgets](https://www.geeky-gadgets.com/best-smart-glasses-2026-compared/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AI Glasses in 2026: 15 Models Reviewed](https://treeview.studio/blog/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (202) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: AR, Audio And Top Picks Compared](https://wearablexp.com/smart-glasses/best-smart-glasses/) | reachable (200) | research_news_review |
@@ -218,6 +219,8 @@ Generated: `2026-08-26T11:50:19.352437+00:00`
 | normal | needs_editorial_verification | direct | [Vuzix advances AI data center optical interconnects using U.S.-developed planar waveguide technology - Traders Union](https://news.google.com/rss/articles/CBMiggFBVV95cUxPeDVUOGk3NlBXazExNVA5RlVNck9tbUpIemJRbFZnaWVvNmJTS1QwNlhGQnBWdWQtdS1Tb1lVeS1sZy1lamdEMGZpX3FoYzJ1N1VNQTUwWERBTVhKZzZESzljdml4QzlwaGYybHJobGhWaXR3SGFIci1uWnRXcVlScTZn?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Woman covertly filmed by Meta AI smart glasses raises privacy and consent concerns: "I had no say" - CBS News](https://news.google.com/rss/articles/CBMif0FVX3lxTE42emlnYXJZb3ZYNVQ5dHhsVUxPTElVeFI5aHRScEdUS1FKZTRQUUNsNVFFUWZBSEUzRkhwMG52bEk2amgzZHZBX3R6eEg2UlphSXZ1aFlkYnNZaVZMNldCTkcxYlhrRlZJS2hQZDhqMHhRQk5lMXB3YkFtNmoxb1k?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [XREAL Aura Brings Android XR and Gemini AI to Smart Glasses - Geeky Gadgets](https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pOEY3RHZjUDNWZVZpMHpKTHdfckUyVmp1ZGJiYVYzS1MwWkxxbzdYaVJIRkRFQ19qWlNGZG5lSDZZOHZGQUNfTFE2RzVqUk83dXphQ3RkODZhWGFSOFhKY2J3?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.m.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearables - Wareable](https://www.wareable.com/category/wearable-tech) | reachable (200) | research_news_review, development_hacking |
@@ -235,8 +238,8 @@ Generated: `2026-08-26T11:50:19.352437+00:00`
 | normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ai Smart Glasses With Camera](https://www.amazon.com/ai-smart-glasses-camera/s?k=ai+smart+glasses+with+camera) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
-| normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses With Built-in Camera](https://www.amazon.com/smart-glasses-built-in-camera/s?k=smart+glasses+with+built-in+camera) | review (503) | research_news_review, report_card_evidence, retail_rebrand_review |
+| normal | source_review | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | review (403) | research_news_review |
 | normal | source_review | direct | [Best Smart Glasses 2026: Top AR & AI Glasses Compared - Cybernews](https://cybernews.com/vr-ar/best-smart-glasses/) | review (403) | research_news_review, policy_privacy |
 | normal | source_review | direct | [Best Smart Glasses 2026: VITURE Wins Both AR/XR Glasses Crowns ...](https://shop.viture.com/blogs/preview/best-smart-glasses-2026-viture-wins-both-ar-xr-glasses-crowns-flagship-and-budget) | review (404) | research_news_review |
 | normal | source_review | direct | [Best smart glasses with a display in 2026 - Cybernews](https://cybernews.com/vr-ar/best-smart-glasses-with-a-display/) | review (403) | research_news_review |
@@ -244,7 +247,6 @@ Generated: `2026-08-26T11:50:19.352437+00:00`
 | normal | source_review | direct | [OpenGlass: Turn Any Glasses into AI Smart Glasses for Just $20 with ...](https://www.seeedstudio.com/blog/2024/05/23/openglass-turn-any-glasses-into-ai-smart-glasses-for-just-20-with-xiao-esp32s3-sense/) | review (403) | research_news_review |
 | normal | source_review | direct | [Smart & AI Glasses - Best Buy](https://www.bestbuy.com/site/wearable-technology/smart-ai-glasses/pcmcat1780433535084.c?id=pcmcat1780433535084) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | source_review | direct | [Smart Glasses - Best Buy](https://www.bestbuy.com/site/smart-ai-glasses/smart-glasses/pcmcat1647544943469.c?id=pcmcat1647544943469) | unreachable (TimeoutError) | research_news_review, retail_rebrand_review, deep_research |
-| normal | source_review | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | review (403) | research_news_review, report_card_evidence, policy_privacy |
 | low | source_review | enabling | [Biomedical Device - an overview \| ScienceDirect Topics](https://www.sciencedirect.com/topics/engineering/biomedical-device) | review (403) | research_news_review, research_optics |
 | low | source_review |  | [Durable community watch: www.reddit.com](https://www.reddit.com/r/SmartGlasses/) | review (403) |  |
 | low | source_review |  | [Durable community watch: www.reddit.com](https://www.reddit.com/r/SmartGlasses/comments/1ssuhcp/i_tested_9_ai_smart_glasses_across_4_realworld/) | review (403) |  |
@@ -270,8 +272,6 @@ Generated: `2026-08-26T11:50:19.352437+00:00`
 | low | source_review |  | [Durable retail watch: www.bestbuy.com](https://www.bestbuy.com/product/nautica-smart-eyewear-powered-by-lucyd-corsair/J3R8ZC6LGC/sku/6589919) | not_checked |  |
 | low | source_review |  | [Durable retail watch: www.bestbuy.com](https://www.bestbuy.com/product/meta-adventurer-ai-glasses-smart-features-like-12mp-camera-live-translate-8-hour-battery-range-of-sizes-brown-lenses-classic-tortoise/J3LHRV8436/sku/6677832) | not_checked |  |
 | low | source_review |  | [Durable retail watch: www.bhphotovideo.com](https://www.bhphotovideo.com/c/product/1951626-REG/rayneo_rayneo_x3_pro_x3_pro_ar_glasses.html) | not_checked |  |
-| high | catalog_review | direct | [Manufacturer catalog lead: Prescription Lenses](https://www.evenrealities.com/prescription-smart-glasses) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
-| high | catalog_review | direct | [Manufacturer catalog lead: Request SDK](https://www.everysight.com/pages/sdk) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 
 ## Meaning of states
 
