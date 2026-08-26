@@ -5,14 +5,18 @@
     const node = root.querySelector(`[data-site-stat="${name}"]`);
     if (node) node.textContent = value;
   };
-  fetch("data/site-status.json")
+  const setNumber = (name, value) => {
+    const number = Number(value);
+    if (Number.isFinite(number)) set(name, number.toLocaleString());
+  };
+  fetch("/data/site-status.json", { cache: "no-store" })
     .then((response) => {
       if (!response.ok) throw new Error("status unavailable");
       return response.json();
     })
     .then((status) => {
-      set("models", Number(status.canonical_model_count).toLocaleString());
-      set("report-cards", Number(status.scored_report_card_count).toLocaleString());
+      setNumber("models", status.canonical_model_count);
+      setNumber("report-cards", status.scored_report_card_count);
 
       const rawDate = status.catalog_updated_at;
       if (typeof rawDate === "string" && /^\d{4}-\d{2}-\d{2}$/.test(rawDate)) {
@@ -23,5 +27,8 @@
         }
       }
     })
-    .catch(() => {});
+    .catch(() => {
+      // The build already renders canonical values into the HTML. If a refresh
+      // request fails, preserve those values rather than blanking the status.
+    });
 })();
