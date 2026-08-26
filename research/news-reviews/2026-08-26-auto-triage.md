@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-26T16:16:28.447902+00:00`
+Generated: `2026-08-26T18:07:14.629741+00:00`
 
-- Intake files inspected: **151**
-- Candidates retained in this review window/history: **684**
+- Intake files inspected: **152**
+- Candidates retained in this review window/history: **687**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,11 +12,11 @@ Generated: `2026-08-26T16:16:28.447902+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 202
+- `needs_editorial_verification`: 203
 - `rejected_noise`: 9
 - `source_monitor`: 9
-- `source_review`: 49
-- `watching`: 98
+- `source_review`: 50
+- `watching`: 99
 
 ## Action queue
 
@@ -101,7 +101,6 @@ Generated: `2026-08-26T16:16:28.447902+00:00`
 | normal | needs_editorial_verification | direct | [Best New Smart Glasses Arriving in 2026 - Geeky Gadgets](https://www.geeky-gadgets.com/best-smart-glasses-2026-compared/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AI Glasses in 2026: 15 Models Reviewed](https://treeview.studio/blog/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
@@ -129,6 +128,7 @@ Generated: `2026-08-26T16:16:28.447902+00:00`
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.1](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.1) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.10](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.10) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.15](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.15) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.17](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.17) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.2](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.2) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.3](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.3) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.4](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.4) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -173,6 +173,7 @@ Generated: `2026-08-26T16:16:28.447902+00:00`
 | normal | needs_editorial_verification | direct | [Smart Glasses jetzt online entdecken & kaufen - Fielmann](https://www.fielmann.de/sonnenbrillen/smartglasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Smart Glasses Market Growth 2026: Why AI, AR and Display-Less - openPR.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxPUXA2b0tiVlRRendhMGdGMkMyRm9vcmxTRWFiQU84ckdvVUdfQzFhN1lJdURoOHdMbHFjaDhNMUMtMEJOX2Uza0JnUmFpOTk5MnhvZUtoNUs5RFJaWC1tYUd0enhpVFJzLXJzRk5PNW1jaDBQcXQ2Mk54LUpULUozSjZTT3N6bWxNMW5SV2VLQzFIUmxaQmhQQlAwOA?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Smart Glasses with AI and Bluetooth Features - Walmart.com](https://www.walmart.com/browse/electronics/smart-glasses/3944_1229723_2776031) | reachable (200) | research_news_review, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Snapdragon AR1 vs XR2: Which Chip Is Actually Better for Smart Glasses in 2026? - BBN Times](https://news.google.com/rss/articles/CBMiswFBVV95cUxPZk1DLVRyUjNFWDhEX2taM0FudHY0QnJXMnFkUzhoampnMUFPT01DMGFJTTV2aDlUWm5MeEdnTXF2ZE9PVjV3Nmc5MHJKaW5qSDJacm9BUHQ4UktQMlE5aENvYXVwcGtVTjBLZmtGdHlGd2ZTdnV0MzJOblZPSkdFSGMxRVpTVHU4aDRTanA3eVViWXVack1qLVBpd0d0M3Q4TEp4TXFTTkV5cmptaDdhcllXaw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [The 13 Best Augmented Reality Glasses You Can Buy](https://arvrtips.com/best-augmented-reality-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [The Best Smart Glasses We've Tested for 2026 \| PCMag](https://www.pcmag.com/picks/the-best-smart-glasses) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Timekettle Expands AI Ecosystem with Babel OS 3.0, Powering Real-Time Translation on RayNeo iO Smart Glasses - AiThority](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNVM3WGdNVG1wVElFeGhnQUx3TG95ZEVySnFzampadmdZMy14RXI0YVBfUTZUZVNrd1JMd2kzMFFibFhDMFFWdnNpOWJzWi1iTmtNeGJtT0pmTVhFZHRZc1RKV0RqakRMWFpFVVlZNkdQMnQ5b1hMVU1wb1dNSnBCMUQ3YjlTbE43M00yRDhsbHBaVloxVDlYNXZ5ckhsVlFGRWVOT1VlcEs3SF8ydnFuU0l4S2FXM0IyVTRRSHlkbHlET1FPNHpOYUl2S1hvTlBVa2hDT1FDQjFCMmtScnlqSQ?oc=5) | reachable (200) | research_news_review |
@@ -240,6 +241,7 @@ Generated: `2026-08-26T16:16:28.447902+00:00`
 | normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses With Built-in Camera](https://www.amazon.com/smart-glasses-built-in-camera/s?k=smart+glasses+with+built-in+camera) | review (503) | research_news_review, report_card_evidence, retail_rebrand_review |
+| normal | source_review | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | review (403) | research_news_review |
 | normal | source_review | direct | [Best Smart Glasses 2026: Top AR & AI Glasses Compared - Cybernews](https://cybernews.com/vr-ar/best-smart-glasses/) | review (403) | research_news_review, policy_privacy |
 | normal | source_review | direct | [Best Smart Glasses 2026: VITURE Wins Both AR/XR Glasses Crowns ...](https://shop.viture.com/blogs/preview/best-smart-glasses-2026-viture-wins-both-ar-xr-glasses-crowns-flagship-and-budget) | review (404) | research_news_review |
 | normal | source_review | direct | [Best smart glasses with a display in 2026 - Cybernews](https://cybernews.com/vr-ar/best-smart-glasses-with-a-display/) | review (403) | research_news_review |
@@ -270,8 +272,6 @@ Generated: `2026-08-26T16:16:28.447902+00:00`
 | low | source_review |  | [Durable retail watch: Dymesty, AI Smart Glasses, Titanium Frame, Real-Time Translation - Walmart.com](https://www.walmart.com/ip/20091507313) | reachable (200) |  |
 | low | source_review |  | [Durable retail watch: OICIIDO, Smart Glasses, AI translation, Bluetooth 5.3, Waterproof - Walmart.com](https://www.walmart.com/ip/16914411854) | not_checked |  |
 | low | source_review |  | [Durable retail watch: www.amazon.com](https://www.amazon.com/Smart-Glasses/b?ie=UTF8&node=10048708011) | reachable (200) |  |
-| low | source_review |  | [Durable retail watch: www.bestbuy.com](https://www.bestbuy.com/product/nautica-smart-eyewear-powered-by-lucyd-corsair/J3R8ZC6LGC/sku/6589919) | not_checked |  |
-| low | source_review |  | [Durable retail watch: www.bestbuy.com](https://www.bestbuy.com/product/meta-adventurer-ai-glasses-smart-features-like-12mp-camera-live-translate-8-hour-battery-range-of-sizes-brown-lenses-classic-tortoise/J3LHRV8436/sku/6677832) | not_checked |  |
 
 ## Meaning of states
 
