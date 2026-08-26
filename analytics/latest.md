@@ -1,66 +1,65 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-08-25T07:58:52+00:00**
+Generated automatically: **2026-08-26T07:59:46+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-08-17 → 2026-08-23):** 474 impressions, 3 clicks, 0.63% CTR, average position 38.2.
-- **7-day change:** impressions -38.8%; clicks n/a.
-- **Rolling 28 days:** 1371 impressions, 3 clicks, 0.22% CTR, average position 33.0.
-- **Milestone:** organic Google clicks appeared after a previous zero-click week.
+- **Google, latest final 7 days (2026-08-18 → 2026-08-24):** 368 impressions, 2 clicks, 0.54% CTR, average position 37.6.
+- **7-day change:** impressions -52.9%; clicks +100.0%.
+- **Rolling 28 days:** 1387 impressions, 3 clicks, 0.22% CTR, average position 33.0.
 
 ## Google — top queries
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
 | ai glasses timeline | 0 | 1 | 0.00% | 30.0 |
-| ar eyeglass development case study | 0 | 3 | 0.00% | 56.0 |
+| ar eyeglass development case study | 0 | 5 | 0.00% | 55.2 |
 | ar glasses open source | 0 | 2 | 0.00% | 69.0 |
-| ar glasses sdk | 0 | 2 | 0.00% | 33.0 |
-| ar glasses with screen | 0 | 1 | 0.00% | 30.0 |
+| ar glasses sdk | 0 | 1 | 0.00% | 33.0 |
 | ar monocle | 0 | 1 | 0.00% | 87.0 |
 | ar smart glasses case studies | 0 | 1 | 0.00% | 49.0 |
-| best open source smart glasses | 0 | 1 | 0.00% | 82.0 |
 | brilliant labs halo github | 0 | 1 | 0.00% | 8.0 |
-| cyanbridge | 0 | 12 | 0.00% | 9.3 |
+| cyanbridge | 0 | 10 | 0.00% | 9.4 |
+| even 2 | 0 | 2 | 0.00% | 29.0 |
+| even g2 glasses | 0 | 1 | 0.00% | 30.0 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/glossary/organizations/ORG-0002-goodway-techs/ | 1 | 3 | 33.33% | 8.7 |
-| https://glassesresearch.org/models/BrilliantHalo/ | 1 | 22 | 4.55% | 13.0 |
+| https://glassesresearch.org/models/BrilliantHalo/ | 1 | 19 | 5.26% | 10.2 |
 | https://glassesresearch.org/models/RayBanMetaGen2/ | 1 | 3 | 33.33% | 34.0 |
-| https://glassesresearch.org/ | 0 | 5 | 0.00% | 28.2 |
-| https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 1 | 0.00% | 1.0 |
-| https://glassesresearch.org/WHY/ | 0 | 1 | 0.00% | 9.0 |
+| https://glassesresearch.org/ | 0 | 7 | 0.00% | 22.1 |
+| https://glassesresearch.org/artifacts/ | 0 | 1 | 0.00% | 6.0 |
 | https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 2 | 0.00% | 50.5 |
-| https://glassesresearch.org/docs/ABOUT/ | 0 | 2 | 0.00% | 37.5 |
+| https://glassesresearch.org/docs/ABOUT/ | 0 | 1 | 0.00% | 71.0 |
 | https://glassesresearch.org/docs/BLE/ | 0 | 3 | 0.00% | 54.0 |
-| https://glassesresearch.org/docs/CONTRIBUTE/ | 0 | 1 | 0.00% | 6.0 |
+| https://glassesresearch.org/docs/ECOSYSTEM_SCOPE/ | 0 | 1 | 0.00% | 10.0 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 28 | 0.00% | 55.1 |
+| https://glassesresearch.org/docs/INSTITUTIONAL_COLLECTIONS/ | 0 | 1 | 0.00% | 2.0 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **1,451 requests**, **594 HTTP visits**, **13.5 MB** served.
-- Rolling 7d: **32,587 requests**, **5,168 HTTP visits**, **309.1 MB** served.
+- Rolling 24h: **1,554 requests**, **429 HTTP visits**, **15.0 MB** served.
+- Rolling 7d: **28,528 requests**, **5,015 HTTP visits**, **268.7 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 1,072 | 512 |
-| DE | 94 | 19 |
-| T1 | 67 | 2 |
-| SG | 52 | 6 |
-| BO | 49 | 0 |
-| CN | 16 | 3 |
-| BR | 11 | 5 |
-| GB | 10 | 2 |
-| KR | 8 | 5 |
-| JP | 8 | 6 |
+| US | 1,280 | 356 |
+| DE | 75 | 9 |
+| EC | 45 | 1 |
+| FR | 44 | 2 |
+| CN | 15 | 8 |
+| BR | 14 | 7 |
+| SG | 11 | 5 |
+| JP | 8 | 8 |
+| KR | 8 | 6 |
+| GB | 5 | 1 |
 
 ## What to watch
 
