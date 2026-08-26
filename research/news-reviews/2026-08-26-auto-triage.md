@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-26T18:07:14.629741+00:00`
+Generated: `2026-08-26T20:10:42.306580+00:00`
 
-- Intake files inspected: **152**
-- Candidates retained in this review window/history: **687**
+- Intake files inspected: **153**
+- Candidates retained in this review window/history: **690**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 267
+- `adjacent_radar`: 269
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 203
+- `needs_editorial_verification`: 206
 - `rejected_noise`: 9
 - `source_monitor`: 9
-- `source_review`: 50
+- `source_review`: 48
 - `watching`: 99
 
 ## Action queue
@@ -93,6 +93,7 @@ Generated: `2026-08-26T18:07:14.629741+00:00`
 | normal | needs_editorial_verification | direct | [7 Smart Glasses In 2026 That Reveal The Biggest Wearable Shifts – Here ...](https://glassalmanac.com/7-smart-glasses-in-2026-that-reveal-the-biggest-wearable-shifts-heres-why/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses are Here. So Is the Privacy Problem - sify.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUTZPLUljc3Q4WXJzVzZsVlc5NUEyOEUyc1JNNG5iRUJhdFRuc0hwUlZTQTM0UUZGaTY0RzVacmcwaVBTY2tHejFfdURGenRCNzlieTlkWERtNktJVzZkTExudUt2eTdycVRHV1VxdWtmdV9PSnJVNy0yZHh1ZkxQcUhSSzctRmM?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026 - VR.org](https://vr.org/ar-glasses) | reachable (200) | research_news_review, policy_privacy |
@@ -130,6 +131,7 @@ Generated: `2026-08-26T18:07:14.629741+00:00`
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.15](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.15) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.17](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.17) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.2](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.2) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.21](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.21) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.3](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.3) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.4](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.4) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.6](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.6) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -222,6 +224,7 @@ Generated: `2026-08-26T18:07:14.629741+00:00`
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top ... - PCMag](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Woman covertly filmed by Meta AI smart glasses raises privacy and consent concerns: "I had no say" - CBS News](https://news.google.com/rss/articles/CBMif0FVX3lxTE42emlnYXJZb3ZYNVQ5dHhsVUxPTElVeFI5aHRScEdUS1FKZTRQUUNsNVFFUWZBSEUzRkhwMG52bEk2amgzZHZBX3R6eEg2UlphSXZ1aFlkYnNZaVZMNldCTkcxYlhrRlZJS2hQZDhqMHhRQk5lMXB3YkFtNmoxb1k?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [XREAL Aura Brings Android XR and Gemini AI to Smart Glasses - Geeky Gadgets](https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pOEY3RHZjUDNWZVZpMHpKTHdfckUyVmp1ZGJiYVYzS1MwWkxxbzdYaVJIRkRFQ19qWlNGZG5lSDZZOHZGQUNfTFE2RzVqUk83dXphQ3RkODZhWGFSOFhKY2J3?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.m.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearables - Wareable](https://www.wareable.com/category/wearable-tech) | reachable (200) | research_news_review, development_hacking |
@@ -238,7 +241,6 @@ Generated: `2026-08-26T18:07:14.629741+00:00`
 | normal | source_review | direct | [AI Glasses \| Buy your Smart Sunglasses on Sunglass Hut® US](https://www.sunglasshut.com/us/ai-glasses) | review (403) | research_news_review |
 | normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Ai Smart Glasses With Camera](https://www.amazon.com/ai-smart-glasses-camera/s?k=ai+smart+glasses+with+camera) | review (503) | research_news_review, retail_rebrand_review |
-| normal | source_review | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | review (503) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [Amazon.com: Smart Glasses With Built-in Camera](https://www.amazon.com/smart-glasses-built-in-camera/s?k=smart+glasses+with+built-in+camera) | review (503) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | source_review | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | review (403) | research_news_review |
@@ -249,7 +251,6 @@ Generated: `2026-08-26T18:07:14.629741+00:00`
 | normal | source_review | direct | [OpenGlass: Turn Any Glasses into AI Smart Glasses for Just $20 with ...](https://www.seeedstudio.com/blog/2024/05/23/openglass-turn-any-glasses-into-ai-smart-glasses-for-just-20-with-xiao-esp32s3-sense/) | review (403) | research_news_review |
 | normal | source_review | direct | [Smart & AI Glasses - Best Buy](https://www.bestbuy.com/site/wearable-technology/smart-ai-glasses/pcmcat1780433535084.c?id=pcmcat1780433535084) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | source_review | direct | [Smart Glasses - Best Buy](https://www.bestbuy.com/site/smart-ai-glasses/smart-glasses/pcmcat1647544943469.c?id=pcmcat1647544943469) | unreachable (TimeoutError) | research_news_review, retail_rebrand_review, deep_research |
-| normal | source_review | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | review (403) | research_news_review, report_card_evidence, policy_privacy |
 | low | source_review | enabling | [Biomedical Device - an overview \| ScienceDirect Topics](https://www.sciencedirect.com/topics/engineering/biomedical-device) | review (403) | research_news_review, research_optics |
 | low | source_review |  | [Durable community watch: www.reddit.com](https://www.reddit.com/r/SmartGlasses/) | review (403) |  |
 | low | source_review |  | [Durable community watch: www.reddit.com](https://www.reddit.com/r/SmartGlasses/comments/1ssuhcp/i_tested_9_ai_smart_glasses_across_4_realworld/) | review (403) |  |
@@ -271,7 +272,6 @@ Generated: `2026-08-26T18:07:14.629741+00:00`
 | low | source_review |  | [Durable retail watch: Amazon.com](https://www.amazon.com/dp/B0GTYKGR5X) | not_checked |  |
 | low | source_review |  | [Durable retail watch: Dymesty, AI Smart Glasses, Titanium Frame, Real-Time Translation - Walmart.com](https://www.walmart.com/ip/20091507313) | reachable (200) |  |
 | low | source_review |  | [Durable retail watch: OICIIDO, Smart Glasses, AI translation, Bluetooth 5.3, Waterproof - Walmart.com](https://www.walmart.com/ip/16914411854) | not_checked |  |
-| low | source_review |  | [Durable retail watch: www.amazon.com](https://www.amazon.com/Smart-Glasses/b?ie=UTF8&node=10048708011) | reachable (200) |  |
 
 ## Meaning of states
 
