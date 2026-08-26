@@ -83,7 +83,6 @@
       display: (r) => known(r.fields?.display) || known(r.fields?.display_type) || /display|ar|xr|hud/.test(`${r.type} ${textOf(r, 'category')}`.toLowerCase()),
       full_color_display: (r) => /color|micro-?oled|oled/.test(`${textOf(r, 'display')} ${textOf(r, 'display_type')}`),
       binocular_display: (r) => /binocular|dual-eye|two-eye/.test(`${textOf(r, 'display')} ${textOf(r, 'display_type')}`),
-      no_display: (r) => !aliases.display(r),
       ai_assistant: (r) => yes(r, 'ai_assistant') || /ai|assistant|alexa|gemini|meta ai/.test(`${r.type} ${textOf(r, 'features')} ${textOf(r, 'ai')}`.toLowerCase()),
       visual_ai: (r) => yes(r, 'visual_ai') || (aliases.camera(r) && /ai|vision|visual/.test(`${r.type} ${textOf(r, 'ai')}`.toLowerCase())),
       translation: (r) => known(r.fields?.translation) && !/^no$/i.test(String(valueOf(r, 'translation'))),
@@ -115,6 +114,7 @@
         if (canonical === 'yes') return 'yes';
         if (canonical === 'no') return 'no';
         if (canonical === 'na') return 'na';
+        if (filter.field === 'no_display') return 'unknown';
         const fn = aliases[filter.field];
         return (fn ? Boolean(fn(r)) : yes(r, filter.field)) ? 'inferred-yes' : 'unknown';
       }
