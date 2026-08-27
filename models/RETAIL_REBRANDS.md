@@ -23,7 +23,7 @@ A shared application or software platform is evidence of an ecosystem relationsh
 | LEEDOAR-associated W100 | W100 / Ear Dance | Retail identity; no separate count | W100 documentation identifies AB5712F + Ear Dance; [W100 / Ear Dance lineage](../lineages/W100_EARDANCE.md) |
 | Giinova W630 | W630 / HeyCyan sibling platform | Retail identity of W630; not a W610 alias | Manual identifies W630 + HeyCyan; Goodway separately documents W630 architecture; [HeyCyan population research](../lineages/HEYCYAN_POPULATION.md) |
 | GUHUAVMI W630 | W630 / HeyCyan sibling platform | Retail identity of W630; not a W610 alias | Manual identifies W630 + HeyCyan/Bluetooth/Wi-Fi; [HeyCyan population research](../lineages/HEYCYAN_POPULATION.md) |
-| VITURE Phantom Beast | VITURE Beast / GLS-0082 | Co-branded derivative alias; does not add a model beyond GLS-0082 | VITURE states that the collector's edition retains Beast's core XR hardware; [VITURE Beast](PROFILES_XR_DISPLAY_02.md#gls-0082-viture-beast); [evidence](../evidence/EV-0085-VITURE-Phantom-Beast-primary-derivative.md) |
+| VITURE Phantom Beast | VITURE Beast / GLS-0082 | Co-branded derivative alias; does not add a model beyond GLS-0082 | VITURE states that the collector's edition retains Beast's core XR hardware; [VITURE Beast](PROFILES_XR_DISPLAY_02.md#gls-0082-viture-beast); [evidence](../evidence/EV-0086-VITURE-Phantom-Beast-primary-derivative.md) |
 
 The machine-readable resolver used by Finder lives in [`data/lineage-aliases.json`](../data/lineage-aliases.json). It preserves the market name, canonical identity where established, lineage, confidence, sources, and the explanation shown to a visitor.
 
