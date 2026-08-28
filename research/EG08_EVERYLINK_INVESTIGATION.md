@@ -2,6 +2,7 @@
 
 **Status:** Active investigation — not publication-ready  
 **Opened:** 2026-08-22  
+**Last revalidated:** 2026-08-28  
 **Publication target:** GlassesResearch in-depth original research  
 **Evidence standard:** [`docs/EVIDENCE_STANDARD.md`](../docs/EVIDENCE_STANDARD.md)
 
@@ -40,29 +41,30 @@ A permission proves capability, not use. A network connection proves transmissio
 
 | ID | Claim / observation | Status | Confidence | Current basis |
 |---|---|---|---|---|
-| EG08-001 | A commercial smart-glasses platform is explicitly sold under model number `EG08`. | **Not Verified Yet** | Moderate | Repeated supplier listings explicitly naming EG08; no owned unit yet. |
-| EG08-002 | The repeatedly published EG08 fingerprint is BES 2710Y, 12 MP camera, four microphones, 32 GB storage, 300 mAh battery, 38 g, 152.5 × 52 × 151.5 mm, with companion app `Every Link`. | **Not Verified Yet** | Moderate | Repeated commercial specification from Shenzhen Yushengchang; awaits physical verification. |
-| EG08-003 | At least one supplier offers one explicitly identified EG08 sample for US$56 before shipping. | **Verified** as current listing state | High | Made-in-China listing explicitly says 1 piece / US$56. Price is time-sensitive. |
-| EG08-004 | Alibaba seller Shenzhen Mingyang Smart Home advertises a `Developer Ready Smart Glasses SDK Open API` product with a hardware fingerprint strongly overlapping the published EG08 fingerprint. | **Not Verified Yet** | Moderate | Alibaba listing: BES 2710Y/Y6 family, 12 MP, four microphones, 32 GB eMMC, 300 mAh, 38 g. Listing does not establish that the unit is EG08. |
+| EG08-001 | A commercial smart-glasses platform is explicitly sold under model number `EG08`. | **Verified as seller designation** | High | Multiple current and historical Shenzhen Yushengchang listings explicitly use EG08. This does not establish that EG08 is stable upstream ODM nomenclature. |
+| EG08-002 | On 2026-08-22, Yushengchang listings presented an EG08 fingerprint including BES 2710Y, 12 MP camera, four microphones, 32 GB storage, 300 mAh battery, 38 g, 152.5 × 52 × 151.5 mm, and companion app `Every Link`. | **Verified as dated seller snapshot; hardware not verified** | Moderate | Seller-published specification captured during the initial investigation; awaits physical verification. Current listings have since drifted. |
+| EG08-003 | On 2026-08-22, at least one supplier listing offered an explicitly identified EG08 sample for US$56 before shipping. | **Verified as dated listing snapshot** | High | Made-in-China listing state observed during the initial investigation. Do not present this as a current price. |
+| EG08-004 | Alibaba seller Shenzhen Mingyang Smart Home advertises a `Developer Ready Smart Glasses SDK Open API` product with a hardware fingerprint strongly overlapping the 2026-08-22 EG08 fingerprint. | **Not Verified Yet** | Moderate | Revalidated 2026-08-28: listing still shows BES 2710Y6, 12 MP, four microphones, 32 GB eMMC, 300 mAh and 38 g. Listing does not establish that the unit is EG08. |
 | EG08-005 | Mingyang's `SDK / Open API` language proves a usable owner-facing SDK/API. | **Unknown** | Low | No public SDK documentation, protocol specification, sample project, or developer repository has yet been located. Seller title is not proof. |
-| EG08-006 | The Mingyang listing says live streaming requires the seller's dedicated app and describes a reserved live-streaming interface. | **Not Verified Yet** | Moderate | Seller FAQ/specification; requires runtime verification. |
-| EL-001 | Google Play identifies `everyLink`, package `com.aivox.everylink`, as an app from Lita Digital Co., Ltd. | **Verified** | High | Current Google Play listing. |
-| EL-002 | Google Play currently says `everyLink` may collect Personal info, Photos and videos, and five other data categories; says no data is shared with third parties; says data is encrypted in transit and deletion can be requested. | **Verified** as current developer declaration | High | Current Google Play Data Safety disclosure. This verifies the disclosure, not the app's actual runtime behavior. |
-| EL-003 | Apple's App Store currently says `Data Not Collected` and `The developer does not collect any data from this app` for `everyLink` by Lita Digital Co Ltd. | **Verified** as current developer declaration | High | Current Apple App Store privacy disclosure. This verifies the disclosure, not the app's actual runtime behavior. |
-| EL-004 | The Google Play and Apple App Store privacy disclosures are materially different. | **Verified** | High | Direct comparison of current official storefront disclosures. |
-| EL-005 | Apple notes that `everyLink` may use location even when the app is not open. | **Verified** as storefront statement | High | Current App Store information panel. This is not proof that location data is collected by the developer. |
-| EL-006 | Apple's version history says v1.0.2 added voice-to-text note-taking and simultaneous interpretation for the glasses. | **Verified** as release-note statement | High | Current App Store version history. |
+| EG08-006 | The Mingyang listing says live streaming requires the seller's dedicated app and describes a reserved live-streaming interface. | **Verified as seller claim** | High | Revalidated 2026-08-28 in the listing specification and FAQ. Runtime behavior remains unverified. |
+| EG08-007 | Yushengchang's EG08 sales presentation is not stable enough to treat a single storefront fingerprint or price as canonical. | **Verified as listing-state observation** | High | On 2026-08-28, the earlier direct 12 MP product URL redirected to a catalog, while current Yushengchang EG08 catalog results advertised 13 MP variants at US$38.50. This is evidence of listing drift, not proof of a hardware revision. |
+| EL-001 | Google Play identifies `everyLink`, package `com.aivox.everylink`, as an app from Lita Digital Co., Ltd. | **Verified** | High | Revalidated 2026-08-28 on Google Play. |
+| EL-002 | Google Play says `everyLink` may collect Personal info, Photos and videos, and five other data categories; says no data is shared with third parties; says data is encrypted in transit and deletion can be requested. | **Verified as developer declaration** | High | Revalidated 2026-08-28. This verifies the disclosure, not the app's actual runtime behavior. |
+| EL-003 | Apple's App Store says `Data Not Collected` and `The developer does not collect any data from this app` for `everyLink` by Lita Digital Co Ltd. | **Verified as developer declaration** | High | Revalidated 2026-08-28. This verifies the disclosure, not the app's actual runtime behavior. |
+| EL-004 | The Google Play and Apple App Store privacy disclosures are materially different. | **Verified** | High | Direct comparison revalidated 2026-08-28. |
+| EL-005 | Apple notes that `everyLink` may use location even when the app is not open. | **Verified as storefront statement** | High | Revalidated 2026-08-28. This is not proof that location data is collected by the developer. |
+| EL-006 | Apple's version history says v1.0.2 added voice-to-text note-taking and simultaneous interpretation for the glasses. | **Verified as release-note statement** | High | Revalidated 2026-08-28. |
 | EL-007 | Publicly indexed Android metadata reports camera, microphone, location, media/storage and other permissions for `everyLink`. | **Not Verified Yet** | Moderate | Secondary app-metadata source. APK/manifest has not yet been independently archived and parsed by GlassesResearch. |
 | EL-008 | No public EG08/everyLink SDK or sample repository has been found in the searches conducted so far. | **Unknown** | Moderate | Negative search result only. Absence from search is not proof of nonexistence. |
-| W610-CTRL-001 | The owned W610 is a different identified model/platform from EG08; `EG08` is not a component expected to be "on" the W610. | **Verified** at model-identity level | High | Existing W610 chapter and direct owned-device observations identify the unit as W610/HeyCyan ecosystem. The W610 main SoC remains unknown in the current component database. |
+| W610-CTRL-001 | The owned W610 is a different identified model/platform from EG08; `EG08` is not a component expected to be "on" the W610. | **Verified at model-identity level** | High | Existing W610 chapter and direct owned-device observations identify the unit as W610/HeyCyan ecosystem. The W610 main SoC remains unknown in the current component database. |
 
 ## Initial OEM / lineage fingerprint
 
-Until a physical EG08 unit is received, use the following as the **purchase and identity fingerprint**, not as verified hardware fact:
+The following is the **2026-08-22 purchase and identity fingerprint**, retained as a dated research lead rather than a canonical EG08 specification:
 
 - model designation: `EG08`
 - chipset: `BES 2710Y` or a clearly documented close suffix/revision
-- camera: 12 MP
+- camera: 12 MP in the 2026-08-22 source set; current 2026-08-28 Yushengchang EG08 listings also advertise 13 MP variants
 - microphones: four
 - local storage: 32 GB
 - battery: 300 mAh polymer
@@ -72,29 +74,35 @@ Until a physical EG08 unit is received, use the following as the **purchase and 
 - Wi-Fi media transfer claimed
 - no display
 
-A listing that merely looks similar or says `12 MP AI glasses` is **not** enough to classify it as EG08.
+A listing that merely looks similar or says `12 MP AI glasses` is **not** enough to classify it as EG08. Because seller specifications and prices changed within days, physical labels, firmware identifiers, app pairing behavior and regulatory/manufacturer evidence should outrank storefront copy when establishing lineage.
 
-## Current sourcing benchmark
+## Sourcing snapshots
 
-### Explicit EG08 reference
+### Explicit EG08 reference — 2026-08-22
 
-Shenzhen Yushengchang Technology Co., Ltd. currently lists an explicitly identified `EG08` sample at **US$56 for one piece** before shipping. It publishes the complete fingerprint above and names the companion app `Every Link`.
+During the initial investigation, Shenzhen Yushengchang Technology Co., Ltd. listed an explicitly identified `EG08` sample at **US$56 for one piece** before shipping and published the 12 MP fingerprint above with companion app `Every Link`.
 
-This is the current price/identity benchmark. It is not Alibaba, but it is stronger identity evidence than a cheaper generic 12 MP listing.
+That observation remains useful as a dated identity lead, but it is no longer safe to describe it as the current price or a stable canonical specification.
 
-### Alibaba candidate under investigation
+### EG08 revalidation — 2026-08-28
 
-Shenzhen Mingyang Smart Home Co., Ltd. currently advertises **Developer Ready Smart Glasses SDK Open API for Software & Hardware Integration**, one-piece ordering, with a hardware fingerprint strongly overlapping EG08. Current indexed pricing is approximately **US$71–85.20** depending on listing/quantity/locale.
+The original direct 12 MP Made-in-China product URL now redirects to Yushengchang's smart-glasses catalog. Current catalog search results include multiple products explicitly named `EG08` that advertise **13 MP** cameras at **US$38.50 for one piece**.
+
+This does **not** establish that the hardware changed from 12 MP to 13 MP. It establishes that the seller's public EG08 presentation changed. That volatility is itself evidence for the lineage investigation and strengthens the requirement to preserve dated source snapshots and verify the physical sample independently.
+
+### Alibaba candidate under investigation — revalidated 2026-08-28
+
+Shenzhen Mingyang Smart Home Co., Ltd. still advertises **Developer Ready Smart Glasses SDK Open API for Software & Hardware Integration**. The current detailed listing shows BES 2710Y6, 12 MP, four microphones, 32 GB eMMC, 300 mAh and 38 g, plus a reserved video live-streaming interface. Its FAQ says sample testing is available for **US$85.20** and says live streaming requires the seller's dedicated app plus cellular or Wi-Fi connectivity.
 
 **Classification:** likely EG08-family/rebrand candidate; **not yet proven to be EG08**.
 
-The purchase decision must optimize for **identity certainty first** because the purpose of the sample is a reproducible EG08/everyLink experiment. A generic cheaper 12 MP pair is not a substitute if its lineage is uncertain.
+The purchase decision must optimize for **identity certainty first** because the purpose of the sample is a reproducible EG08/everyLink experiment. A generic cheaper camera-glasses pair is not a substitute if its lineage is uncertain.
 
 ## Privacy-disclosure discrepancy
 
 ### Google Play — Android
 
-Current listing for `com.aivox.everylink` states:
+Revalidated 2026-08-28, the listing for `com.aivox.everylink` states:
 
 - developer: Lita Digital Co., Ltd.
 - may collect: `Personal info`, `Photos and videos`, plus five additional categories
@@ -106,7 +114,7 @@ Google also states on the listing that the developer provided the Data Safety in
 
 ### Apple App Store — iOS
 
-Current listing for `everyLink` by Lita Digital Co Ltd states:
+Revalidated 2026-08-28, the listing for `everyLink` by Lita Digital Co Ltd states:
 
 - `Data Not Collected`
 - `The developer does not collect any data from this app.`
@@ -135,11 +143,12 @@ No one explanation should be promoted without evidence.
 
 ### Phase A — source preservation and identity graph
 
-- [x] Record explicit EG08 commercial fingerprint.
-- [x] Record explicit `Every Link` companion-app association.
-- [x] Record current Google Play disclosure.
-- [x] Record current Apple App Store disclosure.
-- [x] Record Mingyang `SDK / Open API` claim as an unverified claim.
+- [x] Record explicit EG08 commercial fingerprint as a dated snapshot.
+- [x] Record explicit `Every Link` companion-app association as a dated seller claim.
+- [x] Record and revalidate Google Play disclosure.
+- [x] Record and revalidate Apple App Store disclosure.
+- [x] Record and revalidate Mingyang `SDK / Open API` claim as an unverified interface claim.
+- [x] Revalidate volatile seller pages and record observed listing drift.
 - [ ] Archive screenshots/PDF/text snapshots with dates where licensing and repository policy permit.
 - [ ] Enumerate Alibaba, Made-in-China, retail, and OEM listings that share the exact fingerprint.
 - [ ] Build alias/rebrand graph without transferring specs merely because frames look alike.
@@ -219,7 +228,7 @@ The article should separately report:
 3. **Observed behavior** — what the controlled device/app actually did.
 4. **Unknowns and limitations** — encryption, pinning, inaccessible payloads, regional differences, version drift, and any experiment we could not reproduce.
 
-Do not phrase a permission as collection, a connection as retention, or a seller claim as a verified interface.
+Do not phrase a permission as collection, a connection as retention, or a seller claim as a verified interface. Treat mutable storefront copy as a timestamped source, not timeless ground truth.
 
 ## EG08 vs owned W610: control value
 
@@ -239,27 +248,31 @@ Potential comparative experiments:
 
 ## Sources — current first-pass set
 
+All commercial/storefront observations should be treated as dated snapshots because listings can change or redirect.
+
 ### EG08 identity / hardware
 
-- Made-in-China, Shenzhen Yushengchang, explicit EG08 product:  
+- Made-in-China, Shenzhen Yushengchang, explicit EG08 product observed 2026-08-22; direct URL redirected to catalog on revalidation 2026-08-28:  
   https://4p-touch.en.made-in-china.com/product/nYpRKoUJRcWf/China-New-design-12MP-camera-smart-AI-bluetooth-glasses-with-AI-assistant-realtime-translation-meeting-recording-EG08.html
-- Made-in-China video/product page, explicit EG08, one-piece US$56 reference:  
+- Made-in-China video/product page, explicit EG08, one-piece US$56 reference observed 2026-08-22:  
   https://www.made-in-china.com/video-channel/4p-touch_nYpRKoUJRcWf_New-design-12MP-camera-smart-AI-bluetooth-glasses-with-AI-assistant-realtime-translation-meeting-recording-EG08.html
-- Alternate explicit EG08 listing with same fingerprint:  
+- Alternate explicit EG08 listing in the initial 12 MP source set:  
   https://4p-touch.en.made-in-china.com/product/zYprOyRPXckM/China-High-quality-smart-bluetooth-AI-glasses-with-12MP-camera-music-AI-translation-video-recording-sounds-recording-EG08.html
+- Yushengchang current smart-glasses catalog used for 2026-08-28 revalidation:  
+  https://4p-touch.en.made-in-china.com/product-group/togGiyOdEHcr/Smart-AI-Bluetooth-Glasses-catalog-1.html
 
 ### Alibaba candidate / SDK claim
 
 - Alibaba indexed developer-ready / Open API product family:  
   https://electronics.alibaba.com/product/api-integration-for-ai
-- Mingyang detailed listing observed during investigation:  
+- Mingyang detailed listing, revalidated 2026-08-28:  
   https://germany.alibaba.com/product-detail/Developer-Ready-Smart-Glasses-SDK-Open_1601614184313.html
 
 ### everyLink
 
-- Google Play:  
+- Google Play, revalidated 2026-08-28:  
   https://play.google.com/store/apps/details?id=com.aivox.everylink
-- Apple App Store:  
+- Apple App Store, revalidated 2026-08-28:  
   https://apps.apple.com/am/app/everylink/id6751477978
 - Developer-linked privacy policy destination surfaced by Apple:  
   https://www.smalink.co/privacy
