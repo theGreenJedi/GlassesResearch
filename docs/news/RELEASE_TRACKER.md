@@ -1,6 +1,6 @@
 # Smart-Glasses Release and Availability Tracker
 
-**Last checked:** 2026-08-17
+**Last checked:** 2026-08-27
 
 This table distinguishes announcement, preorder, targeted shipping, confirmed shipping, and independent verification. A vendor date is not a shipment until evidence confirms it.
 
@@ -13,6 +13,7 @@ This table distinguishes announcement, preorder, targeted shipping, confirmed sh
 | Everysight Maverick AI | Full-color AR + AI | In development / pre-release | Support material current 2026-06 to 2026-07 | Vendor says still in development; shipping evidence not yet established | [Primary](https://www.everysight.com/pages/maverick-ai) | First production shipments, final specs, production-hardware testing |
 | Everysight Maverick AI Pro | Full-color AR + AI with native eye tracking | In development / pre-release | Support material current 2026-06 to 2026-07 | Vendor says still in development; shipping evidence not yet established | [Primary](https://www.everysight.com/pages/maverick-ai) / [SDK](https://everysight.github.io/maverick-ai-docs/getting-started/api-key/) | First production shipments, final GazeIntent behavior, SDK/runtime-key policy |
 | VITURE Helix | Industrial camera/audio AI safety glasses | Pilot / reservation | 2026-06-16 | Q1 2027; starts at $599 | [Primary commercial claim](https://www.viture.com/en-US/blog/viture-unveils-helix-the-first-ai-safety-glasses-built-on-nvidia-s-xr-ai-solution-at-awe-2026) | ANSI certification, production specs, pilots |
+| VITURE Phantom Beast | XR-display collector's edition; derivative alias of Beast / GLS-0082 | Preorder / launch | 2026-08-27 | $599; VITURE advertises a preorder bonus before 2026-10-29 | [Primary](https://www.viture.com/product/viture-x-phantom-blade-zero-phantom-beast-xr-glasses); [identity evidence](../../evidence/EV-0086-VITURE-Phantom-Beast-primary-derivative.md) | Fulfillment evidence; edition-specific firmware or regional differences |
 | Meta AI-glasses firmware v26 | Software release | Rolling out | Week of 2026-06-29 | Ray-Ban Meta, Oakley Meta, Meta Glasses | [Release notes](https://www.meta.com/help/ai-glasses/1809764829519902/) | Archive next version and model-specific differences |
 | Anko HeyCyan camera glasses | Low-cost camera/audio AI | Retail launch; reported sold out | 2026-08-04 report | Australia; AU$89 reported | [Independent report](https://www.theguardian.com/australia-news/2026/aug/04/kmart-camera-glasses-anko-meta-smartglasses-australia) | Listing archive, manual, model ID, restock |
 | Brilliant Labs Halo | Open-source display AI | Order / shipping status requires recheck | Current product page | Product page says shipping begins soon | [Primary](https://brilliant.xyz/products/halo) | Fulfillment evidence, final firmware and hardware |

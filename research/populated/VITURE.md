@@ -33,6 +33,9 @@ Anchor: H9.0 W7.0 VAI N/A S8.0 O7.0 OC8.5 CI9.5 Hack7.5 HUD9.5 V8.0.
 High-performance display branch emphasizing maximum virtual-screen/display capability over discreet wearability.
 Anchor: H9.0 W6.5 VAI N/A S7.5 O5.0 OC8.5 CI9.5 Hack5.5 HUD9.5 V7.5.
 
+### Phantom Beast derivative alias
+**VITURE Phantom Beast** is a co-branded *Phantom Blade Zero* collector's edition of Beast, not a separately counted hardware generation. VITURE's primary product page explicitly describes the same core XR experience as Beast, including the 174-inch claimed display, Sony Micro-OLED panels, 58° FOV, VisionPair 3DoF, nine-level electrochromic tint and HARMAN audio. The edition adds themed industrial design, interface treatment, packaging and collectibles. It therefore resolves to GLS-0082 in search and lineage surfaces while retaining its purchaser-facing market name and edition-specific $599 launch price. See [EV-0086](../../evidence/EV-0086-VITURE-Phantom-Beast-primary-derivative.md).
+
 ## Software / ownership
 SpaceWalker and host interoperability create strong practical owner control. Ultra's spatial development surface is a meaningful openness increase, but none of this implies open firmware/hardware. Core display use remains locally host-driven rather than vendor-cloud dependent.
 
