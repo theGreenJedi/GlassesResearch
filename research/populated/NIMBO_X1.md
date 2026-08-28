@@ -1,14 +1,14 @@
 # Nimbo X1 — populated research record
 
-Primary/project evidence: [EV-0080](../../evidence/EV-0080-Nimbo-X1-open-platform-claims.md).
+Canonical ID: **GLS-0166**  
+Primary/project evidence: [EV-0080](../../evidence/EV-0080-Nimbo-X1-open-platform-claims.md).  
+Canonical admission: [2026-08-28 reconciliation](../../models/THE_LIST_RECONCILIATION_2026-08-28_NIMBO_X1.md).
 
 ## Identity and lifecycle
 
-**Nimbo X1** is a distinct full-color AR smart-glasses product from Nimbo. As checked 2026-08-22, Nimbo exposes public preorder/campaign surfaces and the Nimbo team states that its Kickstarter is funded. The product therefore appears to cross GlassesResearch's purchaser-history acquisition threshold.
+**Nimbo X1** is a distinct full-color AR smart-glasses product from Nimbo. As checked 2026-08-22, Nimbo exposes public preorder/campaign surfaces and the Nimbo team states that its Kickstarter is funded. The product therefore crosses GlassesResearch's purchaser-history acquisition threshold and is admitted as **GLS-0166**.
 
-Canonical admission is **warranted but not assigned an unstable GLS ID in this source-intake branch** while concurrent catalog-synchronization work is active. This is an implementation ordering decision, not uncertainty about whether the preorder/crowdfunding route exists.
-
-Do not confuse **Nimbo X1** with **NIMO Holo-Optical Glasses**. They are separate projects with separate sites, product identities and acquisition states.
+Do not confuse **Nimbo X1** with **NIMO Holo-Optical Glasses**. They are separate projects with separate sites, product identities and acquisition states. Similar naming is not lineage evidence.
 
 ## Hardware / display claims
 
@@ -62,6 +62,12 @@ It does **not** yet prove:
 
 Cloud Independence remains unscored until those boundaries are tested.
 
+## Comparison / Finder publication boundary
+
+Canonical admission permits Nimbo X1 to appear on model-comparison and Finder surfaces, but only fields supported by preserved evidence should be populated. Project-claimed specifications may be displayed only with their claim provenance intact; unknown capability states must remain unknown rather than being inferred from marketing copy or absence of evidence.
+
+No Report Card score is assigned by the admission. In particular, the project's open-SDK, system-signing, sensor-access and user-selected-AI-endpoint statements are **not** converted into verified Openness, Owner Control, Hackability or Cloud Independence scores until artifacts or owner-side testing substantiate them.
+
 ## Research priorities
 
 1. Preserve the SDK, documentation, sample code and license terms as soon as they are publicly obtainable.
@@ -75,4 +81,4 @@ Cloud Independence remains unscored until those boundaries are tested.
 
 ## Current scoring rule
 
-No Report Card score is assigned in this intake record. The evidence is strong enough to prioritize X1 and support admission, but not yet strong enough to convert project openness claims into owner-control scores without inspectable artifacts or reproduced behavior.
+No Report Card score is assigned in this record. The evidence is strong enough for canonical admission and comparison-surface discoverability, but not yet strong enough to convert project openness claims into owner-control scores without inspectable artifacts or reproduced behavior.
