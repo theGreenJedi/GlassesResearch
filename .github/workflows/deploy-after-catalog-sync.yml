@@ -1,0 +1,21 @@
+name: Deploy after canonical catalog sync
+
+on:
+  workflow_run:
+    workflows: ["Canonical catalog auto-sync"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  deploy-current-main:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch the documentation deployment from synchronized main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --repo "${{ github.repository }}" --ref main
