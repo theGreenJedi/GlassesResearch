@@ -23,7 +23,7 @@
       <a href="#gr-convergence-radar">Convergence radar</a>
       <a href="#watching">Watching</a>
       <a href="#deep-research">Deep research</a>
-      <a href="news/ARCHIVE/">Archive</a>
+      <a href="/docs/news/ARCHIVE/">Archive</a>
       <a href="https://glassesresearch.org/feed.xml">RSS</a>
     </div>
   `;
@@ -83,7 +83,7 @@
         <h3>Product cadence + market presence + technical follow-through</h3>
         <p>RayNeo keeps appearing across product launches, market-share evidence and deeper technical investigation. The newsroom should treat those independent paths as a research assignment, not just repeated brand mentions.</p>
         <div class="gr-research-gap"><strong>Research gaps:</strong> owner control, SDK/API boundaries, cloud dependence, battery behavior and final retail state for newly announced models.</div>
-        <p><a href="news/articles/2026-08-21-rayneo-io-gt-series/">Follow the current RayNeo story →</a></p>
+        <p><a href="/docs/news/articles/2026-08-21-rayneo-io-gt-series/">Follow the current RayNeo story →</a></p>
       </article>
       <article class="gr-convergence-card">
         <div class="gr-signal-row"><span>Market</span><strong>Smart-glasses acceleration</strong></div>
