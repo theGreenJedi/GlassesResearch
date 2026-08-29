@@ -1,0 +1,40 @@
+name: Across the wire contract
+
+on:
+  pull_request:
+    paths:
+      - "data/wire-state.json"
+      - "docs/javascripts/research-news-newsroom.js"
+      - "docs/stylesheets/research-news-newsroom.css"
+      - "scripts/verify_wire_state.py"
+      - ".github/workflows/wire-state-check.yml"
+  push:
+    branches: [main]
+    paths:
+      - "data/wire-state.json"
+      - "docs/javascripts/research-news-newsroom.js"
+      - "docs/stylesheets/research-news-newsroom.css"
+      - "scripts/verify_wire_state.py"
+      - ".github/workflows/wire-state-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate wire state
+        run: python scripts/verify_wire_state.py --state data/wire-state.json
+      - name: Verify newsroom consumes separate wire state
+        run: |
+          grep -q '/data/newsroom-state.json' docs/javascripts/research-news-newsroom.js
+          grep -q '/data/wire-state.json' docs/javascripts/research-news-newsroom.js
+          grep -q 'Across the wire' docs/javascripts/research-news-newsroom.js
+          grep -q 'not verified GlassesResearch claims' data/wire-state.json
+      - name: Verify newsroom JavaScript syntax
+        run: node --check docs/javascripts/research-news-newsroom.js
