@@ -30,10 +30,11 @@
   hero.className = "gr-newsroom-hero";
   hero.innerHTML = `
     <div class="gr-newsroom-kicker">GlassesResearch Intelligence Desk</div>
-    <p class="gr-newsroom-deck">The current smart-glasses beat: verified developments, emerging convergence, research gaps, hands-on evidence, policy, tools and the story threads we are still watching.</p>
+    <p class="gr-newsroom-deck">The current smart-glasses beat: verified developments, developing reports, emerging convergence, research gaps, hands-on evidence, policy, tools and the story threads we are still watching.</p>
     <div class="gr-newsroom-actions" aria-label="Research and News shortcuts">
       <a href="#gr-lead-story">Lead story</a>
-      <a href="#gr-current-desk">Latest</a>
+      <a href="#gr-current-desk">Verified</a>
+      <a href="#gr-wire">Developing</a>
       <a href="#gr-convergence-radar">Convergence</a>
       <a href="#watching">Watching</a>
       <a href="#deep-research">Deep research</a>
@@ -65,11 +66,27 @@
   `;
   lead.insertAdjacentElement("afterend", desk);
 
+  const wire = document.createElement("section");
+  wire.id = "gr-wire";
+  wire.className = "gr-newsroom-section gr-newsroom-wire";
+  wire.hidden = true;
+  wire.innerHTML = `
+    <div class="gr-newsroom-section-head">
+      <div>
+        <div class="gr-newsroom-kicker">Across the wire</div>
+        <h2>Developing now</h2>
+      </div>
+      <p>Current source reports found by the Scout. These are discovery signals, not verified GlassesResearch claims; status stays explicit until the News Desk resolves them.</p>
+    </div>
+    <div class="gr-wire-list" data-newsroom-wire></div>
+  `;
+  desk.insertAdjacentElement("afterend", wire);
+
   const convergence = document.createElement("section");
   convergence.id = "gr-convergence-radar";
   convergence.className = "gr-newsroom-section gr-convergence-radar";
   convergence.hidden = true;
-  desk.insertAdjacentElement("afterend", convergence);
+  wire.insertAdjacentElement("afterend", convergence);
 
   const browse = document.createElement("section");
   browse.className = "gr-newsroom-section gr-newsroom-browse";
@@ -93,6 +110,7 @@
   const latestHeading = [...root.querySelectorAll("h2")].find((heading) => heading.textContent?.trim() === "Latest verified");
   const latestTable = latestHeading?.nextElementSibling?.tagName === "TABLE" ? latestHeading.nextElementSibling : null;
   const latestGrid = desk.querySelector("[data-newsroom-latest]");
+  const wireList = wire.querySelector("[data-newsroom-wire]");
 
   const renderTableFallback = () => {
     const rows = latestTable ? [...latestTable.querySelectorAll("tbody tr")].slice(0, 6) : [];
@@ -115,6 +133,19 @@
       <div class="gr-newsroom-date">${escapeHtml(displayDate(story.published_at))}</div>
       <div class="gr-newsroom-card-copy"><strong>${escapeHtml(story.title)}</strong><p>${escapeHtml(story.summary)}</p></div>
       <div class="gr-newsroom-card-links"><a href="${escapeHtml(story.url)}">Read the research →</a></div>
+    </article>
+  `;
+
+  const wireStatusLabel = (status) => status === "under_review" ? "Under review" : "Reported";
+  const renderWireItem = (item) => `
+    <article class="gr-wire-item">
+      <div class="gr-wire-meta">
+        <span class="gr-wire-status is-${escapeHtml(item.status)}">${escapeHtml(wireStatusLabel(item.status))}</span>
+        <span>${escapeHtml(item.publisher)}</span>
+        <span>${escapeHtml(displayDate(item.published_at || item.discovered_at))}</span>
+      </div>
+      <a class="gr-wire-title" href="${escapeHtml(item.url)}" rel="noopener">${escapeHtml(item.title)}</a>
+      <div class="gr-wire-source-class">${escapeHtml(String(item.source_class || "source").replaceAll("_", " "))}</div>
     </article>
   `;
 
@@ -177,5 +208,23 @@
       const freshness = hero.querySelector("[data-newsroom-freshness]");
       if (freshness) freshness.textContent = "Verified newsroom state unavailable · showing published-page fallback";
       renderTableFallback();
+    });
+
+  fetch("/data/wire-state.json", { credentials: "same-origin" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`wire state ${response.status}`);
+      return response.json();
+    })
+    .then((state) => {
+      if (state?.schema_version !== 1 || !Array.isArray(state.items)) throw new Error("wire state malformed");
+      const items = state.items
+        .filter((item) => item && ["reported", "under_review"].includes(item.status) && item.title && item.url)
+        .slice(0, 12);
+      if (!items.length || !wireList) return;
+      wireList.innerHTML = items.map(renderWireItem).join("");
+      wire.hidden = false;
+    })
+    .catch(() => {
+      wire.hidden = true;
     });
 })();
