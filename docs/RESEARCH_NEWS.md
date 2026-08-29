@@ -8,6 +8,8 @@ The newest verified changes, useful tools, developments we are watching, and res
 
 | Date | What changed | Go deeper |
 |---|---|---|
+| Aug. 28 | **Meta tightened capture-light enforcement** so covering the front LED during an active recording stops camera operation as the software update rolls out. | [verified article](news/articles/2026-08-28-meta-capture-led-recording-fix.md) · [follow privacy/software](?brand=Meta&topic=privacy_policy&topic=firmware_software#verified-research-alerts) |
+| Jul. 14 | **New York's Unified Court System adopted a recording-capable smart-glasses prohibition** effective July 20. GlassesResearch discovered the policy late and records that delay as a freshness failure. | [verified article](news/articles/2026-07-14-new-york-courts-smart-glasses-policy.md) · [follow privacy/policy](?topic=privacy_policy#verified-research-alerts) |
 | Aug. 24 | **Meta Adventurer** entered the canonical catalog as **GLS-0165** through verified Meta and Best Buy acquisition routes. | [verified article](news/articles/2026-08-24-meta-adventurer-gls-0165.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0165/) |
 | Aug. 24 | **Nautica / Lucyd Corsair** entered the canonical catalog as **GLS-0164** through verified Lucyd and Best Buy acquisition routes. | [verified article](news/articles/2026-08-24-nautica-lucyd-corsair-gls-0164.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0164/) |
 | Aug. 24 | A cross-model reading of WIRED's current field guide adds **eyebox, repositioning, shade dependence, sustained comfort, control latency, software maturity and two-sided privacy** to the investigation checklist. | [verified synthesis](news/articles/2026-08-24-wired-smart-glasses-testing-lessons.md) · [follow research](?topic=research_science#verified-research-alerts) |
@@ -16,6 +18,32 @@ The newest verified changes, useful tools, developments we are watching, and res
 | Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [verified article](news/articles/2026-08-17-lucyd-armor-gls-0159.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0159/) · [GLS resolver](https://glassesresearch.org/gls/gls-0159/) |
 | Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026-halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) |
 | Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026-cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](https://glassesresearch.org/models/catalog/gls-0039/) |
+
+### August 28, 2026 — Meta closes the mid-recording capture-LED bypass
+
+Meta is rolling out a software safeguard that stops camera operation when the front capture LED becomes covered during an active recording. The earlier safeguard prevented recording from starting when the light was obscured; multiple independent reports quoting Meta wearables/AR executive Alex Himel describe the new behavior as extending that protection through the recording session.
+
+The verified claim is deliberately narrow. We are not claiming the update eliminates covert recording, prevents hardware modification, or behaves identically on every past and future Meta frame. The change does establish that capture-indicator integrity is now being enforced as a continuing software state rather than only a start-of-capture check.
+
+**Why it matters:** bystander-notice protections should be tested behaviorally, not inferred from the mere presence of an indicator light in a specification sheet. This event belongs in both the software/firmware and privacy-policy beat.
+
+Continue: [verified article](news/articles/2026-08-28-meta-capture-led-recording-fix.md) · [follow Meta privacy/software](?brand=Meta&topic=privacy_policy&topic=firmware_software#verified-research-alerts)
+
+Sources: [The Verge](https://www.theverge.com/tech/985851/meta-privacy-loophole-fix-marketing-campaign) · [Ars Technica](https://arstechnica.com/tech-policy/2026/08/meta-tweaks-ai-glasses-to-block-some-creepy-recordings-but-privacy-risks-remain/) · [Engadget via Yahoo Tech](https://tech.yahoo.com/ar-vr/articles/meta-closing-loophole-allowed-people-184805205.html)
+
+### July 14, 2026 — New York courts prohibit recording-capable smart glasses in UCS facilities
+
+The New York State Unified Court System published a device-specific prohibition covering smart glasses capable of audio or video recording, with the policy effective July 20. New York court materials define covered devices broadly as eyewear or headwear containing a camera, microphone, computer, or other technology permitting recording, whether prescription or non-prescription.
+
+People arriving with covered devices must use the court system's safekeeping/vouchering process rather than entering while possessing them. The rule is an institutional-use restriction, not a general public-space ban.
+
+**Why it matters:** GlassesResearch already tracks a separate court restriction in England and Wales. New York provides independent primary-source evidence that more than one court system is writing device-specific rules for sensing and recording eyewear. That is a convergence signal, not proof of a universal court trend. Accessibility and accommodation questions remain part of the policy beat.
+
+**Freshness note:** the event date remains July 14. GlassesResearch did not surface it until the Aug. 28 coverage audit, and that late discovery is recorded as a newsroom coverage failure rather than silently redating the policy.
+
+Continue: [verified article](news/articles/2026-07-14-new-york-courts-smart-glasses-policy.md) · [follow privacy/policy](?topic=privacy_policy#verified-research-alerts)
+
+Primary sources: [New York Courts policy](https://www.nycourts.gov/press/court-policy-prohibition-against-smart-glasses) · [New York Courts What's New](https://www.nycourts.gov/news)
 
 ### August 24, 2026 — Meta Adventurer enters the canonical catalog as GLS-0165
 
