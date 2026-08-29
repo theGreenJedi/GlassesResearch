@@ -19,6 +19,6 @@ Loading Glasses Finder data…
 
 The abbreviated comparison is only the front door. Canonical model pages and Core Report Cards retain source provenance, contradictions, evidence confidence, owner control, hackability, Android compatibility, and other research fields; deeper ten-dimension material remains available as Extended Research where published.
 
-Unknown stays **unknown**. A cleaner interface does not mean weaker evidence standards.
+Unknown stays **unknown**. A cleaner interface does not mean weaker evidence standards. The [Finder zero-result audit](research/finder-zero-count-audit-2026-08-28.md) records which empty filters are evidence-coverage gaps rather than verified claims of absence.
 
 See [Glasses Finder architecture](GLASSES_FINDER.md), [Research Standards](RESEARCH_STANDARDS.md), [Technology Lineages](../lineages/README.md), and [Model Resource Links](../resources/MODEL_RESOURCE_LINKS.md).
