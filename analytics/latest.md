@@ -1,13 +1,13 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-08-28T19:26:31+00:00**
+Generated automatically: **2026-08-29T13:10:23+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-08-20 → 2026-08-26):** 217 impressions, 1 clicks, 0.46% CTR, average position 36.5.
-- **7-day change:** impressions -71.6%; clicks -50.0%.
+- **Google, latest final 7 days (2026-08-21 → 2026-08-27):** 147 impressions, 1 clicks, 0.68% CTR, average position 35.6.
+- **7-day change:** impressions -79.1%; clicks -50.0%.
 - **Rolling 28 days:** 1450 impressions, 3 clicks, 0.21% CTR, average position 33.0.
 
 ## Google — top queries
@@ -15,51 +15,51 @@ Generated automatically: **2026-08-28T19:26:31+00:00**
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
 | ai glasses timeline | 0 | 1 | 0.00% | 30.0 |
-| ar eyeglass development case study | 0 | 12 | 0.00% | 57.5 |
-| ar smart glasses case studies | 0 | 1 | 0.00% | 49.0 |
-| cyanbridge | 0 | 5 | 0.00% | 9.4 |
+| ar eyeglass development case study | 0 | 11 | 0.00% | 57.5 |
+| cyanbridge | 0 | 2 | 0.00% | 9.5 |
 | even g2 glasses | 0 | 1 | 0.00% | 30.0 |
-| even g2 glasses release date | 0 | 1 | 0.00% | 69.0 |
 | eyewear 2 huawei | 0 | 2 | 0.00% | 29.5 |
 | first camera glasses | 0 | 1 | 0.00% | 55.0 |
 | future of smart glasses ownership | 0 | 3 | 0.00% | 17.3 |
 | glasses startup | 0 | 1 | 0.00% | 66.0 |
+| history of smart glasses | 0 | 1 | 0.00% | 55.0 |
+| how long have meta glasses been around | 0 | 2 | 0.00% | 59.0 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/models/BrilliantHalo/ | 1 | 11 | 9.09% | 11.1 |
-| https://glassesresearch.org/ | 0 | 8 | 0.00% | 20.4 |
+| https://glassesresearch.org/models/BrilliantHalo/ | 1 | 5 | 20.00% | 7.4 |
+| https://glassesresearch.org/ | 0 | 5 | 0.00% | 7.4 |
 | https://glassesresearch.org/artifacts/ | 0 | 1 | 0.00% | 6.0 |
-| https://glassesresearch.org/docs/ABOUT/ | 0 | 1 | 0.00% | 71.0 |
 | https://glassesresearch.org/docs/BLE/ | 0 | 1 | 0.00% | 74.0 |
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 1 | 0.00% | 8.0 |
 | https://glassesresearch.org/docs/ECOSYSTEM_SCOPE/ | 0 | 1 | 0.00% | 10.0 |
-| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 46 | 0.00% | 57.1 |
-| https://glassesresearch.org/docs/INSTITUTIONAL_COLLECTIONS/ | 0 | 2 | 0.00% | 2.5 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 43 | 0.00% | 57.9 |
+| https://glassesresearch.org/docs/INSTITUTIONAL_COLLECTIONS/ | 0 | 1 | 0.00% | 3.0 |
 | https://glassesresearch.org/docs/PRIVACY/ | 0 | 1 | 0.00% | 9.0 |
+| https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 1 | 0.00% | 8.0 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **2,698 requests**, **366 HTTP visits**, **31.8 MB** served.
-- Rolling 7d: **19,920 requests**, **4,378 HTTP visits**, **215.8 MB** served.
+- Rolling 24h: **2,786 requests**, **735 HTTP visits**, **45.2 MB** served.
+- Rolling 7d: **19,645 requests**, **4,672 HTTP visits**, **215.4 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 1,401 | 208 |
-| BE | 562 | 15 |
-| GB | 179 | 26 |
-| CA | 107 | 4 |
-| DE | 76 | 13 |
-| BR | 75 | 13 |
-| CN | 58 | 10 |
-| RO | 52 | 0 |
-| SG | 43 | 18 |
-| IN | 27 | 4 |
+| US | 2,184 | 606 |
+| GB | 179 | 30 |
+| KR | 72 | 3 |
+| JO | 63 | 1 |
+| ES | 59 | 3 |
+| CN | 53 | 9 |
+| CA | 29 | 5 |
+| MX | 25 | 8 |
+| DE | 23 | 13 |
+| SG | 17 | 10 |
 
 ## What to watch
 
