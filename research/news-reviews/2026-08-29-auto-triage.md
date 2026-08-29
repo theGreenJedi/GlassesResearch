@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-29T10:32:15.949929+00:00`
+Generated: `2026-08-29T11:22:33.578458+00:00`
 
 - Intake files inspected: **164**
 - Candidates retained in this review window/history: **773**
@@ -12,10 +12,10 @@ Generated: `2026-08-29T10:32:15.949929+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 232
+- `needs_editorial_verification`: 230
 - `rejected_noise`: 12
 - `source_monitor`: 9
-- `source_review`: 55
+- `source_review`: 57
 - `watching`: 103
 
 ## Action queue
@@ -69,7 +69,6 @@ Generated: `2026-08-29T10:32:15.949929+00:00`
 | normal | needs_editorial_verification | direct | [Open Source Smart Glasses – TeamOpenSmartGlasses](https://teamopensmartglasses.com/open-source-smart-glasses/) | reachable (200) | research_news_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Prescription Smart Glasses Guide: How to Choose the Right Pair in 2026](https://dymesty.com/blogs/articles/the-practical-buyer-s-guide-7-things-to-know-about-prescription-smart-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Prescription Smart Glasses: 2026 Buying Guide (Ray-Ban Meta, XREAL, G1)](https://visionxo.com/articles/prescription-smart-glasses-guide) | reachable (200) | research_news_review, research_optics, policy_privacy |
-| normal | needs_editorial_verification | direct | [Prescription Smart Glasses: Complete Buying Guide 2025 -](https://banna-tech.com/prescription-smart-glasses-guide/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [RayNeo Launches AI Smart Glasses With Real-Time Captioning and Live Translation Across 55 Languages - The Hearing Review](https://news.google.com/rss/articles/CBMihAJBVV95cUxOTHFSN253dl9ZREQ1STFiTjczdERHNEItc2Q0bnFhVktFN2s4dkVBMmxfajJRclJ1YVhlSFl0UC1FZEJOSGhJSVdGZTVZUjBYX0hQekxRWWlXT096bGs2emw0UEM5aFBwU19SdzhvcEhURERuWUlVSVRXZzN4T3B5QVU1akF5bDgySTVvZ1lRTFNCRjdBVFdoTjk5SHYzdnBrN2NWWVpzeWs4MzREUGRQQ2xCclkyWTRvLWd5YjZzZUhQWWprZm9qRWFpemV2V09ER08wSURLbFlDODZNTDZwWmhoT0JSQWpSWUlYclIyaWpaU2NsVWYyeFYzWW1KUXZGeGo0WQ?oc=5) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Rollme launches affordable AI smart glasses with 12MP Sony camera, AI object recognition & live translation - Gizmochina](https://news.google.com/rss/articles/CBMilwFBVV95cUxPNGVqQTBQRmNyWWhCSi1qSnNQMnVoTVk0OVdLVHBiTUxtbjJWUFlhMHJ5Z09odU9Pa19fSEpMM1BleHFlNGI3b1YxYlRYVkRRc0VIVjZ6aFJ2YVBGRk9YZUJuVUFfOFVMYjk3RzBWTDRfR1MwSXRvN0VvSUxrNVJXNVc2eWIwTTY3RnRmWDhqemgxSGtmTHow?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Rollme launches new $99.99 smart camera glasses with AI live translation and a Sony 12MP camera - Notebookcheck](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPb3poWEFzTUU3LUpiZ2tTeEw4TW05UkFCdWlWSFEyclV3VTktSkxKTVRsd2FLMTNia3BfWFdLNG9ZWlFjc2RhcUk0eXVsbFUzeFFzV0dMR2tvZzVsSXdPTXBCNzFqa3dLTVJrRm1fQ0lPcmlrNXlCMzNDSUJoNVRpUWo3bXZGZG1GTHIwQmUwdE8yUGpjTlhVRWdka1VOYlJwMy1pc1FDVUtWM3Q3TVdYSmZZYmNIdHkwbm55WlpkTk8ybHhhdURNbVNrT2E1ODFEQjZzVFZB?oc=5) | reachable (200) | research_news_review |
@@ -94,7 +93,6 @@ Generated: `2026-08-29T10:32:15.949929+00:00`
 | normal | needs_editorial_verification | direct | [15 Best Smart Glasses 2026: Expert Tested & Reviewed](https://www.thebuyersreviews.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [17 AI Gadgets That Are Revolutionizing Everything From Eyeglasses to E-Paper - Gadget Review](https://news.google.com/rss/articles/CBMipAFBVV95cUxQT0Fub0VHU01ySVpJU3ljLVVDb21JeFFMSjhHbENIUWN2aGZraWQzSGdvVlJaZDF0a0Y4ZWxkYTZ3bnBnQ2VTazJzN1IzWG1ncHBWaFJqOUh3N2UxTGViUEY2YTFXZzdydlY5UllBX0IzV2JOcjBpME1SWjFIVUpMNVQ2MmJWWnZIX1h2TmxKUjhyT21QNVQ2bThkT1VkdWlQVm5QMw?oc=5) | reachable (200) | research_news_review, report_card_evidence, deep_research |
 | normal | needs_editorial_verification | direct | [2026 Best Translation Glasses Guide: AI Subtitles for Real Life – RayNeo](https://www.rayneo.com/blogs/news/best-translation-smart-glasses-2026-guide) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [2026 Smart Glasses Breakthrough: Lightweight Design and AI Agents Drive ...](https://wonford.com/2026/08/14/2026-smart-glasses-breakthrough-lightweight-design-and-ai-agents-drive-spatial-computing-popularization/) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [6 Smart Glasses And AI Shifts In 2026 Revealed – Here’s What Changes](https://glassalmanac.com/6-smart-glasses-and-ai-shifts-in-2026-revealed-heres-what-changes/) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [7 AR Glasses That Could Replace Your Laptop in 2026](https://www.gadgetreview.com/ar-glasses-that-could-replace-your-laptop-in-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [7 Best Smart Glasses For Translation - Gear Gadget Guide](https://gadgetgearguide.com/best-smart-glasses-for-translation/) | reachable (200) | research_news_review |
@@ -116,7 +114,7 @@ Generated: `2026-08-29T10:32:15.949929+00:00`
 | normal | needs_editorial_verification | direct | [Best New Smart Glasses Arriving in 2026 - Geeky Gadgets](https://www.geeky-gadgets.com/best-smart-glasses-2026-compared/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AI Glasses in 2026: 15 Models Reviewed](https://treeview.studio/blog/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (202) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: AR, Audio And Top Picks Compared](https://wearablexp.com/smart-glasses/best-smart-glasses/) | reachable (200) | research_news_review |
@@ -264,10 +262,12 @@ Generated: `2026-08-29T10:32:15.949929+00:00`
 | normal | source_review | enabling | [Medical prescription - Wikipedia](https://en.wikipedia.org/wiki/Medical_prescription) | not_checked | research_news_review, research_optics |
 | normal | source_review | enabling | [Photography Cameras & Photography Equipment \| B&H](https://www.bhphotovideo.com/c/browse/Photography/ci/989/N/4294538916) | review (403) | research_news_review, model_catalog_review, research_optics |
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
+| normal | source_review | direct | [Prescription Smart Glasses: Complete Buying Guide 2025 -](https://banna-tech.com/prescription-smart-glasses-guide/) | unreachable (URLError) | research_news_review, research_optics |
 | normal | source_review | enabling | [prescription是什么意思_prescription的翻译_音标_读音_用法_例句_爱词霸在线词典](https://www.iciba.com/word?w=prescription) | not_checked | research_news_review, model_catalog_review, research_optics |
 | normal | source_review | enabling | [Prescription（英文单词）_百度百科](https://baike.baidu.com/item/Prescription/19656123) | not_checked | research_news_review, research_optics |
 | normal | source_review | enabling | [处方「prescription」为什么缩写是「Rx」？ - 知乎](https://www.zhihu.com/question/20077446?sort=created) | not_checked | research_news_review, research_optics |
 | normal | source_review | enabling | [欧路词典\|英汉-汉英词典 prescription是什么意思_prescription的中文解释和发音_prescription的翻译 ...](https://dict.eudic.net/dicts/en/prescription) | not_checked | research_news_review, research_optics |
+| normal | source_review | direct | [2026 Smart Glasses Breakthrough: Lightweight Design and AI Agents Drive ...](https://wonford.com/2026/08/14/2026-smart-glasses-breakthrough-lightweight-design-and-ai-agents-drive-spatial-computing-popularization/) | unreachable (URLError) | research_news_review, retail_rebrand_review |
 | normal | source_review | direct | [AI Glasses - Best Buy](https://www.bestbuy.com/site/smart-ai-glasses/ai-glasses/pcmcat1780433669350.c?id=pcmcat1780433669350) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | source_review | direct | [AI Glasses \| Buy your Smart Sunglasses on Sunglass Hut® US](https://www.sunglasshut.com/us/ai-glasses) | review (403) | research_news_review |
 | normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
