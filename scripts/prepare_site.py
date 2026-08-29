@@ -65,10 +65,13 @@ def main():
     run(ROOT/"scripts/build_community_reviews.py","--reviews",ROOT/"data/community-reviews.json","--reviewers",ROOT/"data/community-reviewers.json","--devices",database,"--lineage-index",lineage_index,"--summary-output",DEST/"data/community-review-summary.json","--profile-root",DEST/"contributors","--index-output",DEST/"docs/COMMUNITY_REVIEWERS.md")
     strip_public_infrastructure_narration()
     run(ROOT/"scripts/build_verified_change_surfaces.py","--site-root",DEST,"--changes",ROOT/"data/verified-changes.json")
+    newsroom_state=DEST/"data"/"newsroom-state.json"
+    run(ROOT/"scripts/build_newsroom_state.py","--changes",ROOT/"data/verified-changes.json","--output",newsroom_state)
     run(ROOT/"scripts/build_verified_research_citations.py","--site-root",DEST,"--changes",ROOT/"data/verified-changes.json")
     run(ROOT/"scripts/build_internal_model_links.py","--output-root",DEST)
     run(ROOT/"scripts/build_rss_feed.py","--changes",ROOT/"data/verified-changes.json","--output",DEST/"feed.xml")
     run(ROOT/"scripts/verify_verified_change_surfaces.py","--site-root",DEST,"--changes",ROOT/"data/verified-changes.json")
+    run(ROOT/"scripts/verify_newsroom_state.py","--state",newsroom_state)
     run(ROOT/"scripts/verify_verified_research_citations.py","--site-root",DEST,"--changes",ROOT/"data/verified-changes.json")
     print(f"Staged documentation at {DEST}")
 if __name__=="__main__": main()

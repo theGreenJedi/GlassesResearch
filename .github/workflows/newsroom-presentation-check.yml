@@ -1,0 +1,54 @@
+name: Newsroom presentation contract
+
+on:
+  pull_request:
+    paths:
+      - "data/verified-changes.json"
+      - "docs/RESEARCH_NEWS.md"
+      - "docs/javascripts/research-news-newsroom.js"
+      - "docs/stylesheets/research-news-newsroom.css"
+      - "docs/stylesheets/newsroom-publication-shell.css"
+      - "mkdocs.yml"
+      - "scripts/build_newsroom_state.py"
+      - "scripts/verify_newsroom_state.py"
+      - "scripts/prepare_site.py"
+      - ".github/workflows/newsroom-presentation-check.yml"
+  push:
+    branches: [main]
+    paths:
+      - "data/verified-changes.json"
+      - "docs/RESEARCH_NEWS.md"
+      - "docs/javascripts/research-news-newsroom.js"
+      - "docs/stylesheets/research-news-newsroom.css"
+      - "docs/stylesheets/newsroom-publication-shell.css"
+      - "mkdocs.yml"
+      - "scripts/build_newsroom_state.py"
+      - "scripts/verify_newsroom_state.py"
+      - "scripts/prepare_site.py"
+      - ".github/workflows/newsroom-presentation-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Compile newsroom builders
+        run: python -m py_compile scripts/build_newsroom_state.py scripts/verify_newsroom_state.py
+      - name: Build reader-facing newsroom state
+        run: python scripts/build_newsroom_state.py --changes data/verified-changes.json --output /tmp/newsroom-state.json
+      - name: Verify newsroom state contract
+        run: python scripts/verify_newsroom_state.py --state /tmp/newsroom-state.json
+      - name: Verify presentation consumes structured state
+        run: |
+          grep -q '/data/newsroom-state.json' docs/javascripts/research-news-newsroom.js
+          grep -q 'newsroom-publication-shell.css' mkdocs.yml
+          if grep -q 'Implementation note:' docs/javascripts/research-news-newsroom.js; then
+            echo 'Hard-coded implementation narration remains in reader presentation'
+            exit 1
+          fi
