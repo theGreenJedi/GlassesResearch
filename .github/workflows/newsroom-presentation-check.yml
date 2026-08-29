@@ -7,6 +7,8 @@ on:
       - "docs/RESEARCH_NEWS.md"
       - "docs/javascripts/research-news-newsroom.js"
       - "docs/stylesheets/research-news-newsroom.css"
+      - "docs/stylesheets/newsroom-publication-shell.css"
+      - "mkdocs.yml"
       - "scripts/build_newsroom_state.py"
       - "scripts/verify_newsroom_state.py"
       - "scripts/prepare_site.py"
@@ -18,6 +20,8 @@ on:
       - "docs/RESEARCH_NEWS.md"
       - "docs/javascripts/research-news-newsroom.js"
       - "docs/stylesheets/research-news-newsroom.css"
+      - "docs/stylesheets/newsroom-publication-shell.css"
+      - "mkdocs.yml"
       - "scripts/build_newsroom_state.py"
       - "scripts/verify_newsroom_state.py"
       - "scripts/prepare_site.py"
@@ -43,6 +47,7 @@ jobs:
       - name: Verify presentation consumes structured state
         run: |
           grep -q '/data/newsroom-state.json' docs/javascripts/research-news-newsroom.js
+          grep -q 'newsroom-publication-shell.css' mkdocs.yml
           if grep -q 'Implementation note:' docs/javascripts/research-news-newsroom.js; then
             echo 'Hard-coded implementation narration remains in reader presentation'
             exit 1
