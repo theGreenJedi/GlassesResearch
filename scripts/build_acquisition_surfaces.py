@@ -99,7 +99,7 @@ def ownership_markdown(acq: dict) -> str:
 
 
 def fresh_listing(item: dict, model_id: str, now: datetime) -> bool:
-    if item.get("status") != "active" or item.get("model_id") not in {None, model_id}:
+    if item.get("status") != "active" or item.get("model_id") != model_id:
         return False
     if not https_url(item.get("url")):
         return False
