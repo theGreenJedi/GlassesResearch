@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-30T12:59:11.083661+00:00`
+Generated: `2026-08-30T17:35:23.814124+00:00`
 
 - Intake files inspected: **170**
 - Candidates retained in this review window/history: **790**
@@ -12,10 +12,10 @@ Generated: `2026-08-30T12:59:11.083661+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 238
+- `needs_editorial_verification`: 239
 - `rejected_noise`: 12
 - `source_monitor`: 9
-- `source_review`: 55
+- `source_review`: 54
 - `watching`: 108
 
 ## Action queue
@@ -108,6 +108,7 @@ Generated: `2026-08-30T12:59:11.083661+00:00`
 | normal | needs_editorial_verification | direct | [AI glasses with real-time translation \| Meta Store \| Meta](https://www.meta.com/ai-glasses/real-time-translation/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Face New Restrictions Worldwide: Why Privacy is Becoming a Major Concern - Analytics Insight](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUmdZVlhDUWZxS1NCYURYS2NMaTVQQlBMUV95SVFGcngwTGdMOUdwTmlpaVBVUUhvVlQwVHhrRGN2Nzh6X0lyXy1qZTJ4WWs1aV9uTllHX1otYzU4SUxSeWExMm9pUFRjLUotSGJadF84Z1NaX0NZWW9MN08tV29FU3ctNmhYYkNNZ2QyVlZPTGNiZ005VFFpTGZRcGk2TkZINXZmQnNuaFB5c2pxeS1FWEZ5N3JaNzNxSGVhZEpLcHA1TkJuSHZ5cmFPR21PRVFBalFLcHhaWUNzSDBQWGfSAesBQVVfeXFMTjRwcjNCTXVuMlUtaEpXcWNFNG5hTXl1RWlWcUhfYkZHVEc4aDN6MHdUNURzdGpoNzVRMUdybG1heVBvMVhUWVhhMXFoVW96YW5Ub05QS09FT285UnNUOUNTY19GTGdvWHdLXzJ6X3JXdW91UTFkSUN3QTRURjNzRjY0NFM5ZXJBYVRkQW9raDdfbGhmYW1zX3Z0Z2FhUWdOSnNLLXdUODczQzloZ0hGcC04TkRfZ0hLLXIzdFpmTXN5azU0Sl9vRGJFZXVYUGlBZW8zbjFMcXo5RXVHODNyem5HTVEtb1VZRlo4RQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Face New Restrictions Worldwide: Why Privacy is Becoming a Major Concern - Analytics Insight](https://news.google.com/rss/articles/CBMi6wFBVV95cUxONHByM0JNdW4yVS1oSldxY0U0bmFNeXVFaVZxSF9iRkdURzhoM3owd1Q1RHN0amg3NVExR3JsbWF5UG8xWFRZWGExcWhVb3phblRvTlBLT0VPbzlSc1Q5Q1NjX0ZMZ29Yd0tfMnpfcld1b3VRMWRJQ3dBNFRGM3NGNjQ0UzllckFhVGRBb2toN19saGZhbXNfdnRnYWFRZ05Kc0std1Q4NzNDOWhnSEZwLThORF9nSEstcjN0WmZNc3lrNTRKX29EYkVldVhQaUFlbzNuMUxxejlFdUc4M3J6bkdNUS1vVVlGWjhF0gHrAUFVX3lxTE40cHIzQk11bjJVLWhKV3FjRTRuYU15dUVpVnFIX2JGR1RHOGgzejB3VDVEc3RqaDc1UTFHcmxtYXlQbzFYVFlYYTFxaFVvemFuVG9OUEtPRU9vOVJzVDlDU2NfRkxnb1h3S18yel9yV3VvdVExZElDd0E0VEYzc0Y2NDRTOWVyQWFUZEFva2g3X2xoZmFtc192dGdhYVFnTkpzSy13VDg3M0M5aGdIRnAtOE5EX2dISy1yM3RaZk1zeWs1NEpfb0RiRWV1WFBpQWVvM24xTHF6OUV1RzgzcnpuR01RLW9VWUZaOEU?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Are Smart Glasses Coming For Your Smartphone? Explained! The race to build the device after the smartphone has already begun. Meta is bettin](https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3pUUl9mTDZZVXR4b1Y3LVhRVjlUY3ZpVElFMW5Md3UxdnlvRmlaQmpPZDkwYVUwVVR0QW1lNVR5dzRCTTF2VjBkQ092VG1ITUwzLVJKa1JqYWY4ZnoxTk94U19mb1B0eWVRTU1vTFdlV0FDbm82X0g1T0cwMmh5Q3JqYURfZnZLbk5KS1B6ZGY5Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026: Ranked By The Experts \| VITURE](https://www.viture.com/blog/best-ar-glasses-2026-ranked-by-the-experts) | reachable (200) | research_news_review, development_hacking |
@@ -117,7 +118,7 @@ Generated: `2026-08-30T12:59:11.083661+00:00`
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AI Glasses in 2026: 15 Models Reviewed](https://treeview.studio/blog/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (202) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: AR, Audio And Top Picks Compared](https://wearablexp.com/smart-glasses/best-smart-glasses/) | reachable (200) | research_news_review |
@@ -271,7 +272,6 @@ Generated: `2026-08-30T12:59:11.083661+00:00`
 | normal | source_review | enabling | [Photography Cameras & Photography Equipment \| B&H](https://www.bhphotovideo.com/c/browse/Photography/ci/989/N/4294538916) | review (403) | research_news_review, model_catalog_review, research_optics |
 | normal | source_review | enabling | [PRESCRIPTION Definition & Meaning - Merriam-Webster](https://www.merriam-webster.com/dictionary/prescription) | review (403) | research_news_review, research_optics |
 | normal | source_review | enabling | [prescription是什么意思_prescription的翻译_音标_读音_用法_例句_爱词霸在线词典](https://www.iciba.com/word?w=prescription) | not_checked | research_news_review, model_catalog_review, research_optics |
-| normal | source_review | enabling | [Prescription（英文单词）_百度百科](https://baike.baidu.com/item/Prescription/19656123) | not_checked | research_news_review, research_optics |
 
 ## Meaning of states
 
