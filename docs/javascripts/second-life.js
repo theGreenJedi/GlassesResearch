@@ -13,9 +13,21 @@
     .replaceAll("'", '&#039;');
 
   const fresh = (listing, now) => {
-    const verified = Date.parse(listing.verified_at || '');
+    const verified = Date.parse(listing.last_verified_at || listing.verified_at || '');
     const ttlHours = Number(listing.fresh_for_hours || 0);
-    return Number.isFinite(verified) && ttlHours > 0 && now - verified <= ttlHours * 3600000;
+    return Number.isFinite(verified)
+      && verified <= now
+      && ttlHours > 0
+      && now - verified <= ttlHours * 3600000;
+  };
+
+  const safeUrl = (value) => {
+    try {
+      const url = new URL(String(value || ''), window.location.origin);
+      return url.protocol === 'https:' ? url.href : null;
+    } catch (_) {
+      return null;
+    }
   };
 
   fetch('/data/second-life.json', { cache: 'no-store' })
@@ -33,14 +45,20 @@
       }
 
       status.remove();
-      container.innerHTML = listings.map((item) => `
+      container.innerHTML = listings.map((item) => {
+        const verifiedAt = item.last_verified_at || item.verified_at;
+        const url = safeUrl(item.url);
+        const link = url
+          ? `<p><a href="${escapeHtml(url)}" rel="nofollow noopener noreferrer">View listing</a></p>`
+          : '';
+        return `
         <article class="second-life-listing">
           <h2>${escapeHtml(item.model)}</h2>
           <p><strong>${escapeHtml(item.condition)}</strong>${item.price ? ` · ${escapeHtml(item.price)}` : ''}</p>
-          <p>Verified ${escapeHtml(item.verified_at)} · ${escapeHtml(item.source)}</p>
-          <p><a href="${escapeHtml(item.url)}" rel="nofollow noopener">View listing</a></p>
-        </article>
-      `).join('');
+          <p>Verified ${escapeHtml(verifiedAt)} · ${escapeHtml(item.source)}</p>
+          ${link}
+        </article>`;
+      }).join('');
     })
     .catch(() => {
       status.textContent = 'Current listings are temporarily unavailable.';
