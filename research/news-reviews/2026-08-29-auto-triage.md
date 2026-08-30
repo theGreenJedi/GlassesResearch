@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-29T21:48:58.204810+00:00`
+Generated: `2026-08-30T00:25:50.623866+00:00`
 
-- Intake files inspected: **165**
-- Candidates retained in this review window/history: **774**
+- Intake files inspected: **166**
+- Candidates retained in this review window/history: **776**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,10 +12,10 @@ Generated: `2026-08-29T21:48:58.204810+00:00`
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 232
+- `needs_editorial_verification`: 235
 - `rejected_noise`: 12
 - `source_monitor`: 9
-- `source_review`: 55
+- `source_review`: 54
 - `watching`: 104
 
 ## Action queue
@@ -244,6 +244,8 @@ Generated: `2026-08-29T21:48:58.204810+00:00`
 | normal | needs_editorial_verification | direct | [UK cinemas restrict Meta AI smart glasses over piracy and privacy concerns - Adgully.com](https://news.google.com/rss/articles/CBMirgFBVV95cUxOM0VnR3V0RmxvN3FiM2RnZncyTDRudkFBWTVXd3FpYXY1N0d5MTd2TXNPcnlwQllkZ29yNGNvb0plTDVhZWJpZVB4VGgyWC01WUtrY1pfNklmaFd2WEUtb3hzMTUtXzhYLUNmUnZETGhOMmc5WUtjLVFONnNsS09lM1FOX3JYcXhlNGwwTHVmLU9ITUM3dGZDUG14OURpdkNHTG91M3hrSE8zTWdMcUE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [UK cinemas restricting Meta AI and other smart glasses over piracy concerns - Global Banking & Finance Review](https://news.google.com/rss/articles/CBMingFBVV95cUxQY2p6VlMzcVNMMnJjcnM3cjRCWFlsQmt1RFBzVGh2WTU1RUh2VVRMYU5CWnBGeUJOWnZGRUwzc191THdSaDFEd2pqY2Q4bkpBR3VJMEVyc2pwY2MwOVFLb2x4dUpkMENGSVBQNjZERUFrYXBSV3U1R0NOVjcwT1NZUGk1cTFUOW9TRTZtRHVZa01fN3VLUElrSlE4LU9mZw?oc=5) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [VIDEO: Privacy concerns over camera glasses - ABC News & Headlines – Australian Broadcasting Corporation](https://news.google.com/rss/articles/CBMijgFBVV95cUxQUENrdm9VR2hzWUpCd0ZHVGZqUU91ODN1RTNVNjhhOWtkN1FMV3ZHdVZ4MFpYZFZveGYxWTU4SkFwTHVOTHlfV1JhSS00R0Ytalh5Z2hmTXF0NkswU3ljSExsVW5LaENDVFNtSEdsR2h4QXl3Q3ZWeGl6RTBZUVhMdktTSDhVaUF3M3JkSHlR?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
+| normal | needs_editorial_verification | direct | [Visually impaired veterans receive AI glasses in D’Iberville through Meta, Blinded Veterans Association partnership - WLOX](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYWEtZi1nbWhmbXhEWlJaUGJLd1kzUlRmUDFiVmp2ZWVQTy05Ml9rLWtLR1VmS0ZxeFJhY185cEt3WTRGQkR5Vm1LX1ZaVVlEa2pIRDlScVlhbDNEYVNaVjl3VVdqUnZ1R2UtTDlKM0pZdWJGcEJQX3FBMl9TTXVIYVd3WVIzM0VaR2MwY0pFeWNvM2drRkRnTzE1NmVuckZ1aFRFenpaeDJoSDNHN3dlaHhpQ2tiYnFRLVBxQk42WFl0SkhsbmVYbDEwRE1oMjc1Y3JUa3Atb0QyTXc?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Visually impaired veterans receive AI glasses in D’Iberville through Meta, Blinded Veterans Association partnership - WLOX](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdEJWaVdwNzVfVjVyUm45LTRYRXBfamVQSlczZVJnOURIUl9xam9aNlEyd0dqX1ZXME13LWVRRjI1bjRiOFFoLXh4NFFTRDNqY0dmWHlyOHJVd19ZRTlQN2Z3UU5MQ3ZpMThiSUh2VWVXZjN5clRnVUp0MWVCSV9wMmFNN19VTTVEcy1obFhQSGI3ZHE3TkFZX2Z1b2ZMVTR4VVNfbDloM3hJNkhfMXQ2VU5FRmpQMi1YV3lTTE40aW0taGFIaHRNbjBqUlhZS1prbkZoX1NRVFBSMWRqYkRqY3g0Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [VITURE: Next Gen XR Glasses](https://www.viture.com/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Vuzix advances AI data center optical interconnects using U.S.-developed planar waveguide technology - Traders Union](https://news.google.com/rss/articles/CBMiggFBVV95cUxPeDVUOGk3NlBXazExNVA5RlVNck9tbUpIemJRbFZnaWVvNmJTS1QwNlhGQnBWdWQtdS1Tb1lVeS1sZy1lamdEMGZpX3FoYzJ1N1VNQTUwWERBTVhKZzZESzljdml4QzlwaGYybHJobGhWaXR3SGFIci1uWnRXcVlScTZn?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Vuzix sends initial waveguide bridge samples to boost AI data center connectivity - Traders Union](https://news.google.com/rss/articles/CBMihwFBVV95cUxNbGJ0alVlV0ViZG5lMkVqSi0xQXJIajZkU3RsNmROcm5fTEpkaEQ4MU5VSEdTQW16RkpoX1pNUmhLZU9pT1VwbElpVGd0VFVnOTZxcHExNnRDazYzNXVOSVFULVM4WHQwSnU3QTl6Y1VwR0hyZHRjUUJvY3JaeW15WXVmaFN6bUk?oc=5) | reachable (200) | research_news_review, research_optics |
@@ -251,6 +253,7 @@ Generated: `2026-08-29T21:48:58.204810+00:00`
 | normal | needs_editorial_verification | direct | [Woman covertly filmed by Meta AI smart glasses raises privacy and consent concerns: "I had no say" - CBS News](https://news.google.com/rss/articles/CBMif0FVX3lxTE42emlnYXJZb3ZYNVQ5dHhsVUxPTElVeFI5aHRScEdUS1FKZTRQUUNsNVFFUWZBSEUzRkhwMG52bEk2amgzZHZBX3R6eEg2UlphSXZ1aFlkYnNZaVZMNldCTkcxYlhrRlZJS2hQZDhqMHhRQk5lMXB3YkFtNmoxb1k?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [XREAL Aura Brings Android XR and Gemini AI to Smart Glasses - Geeky Gadgets](https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pOEY3RHZjUDNWZVZpMHpKTHdfckUyVmp1ZGJiYVYzS1MwWkxxbzdYaVJIRkRFQ19qWlNGZG5lSDZZOHZGQUNfTFE2RzVqUk83dXphQ3RkODZhWGFSOFhKY2J3?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [XREAL \| Building Augmented Reality for Everyone](https://www.xreal.com/) | reachable (200) | research_news_review, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Best AI Wearables 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-ai-wearables/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearable technology - Wikipedia](https://en.m.wikipedia.org/wiki/Wearable_technology) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Wearables - Wareable](https://www.wareable.com/category/wearable-tech) | reachable (200) | research_news_review, development_hacking |
@@ -269,9 +272,6 @@ Generated: `2026-08-29T21:48:58.204810+00:00`
 | normal | source_review | enabling | [处方「prescription」为什么缩写是「Rx」？ - 知乎](https://www.zhihu.com/question/20077446?sort=created) | not_checked | research_news_review, research_optics |
 | normal | source_review | enabling | [欧路词典\|英汉-汉英词典 prescription是什么意思_prescription的中文解释和发音_prescription的翻译 ...](https://dict.eudic.net/dicts/en/prescription) | not_checked | research_news_review, research_optics |
 | normal | source_review | direct | [AI Glasses - Best Buy](https://www.bestbuy.com/site/smart-ai-glasses/ai-glasses/pcmcat1780433669350.c?id=pcmcat1780433669350) | unreachable (TimeoutError) | research_news_review, policy_privacy, retail_rebrand_review |
-| normal | source_review | direct | [AI Glasses \| Buy your Smart Sunglasses on Sunglass Hut® US](https://www.sunglasshut.com/us/ai-glasses) | review (403) | research_news_review |
-| normal | source_review | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | review (503) | research_news_review, research_optics, retail_rebrand_review |
-| normal | source_review | direct | [Amazon.com: Ai Smart Glasses With Camera](https://www.amazon.com/ai-smart-glasses-camera/s?k=ai+smart+glasses+with+camera) | review (503) | research_news_review, retail_rebrand_review |
 
 ## Meaning of states
 
