@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GlassesResearch Second Life listings",
+  "type": "object",
+  "required": ["schema_version", "listings"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "generated_at": {"type": ["string", "null"]},
+    "listings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "listing_id",
+          "model_id",
+          "model",
+          "source",
+          "condition",
+          "price",
+          "first_seen_at",
+          "last_verified_at",
+          "status",
+          "model_match_confidence",
+          "fresh_for_hours",
+          "url"
+        ],
+        "properties": {
+          "listing_id": {"type": "string", "minLength": 1},
+          "model_id": {"type": "string", "pattern": "^GLS-[0-9]{4}$"},
+          "model": {"type": "string", "minLength": 1},
+          "source": {"type": "string", "minLength": 1},
+          "condition": {"type": "string", "minLength": 1},
+          "price": {"type": ["string", "null"]},
+          "first_seen_at": {"type": "string", "format": "date-time"},
+          "last_verified_at": {"type": "string", "format": "date-time"},
+          "status": {"enum": ["active", "inactive", "sold", "expired", "removed"]},
+          "model_match_confidence": {"enum": ["high", "medium", "low", "unknown"]},
+          "fresh_for_hours": {"type": "number", "exclusiveMinimum": 0},
+          "url": {"type": "string", "format": "uri"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
