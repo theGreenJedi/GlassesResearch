@@ -39,11 +39,13 @@ def test_second_life_freshness() -> None:
     future = dict(base, last_verified_at=(now + timedelta(hours=1)).isoformat())
     stale = dict(base, last_verified_at=(now - timedelta(hours=25)).isoformat())
     unsafe = dict(base, last_verified_at=(now - timedelta(hours=1)).isoformat(), url="javascript:alert(1)")
+    unscoped = dict(base, model_id=None, last_verified_at=(now - timedelta(hours=1)).isoformat())
 
     assert fresh_listing(current, "GLS-9999", now)
     assert not fresh_listing(future, "GLS-9999", now)
     assert not fresh_listing(stale, "GLS-9999", now)
     assert not fresh_listing(unsafe, "GLS-9999", now)
+    assert not fresh_listing(unscoped, "GLS-9999", now)
 
 
 if __name__ == "__main__":
