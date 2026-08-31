@@ -42,7 +42,10 @@ def clean_target(raw: str) -> str:
         target = target[1:-1]
     if " \"" in target:
         target = target.split(" \"", 1)[0]
-    return unquote(target)
+    # Preserve percent-encoding for external URLs. Decoding an external target
+    # here turns valid %20/%7C escapes back into whitespace/reserved characters
+    # and can corrupt the newline-delimited URL inventory consumed by lychee.
+    return target
 
 
 def site_root_candidate(root: Path, relative: str) -> Path:
@@ -78,7 +81,9 @@ def audit_markdown(root: Path) -> tuple[list[Finding], set[str]]:
                 if parsed.scheme in {"mailto", "tel", "data"}:
                     continue
 
-                relative = parsed.path
+                # Repository paths need filesystem-safe decoded text, but
+                # external URLs above must retain their encoded representation.
+                relative = unquote(parsed.path)
                 if not relative:
                     continue
                 if relative.startswith("/"):
