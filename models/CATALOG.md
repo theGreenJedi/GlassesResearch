@@ -9,6 +9,7 @@ This is the cross-ecosystem discovery layer. For the canonical purchaser-history
 | Shared OEM/ODM ecosystem | [W610](W610/README.md) | Camera/audio AI glasses | Hands-on specimen + commercial and primary-source leads | HeyCyan app; BLE and firmware investigation active | [W610 research portal](W610/resources/RESEARCH_PORTAL.md) |
 | Meta / EssilorLuxottica | Ray-Ban Meta | Camera/audio AI glasses | Primary | Large deployed ecosystem; vendor-controlled software | [Meta product page](https://www.meta.com/ai-glasses/ray-ban-meta/) |
 | Meta / EssilorLuxottica | Meta Glasses | Camera/audio AI glasses | Primary announcement | New multi-style family announced June 2026; availability tracking active | [Meta announcement](https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/) |
+| Meta | Adventurer | Camera/audio AI glasses | Primary commercial + major retailer | Distinct Meta-branded purchasable frame; do not inherit Ray-Ban Meta or Oakley Meta scores/specifications | [Meta Adventurer](https://www.meta.com/ai-glasses/meta-glasses/adventurer/) |
 | Meta / EssilorLuxottica | Oakley Meta | Camera/audio sport glasses | Primary | Related Meta wearable platform | [Meta AI glasses](https://www.meta.com/ai-glasses/) |
 | Even Realities | G1 / G2 | Display smart glasses | Primary | Third-party platform compatibility reported by MentraOS | [Even Realities](https://www.evenrealities.com/) |
 | Brilliant Labs | Frame | Developer-oriented AI/AR glasses | Primary + public source repositories | Public hardware/software organization and documentation | [Brilliant Labs GitHub](https://github.com/brilliantlabsAR) |
@@ -21,6 +22,7 @@ This is the cross-ecosystem discovery layer. For the canonical purchaser-history
 | Vuzix | [Shield](VuzixShield/README.md) | Standalone Android smart glasses | Primary | Connectivity SDK, HUD SDK, USB debugging/APK path | [Vuzix Developer Resources](https://support.vuzix.com/docs/developer-resources) |
 | Vuzix | [LX1](VuzixLX1/README.md) | Standalone Android enterprise glasses | Primary | Android development and Vuzix View deployment/debug tooling | [Vuzix Developer Resources](https://support.vuzix.com/docs/developer-resources) |
 | Solos | AirGo family | Audio/camera AI glasses | Primary | Developer and multi-assistant integration lead | [Solos](https://solosglasses.com/) |
+| Nautica / Lucyd | Corsair | Audio smart sunglasses | Primary commercial + major retailer | Named purchasable Nautica/Lucyd frame; preserve retail/model identity separately from lens/color packages | [Lucyd Corsair](https://lucyd.co/products/corsair) |
 | XREAL | One family | Tethered display/XR glasses | Primary | Developer ecosystem and accessory protocols merit mapping | [XREAL One](https://www.xreal.com/one/) |
 | RayNeo | X3 Pro | Standalone AI/AR glasses | Primary | Android-derived platform and developer investigation lead | [RayNeo](https://www.rayneo.com/) |
 | RayNeo | Air family | Tethered display/XR glasses | Primary | Cross-model display and accessory research | [RayNeo products](https://www.rayneo.com/collections/ar-glasses) |
@@ -42,6 +44,8 @@ This is the cross-ecosystem discovery layer. For the canonical purchaser-history
 | Google / Samsung / Warby Parker | Intelligent eyewear | Camera/audio AI companion | Primary preview | Fall 2026 target; final product identity unresolved | [Google announcement](https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/) |
 | VITURE / NVIDIA | Helix | Industrial camera/audio AI safety glasses | Primary commercial claim; pilot | Q1 2027 target; safety certification in progress | [VITURE announcement](https://www.viture.com/en-US/blog/viture-unveils-helix-the-first-ai-safety-glasses-built-on-nvidia-s-xr-ai-solution-at-awe-2026) |
 | Anko / HeyCyan ecosystem | Anko camera glasses | Low-cost camera/audio AI glasses | Independent report + commercial lead | Australian mass-retail launch; W610/HeyCyan relationship requires testing | [Guardian report](https://www.theguardian.com/australia-news/2026/aug/04/kmart-camera-glasses-anko-meta-smartglasses-australia) |
+| OICIIDO / unresolved Ear Dance lineage | OICIIDO 164-language color-change glasses | Audio/translation smart glasses | Commercial/community lead | Exact hardware model and W100/KM03/OEM lineage unresolved; retain as a discovery lead without inferring camera hardware | [Walmart lead](https://www.walmart.com/ip/16914411854) |
+| Coucur | Amazon ASIN B0GTYKGR5X | Camera/audio AI glasses | Commercial lead | Stable model number, regulatory identity, app, chipset and supplier lineage remain unresolved | [Amazon lead](https://www.amazon.com/dp/B0GTYKGR5X) |
 
 ## Registry rules
 
