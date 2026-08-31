@@ -1,14 +1,14 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-31T11:10:37.801365+00:00`
+Generated: `2026-08-31T14:04:13.502078+00:00`
 
-- Intake files inspected: **176**
-- Candidates retained in this review window/history: **858**
+- Intake files inspected: **177**
+- Candidates retained in this review window/history: **860**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 378
+- `adjacent_radar`: 380
 - `catalog_review`: 46
 - `editorial_published`: 3
 - `editorial_watch`: 1
@@ -118,7 +118,7 @@ Generated: `2026-08-31T11:10:37.801365+00:00`
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AI Glasses in 2026: 15 Models Reviewed](https://treeview.studio/blog/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (202) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: AR, Audio And Top Picks Compared](https://wearablexp.com/smart-glasses/best-smart-glasses/) | reachable (200) | research_news_review |
