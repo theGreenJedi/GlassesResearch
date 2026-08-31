@@ -7,10 +7,10 @@ ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "data" / "model-candidates.json"
 CATALOG = ROOT / "models" / "CATALOG.md"
 THE_LIST = ROOT / "models" / "THE_LIST.md"
-RECON = ROOT / "models" / "THE_LIST_RECONCILIATION_2026-08-17.md"
+RECON_GLOB = "THE_LIST_RECONCILIATION_*.md"
 NEWS_DIR = ROOT / "research" / "news-candidates"
-ALLOWED = {"untriaged","in-scope","out-of-scope","duplicate-rebrand","needs-evidence","cataloged"}
-UNRESOLVED = {"untriaged","in-scope","needs-evidence"}
+ALLOWED = {"untriaged","in-scope","out-of-scope","duplicate-rebrand","needs-evidence","investigate-lineage","cataloged"}
+UNRESOLVED = {"untriaged","in-scope","needs-evidence","investigate-lineage"}
 def norm(v:str)->str: return re.sub(r"[^a-z0-9]+"," ",v.lower()).strip()
 def load(): return json.loads(LEDGER.read_text(encoding="utf-8"))
 def news_leads(ledger):
@@ -28,7 +28,7 @@ def audit():
     payload=load(); errors=[]; warnings=[]; items=payload.get("candidates",[])
     if payload.get("schema_version")!=1: errors.append("schema_version must be 1")
     if not isinstance(items,list): return ["candidates must be an array"],warnings,{}
-    ids=set(); canonical_text=THE_LIST.read_text(encoding="utf-8") + "\n" + (RECON.read_text(encoding="utf-8") if RECON.exists() else "")
+    ids=set(); reconciliation_text="\n".join(p.read_text(encoding="utf-8") for p in sorted((ROOT / "models").glob(RECON_GLOB))); canonical_text=THE_LIST.read_text(encoding="utf-8") + "\n" + reconciliation_text
     registry_text=norm(CATALOG.read_text(encoding="utf-8")); today=dt.date.today(); counts={s:0 for s in sorted(ALLOWED)}; oldest=None
     for n,item in enumerate(items):
         pre=f"candidate[{n}]"; cid=item.get("candidate_id")
