@@ -6,6 +6,7 @@
 
 - [**Smart glasses — The List**](THE_LIST.md) — eyewear only; stable `GLS-####` identifiers.
 - [**2026-08-12 reconciliation ledger**](THE_LIST_RECONCILIATION_2026-08-12.md) — stable IDs and admission decisions from the completed lineage queue.
+- [**VRcompare discovery batch 01 reconciliation**](THE_LIST_RECONCILIATION_2026-08-31_VRCOMPARE_BATCH_01.md) — evidence-bounded admission decisions for ASUS AirVision M1 and nubia Neovision Glass.
 - [**Adjacent Wearable-HCI Catalog**](ADJACENT_WEARABLES.md) — headsets, helmets, over-ear AR, eyeglass-mounted modules and future non-eyewear form factors; stable `ADJ-####` identifiers.
 - [**Wearable-HCI taxonomy**](../docs/taxonomy/WEARABLE_HCI.md) — the form-factor and shared-evidence rules governing all catalogs.
 
@@ -17,6 +18,7 @@ Editorial volumes:
 
 - [Smart-Glasses Model Profiles](PROFILES.md)
 - [Issue #302 admissions profiles](PROFILES_2026_08_17_302_ADMISSIONS.md) — RayNeo/Thunderbird V3, RayNeo Air 4 Pro, XREAL 1S, W100/Ear Dance and W630/HeyCyan reconciliation profiles.
+- [VRcompare discovery batch 01 profiles](PROFILES_2026_08_31_VRCOMPARE_BATCH_01.md) — ASUS AirVision M1 and nubia Neovision Glass with conservative primary-source boundaries.
 - [Foundations and Early Platforms](PROFILES_FOUNDATIONS.md)
 - [Legacy Display and Early Platforms](PROFILES_LEGACY_DISPLAY.md)
 - [AR, Display, and Enterprise Platforms](PROFILES_AR_DISPLAY.md)
