@@ -1,8 +1,8 @@
 # Automated editorial triage — latest
 
-Generated: `2026-08-31T14:04:13.502078+00:00`
+Generated: `2026-08-31T20:11:34.893971+00:00`
 
-- Intake files inspected: **177**
+- Intake files inspected: **178**
 - Candidates retained in this review window/history: **860**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
@@ -118,7 +118,7 @@ Generated: `2026-08-31T14:04:13.502078+00:00`
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AI Glasses in 2026: 15 Models Reviewed](https://treeview.studio/blog/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AR Glasses 2026 \| SpaceRoachVR](https://www.spaceroachvr.com/smart-glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 - Forbes Vetted](https://www.forbes.com/sites/forbes-personal-shopper/article/best-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 – Consumer Tested Reviews](https://consumertestedreviews.org/product/best-smart-glasses/) | reachable (202) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026 — Top 10 Picks Compared (Ultimate Guide)](https://smartglasses.computer/blog/best-smart-glasses-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: 10 AI and AR Picks for Every Budget](https://the-gadgeteer.com/2026/06/13/smart-glasses-worth-buying-2026/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses 2026: AR, Audio And Top Picks Compared](https://wearablexp.com/smart-glasses/best-smart-glasses/) | reachable (200) | research_news_review |
@@ -187,7 +187,7 @@ Generated: `2026-08-31T14:04:13.502078+00:00`
 | normal | needs_editorial_verification | direct | [OpenGlass: Ultra-Low-Power On-Device AI Eyewear with Event-based Vision](https://arxiv.org/html/2606.07431v2) | reachable (200) | research_news_review, development_hacking, deep_research |
 | normal | needs_editorial_verification | direct | [Our 10 Best Smart Glasses With Camera in the US - August 2026 ...](https://www.bestproductsreviews.com/smart-glasses-with-camera) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Prescription Lenses Could Be the Key to Making AI Glasses Mainstream - Insider Paper](https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ0F6TW5vVUtrcUV6dmRkUVloR0IyaHkyZ2tWN09HT3ZtWHd5VEhSMlNiWjRfbzd0WDNCZl82Q0J5bDQ5Y2w3Y3RCeXd1b0lndjlrYnlrZ25GX0QxbWlEYnNFYXVIbmt6cG8zcEcwY1ZmZldHOWRuT1JXOHRrVlR1ZEl1akh6b1JZRDVzcjlSd0ttY1g0QjgyWGlR?oc=5) | reachable (200) | research_news_review, research_optics, deep_research |
-| normal | needs_editorial_verification | direct | [Privacy law changes to target new technology including smart glasses, AI - SMH.com.au](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLWNLNVdjXzBYM1dSdlBTUURLa21iTy0zbFB1U0x1ekFtaVN3aXR1WmM5SEM0MHdNZG1JdVhiMEdRSl9ENVc2Y3ZNN3hNZnlndi0yREc1N2hIbTF5UjhvMng0bG90ZWhTMHJQTXFSbEVBbjJFT3JnUHd6QVl4YkxwZWJTZzBhSTZTYkp4cHJsLTFGWXkyME5iTUx5aFpzRlQ0N3RzZGpfQkRNamJMWVRzVFk5cmczcWlJMnlhZDdjNnJqVWhzQjA3ag?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Privacy law changes to target new technology including smart glasses, AI - smh.com.au](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLWNLNVdjXzBYM1dSdlBTUURLa21iTy0zbFB1U0x1ekFtaVN3aXR1WmM5SEM0MHdNZG1JdVhiMEdRSl9ENVc2Y3ZNN3hNZnlndi0yREc1N2hIbTF5UjhvMng0bG90ZWhTMHJQTXFSbEVBbjJFT3JnUHd6QVl4YkxwZWJTZzBhSTZTYkp4cHJsLTFGWXkyME5iTUx5aFpzRlQ0N3RzZGpfQkRNamJMWVRzVFk5cmczcWlJMnlhZDdjNnJqVWhzQjA3ag?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Privacy laws target AI, smart glasses right to erase Australians’ data - WAtoday](https://news.google.com/rss/articles/CBMizgFBVV95cUxOa2lzQnozR1dMNkM0cU9NN0JfamlYNDFmTUVsSk9oN3ZmR0F4Y3FQRERfd3ROVWMwZjJDZjB0b1ZzZ0dYMXJweVV2a19OQXJMZ2taZ01Ua0pSV0FBT0RadFhoNEk2eHNCVG45MHpmYTM2emFJMFlkXzlLaHhtR2NZZFpCLUtzeDBZZ0JHeFA1N183QzZjNDhrLUhhWDFvY2wyV2RVNzFMYTNzRUZJNmtXRlA5eEw3RmJkWGR4QXFVNk5JcVllQmprUUdsWWtTUQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Privacy laws to target AI smart glasses - The Saturday Paper](https://news.google.com/rss/articles/CBMigwFBVV95cUxQcmdRYUFHTW5VdGplV1JsSm55SnFnWUQ1U2U2Wmh0c2NMTW0yanFEcmp4VUpPeTdBU0dKVU5mYU5qOUxnb21NZFVYcXlVQ3FNV29Td3M3Z1VqakRSYVFfVm1jLWNVclhUR3NZUDk4Q0lyQlRWQjZMV1RELXV5Z0QtbkQ4QQ?oc=5) | reachable (200) | research_news_review, policy_privacy, deep_research |
 | normal | needs_editorial_verification | direct | [Ranking the Best Smart Glasses: Meta, Viture, & More (2026) - WIRED](https://www.wired.com/gallery/best-smart-glasses/) | reachable (200) | research_news_review |
