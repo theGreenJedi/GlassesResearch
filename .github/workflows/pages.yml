@@ -97,6 +97,9 @@ jobs:
           print(f"Stamped deployment provenance for {payload['sha']}")
           PY
 
+      - name: Reconcile sitemap with deployable artifact
+        run: python scripts/reconcile_sitemap.py --site-dir site
+
       - name: Verify built-site internal links and fragments
         run: python scripts/verify_built_site_links.py
 
