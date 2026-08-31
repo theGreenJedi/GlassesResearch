@@ -2,10 +2,15 @@
 """MkDocs post-build hook for GlassesResearch sitemap completeness."""
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 from typing import Any
 
-from scripts.reconcile_sitemap import reconcile
+HOOK_DIR = Path(__file__).resolve().parent
+if str(HOOK_DIR) not in sys.path:
+    sys.path.insert(0, str(HOOK_DIR))
+
+from reconcile_sitemap import reconcile
 
 
 def on_post_build(*, config: Any) -> None:
