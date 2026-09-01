@@ -19,6 +19,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  id-token: write
 
 concurrency:
   group: newsroom-publication-intake
@@ -41,6 +42,7 @@ jobs:
     env:
       BRANCH: automation/newsroom-publication-intake
       QUEUE_URL: https://glassesresearch.org/api/newsroom/publication-queue
+      OIDC_AUDIENCE: glassesresearch-newsroom-publication
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
@@ -61,8 +63,34 @@ jobs:
             git checkout -b "${BRANCH}" origin/main
           fi
 
-      - name: Pull second-gate-approved packages
-        run: python scripts/newsroom_publication_intake.py --url "${QUEUE_URL}"
+      - name: Mint short-lived GitHub OIDC identity and pull approved queue
+        shell: bash
+        run: |
+          set -euo pipefail
+          oidc_json="$(curl --fail --silent --show-error \
+            -H "Authorization: Bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=${OIDC_AUDIENCE}")"
+          oidc_token="$(python -c 'import json,sys; print(json.load(sys.stdin)["value"])' <<<"${oidc_json}")"
+          test -n "${oidc_token}"
+          echo "::add-mask::${oidc_token}"
+          curl --fail --silent --show-error --location --max-time 30 \
+            -H 'Accept: application/json' \
+            -H "Authorization: Bearer ${oidc_token}" \
+            "${QUEUE_URL}" -o /tmp/newsroom-publication-queue.json
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          from scripts.newsroom_publication_intake import ingest
+
+          queue = Path('/tmp/newsroom-publication-queue.json')
+          payload = json.loads(queue.read_text(encoding='utf-8'))
+          created = ingest(payload, Path('research/newsroom-packages'), os.environ['QUEUE_URL'])
+          if created:
+              print(f"Ingested {len(created)} approved newsroom package(s): {', '.join(created)}")
+          else:
+              print('No new approved newsroom publication packages.')
+          PY
 
       - name: Compile safe news-only packages into canonical draft edits
         run: python scripts/newsroom_news_actuator.py --all
@@ -104,4 +132,4 @@ jobs:
             --head "${BRANCH}" \
             --draft \
             --title 'Prepare second-gate-approved newsroom publications' \
-            --body $'Pulls only packages explicitly approved at the live Editorial Desk publication gate.\n\nFor packages whose approved canonical scope is **news.publish only**, the repository-side actuator also compiles the complete draft Research & News / article / GRE ledger / durable-review diff and validates it before opening this PR. Packages requiring catalog, lineage, report-card, Finder, release-tracker, or dossier work are preserved but deliberately **not partially published**.\n\nThis remains a draft until the repository diff itself is reviewed. `glasses-news` holds no GitHub write credential; this repository uses only its built-in Actions identity.'
+            --body $'Pulls only packages explicitly approved at the live Editorial Desk publication gate. The machine handoff is authenticated with a short-lived GitHub OIDC token bound to this repository/workflow; no long-lived shared secret and no Worker GitHub credential are used.\n\nFor packages whose approved canonical scope is **news.publish only**, the repository-side actuator compiles the complete draft Research & News / article / GRE ledger / durable-review diff and validates it before opening this PR. Packages requiring catalog, lineage, report-card, Finder, release-tracker, or dossier work are preserved but deliberately **not partially published**.\n\nThis remains a draft until the repository diff itself is reviewed and merged.'
