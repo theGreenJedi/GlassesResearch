@@ -121,15 +121,12 @@ jobs:
             echo 'No new approved packages or route actions.'
             exit 0
           fi
-          git add \
-            research/newsroom-packages \
-            research/newsroom-actions \
-            research/newsroom-dossiers \
-            research/newsroom-evidence \
-            research/news-reviews \
-            docs/RESEARCH_NEWS.md \
-            docs/news/articles \
-            data/verified-changes.json
+          git add -A -- research/newsroom-packages research/news-reviews docs/RESEARCH_NEWS.md docs/news/articles data/verified-changes.json
+          for path in research/newsroom-actions research/newsroom-dossiers research/newsroom-evidence; do
+            if [[ -e "${path}" ]]; then
+              git add -A -- "${path}"
+            fi
+          done
           git commit -m 'Prepare approved newsroom publication packages'
           git push --set-upstream origin "${BRANCH}"
           echo 'changed=true' >> "$GITHUB_OUTPUT"
