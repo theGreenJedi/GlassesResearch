@@ -35,6 +35,46 @@ The Core Report Card builder emits a record for every canonical GLS model. Each 
 
 Evidence-backed scores can be supplied through the curated Core Report Card override dataset. The builder preserves provenance for migrated and curated scores, allowing the catalog to become more complete incrementally without weakening the evidence standard.
 
+## Freshness is part of the evidence
+
+A Report Card score is not considered current merely because its page was rebuilt, the catalog was edited, or some other field for the same model was reviewed. **Freshness belongs to the evidence supporting the specific scored subject.**
+
+Every resolved Core score can therefore carry:
+
+- `verified_at` — the date the evidence supporting that specific judgment was last re-checked;
+- `freshness` — `fresh`, `aging`, `stale`, or `unknown`;
+- `max_age_days` — the routine review interval for that subject;
+- `next_review_due` — the date by which routine re-verification is due;
+- `age_days` — age of the score-specific verification at build time;
+- `context_reviewed_at` — an optional model-level comparison-review date that may help researchers triage work but **does not** substitute for `verified_at`.
+
+The public [Report Card Freshness dashboard](REPORT_CARD_FRESHNESS.md) reports catalog-wide research health and the prioritized refresh queue.
+
+### Freshness states
+
+A score is **Fresh** through the first 75% of its routine review interval, **Aging** during the final 25%, and **Stale** after that interval expires. A resolved score with no score-specific verification date has **Unknown freshness** and belongs in the refresh queue until it is explicitly re-verified.
+
+Unscored subjects remain research gaps rather than freshness failures. They are tracked separately so hundreds of legitimate `Unknown` score cells do not drown out scores that already exist but need maintenance.
+
+### Routine review intervals
+
+| Core subject | Maximum routine interval |
+|---|---:|
+| Discreetness | 365 days |
+| Camera | 365 days |
+| Visual AI | 90 days |
+| Hackability | 120 days |
+| Owner Control | 90 days |
+| Android Compatibility | 120 days |
+
+These intervals are ceilings, not guarantees. A material hardware revision, firmware change, service change, SDK/API change, companion-app change, platform-policy change, or ownership/control change should trigger immediate re-verification of the affected subjects even if their routine deadline has not arrived.
+
+### What counts as re-verification
+
+Re-verification means revisiting the evidence that supports the specific score and deciding whether the judgment remains defensible. If it does, update `verified_at`. If the evidence has changed, update the score, provenance, confidence, and `verified_at` together.
+
+A deployment timestamp, Markdown edit date, unrelated model review, or generic catalog refresh **must never be promoted into a verification date**. Curated resolved Core scores are required to carry an explicit `verified_at` date in `YYYY-MM-DD` form.
+
 ## No hidden overall weighting
 
 GlassesResearch does **not** calculate a single weighted overall winner score. The dimensions are intentionally shown separately because different users value different properties. A developer may care most about hackability and owner control; a daily wearer may care most about discreetness; another buyer may require a camera, visual AI, and strong Android integration.
