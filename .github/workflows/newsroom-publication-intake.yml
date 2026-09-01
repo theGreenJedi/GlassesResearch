@@ -120,6 +120,34 @@ jobs:
 
           model_path = Path('/tmp/model-proposal-queue.json')
           model_payload = json.loads(model_path.read_text(encoding='utf-8'))
+          raw_proposals = model_payload.get('proposals')
+          if isinstance(raw_proposals, list):
+              kept = []
+              dropped = 0
+              automatic_kinds = {'catalog_admission', 'identity_correction', 'lineage_change', 'evidence_update'}
+              for item in raw_proposals:
+                  proposal = item.get('proposal') if isinstance(item, dict) else None
+                  if not isinstance(proposal, dict):
+                      dropped += 1
+                      continue
+                  kind = proposal.get('proposal_kind')
+                  evidence = proposal.get('evidence')
+                  consequences = proposal.get('consequences')
+                  if kind == 'escalation':
+                      draftable = isinstance(evidence, list) and len(evidence) > 0
+                  else:
+                      draftable = (
+                          kind in automatic_kinds
+                          and isinstance(evidence, list) and len(evidence) > 0
+                          and isinstance(consequences, list) and len(consequences) > 0
+                      )
+                  if draftable:
+                      kept.append(item)
+                  else:
+                      dropped += 1
+              model_payload = {**model_payload, 'proposals': kept}
+              if dropped:
+                  print(f"Repository draft guard dropped {dropped} low-signal model proposal(s).")
           model_created = ingest_models(
               model_payload,
               Path('research/model-proposals'),
