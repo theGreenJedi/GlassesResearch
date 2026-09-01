@@ -22,7 +22,7 @@ on:
       - 'docs/news/articles/**'
       - 'data/verified-changes.json'
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -47,7 +47,7 @@ jobs:
         run: python scripts/newsroom_story_update_actuator.py --self-test
       - name: Self-test non-news route dispatcher
         run: python scripts/newsroom_route_actuator.py --self-test
-      - name: Self-test approved model proposal intake
+      - name: Self-test model proposal intake
         run: python scripts/model_proposal_intake.py --input /dev/null --self-test
       - name: Self-test model proposal actuator
         run: python scripts/model_proposal_actuator.py --self-test
@@ -81,7 +81,7 @@ jobs:
             git checkout -b "${BRANCH}" origin/main
           fi
 
-      - name: Mint short-lived GitHub OIDC identity and pull approved queues
+      - name: Mint short-lived GitHub OIDC identity and pull draft-authorized queues
         shell: bash
         run: |
           set -euo pipefail
@@ -114,9 +114,9 @@ jobs:
               os.environ['QUEUE_URL'],
           )
           if newsroom_created:
-              print(f"Ingested {len(newsroom_created)} approved newsroom package(s): {', '.join(newsroom_created)}")
+              print(f"Ingested {len(newsroom_created)} newsroom draft package(s): {', '.join(newsroom_created)}")
           else:
-              print('No new approved newsroom publication packages.')
+              print('No new newsroom draft packages.')
 
           model_path = Path('/tmp/model-proposal-queue.json')
           model_payload = json.loads(model_path.read_text(encoding='utf-8'))
@@ -126,9 +126,9 @@ jobs:
               os.environ['MODEL_PROPOSAL_QUEUE_URL'],
           )
           if model_created:
-              print(f"Ingested {len(model_created)} approved model proposal(s): {', '.join(model_created)}")
+              print(f"Ingested {len(model_created)} model draft proposal(s): {', '.join(model_created)}")
           else:
-              print('No new approved model proposals.')
+              print('No new model draft proposals.')
           PY
 
       - name: Compile safe news-only packages into canonical draft edits
@@ -137,10 +137,10 @@ jobs:
       - name: Compile safe news story updates into dated canonical draft edits
         run: python scripts/newsroom_story_update_actuator.py --all
 
-      - name: Materialize all approved non-news routes
+      - name: Materialize all authorized non-news routes
         run: python scripts/newsroom_route_actuator.py --all
 
-      - name: Materialize approved model proposals as draft actions
+      - name: Materialize authorized model proposals as draft actions
         run: python scripts/model_proposal_actuator.py --all
 
       - name: Validate any generated publication surfaces
@@ -157,7 +157,7 @@ jobs:
           set -euo pipefail
           if [[ -z "$(git status --porcelain)" ]]; then
             echo 'changed=false' >> "$GITHUB_OUTPUT"
-            echo 'No new approved packages or model actions.'
+            echo 'No new draft packages or model actions.'
             exit 0
           fi
           git add -A -- research/newsroom-packages research/news-reviews docs/RESEARCH_NEWS.md docs/news/articles data/verified-changes.json
@@ -166,11 +166,11 @@ jobs:
               git add -A -- "${path}"
             fi
           done
-          git commit -m 'Prepare approved intelligence packages'
+          git commit -m 'Prepare machine-researched intelligence draft'
           git push --set-upstream origin "${BRANCH}"
           echo 'changed=true' >> "$GITHUB_OUTPUT"
 
-      - name: Open or update draft publication PR
+      - name: Open or update draft intelligence PR
         if: steps.commit.outputs.changed == 'true'
         shell: bash
         run: |
@@ -184,5 +184,5 @@ jobs:
             --base main \
             --head "${BRANCH}" \
             --draft \
-            --title 'Prepare second-gate-approved intelligence changes' \
-            --body $'Pulls only packages explicitly approved at the live human gates. The machine handoff is authenticated with a short-lived GitHub OIDC token bound to this repository/workflow; no long-lived shared secret and no Worker GitHub credential are used.\n\nNews-only publish/update packages may compile into complete dated canonical Research & News / article / GRE / review changes. Approved non-news newsroom routes become bounded repository actions. Approved model-investigator proposals become deterministic model action packets: exact existing GLS targets are required for identity/evidence/lineage work, new catalog admissions remain visible candidates requiring canonical GLS allocation, and unresolved identity is blocked rather than guessed.\n\nThis remains a draft until the repository diff itself is reviewed and merged.'
+            --title 'Review machine-prepared intelligence changes' \
+            --body $'An Editorial approval authorizes the machines to investigate and prepare a repository draft; it does not authorize a canonical merge. Ordinary evidence-backed News and Models findings flow here without intermediate operator clicks. Contradictory/escalated model cases still require explicit exception approval before they can enter this draft.\n\nThe machine handoff uses a short-lived GitHub OIDC token bound to this repository/workflow. No long-lived shared secret and no Worker GitHub credential are used.\n\nNews publish/update packages may compile into dated Research & News / article / GRE / review changes. Non-news newsroom routes become bounded repository actions. Model-investigator proposals become deterministic action packets: exact existing GLS targets are required for identity/evidence/lineage work, new catalog admissions remain visible candidates requiring canonical GLS allocation, and unresolved identity is blocked rather than guessed.\n\nThis PR is the normal human canonical gate. Nothing should be treated as published or canonical until its diff is reviewed and merged.'
