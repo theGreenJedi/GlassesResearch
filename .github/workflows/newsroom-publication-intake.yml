@@ -5,8 +5,13 @@ on:
     branches: [main]
     paths:
       - 'scripts/newsroom_publication_intake.py'
+      - 'scripts/newsroom_news_actuator.py'
       - '.github/workflows/newsroom-publication-intake.yml'
       - 'research/newsroom-packages/**'
+      - 'research/news-reviews/**'
+      - 'docs/RESEARCH_NEWS.md'
+      - 'docs/news/articles/**'
+      - 'data/verified-changes.json'
   schedule:
     - cron: '*/30 * * * *'
   workflow_dispatch:
@@ -14,6 +19,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  id-token: write
 
 concurrency:
   group: newsroom-publication-intake
@@ -26,6 +32,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Self-test newsroom intake
         run: python scripts/newsroom_publication_intake.py --self-test
+      - name: Self-test news-only canonical actuator
+        run: python scripts/newsroom_news_actuator.py --self-test
 
   intake:
     if: github.event_name != 'pull_request'
@@ -34,6 +42,7 @@ jobs:
     env:
       BRANCH: automation/newsroom-publication-intake
       QUEUE_URL: https://glassesresearch.org/api/newsroom/publication-queue
+      OIDC_AUDIENCE: glassesresearch-newsroom-publication
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
@@ -54,37 +63,73 @@ jobs:
             git checkout -b "${BRANCH}" origin/main
           fi
 
-      - name: Pull second-gate-approved packages
-        run: python scripts/newsroom_publication_intake.py --url "${QUEUE_URL}"
+      - name: Mint short-lived GitHub OIDC identity and pull approved queue
+        shell: bash
+        run: |
+          set -euo pipefail
+          oidc_json="$(curl --fail --silent --show-error \
+            -H "Authorization: Bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=${OIDC_AUDIENCE}")"
+          oidc_token="$(python -c 'import json,sys; print(json.load(sys.stdin)["value"])' <<<"${oidc_json}")"
+          test -n "${oidc_token}"
+          echo "::add-mask::${oidc_token}"
+          curl --fail --silent --show-error --location --max-time 30 \
+            -H 'Accept: application/json' \
+            -H "Authorization: Bearer ${oidc_token}" \
+            "${QUEUE_URL}" -o /tmp/newsroom-publication-queue.json
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          from scripts.newsroom_publication_intake import ingest
 
-      - name: Commit new package records
+          queue = Path('/tmp/newsroom-publication-queue.json')
+          payload = json.loads(queue.read_text(encoding='utf-8'))
+          created = ingest(payload, Path('research/newsroom-packages'), os.environ['QUEUE_URL'])
+          if created:
+              print(f"Ingested {len(created)} approved newsroom package(s): {', '.join(created)}")
+          else:
+              print('No new approved newsroom publication packages.')
+          PY
+
+      - name: Compile safe news-only packages into canonical draft edits
+        run: python scripts/newsroom_news_actuator.py --all
+
+      - name: Validate any generated publication surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/verified_changes.py
+          python scripts/verify_news_promotion.py --self-test
+
+      - name: Commit intake and safe canonical draft edits
         id: commit
         shell: bash
         run: |
           set -euo pipefail
-          if [[ -z "$(git status --porcelain research/newsroom-packages)" ]]; then
+          if [[ -z "$(git status --porcelain)" ]]; then
             echo 'changed=false' >> "$GITHUB_OUTPUT"
-            echo 'No new approved packages.'
+            echo 'No new approved packages or canonical draft edits.'
             exit 0
           fi
-          git add research/newsroom-packages
-          git commit -m 'Ingest approved newsroom publication packages'
+          git add research/newsroom-packages research/news-reviews docs/RESEARCH_NEWS.md docs/news/articles data/verified-changes.json
+          git commit -m 'Prepare approved newsroom publication packages'
           git push --set-upstream origin "${BRANCH}"
           echo 'changed=true' >> "$GITHUB_OUTPUT"
 
-      - name: Open or update draft publication-intake PR
+      - name: Open or update draft publication PR
         if: steps.commit.outputs.changed == 'true'
         shell: bash
         run: |
           set -euo pipefail
           existing="$(gh pr list --head "${BRANCH}" --base main --state open --json number --jq '.[0].number // empty')"
           if [[ -n "${existing}" ]]; then
-            echo "Updated existing newsroom intake PR #${existing}."
+            echo "Updated existing newsroom publication PR #${existing}."
             exit 0
           fi
           gh pr create \
             --base main \
             --head "${BRANCH}" \
             --draft \
-            --title 'Ingest second-gate-approved newsroom publication packages' \
-            --body $'Pulls only packages explicitly approved at the live Editorial Desk publication gate.\n\nThis PR is **not canonical publication by itself**. The package records must still be mapped to exact repository destinations, validated against evidence and promotion policy, and converted into the canonical edits required by each route.\n\nNo GitHub credential is stored in `glasses-news`; this repository pulls the read-only approved queue with its own Actions identity.'
+            --title 'Prepare second-gate-approved newsroom publications' \
+            --body $'Pulls only packages explicitly approved at the live Editorial Desk publication gate. The machine handoff is authenticated with a short-lived GitHub OIDC token bound to this repository/workflow; no long-lived shared secret and no Worker GitHub credential are used.\n\nFor packages whose approved canonical scope is **news.publish only**, the repository-side actuator compiles the complete draft Research & News / article / GRE ledger / durable-review diff and validates it before opening this PR. Packages requiring catalog, lineage, report-card, Finder, release-tracker, or dossier work are preserved but deliberately **not partially published**.\n\nThis remains a draft until the repository diff itself is reviewed and merged.'
