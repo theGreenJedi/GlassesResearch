@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/newsroom_publication_intake.py'
       - 'scripts/newsroom_news_actuator.py'
+      - 'scripts/newsroom_story_update_actuator.py'
       - 'scripts/newsroom_route_actuator.py'
       - '.github/workflows/newsroom-publication-intake.yml'
       - 'research/newsroom-packages/**'
@@ -38,6 +39,8 @@ jobs:
         run: python scripts/newsroom_publication_intake.py --self-test
       - name: Self-test news-only canonical actuator
         run: python scripts/newsroom_news_actuator.py --self-test
+      - name: Self-test news story-update scope
+        run: python scripts/newsroom_story_update_actuator.py --self-test
       - name: Self-test non-news route dispatcher
         run: python scripts/newsroom_route_actuator.py --self-test
 
@@ -101,6 +104,9 @@ jobs:
       - name: Compile safe news-only packages into canonical draft edits
         run: python scripts/newsroom_news_actuator.py --all
 
+      - name: Compile safe news story updates into dated canonical draft edits
+        run: python scripts/newsroom_story_update_actuator.py --all
+
       - name: Materialize all approved non-news routes
         run: python scripts/newsroom_route_actuator.py --all
 
@@ -146,4 +152,4 @@ jobs:
             --head "${BRANCH}" \
             --draft \
             --title 'Prepare second-gate-approved newsroom publications' \
-            --body $'Pulls only packages explicitly approved at the live Editorial Desk publication gate. The machine handoff is authenticated with a short-lived GitHub OIDC token bound to this repository/workflow; no long-lived shared secret and no Worker GitHub credential are used.\n\nNews-only packages may compile into complete canonical draft Research & News / article / GRE / review changes. Every approved non-news route is also materialized deterministically: bounded research/evidence work becomes a repository artifact, existing-GLS work gets an exact specialist action, unresolved catalog identity escalates back to Models, and ambiguous/legacy routes are blocked rather than guessed.\n\nThis remains a draft until the repository diff itself is reviewed and merged.'
+            --body $'Pulls only packages explicitly approved at the live Editorial Desk publication gate. The machine handoff is authenticated with a short-lived GitHub OIDC token bound to this repository/workflow; no long-lived shared secret and no Worker GitHub credential are used.\n\nNews-only publish/update packages may compile into complete dated canonical Research & News / article / GRE / review changes. Every approved non-news route is also materialized deterministically: bounded research/evidence work becomes a repository artifact, existing-GLS work gets an exact specialist action, unresolved catalog identity escalates back to Models, and ambiguous/legacy routes are blocked rather than guessed.\n\nThis remains a draft until the repository diff itself is reviewed and merged.'
