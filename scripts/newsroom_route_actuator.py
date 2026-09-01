@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Materialize every approved newsroom route into an auditable repository action.
 
-Direct canonical mutation is intentionally narrow. News-only publication is handled by
-`newsroom_news_actuator.py`. This dispatcher makes every other second-gate-approved
-route produce a deterministic repository consequence without inventing identity,
-scores, lineage, or release truth.
+Direct canonical mutation is intentionally narrow. Pure news-only publication is
+handled by the canonical news actuators. This dispatcher makes every other
+second-gate-approved route produce a deterministic repository consequence without
+inventing identity, scores, lineage, release truth, or allowing partial publication.
 """
 from __future__ import annotations
 
@@ -18,14 +18,13 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGES = ROOT / "research" / "newsroom-packages"
-ACTIONS = ROOT / "research" / "newsroom-actions"
-DOSSIERS = ROOT / "research" / "newsroom-dossiers"
-EVIDENCE = ROOT / "research" / "newsroom-evidence"
 THE_LIST = ROOT / "models" / "THE_LIST.md"
 GLS_RE = re.compile(r"^GLS-\d{4}$")
 
 NEWS_DESTINATIONS = {"news.publish", "news.update_story"}
 SUPPORTED = {
+    "news.publish",
+    "news.update_story",
     "catalog.update",
     "lineage.update",
     "report_card.evidence",
@@ -35,6 +34,8 @@ SUPPORTED = {
 }
 
 OWNER = {
+    "news.publish": "news-desk",
+    "news.update_story": "news-desk",
     "catalog.update": "model-investigator/catalog",
     "lineage.update": "lineage-specialist",
     "report_card.evidence": "report-card-evidence",
@@ -127,6 +128,8 @@ def _action_id(package_id: str, route: dict[str, Any], context: dict[str, Any] |
 def _state(destination: str, context: dict[str, Any] | None, targets: list[str], invalid: list[str]) -> tuple[str, str]:
     if invalid:
         return "blocked", "Trusted route context contains a canonical GLS identifier that is absent from The List."
+    if destination in NEWS_DESTINATIONS:
+        return "blocked_mixed_scope", "News publication/update is held because the approved package also requires other canonical work; partial publication is forbidden."
     if destination == "research.dossier":
         return "research_materialized", "Bounded research work can be materialized without asserting a canonical fact."
     if context is None:
@@ -140,11 +143,7 @@ def _state(destination: str, context: dict[str, Any] | None, targets: list[str],
     return "ready_for_specialist", "Exact existing canonical target(s) and evidence are available for the destination specialist."
 
 
-def _record(
-    envelope: dict[str, Any],
-    route: dict[str, Any],
-    known_gls: set[str],
-) -> dict[str, Any]:
+def _record(envelope: dict[str, Any], route: dict[str, Any], known_gls: set[str]) -> dict[str, Any]:
     package_id = str(envelope.get("package_id") or "").strip()
     package = envelope.get("package")
     if not package_id or not isinstance(package, dict):
@@ -230,6 +229,34 @@ This action was generated only after the newsroom's second human publication gat
 """
 
 
+def _write_record(record: dict[str, Any], root: Path) -> None:
+    action_dir = root / "research" / "newsroom-actions"
+    action_dir.mkdir(parents=True, exist_ok=True)
+    action_json = action_dir / f"{record['action_id']}.json"
+    action_md = action_dir / f"{record['action_id']}.md"
+    if not action_json.exists():
+        action_json.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if not action_md.exists():
+        action_md.write_text(_markdown(record), encoding="utf-8")
+
+    if record["state"] == "research_materialized":
+        dossier_dir = root / "research" / "newsroom-dossiers"
+        dossier_dir.mkdir(parents=True, exist_ok=True)
+        dossier = dossier_dir / f"{record['action_id']}.md"
+        if not dossier.exists():
+            dossier.write_text(_markdown(record).replace("## Safety boundary", "## Research question\n\n" + str(record.get("route_reason") or "Resolve the bounded evidence question above.") + "\n\n## Safety boundary"), encoding="utf-8")
+
+    if record["state"] == "evidence_materialized":
+        evidence_dir = root / "research" / "newsroom-evidence"
+        evidence_dir.mkdir(parents=True, exist_ok=True)
+        evidence_json = evidence_dir / f"{record['action_id']}.json"
+        evidence_md = evidence_dir / f"{record['action_id']}.md"
+        if not evidence_json.exists():
+            evidence_json.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        if not evidence_md.exists():
+            evidence_md.write_text(_markdown(record), encoding="utf-8")
+
+
 def materialize(envelope_path: Path, known_gls: set[str], root: Path = ROOT) -> list[dict[str, Any]]:
     envelope = _load(envelope_path)
     package = envelope.get("package")
@@ -238,44 +265,25 @@ def materialize(envelope_path: Path, known_gls: set[str], root: Path = ROOT) -> 
     routes = package.get("routes")
     if not isinstance(routes, list):
         raise RouteActuatorError(f"{envelope_path}: routes must be a list")
+    destinations = {
+        str(route.get("destination") or "")
+        for route in routes
+        if isinstance(route, dict)
+    }
+    pure_news = bool(destinations) and destinations.issubset(NEWS_DESTINATIONS)
 
     records: list[dict[str, Any]] = []
     for route in routes:
         if not isinstance(route, dict):
             continue
         destination = str(route.get("destination") or "")
-        if destination in NEWS_DESTINATIONS:
-            continue
         if destination not in SUPPORTED:
             raise RouteActuatorError(f"{envelope_path}: unsupported route {destination!r}")
+        if destination in NEWS_DESTINATIONS and pure_news:
+            continue
         record = _record(envelope, route, known_gls)
         records.append(record)
-
-        action_dir = root / "research" / "newsroom-actions"
-        action_dir.mkdir(parents=True, exist_ok=True)
-        action_json = action_dir / f"{record['action_id']}.json"
-        action_md = action_dir / f"{record['action_id']}.md"
-        if not action_json.exists():
-            action_json.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        if not action_md.exists():
-            action_md.write_text(_markdown(record), encoding="utf-8")
-
-        if record["state"] == "research_materialized":
-            dossier_dir = root / "research" / "newsroom-dossiers"
-            dossier_dir.mkdir(parents=True, exist_ok=True)
-            dossier = dossier_dir / f"{record['action_id']}.md"
-            if not dossier.exists():
-                dossier.write_text(_markdown(record).replace("## Safety boundary", "## Research question\n\n" + str(record.get("route_reason") or "Resolve the bounded evidence question above.") + "\n\n## Safety boundary"), encoding="utf-8")
-
-        if record["state"] == "evidence_materialized":
-            evidence_dir = root / "research" / "newsroom-evidence"
-            evidence_dir.mkdir(parents=True, exist_ok=True)
-            evidence_json = evidence_dir / f"{record['action_id']}.json"
-            evidence_md = evidence_dir / f"{record['action_id']}.md"
-            if not evidence_json.exists():
-                evidence_json.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-            if not evidence_md.exists():
-                evidence_md.write_text(_markdown(record), encoding="utf-8")
+        _write_record(record, root)
     return records
 
 
@@ -326,6 +334,7 @@ def self_test() -> None:
             "entities": [{"key": "model-example", "type": "model", "name": "Example Model", "confidence": "high", "canonical_gls_id": "GLS-0042", "aliases": []}],
         }
         base["package"]["routes"] = [
+            {"route_id": "r0", "destination": "news.publish", "reason": "Publish if complete", "payload": {"newsroom_context": context}, "created_at": "2026-09-01T00:00:00Z"},
             {"route_id": "r1", "destination": "report_card.evidence", "reason": "Review evidence", "payload": {"newsroom_context": context}, "created_at": "2026-09-01T00:00:00Z"},
             {"route_id": "r2", "destination": "research.dossier", "reason": "Resolve a bounded question", "payload": {"newsroom_context": context}, "created_at": "2026-09-01T00:00:00Z"},
             {"route_id": "r3", "destination": "catalog.update", "reason": "Unknown candidate", "payload": {"newsroom_context": {**context, "entities": []}}, "created_at": "2026-09-01T00:00:00Z"},
@@ -333,13 +342,27 @@ def self_test() -> None:
         path = package_dir / "GRNP-TEST.json"
         path.write_text(json.dumps(base), encoding="utf-8")
         total, states = process_all(package_dir, root, model_list)
-        assert total == 3
-        assert states == {"evidence_materialized": 1, "research_materialized": 1, "escalate_models": 1}
+        assert total == 4
+        assert states == {
+            "blocked_mixed_scope": 1,
+            "evidence_materialized": 1,
+            "research_materialized": 1,
+            "escalate_models": 1,
+        }
         assert len(list((root / "research" / "newsroom-evidence").glob("*.json"))) == 1
         assert len(list((root / "research" / "newsroom-dossiers").glob("*.md"))) == 1
-        assert len(list((root / "research" / "newsroom-actions").glob("*.json"))) == 3
+        assert len(list((root / "research" / "newsroom-actions").glob("*.json"))) == 4
         total2, states2 = process_all(package_dir, root, model_list)
-        assert total2 == 3 and states2 == states
+        assert total2 == 4 and states2 == states
+
+        pure_news = json.loads(json.dumps(base))
+        pure_news["package_id"] = "GRNP-NEWS"
+        pure_news["package"]["routes"] = [
+            {"route_id": "rn", "destination": "news.publish", "reason": "Publish", "payload": {"newsroom_context": context}, "created_at": "2026-09-01T00:00:00Z"},
+        ]
+        pure_path = package_dir / "GRNP-NEWS.json"
+        pure_path.write_text(json.dumps(pure_news), encoding="utf-8")
+        assert materialize(pure_path, _known_gls(model_list), root) == []
     print("Newsroom route actuator self-test passed.")
 
 
@@ -359,7 +382,7 @@ def main() -> int:
     if args.all:
         total, states = process_all()
         summary = ", ".join(f"{key}={value}" for key, value in sorted(states.items())) or "none"
-        print(f"Materialized {total} approved non-news route action(s): {summary}.")
+        print(f"Materialized {total} approved route action(s): {summary}.")
         return 0
     parser.error("use --all, --package, or --self-test")
     return 2
