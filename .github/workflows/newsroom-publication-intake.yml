@@ -108,6 +108,35 @@ jobs:
 
           newsroom_path = Path('/tmp/newsroom-publication-queue.json')
           newsroom_payload = json.loads(newsroom_path.read_text(encoding='utf-8'))
+          raw_packages = newsroom_payload.get('packages')
+          if isinstance(raw_packages, list):
+              kept_packages = []
+              dropped_routes = 0
+              review_destinations = {
+                  'news.publish',
+                  'news.update_story',
+                  'catalog.update',
+                  'lineage.update',
+                  'report_card.evidence',
+                  'finder.update',
+                  'release_tracker.update',
+              }
+              for package in raw_packages:
+                  if not isinstance(package, dict):
+                      continue
+                  routes = package.get('routes')
+                  if not isinstance(routes, list):
+                      continue
+                  kept_routes = [
+                      route for route in routes
+                      if isinstance(route, dict) and route.get('destination') in review_destinations
+                  ]
+                  dropped_routes += len(routes) - len(kept_routes)
+                  if kept_routes:
+                      kept_packages.append({**package, 'routes': kept_routes})
+              newsroom_payload = {**newsroom_payload, 'packages': kept_packages}
+              if dropped_routes:
+                  print(f"Repository draft guard kept {dropped_routes} research-only newsroom route(s) internal.")
           newsroom_created = ingest_newsroom(
               newsroom_payload,
               Path('research/newsroom-packages'),
