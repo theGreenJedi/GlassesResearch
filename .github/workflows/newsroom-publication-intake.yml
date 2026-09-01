@@ -5,8 +5,13 @@ on:
     branches: [main]
     paths:
       - 'scripts/newsroom_publication_intake.py'
+      - 'scripts/newsroom_news_actuator.py'
       - '.github/workflows/newsroom-publication-intake.yml'
       - 'research/newsroom-packages/**'
+      - 'research/news-reviews/**'
+      - 'docs/RESEARCH_NEWS.md'
+      - 'docs/news/articles/**'
+      - 'data/verified-changes.json'
   schedule:
     - cron: '*/30 * * * *'
   workflow_dispatch:
@@ -26,6 +31,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Self-test newsroom intake
         run: python scripts/newsroom_publication_intake.py --self-test
+      - name: Self-test news-only canonical actuator
+        run: python scripts/newsroom_news_actuator.py --self-test
 
   intake:
     if: github.event_name != 'pull_request'
@@ -57,34 +64,44 @@ jobs:
       - name: Pull second-gate-approved packages
         run: python scripts/newsroom_publication_intake.py --url "${QUEUE_URL}"
 
-      - name: Commit new package records
+      - name: Compile safe news-only packages into canonical draft edits
+        run: python scripts/newsroom_news_actuator.py --all
+
+      - name: Validate any generated publication surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/verified_changes.py
+          python scripts/verify_news_promotion.py --self-test
+
+      - name: Commit intake and safe canonical draft edits
         id: commit
         shell: bash
         run: |
           set -euo pipefail
-          if [[ -z "$(git status --porcelain research/newsroom-packages)" ]]; then
+          if [[ -z "$(git status --porcelain)" ]]; then
             echo 'changed=false' >> "$GITHUB_OUTPUT"
-            echo 'No new approved packages.'
+            echo 'No new approved packages or canonical draft edits.'
             exit 0
           fi
-          git add research/newsroom-packages
-          git commit -m 'Ingest approved newsroom publication packages'
+          git add research/newsroom-packages research/news-reviews docs/RESEARCH_NEWS.md docs/news/articles data/verified-changes.json
+          git commit -m 'Prepare approved newsroom publication packages'
           git push --set-upstream origin "${BRANCH}"
           echo 'changed=true' >> "$GITHUB_OUTPUT"
 
-      - name: Open or update draft publication-intake PR
+      - name: Open or update draft publication PR
         if: steps.commit.outputs.changed == 'true'
         shell: bash
         run: |
           set -euo pipefail
           existing="$(gh pr list --head "${BRANCH}" --base main --state open --json number --jq '.[0].number // empty')"
           if [[ -n "${existing}" ]]; then
-            echo "Updated existing newsroom intake PR #${existing}."
+            echo "Updated existing newsroom publication PR #${existing}."
             exit 0
           fi
           gh pr create \
             --base main \
             --head "${BRANCH}" \
             --draft \
-            --title 'Ingest second-gate-approved newsroom publication packages' \
-            --body $'Pulls only packages explicitly approved at the live Editorial Desk publication gate.\n\nThis PR is **not canonical publication by itself**. The package records must still be mapped to exact repository destinations, validated against evidence and promotion policy, and converted into the canonical edits required by each route.\n\nNo GitHub credential is stored in `glasses-news`; this repository pulls the read-only approved queue with its own Actions identity.'
+            --title 'Prepare second-gate-approved newsroom publications' \
+            --body $'Pulls only packages explicitly approved at the live Editorial Desk publication gate.\n\nFor packages whose approved canonical scope is **news.publish only**, the repository-side actuator also compiles the complete draft Research & News / article / GRE ledger / durable-review diff and validates it before opening this PR. Packages requiring catalog, lineage, report-card, Finder, release-tracker, or dossier work are preserved but deliberately **not partially published**.\n\nThis remains a draft until the repository diff itself is reviewed. `glasses-news` holds no GitHub write credential; this repository uses only its built-in Actions identity.'
