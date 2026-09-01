@@ -25,10 +25,9 @@ on:
     - cron: '*/10 * * * *'
   workflow_dispatch:
 
+# Validation and pull-request-triggered runs are read-only by default.
 permissions:
-  contents: write
-  pull-requests: write
-  id-token: write
+  contents: read
 
 concurrency:
   group: newsroom-publication-intake
@@ -56,6 +55,12 @@ jobs:
     if: github.event_name != 'pull_request'
     needs: validate
     runs-on: ubuntu-latest
+    # Write authority exists only in this trusted schedule/manual job. The
+    # pull_request validation path above never receives these capabilities.
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
     env:
       BRANCH: automation/newsroom-publication-intake
       QUEUE_URL: https://glassesresearch.org/api/newsroom/publication-queue
