@@ -146,13 +146,13 @@ description: "Evidence-verification freshness, aging rules, and the refresh queu
 
 ## Research health
 
-| State | Resolved Core subjects |
+| State | Core subjects |
 |---|---:|
 | **Fresh** | {summary['fresh']} |
 | **Aging** | {summary['aging']} |
 | **Stale** | {summary['stale']} |
 | **Unknown freshness** | {summary['unknown']} |
-| **Unscored / N/A excluded from freshness denominator** | {summary['unscored']} |
+| **Unscored subjects** | {summary['unscored']} |
 
 **{summary['cards_with_resolved_scores']} of {summary['card_count']} Core Report Cards currently contain at least one numeric score or N/A judgment.** Of {summary['resolved_dimensions']} resolved Core subjects, {summary['known_freshness_dimensions']} have an explicit score-specific verification date and {summary['unknown']} still need one.
 
