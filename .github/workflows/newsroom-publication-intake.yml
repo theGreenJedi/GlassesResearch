@@ -1,0 +1,90 @@
+name: Pull approved newsroom publication packages
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/newsroom_publication_intake.py'
+      - '.github/workflows/newsroom-publication-intake.yml'
+      - 'research/newsroom-packages/**'
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: newsroom-publication-intake
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Self-test newsroom intake
+        run: python scripts/newsroom_publication_intake.py --self-test
+
+  intake:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    env:
+      BRANCH: automation/newsroom-publication-intake
+      QUEUE_URL: https://glassesresearch.org/api/newsroom/publication-queue
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare persistent intake branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          if git fetch origin "${BRANCH}:refs/remotes/origin/${BRANCH}" 2>/dev/null; then
+            git checkout -B "${BRANCH}" "origin/${BRANCH}"
+            git merge --no-edit origin/main
+          else
+            git checkout -b "${BRANCH}" origin/main
+          fi
+
+      - name: Pull second-gate-approved packages
+        run: python scripts/newsroom_publication_intake.py --url "${QUEUE_URL}"
+
+      - name: Commit new package records
+        id: commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$(git status --porcelain research/newsroom-packages)" ]]; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            echo 'No new approved packages.'
+            exit 0
+          fi
+          git add research/newsroom-packages
+          git commit -m 'Ingest approved newsroom publication packages'
+          git push --set-upstream origin "${BRANCH}"
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+
+      - name: Open or update draft publication-intake PR
+        if: steps.commit.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          existing="$(gh pr list --head "${BRANCH}" --base main --state open --json number --jq '.[0].number // empty')"
+          if [[ -n "${existing}" ]]; then
+            echo "Updated existing newsroom intake PR #${existing}."
+            exit 0
+          fi
+          gh pr create \
+            --base main \
+            --head "${BRANCH}" \
+            --draft \
+            --title 'Ingest second-gate-approved newsroom publication packages' \
+            --body $'Pulls only packages explicitly approved at the live Editorial Desk publication gate.\n\nThis PR is **not canonical publication by itself**. The package records must still be mapped to exact repository destinations, validated against evidence and promotion policy, and converted into the canonical edits required by each route.\n\nNo GitHub credential is stored in `glasses-news`; this repository pulls the read-only approved queue with its own Actions identity.'
