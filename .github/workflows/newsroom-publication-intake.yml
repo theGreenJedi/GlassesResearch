@@ -108,6 +108,35 @@ jobs:
 
           newsroom_path = Path('/tmp/newsroom-publication-queue.json')
           newsroom_payload = json.loads(newsroom_path.read_text(encoding='utf-8'))
+          raw_packages = newsroom_payload.get('packages')
+          if isinstance(raw_packages, list):
+              kept_packages = []
+              dropped_routes = 0
+              review_destinations = {
+                  'news.publish',
+                  'news.update_story',
+                  'catalog.update',
+                  'lineage.update',
+                  'report_card.evidence',
+                  'finder.update',
+                  'release_tracker.update',
+              }
+              for package in raw_packages:
+                  if not isinstance(package, dict):
+                      continue
+                  routes = package.get('routes')
+                  if not isinstance(routes, list):
+                      continue
+                  kept_routes = [
+                      route for route in routes
+                      if isinstance(route, dict) and route.get('destination') in review_destinations
+                  ]
+                  dropped_routes += len(routes) - len(kept_routes)
+                  if kept_routes:
+                      kept_packages.append({**package, 'routes': kept_routes})
+              newsroom_payload = {**newsroom_payload, 'packages': kept_packages}
+              if dropped_routes:
+                  print(f"Repository draft guard kept {dropped_routes} research-only newsroom route(s) internal.")
           newsroom_created = ingest_newsroom(
               newsroom_payload,
               Path('research/newsroom-packages'),
@@ -120,6 +149,34 @@ jobs:
 
           model_path = Path('/tmp/model-proposal-queue.json')
           model_payload = json.loads(model_path.read_text(encoding='utf-8'))
+          raw_proposals = model_payload.get('proposals')
+          if isinstance(raw_proposals, list):
+              kept = []
+              dropped = 0
+              automatic_kinds = {'catalog_admission', 'identity_correction', 'lineage_change', 'evidence_update'}
+              for item in raw_proposals:
+                  proposal = item.get('proposal') if isinstance(item, dict) else None
+                  if not isinstance(proposal, dict):
+                      dropped += 1
+                      continue
+                  kind = proposal.get('proposal_kind')
+                  evidence = proposal.get('evidence')
+                  consequences = proposal.get('consequences')
+                  if kind == 'escalation':
+                      draftable = isinstance(evidence, list) and len(evidence) > 0
+                  else:
+                      draftable = (
+                          kind in automatic_kinds
+                          and isinstance(evidence, list) and len(evidence) > 0
+                          and isinstance(consequences, list) and len(consequences) > 0
+                      )
+                  if draftable:
+                      kept.append(item)
+                  else:
+                      dropped += 1
+              model_payload = {**model_payload, 'proposals': kept}
+              if dropped:
+                  print(f"Repository draft guard dropped {dropped} low-signal model proposal(s).")
           model_created = ingest_models(
               model_payload,
               Path('research/model-proposals'),
