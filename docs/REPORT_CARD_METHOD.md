@@ -48,7 +48,7 @@ Every resolved Core score can therefore carry:
 - `age_days` — age of the score-specific verification at build time;
 - `context_reviewed_at` — an optional model-level comparison-review date that may help researchers triage work but **does not** substitute for `verified_at`.
 
-The public [Report Card Freshness dashboard](/docs/REPORT_CARD_FRESHNESS/) reports catalog-wide research health and the prioritized refresh queue.
+The public [Report Card hub](REPORT_CARD.md) links to a generated freshness dashboard that reports catalog-wide research health and the prioritized refresh queue.
 
 ### Freshness states
 
