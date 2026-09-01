@@ -46,6 +46,8 @@ def main():
     caps=DEST/"data"/"finder-capabilities.json"; run(ROOT/"scripts/build_finder_capabilities.py","--models",ROOT/"models/THE_LIST.md","--comparisons",comparisons,"--overrides",ROOT/"data/finder-capability-overrides.json","--output",caps)
     run(ROOT/"scripts/apply_finder_capabilities.py","--comparisons",comparisons,"--capabilities",caps)
     cards=DEST/"data"/"report-card-scores.json"; run(ROOT/"scripts/build_report_card_scores.py","--input-dir",ROOT/"docs/report-cards","--models",ROOT/"models/THE_LIST.md","--capabilities",caps,"--overrides",ROOT/"data/core-report-card-overrides.json","--output",cards)
+    freshness=DEST/"data"/"report-card-freshness.json"
+    run(ROOT/"scripts/build_report_card_freshness.py","--scores",cards,"--comparisons",comparisons,"--overrides",ROOT/"data/core-report-card-overrides.json","--output-scores",cards,"--output",freshness,"--page-output",DEST/"docs/REPORT_CARD_FRESHNESS.md")
     run(ROOT/"scripts/build_site_status.py","--devices",database,"--report-cards",cards,"--output",DEST/"data/site-status.json","--homepage",DEST/"index.md")
     run(ROOT/"scripts/build_purchase_fallbacks.py","--models",ROOT/"models/THE_LIST.md","--curated",ROOT/"data/purchase-sources.json","--output",DEST/"data/purchase-fallbacks.json")
     run(ROOT/"scripts/build_model_pages.py","--data-dir",DEST/"data","--output-root",DEST)
@@ -55,6 +57,8 @@ def main():
     if catalog_index.exists():
         catalog_index.write_text(catalog_index.read_text(encoding="utf-8")+"\n[Resolve any GLS identifier](/gls/) · [Machine-readable GLS index](/data/gls-index.json)\n",encoding="utf-8")
     run(ROOT/"scripts/build_report_card_hub.py","--devices",database,"--scores",cards,"--aliases",ROOT/"data/lineage-aliases.json","--output",DEST/"docs/REPORT_CARD.md")
+    report_hub=DEST/"docs"/"REPORT_CARD.md"
+    report_hub.write_text(report_hub.read_text(encoding="utf-8")+"\n\n## Freshness and refresh queue\n\nA score is not considered current merely because this site was rebuilt. [Open the Report Card freshness dashboard](/docs/REPORT_CARD_FRESHNESS/) to see score-specific verification dates, freshness policy, research-health counts, and the prioritized refresh queue.\n",encoding="utf-8")
     lineage_index=DEST/"data"/"lineage-index.json"
     run(ROOT/"scripts/build_family_tree_surfaces.py","--site-root",DEST,"--families",ROOT/"data/family-trees.json","--additional-families",ROOT/"data/family-trees-bounded.json","--additional-families",ROOT/"data/family-trees-researched.json","--corrections",ROOT/"data/family-tree-audit-overrides.json","--index-output",lineage_index)
     run(ROOT/"scripts/apply_lineage_search.py","--lineage-index",lineage_index,"--devices",database,"--finder-js",DEST/"docs/javascripts/glasses-finder-v3.js")
