@@ -1,0 +1,126 @@
+name: Feed reader live smoke test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify canonical reader contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          verified='https://glassesresearch.org/feed.xml'
+          wire='https://glassesresearch.org/data/wire-feed.xml'
+          feedly_prefix='https://feedly.com/i/subscription/feed%2F'
+          inoreader_prefix='https://www.inoreader.com/feed/'
+
+          grep -Fq "$verified" docs/FEEDS.md
+          grep -Fq "$wire" docs/FEEDS.md
+          grep -Fq "${feedly_prefix}https%3A%2F%2Fglassesresearch.org%2Ffeed.xml" docs/FEEDS.md
+          grep -Fq "${feedly_prefix}https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" docs/FEEDS.md
+          grep -Fq "${inoreader_prefix}https%3A%2F%2Fglassesresearch.org%2Ffeed.xml" docs/FEEDS.md
+          grep -Fq "${inoreader_prefix}https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" docs/FEEDS.md
+          grep -Fq '/docs/FEEDS/' overrides/main.html
+          grep -Fq '/data/wire-feed.xml' overrides/main.html
+
+          echo 'Feed-reader source contract passed.'
+
+  live:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for exact production deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://glassesresearch.org'
+          for attempt in $(seq 1 16); do
+            bust="feed-smoke=${GITHUB_SHA}-${GITHUB_RUN_ID}-${attempt}"
+            if curl --fail --silent --show-error --location --max-time 20 \
+              -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+              "${base}/deployment.json?${bust}" -o /tmp/deployment.json \
+              && python -c "import json, os; p=json.load(open('/tmp/deployment.json')); assert p.get('sha') == os.environ['GITHUB_SHA']"; then
+              echo "Production is serving ${GITHUB_SHA}."
+              exit 0
+            fi
+            echo "Waiting for production deployment ${GITHUB_SHA}: ${attempt}/16"
+            sleep 15
+          done
+          echo "Production never served expected SHA ${GITHUB_SHA}." >&2
+          exit 1
+
+      - name: Verify live canonical feeds and buttons
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://glassesresearch.org'
+          bust="feed-smoke=${GITHUB_SHA}-${GITHUB_RUN_ID}"
+
+          curl --fail --silent --show-error --location --max-time 20 \
+            -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+            "${base}/docs/FEEDS/?${bust}" -o /tmp/feeds.html
+          curl --fail --silent --show-error --location --max-time 20 \
+            -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+            "${base}/feed.xml?${bust}" -o /tmp/verified.xml
+          curl --fail --silent --show-error --location --max-time 20 \
+            -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+            "${base}/data/wire-feed.xml?${bust}" -o /tmp/wire.xml
+
+          python - <<'PY'
+          from xml.etree import ElementTree as ET
+          for path in ('/tmp/verified.xml', '/tmp/wire.xml'):
+              root = ET.parse(path).getroot()
+              assert root.tag == 'rss', (path, root.tag)
+              channel = root.find('channel')
+              assert channel is not None, path
+              assert channel.findtext('title'), path
+              assert channel.findall('item'), f'{path}: feed has no items'
+          print('Both production RSS feeds parse and contain items.')
+          PY
+
+          grep -Fq 'https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fglassesresearch.org%2Ffeed.xml' /tmp/feeds.html
+          grep -Fq 'https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml' /tmp/feeds.html
+          grep -Fq 'https://www.inoreader.com/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml' /tmp/feeds.html
+          grep -Fq 'https://www.inoreader.com/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml' /tmp/feeds.html
+          grep -Fq 'Copy RSS URL' /tmp/feeds.html
+
+          echo 'Live feed page exposes both canonical feeds and all reader handoffs.'
+
+      - name: Verify external reader handoffs do not 404
+        shell: bash
+        run: |
+          set -euo pipefail
+          check_handoff() {
+            label="$1"
+            url="$2"
+            body="/tmp/${label}.html"
+            code="$(curl --silent --show-error --location --max-time 25 \
+              -A 'Mozilla/5.0 GlassesResearch feed-reader smoke test' \
+              -o "$body" -w '%{http_code}' "$url")"
+            case "$code" in
+              2*|3*) ;;
+              *) echo "$label returned HTTP $code" >&2; exit 1 ;;
+            esac
+            if grep -Eqi '(^|>)\s*(page )?not found\s*(<|$)' "$body"; then
+              echo "$label landed on a Not Found page" >&2
+              exit 1
+            fi
+            echo "$label handoff HTTP $code"
+          }
+
+          check_handoff feedly-verified 'https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fglassesresearch.org%2Ffeed.xml'
+          check_handoff feedly-wire 'https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml'
+          check_handoff inoreader-verified 'https://www.inoreader.com/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml'
+          check_handoff inoreader-wire 'https://www.inoreader.com/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml'
+
+          echo 'External reader handoffs passed.'
