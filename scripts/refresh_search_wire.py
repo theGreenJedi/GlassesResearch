@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Refresh the public developing-news wire from existing search/news wheels.
+"""Refresh the public developing-news wire from commodity search wheels.
 
 GlassesResearch does not need to own web crawling. This collector deliberately uses
-commodity discovery surfaces (Google News RSS and Bing News RSS), performs only the
-minimum normalization/deduplication needed for the public developing wire, and
-leaves verification/editorial judgment to GlassesResearch.
+commodity discovery surfaces (Google News RSS, Bing News RSS, and Bing Web RSS),
+performs only the minimum normalization/deduplication needed for the public developing
+wire, and leaves verification/editorial judgment to GlassesResearch.
 
 Across the Wire is a recall-oriented discovery surface. Ordinary web/news search is
 the benchmark: retrieval should cast a broad net across generic, company, product,
@@ -94,7 +94,7 @@ PRIMARY_HOST_HINTS = (
     "evenrealities.com",
     "vuzix.com",
 )
-UA = "GlassesResearch-Wire/1.0 (+https://glassesresearch.org/)"
+UA = "GlassesResearch-Wire/1.1 (+https://glassesresearch.org/)"
 
 
 def fetch(url: str, timeout: int = 25) -> bytes:
@@ -151,6 +151,11 @@ def google_news_url(query: str) -> str:
 def bing_news_url(query: str) -> str:
     q = urllib.parse.quote(query)
     return f"https://www.bing.com/news/search?q={q}&format=RSS"
+
+
+def bing_web_url(query: str) -> str:
+    q = urllib.parse.quote(query)
+    return f"https://www.bing.com/search?q={q}&format=rss"
 
 
 def parse_feed(blob: bytes, wheel: str, query: str) -> list[dict]:
@@ -229,6 +234,7 @@ def main() -> int:
     wheels = (
         ("Google News", google_news_url),
         ("Bing News", bing_news_url),
+        ("Bing Web", bing_web_url),
     )
     for wheel, builder in wheels:
         for query in QUERIES:
@@ -265,7 +271,7 @@ def main() -> int:
 
     state = {
         "schema_version": 1,
-        "semantics": "Discovery-only wire from commodity search/news feeds. Items are source reports under review, not verified GlassesResearch claims.",
+        "semantics": "Discovery-only wire from commodity web/news search. Items are source reports under review, not verified GlassesResearch claims.",
         "generated_at": now.isoformat().replace("+00:00", "Z"),
         "items": ranked,
     }
