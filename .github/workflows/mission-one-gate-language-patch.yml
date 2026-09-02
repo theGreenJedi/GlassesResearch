@@ -1,0 +1,121 @@
+name: One-shot newsroom authority language patch
+
+on:
+  push:
+    branches: [fix/one-gate-draft-authority-language]
+    paths:
+      - '.github/workflows/mission-one-gate-language-patch.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/one-gate-draft-authority-language
+      - name: Align generated newsroom language without renaming compatibility state
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          def replace_exact(path_name: str, old: str, new: str, expected: int = 1) -> None:
+              path = Path(path_name)
+              text = path.read_text(encoding='utf-8')
+              found = text.count(old)
+              if found != expected:
+                  raise SystemExit(f'{path_name}: expected {expected} occurrence(s) of {old!r}, found {found}')
+              path.write_text(text.replace(old, new), encoding='utf-8')
+
+          news = 'scripts/newsroom_news_actuator.py'
+          replace_exact(
+              news,
+              '"""Compile second-gate-approved news-only packages into canonical draft diffs.',
+              '"""Compile Editorial-authorized news-only packages into canonical draft diffs.',
+          )
+          replace_exact(
+              news,
+              'ROOT = Path(__file__).resolve().parents[1]\nSAFE_ROUTES = {"news.publish"}',
+              'ROOT = Path(__file__).resolve().parents[1]\n\n# Historical envelope token retained for compatibility with packages already written\n# before the operator flow was simplified. It no longer denotes a second human gate.\nAUTHORIZED_ENVELOPE_STATE = "second_gate_approved"\n\nSAFE_ROUTES = {"news.publish"}',
+          )
+          replace_exact(
+              news,
+              'if envelope.get("state") != "second_gate_approved":\n        raise ActuatorError(f"{package_id}: package is not second-gate approved")',
+              'if envelope.get("state") != AUTHORIZED_ENVELOPE_STATE:\n        raise ActuatorError(f"{package_id}: package is not an authorized newsroom draft input")',
+          )
+          replace_exact(
+              news,
+              'The second publication gate marked this as a material GlassesResearch development.',
+              'The Editorial-authorized News Desk package marked this as a material GlassesResearch development.',
+          )
+          replace_exact(
+              news,
+              'This article is compiled only from claims that crossed the News Desk publication threshold and from evidence sources preserved in the second-gate-approved package. Conflicting, unverified, or lower-confidence claims are not promoted here. The repository pull-request review is the final publication gate.',
+              'This article is compiled only from claims that crossed the News Desk publication threshold and from evidence sources preserved in the Editorial-authorized package. Conflicting, unverified, or lower-confidence claims are not promoted here. The repository pull-request review is the final publication gate.',
+          )
+          replace_exact(
+              news,
+              '**Reviewer:** Live Editorial Desk second human gate; repository PR is the final publication gate  ',
+              '**Authority path:** Live Editorial Desk approval authorized research/draft preparation; repository PR is the final publication gate  ',
+          )
+          replace_exact(
+              news,
+              '> **Collection is not publication.** This package crossed the semantic gate and the explicit human publication gate. The canonical diff still requires normal repository review and merge.',
+              '> **Collection is not publication.** This package inherited the explicit Editorial approval that started the research/draft pipeline. The canonical diff still requires normal repository review and merge.',
+          )
+          replace_exact(
+              news,
+              '- **Reason for disposition:** second-gate-approved news-only promotion package',
+              '- **Reason for disposition:** Editorial-authorized news-only promotion package',
+          )
+          replace_exact(
+              news,
+              '- [x] Public promotion passed the first editorial gate and second publication gate.',
+              '- [x] Public promotion inherited the explicit Editorial approval that started the research/draft pipeline.',
+          )
+          replace_exact(
+              news,
+              'This second-gate-approved development was not yet represented as a verified canonical GlassesResearch publication.',
+              'This Editorial-authorized development was not yet represented as a verified canonical GlassesResearch publication.',
+          )
+          replace_exact(
+              news,
+              '        ledger = json.loads(ledger_text)\n        assert "newsroom-package: GRNP-TEST00000001" in news',
+              '        ledger = json.loads(ledger_text)\n        article = next((root / "docs" / "news" / "articles").glob("*.md")).read_text(encoding="utf-8")\n        review = next((root / "research" / "news-reviews").glob("*.md")).read_text(encoding="utf-8")\n        assert "second human publication gate" not in article + review\n        assert "second publication gate" not in article + review\n        assert "Editorial-authorized" in article + review\n        assert "newsroom-package: GRNP-TEST00000001" in news',
+          )
+          replace_exact(
+              news,
+              '        assert ledger["events"][-1]["alert_match"]["topics"] == ["release_availability"]',
+              '        assert ledger["events"][-1]["alert_match"]["topics"] == ["release_availability"]\n        assert ledger["events"][-1]["previous_state"].startswith("This Editorial-authorized development")',
+          )
+
+          route = 'scripts/newsroom_route_actuator.py'
+          replace_exact(
+              route,
+              'second-gate-approved route produce a deterministic repository consequence without',
+              'Editorial-authorized route produce a deterministic repository consequence without',
+          )
+          replace_exact(
+              route,
+              "This action was generated only after the newsroom's second human publication gate. It is still not permission to invent a model identity, inherit lineage facts, infer a Report Card score, or convert Unknown into a positive Finder fact. Any canonical edit must satisfy the destination's existing repository validators and the normal PR merge gate.",
+              "This action was generated only after explicit Editorial approval authorized the newsroom research/draft pipeline. It is still not permission to invent a model identity, inherit lineage facts, infer a Report Card score, or convert Unknown into a positive Finder fact. Any canonical edit must satisfy the destination's existing repository validators and the normal PR merge gate.",
+          )
+          PY
+
+          python scripts/newsroom_publication_intake.py --self-test
+          python scripts/newsroom_news_actuator.py --self-test
+          python scripts/newsroom_route_actuator.py --self-test
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/newsroom_news_actuator.py scripts/newsroom_route_actuator.py
+          if git diff --cached --quiet; then
+            echo 'No patch needed.'
+            exit 0
+          fi
+          git commit -m 'Finish one-gate newsroom authority wording [skip ci]'
+          git push origin HEAD:fix/one-gate-draft-authority-language
