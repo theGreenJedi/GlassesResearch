@@ -3,6 +3,11 @@ name: Refresh developing news wire
 on:
   schedule:
     - cron: "*/30 * * * *"
+  push:
+    branches:
+      - knowledge-intake
+    paths:
+      - "research/news-reviews/queue.json"
   workflow_dispatch:
 
 permissions:
