@@ -5,6 +5,10 @@ This intentionally imitates a curious human searching the wider web: products,
 reviews, videos, rumors, developer tools, research, optics, retail, community,
 manufacturer catalogs, and adjacent wearables. Classification happens after
 discovery, and nothing collected here is published automatically.
+
+The discovery boundary is intentionally permissive: classifier judgments are
+retained as metadata and passed downstream to editorial triage rather than used
+to erase observations before the desk can inspect them.
 """
 from __future__ import annotations
 
@@ -24,7 +28,7 @@ from knowledge_flow import CONTENT_TYPES, RELATIONSHIPS, enrich_candidate, term_
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "research" / "discovery-sources.json"
 OUTDIR = ROOT / "research" / "discovery-candidates"
-UA = "GlassesResearch-Discovery/2.0 (+https://glassesresearch.org/)"
+UA = "GlassesResearch-Discovery/2.1 (+https://glassesresearch.org/)"
 
 EXTRA_DIRECT_TERMS = (
     "maverick", "everysight", "inmo", "dymesty", "latitude52", "latitude 52",
@@ -279,22 +283,20 @@ def main() -> int:
 
     seen = prior_ids()
     new_items = [item for item in dedup.values() if item["id"] not in seen]
-    precision_rejected = sum(item["relationship"] == "irrelevant" for item in new_items)
-    ranked = [item for item in new_items if item["relationship"] != "irrelevant"]
+    classifier_irrelevant = sum(item["relationship"] == "irrelevant" for item in new_items)
+    ranked = list(new_items)
     ranked.sort(
         key=lambda item: (
+            item["relationship"] == "irrelevant",
             {"high": 0, "normal": 1, "low": 2}[item["triage_priority"]],
             -item["materiality_score"],
             item["title"].lower(),
         )
     )
-    ranked = ranked[:400]
+    ranked = ranked[:800]
 
     if not ranked:
-        print(
-            f"No new web-discovery candidates after classification; "
-            f"{precision_rejected} noise results rejected; {len(errors)} source errors"
-        )
+        print(f"No new web-discovery observations; {len(errors)} source errors")
         return 0
 
     now = dt.datetime.now(dt.timezone.utc)
@@ -318,10 +320,11 @@ def main() -> int:
             route_counts[route] = route_counts.get(route, 0) + 1
 
     payload = {
-        "schema": 2,
+        "schema": 3,
         "discovered_utc": now.isoformat(),
         "candidate_count": len(ranked),
-        "precision_rejected_count": precision_rejected,
+        "classifier_irrelevant_count": classifier_irrelevant,
+        "precision_rejected_count": 0,
         "channel_counts": dict(sorted(channel_counts.items())),
         "relationship_counts": relationship_counts,
         "type_counts": {key: value for key, value in type_counts.items() if value},
@@ -338,11 +341,11 @@ def main() -> int:
     lines = [
         f"# Web discovery intake — {day}",
         "",
-        f"Collected **{len(ranked)}** classified leads; rejected **{precision_rejected}** unrelated search results before review.",
+        f"Retained **{len(ranked)}** deduplicated search observations for downstream triage; the classifier marked **{classifier_irrelevant}** as likely irrelevant, but discovery did not erase them.",
         "",
-        "**Flow:** discover → classify → triage → verify → route → publish → deliver.",
+        "**Flow:** discover → retain → classify → triage → verify → route → publish → deliver.",
         "",
-        "**Rule:** discovery is not verification and never publishes automatically.",
+        "**Rule:** discovery is not verification. Classifier judgments prioritize downstream review; they do not authorize publication and they do not delete an observation at the discovery boundary.",
         "",
         "## Search surfaces",
         "",
@@ -374,8 +377,8 @@ def main() -> int:
         ]
     (OUTDIR / f"{day}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(
-        f"Collected {len(ranked)} web-discovery candidates; "
-        f"rejected_noise={precision_rejected}; relationships={relationship_counts}; "
+        f"Retained {len(ranked)} web-discovery observations; "
+        f"classifier_irrelevant={classifier_irrelevant}; relationships={relationship_counts}; "
         f"routes={route_counts}; {len(errors)} source errors"
     )
     return 0
