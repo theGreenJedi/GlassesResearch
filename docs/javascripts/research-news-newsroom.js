@@ -210,13 +210,25 @@
       renderTableFallback();
     });
 
-  fetch("/data/wire-state.json", { credentials: "same-origin" })
-    .then((response) => {
-      if (!response.ok) throw new Error(`wire state ${response.status}`);
-      return response.json();
-    })
+  const loadWireState = async () => {
+    // Prefer the live Worker-backed discovery wire. The checked-in JSON remains a
+    // deployment/failure fallback so the newsroom page degrades safely if the
+    // narrow Worker route is temporarily unavailable.
+    for (const endpoint of ["/wire", "/data/wire-state.json"]) {
+      try {
+        const response = await fetch(endpoint, { credentials: "same-origin" });
+        if (!response.ok) continue;
+        const state = await response.json();
+        if (state?.schema_version === 1 && Array.isArray(state.items)) return state;
+      } catch {
+        // Try the next read-only source.
+      }
+    }
+    throw new Error("wire state unavailable");
+  };
+
+  loadWireState()
     .then((state) => {
-      if (state?.schema_version !== 1 || !Array.isArray(state.items)) throw new Error("wire state malformed");
       const items = state.items
         .filter((item) => item && ["reported", "under_review"].includes(item.status) && item.title && item.url)
         .slice(0, 12);
