@@ -26,8 +26,27 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Validate review-state synchronization
+        run: python scripts/test_sync_wire_review_state.py
+
       - name: Pull current commodity search/news wheels
         run: python scripts/refresh_search_wire.py --output data/wire-state.json --max-items 18
+
+      - name: Reapply durable editorial review state
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git fetch origin knowledge-intake; then
+            if git show origin/knowledge-intake:research/news-reviews/queue.json > /tmp/news-review-queue.json 2>/dev/null; then
+              python scripts/sync_wire_review_state.py \
+                --wire data/wire-state.json \
+                --queue /tmp/news-review-queue.json
+            else
+              echo "No durable editorial queue available yet; leaving reports in discovery state."
+            fi
+          else
+            echo "Durable editorial branch unavailable; leaving reports in discovery state."
+          fi
 
       - name: Validate public wire contract
         run: python scripts/verify_wire_state.py --state data/wire-state.json

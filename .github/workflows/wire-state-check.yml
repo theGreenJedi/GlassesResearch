@@ -7,6 +7,12 @@ on:
       - "docs/javascripts/research-news-newsroom.js"
       - "docs/stylesheets/research-news-newsroom.css"
       - "scripts/verify_wire_state.py"
+      - "scripts/import_wire_news.py"
+      - "scripts/test_import_wire_news.py"
+      - "scripts/sync_wire_review_state.py"
+      - "scripts/test_sync_wire_review_state.py"
+      - ".github/workflows/hourly-news-intake.yml"
+      - ".github/workflows/search-wire.yml"
       - ".github/workflows/wire-state-check.yml"
   push:
     branches: [main]
@@ -15,6 +21,12 @@ on:
       - "docs/javascripts/research-news-newsroom.js"
       - "docs/stylesheets/research-news-newsroom.css"
       - "scripts/verify_wire_state.py"
+      - "scripts/import_wire_news.py"
+      - "scripts/test_import_wire_news.py"
+      - "scripts/sync_wire_review_state.py"
+      - "scripts/test_sync_wire_review_state.py"
+      - ".github/workflows/hourly-news-intake.yml"
+      - ".github/workflows/search-wire.yml"
       - ".github/workflows/wire-state-check.yml"
 
 permissions:
@@ -30,6 +42,24 @@ jobs:
           python-version: "3.x"
       - name: Validate wire state
         run: python scripts/verify_wire_state.py --state data/wire-state.json
+      - name: Validate wire-to-triage bridge
+        run: |
+          python scripts/test_import_wire_news.py
+          python scripts/import_wire_news.py --wire data/wire-state.json --output /tmp/wire-latest.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          payload = json.loads(Path('/tmp/wire-latest.json').read_text(encoding='utf-8'))
+          if payload.get('candidate_count') != len(payload.get('candidates', [])):
+              raise SystemExit('Wire bridge candidate count drifted')
+          if any(item.get('relationship') != 'direct' for item in payload.get('candidates', [])):
+              raise SystemExit('Wire bridge must hand reports to editorial triage as direct unverified leads')
+          if any(item.get('publication_eligible') is not True for item in payload.get('candidates', [])):
+              raise SystemExit('Wire reports must remain eligible for verification review')
+          print(f"Wire bridge fixture verified: candidates={payload.get('candidate_count', 0)}")
+          PY
+      - name: Validate editorial review-state projection
+        run: python scripts/test_sync_wire_review_state.py
       - name: Verify newsroom consumes the live wire with a static fallback
         run: |
           grep -q '/data/newsroom-state.json' docs/javascripts/research-news-newsroom.js

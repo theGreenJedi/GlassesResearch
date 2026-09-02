@@ -3,6 +3,13 @@ name: Hourly smart-glasses knowledge intake
 on:
   schedule:
     - cron: "17 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - "data/wire-state.json"
+      - "scripts/import_wire_news.py"
+      - "scripts/test_import_wire_news.py"
+      - ".github/workflows/hourly-news-intake.yml"
   workflow_dispatch:
 
 permissions:
@@ -41,8 +48,10 @@ jobs:
             git checkout -B knowledge-intake origin/main
           fi
 
-      - name: Validate classifier
-        run: python scripts/test_knowledge_flow.py
+      - name: Validate classifier and wire bridge
+        run: |
+          python scripts/test_knowledge_flow.py
+          python scripts/test_import_wire_news.py
 
       - name: Preserve previous same-day news snapshots
         shell: bash
@@ -57,8 +66,11 @@ jobs:
             fi
           done
 
-      - name: Collect recent news candidates
+      - name: Collect recent institutional news candidates
         run: python scripts/collect_daily_news.py
+
+      - name: Import current public wire into durable editorial intake
+        run: python scripts/import_wire_news.py --wire data/wire-state.json --output research/news-candidates/wire-latest.json
 
       - name: Persist durable institutional intake
         shell: bash
@@ -75,6 +87,7 @@ jobs:
             echo "### Knowledge intake"
             echo ""
             echo "The durable institutional queue is stored on the \`knowledge-intake\` branch."
-            echo "The public developing-news wire is refreshed separately from commodity search/news feeds."
-            echo "The former custom broad-web collector is no longer in the hourly publication-critical path."
+            echo "Commodity wire reports are imported into that queue as unverified candidates so discovery cannot stop at the public ticker."
+            echo "A visible wire change triggers this intake immediately; the hourly schedule remains a fallback."
+            echo "The public developing-news wire remains discovery-only; triage and publication authority stay downstream."
           } >> "$GITHUB_STEP_SUMMARY"
