@@ -3,7 +3,7 @@
 
 Direct canonical mutation is intentionally narrow. Pure news-only publication is
 handled by the canonical news actuators. This dispatcher makes every other
-second-gate-approved route produce a deterministic repository consequence without
+Editorial-authorized route produce a deterministic repository consequence without
 inventing identity, scores, lineage, release truth, or allowing partial publication.
 """
 from __future__ import annotations
@@ -225,7 +225,7 @@ def _markdown(record: dict[str, Any]) -> str:
 
 ## Safety boundary
 
-This action was generated only after the newsroom's second human publication gate. It is still not permission to invent a model identity, inherit lineage facts, infer a Report Card score, or convert Unknown into a positive Finder fact. Any canonical edit must satisfy the destination's existing repository validators and the normal PR merge gate.
+This action was generated only after explicit Editorial approval authorized the newsroom research/draft pipeline. It is still not permission to invent a model identity, inherit lineage facts, infer a Report Card score, or convert Unknown into a positive Finder fact. Any canonical edit must satisfy the destination's existing repository validators and the normal PR merge gate.
 """
 
 

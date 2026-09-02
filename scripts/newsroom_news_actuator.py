@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compile second-gate-approved news-only packages into canonical draft diffs.
+"""Compile Editorial-authorized news-only packages into canonical draft diffs.
 
 This actuator is intentionally conservative. It acts only when the approved canonical
 scope is exactly ``news.publish``. A package that also requires catalog, lineage,
@@ -20,6 +20,11 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
+
+# Historical envelope token retained for compatibility with packages already written
+# before the operator flow was simplified. It no longer denotes a second human gate.
+AUTHORIZED_ENVELOPE_STATE = "second_gate_approved"
+
 SAFE_ROUTES = {"news.publish"}
 GOOD_VERIFICATIONS = {"verified", "corroborated"}
 VALID_CHANGE_TYPES = {
@@ -88,8 +93,8 @@ def load_envelope(path: Path) -> tuple[str, dict[str, Any]]:
     if not isinstance(envelope, dict) or envelope.get("schema_version") != 1:
         raise ActuatorError(f"{path}: unsupported package envelope")
     package_id = text(envelope.get("package_id"), "package_id")
-    if envelope.get("state") != "second_gate_approved":
-        raise ActuatorError(f"{package_id}: package is not second-gate approved")
+    if envelope.get("state") != AUTHORIZED_ENVELOPE_STATE:
+        raise ActuatorError(f"{package_id}: package is not an authorized newsroom draft input")
     package = envelope.get("package")
     if not isinstance(package, dict):
         raise ActuatorError(f"{package_id}: package body missing")
@@ -221,7 +226,7 @@ def article_text(package_id: str, package: dict[str, Any], day: date, claims: li
     ]
     claims_md = "\n".join(f"- {str(claim.get('statement') or '').strip()}" for claim in claims)
     sources_md = "\n".join(f"- <{url}>" for url in urls)
-    why = reasons[0] if reasons else "The second publication gate marked this as a material GlassesResearch development."
+    why = reasons[0] if reasons else "The Editorial-authorized News Desk package marked this as a material GlassesResearch development."
     return f"""# {title}
 
 <!-- newsroom-package: {package_id} -->
@@ -241,7 +246,7 @@ def article_text(package_id: str, package: dict[str, Any], day: date, claims: li
 
 ## Evidence boundary
 
-This article is compiled only from claims that crossed the News Desk publication threshold and from evidence sources preserved in the second-gate-approved package. Conflicting, unverified, or lower-confidence claims are not promoted here. The repository pull-request review is the final publication gate.
+This article is compiled only from claims that crossed the News Desk publication threshold and from evidence sources preserved in the Editorial-authorized package. Conflicting, unverified, or lower-confidence claims are not promoted here. The repository pull-request review is the final publication gate.
 
 ## Sources
 
@@ -262,12 +267,12 @@ def review_text(package_id: str, package: dict[str, Any], article_rel: str, urls
 <!-- news_promotion_schema: 1 -->
 <!-- newsroom-package: {package_id} -->
 
-**Reviewer:** Live Editorial Desk second human gate; repository PR is the final publication gate  
+**Authority path:** Live Editorial Desk approval authorized research/draft preparation; repository PR is the final publication gate  
 **Candidate files surveyed:** `research/newsroom-packages/{package_id}.json`  
 **Total raw candidates considered:** 1  
 **Underlying developments after deduplication:** 1
 
-> **Collection is not publication.** This package crossed the semantic gate and the explicit human publication gate. The canonical diff still requires normal repository review and merge.
+> **Collection is not publication.** This package inherited the explicit Editorial approval that started the research/draft pipeline. The canonical diff still requires normal repository review and merge.
 
 ## Summary
 
@@ -291,7 +296,7 @@ def review_text(package_id: str, package: dict[str, Any], article_rel: str, urls
 - **One-year institution test:** yes
 - **Public-site eligible now:** yes, subject to repository PR review
 - **Disposition:** `publish`
-- **Reason for disposition:** second-gate-approved news-only promotion package
+- **Reason for disposition:** Editorial-authorized news-only promotion package
 - **Affected models:** {models}
 - **Affected lineages / platforms / resources:** none — this actuator refuses packages that request another canonical route rather than partially publishing them
 - **Canonical destinations:** {canonical}
@@ -310,7 +315,7 @@ def review_text(package_id: str, package: dict[str, Any], article_rel: str, urls
 ## Survey closeout
 
 - [x] Duplicate/syndicated handling occurred upstream in the News Desk.
-- [x] Public promotion passed the first editorial gate and second publication gate.
+- [x] Public promotion inherited the explicit Editorial approval that started the research/draft pipeline.
 - [x] Raw package and evidence-source references remain preserved.
 - [x] Publish decision identifies concrete canonical destinations.
 - [x] Normal repository review and merge remain mandatory before this draft becomes public.
@@ -425,7 +430,7 @@ def apply_package(root: Path, package_path: Path) -> tuple[str, str]:
         "state": "verified",
         "change_type": change_type,
         "verified_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "previous_state": "This second-gate-approved development was not yet represented as a verified canonical GlassesResearch publication.",
+        "previous_state": "This Editorial-authorized development was not yet represented as a verified canonical GlassesResearch publication.",
         "new_state": summary,
         "affected": {"model_ids": model_ids, "relationship_ids": []},
         "evidence_urls": urls,
@@ -526,11 +531,17 @@ def self_test() -> None:
         news = (root / "docs" / "RESEARCH_NEWS.md").read_text(encoding="utf-8")
         ledger_text = (root / "data" / "verified-changes.json").read_text(encoding="utf-8")
         ledger = json.loads(ledger_text)
+        article = next((root / "docs" / "news" / "articles").glob("*.md")).read_text(encoding="utf-8")
+        review = next((root / "research" / "news-reviews").glob("*.md")).read_text(encoding="utf-8")
+        assert "second human publication gate" not in article + review
+        assert "second publication gate" not in article + review
+        assert "Editorial-authorized" in article + review
         assert "newsroom-package: GRNP-TEST00000001" in news
         assert ledger["events"][-1]["id"] == "GRE-000002"
         assert ledger["events"][-1]["affected"]["model_ids"] == ["GLS-0001"]
         assert ledger["events"][-1]["publication"]["dispatch"] is True
         assert ledger["events"][-1]["alert_match"]["topics"] == ["release_availability"]
+        assert ledger["events"][-1]["previous_state"].startswith("This Editorial-authorized development")
         assert apply_package(root, package) == ("GRNP-TEST00000001", "already_applied")
 
     with tempfile.TemporaryDirectory() as directory:
