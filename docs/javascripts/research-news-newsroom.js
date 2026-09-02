@@ -211,18 +211,23 @@
     });
 
   const loadWireState = async () => {
-    // Prefer the live Worker-backed wire if it is healthy. The checked-in search-feed
-    // wire is the deliberately simple fallback and is independently refreshed.
+    // Prefer the live Worker-backed wire when it actually has stories. A valid but
+    // empty legacy response must not mask the independently refreshed search feed.
+    let emptyState = null;
     for (const endpoint of ["/wire", "/data/wire-state.json"]) {
       try {
         const response = await fetch(endpoint, { credentials: "same-origin" });
         if (!response.ok) continue;
         const state = await response.json();
-        if (state?.schema_version === 1 && Array.isArray(state.items)) return state;
+        if (state?.schema_version === 1 && Array.isArray(state.items)) {
+          if (state.items.length) return state;
+          emptyState ??= state;
+        }
       } catch {
         // Try the next read-only source.
       }
     }
+    if (emptyState) return emptyState;
     throw new Error("wire state unavailable");
   };
 
