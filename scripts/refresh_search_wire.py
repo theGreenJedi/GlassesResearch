@@ -5,6 +5,11 @@ GlassesResearch does not need to own web crawling. This collector deliberately u
 commodity discovery surfaces (Google News RSS and Bing News RSS), performs only the
 minimum normalization/deduplication needed for the public developing wire, and
 leaves verification/editorial judgment to GlassesResearch.
+
+Across the Wire is a recall-oriented discovery surface. Ordinary web/news search is
+the benchmark: retrieval should cast a broad net across generic, company, product,
+policy, research, accessibility, and market terms, while downstream editorial stages
+decide importance and verification.
 """
 from __future__ import annotations
 
@@ -24,6 +29,24 @@ QUERIES = (
     '"smart glasses"',
     '"AI glasses"',
     '"AR glasses"',
+    '"augmented reality glasses"',
+    '"Ray-Ban Meta"',
+    '"Meta glasses"',
+    'RayNeo glasses',
+    'XREAL glasses',
+    'Rokid glasses',
+    'VITURE glasses',
+    '"Even Realities" glasses',
+    'Vuzix glasses',
+    '"Snap Specs"',
+    'Snap smart glasses',
+    'Samsung smart glasses',
+    'Google smart glasses',
+    'Apple smart glasses',
+    'smart glasses privacy',
+    'smart glasses regulation',
+    'smart glasses accessibility',
+    'smart glasses research',
 )
 RELEVANCE_TERMS = (
     "smart glasses",
@@ -40,6 +63,10 @@ RELEVANCE_TERMS = (
     "even realities",
     "vuzix",
     "snap specs",
+    "snap smart glasses",
+    "samsung smart glasses",
+    "google smart glasses",
+    "apple smart glasses",
 )
 TECH_HOST_HINTS = (
     "theverge.com",
@@ -191,7 +218,7 @@ def load_previous(path: Path) -> tuple[dict, dict[str, str]]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=Path("data/wire-state.json"))
-    parser.add_argument("--max-items", type=int, default=18)
+    parser.add_argument("--max-items", type=int, default=72)
     args = parser.parse_args()
 
     now = dt.datetime.now(dt.timezone.utc)
