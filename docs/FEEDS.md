@@ -8,7 +8,7 @@ Use this feed when you want material that GlassesResearch has verified and publi
 
 <div class="follow-research__actions">
   <a class="md-button md-button--primary" href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fglassesresearch.org%2Ffeed.xml" target="_blank" rel="noopener noreferrer">Open in Feedly</a>
-  <a class="md-button" href="https://www.inoreader.com/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml" target="_blank" rel="noopener noreferrer">Open in Inoreader</a>
+  <a class="md-button" href="https://www.inoreader.com/?add_feed=https%3A%2F%2Fglassesresearch.org%2Ffeed.xml" target="_blank" rel="noopener noreferrer">Open in Inoreader</a>
   <button class="md-button" type="button" data-feed-copy data-feed-url="https://glassesresearch.org/feed.xml">Copy RSS URL</button>
   <a class="md-button" href="https://glassesresearch.org/feed.xml">Raw RSS</a>
   <a class="md-button" href="https://glassesresearch.org/feed.json">JSON Feed</a>
@@ -23,7 +23,7 @@ Use this feed when you want the fast-moving smart-glasses news wire. Items are s
 
 <div class="follow-research__actions">
   <a class="md-button md-button--primary" href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Open in Feedly</a>
-  <a class="md-button" href="https://www.inoreader.com/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Open in Inoreader</a>
+  <a class="md-button" href="https://www.inoreader.com/?add_feed=https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Open in Inoreader</a>
   <button class="md-button" type="button" data-feed-copy data-feed-url="https://glassesresearch.org/data/wire-feed.xml">Copy RSS URL</button>
   <a class="md-button" href="https://glassesresearch.org/data/wire-feed.xml">Raw RSS</a>
   <a class="md-button" href="https://glassesresearch.org/data/wire-feed.json">JSON Feed</a>
