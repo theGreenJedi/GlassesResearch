@@ -9,7 +9,10 @@ on:
       - "scripts/verify_wire_state.py"
       - "scripts/import_wire_news.py"
       - "scripts/test_import_wire_news.py"
+      - "scripts/sync_wire_review_state.py"
+      - "scripts/test_sync_wire_review_state.py"
       - ".github/workflows/hourly-news-intake.yml"
+      - ".github/workflows/search-wire.yml"
       - ".github/workflows/wire-state-check.yml"
   push:
     branches: [main]
@@ -20,7 +23,10 @@ on:
       - "scripts/verify_wire_state.py"
       - "scripts/import_wire_news.py"
       - "scripts/test_import_wire_news.py"
+      - "scripts/sync_wire_review_state.py"
+      - "scripts/test_sync_wire_review_state.py"
       - ".github/workflows/hourly-news-intake.yml"
+      - ".github/workflows/search-wire.yml"
       - ".github/workflows/wire-state-check.yml"
 
 permissions:
@@ -52,6 +58,8 @@ jobs:
               raise SystemExit('Wire reports must remain eligible for verification review')
           print(f"Wire bridge fixture verified: candidates={payload.get('candidate_count', 0)}")
           PY
+      - name: Validate editorial review-state projection
+        run: python scripts/test_sync_wire_review_state.py
       - name: Verify newsroom consumes the live wire with a static fallback
         run: |
           grep -q '/data/newsroom-state.json' docs/javascripts/research-news-newsroom.js
