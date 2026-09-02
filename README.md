@@ -78,6 +78,76 @@
   </div>
 </section>
 
+<section class="gr-section" aria-labelledby="gr-home-wire-title" data-home-wire>
+  <div class="gr-section-heading gr-heading-compact">
+    <div>
+      <p class="gr-kicker">Across the wire</p>
+      <h2 id="gr-home-wire-title">Developing now.</h2>
+    </div>
+    <a class="gr-text-link" href="docs/RESEARCH_NEWS/">Research &amp; News <span aria-hidden="true">→</span></a>
+  </div>
+  <p>Current source reports surfaced by web/news search. These are discovery signals, not verified GlassesResearch claims.</p>
+  <p class="gr-wire-feed-links"><strong>Follow Across the Wire:</strong> <a href="/data/wire-feed.xml">RSS</a> · <a href="https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Feedly</a> · <a href="https://www.inoreader.com/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Inoreader</a> · <a href="/data/wire-feed.json">JSON Feed</a></p>
+  <div id="gr-home-wire-list" class="gr-story-stack" aria-live="polite">
+    <p data-home-wire-status>Loading the current wire…</p>
+  </div>
+</section>
+
+<script>
+(() => {
+  const list = document.getElementById('gr-home-wire-list');
+  if (!list) return;
+
+  const escapeHtml = (value) => String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+
+  const displayDate = (value) => {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return '';
+    return new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }).format(date);
+  };
+
+  const loadWire = async () => {
+    let emptyState = null;
+    for (const endpoint of ['/wire', '/data/wire-state.json']) {
+      try {
+        const response = await fetch(endpoint, { credentials: 'same-origin', cache: 'no-store' });
+        if (!response.ok) continue;
+        const state = await response.json();
+        if (state?.schema_version !== 1 || !Array.isArray(state.items)) continue;
+        if (state.items.length) return state;
+        emptyState ??= state;
+      } catch (_) {}
+    }
+    return emptyState;
+  };
+
+  loadWire().then((state) => {
+    const items = (state?.items || [])
+      .filter((item) => item && ['reported', 'under_review'].includes(item.status) && item.title && item.url)
+      .slice(0, 8);
+
+    if (!items.length) {
+      list.innerHTML = '<p>The live wire is temporarily unavailable.</p>';
+      return;
+    }
+
+    list.innerHTML = items.map((item) => {
+      const status = item.status === 'under_review' ? 'Under review' : 'Reported';
+      const when = displayDate(item.published_at || item.discovered_at);
+      const meta = [status, item.publisher, when].filter(Boolean).map(escapeHtml).join(' · ');
+      return `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer"><span class="gr-story-tag">${meta}</span><strong>${escapeHtml(item.title)}</strong></a>`;
+    }).join('');
+  }).catch(() => {
+    list.innerHTML = '<p>The live wire is temporarily unavailable.</p>';
+  });
+})();
+</script>
+
 <section class="gr-section" aria-labelledby="gr-explore-title">
   <div class="gr-section-heading">
     <div>
