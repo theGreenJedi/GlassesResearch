@@ -87,6 +87,7 @@
     <a class="gr-text-link" href="docs/RESEARCH_NEWS/">Research &amp; News <span aria-hidden="true">→</span></a>
   </div>
   <p>Current source reports surfaced by web/news search. These are discovery signals, not verified GlassesResearch claims.</p>
+  <p class="gr-wire-feed-links"><strong>Follow Across the Wire:</strong> <a href="/data/wire-feed.xml">RSS</a> · <a href="https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Feedly</a> · <a href="https://www.inoreader.com/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Inoreader</a> · <a href="/data/wire-feed.json">JSON Feed</a></p>
   <div id="gr-home-wire-list" class="gr-story-stack" aria-live="polite">
     <p data-home-wire-status>Loading the current wire…</p>
   </div>
