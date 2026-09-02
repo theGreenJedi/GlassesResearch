@@ -10,6 +10,8 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 
 SITE = "https://glassesresearch.org"
+RSS_URL = f"{SITE}/data/wire-feed.xml"
+JSON_URL = f"{SITE}/data/wire-feed.json"
 
 
 def timestamp(value: str | None) -> datetime:
@@ -40,7 +42,7 @@ def build_json_feed(items: list[dict], output: Path) -> None:
         "version": "https://jsonfeed.org/version/1.1",
         "title": "GlassesResearch — Across the Wire",
         "home_page_url": f"{SITE}/#gr-home-wire-title",
-        "feed_url": f"{SITE}/wire/feed.json",
+        "feed_url": JSON_URL,
         "description": "Current smart-glasses source reports surfaced by web/news search. Items are discovery signals and are not verified GlassesResearch claims.",
         "language": "en-US",
         "items": [],
@@ -71,7 +73,7 @@ def build(wire: Path, output: Path) -> int:
     ET.SubElement(channel, "link").text = f"{SITE}/#gr-home-wire-title"
     ET.SubElement(channel, "description").text = "Current smart-glasses source reports surfaced by web/news search. Discovery signals only; not verified GlassesResearch claims."
     ET.SubElement(channel, "language").text = "en-us"
-    ET.SubElement(channel, "atom:link", {"href": f"{SITE}/wire/feed.xml", "rel": "self", "type": "application/rss+xml"})
+    ET.SubElement(channel, "atom:link", {"href": RSS_URL, "rel": "self", "type": "application/rss+xml"})
     ET.SubElement(channel, "lastBuildDate").text = email.utils.format_datetime(datetime.now(timezone.utc))
 
     for item in items:
@@ -96,7 +98,7 @@ def build(wire: Path, output: Path) -> int:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--wire", type=Path, default=Path("data/wire-state.json"))
-    parser.add_argument("--output", type=Path, default=Path(".site-src/wire/feed.xml"))
+    parser.add_argument("--output", type=Path, default=Path("data/wire-feed.xml"))
     args = parser.parse_args()
     count = build(args.wire, args.output)
     print(f"Across the Wire feeds built with {count} items: {args.output} + {args.output.with_suffix('.json')}")
