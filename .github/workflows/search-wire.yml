@@ -5,8 +5,10 @@ on:
     - cron: "*/30 * * * *"
   push:
     branches:
+      - main
       - knowledge-intake
     paths:
+      - ".github/workflows/search-wire.yml"
       - "research/news-reviews/queue.json"
   workflow_dispatch:
 
