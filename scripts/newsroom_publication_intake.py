@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pull second-gate-approved GlassesResearch newsroom packages into repository intake.
+"""Pull Editorial-authorized GlassesResearch newsroom packages into repository intake.
 
 This script deliberately does not publish canonical claims. It creates durable,
 idempotent package records that repository automation or a maintainer can turn into
@@ -19,6 +19,13 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_URL = "https://glassesresearch.org/api/newsroom/publication-queue"
 DEFAULT_OUTPUT = ROOT / "research" / "newsroom-packages"
+
+# Compatibility token only. The operating model changed to one explicit Editorial
+# approval followed by machine-prepared draft work and the final repository PR gate.
+# Keep the historical envelope value so already-ingested packages and actuators remain
+# interoperable; do not interpret this string as a current second human approval step.
+AUTHORIZED_ENVELOPE_STATE = "second_gate_approved"
+
 ALLOWED_DESTINATIONS = {
     "news.publish",
     "news.update_story",
@@ -189,19 +196,19 @@ def _markdown(package_id_value: str, package: dict[str, Any], source_url: str) -
     )
     return f"""# {package_id_value} — {package['title']}
 
-**State:** approved by the second human publication gate; not yet canonical publication  
+**State:** authorized by the Editorial research pipeline; not yet canonical publication  
 **Story key:** `{package['story_key']}`  
 **Beat:** `{package['beat']}`  
 **Confidence:** `{package['confidence']}`  
 **Queue source:** {source_url}
 
-> This package is an authorized publication input, not proof that the canonical repository was changed. Exact destination mapping, evidence checks, and repository validation remain mandatory before publication.
+> This package is an authorized draft input, not proof that the canonical repository was changed. Exact destination mapping, evidence checks, repository validation, and final PR review remain mandatory before publication.
 
 ## Current understanding
 
 {package['summary']}
 
-## Approved semantic routes
+## Authorized semantic routes
 
 {routes}
 
@@ -215,7 +222,7 @@ def _markdown(package_id_value: str, package: dict[str, Any], source_url: str) -
 
 ## Repository application checklist
 
-- [ ] Map every approved route to exact canonical repository path(s).
+- [ ] Map every authorized route to exact canonical repository path(s).
 - [ ] Verify source strength and claim wording against the underlying evidence.
 - [ ] Update every materially affected canonical layer, not only the public digest.
 - [ ] Produce/update the durable `research/news-reviews/` editorial record.
@@ -244,7 +251,7 @@ def ingest(payload: dict[str, Any], output_dir: Path, source_url: str) -> list[s
         envelope = {
             "schema_version": 1,
             "package_id": pid,
-            "state": "second_gate_approved",
+            "state": AUTHORIZED_ENVELOPE_STATE,
             "source_queue": source_url,
             "ingested_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
             "package": package,
@@ -304,8 +311,12 @@ def self_test() -> None:
         first = ingest(fixture, output, "https://example.com/queue")
         second = ingest(fixture, output, "https://example.com/queue")
         assert len(first) == 1 and second == []
-        assert (output / f"{first[0]}.json").is_file()
-        assert "not yet canonical publication" in (output / f"{first[0]}.md").read_text(encoding="utf-8")
+        envelope = json.loads((output / f"{first[0]}.json").read_text(encoding="utf-8"))
+        assert envelope["state"] == AUTHORIZED_ENVELOPE_STATE
+        markdown = (output / f"{first[0]}.md").read_text(encoding="utf-8")
+        assert "authorized by the Editorial research pipeline" in markdown
+        assert "second human publication gate" not in markdown
+        assert "not yet canonical publication" in markdown
     print("Newsroom publication intake self-test passed")
 
 
@@ -329,9 +340,9 @@ def main() -> int:
         return 1
 
     if created:
-        print(f"Ingested {len(created)} approved newsroom package(s): {', '.join(created)}")
+        print(f"Ingested {len(created)} Editorial-authorized newsroom package(s): {', '.join(created)}")
     else:
-        print("No new approved newsroom publication packages.")
+        print("No new Editorial-authorized newsroom draft packages.")
     return 0
 
 
