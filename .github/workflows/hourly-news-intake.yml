@@ -15,7 +15,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v6
         with:
@@ -44,7 +44,7 @@ jobs:
       - name: Validate classifier
         run: python scripts/test_knowledge_flow.py
 
-      - name: Preserve previous same-day snapshot
+      - name: Preserve previous same-day news snapshots
         shell: bash
         run: |
           set -euo pipefail
@@ -57,23 +57,24 @@ jobs:
             fi
           done
 
-      - name: Discover, classify, triage, and route recent candidates
+      - name: Collect recent news candidates
         run: python scripts/collect_daily_news.py
 
-      - name: Persist durable intake queue
+      - name: Persist durable institutional intake
         shell: bash
         run: |
           set -euo pipefail
           git add research/news-candidates
           if ! git diff --cached --quiet; then
             STAMP="$(TZ=America/New_York date +%Y-%m-%d-%H%M)"
-            git commit -m "Persist classified smart-glasses intake ${STAMP} ET"
+            git commit -m "Persist smart-glasses institutional intake ${STAMP} ET"
           fi
           git push origin HEAD:knowledge-intake
 
           {
             echo "### Knowledge intake"
             echo ""
-            echo "The durable queue is stored on the \`knowledge-intake\` branch."
-            echo "Collection is not publication; candidates carry relationship, type, triage, and routing metadata before editorial review."
+            echo "The durable institutional queue is stored on the \`knowledge-intake\` branch."
+            echo "The public developing-news wire is refreshed separately from commodity search/news feeds."
+            echo "The former custom broad-web collector is no longer in the hourly publication-critical path."
           } >> "$GITHUB_STEP_SUMMARY"
