@@ -30,10 +30,10 @@ jobs:
           python-version: "3.x"
       - name: Validate wire state
         run: python scripts/verify_wire_state.py --state data/wire-state.json
-      - name: Verify newsroom consumes separate wire state
+      - name: Verify newsroom consumes the live wire with a static fallback
         run: |
           grep -q '/data/newsroom-state.json' docs/javascripts/research-news-newsroom.js
-          grep -q '/data/wire-state.json' docs/javascripts/research-news-newsroom.js
+          grep -q 'for (const endpoint of \["/wire", "/data/wire-state.json"\])' docs/javascripts/research-news-newsroom.js
           grep -q 'Across the wire' docs/javascripts/research-news-newsroom.js
           grep -q 'not verified GlassesResearch claims' data/wire-state.json
       - name: Verify newsroom JavaScript syntax
