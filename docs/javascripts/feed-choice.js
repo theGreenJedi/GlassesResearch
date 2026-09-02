@@ -3,7 +3,7 @@
   const WIRE = "https://glassesresearch.org/data/wire-feed.xml";
   const FEEDLY_OLD_PREFIX = "https://feedly.com/i/discover/sources/search/feed/";
   const FEEDLY_PREFIX = "https://feedly.com/i/subscription/feed%2F";
-  const INOREADER_PREFIX = "https://www.inoreader.com/feed/";
+  const INOREADER_PREFIX = "https://www.inoreader.com/?add_feed=";
 
   const feedlyUrl = (feedUrl) => `${FEEDLY_PREFIX}${encodeURIComponent(feedUrl)}`;
   const inoreaderUrl = (feedUrl) => `${INOREADER_PREFIX}${encodeURIComponent(feedUrl)}`;
