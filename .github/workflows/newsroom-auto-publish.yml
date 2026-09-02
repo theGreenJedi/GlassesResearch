@@ -1,0 +1,142 @@
+name: Auto-publish bounded verified newsroom news
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/newsroom_autopublish_gate.py'
+      - 'scripts/newsroom_publication_intake.py'
+      - 'scripts/newsroom_news_actuator.py'
+      - '.github/workflows/newsroom-auto-publish.yml'
+  schedule:
+    - cron: '8,18,28,38,48,58 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: newsroom-auto-publish
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/newsroom_autopublish_gate.py --self-test
+      - run: python scripts/newsroom_publication_intake.py --self-test
+      - run: python scripts/newsroom_news_actuator.py --self-test
+
+  publish:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    env:
+      QUEUE_URL: https://glassesresearch.org/api/newsroom/publication-queue
+      OIDC_AUDIENCE: glassesresearch-newsroom-publication
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure writer
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Pull approved queue
+        shell: bash
+        run: |
+          set -euo pipefail
+          oidc_json="$(curl --fail --silent --show-error -H "Authorization: Bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=${OIDC_AUDIENCE}")"
+          oidc_token="$(python -c 'import json,sys; print(json.load(sys.stdin)["value"])' <<<"${oidc_json}")"
+          test -n "${oidc_token}"
+          echo "::add-mask::${oidc_token}"
+          curl --fail --silent --show-error --location --max-time 30 -H 'Accept: application/json' -H "Authorization: Bearer ${oidc_token}" "${QUEUE_URL}" -o /tmp/newsroom-queue.json
+
+      - name: Gate packages
+        id: gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/newsroom_autopublish_gate.py --input /tmp/newsroom-queue.json --output /tmp/auto-queue.json --report /tmp/auto-report.json
+          count="$(python -c "import json; print(json.load(open('/tmp/auto-report.json'))['eligible_count'])")"
+          echo "count=${count}" >> "$GITHUB_OUTPUT"
+
+      - name: Build bounded publication diff
+        if: steps.gate.outputs.count != '0'
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="automation/newsroom-auto-publish-${GITHUB_RUN_ID}"
+          git checkout -b "$branch"
+          echo "$branch" > /tmp/branch
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from scripts.newsroom_publication_intake import ingest
+          payload=json.load(open('/tmp/auto-queue.json', encoding='utf-8'))
+          ingest(payload, Path('research/newsroom-packages'), 'automatic-publication-gate')
+          PY
+          python - <<'PY' > /tmp/eligible-ids.txt
+          import json
+          for value in json.load(open('/tmp/auto-report.json'))['eligible_ids']:
+              print(value)
+          PY
+          while IFS= read -r package_id; do
+            python scripts/newsroom_news_actuator.py --package "research/newsroom-packages/${package_id}.json"
+          done < /tmp/eligible-ids.txt
+          git add -A -- research/newsroom-packages research/news-reviews docs/RESEARCH_NEWS.md docs/news/articles data/verified-changes.json
+
+      - name: Prove bounded scope and validate
+        if: steps.gate.outputs.count != '0'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import subprocess
+          exact={'docs/RESEARCH_NEWS.md','data/verified-changes.json'}
+          prefixes=('research/newsroom-packages/','research/news-reviews/','docs/news/articles/')
+          paths=subprocess.check_output(['git','diff','--cached','--name-only'], text=True).splitlines()
+          bad=[p for p in paths if p not in exact and not p.startswith(prefixes)]
+          if bad: raise SystemExit('automatic publication escaped bounded paths: '+', '.join(bad))
+          print('Bounded paths verified: '+', '.join(paths))
+          PY
+          python scripts/verified_changes.py
+          python scripts/verify_news_promotion.py --self-test
+          python scripts/audit_public_editorial.py
+
+      - name: Commit and push candidate
+        if: steps.gate.outputs.count != '0'
+        id: commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m 'Publish strongly verified newsroom news'
+          git fetch origin main
+          git rebase origin/main
+          python scripts/verified_changes.py
+          python scripts/verify_news_promotion.py --self-test
+          python scripts/audit_public_editorial.py
+          git push --set-upstream origin "$(cat /tmp/branch)"
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+
+      - name: Open automatic publication PR and request auto-merge
+        if: steps.gate.outputs.count != '0' && steps.commit.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="$(cat /tmp/branch)"
+          pr="$(gh pr create --base main --head "$branch" --title 'Auto-publish strongly verified newsroom news' --body $'This PR was produced by the bounded automatic-news lane. Eligibility requires an exact news.publish route, high story and claim confidence, no privacy/policy or rumor beat, and either primary evidence or independent corroboration. The workflow validates the canonical news surfaces and refuses any diff outside the bounded publication paths. Mixed-route and higher-risk work remains in the human-gated intelligence PR.')"
+          gh pr merge "$pr" --auto --squash --delete-branch
+          echo "Automatic publication PR queued for merge: $pr"
