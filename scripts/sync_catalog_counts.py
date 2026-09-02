@@ -90,16 +90,13 @@ def sync_the_list(text: str) -> str:
 def sync_models_readme(text: str, count: int) -> str:
     # Replace prose that is intended to report the current active canonical total,
     # while preserving historical milestone numbers such as the original 145 reconciliation size.
-    text = re.sub(
-        r"(returns the active canonical count to \*\*)\d+(\*\*)",
-        rf"\g<1>{count}\g<2>",
-        text,
+    current_count_patterns = (
+        (r"(returns the active canonical count to \*\*)\d+(\*\*)", rf"\g<1>{count}\g<2>"),
+        (r"(active canonical count is now \*\*)\d+(\*\*)", rf"\g<1>{count}\g<2>"),
+        (r"(\*\*every one of the )\d+( active canonical smart-glasses records\*\*)", rf"\g<1>{count}\g<2>"),
     )
-    text = re.sub(
-        r"(\*\*every one of the )\d+( active canonical smart-glasses records\*\*)",
-        rf"\g<1>{count}\g<2>",
-        text,
-    )
+    for pattern, replacement in current_count_patterns:
+        text = re.sub(pattern, replacement, text)
     return text
 
 
