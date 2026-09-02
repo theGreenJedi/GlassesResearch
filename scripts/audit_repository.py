@@ -49,17 +49,24 @@ def clean_target(raw: str) -> str:
 
 
 def site_root_candidate(root: Path, relative: str) -> Path:
-    """Map a clean site URL such as /docs/BLE/ back to repository Markdown."""
+    """Map a clean site URL back to source Markdown or a staged generated page."""
     clean = relative.lstrip("/").rstrip("/")
-    candidate = root / clean
-    if candidate.is_dir():
-        return candidate / "README.md"
-    if candidate.exists():
-        return candidate
-    markdown_candidate = root / f"{clean}.md"
-    if markdown_candidate.exists():
-        return markdown_candidate
-    return candidate
+    # prepare_site.py runs before the repository audit in CI and materializes
+    # generated public pages (for example Report Card Freshness) under
+    # .site-src. Source-authored links may legitimately target those pages even
+    # though no hand-authored Markdown file exists at the repository root.
+    for base in (root, root / ".site-src"):
+        candidate = base / clean
+        if candidate.is_dir():
+            readme = candidate / "README.md"
+            if readme.exists():
+                return readme
+        if candidate.exists():
+            return candidate
+        markdown_candidate = base / f"{clean}.md"
+        if markdown_candidate.exists():
+            return markdown_candidate
+    return root / clean
 
 
 def audit_markdown(root: Path) -> tuple[list[Finding], set[str]]:

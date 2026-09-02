@@ -1,8 +1,8 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "score_min": 0,
   "score_max": 10,
-  "semantics": "Evidence-backed curated Core Report Card scores. Omit a score when evidence is insufficient; unknown is never converted to zero.",
+  "semantics": "Evidence-backed curated Core Report Card scores. Omit a score when evidence is insufficient; unknown is never converted to zero. Every resolved curated score must be an object containing score, provenance, confidence, and verified_at (YYYY-MM-DD).",
   "dimensions": [
     "discreetness",
     "camera",
@@ -11,5 +11,11 @@
     "owner_control",
     "android_compatibility"
   ],
+  "score_object_contract": {
+    "score": "number 0-10 or na",
+    "provenance": "source or evidence-basis identifier",
+    "confidence": "evidence-confidence label",
+    "verified_at": "YYYY-MM-DD date when the evidence supporting this specific score was last re-checked"
+  },
   "records": []
 }
