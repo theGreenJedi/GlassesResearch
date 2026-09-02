@@ -84,7 +84,7 @@
       <p class="gr-kicker">Across the wire</p>
       <h2 id="gr-home-wire-title">Developing now.</h2>
     </div>
-    <a class="gr-text-link" href="docs/RESEARCH_NEWS/#gr-wire">Research &amp; News <span aria-hidden="true">→</span></a>
+    <a class="gr-text-link" href="docs/RESEARCH_NEWS/">Research &amp; News <span aria-hidden="true">→</span></a>
   </div>
   <p>Current source reports surfaced by web/news search. These are discovery signals, not verified GlassesResearch claims.</p>
   <div id="gr-home-wire-list" class="gr-story-stack" aria-live="polite">
