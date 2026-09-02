@@ -1,0 +1,47 @@
+name: Refresh developing news wire
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: search-wire-writer
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Pull current commodity search/news wheels
+        run: python scripts/refresh_search_wire.py --output data/wire-state.json --max-items 18
+
+      - name: Validate public wire contract
+        run: python scripts/verify_wire_state.py --state data/wire-state.json
+
+      - name: Publish only when the visible wire changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/wire-state.json; then
+            echo "No developing-wire change."
+            exit 0
+          fi
+          git config user.name "glassesresearch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/wire-state.json
+          git commit -m "Refresh developing smart-glasses wire"
+          git push origin HEAD:main
