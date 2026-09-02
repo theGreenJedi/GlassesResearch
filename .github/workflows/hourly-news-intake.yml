@@ -44,42 +44,37 @@ jobs:
       - name: Validate classifier
         run: python scripts/test_knowledge_flow.py
 
-      - name: Preserve previous same-day snapshots
+      - name: Preserve previous same-day news snapshots
         shell: bash
         run: |
           set -euo pipefail
           DATE="$(date -u +%F)"
           STAMP="$(date -u +%Y-%m-%dT%H%M%SZ)"
-          for DIR in research/news-candidates research/discovery-candidates; do
-            for EXT in json md; do
-              SRC="${DIR}/${DATE}.${EXT}"
-              if [ -f "$SRC" ]; then
-                mv "$SRC" "${DIR}/${STAMP}.${EXT}"
-              fi
-            done
+          for EXT in json md; do
+            SRC="research/news-candidates/${DATE}.${EXT}"
+            if [ -f "$SRC" ]; then
+              mv "$SRC" "research/news-candidates/${STAMP}.${EXT}"
+            fi
           done
 
       - name: Collect recent news candidates
         run: python scripts/collect_daily_news.py
 
-      - name: Collect ordinary-web discovery candidates
-        run: python scripts/collect_web_discovery.py
-
-      - name: Persist durable intake queue
+      - name: Persist durable institutional intake
         shell: bash
         run: |
           set -euo pipefail
-          git add research/news-candidates research/discovery-candidates
+          git add research/news-candidates
           if ! git diff --cached --quiet; then
             STAMP="$(TZ=America/New_York date +%Y-%m-%d-%H%M)"
-            git commit -m "Persist high-recall smart-glasses intake ${STAMP} ET"
+            git commit -m "Persist smart-glasses institutional intake ${STAMP} ET"
           fi
           git push origin HEAD:knowledge-intake
 
           {
             echo "### Knowledge intake"
             echo ""
-            echo "The durable queue is stored on the \`knowledge-intake\` branch."
-            echo "Hourly intake now combines recent-news feeds with the existing ordinary-web discovery collector before editorial triage."
-            echo "Collection is not publication; candidates carry relationship, type, triage, and routing metadata before editorial review."
+            echo "The durable institutional queue is stored on the \`knowledge-intake\` branch."
+            echo "The public developing-news wire is refreshed separately from commodity search/news feeds."
+            echo "The former custom broad-web collector is no longer in the hourly publication-critical path."
           } >> "$GITHUB_STEP_SUMMARY"
