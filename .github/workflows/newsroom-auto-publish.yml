@@ -131,12 +131,12 @@ jobs:
           git push --set-upstream origin "$(cat /tmp/branch)"
           echo 'changed=true' >> "$GITHUB_OUTPUT"
 
-      - name: Open automatic publication PR and request auto-merge
+      - name: Open and merge automatic publication PR
         if: steps.gate.outputs.count != '0' && steps.commit.outputs.changed == 'true'
         shell: bash
         run: |
           set -euo pipefail
           branch="$(cat /tmp/branch)"
           pr="$(gh pr create --base main --head "$branch" --title 'Auto-publish strongly verified newsroom news' --body $'This PR was produced by the bounded automatic-news lane. Eligibility requires an exact news.publish route, high story and claim confidence, no privacy/policy or rumor beat, and either primary evidence or independent corroboration. The workflow validates the canonical news surfaces and refuses any diff outside the bounded publication paths. Mixed-route and higher-risk work remains in the human-gated intelligence PR.')"
-          gh pr merge "$pr" --auto --squash --delete-branch
-          echo "Automatic publication PR queued for merge: $pr"
+          gh pr merge "$pr" --squash --delete-branch
+          echo "Automatic publication merged through repository rules: $pr"
