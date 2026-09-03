@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-03T08:20:19.434234+00:00`
+Generated: `2026-09-03T09:14:13.196101+00:00`
 
 - Intake files inspected: **146**
 - Candidates retained in this review window/history: **779**
@@ -12,9 +12,9 @@ Generated: `2026-09-03T08:20:19.434234+00:00`
 - `catalog_review`: 2
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 298
+- `needs_editorial_verification`: 299
 - `rejected_noise`: 3
-- `source_review`: 60
+- `source_review`: 59
 - `watching`: 48
 
 ## Action queue
@@ -268,9 +268,9 @@ Generated: `2026-09-03T08:20:19.434234+00:00`
 | normal | needs_editorial_verification | direct | [Snapdragon AR1 vs XR2: Which Chip Is Actually Better for Smart Glasses in 2026? - BBN Times](https://news.google.com/rss/articles/CBMiswFBVV95cUxPZk1DLVRyUjNFWDhEX2taM0FudHY0QnJXMnFkUzhoampnMUFPT01DMGFJTTV2aDlUWm5MeEdnTXF2ZE9PVjV3Nmc5MHJKaW5qSDJacm9BUHQ4UktQMlE5aENvYXVwcGtVTjBLZmtGdHlGd2ZTdnV0MzJOblZPSkdFSGMxRVpTVHU4aDRTanA3eVViWXVack1qLVBpd0d0M3Q4TEp4TXFTTkV5cmptaDdhcllXaw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [THE HACK: Meta AI glasses face privacy pushback - euractiv.com](https://news.google.com/rss/articles/CBMigwFBVV95cUxOUUFMMGRFXzNtc09PVTZFZTB4cDFKX1hONnBDQWhBdllObmYza2VISlBIOXBjSUxDVGFPRUVOckFJaUp1bTJrcDdlV29YWEtqVDBMVEUyM2h2MGg1WmJDcGNmODVmMXIwdVBWM1ljdFphbUpfbjNZMmNGZlRwQUNUX3p5SQ?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Timekettle Expands AI Ecosystem with Babel OS 3.0, Powering Real-Time Translation on RayNeo iO Smart Glasses - AiThority](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNVM3WGdNVG1wVElFeGhnQUx3TG95ZEVySnFzampadmdZMy14RXI0YVBfUTZUZVNrd1JMd2kzMFFibFhDMFFWdnNpOWJzWi1iTmtNeGJtT0pmTVhFZHRZc1RKV0RqakRMWFpFVVlZNkdQMnQ5b1hMVU1wb1dNSnBCMUQ3YjlTbE43M00yRDhsbHBaVloxVDlYNXZ5ckhsVlFGRWVOT1VlcEs3SF8ydnFuU0l4S2FXM0IyVTRRSHlkbHlET1FPNHpOYUl2S1hvTlBVa2hDT1FDQjFCMmtScnlqSQ?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Top Smart Glasses for the Visually Impaired (2026): eSight, Envision ...](https://www.onedaymd.com/2026/01/top-smart-glasses-for-visually-impaired.html) | reachable (200) | research_news_review, deep_research |
 | normal | needs_editorial_verification | direct | [TOZO AIVU AI Glasses Surpass $100,000 on Kickstarter with Tinted Waveguide Innovation - ACCESS Newswire](https://news.google.com/rss/articles/CBMi5AFBVV95cUxNc0tsaHB1RUFIU2NtZEhuanhMSHFrTU9VSTktMFFrblVqdWdQeUNQQktGRkN3V2R6X0dkWWgzS05DcTNURDlZd1NtZXVUcWRNakphNFdLWUpTOUROdzVFY2kwM2M1ZzJ0Rkd2SjEwRjJvZi1BMzJWSmJIbk04OFp3ZHFkZ2ZvSmRvVE1xXzRuWFhoYkMxQmhGOUpBZExNMEtNZFE5VkQwVG5PRVU0RUlkVVJBY2hiUm53S09McEtoY3lIZmpYcDFFQjRuYU1pMFFRTVktNUU3bmJQM05wZXJ3ZEJ1alA?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [TOZO AIVU AI Glasses Surpass $100,000 on Kickstarter with Tinted Waveguide Innovation - citynewsokc.com](https://news.google.com/rss/articles/CBMingJBVV95cUxQVTJldUpSMjRuWTVsRmx5YU5jd19Zc3l4MTBzX0Qyakk0OGJoY3pFemQ5bWRQYUphQVg3dUNOUzRVU2dmYmxyRmxPRmNFRkJYckhEVEZhVDhJZmlRUDNCVnUyZWdURjZhSHpkckJWTi1waFlOcnlOVWxrLTBzYnhTdmJOdERaSzNFNXpwWGkzUnJScVhwSWg2YUp1eXNfTmVkYUF2OWZCbXpRa3RkcmRzeFJISGVEYVNfQW8xYk52UnI4NF9xQ3pFbkZpMC1Qb3Z1Nmxxd2tvOHAtODlzOXNFZEZQRTVUSjVLNGZnSVdNZDl4Mjh6ckpuZG5EVUg1WkFjb09CaVRqMjNYWnFwMEhnRE52eTNFdWh6TDh3TUFB?oc=5) | reachable (200) | research_news_review, research_optics |
-| normal | needs_editorial_verification | direct | [TOZO AIVU AI Glasses Surpass $100,000 on Kickstarter with Tinted Waveguide Innovation - deltanews.tv](https://news.google.com/rss/articles/CBMimgJBVV95cUxQZXRPR1k3aWl4V3Zhb2xkcXkzWmxYUmYzU3lpV1hrNmEtMTh1ejNtdU42OXBBREsxeVgzZTlGN0ZoZ3gzSl8xaG5teVZYRXJqMVhWZW0wNkhuVzRvVFJTeXhLenhuWmpfX1NuVko0WUM2a1lic214a0NlZVkxZlE1d0Z3VUZ5eU4tT2dQTVJZc2xPR1pVcXp5ZVZBSmhXbzlvekU0ZlU1d01sSkMydTg5YU9HS2xjZlBxTjUxR3dkYllHNzc1V3RiQWRUVGRuaEN3c0RBNDRQR3ZPRDVNUGN0OHN5S094UEpObmxpekxsVDAwdWIzX1p6VDcwVkpYSGxOOTJZNU9Kd25PNi1UTjl4VE5UQUdxbjdyaXc?oc=5) | reachable (200) | research_news_review, research_optics |
 
 ## Meaning of states
 
