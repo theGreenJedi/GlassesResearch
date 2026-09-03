@@ -1,8 +1,8 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-08-28
+**Edition:** 2026-09-03
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 165 distinct purchasable models or explicitly marketed product generations
+**Count:** 169 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -287,6 +287,26 @@ These rows were already approved in dated reconciliation packets. This section i
 |---|---|---:|---:|---|---|---|---|
 | GLS-0166 | Nimbo | X1 | ≤2026 | preorder/crowdfunding | full-color AR / camera AI glasses | preorder/Kickstarter | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-28_NIMBO_X1.md); [source](https://nimbopearl.com/campaign/) |
 
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0167 | Meizu / DreamSmart / MYVU | MYVU Air / StarV Air (XGA010C) | ≤2026 | current/region-limited | binocular discreet display / audio | manufacturer/retail/marketplace | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-03_MYVU_STARV.md); [source](https://m.meizu.com/global/product/starv-air/specs ; official XGA010C manual) |
+| GLS-0168 | Meizu / DreamSmart / StarV | StarV Air2 | ≤2026 | current/region-limited | binocular discreet display / audio | manufacturer/retail/marketplace | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-03_MYVU_STARV.md); [source](https://www.meizu.com/global/product/starv-air2/specs) |
+
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0169 | Goodway / shared HeyCyan OEM ecosystem | W640 | ≤2026 | current/OEM-retail | camera/audio AI glasses | OEM/sample/commercial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-03_W640_W650.md); [source](https://www.goodwaytechs.com/goodway-ai-smart-glasses-8mp-sony-cam-ai-translation-hd-video-w640.html) |
+| GLS-0170 | Goodway / shared HeyCyan OEM ecosystem | W650 | ≤2026 | current/OEM-retail | camera/audio AI glasses | OEM/sample/commercial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-03_W640_W650.md); [source](https://www.goodwaytechs.com/goodway-ai-camera-glasses-hands-free-1080p-video-recording-eyewear-with-ai-assistant-w650.html) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -299,7 +319,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 165-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 169-row count:
 
 - Snap SPECS (2026): order intent is tracked, but the final purchasable SKU and delivery evidence still need reconciliation.
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.

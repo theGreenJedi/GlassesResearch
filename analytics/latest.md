@@ -1,63 +1,65 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-09-01T12:34:43+00:00**
+Generated automatically: **2026-09-03T12:06:29+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-08-24 → 2026-08-30):** 155 impressions, 1 clicks, 0.65% CTR, average position 31.1.
-- **7-day change:** impressions -68.4%; clicks -66.7%.
-- **Rolling 28 days:** 1542 impressions, 4 clicks, 0.26% CTR, average position 32.8.
+- **Google, latest final 7 days (2026-08-26 → 2026-09-01):** 199 impressions, 3 clicks, 1.51% CTR, average position 28.0.
+- **7-day change:** impressions -33.0%; clicks +50.0%.
+- **Rolling 28 days:** 1632 impressions, 6 clicks, 0.37% CTR, average position 32.3.
 
 ## Google — top queries
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| ai glasses timeline | 0 | 1 | 0.00% | 14.0 |
-| ar eyeglass development case study | 0 | 12 | 0.00% | 56.1 |
+| ai glasses timeline | 0 | 3 | 0.00% | 21.0 |
+| ar eyeglass development case study | 0 | 14 | 0.00% | 51.9 |
+| device db | 0 | 1 | 0.00% | 36.0 |
 | first camera glasses | 0 | 1 | 0.00% | 55.0 |
 | future of smart glasses ownership | 0 | 2 | 0.00% | 18.5 |
 | glasses datasets | 0 | 1 | 0.00% | 55.0 |
-| history of smart glasses | 0 | 2 | 0.00% | 57.0 |
+| history of smart glasses | 0 | 1 | 0.00% | 59.0 |
 | mentra mach 1 | 0 | 1 | 0.00% | 39.0 |
 | mentra mach1 | 0 | 1 | 0.00% | 37.0 |
+| when did smart glasses come out | 0 | 1 | 0.00% | 66.0 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/ | 1 | 6 | 16.67% | 16.8 |
-| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 5 | 0.00% | 9.2 |
+| https://glassesresearch.org/ | 1 | 6 | 16.67% | 17.0 |
+| https://glassesresearch.org/docs/Firmware/ | 1 | 1 | 100.00% | 3.0 |
+| https://glassesresearch.org/glossary/components/CMP-0001-jl7018f/ | 1 | 2 | 50.00% | 2.5 |
+| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 8 | 0.00% | 8.4 |
 | https://glassesresearch.org/docs/ABOUT/ | 0 | 1 | 0.00% | 7.0 |
-| https://glassesresearch.org/docs/BLE/ | 0 | 1 | 0.00% | 3.0 |
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 3 | 0.00% | 5.7 |
-| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 43 | 0.00% | 57.6 |
-| https://glassesresearch.org/docs/INSTITUTIONAL_COLLECTIONS/ | 0 | 1 | 0.00% | 3.0 |
+| https://glassesresearch.org/docs/BLE/ | 0 | 2 | 0.00% | 2.0 |
+| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 4 | 0.00% | 6.8 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 48 | 0.00% | 55.3 |
+| https://glassesresearch.org/docs/INVESTIGATION_WORKFLOW/ | 0 | 1 | 0.00% | 2.0 |
 | https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 2 | 0.00% | 5.0 |
-| https://glassesresearch.org/docs/SDK/ | 0 | 1 | 0.00% | 74.0 |
-| https://glassesresearch.org/docs/SEO_DISCOVERABILITY/ | 0 | 2 | 0.00% | 4.0 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **3,235 requests**, **524 HTTP visits**, **43.7 MB** served.
-- Rolling 7d: **22,838 requests**, **4,164 HTTP visits**, **270.2 MB** served.
+- Rolling 24h: **11,463 requests**, **1,263 HTTP visits**, **214.5 MB** served.
+- Rolling 7d: **35,041 requests**, **5,815 HTTP visits**, **533.5 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 2,084 | 391 |
-| GB | 269 | 25 |
-| DE | 179 | 14 |
-| NL | 139 | 5 |
-| CA | 111 | 11 |
-| PL | 69 | 6 |
-| RO | 67 | 1 |
-| CL | 50 | 0 |
-| IE | 38 | 0 |
-| CN | 37 | 8 |
+| US | 10,076 | 891 |
+| NL | 672 | 20 |
+| FR | 218 | 149 |
+| GB | 147 | 35 |
+| DE | 57 | 42 |
+| SA | 55 | 2 |
+| CN | 33 | 12 |
+| PL | 28 | 19 |
+| MX | 25 | 8 |
+| SG | 21 | 8 |
 
 ## What to watch
 

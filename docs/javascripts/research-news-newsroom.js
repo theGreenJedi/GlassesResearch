@@ -30,7 +30,7 @@
   hero.className = "gr-newsroom-hero";
   hero.innerHTML = `
     <div class="gr-newsroom-kicker">GlassesResearch Intelligence Desk</div>
-    <p class="gr-newsroom-deck">The current smart-glasses beat: verified developments, developing reports, emerging convergence, research gaps, hands-on evidence, policy, tools and the story threads we are still watching.</p>
+    <p class="gr-newsroom-deck">The current smart-glasses beat: verified developments plus a live discovery wire fed by existing search/news services. GlassesResearch adds judgment, verification, model context and durable research instead of trying to rebuild the web.</p>
     <div class="gr-newsroom-actions" aria-label="Research and News shortcuts">
       <a href="#gr-lead-story">Lead story</a>
       <a href="#gr-current-desk">Verified</a>
@@ -76,7 +76,7 @@
         <div class="gr-newsroom-kicker">Across the wire</div>
         <h2>Developing now</h2>
       </div>
-      <p>Current source reports found by the Scout. These are discovery signals, not verified GlassesResearch claims; status stays explicit until the News Desk resolves them.</p>
+      <p>Current source reports surfaced by commodity search/news feeds. These are discovery signals, not verified GlassesResearch claims; the desk's job is to decide what matters, verify it and publish the useful result.</p>
     </div>
     <div class="gr-wire-list" data-newsroom-wire></div>
   `;
@@ -210,13 +210,29 @@
       renderTableFallback();
     });
 
-  fetch("/data/wire-state.json", { credentials: "same-origin" })
-    .then((response) => {
-      if (!response.ok) throw new Error(`wire state ${response.status}`);
-      return response.json();
-    })
+  const loadWireState = async () => {
+    // Prefer the live Worker-backed wire when it actually has stories. A valid but
+    // empty legacy response must not mask the independently refreshed search feed.
+    let emptyState = null;
+    for (const endpoint of ["/wire", "/data/wire-state.json"]) {
+      try {
+        const response = await fetch(endpoint, { credentials: "same-origin" });
+        if (!response.ok) continue;
+        const state = await response.json();
+        if (state?.schema_version === 1 && Array.isArray(state.items)) {
+          if (state.items.length) return state;
+          emptyState ??= state;
+        }
+      } catch {
+        // Try the next read-only source.
+      }
+    }
+    if (emptyState) return emptyState;
+    throw new Error("wire state unavailable");
+  };
+
+  loadWireState()
     .then((state) => {
-      if (state?.schema_version !== 1 || !Array.isArray(state.items)) throw new Error("wire state malformed");
       const items = state.items
         .filter((item) => item && ["reported", "under_review"].includes(item.status) && item.title && item.url)
         .slice(0, 12);

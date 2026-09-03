@@ -1,0 +1,24 @@
+name: Validate bounded verified newsroom publisher
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/newsroom_autopublish_gate.py'
+      - 'scripts/newsroom_publication_intake.py'
+      - 'scripts/newsroom_news_actuator.py'
+      - '.github/workflows/newsroom-auto-publish.yml'
+      - '.github/workflows/newsroom-publication-intake.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/newsroom_autopublish_gate.py --self-test
+      - run: python scripts/newsroom_publication_intake.py --self-test
+      - run: python scripts/newsroom_news_actuator.py --self-test

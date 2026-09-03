@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-08-03 → 2026-08-30**.
+Google Search Console page/query pairs for **2026-08-05 → 2026-09-01**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -19,11 +19,11 @@ Google Search Console page/query pairs for **2026-08-03 → 2026-08-30**.
 | https://glassesresearch.org/docs/faq/10-ownership-future/ | future of smart glasses ownership | 6 | 0 | 0.00% | 18.5 |
 | https://glassesresearch.org/models/HuaweiEyewear2/ | huawei eyewear 2 | 6 | 0 | 0.00% | 23.2 |
 | https://glassesresearch.org/models/XREALOne/ | xreal wiki | 4 | 0 | 0.00% | 22.0 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | ai glasses timeline | 4 | 0 | 0.00% | 23.2 |
 | https://glassesresearch.org/models/HuaweiEyewear2/ | eyewear 2 huawei | 4 | 0 | 0.00% | 29.0 |
 | https://glassesresearch.org/models/HuaweiEyewear2/ | huawei eyewear 2022 | 3 | 0 | 0.00% | 18.3 |
 | https://glassesresearch.org/models/BrilliantHalo/ | brilliant labs halo | 3 | 0 | 0.00% | 23.3 |
 | https://glassesresearch.org/models/VuzixZ100/ | vuzix sdk | 2 | 0 | 0.00% | 20.0 |
-| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | ai glasses timeline | 2 | 0 | 0.00% | 22.0 |
 | https://glassesresearch.org/models/EvenG2/ | even 2 | 2 | 0 | 0.00% | 29.0 |
 | https://glassesresearch.org/resources/ECOSYSTEM_RESOURCE_CATALOG/ | smart glasses sdk | 2 | 0 | 0.00% | 29.0 |
 | https://glassesresearch.org/models/EvenG2/ | g2 even realities | 1 | 0 | 0.00% | 13.0 |

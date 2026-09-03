@@ -75,40 +75,30 @@ jobs:
         if: steps.cadence.outputs.run == 'true'
         run: python scripts/test_knowledge_flow.py
 
-      - name: Preserve previous same-day snapshots
+      - name: Preserve previous same-day news snapshots
         if: steps.cadence.outputs.run == 'true'
         shell: bash
         run: |
           set -euo pipefail
           DATE="$(date -u +%F)"
           STAMP="$(date -u +%Y-%m-%dT%H%M%SZ)"
-          for DIR in research/news-candidates research/discovery-candidates; do
-            for EXT in json md; do
-              SRC="${DIR}/${DATE}.${EXT}"
-              if [ -f "$SRC" ]; then
-                mv "$SRC" "${DIR}/${STAMP}.${EXT}"
-              fi
-            done
+          for EXT in json md; do
+            SRC="research/news-candidates/${DATE}.${EXT}"
+            if [ -f "$SRC" ]; then
+              mv "$SRC" "research/news-candidates/${STAMP}.${EXT}"
+            fi
           done
 
       - name: Collect recent news and adjacent-HCI candidates
         if: steps.cadence.outputs.run == 'true'
         run: python scripts/collect_daily_news.py
 
-      - name: Collect broad-web discovery candidates
-        if: steps.cadence.outputs.run == 'true'
-        run: python scripts/collect_web_discovery.py
-
-      - name: Retain durable discovered-source watches
-        if: steps.cadence.outputs.run == 'true'
-        run: python scripts/collect_discovery_watches.py
-
-      - name: Persist durable intake queue
+      - name: Persist durable institutional intake
         if: steps.cadence.outputs.run == 'true'
         shell: bash
         run: |
           set -euo pipefail
-          git add research/news-candidates research/discovery-candidates
+          git add research/news-candidates
           if ! git diff --cached --quiet; then
             DATE="$(TZ=America/New_York date +%F)"
             git commit -m "Persist institutional knowledge intake ${DATE}"
@@ -118,8 +108,8 @@ jobs:
           {
             echo "### Durable knowledge intake"
             echo ""
-            echo "News and broad-web discovery are preserved on the \`knowledge-intake\` branch."
-            echo "Candidates are classified before review; no PR is required for the conveyor to retain its payload."
+            echo "Institutional news candidates are preserved on the \`knowledge-intake\` branch."
+            echo "Commodity search/news wheels now own broad public discovery; the custom broad-web collector and discovered-source watches are frozen outside this critical path."
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Inactive DST counterpart

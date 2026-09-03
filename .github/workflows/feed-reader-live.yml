@@ -1,0 +1,88 @@
+name: Feed reader live smoke test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify canonical reader contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          verified='https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml'
+          wire='https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml'
+          grep -Fq 'https://glassesresearch.org/feed.xml' docs/FEEDS.md
+          grep -Fq 'https://glassesresearch.org/data/wire-feed.xml' docs/FEEDS.md
+          grep -Fq "$verified" docs/FEEDS.md
+          grep -Fq "$wire" docs/FEEDS.md
+          grep -Fq 'const FEEDLY_SEARCH_PREFIX = "https://feedly.com/i/discover/sources/search/feed/";' docs/javascripts/feed-choice.js
+          grep -Fq 'feedlySearchUrl(VERIFIED)' docs/javascripts/feed-choice.js
+          grep -Fq 'feedlySearchUrl(WIRE)' docs/javascripts/feed-choice.js
+          ! grep -Fq 'feedly.com/i/subscription/' docs/FEEDS.md
+          ! grep -Fq 'feedly.com/i/subscription/' docs/javascripts/feed-choice.js
+          echo 'Feed-reader source contract passed.'
+
+  live:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for exact production deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in $(seq 1 16); do
+            if curl --fail --silent --show-error --location --max-time 20 \
+              -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+              "https://glassesresearch.org/deployment.json?feed-smoke=${GITHUB_SHA}-${attempt}" -o /tmp/deployment.json \
+              && python -c "import json,os; assert json.load(open('/tmp/deployment.json')).get('sha') == os.environ['GITHUB_SHA']"; then
+              exit 0
+            fi
+            sleep 15
+          done
+          echo 'Production never served expected SHA.' >&2
+          exit 1
+
+      - name: Verify live feeds and Feedly source-search handoffs
+        shell: bash
+        run: |
+          set -euo pipefail
+          verified='https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml'
+          wire='https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml'
+          curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/feed.xml -o /tmp/verified.xml
+          curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/data/wire-feed.xml -o /tmp/wire.xml
+          curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/docs/FEEDS/ -o /tmp/feeds.html
+          python - <<'PY'
+          from xml.etree import ElementTree as ET
+          for path in ('/tmp/verified.xml','/tmp/wire.xml'):
+              root=ET.parse(path).getroot()
+              assert root.tag == 'rss'
+              channel=root.find('channel')
+              assert channel is not None and channel.findtext('title') and channel.findall('item')
+          PY
+          grep -Fq "$verified" /tmp/feeds.html
+          grep -Fq "$wire" /tmp/feeds.html
+          grep -Fq 'https://glassesresearch.org/feed.xml' /tmp/feeds.html
+          grep -Fq 'https://glassesresearch.org/data/wire-feed.xml' /tmp/feeds.html
+          ! grep -Fq 'feedly.com/i/subscription/' /tmp/feeds.html
+
+          check_feedly_search() {
+            label="$1"; url="$2"; body="/tmp/${label}.html"
+            code="$(curl --silent --show-error --location --max-time 25 -A 'Mozilla/5.0 GlassesResearch feed-reader smoke test' -o "$body" -w '%{http_code}' "$url")"
+            case "$code" in 2*|3*) ;; *) echo "$label returned HTTP $code" >&2; exit 1;; esac
+            if grep -Eqi 'feed not found|wrong feed url|dead feed|(^|>)\s*(page )?not found\s*(<|$)' "$body"; then
+              echo "$label Feedly source-search route rejected the feed" >&2
+              exit 1
+            fi
+          }
+
+          check_feedly_search feedly-verified "$verified"
+          check_feedly_search feedly-wire "$wire"
+          echo 'Live RSS and Feedly source-search handoffs passed automated checks.'

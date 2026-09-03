@@ -14,16 +14,86 @@
   text-decoration-thickness: 0.14em;
 }
 
-@media screen and (min-width: 76.25em) {
-  /* The left rail is the site's contents: Home, Finder, Research & News,
-     Tools, and About. Page-level tables of contents are intentionally hidden
-     so the right side remains open reading space. */
+/* The secondary sidebar is not part of the public layout. JS first copies its
+   useful page links into ABOUT, then removes the rail from the DOM entirely. */
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+.gr-left-rail-extra {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(17, 24, 23, 0.12);
+}
+
+/* Search lives visibly in the left rail while Material's native search overlay
+   remains the machinery underneath. */
+.gr-left-rail-search-launcher {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  width: 100%;
+  min-width: 0;
+  margin: 0 0 1rem;
+  padding: .58rem .7rem;
+  border: 1px solid rgba(17, 24, 23, .18);
+  border-radius: .55rem !important;
+  background: color-mix(in srgb, var(--md-default-bg-color) 92%, var(--md-default-fg-color) 8%);
+  color: var(--md-default-fg-color--light);
+  box-shadow: none;
+  font: inherit;
+  font-size: .7rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: text;
+}
+
+.gr-left-rail-search-launcher:hover,
+.gr-left-rail-search-launcher:focus-visible {
+  border-color: var(--md-accent-fg-color);
+  background: var(--md-default-bg-color);
+  transform: none;
+}
+
+.gr-left-rail-search-icon {
+  flex: 0 0 auto;
+  font-size: .95rem;
+  line-height: 1;
+}
+
+.gr-left-rail-search-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gr-left-rail-about__title {
+  margin: 0 0 .45rem;
+  color: var(--md-default-fg-color--light);
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.gr-left-rail-about__list {
+  margin: 0;
+  padding: 0;
+}
+
+.gr-left-rail-about__list .md-nav__link {
+  margin-top: .45rem;
+  font-size: .7rem;
+  line-height: 1.3;
+}
+
+.gr-left-rail-about__list .md-nav__list {
+  margin-left: .55rem;
+}
+
+@media screen and (min-width: 60em) {
   .md-sidebar--primary {
     display: block;
-  }
-
-  .md-sidebar--secondary {
-    display: none;
   }
 
   .md-sidebar--primary .md-sidebar__scrollwrap {
@@ -31,29 +101,55 @@
     padding-right: 0.8rem;
   }
 
+  /* Kill Material's old two-sidebar geometry. The main row now consists of
+     one fixed navigation rail plus one content canvas. */
+  .md-grid,
+  .md-main__inner {
+    max-width: none !important;
+  }
+
+  .md-main__inner {
+    width: 100%;
+    padding-right: clamp(1rem, 2vw, 2.5rem);
+  }
+
   .md-content {
+    flex: 1 1 auto !important;
     min-width: 0;
+    max-width: none !important;
   }
 
-  /* Material already provides full-site search; keep it visible and obvious. */
-  .md-search {
-    display: block;
-    width: min(24rem, 34vw);
-    margin-left: auto;
+  .md-content__inner {
+    width: 100%;
+    max-width: none !important;
+    margin-right: 0;
   }
 
-  .md-search__form {
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 0.35rem;
+  /* The header no longer needs to advertise search on the far right. The
+     left-rail launcher is the visible entrance; the native control remains
+     available only as the overlay it opens. */
+  .md-header .md-search {
+    width: 0;
+    min-width: 0;
+    margin: 0;
+    overflow: visible;
   }
 
-  .md-search__input {
-    font-size: 0.75rem;
+  .md-header .md-search__form {
+    visibility: hidden;
+    pointer-events: none;
   }
-}
 
-@media screen and (min-width: 100em) {
-  .md-search {
-    width: 26rem;
+  .md-search[data-md-component="search"]:focus-within .md-search__form,
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  /* Keep prose readable while allowing research surfaces, lists, tables,
+     Finder controls, and visualizations to use the reclaimed canvas. */
+  .md-typeset > p,
+  .md-typeset > blockquote {
+    max-width: 76ch;
   }
 }

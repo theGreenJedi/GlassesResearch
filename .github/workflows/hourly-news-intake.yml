@@ -3,6 +3,13 @@ name: Hourly smart-glasses knowledge intake
 on:
   schedule:
     - cron: "17 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - "data/wire-state.json"
+      - "scripts/import_wire_news.py"
+      - "scripts/test_import_wire_news.py"
+      - ".github/workflows/hourly-news-intake.yml"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +22,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v6
         with:
@@ -41,39 +48,52 @@ jobs:
             git checkout -B knowledge-intake origin/main
           fi
 
-      - name: Validate classifier
-        run: python scripts/test_knowledge_flow.py
+      - name: Validate classifier and wire bridge
+        run: |
+          python scripts/test_knowledge_flow.py
+          python scripts/test_import_wire_news.py
 
-      - name: Preserve previous same-day snapshot
+      - name: Preserve previous same-day intake snapshots
         shell: bash
         run: |
           set -euo pipefail
           DATE="$(date -u +%F)"
           STAMP="$(date -u +%Y-%m-%dT%H%M%SZ)"
-          for EXT in json md; do
-            SRC="research/news-candidates/${DATE}.${EXT}"
-            if [ -f "$SRC" ]; then
-              mv "$SRC" "research/news-candidates/${STAMP}.${EXT}"
-            fi
+          for DIR in research/news-candidates research/discovery-candidates; do
+            for EXT in json md; do
+              SRC="${DIR}/${DATE}.${EXT}"
+              if [ -f "$SRC" ]; then
+                mv "$SRC" "${DIR}/${STAMP}.${EXT}"
+              fi
+            done
           done
 
-      - name: Discover, classify, triage, and route recent candidates
+      - name: Collect recent institutional news candidates
         run: python scripts/collect_daily_news.py
 
-      - name: Persist durable intake queue
+      - name: Collect ordinary-web discovery candidates
+        run: python scripts/collect_web_discovery.py
+
+      - name: Import current public wire into durable editorial intake
+        run: python scripts/import_wire_news.py --wire data/wire-state.json --output research/news-candidates/wire-latest.json
+
+      - name: Persist durable high-recall intake
         shell: bash
         run: |
           set -euo pipefail
-          git add research/news-candidates
+          git add research/news-candidates research/discovery-candidates
           if ! git diff --cached --quiet; then
             STAMP="$(TZ=America/New_York date +%Y-%m-%d-%H%M)"
-            git commit -m "Persist classified smart-glasses intake ${STAMP} ET"
+            git commit -m "Persist high-recall smart-glasses intake ${STAMP} ET"
           fi
           git push origin HEAD:knowledge-intake
 
           {
             echo "### Knowledge intake"
             echo ""
-            echo "The durable queue is stored on the \`knowledge-intake\` branch."
-            echo "Collection is not publication; candidates carry relationship, type, triage, and routing metadata before editorial review."
+            echo "The durable editorial queue is stored on the \`knowledge-intake\` branch."
+            echo "Hourly intake combines institutional news, ordinary-web discovery, and the public commodity wire before editorial triage."
+            echo "Commodity wire reports remain unverified candidates; discovery cannot authorize publication."
+            echo "A visible wire change triggers this intake immediately; the hourly schedule remains a fallback."
+            echo "Discovery optimizes for recall; triage and verification remain downstream precision gates."
           } >> "$GITHUB_STEP_SUMMARY"
