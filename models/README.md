@@ -11,7 +11,7 @@
 
 ## Read the models, not just the database
 
-The human-readable profile library now contains an evidence-backed paragraph for **every one of the 165 active canonical smart-glasses records**. A paragraph is not permission to guess: when acquisition is established but generation-specific internals remain incomplete, the profile says so explicitly and points to the unresolved archival work rather than borrowing specifications from a neighboring generation.
+The human-readable profile library now contains an evidence-backed paragraph for **every one of the 169 active canonical smart-glasses records**. A paragraph is not permission to guess: when acquisition is established but generation-specific internals remain incomplete, the profile says so explicitly and points to the unresolved archival work rather than borrowing specifications from a neighboring generation.
 
 Editorial volumes:
 

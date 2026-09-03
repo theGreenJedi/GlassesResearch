@@ -1,0 +1,201 @@
+.gr-ecosystem-shell {
+  margin: 1.5rem 0 2rem;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(68, 214, 196, .12), transparent 30%),
+    radial-gradient(circle at 82% 24%, rgba(140, 111, 255, .14), transparent 32%),
+    linear-gradient(145deg, #080b12 0%, #0d1220 56%, #0a0e17 100%);
+  box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, .22);
+  color: #f6f8ff;
+}
+
+/* This page is a visualization, not a narrow article. Let the graph own the stage. */
+@media screen and (min-width: 76.25em) {
+  .md-main__inner:has(.gr-ecosystem-shell) {
+    max-width: 96rem;
+  }
+
+  .md-content:has(.gr-ecosystem-shell),
+  .md-content__inner:has(.gr-ecosystem-shell) {
+    min-width: 0;
+    max-width: none;
+  }
+
+  .md-content__inner:has(.gr-ecosystem-shell) {
+    margin-right: 1.5rem;
+  }
+
+  .gr-ecosystem-shell {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.gr-ecosystem-head {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.15rem clamp(1.25rem, 3vw, 2.5rem) 1.3rem;
+  text-align: center;
+}
+
+.gr-ecosystem-head .gr-kicker {
+  margin: 0 0 .45rem;
+  color: #82e8dc;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.gr-ecosystem-head h2 {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.85rem, 4.2vw, 4rem);
+  line-height: .96;
+  letter-spacing: -.045em;
+  text-align: center;
+}
+
+.gr-ecosystem-head .gr-ecosystem-dek {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: .9rem 0 0;
+  color: rgba(246, 248, 255, .7);
+  font-size: .95rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.gr-ecosystem-controls {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .45rem;
+  padding: 0 clamp(1.25rem, 3vw, 2.5rem) 1.15rem;
+}
+
+.gr-ecosystem-controls button {
+  appearance: none;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  background: rgba(255,255,255,.055);
+  color: rgba(255,255,255,.78);
+  padding: .52rem .8rem;
+  font: inherit;
+  font-size: .75rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease, color .18s ease;
+}
+
+.gr-ecosystem-controls button:hover,
+.gr-ecosystem-controls button:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(130,232,220,.7);
+  color: #fff;
+  outline: none;
+}
+
+.gr-ecosystem-controls button[aria-pressed="true"] {
+  border-color: #82e8dc;
+  background: rgba(130,232,220,.12);
+  color: #fff;
+}
+
+.gr-ecosystem-stage {
+  position: relative;
+  display: block;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.gr-ecosystem-canvas {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 42rem;
+  max-height: 58rem;
+  overflow: hidden;
+}
+
+.gr-ecosystem-canvas::before,
+.gr-ecosystem-canvas::after {
+  content: "";
+  position: absolute;
+  inset: 9% 10%;
+  border: 1px solid rgba(255,255,255,.045);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.gr-ecosystem-canvas::after { inset: 27% 29%; }
+.gr-ecosystem-svg { display: block; width: 100%; height: 100%; }
+.gr-ecosystem-edge { stroke: rgba(205, 216, 255, .28); stroke-width: 1.45; transition: opacity .2s ease, stroke .2s ease, stroke-width .2s ease; }
+.gr-ecosystem-edge[data-status="inferred"], .gr-ecosystem-edge[data-status="unresolved"] { stroke-dasharray: 4 6; }
+.gr-ecosystem-edge.is-muted { opacity: .07; }
+.gr-ecosystem-edge.is-active { opacity: .96; stroke: #82e8dc; stroke-width: 2.3; }
+.gr-ecosystem-node { cursor: pointer; transition: opacity .2s ease; }
+.gr-ecosystem-node.is-muted { opacity: .13; }
+.gr-ecosystem-node circle { fill: rgba(20, 26, 41, .98); stroke: rgba(255,255,255,.24); stroke-width: 1.7; filter: drop-shadow(0 8px 18px rgba(0,0,0,.28)); transition: stroke .18s ease, stroke-width .18s ease, fill .18s ease; }
+.gr-ecosystem-node:hover circle, .gr-ecosystem-node:focus-visible circle, .gr-ecosystem-node.is-active circle { fill: rgba(27, 37, 56, 1); stroke: #82e8dc; stroke-width: 2.8; }
+.gr-ecosystem-node:focus-visible { outline: none; }
+.gr-ecosystem-node[data-type="model"] circle { stroke: #f7f7ff; }
+.gr-ecosystem-node[data-type="operating_platform"] circle { stroke: #8b7bff; }
+.gr-ecosystem-node[data-type="sdk_api"] circle { stroke: #82e8dc; }
+.gr-ecosystem-node[data-type="companion_app"] circle { stroke: #ffc66d; }
+.gr-ecosystem-node[data-type="community_project"] circle { stroke: #ff8faf; }
+.gr-ecosystem-node[data-type="ai_service"] circle { stroke: #7eb7ff; }
+.gr-ecosystem-node[data-type="protocol_transport"] circle { stroke: #9aa6b8; }
+.gr-ecosystem-node[data-type="lineage"] circle { stroke: #cda7ff; }
+.gr-ecosystem-node text { pointer-events: none; fill: #fff; text-anchor: middle; dominant-baseline: middle; }
+.gr-ecosystem-node .gr-node-name { font-size: 13px; font-weight: 800; letter-spacing: -.015em; }
+.gr-ecosystem-node .gr-node-type { fill: rgba(255,255,255,.56); font-size: 8px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+
+.gr-ecosystem-inspector {
+  position: relative;
+  z-index: 2;
+  display: block;
+  min-height: 9rem;
+  padding: 1.15rem clamp(1.25rem, 3vw, 2.5rem) 1.3rem;
+  border-top: 1px solid rgba(255,255,255,.08);
+  background: rgba(7, 10, 17, .78);
+}
+
+.gr-ecosystem-inspector .gr-inspector-eyebrow { margin: 0 0 .45rem; color: #82e8dc; font-size: .68rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.gr-ecosystem-inspector h3 { margin: 0; color: #fff; font-size: clamp(1.25rem, 2vw, 1.9rem); line-height: 1.05; letter-spacing: -.03em; }
+.gr-ecosystem-inspector > p { margin: .45rem 0 0; max-width: 48rem; color: rgba(255,255,255,.66); font-size: .86rem; }
+.gr-ecosystem-relations { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: .6rem; margin-top: .9rem; }
+.gr-ecosystem-relation { display: block; padding: .75rem .8rem; border: 1px solid rgba(255,255,255,.085); border-radius: .9rem; background: rgba(255,255,255,.035); color: inherit; text-decoration: none; }
+.gr-ecosystem-relation strong { display: block; margin-bottom: .18rem; color: #fff; font-size: .84rem; }
+.gr-ecosystem-relation span { display: block; color: rgba(255,255,255,.56); font-size: .71rem; line-height: 1.35; }
+
+.gr-ecosystem-legend { display: flex; flex-wrap: wrap; gap: .55rem 1rem; padding: .8rem clamp(1.25rem, 3vw, 2.5rem) 1.15rem; border-top: 1px solid rgba(255,255,255,.08); color: rgba(255,255,255,.56); font-size: .69rem; }
+.gr-ecosystem-legend span::before { content: ""; display: inline-block; width: .52rem; height: .52rem; margin-right: .38rem; border-radius: 50%; background: var(--dot, #fff); }
+.gr-ecosystem-legend .model { --dot: #f7f7ff; }
+.gr-ecosystem-legend .platform { --dot: #8b7bff; }
+.gr-ecosystem-legend .developer { --dot: #82e8dc; }
+.gr-ecosystem-legend .app { --dot: #ffc66d; }
+.gr-ecosystem-legend .community { --dot: #ff8faf; }
+.gr-ecosystem-legend .service { --dot: #7eb7ff; }
+.gr-ecosystem-noscript { margin: 0; padding: 1rem 1.25rem; background: rgba(255,255,255,.06); color: rgba(255,255,255,.75); }
+
+@media (max-width: 860px) {
+  .gr-ecosystem-controls { justify-content: center; }
+  .gr-ecosystem-canvas { aspect-ratio: 4 / 5; min-height: 36rem; max-height: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gr-ecosystem-node,
+  .gr-ecosystem-node circle,
+  .gr-ecosystem-edge,
+  .gr-ecosystem-controls button { transition: none; }
+}

@@ -20,6 +20,7 @@ CAPABILITIES = [
     "speakers", "microphones", "phone_calls", "music",
     "display", "full_color_display", "binocular_display", "no_display",
     "ai_assistant", "visual_ai", "translation", "transcription", "navigation",
+    "companion_ring", "compute_on_glasses", "compute_on_phone", "compute_external", "compute_hybrid",
     "bluetooth", "ble", "wifi", "sdk_api", "open_source", "custom_ai",
     "offline_operation", "self_hostable",
 ]
@@ -161,11 +162,19 @@ def category_fact(model, field):
     return None, None
 
 
-def load_overrides(path: Path):
+def load_override_file(path: Path):
     if not path.exists():
         return {}
     data = json.loads(path.read_text(encoding="utf-8"))
     return {r["id"]: r.get("capabilities", {}) for r in data.get("records", [])}
+
+
+def load_overrides(path: Path):
+    merged = load_override_file(path)
+    centaur_path = path.with_name("centaur-finder-overrides.json")
+    for model_id, capabilities in load_override_file(centaur_path).items():
+        merged.setdefault(model_id, {}).update(capabilities)
+    return merged
 
 
 def main():
