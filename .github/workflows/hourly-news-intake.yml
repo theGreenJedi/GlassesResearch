@@ -53,41 +53,47 @@ jobs:
           python scripts/test_knowledge_flow.py
           python scripts/test_import_wire_news.py
 
-      - name: Preserve previous same-day news snapshots
+      - name: Preserve previous same-day intake snapshots
         shell: bash
         run: |
           set -euo pipefail
           DATE="$(date -u +%F)"
           STAMP="$(date -u +%Y-%m-%dT%H%M%SZ)"
-          for EXT in json md; do
-            SRC="research/news-candidates/${DATE}.${EXT}"
-            if [ -f "$SRC" ]; then
-              mv "$SRC" "research/news-candidates/${STAMP}.${EXT}"
-            fi
+          for DIR in research/news-candidates research/discovery-candidates; do
+            for EXT in json md; do
+              SRC="${DIR}/${DATE}.${EXT}"
+              if [ -f "$SRC" ]; then
+                mv "$SRC" "${DIR}/${STAMP}.${EXT}"
+              fi
+            done
           done
 
       - name: Collect recent institutional news candidates
         run: python scripts/collect_daily_news.py
 
+      - name: Collect ordinary-web discovery candidates
+        run: python scripts/collect_web_discovery.py
+
       - name: Import current public wire into durable editorial intake
         run: python scripts/import_wire_news.py --wire data/wire-state.json --output research/news-candidates/wire-latest.json
 
-      - name: Persist durable institutional intake
+      - name: Persist durable high-recall intake
         shell: bash
         run: |
           set -euo pipefail
-          git add research/news-candidates
+          git add research/news-candidates research/discovery-candidates
           if ! git diff --cached --quiet; then
             STAMP="$(TZ=America/New_York date +%Y-%m-%d-%H%M)"
-            git commit -m "Persist smart-glasses institutional intake ${STAMP} ET"
+            git commit -m "Persist high-recall smart-glasses intake ${STAMP} ET"
           fi
           git push origin HEAD:knowledge-intake
 
           {
             echo "### Knowledge intake"
             echo ""
-            echo "The durable institutional queue is stored on the \`knowledge-intake\` branch."
-            echo "Commodity wire reports are imported into that queue as unverified candidates so discovery cannot stop at the public ticker."
+            echo "The durable editorial queue is stored on the \`knowledge-intake\` branch."
+            echo "Hourly intake combines institutional news, ordinary-web discovery, and the public commodity wire before editorial triage."
+            echo "Commodity wire reports remain unverified candidates; discovery cannot authorize publication."
             echo "A visible wire change triggers this intake immediately; the hourly schedule remains a fallback."
-            echo "The public developing-news wire remains discovery-only; triage and publication authority stay downstream."
+            echo "Discovery optimizes for recall; triage and verification remain downstream precision gates."
           } >> "$GITHUB_STEP_SUMMARY"

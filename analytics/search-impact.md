@@ -1,6 +1,6 @@
 # GlassesResearch Search Impact
 
-Google Search Console finalized data through **2026-08-31**.
+Google Search Console finalized data through **2026-09-01**.
 
 > This report measures evidence-led research changes. It is not a ranking target, keyword quota, or instruction to optimize irrelevant queries.
 
@@ -10,7 +10,7 @@ Google Search Console finalized data through **2026-08-31**.
 
 Baseline: **2026-07-23 → 2026-08-19**. Post window: **2026-08-21 → 2026-09-17**.
 
-Status: **collecting** — 11/28 finalized post-intervention days available.
+Status: **collecting** — 12/28 finalized post-intervention days available.
 
 | Page / exact query | Baseline impressions | Baseline clicks | Baseline CTR | Baseline position | Post impressions | Post clicks | Post CTR | Post position |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
