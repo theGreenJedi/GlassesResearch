@@ -17,16 +17,17 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          verified='https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml'
+          wire='https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml'
           grep -Fq 'https://glassesresearch.org/feed.xml' docs/FEEDS.md
           grep -Fq 'https://glassesresearch.org/data/wire-feed.xml' docs/FEEDS.md
-          grep -Fq 'https://feedly.com/i/discover' docs/FEEDS.md
-          grep -Fq 'https://www.inoreader.com/' docs/FEEDS.md
-          grep -Fq 'const FEEDLY_HOME = "https://feedly.com/i/discover";' docs/javascripts/feed-choice.js
-          grep -Fq 'const INOREADER_HOME = "https://www.inoreader.com/";' docs/javascripts/feed-choice.js
+          grep -Fq "$verified" docs/FEEDS.md
+          grep -Fq "$wire" docs/FEEDS.md
+          grep -Fq 'const FEEDLY_SEARCH_PREFIX = "https://feedly.com/i/discover/sources/search/feed/";' docs/javascripts/feed-choice.js
+          grep -Fq 'feedlySearchUrl(VERIFIED)' docs/javascripts/feed-choice.js
+          grep -Fq 'feedlySearchUrl(WIRE)' docs/javascripts/feed-choice.js
           ! grep -Fq 'feedly.com/i/subscription/' docs/FEEDS.md
-          ! grep -Fq 'inoreader.com/?add_feed=' docs/FEEDS.md
           ! grep -Fq 'feedly.com/i/subscription/' docs/javascripts/feed-choice.js
-          ! grep -Fq 'inoreader.com/?add_feed=' docs/javascripts/feed-choice.js
           echo 'Feed-reader source contract passed.'
 
   live:
@@ -49,10 +50,12 @@ jobs:
           echo 'Production never served expected SHA.' >&2
           exit 1
 
-      - name: Verify live feeds and supported reader entry points
+      - name: Verify live feeds and Feedly source-search handoffs
         shell: bash
         run: |
           set -euo pipefail
+          verified='https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml'
+          wire='https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml'
           curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/feed.xml -o /tmp/verified.xml
           curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/data/wire-feed.xml -o /tmp/wire.xml
           curl --fail --silent --show-error --location --max-time 20 https://glassesresearch.org/docs/FEEDS/ -o /tmp/feeds.html
@@ -64,19 +67,22 @@ jobs:
               channel=root.find('channel')
               assert channel is not None and channel.findtext('title') and channel.findall('item')
           PY
-          grep -Fq 'https://feedly.com/i/discover' /tmp/feeds.html
-          grep -Fq 'https://www.inoreader.com/' /tmp/feeds.html
+          grep -Fq "$verified" /tmp/feeds.html
+          grep -Fq "$wire" /tmp/feeds.html
           grep -Fq 'https://glassesresearch.org/feed.xml' /tmp/feeds.html
           grep -Fq 'https://glassesresearch.org/data/wire-feed.xml' /tmp/feeds.html
           ! grep -Fq 'feedly.com/i/subscription/' /tmp/feeds.html
-          ! grep -Fq 'inoreader.com/?add_feed=' /tmp/feeds.html
 
-          check_reader_entry() {
-            label="$1"; url="$2"
-            code="$(curl --silent --show-error --location --max-time 25 -A 'Mozilla/5.0 GlassesResearch feed-reader smoke test' -o "/tmp/${label}.html" -w '%{http_code}' "$url")"
+          check_feedly_search() {
+            label="$1"; url="$2"; body="/tmp/${label}.html"
+            code="$(curl --silent --show-error --location --max-time 25 -A 'Mozilla/5.0 GlassesResearch feed-reader smoke test' -o "$body" -w '%{http_code}' "$url")"
             case "$code" in 2*|3*) ;; *) echo "$label returned HTTP $code" >&2; exit 1;; esac
+            if grep -Eqi 'feed not found|wrong feed url|dead feed|(^|>)\s*(page )?not found\s*(<|$)' "$body"; then
+              echo "$label Feedly source-search route rejected the feed" >&2
+              exit 1
+            fi
           }
 
-          check_reader_entry feedly 'https://feedly.com/i/discover'
-          check_reader_entry inoreader 'https://www.inoreader.com/'
-          echo 'Live RSS and supported reader entry points passed.'
+          check_feedly_search feedly-verified "$verified"
+          check_feedly_search feedly-wire "$wire"
+          echo 'Live RSS and Feedly source-search handoffs passed automated checks.'
