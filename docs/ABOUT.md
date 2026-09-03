@@ -34,5 +34,3 @@ GlassesResearch covers current, historical, discontinued, obscure, industrial, e
 - [Privacy statement](PRIVACY.md)
 
 The site uses no project-added advertising, tracking cookies, behavioral profiling, or sale of visitor data. GlassesResearch permits only privacy-first aggregate analytics through Cloudflare Web Analytics, solely to understand page usage and performance. The analytics configuration is public, uses no tracking cookies, and remains inactive until a Cloudflare site token is configured.
-
-Community greetings rely only on an explicit `?from=` value in a shared link and are not retained.
