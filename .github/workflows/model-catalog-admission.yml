@@ -94,7 +94,8 @@ jobs:
                   continue
               if proposal.get('unresolved_questions'):
                   continue
-              if proposal.get('proposed_identity', {}).get('identity_edges'):
+              identity = proposal.get('proposed_identity')
+              if not isinstance(identity, dict) or identity.get('identity_edges'):
                   continue
               kept.append(item)
           filtered = {**payload, 'proposals': kept}
@@ -125,18 +126,18 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [[ -z "$(git status --porcelain -- models/THE_LIST.md models/README.md models/PROFILES_AUTO_ADMISSIONS.md models/THE_LIST_RECONCILIATION_* research/model-proposals research/model-actions)" ]]; then
+          if [[ -z "$(git status --porcelain -- models/THE_LIST.md models/README.md models/PROFILES_AUTO_ADMISSIONS.md 'models/THE_LIST_RECONCILIATION_*' research/model-proposals research/model-actions)" ]]; then
             echo 'changed=false' >> "$GITHUB_OUTPUT"
             echo 'No canonical-safe model admissions.'
             exit 0
           fi
-          if ! git status --porcelain -- models/THE_LIST_RECONCILIATION_* | grep -q .; then
+          if ! git status --porcelain -- 'models/THE_LIST_RECONCILIATION_*' | grep -q .; then
             echo 'changed=false' >> "$GITHUB_OUTPUT"
             echo 'Proposal/action intake changed, but no bounded canonical admission passed the final actuator.'
             git reset --hard origin/main
             exit 0
           fi
-          git add -A -- models/THE_LIST.md models/README.md models/PROFILES_AUTO_ADMISSIONS.md models/THE_LIST_RECONCILIATION_* research/model-proposals research/model-actions
+          git add -A -- models/THE_LIST.md models/README.md models/PROFILES_AUTO_ADMISSIONS.md 'models/THE_LIST_RECONCILIATION_*' research/model-proposals research/model-actions
           git commit -m 'Admit evidence-clean model discovery automatically'
           git push --force-with-lease --set-upstream origin "${BRANCH}"
           echo 'changed=true' >> "$GITHUB_OUTPUT"
@@ -148,17 +149,16 @@ jobs:
         run: |
           set -euo pipefail
           existing="$(gh pr list --head "${BRANCH}" --base main --state open --json number --jq '.[0].number // empty')"
-          if [[ -n "${existing}" ]]; then
-            pr="${existing}"
-          else
-            pr="$(gh pr create \
+          if [[ -z "${existing}" ]]; then
+            gh pr create \
               --base main \
               --head "${BRANCH}" \
               --title 'Admit evidence-clean model discovery' \
-              --body $'This PR was produced by the bounded canonical model-admission lane. Every admission must be a high-confidence verified-new-model finding, cross the purchaser-history acquisition threshold, have no existing GLS target, identity edge, or unresolved question, and carry a structured catalog row tied to high-confidence acquisition evidence.\n\nThe automation generates an auditable reconciliation packet and conservative editorial profile, allocates the next unused GLS identifier, synchronizes catalog counts, and runs catalog/profile/device-database validators. No Report Card scores or unverified product claims are inferred by admission.' \
-              --json number --jq '.number')"
+              --body $'This PR was produced by the bounded canonical model-admission lane. Every admission must be a high-confidence verified-new-model finding, cross the purchaser-history acquisition threshold, have no existing GLS target, identity edge, or unresolved question, and carry a structured catalog row tied to high-confidence acquisition evidence.\n\nThe automation generates an auditable reconciliation packet and conservative editorial profile, allocates the next unused GLS identifier, synchronizes catalog counts, and runs catalog/profile/device-database validators. No Report Card scores or unverified product claims are inferred by admission.' >/dev/null
+            existing="$(gh pr list --head "${BRANCH}" --base main --state open --json number --jq '.[0].number // empty')"
           fi
-          echo "number=${pr}" >> "$GITHUB_OUTPUT"
+          test -n "${existing}"
+          echo "number=${existing}" >> "$GITHUB_OUTPUT"
 
       - name: Wait for PR checks and merge
         if: steps.commit.outputs.changed == 'true'
