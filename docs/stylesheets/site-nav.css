@@ -14,16 +14,16 @@
   text-decoration-thickness: 0.14em;
 }
 
-@media screen and (min-width: 76.25em) {
-  /* The left rail is the site's contents: Home, Finder, Research & News,
-     Tools, and About. Page-level tables of contents are intentionally hidden
-     so the right side remains open reading space. */
+/* One rail, one canvas. Once Material switches to its desktop layout, the
+   secondary rail disappears and its useful page links move into the primary
+   rail under ABOUT. */
+@media screen and (min-width: 60em) {
   .md-sidebar--primary {
     display: block;
   }
 
   .md-sidebar--secondary {
-    display: none;
+    display: none !important;
   }
 
   .md-sidebar--primary .md-sidebar__scrollwrap {
@@ -31,15 +31,82 @@
     padding-right: 0.8rem;
   }
 
-  .md-content {
-    min-width: 0;
+  .md-main__inner {
+    max-width: 96rem;
   }
 
-  /* Material already provides full-site search; keep it visible and obvious. */
+  .md-content,
+  .md-content__inner {
+    min-width: 0;
+    max-width: none;
+  }
+
+  .md-content__inner {
+    margin-right: clamp(1rem, 2.5vw, 2.5rem);
+  }
+
+  .gr-left-rail-extra {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(17, 24, 23, 0.12);
+  }
+
+  .gr-left-rail-search {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    width: 100%;
+    margin: 0 0 1rem;
+    padding: .62rem .72rem;
+    border: 1px solid rgba(17, 24, 23, .18);
+    border-radius: .55rem;
+    background: color-mix(in srgb, var(--md-default-bg-color) 92%, var(--md-default-fg-color) 8%);
+    color: var(--md-default-fg-color);
+    font: inherit;
+    font-size: .72rem;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .gr-left-rail-search:hover,
+  .gr-left-rail-search:focus-visible {
+    border-color: var(--md-accent-fg-color);
+    outline: none;
+  }
+
+  .gr-left-rail-search > span:first-child {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .gr-left-rail-about__title {
+    margin: 0 0 .45rem;
+    color: var(--md-default-fg-color--light);
+    font-size: .62rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+
+  .gr-left-rail-about__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .gr-left-rail-about__list .md-nav__link {
+    margin-top: .45rem;
+    font-size: .7rem;
+    line-height: 1.3;
+  }
+
+  .gr-left-rail-about__list .md-nav__list {
+    margin-left: .55rem;
+  }
+
+  /* Search now has a permanent entrance in the left rail. Keep Material's
+     actual search machinery available as the overlay that opens from it. */
   .md-search {
-    display: block;
     width: min(24rem, 34vw);
-    margin-left: auto;
   }
 
   .md-search__form {
