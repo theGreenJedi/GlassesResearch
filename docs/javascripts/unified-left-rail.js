@@ -1,8 +1,8 @@
 (() => {
   const buildUnifiedRail = () => {
     const primary = document.querySelector('.md-sidebar--primary .md-sidebar__inner');
-    const secondary = document.querySelector('.md-sidebar--secondary .md-sidebar__inner');
-    if (!primary || !secondary) return;
+    const secondary = document.querySelector('.md-sidebar--secondary');
+    if (!primary) return;
 
     primary.querySelectorAll('[data-gr-left-rail-extra]').forEach((node) => node.remove());
 
@@ -10,20 +10,16 @@
     extra.className = 'gr-left-rail-extra';
     extra.dataset.grLeftRailExtra = 'true';
 
-    const searchButton = document.createElement('button');
-    searchButton.type = 'button';
-    searchButton.className = 'gr-left-rail-search';
-    searchButton.setAttribute('aria-label', 'Search GlassesResearch');
-    searchButton.innerHTML = '<span aria-hidden="true">⌕</span><span>Search</span>';
-    searchButton.addEventListener('click', () => {
-      const searchToggle = document.querySelector('label[for="__search"]');
-      const searchInput = document.querySelector('.md-search__input');
-      if (searchToggle) searchToggle.click();
-      window.setTimeout(() => searchInput?.focus(), 0);
-    });
-    extra.appendChild(searchButton);
+    /* Put the real Material search control in the left rail rather than
+       leaving a second search surface floating at the far right of the header. */
+    const search = document.querySelector('.md-header .md-search');
+    if (search) {
+      search.classList.add('gr-left-rail-search');
+      extra.appendChild(search);
+    }
 
-    const tocNav = secondary.querySelector('nav.md-nav--secondary');
+    /* Preserve useful page-local navigation before removing the secondary rail. */
+    const tocNav = secondary?.querySelector('nav.md-nav--secondary');
     const tocList = tocNav?.querySelector(':scope > .md-nav__list');
     if (tocList && tocList.children.length) {
       const about = document.createElement('section');
@@ -42,6 +38,11 @@
     }
 
     primary.appendChild(extra);
+
+    /* Do not merely hide the old rail: remove it from the page layout so
+       Material cannot continue reserving a phantom right-hand column. */
+    secondary?.remove();
+    document.documentElement.classList.add('gr-one-rail-ready');
   };
 
   document.addEventListener('DOMContentLoaded', buildUnifiedRail);
