@@ -26,27 +26,46 @@
   border-top: 1px solid rgba(17, 24, 23, 0.12);
 }
 
-/* The real Material search component is moved into the left rail. */
-.md-sidebar--primary .gr-left-rail-search {
-  position: relative;
-  display: block;
+/* Search lives visibly in the left rail while Material's native search overlay
+   remains the machinery underneath. */
+.gr-left-rail-search-launcher {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
   width: 100%;
   min-width: 0;
   margin: 0 0 1rem;
-  padding: 0;
-}
-
-.md-sidebar--primary .gr-left-rail-search .md-search__form {
-  width: 100%;
-  height: 2.2rem;
-  border: 1px solid rgba(17, 24, 23, .18) !important;
+  padding: .58rem .7rem;
+  border: 1px solid rgba(17, 24, 23, .18);
   border-radius: .55rem !important;
-  background: color-mix(in srgb, var(--md-default-bg-color) 92%, var(--md-default-fg-color) 8%) !important;
+  background: color-mix(in srgb, var(--md-default-bg-color) 92%, var(--md-default-fg-color) 8%);
+  color: var(--md-default-fg-color--light);
+  box-shadow: none;
+  font: inherit;
+  font-size: .7rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: text;
 }
 
-.md-sidebar--primary .gr-left-rail-search .md-search__input {
-  width: 100%;
-  font-size: .7rem;
+.gr-left-rail-search-launcher:hover,
+.gr-left-rail-search-launcher:focus-visible {
+  border-color: var(--md-accent-fg-color);
+  background: var(--md-default-bg-color);
+  transform: none;
+}
+
+.gr-left-rail-search-icon {
+  flex: 0 0 auto;
+  font-size: .95rem;
+  line-height: 1;
+}
+
+.gr-left-rail-search-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .gr-left-rail-about__title {
@@ -104,6 +123,27 @@
     width: 100%;
     max-width: none !important;
     margin-right: 0;
+  }
+
+  /* The header no longer needs to advertise search on the far right. The
+     left-rail launcher is the visible entrance; the native control remains
+     available only as the overlay it opens. */
+  .md-header .md-search {
+    width: 0;
+    min-width: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .md-header .md-search__form {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .md-search[data-md-component="search"]:focus-within .md-search__form,
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+    visibility: visible;
+    pointer-events: auto;
   }
 
   /* Keep prose readable while allowing research surfaces, lists, tables,
