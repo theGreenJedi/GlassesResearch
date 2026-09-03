@@ -5,7 +5,7 @@ Smart glasses are rarely isolated products. They sit inside a stack of platforms
 <div class="gr-ecosystem-shell" data-ecosystem-constellation>
   <header class="gr-ecosystem-head">
     <div>
-      <p class="gr-kicker">The Centaur stack</p>
+      <p class="gr-kicker">Ecosystem map</p>
       <h2>See what your glasses depend on.</h2>
       <p>Select a node to trace the immediate ecosystem around it. Established evidence stays solid; unresolved or inferred relationships remain visually distinct rather than being promoted to fact.</p>
     </div>
@@ -13,7 +13,6 @@ Smart glasses are rarely isolated products. They sit inside a stack of platforms
       <button type="button" data-ecosystem-filter="all" aria-pressed="true">Everything</button>
       <button type="button" data-ecosystem-filter="hardware" aria-pressed="false">Glasses &amp; lineages</button>
       <button type="button" data-ecosystem-filter="platforms" aria-pressed="false">Platforms &amp; control</button>
-      <button type="button" data-ecosystem-filter="centaur" aria-pressed="false">Centaur stack</button>
     </div>
   </header>
   <div class="gr-ecosystem-stage">
@@ -21,7 +20,7 @@ Smart glasses are rarely isolated products. They sit inside a stack of platforms
       <p class="gr-ecosystem-noscript">Loading the evidence-backed ecosystem constellation…</p>
     </div>
     <aside class="gr-ecosystem-inspector" data-ecosystem-inspector aria-live="polite">
-      <p class="gr-inspector-eyebrow">Trace the stack</p>
+      <p class="gr-inspector-eyebrow">Trace a relationship</p>
       <h3>Loading relationships…</h3>
       <p>The graph is built directly from the GlassesResearch relationship dataset.</p>
     </aside>
