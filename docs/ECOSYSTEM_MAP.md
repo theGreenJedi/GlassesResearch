@@ -4,17 +4,15 @@ Smart glasses are rarely isolated products. They sit inside a stack of platforms
 
 <div class="gr-ecosystem-shell" data-ecosystem-constellation>
   <header class="gr-ecosystem-head">
-    <div>
-      <p class="gr-kicker">Ecosystem map</p>
-      <h2>See what your glasses depend on.</h2>
-      <p>Select a node to trace the immediate ecosystem around it. Established evidence stays solid; unresolved or inferred relationships remain visually distinct rather than being promoted to fact.</p>
-    </div>
-    <div class="gr-ecosystem-controls" aria-label="Filter ecosystem map">
-      <button type="button" data-ecosystem-filter="all" aria-pressed="true">Everything</button>
-      <button type="button" data-ecosystem-filter="hardware" aria-pressed="false">Glasses &amp; lineages</button>
-      <button type="button" data-ecosystem-filter="platforms" aria-pressed="false">Platforms &amp; control</button>
-    </div>
+    <p class="gr-kicker">Ecosystem map</p>
+    <h2>See what your glasses depend on.</h2>
+    <p class="gr-ecosystem-dek">Select a node to trace the immediate ecosystem around it. Established evidence stays solid; unresolved or inferred relationships remain visually distinct rather than being promoted to fact.</p>
   </header>
+  <div class="gr-ecosystem-controls" aria-label="Filter ecosystem map">
+    <button type="button" data-ecosystem-filter="all" aria-pressed="true">Everything</button>
+    <button type="button" data-ecosystem-filter="hardware" aria-pressed="false">Glasses &amp; lineages</button>
+    <button type="button" data-ecosystem-filter="platforms" aria-pressed="false">Platforms &amp; control</button>
+  </div>
   <div class="gr-ecosystem-stage">
     <div class="gr-ecosystem-canvas" data-ecosystem-canvas aria-live="polite">
       <p class="gr-ecosystem-noscript">Loading the evidence-backed ecosystem constellation…</p>
