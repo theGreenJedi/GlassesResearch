@@ -35,10 +35,15 @@
 
 .gr-ecosystem-head {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1rem 2rem;
-  align-items: end;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.15rem;
+  align-items: start;
   padding: clamp(1.25rem, 3vw, 2.25rem) clamp(1.25rem, 3vw, 2.5rem) 1.2rem;
+}
+
+.gr-ecosystem-head > div:first-child {
+  width: 100%;
+  max-width: none;
 }
 
 .gr-ecosystem-head .gr-kicker {
@@ -52,7 +57,8 @@
 
 .gr-ecosystem-head h2 {
   margin: 0;
-  max-width: 18ch;
+  width: 100%;
+  max-width: none;
   color: #fff;
   font-size: clamp(1.85rem, 4.2vw, 4rem);
   line-height: .96;
@@ -60,7 +66,8 @@
 }
 
 .gr-ecosystem-head p:last-child {
-  max-width: 40rem;
+  width: 100%;
+  max-width: none;
   margin: .8rem 0 0;
   color: rgba(246, 248, 255, .7);
   font-size: .95rem;
@@ -68,8 +75,9 @@
 
 .gr-ecosystem-controls {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: .45rem;
 }
 
