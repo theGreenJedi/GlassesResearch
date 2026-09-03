@@ -1,0 +1,305 @@
+.gr-ecosystem-shell {
+  margin: 1.5rem 0 2rem;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(68, 214, 196, .12), transparent 30%),
+    radial-gradient(circle at 82% 24%, rgba(140, 111, 255, .14), transparent 32%),
+    linear-gradient(145deg, #080b12 0%, #0d1220 56%, #0a0e17 100%);
+  box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, .22);
+  color: #f6f8ff;
+}
+
+.gr-ecosystem-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem 2rem;
+  align-items: end;
+  padding: clamp(1.25rem, 3vw, 2.25rem) clamp(1.25rem, 3vw, 2.5rem) 1rem;
+}
+
+.gr-ecosystem-head .gr-kicker {
+  margin: 0 0 .35rem;
+  color: #82e8dc;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.gr-ecosystem-head h2 {
+  margin: 0;
+  max-width: 17ch;
+  color: #fff;
+  font-size: clamp(1.85rem, 4.2vw, 4.1rem);
+  line-height: .95;
+  letter-spacing: -.045em;
+}
+
+.gr-ecosystem-head p:last-child {
+  max-width: 36rem;
+  margin: .75rem 0 0;
+  color: rgba(246, 248, 255, .7);
+  font-size: .95rem;
+}
+
+.gr-ecosystem-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .45rem;
+}
+
+.gr-ecosystem-controls button {
+  appearance: none;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  background: rgba(255,255,255,.055);
+  color: rgba(255,255,255,.78);
+  padding: .52rem .8rem;
+  font: inherit;
+  font-size: .75rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease, color .18s ease;
+}
+
+.gr-ecosystem-controls button:hover,
+.gr-ecosystem-controls button:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(130,232,220,.7);
+  color: #fff;
+  outline: none;
+}
+
+.gr-ecosystem-controls button[aria-pressed="true"] {
+  border-color: #82e8dc;
+  background: rgba(130,232,220,.12);
+  color: #fff;
+}
+
+.gr-ecosystem-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 24rem);
+  min-height: clamp(34rem, 66vw, 49rem);
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.gr-ecosystem-canvas {
+  position: relative;
+  min-height: 34rem;
+  overflow: hidden;
+}
+
+.gr-ecosystem-canvas::before,
+.gr-ecosystem-canvas::after {
+  content: "";
+  position: absolute;
+  inset: 12% 18%;
+  border: 1px solid rgba(255,255,255,.045);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.gr-ecosystem-canvas::after {
+  inset: 27% 32%;
+}
+
+.gr-ecosystem-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+}
+
+.gr-ecosystem-edge {
+  stroke: rgba(205, 216, 255, .23);
+  stroke-width: 1.25;
+  transition: opacity .2s ease, stroke .2s ease, stroke-width .2s ease;
+}
+
+.gr-ecosystem-edge[data-status="inferred"],
+.gr-ecosystem-edge[data-status="unresolved"] {
+  stroke-dasharray: 4 6;
+}
+
+.gr-ecosystem-edge.is-muted { opacity: .08; }
+.gr-ecosystem-edge.is-active {
+  opacity: .92;
+  stroke: #82e8dc;
+  stroke-width: 2.1;
+}
+
+.gr-ecosystem-node {
+  cursor: pointer;
+  transition: opacity .2s ease;
+}
+
+.gr-ecosystem-node.is-muted { opacity: .15; }
+.gr-ecosystem-node circle {
+  fill: rgba(20, 26, 41, .96);
+  stroke: rgba(255,255,255,.24);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.28));
+  transition: stroke .18s ease, stroke-width .18s ease, fill .18s ease;
+}
+
+.gr-ecosystem-node:hover circle,
+.gr-ecosystem-node:focus-visible circle,
+.gr-ecosystem-node.is-active circle {
+  fill: rgba(27, 37, 56, 1);
+  stroke: #82e8dc;
+  stroke-width: 2.7;
+}
+
+.gr-ecosystem-node:focus-visible { outline: none; }
+
+.gr-ecosystem-node[data-type="model"] circle { stroke: #f7f7ff; }
+.gr-ecosystem-node[data-type="operating_platform"] circle { stroke: #8b7bff; }
+.gr-ecosystem-node[data-type="sdk_api"] circle { stroke: #82e8dc; }
+.gr-ecosystem-node[data-type="companion_app"] circle { stroke: #ffc66d; }
+.gr-ecosystem-node[data-type="community_project"] circle { stroke: #ff8faf; }
+.gr-ecosystem-node[data-type="ai_service"] circle { stroke: #7eb7ff; }
+.gr-ecosystem-node[data-type="protocol_transport"] circle { stroke: #9aa6b8; }
+.gr-ecosystem-node[data-type="lineage"] circle { stroke: #cda7ff; }
+
+.gr-ecosystem-node text {
+  pointer-events: none;
+  fill: #fff;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.gr-ecosystem-node .gr-node-name {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: -.015em;
+}
+
+.gr-ecosystem-node .gr-node-type {
+  fill: rgba(255,255,255,.56);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.gr-ecosystem-inspector {
+  position: relative;
+  z-index: 2;
+  padding: clamp(1.15rem, 2.5vw, 2rem);
+  border-left: 1px solid rgba(255,255,255,.08);
+  background: rgba(7, 10, 17, .7);
+  backdrop-filter: blur(18px);
+}
+
+.gr-ecosystem-inspector .gr-inspector-eyebrow {
+  margin: 0 0 .6rem;
+  color: #82e8dc;
+  font-size: .68rem;
+  font-weight: 850;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.gr-ecosystem-inspector h3 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.4rem, 2.2vw, 2.15rem);
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+
+.gr-ecosystem-inspector > p {
+  color: rgba(255,255,255,.66);
+  font-size: .88rem;
+}
+
+.gr-ecosystem-relations {
+  display: grid;
+  gap: .65rem;
+  margin-top: 1.25rem;
+}
+
+.gr-ecosystem-relation {
+  display: block;
+  padding: .8rem .85rem;
+  border: 1px solid rgba(255,255,255,.085);
+  border-radius: .9rem;
+  background: rgba(255,255,255,.035);
+  color: inherit;
+  text-decoration: none;
+}
+
+.gr-ecosystem-relation:hover {
+  border-color: rgba(130,232,220,.42);
+  background: rgba(130,232,220,.06);
+}
+
+.gr-ecosystem-relation strong {
+  display: block;
+  margin-bottom: .18rem;
+  color: #fff;
+  font-size: .86rem;
+}
+
+.gr-ecosystem-relation span {
+  display: block;
+  color: rgba(255,255,255,.56);
+  font-size: .72rem;
+  line-height: 1.35;
+}
+
+.gr-ecosystem-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem 1rem;
+  padding: .8rem clamp(1.25rem, 3vw, 2.5rem) 1.15rem;
+  border-top: 1px solid rgba(255,255,255,.08);
+  color: rgba(255,255,255,.56);
+  font-size: .69rem;
+}
+
+.gr-ecosystem-legend span::before {
+  content: "";
+  display: inline-block;
+  width: .52rem;
+  height: .52rem;
+  margin-right: .38rem;
+  border-radius: 50%;
+  background: var(--dot, #fff);
+}
+
+.gr-ecosystem-legend .model { --dot: #f7f7ff; }
+.gr-ecosystem-legend .platform { --dot: #8b7bff; }
+.gr-ecosystem-legend .developer { --dot: #82e8dc; }
+.gr-ecosystem-legend .app { --dot: #ffc66d; }
+.gr-ecosystem-legend .community { --dot: #ff8faf; }
+.gr-ecosystem-legend .service { --dot: #7eb7ff; }
+
+.gr-ecosystem-noscript {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.75);
+}
+
+@media (max-width: 860px) {
+  .gr-ecosystem-head { grid-template-columns: 1fr; }
+  .gr-ecosystem-controls { justify-content: flex-start; }
+  .gr-ecosystem-stage { grid-template-columns: 1fr; }
+  .gr-ecosystem-canvas { min-height: 31rem; }
+  .gr-ecosystem-inspector {
+    border-top: 1px solid rgba(255,255,255,.08);
+    border-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gr-ecosystem-node,
+  .gr-ecosystem-node circle,
+  .gr-ecosystem-edge,
+  .gr-ecosystem-controls button { transition: none; }
+}
