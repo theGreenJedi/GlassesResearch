@@ -8,6 +8,7 @@ The newest verified changes, useful tools, developments we are watching, and res
 
 | Date | What changed | Go deeper |
 |---|---|---|
+| Sep. 3 | **HTC VIVE Eagle reaches U.S. retail availability** — HTC’s U.S. VIVE product catalog now lists VIVE Eagle with a Buy path, while current U.S. coverage corroborates a $499 starting price and September 3 U.S. availability. | [verified article](news/articles/2026-09-03-vive-eagle-us-availability.md) |
 | Aug. 28 | **Meta tightened capture-light enforcement** so covering the front LED during an active recording stops camera operation as the software update rolls out. | [verified article](news/articles/2026-08-28-meta-capture-led-recording-fix.md) · [follow privacy/software](?brand=Meta&topic=privacy_policy&topic=firmware_software#verified-research-alerts) |
 | Jul. 14 | **New York's Unified Court System adopted a recording-capable smart-glasses prohibition** effective July 20. GlassesResearch discovered the policy late and records that delay as a freshness failure. | [verified article](news/articles/2026-07-14-new-york-courts-smart-glasses-policy.md) · [follow privacy/policy](?topic=privacy_policy#verified-research-alerts) |
 | Aug. 24 | **Meta Adventurer** entered the canonical catalog as **GLS-0165** through verified Meta and Best Buy acquisition routes. | [verified article](news/articles/2026-08-24-meta-adventurer-gls-0165.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0165/) |
@@ -18,6 +19,21 @@ The newest verified changes, useful tools, developments we are watching, and res
 | Aug. 17 | Lucyd Armor was admitted as **GLS-0159**, bringing the canonical purchaser-history ledger to 158 models. | [verified article](news/articles/2026-08-17-lucyd-armor-gls-0159.md) · [Model page](https://glassesresearch.org/models/catalog/gls-0159/) · [GLS resolver](https://glassesresearch.org/gls/gls-0159/) |
 | Aug. 17 | Halliday G2 was resolved as a distinct pre-release successor/sibling, not a score-inheriting revision of GLS-0049. | [Watching](#august-17-2026-halliday-g2-remains-on-watching-until-preorders-open) · [current Halliday model](https://glassesresearch.org/models/catalog/gls-0049/) |
 | Aug. 13 | CyanBridge v2.1.1 expanded alternate HeyCyan software paths, including remote OpenAI-compatible endpoints and improved device diagnostics. | [Hacks & tools](#august-13-2026-cyanbridge-v211-expands-heycyanw610-owner-control-paths) · [W610](https://glassesresearch.org/models/catalog/gls-0039/) |
+
+### September 3, 2026 — HTC VIVE Eagle reaches U.S. retail availability
+
+<!-- newsroom-package: GRNP-D7A34C36E3E6 -->
+
+HTC’s U.S. VIVE product catalog now lists VIVE Eagle with a Buy path, while current U.S. coverage corroborates a $499 starting price and September 3 U.S. availability.
+
+**Verified claims:**
+
+- HTC’s U.S. VIVE product catalog lists VIVE Eagle and exposes a Buy path.
+- Independent September 3 reporting places U.S. VIVE Eagle pricing at $499 to start.
+
+Continue: [verified article](news/articles/2026-09-03-vive-eagle-us-availability.md)
+
+Sources: <https://www.vive.com/us/product/> · <https://www.androidauthority.com/htc-vive-eagle-us-3706492/> · <https://www.latimes.com/business/story/2026-09-03/htc-brings-its-smart-glasses-to-u-s-as-privacy-backlash-grows>
 
 ### August 28, 2026 — Meta closes the mid-recording capture-LED bypass
 
