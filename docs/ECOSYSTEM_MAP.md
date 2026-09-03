@@ -33,8 +33,6 @@ Smart glasses are rarely isolated products. They sit inside a stack of platforms
   </div>
 </div>
 
-The machine-readable source is [`data/ecosystem-relations.json`](../data/ecosystem-relations.json). Every edge carries evidence, provenance, confidence, and status. An absent edge means **not mapped yet**, not **no relationship**.
-
 ## Seeded ecosystems
 
 | Ecosystem | Hardware starting points | Connected layers | Research path |
