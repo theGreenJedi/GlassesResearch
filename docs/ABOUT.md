@@ -2,7 +2,7 @@
 
 GlassesResearch is an independent, vendor-neutral research institution for smart glasses, AI eyewear, and wearable computing.
 
-The public site leads with research. This page gathers the mission, operating principles, evidence rules, privacy promise, preservation methods, and project governance for readers who want to understand how the work is organized.
+The public site leads with research. This page gathers the mission, operating principles, evidence rules, privacy promise, preservation methods, and project governance for readers who want to understand how the work is organized. For a compact map of every major public section, use the [complete site contents](CONTENTS.md).
 
 ## Why the project exists
 
