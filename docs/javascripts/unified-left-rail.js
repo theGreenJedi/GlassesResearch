@@ -7,6 +7,31 @@
     primary.querySelectorAll('[data-gr-left-rail-search]').forEach((node) => node.remove());
     primary.querySelectorAll('[data-gr-left-rail-about]').forEach((node) => node.remove());
 
+    /* Make the visible GlassesResearch title in the primary rail a reliable
+       home link without disturbing Material's drawer/title structure. */
+    const navTitle = primary.querySelector('.md-nav--primary > .md-nav__title, .md-nav__title');
+    if (navTitle && !navTitle.querySelector('[data-gr-home-link]')) {
+      const textNodes = Array.from(navTitle.childNodes).filter(
+        (node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim() === 'GlassesResearch'
+      );
+      if (textNodes.length) {
+        const homeLink = document.createElement('a');
+        homeLink.href = '/';
+        homeLink.className = 'gr-left-rail-home-link';
+        homeLink.dataset.grHomeLink = 'true';
+        homeLink.textContent = 'GlassesResearch';
+        textNodes[0].replaceWith(homeLink);
+      } else if (navTitle.textContent.trim() === 'GlassesResearch') {
+        navTitle.textContent = '';
+        const homeLink = document.createElement('a');
+        homeLink.href = '/';
+        homeLink.className = 'gr-left-rail-home-link';
+        homeLink.dataset.grHomeLink = 'true';
+        homeLink.textContent = 'GlassesResearch';
+        navTitle.appendChild(homeLink);
+      }
+    }
+
     /* Keep the search entrance at the top of the visible left rail so it can
        never be pushed below long navigation or page-local section lists. */
     const searchLauncher = document.createElement('button');
