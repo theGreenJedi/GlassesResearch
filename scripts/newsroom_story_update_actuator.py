@@ -12,7 +12,11 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-import newsroom_news_actuator as core
+# Import the resolver shim first so its conservative canonical-model resolver is
+# installed into the shared core module, then use the core API directly.  The shim
+# intentionally no longer re-exports the old actuator API.
+import newsroom_news_actuator as resolver
+import newsroom_news_actuator_core as core
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGES = ROOT / "research" / "newsroom-packages"
@@ -50,6 +54,7 @@ def process_all(package_dir: Path = PACKAGES, root: Path = ROOT) -> dict[str, in
 
 
 def self_test() -> None:
+    assert core.existing_gls_ids is resolver.existing_gls_ids
     assert eligible({"news.update_story"})
     assert eligible({"news.publish", "news.update_story"})
     assert not eligible({"news.publish"})
