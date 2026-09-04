@@ -9,7 +9,7 @@ import re
 from datetime import UTC, datetime
 from pathlib import Path
 
-from catalog_metadata import canonical_updated_at
+from catalog_metadata import canonical_model_count, canonical_updated_at
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -51,7 +51,7 @@ def render_homepage(path: str, payload: dict) -> None:
 
     target.write_text(text, encoding="utf-8")
     print(
-        "Rendered homepage status from the same canonical build payload: "
+        "Rendered homepage status from the canonical ledger payload: "
         f"{replacements['models']} models, {replacements['report-cards']} Report Cards, "
         f"updated {replacements['freshness']}"
     )
@@ -70,13 +70,23 @@ def main() -> None:
 
     devices = load(args.devices)
     report_cards = load(args.report_cards)
-    model_count = devices.get("record_count")
     records = devices.get("records", [])
-    if not isinstance(model_count, int):
-        model_count = len(records)
-    if model_count != len(records):
+    device_count = devices.get("record_count")
+    if not isinstance(device_count, int):
+        device_count = len(records)
+    if device_count != len(records):
         raise SystemExit(
-            f"device count invariant failed: record_count={model_count}, records={len(records)}"
+            f"device count invariant failed: record_count={device_count}, records={len(records)}"
+        )
+
+    # models/THE_LIST.md is the only authority for the canonical count. The
+    # generated device database must agree with it or the build stops rather
+    # than publishing a second, conflicting number.
+    model_count = canonical_model_count(ROOT)
+    if device_count != model_count:
+        raise SystemExit(
+            "canonical model count drift: "
+            f"THE_LIST.md={model_count}, generated devices.json={device_count}"
         )
 
     scored = 0
@@ -86,7 +96,7 @@ def main() -> None:
             scored += 1
 
     payload = {
-        "schema_version": 2,
+        "schema_version": 3,
         "canonical_model_count": model_count,
         "catalog_updated_at": canonical_updated_at(ROOT),
         "scored_report_card_count": scored,
