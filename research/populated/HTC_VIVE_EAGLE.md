@@ -1,9 +1,12 @@
 # HTC VIVE Eagle — populated research record
 
-Source basis: `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, `EV-0041`, `EV-0042`, and HTC primary product/support sources cited there.
+Source basis: `docs/report-cards/HIGH_THROUGHPUT_BATCH_01.md`, `EV-0041`, `EV-0042`, HTC primary product/support sources cited there, and the verified September 3, 2026 newsroom availability publication.
 
 ## Hardware
 Completed research documents Snapdragon AR1 Gen 1, 12 MP ultrawide camera, 4 GB RAM, 32 GB storage, four-microphone beamforming array, stereo open-ear speakers, Wi-Fi 6E, Bluetooth 5.3, IP54, 235 mAh battery and encrypted local storage. Weight is roughly 49–52 g with lens depending on configuration.
+
+## U.S. availability
+The September 3, 2026 verified newsroom publication establishes a material U.S. availability change: HTC's U.S. VIVE catalog exposes a Buy path for VIVE Eagle, while same-day independent reporting corroborates a $499 starting price and September 3 U.S. availability. See `docs/news/articles/2026-09-03-vive-eagle-us-availability.md`.
 
 ## Optical serviceability
 EV-0042 confirms a specialist-serviceable optical path. HTC permits qualified eye-care professionals to replace VIVE Eagle lenses and documents prescription support from -8D to +4D. The stock Sun and AdaptiveSun regional configurations cited are non-prescription, so prescription use requires replacement lenses. No post-installation electronic calibration is documented, but independent optician availability, lens templates, coating options and regional cost remain unverified.
@@ -19,4 +22,4 @@ EV-0041 resolves the broad offline question at function level. Button photo/vide
 Local AES-256 storage improves privacy and makes capture more durable than the defining AI layer. It does not establish replaceable system software, unrestricted endpoints or a public hardware SDK. The preservation posture is therefore mixed: durable camera/audio utility, app-dependent media bridge, and service-dependent advanced AI.
 
 ## Evidence gaps
-First-run/account and sign-out behavior, standard filesystem access to local media, provider-selection and regional limits, non-optical repairability, battery aging, protocol exposure, firmware policy and current price/value need field-level population. Optical follow-up remains for independent optician availability, edging/template data, coatings, cost and warranty effects.
+First-run/account and sign-out behavior, standard filesystem access to local media, provider-selection and regional limits, non-optical repairability, battery aging, protocol exposure, firmware policy and value grading need field-level population. Optical follow-up remains for independent optician availability, edging/template data, coatings, cost and warranty effects.
