@@ -27,6 +27,31 @@
     return li;
   };
 
+  const replaceGenericRelatedModels = (article, hub) => {
+    const curated = (hub.related_models || []).filter((item) => safeInternal(item?.url));
+    if (!curated.length) return;
+
+    const heading = [...article.querySelectorAll('h2')]
+      .find((node) => node.textContent?.trim().toLowerCase() === 'related models');
+    if (!heading) return;
+
+    let node = heading.nextElementSibling;
+    while (node && !/^H[12]$/.test(node.tagName)) {
+      const next = node.nextElementSibling;
+      node.remove();
+      node = next;
+    }
+
+    heading.textContent = 'Lineage and ecosystem neighbors';
+    const intro = document.createElement('p');
+    intro.textContent = 'Curated relationships are shown before generic capability similarity. Shared software or ecosystem membership does not imply identical hardware.';
+    heading.after(intro);
+
+    const ul = document.createElement('ul');
+    curated.map(makeLink).filter(Boolean).forEach((li) => ul.append(li));
+    intro.after(ul);
+  };
+
   const render = (hub) => {
     const article = document.querySelector('article.md-content__inner, main .md-content__inner, main article');
     if (!article || article.querySelector('[data-gr-model-hub]')) return;
@@ -66,6 +91,8 @@
     const firstSection = article.querySelector('h2');
     if (firstSection) firstSection.before(section);
     else article.append(section);
+
+    replaceGenericRelatedModels(article, hub);
   };
 
   const run = async () => {
