@@ -18,19 +18,35 @@ candidates_path = ROOT / "data/model-candidates.json"
 
 ids = re.findall(r"^\| (GLS-\d{4}) \|", the_list, flags=re.M)
 unique_ids = set(ids)
+canonical_count = len(unique_ids)
 count_match = re.search(r"\*\*Count:\*\* (\d+)", the_list)
 if not count_match:
     errors.append("The List has no canonical Count field")
 else:
     declared = int(count_match.group(1))
-    if declared != len(unique_ids):
-        errors.append(f"The List declares {declared} models but contains {len(unique_ids)} unique GLS IDs")
+    if declared != canonical_count:
+        errors.append(f"The List declares {declared} models but contains {canonical_count} unique GLS IDs")
 
 for label, text in (("models/README.md", model_readme), ("README.md", root_readme)):
     counts = [int(x) for x in re.findall(r"\b(\d+) (?:purchasable smart-glasses models|models and generations)", text)]
     for count in counts:
-        if count != len(unique_ids):
-            errors.append(f"{label} says {count} models; canonical ledger has {len(unique_ids)}")
+        if count != canonical_count:
+            errors.append(f"{label} says {count} models; canonical ledger has {canonical_count}")
+
+# Historical milestones are allowed to remain in prose. These patterns are reserved
+# for statements that explicitly claim to describe the *current* canonical total.
+current_count_patterns = (
+    ("active canonical count is now", r"active canonical count is now \*\*(\d+)\*\*"),
+    ("returns the active canonical count to", r"returns the active canonical count to \*\*(\d+)\*\*"),
+    ("every active canonical record", r"\*\*every one of the (\d+) active canonical smart-glasses records\*\*"),
+)
+for label, pattern in current_count_patterns:
+    for match in re.finditer(pattern, model_readme):
+        count = int(match.group(1))
+        if count != canonical_count:
+            errors.append(
+                f"models/README.md current-count statement ({label}) says {count}; canonical ledger has {canonical_count}"
+            )
 
 if candidates_path.exists():
     payload = json.loads(candidates_path.read_text(encoding="utf-8"))
@@ -72,4 +88,4 @@ if errors:
         print(f"- {error}")
     sys.exit(1)
 
-print(f"Catalog consistency check passed: {len(unique_ids)} canonical models; {len(lineage_files)} lineage chapters.")
+print(f"Catalog consistency check passed: {canonical_count} canonical models; {len(lineage_files)} lineage chapters.")
