@@ -15,7 +15,7 @@ import tempfile
 from pathlib import Path
 from typing import Any
 
-from scripts import newsroom_news_actuator_core as core
+import newsroom_news_actuator_core as core
 
 
 def normalize(value: str) -> str:
@@ -40,7 +40,6 @@ def canonical_aliases(ledger: str) -> dict[str, set[str]]:
     aliases: dict[str, set[str]] = {}
     row = re.compile(r"^\|\s*(GLS-\d{4})\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|", re.MULTILINE)
     for model_id, maker, model in row.findall(ledger):
-        maker_norm = normalize(maker)
         model_norm = normalize(model)
         candidates = {normalize(f"{maker} {model}")}
         # Model-only resolution is allowed only for multi-token canonical names.
