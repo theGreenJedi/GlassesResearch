@@ -2,14 +2,8 @@ name: Hourly smart-glasses knowledge intake
 
 on:
   schedule:
+    # Dead-man fallback. Fresh visible wire changes dispatch this workflow directly.
     - cron: "17 * * * *"
-  push:
-    branches: [main]
-    paths:
-      - "data/wire-state.json"
-      - "scripts/import_wire_news.py"
-      - "scripts/test_import_wire_news.py"
-      - ".github/workflows/hourly-news-intake.yml"
   workflow_dispatch:
 
 permissions:
@@ -94,6 +88,6 @@ jobs:
             echo "The durable editorial queue is stored on the \`knowledge-intake\` branch."
             echo "Hourly intake combines institutional news, ordinary-web discovery, and the public commodity wire before editorial triage."
             echo "Commodity wire reports remain unverified candidates; discovery cannot authorize publication."
-            echo "A visible wire change triggers this intake immediately; the hourly schedule remains a fallback."
+            echo "A visible wire change dispatches this intake directly; the hourly schedule is only a dead-man fallback."
             echo "Discovery optimizes for recall; triage and verification remain downstream precision gates."
           } >> "$GITHUB_STEP_SUMMARY"

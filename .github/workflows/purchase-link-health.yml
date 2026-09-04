@@ -3,7 +3,8 @@ name: Purchase link health
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 9 * * *'
+    # Staggered away from the 09:17 UTC timeline job.
+    - cron: '29 9 * * *'
 
 permissions:
   contents: write

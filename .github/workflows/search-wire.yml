@@ -79,6 +79,17 @@ jobs:
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
+      - name: Dispatch knowledge intake for a fresh visible wire
+        if: steps.publish.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh workflow run hourly-news-intake.yml \
+            --repo "${GITHUB_REPOSITORY}" \
+            --ref main
+
       - name: Deploy bot-written wire changes
         if: steps.publish.outputs.changed == 'true' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
         env:
