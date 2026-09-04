@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-04T08:16:04.165712+00:00`
+Generated: `2026-09-04T09:06:58.089952+00:00`
 
 - Intake files inspected: **145**
 - Candidates retained in this review window/history: **1224**
@@ -139,13 +139,14 @@ Generated: `2026-09-04T08:16:04.165712+00:00`
 | normal | needs_editorial_verification | direct | [Unboxing and Review of AI Smart Glasses \| TikTok](https://www.tiktok.com/@aishaboutique01/video/7616054036097191190) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Uni student caught wearing smart glasses in exam - 1News](https://news.google.com/rss/articles/CBMijAFBVV95cUxNSlJSTTZjb0x5bDExTGg4blBPaFJlcmtTOW9PU2xHYVQ4c09yYm80ZE5CQUlPcF9GV19oMnBXRFpGOXc0aGpzTFczZUo3Tl9WM1RrZzNDUmVvZVQxVGNfTDVzTXlONzVfQ3luZmdnRnJXZFdrWk4xeUJEXzMzRjFTa1hYMm5CV2hQWFRFSw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [University of Auckland student caught wearing smart glasses in exam](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9a597b1c7f4d41927ce9103323d80b&url=https%3a%2f%2fwww.newstalkzb.co.nz%2fnews%2feducation%2funiversity-of-auckland-student-caught-wearing-smart-glasses-in-exam%2f&c=13779658032495477961&mkt=en-us) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [VITURE: All Products - amazon.com](https://www.amazon.com/stores/VITURE/page/10648457-302B-4E2F-9199-D767CA91FE86) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [What’s next for smart glasses \| MIT Technology Review](https://www.technologyreview.com/2025/02/05/1110983/whats-next-for-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | normal | needs_editorial_verification | direct | [Why these smart glasses are keeping Meta scared - How-To Geek](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdnhvdllFUl9OZndQb3NDUUVOb3hVUUFCMlNfLV9meFlETTRXcGxxZm52akJzaHFhMnE3Z3VRNmk1MFJRNDc0a2VGQUFsZWYwNnVtdFk0QVpzeFllbW5LTFZORDFIQ05HNldFNHlfelJpNzNFWXVmMGllNll5Z0RDVjRSMnE0SVVTbnE4?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [#smartglasses - TikTok](https://www.tiktok.com/tag/smartglasses) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [#smartsunglasses - TikTok](https://www.tiktok.com/tag/smartsunglasses) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | ['I find it very uncomfortable talking to people with a camera and a light': OpenAI's Sam Altman weighs in on smart glasses and privacy - tom](https://news.google.com/rss/articles/CBMijAJBVV95cUxOaHljZEU3Y0ZXeDNYSVRmRzVWeGpxdUxDRHNXWl93T0JjNzY5N0N2TVZIcFI1V3BHQjJOSk9aVGZJeU9aNVB4eVZCUVR4RkJTbUxlUFlLWVVZYm1CaWtfRk9ocEYtekNHQklJNFoyRGZFblZZVkJIRGpHOFBkbDdBMk0wLWlpS0Fpb1AxeVJGNTJsREQ5RWt1ZVhpY18zMkJySVJyalAwYW9kalowakVzc052U0ZGWVl1a2VXUWlvX2pOOE1IWm52dzZxU3pFX1BnUGo2N0VVMV9TVVptWnJOVGZVcVR5cjBnbUJjamhvTkJDczI1VTNBUnhHTEZyMk9uYmRzd29CaGpBSXo5?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (September 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (202) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Translation for Travelers (August 2026)](https://peccadille.net/best-smart-glasses-with-translation-for-international-travelers/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [12 Best AR Glasses (September 2026) Tested & Compared](https://whoismcafee.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [2026 Best Translation Glasses Guide: AI Subtitles for Real Life – RayNeo](https://www.rayneo.com/blogs/news/best-translation-smart-glasses-2026-guide) | reachable (200) | research_news_review |
@@ -270,7 +271,6 @@ Generated: `2026-09-04T08:16:04.165712+00:00`
 | normal | needs_editorial_verification | direct | [Sam Altman says camera-equipped smart glasses make him ‘very uncomfortable’ — and his reason reveals a lot about Jony Ive’s mysterious AI ha](https://news.google.com/rss/articles/CBMikgFBVV95cUxNNERIakJ3eVVteDNsN3lKS1lVM2ZVc09MMUdFZS1hVW42c3ZxMTdObDItaUEzSDhBb2Vjd2g1UlRsMWJHcXk1eW1kb1l0dUlRSUhnX3RsSTFYTWYydWFqVHNldlk1enFnc3VBQXkzUi1BRjRZYnVFVzB1SFNnUWRfcTRWOUNhaGNNSVFSZ0QzUFV2dw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Smart AI Camera Glasses with 8MP Lens - TikTok Shop](https://shop.tiktok.com/us/pdp/smart-ai-camera-glasses-with-8mp-lens-button-control/1732165050833080963) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Smart AI Glasses Designed for Everyday Life - Meta](https://www.meta.com/ai-glasses/smart-ai-glasses/) | reachable (200) | research_news_review, model_catalog_review |
-| normal | needs_editorial_verification | direct | [Smart Eyewear - Essilor](https://www.essilorluxottica.com/en/brands/smart-eyewear-solutions/) | reachable (200) | research_news_review, development_hacking, deep_research |
 
 ## Meaning of states
 
