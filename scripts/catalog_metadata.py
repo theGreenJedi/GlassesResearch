@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Derive canonical catalog metadata from approved catalog evidence.
 
+The canonical model count is derived only from the unique GLS rows in
+``models/THE_LIST.md``. Public pages, generated datasets, and validators should
+consume this helper rather than maintain independent counts.
+
 The catalog update date is mechanical metadata. It comes from dated canonical
 admission packets and catalog corrections, never from a hand-entered homepage
 value or from the wall-clock time of a site build.
@@ -22,6 +26,7 @@ CORRECTION_DATE_RE = re.compile(
     r"^\|\s*(20\d{2}-\d{2}-\d{2})\s*\|\s*GLS-\d{4}\s*\|",
     flags=re.M,
 )
+GLS_ID_ROW_RE = re.compile(r"^\| (GLS-\d{4}) \|", flags=re.M)
 GLS_ROW_RE = re.compile(r"^\| GLS-\d{4} \|", flags=re.M)
 
 
@@ -33,6 +38,19 @@ def _validated(raw: str) -> str:
 def edition_from_text(text: str) -> str | None:
     match = EDITION_RE.search(text)
     return _validated(match.group(2)) if match else None
+
+
+def canonical_model_ids(root: Path, the_list_text: str | None = None) -> tuple[str, ...]:
+    """Return the sorted unique canonical GLS IDs from the authoritative ledger."""
+    if the_list_text is None:
+        the_list_text = (root / "models" / "THE_LIST.md").read_text(encoding="utf-8")
+    ids = set(GLS_ID_ROW_RE.findall(the_list_text))
+    return tuple(sorted(ids, key=lambda value: int(value.split("-")[1])))
+
+
+def canonical_model_count(root: Path, the_list_text: str | None = None) -> int:
+    """Return the one authoritative canonical model count."""
+    return len(canonical_model_ids(root, the_list_text))
 
 
 def canonical_event_dates(root: Path) -> list[str]:
