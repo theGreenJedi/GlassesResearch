@@ -34,6 +34,9 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Start run receipt
+        run: python scripts/wire_run_receipt.py --phase started
+
       - name: Validate review-state synchronization
         run: python scripts/test_sync_wire_review_state.py
 
@@ -62,7 +65,7 @@ jobs:
       - name: Build Across the Wire feeds
         run: python scripts/build_wire_feed.py --wire data/wire-state.json --output data/wire-feed.xml
 
-      - name: Publish only when the visible wire changed
+      - name: Detect visible wire change
         id: publish
         shell: bash
         run: |
@@ -70,14 +73,31 @@ jobs:
           if git diff --quiet -- data/wire-state.json data/wire-feed.xml data/wire-feed.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No developing-wire change."
-            exit 0
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Complete run receipt
+        run: python scripts/wire_run_receipt.py --phase completed --status success --changed "${{ steps.publish.outputs.changed }}"
+
+      - name: Publish wire and run receipt
+        shell: bash
+        run: |
+          set -euo pipefail
           git config user.name "glassesresearch-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/wire-state.json data/wire-feed.xml data/wire-feed.json
-          git commit -m "Refresh developing smart-glasses wire"
+          git add data/wire-state.json data/wire-feed.xml data/wire-feed.json data/wire-run-receipt.json
+          if git diff --cached --quiet; then
+            echo "Nothing to publish."
+            exit 0
+          fi
+          if [[ "${{ steps.publish.outputs.changed }}" == "true" ]]; then
+            message="Refresh developing smart-glasses wire"
+          else
+            message="Record healthy smart-glasses wire run"
+          fi
+          git commit -m "$message"
           git push origin HEAD:main
-          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Deploy bot-written wire changes
         if: steps.publish.outputs.changed == 'true' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
