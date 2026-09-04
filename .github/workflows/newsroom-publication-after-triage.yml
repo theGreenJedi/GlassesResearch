@@ -1,0 +1,44 @@
+name: Trigger newsroom publication after triage
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/newsroom-publication-after-triage.yml'
+  workflow_run:
+    workflows:
+      - "Daily research editorial triage"
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: newsroom-publication-after-triage
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm relay is review-only on pull requests
+        run: echo 'Publication relay syntax loaded; dispatch is disabled on pull_request.'
+
+  dispatch:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch the existing bounded publication workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh workflow run newsroom-publication-intake.yml \
+            --repo "${GITHUB_REPOSITORY}" \
+            --ref main
