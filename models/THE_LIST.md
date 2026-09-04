@@ -1,8 +1,8 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-09-03
+**Edition:** 2026-09-04
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 169 distinct purchasable models or explicitly marketed product generations
+**Count:** 180 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -307,6 +307,25 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0169 | Goodway / shared HeyCyan OEM ecosystem | W640 | ≤2026 | current/OEM-retail | camera/audio AI glasses | OEM/sample/commercial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-03_W640_W650.md); [source](https://www.goodwaytechs.com/goodway-ai-smart-glasses-8mp-sony-cam-ai-translation-hd-video-w640.html) |
 | GLS-0170 | Goodway / shared HeyCyan OEM ecosystem | W650 | ≤2026 | current/OEM-retail | camera/audio AI glasses | OEM/sample/commercial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-03_W640_W650.md); [source](https://www.goodwaytechs.com/goodway-ai-camera-glasses-hands-free-1080p-video-recording-eyewear-with-ai-assistant-w650.html) |
 
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0171 | CORNMI | NeoVista A8 Lite | ≤2026 | current | XR display | manufacturer retail / OEM marketplace | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://shop.cornmi.com/products/cornmi-neovista-a8-lite-arglasses) |
+| GLS-0172 | CORNMI | NeoVista X7 Lite | ≤2026 | current | XR display | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://shop.cornmi.com/products/cornmi-neovista-x7-lite) |
+| GLS-0173 | CORNMI | NeoVista X7 | ≤2026 | current | XR display | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://shop.cornmi.com/products/neovista-x7) |
+| GLS-0174 | CORNMI | NeoVista X7 Pro | ≤2026 | current | standalone / XR display | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://shop.cornmi.com/products/neovista-x7-pro) |
+| GLS-0175 | ASUS | AirVision M1 | ≤2026 | current | XR display | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://www.asus.com/us/displays-desktops/glasses/airvision/asus-airvision-m1/) |
+| GLS-0176 | Lenovo | Legion Glasses | ≤2026 | legacy | XR display | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://support.lenovo.com/us/en/accessories/lenovo_legion_glasses) |
+| GLS-0177 | Lenovo | Legion Glasses Gen 2 | ≤2026 | current | XR display | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://www.lenovo.com/us/en/p/accessories-and-software/vr-headsets/vr-headsets_smart-glasses/gy21r10236) |
+| GLS-0178 | Huawei | HUAWEI Vision Glass | ≤2026 | legacy / region-limited | XR display | China retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://consumer.huawei.com/cn/wearables/vision-glass/) |
+| GLS-0179 | Meizu / DreamSmart / StarV | StarV View | ≤2026 | current / region-limited | XR display | manufacturer retail / China | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://detail.meizu.com/item/StarVView.html) |
+| GLS-0180 | OPPO | Air Glass | ≤2026 | legacy / region-limited | monocular waveguide display | China retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://www.oppo.com/cn/newsroom/press/480/) |
+| GLS-0181 | TCL / RayNeo | NXTWEAR AIR | ≤2026 | legacy / region-limited | XR display | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://www.tcl.com/eu/en/glasses/tcl-nxtwear-air/specifications) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -319,7 +338,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 169-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 180-row count:
 
 - Snap SPECS (2026): order intent is tracked, but the final purchasable SKU and delivery evidence still need reconciliation.
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
