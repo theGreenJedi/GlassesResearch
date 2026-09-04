@@ -23,7 +23,8 @@ on:
       - 'docs/news/articles/**'
       - 'data/verified-changes.json'
   schedule:
-    - cron: '3,13,23,33,43,53 * * * *'
+    # Dead-man backstop. Successful editorial triage dispatches this workflow directly.
+    - cron: '47 * * * *'
   workflow_dispatch:
 
 # Validation and pull-request-triggered runs are read-only by default.
