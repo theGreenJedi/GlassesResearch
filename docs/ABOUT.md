@@ -21,6 +21,12 @@ These documents explain how the project separates direct observation, primary-so
 
 GlassesResearch does not sell rankings. Lineage/OEM relationships, owner control, cloud independence, preservation, and reproducibility are treated as research questions in their own right.
 
+## How the research conveyor runs
+
+- [Scheduler manifest](admin/SCHEDULER.md)
+
+The scheduler manifest documents the public discovery, intake, editorial-triage, and bounded publication handoffs used by repository automation. It is an orchestration map only; verification, editorial, and publication gates remain authoritative regardless of trigger path.
+
 ## Preservation and scope
 
 - [Preservation Program](PRESERVATION_PROGRAM.md)
