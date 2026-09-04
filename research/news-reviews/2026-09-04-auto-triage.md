@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-04T08:15:32.275141+00:00`
+Generated: `2026-09-04T08:16:04.165712+00:00`
 
 - Intake files inspected: **145**
 - Candidates retained in this review window/history: **1224**
@@ -12,9 +12,9 @@ Generated: `2026-09-04T08:15:32.275141+00:00`
 - `catalog_review`: 2
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 320
+- `needs_editorial_verification`: 321
 - `rejected_noise`: 271
-- `source_review`: 61
+- `source_review`: 60
 - `watching`: 38
 
 ## Action queue
@@ -35,7 +35,6 @@ Generated: `2026-09-04T08:15:32.275141+00:00`
 | high | needs_editorial_verification | direct | [Samsung to Launch Tabs, Buds, and Tags in October, Followed by AI Glasses in November — Galaxy Ecosystem Expansion - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTFBaZ1A4azlJelpyU0tSVWUzaG11bUxCNUFvSTFwMmF5N3ZWS1NONFZuOWFlMTFpS1JQY2NkV2FmaHcwR2Rrblh3ZTRVVXZaQWp3dm50WWFDNzM2bzZveTRhVkIyR2d3Wm5BTjlDOXY4UGdtNUdIVEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [49g Ultra-Light AR glasses with AI - Rokid](https://global.rokid.com/products/rokid-glasses) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Amazon.com: Smart Glasses With Display](https://www.amazon.com/smart-glasses-display/s?k=smart+glasses+with+display) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Cambridge Bans Smart Glasses, Other Wearable Tech In Classrooms - WBZ NewsRadio 1030](https://news.google.com/rss/articles/CBMipgFBVV95cUxPTHpzTU5Dd1ByNERzZ2hTUGlvYVg5YS1JcGdtTmp4dlUwdzFjUnZjSHJjcm05SzY1NzdJTVZfNkc3ZXB2cHl3WThsWXRfdzNTUmphR0E5VWYtaEpuMFdod0dsUU5TQWdYR3dDclV2emI2Qk85bUxaelBTa1RRVjY4d3FnRFpjdFpVTE1BamplRzFtWUgwbVlEMW0tU0g4cHlBeUlNMXlB0gGuAUFVX3lxTE80OWd1aTUwa2R6QmtvRFBfaHJpS1FROG0yTm1SRk8wc3JDWFNSMHA2VFBjMF81c0c5emhNTUhyVG5zRFZjOWlaZzZEVTAyRDFDTzd1R19ISURfQVNLMVBheDVHdTYwT1RMS3VDRWtPQV9wQXc2UDRVTnpvNFVBa1RHY09Yd3NmVUFHTWlDem9sbkdnY1V3VC1fZ1R2QzhMWlFCVjhNX0g2M0tORF9udw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Even Realities G2 Smart Glasses Released: Everything To Know](https://wearablexp.com/smart-glasses/even-realities-g2-smart-glasses/) | reachable (200) | research_news_review |
@@ -135,6 +134,7 @@ Generated: `2026-09-04T08:15:32.275141+00:00`
 | normal | needs_editorial_verification | direct | [The New Oakley Performance Meta AI Glasses \| Oakley®](https://www.oakley.com/en-us/l/oakley-meta) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [The Rokid Glasses Translate, Caption, and Record—But They ... - PCMag](https://www.pcmag.com/reviews/rokid-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [tiktok smart glasses review - TikTok Shop](https://shop.tiktok.com/us/k/tiktok-smart-glasses-review) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Top 5 smartglass Open-Source Projects \| LibHunt](https://www.libhunt.com/topic/smartglasses) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Top 5 Translation Smart Glasses 2026 – Best Value Choice](https://bestvaluechoice.com/best-translation-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Unboxing and Review of AI Smart Glasses \| TikTok](https://www.tiktok.com/@aishaboutique01/video/7616054036097191190) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Uni student caught wearing smart glasses in exam - 1News](https://news.google.com/rss/articles/CBMijAFBVV95cUxNSlJSTTZjb0x5bDExTGg4blBPaFJlcmtTOW9PU2xHYVQ4c09yYm80ZE5CQUlPcF9GV19oMnBXRFpGOXc0aGpzTFczZUo3Tl9WM1RrZzNDUmVvZVQxVGNfTDVzTXlONzVfQ3luZmdnRnJXZFdrWk4xeUJEXzMzRjFTa1hYMm5CV2hQWFRFSw?oc=5) | reachable (200) | research_news_review |
@@ -145,7 +145,7 @@ Generated: `2026-09-04T08:15:32.275141+00:00`
 | normal | needs_editorial_verification | direct | [#smartsunglasses - TikTok](https://www.tiktok.com/tag/smartsunglasses) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | ['I find it very uncomfortable talking to people with a camera and a light': OpenAI's Sam Altman weighs in on smart glasses and privacy - tom](https://news.google.com/rss/articles/CBMijAJBVV95cUxOaHljZEU3Y0ZXeDNYSVRmRzVWeGpxdUxDRHNXWl93T0JjNzY5N0N2TVZIcFI1V3BHQjJOSk9aVGZJeU9aNVB4eVZCUVR4RkJTbUxlUFlLWVVZYm1CaWtfRk9ocEYtekNHQklJNFoyRGZFblZZVkJIRGpHOFBkbDdBMk0wLWlpS0Fpb1AxeVJGNTJsREQ5RWt1ZVhpY18zMkJySVJyalAwYW9kalowakVzc052U0ZGWVl1a2VXUWlvX2pOOE1IWm52dzZxU3pFX1BnUGo2N0VVMV9TVVptWnJOVGZVcVR5cjBnbUJjamhvTkJDczI1VTNBUnhHTEZyMk9uYmRzd29CaGpBSXo5?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (September 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (202) | research_news_review |
+| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Translation for Travelers (August 2026)](https://peccadille.net/best-smart-glasses-with-translation-for-international-travelers/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [12 Best AR Glasses (September 2026) Tested & Compared](https://whoismcafee.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [2026 Best Translation Glasses Guide: AI Subtitles for Real Life – RayNeo](https://www.rayneo.com/blogs/news/best-translation-smart-glasses-2026-guide) | reachable (200) | research_news_review |
