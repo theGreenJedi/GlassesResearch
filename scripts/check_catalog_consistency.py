@@ -5,6 +5,8 @@ import json
 import re
 import sys
 
+from catalog_metadata import canonical_model_count, canonical_model_ids
+
 ROOT = Path(__file__).resolve().parents[1]
 errors = []
 
@@ -16,21 +18,31 @@ corrections_path = ROOT / "models/CATALOG_CORRECTIONS.md"
 corrections = corrections_path.read_text(encoding="utf-8") if corrections_path.exists() else ""
 candidates_path = ROOT / "data/model-candidates.json"
 
-ids = re.findall(r"^\| (GLS-\d{4}) \|", the_list, flags=re.M)
-unique_ids = set(ids)
+unique_ids = set(canonical_model_ids(ROOT, the_list))
+canonical_count = canonical_model_count(ROOT, the_list)
 count_match = re.search(r"\*\*Count:\*\* (\d+)", the_list)
 if not count_match:
-    errors.append("The List has no canonical Count field")
+    errors.append("The List has no generated Count field")
 else:
     declared = int(count_match.group(1))
-    if declared != len(unique_ids):
-        errors.append(f"The List declares {declared} models but contains {len(unique_ids)} unique GLS IDs")
+    if declared != canonical_count:
+        errors.append(f"The List displays {declared} models but canonical rows total {canonical_count}")
 
+# Public prose may display the current total, but it is a generated derivative.
+# Any current-count phrase must agree with the one authoritative ledger-derived count.
 for label, text in (("models/README.md", model_readme), ("README.md", root_readme)):
-    counts = [int(x) for x in re.findall(r"\b(\d+) (?:purchasable smart-glasses models|models and generations)", text)]
-    for count in counts:
-        if count != len(unique_ids):
-            errors.append(f"{label} says {count} models; canonical ledger has {len(unique_ids)}")
+    patterns = (
+        r"\b(\d+) purchasable smart-glasses models",
+        r"\b(\d+) models and generations",
+        r"every one of the (\d+) active canonical smart-glasses records",
+        r"active canonical count is now \*\*(\d+)\*\*",
+        r"returns the active canonical count to \*\*(\d+)\*\*",
+    )
+    for pattern in patterns:
+        for raw in re.findall(pattern, text):
+            count = int(raw)
+            if count != canonical_count:
+                errors.append(f"{label} says {count} models; canonical ledger has {canonical_count}")
 
 if candidates_path.exists():
     payload = json.loads(candidates_path.read_text(encoding="utf-8"))
@@ -72,4 +84,4 @@ if errors:
         print(f"- {error}")
     sys.exit(1)
 
-print(f"Catalog consistency check passed: {len(unique_ids)} canonical models; {len(lineage_files)} lineage chapters.")
+print(f"Catalog consistency check passed: {canonical_count} canonical models; {len(lineage_files)} lineage chapters.")
