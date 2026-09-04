@@ -1,0 +1,57 @@
+name: Public publication surface smoke
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/verify_public_follow_surfaces.py'
+      - '.github/workflows/public-surface-smoke.yml'
+  workflow_run:
+    workflows: ['Deploy documentation site']
+    types: [completed]
+  schedule:
+    - cron: '37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-surface-smoke-${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-script:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Check smoke-test syntax
+        run: python -m py_compile scripts/verify_public_follow_surfaces.py
+
+  smoke:
+    if: >-
+      github.event_name != 'pull_request' &&
+      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Verify public reader-facing surfaces
+        env:
+          EXPECTED_SHA: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(--base-url https://glassesresearch.org)
+          if [[ -n "${EXPECTED_SHA}" ]]; then
+            args+=(--expected-sha "${EXPECTED_SHA}" --attempts 12 --sleep-seconds 15)
+          else
+            args+=(--attempts 3 --sleep-seconds 10)
+          fi
+          python scripts/verify_public_follow_surfaces.py "${args[@]}"
