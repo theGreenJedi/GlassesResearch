@@ -17,7 +17,7 @@ from pathlib import Path
 import re
 import sys
 
-from catalog_metadata import canonical_updated_at, synchronize_edition
+from catalog_metadata import canonical_model_count, canonical_updated_at, synchronize_edition
 
 ROOT = Path(__file__).resolve().parents[1]
 THE_LIST = ROOT / "models" / "THE_LIST.md"
@@ -75,8 +75,7 @@ def sync_the_list(text: str) -> str:
             raise RuntimeError(f"Insertion marker not found in {THE_LIST}")
         text = text.replace(marker, block + marker, 1)
 
-    ids = set(GLS_ROW_RE.findall(text))
-    count = len(ids)
+    count = canonical_model_count(ROOT, text)
     text, replacements = COUNT_RE.subn(rf"\g<1>{count}\g<2>", text, count=1)
     if replacements != 1:
         raise RuntimeError("THE_LIST Count field missing or ambiguous")
@@ -115,7 +114,7 @@ def main() -> int:
 
     original_list = THE_LIST.read_text(encoding="utf-8")
     synced_list = sync_the_list(original_list)
-    count = len(set(GLS_ROW_RE.findall(synced_list)))
+    count = canonical_model_count(ROOT, synced_list)
     updated_at = canonical_updated_at(ROOT, synced_list)
 
     original_models = MODELS_README.read_text(encoding="utf-8")
