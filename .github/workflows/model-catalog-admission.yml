@@ -1,0 +1,170 @@
+name: Canonical model admission
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/model_catalog_admission_actuator.py'
+      - '.github/workflows/model-catalog-admission.yml'
+      - 'models/THE_LIST_RECONCILIATION_*'
+      - 'models/PROFILES_AUTO_ADMISSIONS.md'
+      - 'models/THE_LIST.md'
+      - 'models/README.md'
+  schedule:
+    - cron: '7,17,27,37,47,57 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: canonical-model-admission
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Self-test model proposal intake
+        run: python scripts/model_proposal_intake.py --input /dev/null --self-test
+      - name: Self-test model proposal action compiler
+        run: python scripts/model_proposal_actuator.py --self-test
+      - name: Self-test bounded canonical admission actuator
+        run: python scripts/model_catalog_admission_actuator.py --self-test
+
+  admit:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    env:
+      BRANCH: automation/model-catalog-admission
+      MODEL_PROPOSAL_QUEUE_URL: https://glassesresearch.org/api/newsroom/model-proposals
+      OIDC_AUDIENCE: glassesresearch-newsroom-publication
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare clean admission branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git checkout -B "${BRANCH}" origin/main
+
+      - name: Pull only draft-authorized catalog admissions
+        shell: bash
+        run: |
+          set -euo pipefail
+          oidc_json="$(curl --fail --silent --show-error \
+            -H "Authorization: Bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=${OIDC_AUDIENCE}")"
+          oidc_token="$(python -c 'import json,sys; print(json.load(sys.stdin)["value"])' <<<"${oidc_json}")"
+          test -n "${oidc_token}"
+          echo "::add-mask::${oidc_token}"
+          curl --fail --silent --show-error --location --max-time 30 \
+            -H 'Accept: application/json' \
+            -H "Authorization: Bearer ${oidc_token}" \
+            "${MODEL_PROPOSAL_QUEUE_URL}" -o /tmp/model-proposal-queue.json
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          from scripts.model_proposal_intake import ingest
+
+          payload = json.loads(Path('/tmp/model-proposal-queue.json').read_text(encoding='utf-8'))
+          kept = []
+          for item in payload.get('proposals', []):
+              proposal = item.get('proposal') if isinstance(item, dict) else None
+              if not isinstance(proposal, dict) or proposal.get('proposal_kind') != 'catalog_admission':
+                  continue
+              if proposal.get('conclusion') != 'verified_new_model' or proposal.get('confidence') != 'high':
+                  continue
+              acquisition = proposal.get('acquisition')
+              if not isinstance(acquisition, dict) or acquisition.get('threshold_met') is not True:
+                  continue
+              if proposal.get('unresolved_questions'):
+                  continue
+              identity = proposal.get('proposed_identity')
+              if not isinstance(identity, dict) or identity.get('identity_edges'):
+                  continue
+              kept.append(item)
+          filtered = {**payload, 'proposals': kept}
+          created = ingest(filtered, Path('research/model-proposals'), os.environ['MODEL_PROPOSAL_QUEUE_URL'])
+          print(f"Ingested {len(created)} bounded catalog-admission proposal(s).")
+          PY
+
+      - name: Compile model actions
+        run: python scripts/model_proposal_actuator.py --all
+
+      - name: Create canonical admission packets and conservative profiles
+        run: python scripts/model_catalog_admission_actuator.py --all
+
+      - name: Mechanically synchronize canonical ledger
+        run: python scripts/sync_catalog_counts.py
+
+      - name: Validate canonical catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/sync_catalog_counts.py --check
+          python scripts/check_catalog_consistency.py
+          python scripts/check_model_profiles.py --strict
+          python scripts/build_device_database.py --validate-only
+
+      - name: Commit only when a canonical admission was generated
+        id: commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$(git status --porcelain -- models/THE_LIST.md models/README.md models/PROFILES_AUTO_ADMISSIONS.md 'models/THE_LIST_RECONCILIATION_*' research/model-proposals research/model-actions)" ]]; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            echo 'No canonical-safe model admissions.'
+            exit 0
+          fi
+          if ! git status --porcelain -- 'models/THE_LIST_RECONCILIATION_*' | grep -q .; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            echo 'Proposal/action intake changed, but no bounded canonical admission passed the final actuator.'
+            git reset --hard origin/main
+            exit 0
+          fi
+          git add -A -- models/THE_LIST.md models/README.md models/PROFILES_AUTO_ADMISSIONS.md 'models/THE_LIST_RECONCILIATION_*' research/model-proposals research/model-actions
+          git commit -m 'Admit evidence-clean model discovery automatically'
+          git push --force-with-lease --set-upstream origin "${BRANCH}"
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+
+      - name: Open bounded canonical admission PR
+        if: steps.commit.outputs.changed == 'true'
+        id: pr
+        shell: bash
+        run: |
+          set -euo pipefail
+          existing="$(gh pr list --head "${BRANCH}" --base main --state open --json number --jq '.[0].number // empty')"
+          if [[ -z "${existing}" ]]; then
+            gh pr create \
+              --base main \
+              --head "${BRANCH}" \
+              --title 'Admit evidence-clean model discovery' \
+              --body $'This PR was produced by the bounded canonical model-admission lane. Every admission must be a high-confidence verified-new-model finding, cross the purchaser-history acquisition threshold, have no existing GLS target, identity edge, or unresolved question, and carry a structured catalog row tied to high-confidence acquisition evidence.\n\nThe automation generates an auditable reconciliation packet and conservative editorial profile, allocates the next unused GLS identifier, synchronizes catalog counts, and runs catalog/profile/device-database validators. No Report Card scores or unverified product claims are inferred by admission.' >/dev/null
+            existing="$(gh pr list --head "${BRANCH}" --base main --state open --json number --jq '.[0].number // empty')"
+          fi
+          test -n "${existing}"
+          echo "number=${existing}" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for PR checks and merge
+        if: steps.commit.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          pr="${{ steps.pr.outputs.number }}"
+          gh pr checks "${pr}" --watch --fail-fast
+          gh pr merge "${pr}" --squash --delete-branch
