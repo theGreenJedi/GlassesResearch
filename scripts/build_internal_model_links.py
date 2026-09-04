@@ -83,6 +83,37 @@ def research_links(capabilities: dict) -> list[str]:
     return links
 
 
+def report_card_depth(score_record: dict | None) -> str:
+    if not score_record:
+        return "No Report Card has been published yet."
+
+    summary = score_record.get("freshness_summary")
+    if not isinstance(summary, dict):
+        return "A GlassesResearch Report Card is available."
+
+    resolved = int(summary.get("resolved_dimensions", 0) or 0)
+    fresh = int(summary.get("fresh", 0) or 0)
+    aging = int(summary.get("aging", 0) or 0)
+    stale = int(summary.get("stale", 0) or 0)
+    unknown = int(summary.get("unknown", 0) or 0)
+    unscored = int(summary.get("unscored", 0) or 0)
+
+    if not resolved:
+        return (
+            "A GlassesResearch Report Card is available, but its Core subjects remain unscored. "
+            "[Read the freshness method](/docs/REPORT_CARD_FRESHNESS/)."
+        )
+
+    return (
+        f"A GlassesResearch Report Card is available. Across its **{resolved} resolved Core score "
+        f"dimension{'s' if resolved != 1 else ''}**, evidence freshness is **{fresh} fresh**, "
+        f"**{aging} aging**, **{stale} stale**, and **{unknown} freshness-unknown**; "
+        f"**{unscored} Core dimension{'s remain' if unscored != 1 else ' remains'} unscored**. "
+        "Freshness refers to the evidence supporting each score, not the age of this page. "
+        "[Read the freshness method](/docs/REPORT_CARD_FRESHNESS/)."
+    )
+
+
 def enrich_catalog_pages(output_root: Path) -> int:
     devices = load_map(output_root / "data" / "devices.json")
     capabilities = load_map(output_root / "data" / "finder-capabilities.json")
@@ -108,7 +139,7 @@ def enrich_catalog_pages(output_root: Path) -> int:
             for fact in comp.values()
         )
         source_count = sum(1 for item in record.get("links", []) if item.get("kind") == "external")
-        report_depth = "A GlassesResearch Report Card is available." if model_id in scores else "No Report Card has been published yet."
+        report_depth = report_card_depth(scores.get(model_id))
         links = " · ".join(research_links(caps))
 
         snapshot = f'''\n## Research snapshot\n\n<!-- generated-research-snapshot -->\n**{record['maker']} {record['model']}** is cataloged as **{record['type']}** with lifecycle state **{record['state']}** and era/release year **{record['era']}**. GlassesResearch currently has **{yes_count} confirmed capabilities**, **{no_count} verified absences**, and **{unknown_count} unresolved capability fields** for this model. The structured comparison record contains **{verified_specs} verified specification fields**, and this page links to **{source_count} external source{'s' if source_count != 1 else ''}**. {report_depth}\n\n### Common questions\n\n- **Does it have a camera?** {yn(caps, 'camera')}\n- **Does it have a display?** {yn(caps, 'display')}\n- **Does it support Bluetooth?** {yn(caps, 'bluetooth')}\n- **Is an SDK or API verified?** {yn(caps, 'sdk_api')}\n- **Is open-source support verified?** {yn(caps, 'open_source')}\n- **Is offline operation verified?** {yn(caps, 'offline_operation')}\n\n### Continue researching\n\n{links}\n'''
