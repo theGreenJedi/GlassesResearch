@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-05",
+  "purpose": "Track whole-manufacturer catalog completeness separately from model-level evidence depth.",
+  "states": {
+    "unreviewed": "No whole-manufacturer historical audit has been completed.",
+    "partial_map": "Useful model or lineage work exists, but a complete historical/product-family reconciliation has not been completed.",
+    "audit_in_progress": "A whole-manufacturer audit is actively reconciling history, aliases, regions, bundles, adjacent products, and acquisition evidence.",
+    "lineage_reconciled": "A dated whole-manufacturer audit has reconciled known product identities into canonical, adjacent, registry, or non-product outcomes.",
+    "monitored": "Lineage-reconciled and included in ongoing manufacturer/source monitoring."
+  },
+  "policy": {
+    "coverage_debt_threshold": 3,
+    "rule": "Any exact Maker value reaching three canonical GLS rows must map to a manufacturer family in this ledger. A lineage chapter alone does not imply a completed historical audit.",
+    "audit_dimensions": [
+      "corporate and brand chronology",
+      "all known eyewear generations",
+      "regional names and aliases",
+      "manufacturer model numbers and regulatory identifiers",
+      "retail/preorder/enterprise acquisition evidence",
+      "bundles versus distinct eyewear identities",
+      "adjacent non-eyewear products",
+      "SDK/support/firmware branches",
+      "current storefront",
+      "historical product/support material",
+      "unresolved candidates and contradictions"
+    ]
+  },
+  "families": [
+    {
+      "id": "rokid",
+      "label": "Rokid",
+      "maker_values": ["Rokid"],
+      "state": "monitored",
+      "priority": 0,
+      "lineage_path": "lineages/ROKID.md",
+      "last_whole_manufacturer_audit": "2026-09-05",
+      "audit_path": "research/investigations/ROKID_HISTORICAL_AUDIT_2026-09-05.md",
+      "notes": "Historical audit exposed Air Pro, Max Pro and Glass 3 omissions and routed X-Craft to adjacent wearables."
+    },
+    {
+      "id": "rayneo-tcl-thunderbird",
+      "label": "RayNeo / TCL / Thunderbird",
+      "maker_values": ["RayNeo", "TCL / RayNeo", "TCL", "RayNeo / Thunderbird Innovation"],
+      "state": "audit_in_progress",
+      "priority": 1,
+      "lineage_path": "lineages/RAYNEO_TCL.md",
+      "last_whole_manufacturer_audit": null,
+      "audit_path": "research/investigations/MANUFACTURER_COMPLETENESS_WAVE_01_2026-09-05.md",
+      "notes": "High-risk naming transition across TCL NXTWEAR, Thunderbird/RayNeo, Air, X, V3, iO and GT branches."
+    },
+    {
+      "id": "epson-moverio",
+      "label": "Epson Moverio",
+      "maker_values": ["Epson"],
+      "state": "audit_in_progress",
+      "priority": 2,
+      "lineage_path": "lineages/EPSON_MOVERIO.md",
+      "last_whole_manufacturer_audit": null,
+      "audit_path": "research/investigations/MANUFACTURER_COMPLETENESS_WAVE_01_2026-09-05.md",
+      "notes": "Long consumer/enterprise chronology with standalone Android, tethered display and industrial head-worn branches."
+    },
+    {
+      "id": "viture",
+      "label": "VITURE",
+      "maker_values": ["VITURE", "VITURE / NVIDIA"],
+      "state": "audit_in_progress",
+      "priority": 3,
+      "lineage_path": "lineages/VITURE.md",
+      "last_whole_manufacturer_audit": null,
+      "audit_path": "research/investigations/MANUFACTURER_COMPLETENESS_WAVE_01_2026-09-05.md",
+      "notes": "Fast-moving display-glasses family with One, Pro, Luma, Beast, current Pro 2 and branded collector editions."
+    },
+    {
+      "id": "inmo",
+      "label": "INMO",
+      "maker_values": ["INMO"],
+      "state": "audit_in_progress",
+      "priority": 4,
+      "lineage_path": "lineages/INMO.md",
+      "last_whole_manufacturer_audit": null,
+      "audit_path": "research/investigations/MANUFACTURER_COMPLETENESS_WAVE_01_2026-09-05.md",
+      "notes": "Air, GO and photography-focused X branches require reconciliation; INMO X is an explicit first-party gap candidate."
+    },
+    {
+      "id": "innovative-eyewear-lucyd",
+      "label": "Innovative Eyewear / Lucyd",
+      "maker_values": ["Lucyd", "Innovative Eyewear / Lucyd", "Nautica / Lucyd"],
+      "state": "audit_in_progress",
+      "priority": 5,
+      "lineage_path": "lineages/LUCYD.md",
+      "last_whole_manufacturer_audit": null,
+      "audit_path": "research/investigations/MANUFACTURER_COMPLETENESS_WAVE_01_2026-09-05.md",
+      "notes": "Historical Loud products, Lyte generations, Armor and licensed fashion collections require hardware-generation versus frame-style separation."
+    },
+    {
+      "id": "meta-eyewear",
+      "label": "Meta eyewear",
+      "maker_values": ["Meta / Ray-Ban", "Meta / Oakley", "Meta"],
+      "state": "partial_map",
+      "priority": 6,
+      "lineage_path": "lineages/META.md",
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Dedicated lineage exists; still requires a formal whole-manufacturer completeness audit."
+    },
+    {
+      "id": "xreal-nreal",
+      "label": "XREAL / Nreal",
+      "maker_values": ["Nreal", "Nreal / XREAL", "XREAL"],
+      "state": "partial_map",
+      "priority": 7,
+      "lineage_path": "lineages/XREAL.md",
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Dedicated lineage exists but does not itself certify historical completeness."
+    },
+    {
+      "id": "vuzix",
+      "label": "Vuzix",
+      "maker_values": ["Vuzix"],
+      "state": "partial_map",
+      "priority": 8,
+      "lineage_path": "lineages/VUZIX.md",
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Strong branch mapping exists; historical completeness remains to be formally certified."
+    },
+    {
+      "id": "snap",
+      "label": "Snap Spectacles",
+      "maker_values": ["Snap"],
+      "state": "partial_map",
+      "priority": 9,
+      "lineage_path": "lineages/SNAP.md",
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Generation mapping exists; formal completeness audit pending."
+    },
+    {
+      "id": "solos",
+      "label": "Solos",
+      "maker_values": ["Solos"],
+      "state": "partial_map",
+      "priority": 10,
+      "lineage_path": "lineages/SOLOS.md",
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "AirGo model work exists; full corporate/historical audit pending."
+    },
+    {
+      "id": "brilliant-labs",
+      "label": "Brilliant Labs",
+      "maker_values": ["Brilliant Labs"],
+      "state": "lineage_reconciled",
+      "priority": 20,
+      "lineage_path": "lineages/BRILLIANT_LABS.md",
+      "last_whole_manufacturer_audit": "2026-08-17",
+      "audit_path": "lineages/BRILLIANT_LABS_POPULATION.md",
+      "notes": "Population ledger explicitly covers Monocle, Frame and Halo boundaries."
+    },
+    {
+      "id": "hecyan-goodway",
+      "label": "HeyCyan / Goodway OEM ecosystem",
+      "maker_values": ["Shared HeyCyan OEM ecosystem", "Goodway / shared HeyCyan OEM ecosystem", "Anko / HeyCyan ecosystem", "Anko / Kmart Australia"],
+      "state": "lineage_reconciled",
+      "priority": 20,
+      "lineage_path": "lineages/HEYCYAN.md",
+      "last_whole_manufacturer_audit": "2026-08-17",
+      "audit_path": "lineages/HEYCYAN_POPULATION.md",
+      "notes": "Population ledger separates software, hardware, OEM and retail-rebrand evidence."
+    },
+    {
+      "id": "google-glass",
+      "label": "Google Glass",
+      "maker_values": ["Google"],
+      "state": "lineage_reconciled",
+      "priority": 20,
+      "lineage_path": "lineages/GOOGLE_GLASS.md",
+      "last_whole_manufacturer_audit": "2026-08-12",
+      "audit_path": "lineages/GOOGLE_GLASS.md",
+      "notes": "Explorer and Enterprise generations preserved; future Android XR partner eyewear remains a separate platform investigation."
+    },
+    {
+      "id": "amazon-echo-frames",
+      "label": "Amazon Echo Frames",
+      "maker_values": ["Amazon", "Amazon / Carrera"],
+      "state": "partial_map",
+      "priority": 11,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Three Echo Frames generations plus Carrera implementation merit a formal lineage chapter."
+    },
+    {
+      "id": "bose-frames",
+      "label": "Bose Frames",
+      "maker_values": ["Bose"],
+      "state": "partial_map",
+      "priority": 12,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Five canonical styles across two electronics generations; model-family research exists but lineage certification does not."
+    },
+    {
+      "id": "huawei-eyewear",
+      "label": "Huawei smart eyewear",
+      "maker_values": ["Huawei / Gentle Monster", "Huawei"],
+      "state": "partial_map",
+      "priority": 13,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Audio eyewear and Vision Glass are materially different branches."
+    },
+    {
+      "id": "xiaomi-eyewear",
+      "label": "Xiaomi smart eyewear",
+      "maker_values": ["Xiaomi"],
+      "state": "partial_map",
+      "priority": 14,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Audio, camera/display and AI-camera branches need a formal manufacturer chapter."
+    },
+    {
+      "id": "realwear",
+      "label": "RealWear",
+      "maker_values": ["RealWear"],
+      "state": "unreviewed",
+      "priority": 15,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Enterprise procurement history is at elevated archival-risk."
+    },
+    {
+      "id": "iristick",
+      "label": "Iristick",
+      "maker_values": ["Iristick"],
+      "state": "unreviewed",
+      "priority": 16,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Multiple enterprise generations warrant a dedicated historical audit."
+    },
+    {
+      "id": "lenovo-smart-glasses",
+      "label": "Lenovo smart glasses",
+      "maker_values": ["Lenovo"],
+      "state": "partial_map",
+      "priority": 17,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "ThinkReality and Legion branches must not be conflated."
+    },
+    {
+      "id": "nueyes",
+      "label": "NuEyes",
+      "maker_values": ["NuEyes"],
+      "state": "lineage_reconciled",
+      "priority": 30,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": "2026-08-12",
+      "audit_path": "docs/report-cards/LINEAGE_NUEYES.md",
+      "notes": "Completed lineage packet reconciled canonical and unresolved historical devices."
+    },
+    {
+      "id": "chamelo",
+      "label": "Chamelo",
+      "maker_values": ["Chamelo"],
+      "state": "lineage_reconciled",
+      "priority": 30,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": "2026-08-12",
+      "audit_path": "docs/report-cards/LINEAGE_CHAMELO.md",
+      "notes": "Completed lineage packet."
+    },
+    {
+      "id": "thirdeye",
+      "label": "ThirdEye",
+      "maker_values": ["ThirdEye"],
+      "state": "lineage_reconciled",
+      "priority": 30,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": "2026-08-12",
+      "audit_path": "docs/report-cards/LINEAGE_THIRDEYE_X_SERIES.md",
+      "notes": "X-series eyewear reconciled separately from adjacent MIDAS."
+    },
+    {
+      "id": "dymesty",
+      "label": "Dymesty",
+      "maker_values": ["Dymesty"],
+      "state": "partial_map",
+      "priority": 18,
+      "lineage_path": null,
+      "last_whole_manufacturer_audit": null,
+      "audit_path": null,
+      "notes": "Three named retail products plus OEM comparisons require a formal lineage pass."
+    }
+  ]
+}
