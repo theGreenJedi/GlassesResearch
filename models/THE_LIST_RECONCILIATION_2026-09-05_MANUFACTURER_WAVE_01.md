@@ -5,20 +5,22 @@
 
 This packet translates the first whole-manufacturer completeness wave into stable catalog outcomes. The admission threshold is unchanged: a product needs a documented retail, preorder, crowdfunding, developer, or enterprise acquisition route. Brand prominence, announcements and attractive specifications are insufficient by themselves.
 
+This packet now uses the preferred eight-column admission schema so the synchronizer preserves evidence-backed first-sale eras.
+
 ## Admit to canonical purchaser-history ledger
 
-| ID | Maker | Model | State | Type | Access | Evidence |
-|---|---|---|---|---|---|---|
-| GLS-0185 | RayNeo | RayNeo iO | current | discreet display / AI smart glasses | manufacturer retail / prescription | https://www.rayneo.com/products/rayneo-io-ai-glasses |
-| GLS-0186 | RayNeo | RayNeo GT | current | XR display / 3DoF | manufacturer retail | https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses |
-| GLS-0187 | RayNeo | RayNeo GT Max | current | XR display / 3DoF | manufacturer retail | https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses |
-| GLS-0188 | VITURE | VITURE Pro 2 | current | XR display | manufacturer retail | https://www.viture.com/pro2 |
-| GLS-0189 | Epson | Moverio BT-350 | legacy / enterprise | standalone binocular AR | enterprise / commercial | https://epson.com/For-Work/Wearables/Smart-Glasses/Moverio-BT-350-Smart-Glasses/p/V11H837020 |
-| GLS-0190 | Epson | Moverio BT-30E | legacy / region-limited | tethered binocular display | commercial / enterprise | https://www.epson.jp/support/portal/hoshu/bt-30e.htm |
-| GLS-0191 | Lucyd | Lucyd Loud 1.0 | legacy | audio smart glasses | retail | https://lucyd.co/blogs/news/july-2020-corporate-update |
-| GLS-0192 | Lucyd | Lucyd Loud — second edition | legacy | audio smart glasses | retail | https://lucyd.co/blogs/news/july-2020-corporate-update |
-| GLS-0193 | Lucyd | Lucyd Loud 2020 | legacy | audio smart glasses | retail | https://lucyd.co/blogs/news/july-2020-corporate-update |
-| GLS-0194 | INMO | INMO X AI+Camera Glasses | legacy / region-limited | camera / AI smart glasses | blind-order / preorder | https://www.inmoxr.com/pages/about-us |
+| ID | Maker | Model | Era | State | Type | Access | Evidence |
+|---|---|---|---|---|---|---|---|
+| GLS-0185 | RayNeo | RayNeo iO | 2026 | current | discreet display / AI smart glasses | manufacturer retail / prescription | https://www.rayneo.com/products/rayneo-io-ai-glasses |
+| GLS-0186 | RayNeo | RayNeo GT | 2026 | current | XR display / 3DoF | manufacturer retail | https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses |
+| GLS-0187 | RayNeo | RayNeo GT Max | 2026 | current | XR display / 3DoF | manufacturer retail | https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses |
+| GLS-0188 | VITURE | VITURE Pro 2 | 2026 | current | XR display | manufacturer retail | https://www.viture.com/pro2 |
+| GLS-0189 | Epson | Moverio BT-350 | 2017 | legacy / enterprise | standalone binocular AR | enterprise / commercial | https://epson.com/For-Work/Wearables/Smart-Glasses/Moverio-BT-350-Smart-Glasses/p/V11H837020 |
+| GLS-0190 | Epson | Moverio BT-30E | 2018 | legacy / region-limited | tethered binocular display | commercial / enterprise | https://www.epson.jp/support/portal/hoshu/bt-30e.htm |
+| GLS-0191 | Lucyd | Lucyd Loud 1.0 | 2018 | legacy | audio smart glasses | retail | https://lucyd.co/blogs/news/july-2020-corporate-update |
+| GLS-0192 | Lucyd | Lucyd Loud — second edition | 2019 | legacy | audio smart glasses | retail | https://lucyd.co/blogs/news/july-2020-corporate-update |
+| GLS-0193 | Lucyd | Lucyd Loud 2020 | 2020 | legacy | audio smart glasses | retail | https://lucyd.co/blogs/news/july-2020-corporate-update |
+| GLS-0194 | INMO | INMO X AI+Camera Glasses | 2024 | legacy / region-limited | camera / AI smart glasses | blind-order / preorder | https://www.inmoxr.com/pages/about-us |
 
 ## Adjacent wearable routing
 

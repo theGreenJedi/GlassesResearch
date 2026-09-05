@@ -12,6 +12,7 @@ For era fields, `c.` marks an approximate year and `≤2026` means the current e
 | ID | Maker | Model | Era | State | Form | Evidence / research |
 |---|---|---|---:|---|---|---|
 | ADJ-0001 | Optinvent | ORA-X | c. 2017 | legacy / archival | over-ear AR headphones | [ORA lineage packet](../docs/report-cards/LINEAGE_OPTINVENT_ORA.md) |
+| ADJ-0015 | Vuzix | iWear Video Headphones | 2015 | legacy | headphone/visor video and VR display | [Vuzix Wave 02 audit](../research/investigations/MANUFACTURER_COMPLETENESS_WAVE_02_2026-09-05.md); [Vuzix lineage](../lineages/VUZIX.md) |
 
 ## Industrial head-worn AR / mixed-reality systems
 
@@ -26,6 +27,8 @@ For era fields, `c.` marks an approximate year and `≤2026` means the current e
 | ADJ-0010 | Rokid | X-Craft | 2020 | current / enterprise / supply-limited | industrial explosion-proof AR headband / helmet-mounted system | [Rokid historical audit](../research/investigations/ROKID_HISTORICAL_AUDIT_2026-09-05.md); [current B2B source](https://de.rokid.com/de-de/products/rokid-x-craft-for-b2b) |
 | ADJ-0011 | Epson | Moverio Pro BT-2000 | c. 2016 | legacy / enterprise | industrial AR smart headset with headband / forehead support | [Epson lineage](../lineages/EPSON_MOVERIO.md); [first-party product](https://epson.com/For-Work/Wearables/Smart-Glasses/Moverio-Pro-BT-2000-Smart-Headset-/p/V11H725020) |
 | ADJ-0012 | Epson | Moverio Pro BT-2200 | 2017 | legacy / enterprise | helmet-compatible industrial AR smart headset | [Epson lineage](../lineages/EPSON_MOVERIO.md); [first-party product](https://epson.com/For-Work/Wearables/Smart-Glasses/Moverio-Pro-BT-2200-Smart-Headset/p/V11H853020) |
+| ADJ-0013 | Vuzix | Tac-Eye | ≤2009 | legacy / defense-industrial | rugged monocular display clipped to ballistic eyewear, headsets or safety goggles | [Vuzix Wave 02 audit](../research/investigations/MANUFACTURER_COMPLETENESS_WAVE_02_2026-09-05.md); [Vuzix lineage](../lineages/VUZIX.md) |
+| ADJ-0014 | Vuzix | M2000AR | 2013 | legacy / industrial | waveguide HMD mounted to hardhats or goggles | [Vuzix Wave 02 audit](../research/investigations/MANUFACTURER_COMPLETENESS_WAVE_02_2026-09-05.md); [Vuzix lineage](../lineages/VUZIX.md) |
 
 ## Eyeglass-mounted assistive modules
 
@@ -35,6 +38,14 @@ These devices use ordinary glasses as a mounting surface but are not themselves 
 |---|---|---|---:|---|---|---|
 | ADJ-0008 | OrCam | MyEye 2 Pro | ≤2026 | current | magnetic eyeglass-mounted visual-AI/audio module | [OrCam lineage packet](../docs/report-cards/LINEAGE_ORCAM_MYEYE.md) |
 | ADJ-0009 | OrCam | MyEye 3 Pro | ≤2026 | current | magnetic eyeglass-mounted visual-AI/audio module | [OrCam lineage packet](../docs/report-cards/LINEAGE_ORCAM_MYEYE.md) |
+
+## Sport-goggle attachments
+
+These products attach to sport goggles rather than forming an eyeglass frame themselves.
+
+| ID | Maker | Model | Era | State | Form | Evidence / research |
+|---|---|---|---:|---|---|---|
+| ADJ-0016 | Vuzix | Smart Swim | 2020 | legacy/current support unclear | AR training display attachment for swim goggles | [Vuzix Wave 02 audit](../research/investigations/MANUFACTURER_COMPLETENESS_WAVE_02_2026-09-05.md); [product sheet](https://files.vuzix.com/Content/pdfs/vuzix-smart-swim-d01.pdf) |
 
 ## Non-wearable lineage relatives
 
