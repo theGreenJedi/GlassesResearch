@@ -1,35 +1,36 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-05T05:25:47.399399+00:00",
-  "candidate_count": 22,
-  "classifier_irrelevant_count": 13,
+  "discovered_utc": "2026-09-05T05:51:00.395116+00:00",
+  "candidate_count": 26,
+  "classifier_irrelevant_count": 9,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 9,
-    "broad_web": 13,
-    "developer": 1,
-    "research": 1
+    "adjacent": 18,
+    "broad_web": 6,
+    "community": 1,
+    "developer": 2
   },
   "relationship_counts": {
     "direct": 0,
-    "enabling": 1,
-    "adjacent": 8,
+    "enabling": 0,
+    "adjacent": 17,
     "speculative": 0,
-    "irrelevant": 13
+    "irrelevant": 9
   },
   "type_counts": {
-    "news": 18,
-    "tool": 1,
-    "sdk": 1,
-    "optics": 1,
+    "review": 2,
+    "news": 21,
+    "tool": 2,
+    "sdk": 2,
     "policy": 1,
-    "retail": 2
+    "retail": 2,
+    "community": 1
   },
   "routing_counts": {
-    "adjacent_radar": 8,
-    "reject_noise": 13,
-    "research_news_review": 9,
-    "research_optics": 1
+    "adjacent_radar": 17,
+    "reject_noise": 9,
+    "research_news_review": 17,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -43,39 +44,92 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "0774d5ebcbdb4302",
-      "title": "Express Scripts Members: Manage Your Prescriptions Online",
-      "url": "https://www.express-scripts.com/",
-      "summary": "Express Scripts® Pharmacy Benefit Services works with your plan to help you use and manage your prescription benefits. This may include understanding your coverage, filling prescriptions, exploring medication home delivery—if part of your plan—and staying on track with medications over time.",
-      "discovery_channel": "adjacent+broad_web+research",
-      "query": "prescription smart glasses; prescription smart glasses lens research; prescription lens technology eyewear",
+      "id": "5a13c0d60b2383ff",
+      "title": "Apartments for Rent in Mississauga ON - 1,764 Rentals | Apartments.com",
+      "url": "https://www.apartments.com/mississauga-on/",
+      "summary": "The waterfront includes several parks, with Jack Darling Memorial Park offering Lake Ontario views and recreational facilities. Heartland Town Centre houses numerous retail stores and restaurants.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "prescription"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "enabling",
+      "relationship": "adjacent",
       "content_types": [
-        "optics"
+        "retail"
       ],
-      "primary_type": "optics",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
-        "research_optics"
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "enabling technology signals: prescription",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "27684ad67672085d",
-      "title": "31 Best Day Trips From Kansas City — Places Nearby!",
-      "url": "https://familydestinationsguide.com/best-day-trips-from-kansas-city-mo/",
-      "summary": "Missouri’s fifth-largest city earned popularity as the one-time home/hometown of personalities such as Harry S. Truman and Ginger Rogers. Today, it’s a popular day trip destination sitting 22 minutes from Kansas City.",
+      "id": "b0bced0c12d6ee6f",
+      "title": "Jared Kushner, Steve Witkoff travel with proposal to end Russia-Ukraine ...",
+      "url": "https://www.upi.com/Top_News/US/2026/09/04/trump-envoys-russia-ukraine/3991788558116/",
+      "summary": "President Donald Trump said special envoys Steve Witkoff and Jared Kushner are traveling to Russia and Ukraine with a proposal to end the war.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "02a6c6d44cfe6584",
+      "title": "Kushner and Witkoff to Go to Russia and Ukraine to Revive Peace Talks ...",
+      "url": "https://www.nytimes.com/2026/09/04/us/politics/putin-zelensky-kushner-witkoff-talks.html",
+      "summary": "Jared Kushner and Steve Witkoff’s trip to meet with the countries’ presidents comes at a precarious moment in the Ukraine conflict.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7b278be35636bb16",
+      "title": "Mississauga - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mississauga",
+      "summary": "Situated on the northwestern shore of Lake Ontario in the Regional Municipality of Peel, it borders Toronto (Etobicoke) to the east, Brampton to the north, Milton to the northwest, and Oakville to the southwest.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -99,10 +153,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c25831db7caba7e0",
-      "title": "Buy and Sell in Kansas City, Missouri | Facebook Marketplace",
-      "url": "https://www.facebook.com/marketplace/kansascity/",
-      "summary": "Get Help on Marketplace. Sell.",
+      "id": "d9fc904fec740739",
+      "title": "Mississauga, Ontario - Destination Ontario",
+      "url": "https://www.destinationontario.com/en-ca/cities-towns/mississauga",
+      "summary": "Known for its vibrant art, historic villages, dynamic culinary, recreational parks and shopping centres, Mississauga is the third biggest municipality in Ontario by population and sixth in Canada. Located just west of Toronto, Mississauga is also home to Canada’s busiest airport.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -126,10 +180,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b3ac4a68441b814e",
-      "title": "Cities near Kansas City (Missouri)",
-      "url": "https://citiesnear.com/Kansas-City-MO",
-      "summary": "Find destinations nearby to plan a road trip from Kansas City (Missouri).",
+      "id": "137789e8d86c546b",
+      "title": "Restaurants in Mississauga",
+      "url": "https://www.restaurantji.com/on/mississauga/",
+      "summary": "We had the Bihari beef kebab and CHARSI Chicken Karahi. The food was delicious and the naans were served hot and fresh. We loved the buttered nann with sesame seeds.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -153,10 +207,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ad1f7442113d3ea6",
-      "title": "Cities near Kansas City (Missouri) within 50 miles",
-      "url": "https://citiesnear.com/Kansas-City-MO/50-miles",
-      "summary": "Find destinations within a 50 miles radius of me to plan a road trip from Kansas City (Missouri).",
+      "id": "869e57844d13bee1",
+      "title": "Steve Witkoff, Jared Kushner Heading To Russia, Ukraine To Present ...",
+      "url": "https://www.ndtv.com/world-news/steve-witkoff-jared-kushner-heading-to-russia-ukraine-to-present-peace-deal-trump-12004039",
+      "summary": "US President Donald Trump said Friday that he was sending envoys Jared Kushner and Steve Witkoff to Moscow and Kyiv with a proposal to end the four-year-old Ukraine war.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ffe1159becffb6d8",
+      "title": "Steve Witkoff, Jared Kushner to visit Russia, Ukraine in effort to ...",
+      "url": "https://thehill.com/homenews/administration/6071900-witkoff-kushner-peace-negotiations/",
+      "summary": "Two top U.S. envoys, Steve Witkoff and Jared Kushner, will travel to Russia and Ukraine this weekend in an effort to restart peace negotiations between the two countries, according to multiple repo…",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "51049464fbfd1fa2",
+      "title": "The 10 Best Restaurants Near Me in Mississauga | OpenTable",
+      "url": "https://www.opentable.ca/nearby/restaurants-near-me-mississauga-canada",
+      "summary": "How many restaurants are on OpenTable in Toronto / Ontario? There are 2009 restaurants on OpenTable in Toronto / Ontario. Can I see menu information for restaurants? Yes, we partner with a third party to retrieve menu information for restaurants near you.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -180,10 +288,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "afb3af53cb821732",
-      "title": "Cities Near Me - Kansas City, Missouri | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/Kansas+City,+MO",
-      "summary": "Find the top 15 cities, towns, and suburbs near Kansas City, MO, like Kansas City and Mission, and explore the surrounding area for a day trip.",
+      "id": "7b7d4864e1b91f8e",
+      "title": "Towns and Cities Near to Mississauga, Ontario Canada",
+      "url": "https://www.cities-towns-data.com/local-towns-near-mississauga-ontario-canada.htm",
+      "summary": "Getting the nearest towns to Mississauga, Ontario along with useful data and insights. We've drawn up relevant population data tables below detailing the nearest towns and cities, and you can download these Mississauga locations to a (comma separated values) CSV file to use in excel .",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -207,10 +315,118 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ecfeb10c313c2886",
-      "title": "Cities Nearby Kansas City, Missouri, United States",
-      "url": "https://www.thecitiesnow.com/united_states/missouri/kansas_city",
-      "summary": "Find five hundred cities near Kansas City, Missouri, United States from closest to farthest by distance. Distances from Kansas City to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "id": "c8b3160e4a3b7ed8",
+      "title": "Trump envoys Witkoff and Kushner plan to visit Moscow and Kyiv, in ...",
+      "url": "https://www.cnn.com/2026/09/04/europe/us-trump-witkoff-kushner-russia-ukraine-diplomacy-intl",
+      "summary": "US President Donald Trump’s special envoys Steve Witkoff and Jared Kushner are planning to visit Moscow and Kyiv in the coming days with a proposal to end the war, President Donald Trump said ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e0baf6e57a9b0440",
+      "title": "Trump envoys Witkoff and Kushner to travel to Moscow and Kyiv ... - Axios",
+      "url": "https://www.axios.com/2026/09/04/trump-witkoff-kushner-moscow-kyiv",
+      "summary": "It's their first trip to Kyiv since Trump took office last year.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4f52403ac020dee",
+      "title": "U.S. Special Envoys to Visit Russia and Ukraine This Weekend – TASS",
+      "url": "https://www.themoscowtimes.com/2026/09/04/us-special-envoys-to-visit-russia-and-ukraine-this-weekend-tass-a93637",
+      "summary": "U.S. special envoys Steve Witkoff and Jared Kushner are scheduled to visit Russia and Ukraine this weekend to revive negotiations aimed at ending the war, the state-run news agency TASS reported ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8d0a65e7481be81e",
+      "title": "US envoys to visit Russia, Ukraine with plan 'to end war' - dw.com",
+      "url": "https://www.dw.com/en/us-envoys-to-visit-russia-ukraine-with-plan-to-end-war/a-79040773",
+      "summary": "Jared Kushner and Steve Witkoff are set to travel to Russia and Ukraine to revive peace talks. The trip would be the pair's first visit to Kyiv since US President Donald Trump's reelection.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ee8b6a16e7e7f90",
+      "title": "Whiteoak Ford | New & Used Dealership in Mississauga, ON",
+      "url": "https://www.whiteoakford.ca/",
+      "summary": "If you need regular maintenance like an oil change, tire rotation, brake pads, and even extensive maintenance like transmission work, don’t hesitate to book your next service appointment at your Ford dealer in Mississauga, Ontario.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -234,12 +450,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "38702461a2f170a7",
-      "title": "The Best Things to Do in Kansas City | Visit KC",
-      "url": "https://www.visitkc.com/things-to-do/",
-      "summary": "Plan your Kansas City adventure with top attractions, cultural experiences, outdoor fun, family activities, and local favorites.",
+      "id": "ade0d1cc1e81eb26",
+      "title": "Witkoff and Kushner will travel to ‘end’ Russia’s war in Ukraine: Trump ...",
+      "url": "https://www.aljazeera.com/news/2026/9/4/witkoff-and-kushner-will-travel-to-end-russias-war-in-ukraine-trump",
+      "summary": "Steve Witkoff and Jared Kushner will travel to Ukraine and Russia this weekend to help restart peace negotiations.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -261,12 +477,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "79dc9f1e06fe109d",
-      "title": "Visit these 12 great small towns near Kansas City",
-      "url": "https://kansascitymag.com/visit-these-12-great-small-towns-near-kansas-city/",
-      "summary": "Autumn is the best time of the year here in the lower Midwest, where the days stay warm almost into November and the nights start getting a little crisp. Make time for a short weekend trip, somewhere life moves a little slower.",
+      "id": "feeb9952601e7a1f",
+      "title": "Witkoff, Kushner heading abroad to discuss Ukraine peace, Trump says ...",
+      "url": "https://www.reuters.com/world/europe/trump-says-witkoff-kushner-heading-russia-ukraine-present-peace-proposal-2026-09-04/",
+      "summary": "U.S. Special Envoy Steve Witkoff and Jared Kushner, Donald Trump's son-in-law, are heading abroad to attempt to forge a peace deal between Russia and Ukraine, the ‌U.S. president told reporters ...",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -288,15 +504,71 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c5061de95ba14196",
-      "title": "AR-15–style rifle - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/AR-15%E2%80%93style_rifle",
-      "summary": "additional terms may apply. By using this site, you agree to the Terms of Useand Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation ...",
+      "id": "fee8cbe12d27c538",
+      "title": "10 Best AR-15 Rifles (2026): Tested & Ranked - USA Gun Shop",
+      "url": "https://www.usa-gun-shop.com/best-ar-15-rifles/",
+      "summary": "The 10 best AR-15 rifles for 2026, live-fired and ranked from the $390 PSA PA-15 to the $1,550 Daniel Defense DDM4 V7. Specs, prices and who each suits.",
       "discovery_channel": "developer",
       "query": "AR glasses SDK developer",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "10c1c49177feb5e8",
+      "title": "11 Best AR Pistols (2026): Tested & Ranked - USA Gun Shop",
+      "url": "https://www.usa-gun-shop.com/best-ar-pistols/",
+      "summary": "The 11 best AR pistols for 2026, tested and ranked. DD DDM4 V7P, Sig MCX Spear LT, PSA JAKL, BCM RECCE-11, and 7 more with live prices and honest reviews.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2590a212ab411c6c",
+      "title": "Best Buy - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Best_Buy",
+      "summary": "te, you agree to the Terms of Useand Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [
         "privacy"
       ],
@@ -304,37 +576,10 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk",
-        "policy"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f4a1d72017dbb76b",
-      "title": "Amazon.com.au: Heat Bag",
-      "url": "https://www.amazon.com.au/heat-bag/s?k=heat+bag",
-      "summary": "Find quality microwavable heat packs filled with natural ingredients. Ideal for relaxation and soothing warmth anytime.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
+        "policy",
         "retail"
       ],
-      "primary_type": "retail",
+      "primary_type": "policy",
       "routing_targets": [
         "reject_noise"
       ],
@@ -344,62 +589,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2275b07b4acb9ced",
-      "title": "Amazon.com.au: Heat Bean Bags",
-      "url": "https://www.amazon.com.au/heat-bean-bags/s?k=heat+bean+bags",
-      "summary": "UNCN Microwave Heating Pad with Strap 17 * 7\" | Microwavable Heat Pad for Pain Relief | Reusable Bean Bag | Weighted Hot Pack for Neck, Shoulder, Cramps, Back | Warm Compress",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d3062dd7501f62f5",
-      "title": "Buy Jim's Cameras Seattle Online - Jims Used Cameras",
-      "url": "https://www.jimscamerasseattle.com/",
-      "summary": "Jim's Cameras; Seattle,Washington 98107.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fffd907486372785",
-      "title": "Heat Packs, Hot Water Bottles & Wheat Bags | Target Australia",
-      "url": "https://www.target.com.au/c/beauty/heat-massage/heat-packs/W304891",
-      "summary": "Soothe aches and keep cosy with our heat packs, hot water bottles & wheat bags. Find comforting essentials to warm your body and ease pain. Shop now.",
+      "id": "c137886c94015f25",
+      "title": "AP Classroom - College Board",
+      "url": "https://apclassroom.collegeboard.org/34/home",
+      "summary": "Access AP Classroom resources and tools to enhance learning and prepare for AP exams.",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -422,140 +615,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9924af223e01eb72",
-      "title": "Hot & Cold Packs - Chemist Warehouse",
-      "url": "https://www.chemistwarehouse.com.au/shop-online/1101/hot-cold-packs",
-      "summary": "Buy Hot & Cold Packs online at Chemist Warehouse and enjoy huge discounts across the entire range. Shop products online, in store or via click and collect today.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e218be434e23c9bf",
-      "title": "Hot & Cold Packs | Pain relief - Noomi Bean Bags",
-      "url": "https://noomi.com.au/collections/aromatherapy",
-      "summary": "Discover our range of aromatherapy hot/cold packs for soothing relaxation & pain relief. Perfect for period pain relief, cooling hot flashes or for frozen shoulder treatment.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0dca9bc346b519e0",
-      "title": "Our 10 Best Heat Bean Bags in Australia - September 2026 ...",
-      "url": "https://www.bestproductsaustralia.com/heat-bean-bags",
-      "summary": "Dual-Size Heat Packs for Hot & Cold Use: Includes a rectangular (13\" x 5\") and round (5.3\" x 5.3\") microwave heat pad. Perfect as a warm compress or cool pack. The rectangular microwave heat pad features quilted stitching to prevent filling shift and ensure even heat distribution.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "66bfe744950c1cc9",
-      "title": "Shop Heat Packs & Wheat Bags - Kmart",
-      "url": "https://www.kmart.com.au/category/beauty/heat-packs-and-wheat-bags/",
-      "summary": "Explore Kmart's range of Heat Packs & Wheat Bags at famously low prices. Delivery or click & collect on selected items.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "adc8d62ec2993dad",
-      "title": "ShoulderBliss Aromatherapy Neck & Shoulder Heat Pack - Noomi Bean Bags",
-      "url": "https://noomi.com.au/products/shoulderbliss-aromatherapy-neck-shoulder-heat-pack",
-      "summary": "Generous in size and cleverly designed to sit comfortably around your neck & shoulders, you can wear it all day long, at home or on the go, and forget that it's even there. It can be used hot or cold, and this version has a special aromatherapy blend to create a soothing scent.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ecddbf4cba9d8a5",
-      "title": "Translate Fast with Accurate Translator Online | Translate.com",
-      "url": "https://www.translate.com/",
-      "summary": "Online Document Translation Service. Email translation by expert. By use cases. Machine translation. Technical translation. Medical translation. Business translation. Certified Translation. By file type. Translate .PDF. Translate .PPT. Translate .DOC. Translate .JSON. Translate .INDD, .IDML. Translate .AI. Translate .FIG. By languages.",
+      "id": "4cc82e3300c5d1dd",
+      "title": "Free AI Translator | Grammarly",
+      "url": "https://www.grammarly.com/translate",
+      "summary": "Free AI Translator | Grammarly. Product. Learn. Features. AI agents. AI assistant. AI at Grammarly. Trust & security. Superhuman. Use Grammarly. Docs. Desktop. Mobile. Browser. Languages. Work. By team size. Enterprise. Teams & businesses. Individuals. By team function. Customer support. Marketing. IT. Sales. HR. Education. Students. Institutions.",
       "discovery_channel": "broad_web",
       "query": "translation smart glasses",
       "source": "Bing web RSS",
@@ -578,12 +641,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0046761870f665b3",
-      "title": "Wheat Bags Australia ® - Just Heat & Treat ® Microwavable Heat Packs",
-      "url": "https://wheatbags.com.au/",
-      "summary": "All natural Australian made Wheat Bags that can be used either heated in the microwave or frozen. Hot therapy heat packs that assist with pain management the natural way.",
+      "id": "33a6c8a08a1af810",
+      "title": "KPLC 7 News | Lake Charles, Louisiana",
+      "url": "https://www.kplctv.com/",
+      "summary": "Sports Person of the Week. The Playbook. Two a Days. High School.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -604,12 +667,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6015df605a5619f8",
-      "title": "Wheatbags Love - Natural Heat Packs, Eye Pillows, and Gift Sets",
-      "url": "https://wheatbagslove.com.au/",
-      "summary": "Explore our range of 100% natural wheat bags, neck heat packs, wrap-around heat packs, and eye pillows. They’re designed to ease aches, provide warmth on chilly nights, and help you achieve the restful sleep you need to thrive. Let us be part of your daily rituals of self-care and relaxation.",
+      "id": "678421e696444d54",
+      "title": "Movie Showtimes and Theaters near , | Fandango",
+      "url": "https://www.fandango.com/__movietimes",
+      "summary": "Movie Showtimes and Theaters near , | Fandango. Screen Reader Users: To optimize your experience with your screen reading software, please use our Flixster.com website, which has the same tickets as our Fandango.com and MovieTickets.com websites.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -621,6 +684,58 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "363fac0b4869a342",
+      "title": "The home of free learning from The Open University",
+      "url": "https://www.open.edu/openlearn/",
+      "summary": "OpenLearn will be unavailable from 8am to 11am on Tuesday 25 August due to scheduled maintenance.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5425d841fba182dc",
+      "title": "What is AI - DeepAI",
+      "url": "https://deepai.org/chat/what-is-ai",
+      "summary": "What is AI, and how does it enable machines to perform tasks requiring human intelligence, like speech recognition and decision-making? AI learns and adapts through new data, integrating into daily life via virtual assistants, recommendation algorithms, and self-driving cars.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
