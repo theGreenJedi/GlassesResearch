@@ -1,0 +1,467 @@
+{
+  "schema": 3,
+  "discovered_utc": "2026-09-05T06:06:43.890604+00:00",
+  "candidate_count": 15,
+  "classifier_irrelevant_count": 2,
+  "precision_rejected_count": 0,
+  "channel_counts": {
+    "adjacent": 11,
+    "broad_web": 4,
+    "research": 1
+  },
+  "relationship_counts": {
+    "direct": 1,
+    "enabling": 2,
+    "adjacent": 10,
+    "speculative": 0,
+    "irrelevant": 2
+  },
+  "type_counts": {
+    "news": 10,
+    "research": 1,
+    "tool": 3,
+    "hack": 1,
+    "optics": 2,
+    "retail": 1,
+    "community": 1
+  },
+  "routing_counts": {
+    "adjacent_radar": 10,
+    "community_evidence_review": 1,
+    "deep_research": 1,
+    "development_hacking": 3,
+    "reject_noise": 2,
+    "research_news_review": 13,
+    "research_optics": 2,
+    "retail_rebrand_review": 1
+  },
+  "policy": {
+    "collection": "high recall across ordinary search surfaces",
+    "classification": "relationship + content type + routing target before review",
+    "publication": "editorial verification required",
+    "retail": "lead only; resolve manufacturer/OEM/rebrand before canonical identity",
+    "research": "source lead; classify question answered before promotion",
+    "community": "attributed experience lead; never canonical specification evidence by itself",
+    "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
+  },
+  "collector_errors": [],
+  "candidates": [
+    {
+      "id": "24a4c0668cd4ac06",
+      "title": "we built open source smart glasses! : r/AR_MR_XR - Reddit",
+      "url": "https://www.reddit.com/r/AR_MR_XR/comments/11ejm3p/we_built_open_source_smart_glasses/",
+      "summary": "We built a pair of DIY, open source smart glasses in 2023 that are fully functional, fully open source, and have a suite of use cases. I travelled across North America in a mobile RV hacker lab while while designing circuit boards, doing CAD, writing firmware, integrating displays, etc. to make these Open Source AR Glasses a reality. Then, we realized the beta version 1.0 and went to CES 2023 ...",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "firmware",
+        "open source"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "tool",
+        "hack",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0cb890f67ce33bd7",
+      "title": "Prescription drug - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Prescription_drug",
+      "summary": "A prescription drug (also prescription medication, prescription medicine or prescription-only medication) is a pharmaceutical drug that is permitted to be dispensed only to those with a medical prescription. In contrast, over-the-counter drugs can be obtained without a prescription.",
+      "discovery_channel": "adjacent+research",
+      "query": "prescription smart glasses lens research; prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "enabling",
+      "content_types": [
+        "research",
+        "optics"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics",
+        "deep_research"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: prescription",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9678696a8205e495",
+      "title": "Home - ProGear",
+      "url": "https://www.progearrental.com/",
+      "summary": "Phase One Blue-Ring Lenses. Sony E-Mount Lenses. Cine Gear. Accessories. Audio/Mics/Audio Accessories. Camera Stabilization. Camera Tripods/Stands/Heads. Monitors & Recorders. Flash. Lighting Rentals. Broncolor. Light Modifiers.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "enabling",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lenses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ce973c712763c29a",
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=es-419",
+      "summary": "Aquí nos gustaría mostrarte una descripción, pero el sitio web que estás mirando no lo permite.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "16d5fca1f98b8ba1",
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "summary": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a7d699664cede92a",
+      "title": "Gmail - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Gmail",
+      "summary": "Gmail para móviles es una versión del servicio de correo de Gmail de Google. Es un servicio gratuito, desarrollado para proveer el acceso a Gmail desde dispositivos móviles, así como a celulares o teléfonos inteligentes.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "828eb51fd25de527",
+      "title": "Gmail: Correo electrónico gratuito, privado y seguro | Google Workspace",
+      "url": "https://workspace.google.com/intl/es-419_mx/gmail/",
+      "summary": "Gmail, ahora con la tecnología de la IA de Gemini. Descubre nuevas formas de escribir, responder y organizar tus correos electrónicos. Disfruta de una bandeja de entrada más inteligente y segura.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "70ac9473dc1f30d1",
+      "title": "Gmail: correo seguro y basado en IA para todos | Google Workspace",
+      "url": "https://workspace.google.com/intl/es/gmail/",
+      "summary": "Gmail, ahora con la tecnología de la IA de Gemini. Descubre nuevas formas de escribir, responder y organizar tus correos. Disfruta de una bandeja de entrada más inteligente y segura.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ab5210942a99168a",
+      "title": "Google Cuenta",
+      "url": "https://www.google.com/intl/es/account/about/",
+      "summary": "Por ejemplo, las confirmaciones de vuelos de tu bandeja de entrada de Gmail se sincronizan automáticamente con Google Calendar y Google Maps para ayudarte a llegar a tiempo al aeropuerto.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1aad0fc2277fff5e",
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform%3DDesktop",
+      "summary": "Para abrir Gmail, puedes iniciar sesión desde un ordenador o añadir tu cuenta a la aplicación Gmail en tu teléfono o tablet. Una vez que hayas iniciado sesión, abre tu bandeja de entrada para...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fce0a11f53887d3d",
+      "title": "Near Protocol Price Today | NEAR Live Price, Chart & Market ...",
+      "url": "https://www.okx.com/price/near-protocol-near",
+      "summary": "Near Protocol is a decentralized application platform designed to improve scalability and usability in blockchain technology. It addresses issues like slow transaction speeds and high costs by offering a more efficient and user-friendly environment. Near Protocol is primarily used for building and ...",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a8b028fc6228ac97",
+      "title": "NEAR: The Definitive Guide | NEAR",
+      "url": "https://www.near.org/blog/what-is-near-protocol",
+      "summary": "The definitive guide to NEAR: how a sharded blockchain evolved into the unified commerce layer for assets and agents. Why NEAR matters, and why now. .",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6277bdb5cbf8487",
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "summary": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "25cbdf7d73fc616b",
+      "title": "Camera Stores in Illinois - joeedelman.com",
+      "url": "https://www.joeedelman.com/camera-stores-in-illinois",
+      "summary": "Here is a list of local photography retailers offering gear, rentals, repairs, and expert advice across the state.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da6a7166a9b3424f",
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/translator",
+      "summary": "Millions translate with DeepL every day. Popular: Spanish to English, French to English, and Japanese to English.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    }
+  ]
+}
