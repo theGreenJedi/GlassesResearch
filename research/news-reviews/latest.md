@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-05T07:53:34.723046+00:00`
+Generated: `2026-09-05T08:39:31.582715+00:00`
 
 - Intake files inspected: **147**
 - Candidates retained in this review window/history: **1790**
@@ -12,9 +12,9 @@ Generated: `2026-09-05T07:53:34.723046+00:00`
 - `catalog_review`: 2
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 305
+- `needs_editorial_verification`: 303
 - `rejected_noise`: 569
-- `source_review`: 62
+- `source_review`: 64
 - `watching`: 37
 
 ## Action queue
@@ -162,7 +162,6 @@ Generated: `2026-09-05T07:53:34.723046+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Face New Restrictions Worldwide: Why Privacy is Becoming a Major Concern - Analytics Insight](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUmdZVlhDUWZxS1NCYURYS2NMaTVQQlBMUV95SVFGcngwTGdMOUdwTmlpaVBVUUhvVlQwVHhrRGN2Nzh6X0lyXy1qZTJ4WWs1aV9uTllHX1otYzU4SUxSeWExMm9pUFRjLUotSGJadF84Z1NaX0NZWW9MN08tV29FU3ctNmhYYkNNZ2QyVlZPTGNiZ005VFFpTGZRcGk2TkZINXZmQnNuaFB5c2pxeS1FWEZ5N3JaNzNxSGVhZEpLcHA1TkJuSHZ5cmFPR21PRVFBalFLcHhaWUNzSDBQWGfSAesBQVVfeXFMTjRwcjNCTXVuMlUtaEpXcWNFNG5hTXl1RWlWcUhfYkZHVEc4aDN6MHdUNURzdGpoNzVRMUdybG1heVBvMVhUWVhhMXFoVW96YW5Ub05QS09FT285UnNUOUNTY19GTGdvWHdLXzJ6X3JXdW91UTFkSUN3QTRURjNzRjY0NFM5ZXJBYVRkQW9raDdfbGhmYW1zX3Z0Z2FhUWdOSnNLLXdUODczQzloZ0hGcC04TkRfZ0hLLXIzdFpmTXN5azU0Sl9vRGJFZXVYUGlBZW8zbjFMcXo5RXVHODNyem5HTVEtb1VZRlo4RQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Face New Restrictions Worldwide: Why Privacy is Becoming a Major Concern - Analytics Insight](https://news.google.com/rss/articles/CBMi6wFBVV95cUxONHByM0JNdW4yVS1oSldxY0U0bmFNeXVFaVZxSF9iRkdURzhoM3owd1Q1RHN0amg3NVExR3JsbWF5UG8xWFRZWGExcWhVb3phblRvTlBLT0VPbzlSc1Q5Q1NjX0ZMZ29Yd0tfMnpfcld1b3VRMWRJQ3dBNFRGM3NGNjQ0UzllckFhVGRBb2toN19saGZhbXNfdnRnYWFRZ05Kc0std1Q4NzNDOWhnSEZwLThORF9nSEstcjN0WmZNc3lrNTRKX29EYkVldVhQaUFlbzNuMUxxejlFdUc4M3J6bkdNUS1vVVlGWjhF0gHrAUFVX3lxTE40cHIzQk11bjJVLWhKV3FjRTRuYU15dUVpVnFIX2JGR1RHOGgzejB3VDVEc3RqaDc1UTFHcmxtYXlQbzFYVFlYYTFxaFVvemFuVG9OUEtPRU9vOVJzVDlDU2NfRkxnb1h3S18yel9yV3VvdVExZElDd0E0VEYzc0Y2NDRTOWVyQWFUZEFva2g3X2xoZmFtc192dGdhYVFnTkpzSy13VDg3M0M5aGdIRnAtOE5EX2dISy1yM3RaZk1zeWs1NEpfb0RiRWV1WFBpQWVvM24xTHF6OUV1RzgzcnpuR01RLW9VWUZaOEU?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [ai smart glasses! Camera glasses. Realtime translation #smartglasses ...](https://www.tiktok.com/@silverkel01/video/7677967029562854678) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses With Screen](https://www.amazon.com/smart-glasses-screen/s?k=smart+glasses+with+screen) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Set for 2027 with Siri, AI, Privacy Focus - Analytics Insight](https://news.google.com/rss/articles/CBMixAFBVV95cUxPaS1mYVltMlZkMVJMb0xNVzRuTVd3M3o3RjBTdGVkdTN1TWtQUEhnZmppWmZhVm54V2NPX1NwN0Q3TnpFTWlUQVNZVjZmdGx5MThmdGtFbTZYWHVFaHEwRk9YWFg4MV9kT3ZHZ29RSGk4RDVxbkdENm9oY2hqWGw4SVh1cm5ua0NLSHlZYzZlU3owY05lZUxpc0FUOGg2M3hzY0IwZWZtMU9KdEY2MlZKTWRYdFU3ZklDYzhUNll1UHQ5NkI20gHEAUFVX3lxTE9pLWZhWW0yVmQxUkxvTE1XNG5NV3czejdGMFN0ZWR1M3VNa1BQSGdmamlaZmFWbnhXY09fU3A3RDdOekVNaVRBU1lWNmZ0bHkxOGZ0a0VtNlhYdUVocTBGT1hYWDgxX2RPdkdnb1FIaThENXFuR0Q2b2hjaGpYbDhJWHVybm5rQ0tIeVljNmVTejBjTmVlTGlzQVQ4aDYzeHNjQjBlZm0xT0p0RjYyVkpNZFh0VTdmSUNjOFQ2WXVQdDk2QjY?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Set for 2027 with Siri, AI, Privacy Focus - Analytics Insight](https://news.google.com/rss/articles/CBMitwFBVV95cUxPY0pSd3RYVDlFLVdOYzVMd3RpemJ6cVZKUVZZSTJyUVl3Tm9QYWVnZGpweXE4MjJxTzQ3eXRmY0FBRDNIdDFfdS1jeXExU1dudzJnM05CdmpHTWl3UlNxLTN4by1fX3lMU2JueEFRYi1zRmphRjRrN09Oc1JiTDA5eExjbDlUV25Lelc0bTJZUTFVX3FYS0VaNlVPT3F2T3NUcEZvQ1U4aHZhb191MGJUVENsaTMyejDSAcQBQVVfeXFMT2ktZmFZbTJWZDFSTG9MTVc0bk1XdzN6N0YwU3RlZHUzdU1rUFBIZ2ZqaVpmYVZueFdjT19TcDdEN056RU1pVEFTWVY2ZnRseTE4ZnRrRW02WFh1RWhxMEZPWFhYODFfZE92R2dvUUhpOEQ1cW5HRDZvaGNoalhsOElYdXJubmtDS0h5WWM2ZVN6MGNOZWVMaXNBVDhoNjN4c2NCMGVmbTFPSnRGNjJWSk1kWHRVN2ZJQ2M4VDZZdVB0OTZCNg?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AR Compare: AR Glasses Database — 81+ Models Compared](https://www.arcompare.com/) | reachable (200) | research_news_review |
@@ -271,6 +270,7 @@ Generated: `2026-09-05T07:53:34.723046+00:00`
 | normal | needs_editorial_verification | direct | [Smart Glasses With Display: HUD vs Virtual Screen Guide 2026](https://www.evenrealities.com/blogs/buyers-guide/smart-glasses-with-display) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Smart Glasses: What They Are, How They Work & What's Next](https://www.allaboutvision.com/eyewear/specialty/smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Snapdragon AR1 vs XR2: Which Chip Is Actually Better for Smart Glasses in 2026? - BBN Times](https://news.google.com/rss/articles/CBMiswFBVV95cUxPZk1DLVRyUjNFWDhEX2taM0FudHY0QnJXMnFkUzhoampnMUFPT01DMGFJTTV2aDlUWm5MeEdnTXF2ZE9PVjV3Nmc5MHJKaW5qSDJacm9BUHQ4UktQMlE5aENvYXVwcGtVTjBLZmtGdHlGd2ZTdnV0MzJOblZPSkdFSGMxRVpTVHU4aDRTanA3eVViWXVack1qLVBpd0d0M3Q4TEp4TXFTTkV5cmptaDdhcllXaw?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Style Meets Intelligence: HTC Announces VIVE Eagle - Privacy-Centric AI Smart Glasses - FinanzNachrichten.de](https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVU5mZ2xDTloxZFBSR2ZPdmlkZ2hRQmZOUDlrNWVyLU43aFVqekJxTXBXMkwwT3pRVDNzTkpVWVh3MjlSOTNCdEN5N21ieDgzdnY4TFF5YU1hOHpwcW1KTVp5Y3dtUnU2ZENhblVQb0wyRHN3V2pKZ2RXQVNXd3pEaTlZUVowNFdxa3JYdDQ1eFh6ZldXLVhxaWFPNU1wUmJ2UW1uUE96cll0eXcyVVZaWVltX0VObm9WaVhCemRIZk9KYTFsamgxVGVPdUs0QjFJV3FQcU00X2ZxNF9lazZTNHg5dUhiaEU?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
