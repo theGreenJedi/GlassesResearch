@@ -2,7 +2,7 @@
 
 **Edition:** 2026-09-05
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 193 distinct purchasable models or explicitly marketed product generations
+**Count:** 216 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -325,16 +325,47 @@ These rows were already approved in dated reconciliation packets. This section i
 
 | ID | Maker | Model | Era | State | Type | Access | Evidence / links |
 |---|---|---:|---:|---|---|---|---|
-| GLS-0185 | RayNeo | RayNeo iO | ≤2026 | current | discreet display / AI smart glasses | manufacturer retail / prescription | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.rayneo.com/products/rayneo-io-ai-glasses) |
-| GLS-0186 | RayNeo | RayNeo GT | ≤2026 | current | XR display / 3DoF | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses) |
-| GLS-0187 | RayNeo | RayNeo GT Max | ≤2026 | current | XR display / 3DoF | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses) |
-| GLS-0188 | VITURE | VITURE Pro 2 | ≤2026 | current | XR display | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.viture.com/pro2) |
-| GLS-0189 | Epson | Moverio BT-350 | ≤2026 | legacy / enterprise | standalone binocular AR | enterprise / commercial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://epson.com/For-Work/Wearables/Smart-Glasses/Moverio-BT-350-Smart-Glasses/p/V11H837020) |
-| GLS-0190 | Epson | Moverio BT-30E | ≤2026 | legacy / region-limited | tethered binocular display | commercial / enterprise | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.epson.jp/support/portal/hoshu/bt-30e.htm) |
-| GLS-0191 | Lucyd | Lucyd Loud 1.0 | ≤2026 | legacy | audio smart glasses | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://lucyd.co/blogs/news/july-2020-corporate-update) |
-| GLS-0192 | Lucyd | Lucyd Loud — second edition | ≤2026 | legacy | audio smart glasses | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://lucyd.co/blogs/news/july-2020-corporate-update) |
-| GLS-0193 | Lucyd | Lucyd Loud 2020 | ≤2026 | legacy | audio smart glasses | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://lucyd.co/blogs/news/july-2020-corporate-update) |
-| GLS-0194 | INMO | INMO X AI+Camera Glasses | ≤2026 | legacy / region-limited | camera / AI smart glasses | blind-order / preorder | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.inmoxr.com/pages/about-us) |
+| GLS-0185 | RayNeo | RayNeo iO | 2026 | current | discreet display / AI smart glasses | manufacturer retail / prescription | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.rayneo.com/products/rayneo-io-ai-glasses) |
+| GLS-0186 | RayNeo | RayNeo GT | 2026 | current | XR display / 3DoF | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses) |
+| GLS-0187 | RayNeo | RayNeo GT Max | 2026 | current | XR display / 3DoF | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses) |
+| GLS-0188 | VITURE | VITURE Pro 2 | 2026 | current | XR display | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.viture.com/pro2) |
+| GLS-0189 | Epson | Moverio BT-350 | 2017 | legacy / enterprise | standalone binocular AR | enterprise / commercial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://epson.com/For-Work/Wearables/Smart-Glasses/Moverio-BT-350-Smart-Glasses/p/V11H837020) |
+| GLS-0190 | Epson | Moverio BT-30E | 2018 | legacy / region-limited | tethered binocular display | commercial / enterprise | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.epson.jp/support/portal/hoshu/bt-30e.htm) |
+| GLS-0191 | Lucyd | Lucyd Loud 1.0 | 2018 | legacy | audio smart glasses | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://lucyd.co/blogs/news/july-2020-corporate-update) |
+| GLS-0192 | Lucyd | Lucyd Loud — second edition | 2019 | legacy | audio smart glasses | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://lucyd.co/blogs/news/july-2020-corporate-update) |
+| GLS-0193 | Lucyd | Lucyd Loud 2020 | 2020 | legacy | audio smart glasses | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://lucyd.co/blogs/news/july-2020-corporate-update) |
+| GLS-0194 | INMO | INMO X AI+Camera Glasses | 2024 | legacy / region-limited | camera / AI smart glasses | blind-order / preorder | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.inmoxr.com/pages/about-us) |
+
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0195 | Vuzix | M920 | 2003 | legacy | monocular wearable display | commercial/industrial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-14-021666/v372331_10k.htm) |
+| GLS-0196 | Vuzix | AV230 XL | ≤2009 | legacy | binocular video eyewear | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0000950123-09-019891/0000950123-09-019891.pdf) |
+| GLS-0197 | Vuzix | AV310 widescreen | ≤2009 | legacy | binocular video eyewear | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0000950123-09-019891/0000950123-09-019891.pdf) |
+| GLS-0198 | Vuzix | AV920 | ≤2009 | legacy | binocular video eyewear | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0000950123-09-019891/0000950123-09-019891.pdf) |
+| GLS-0199 | Vuzix | VR920 | 2007 | legacy | binocular VR/video eyewear | retail/developer | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0000950123-09-019891/0000950123-09-019891.pdf) |
+| GLS-0200 | Vuzix | Wrap 230 | 2009 | legacy | binocular video eyewear | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-11-019283/v217067_10k.htm) |
+| GLS-0201 | Vuzix | Wrap 310XL | 2009 | legacy | binocular video eyewear | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-12-021889/0001144204-12-021889.pdf) |
+| GLS-0202 | Vuzix | Wrap 920 | 2009 | legacy | binocular video eyewear | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-12-021889/0001144204-12-021889.pdf) |
+| GLS-0203 | Vuzix | Wrap 920VR | ≤2011 | legacy | tracked VR/video eyewear | retail/developer | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-11-019283/v217067_10k.htm) |
+| GLS-0204 | Vuzix | Wrap 920AR | 2010 | legacy | camera/tracked AR video eyewear | retail/developer | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-11-019283/v217067_10k.htm) |
+| GLS-0205 | Vuzix | Wrap 1200 | 2011 | legacy | binocular video eyewear | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-12-021889/0001144204-12-021889.pdf) |
+| GLS-0206 | Vuzix | Wrap 1200VR | 2012 | legacy | tracked VR/video eyewear | retail/developer | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-12-021889/0001144204-12-021889.pdf) |
+| GLS-0207 | Vuzix | STAR 1200 | 2012 | legacy | see-through AR video eyewear | developer/retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-12-021889/0001144204-12-021889.pdf) |
+| GLS-0208 | Vuzix | Wrap 1200DX | 2013 | legacy | HDMI binocular video eyewear | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-14-021666/v372331_10k.htm) |
+| GLS-0209 | Vuzix | Wrap 1200DX VR | 2013 | legacy | HDMI tracked VR/video eyewear | retail/developer | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-14-021666/v372331_10k.htm) |
+| GLS-0210 | Vuzix | Wrap 1200DX-AR | 2013 | legacy | HDMI camera/tracked AR eyewear | direct retail/developer | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-14-021666/v372331_10k.htm) |
+| GLS-0211 | Vuzix | STAR 1200DX | 2013 | legacy | see-through AR video eyewear | developer/direct retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/reports-filings/all-sec-filings/content/0001144204-14-021666/v372331_10k.htm) |
+| GLS-0212 | Vuzix | M400-C | 2022 | enterprise | host-driven enterprise monocular | enterprise/commercial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://ir.vuzix.com/news-events/press-releases/detail/1937/vuzix-introduces-its-new-m400-c-smart-glasses) |
+| GLS-0213 | XREAL / ROG | ROG XREAL R1 | 2026 | preorder | high-refresh XR display | manufacturer preorder | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://us.shop.xreal.com/products/rog-xreal-r1) |
+| GLS-0214 | Solos / Kopin | Solos Smart Glasses — first HUD generation | 2016 | legacy | sport HUD / assisted reality | preorder/crowdfunding | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://www.kopin.com/press-releases/solos-and-usa-cycling-partner-ahead-of-rio-2016-olympic-games/) |
+| GLS-0215 | Solos / Kopin | Solos Smart Glasses — second HUD generation | 2018 | legacy | sport HUD / assisted reality | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://www.kopin.com/press-releases/kopin-provides-business-update-and-first-quarter-2018-operating-results/) |
+| GLS-0216 | Solos | AirGo 1 | 2020 | legacy | audio smart glasses | crowdfunding/retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://www.kickstarter.com/projects/solostechnology/solos-smart-glasses-wellbeing-and-fashion-styles-all-in-one/faqs) |
+| GLS-0217 | Solos | AirGo A5 | 2026 | current/backordered | audio AI smart glasses | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://solosglasses.com/products/hydro-x-smartglasses-solos-airgo%E2%84%A2-a5) |
 
 ## Google Glass is in scope
 
@@ -348,7 +379,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 193-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 216-row count:
 
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
