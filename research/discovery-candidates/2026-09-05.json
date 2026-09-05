@@ -1,36 +1,42 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-05T15:58:27.633377+00:00",
-  "candidate_count": 18,
-  "classifier_irrelevant_count": 3,
+  "discovered_utc": "2026-09-05T16:52:26.637824+00:00",
+  "candidate_count": 52,
+  "classifier_irrelevant_count": 9,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 15,
-    "broad_web": 3
+    "adjacent": 43,
+    "broad_web": 9,
+    "community": 1,
+    "developer": 2,
+    "research": 1
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 1,
     "enabling": 0,
-    "adjacent": 15,
+    "adjacent": 42,
     "speculative": 0,
-    "irrelevant": 3
+    "irrelevant": 9
   },
   "type_counts": {
-    "model": 1,
-    "video": 5,
-    "news": 11,
-    "tool": 1,
-    "retail": 1,
-    "community": 1
+    "model": 2,
+    "review": 1,
+    "video": 1,
+    "news": 41,
+    "research": 1,
+    "tool": 6,
+    "sdk": 1,
+    "policy": 5,
+    "retail": 1
   },
   "routing_counts": {
-    "adjacent_radar": 15,
-    "community_evidence_review": 1,
-    "development_hacking": 1,
-    "model_catalog_review": 1,
-    "reject_noise": 3,
-    "report_card_evidence": 5,
-    "research_news_review": 15
+    "adjacent_radar": 42,
+    "deep_research": 1,
+    "development_hacking": 5,
+    "policy_privacy": 4,
+    "reject_noise": 9,
+    "report_card_evidence": 2,
+    "research_news_review": 43
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -44,386 +50,1045 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "fd1a92e86712829d",
-      "title": "YouTube - Wikipedia",
-      "url": "https://ja.wikipedia.org/wiki/YouTube",
-      "summary": "In August of this year, YouTube announced that it would no longer allow creators to monetize videos which \"made inappropriate use of family-friendly characters.\"",
+      "id": "61f1cb2859a00f45",
+      "title": "The Best Smart Glasses for 2026 - PCMag UK",
+      "url": "https://uk.pcmag.com/smart-glasses/150162/the-best-smart-glasses",
+      "summary": "Upgrade your eyewear with glasses that can function as cameras, headphones, and AR displays. We've tested all the major models and have everything you need to know to pick the right smart...",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0f6a87410460d234",
+      "title": "Camera doesn't work in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/camera/camera-doesn-t-work-in-windows",
+      "summary": "If your camera stops working, it can disrupt video calls, online meetings, and other activities that rely on camera. Common causes include missing drivers after a recent update, antivirus software blocking the camera, restrictive privacy settings, or issues with the app you're trying to use. This article provides a step-by-step guide to help you troubleshoot and resolve camera problems ...",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "announced"
+        "privacy"
       ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model",
-        "video"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fb04588a53842adf",
-      "title": "Best Plumber in Redmond, WA with verified reviewers on Nextdoor",
-      "url": "https://nextdoor.com/topics/plumber/redmond/wa/",
-      "summary": "See recommendations for best Plumber in Redmond, WA from your neighbors. Read real reviews of local Plumber to contact a reliable, affordable Plumber in your neighborhood.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "42989f13f6603587",
-      "title": "Plumber in Redmond, WA - The Plumbing Physician",
-      "url": "https://theplumbingphysician.com/plumber-in-redmond-wa/",
-      "summary": "Whether you’re facing a sudden toilet plumbing issue or looking for plumbing for a full bathroom remodel, our expert team is ready to help restore or upgrade your plumbing system with precision and care.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f79b7547fc730dc8",
-      "title": "Plumber Redmond WA | Puget Sound Plumbing & Heating",
-      "url": "https://pugetsoundplumbing.com/service-areas/king-county/redmond/",
-      "summary": "If you need routine or emergency plumbing services, our team of expert plumbers at Puget Sound Plumbing and Heating can help. Call us today or contact us online to make an appointment or request an estimate for the cost of plumbing services in Redmond, WA.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "02c242d6873ff62f",
-      "title": "Plumbers in Redmond, WA - The Real Yellow Pages®",
-      "url": "https://www.yellowpages.com/redmond-wa/plumbers",
-      "summary": "Local Plumbers in Redmond, WA. Compare expert Plumbers, read reviews, and find contact information - THE REAL YELLOW PAGES®",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0966ea8e00b2f795",
-      "title": "Plumbers in Redmond, Washington | Plumber Directory",
-      "url": "https://plumberdirectories.com/washington/redmond",
-      "summary": "Find licensed plumbers and plumbing contractors in Redmond, Washington—browse 9 verified listings with contact details, maps, and Google ratings so you can choose with confidence.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "653685fde2732dcd",
-      "title": "Plumbers near Redmond, WA - Thumbtack",
-      "url": "https://www.thumbtack.com/wa/redmond/plumbing",
-      "summary": "Here is the definitive list of Redmond's plumbing services as rated by the Redmond, WA community. Want to see who made the cut?",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "29370c4757ee5efa",
-      "title": "South County, MO, Apartments | The Residences at Tesson Ridge",
-      "url": "https://www.residencesattessonridge.com/",
-      "summary": "Located in South County near Tesson Ferry Road, these luxury South County, MO, apartments place you minutes from major employment hubs, medical facilities, and easy access to Chesterfield, Clayton, and Downtown St. Louis via I-55 and I-270.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "568e9a2b2f2167fd",
-      "title": "Top 10 Best Plumbers in Redmond, WA | Angi",
-      "url": "https://www.angi.com/companylist/us/wa/redmond/plumbing.htm",
-      "summary": "Read real reviews and see ratings for Redmond, WA plumbers for free! This list will help you pick the right plumbers in Redmond, WA.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8293997dd244805c",
-      "title": "TOP 10 BEST Plumbers near 1 Microsoft Way, Redmond, WA 98052 - Yelp",
-      "url": "https://www.yelp.com/search?find_desc=Plumbers&find_loc=1+Microsoft+Way%2C+Redmond%2C+WA+98052",
-      "summary": "Free estimates Emergency services 4.2 Miles \"I would highly recommend Jacob to anyone in need of reliable, high-quality plumbing services.\" more 20 mins response time 255 locals recently requested a quote",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface; near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ecb936f16ca23f7f",
-      "title": "TOP 10 BEST Plumbing near Microsoft Way, Redmond, WA, United ... - Yelp",
-      "url": "https://www.yelp.ca/search?find_desc=Plumbing&find_loc=1231+Microsoft+Way+Redmond",
-      "summary": "Free estimates Emergency services 7.1 km \"I would highly recommend Jacob to anyone in need of reliable, high-quality plumbing services.\" more 20 mins response time 255 locals recently requested a quote",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a7ab6a50ac303ba6",
-      "title": "YouTube Japan 公式チャンネル",
-      "url": "https://music.youtube.com/channel/UCrXUsMBcfTVqwAS7DKg9C0Q",
-      "summary": "Profile • @YouTubeJapan",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "98f4aac9c1e9e503",
-      "title": "YouTube Japan 公式チャンネル",
-      "url": "https://www.youtube.com/@YouTubeJapan/videosyo",
-      "summary": "YouTube Japan 公式チャンネルでは、国内外で話題になっている様々なカテゴリの動画の再生リストをご紹介中です。YouTube が独自に実施する ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "faa281bcceb461e0",
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/jp/",
-      "summary": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live performances, covers, and hard-to-find music you can’t get...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
         "video",
-        "tool"
+        "tool",
+        "policy"
       ],
       "primary_type": "video",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
+        "development_hacking",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "30bf3455ec9d0b7b",
+      "title": "CompTIA Certification Roadmap 2026: Which Cert to Get First",
+      "url": "https://itstudyhub.org/comptia-certifications-roadmap.html",
+      "summary": "This page explains which cert to take first based on your career goal (IT support, networking, or cybersecurity), how hard each exam is, what jobs they lead to, and which study resources are worth your time in 2026.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "study"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "94c279d9214c47b1",
+      "title": "Manage app permissions for a camera in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/privacy/manage-app-permissions-for-a-camera-in-windows",
+      "summary": "To use a camera with apps in Windows, permissions need to be turned on in the privacy settings for Camera. You can control access at the device level and for individual apps.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "privacy"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bcfab299861b1033",
+      "title": "Administrar permisos de aplicación para una cámara en Windows ...",
+      "url": "https://support.microsoft.com/es-es/windows/privacy/manage-app-permissions-for-a-camera-in-windows",
+      "summary": "Para usar una cámara con aplicaciones en Windows, los permisos deben estar activados en la configuración de privacidad de Cámara. Puede controlar el acceso a nivel de dispositivo y para aplicaciones individuales.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca227615872e995e",
+      "title": "Como abrir o VS Code dentro de uma pasta específica pelo terminal do ...",
+      "url": "https://pt.stackoverflow.com/questions/538332/como-abrir-o-vs-code-dentro-de-uma-pasta-espec%c3%adfica-pelo-terminal-do-macbook",
+      "summary": "Estou fazendo um curso de React onde o instrutor depois de instalar e configurar o webpack dentro de uma pasta específica (no meu caso dentro de uma pasta criada chamada products, criada dentro de outra pasta chamada ecomm...) pede para abrirmos o VS Code pelo terminal.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f25aded4aea27e25",
+      "title": "Como abrir pasta no windows através de um link em HTML?",
+      "url": "https://pt.stackoverflow.com/questions/308158/como-abrir-pasta-no-windows-atrav%c3%a9s-de-um-link-em-html",
+      "summary": "As pastas são abertas através do navegador. Gostaria que abrissem as próprias pastas do Windows. Já tentei fazer das seguintes formas:",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "41ea68d99dd96a8f",
+      "title": "Como criar um executável \" *.exe\" em Python? - Stack Overflow em ...",
+      "url": "https://pt.stackoverflow.com/questions/13806/como-criar-um-execut%c3%a1vel-exe-em-python",
+      "summary": "Porém, se você estiver usando Windows 64 bit com Python 32 bit, os arquivos gerados serão 32 bit, e funcionarão no Windows 32 bit e também 64 bit. Em todo caso vale a pena testar se o programa abre. Pode ser que não funcione em Windows mais antigos que XP. Ainda mais se o seu programa depende de outras bibliotecas como o QT.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e25efbea9ebd2dd6",
+      "title": "Como linkar um arquivo de computador no meu html?",
+      "url": "https://pt.stackoverflow.com/questions/269369/como-linkar-um-arquivo-de-computador-no-meu-html",
+      "summary": "Como faço para linkar uma pasta do meu computador no meu arquivo html? Cada pasta que quero abrir está dentro de uma mesma pasta em que salvei o meu arquivo html. Vou deixar o print da tela para a...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e7cc3b2e83149aa3",
+      "title": "CompTIA Certification Career Path Guide (2026) – Get Certified 4 Less",
+      "url": "https://getcertified4less.com/blogs/default-blog/blog-comptia-certification-career-path-guide-2026",
+      "summary": "This CompTIA Certification Career Path Guide breaks down each stage of the journey, helping you understand which certifications to pursue, what skills they validate, and how they align with real-world IT roles.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da220ff178ab329f",
+      "title": "CompTIA Certification Roadmap: From A+ to CASP+ (2026)",
+      "url": "https://simeononsecurity.com/it-career-playbook/it-certifications-and-degrees/comptia-certification-roadmap/",
+      "summary": "CompTIA certifications are the most widely recognized vendor-neutral IT credentials on the market. Every CompTIA cert proves foundational or specialized knowledge in a way that transfers across employers and industries.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "87dc5c2dace43e1a",
+      "title": "CompTIA Roadmap: Cert Path & Salary Guide (2026)",
+      "url": "https://course.careers/guides/comptia-roadmap-complete-learning-path-2026",
+      "summary": "This guide covers the actual comptia roadmap: the three tiers CompTIA officially recognizes, the career branches that split off after Security+, salary ranges at each stage, and which courses are worth your money.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e1c17e567c24be29",
+      "title": "CompTIA Stackable Certs: Every Path Explained (2026)",
+      "url": "https://course.careers/certifications/view-comptia-certs",
+      "summary": "There are two main CompTIA stackable cert tracks: Infrastructure and Cybersecurity. There's also an emerging Data/Analytics stack. We'll walk through each.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6f4a5bc1a3d51d88",
+      "title": "CompTIA Training, Certifications, and IT Careers: Your Questions ...",
+      "url": "https://www.comptia.org/en-us/blog/frequently-asked-questions-faq/",
+      "summary": "If you have some technical knowledge but need credentials to get your foot in the door, check out CompTIA A+. This certification is the industry standard for entry-level IT jobs, including technical support specialist and help desk technician.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c0201b50b2aa35cf",
+      "title": "Deinstallieren oder Entfernen von Apps und Programmen in Windows ...",
+      "url": "https://support.microsoft.com/de-de/windows/deinstallieren-oder-entfernen-von-apps-und-programmen-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "summary": "Zusammenfassung Es gibt verschiedene Möglichkeiten zum Entfernen von Apps und Programmen. Wenn Sie also das gesuchte Programm nicht finden, können Sie einen anderen Speicherort ausprobieren. Beachten Sie, dass einige Apps und Programme in Windows integriert sind und nicht deinstalliert werden können. Sie können zunächst versuchen, ein Programm zu reparieren, wenn es einfach nicht ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ae3325e0b00cb404",
+      "title": "Download and install Microsoft 365 Access Runtime | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/access/download-and-install-microsoft-365-access-runtime",
+      "summary": "Download the Microsoft 365 Access Runtime which allows you to run Microsoft 365 Access applications if you don't have the desktop version of Microsoft 365 Access and need to use an application built to run with Access 2010 or later.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bb962105470f20b6",
+      "title": "El Traductor de Google: un intérprete personal en tu teléfono u ordenador",
+      "url": "https://translate.google.com/intl/es/about/",
+      "summary": "Descubre cómo traducir texto, voz, imágenes, documentos, sitios web y más con el Traductor de Google.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9793a1e39aba2ab1",
+      "title": "Find your BitLocker recovery key | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/security/encryption/find-your-bitlocker-recovery-key",
+      "summary": "Check a USB flash drive Plug the USB flash drive into your locked device and follow the instructions. If you saved the key as a text file on the flash drive, use a different device to read the text file. What if I can't find the recovery key? If your device is managed by an organization, check with your IT department to retrieve the recovery key. If you can’t find the BitLocker recovery key ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36c06d33bc03b5b0",
+      "title": "Gerenciar permissões de aplicativo para uma câmera no Windows ...",
+      "url": "https://support.microsoft.com/pt-br/windows/privacy/manage-app-permissions-for-a-camera-in-windows",
+      "summary": "Resumo Para utilizar uma câmara com aplicações no Windows, as permissões têm de ser ativadas nas definições de privacidade da Câmara. Pode controlar o acesso ao nível do dispositivo e para aplicações individuais.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "24732afbe30b82d5",
+      "title": "Getting started with Access 2010 - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/office/getting-started-with-access-2010-60df0fc0-15d9-4e75-bfa8-1d1944940146",
+      "summary": "Explore these resources to begin learning how to use the Access 2010.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca462859b995ddab",
+      "title": "Google Traductor: Un intérprete personal en tu teléfono o computadora",
+      "url": "https://translate.google.com/intl/es-419/about/",
+      "summary": "Descubre cómo traducir texto, conversaciones, imágenes, documentos, sitios web y mucho más con Google Traductor.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fa35c8d4a2727f71",
+      "title": "Google Tradutor - Um intérprete no seu smartphone ou computador",
+      "url": "https://translate.google.com/intl/pt-BR/about/",
+      "summary": "Aprenda a traduzir textos, falas, imagens, documentos, sites e muito mais com o Google Tradutor.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cb990868edd0b3fe",
+      "title": "Help with the Microsoft account recovery form | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form",
+      "summary": "These steps will help guide you when filling out the account recovery form.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b825ca8ce62d83a8",
+      "title": "Herunterladen des Surface Recovery-Images - Microsoft-Support",
+      "url": "https://support.microsoft.com/de-de/surface-recovery-image",
+      "summary": "Verwenden Sie ein Bare-Metal-Wiederherstellungslaufwerk (BMR), um Ihr Surface-Gerät auf die Werkseinstellungen zurückzusetzen.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e15bc5d69a9859ca",
+      "title": "How to sign in to Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "summary": "Hotmail is now Outlook.com. Learn how to sign in to access your Outlook.com, Hotmail, Live, or MSN email account.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7edd1402e92b4047",
+      "title": "java - Arquivos .jar não abrem - Stack Overflow em Português",
+      "url": "https://pt.stackoverflow.com/questions/183699/arquivos-jar-n%C3%A3o-abrem",
+      "summary": "Olá gostaria de uma ajuda, criei um projeto básico em java mas o arquivo .jar não abre.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a298a9c7a622f831",
+      "title": "Listar arquivos de uma pasta utilizando os.listdir",
+      "url": "https://pt.stackoverflow.com/questions/253779/listar-arquivos-de-uma-pasta-utilizando-os-listdir",
+      "summary": "Quero listar os arquivos de uma pasta utilizando o os.listdir no Python mas não retorna nada. O código que fiz: import os def rename_files(): # (1) obter nomes de arquivos de uma pasta",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bc852bb0b00d3762",
+      "title": "Log in | AMP Reviews",
+      "url": "https://www.ampreviews.net/index.php?login/",
+      "summary": "JavaScript is disabled. For a better experience, please enable JavaScript in your browser before proceeding.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "116f1113b3d0bbd5",
+      "title": "Pastas no Jupyter - Stack Overflow em Português",
+      "url": "https://pt.stackoverflow.com/questions/530284/pastas-no-jupyter",
+      "summary": "Sempre usei o pycharm, e estou usando o jupyter agora, e gostaria de saber onde ficam as pastas que eu crio nele. Entrei nele, criei algumas pastas no diretório documentos, mas eles não aparecem no...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2e47641e94339955",
+      "title": "Qual o máximo de arquivos que posso ter em uma pasta?",
+      "url": "https://pt.stackoverflow.com/questions/31439/qual-o-m%C3%A1ximo-de-arquivos-que-posso-ter-em-uma-pasta",
+      "summary": "Se houver muitos arquivos em uma pasta, o desempenho fica comprometido ao solicitar um arquivo na pasta? Creio que depende do sistema de arquivo e as vezes fico me perguntando: Como as grandes empresas como facebook e google lidam com quantidade de arquivos e pastas?",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "174dda8df7a38660",
+      "title": "Script explorador de arquivos em C - Stack Overflow em Português",
+      "url": "https://pt.stackoverflow.com/questions/97524/script-explorador-de-arquivos-em-c",
+      "summary": "Preciso implementar um programa em C que funcione como um sistema explorador de arquivos.s. O programa deve permitir explorar locais do computador AVANÇANDO e RETORNANDO diretórios e criando dinamicamente uma estrutura de dados na memória para armazenar a listagem dos diretórios e arquivos explorados, imprimindo na tela cada nível de exploração. Conforme imagem:",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a8350dadcb11eb95",
+      "title": "Stackable Certifications | CompTIA",
+      "url": "https://www.comptia.org/en-us/resources/stackables/",
+      "summary": "Stackable certifications demonstrate that you’ve earned multiple CompTIA certifications and have the knowledge and experience needed to grow your IT career. They validate the skills of various IT roles and show a deeper mastery, opening up more job opportunities for you.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "50735d2994d47b0a",
+      "title": "Surface 恢复映像下载 - Microsoft 支持",
+      "url": "https://support.microsoft.com/zh-cn/surface-recovery-image",
+      "summary": "对于 Surface Hub 2S 和 Surface Hub 3，请参阅 重置 Surface Hub 2S & Surface Hub 3的 & 恢复，了解每种设备型号支持哪些恢复映像的具体信息。 如果你有 Surface Hub 3，或者已使用 Hub 3 Pack 升级 Surface Hub 2s 设备，则仅支持“Windows 11 IoT Enterprise with the Microsoft Teams 会议室 on Windows 体验”下载。 使用其他恢复映像可能 ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b8c0b8a0d10552a",
+      "title": "Så här loggar du in på Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/sv-se/accounts-billing/manage/how-to-sign-in-to-outlook-com",
+      "summary": "Om du inte kan logga in på dina Outlook.com-, Hotmail-, Live- eller MSN-e-postkonton eller om du inte är säker på hur du loggar in eller ut kan du prova någon av dessa lösningar.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed463377e855fb53",
+      "title": "The CompTIA Certification Path Explained - Coursera",
+      "url": "https://www.coursera.org/articles/comptia-certification-path",
+      "summary": "To earn your CompTIA certifications, you will need to pass an exam. Each exam has a recommended level of experience for professionals interested in gaining the certification, from no experience to up to three or four years of work experience.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "86edd58a2150042e",
+      "title": "The CompTIA certification path in 2026, the order that actually works",
+      "url": "https://doc.claudelab.me/articles/comptia-cert-path-2026",
+      "summary": "There are five role-specific paths, and the order that works depends on what you are trying to do for a living. Most guides treat the CompTIA ladder as a sequential climb where you collect every rung before moving up. You do not have to, and often should not.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "854d1a60b854677b",
+      "title": "Télécharger et installer ou réinstaller Office 2021, Office 2019 ou ...",
+      "url": "https://support.microsoft.com/fr-fr/office/lifecycle/officeinstall/download-and-install-or-reinstall-office-2021-office-2019-or-office-2016",
+      "summary": "Découvrez comment installer Office 2021, 2019 ou 2016 sur votre PC ou Mac.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71b93caa0dc8a0ff",
+      "title": "Use Snipping Tool to capture screenshots | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots",
+      "summary": "Learn how to use Snipping Tool to capture a screenshot, or snip, of any object on your screen, and then annotate, save, or share the image.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
         "development_hacking",
         "adjacent_radar"
       ],
@@ -433,10 +1098,37 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6cfb5fdd6a644f09",
-      "title": "Youtube公式チャンネル 日本 - YouTube",
-      "url": "https://www.youtube.com/@YouTubeJapan-official",
-      "summary": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new featuresNFL Sunday Ticket © 2026 Google LLC",
+      "id": "d400ff8616324384",
+      "title": "Which CompTIA Certification Is Right for Me? – CompTIA",
+      "url": "https://help.comptia.org/hc/en-us/articles/12874228705300-Which-CompTIA-Certification-Is-Right-for-Me",
+      "summary": "We have numerous resources to help you determine which CompTIA certifications best match your interests and career goals. The CompTIA Certifications page provides a concise description of each certification and you can filter the certifications by level and by job role to narrow your search.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e090440d709c1aaa",
+      "title": "windows - Como executar scripts no powershell - Stack Overflow em ...",
+      "url": "https://pt.stackoverflow.com/questions/381450/como-executar-scripts-no-powershell",
+      "summary": "Eu tenho um script extrair.sh que faz algumas coisas. Tenho outro script powershell.sh que faz a chamada apenas do powershell. E dentro do powershell.sh eu puxo o extrair.sh pra ele executar o script",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -447,12 +1139,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "video"
+        "news"
       ],
-      "primary_type": "video",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -461,10 +1152,147 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "200454325196a467",
-      "title": "CHRISTIAN PHOTO",
-      "url": "https://www.christianphoto.biz/",
-      "summary": "Iowa's Local Camera Store \"Big enough to serve you, Small enough to know you\" info@christianphoto.biz - 515.270.8030 - 6721 Douglas Ave. Urbandale, Iowa 50322",
+      "id": "b6b4f29880701737",
+      "title": "Удаление или удаление приложений и программ в Windows - Служба ...",
+      "url": "https://support.microsoft.com/ru-ru/windows/%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BB%D0%B8-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B8-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC-%D0%B2-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "summary": "Удаление или удаление приложений и программ в приложении \"Параметры\".",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7a58acd38300b8ca",
+      "title": "下载并安装 Microsoft 365 Access 运行时 | Microsoft Support",
+      "url": "https://support.microsoft.com/zh-cn/access/download-and-install-microsoft-365-access-runtime",
+      "summary": "下载 Microsoft 365 Access 运行时，如果你没有 Microsoft 365 Access 的桌面版本，并且需要使用与 Access 2010 或更高版本一起运行的应用程序，则允许你运行 Microsoft 365 Access 应用程序。",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0cd198ca2849c3c3",
+      "title": "在 Windows 中卸载或删除应用和程序 - Microsoft 支持",
+      "url": "https://support.microsoft.com/zh-cn/windows/%E5%9C%A8-windows-%E4%B8%AD%E5%8D%B8%E8%BD%BD%E6%88%96%E5%88%A0%E9%99%A4%E5%BA%94%E7%94%A8%E5%92%8C%E7%A8%8B%E5%BA%8F-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "summary": "可通过不同的方法删除应用和程序，因此，如果找不到要查找的应用和程序，可以尝试其他位置。 请注意，某些应用和程序内置于 Windows 中，无法卸载。 如果程序未正确运行，可以先尝试 修复程序。",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64f29fb1d69ee382",
+      "title": "Appointed Representative Services | Office of Hearings Operations",
+      "url": "https://www.ssa.gov/ar/",
+      "summary": "Appointed Representative Services Using ARS will give you real time and up-to-date access to your claimant's electronic folders for cases pending at the initial, reconsideration, hearings, and appeals levels. Representatives may also download status reports with key information regarding their pending and recently closed cases at the hearings and appeals levels.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "042a70957a4886c6",
+      "title": "WPLG Local 10 | Miami News, Fort Lauderdale News, Weather | Local10.com",
+      "url": "https://www.local10.com/",
+      "summary": "Missouri asks US Supreme Court to allow use of new Trump-backed congressional districts in midterms ICE officer charged in Minnesota shooting released on bond",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "released"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "policy"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2cbb3f0699b7e61f",
+      "title": "CHART - Live Cameras - Maryland",
+      "url": "https://chart.maryland.gov/TrafficCameras/GetTrafficCameras",
+      "summary": "The State of Maryland pledges to provide constituents, businesses, customers, and stakeholders with friendly and courteous, timely and responsive, accurate and consistent, accessible and convenient, and truthful and transparent services.",
       "discovery_channel": "broad_web",
       "query": "camera smart glasses",
       "source": "Bing web RSS",
@@ -487,12 +1315,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "34f6947112f4a4c7",
-      "title": "The Camera Corner",
-      "url": "https://thecameracorner.com/",
-      "summary": "Welcome to The Camera Corner, your one stop shop for all your camera equipment and online photo print needs. We also offer in-store services so feel free to stop by our shop!",
+      "id": "41dd769ce2be1b6a",
+      "title": "Home - WSVN 7News | Miami News, Weather, Sports | Fort Lauderdale",
+      "url": "https://wsvn.com/",
+      "summary": "More in Broward Deco Drive Ryan Reynolds, Kenneth Branagh make unlikely allies in Apple TV’s new buddy comedy, ‘Mayday’ Churchill’s Pub marks 47 years of music with month-long celebration",
       "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -513,10 +1341,114 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a563aed9913bec14",
-      "title": "Walmart Camera Store in Des Moines, IA| Photo Camaras, Web Cameras ...",
-      "url": "https://www.walmart.com/store/1723-des-moines-ia/camera-store",
-      "summary": "Shop for camera equipment at your local Des Moines, IA Walmart. We have a great selection of camera equipment for any type of home. Save Money. Live Better.",
+      "id": "ad8e22125abfc4a2",
+      "title": "NBC 6 South Florida – Miami local news, breaking news, weather",
+      "url": "https://www.nbcmiami.com/",
+      "summary": "Rescuers in Nepal pull 2 people alive from the debris 10 days after devastating floods . Crime and Courts 16 hours ago . 2 South Florida men sentenced in $34.8M health care fraud conspiracy, DOJ...",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "54fb897f3aefbfdf",
+      "title": "Reverso - Translations",
+      "url": "https://www.reverso.net/",
+      "summary": "Translations.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "de58de63c179af6d",
+      "title": "SMART: Select the running mode",
+      "url": "https://smart.embl.de/",
+      "summary": "Genomic SMART: only the proteomes of completely sequenced genomes are used, and the protein database is synchronized with the current version of the STRING database. The complete list of genomes in the current version of Genomic SMART is available here.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b61f04affc20e255",
+      "title": "Upcoming Anime Chart | Anime-Planet",
+      "url": "https://www.anime-planet.com/anime/seasons/upcoming",
+      "summary": "Explore upcoming anime releases with our season chart and add favorites to your personal list on Anime-Planet.",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9cce51b34becf0ea",
+      "title": "Walmart Camera Store in Waldorf, MD| Photo Camaras, Web Cameras ...",
+      "url": "https://www.walmart.com/store/1717-waldorf-md/camera-store",
+      "summary": "Shop for camera equipment at your local Waldorf, MD Walmart. We have a great selection of camera equipment for any type of home. Save Money. Live Better.",
       "discovery_channel": "broad_web",
       "query": "camera smart glasses",
       "source": "Bing web RSS",
