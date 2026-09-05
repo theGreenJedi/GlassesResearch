@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-08-06 → 2026-09-02**.
+Google Search Console page/query pairs for **2026-08-07 → 2026-09-03**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -13,6 +13,7 @@ Google Search Console page/query pairs for **2026-08-06 → 2026-09-02**.
 | https://glassesresearch.org/models/RayBanMetaGen2/ | "even reality glasses" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com | 1 | 0 | 0.00% | 5.0 |
 | https://glassesresearch.org/models/XREALOne/ | xreal one firmware | 1 | 0 | 0.00% | 7.0 |
 | https://glassesresearch.org/models/BrilliantHalo/ | brilliant labs halo github | 1 | 0 | 0.00% | 8.0 |
+| https://glassesresearch.org/models/EvenG2/ | وش مواصفاتها | 1 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/models/SolosAirGo/ | solos airgo v2 | 1 | 0 | 0.00% | 9.0 |
 | https://glassesresearch.org/lineages/META/ | meta gls | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/models/HuaweiEyewear2/ | eyewear 2 | 1 | 0 | 0.00% | 10.0 |
@@ -36,6 +37,7 @@ Google Search Console page/query pairs for **2026-08-06 → 2026-09-02**.
 | https://glassesresearch.org/models/RETAIL_REBRANDS/ | vuzix | 1 | 0 | 0.00% | 21.0 |
 | https://glassesresearch.org/docs/faq/01-basics/ | virtual glasses | 1 | 0 | 0.00% | 23.0 |
 | https://glassesresearch.org/lineages/META/ | vuzix | 1 | 0 | 0.00% | 23.0 |
+| https://glassesresearch.org/lineages/SNAP/ | snapchat spectacles website | 1 | 0 | 0.00% | 24.0 |
 | https://glassesresearch.org/lineages/SNAP/ | snap spectacles logo | 1 | 0 | 0.00% | 27.0 |
 | https://glassesresearch.org/docs/faq/01-basics/ | 6dof ar glasses | 1 | 0 | 0.00% | 28.0 |
 | https://glassesresearch.org/models/EvenG2/ | even realities secretlab | 1 | 0 | 0.00% | 29.0 |

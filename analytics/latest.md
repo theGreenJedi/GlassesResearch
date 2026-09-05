@@ -1,21 +1,22 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-09-04T12:07:55+00:00**
+Generated automatically: **2026-09-05T11:16:15+00:00**
 
 > **Interpretation rule:** Google Search Console is the primary external-discovery signal. Cloudflare HTTP traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-08-27 → 2026-09-02):** 203 impressions, 3 clicks, 1.48% CTR, average position 25.7.
-- **7-day change:** impressions -6.5%; clicks +200.0%.
-- **Rolling 28 days:** 1653 impressions, 6 clicks, 0.36% CTR, average position 32.1.
+- **Google, latest final 7 days (2026-08-28 → 2026-09-03):** 207 impressions, 3 clicks, 1.45% CTR, average position 24.2.
+- **7-day change:** impressions +24.0%; clicks +200.0%.
+- **Rolling 28 days:** 1677 impressions, 6 clicks, 0.36% CTR, average position 31.8.
 
 ## Google — top queries
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
 | ai glasses timeline | 0 | 3 | 0.00% | 21.0 |
-| ar eyeglass development case study | 0 | 14 | 0.00% | 52.4 |
+| ar eyeglass development case study | 0 | 15 | 0.00% | 53.9 |
+| device database | 0 | 1 | 0.00% | 45.0 |
 | device db | 0 | 1 | 0.00% | 36.0 |
 | future of smart glasses ownership | 0 | 2 | 0.00% | 18.5 |
 | glasses datasets | 0 | 1 | 0.00% | 55.0 |
@@ -23,43 +24,42 @@ Generated automatically: **2026-09-04T12:07:55+00:00**
 | mentra mach 1 | 0 | 1 | 0.00% | 39.0 |
 | mentra mach1 | 0 | 1 | 0.00% | 37.0 |
 | research glasses | 0 | 1 | 0.00% | 9.0 |
-| when did smart glasses come out | 0 | 1 | 0.00% | 66.0 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/ | 1 | 9 | 11.11% | 14.1 |
+| https://glassesresearch.org/ | 1 | 7 | 14.29% | 17.6 |
 | https://glassesresearch.org/docs/Firmware/ | 1 | 1 | 100.00% | 3.0 |
 | https://glassesresearch.org/glossary/components/CMP-0001-jl7018f/ | 1 | 2 | 50.00% | 2.5 |
 | https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 8 | 0.00% | 8.4 |
-| https://glassesresearch.org/docs/ABOUT/ | 0 | 1 | 0.00% | 7.0 |
 | https://glassesresearch.org/docs/BLE/ | 0 | 2 | 0.00% | 2.0 |
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 3 | 0.00% | 6.3 |
-| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 48 | 0.00% | 51.7 |
+| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 2 | 0.00% | 6.0 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 49 | 0.00% | 52.3 |
 | https://glassesresearch.org/docs/INVESTIGATION_WORKFLOW/ | 0 | 1 | 0.00% | 2.0 |
-| https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 2 | 0.00% | 5.0 |
+| https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 3 | 0.00% | 9.3 |
+| https://glassesresearch.org/docs/SEO_DISCOVERABILITY/ | 0 | 6 | 0.00% | 7.5 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **10,745 requests**, **1,085 HTTP visits**, **120.0 MB** served.
-- Rolling 7d: **40,836 requests**, **5,945 HTTP visits**, **608.8 MB** served.
+- Rolling 24h: **6,534 requests**, **566 HTTP visits**, **99.0 MB** served.
+- Rolling 7d: **44,344 requests**, **5,789 HTTP visits**, **656.8 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 6,017 | 572 |
-| NL | 3,357 | 30 |
-| SG | 344 | 315 |
-| FR | 205 | 27 |
-| CN | 172 | 12 |
-| GB | 163 | 32 |
-| AU | 98 | 3 |
-| TR | 81 | 5 |
-| DE | 69 | 21 |
-| T1 | 37 | 2 |
+| US | 4,378 | 395 |
+| NL | 1,849 | 53 |
+| SE | 58 | 2 |
+| SG | 43 | 10 |
+| FR | 26 | 5 |
+| CA | 24 | 7 |
+| DE | 24 | 17 |
+| BR | 15 | 6 |
+| CN | 13 | 5 |
+| KR | 10 | 8 |
 
 ## What to watch
 

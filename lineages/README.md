@@ -4,6 +4,12 @@ Smart glasses are often sold under brand names that hide shared software, protoc
 
 A lineage does **not** assert that every member has the same manufacturer or identical hardware. It records a documented family relationship and states what kind of relationship is actually supported.
 
+## Manufacturer completeness
+
+A lineage chapter is not, by itself, a completeness certificate. GlassesResearch separately tracks whether each substantial manufacturer has received a whole-manufacturer historical audit across current products, discontinued generations, regional names, aliases, model numbers, bundles, adjacent wearables, developer/support material and acquisition evidence.
+
+See [Manufacturer Completeness](../docs/MANUFACTURER_COMPLETENESS.md) for the public methodology and audit states. The machine-readable coverage ledger lives at [`data/manufacturer-coverage.json`](../data/manufacturer-coverage.json).
+
 ## Lineage research
 
 Each lineage is analyzed as a research subject in its own right: current models, evolution, shared characteristics, development ecosystem, compatibility evidence, strengths, weaknesses, use cases, communities, and unresolved relationships.
@@ -19,6 +25,12 @@ These are maintained as public, evolving lineage chapters:
 - [Google Glass](GOOGLE_GLASS.md) — Explorer Edition through Enterprise Edition 2; a foundational corporate/product lineage spanning consumer experimentation and enterprise assisted reality.
 - [Vuzix](VUZIX.md) — corporate lineage split into the Z100 phone-peripheral branch and standalone Android wearable-computer branches including M400/M4000, Blade 2, Shield, and LX1.
 - [XREAL / Nreal](XREAL.md) — Nreal/XREAL personal-display and spatial-computing glasses.
+- [Rokid](ROKID.md) — corporate lineage spanning integrated camera/AI eyewear, enterprise Glass products and the Air/Max host-driven display/spatial branch, with bundle identities kept separate from eyewear-model count.
+- [RayNeo / TCL / Thunderbird](RAYNEO_TCL.md) — corporate/product lineage spanning NXTWEAR, Air, X-series, V3, iO and GT branches across changing TCL/Thunderbird/RayNeo branding.
+- [Epson Moverio](EPSON_MOVERIO.md) — standalone Android, tethered-display and industrial Moverio branches, with industrial smart headsets routed to the adjacent catalog.
+- [VITURE](VITURE.md) — personal-display/XR eyewear generations from One through Pro 2, with docks, neckbands and collector configurations kept separate from eyewear identity.
+- [INMO](INMO.md) — Air, GO and photography-focused X branches, including unresolved 2021-versus-2024 X-series history.
+- [Lucyd / Innovative Eyewear](LUCYD.md) — Loud, Lyte, safety and licensed-fashion smart-eyewear history with frame styles separated from electronics generations.
 - [Brilliant Labs](BRILLIANT_LABS.md) — Monocle, Frame, and Halo open/developer lineage.
 - [Brilliant Labs population ledger](BRILLIANT_LABS_POPULATION.md) — model-population and evidence propagation record for the lineage.
 - [Snap Spectacles](SNAP.md) — camera-glasses and later AR Spectacles generations.
@@ -69,6 +81,7 @@ Each relationship is reported separately. Membership in a software lineage is ne
 
 ## Related research
 
+- [Manufacturer Completeness](../docs/MANUFACTURER_COMPLETENESS.md)
 - [The List](../models/THE_LIST.md)
 - [Adjacent Wearable-HCI Catalog](../models/ADJACENT_WEARABLES.md)
 - [Report Cards](../docs/REPORT_CARD.md)
