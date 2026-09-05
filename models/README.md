@@ -1,6 +1,6 @@
 # Model Research Chapters
 
-[`The List`](THE_LIST.md) is the canonical smart-glasses index. Following the 2026-08-12 lineage reconciliation, the smart-glasses ledger reached **145** purchasable models and generations. After the later retirement of unsupported `GLS-0032` and subsequent evidence-backed admissions, the active canonical count is now **180**. The stable additions `GLS-0122` through `GLS-0145` are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md), while later corrections and additions remain anchored by the permanent identifier policy. Devices that belong to the same augmented-human research universe but are not fundamentally eyewear live in the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) and are never silently included in the smart-glasses count.
+[`The List`](THE_LIST.md) is the canonical smart-glasses index. Following the 2026-08-12 lineage reconciliation, the smart-glasses ledger reached **145** purchasable models and generations. After the later retirement of unsupported `GLS-0032` and subsequent evidence-backed admissions, including the 2026-09-05 Rokid historical audit, the active canonical count is now **183**. The stable additions `GLS-0122` through `GLS-0145` are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md), while later corrections and additions remain anchored by the permanent identifier policy. Devices that belong to the same augmented-human research universe but are not fundamentally eyewear live in the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) and are never silently included in the smart-glasses count.
 
 ## Canonical catalogs
 
@@ -11,7 +11,7 @@
 
 ## Read the models, not just the database
 
-The human-readable profile library now contains an evidence-backed paragraph for **every one of the 180 active canonical smart-glasses records**. A paragraph is not permission to guess: when acquisition is established but generation-specific internals remain incomplete, the profile says so explicitly and points to the unresolved archival work rather than borrowing specifications from a neighboring generation.
+The human-readable profile library now contains an evidence-backed paragraph or dedicated model chapter for **every one of the 183 active canonical smart-glasses records**. A paragraph is not permission to guess: when acquisition is established but generation-specific internals remain incomplete, the profile says so explicitly and points to the unresolved archival work rather than borrowing specifications from a neighboring generation.
 
 Editorial volumes:
 
@@ -26,6 +26,7 @@ Editorial volumes:
 - [XR Display Lineages — Batch 03](PROFILES_XR_DISPLAY.md)
 - [Lineage-Reconciled Smart-Glasses Profiles](PROFILES_LINEAGE_RECONCILED.md) — `GLS-0122` through `GLS-0145`, with explicit uncertainty where generation-specific specifications remain incomplete.
 - [Evidence-Boundary Completion](PROFILES_COMPLETION_GAPS.md) — conservative profiles for models whose acquisition evidence is stronger than their current generation-specific technical record.
+- [Rokid historical admissions — 2026-09-05](PROFILES_2026_09_05_ROKID.md) — Air Pro, Max Pro, Glass 3, and the corrected RV203 / Style / Neo identity boundary.
 - [Additional high-throughput profiles — Batch 05](PROFILES_HIGH_THROUGHPUT_05.md)
 - [Additional high-throughput profiles — Batch 06](PROFILES_HIGH_THROUGHPUT_06.md)
 - [Additional XR display profiles](PROFILES_XR_DISPLAY_02.md)
@@ -49,9 +50,12 @@ Editorial volumes:
 | [Vuzix M400 / M4000](VuzixM400/README.md) | GLS-0098–0099 | Standalone Android wearable-computer architecture, app deployment, connectivity SDK and Vuzix View tooling. |
 | [Vuzix Shield](VuzixShield/README.md) | GLS-0121 | Android developer platform, connectivity/HUD SDK support and APK deployment path. |
 | [Vuzix LX1](VuzixLX1/README.md) | GLS-0100 | Standalone Android architecture and Vuzix View deployment/debug tooling. |
+| [Rokid AI Glasses / Style / Neo](RokidAIStyle/README.md) | GLS-0063 | Display-free `RV203` camera/audio branch, regional/current aliases, prescription-friendly frame, companion/service boundary and Bolon variant question. |
 | [Rokid Glasses](RokidGlasses/README.md) | GLS-0064 | MicroLED display, AR1/RT600 hardware, camera/audio, connectivity, battery, app, SDK resources and integrated-AI lineage boundary. |
-| [Rokid AI Glasses Style](RokidAIStyle/README.md) | Investigation | Display-free camera/audio branch, prescription-friendly frame, companion/service boundary, SDK/offline questions and Style Pack identity. |
+| [Rokid Air Pro](RokidAirPro/README.md) | GLS-0182 | Camera-equipped 2021 Air sibling, UXR SDK evidence, camera/optical boundary, host behavior and archival targets. |
+| [Rokid Max Pro](RokidMaxPro/README.md) | GLS-0183 | Max Pro/Station Pro boundary, `RA202`, 6DoF spatial behavior, AR Studio architecture and owner-control investigation. |
 | [Rokid Max 2](RokidMax2/README.md) | GLS-0094 | Host-driven display architecture, DisplayPort behavior, optical adjustment, and separation of Max 2 hardware from Station 2 storefront copy. |
+| [Rokid Glass 3](RokidGlass3/README.md) | GLS-0184 | `RG301/RG303`, YodaOS-Sprite Enterprise, first-party manual, Android Studio/debug workflow, media/transport APIs and enterprise service boundary. |
 | [Rokid AR Spatial](RokidARSpatial/README.md) | System bundle | Max 2 + Station 2 spatial-computing configuration; YodaOS-Master, multi-window behavior and owner-control investigation without inflating eyewear count. |
 | [Rokid AR Joy 2](RokidARJoy2/README.md) | System bundle | Max 2 + original Rokid Station entertainment configuration; Station-generation boundary and current first-party source contradiction. |
 | [RayNeo X3 Pro](RayNeoX3Pro/README.md) | GLS-0066 | Full-color MicroLED, Snapdragon AR1, cameras, AIOS, sensors, connectivity, Gemini and developer access. |

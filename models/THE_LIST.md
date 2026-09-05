@@ -1,8 +1,8 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-09-04
+**Edition:** 2026-09-05
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 180 distinct purchasable models or explicitly marketed product generations
+**Count:** 183 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -88,10 +88,11 @@ Status is last checked on the edition date and can vary by country. Frame colors
 | GLS-0058 | INMO | Air 2 | 2023 | current | standalone display | retail | primary; [source](https://www.inmoglass.com/) |
 | GLS-0059 | INMO | GO | 2024 | current | discreet display | retail | primary; [source](https://www.inmoglass.com/) |
 | GLS-0060 | INMO | Air 3 | 2025 | preorder/current | standalone display | preorder/retail | primary; [source](https://www.inmoglass.com/) |
-| GLS-0061 | Rokid | Rokid Glass | 2018 | legacy | standalone AR | enterprise/developer | primary; [source](https://global.rokid.com/) |
-| GLS-0062 | Rokid | Rokid Glass 2 | 2021 | enterprise | standalone AR | enterprise | primary; [source](https://global.rokid.com/) |
-| GLS-0063 | Rokid | Rokid AI Glasses | 2024 | current/region-limited | camera/audio | retail | primary; [source](https://global.rokid.com/) |
+| GLS-0061 | Rokid | Rokid Glass | 2018 | legacy | standalone AR | enterprise/developer | primary; [lineage](../lineages/ROKID.md); [source](https://www.rokid.com/en-US/about) |
+| GLS-0062 | Rokid | Rokid Glass 2 | 2020 | enterprise | standalone AR | enterprise | primary; [lineage](../lineages/ROKID.md); [source](https://www.rokid.com/en-US/about) |
+| GLS-0063 | Rokid | Rokid AI Glasses / Style / Neo (RV203) | 2025 | current | camera/audio | retail | primary; [chapter](RokidAIStyle/README.md); [source](https://global.rokid.com/pages/security-center) |
 | GLS-0064 | Rokid | Rokid Glasses | 2025 | current | display AI | retail | primary; [registry](CATALOG.md); [source](https://global.rokid.com/) |
+| GLS-0184 | Rokid | Rokid Glass 3 (RG301 / RG303) | 2026 | current/enterprise | standalone enterprise AR | enterprise | primary; [chapter](RokidGlass3/README.md); [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_ROKID.md); [source](https://x-docs.rokid.com/docs/en/downloads/demo-guide.html) |
 | GLS-0065 | RayNeo | X2 | 2023 | current/limited | standalone AR | retail/developer | primary; [source](https://www.rayneo.com/) |
 | GLS-0066 | RayNeo | X3 Pro | 2025 | current | standalone AR | retail/developer | primary; [registry](CATALOG.md); [source](https://www.rayneo.com/) |
 | GLS-0067 | Snap | Spectacles (2021, 4th Gen) | 2021 | developer | standalone AR | creator program | primary; [source](https://www.spectacles.com/) |
@@ -126,7 +127,9 @@ Status is last checked on the edition date and can vary by country. Frame colors
 | GLS-0090 | RayNeo | Air 3s | 2025 | current | XR display | retail | primary; [source](https://www.rayneo.com/) |
 | GLS-0091 | RayNeo | Air 3s Pro | 2025 | current | XR display | retail | primary; [source](https://www.rayneo.com/) |
 | GLS-0092 | Rokid | Air | 2021 | legacy | XR display | retail | primary; [source](https://global.rokid.com/) |
+| GLS-0182 | Rokid | Air Pro | 2021 | enterprise/region-limited | camera-equipped XR/AR display | enterprise/commercial | primary; [chapter](RokidAirPro/README.md); [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_ROKID.md); [source](https://forum.rokid.com/post/detail/365) |
 | GLS-0093 | Rokid | Max | 2023 | current | XR display | retail | primary; [source](https://global.rokid.com/) |
+| GLS-0183 | Rokid | Max Pro | 2023 | enterprise/region-limited | 6DoF XR/spatial display | enterprise/system component | primary; [chapter](RokidMaxPro/README.md); [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_ROKID.md); [source](https://arstudio.rokid.com/) |
 | GLS-0094 | Rokid | Max 2 | 2024 | current | XR display | retail | primary; [source](https://global.rokid.com/) |
 
 ## Enterprise, industrial, and field-service eyewear
@@ -203,7 +206,6 @@ These rows were admitted after whole-lineage investigation. They use the same ac
 | GLS-0143 | NuEyes | Pro 4 | ≤2026 | current | assistive camera/display | retail/enterprise | primary; [packet](../docs/report-cards/LINEAGE_NUEYES.md) |
 | GLS-0144 | Envision | Envision Glasses | c. 2020 | current/legacy transition | assistive visual-AI eyewear | retail | primary; [packet](../docs/report-cards/LINEAGE_ENVISION.md) |
 
-
 ## Reconciliation admissions — mechanically synchronized
 
 These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
@@ -218,7 +220,6 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0152 | INMO | GO2 | ≤2026 | current/support-established | discreet display | retail/support | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://support.inmoxr.com/go2/) |
 | GLS-0153 | INMO | GO3 | ≤2026 | current | discreet display / AI translation | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17.md); [source](https://www.inmoxr.com/pages/inmo-go3-ai-glasses) |
 
-
 ## Reconciliation admissions — mechanically synchronized
 
 These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
@@ -231,7 +232,6 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0157 | Shared W100 / Ear Dance OEM ecosystem | W100 | ≤2026 | current/OEM-retail | audio / AI translation | retail/OEM | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17_302.md); [source](https://www.goodwaytechs.com/ai-smart-glasses-manufacturer.html) |
 | GLS-0158 | Goodway / shared HeyCyan OEM ecosystem | W630 | ≤2026 | current/OEM-retail | camera/audio AI | retail/OEM | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17_302.md); [source](https://www.goodwaytechs.com/ai-camera-glasses-w630.html) |
 
-
 ## Reconciliation admissions — mechanically synchronized
 
 These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
@@ -240,7 +240,6 @@ These rows were already approved in dated reconciliation packets. This section i
 |---|---|---:|---:|---|---|---|---|
 | GLS-0159 | Innovative Eyewear / Lucyd | Lucyd Armor | ≤2026 | current | audio / smart safety glasses | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-17_309.md); [source](https://lucyd.co/products/lucyd-armor) |
 
-
 ## Reconciliation admissions — mechanically synchronized
 
 These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
@@ -248,7 +247,6 @@ These rows were already approved in dated reconciliation packets. This section i
 | ID | Maker | Model | Era | State | Type | Access | Evidence / links |
 |---|---|---:|---:|---|---|---|---|
 | GLS-0160 | MemoMind / Qinglai Innovation | MemoMind One | ≤2026 | preorder/crowdfunding | camera-free binocular display AI glasses | Kickstarter/crowdfunding | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-18_TRIAGE.md); [source](https://www.memo-mind.com/pages/memomind-one) |
-
 
 ## Reconciliation admissions — mechanically synchronized
 
@@ -259,7 +257,6 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0161 | Alibaba / Qwen | Qwen Glasses S1 | ≤2026 | current/region-limited | dual-display camera/audio AI glasses | retail/China | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-21_QWEN.md); [source](https://www.alibabacloud.com/blog/alibaba-unveils-qwen-glasses-at-mwc-barcelona-accelerating-ai-hardware-ambitions_602920) |
 | GLS-0162 | Alibaba / Qwen | Qwen Glasses G1 | ≤2026 | current/region-limited | camera/audio AI glasses | retail/China | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-21_QWEN.md); [source](https://www.alibabacloud.com/blog/alibaba-unveils-qwen-glasses-at-mwc-barcelona-accelerating-ai-hardware-ambitions_602920) |
 
-
 ## Reconciliation admissions — mechanically synchronized
 
 These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
@@ -267,7 +264,6 @@ These rows were already approved in dated reconciliation packets. This section i
 | ID | Maker | Model | Era | State | Type | Access | Evidence / links |
 |---|---|---:|---:|---|---|---|---|
 | GLS-0163 | L'Atitude 52°N | Milan | ≤2026 | preorder | camera/audio AI smart glasses | online/preorder | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-21_MILAN.md); [source](https://www.latitude52n.com/products/milan-smart-glasses) |
-
 
 ## Reconciliation admissions — mechanically synchronized
 
@@ -278,7 +274,6 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0164 | Nautica / Lucyd | Corsair | ≤2026 | current | audio smart sunglasses | manufacturer/major retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-24_RETAIL_DUMP.md); [source](https://lucyd.co/products/corsair) |
 | GLS-0165 | Meta | Adventurer | ≤2026 | current | camera/audio AI glasses | manufacturer/major retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-24_RETAIL_DUMP.md); [source](https://www.meta.com/ai-glasses/meta-glasses/adventurer/) |
 
-
 ## Reconciliation admissions — mechanically synchronized
 
 These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
@@ -286,7 +281,6 @@ These rows were already approved in dated reconciliation packets. This section i
 | ID | Maker | Model | Era | State | Type | Access | Evidence / links |
 |---|---|---:|---:|---|---|---|---|
 | GLS-0166 | Nimbo | X1 | ≤2026 | preorder/crowdfunding | full-color AR / camera AI glasses | preorder/Kickstarter | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-08-28_NIMBO_X1.md); [source](https://nimbopearl.com/campaign/) |
-
 
 ## Reconciliation admissions — mechanically synchronized
 
@@ -297,7 +291,6 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0167 | Meizu / DreamSmart / MYVU | MYVU Air / StarV Air (XGA010C) | ≤2026 | current/region-limited | binocular discreet display / audio | manufacturer/retail/marketplace | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-03_MYVU_STARV.md); [source](https://m.meizu.com/global/product/starv-air/specs ; official XGA010C manual) |
 | GLS-0168 | Meizu / DreamSmart / StarV | StarV Air2 | ≤2026 | current/region-limited | binocular discreet display / audio | manufacturer/retail/marketplace | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-03_MYVU_STARV.md); [source](https://www.meizu.com/global/product/starv-air2/specs) |
 
-
 ## Reconciliation admissions — mechanically synchronized
 
 These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
@@ -306,7 +299,6 @@ These rows were already approved in dated reconciliation packets. This section i
 |---|---|---:|---:|---|---|---|---|
 | GLS-0169 | Goodway / shared HeyCyan OEM ecosystem | W640 | ≤2026 | current/OEM-retail | camera/audio AI glasses | OEM/sample/commercial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-03_W640_W650.md); [source](https://www.goodwaytechs.com/goodway-ai-smart-glasses-8mp-sony-cam-ai-translation-hd-video-w640.html) |
 | GLS-0170 | Goodway / shared HeyCyan OEM ecosystem | W650 | ≤2026 | current/OEM-retail | camera/audio AI glasses | OEM/sample/commercial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-03_W640_W650.md); [source](https://www.goodwaytechs.com/goodway-ai-camera-glasses-hands-free-1080p-video-recording-eyewear-with-ai-assistant-w650.html) |
-
 
 ## Reconciliation admissions — mechanically synchronized
 
@@ -332,15 +324,14 @@ Google Glass is not a footnote or a prototype in this catalog. The Explorer Edit
 
 ## Reconciliation status and remaining archival queue
 
-The former known-gap queue has been adjudicated. ODG R-7, Recon Jet/Jet Pro/Jet Pro+, Optinvent ORA-1/ORA-2, Toshiba dynaEdge AR100, DAQRI Smart Glasses, Lenovo ThinkReality A6, ThirdEye X-series eyewear, Pivothead, Mutrics, Chamelo, NuEyes and Envision now have canonical `GLS-` rows. HoloLens, Magic Leap, Optinvent ORA-X, DAQRI Smart Helmet, ThirdEye MIDAS and OrCam MyEye were deliberately routed to the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) because their physical form is not fundamentally smart glasses.
+The former known-gap queue has been adjudicated. ODG R-7, Recon Jet/Jet Pro/Jet Pro+, Optinvent ORA-1/ORA-2, Toshiba dynaEdge AR100, DAQRI Smart Glasses, Lenovo ThinkReality A6, ThirdEye X-series eyewear, Pivothead, Mutrics, Chamelo, NuEyes and Envision now have canonical `GLS-` rows. HoloLens, Magic Leap, Optinvent ORA-X, DAQRI Smart Helmet, ThirdEye MIDAS, OrCam MyEye, and Rokid X-Craft were deliberately routed to the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) because their physical form is not fundamentally smart glasses.
 
 Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unnamed early NuEyes devices, earlier poorly archived OrCam MyEye hardware, and other region-specific or historically obscure families for which acquisition evidence is still incomplete. No row is created merely because a product was announced or demonstrated.
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 180-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 183-row count:
 
-- Snap SPECS (2026): order intent is tracked, but the final purchasable SKU and delivery evidence still need reconciliation.
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
 - North Focals 2.0: announced and cancelled; no public sale.

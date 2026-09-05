@@ -1,6 +1,6 @@
 # Adjacent Wearable-HCI Catalog
 
-**Edition:** 2026-08-12  
+**Edition:** 2026-09-05  
 **Scope:** purchasable or documented-procurement wearable-HCI devices that belong in GlassesResearch's broader augmented-human research universe but are **not fundamentally smart glasses**.
 
 This catalog implements the form-factor rule in [`WEARABLE_HCI.md`](../docs/taxonomy/WEARABLE_HCI.md): one research umbrella, separate catalogs by physical interface type, shared evidence standards and shared ownership/control philosophy. Entries here must never be silently included in the smart-glasses count in [`THE_LIST.md`](THE_LIST.md).
@@ -23,6 +23,7 @@ For era fields, `c.` marks an approximate year and `≤2026` means the current e
 | ADJ-0005 | Microsoft | HoloLens 2 | 2019 | legacy / enterprise lifecycle | mixed-reality headset | [HoloLens lineage packet](../docs/report-cards/LINEAGE_MICROSOFT_HOLOLENS.md) |
 | ADJ-0006 | Magic Leap | Magic Leap One / Magic Leap 1 | 2018 | legacy | spatial-computing headset + compute puck | [Magic Leap lineage packet](../docs/report-cards/LINEAGE_MAGIC_LEAP.md) |
 | ADJ-0007 | Magic Leap | Magic Leap 2 | 2022 | enterprise | spatial-computing headset + compute puck | [Magic Leap lineage packet](../docs/report-cards/LINEAGE_MAGIC_LEAP.md) |
+| ADJ-0010 | Rokid | X-Craft | 2020 | current / enterprise / supply-limited | industrial explosion-proof AR headband / helmet-mounted system | [Rokid historical audit](../research/investigations/ROKID_HISTORICAL_AUDIT_2026-09-05.md); [current B2B source](https://de.rokid.com/de-de/products/rokid-x-craft-for-b2b) |
 
 ## Eyeglass-mounted assistive modules
 
