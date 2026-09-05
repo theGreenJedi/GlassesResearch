@@ -1,9 +1,29 @@
 # Rokid — populated research record
 
+**Technology lineage:** [Rokid](../../lineages/ROKID.md)
+
 Primary evidence includes the official terminal SDK (`EV-0024`), Rokid Glasses specifications (`EV-0025`), optical-service evidence (`EV-0038`), `docs/report-cards/BATCH_02.md`, display-lineage research from `HIGH_THROUGHPUT_BATCH_04.md`, [EV-0047](../../evidence/EV-0047-Rokid-Glasses-service-survival.md), and [EV-0052](../../evidence/EV-0052-current-value-wave-one.md).
 
 ## Family boundary
-Rokid spans host-driven display glasses (Air/Max) and integrated camera/display/AI glasses (Rokid Glasses). Do not transfer camera, onboard processing, AI or cloud-dependence claims across classes.
+Rokid spans host-driven display glasses (Air/Max) and integrated camera/display/AI glasses (Rokid Glasses). The 2026 lineup also adds display-free [Rokid AI Glasses Style](../../models/RokidAIStyle/README.md). Do not transfer camera, onboard processing, AI, cloud-dependence, SDK, or service-survival claims across classes.
+
+## Current-lineup investigation — checked 2026-09-05
+
+Rokid's current global storefront exposes two product families that should be represented separately while remaining under one corporate lineage.
+
+### Integrated AI eyewear
+
+- **[Rokid Glasses](../../models/RokidGlasses/README.md) — GLS-0064:** distinct display-equipped camera/AI eyewear.
+- **[Rokid AI Glasses Style](../../models/RokidAIStyle/README.md):** distinct display-free camera/audio AI eyewear; active investigation, no new stable GLS ID assigned here.
+- **Rokid AI Glasses Style Pack:** retail configuration of Style with additional power/accessory capacity; not a second eyewear model.
+
+### Host-driven AR/display systems
+
+- **[Rokid Max 2](../../models/RokidMax2/README.md) — GLS-0094:** current tethered display glasses hardware.
+- **[Rokid AR Spatial](../../models/RokidARSpatial/README.md):** Max 2 + Station 2; system/bundle identity, not a separate glasses identity.
+- **[Rokid AR Joy 2](../../models/RokidARJoy2/README.md):** Max 2 + original Rokid Station; system/bundle identity, not a separate glasses identity.
+
+Rokid's own AR-series comparison explicitly distinguishes the Station generations and describes bare Max 2 as a connected-device display. Individual storefront pages currently contain Station 2-like compute copy on Max 2 and Joy 2 pages. Preserve that contradiction in provenance rather than treating the repeated storefront module as verified glasses hardware.
 
 ## Rokid Glasses — GLS-0064
 Integrated AI/AR eyewear. Rokid documents a 49 g frame, Snapdragon AR1 Gen 1 + NXP RT600, 2 GB RAM, 32 GB storage, dual-eye monochrome MicroLED waveguides at 480×640, 30° FOV, up to 1500 nits, 12 MP Sony IMX681 camera, four microphones, dual open-ear speakers, Wi-Fi 6, Bluetooth 5.3, 210 mAh battery, prescription support, translation, navigation, transcription and multimodal AI.
@@ -37,5 +57,12 @@ Max 2 additionally supports built-in myopia adjustment from 0.00D to -6.00D plus
 ## Ownership interpretation
 Display-only Rokid products are highly service-independent as host peripherals. Integrated Rokid Glasses provide richer developer/AI capability but are more tied to Rokid software and connected models. The lineage therefore requires architecture-specific rather than brand-wide Cloud Independence scoring.
 
+Style adds a third useful ownership comparison: integrated camera/audio AI eyewear without a display. Its offline residue, SDK exposure, app/account requirements, and service-loss behavior must be tested independently rather than inherited from Rokid Glasses.
+
 ## Research priorities
-Exact offline AI modes, companion/account requirements, terminal-SDK exposure, Air/Max optical/host details, current pricing, bootloader/firmware access, repairability, battery aging and regional restrictions.
+
+1. Exact offline AI modes, companion/account requirements, and terminal-SDK exposure for Rokid Glasses and Style.
+2. Air/Max/Max 2 optical, host, firmware, and generic DisplayPort behavior.
+3. Station versus Station 2 hardware/software boundaries, including YodaOS-Master, update paths, sideloading, recovery, and account/network requirements.
+4. Current pricing, regional SKUs, prescription-service differences, repairability, battery aging, bootloader/firmware access, and regional restrictions.
+5. Capture current first-party pages as dated evidence because storefront copy presently contradicts itself across the AR lineup.
