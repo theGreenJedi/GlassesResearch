@@ -4,9 +4,14 @@
 Evidence/admission decisions remain human-controlled in reconciliation packets.
 This script performs only mechanical propagation:
 - insert missing GLS rows already approved in THE_LIST_RECONCILIATION_*.md packets;
+- preserve an explicit Era column when an audit packet provides one;
 - derive the canonical count from actual unique GLS rows in THE_LIST.md;
 - derive the Edition date from dated canonical admissions and corrections;
 - update count statements in THE_LIST.md and models/README.md.
+
+Reconciliation packets may use either the historical seven-column admission schema
+(ID, Maker, Model, State, Type, Access, Evidence) or the preferred eight-column
+schema that inserts Era between Model and State. Old packets remain valid.
 
 Use --check to fail if running the synchronizer would change tracked source files.
 """
@@ -27,9 +32,9 @@ GLS_ROW_RE = re.compile(r"^\| (GLS-\d{4}) \|", re.M)
 COUNT_RE = re.compile(r"(\*\*Count:\*\* )\d+( distinct purchasable models or explicitly marketed product generations)")
 
 
-def packet_admissions() -> list[tuple[str, str]]:
-    """Return (GLS id, canonical markdown row) for approved reconciliation rows."""
-    rows: list[tuple[str, str]] = []
+def packet_admissions() -> list[tuple[str, str, bool]]:
+    """Return (GLS id, canonical markdown row, explicit-era) for approved rows."""
+    rows: list[tuple[str, str, bool]] = []
     for path in sorted((ROOT / "models").glob("THE_LIST_RECONCILIATION_*.md")):
         text = path.read_text(encoding="utf-8")
         match = re.search(
@@ -40,26 +45,32 @@ def packet_admissions() -> list[tuple[str, str]]:
         if not match:
             continue
         year_match = re.search(r"(20\d{2})", path.name)
-        era = f"≤{year_match.group(1)}" if year_match else "unknown"
+        fallback_era = f"≤{year_match.group(1)}" if year_match else "unknown"
         for line in match.group(1).splitlines():
             if not re.match(r"^\| GLS-\d{4} \|", line):
                 continue
             parts = [part.strip() for part in line.strip().strip("|").split("|")]
             if len(parts) < 7:
                 continue
-            gls_id, maker, model, state, kind, access, evidence = parts[:7]
+            explicit_era = len(parts) >= 8
+            if explicit_era:
+                gls_id, maker, model, era, state, kind, access, evidence = parts[:8]
+            else:
+                gls_id, maker, model, state, kind, access, evidence = parts[:7]
+                era = fallback_era
             source = evidence if evidence.startswith("http") else ""
             evidence_cell = f"primary; [reconciliation]({path.name})"
             if source:
                 evidence_cell += f"; [source]({source})"
             canonical = f"| {gls_id} | {maker} | {model} | {era} | {state} | {kind} | {access} | {evidence_cell} |"
-            rows.append((gls_id, canonical))
+            rows.append((gls_id, canonical, explicit_era))
     return rows
 
 
 def sync_the_list(text: str) -> str:
+    admissions = packet_admissions()
     existing = set(GLS_ROW_RE.findall(text))
-    missing = [(gid, row) for gid, row in packet_admissions() if gid not in existing]
+    missing = [(gid, row) for gid, row, _ in admissions if gid not in existing]
     if missing:
         missing.sort(key=lambda item: int(item[0].split("-")[1]))
         block = (
@@ -74,6 +85,17 @@ def sync_the_list(text: str) -> str:
         if marker not in text:
             raise RuntimeError(f"Insertion marker not found in {THE_LIST}")
         text = text.replace(marker, block + marker, 1)
+
+    # When a packet carries an explicit evidence-backed era, keep mechanically
+    # synchronized rows current with that packet. Seven-column legacy packets do
+    # not rewrite existing rows, preserving any manually researched era already set.
+    for gid, canonical, explicit_era in admissions:
+        if not explicit_era or gid not in existing:
+            continue
+        pattern = re.compile(rf"^\| {re.escape(gid)} \|.*$", re.M)
+        text, replacements = pattern.subn(canonical, text, count=1)
+        if replacements != 1:
+            raise RuntimeError(f"Could not refresh explicit-era row {gid} in {THE_LIST}")
 
     count = canonical_model_count(ROOT, text)
     text, replacements = COUNT_RE.subn(rf"\g<1>{count}\g<2>", text, count=1)
