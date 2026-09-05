@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Build the reader-facing newsroom state from the canonical verified-change ledger.
+"""Build the reader-facing newsroom state from verified changes plus an optional editorial lead pin.
 
-This is a derived presentation view. It does not create facts, change verification state,
-or expose internal alert-routing fields.
+The verified desk remains derived only from the canonical verified-change ledger. An explicit
+editorial lead pin may feature a reviewed external article without changing its verification
+state or promoting it into the verified desk.
 """
 from __future__ import annotations
 
@@ -15,6 +16,8 @@ from urllib.parse import urlparse
 
 from verified_changes import DEFAULT_CHANGES, validate
 
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_EDITORIAL_LEAD = ROOT / "data" / "editorial-lead.json"
 LEAD_WINDOW = 6
 LEAD_WEIGHT = {
     "hardware_change": 6,
@@ -56,6 +59,7 @@ def story(event: dict) -> dict:
         "url": publication["canonical_url"],
         "published_at": publication["published_at"],
         "model_ids": list(event["affected"]["model_ids"]),
+        "lead_mode": "auto",
     }
 
 
@@ -69,6 +73,37 @@ def choose_lead(events: list[dict]) -> dict:
         ),
     )
     return story(lead)
+
+
+def load_editorial_lead(path: Path) -> dict | None:
+    if not path.exists():
+        return None
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not payload.get("enabled"):
+        return None
+    required = ("source_label", "title", "summary", "url", "published_at")
+    missing = [key for key in required if not payload.get(key)]
+    if payload.get("schema_version") != 1 or payload.get("mode") != "editorial_pin" or missing:
+        raise SystemExit(f"Invalid editorial lead configuration; missing={missing}")
+    if payload.get("review_status") != "editorially_reviewed_external":
+        raise SystemExit("Editorial lead must be explicitly marked editorially_reviewed_external")
+    url = str(payload["url"])
+    if not url.startswith("https://"):
+        raise SystemExit("Editorial lead URL must use HTTPS")
+    stamp(str(payload["published_at"]))
+    return {
+        "event_id": None,
+        "change_type": "editorial_pick",
+        "title": payload["title"],
+        "summary": payload["summary"],
+        "url": url,
+        "published_at": payload["published_at"],
+        "model_ids": [],
+        "lead_mode": "editorial_pin",
+        "review_status": payload["review_status"],
+        "source_label": payload["source_label"],
+        "selected_at": payload.get("selected_at"),
+    }
 
 
 def source_hosts(event: dict) -> set[str]:
@@ -120,16 +155,17 @@ def convergence(events: list[dict]) -> list[dict]:
     return themes[:6]
 
 
-def build(payload: dict) -> dict:
+def build(payload: dict, editorial_lead: dict | None = None) -> dict:
     events = payload["events"]
     ordered = sorted(events, key=lambda e: stamp(e["publication"]["published_at"]), reverse=True)
     latest_at = ordered[0]["publication"]["published_at"] if ordered else None
+    automatic_lead = choose_lead(events) if events else None
     return {
         "schema_version": 1,
         "derived_from": "data/verified-changes.json",
-        "semantics": "Reader-facing newsroom presentation state derived only from verified published changes.",
+        "semantics": "Verified desk state is derived only from verified published changes; an explicit editorial lead pin may feature a reviewed external article without changing verification state.",
         "latest_verified_at": latest_at,
-        "lead": choose_lead(events) if events else None,
+        "lead": editorial_lead or automatic_lead,
         "latest": [story(event) for event in ordered[:9]],
         "convergence": convergence(events),
     }
@@ -138,14 +174,18 @@ def build(payload: dict) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--changes", type=Path, default=DEFAULT_CHANGES)
+    parser.add_argument("--editorial-lead", type=Path, default=DEFAULT_EDITORIAL_LEAD)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     payload = validate(args.changes)
-    state = build(payload)
+    editorial_lead = load_editorial_lead(args.editorial_lead)
+    state = build(payload, editorial_lead=editorial_lead)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    lead_name = state["lead"].get("event_id") or state["lead"].get("source_label", "none") if state["lead"] else "none"
     print(
-        f"Newsroom state built: lead={state['lead']['event_id'] if state['lead'] else 'none'}, "
+        f"Newsroom state built: lead={lead_name}, "
+        f"mode={state['lead'].get('lead_mode') if state['lead'] else 'none'}, "
         f"latest={len(state['latest'])}, convergence={len(state['convergence'])}"
     )
     return 0
