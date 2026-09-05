@@ -1,4 +1,4 @@
-"""Server-render curated model-hub navigation into canonical GLS pages."""
+"""Server-render curated model-hub navigation into canonical GLS pages and catalog."""
 from __future__ import annotations
 
 import json
@@ -8,6 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "data" / "model-hubs.json"
 MODEL_PATH = re.compile(r"^models/catalog/(gls-\d{4})\.md$")
+THE_LIST_PATH = "models/THE_LIST.md"
+CATALOG_ROW = re.compile(r"^(\|\s*)(GLS-\d{4})(\s*\|)", re.MULTILINE)
 
 
 def _load() -> dict:
@@ -68,14 +70,52 @@ def _replace_related(markdown: str, replacement: str) -> str:
     return pattern.sub(replacement.rstrip(), markdown, count=1)
 
 
+def _annotate_catalog(markdown: str, hubs: dict) -> str:
+    """Mark research-rich canonical rows without changing the ledger source of truth."""
+    eligible = {model_id for model_id, hub in hubs.items() if isinstance(hub, dict)}
+    if not eligible:
+        return markdown
+
+    def annotate(match: re.Match[str]) -> str:
+        model_id = match.group(2)
+        if model_id not in eligible:
+            return match.group(0)
+        slug = model_id.lower()
+        return (
+            f"{match.group(1)}{model_id} · "
+            f"[research hub](catalog/{slug}.md#research-hub){match.group(3)}"
+        )
+
+    markdown = CATALOG_ROW.sub(annotate, markdown)
+    marker = (
+        "Status is last checked on the edition date and can vary by country. Frame colors, lens packages, "
+        "prescription options, storage bundles, and unchanged co-brands are not separate models. "
+        "A materially named generation or different hardware platform is."
+    )
+    note = (
+        marker
+        + "\n\n**Research depth:** rows marked **research hub** have substantive model- or family-specific "
+        "investigation beyond the canonical facts and Report Card. The marker is a navigation signal, not a score, "
+        "ranking, recommendation, or claim that unmarked models are less capable."
+    )
+    if marker in markdown and "**Research depth:** rows marked **research hub**" not in markdown:
+        markdown = markdown.replace(marker, note, 1)
+    return markdown
+
+
 def on_page_markdown(markdown: str, page, config, files):
     src = getattr(getattr(page, "file", None), "src_uri", "")
+    hubs = _load()
+
+    if src == THE_LIST_PATH:
+        return _annotate_catalog(markdown, hubs)
+
     match = MODEL_PATH.match(src)
     if not match:
         return markdown
 
     model_id = match.group(1).upper()
-    hub = _load().get(model_id)
+    hub = hubs.get(model_id)
     if not isinstance(hub, dict):
         return markdown
 
