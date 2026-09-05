@@ -1,40 +1,46 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-05T22:44:22.283962+00:00",
-  "candidate_count": 78,
-  "classifier_irrelevant_count": 18,
+  "discovered_utc": "2026-09-05T23:59:03.562953+00:00",
+  "candidate_count": 37,
+  "classifier_irrelevant_count": 6,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 62,
-    "broad_web": 17,
-    "community": 2,
-    "retail": 1
+    "adjacent": 33,
+    "broad_web": 5,
+    "developer": 1
   },
   "relationship_counts": {
-    "direct": 1,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 59,
+    "adjacent": 31,
     "speculative": 0,
-    "irrelevant": 18
+    "irrelevant": 6
   },
   "type_counts": {
-    "model": 3,
-    "video": 13,
-    "news": 52,
-    "tool": 9,
-    "sdk": 1,
+    "model": 2,
+    "review": 2,
+    "news": 16,
+    "research": 3,
+    "tool": 3,
+    "sdk": 2,
     "hack": 1,
-    "retail": 1,
-    "community": 4
+    "optics": 1,
+    "policy": 2,
+    "retail": 2,
+    "community": 11
   },
   "routing_counts": {
-    "adjacent_radar": 59,
-    "community_evidence_review": 2,
-    "development_hacking": 8,
-    "model_catalog_review": 3,
-    "reject_noise": 18,
-    "report_card_evidence": 13,
-    "research_news_review": 60
+    "adjacent_radar": 31,
+    "community_evidence_review": 11,
+    "deep_research": 3,
+    "development_hacking": 3,
+    "model_catalog_review": 2,
+    "policy_privacy": 2,
+    "reject_noise": 6,
+    "report_card_evidence": 2,
+    "research_news_review": 31,
+    "research_optics": 1,
+    "retail_rebrand_review": 2
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,38 +54,458 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "2f6987e66108d706",
-      "title": "AI Smart Glasses Guide: AI Glasses for Everyday Life | Meta",
-      "url": "https://www.meta.com/ai-glasses/learn/",
-      "summary": "Your starting point for all things Meta smart glasses. Learn what AI glasses do, how they work, and how they fit into sports, travel, and everyday life.",
-      "discovery_channel": "broad_web+retail",
-      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "id": "21ae654773ac68f3",
+      "title": "Jobs | UC Davis",
+      "url": "https://www.ucdavis.edu/about/jobs",
+      "summary": "As a top-ranked research university, and the second-largest employer in the region, UC Davis has a community of employees who are leading the way in teaching, research, public service and patient care.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "adjacent_hci",
       "materiality_score": 2,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "research"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "news"
+        "research",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "deep_research",
+        "community_evidence_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, smart glasses",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2cd5cafcdce995a0",
-      "title": "2002 22' HOWARD OFFSHORE BOW RIDER | River Daves Place",
-      "url": "https://www.riverdavesplace.com/forums/threads/2002-22-howard-offshore-bow-rider.27774/",
-      "summary": "Howard 22' Offshore is powered by a 425 HP MercCruiser 496 Mag-HO with a Bravo-1 out drive. 70 MPH boat. Excellent condition. This is a great riding boat that handles the rough water with ease. With it's 22 degree deep-vee, reverse chines, and notched transom; this boat handles any type of water...",
+      "id": "0815616cbb7b43f5",
+      "title": "Login Page - UC Davis Health",
+      "url": "https://mychart.ucdavis.edu/MyChart/Authentication/Login",
+      "summary": "Communicate with your doctor Get answers to your medical questions from the comfort of your own home Access your test results No more waiting for a phone call or letter – view your results and your doctor's comments within days Request prescription refills Send a refill request for any of your refillable medications Manage your appointments Schedule your next appointment, or view details of ...",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fa173ef13ced8461",
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "summary": "Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after March 10, 2026. Can I reuse SaRA scripts with the Get Help command-line tool?",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "released"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "tool"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "32d7b0df42e61dc7",
+      "title": "MyUCDavisHealth | UC Davis Health",
+      "url": "https://health.ucdavis.edu/login/",
+      "summary": "UC Davis Health patients can use MyUCDavisHealth to communicate with their care team, review their medical record, and much more — from any device.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3ad8b5b71ba69e5e",
+      "title": "UC Davis - FAS Homepage | Financial Aid and Scholarships",
+      "url": "https://financialaid.ucdavis.edu/",
+      "summary": "The UC Davis cost of attendance is an estimated figure used to determine financial aid eligibility. Review the cost of attendance.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ffc750bb0a08faf0",
+      "title": "UC Davis Health | University of California, Davis",
+      "url": "https://health.ucdavis.edu/welcome/",
+      "summary": "News, blogs and publications from UC Davis Health with the latest health care, patient, faculty, leadership, medical, science and research news and innovations.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cd835a6bab7ebb99",
+      "title": "University of California, Davis | UC Davis",
+      "url": "https://www.ucdavis.edu/",
+      "summary": "UC Davis is a leading research university where undergraduates work alongside MacArthur Fellows and world-renowned faculty. Together, we advance discoveries that solve the world’s most pressing challenges.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9fc221f4e89c021f",
+      "title": "[WTS] ⭐ 100% verif. PayPal accs + Bank + Transactions - MPGH",
+      "url": "https://www.mpgh.net/forum/thread/1446959-100-verif-paypal-accs-bank-transactions-docs-banks-stripe-ebay",
+      "summary": "Info used to create both accounts Instruction how to use Bank & Stripe Price: 299$ Ebay + PayPal accounts section: Ebay 1k+$ limits: Aged Ebay account with high limits: 1k$ + 100% Verif. PayPal (first item listed) Phone access included",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dc1aa0c0b8454ef1",
+      "title": "Announcements | eBay Community",
+      "url": "https://community.ebay.com/forum/announcements-57928/",
+      "summary": "Get product and policy updates and need-to-know updates for your business.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "policy",
+        "community"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "51098b2efeb7a72f",
+      "title": "eBay Community",
+      "url": "https://community.ebay.com/forum/",
+      "summary": "The eBay CommunityWelcome to the eBay Community! Find answers, ask questions and connect with our community of members and specialists.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f29f0c83d8ed52c",
+      "title": "eBay Community",
+      "url": "https://community.ebay.com/blogs/",
+      "summary": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8c75e3793ed5b1db",
+      "title": "eBay Community | eBay US",
+      "url": "https://community.ebay.com/",
+      "summary": "Dive into official services and community-led initiatives. Latest announcements View All Learn more about Selling on eBay Live at the eBay for Sellers Webinar Join us live on Thursday, September 10 at 12 p.m. PT / 3 p.m. ET seller_news_teamSeller News Team Posted 1 week ago",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b7ba44e64062cf2c",
+      "title": "eBay Developers Program | eBay Community",
+      "url": "https://community.ebay.com/forum/ebay-developers-program-57950/",
+      "summary": "Hello, my registration for the eBay Developers Program was rejected, but I did not receive a specific reason explaining what information or requirement caused the rejection. I have already contacted Developer Account Support twice through the official support form, but unfortunately I have not received a response. I am a registered business seller on eBay Germany and would like to use the eBay ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "sdk",
+        "community"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e862b155a437d7f0",
+      "title": "Exactly what does promoted listings do and is it worth it?",
+      "url": "https://community.ebay.com/t5/Selling/Exactly-what-does-promoted-listings-do-and-is-it-worth-it/td-p/33795789/",
+      "summary": "Exactly what does promoted listings do and is it worth it? It sounds like promoted listings makes listings more visible. If I put a listing up for 10% does that mean eBay gets 10% before it takes off the commission when it sells?. I know a major dealer on eBay who doesn't bother with promoted listings. Does he know something I don't know?",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a2abddb2df771f8d",
+      "title": "Introducing smarter bot protection in Microsoft Teams meetings ...",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/introducing-smarter-bot-protection-in-microsoft-teams-meetings/4531375",
+      "summary": "Organizations need confidence that the right people and tools are participating in their discussions. That's why we're introducing a new Teams admin policy...",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b8ede096adb37c13",
+      "title": "Keeper of the Lost Cities Fan (@the_kotlc_fanpage) - Instagram",
+      "url": "https://www.instagram.com/the_kotlc_fanpage/",
+      "summary": "467 Followers, 50 Following, 141 Posts - Keeper of the Lost Cities Fan (@the_kotlc_fanpage) on Instagram: \"Follow if you LOVE Keeper of the Lost Cities!! • regular posts (most of the time) • memes • quotes • updates • and more!\"",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -101,10 +527,255 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bdf7589a5a1f3405",
-      "title": "31 Best & Fun Things To Do In Temecula (California)",
-      "url": "https://www.busytourist.com/things-to-do-in-temecula-ca/",
-      "summary": "Just north of San Diego, you will find one of the most eclectic parts of California that has ever existed. Known for having over 40 phenomenal wine vineyards and greenery that will enthrall you for days, Temecula is a vibrant piece of outdoor adventure waiting to be traveled across.",
+      "id": "343347809341cd95",
+      "title": "keeper of the lost cities Memes & GIFs - Imgflip",
+      "url": "https://imgflip.com/tag/keeper+of+the+lost+cities",
+      "summary": "Images tagged \"keeper of the lost cities\". Make your own images with our Meme Generator or Animated GIF Maker.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5908dd13128ae393",
+      "title": "Keeper of the lost cities memes funny - Pinterest",
+      "url": "https://www.pinterest.com/pin/1134836806138749356/",
+      "summary": "03-Apr-2026 — A digital illustration of a character with red hair styled in pigtails, wearing a choker and a black top. The background is pink, and there is text overlaid on the image that reads: \"If you don’t understand a KOTLC reference you deserve to be unmatchable, talentless, be attacked by a ritz cracker and never find your lo…",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4f31fc02ce2e1b7a",
+      "title": "keeper of the lost cities memes on Tumblr",
+      "url": "https://www.tumblr.com/tagged/keeper%20of%20the%20lost%20cities%20memes",
+      "summary": "See a recent post on Tumblr from @the-beloved-genloss-niki about keeper of the lost cities memes. Discover more posts about keeper of the lost cities memes.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "62666613c351d75d",
+      "title": "Keeper Of The Lost Cities Memes • 8.5K reels on Instagram",
+      "url": "https://www.instagram.com/popular/keeper-of-the-lost-cities-memes/",
+      "summary": "Fans on Wattpad and Quotev share jokes about characters like Sophie Foster, Fitz Vacker, and Keefe Sencen, often focusing on the popular Sokeefe ship. Memes range from one-shots to AU scenarios like human versions of the elves.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "049334fe4b51c5b9",
+      "title": "MEMES - Fandom",
+      "url": "https://lost-cities-keeper.fandom.com/f/p/4400000000000592623",
+      "summary": "Guys I've been obsessed with Keeper memes lately...I've sent nearly fifty memes to my friend who I got into Keeper and now we're both obsessed. If y'all could post some memes here, that would be great bc if I'm being honest I've already read most every meme accsessible on this here internet.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be5cff11f0327fc4",
+      "title": "Memes – Keeper of the Lost Cities Fan Club - WordPress.com",
+      "url": "https://keeperofthelostcitiesfanclub.wordpress.com/memes/",
+      "summary": "Fanfiction SHIPS Debate Keeper of the Lost Cities Fan Club Connect with other Keepers! Memes Click a Button Below To Share With Other Keepers",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e60e45d7a0f6263f",
+      "title": "myucdavis",
+      "url": "https://my.ucdavis.edu/",
+      "summary": "If you are a registered member of UC Davis, you can see more information about the new site features by signing in to your secure UC Davis account, and then clicking on Page Settings and selecting Help/Tour again. Feel free to explore the new myucdavis, and please let us know what you think!",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2f5f4bcc7722330d",
+      "title": "Report eBay Technical Issues",
+      "url": "https://community.ebay.com/forum/report-ebay-technical-issues-57911/",
+      "summary": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "686554c6df13fc6f",
+      "title": "Selling | eBay Community",
+      "url": "https://community.ebay.com/forum/selling-57920/",
+      "summary": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d2465cd4c2affe9b",
+      "title": "THE BEST 10 RESTAURANTS IN TEMECULA, CA - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Temecula%2C+CA",
+      "summary": "Best Restaurants in Temecula, CA - Last Updated September 2026 - The Goat & Vine, 1909, Bolero Restaurante, Oscar's Brewing Company, Bluewater Grill, The Gambling Cowboy Chophouse & Saloon, Small Barn, Toast, The Great Oak Steakhouse, Archive",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -128,12 +799,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "30f03d84e4eb246f",
-      "title": "49ers Owner Jed York Arrested | River Daves Place",
-      "url": "https://www.riverdavesplace.com/forums/threads/49ers-owner-jed-york-arrested.321109/",
-      "summary": "Word has it he was in a trailer park with a prostitute but that was later dismissed. Body camera footage from 49ers owner Jed York's arrest shows two law enforcement officers discussing why a person of York's stature would get himself arrested in a prostitution sting at a trailer park in East...",
+      "id": "d5982a3104341931",
+      "title": "The Best KotLC Memes | Fandom",
+      "url": "https://lost-cities-keeper.fandom.com/f/p/3828734402494999865",
+      "summary": "If you have ever found a Keeper meme that made you spit out your chocolate milk... then please post it here! I'll put the best ones at the top here and who posted them!",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -155,12 +826,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d9a61d8a3f2dd786",
-      "title": "81 SPECTRA - River Daves Place",
-      "url": "https://www.riverdavesplace.com/forums/threads/81-spectra.33338/",
-      "summary": "81 SPECTRA great cond $15,000 obo 81 spectra full 4 stringer v-drive water cooled c-500 with 23 gears. Watercooled velvet drive trans with both foot and hand control. Reggie jackon motorsports 468 ,990 heads complete roller motor 6-71 blower with lee intercooler twin 750 carbs runs reliable as hell. Boat has built in floor cooler and complete gps system. You gotta see this boat to apprec it ...",
+      "id": "a39b93838ff35de1",
+      "title": "Trove Thrower (Soft Duplication Code) - MPGH - MultiPlayer Game Hacking",
+      "url": "https://www.mpgh.net/forum/thread/1586031-trove-thrower-soft-duplication-code",
+      "summary": "Hello, seeing so many people abusing a simple exploit and selling it for money (or selling the loot produced by this for money) I decided to post it here in an easy to use cheat…",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -169,11 +840,14 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "hack",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "hack",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -182,145 +856,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f839b652ce313107",
-      "title": "[Antalore42] The New Neighbors 11-26 - Porn Comics Galleries",
-      "url": "https://www.porncomixonline.net/m-comic/antalore42-the-new-neighbors-11/antalore42-the-new-neighbors-24/p/2/",
-      "summary": "Manga Pictures of The New Neighbors 11-26. Online Sex Gallery free at Porncomixonline.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b04843aa0276dcf5",
-      "title": "[Elijahzx] Momo (My Hero Academia) - Porn Comics Galleries",
-      "url": "https://www.porncomixonline.net/m-comic/elijahzx-momo-my-hero-academia/elijahzx-momo-my-hero-academia/p/11/",
-      "summary": "Manga Pictures of Momo. Online Sex Gallery free at Porncomixonline.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7e0a5642a6561f98",
-      "title": "[Jared999D] Fallen Lady - Chapter 8-10 - Porn Comics Galleries",
-      "url": "https://www.porncomixonline.net/m-comic/jared999d-fallen-lady-chapter-8-10/fallen-lady-10_1/p/65/",
-      "summary": "[Jared999D] Fallen Lady - Chapter 8-10 - Porn Comics Galleries Home Fallen Lady - Chapter 8-10 Fallen Lady 10 Fallen Lady 10 Fallen Lady 9 Fallen Lady 8 List style Paged style 1/361 2/361 3/361 4/361 5/361 6/361 7/361 8/361 9/361 10/361 11/361 12/361 13/361 14/361 15/361 16/361 17/361 18/361 19/361 20/361 21/361 22/361 23/361 24/361 25/361 26/361 27/361 28/361 29/361 30/361 31/361 32/361 33/ ...",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "69696e089c6ce293",
-      "title": "[Nyte] Disney Series: Raya and Namaari - Porn Comics Galleries",
-      "url": "https://www.porncomixonline.net/m-comic/nyte-disney-series-raya-and-namaari/nyte-disney-series-raya-and-namaari/p/8/",
-      "summary": "Manga Pictures of Disney Series: Raya and Namaari. Online Sex Gallery free at Porncomixonline.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dfae46c1eb1945a1",
-      "title": "[Stjepan Sejic] Sunstone 1-8 - Porn Comics Galleries",
-      "url": "https://www.porncomixonline.net/m-comic/stjepan-sejic-sunstone-1-8/sunstone-8_1/",
-      "summary": "Manga Pictures of Sunstone. Online Sex Gallery free at Porncomixonline.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fddd1ced27b6e97d",
-      "title": "Adventures of Anastasia – Meet me Springfield",
-      "url": "https://www.porncomixonline.net/m-comic/sexkomix-adventures-of-anastasia-meet-me-springfield-the-simpsons/sexkomix-adventures-of-anastasia-meet-me-springfield-the-simpsons_2/p/9/",
-      "summary": "4.5 Your Rating Rating Adventures of Anastasia – Meet me Springfield Average 4.5 / 5 out of 6 Rank N/A, it has 110 monthly views Alternative [SexKomix] Adventures of Anastasia – Meet me Springfield (The Simpsons) Parody The Simpsons Artist SexKomix Genre Adult, English Type Adult Tags Big Ass, big breasts, big penis, Western Release 2022 Status OnGoing Read First Read Last",
+      "id": "74d84f82f56ae481",
+      "title": "UC Davis - OASIS",
+      "url": "https://oasis.ucdavis.edu/",
+      "summary": "Additional advising resources may be available on each college's website:",
       "discovery_channel": "adjacent",
       "query": "wearable gesture control interface",
       "source": "Bing web RSS",
@@ -345,454 +884,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e30aebb000d5168e",
-      "title": "Application Verifier (X64) Recently added ___ Crossword Clue",
-      "url": "https://www.wordplays.com/crossword-solver/Application-Verifier-(X64)-Recently-added-___",
-      "summary": "The Crossword Solverfound 30 answers to \"Application Verifier (X64) Recently added ___\", 8 letterscrossword clue. Enter the length or pattern for better results.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "82a5aed3d4a4fafd",
-      "title": "Application Verifier (X64) Recently added Microsoft.con Crossword Clue",
-      "url": "https://www.wordplays.com/crossword-solver/Application-Verifier-(X64)-Recently-added-Microsoft.con",
-      "summary": "The Crossword Solverfound 30 answers to \"Application Verifier (X64) Recently added Microsoft.con\", 3 letterscrossword clue. Enter the length or pattern for better results.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5145b9af3db92ceb",
-      "title": "Application Verifier - Overview - Windows drivers | Microsoft Learn",
-      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/application-verifier",
-      "summary": "Explore the Application Verifier (AppVerifier) runtime verification tool and look for programming errors, security issues, and user privilege problems in unmanaged code.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f693a49f3f238568",
-      "title": "Application Verifier - Testing Applications - Windows drivers",
-      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/application-verifier-testing-applications",
-      "summary": "Test applications written in unmanaged (native) code with Application Verifier under the debugger and with full-page heap before releasing it to customers. Follow the steps provided by Application Verifier to resolve errant conditions.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2e58884c7af9752d",
-      "title": "Application Verifier: Testing Windows Failure Paths",
-      "url": "https://comcomponent.com/en/blog/2026/03/11/003-application-verifier-abnormal-test-foundation-part2/",
-      "summary": "Application Verifier is a runtime verification tool that monitors how a Windows user-mode application uses OS APIs and manages resources while it runs, and it detects invalid handle use and heap corruption as verifier stops.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e0256fc314c59ed8",
-      "title": "Bokep Indo Viral & Indo Viral Colmek Videos - EPORNER",
-      "url": "https://www.eporner.com/tag/indo-viral/",
-      "summary": "Watch Indo Viral hd porn videos for free on Eporner.com. We have 2,377 videos with Indo Viral, Bokep Indo Viral, Indo Viral Colmek, Indo Terbaru, Indo Bokep, Pinay Viral Scandal, Pinay Viral, Viral Indonesia, Colmek Viral, Indonesia Viral, Tiktok Viral in our database available for free.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model",
-        "video"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3b67821c069f3f03",
-      "title": "Bokep Indo Viral Porn (1,783) @ Porzo.com",
-      "url": "https://www.porzo.com/search/a/bokep%20indo%20viral",
-      "summary": "Check out the latest bokep indo viral videos at Porzo.com. Updated continuously and over 1000 categories.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8b8cfe198cdb6de5",
-      "title": "Bokep Indo Viral Porn Videos | Pornhub.com",
-      "url": "https://www.pornhub.com/video/search?search=bokep+indo+viral",
-      "summary": "Watch Bokep Indo Viral porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX movies and clips. No other sex tube is more popular and features more Bokep Indo Viral scenes than Pornhub! Browse through our impressive selection of porn videos in HD quality on any device you own.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "75d2377790df2328",
-      "title": "Bokep Indonesia 2025 Terbaru Viral Arabic Porn Tube - Sex Bule",
-      "url": "https://sexbule.xxx/sex-tags/bokep-indonesia-2025-terbaru-viral",
-      "summary": "Stream Bokep Indonesia 2025 Terbaru Viral hardcore porn videos free in HD. Dive into wild Bokep Indonesia 2025 Terbaru Viral sex scenes and top adult tube movies.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "45a013ab873af498",
-      "title": "Bokep Indonesia Terbaru 2026 - Nonton Video Bokep Indo Viral",
-      "url": "https://bokepindonesia.me/",
-      "summary": "Situs Bokep Indonesia #1 untuk streaming video bokep terbaru & viral. Tonton bokep Indo no sensor, bokep Jepang, bokep Barat, dan bokep Asia lainnya secara gratis!",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6943479817d74d06",
-      "title": "Bokep Terbaru - Bokepindoh | Situs Bokep Terbaru Indo Viral",
-      "url": "https://bokepindoh.xxx/category/terbaru/",
-      "summary": "Bokep Terbaru adalah video bokep yang sedang viral atau terbaru. Ada beberapa untuk bokep ini yaitu bokep indo,bokep jilbab, bokep viral.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9e8622d3979d0348",
-      "title": "Bokep viral indonesia Porn Videos XXX | XOrgasmo.com",
-      "url": "https://xorgasmo.com/search/Bokep+viral+indonesia",
-      "summary": "Watch Bokep viral indonesia xxx porn videos here at XOrgasmo.com, enjoy Bokep viral indonesia XXX and more content like this, on the website with the most variety of porn movies",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "83e381ede40df69a",
-      "title": "Building the Parker Dam........................ | River Daves Place",
-      "url": "https://www.riverdavesplace.com/forums/threads/building-the-parker-dam.26846/",
-      "summary": "Follow along with the video below to see how to install our site as a web app on your home screen.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video",
-        "tool"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f0490a8753923887",
-      "title": "Cities Near Me - Temecula, California | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/Temecula,+CA",
-      "summary": "Find the top 15 cities, towns, and suburbs near Temecula, CA, like Murrieta and Fallbrook, and explore the surrounding area for a day trip.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c68a5eda6cf46322",
-      "title": "Cities near Temecula",
-      "url": "https://citiesnear.com/Temecula",
-      "summary": "Find destinations nearby to plan a road trip from Temecula.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2dce477114380ae8",
-      "title": "Cities Nearby Temecula, California, United States",
-      "url": "https://www.thecitiesnow.com/united_states/california/temecula",
-      "summary": "Find five hundred cities near Temecula, California, United States from closest to farthest by distance. Distances from Temecula to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "65e7286a3c6640a0",
-      "title": "Daval3D - Satisfying Needs 4 - Porn Comics Galleries",
-      "url": "https://www.porncomixonline.net/m-comic/daval3d-satisfying-needs-4/daval3d-satisfying-needs-4/p/72/",
-      "summary": "Manga Pictures of Satisfying Needs 4. Online Sex Gallery free at Porncomixonline.",
+      "id": "d3b0a82ea144df20",
+      "title": "UC Davis Canvas Discovery",
+      "url": "https://login.canvas.ucdavis.edu/",
+      "summary": "UC Davis Canvas, the instructor of record can register guests as temporary affiliates. For information on how to get help with UC Davis Canvas, please visit the Canvas Help website. UC Davis Canvas is a service from Information and Educational Technology.",
       "discovery_channel": "adjacent",
       "query": "wearable gesture control interface",
       "source": "Bing web RSS",
@@ -816,397 +911,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5e222d36d9ce3bd3",
-      "title": "Everything Else | River Daves Place",
-      "url": "https://www.riverdavesplace.com/forums/forums/everything-else.22/",
-      "summary": "Miscellaneous Items Follow along with the video below to see how to install our site as a web app on your home screen.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video",
-        "tool"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "030e82a8d365389a",
-      "title": "Exploring the Relationship Between Rice Flour and Weight Gain",
-      "url": "https://prime24seven.com/health/exploring-the-relationship-between-rice-flour-and-weight-gain/",
-      "summary": "While rice flour is indeed high in carbohydrates and has a high glycemic index, it does not inherently lead to weight gain when consumed as part of a balanced diet and healthy lifestyle.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "804e2d043baf819a",
-      "title": "Fishing In Parker | River Daves Place",
-      "url": "https://www.riverdavesplace.com/forums/threads/fishing-in-parker.20023/",
-      "summary": "Taking my pops out to Parker for fathers day. I havent fished much there and when I have, and when I have tried I haven't had any success. My dad really wants to do some fishing this weekend. Can anyone help me out with what lures or bait to use and where are some good places to fish on the...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6a1e6900b2ea62ec",
-      "title": "Forum list | River Daves Place",
-      "url": "https://www.riverdavesplace.com/forums/forums/",
-      "summary": "This is a discussion forum for members to showcase how their custom became a custom. Boats, Cars, Trucks, Houses.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "17483d118479944f",
-      "title": "Indonesia – Nokephub: Nonton Bokep Indo & Porn Sex Movies HD Porno Gratis",
-      "url": "https://nokephub.com/video-category/indonesia/",
-      "summary": "Dapatkan koleksi terbaik, dan viral dari Indonesia",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "340e8bd979cfe8bb",
-      "title": "Indonesian Viral Porn - Pinay Viral Scandal & Pinay Viral Videos - EPORNER",
-      "url": "https://www.eporner.com/tag/indonesian-viral/",
-      "summary": "Watch Indonesian Viral hd porn videos for free on Eporner.com. We have 642 videos with Indonesian Viral, Pinay Viral Scandal, Pinay Viral, Bokep Indo Viral, Viral Indonesia, Colmek Viral, Indonesia Viral, Tiktok Viral, Viral Pinay, Jilbab Viral, Viral Scandal in our database available for free.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model",
-        "video"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a0858f89f1be483",
-      "title": "Is Rice Fattening or Weight-Loss-Friendly? - Healthline",
-      "url": "https://www.healthline.com/nutrition/rice-and-weight",
-      "summary": "Studies examining how rice affects weight are conflicting. This article gets to the bottom of whether rice is fattening or weight-loss-friendly.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "108757ad6ea06030",
-      "title": "Is Rice Fattening? Understanding If Rice Makes You Gain Weight",
-      "url": "https://www.tuasaude.com/en/does-rice-make-you-gain-weight/",
-      "summary": "Rice flour can lead to weight gain if eaten in large amounts, as it is high in carbohydrates. However, rice flour is also rich in fiber, which helps keep you full.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8e71efd66fdd56ed",
-      "title": "Is rice flour bad for you? - Chef's Resource",
-      "url": "https://www.chefsresource.com/faq/is-rice-flour-bad-for-you/",
-      "summary": "Like any other flour, rice flour can contribute to weight gain if consumed in excessive amounts or alongside a high-calorie diet. It’s crucial to control portion sizes and maintain a balanced calorie intake.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b17902d0d6ac2679",
-      "title": "Is Rice Flour Bad? [The Truth About Its Nutritional Impact]",
-      "url": "https://flourfacts.blog/is-rice-flour-bad-nutrition",
-      "summary": "Rice flour can contribute to weight gain if consumed in excess without strategic pairing, due to its high caloric density and minimal fiber content. Because white rice flour is a refined carbohydrate, it is digested rapidly by the body, which can lead to significant insulin spikes.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "336f4e1476e3ca14",
-      "title": "Is Rice Flour Fattening? | Truths You Need - snuggymom.com",
-      "url": "https://snuggymom.com/is-rice-flour-fattening/",
-      "summary": "Rice flour itself is not inherently fattening, but eating it in large amounts can contribute to weight gain. Excess calories, regardless of source, are stored as fat if not burned off through activity.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b275f1a380bb4a7",
-      "title": "Is rice flour healthy for you? - Chef's Resource",
-      "url": "https://www.chefsresource.com/faq/is-rice-flour-healthy-for-you/",
-      "summary": "Can rice flour contribute to weight gain? While rice flour on its own does not directly cause weight gain, consuming it in large quantities or in high-calorie dishes can contribute to an increase in calorie intake, which may lead to weight gain.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3c9aa14466cf7ad4",
-      "title": "Microsoft Application Verifier (64-Bit) for Windows - CNET Download",
-      "url": "https://download.cnet.com/microsoft-application-verifier-64-bit/3000-2218_4-75450181.html",
-      "summary": "With its focused layers, including targeted stress tools and detailed error tracking, Application Verifier supports smoother development cycles suited to long work sessions.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "834be99840a4a2b5",
-      "title": "Microsoft Application Verifier — Latest News, Reports & Analysis | The ...",
-      "url": "https://thehackernews.com/search/label/Microsoft%20Application%20Verifier",
-      "summary": "Explore the latest news, real-world incidents, expert analysis, and trends in Microsoft Application Verifier — only on The Hacker News, the leading cybersecurity and IT news platform.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "37f9dddb5a110572",
-      "title": "Moiarte3D- Lonely Swedish Wife 4 - Porn Comics Galleries",
-      "url": "https://www.porncomixonline.net/m-comic/moiarte3d-lonely-swedish-wife-4/moiarte3d-lonely-swedish-wife-4/p/17/",
-      "summary": "Manga Pictures of Lonely Swedish Wife 4. Online Sex Gallery free at Porncomixonline.",
+      "id": "6092a70695f046e9",
+      "title": "UCPath Home | UCPath at UC Davis",
+      "url": "https://ucpath.ucdavis.edu/",
+      "summary": "UCPath at UC Davis UCPath is the University of California's payroll, benefits, human resources and academic personnel system.",
       "discovery_channel": "adjacent",
       "query": "wearable gesture control interface",
       "source": "Bing web RSS",
@@ -1230,486 +938,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8a3a64e7d46336ff",
-      "title": "Moriya Makoto - Me And A Virgin Teacher - Porn Comics Galleries",
-      "url": "https://www.porncomixonline.net/m-comic/moriya-makoto-me-and-a-virgin-teacher/moriya-makoto-me-and-a-virgin-teacher/p/23/",
-      "summary": "Manga Pictures of Me And A Virgin Teacher. Online Sex Gallery free at Porncomixonline.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cce33d3755fdc510",
-      "title": "Movie Showtimes and Theaters near Temecula, CA | Fandango",
-      "url": "https://www.fandango.com/temecula_ca_movietimes",
-      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Temecula, CA",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d6906250dbd11501",
-      "title": "Myth or fact: Does rice make you gain weight? - Form Health",
-      "url": "https://www.formhealth.co/blog/rice-and-weight-gain",
-      "summary": "Some may falsely believe that rice makes you gain belly fat, but rice isn’t a food that will sabotage your weight loss efforts. Rice has many benefits, like being naturally gluten-free, versatile, affordable, and nutritious.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fe69bfd77fa6065d",
-      "title": "Near | Death Note Wiki | Fandom",
-      "url": "https://deathnote.fandom.com/wiki/Near",
-      "summary": "Special Provision for Kira. Near. Anthony Rester. Halle Lidner. Stephen Gevanni. Ill Ratt. John McEnroe. others.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "43f6a66f6d75c795",
-      "title": "Outdrive1 marine sales | River Daves Place",
-      "url": "https://www.riverdavesplace.com/forums/forums/outdrive1-marine-sales.267/",
-      "summary": "Follow along with the video below to see how to install our site as a web app on your home screen.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video",
-        "tool"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2a9ef3123acc4efd",
-      "title": "Pechanga Resort Casino | Southern California | Temecula, CA",
-      "url": "https://www.pechanga.com/",
-      "summary": "A Southern California casino and resort experience that’s On Another Level awaits. It's easy to get to with tons of combinations to make your next getaway perfect.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b68463e0c92d7c4f",
-      "title": "porncomixonline.net",
-      "url": "https://porncomixonline.net/m-comic/juna-juna-juice-my-harem-academia-boku-no-hero-academia/7-4-my-harem-academia-bakugou-mama-to-no-natsuyasumi-second-part-chapter-7-boku-no-hero-academia-juna-juna-juice/p/177/",
-      "summary": "porncomixonline.net",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8e12361a6220a200",
-      "title": "Pornviden - Video Bokep Indo Viral Terbaru",
-      "url": "https://pornviden.com/category/bokep/",
-      "summary": "Indo Bokep terbaru, Bokep Indo Viral, Bokep Jilbab, dan Bokep Indonesia Terbaru. Koleksi Bokep Live Indonesia dan video XXX paling populer.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bc81a91f34ee1b15",
-      "title": "RD's Lounge | River Daves Place",
-      "url": "https://www.riverdavesplace.com/forums/forums/rds-lounge.2/",
-      "summary": "Engage in discussions and connect with like-minded individuals on various topics in this social forum.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9b0b8e9ab91f62d7",
-      "title": "Rice flour: the secret health hazard you didn't know about - is rice ...",
-      "url": "https://tastepursuits.com/32821/is-rice-flour-bad/",
-      "summary": "Rice flour is a high-carbohydrate food, and excessive consumption can lead to weight gain. However, it can be incorporated into a balanced weight loss dietin moderation.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c9fb48d1c019fab1",
-      "title": "Scientists discover why bread can cause weight gain without extra ...",
-      "url": "https://www.sciencedaily.com/releases/2026/04/260414075637.htm",
-      "summary": "Scientists discover why bread can cause weight gain without extra calories Carb-heavy foods like bread and rice may trigger weight gain in unexpected ways. Date: April 14, 2026 Source: Osaka ...",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bc566b0ba9751eb1",
-      "title": "Stimulus explained | River Daves Place",
-      "url": "https://www.riverdavesplace.com/forums/threads/stimulus-explained.16271/",
-      "summary": "Shortly after class, an economics student approaches his economics professor and says, \"I don't understand this stimulus bill. Can you explain it to me?\" The professor replied, \"I don't have any time to explain it at my office, but if you come over to my house on Saturday and help me...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "144e645d023fabd2",
-      "title": "Understanding and Using Microsoft AppVerifier for Appl… | BestHub",
-      "url": "https://www.besthub.dev/articles/understanding-and-using-microsoft-appverifier-for-application-debugging-and-security-7db98ecacb9b",
-      "summary": "This article explains what Microsoft AppVerifier is, how it helps detect memory corruption, security vulnerabilities, and privilege issues in Windows applications, and provides detailed download links, usage steps, configuration tips, common troubleshooting problems, and best‑practice recommendations for reliable testing.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57cacf475ddf00b9",
-      "title": "Video Bokep Terbaru 2026 - Bokep Baru Hot & Viral Indo Jepang",
-      "url": "https://bokepterbaru.me/",
-      "summary": "Video Bokep Terbaruhadir dengan koleksi Bokep Barupaling hot dan menggairahkan! Situs kami menyajikan Bokep Viral Terbarudari berbagai genre, mulai dari Bokep Indo Terbaru, Jepang, Barat, hingga JAV dengan kualitas HD jernih.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3647afc66004436f",
-      "title": "windows-driver-docs/windows-driver-docs-pr/devtest/application-verifier ...",
-      "url": "https://github.com/MicrosoftDocs/windows-driver-docs/blob/staging/windows-driver-docs-pr/devtest/application-verifier-testing-applications.md",
-      "summary": "Test applications written in unmanaged (native) code with Application Verifier under the debugger and with full-page heap before releasing it to customers. Follow the steps provided by Application Verifier to resolve errant conditions.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f240cca2bdd1061e",
-      "title": "windows-driver-docs/windows-driver-docs-pr/devtest/application-verifier ...",
-      "url": "https://github.com/MicrosoftDocs/windows-driver-docs/blob/staging/windows-driver-docs-pr/devtest/application-verifier.md",
-      "summary": "Explore the Application Verifier (AppVerifier) runtime verification tool and look for programming errors, security issues, and user privilege problems in unmanaged code.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f02e8463e2bc045",
-      "title": "Yang Lagi Rame Di X - Indo18Plus",
-      "url": "https://indo18plus.com/bokep-indo-viral-yang-lagi-rame-di-x/",
-      "summary": "Full Video Bokep Viral Terupdate & Gratis Cuma Ada Di Indo18plus, Jika Kalian Mencari Full Video Bokep Viral Lainnya Langsung Cek Indo18plus.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2987ee23b336aea5",
-      "title": "DeepL AI Platform: Translation, Voice & API",
-      "url": "https://www.deepl.com/en",
-      "summary": "Trusted by millions, our end-to-end AI-first translation platform helps you accurately translate text, files, media formats, and voice easily, securely, with unbeatable quality.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "id": "200dd55f8f552365",
+      "title": "ARLearningOnline",
+      "url": "https://www.arlearningonline.com/",
+      "summary": "ARLearningOnline.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "api"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
@@ -1727,12 +965,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "680fda004034b9e4",
-      "title": "2 + 2 = 5 - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/2_%2B_2_%3D_5",
-      "summary": "1Self-evident truth and self-evident falsehood. 2Politics, literature, propaganda. Toggle Politics, literature, propaganda subsection. 2.1France. 2.2Russia. 3George Orwell. 4Contemporary usage. 5See also. 6References. 7Further reading.",
+      "id": "1d5d9666dc574ee1",
+      "title": "Field | The 154th Open | Royal Birkdale",
+      "url": "https://www.theopen.com/field",
+      "summary": "Read about every player in the field for The 154th Open, with our guide to the competitors at Royal Birkdale.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "open source smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1753,296 +991,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7956624bfc5b8235",
-      "title": "Algebra Calculator - Symbolab",
-      "url": "https://www.symbolab.com/solver/algebra-calculator",
-      "summary": "In an amazing mathematical puzzle, letters and symbols take place of unknown numbers. This fundamental branch of mathematics helps us to apply mathematical equations and formulas to visually represent real-world problems.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d6ca17ea69350aba",
-      "title": "Best Products - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Best_Products",
-      "summary": "Best Products 1 languageAdd topic",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "88a21c22abb7b4fd",
-      "title": "Calculator to Add and Subtract Integers Showing the Work",
-      "url": "https://www.calculatorsoup.com/calculators/math/adding-and-subtracting-integers-calculator.php",
-      "summary": "Calculator to add and subtract integers and see the work.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "138775d397505e78",
-      "title": "Calculator | The Online Calculator",
-      "url": "https://www.theonlinecalculator.com/",
-      "summary": "Basic Online Calculator with 10-digit keypad and 4 functions to add, subtract, multiply and divide numbers. Includes basic handheld calculator functions for square, square root, percent, sign change, Pi and memory.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "hack"
-      ],
-      "primary_type": "hack",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "20a465ff60f82ae0",
-      "title": "Glazer's Used Inventory — Glazer's Camera",
-      "url": "https://www.glazerscamera.com/collections/used-items",
-      "summary": "Glazer's Used Inventory — Glazer's Camera. Skip to content. Our Anniversary Sale is September 25, 26, 27! Don't miss out on three days of amazing photo experiences and our largest sale of the season! Our Anniversary Sale is September 25, 26, 27! Don't miss out on three days of amazing photo experiences and our largest sale of the season!",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9dea37fe21296f39",
-      "title": "GoTranscript: Best Text Translation Services in Concord, CA | GoTranscript",
-      "url": "https://gotranscript.com/translation-services-concord",
-      "summary": "Bridge the language barrier in education with expert translation and transcription services. Enrich online learning experiences with accessible transcripts of courses and histories. Preserve scientific inquiry with detailed laboratory experiment transcriptions.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1f98c3141d0a6bcd",
-      "title": "Integer Calculator",
-      "url": "https://www.calculator.io/integer-calculator/",
-      "summary": "Use our free Integer Calculator to add and subtract positive and negative numbers and decimals with step-by-step solutions. This versatile integer calculator is designed for seamlessly adding and subtracting both integers and decimals.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1754ed1a31dffda0",
-      "title": "Math Calculator",
-      "url": "https://www.calculatorsoup.com/calculators/math/math.php",
-      "summary": "Free online math calculator to add, subtract, multiply and divide positive and negative numbers. Online decimal calculator to find sum, difference and products of numbers.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e4f7566faaae8004",
-      "title": "Math Calculators",
-      "url": "https://www.calculator.net/math-calculator.html",
-      "summary": "This is a free online math calculator together with a variety of other free math calculators that compute standard deviation, percentage, fractions, and more.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "646aaeb3f9beb8bc",
-      "title": "Math Solver - Trusted Online AI Math Calculator | Symbolab",
-      "url": "https://www.symbolab.com/",
-      "summary": "Instead of just giving a final answer, Symbolab’s AI Math Solver breaks problems down step-by-step. It shows what to do first, how each step builds on the last, and how each move brings you closer to the solution. It supports topics such as algebra, calculus, trigonometry, and more.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0ce05ebc000cb3cb",
-      "title": "Mathway | Basic Math Problem Solver",
-      "url": "https://www.mathway.com/BasicMath",
-      "summary": "Mathway's step-by-step math solver explains the reasoning at each stage, so algebra, calculus, and statistics problems become easier to understand over time, not just easier to finish. Take a picture of a homework problem, worksheet, or textbook page and let Mathway read and solve it.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d28e27c84a3047c9",
-      "title": "Phoenix New Times | Latest News in Phoenix, Arizona",
-      "url": "https://www.phoenixnewtimes.com/news/",
-      "summary": "Top 100 Bars. Top 50 Restaurants. Arts & Culture.",
+      "id": "1b9af284db3f95c9",
+      "title": "Inland Empire News - KTLA",
+      "url": "https://ktla.com/news/inland-empire/",
+      "summary": "Auto and EV News. The Hill. Earthquakes. KTLA Updates on Google. LA 2028 Olympics. America’s Fentanyl Crisis. Sports. Clippers on KTLA. Your Brain Matters. Regional News Partners.",
       "discovery_channel": "broad_web",
       "query": "new smart glasses 2026",
       "source": "Bing web RSS",
@@ -2065,12 +1017,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "34df431cda3663f0",
-      "title": "THE BEST 10 Translation Services in CONCORD, CA - Updated 2026 ... - Yelp",
-      "url": "https://www.yelp.com/search?cflt=translationservices&find_loc=Concord%2C+CA",
-      "summary": "What are people saying about translation services services in Concord, CA? \"I used BAITS for German to English certified translation of a medical document for USCIS. I've been impressed with speed, quality, and level of responsiveness. Martin is on top of everything!",
+      "id": "48e559ac781252a0",
+      "title": "Microsoft account",
+      "url": "https://signup.live.com/",
+      "summary": "Create your Microsoft account to access various services and features.",
       "discovery_channel": "adjacent+broad_web",
-      "query": "translation smart glasses; near-eye display optics",
+      "query": "smartglasses; electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2091,10 +1043,36 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3ac343cfbbbda99d",
-      "title": "Web 2.0 calculatrice en ligne",
-      "url": "https://web2.0calc.fr/",
-      "summary": "web2.0calc.fr calculateur en ligne fournit des fonctions mathématiques de base et avancées utiles pour l'école ou au collège. Vous pouvez utiliser la calculatrice directement à partir de votre clavier, ainsi que l'aide des boutons de votre souris. Devenez fan!",
+      "id": "6df4cc09f7e43a48",
+      "title": "Microsoft account | Account Checkup",
+      "url": "https://account.microsoft.com/account-checkup",
+      "summary": "Sign in to check and manage your Microsoft account settings with the Account Checkup Wizard.",
+      "discovery_channel": "adjacent+broad_web",
+      "query": "smartglasses; electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9f8780c194261c41",
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/%C2%A0-%3E",
+      "summary": "My Account You need to enable JavaScript to run this app.",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -2105,61 +1083,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d09505209b780193",
-      "title": "Artificial intelligence - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Artificial_intelligence",
-      "summary": "1.1Reasoning and problem-solving. 1.2Knowledge representation. 1.3Planning and decision-making. 1.4Learning. 1.5Natural language processing. 1.6Perception. 1.7Social intelligence. 1.8General intelligence.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab2e7b5a9f37932c",
-      "title": "GPT-4 | OpenAI",
-      "url": "https://openai.com/index/gpt-4/",
-      "summary": "We encourage and facilitate transparency, user education, and wider AI literacy as society adopts these models. We also aim to expand the avenues of input people have in shaping our models.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
