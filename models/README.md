@@ -49,7 +49,11 @@ Editorial volumes:
 | [Vuzix M400 / M4000](VuzixM400/README.md) | GLS-0098–0099 | Standalone Android wearable-computer architecture, app deployment, connectivity SDK and Vuzix View tooling. |
 | [Vuzix Shield](VuzixShield/README.md) | GLS-0121 | Android developer platform, connectivity/HUD SDK support and APK deployment path. |
 | [Vuzix LX1](VuzixLX1/README.md) | GLS-0100 | Standalone Android architecture and Vuzix View deployment/debug tooling. |
-| [Rokid Glasses](RokidGlasses/README.md) | GLS-0064 | MicroLED display, AR1/RT600 hardware, camera/audio, connectivity, battery, app and SDK resources. |
+| [Rokid Glasses](RokidGlasses/README.md) | GLS-0064 | MicroLED display, AR1/RT600 hardware, camera/audio, connectivity, battery, app, SDK resources and integrated-AI lineage boundary. |
+| [Rokid AI Glasses Style](RokidAIStyle/README.md) | Investigation | Display-free camera/audio branch, prescription-friendly frame, companion/service boundary, SDK/offline questions and Style Pack identity. |
+| [Rokid Max 2](RokidMax2/README.md) | GLS-0094 | Host-driven display architecture, DisplayPort behavior, optical adjustment, and separation of Max 2 hardware from Station 2 storefront copy. |
+| [Rokid AR Spatial](RokidARSpatial/README.md) | System bundle | Max 2 + Station 2 spatial-computing configuration; YodaOS-Master, multi-window behavior and owner-control investigation without inflating eyewear count. |
+| [Rokid AR Joy 2](RokidARJoy2/README.md) | System bundle | Max 2 + original Rokid Station entertainment configuration; Station-generation boundary and current first-party source contradiction. |
 | [RayNeo X3 Pro](RayNeoX3Pro/README.md) | GLS-0066 | Full-color MicroLED, Snapdragon AR1, cameras, AIOS, sensors, connectivity, Gemini and developer access. |
 | [Snap Spectacles 5](SnapSpectacles5/README.md) | GLS-0068 | Spectacles development platform, device APIs, compatibility matrix and public sample code. |
 | [XREAL One](XREALOne/README.md) | GLS-0074 | Micro-OLED display, wired host architecture, X1 compute, audio, spatial modes, SDK and firmware guidance. |
