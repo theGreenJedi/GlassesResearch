@@ -1,8 +1,8 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-09-04
+**Edition:** 2026-09-05
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 183 distinct purchasable models or explicitly marketed product generations
+**Count:** 193 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -318,6 +318,24 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0180 | OPPO | Air Glass | ≤2026 | legacy / region-limited | monocular waveguide display | China retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://www.oppo.com/cn/newsroom/press/480/) |
 | GLS-0181 | TCL / RayNeo | NXTWEAR AIR | ≤2026 | legacy / region-limited | XR display | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-04_DISPLAY_GLASSES.md); [source](https://www.tcl.com/eu/en/glasses/tcl-nxtwear-air/specifications) |
 
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0185 | RayNeo | RayNeo iO | ≤2026 | current | discreet display / AI smart glasses | manufacturer retail / prescription | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.rayneo.com/products/rayneo-io-ai-glasses) |
+| GLS-0186 | RayNeo | RayNeo GT | ≤2026 | current | XR display / 3DoF | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses) |
+| GLS-0187 | RayNeo | RayNeo GT Max | ≤2026 | current | XR display / 3DoF | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses) |
+| GLS-0188 | VITURE | VITURE Pro 2 | ≤2026 | current | XR display | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.viture.com/pro2) |
+| GLS-0189 | Epson | Moverio BT-350 | ≤2026 | legacy / enterprise | standalone binocular AR | enterprise / commercial | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://epson.com/For-Work/Wearables/Smart-Glasses/Moverio-BT-350-Smart-Glasses/p/V11H837020) |
+| GLS-0190 | Epson | Moverio BT-30E | ≤2026 | legacy / region-limited | tethered binocular display | commercial / enterprise | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.epson.jp/support/portal/hoshu/bt-30e.htm) |
+| GLS-0191 | Lucyd | Lucyd Loud 1.0 | ≤2026 | legacy | audio smart glasses | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://lucyd.co/blogs/news/july-2020-corporate-update) |
+| GLS-0192 | Lucyd | Lucyd Loud — second edition | ≤2026 | legacy | audio smart glasses | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://lucyd.co/blogs/news/july-2020-corporate-update) |
+| GLS-0193 | Lucyd | Lucyd Loud 2020 | ≤2026 | legacy | audio smart glasses | retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://lucyd.co/blogs/news/july-2020-corporate-update) |
+| GLS-0194 | INMO | INMO X AI+Camera Glasses | ≤2026 | legacy / region-limited | camera / AI smart glasses | blind-order / preorder | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_01.md); [source](https://www.inmoxr.com/pages/about-us) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -330,7 +348,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 183-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 193-row count:
 
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
