@@ -16,6 +16,13 @@ Use this page when you need a verifiable smart-glasses fact, a stable model iden
 
 Every canonical model has a stable `GLS-####` identifier. Use that identifier when a product has multiple seller names, rebrands, or changing market labels.
 
+<details>
+<summary>Stable-ID quick links: GLS-0093 through GLS-0146</summary>
+
+[GLS-0093](/models/catalog/gls-0093/) · [GLS-0094](/models/catalog/gls-0094/) · [GLS-0095](/models/catalog/gls-0095/) · [GLS-0096](/models/catalog/gls-0096/) · [GLS-0097](/models/catalog/gls-0097/) · [GLS-0098](/models/catalog/gls-0098/) · [GLS-0099](/models/catalog/gls-0099/) · [GLS-0100](/models/catalog/gls-0100/) · [GLS-0101](/models/catalog/gls-0101/) · [GLS-0102](/models/catalog/gls-0102/) · [GLS-0103](/models/catalog/gls-0103/) · [GLS-0104](/models/catalog/gls-0104/) · [GLS-0105](/models/catalog/gls-0105/) · [GLS-0106](/models/catalog/gls-0106/) · [GLS-0107](/models/catalog/gls-0107/) · [GLS-0108](/models/catalog/gls-0108/) · [GLS-0109](/models/catalog/gls-0109/) · [GLS-0110](/models/catalog/gls-0110/) · [GLS-0111](/models/catalog/gls-0111/) · [GLS-0112](/models/catalog/gls-0112/) · [GLS-0113](/models/catalog/gls-0113/) · [GLS-0114](/models/catalog/gls-0114/) · [GLS-0115](/models/catalog/gls-0115/) · [GLS-0116](/models/catalog/gls-0116/) · [GLS-0117](/models/catalog/gls-0117/) · [GLS-0118](/models/catalog/gls-0118/) · [GLS-0119](/models/catalog/gls-0119/) · [GLS-0120](/models/catalog/gls-0120/) · [GLS-0121](/models/catalog/gls-0121/) · [GLS-0122](/models/catalog/gls-0122/) · [GLS-0123](/models/catalog/gls-0123/) · [GLS-0124](/models/catalog/gls-0124/) · [GLS-0125](/models/catalog/gls-0125/) · [GLS-0126](/models/catalog/gls-0126/) · [GLS-0127](/models/catalog/gls-0127/) · [GLS-0128](/models/catalog/gls-0128/) · [GLS-0129](/models/catalog/gls-0129/) · [GLS-0130](/models/catalog/gls-0130/) · [GLS-0131](/models/catalog/gls-0131/) · [GLS-0132](/models/catalog/gls-0132/) · [GLS-0133](/models/catalog/gls-0133/) · [GLS-0134](/models/catalog/gls-0134/) · [GLS-0135](/models/catalog/gls-0135/) · [GLS-0136](/models/catalog/gls-0136/) · [GLS-0137](/models/catalog/gls-0137/) · [GLS-0138](/models/catalog/gls-0138/) · [GLS-0139](/models/catalog/gls-0139/) · [GLS-0140](/models/catalog/gls-0140/) · [GLS-0141](/models/catalog/gls-0141/) · [GLS-0142](/models/catalog/gls-0142/) · [GLS-0143](/models/catalog/gls-0143/) · [GLS-0144](/models/catalog/gls-0144/) · [GLS-0145](/models/catalog/gls-0145/) · [GLS-0146](/models/catalog/gls-0146/)
+
+</details>
+
 ## Cite a model, verified publication, or dataset
 
 - [Smart-Glasses Purchaser-History Census — August 2026](SMART_GLASSES_CENSUS_2026.md) — dated, reproducible 162-model acquisition-history snapshot
