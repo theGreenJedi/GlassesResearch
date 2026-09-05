@@ -2,6 +2,8 @@
 
 Display-equipped AI smart glasses from Rokid, launched globally in 2025.
 
+**Technology lineage:** [Rokid](../../lineages/ROKID.md)
+
 ## Hardware
 
 Rokid's current primary documentation specifies:
@@ -28,6 +30,10 @@ The Hi Rokid companion app manages setup, media, settings, AI services and updat
 
 Rokid also publishes an official terminal/glasses SDK covering device-side capabilities including media capture, voice, recognition, messaging, device state, Bluetooth and P2P.
 
+## Lineage boundary
+
+Rokid Glasses are part of Rokid's **integrated AI-eyewear branch**. Do not transfer their camera, onboard-compute, AI-service, account, or cloud-dependence claims to Rokid Air/Max/Max 2 display glasses. Likewise, the display-free [Rokid AI Glasses Style](../RokidAIStyle/README.md) is a distinct eyewear model and requires separate service-survival and SDK verification.
+
 ## Primary sources
 
 - [Rokid Glasses product/specifications](https://global.rokid.com/products/rokid-glasses)
@@ -38,6 +44,9 @@ Rokid also publishes an official terminal/glasses SDK covering device-side capab
 
 ## Related GlassesResearch resources
 
+- [Rokid lineage](../../lineages/ROKID.md)
+- [Rokid populated research record](../../research/populated/ROKID.md)
+- [Rokid AI Glasses Style](../RokidAIStyle/README.md)
 - [Developer resources](../../hacking/README.md)
 - [Ecosystem resource catalog](../../resources/ECOSYSTEM_RESOURCE_CATALOG.md)
 - [Industry timeline](../../docs/INDUSTRY_TIMELINE.md)
