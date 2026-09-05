@@ -24,6 +24,8 @@ For era fields, `c.` marks an approximate year and `≤2026` means the current e
 | ADJ-0006 | Magic Leap | Magic Leap One / Magic Leap 1 | 2018 | legacy | spatial-computing headset + compute puck | [Magic Leap lineage packet](../docs/report-cards/LINEAGE_MAGIC_LEAP.md) |
 | ADJ-0007 | Magic Leap | Magic Leap 2 | 2022 | enterprise | spatial-computing headset + compute puck | [Magic Leap lineage packet](../docs/report-cards/LINEAGE_MAGIC_LEAP.md) |
 | ADJ-0010 | Rokid | X-Craft | 2020 | current / enterprise / supply-limited | industrial explosion-proof AR headband / helmet-mounted system | [Rokid historical audit](../research/investigations/ROKID_HISTORICAL_AUDIT_2026-09-05.md); [current B2B source](https://de.rokid.com/de-de/products/rokid-x-craft-for-b2b) |
+| ADJ-0011 | Epson | Moverio Pro BT-2000 | c. 2016 | legacy / enterprise | industrial AR smart headset with headband / forehead support | [Epson lineage](../lineages/EPSON_MOVERIO.md); [first-party product](https://epson.com/For-Work/Wearables/Smart-Glasses/Moverio-Pro-BT-2000-Smart-Headset-/p/V11H725020) |
+| ADJ-0012 | Epson | Moverio Pro BT-2200 | 2017 | legacy / enterprise | helmet-compatible industrial AR smart headset | [Epson lineage](../lineages/EPSON_MOVERIO.md); [first-party product](https://epson.com/For-Work/Wearables/Smart-Glasses/Moverio-Pro-BT-2200-Smart-Headset/p/V11H853020) |
 
 ## Eyeglass-mounted assistive modules
 

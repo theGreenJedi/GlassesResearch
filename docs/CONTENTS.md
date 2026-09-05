@@ -14,6 +14,7 @@ A compact map of GlassesResearch. Use the Finder when choosing glasses; use Rese
 ## Research & News
 
 - [Research & News](RESEARCH_NEWS.md)
+- [Manufacturer Completeness — whole-manufacturer historical coverage and audit debt](MANUFACTURER_COMPLETENESS.md)
 - [Who Actually Makes These Glasses? — Shenzhen smart-glasses supply-chain investigation](SHENZHEN_SMART_GLASSES_SUPPLY_CHAIN.md)
 - [Industry timeline](INDUSTRY_TIMELINE.md)
 - [News archive and trackers](news/README.md)
@@ -27,6 +28,7 @@ A compact map of GlassesResearch. Use the Finder when choosing glasses; use Rese
 - [Report Card Method](REPORT_CARD_METHOD.md)
 - [Model research](../models/README.md)
 - [Technology lineages](../lineages/README.md)
+- [Manufacturer Completeness](MANUFACTURER_COMPLETENESS.md)
 - [Development and hacking](../hacking/README.md)
 - [SDK / API compatibility](SDK_API_MATRIX.md)
 - [Companion App Database](COMPANION_APP_DATABASE.md)
