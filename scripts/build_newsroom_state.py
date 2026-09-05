@@ -3,14 +3,14 @@
 
 The verified desk remains derived only from the canonical verified-change ledger. An explicit
 editorial lead pin may feature a reviewed external article without changing its verification
-state or promoting it into the verified desk.
+state or promoting it into the verified desk. Lead stories expire after seven days.
 """
 from __future__ import annotations
 
 import argparse
 import json
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -19,6 +19,7 @@ from verified_changes import DEFAULT_CHANGES, validate
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_EDITORIAL_LEAD = ROOT / "data" / "editorial-lead.json"
 LEAD_WINDOW = 6
+MAX_LEAD_AGE_DAYS = 7
 LEAD_WEIGHT = {
     "hardware_change": 6,
     "policy_change": 5,
@@ -49,6 +50,12 @@ def stamp(value: str) -> datetime:
     return parsed
 
 
+def lead_is_fresh(value: str, now: datetime | None = None) -> bool:
+    now = now or datetime.now(timezone.utc)
+    published = stamp(value)
+    return published <= now and published >= now - timedelta(days=MAX_LEAD_AGE_DAYS)
+
+
 def story(event: dict) -> dict:
     publication = event["publication"]
     return {
@@ -63,8 +70,11 @@ def story(event: dict) -> dict:
     }
 
 
-def choose_lead(events: list[dict]) -> dict:
-    recent = sorted(events, key=lambda e: stamp(e["publication"]["published_at"]), reverse=True)[:LEAD_WINDOW]
+def choose_lead(events: list[dict]) -> dict | None:
+    eligible = [event for event in events if lead_is_fresh(event["publication"]["published_at"])]
+    recent = sorted(eligible, key=lambda e: stamp(e["publication"]["published_at"]), reverse=True)[:LEAD_WINDOW]
+    if not recent:
+        return None
     lead = max(
         recent,
         key=lambda e: (
@@ -90,7 +100,8 @@ def load_editorial_lead(path: Path) -> dict | None:
     url = str(payload["url"])
     if not url.startswith("https://"):
         raise SystemExit("Editorial lead URL must use HTTPS")
-    stamp(str(payload["published_at"]))
+    if not lead_is_fresh(str(payload["published_at"])):
+        return None
     return {
         "event_id": None,
         "change_type": "editorial_pick",
@@ -163,7 +174,7 @@ def build(payload: dict, editorial_lead: dict | None = None) -> dict:
     return {
         "schema_version": 1,
         "derived_from": "data/verified-changes.json",
-        "semantics": "Verified desk state is derived only from verified published changes; an explicit editorial lead pin may feature a reviewed external article without changing verification state.",
+        "semantics": "Verified desk state is derived only from verified published changes; an explicit editorial lead pin may feature a reviewed external article without changing verification state. No lead may be more than seven days old.",
         "latest_verified_at": latest_at,
         "lead": editorial_lead or automatic_lead,
         "latest": [story(event) for event in ordered[:9]],
