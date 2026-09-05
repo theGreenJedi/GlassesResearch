@@ -1,0 +1,181 @@
+name: Publish editorial lead
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/editorial-lead.json
+      - .github/workflows/editorial-lead-pages.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - data/editorial-lead.json
+      - .github/workflows/editorial-lead-pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: editorial-lead-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          cache: pip
+          cache-dependency-path: requirements-docs.txt
+
+      - name: Install documentation dependencies
+        run: pip install -r requirements-docs.txt
+
+      - name: Validate editorial lead contract
+        run: |
+          python scripts/build_newsroom_state.py \
+            --changes data/verified-changes.json \
+            --editorial-lead data/editorial-lead.json \
+            --output /tmp/newsroom-state.json
+          python scripts/verify_newsroom_state.py --state /tmp/newsroom-state.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          config = json.loads(Path('data/editorial-lead.json').read_text(encoding='utf-8'))
+          state = json.loads(Path('/tmp/newsroom-state.json').read_text(encoding='utf-8'))
+          lead = state.get('lead') or {}
+          if config.get('enabled'):
+              assert lead.get('lead_mode') == 'editorial_pin'
+              assert lead.get('title') == config.get('title')
+              assert lead.get('url') == config.get('url')
+              assert lead.get('review_status') == 'editorially_reviewed_external'
+          print(f"Editorial lead contract verified: {lead.get('source_label') or lead.get('event_id')}")
+          PY
+
+      - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+
+      - name: Stage site
+        run: python scripts/prepare_site.py
+
+      - name: Verify staged newsroom state
+        run: |
+          python scripts/verify_newsroom_state.py --state .site-src/data/newsroom-state.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          config = json.loads(Path('data/editorial-lead.json').read_text(encoding='utf-8'))
+          state = json.loads(Path('.site-src/data/newsroom-state.json').read_text(encoding='utf-8'))
+          lead = state.get('lead') or {}
+          if config.get('enabled'):
+              assert lead.get('title') == config.get('title')
+              assert lead.get('url') == config.get('url')
+              assert lead.get('lead_mode') == 'editorial_pin'
+          print('Staged newsroom state matches editorial content record')
+          PY
+
+      - name: Build site
+        run: mkdocs build --strict
+
+      - name: Stamp deployment provenance
+        if: github.event_name != 'pull_request'
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          payload = {
+              'schema_version': 1,
+              'sha': os.environ['GITHUB_SHA'],
+              'repository': os.environ['GITHUB_REPOSITORY'],
+              'ref': os.environ['GITHUB_REF'],
+              'workflow': os.environ['GITHUB_WORKFLOW'],
+              'run_id': os.environ['GITHUB_RUN_ID'],
+              'run_number': os.environ['GITHUB_RUN_NUMBER'],
+              'event_name': os.environ['GITHUB_EVENT_NAME'],
+              'deployment_lane': 'editorial_lead',
+          }
+          Path('site/deployment.json').write_text(json.dumps(payload, indent=2) + '\n', encoding='utf-8')
+          Path('site/deployment.txt').write_text(payload['sha'] + '\n', encoding='utf-8')
+          PY
+
+      - name: Verify built editorial state
+        run: |
+          test -s site/data/newsroom-state.json
+          python scripts/verify_newsroom_state.py --state site/data/newsroom-state.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          config = json.loads(Path('data/editorial-lead.json').read_text(encoding='utf-8'))
+          state = json.loads(Path('site/data/newsroom-state.json').read_text(encoding='utf-8'))
+          lead = state.get('lead') or {}
+          if config.get('enabled'):
+              assert lead.get('title') == config.get('title')
+              assert lead.get('url') == config.get('url')
+              assert lead.get('lead_mode') == 'editorial_pin'
+          print('Built editorial state verified')
+          PY
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Deploy editorial update
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Verify live editorial lead
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in $(seq 1 12); do
+            bust="lead=${GITHUB_SHA}-${GITHUB_RUN_ID}-${attempt}"
+            if curl --fail --silent --show-error --location --max-time 20 \
+              -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+              "https://glassesresearch.org/data/newsroom-state.json?${bust}" -o /tmp/live-newsroom.json \
+              && curl --fail --silent --show-error --location --max-time 20 \
+              -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+              "https://glassesresearch.org/deployment.json?${bust}" -o /tmp/live-deployment.json \
+              && python - <<'PY'
+          import json, os
+          from pathlib import Path
+          config = json.loads(Path('data/editorial-lead.json').read_text(encoding='utf-8'))
+          state = json.load(open('/tmp/live-newsroom.json', encoding='utf-8'))
+          deployment = json.load(open('/tmp/live-deployment.json', encoding='utf-8'))
+          lead = state.get('lead') or {}
+          assert deployment.get('sha') == os.environ['GITHUB_SHA']
+          if config.get('enabled'):
+              assert lead.get('title') == config.get('title')
+              assert lead.get('url') == config.get('url')
+              assert lead.get('lead_mode') == 'editorial_pin'
+              assert lead.get('review_status') == 'editorially_reviewed_external'
+          print(f"Live editorial lead verified: {lead.get('source_label') or lead.get('event_id')}")
+          PY
+            then
+              exit 0
+            fi
+            sleep 10
+          done
+          echo 'Live editorial lead did not converge to the requested state' >&2
+          exit 1
