@@ -77,5 +77,6 @@ def main():
     run(ROOT/"scripts/verify_verified_change_surfaces.py","--site-root",DEST,"--changes",ROOT/"data/verified-changes.json")
     run(ROOT/"scripts/verify_newsroom_state.py","--state",newsroom_state)
     run(ROOT/"scripts/verify_verified_research_citations.py","--site-root",DEST,"--changes",ROOT/"data/verified-changes.json")
+    run(ROOT/"scripts/verify_llms_index.py","--site-root",DEST)
     print(f"Staged documentation at {DEST}")
 if __name__=="__main__": main()
