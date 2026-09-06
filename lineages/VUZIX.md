@@ -1,3 +1,6 @@
+---
+description: "Vuzix smart-glasses lineage across consumer video eyewear, Wrap and STAR AR, enterprise Android wearables, host-driven M400-C, Z100, and adjacent wearable displays."
+---
 # Vuzix smart-glasses lineages
 
 **Whole-manufacturer audit:** 2026-09-05  
