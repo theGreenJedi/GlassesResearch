@@ -8,7 +8,7 @@ from pathlib import Path
 FEATURE = '''<section class="gr-section gr-community-feature" aria-labelledby="gr-community-feature-title" data-home-community-feature>
   <div class="gr-section-heading gr-heading-compact">
     <div>
-      <p class="gr-kicker">Community Research · Featured editorial</p>
+      <p class="gr-kicker"><a href="/docs/community-research/">Community Research</a> · Featured editorial</p>
       <h2 id="gr-community-feature-title">When owners take their glasses back.</h2>
     </div>
     <a class="gr-text-link" href="/docs/news/articles/2026-09-06-when-owners-take-their-glasses-back/">Read the editorial <span aria-hidden="true">→</span></a>
