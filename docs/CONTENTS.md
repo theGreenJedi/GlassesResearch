@@ -1,6 +1,6 @@
 # Contents
 
-A compact map of GlassesResearch. Use the Finder when choosing glasses; use Research & News to follow the field; use Tools for the underlying research library and development resources.
+A compact map of GlassesResearch. Use the Finder when choosing glasses; use Research & News to follow the field; use Events for upcoming dates; use Tools for the underlying research library and development resources.
 
 ## Finder
 
@@ -20,6 +20,11 @@ A compact map of GlassesResearch. Use the Finder when choosing glasses; use Rese
 - [News archive and trackers](news/README.md)
 - [Technical evidence library](../evidence/README.md)
 - [Historical archive](HISTORICAL_ARCHIVE.md)
+
+## Events
+
+- [Month-at-a-time Events calendar](EVENTS.md)
+- [Subscribe with any iCalendar-compatible app](events.ics)
 
 ## Tools
 
