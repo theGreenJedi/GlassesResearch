@@ -45,6 +45,40 @@
   <a class="gr-text-link" href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder &amp; Compare <span aria-hidden="true">→</span></a>
 </section>
 
+<section class="gr-section" aria-labelledby="gr-deep-research-title">
+  <div class="gr-section-heading">
+    <div>
+      <p class="gr-kicker">Deep research</p>
+      <h2 id="gr-deep-research-title">Go past the spec sheet.</h2>
+    </div>
+    <p>Some model records have grown into full research hubs with hands-on observations, developer paths, lineages, evidence dossiers, or service-survival work. Start with a few of the deepest.</p>
+  </div>
+
+  <div class="gr-explore-grid">
+    <a href="models/W610/">
+      <span class="gr-card-number">01</span>
+      <strong>W610 / HeyCyan</strong>
+      <span>Owned-device observations, software and SDK work, genealogy, manufacturing intelligence, evidence, and open research questions.</span>
+    </a>
+    <a href="models/BrilliantFrame/">
+      <span class="gr-card-number">02</span>
+      <strong>Brilliant Labs Frame</strong>
+      <span>Hardware architecture, schematics, Bluetooth, SDKs, firmware source, and developer/debug access.</span>
+    </a>
+    <a href="models/RayNeoX3Pro/">
+      <span class="gr-card-number">03</span>
+      <strong>RayNeo X3 Pro</strong>
+      <span>Display and compute architecture, cameras and AI, developer access, lineage boundaries, and service-survival evidence.</span>
+    </a>
+    <a href="models/VuzixZ100/">
+      <span class="gr-card-number">04</span>
+      <strong>Vuzix Z100</strong>
+      <span>Phone-peripheral architecture, developer path, prescription and serviceability research, and Vuzix lineage context.</span>
+    </a>
+  </div>
+  <a class="gr-text-link" href="models/">Browse all model research <span aria-hidden="true">→</span></a>
+</section>
+
 <section class="gr-section" aria-labelledby="gr-now-title">
   <div class="gr-section-heading gr-heading-compact">
     <div>
