@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add crawlable model links and evidence-led research summaries to staged pages."""
+"""Add guaranteed crawlable canonical-model links and research summaries to staged pages."""
 
 from __future__ import annotations
 
@@ -9,7 +9,10 @@ import re
 from pathlib import Path
 
 MODEL_HEADING = re.compile(r"^(#{2,3})\s+(GLS-\d{4})\s+—\s+(.+)$", re.MULTILINE)
-TABLE_ROW = re.compile(r"^(\|\s*(GLS-\d{4})\s*\|\s*[^|]+\|\s*)([^|]+?)(\s*\|)", re.MULTILINE)
+CATALOG_ID_ROW = re.compile(
+    r"^(\|\s*)(?:\[(GLS-\d{4})\]\([^)]+\)|(GLS-\d{4}))(\s*\|)",
+    re.MULTILINE,
+)
 MODEL_ID = re.compile(r"\bGLS-\d{4}\b")
 
 
@@ -36,20 +39,41 @@ def link_model_headings(path: Path, valid_ids: set[str]) -> int:
     return count
 
 
-def link_catalog_rows(path: Path) -> int:
+def ensure_catalog_discoverability(output_root: Path, valid_ids: set[str]) -> int:
+    """Guarantee one human-facing ledger link to every generated canonical page."""
+    catalog_dir = output_root / "models" / "catalog"
+    missing_pages = sorted(
+        model_id
+        for model_id in valid_ids
+        if not (catalog_dir / f"{model_id.lower()}.md").is_file()
+    )
+    if missing_pages:
+        raise ValueError(
+            "generated canonical model pages missing before discoverability linking: "
+            + ", ".join(missing_pages[:20])
+        )
+
+    path = output_root / "models" / "THE_LIST.md"
     text = path.read_text(encoding="utf-8")
-    count = 0
+    linked: set[str] = set()
 
     def replace(match: re.Match[str]) -> str:
-        nonlocal count
-        model_id, model = match.group(2), match.group(3).strip()
-        if model.startswith("["):
+        model_id = match.group(2) or match.group(3)
+        if model_id not in valid_ids:
             return match.group(0)
-        count += 1
-        return f"{match.group(1)}[{model}]({canonical(model_id)}){match.group(4)}"
+        linked.add(model_id)
+        return f"{match.group(1)}[{model_id}]({canonical(model_id)}){match.group(4)}"
 
-    path.write_text(TABLE_ROW.sub(replace, text), encoding="utf-8")
-    return count
+    updated = CATALOG_ID_ROW.sub(replace, text)
+    missing_links = sorted(valid_ids - linked)
+    if missing_links:
+        raise ValueError(
+            "canonical catalog discoverability links missing for: "
+            + ", ".join(missing_links[:20])
+        )
+
+    path.write_text(updated, encoding="utf-8")
+    return len(linked)
 
 
 def link_lineage_ids(path: Path, valid_ids: set[str]) -> int:
@@ -128,10 +152,10 @@ def main() -> None:
     valid_ids = set(load_map(args.output_root / "data" / "devices.json"))
     heading_links = sum(link_model_headings(path, valid_ids) for path in sorted((args.output_root / "models").glob("PROFILES*.md")))
     heading_links += sum(link_model_headings(path, valid_ids) for path in sorted((args.output_root / "docs" / "report-cards").glob("*.md")))
-    catalog_links = link_catalog_rows(args.output_root / "models" / "THE_LIST.md")
+    catalog_links = ensure_catalog_discoverability(args.output_root, valid_ids)
     lineage_links = sum(link_lineage_ids(path, valid_ids) for path in sorted((args.output_root / "lineages").glob("*.md")))
     enriched = enrich_catalog_pages(args.output_root)
-    print(f"Added {heading_links} heading links, {catalog_links} catalog links, {lineage_links} lineage links, and enriched {enriched} canonical model pages")
+    print(f"Added {heading_links} heading links, guaranteed {catalog_links} catalog discovery links, {lineage_links} lineage links, and enriched {enriched} canonical model pages")
 
 
 if __name__ == "__main__":
