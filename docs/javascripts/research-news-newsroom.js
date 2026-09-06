@@ -183,3 +183,69 @@
       `;
 
       if (latestGrid) latestGrid.innerHTML = state.latest.slice(0, 6).map(renderStoryCard).join("");
+      latestHeading?.classList.add("gr-newsroom-enhanced-hide");
+      latestTable?.classList.add("gr-newsroom-enhanced-hide");
+
+      if (Array.isArray(state.convergence) && state.convergence.length) {
+        convergence.hidden = false;
+        const cards = state.convergence.slice(0, 4).map((theme) => {
+          const supporting = (theme.stories || []).slice(0, 2).map((story) =>
+            `<a href="${escapeHtml(story.url)}">${escapeHtml(story.title)}</a>`
+          ).join("<span aria-hidden=\"true\"> · </span>");
+          return `
+            <article class="gr-convergence-card">
+              <div class="gr-signal-row"><span>${escapeHtml(theme.kind)}</span><strong>${escapeHtml(theme.label)}</strong></div>
+              <h3>${escapeHtml(theme.story_count)} verified story signals across ${escapeHtml(theme.independent_source_hosts)} source families</h3>
+              <p class="gr-convergence-links">${supporting}</p>
+            </article>
+          `;
+        }).join("");
+        convergence.innerHTML = `
+          <div class="gr-newsroom-section-head">
+            <div><div class="gr-newsroom-kicker">Convergence radar</div><h2>Where independent signals are beginning to agree</h2></div>
+            <p>Convergence requires multiple verified story signals and multiple source families. Rewrites of one source do not manufacture momentum.</p>
+          </div>
+          <div class="gr-convergence-grid">${cards}</div>
+        `;
+      }
+    })
+    .catch(() => {
+      const freshness = hero.querySelector("[data-newsroom-freshness]");
+      if (freshness) freshness.textContent = "Verified newsroom state unavailable · showing published-page fallback";
+      renderTableFallback();
+    });
+
+  const loadWireState = async () => {
+    // Prefer the live Worker-backed wire when it actually has stories. A valid but
+    // empty legacy response must not mask the independently refreshed search feed.
+    let emptyState = null;
+    for (const endpoint of ["/wire", "/data/wire-state.json"]) {
+      try {
+        const response = await fetch(endpoint, { credentials: "same-origin" });
+        if (!response.ok) continue;
+        const state = await response.json();
+        if (state?.schema_version === 1 && Array.isArray(state.items)) {
+          if (state.items.length) return state;
+          emptyState ??= state;
+        }
+      } catch {
+        // Try the next read-only source.
+      }
+    }
+    if (emptyState) return emptyState;
+    throw new Error("wire state unavailable");
+  };
+
+  loadWireState()
+    .then((state) => {
+      const items = state.items
+        .filter((item) => item && ["reported", "under_review"].includes(item.status) && item.title && item.url)
+        .slice(0, 12);
+      if (!items.length || !wireList) return;
+      wireList.innerHTML = items.map(renderWireItem).join("");
+      wire.hidden = false;
+    })
+    .catch(() => {
+      wire.hidden = true;
+    });
+})();
