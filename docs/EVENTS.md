@@ -5,7 +5,7 @@ A month-at-a-time calendar of launches, conferences, developer events, research 
 The website is the canonical event record. Dates are included only when they have a traceable public source; an event entry is not a GlassesResearch endorsement.
 
 <div class="gr-events-toolbar" markdown>
-  <a class="md-button md-button--primary" href="/events.ics">Subscribe with any calendar app (.ics)</a>
+  <a class="md-button md-button--primary" href="/docs/events.ics">Subscribe with any calendar app (.ics)</a>
   <span class="gr-events-privacy">Open iCalendar feed · no account · no cookies · no Google Calendar required</span>
 </div>
 
