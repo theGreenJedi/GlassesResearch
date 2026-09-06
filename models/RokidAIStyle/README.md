@@ -44,6 +44,10 @@ Rokid states that the Hi Rokid companion app is required for pairing, settings, 
 
 Shared chipset family and companion software with Rokid Glasses do not prove identical service-survival behavior or SDK exposure. `GLS-0063` therefore retains its own cloud-independence and owner-control investigation.
 
+## Community Research
+
+The independent [aimindseye / rokid-ai-glasses Community Research profile](/docs/community-research/aimindseye-rokid-ai-glasses/) tracks a public research wiki focused specifically on this display-free family. Its findings remain community-attributed unless separately reproduced by GlassesResearch; the project's own qualification boundaries should be preserved when citing it.
+
 ## Style Pack identity
 
 **Rokid AI Glasses Style Pack is not a second glasses model.** Rokid's current collection describes the Pack as the same underlying eyewear with additional power/accessory capacity. It remains a retail configuration of `GLS-0063`.
