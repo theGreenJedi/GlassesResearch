@@ -193,8 +193,8 @@ def _article_schema(
     site_url: str,
     source_uri: str,
 ) -> str | None:
-    """Describe standalone verified Research & News articles from visible publication data."""
-    if not source_uri.startswith("docs/news/articles/") or "**Status:** Verified" not in markdown:
+    """Describe standalone Research & News articles from visible publication data."""
+    if not source_uri.startswith("docs/news/articles/"):
         return None
     published = PUBLISHED.search(markdown)
     if not published:
