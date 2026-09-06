@@ -13,7 +13,7 @@ def date_ics(s:str)->str:
 def main()->int:
     ap=argparse.ArgumentParser()
     ap.add_argument('--input',type=Path,default=Path('data/events.json'))
-    ap.add_argument('--output',type=Path,default=Path('.site-src/events.ics'))
+    ap.add_argument('--output',type=Path,default=Path('docs/events.ics'))
     args=ap.parse_args()
     doc=json.loads(args.input.read_text(encoding='utf-8'))
     events=doc.get('events',[])
