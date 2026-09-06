@@ -1,3 +1,6 @@
+---
+description: "Solos smart-glasses lineage spanning early see-through sport HUD generations and the later display-free AirGo family, with purchaser-history and architecture boundaries."
+---
 # Solos Smart-Glasses Lineage
 
 **Whole-manufacturer audit:** 2026-09-05  

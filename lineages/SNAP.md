@@ -1,3 +1,6 @@
+---
+description: "Snap Spectacles lineage from consumer camera glasses through developer AR generations and the 2026 SPECS consumer spatial-computing generation."
+---
 # Snap Spectacles Lineage
 
 **Whole-manufacturer audit:** 2026-09-05  
