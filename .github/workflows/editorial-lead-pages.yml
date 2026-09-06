@@ -1,15 +1,21 @@
-name: Publish editorial lead
+name: Publish newsroom content
 
 on:
   push:
     branches: [main]
     paths:
       - data/editorial-lead.json
+      - data/verified-changes.json
+      - docs/RESEARCH_NEWS.md
+      - docs/news/articles/**
       - .github/workflows/editorial-lead-pages.yml
   pull_request:
     branches: [main]
     paths:
       - data/editorial-lead.json
+      - data/verified-changes.json
+      - docs/RESEARCH_NEWS.md
+      - docs/news/articles/**
       - .github/workflows/editorial-lead-pages.yml
   workflow_dispatch:
 
@@ -19,7 +25,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: editorial-lead-pages
+  group: bounded-newsroom-pages
   cancel-in-progress: true
 
 jobs:
@@ -39,7 +45,13 @@ jobs:
       - name: Install documentation dependencies
         run: pip install -r requirements-docs.txt
 
-      - name: Validate editorial lead contract
+      - name: Enforce verified-news promotion boundaries
+        run: |
+          python scripts/verified_changes.py
+          python scripts/verify_news_promotion.py --self-test
+          python scripts/audit_public_editorial.py
+
+      - name: Validate newsroom state contract
         run: |
           python scripts/build_newsroom_state.py \
             --changes data/verified-changes.json \
@@ -57,7 +69,7 @@ jobs:
               assert lead.get('title') == config.get('title')
               assert lead.get('url') == config.get('url')
               assert lead.get('review_status') == 'editorially_reviewed_external'
-          print(f"Editorial lead contract verified: {lead.get('source_label') or lead.get('event_id')}")
+          print(f"Newsroom state verified; lead={lead.get('source_label') or lead.get('event_id')}")
           PY
 
       - name: Configure GitHub Pages
@@ -73,14 +85,10 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          config = json.loads(Path('data/editorial-lead.json').read_text(encoding='utf-8'))
-          state = json.loads(Path('.site-src/data/newsroom-state.json').read_text(encoding='utf-8'))
-          lead = state.get('lead') or {}
-          if config.get('enabled'):
-              assert lead.get('title') == config.get('title')
-              assert lead.get('url') == config.get('url')
-              assert lead.get('lead_mode') == 'editorial_pin'
-          print('Staged newsroom state matches editorial content record')
+          expected = json.loads(Path('/tmp/newsroom-state.json').read_text(encoding='utf-8'))
+          staged = json.loads(Path('.site-src/data/newsroom-state.json').read_text(encoding='utf-8'))
+          assert staged == expected
+          print('Staged newsroom state matches canonical newsroom records')
           PY
 
       - name: Build site
@@ -101,27 +109,23 @@ jobs:
               'run_id': os.environ['GITHUB_RUN_ID'],
               'run_number': os.environ['GITHUB_RUN_NUMBER'],
               'event_name': os.environ['GITHUB_EVENT_NAME'],
-              'deployment_lane': 'editorial_lead',
+              'deployment_lane': 'bounded_newsroom',
           }
           Path('site/deployment.json').write_text(json.dumps(payload, indent=2) + '\n', encoding='utf-8')
           Path('site/deployment.txt').write_text(payload['sha'] + '\n', encoding='utf-8')
           PY
 
-      - name: Verify built editorial state
+      - name: Verify built newsroom state
         run: |
           test -s site/data/newsroom-state.json
           python scripts/verify_newsroom_state.py --state site/data/newsroom-state.json
           python - <<'PY'
           import json
           from pathlib import Path
-          config = json.loads(Path('data/editorial-lead.json').read_text(encoding='utf-8'))
-          state = json.loads(Path('site/data/newsroom-state.json').read_text(encoding='utf-8'))
-          lead = state.get('lead') or {}
-          if config.get('enabled'):
-              assert lead.get('title') == config.get('title')
-              assert lead.get('url') == config.get('url')
-              assert lead.get('lead_mode') == 'editorial_pin'
-          print('Built editorial state verified')
+          expected = json.loads(Path('/tmp/newsroom-state.json').read_text(encoding='utf-8'))
+          built = json.loads(Path('site/data/newsroom-state.json').read_text(encoding='utf-8'))
+          assert built == expected
+          print('Built newsroom state matches canonical newsroom records')
           PY
 
       - name: Upload Pages artifact
@@ -141,16 +145,24 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Deploy editorial update
+      - name: Build expected newsroom state
+        run: |
+          python scripts/build_newsroom_state.py \
+            --changes data/verified-changes.json \
+            --editorial-lead data/editorial-lead.json \
+            --output /tmp/expected-newsroom.json
+          python scripts/verify_newsroom_state.py --state /tmp/expected-newsroom.json
+
+      - name: Deploy newsroom update
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Verify live editorial lead
+      - name: Verify live newsroom state
         shell: bash
         run: |
           set -euo pipefail
           for attempt in $(seq 1 12); do
-            bust="lead=${GITHUB_SHA}-${GITHUB_RUN_ID}-${attempt}"
+            bust="newsroom=${GITHUB_SHA}-${GITHUB_RUN_ID}-${attempt}"
             if curl --fail --silent --show-error --location --max-time 20 \
               -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
               "https://glassesresearch.org/data/newsroom-state.json?${bust}" -o /tmp/live-newsroom.json \
@@ -159,23 +171,19 @@ jobs:
               "https://glassesresearch.org/deployment.json?${bust}" -o /tmp/live-deployment.json \
               && python - <<'PY'
           import json, os
-          from pathlib import Path
-          config = json.loads(Path('data/editorial-lead.json').read_text(encoding='utf-8'))
-          state = json.load(open('/tmp/live-newsroom.json', encoding='utf-8'))
+          expected = json.load(open('/tmp/expected-newsroom.json', encoding='utf-8'))
+          live = json.load(open('/tmp/live-newsroom.json', encoding='utf-8'))
           deployment = json.load(open('/tmp/live-deployment.json', encoding='utf-8'))
-          lead = state.get('lead') or {}
           assert deployment.get('sha') == os.environ['GITHUB_SHA']
-          if config.get('enabled'):
-              assert lead.get('title') == config.get('title')
-              assert lead.get('url') == config.get('url')
-              assert lead.get('lead_mode') == 'editorial_pin'
-              assert lead.get('review_status') == 'editorially_reviewed_external'
-          print(f"Live editorial lead verified: {lead.get('source_label') or lead.get('event_id')}")
+          assert deployment.get('deployment_lane') == 'bounded_newsroom'
+          assert live == expected
+          lead = live.get('lead') or {}
+          print(f"Live newsroom verified; lead={lead.get('source_label') or lead.get('event_id')}")
           PY
             then
               exit 0
             fi
             sleep 10
           done
-          echo 'Live editorial lead did not converge to the requested state' >&2
+          echo 'Live newsroom did not converge to the requested canonical state' >&2
           exit 1
