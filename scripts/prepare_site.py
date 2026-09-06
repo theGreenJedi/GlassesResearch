@@ -51,6 +51,7 @@ def main():
     run(ROOT/"scripts/build_site_status.py","--devices",database,"--report-cards",cards,"--output",DEST/"data/site-status.json","--homepage",DEST/"index.md")
     run(ROOT/"scripts/build_purchase_fallbacks.py","--models",ROOT/"models/THE_LIST.md","--curated",ROOT/"data/purchase-sources.json","--output",DEST/"data/purchase-fallbacks.json")
     run(ROOT/"scripts/build_model_pages.py","--data-dir",DEST/"data","--output-root",DEST)
+    run(ROOT/"scripts/build_acquisition_surfaces.py","--devices",database,"--purchase-sources",ROOT/"data/purchase-sources.json","--health",ROOT/"data/purchase-link-health.json","--second-life",ROOT/"data/second-life.json","--site-root",DEST,"--output",DEST/"data/acquisition-index.json","--coverage",DEST/"docs/ACQUISITION_COVERAGE.md")
     run(ROOT/"scripts/build_gls_resolver.py","--devices",database,"--output-root",DEST)
     run(ROOT/"scripts/build_citation_distribution.py","--devices",database,"--scores",cards,"--output-root",DEST)
     catalog_index=DEST/"models"/"catalog"/"index.md"

@@ -1,0 +1,25 @@
+name: Acquisition contract
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/build_acquisition_surfaces.py'
+      - 'scripts/test_acquisition_surfaces.py'
+      - 'scripts/prepare_site.py'
+      - '.github/workflows/acquisition-contract.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_acquisition_surfaces.py'
+      - 'scripts/test_acquisition_surfaces.py'
+      - 'scripts/prepare_site.py'
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/test_acquisition_surfaces.py
