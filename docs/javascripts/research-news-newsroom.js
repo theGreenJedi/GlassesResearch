@@ -166,81 +166,20 @@
         if (ageHours !== null && ageHours > 48) freshness.classList.add("is-stale");
       }
 
+      const externalEditorialLead = state.lead.change_type === "editorially_reviewed_external";
+      const leadPublisher = state.lead.publisher || state.lead.source || "original publisher";
+      const leadCta = externalEditorialLead ? `Read the original at ${escapeHtml(leadPublisher)} →` : "Read the research →";
+      const leadRel = externalEditorialLead ? ' rel="noopener"' : "";
+
       lead.hidden = false;
       lead.innerHTML = `
         <div class="gr-newsroom-kicker">Lead development</div>
-        <a class="gr-newsroom-lead-card" href="${escapeHtml(state.lead.url)}">
+        <a class="gr-newsroom-lead-card" href="${escapeHtml(state.lead.url)}"${leadRel}>
           <span class="gr-newsroom-date">${escapeHtml(displayDate(state.lead.published_at))} · ${escapeHtml(state.lead.change_type.replaceAll("_", " "))}</span>
           <strong>${escapeHtml(state.lead.title)}</strong>
           <span>${escapeHtml(state.lead.summary)}</span>
-          <em>Go deeper →</em>
+          <em>${leadCta}</em>
         </a>
       `;
 
       if (latestGrid) latestGrid.innerHTML = state.latest.slice(0, 6).map(renderStoryCard).join("");
-      latestHeading?.classList.add("gr-newsroom-enhanced-hide");
-      latestTable?.classList.add("gr-newsroom-enhanced-hide");
-
-      if (Array.isArray(state.convergence) && state.convergence.length) {
-        convergence.hidden = false;
-        const cards = state.convergence.slice(0, 4).map((theme) => {
-          const supporting = (theme.stories || []).slice(0, 2).map((story) =>
-            `<a href="${escapeHtml(story.url)}">${escapeHtml(story.title)}</a>`
-          ).join("<span aria-hidden=\"true\"> · </span>");
-          return `
-            <article class="gr-convergence-card">
-              <div class="gr-signal-row"><span>${escapeHtml(theme.kind)}</span><strong>${escapeHtml(theme.label)}</strong></div>
-              <h3>${escapeHtml(theme.story_count)} verified story signals across ${escapeHtml(theme.independent_source_hosts)} source families</h3>
-              <p class="gr-convergence-links">${supporting}</p>
-            </article>
-          `;
-        }).join("");
-        convergence.innerHTML = `
-          <div class="gr-newsroom-section-head">
-            <div><div class="gr-newsroom-kicker">Convergence radar</div><h2>Where independent signals are beginning to agree</h2></div>
-            <p>Convergence requires multiple verified story signals and multiple source families. Rewrites of one source do not manufacture momentum.</p>
-          </div>
-          <div class="gr-convergence-grid">${cards}</div>
-        `;
-      }
-    })
-    .catch(() => {
-      const freshness = hero.querySelector("[data-newsroom-freshness]");
-      if (freshness) freshness.textContent = "Verified newsroom state unavailable · showing published-page fallback";
-      renderTableFallback();
-    });
-
-  const loadWireState = async () => {
-    // Prefer the live Worker-backed wire when it actually has stories. A valid but
-    // empty legacy response must not mask the independently refreshed search feed.
-    let emptyState = null;
-    for (const endpoint of ["/wire", "/data/wire-state.json"]) {
-      try {
-        const response = await fetch(endpoint, { credentials: "same-origin" });
-        if (!response.ok) continue;
-        const state = await response.json();
-        if (state?.schema_version === 1 && Array.isArray(state.items)) {
-          if (state.items.length) return state;
-          emptyState ??= state;
-        }
-      } catch {
-        // Try the next read-only source.
-      }
-    }
-    if (emptyState) return emptyState;
-    throw new Error("wire state unavailable");
-  };
-
-  loadWireState()
-    .then((state) => {
-      const items = state.items
-        .filter((item) => item && ["reported", "under_review"].includes(item.status) && item.title && item.url)
-        .slice(0, 12);
-      if (!items.length || !wireList) return;
-      wireList.innerHTML = items.map(renderWireItem).join("");
-      wire.hidden = false;
-    })
-    .catch(() => {
-      wire.hidden = true;
-    });
-})();
