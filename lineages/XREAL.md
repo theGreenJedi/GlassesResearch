@@ -1,3 +1,6 @@
+---
+description: "XREAL and Nreal smart-glasses lineage covering Light, Air, One and 1S generations, ROG XREAL R1, architecture branches, accessories, and completeness findings."
+---
 # XREAL / Nreal Lineage
 
 **Whole-manufacturer audit:** 2026-09-05  

@@ -1,3 +1,6 @@
+---
+description: "Meta smart-glasses lineage across Ray-Ban, Oakley, and Meta-branded eyewear, with canonical generations, style boundaries, completeness findings, and evidence links."
+---
 # Meta Smart-Glasses Lineage
 
 **Whole-manufacturer audit:** 2026-09-05  
