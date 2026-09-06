@@ -1,35 +1,46 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-06T19:17:09.398736+00:00",
-  "candidate_count": 19,
-  "classifier_irrelevant_count": 9,
+  "discovered_utc": "2026-09-06T19:26:35.051790+00:00",
+  "candidate_count": 70,
+  "classifier_irrelevant_count": 14,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 12,
-    "broad_web": 9,
-    "community": 1,
-    "developer": 1,
-    "research": 2
+    "adjacent": 54,
+    "broad_web": 16,
+    "retail": 1
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 10,
+    "adjacent": 54,
     "speculative": 0,
-    "irrelevant": 9
+    "irrelevant": 14
   },
   "type_counts": {
-    "news": 8,
-    "tool": 4,
-    "hack": 1,
-    "retail": 1,
-    "community": 6
+    "model": 4,
+    "review": 10,
+    "video": 4,
+    "news": 28,
+    "research": 1,
+    "tool": 13,
+    "sdk": 1,
+    "hack": 5,
+    "policy": 1,
+    "retail": 16,
+    "teardown": 1,
+    "community": 2
   },
   "routing_counts": {
-    "adjacent_radar": 10,
-    "development_hacking": 3,
-    "reject_noise": 9,
-    "research_news_review": 10
+    "adjacent_radar": 54,
+    "community_evidence_review": 2,
+    "deep_research": 1,
+    "development_hacking": 16,
+    "model_catalog_review": 4,
+    "policy_privacy": 1,
+    "reject_noise": 14,
+    "report_card_evidence": 11,
+    "research_news_review": 56,
+    "retail_rebrand_review": 16
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -43,26 +54,407 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "0aea2778dacbd41e",
-      "title": "How to Check External, USB Flash Drive, and Memory Cards for Errors or ...",
-      "url": "https://support-en.sandisk.com/app/answers/detailweb/a_id/34259/~/how-to-check-external%2C-usb-flash-drive%2C-and-memory-cards-for-errors-or-failure",
-      "summary": "Steps to Check Drives and Memory Cards for Errors or Failures on Windows and macOS . Download, Install, Test Drive, and Update Firmware Using SANDISK Dashboard . How to Access and Use Disk Management on Windows . Learn About Using Windows CHKDSK on an Internal SSD .",
+      "id": "23c600fcb8f1d2f6",
+      "title": "AI Glasses for Frontline Workers | Mentra",
+      "url": "https://mentraglass.com/",
+      "summary": "Read article→ “Open source means inherently more permissive than other glasses in the space. Read article→ MentraOS is open source. Mentra provides application and deployment support directly to our customers, and for those looking to build their own apps, MentraOS has an open source SDK.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "open source",
+        "sdk"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, mentra",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "96e2ab9c9598bca1",
+      "title": "Open Source Smart Glasses - DIY AR - YouTube",
+      "url": "https://m.youtube.com/watch?v=PwmGNWkpKW8",
+      "summary": "Watch the journey to develop a prototype Open Source Smart Glasses, an early version of fully DIY AR glasses. Designed by Cayden Pierce and Team Open Smart G...",
+      "discovery_channel": "broad_web+retail",
+      "query": "open source smart glasses; titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "open source"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "video",
+        "research",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "development_hacking",
+        "deep_research"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8e786454369eb0f4",
+      "title": "Buffalo NY Real Estate - Buffalo NY Homes For Sale | Zillow",
+      "url": "https://www.zillow.com/buffalo-ny/",
+      "summary": "Zillow has 1484 homes for sale in Buffalo NY. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "firmware"
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cf9035d66ed4e267",
+      "title": "Cincinnati OH Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/cincinnati-oh/",
+      "summary": "Zillow has 1449 homes for sale in Cincinnati OH. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d5bcaaa6bb29651b",
+      "title": "Corpus Christi TX Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/corpus-christi-tx/",
+      "summary": "Zillow has 2701 homes for sale in Corpus Christi TX. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4998ea4ef0798ea",
+      "title": "Fort Worth TX Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/fort-worth-tx/",
+      "summary": "Zillow has 4095 homes for sale in Fort Worth TX. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "93ddaa8816bd4a7e",
+      "title": "Franklin TN Real Estate - Franklin TN Homes For Sale | Zillow",
+      "url": "https://www.zillow.com/franklin-tn/",
+      "summary": "Zillow has 942 homes for sale in Franklin TN. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dcf37b756bcf2c20",
+      "title": "Greensboro NC Real Estate - Greensboro NC Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/greensboro-nc/",
+      "summary": "Zillow has 1251 homes for sale in Greensboro NC. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ad0b9c5e9f4bba37",
+      "title": "Inter | Adobe Fonts",
+      "url": "https://fonts.adobe.com/fonts/inter",
+      "summary": "Google Fonts collaborates with type designers, foundries and the design community worldwide to create a directory of open source fonts. The fonts are free to use, making beautiful type accessible to anyone for any project.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "open source"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
         "tool",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4045fb322dff7917",
+      "title": "Myrtle Beach SC Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/myrtle-beach-sc/",
+      "summary": "Zillow has 3068 homes for sale in Myrtle Beach SC. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "021ee8da4563bfd8",
+      "title": "Ocala FL Real Estate - Ocala FL Homes For Sale | Zillow",
+      "url": "https://www.zillow.com/ocala-fl/",
+      "summary": "Zillow has 4464 homes for sale in Ocala FL. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8cdc96bc0e94b12e",
+      "title": "PR Real Estate - Puerto Rico Homes For Sale | Zillow",
+      "url": "https://www.zillow.com/pr/",
+      "summary": "Zillow has 3663 homes for sale in Puerto Rico. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d3db16c7780905ae",
+      "title": "8 health benefits of maca root - Medical News Today",
+      "url": "https://www.medicalnewstoday.com/articles/322511",
+      "summary": "Maca is a Peruvian plant that may have health benefits, such as boosting libido, energy, fertility, or improving mood. However, the evidence so far is limited. Maca originates in the Andes...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
         "hack"
       ],
-      "primary_type": "tool",
+      "primary_type": "hack",
       "routing_targets": [
         "research_news_review",
         "development_hacking",
@@ -74,12 +466,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "64223795b35c782f",
-      "title": "13 Free HDD Test Tools for 2026 - Lifewire",
-      "url": "https://www.lifewire.com/free-hard-drive-testing-programs-2626183",
-      "summary": "HD Tune is a Windows-based hard drive tester compatible with any internal or external hard drive, SSD, or memory card. You can run a benchmark read test with HD Tune, check the health status with Self-Monitoring Analysis and Reporting Technology, and run an error scan.",
+      "id": "d96efe0edb341ee2",
+      "title": "A-OTF UD Shin Go Pr6N | Adobe Fonts",
+      "url": "https://fonts.adobe.com/fonts/a-otf-ud-shin-go-pr6n",
+      "summary": "UD Shin Go is a universal design sans-serif typeface based on Shin Go, a widely popular type for its excellent legibility. The letterforms of UD Shin Go are also optimized to improve legibility, and for alphanumerics the highly legible Latin typeface ClearTone SG is employed. The type is particularly suitable for use in settings where clear and well-ordered design is desired, such as for ...",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -101,10 +493,263 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0f17f9d69d38682e",
-      "title": "9 Ways to Test Real Drive Capacity (and Spot a Fake) - MUO",
-      "url": "https://www.makeuseof.com/ways-to-test-real-drive-capacity-spot-a-fake/",
-      "summary": "Based on how the drive you're using might be displaying a fake capacity, you can either use the Disk Management tool to check the actual drive capacity or erase the primary partition and rewrite it to reveal the true capacity.",
+      "id": "ace6232eb904a6f8",
+      "title": "About | Adobe Fonts",
+      "url": "https://fonts.adobe.com/about",
+      "summary": "Fonts can be used on desktops, websites, and in Adobe mobile apps. esktop Design with Adobe Fonts in all of your Adobe desktop applications. With Adobe Fonts Pro, you can even use fonts in third party software. obile Adobe Fonts is integrated into most Adobe mobile applications. Browse and use any fonts you need right from the font menu. eb",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b3474e959396373f",
+      "title": "Adobe Fonts | Explore unlimited fonts",
+      "url": "https://fonts.adobe.com/",
+      "summary": "Adobe Fonts partners with the world’s leading type foundries to bring thousands of beautiful fonts to designers every day. No need to worry about licensing, and you can use fonts from Adobe Fonts on the web or in desktop applications.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4caf478d261b6b7d",
+      "title": "Aktiv Grotesk | Adobe Fonts",
+      "url": "https://fonts.adobe.com/fonts/aktiv-grotesk",
+      "summary": "Dalton Maag is a typeface design studio founded in 1991. We work with designers and branding specialists worldwide to help everyone find their best typographic expression – from logotype refinement and font licensing, to the creation of custom font suites. While we are best known for our custom projects, our retail font library is diverse and growing. We bring the same high standards to ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "15e621fdad9c79df",
+      "title": "All the 2026 TV Show Premiere Dates to Add to Your Calendar",
+      "url": "https://www.hollywoodreporter.com/lists/2026-tv-premiere-dates-calendar/",
+      "summary": "Keep track of the hundreds of TV show premiere dates in 2026 with The Hollywood Reporter’s frequently updated calendar.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e52c73013487316e",
+      "title": "Amazon Jobs: Competitive Pay, Paid Time Off & Benefits",
+      "url": "https://hiring.amazon.com/",
+      "summary": "Get a competitive wage, holiday overtime pay, and even paid time off. Apply now and get a job offer with benefits today.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a1a1f9433e8df14",
+      "title": "Amazon Sign-In",
+      "url": "https://sellercentral.amazon.com/gp/homepage.html",
+      "summary": "Sign in to your Amazon Seller Central account to manage your sales and access resources for successful selling.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bf5f737be817299a",
+      "title": "Amazon Work From Home & Remote Jobs - Amazon Jobs",
+      "url": "https://hiring.amazon.com/job-opportunities/work-from-home-jobs",
+      "summary": "While most of Amazon’s hourly job opportunities require being at a local Amazon facility, there are some jobs roles in customer service and corporate that offer partial remote or work from home potential.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "20e9908f44aee9f1",
+      "title": "Amazon.com Associates Central",
+      "url": "https://affiliate-program.amazon.com/",
+      "summary": "The Amazon Associates Program helps content creators, publishers and bloggers monetize their traffic. With millions of products and programs available on Amazon, associates use easy link-building tools to direct their audience to their recommendations, and earn from qualifying purchases and programs.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d755a0e84bea59f5",
+      "title": "Amazon.com en espanol. Gasta menos. Sonríe más.",
+      "url": "https://www.amazon.com/-/es/",
+      "summary": "Envíos gratis en millones de productos. Consigue lo mejor en compras y entretenimiento con Prime. Disfruta de precios bajos y grandes ofertas en la mayor selección de artículos básicos para el día a día y otros productos, incluyendo moda, hogar, belleza, electrónica, dispositivos Alexa, artículos deportivos, juguetes, automóvil, mascotas, bebé, libros, videojuegos, instrumentos ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "591763c2962ee26b",
+      "title": "BandLab",
+      "url": "https://accounts.bandlab.com/birthday-form",
+      "summary": "The cloud platform where musicians and fans create music, collaborate and engage with each other across the globe.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -129,10 +774,65 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c85b4c4b678123df",
-      "title": "How to Check External Drive for Errors or Failure using Windows ...",
-      "url": "https://support-en.wd.com/app/answers/detailweb/a_id/34259/~/how-to-check-external-drive-for-errors-or-failure-using-windows-diagnostic",
-      "summary": "Press the Windows Key. Type Disk Management. Click Create and format disk partitions. Choose the drive to check for errors. Drive status may show Unknown, Not Initialized, Raw, Offline, Online or Unallocated. Right-clickthe part of the drive in the red box. Click Properties.",
+      "id": "2e121ba36a31a1a0",
+      "title": "BandLab (@bandlab) • BandLab - Make Music Online",
+      "url": "https://www.bandlab.com/bandlab",
+      "summary": "Here to help you crush it on BandLab 🥊 Come through for production tips, tutorials, and helpful content to fire up your creator journey 🔥 🔗 lnk.bio/bandlab. Talents.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "657b5765736ffa76",
+      "title": "BandLab - Make Music Online",
+      "url": "https://www.bandlab.com/",
+      "summary": "Make music anytime, anywhere. Connect with millions. Release your tracks and engage with fans — keep 100% of your earnings. Get Started. @lawdpop. As seen in. Music creation for all. Record, mix and collaborate on your music projects from start to finish with our best-in-class and 100% free Studio. 4.7 ・ 495K Ratings. 4.5 ・ 819K Ratings.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77660ea66e619a10",
+      "title": "BandLab for Education | FREE Award-Winning Education Platform",
+      "url": "https://edu.bandlab.com/",
+      "summary": "Awarded by a panel of music educators at NAMM, BandLab was recognized for its huge potential for educators and students to enjoy music creation and collaborative learning. Bring BandLab to your classrooms.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -157,10 +857,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f4d33abe84a2c887",
-      "title": "How to Check External Hard Drive Health on Windows 10/11 ... - EaseUS",
-      "url": "https://www.easeus.com/partition-master/check-external-hard-drive-health.html",
-      "summary": "This article gives two detailed ways to help check external hard drive health on Windows 10/11 and covers a professional hard drive health monitor.",
+      "id": "eb9828ac48a11516",
+      "title": "BandLab for Education | Log in",
+      "url": "https://edu.bandlab.com/login",
+      "summary": "Our award-winning platform empowers schools, institutions, teachers and students with essential workflow, classroom and assignment features for music education. Works on Chromebooks, Macs, Windows or any device. Sign up for free today!",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b71cd0e80e5d2fc",
+      "title": "BandLab | FREE Online DAW & Award-Winning Features",
+      "url": "https://www.bandlab.com/creation-features",
+      "summary": "BandLab Studio is your personal space to create – collaboratively with your friends or by yourself. Endless instruments, sounds, and effects are all at your fingertips.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -184,10 +912,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7f6325837efbd741",
-      "title": "How to Check External Hard Drive Health on Windows 10/11 [Quick Ways]",
-      "url": "https://www.idiskhome.com/resource/partition-master/check-external-hard-drive-health.shtml",
-      "summary": "Here's a one-paragraph summary: If your external hard drive is not spinning up, not showing up on your computer, or has a bad sector, you can try checking its health using built-in tools like Disk Utility on Mac or the Check Disk utility on Windows.",
+      "id": "d6fc66b3d1e24082",
+      "title": "BandLab: Free Online Mastering",
+      "url": "https://get-bandlab.app.link/reid-stefan-mastering",
+      "summary": "The cloud platform where musicians and fans create music, collaborate, and engage with each other across the globe.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "83cf006da3a0b227",
+      "title": "BandLab: Music Maker & Studio - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.bandlab.bandlab&hl=en-US",
+      "summary": "• Sequence your grooves with pre-loaded drum kits on Drum Machine • Kickstart your beat with genre-diverse packs on Looper • Download fully-produced type BandLab Beats for free, with higher claim...",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -211,10 +967,92 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1c23edeb778b096e",
-      "title": "How To Check Storage On External Hard Drive - Robots.net",
-      "url": "https://robots.net/tech/how-to-check-storage-on-external-hard-drive/",
-      "summary": "In this guide, we will explore several methods for checking the storage on an external hard drive, depending on whether you are using a Windows or Mac operating system.",
+      "id": "e55ceabbb1d8ab21",
+      "title": "Baskerville PT | Adobe Fonts",
+      "url": "https://fonts.adobe.com/fonts/baskerville-pt",
+      "summary": "Paratype also creates custom fonts and provides font mastering services. Visit foundry page Licensing Information The full Adobe Fonts library is cleared for both personal and commercial use. As with everything from Adobe Fonts, you can use these fonts for: Design Projects Create images or vector artwork, including logos",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c1fa4ec8ab8ea3a",
+      "title": "Browse Font Packs | Adobe Fonts",
+      "url": "https://fonts.adobe.com/collections",
+      "summary": "Explore expertly-curated font packs for any occasion, assembled by the Adobe Fonts team from our font collections.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fb5fc0a3e8dd8740",
+      "title": "Discover the 10 Best Small Towns Near Jacksonville FL - 2026 Update",
+      "url": "https://www.strategistico.com/small-towns-near-jacksonville-fl/",
+      "summary": "We found the best small towns near Jacksonville FL for those looking for some quick escapes into small-town charm without venturing too far from Jacksonville. There are some absolutely wild places within an hour of the city that deliver just the right mix of beautiful, and offbeat experiences.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f07c5be9ab607390",
+      "title": "Download BandLab for your device",
+      "url": "https://www.bandlab.com/download",
+      "summary": "BandLab Studio offers a diverse range of effects and presets that you can use to mix your tracks to professional standards. Plus, we offer a free online mastering service with presets designed by Grammy-winning engineers.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -238,12 +1076,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5632ffa456195afa",
-      "title": "How to check what Hard Drive you have on Windows 11",
-      "url": "https://www.thewindowsclub.com/how-to-check-what-hard-drive-you-have-on-windows-10",
-      "summary": "How can I check the Specifications and RPM of the Hard Drive of my Windows computer? These are some of the questions we will try to answer using built-in solutions and free software...",
+      "id": "0366b164ca09f98f",
+      "title": "Inside Elections – Nonpartisan Analysis Since 1980",
+      "url": "https://insideelections.com/",
+      "summary": "Nonpartisan Analysis Since 1980 A subscription to Inside Elections includes the biweekly newsletter with analysis on key races, full access to race and candidate pages as well as more than two decades of archives. There are individual subscriptions as well as group packages that are used by top association and corporate PACs around the country.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c379597e99c57644",
+      "title": "Jayne Mansfield - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jayne_Mansfield",
+      "summary": "Jayne Mansfield(born Vera Jayne Palmer; April 19, 1933 – June 29, 1967) was an American actress, PlayboyPlaymate, and singer. Mansfield was a sex symbolof the 1950s and early 1960s, and was known for her numerous publicity stunts, her buxom figure, and her personal life.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -265,12 +1131,96 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9218a87dc2bcdfbd",
-      "title": "How to Run CHKDSK on External Hard/USB Drive - MiniTool",
-      "url": "https://www.minitool.com/news/run-chkdsk-on-external-drive.html",
-      "summary": "Detailed guide for how to run CHKDSK on external hard drive or USB drive in Windows 10. Also learn how to recover data from external hard drive or USB drive.",
+      "id": "088f710655b12d43",
+      "title": "Lepidium meyenii - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Lepidium_meyenii",
+      "summary": "Lepidium meyenii - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. Current events. Random article. About Wikipedia. Contact us. Contribute . Help. Learn to edit. Community portal. Recent changes. Upload file. Special pages. Search. Appearance. Donate. Create account. Log in. Personal tools. Donate.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d2d32ec0d5b3319",
+      "title": "Log in - BandLab",
+      "url": "https://www.bandlab.com/login",
+      "summary": "The cloud platform where musicians and fans create music, collaborate, and engage with each other across the globe.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64018f10076238be",
+      "title": "Louisiana - 4th Circuit Court of Appeal",
+      "url": "https://la4th.org/Schedule.aspx",
+      "summary": "CUSACHS vs. STATE OF LOUISIANA, ET AL.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7952381efb08c340",
+      "title": "Louisiana Obituaries - echovita.com",
+      "url": "https://www.echovita.com/us/obituaries/la",
+      "summary": "Search Louisiana recent obituaries and death notices. Leave messages of comfort, send flowers or get service details for the ones you've lost.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -292,12 +1242,96 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f97fed0c530ee2b4",
-      "title": "Is Your External Hard Drive Working Properly? Here's How to Check",
-      "url": "https://thetechylife.com/how-do-you-check-if-an-external-hard-drive-is-working/",
-      "summary": "Checking if an external hard drive is working properly is a crucial step in ensuring your data is safe and secure. By following the steps outlined in this article, you can identify any issues with your external hard drive and take corrective action to resolve them.",
+      "id": "3d688a0abef5e38e",
+      "title": "Maca Root Benefits, Nutrition, Dosage and Side Effects - Dr. Axe",
+      "url": "https://draxe.com/nutrition/maca-root-benefits/",
+      "summary": "Maca root powder is considered a superfoods and may benefit hormone balance, energy, mood, sexual function and more. Learn how much to take, side effects and more.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "hack"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cf31a904a2360a62",
+      "title": "Maca Root Uses, Benefits, and Side Effects - Healthline",
+      "url": "https://www.healthline.com/nutrition/benefits-of-maca-root",
+      "summary": "In the last few decades, maca has grown in popularity. This article explains what maca root is, highlights some potential benefits, and answers whether it’s safe to add to your diet.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "hack"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b05a28c82d00bc52",
+      "title": "Maca Root:16 Benefits, Nutrition, Side Effects and How to Eat",
+      "url": "https://naturalremedyideas.com/maca-root/",
+      "summary": "Maca is a root vegetable from Peru, while matcha is powdered green tea leaves from Japan. They have different tastes, nutrient profiles, and effects on the body.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "hack"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c5f281fa85279a98",
+      "title": "Maca Uses, Benefits & Dosage - Drugs.com",
+      "url": "https://www.drugs.com/npp/maca.html",
+      "summary": "Learn about the potential benefits of Maca including contraindications, adverse reactions, toxicology, pharmacology and historical usage.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -319,12 +1353,314 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4501b3dc6190c321",
-      "title": "[US] Test your smarts [01-07-22] : r/MicrosoftRewards - Reddit",
-      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/ry3p3y/us_test_your_smarts_010722/",
-      "summary": "MembersOnline [US] Bing Homepage Quiz (01-01-2022) upvotes ·comments r/Lionbridge r/Lionbridge r/Lionbridge was created to share experiences of working from home for TELUS International (formerly Lionbridge). Thoroughly read the rules before creating any post.",
+      "id": "679e12d375e9f046",
+      "title": "Maca: 20 Benefits, Nutrition, Side Effects & How Much to Take",
+      "url": "https://myhealthopedia.com/maca-benefits-nutrition-side-effects-uses/",
+      "summary": "Maca is a powerful Peruvian superfood known for boosting energy, balancing hormones, improving fertility, and enhancing mood. Discover its nutrition facts, health benefits, side effects, how to eat it, and who should or shouldn’t consume Maca daily.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e37fdfaad6d51441",
+      "title": "Maca: Benefits, Side Effects, Safety Tips, Dosage, and More",
+      "url": "https://www.webmd.com/diet/health-benefits-maca",
+      "summary": "What Is Maca? Sometimes known as Peruvian ginseng, maca comes from the root of a plant that grows in the Andes. The native people of Peru have used maca as both food and medicine for...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "hack"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "46b0b87fed571107",
+      "title": "Maca: Overview, Uses, Side Effects, Precautions ... - WebMD",
+      "url": "https://www.webmd.com/vitamins-supplements/maca",
+      "summary": "Learn more about Maca uses, effectiveness, possible side effects, interactions, dosage, user ratings and products that contain Maca.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "201181102f9f14fc",
+      "title": "Museo Sans | Adobe Fonts",
+      "url": "https://fonts.adobe.com/fonts/museo-sans",
+      "summary": "Fonts like Museo Sans Similar to {{variation['original_font']['name']}} Museo Sans font pairings About Description Museo Sans is based on the well-known Museo. It is a sturdy, low contrast, geometric, highly legible sans serif typeface very well suited for any display and text use.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f8675b44140eb430",
+      "title": "Scopes trial - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Scopes_trial",
+      "summary": "Scopes was found guilty and was fined$100 (equivalent to $1908 in 2026), but the verdictwas overturned on a technicality. William Jennings Bryan, a three-time presidential candidate and former secretary of state, argued for the prosecution, while famed labor and criminal lawyer Clarence Darrowserved as the principal defense attorney for Scopes. The trial publicized the fundamentalist ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18450fa0b1beb56c",
+      "title": "Search Arrest Records Online for Charges and Case Status",
+      "url": "https://courtcasefinder.com/arrest-records",
+      "summary": "Search arrest records by name across multiple jurisdictions. Access charges, booking details, bond amounts, case status, and custody information instantly.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b4c55fc9473557e0",
+      "title": "Search | Adobe Fonts",
+      "url": "https://fonts.adobe.com/search",
+      "summary": "Search the Adobe Fonts library by name, foundry, designer, or keyword—or upload an image to match your type sample with visual search.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0c670e77ca219bc5",
+      "title": "Source Serif | Adobe Fonts",
+      "url": "https://fonts.adobe.com/fonts/source-serif",
+      "summary": "The Adobe Originals program started in 1989 as an in-house type foundry at Adobe, brought together to create original typefaces of exemplary design quality, technical fidelity, and aesthetic longevity. Today the Type team’s mission is to make sophisticated and even experimental typefaces that explore the possibilities of design and technology.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bcfcfe6106a1ba65",
+      "title": "The 10 Best Restaurants Near Me in Jacksonville ... - OpenTable",
+      "url": "https://www.opentable.com/nearby/restaurants-near-me-jacksonville-fl",
+      "summary": "Discover top restaurants near me in Jacksonville, Jacksonville / Northeast Florida on OpenTable. Browse real-time table availability, view updated menus, and read reviews from fellow diners. Reserve your spot now.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c3e5404b0192d593",
+      "title": "Welcome to Amazon Seller Central",
+      "url": "https://sellercentral.amazon.com/",
+      "summary": "The Amazon brand can help you attract and reach more customers. We were ranked the most trusted brand by US consumers in 2023. Sell with tools and programs that help you succeed It takes a lot to run a business. That’s why we provide every Professional seller with a full toolkit for listing, pricing, and promoting products.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b3372e5d9951659",
+      "title": "What Is Maca? A Complete Beginner’s Guide | The Maca Team",
+      "url": "https://www.themacateam.com/what-is-maca",
+      "summary": "Learn what maca is, how it’s traditionally used, the different types available, and how to choose the right maca for your routine. Start here.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18ecb5278b88405e",
+      "title": "AAPD | Find A PD",
+      "url": "https://www.aapd.org/publications/find-a-pd/",
+      "summary": "Journals Advertising Publications Advocacy Toggle expand sub-navigation items Grassroots Advocacy Legislative and Regulatory Issues AAPD PAC Advocacy Home> Publications Find a Pediatric Dentist American Academy of Pediatric Dentistry 211 East Chicago Avenue, Suite 1600 Chicago, IL 60611 (312) 337-2169",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -333,9 +1669,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -345,12 +1681,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "619a423457ada6b0",
-      "title": "Best method for these quizzes : r/MicrosoftRewards - Reddit",
-      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/g0okx7/best_method_for_these_quizzes/",
-      "summary": "A better method for some is opening a new Bing tab and logging out, finishing the quiz and recording answers, then logging back in and retaking the quiz. This is what I use.",
+      "id": "5b48dcfb538f6aea",
+      "title": "Best Pediatric Dental Websites of 2026 & What They Got Right",
+      "url": "https://delmain.co/blog/best-pediatric-dental-websites/",
+      "summary": "Pediatric dental website design pairs kid-friendly branding with parent-first function: clear navigation, authentic photos and video, helpful FAQs, and prominent online booking. The best pediatric dental websites reassure parents within seconds. They also rank well in local search and make scheduling a child’s first visit effortless on any device.",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -359,9 +1695,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "video"
       ],
-      "primary_type": "community",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -371,12 +1707,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1acb53a86dfd7cd3",
-      "title": "BingHomepageQuiz - Reddit",
-      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
-      "summary": "Microsoft Bing Homepage daily quiz questions and their answers",
+      "id": "c3abe02c08bfffcf",
+      "title": "Book in 2 Mins: Schedule Pediatric Dentist Appointment Orlando",
+      "url": "https://celebrationpediatricdentistry.com/schedule-appointment/",
+      "summary": "Ready for a brighter smile? It takes less than 2 minutes to schedule pediatric dentist appointment orlando at any of our three beautiful, state-of-the-art offices.",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -385,9 +1721,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -397,10 +1733,219 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "441b519bf192ec03",
-      "title": "Click2Houston | Houston News, Texas News, Weather, Sports ...",
-      "url": "https://www.click2houston.com/",
-      "summary": "KPRC 2’s new investigative series digs into Houston’s garbage fee, Texas school vouchers, the cost of the data center boom and more — starting Sept. 13.",
+      "id": "8b47285318c41050",
+      "title": "Camera Stores in Rhode Island - joeedelman.com",
+      "url": "https://www.joeedelman.com/camera-stores-in-rhode-island",
+      "summary": "Looking for camera stores in Rhode Island? Here is a list of local photography retailers offering gear, rentals, repairs, and expert advice across the state.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "198d7065b647ebce",
+      "title": "Cameras | Wirecutter",
+      "url": "https://www.nytimes.com/wirecutter/electronics/cameras/",
+      "summary": "If you want to buy the best camera, we've tested everything—from pocket-sized models to DSLRs and all kinds in between.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3d5e4ac4d445e66a",
+      "title": "Greater Houston Pediatric Dentistry | Board-Certified Dentists",
+      "url": "https://www.greaterhoustonpediatricdentistry.com/",
+      "summary": "Greater Houston Pediatric Dentistry is Houston's Top Choice for complete dental care for kids. Board-certified pediatric dentists provide compassionate care for infants through 17 years of age at our 4 convenient Houston locations. Request an appointment online today!",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5e36819dd2e431c",
+      "title": "Home - BrightSmiles",
+      "url": "https://brightsmilespediatricdentistry.com/",
+      "summary": "Our mission is to provide a long lasting dental home for all patients in an environment that is safe, trusting, nurturing, encouraging, organized, and clean. We strive to ensure patient and parent satisfaction by using scientifically proven behavior management strategies to ensure a positive and rewarding experience for children.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3373f6773023cb52",
+      "title": "Live Cams | WPRI.com",
+      "url": "https://www.wpri.com/live-cams/",
+      "summary": "LIVE camera streaming video views from around Rhode Island and Southeastern Massachusetts.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c36129cf78782c81",
+      "title": "Local News | WPRI.com",
+      "url": "https://www.wpri.com/news/local-news/",
+      "summary": "Watch: 12 News & WPRI 12+. How to get the WPRI 12+ TV App. Schedule: Local programs on 12+. The Last Don of Providence: A 12+ app exclusive. Live Cameras. WATCH: NEWSNATION LIVE. TV Schedules....",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3dafcea76e99c469",
+      "title": "Online Booking for Pediatric Dentistry | Breely",
+      "url": "https://www.breely.com/booking/pediatric-dentistry/",
+      "summary": "Breely streamlines your pediatric dentistry practice by seamlessly integrating appointment scheduling, patient management, and communication tools, all in one easy-to-use platform. Enhance your patient experience and optimize your operations, so you can focus on delivering exceptional care to your young patients.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4bf4ba50b6d901bc",
+      "title": "Pediatric Dentist Bothell, WA l Hello Kids Dentistry l 19020 ...",
+      "url": "https://www.hellokidsdentistry.com/",
+      "summary": "Hello Kids Dentistry is a pediatric dental practice providing comprehensive dental care for infants, children, and young adults in a warm, caring and child-friendly environment. We are proud to be serving children in the communities of Bothell, Woodinville, Kenmore, Mill Creek, Lynnwood, Kirkland, and surrounding areas.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0677a9b07bfc0a0c",
+      "title": "Providence News, Weather, Sports, Breaking News",
+      "url": "https://turnto10.com/",
+      "summary": "NBC 10 WJAR is the news, sports and weather leader for Providence, Rhode Island and surrounding communities, including Cranston, Pawtucket, Woonsocket, Warwick, Newport, Bristol and Narragansett...",
       "discovery_channel": "broad_web",
       "query": "new smart glasses 2026",
       "source": "Bing web RSS",
@@ -423,38 +1968,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8dc90a5a228416a7",
-      "title": "Login | Express Scripts Members",
-      "url": "https://www.express-scripts.com/login",
-      "summary": "Log in to your Express Scripts account to manage your prescriptions, order a refill, price a medication or view claim status.",
-      "discovery_channel": "adjacent+broad_web+research",
-      "query": "prescription smart glasses; prescription smart glasses lens research; prescription lens technology eyewear",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5d00056156c341af",
-      "title": "r/AskReddit on Reddit: People who use bing. Why?",
-      "url": "https://www.reddit.com/r/AskReddit/comments/80e4td/people_who_use_bing_why/",
-      "summary": "Bing, as a \"secondary\" search engine, is what people use to search for things they don't want in their Google autocomplete, which is 99% porn. This is also why it's presumably a terrible way to find cream pie recipes. Reply reply zyqkvx I used Bing to find cream pie recipes. Most of them were absolutely disgusting. Stick with Google.",
+      "id": "d69c6ae286e3fc23",
+      "title": "Rhode Island, SE Mass News & Weather | Providence, RI | WPRI.com",
+      "url": "https://www.wpri.com/",
+      "summary": "We deliver local Rhode Island and Southeastern Massachusetts news & weather stories, and we do what we do to make Providence, Warwick, Cranston, Fall River, New Bedford, Pawtucket, and Newport ...",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -463,9 +1982,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -475,38 +1994,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "855771875b57835e",
-      "title": "SMART Goals: An Expert’s Guide to Success — BiteSize Learning",
-      "url": "https://www.bitesizelearning.co.uk/resources/smart-goals-meaning-examples",
-      "summary": "SMART is an acronym that stands for Specific, Measurable, Achievable, Relevant, and Time-bound. The framework is a systematic and simple guide to goal setting that ensures the goals are clear, focused, and practical.",
-      "discovery_channel": "adjacent+broad_web+community+developer+research",
-      "query": "smart glasses review; smart glasses hands-on; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart contact lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "50afddf288a4eb5c",
-      "title": "Start home page daily quiz : r/MicrosoftRewards - Reddit",
-      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1bwl8ci/start_home_page_daily_quiz/",
-      "summary": "MembersOnline Biddy_Impeccadillo ADMIN MOD Start home page daily quiz Bing This is new to me and confusing because it’s not one of the tasks on the rewards dashboard. It’s three questions and I went through it twice because it still showed up after I completed it the first time.",
+      "id": "7b6d8dda3c0056e4",
+      "title": "Traffic Cameras - Metropolitan Providence - Rhode Island Rhode Island ...",
+      "url": "http://dot.ri.gov/travel/cameras_metro.php",
+      "summary": "Traffic Info & Cams. Statewide Travel Advisories. Statewide Truck and Bridge Restrictions. Detour Maps.",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -515,35 +2008,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c89583312673b2c8",
-      "title": "Tips/Tricks For a Friend : r/MicrosoftRewards - Reddit",
-      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/gkzzw9/tipstricks_for_a_friend/",
-      "summary": "Hello, everyone! My friend is going to begin using Microsoft Rewards and has asked for tips on the optimal way of gaining Rewards Points while using the service. I've told him my own, since I am the one who got him into it in the first place, but do you have any that he could use if I directed him towards this post? The tips I have given him are as follows: Install Bing and Game Pass Mobile on ...",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
