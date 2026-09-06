@@ -69,6 +69,7 @@ def main():
     run(ROOT/"scripts/build_community_reviews.py","--reviews",ROOT/"data/community-reviews.json","--reviewers",ROOT/"data/community-reviewers.json","--devices",database,"--lineage-index",lineage_index,"--summary-output",DEST/"data/community-review-summary.json","--profile-root",DEST/"contributors","--index-output",DEST/"docs/COMMUNITY_REVIEWERS.md")
     strip_public_infrastructure_narration()
     run(ROOT/"scripts/build_verified_change_surfaces.py","--site-root",DEST,"--changes",ROOT/"data/verified-changes.json")
+    run(ROOT/"scripts/feature_community_editorial.py","--site-root",DEST)
     newsroom_state=DEST/"data"/"newsroom-state.json"
     run(ROOT/"scripts/build_newsroom_state.py","--changes",ROOT/"data/verified-changes.json","--output",newsroom_state)
     run(ROOT/"scripts/build_verified_research_citations.py","--site-root",DEST,"--changes",ROOT/"data/verified-changes.json")
