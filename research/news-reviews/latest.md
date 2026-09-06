@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-06T08:57:57.057333+00:00`
+Generated: `2026-09-06T09:31:10.993259+00:00`
 
-- Intake files inspected: **152**
-- Candidates retained in this review window/history: **2207**
+- Intake files inspected: **154**
+- Candidates retained in this review window/history: **2243**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 1096
+- `adjacent_radar`: 1106
 - `catalog_review`: 2
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 273
-- `rejected_noise`: 738
-- `source_review`: 59
+- `rejected_noise`: 763
+- `source_review`: 60
 - `watching`: 35
 
 ## Action queue
@@ -26,6 +26,7 @@ Generated: `2026-09-06T08:57:57.057333+00:00`
 | high | needs_editorial_verification | direct | [China's Beifa AI Smart Glasses Launch on Makuake with Up to 38% Off - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE9qUnRrQW5DRFM4OWZtaDN5cWdMTGpYdzR4QVFtMURMdkxIWS01T1ZjR0FCc1did2NkczYwR0RPMG5JWk5sV0V0YzExaHpNakt5VFNOdkpTOVJBdXBMbURpUDdDemt2OERXUS1aZGhCRnViTmdkZWc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [HTC VIVE Eagle AI glasses launch in Australia for $799 - Digital Reviews Network](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQnZoSkRNZ2xlLXdBbjNFeTVnYmlPZV9teWNjYjJ2d3VzaXl0SlFuRDhTMnd6WXZla1N4VFZwYkNBYmlubXdrdU5UM2VGYVZSYWJEM196eU1DT3gwcl9nVDA4ZDlEdmZEYnQ3cHdSSF9tWnFxaU9MbDVzeGNlcnNNY0hZVWRxSV9v?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [HTC's VIVE Eagle camera glasses will launch in the U.S. in September - Stock Titan](https://news.google.com/rss/articles/CBMitgFBVV95cUxPeThRQ0U2X0dhY2dVVFVuYWxSVUVERUN5WnY1RzlOYWYySENTMWppd3FhYzdWZThLX2p6ZlVmTlkwbWNmUURUZHFXUFA2YzdCcDFydXFHc0hpdUxNVnBrRTNwUmZUWEgzc0dOaDk2NEJnbkpvUC03NjExUHR0czdvSV9aX1FZZ0QzU0h2V2tKNWxwVmx0X0F0WERTYWExWVdiMlQ1NzdkbWFINzNrTENLOVlxeEgyZw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [I finally tried XREAL's fully-baked Android XR glasses, and now I'm counting down to launch - androidauthority.com](https://news.google.com/rss/articles/CBMijAFBVV95cUxPQnR5UXBZQzdkWGxZaTZaajNFWERFWG10LWllS1JTNkxPSDB2SkQ1Tjc0NmhLeWZSek1ac0g4eUZLb2I3UjBYNVk2UjYwM241VDRRWEJkRzRHUVFkT0RTYzZPbGt4ZS0wTHdvYTM3QzRaeXE3X0tfZlN4LVhNdU9sbXVQeC1UVnJKMS1STQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Innovative Eyewear Expands Smart Eyewear Lineup With HTC Partnership and Vive Eagle September Launch - VisionMonday.com](https://news.google.com/rss/articles/CBMi5AFBVV95cUxPY3lnczB1Z0hyREhzZ18zblNXaGt6Q1kwOG5mclhvSXFQNjgzVmlwUEQxQ2Z6UkRkcEN2S0hra0N0b0lRc1FsQlFuNzhUV3pDLS1Vb2o2UWdrLXZJclZUUXk1SV9tVUpQZXhkRjRCbHFTNXRoV0U1dVZTelRKcFNCMEY2b2N0czk0M2JuejhuUDBrcUdNaC1WWG9PTVdBZEZPbDhpWGRlS3dudHhvZEc1aXUtaGNJTnlYWGRCMHNmSjh4QTlZbUtEYk9wS3laRnF6dTFVNGN5MWpWNWJVbnh1UWthYnM?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Innovative Eyewear Expands Smart Eyewear Lineup With HTC Partnership and Vive Eagle September Launch - VisionMonday.com](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMUw2Y1ZkbVdFVFlpRzZiTHVmaDRXMXNta0tEU19nNURYakpxREtmZUNlbm1LN2xrOHhhS3hUSVJDYTZVVmY0Um1ncHRCOU5yYXJlM2tIam5XbUVIZThudFhsWkFFS0ZsQXl3SzBjWl9TN0p5UTBjS3hNd0VRdmVQT3IwVDVOTk5WTHRxSERhNWJsQkQ3ZnRGV2dYRU9qVGNsZFZlT1lyTlJlSHF2dldNZVJTa0xrWUh5MXR2MUJNT1FkWWZReGZ0SEpYYmR3UThyVUtFV3RTWHQ3RnQtSkhlRGVnYw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Innovative Eyewear Expands Smart Eyewear Lineup With HTC Partnership and Vive Eagle September Launch - VisionMonday.com](https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUHh6UnJZako5RHNndjZSc2QzQmo3NDczZVRQZTRuX05sbFpWT2pVMU9EWXF5MURwbFJNRVlkT3NielBLblJRZkhjRXpwcmVIQktNQXktUkRvbzJoa2xVUFp0RUktOWMwWHZOWVVEcWFmZHB5dHhqODRqcXhHYS1pZW1MUk92WnpBanlIeGhhQWlZd3Z4WFoyOThMMFBQOTdmMEpaQ1ZfLUxiNDRmX2JGck9ydFhPaFg2T291dzZVdG5UWTgyQUF4MnBlYklSUUoyUW53Sm9xOUdiU0hkZWhCSg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -129,9 +130,8 @@ Generated: `2026-09-06T08:57:57.057333+00:00`
 | normal | needs_editorial_verification | direct | [‘Checkmate’ looms for traditional tests amid AI glasses epidemic - Times Higher Education](https://news.google.com/rss/articles/CBMiogFBVV95cUxNTEhBbVpOUzVkSG9pMXNHSWpuTDZWaWFzTWZpcENEUDItd1hTbV9ia3VDbjRRaHZPRElMbnRJSE50aWlxVVJUUHJnbzFBb3pNS3pVRFdrZER3N1phQWVKdmM1aUloNDZnSTVoUXEyZmQzQmlqdDRBczZUbTZmdksxdGxJMC1fQkRIbTBHMjVpcEMtaFJGb2RqVVk1a0dCcXpIRnc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [#smartglasses - TikTok](https://www.tiktok.com/tag/smartglasses) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | ['I find it very uncomfortable talking to people with a camera and a light': OpenAI's Sam Altman weighs in on smart glasses and privacy - tom](https://news.google.com/rss/articles/CBMijAJBVV95cUxOaHljZEU3Y0ZXeDNYSVRmRzVWeGpxdUxDRHNXWl93T0JjNzY5N0N2TVZIcFI1V3BHQjJOSk9aVGZJeU9aNVB4eVZCUVR4RkJTbUxlUFlLWVVZYm1CaWtfRk9ocEYtekNHQklJNFoyRGZFblZZVkJIRGpHOFBkbDdBMk0wLWlpS0Fpb1AxeVJGNTJsREQ5RWt1ZVhpY18zMkJySVJyalAwYW9kalowakVzc052U0ZGWVl1a2VXUWlvX2pOOE1IWm52dzZxU3pFX1BnUGo2N0VVMV9TVVptWnJOVGZVcVR5cjBnbUJjamhvTkJDczI1VTNBUnhHTEZyMk9uYmRzd29CaGpBSXo5?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [10 Best AR Glasses (September 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses (August 2026): Tested Picks for AI, AR & Audio](https://whoismcafee.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (202) | research_news_review |
+| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Translation for Travelers (August 2026)](https://peccadille.net/best-smart-glasses-with-translation-for-international-travelers/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [12 Best AR Glasses (September 2026) Tested & Compared](https://whoismcafee.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [2026 Best Translation Glasses Guide: AI Subtitles for Real Life – RayNeo](https://www.rayneo.com/blogs/news/best-translation-smart-glasses-2026-guide) | reachable (200) | research_news_review |
