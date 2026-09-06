@@ -32,19 +32,6 @@
   <span><strong>Historical</strong> preservation</span>
 </div>
 
-<section class="gr-section gr-finder-section" aria-labelledby="gr-finder-title">
-  <div class="gr-section-heading">
-    <div>
-      <p class="gr-kicker">Discovery</p>
-      <h2 id="gr-finder-title">Start with what matters to you.</h2>
-    </div>
-    <p>Choose your priorities. The Finder searches the living catalog for documented matches, then leads into model research, comparisons, and Report Cards.</p>
-  </div>
-
-  <div id="homepage-finder-app">Loading the compact Glasses Finder…</div>
-  <a class="gr-text-link" href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder &amp; Compare <span aria-hidden="true">→</span></a>
-</section>
-
 <section class="gr-section" aria-labelledby="gr-now-title">
   <div class="gr-section-heading gr-heading-compact">
     <div>
@@ -147,6 +134,19 @@
   });
 })();
 </script>
+
+<section class="gr-section gr-finder-section" aria-labelledby="gr-finder-title">
+  <div class="gr-section-heading">
+    <div>
+      <p class="gr-kicker">Discovery</p>
+      <h2 id="gr-finder-title">Start with what matters to you.</h2>
+    </div>
+    <p>Choose your priorities. The Finder searches the living catalog for documented matches, then leads into model research, comparisons, and Report Cards.</p>
+  </div>
+
+  <div id="homepage-finder-app">Loading the compact Glasses Finder…</div>
+  <a class="gr-text-link" href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder &amp; Compare <span aria-hidden="true">→</span></a>
+</section>
 
 <section class="gr-section" aria-labelledby="gr-explore-title">
   <div class="gr-section-heading">
