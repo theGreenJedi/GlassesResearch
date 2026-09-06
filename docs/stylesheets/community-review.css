@@ -96,10 +96,7 @@
   font-size: .92rem;
 }
 
-.community-review-resolution[data-state="resolved"] {
-  font-weight: 650;
-}
-
+.community-review-resolution[data-state="resolved"],
 .community-review-resolution[data-state="unresolved"] {
   font-weight: 650;
 }
@@ -161,8 +158,315 @@
   color: var(--md-default-fg-color--light);
 }
 
+/* Guided Evaluate application */
+.gr-evaluate-app {
+  margin: 1.5rem 0 2rem;
+}
+
+.gr-evaluate-shell {
+  overflow: hidden;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 1rem;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 .6rem 2rem rgba(0, 0, 0, .08);
+}
+
+.gr-evaluate-topline,
+.gr-evaluate-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+}
+
+.gr-evaluate-topline {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.gr-evaluate-topline > div:first-child {
+  display: grid;
+  gap: .12rem;
+}
+
+.gr-evaluate-brand {
+  font-weight: 800;
+  letter-spacing: -.015em;
+}
+
+.gr-evaluate-topline small,
+.gr-evaluate-field small,
+.gr-evaluate-tool small,
+.gr-evaluate-file-list small {
+  color: var(--md-default-fg-color--light);
+}
+
+.gr-evaluate-top-actions,
+.gr-evaluate-nav-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+}
+
+.gr-evaluate-progress {
+  height: .34rem;
+  background: var(--md-default-fg-color--lightest);
+}
+
+.gr-evaluate-progress span {
+  display: block;
+  height: 100%;
+  background: var(--md-primary-fg-color);
+  transition: width .2s ease;
+}
+
+.gr-evaluate-progress-copy {
+  padding: .7rem 1.15rem 0;
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color--light);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.gr-evaluate-task {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1.2rem 1.15rem 1.45rem;
+}
+
+.gr-evaluate-kicker {
+  margin: 0 0 .2rem;
+  font-size: .78rem;
+  font-weight: 800;
+  color: var(--md-primary-fg-color);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.gr-evaluate-task h2 {
+  margin: .15rem 0 .45rem;
+  font-size: clamp(1.45rem, 5vw, 2.15rem);
+  line-height: 1.15;
+}
+
+.gr-evaluate-help {
+  margin: 0 0 1.25rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 1.02rem;
+}
+
+.gr-evaluate-task-body {
+  display: grid;
+  gap: 1rem;
+}
+
+.gr-evaluate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: .85rem;
+}
+
+.gr-evaluate-field {
+  display: grid;
+  gap: .35rem;
+  font-weight: 650;
+}
+
+.gr-evaluate-field input,
+.gr-evaluate-field select,
+.gr-evaluate-field textarea,
+.gr-evaluate-capture input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .62rem;
+  padding: .78rem .85rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+}
+
+.gr-evaluate-field textarea {
+  resize: vertical;
+  min-height: 7rem;
+}
+
+.gr-evaluate-input-wrap {
+  position: relative;
+}
+
+.gr-evaluate-input-wrap input {
+  padding-right: 3.3rem;
+}
+
+.gr-evaluate-unit {
+  position: absolute;
+  right: .8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--md-default-fg-color--light);
+  font-size: .9rem;
+  pointer-events: none;
+}
+
+.gr-evaluate-resolution,
+.gr-evaluate-note,
+.gr-evaluate-empty,
+.gr-evaluate-dimension-prompt {
+  margin: 0;
+  padding: .8rem .9rem;
+  border-radius: .65rem;
+  background: var(--md-code-bg-color);
+}
+
+.gr-evaluate-resolution[data-state="resolved"] {
+  border-left: .22rem solid var(--md-primary-fg-color);
+}
+
+.gr-evaluate-resolution[data-state="unresolved"] {
+  border-left: .22rem solid var(--md-accent-fg-color);
+}
+
+.gr-evaluate-check,
+.gr-evaluate-tool {
+  display: flex;
+  align-items: flex-start;
+  gap: .7rem;
+  font-weight: 500;
+}
+
+.gr-evaluate-check input,
+.gr-evaluate-tool input {
+  flex: 0 0 auto;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: .2rem;
+}
+
+.gr-evaluate-tool-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: .7rem;
+}
+
+.gr-evaluate-tool {
+  padding: .85rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .7rem;
+  cursor: pointer;
+}
+
+.gr-evaluate-tool span {
+  display: grid;
+  gap: .2rem;
+}
+
+.gr-evaluate-capture {
+  display: grid;
+  gap: .45rem;
+  padding: 1rem;
+  border: 1px dashed var(--md-default-fg-color--lighter);
+  border-radius: .75rem;
+  font-weight: 700;
+}
+
+.gr-evaluate-file-list {
+  display: grid;
+  gap: .45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gr-evaluate-file-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  padding: .6rem .7rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .55rem;
+}
+
+.gr-evaluate-file-list button,
+.gr-evaluate-quiet,
+.gr-evaluate-secondary,
+.gr-evaluate-nav > button,
+.gr-evaluate-primary {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .55rem;
+  padding: .68rem .9rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gr-evaluate-primary {
+  border-color: var(--md-primary-fg-color);
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.gr-evaluate-secondary {
+  border-color: var(--md-primary-fg-color);
+}
+
+.gr-evaluate-nav {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.gr-evaluate-nav button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.gr-evaluate-error {
+  min-height: 1.4em;
+  margin: .85rem 0 0;
+  font-weight: 700;
+}
+
+.gr-evaluate-review-summary dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: .6rem;
+  margin: 0;
+}
+
+.gr-evaluate-review-summary dl > div {
+  padding: .8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .65rem;
+}
+
+.gr-evaluate-review-summary dt {
+  font-size: .78rem;
+  font-weight: 800;
+  color: var(--md-default-fg-color--light);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.gr-evaluate-review-summary dd {
+  margin: .25rem 0 0;
+  font-weight: 700;
+}
+
+.gr-evaluate-attest {
+  display: grid;
+  gap: .8rem;
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .75rem;
+}
+
 @media (max-width: 44rem) {
-  .community-review-model-head {
+  .community-review-model-head,
+  .gr-evaluate-topline,
+  .gr-evaluate-nav {
     align-items: stretch;
     flex-direction: column;
   }
@@ -171,7 +475,20 @@
     text-align: center;
   }
 
-  .community-review-dimensions {
+  .community-review-dimensions,
+  .gr-evaluate-grid,
+  .gr-evaluate-tool-list {
     grid-template-columns: 1fr;
+  }
+
+  .gr-evaluate-top-actions,
+  .gr-evaluate-nav-right {
+    width: 100%;
+  }
+
+  .gr-evaluate-top-actions button,
+  .gr-evaluate-nav button,
+  .gr-evaluate-nav-right button {
+    flex: 1 1 auto;
   }
 }

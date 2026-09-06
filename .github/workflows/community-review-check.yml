@@ -9,6 +9,8 @@ on:
       - 'data/community-reviews.json'
       - 'data/community-reviewers.json'
       - 'docs/COMMUNITY_REVIEWS.md'
+      - 'docs/evaluate.webmanifest'
+      - 'docs/evaluate-sw.js'
       - 'docs/javascripts/community-review-intake.js'
       - 'docs/javascripts/community-review-model.js'
       - 'docs/stylesheets/community-review.css'
@@ -39,6 +41,8 @@ jobs:
           python -m py_compile scripts/build_community_reviews.py
           node --check docs/javascripts/community-review-intake.js
           node --check docs/javascripts/community-review-model.js
+          node --check docs/evaluate-sw.js
+          python -m json.tool docs/evaluate.webmanifest >/dev/null
 
       - name: Validate review ledgers and generated summaries
         shell: bash
@@ -73,6 +77,9 @@ jobs:
           grep -Fq 'Persistent contributor history' .github/ISSUE_TEMPLATE/community-review.yml
           grep -Fq 'community-review-summary.json' docs/javascripts/community-review-model.js
           grep -Fq 'lineage-aliases.json' docs/javascripts/community-review-intake.js
+          grep -Fq 'GR-EVAL-0.1' docs/javascripts/community-review-intake.js
+          grep -Fq 'evaluate.webmanifest' docs/javascripts/community-review-intake.js
+          grep -Fq 'evaluate-sw.js' docs/javascripts/community-review-intake.js
           grep -Fq 'community-review.css' mkdocs.yml
           grep -Fq 'community-review-intake.js' mkdocs.yml
           grep -Fq 'community-review-model.js' mkdocs.yml
