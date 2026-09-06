@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add guaranteed crawlable canonical-model links and research summaries to staged pages."""
+"""Add guaranteed crawlable public links and research summaries to staged pages."""
 
 from __future__ import annotations
 
@@ -14,6 +14,9 @@ CATALOG_ID_ROW = re.compile(
     re.MULTILINE,
 )
 MODEL_ID = re.compile(r"\bGLS-\d{4}\b")
+PUBLIC_INDEX_REL = Path("docs/SITE_INDEX.md")
+PUBLIC_INDEX_MARKER = "<!-- generated-public-site-index-link -->"
+PUBLIC_PAGE_SUFFIXES = {".md", ".markdown", ".html"}
 
 
 def canonical(model_id: str) -> str:
@@ -88,6 +91,62 @@ def link_lineage_ids(path: Path, valid_ids: set[str]) -> int:
     return len(ids)
 
 
+def _public_index_link(index_path: Path, page: Path, output_root: Path) -> str:
+    rel = page.relative_to(output_root)
+    if rel.parts and rel.parts[0] == "docs":
+        return Path(*rel.parts[1:]).as_posix()
+    return "../" + rel.as_posix()
+
+
+def ensure_public_site_index(output_root: Path) -> int:
+    """Give every staged public page an intentional inbound path without weakening verification."""
+    index_path = output_root / PUBLIC_INDEX_REL
+    pages = sorted(
+        path
+        for path in output_root.rglob("*")
+        if path.is_file()
+        and path != index_path
+        and path.suffix.lower() in PUBLIC_PAGE_SUFFIXES
+    )
+
+    grouped: dict[str, list[Path]] = {}
+    for page in pages:
+        rel = page.relative_to(output_root)
+        section = rel.parts[0] if len(rel.parts) > 1 else "Site root"
+        grouped.setdefault(section, []).append(page)
+
+    lines = [
+        "# Complete Public Page Index",
+        "",
+        "This generated directory lists every public research page included in the current site build. "
+        "It is a completeness backstop for readers, crawlers, and publication validation; the curated navigation remains the fastest way to browse GlassesResearch.",
+        "",
+        "[Back to Tools](TOOLS.md)",
+    ]
+    for section in sorted(grouped, key=lambda value: (value != "Site root", value.lower())):
+        lines.extend(["", f"## {section}", ""])
+        for page in grouped[section]:
+            rel = page.relative_to(output_root)
+            target = _public_index_link(index_path, page, output_root)
+            lines.append(f"- [`{rel.as_posix()}`]({target})")
+
+    index_path.parent.mkdir(parents=True, exist_ok=True)
+    index_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    tools_path = output_root / "docs" / "TOOLS.md"
+    if not tools_path.is_file():
+        raise ValueError("docs/TOOLS.md is missing; cannot anchor the complete public page index")
+    tools = tools_path.read_text(encoding="utf-8")
+    if PUBLIC_INDEX_MARKER not in tools:
+        tools += (
+            "\n\n---\n\n## Complete public page index\n\n"
+            f"{PUBLIC_INDEX_MARKER}\n"
+            "[Browse every published page](SITE_INDEX.md) — the generated completeness index for the current public build.\n"
+        )
+        tools_path.write_text(tools, encoding="utf-8")
+    return len(pages)
+
+
 def load_map(path: Path) -> dict[str, dict]:
     payload = json.loads(path.read_text(encoding="utf-8"))
     return {row["id"]: row for row in payload.get("records", [])}
@@ -155,7 +214,12 @@ def main() -> None:
     catalog_links = ensure_catalog_discoverability(args.output_root, valid_ids)
     lineage_links = sum(link_lineage_ids(path, valid_ids) for path in sorted((args.output_root / "lineages").glob("*.md")))
     enriched = enrich_catalog_pages(args.output_root)
-    print(f"Added {heading_links} heading links, guaranteed {catalog_links} catalog discovery links, {lineage_links} lineage links, and enriched {enriched} canonical model pages")
+    public_index_links = ensure_public_site_index(args.output_root)
+    print(
+        f"Added {heading_links} heading links, guaranteed {catalog_links} catalog discovery links, "
+        f"{lineage_links} lineage links, enriched {enriched} canonical model pages, and indexed "
+        f"{public_index_links} public pages"
+    )
 
 
 if __name__ == "__main__":
