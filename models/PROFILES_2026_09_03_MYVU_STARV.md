@@ -6,7 +6,7 @@
 
 Public community reverse engineering by GitHub user **Panny777** provides unusually detailed evidence of third-party interoperability: an independent client and unofficial Android SDK reportedly reproduce pairing/session behavior, teleprompter output, notifications, brightness and volume control, settings, weather, trackpad interaction, navigation, microphone ingestion, and pluggable speech/LLM behavior. GlassesResearch classifies that material as **community-attributed technical evidence**, not as a GlassesResearch lab result. Official openness remains distinct from community-discovered hackability, and independent replication is pending acquisition of a GlassesResearch-controlled specimen.
 
-[Canonical record](/models/THE_LIST/) · [reconciliation](/models/THE_LIST_RECONCILIATION_2026-09-03_MYVU_STARV/) · [lineage research](/research/investigations/MYVU_STARV_LINEAGE_2026-09-02/) · [community reverse-engineering evidence](/research/investigations/COMMUNITY_MYVU_XGA010C_PANNY777_2026-09-06/)
+[Canonical record](/models/THE_LIST/) · [reconciliation](/models/THE_LIST_RECONCILIATION_2026-09-03_MYVU_STARV/) · [lineage research](/research/investigations/MYVU_STARV_LINEAGE_2026-09-02/) · [community reverse-engineering evidence](/research/investigations/COMMUNITY_MYVU_XGA010C_PANNY777_2026-09-06/) · [Community Research profile](/docs/community-research/panny777-meizu-myvu-client/)
 
 ## GLS-0168 — StarV Air2
 
