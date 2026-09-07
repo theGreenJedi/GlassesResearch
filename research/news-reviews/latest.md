@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-07T09:47:13.006313+00:00`
+Generated: `2026-09-07T10:28:21.885299+00:00`
 
 - Intake files inspected: **160**
-- Candidates retained in this review window/history: **3195**
+- Candidates retained in this review window/history: **3256**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 1384
+- `adjacent_radar`: 1427
 - `catalog_review`: 28
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 265
-- `rejected_noise`: 1425
+- `needs_editorial_verification`: 264
+- `rejected_noise`: 1443
 - `source_monitor`: 2
-- `source_review`: 55
+- `source_review`: 56
 - `watching`: 32
 
 ## Action queue
@@ -85,7 +85,6 @@ Generated: `2026-09-07T09:47:13.006313+00:00`
 | normal | needs_editorial_verification | direct | [8 Best Smart Glasses (September 2026) Tested & Reviewed](https://www.findingdulcinea.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Afraid of Smart Glasses…! - Andaman Chronicle](https://news.google.com/rss/articles/CBMiY0FVX3lxTFA3YkhoMjNaZ09lQVhiSjN1WGJNUVVFZ2ZGZ3Y1QlA0djI2Y0lyZTh5Ym5CUEdsbU9SbjZXdTdza2JNbjZFOXpTZjAzQ25XdGxhQVducFhmSnpueXZFQ0Y3dldEWQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses - Target](https://www.target.com/c/ai-glasses-smart-wearable-technology-electronics-tech/-/N-9bg22) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, policy_privacy |
-| normal | needs_editorial_verification | direct | [Amazon.com: Augmented Reality Glasses](https://www.amazon.com/augmented-reality-glasses/s?k=augmented+reality+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: RayNeo GT Max AR/XR Glasses, 267" 59° FOV Native 3DoF ...](https://www.amazon.com/RayNeo-Glasses-Native-3DoF-Audio/dp/B0H8725ZZR) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Reorganizes Its Priorities: Smart Glasses Take Center Stage as Vision Pro Takes a Backseat - آي-فون إسلام](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMjY3NUFaeWhSVHVwbDE1Y25hS2xyWGFmT1hXTFJWR3kwenJJamlpMGM1T0lHS1djTmtDbWxzQTVxSXVEUVJURC1Wc0RkNEZtODJqb0thX1RpSTM0OVYzX1YtWUdQNVJCVnFlUl9UOUxkd3VEalBFdmdwWGQzcTZwbUE0ZEcxNEtpdmdjQklyZEp6RWRXTktEQUdjVi1LRDQzSlZ6cEJRbV9La0RrcWkyVGNtdjRMaTdTZGZBazEwODVKRTdXYVVIWEJ4c0ZweEphWFNmdFV4eW1KZDdraW9z?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple vs. Google vs. Meta: The Race to Build Smart Glasses People Actually Trust - Yahoo Tech](https://news.google.com/rss/articles/CBMid0FVX3lxTE10Y0lnM2FQOU52MHdGOUI4SkFvME5tdXc5N2pCdjlNYlYySHJONHlJOVNSQjRyeTliMWo2blVHT01VMFk4Q0hPcFJqeVNRQ3gtVXdXaGRaT2JwNTRwTGZjMHlDYTBmXzBaZEpSRUNjcFBzUklpQjBz?oc=5) | reachable (200) | research_news_review |
@@ -272,6 +271,7 @@ Generated: `2026-09-07T09:47:13.006313+00:00`
 | normal | needs_editorial_verification | direct | [Visually impaired veterans receive AI glasses in D’Iberville through Meta, Blinded Veterans Association partnership - WLOX](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdEJWaVdwNzVfVjVyUm45LTRYRXBfamVQSlczZVJnOURIUl9xam9aNlEyd0dqX1ZXME13LWVRRjI1bjRiOFFoLXh4NFFTRDNqY0dmWHlyOHJVd19ZRTlQN2Z3UU5MQ3ZpMThiSUh2VWVXZjN5clRnVUp0MWVCSV9wMmFNN19VTTVEcy1obFhQSGI3ZHE3TkFZX2Z1b2ZMVTR4VVNfbDloM3hJNkhfMXQ2VU5FRmpQMi1YV3lTTE40aW0taGFIaHRNbjBqUlhZS1prbkZoX1NRVFBSMWRqYkRqY3g0Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Visually impaired veterans receive AI glasses in D’Iberville through Meta, Blinded Veterans Association partnership - WLOX](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYWEtZi1nbWhmbXhEWlJaUGJLd1kzUlRmUDFiVmp2ZWVQTy05Ml9rLWtLR1VmS0ZxeFJhY185cEt3WTRGQkR5Vm1LX1ZaVVlEa2pIRDlScVlhbDNEYVNaVjl3VVdqUnZ1R2UtTDlKM0pZdWJGcEJQX3FBMl9TTXVIYVd3WVIzM0VaR2MwY0pFeWNvM2drRkRnTzE1NmVuckZ1aFRFenpaeDJoSDNHN3dlaHhpQ2tiYnFRLVBxQk42WFl0SkhsbmVYbDEwRE1oMjc1Y3JUa3Atb0QyTXfSAe8BQVVfeXFMT09NYzZQU05TZlZJRVY1LWxDV2F3bUsxY1RXRUxTcFlQOWIwN0RGcTNtZVhIRHpuZGRyb3hTR25uUGFLbTU0WTRSeGpFNmZSU0xqY3FNejF6SkNSaVVwRWZuNWNybnJVX2d6RDZwZGJSQjdWU2RBMzhNX0d5ekFEczJneWxwbTFTTVFYOFQwbUJuSU0wVTVjem0zSTdtNDZtX0hxdE9pc3NFUnIyRmFOTzRYYzFJZjlEb25oeTFQZV9XNTVkMmJ2U1NSODRnZFNqc3dXNDdOSVFYdExSbXpWa1lIRklhY3R6eDJOLV92aGc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [VITURE Pro 2 XR Glasses](https://www.viture.com/product/viture-pro-2-xr-glasses) | reachable (200) | research_news_review, research_optics |
+| normal | needs_editorial_verification | direct | [VUZI stock gains after Vuzix highlights waveguide advances and AI data center opportunities - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOLXNHckM1MGdyazNSNm9mWmlscEJGR2w1TncxZEFaVVZQWklhRkxObTJlejUxa2k3dFlERklwT0tWY1k4ZkhnTktsWHozUnlENHZPRE9iakNBSkVSNHJJZ05jSVJYV0I0cWZOdWViLU9rekc5LVdFeHJLeVBpWEJIVjZhYkw4RU9hVDRaNWlOc0ROS0VrbV9qbThJV0ZwSVAtY3dybm44Mnl6RVREcDl0NGwzUjVSdmlvdXEyOWctaGN6YTc1di16Qw?oc=5) | reachable (200) | research_news_review, research_optics |
 
 ## Meaning of states
 
