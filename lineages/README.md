@@ -35,6 +35,7 @@ These are maintained as public, evolving lineage chapters:
 - [Brilliant Labs population ledger](BRILLIANT_LABS_POPULATION.md) — model-population and evidence propagation record for the lineage.
 - [Snap Spectacles](SNAP.md) — camera-glasses and later AR Spectacles generations.
 - [Solos AirGo](SOLOS.md) — AirGo audio/camera glasses and developer ecosystem.
+- [Captify](CAPTIFY.md) — accessibility-focused captioning lineage spanning a DreamSmart/MYVU-derived edition and the distinct Captify Pro CAP001 hardware generation.
 
 ### Completed lineage evidence packets
 
