@@ -1,11 +1,16 @@
 # The List reconciliation — Captify — 2026-09-06
 
-## Admission decisions
+## Admit to canonical purchaser-history ledger
 
-| ID | Maker | Model | State | Type | Access | Evidence |
-|---|---|---|---|---|---|---|
-| GLS-0167 association | Captify / DreamSmart / MYVU | Captify Myvu | current | binocular accessibility display / audio | direct retail | Captify first-party collaboration statement + matching MYVU/StarV Air hardware profile |
-| GLS-0218 | Captify | Captify Pro (CAP001) | current | binocular accessibility display / audio | direct retail | Captify first-party retail/support + FCC ID 2BQMS-CAP001 |
+| ID | Maker | Model | Era | State | Type | Access | Evidence |
+|---|---|---|---|---|---|---|---|
+| GLS-0218 | Captify | Captify Pro (CAP001) | 2025 | current | binocular accessibility display / audio | direct retail | https://captify.glass/products/captify-pro |
+
+## Existing-ID association
+
+| Existing ID | Maker/platform | Captify edition | Disposition | Evidence |
+|---|---|---|---|---|
+| GLS-0167 | DreamSmart / MYVU Air / StarV Air | Captify Myvu | Associate with existing hardware identity; do not mint duplicate generation | Captify first-party collaboration statement + matching MYVU/StarV Air hardware profile |
 
 ## Identity decisions
 
@@ -30,4 +35,4 @@ Admit as `GLS-0218`. Captify Pro is not merely a software package over the Myvu 
 - [Captify Pro research hub](CaptifyPro/README.md)
 - [Captify lineage investigation](../research/investigations/CAPTIFY_LINEAGE_2026-09-06.md)
 
-This reconciliation reserves `GLS-0218` for Captify Pro. If a concurrent catalog merge consumes that identifier before canonical list regeneration, renumber this admission rather than duplicating a stable ID.
+This packet deliberately uses the canonical admission heading/schema consumed by the catalog synchronizer. `GLS-0167` remains the existing DreamSmart/MYVU hardware identity; only Captify Pro receives a new row.
