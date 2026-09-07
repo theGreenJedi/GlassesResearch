@@ -1,0 +1,33 @@
+@page { size: Letter; margin: 0.45in; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; color: #111; background: #fff; }
+body { font-size: 9.3pt; line-height: 1.2; }
+.page { width: 100%; min-height: 9.9in; page-break-after: always; position: relative; }
+.page:last-child { page-break-after: auto; }
+h1 { font-size: 22pt; margin: 0; letter-spacing: .02em; }
+h2 { font-size: 11pt; margin: 2px 0 8px; font-weight: 600; }
+h3 { font-size: 10pt; margin: 8px 0 4px; border-bottom: 1.5px solid #111; padding-bottom: 2px; }
+.header { border-bottom: 3px solid #111; margin-bottom: 7px; padding-bottom: 5px; }
+.subhead { font-size: 8pt; margin-top: 2px; }
+.meta, .grid2, .grid3, .grid4 { display: grid; gap: 4px 8px; }
+.meta, .grid2 { grid-template-columns: 1fr 1fr; }
+.grid3 { grid-template-columns: repeat(3,1fr); }
+.grid4 { grid-template-columns: repeat(4,1fr); }
+.field { min-height: 24px; border-bottom: 1px solid #333; padding: 2px 0; }
+.label { font-size: 7.4pt; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+.box { border: 1px solid #333; min-height: 42px; padding: 4px; }
+.box.tall { min-height: 78px; }
+.box.xtall { min-height: 120px; }
+.note { font-size: 7.5pt; color: #222; margin: 3px 0 5px; }
+table { width: 100%; border-collapse: collapse; margin: 4px 0 7px; }
+th, td { border: 1px solid #555; padding: 3px 4px; vertical-align: top; }
+th { font-size: 7.6pt; text-align: left; background: #f1f1f1; }
+td { height: 22px; }
+.checks { display: flex; flex-wrap: wrap; gap: 5px 10px; font-size: 8pt; }
+.checks span::before { content: '□ '; }
+.status { font-size: 7.5pt; font-weight: 700; }
+.footer { position: absolute; bottom: 0; left: 0; right: 0; border-top: 1px solid #555; padding-top: 3px; font-size: 7pt; display:flex; justify-content:space-between; }
+.small { font-size: 7.4pt; }
+.no-break { break-inside: avoid; }
+@media screen { body { max-width: 8.5in; margin: 18px auto; padding: 0 .45in; } .page { box-shadow: 0 0 5px #bbb; margin-bottom: 18px; padding: .05in; } }
+@media print { a { color: inherit; text-decoration: none; } }
