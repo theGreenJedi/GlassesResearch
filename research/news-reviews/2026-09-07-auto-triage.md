@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-07T16:28:47.027504+00:00`
+Generated: `2026-09-07T16:29:14.262933+00:00`
 
 - Intake files inspected: **159**
 - Candidates retained in this review window/history: **3318**
@@ -12,10 +12,10 @@ Generated: `2026-09-07T16:28:47.027504+00:00`
 - `catalog_review`: 28
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 259
+- `needs_editorial_verification`: 258
 - `rejected_noise`: 1459
 - `source_monitor`: 2
-- `source_review`: 58
+- `source_review`: 59
 - `watching`: 31
 
 ## Action queue
@@ -109,7 +109,6 @@ Generated: `2026-09-07T16:28:47.027504+00:00`
 | normal | needs_editorial_verification | direct | [Open Source Smart Glasses - DIY AR - YouTube](https://m.youtube.com/watch?v=PwmGNWkpKW8) | reachable (200) | research_news_review, report_card_evidence, development_hacking, deep_research |
 | normal | needs_editorial_verification | direct | [Pervs Distraught as Meta Bricks Their Smart Glasses Remotely - Futurism](https://news.google.com/rss/articles/CBMigAFBVV95cUxOWmpjWmZkYnJUM3Vkbjd0VFNVMGxHQ2VjdWhPQVNFOHYtMENaVjI0OGpUcE5KT0kyS3BPbVBDSUVpQTcwb25LNm1lR01vaERCMlBuOUw2anY3ZE5IcUhmUFlHSGQ1a3FGRzdCRUo2VEtGTHA4VTdyNGhCMm5fNFlDQw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Prescription Smart Glasses Guide: How to Choose the Right Pair in 2026](https://dymesty.com/blogs/articles/the-practical-buyer-s-guide-7-things-to-know-about-prescription-smart-glasses) | reachable (200) | research_news_review, research_optics |
-| normal | needs_editorial_verification | direct | [Prescription Smart Glasses: Complete Buying Guide 2025 -](https://banna-tech.com/prescription-smart-glasses-guide/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | enabling | [prescription是什么意思_prescription在线翻译_英语_读音_用法_例句_海词词典](https://corp.dict.cn/prescription) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | normal | needs_editorial_verification | direct | [RayNeo GT and GT Max XR Display Glasses Through the Lens Comparison - Your Own Cinema Anywhere - YouTube](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5sTVlHZ3UxRVVwbnJqaGVZTHVPYkRrZjRjd0tTYW85bXNCeE5TRW95aDdBLTFtd3UzQmppNzRFdC1FWVJFUUp6Q1laeEpxRmJqbUpsNGZoellUdUYz?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [RayNeo GT Max XR Display Glasses Through the Lens - Your Own Cinema Anywhere - YouTube](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1Lb05kYjlHU3hlUV94c3JmNVRuc3Zya1ZVdXNFdDBqbDNaWEoyTzVqUU53cnFzX0RsandPVTJySlNiNk11ejNLbFN0cldRMXVxUzRSRG1Hdm5fOTNC?oc=5) | reachable (200) | research_news_review |
@@ -272,6 +271,7 @@ Generated: `2026-09-07T16:28:47.027504+00:00`
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top Models ...](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [XREAL Aura Brings Android XR and Gemini AI to Smart Glasses - Geeky Gadgets](https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pOEY3RHZjUDNWZVZpMHpKTHdfckUyVmp1ZGJiYVYzS1MwWkxxbzdYaVJIRkRFQ19qWlNGZG5lSDZZOHZGQUNfTFE2RzVqUk83dXphQ3RkODZhWGFSOFhKY2J3?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [XREAL \| Building Augmented Reality for Everyone](https://www.xreal.com/) | reachable (200) | research_news_review, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [‘I find it very uncomfortable’: Sam Altman explains why he doesn’t like talking to people wearing camera-equipped smart glasses — and it cou](https://news.google.com/rss/articles/CBMiygJBVV95cUxPSmRmaWd1b29SNXh1VjQ3cVdNQUYyeDNfYVJUd2xOM0JXa2lEZmYzTHBUT2VPR1cySWJfNHc4NnJaQ3U3eWtkMnJIb09vQmhzRk9vYUREVnpSZldpQ2tWbTVmZ1dtazU4QkM4WWRGZ1hQSjdaNVg1NjhhRHhDMm5rODhpRGxhT1Z3T1k5c3dVbzJDazMyS0xTSGlhY0wzWUdDa3dpelpFZU0wZk9zdVBhSDkzUENZLUNLSnl0QWthcWpnTjBmZ3BIbEtYcjktbzNjZTd4ZzlWS3gtOEh0eW5CQjY4TU02RWktWWhiUHZncHh2UkJyelFNSkpsb0syOEhxTU9GaHM4UnZVcnFXbEp6NE5rdm41dmdRSWlNWkxMUnJaX1JsN0RSUENHRU92WDV3b1FhZGluX2F3QVBZX19BM0RIOGwtRGt0VWc?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
