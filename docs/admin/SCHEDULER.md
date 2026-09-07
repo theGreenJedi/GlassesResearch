@@ -9,7 +9,7 @@ The scheduling rule is **few clocks, explicit chains**. Event-driven handoffs ar
 | Stage | Workflow | Primary trigger | Cron/backstop | Concurrency | Notes |
 |---|---|---|---|---|---|
 | Public discovery wire | `search-wire.yml` | independent discovery clock | every 30 minutes | `search-wire-writer` | Unverified discovery only. A visible wire change explicitly dispatches knowledge intake. |
-| High-recall intake | `hourly-news-intake.yml` | dispatch from a changed public wire | `17 * * * *` | `knowledge-intake-writer` | Collects institutional sources, ordinary web, and current wire. The hourly clock is a dead-man fallback. |
+| High-recall intake | `hourly-news-intake.yml` | dispatch from a changed public wire | `17 * * * *` | `knowledge-intake-writer` | Collects institutional sources, ordinary web, and current wire. The hourly clock is a dead-man fallback. Directly dispatched runs explicitly dispatch triage after successful persistence; scheduled runs retain the `workflow_run` handoff. |
 | Editorial triage | `daily-news-verification.yml` | successful intake / approved upstream workflow completion | 11:55 PM Eastern DST-aware backstop | `knowledge-intake-writer` | Precision gate. Failed upstream runs do not authorize triage. |
 | Publication relay | `newsroom-publication-after-triage.yml` | successful editorial triage | none | `newsroom-publication-after-triage` | Relay only; it cannot publish content itself. |
 | Strongly verified publication intake | `newsroom-publication-intake.yml` | dispatch from publication relay | `47 * * * *` | `newsroom-publication-intake` | Bounded auto-publication and all existing verification gates remain unchanged. Hourly cron is a dead-man fallback. |
@@ -34,7 +34,7 @@ All times below are UTC unless explicitly described otherwise.
 | `model-discovery-audit.yml` | `20 4 * * *` / `20 5 * * *` | 12:20 AM Eastern, DST-aware dual-UTC schedule with in-workflow gating. |
 | `daily-news-collector.yml` | `51 3 * * *` / `51 4 * * *` | 11:51 PM Eastern institutional-intake backstop, DST-aware. |
 | `daily-news-verification.yml` | `55 3 * * *` / `55 4 * * *` | 11:55 PM Eastern editorial-triage backstop, DST-aware. |
-| `weekly-research-report.yml` | `45 17 * * 5` / `45 18 * * 5` | Friday 1:45 PM Eastern research report, DST-aware. |
+| `weekly-research-report.yml` | `45 17 * * 5` / `45 18 * * 5` | Friday 1:45 PM Eastern research report refresh. |
 
 ## Scheduler policy
 
