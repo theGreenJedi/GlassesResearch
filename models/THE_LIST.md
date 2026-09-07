@@ -1,8 +1,8 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-09-05
+**Edition:** 2026-09-07
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 216 distinct purchasable models or explicitly marketed product generations
+**Count:** 217 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -367,6 +367,15 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0216 | Solos | AirGo 1 | 2020 | legacy | audio smart glasses | crowdfunding/retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://www.kickstarter.com/projects/solostechnology/solos-smart-glasses-wellbeing-and-fashion-styles-all-in-one/faqs) |
 | GLS-0217 | Solos | AirGo A5 | 2026 | current/backordered | audio AI smart glasses | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-05_MANUFACTURER_WAVE_02.md); [source](https://solosglasses.com/products/hydro-x-smartglasses-solos-airgo%E2%84%A2-a5) |
 
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0218 | Halliday | Halliday G2 | 2026 | preorder/current | camera-free binocular waveguide AI glasses | manufacturer preorder | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_IDENTITY_FORENSICS_WAVE_01.md); [source](https://www.hallidayglobal.com/products/halliday-g2) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -379,7 +388,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 216-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 217-row count:
 
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
