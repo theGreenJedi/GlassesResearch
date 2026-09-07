@@ -25,6 +25,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: knowledge-intake-writer
@@ -136,6 +137,17 @@ jobs:
             research/news-reviews/latest.md
             research/news-reviews/queue.json
           retention-days: 90
+
+      - name: Dispatch bounded publication after bot-driven triage
+        if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true' && github.event_name == 'workflow_dispatch' && github.actor == 'github-actions[bot]'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh workflow run newsroom-publication-intake.yml \
+            --repo "${GITHUB_REPOSITORY}" \
+            --ref main
 
       - name: Inactive trigger counterpart
         if: steps.cadence.outputs.run == 'false'
