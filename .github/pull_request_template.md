@@ -15,8 +15,18 @@ Lists below may supplement this description but may not replace it. -->
 
 ## Evidence and limitations
 
+<!-- Include primary/community/manufacturer sources, reproduction conditions, uncertainty, negative results, and anything not yet tested or independently reproduced. A merged PR does not by itself promote a claim into GlassesResearch Verified status. -->
+
 -
 
 ## Validation
+
+<!-- What did you build, check, reproduce, compare, or test? If not tested, say so. -->
+
+-
+
+## Attribution preference (optional)
+
+<!-- For community research, corrections, or project-maintainer feedback: real name, public handle, project name, pseudonym, anonymous, or not applicable. -->
 
 -
