@@ -1,40 +1,42 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-07T22:14:09.086930+00:00",
-  "candidate_count": 90,
-  "classifier_irrelevant_count": 17,
+  "discovered_utc": "2026-09-07T20:38:59.879225+00:00",
+  "candidate_count": 92,
+  "classifier_irrelevant_count": 29,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 72,
-    "broad_web": 18,
-    "retail": 1
+    "adjacent": 63,
+    "broad_web": 29,
+    "community": 1,
+    "developer": 2,
+    "research": 1
   },
   "relationship_counts": {
     "direct": 1,
     "enabling": 0,
-    "adjacent": 72,
+    "adjacent": 62,
     "speculative": 0,
-    "irrelevant": 17
+    "irrelevant": 29
   },
   "type_counts": {
-    "model": 8,
-    "review": 1,
-    "video": 4,
-    "news": 64,
-    "research": 3,
-    "tool": 7,
+    "model": 2,
+    "video": 8,
+    "news": 59,
+    "research": 1,
+    "tool": 12,
     "sdk": 1,
-    "community": 6
+    "policy": 1,
+    "retail": 4,
+    "community": 9
   },
   "routing_counts": {
-    "adjacent_radar": 72,
-    "community_evidence_review": 5,
-    "deep_research": 3,
-    "development_hacking": 6,
-    "model_catalog_review": 8,
-    "reject_noise": 17,
-    "report_card_evidence": 1,
-    "research_news_review": 73
+    "adjacent_radar": 62,
+    "deep_research": 1,
+    "development_hacking": 8,
+    "reject_noise": 29,
+    "report_card_evidence": 2,
+    "research_news_review": 63,
+    "retail_rebrand_review": 3
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,55 +50,102 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "cb3e275f482a0fb8",
-      "title": "OpenGlass: Open-Source Smart Glasses for On-Device Event-Based Gesture ...",
-      "url": "https://arxiv.org/html/2606.07431v1",
-      "summary": "Fully open source and freely adaptable, the platform enables experimentation at the intersection of embedded intelligence, hardware design, and human–machine interaction. As a reference implementation, a compact, ultra-low-power smart glasses prototype is presented featuring both event-based [20, 21] and frame-based imaging sensors.",
+      "id": "49f5ee991f81c997",
+      "title": "AR Glasses & Smart Glasses — AI, Spatial Computing & Metaverse",
+      "url": "https://arglasses.com/",
+      "summary": "Discover AR glasses: products, use cases, and future trends. Explore education, healthcare, retail, and collaboration applications plus the latest news.",
       "discovery_channel": "broad_web",
-      "query": "open source smart glasses",
+      "query": "AR glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "open source"
-      ],
+      "materiality_score": 2,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "direct",
       "content_types": [
-        "research",
-        "tool"
+        "retail"
       ],
-      "primary_type": "research",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
-        "deep_research"
+        "retail_rebrand_review"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "63062eef5da546c1",
-      "title": "HighLevel API Documentation : HighLevel Support Portal",
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
-      "summary": "HighLevel provides a comprehensive API platform that enables developers to build integrations, automations, and custom applications with the HighLevel CRM and Marketplace. Our API includes REST endpoints for contacts, messaging, workflows, calend...",
+      "id": "80bcbb078e2c84c1",
+      "title": "2026 Iowa Hawkeyes Football Roster | Ourlads.com",
+      "url": "https://www.ourlads.com/ncaa-football-depth-charts/roster-numeric/iowa/90751",
+      "summary": "The most respected source for NFL Draft info among NFL Fans, Media, and Scouts, plus accurate, up to date NFL Depth Charts, Practice Squads and Rosters.",
       "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "api"
-      ],
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f456d76f0ae76805",
+      "title": "2026 Seattle Reign FC season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_Seattle_Reign_FC_season",
+      "summary": "3.1.1Regular season standings. 3.1.2Results summary.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3e7154b74923abed",
+      "title": "About redBus - redBus Blog",
+      "url": "https://blog.redbus.com/index.php/about/",
+      "summary": "About redBus redBus is the best platform in the world for booking bus tickets online. redBus offers bus booking services in India, Indonesia, Malaysia, Singapore, Latin America, and Europe. Trusted by over 18 million customers worldwide, redBus offers an easy, fast, and secure platform for booking cheap bus tickets.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -110,28 +159,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b10b036779a83fcf",
-      "title": "Iran conflict further disrupts Strait of Hormuz shipping - Maritime News",
-      "url": "https://www.maritimenews.com/iran-conflict-maritime-disruptions/strait-hormuz-disruptions-iran-blacklist-mines",
-      "summary": "On September 2-4, 2026, maritime traffic through the Strait of Hormuz remained severely restricted as Iran expanded its blacklist of non-compliant vessels and reported mine incidents involving two tankers. War risk insurance costs, US-Iran strikes and Iran's restrictive transit rules further constrained ship movements and altered regional energy trade routes.",
+      "id": "b6a1e645324d7773",
+      "title": "All William Shakespeare Books in Order (Complete List) | Readupnext.com",
+      "url": "https://www.readupnext.com/author/william-shakespeare",
+      "summary": "Find all 39 books written by William Shakespeare, all arranged in the order they were published. Discover the full collection in sequence",
       "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "shipping"
-      ],
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "model"
+        "news"
       ],
-      "primary_type": "model",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -140,235 +186,1085 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "002a98d977fbd8d7",
-      "title": "Iran Declares Maritime Exclusion Zone Near Strait of Hormuz as Tanker ...",
-      "url": "https://www.marineradar.com/trends/iran-declares-maritime-exclusion-zone-near-strait-of-2026-09-07",
-      "summary": "The announcement, confirmed by Iranian state media on 6 September, designates a restricted area for commercial shipping in the waters east of the strait. Tehran said the zone was a lawful defensive measure; vessels failing to comply with newly issued transit notices would be treated as having entered a conflict area.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9cd57764e37fb56c",
-      "title": "Iran Plans New Gulf Zone as Hormuz Tensions Push Oil Prices Higher",
-      "url": "https://moderndiplomacy.eu/2026/09/07/iran-plans-new-gulf-zone-as-hormuz-tensions-push-oil-prices-higher/",
-      "summary": "Iran says it will announce a new restricted zone in the Gulf and publish maps for a new shipping corridor through the Strait of Hormuz in the coming days, adding another layer of tension around one of the world’s most important energy routes.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "84a2d232e08d7363",
-      "title": "Iran plans new Hormuz shipping corridor with Oman - Gulf Business",
-      "url": "https://gulfbusiness.com/en/2026/news/iran-plans-new-hormuz-shipping-corridor-with-oman/",
-      "summary": "Iran will announce a new restricted maritime zone near the Strait of Hormuz and unveil a new shipping corridor agreed with Oman in the coming days, according to Mohsen Rezaei, secretary of Iran ...",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6148d0c08e8e6a7b",
-      "title": "Iran Plans Restricted Gulf Zone, New Hormuz Shipping Corridor as Tanker ...",
-      "url": "https://yournews.com/2026/09/07/7188499/iran-plans-restricted-gulf-zone-new-hormuz-shipping-corridor-as/",
-      "summary": "Iran is preparing to establish a new restricted maritime zone in the Gulf and approve a new shipping corridor through the Strait of Hormuz as renewed U.S.-Iranian attacks on vessels further disrupt one of the world’s most important energy routes and push oil prices higher.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d625e8a19968be80",
-      "title": "Iran plans restricted zone as Hormuz traffic drops to just 7 ... - IJR",
-      "url": "https://ijr.com/discover/iran-plans-restricted-zone-near-strait-of-hormuz-63be1efb",
-      "summary": "Iranian officials warn that the era of proportional retaliation is over, promising faster, heavier responses and signaling a new exclusion zone and potential shipping corridor outside the Strait ...",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9c3cb543482260ee",
-      "title": "Iran to announce new Gulf restricted zone, Hormuz route: What we know",
-      "url": "https://www.al-monitor.com/originals/2026/09/iran-announce-new-gulf-restricted-zone-hormuz-route-what-we-know",
-      "summary": "فارسی 简体中文 Español Iranwill announce a new restricted zone in the Gulf in the coming days, along with maps for a new shipping corridor through the Strait of Hormuz, a senior official said Sunday.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5365d88ea18790d9",
-      "title": "Maritime security and Iran conflict reshape Hormuz traffic - Maritime News",
-      "url": "https://www.maritimenews.com/maritime-security-iraniconflict/strait-hormuz-shipping-constraints-iran-us",
-      "summary": "From September 1-6, 2026, commercial shipping in the Strait of Hormuz and Gulf of Oman has experienced renewed challenges. Tanker attacks, Iranian blacklisting of noncompliant vessels, and reduced transits all present difficult operating environments for energy cargoes as well as regional trade. This article summarizes verified developments affecting maritime security and routing decisions.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b729fd52c1b0eb07",
-      "title": "Mico University College MUC 2026 Rankings, Courses, Tuition & Admissions",
-      "url": "https://www.unirank.org/jm/uni/mico-university-college/",
-      "summary": "Mico University College MUC 2026 ranking & review including programs/courses, tuition, admission info, acceptance rate, accreditation & more.",
+      "id": "63a23889dc7c6550",
+      "title": "Blog - redBus Blog",
+      "url": "https://blog.redbus.com/index.php/blog/",
+      "summary": "redBus Blog Stories of Bus Travel from Around the World Home About redBus bus company Featured Road Trips",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "review"
+        "news"
       ],
-      "primary_type": "review",
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d79711cb070cb403",
+      "title": "Book Bus Tickets Online with redBus!",
+      "url": "https://www.redbus.com/",
+      "summary": "Book bus tickets online with the world's best bus ticketing platform - redBus. Compare the ticket prices, find bus schedules, and get the best deal!",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0e1163210d2d4b4a",
+      "title": "Bus Ticket Booking Online | Bus Ticket Price, Bus Timetables ... - redBus",
+      "url": "https://www.redbus.com/online-tickets/bus-ticket-booking",
+      "summary": "Looking for online bus ticket booking? Visit redBus.com for cheap bus tickets. Check out everything from coach tickets to bus fare/ timetable.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b0b31cd8118e8528",
+      "title": "cfbstats.com - 2026 Iowa Hawkeyes Roster",
+      "url": "https://cfbstats.com/2026/team/312/roster.html",
+      "summary": "Terms of Use/Site Policies 09/07/2026 04:01:24 Team Home Roster Rushing Passing Receiving",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8922fa37384ce24e",
+      "title": "Cities Near Me - Riviera Beach, Florida | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Riviera+Beach,+FL",
+      "summary": "Find the top 15 cities, towns, and suburbs near Riviera Beach, FL, like Lake Park and North Palm Beach, and explore the surrounding area for a day trip.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af682086bb850d60",
+      "title": "Cities near Riviera Beach",
+      "url": "https://citiesnear.com/Riviera-Beach",
+      "summary": "There are many towns within the total area, so if you're looking for closer places, try a smaller radius like 50 miles. If you're okay driving a greater distance, try 150 miles. Things to do near Riviera Beach. 68 miles: Lincoln Road.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bed2dd7b1c96c724",
+      "title": "Cities near Riviera Beach within 50 miles",
+      "url": "https://citiesnear.com/Riviera-Beach/50-miles",
+      "summary": "Find destinations within a 50 miles radius of me to plan a road trip from Riviera Beach.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9c9f47eaeb1514be",
+      "title": "Cities Nearby Riviera Beach, Florida, United States",
+      "url": "https://www.thecitiesnow.com/united_states/florida/riviera_beach",
+      "summary": "Find five hundred cities near Riviera Beach, Florida, United States from closest to farthest by distance. Distances from Riviera Beach to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "52a5a4ed2a89dfe9",
+      "title": "Complete Iowa Hawkeyes Football Roster (Updated 2026)",
+      "url": "https://collegefootballnetwork.com/teams/iowa-hawkeyes-football/roster",
+      "summary": "A look at the Iowa Hawkeyes Football 2026-27 roster, including position, height, birthdate, and draft year.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ee7125e82c6eeadd",
+      "title": "Edward Jones",
+      "url": "https://onlineaccess.edwardjones.com/",
+      "summary": "Log in to Edward Jones to access your account and manage your investments securely online.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1da452466c6dafc3",
+      "title": "Edward Jones",
+      "url": "https://onlineaccess.edwardjones.com/app/oa-login?vm=r",
+      "summary": "Securely log in to access your Edward Jones accounts and manage your investments.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1b984eda9ba40853",
+      "title": "Edward Jones",
+      "url": "https://onlineaccess.edwardjones.com/app/accounts",
+      "summary": "Securely log in to access and manage your Edward Jones accounts online.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1bf93c09b70bef42",
+      "title": "Edward Jones - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=app.edwardjones.mobile&hl=en_US",
+      "summary": "The \"sign in\" button doesn't recognize my tapping, in other words, i can't logon. I have to constantly contact my FA to send me documents though email or i have to go their site.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4a6cbfbaafed8bb6",
+      "title": "Edward Jones: Financial Advisors and Wealth Strategies",
+      "url": "https://www.edwardjones.com/us-en",
+      "summary": "With more than 20,000 financial advisors nationwide, Edward Jones can help manage your wealth and build your financial future. Find a financial advisor today.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d97c9c1b90ca648a",
+      "title": "Factura | redBus",
+      "url": "https://eticket.redbus.com/login",
+      "summary": "¡Bienvenido de nuevo! Ingresar",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "872765648e12a17d",
+      "title": "Football 2026-27 - Iowa Hawkeyes Athletics - Official Athletics Website",
+      "url": "https://hawkeyesports.com/sports/football/roster",
+      "summary": "Roster for Baseball. News for Baseball. facebook for BaseballOpens in a new window . instagram for BaseballOpens in a new window . twitter for BaseballOpens in a new window . Basketball. Schedule for Basketball. Roster for Basketball. News for Basketball. facebook for BasketballOpens in a new window . instagram for BasketballOpens in a new window .",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e49579fd99886fc",
+      "title": "Iowa Hawkeyes 2026 Rosters - 247Sports",
+      "url": "https://247sports.com/college/iowa/Team/Iowa-Hawkeyes-Football-69/Roster/",
+      "summary": "CBSSports HQ Paramount+ Premium Manage 2026 Iowa Hawkeyes Football Roster Teams ACC American",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "324597aff5bbe15f",
+      "title": "Iowa Hawkeyes College Football Roster - ESPN",
+      "url": "https://www.espn.com/college-football/team/roster/_/id/2294/iowa-hawkeyes",
+      "summary": "Explore the Iowa Hawkeyes NCAAF roster on ESPN. Includes full details on offense, defense and special teams.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e5a701d20194720e",
+      "title": "Iowa Hawkeyes Men's College Basketball Roster - ESPN",
+      "url": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2294/iowa-hawkeyes",
+      "summary": "Explore the Iowa Hawkeyes NCAAM roster on ESPN. Includes full details on point guards, shooting guards, power forwards, small forwards and centers.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fcd1b4b8fb370736",
+      "title": "Iowa Hawkeyes Roster 2026-27 - CBS Sports",
+      "url": "https://www.cbssports.com/college-football/teams/iowa/iowa-hawkeyes/roster/",
+      "summary": "Explore the Iowa Hawkeyes roster for the 2026 College Football season, including player positions, years of experience and more details.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ad03c7ce507d64a9",
+      "title": "Iowa Hawkeyes Roster | The Football Database",
+      "url": "https://www.footballdb.com/college-football/teams/fbs/iowa/roster",
+      "summary": "Houston Cougars Illinois Fighting Illini Indiana Hoosiers Iowa Hawkeyes Iowa State Cyclones Jacksonville State Gamecocks James Madison Dukes",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d26cff76d558ae5",
+      "title": "Login Page - m.redbus.com",
+      "url": "https://m.redbus.com/help/login",
+      "summary": "For seamless booking management and customer support Login to your account",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "826b2f186b821b6e",
+      "title": "Logon: Enter User ID | Edward Jones Account Access",
+      "url": "https://accountaccess.edwardjones.com/ca-logon/logon-pwd.action",
+      "summary": "For added security, we do not support auto complete on our account access login page. This means you must enter your complete user ID and password each time you log in.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d0c942638e2e4222",
+      "title": "NOVA CMS",
+      "url": "https://nova-cms.redbus.com/",
+      "summary": "All product description",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "14119814bde5ce00",
+      "title": "NWSL Standings — Table, Points & Records | NWSL",
+      "url": "https://www.nwslsoccer.com/standings",
+      "summary": "Official NWSL standings. Live table, points, wins, losses, draws, goal differential, and playoff positioning for every club.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c24a304b93502d9",
+      "title": "Online Account Access FAQ | Edward Jones",
+      "url": "https://www.edwardjones.com/us-en/client-resource-center/online-access/common-questions",
+      "summary": "While enrolling in Online Access, you will enter the last four digits of your Social Security number, your date of birth and the Edward Jones account number. You are creating an Online Access login for yourself and not the owner of the account.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "75ae961945d75e6a",
+      "title": "Order of William Shakespeare Books - OrderOfBooks.com",
+      "url": "https://www.orderofbooks.com/authors/william-shakespeare/",
+      "summary": "This is the Order of William Shakespeare Books in both chronological order and publication order. List verified daily and newest books added immediately.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cbfe7fa7ab3b79e6",
+      "title": "Outlook 如何将收件夹邮件进行分类-百度经验",
+      "url": "https://jingyan.baidu.com/article/358570f676c18b8f4724fcff.html",
+      "summary": "Outlook 如何将收件夹邮件进行分类,经常用outlook邮箱的朋友们会发现，如果自己的邮箱没有分类，经常会发现要找过去某一个邮件非常的费劲，虽然我们可以通过搜索去找，但是有时可能邮件太多或者时间太久远，找起来特别麻烦费时。今天我们就看看怎么更快更 ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "68d54de80af8ea39",
+      "title": "outlook会议邀请如何修改时间-百度经验",
+      "url": "https://jingyan.baidu.com/article/1876c852a779bfc80b13769e.html",
+      "summary": "outlook会议邀请如何修改时间,已经发送的会议邀请，突然领导有事只能调整会议时间了，如果重新发送一次会议邮件就有些不合适了，下面我们就来操作一下怎么直接修改会议时间。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4384ab23a5a23f9f",
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "summary": "Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的签名加上礼貌的问候，简单的描述会让收到邮件的人感到舒适。那么，Outlook如何添加签名呢？下面，小编就介绍操作步骤。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8a7bba896c69f8f0",
+      "title": "Outlook如何设置自动回复-百度经验",
+      "url": "https://jingyan.baidu.com/article/37bce2be1edfd05102f3a2fa.html",
+      "summary": "Outlook如何设置自动回复,很多人使用Outlook办公，当你休假出差或者不能接收邮件及时回复时可以使用自动回复来提醒发件人。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a19ca25a90f4ab5f",
+      "title": "outlook设置邮件单击时为未读状态，双击为已读-百度经验",
+      "url": "https://jingyan.baidu.com/article/3aed632eab505a30108091aa.html",
+      "summary": "outlook设置邮件单击时为未读状态，双击为已读,在OUTLOOK中，一般默认的设置是选中即进行阅读，即邮件标记为已读状态。有些用户会觉得不方便，主要怕误点导致遗漏邮件，现在介绍如何设置双击正式阅读后才会将邮件标记为已读。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f29ea27e886ea2fe",
+      "title": "Outlook邮箱已经发出的邮件怎么撤回或重发替换-百度经验",
+      "url": "https://jingyan.baidu.com/article/d169e1860a3b88436711d870.html",
+      "summary": "鼠标 方法/步骤 1 打开我们的Outlook邮箱客户端，进入我们的Outlook邮箱中，在左侧找到“已发送邮件”栏目菜单，点击并打开。 2 进入已发送邮件后，我们在已发送的邮件中，找到我们想要撤回或用新邮件重发替换的那封已发送邮件。 3",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d013bb1acffb9d15",
+      "title": "Outlook邮箱怎么登陆-百度经验",
+      "url": "https://jingyan.baidu.com/article/5bbb5a1bd5a3bc13eaa17964.html",
+      "summary": "Outlook邮箱怎么登陆,Outlook是一款应用非常广泛的应用，并且在生活中应用非常广泛。下面小编教大家如何登陆Outlook邮箱。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "449fc3402dbaacfd",
+      "title": "PC版的邮箱大师，OUTLOOK，Foxmail哪个好使一点？ - 知乎",
+      "url": "https://www.zhihu.com/question/38699401",
+      "summary": "谢邀。 Outlook 非常强大，完全不是一个简单的邮件管理程序，它更适合日程的管理，并且可以与Skype良好的集成，是商务必选。 但是，它很贵，因此如果你只需要邮件收发功能，可以用win10自带的邮件App。 另外，微软不会在您的邮件里添加任何信息和AD，你可以自由设置签名。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "72058bbbf62198d9",
+      "title": "Redbus Platform - SignIn Page",
+      "url": "https://accounts.redbus.com/login",
+      "summary": "Please provide your contact details Submit",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e45e5eb442be5a9",
+      "title": "Seattle Reign FC",
+      "url": "https://www.reignfc.com/",
+      "summary": "Reign FC’s mobile app is an essential tool for cheering on the team! Whether you’re at Lumen Field on matchday or watching the team from home, use the app to access player information, tickets and more.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "010c2e798efad6f4",
+      "title": "Seattle Reign FC 2026 — Fixtures, Results & Standings | Standd",
+      "url": "https://standd.fan/nwsl/seattle-reign",
+      "summary": "Seattle Reign FC NWSL 2026 season tracker — live standings, fixtures, match results, and broadcast info.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0518a690bbfa39e1",
+      "title": "Seattle Reign FC Nwsl Standings | FOX Sports",
+      "url": "https://www.foxsports.com/soccer/seattle-reign-fc-team-standings",
+      "summary": "Seattle Reign FC Nwsl standings, conference rankings, updated Seattle Reign FC records and playoff standings.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bb286d4c8ff52535",
+      "title": "Seattle Reign FC Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/soccer/team/_/id/15363/seattle-reign-fc",
+      "summary": "Visit ESPN for Seattle Reign FC live scores, video highlights, and latest news. Find standings and the full 2026 season schedule.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
@@ -380,151 +1276,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7876aff547ce4591",
-      "title": "The Mico University College — Shaping Educators. Transforming Jamaica.",
-      "url": "https://themico.edu.jm/",
-      "summary": "The Mico University College — shaping educators and transforming Jamaica through excellence in education, leadership, research and national development.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "956d780a7fdc951a",
-      "title": "The Mico University College — Shaping Educators. Transforming Jamaica.",
-      "url": "https://themico.edu.jm/programmes",
-      "summary": "The Mico University College — shaping educators and transforming Jamaica through excellence in education, leadership, research and national development.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ae0a5835a66f8672",
-      "title": "Aeorion - Mico University College",
-      "url": "http://aeorion.themico.edu.jm/",
-      "summary": "Take school anywhere with you Powered by: Login",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b44e64dd3cc1308e",
-      "title": "Aeorion - Mico University College",
-      "url": "https://aeorion.themico.edu.jm/Apply/apps/Default.aspx",
-      "summary": "Applying online at MICO is pretty easy. An interactive guide will stay with you every step of the way, and before you know it, you'll be on your way to earning an industry-current degree.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "25c41bfaae91f059",
-      "title": "Antarctica - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Antarctica",
-      "summary": "Antarctica (/ ænˈtɑːrktɪkə / ⓘ) [note 1] is Earth 's southernmost and least-populated continent. Situated almost entirely south of the Antarctic Circle and surrounded by the Southern Ocean (also known as the Antarctic Ocean), it contains the geographic South Pole. Antarctica is the fifth-largest continent, being about 40% larger than Europe, and has an area of 14,200,000 km2 (5,500,000 ...",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6fa62273568db7f6",
-      "title": "Can Iran enforce a restricted zone in the Strait of Hormuz?",
-      "url": "https://www.aljazeera.com/news/2026/9/7/can-iran-enforce-a-restricted-zone-in-the-strait-of-hormuz",
-      "summary": "Iran says it plans to establish a new restricted zonearound the Strait of Hormuz, a global energy chokepoint, after Tehran and Washington traded attacks on ships in the crucial waterway in what ...",
+      "id": "0da288122f045346",
+      "title": "Seattle Reign FC Tables & Standings - 2026 | Goal.com US",
+      "url": "https://www.goal.com/en-us/team/seattle-reign-fc/table/bl53jk6zlfe5f583pil7xzwi5",
+      "summary": "Latest Seattle Reign FC table and standing positions for NWSL",
       "discovery_channel": "adjacent",
       "query": "wearable eye tracking",
       "source": "Bing web RSS",
@@ -548,10 +1303,173 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5f00118cb0923899",
-      "title": "Changelog - HighLevel",
-      "url": "https://ideas.gohighlevel.com/changelog",
-      "summary": "See all of the latest product updates from HighLevel. Most recent update: Improved: Dynamic Value Chips with Improved error segmentation.",
+      "id": "a1e528ff1797570c",
+      "title": "Seattle Reign Standings - Soccer - 365Scores",
+      "url": "https://www.365scores.com/en-us/football/team/seattle-reign-13209/standings",
+      "summary": "Our Soccer coverage includes latest news, fixtures & results, standings, statistics and live match updates of competitions from all over the world including UEFA Champions League, Major League Soccer, NWSL, Premier League and LaLiga",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d901db2fdf52eb7e",
+      "title": "Seattle Reign | NWSLsoccer.com",
+      "url": "https://www.nwslsoccer.com/teams/1151140adfc24339ba1c93cb0b6b0238/seattle-reign/standings",
+      "summary": "Seattle Reign | NWSLsoccer.com. common-loading... Schedule. How to Watch. Standings. News. Teams. More... 2026 Championship. Players. Team Stats. Player Stats. NWSL+. About NWSL+. Tickets. Shop. Schedule. How to Watch. Standings. News. Teams. More... 2026 Championship. Players. Team Stats. Player Stats. NWSL+. About NWSL+. Tickets. Shop. Stats.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7d539547d04ee230",
+      "title": "Seattle Reign: Table & Standings - Football - 365Scores",
+      "url": "https://www.365scores.com/football/team/seattle-reign-13209/standings",
+      "summary": "Add the Seattle Reign Standings widget to your website See more options by customize your widget Generate HTML Tag",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c3a8a33cec78cb25",
+      "title": "Shakespeare, Chronological Order (41 books) - Goodreads",
+      "url": "https://www.goodreads.com/list/show/138375.Shakespeare_Chronological_Order",
+      "summary": "41 books based on 1 votes: The Two Gentlemen of Verona by William Shakespeare, The Taming of the Shrew by William Shakespeare, King Henry VI, Part 2 by W...",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e6d772ca71d5a57",
+      "title": "Spoors EFFORT | Forgot Password - agile.redbus.com",
+      "url": "https://agile.redbus.com/effortx/forgotpass",
+      "summary": "If you have forgotten your username or password or if your account is locked, please enter the email address associated with your account, and then click Reset Password.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9d028c34c38e323e",
+      "title": "Spoors Effort | Login - agile.redbus.com",
+      "url": "https://agile.redbus.com/effortx/login",
+      "summary": "Effort helps you build custom workflows for all your business functions - Sales, Marketing, HR, Finance, IT, and more.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a2608d17f3ac1d94",
+      "title": "Stay Connected with Online Account Access | Edward Jones",
+      "url": "https://www.edwardjones.com/us-en/client-resource-center/online-access-account-features/online-access",
+      "summary": "Learn about Online Access, exclusive to Edward Jones clients. It's your one-stop source for information about your accounts and financial news.",
       "discovery_channel": "adjacent",
       "query": "wearable AI interface",
       "source": "Bing web RSS",
@@ -575,10 +1493,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "74317b7019e8c07e",
-      "title": "Courses in HighLevel University | HighLevel",
-      "url": "https://hluniversity.gohighlevel.com/communities/groups/official-highlevel-community/learning",
-      "summary": "Welcome to HighLevel University! Browse our Courses, engage with all our educational/community resources, and scale your business!",
+      "id": "05e9e2058b3c42c6",
+      "title": "Welcome [edwardjonestrustcompany.ecx.seic.com]",
+      "url": "https://edwardjonestrustcompany.ecx.seic.com/",
+      "summary": "When this box is checked, you will be able to log in on this device with just your user ID and password. When the box is unchecked, additional verification will be required.",
       "discovery_channel": "adjacent",
       "query": "wearable AI interface",
       "source": "Bing web RSS",
@@ -588,1492 +1506,584 @@
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be049fd5bb0269be",
+      "title": "William Shakespeare - Book Series In Order",
+      "url": "https://www.bookseriesinorder.com/william-shakespeare/",
+      "summary": "Complete order of William Shakespeare books in Publication Order and Chronological Order.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bd6769a409fde371",
+      "title": "William Shakespeare Book order (chronological) - bookbot.com",
+      "url": "https://bookbot.com/a/147/timeline",
+      "summary": "Dieser Sammelband präsentiert acht bedeutende Dramen von William Shakespeare, darunter Klassiker wie \"Hamlet\", \"Romeo und Julia\" und \"Macbeth\". Die Werke thematisieren universelle Fragen zu Mensch und Welt und sind ein Muss für jede Hausbibliothek.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e2ea61ddafc1a36c",
+      "title": "William Shakespeare Books in Order",
+      "url": "https://inorderbookseries.com/authors/william-shakespeare",
+      "summary": "Complete William Shakespeare reading order. 4 series with all books listed in order. Publication dates & Amazon links included.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc5af6e2101e7e1f",
+      "title": "William Shakespeare Books in Order by William Shakespeare",
+      "url": "https://inorderbookseries.com/series/william-shakespeare",
+      "summary": "Read William Shakespeare in order by William Shakespeare. All 44 books with dates & links. Your complete reading guide.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9bd6b34b69d0d4f1",
+      "title": "William Shakespeare Books in Order including Hamlet, Romeo and Juliet ...",
+      "url": "https://www.booksinorderlist.com/authors/william-shakespeare",
+      "summary": "Complete list of all William Shakespeare books in reading order. Browse every series by William Shakespeare in chronological order including Hamlet, Romeo and Juliet.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "00ee08662cb9f6df",
+      "title": "William Shakespeare Reading Order (46 books) | BookFlowing",
+      "url": "https://www.bookflowing.com/en/author/william-shakespeare",
+      "summary": "Complete reading order guide for William Shakespeare. 46 books sorted by series and chronology. Don't miss a single one.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2bca97f18f0c3908",
+      "title": "William Shakespeare's Works/Plays in Chronological Order - Wikibooks ...",
+      "url": "https://en.m.wikibooks.org/wiki/William_Shakespeare%27s_Works/Plays_in_Chronological_Order",
+      "summary": "William Shakespeare's Works/Plays in Chronological Order. Add languages. Add links. Book. Discussion. English. Read. Edit source. View history. Tools.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "06b57f8003fd604e",
+      "title": "如何设置修改outlook邮箱签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/7082dc1c0cb152e40a89bd13.html",
+      "summary": "分步阅读 工作中，经常会有人问outlook邮箱的签名怎么设置或修改，不懂的请往下看啦~ 工具/原料 outlook 方法/步骤 1 启动outlook邮箱，点击左上角的【文件】。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4cb1e4e8a3aec831",
+      "title": "比较好用的电子邮箱，大家有哪些推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/299339545",
+      "summary": "此时，我个人强烈推荐微软的Outlook。 因为外国网站有比较大的概率会拒绝国内的邮箱地址注册，outlook作为老牌国际电子邮件提供商，不会存在这个问题。 outlook 可以添加 11 个别名。 相当于一次登录，可以查看 11 个邮箱的内容。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b8a6e55dc72fb65",
+      "title": "AR-15–style rifle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/AR-15%E2%80%93style_rifle",
+      "summary": "Toggle Modularity and customization subsection. 2.1Folding stocks. 2.2Gas systems. 2.3Left-handed users. 2.4Calibers. 2.5Compliance with state or local restrictions. 3Comparison to military versions. 4Production and sales.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1d2c7b1eb9c3a751",
+      "title": "Translate - Google",
+      "url": "https://translate.google.com.jm/m",
+      "summary": "Google home Send feedback Privacy and terms Switch to full site",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "privacy"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "465a62290f909213",
+      "title": "[US] Bing Homepage Quiz (01-01-2022) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/rtcbye/us_bing_homepage_quiz_01012022/",
+      "summary": "MembersOnline [US] All the daily quests: Bing homepage quiz + Supersonic quiz [01-04-2022] upvotes ·comments r/MicrosoftRewards r/MicrosoftRewards We are not associated with Microsoft and are a community driven group to help maximize earning points.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
       "content_types": [
         "community"
       ],
       "primary_type": "community",
       "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b58c998f8293b751",
-      "title": "Disney logo - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Disney_logo",
-      "summary": "Disney logo. 2 languages. 日本語. 한국어. Edit links. Article. Talk.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "93518e982b339a76",
+      "title": "[US] Bing homepage quiz - (1-02-2022) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/ru2gr8/us_bing_homepage_quiz_1022022/",
+      "summary": "r/MicrosoftRewards We are not associated with Microsoft and are a community driven group to help maximize earning points. MembersOnline [US] Bing Homepage Quiz (01-01-2022) upvotes ·comments r/MicrosoftRewards r/MicrosoftRewards We are not associated with Microsoft and are a community driven group to help maximize earning points.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "86ff9314539cbc23",
-      "title": "Disney World Releases New 55th Anniversary Logo - AllEars.Net",
-      "url": "https://allears.net/2026/08/31/disney-world-releases-new-55th-anniversary-logo/",
-      "summary": "Disney World has revealed the official logo for its upcoming 55th Anniversary!",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d25cb65f4a877ac0",
-      "title": "File:Walt Disney World Logo 2018.svg - Wikimedia Commons",
-      "url": "https://commons.wikimedia.org/wiki/File:Walt_Disney_World_Logo_2018.svg",
-      "summary": "File:Walt Disney World Logo 2018.svg. Discussion.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5ef4d194c34b6b39",
-      "title": "GoHighLevel - It's time to take your Agency to the Next Level",
-      "url": "https://www.gohighlevel.com/",
-      "summary": "HighLevel is the all-in-one sales & marketing platform that agencies can white-label and resell to their clients!",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e6518d52364f7835",
-      "title": "GoHighLevel - Partner Program",
-      "url": "https://partners.gohighlevel.com/",
-      "summary": "Partner Program Browse for HighLevel experts based on the services they offer and the industries they serve in the new Certified Admin Directory.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d156f9131627cbcb",
-      "title": "Having Issues? Get 24/7 Customer Support from HighLevel",
-      "url": "https://help.gohighlevel.com/support/solutions/articles/155000000969-24-7-customer-support-options",
-      "summary": "Struggling with issues? Get 24/7 customer support from HighLevel! Our dedicated team is here to help you anytime, ensuring your business runs smoothly.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "97366f4669a71cdd",
-      "title": "HighLevel Pricing",
-      "url": "https://www.gohighlevel.com/pricing",
-      "summary": "Unlimited Contacts, Unlimited Users on all plans. Start with a 14 Day Free Trial today!",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "143d1787dee3c406",
-      "title": "HighLevel University | HighLevel",
-      "url": "https://hluniversity.gohighlevel.com/communities/groups/official-highlevel-community/home",
-      "summary": "Welcome to HighLevel University! Browse our Courses, engage with all our educational/community resources, and scale your business!",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "community"
       ],
       "primary_type": "community",
       "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7e47b0c2d6da6b29",
-      "title": "Home - The Mico Online",
-      "url": "https://themicoonline.com/",
-      "summary": "The Mico University College prepares for Mico Week 2026 with Sports Day, Staff Cricket Competition, and a week of activities celebrating 190 years of educational excellence.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "694c7a5659024ad0",
+      "title": "[US] In 2016, the American bison was declared what? - MS Bing Quiz : r ...",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/rysc10/us_in_2016_the_american_bison_was_declared_what/",
+      "summary": "Microsoft Bing Homepage daily quiz questions and their answers MembersOnline discoverbits ADMIN MOD [US] In 2016, the American bison was declared what? [1-8-2022] Microsoft Rewards Bing Homepage Quiz Questions and Answers: Question:Today we're befriending a frosty bison foursome in Yellowstone National Park. Bison are…",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "746dcc8efefb38c6",
-      "title": "Iran News Live | Real-Time Iran War News, Nuclear Crisis, Oil Prices ...",
-      "url": "https://irannews.live/",
-      "summary": "Live Iran war news, nuclear crisis, oil prices, sanctions, OSINT intelligence, protests, human rights and internet outage tracking. Updated in real-time.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
+      "id": "5f1f44f49f4331e2",
+      "title": "Bing Homepage Quiz (4-28-2024) : r/EveryDayBingQuiz - Reddit",
+      "url": "https://www.reddit.com/r/EveryDayBingQuiz/comments/1celjyr/bing_homepage_quiz_4282024/",
+      "summary": "Welcome all of you, here you will get daily answers of Microsoft Rewards (Bing Quiz) like Bing Homepage Quiz, Bing Supersonic Quiz, Bing News Quiz, Bing Entertainment Quiz, Warpspeed Quiz, Turbocharger Quiz & Etc.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b3ca5178c271755f",
-      "title": "Iran to announce \"restricted zone\" outside Hormuz Strait: top security ...",
-      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260907-pdo01.htm",
-      "summary": "TEHRAN, Sept. 6 (Xinhua) -- Secretary of Iran's Supreme National Security Council Mohsen Rezaei has said that his country would announce a restricted zone outside the Strait of Hormuz in the ...",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
+      "id": "160108028b618ba2",
+      "title": "Bing Homepage Quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r9ag3r/bing_homepage_quiz/",
+      "summary": "MembersOnline local_bellboy ADMIN MOD Bing Homepage Quiz Quiz and Answers Quiz for December 5, 2021 Krampus Pennsylvania Get new clothes for Christmas Share Sort by: Best Open comment sort options",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "community",
       "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "87d75c37bae26614",
-      "title": "Iran to announce 'restricted zone' outside Strait of Hormuz",
-      "url": "https://news.cgtn.com/news/2026-09-07/Iran-to-announce-restricted-zone-outside-Strait-of-Hormuz-1QeN1p1V8kw/p.html",
-      "summary": "Iran will announce a \"restricted zone\" outside the Strait of Hormuz in the coming days, and any vessel attempting to transit the area without coordination with Tehran will be placed on Iran's sanctions list, Secretary of Iran's Supreme National Security Council Mohsen Rezaei said Sunday.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
+      "id": "e6ace8dc14637fcb",
+      "title": "Bing homepage quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8qjk5/bing_homepage_quiz/",
+      "summary": "On this quiz, no. On This or That, yes. Reply reply EmpireStatePhotoDept On this or that, you don’t lose points though, for this or that every question you get right gives you 5 points so if you only get 9 out of 10 questions right you’d only get 45 points instead of 50. They don’t take any of your points for wrong answers.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5a8836e7138744ea",
-      "title": "Iran War 2026- LIVE UPDATES - ARY News",
-      "url": "https://arynews.tv/news/liveblog/iran-war-2026-live-updates-trump-us-israel?update=07-Sep-2026-18-44-00",
-      "summary": "U.S. President Donald Trump lashed out at Iran over stalled nuclear negotiations after weeks of war starting from 28 February 2026",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
+      "id": "1d22c65c81b9f825",
+      "title": "Bing Homepage Quiz not working : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1c3iarz/bing_homepage_quiz_not_working/",
+      "summary": "MembersOnline Delindil ADMIN MOD Bing Homepage Quiz not working Bing Hello, Is there some secret to getting the Bing Homepage quiz to work correctly? When I try to complete it on the mobile app it just loads the page for the search results for the correct answer and the actual quiz no longer continues.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "95c6b811b50cecdf",
-      "title": "Iran war latest: US hits three Iranian oil tankers - as Iran navy ...",
-      "url": "https://news.sky.com/story/iran-war-latest-trump-qatar-talks-witkoff-kushner-13509565",
-      "summary": "The US military says its forces have struck three Iranian oil carriers after the Islamic Revolutionary Guard Corps fired ballistic missiles toward two US Navy warships. Follow the latest updates.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a41d6151b53c9a9d",
-      "title": "Iran War Live Map — Real-Time Strike & Casualty Tracker | IranWarLive",
-      "url": "https://iranwarlive.com/",
-      "summary": "The live intelligence tracker for the Iran-Israel-US war 2026— the largest US military operation in the Middle East since the 2003 invasion of Iraq. We map every verified kinetic event, track casualties from official sources, and monitor the Strait of Hormuz crisis, ceasefire negotiations, and the expanding multi-front conflict in real time.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f6518edade220142",
-      "title": "Iran War News (2026): Live Updates, Ceasefire & Deal",
-      "url": "https://armedconflicts.org/iran-news.html",
-      "summary": "Latest Iran war news: the 14-point US–Iran ceasefire deal, the Strait of Hormuz, the nuclear question and the Lebanon front. Auto-updated.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "09767d2ac2e749bb",
-      "title": "Iran war updates: Iran pledges to stand firm against ‘unjust’ US ...",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade",
-      "summary": "This live page is now closed, but our 24-hour coverage of the conflict continues. Join us for all the latest developments, analyses and reactions here. 29 Aug 2026 - 23:50 (23:50 GMT)",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b2986c5834f891e0",
-      "title": "Iran–US War 2026: Ceasefire, Timeline & the Deal",
-      "url": "https://armedconflicts.org/iran-us-war.html",
-      "summary": "The 2026 Iran–US war and the fragile ceasefire: the 14-point Islamabad MOU, the Strait of Hormuz, casualties, nuclear sites and the 60-day window.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "db70765d03c0e7fe",
-      "title": "Is There an Iran Ceasefire? Live Talks & Deal Tracker | IranWarLive",
-      "url": "https://iranwarlive.com/diplomacy",
-      "summary": "Is there an Iran ceasefire? No deal is in force: the June memorandum expired unextended and no direct US-Iran talks exist. Live tracker, updated daily.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "33df340a291bdcca",
-      "title": "Live: Latest on US and Iran as Hormuz standoff persists - CGTN",
-      "url": "https://news.cgtn.com/news/2026-09-07/Live-Latest-on-US-and-Iran-as-Hormuz-standoff-persists-1QfcSakKcEg/p.html",
-      "summary": "Latest on US and Iran as situation remains unstable while tensions between Tehran and Washington have escalated in recent weeks.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "565781c56ec198dd",
-      "title": "Mico University College - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Mico_University_College",
-      "summary": "Search Search Toggle the table of contents Mico University College 1 languageAdd topic",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3e848b223212a914",
-      "title": "Minecraft Skin Editor",
-      "url": "https://www.minecraftskins.net/skineditor",
-      "summary": "Design your own Minecraft skin with our easy to use skin maker. You can also upload an existing skin to edit.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d5164a723791237c",
-      "title": "Minecraft Skin Editor & Maker - Create Skins in 3D | Laby",
-      "url": "https://laby.net/tools/skin-editor",
-      "summary": "Free Minecraft skin editor in your browser. Paint straight onto the 3D model with layers, symmetry and filters, then download a 64x64 PNG.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a666f4d8347a12a6",
-      "title": "Minecraft Skin Editor - Online Editor | McSkins.org",
-      "url": "https://mcskins.org/skin-editor",
-      "summary": "Create and edit Minecraft skins online. Draw on 3D models with pencil, eraser, and fill tools. Supports Steve and Alex models. Free, no download required.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d7a4a55b996386b8",
-      "title": "Minecraft Skin Editor - The Skindex",
-      "url": "https://www.minecraftskins.com/skin-editor/",
-      "summary": "Make your own Minecraft skins from scratch or edit existing skins on your browser and share them with the rest.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c4d6b590621381d9",
-      "title": "Minecraft Skin Editor | PMCSkin3D",
-      "url": "https://www.planetminecraft.com/skin-editor/",
-      "summary": "Our skins editor 3d is the perfect tool for creating and editing custom skins for your player and mobs in Minecraft. With its user-friendly interface and live previewfeature, you'll have your skin looking just the way you want it in no time.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fb2182b60e81ef14",
-      "title": "Minecraft Skin Editor – create SD and HD skins",
-      "url": "https://mcskins.top/editor",
-      "summary": "Use this editor to create your own Minecraft skin or edit someone else's skin and share it with your friends or other users. Supported sizes: x64 and HD x128.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "313e842f95bd4517",
-      "title": "Minecraft Skin Editor — Paint on the 3D Model",
-      "url": "https://minecraftskinlab.com/tools/skin-editor",
-      "summary": "Free online Minecraft skin editor. Paint straight onto the 3D character or the flat 64×64 texture, mirror both sides, and download the PNG.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3204cdb385dd1de9",
-      "title": "Minecraft Skin Editor — SkinMC",
-      "url": "https://skinmc.net/skin-editor",
-      "summary": "Create and edit your custom Minecraft Skin easily with the SkinMC Editor. You can choose between Steve and Alex models, import skins from a file or username, and create your very own Minecraft Skin.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "22b63f92f9bc39e9",
-      "title": "Minecraft Skin Maker & Editor - Free Online | mcskincraft",
-      "url": "https://mcskincraft.com/minecraft-skin-editor",
-      "summary": "Free Minecraft skin maker and editor online, no download or sign-up. Make, edit, import, and export skins instantly with pro tools right in your browser.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "584324724f570265",
-      "title": "Nova Skin - Free Minecraft Skin Editor Online | No Download Required",
-      "url": "https://minecraft.novaskin.me/",
-      "summary": "Create custom Minecraft skins free with our 3D editor. No download needed. Edit, design, and download skins instantly. Used by millions of players worldwide.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a09830a60bb8e926",
-      "title": "Sign in | HighLevel",
-      "url": "https://community.gohighlevel.com/",
-      "summary": "GoHighLevel is a platform for marketers to manage, grow, and elevate their businesses effectively.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "tool",
         "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "community_evidence_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c82702607e8d8e2c",
-      "title": "Sign in | HighLevel",
-      "url": "https://community.gohighlevel.com/dashboard",
-      "summary": "Sign in with a secure code New here? Sign up support@gohighlevel.com©HighLevel, Inc.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
+      "id": "b471e311f4385657",
+      "title": "Bing Homepage quiz task not triggering? : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8i6lc/bing_homepage_quiz_task_not_triggering/",
+      "summary": "MembersOnline Lizuka ADMIN MOD Bing Homepage quiz task not triggering? Questions Tried it on both Chrome and Edge multiple times and it just will not flag as completed. Anyone else having this issue? Share Add a Comment Sort by: Best",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "community"
       ],
       "primary_type": "community",
       "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d314992650e20d28",
-      "title": "The Mico University College - The University Council of Jamaica",
-      "url": "https://www.ucj.org.jm/registered-inst/the-mico-university-college/",
-      "summary": "All Programmes Recognised The Mico University College is an institution accredited by the University Council of Jamaica (UCJ). All its tertiary level programmes are recognised. These programmes therefore receive the same status as accredited programmes. Contact Address: 1A Marescaux Road, Kingston 5 website: https://themico.edu.jm/",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "37691d659595699c",
+      "title": "Blossom Flower Delivery - Florist Delivered Flowers",
+      "url": "https://www.blossomflowerdelivery.com/",
+      "summary": "Send flowers, roses, balloons, plants and gift baskets by #1 online florist - Blossom Flower Delivery. We have beautiful flower arrangements available for delivery today.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d952bc65db29df49",
-      "title": "The Mico University College, 1A Maresceaux Road, Kingston (2026)",
-      "url": "https://www.schoolandcollegelistings.com/JM/Kingston/112784365418819/The-Mico-University-College",
-      "summary": "Founded in 1836, The Mico University College (formerly The Mico Teachers’ College) in Kingston, Jamaica is the oldest teacher training college in the Western hemisphere and one of the oldest in the world, rivaling the Battersea College (1817) in England.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "4717f4c7a18f9db3",
+      "title": "Breaking News - The New York Times",
+      "url": "https://www.nytimes.com/video/breaking-news",
+      "summary": "Gloria Steinem, the feminist icon and co-founder of Ms. magazine, died on Wednesday at her home in New York City. She was 92.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a7b2e1e8cdbf456c",
-      "title": "The Mico University College, 1A Maresceaux Road, Kingston (2026)",
-      "url": "https://www.findglocal.com/JM/Kingston/112784365418819/The-Mico-University-College",
-      "summary": "Founded in 1836, The Mico University College (formerly The Mico Teachers’ College) in Kingston, Jamaica is the oldest teacher training college in the Western hemisphere and one of the oldest in the world, rivaling the Battersea College (1817) in England.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "195b416358b19981",
-      "title": "US-Iran War LIVE | Iran's Fresh Warning to US: Response To ... - Times Now",
-      "url": "https://www.timesnownews.com/world/middle-east/us-iran-war-live-updates-latest-news-on-iran-strikes-iran-us-bases-in-middle-east-as-america-launches-fresh-attacks-gulf-region-tensions-liveblog-156030033",
-      "summary": "Times Now DigitalUpdated Sep 7, 2026, 10:16 IST US Iran War News Live Updates:The latest developments as US strikes and Iranian retaliation push the six-month conflict back into full-scale escalation, with Hormuz, regional military bases and civilian areas once again at the centre of the crisis.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "229a3ea277268081",
-      "title": "US-Iran War News — Live Ceasefire, Cost & Casualties Updates",
-      "url": "https://militaryspend.org/us-iran-war-news",
-      "summary": "Live aggregated news feed of the USA-Iran war: ceasefire status, war cost, and casualty developments since Feb 28, 2026, with source attribution and verified timelines.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e43ce925686b59b",
-      "title": "Walt Disney World - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Walt_Disney_World",
-      "summary": "1.1.2Roy Disney's oversight of construction. 1.21971–1982: Opening and early expansion. 1.31982–2013: Mass expansion. 1.42013–present: Current advancements. 2Location. 3Attractions.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d8ba52c6bf3c48fe",
-      "title": "Walt Disney World Logo - Freebie Supply",
-      "url": "https://freebiesupply.com/logos/walt-disney-world-resort-logo/",
-      "summary": "Download the Walt Disney World logo PNG, SVG and vector format. The Walt Disney World logo black and white is transparent and can be used on any background.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "76b652c0e6277c5a",
-      "title": "Walt Disney World logo and symbol, meaning, history, PNG",
-      "url": "https://1000logos.net/walt-disney-world-logo/",
-      "summary": "Explore how the Walt Disney World Logo has transformed since 1971, reflecting the brand’s growth and its enchanting park experience.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2298a867777dcb50",
-      "title": "Walt Disney World Logo PNG Vectors Free Download - seeklogo",
-      "url": "https://seeklogo.com/free-vector-logos/walt-disney-world",
-      "summary": "We have 8 free Walt Disney World logo png, transparent images, vector logos, logo templates and icons. You can download in PNG, SVG, AI, EPS, CDR formats.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6cedaabbaa1faa4a",
-      "title": "Walt Disney World Logo, symbol, meaning, history, PNG, brand",
-      "url": "https://logos-world.net/disney-world-logo/",
-      "summary": "The combination of Walt Disney’s signature and the elegant “World” font highlights the brand’s heritage and commitment to creating magical experiences. It captures the essence of Disney World as a place where dreams come true, making it instantly recognizable and meaningful to fans worldwide.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "49f3ecc3736d4c81",
-      "title": "Walt Disney World | Logopedia | Fandom",
-      "url": "https://logos.fandom.com/wiki/Walt_Disney_World",
-      "summary": "Walt Disney World opened on October 1, 1971. This logo became the secondary logo in 1996. This logo is still used by Disney today as its secondary logo. It's mainly used in merchandise; the symbol also continues to be shown on the Walt Disney World Monorail System's trains. One of the earliest...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ed1cf7da3073d054",
-      "title": "Walt Disney World/Anniversary | Logopedia | Fandom",
-      "url": "https://logos.fandom.com/wiki/Walt_Disney_World/Anniversary",
-      "summary": "Walt Disney World/Anniversary | Logopedia | Fandom. Logopedia. Welcome to Logopedia! Feel free to view or add logos. We currently have over 150,000articles and logos! READ MORE. Sign In . Create a Free Account . Logopedia. Explore. Main Page. All Pages. Community. Interactive Maps. Browse wiki. Search Logopedia. Browse by Wiki Activity.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "85b3dfe88ca94da5",
-      "title": "南极洲 - 维基百科，自由的百科全书",
-      "url": "https://zh.wikipedia.org/wiki/%E5%8D%97%E6%9E%81%E6%B4%B2",
-      "summary": "在1930至1940年間，李察·柏德领导了幾次前往南極洲的飛行行动。 他相信，不久後人們就会在南極洲實施機械化的陸路交通運輸並進行廣泛的地質和生物研究[141]。 然而，之後一段时间並没有任何人再次踏上南極。 1956年10月31日，由海軍少將喬治·達范克（英语：George J. Dufek）帶領的一隊美國海軍小 ...",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "66d3abb294c4229c",
-      "title": "南极洲（世界七大洲之一）_百度百科",
-      "url": "https://baike.baidu.com/item/%E5%8D%97%E6%9E%81%E6%B4%B2/361230",
-      "summary": "南极洲(Antarctica)，围绕南极的大陆，地球七大洲之一。位于地球南端，四周被南冰洋所包围，边缘有别林斯高晋海、罗斯海、阿蒙森海和威德尔海等。南极洲由大陆、陆缘冰、岛屿组成，总面积1424.5万平方公里，其中大陆面积1239.3万平方千米，陆缘冰面积158.2万平方公里，岛屿面积7.6万平方公里 ...",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "391fdb923a5da5ea",
-      "title": "南極洲 (世界七大洲之一):地理環境,地形特徵,分區,島嶼分布,氣候特徵,季節與晝夜_中文百科全書",
-      "url": "https://www.newton.com.tw/wiki/%E5%8D%97%E6%A5%B5%E6%B4%B2%20",
-      "summary": "南極洲 (Antarctica)，圍繞南極的大陸，地球七大洲之一。 位於 地球 南端，四周被南冰洋所包圍，邊緣有 別林斯高晉海 、 羅斯海 、 阿蒙森海 和 威德爾海 等。",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2052b8d7a3941dce",
-      "title": "南極洲 (地球七大洲之一):南極洲來源,地理環境,地形特徵,分區,島嶼分布,氣候特徵_中文百科全書",
-      "url": "https://www.newton.com.tw/wiki/%E5%8D%97%E6%A5%B5%E6%B4%B2",
-      "summary": "南極洲分 東南極洲 和 西南極洲 兩部分。 東南極洲從西經30°向東延伸到東經170°，包括 科茨地 、 毛德皇后地 、 恩德比地 、 威爾克斯地 、 喬治五世海岸 、 維多利亞地 、 南極高原 和 南極點。 面積1018萬平方千米。",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b8dae17cbee235d1",
-      "title": "南極洲 - 來自維基導遊的旅行指南",
-      "url": "https://zh.wikivoyage.org/zh-tw/%E5%8D%97%E6%9E%81%E6%B4%B2",
-      "summary": "林德布拉德率先於1966年前往南極洲，並提供多次前往南極半島的旅行，以及包括福克蘭群島和南喬治亞在內的新的148位客人的「國家地理探索者」之旅。 National Geographic Expeditions。 這次旅行還包括參觀南喬治亞和福克蘭群島。 該網站提供了旅行所需的所有信息。",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e6034cc8b474d572",
-      "title": "南極洲 - 維基大典",
-      "url": "https://zh-classical.wikipedia.org/wiki/%E5%8D%97%E6%A5%B5%E6%B4%B2",
-      "summary": "南極洲 南極洲所在 南極洲者，地之極南大陸也。 環以 南冰洋，悉在 南極圈 中。 幅員一千四百二十萬里，位列第五大洲，幾倍 歐洲。 洲地高聳，均海拔二千八百五十丈。 冰雪覆蓋，厚過千丈。 最高峰曰文森，高一萬六千尺有奇。 其候寒甚，冠絕 全球。",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "900fa7bfaa843c93",
-      "title": "南極洲 - 維基百科，自由嘅百科全書",
-      "url": "https://zh-yue.wikipedia.org/wiki/%E5%8D%97%E6%A5%B5%E6%B4%B2",
-      "summary": "南極洲係最南嘅大洲，南極就響佢上面。 平均來講，響各大洲之中，係至凍、至乾、至大風嘅地方。 平均高度都係最高。 佢98%都係畀冰冚住，面積有14 000 000 平方千米。 除咗海邊，成個地方都係好少 降水，所以算係 荒漠，重係世界上最大嘅荒漠。",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b5edd63a1b3fccc8",
-      "title": "南極洲 - 維基百科，自由的百科全書",
-      "url": "https://zh.wikipedia.org/zh-tw/%E5%8D%97%E6%9E%81%E6%B4%B2",
-      "summary": "一些科學研究結果顯示臭氧層空洞是南極洲乃至南半球其他區域氣候變化的主導因素之一[182]。 臭氧可以吸收大量輻射入平流層的紫外線，並轉化為熱。 南極洲上空的臭氧層空洞會造成這一地區的平流層的溫度下降7002279149999999999♠6 °C左右。",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1bf4dfc16a571df9",
-      "title": "南極洲 - 自由編輯个維基百科",
-      "url": "https://hak.wikipedia.org/wiki/%E5%8D%97%E6%A5%B5%E6%B4%B2",
-      "summary": "南極洲 南極洲 係一塊基本上位於南極圈以南嘅洲。 南極洲土地在南極圈內，四周係 太平洋 、 印度洋 撈 大西洋；係世界上 地理 最高嘅洲。 氣候異常寒冷，終年覆蓋冰雪，係寒帶冰原氣候。 全年平均係零下25度，內陸高原平均係零下56度左右。",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5eace2f1f40ecbf4",
-      "title": "CBS Sports - News, Live Scores, Schedules, Fantasy Games, Video and ...",
-      "url": "https://www.cbssports.com/",
-      "summary": "CBS Sports features live scoring, news, stats, and player info for NFL football, MLB baseball, NBA basketball, NHL hockey, college basketball and football.",
+      "id": "1079fd16fd1be3f0",
+      "title": "Can’t access YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "summary": "If your channel is connected to a Brand Account, click your icon in the top right of the page. You can choose the page with the YouTube content you would like to manage. Choose whether you want to hide or delete your YouTube channel and content. Be sure to read carefully—if you delete some content, you can't get it back.",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -2096,12 +2106,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9966e4417a3ed520",
-      "title": "CBS Sports HQ Live on CBS",
-      "url": "https://www.cbs.com/live-tv/stream/sports/",
-      "summary": "CBS Sports HQ is your 24/7 streaming home for game previews, recaps, highlights, breaking news and analysis from the top experts covering the sports you love.",
+      "id": "6034411fd66e9e30",
+      "title": "Find a Local Florist for Fresh Flower Delivery | Find a Florist",
+      "url": "https://www.findaflorist.com/",
+      "summary": "Whether you need to say Congratulations, Happy Birthday, or just want to send a smile, sending flowers for friends and family is easy and fun with Find a Florist, the best online florist directory available. You are a quick search away from finding a local florist that can deliver beautiful handcrafted arrangements that are sure to delight.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "63f955d42af924d1",
+      "title": "Flower Delivery: Order Flowers Online | James Cress Florist",
+      "url": "https://jamescressflorist.com/",
+      "summary": "Flower Delivery: Order Flowers Online | James Cress Florist . Skip to content. Same-Day Delivery Send Fresh Blooms → . Close. Looking for help with your order? | Contact us. Search . Sign In . Shop Flowers & Gifts | 100% Smile Guarantee.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2122,12 +2158,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ba22c139c87cf749",
-      "title": "CBS Sports TV - CBSSports.com",
-      "url": "https://www.cbssports.com/cbssports",
-      "summary": "CBS Sports provides in-depth coverage of all your favorite sports, including NFL football, NCAA football and basketball, tennis, golf and auto racing. Get complete broadcast schedules with...",
+      "id": "02011bc638258ed2",
+      "title": "Flower Delivery: Send Flowers Online | FTD",
+      "url": "https://www.ftd.com/",
+      "summary": "Shop All Birthday. Occasions. SEASONAL OCCASIONS. Back to School. Labor Day (9/7) Patriot Day (9/11) Rosh Hashanah (9/11-9/13) Grandparents Day (9/13) Pet Memorial Day (9/13) EVERYDAY OCCASIONS. Anniversary. Birthday.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2148,12 +2184,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2333384e05ff2d81",
-      "title": "CBS Sports | Paramount",
-      "url": "https://www.paramount.com/about/brands/cbs-sports",
-      "summary": "CBS Sports also delivers an extensive lineup of global soccer coverage on Paramount+, including every UEFA club competition match, all Serie A matches as well as Concacaf national team competitions.",
+      "id": "dccd3fe73f110e44",
+      "title": "Flowers, Flower Delivery, Fresh Flowers Online – 1-800-Flowers.com",
+      "url": "https://www.1800flowers.com/",
+      "summary": "Send flowers and send a smile! Discover fresh flowers online, gift baskets, and florist-designed arrangements. Flower delivery is easy at 1-800-Flowers.com.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2174,12 +2210,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a7733b4b6c3e1a16",
-      "title": "CBS Sports: Live Scores & News - Apps on Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.handmark.sportcaster&hl=en-US",
-      "summary": "CBS Sports is your source for top sports news, scores, videos and more!",
+      "id": "8ee54215c3614089",
+      "title": "French Florist: Premier Floral Boutique. Same Day Delivery.",
+      "url": "https://www.frenchflorist.com/",
+      "summary": "French Florist: Premier Floral Boutique. Same Day Delivery. Trending Searches. BirthdayRosesPeoniesOrchids. Featured. Same-Day Delivery. Most Loved. Mother's Day. Just Because. Sign In. Create Account. Email. Password. Sign InForgot password? Order Summary (0) Your cart is empty. Subtotal$0. DeliveryTBD. TaxesTBD. Total$0. Proceed to Checkout.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2200,114 +2236,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6959fb5b090f84d4",
-      "title": "CBSSports.com",
-      "url": "https://mweb.cbssports.com/login",
-      "summary": "The content on this site is for entertainment purposes only and CBS Sports makes no representation or warranty as to the accuracy of the information given or the outcome of any game or event.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f05ca48322423aa4",
-      "title": "CBSSports.com APP",
-      "url": "https://mweb.cbssports.com/promo?r=/",
-      "summary": "Get lightning fast scores, stats, news, tweets & push notifications",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "04fe931b8a2b4b53",
-      "title": "College Football - CBS Sports",
-      "url": "https://www.cbssports.com/college-football/",
-      "summary": "CBS Sports has the latest college football news, live scores, stats, standings, fantasy games and projections.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4eef762ac6a39316",
-      "title": "Columbus GA Breaking News & Crime | Columbus Ledger-Enquirer",
-      "url": "https://www.ledger-enquirer.com/",
-      "summary": "Read today's Edition Columbus' People's Choice . Local Events . News . Local News. Crime. Weather News. Environment.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "713d615c4498e94c",
-      "title": "Free AI Translator - Best Translation from 22 Models",
-      "url": "https://www.machinetranslation.com/",
-      "summary": "Free AI Translator - Best Translation from 22 Models. MachineTranslation.comBy Tomedes. Log inSign Up Free. Upgrade for best AIs. Go Unlimited. Login. Afrikaans. Albanian (Shqip) Amharic (አማርኛ) Arabic (العربية) Belarusian (Беларуская) Bengali (বাংলা) Bosnian (Bosanski) Bulgarian (Български) Burmese (မြန်မာစာ) Catalan (Català)",
+      "id": "3c9bcdbfcd08cef3",
+      "title": "Google Translate",
+      "url": "https://translate.google.com.jm/details",
+      "summary": "Send feedback Enter text to look up details",
       "discovery_channel": "broad_web",
       "query": "translation smart glasses",
       "source": "Bing web RSS",
@@ -2330,12 +2262,65 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "777034a6bb8c358e",
-      "title": "How To Open The Display Settings on Windows 10/11 - YouTube",
-      "url": "https://www.youtube.com/watch?v=kOaaXUT1eCA",
-      "summary": "How To Open The Display Settings on Windows 10/11The display settings menu in Windows 11 is where you adjust your monitor's resolution, change the display sc...",
-      "discovery_channel": "broad_web+retail",
-      "query": "display smart glasses; titanium AI glasses ChatGPT site:walmart.com",
+      "id": "ad96792c87f2958c",
+      "title": "Houston Florist - Flower Delivery by Colony Florist",
+      "url": "https://www.colonyflorist.com/",
+      "summary": "Order flowers online from your florist in Houston, TX. Colony Florist, offers fresh flowers and hand delivery right to your door in Houston.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8cfe7dac70237f7a",
+      "title": "Manage your home area or current location for YouTube TV - Computer ...",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "When you sign up for YouTube TV, we’ll ask you to share your home zip code. We may also ask you to verify your area location via your device location permissions. This requirement is to make sure you get the right networks in your location.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53ba1c6dc8f15b17",
+      "title": "Next in Cinema",
+      "url": "https://www.nextincinema.com/",
+      "summary": "Discover upcoming movie releases, watch trailers, and get the latest information about new films coming to theaters. Your ultimate guide to what's next in cinema.",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2356,10 +2341,141 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2a59570881737e31",
-      "title": "Live Cameras | Missouri Department of Transportation",
-      "url": "https://www.modot.org/improvei70kc/live-cameras",
-      "summary": "Contact Us Live Cameras Kansas City Scout Traffic Cameras Visit the MoDOT Traveler Information Mapto view more traffic cameras in the Missouri. Embed I-70 at Prospect Ave. Is Responsive",
+      "id": "53e99b9002841fc2",
+      "title": "Same-Day Flower Delivery Handcrafted by Local Florists",
+      "url": "https://www.bloomnation.com/",
+      "summary": "Same-Day Flower Delivery . Shop by City . Same-Day Occasions . Same-Day Birthday .",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f35a9b74d526b49d",
+      "title": "Shop At SA's Best Online Florist & Gift Company | NetFlorist",
+      "url": "https://www.netflorist.co.za/",
+      "summary": "Shop At SA's Best Online Florist & Gift Company | NetFlorist. Delivering To. South Africa. View All. Where Is My Order? Sign / SignUp . Upcoming Occasions. Rosh Hashanah 11 - 13 Sep. Grandparents Day 13 Sep. Heritage Day 24 Sep. Rosh Hashanah Gifts. Flowers. Plants. Personalised Gifts. Gifts Of Faith. Chocolate & Candy Jars. Homeware. Gourmet.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2237cdd034d809fc",
+      "title": "Sign in and out of YouTube - Computer - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/3802431?hl=en-WS&co=GENIE.Platform%3DDesktop",
+      "summary": "Signing in to YouTube allows you to access features like subscriptions, playlists and purchases, and history. Note: You'll need a Google Account to sign in to YouTube.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a063583b80be986f",
+      "title": "Smart Online Store",
+      "url": "https://store.smart.com.ph/",
+      "summary": "Smart Communications, Inc. is the Philippines’ leading wireless provider. Enjoy shopping on Smart Online Store!",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f4563f429eb770f",
+      "title": "Teleflora | Order Flower Delivery Online | Flowers Near Me",
+      "url": "https://www.teleflora.com/",
+      "summary": "Shop All Funeral & Sympathy. For the Home. Sympathy Bouquets. Sympathy Plants. Sympathy Floral Baskets. Pet Sympathy Gifts. Occasions.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0638efe12101b65f",
+      "title": "Walmart Camera Store in Stratford, CT| Photo Camaras, Web Cameras ...",
+      "url": "https://www.walmart.com/store/2585-stratford-ct/camera-store",
+      "summary": "Shop for camera equipment at your local Stratford, CT Walmart. We have a great selection of camera equipment for any type of home. Save Money. Live Better.",
       "discovery_channel": "broad_web",
       "query": "camera smart glasses",
       "source": "Bing web RSS",
@@ -2370,9 +2486,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2382,116 +2498,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1de1139b6f99e97d",
-      "title": "Live Stream TV Shows, Sports and News on CBS",
-      "url": "https://www.cbs.com/live-tv/stream/tveverywhere/",
-      "summary": "Live TV CBS CBS News 24/7 CBS Sports HQ 48 Hours Judge Judy Hot Bench",
+      "id": "48600047e17936b7",
+      "title": "youtube | OBS Forums",
+      "url": "https://obsproject.com/forum/tags/youtube/",
+      "summary": "When we enter the YouTube stream key on OBS, it uploads the video directly on our YouTube page, but doesn't send to the stream that is intended. We have 4 or 5 other simultaneous streams on some nights, each with specific keys, that are sent from specific YouTube pages with other software...",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "52e7a97ccea5caab",
-      "title": "News",
-      "url": "https://www.wtvm.com/news/",
-      "summary": "A South Carolina inmate is facing new charges after he escaped from jail Tuesday by using a pencil. National Ford recalls Mustangs, Broncos, Explorers over issues that could cause power loss",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b8f2732e41f8928d",
-      "title": "Watch CBS Sports HQ online - Free live stream & sports news from CBS Sports",
-      "url": "https://www.cbsnews.com/live/cbs-sports-hq/",
-      "summary": "Want more highlights and less talk? Get the latest news coverage for your favorite sports, players, and teams on CBS Sports HQ.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "21bb5fc949954b2d",
-      "title": "WRBL – WRBL News 3",
-      "url": "https://www.wrbl.com/",
-      "summary": "Birmingham man dies after struck on Hwy. 280 . 4 hours ago.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7a54700244e40eec",
-      "title": "WTVM.com - Columbus, GA - News, Weather, Sports",
-      "url": "https://www.wtvm.com/",
-      "summary": "Watch Live. News. Weather. Sports Overtime. Community. Latest Video. About Us. We the People. Home. Watch Live. Download Our Apps. News. Latest Video. Crime. Alabama. Georgia. Military....",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
