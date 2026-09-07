@@ -1,0 +1,108 @@
+name: Research finding or correction
+description: Submit a factual correction, technical finding, reproduction result, evidence update, or project-maintainer clarification.
+title: "[Research] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve GlassesResearch. This form is for factual corrections, protocol findings, reproduction notes, community-project feedback, and other evidence-bearing research contributions.
+
+        Contributions do not need to be independently verified before submission, but please label what you know, what you observed, and what remains uncertain as clearly as possible.
+
+  - type: dropdown
+    id: contribution_type
+    attributes:
+      label: Contribution type
+      options:
+        - Factual correction
+        - Technical or protocol finding
+        - Reproduction / failed reproduction
+        - Community project clarification
+        - Model or lineage correction
+        - Evidence/source improvement
+        - Other research finding
+    validations:
+      required: true
+
+  - type: input
+    id: subject
+    attributes:
+      label: Device, project, page, or finding affected
+      description: Name the model, lineage, repository/project, article, page, or research claim this concerns.
+      placeholder: e.g. MYVU / Star Air XGA010C, Panny777/Meizu-Myvu-Client, or a GlassesResearch page URL
+    validations:
+      required: true
+
+  - type: textarea
+    id: finding
+    attributes:
+      label: What should GlassesResearch know or change?
+      description: State the correction or finding in plain language. If you are correcting our coverage of your own work, please say so.
+      placeholder: Describe the factual correction, observed behavior, protocol detail, chronology issue, or missing context.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: evidence_state
+    attributes:
+      label: Best current evidence state
+      description: Choose the closest fit. Maintainers may refine the label after review.
+      options:
+        - Directly observed or measured
+        - Reproduced or demonstrated
+        - Primary-source documented
+        - Community reported; not independently reproduced
+        - Manufacturer claim
+        - Inferred / qualified
+        - Contradicted by testing or evidence
+        - Unproven / not tested
+        - Unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence, sources, and artifacts
+      description: Include public links, repository paths, logs, packet captures, screenshots, photos, hashes, manuals, filings, versions, dates, or other supporting material where appropriate. Do not upload material you do not have the right to redistribute.
+      placeholder: Links and supporting details
+    validations:
+      required: false
+
+  - type: textarea
+    id: conditions
+    attributes:
+      label: Reproduction conditions and negative results
+      description: For hands-on or technical findings, include relevant hardware, firmware, app/OS versions, account/cloud state, steps performed, what happened, and failed attempts. Negative results are useful evidence.
+      placeholder: Stimulus/action → observation/result → repeatability → limitations
+    validations:
+      required: false
+
+  - type: textarea
+    id: owner_control
+    attributes:
+      label: Owner-control or interoperability consequence (if applicable)
+      description: Note whether the capability depends on a vendor app, account, internet/cloud service, alternative client, specific host device, or other minimum stack.
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: input
+    id: attribution
+    attributes:
+      label: Attribution preference
+      description: Real name, public handle, project name, pseudonym, anonymous, or no preference.
+      placeholder: e.g. GitHub handle / project name / anonymous
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Submission notes
+      options:
+        - label: I have clearly distinguished observation, source documentation, community reporting, inference, and unknowns to the best of my ability.
+          required: true
+        - label: I understand that accepting or merging this contribution does not automatically make the underlying claim GlassesResearch Verified.
+          required: true
