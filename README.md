@@ -135,6 +135,82 @@
 })();
 </script>
 
+<section class="gr-section" aria-labelledby="gr-upcoming-title" data-home-events>
+  <div class="gr-section-heading gr-heading-compact">
+    <div>
+      <p class="gr-kicker">Upcoming</p>
+      <h2 id="gr-upcoming-title">Dates worth watching.</h2>
+    </div>
+    <a class="gr-text-link" href="docs/EVENTS/">Open calendar <span aria-hidden="true">→</span></a>
+  </div>
+  <p>Verified public dates for launches, conferences, research, and developer events relevant to smart glasses and wearable AI.</p>
+  <div id="gr-home-events-list" class="gr-story-stack" aria-live="polite">
+    <p>Loading upcoming events…</p>
+  </div>
+</section>
+
+<script>
+(() => {
+  const list = document.getElementById('gr-home-events-list');
+  if (!list) return;
+
+  const escapeHtml = (value) => String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+
+  const parseDate = (value) => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(String(value || ''))) return null;
+    const [year, month, day] = value.split('-').map(Number);
+    return new Date(year, month - 1, day, 12, 0, 0);
+  };
+
+  const displayDateRange = (event) => {
+    const start = parseDate(event.start_date);
+    const end = parseDate(event.end_date || event.start_date);
+    if (!start) return '';
+    const short = new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric' });
+    if (!end || event.end_date === event.start_date) return short.format(start);
+    return `${short.format(start)}–${short.format(end)}`;
+  };
+
+  fetch('/data/events.json', { credentials: 'same-origin', cache: 'no-store' })
+    .then((response) => {
+      if (!response.ok) throw new Error('events unavailable');
+      return response.json();
+    })
+    .then((state) => {
+      if (state?.schema_version !== 1 || !Array.isArray(state.events)) throw new Error('invalid events');
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const items = state.events
+        .filter((event) => event && event.title && event.start_date && event.source_url && event.verified_on && event.status !== 'cancelled')
+        .filter((event) => {
+          const end = parseDate(event.end_date || event.start_date);
+          return end && end >= today;
+        })
+        .sort((a, b) => parseDate(a.start_date) - parseDate(b.start_date))
+        .slice(0, 3);
+
+      if (!items.length) {
+        list.innerHTML = '<p>No upcoming verified events are currently scheduled.</p>';
+        return;
+      }
+
+      list.innerHTML = items.map((event) => {
+        const meta = [displayDateRange(event), event.location].filter(Boolean).map(escapeHtml).join(' · ');
+        const why = event.why_it_matters ? `<span>${escapeHtml(event.why_it_matters)}</span>` : '';
+        return `<a href="${escapeHtml(event.source_url)}" target="_blank" rel="noopener noreferrer"><span class="gr-story-tag">${meta}</span><strong>${escapeHtml(event.title)}</strong>${why}</a>`;
+      }).join('');
+    })
+    .catch(() => {
+      list.innerHTML = '<p>Upcoming event data is temporarily unavailable. <a href="docs/EVENTS/">Open the full calendar →</a></p>';
+    });
+})();
+</script>
+
 <section class="gr-section gr-finder-section" aria-labelledby="gr-finder-title">
   <div class="gr-section-heading">
     <div>
