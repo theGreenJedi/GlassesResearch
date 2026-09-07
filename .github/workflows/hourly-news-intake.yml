@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: knowledge-intake-writer
@@ -91,3 +92,14 @@ jobs:
             echo "A visible wire change dispatches this intake directly; the hourly schedule is only a dead-man fallback."
             echo "Discovery optimizes for recall; triage and verification remain downstream precision gates."
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Backstop triage after directly dispatched intake
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh workflow run daily-news-verification.yml \
+            --repo "${GITHUB_REPOSITORY}" \
+            --ref main
