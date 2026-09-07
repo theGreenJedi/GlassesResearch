@@ -1,38 +1,45 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-07T09:08:10.248034+00:00",
-  "candidate_count": 30,
-  "classifier_irrelevant_count": 8,
+  "discovered_utc": "2026-09-07T10:28:04.623577+00:00",
+  "candidate_count": 63,
+  "classifier_irrelevant_count": 19,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 22,
-    "broad_web": 6,
-    "developer": 1,
-    "research": 1,
-    "retail": 1
+    "adjacent": 44,
+    "broad_web": 17,
+    "developer": 2,
+    "research": 2
   },
   "relationship_counts": {
     "direct": 0,
     "enabling": 0,
-    "adjacent": 22,
+    "adjacent": 44,
     "speculative": 0,
-    "irrelevant": 8
+    "irrelevant": 19
   },
   "type_counts": {
-    "model": 1,
-    "video": 3,
-    "news": 22,
-    "tool": 2,
-    "sdk": 1,
-    "retail": 1,
-    "community": 1
+    "model": 5,
+    "video": 5,
+    "news": 20,
+    "research": 2,
+    "tool": 7,
+    "sdk": 2,
+    "policy": 3,
+    "retail": 13,
+    "community": 12,
+    "rumor": 7
   },
   "routing_counts": {
-    "adjacent_radar": 22,
-    "model_catalog_review": 1,
-    "reject_noise": 8,
-    "report_card_evidence": 2,
-    "research_news_review": 22
+    "adjacent_radar": 44,
+    "community_evidence_review": 8,
+    "deep_research": 1,
+    "development_hacking": 5,
+    "model_catalog_review": 3,
+    "policy_privacy": 2,
+    "reject_noise": 19,
+    "report_card_evidence": 3,
+    "research_news_review": 44,
+    "retail_rebrand_review": 12
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -43,15 +50,147 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
   "candidates": [
     {
-      "id": "40fe3e7c1931aad7",
-      "title": "Clima en Seattle | Previsión hoy y 14 días",
-      "url": "https://eltiempoen.com/estados-unidos/washington/seattle",
-      "summary": "Previsión del clima en Seattle, Washington, hoy y 14 días, con detalle por horas: máximas y mínimas, probabilidad de lluvia, viento, humedad y avisos.",
+      "id": "0e31e96e72afb6bc",
+      "title": "ai | NEAR",
+      "url": "https://www.near.org/ai",
+      "summary": "NEAR AI Paper Club is an open reading group dedicated to exploring advanced AI research.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e89eda71d3c27057",
+      "title": "Best Buy in Seattle, WA - 330 NE Northgate Way - Electronics ...",
+      "url": "https://stores.bestbuy.com/wa/seattle/330-ne-northgate-way-470.html",
+      "summary": "Visit your local Best Buy at 330 NE Northgate Way in Seattle, WA for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free shipping.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "video",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f9519b2529f996e3",
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "summary": "Hosted by WhatsApp2026 © WhatsApp LLC Privacy & Terms",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "privacy"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3e69933f6ec3bcd4",
+      "title": "WhatsApp - Download",
+      "url": "https://whatsapp.en.softonic.com/",
+      "summary": "WhatsApp is the ultimate tool for effortless and secure communication with anyone, anywhere in the world. The platform's commitment to user privacy is evident through its end-to-end encryption, ensuring your conversations are for your eyes only.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "privacy"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2246dead8ac78933",
+      "title": "All Books - Wolters Kluwer",
+      "url": "https://shop.lww.com/c/967?facetValueFilter=tenant~regions:us",
+      "summary": "Contemporary Neurosurgery medical education Medical Education Knowing in the healthcare field is hard, but not knowing is even harder. At whichever point you are on the learning curve, Lippincott® supports your achievement. View All Med Ed Products Products by Specialty Anatomy",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -73,12 +212,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cdce591fe6e49aa7",
-      "title": "El Tiempo",
-      "url": "https://www.eltiempo.es/",
-      "summary": "El Tiempo de hoy en España y el mundo. Previsión del tiempo para hoy, mañana y los próximos días. El Tiempo en 200.000 ciudades.",
+      "id": "9af494018e763738",
+      "title": "Amateur Porn - Reddit",
+      "url": "https://www.reddit.com/r/AmateurPorn/top/",
+      "summary": "Home of the best amateur PORN videos and pictures of real AMATEUR women being sexy and slutty",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -87,11 +226,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "research_news_review",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -100,12 +240,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1e92088604f1b209",
-      "title": "El tiempo en Seattle (Estados Unidos) - 15 Días - TuTiempo.net",
-      "url": "https://www.tutiempo.net/seattle.html",
-      "summary": "El Tiempo en Seattle para los próximos 15 días, la previsión más actualizada del tiempo. Temperatura y velocidad del viento en Seattle",
+      "id": "f23b5ea65959dcd4",
+      "title": "Amateur Porn Videos , Homemade Porn Videos - Reddit",
+      "url": "https://www.reddit.com/r/RealHomePorn/top/",
+      "summary": "r/RealHomePorn: Home Of Amateur Porn And Real Homemade Porn Movies. Use REDGIFS to submit your GIFs or Movies. NO pictures please. No OnlyFans Links…",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -114,11 +254,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "research_news_review",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -127,12 +268,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "873abe9a27d958ea",
-      "title": "El tiempo en Seattle (WA) hoy. Pronostico del tiempo Seattle (WA) 10 días",
-      "url": "https://seatemperature.info/es/seattle-prevision-del-tiempo.html",
-      "summary": "Estos datos muestran el tiempo actual y el pronóstico para los próximos días en Seattle. Además de la temperatura, el viento, la humedad y la presión, incluimos datos sobre la probabilidad de precipitación para que pueda tener toda la información sobre su destino antes de su viaje",
+      "id": "8c79bd723620c441",
+      "title": "Amazon.com: Lippincott Williams & Wilkins: Books",
+      "url": "https://www.amazon.com/Books-Lippincott-Williams-Wilkins/s?rh=n%3A283155%2Cp_27%3ALippincott%2B%2BWilliams%2B%2526%2BWilkins",
+      "summary": "Online shopping from a great selection at Books Store.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -141,11 +282,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -154,12 +296,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dde30b0de22d0e69",
-      "title": "El Tiempo en Seattle - WA. Predicción a 14 días - Meteored España",
-      "url": "https://www.tiempo.com/seattle.htm",
-      "summary": "El Tiempo en Seattle - WA - Previsión meteorológica para los próximos 14 días. El pronóstico del tiempo más actualizado en Seattle: temperatura, lluvia, viento, etc",
+      "id": "609e4b3514373adf",
+      "title": "Amazon.com: Lippincott: Books",
+      "url": "https://www.amazon.com/Books-Lippincott/s?rh=n%3A283155%2Cp_27%3ALippincott",
+      "summary": "Online shopping from a great selection at Books Store.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -168,11 +310,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -181,12 +324,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f6459f4e938e2936",
-      "title": "El Tiempo en Seattle, Colbert County - 14 días",
-      "url": "https://www.eltiempo.es/seattle.html",
-      "summary": "El Tiempo en Seattle, Colbert County para los próximos 14 días, previsión actualizada del tiempo. Temperaturas, probabilidad de lluvias y velocidad del viento.",
+      "id": "d076b46d794b81a9",
+      "title": "Anal Porn - Reddit",
+      "url": "https://www.reddit.com/r/anal/",
+      "summary": "Hardcore anal porn vids and gifs with amateur dildo ass fuck movies, pornstars butt sex videos and extreme painal insertion photos. Watch best homemade anal sex videos and pictures, extreme ass fuck babes, hardcore buttfuck porn stars at Reddit's most popular sub - /r/anal.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -195,66 +338,14 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7a1e995b6df9dd9d",
-      "title": "Free Mature Porn - OldSweet",
-      "url": "https://oldsweet.com/",
-      "summary": "OldSweet brings together some of the most popular categories of porn for non-stop streaming and free fapping. Check out a wide selection of updated sex videos right away!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2339e3fe1b4b7992",
-      "title": "Free Mature Porn Categories at Want Mature",
-      "url": "https://www.wantmature.com/categories/",
-      "summary": "Hot Mature Sex Categories you can watch mature porn movies: sexy milfs, hot wives, horny grannies and more. Daily updates from mature xxx tubes",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
+        "video",
+        "community"
       ],
       "primary_type": "video",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -263,12 +354,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "154405f5754ed29b",
-      "title": "Free Older Woman Porn Videos - Freeolders!",
-      "url": "https://www.freeolders.com/",
-      "summary": "4,272 Hairy mature Lauren Phoenix Milf Old Film Porn Very Old Pussy Stories Milf Alexia Shemale Mom Fuck Shemale Mom",
+      "id": "5136404de9e896fd",
+      "title": "BEST BUY - 330 NE Northgate Way, Seattle WA - Hours, Directions ...",
+      "url": "https://www.loc8nearme.com/washington/seattle/best-buy/268175/",
+      "summary": "Best Buy at 330 NE Northgate Way, Seattle WA 98125 - hours, address, map, directions, phone number, customer ratings and reviews.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable eye tracking",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -277,11 +368,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -290,12 +382,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f5bb883ece857090",
-      "title": "Free Older+Mature+Woman Porn Videos (5,409) - Tubesafari.com",
-      "url": "https://tubesafari.com/search/older+mature+woman",
-      "summary": "Morning Coffe & Masturbation 4 months ago 31:44 An older woman captivates her boyfriend's male offspring. 2 months ago 21:27 A sexually experienced older woman who possesses a uniquely captivating and irresistible vagina.",
+      "id": "2ea2293139160ba3",
+      "title": "Best Buy - Northgate, Seattle, WA - Hours & Weekly Ad",
+      "url": "https://www.storeopeninghours.com/best-buy-northgate-seattle-wa",
+      "summary": "On this page, you'll find information about Best Buy Northgate, Seattle, WA, including the business times, place of business address or telephone number.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable eye tracking",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -304,11 +396,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -317,12 +410,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c29ac1cb972e0c0e",
-      "title": "Granny Porn Videos @ OldSweet",
-      "url": "https://oldsweet.com/granny-videos",
-      "summary": "OldSweetThis page brings together some of the most popular categories of porn for non-stop streaming and free fapping. Check out a wide selection of updated sex videos right away!",
+      "id": "f300df0fe9674ac9",
+      "title": "Best Buy - Seattle - Locations & Hours - StoresHours.com",
+      "url": "https://www.storeshours.com/best-buy/washington/seattle/nenorthgateway",
+      "summary": "Best Buy is a national electronics retailer selling consumer tech products and appliances. It offers TVs, computers, phones, gaming gear, and home appliances alongside services like Geek Squad support.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable eye tracking",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -331,11 +424,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -344,12 +438,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "49e29e5b5f493981",
-      "title": "Mature / MILF Porn @ SpicyMature",
-      "url": "https://spicymature.com/",
-      "summary": "Free porn with matures? moms, MILFs or grannies? ofc everything is already found, structured on SpicyMature. Tons of categories, models, sources in one place.",
+      "id": "057b40419019d32e",
+      "title": "BEST BUY - SEATTLE - Updated August 2026 - Yelp",
+      "url": "https://www.yelp.com/biz/best-buy-seattle-seattle",
+      "summary": "BEST BUY - SEATTLE, 330 NE Northgate Way, Seattle, WA 98125, 70 Photos, (206) 306-7663, Mon - 10:00 am - 8:00 pm, Tue - 10:00 am - 8:00 pm, Wed - 10:00 am - 8:00 pm, Thu - 10:00 am - 8:00 pm, Fri - 10:00 am - 8:00 pm, Sat - 10:00 am - 8:00 pm, Sun - 11:00 am - 7:00 pm",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable eye tracking",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -358,11 +452,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -371,12 +466,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9926f087e1a04e17",
-      "title": "MATURE OLDER PORN @ A Mature Tube",
-      "url": "https://amaturetube.com/older-videos",
-      "summary": "Watch our selection of 27,436 hottest MATURE OLDER porn videos! 100% Free!!! Step Family Affairs With Dirty Tina and many other mature, granny and MILF porn videos updating every day.",
+      "id": "81c44ddd1d4281a9",
+      "title": "Best Buy Northgate in Seattle, Washington - Location & Store Hours",
+      "url": "https://www.mystore411.com/store/view/7307/Best-Buy-Seattle",
+      "summary": "Best Buy Northgate at 330 NE Northgate Way in Seattle, Washington 98125: store location & hours, services, holiday hours, map, driving directions and more",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable eye tracking",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -385,12 +480,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "video"
+        "retail"
       ],
-      "primary_type": "video",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -399,12 +494,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "27d36007e1e09f96",
-      "title": "Mature Porn Videos @ OlderWomen.TV",
-      "url": "https://olderwomen.tv/",
-      "summary": "OlderWomen.TV features millions of free Mature, Granny and MILF porn videos in various categories. You can search our database for your favorite fetish.",
+      "id": "6da3532d364e3310",
+      "title": "Best Buy Seattle, WA - Store Locator & Hours",
+      "url": "https://www.storeopeninghours.com/retailers/best-buy/seattle-wa",
+      "summary": "Best Buy runs 8 stores near Seattle, Washington. Below you can see the listing of all Best Buy branches nearby. Best Buy Bellevue, WA. 457 120th Avenue Northeast, Bellevue. Open: 10:00 am - 8:00 pm6.99 mi . Best Buy Northgate, Seattle, WA. 330 Northeast Northgate Way, Northgate, Seattle. Open: 10:00 am - 8:00 pm7.11 mi . Best Buy Tukwila, WA.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable eye tracking",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -413,11 +508,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -426,10 +522,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dd572e40210b0455",
-      "title": "Meteored - Pronóstico del tiempo",
-      "url": "https://www.meteored.com/es/",
-      "summary": "Consulta la información del tiempo en el mapa meteorológico mundial de Meteored en tiempo real: radar de lluvia, satélite, predicción ECMWF, calidad del aire...",
+      "id": "f8f2c4d363cad94e",
+      "title": "Best Buy Stores in Seattle, Washington | Shop Electronics & More",
+      "url": "https://stores.bestbuy.com/wa/seattle.html",
+      "summary": "Find all Best Buy store locations in Seattle, Washington. View hours, get directions, and shop the latest electronics and more in a store near you.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "531ca25b00ad2174",
+      "title": "Como recuperar sua Conta do Google ou serviço do Gmail - Ajuda da Conta ...",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=pt-BR",
+      "summary": "Se você esqueceu sua senha ou seu nome de usuário ou não consegue receber códigos de verificação, siga estas etapas para recuperar sua Conta do Google. Dessa forma, você pode usar serviços como o Gmail, o Google Fotos e o Google Play.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -453,12 +577,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e59a8f0238897c91",
-      "title": "Near and near to - Grammar - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/grammar/british-grammar/near-and-near-to",
-      "summary": "Near and near to are prepositions. Near is also an adjective. The preposition near (to) means ‘not far away in distance’. Near and near to mean the same, but near is more common: She comes from a small place on the coast near Barcelona. My mother loves to sit near the fire at night. She reached out her hand and drew him near to her.",
+      "id": "bdb124cdcb3e35df",
+      "title": "Criar uma Conta do Google - Computador - Ajuda da Conta do Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=pt&co=GENIE.Platform%3DDesktop",
+      "summary": "Importante: ao criar uma Conta do Google para sua empresa, ative a personalização para empresas. Uma conta empresarial também facilita a configuração do Perfil da Empresa no Google, que ajuda a melhorar a visibilidade da sua empresa e a gerenciar suas informações on-line.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -467,11 +591,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -480,37 +605,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "87a8abce4bd03064",
-      "title": "New Matures - Free Older Women Porn. Mature Sex Videos",
-      "url": "https://newmatures.com/en/",
-      "summary": "Daily updated free mature porn videos. For older women lovers. Free porn: Granny, Mom, Mature, Amateur, Homemade, Gilf, Wife, Amateur Mature, Shemale, Old And Young (18+), Cum In Mouth, Creampie, Taboo Fantasy, Vintage, Cougar and much more.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "49eab6244501bce5",
-      "title": "Pronóstico del tiempo para 10 días para Seattle, Washington - The ...",
-      "url": "https://weather.com/es-US/tiempo/10dias/l/Seattle+Washington?canonicalCityId=1138ce33fd1be51ab7db675c0da0a27c",
-      "summary": "Prepárate con el pronóstico para los próximos 10 días más preciso para Seattle, Washington. Consulta la temperatura máxima y mínima y la probabilidad de lluvia en The Weather Channel y ...",
+      "id": "2a946a0da10953cc",
+      "title": "Criar uma Conta do Google para o Gmail - Ajuda do Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=pt-BR",
+      "summary": "Criar uma Conta do Google Importante: antes de criar uma nova Conta do Google, saia da conta atual. Saiba como sair do Gmail. No dispositivo, acesse a página de login da Conta do Google. Clique em Criar conta. Escolha o tipo de conta: Para uso pessoal Para uma criança Para trabalho ou negócios Para concluir, siga as instruções na tela. Criar uma Conta do Google Dica: se você quer usar o ...",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -534,66 +632,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "08c91e380a756bf4",
-      "title": "Pronóstico del tiempo para Seattle - precisa y detallada previsión del ...",
-      "url": "https://es.meteotrend.com/forecast/us/seattle/",
-      "summary": "MeteoTrend: Pronóstico del tiempo en Seattle para el día de hoy, de mañana y de la semana. Precisa y detallada previsión del tiempo en Seattle. La temperatura y la humedad del aire, presión, velocidad y dirección del viento, la precipitación, la salida del sol, puesta de sol, salida de la luna, puesta de la luna. Seattle, Washington, EEUU",
+      "id": "56ee82c1bf18674c",
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "summary": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. Available on Android, iOS, Mac and Windows.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "085d58c3c2f4a99b",
-      "title": "Pronóstico del tiempo y condiciones meteorológicas para Seattle ...",
-      "url": "https://weather.com/es-US/tiempo/hoy/l/Seattle+Washington?canonicalCityId=1138ce33fd1be51ab7db675c0da0a27c",
-      "summary": "Pronóstico del tiempo en Seattle, Washington para hoy y esta noche, condiciones meteorológicas y radar Doppler de The Weather Channel y weather.com",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2f5288867048bde2",
-      "title": "The 10 Best Restaurants Near Me in Upper West Side, New York ...",
-      "url": "https://www.opentable.com/nearby/restaurants-near-me-manhattan",
-      "summary": "Discover top restaurants near me in Upper West Side, New York City on OpenTable. Browse real-time table availability, view updated menus, and read reviews from fellow diners. Reserve your spot now.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -616,12 +660,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d454993d63487eba",
-      "title": "Vintage: 63,275 videos. Free porn @ New Matures - Free Older ...",
-      "url": "https://newmatures.com/en/1345/vintage/",
-      "summary": "Daily updated free mature porn videos. For older women lovers. Free porn: Vintage Amateur, Japanese Vintage, Vintage Solo, Vintage Mom, Vintage Shemale and much more.",
+      "id": "1ca56dbb188886df",
+      "title": "Ebony porn - Reddit",
+      "url": "https://www.reddit.com/r/Blackwomanporn/",
+      "summary": "Collection and subreddit of ebony porn lovers.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40c7359f8cc7287e",
+      "title": "Fazer login no Google Ads - Ajuda do Google Ads",
+      "url": "https://support.google.com/google-ads/answer/1722062?hl=pt-BR",
+      "summary": "Fazer login no Google Ads usando sua Conta do Google Na página inicial do Google Ads, selecione o link Fazer loginno canto superior direito da página. Insira o endereço de e-mail da sua Conta do Google, um endereço de e-mail alternativoou seu nome de usuário do Gmail no campo \"E-mail\". Insira a senha no campo \"Senha\". Selecione Próxima.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -643,8 +715,704 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "89b2a62a297a2ad0",
-      "title": "Microsoft Project for Windows - Download it from Uptodown for ...",
+      "id": "49d63e089b961b6e",
+      "title": "Fazer o download e instalar o Google Chrome - Computador - Ajuda do ...",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "summary": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web. Conferir os requisitos do sistema",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "46c9401604e14c31",
+      "title": "Google Help - 302 Moved",
+      "url": "https://support.google.com/",
+      "summary": "302 Moved The document has moved here.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4cb4f761fa4095ae",
+      "title": "HairyPussy - Reddit",
+      "url": "https://www.reddit.com/r/HairyPussy/",
+      "summary": "70’s bush to neat triangle, you’ve found the place to admire them all! 🌿",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c68c5bbe1f842874",
+      "title": "Lesbian porn - Reddit",
+      "url": "https://www.reddit.com/r/lesbians/",
+      "summary": "r/Lesbians is dedicated to celebrating beautiful women being sexual with one another. It is a place for Lesbian porn. This subreddit is automatically NSFW and hardcore content is welcome. If you're looking for a lesbian support sub, try /r/actuallesbians.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cbf4863ea1a40fdf",
+      "title": "Lippincott Books - Walmart.com",
+      "url": "https://www.walmart.com/c/kp/lippincott",
+      "summary": "Shop for Lippincott Books - at Walmart.com. Save money. Live better.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a31bec43dfe26d0a",
+      "title": "Lippincott Home - LWW",
+      "url": "https://lww.com/pages/default.aspx",
+      "summary": "For all open access content, the relevant licensing terms apply.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "02438d08915c5528",
+      "title": "Lippincott Medical Books | Wolters Kluwer",
+      "url": "https://www.wolterskluwer.com/en/solutions/lippincott-books",
+      "summary": "You can rely on Lippincott for accurate and accessible healthcare information—from the start of your education to your first day in practice, and throughout your career.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "12d8f653b752b800",
+      "title": "LWW Official Store | Wolters Kluwer - Wolters Kluwer",
+      "url": "https://shop.lww.com/",
+      "summary": "Lippincott Williams & Wilkins (LWW) - an imprint of Wolters Kluwer - publishes scientific, technical, and medical content such as textbooks, reference works, and over 275 scientific journals",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "60e19d7f9a95f283",
+      "title": "Map Porn, for interesting maps - Reddit",
+      "url": "https://www.reddit.com/r/MapPorn/",
+      "summary": "r/MapPorn: High quality images of maps. Map of where the IDF strike an aid convoy three times and killed 7 aid workers",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53f9b72346baa7b0",
+      "title": "Muebles Laffayette | Salas, Recámaras y Comedores en México",
+      "url": "https://muebleslf.com/",
+      "summary": "Ofertas Increíbles Descubre las mejores ofertas en nuestros Modelos! Además, recibe una garantía de 1 año al comprar cualquier producto en Muebles Laffayette. +40 Años Contamos con más de 40 años de experiencia y 4 Sucursales en Jalisco, ofreciendo Muebles de Calidad a Precios Justos. Excelente Basado en 4,530valoraciones Muebles Laffayette",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a6450ffb5d8a02c1",
+      "title": "Property for Sale in Zapopan, Jalisco - realtor.com",
+      "url": "https://www.realtor.com/international/mx/zapopan-jalisco/",
+      "summary": "Find Property for sale in Zapopan, Jalisco. Search for real estate and find the latest listings of Zapopan Property for sale.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5bdd3cf38a46044f",
+      "title": "Shopping Cart - Lippincott Direct - LWW",
+      "url": "https://lippincottdirect.lww.com/cart",
+      "summary": "Financial Aid for purchase of Lippincott Direct products. Students awaiting financial aid may be able to take advantage of a 30 day deferred payment option by purchasing directly from Wolters Kluwer.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fa5fd66053ea7f27",
+      "title": "TOP 10 BEST Bestbuy Stores in Seattle, WA - Updated 2026 - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Bestbuy+Stores&find_loc=Seattle%2C+WA",
+      "summary": "We were so overwhelmed not knowing what was what and which was the Best to Buy. Singh greeted us and not only showed us what we were looking for but took the time to explain which one was right for her needs.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8df5c5366532e1e1",
+      "title": "Welcome - Lippincott Direct",
+      "url": "https://lippincottdirect.lww.com/",
+      "summary": "Financial Aid for purchase of Lippincott Direct products. Students awaiting financial aid may be able to take advantage of a 30 day deferred payment option by purchasing directly from Wolters Kluwer. In order to qualify for this deferred payment option, you must first be affiliated with a School.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9230a49150028585",
+      "title": "WhatsApp - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/WhatsApp",
+      "summary": "WhatsApp - Wikipedia",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ea04de070052e33d",
+      "title": "WhatsApp from Meta",
+      "url": "https://www.meta.com/whatsapp/",
+      "summary": "WhatsApp connects you with the people you care about most, effortlessly and privately.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2464ef9b89db40b8",
+      "title": "WhatsApp Messenger - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en",
+      "summary": "WhatsApp from Meta is a FREE messaging and video calling app. It’s used by over 2B people in more than 180 countries. It’s simple, reliable, and private, so you can easily keep in touch with your...",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eca3a0226b2094da",
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "summary": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging and calling, available on phones all over the world.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "88940295c9bc5679",
+      "title": "Wolters Kluwer eStore & Webshop and Bookstore | Wolters Kluwer",
+      "url": "https://www.wolterskluwer.com/en/estore",
+      "summary": "Browse and purchase publications from Lippincott Williams & Wilkins (LWW), including scientific, technical, and medical content such as textbooks, reference works, and over 275 scientific journals.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "04e8cc154bb943b3",
+      "title": "You'll know it when you see it. - Reddit",
+      "url": "https://www.reddit.com/r/porn/top/?t=all",
+      "summary": "/r/Porn is a NSFW image hub for the vast array of pornography across reddit. All images posted here originate on other subreddits and are then posted here with the [subreddit] in the title. This subreddit is LGBT-friendly (as far as mod influence goes, at least, since mods can't control voting). If it's porn, it's porn and it's welcome here.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5819361cde19eb31",
+      "title": "‎WhatsApp Messenger App - App Store",
+      "url": "https://apps.apple.com/us/app/whatsapp-messenger/id310633997",
+      "summary": "WhatsApp from Meta is a free messaging and calling app used by over 2 billion people across 180+ countries. It's super simple, reliable and private, making it perfect for staying in touch with your friends and family worldwide.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ec55e76f5a027f52",
+      "title": "What is a Project? Definition, Types & Examples | PM Study Circle",
+      "url": "https://pmstudycircle.com/project/",
+      "summary": "Project management is a vast field, and all businesses, governments, non-profits, and private organizations always have various projects to help them grow. I am writing this post to explain the project, its definition, types, features, and examples.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "study"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "628745289bdea646",
+      "title": "2499 SW 27th Ave - Electronics, Appliances & More - Best Buy",
+      "url": "https://stores.bestbuy.com/fl/ocala/2499-sw-27th-ave-862.html",
+      "summary": "Visit your local Best Buy at 2499 SW 27th Ave in Ocala, FL for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free shipping.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "08f2a0b4d9a78496",
+      "title": "Laser cutting patented technology retrieval search results ...",
+      "url": "https://eureka.patsnap.com/topic-patents-laser-cutting",
+      "summary": "This page includes the patent name, patent number, legal status, invention/applicant, technical efficacy and accompanying drawings of Laser cutting-related invention patents and utility model patents, which can be searched for their Laser cutting-related patent result data, and can also be analyzed for Laser cutting-related patent technical data.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "patent"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy",
+        "rumor"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "26b6037f0ef99bc7",
+      "title": "Laser Induced Plasma Micro Machining Patents 2026 | Patsnap",
+      "url": "https://www.patsnap.com/resources/blog/rd-blog/laser-induced-plasma-micro-machining-patents-2026/",
+      "summary": "Understand how laser induced plasma micromachining is advancing semiconductor and MEMS fabrication by reviewing key patent clusters, assignee strategies, and emerging process variants — then map your next R&D move with PatSnap Eureka.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "patent"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "669c94bb3027fb0c",
+      "title": "Microsoft Project for Windows - Download it from Uptodown for free",
       "url": "https://microsoft-project.en.uptodown.com/windows",
       "summary": "Download Microsoft Project for Windows for free. Manage your projects with this Microsoft Office tool. Microsoft Project is a project management app...",
       "discovery_channel": "developer+research",
@@ -670,23 +1438,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0defdba6dea1587c",
-      "title": "ABC7 WLS Chicago and Chicago News",
-      "url": "https://abc7chicago.com/",
-      "summary": "Chicago's source for breaking news and live streaming video online. Covering News, Weather, Traffic and Sports for all of the greater Chicago Area.",
+      "id": "93c28db2f8e04977",
+      "title": "Patent Public Search | USPTO",
+      "url": "https://ppubs.uspto.gov/pubwebapp/",
+      "summary": "Patent Public Search | USPTO - extended window.",
       "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "patent"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "rumor"
       ],
-      "primary_type": "video",
+      "primary_type": "rumor",
       "routing_targets": [
         "reject_noise"
       ],
@@ -696,12 +1466,68 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "96a64fde8cbc92d9",
-      "title": "Breaking News | ABC7 WLS News Feed - ABC7 Chicago",
-      "url": "https://abc7chicago.com/news/",
-      "summary": "Read real-time breaking news as it develops with the ABC7 News Feed. Stay up-to-date with local news as well as U.S. and world news stories.",
+      "id": "fa79aabd0fa4bdde",
+      "title": "Patent Public Search | USPTO",
+      "url": "https://ppubs.uspto.gov/pubwebapp/external.html",
+      "summary": "Patent Public Search | USPTO.",
       "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "patent"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e75ec6180eeceaf1",
+      "title": "U.S. Patent Application for Laser Cutting Apparatus Patent ...",
+      "url": "https://patents.justia.com/patent/20260257296",
+      "summary": "The present disclosure relates to a laser cutting apparatus, and more specifically, to a laser cutting apparatus in which the cutting portion is neatly and cleanly processed in the process of cutting a material for a secondary battery using a laser, thereby improving the quality of the cutting material.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "patent"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ff29781822e5b56c",
+      "title": "Display - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Display",
+      "summary": "Een display is een elektronisch apparaat waarop iets afgebeeld wordt. Het wordt voornamelijk gebruikt voor kleinere schermen; voor grotere schermen wordt veelal beeldscherm gebruikt.",
+      "discovery_channel": "broad_web",
+      "query": "display smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -722,12 +1548,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dbe7d7d6c1aaf18a",
-      "title": "Home - IFA",
-      "url": "https://ifa.co.za/",
-      "summary": "IFA is a division of Clientèle Life Assurance Company Limited. Clientèle Life Assurance Company Limited is a licensed life insurer and an authorised financial services provider, FSP no. 15268.",
+      "id": "83b0cf0d8c7b609f",
+      "title": "Displays bestel je bij display winkel Displaysenzo",
+      "url": "https://www.displaysenzo.nl/",
+      "summary": "Displaysenzo is producent en leverancier van allerlei display materiaal. Dankzij onze jarenlange ervaring en ons moderne machinepark produceren wij de mooiste producten.",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "query": "display smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -748,12 +1574,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7503f397f4db31e9",
-      "title": "Home | IFA - International Fiscal Association",
-      "url": "https://www.ifa.nl/",
-      "summary": "IFA is the only non-governmental and non-sectoral international organisation dealing with fiscal matters. IFA is a unique neutral and independent platform where representatives of all professions and interests can meet and discuss international tax issues at the highest level.",
+      "id": "f3fa1680da4b2b2e",
+      "title": "Displayshop - Het meest uitgebreide display assortiment op 1 plek",
+      "url": "https://displayshop.nl/",
+      "summary": "Hier vindt u het meest uitgebreide display assortiment op één plaats. Alle displays die we op onze site verkopen zijn van een goede kwaliteit en in de meeste gevallen binnen de EU geproduceerd.",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "query": "display smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -762,9 +1588,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -774,9 +1600,9 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aca4c3b26c5657e9",
+      "id": "1c3eb1513576094a",
       "title": "IFA Berlin - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/IFA_Berlin",
+      "url": "https://en.m.wikipedia.org/wiki/IFA_Berlin",
       "summary": "IFA Berlin - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. Current events. Random article. About Wikipedia. Contact us. Contribute . Help. Learn to edit. Community portal. Recent changes. Upload file. Special pages. Search. Appearance. Donate. Create account. Log in. Personal tools. Donate.",
       "discovery_channel": "broad_web",
       "query": "IFA 2026 smart glasses; IFA smart glasses",
@@ -800,12 +1626,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "95fae9f7c9842a71",
-      "title": "Titanium Industries, Inc. | Global Specialty Metals Supply ...",
-      "url": "https://titanium.com/",
-      "summary": "We maintain a complete inventory of specialty metals and titanium mill products, offering a wide variety of grades and sizes with lead times to satisfy your manufacturing needs.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "id": "8ad4c7ceffd1b6e5",
+      "title": "Ifá - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/If%C3%A1",
+      "summary": "Ifá - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. Current events. Random article. About Wikipedia. Contact us. Contribute . Help. Learn to edit. Community portal. Recent changes. Upload file. Special pages. Search. Appearance. Donate. Create account. Log in. Personal tools. Donate. Create account.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -814,9 +1640,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "community"
       ],
-      "primary_type": "retail",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -826,12 +1652,144 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4a97d231e9f01ff2",
-      "title": "US Open | Daily Schedule | ATP Tour | Tennis",
-      "url": "https://www.atptour.com/en/scores/current/us-open/560/daily-schedule",
-      "summary": "Official ATP tennis daily schedule and order of play from men's professional tennis tournaments on the ATP Tour.",
+      "id": "39b2ea24b658a4c3",
+      "title": "International Franchise Association Names 2026 Franchisees of the Year",
+      "url": "https://www.franchise.org/2026/09/international-franchise-association-names-2026-franchisees-of-the-year/",
+      "summary": "WASHINGTON, D.C. – The International Franchise Association (IFA) today named 89 individuals as 2026 Franchisees of the Year for being outstanding franchise owners with excellence in entrepreneurship, community outreach, workforce development, and service to others.",
       "discovery_channel": "broad_web",
-      "query": "open source smart glasses",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f07eac75c068d8e9",
+      "title": "Movie Insider - Upcoming Movies & Release Dates | New Movies",
+      "url": "https://www.movieinsider.com/",
+      "summary": "Movie Insider® follows upcoming movies from concept through development & production and finally to release. Recently updated:The Beast",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "rumor"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f685b9d9be30c8cd",
+      "title": "US20250001525A1 - Laser cutting method and laser cutting ...",
+      "url": "https://patents.google.com/patent/US20250001525A1/en",
+      "summary": "Embodiments of the present invention relate to a laser cutting method, a laser cutting machine, and a computer program product. The technical area of industrial cutting of various...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "114da1e373f52630",
+      "title": "Watch - Intercessors for America",
+      "url": "https://ifapray.org/watch/",
+      "summary": "If you have benefited from IFA's resources and community, please consider joining us as a monthly support partner. As a 501(c)3 organization, it's through your support that all this possible.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "05ceb405e7ed16e2",
+      "title": "What Is Ifa And What Do Followers Believe? - Grunge",
+      "url": "https://www.grunge.com/1360405/what-is-ifa-followers-believe/",
+      "summary": "Though Ifa is often referred to as a religion, it is also considered a broader belief system within the greater Yoruba culture, though variations also exist among the nearby Igbo and Ewe people.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a71afaab5892256f",
+      "title": "WO/2026/180290 METHOD AND APPARATUS FOR LASER CUTTING A WORKPIECE",
+      "url": "https://patentscope.wipo.int/search/en/WO2026180290",
+      "summary": "The invention relates to a method for cutting an in particular flat, metal workpiece by means of a laser beam which emerges from a cutting nozzle of a laser working head, comprising: Cutting the workpiece (2) along a predefined cutting contour (18a) in order to separate a workpiece part (17) from a remaining part (19), and checking whether the workpiece part (17) has been completely separated ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
