@@ -2,6 +2,8 @@
 
 **Last checked:** 2026-08-27
 
+**Targeted rechecks:** RayNeo GT / GT Max and XREAL AURA reverified 2026-09-07. This does not advance the tracker-wide review date.
+
 This table distinguishes announcement, preorder, targeted shipping, confirmed shipping, and independent verification. A vendor date is not a shipment until evidence confirms it.
 
 | Product / platform | Category | Current state | Announced or updated | Availability claim | Evidence | Next check |
@@ -9,8 +11,9 @@ This table distinguishes announcement, preorder, targeted shipping, confirmed sh
 | Meta Glasses | Camera/audio AI | Announced / launching | 2026-06-23 | Starts at $299; 26 styles; regional details require tracking | [Primary](https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/) | Retail availability, complete specs, prescription range |
 | Google/Samsung x Gentle Monster | Camera/audio AI companion | Previewed | 2026-05-19 | Fall 2026 | [Google](https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/) / [Samsung](https://news.samsung.com/us/samsung-google-first-look-new-intelligent-eyewear) | Final name, price, exact date, regions |
 | Google/Samsung x Warby Parker | Camera/audio AI companion | Previewed | 2026-05-19 | Fall 2026 | [Google](https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/) / [Samsung](https://news.samsung.com/us/samsung-google-first-look-new-intelligent-eyewear) | Final name, price, exact date, regions |
-| RayNeo iO | AI smart glasses | Announced / dated product page | Product page current 2026-09-03 | RayNeo says coming 2026-09-04; no shipment inference | [Primary](https://www.rayneo.com/) | Recheck Sept. 4 for order path, final specs, regions, and shipment language |
-| RayNeo GT Max | XR display glasses | Announced / dated product page | Product page current 2026-09-03 | RayNeo says coming 2026-09-04; no shipment inference | [Primary](https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses) | Recheck Sept. 4 for order path, final price, regions, and shipment language |
+| RayNeo GT | XR display glasses | Manufacturer retail order path open | Reverified 2026-09-07 | RayNeo's US storefront exposes Add to Cart / Buy now at $299; vendor retail availability is verified, shipment and independent fulfillment are not inferred | [Primary](https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses) | Independent fulfillment/testing; additional regional storefronts |
+| RayNeo GT Max | XR display glasses | Manufacturer retail order path open | Reverified 2026-09-07 | RayNeo's US storefront exposes Add to Cart / Buy now at $399; vendor retail availability is verified, shipment and independent fulfillment are not inferred | [Primary](https://www.rayneo.com/pages/rayneo-gt-series-ar-glasses) | Independent fulfillment/testing; additional regional storefronts |
+| XREAL AURA | Android XR spatial-computing glasses | Reservation / developer-access stage | Reverified 2026-09-07 | XREAL says Fall 2026. Current paid consumer paths are refundable reservations for launch access and are explicitly not preorders; selected Catalyst developers can reach an order page and place a free device order | [AURA](https://www.xreal.com/aura) / [reservation terms](https://us.shop.xreal.com/products/xreal-aura-priority-deposit) | Final consumer checkout/order path; shipping evidence; determine canonical purchaser-history treatment of developer-device orders separately |
 | Snap SPECS | Standalone spatial AR | Preorder | 2026-06-16 | Fall 2026; US, UK, France; $2,195 | [Primary](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses) | Sept. 16 launch event; then first shipments, SDK state, independent testing |
 | Everysight Maverick AI | Full-color AR + AI | In development / pre-release | Support material current 2026-06 to 2026-07 | Vendor says still in development; shipping evidence not yet established | [Primary](https://www.everysight.com/pages/maverick-ai) | First production shipments, final specs, production-hardware testing |
 | Everysight Maverick AI Pro | Full-color AR + AI with native eye tracking | In development / pre-release | Support material current 2026-06 to 2026-07 | Vendor says still in development; shipping evidence not yet established | [Primary](https://www.everysight.com/pages/maverick-ai) / [SDK](https://everysight.github.io/maverick-ai-docs/getting-started/api-key/) | First production shipments, final GazeIntent behavior, SDK/runtime-key policy |
@@ -27,11 +30,11 @@ These are **research appointments, not release claims**. Each date comes from a 
 
 | Date | Checkpoint | What to verify | First-party source |
 |---|---|---|---|
-| 2026-09-04 | RayNeo iO and GT Max dated product-page milestone | Whether an actual order path opens; final prices/specifications; regional availability; whether RayNeo says shipping rather than merely “coming” | [RayNeo](https://www.rayneo.com/) |
 | 2026-09-16 | Snap SPECS launch event, 4:00 PM PT | Final hardware/software details, purchase/fulfillment state, SDK/runtime changes, and independent hands-on evidence | [Snap](https://newsroom.snap.com/specs-launch-date) |
 | 2026-09-23 to 2026-09-24 | Meta Connect 2026 | Wearables announcements and changes that materially affect existing Meta-glasses hardware, software, availability, or lineages; do not pre-assign rumored products | [Meta](https://www.meta.com/blog/connect-2026-save-the-date/) |
+| Fall 2026 | XREAL AURA consumer launch | Final configurations and price; real consumer checkout path; supported launch regions; shipment/fulfillment evidence; preserve reservation versus preorder distinction | [XREAL](https://www.xreal.com/aura) |
 
-A checkpoint is removed or advanced only after the stated event/date is re-checked. Rumor calendars and third-party launch predictions do not qualify for this table by themselves.
+Completed checkpoints are removed only after the stated evidence boundary is re-checked. The Sept. 4 RayNeo checkpoint was closed on 2026-09-07 after official retail order paths appeared. Rumor calendars and third-party launch predictions do not qualify for this table by themselves.
 
 ## Status vocabulary
 
