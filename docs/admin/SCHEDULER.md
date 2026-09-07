@@ -34,7 +34,7 @@ All times below are UTC unless explicitly described otherwise.
 | `model-discovery-audit.yml` | `20 4 * * *` / `20 5 * * *` | 12:20 AM Eastern, DST-aware dual-UTC schedule with in-workflow gating. |
 | `daily-news-collector.yml` | `51 3 * * *` / `51 4 * * *` | 11:51 PM Eastern institutional-intake backstop, DST-aware. |
 | `daily-news-verification.yml` | `55 3 * * *` / `55 4 * * *` | 11:55 PM Eastern editorial-triage backstop, DST-aware. |
-| `weekly-research-report.yml` | `45 17 * * 5` / `45 18 * * 5` | Friday 1:45 PM Eastern research report refresh. |
+| `weekly-research-report.yml` | `45 17 * * 5` / `45 18 * * 5` | Friday 1:45 PM Eastern research report, DST-aware. |
 
 ## Scheduler policy
 
