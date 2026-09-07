@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-07T19:22:34.148271+00:00`
+Generated: `2026-09-07T20:39:14.222260+00:00`
 
-- Intake files inspected: **162**
-- Candidates retained in this review window/history: **3355**
+- Intake files inspected: **163**
+- Candidates retained in this review window/history: **3447**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 1497
+- `adjacent_radar`: 1559
 - `catalog_review`: 28
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 260
-- `rejected_noise`: 1478
+- `needs_editorial_verification`: 261
+- `rejected_noise`: 1507
 - `source_monitor`: 2
 - `source_review`: 57
 - `watching`: 29
@@ -135,7 +135,7 @@ Generated: `2026-09-07T19:22:34.148271+00:00`
 | normal | needs_editorial_verification | direct | ['I find it very uncomfortable talking to people with a camera and a light': OpenAI's Sam Altman weighs in on smart glasses and privacy - tom](https://news.google.com/rss/articles/CBMijAJBVV95cUxOaHljZEU3Y0ZXeDNYSVRmRzVWeGpxdUxDRHNXWl93T0JjNzY5N0N2TVZIcFI1V3BHQjJOSk9aVGZJeU9aNVB4eVZCUVR4RkJTbUxlUFlLWVVZYm1CaWtfRk9ocEYtekNHQklJNFoyRGZFblZZVkJIRGpHOFBkbDdBMk0wLWlpS0Fpb1AxeVJGNTJsREQ5RWt1ZVhpY18zMkJySVJyalAwYW9kalowakVzc052U0ZGWVl1a2VXUWlvX2pOOE1IWm52dzZxU3pFX1BnUGo2N0VVMV9TVVptWnJOVGZVcVR5cjBnbUJjamhvTkJDczI1VTNBUnhHTEZyMk9uYmRzd29CaGpBSXo5?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (September 2026) Models Buy for Gaming ...](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses (August 2026): Tested Picks for AI, AR & Audio](https://whoismcafee.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (202) | research_news_review |
+| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Translation for Travelers (August 2026)](https://peccadille.net/best-smart-glasses-with-translation-for-international-travelers/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [12 Best AR Glasses (September 2026) Tested & Compared](https://whoismcafee.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [2026 Best Translation Glasses Guide: AI Subtitles for Real Life – RayNeo](https://www.rayneo.com/blogs/news/best-translation-smart-glasses-2026-guide) | reachable (200) | research_news_review |
@@ -151,6 +151,7 @@ Generated: `2026-09-07T19:22:34.148271+00:00`
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Set for 2027 with Siri, AI, Privacy Focus - Analytics Insight](https://news.google.com/rss/articles/CBMixAFBVV95cUxPaS1mYVltMlZkMVJMb0xNVzRuTVd3M3o3RjBTdGVkdTN1TWtQUEhnZmppWmZhVm54V2NPX1NwN0Q3TnpFTWlUQVNZVjZmdGx5MThmdGtFbTZYWHVFaHEwRk9YWFg4MV9kT3ZHZ29RSGk4RDVxbkdENm9oY2hqWGw4SVh1cm5ua0NLSHlZYzZlU3owY05lZUxpc0FUOGg2M3hzY0IwZWZtMU9KdEY2MlZKTWRYdFU3ZklDYzhUNll1UHQ5NkI20gHEAUFVX3lxTE9pLWZhWW0yVmQxUkxvTE1XNG5NV3czejdGMFN0ZWR1M3VNa1BQSGdmamlaZmFWbnhXY09fU3A3RDdOekVNaVRBU1lWNmZ0bHkxOGZ0a0VtNlhYdUVocTBGT1hYWDgxX2RPdkdnb1FIaThENXFuR0Q2b2hjaGpYbDhJWHVybm5rQ0tIeVljNmVTejBjTmVlTGlzQVQ4aDYzeHNjQjBlZm0xT0p0RjYyVkpNZFh0VTdmSUNjOFQ2WXVQdDk2QjY?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Set for 2027 with Siri, AI, Privacy Focus - Analytics Insight](https://news.google.com/rss/articles/CBMitwFBVV95cUxPY0pSd3RYVDlFLVdOYzVMd3RpemJ6cVZKUVZZSTJyUVl3Tm9QYWVnZGpweXE4MjJxTzQ3eXRmY0FBRDNIdDFfdS1jeXExU1dudzJnM05CdmpHTWl3UlNxLTN4by1fX3lMU2JueEFRYi1zRmphRjRrN09Oc1JiTDA5eExjbDlUV25Lelc0bTJZUTFVX3FYS0VaNlVPT3F2T3NUcEZvQ1U4aHZhb191MGJUVENsaTMyejDSAcQBQVVfeXFMT2ktZmFZbTJWZDFSTG9MTVc0bk1XdzN6N0YwU3RlZHUzdU1rUFBIZ2ZqaVpmYVZueFdjT19TcDdEN056RU1pVEFTWVY2ZnRseTE4ZnRrRW02WFh1RWhxMEZPWFhYODFfZE92R2dvUUhpOEQ1cW5HRDZvaGNoalhsOElYdXJubmtDS0h5WWM2ZVN6MGNOZWVMaXNBVDhoNjN4c2NCMGVmbTFPSnRGNjJWSk1kWHRVN2ZJQ2M4VDZZdVB0OTZCNg?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AR Compare: AR Glasses Database — 81+ Models Compared](https://www.arcompare.com/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [AR Glasses & Smart Glasses — AI, Spatial Computing & Metaverse](https://arglasses.com/) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Best AR Glasses 2026: Smart Glasses Comparison & Buyer's Guide \| VR.org](https://vr.org/ar-glasses) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses & AI Glasses in 2026: 15 Models Reviewed](https://treeview.studio/blog/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses for Navigation and Translation](https://gagadget.com/en/695811-smart-glasses-for-navigation/) | reachable (200) | research_news_review |
@@ -271,7 +272,6 @@ Generated: `2026-09-07T19:22:34.148271+00:00`
 | normal | needs_editorial_verification | direct | [Vuzix to present waveguide design advances at MicroLED Connect event in Eindhoven - Traders Union](https://news.google.com/rss/articles/CBMihAFBVV95cUxNUmJtZzUtNHB6N2dFR0o4UGtuMncwaDNWRzlFLUNBcTg2VW5DVDdwMGVGSmtzelJBWG5IVXJjQlFlNGtNSERUVjRvMWJQZGJjUC1xQlZkUUVZcHJ2NWxiTFlRdGYxMjZUTkxKMlZVMFJWa21DYm9abV90dkxRTk9PZHN1djU?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [What Smart Glasses Can (and Can't) Do: I Wore the Top Models ...](https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [XREAL Aura Brings Android XR and Gemini AI to Smart Glasses - Geeky Gadgets](https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pOEY3RHZjUDNWZVZpMHpKTHdfckUyVmp1ZGJiYVYzS1MwWkxxbzdYaVJIRkRFQ19qWlNGZG5lSDZZOHZGQUNfTFE2RzVqUk83dXphQ3RkODZhWGFSOFhKY2J3?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [XREAL \| Building Augmented Reality for Everyone](https://www.xreal.com/) | reachable (200) | research_news_review, retail_rebrand_review |
 
 ## Meaning of states
 
