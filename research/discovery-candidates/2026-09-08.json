@@ -1,32 +1,40 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-08T18:47:38.827687+00:00",
-  "candidate_count": 39,
-  "classifier_irrelevant_count": 39,
+  "discovered_utc": "2026-09-08T21:43:50.423124+00:00",
+  "candidate_count": 98,
+  "classifier_irrelevant_count": 61,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 1,
-    "broad_web": 34,
-    "developer": 5
+    "adjacent": 37,
+    "broad_web": 50,
+    "developer": 11
   },
   "relationship_counts": {
     "direct": 0,
     "enabling": 0,
-    "adjacent": 0,
+    "adjacent": 37,
     "speculative": 0,
-    "irrelevant": 39
+    "irrelevant": 61
   },
   "type_counts": {
     "model": 1,
-    "review": 1,
-    "news": 30,
-    "tool": 5,
-    "sdk": 5,
+    "review": 2,
+    "video": 2,
+    "news": 50,
+    "tool": 18,
+    "sdk": 12,
+    "retail": 11,
     "teardown": 1,
-    "community": 2
+    "community": 16
   },
   "routing_counts": {
-    "reject_noise": 39
+    "adjacent_radar": 37,
+    "community_evidence_review": 10,
+    "development_hacking": 3,
+    "reject_noise": 61,
+    "report_card_evidence": 2,
+    "research_news_review": 37,
+    "retail_rebrand_review": 2
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -37,103 +45,36 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://dumall.baidu.com/product/902971303493639",
+      "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>"
+    }
+  ],
   "candidates": [
     {
-      "id": "c8d2434436d3e7e3",
-      "title": "Descargar e instalar Google Chrome",
-      "url": "https://support.google.com/chrome/answer/95346?hl=es&co=GENIE.Platform%3DDesktop",
-      "summary": "Descargar e instalar Google Chrome Puedes descargar e instalar el navegador web Chrome sin coste económico y usarlo para navegar por la Web.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "ae0d698e718573f7",
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "summary": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "adjacent_hci",
       "materiality_score": 3,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "github",
+        "open source"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4d5ec24cb60bfbb9",
-      "title": "Google",
-      "url": "https://www.google.com.gt/index.html",
-      "summary": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f06a64df4d8a3c32",
-      "title": "Google - Wikipedia, la enciclopedia libre",
-      "url": "https://es.wikipedia.org/wiki/Google",
-      "summary": "Larry Page y Sergey Brin comenzaron Google como un proyecto universitario en enero de 1996 cuando ambos eran estudiantes de posgrado en ciencias de la computación en la Universidad de Stanford.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c9f83d233fe974f2",
-      "title": "Newest Questions - Stack Overflow",
-      "url": "https://stackoverflow.com/",
-      "summary": "Stack Overflow | The World’s Largest Online Community for Developers",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "tool",
         "sdk",
@@ -141,6 +82,1033 @@
       ],
       "primary_type": "tool",
       "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0841d056472e4fa2",
+      "title": "Bronx NY Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/bronx-new-york-ny/",
+      "summary": "View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a2644d96f5935608",
+      "title": "ChatGPT Web for Codex - GitHub",
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "summary": "ChatGPT Web runs from Codex's model picker while the original task UI, context lifecycle, streaming, tracing, and tool presentation stay intact. The full Codex harness over MCP. Full mode gives every effort exposed by the signed-in account, including Pro, the active task's filesystem, shell, images, approvals, and configured tools/apps.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8429d8d66bb47852",
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "summary": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub Desktop simplifies your development workflow. Download for Windows (64bit)",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b933999451b62401",
+      "title": "Alba FC - Best Soccer Club Near Bronx New York",
+      "url": "https://albafc.net/",
+      "summary": "We offer structured Bronx youth soccer programs designed for beginners to advanced players ages 4 - 15. Our soccer classes in the Bronx help young players build confidence, learn fundamentals, and enjoy the game in a supportive environment. Great for beginners and Intermediate players. Ages 4 - 15.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c63ba497fc998d88",
+      "title": "Certificates of Deposit » ST Bank",
+      "url": "https://www.stbank.com/certificates-of-deposit/",
+      "summary": "Certificates of Deposit With Competitive Rates With S&T, choose your term and earn well above the national average Annual Percentage Yield (APY). Rates effective as of September 1, 2026. Use our calculators to see how much you can earn.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e84c5dd8daaac8bc",
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "summary": "r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0e237e50315e6a8c",
+      "title": "Cities near Bronx",
+      "url": "https://citiesnear.com/Bronx",
+      "summary": "Find destinations nearby to plan a road trip from Bronx.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "594c7b2b6e194909",
+      "title": "Cities Near Me - Bronx, New York | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Bronx,+NY",
+      "summary": "Find the top 15 cities, towns, and suburbs near Bronx, NY, like Mount Vernon and Fort Lee, and explore the surrounding area for a day trip.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "73a0ffd728c9f769",
+      "title": "Corner Radius & Corner Chamfer End Mills - MSC Industrial Supply",
+      "url": "https://www.mscdirect.com/browse/tn/Milling/End-Mills/Corner-Radius-Corner-Chamfer-End-Mills?navid=2106244",
+      "summary": "MSC Direct offers quality Corner Radius & Corner Chamfer End Mills at a great value. Find premium products to last a lifetime!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4a1af022bc0462c7",
+      "title": "Find an S&T Location Near You - S&T Bank",
+      "url": "https://www.stbank.com/locations/",
+      "summary": "See where the closest S&T branch is located near you for all of your personal and commercial banking needs.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e9190415a7dee51",
+      "title": "Grooving Inserts | MSC Industrial Supply Co.",
+      "url": "https://www.mscdirect.com/browse/tn/Indexable-Cutting-Tools/Indexable-Inserts/Grooving-Inserts?navid=2107106",
+      "summary": "MSC Direct offers quality Grooving Inserts at a great value. Find premium products to last a lifetime!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0f3f80dfa69915bb",
+      "title": "Indexable Turning Toolholder: MCLNR & L164D, Clamp & Screw",
+      "url": "https://www.mscdirect.com/product/details/64922438",
+      "summary": "Find Indexable Turning Toolholder: MCLNR & L164D, Clamp & Screw at MSC Industrial Supply, serving the metalworking, safety, and MRO industries for over 75 years",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "daf199d2920cc470",
+      "title": "Indian Springs » ST Bank",
+      "url": "https://www.stbank.com/locations/indian-springs/",
+      "summary": "Branch & ATM ADDRESS 2455 Oakland Avenue Indiana, PA 15701 724.465.4862 Directions Location Hours",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a0b32e8d3ecad65",
+      "title": "Kennametal - Indexable Turning Toolholder ... - MSC Industrial Supply",
+      "url": "https://www.mscdirect.com/product/details/64922420",
+      "summary": "Find Indexable Turning Toolholder: MCLNR & L124B, Clamp & Screw at MSC Industrial Supply, serving the metalworking, safety, and MRO industries for over 75 years",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "60be4c170be97a3f",
+      "title": "Main Office » ST Bank",
+      "url": "https://www.stbank.com/locations/main-office/",
+      "summary": "Branch & ATM ADDRESS 800 Philadelphia Street Indiana, PA 15701 724.349.0599 Directions Location Hours",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3d014e0463f5f33e",
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/en-us/musicandvideo/forum/xbzune/original-zune-hd-cable/031fbc24-bac3-49a5-a7cb-50d302312084",
+      "summary": "Microsoft Community",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40060ebeac3d859a",
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_7-files/%E6%97%A2%E5%AE%9A%E3%81%AE%E3%83%97%E3%83%AD/0b2d98f3-1ffb-4ca0-a860-f31290684271ここが役立つでしょう。レジストリいじらないといけないので文章を読んで内容理解するのも含めるとちょっと時間かかりますね。まあ書いてあるとおりするだけなんですけど・・・。種類をISOファイルというデフォに戻すだけの見た目のためにする作業としてはちょっとめんどいですねｗ私は基本WinRARを既定プログラムにしてWinRAR書庫としています。既定プログラムの変更だけならISOファイルを右クリックしてプログラムの選択から設定できます。デーモンツールをを既定プログラムにしたら種類がISOファイルになったような気もします（それだと簡単ですぐですけど）。まあデーモンツールをインストールされてなければ参考になりませんが。ではがんばってください。",
+      "summary": "Microsoft Community",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "85bf03f9f66573fb",
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_10-windows_store/windows10%E3%82%A2%E3%83%97%E3%83%AA%E6%9B%B4/22e8cecf-e890-4219-a10f-ce655716b696↑マイクロソフトのコミュニティに書いてある方法を試して下さい。&gt;ストアアプリのトラブルシューティングツールを実行してみてはいかがでしょうか。手順:[コントロールパネル]→[システムとセキュリティ]→[セキュリティとメンテナンス]→[トラブルシューティング]の順に開き、[すべて表示]を選択して&quot;Windowsストアアプリ&quot;の診断を行ってみてください。状況が変わらない場合は、DISMコマンドも試してみると良いと思います。1.Windowsロゴキー+Xキーを押し、[コマンドプロンプト(管理者)]をクリックします。2.『Dism/online/cleanup-image/restorehealth』を入力してEnterキーを押します。",
+      "summary": "Microsoft Community",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3387c9a0542d53df",
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_10-windows_install/%E7%84%A1%E6%96%99%EF%BD%97%EF%BD%89%EF%BD%8E/c2d55ab7-c1e8-4dea-a078-61e5076b3814一部引用Windows10をライセンス認証できない理由上記にも下記の記載があるのでデバイスが変更されたらだめなようです＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊Windows7ServicePack1またはWindows8.1Updateから無償でWindows10にアップグレードした無償でWindows10にアップグレードした後、ライセンス認証されていない状態になった場合は、次の手順を実行してみてください。1.[スタート]ボタン画像を選択し、[設定]、[更新とセキュリティ]、[ライセンス認証]の順に選びます。2.[ストアに移動]を選択し、お使いのデバイスに適用できる有効なライセンスがあるかどうかを確かめます。使用できるライセンスがない場合は、ストアからWindowsを購入する必要があります。注意&",
+      "summary": "Microsoft Community",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c3d262f6d9ae1bd",
+      "title": "MSC Industrial Supply - Metalworking tools and MRO Supplies",
+      "url": "https://www.mscdirect.com/about-msc/msc-locations",
+      "summary": "MSC Industrial Supply has customer care teams and five major Customer Fulfillment Centers strategically located throughout the United States to serve your needs quickly and efficiently. No matter where you are, we can get inventory to you fast.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b6a70781908747fa",
+      "title": "MSC Industrial Supply - Returning Customer",
+      "url": "https://www.mscdirect.com/ui/identity/logon",
+      "summary": "With 1.5+ million products, MSC Industrial Supply is 'Built To Make You Better', serving the Metalworking, Safety, and MRO industries for over 75 years",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "61e351a9878b6ce7",
+      "title": "MSC Industrial Supply Co. | Locations",
+      "url": "https://www.mscdirect.com/ContentView?storeId=10054&catalogId=10001&langId=-1&contentSidebar=%2fsidebars%2fabout-msc&contentPath=%2fcorporate%2flocations",
+      "summary": "MSC Locations MSC Locations MSC Industrial Supply Locations MSC Industrial Supply has customer care teams and five major Customer Fulfillment Centers strategically located throughout the United States to serve your needs quickly and efficiently. No matter where you are, we can get inventory to you fast.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "88f7cb84cb5a791e",
+      "title": "Online Banking for Business With S&T",
+      "url": "https://www.stbank.com/business/banking/online/",
+      "summary": "Gain real-time, round-the-clock access to the products and services you need to help manage your business. Learn more about our services today.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "94f6164cfd271464",
+      "title": "Online Banking Login | S&T Bank",
+      "url": "https://www.stbank.com/login/",
+      "summary": "Log into S&T Bank's online banking portal to perform day-to-day banking tasks like viewing account balances, paying bills, and transfering funds.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cb3f2de39f3a0872",
+      "title": "Open a Personal Checking Account Online | S&T Bank",
+      "url": "https://www.stbank.com/personal/bank/checking/",
+      "summary": "We offer a variety of personal checking accounts designed to fit your lifestyles and financial goals. Compare accounts and choose the best fit for you.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "78465b93df0fe36a",
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "summary": "r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA but is…",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "342c4c945bcf449a",
+      "title": "Renishaw - CMM Battery: | MSC Direct",
+      "url": "https://www.mscdirect.com/product/details/65395907",
+      "summary": "Find CMM Battery: at MSC Industrial Supply, serving the metalworking, safety, and MRO industries for over 75 years",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "29beac912d6d273c",
+      "title": "S&T Bank to Open New Pittsburgh Branch and Expanded Office Location",
+      "url": "https://www.stbank.com/press-releases/st-bank-to-open-new-pittsburgh-branch-and-expanded-office-location/",
+      "summary": "INDIANA, Pa. – January 29, 2026 – S&T Bank, the wholly owned subsidiary of S&T Bancorp, Inc. (NASDAQ, STBA), announces plans to open a new full-service branch and expanded Pittsburgh office location at One North Shore Center at 12 Federal Street, growing the Bank’s Pittsburgh area presence and strengthening its long-term commitment to serving customers, businesses and communities across ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a15c606fb26bf73b",
+      "title": "S&T Bank: Building Relationships to Support Our Community",
+      "url": "https://www.stbank.com/personal/",
+      "summary": "Ranked highest in customer satisfaction with retail banking in the Mid-Atlantic Region by customers like you. Learn why and visit us today.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9556f5811848199e",
+      "title": "Square End Mills | MSC Industrial Supply Co.",
+      "url": "https://www.mscdirect.com/browse/tn/Milling/End-Mills/Square-End-Mills?navid=2106240",
+      "summary": "MSC Direct offers quality Square End Mills at a great value. Find premium products to last a lifetime!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2c40c59a08c1fc88",
+      "title": "Start Your Career at S&T Bank",
+      "url": "https://www.stbank.com/about/careers/",
+      "summary": "S&T Bank fosters a diverse work culture where employees work together to better our company, services and community.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f67297014125a5be",
+      "title": "Thread Forming Taps | MSC Industrial Supply Co.",
+      "url": "https://www.mscdirect.com/browse/tn/Threading/Taps/Thread-Forming-Taps?navid=2106038",
+      "summary": "MSC Direct offers quality Thread Forming Taps at a great value. Find premium products to last a lifetime!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "57eaca6cf0edc5a6",
+      "title": "Top 15 Things to Do in Bronx, NY - Bronx Attractions",
+      "url": "https://www.tripadvisor.com/Attractions-g47369-Activities-Bronx_New_York.html",
+      "summary": "See what other travelers like to do, based on ratings and number of bookings. Book these experiences for a close-up look at Bronx. These rankings are informed by Tripadvisor data —we consider traveler reviews, ratings, number of page views, and user location. 1. New York Botanical Garden.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9217471b301090bb",
+      "title": "Vet Near Me - Bronx Veterinary Center - Webster Avenue - Bronx, NY",
+      "url": "https://bronxvetcenter.com/",
+      "summary": "Bronx Veterinary Center at Avenue and Bronx Veterinary Center at Eastchester Road are happy to team up to provide exceptional medical care for our pet patients and kind and compassionate customer service to our human clients.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9679f5c31e2310d5",
+      "title": "为什么用chatgpt账号登入一直提示需要电话号码 怎么解决？",
+      "url": "https://www.zhihu.com/question/2031417400504082455",
+      "summary": "今天就来告诉你，为什么 ChatGPT 登录突然需要验证手机号码了！ 顺便讲一下怎么解决这个手机号验证的问题。 特别是 Codex 登录的情况——账号注册成功了，但登录 Codex 时却要求验证手机号，这是为什么？ 为什么突然要验证手机号？",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f5098ab13f1a726b",
+      "title": "我的OneDrive用不了 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/msoffice/forum/all/%E6%88%91%E7%9A%84onedrive%E7%94%A8%E4%B8%8D/bba42616-6dcf-4ff9-8e72-5c8bc6e18f2e",
+      "summary": "请问，我才装win10不到1年，但是OneDrive总是登录不了，网页版也不行，但又不懂VPN，很像被冻结一样。大神，可不可以请帮帮我？",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb356bbca4bab40a",
+      "title": "Gemini | Help Center",
+      "url": "https://support.gemini.com/hc/en-us",
+      "summary": "Gemini Credit Card® Learn about applying for, using, and managing the Gemini Credit Card. Other Gemini Products Learn about our Custody, Clearing, GUSD , eOTC and Staking products. Education & Other Topics Learn about the Gemini API, referral program, Cryptopedia and more.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "api"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
         "reject_noise"
       ],
       "triage_priority": "low",
@@ -149,10 +1117,118 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e97729e12f339c5b",
-      "title": "PHP: how to retrieve profile data from Facebook - Stack Overflow",
-      "url": "https://stackoverflow.com/questions/3549461/php-how-to-retrieve-profile-data-from-facebook",
-      "summary": "I've tried lots of things and went through facebook.php but can't see a solution. Please let me know how to do this: authorize user in a popup and then gather the profile data in php.",
+      "id": "67301a68f03331f3",
+      "title": "Chat GPT Gratuito",
+      "url": "https://overchat.ai/es/chat/chat-gpt-gratuito",
+      "summary": "¿Cómo funciona el chatbot gratuito de GPT? Utiliza inteligencia artificial para comprender lo que estás preguntando y te ofrece respuestas útiles basadas en tus preguntas.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "39754b68809ae4b6",
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/es-ES/",
+      "summary": "Usa ChatGPT para responder preguntas, escribir, crear imágenes, completar tareas y programar, todo en un solo lugar. Empieza gratis o descarga la aplicación.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "400373bcc690a5e3",
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/g/?locale=pt-BR",
+      "summary": "Entre para receber respostas com base em chats salvos, além de criar imagens e carregar arquivos. No que você está pensando hoje? Use o ChatGPT para responder a perguntas, escrever, criar imagens, realizar tarefas e programar — tudo em um só lugar. Comece gratuitamente ou baixe o aplicativo.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6eb417f44e37533e",
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/login_with?locale=es-ES",
+      "summary": "Usa ChatGPT para responder preguntas, escribir, crear imágenes, completar tareas y programar, todo en un solo lugar. Empieza gratis o descarga la aplicación.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1753e791bc092c3e",
+      "title": "developer.gemini.com",
+      "url": "https://developer.gemini.com/borger/",
+      "summary": "developer.gemini.com",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -176,12 +1252,147 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f77abbe5f13e41a4",
-      "title": "Actium — Grokipedia",
-      "url": "https://grokipedia.com/page/Actium",
-      "summary": "The Battle of Actium was a pivotal naval engagement fought on September 2, 31 BC, in the Ionian Sea near the promontory of Actium on the northwestern coast of Greece, pitting the forces of Octavian against those of Mark Antony and his ally, Cleopatra VII of Egypt.",
+      "id": "02b71e261bf5715a",
+      "title": "Download ChatGPT",
+      "url": "https://chatgpt.com/download/",
+      "summary": "Download the ChatGPT app for Windows, Mac, iPhone, and Android. Access ChatGPT Work and Codex, use voice conversations, create images, and connect your files and apps.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d63c06431ddd9fbe",
+      "title": "Gemini Credit Card Application Process",
+      "url": "https://support.gemini.com/hc/en-us/articles/4405098390043-Gemini-Credit-Card-Application-Process",
+      "summary": "Gemini evaluates applications in compliance with the Equal Credit Opportunity Act (ECOA) and applicable lending regulations. Opting out of Plaid verification will not negatively impact your eligibility for a Gemini Credit Card, but your credit limit will be determined based on the original application criteria.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aabfa4557c8fda6c",
+      "title": "Gemini Onchain",
+      "url": "https://onchain.gemini.com/portfolio",
+      "summary": "Gemini Wallet(TM) is a self-custodial wallet that allows users to hold their own digital assets; Gemini Onchain(TM) is a platform that allows users to interact with third party applications. Gemini is not responsible for the actions of any user or any third party application.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0cc90c479e29e915",
+      "title": "Gemini Wallet",
+      "url": "https://keys.gemini.com/",
+      "summary": "A Web3 Wallet built by Gemini.com",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3f3b661cc5b091fa",
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "summary": "We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it possible for ChatGPT to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "56f6d4540e518a7d",
+      "title": "Allow or block access to websites - Chrome Enterprise and Education Help",
+      "url": "https://support.google.com/chrome/a/answer/7532419?hl=en",
+      "summary": "As a Chrome Enterprise admin you can block and allow URLs so that users can only visit certain websites. Restricting users’ internet access can increase productivity and protect your organization from viruses and malicious content found on some websites.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -202,10 +1413,166 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a458e59c042df5f7",
-      "title": "APARTHOTEL OCEANUS - Recent 2026 Reviews - Tripadvisor",
-      "url": "https://www.tripadvisor.co.uk/Hotel_Review-g1190872-d264257-Reviews-Aparthotel_Oceanus-Olhos_de_Agua_Albufeira_Faro_District_Algarve.html",
-      "summary": "The Oceanus is a great little spot just outside of Olhos De Agua, near Albufeira in the Algarve. It’s about half an hour from Faro airport and costs €55 in a taxi each way.",
+      "id": "144f4b0ec5997e07",
+      "title": "Amazon (company) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amazon_(company)",
+      "summary": "Amazon (company) - Wikipedia",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b94d360cf3bbea6d",
+      "title": "Amazon Careers: Impact the Future, Today",
+      "url": "https://www.amazon.jobs/",
+      "summary": "At Amazon, what we’re building today defines tomorrow. Explore internships, apprenticeships, and full-time roles where you can think big, learn from others, and make an impact.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f7a1cc60eb080e8",
+      "title": "Amazon News: Breaking news about Amazon and latest company updates",
+      "url": "https://www.aboutamazon.com/",
+      "summary": "Amazon’s HR leader, Beth Galetti, shares how AI tools are empowering employees to build and how the company is investing $2.5 billion to prepare people for the future of work.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cbf132118236de78",
+      "title": "Amazon.com",
+      "url": "https://www.amazon.com/your-account",
+      "summary": "Manage your Amazon account settings, orders, payments, and preferences for a personalized shopping experience.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0cb8f11b6dfce10d",
+      "title": "Amazon.com Best Sellers: The most popular items on Amazon",
+      "url": "https://www.amzn.com/Best-Sellers/zgbs",
+      "summary": "Discover the best in Best Sellers. Find the top 100 most popular items in Amazon Best Sellers.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "766346964273918e",
+      "title": "Amazon.com | Seattle WA",
+      "url": "https://www.facebook.com/Amazon/",
+      "summary": "Amazon.com, Seattle. 29,665,288 likes · 65,080 talking about this · 1,326 were here. Official Facebook page of www.amazon.com",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "43c3cb5a4ee00549",
+      "title": "BBB Accredited Low Voltage Contractors in USA | Better Business Bureau",
+      "url": "https://www.bbb.org/us/category/low-voltage-contractors/accredited",
+      "summary": "BBB Accredited Low Voltage Contractors in USA. Your guide to trusted BBB Ratings, customer reviews and BBB Accredited businesses.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -216,58 +1583,6 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3bbd8302bc4259f",
-      "title": "Battle of Actium - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Battle_of_Actium",
-      "summary": "Battle of Actium - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. Current events. Random article. About Wikipedia. Contact us. Contribute . Help. Learn to edit. Community portal. Recent changes. Upload file. Special pages. Search. Appearance. Donate. Create account. Log in. Personal tools. Donate.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2597d6606afc8d16",
-      "title": "Battle of Actium - World History Encyclopedia",
-      "url": "https://www.worldhistory.org/Battle_of_Actium/",
-      "summary": "The Battle of Actium (2 September 31 BCE, fought in the Ionian Sea off Actium, Greece) was the decisive engagement of the civil war fought between Octavian Caesar...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
         "news"
       ],
       "primary_type": "news",
@@ -280,38 +1595,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "eb1bb1e47addf1fc",
-      "title": "Battle of Actium | History, Summary, & Significance, Octavian vs ...",
-      "url": "https://www.britannica.com/event/Battle-of-Actium-ancient-Roman-history",
-      "summary": "The Battle of Actium was a naval battle on September 2, 31 BCE, where Octavian defeated Mark Antony, becoming the master of the Roman world.",
+      "id": "eee573cb204ef5df",
+      "title": "Best of IFA 2026: 13 tech gadgets with prices and release dates",
+      "url": "https://nypost.com/2026/09/08/tech/best-of-ifa-2026-gadgets/",
+      "summary": "Best of IFA 2026: 13 standout gadgets with prices, including LG's wallpaper TV, the all-new revamped Roomba and Anker's hearing aids that won the entire show.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7efe3d582719e32b",
-      "title": "Bayside Volkswagen | Volkswagen Dealer in Bayside",
-      "url": "https://www.baysidevw.com/",
-      "summary": "Bayside Volkswagen offers a broad selection of new Volkswagen vehicles for drivers in Bayside, NY and nearby Queens communities. Depending on current availability, shoppers may find popular Volkswagen models such as the Jetta, Jetta GLI, Taos, Tiguan, Atlas, Atlas Cross Sport, Golf GTI, Golf R, ID.4, and ID. Buzz.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -332,36 +1621,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0b5055290e9fe1ad",
-      "title": "Contratá Disney+ en Argentina | Flow - Personal",
-      "url": "https://www.personal.com.ar/flow/plataformas-de-streaming/disney-plus",
-      "summary": "Si querés contratar Disney Plus en Argentina suscribite ahora con Flow y disfrutá de Pixar, Marvel, Star Wars, National Geographic y estrenos exclusivos.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1700d131aba3b2b7",
-      "title": "Deep Van - 知乎",
-      "url": "https://www.zhihu.com/people/yang-lei-96-72",
-      "summary": "Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获得广泛关注。",
+      "id": "ce1f7eb9c8f65af0",
+      "title": "Can't recieve emails from Pornhub, how do i fix this?",
+      "url": "https://support.google.com/mail/thread/17086155/can-t-recieve-emails-from-pornhub-how-do-i-fix-this?hl=en",
+      "summary": "Pornhub needs me to confirm my email, in order for me to access their features. However none of their emails ever show up in my Gmail. Yes, I checked spam, trash, used the search tool, typed \"in:anywhere\" nothing is there. What can I do about this?",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -372,9 +1635,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -384,38 +1647,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5e67a5faedbac515",
-      "title": "Disney+ - Aplicaciones en Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.disney.disneyplus&hl=es",
-      "summary": "Consigue entretenimiento sin límite con Disney+ y disfruta de los últimos estrenos de Disney, Pixar, Marvel, Star Wars, National Geographic y más.",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "ThinkAR AiLENS; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f18b2282edf69357",
-      "title": "Disney+ Argentina | Películas, series y deportes sin límites",
-      "url": "https://www.disneyplus.com/es-ar",
-      "summary": "Suscribirme a Disney+ para ver mis favoritos de Disney, Pixar, Marvel, Star Wars, National Geographic, Hulu y los deportes de ESPN.",
+      "id": "7e9acea336f4161b",
+      "title": "CBS New York - Breaking News, Sports, Weather, Traffic and the Best of NY",
+      "url": "https://www.cbsnews.com/newyork/",
+      "summary": "CBS News New York is investigating the cashless tolling system in New York and New Jersey. Unpaid tolls can spiral into crushing debt — but that's just one of many issues drivers face.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -436,10 +1673,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0ab41307d3522738",
-      "title": "grammar - Why number 2 has two forms? - Chinese Language Stack Exchange",
-      "url": "https://chinese.stackexchange.com/questions/31078/why-number-2-has-two-forms",
-      "summary": "二 (èr) and 两 (liăng) I understand when to use which But I'm curious to know why, and correct me if I'm wrong, this is the only number that has 2 forms.",
+      "id": "dcd1c28ef16baadc",
+      "title": "Find lost photos & videos - Android - Google Photos Help",
+      "url": "https://support.google.com/photos/answer/6306652?hl=en&co=GENIE.Platform=Android",
+      "summary": "Open Google Photos . At the top, tap your account profile photo or initial Photos settings . Tap Back up. Check your settings: Back up: Make sure \"Back up\" is turned on. Backup account: Make sure you back up your photos and videos to the right Google Account. Back up device folders: If you want to find photos and videos on your Android phone from other apps or devices in your Google Photos ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -450,9 +1687,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -462,12 +1699,480 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d9c3be4711a1a6d7",
-      "title": "Hudson Valley Volkswagen | New & Pre-Owned Volkswagen Dealership Near ...",
-      "url": "https://www.hudsonvalleyvw.com/",
-      "summary": "Hudson Valley Volkswagen service center in Wappingers Falls, New York. Providing professional Volkswagen repair and Outstanding Customer Service is our goal at Hudson Valley Volkswagen.",
+      "id": "d7c7505a5cacf4ed",
+      "title": "Flow Volkswagen of Durham | New and Used Cars For Sale",
+      "url": "https://www.flowvolkswagendurham.com/",
+      "summary": "Visit Flow Volkswagen of Durham, NC for great offers on cars and service. Browse new models like the Volkswagen Atlas and Volkswagen Jetta.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d61dfdbb627d541d",
+      "title": "Google",
+      "url": "https://www.google.co.id/index.html",
+      "summary": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77fa4d001071e757",
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.co.id/?hl=id",
+      "summary": "Telusuri indeks buku teks paling komprehensif di dunia. Koleksi Anda",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "656efe4ec4626f80",
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.co.id/intl/en_uk/chrome/",
+      "summary": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. Download now.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "73b5c488906d4fb7",
+      "title": "Google Earth",
+      "url": "https://earth.google.co.id/",
+      "summary": "Google Earth merupakan versi foto digital yang paling realistis dari planet kita. Dari mana asal gambarnya? Bagaimana cara menyatukannya? Dan sesering apa gambar tersebut diperbarui? Di video ini, Anda bisa belajar tentang piksel, permukaan, dan orang-orang yang membuat citra 3D untuk Google Earth.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0ecbc8664736158d",
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "summary": "Google Meet Ads Data Hub Google AdMob Chrome Enterprise and Education Local Services Elastifile Google Marketing Platform CEWA Cameyo Google for Nonprofits Cloud Search Google Pay for Online Business Work Insights Android Enterprise Google Business Profile Brand profile Gemini Enterprise – Business Edition Campaign Manager 360 BFF Operations ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "29234e002385a12a",
+      "title": "Google Images",
+      "url": "https://images.google.co.id/",
+      "summary": "Google Images. The most comprehensive image search on the web.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ae4fa8cb130218c3",
+      "title": "Google Maps",
+      "url": "https://maps.google.co.id/robots.txt",
+      "summary": "User-agent: * User-agent: Yandex Disallow: /search Allow: /search/about Allow: /search/howsearchworks Disallow: /sdch Disallow: /groups Disallow: /index.html ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e89cd33624333bd0",
+      "title": "Google Terjemahan",
+      "url": "https://translate.google.co.id/",
+      "summary": "Layanan Google yang ditawarkan tanpa biaya ini dapat langsung menerjemahkan berbagai kata, frasa, dan halaman web ke bahasa Indonesia dan lebih dari 100 bahasa lainnya.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dc9c2015951e7c0d",
+      "title": "Google Trends",
+      "url": "https://trends.google.co.id/home?hl=en",
+      "summary": "Explore search interest of terms and topics by time, location and popularity on Google Trends",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1158b2119759f9eb",
+      "title": "How to remove Gmail account from connected websites - Google Help",
+      "url": "https://support.google.com/accounts/thread/215942258/how-to-remove-gmail-account-from-connected-websites?hl=en",
+      "summary": "This help content & informationGeneral Help Center experience Search",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fd6ad14fd8ad8740",
+      "title": "Huawei - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/HUAWEI",
+      "summary": "Huawei - Wikipedia",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af4771cc9c8a999c",
+      "title": "I cant open Pornhub in chrome because of my issue about my birthday. My ...",
+      "url": "https://support.google.com/chrome/thread/385967535/i-cant-open-pornhub-in-chrome-because-of-my-issue-about-my-birthday-my-real-birthday-is-01-14-2005?hl=en",
+      "summary": "I can't open Pornhub in Chrome because of the issue about my birthday. My real birthday is 01/14/2005 and I'm 20 years old.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fce37f9d523673ed",
+      "title": "I don't see porn hub - Google Chrome Community",
+      "url": "https://support.google.com/chrome/thread/340696391/i-don-t-see-porn-hub?hl=en",
+      "summary": "This help content & informationGeneral Help Center experience Search",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cb3fad723dae4c32",
+      "title": "I hate redneck neighbors - Page 3 — Penny Arcade",
+      "url": "https://forums.penny-arcade.com/discussion/94177/i-hate-redneck-neighbors/p3",
+      "summary": "Make him stay there for two weeks stocked with booze, condoms, and good food. Film everything. If he lasts, they pay for his wedding or whatever. If not, porn. Do you work for Vault-Tec?",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "87fe934bedf6b141",
+      "title": "IFA Berlin 2026 - Innovation For All",
+      "url": "https://www.ifa-berlin.com/de/",
+      "summary": "IFA ist die globale Plattform für Future Tech. Wir verbinden weltweit Menschen, Märkte und Ideen das ganze Jahr über, um technologische Innovationen erlebbar zu machen.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da145ac1813a860c",
+      "title": "International Franchise Association Names 2026 Franchisees of the Year ...",
+      "url": "https://www.franchise.org/2026/09/international-franchise-association-names-2026-franchisees-of-the-year/",
+      "summary": "WASHINGTON, D.C. – The International Franchise Association (IFA) today named 89 individuals as 2026 Franchisees of the Year for being outstanding franchise owners with excellence in entrepreneurship, community outreach, workforce development, and service to others. Top franchisees from IFA member brands across industries and communities around the country will be honored at the IFA26 ...",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0e3e98d093d45e09",
+      "title": "Jelajahi – Google Trends",
+      "url": "https://trends.google.co.id/explore",
+      "summary": "Jelajahi topik yang ditelusuri pengguna di seluruh dunia di Google Trends",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f1e157bd59d3bb0",
+      "title": "Left 4 ZOEY PORN INSIDE — Penny Arcade",
+      "url": "https://forums.penny-arcade.com/discussion/75131/left-4-zoey-porn-inside",
+      "summary": "Shoot zombies, burn zombies, blow up zombies, shoot em some more. There's many ways of dealing with the deadly menace, be creative!",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -488,558 +2193,480 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5d20a5ceab1f9597",
-      "title": "Iniciar sesión en Disney+ | Acceder o suscribirte",
-      "url": "https://www.disneyplus.com/es-es/identity/login",
-      "summary": "Inicia sesión en Disney+ con tu cuenta MyDisney. Si no tienes una, tendrás que crearla antes de suscribirte.",
+      "id": "94ee9391f399ab18",
+      "title": "Leith Volkswagen Dealer in Raleigh, Cary NC | Raleigh Durham Chapel ...",
+      "url": "https://www.leithvw.com/",
+      "summary": "Leith Volkswagen proudly serves the greater Raleigh, Cary, Durham and Wake Forest North Carolina area with the best new, used and certified pre-owned Volkswagen cars and SUVs.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e934b1de0b04e46a",
+      "title": "Leith Volkswagen of Cary | Your Local VW Dealership in Cary, NC",
+      "url": "https://www.leithvwcary.com/",
+      "summary": "Leith Volkswagen is located at 2300 Auto Park Boulevard in Cary, North Carolina near Raleigh, Wake Forest, Durham, and Chapel Hill. Call today to request additional information about specific Volkswagen cars for sale in Cary, to schedule a test drive or to inquire about leasing and financing.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "beb33e6a4814eab5",
+      "title": "Leith Volkswagen of Raleigh - Raleigh, NC | Cars.com",
+      "url": "https://www.cars.com/dealers/208067/leith-volkswagen-of-raleigh/",
+      "summary": "Read reviews by dealership customers, get a map and directions, contact the dealer, view inventory, hours of operation, and dealership photos and video. Learn about Leith Volkswagen of Raleigh in...",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "04e389e033f69837",
+      "title": "List of Huawei products - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/List_of_Huawei_products",
+      "summary": "Search Search Toggle the table of contents List of Huawei products 8 languagesAdd topic",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e72e7162b64f399c",
+      "title": "Low Voltage Contractors and Low Voltage Cabling Work - CVE",
+      "url": "https://www.cve.com/what-we-do/low-voltage/",
+      "summary": "We specialize in installing low voltage cabling solutions, structured wiring and electrical wiring. CVE also can withstand higher voltage systems as the needs arise.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0414d386c7d94d14",
+      "title": "Low Voltage Contractors in USA | Better Business Bureau",
+      "url": "https://www.bbb.org/us/category/low-voltage-contractors",
+      "summary": "BBB Directory of Low Voltage Contractors in USA. Your guide to trusted BBB Ratings, customer reviews and BBB Accredited businesses.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4134540b31750c96",
+      "title": "Low Voltage Wiring Contractor | The Network Installers",
+      "url": "https://thenetworkinstallers.com/low-voltage-wiring/",
+      "summary": "Our team delivers high-level design, development, and cable installation as low-voltage contractors, covering WiFi, occupancy sensors, communication systems, voice and data cabling, structured wiring, device connectivity, and electrical cabling.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0bba2df6d10d7afa",
+      "title": "National Low Voltage, A/V, Network Cabling Installer",
+      "url": "https://www.inc-installs.com/",
+      "summary": "We work with all types of low-voltage cables including copper (Cat5e, Cat6), fiber optic, coaxial, and voice and our nationwide network of installers can get the job done anywhere in the US and Canada",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1cd519d6eed5f36a",
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "summary": "Se connecter à Gmail Conseil : Si vous vous connectez à un ordinateur public, pensez à vous déconnecter avant de quitter l'ordinateur. Découvrez comment vous connecter sur un appareil qui n'est pas le vôtre.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cf47b0e942c7c7f1",
+      "title": "The 10 Best Low Voltage Contractors Near Me (with Free ... - Thumbtack",
+      "url": "https://www.thumbtack.com/k/low-voltage-contractors/near-me",
+      "summary": "Here is the definitive list of low voltage contractors near your location as rated by your neighborhood community. Want to see who made the cut?",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "deb937fcd63ca9e7",
+      "title": "The 10 Best Low Voltage Electrical Companies Near Me (2026)",
+      "url": "https://homeguide.com/low-voltage-contractors",
+      "summary": "Here are the 10 best low voltage electrical companies near you rated by your local neighborhood community. Want to see the top 10?",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ae5b6ddddcdaeb8f",
+      "title": "The 10 Best Low Voltage Wiring Contractors Near Me (2026) - HomeGuide",
+      "url": "https://homeguide.com/low-voltage-wiring",
+      "summary": "Here are the 10 best low voltage wiring contractors near you rated by your local neighborhood community. Want to see the top 10?",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e5e197a79b6f50bb",
+      "title": "The 10 Best Low Voltage Wiring Contractors Near Me - Thumbtack",
+      "url": "https://www.thumbtack.com/k/low-voltage-wiring/near-me",
+      "summary": "Here is the definitive list of low voltage wiring contractors near your location as rated by your neighborhood community. Want to see who made the cut?",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3af09f9dad664a29",
+      "title": "US Open - Tennis.com",
+      "url": "https://www.tennis.com/tournaments/us-open",
+      "summary": "US Open · New York, NY, United States · Grand Slam — Live scores, schedule, and draws on Tennis.com.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f8d772a21e20e6f2",
+      "title": "USLowVolt — Find vetted low-voltage integrators",
+      "url": "https://uslowvolt.com/",
+      "summary": "Find vetted low-voltage integrators near you. Browse security, fire alarm, CCTV, access control, structured cabling, AV, and intercom contractors by state and specialty. No middlemen, no markup — just direct contact with the pros doing the work.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8bed8519e82edf26",
+      "title": "Volkswagen Dealer near Raleigh NC | Pecheles Volkswagen",
+      "url": "https://www.pechelesvw.com/volkswagen-dealer-raleigh-nc.htm",
+      "summary": "Interested in finding a reputable Volkswagen dealer near Raleigh, NC? Pecheles Volkswagen has an extensive selection of vehicles, financing, and service just for you!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aeb334212afb5e70",
+      "title": "Volkswagen Dealer | Cars for Sale Raleigh, NC | Leith Volkswagen of Raleigh",
+      "url": "https://www.leithvwraleigh.com/new-inventory/index.htm",
+      "summary": "Browse our inventory new Volkswagen vehicles for sale at our dealership in Raleigh then come on in for a test drive.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "28c9c2947dda3677",
+      "title": "VW Dealer | Raleigh, NC | Leith Volkswagen of Raleigh",
+      "url": "https://www.leithvwraleigh.com/",
+      "summary": "Leith Volkswagen of Raleigh is a car dealership in Raleigh, NC that specializes in selling a wide selection of new and used cars.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "522e9df2b3baee0f",
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2011581264205980459",
+      "summary": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、杀时间、追热点、找同好，发现更大的世界。",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a43629331d489518",
-      "title": "Iniciar sesión en Disney+ | Acceder o suscribirte",
-      "url": "https://www.disneyplus.com/es-419/identity/login",
-      "summary": "Es necesario que inicies sesión en Disney+ con tu cuenta de MyDisney. En caso de no tener una, recibirás indicaciones para crearla antes de suscribirte.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4d54f6119bae9364",
-      "title": "Login to Disney+ | Login or Signup",
-      "url": "https://www.disneyplus.com/identity/login",
-      "summary": "Log in to Disney+ with your MyDisney account. If you don't have one, you will be prompted to create an account before signing up.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2f5c0d629d3e901f",
-      "title": "New York NY Volkswagen dealer serving Manhattan - New and Used ...",
-      "url": "https://www.vwmanhattan.com/",
-      "summary": "Open Road Volkswagen of Manhattan serving Manhattan NY, Brooklyn NY, Bronx, and Yonkers NY. Browse our full inventory and complete a transaction online, or stop by our georgeous showroom.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a125257be74a7ee5",
-      "title": "Películas y series sin límites | Disney+ Estados Unidos",
-      "url": "https://www.disneyplus.com/es-us",
-      "summary": "Disney+ es la plataforma de streaming que ofrece entretenimiento de Disney, Pixar, Marvel, Star Wars, National Geographic, Hulu, ESPN Select y mucho más. En Disney+, la colección de historias no para de crecer:",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8bdfc9c9975e89b2",
-      "title": "Smithtown Volkswagen | New and Used VW Dealership",
-      "url": "https://www.volkswagenofsmithtown.com/",
-      "summary": "When you make your way to Smithtown Volkswagen, located at 530 E Jericho Turnpike Street in St. James, NY, you will get that kind of experience. We have a team that is dedicated to providing exceptional customer service to everyone who chooses to make the drive to our dealership.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c32f077f3f9c69a3",
-      "title": "The Battle of Actium 31 BC - The Decisive Naval Clash",
-      "url": "https://roman-empire.net/army/battle-of-actium",
-      "summary": "The Battle of Actium was a naval battle that took place on September 2, 31 BC, off the western coast of Greece. It was fought between the forces of Octavian, later known as Augustus Caesar, and the combined forces of Mark Antonyand Cleopatra.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "68460a3eadfeee61",
-      "title": "The Battle of Actium | September 2, 31 B.C. | HISTORY",
-      "url": "https://www.history.com/this-day-in-history/September-2/the-battle-of-actium",
-      "summary": "On September 2, 31 B.C., their fleets clashed at Actium in Greece. After heavy fighting, Cleopatra broke from the engagement and set course for Egypt with 60 of her ships.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c2a979096bc337e7",
-      "title": "The Battle of Actium: How Cleopatra's Flight Ended the Roman Republic",
-      "url": "https://www.missedhistory.com/article/battle-of-actium-cleopatra-augustus-31-bc",
-      "summary": "On September 2, 31 BC, two Roman fleets faced each other in the waters off western Greece near the promontory of Actium. One belonged to Mark Antony and Cleopatra VII of Egypt. The other belonged to Octavian, Julius Caesar 's adopted heir. By noon, the fighting was fierce but going badly for Antony.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "42d89c1276ca79e7",
-      "title": "The Battle of Actium: How Octavian Outwaited Mark Antony and Inherited ...",
-      "url": "https://bookofworldhistory.com/blog/battle-of-actium-octavian-antony-cleopatra-31-bce",
-      "summary": "The Battle of Actium in 31 BCE ended Rome's brutal civil wars when Octavian's fleet defeated Mark Antony and Cleopatra off the Greek coast, paving the way for the Roman Empire and the reign of Augustus.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ac5c80d138b96789",
-      "title": "Timeline: Battle of Actium - World History Encyclopedia",
-      "url": "https://www.worldhistory.org/timeline/Battle_of_Actium/",
-      "summary": "The Battle of Actium (2 September 31 BCE, fought in the Ionian Sea off Actium, Greece) was the decisive engagement of the civil war fought between Octavian Caesar (l. 63-14 CE, later known as Augustus, r. 27 BCE - 14 CE) and the forces of Mark Antony (l. 83-30 BCE) and Cleopatra VII of Egypt (l. c. 69-30 BCE).",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d0a09003d5ff5719",
-      "title": "Volkswagen Group - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Volkswagen_Group",
-      "summary": "This page was last edited on 3 September 2026, at 17:54 (UTC).",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "db7121584fc0a9fe",
-      "title": "Volkswagen Vehicle Inventory - New York NY area Volkswagen dealer ...",
-      "url": "https://www.vwmanhattan.com/searchnew.aspx",
-      "summary": "New Volkswagen inventory from Open Road Volkswagen of Manhattan in New York NY area - New Volkswagen showroom serving Brooklyn Bronx Yonkers NY. Browse our huge inventory of new Volkswagen vehicles online or in person at our impressive showroom.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dcba436f497a2eaa",
-      "title": "VW Dealership in Bronx, NY | Teddy Volkswagen of the Bronx",
-      "url": "https://www.teddyvolkswagen.com/",
-      "summary": "Our team is committed to helping local drivers find a Volkswagen that fits their lifestyle, whether you are shopping for a sleek sedan, a family-friendly SUV, or a modern electric vehicle for city driving around New York.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a0f319e9ced52ecf",
-      "title": "War of Actium - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/War_of_Actium",
-      "summary": "The War of Actium[1][2][3][4][5] or Actian War[6] (32–30 BC) was the last civil war of the Roman Republic, fought between Mark Antony (assisted by Cleopatra and by extension Ptolemaic Egypt) and Octavian. In 32 BC, Octavian convinced the Roman Senate to declare war on the Egyptian queen Cleopatra.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e8a3007e378f258",
-      "title": "Which one of these two ISO 639-2 code refers to Traditional Chinese ...",
-      "url": "https://chinese.stackexchange.com/questions/6147/which-one-of-these-two-iso-639-2-code-refers-to-traditional-chinese-chi-or-zho",
-      "summary": "The wiki page of Chinese language, as well as the following two links from ISO 639 documentation, chiand zho, all tell us that chiis ISO 639-2/B, where the Bstands for bibliographic, zhobeing ISO 639-2/T, Tfor terminological. The explanation of the B and T codesdoes not shed any light on traditional-or-simplified information the either.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b2a31461ce63de9",
-      "title": "在word中，SO2的2如何全替换成下标的2_百度知道",
-      "url": "https://zhidao.baidu.com/question/571399614.html",
-      "summary": "2、选中设置为下标格式的SO2。 3、然后通过Ctrl+H打开查找替换对话框，在查找内容输入SO2，替换为输入^c，点击全部替换即可。 【^c则表示替换为粘贴板的内容，即将普通的SO2替换为下表格式的】 4、返回主文档，发现成功将文档全部SO2替换为下标格式的2。",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e6f925968f982f0e",
-      "title": "标点符号《》、〈〉、「」该怎么正确使用呢?_百度知道",
-      "url": "https://zhidao.baidu.com/question/537087450.html",
-      "summary": "收起2条折叠回答 推荐律师服务：若未解决您的问题，请您详细描述您的问题，通过百度律临进行免费专业咨询 其他类似问题 2017-12-16 书名号里套引号，引号里套书名号应该怎么用啊？ 4 2015-07-11 或者说什么... 2014-05-11 书名号里套引号，引号里套书名号应该怎么 ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab3874b6e973e36c",
-      "title": "梦幻西游黑风山副本抄写大全_百度知道",
-      "url": "https://zhidao.baidu.com/question/580670653.html",
-      "summary": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非法3、应无所住而生其心4、一切贤圣皆以无为法而有差别5、凡所有相皆是虚妄若见诸相非相则",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e871f480586a9f8e",
-      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
-      "url": "https://www.zhihu.com/question/19615526",
-      "summary": "按照国家标准，当你是使用波浪线符号的正规用法——表示一个数字范围的时候，请用一字宽的「～」U+FF5E FULLWIDTH TILDE，不推荐使用「〜」U+301C WAVE DASH。 后者很多字体不支持，语义上也不是最好，类似于 OS X 上的省略号。",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3f93e8dcc4b69b7",
-      "title": "百度知道 - 全球领先中文互动问答平台",
-      "url": "https://zhidao.baidu.com/",
-      "summary": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问都能够快速获得有效解答。",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9f6e186b2e2fc780",
-      "title": "迷你世界 迷你世界官服怎么下？_百度知道",
-      "url": "https://zhidao.baidu.com/question/148229835482221085.html",
-      "summary": "迷你世界 迷你世界官服怎么下？迷你世界的官方版本可通过官方网站获取。首先，玩家需打开常用的网络浏览器，输入迷你 ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
