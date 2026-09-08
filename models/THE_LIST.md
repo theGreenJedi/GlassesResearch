@@ -2,7 +2,7 @@
 
 **Edition:** 2026-09-07
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 217 distinct purchasable models or explicitly marketed product generations
+**Count:** 231 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -376,6 +376,28 @@ These rows were already approved in dated reconciliation packets. This section i
 |---|---|---:|---:|---|---|---|---|
 | GLS-0218 | Halliday | Halliday G2 | 2026 | preorder/current | camera-free binocular waveguide AI glasses | manufacturer preorder | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_IDENTITY_FORENSICS_WAVE_01.md); [source](https://www.hallidayglobal.com/products/halliday-g2) |
 
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0219 | XREAL | xbx a01+ | 2026 | current | tethered XR display glasses | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://us.shop.xreal.com/products/xreal-xbx-a01) |
+| GLS-0220 | XREAL | AURA | 2026 | preorder/reservation | spatial-computing AR glasses | paid manufacturer reservation | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://us.shop.xreal.com/products/xreal-aura-priority-deposit) |
+| GLS-0221 | Everysight | Maverick AI | 2026 | preorder/crowdfunding | full-color AR + AI smart glasses | Kickstarter/backer fulfillment | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://www.kickstarter.com/projects/everysight/maverick-full-color-ai-ar-glasses) |
+| GLS-0222 | Everysight | Maverick AI Pro | 2026 | preorder/crowdfunding | full-color AR + AI smart glasses with eye tracking | Kickstarter/backer fulfillment | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://support.everysight.com/hc/en-us/categories/27996757089820-Kickstarter-VIP-Pre-orders) |
+| GLS-0223 | ENGO / MicroOLED | ENGO 1 | 2021 | legacy | sport HUD glasses | historical retail/sample commerce | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://shop.activelook.net/products/engo-1-sample-unit) |
+| GLS-0224 | ENGO / MicroOLED | ENGO 2 | 2022 | current | sport HUD glasses | manufacturer preorder/retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://www.activelook.net/news-blog/introducing-engo-2) |
+| GLS-0225 | ENGO / MicroOLED | ENGO3 | 2026 | current | sport HUD glasses | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://us.engoeyewear.com/products/engo-3) |
+| GLS-0226 | Julbo / ActiveLook | EVAD-1 | 2021 | legacy | sport HUD glasses | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://www.activelook.net/news-blog/evad-1-by-julbo-the-first-activelook-glasses-are-now-available-for-sale) |
+| GLS-0227 | Cosmo Connected / ActiveLook | Cosmo Vision | c. 2022 | legacy/current unclear | navigation HUD glasses | historical retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://cosmoconnected.com/en/products/cosmo-vision) |
+| GLS-0228 | ActiveLook / MicroOLED | ActiveLook Enterprise | 2022 | current/enterprise | enterprise HUD glasses | manufacturer retail/developer | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://shop.activelook.net/products/activelook-enterprise) |
+| GLS-0229 | Huawei | Huawei AI Glasses | 2026 | current/region-limited | camera/audio AI glasses | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://consumer.huawei.com/cn/audio/ai-glasses/) |
+| GLS-0230 | ThinkAR | AiLENS V1 | 2026 | current/region-limited | camera-free HUD AI glasses | manufacturer/authorized retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://www.thinkar.com/en/pages/ailens) |
+| GLS-0231 | Baidu / Xiaodu | Xiaodu AI Glasses Pro | 2025 | current/region-limited | camera/audio AI glasses | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://dumall.baidu.com/product/902971303493639) |
+| GLS-0232 | n+ / Volkswagen licensed | Volkswagen Smart Glasses | 2026 | preorder | sport/navigation HUD glasses | manufacturer preorder/accessory | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://smart-bike.net/collections/accessories) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -388,7 +410,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 217-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 231-row count:
 
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.

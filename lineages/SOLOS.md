@@ -1,9 +1,10 @@
 ---
-description: "Solos smart-glasses lineage spanning early see-through sport HUD generations and the later display-free AirGo family, with purchaser-history and architecture boundaries."
+description: "Solos smart-glasses lineage spanning early see-through sport HUD generations and the later display-free AirGo family, with purchaser-history, alias, and architecture boundaries."
 ---
 # Solos Smart-Glasses Lineage
 
 **Whole-manufacturer audit:** 2026-09-05  
+**Alias review:** 2026-09-07 competitor completeness sweep  
 **Audit packet:** [Manufacturer Completeness Wave 02](../research/investigations/MANUFACTURER_COMPLETENESS_WAVE_02_2026-09-05.md)
 
 Solos has two materially different eyewear eras: an early **see-through sport-HUD branch** and the later **display-free AirGo branch**. The earlier site treatment began at AirGo 2 and therefore hid both the pre-AirGo history and the first AirGo generation.
@@ -30,8 +31,14 @@ Existing canonical generations:
 
 - `GLS-0026` — AirGo 2
 - `GLS-0027` — AirGo 3
-- `GLS-0028` — AirGo Vision
+- `GLS-0028` — **AirGo Vision / AirGo V**
 - `GLS-0029` — AirGo V2
+
+### AirGo Vision / AirGo V alias boundary
+
+`AirGo Vision` and `AirGo V` refer to the same camera-enabled generation represented by `GLS-0028`; **AirGo V is not a missing fifth row and must not be duplicated simply because a comparison site uses the shorter name.** `AirGo V2` remains the separately named successor represented by `GLS-0029`.
+
+The 2026-09-07 competitor completeness sweep independently re-exposed the AirGo V label. The result is an alias/discoverability correction, not a count increase.
 
 ### `GLS-0217` — AirGo A5
 
@@ -45,7 +52,7 @@ Frame shapes, lens packages and interchangeable fronts/temples do not receive se
 
 ## Completeness result
 
-Wave 02 reconstructed Solos from its original HUD products through the current AirGo family. The audit adds four missing purchaser-history identities—two HUD generations, AirGo 1 and AirGo A5—while preserving the existing AirGo 2/3/Vision/V2 records.
+Wave 02 reconstructed Solos from its original HUD products through the current AirGo family. The audit added four missing purchaser-history identities—two HUD generations, AirGo 1 and AirGo A5—while preserving the existing AirGo 2/3/Vision/V2 records. The later competitor sweep confirmed the AirGo V alias boundary and did not inflate the model count.
 
 Solos remains monitored because its naming has already shown that generation numbers, product-family names and retail frame names can diverge.
 

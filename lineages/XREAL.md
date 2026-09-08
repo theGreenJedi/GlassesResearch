@@ -1,12 +1,13 @@
 ---
-description: "XREAL and Nreal smart-glasses lineage covering Light, Air, One and 1S generations, ROG XREAL R1, architecture branches, accessories, and completeness findings."
+description: "XREAL and Nreal smart-glasses lineage covering Light, Air, One and 1S generations, xbx a01+, AURA, ROG XREAL R1, architecture branches, accessories, and completeness findings."
 ---
 # XREAL / Nreal Lineage
 
 **Whole-manufacturer audit:** 2026-09-05  
-**Audit packet:** [Manufacturer Completeness Wave 02](../research/investigations/MANUFACTURER_COMPLETENESS_WAVE_02_2026-09-05.md)
+**Acquisition-status supplement:** 2026-09-07 competitor completeness sweep  
+**Audit packets:** [Manufacturer Completeness Wave 02](../research/investigations/MANUFACTURER_COMPLETENESS_WAVE_02_2026-09-05.md) · [Competitor Completeness Sweep](../research/investigations/COMPETITOR_COMPLETENESS_SWEEP_2026-09-07.md)
 
-This lineage covers the Nreal-to-XREAL personal-display and spatial-computing glasses family. The audit treats the corporate rename as continuity while preserving materially named hardware generations separately.
+This lineage covers the Nreal-to-XREAL personal-display and spatial-computing glasses family. The corporate rename is treated as continuity while materially named hardware generations are preserved separately.
 
 ## Canonical eyewear population
 
@@ -18,7 +19,9 @@ This lineage covers the Nreal-to-XREAL personal-display and spatial-computing gl
 - `GLS-0074` — XREAL One
 - `GLS-0075` — XREAL One Pro
 - `GLS-0156` — XREAL 1S
-- `GLS-0213` — ROG XREAL R1 — Wave 02 preorder admission
+- `GLS-0213` — ROG XREAL R1
+- `GLS-0219` — XREAL xbx a01+
+- `GLS-0220` — XREAL AURA — paid reservation/preorder
 
 ## Architecture branches
 
@@ -34,9 +37,21 @@ Air, Air 2, Air 2 Pro and Air 2 Ultra are host-driven personal-display/XR glasse
 
 One, One Pro and 1S move more spatial/display behavior into the glasses platform while retaining host dependence for application workloads. Firmware, chipset, display behavior and supported host modes remain generation-specific evidence questions.
 
+### xbx a01+
+
+`GLS-0219` is a distinct current XREAL display-glasses product sold directly by XREAL. It is not an accessory or Beam bundle. The current store presents xbx a01+ alongside other eyewear in the XREAL product catalog, with its own purchase path and prescription-lens ecosystem.
+
+Primary source: https://us.shop.xreal.com/products/xreal-xbx-a01
+
 ### ROG XREAL R1
 
-`GLS-0213` is a 2026 ROG/XREAL gaming-oriented generation offered for preorder. The glasses are the canonical eyewear identity; the included ROG Dock is a system accessory. High-refresh ROG workflows must be separated from generic DisplayPort behavior when owner-control and compatibility are tested.
+`GLS-0213` is a 2026 ROG/XREAL gaming-oriented generation. The glasses are the canonical eyewear identity; included or optional ROG host/dock components remain accessories. High-refresh ROG workflows must be separated from generic DisplayPort behavior when owner-control and compatibility are tested.
+
+### XREAL AURA
+
+`GLS-0220` is the AURA spatial-computing glasses product. Earlier research correctly kept Project AURA outside the purchaser-history ledger while it remained a preview/reference product. That boundary changed when XREAL began accepting paid refundable deposits that are applied to the final AURA purchase. The row is therefore explicitly `preorder/reservation`; acquisition is established while production fulfillment, final retail price and production-unit behavior remain pending.
+
+Primary source: https://us.shop.xreal.com/products/xreal-aura-priority-deposit
 
 ## Accessories and systems that do not inflate the model count
 
@@ -44,27 +59,29 @@ Beam, Beam Pro, XREAL Eye, Hub products, prescription inserts, adapters, carryin
 
 ## Completeness result
 
-Wave 02 collision-checked the current first-party store, the Nreal-to-XREAL generation history and existing GlassesResearch records. **ROG XREAL R1 was the only additional purchaser-history eyewear identity found that crossed the current admission threshold.** No additional ID is created merely for an accessory, bundle or co-branded host component.
+Wave 02 on 2026-09-05 found ROG XREAL R1 as the only then-current missing purchaser-history eyewear identity. The 2026-09-07 external completeness sweep later exposed two state changes that the earlier audit could not yet reflect: xbx a01+ now has a direct retail route and AURA now has a paid manufacturer reservation route. Both were independently verified against XREAL before admission.
 
-This is a whole-manufacturer reconciliation as of the audit date, not a claim that the family can never change. XREAL remains monitored for new releases and regional naming changes.
+This is a living manufacturer reconciliation, not a claim that the family can never change. XREAL remains monitored for releases, paid-reservation transitions, regional naming changes, and accessory/model boundary errors.
 
 ## Lineage analysis
 
-The lineage is centered on tethered personal-display and XR glasses rather than all-day camera eyewear. Its strengths are large virtual-display use, spatial-display features, a mature accessory ecosystem and an identifiable developer path. Its tradeoffs are dependence on a host device for many workflows and a form factor/use pattern closer to personal displays than conventional prescription eyewear.
+The lineage is centered on tethered personal-display and XR glasses, with AURA extending toward a more spatial-computing-oriented branch. Its strengths are large virtual-display use, spatial-display features, a mature accessory ecosystem and an identifiable developer path. Its tradeoffs include host dependence across much of the family and form factors/use patterns closer to personal displays than conventional prescription eyewear.
 
 ## Best-fit use cases
 
-Portable large-screen computing, gaming, media consumption, spatial-display experimentation and developer work involving tethered XR glasses.
+Portable large-screen computing, gaming, media consumption, spatial-display experimentation and developer work involving tethered or spatial XR glasses.
 
 ## Research questions
 
-GlassesResearch tracks host compatibility, display evolution, spatial features, SDK access, accessories, firmware, generic DisplayPort survival, and the transition from Nreal branding into XREAL generations.
+GlassesResearch tracks host compatibility, display evolution, spatial features, SDK access, accessories, firmware, generic DisplayPort survival, AURA production fulfillment, and the transition from Nreal branding into XREAL generations.
 
 ## Primary/current evidence
 
 - [XREAL store](https://us.shop.xreal.com/)
+- [XREAL xbx a01+](https://us.shop.xreal.com/products/xreal-xbx-a01)
 - [XREAL 1S](https://us.shop.xreal.com/products/xreal-1s)
 - [ROG XREAL R1](https://us.shop.xreal.com/products/rog-xreal-r1)
+- [XREAL AURA Priority Deposit](https://us.shop.xreal.com/products/xreal-aura-priority-deposit)
 
 ## Related research
 

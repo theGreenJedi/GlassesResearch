@@ -8,6 +8,11 @@ This check deliberately separates two questions:
 Missing family assignment is a consistency failure. Historical audit debt is emitted as a
 warning by default so the existing catalog can be paid down incrementally; --strict-debt
 turns those warnings into failures.
+
+The base ledger remains ``data/manufacturer-coverage.json``. Optional
+``data/manufacturer-coverage-*.json`` supplements allow newly discovered families to be
+mapped immediately without falsely rewriting the dated state of the last base audit.
+Supplements use the same family schema and are validated for duplicate ids/maker values.
 """
 from __future__ import annotations
 
@@ -20,6 +25,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "data/manufacturer-coverage.json"
+SUPPLEMENT_GLOB = "manufacturer-coverage-*.json"
 THE_LIST = ROOT / "models/THE_LIST.md"
 ROW_RE = re.compile(r"^\|\s*(GLS-\d{4})\s*\|\s*([^|]+?)\s*\|", re.M)
 
@@ -31,16 +37,39 @@ def emit_warning(message: str) -> None:
         print(f"WARNING: {message}")
 
 
+def load_coverage() -> tuple[dict, list[dict], list[str]]:
+    """Load base policy/state definitions plus optional incremental family mappings."""
+    payload = json.loads(LEDGER.read_text(encoding="utf-8"))
+    families = list(payload.get("families", []))
+    loaded = [str(LEDGER.relative_to(ROOT))]
+    for path in sorted((ROOT / "data").glob(SUPPLEMENT_GLOB)):
+        if path == LEDGER:
+            continue
+        supplement = json.loads(path.read_text(encoding="utf-8"))
+        if supplement.get("schema_version") != payload.get("schema_version"):
+            raise ValueError(
+                f"{path.relative_to(ROOT)} schema_version {supplement.get('schema_version')!r} "
+                f"does not match base ledger {payload.get('schema_version')!r}"
+            )
+        families.extend(supplement.get("families", []))
+        loaded.append(str(path.relative_to(ROOT)))
+    return payload, families, loaded
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--strict-debt", action="store_true", help="fail on unresolved manufacturer audit debt")
     args = parser.parse_args()
 
-    payload = json.loads(LEDGER.read_text(encoding="utf-8"))
+    try:
+        payload, families, loaded_ledgers = load_coverage()
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        print(f"Manufacturer coverage check FAILED:\n- could not load coverage ledger: {exc}")
+        return 1
+
     text = THE_LIST.read_text(encoding="utf-8")
     states = set(payload.get("states", {}))
     threshold = int(payload.get("policy", {}).get("coverage_debt_threshold", 3))
-    families = payload.get("families", [])
 
     errors: list[str] = []
     debt: list[str] = []
@@ -117,7 +146,8 @@ def main() -> int:
 
     print(
         f"Manufacturer coverage check passed: {len(rows)} canonical rows, "
-        f"{len(families)} tracked families, {len(debt)} audit-debt warning(s)."
+        f"{len(families)} tracked families across {len(loaded_ledgers)} ledger file(s), "
+        f"{len(debt)} audit-debt warning(s)."
     )
     return 0
 
