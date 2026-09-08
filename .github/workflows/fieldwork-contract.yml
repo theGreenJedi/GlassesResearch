@@ -1,0 +1,37 @@
+name: Fieldwork contract
+
+on:
+  pull_request:
+    paths:
+      - 'data/fieldwork-questionnaire.v1.json'
+      - 'data/fieldwork-submission.schema.json'
+      - 'docs/FIELDWORK.md'
+      - 'docs/PRIVACY.md'
+      - 'fieldwork/**'
+      - 'scripts/check_fieldwork_contract.py'
+      - '.github/workflows/fieldwork-contract.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'data/fieldwork-questionnaire.v1.json'
+      - 'data/fieldwork-submission.schema.json'
+      - 'docs/FIELDWORK.md'
+      - 'docs/PRIVACY.md'
+      - 'fieldwork/**'
+      - 'scripts/check_fieldwork_contract.py'
+      - '.github/workflows/fieldwork-contract.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Validate Fieldwork questionnaire and privacy invariants
+        run: python scripts/check_fieldwork_contract.py

@@ -23,7 +23,6 @@ All technical findings on this page remain attributed to the repository unless s
 
 ## Related GlassesResearch material
 
-- [GLS-0063 — Rokid AI Glasses / Style / Neo](/models/catalog/gls-0063/)
-- [Rokid AI Style research page](/models/RokidAIStyle/)
+- [GLS-0063 — Rokid AI Glasses / Style / Neo research page](/models/RokidAIStyle/)
 - [Rokid lineage](/lineages/ROKID/)
 - [Related editorial: When owners take their glasses back](../news/articles/2026-09-06-when-owners-take-their-glasses-back.md)
