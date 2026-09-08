@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-08",
+  "purpose": "Record external smart-glasses catalog observations and force an explicit GlassesResearch disposition for names that expose scope, identity, or completeness differences.",
+  "states": {
+    "canonical_match": "External identity maps to an existing canonical GLS row.",
+    "alias_or_variant": "External identity is real but resolves to a style, alias, configuration, bundle, or sibling identity that must not inflate the canonical count.",
+    "adjacent": "External identity belongs in the adjacent wearable-HCI catalog rather than the smart-glasses count.",
+    "non_product": "External identity is a host, accessory, service, or other non-eyewear item.",
+    "unresolved": "External identity requires additional evidence before admission or exclusion."
+  },
+  "sources": [
+    {
+      "id": "arcompare",
+      "label": "AR Compare",
+      "url": "https://www.arcompare.com/ar-glasses/",
+      "observed_on": "2026-09-08",
+      "reported_model_count": 81,
+      "notes": "Broad commercial comparison catalog. Useful as a discovery benchmark, not as authority for admission; its scope includes headsets, hosts, announced products and frame/style identities that GlassesResearch intentionally classifies differently."
+    },
+    {
+      "id": "ai-eyewear-open-database",
+      "label": "AI Glasses Open Database",
+      "url": "https://github.com/ai-glasses-eyewear/ai-glasses-eyewear",
+      "observed_on": "2026-09-08",
+      "reported_model_count": 8,
+      "notes": "Small cited machine-readable dataset used as a second independent discovery signal. Its narrower shipping/discontinued scope is not expected to match the GlassesResearch historical purchasing ledger one-for-one."
+    }
+  ],
+  "reconciliations": [
+    {
+      "source": "arcompare",
+      "external_name": "Meta Fury",
+      "external_maker": "Meta",
+      "state": "alias_or_variant",
+      "target_id": "GLS-0165",
+      "evidence_path": "research/investigations/MANUFACTURER_COMPLETENESS_WAVE_02_2026-09-05.md",
+      "note": "Meta describes Fury as a style in the Meta Glasses collection; it is not a separate electronics generation."
+    },
+    {
+      "source": "arcompare",
+      "external_name": "Magic Leap 2",
+      "external_maker": "Magic Leap",
+      "state": "adjacent",
+      "target_id": "ADJ-0007",
+      "evidence_path": "docs/report-cards/LINEAGE_MAGIC_LEAP.md",
+      "note": "Dedicated spatial-computing headset plus compute puck, intentionally outside the eyewear-only GLS count."
+    },
+    {
+      "source": "arcompare",
+      "external_name": "Microsoft HoloLens 2",
+      "external_maker": "Microsoft",
+      "state": "adjacent",
+      "target_id": "ADJ-0005",
+      "evidence_path": "docs/report-cards/LINEAGE_MICROSOFT_HOLOLENS.md",
+      "note": "Mixed-reality headset, intentionally tracked as adjacent wearable HCI rather than smart glasses."
+    },
+    {
+      "source": "arcompare",
+      "external_name": "Rokid Station 2 Spatial Computing Host",
+      "external_maker": "Rokid",
+      "state": "non_product",
+      "target_id": null,
+      "evidence_path": "research/investigations/ROKID_HISTORICAL_AUDIT_2026-09-05.md",
+      "note": "Compute host/accessory, not eyewear; must not create a GLS identity."
+    },
+    {
+      "source": "arcompare",
+      "external_name": "Samsung Smart Glasses",
+      "external_maker": "Samsung",
+      "state": "unresolved",
+      "target_id": null,
+      "evidence_path": "docs/news/RELEASE_TRACKER.md",
+      "note": "External catalog labels the product announced. Admission to THE_LIST still requires documented acquisition under the stable-ID policy."
+    },
+    {
+      "source": "arcompare",
+      "external_name": "OPPO Air Glass 3",
+      "external_maker": "OPPO",
+      "state": "unresolved",
+      "target_id": null,
+      "evidence_path": "models/CATALOG.md",
+      "note": "Announcement/prototype boundary requires acquisition evidence before any canonical admission."
+    },
+    {
+      "source": "arcompare",
+      "external_name": "Warby Parker Intelligent Eyewear",
+      "external_maker": "Warby Parker",
+      "state": "unresolved",
+      "target_id": null,
+      "evidence_path": "models/CATALOG.md",
+      "note": "Announced identity is a discovery lead; no duplicate or premature GLS row should be created without procurement evidence."
+    },
+    {
+      "source": "arcompare",
+      "external_name": "GOOVIS G3 Max 3D Head Mounted Display",
+      "external_maker": "GOOVIS",
+      "state": "unresolved",
+      "target_id": null,
+      "evidence_path": "models/ADJACENT_WEARABLES.md",
+      "note": "Form-factor boundary requires explicit adjudication; likely adjacent HMD rather than eyeglass-frame smart glasses."
+    }
+  ]
+}
