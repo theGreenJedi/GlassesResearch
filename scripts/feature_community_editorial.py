@@ -13,14 +13,6 @@ FEATURE = '''<section class="gr-section gr-community-feature" aria-labelledby="g
     </div>
     <a class="gr-text-link" href="/docs/news/articles/2026-09-06-when-owners-take-their-glasses-back/">Read the editorial <span aria-hidden="true">→</span></a>
   </div>
-
-  <a class="gr-feature-story" href="/docs/news/articles/2026-09-06-when-owners-take-their-glasses-back/">
-    <span class="gr-story-art" aria-hidden="true"></span>
-    <span class="gr-story-tag">Community Research · Sep. 6</span>
-    <strong>When owners take their glasses back</strong>
-    <span>Three community repositories — Panny777's MYVU client, the Rokid AI Glasses research wiki, and CyanBridge — show how reverse engineering, evidence discipline, and reusable software can give owners more practical authority over hardware they already possess.</span>
-    <em>Meet the community →</em>
-  </a>
 </section>'''
 
 
@@ -37,7 +29,7 @@ def main() -> int:
         raise SystemExit("Homepage verified stream marker missing")
     text = text.replace(marker, FEATURE + "\n\n" + marker, 1)
     path.write_text(text, encoding="utf-8")
-    print("Featured Community Research editorial on homepage; verified-news chronology unchanged")
+    print("Featured Community Research editorial on homepage once; verified-news chronology unchanged")
     return 0
 
 
