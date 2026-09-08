@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-08T08:22:40.958067+00:00`
+Generated: `2026-09-08T09:09:28.191172+00:00`
 
 - Intake files inspected: **167**
 - Candidates retained in this review window/history: **4267**
@@ -135,7 +135,7 @@ Generated: `2026-09-08T08:22:40.958067+00:00`
 | normal | needs_editorial_verification | direct | ['I find it very uncomfortable talking to people with a camera and a light': OpenAI's Sam Altman weighs in on smart glasses and privacy - tom](https://news.google.com/rss/articles/CBMijAJBVV95cUxOaHljZEU3Y0ZXeDNYSVRmRzVWeGpxdUxDRHNXWl93T0JjNzY5N0N2TVZIcFI1V3BHQjJOSk9aVGZJeU9aNVB4eVZCUVR4RkJTbUxlUFlLWVVZYm1CaWtfRk9ocEYtekNHQklJNFoyRGZFblZZVkJIRGpHOFBkbDdBMk0wLWlpS0Fpb1AxeVJGNTJsREQ5RWt1ZVhpY18zMkJySVJyalAwYW9kalowakVzc052U0ZGWVl1a2VXUWlvX2pOOE1IWm52dzZxU3pFX1BnUGo2N0VVMV9TVVptWnJOVGZVcVR5cjBnbUJjamhvTkJDczI1VTNBUnhHTEZyMk9uYmRzd29CaGpBSXo5?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (September 2026) Models Buy for Gaming ...](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses (August 2026): Tested Picks for AI, AR & Audio](https://whoismcafee.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (202) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Translation for Travelers (August 2026)](https://peccadille.net/best-smart-glasses-with-translation-for-international-travelers/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [12 Best AR Glasses (September 2026) Tested & Compared](https://whoismcafee.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [2026 Best Translation Glasses Guide: AI Subtitles for Real Life – RayNeo](https://www.rayneo.com/blogs/news/best-translation-smart-glasses-2026-guide) | reachable (200) | research_news_review |
