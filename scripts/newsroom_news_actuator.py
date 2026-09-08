@@ -5,6 +5,10 @@ The publication actuator itself remains in ``newsroom_news_actuator_core``. This
 adds exact canonical entity resolution so a strongly verified package that names an
 existing model (for example, ``HTC VIVE Eagle``) can carry the corresponding GLS ID
 without fuzzy matching or weakening any publication/evidence gate.
+
+The human-facing Research & News front door is intentionally capped at three visible
+Latest verified rows. Older work remains available through the archive and canonical
+article surfaces; this cap is presentation-only and does not discard research records.
 """
 from __future__ import annotations
 
@@ -16,6 +20,8 @@ from pathlib import Path
 from typing import Any
 
 import newsroom_news_actuator_core as core
+
+LATEST_VERIFIED_LIMIT = 3
 
 
 def normalize(value: str) -> str:
@@ -70,6 +76,30 @@ def existing_gls_ids(root: Path, package: dict[str, Any]) -> list[str]:
     return sorted(resolved)
 
 
+def limit_latest_verified_rows(news: str, limit: int = LATEST_VERIFIED_LIMIT) -> str:
+    """Keep only the newest visible Latest verified table rows.
+
+    Canonical articles, GRE records, newsroom notes, and archive entries are untouched.
+    """
+    marker = "|---|---|---|"
+    marker_at = news.find(marker)
+    if marker_at < 0:
+        raise core.ActuatorError("Research & News latest-verified table marker not found")
+    rows_start = news.find("\n", marker_at)
+    if rows_start < 0:
+        raise core.ActuatorError("Research & News latest-verified table is malformed")
+    rows_start += 1
+    table_end = news.find("\n\n", rows_start)
+    if table_end < 0:
+        table_end = len(news)
+    rows = news[rows_start:table_end].splitlines()
+    table_rows = [row for row in rows if row.startswith("|")]
+    other_rows = [row for row in rows if not row.startswith("|")]
+    kept = table_rows[:limit] + other_rows
+    replacement = "\n".join(kept)
+    return news[:rows_start] + replacement + news[table_end:]
+
+
 def resolver_self_test() -> None:
     with tempfile.TemporaryDirectory() as directory:
         root = Path(directory)
@@ -92,10 +122,30 @@ def resolver_self_test() -> None:
         assert existing_gls_ids(root, ambiguous) == []
         explicit = {"title": "Unrelated", "summary": "GLS-0998 changed.", "claims": []}
         assert existing_gls_ids(root, explicit) == ["GLS-0998"]
-    print("Canonical newsroom model resolver self-test passed")
+
+    sample = (
+        "# Research & News\n\n## Latest verified\n\n"
+        "| Date | What changed | Read |\n|---|---|---|\n"
+        "| Sep. 4 | New | a |\n| Sep. 3 | Two | b |\n| Sep. 2 | Three | c |\n| Sep. 1 | Four | d |\n\n"
+        "**Explore:** archive\n"
+    )
+    limited = limit_latest_verified_rows(sample)
+    assert "| Sep. 4 |" in limited
+    assert "| Sep. 2 |" in limited
+    assert "| Sep. 1 |" not in limited
+    assert limited.count("\n|") == 5  # header, separator, and three visible stories
+    print("Canonical newsroom model resolver + three-item front-door self-test passed")
+
+
+_original_insert_news = core.insert_news
+
+
+def insert_news(*args: Any, **kwargs: Any) -> str:
+    return limit_latest_verified_rows(_original_insert_news(*args, **kwargs))
 
 
 core.existing_gls_ids = existing_gls_ids
+core.insert_news = insert_news
 
 if __name__ == "__main__":
     if "--self-test" in sys.argv:

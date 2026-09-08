@@ -9,10 +9,6 @@ A concise front door to the newest verified GlassesResearch work. The live wire 
 | Sep. 3 | **HTC VIVE Eagle reaches U.S. retail availability** — HTC’s U.S. VIVE product catalog now lists VIVE Eagle with a Buy path, while current U.S. coverage corroborates a $499 starting price and September 3 U.S. availability. | [Article](news/articles/2026-09-03-vive-eagle-us-availability.md) |
 | Aug. 28 | **Meta closes the mid-recording capture-LED bypass** — covering the front LED during an active recording now stops camera operation as the software update rolls out. | [Article](news/articles/2026-08-28-meta-capture-led-recording-fix.md) |
 | Jul. 14 | **New York courts prohibit recording-capable smart glasses in UCS facilities** — effective July 20, with safekeeping/vouchering for covered devices. | [Article](news/articles/2026-07-14-new-york-courts-smart-glasses-policy.md) |
-| Aug. 24 | **Meta Adventurer enters the canonical catalog as GLS-0165** through verified Meta and Best Buy acquisition routes. | [Article](news/articles/2026-08-24-meta-adventurer-gls-0165.md) |
-| Aug. 24 | **Nautica / Lucyd Corsair enters the canonical catalog as GLS-0164** through verified Lucyd and Best Buy acquisition routes. | [Article](news/articles/2026-08-24-nautica-lucyd-corsair-gls-0164.md) |
-| Aug. 24 | **WIRED field observations sharpen the GlassesResearch investigation checklist** for eyebox, shade dependence, comfort, controls, software maturity and privacy. | [Synthesis](news/articles/2026-08-24-wired-smart-glasses-testing-lessons.md) |
-| Aug. 21 | **RayNeo announces iO, GT and GT Max** with September 4 availability messaging; canonical GLS admission remains pending a documented paid acquisition path. | [Article](news/articles/2026-08-21-rayneo-io-gt-series.md) |
 
 **Explore:** [Full archive](news/ARCHIVE.md) · [Across the Wire](FEEDS.md#across-the-wire) · [Verified RSS](https://glassesresearch.org/feed.xml) · [Email alerts](alerts/README.md)
 
