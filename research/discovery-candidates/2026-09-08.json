@@ -1,43 +1,45 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-08T21:55:54.787547+00:00",
-  "candidate_count": 99,
-  "classifier_irrelevant_count": 55,
+  "discovered_utc": "2026-09-08T23:57:52.764896+00:00",
+  "candidate_count": 101,
+  "classifier_irrelevant_count": 82,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 43,
-    "broad_web": 47,
-    "developer": 9,
-    "retail": 1
+    "adjacent": 18,
+    "broad_web": 61,
+    "community": 1,
+    "developer": 24,
+    "research": 1
   },
   "relationship_counts": {
     "direct": 1,
-    "enabling": 0,
-    "adjacent": 43,
+    "enabling": 2,
+    "adjacent": 16,
     "speculative": 0,
-    "irrelevant": 55
+    "irrelevant": 82
   },
   "type_counts": {
-    "model": 2,
-    "review": 4,
-    "video": 1,
-    "news": 75,
-    "research": 2,
-    "tool": 10,
-    "sdk": 9,
-    "hack": 1,
+    "model": 3,
+    "review": 1,
+    "video": 6,
+    "news": 46,
+    "tool": 32,
+    "sdk": 23,
+    "optics": 2,
     "policy": 4,
-    "community": 1
+    "retail": 4,
+    "community": 12
   },
   "routing_counts": {
-    "adjacent_radar": 43,
-    "community_evidence_review": 1,
-    "development_hacking": 2,
-    "model_catalog_review": 1,
-    "policy_privacy": 4,
-    "reject_noise": 55,
-    "report_card_evidence": 4,
-    "research_news_review": 44
+    "adjacent_radar": 16,
+    "community_evidence_review": 8,
+    "development_hacking": 3,
+    "model_catalog_review": 2,
+    "policy_privacy": 2,
+    "reject_noise": 82,
+    "report_card_evidence": 1,
+    "research_news_review": 19,
+    "research_optics": 2
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,24 +50,18 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [
-    {
-      "channel": "manufacturer_catalog",
-      "url": "https://www.everysight.com/",
-      "error": "HTTP Error 500: Internal Server Error"
-    }
-  ],
+  "collector_errors": [],
   "candidates": [
     {
-      "id": "151c221f4f1d1e0f",
-      "title": "Meta AI Glasses: Ray-Ban Meta & Oakley Meta | Meta",
-      "url": "https://www.meta.com/ai-glasses/",
-      "summary": "All AI glasses feature innovations that you can see, feel and hear. Meta AI is a helpful voice in your ear—ready with answers, ideas or directions when you need them. Seamlessly connected to your world, it sees what you see through your glasses, turning experiences into insights. No commands to memorize. Just intelligence that flows with you.",
-      "discovery_channel": "broad_web+retail",
-      "query": "smartglasses; AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "id": "2dd0fecced24e76c",
+      "title": "Meta: Shop AI Glasses, Meta Glasses & Quest Headsets",
+      "url": "https://www.meta.com/",
+      "summary": "Shop AI glasses, take photos, play music, and talk to AI. Explore Meta wearable tech for everyday life. Ray-Ban Meta, Oakley Meta & Quest 3S starting at $224.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -84,481 +80,70 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "366f2f63b83c48ad",
-      "title": "ATI Straton firmware update | Reef2Reef",
-      "url": "https://www.reef2reef.com/threads/ati-straton-firmware-update.887493/",
-      "summary": "Hello, I updated the firmware on my new Straton to 11-10-2021. It updated successfully verified in settings. I didn’t get any of the new presets, so I hard reset the light and still don’t see any new presets. Any ideas? Thank you!",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
+      "id": "10806d605539a9db",
+      "title": "Aplicativo do Google",
+      "url": "https://search.google/intl/pt-BR/google-app/",
+      "summary": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
+      "source_lane": "research_radar",
       "materiality_score": 2,
-      "keyword_hits": [
-        "firmware"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "hack"
-      ],
-      "primary_type": "hack",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e6cf6ae7967b09a",
-      "title": "ATI Straton Pro G2 153 vs. ATI Straton X | Reef2Reef",
-      "url": "https://www.reef2reef.com/threads/ati-straton-pro-g2-153-vs-ati-straton-x.1139190/",
-      "summary": "ATI also has the Straton Flex line which was released a few months ago. I am also waiting for more information to come out for the Straton X—specifically how it compares to the Straton Pro G2.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "released"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "835299d8d8ecf1d7",
-      "title": "10 best teeth whitening kits, expert-tested to reverse staining",
-      "url": "https://www.independent.co.uk/extras/indybest/fashion-beauty/beauty/best-teeth-whitening-gels-powders-strips-b2311665.html",
-      "summary": "I tested the best at-home teeth whitening kits over multiple months and these are the ones that best reduced yellowing and stains, including Colgate and Hismile",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "enabling",
       "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5a4605444da8660a",
-      "title": "350500: 福建省福州市连江县 | 邮政编码 - 新版邮编库 ️",
-      "url": "https://www.youbianku.cn/postcode/350500-0",
-      "summary": "» 福建省 » 福州市 » 连江县 350500: 福建省福州市连江县 下面是 350500 的邮政编码列表，点击标题浏览每个邮编的详细信息。 邮政编码 国家:中国",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "80c330c58f83d0ca",
-      "title": "350500：福建省福州市连江县 邮政编码查询 - 邮编库 ️",
-      "url": "https://www.youbianku.com/350500",
-      "summary": "首页 » 福建省 » 福建省福州市 » 福建省福州市连江县 地址列表 您是在查找350500是哪里的邮编吗？ 本页面下方提供了350500下属的地址列表。 目前，共收录了421个详细地址。",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a1a22b44ee8b4444",
-      "title": "8 Best Teeth Whitening Kits That Actually Work, According To Dentists ...",
-      "url": "https://www.vogue.co.uk/beauty/gallery/best-teeth-whitening-kits",
-      "summary": "Shop British Vogue’s pick of the best teeth whitening kits and products including whitening toothpaste and teeth-whitening pens, approved by dentists for a brighter smile.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a0dffbf40771feb6",
-      "title": "ATI Clone | Reef2Reef",
-      "url": "https://www.reef2reef.com/threads/ati-clone.1144202/",
-      "summary": "Post reply Insert quotes… Similar threads ATI Straton Clone - Kassray Line slingfox Oct 2, 2025 Aquarium Lighting",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "04c9f30000d8efe7",
-      "title": "ati fixture | Reef2Reef",
-      "url": "https://www.reef2reef.com/tags/ati-fixture/",
-      "summary": "ATI 48\" 6 bulb T5 fixture with ATI bulbs. Used over a 150g saltwater tank. Great for coral color and growth. Also a \"slider\" that can mount to you canopy for easy access maintenance. Public meet up. Dm for location and time. $350",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "59c239b1aa031218",
-      "title": "Best Teeth Whitening Kits 2026 - Forbes Vetted",
-      "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/best-teeth-whitening-kit/",
-      "summary": "With the help of oral care experts and product testers, I rounded up the best teeth whitening kits that deliver fast, safe results at home.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bec7389c9d8c94c5",
-      "title": "Best Teeth Whitening Kits – Top Picks Reviewed & Compared",
-      "url": "https://www.whitesdental.co.uk/best-teeth-whitening-kits/",
-      "summary": "The best teeth whitening kits are dentist-led systems like Enlighten, Philips Zoom and Boutique Whitening and the right choice depends on whether you prioritise speed, sensitivity control or long-lasting results under professional guidance.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e7c83ac5ab9e687a",
-      "title": "Best Teeth Whitening Products Uk Comparison - September 2026",
-      "url": "https://www.topchoice.co.uk/best-teeth-whitening-products-uk",
-      "summary": "For best results, brush with the Teeth Whitening Powder first, then follow with your regular toothpaste. Or, if you're short on time, add toothpaste straight over the top of the Powder for an effortless, one-step routine.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "981e313d13ea5181",
-      "title": "Best Teeth-Whitening Kits 2025: Tried & Tested By Us - Closer Online",
-      "url": "https://closeronline.co.uk/shopping/beauty/best-teeth-whitening-kits/",
-      "summary": "Want whiter teeth without the dentist bill? Our writers test the best at-home teeth-whitening kits for real, safe results. Read more on Closer Online.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "339950e20bb43692",
-      "title": "Deltaflux - Pietro Fiorentini",
-      "url": "https://www.fiorentini.com/en/solutions/products/gas-products/valves/valves-control-ball-valves/deltaflux/",
-      "summary": "Control ball valve Deltaflux is the ideal solution for all fluid control applications where high differential pressure or great flow rates are involved.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2410850903ea5fea",
-      "title": "document.title - Fiorentini",
-      "url": "https://public-sizing.fiorentini.com/public-frontend/dashboard",
-      "summary": "document.title - Fiorentini ... document.title",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "afcf6afc38c4ebf4",
-      "title": "e15.ultipro.com",
-      "url": "https://e15.ultipro.com/mobile/app/pages/login.aspx?deepLink=Dashboard",
-      "summary": "Logging in... 0",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
+        "tool",
+        "optics"
       ],
       "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
         "development_hacking",
-        "adjacent_radar"
+        "research_optics"
       ],
       "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lens",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "30bfeb190f5995f6",
-      "title": "FE - Direct operated - Pietro Fiorentini",
-      "url": "https://www.fiorentini.com/en/solutions/products/gas-products/low-pressure-gas-regulators-and-governors/lp-direct-operated/fe/",
-      "summary": "The FE is a two-stage gas pressure regulator for low pressure natural gas distribution networks for residential and commercial users.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
+      "id": "fa30b6ca22f99f8a",
+      "title": "Visão geral",
+      "url": "https://search.google/intl/pt-BR/",
+      "summary": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "enabling",
       "content_types": [
-        "policy"
+        "tool",
+        "optics"
       ],
-      "primary_type": "policy",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
-        "policy_privacy",
-        "adjacent_radar"
+        "development_hacking",
+        "research_optics"
       ],
       "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lens",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "de88c813ff9edc15",
-      "title": "Fiorentini - Declaro",
-      "url": "https://sizing.fiorentini.com/",
-      "summary": "Processing... Processing...",
+      "id": "9cf88bd1105f80e9",
+      "title": "A Pool Party - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/a-pool-party.720173/",
+      "summary": "\"Oh geez, am I stiff!\" As I tried to get up from the bed after finally being untied by Amelia. Seeing that I had cut off some of my blood circulation...",
       "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b5c807208d6c7413",
-      "title": "Forum list | Reef2Reef",
-      "url": "https://www.reef2reef.com/forums/",
-      "summary": "Reef2Reef is a reef forum community of saltwater aquarium hobbyists. Our goal is to provide a friendly place to discuss and ask questions pertaining to the marine and saltwater reef aquarium hobby. No matter what level of aquarist you are, everyone is welcome here at R2R! If you love your...",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -581,12 +166,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6592d5f7f9cd1ba8",
-      "title": "Home | Reef2Reef",
-      "url": "https://www.reef2reef.com/",
-      "summary": "🎉 20 Years Join Reef2Reef’s 20th Birthday Bash — Over $42K in Prizes! Retro swag, exclusive member perks, prize tickets and more • Ends September 16 Join the Bash ›",
+      "id": "50eef5377920f881",
+      "title": "Casting",
+      "url": "https://horizon.meta.com/casting/",
+      "summary": "Step into a universe of community created worlds, where you can play, explore, and connect with friends. Available on iOS, Android and Meta Quest.",
       "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -594,827 +179,434 @@
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3b67131e854d0be",
-      "title": "HP 100 - Direct operated - Pietro Fiorentini",
-      "url": "https://www.fiorentini.com/en/solutions/products/gas-products/low-pressure-gas-regulators-and-governors/lp-direct-operated/hp-100/",
-      "summary": "HP 100 is a spring loaded gas pressure regulator controlled by a diaphragm and contrasting regulated spring action.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a5629dfae5d8777c",
-      "title": "I tested the best teeth whitening kits that actually work at home",
-      "url": "https://www.standard.co.uk/shopping/esbest/beauty/best-teeth-whitening-kits-b1294450.html",
-      "summary": "So, in a bid to brighten my smile and minimise some yellowing, I have been testing the best at-home teeth whitening kits that promise professional results in as little as seven days.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "98dc1509d44b7dce",
-      "title": "Low pressure gas regulators and governors - Pietro Fiorentini",
-      "url": "https://www.fiorentini.com/en/category/solutions/products/gas-products/low-pressure-gas-regulators-and-governors/",
-      "summary": "A whole range of devices dedicated to the safe delivery of natural gas, combining technological sophistication and miniaturisation of parts: this is the Pietro Fiorentini range of low pressure gas regulators and governors.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f6805ff458e19de7",
-      "title": "Our 10 Best Teeth Whitener Kit in the UK - September 2026 ...",
-      "url": "https://www.bestproductsreviews.co.uk/teeth-whitener-kit",
-      "summary": "Teeth Whitening Kit with LED Light and Tooth Whitening System, Dentists Recommended, Effectively Removes Stains from Coffee, Tea & Smoking - Safe, Fast, and Gentle for Sensitive Tooth",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "673549f227c6d090",
-      "title": "Our 10 Best Teeth Whitening Kits in the UK - August 2026 ...",
-      "url": "https://www.bestproductsreviews.co.uk/teeth-whitening-kits",
-      "summary": "Easily compare & choose from the 10 best Teeth Whitening Kits for you. Don't buy Teeth Whitening Kits in the UK before reading our rankings | bestproductsreviews.co.uk.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6e8371b201520726",
-      "title": "Pagina di Login - Fiorentini",
-      "url": "http://web01.dms2.fiorentini.com/Dms/login.aspx",
-      "summary": "Attenzione! Tutti i tentativi di accesso verranno archiviati e monitorati. Il tuo tentativo di connessione proviene dal seguente IP: 172.19.21.3",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cddb8634941b07de",
-      "title": "Print Preview - e15.ultipro.com",
-      "url": "https://e15.ultipro.com/pages/utility/mmpPrintPreview.html?USParams=containerIdOrSource=!",
-      "summary": "Print preview page for UltiPro.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "db1d03b0a9b1fcc9",
-      "title": "Print Preview - UltiPro",
-      "url": "https://e15.ultipro.com/pages/utility/PrintPreview.html?USParams=containerIdOrSource=!",
-      "summary": "Print Preview - UltiPro ... ﻿ Print Preview",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "53dd3664fa0802bc",
-      "title": "Rent Textbooks - Online Textbook Rental & eBooks - Chegg",
-      "url": "https://www.chegg.com/textbooks",
-      "summary": "Now even easier, with Valore. We've teamed up with Valore.com to bring you more affordable options for college textbooks. Whether you're looking to buy textbooks online, rent textbooks for the semester, or sell textbooks you no longer need, Valore offers competitive prices and a seamless experience. Finding cheap textbooks has never been easier, get the course materials you need to succeed ...",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57b2e16008d6ea25",
-      "title": "Rent/Buy Books on Chegg - Save Up to 90% on Textbooks",
-      "url": "https://www.chegg.com/books",
-      "summary": "Buy or rent textbooks from Chegg.com and save up to 90% off of new titles for your required college books.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4f163300561f47cf",
-      "title": "Soluzioni tecnologiche per aziende e utility - Pietro Fiorentini",
-      "url": "https://www.fiorentini.com/it/",
-      "summary": "Pietro Fiorentini opera a livello internazionale progettazione e realizzazione componenti, sistemi, servizi per la regolazione, la misura, la distribuzione e l'utilizzo di petrolio e gas naturale.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fd09ea4894fec20b",
-      "title": "Step by step full spectrum diy led build | Reef2Reef",
-      "url": "https://www.reef2reef.com/threads/step-by-step-full-spectrum-diy-led-build.111421/",
-      "summary": "INTRODUCTION: This build is a step by step with lots of pictures, full spectrum 90- 3watt dimmable led build. First, allow me to explain why i chose leds. I have a 150 gallon tall fish/reef tank (48 x 24 x 31)( l x w x h). I was using 2- 250watt Metal Halides Phoenix 14k, 4- 54watt ATI t5...",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "abf72c84c57d7c8a",
-      "title": "TAMM - Fiorentini",
-      "url": "https://retiamm.fiorentini.com/RetiWDM/login.aspx",
-      "summary": "Terranova utilizza cookie che ci aiutano a fornire i nostri servizi. Continuando la navigazione, accetti il nostro utilizzo dei cookie. Maggiori informazioni.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e488ffcf9ba4ded3",
-      "title": "Technological solutions for energy industry and utilities - Pietro ...",
-      "url": "https://www.fiorentini.com/en/",
-      "summary": "Pietro Fiorentini operates at an international level designing and manufacturing components, systems, services for the regulation, measurement, distribution and use of oil and natural gas.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "41ce4f31a1b86840",
-      "title": "The best teeth whitening kits for a brighter smile, tested by 370 people",
-      "url": "https://www.goodhousekeeping.com/uk/product-reviews/fashion-and-beauty/g29589571/best-teeth-whitening-kits/",
-      "summary": "This kit offers a user-friendly, mess-free teeth whitening experience and garnered overwhelmingly positive feedback. Panellists consistently said the gel was easy to apply, and the LED device...",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7541db7624a06d87",
-      "title": "UKG Pro Login Gateway - UltiPro",
-      "url": "https://e15.ultipro.com/MultiFactorGateway.aspx",
-      "summary": "UKG Pro Login Gateway 2-Step Verification",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a711f3afaa5a26b4",
-      "title": "全国邮政编码大全 | 收录全国2700+各区县邮编代码 - 懒人工具",
-      "url": "https://www.lanren-tools.com/postal-code/",
-      "summary": "全国邮政编码大全，收录34个省级行政区、2700+区县邮政编码数据。支持实时搜索、一键复制、多字段排序，涵盖北京市、上海市、广东省、浙江省等所有省份区县邮编信息。",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8481cbc761fbe401",
-      "title": "福州市行政区划代码、邮政编码、区号查询、历史沿革、地名 ...",
-      "url": "https://www.onlinetool.cc/china-area-code-postal-code/area-code-350100.php",
-      "summary": "地名含义： 以自然地理实体山峰命名。 唐开元十三年（725），“因州西北有福山”，改闽州为福州。 地名来历： 唐开元十三年（725），设福州都督府，这是以“福州”定名的最早年代。 1946年，正式设立福州市。",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "af11c8c2753566f6",
-      "title": "福建省各市车牌、区号、身份证号 - 今日头条",
-      "url": "https://www.toutiao.com/article/7341396005285904923/",
-      "summary": "福建省：简称闽。 “1998·11·14”命案告破，内蒙古警方通报：潜逃28年的嫌疑人张某被抓获，对犯罪事实供认不讳据“平安内蒙古”微信公众号9月4日消息，近日，内蒙古通辽市科左中旗公安局成功抓获潜逃28年的命案犯罪嫌疑人张某，“1998·11·14”命案积案告破。 据介绍，1998年11月14日，科左中旗 ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "66ecef1cb1d2fd6e",
-      "title": "福建省福州市 邮政编码查询 - 邮编库 ️",
-      "url": "https://www.youbianku.com/%B8%A3%BD%A8%CA%A1%B8%A3%D6%DD%CA%D0",
-      "summary": "福州屬于福建，其整體郵政編碼為350000，本頁還有福州下屬區縣的郵政編碼信息，可以直接浏覽顯示的整體郵編，也可以點擊地名進入查看下一級地區的詳細郵編。",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "37b87000a76fd977",
-      "title": "福建省行政区划名录及代码（截至2025年6月30日）",
-      "url": "https://mzt.fujian.gov.cn/gk/tzgg/202507/t20250718_6968735.htm",
-      "summary": "福建省行政区划名录及代码（截至2025年6月30日） . 来源：福建省民政厅 时间：2025-07-18 11:12 . 微信微博QQ空间. 行政区划名称. 行政区划代码. 福建省. 350000. 福州市. 350100. 鼓楼区. 350102. 鼓东街道. 350102001. 鼓西街道. 350102002. 温泉街道. 350102003.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4a4b9dd7d684fe58",
-      "title": "连江县敖江镇邮政编码是多少-敖江镇邮编350500-掌上查询助手",
-      "url": "https://www.sttcq.com/post_code/23/230995.html",
-      "summary": "350500邮政编码组成 第1-2位—35：表示福建省 第3位—0：表示福州邮区 第4位—5：表示连江县邮局 最后2位数字—00：表示敖江镇投递局（所） 备注：我国的邮政编码采用四级六位数编码结构。",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5a6ed60c69388512",
-      "title": "邮政编码 350500 - 福州市, 福建省 - Cybo",
-      "url": "https://xn--5bvn13bn9eyut.cybo.com/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/350500_%E7%A6%8F%E5%B7%9E%E5%B8%82",
-      "summary": "福州建城于公元前202年，迄今2200多年，是中国国家历史文化名城，历史上长期作为福建的政治中心，既是中国东南沿海重要的贸易港口和海上丝绸之路的门户，同时也是重要的文化中心，从宋代起文化教育就非常发达，是产生进士、状元和两院院士最多的中国 ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ff8a1273b7d15786",
-      "title": "邮编350500_邮编查询_邮政编码_ip138邮编大全",
-      "url": "https://www.ip138.com/350500/",
-      "summary": "福建省福州市邮编:350000. 区县. 邮政编码. 电话区号. 连江县. 350500. 0591. 邮政网点详情. 服务网点名称. 邮编. 区号. 地址. 电话. 大众路邮政支局.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "be4805cffc46a267",
-      "title": "20 summer vacation ideas across the U.S. - Tripadvisor",
-      "url": "https://www.tripadvisor.com/Articles-lkAEzTnXYKyA-Summer_vacation_ideas_usa.html",
-      "summary": "There can be a lot of pressure around picking the right destination for your summer vacation. How do you find a place the whole group will like, one that offers the right mix of activities and relaxation? Take the guesswork out of planning with this guide to some of the best warm-weather vacation spots in the United States.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "abf3171a1a31d74c",
-      "title": "27 Best Places To Visit In Summer In The USA (2025 Vacation ...",
-      "url": "https://theplanetd.com/best-places-to-visit-in-summer-usa/",
-      "summary": "Looking for the best places to visit in summer? From National Parks to cities these are the best summer vacation ideas in the USA.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a1ec4a6e2c9798c1",
-      "title": "33 Stunning Places to Visit in Summer in the USA (Vacation ...",
-      "url": "https://www.ourescapeclause.com/places-to-visit-in-summer-in-usa-vacations/",
-      "summary": "Looking for the best US summer vacation ideas? From beach towns to national parks, here are the best places to visit in summer in the USA!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ea41a647e4ddc71",
-      "title": "Get directions and show routes in Google Maps",
-      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
-      "summary": "Important: To keep yourself and others safe, stay aware of your surroundings when you use directions on Google Maps. When in doubt, follow actual traffic regulations and confirm signage from the road or path that you’re on. You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "349dbce4b31250db",
-      "title": "Get started with Google Maps",
-      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
-      "summary": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You can use the Google Maps app on your mobile device or Google Maps on your computer.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6dfa56a066358702",
-      "title": "Google Maps 3D view not working. Globe View option is Grayed Out.",
-      "url": "https://support.google.com/maps/thread/191597426/google-maps-3d-view-not-working-globe-view-option-is-grayed-out?hl=en",
-      "summary": "Google Maps 3D view not working. Globe View option is Grayed Out. I have been using Google Maps in 3D since it started sucessfully. Recently the info bar at the bottom of the page along with the credits say' 3D Earthview not available.' Otherwise 2D functions work normally including street view. Globe View option is Grayed Out.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
       "content_types": [
         "model",
-        "tool",
-        "sdk"
+        "community"
       ],
       "primary_type": "model",
       "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "41a7e81f5d815e7f",
+      "title": "Difference between XNXX and XVIDEOS? - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/difference-between-xnxx-and-xvideos.321854/",
+      "summary": "Hi! I registered at XVIDEOS community and then saw the forum on XNXX linked from that site. And when you click on upload on XNXX you get directed to...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "248c1967731ff157",
+      "title": "Keep One Drop One... | Page 15793 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/keep-one-drop-one.18281/page-15793",
+      "summary": "Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 posts in any sub forum). One more important message - Do not answer to people pretending to be from xnxx team or a member of the staff. If the email is not from forum@xnxx.com or the message on the forum is not from StanleyOG it's not an admin or member of the staff. Please be ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "10837a1fd961c8a7",
+      "title": "Man seeking woman - married and lonely seeks same",
+      "url": "https://forum.xnxx.com/threads/married-and-lonely-seeks-same.723487/",
+      "summary": "41, taken—but not exactly fulfilled—and looking for someone who understands the space between “fine” and actually alive. If you’re also in a situation...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "593e0cc972b31b37",
+      "title": "Meta",
+      "url": "https://work.meta.com/device",
+      "summary": "Enter the code displayed on your device to connect it to your organization.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6a377f0a39a02fc5",
+      "title": "Meta",
+      "url": "https://latest.auth.meta.com/",
+      "summary": "Access and manage your Meta account, devices, and connected experiences.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c54f1fa579880f7",
+      "title": "Meta",
+      "url": "https://prod.auth.meta.com/",
+      "summary": "Meta ... Meta",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2048b141c47788c1",
+      "title": "Meta Horizon",
+      "url": "https://horizon.meta.com/desktop/?locale=en_US",
+      "summary": "Download Meta Quest Virtual Display app and connect your Meta Quest to a PC",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "923adb0904519ad7",
+      "title": "Meta Store: compra lentes con IA, Meta Glasses y visores Quest",
+      "url": "https://www.meta.com/mx/",
+      "summary": "Compra lentes con IA, toma fotos, reproduce música y habla con la IA. Explora la tecnología wearable de Meta para la vida cotidiana. Ray-Ban Meta, Oakley Meta y Quest 3S desde MX$4,799.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8d4e699e117b1709",
+      "title": "MissRachael - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/members/missrachael.708527/",
+      "summary": "MissRachael is a Don't Let The Blonde Hair Fool You! at XNXX Adult Forum",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "31f76427ce7601bd",
+      "title": "Protect Teens on Facebook & Messenger | Family Center",
+      "url": "https://familycenter.meta.com/our-products/facebook-messenger/",
+      "summary": "Discover parental tools and insights to help your teen have positive, safe connections on Facebook and Messenger.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "86316cbab5583376",
+      "title": "Shop Meta Quest VR games, apps, deals and more | Meta Quest | Meta (en-gb)",
+      "url": "https://www.meta.com/en-gb/experiences/",
+      "summary": "Shop VR games, apps and entertainment available on the Meta Quest headsets. Download hundreds of action, sports and multiplayer VR games on Meta Quest.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "86162e13b60e2792",
+      "title": "Virtual Desktop on Meta Quest",
+      "url": "https://www.meta.com/experiences/virtual-desktop/2017050365004772/",
+      "summary": "Connect wirelessly to your computer(s) to watch movies, browse the web, play 2D games or stream PCVR games. Virtual Desktop is a highly optimized, native application developed for low latency, high quality streaming. • Connect up to 4 computers (Windows 10 or 11, macOS Catalina or later) • PCVR game streaming requires a VR Ready PC running Windows 10 or 11 • Supports Bluetooth mice ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fa4bd0847f977b83",
+      "title": "WIFE’S SISTER COMES TO STAY AFTER DIVORCE – PT 2",
+      "url": "https://forum.xnxx.com/threads/wife%E2%80%99s-sister-comes-to-stay-after-divorce-%E2%80%93-pt-2.662806/",
+      "summary": "Part 1 Summary: After her divorce, Sandy asked her sister, Paula, if she could stay with her and Ken, her husband, while she got back on her feet....",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9b67176fc8c9f045",
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/attachments/963562-jpg.1110725/",
+      "summary": "XNXX Adult Forum",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e4c456fca195b584",
+      "title": "Facebook",
+      "url": "https://m.me/login/",
+      "summary": "Messenger Facebook Lite Video Places Games Marketplace Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Instagram Threads Fundraisers Services Privacy Policy Consumer Health Privacy Privacy Center Groups Sign up • Instagram Locations Page Categories People Pages Groups Search Businesses Businesses About Create ad Create Page Developers ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "privacy"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
         "reject_noise"
       ],
       "triage_priority": "low",
@@ -1423,10 +615,120 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b1b7510d5d207110",
-      "title": "Manage your Google Maps Timeline - Google Account Help",
-      "url": "https://support.google.com/accounts/answer/17302633?hl=en",
-      "summary": "Google Maps Timeline helps you find the trips you took and places you went, using your Location History.",
+      "id": "b9975d1ebb8f3119",
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/",
+      "summary": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip on any budget.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d0b544f0c465c5d",
+      "title": "Cheap Hotels: Book Hotel Deals With Our Hotel Finder | Travelocity",
+      "url": "https://www.travelocity.com/Hotels",
+      "summary": "Use Travelocity's Hotel Finder to book your next hotel, backed by our Price Match Guarantee. Search hotel deals, read reviews and Wander Wisely!",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ce14cffb24175176",
+      "title": "Facebook (@facebook) / X",
+      "url": "https://x.com/facebook",
+      "summary": "And we're back 💙 So sorry for those who were unable to access Facebook earlier today.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d9a0ef1e17441901",
+      "title": "Facebook - Meta",
+      "url": "https://www.meta.com/en-gb/facebook-app/",
+      "summary": "Facebook helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family, as well as discovering new ones, is easy with features such as Groups, Watch and Marketplace.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ef761c3516734ca5",
+      "title": "Free QR Code Generator - Create Custom, Branded QR Codes - Adobe",
+      "url": "https://www.adobe.com/express/feature/image/qr-code-generator",
+      "summary": "Create free, custom QR codes in seconds. Personalize colors, add your logo, and download as PNG, JPEG, or PDF. QR codes never expire - perfect for business cards, menus, flyers, marketing campaigns, and more.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -1450,10 +752,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0da720a99850e745",
-      "title": "See traffic near you - Google Maps Help",
-      "url": "https://support.google.com/maps/answer/7200764?hl=en",
-      "summary": "On your iPhone or iPad, you can get real-time traffic information in the Today view without opening the Google Maps app. When you add the Google Traffic widget, you'll see: Traffic information and",
+      "id": "af5b9ce096b1cd25",
+      "title": "Free QR Code Generator by Uniqode",
+      "url": "https://www.uniqode.com/qr-code-generator",
+      "summary": "Create QR Codes for URLs, PDFs & more on Uniqode’s free QR Code generator. Customize your QR Codes with logos, colors, and frames.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -1477,10 +779,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "48275e57875a74e7",
-      "title": "Update Google Maps - Android - Google Maps Help",
-      "url": "https://support.google.com/maps/answer/3615175?hl=en-GB&co=GENIE.Platform%3DAndroid",
-      "summary": "Update Google Maps To use the most recent Google Maps app features, download the latest version of the app. Update Google Maps Tip:If you have issues with downloads and updates for Google Maps, you can fix them with basic troubleshooting steps. Learn how to fix problems downloading apps.",
+      "id": "0364b24be53ee322",
+      "title": "Free QR Code Generator: Create Everlasting Plain Text QRs",
+      "url": "https://qrcode.tec-it.com/",
+      "summary": "Create Everlasting Plain Text QRs! FREE QR Code Generator for Perpetual Valid QRs.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -1504,12 +806,418 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "188e819c37522c21",
-      "title": "Acceso a la Oficina Virtual - OVi",
-      "url": "https://www.hacienda.go.cr/docs/cGuiasRapidasPasoAPasoParaOViyTRIBU-CR.pdf",
-      "summary": "La Oficina Virtual - OVi del sistema TRIBU-CR está creada pensando en las personas que interactúan con la Administración Tributaria en el cumplimiento de sus deberes y uso de sus derechos.",
+      "id": "4ebb6bcdb9c332c0",
+      "title": "Free QR Code Generator: Create unlimited QR codes | Canva",
+      "url": "https://www.canva.com/qr-code-generator/",
+      "summary": "Create custom QR codes with our free QR code generator. Keep the URL permanent with static codes or generate dynamic codes with editable links.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "16167f255d8f3cc1",
+      "title": "Hotels | Book last-minute hotels & more | Booking.com",
+      "url": "https://www.booking.com/hotel/index.html",
+      "summary": "Find, compare, and book the best hotels on Booking.com! Discover cheap hotels, hotels near you, hotels for last-minute trips, and more.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f0d30039ea8a282f",
+      "title": "Hotels, Accommodation & Cheap Hotel Deals | Book at Expedia site",
+      "url": "https://www.expedia.com/Hotels",
+      "summary": "Expedia's Hotel Search makes booking easy. Choose from thousands of hotel discounts & cheap hotel rooms. Pick the perfect hotel deal & save!",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0fdecbb9a16e1043",
+      "title": "Hotels.com - Deals & Discounts for Hotel Reservations from Luxury ...",
+      "url": "https://www.hotels.com/",
+      "summary": "Find cheap hotels and discounts when you book on Hotels.com. Compare hotel deals, offers and read unbiased reviews on hotels.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "33b80bae8dff54d0",
+      "title": "Hotels.com | Hotels, Cabins, Motels, Resorts & Accommodation",
+      "url": "https://ca.hotels.com/",
+      "summary": "The best hotel and accommodation deals for your next stay. Book a hotel at cheap prices and get discounts on Hotels.com",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e9a127572a59b9f6",
+      "title": "Hotels: Find Cheap Hotel Deals & Discounts - KAYAK",
+      "url": "https://www.kayak.com/hotels",
+      "summary": "KAYAK searches hundreds of travel sites so you can find the perfect hotel at the right price. Read millions of verified guest reviews for hotels across the world.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "54b454e8a721568a",
+      "title": "Hotels: Find Cheap Hotel Rooms & Discount Hotels | Priceline",
+      "url": "https://www.priceline.com/hotels",
+      "summary": "Get great deals on hotels, resorts and private rentals. Save even more on last minute deals and hotels nearby. Book a hotel for cheap today with free cancellation for more flexibility.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a93629e608b88500",
+      "title": "Marriott Bonvoy Hotels | Book Directly & Get Exclusive Rates",
+      "url": "https://www.marriott.com/default.mi",
+      "summary": "Book Directly & Save at any of our 9000+ Marriott Bonvoy Hotels. Choose from Luxury Hotels, Resorts, Extended Stay Hotels, Pet-Friendly Hotels & More.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d040f5156f42473d",
+      "title": "QR Code Generator Free for Lifetime - QRGenerator",
+      "url": "https://qrgenerator.org/",
+      "summary": "Free QR code generator tool online. Generate QR codes with custom logo, color, frame, and patterns. Get unlimited scans with lifetime validity.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d8490bf9711cfe4c",
+      "title": "QR Code Generator | Create Your Free QR Codes",
+      "url": "https://www.qr-code-generator.com/",
+      "summary": "QR Code Generator for URL, vCard, and more. Add logo, colors, frames, and download in high print quality. Get your free QR Codes now!",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6b3f54e587fa947c",
+      "title": "QR.io: QR Code Generator | Create QR Codes",
+      "url": "https://qr.io/",
+      "summary": "Generate fully customized QR Codes, with color & shape, logo and keep track of how many people scan your QR Codes, from where and on what date.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "238d5c0137a6ff5f",
+      "title": "QRCode Monkey - The free QR Code Generator to create custom QR Codes ...",
+      "url": "https://www.qrcode-monkey.com/",
+      "summary": "Create custom QR Codes with Logo, Color and Design for free. This QR Code Maker offers free vector formats for best print quality.'",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "81a4905e45d3c18c",
+      "title": "QRFY - QR Code Generator: Create your Free QR code",
+      "url": "https://qrfy.com/",
+      "summary": "Create branded QR codes in seconds and track every scan live. Update your destination URL anytime—even after printing.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ce923bff65aa37da",
+      "title": "The QR Code Generator (TQRCG): Create Free QR Codes",
+      "url": "https://www.the-qrcode-generator.com/",
+      "summary": "The QR Code Generator (TQRCG) All-in-one tool to create free QR Codes, edit them, and track campaign performance.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f6f47114d8a4edf",
+      "title": "trivago.com - Compare hotel prices worldwide",
+      "url": "https://www.trivago.com/",
+      "summary": "Compare hotel prices from hundreds of travel sites and get great deals. Save time and money on finding your ideal accommodation with millions of reviews and photos on trivago.com",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "44f80ead4363295b",
+      "title": "510 Airport Center Dr - Jacksonville, FL | Quest",
+      "url": "https://locations.questdiagnostics.com/fl/jacksonville/510-airport-center-dr",
+      "summary": "Whether you’re here for a test that your doctor ordered or an employer screening, you can add additional lab tests to the same visit. Simply purchase them online at questhealth.com and we'll collect your samples all at once.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1530,12 +1238,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8f10d886405de1b0",
-      "title": "Compartimos el tutorial: \"Cómo ingresar a la Oficina Virtual (OVI) de ...",
-      "url": "https://www.facebook.com/ministeriodehaciendacr/videos/compartimos-el-tutorial-c%C3%B3mo-ingresar-a-la-oficina-virtual-ovi-de-tribu-cr/790667027276369/",
-      "summary": "Alvaro Castellon ValverdeEstimado (a) señor: Agradeceremos remitir el incidente presentado por medio del apartado \"Enlaces de interés\" , seleccionando la pestaña de infoyasistencia, que se encuentra ubicado en la parte inferior de la OVi ( https://ovitribucr.hacienda. go.cr/home/), sugerimos adjuntar las imágenes del error que le aparece.",
+      "id": "b91ae73fb80049d8",
+      "title": "Airliners.net | Aviation Photography, Discussion Forums & News",
+      "url": "https://www.airliners.net/",
+      "summary": "The Best Airplane Information, Aviation Photos and Aviation News! 3,741,389photos online! Top 5 of the Last 24 Hours",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1556,38 +1264,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ddc1337fad05fa2d",
-      "title": "Conversation Questions for the ESL/EFL Classroom (I-TESL-J)",
-      "url": "http://iteslj.org/questions/////////",
-      "summary": "Interesting questions for discussions in English lessons. Copyright © 1997-2010 by The Internet TESL Journal",
+      "id": "5776546606e36f71",
+      "title": "AutoNation Volkswagen Savannah - Savannah, GA - CarGurus",
+      "url": "https://www.cargurus.com/Cars/m-AutoNation-Volkswagen-Savannah-sp346404",
+      "summary": "Browse cars and read independent reviews from AutoNation Volkswagen Savannah in Savannah, GA. Click here to find the car you’ll love near you.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e7f75252e8c9f600",
-      "title": "Descarga del navegador empresarial para Windows y Mac - Chrome Enterprise",
-      "url": "https://chromeenterprise.google/intl/es_es/download/",
-      "summary": "Hazte con las herramientas necesarias para implementar el navegador Chrome en entornos Windows y Mac de tu empresa. Descubre las descargas, las plantillas de gestión y las actualizaciones, y prueba la beta.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1608,376 +1290,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b479316e3a0e1271",
-      "title": "Descarga del navegador empresarial para Windows y macOS - Chrome Enterprise",
-      "url": "https://chromeenterprise.google/intl/es-419_ALL/download/",
-      "summary": "Obtén las herramientas que permiten implementar el navegador Chrome para Windows y macOS en tu empresa. Explora descargas, plantillas de administración y actualizaciones, y prueba la versión beta.",
+      "id": "3f649c102f0382b4",
+      "title": "AutoNation Volkswagen Savannah - Savannah, GA | Cars.com",
+      "url": "https://www.cars.com/dealers/6000958/autonation-volkswagen-savannah/",
+      "summary": "Read reviews by dealership customers, get a map and directions, contact the dealer, view inventory, hours of operation, and dealership photos and video. Learn about AutoNation Volkswagen Savannah...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9ac639b084449e24",
-      "title": "Descargar Chrome - Ayuda de Google Chrome",
-      "url": "https://support.google.com/chrome/answer/16737628?hl=es",
-      "summary": "Puedes descargar e instalar el navegador web Chrome sin coste y usarlo para navegar por la Web. Comprobar los requisitos del sistema para usar Chrome Para usar Chrome en un Mac, necesitas...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2cee884239313f5f",
-      "title": "Descargar Google Chrome (gratis) para Windows, macOS, Android, APK, iOS ...",
-      "url": "https://es.gizmodo.com/descargar/google-chrome",
-      "summary": "Google Chrome es el navegador más utilizado del mundo. Rápido, estable y lleno de funciones útiles, se integra a la perfección con los servicios de Google y ofrece una experiencia moderna y ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "96b5464fcea8275f",
-      "title": "Dockhorn - Invitations and Requests in a Restaurant (TESL/TEFL)",
-      "url": "http://iteslj.org/Lessons/Dockhorn-Restaurant",
-      "summary": "The Internet TESL Journal Invitations and Requests in a Restaurant David Dockhorn ddtraveller [at] yahoo.com Sarakhampittyakhom High School (Mahasalakham, Thailand) Introduction This is a conversation activity that focuses on making invitations and requests in the context of dining at a restaurant. My Thai students are normally very shy to speak but they love to do this activity. The students ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2d490aeae77de7a",
-      "title": "ESL Conversation Questions - Food & Eating (I-TESL-J)",
-      "url": "http://iteslj.org/questions/food.html",
-      "summary": "Have you ever sent food back in a restaurant? Have you ever left a restaurant without paying (\"dined and dashed\")? Do you like trying new foods? What new foods have you tried this month? What is the strangest food you have ever tried? Do you have any food allergies? Which food from this country do you like the least? What do you think about ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "28ddc6eb3a494fb9",
-      "title": "ESL Conversation Questions - Restaurants & Eating Out (I-TESL-J)",
-      "url": "http://iteslj.org/questions/////////restaurants.html",
-      "summary": "Conversation Questions Restaurants & Eating Out A Part of Conversation Questions for the ESL Classroom. Related: Fruits and Vegetables, Vegetarian, Diets, Food & Eating, Tipping How often do you eat out? Where do you usually go when you eat out? How much do you usually pay when you eat out? Who do you usually go with when you eat out? Do you like western food? Japanese? Thai? Italian? Can you ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8a16deb29a6a5a84",
-      "title": "Google Chrome - Wikipedia, la enciclopedia libre",
-      "url": "https://es.wikipedia.org/wiki/Google_Chrome",
-      "summary": "Chrome para Android e iOS En febrero de 2012, Google lanzó “Chrome para Android Beta”, cuya versión está disponible solo para Android 4.0 'Ice Cream Sandwich' en teléfonos inteligentes y tabletas.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aca7860fb4263287",
-      "title": "In a Restaurant (English-Hungarian) Quiz @ iteslj.org/v",
-      "url": "http://iteslj.org/v/h/jb-restaurant.html",
-      "summary": "Free bilingual vocabulary quiz for ##title##. Practice ##language1## and ##language2## online.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fb2315dfaa4b675e",
-      "title": "Ingreso a TRIBU-CR: guía paso a paso 2026",
-      "url": "https://siemprealdia.co/costa-rica/impuestos/proceso-para-el-ingreso-a-tribu-cr/",
-      "summary": "TRIBU-CR opera desde el 6 de octubre de 2025 como única plataforma tributaria de Costa Rica. Guía actualizada 2026: qué es, cómo crear el usuario en la OVi, los 9 módulos activos, qué cambió frente al ATV, los nuevos formularios 150, 270 y 272.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5773186f9bd81142",
-      "title": "Navegador web Google Chrome",
-      "url": "https://www.google.com/intl/es_es/chrome/",
-      "summary": "Más sencillo, seguro y rápido que nunca gracias a las funciones inteligentes de Google.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b815f46d3a62f18d",
-      "title": "Oficina Virtual Tribu-CR: Gestión tributaria centralizada",
-      "url": "https://www.facturele.com/2025/04/29/oficina-virtual-tribu-cr/",
-      "summary": "A través de la OVI, los contribuyentes (incluyendo contadores y empresas PyMEs, medianas y grandes) podrán presentar declaraciones, realizar pagos, consultar su historial fiscal y recibir notificaciones en un solo lugar.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "469d30c830aa2872",
-      "title": "Oficina Virtual Tributaria",
-      "url": "https://ovitribucr.hacienda.go.cr/",
-      "summary": "Oficina Virtual Tributaria.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c3ec57deea935ee9",
-      "title": "OVI de Hacienda (TRIBU-CR): cómo entrar y qué trámites hacer",
-      "url": "https://consultoresjimenez.com/ovi-tribu-cr-nuevo-canal-para-consultas-y-tramites-fiscales/",
-      "summary": "El acceso a este sistema se realiza a través de la Oficina Virtual (OVi), el portal donde contribuyentes, contadores y representantes legales gestionan declaraciones, pagos, modificaciones del RUT y autorizaciones a terceros.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "203c59cc371431e4",
-      "title": "Portal Contribuyente - Inicio de Sesión",
-      "url": "https://atv.hacienda.go.cr/ATV/Login.aspx",
-      "summary": "Desde el 06 de octubre, le recordamos que está disponible la nueva Oficina Virtual OVI, donde puede realizar trámites relacionados con la gestión tributaria de forma ágil y segura.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aebd961edccc1710",
-      "title": "Publicamos el tutorial: \"Cómo ingresar a la Oficina Virtual (OVI) de ...",
-      "url": "https://www.facebook.com/ministeriodehaciendacr/videos/publicamos-el-tutorial-c%C3%B3mo-ingresar-a-la-oficina-virtual-ovi-de-tribu-cr/24067190362960508/",
-      "summary": "OCR: MINISTERIO DE HACIENDA GOBIERNO DE COSTA RICA Hacienda Digital TRIBU-CR CR Video de apoyo paso a paso para la funcionalidad: Ingreso identificado a la Oficina Virtual (OVi) Objetivo del video: Aprender paso α paso de cómo ingresar α la Oficina Virtual (OVI) Le damos la bienvenida a este video .",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1998,12 +1316,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3541def76fea785a",
-      "title": "Restaurant (English-Catalan) Quiz @ iteslj.org/v",
-      "url": "http://iteslj.org/v/cat/mm_restaurant.html",
-      "summary": "Free bilingual vocabulary quiz for ##title##. Practice ##language1## and ##language2## online.",
+      "id": "dd99419f106a0519",
+      "title": "AutoNation Volkswagen Savannah | Georgia VW Dealer",
+      "url": "https://www.autonationvolkswagensavannah.com/",
+      "summary": "AutoNation Volkswagen Savannah is your go-to VW dealer in Savannah, GA. View our new and used cars for sale or schedule service.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb8cad3d405284fd",
+      "title": "Aviation Photo #8091495: Boeing 737-8 MAX - Southwest Airlines",
+      "url": "https://www.airliners.net/photo/Southwest-Airlines/Boeing-737-8-MAX/8091495",
+      "summary": "Liberty One on her way back to Houston - America 250! - Photo taken at Corpus Christi - International (CRP / KCRP) in Texas, USA on May 4, 2026.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2024,12 +1368,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1f7069fff3b16b0f",
-      "title": "Restaurant (English-French) Quiz @ iteslj.org/v",
-      "url": "http://iteslj.org/v/fr/cm-restaurant.html",
-      "summary": "Restaurant Quiz data by: Christine Menard (December 9th, 2007) Select Quiz Mode: ① English → French ② French → English Start Quiz",
+      "id": "ed132958e7cb616a",
+      "title": "Aviation Photo #8139413: Boeing 737-8H4 - Southwest Airlines",
+      "url": "https://www.airliners.net/photo/Southwest-Airlines/Boeing-737-8H4/8139413",
+      "summary": "Photo taken at Baltimore / Washington - International Thurgood Marshall (Friendship) (BWI / KBWI) in Maryland, USA on April 30, 2025.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2050,12 +1394,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fa86ca9163f08017",
-      "title": "Sharifian - Ten Conversation Lessons with Stories, Vocabulary Practice ...",
-      "url": "http://iteslj.org/Lessons/Sharifian-Conversation.html",
-      "summary": "Ten Conversation Lessons with Stories, Vocabulary Practice, Questions and Activities Farzad Sharifian f.sharifian [at] cowan.edu.au Edith Cowan University (Western Australia)",
+      "id": "0ff086f8f4546eac",
+      "title": "Aviation Photo #8160583: Boeing 737-8 MAX - Southwest Airlines",
+      "url": "https://www.airliners.net/photo/Southwest-Airlines/Boeing-737-8-MAX/8160583",
+      "summary": "I was showing my friend how I get airplane crossing Moon shots by driving in calculated or guesstimated directions around the suburbs. Was telling him it sometimes takes 4 hours of trying or more before one crosses the Moon. Well on this night, the very first aircraft managed to cross the Crescent Moon. This is WN3267 from Phoenix to Seattle, on the downwind on the HAWKZ8 arrival. Moon ...",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2076,10 +1420,88 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6ca780d22bfc1ea3",
-      "title": "TRIBU-CR - Ministerio de Hacienda - República de Costa Rica",
-      "url": "https://www.hacienda.go.cr/TRIBU-CR.html",
-      "summary": "Generalidades de TRIBU-CR . Oficina Virtual . Videos Informativos y Tutoriales. Avisos. Códigos para declaraciones. Guías rápidas. Más información útil. Regresar a Inicio.",
+      "id": "0a9daba1ffd54482",
+      "title": "Can you change payment options after booking? - FlyerTalk",
+      "url": "https://www.flyertalk.com/forum/southwest-airlines-rapid-rewards/1578921-can-you-change-payment-options-after-booking.html",
+      "summary": "Southwest Airlines | Rapid Rewards - Can you change payment options after booking? - I want to gift a gift card to someone who has already booked the flight with credit, but I'm not sure if there's a point.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8e7ca0d42ce97fa1",
+      "title": "College Football Scores - 2026 Season - ESPN",
+      "url": "https://www.espn.com/college-football/scoreboard",
+      "summary": "Live scores for every 2026 NCAAF season game on ESPN. Includes box scores, video highlights, play breakdowns and updated odds.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4895fee58ae321b8",
+      "title": "Create a strong password & a more secure account - Google Help",
+      "url": "https://support.google.com/accounts/answer/32040?hl=en",
+      "summary": "Reusing passwords for important accounts is risky. If someone gets your password for one account, they could access your email, address, and even your money. Tip: If you have trouble remembering multiple passwords, learn how to use a tool to manage your saved passwords.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e5a2732191fec87",
+      "title": "Create windows 10 password reset disk without knowing the password ...",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/create-windows-10-password-reset-disk-without-knowing-the-password/4361169",
+      "summary": "Honestly, it is a proactive way to ensure you can regain access to your account if you ever forget your password by creating and using a Windows 10 password reset disk. Below is a step-by-step guide on how to create a Windows 10 password reset disk and how to use it to when you forgot Windows 10 login password.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -2102,10 +1524,400 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "90fd6ad78e2baf3a",
-      "title": "TRIBU-CR 2026: qué es, cómo ingresar y trámites paso a paso",
-      "url": "https://siemprealdia.co/costa-rica/impuestos/plataforma-tribu-cr/",
-      "summary": "TRIBU-CR es la plataforma tributaria de Costa Rica que reemplazó al ATV en octubre de 2025. Guía 2026: Oficina Virtual, formularios actualizados y formulario 150 IVA.",
+      "id": "4352a1a4b72f89a5",
+      "title": "Detail - Quest Diagnostics",
+      "url": "https://www.questdiagnostics.com/locations/detail.html/W2E/32218/75/1",
+      "summary": "Quest Diagnostics Incorporated and certain affiliates are CLIA-certified laboratories that provide HIPAA-covered services. Other affiliates operated under the Quest® brand, such as Quest Consumer Inc., do not provide HIPAA-covered services.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "004eb61f715a8a44",
+      "title": "Ecuador vs Guatemala LIVE Updates: Minute-by-minute coverage of 2026 ...",
+      "url": "https://worldsoccertalk.com/news/ecuador-vs-guatemala-live-updates-minute-by-minute-coverage-of-2026-international-friendly/",
+      "summary": "In their final friendly match ahead of the 2026 World Cup, Ecuador dominated and defeated Guatemala. Led by Jordy Caicedo, Nilson Angulo, and Pervis Estupiñán, they beat their opponents 3–0, extending their 19-game unbeaten streak.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a496b4c998ca8b51",
+      "title": "Fazer login nas Contas do Google",
+      "url": "https://accounts.google.com/login?hl=pt-BR",
+      "summary": "Não está no seu computador? Use uma janela de navegação privada para fazer login. Saiba como usar o modo visitante. Avançar Criar conta",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f35d96a904ff46d7",
+      "title": "Find Location - finder details - Quest Diagnostics",
+      "url": "https://appointment.questdiagnostics.com/find-location?zipcode=32218&sitecode=W2E&reasonForVisit=Employee%20Drug%20and%20Alcohol",
+      "summary": "Location details Location Quest Diagnostics - Jacksonville Shoppes at River City 510 Airport Center Dr Jacksonville, FL 32218-7260 Closed - Opens at 6:00 AM",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5cc68f7fcc6a547a",
+      "title": "Find Location - finder details - Quest Diagnostics",
+      "url": "https://appointment.questdiagnostics.com/find-location/as-location-finder?zipcode=32218&sitecode=W2E&reasonForVisit=PHLEBOTOMY",
+      "summary": "Location details Location Quest Diagnostics - Jacksonville Shoppes at River City 510 Airport Center Dr Jacksonville, FL 32218-7260 Open now",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4456f4c91753c458",
+      "title": "FlyerTalk - The world's most popular frequent flyer community",
+      "url": "https://www.flyertalk.com/",
+      "summary": "Welcome to the FlyerTalk Forums. FlyerTalk’s 24/7 forums deliver the latest traveler information on airlines, hotels, and more. Join vacationers, mileage junkies, and industry insiders in dedicated boards: frequent-flyer programs, maximizing miles, airports, destinations, dining, and general travel. Pick a forum, dive into elite expert tips, and connect with a global, interactive travel ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5bedeb48313c10ac",
+      "title": "Georgia Southern Eagles vs. USC Trojans Live Score and Stats ...",
+      "url": "https://www.cbssports.com/college-football/gametracker/live/NCAAF_20250906_GAS@USC/",
+      "summary": "Live COLLEGEFOOTBALL scores at CBSSports.com. Check out the COLLEGEFOOTBALL scoreboard, box scores, expert picks and game recaps.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a6019376b4a5905f",
+      "title": "Gerald Jones Volkswagen | Volkswagen Dealership in Martinez GA",
+      "url": "https://www.geraldjonesvw.com/",
+      "summary": "Gerald Jones Volkswagen 4022 Washington Road Martinez GA 30907 706-760-4215 Service 706-228-6990 Parts 706-760-4247",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c770eca8c6879523",
+      "title": "Get your bookmarks, passwords, and more on all your devices - iPhone ...",
+      "url": "https://support.google.com/chrome/answer/165139?hl=en&co=GENIE.Platform%3DiOS",
+      "summary": "Find your saved passwords On your iPhone or iPad, open Chrome . Tap More Password Manager . Under \"Saved passwords,\" you'll find all your passwords. Find your saved addresses and payment methods On your iPhone or iPad, open Chrome . Tap More Settings.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ffeebf3053e96739",
+      "title": "Google",
+      "url": "https://www.google.com.br/",
+      "summary": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4952c937ba37124f",
+      "title": "Google",
+      "url": "http://www.google.ac/?hl=pt-BR",
+      "summary": "Disponibilizado pelo Google em: English PublicidadeSobre o GoogleGoogle.com © 2026 - Privacidade- Termos Google Apps",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "67429203d04c8f6f",
+      "title": "Google - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google",
+      "summary": "Google LLC (/ ˈɡuː.ɡəl / ⓘ, GOO-gəl) is an American multinational technology corporation focused on information technology, online advertising, search engine technology, email, cloud computing, software, quantum computing, e-commerce, consumer electronics, and artificial intelligence (AI). [9]",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0337fab6e9460f8f",
+      "title": "Google – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Google",
+      "summary": "Os produtos do Google se estendem à área de trabalho, com aplicativos como o navegador Google Chrome, o programa de organização de edição de fotografias Picasa e o aplicativo de mensagens instantâneas Google Talk.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "14b33d786401e701",
+      "title": "Guatemala Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/soccer/team/_/id/2652/guatemala",
+      "summary": "Visit ESPN for Guatemala live scores, video highlights, and latest news. Find standings and the full 2026 season schedule.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b982b3658cbbdf5",
+      "title": "Gérer les mots de passe dans Chrome - Ordinateur - Google Help",
+      "url": "https://support.google.com/chrome/answer/95606?hl=fr&co=GENIE.Platform%3DDesktop",
+      "summary": "Vous pouvez gérer les mots de passe enregistrés dans votre compte Google sur Chrome ou n'importe quel autre navigateur Web depuis passwords.google.com.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64aa3369daabe943",
+      "title": "How to Password Protect a Folder in Windows 11 Home?",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/how-to-password-protect-a-folder-in-windows-11-home/3970885",
+      "summary": "If you're planning to password protect a folder in Windows 11 home, here are some considerations and potential dangers: Dangers and Considerations: Windows 11 Home does not have a built-in feature to password-protect individual folders directly. If you're using third-party tools to protect folders, these tools may have vulnerabilities or may not be secure if from untrusted sources. Some free ...",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -2128,12 +1940,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "52592302f78130f9",
-      "title": "Web Site Guides for ESL Students - Restaurant Row",
-      "url": "http://iteslj.org/guides/dining.html",
-      "summary": "a restaurant specializing in roasted or barbecued meat, often from a rotating spit tapas small Spanish savoury dishes often served with drinks at a bar tip money left for the waiter or waitress ... usually between 10% and 20% of the bill southern/soul food traditionally eaten by Americans in the south Tex Mex a blend of Mexican and southern ...",
+      "id": "fa4474866df1205f",
+      "title": "I forgot my word document password, can I recover it? | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoft-365/i-forgot-my-word-document-password-can-i-recover-it/4335562",
+      "summary": "It depends on what kind of tools you are using and how complex the password it is. One week ago, I managed to recover my word document password by following this tutorial:",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2154,10 +1966,36 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4506a28877ba582d",
-      "title": "whatsapp messenger - 知乎",
-      "url": "https://www.zhihu.com/topic/19560025/hot",
-      "summary": "WhatsApp messenger是一款可供iPhone手机、Android手机、Windows Phone手机、Symbian手机和黑莓手机用户使用的，用于智能手机之间通讯的应用程序。该应用程序借助推送通知服务，可以即刻接收亲友和同事发送的信息；用户可免费从发送手机短信转为使用WhatsApp程序，以发送和接收信息、图片、音频文件和视频 ...",
+      "id": "9e8d94727e0a94c0",
+      "title": "Location Information | QUEST DIAGNOSTICS JACKSONVILLE SHOPPES",
+      "url": "https://med-stop.com/location/30181015558641",
+      "summary": "Observed Drug Collections not Performed - No Return to Duty and Follow-up Drug Tests. Call the Test Site to verify the work hours and availability of the same gender observer if required.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc513a918d195d56",
+      "title": "Location search - Quest Diagnostics",
+      "url": "https://www.questdiagnostics.com/locations/search.html/32223/50/1/1000",
+      "summary": "Find hours, address, and contact information for our locations, and schedule an appointment online.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -2180,10 +2018,322 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "627af459803b5ce4",
-      "title": "Whatsapp安卓版怎么下载？ - 知乎",
-      "url": "https://www.zhihu.com/question/387607317",
-      "summary": "刚我自己在更新时发现一个问题，因为我手机很长时间没有登录whatsapp软件，导致我在whatsapp安装后需要重新输入手机号码并接收验证码验证，第一次使用的短信验证码，没有接收到，这个也是whatsapp一直存在的一个问题，就是很难接收到短信验证码，所以直接换 ...",
+      "id": "bc6a4de6c0e8c99c",
+      "title": "Manage passwords in Chrome - Android - Google Account Help",
+      "url": "https://support.google.com/accounts/answer/95606?hl=en&co=GENIE.Platform%3DAndroid",
+      "summary": "Save passwords to your device:When you’re not signed in to Chrome, it stores passwords locally on your device. This is helpful if you don’t want to save passwords to your Google Account or share them across multiple devices.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d72146fc5cb69a7",
+      "title": "Marina Inn at Grande Dunes - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g54359-d604456-Reviews-Marina_Inn_at_Grande_Dunes-Myrtle_Beach_South_Carolina.html",
+      "summary": "Book Marina Inn at Grande Dunes, Myrtle Beach on Tripadvisor: See 2,917 traveler reviews, 1,848 candid photos, and great deals for Marina Inn at Grande Dunes, ranked #1 of 179 hotels in Myrtle Beach and rated 4 of 5 at Tripadvisor.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c7a5abdb02c1860a",
+      "title": "Marina Inn at Grande Dunes - www.trivago.com",
+      "url": "https://www.trivago.com/en-US/oar/hotel-marina-inn-at-grande-dunes-north-myrtle-beach?search=100-387991",
+      "summary": "The 5-star Marina Inn at Grande Dunes is situated overlooking the Intracoastal Waterway and marina. Guests have access to a private beach with shuttle service and can use indoor and outdoor pools with hot tubs.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d84ebef7cedce2f7",
+      "title": "Marina Inn at Grande Dunes from $140. Myrtle Beach Hotel Deals ... - KAYAK",
+      "url": "https://www.kayak.com/Myrtle-Beach-Hotels-Marina-Inn-at-Grande-Dunes.152786.ksp",
+      "summary": "Compare prices and find the best deal for the Marina Inn at Grande Dunes in Myrtle Beach (South Carolina) on KAYAK. Rates from $140.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4f21333f20bc01cb",
+      "title": "Marina Inn At Grande Dunes Myrtle Beach",
+      "url": "https://marina-inn-at-grande-dunes.hotels-myrtle-beach.com/",
+      "summary": "Offering a sundeck, a sun terrace, and a golf course, and views of the sea, the 4-star Marina Inn At Grande Dunes Myrtle Beach is located a 14-minute walk from Carolina Opry Theater.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "874c223674313cc1",
+      "title": "Marina Inn At Grande Dunes Myrtle Beach, Myrtle Beach - new 2026 prices ...",
+      "url": "https://myrtlebeachresorts.org/marina-inn-at-grande-dunes/",
+      "summary": "Frequently Asked Questions \"What are the check-in and check-out times at Marina Inn At Grande Dunes?\" Check-in is at 16:00, and check-out is at 11:00. \"Is there a pet policy I should be aware of?\" Pets are not allowed at the hotel.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5bb3de5269a94976",
+      "title": "Marina Inn At Grande Dunes Reviews, Deals & Photos 2026 - Expedia",
+      "url": "https://www.expedia.com/Myrtle-Beach-Hotels-Marina-Inn-At-Grande-Dunes.h1489283.Hotel-Information",
+      "summary": "Located close to The Carolina Opry, Marina Inn At Grande Dunes provides a golf course, a marina, and a beach bar. Get out on the links at this resort and enjoy amenities such as a driving range, golf lessons, and a golf clubhouse.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "445ef3f4a2f47755",
+      "title": "MARINA INN AT GRANDE DUNES | Comfortable Stay in Myrtle Beach | Book ...",
+      "url": "https://us-myrtle-beach.us/hotel/marinainnatgrandedunes",
+      "summary": "Welcome to MARINA INN AT GRANDE DUNES in Myrtle Beach. Enjoy cozy rooms, excellent amenities, and convenient locations. Starting from 139US$/night with 510 guest reviews. Book your stay now!",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a196ce285357722c",
+      "title": "Marina Inn at Grande Dunes, Myrtle Beach (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/us/marina-inn-at-grande-dunes.html",
+      "summary": "On the marina, the Marina Inn at Grande Dunes is located 1.5 miles from the shores of Myrtle Beach. Features include free Wi-Fi, restaurants, and in-room spa services as well as 2 pools with a hot tub.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80d857b27e5ded4e",
+      "title": "Marina Inn Suites - Marina Inn at Grande Dunes",
+      "url": "https://marinainnatgrandedunes.com/accommodations/marina-inn-suites/",
+      "summary": "Explore Marina Inn Suites at Grande Dunes: Luxurious waterfront accommodations in Myrtle Beach with spacious layouts & upscale amenities.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0175b4b6e59f73f3",
+      "title": "New VW for Sale in Savannah, GA - AutoNation Volkswagen Savannah",
+      "url": "https://www.autonationvolkswagensavannah.com/new-inventory/index.htm",
+      "summary": "Browse our inventory of new Volkswagen cars and SUVs for sale in Georgia. Shop by model, body style, color, and more.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "37df4b7f30b9346e",
+      "title": "Personal Trainer Certification Online - IFA",
+      "url": "https://www.ifafitness.com/",
+      "summary": "Celebrating 30 years of excellence, the International Fitness Association (IFA) remains dedicated to empowering both industry professionals and health enthusiasts.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2ef10eddeb9caa7d",
+      "title": "Quest Diagnostics - Jacksonville Shoppes at River City - Employer Drug ...",
+      "url": "https://www.mystore411.com/store/view/1113196728/Quest-Diagnostics-Jacksonville",
+      "summary": "Quest Diagnostics - Jacksonville Shoppes at River City - Employer Drug Testing Not Offered at 510 Airport Center Drive in Florida 32218-4739: store location & hours, services, holiday hours, map, driving directions and more",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -2206,10 +2356,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9dc3cb4f930890f9",
-      "title": "whatsapp怎么没密码？ - 知乎",
-      "url": "https://www.zhihu.com/question/23150316",
-      "summary": "WhatsApp的密码就是两步验证码。 在设置里面，进去后，点击 账号，然后 两步验证，跟着提示操作就可以啦。",
+      "id": "09a5bcdd56438432",
+      "title": "Quest Diagnostics Jacksonville Shoppes at River City - Employer Drug ...",
+      "url": "https://www.chamberofcommerce.com/business-directory/florida/jacksonville/medical-laboratory/2003491073-quest-diagnostics-jacksonville-shoppes-at-river-city-employer-drug-testing-not-offered",
+      "summary": "Quest Diagnostics Jacksonville Shoppes at River City - Employer Drug Testing Not Offered located at 510 Airport Center Dr, Jacksonville, FL 32218 - reviews, ratings, hours, phone number, directions, and more.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -2232,10 +2382,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c500e91f60b4df7b",
-      "title": "WhatsApp的界面如何显示回原来的个人收藏和通讯录？ - 知乎",
-      "url": "https://www.zhihu.com/question/56306428",
-      "summary": "切换模式 登录/注册 WhatsApp WhatsApp的界面如何显示回原来的个人收藏和通讯录？ 我的what'sapp的界面底下的状态栏没有了个人收藏和通讯录，底下的状态栏只显示有动态，通话，相机，对话和设置，要如何操作才能显示回个人收藏和通讯录… 显示全部 关注者 7",
+      "id": "482fa221b61e9db8",
+      "title": "Quest Diagnostics Jacksonville Shoppes at River City - Employer Drug ...",
+      "url": "https://www.loc8nearme.com/florida/jacksonville/quest-diagnostics-jacksonville-shoppes-at-river-city-employer-drug-testing-not-offered/6498531/",
+      "summary": "Quest Diagnostics Jacksonville Shoppes at River City - Employer Drug Testing Not Offered at 510 Airport Center Dr, Jacksonville FL 32218 - hours, address, map, directions, phone number, customer ratings and reviews.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -2258,296 +2408,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "37e7fbecf5456719",
-      "title": "World of Solitaire",
-      "url": "https://worldofsolitaire.com/",
-      "summary": "Play over 100 Solitaire games for free. Klondike, FreeCell, Spider and more!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cfc4c691272abc79",
-      "title": "World of Solitaire",
-      "url": "https://worldofsolitaire.com/de/",
-      "summary": "Spielen Sie mehr als 100 Solitaire-Spiele kostenlos. Vollbild, kein Download oder Registrierung erforderlich. Klondike, FreeCell, Spider und mehr.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c648cd6edf2936db",
-      "title": "World of Solitaire",
-      "url": "http://legacy.worldofsolitaire.com/",
-      "summary": "Play over 50 Solitaire games including Klondike, Spider and FreeCell. Totally free! Beautiful graphics, stats, leaderboards, unlimited undos and more!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "93aa1cf07faae1fa",
-      "title": "World of Solitaire",
-      "url": "https://worldofsolitaire.com/tr/",
-      "summary": "100'den fazla Solitaire oyunu ücretsiz oyna. Tam ekran, indirme veya kayıt gerekmiyor. Klondike, FreeCell, Spider ve dahası.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cbb22b37410e390a",
-      "title": "World of Solitaire",
-      "url": "https://worldofsolitaire.com/fr/",
-      "summary": "Jouez à plus de 100 jeux de Solitaire gratuitement. Plein écran, pas d'inscription ou de téléchargement requis. Klondike, FreeCell, Spider et plus encore.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "021dcbeb7d73f7bb",
-      "title": "World of Solitaire",
-      "url": "https://worldofsolitaire.com/nl/",
-      "summary": "Speel gratis meer dan 100 patience-spellen. Volledig scherm, downloaden of registreren niet nodig. Klondike, FreeCell, Spider en meer.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c5fa6508df0e88e6",
-      "title": "World of Solitaire",
-      "url": "https://worldofsolitaire.com/sv/",
-      "summary": "World of Solitaire har över 50 solitaire-spel, inklusive Spider, Klondike, FreeCell och Pyramid. Ett 100 % gratis solitaire-spel online med stöd för ångra, flera kortlekar, statistik, anpassade bakgrunder och mer. Skapad med HTML5 och JavaScript gör att denna hemsida fungerar överallt! Din webbläsare har inte JavaScript aktiverat.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f85b5ca7bc747494",
-      "title": "World of Solitaire",
-      "url": "https://worldofsolitaire.com/nb/",
-      "summary": "Spill flere enn 100 gratis kabal-spill. Fullskjerm, behøver ingen nedlasting eller registrering. Klondike, FreeCell, Spider og flere.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4d3e117c61ad9bfa",
-      "title": "World of Solitaire",
-      "url": "https://worldofsolitaire.com/ro/",
-      "summary": "World of Solitaire conține peste 50 de jocuri solitaire, inclusiv Spider, Klondike, FreeCell și Pyramid. Un joc solitaire online, 100% gratuit, cu anulare, pachete multiple, statistici, fundal personalizat și multe altele. Creat cu HTML5 și JavaScript, acest website online funcționează oriunde! Browserul tău web nu are JavaScript activat.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ed7051e4ef019bd3",
-      "title": "World of Solitaire",
-      "url": "https://worldofsolitaire.com/bg/",
-      "summary": "Играйте 100+ игри за пасианс безплатно. Цял екран, не е необходимо изтегляне или регистрация. Klondike, FreeCell, Spider и други.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dd5fdd86ceeabd91",
-      "title": "Álvarez Web-based Cultural Lesson: Restaurants & Food (TESL/TEFL)",
-      "url": "http://iteslj.org/Lessons/Alvarez-Restaurant.html",
-      "summary": "____ You need not make reservations to dine at a restaurant on weekends. ____ Men usually sit down at the table before women do. ____ People ask for permission before leaving the table. ____ The host serves himself first and then he serves his guests. ____ It is considered polite to leave the table before everyone else is done.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fb355cf23aca84fb",
-      "title": "做外贸，用WhatsApp还是Facebook？ - 知乎",
-      "url": "https://www.zhihu.com/question/2024892517661914205",
-      "summary": "2. WhatsApp：负责“后端成交” 高效跟进：拿到客户电话后，用 WhatsApp Business 发送产品视频、报价单。 它的打开率远高于邮件，适合快速确认细节。 维护关系：利用“广播列表”功能，给老客户群发新品通知，维护复购。 信任背书：在印度、南美、中东等地区，WhatsApp 是默认的商务工具，使用它 ...",
+      "id": "2df040020ebaaf1c",
+      "title": "Quest Diagnostics Jacksonville Shoppes at River City - Employer Drug ...",
+      "url": "https://reviews.birdeye.com/quest-diagnostics-jacksonville-shoppes-at-river-city-employer-drug-testing-not-offered-176922158638869",
+      "summary": "How is Quest Diagnostics Jacksonville Shoppes at River City - Employer Drug Testing Not Offered rated? Quest Diagnostics Jacksonville Shoppes at River City - Employer Drug Testing Not Offered has a 4.2 star rating with 243 reviews.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -2570,12 +2434,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4fd9f20f73b93a07",
-      "title": "国内如何使用whatsapp？ - 知乎",
-      "url": "https://www.zhihu.com/question/2052047431735550018",
-      "summary": "国内使用 WhatsApp，主要解决两个问题： 网络环境 + 手机号码注册。 可以按下面这个流程： 1、 准备手机 苹果手机或者原生安卓手机都可以，正常的国行手机也能用，没必要为了 WhatsApp 专门买海外版手机。 2、准备稳定的跨境网络 WhatsApp 在国内网络环境下无法直接正常使用，所以首先需要解决网络 ...",
+      "id": "f376543d1973e18c",
+      "title": "Resort Myrtle Beach - Marina Inn at Grande Dunes",
+      "url": "https://marinainnatgrandedunes.com/",
+      "summary": "Serve up some fun and get your heart rate pumping at the Grande Dunes Tennis Club, whether you’re enjoying a leisurely game with friends or leveling up your skills.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2596,12 +2460,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "23998ce0892a3b93",
-      "title": "小米手机通话录音保存在哪里？-百度经验",
-      "url": "https://jingyan.baidu.com/article/e8cdb32bf94d2c37052bad05.html",
-      "summary": "小米手机通话录音保存在哪里？,在一些重要的电话里面，我们会进行通话中的录音的。但是录音之后的文件却是找不到了的。等于白录了，因此是不少人为之烦恼的。那么到底录音的文件在哪里的呢？怎么找到它的呢？",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "9a4f87b2f9fb1836",
+      "title": "Schedules - Sonoma-Marin Area Rail Transit",
+      "url": "https://www.sonomamarintrain.org/schedules-fares",
+      "summary": "Ferry connections marked with an asterisk * indicate a connection with less than a 10-minute transfer time, and are not recommended for passengers walking between the train station and Larkspur Ferry Terminal. SWIPE LEFT to see more departure times if viewing on a smart phone. WEEKDAY SOUTHBOUND A.M. ... WEEKDAY SOUTHBOUND P.M. ... WEEKDAY ...",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2622,12 +2486,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "09ac59ff14fce2e7",
-      "title": "怎样在whatsapp中加好友-百度经验",
-      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
-      "summary": "怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。",
+      "id": "21682edc8b1caf35",
+      "title": "Southwest Airlines Network and News - 2026 - Page 33 - Airliners.net",
+      "url": "https://www.airliners.net/forum/viewtopic.php?t=1507119&start=1600",
+      "summary": "Re: Southwest Airlines Network and News - 2026 #25430211 BY Runway765 - Wed Sep 02, 2026 2:13 am",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2505c6fdc38571a4",
+      "title": "SUC vs GUA - esdocs.com",
+      "url": "https://esdocs.com/doc/1434958/suc-vs-gua",
+      "summary": "No category SUC vs GUA FEDERACION NACIONAL DE FUTBOL DE GUATEMALA Afiliada a la FIFA, CONCACAF y UNCAF INFORME DEL ÁRBITRO COMISION DE ARBITROS Y DEPARTAMENTO DE ARBITRAJE ARBITRO: Luis Roberto Miranda Yanes A. ASISTENTE No. 1: Jaime Arana A. ASISTENTE No. 2: Juan Caal CUARTO OFICIAL: Ever López EQUIPO A: CSD Suchitepequez EQUIPO B: Gustatoya",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2648,12 +2538,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e2d5cedda1478c9e",
-      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
-      "url": "https://www.zhihu.com/question/2031458671385911868",
-      "summary": "只是买个plus不想保号但是又想稳定一些的，whatsapp方案吧。 这是个磨时间的活，首先去herosms之类的接码平台选个海外手机号接码（不过很难接到），区域跟运营商都要筛，然后慢慢等，验证码不一定那么好出，20分钟的时限最后几分钟出来都有可能。 一直磨，直到能用短效手机号注册whatsapp，将 ...",
+      "id": "3746d946cf6cd7d1",
+      "title": "Sur Vs Gua | Nations League | Concacaf",
+      "url": "https://www.concacaf.com/competitions/nations-league/matches/2affd0a69cab43a7838c57cb7d0fcde9/sur-vs-gua",
+      "summary": "Full match details for Sur Vs Gua in the Nations League — lineups, score and match updates on Concacaf.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "XREAL xbx a01+",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2674,12 +2564,169 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ad0dbf3243ddec7f",
-      "title": "美国人用什么聊天软件？ - 知乎",
-      "url": "https://www.zhihu.com/question/309660435",
-      "summary": "1）iMassage，只要是苹果用户直接通过网络即可，不收取短信费用，而且美国wifi非常普及，基本上在建筑物内都有wifi信号。而且如果是Xfinity的用户，还可以使用他们的公共wifi。 2）Whatsapp，我感觉像是WeChat的原型，界面非常相似。功能上更加简化。不过似乎年轻人用得比较多。 以下是主要界面：聊天 ...",
+      "id": "d01069a0ea0aaed6",
+      "title": "Tamarindo (drink) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamarindo_(drink)",
+      "summary": "Tamarindo, also commonly known as agua de tamarindo, is a non-alcoholic beverage made of tamarind, sugar, and water. The tamarind plant originated in Africa but has since been widely distributed on a global scale and is commonly found in tropical regions. [1] The tamarind plant produces fruit pods containing pulp and seeds. [2] Tamarind is a versatile ingredient that is used for a variety of ...",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1dc7a5089c2587ca",
+      "title": "The Southwest Airlines Community",
+      "url": "https://community.southwest.com/.well-known/apple-app-site-association",
+      "summary": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appIDs\": [ \"62J96EUJ9N.com.salesforce.chatter\", \"4PZ44KB26X.com.salesforce.internal.chatter2\", \"LK3TU44H4W.com ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4ae71869e31fb37",
+      "title": "United States Vs Guatemala | Men's Under 20 | Concacaf",
+      "url": "https://www.concacaf.com/competitions/under-20-championship/matches/247f981a337f4346b6462fb5516fca66/united-states-vs-guatemala",
+      "summary": "Full match details for United States Vs Guatemala in the Men's Under 20 — lineups, score and match updates on Concacaf.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "57650539e60dd29f",
+      "title": "United States vs. Guatemala - Final Score - August 04, 2026",
+      "url": "https://www.foxsports.com/soccer/concacaf-u20-championship-usa-vs-guatemala-aug-04-2026-game-boxscore-962085",
+      "summary": "Live coverage of United States vs. Guatemala game on FOX Sports including live score, highlights, updated stats, odds and more - played on August 04, 2026.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6b53580367a61017",
+      "title": "USC vs. Ga. Southern - September 06, 2025 - Bleacher Report",
+      "url": "https://bleacherreport.com/game/georgia-southern-football-vs-usc-football-2025-9-6-15-30",
+      "summary": "Georgia Southern vs. USC live score, play-by-play, stats and highlights for the September 6 COLLEGE-FOOTBALL game on Bleacher Report.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f93852002f64066d",
+      "title": "Use passwords & passkeys across your devices - Computer - Google ...",
+      "url": "https://support.google.com/accounts/answer/6197437?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "summary": "\"Offer to save passwords and passkeys\" is on by default, and you can turn it off or back on. If you’re an Enterprise user, your admin may manage this setting for you. On your computer, open Chrome. At the top right, select More Passwords and autofill Google Password Manager. On the left, select Settings.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e89f7a641db42c5b",
+      "title": "Volkswagen Dealership in Savannah , GA | AutoNation",
+      "url": "https://www.autonation.com/dealers/volkswagen-savannah-ga",
+      "summary": "Explore the best Volkswagen cars at AutoNation Volkswagen Dealership in Savannah , GA. Discover new, certified pre-owned, and used Volkswagen vehicles, exceptional service, and financing options today!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
