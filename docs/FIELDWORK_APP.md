@@ -33,9 +33,10 @@
 
   <section class="fieldwork-app__handoff">
     <h2>Submission status</h2>
-    <p><strong>Anonymous direct submission is not enabled yet.</strong> The app is functional for data collection, local drafts, privacy-preserving serial fingerprinting, and structured export. GlassesResearch will not advertise Fieldwork publicly until the anonymous submission endpoint is live.</p>
+    <p><strong>Anonymous direct submission is not enabled yet.</strong> The app is functional for data collection, local drafts, privacy-preserving serial fingerprinting, installability, and schema-valid structured export. GlassesResearch will not advertise Fieldwork publicly until the anonymous submission endpoint is live.</p>
   </section>
 </div>
 
 <script src="../javascripts/fieldwork-app.js"></script>
+<script src="../javascripts/fieldwork-export.js"></script>
 <script src="../javascripts/fieldwork-pwa.js"></script>
