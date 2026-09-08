@@ -24,7 +24,7 @@ These are maintained as public, evolving lineage chapters:
 - [Meta smart glasses](META.md) — Ray-Ban and Oakley smart-glasses generations built around Meta's wearable platform.
 - [Google Glass](GOOGLE_GLASS.md) — Explorer Edition through Enterprise Edition 2; a foundational corporate/product lineage spanning consumer experimentation and enterprise assisted reality.
 - [Vuzix](VUZIX.md) — corporate lineage split into the Z100 phone-peripheral branch and standalone Android wearable-computer branches including M400/M4000, Blade 2, Shield, and LX1.
-- [XREAL / Nreal](XREAL.md) — Nreal/XREAL personal-display and spatial-computing glasses.
+- [XREAL / Nreal](XREAL.md) — Nreal/XREAL personal-display and spatial-computing glasses, including xbx a01+ and paid-reservation AURA.
 - [Rokid](ROKID.md) — corporate lineage spanning integrated camera/AI eyewear, enterprise Glass products and the Air/Max host-driven display/spatial branch, with bundle identities kept separate from eyewear-model count.
 - [RayNeo / TCL / Thunderbird](RAYNEO_TCL.md) — corporate/product lineage spanning NXTWEAR, Air, X-series, V3, iO and GT branches across changing TCL/Thunderbird/RayNeo branding.
 - [Epson Moverio](EPSON_MOVERIO.md) — standalone Android, tethered-display and industrial Moverio branches, with industrial smart headsets routed to the adjacent catalog.
@@ -35,6 +35,8 @@ These are maintained as public, evolving lineage chapters:
 - [Brilliant Labs population ledger](BRILLIANT_LABS_POPULATION.md) — model-population and evidence propagation record for the lineage.
 - [Snap Spectacles](SNAP.md) — camera-glasses and later AR Spectacles generations.
 - [Solos AirGo](SOLOS.md) — AirGo audio/camera glasses and developer ecosystem.
+- [Everysight Maverick](EVERYSIGHT.md) — Maverick Sport, Maverick AI and Maverick AI Pro, including paid-campaign state, BEAM optics, GazeIntent and SDK-control boundaries.
+- [ActiveLook / MicroOLED](ACTIVELOOK.md) — open-API Light AR platform spanning ENGO, Julbo EVAD-1, Cosmo Vision and ActiveLook Enterprise eyewear.
 
 ### Completed lineage evidence packets
 

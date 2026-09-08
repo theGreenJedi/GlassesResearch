@@ -6,6 +6,7 @@ robots, authentication, or transient network failures prevent fetching it.
 """
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor
 import datetime as dt
 import hashlib
 import html
@@ -19,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "research" / "discovery-sources.json"
 OUTDIR = ROOT / "research" / "discovery-candidates"
 UA = "GlassesResearch-DiscoveryWatch/1.0 (+https://glassesresearch.org/)"
+MAX_WORKERS = 8
 
 
 def clean(value: str) -> str:
@@ -49,6 +51,12 @@ def probe(url: str) -> tuple[str, str, str | None]:
         return urllib.parse.urlsplit(url).netloc or url, "Configured durable discovery watch; fetch unavailable during this run.", str(exc)[:300]
 
 
+def probe_task(task: tuple[str, str]) -> tuple[str, str, str, str, str | None]:
+    channel, url = task
+    title, summary, error = probe(url)
+    return channel, url, title, summary, error
+
+
 def main() -> int:
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     watch_sets = {
@@ -61,9 +69,15 @@ def main() -> int:
     day = now.date().isoformat()
     candidates: list[dict] = []
     errors: list[dict] = []
-    for channel, urls in watch_sets.items():
-        for url in urls:
-            title, summary, error = probe(url)
+
+    tasks = [(channel, url) for channel, urls in watch_sets.items() for url in urls]
+    # Watches are independent network probes. Run a bounded number concurrently so adding
+    # durable sources does not make the audit scale as N × timeout. executor.map preserves
+    # configuration order, keeping generated artifacts deterministic.
+    worker_count = max(1, min(MAX_WORKERS, len(tasks)))
+    with ThreadPoolExecutor(max_workers=worker_count) as executor:
+        results = executor.map(probe_task, tasks)
+        for channel, url, title, summary, error in results:
             candidates.append({
                 "id": item_id(url, channel),
                 "title": f"Durable {channel.replace('_', ' ')}: {title}",
