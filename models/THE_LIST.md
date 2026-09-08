@@ -1,8 +1,8 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-09-07
+**Edition:** 2026-09-08
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 231 distinct purchasable models or explicitly marketed product generations
+**Count:** 236 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -398,6 +398,19 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0231 | Baidu / Xiaodu | Xiaodu AI Glasses Pro | 2025 | current/region-limited | camera/audio AI glasses | manufacturer retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://dumall.baidu.com/product/902971303493639) |
 | GLS-0232 | n+ / Volkswagen licensed | Volkswagen Smart Glasses | 2026 | preorder | sport/navigation HUD glasses | manufacturer preorder/accessory | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-07_COMPETITOR_SWEEP.md); [source](https://smart-bike.net/collections/accessories) |
 
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0233 | Almer | Arc 2 | 2024 | current/enterprise | binocular AR smart glasses | enterprise subscription/order | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-08_ARCOMPARE_ADMISSIONS.md); [source](https://almer.com/almer-home-armazing2/) |
+| GLS-0234 | DigiLens | ARGO | 2023 | current/enterprise | standalone enterprise AR smart glasses | enterprise/deployment procurement | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-08_ARCOMPARE_ADMISSIONS.md); [source](https://www.digilens.com/argo/) |
+| GLS-0235 | Dreamworld | Dream Glass Flow | ≤2026 | current | tethered AR/XR display glasses | manufacturer order | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-08_ARCOMPARE_ADMISSIONS.md); [source](https://www.dreamworldvision.com/pages/root0) |
+| GLS-0236 | Dreamworld | Dream Glass Lead Pro | ≤2026 | current | AR smart glasses | manufacturer order | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-08_ARCOMPARE_ADMISSIONS.md); [source](https://www.dreamworldvision.com/pages/root0) |
+| GLS-0237 | INAIR | INAIR 2 Pro | ≤2026 | current | XR display glasses | manufacturer retail/set | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-08_ARCOMPARE_ADMISSIONS.md); [source](https://inairspace.com/products/inair-2-pro-set) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -410,7 +423,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 231-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 236-row count:
 
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
