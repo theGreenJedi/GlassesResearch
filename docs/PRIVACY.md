@@ -15,6 +15,22 @@ The project website is intentionally simple:
 
 We preserve knowledge, not attention.
 
+## Fieldwork
+
+Fieldwork has a deliberately short public privacy promise:
+
+> **Anonymous is welcome. Attribution is optional. Raw serial numbers are never retained.**
+
+A contributor may submit anonymously, under a pseudonym/handle, or with a public name. Anonymous and attributed submissions are evaluated under the same evidence rules.
+
+If a contributor voluntarily enters a device serial number, Fieldwork uses it only to derive a one-way device fingerprint for duplicate-device detection. The raw serial must be discarded after fingerprint generation and must never be stored in the research database, analytics, logs, exports, public pages, issue bodies, or contributor profiles. The duplicate-check fingerprint is not a public identifier and must not be used for behavioral profiling.
+
+Model number and other non-unique hardware identity may be retained because they are research metadata. Contributors should not include unnecessary personal information in free-form responses or evidence.
+
+Fieldwork Completion measures how much of the questionnaire was answered. It does not measure contributor credibility and must not become a hidden reputation or behavioral score.
+
+If Fieldwork's data practices materially change, the public promise and this section must be updated before the broader collection begins. Privacy changes are product-policy changes, not silent implementation details.
+
 ## Verified Research Alerts and subscriber email addresses
 
 Visitors may voluntarily subscribe to **Verified Research Alerts** and choose how often they want to receive published GlassesResearch research: **as verified, daily, weekly, monthly, or annually**.
