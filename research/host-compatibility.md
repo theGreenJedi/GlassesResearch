@@ -2,7 +2,7 @@
 
 Smart-glasses compatibility questions often look simple—"will these work with my phone/laptop/console?"—but the answer depends on transport, power, operating-system support, adapters, vendor software and the exact glasses generation.
 
-GlasssesResearch records those relationships as structured evidence rather than producing one-off search-targeted articles.
+GlassesResearch records those relationships as structured evidence rather than producing one-off search-targeted articles.
 
 Machine-readable records: [`data/host-compatibility.json`](../data/host-compatibility.json)
 
