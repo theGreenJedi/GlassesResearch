@@ -14,11 +14,12 @@ Start with what you need, then narrow the catalog by practical requirements inst
 
 ### Research a device
 
-Go from a model to the evidence behind it: specifications, Report Cards, source-backed research, lineage, companion apps, and cloud dependence.
+Go from a model to the evidence behind it: specifications, Report Cards, source-backed research, lineage, companion apps, host compatibility, and cloud dependence.
 
 - [**Browse every canonical smart-glasses model**](../models/THE_LIST.md) — the cross-vendor eyewear index, past and present.
 - [**Read the Report Cards**](REPORT_CARD.md) — Core Report Cards for every canonical model, plus deeper Extended Research.
 - [**Open the model research chapters**](../models/README.md) — source-backed device and family dossiers.
+- [**Check host compatibility**](HOST_COMPATIBILITY.md) — evidence-backed phone, laptop, handheld, console, adapter, video-transport, power, and operating-mode compatibility.
 - [**Check what survives if the vendor or cloud disappears**](SURVIVAL_MATRIX.md) — app, account, AI-service, and cloud-independence research.
 
 ### Build, hack, or repair
@@ -59,6 +60,7 @@ The task entrances above are the fastest way in. Everything remains available be
 - [**Glasses Finder & Compare**](COMPARISON_ENGINE.md) — filter the full catalog by practical needs, buying routes, verified price ceilings, and Report Card minimum scores; shortlist two-to-four candidates, compare them, then open deeper model evidence.
 - [**Browse all smart-glasses models**](../models/THE_LIST.md) — the cross-vendor eyewear index, past and present.
 - [**Start by what you need**](START_BY_NEED.md) — begin with use cases instead of brands.
+- [**Host Compatibility**](HOST_COMPATIBILITY.md) — structured transport, power, adapter, software, and operating-mode evidence for glasses/host combinations.
 - [**Buyer guide**](../buyers/BUYER_AND_OPENNESS_GUIDE.md) — ownership, privacy, offline use, repairability, prescription options, and vendor lock-in.
 
 ### Follow, cite, and reuse
