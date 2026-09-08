@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-08T09:09:28.191172+00:00`
+Generated: `2026-09-08T09:49:53.875080+00:00`
 
-- Intake files inspected: **167**
-- Candidates retained in this review window/history: **4267**
+- Intake files inspected: **169**
+- Candidates retained in this review window/history: **4358**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 1727
+- `adjacent_radar`: 1741
 - `catalog_review`: 57
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 277
-- `rejected_noise`: 2100
+- `needs_editorial_verification`: 281
+- `rejected_noise`: 2173
 - `source_monitor`: 14
 - `source_review`: 61
 - `watching`: 27
@@ -52,6 +52,7 @@ Generated: `2026-09-08T09:09:28.191172+00:00`
 | high | needs_editorial_verification | direct | [Meta AI Glasses: Ray-Ban Meta & Oakley Meta](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta faces fresh privacy lawsuit over AI smart glasses recordings - Indian Television Dot Com](https://news.google.com/rss/articles/CBMioAFBVV95cUxNTHFUNmNDX1c2bXVmVFlnQU92WGdINExHcEw3Z0xtay1oNjNlU2tNWjVQSng3ZS1lVW1HSkZoU0JJQjR5YmZER01IQnM2ZEZtcTdSRHZrOVRNRVNTNWkzQ0JCSmtFTTVGY3VDcmJ6UW1VSGJRVG5UWEJhZlB2X3NNMUM3Sld2eUhrWnBCV1BJUlRaeUh6c2dpT0tHWTFYUG1a?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta Store: Shop AI Glasses, Meta Glasses & Quest Headsets](https://www.meta.com/) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Meta: Ray-Ban Meta - amazon.com](https://www.amazon.com/stores/Meta/page/EE87ABE2-DC7A-4BC0-9C8D-CCC8C469277C) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta AI Glasses: New Styles & Colors](https://www.meta.com/ai-glasses/ray-ban-meta/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta glasses update makes them more useful on the go - androidcentral.com](https://news.google.com/rss/articles/CBMirwFBVV95cUxQSHBaVGdEUjhCUGpjanNTZk00cDQ0MEZ0MlJtS3A4WmJlX2UxdjkyRVo4QnUtOEJaaEROVUhrc2Y2LVpHZ2NFaWhsSnI3RU9waUdRd1RhblhWRHQtY0p3TGhuYUVWdk5NcHYwaFE2SUt2QVhxbUl0UWNvb0ZUQkFqbW5JZWxpVjV1V3lRMTZtU3J1ajJ6akF2aXJDNWt3WDJNNDROS3dvaFVXSzc0dEVF?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [RayNeo GT Series and iO Launch - DISCOUNTS - YouTube](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5MdlNSanBnbllkSGNFWHFvQ3VTREdnN1V1bTN5R2RyY2ZFbDh6ZUpBWnRBUGJmT1RUc29oSWhRS21hZENhaTM4bFI3bWNnaE9lQkpGOFp2MkhGQnVw?oc=5) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
@@ -128,6 +129,7 @@ Generated: `2026-09-08T09:09:28.191172+00:00`
 | normal | needs_editorial_verification | direct | [XREAL AURA PASS – XREAL US Shop](https://us.shop.xreal.com/collections/aura-pass-1) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [XREAL Aura Price and Release Date: Expected Fall Launch - Geeky Gadgets](https://www.geeky-gadgets.com/xreal-aura-review/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [XREAL Aura Smart Glasses Hands-on Demo and Features - Geeky Gadgets](https://www.geeky-gadgets.com/xreal-aura-smart-glasses-demo/) | reachable (200) | research_news_review, report_card_evidence, deep_research |
+| normal | needs_editorial_verification | direct | [XREAL CA Shop](https://ca.shop.xreal.com/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [XREAL One Pro \| Wear Every World](https://www.xreal.com/us/one-pro) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [XREAL xbx a01+ Prescription Lenses – XREAL US Shop](https://us.shop.xreal.com/products/xreal-xbx-a01-prescription-lenses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [XREAL Xbx A01+ Review 2026: Budget AR Glasses Tested - Geeky Gadgets](https://www.geeky-gadgets.com/xreal-xbx-a01-plus-review-2026/) | reachable (200) | research_news_review, report_card_evidence |
@@ -160,6 +162,7 @@ Generated: `2026-09-08T09:09:28.191172+00:00`
 | normal | needs_editorial_verification | direct | [DMES SYX31 AI Translation Smart Glasses - TikTok Shop](https://shop.tiktok.com/us/pdp/dmes-syx31-ai-translation-smart-glasses-real-time-translations/1732031990713651562) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Does our privacy law protect us from camera glasses? - The Press](https://news.google.com/rss/articles/CBMilgFBVV95cUxPZjVSWnpyOFg5NzBac0xWdEM1SkVIZFEySHY2X2xRemI5cWl5empTVmIwd3R4WVlZOW15ZXJMY0VIaTdVMHJaNEkwVXBkZGpPUC02ZDYtRlplcERFNl85RjlGemJFYnNvaTB2emVoYlBmQ01tbDM3NmRoRjNNVXgyYkJzRTlQeXVrbXNSUnZXMUxCR2dGM3c?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Electrochromic Smart Glasses with 8MP AI Camera and Bluetooth](https://shop.tiktok.com/us/pdp/electrochromic-ai-smart-camera-glasses-8mp-full-array-mic/1732273445429220304) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [engo Eyewear \| Connected glasses for serious athletes](https://engoeyewear.com/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Federal government signals local councils may restrict smart glasses use amid draft privacy law release - SSBCrack](https://news.google.com/rss/articles/CBMiygFBVV95cUxOajVDdXRsLW8xVmN1bkttVEN4dTFhOTU1elp1dmZiZ2w2YnZfMXdtN25tcmlUTTVDaG9KMjZlQllOSzdNVTdLaGVTUHRWcW5sMnQzU2FrbU9OOG1jb2ctal9mRWQ2aG9WbzE1QWhPbnd4WUthaFVfOE5YNE52eHR2emM3UHpNLWxoMHdteVUzdnFEdFJnM25WNGVzOWRqRU56alpoWm82ZWNTV25QSE94Z0FmMlFQdHRoRHdFV1Y3MVdIMWJLX050QmR3?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Federal Government Unveils IDLock Service And Sweeping Privacy Law Changes Targeting Smart Glasses And AI - smbtech.au](https://news.google.com/rss/articles/CBMiygFBVV95cUxNNm9UWlZpNHlnMUU2SUJOMzI5bnlPaGM3N0VPZTdpMzg1SEFMcndwMHVvNTZDRnVwQ0xEcXJFek8zMWdqUGhnZ3ZpWXR5ME12alRSYnUxY0pGRWptSmJYV1lIaHdGMjVwaVVWcTA4c2dCN1kzQ3JSa1E2RXk3NDVacHF2MkxaaTRKUGtJU08tUGRiSm5OdnExUFlrak9sVEtESmxFWFAwTTlFWDYybWtkVEhIeVFGTi1zcFBBYm1mSVR6ZHg0ek5LRUV3?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [How do you know Meta AI glasses are recording? New privacy change targets hidden filming - The Statesman](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQY0l6eGhfZlNScm9FREsyZllCVWd6dWJyZ0s3Nmg4aHVNcEliTkFLU3JRWEJoQVJqUEo5UlVGVE1iSm56bXBHWFRQeFNSX0ZHYVJaWFNabzhYVUZ6OHJ6MUdYTHB4bnJVT2Q3SUlIb2Iya3BXZk9IaDd3dUFaMFpvMEdVLWVGS18yUXI3ekdpcHRtMTVmZG4xVFliRzZUVm9uLTdkVERoYTd5S2k5Sk9YRWhkUzgyd0JVaHNtOFQ4NUJKTEpSbWw4bXpJM01XVGNwa09iRU1NX21EN3fSAeABQVVfeXFMTnJXRzlDWHFxRlVpMkx6RFJIaWpabXZueGpaOXZMZFNxZUxQYzJQdGNpRGdMLVd1N3plTEdJRVVZeWxMTUMxUlQ4WXBlVlFkVjZZdmtTc1hxRzdTRURLN3NIcjZfaEhOMWdtRHNpUEk2MmRwMkdOM0pNdXI4Mk1NWXYyVnFjMmpuWFRFM3BmRFFidjFLYzIzZmM4Y3k1bF9naEdLTzdlV3FBRjM1WWU5QmhOSW5DMnJabWdISjJKcjM5ay1oY0dRSzNOWUtRQ0NrdHZNemhibFNTQnNZdTJxdy0?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -269,9 +272,6 @@ Generated: `2026-09-08T09:09:28.191172+00:00`
 | normal | needs_editorial_verification | direct | [Use of AI Glasses by Employees at Nursing Homes Raises Privacy Concerns - obrag.org](https://news.google.com/rss/articles/CBMinwFBVV95cUxNVGkyVXQwOC1fRzVxQXo4YWJtTnFmakR4ZUd3dHlOY2ZRV2pDOFdiejlzMlB6VE9YQzV6QWhUVDVhZk1aNHk2cjF6UmZaU1JSb21Tc2thQ1dPM0F4akQyMkNoRVlxaHBXd2NXREh5Z0UxZlczWmZ6UXI5RkJadlFPTFpuQVJfM01YbmlWbVo2LVBXOGtoSFNyRl8xWWQyQW8?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [VIDEO: Privacy concerns over camera glasses - ABC News & Headlines – Australian Broadcasting Corporation](https://news.google.com/rss/articles/CBMijgFBVV95cUxQUENrdm9VR2hzWUpCd0ZHVGZqUU91ODN1RTNVNjhhOWtkN1FMV3ZHdVZ4MFpYZFZveGYxWTU4SkFwTHVOTHlfV1JhSS00R0Ytalh5Z2hmTXF0NkswU3ljSExsVW5LaENDVFNtSEdsR2h4QXl3Q3ZWeGl6RTBZUVhMdktTSDhVaUF3M3JkSHlR?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Visually impaired veterans receive AI glasses in D’Iberville through Meta, Blinded Veterans Association partnership - WLOX](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYWEtZi1nbWhmbXhEWlJaUGJLd1kzUlRmUDFiVmp2ZWVQTy05Ml9rLWtLR1VmS0ZxeFJhY185cEt3WTRGQkR5Vm1LX1ZaVVlEa2pIRDlScVlhbDNEYVNaVjl3VVdqUnZ1R2UtTDlKM0pZdWJGcEJQX3FBMl9TTXVIYVd3WVIzM0VaR2MwY0pFeWNvM2drRkRnTzE1NmVuckZ1aFRFenpaeDJoSDNHN3dlaHhpQ2tiYnFRLVBxQk42WFl0SkhsbmVYbDEwRE1oMjc1Y3JUa3Atb0QyTXc?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Visually impaired veterans receive AI glasses in D’Iberville through Meta, Blinded Veterans Association partnership - WLOX](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdEJWaVdwNzVfVjVyUm45LTRYRXBfamVQSlczZVJnOURIUl9xam9aNlEyd0dqX1ZXME13LWVRRjI1bjRiOFFoLXh4NFFTRDNqY0dmWHlyOHJVd19ZRTlQN2Z3UU5MQ3ZpMThiSUh2VWVXZjN5clRnVUp0MWVCSV9wMmFNN19VTTVEcy1obFhQSGI3ZHE3TkFZX2Z1b2ZMVTR4VVNfbDloM3hJNkhfMXQ2VU5FRmpQMi1YV3lTTE40aW0taGFIaHRNbjBqUlhZS1prbkZoX1NRVFBSMWRqYkRqY3g0Zw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Visually impaired veterans receive AI glasses in D’Iberville through Meta, Blinded Veterans Association partnership - WLOX](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYWEtZi1nbWhmbXhEWlJaUGJLd1kzUlRmUDFiVmp2ZWVQTy05Ml9rLWtLR1VmS0ZxeFJhY185cEt3WTRGQkR5Vm1LX1ZaVVlEa2pIRDlScVlhbDNEYVNaVjl3VVdqUnZ1R2UtTDlKM0pZdWJGcEJQX3FBMl9TTXVIYVd3WVIzM0VaR2MwY0pFeWNvM2drRkRnTzE1NmVuckZ1aFRFenpaeDJoSDNHN3dlaHhpQ2tiYnFRLVBxQk42WFl0SkhsbmVYbDEwRE1oMjc1Y3JUa3Atb0QyTXfSAe8BQVVfeXFMT09NYzZQU05TZlZJRVY1LWxDV2F3bUsxY1RXRUxTcFlQOWIwN0RGcTNtZVhIRHpuZGRyb3hTR25uUGFLbTU0WTRSeGpFNmZSU0xqY3FNejF6SkNSaVVwRWZuNWNybnJVX2d6RDZwZGJSQjdWU2RBMzhNX0d5ekFEczJneWxwbTFTTVFYOFQwbUJuSU0wVTVjem0zSTdtNDZtX0hxdE9pc3NFUnIyRmFOTzRYYzFJZjlEb25oeTFQZV9XNTVkMmJ2U1NSODRnZFNqc3dXNDdOSVFYdExSbXpWa1lIRklhY3R6eDJOLV92aGc?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [VITURE Pro 2 XR Glasses](https://www.viture.com/product/viture-pro-2-xr-glasses) | reachable (200) | research_news_review, research_optics |
 
 ## Meaning of states
 
