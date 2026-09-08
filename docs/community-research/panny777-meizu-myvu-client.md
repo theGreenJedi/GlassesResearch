@@ -23,7 +23,6 @@ The repository describes the project as hardware-verified against one pair of gl
 
 ## Related GlassesResearch material
 
-- [MYVU / StarV lineage research](/models/PROFILES_2026_09_03_MYVU_STARV/)
-- [GLS-0167 — MYVU Air / StarV Air](/models/catalog/gls-0167/)
+- [GLS-0167 — MYVU Air / StarV Air lineage research](/models/PROFILES_2026_09_03_MYVU_STARV/)
 - [Community investigation note](https://github.com/theGreenJedi/GlassesResearch/blob/main/research/investigations/COMMUNITY_MYVU_XGA010C_PANNY777_2026-09-06.md)
 - [Related editorial: When owners take their glasses back](../news/articles/2026-09-06-when-owners-take-their-glasses-back.md)

@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "product": "Fieldwork",
+  "purpose": "Progressive community field-research intake for smart-glasses owners and hands-on users.",
+  "completion": {
+    "minimum_valid_submission_percent": 50,
+    "maximum_percent": 100,
+    "meaning": "Completeness only; never credibility, truthfulness, expertise, or evidentiary confidence.",
+    "rule": "A valid submission receives 50%. The remaining 50 percentage points are earned proportionally across optional answered questions. Not-tested/unknown is a valid scientific answer where offered and must not be treated as a failure.",
+    "minimum_fields": ["model", "access_basis", "attestation_hands_on"]
+  },
+  "privacy": {
+    "default_attribution": "anonymous",
+    "anonymous_equal_evidence_treatment": true,
+    "raw_serial_persisted": false,
+    "serial_use": "Duplicate-device detection only unless the contributor separately and explicitly opts into another research purpose in a future protocol.",
+    "public_serial": false,
+    "device_fingerprint": "One-way fingerprint derived before persistence from the normalized model identity and serial number. Raw serial must be discarded immediately after fingerprint generation and must never enter logs, analytics, exports, issue bodies, or public records."
+  },
+  "sections": [
+    {
+      "id": "identity",
+      "title": "The glasses in your hands",
+      "questions": [
+        {"id":"model","prompt":"What exact model are these glasses?","type":"model_lookup","required":true},
+        {"id":"retail_name","prompt":"What name is printed on the box or listing, if different?","type":"text"},
+        {"id":"model_number","prompt":"What model number is printed on the device, box, or settings screen?","type":"text"},
+        {"id":"serial","prompt":"Serial number (recommended for duplicate detection; transformed to a one-way fingerprint and never stored raw)","type":"serial_private"},
+        {"id":"hardware_revision","prompt":"Hardware revision, if shown","type":"text"},
+        {"id":"region","prompt":"Country or region where this unit was sold","type":"text"},
+        {"id":"purchase_date","prompt":"When did you get it?","type":"month_or_date"},
+        {"id":"access_basis","prompt":"How did you get hands-on access?","type":"choice","required":true,"options":["purchased","borrowed","review_sample","employer_provided","retailer_or_event_demo","other"]}
+      ]
+    },
+    {
+      "id": "purchase_context",
+      "title": "Why you chose it",
+      "questions": [
+        {"id":"purchase_reason","prompt":"Why did you choose this model?","type":"textarea"},
+        {"id":"problem_to_solve","prompt":"What problem did you hope these glasses would solve?","type":"textarea"},
+        {"id":"alternatives","prompt":"What other glasses or devices did you seriously consider?","type":"text"},
+        {"id":"price_paid","prompt":"About how much did you pay, in the currency you used?","type":"money"},
+        {"id":"primary_use","prompt":"What is your main use for them now?","type":"textarea"},
+        {"id":"problem_solved","prompt":"What problem have they actually solved for you?","type":"textarea"},
+        {"id":"unexpected_use","prompt":"Have you found an unexpected use that was not why you bought them?","type":"textarea"}
+      ]
+    },
+    {
+      "id": "physical",
+      "title": "Wearing them",
+      "questions": [
+        {"id":"usage_length","prompt":"How long and how often have you used this exact unit?","type":"text"},
+        {"id":"comfort","prompt":"How comfortable are they over the time you actually wear them?","type":"rating_with_note"},
+        {"id":"fit","prompt":"How well do they fit and stay positioned?","type":"rating_with_note"},
+        {"id":"weight_feel","prompt":"Do they feel noticeably heavy or unbalanced?","type":"rating_with_note"},
+        {"id":"heat","prompt":"Do you notice heat during normal use?","type":"rating_with_note"},
+        {"id":"controls","prompt":"How usable are the physical/touch/voice controls?","type":"rating_with_note"},
+        {"id":"prescription","prompt":"What has your prescription-lens experience been, if applicable?","type":"textarea"},
+        {"id":"social_acceptance","prompt":"How do they feel to wear around other people?","type":"textarea"}
+      ]
+    },
+    {
+      "id": "real_world",
+      "title": "What actually works",
+      "questions": [
+        {"id":"battery","prompt":"What battery life do you actually see, and under what use?","type":"textarea"},
+        {"id":"audio","prompt":"How useful is the audio experience?","type":"rating_with_note"},
+        {"id":"calls","prompt":"How well do calls work?","type":"rating_with_note"},
+        {"id":"camera","prompt":"How useful is the camera, if present?","type":"rating_with_note"},
+        {"id":"display","prompt":"How useful/readable is the display, if present?","type":"rating_with_note"},
+        {"id":"translation","prompt":"How useful and accurate is translation in situations you actually use?","type":"textarea"},
+        {"id":"visual_ai","prompt":"How useful is visual AI or scene understanding in real use?","type":"textarea"},
+        {"id":"reliability","prompt":"Describe crashes, shutdowns, pairing failures, resets, freezes, or other quirks.","type":"textarea"},
+        {"id":"missing_expected","prompt":"What did you reasonably expect them to do that they cannot do?","type":"textarea"}
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing versus reality",
+      "questions": [
+        {"id":"marketing_truthful","prompt":"Overall, was the marketing truthful about the product you received?","type":"choice_with_note","options":["yes","mostly","mixed","mostly_not","no","unsure"]},
+        {"id":"claim_true","prompt":"Which advertised claim proved most true?","type":"textarea"},
+        {"id":"claim_misleading","prompt":"Which advertised claim was most misleading or incomplete?","type":"textarea"},
+        {"id":"pleasant_surprise","prompt":"What did the manufacturer undersell or get better than expected?","type":"textarea"},
+        {"id":"buy_again","prompt":"Knowing what you know now, would you buy this model again? Why?","type":"textarea"},
+        {"id":"recommend_for","prompt":"Who would you recommend these to—and who should avoid them?","type":"textarea"}
+      ]
+    },
+    {
+      "id": "software_ownership",
+      "title": "Software and owner control",
+      "questions": [
+        {"id":"firmware","prompt":"Firmware version","type":"text"},
+        {"id":"companion_app","prompt":"Companion app and version","type":"text"},
+        {"id":"host","prompt":"Phone/host device and operating-system version","type":"text"},
+        {"id":"account_required","prompt":"Is a vendor account required for normal use?","type":"yes_no_unknown"},
+        {"id":"cloud_required","prompt":"What stops working without internet or vendor cloud access?","type":"textarea"},
+        {"id":"permissions","prompt":"Did any requested app permissions surprise or concern you?","type":"textarea"},
+        {"id":"offline_behavior","prompt":"What can you still do fully offline?","type":"textarea"},
+        {"id":"data_export","prompt":"Can you export your own photos, recordings, notes, or other data easily?","type":"textarea"},
+        {"id":"updates","prompt":"What has your firmware/app update experience been?","type":"textarea"},
+        {"id":"owner_control","prompt":"What meaningful control do you have beyond the manufacturer's intended workflow?","type":"textarea"}
+      ]
+    },
+    {
+      "id": "technical",
+      "title": "Go deeper — optional technical fieldwork",
+      "questions": [
+        {"id":"ble_advertised_name","prompt":"What name does the device advertise over Bluetooth/BLE?","type":"text"},
+        {"id":"ble_ids","prompt":"What Bluetooth identifiers or addresses are visible? Do not include identifiers belonging to your phone or other people.","type":"textarea"},
+        {"id":"ble_services","prompt":"What BLE services/UUIDs do you observe?","type":"textarea"},
+        {"id":"ble_characteristics","prompt":"What characteristics, properties, or notifications do you observe?","type":"textarea"},
+        {"id":"ble_behavior","prompt":"What changes in BLE behavior when you press controls, open the app, record, display content, or change device state?","type":"textarea"},
+        {"id":"wifi","prompt":"What Wi-Fi behavior have you observed?","type":"textarea"},
+        {"id":"usb_identity","prompt":"What does the device expose over USB, if anything?","type":"textarea"},
+        {"id":"developer_access","prompt":"Have you found an SDK, API, debug mode, ADB/sideloading path, or other developer access?","type":"textarea"},
+        {"id":"network_observations","prompt":"What network behavior or endpoints have you directly observed?","type":"textarea"},
+        {"id":"technical_evidence","prompt":"Public links to logs, captures, screenshots, code, or reproducible notes","type":"links"}
+      ]
+    },
+    {
+      "id": "testimony",
+      "title": "Your assessment",
+      "questions": [
+        {"id":"best_thing","prompt":"What is the best thing about these glasses?","type":"textarea"},
+        {"id":"worst_thing","prompt":"What is the worst thing about these glasses?","type":"textarea"},
+        {"id":"change_one_thing","prompt":"If you could change one thing, what would it be?","type":"textarea"},
+        {"id":"freeform","prompt":"Say whatever you think GlassesResearch and future owners should know about this model.","type":"long_textarea"},
+        {"id":"evidence_links","prompt":"Optional public evidence links—photos, screenshots, videos, logs, test notes","type":"links"},
+        {"id":"attribution_mode","prompt":"How should this contribution be attributed?","type":"choice","default":"anonymous","options":["anonymous","pseudonym","public_name"]},
+        {"id":"display_name","prompt":"Optional public name or handle","type":"text","conditional":"attribution_mode != anonymous"},
+        {"id":"conflicts","prompt":"Optional disclosure: free review unit, employment, affiliate relationship, or other relevant relationship","type":"textarea"},
+        {"id":"attestation_hands_on","prompt":"I personally used or handled the exact device described here.","type":"checkbox","required":true},
+        {"id":"attestation_observation","prompt":"I separated what I personally observed from what I merely read or heard.","type":"checkbox"}
+      ]
+    }
+  ]
+}
