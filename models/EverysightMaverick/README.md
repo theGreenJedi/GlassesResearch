@@ -1,39 +1,50 @@
 # Everysight Maverick AI / AI Pro
 
-**Status:** pre-release / still in development as of 2026-08-17  
+**Status:** paid crowdfunding/preorder; production fulfillment pending as of 2026-09-07  
 **Manufacturer:** Everysight  
 **Category:** full-color AR + AI smart glasses  
-**Canonical GLS IDs:** not assigned yet; the purchaser-history ledger requires acquisition/delivery evidence
+**Canonical GLS IDs:** `GLS-0221` Maverick AI · `GLS-0222` Maverick AI Pro
+
+## Acquisition boundary update
+
+The earlier research correctly kept both products outside the purchaser-history ledger while no acquisition path had been established. That boundary has now changed.
+
+Everysight's 2026 Kickstarter campaign accepted paid backers for Maverick AI / AI Pro and exceeded its funding goal. Everysight now maintains dedicated Kickstarter/VIP preorder support covering payments, backer surveys, fulfillment, upgrades and shipping. Paid acquisition is therefore established even though Everysight still describes the products as in development and production shipment remains pending.
+
+Sources:
+
+- https://www.kickstarter.com/projects/everysight/maverick-full-color-ai-ar-glasses
+- https://support.everysight.com/hc/en-us/categories/27996757089820-Kickstarter-VIP-Pre-orders
 
 ## Model distinction
 
-Everysight currently presents two distinct products:
+Everysight presents two distinct products:
 
-- **Maverick AI** — the base full-color AR + AI glasses.
-- **Maverick AI Pro** — adds native eye tracking through Everysight **GazeIntent™**.
+- **Maverick AI — `GLS-0221`** — base full-color AR + AI glasses.
+- **Maverick AI Pro — `GLS-0222`** — adds native eye tracking through Everysight **GazeIntent™**.
 
-The distinction is manufacturer-documented and should not be collapsed into a single SKU during later catalog promotion.
+The distinction is manufacturer-documented and is not treated as a mere lens/frame configuration.
 
 ## Current primary specification snapshot
 
 Everysight's current product/support material states:
 
-- 47 g weight.
-- Everysight BEAM™ projection engine with a full-color Sony micro-OLED imager.
-- 22° field of view.
-- Bluetooth 5.2.
-- iOS, Android, and Wear OS compatibility.
-- IP55.
-- 8+ hours claimed continuous operation.
-- forward-facing AI camera.
-- multi-microphone array and contextual audio speaker.
-- inertial / line-of-sight sensing.
-- touch controller and on/off button.
-- clear, tinted, transition, and prescription lens options.
-- single-vision prescription range planned at launch: SPH -3.0 to +3.0; CYL 0 to -1.0. Progressives are not available at launch.
+- 47 g weight;
+- Everysight BEAM™ projection engine with a full-color Sony micro-OLED imager;
+- 22° field of view;
+- Bluetooth 5.2;
+- iOS, Android, and Wear OS compatibility;
+- IP55;
+- 8+ hours claimed continuous operation;
+- forward-facing AI camera;
+- multi-microphone array and audio speaker;
+- inertial / line-of-sight sensing;
+- touch controller and on/off button;
+- clear, tinted, transition, and prescription lens options;
+- planned single-vision prescription range at launch of SPH -3.0 to +3.0 and CYL 0 to -1.0;
 - Maverick AI Pro adds native eye tracking / GazeIntent™.
 
-Because Everysight explicitly says Maverick AI and AI Pro are still in development, all pre-release specifications remain subject to change.
+Because Everysight explicitly says Maverick AI and AI Pro are still in development, all pre-release specifications remain subject to change and are not production-unit measurements.
 
 ## Developer surface
 
@@ -60,15 +71,16 @@ The current research environment could not retrieve a reliable transcript or vid
 - [EV-0074 — primary product evidence](../../evidence/EV-0074-Maverick-AI-primary-product.md)
 - [EV-0075 — SDK and owner-control boundary](../../evidence/EV-0075-Maverick-SDK-owner-control.md)
 - [EV-0076 — user-supplied video lead](../../evidence/EV-0076-Maverick-AI-Pro-user-video-lead.md)
+- [Everysight lineage](../../lineages/EVERYSIGHT.md)
 
 ## Open questions
 
-- first production shipment date and independently confirmed fulfillment.
-- production-unit weight/spec changes relative to current pre-release documentation.
-- final AI Pro eye-tracking behavior and calibration on production hardware.
-- runtime-key approval policy for third-party applications.
-- behavior after certificate expiry with Everysight services unreachable.
-- whether core non-SDK functions remain useful without an Everysight account or companion-app path.
+- first production shipment date and independently confirmed fulfillment;
+- production-unit weight/spec changes relative to current pre-release documentation;
+- final AI Pro eye-tracking behavior and calibration on production hardware;
+- runtime-key approval policy for third-party applications;
+- behavior after certificate expiry with Everysight services unreachable;
+- whether core non-SDK functions remain useful without an Everysight account or companion-app path;
 - firmware recovery/debug access and any bootloader or direct-device development surface.
 
 Until those questions are resolved, unknown stays unknown.
