@@ -1,40 +1,46 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-08T10:55:54.003556+00:00",
-  "candidate_count": 88,
-  "classifier_irrelevant_count": 72,
+  "discovered_utc": "2026-09-08T14:38:42.632566+00:00",
+  "candidate_count": 116,
+  "classifier_irrelevant_count": 95,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 16,
-    "broad_web": 55,
-    "developer": 18
+    "adjacent": 18,
+    "broad_web": 80,
+    "community": 2,
+    "developer": 18,
+    "manufacturer_catalog": 1
   },
   "relationship_counts": {
-    "direct": 1,
-    "enabling": 0,
-    "adjacent": 15,
+    "direct": 4,
+    "enabling": 1,
+    "adjacent": 16,
     "speculative": 0,
-    "irrelevant": 72
+    "irrelevant": 95
   },
   "type_counts": {
-    "model": 5,
-    "review": 2,
-    "video": 2,
-    "news": 37,
-    "tool": 25,
-    "sdk": 18,
+    "model": 8,
+    "review": 1,
+    "video": 9,
+    "news": 56,
+    "research": 5,
+    "tool": 20,
+    "sdk": 20,
+    "optics": 1,
     "policy": 1,
-    "retail": 9,
+    "retail": 18,
     "teardown": 1,
-    "community": 11
+    "community": 13
   },
   "routing_counts": {
-    "adjacent_radar": 15,
-    "community_evidence_review": 4,
-    "development_hacking": 2,
-    "reject_noise": 72,
-    "research_news_review": 16,
-    "retail_rebrand_review": 8
+    "adjacent_radar": 16,
+    "development_hacking": 1,
+    "model_catalog_review": 1,
+    "reject_noise": 95,
+    "report_card_evidence": 1,
+    "research_news_review": 21,
+    "research_optics": 1,
+    "retail_rebrand_review": 11
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,10 +54,93 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "9794750426dd9bba",
-      "title": "XREAL - Micro Center",
-      "url": "https://www.microcenter.com/search/search_results.aspx?fq=brand:XREAL",
-      "summary": "Discover Xreal AR glasses and VR accessories at Micro Center. Immerse yourself in augmented reality with lightweight, high-resolution eyewear.",
+      "id": "d5f57a72694c540e",
+      "title": "Manufacturer catalog lead: AR GLASSES",
+      "url": "https://us.shop.xreal.com/collections/ar-glasses",
+      "summary": "Same-domain catalog/developer link discovered from https://us.shop.xreal.com/collections/xreal-product-catalog",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://us.shop.xreal.com/collections/xreal-product-catalog",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "22ecad6a15ba4c2e",
+      "title": "Amazon",
+      "url": "https://www.amazon.com/clp/B0GC56Z4CR",
+      "summary": "XREAL Experience The Future of Wearable displays with The XREAL 1S + XREAL Eye Bundle — Your All-in-one Gateway to immersive Entertainment, Creative Storytelling, and AI-Powered Interaction.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+; XREAL AURA",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1db284b546ab6ffe",
+      "title": "XREAL - YouTube",
+      "url": "https://www.youtube.com/@XREAL_Global",
+      "summary": "The world’s fastest 240Hz Micro‑OLED AR glasses, fusing ROG’s high-performance gaming pedigree with XREAL’s industry-leading spatial display technology.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+; XREAL AURA",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ec82a7bc6108a3d",
+      "title": "XREAL Shop EU",
+      "url": "https://eu.shop.xreal.com/",
+      "summary": "The thing I love about my XREAL air is they are just like normal sunglasses until you don't want them to be. For example, I could wear these at the beach see the water, my eyes are protected from the sun, but at any time I could look to my left and now I'm watching a 330\" inch IMAX screen.",
       "discovery_channel": "broad_web",
       "query": "XREAL xbx a01+; XREAL AURA",
       "source": "Bing web RSS",
@@ -70,42 +159,43 @@
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8aaa2f50f9f42448",
-      "title": "I cannot open old community posts - Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/feedback/forum/all/i-cannot-open-old-community-posts/2dcf28ef-942f-4afe-be1b-c5c71929f3ba",
-      "summary": "Harassment is any behavior intended to disturb or upset a person or group of people. Threats include any threat of violence, or harm to another. Any content of an adult theme or inappropriate to a community web site. Any image, link, or discussion of nudity. Any behavior that is insulting, rude, vulgar, desecrating, or showing disrespect. Any behavior that appears to violate End user license agreements, including providing product keys or links to pirated software. Unsolicited bulk mail or ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "76aa9b7bf750daeb",
+      "title": "Used Gear | Biggs Camera, Charlotte, NC",
+      "url": "https://biggscamera.com/services/used-gear",
+      "summary": "At Biggs Camera, we buy, sell and trade a wide variety of used cameras, lenses and photography equipment. From modern digital cameras to antiques and classic 35mm models, you're sure to find great gear at a terrific price.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "enabling",
       "content_types": [
-        "community"
+        "optics",
+        "retail"
       ],
-      "primary_type": "community",
+      "primary_type": "optics",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
+        "research_optics",
+        "retail_rebrand_review"
       ],
       "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lenses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "07c6fe744c7e2606",
-      "title": "Ignite by realestate.com.au",
-      "url": "https://ignite.realestate.com.au/",
-      "summary": "Ignite is a self service tool for realestate.com.au customers to view and manage their property campaigns.",
+      "id": "5677a7417188eaf6",
+      "title": "Buy and Sell in Brisbane, Queensland, Australia - Facebook",
+      "url": "https://www.facebook.com/marketplace/brisbane/",
+      "summary": "Shop electronics, cars, furniture, clothing, and more for sale in Brisbane on Facebook Marketplace. Find great deals from local sellers or list your items for free.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -116,12 +206,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "tool"
+        "retail"
       ],
-      "primary_type": "tool",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -130,10 +220,206 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bda3064a4f87f942",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-handler-softwaresuch-as-microsoft-office/9ff5d701-1131-4df9-8f76-07e03bbfe8f0",
-      "summary": "Microsoft Community",
+      "id": "9ce3ec319e5e516f",
+      "title": "Buy and Sell in Edmonton, Alberta | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/edmonton/",
+      "summary": "Shop electronics, cars, furniture, clothing, and more for sale in Edmonton on Facebook Marketplace. Find great deals from local sellers or list your items for free.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3d942411a9d674a8",
+      "title": "Buy and Sell in Melbourne, Victoria, Australia | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/melbourne/",
+      "summary": "Shop electronics, cars, furniture, clothing, and more for sale in Melbourne on Facebook Marketplace. Find great deals from local sellers or list your items for free.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a630bae89149bed",
+      "title": "Buy and Sell in Montreal, Quebec | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/montreal/",
+      "summary": "Shop electronics, cars, furniture, clothing, and more for sale in Montreal on Facebook Marketplace. Find great deals from local sellers or list your items for free.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "744a2a790c24294b",
+      "title": "Buy and Sell in New York, New York | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/nyc/",
+      "summary": "Shop electronics, cars, furniture, clothing, and more for sale in New York on Facebook Marketplace. Find great deals from local sellers or list your items for free.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a58075c35d5a9b0f",
+      "title": "Buy and Sell in Perth, Western Australia | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/perth/",
+      "summary": "Shop electronics, cars, furniture, clothing, and more for sale in Perth on Facebook Marketplace. Find great deals from local sellers or list your items for free.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f703756df1964753",
+      "title": "Buy and Sell in Phoenix, Arizona | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/phoenix/",
+      "summary": "Shop electronics, cars, furniture, clothing, and more for sale in Phoenix on Facebook Marketplace. Find great deals from local sellers or list your items for free.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4cc0a792d8d64455",
+      "title": "Buy and Sell in Sydney, Australia | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/sydney/",
+      "summary": "Shop electronics, cars, furniture, clothing, and more for sale in Sydney on Facebook Marketplace. Find great deals from local sellers or list your items for free.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e796a36881ee5432",
+      "title": "Electrochromics - Fraunhofer R&D Center for Electromobility Bavaria",
+      "url": "https://www.fzeb.fraunhofer.de/en/electrochromic-systems.html",
+      "summary": "Electrochromic materials, integrated into a layer stack with conductive components, can be automatically switched. By applying an electrical voltage (or current), a charge and ion exchange occurs, leading to the decoloration/coloration of the layers.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -144,12 +430,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -158,12 +443,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6089d6ea8ebba775",
-      "title": "Microsoft Community",
-      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£/b45f8dde-aa4a-4598-ab6e-21a67f8b6ec2",
-      "summary": "Microsoft Community",
+      "id": "ea1094eb20498fcd",
+      "title": "Facebook",
+      "url": "https://apps.facebook.com/index.php/?q=market+place",
+      "summary": "Explore the things you love. Log into Facebook",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -172,12 +457,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -186,10 +470,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "146f6aef1146f35e",
-      "title": "near preposition - Definition, pictures, pronunciation and usage notes ...",
-      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/near_1",
-      "summary": "Definition of near prepositionfrom the Oxford Advanced Learner's Dictionary.",
+      "id": "aeac8c7c5acf1580",
+      "title": "Harveys Lake Borough - Home",
+      "url": "https://harveyslakeborough.com/",
+      "summary": "The Pennsylvania Department of Conservation and Natural Resources Bureau of Geological Survey, were instrumental in the bathymetric data collection and map production for Harveys Lake.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -213,12 +497,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "09009b14ba41d7a6",
-      "title": "NO PUEDO ABRIR EXCEL AYUDA - Microsoft Community",
-      "url": "https://answers.microsoft.com/es-es/msoffice/forum/all/no-puedo-abrir-excel-ayuda/6faeee74-ced2-45d6-bdb3-cbe0661e251b",
-      "summary": "Acoso es cualquier comportamiento con la intención de alterar o enfadar a una persona o a un grupo de personas. Las amenazas incluyen cualquier amenaza de violencia o daños a otra persona. Cualquier contenido de un tema para adultos o inadecuado para un sitio web de la comunidad. Cualquier imagen, vínculo o debate de desnudez. Cualquier comportamiento que sea insultante, grosero, vulgar, profanador o muestre falta de respeto. Cualquier comportamiento que parezca infringir los contratos de ...",
+      "id": "b184275f8c2689d7",
+      "title": "Harveys Lake Lake - 4.6★ Harveys Lake, Pennsylvania",
+      "url": "https://www.lakedestinations.com/lakes/pennsylvania/harveys-lake/harveys-lake",
+      "summary": "Escape to Harveys Lake, Pennsylvania's largest natural lake by volume, surrounded by historic mansions and offering scenic drives, fishing, and boating. Experience the warm, welcoming charm of this family-friendly destination.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -227,12 +511,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -241,40 +524,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "83a26709f2e99e32",
-      "title": "Premiere Listing | realestate.com.au",
-      "url": "https://customer.realestate.com.au/residential/premiere-listing/",
-      "summary": "Showcase your property and be seen at the top of the search results with Premiere Listings on realestate.com.au",
+      "id": "a27d23b8407bf942",
+      "title": "Harveys Lake | Parks & Lakes | Harveys Lake, PA - DiscoverNEPA",
+      "url": "https://discovernepa.com/listing/harveys-lake/",
+      "summary": "Harveys Lake in Harveys Lake, PA is the largest natural lake by volume in Pennsylvania and one of the Back Mountainregion’s most popular outdoor destinations. Located in Luzerne County, the 621-acre glacial lakeoffers year-round recreation surrounded by mountain scenery and lakeside communities.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8b6924538b9c1c19",
-      "title": "Real Estate & Property for Sale in Ballarat, VIC - realestate.com.au",
-      "url": "https://www.realestate.com.au/buy/in-ballerat/list-1",
-      "summary": "1762 properties for sale in Ballarat, VIC. Browse the latest properties for sale in Ballarat and find your dream home with realestate.com.au.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -297,150 +552,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bf75d22d84ded2f7",
-      "title": "Real Estate & Property for Sale in Buderim, QLD 4556 - realestate.com.au",
-      "url": "https://www.realestate.com.au/buy/in-buderim,+qld+4556/list-1",
-      "summary": "759 properties for sale in Buderim, QLD 4556. Browse the latest properties for sale in Buderim and find your dream home with realestate.com.au.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e17107ad7b625f21",
-      "title": "Real Estate & Property for Sale in Gympie - Greater Region, QLD ...",
-      "url": "https://www.realestate.com.au/buy/in-gympie+-+greater+region,+qld/list-1",
-      "summary": "863 properties for sale in Gympie - Greater Region, QLD. Browse the latest properties for sale in Gympie - Greater Region and find your dream home with realestate.com.au.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "614adf77ed27b8ea",
-      "title": "Real Estate & Property for Sale in QLD - realestate.com.au",
-      "url": "https://www.realestate.com.au/buy/in-qld/list-1",
-      "summary": "47190 properties for sale in QLD. Browse the latest properties for sale in QLD and find your dream home with realestate.com.au.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e07bf5e445920f0c",
-      "title": "Real Estate & Property for Sale in Wangaratta, VIC 3677 - realestate.com.au",
-      "url": "https://www.realestate.com.au/buy/in-wangaratta,+vic+3677/list-1",
-      "summary": "270 properties for sale in Wangaratta, VIC 3677. Browse the latest properties for sale in Wangaratta and find your dream home with realestate.com.au.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cefeb8d9dfe6a305",
-      "title": "Real Estate & Property for Sale in Warwick, QLD 4370 - realestate.com.au",
-      "url": "https://www.realestate.com.au/buy/in-warwick,+qld+4370/list-1",
-      "summary": "257 properties for sale in Warwick, QLD 4370. Browse the latest properties for sale in Warwick and find your dream home with realestate.com.au.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "51414e1b4c3de9f2",
-      "title": "Search for Real Estate, Property & Homes - realestate.com.au",
-      "url": "https://www.realestate.com.au/",
-      "summary": "realestate.com.au is Australia's No.1 property site for real estate. Find the latest home for you, property news & real estate market data.",
+      "id": "4beb703af9a5b3d3",
+      "title": "Marketplace",
+      "url": "https://www.facebook.com/marketplace/",
+      "summary": "Buy or sell new and used items easily on Facebook Marketplace, locally or from businesses. Find great deals on new items shipped from stores to your door.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -464,12 +579,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "12da685699e83de7",
-      "title": "Suburb Pricing Tool | realestate.com.au",
-      "url": "https://customer.realestate.com.au/residential/pricing-tool/",
-      "summary": "With the realestate.com.au suburb pricing tool, you can access relevant, up-to-date listing prices for your contract type and suburb.",
+      "id": "29c850acf1ecd3e7",
+      "title": "Spend a Summer Day Exploring Harveys Lake, PA | Parks & Lakes",
+      "url": "https://discovernepa.com/outdoors/parks-and-lakes/spend-a-summer-day-exploring-harveys-lake-pa/",
+      "summary": "Escape to Harveys Lake, PA for a laid-back summer day filled with scenic views, local eats and outdoor fun. Cruise the 8.2-mile shoreline loop, grab breakfast with a view, and cap it off with cold drinks and live music by the water.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -478,14 +593,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "retail"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
-        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -494,650 +606,55 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "deb288843ec09c35",
-      "title": "About Us - The Koto Group",
-      "url": "https://www.kotogroup.com/about-us",
-      "summary": "Pay Rent About Us About Us The Koto Group DRE# 01918653 1117 State St, Downtown Santa Barbara, Santa Barbara, CA, United States www.kotogroup.com",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "a8094ea79f50c73c",
+      "title": "THE BEST 10 RESTAURANTS NEAR HARVEYS LAKE, PA 18618 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Harveys+Lake%2C+PA+18618",
+      "summary": "See Today's Top Picks: Best Restaurants near Harveys Lake, PA 18618 - Last Updated August 2026 - Jonathans, Fishtales Bar & Grill, Villa Roma Restaurant, Grotto Pizza, Lakeside Skillet, Jones Pancake Shop, The Noxen Inn, Overbrook, Aroma Grill & Bar, Mystic Kitchen",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "368e5e33d15d9909",
-      "title": "Centro de Estudos de Literatura Patrística",
-      "url": "https://www.patristica.com.br/",
-      "summary": "A Patrística compreende o período de oito séculos em que líderes proeminentes do Cristianismo antigo desenvolveram uma rica produção literária nos campos da teologia e da filosofia.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aba5ef93df17d6f1",
-      "title": "Como estudar patrística e patrologia? - Cooperadores da Verdade",
-      "url": "https://cooperadoresdaverdade.com/como-estudar-patristica-e-patrologia/",
-      "summary": "Por onde começar a estudar Patrística e Patrologia? Há inúmeras obras — tanto na Patrologia quanto na Patrística — que nos dão uma boa noção introdutória do assunto, o que é quase indispensável de se adquirir antes de encarar a leitura de cada obra nua e crua.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f51cf0577ac6de61",
-      "title": "Contact Us - The Koto Group",
-      "url": "https://www.kotogroup.com/contact-us",
-      "summary": "Please fill out the following form and we will make sure to get back to ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3fcffca4a36db598",
-      "title": "Curso de Patristica - Igreja Católica - Módulo I e II - Livro do Céu ...",
-      "url": "https://www.livrodoceu.com.br/curso-de-patristica-igreja-catolica/",
-      "summary": "A Patrística é o estudo dos Padres da Igreja (do latim Patres Ecclesiae), teólogos e escritores cristãos dos primeiros séculos (séc. I-VIII) que: Viveram santamente e foram reconhecidos pela Igreja como testemunhas autênticas da fé. Defenderam e explicaram a doutrina cristã contra heresias.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dae67d129cf85ac3",
-      "title": "Estudo da Patrística: como conhecer os Padres da Igreja | Aurea",
-      "url": "https://www.lectioaurea.com/patristica",
-      "summary": "Introdução ao estudo da Patrística e dos Padres da Igreja, com caminhos para ler o Evangelho com comentários patrísticos e fontes verificáveis.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "58018ad5e028b38d",
-      "title": "Flower Delivery: Order Flowers Online | Proflowers",
-      "url": "https://www.proflowers.com/",
-      "summary": "Standard shipping or delivery charges start as low as $19.99, though prices may vary by delivery location, shipping time, or calendar day. Delivery is available Monday through Saturday, with Sunday delivery available for select areas. Send flowers with Proflowers today!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e0e90d353a914512",
-      "title": "Home - The Koto Group",
-      "url": "https://www.kotogroup.com/",
-      "summary": "At the Koto Group, we take a resident focused approach to property management. Our entire team, based in Santa Barbara and San Luis Obispo is focused first and foremost on providing excellent service to our communities and residents.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "11a9693cd61ee6ae",
-      "title": "Owners - The Koto Group",
-      "url": "https://www.kotogroup.com/owner",
-      "summary": "At the Koto Group, we believe that property management starts with our clients investment goals. We offer a boutique approach to investment management, primarily focused on clients with long term horizons.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b328cc1adc9a32f5",
-      "title": "Patrística: Conceito e Importância - Via Católica",
-      "url": "https://viacatolica.com.br/historia-da-igreja/patristica-conceito-e-importancia/",
-      "summary": "Explore a Patrística, conheça os Padres da Igreja, suas obras, divisões e a importância doutrinal que moldou a fé cristã desde suas origens.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5370a788421e5d22",
-      "title": "Patrística: Estudo de 24 Obras fundamentais - Escola De História da Igreja",
-      "url": "https://escoladehistoriadaigreja.com.br/cursos/patristica",
-      "summary": "A expressão \"Patrística\" tem origem na palavra \"pater\", traduzida como \"pai\". E por isso os escritores da Patrística são os chamados \"Padres da Igreja''. A Igreja os têm como verdadeiros pais. Neste curso, o professor Lucas Lancaster comenta 24 obras destes autores – dos padres apostólicos aos padres capadócios. Professor: Lucas Lancaster",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3a380fcb7d5c6daf",
-      "title": "Por onde começar a estudar a Bíblia? Guia prático para criar constância ...",
-      "url": "https://eismeaqui.com.br/estudos-biblicos/por-onde-comecar-a-estudar-a-biblia-guia-pratico-para-criar-constancia/",
-      "summary": "Descubra por onde começar a estudar a Bíblia e transforme a leitura diária em uma caminhada constante com Deus Introdução Estudar a Bíblia não é apenas adquirir informações religiosas, mas ouvir a voz do Deus vivo e conhecer mais profundamente a obra de Cristo. Muitos desejam criar uma rotina de leitura, porém não sabem qual livro escolher, quanto tempo dedicar ou como compreender ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "75d0e2e2837dc829",
-      "title": "POR ONDE COMEÇAR A LER A BÍBLIA? - revistaavemaria.com.br",
-      "url": "https://revistaavemaria.com.br/wp-content/uploads/2026/09/avemaria-setembro2026-05.pdf",
-      "summary": "POR ONDE COMEÇAR A LER A BÍBLIA? ABíblia reúne 73 livros, es- critos em diferentes épocas estilos. Por isso, seguir um plano de leitura pode ajudar a compreender melhor a história da",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7eeab4261e5c08c3",
-      "title": "Rental Listings - AppFolio",
-      "url": "https://kotogroup.appfolio.com/listings/listings",
-      "summary": "The Koto Group is pleased to offer an exceptional living experience in the heart of Atascadero with this recently renovated 1 bedroom, 1 bathroom apartment. Offering a perfect blend of luxury, comfort, and convenience, this residence is sure to exceed your expectations.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9cce5fe7dc5bf265",
-      "title": "The Koto Group - LinkedIn",
-      "url": "https://www.linkedin.com/company/the-koto-group",
-      "summary": "The Koto Group manages real property in Santa Barbara County and surrounding areas. Focusing on the individual needs of clients, we excel at creating and executing long term growth strategies...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2f0472e522b8353b",
-      "title": "THE KOTO GROUP - Updated September 2026 - Yelp",
-      "url": "https://www.yelp.com/biz/the-koto-group-santa-barbara",
-      "summary": "Unless you're in a desperate situation where timeframes will not allow, avoid renting from Koto at all costs, I've read the other reviews and they align with mine.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "16a03b6ef6fb27f4",
-      "title": "The Koto Group - Zillow",
-      "url": "https://www.zillow.com/profile/The%20Koto%20Group",
-      "summary": "The Koto Group has been really great to do business with. They are considerate, organized and very professional, as well as up-to-date with technology to make everything ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0fb1c2538e82e9e8",
-      "title": "The Koto Group Inc. | ShowMeTheRent.com",
-      "url": "https://www.showmetherent.com/company/details/The-Koto-Group-Inc-/a9ba0f13-3a3e-11e9-8be2-1866da729201",
-      "summary": "View all listings for The Koto Group Inc., with 8 listings available for rent at ShowMeTheRent.com. Contact The Koto Group Inc. at (805) 538-1624x7.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "11086ba0e85aa17a",
-      "title": "Track Your Package Worldwide | 2,500+ Carriers | OnlineTrack.net",
-      "url": "https://onlinetrack.net/",
-      "summary": "Track packages from 2,500+ carriers worldwide with OnlineTrack. Our free universal tracking platform provides real-time shipping updates for USPS, UPS, FedEx, DHL, and more.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "27f49dd4faebcfdc",
-      "title": "Vacancies - The Koto Group",
-      "url": "https://www.kotogroup.com/vacancies",
-      "summary": "DRE# 01918653 1117 State St, Downtown Santa Barbara, Santa Barbara, CA, United States www.kotogroup.com The Koto Group Online Portal Log In Owner Portal",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4622fc72be6661e0",
-      "title": "Welcome | USPS",
-      "url": "https://www.usps.com/",
-      "summary": "Welcome to USPS.com. Track packages, pay and print postage with Click-N-Ship, schedule free package pickups, look up ZIP Codes, calculate postage prices, and find everything you need for sending mail and shipping packages.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "16f3ef4148e4ac99",
-      "title": "ALL-IN-ONE PACKAGE TRACKING | 17TRACK",
-      "url": "https://t.17track.net/en-us",
-      "summary": "17TRACK is the most powerful and inclusive package tracking platform. It enables to track over 170+ postal carriers for registered mail, parcel, EMS and multiple express couriers such as DHL, Fedex, UPS, TNT. As well as many more international carriers such as GLS, ARAMEX, DPD, TOLL, etc.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4d44a618442c158f",
-      "title": "Coach Dedrick Petty - Hudl",
-      "url": "https://www.hudl.com/profile/15452826",
-      "summary": "Watch Coach Dedrick Petty's videos and highlights on Hudl. More info: West Mecklenburg High School - Boys Varsity Football / Charlotte, NC.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8ff32d329346de9f",
-      "title": "COACHES | Carolina Punishers",
-      "url": "https://dcdetmer.wixsite.com/carolina-punishers/coaches",
-      "summary": "Head Coach: Dedrick Petty Sr., 919-225-3556 Offensive Coordinator: Lenny Parris, 254-768-7469 Assistant Offense: Jauren Oree Defensive Coordinator: Donald Detmer, 910-500-2023 Assistant Defense: Dominique Pounds Email Us: carolinapunishers@gmail.com",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "187b9c21abc0d1de",
+      "title": "Gregory A Smith - LU Faculty SHARE (Scholarship Hub & Research Exchange)",
+      "url": "https://facultyshare.liberty.edu/en/persons/gregory-a-smith/",
+      "summary": "About Gregory A. Smith is Director of the Ehrhorn Law Library at Liberty University. His academic and professional interests include librarianship, organizational leadership and management, higher education, nonprofit organizations, and evangelical Christianity. He has published and presented in various venues over the past 25 years, exploring two major themes: the integration of Christian ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
         "reject_noise"
       ],
       "triage_priority": "low",
@@ -1146,23 +663,28 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b0ba1aa01b4299b3",
-      "title": "Dedrick Lamont Petty, 40 - Fayetteville, NC - Has Court or Arrest Records",
-      "url": "https://www.mylife.com/dedrick-petty/e21967339241208",
-      "summary": "Check Full Reputation Profile to see possible education history including where and when they attending high school and college, and a complete list of his high school class list.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "e3f699efcf252bc2",
+      "title": "Liberty University Law Review",
+      "url": "https://digitalcommons.liberty.edu/cgi/viewcontent.cgi?article=1418&context=lu_law_review",
+      "summary": "The Liberty University Law Review invites the submission of articles, essays, and book reviews that exhibit a commitment to excellence and promote the Christian intellectual tradition by drawing upon legal, historical, philosophical, and theological sources.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 4,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
+        "review",
+        "tool",
+        "sdk",
         "policy"
       ],
-      "primary_type": "policy",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1172,23 +694,145 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8f49518ba636d040",
-      "title": "Dedrick Petty Sr - Hudl",
-      "url": "https://www.hudl.com/profile/6189204",
-      "summary": "Watch Dedrick Petty Sr's videos and highlights on Hudl.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "16153c43df5bb0e7",
+      "title": "Naming Opportunities | Liberty University School of Law",
+      "url": "https://www.liberty.edu/law/giving/naming-opportunities/",
+      "summary": "Ehrhorn Law Library Computer Lab Faculty Reading Room Instructional Resource Center Large Group Study Room Main Entrance Other Entrances (2) Reading Room Small Group Study Room Special Collections ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 4,
+      "keyword_hits": [
+        "study"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8bfdb3d1e28ca9d3",
+      "title": "Research Guides: Research Portal: Articles/Journals/Databases",
+      "url": "https://libguides.liberty.edu/c.php?g=563995&p=3884467",
+      "summary": "Research assistance, subject guides, and useful resources compiled by Liberty University librarians.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1bfdb2b2b49cfcfb",
+      "title": "38mm Timex Unisex Deepwater Meridian 200 Watch - 2026-07-14 - Slickdeals",
+      "url": "https://slickdeals.net/f/19759488-134-50-timex-unisex-deepwater-meridian-200-38mm-watch-blue-two-piece-quick-release-blue-dial-stainless-steel-case-at-amazon",
+      "summary": "Amazon has 38mm Timex Unisex Deepwater Meridian 200 Watch (TW2Y40400VQ, Blue) for $134.50. Shipping is free. Thanks to Deal Hunter phoinix for finding this deal.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4068df9f19ac96e0",
+      "title": "Artificial Intelligence",
+      "url": "https://ai.iastate.edu/",
+      "summary": "This service enables users to build AI-powered applications, automate workflows, conduct research and integrate generative AI capabilities into their work via API.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "api",
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "45e1cc15ee2526d3",
+      "title": "Faculty Publications | Jerry Falwell Library | Liberty University ...",
+      "url": "https://digitalcommons.liberty.edu/library/sw_gallery.html",
+      "summary": "SelectedWorks Author Gallery Click on the thumbnails below to view faculty publication pages. Click here to view a gallery of all faculty publications pages at Liberty University.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1198,12 +842,450 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "067ab8aa422693a5",
-      "title": "Dedrick Petty Sr. - Regional Director of NCAAU Football | LinkedIn",
-      "url": "https://www.linkedin.com/in/dedrick-petty-sr-63ba8464",
-      "summary": "Regional Director of NCAAU Football · Energetic career development professional with 7 years of combined student personnel,customer service and human resource development experience.",
+      "id": "e948941f13529bce",
+      "title": "Law Library Strategy: Positioning for Sustainable Relevance",
+      "url": "https://facultyshare.liberty.edu/ws/portalfiles/portal/42651218/Law%20Library%20Strategy_%20Positioning%20for%20Sustainable%20Relevance.pdf",
+      "summary": "Despite these good things, from my perspective, the law library’s potential contributions seem to me to be less than fully realized. In the context of these opportunities and challenges, my vision is that the library will move more toward the center of the life of the law school, both for students and faculty.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "89e0396ad301eab9",
+      "title": "Law Library | Liberty University School of Law",
+      "url": "https://www.liberty.edu/law/library/",
+      "summary": "The Ehrhorn Law Library, located in Green Hall, provides print, electronic and media resources to support the mission of Liberty University School of Law. Approved visitorscan access the law ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f8d25cea22315ec6",
+      "title": "Liberty University Campus Map",
+      "url": "https://map.liberty.edu/",
+      "summary": "Explore Liberty University's campus with a 3D interactive map to navigate buildings, facilities, and landmarks conveniently.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6f7693f7f864d7c",
+      "title": "myLU",
+      "url": "https://mylu.liberty.edu/academics/academics",
+      "summary": "The myLU portal provides a personalized, user-friendly experience on both desktop and mobile platforms. It organizes content so that you can access personalized updates and LU campus news all in one convenient location.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "180e81993f8bd2a4",
+      "title": "na01.safelinks.protection.outlook.com",
+      "url": "https://na01.safelinks.protection.outlook.com/apple-app-site-association",
+      "summary": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appIDs\": [\"9KBH5RKYEW.com.microsoft.loop-dogfood\", \"SGGM6D27TK.com.microsoft.loop\"], \"paths\": [\"*/fl-59584e83 ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f00eb1330ed5e69",
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/cridf.iledefrance.fr",
+      "summary": "Outlook",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "90fcf637fb8e8a69",
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/schools.Nyc.gov",
+      "summary": "Outlook",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7fa5ae10c59eb5ee",
+      "title": "Outlook",
+      "url": "https://www.outlook.com/welearn365.com",
+      "summary": "Outlook",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "56692075459b0b9a",
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/minerd.gob.do",
+      "summary": "Outlook",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "201eac76c7d3fd92",
+      "title": "Outlook",
+      "url": "https://www.outlook.com/newsletters",
+      "summary": "Manage your newsletters and subscriptions efficiently with Outlook.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8371d15efc618122",
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/com.microsoft.office.outlook:/mac/google/oauth2redirect",
+      "summary": "Outlook.com",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "62456c75a48331d0",
+      "title": "Research Resource Centre - Employers Consultative Association of ...",
+      "url": "https://www.ecatt.org/index.php/services/research-resource-centre",
+      "summary": "Free Salary Survey Estimate. The Research Resource Centre is a well-established and qualified research and information services centre.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7e3f2d2b9cbd2a89",
+      "title": "Spanish (SPAN) | Liberty University Course Catalog",
+      "url": "https://catalog.liberty.edu/undergraduate/courses/span/",
+      "summary": "This course examines advanced modern translation theory and requires students to translate texts in various technical fields such as business, medicine, and law, primarily from Spanish to English.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c3610ff12459d1ef",
+      "title": "Timex Deepwater for sale | eBay",
+      "url": "https://www.ebay.com/sch/i.html?_nkw=timex+deepwater&_sop=12",
+      "summary": "Get the best deals for Timex Deepwater at eBay.com. We have a great online selection at the lowest prices with Fast & Free shipping on many items!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e25366b3ca15ecd9",
+      "title": "Timex Deepwater Meridian 200 - eBay",
+      "url": "https://www.ebay.com/shop/timex-deepwater-meridian-200?_nkw=timex+deepwater+meridian+200",
+      "summary": "Explore a wide range of our Timex Deepwater Meridian 200 selection. Find top brands, exclusive offers, and unbeatable prices on eBay. Shop now for fast shipping and easy returns!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40dfe82a7473dcd8",
+      "title": "Timex Deepwater Meridian 200 Watch, 44mm - Bloomingdale's",
+      "url": "https://www.bloomingdales.com/shop/product/timex-deepwater-meridian-200-watch-44mm?ID=6013755&CategoryID=1000066",
+      "summary": "Buy Timex Deepwater Meridian 200 Watch, 44mm at Bloomingdale's today. FREE Shipping and Free Returns available, or buy online and pick-up in store!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "822cbbb805784e6d",
+      "title": "2023 – 2024 Compensation Report Survey - HRC Associates, Management and ...",
+      "url": "https://www.hrcassociatesltd.com/2023-2024-compensation-report-survey-page/",
+      "summary": "The primary intent of this Report is to provide information on annual base salary compensation and total annual compensation earned by employees working in full-time positions, with sections for the overall data across all industries and by industry sector.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1224,10 +1306,36 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6b0bd54829904e63",
-      "title": "Dedrick Petty Sr. Email & Phone Number - RocketReach",
-      "url": "https://rocketreach.co/dedrick-petty-sr-email_89048469",
-      "summary": "Dedrick Petty Sr., based in Chapel Hill, NC, US, is currently a President at Xtreme Carolina Football & Cheerleading. Dedrick Petty Sr. brings experience from previous roles at NCAAU, Lee County Panthers Youth Football Organization, Central Carolina Community College and Richmond County Speed Minor League Football Organization.",
+      "id": "53826baa95cc090e",
+      "title": "About Us - wightandcomes.com",
+      "url": "https://www.wightandcomes.com/about",
+      "summary": "About Us The funeral home is an important part of any community. In addition to providing a variety of necessary services to the community such as burial services, cremation services, memorial services and celebrations of life, funeral homes also serve as resources for those grieving the loss of a loved one.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3899eace78187456",
+      "title": "Acrobat ReaderDCでPDFファイルを開くと画面が真っ黒になる | Community",
+      "url": "https://community.adobe.com/%E8%B3%AA%E5%95%8F-118/acrobat-readerdc%E3%81%A7pdf%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E9%96%8B%E3%81%8F%E3%81%A8%E7%94%BB%E9%9D%A2%E3%81%8C%E7%9C%9F%E3%81%A3%E9%BB%92%E3%81%AB%E3%81%AA%E3%82%8B-337381",
+      "summary": "win10でPDFファイルを開こうとすると画面が真っ黒になるこういった状態になり、ホームやツールといったタブも反応せずただ、PCを起動して一番最初だけは普通に表示され二度目以降はこのように真っ黒PCを再起動するとまた最初は問題なく開けて、二度目以降から同じ症状 開こうとする ...",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1250,10 +1358,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "15f622eaa4ce9d36",
-      "title": "Deldrick Petty's High School Career Home - MaxPreps",
-      "url": "https://www.maxpreps.com/ks/winfield/winfield-vikings/athletes/deldrick-petty/?careerid=gjko2tl7g1mn7",
-      "summary": "Check out Deldrick Petty's high school sports timeline including updates while playing football at Winfield High School (KS).",
+      "id": "fb38f22d4c965d9e",
+      "title": "Acrobat の動作が重たい場合の対処について | Community",
+      "url": "https://community.adobe.com/%E3%82%A2%E3%83%89%E3%83%93%E3%81%8B%E3%82%89%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B-113/acrobat-%E3%81%AE%E5%8B%95%E4%BD%9C%E3%81%8C%E9%87%8D%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AE%E5%AF%BE%E5%87%A6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-333925",
+      "summary": "以下の状況の場合に Acrobat の動作を軽くする設定をご実施いただくことで改善される場合がございます。PDF がなかなか開かない 編集または閲覧中にフリーズするなどの事象がある場合 Acrobat または Acrobat Reader の起動が遅い 以下に手順を記載しておりますので、ご確認いただき、設定変更をご ...",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1264,9 +1372,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1276,12 +1384,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ac6f17f47d1d471c",
-      "title": "Flower Delivery - Send Flowers - From You Flowers",
-      "url": "https://www.fromyouflowers.com/",
-      "summary": "Shop our flower and gift delivery service with same day options available. Gifts and flowers delivered by From You Flowers and our networks of partners.",
+      "id": "b1405b9ff7761386",
+      "title": "Adobe Acrobat DC Continuous update failure to update - Community",
+      "url": "https://community.adobe.com/questions-9/adobe-acrobat-dc-continuous-update-failure-to-update-1275640",
+      "summary": "Hello everyone, as of recently we have been unable to open Adobe Acrobat without it basically failing and wanting to close down. I believe it is connected to this Adobe Acrobat DC Continuous update failing to update or even install I think. I don't even know where to begin, but this is important to...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1290,9 +1398,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "community"
       ],
-      "primary_type": "model",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1302,12 +1410,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aac739cdad1a3c1f",
-      "title": "Flower Delivery | Send Flowers | Farmgirl Flowers",
-      "url": "https://farmgirlflowers.com/",
-      "summary": "Order fresh flowers online for delivery. We ship our signature burlap-wrapped flower bouquets, plants and more to recipients (like you!) coast to coast.",
+      "id": "6a85a4543bb0af15",
+      "title": "Adobe Acrobat not opening browser for sign in | Community",
+      "url": "https://community.adobe.com/questions-9/adobe-acrobat-not-opening-browser-for-sign-in-1280088",
+      "summary": "I am trying to log into my adobe account on adobe acrobat on windows 10, my account is linked to my gmail account, when i click on sign in with gmail a message comes up saying \"we have opneed another browser to authenticate sign in\" or something along this line. However there is no open browser for...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1316,9 +1424,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1328,12 +1436,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8c07ea0d72c48f01",
-      "title": "Flower Delivery | Send Fresh Flowers Online - The Bouqs Co.",
-      "url": "https://bouqs.com/",
-      "summary": "Order dependable flower delivery with The Bouqs Co. for any occasion. Easily discover and send flowers online as soon as today.",
+      "id": "2bf69a575cc079db",
+      "title": "Adobe Reader won't print. (But problem solved.) | Community",
+      "url": "https://community.adobe.com/questions-12/adobe-reader-won-t-print-but-problem-solved-1510930",
+      "summary": "Reset Acrobat print preferences Inside Acrobat open any PDF, go to File > Print, manually select your physical printer from the printer dropdown and click Print. This re-registers your printer selection within Acrobat's own preferences rather than relying solely on the Windows default.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1342,137 +1450,8 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2ae2400f7f64d46",
-      "title": "Flowers & Gift Delivery for Every Occasion | 1800Flowers",
-      "url": "https://www.1800flowers.com/flowers-gifts-400194001",
-      "summary": "Shop flowers and gifts at 1800Flowers.com for every occasion. Browse Valentine’s best sellers, birthday and sympathy arrangements, farm‑fresh bouquets and same‑day delivery with exclusive deals.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eb1595b542854060",
-      "title": "Flowers, Flower Delivery, Fresh Flowers Online – 1-800 ...",
-      "url": "https://www.1800flowers.com/",
-      "summary": "Send flowers and send a smile! Discover fresh flowers online, gift baskets, and florist-designed arrangements. Flower delivery is easy at 1-800-Flowers.com.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d3d4b43d4e397e83",
-      "title": "Forage Sisters | Local Florist for Weddings, Events, and ...",
-      "url": "https://www.flowerbasketquincy.com/",
-      "summary": "We specialize in wedding flowers, everyday arrangements, and sympathy bouquets. Serving Central and Eastern Washington with fresh blooms and personalized floral designs.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab8fbfef5a84c37c",
-      "title": "Global Package Tracking - Track Your Shipments Online | MyPackageTrack",
-      "url": "https://mypackagetrack.com/track",
-      "summary": "Easily track your packages from over 2800+ global carriers. Enter your tracking number to get real-time updates on your international and domestic shipments in one place",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7541b8c2d0ba58ca",
-      "title": "Ground Advantage | USPS",
-      "url": "https://www.usps.com/ship/ground-advantage.htm?iom=Q266-52GA-BSNA-SE-XXX-BI-XXX-XX-XX-X-GRA",
-      "summary": "USPS Ground Advantage™ service is an affordable and reliable way to send packages inside the U.S. expected in 2–5 days for items up to 70 lbs. Tracking and $100 insurance are included.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
+        "teardown",
+        "community"
       ],
       "primary_type": "teardown",
       "routing_targets": [
@@ -1484,10 +1463,91 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b95d5827f99c472b",
-      "title": "Informed Delivery® - Mail & Package Notifications | USPS",
-      "url": "https://informeddelivery.usps.com/box/pages/intro/start.action",
-      "summary": "Informed Delivery is a free service from USPS that shows you preview images of incoming mail, plus status updates about your incoming and outbound packages. Get notifications in a morning Daily Digest email, or at any time from the dashboard using your smartphone, computer, or USPS Mobile app.",
+      "id": "f2c07706601ce747",
+      "title": "Amazon.com: Timex Deepwater Meridian 200",
+      "url": "https://www.amazon.com/timex-deepwater-meridian-200/s?k=timex+deepwater+meridian+200",
+      "summary": "Men's Sport Casual Brycen Eco-Drive Chronograph Stainless Steel Watch, 12/24 Hour Time, Date, Tachymeter, 100 Meters Water Resistant, Spherical Mineral Crystal, Weekender",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b47ff94db36795c",
+      "title": "Amazon.com: Timex Men's Deepwater Meridian 200 HEV Automatic 44mm Watch ...",
+      "url": "https://www.amazon.com/Timex-Deepwater-Meridian-Automatic-Watch/dp/B0H4X8HKQ2",
+      "summary": "The Deepwater Meridian 200 HEV is expertly engineered with 200m of water resistance and a 44mm stainless-steel case. You’ll find an automatic helium escape valve positioned beside 10 o’clock, allowing trapped helium to safely release during decompression and prevent damage to the crystal.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c4b82f52986a31f6",
+      "title": "An Analysis of Wages and Salaries Extracted From Collective ... - Scribd",
+      "url": "https://www.scribd.com/document/536726562/An-Analysis-of-Wages-and-Salaries-Extracted-From-Collective-Agreements-Registered-In-2019",
+      "summary": "The document analyzes wages and salaries extracted from collective agreements registered in 2019 in Trinidad and Tobago. It finds that the highest wage increase was 25% negotiated for credit union employees, while the modal or most common increase was 9%.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0dc7fe7ca3713ef8",
+      "title": "An Analysis of Wages and Salaries Extracted from Collective Agreements",
+      "url": "http://www.industrialcourt.org.tt/media-centre/publications/an-analysis-of-wages-and-salaries-extracted-from-collective-agreements",
+      "summary": "Visit our Library to get the full copy of this document.",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1510,12 +1570,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e5a1a62f7b81fb91",
-      "title": "Kopieren en plakken - Microsoft Community",
-      "url": "https://answers.microsoft.com/nl-nl/windows/forum/all/kopieren-en-plakken/c497e035-7424-49d3-9982-46161df9609a",
-      "summary": "Kopieren met de muis werkt niet goed meer. Kan het kloppen dat dit met Windows 7 te maken heeft? Meestal moet ik meerdere regels uit een mail of van een site kopieren. Bijna altijd kom ik niet verder",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "id": "24092459439d6fa2",
+      "title": "Augmented reality | Definition, Examples, & Facts | Britannica",
+      "url": "https://www.britannica.com/technology/augmented-reality",
+      "summary": "Entertainment & Pop Culture.",
+      "discovery_channel": "broad_web+developer",
+      "query": "AR glasses; AR glasses SDK developer",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1524,9 +1584,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1536,10 +1596,62 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "09304a68718241fa",
-      "title": "Label Broker | USPS",
-      "url": "https://tools.usps.com/label-broker.htm",
-      "summary": "Welcome to USPS Label Broker®, where you can easily print labels purchased online. Please provide your Label ID and 5-digit return (from) address ZIP Code™.",
+      "id": "02b0e7e2780231c5",
+      "title": "CADASTROS ESTADUAIS - sintegra.gov.br",
+      "url": "http://www.sintegra.gov.br/new_bv.html",
+      "summary": "CADASTROS ESTADUAIS Escolha uma Unidade da Federação para consulta Acre Alagoas Amapá Amazonas Bahia Ceará Distrito Federal Espírito Santo Goiás Maranhão Mato Grosso Mato Grosso do Sul Minas Gerais Pará Paraíba Paraná Pernambuco Piauí Rio de Janeiro Rio Grande do Norte Rio Grande do Sul Rondônia Roraima Santa Catarina São Paulo ...",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "90035962bb513cf4",
+      "title": "Cameras & Accessories | Cardinal Camera",
+      "url": "https://cardinalcamera.com/",
+      "summary": "Cameras & Accessories | Cardinal Camera . Since 1937. Find a Store. Shop Gear. Prints & Gifts. Services. Classes. Video Transfers. Photo Scanning. Passport Photography. Photo Restoration. Film Development. Classes. Rentals. Repairs. Our Locations. Find a Store. Contact. About Us. Jobs. account_circle. person. Sign In. person_add. Register.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d3e4c762af3adba1",
+      "title": "Central Bank of Trinidad and Tobago",
+      "url": "https://www.central-bank.org.tt/wp-content/uploads/2025/05/AES-2024-Faw.pdf",
+      "summary": "r private sector wage negotiations. In 2024, wage increases ranged from 1.0 per cent to 4.0 per cent, same as the range observed in 2023. Receiving the highest average wage increases in 2024 were the Transportation and Storage and Other services sectors, with increases of 3.8 per",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1562,90 +1674,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4624ba1d5853c37e",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-turn-off-encryption-on-internal-non/",
-      "summary": "Microsoft Community",
+      "id": "44df21ce6d2c01bb",
+      "title": "Comparativa y ranking de teléfonos móviles - Versus",
+      "url": "https://versus.com/es/phone",
+      "summary": "Encuentra los mejores móviles en cuanto a batería, cámara, rendimiento y precio con nuestra herramienta de comparación.",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d7a4104393e74a4d",
-      "title": "Microsoft Community",
-      "url": "https://www.answers.microsoft.com/pt-br/windows/forum/all/n%C3%A3o-aparece-tela-de-login-no-windows-10/",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d31390a6ca423152",
-      "title": "My modern warfare two will not play - Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/xbox/forum/all/my-modern-warfare-two-will-not-play/3c981b9b-5b3c-4169-b85b-3b73195d1ced",
-      "summary": "Modern warfare two will not play Type of abuse Harassment or threats Inappropriate/Adult content Nudity Profanity Software piracy Spam/Advertising/Phishing, and Scam Virus/Spyware/Malware danger Other Term of Use or Code of Conduct violation Hate Speech and Discrimination Suicide or self-injury Child exploitation or abuse",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "upcoming smart glasses; electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2de3dd1764afc7db",
-      "title": "Opendoor Technologies Inc. (OPEN)",
-      "url": "https://finance.yahoo.com/quote/OPEN/",
-      "summary": "Find the latest Opendoor Technologies Inc. (OPEN) stock quote, history, news and other vital information to help you with your stock trading and investing.",
-      "discovery_channel": "broad_web",
-      "query": "open source smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1666,10 +1700,36 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dac9308b214d36f2",
-      "title": "Package Tracking | Track Packages Worldwide | 4Tracking",
-      "url": "https://www.4tracking.net/en/",
-      "summary": "Package tracking for any carrier or order. Track packages worldwide with real-time delivery updates, scan history, customs progress, and carrier handoffs.",
+      "id": "d861bd8b176c0627",
+      "title": "Deepwater Meridian 200 44mm Stainless Steel Bracelet Watch",
+      "url": "https://timex.com/products/deepwater-meridian-200-44mm-stainless-steel-bracelet-watch-tw2w81900",
+      "summary": "Merging resilience and elegance with crucial functions for underwater pursuits, our Deepwater Meridian 200 is expertly built to venture deeper with a substantial 44mm recycled stainless-steel case.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "50cab0b32dfb0623",
+      "title": "Douglas Johnson Obituary | Wight & Comes Funeral Chapel | 1951 - 2026",
+      "url": "https://www.wightandcomes.com/memorials/douglas-johnson/5714523/",
+      "summary": "Visitation will be at Wight and Comes Funeral Chapel from 4:00p.m. -6:00p.m. with a Prayer Service to begin at 6:00 p.m. on Saturday June 20, 2026. Wight and Comes Funeral Chapel serving the family ~ www.wightandcomes.com Douglas Merle Johnson was born April 16, 1951 to Merle and Carole (Torgerson) Johnson in Watertown, SD.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1692,10 +1752,557 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "89de0b6a8cc954a2",
-      "title": "Package Tracking – Free Real-Time Tracking Worldwide | 17TRACK",
-      "url": "https://www.17track.net/en/tracking",
-      "summary": "Track packages worldwide with any tracking number. Get real-time delivery updates from 3,300+ carriers. Free tracking, no login required.",
+      "id": "6f434a0dea27c062",
+      "title": "Download",
+      "url": "http://www.sintegra.gov.br/download.html",
+      "summary": "Programa de Transmissão Eletrônica de Documentos - TED Módulo para verificar a consistência das Inscrições Estaduais",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f46c2b94e315d80b",
+      "title": "Download Acrobat Reader Offline | Community - Adobe Support Community",
+      "url": "https://community.adobe.com/questions-12/download-acrobat-reader-offline-1526699",
+      "summary": "Hello,How download the last Offline packages for Acrobat Reader DC ?EXE and MSI ?Thanks",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0af9c25876ca6d28",
+      "title": "Em alta – Google Trends",
+      "url": "https://trends.google.com.br/trending",
+      "summary": "Descubra o que está em alta agora e as tendências de pesquisa mais recentes no Google Trends",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b29403042af2a4f",
+      "title": "Estado de Goiás",
+      "url": "http://www.sintegra.gov.br/Cad_Estados/cad_GO.html",
+      "summary": "Quando o resto da divisão for zero (0) ou um (1), o dígito verificador será zero (0);",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d3e81d70d4e22dd6",
+      "title": "Estado do Acre - sintegra.gov.br",
+      "url": "http://www.sintegra.gov.br/Cad_Estados/cad_RN.html",
+      "summary": "GOVERNO DO ESTADO DO RIO GRANDE DO NORTE ROTEIRO DE CRÍTICA DA INSCRIÇÃO ESTADUAL",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7bc57b1ed9fec7b8",
+      "title": "Estado do Ceará",
+      "url": "http://www.sintegra.gov.br/Cad_Estados/cad_CE.html",
+      "summary": "Fórmula do cálculo do dígito verificador da inscrição estadual (módulo 11)",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "581e18ed930190b3",
+      "title": "Find Timex Deepwater Meridian 200 Deals - Compare Today's Best Deals on ...",
+      "url": "https://compare.deals/timex-deepwater-meridian-200",
+      "summary": "Merging resilience and elegance with crucial functions for underwater pursuits, our Deepwater Meridian 200 is expertly built to venture deeper with a substantial 44mm recycled stainless-steel case.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b55906e3b717df9f",
+      "title": "Google",
+      "url": "https://www.google.com.br/index.html",
+      "summary": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0a446275f0ff1f67",
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.com.br/",
+      "summary": "O índice mais diversificado do mundo para pesquisar livros na íntegra.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "361c28c53bdeb4d0",
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.com.br/books?hl=pt-PT",
+      "summary": "Pesquise no índice de livros de texto integral mais abrangente do mundo.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1519fd4e85c1f71b",
+      "title": "Google Earth",
+      "url": "https://www.google.com.br/earth/index.html",
+      "summary": "Abrir no Google Earth Visualização do Google Earth Veja fotografias das paisagens mais incríveis e enigmáticas do planeta no Google Earth. Abrir no Google Earth Este é nosso lar Visite casas tradicionais de todo o mundo com o Street View e descubra como a definição de \"lar\" pode ser tão diferente e semelhante ao mesmo tempo.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c125867a79bbdbc0",
+      "title": "Google Earth",
+      "url": "https://maps.google.com.br/intl/pt-BR/earth/download/gep/agree.html",
+      "summary": "Com o Google Earth, você viaja para qualquer lugar da Terra e pode ver imagens de satélite, mapas, terrenos e construções em 3D, das galáxias do espaço sideral aos cânions dos oceanos. Você pode explorar um vasto conteúdo geográfico, salvar seus locais visitados e compartilhar com os amigos.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e459602b81a92333",
+      "title": "Google Images",
+      "url": "https://images.google.com.br/",
+      "summary": "Google Images. The most comprehensive image search on the web.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d6610d8ee3eabd99",
+      "title": "Google Tradutor",
+      "url": "https://translate.google.com.br/",
+      "summary": "O Google Tradutor é um serviço gratuito que traduz palavras, frases e páginas da Web para mais de cem idiomas.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2660bd8fe020cadb",
+      "title": "Google Tradutor",
+      "url": "https://translate.google.com.br/details",
+      "summary": "Traduza textos em diferentes idiomas com o Google Tradutor.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "331b7395ed7bb755",
+      "title": "Google Trends",
+      "url": "https://trends.google.com.br/trends/",
+      "summary": "Criado com o Google Trends Confira como o Google Trends está sendo usado no mundo todo nas redações, ONGs e muito mais.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fca329dde5a42c78",
+      "title": "How to purchase Adobe Acrobat Pro without subscription ... - Community",
+      "url": "https://community.adobe.com/questions-9/how-to-purchase-adobe-acrobat-pro-without-subscription-1252631",
+      "summary": "If you would like the most updated non-subscription version of Acrobat, Acrobat Classic desktop software provides three years of paid access to Acrobat desktop and is available as a one-time, upfront purchase. Learn more at Adobe Acrobat Classic FAQ.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4ebf9c1c4142bccc",
+      "title": "Huawei",
+      "url": "https://id7.cloud.huawei.com/CAS/portal/login.html",
+      "summary": "Huawei ... ‎",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8eed1ea257b2f49a",
+      "title": "Huawei | LinkedIn",
+      "url": "https://www.linkedin.com/company/huawei/",
+      "summary": "Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices. With integrated solutions across four key domains – telecom networks, IT ...",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a68ae1e7f27e3abf",
+      "title": "Informações Gerais",
+      "url": "http://www.sintegra.gov.br/info_ind.html",
+      "summary": "O fluxo de informações entre os contribuintes e os Estados: melhorias alcançadas Sistema de Acesso aos Cadastros Estaduais Programa Validador O fluxo de informações entre as administrações tributárias estaduais: melhorias alcançadas Unidades de Enlace Mudanças Legislativas e Regimentais Recepção dos dados",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "df46aa901355e269",
+      "title": "International Fertilizer Association | The Global Fertilizer ...",
+      "url": "https://www.fertilizer.org/",
+      "summary": "IFA is the only global fertilizer association and has a membership of around 500 entities in some 80 countries, encompassing all actors in the fertilizer value chain.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d80a347d822ccdff",
+      "title": "Jeann Bevers Obituary | Wight & Comes Funeral Chapel | 1924 - 2026",
+      "url": "https://www.wightandcomes.com/memorials/jeann-bevers/5690446/",
+      "summary": "Wight & Comes Funeral Chapel serving the family ~ www.wightandcomes.com Jeann Bevers age 101 passed away on February 25, 2026 in Watertown, South Dakota. Memorial Service will be at 11:00 am March 4, 2026 at the Wight and Comes Funeral Chapel in Watertown, with a visitation one hour prior to the service.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1718,36 +2325,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8e40f04295dc9657",
-      "title": "Problema com conexão em rede usando credencial",
-      "url": "https://answers.microsoft.com/pt-br/windows/forum/all/problema-com-conex%C3%A3o-em-rede-usando/c9371980-2c03-432c-af65-603877025c88",
-      "summary": "Não estou conseguindo acessar algumas pastas compartilhadas na rede usando minhas credenciais no ambiente. Uso uma conta Azure vinculada com a empresa. Porém com um usuário local no mesmo computador o",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8c4e7e09c2af4518",
-      "title": "Recibir Correo y Paquetes | USPS",
-      "url": "https://es.usps.com/manage/",
-      "summary": "Track USPS package deliveries, get tracking text and email notifications, forward mail, change your address, and learn about setting up PO boxes or home mailboxes.",
+      "id": "8aa75749b88876f6",
+      "title": "Labour Market Information",
+      "url": "https://www.labour.gov.tt/education/labour-market-information",
+      "summary": "Collection, processing, analysis and publication of data from statistical surveys and administrative records on areas relevant to the Labour Market of Trinidad and Tobago (T&T) such as:",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1770,88 +2351,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "800d8e0d84b71fbe",
-      "title": "Richmond County Speed | The official Blog for the Richmond County Speed ...",
-      "url": "https://richmondcountyspeed.wordpress.com/",
-      "summary": "Coach Dedrick Petty will be coaching with the Anson Mpactthis summer, and possibly in the Spring. The rest of the Richmond County coaching staff will be staying in Richmond County with the upstart Carolina Pride Football Program.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "11c9a8c54ca5d629",
-      "title": "Skinny email margins (weird) - Microsoft Q&A",
-      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/skinny-email-margins-weird/9dcb30e2-870f-4aeb-badc-f7798006fb9a",
-      "summary": "I think I accidentally used a key shortcut to make my email text margins very skinny or perhaps create a permanent skinny column in all of my emails. This is consistent with previewing and opening an email independently. I'm using M365 E5 on Windows 11…",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d8d0da0de53b87d4",
-      "title": "Speed Coaches | Richmond County Speed",
-      "url": "https://richmondcountyspeed.wordpress.com/speed-coaches/",
-      "summary": "Head Coach Dedrick Petty. Offensive Coordinator Kyle Spencer. Defensive Coordinator and Running Back Coach RJ Jones and Chris Covington. Offensive / Defensive Line Coach Fred Dunn. Offensive / Defensive Line Coach Maurice Waddell. Blog at WordPress.com. Do Not Sell or Share My Personal Information.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c81247399769feec",
-      "title": "Target - Chicago, IL",
-      "url": "https://www.yelp.com/biz/target-chicago",
-      "summary": "Visit your Target in Chicago, IL for all your shopping needs including clothes, lawn & patio, baby gear, electronics, groceries, toys, games, shoes, sporting goods and more.",
+      "id": "c5fdc840e16b1891",
+      "title": "Laptop comparison | Compare laptops' specs & features - Versus",
+      "url": "https://versus.com/en/laptop",
+      "summary": "Compare laptops side-by-side. Filter by screen size, RAM, storage, and more to find the right laptop for you.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1874,244 +2377,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5cc476c22dd4e047",
-      "title": "Target - Chicago, IL - Yelp",
-      "url": "https://www.yelp.com/biz/target-chicago-11",
-      "summary": "Visit your Target in Chicago, IL for all your shopping needs including clothes, lawn & patio, baby gear, electronics, groceries, toys, games, shoes, sporting goods and more.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c364c26720d81738",
-      "title": "Target - Larrabee St, Chicago, IL - Hours & Weekly Ad",
-      "url": "https://www.storeopeninghours.com/target-larrabee-st-chicago-il",
-      "summary": "Target sits at 1200 North Larrabee Street, in the north region of Chicago, in Goose Island (near Sedgwick Station). The store is a convenient addition to the districts of Forest Park, Lincolnwood, Oak Park, River Forest, Bedford Park, Cicero and Oak Lawn.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "af728bdab770a711",
-      "title": "Target - Logan Square, Chicago, IL - Hours & Weekly Ad",
-      "url": "https://www.storeopeninghours.com/target-logan-square-chicago-il",
-      "summary": "Here you'll find the business hours, local directions or direct number for Target Logan Square, Chicago, IL.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a793c1567dba767a",
-      "title": "Target Chicago State St. Store, Chicago, IL",
-      "url": "https://www.target.com/sl/chicago-state-st-/2799",
-      "summary": "Shop Target Chicago State St. Store for furniture, electronics, clothing, groceries, home goods and more at prices you will love.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eaf2dc09638a5541",
-      "title": "Target Chicago West Loop Store, Chicago, IL",
-      "url": "https://www.target.com/sl/chicago-west-loop/2781",
-      "summary": "Shop Target Chicago West Loop Store for furniture, electronics, clothing, groceries, home goods and more at prices you will love.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9954d57c165dcb68",
-      "title": "Target Locations & Hours in Chicago, Illinois - MyStore411",
-      "url": "https://www.mystore411.com/store/list_city/2/Illinois/Chicago/Target-store-locations?page=1",
-      "summary": "Target in Chicago, Illinois: complete list of store locations, hours, holiday hours, phone numbers, and services. Find Target location near you.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e39ee22f5384a5c4",
-      "title": "Target locations in Chicago - See hours, directions, tips, and photos.",
-      "url": "https://app.foursquare.com/locations/target/chicago",
-      "summary": "Find Target locations near you. See hours, directions, photos, and tips for the 44 Target locations in Chicago.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "84dd00cfcfde6d41",
-      "title": "Target Stores in Illinois (102 Locations) - Sep 2026",
-      "url": "https://www.storelocators.com/store-lists/target/illinois",
-      "summary": "All 102 Target store locations in Illinois with addresses, phone numbers, and hours. Updated daily.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "01522c8e95afd53f",
-      "title": "Target, 1940 W 33rd St, Chicago, IL 60608, US - MapQuest",
-      "url": "https://www.mapquest.com/us/illinois/target-27066937",
-      "summary": "Get more information for Target in Chicago, IL. See reviews, map, get the address, and find directions.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "445e48786f2330ba",
-      "title": "Track a package via tracking number - Parcel tracking",
-      "url": "https://www.ordertracker.com/",
-      "summary": "Track a package using your parcel tracking number, our universal tracking search engine enables you to track any parcel from international carriers.",
+      "id": "3855115a78c06761",
+      "title": "Lowell Aman Obituary | Wight & Comes Funeral Chapel | 1956 - 2026",
+      "url": "https://www.wightandcomes.com/memorials/lowell-aman/5701933/",
+      "summary": "Wight & Comes Funeral Chapel in Watertown, SD: View the obituary for Lowell Aman. Lowell Aman age 69 of Watertown, South Dakota passed away April 5, 2026.Services will…",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -2134,12 +2403,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "062633a4177f2fe4",
-      "title": "Track a The UPS Store Package",
-      "url": "https://www.theupsstore.com/tools/track-a-package",
-      "summary": "The UPS Store helps you track your packages with multiple carriers. Stay on top of all of your important deliveries with package tracking.",
+      "id": "23c1bae7ac730dc9",
+      "title": "Manual de Sistemas",
+      "url": "http://www.sintegra.gov.br/Cad_Estados/cad_BA.html",
+      "summary": "1 Cálculo do Dígito Verificador para inscrições estaduais com 8 dígitos: 1. Para Inscrições cujo primeiro dígito da I.E. é 0,1,2,3,4,5,8 cálculo pelo ...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2160,12 +2429,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0e68fd6904e46452",
-      "title": "Tracking - DHL - United States of America",
-      "url": "https://www.dhl.com/us-en/home/tracking.html",
-      "summary": "International tracking of your DHL shipment: have your DHL tracking number at hand to track and trace.",
+      "id": "2f0830fd78682286",
+      "title": "Minimum wage conundrum - Trinidad and Tobago Newsday",
+      "url": "https://newsday.co.tt/2024/01/04/businesses-workers-weigh-effects-of-3-increase-minimum-wage-conundrum/",
+      "summary": "Minister of Labour Stephen Mc Clashie said the minimum wage increase, which took effect on January 1, will benefit around 190,000 workers.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2186,12 +2455,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3e2713fbf917b5e7",
-      "title": "Tracking | UPS - United States",
-      "url": "https://www.ups.com/track?tracknum=tracking&loc=en_US",
-      "summary": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package.",
+      "id": "1ab5dd7e5d5d6bb3",
+      "title": "Notícias",
+      "url": "http://www.sintegra.gov.br/noticias.html",
+      "summary": "DLL de Validação das Inscrições Estaduais O pacote DLL3.zipcontém manual com instruções para a utilização da DLL. TRANSMISSÃO ELETRÔNICA DE DOCUMENTOS - TED Versão atual disponível para download neste site 3.11.0. A versão 3.11.0 do programa de transmissão TED substitui a versão 3.10.2.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2212,10 +2481,62 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "02af108646451a18",
-      "title": "Universal Parcel Tracking - Global Package Tracking",
-      "url": "https://parcelsapp.com/",
-      "summary": "Parcel Tracking Worldwide. Track Parcel in USA. Global postal tracking from eBay, AliExpress, ASOS, Shein, Amazon. Tracking packages from China, UK, Germany",
+      "id": "a32e9a4a7fe95210",
+      "title": "O fluxo de informações entre os contribuintes e os estados",
+      "url": "http://www.sintegra.gov.br/info3.html",
+      "summary": "No que tange à melhoria da qualidade das informações recebidas, desenvolveu-se um Sistema de Acesso aos Cadastros Estaduais e um Validador para verificar a consistência dos dados nos arquivos elaborados de acordo com o leiaute disposto na legislação para os usuários de sistemas eletrônicos de processamento de dados.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0b3860f715e29af1",
+      "title": "Obituaries",
+      "url": "https://www.wightandcomes.com/obituaries",
+      "summary": "Learn About Online MemorialsFortunately, online memorials have taken the place of the print obituary or death notice, and our funeral home offers what we consider to be the finest example of online memorials, the Book of Memories™. Created by a team of award-winning web developers and designers lead by a funeral professional with over 25 years of experience, the Book of Memories™ is ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f6c43645f551d749",
+      "title": "Obituary Listing",
+      "url": "https://www.wightandcomes.com/obituary-listing",
+      "summary": "Leave a message of condolence while browsing through obituaries and death notices for current and past services being held at our funeral home.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -2238,10 +2559,219 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f9da582de83b7bb0",
-      "title": "USPS",
-      "url": "https://m.usps.com/m/TrackConfirmAction_input",
-      "summary": "Track your packages and mail online with USPS Tracking to check status, location, and delivery updates.",
+      "id": "b193b6ff5983527c",
+      "title": "Offline installer for Adobe Reader | Community",
+      "url": "https://community.adobe.com/questions-12/offline-installer-for-adobe-reader-1504169",
+      "summary": "I'm trying to download offline installer of latest Adobe Reader for bulk installations on PCs in my company. It used to be simple and last version I got was 11.02. Latest version forces me to register for distribution of Adobe software. Fair enough, I requested access to the Reader, got one e...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a7ea9ab65b965efd",
+      "title": "Patrick Mack Obituary - Watertown, SD | Wight & Comes Funeral Chapel",
+      "url": "https://memorials.wightandcomes.com/patrick-mack/3746488/",
+      "summary": "Share Memories of Patrick & Support the Mack Family",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f496be6371540455",
+      "title": "Robert \"Bob\" Hartman Obituary | Wight & Comes Funeral Chapel ...",
+      "url": "https://www.wightandcomes.com/memorials/robert--hartman/5718941",
+      "summary": "Wight & Comes Funeral Chapel serving the family ~ www.wightandcomes.com Robert “Bob” W. Hartman, 91, of Sioux Falls, SD died peacefully on June 4, 2026 at the Good Samaritan Sioux Falls Village Nursing Home in Sioux Falls, SD. Funeral service will be at 1:00pm on Friday, June 19, 2026 at the Wight & Comes Funeral Chapel in Watertown.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "79ce9203d39dc962",
+      "title": "SINTEGRA",
+      "url": "http://www.sintegra.gov.br/",
+      "summary": "O SINTEGRA oferece informações sobre cadastros estaduais de contribuintes do ICMS, incluindo consulta de dados e validação de inscrições estaduais.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ff15a53c5f430864",
+      "title": "SO, ADOBE ACROBAT SAYS THAT IT IS FREE? REALLY? - Community",
+      "url": "https://community.adobe.com/questions-9/so-adobe-acrobat-says-that-it-is-free-really-1268576",
+      "summary": "Adobe Acrobat is the name for BOTH Reader and Pro (and Standard). For example, if you have a free Creative Cloud account, the Adobe Acrobat listed is the Reader; if you have a subscription, it is the Pro version.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f6134afa88cb78db",
+      "title": "There was an error opening this document. Access denied ... - Community",
+      "url": "https://community.adobe.com/questions-12/there-was-an-error-opening-this-document-access-denied-1512508",
+      "summary": "Access denied. Adobe reader can browse directory structure just fine. Adobe reader can open and show same file if the file copied to system drive. Notepad can open same pdf file (and show garbage, obviously) Any other program can open same file just fine too. There are no any messages in Application and System logs from Adobe reader.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1bf2628acf50a4ab",
+      "title": "Timex Deepwater - Iguana Sell",
+      "url": "https://www.iguanasell.com/collections/timex-deepwater",
+      "summary": "If you are looking to treat the hero in your life, this watch delivers! However, pulling off the surprise in our neck of the woods, felt like out smarting the Riddler!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "94cf152cd518ac89",
+      "title": "Timex Deepwater Meridian 200 44mm Stainless Steel Bracelet Watch ...",
+      "url": "https://www.garmentory.com/sale/timex/mens-watches/3308564-timex-deepwater-meridian-200-44mm-stainless-steel-bracelet-watch",
+      "summary": "Water resistant to 200 meters, this watch is suitable for swimming, snorkeling, surfing, and recreational scuba diving. To maintain water resistance, do not press any buttons while underwater.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bfa5643c7174a167",
+      "title": "Trinidad and Tobago Salary Survey - KrollConsultants",
+      "url": "https://www.krollconsultants.com/services/global-salary-survey/trinidad-and-tobago-salary-survey/",
+      "summary": "The Trinidad and Tobago salary survey (compensation and benefits survey), includes remote and difficult locations, as-well as niche industries, for which reliable data and information are hard to come by.",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -2264,10 +2794,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6b05ecce756a2659",
-      "title": "USPS.com FAQs",
-      "url": "https://faq.usps.com/s/article/Where-is-my-package",
-      "summary": "Find answers to common questions about tracking packages and locating missing shipments with USPS.",
+      "id": "f83d3042e807eb3c",
+      "title": "Trinidad and Tobago: Salaries, Work, Wages - WageIndicator Foundation",
+      "url": "https://wageindicator.org/en-tt/",
+      "summary": "Salaries, work, and wages data across sectors in Trinidad and Tobago. Discover pay trends and labour insights. Explore the latest updates now.",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -2290,64 +2820,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7f3acc8687ecb798",
-      "title": "USPS.com® - USPS Tracking®",
-      "url": "https://tools.usps.com/go/TrackConfirmAction!input.action",
-      "summary": "USPS.com® - USPS Tracking®",
+      "id": "93492dc0a6cff873",
+      "title": "Versus | Bandingkan semua",
+      "url": "https://versus.com/id",
+      "summary": "Versus adalah platform perbandingan global berdasarkan data, mencakup lebih dari 90 kategori. Bandingkan smartphone, kamera, headphone, kartu grafis, dan banyak lagi. Dengan spesifikasi teknologi, visualisasi data, dan perbandingan harga, Versus adalah pencari produk terbaik untuk berbagai macam kebutuhan elektronik, dari smartphone hingga hardware PC.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "80e982ddc2e61dca",
-      "title": "USPS.com® - USPS Tracking®",
-      "url": "https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1=Enter+tracking+number",
-      "summary": "Track your USPS packages by entering the tracking number to check the delivery status and location.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fc6bb99cca7bc478",
-      "title": "USPS.com® - USPS Tracking®",
-      "url": "https://tools.usps.com/go/TrackConfirmAction?locale=en",
-      "summary": "Track your USPS packages and shipments online with ease using the USPS Tracking® tool.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2368,12 +2846,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "01b04cc4475a772a",
-      "title": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/%2F%2F",
-      "summary": "Toggle the table of contents 3 languagesAdd topic",
+      "id": "be90fcf21c65078d",
+      "title": "Versus | Compare everything",
+      "url": "https://versus.com/en",
+      "summary": "Versus is a comparison platform with over 100 categories. Compare anything side-by-side with detailed specifications, filters, and clear data visualizations.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3e77a55cd9a6ded1",
+      "title": "Versus | Compáralo todo",
+      "url": "https://versus.com/es",
+      "summary": "Versus en una plataforma global de comparaciones basadas en datos que cubre más de 90 categorías. Compara teléfonos móviles, cámaras, auriculares, tarjetas gráficas y mucho más. Gracias a especificaciones técnicas, visualización de datos y comparaciones de precios, Versus se convierte en el mejor buscador de productos electrónicos, que incluye desde smartphones hasta hardware de PC.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2385,6 +2889,267 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "beeb9ce8594d22c8",
+      "title": "Versus | Confronta di tutto",
+      "url": "https://versus.com/it",
+      "summary": "Versus è una piattaforma globale basata sul confronto dati, che copre oltre 90 categorie. Confronta smartphone, fotocamere, cuffie, schede grafiche e molto altro. Con specifiche tecniche dettagliate, visualizzazioni di dati e confronti di prezzo, Versus è il miglior metodo di ricerca di prodotti per un'ampia gamma di beni di consumo di elettronica, dagli smartphone ad hardware per PC.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5374ee1cc2f35692",
+      "title": "Versus | Porównaj wszystko",
+      "url": "https://versus.com/pl",
+      "summary": "Versus to globalna platforma porównywania oparta na danych, posiada ponad 90 kategorii. Porównaj smartfony, kamery, słuchawki, karty graficzne i wiele innych. Dzięki szczegółowym specyfikacjom technicznym, wizualizacjom danych i porównaniu cen, Versus jest najlepszą wyszukiwarką produktów w szerokim zakresie elektroniki konsumenckiej, od smartfonów po sprzęt PC.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d71ddb4f5129681",
+      "title": "Versus | Tout comparer",
+      "url": "https://versus.com/fr",
+      "summary": "Versus est une plateforme globale de comparaison qui couvre plus de 90 catégories. Compare des smartphones, appareils photo, écouteurs, cartes graphiques et bien plus. Grâce à des fiches techniques détaillées, des visualisations de données et des comparaisons de prix, Versus est le meilleur moteur de recherche en matière de produits électroniques, des smartphones en passant par le ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "70aa9bb9ab826f19",
+      "title": "Versus | Vergleiche alles",
+      "url": "https://versus.com/de",
+      "summary": "Versus ist eine globale Vergleichsplattform, die über 90 Kategorien abdeckt. Vergleiche Smartphones, Kameras, Kopfhörer, Grafikkarten und vieles mehr. Mit detaillierten technischen Daten, Datenvisualisierungen und Preisvergleichen ist Versus der beste Produktfinder für eine breite Palette von Unterhaltungselektronik, von Smartphones bis zu PC-Hardware.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f72d38f6a522d5dc",
+      "title": "Versus | 万物皆可对比",
+      "url": "https://versus.com/cn",
+      "summary": "Versus，一个成熟的比较平台，从比较手机到比较城市，脱去繁杂的营销外壳，呈现最真实的一面，让您轻松掌握一切资讯。",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f96e9e33dd197eea",
+      "title": "Vickie Brown Obituary | Wight & Comes Funeral Chapel | 1957 - 2026",
+      "url": "https://www.wightandcomes.com/memorials/vickie-brown/5717451/",
+      "summary": "Wight & Comes Funeral Chapel in Watertown, SD: View the obituary for Vickie Brown. Vickie Brown age 68 of Watertown, SD passed away on May 31, 2026 at the Sanford USD M…",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0fcddc4c218b4085",
+      "title": "Wage and salaried workers | Trinidad & Tobago (1991−2025) − Data ...",
+      "url": "https://statbase.org/data/tto-wage-and-salaried-workers/",
+      "summary": "Official data of Trinidad & Tobago for all available years in an easy-to-read format. Wage and salaried workers: historical data, charts, comparisons, and downloadable datasets. Explore trends, growth rates, and changes over time.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "adbab016fdae92c3",
+      "title": "Welcome to Biggs Camera, Charlotte, NC",
+      "url": "https://biggscamera.com/",
+      "summary": "Shop All Contact Info 805 S Kings Dr. Charlotte, NC 28204 infobiggscamera@gmail.com 704-377-3492 About Us",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ded72fb58d4a0563",
+      "title": "Wight & Comes Funeral Chapel | Watertown, SD",
+      "url": "https://www.wightandcomes.com/",
+      "summary": "The staff of the Wight & Comes Funeral Chapel welcomes you to our web site. It is our hope that this site provides you with information about the diverse types of services we offer and allows you to get to know us better.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "28bb1921a8377ee5",
+      "title": "What is AI? - Artificial Intelligence Explained - AWS",
+      "url": "https://aws.amazon.com/what-is/artificial-intelligence/",
+      "summary": "What Is Artificial Intelligence (AI)? Artificial Intelligence (AI) is a transformative technology that enables machines to perform human-like problem-solving tasks. From recognizing images and generating creative content to making data-driven predictions, AI empowers businesses to make smarter decisions at scale.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
