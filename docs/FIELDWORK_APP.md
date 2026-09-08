@@ -10,6 +10,7 @@
       <strong>Attribution is optional.</strong><br>
       <strong>Raw serial numbers are never retained.</strong>
     </div>
+    <button type="button" id="fw-install" hidden>Install Fieldwork</button>
   </header>
 
   <section class="fieldwork-app__status" aria-live="polite">
@@ -37,3 +38,4 @@
 </div>
 
 <script src="../javascripts/fieldwork-app.js"></script>
+<script src="../javascripts/fieldwork-pwa.js"></script>
