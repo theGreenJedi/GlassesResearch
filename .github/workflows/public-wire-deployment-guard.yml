@@ -1,0 +1,51 @@
+name: Guard public wire deployment freshness
+
+on:
+  workflow_run:
+    workflows: ["Refresh developing news wire"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: public-wire-deployment-guard
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Compare repository and public wire heads
+        id: wire
+        shell: bash
+        run: |
+          set -euo pipefail
+          repo_id="$(python -c "import json; p=json.load(open('data/wire-feed.json')); print(p['items'][0]['id'] if p.get('items') else '')")"
+          test -n "$repo_id"
+          public_id="$(curl --fail --silent --show-error --location --max-time 20 -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' "https://glassesresearch.org/data/wire-feed.json?guard=${GITHUB_RUN_ID}" | python -c "import json,sys; p=json.load(sys.stdin); print(p['items'][0]['id'] if p.get('items') else '')")"
+          echo "Repository wire head: $repo_id"
+          echo "Public wire head:     $public_id"
+          if [[ "$repo_id" == "$public_id" ]]; then
+            echo 'stale=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'stale=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Re-dispatch Pages when public wire is stale
+        if: steps.wire.outputs.stale == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref main
+          echo 'Public wire diverged from main; dispatched a fresh Pages deployment.'
