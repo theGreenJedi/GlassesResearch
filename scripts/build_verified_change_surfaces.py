@@ -129,19 +129,20 @@ def homepage_latest_section(events: list[dict[str, Any]]) -> str:
       </a>'''
         )
 
-    return f'''<section class="gr-section" aria-labelledby="gr-now-title" data-home-verified-stream>
+    return f'''<section class="gr-section gr-news-column gr-news-column-verified" aria-labelledby="gr-now-title" data-home-verified-stream>
   <div class="gr-section-heading gr-heading-compact">
     <div>
-      <p class="gr-kicker">Latest verified</p>
-      <h2 id="gr-now-title">What just changed.</h2>
+      <p class="gr-kicker">Verified</p>
+      <h2 id="gr-now-title">What we've confirmed.</h2>
     </div>
-    <a class="gr-text-link" href="/docs/RESEARCH_NEWS/">All Research &amp; News <span aria-hidden="true">→</span></a>
+    <a class="gr-text-link" href="/docs/RESEARCH_NEWS/">All verified <span aria-hidden="true">→</span></a>
   </div>
+  <p class="gr-news-column-explainer">Developments that have passed GlassesResearch evidence and verification standards.</p>
 
   <div class="gr-editorial-grid">
     <a class="gr-feature-story" href="{feature_href}" data-home-gre="{feature['id']}">
       <span class="gr-story-art" aria-hidden="true"></span>
-      <span class="gr-story-tag">{html.escape(change_label(feature['change_type']))} · {html.escape(display_date(feature_pub['published_at']))}</span>
+      <span class="gr-story-tag">Verified · {html.escape(change_label(feature['change_type']))} · {html.escape(display_date(feature_pub['published_at']))}</span>
       <strong>{html.escape(feature_pub['title'])}</strong>
       <span>{html.escape(feature_pub['summary'])}</span>
       <em>Read the research →</em>
@@ -189,13 +190,43 @@ def inject_homepage(site_root: Path, events: list[dict[str, Any]]) -> list[str]:
     start = text.find(start_marker)
     if start < 0:
         raise RuntimeError("Homepage current-news section is missing")
-    end = text.find("</section>", start)
-    if end < 0:
-        raise RuntimeError("Homepage current-news section is malformed")
-    end += len("</section>")
+
+    wire_marker = '<section class="gr-section" aria-labelledby="gr-home-wire-title" data-home-wire>'
+    wire_start = text.find(wire_marker, start)
+    if wire_start < 0:
+        raise RuntimeError("Homepage Across the Wire section is missing")
+    wire_end = text.find("</section>", wire_start)
+    if wire_end < 0:
+        raise RuntimeError("Homepage Across the Wire section is malformed")
+    wire_end += len("</section>")
+
+    script_start = text.find("<script>", wire_end)
+    if script_start < 0:
+        raise RuntimeError("Homepage Across the Wire loader is missing")
+    script_end = text.find("</script>", script_start)
+    if script_end < 0:
+        raise RuntimeError("Homepage Across the Wire loader is malformed")
+    script_end += len("</script>")
+
+    wire_block = text[wire_start:script_end]
+    wire_block = wire_block.replace(
+        '<section class="gr-section" aria-labelledby="gr-home-wire-title" data-home-wire>',
+        '<section class="gr-section gr-news-column gr-news-column-wire" aria-labelledby="gr-home-wire-title" data-home-wire>',
+        1,
+    )
+    wire_block = wire_block.replace('<p class="gr-kicker">Across the wire</p>', '<p class="gr-kicker">Across the Wire</p>', 1)
+    wire_block = wire_block.replace('<h2 id="gr-home-wire-title">Developing now.</h2>', '<h2 id="gr-home-wire-title">What we\'re seeing now.</h2>', 1)
+
     latest = sorted(events, key=lambda item: item["publication"]["published_at"], reverse=True)[:3]
-    replacement = homepage_latest_section(events) + "\n\n" + homepage_follow_panel()
-    path.write_text(text[:start] + replacement + text[end:], encoding="utf-8")
+    paired_news = (
+        '<div class="gr-news-pair" aria-label="GlassesResearch newsroom">\n'
+        + wire_block
+        + "\n\n"
+        + homepage_latest_section(events)
+        + "\n</div>"
+    )
+    replacement = paired_news + "\n\n" + homepage_follow_panel()
+    path.write_text(text[:start] + replacement + text[script_end:], encoding="utf-8")
     return [event["id"] for event in latest]
 
 
