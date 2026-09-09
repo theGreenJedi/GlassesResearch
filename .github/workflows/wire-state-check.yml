@@ -6,6 +6,8 @@ on:
       - "data/wire-state.json"
       - "docs/javascripts/research-news-newsroom.js"
       - "docs/stylesheets/research-news-newsroom.css"
+      - "scripts/refresh_search_wire.py"
+      - "scripts/test_refresh_search_wire.py"
       - "scripts/verify_wire_state.py"
       - "scripts/import_wire_news.py"
       - "scripts/test_import_wire_news.py"
@@ -20,6 +22,8 @@ on:
       - "data/wire-state.json"
       - "docs/javascripts/research-news-newsroom.js"
       - "docs/stylesheets/research-news-newsroom.css"
+      - "scripts/refresh_search_wire.py"
+      - "scripts/test_refresh_search_wire.py"
       - "scripts/verify_wire_state.py"
       - "scripts/import_wire_news.py"
       - "scripts/test_import_wire_news.py"
@@ -40,6 +44,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Validate wire discovery logic
+        run: python scripts/test_refresh_search_wire.py
       - name: Validate wire state
         run: python scripts/verify_wire_state.py --state data/wire-state.json
       - name: Validate wire-to-triage bridge
