@@ -94,7 +94,8 @@ def main() -> int:
             "Homepage hierarchy must be introduction → paired newsroom → developing news → verified research → Finder → research exploration"
         )
     newsroom_start = homepage.index('class="gr-news-pair"')
-    newsroom_end = homepage.find("</div>", homepage.index("data-home-verified-stream"))
+    newsroom_close_marker = '\n</div>\n\n<section class="follow-research gr-home-follow"'
+    newsroom_end = homepage.find(newsroom_close_marker, homepage.index("data-home-verified-stream"))
     if newsroom_end < 0:
         raise SystemExit("Homepage paired newsroom is malformed")
     wire_at = homepage.index("data-home-wire")
