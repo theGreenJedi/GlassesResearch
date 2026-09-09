@@ -25,6 +25,20 @@ GlassesResearch intends to meet people where they already are, invite them to pa
 
 Contributions can be tiny or substantial. Useful examples include:
 
+### Fieldwork — contribute hands-on evidence
+
+Own or have hands-on access to smart glasses? **Fieldwork** is the GlassesResearch community field-research instrument. Five minutes helps; deeper technical work is optional.
+
+It supports progressive questions about real-world use, wearability, battery behavior, software, owner control, BLE, USB, network behavior, and reproducible evidence. Anonymous participation is welcome, attribution is optional, and raw serial numbers are never retained.
+
+A functional browser/PWA client now exists with local drafts, completion scoring, model lookup, privacy-preserving duplicate-device fingerprinting, and schema-valid export.
+
+[Open the Fieldwork app](FIELDWORK_APP.md) · [Read the short Fieldwork explanation](FIELDWORK.md) · [Fieldwork privacy](PRIVACY.md#fieldwork)
+
+**Direct anonymous submission is not enabled yet.** Until the GlassesResearch-controlled submission endpoint is live, the app is a functional research client and export tool rather than a finished one-tap submission service.
+
+Community evidence remains community evidence unless stronger evidence supports a different label. Repetition alone never promotes a Fieldwork report to GlassesResearch Verified.
+
 ### Report or correct a model
 
 - Add a missing model to [The List](../models/THE_LIST.md).
@@ -180,6 +194,7 @@ Questions and incomplete leads are welcome. This is a research institution under
 
 ## Start here
 
+- Have smart glasses in hand? Open the [Fieldwork app](FIELDWORK_APP.md).
 - Browse [The List](../models/THE_LIST.md) and look for a device you know.
 - Review the [Evidence Standard](EVIDENCE_STANDARD.md).
 - Read the [Investigation Workflow](INVESTIGATION_WORKFLOW.md).

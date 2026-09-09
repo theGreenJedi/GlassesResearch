@@ -78,8 +78,9 @@ def main() -> int:
 
     publication_first_markers = (
         ("introduction", '<section class="gr-hero"'),
-        ("verified research", "data-home-verified-stream"),
+        ("paired newsroom", 'class="gr-news-pair"'),
         ("developing news", "data-home-wire"),
+        ("verified research", "data-home-verified-stream"),
         ("Finder", 'class="gr-section gr-finder-section"'),
         ("research exploration", 'aria-labelledby="gr-explore-title"'),
     )
@@ -90,13 +91,21 @@ def main() -> int:
         publication_first_positions.append(homepage.index(marker))
     if publication_first_positions != sorted(publication_first_positions):
         raise SystemExit(
-            "Homepage hierarchy must be introduction → verified research → developing news → Finder → research exploration"
+            "Homepage hierarchy must be introduction → paired newsroom → developing news → verified research → Finder → research exploration"
         )
+    newsroom_start = homepage.index('class="gr-news-pair"')
+    newsroom_close_marker = '\n</div>\n\n<section class="follow-research gr-home-follow"'
+    newsroom_end = homepage.find(newsroom_close_marker, homepage.index("data-home-verified-stream"))
+    if newsroom_end < 0:
+        raise SystemExit("Homepage paired newsroom is malformed")
+    wire_at = homepage.index("data-home-wire")
+    verified_at = homepage.index("data-home-verified-stream")
+    if not newsroom_start < wire_at < verified_at < newsroom_end:
+        raise SystemExit("Homepage newsroom must pair Across the Wire before Verified")
     if "data-home-community-feature" in homepage:
         feature_at = homepage.index("data-home-community-feature")
-        verified_at = homepage.index("data-home-verified-stream")
-        if not publication_first_positions[0] < feature_at < verified_at:
-            raise SystemExit("Homepage editorial lead must appear after the introduction and before the verified desk")
+        if not publication_first_positions[0] < feature_at < newsroom_start:
+            raise SystemExit("Homepage editorial lead must appear after the introduction and before the paired newsroom")
 
     news = (args.site_root / "docs" / "RESEARCH_NEWS.md").read_text(encoding="utf-8")
     if "<small>Verified change:" in news:
@@ -128,7 +137,7 @@ def main() -> int:
 
     print(
         f"GRE surfaces verified: {len(events)} events, homepage newest {','.join(e['id'] for e in latest)}, "
-        f"homepage publication-first hierarchy, content-first routing and follow surface present, "
+        f"homepage paired newsroom, content-first routing and follow surface present, "
         f"{len(affected_models)} affected model histories, {len(items)} verified RSS items; Watching excluded"
     )
     return 0
