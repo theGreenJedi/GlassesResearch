@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Promote the current editorial feature without changing the verified-news ordering."""
+"""Promote the current editorial feature without changing verified-news ordering."""
 from __future__ import annotations
 
 import argparse
@@ -24,12 +24,19 @@ def main() -> int:
     text = path.read_text(encoding="utf-8")
     if "data-home-community-feature" in text:
         raise SystemExit("Homepage community feature already present")
-    marker = '<section class="gr-section" aria-labelledby="gr-now-title" data-home-verified-stream>'
-    if marker not in text:
-        raise SystemExit("Homepage verified stream marker missing")
+
+    newsroom_marker = '<div class="gr-news-pair" aria-label="GlassesResearch newsroom">'
+    legacy_verified_marker = '<section class="gr-section" aria-labelledby="gr-now-title" data-home-verified-stream>'
+    if newsroom_marker in text:
+        marker = newsroom_marker
+    elif legacy_verified_marker in text:
+        marker = legacy_verified_marker
+    else:
+        raise SystemExit("Homepage newsroom/verified stream marker missing")
+
     text = text.replace(marker, FEATURE + "\n\n" + marker, 1)
     path.write_text(text, encoding="utf-8")
-    print("Featured Community Research editorial on homepage once; verified-news chronology unchanged")
+    print("Featured Community Research editorial on homepage once; newsroom chronology unchanged")
     return 0
 
 
