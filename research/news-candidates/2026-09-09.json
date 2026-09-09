@@ -1,42 +1,114 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-09T00:20:58.005951+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 188,
+  "discovered_utc": "2026-09-09T04:19:14.042406+00:00",
+  "candidate_count": 4,
+  "precision_rejected_count": 187,
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 1,
+    "adjacent": 2,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "news": 1
+    "news": 3,
+    "tool": 1,
+    "sdk": 1,
+    "community": 1
   },
   "routing_counts": {
-    "adjacent_radar": 1,
-    "research_news_review": 1
+    "adjacent_radar": 2,
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "research_news_review": 4
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
     {
       "url": "https://brilliant.xyz/blog",
       "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.everysight.com/pages/maverick-ai",
+      "error": "HTTP Error 500: Internal Server Error"
     }
   ],
   "candidates": [
     {
-      "id": "ae1dce95bb92f88f",
-      "title": "Chinese Firms Ease Security Fears with Camera Covers at IFA - chosun.com",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZ2lJS19oejRwLWdxSEJBVkx3Z1N0UW5lNGx2MWlhTWl6eXZDN2M4TFZXTl9TVDVqVFRqT1dTeEg3ZlV3X0IyQkIyS044bFBzTFZPRW5xZTIxQ3BadExwdDJqNWRCMTE1dmdRang2OGxEQ1dhMEYzS0JmM0R0RHF3eDZOZklpNm94?oc=5",
-      "source": "Google News: AI wearable camera",
-      "source_lane": "adjacent_hci",
-      "published": "Tue, 08 Sep 2026 08:40:30 GMT",
-      "summary": "Chinese Firms Ease Security Fears with Camera Covers at IFA chosun.com",
+      "id": "c3f57b6068262071",
+      "title": "mentra-v3.2.0-dev.174: Merge pull request #3951 from cemarta7/feat/dashboard-content-api",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.0-dev.174",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-09-09T02:07:12Z",
+      "summary": "Expose head-up dashboard content through Bluetooth SDK",
+      "materiality_score": 5,
+      "keyword_hits": [
+        "api",
+        "bluetooth",
+        "sdk"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "c5a09eddd937b63d",
+      "title": "US police tighten security over smartglasses vulnerability concerns - 디지털투데이",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNzNYaHRod0wtMEY4TjdtNFZRSUtuQWhOT0p6SlB3SmE2RTJPejdMVnJ1d2NNdkx6cDNvemU3c3NvRXBMbUt3VEZhTGJncFgxa1hNQ1Z1LW1LZWR6WVdrYkt0SUtpZjcxOUdVYk1Yb0xSUWU2VmZKM0hQdnJ1VGRjU2MtUVZqMjVpekhZTC1IX0ttblRvbmQ5NDJuaV9CdWxHaUdDS25jRUpkZzlzSEc1RjZ5RQ?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Wed, 09 Sep 2026 01:09:27 GMT",
+      "summary": "US police tighten security over smartglasses vulnerability concerns 디지털투데이",
       "materiality_score": 4,
       "keyword_hits": [
-        "camera",
-        "security"
+        "security",
+        "vulnerability"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smartglasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "bc8acf51dbb52ad7",
+      "title": "Wearable Devices to Showcase Neural Sensing for Physical AI and Humanoid Robotics at Tel Aviv Event - citybuzz.co",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQTYzUzJOa09zUzFZeDVTbFhfVXFyUWljNmRLLUsyeE02TUc2N0ZqSlZINU5jczFMU3BzbkdSZ0hMWXdMWl81OTdxVHBlNnF6WURCb3ZJOUlQbmFzTjZ3ZTAxNG0xeTJ4elk1MUYtS2VBaVptZm5wbGJ1WHpGdUxvS3dXNUR2S1Y1UXRnRm53WktVcTV6aExCZjkxaHE0eXk1ellpX0NRb2hvYmlfdy1IcHFiY2x6anV2X3l5TUdPWkIxaWQ0a0EyY2NTbktDdUw0?oc=5",
+      "source": "Google News: neural input wearable",
+      "source_lane": "adjacent_hci",
+      "published": "Tue, 08 Sep 2026 18:13:44 GMT",
+      "summary": "Wearable Devices to Showcase Neural Sensing for Physical AI and Humanoid Robotics at Tel Aviv Event citybuzz.co",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "ai",
+        "neural"
       ],
       "status": "candidate",
       "relationship": "adjacent",
@@ -54,6 +126,36 @@
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "likely durable"
+    },
+    {
+      "id": "2a9592da49df13e1",
+      "title": "Why Edge AI Is Moving Into the Wireless Chip Itself - iotforall.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5obFZlNkNrQXVDUGFxdzZXN3lWRU92NGRYX3VyY1VmRUl3T1Y3b2M2QUhxNWptdkE0bWktbmxiZWhrSTRlc3Y1M2hCNG9mTms1bmRqU2pSbzZCdTZvU1RpVjBPWkljc21MVWNN?oc=5",
+      "source": "Google News: edge AI wearable processor",
+      "source_lane": "adjacent_hci",
+      "published": "Mon, 07 Sep 2026 19:09:51 GMT",
+      "summary": "Why Edge AI Is Moving Into the Wireless Chip Itself iotforall.com",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "chip"
+      ],
+      "status": "candidate",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
     }
   ]
 }
