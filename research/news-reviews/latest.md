@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-08T23:58:08.306681+00:00`
+Generated: `2026-09-09T00:21:49.783611+00:00`
 
-- Intake files inspected: **176**
-- Candidates retained in this review window/history: **5171**
+- Intake files inspected: **178**
+- Candidates retained in this review window/history: **5261**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 1905
+- `adjacent_radar`: 1916
 - `catalog_review`: 56
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 286
-- `rejected_noise`: 2819
+- `needs_editorial_verification`: 284
+- `rejected_noise`: 2895
 - `source_monitor`: 14
-- `source_review`: 62
+- `source_review`: 67
 - `watching`: 25
 
 ## Action queue
@@ -117,7 +117,6 @@ Generated: `2026-09-08T23:58:08.306681+00:00`
 | normal | needs_editorial_verification | direct | [Snap Specs LIVE — $2,200 augmented reality smart glasses announced ...](https://www.tomsguide.com/news/live/snap-specs-launch-live-latest-updates) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [SPECS \| AR Glasses by Snap](https://www.specs.com/smart-glasses/specs-27) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [The New Oakley Performance Meta AI Glasses \| Oakley®](https://www.oakley.com/en-us/l/oakley-meta) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [The Rokid Glasses Translate, Caption, and Record—But They ... - PCMag](https://www.pcmag.com/reviews/rokid-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Through the looking glass: smartglasses face scrutiny - The Canberra Times](https://news.google.com/rss/articles/CBMiogFBVV95cUxNU1FGMlM2OGRwR3pmN0tBb3BCZ0JfSkMtOUFrVDhFUnhiYVNLRmxhZEo2Rk1BWnhvRG5aam4xRF9VYTRCVldwSU5PVWZBQWZtdUExU1ZzMnpmYTNqQnlFQkFGZTRPekpTMFlxR2xwTkR3cDU5R0JrampVaFJWYTNKdmxwUHpVbGVrTTdnQzZfbk1uNG1sTEpHa0hSb0VyaDNrRGc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Top 5 smartglass Open-Source Projects \| LibHunt](https://www.libhunt.com/topic/smartglasses) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Top 5 Translation Smart Glasses 2026 – Best Value Choice](https://bestvaluechoice.com/best-translation-glasses/) | reachable (200) | research_news_review, report_card_evidence |
@@ -189,7 +188,6 @@ Generated: `2026-09-08T23:58:08.306681+00:00`
 | normal | needs_editorial_verification | direct | [Lumus and Quanta Expand Manufacturing Partnership with Licensing Agreement for Next-Generation Thinner, Lower-Cost Waveguides for AI Glasses](https://news.google.com/rss/articles/CBMioAJBVV95cUxQbFc1SEliMWZXMnNBdERRRnBjcUtGT3FBLWhKZVdrRVlvbDV5VEJMX0hOR2hTVTd5TF9vdDIzTmdsR1RYSTlnV2FJempqb3pRaVd2aS1FSDhXVFNlRldDR1UtR2xqcTV0VmR5M0xvYkNqWnJFZjdIWUJYdGd0TGdyX01XUnFQeVZJUmpZODZnUTNIalZfdGxkbWhtR09Na1VBV1BaVVBGNEJMR2k2bFlzUDRKMV9mZ09wMWFZUVFMQ0VFNFY5NFdCN3ZKQVA1V3d0amxzNXhJU3lwQmpBTWhxVXFpLV9RTzBhaG1oeUloaGdRbG1zQ0ViTXRLcGNRb0JHOHlmdzRmWUtRSTFuX1FOMV9NYXZhdk9Ia3Bta016R1o?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Lumus and Quanta expand partnership with licensing agreement for next-generation waveguides for AI Glasses - GamesBeat](https://news.google.com/rss/articles/CBMijAFBVV95cUxPV21lUHlPalVISTl3WUY2d21jaUVnSWRDWS04LVQzaTBZQ0NrZTBkLVc4SWFRUGFOc2xhR1BLU295dzhQVDFhblpxR0JoeE5zX1B1VEJkUVBqQ0lGTWRNUnJpYzlfZGpNNVBkcF9KeUNlU0VoaDk4RjZRcjBWYzJYWTBUYUNfdEF0MlNOag?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [LUSBY Smart AI Camera Glasses, Bluetooth - TikTok Shop](https://shop.tiktok.com/us/pdp/smart-photo-video-sunglasses-with-hd-video-recording/1731553898155184778) | reachable (200) | research_news_review, report_card_evidence, research_optics |
-| normal | needs_editorial_verification | direct | [LUSBY US - TikTok Shop](https://shop.tiktok.com/us/store/novasight/7496139085096848010) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [MemoMind One returns with camera-free AI glasses from $299 - inews.zoombangla.com](https://news.google.com/rss/articles/CBMiggFBVV95cUxOczhBXzBCUW1XRUVhckgtSzFUa0lGZGxnR2oxSTZRWVN1Y0w3UXA3M1Y4b1pQRlRXVXJGZWJ5U0NTUThkRW91eHYxQTBOWVZPbTE5VVVuQmhKd0VHVlhzakhlZDR1MnNPdHlYVUxRSDd3ZVRib05VUExPT0Y5S001QXV3?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.10](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.10) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Mentra 3.1.0-dev.15](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.0-dev.15) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -247,6 +245,7 @@ Generated: `2026-09-08T23:58:08.306681+00:00`
 | normal | needs_editorial_verification | direct | [Smart Glasses 2026 Guide for Every Budget, from $49 to $1,099 - Geeky ...](https://www.geeky-gadgets.com/best-smart-glasses-guide-2026/) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Smart Glasses Buying Guide 2026: Features, Privacy, Battery Life, What to Look For - analyticsinsight.net](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVnhCTHY3Zzk2TGw1SU9NUmdsM1A3cHkwNWl4Z3dGbGJlaG9pMl90MjVWR0pQODZJUHJSRjBJa0ZhaTdDTmVDdTlvOW5xbi1RQjhseGliTkxvdGdIelVmS1k4eG9NZFJyVEEwdzhRVGx2dy12Szh3WWR5eW50YnRQUjRvbkdWUmVmbVhKVTd2dTVCRkt3UDdlOEtzT3doZmQ4bGFsSlA2Y0xkVDVmbjdyMVROQlJfeXpCamFlRWQwS252Q2x6UUJnWDNTX1NBNU9nWEhFRW1fLWJma0nSAdsBQVVfeXFMT1Z4Qkx2N2c5NkxsNUlPTVJnbDNQN3B5MDVpeGd3RmxiZWhvaTJfdDI1VkdKUDg2SVByUkYwSWtGYWk3Q05lQ3U5bzlucW4tUUI4bHhpYk5Mb3RnSHpVZktZOHhvTWRSclRBMHc4UVRsdnctdks4d1lkeXludGJ0UFI0b25HVlJlZm1YSlU3dnU1QkZLd1A3ZThLc093aGZkOGxhbEpQNmNMZFQ1Zm43cjFUTkJSX3l6QmphZUVkMEtudkNselFCZ1gzU19TQTVPZ1hIRUVtXy1iZmtJ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Smart Glasses Buying Guide 2026: Features, Privacy, Battery Life, What to Look For - analyticsinsight.net](https://news.google.com/rss/articles/CBMizgFBVV95cUxNNk1STGk2TGVrRFo3cHBxT2VoSFNoUEdORDJpTVZqTC1xbXdtT1VxQmhVZV81SE5LaURrT3JsbVVTUFQwOHlYLUptYlBEaUtHX0pwX3BIMFJ1OTMya05FZll5UE1qM1J1U0lCTmxyRjRKT1VtRGVxVS13UXRUaWpmeWFoN0h6d2RtazhZRURJdk9KLUxNVVJOLThzaDBCSUlDZm1QcF9CZ1ExX3prelVtZEYxSnF5X1dlSXlCbWp2TE5WeVVvMEM1cFZnalRLZ9IB2wFBVV95cUxPVnhCTHY3Zzk2TGw1SU9NUmdsM1A3cHkwNWl4Z3dGbGJlaG9pMl90MjVWR0pQODZJUHJSRjBJa0ZhaTdDTmVDdTlvOW5xbi1RQjhseGliTkxvdGdIelVmS1k4eG9NZFJyVEEwdzhRVGx2dy12Szh3WWR5eW50YnRQUjRvbkdWUmVmbVhKVTd2dTVCRkt3UDdlOEtzT3doZmQ4bGFsSlA2Y0xkVDVmbjdyMVROQlJfeXpCamFlRWQwS252Q2x6UUJnWDNTX1NBNU9nWEhFRW1fLWJma0k?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Smart Glasses Comparison Chart 2026: Every Model, Full Specs](https://dymesty.com/blogs/articles/smart-glasses-comparison-chart-2026) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Smart Glasses With a Display: The 2026 List \| AR Compare](https://www.arcompare.com/best/smart-glasses-with-display/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Smart Glasses with AI and Bluetooth Features - Walmart.com](https://www.walmart.com/browse/electronics/smart-glasses/3944_1229723_2776031) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Smart Glasses With Display: HUD vs Virtual Screen Guide 2026](https://www.evenrealities.com/blogs/buyers-guide/smart-glasses-with-display) | reachable (200) | research_news_review |
@@ -272,6 +271,7 @@ Generated: `2026-09-08T23:58:08.306681+00:00`
 | normal | needs_editorial_verification | direct | [Visually impaired veterans receive AI glasses in D’Iberville through Meta, Blinded Veterans Association partnership - WLOX](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdEJWaVdwNzVfVjVyUm45LTRYRXBfamVQSlczZVJnOURIUl9xam9aNlEyd0dqX1ZXME13LWVRRjI1bjRiOFFoLXh4NFFTRDNqY0dmWHlyOHJVd19ZRTlQN2Z3UU5MQ3ZpMThiSUh2VWVXZjN5clRnVUp0MWVCSV9wMmFNN19VTTVEcy1obFhQSGI3ZHE3TkFZX2Z1b2ZMVTR4VVNfbDloM3hJNkhfMXQ2VU5FRmpQMi1YV3lTTE40aW0taGFIaHRNbjBqUlhZS1prbkZoX1NRVFBSMWRqYkRqY3g0Zw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Visually impaired veterans receive AI glasses in D’Iberville through Meta, Blinded Veterans Association partnership - WLOX](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYWEtZi1nbWhmbXhEWlJaUGJLd1kzUlRmUDFiVmp2ZWVQTy05Ml9rLWtLR1VmS0ZxeFJhY185cEt3WTRGQkR5Vm1LX1ZaVVlEa2pIRDlScVlhbDNEYVNaVjl3VVdqUnZ1R2UtTDlKM0pZdWJGcEJQX3FBMl9TTXVIYVd3WVIzM0VaR2MwY0pFeWNvM2drRkRnTzE1NmVuckZ1aFRFenpaeDJoSDNHN3dlaHhpQ2tiYnFRLVBxQk42WFl0SkhsbmVYbDEwRE1oMjc1Y3JUa3Atb0QyTXfSAe8BQVVfeXFMT09NYzZQU05TZlZJRVY1LWxDV2F3bUsxY1RXRUxTcFlQOWIwN0RGcTNtZVhIRHpuZGRyb3hTR25uUGFLbTU0WTRSeGpFNmZSU0xqY3FNejF6SkNSaVVwRWZuNWNybnJVX2d6RDZwZGJSQjdWU2RBMzhNX0d5ekFEczJneWxwbTFTTVFYOFQwbUJuSU0wVTVjem0zSTdtNDZtX0hxdE9pc3NFUnIyRmFOTzRYYzFJZjlEb25oeTFQZV9XNTVkMmJ2U1NSODRnZFNqc3dXNDdOSVFYdExSbXpWa1lIRklhY3R6eDJOLV92aGc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [VITURE Pro 2 XR Glasses](https://www.viture.com/product/viture-pro-2-xr-glasses) | reachable (200) | research_news_review, research_optics |
+| normal | needs_editorial_verification | direct | [VUZI stock gains after Vuzix highlights waveguide advances and AI data center opportunities - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOLXNHckM1MGdyazNSNm9mWmlscEJGR2w1TncxZEFaVVZQWklhRkxObTJlejUxa2k3dFlERklwT0tWY1k4ZkhnTktsWHozUnlENHZPRE9iakNBSkVSNHJJZ05jSVJYV0I0cWZOdWViLU9rekc5LVdFeHJLeVBpWEJIVjZhYkw4RU9hVDRaNWlOc0ROS0VrbV9qbThJV0ZwSVAtY3dybm44Mnl6RVREcDl0NGwzUjVSdmlvdXEyOWctaGN6YTc1di16Qw?oc=5) | reachable (200) | research_news_review, research_optics |
 
 ## Meaning of states
 
