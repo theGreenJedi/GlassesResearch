@@ -37,6 +37,20 @@ FORBIDDEN_ITEM_KEYS = {
 }
 
 
+def validate_routes(item: dict, field: str) -> list[str]:
+    if field not in item:
+        return []
+    routes = item[field]
+    if not isinstance(routes, list) or not routes:
+        raise SystemExit(f"Wire {field} must be a non-empty list when present")
+    normalized = [str(route).strip() for route in routes]
+    if any(not route for route in normalized):
+        raise SystemExit(f"Wire {field} entries must be non-empty strings")
+    if len(normalized) != len(set(normalized)):
+        raise SystemExit(f"Wire {field} entries must be unique")
+    return normalized
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--state", type=Path, required=True)
@@ -75,6 +89,24 @@ def main() -> int:
             raise SystemExit(f"Wire URL must be external HTTP(S): {item['url']!r}")
         if not str(item["discovered_at"]).strip():
             raise SystemExit("Wire discovered_at is required")
+
+        routes = validate_routes(item, "discovered_via")
+        first_routes = validate_routes(item, "first_discovered_via")
+        if first_routes and not routes:
+            raise SystemExit("Wire first_discovered_via requires discovered_via")
+        if first_routes and not set(first_routes).issubset(set(routes)):
+            raise SystemExit("Wire first_discovered_via must remain a subset of discovered_via")
+
+    provenance = state.get("provenance")
+    if provenance is not None:
+        if not isinstance(provenance, dict):
+            raise SystemExit("Wire provenance summary must be an object")
+        for field in ("route_counts", "first_route_counts", "sentinel_rescues"):
+            value = provenance.get(field)
+            if not isinstance(value, dict):
+                raise SystemExit(f"Wire provenance {field} must be an object")
+            if any(not str(key).strip() or not isinstance(count, int) or count < 0 for key, count in value.items()):
+                raise SystemExit(f"Wire provenance {field} contains invalid entries")
 
     print(f"Wire state verified: items={len(items)}")
     return 0

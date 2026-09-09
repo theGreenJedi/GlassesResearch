@@ -14,7 +14,8 @@ while downstream editorial stages decide importance and verification.
 
 Benchmark sentinels are gap detectors only. They are never treated as authorities: a
 sentinel can surface an outbound publisher link for review, but it cannot verify or
-promote the underlying claim.
+promote the underlying claim. Discovery provenance is retained so a sentinel rescue
+can be distinguished later from a story that ordinary search also found.
 """
 from __future__ import annotations
 
@@ -98,7 +99,7 @@ PRIMARY_HOST_HINTS = (
     "android-developers.googleblog.com", "apple.com", "samsung.com", "rayneo.com", "xreal.com",
     "rokid.com", "viture.com", "evenrealities.com", "vuzix.com",
 )
-UA = "GlassesResearch-Wire/1.3 (+https://glassesresearch.org/)"
+UA = "GlassesResearch-Wire/1.4 (+https://glassesresearch.org/)"
 MIN_TIME = dt.datetime.min.replace(tzinfo=dt.timezone.utc)
 
 
@@ -174,7 +175,8 @@ def parse_feed(blob: bytes, wheel: str, query: str) -> list[dict]:
         out.append({
             "discovery_id": discovery_id(title, url), "title": title, "url": url,
             "publisher": publisher, "source_class": source_class(url), "published_at": published_at,
-            "discovered_at": "", "status": "reported", "_wheel": wheel, "_query": query,
+            "discovered_at": "", "status": "reported", "discovered_via": [wheel],
+            "first_discovered_via": [], "_query": query,
         })
     return out
 
@@ -216,6 +218,7 @@ def parse_sentinel(blob: bytes, label: str, page_url: str) -> list[dict]:
     sentinel_host = hostname(page_url)
     out: list[dict] = []
     seen: set[str] = set()
+    route = f"Sentinel {label}"
     for url, title in parser.links:
         parsed = urllib.parse.urlsplit(url)
         if parsed.scheme not in {"http", "https"} or not parsed.netloc:
@@ -232,8 +235,8 @@ def parse_sentinel(blob: bytes, label: str, page_url: str) -> list[dict]:
         out.append({
             "discovery_id": discovery_id(title, url), "title": title, "url": url,
             "publisher": host, "source_class": source_class(url), "published_at": "",
-            "discovered_at": "", "status": "reported", "_wheel": f"Sentinel {label}",
-            "_query": "benchmark gap detector",
+            "discovered_at": "", "status": "reported", "discovered_via": [route],
+            "first_discovered_via": [], "_query": "benchmark gap detector",
         })
     return out
 
@@ -253,15 +256,26 @@ def parse_time(value: str) -> dt.datetime:
         return MIN_TIME
 
 
-def load_previous(path: Path) -> tuple[dict, dict[str, str]]:
+def load_previous(path: Path) -> tuple[dict, dict[str, str], dict[str, list[str]], dict[str, list[str]]]:
     if not path.exists():
-        return {}, {}
+        return {}, {}, {}, {}
     try:
         state = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
-        return {}, {}
-    discovered = {str(item.get("discovery_id")): str(item.get("discovered_at") or "") for item in state.get("items", []) if isinstance(item, dict) and item.get("discovery_id")}
-    return state, discovered
+        return {}, {}, {}, {}
+    discovered: dict[str, str] = {}
+    routes: dict[str, list[str]] = {}
+    first_routes: dict[str, list[str]] = {}
+    for item in state.get("items", []):
+        if not isinstance(item, dict) or not item.get("discovery_id"):
+            continue
+        key = str(item["discovery_id"])
+        discovered[key] = str(item.get("discovered_at") or "")
+        if isinstance(item.get("discovered_via"), list):
+            routes[key] = [str(route) for route in item["discovered_via"] if str(route).strip()]
+        if isinstance(item.get("first_discovered_via"), list):
+            first_routes[key] = [str(route) for route in item["first_discovered_via"] if str(route).strip()]
+    return state, discovered, routes, first_routes
 
 
 def ranking_time(item: dict, previous_discovered: dict[str, str], now: dt.datetime) -> dt.datetime:
@@ -270,6 +284,27 @@ def ranking_time(item: dict, previous_discovered: dict[str, str], now: dt.dateti
         return published
     prior = parse_time(previous_discovered.get(str(item.get("discovery_id") or ""), ""))
     return prior if prior != MIN_TIME else now
+
+
+def merge_discovery_candidate(
+    dedup: dict[str, dict], item: dict, previous_discovered: dict[str, str], now: dt.datetime
+) -> None:
+    """Deduplicate a candidate while preserving every route that surfaced it this run."""
+    key = title_key(item["title"]) or item["discovery_id"]
+    prior = dedup.get(key)
+    if prior is None:
+        dedup[key] = item
+        return
+
+    routes = sorted(
+        set(str(route) for route in prior.get("discovered_via", []))
+        | set(str(route) for route in item.get("discovered_via", []))
+    )
+    if ranking_time(item, previous_discovered, now) > ranking_time(prior, previous_discovered, now):
+        item["discovered_via"] = routes
+        dedup[key] = item
+    else:
+        prior["discovered_via"] = routes
 
 
 def percentile(values: list[float], fraction: float) -> float | None:
@@ -310,13 +345,35 @@ def velocity_summary(items: list[dict], now: dt.datetime) -> dict:
     }
 
 
+def provenance_summary(items: list[dict]) -> dict:
+    route_counts: dict[str, int] = {}
+    first_route_counts: dict[str, int] = {}
+    sentinel_rescues: dict[str, int] = {}
+    for item in items:
+        routes = [str(route) for route in item.get("discovered_via", [])]
+        first_routes = [str(route) for route in item.get("first_discovered_via", [])]
+        for route in routes:
+            route_counts[route] = route_counts.get(route, 0) + 1
+        for route in first_routes:
+            first_route_counts[route] = first_route_counts.get(route, 0) + 1
+        if first_routes and all(route.startswith("Sentinel ") for route in first_routes):
+            for route in first_routes:
+                label = route.removeprefix("Sentinel ")
+                sentinel_rescues[label] = sentinel_rescues.get(label, 0) + 1
+    return {
+        "route_counts": dict(sorted(route_counts.items())),
+        "first_route_counts": dict(sorted(first_route_counts.items())),
+        "sentinel_rescues": dict(sorted(sentinel_rescues.items())),
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=Path("data/wire-state.json"))
     parser.add_argument("--max-items", type=int, default=120)
     args = parser.parse_args()
     now = dt.datetime.now(dt.timezone.utc)
-    previous, previous_discovered = load_previous(args.output)
+    previous, previous_discovered, previous_routes, previous_first_routes = load_previous(args.output)
     candidates: list[dict] = []
     errors: list[str] = []
 
@@ -350,10 +407,7 @@ def main() -> int:
 
     dedup: dict[str, dict] = {}
     for item in candidates:
-        key = title_key(item["title"]) or item["discovery_id"]
-        prior = dedup.get(key)
-        if prior is None or ranking_time(item, previous_discovered, now) > ranking_time(prior, previous_discovered, now):
-            dedup[key] = item
+        merge_discovery_candidate(dedup, item, previous_discovered, now)
 
     cutoff = now - dt.timedelta(days=3)
     ranked = [
@@ -367,8 +421,18 @@ def main() -> int:
     ranked = ranked[: max(1, args.max_items)]
 
     for item in ranked:
-        item["discovered_at"] = previous_discovered.get(item["discovery_id"]) or now.isoformat().replace("+00:00", "Z")
-        item.pop("_wheel", None)
+        key = item["discovery_id"]
+        current_routes = set(str(route) for route in item.get("discovered_via", []))
+        historical_routes = set(previous_routes.get(key, []))
+        item["discovered_via"] = sorted(current_routes | historical_routes)
+        if previous_first_routes.get(key):
+            item["first_discovered_via"] = sorted(set(previous_first_routes[key]))
+        elif key in previous_discovered:
+            item["discovered_via"] = sorted(set(item["discovered_via"]) | {"Legacy pre-provenance"})
+            item["first_discovered_via"] = ["Legacy pre-provenance"]
+        else:
+            item["first_discovered_via"] = sorted(current_routes)
+        item["discovered_at"] = previous_discovered.get(key) or now.isoformat().replace("+00:00", "Z")
         item.pop("_query", None)
 
     previous_items = previous.get("items") if isinstance(previous.get("items"), list) else []
@@ -381,16 +445,19 @@ def main() -> int:
         "semantics": "Discovery-only wire from commodity web/news search and benchmark gap detectors, including locale-aware international recall. Items are source reports under review, not verified GlassesResearch claims.",
         "generated_at": now.isoformat().replace("+00:00", "Z"),
         "velocity": velocity_summary(ranked, now),
+        "provenance": provenance_summary(ranked),
         "items": ranked,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     metrics = state["velocity"]
+    rescues = state["provenance"]["sentinel_rescues"]
     print(
         "Search wire refreshed: "
         f"items={len(ranked)}; feed_errors={len(errors)}; "
         f"median_delay_min={metrics['median_discovery_delay_minutes']}; "
-        f"within_120m={metrics['within_target_percent']}%"
+        f"within_120m={metrics['within_target_percent']}%; "
+        f"sentinel_rescues={rescues}"
     )
     for error in errors:
         print(f"warning: {error}")

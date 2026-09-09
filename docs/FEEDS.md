@@ -27,6 +27,8 @@ Use this feed when you want the fast-moving smart-glasses news wire. Items are s
 
 The discovery collector is scheduled every **15 minutes** and keeps a rolling 120-item public window. GitHub Actions scheduling can drift, so 15 minutes is the scan cadence rather than a guaranteed publication latency. Benchmark sentinels may tell the collector that an original publisher has something we missed, but the sentinel itself is not treated as evidence or verification.
 
+The underlying wire state also retains discovery provenance. `discovered_via` records every search wheel or sentinel known to have surfaced an item, while `first_discovered_via` preserves the route or routes present when GlassesResearch first saw it. That distinction lets us count a true sentinel rescue even if Google or Bing finds the same story later.
+
 <div class="follow-research__actions">
   <a class="md-button md-button--primary" href="https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Open in Feedly</a>
   <button class="md-button" type="button" data-feed-copy data-feed-url="https://glassesresearch.org/data/wire-feed.xml">Copy RSS URL</button>
