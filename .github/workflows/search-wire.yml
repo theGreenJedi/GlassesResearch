@@ -2,7 +2,7 @@ name: Refresh developing news wire
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/15 * * * *"
   push:
     branches:
       - main
@@ -34,11 +34,14 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Validate wire discovery logic
+        run: python scripts/test_refresh_search_wire.py
+
       - name: Validate review-state synchronization
         run: python scripts/test_sync_wire_review_state.py
 
       - name: Pull current commodity web/news search wheels
-        run: python scripts/refresh_search_wire.py --output data/wire-state.json --max-items 72
+        run: python scripts/refresh_search_wire.py --output data/wire-state.json --max-items 120
 
       - name: Reapply durable editorial review state
         shell: bash
