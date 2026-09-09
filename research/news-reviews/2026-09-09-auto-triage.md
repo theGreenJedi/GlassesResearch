@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-09T08:25:22.123967+00:00`
+Generated: `2026-09-09T08:25:57.511522+00:00`
 
 - Intake files inspected: **179**
 - Candidates retained in this review window/history: **5521**
@@ -12,10 +12,10 @@ Generated: `2026-09-09T08:25:22.123967+00:00`
 - `catalog_review`: 57
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 295
+- `needs_editorial_verification`: 293
 - `rejected_noise`: 3119
 - `source_monitor`: 14
-- `source_review`: 59
+- `source_review`: 61
 - `watching`: 25
 
 ## Action queue
@@ -38,7 +38,6 @@ Generated: `2026-09-09T08:25:22.123967+00:00`
 | high | needs_editorial_verification | direct | [49g Ultra-Light AR glasses with AI - Rokid](https://global.rokid.com/products/rokid-glasses) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [AI Glasses for Frontline Workers \| Mentra](https://mentraglass.com/) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Amazon.com: Ray Ban Meta](https://www.amazon.com/ray-ban-meta/s?k=ray+ban+meta) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Best Smart Glasses 2026: Honest Comparison of Meta, Ray-Ban ... - TikTok](https://www.tiktok.com/@specialpickbyalisa/video/7666717950052683021) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | high | needs_editorial_verification | direct | [China launches AR glasses for electricity meter inventory — ECNS - UA.NEWS](https://news.google.com/rss/articles/CBMinwFBVV95cUxNSEljMHY5MlN2M0xJbUpMZVM2Vk5fQ3hnQkppRlB6emdOZVNxcm4tVG4yb2N6NmMwTDhDazc0N294SFpFNVMtZEs2eTBZOS1VemNlVlJZc3FtWHV3amdEVkxTWU1uSmNrbzE2NzRqcjdnOWRTOGh4TC1ETlphTWYyRW14a0hmTnlfODg5d09aZ3YyQktiQ3k5ekFQZmlaam8?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Deutsche Telekom starts marketing Ray-Ban Meta glasses for EUR 419 - Telecompaper](https://news.google.com/rss/articles/CBMirgFBVV95cUxPd3hPbmRmdlJDeWw5Z1RyNi05S2o1NmZ5bGlKc2YzamZyUnc5NjVDV1h6dW1kNHVKZEE1UUwtbkw5T3A2WDdBbXdyeUlwWVpxYVpPdzh6dUF0TThTVDFlVWRvdngyejUxY2VFdlJxSzNrRlRoYzhrY1NEaHBrLWpTVEdwOVl3TWNNak9PZTUtVGIwdVZTUmNzdUtDclFPblpKVzNWNWhLSXFFR1d4Q0E?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -145,11 +144,11 @@ Generated: `2026-09-09T08:25:22.123967+00:00`
 | normal | needs_editorial_verification | direct | ['Nightmare': Experts Flag Privacy, Surveillance Risks As AI Smart Glasses Gain Traction - NDTV Profit](https://news.google.com/rss/articles/CBMi1wFBVV95cUxOR0pzdXY0Z0RaZ21tcFZsMXJkSkk2TlNKcHRMWDZvRUlOUWMzQmMtLWZheDZKb0VORV9nd3VvV3AxMExYdmhUUUtna3lmOFNpSzRJRFpDNDZkWXRYbTFxQjhhNW9Xc214bzlURDVUYktON1d0RTN3MmFUR25WcTVCN1NKVFc0M05jMkRCNzlzUUg2QWU1WmZwSTBHLVFHWEg0V3FMUGVESDVEWHNMMi1zYTZDZm5WNkdxUURsTWw3M0JDUUpxT2dzd2ZxWVRLdzlBOVRWcXhZb9IB3wFBVV95cUxONGtWdy1sU3EzdmZON1I1VGZRVFk3ckExQ29BUGt3UGo1c1RXd0tHT3VrRkxxX3ZMUXRsVl9HcVo5S3ByaHZwdVAydGFGNUlhUTEzN3JwN2htRjg4ZlFib0x5MmtyOHNkR21pUzFlN1BKNFdQamRQdkR1d0hXckljcHoyVDBXSmctR3dwb19UUTRzMUY4Nl9sU1FTOHdkc2s1WWtmcFdPeWxiRlFLeEFGQ2tIMDZUNkJvblJQQmZDblF0b3dYOWZ1QUxGYTNzSzh0QmhPMWxrb0szQlhLaHhz?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (September 2026) Models Buy for Gaming ...](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses (August 2026): Tested Picks for AI, AR & Audio](https://whoismcafee.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (202) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Translation for Travelers (August 2026)](https://peccadille.net/best-smart-glasses-with-translation-for-international-travelers/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [12 Best AR Glasses (September 2026) Tested & Compared](https://whoismcafee.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [2026 Best Translation Glasses Guide: AI Subtitles for Real Life – RayNeo](https://www.rayneo.com/blogs/news/best-translation-smart-glasses-2026-guide) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [7 Best AR Glasses That’ll Change How You See Everything](https://nerdtechy.com/best-ar-glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [7 Best AR Glasses That’ll Change How You See Everything](https://nerdtechy.com/best-ar-glasses) | reachable (202) | research_news_review |
 | normal | needs_editorial_verification | direct | [7 Best Smart Glasses For Translation - Gear Gadget Guide](https://gadgetgearguide.com/best-smart-glasses-for-translation/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses Deliver Factory Floor Footage—Privacy Concerns Spread - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE1SanVadUFGVDVrbldfOC1DWWZtMnJzZFZRUVB4SGxUX1NJZEFnX1dua3ZSSE9Gdjg4c3cyblZhZDFLb3RlTVFNSmdLRDR5Q3I5ZUhTelhfV3BNTlBNbUZXMC1OMFNuZkdFLWxWMGJ4UTE5cFRTd1E?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Glasses Spark Privacy Concerns Amid Rising Misuse and Legal Battles - 조선일보](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUnF3YndKOV9aWVRvZmJ4Uk5RVnF3aDB2WF80R0hQX01XRl9sYjBPM1QwYWZDWVhkSWJDb1ZiRVYyRk12eTlOX0tKVGlJWmdVZlJHSERDVy1USk1VTkJyUmhHeWxWcUw1N0RCbDVjYWt0Rms3bjM2c21odF9uYVNoRWtCWnZVamJ0?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -160,6 +159,7 @@ Generated: `2026-09-09T08:25:22.123967+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Guide: AI Glasses for Everyday Life \| Meta](https://www.meta.com/ai-glasses/learn/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses with Real-Time Translation & Photochromic ... - TikTok](https://www.tiktok.com/shop/pdp/ai-smart-glasses-with-real-time-translation-bluetooth-calls/1731561723800490549) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [ai smart glasses! Camera glasses. Realtime translation #smartglasses ...](https://www.tiktok.com/@silverkel01/video/7677967029562854678) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Amazon](https://www.amazon.com/clp/B0GC56Z4CR) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Set for 2027 with Siri, AI, Privacy Focus - Analytics Insight](https://news.google.com/rss/articles/CBMixAFBVV95cUxPaS1mYVltMlZkMVJMb0xNVzRuTVd3M3o3RjBTdGVkdTN1TWtQUEhnZmppWmZhVm54V2NPX1NwN0Q3TnpFTWlUQVNZVjZmdGx5MThmdGtFbTZYWHVFaHEwRk9YWFg4MV9kT3ZHZ29RSGk4RDVxbkdENm9oY2hqWGw4SVh1cm5ua0NLSHlZYzZlU3owY05lZUxpc0FUOGg2M3hzY0IwZWZtMU9KdEY2MlZKTWRYdFU3ZklDYzhUNll1UHQ5NkI20gHEAUFVX3lxTE9pLWZhWW0yVmQxUkxvTE1XNG5NV3czejdGMFN0ZWR1M3VNa1BQSGdmamlaZmFWbnhXY09fU3A3RDdOekVNaVRBU1lWNmZ0bHkxOGZ0a0VtNlhYdUVocTBGT1hYWDgxX2RPdkdnb1FIaThENXFuR0Q2b2hjaGpYbDhJWHVybm5rQ0tIeVljNmVTejBjTmVlTGlzQVQ4aDYzeHNjQjBlZm0xT0p0RjYyVkpNZFh0VTdmSUNjOFQ2WXVQdDk2QjY?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Set for 2027 with Siri, AI, Privacy Focus - Analytics Insight](https://news.google.com/rss/articles/CBMitwFBVV95cUxPY0pSd3RYVDlFLVdOYzVMd3RpemJ6cVZKUVZZSTJyUVl3Tm9QYWVnZGpweXE4MjJxTzQ3eXRmY0FBRDNIdDFfdS1jeXExU1dudzJnM05CdmpHTWl3UlNxLTN4by1fX3lMU2JueEFRYi1zRmphRjRrN09Oc1JiTDA5eExjbDlUV25Lelc0bTJZUTFVX3FYS0VaNlVPT3F2T3NUcEZvQ1U4aHZhb191MGJUVENsaTMyejDSAcQBQVVfeXFMT2ktZmFZbTJWZDFSTG9MTVc0bk1XdzN6N0YwU3RlZHUzdU1rUFBIZ2ZqaVpmYVZueFdjT19TcDdEN056RU1pVEFTWVY2ZnRseTE4ZnRrRW02WFh1RWhxMEZPWFhYODFfZE92R2dvUUhpOEQ1cW5HRDZvaGNoalhsOElYdXJubmtDS0h5WWM2ZVN6MGNOZWVMaXNBVDhoNjN4c2NCMGVmbTFPSnRGNjJWSk1kWHRVN2ZJQ2M4VDZZdVB0OTZCNg?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AR Compare: AR Glasses Database — 81+ Models Compared](https://www.arcompare.com/) | reachable (200) | research_news_review |
