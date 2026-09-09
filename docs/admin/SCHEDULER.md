@@ -8,7 +8,7 @@ The scheduling rule is **few clocks, explicit chains**. Event-driven handoffs ar
 
 | Stage | Workflow | Primary trigger | Cron/backstop | Concurrency | Notes |
 |---|---|---|---|---|---|
-| Public discovery wire | `search-wire.yml` | independent discovery clock | every 30 minutes | `search-wire-writer` | Unverified discovery only. A visible wire change explicitly dispatches knowledge intake. |
+| Public discovery wire | `search-wire.yml` | independent discovery clock | every 15 minutes | `search-wire-writer` | Unverified discovery only. Fast news/search wheels plus benchmark gap detectors feed a 120-item public window. A visible wire change explicitly dispatches knowledge intake. |
 | High-recall intake | `hourly-news-intake.yml` | dispatch from a changed public wire | `17 * * * *` | `knowledge-intake-writer` | Collects institutional sources, ordinary web, and current wire. The hourly clock is a dead-man fallback. Directly dispatched runs explicitly dispatch triage after successful persistence; scheduled runs retain the `workflow_run` handoff. |
 | Editorial triage | `daily-news-verification.yml` | successful intake / approved upstream workflow completion | 11:55 PM Eastern DST-aware backstop | `knowledge-intake-writer` | Precision gate. Failed upstream runs do not authorize triage. |
 | Publication relay | `newsroom-publication-after-triage.yml` | successful editorial triage | none | `newsroom-publication-after-triage` | Relay only; it cannot publish content itself. |
@@ -18,7 +18,7 @@ The scheduling rule is **few clocks, explicit chains**. Event-driven handoffs ar
 
 `wire change → intake → successful triage → publication relay → strongly verified publication intake`
 
-If the wire does not visibly change, the hourly intake fallback still collects institutional and ordinary-web candidates. If an event handoff is missed, the downstream backstop clocks recover the conveyor without requiring Pete to click anything.
+The public wire is deliberately the fast lane: it scans on a 15-minute clock and can surface source reports without waiting for verification. Those reports remain explicitly unverified. If the wire does not visibly change, the hourly intake fallback still collects institutional and ordinary-web candidates. If an event handoff is missed, the downstream backstop clocks recover the conveyor without requiring Pete to click anything.
 
 ## Independent recurring maintenance
 
@@ -48,4 +48,4 @@ All times below are UTC unless explicitly described otherwise.
 
 ## Why the newsroom is arranged this way
 
-The previous layout independently polled strongly verified publication intake six times per hour while also using an event-driven post-triage relay. It also relied on a repository push as an implicit wire-to-intake handoff, even though machine-authored GitHub pushes are not a good orchestration primitive. The current layout makes the dependency chain explicit and keeps clocks as recovery mechanisms rather than the primary control plane.
+The previous layout independently polled strongly verified publication intake six times per hour while also using an event-driven post-triage relay. It also relied on a repository push as an implicit wire-to-intake handoff, even though machine-authored GitHub pushes are not a good orchestration primitive. The current layout makes the dependency chain explicit and keeps clocks as recovery mechanisms rather than the primary control plane. The public wire is the exception by design: discovery freshness is reader-facing, so its independent clock is intentionally faster while all downstream verification authority remains unchanged.
