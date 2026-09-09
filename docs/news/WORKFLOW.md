@@ -8,13 +8,14 @@ GlassesResearch treats news as an **input to the research institution**, not the
 
 ## Cadence
 
-- **Daily at 11:59 PM Eastern (America/New_York):** automated discovery gathers potentially material developments into `research/news-candidates/`. The workflow handles both EST and EDT automatically.
-- **Periodic inbox survey:** maintainers review accumulated candidates through `research/inbox/`.
-- **Durable editorial record:** completed decisions are retained in `research/news-reviews/`.
-- **As needed:** important glasses-related developments are promoted into canonical research.
-- **Periodic synthesis:** public news digests summarize meaningful changes without turning the site into a noisy ticker.
+- **Every 15 minutes:** the public **Across the Wire** collector scans focused news/search wheels plus benchmark gap detectors and may publish source reports immediately as explicitly unverified discovery signals.
+- **On every visible wire change:** the public-wire workflow dispatches durable high-recall knowledge intake immediately.
+- **Hourly backstop:** high-recall intake independently collects institutional sources, ordinary-web discovery, and the current wire if an event handoff was missed or the visible wire did not change.
+- **Periodic inbox survey / editorial triage:** maintainers and automated bounded triage review accumulated candidates through `research/inbox/`; completed decisions are retained in `research/news-reviews/`.
+- **As needed:** important glasses-related developments are promoted into canonical research only after the applicable verification and publication gates pass.
+- **Periodic synthesis:** public news digests summarize meaningful changes without turning verified research into a noisy ticker.
 
-**Daily research intake occurs at 11:59 PM Eastern. Collection is automatic; review and publication remain deliberate human editorial processes.** GitHub Actions schedules in UTC, so the workflow carries both UTC equivalents of 11:59 PM Eastern and activates only the one matching the current `America/New_York` offset. Manual workflow dispatch remains available for testing or exceptional runs.
+The fast public wire and the verified research lane are deliberately different products. **Across the Wire optimizes for discovery latency and recall; it does not confer verification.** GitHub Actions scheduling can drift, so 15 minutes is the target scan cadence rather than a guaranteed publication latency. The canonical scheduler details and dead-man backstops live in `docs/admin/SCHEDULER.md`.
 
 The candidate store is repository-side intake and is not itself a public factual record.
 

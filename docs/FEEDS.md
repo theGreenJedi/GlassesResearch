@@ -25,6 +25,8 @@ To subscribe in **Inoreader**, copy the RSS URL above, open Inoreader, choose **
 
 Use this feed when you want the fast-moving smart-glasses news wire. Items are source reports marked **Reported** or **Under review** and are **not verified GlassesResearch claims**.
 
+The discovery collector is scheduled every **15 minutes** and keeps a rolling 120-item public window. GitHub Actions scheduling can drift, so 15 minutes is the scan cadence rather than a guaranteed publication latency. Benchmark sentinels may tell the collector that an original publisher has something we missed, but the sentinel itself is not treated as evidence or verification.
+
 <div class="follow-research__actions">
   <a class="md-button md-button--primary" href="https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Open in Feedly</a>
   <button class="md-button" type="button" data-feed-copy data-feed-url="https://glassesresearch.org/data/wire-feed.xml">Copy RSS URL</button>
