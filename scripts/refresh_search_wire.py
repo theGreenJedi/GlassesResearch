@@ -427,6 +427,9 @@ def main() -> int:
         item["discovered_via"] = sorted(current_routes | historical_routes)
         if previous_first_routes.get(key):
             item["first_discovered_via"] = sorted(set(previous_first_routes[key]))
+        elif key in previous_discovered:
+            item["discovered_via"] = sorted(set(item["discovered_via"]) | {"Legacy pre-provenance"})
+            item["first_discovered_via"] = ["Legacy pre-provenance"]
         else:
             item["first_discovered_via"] = sorted(current_routes)
         item["discovered_at"] = previous_discovered.get(key) or now.isoformat().replace("+00:00", "Z")
