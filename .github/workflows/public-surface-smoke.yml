@@ -33,9 +33,14 @@ jobs:
         run: python -m py_compile scripts/verify_public_follow_surfaces.py
 
   smoke:
+    # Pages runs for pull requests build and validate the site but intentionally
+    # skip deployment. Do not compare those PR SHAs with production. Only a
+    # successful deploy-capable Pages run, a schedule, or a manual smoke run
+    # should exercise the live exact-SHA/public-surface contract.
     if: >-
       github.event_name != 'pull_request' &&
-      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event != 'pull_request'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
