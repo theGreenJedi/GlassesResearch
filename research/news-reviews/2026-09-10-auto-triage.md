@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-10T08:27:30.358048+00:00`
+Generated: `2026-09-10T09:13:41.223528+00:00`
 
 - Intake files inspected: **201**
 - Candidates retained in this review window/history: **7241**
@@ -12,10 +12,10 @@ Generated: `2026-09-10T08:27:30.358048+00:00`
 - `catalog_review`: 58
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 375
+- `needs_editorial_verification`: 373
 - `rejected_noise`: 4506
 - `source_monitor`: 14
-- `source_review`: 59
+- `source_review`: 61
 - `watching`: 23
 
 ## Action queue
@@ -201,7 +201,7 @@ Generated: `2026-09-10T08:27:30.358048+00:00`
 | normal | needs_editorial_verification | direct | ['Nightmare': Experts Flag Privacy, Surveillance Risks As AI Smart Glasses Gain Traction - ndtvprofit.com](https://news.google.com/rss/articles/CBMi1wFBVV95cUxOR0pzdXY0Z0RaZ21tcFZsMXJkSkk2TlNKcHRMWDZvRUlOUWMzQmMtLWZheDZKb0VORV9nd3VvV3AxMExYdmhUUUtna3lmOFNpSzRJRFpDNDZkWXRYbTFxQjhhNW9Xc214bzlURDVUYktON1d0RTN3MmFUR25WcTVCN1NKVFc0M05jMkRCNzlzUUg2QWU1WmZwSTBHLVFHWEg0V3FMUGVESDVEWHNMMi1zYTZDZm5WNkdxUURsTWw3M0JDUUpxT2dzd2ZxWVRLdzlBOVRWcXhZb9IB3wFBVV95cUxONGtWdy1sU3EzdmZON1I1VGZRVFk3ckExQ29BUGt3UGo1c1RXd0tHT3VrRkxxX3ZMUXRsVl9HcVo5S3ByaHZwdVAydGFGNUlhUTEzN3JwN2htRjg4ZlFib0x5MmtyOHNkR21pUzFlN1BKNFdQamRQdkR1d0hXckljcHoyVDBXSmctR3dwb19UUTRzMUY4Nl9sU1FTOHdkc2s1WWtmcFdPeWxiRlFLeEFGQ2tIMDZUNkJvblJQQmZDblF0b3dYOWZ1QUxGYTNzSzh0QmhPMWxrb0szQlhLaHhz?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | ['Nightmare': Experts Flag Privacy, Surveillance Risks As AI Smart Glasses Gain Traction - ndtvprofit.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxONGtWdy1sU3EzdmZON1I1VGZRVFk3ckExQ29BUGt3UGo1c1RXd0tHT3VrRkxxX3ZMUXRsVl9HcVo5S3ByaHZwdVAydGFGNUlhUTEzN3JwN2htRjg4ZlFib0x5MmtyOHNkR21pUzFlN1BKNFdQamRQdkR1d0hXckljcHoyVDBXSmctR3dwb19UUTRzMUY4Nl9sU1FTOHdkc2s1WWtmcFdPeWxiRlFLeEFGQ2tIMDZUNkJvblJQQmZDblF0b3dYOWZ1QUxGYTNzSzh0QmhPMWxrb0szQlhLaHhz0gHfAUFVX3lxTE40a1Z3LWxTcTN2Zk43UjVUZlFUWTdyQTFDb0FQa3dQajVzVFd3S0dPdWtGTHFfdkxRdGxWX0dxWjlLcHJodnB1UDJ0YUY1SWFRMTM3cnA3aG1GODhmUWJvTHkya3I4c2RHbWlTMWU3UEo0V1BqZFB2RHV3SFdySWNwejJUMFdKZy1Hd3BvX1RRNHMxRjg2X2xTUVM4d2RzazVZa2ZwV095bGJGUUt4QUZDa0gwNlQ2Qm9uUlBCZkNuUXRvd1g5ZnVBTEZhM3NLOHRCaE8xbGtvSzNCWEtoeHM?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses (August 2026): Tested Picks for AI, AR & Audio](https://whoismcafee.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (202) | research_news_review |
+| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Translation for Travelers (August 2026)](https://peccadille.net/best-smart-glasses-with-translation-for-international-travelers/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [12 Best AR Glasses (September 2026) Tested & Compared](https://whoismcafee.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [2026 Best Translation Glasses Guide: AI Subtitles for Real Life – RayNeo](https://www.rayneo.com/blogs/news/best-translation-smart-glasses-2026-guide) | reachable (200) | research_news_review |
