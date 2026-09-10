@@ -37,11 +37,18 @@ Green CI is necessary but not sufficient. The optimizer must also verify the act
 
 For ordinary reversible site and repository improvements, there is no blanket PR-review-only bottleneck. Once the three-part promotion gate is proven, the proposal is merge-qualified under standing optimizer authority.
 
+### Bounded canonical-admission authority
+
+Canonical admission is not blanket human-review work. A new GLS identity may be admitted and merged automatically through the dedicated bounded canonical-admission lane when **every** deterministic gate in `CANONICAL_ADMISSION_AUTOMATION.md` passes. That lane is deliberately narrower than ordinary optimizer authority: it requires a high-confidence verified-new-model finding, qualifying acquisition evidence, no existing GLS target, no identity edge, no unresolved question, a source-bound structured row, duplicate checks, complete validators, and a stable canonical base through merge.
+
+Automatic admission establishes only stable identity and documented acquisition history. It does not authorize inferred scores, product quality judgments, provenance promotion, privacy/openness conclusions, or relationship/lineage judgments. If the admission needs judgment rather than deterministic evidence checks, it leaves the automatic lane and escalates.
+
 ## Authority-sensitive exception
 
 Technical success cannot establish every research or authority judgment. Explicit Pete + ChatGPT review remains required before merge for changes such as:
 
-- canonical model admissions, removals, or disputed identity decisions;
+- canonical model removals, retirements, identity corrections, or disputed/ambiguous admissions;
+- alias, rebadge, merge, split, or other judgment-bearing identity decisions;
 - Report Card scores or scoring-policy changes;
 - promotion between evidence/provenance lanes;
 - disputed or consequential lineage conclusions;
@@ -49,7 +56,7 @@ Technical success cannot establish every research or authority judgment. Explici
 - credentials, spending, external commitments, or irreversible actions;
 - comparable decisions where a green build cannot prove that the underlying judgment is appropriate.
 
-These changes may still be fully constructed and validated before review; they simply do not become merge-qualified from technical checks alone.
+These changes may still be fully constructed and validated before review; they simply do not become merge-qualified from technical checks alone. Evidence-clean admissions that satisfy the dedicated bounded canonical-admission lane are the explicit narrow exception described above.
 
 ## Optimizer run behavior
 

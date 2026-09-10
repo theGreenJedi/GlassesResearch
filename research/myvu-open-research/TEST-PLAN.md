@@ -58,6 +58,51 @@ Where applicable:
 
 Update `COMPATIBILITY.md` only with exact identity and evidence state. A successful test on one specimen/firmware does not establish family-wide compatibility.
 
+## 8. Required evidence output
+
+A test is not complete until one evidence record exists with all applicable fields below. Unknown values are recorded as `UNKNOWN`; they are not omitted or guessed.
+
+```text
+Test ID:
+Specimen ID:
+Operator:
+Date/time + timezone:
+Hardware marketed name:
+Printed/model identifier:
+Hardware revision:
+Firmware/build:
+Host device:
+Host OS/version:
+Official companion app + version/region/source:
+Alternative client/SDK + exact commit/tag:
+Test-plan section / procedure:
+Preconditions:
+Observed BLE advertised identity:
+Observed GATT services/characteristics:
+RFCOMM/BR-EDR observation (if applicable):
+Result: PASS / FAIL / PARTIAL / NOT-TESTED
+Failure point or unexpected behavior:
+Raw evidence location(s):
+Photos/video/log/packet-capture identifiers:
+Community/upstream claim being tested:
+Evidence state before test:
+Evidence state after test:
+Notes / confounders:
+```
+
+### Raw-evidence rule
+
+For protocol claims, preserve the raw observation needed to audit the normalized conclusion: packet capture, Bluetooth/GATT dump, application log, exact command/response bytes, or equivalent. For physical/optical claims, preserve the documented setup, environmental conditions and photographs/video where useful.
+
+Do not store credentials, API keys, personal message contents, unrelated device identifiers, or other unnecessary private data in public evidence. Redact before commit while preserving the technical signal.
+
+### Evidence-state transitions
+
+- A successful reproduction can support `GR-VERIFIED` only for the identified specimen/firmware/test conditions.
+- A failed reproduction does not automatically falsify an upstream/community observation; record the disagreement and investigate changed hardware, firmware, host or procedure.
+- A partial reproduction stays `PARTIAL`/qualified and must not be summarized as a pass.
+- Protocol agreement between multiple projects that share the same upstream implementation is not independent verification.
+
 ## Safety / restraint
 
 Routine conformance testing excludes factory reset, recovery flashing, destructive firmware modification, bypassing hardware protections, or other difficult-to-reverse actions. Such work requires a separate investigation rationale and recovery plan.
