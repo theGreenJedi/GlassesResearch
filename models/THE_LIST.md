@@ -2,7 +2,7 @@
 
 **Edition:** 2026-09-10
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 239 distinct purchasable models or explicitly marketed product generations
+**Count:** 243 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -422,6 +422,18 @@ These rows were already approved in dated reconciliation packets. This section i
 | GLS-0239 | Iristick | G1 | 2021 | legacy/enterprise | camera/display smart safety glasses | enterprise sale | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-10_IDENTITY_FORENSICS_WAVE_02.md); [source](https://iristick.com/uploads/files/IRI-spec-sheet-Iristick.G1-32021-EU-final.pdf) |
 | GLS-0240 | Iristick | G1 PRO | 2021 | legacy/enterprise | camera/display smart safety glasses | enterprise sale | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-10_IDENTITY_FORENSICS_WAVE_02.md); [source](https://iristick.com/uploads/files/IRI-spec-sheet-Iristick.G1-32021-EU-final.pdf) |
 
+
+## Reconciliation admissions — mechanically synchronized
+
+These rows were already approved in dated reconciliation packets. This section is inserted mechanically so an approved admission cannot remain outside the canonical ledger.
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0241 | RayNeo / Thunderbird Innovation | Air 1S | 2022 | legacy/support | tethered XR display glasses | China preorder/retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-10_IDENTITY_FORENSICS_WAVE_03.md); [source](https://www.rayneo.cn/xinwen/352.html) |
+| GLS-0242 | RayNeo / Thunderbird Innovation | Air Plus | 2023 | legacy/support | tethered XR display glasses | China retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-10_IDENTITY_FORENSICS_WAVE_03.md); [source](https://test.rayneo.cn/airplus/) |
+| GLS-0243 | MAD Gaze | GLOW | 2019 | legacy | tethered AR/MR smart glasses | crowdfunding/retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-10_IDENTITY_FORENSICS_WAVE_03.md); [source](https://www.kickstarter.com/projects/madgaze/mad-gaze-glow-lightweight-and-stylish-mr-glasses-for-you) |
+| GLS-0244 | MAD Gaze | GLOW Plus | 2020 | legacy | tethered AR/MR smart glasses | crowdfunding/retail | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-10_IDENTITY_FORENSICS_WAVE_03.md); [source](https://camp-fire.jp/projects/248361/view) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -434,7 +446,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 239-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 243-row count:
 
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
