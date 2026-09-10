@@ -1,6 +1,6 @@
 # Contents
 
-A compact map of GlassesResearch. Use the Finder when choosing glasses; use Research & News to follow the field; use Events for upcoming dates; use Tools for the underlying research library and development resources.
+A compact map of GlassesResearch. Use the Finder when choosing glasses; use Research & News to follow the field; use Open Research for living technical investigations; use Events for upcoming dates; use Tools for the underlying research library and development resources.
 
 ## Finder
 
@@ -11,7 +11,14 @@ A compact map of GlassesResearch. Use the Finder when choosing glasses; use Rese
 - [Start by what you need](START_BY_NEED.md)
 - [Buyer guide](../buyers/BUYER_AND_OPENNESS_GUIDE.md)
 
-## Research & News
+## Research
+
+### Open Research
+
+- [Open Research](OPEN_RESEARCH.md) — living, provenance-preserving technical investigations
+- [MYVU Open Research](../research/myvu-open-research/README.md) — XGA010C/MYVU lineage, protocol, compatibility and failure-mode research
+
+### Research & News
 
 - [Research & News](RESEARCH_NEWS.md)
 - [Manufacturer Completeness — whole-manufacturer historical coverage and audit debt](MANUFACTURER_COMPLETENESS.md)
