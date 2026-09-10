@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-10T11:30:41.345315+00:00`
+Generated: `2026-09-10T12:32:05.533830+00:00`
 
 - Intake files inspected: **203**
 - Candidates retained in this review window/history: **7470**
@@ -12,10 +12,10 @@ Generated: `2026-09-10T11:30:41.345315+00:00`
 - `catalog_review`: 59
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 379
+- `needs_editorial_verification`: 380
 - `rejected_noise`: 4678
 - `source_monitor`: 15
-- `source_review`: 58
+- `source_review`: 57
 - `watching`: 23
 
 ## Action queue
@@ -204,11 +204,11 @@ Generated: `2026-09-10T11:30:41.345315+00:00`
 | normal | needs_editorial_verification | direct | ['Nightmare': Experts Flag Privacy, Surveillance Risks As AI Smart Glasses Gain Traction - ndtvprofit.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxONGtWdy1sU3EzdmZON1I1VGZRVFk3ckExQ29BUGt3UGo1c1RXd0tHT3VrRkxxX3ZMUXRsVl9HcVo5S3ByaHZwdVAydGFGNUlhUTEzN3JwN2htRjg4ZlFib0x5MmtyOHNkR21pUzFlN1BKNFdQamRQdkR1d0hXckljcHoyVDBXSmctR3dwb19UUTRzMUY4Nl9sU1FTOHdkc2s1WWtmcFdPeWxiRlFLeEFGQ2tIMDZUNkJvblJQQmZDblF0b3dYOWZ1QUxGYTNzSzh0QmhPMWxrb0szQlhLaHhz0gHfAUFVX3lxTE40a1Z3LWxTcTN2Zk43UjVUZlFUWTdyQTFDb0FQa3dQajVzVFd3S0dPdWtGTHFfdkxRdGxWX0dxWjlLcHJodnB1UDJ0YUY1SWFRMTM3cnA3aG1GODhmUWJvTHkya3I4c2RHbWlTMWU3UEo0V1BqZFB2RHV3SFdySWNwejJUMFdKZy1Hd3BvX1RRNHMxRjg2X2xTUVM4d2RzazVZa2ZwV095bGJGUUt4QUZDa0gwNlQ2Qm9uUlBCZkNuUXRvd1g5ZnVBTEZhM3NLOHRCaE8xbGtvSzNCWEtoeHM?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (September 2026) Models Buy for Gaming ...](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses (August 2026): Tested Picks for AI, AR & Audio](https://whoismcafee.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (202) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Translation for Travelers (August 2026)](https://peccadille.net/best-smart-glasses-with-translation-for-international-travelers/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [12 Best AR Glasses (September 2026) Tested & Compared](https://whoismcafee.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [2026 Best Translation Glasses Guide: AI Subtitles for Real Life – RayNeo](https://www.rayneo.com/blogs/news/best-translation-smart-glasses-2026-guide) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [7 Best AR Glasses That’ll Change How You See Everything](https://nerdtechy.com/best-ar-glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [7 Best AR Glasses That’ll Change How You See Everything](https://nerdtechy.com/best-ar-glasses) | reachable (202) | research_news_review |
 | normal | needs_editorial_verification | direct | [7 Best Smart Glasses For Translation - Gear Gadget Guide](https://gadgetgearguide.com/best-smart-glasses-for-translation/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [A Polish developer built an app that detects nearby Meta smart glasses over Bluetooth - The Next Web](https://news.google.com/rss/articles/CBMiggFBVV95cUxQU2tXTVdmSndsQndId3FQdjdoNXc5dEtldHRmOC1KZ2N2T1lDRWdpVjZ5MDl1N2tqZ2lwMy1CNjNCb0NZaWhORm1qcVZFTENVMUNNN2ZGdTFOTXRkUmZoMjdpUnUyakU5NjJWZUhxNWp4TEg1SGxPek9LRW1XbkdkTUJR?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [About ENGO \| Smart AR Sports Glasses Designed in the French Alps](https://fr.engoeyewear.com/pages/about-1) | reachable (200) | research_news_review |
@@ -221,6 +221,7 @@ Generated: `2026-09-10T11:30:41.345315+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Guide: AI Glasses for Everyday Life \| Meta](https://www.meta.com/ai-glasses/learn/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses with Real-Time Translation & Photochromic ... - TikTok](https://www.tiktok.com/shop/pdp/ai-smart-glasses-with-real-time-translation-bluetooth-calls/1731561723800490549) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [ai smart glasses! Camera glasses. Realtime translation #smartglasses ...](https://www.tiktok.com/@silverkel01/video/7677967029562854678) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Amazon.com: Augmented Reality Glasses](https://www.amazon.com/augmented-reality-glasses/s?k=augmented+reality+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: XREAL 1S AR Glasses, 500" Virtual Screen, Powered ...](https://www.amazon.com/clp/B0GC56Z4CR) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Set for 2027 with Siri, AI, Privacy Focus - Analytics Insight](https://news.google.com/rss/articles/CBMixAFBVV95cUxPaS1mYVltMlZkMVJMb0xNVzRuTVd3M3o3RjBTdGVkdTN1TWtQUEhnZmppWmZhVm54V2NPX1NwN0Q3TnpFTWlUQVNZVjZmdGx5MThmdGtFbTZYWHVFaHEwRk9YWFg4MV9kT3ZHZ29RSGk4RDVxbkdENm9oY2hqWGw4SVh1cm5ua0NLSHlZYzZlU3owY05lZUxpc0FUOGg2M3hzY0IwZWZtMU9KdEY2MlZKTWRYdFU3ZklDYzhUNll1UHQ5NkI20gHEAUFVX3lxTE9pLWZhWW0yVmQxUkxvTE1XNG5NV3czejdGMFN0ZWR1M3VNa1BQSGdmamlaZmFWbnhXY09fU3A3RDdOekVNaVRBU1lWNmZ0bHkxOGZ0a0VtNlhYdUVocTBGT1hYWDgxX2RPdkdnb1FIaThENXFuR0Q2b2hjaGpYbDhJWHVybm5rQ0tIeVljNmVTejBjTmVlTGlzQVQ4aDYzeHNjQjBlZm0xT0p0RjYyVkpNZFh0VTdmSUNjOFQ2WXVQdDk2QjY?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Set for 2027 with Siri, AI, Privacy Focus - Analytics Insight](https://news.google.com/rss/articles/CBMitwFBVV95cUxPY0pSd3RYVDlFLVdOYzVMd3RpemJ6cVZKUVZZSTJyUVl3Tm9QYWVnZGpweXE4MjJxTzQ3eXRmY0FBRDNIdDFfdS1jeXExU1dudzJnM05CdmpHTWl3UlNxLTN4by1fX3lMU2JueEFRYi1zRmphRjRrN09Oc1JiTDA5eExjbDlUV25Lelc0bTJZUTFVX3FYS0VaNlVPT3F2T3NUcEZvQ1U4aHZhb191MGJUVENsaTMyejDSAcQBQVVfeXFMT2ktZmFZbTJWZDFSTG9MTVc0bk1XdzN6N0YwU3RlZHUzdU1rUFBIZ2ZqaVpmYVZueFdjT19TcDdEN056RU1pVEFTWVY2ZnRseTE4ZnRrRW02WFh1RWhxMEZPWFhYODFfZE92R2dvUUhpOEQ1cW5HRDZvaGNoalhsOElYdXJubmtDS0h5WWM2ZVN6MGNOZWVMaXNBVDhoNjN4c2NCMGVmbTFPSnRGNjJWSk1kWHRVN2ZJQ2M4VDZZdVB0OTZCNg?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -271,7 +272,6 @@ Generated: `2026-09-10T11:30:41.345315+00:00`
 | normal | needs_editorial_verification | direct | [Meta AI glasses available for veterans with visual impairments - couriernews.com](https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZ0h1LUk5LTE2Tk9Ld1FKWDVIYkZ1SWtTWXpDLTFrVzR1X2s4ZGxhTElMUF9jaTJZNEtTR1JGMUo4akxsUG5UbjNmUmxPSnpZWmh4ckZ5bUlKR3ctNWJaSXIyLXcyZWhWOUU0YlltVlc4OTN6N1RqSEc1dnV0VmtzbGhNLXFtcm5LYTRRQU4weWh2N3dWVjR2bTJnamF2WU9tb05rUVFucVduRFotbGZPcTQ0VS1kS3B3U1R3d20zYUs4ZTRBZE96SXpBS29rd1ZGUzFZUlFxMU5MbTk5V0E?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [Meta AI glasses lawsuit now includes 'bystander' plaintiffs who say privacy was violated - The Cool Down](https://news.google.com/rss/articles/CBMiigFBVV95cUxPcmkyeG1ZN0R6UTJmLXNwN29OUnRuUFpUdjgwbjNOekVZeFFSMHVFRWIxRzBFaDhiblpxU1E0STdZRGhLT1pYWksyZWRUUTZQYjZ6bXh4T003a3BRU2plWUV1SXNCVjVkUVNITHhKZVhmelVTRk1hLVFqbFVFSGl2UERNUkZ1N09BNkE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta AI glasses lawsuit now includes 'bystander' plaintiffs who say privacy was violated - Yahoo](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaVhlTEo3OEVNYXY4WURMVVBqS2p5N05IbXpWZXhfMTF6amloZDE4UXFHLTFxRjlnVTMzakZaNkZfZUlfU2p3WE41NXdtbVV6dEc2TzBMNmVDSkFwSWlOV2NfYW5tNk81VG9JYXVsZzFMVWx3dk94dkR2enZPWU5pRkZabzVQbjVK?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Meta AI Glasses Privacy Suit Expands To Add Bystander Class - Law360](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XUEVjeUpvdEtvRDg5REwzRUZfaWRjWjd2VE1ndnZCNVY5X2pUYTBQOFRmWERyYXJkT2pJR1pDcktWLUJDQnJ0RUc2UWh6a3pKN0dmTWVB0gFWQVVfeXFMTVdQRWN5Sm90S29EODlETDNFRl9pZGNaN3ZUTWd2dkI1VjlfalRhMFA4VGZYRHJhcmRPaklHWkNyS1YtQkNCcnRFRzZRaHpreko3R2ZNZUE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
