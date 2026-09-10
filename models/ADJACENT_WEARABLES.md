@@ -1,6 +1,6 @@
 # Adjacent Wearable-HCI Catalog
 
-**Edition:** 2026-09-05  
+**Edition:** 2026-09-10  
 **Scope:** purchasable or documented-procurement wearable-HCI devices that belong in GlassesResearch's broader augmented-human research universe but are **not fundamentally smart glasses**.
 
 This catalog implements the form-factor rule in [`WEARABLE_HCI.md`](../docs/taxonomy/WEARABLE_HCI.md): one research umbrella, separate catalogs by physical interface type, shared evidence standards and shared ownership/control philosophy. Entries here must never be silently included in the smart-glasses count in [`THE_LIST.md`](THE_LIST.md).
@@ -29,6 +29,16 @@ For era fields, `c.` marks an approximate year and `≤2026` means the current e
 | ADJ-0012 | Epson | Moverio Pro BT-2200 | 2017 | legacy / enterprise | helmet-compatible industrial AR smart headset | [Epson lineage](../lineages/EPSON_MOVERIO.md); [first-party product](https://epson.com/For-Work/Wearables/Smart-Glasses/Moverio-Pro-BT-2200-Smart-Headset/p/V11H853020) |
 | ADJ-0013 | Vuzix | Tac-Eye | ≤2009 | legacy / defense-industrial | rugged monocular display clipped to ballistic eyewear, headsets or safety goggles | [Vuzix Wave 02 audit](../research/investigations/MANUFACTURER_COMPLETENESS_WAVE_02_2026-09-05.md); [Vuzix lineage](../lineages/VUZIX.md) |
 | ADJ-0014 | Vuzix | M2000AR | 2013 | legacy / industrial | waveguide HMD mounted to hardhats or goggles | [Vuzix Wave 02 audit](../research/investigations/MANUFACTURER_COMPLETENESS_WAVE_02_2026-09-05.md); [Vuzix lineage](../lineages/VUZIX.md) |
+
+## Standalone spatial AR / VR headsets
+
+These acquired head-worn systems participate in the same near-eye computing research universe but are physically headset/goggle-class devices rather than eyeglass-frame smart glasses.
+
+| ID | Maker | Model | Era | State | Form | Evidence / research |
+|---|---|---|---:|---|---|---|
+| ADJ-0017 | RealMax | Qian | 2020 | legacy | standalone AR/VR headset | [Identity Forensics Wave 03](../research/investigations/IDENTITY_FORENSICS_WAVE_03_2026-09-10.md); [Kickstarter](https://www.kickstarter.com/projects/realmax100/realmax-qian-the-1008-fov-ar-glasses-for-a-more-immersive/faqs) |
+
+Qian Light and Qian Standard are retained as configurations of one adjacent headset identity. The manufacturer's campaign FAQ describes the Standard package chiefly as Qian plus additional accessories, including the magnetic VR cover and Leap Motion mounting hardware, rather than a second core headset generation.
 
 ## Eyeglass-mounted assistive modules
 
