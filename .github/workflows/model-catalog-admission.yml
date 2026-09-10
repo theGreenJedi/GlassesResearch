@@ -1,0 +1,193 @@
+name: Canonical model admission
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/model_catalog_admission_actuator.py'
+      - 'scripts/model_proposal_intake.py'
+      - 'scripts/sync_catalog_counts.py'
+      - '.github/workflows/model-catalog-admission.yml'
+      - 'docs/OPTIMIZER_PIPELINE.md'
+      - 'docs/CANONICAL_ADMISSION_AUTOMATION.md'
+      - 'models/THE_LIST_RECONCILIATION_*'
+      - 'models/PROFILES_AUTO_ADMISSIONS.md'
+      - 'models/THE_LIST.md'
+      - 'models/README.md'
+  schedule:
+    - cron: '7,17,27,37,47,57 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: canonical-model-admission
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Self-test model proposal intake
+        run: python scripts/model_proposal_intake.py --input /dev/null --self-test
+      - name: Self-test bounded canonical admission actuator
+        run: python scripts/model_catalog_admission_actuator.py --self-test
+      - name: Verify current canonical synchronization
+        run: python scripts/sync_catalog_counts.py --check
+
+  admit:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    env:
+      MODEL_PROPOSAL_QUEUE_URL: https://glassesresearch.org/api/newsroom/model-proposals
+      OIDC_AUDIENCE: glassesresearch-newsroom-publication
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Start from the exact current canonical base
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          base_sha="$(git rev-parse origin/main)"
+          echo "${base_sha}" > /tmp/base-sha
+          branch="automation/model-catalog-admission-${GITHUB_RUN_ID}"
+          echo "${branch}" > /tmp/branch
+          git checkout -b "${branch}" "${base_sha}"
+
+      - name: Pull only automatic-lane proposal candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          oidc_json="$(curl --fail --silent --show-error \
+            -H "Authorization: Bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=${OIDC_AUDIENCE}")"
+          oidc_token="$(python -c 'import json,sys; print(json.load(sys.stdin)["value"])' <<<"${oidc_json}")"
+          test -n "${oidc_token}"
+          echo "::add-mask::${oidc_token}"
+          curl --fail --silent --show-error --location --max-time 30 \
+            -H 'Accept: application/json' \
+            -H "Authorization: Bearer ${oidc_token}" \
+            "${MODEL_PROPOSAL_QUEUE_URL}" -o /tmp/model-proposal-queue.json
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          from scripts.model_proposal_intake import ingest
+
+          payload = json.loads(Path('/tmp/model-proposal-queue.json').read_text(encoding='utf-8'))
+          kept = []
+          for item in payload.get('proposals', []):
+              proposal = item.get('proposal') if isinstance(item, dict) else None
+              if not isinstance(proposal, dict):
+                  continue
+              identity = proposal.get('proposed_identity')
+              acquisition = proposal.get('acquisition')
+              if proposal.get('proposal_kind') != 'catalog_admission':
+                  continue
+              if proposal.get('conclusion') != 'verified_new_model' or proposal.get('confidence') != 'high':
+                  continue
+              if proposal.get('requires_human_review') is not False:
+                  continue
+              if not isinstance(identity, dict) or identity.get('related_gls_ids') or identity.get('identity_edges'):
+                  continue
+              if proposal.get('unresolved_questions'):
+                  continue
+              if not isinstance(acquisition, dict) or acquisition.get('threshold_met') is not True:
+                  continue
+              kept.append(item)
+          filtered = {**payload, 'proposals': kept}
+          created = ingest(filtered, Path('research/model-proposals'), os.environ['MODEL_PROPOSAL_QUEUE_URL'])
+          print(f"Ingested {len(created)} automatic-lane proposal candidate(s).")
+          PY
+
+      - name: Apply bounded automatic admission gate
+        run: python scripts/model_catalog_admission_actuator.py --all
+
+      - name: Detect whether an admission actually passed
+        id: candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$(git status --porcelain -- 'models/THE_LIST_RECONCILIATION_*_AUTO_*' models/PROFILES_AUTO_ADMISSIONS.md)" ]]; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            echo 'No proposal passed the bounded automatic admission gate.'
+            git reset --hard "$(cat /tmp/base-sha)"
+            exit 0
+          fi
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+
+      - name: Mechanically synchronize canonical ledger
+        if: steps.candidate.outputs.changed == 'true'
+        run: python scripts/sync_catalog_counts.py
+
+      - name: Validate complete canonical result
+        if: steps.candidate.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/sync_catalog_counts.py --check
+          python scripts/check_catalog_consistency.py
+          python scripts/check_model_profiles.py --strict
+          python scripts/build_device_database.py --validate-only
+
+      - name: Commit and push bounded candidate
+        if: steps.candidate.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -A -- models/THE_LIST.md models/README.md models/PROFILES_AUTO_ADMISSIONS.md 'models/THE_LIST_RECONCILIATION_*_AUTO_*' research/model-proposals
+          git commit -m 'Admit evidence-clean model discovery automatically'
+          git push --set-upstream origin "$(cat /tmp/branch)"
+
+      - name: Open canonical admission PR
+        if: steps.candidate.outputs.changed == 'true'
+        id: pr
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="$(cat /tmp/branch)"
+          pr="$(gh pr create \
+            --base main \
+            --head "${branch}" \
+            --title 'Admit evidence-clean model discovery' \
+            --body $'Generated by the bounded canonical-admission lane. Every included model passed the high-confidence distinct-identity, purchaser-history, no-existing-target, no-identity-edge, no-unresolved-question, structured-row, source-binding, duplicate, and exact-era gates before this PR was created.\n\nAutomatic admission establishes only canonical identity and documented acquisition history. It does not infer Report Card scores, privacy, openness, owner control, cloud independence, durability, support quality, or hands-on behavior.\n\nThe PR will merge automatically only if required checks pass and `main` has not moved since GLS IDs were allocated.' \
+            --json number --jq '.number')"
+          test -n "${pr}"
+          echo "number=${pr}" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for required PR checks
+        if: steps.candidate.outputs.changed == 'true'
+        shell: bash
+        run: gh pr checks "${{ steps.pr.outputs.number }}" --watch --fail-fast
+
+      - name: Refuse stale ID allocation, otherwise merge
+        if: steps.candidate.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          pr="${{ steps.pr.outputs.number }}"
+          branch="$(cat /tmp/branch)"
+          original_base="$(cat /tmp/base-sha)"
+          git fetch origin main
+          current_base="$(git rev-parse origin/main)"
+          if [[ "${current_base}" != "${original_base}" ]]; then
+            gh pr close "${pr}" --comment 'Automatic admission abandoned because main moved after GLS allocation. The next scheduled run will recompute identity duplication and allocate from the fresh canonical ledger.'
+            git push origin --delete "${branch}" || true
+            echo 'Canonical base moved; safely abandoned stale allocation.'
+            exit 0
+          fi
+          gh pr merge "${pr}" --squash --delete-branch
