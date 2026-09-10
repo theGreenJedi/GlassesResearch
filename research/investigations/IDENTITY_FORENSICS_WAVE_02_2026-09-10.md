@@ -1,7 +1,7 @@
 # Identity Forensics — Wave 02
 
 **Date:** 2026-09-10  
-**Scope:** continue catalog completeness work from the 2026-09-07 identity-forensics and competitor-completeness passes. This note records evidence and dispositions only; it does **not** mint or retire canonical `GLS-####` identities by itself.
+**Scope:** continue catalog completeness work from the 2026-09-07 identity-forensics and competitor-completeness passes. This note records the forensic evidence and final Wave 02 dispositions; canonical propagation is controlled by the accompanying reconciliation packet.
 
 ## Baseline
 
@@ -9,73 +9,70 @@ The current canonical ledger contains **236 active smart-glasses records**. Earl
 
 ## Finding 1 — RealWear Arc 3 is a clean catalog omission
 
-**Disposition: admission candidate — high confidence.**
+**Final disposition: admit.**
 
 The current GlassesResearch RealWear population stops at HMT-1, HMT-1Z1, Navigator 500, Navigator 520, and Navigator Z1. RealWear now directly sells a sixth named headset, **RealWear Arc 3**, and the current canonical list does not contain it.
 
 Primary evidence:
 
-- RealWear's current hardware page names Arc 3 as an industrial smart-glasses product and routes users to `SHOP NOW`: https://www.realwear.com/devices/hardware
+- RealWear's current hardware page names Arc 3 and routes users to `SHOP NOW`: https://www.realwear.com/devices/hardware
 - RealWear's first-party shop lists Arc 3 alongside Navigator 520 and Navigator Z1, starting at USD $2,950: https://shop.realwear.com/
-- The direct Arc 3 product page exposes a live `Add to cart` purchase route. The currently indexed configuration is USD $3,550 with three years of Service & Support: https://shop.realwear.com/products/realwear-arc-3
-- RealWear's launch post says Arc 3 was launched on 2025-10-28 and was available to purchase immediately under a yearly subscription model: https://www.realwear.com/blog/realwear-arc-3
-- RealWear support identifies the hardware model as **A31G** and documents the production firmware line: https://support.realwear.com/knowledge/arc3/specifications and https://support.realwear.com/knowledge/realwear-arc-3-firmware-release-1.0-release-notes
+- The direct Arc 3 product page exposes a live `Add to cart` purchase route: https://shop.realwear.com/products/realwear-arc-3
+- RealWear support identifies the hardware model as **A31G**: https://support.realwear.com/knowledge/arc3/specifications
+- RealWear firmware documentation independently repeats **RealWear Arc 3 (A31G)**: https://support.realwear.com/knowledge/realwear-arc-3-firmware-release-1.0-release-notes
 
 ### Identity boundary
 
-Arc 3 is not a Navigator 520 cosmetic variant. RealWear describes a separate hardware architecture: see-through full-color micro-OLED display, Snapdragon 662 platform, dual fixed cameras, distinct 175–179 g headband-style chassis, Ari OS launch platform, and model name A31G. RealWear also says Arc 3 **extends rather than replaces** its existing devices.
+Arc 3 is not a Navigator 520 cosmetic variant. RealWear documents a separate see-through full-color micro-OLED architecture, Snapdragon 662 platform, dual-camera system, different chassis and the model identifier A31G. The purchaser-history threshold is crossed directly by the current first-party cart.
 
-### Admission-ruler result
+**Canonical action:** admit as `GLS-0238`. Arc Base, thermal modules, support plans and other accessories remain non-eyewear accessories rather than separate smart-glasses identities.
 
-The purchaser-history threshold is crossed directly and unambiguously: first-party launch + immediate paid acquisition + current first-party cart. No marketplace inference is required.
+## Finding 2 — Iristick Z1 → G1 chronology is now resolved
 
-**Recommended next action:** admit RealWear Arc 3 as a new canonical model after the normal profile / comparison / lineage propagation checks. Do not treat Arc Base, thermal modules, support plans, or other accessories as separate eyewear identities.
+**Final disposition: Z1 is the former market name of G1; do not mint a separate Z1 row.**
 
-## Finding 2 — Iristick G1 / G1 PRO are missing historical identities, but the rename boundary needs one more archival pass
+The earlier ambiguity came from secondary snippets that alternately described Z1 as becoming G1 or G1 Pro. A contemporaneous Iristick press release resolves the boundary more cleanly. It states that **Iristick.G1 was formerly on the market as Iristick.Z1**, while separately listing **Iristick.G1PRO** as an available product from May 2021. The same release treats G1 and G1 PRO as members of the product portfolio rather than saying Z1 became G1 PRO.
 
-**Disposition: strong historical candidates; hold canonical admission until the Z1 → G1 / G1 PRO rename and acquisition evidence are packaged cleanly.**
+Contemporaneous evidence:
 
-The current GlassesResearch Iristick population begins with G2 / G2 PRO and then H1 / G3. Iristick's own surviving primary documentation establishes an earlier **Iristick.G1** generation and a **G1 PRO** configuration that are absent from the canonical ledger.
+- Iristick April 27, 2021 press release, preserved by the EU Innovation Fund: https://innovationfund.eu/wp-content/uploads/2021/04/2021-04-27-IRI-PRESS-RELEASE-Iristick.H1-launch-april2021_final.pdf
+- Display Daily's May 2021 reproduction likewise carries the heading `Iristick.Z1 becomes Iristick.G1` and describes G1 PRO as the additional feature tier: https://displaydaily.com/introducing-iristick-g1-iristick-h1-visor-ex01/
+- Iristick's surviving March 2021 G1 specification: https://iristick.com/uploads/files/IRI-spec-sheet-Iristick.G1-32021-EU-final.pdf
+- Iristick's regulatory booklet continues to identify G1 (PRO) and preserves the shared G-series hardware/serial format: https://docs.iristick.com/assets/RWS-Iristick.G2-H1.pdf
 
-Primary evidence:
+Independent archival confirmation that Z1 was a real acquired/deployed product also survives in Médecins Sans Frontières' Unicat catalog, which preserves the Iristick Z1 as an outdated field-procurement item and links the later Iristick G1 article: https://www.unicat.msf.org/cat/product/76445
 
-- Iristick still hosts a March 2021 product specification explicitly covering **IRISTICK.G1** and **IRISTICK.G1 PRO**: https://iristick.com/uploads/files/IRI-spec-sheet-Iristick.G1-32021-EU-final.pdf
-- The specification distinguishes the PRO configuration from base G1: PRO receives multilingual/offline voice-command capability and the advanced barcode-scanning tier while both share the documented G1 chassis/platform characteristics.
-- Iristick's current regulatory/warranty material continues to identify `Iristick.G1 (PRO)` alongside G2 (PRO) and H1: https://docs.iristick.com/assets/RWS-Iristick.G2-H1.pdf
-- Current Iristick software documentation still names G1 PRO as a supported voice-command device: https://play.google.com/store/apps/details?id=app.wizzeye.app
+### Alias result
 
-Independent acquisition/deployment evidence:
+`Iristick.Z1` should be preserved as a historical alias / former market name for the base **Iristick.G1** identity. It should not consume a third canonical ID.
 
-- Wideum, an enterprise remote-assistance integrator, preserves an Iristick G1 unboxing and describes customer deployment of multiple Iristick units: https://wideum.com/en_us/iristick/
-- Orange's IoT Journey catalog preserves an `Iristick.G1` product record in its XR-device catalog: https://iotjourney.orange.com/en/products/5192509b-1614075765
-- Public trade-shipment data includes a `Complete Set G1 Pro For iOS Devices` shipment from Iristick NV to Bayer Turk and separate Iristick.G1 shipments: https://www.volza.com/company-profile/iristick-nv-42644538/export/
+## Finding 3 — Iristick G1 and G1 PRO qualify as two marketed product identities
 
-### Rename conflict that must not be guessed through
+**Final disposition: admit G1 and G1 PRO separately; preserve shared-hardware evidence.**
 
-Surviving sources disagree on the exact historical naming transition:
+Iristick's March 2021 specification presents **IRISTICK.G1** and **IRISTICK.G1 PRO** side by side. Both share the same 77 g chassis, 428 × 240 display, cameras, 6× optical zoom, pocket unit and core hardware. The PRO tier adds multilingual voice commands and advanced barcode scanning. That means the evidence supports a common hardware platform with a separately marketed PRO configuration rather than two unrelated electronics generations.
 
-- A 2021 report states **Iristick.Z1 becomes Iristick.G1**: https://displaydaily.com/introducing-iristick-g1-iristick-h1-visor-ex01/
-- A preserved 2020 trade-publication entry says **Iristick Z1 smart glasses are now Iristick G1 Pro**: https://www.newequipment.com/home/company/55120160/72712
+The purchaser-history boundary is nevertheless satisfied for both marketed identities:
 
-This may reflect a base/PRO renaming sequence rather than contradictory hardware, but the current evidence package is not sufficient to assert that. The old `Z1` identity should therefore be treated as an alias/lineage lead, not automatically as a third missing model.
+- Iristick's April 2021 press release explicitly states that **Iristick.G1, Iristick.G1PRO and Iristick.H1 are available from May 2021**.
+- Iristick's product specification explicitly names and distinguishes G1 and G1 PRO.
+- Iristick's current Wizzeye software still names **G1 PRO** as a supported voice-command product.
+- Public trade records preserve a shipped `Complete Set G1 Pro For iOS Devices` and separate Iristick.G1 shipments from Iristick NV, corroborating real enterprise acquisition rather than a paper-only feature label: https://www.volza.com/company-profile/iristick-nv-42644538/export/
 
-### Identity boundary
+The current canonical catalog already treats the later **G2** and **G2 PRO** as separate marketed identities (`GLS-0116` / `GLS-0117`) even though they likewise occupy a shared product family. Applying the same ruler to the documented G1 pair avoids an arbitrary generation-specific inconsistency.
 
-The G1 and G1 PRO are manufacturer-documented names. Whether they deserve one or two canonical IDs depends on the site's existing generation/configuration rule. The present catalog already treats G2 and G2 PRO as separate canonical identities, so collapsing G1/G1 PRO without documenting why would be inconsistent. Conversely, the PRO differences currently visible could be software/feature-tier distinctions rather than a separate electronics generation. Preserve that uncertainty until historical sales literature or manuals establish the sold-SKU boundary.
+**Canonical action:**
 
-**Recommended next action:** reconstruct the Z1/G1/G1 PRO commercial chronology from first-party or distributor archives, identify sold SKUs/model numbers if possible, then adjudicate base G1 and G1 PRO independently against the purchaser-history rule.
+- `GLS-0239` — Iristick G1, with **Iristick Z1** preserved as historical alias/former market name.
+- `GLS-0240` — Iristick G1 PRO, explicitly described as the common G1 platform with PRO voice/barcode feature tier rather than an independently proven new electronics architecture.
 
-## Finding 3 — current Iristick coverage is otherwise aligned
+## Finding 4 — current Iristick coverage is otherwise aligned
 
-Iristick's current first-party shop sells G2 PRO and G3, with H1 preserved as sold-out/legacy hardware. Current support pages likewise center G2 PRO, G3, and H1. Those identities already exist in GlassesResearch as GLS-0117, GLS-0119, and GLS-0118 respectively; no duplicate admission is warranted.
+Iristick's current first-party shop sells G2 PRO and G3, with H1 preserved in the supported product family. Those identities already exist in GlassesResearch as GLS-0117, GLS-0119, and GLS-0118 respectively; no duplicate admission is warranted.
 
-Primary current sources:
+Current first-party documentation also continues to identify G2 PRO, G3 and H1 as the active comparison set: https://docs.iristick.com/smart-glasses/specifications/
 
-- https://shop.iristick.com/products
-- https://docs.iristick.com/smart-glasses/
-- https://iristick.com/pricing/
-
-Iristick's pricing page also lists an **H3 COMING SOON** with no orderable purchase route. H3 is therefore a discovery/watch identity only at this stage, not a canonical purchaser-history admission.
+Iristick's pricing material lists an **H3 COMING SOON** with no demonstrated paid purchase route. H3 therefore remains a discovery/watch identity only at this stage, not a canonical purchaser-history admission.
 
 ## Count-hygiene observation
 
@@ -85,12 +82,16 @@ The repository's current canonical profile documentation says 236 active records
 
 | Identity | Result | Reason |
 |---|---|---|
-| RealWear Arc 3 / A31G | **Admission candidate** | Current first-party product, launch, support identity, price, and direct cart; distinct hardware branch. |
-| Iristick G1 | **Strong hold / archival admission candidate** | Primary product specification + enterprise deployment evidence; sold-SKU/rename chronology needs closure. |
-| Iristick G1 PRO | **Strong hold / archival admission candidate** | Manufacturer-documented PRO identity + shipment evidence; base-vs-PRO canonical boundary needs closure. |
-| Iristick Z1 | **Alias/lineage investigation** | Sources disagree whether Z1 renamed to G1 or G1 Pro; do not mint a third identity without proof. |
-| Iristick H3 | **Watch / pre-release** | First-party pricing page says coming soon and not yet orderable. |
+| RealWear Arc 3 / A31G | **Admit — GLS-0238** | Current first-party product, model-number support evidence and direct cart; distinct RealWear architecture. |
+| Iristick G1 | **Admit — GLS-0239** | First-party product specification plus contemporaneous availability statement; former Z1 market name resolved. |
+| Iristick G1 PRO | **Admit — GLS-0240** | Separately marketed PRO product with documented feature differentiation and acquisition evidence. |
+| Iristick Z1 | **Alias of G1** | Iristick's contemporaneous release explicitly says G1 was formerly marketed as Z1. |
+| Iristick H3 | **Watch / pre-release** | Announced/coming-soon identity without a demonstrated paid acquisition route. |
 
-## Next forensic targets
+## Evidence boundary
 
-After Arc 3 propagation and Iristick archival closure, continue the manufacturer-completeness debt queue rather than re-auditing already monitored families. Highest-value next passes are Amazon Echo Frames, Bose Frames, Huawei smart eyewear, Xiaomi smart eyewear, Lenovo smart glasses, and the remaining RealWear/Iristick historical chronology. Special care is required where the current canonical catalog may be counting frame styles as separate electronics identities; completeness work can remove ambiguity as well as discover omissions.
+These decisions establish identity and purchaser history. They do **not** convert manufacturer technical specifications into independently verified performance, and the G1/G1 PRO split must not be described as proof of different core hardware. The evidence instead shows a common G1 platform with a separately marketed PRO feature tier.
+
+## Wave closeout
+
+The two blockers that opened Wave 02 are now adjudicated: Arc 3 has a clean current identity/acquisition path, and the Iristick Z1/G1/G1 PRO rename problem has been resolved without inventing a third Z1 identity. The accompanying reconciliation packet may now propagate three admissions through the normal mechanical catalog pipeline.
