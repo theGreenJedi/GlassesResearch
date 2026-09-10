@@ -68,9 +68,9 @@ The current canonical catalog already treats the later **G2** and **G2 PRO** as 
 
 ## Finding 4 — current Iristick coverage is otherwise aligned
 
-Iristick's current first-party shop sells G2 PRO and G3, with H1 preserved in the supported product family. Those identities already exist in GlassesResearch as GLS-0117, GLS-0119, and GLS-0118 respectively; no duplicate admission is warranted.
+Iristick's current first-party documentation centers G2 PRO, G3 and H1. Those identities already exist in GlassesResearch as GLS-0117, GLS-0119, and GLS-0118 respectively; no duplicate admission is warranted.
 
-Current first-party documentation also continues to identify G2 PRO, G3 and H1 as the active comparison set: https://docs.iristick.com/smart-glasses/specifications/
+Current first-party comparison: https://docs.iristick.com/smart-glasses/specifications/
 
 Iristick's pricing material lists an **H3 COMING SOON** with no demonstrated paid purchase route. H3 therefore remains a discovery/watch identity only at this stage, not a canonical purchaser-history admission.
 
