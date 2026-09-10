@@ -15,6 +15,8 @@ on:
       - ".github/workflows/daily-news-verification.yml"
       - "scripts/triage_news_reviews.py"
       - "scripts/test_triage_news_reviews.py"
+      - "scripts/measure_editorial_queue_health.py"
+      - "scripts/test_measure_editorial_queue_health.py"
       - "scripts/apply_editorial_decisions.py"
       - "scripts/test_apply_editorial_decisions.py"
       - "research/news-reviews/editorial-decisions.json"
@@ -101,20 +103,24 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Validate classification, triage, and editorial-decision contracts
+      - name: Validate classification, triage, queue-health, and editorial-decision contracts
         if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'
         run: |
           python scripts/test_knowledge_flow.py
           python scripts/test_triage_news_reviews.py
+          python scripts/test_measure_editorial_queue_health.py
           python scripts/test_apply_editorial_decisions.py
-          python -m py_compile scripts/triage_news_reviews.py scripts/apply_editorial_decisions.py
+          python -m py_compile scripts/triage_news_reviews.py scripts/measure_editorial_queue_health.py scripts/apply_editorial_decisions.py
 
-      - name: Triage durable intake and apply explicit editorial decisions
+      - name: Triage durable intake, measure queue health, and apply explicit editorial decisions
         if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'
         run: |
           python scripts/triage_news_reviews.py --lookback-days 14 --verify-reachability --timeout 8 --workers 12
           python scripts/apply_editorial_decisions.py
+          python scripts/measure_editorial_queue_health.py
           cat research/news-reviews/latest.md >> "$GITHUB_STEP_SUMMARY"
+          printf '\n\n' >> "$GITHUB_STEP_SUMMARY"
+          cat research/news-reviews/health.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Persist durable editorial triage
         if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'
@@ -136,6 +142,8 @@ jobs:
           path: |
             research/news-reviews/latest.md
             research/news-reviews/queue.json
+            research/news-reviews/health.md
+            research/news-reviews/health.json
           retention-days: 90
 
       - name: Dispatch bounded publication after bot-driven triage
