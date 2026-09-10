@@ -22,7 +22,7 @@ This is **not** a replacement for, or unattributed copy of, upstream community p
 2. **Panny777 / Meizu-Myvu-SDK** — structured Android SDK and detailed XGA010C wire-protocol documentation. MIT-licensed original code; protocol behavior may vary with firmware.
 3. **FerSaiyan / Alternative-HeyCyan-App-and-SDK (CyanBridge)** — downstream integration that explicitly uses Panny777's MYVU BLE/ECDH/RFCOMM/heartbeat/display work while independently researching other glasses families.
 
-See `SOURCES.md` for direct links and attribution.
+See `SOURCES.md` for direct links, pinned commits and attribution.
 
 ## What we currently know
 
@@ -70,14 +70,15 @@ Until testing disproves it:
 - Never promote an owner report to a hardware fact without reproduction.
 - Prefer reversible/non-destructive tests; factory-reset/recovery operations remain outside routine testing unless specifically justified.
 
-## Planned artifacts
+## Repository contents
 
 - `COMPATIBILITY.md` — hardware × firmware × host OS × app/client matrix.
 - `PROTOCOL-CROSSWALK.md` — normalized comparison of upstream protocol findings without redistributing proprietary vendor code.
 - `FAILURE-MODES.md` — provenance-linked reports and reproduction status.
-- `TEST-PLAN.md` — common conformance/bench procedures.
-- `SOURCES.md` — upstream projects, discussions and attribution.
+- `TEST-PLAN.md` — common conformance/bench procedures plus required evidence-output schema.
+- `SOURCES.md` — pinned upstream projects, discussions and attribution.
+- `MATURITY-REVIEW.md` — publication-readiness review and remaining limitations.
 
 ## Publication status
 
-**Research branch / not yet placed on glassesresearch.org.** Site placement will be decided after the knowledge base is mature enough to publish.
+**Integration layer mature for repository use; bench verification is intentionally still pending. Not yet placed on glassesresearch.org.** Repository maturity means the evidence is correctly structured and provenance-preserving; it does not convert upstream or community claims into `GR-VERIFIED` findings. Site placement will be decided separately.
