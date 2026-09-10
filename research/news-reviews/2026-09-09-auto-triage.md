@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-10T00:04:56.174284+00:00`
+Generated: `2026-09-10T01:10:41.957713+00:00`
 
-- Intake files inspected: **192**
-- Candidates retained in this review window/history: **6527**
+- Intake files inspected: **194**
+- Candidates retained in this review window/history: **6893**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 2093
+- `adjacent_radar`: 2113
 - `catalog_review`: 59
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 370
-- `rejected_noise`: 3905
+- `needs_editorial_verification`: 372
+- `rejected_noise`: 4249
 - `source_monitor`: 14
 - `source_review`: 59
 - `watching`: 23
@@ -204,11 +204,11 @@ Generated: `2026-09-10T00:04:56.174284+00:00`
 | normal | needs_editorial_verification | direct | ['Nightmare': Experts Flag Privacy, Surveillance Risks As AI Smart Glasses Gain Traction - ndtvprofit.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxONGtWdy1sU3EzdmZON1I1VGZRVFk3ckExQ29BUGt3UGo1c1RXd0tHT3VrRkxxX3ZMUXRsVl9HcVo5S3ByaHZwdVAydGFGNUlhUTEzN3JwN2htRjg4ZlFib0x5MmtyOHNkR21pUzFlN1BKNFdQamRQdkR1d0hXckljcHoyVDBXSmctR3dwb19UUTRzMUY4Nl9sU1FTOHdkc2s1WWtmcFdPeWxiRlFLeEFGQ2tIMDZUNkJvblJQQmZDblF0b3dYOWZ1QUxGYTNzSzh0QmhPMWxrb0szQlhLaHhz0gHfAUFVX3lxTE40a1Z3LWxTcTN2Zk43UjVUZlFUWTdyQTFDb0FQa3dQajVzVFd3S0dPdWtGTHFfdkxRdGxWX0dxWjlLcHJodnB1UDJ0YUY1SWFRMTM3cnA3aG1GODhmUWJvTHkya3I4c2RHbWlTMWU3UEo0V1BqZFB2RHV3SFdySWNwejJUMFdKZy1Hd3BvX1RRNHMxRjg2X2xTUVM4d2RzazVZa2ZwV095bGJGUUt4QUZDa0gwNlQ2Qm9uUlBCZkNuUXRvd1g5ZnVBTEZhM3NLOHRCaE8xbGtvSzNCWEtoeHM?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (September 2026) Models Buy for Gaming ...](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses (August 2026): Tested Picks for AI, AR & Audio](https://whoismcafee.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Display That Actually Impress](https://nerdtechy.com/best-smart-glasses-with-display) | reachable (202) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses with Translation for Travelers (August 2026)](https://peccadille.net/best-smart-glasses-with-translation-for-international-travelers/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [12 Best AR Glasses (September 2026) Tested & Compared](https://whoismcafee.com/best-ar-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [2026 Best Translation Glasses Guide: AI Subtitles for Real Life – RayNeo](https://www.rayneo.com/blogs/news/best-translation-smart-glasses-2026-guide) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [7 Best AR Glasses That’ll Change How You See Everything](https://nerdtechy.com/best-ar-glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [7 Best AR Glasses That’ll Change How You See Everything](https://nerdtechy.com/best-ar-glasses) | reachable (202) | research_news_review |
 | normal | needs_editorial_verification | direct | [7 Best Smart Glasses For Translation - Gear Gadget Guide](https://gadgetgearguide.com/best-smart-glasses-for-translation/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses Deliver Factory Floor Footage—Privacy Concerns Spread - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE1SanVadUFGVDVrbldfOC1DWWZtMnJzZFZRUVB4SGxUX1NJZEFnX1dua3ZSSE9Gdjg4c3cyblZhZDFLb3RlTVFNSmdLRDR5Q3I5ZUhTelhfV3BNTlBNbUZXMC1OMFNuZkdFLWxWMGJ4UTE5cFRTd1E?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AI Glasses Spark Privacy Concerns Amid Rising Misuse and Legal Battles - 조선일보](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUnF3YndKOV9aWVRvZmJ4Uk5RVnF3aDB2WF80R0hQX01XRl9sYjBPM1QwYWZDWVhkSWJDb1ZiRVYyRk12eTlOX0tKVGlJWmdVZlJHSERDVy1USk1VTkJyUmhHeWxWcUw1N0RCbDVjYWt0Rms3bjM2c21odF9uYVNoRWtCWnZVamJ0?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -220,6 +220,8 @@ Generated: `2026-09-10T00:04:56.174284+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Guide: AI Glasses for Everyday Life \| Meta](https://www.meta.com/ai-glasses/learn/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses with Real-Time Translation & Photochromic ... - TikTok](https://www.tiktok.com/shop/pdp/ai-smart-glasses-with-real-time-translation-bluetooth-calls/1731561723800490549) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [ai smart glasses! Camera glasses. Realtime translation #smartglasses ...](https://www.tiktok.com/@silverkel01/video/7677967029562854678) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Smart Glasses](https://www.amazon.com/ai-smart-glasses/s?k=ai+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: XREAL 1S AR Glasses, 500" Virtual Screen, Powered by X1 ...](https://www.amazon.com/clp/B0GC56Z4CR) | reachable (200) | research_news_review, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Set for 2027 with Siri, AI, Privacy Focus - Analytics Insight](https://news.google.com/rss/articles/CBMixAFBVV95cUxPaS1mYVltMlZkMVJMb0xNVzRuTVd3M3o3RjBTdGVkdTN1TWtQUEhnZmppWmZhVm54V2NPX1NwN0Q3TnpFTWlUQVNZVjZmdGx5MThmdGtFbTZYWHVFaHEwRk9YWFg4MV9kT3ZHZ29RSGk4RDVxbkdENm9oY2hqWGw4SVh1cm5ua0NLSHlZYzZlU3owY05lZUxpc0FUOGg2M3hzY0IwZWZtMU9KdEY2MlZKTWRYdFU3ZklDYzhUNll1UHQ5NkI20gHEAUFVX3lxTE9pLWZhWW0yVmQxUkxvTE1XNG5NV3czejdGMFN0ZWR1M3VNa1BQSGdmamlaZmFWbnhXY09fU3A3RDdOekVNaVRBU1lWNmZ0bHkxOGZ0a0VtNlhYdUVocTBGT1hYWDgxX2RPdkdnb1FIaThENXFuR0Q2b2hjaGpYbDhJWHVybm5rQ0tIeVljNmVTejBjTmVlTGlzQVQ4aDYzeHNjQjBlZm0xT0p0RjYyVkpNZFh0VTdmSUNjOFQ2WXVQdDk2QjY?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Set for 2027 with Siri, AI, Privacy Focus - Analytics Insight](https://news.google.com/rss/articles/CBMitwFBVV95cUxPY0pSd3RYVDlFLVdOYzVMd3RpemJ6cVZKUVZZSTJyUVl3Tm9QYWVnZGpweXE4MjJxTzQ3eXRmY0FBRDNIdDFfdS1jeXExU1dudzJnM05CdmpHTWl3UlNxLTN4by1fX3lMU2JueEFRYi1zRmphRjRrN09Oc1JiTDA5eExjbDlUV25Lelc0bTJZUTFVX3FYS0VaNlVPT3F2T3NUcEZvQ1U4aHZhb191MGJUVENsaTMyejDSAcQBQVVfeXFMT2ktZmFZbTJWZDFSTG9MTVc0bk1XdzN6N0YwU3RlZHUzdU1rUFBIZ2ZqaVpmYVZueFdjT19TcDdEN056RU1pVEFTWVY2ZnRseTE4ZnRrRW02WFh1RWhxMEZPWFhYODFfZE92R2dvUUhpOEQ1cW5HRDZvaGNoalhsOElYdXJubmtDS0h5WWM2ZVN6MGNOZWVMaXNBVDhoNjN4c2NCMGVmbTFPSnRGNjJWSk1kWHRVN2ZJQ2M4VDZZdVB0OTZCNg?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [AR Compare: AR Glasses Database — 81+ Models Compared](https://www.arcompare.com/) | reachable (200) | research_news_review |
@@ -270,8 +272,6 @@ Generated: `2026-09-10T00:04:56.174284+00:00`
 | normal | needs_editorial_verification | direct | [Meta AI Glasses Update Targets Covert Recording, Here’s What Changes - outlookbusiness.com](https://news.google.com/rss/articles/CBMirAFBVV95cUxNd04wTG53NW8wbzRwVDRRN1B4RWo2VFRIUmxFWERRcHkyV2ZWbFB6TlY5dXlCSVlwSkVaQ2NYdV90SXpaVlBDdWd4Rk1YUHRqZ2lZZ1dTY3BDRjl1T0R2ODdidUtvUnVCcFgyT2NSNFc1M2pHTDB2bXF6ekFrRDhHSzdUNDF0aXpJZWQ5aEpjQUdSQ2c3eUdqdEFxaEZHTlFKdTdDaXFEZFBSeUZB0gG6AUFVX3lxTE9RcEJhWERlZGN6cGUtbTdXWFM4Q0tUSnpXOEwwTmozWDQtUjl4N1lEd1JDSzRSVF9MaGtCdDV0RC0wd25ZY1FPZ0xOaFQwYVliOWlrYzFDcllzWGxmblFPSW9leTFfTWFMTnhRMUZiZkZ5a2hIa3U4QTV2STh1M1pUOV9sNEhxWmFSemk2VGd3NjVIN1pnOGJRaXpMbnE1UHZCZTZrZS1IX2VPYTNOZE56NWx1TlQxU3BWUQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Meta AI Glasses: Ray-Ban Meta & Oakley Meta \| Meta](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta Bricks Cameras On Thousands Of AI Glasses After Privacy Light Tampering - Times Now](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUEdaMDNrV3h2X09WWkpZcThDNjhYbnpfOU9fY1BFRGNvbUJSNXowZTBzeTFFbWZCWjBFTFFaOFZqNVdDbkdJenBTSVhqOWRhTzF5VWh4NVVvajQ1REl1bloxY1pseU5TSDhlMU9GQjczYWJZZC1LRlJPNzIwYVF6Ymo1dXFxMWpnOC0tR3dmVkd2S3NabFJDOWxYWW5NWXRDeVFFUXM2bmNBNVBCWHZSYms1emZ4R1Y4aXdVa3RwSWNBNDZfdDBXZVZzQlBEaFRidkttZmN3VGw0NXY1T1I40gHfAUFVX3lxTE1QR1owM2tXeHZfT1ZaSllxOEM2OFhuel85T19jUEVEY29tQlI1ejBlMHN5MUVtZkJaMEVMUVo4Vmo1V0NuR0l6cFNJWGo5ZGFPMXlVaHg1VW9qNDVESXVuWjFjWmx5TlNIOGUxT0ZCNzNhYllkLUtGUk83MjBhUXpiajV1cXExamc4LS1Hd2ZWR3ZLc1psUkM5bFhZbk1ZdEN5UUVRczZuY0E1UEJYdlJiazV6ZnhHVjhpd1VrdHBJY0E0Nl90MFdlVnNCUERoVGJ2S21mY3dUbDQ1djVPUjg?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Meta Bricks Cameras On Thousands Of AI Glasses After Privacy Light Tampering - Times Now](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQYW8xUG8tUldIcE1MU3VWd3dpUHdJMnoyNnI0X1dFenRWdWV2eFloUlRFZGZTWlNya1hWblpOY0FSaUMtcWFwckhPd1NPamp1dzRhdHRzNmZiV1hVN19UNmFuWDdEYl8wcnIxSGJmRnRCVmhqTUc2cHZDYXBJRlBCS00tZTlET0Rabkd4ampWZ0R1QmRnN3ZGOC1mMS1RLVItZEQ4Z1B6bWZ6c2ZLLWM3SWNrSEdzYTVMRnJwMDlCVEY3OXJPVVYxNTNOeW9rWW8tTjRDbTRTWUtHUdIB3wFBVV95cUxNUEdaMDNrV3h2X09WWkpZcThDNjhYbnpfOU9fY1BFRGNvbUJSNXowZTBzeTFFbWZCWjBFTFFaOFZqNVdDbkdJenBTSVhqOWRhTzF5VWh4NVVvajQ1REl1bloxY1pseU5TSDhlMU9GQjczYWJZZC1LRlJPNzIwYVF6Ymo1dXFxMWpnOC0tR3dmVkd2S3NabFJDOWxYWW5NWXRDeVFFUXM2bmNBNVBCWHZSYms1emZ4R1Y4aXdVa3RwSWNBNDZfdDBXZVZzQlBEaFRidkttZmN3VGw0NXY1T1I4?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Meta faces fresh privacy lawsuit over AI smart glasses recordings - Indian Television Dot Com](https://news.google.com/rss/articles/CBMioAFBVV95cUxNTHFUNmNDX1c2bXVmVFlnQU92WGdINExHcEw3Z0xtay1oNjNlU2tNWjVQSng3ZS1lVW1HSkZoU0JJQjR5YmZER01IQnM2ZEZtcTdSRHZrOVRNRVNTNWkzQ0JCSmtFTTVGY3VDcmJ6UW1VSGJRVG5UWEJhZlB2X3NNMUM3Sld2eUhrWnBCV1BJUlRaeUh6c2dpT0tHWTFYUG1a?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
