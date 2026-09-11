@@ -58,7 +58,12 @@ jobs:
           python scripts/verified_changes.py
           python scripts/verified_publications.py
           python scripts/validate_alert_articles.py
-          python scripts/validate_dispatch_timestamps.py
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            previous_ref="${{ github.event.pull_request.base.sha }}"
+          else
+            previous_ref="HEAD^"
+          fi
+          python scripts/validate_dispatch_timestamps.py --previous-ref "$previous_ref"
       - name: Allow new dispatch IDs while freezing historical deliveries
         if: github.event_name == 'pull_request'
         shell: bash
@@ -107,7 +112,7 @@ jobs:
             echo '- Canonical GRE verified-change ledger validated.'
             echo '- Subscriber publication payloads are derived from GRE events while retaining existing publication IDs for idempotency.'
             echo '- Every dispatch-enabled alert resolves to a dated GlassesResearch article.'
-            echo '- Every dispatch-enabled publication carries a precise UTC publication timestamp so digest cutoffs cannot lose same-day work.'
+            echo '- Every new dispatch-enabled publication carries a precise UTC publication timestamp so digest cutoffs cannot lose same-day work; unchanged immutable legacy payloads may retain their historical timestamp representation.'
             echo '- New dispatch publication IDs are allowed; historical dispatch payloads are immutable and must be superseded by a new event rather than edited in place.'
             echo '- Watching and discovery intake are excluded by GRE validation.'
             if [ '${{ steps.dispatch.outputs.needs_dispatch }}' = 'true' ]; then
