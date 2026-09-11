@@ -9,6 +9,7 @@
       <a class="gr-button gr-button-primary" href="docs/COMPARISON_ENGINE/">Find glasses</a>
       <a class="gr-button gr-button-secondary" href="models/catalog/">Research a model</a>
       <a class="gr-button gr-button-secondary" href="docs/RESEARCH_NEWS/">Follow what’s changing</a>
+      <a class="gr-button gr-button-secondary" href="docs/ECOSYSTEM_MAP/">Explore ecosystem</a>
     </div>
     <p class="gr-hero-note">No sponsored rankings. Unknown stays unknown. Owner control matters.</p>
   </div>
