@@ -11,6 +11,7 @@ These presets open the complete Finder with the criteria already selected:
 - [I need an SDK or API for custom AI](COMPARISON_ENGINE.md?filters=sdk,custom_ai)
 - [I need local or offline operation](COMPARISON_ENGINE.md?filters=offline)
 - [I want a display with translation](COMPARISON_ENGINE.md?filters=display,translation)
+- [I need glasses documented under $400](COMPARISON_ENGINE.md?filters=under_400)
 - [I need glasses documented under $500](COMPARISON_ENGINE.md?filters=under_500)
 
 A Finder result is the beginning of an investigation, not the end: read the card summary, shortlist and compare up to four candidates, open the canonical model research, check its Report Card, and follow the cited evidence. `Unknown`, `No`, and `N/A` remain distinct throughout that path.
