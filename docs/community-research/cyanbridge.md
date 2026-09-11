@@ -17,6 +17,15 @@ CyanBridge illustrates the next step after protocol discovery: reusable software
 
 That makes CyanBridge an important bridge between reverse-engineering knowledge and practical owner control.
 
+## Recent owner-test signals
+
+Two public reports are now useful for compatibility and lineage research:
+
+- **CY01:** a public issue participant reported a repeatable test that placed a CY01 specimen into Wi-Fi Direct mode. The same specimen reported `supportLiveReview = false`, and the participant did not obtain a working live stream. GlassesResearch treats this as **COMMUNITY-REPORTED / owner-tested**, not a family-wide capability claim. [Source: CyanBridge issue #5](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/issues/5).
+- **AX01 / WIFIAX01 identity tuple:** a separate owner reported Bluetooth name `X01_C4E4`, main hardware `AX01_V1.0`, main firmware `1.00.34_260721`, Wi-Fi hardware `WIFIAX01_V1.0`, Wi-Fi firmware `3.00.07_2602021600A01`, and HeyCyan app `1.0.142_20260807`. This is preserved as an **owner-reported compatibility fingerprint** and must not be collapsed into W610, CY01, or another lineage without further evidence. [Source: CyanBridge issue #16](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/issues/16).
+
+These findings strengthen the case for treating HeyCyan as a software ecosystem with multiple hardware/firmware branches rather than a single protocol-identical hardware family.
+
 ## Evidence boundary
 
 CyanBridge's own documentation distinguishes active, experimental, partial, and prototype paths. GlassesResearch should preserve those boundaries. Inclusion here does not imply that every listed adapter or feature has been independently reproduced by GlassesResearch, nor should experimental support be converted into a verified product capability without separate evidence.
