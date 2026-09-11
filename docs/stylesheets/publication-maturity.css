@@ -1,0 +1,399 @@
+/* Publication maturity layer
+   Mature publishing grammar without turning GlassesResearch into a generic tech magazine.
+   Research state remains the product; this file makes that state easier to scan. */
+
+.gr-task-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin: 1rem 0 1.35rem;
+}
+
+.gr-task-presets a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: .48rem .78rem;
+  border: 1px solid var(--gr-line);
+  border-radius: 999px;
+  background: var(--gr-surface);
+  color: var(--gr-ink) !important;
+  font-size: .78rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform var(--gr-ease), border-color var(--gr-ease), box-shadow var(--gr-ease);
+}
+
+.gr-task-presets a:hover,
+.gr-task-presets a:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--gr-accent);
+  box-shadow: var(--gr-shadow-soft);
+}
+
+.gr-task-presets strong {
+  font-weight: 760;
+}
+
+.gr-surface-freshness {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  align-items: center;
+  margin: .4rem 0 1rem !important;
+  padding: .34rem .62rem;
+  border: 1px solid var(--gr-line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.55);
+  color: var(--gr-muted);
+  font-size: .72rem !important;
+  line-height: 1.35 !important;
+}
+
+.gr-surface-freshness strong {
+  color: var(--gr-ink);
+}
+
+/* Homepage lead editorial: the visual is made from evidence relationships, not stock art. */
+.gr-community-feature {
+  margin: 0 0 clamp(2.2rem, 6vw, 4.8rem);
+}
+
+.gr-community-feature-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(19rem, .75fr);
+  gap: clamp(1.2rem, 4vw, 3.5rem);
+  align-items: stretch;
+  padding: clamp(1.3rem, 4vw, 3.1rem);
+  border: 1px solid var(--gr-line-strong);
+  border-radius: 1.35rem;
+  background:
+    radial-gradient(circle at 86% 14%, rgba(76,168,154,.16), transparent 34%),
+    linear-gradient(135deg, rgba(255,255,255,.95), rgba(234,243,240,.72));
+  box-shadow: var(--gr-shadow);
+  color: var(--gr-ink) !important;
+  text-decoration: none;
+}
+
+.gr-community-feature-card:hover,
+.gr-community-feature-card:focus-visible {
+  border-color: var(--gr-accent);
+}
+
+.gr-community-feature-copy {
+  align-self: center;
+}
+
+.gr-community-feature-copy h2 {
+  max-width: 16ch;
+  margin: .35rem 0 .85rem !important;
+  font-size: clamp(2rem, 4.6vw, 4.25rem) !important;
+  line-height: .98 !important;
+  letter-spacing: -.045em !important;
+}
+
+.gr-community-feature-copy > p:not(.gr-kicker):not(.gr-community-feature-meta) {
+  max-width: 48rem;
+  margin: 0 !important;
+  color: var(--gr-muted);
+  font-size: .95rem !important;
+  line-height: 1.65 !important;
+}
+
+.gr-community-feature-meta {
+  margin: 1.2rem 0 0 !important;
+  color: var(--gr-muted);
+  font-size: .73rem !important;
+  font-weight: 680;
+  letter-spacing: .02em;
+}
+
+.gr-evidence-route {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .55rem;
+  align-content: center;
+  min-height: 18rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #10211f;
+  overflow: hidden;
+}
+
+.gr-evidence-route::before {
+  content: "";
+  position: absolute;
+  inset: 1.8rem 50% 1.8rem auto;
+  width: 1px;
+  background: rgba(255,255,255,.15);
+}
+
+.gr-evidence-node {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: .5rem;
+  align-items: center;
+  padding: .72rem .8rem;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: .75rem;
+  background: rgba(255,255,255,.055);
+  color: white;
+}
+
+.gr-evidence-node strong {
+  font-size: .88rem;
+}
+
+.gr-evidence-node span {
+  color: #a9c9c0;
+  font-size: .67rem;
+  text-align: right;
+}
+
+.gr-evidence-outcome {
+  position: relative;
+  z-index: 1;
+  margin-top: .35rem;
+  padding: .72rem .8rem;
+  border-radius: .75rem;
+  background: rgba(103,183,169,.18);
+  color: white;
+  font-size: .78rem;
+  font-weight: 760;
+  text-align: center;
+}
+
+/* Static Research & News fallback. JS progressively upgrades this into the live desk. */
+.gr-newsroom-static-intro {
+  margin: .7rem 0 1.6rem;
+  padding: clamp(1.25rem, 4vw, 2.4rem);
+  border: 1px solid var(--gr-line);
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, rgba(255,255,255,.94), rgba(234,243,240,.7));
+}
+
+.gr-newsroom-static-intro .gr-newsroom-deck {
+  max-width: 54rem;
+  margin-bottom: 1rem;
+}
+
+.gr-newsroom-static-feature {
+  display: block;
+  margin: 0 0 2.4rem;
+  padding: clamp(1.15rem, 3vw, 2rem);
+  border: 1px solid var(--gr-line-strong);
+  border-radius: 1rem;
+  background: var(--gr-surface);
+  color: var(--gr-ink) !important;
+  text-decoration: none;
+  box-shadow: var(--gr-shadow-soft);
+}
+
+.gr-newsroom-static-feature strong {
+  display: block;
+  max-width: 34ch;
+  margin: .35rem 0 .55rem;
+  font-size: clamp(1.5rem, 3vw, 2.35rem);
+  line-height: 1.08;
+}
+
+.gr-newsroom-static-feature span:last-child {
+  color: var(--gr-muted);
+  line-height: 1.55;
+}
+
+body.gr-newsroom-enhanced .gr-newsroom-static-intro,
+body.gr-newsroom-enhanced .gr-newsroom-static-feature {
+  display: none !important;
+}
+
+/* Long-form article shell. It preserves article content and adds editorial ergonomics. */
+body.gr-publication-article .md-content__inner {
+  max-width: 64rem;
+}
+
+body.gr-publication-article .md-content__inner > h1:first-child {
+  max-width: 19ch;
+  margin-bottom: .75rem;
+  font-size: clamp(2.45rem, 6vw, 5.35rem);
+}
+
+.gr-publication-deck {
+  max-width: 50rem !important;
+  margin: 0 0 1.2rem !important;
+  color: var(--gr-muted);
+  font-size: clamp(1.05rem, 2vw, 1.35rem) !important;
+  line-height: 1.55 !important;
+}
+
+.gr-publication-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin: 1rem 0 .9rem;
+}
+
+.gr-publication-meta span,
+.gr-publication-topic {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.8rem;
+  padding: .26rem .56rem;
+  border: 1px solid var(--gr-line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.58);
+  color: var(--gr-muted);
+  font-size: .69rem;
+  font-weight: 690;
+}
+
+.gr-publication-meta strong {
+  margin-right: .26rem;
+  color: var(--gr-ink);
+}
+
+.gr-publication-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: .3rem 0 1.2rem;
+}
+
+.gr-publication-topic {
+  color: var(--gr-ink);
+  text-decoration: none;
+}
+
+.gr-publication-source-meta {
+  display: none;
+}
+
+.gr-publication-evidence-band {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1rem 0 2rem;
+  border: 1px solid var(--gr-line);
+  border-radius: .95rem;
+  background: rgba(255,255,255,.5);
+  overflow: hidden;
+}
+
+.gr-publication-evidence-band > div {
+  min-width: 0;
+  padding: .8rem .9rem;
+}
+
+.gr-publication-evidence-band > div + div {
+  border-left: 1px solid var(--gr-line);
+}
+
+.gr-publication-evidence-band span,
+.gr-publication-evidence-band strong {
+  display: block;
+}
+
+.gr-publication-evidence-band span {
+  margin-bottom: .25rem;
+  color: var(--gr-muted);
+  font-size: .64rem;
+  font-weight: 760;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.gr-publication-evidence-band strong {
+  font-size: .82rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.gr-publication-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, .9fr);
+  gap: 1rem;
+  margin-top: 3.8rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gr-line-strong);
+}
+
+.gr-publication-footer h2 {
+  margin: 0 0 .55rem !important;
+  font-size: 1.35rem !important;
+}
+
+.gr-publication-footer p {
+  margin: 0 !important;
+  color: var(--gr-muted);
+  font-size: .82rem !important;
+}
+
+.gr-publication-footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .55rem;
+}
+
+.gr-publication-footer-links a {
+  display: flex;
+  align-items: center;
+  min-height: 3.1rem;
+  padding: .7rem .8rem;
+  border: 1px solid var(--gr-line);
+  border-radius: .75rem;
+  background: var(--gr-surface);
+  color: var(--gr-ink) !important;
+  font-size: .76rem;
+  font-weight: 720;
+  text-decoration: none;
+}
+
+.gr-publication-footer-links a:hover,
+.gr-publication-footer-links a:focus-visible {
+  border-color: var(--gr-accent);
+}
+
+@media (max-width: 780px) {
+  .gr-community-feature-card,
+  .gr-publication-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .gr-evidence-route {
+    min-height: 0;
+  }
+
+  .gr-publication-evidence-band {
+    grid-template-columns: 1fr;
+  }
+
+  .gr-publication-evidence-band > div + div {
+    border-left: 0;
+    border-top: 1px solid var(--gr-line);
+  }
+}
+
+@media (max-width: 520px) {
+  .gr-task-presets {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .gr-task-presets a {
+    justify-content: space-between;
+    border-radius: .72rem;
+  }
+
+  .gr-publication-footer-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gr-task-presets a:hover,
+  .gr-task-presets a:focus-visible {
+    transform: none;
+  }
+}
