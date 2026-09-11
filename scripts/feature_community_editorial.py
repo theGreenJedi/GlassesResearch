@@ -6,13 +6,20 @@ import argparse
 from pathlib import Path
 
 FEATURE = '''<section class="gr-section gr-community-feature" aria-labelledby="gr-community-feature-title" data-home-community-feature>
-  <div class="gr-section-heading gr-heading-compact">
-    <div>
-      <p class="gr-kicker"><a href="/docs/community-research/">Community Research</a> · Featured editorial</p>
+  <a class="gr-community-feature-card" href="/docs/news/articles/2026-09-06-when-owners-take-their-glasses-back/">
+    <div class="gr-community-feature-copy">
+      <p class="gr-kicker">Community Research · Featured editorial</p>
       <h2 id="gr-community-feature-title">When owners take their glasses back.</h2>
+      <p>Three community repositories show how careful interoperability research, evidence discipline, and reusable software can give owners more practical authority over hardware they already possess.</p>
+      <p class="gr-community-feature-meta">Published Sep. 6, 2026 · attributed repository evidence · community findings remain distinct from GlassesResearch laboratory verification</p>
     </div>
-    <a class="gr-text-link" href="/docs/news/articles/2026-09-06-when-owners-take-their-glasses-back/">Read the editorial <span aria-hidden="true">→</span></a>
-  </div>
+    <div class="gr-evidence-route" aria-label="Evidence path from community research to owner agency">
+      <div class="gr-evidence-node"><strong>Panny777 / MYVU</strong><span>interoperability research</span></div>
+      <div class="gr-evidence-node"><strong>aimindseye / Rokid</strong><span>evidence mapping</span></div>
+      <div class="gr-evidence-node"><strong>CyanBridge</strong><span>cross-device integration</span></div>
+      <div class="gr-evidence-outcome">Community evidence → practical owner agency</div>
+    </div>
+  </a>
 </section>'''
 
 
