@@ -8,7 +8,7 @@
     <div class="gr-hero-actions">
       <a class="gr-button gr-button-primary" href="docs/COMPARISON_ENGINE/">Find glasses</a>
       <a class="gr-button gr-button-secondary" href="models/catalog/">Research a model</a>
-      <a class="gr-button gr-button-secondary" href="docs/ECOSYSTEM_MAP/">Explore ecosystem</a>
+      <a class="gr-button gr-button-secondary" href="docs/RESEARCH_NEWS/">Follow what’s changing</a>
     </div>
     <p class="gr-hero-note">No sponsored rankings. Unknown stays unknown. Owner control matters.</p>
   </div>
@@ -42,12 +42,12 @@
   </div>
 
   <div class="gr-editorial-grid">
-    <a class="gr-feature-story" href="docs/RESEARCH_NEWS/#august-11-2026-courts-in-england-and-wales-prohibit-meta-smart-glasses">
+    <a class="gr-feature-story" href="docs/news/articles/2026-09-06-when-owners-take-their-glasses-back/">
       <span class="gr-story-art" aria-hidden="true"></span>
-      <span class="gr-story-tag">Policy &amp; use</span>
-      <strong>Courts in England and Wales prohibit Meta smart glasses</strong>
-      <span>Device-specific institutional rules are beginning to define where camera-equipped eyewear can actually be worn.</span>
-      <em>Read the research →</em>
+      <span class="gr-story-tag">Community Research · Editorial</span>
+      <strong>When owners take their glasses back</strong>
+      <span>Three community projects show how interoperability research, evidence discipline, and reusable software can give owners more practical authority over hardware they possess.</span>
+      <em>Read the editorial →</em>
     </a>
 
     <div class="gr-story-stack">
@@ -92,10 +92,15 @@
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
 
-  const displayDate = (value) => {
+  const displayFreshness = (value) => {
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return '';
-    return new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }).format(date);
+    const hours = Math.max(0, (Date.now() - date.getTime()) / 36e5);
+    if (hours < 1) return '<1h ago';
+    if (hours < 48) return `${Math.floor(hours)}h ago`;
+    const days = Math.floor(hours / 24);
+    if (days < 60) return `${days}d ago`;
+    return new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric' }).format(date);
   };
 
   const loadWire = async () => {
@@ -125,7 +130,7 @@
 
     list.innerHTML = items.map((item) => {
       const status = item.status === 'under_review' ? 'Under review' : 'Reported';
-      const when = displayDate(item.published_at || item.discovered_at);
+      const when = displayFreshness(item.published_at || item.discovered_at);
       const meta = [status, item.publisher, when].filter(Boolean).map(escapeHtml).join(' · ');
       return `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer"><span class="gr-story-tag">${meta}</span><strong>${escapeHtml(item.title)}</strong></a>`;
     }).join('');
@@ -134,6 +139,19 @@
   });
 })();
 </script>
+
+<section class="gr-section gr-finder-section" aria-labelledby="gr-finder-title">
+  <div class="gr-section-heading">
+    <div>
+      <p class="gr-kicker">Discovery</p>
+      <h2 id="gr-finder-title">Start with what matters to you.</h2>
+    </div>
+    <p>Choose your priorities. The Finder searches the living catalog for documented matches, then leads into model research, comparisons, and Report Cards.</p>
+  </div>
+
+  <div id="homepage-finder-app">Loading the compact Glasses Finder…</div>
+  <a class="gr-text-link" href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder &amp; Compare <span aria-hidden="true">→</span></a>
+</section>
 
 <section class="gr-section" aria-labelledby="gr-upcoming-title" data-home-events>
   <div class="gr-section-heading gr-heading-compact">
@@ -210,19 +228,6 @@
     });
 })();
 </script>
-
-<section class="gr-section gr-finder-section" aria-labelledby="gr-finder-title">
-  <div class="gr-section-heading">
-    <div>
-      <p class="gr-kicker">Discovery</p>
-      <h2 id="gr-finder-title">Start with what matters to you.</h2>
-    </div>
-    <p>Choose your priorities. The Finder searches the living catalog for documented matches, then leads into model research, comparisons, and Report Cards.</p>
-  </div>
-
-  <div id="homepage-finder-app">Loading the compact Glasses Finder…</div>
-  <a class="gr-text-link" href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder &amp; Compare <span aria-hidden="true">→</span></a>
-</section>
 
 <section class="gr-section" aria-labelledby="gr-explore-title">
   <div class="gr-section-heading">
