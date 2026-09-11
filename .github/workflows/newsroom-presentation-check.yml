@@ -6,11 +6,14 @@ on:
       - "data/verified-changes.json"
       - "docs/RESEARCH_NEWS.md"
       - "docs/javascripts/research-news-newsroom.js"
+      - "docs/javascripts/publication-maturity.js"
       - "docs/stylesheets/research-news-newsroom.css"
       - "docs/stylesheets/newsroom-publication-shell.css"
+      - "docs/stylesheets/publication-maturity.css"
       - "mkdocs.yml"
       - "scripts/build_newsroom_state.py"
       - "scripts/verify_newsroom_state.py"
+      - "scripts/feature_community_editorial.py"
       - "scripts/prepare_site.py"
       - ".github/workflows/newsroom-presentation-check.yml"
   push:
@@ -19,11 +22,14 @@ on:
       - "data/verified-changes.json"
       - "docs/RESEARCH_NEWS.md"
       - "docs/javascripts/research-news-newsroom.js"
+      - "docs/javascripts/publication-maturity.js"
       - "docs/stylesheets/research-news-newsroom.css"
       - "docs/stylesheets/newsroom-publication-shell.css"
+      - "docs/stylesheets/publication-maturity.css"
       - "mkdocs.yml"
       - "scripts/build_newsroom_state.py"
       - "scripts/verify_newsroom_state.py"
+      - "scripts/feature_community_editorial.py"
       - "scripts/prepare_site.py"
       - ".github/workflows/newsroom-presentation-check.yml"
 
@@ -39,7 +45,7 @@ jobs:
         with:
           python-version: "3.x"
       - name: Compile newsroom builders
-        run: python -m py_compile scripts/build_newsroom_state.py scripts/verify_newsroom_state.py
+        run: python -m py_compile scripts/build_newsroom_state.py scripts/verify_newsroom_state.py scripts/feature_community_editorial.py
       - name: Build reader-facing newsroom state
         run: python scripts/build_newsroom_state.py --changes data/verified-changes.json --output /tmp/newsroom-state.json
       - name: Verify newsroom state contract
@@ -48,6 +54,10 @@ jobs:
         run: |
           grep -q '/data/newsroom-state.json' docs/javascripts/research-news-newsroom.js
           grep -q 'newsroom-publication-shell.css' mkdocs.yml
+          grep -q 'publication-maturity.css' mkdocs.yml
+          grep -q 'publication-maturity.js' mkdocs.yml
+          grep -q 'gr-newsroom-static-intro' docs/RESEARCH_NEWS.md
+          grep -q 'data-finder-freshness' docs/COMPARISON_ENGINE.md
           if grep -q 'Implementation note:' docs/javascripts/research-news-newsroom.js; then
             echo 'Hard-coded implementation narration remains in reader presentation'
             exit 1

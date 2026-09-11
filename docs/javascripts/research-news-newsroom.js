@@ -7,6 +7,7 @@
   if (!root || !title || root.querySelector(".gr-newsroom-hero")) return;
 
   document.body.classList.add("gr-newsroom-enhanced");
+  root.querySelectorAll(".gr-newsroom-static-intro, .gr-newsroom-static-feature").forEach((node) => node.classList.add("gr-newsroom-enhanced-hide"));
 
   const intro = title.nextElementSibling;
   const jumpLinks = intro?.nextElementSibling;
@@ -24,6 +25,15 @@
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return value || "";
     return new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric", year: "numeric" }).format(date);
+  };
+
+  const relativeAge = (value) => {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+    const hours = Math.max(0, (Date.now() - date.getTime()) / 36e5);
+    if (hours < 1) return "<1h ago";
+    if (hours < 48) return `${Math.floor(hours)}h ago`;
+    return `${Math.floor(hours / 24)}d ago`;
   };
 
   const about = document.createElement("section");
@@ -109,9 +119,17 @@
     }
   };
 
-  const renderStoryCard = (story) => `<article class="gr-newsroom-card"><div class="gr-newsroom-date">${escapeHtml(displayDate(story.published_at))}</div><div class="gr-newsroom-card-copy"><strong>${escapeHtml(story.title)}</strong><p>${escapeHtml(story.summary)}</p></div><div class="gr-newsroom-card-links"><a href="${escapeHtml(story.url)}">Read the research →</a></div></article>`;
+  const renderStoryCard = (story) => {
+    const age = relativeAge(story.published_at);
+    const when = [displayDate(story.published_at), age].filter(Boolean).join(" · ");
+    return `<article class="gr-newsroom-card"><div class="gr-newsroom-date">${escapeHtml(when)}</div><div class="gr-newsroom-card-copy"><strong>${escapeHtml(story.title)}</strong><p>${escapeHtml(story.summary)}</p></div><div class="gr-newsroom-card-links"><a href="${escapeHtml(story.url)}">Read the research →</a></div></article>`;
+  };
   const wireStatusLabel = (status) => status === "under_review" ? "Under review" : "Reported";
-  const renderWireItem = (item) => `<article class="gr-wire-item"><div class="gr-wire-meta"><span class="gr-wire-status is-${escapeHtml(item.status)}">${escapeHtml(wireStatusLabel(item.status))}</span><span>${escapeHtml(item.publisher)}</span><span>${escapeHtml(displayDate(item.published_at || item.discovered_at))}</span></div><a class="gr-wire-title" href="${escapeHtml(item.url)}" rel="noopener">${escapeHtml(item.title)}</a><div class="gr-wire-source-class">${escapeHtml(String(item.source_class || "source").replaceAll("_", " "))}</div></article>`;
+  const renderWireItem = (item) => {
+    const when = item.published_at || item.discovered_at;
+    const age = relativeAge(when) || displayDate(when);
+    return `<article class="gr-wire-item"><div class="gr-wire-meta"><span class="gr-wire-status is-${escapeHtml(item.status)}">${escapeHtml(wireStatusLabel(item.status))}</span><span>${escapeHtml(item.publisher)}</span><span>${escapeHtml(age)}</span></div><a class="gr-wire-title" href="${escapeHtml(item.url)}" rel="noopener">${escapeHtml(item.title)}</a><div class="gr-wire-source-class">${escapeHtml(String(item.source_class || "source").replaceAll("_", " "))}</div></article>`;
+  };
 
   fetch("/data/newsroom-state.json", { credentials: "same-origin" })
     .then((response) => { if (!response.ok) throw new Error(`newsroom state ${response.status}`); return response.json(); })
@@ -125,13 +143,17 @@
         freshness.textContent = `Latest verified ${displayDate(state.latest_verified_at)}${age}`;
         if (ageHours !== null && ageHours > 48) freshness.classList.add("is-stale");
       }
-      const externalEditorialLead = state.lead.change_type === "editorially_reviewed_external";
-      const leadPublisher = state.lead.publisher || state.lead.source || "original publisher";
+      const leadUrl = new URL(state.lead.url, window.location.origin);
+      const editorialPin = state.lead.lead_mode === "editorial_pin";
+      const externalEditorialLead = editorialPin && leadUrl.origin !== window.location.origin;
+      const leadPublisher = state.lead.publisher || state.lead.source_label || state.lead.source || "original publisher";
       const leadCta = externalEditorialLead ? `Read the original at ${escapeHtml(leadPublisher)} →` : "Read the story →";
-      const leadRel = externalEditorialLead ? ' rel="noopener"' : "";
-      const leadType = state.lead.change_type === "editorial" ? "GlassesResearch editorial" : state.lead.change_type.replaceAll("_", " ");
+      const leadRel = externalEditorialLead ? ' target="_blank" rel="noopener"' : "";
+      const leadType = editorialPin
+        ? (state.lead.source_label === "GlassesResearch" ? "GlassesResearch editorial" : "Editorial pick")
+        : state.lead.change_type.replaceAll("_", " ");
       lead.hidden = false;
-      lead.innerHTML = `<div class="gr-newsroom-kicker">Featured</div><a class="gr-newsroom-lead-card" href="${escapeHtml(state.lead.url)}"${leadRel}><span class="gr-newsroom-date">${escapeHtml(displayDate(state.lead.published_at))} · ${escapeHtml(leadType)}</span><strong>${escapeHtml(state.lead.title)}</strong><span>${escapeHtml(state.lead.summary)}</span><em>${leadCta}</em></a>`;
+      lead.innerHTML = `<div class="gr-newsroom-kicker">Featured</div><a class="gr-newsroom-lead-card" href="${escapeHtml(state.lead.url)}"${leadRel}><span class="gr-newsroom-date">${escapeHtml(displayDate(state.lead.published_at))} · ${escapeHtml(relativeAge(state.lead.published_at))} · ${escapeHtml(leadType)}</span><strong>${escapeHtml(state.lead.title)}</strong><span>${escapeHtml(state.lead.summary)}</span><em>${leadCta}</em></a>`;
       if (latestGrid) latestGrid.innerHTML = state.latest.slice(0, 6).map(renderStoryCard).join("");
       latestHeading?.classList.add("gr-newsroom-enhanced-hide"); latestTable?.classList.add("gr-newsroom-enhanced-hide");
       if (Array.isArray(state.convergence) && state.convergence.length) {

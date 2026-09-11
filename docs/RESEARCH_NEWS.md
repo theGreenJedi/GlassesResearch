@@ -1,8 +1,26 @@
 # Research & News
 
-A concise front door to the newest verified GlassesResearch work. The live wire stays broad and fast; this page stays selective.
+<div class="gr-newsroom-static-intro">
+  <div class="gr-newsroom-kicker">GlassesResearch Intelligence Desk</div>
+  <p class="gr-newsroom-deck">Verified developments, developing signals, community research and durable analysis — kept in separate evidence lanes so speed never masquerades as verification.</p>
+  <div class="gr-newsroom-actions" aria-label="Research and News shortcuts">
+    <a href="#latest-verified">Verified</a>
+    <a href="FEEDS.md#across-the-wire">Across the Wire</a>
+    <a href="community-research/">Community Research</a>
+    <a href="news/ARCHIVE.md">Archive</a>
+    <a href="https://glassesresearch.org/feed.xml">Verified RSS</a>
+  </div>
+</div>
+
+<a class="gr-newsroom-static-feature" href="news/articles/2026-09-06-when-owners-take-their-glasses-back.md">
+  <span class="gr-newsroom-kicker">Featured editorial · September 6, 2026</span>
+  <strong>When owners take their glasses back</strong>
+  <span>Three community repositories show how reverse engineering, evidence discipline, and reusable software can give owners more practical authority over hardware they already possess.</span>
+</a>
 
 ## Latest verified
+
+A concise list of the newest developments that crossed the GlassesResearch publication threshold. The live wire stays broad and fast; this desk stays selective.
 
 | Date | What changed | Read |
 |---|---|---|
