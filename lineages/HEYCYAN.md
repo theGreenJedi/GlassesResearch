@@ -30,6 +30,17 @@ See the [W610 research page](../models/W610/README.md) and [W610 community resou
 
 Other W6xx and marketplace products may belong to this lineage, but each device is added only when evidence establishes the relationship.
 
+## Owner-reported lineage candidates
+
+These are useful compatibility fingerprints, not confirmed lineage assignments.
+
+| Candidate | Public evidence | Status |
+|---|---|---|
+| `CY01` | A September 2026 CyanBridge issue participant reported a repeatable Wi-Fi Direct test on a CY01 specimen and a capability response with `supportLiveReview = false`. | COMMUNITY-REPORTED / owner-tested. Keep separate from Eyevue and W610 until stronger identity evidence exists. |
+| Bluetooth `X01_C4E4`; `AX01_V1.0`; firmware `1.00.34_260721`; `WIFIAX01_V1.0`; Wi-Fi firmware `3.00.07_2602021600A01`; HeyCyan app `1.0.142_20260807` | Exact owner-provided hardware/software tuple in CyanBridge issue #16. | COMMUNITY-REPORTED identity fingerprint. Do not equate it with another HeyCyan device without corroboration. |
+
+Primary public records: [CyanBridge issue #5](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/issues/5) and [issue #16](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/issues/16).
+
 ## What is shared
 
 The strongest common denominator currently documented is the HeyCyan companion/software environment. Public community work also demonstrates an alternative development ecosystem around HeyCyan-compatible glasses, including BLE interaction and independent companion applications.
@@ -79,6 +90,8 @@ GlassesResearch will distinguish each of these rather than collapsing them into 
 ## Research direction
 
 The main unanswered question is not whether W610 and Anko both touch HeyCyan—that relationship is documented—but **how deep the shared lineage goes**. Future evidence should determine whether specific members share protocols, firmware branches, chipsets, boards, charging systems, mechanical designs, or ODM sources.
+
+The new CY01 and AX01/WIFIAX01 reports should be used as comparison targets for exact model labels, firmware/build identification, Bluetooth service inventories, capability responses, and controlled cross-device compatibility work.
 
 ## Community
 
