@@ -1,40 +1,46 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-12T01:13:07.003385+00:00",
-  "candidate_count": 66,
-  "classifier_irrelevant_count": 42,
+  "discovered_utc": "2026-09-12T05:08:58.350006+00:00",
+  "candidate_count": 73,
+  "classifier_irrelevant_count": 65,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 24,
-    "broad_web": 32,
-    "developer": 10
+    "adjacent": 6,
+    "broad_web": 54,
+    "developer": 13,
+    "retail": 1
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 24,
+    "adjacent": 6,
     "speculative": 0,
-    "irrelevant": 42
+    "irrelevant": 65
   },
   "type_counts": {
-    "model": 5,
-    "review": 2,
+    "model": 3,
+    "review": 1,
     "video": 5,
-    "news": 42,
-    "tool": 14,
-    "sdk": 10,
-    "policy": 3,
-    "retail": 1,
-    "community": 1
+    "news": 37,
+    "tool": 19,
+    "sdk": 13,
+    "hack": 1,
+    "optics": 1,
+    "policy": 1,
+    "retail": 3,
+    "teardown": 1,
+    "community": 18
   },
   "routing_counts": {
-    "adjacent_radar": 24,
+    "adjacent_radar": 6,
+    "community_evidence_review": 2,
     "development_hacking": 2,
-    "model_catalog_review": 5,
-    "policy_privacy": 2,
-    "reject_noise": 42,
-    "report_card_evidence": 6,
-    "research_news_review": 24,
+    "model_catalog_review": 1,
+    "policy_privacy": 1,
+    "reject_noise": 65,
+    "report_card_evidence": 4,
+    "research_news_review": 8,
+    "research_optics": 1,
     "retail_rebrand_review": 1
   },
   "policy": {
@@ -49,42 +55,72 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "b6e4fb7684af6ed2",
-      "title": "Buy Looki L1 | AI Wearable Camera",
-      "url": "https://www.looki.ai/products/looki-l1",
-      "summary": "Shop Looki L1, a 32g AI wearable camera for hands-free capture, daily recaps, and searchable memories. View specs, reviews, shipping, and returns.",
-      "discovery_channel": "adjacent",
-      "query": "AI wearable camera",
+      "id": "b88be17fcdd8262b",
+      "title": "smart glasses with prescription lens - Best Buy",
+      "url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=smart%20glasses%20with%20prescription%20lens",
+      "summary": "Shop for smart glasses with prescription lens at Best Buy. Find low everyday prices and buy online for delivery or in-store pick-up",
+      "discovery_channel": "broad_web",
+      "query": "prescription smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [
-        "shipping"
+        "prescription"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "direct",
       "content_types": [
-        "model"
+        "optics",
+        "retail"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "01adf173ead5c49b",
+      "title": "Shop Meta Glasses: AI Glasses Starting at $299 | Meta Store",
+      "url": "https://www.meta.com/ai-glasses/meta-glasses/",
+      "summary": "Meta Glasses are smart glasses that let you capture photos and video, listen to music, take calls, and access Meta AI—all hands-free. Available in three styles (Meta Adventurer, Meta Fury, and Meta Starfire), they combine everyday eyewear design with built-in cameras, speakers, and microphones.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "video"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
         "model_catalog_review",
-        "adjacent_radar"
+        "report_card_evidence"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6d76d85d50945372",
-      "title": "LUCI Pin – The Coolest Way to Capture Your Daily Adventures.",
-      "url": "https://www.smartaiwearables.com/luci-pin-4k-wearable-camera/",
-      "summary": "Weighing just 40 grams, LUCI combines a 12MP ultra-wide 4K camera, dual microphones, AI, and a built-in privacy switch, all in a sleek, magnetically attached pin.",
+      "id": "2dff19cef2056bba",
+      "title": "FAQ: How do I contact YouTube? - YouTube Community",
+      "url": "https://support.google.com/youtube/thread/2827009/%F0%9F%94%8E-faq-how-do-i-contact-youtube?hl=en",
+      "summary": "©2026 Google Privacy Policy YouTube Terms of Service Community Policy Community Overview",
       "discovery_channel": "adjacent",
-      "query": "AI wearable camera",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
@@ -95,44 +131,16 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3c44d22cb37d07b",
-      "title": "Open Broadcaster Software | OBS",
-      "url": "https://obsproject.com/",
-      "summary": "OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "open source"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
         "video",
-        "tool"
+        "policy",
+        "community"
       ],
       "primary_type": "video",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
-        "development_hacking",
+        "policy_privacy",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -141,42 +149,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2983245e248ee67c",
-      "title": "The Best 10 Restaurants near Edgewood, MD 21040 - Yelp",
-      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Edgewood%2C+MD+21040",
-      "summary": "This is a review for restaurants near Edgewood, MD: \"8/8/2026 I haven't been to this location since I lived in Edgewood a couple years back and the quality is still the same: stuffed to the brim cheesesteaks, lots of toppings and crisp crunchy fries just how I like it.",
+      "id": "ea3de363ed365ecf",
+      "title": "Advanced Scene Switcher | OBS Forums",
+      "url": "https://obsproject.com/forum/resources/advanced-scene-switcher.395/",
+      "summary": "This plugin will allow you to automate various tasks using \"Macros\". Macros consist of a list of conditions under which a list of actions will be performed. Examples and guides can be found in the wiki. Feel free to contribute! If you run...",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d890c08e19d8a71e",
-      "title": "10 Best File Sharing Software For Secure Transfers In 2026",
-      "url": "https://thedigitalprojectmanager.com/tools/best-file-sharing-software/",
-      "summary": "Discover the best file sharing software for your team. Compare features, pros + cons, pricing, and more in my complete guide.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -185,11 +163,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "research_news_review",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -198,175 +177,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4561df425023ae5c",
-      "title": "12 Best File Sharing & Collaboration Tools [2025] | Remote Work Storage",
-      "url": "https://www.deskbreak.app/best-remote-work-tools/file-sharing-tools",
-      "summary": "We've tested and reviewed 12 leading file sharing platforms based on storage capacity, collaboration features, security, integrations, and value. Whether you need simple cloud storage or a complete knowledge management system, you'll find the right tool here.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review",
-        "tool"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5b64f19604a8d65a",
-      "title": "Best File Sharing And Collaboration Software 2026",
-      "url": "https://worldmetrics.org/best/file-sharing-and-collaboration-software/",
-      "summary": "Rank the top 10 file sharing and collaboration software for teams. Includes Google Drive, Box, pCloud, ownCloud, and Egnyte comparisons. File sharing and collaboration platforms determine how teams move documents, enforce access, and produce traceable records for audits and incident response.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c7cb553a20860a7e",
-      "title": "Best File Sharing And Collaboration Software | 2026 Rankings",
-      "url": "https://zipdo.co/best/file-sharing-and-collaboration-software/",
-      "summary": "Cloud storage and file sharing with real-time collaboration in Google Docs, Sheets, and Slides plus shared drives and granular permissions. Use the comparison table and the detailed reviews above to weigh each option against your own integrations, team size, and workflow requirements – the right fit depends on your specific setup.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "907c74528ce25fc5",
-      "title": "Best File Sharing Software in 2026 - Reviews | Goodfirms",
-      "url": "https://www.goodfirms.co/file-sharing-software/",
-      "summary": "Sharing over cloud-based file sharing apps is the fastest means of sharing large files. If you have an extremely large file size of upto 100GB or more, then you can use file sharing software applications such as Filemail, Box, or Hightail that have lightning-fast transfer speeds.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f4706fd8e82a3834",
-      "title": "Best Files Sharing Software: 2026 Comparison - gitnux.org",
-      "url": "https://gitnux.org/best/files-sharing-software/",
-      "summary": "This buyer's guide covers secure file sharing and collaboration tools using ExaVault, ShareFile, Tresorit, Google Drive, Dropbox, WeTransfer, Hightail, OneDrive, MediaFire, and pCloud.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "39a879beafc889a2",
-      "title": "CES 2026: Looki Unveils 'Proactive' AI Camera That Captures Important ...",
-      "url": "https://www.gadgetreview.com/ces-2026-looki-unveils-proactive-ai-camera-that-captures-important-moments-automatically",
-      "summary": "At CES 2026, this $199 wearable camera positions itself as the first “proactive AI” device — meaning it switches modes and captures moments without you pressing a single button.",
-      "discovery_channel": "adjacent",
-      "query": "AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4b5502a2736ca9a2",
-      "title": "Cities Nearby Edgewood, Maryland, United States",
-      "url": "https://www.thecitiesnow.com/united_states/maryland/edgewood",
-      "summary": "Find five hundred cities near Edgewood, Maryland, United States from closest to farthest by distance. Distances from Edgewood to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "id": "01b2d5cba9283bf2",
+      "title": "Cities Near Me - Tallahassee, Florida | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Tallahassee,+FL",
+      "summary": "Find the top 15 cities, towns, and suburbs near Tallahassee, FL, like Cairo and Thomasville, and explore the surrounding area for a day trip.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -390,12 +204,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "192a209835212c5f",
-      "title": "Files Sharing Software: Best Picks (2026) - zipdo.co",
-      "url": "https://zipdo.co/best/files-sharing-software/",
-      "summary": "Top 10 files sharing software ranked by upload limits, collaboration tools, and security, with practical notes for teams comparing options like Google Drive.",
+      "id": "e074d34abcb5c146",
+      "title": "Cities near Tallahassee",
+      "url": "https://citiesnear.com/Tallahassee",
+      "summary": "Find destinations nearby to plan a road trip from Tallahassee.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -417,124 +231,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a10970516aaf6253",
-      "title": "Get a Premium Lite membership on YouTube",
-      "url": "https://support.google.com/youtube/answer/15968883?hl=en",
-      "summary": "Get a Premium Lite membership on YouTube Premium Lite is a new, lower-priced YouTube Premium membership that offers fewer interruptions so you can watch most YouTube and YouTube Kids videos ad-free, offline, and in the background. Premium Lite memberships available locations You can find a list of available locations for Premium Lite ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model",
-        "video"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ef17c8d9b2850dac",
-      "title": "I tried the Looki L1 AI camera – and I might just have signed my brain ...",
-      "url": "https://www.digitalcameraworld.com/photography/i-tried-the-looki-l1-ai-camera-and-i-might-just-have-signed-my-brain-away",
-      "summary": "Well, the Looki L1 is “the world’s first multimodal personal AI wearable that sees, hears and understands your life.” It takes visual and audio input and processes it to provide personalized help, advice and curated content based on your context, emotions and experiences.",
-      "discovery_channel": "adjacent",
-      "query": "AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ff3856fef3b36f9c",
-      "title": "Looki L1 AI Wearable Camera | Hands-Free Lifelogging",
-      "url": "https://www.looki.ai/",
-      "summary": "Looki L1 is an AI wearable camera that captures everyday moments hands-free and turns them into lifelogs, comics, auto vlogs, and searchable memories.",
-      "discovery_channel": "adjacent",
-      "query": "AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d931a263ae966d0c",
-      "title": "NFL Sunday Ticket pricing & billing - YouTube TV Help",
-      "url": "https://support.google.com/youtubetv/answer/15137773?hl=en",
-      "summary": "In this article, you’ll learn about pricing and billing for NFL Sunday Ticket on YouTube TV and YouTube Primetime Channels. For more information on your options, check out: How to purchase Month-to-Month and season passes. Which games are available with your NFL Sunday Ticket package. NFL Sunday Ticket latest pricing and billing information.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model",
-        "video"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5bd47fe136cb4399",
-      "title": "Submit a copyright removal request - YouTube Help",
-      "url": "https://support.google.com/youtube/answer/2807622?hl=en",
-      "summary": "Submit a copyright removal request If your copyrighted content is on YouTube without your permission, you can submit a copyright removal request, which is a legal process. For videos, you can submit in YouTube Studio or by email, fax, or mail. For non-video content, such as channel banner images, submit by email, fax, or mail.",
+      "id": "370f8cb23730f99b",
+      "title": "Disclosing use of GenAI content - Android - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/14328491?hl=en-GB&co=GENIE.Platform%3DAndroid",
+      "summary": "We encourage creators' innovative and responsible use of content editing or generation tools. At the same time, we recognise that viewers want to know if what they're watching or listening to is real.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -546,13 +246,13 @@
       "relationship": "adjacent",
       "content_types": [
         "video",
-        "policy"
+        "tool"
       ],
       "primary_type": "video",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
-        "policy_privacy",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -561,12 +261,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "842b1c1d0e53140b",
-      "title": "The best file sharing apps in 2025 - Tom's Guide",
-      "url": "https://www.tomsguide.com/buying-guide/best-file-sharing-apps",
-      "summary": "Here’s a concise overview of the top apps we’ve reviewed, highlighting their standout features. Check the detailed reviews below to find the perfect fit for your requirements.",
+      "id": "8e9de2e8397ac6fa",
+      "title": "Learn about managing Clips - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/10332730?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "How can I view my clips performance? You can view the number of clips made from your video, the number of views for each clip, who made it, and other details under Clips on YouTube Studio.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -575,11 +275,14 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "video",
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "research_news_review",
+        "report_card_evidence",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -588,163 +291,777 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0e87fbc52cbbf863",
-      "title": "The hottest AI wearables and gadgets you can buy right now",
-      "url": "https://techcrunch.com/2025/11/21/the-hottest-ai-wearables-and-gadgets-you-can-buy-right-now/",
-      "summary": "We compiled all the hottest AI wearables currently available, including Bee, Friend, Plaud, and more.",
-      "discovery_channel": "adjacent",
-      "query": "AI wearable camera",
+      "id": "4f957be8cc8c4411",
+      "title": "can I trade in two apple products at same… - Apple Community",
+      "url": "https://discussions.apple.com/thread/255675470",
+      "summary": "You can trade-in as many qualifying devices as you wish - either in-store at a physical Apple Store, or using the online trade-in process: Apple Trade In - Apple Each device is assessed its own right. If using the online trade-in, you will be sent a shipping kit for each device. Devices are returned, assessed and a credit value assigned. The trade-in value is returned to you by way of an Apple ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ce66b175184f0d77",
+      "title": "Apple Adjusts Trade-In Values for iPhones, Macs, and More",
+      "url": "https://forums.macrumors.com/threads/apple-adjusts-trade-in-values-for-iphones-macs-and-more.2476101/",
+      "summary": "Apple today updated its trade-in values for select iPhone, iPad, Mac, and Apple Watch models. Trade-ins can be completed on Apple's website, or at an Apple Store.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ac7fa4a4fa2912f7",
+      "title": "Apple Trade In with Bad Battery - Apple Community",
+      "url": "https://discussions.apple.com/thread/254215621",
+      "summary": "If you do continue with Apple Trade In, you will be responsible for both your outstanding iPhone Upgrade Program loan and the purchase price of any new iPhone you purchase through Apple Trade In. If you have further questions, let the community know which program you are referring to. We hope that helps with your question and take care!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f6aaa255327df5e0",
+      "title": "Can I exchange my AirPods Max for AirPods… - Apple Community",
+      "url": "https://discussions.apple.com/thread/256278635",
+      "summary": "You can certainly recycle AirPods at Apple and the price for them would be dramatically lower, actually you would get nothing as Apple offers free recycling. For factual information, it is always best to refer to Apple Support articles.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d11b71de53633b54",
+      "title": "Can I trade in an iPhone with a cracked s… - Apple Community",
+      "url": "https://discussions.apple.com/thread/256307482",
+      "summary": "They might. But damaged iPhone's typically have low trade in values. You could pay Apple to replace the screen, but the cost of the screen could be more than the phone would be worth in trade. I calculated using the Apple Trade In link that it may be worth up to $75 assuming the only issue is the cracked screen.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d8d1c3c1bbf970a6",
+      "title": "Can I trade-in my old phone after transfe… - Apple Community",
+      "url": "https://discussions.apple.com/thread/256163614",
+      "summary": "Apple store Southampton, but i just seen on buying the phone at checkout i can select a trade-in kit which will be sent to me.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7dc88ecfc4fe4eb5",
+      "title": "Solved Prepare a statement of stockholders' equity for Hulu - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/prepare-statement-stockholders-equity-hulu-incorporated-year-ended-december-31-using-follo-q80577165",
+      "summary": "Question: Prepare a statement of stockholders' equity for Hulu Incorporated for the year ended December 31 using the following data. (Amounts to be deducted should be indicated by a minus sign.) . . Beginning balances of $300 for Common Stock, $9,700 for Paid-In Capital in Excess of Par, and $20,000 for Retained Earnings. Reported net income of $40,000. Issued common",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b55ec24d1c185d3",
+      "title": "Solved Prepare a statement of stockholders' equity for Hulu - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/prepare-statement-stockholders-equity-hulu-incorporated-year-ended-december-31-using-follo-q89534118",
+      "summary": "Question: Prepare a statement of stockholders' equity for Hulu Incorporated for the year ended December 31 using the following data. (Amounts to be deducted should be indicated by a minus sign.) • Beginning balances of $600 for Common Stock, $10,700 for Paid-In Capital in Excess of Par, and $21,300 for Retained Earnings.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8424a26f34cbd8db",
+      "title": "Trade in Experience: AT&T vs. Apple | MacRumors Forums",
+      "url": "https://forums.macrumors.com/threads/trade-in-experience-at-t-vs-apple.2213718/",
+      "summary": "I trade my phone in with Apple. I get a trade-in kit mailed with a UPS label. I track its arrival. And in a total suprise, I get an email from Apple with an electronic gift card for an extra $33 for the trade. Lesson learned. With the changes in AT&T next (extra fee to upgrade and requiring 15 months), I'll stick with Apple from here on out.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8c03362b6208879c",
+      "title": "Trade-in offers for MacBook Neo and other… - Apple Community",
+      "url": "https://discussions.apple.com/thread/256293411",
+      "summary": "Yes, trading in an old device for credit toward the new $599 MacBook Neo can be done using this service called Apple Trade In . The program allows you to get an estimate online or at an Apple Store, with trade-in values varying by device condition and model.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "38f9326d4bdc7a62",
+      "title": "Trading an Apple Pencil in… - Apple Community",
+      "url": "https://discussions.apple.com/thread/255367728",
+      "summary": "Trading an Apple Pencil in… So I have gotten a 2nd gen Apple Pencil, and at first my iPad did not connect with it, so now I have bought the 10th gen iPad only to learn it doesn’t connect with this iPad either.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4d5ee3a4b5b9927a",
+      "title": "What Does AR Stand For? - Field & Stream",
+      "url": "https://www.fieldandstream.com/stories/guns/rifles/what-does-ar-stand-for",
+      "summary": "What Does AR Stand for When It Comes to the AR-15? The “AR” in AR-15 stands for “ArmaLite Rifle.” ArmaLite is the company that designed and developed the AR-15.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "23c98cd4f5e19e12",
+      "title": "Will Apple accept a repaired iPhone at an in-store trade in ...",
+      "url": "https://forums.macrumors.com/threads/will-apple-accept-a-repaired-iphone-at-an-in-store-trade-in.2226261/",
+      "summary": "I'm hoping to purchase a new iPhone and trade in my current one. My current device works perfectly, but has a new (premium) screen and battery from a third party. Will Apple clock this and reject the trade-in, or should it not matter?",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e54a69a09920e154",
+      "title": ".net - C# - how do you stop a timer? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4563704/c-sharp-how-do-you-stop-a-timer",
+      "summary": "I know it sounds stupid, but I've tried everything to stop a timer, but the timer won't stop. I'm working on a game and i would appreciate if someone could tell me how to stop a timer.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "654e4a612009e1e6",
+      "title": "Are typedef and #define the same in C? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1666353/are-typedef-and-define-the-same-in-c",
+      "summary": "I wonder if typedef and #define are the same in C. What are the differences between them?",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bdc42b272725e29c",
+      "title": "c# - Add timer to a Windows Forms application - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1142828/add-timer-to-a-windows-forms-application",
+      "summary": "I want to add a timer rather than a countdown which automatically starts when the form loads. Starting time should be 45 minutes and once it ends, i.e. on reaching 0 minutes, the form should termin...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6f7450bb542375f9",
+      "title": "c# - Define: What is a HashSet? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4558754/define-what-is-a-hashset",
+      "summary": "A HashSet holds a set of objects, but in a way that allows you to easily and quickly determine whether an object is already in the set or not. It does so by internally managing an array and storing the object using an index which is calculated from the hashcode of the object. Take a look here HashSet is an unordered collection containing unique elements. It has the standard collection ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7b770349cd618f2d",
+      "title": "c++ - What does ## in a #define mean? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6503586/what-does-in-a-define-mean",
+      "summary": "In other words, when the compiler starts building your code, no #define statements or anything like that is left. A good way to understand what the preprocessor does to your code is to get hold of the preprocessed output and look at it.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "41add809b0b79434",
+      "title": "Can we define implicit conversions of enums in c#?",
+      "url": "https://stackoverflow.com/questions/261663/can-we-define-implicit-conversions-of-enums-in-c",
+      "summary": "If you define the base of the enum as a long then you can perform explicit conversion. I don't know if you can use implicit conversions as enums cannot have methods defined on them.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca586c108b2ad1b7",
+      "title": "Drivers & Downloads | Dell India",
+      "url": "https://www.dell.com/support/home/en-in/products/laptop?app=drivers",
+      "summary": "Select a product or enter your Service Tag to view related Dell drivers and driver updates.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "181e56d4232e7aea",
+      "title": "FedEx Freight | - Where is the employee handbook?",
+      "url": "https://www.truckingboards.com/bb/threads/where-is-the-employee-handbook.46002/",
+      "summary": "We use to have a hand book given to us, then they decided to make one master copy for each service center, then they did away with all that and put it on the fedex website. Thats fine that makes sense it saves money, however I cant find handbook, dispatch procedures etc.. on website anymore...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "416ae61b92166399",
+      "title": "FedEx Freight | Fedex - Fedex | Truckingboards",
+      "url": "https://www.truckingboards.com/bb/threads/fedex.9274/",
+      "summary": "This thread is closed. All threads automatically lock after 200 replies or 3 months of inactivity. Create a fresh thread to continue the discussion. Jeff Everyday is Saturday Administrator PREMIUM Super Administrator Oct 21, 2006 #1 fedex kinkos fedex fedex ground fedex freight fedex jobs fedex track fedex field fedex location fedex career com fedex site web fedex kinko fedex employment fedex ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e508818b95223d18",
+      "title": "Find Your Volkswagen Dealership - VW.com",
+      "url": "https://www.vw.com/en/dealer-search.html?---=%7B%22dealer-search_featureappsection%22%3A%22%2F%22%7D",
+      "summary": "Find authorized Volkswagen dealerships near you using the VW dealer search tool. Enter your ZIP code to find the closest dealer for sales, service & more.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b6a454e5e67d1e04",
+      "title": "FNF Corruption Takeover - Play Online on FNFGO",
+      "url": "https://www.fnfgo.com/fnf-corruption-takeover/",
+      "summary": "FNF Corruption Takeover is one of the most popular FNF Mod based on the Friday Night Funkin game. This Corruption Takeover FNF Mod is a little bit difficult so you can play it on Easy mode.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c38e91c9dbc2c6b0",
+      "title": "FNF Different Girlfriend sing Release - Play Online on FNFGO",
+      "url": "https://www.fnfgo.com/fnf-different-girlfriend-sing-release/",
+      "summary": "FNF Different Girlfriend Sing Release is a fresh and exciting mod where the iconic song “Release” gets a unique twist, sung entirely by a new version of Girlfriend. This mod offers vibrant visuals, captivating animations, and a different vocal style that sets it apart from the original. Fans of Friday Night Funkin’ will love the creative take on the classic track, as it adds a refreshing ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
       "content_types": [
         "model"
       ],
       "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c896ae848ed4b1fa",
-      "title": "This $199 AI Wearable Is One You Can Actually Buy Now",
-      "url": "https://the-gadgeteer.com/2026/03/09/this-199-ai-wearable-is-one-you-can-actually-buy-now/",
-      "summary": "So the real question isn’t whether AI wearables can work. It’s whether anyone can build one that costs less than a flagship phone, ships to your door today, and stays useful past the first...",
-      "discovery_channel": "adjacent",
-      "query": "AI wearable camera",
+      "id": "7bfb84457f258168",
+      "title": "FNF Fire In The Hole - Play Online on FNFGO",
+      "url": "https://www.fnfgo.com/fnf-fire-in-the-hole/",
+      "summary": "“FNF Fire In The Hole” In a riveting collision of worlds, the realms of Friday Night Funkin’ (FNF) and Geometry Dash collide head-on in an electrifying showdown! Boyfriend and Girlfriend, the indomitable pair from FNF, find themselves thrust into a face-off against none other than Normal (Fire In The Hole meme version) from Geometry Dash.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ccb8e31f06ee49f2",
-      "title": "This Tiny Wearable AI Camera Records Your Day and Makes Vlogs",
-      "url": "https://www.gizmochina.com/2025/12/16/looki-l1-wearable-ai-camera-launched-specs-price/",
-      "summary": "Looki launches L1 wearable AI camera, offering auto vlog creation, local data storage, 1080p recording, and up to 13-hour battery life.",
-      "discovery_channel": "adjacent",
-      "query": "AI wearable camera",
+      "id": "f8bd1851c9d47df2",
+      "title": "FNF Mods - FNFGO",
+      "url": "https://www.fnfgo.com/fnf-mods/",
+      "summary": "[tdc_zone type=”tdc_content”] [vc_row] [vc_column] [vc_raw_html ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57aafa9e426f11d2",
-      "title": "Top 10 Best Files Sharing Software | 2026 Verified Picks",
-      "url": "https://worldmetrics.org/best/files-sharing-software/",
-      "summary": "Top 10 best files sharing software ranked by features and tradeoffs, with comparisons of WeTransfer, Box, and OneDrive for teams. Files sharing software determines how reliably large assets move, how access is controlled, and how well activity can be traced for audits and incident reviews.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "58080c6cdf8d9996",
-      "title": "Top File Sharing Apps for 2026: Fast, Secure & Easy Cloud Transfer ...",
-      "url": "https://www.techtimes.com/articles/316285/20260501/top-file-sharing-apps-2026-fast-secure-easy-cloud-transfer-tools-any-device.htm",
-      "summary": "File sharing apps in 2026 offer fast, secure transfers with end-to-end encryption, peer-to-peer links, and cloud file sharing for safe data exchange.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "3aab4dc0d3dde635",
+      "title": "FNF Mods - Play Online | Friday Night Funkin Mods",
+      "url": "https://www.fnfgo.com/",
+      "summary": "Find latest and trending FNF Mods at FNFGO.com! Explore popular Friday Night Funkin Mods, New characters, Custom songs and more. Stay updated and enjoy the hottest FNF games today!",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7a60d6db18d39102",
-      "title": "5.3 Procrastination: The Enemy Within - Packsites",
-      "url": "https://pressbooks.packsites.net/psychmajor/chapter/5-3-procrastination-the-enemy-within/",
-      "summary": "Simply put, procrastination is the act of delaying some task that needs to be completed. It is something we all do to greater and lesser degrees. For most people, a little minor procrastination is not a cause for great concern. But there are situations where procrastination can become a serious problem with a lot of risk.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "8d436384cd7e6710",
+      "title": "FNF QT: Rewired - Play Online on FNFGO",
+      "url": "https://www.fnfgo.com/fnf-qt-rewired/",
+      "summary": "FNF QT Rewired is a rhythm game mod for Friday Night Funkin’ that brings back QT, the cute singer with a hidden robotic side. After being absent for almost t...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -754,24 +1071,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f335c9d50ecb8230",
-      "title": "Question 13 The act of delaying some tasks that needs to be completed ...",
-      "url": "https://learn8.ai/q/XdKlH1vbSE.html",
-      "summary": "Procrastination is commonly defined as the act of delaying or postponing tasks, especially those that are necessary or require immediate attention. This directly aligns with the given definition (“delaying some tasks that need to be completed”).",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "7550595613f43e15",
+      "title": "FNF Spaghetti (Le Sserafim) - Play Online on FNFGO",
+      "url": "https://www.fnfgo.com/fnf-spaghetti-le-sserafim/",
+      "summary": "FNF Spaghetti (Le Sserafim) FNF Spaghetti (Le Sserafim) The latest Friday Night Funkin ’ update isn’t exactly Week 8, but it brings something just as exciting: an official collaboration with K-pop group LE SSERAFIM featuring their hit song “Spaghetti” (feat. j-hope) now playable right in FNF!",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -781,24 +1097,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "62fc9d2be461fe8a",
-      "title": "Question 6: The act of delaying some task that needs to be completed is ...",
-      "url": "https://learn8.ai/q/IJSITHUPru.html",
-      "summary": "- **Procrastination**: By definition, this is the act of intentionally delaying or avoiding tasks that need to be completed, even when aware of potential negative consequences.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "864e0410de62f7a3",
+      "title": "FNF vs Nonsense - Play Online on FNFGO",
+      "url": "https://www.fnfgo.com/fnf-vs-nonsense/",
+      "summary": "FNF vs Nonsense is one of the most popular FNF Mod based on the Friday Night Funkin game. This Nonsense FNF Mod is a little bit difficult so you can play it on Easy mode.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -808,24 +1123,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fa03304b51fec5c5",
-      "title": "Question 8: The act of delaying some task that needs to be completed is ...",
-      "url": "https://learn8.ai/q/PXy1jJz0MT.html",
-      "summary": "Let’s evaluate the options: - **Procrastination**: By definition, procrastination refers to the voluntary delay of a task that is intended to be completed, despite knowing it may have negative consequences.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "9623f5213281fcba",
+      "title": "How do I measure elapsed time in Python? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/7370801/how-do-i-measure-elapsed-time-in-python",
+      "summary": "It's fun to do this with a context-manager that automatically remembers the start time upon entry to a with block, then freezes the end time on block exit. With a little trickery, you can even get a running elapsed-time tally inside the block from the same context-manager function.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "teardown"
       ],
-      "primary_type": "tool",
+      "primary_type": "teardown",
       "routing_targets": [
         "reject_noise"
       ],
@@ -835,172 +1149,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f95732dcbc2789e9",
-      "title": "Stop Procrastinating | College Success - Lumen Learning",
-      "url": "https://courses.lumenlearning.com/wm-collegesuccess-2/chapter/stop-procrastinating/",
-      "summary": "Simply put, procrastination is the act of delaying some task that needs to be completed. It is something we all do to greater and lesser degrees. For most people, a little minor procrastination is not a cause for great concern.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f6cf3e63c87ef66e",
-      "title": "The act of delaying some task that needs to be completed is the ...",
-      "url": "https://brainly.com/question/42519613",
-      "summary": "The act of delaying some task that needs to be completed is the definition of procrastination. Procrastination is the habit of putting off tasks or assignments until the last minute, often resulting in stress and a lower quality of work.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e3c0460522c9f30",
-      "title": "The act of delaying some task that needs to be completed is the ...",
-      "url": "https://brainly.com/question/52265981",
-      "summary": "The act of delaying tasks that need to be completed is referred to as procrastination. Procrastination can vary in severity; when it is a chronic issue, it can lead to significant problems in academic and personal success.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8b6572b5cf424179",
-      "title": "The act of delaying some task that needs to be completed is the ...",
-      "url": "https://www.questionai.app/questions-tiNRRcF3De0l/act-delaying-task-needs-completed-definition",
-      "summary": "【Solved】 Procrastination Explanation 1. Identify the definition The act of delaying a task that needs to be completed is known as procrastination.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a0ca8f5822b52795",
-      "title": "The act of delaying some task that needs to be completed is the ...",
-      "url": "https://www.gauthmath.com/solution/1804396287736837/The-act-of-delaying-some-task-that-needs-to-be-completed-is-the-definition-of-Eg",
-      "summary": "Explanation The act of delaying some task that needs to be completed is the definition of Procrastination. Procrastination refers to the act of delaying or postponing tasks that need to be accomplished. It is often associated with avoiding immediate discomfort or aversion to the task at hand.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ebc1b5c4b65d55b",
-      "title": "Time Management Quiz Flashcards | Quizlet",
-      "url": "https://quizlet.com/671479314/time-management-quiz-flash-cards/",
-      "summary": "ability to avoid procrastination The act of delaying some task that needs to be completed is the definition of procrastination There are many strategies for managing the tendency to postpone getting work done, including getting organized, putting aside distractions and setting priorities",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9066d0dd41ebac0d",
-      "title": "4 \"Josefa Raya\" profiles | LinkedIn",
-      "url": "https://www.linkedin.com/pub/dir/Josefa/Raya",
-      "summary": "There are 4 professionals named \"Josefa Raya\", who use LinkedIn to exchange information, ideas, and opportunities.",
+      "id": "805c3ed6b947777b",
+      "title": "How do you test running time of VBA code? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/198409/how-do-you-test-running-time-of-vba-code",
+      "summary": "To use the class, you do a dim statement, instantiate a new object when you want to start the timer, and then call a method to stop the timer and get output. Taking a cue from Jonadv's example, there is an optional argument to allow you to label the output in instances where you use multiple timers at once.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1023,10 +1175,36 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4046cba71af8fbd2",
-      "title": "BOE-A-2026-3020 Resolución de 5 de febrero de 2026, de la Secretaría de ...",
-      "url": "https://boe.es/diario_boe/txt.php?id=BOE-A-2026-3020",
-      "summary": "Resolución de 5 de febrero de 2026, de la Secretaría de Estado de Función Pública, por la que se nombra personal funcionario de carrera, por el sistema general de acceso libre, en el Cuerpo General Auxiliar de la Administración del Estado.",
+      "id": "44af21834f10537e",
+      "title": "How to pass optional arguments to a method in C++?",
+      "url": "https://stackoverflow.com/questions/3784114/how-to-pass-optional-arguments-to-a-method-in-c",
+      "summary": "This is what i was looking for. Use one function which can handle different number of arguments. Declare function with default value in header file then define it without default Parameters and then you can use it. No need of making function overload",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d802cab1aa94a9c9",
+      "title": "How to reset a timer in C#? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1042312/how-to-reset-a-timer-in-c",
+      "summary": "There are three Timer classes that I am aware of, System.Threading.Timer, System.Timers.Timer, and System.Windows.Forms.Timer, but none of these have a .Reset () function which would reset the current elapsed time to 0. Is there a BCL class that has this functionality? Is there a non-hack way of doing it?",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1037,9 +1215,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "hack"
       ],
-      "primary_type": "news",
+      "primary_type": "hack",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1049,10 +1227,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "80af0785fa9b58f0",
-      "title": "Como se faz um violino? - RTP Ensina",
-      "url": "https://ensina.rtp.pt/artigo/como-se-faz-um-violino/",
-      "summary": "Dá-se forma ao violino, aperfeiçoam-se corpo e braço até ao envernizamento, fase final deste complexo processo. Antes de montar as cordas, de experimentar sonoridades, o artesão tem de resolver...",
+      "id": "d48d4adfc153f897",
+      "title": "In C# how do I define my own Exceptions? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/2200241/in-c-sharp-how-do-i-define-my-own-exceptions",
+      "summary": "I agree with all the answers below, but would like to comment that you should always inherit directly from System.ApplicationException. The MS guideline for this is to distinguish immediately between system exceptions and user-defined exceptions. Whichever you pick, write your baseclass and keep exception usage consistent.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1075,36 +1253,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ab673e0ef1c86ab9",
-      "title": "Como é feita a construção de um violino - YouTube",
-      "url": "https://m.youtube.com/watch?v=XhAVHjeoerE",
-      "summary": "Descubra os segredos da construção! Já imaginou como é o processo de construção de um violino, desde a escolha da madeira ideal até o toque final de um luthier experiente?",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0b07cc1721022e70",
-      "title": "Construção do Violino: Passo a Passo | PDF | Violino | Instrumentos de ...",
-      "url": "https://pt.scribd.com/document/959302330/Como-e-Feito-Um-Violino",
-      "summary": "O documento detalha o processo de construção de um violino, desde a seleção cuidadosa das madeiras até a montagem final do instrumento. Cada etapa, incluindo a escultura do tampo e fundo, colagem do corpo e aplicação de verniz, é realizada com precisão artesanal.",
+      "id": "67a515dbc389b456",
+      "title": "Initialization of an ArrayList in one line - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1005073/initialization-of-an-arraylist-in-one-line",
+      "summary": "However, I'm not too fond of that method because what you end up with is a subclass of ArrayList which has an instance initializer, and that class is created just to create one object -- that just seems like a little bit overkill to me. What would have been nice was if the Collection Literals proposal for Project Coin was accepted (it was slated to be introduced in Java 7, but it's not likely ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1127,10 +1279,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c4cda14f55769526",
-      "title": "Download Minecraft Java & Bedrock Edition | Minecraft",
-      "url": "https://www.minecraft.net/en-us/download",
-      "summary": "Download Minecraft for Windows, Mac, and more. Download server software for Java and Bedrock to start playing with friends. Learn more about the Minecraft Launcher.",
+      "id": "03a5d661936569be",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/assignment-notifications-dont-occur-in-a-teams/30905e6b-adeb-4e92-848e-1d36efcc3a13",
+      "summary": "Microsoft Community",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1141,9 +1293,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1153,12 +1305,90 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5928fe374e111194",
-      "title": "Downloads - Canal para Violinistas",
-      "url": "https://canalparaviolinistas.com/downloads/",
-      "summary": "Encontre aqui os principais métodos, estudos, materiais de apoio e partituras para violino e faça seu download totalmente grátis!",
+      "id": "4bb217a9ebfbb9e9",
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/de-de/msoffice/forum/all/office-365-personal-abo-abgelaufen-l%C3%A4sst-sich/",
+      "summary": "Microsoft Community",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b480fa14e5311655",
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/en-us/musicandvideo/forum/all/how-this-happens/c38f846c-a17b-4f87-a8ba-b25589695dae",
+      "summary": "Microsoft Community",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c99ea3f8621370a0",
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/apps_windows_10-msedge/microsoft-edge/252f30fb-a46d-48f1-9dff-46f1ebf7ddc1↑少し違うかもですが、マイクロソフトのコミュニティに書いてある方法を試して下さい。&gt;アプリのトラブルシューティングを実行してみると良さそうです。手順:[コントロールパネル]→[システムとセキュリティ]→[セキュリティとメンテナンス]→[トラブルシューティング]の順に開き、[すべて表示]を選択して&quot;Windowsストアアプリ&quot;の診断を行ってみてください。もし、上記の対処法を試してみてもうまくいかない場合は、ひとまず、有効な対処法が見つかるまではIEをかわりに使用されると良いと思います。",
+      "summary": "Microsoft Community",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c7396063adec72a",
+      "title": "New FNF Mods - Play Online on FNFGO",
+      "url": "https://www.fnfgo.com/new-games/",
+      "summary": "Find Latest FNF Mods at FNFGO.com! Explore new Friday Night Funkin Mods, New characters, Custom songs and more. Stay updated and enjoy the newest FNF games today!",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1179,12 +1409,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "548f4439f6c1b043",
-      "title": "ESCOLA DE LUTERIA ONLINE - Escola de Luteria Online",
-      "url": "https://atelierlabussiere.com/",
-      "summary": "A Escola de Luteria Online disponibiliza o curso de Luteria, aprenda a maravilhosa arte de construir, restaurar, fazer ajustes e manutenções de violinos, violas e cellos, torne-se um Luthier profissional.",
+      "id": "64db034d7ce0e3e6",
+      "title": "News | Orlando, Orange County, Florida News, Local Headlines ...",
+      "url": "https://www.clickorlando.com/news/",
+      "summary": "A Cuban man is fighting for a new life on his troubled island after the U.S. government expelled him as part of an immigration crackdown.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1205,10 +1435,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7d653628d7b34676",
-      "title": "Free download and install on Windows - Pinterest",
-      "url": "https://www.pinterest.com/pin/pinterest-free-download-and-install-on-windows--669558669622805279/",
-      "summary": "Technology apps.microsoft.com Pinterest - Free download and install on Windows | Microsoft Store Pinterest - Microsoft Store Apps Comments More about this Pin Board containing this Pin",
+      "id": "f93988879f54b8b6",
+      "title": "O que é o golpe de rastreamento da FedEx - como removê-lo",
+      "url": "https://sensorstechforum.com/pt/fedex-tracking-scam/",
+      "summary": "The FedEx Tracking Scam is a malware infection that is being spread on the Internet by unknown computer hackers.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1231,12 +1461,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "288d5f1b77a3c0f1",
-      "title": "FÃ­sica para fabricar violinos? | Cordas - Facebook",
-      "url": "https://www.facebook.com/musicalcordas/videos/f%C3%ADsica-para-fabricar-violinos/1631724888682273/",
-      "summary": "Com o Thiago, ele é professor do curso de loteria da faculdade federal. Isso. De Paraná. Do Paraná. Curitiba. Fala um pouquinho pra gente se é eu não sou mas eu tô muito mai",
+      "id": "3b242ddbe42cf57f",
+      "title": "Object moved - answers.microsoft.com",
+      "url": "https://answers.microsoft.com/es-es/windows/forum/all/windows-10-problema-con-el-encendido/60c71c7b-d26f-493b-ad6f-4bb13ab945b0",
+      "summary": "Object moved Object moved to here.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "236e548154c892e6",
+      "title": "order delayed; Dell has my payment; I have a Useless FedEx Ground ...",
+      "url": "https://www.dell.com/community/en/conversations/customer-care/order-delayed-dell-has-my-payment-i-have-a-useless-fedex-ground-tracking-number/6a2d49def51ef350beb9cd87",
+      "summary": "Order placed 6Jun26 with Dell Outlet. I got an \"Delay General\" notice on 8Jun26. On 10Jun26 I got \"Picked-up by Carrier / In-Transit\" and got a FedEx Ground | Ground RPSI Tracking ID. Unfortunately...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "379a7b2e9b79482b",
+      "title": "Order Support | Dell Canada",
+      "url": "https://www.dell.com/support/order-status/en-ca/order-support",
+      "summary": "Get help with recent purchases: inquire about order status, delivery, returns, cancelations, invoices, packing slip or other order-related issues.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1257,12 +1539,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c6a14db37daf30e0",
-      "title": "Google Confirms Play Store App Deletion—Now Just 6 Weeks Away",
-      "url": "https://www.forbes.com/sites/zakdoffman/2024/07/20/google-play-store-update-for-samsung-pixel-android-users-in-6-weeks/",
-      "summary": "Cue the imminent Play Store mass app deletion which Google has just previewed and confirmed is now just six weeks away: “We’re updating the Spam and Minimum Functionality policy to ensure apps ...",
+      "id": "59a2337ebeb97a75",
+      "title": "Popular FNF Mods - Play Online on FNFGO",
+      "url": "https://www.fnfgo.com/most-popular/",
+      "summary": "Find Popular FNF Mods at FNFGO.com! Explore Most Played Friday Night Funkin Mods, Popular Characters, Custom songs and more. Stay updated and enjoy the most played FNF games today!",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1271,8 +1553,59 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "policy"
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c03d9c7e5ff3126",
+      "title": "Refresh UI with a Timer in WPF (with BackgroundWorker?)",
+      "url": "https://stackoverflow.com/questions/3981550/refresh-ui-with-a-timer-in-wpf-with-backgroundworker",
+      "summary": "I thought I could use the System.Timers.Timer object for its Elapsed event and then call a BackgroundWorker to call the method that starts the job. The method is on a ViewModel class.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a99c605306536e5",
+      "title": "Round-start delay command? :: Counter-Strike 2 General Discussions",
+      "url": "https://steamcommunity.com/app/730/discussions/0/864974467390136773/",
+      "summary": "Round-start delay command? Is there a rcon command to change the round-start delay (default: 15 s) in offline mode / playing with bots?",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1284,12 +1617,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "08d51a5fa8234227",
-      "title": "Google Play Store Icon - Pinterest",
-      "url": "https://www.pinterest.com/ideas/google-play-store-icon/915217335731/",
-      "summary": "Find and save ideas about google play store icon on Pinterest.",
+      "id": "ec3cd7677c8b9c79",
+      "title": "sql server - TSQL Define Temp Table (or table variable) Without ...",
+      "url": "https://stackoverflow.com/questions/688233/tsql-define-temp-table-or-table-variable-without-defining-schema",
+      "summary": "Is there a way to define a temp table without defining it's schema up front?",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1310,10 +1643,62 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "241d6bddab6dc31e",
-      "title": "Google Play Store Warning—Do Not Download These Free Apps",
-      "url": "https://www.forbes.com/sites/zakdoffman/2025/03/12/google-play-store-warning-do-not-download-these-free-apps/",
-      "summary": "The advice to mitigating this threat is simple. Don’t click links to Play Store on social media posts or ads or within messages. If you want to find an app, use Play Store in the normal way.",
+      "id": "149d4a668ad5e53c",
+      "title": "start a timer from different thread in c# - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/5727023/start-a-timer-from-different-thread-in-c-sharp",
+      "summary": "Hi i have stepped into some problem related to timer. hope somebody can help.. I have a windows form containing a button when i click on that button i start a parameterised thread Thread thread1 = ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "742a086652d99768",
+      "title": "Steam Workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3341835226",
+      "summary": "You've made too many requests recently. Please wait and try your request again later.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aa409a194ac69d8f",
+      "title": "Support Home | Dell South Africa",
+      "url": "https://www.dell.com/support/home/en-za?app=drivers",
+      "summary": "Select a product or enter your Service Tag to view related Dell drivers and driver updates.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1336,10 +1721,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5888661edc9f8c43",
-      "title": "Google Play Store Warning—Do Not Keep All These Apps On Your ...",
-      "url": "https://www.forbes.com/sites/zakdoffman/2025/01/25/google-play-store-warning-do-not-keep-all-these-apps-on-your-phone/",
-      "summary": "You should also limit the number of these apps that you keep on your phone — you certainly do not want to collect multiple apps highlighted in the report to compound the risk.",
+      "id": "911a91c99bc2e066",
+      "title": "Support Services & Warranty | Dell Thailand",
+      "url": "https://www.dell.com/support/contractservices/en-th/",
+      "summary": "Enter your Service Tag, express service code or EMC product ID to check on your warranty status, additional coverage options such as accidental damage or complete care and learn about your Dell warranty.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1362,10 +1747,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1d3847757e35f06e",
-      "title": "Guia Prático de Construção de Violinos | PDF | Madeira | Violino",
-      "url": "https://pt.scribd.com/document/43607538/Construindo-violino",
-      "summary": "A construção de um violino requer habilidade, dedicação e experiência. O processo envolve a escolha cuidadosa da madeira, colagem do tampo e fundo, escavação fina das partes internas, montagem das laterais e do braço, e acabamentos delicados.",
+      "id": "370686c4e3c35042",
+      "title": "Visual Studio - Where to define custom path macros?",
+      "url": "https://stackoverflow.com/questions/4710084/visual-studio-where-to-define-custom-path-macros",
+      "summary": "The macro names are things like this: $ (MY_WHATEVER_INCLUDE_DIR) I could manually replace every single macro with the real path, but it would be nice to just use the macros. My question is, where do I define these custom path macros at?",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1388,10 +1773,166 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "baa36a06dc3fba70",
-      "title": "Home | Minecraft Education",
-      "url": "https://education.minecraft.net/en-us/login/home",
-      "summary": "Access Minecraft Education to enhance classroom learning with immersive lessons and customizable content.",
+      "id": "ab8bc1dbac5510d8",
+      "title": "Volkswagen Group of America",
+      "url": "https://www.volkswagengroupofamerica.com/",
+      "summary": "Volkswagen Group of America is a leading automotive company focused on innovation, teamwork, and social responsibility.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d4c260e692ecebef",
+      "title": "VW Electric Cars: Our Selection of EV Cars | Volkswagen",
+      "url": "https://www.vw.com/en/electric-vehicles.html",
+      "summary": "Explore VW's electric cars, from the groundbreaking ID.4 SUV to the iconic ID. Buzz van, for a fun and futuristic driving experience.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "88bd11fc40a0f92b",
+      "title": "VW Inventory: Pick The Model You Want | Volkswagen",
+      "url": "https://www.vw.com/en/inventory.html",
+      "summary": "Explore our VW inventory and create your dream car. Choose the model and features that fit your budget and location. Enjoy a fun car shopping experience!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "422b16edab4c6e96",
+      "title": "What Is FedEx Tracking Scam — How to Remove It",
+      "url": "https://sensorstechforum.com/fedex-tracking-scam/",
+      "summary": "The FedEx tracking scam is a type of phishing scam that uses the FedEx tracking system to fool unsuspecting victims into providing personal and financial information. The scammer will create a fake tracking number and send it to the victim, claiming that they have an important package that needs to be tracked.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "96ea93e4b7a20990",
+      "title": "Where do I define symbols tested with {$IFDEF}? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4530312/where-do-i-define-symbols-tested-with-ifdef",
+      "summary": "Other answers have pointed you at the places to define symbols and the scope implications of the different approaches. However, what no-one has yet mentioned is that if you change the DEFINE symbols you MUST do a FULL BUILD of your project for them to have any effect on your code.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "70c6e52601deb501",
+      "title": "Why is my System.Timers.Timer event not firing in C#",
+      "url": "https://stackoverflow.com/questions/8833120/why-is-my-system-timers-timer-event-not-firing-in-c-sharp",
+      "summary": "Because your Timers.Timer does not set a SyncObject Therefore your event fires on another thread Setting the Text property raises a cross-threading Exception And then you swallow that exception without any trace",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f14114e017f9926",
+      "title": "Xbox 360 S 4GB powers on but freezes before getting to the home page",
+      "url": "https://answers.microsoft.com/en-us/xbox/forum/all/xbox-360-s-4gb-powers-on-but-freezes-before/d436f1d2-dfc9-4e3c-8400-3dffbda437cd",
+      "summary": "Wondering if anyone knows a solution to this frustrating issue - the console turns on, steady green light, but that's about it - it doesn't get to the home page - the console doesn't have a removable",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1402,9 +1943,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1414,12 +1955,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b9e11f312e121448",
-      "title": "Home1 | Violin Making Online",
-      "url": "https://www.onlineviolinmaking.com/pt/home",
-      "summary": "Ensino de forma a que adquiram as habilidades fundamentais da marcenaria fina, além de construírem um violino.Não há necessidade de se isolarem e ficarem sozinhos; os alunos são muito bem-vindos para participar do fórum e interagir com os outros.",
+      "id": "08d01d22c87e7271",
+      "title": "‎order never arrived, been a month, customer service giving me ... - Dell",
+      "url": "https://www.dell.com/community/en/conversations/customer-care/order-never-arrived-been-a-month-customer-service-giving-me-the-run-around/695de4f2a056e951ee3ad4f5",
+      "summary": "Dell provided a fedex tracking number and the tracking is stuck at a location that isnt the origin. i contacted customer care and they told me its digital , check your account. i said how can it be digital when i have a fedex tracking, but customer care just kept insisting it was digital. i said fine, where is the digital game? the rep said ...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1428,9 +1969,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1440,376 +1981,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2144994ed98fc2ba",
-      "title": "josefa raya (@rayapepi) • Instagram photos and videos",
-      "url": "https://www.instagram.com/rayapepi/",
-      "summary": "162 Followers, 141 Following, 34 Posts - josefa raya (@rayapepi) on Instagram: \"\"",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bc6bbd2c8a461903",
-      "title": "Josefa Raya García - Facebook",
-      "url": "https://www.facebook.com/josefa.rayagarcia/",
-      "summary": "Josefa Raya García is on Facebook. Join Facebook to connect with Josefa Raya García and others you may know. Facebook gives people the power to share and...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fbfcdeedab69db1b",
-      "title": "New & Used VW Dealer in Bradenton, FL | Bob Boast Volkswagen",
-      "url": "https://www.boastvw.com/",
-      "summary": "Visit Bob Boast Volkswagen in Bradenton, FL, for new Volkswagen models, pre-owned cars, expert service and simple financing options.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1d9952c0a3e1cf0b",
-      "title": "Ors Raya Josefa - Palma, Islas Baleares, España",
-      "url": "https://www.abctelefonos.com/ors_raya_josefa_es_10074260",
-      "summary": "Información completa sobre Ors Raya Josefa, personas vinculadas, datos comerciales y la posibilidad de seguir buscando mucho más.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "915080296b33d389",
-      "title": "Ors Raya Josefa - Palma, Islas Baleares, Spain",
-      "url": "https://en.abctelefonos.com/ors_raya_josefa_es_10074260",
-      "summary": "Information about Ors Raya Josefa, friends, business report and more.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "96b01bc642fb1ae8",
-      "title": "Salud en Palma de Mallorca | Horarios y Tiendas",
-      "url": "https://www.horariosytiendas.es/salud/palma-de-mallorca",
-      "summary": "¿Cómo puedo cuidar mi salud mental? Ver más 1 JOSEFA ORS RAYA Salud JOSEFA ORS RAYA CALLE COSTA RICA, 15Palma de Mallorca",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ef3f184622502bba",
-      "title": "Studio Liutai - Restaura, Constrói e Ensina a Construir Violinos ...",
-      "url": "https://studioliutai.com/universo-dos-violinos/",
-      "summary": "Assista a série de vídeos O Universo dos Violinos.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7435e97b0c9d95a1",
-      "title": "Update to a New Version of Minecraft Education",
-      "url": "https://edusupport.minecraft.net/hc/en-us/articles/360047705032-Update-to-a-New-Version-of-Minecraft-Education",
-      "summary": "Minecraft Education releases regular updates with new features to make your experience even better! This article will answer many questions you may have about updating to a new version or enabling / disabling auto updates.",
+      "id": "b2d2a969749ecd5b",
+      "title": "频繁蓝屏 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/surface/forum/all/%E9%A2%91%E7%B9%81%E8%93%9D%E5%B1%8F/dc84cc98-705a-4908-8162-db77d867911e",
+      "summary": "执行内存诊断：选择任务栏中的搜索框，输入“内存”，然后在搜索结果中选择“Windows 内存诊断”，选择“立即重启并检查是否存在问题（推荐）”。 Surface 重启时，诊断工具将运行并在屏幕上显示测试状态。 虽然测试可能显示为非活动，但它仍在运行。 Windows 将在测试完成后自动重启",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2cdaf9e224511701",
-      "title": "Volkswagen Dealer Spring Hill FL | Volkswagen of New Port Richey",
-      "url": "https://www.vwofnpr.com/volkswagen-dealer-spring-hill-fl.html",
-      "summary": "Find your perfect ride at our Volkswagen dealer near Spring Hill, FL. Inventory, financing, & service at Volkswagen of New Port Richey!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "999e75199477485e",
-      "title": "Volkswagen Dealership Serving Tampa Bay | Volkswagen of New Port Richey",
-      "url": "https://www.vwofnpr.com/",
-      "summary": "See Our Massive Volkswagen Selection in New Port Richey, FL At our dealership, we host dozens of new, used, and certified pre-owned Volkswagen models for you to search through. These cars and SUVs are made to make driving more enjoyable thanks to superior design and obsessive engineering.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dc3259be22aa70cd",
-      "title": "Volkswagen of New Port Richey - New Port Richey, FL - CarGurus",
-      "url": "https://www.cargurus.com/Cars/m-Volkswagen-of-New-Port-Richey-sp283608",
-      "summary": "Browse cars and read independent reviews from Volkswagen of New Port Richey in New Port Richey, FL. Click here to find the car you’ll love near you.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "011a083e455acc20",
-      "title": "Volkswagen of New Port Richey - New Port Richey, FL | Cars.com",
-      "url": "https://www.cars.com/dealers/5397359/volkswagen-of-new-port-richey/",
-      "summary": "We take pride in serving all Odessa Trinity and Holiday FL Volkswagen enthusiasts. We enjoy the challenge of meeting and exceeding those standards.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a8a668f6594d7112",
-      "title": "Volkswagen of New Port Richey | New Port Richey FL - Facebook",
-      "url": "https://www.facebook.com/vwofnpr/",
-      "summary": "Volkswagen of New Port Richey is in New Port Richey, FL. The Volkswagen Atlas SE with Technology brings comfort, space, and everyday convenience together for the whole family. A 12-inch display, quilted seats, adaptive cruise control, blind spot monitoring, and lane assist make every drive feel a little more refined. #Volkswagen #Cars # ...",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f09b837ce7d09480",
-      "title": "Volkswagen of North Tampa | Volkswagen Dealer in Tampa, FL",
-      "url": "https://www.vwofnorthtampa.com/",
-      "summary": "Volkswagen of North Tampa is your go-to destination for all things Volkswagen in Tampa, FL. Whether you’re shopping for a stylish sedan, a family-friendly SUV, or a capable commuter car, our dealership offers a broad selection of new Volkswagen models and pre-owned models to explore.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e69759c17203c36f",
-      "title": "Volkswagen of Wesley Chapel | Sales & Service | VW Dealership",
-      "url": "https://www.vwofwc.com/",
-      "summary": "Our Volkswagen dealership in Wesley Chapel, FL, is dedicated to delivering exceptional sales and service to every visitor. As part of our commitment to excellence within the Tampa Bay community, we ensure that every interaction, conversation, and transaction meets the highest standards.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
