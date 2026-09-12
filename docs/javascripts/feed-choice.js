@@ -2,9 +2,17 @@
   const VERIFIED = "https://glassesresearch.org/feed.xml";
   const WIRE = "https://glassesresearch.org/data/wire-feed.xml";
   const FEEDLY_HOME = "https://feedly.com/";
+  const FEEDLY_UNSUPPORTED_PREFIX = "https://feedly.com/i/discover/sources/search/feed/";
   const INOREADER_PREFIX = "https://www.inoreader.com/feed/";
 
   const inoreaderUrl = (feedUrl) => `${INOREADER_PREFIX}${encodeURIComponent(feedUrl)}`;
+
+  const normalizeReaderLinks = (root = document) => {
+    root.querySelectorAll(`a[href^="${FEEDLY_UNSUPPORTED_PREFIX}"]`).forEach((link) => {
+      link.href = FEEDLY_HOME;
+      if (link.textContent.trim().toLowerCase() === "feedly") link.textContent = "Open Feedly";
+    });
+  };
 
   const copyFeed = async (button) => {
     const url = button.dataset.feedUrl;
@@ -69,4 +77,13 @@
       rss.textContent = "Feeds";
     }
   }
+
+  normalizeReaderLinks();
+  new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      for (const node of mutation.addedNodes) {
+        if (node instanceof Element) normalizeReaderLinks(node);
+      }
+    }
+  }).observe(document.documentElement, { childList: true, subtree: true });
 })();
