@@ -1,10 +1,18 @@
 (() => {
   const VERIFIED = "https://glassesresearch.org/feed.xml";
   const WIRE = "https://glassesresearch.org/data/wire-feed.xml";
-  const FEEDLY_SEARCH_PREFIX = "https://feedly.com/i/discover/sources/search/feed/";
-  const INOREADER_HOME = "https://www.inoreader.com/";
+  const FEEDLY_HOME = "https://feedly.com/";
+  const FEEDLY_UNSUPPORTED_PREFIX = "https://feedly.com/i/discover/sources/search/feed/";
+  const INOREADER_PREFIX = "https://www.inoreader.com/feed/";
 
-  const feedlySearchUrl = (feedUrl) => `${FEEDLY_SEARCH_PREFIX}${encodeURIComponent(feedUrl)}`;
+  const inoreaderUrl = (feedUrl) => `${INOREADER_PREFIX}${encodeURIComponent(feedUrl)}`;
+
+  const normalizeReaderLinks = (root = document) => {
+    root.querySelectorAll(`a[href^="${FEEDLY_UNSUPPORTED_PREFIX}"]`).forEach((link) => {
+      link.href = FEEDLY_HOME;
+      if (link.textContent.trim().toLowerCase() === "feedly") link.textContent = "Open Feedly";
+    });
+  };
 
   const copyFeed = async (button) => {
     const url = button.dataset.feedUrl;
@@ -39,12 +47,12 @@
       const title = rssOption.querySelector("#home-follow-rss-title");
       if (title) title.textContent = "Verified Research feeds";
       const description = rssOption.querySelector("p");
-      if (description) description.textContent = "Only verified, published GlassesResearch updates. Feedly opens with this feed pre-selected for source search; copy RSS remains the reader-independent fallback.";
+      if (description) description.textContent = "Only verified, published GlassesResearch updates. Copy the RSS URL for any reader; Feedly opens separately, while Inoreader receives the selected feed URL.";
       const actions = rssOption.querySelector(".follow-research__actions");
       if (actions) actions.innerHTML = `
-        <a class="md-button md-button--primary" href="${feedlySearchUrl(VERIFIED)}" target="_blank" rel="noopener noreferrer">Open in Feedly</a>
-        <button class="md-button" type="button" data-feed-copy data-feed-url="${VERIFIED}" data-feed-label="Copy RSS URL">Copy RSS URL</button>
-        <a class="md-button" href="${INOREADER_HOME}" target="_blank" rel="noopener noreferrer">Open Inoreader</a>
+        <button class="md-button md-button--primary" type="button" data-feed-copy data-feed-url="${VERIFIED}" data-feed-label="Copy RSS URL">Copy RSS URL</button>
+        <a class="md-button" href="${FEEDLY_HOME}" target="_blank" rel="noopener noreferrer">Open Feedly</a>
+        <a class="md-button" href="${inoreaderUrl(VERIFIED)}" target="_blank" rel="noopener noreferrer">Open in Inoreader</a>
         <a class="md-button" href="/docs/FEEDS/#verified-research">Reader setup</a>
         <a class="md-button" href="${VERIFIED}">Raw RSS</a>
       `;
@@ -57,7 +65,7 @@
   if (wireSection) {
     const old = wireSection.querySelector(".gr-wire-feed-links");
     if (old) {
-      old.innerHTML = `<strong>Across the Wire feeds:</strong> <a href="${feedlySearchUrl(WIRE)}" target="_blank" rel="noopener noreferrer">Open in Feedly</a> · <button class="gr-link-button" type="button" data-feed-copy data-feed-url="${WIRE}" data-feed-label="Copy RSS URL">Copy RSS URL</button> · <a href="${INOREADER_HOME}" target="_blank" rel="noopener noreferrer">Open Inoreader</a> · <a href="/docs/FEEDS/#across-the-wire">Reader setup</a> · <a href="${WIRE}">Raw RSS</a> · <a href="/data/wire-feed.json">JSON Feed</a><span data-feed-copy-status role="status" aria-live="polite"></span>`;
+      old.innerHTML = `<strong>Across the Wire feeds:</strong> <button class="gr-link-button" type="button" data-feed-copy data-feed-url="${WIRE}" data-feed-label="Copy RSS URL">Copy RSS URL</button> · <a href="${FEEDLY_HOME}" target="_blank" rel="noopener noreferrer">Open Feedly</a> · <a href="${inoreaderUrl(WIRE)}" target="_blank" rel="noopener noreferrer">Open in Inoreader</a> · <a href="/docs/FEEDS/#across-the-wire">Reader setup</a> · <a href="${WIRE}">Raw RSS</a> · <a href="/data/wire-feed.json">JSON Feed</a><span data-feed-copy-status role="status" aria-live="polite"></span>`;
     }
   }
 
@@ -69,4 +77,13 @@
       rss.textContent = "Feeds";
     }
   }
+
+  normalizeReaderLinks();
+  new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      for (const node of mutation.addedNodes) {
+        if (node instanceof Element) normalizeReaderLinks(node);
+      }
+    }
+  }).observe(document.documentElement, { childList: true, subtree: true });
 })();
