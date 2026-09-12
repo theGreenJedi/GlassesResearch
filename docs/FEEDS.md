@@ -7,9 +7,9 @@ GlassesResearch publishes two deliberately separate feed families. Choose the on
 Use this feed when you want material that GlassesResearch has verified and published. Watching items and unverified discovery signals are excluded.
 
 <div class="follow-research__actions">
-  <a class="md-button md-button--primary" href="https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml" target="_blank" rel="noopener noreferrer">Open in Feedly</a>
-  <button class="md-button" type="button" data-feed-copy data-feed-url="https://glassesresearch.org/feed.xml">Copy RSS URL</button>
-  <a class="md-button" href="https://www.inoreader.com/" target="_blank" rel="noopener noreferrer">Open Inoreader</a>
+  <button class="md-button md-button--primary" type="button" data-feed-copy data-feed-url="https://glassesresearch.org/feed.xml">Copy RSS URL</button>
+  <a class="md-button" href="https://feedly.com/" target="_blank" rel="noopener noreferrer">Open Feedly</a>
+  <a class="md-button" href="https://www.inoreader.com/feed/https%3A%2F%2Fglassesresearch.org%2Ffeed.xml" target="_blank" rel="noopener noreferrer">Open in Inoreader</a>
   <a class="md-button" href="https://glassesresearch.org/feed.xml">Raw RSS</a>
   <a class="md-button" href="https://glassesresearch.org/feed.json">JSON Feed</a>
 </div>
@@ -17,9 +17,9 @@ Use this feed when you want material that GlassesResearch has verified and publi
 
 **Feed URL:** `https://glassesresearch.org/feed.xml`
 
-The **Open in Feedly** button sends this exact RSS URL into Feedly's source-search route so the intended GlassesResearch source should already be selected for you to follow. **Copy RSS URL** remains the reader-independent fallback.
+For **Feedly**, copy the RSS URL above, open Feedly, choose **Follow Sources**, paste the URL, and follow the returned source. GlassesResearch does not claim a one-click Feedly subscription handoff because Feedly's private UI routes can change independently of this site.
 
-To subscribe in **Inoreader**, copy the RSS URL above, open Inoreader, choose **Add feed → Website**, paste the URL, and follow the returned feed. We do not claim a one-click Inoreader handoff until that path is separately proven.
+For **Inoreader**, the button passes the selected feed URL into Inoreader. If Inoreader asks you to sign in first, complete sign-in and continue with the preserved feed request. Copy/paste remains the reader-independent fallback.
 
 ## Across the Wire {#across-the-wire}
 
@@ -30,9 +30,9 @@ The discovery collector is scheduled every **15 minutes** and keeps a rolling 12
 The underlying wire state also retains discovery provenance. `discovered_via` records every search wheel or sentinel known to have surfaced an item, while `first_discovered_via` preserves the route or routes present when GlassesResearch first saw it. That distinction lets us count a true sentinel rescue even if Google or Bing finds the same story later.
 
 <div class="follow-research__actions">
-  <a class="md-button md-button--primary" href="https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Open in Feedly</a>
-  <button class="md-button" type="button" data-feed-copy data-feed-url="https://glassesresearch.org/data/wire-feed.xml">Copy RSS URL</button>
-  <a class="md-button" href="https://www.inoreader.com/" target="_blank" rel="noopener noreferrer">Open Inoreader</a>
+  <button class="md-button md-button--primary" type="button" data-feed-copy data-feed-url="https://glassesresearch.org/data/wire-feed.xml">Copy RSS URL</button>
+  <a class="md-button" href="https://feedly.com/" target="_blank" rel="noopener noreferrer">Open Feedly</a>
+  <a class="md-button" href="https://www.inoreader.com/feed/https%3A%2F%2Fglassesresearch.org%2Fdata%2Fwire-feed.xml" target="_blank" rel="noopener noreferrer">Open in Inoreader</a>
   <a class="md-button" href="https://glassesresearch.org/data/wire-feed.xml">Raw RSS</a>
   <a class="md-button" href="https://glassesresearch.org/data/wire-feed.json">JSON Feed</a>
 </div>
@@ -40,11 +40,11 @@ The underlying wire state also retains discovery provenance. `discovered_via` re
 
 **Feed URL:** `https://glassesresearch.org/data/wire-feed.xml`
 
-The Feedly button uses the same pre-filled source-search flow for Across the Wire. Copy/paste remains available for any reader.
+For **Feedly**, copy this RSS URL, open Feedly, choose **Follow Sources**, paste the URL, and follow the returned source. For other readers, copy/paste is the canonical path.
 
 ## Reader contract
 
-The public RSS URLs above are canonical. Reader-specific buttons are only presented as one-click handoffs when we have a concrete reader route that carries the selected feed into that reader. A generic reader homepage is not treated as a successful subscription handoff.
+The public RSS and JSON URLs above are canonical and are the surfaces GlassesResearch can test end to end. Reader-specific controls are convenience links only. GlassesResearch does not automate tests against third-party reader interfaces; those interfaces are manually checked when integrations change or a reader problem is reported.
 
 !!! note "Seeing XML in a browser is normal"
     A raw RSS link is meant for feed readers. Many browsers display it as an XML document instead of a human-readable page.
