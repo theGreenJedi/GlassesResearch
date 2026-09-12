@@ -1,58 +1,162 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-12T05:08:21.285990+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 190,
+  "discovered_utc": "2026-09-12T05:54:43.574125+00:00",
+  "candidate_count": 4,
+  "precision_rejected_count": 188,
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 1,
-    "speculative": 0,
+    "adjacent": 0,
+    "speculative": 2,
     "irrelevant": 0
   },
   "type_counts": {
-    "news": 1
+    "model": 1,
+    "news": 1,
+    "hack": 1,
+    "policy": 1,
+    "rumor": 2
   },
   "routing_counts": {
-    "adjacent_radar": 1,
-    "research_news_review": 1
+    "development_hacking": 1,
+    "model_catalog_review": 1,
+    "policy_privacy": 1,
+    "research_news_review": 4,
+    "watching": 2
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
     {
       "url": "https://brilliant.xyz/blog",
       "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.everysight.com/pages/maverick-ai",
+      "error": "HTTP Error 500: Internal Server Error"
     }
   ],
   "candidates": [
     {
-      "id": "ad0347a45001af8b",
-      "title": "Brain-Computer Interface Packaging Market (2026 - 2033) - grandviewresearch.com",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUGFsZk9IV1hUaDRGMFA4NDNuS2dycWZjSzZWNExOQWdQTWxvclVFM0U5eTFyMXZsdGdhci1aczNESXNDUHdyMVI1VE9VWVJGRl94RWt1TnppSUdqS3RDdHB1YXR5Wkh2OVVmSWtDMVZBcmNuY0NBS1FxQkxWdUdicjhJMU90Y2szUG4xMl9HX0FUbEFKdk9seWdJOFFyal90UVE?oc=5",
-      "source": "Google News: wearable human computer interface",
-      "source_lane": "adjacent_hci",
-      "published": "Fri, 11 Sep 2026 06:38:45 GMT",
-      "summary": "Brain-Computer Interface Packaging Market (2026 - 2033) grandviewresearch.com",
-      "materiality_score": 2,
+      "id": "6806ccadc5a4a400",
+      "title": "Samsung’s first proper Android XR glasses could launch in late 2027 - trustedreviews.com",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMHpXN0tUTnQtOU0xTG1uVnhkdzdFTzVPMHJ1aVphNDNRTkZxaV9ZdWJxMzdaVEU5dmhPZF9QZXdKek5zT2ViU0xNNmM3NGdQckJFWk5ndDRxSWlxcWNHN25sVDg0enBCXzJyRU5oMTctOXQ5ZzNFazREOEdNRTZscHJSamszWERmMEJjd1RwVlBiWGhzMGpSNDAtUFJMNHVKazhLMg?oc=5",
+      "source": "Google News: smart glasses review",
+      "source_lane": "core_glasses",
+      "published": "Fri, 11 Sep 2026 09:38:27 GMT",
+      "summary": "Samsung’s first proper Android XR glasses could launch in late 2027 trustedreviews.com",
+      "materiality_score": 5,
       "keyword_hits": [
-        "brain-computer"
+        "android xr",
+        "launch"
       ],
       "status": "candidate",
-      "relationship": "adjacent",
+      "relationship": "speculative",
+      "content_types": [
+        "model",
+        "rumor"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "watching",
+        "model_catalog_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": false,
+      "publication_gate_reason": "future/rumor signals: could launch",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "9511650a008818df",
+      "title": "Leaked Meta firmware reveals slim Project Phoenix headset visuals - uz.kursiv.media",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLVB1RXFwcGRWemRQbkF5bHc2SDNIZFdzeFNIRTMyY3BDMHFjdVVfVklQeVlWREF5SndFU1BxV2RCLWp2NWxHYTZPeW10MHBPZTlFUW5GdnI3X3E3dl82TnY4MEtPMWhwRDU3N1NoXzQ3N0JodWlyOW0wY1ZWN2F1ckVmaW1OMmtwWlJYbGJmUDZpazFPaTduZG9BTldYc0lZYTB3Q3h3RQ?oc=5",
+      "source": "Google News: upcoming smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 12 Sep 2026 05:53:17 GMT",
+      "summary": "Leaked Meta firmware reveals slim Project Phoenix headset visuals uz.kursiv.media",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "firmware"
+      ],
+      "status": "candidate",
+      "relationship": "speculative",
+      "content_types": [
+        "hack",
+        "rumor"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "research_news_review",
+        "watching",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": false,
+      "publication_gate_reason": "future/rumor signals: leaked",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "4e139c01b6287c3f",
+      "title": "Meta camera glasses should be banned for privacy reasons, says Dutch consumer group - NL Times",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUjBiVVFNTXU2dWNCMG5PbmtnQ2h5NTVFSmpleVhXdUJQY0syQ3RheUJ1d0o3Vm9sai1HZGpFN3VUZDMwaGlYTUctTlg4MWowQ3Y0OHFpUURXOVM4a0MwUGxteWtPUUk4SFNMTGpTWm8ybUpCR1pocm8wOEdTNnpoSlNlUHFGTFZBaXVpbmNfLUI4YUVZVWd6WWNpMXh6RlE?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 12 Sep 2026 05:45:00 GMT",
+      "summary": "Meta camera glasses should be banned for privacy reasons, says Dutch consumer group NL Times",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "camera",
+        "privacy"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: camera glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "897b3416e9871e77",
+      "title": "Samsung is preparing AI glasses with a color display. They will arrive soon and offer surprising features - samsungmagazine.eu",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5KV0dxZW8xcWlZdDlrYlBlRU40M3hVX1RndHNlV3hVREY2RFlHWVpDalNCNnVQVHdDVWtvVHVpOVpqYXZ0S1Y2TVZyUDRXNjdyZEZhZm52bUNmYTBmMU14M00yOXJKS014SmlkUg?oc=5",
+      "source": "Google News: smart glasses review",
+      "source_lane": "core_glasses",
+      "published": "Fri, 11 Sep 2026 00:05:56 GMT",
+      "summary": "Samsung is preparing AI glasses with a color display. They will arrive soon and offer surprising features samsungmagazine.eu",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "display"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "research_news_review"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "likely durable"
+      "institution_test": "review durability"
     }
   ]
 }
