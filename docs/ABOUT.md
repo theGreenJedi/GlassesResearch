@@ -4,6 +4,16 @@ GlassesResearch is an independent, vendor-neutral research institution for smart
 
 The public site leads with research. This page gathers the mission, operating principles, evidence rules, privacy promise, preservation methods, and project governance for readers who want to understand how the work is organized. For a compact map of every major public section, use the [complete site contents](CONTENTS.md).
 
+## Contact
+
+Email: pete@glassesresearch.org
+
+Mail:
+
+Glasses Research  
+3971 Hoover Rd, Suite 168  
+Grove City, OH 43123-2389
+
 ## Why the project exists
 
 - [Why GlassesResearch exists](../WHY.md)
@@ -40,13 +50,3 @@ GlassesResearch covers current, historical, discontinued, obscure, industrial, e
 - [Privacy statement](PRIVACY.md)
 
 The site uses no project-added advertising, tracking cookies, behavioral profiling, or sale of visitor data. GlassesResearch permits only privacy-first aggregate analytics through Cloudflare Web Analytics, solely to understand page usage and performance. The analytics configuration is public, uses no tracking cookies, and remains inactive until a Cloudflare site token is configured.
-
-## Contact
-
-Email: pete@glassesresearch.org
-
-Mail:
-
-Glasses Research  
-3971 Hoover Rd, Suite 168  
-Grove City, OH 43123-2389
