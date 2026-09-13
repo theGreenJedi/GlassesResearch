@@ -1,36 +1,44 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-13T14:43:46.444749+00:00",
-  "candidate_count": 77,
-  "classifier_irrelevant_count": 70,
+  "discovered_utc": "2026-09-13T16:59:45.209346+00:00",
+  "candidate_count": 71,
+  "classifier_irrelevant_count": 47,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 7,
-    "broad_web": 52,
-    "developer": 18
+    "adjacent": 22,
+    "broad_web": 27,
+    "developer": 21,
+    "research": 3
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 3,
     "enabling": 0,
-    "adjacent": 7,
+    "adjacent": 21,
     "speculative": 0,
-    "irrelevant": 70
+    "irrelevant": 47
   },
   "type_counts": {
-    "model": 1,
-    "video": 3,
-    "news": 49,
-    "tool": 19,
-    "sdk": 18,
-    "policy": 1,
-    "retail": 6
+    "model": 2,
+    "review": 1,
+    "video": 2,
+    "news": 31,
+    "research": 3,
+    "tool": 24,
+    "sdk": 21,
+    "hack": 2,
+    "retail": 7,
+    "teardown": 1,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 7,
-    "model_catalog_review": 1,
-    "reject_noise": 70,
-    "report_card_evidence": 2,
-    "research_news_review": 7
+    "adjacent_radar": 21,
+    "deep_research": 1,
+    "development_hacking": 3,
+    "model_catalog_review": 2,
+    "reject_noise": 47,
+    "report_card_evidence": 1,
+    "research_news_review": 24,
+    "watching": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -41,22 +49,492 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
   "candidates": [
     {
-      "id": "bedb9289f5be036b",
-      "title": "Warriors’ full 2025-26 NBA regular-season schedule released ...",
-      "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steph-curry-schedule-release-lakers-clippers/1867810/",
-      "summary": "The Warriors’ 2025-26 NBA schedule was released on Thursday and featured five matchups Golden State fans won’t want to miss. The Warriors’ marquee 2025-26 regular-season games and NBA Cup matchups already have been announced by the league, but on Thursday, the rest of Golden State’s slate was revealed.",
+      "id": "17c0731b321a42af",
+      "title": "Neuro Vision 3 Smart Glasses Review - TikTok",
+      "url": "https://www.tiktok.com/@synesterkhal/video/7650246772517834014",
+      "summary": "I’ve been testing the Neuro Vision 3 smart glasses, and honestly, they’ve been pretty impressive. Comfortable to wear Good video quality Built-in speakers for music Solid microphone quality AI assistant that’s actually useful The customer service was great and they helped answer all my setup questions before I even got the glasses. Shipping was about a week and a half from when I ordered ...",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses review",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "review",
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "review",
+        "video"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80d7d69210064e71",
+      "title": "What are smart glasses? AI glasses explained | Meta Store",
+      "url": "https://www.meta.com/ai-glasses/learn/what-are-smart-glasses/",
+      "summary": "Learn what AI glasses and smart glasses are and what they do. Get answers to common questions about AI glasses from Meta and its capabilities.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "481dc608da60ada8",
+      "title": "XREAL 1S | 500-Inch Screen AR glasses for Gaming, Movies & Mobile Play",
+      "url": "https://eu.shop.xreal.com/products/xreal-1s",
+      "summary": "Experience a cinematic 500-inch AR screen anywhere with XREAL 1S AR Glasses. Powered by the XREAL X1 Spatial Chip for gaming, movies, and immersive mobile entertainment.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7fcd944507ebba36",
+      "title": "3 Ans de Mariage : 15 Idées Cadeaux Noces de Froment - MARIAGE ÉTERNEL",
+      "url": "https://mariage-eternel.com/blogs/noces/3-ans-froment",
+      "summary": "Noces de froment : signification, idées cadeaux pour elle et pour lui, et nos idées pour fêter vos 3 ans de mariage. Le guide complet.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "announced",
-        "released"
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
       ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "98fc12858dc4c7c0",
+      "title": "3 ans de mariage : célébrer les noces de froment",
+      "url": "https://www.marobedemariage.com/3-ans-de-mariage-celebrer-les-noces-de-froment",
+      "summary": "Pour explorer des manières créatives de marquer cet événement, tournons-nous maintenant vers des idées originales qui vous permettront de célébrer vos 3 ans de mariage avec éclat.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "958b394f9f698065",
+      "title": "3 ans de mariage : idées pour célébrer vos noces de Froment",
+      "url": "https://www.laveran-paris.com/blog/3-ans-de-mariage-signification-et-idees-cadeaux-pour-les-noces-de-froment-n67",
+      "summary": "Découvrez comment fêter vos 3 ans de mariage avec amour : noces de froment, idées cadeaux, bijoux, traditions et conseils pour une célébration inoubliable.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8c2bdbf39edca269",
+      "title": "3 ans de mariage : les noces de froment - Journal des Femmes",
+      "url": "https://www.journaldesfemmes.fr/mariage/anniversaire-de-mariage/2491440-3-ans-de-mariage-noces-de-froment/",
+      "summary": "Connaissez-vous le nom de noces qui célèbrent les 3 ans de mariage ? Il s'agit des noces de froment. Découvrez leur signification et les cadeaux que vous pouvez offrir à cette occasion.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d40b9374eb82cdd7",
+      "title": "Anniversaire de mariage : le calendrier des noces année par année !",
+      "url": "https://www.mariee.fr/organisation-mariage/fiancailles-et-tradition/anniversaire-de-mariage-le-calendrier-des-noces-annee-par-annee/",
+      "summary": "La symbolique des noces illustre la solidité croissante de l’union, des matières végétales fragiles aux pierres précieuses inaltérables. Un calendrier exhaustif de 1 à 100 ans permet de nommer et de célébrer chaque étape de votre vie commune.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c0460c2f1bd1756",
+      "title": "Anniversaire de mariage : liste des noces par année",
+      "url": "https://www.ephemeridedujour.com/anniversaire-mariage-liste-noces/",
+      "summary": "Chaque anniversaire de mariage porte un nom symbolique. On parle ainsi de noces de coton pour la première année, de noces de bois pour les 5 ans, de noces d’argent pour les 25 ans, de noces d’or pour les 50 ans ou encore de noces de diamant pour les 60 ans de mariage.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "03e63b23d7ce9b95",
+      "title": "Anniversaire de Mariage : Tableau des Noces de 1 à 100 ans",
+      "url": "https://www.cadeauparfait.fr/noces-mariage/",
+      "summary": "Liste complète des noces de mariage avec la matière associée : significations détaillées et idées cadeaux parfaites pour chaque anniversaire de mariage.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "54f85438cbfe8c3c",
+      "title": "Category:Central Intelligence Agency - WikiLeaks",
+      "url": "https://www.wikileaks.org/wiki/Category:Central_Intelligence_Agency",
+      "summary": "The Central Intelligence Agency (CIA) is a civilian intelligence agency of the United States government responsible for providing national security intelligence to senior United States policymakers. The CIA also engages in covert activities at the request of the President of the United States. Please see the [full Wikipedia article] for details.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e6f936b0088c8a2a",
+      "title": "Comment célébrer ses noces de froment ou 3 ans de",
+      "url": "https://lecoindejoelle.com/famille/mariage/noces-froment-3-ans-mariage",
+      "summary": "Voici quelques idées pour vous inspirer à l’occasion de cet anniversaire ! Le froment est en fait du blé tendre, une céréale qui symbolise l’abondance et la prospérité, mais aussi la vie et la fertilité, ce qui résonne également avec cette période du mariage.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ffff1f4a7820535e",
+      "title": "Leaked Files - WikiLeaks",
+      "url": "https://wikileaks.org/wiki/Leaked_Files",
+      "summary": "CIA report into shoring up Afghan war support in Western Europe, 11 Mar 2010 Update to over 40 billion euro in 28167 claims made against the Kaupthing Bank, 3 Mar 2010 U.S. Intelligence planned to destroy WikiLeaks, 18 Mar 2008 Turks & Caicos Islands government asks for US$85M credit line from FirstCaribbean, 28 Jan 2010",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "research_news_review",
+        "watching",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8f39782e7db61e0a",
+      "title": "NEAR (blockchain platform) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/NEAR_(blockchain_platform)",
+      "summary": "NEAR is a public blockchain platform that uses a proof-of-stake consensus mechanism and provides smart-contract functionality. Its native cryptocurrency is NEAR. It was founded in 2018 by Illia Polosukhin and Alexander Skidanov, with mainnet launching in 2020. [3] Designed to maintain decentralized applications and high-throughput transactions through a sharded architecture, NEAR gained ...",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3aba60e5c9e158e3",
+      "title": "Noces de froment : 30 idées et cadeaux pour fêter vos 3 ans de mariage",
+      "url": "https://www.cadeauclic.com/noces-de-froment-3-ans-de-mariage/",
+      "summary": "Noces de froment : découvrez 30 idées originales pour célébrer 3 ans de mariage avec des cadeaux et activités pensés autour du symbole du blé.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1754173f7412300d",
+      "title": "Texte 3 Ans de Mariage : Mots Tendres pour les Noces de Froment",
+      "url": "https://charme-bois.com/blogs/anniversaires-mariage/texte-3-ans-mariage",
+      "summary": "Les noces de froment célèbrent trois ans d’amour, de complicité et de croissance, à l’image d’un champ qui mûrit sous le soleil. Cet article propose des idées de messages, rituels et cadeaux symboliques pour marquer ce troisième anniversaire avec tendresse et créativité.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1c14afdc40c04776",
+      "title": "Vault 7: CIA Hacking Tools Revealed - WikiLeaks",
+      "url": "https://wikileaks.org/ciav7p1/",
+      "summary": "How did WikiLeaks obtain each part of \"Vault 7\"? Sources trust WikiLeaks to not reveal information that might help identify them. Isn't WikiLeaks worried that the CIA will act against its staff to stop the series? No. That would be certainly counter-productive. Has WikiLeaks already 'mined' all the best stories?",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "hack"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fe21260b7fae522f",
+      "title": "WikiLeaks",
+      "url": "https://wikileaks.org/",
+      "summary": "In order to use the WikiLeaks public submission system as detailed above you can download the Tor Browser Bundle, which is a Firefox-like browser available for Windows, Mac OS X and GNU/Linux and pre-configured to connect using the anonymising system Tor.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
@@ -75,68 +553,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e1d7bda885f4c31f",
-      "title": "Golden State Warriors - YouTube",
-      "url": "https://www.youtube.com/channel/UCeYc_OjHs3QNxIjti2whKzg",
-      "summary": "Official YouTube page of the Golden State Warriors. For full coverage of the team, visit www.warriors.com.",
+      "id": "4324db5cbce17f13",
+      "title": "WikiLeaks - CIA Director John Brennan emails",
+      "url": "https://wikileaks.org/cia-emails/Brennan-Group.html",
+      "summary": "(on 2015-10-26) CIA Director John Brennan emails",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f0301f54ca72b88e",
-      "title": "Golden State Warriors - YouTube",
-      "url": "https://www.youtube.com/@warriors",
-      "summary": "Official YouTube page of the Golden State Warriors. For full coverage of the team, visit www.warriors.com.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a16ec15817b0ce45",
-      "title": "Golden State Warriors 2025-26 NBA Regular Season Stats - ESPN",
-      "url": "https://www.espn.com/nba/team/stats/_/name/gs/golden-state-warriors",
-      "summary": "Full team stats for the 2025-26 Regular Season Golden State Warriors on ESPN. Includes team leaders in points, rebounds and assists.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -158,12 +580,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3ba89214da2099f1",
-      "title": "Golden State Warriors 2026-27 Regular Season NBA Schedule - ESPN",
-      "url": "https://www.espn.com/nba/team/schedule/_/name/gs/seasontype/2",
-      "summary": "ESPN has the full 2026-27 Golden State Warriors Regular Season NBA schedule. Includes game times, TV listings and ticket information for all Warriors games.",
+      "id": "fd67a89da786ef3e",
+      "title": "WikiLeaks - Government",
+      "url": "https://wikileaks.org/+-Government-+.html",
+      "summary": "Today, September 7th 2017, WikiLeaks publishes four secret documents from the Protego project of the CIA, along with 37 related manuals.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -185,12 +607,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "85bf7d4b676b75fe",
-      "title": "Golden State Warriors | History, Notable Players ...",
-      "url": "https://www.britannica.com/topic/Golden-State-Warriors",
-      "summary": "The Golden State Warriors are an American professional basketball team based in San Francisco that plays in the National Basketball Association. The Warriors have won six NBA championships and one Basketball Association of America title.",
+      "id": "6f90c0ef1fe30c34",
+      "title": "WikiLeaks - Intelligence",
+      "url": "https://wikileaks.org/+-Intelligence-+.html",
+      "summary": "Vault 7: BothanSpy Today, July 6th, WikiLeaks publishes documents from the BothanSpy and Gyrfalcon projects of the CIA, designed to intercept and exfiltrate SSH credentials.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -212,12 +634,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e14383869de5c9ed",
-      "title": "Golden State Warriors: News, Scores, Stats, Headlines, Injury ...",
-      "url": "https://www.nbcsports.com/nba/golden-state-warriors",
-      "summary": "Get all the most recent Warriors basketball player news, scores, stats, rumors, and more from NBC Sports.",
+      "id": "af579ea085132c99",
+      "title": "WikiLeaks - International Politics",
+      "url": "https://wikileaks.org/+-International-Politics-+.html",
+      "summary": "Vault 7: CIA Hacking Tools Revealed A series of leaks on the U.S. Central Intelligence Agency. Code-named \"Vault 7\" by WikiLeaks, it is the largest ever publication of confidential documents on the agency.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "hack"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f9041d4ae37f94e7",
+      "title": "WikiLeaks - Leaks",
+      "url": "https://wikileaks.org/-Leaks-.html",
+      "summary": "Vault 7: BothanSpy Today, July 6th, WikiLeaks publishes documents from the BothanSpy and Gyrfalcon projects of the CIA, designed to intercept and exfiltrate SSH credentials.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -239,10 +689,199 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6bc0879671ec13f3",
-      "title": "10 Days From Today",
-      "url": "https://www.daysfromdate.com/10-days-from-today",
-      "summary": "What date is 10 days from today? Use our free Days From Date calculator to add or subtract 10 days—plus weeks, months, or years—from any start date.",
+      "id": "a5fa14b070d38132",
+      "title": "WikiLeaks - Vault 7: Projects",
+      "url": "https://wikileaks.org/vault7/",
+      "summary": "Today, September 7th 2017, WikiLeaks publishes four secret documents from the Protego project of the CIA, along with 37 related documents (proprietary hardware/software manuals from Microchip Technology Inc.). The project was maintained between 2014 and 2015. Protego is not the \"usual\" malware development project like all previous publications by WikiLeaks in the Vault7 series. Indeed there is ...",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "593eaa808d50b2f4",
+      "title": "Acesso seguro ao Yahoo Mail em outro computador",
+      "url": "https://br.ajuda.yahoo.com/kb/SLN5283.html",
+      "summary": "Leia e responda seus e-mails de qualquer computador que deseja usar. Aprenda a ver seu Yahoo Mail em praticamente qualquer lugar e não arriscar sua segurança.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d0d29fa51eabac5",
+      "title": "Corrija problemas ao fazer login em sua conta do Yahoo",
+      "url": "https://br.ajuda.yahoo.com/kb/SLN2051.html",
+      "summary": "Se você está tendo problemas para fazer login em sua conta do Yahoo, não desista ainda! Saiba como identificar e corrigir problemas comuns de login, como problemas com sua senha e ID, bloqueios...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e778b5eee3510763",
+      "title": "Entrar ou sair do Yahoo | Yahoo Ajuda",
+      "url": "https://br.ajuda.yahoo.com/kb/SLN3407.html",
+      "summary": "Entre em sua conta do Yahoo, Rocketmail, ou Ymail de qualquer lugar e acesse seus serviços favoritos do Yahoo. Descubra como entrar e sair da sua conta.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a30e8578a1a9b2c6",
+      "title": "Entre no página inicial do Yahoo. | Yahoo Ajuda",
+      "url": "https://br.ajuda.yahoo.com/kb/SLN5193.html",
+      "summary": "Descubra como é fácil entrar no Yahoo com seu nome de usuário e senha.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dfa3b37676819c8e",
+      "title": "Fazer login - Entrar no Yahoo",
+      "url": "https://br.mail.yahoo.com/=",
+      "summary": "Entre na conta para acessar o melhor Yahoo Mail, notícias locais, nacionais e internacionais, finanças, esportes, música, cinema… Aproveite a Web ao máximo e viva mais a vida.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "162b33154aacce81",
+      "title": "Fazer login - Entrar no Yahoo",
+      "url": "https://br.mail.yahoo.com/&quot",
+      "summary": "Entre na conta para acessar o melhor Yahoo Mail, notícias locais, nacionais e internacionais, finanças, esportes, música, cinema… Aproveite a Web ao máximo e viva mais a vida.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a8045c5349cd4da2",
+      "title": "How to get Matilda parrot?, Taonga: The Island Farm Questions and Answers",
+      "url": "https://www.supercheats.com/taonga-the-island-farm/questions/402851/how-to-get-matilda-parrot",
+      "summary": "How to get Matilda parrot?, Taonga: The Island Farm Questions and answers Matilda the Parrot can only be obtained by purchasing the limited time offer. Current cost of the special bundle is $49.99 USD. In this bundle you get 2000 Energy, 5000 Diamonds and Matilda. It will pop-up now and then in the game AFTER you have purchased Gregory the Parrot.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -266,10 +905,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c63f63e4728cc0e7",
-      "title": "10 Days From Today",
-      "url": "https://calculator.today/10-days-from-today",
-      "summary": "This calculator helps you instantly find what date falls exactly 10 days from today. It also provides useful calendar insights like the day of the week, month number, and more.",
+      "id": "e58e9042c45f7ebd",
+      "title": "How to uninstall Taonga, Taonga: The Island Farm Questions and Answers",
+      "url": "https://www.supercheats.com/taonga-the-island-farm/questions/410241/how-to-uninstall-taonga",
+      "summary": "For more questions for Taonga: The Island Farm check out the question page where you can search or ask your own question.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -293,10 +932,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dcd33cd4707d38e2",
-      "title": "10 Days from Today - Date Calculator",
-      "url": "https://timedatecalc.com/10-days-from-today",
-      "summary": "To get started, enter the start date to which you need to add/subtract days (today's date is initially displayed). Use the calendar for more convenient date selection.",
+      "id": "97444fe6369b7b96",
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://mail.yahoo.com/;.intl=br&.lang=pt-BR",
+      "summary": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get more out of the web, you get more out of life.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "03f1d542d13fcbbe",
+      "title": "Mail | Yahoo Mobile BR",
+      "url": "https://br.mobile.yahoo.com/mail",
+      "summary": "Acesse todas as suas contas de e-mail em um só lugar, compartilhe fotos e GIFs animados facilmente e experimente a busca ultrarrápida. Além tudo isso, você nunca mais precisará se preocupar com...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9789ba7785c36b47",
+      "title": "Questions and Answers for Taonga: The Island Farm",
+      "url": "https://www.supercheats.com/taonga-the-island-farm/questions/",
+      "summary": "Find all our Taonga: The Island Farm Questions and Answers for Android, iPhone/iPad, PC. The FAQ for Taonga: The Island Farm plus great forums and game help.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -320,37 +1013,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "faf88fa3d9b98cd5",
-      "title": "Asakusa - Tokyo Travel - japan-guide.com",
-      "url": "https://www.japan-guide.com/e/e3004.html",
-      "summary": "Visitor guide for Asakusa, a district of Tokyo and the center of Tokyo's shitamachi (low town or old town).",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "04f7f7c65583ad1a",
-      "title": "Days Calculator",
-      "url": "https://datetimecalculator.net/days-calculator",
-      "summary": "To use the Days Calculator, you just need to pick first the operation you want to use - add days, subtract days or get the days between two dates. You just need to enter the values on corresponding inputs and click on Calculate button. Here's a more detailed step by step guide.",
+      "id": "50316c25b96afefa",
+      "title": "Taonga: The Island Farm Answers for Facebook - Chapter Cheats",
+      "url": "https://www.chaptercheats.com/qna/facebook/485604/taonga-the-island-farm-answers/219783",
+      "summary": "How do you get more Energy for free.., Taonga: The Island Farm Answers for the Facebook",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -374,10 +1040,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f7c6e152cde4ba0f",
-      "title": "Days From Date Calculator",
-      "url": "https://www.daysfromdate.com/",
-      "summary": "This free online tool adds or subtracts days, weeks, months, years, and optional hours, minutes, and seconds from any start date so you can quickly find a future or past date.",
+      "id": "e6ec2646abea2264",
+      "title": "Taonga: The Island Farm Cheats and Tips",
+      "url": "https://www.supercheats.com/taonga-the-island-farm-cheats-tips",
+      "summary": "Latest and best Taonga: The Island Farm cheats and tips. Also cheats and codes for this game on other platforms. Discover game help, ask questions, find answers and connect with other players of Taonga: The Island Farm.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -401,145 +1067,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7a7be3c71f7452dc",
-      "title": "Koishikawa Korakuen - Tokyo Travel - japan-guide.com",
-      "url": "https://www.japan-guide.com/e/e3034_003.html",
-      "summary": "Visitor guide for Koishikawa Korakuen, a traditional Japanese garden in central Tokyo.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "156bab0d46280b3f",
-      "title": "Kyoto Travel Guide - What to do in Kyoto City",
-      "url": "https://www.japan-guide.com/e/e2158.html",
-      "summary": "Kyoto (京都, Kyōto) served as Japan's capital and the emperor 's residence from 794 until 1868. It is one of the country's ten largest cities with 1.5 million inhabitants and a modern face. Over the centuries, Kyoto was destroyed by many wars and fires, but due to its exceptional historic value, the city was dropped from the list of target cities for the atomic bomb and escaped destruction ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f1d3d1902ee1e141",
-      "title": "Osaka Travel Guide - What to do in Osaka City",
-      "url": "https://www.japan-guide.com/e/e2157.html",
-      "summary": "Osaka (大阪, Ōsaka) is Japan's second largest metropolitan area after Tokyo. It has been the economic powerhouse of the Kansai Region for many centuries. Osaka was formerly known as Naniwa. Before the Nara Period, when the capital used to be moved with the reign of each new emperor, Naniwa was once Japan's capital city, the first one ever known. In the 16th century, Toyotomi Hideyoshi chose ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab3e35906a6825ec",
-      "title": "Sensoji (Asakusa Kannon Temple) - Tokyo Travel",
-      "url": "https://www.japan-guide.com/e/e3001.html",
-      "summary": "Sensoji (浅草寺, Sensōji, also known as Asakusa Kannon Temple) is a Buddhist temple located in Asakusa. It is one of Tokyo 's most colorful and popular temples. The legend says that in the year 628, two brothers fished a statue of Kannon, the goddess of mercy, out of the Sumida River, and even though they put the statue back into the river, it always returned to them. Consequently, Sensoji ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "df04ec903fbdea51",
-      "title": "Sumida Hokusai Museum - Tokyo Travel - japan-guide.com",
-      "url": "https://www.japan-guide.com/e/e3054_hokusai.html",
-      "summary": "The Sumida Hokusai Museum (すみだ北斎美術館, Sumida Hokusai Bijutsukan) is a museum dedicated to the ukiyo-e artist Katsushika Hokusai, commonly referred to as Hokusai. His most well-known works include The Great Wave off Kanagawa and Red Fuji, which are a couple of prints from the collection Thirty-Six Views of Mount Fuji. The museum was opened in November 2016 in Tokyo 's Sumida Ward ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0ddfe58571aef407",
-      "title": "Time and Date Calculator | Days Between Dates, Add & Subtract",
-      "url": "https://timeanddatecalculator.com/",
-      "summary": "Time and Date Calculator Find the exact difference between two dates or times, or add and subtract days, weeks, months, and years from a date. It gets leap years, uneven months, and daylight saving changes right, so you don't have to.",
+      "id": "22ede38c0c8781aa",
+      "title": "Taonga: The Island Farm Cheats for Facebook",
+      "url": "https://www.chaptercheats.com/cheats/facebook/485604/taonga-the-island-farm-cheat-codes",
+      "summary": "Cheats, Tips, Tricks, Walkthroughs and Secrets for Taonga: The Island Farm on the Facebook, with a game help system for those that are stuck",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -563,10 +1094,145 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a2e41de9aa1fe0eb",
-      "title": "Tokyo City Guide - What to do in Tokyo",
-      "url": "https://www.japan-guide.com/e/e2164.html",
-      "summary": "Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous metropolis. It is also one of Japan's 47 prefectures, consisting of 23 central city wards and multiple cities, towns and villages west of the city center. The Izu and Ogasawara Islands are also part of Tokyo. Prior to 1868, Tokyo was known as Edo. Previously a small castle town, Edo became Japan's political center in 1603 ...",
+      "id": "44d82489dfb3f84e",
+      "title": "Taonga: The Island Farm for Facebook - Chapter Cheats",
+      "url": "https://www.chaptercheats.com/game/facebook/485604/taonga-the-island-farm",
+      "summary": "This game called Taonga: The Island Farm is a virtual farm simulator that is offered on Facebook. Surprise someplace in the ocean is Taonga, an unique tropical island that has mysterous ruins and awesome landscapes. Your function is to build your own farm there and harvest resources to fullfill orders so that you have the ability to build up funds to establish the island. You will require to ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "954a277d224b991d",
+      "title": "Taonga: The Island Farm Questions Q&A for Facebook",
+      "url": "https://www.chaptercheats.com/qna/facebook/485604/taonga-the-island-farm-answers",
+      "summary": "Ask your Taonga: The Island Farm Question for Facebook and get Answers from other Gamers.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d037948da7572731",
+      "title": "What is a Project? Definition, Types, and Examples [2026]",
+      "url": "https://monday.com/blog/project-management/so-what-is-a-project-everything-you-should-know/",
+      "summary": "\"What is a project\" is a question that often comes up in project management, and defining the term is important for understanding how to succeed.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7c6a61031226a57d",
+      "title": "Where do I find white marble, Taonga: The Island Farm Questions and Answers",
+      "url": "https://www.supercheats.com/taonga-the-island-farm/questions/400598/where-do-i-find-white-marble",
+      "summary": "For more questions for Taonga: The Island Farm check out the question page where you can search or ask your own question.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3235dddba061c3ae",
+      "title": "Where is the bamboo, Taonga: The Island Farm Questions and Answers",
+      "url": "https://www.supercheats.com/taonga-the-island-farm/questions/415759/where-is-the-bamboo",
+      "summary": "Bamboo is plants that are on your island. There are more towards the bridges. If you've cut them all down, they are something on other islands, usually taking about 30 or 60 energy to cut down. They look like sugarcane from minecraft, or like light green stick clumps with little leaves.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3f4a96b327f7f81a",
+      "title": "Yahoo Mail",
+      "url": "https://br.mail.yahoo.com/d",
+      "summary": "Nosso destino é uma caixa de entrada organizada e atualizada. Entre e comece a explorar todas as ferramentas gratuitas de organização de e-mail. Confira novos temas, envie GIFs, encontre qualquer...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -590,10 +1256,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b831b96f0e331bf4",
-      "title": "Tokyo Imperial Palace - Tokyo Travel - japan-guide.com",
-      "url": "https://www.japan-guide.com/e/e3017.html",
-      "summary": "The current Imperial Palace (皇居, Kōkyo) is located on the former site of Edo Castle, a large park area surrounded by moats and massive stone walls in the center of Tokyo, a short walk from Tokyo Station. It is the residence of Japan's Imperial Family. Edo Castle used to be the seat of the Tokugawa shogun who ruled Japan from 1603 until 1867. In 1868, the shogunate was overthrown, and the ...",
+      "id": "c12f6b72788f28bc",
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://br.mail.yahoo.com/",
+      "summary": "Yes, Yahoo Mail is always free to sign up for and use. We also offer a variety of optional plans with additional features, so you can choose the one that best fits your needs.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -617,107 +1283,50 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bfd6ad7aed7de0ed",
-      "title": "Translate - Google",
-      "url": "https://translate.google.com.ng/m",
-      "summary": "Google home Send feedback Privacy and terms Switch to full site",
+      "id": "707325844404a073",
+      "title": "20 Things to Know Before Visiting Edinburgh - Lonely Planet",
+      "url": "https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-edinburgh",
+      "summary": "Discover what you need to know to get more from a trip to Edinburgh, from the best times to go to the local etiquette.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d18513da02ec8d90",
+      "title": "2025 Kia Cars for Sale - Kelley Blue Book",
+      "url": "https://www.kbb.com/cars-for-sale/all/2025/kia",
+      "summary": "Shop, watch video walkarounds and compare prices on 2025 Kia Cars listings. See Kelley Blue Book pricing to get the best deal. Search from 10292 Kia cars for sale, including a Certified 2025 Kia ...",
       "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "privacy"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fd7481a92eccf00e",
-      "title": "What day is 10 days from today? - 7calendar",
-      "url": "https://7calendar.com/en/calculator/what-date/is-10-days-from-today/",
-      "summary": "For example, to find out what date will be 10 days from now, enter 10 in the appropriate field, select the units of measurement “days”, the period “from”, select today in the calendar and click the “Calculate” button.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "383a17370cb5cc65",
-      "title": "What is 10 Days From Today? - Calculatio",
-      "url": "https://calculat.io/en/date/count/10--days--from--today",
-      "summary": "To use the calculator, simply enter the desired quantity, select the period you want to calculate (days, weeks, months, or years), and choose the counting direction (from or before). Once you've entered all the necessary information, hit the 'Calculate' button to get the results.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7939116d77bf88eb",
-      "title": "What is TOKYOβ? - If you're looking for share house, TOKYO＜β＞ is ...",
-      "url": "https://www.tokyobeta.jp/en/about/",
-      "summary": "Safe and Affordable Living in Tokyo for Singles TOKYOβ is a share house in Tokyo where you can live independently, comfortably, and at an affordable price. With furniture, appliances, and utilities all included in the rent, you can start living here light — just one suitcase is enough.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
+        "video",
         "retail"
       ],
-      "primary_type": "tool",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -727,39 +1336,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "52a9e2a009bfd84a",
-      "title": "シェアハウスを探すならTOKYOβ",
-      "url": "https://www.tokyobeta.jp/",
-      "summary": "シェアハウスを東京で探すならTOKYOβ。安心・安全な物件が東京都内に約1,200拠点。",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "955a40ffbb37549c",
-      "title": "12 aziende energetiche italiane: opportunità lavorative | Indeed.com Italia",
-      "url": "https://it.indeed.com/guida-alla-carriera/trovare-lavoro/aziende-energetiche-italiane",
-      "summary": "Scopri come puoi lavorare nelle aziende energetiche italiane e quali sono le loro strategie per promuovere un futuro energetico sostenibile e responsabile.",
+      "id": "91cf77b8a5a62889",
+      "title": "About Us - Carter Volkswagen - Seattle, Washington, 98107",
+      "url": "https://www.cartervw.com/about-us/",
+      "summary": "As a premier Washington Volkswagen dealer, we have a huge selection of new and used vehicles from which to choose. Carter Volkswagen online and offline customers enjoy vehicle specials every day.",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -780,324 +1362,142 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5a58d48a05fde5ad",
-      "title": "12 Facts About Opossums: America’s Only Marsupial",
-      "url": "https://www.worldanimalprotection.us/latest/blogs/12-facts-about-opossums-truly-misunderstood-wild-animals/",
-      "summary": "Both possum and opossum correctly refer to the Virginia opossum frequently seen in North America as the “o” tends to be silent in everyday speech. An opossum (left) and a possum (right).",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "123240cf686997b9",
-      "title": "12 Pork Dishes That Are Too Good to Save for Special Occasions",
-      "url": "https://reneenicoleskitchen.com/12-pork-dishes/",
-      "summary": "There’s no reason to wait for a special occasion to cook a great pork dish. These 12 recipes bring big flavor, simple ingredients, and easy preparation to any day of the week.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "86aead114f2cafee",
-      "title": "23 Easy Pork Dinner Recipes - Eatwell101",
-      "url": "https://www.eatwell101.com/best-pork-dinner-recipes",
-      "summary": "This roundup features our best pork recipes, including Instant Pot pork chops, slow cooker pork belly, and roasted pork tenderloins. No matter which cut of pork you serve these recipes are perfect for any night of the week.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7e50636f102e15a0",
-      "title": "23 Pork Dishes That Will Have Everyone at the Table Raving",
-      "url": "https://thehungrygourmet.com/23-pork-dishes-that-will-have-everyone-at-the-table-raving/",
-      "summary": "Pork is the ultimate crowd-pleaser—juicy, flavorful, and incredibly versatile. These 23 recipes highlight everything from quick weeknight dinners to slow-cooked masterpieces.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5fd094bdbecd24fa",
-      "title": "35 Places to Visit Near Chennai - 2026 (Updated With Distance)",
-      "url": "https://www.thrillophilia.com/weekend-getaways-from-chennai",
-      "summary": "There are many places to visit near Chennai, multiple destinations to choose from, such as the jaw-dropping architectural beauties, scenic vistas, wildlife sanctuaries, the magnificent forts of Vellore, and many more.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f0d69224376b133",
-      "title": "37 Best Places to Visit in Chennai, Things to Do & Sightseeing",
-      "url": "https://www.trawell.in/tamilnadu/chennai/places-to-visit-things-to-do",
-      "summary": "Best tourist places to visit in Chennai, Things to do in & around Chennai, Tamilnadu - Explore top sightseeing attractions in Chennai like Waterfalls, Lakes, Heritage & Pilgrimage sites along with popular activities like Trekking, Wildlife Safari, Boating & Camping.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ee5e35a47d9c4ed7",
-      "title": "44 Best Tourist Places to Visit in Tamil Nadu",
-      "url": "https://www.trawell.in/tamilnadu/best-places-to-visit",
-      "summary": "Discover best tourist places to visit in Tamil Nadu - travel guide, sightseeing attractions with itinerary, trip duration, weather, best season & tourist map. Tamilnadu is home for historical, heritage & pilgrimage sites, hill stations, waterfalls & beaches.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5fe37a262b259cb1",
-      "title": "50 Best Pork Recipes & Ideas | Food Network",
-      "url": "https://www.foodnetwork.com/recipes/photos/pork-recipes",
-      "summary": "Whether you've got pork chops, pork tenderloin, pork shoulder or another cut, these pork recipes from Food Network are sure to please.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e1230dc7e5a32772",
-      "title": "50+ Best Pork Recipes & Dinner Ideas - Parade",
-      "url": "https://parade.com/1066391/parade/pork-recipes/",
-      "summary": "From pork chops, beer-braised ribs, to pork tenderloin, here’s all the meaty goodness you need. Great pork recipes often take a backseat to other meal mainstays like beef and chicken. But...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aae812e2163e1db6",
-      "title": "52 Easy Pork Recipes to Make for Dinner Tonight - The Kitchn",
-      "url": "https://www.thekitchn.com/pork-recipes-23087340",
-      "summary": "From slow cooker pork dinners to saucy skillets to easy-as-can-be pork chops, and quick-cooking tenderloins, here are 52 pork recipes to try for dinner tonight.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "97e58db5959590af",
-      "title": "57 Pork Skillet Dinner Recipes to Try This Week | Taste of Home",
-      "url": "https://www.tasteofhome.com/collection/skillet-pork-recipes/",
-      "summary": "These recipes for pork skillet dinner only require one pan, so that you can enjoy a satisfying meal without the hassle of a big clean-up.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f3d5088b3957f9ff",
-      "title": "85 Pork Dinner Recipes for Any Day of the Week | Taste of Home",
-      "url": "https://www.tasteofhome.com/collection/pork-dinner-recipes/",
-      "summary": "Don't fret over what to make for dinner. We've got you covered with 90 pork dinner recipes to choose from.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ecb11de1053299f4",
-      "title": "9,895 Toronto Real Estate MLS® Listings & Houses for Sale | REALTOR.ca",
-      "url": "https://www.realtor.ca/on/toronto/real-estate",
-      "summary": "Find 9,895 houses for sale in Toronto, ON. Visit REALTOR.ca to see all the Toronto, ON real estate listings on the MLS® Systems today! Prices starting at $1 💰",
+      "id": "daeca709c66e9929",
+      "title": "Android Apps on Google Play",
+      "url": "https://play.google.com/",
+      "summary": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your devices.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fab77b6260b42a65",
+      "title": "Aplicaciones de Android en Google Play",
+      "url": "https://play.google.com/web/store/apps?hl=es",
+      "summary": "Disfruta de millones de revistas, libros, películas, canciones, juegos y aplicaciones de Android recientes y mucho más estés donde estés y en cualquier dispositivo.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "59412426be408228",
+      "title": "App Android su Google Play",
+      "url": "https://play.google.com/store/apps?hl=it",
+      "summary": "Utilizza milioni di app Android, giochi, musica, film, programmi TV, libri, riviste più recenti e molto altro su tutti i tuoi dispositivi, ovunque e in qualsiasi momento.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ebd579ec014e3726",
+      "title": "Cameras & Drones - Costco Wholesale",
+      "url": "https://www.costco.com/cameras-camcorders.html",
+      "summary": "Browse the best selection of cameras, camcorders, and drones including SLR digital cameras, camera accessories, and more! Shop Costco.com for high quality at low prices.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f9926b771f5f748a",
+      "title": "Car Rental - PRICELINE - Priceline Coupons, Hotwire Hotels Revealed ...",
+      "url": "https://www.betterbidding.com/index.php?showtopic=83865",
+      "summary": "Do you know if it's possible to drive the rental car (using Priceline) across the US border to Canada?I'm planning to bid for car rental out of NY airport and drive it to Toronto and Montreal. I've done this in the past with a conventional car rental company such as Alamo or Budget.I would think ...",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eab534987590c8a5",
+      "title": "Clearance Specials | Ourisman Chantilly Kia",
+      "url": "https://www.ourismankia.com/clearance-specials.htm",
+      "summary": "Browse our inventory of clearance specials for sale at Ourisman Chantilly Kia.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1118,12 +1518,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "73aa496c8d7723d9",
-      "title": "Aziende di Energia più Grandi in Italia 2023 – 2024",
-      "url": "https://www.economia-italia.com/aziende-di-energia-italiane-piu-grandi",
-      "summary": "Aziende di Energia più Grandi in Italia 1. ENEL ENEL è una delle maggiori compagnie energetiche a livello mondiale e il principale operatore in Italia in termini di potenza installata e di capitalizzazione di mercato. Ecco una panoramica generale su ENEL, basata sui dati disponibili fino al 2021: Origini: ENEL (Ente Nazionale per l’Energia Elettrica) è stata fondata nel 1962 in Italia ...",
+      "id": "2a24d77b3a9c0132",
+      "title": "Disabling browser caching for all browsers from ASP.NET",
+      "url": "https://stackoverflow.com/questions/914027/disabling-browser-caching-for-all-browsers-from-asp-net",
+      "summary": "Apparently someone has discovered that using SetCacheability with NoCache also disables the ASP.NET output cache (server-side cache). They suggest to use the ServerAndNoCache option instead.",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1144,12 +1544,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "501749300b1d818a",
-      "title": "Azioni settore Energia in Italia - Investing.com",
-      "url": "https://it.investing.com/stock-screener/italy/energy",
-      "summary": "Scopri ora il vasto elenco di azioni del settore Energia in Italia grazie al nostro screener. Trova facilmente le aziende più importanti, cerca, filtra e aggiungi alla watchlist.",
+      "id": "ebdd3f011bee14ca",
+      "title": "Docker container error: unknown flag: --build - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/79035677/docker-container-error-unknown-flag-build",
+      "summary": "After an update of Docker Desktop (on windows 11) from 4.34.0 4.34.2, trying to run: docker compose up --build results in this error: unknown flag: --build Why is this happening?",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1170,10 +1570,114 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b2db624e6692d05f",
-      "title": "Best of IFA 2026: We found the 26 top new gadgets",
-      "url": "https://www.tomsguide.com/tech-events/best-of-ifa-2026-we-found-the-26-top-new-gadgets",
-      "summary": "The official Tom’s Guide Best of IFA 2026 Awards: From the Acer DualPlay Mini and Nvidia RTX Spark to the Lenovo Vibe, here are the 26 best gadgets of the show.",
+      "id": "6acd73883cb3dbe1",
+      "title": "Google Play",
+      "url": "https://play.google.com/store/apps/collection/tophome?hl=es",
+      "summary": "Disfruta de millones de revistas, libros, películas, canciones, juegos y aplicaciones de Android recientes y mucho más estés donde estés y en cualquier dispositivo.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "47f9a5525fa7745d",
+      "title": "Is there a tag to turn off caching in all browsers?",
+      "url": "https://stackoverflow.com/questions/1341089/is-there-a-meta-tag-to-turn-off-caching-in-all-browsers",
+      "summary": "But I also read that this doesn't work in some versions of IE. Are there any set of tags that will turn off cache in all browsers?",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "708ed253018237d1",
+      "title": "Kia Clearance Sale 2025: Best Deals on New SUVs - accio.com",
+      "url": "https://www.accio.com/plp/kia-clearance-sale-2025",
+      "summary": "Find the best Kia clearance sale 2025 deals on new and used SUVs. Explore low prices, top features, and verified suppliers. Click to discover affordable options now!",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d31cfa6d6e2802f3",
+      "title": "Kia Closeout Sales Event | Lancaster Kia Deals",
+      "url": "https://www.lancastercountykia.com/new-inventory/kia/closeout-sales-event.htm",
+      "summary": "Kia End of Year Closeout Sale - Remaining 2025 Inventory Now is the perfect time to shop our Kia End of Year Closeout Sale at Lancaster Kia. We're offering exceptional value on remaining 2025 Kia SUVs, giving drivers from York, PA, to Oxford a chance to upgrade at an affordable price. The Kia lineup combines premium technology, lively performance, and assured reliability, all at pricing ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d53f73fc77d1a6e0",
+      "title": "Lawn Fertilizer | IFA",
+      "url": "https://www.ifa.coop/shop/lawn-garden/fertilizers/lawn-fertilizer",
+      "summary": "Lawn Fertilizer, After 90 years, Intermountain Farmers Association has created a history of agriculture excellence. We are located in five states.",
       "discovery_channel": "broad_web",
       "query": "IFA 2026 smart glasses; IFA smart glasses",
       "source": "Bing web RSS",
@@ -1196,324 +1700,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "eadc9e3f9e8bb93d",
-      "title": "Best Places To Visit In Tamil Nadu During Summer",
-      "url": "https://www.tamilnadutourism.com/blog/best-places-to-visit-in-tamil-nadu-during-summer/",
-      "summary": "Mudumalai National Park is one of the best places to visit in Tamil Nadu during summer for wildlife enthusiasts and bird lovers. It is the perfect time to spot wild animals near water sources as they come out from their habitat to quench their thirst during the hot season.",
+      "id": "1a4caeff263404ef",
+      "title": "Limited Time 2025 Kia Clearance Sale - Consumer Scoops",
+      "url": "https://consumerscoops.com/unmissable-2025-kia-clearance-sale/",
+      "summary": "The 2025 Kia Clearance Sale is a fantastic opportunity for those looking to purchase a new vehicle with significant savings. By clearing out current inventory to make way for upcoming models, Kia dealerships across the country offer irresistible deals, making it the perfect time to snag a new car.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "36442cc873a85dfb",
-      "title": "Cool Places Near Chennai to Visit in Summer - exoticamp.com",
-      "url": "https://www.exoticamp.com/blogs/cool-places-near-chennai-to-visit-in-summer",
-      "summary": "Here, we'll walk you through some of the cool places near Chennai to visit in summer. Dive in, then! 1. Escape the Heat in Yelagiri. If you’re looking for a quick escape without a 10-hour drive, Yelagiri is your best bet. It’s one of those notable places that doesn’t feel overly commercialized.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "34e8afad2f39848f",
-      "title": "Fornitori Energia Elettrica e Gas: quale scegliere?",
-      "url": "https://energia-luce.it/elenco-fornitori/",
-      "summary": "Elenco Fornitori Energia Elettrica e Gas: scopri quali sono tutte le compagnie che forniscono energia in Italia.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ee90ff251afebf5",
-      "title": "I giganti dell’energia in cima alla classifica delle aziende italiane ...",
-      "url": "https://forbes.it/2025/11/13/piu-grandi-azeinde-italiane-fatturato-comandano-eni-enel",
-      "summary": "I fatti chiave Eni, Enel e Gse guidano la classifica 2024 delle principali aziende italiane, confermando il ruolo dominante dei gruppi energetici pubblici. Quanto alla manifattura, solo Stellantis, Leonardo e Prysmian resistono nella parte alta della classifica, con un peso ridotto rispetto al passato.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "132dc455b373df8d",
-      "title": "Imprese Italiane: Top Aziende per Fatturato e Registro",
-      "url": "https://trendviva.it/tecnologia/imprese-italiane-top-aziende-fatturato-registro/",
-      "summary": "Il Gestore dei Mercati Energetici ha superato Enel ed Eni nella classifica 2024 con 40,5 miliardi € di fatturato, e il settore energia domina la top 10 con otto aziende su dieci. Questa guida raccoglie le classifiche ufficiali e ti spiega come accedere gratuitamente ai dati del Registro Imprese per verificare qualsiasi azienda. Numero totale […]",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "247face3c14efc75",
-      "title": "Inscriptions immobilières au Canada : maisons, copropriétés, terrains ...",
-      "url": "https://www.realtor.ca/fr",
-      "summary": "Trouvez votre prochaine propriété résidentielle ou commerciale sur REALTOR.ca, le site Web immobilier le plus important au Canada. Notre base de données exhaustive d’inscriptions immobilières vous permettra de trouver ce que vous cherchez en un tour de main!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8bf6409ec072bc0c",
-      "title": "La classifica delle prime 300 aziende utility nel 2024",
-      "url": "https://www.monitoraitalia.it/la-classifica-delle-prime-300-aziende-utility-nel-2024/",
-      "summary": "La classifica delle prime 300 aziende italiane del comparto utility è stata redatta in ordine decrescente di valore della produzione 2023, e riporta anche la variazione percentuale con il 2022.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "832fae49f4b44303",
-      "title": "Le 15 principali compagnie elettriche in Italia - Money.it",
-      "url": "https://www.money.it/Le-15-principali-compagnie-elettriche-in-Italia",
-      "summary": "Scopriamo quali sono le 15 principali compagnie elettriche in Italia, con soluzioni su misura per le esigenze di tutti i tipi di clientela, business e consumer.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7b67c0b6d7194fff",
-      "title": "Le aziende italiane che usano più energie rinnovabili, le migliori ...",
-      "url": "https://www.businessonline.it/articoli/le-aziende-italiane-che-usano-piu-energie-rinnovabili-le-migliori-secondo-classifiche-aggiornate.html",
-      "summary": "Le aziende italiane che usano più energie rinnovabili, le migliori secondo classifiche aggiornate 2024 Le energie rinnovabili includono solare, eolico, geotermico, idroelettrico, bioenergie.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5479bdebff39ece5",
-      "title": "List of pork dishes - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/List_of_pork_dishes",
-      "summary": "Pork is the culinary name for meat from the domestic pig (Sus domesticus). It is one of the most commonly consumed meats worldwide, [1] with evidence of pig husbandry dating back to 5000 BC. Pork is eaten both freshly cooked and preserved.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bd9c205102d510ad",
-      "title": "Migliori Aziende Italiane Settore Energia; Classifica per Fatturato",
-      "url": "https://www.economia-italia.com/migliori-aziende-italiane-settore-energia-classifica",
-      "summary": "L’Italia ha molte aziende energetiche e molte di eccellenza sul campo manufatturiero, un tempo ne aveva anche nel settore energetico, ma parliamo degli anni 50 e 60, recentemente con la liberalizzazione del mercato dell’energia e della rivoluzione delle fonti energetiche tutto il settore dell ...",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6829f4ac5e592529",
-      "title": "MLS® & Real Estate Map | REALTOR.ca",
-      "url": "https://www.realtor.ca/map",
-      "summary": "Search for residential and commercial properties on REALTOR.ca using the map.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8a72de3213a8841e",
-      "title": "Ontario Real Estate & Houses for Sale | REALTOR.ca",
-      "url": "https://www.realtor.ca/ontario/real-estate",
-      "summary": "Visit REALTOR.ca to see all the Ontario real estate listings on the MLS® Systems today! Find houses for sale, condos, land and much more!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1534,12 +1726,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d7cabf3cb7b1b6b8",
-      "title": "OpenTalk — Talk to Strangers, Free Random Video & Text Chat",
-      "url": "https://opentalk.club/",
-      "summary": "OpenTalk lets you talk to strangers with free random video and text chat. No signup, instant matching, active moderation, and mobile-friendly chat in any browser.",
+      "id": "76d51875d3263f14",
+      "title": "Local Inventory Search | Kia",
+      "url": "https://www.kia.com/us/en/inventory/landing",
+      "summary": "Check your local Kia dealership inventory for the right SUV, sedan, hybrid, EV, crossover or sports sedan that you are looking to see. Our tool makes it easy to get the most up to date inventory information.",
       "discovery_channel": "broad_web",
-      "query": "open source smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1548,242 +1740,7 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "37b9e20447669988",
-      "title": "Opossum - Description, Habitat, Image, Diet, and Interesting ...",
-      "url": "https://animals.net/opossum/",
-      "summary": "Prepare to delve into the world of the opossum, uncovering its secrets, dispelling myths, and gaining a newfound appreciation for North America’s only native marsupial. The opossum, specifically the Virginia Opossum (Didelphis virginiana), is a truly distinctive mammal.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6f4ec398b35c930f",
-      "title": "Opossum - Types, Size, Habitat, Diet, Anatomy, Lifespan ...",
-      "url": "https://animalfact.com/opossum/",
-      "summary": "What are opossums. Are they dangerous. Where & how long do they live. What do they eat. Learn their size, skeleton, predators, sounds, & their differences with possum.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c2e0ae542517db90",
-      "title": "Opossum - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Opossum",
-      "summary": "Opossums originated in South America and entered North America in the Great American Interchange following the connection of North and South America in the late Cenozoic. The Virginia opossum is the only species found in the United States and Canada.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "79e68e85bf240f51",
-      "title": "Pork Recipes - RecipeTin Eats",
-      "url": "https://www.recipetineats.com/category/pork-recipes/",
-      "summary": "From a Roast with ultra crispy crackling to sticky Baked Chops, to a great Marinade for Chops, if you're looking for pork recipes, then you've certainly come to the right place!",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5fc1dbd4e35991c7",
-      "title": "Possum - Description, Habitat, Image, Diet, and Interesting Facts",
-      "url": "https://animals.net/possum/",
-      "summary": "Often mistaken for rodents, possums are a fascinating group of marsupials with a surprisingly rich history and ecological importance. These adaptable creatures inhabit diverse environments and play crucial roles in maintaining healthy ecosystems.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e3cef7721775903",
-      "title": "Possum - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Possum",
-      "summary": "This disambiguation page lists articles associated with the title Possum. If an internal link incorrectly led you here, you may wish to change the link to point directly to the intended article.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "664ccf18e464ff5f",
-      "title": "Possum vs. Opossum: What's The Real Difference? - Bob Vila",
-      "url": "https://www.bobvila.com/articles/possum-vs-opossum/",
-      "summary": "The name of one of the most widespread possum species–the common brushtail possum–highlights this feature. An opossum, on the other hand, can be recognized by its signature bare tail.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f74c0c4eabeef49",
-      "title": "Real Estate Listings in Canada: houses, condos, land, property | REALTOR.ca",
-      "url": "https://www.realtor.ca/",
-      "summary": "Find your next residential or commercial property with Canada's largest real estate website - REALTOR.ca. Our complete database of real estate listings will make finding your next place easy!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cae03d0950cc0fc9",
-      "title": "REALTOR.ca",
-      "url": "https://www.realtor.ca/mls",
-      "summary": "REALTOR.ca is Canada’s most popular and trusted real estate platform displaying residential and commercial listings from REALTORS ® across the country. It is important to note that REALTOR.ca is not an MLS® System. It is an advertising website created to give REALTORS ® across Canada greater listing exposure to a national and international audience.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "retail"
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1795,38 +1752,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a735e03fca671a0e",
-      "title": "REALTOR.ca Local Insights",
-      "url": "https://insights.realtor.ca/",
-      "summary": "REALTOR.ca Local Insights Discover what REALTOR.ca visitors are looking for in the areas you care about. Filter by city below to see how REALTOR.ca visitors across Canada are using REALTOR.ca, including what keywords they search for, their top search filters, demographic information and much more.",
+      "id": "b8691e67db5caaf0",
+      "title": "New 2025 Kia Sorento for Sale Near Me - Autotrader",
+      "url": "https://www.autotrader.com/cars-for-sale/new-cars/2025/kia/sorento",
+      "summary": "Test drive New 2025 Kia Sorento at home from the top dealers in your area. Search from 265 New Kia Sorento cars for sale, including a 2025 Kia Sorento EX, a 2025 Kia Sorento S, and a 2025 Kia Sorento SX ranging in price from $27,695 to $56,769.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4a44f123bfc49653",
-      "title": "Social Commerce in 2026 (How It’s Reshaping Ecommerce)",
-      "url": "https://www.bigcommerce.com/articles/omnichannel-retail/social-commerce/",
-      "summary": "Social commerce is changing the way we shop. Explore key trends, platforms, and strategies to leverage this growing ecommerce channel.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1847,12 +1778,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "48bd44aa7e6bbf10",
-      "title": "Systèmes MLS® et carte d’inscriptions immobilières | REALTOR.ca",
-      "url": "https://www.realtor.ca/carte",
-      "summary": "Recherche de propriétés résidentielles et commerciales sur REALTOR.ca à l’aide de la carte.",
+      "id": "5512604e4bae2407",
+      "title": "New 2025 Kia Telluride for Sale Near Me - Autotrader",
+      "url": "https://www.autotrader.com/cars-for-sale/new-cars/2025/kia/telluride",
+      "summary": "Test drive New 2025 Kia Telluride at home from the top dealers in your area. Search from 53 New Kia Telluride cars for sale, including a 2025 Kia Telluride EX, a 2025 Kia Telluride EX X-Line, and a 2025 Kia Telluride LX ranging in price from $35,745 to $56,680.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1861,9 +1792,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1873,10 +1804,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6b6fc40d126df86d",
-      "title": "THE 10 BEST Tamil Nadu Beaches (2026) - with Reviews",
-      "url": "https://www.tripadvisor.in/Attractions-g297674-Activities-c61-t52-Tamil_Nadu.html",
-      "summary": "Although the place tends to be slightly crowded during that time, the atmosphere remains enjoyable. Spend some time soaking in the scenery, taking photographs, and then explore the nearby beaches, which are comparatively less crowded and more peaceful.",
+      "id": "5363984c9561427d",
+      "title": "New Kia Clearance | Southwest Kia Dallas, TX",
+      "url": "https://www.southwestkia.com/new-inventory/clearance.htm",
+      "summary": "Find the best specials, service & finance on new and used Kia vehicles at Southwest Kia Dallas, TX, near Arlington, TX, Balch Springs, TX, Garland, TX, Mesquite, TX ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1899,10 +1830,88 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f64f518e67000275",
-      "title": "THE 30 BEST Places to Visit in Chennai (Madras) (2026)",
-      "url": "https://www.tripadvisor.in/Attractions-g304556-Activities-Chennai_Madras_Chennai_District_Tamil_Nadu.html",
-      "summary": "Kapaleeshwarar Temple, Snow Kingdom, Beaches, Cooking Classes. For personalised recommendations, try our AI trip-planning product. See what other travellers like to do, based on ratings and number of bookings. Book these experiences for a close-up look at Chennai (Madras).",
+      "id": "c0ef826fc0104e86",
+      "title": "OPEN Physical Education Curriculum – Online Physical ...",
+      "url": "https://open.varsityuniversity.org/",
+      "summary": "As a public service of Varsity Brands, OPEN is a part of Varsity University (VU) which serves as a centralized educational ecosystem serving educators, coaches, parents and students.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ee088cd1cc8698e3",
+      "title": "PHP session_cache_limiter () private and nocache HTTP Expires date ...",
+      "url": "https://stackoverflow.com/questions/2094994/php-session-cache-limiter-private-and-nocache-http-expires-date-question",
+      "summary": "If you look at the PHP doc help for function session_cache_limiter (), you will see that if the cache_limiter parameter is set to private or nocache the Expires HTTP header is set to a const date (Thu, 19 Nov 1981 08:52:00 GMT).",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "51082d569cf6272f",
+      "title": "Play Last War:Survival Game on PC - Google Play Store",
+      "url": "https://play.google.com/pc-store/games/details?id=com.fun.lastwar.gp",
+      "summary": "Join Last War: Survival Game - strategic zombie dodging and quick combat await! Download and play Last War:Survival Game on your PC.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "243b16b9400abf82",
+      "title": "Special Offers, Lease Deals, & APR Financing for New Models | Kia",
+      "url": "https://www.kia.com/us/en/offers/landing",
+      "summary": "Browse our special offers, deals, savings & discounts for Kia models. Our offers may include cash discounts, lease deals, financing options on APR %, and low monthly cost. Check out our special offers during sales events.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1925,12 +1934,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2430591b8bad3806",
-      "title": "What is a social media audit? Optimize your social media ... - BigCommerce",
-      "url": "https://www.bigcommerce.com/glossary/social-media-audit/",
-      "summary": "Certain profiles will be easy to find if social media is well-integrated into a company's marketing strategy. Still, a few may have fallen by the wayside. These profiles are usually on lesser-known networks or platforms that were once up and coming but have since lost popularity. Aside from the big names (Facebook and Twitter), companies should check Google Plus, LinkedIn, Yelp, Tumblr ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "427c31f61e05c06b",
+      "title": "Toca Boca World - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.tocaboca.tocalifeworld&hl=en-US",
+      "summary": "Welcome to a world where your imagination comes first! Make up stories in the colourful locations, and customize your own buildings – you can style your own outfits too! Toca Boca World is all about open-ended play. 🥳 There are no rules, just colorful ways to be creative. Build your world, and fill it with characters, pets, shops and all kinds of houses! Almost everything inside Toca Boca ...",
+      "discovery_channel": "adjacent+broad_web",
+      "query": "ActiveLook smart glasses; wearable AI interface; wearable gesture control interface; wearable eye tracking; electrochromic eyeglass lenses; wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1939,139 +1948,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "teardown"
       ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7b0c531aab7df231",
-      "title": "Winnipeg Real Estate Listings - REALTOR.ca",
-      "url": "https://www.realtor.ca/mb/winnipeg/real-estate",
-      "summary": "Find 1,967 houses for sale in Winnipeg, MB. Visit REALTOR.ca to see all the Winnipeg, MB real estate listings on the MLS® Systems today! Prices starting at $1 💰",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cb02b2af8fe1c16c",
-      "title": "《中华人民共和国国歌》歌词_百度知道",
-      "url": "https://zhidao.baidu.com/question/1702052666980628100.html",
-      "summary": "中华人民共和国《国歌》 田汉作词 聂耳作曲 起来! 不愿做奴隶的人们! 把我们的血肉, 筑成我们新的长城! 中华民族到了 最危险的时候, 每个人被迫着 发出最后的吼声! 起来! 起来! 起来! 我们万众一心, 冒着敌人的炮火 前进, 冒着敌人的炮火 前进! 前进! 前进!进!!",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2c8f0b48b61c4db7",
-      "title": "《强军战歌》歌词 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/580982599.html",
-      "summary": "《强军战歌》歌词新征程号角震天响，强军目标我们来担当！国兴旺，无数先烈的梦想，战旗上写满铁血荣光。将士们听党指挥，英勇顽强，能打胜仗，定叫顽敌魂飞胆丧。为人民决胜疆场，为人民决胜疆场。杀！",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6d35d03d8593943e",
-      "title": "加拿大房地产 - 住宅、商业 | REALTOR.ca",
-      "url": "http://global.realtor.ca/chn/index.html",
-      "summary": "加拿大房地产协会（Canadian Real Estate Association，简称 CREA）是为公众、地产经纪（REALTORS®）和政府提供整合和分析影响众多房地产市场因素的机构。 REALTOR.ca 是 CREA 旗下的一个房地产资源平台，无论是房地产买家，卖家，或者投资者都能在 REALTOR.ca 上查找到加拿大最可靠的地产信息。REALTOR.ca 的信息 ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3ee54687f6b2e7d0",
-      "title": "百度ip地址是多少 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/399376407.html",
-      "summary": "百度首页的 IP地址 为【119.75.217.109】 你可以通过电脑本机进行查询，查询步骤如下： 1、点击【开始】--->>【运行】，输入【cmd】； 按键盘上的【Win键】+【R键】，调出运行，输入【cmd】，点击【确定】； 2、在弹出的cmd窗口，输入【ping www.baidu.com】，即可得到百度首页的IP地址为【119.75.217.109 ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
+      "primary_type": "teardown",
       "routing_targets": [
         "reject_noise"
       ],
