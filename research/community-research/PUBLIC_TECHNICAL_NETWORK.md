@@ -8,6 +8,7 @@ Purpose: track public technical contributors, projects and discussion nodes that
 |---|---|---|---|
 | `Panny777` | Maintains `Meizu-Myvu-Client` and `Meizu-Myvu-SDK`; documented MYVU / Star Air XGA010C transport, pairing, relay and feature behavior. | Primary MYVU/XGA010C reverse-engineering source and anchor for MYVU Open Research. | Continue monitoring repository changes, issues, forks and technically relevant interactions. Preserve upstream attribution. |
 | `FerSaiyan` / CyanBridge | Maintains `Alternative-HeyCyan-App-and-SDK`; active HeyCyan interoperability research and downstream MYVU integration using Panny777's work. | Important bridge between protocol research and owner-usable companion software; useful for W610/HeyCyan lineage and cross-project reuse. | Continue monitoring releases, issues and hardware-validation notes. Distinguish downstream adoption from independent confirmation. |
+| `sctg-development/ai-smart-glasses-e09-reverse` | Independent EyeVue/E09-style protocol research built from captured and probed traffic on physical hardware. Documents BLE/GATT behavior, device-info and battery queries, photo transfer, temporary Wi-Fi media paths, and live-preview experiments while intentionally avoiding OTA/firmware commands that risk bricking hardware. | Strong adjacent protocol implementation for comparing EyeVue/E09 behavior against CyanBridge EyeVue work and current CY01/AX01/W610 observations. | Add as a project-level source to monitor. Treat E09/EyeVue as a lineage candidate only; compare protocol, firmware and transport behavior before asserting shared hardware lineage. |
 | `vladislavkyzmenkov304-cpu` | Public participant in CyanBridge issue #5; supplied a concrete CY01 owner test with reproducible device-state observations and follow-up compatibility data. | High-value owner-testing signal for CY01 / HeyCyan compatibility research. | Track future public technical results, especially exact hardware identity and cross-device comparison. Do not generalize one specimen to the family. |
 | `jacob-kruger-work` | Opened CyanBridge issue #5 and repeatedly supplied test requirements, build/test feedback and interoperability use cases around device video access. | Useful source of reproducible test scenarios and owner-facing interoperability requirements. | Track technically substantive follow-ups and resulting implementation/test evidence. |
 | `mariaolivafrei-sys` | Opened CyanBridge issue #16 with an exact AX01/WIFIAX01 hardware, firmware and app-version tuple. | Valuable lineage/compatibility fingerprint for a HeyCyan-compatible device. | Preserve the identity tuple as community-reported evidence; await corroboration before lineage assignment. |
@@ -17,6 +18,7 @@ Purpose: track public technical contributors, projects and discussion nodes that
 - [Panny777/Meizu-Myvu-Client](https://github.com/Panny777/Meizu-Myvu-Client)
 - [Panny777/Meizu-Myvu-SDK](https://github.com/Panny777/Meizu-Myvu-SDK)
 - [FerSaiyan/Alternative-HeyCyan-App-and-SDK](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK)
+- [sctg-development/ai-smart-glasses-e09-reverse](https://github.com/sctg-development/ai-smart-glasses-e09-reverse)
 - [ebowwa/HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK)
 - [aimindseye/rokid-ai-glasses](https://github.com/aimindseye/rokid-ai-glasses)
 
@@ -33,9 +35,10 @@ Purpose: track public technical contributors, projects and discussion nodes that
 
 1. MYVU/XGA010C protocol or hardware revisions that change Panny777's documented behavior.
 2. HeyCyan/CY01/AX01 compatibility evidence that clarifies whether current differences are branding, firmware branches, protocol differences or materially different hardware.
-3. Independent reproduction of CyanBridge findings on identified hardware.
-4. New public smart-glasses projects that materially overlap with protocol, firmware, teardown, sourcing, owner-control or interoperability research.
-5. Public mentions of GlassesResearch or glassesresearch.org that contain factual corrections, criticism, useful citations, adoption signals, contributor opportunities or misunderstandings requiring clarification.
+3. EyeVue/E09 protocol evidence that can be compared against CyanBridge EyeVue support and CY01/AX01/W610 behavior without collapsing distinct devices into one lineage.
+4. Independent reproduction of CyanBridge findings on identified hardware.
+5. New public smart-glasses projects that materially overlap with protocol, firmware, teardown, sourcing, owner-control or interoperability research.
+6. Public mentions of GlassesResearch or glassesresearch.org that contain factual corrections, criticism, useful citations, adoption signals, contributor opportunities or misunderstandings requiring clarification.
 
 ## GlassesResearch mention handling
 
