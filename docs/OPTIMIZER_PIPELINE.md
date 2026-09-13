@@ -76,6 +76,10 @@ Each optimizer run should:
 9. Re-check the live/resulting site after merge when the change affects public or operational behavior.
 10. Preserve blocked, deferred, disproven, retired, and monitored findings with concise dispositions.
 
+## Governance provenance
+
+The Sep. 13, 2026 approval-gate cleanup established that older PRs, issues, and comments may contain superseded blanket `Pete + ChatGPT review` language. Historical text remains provenance, not current authority. Current `main`, the active optimizer automation, and explicit later corrections govern future executions. Issue #565 records the audit and cleanup.
+
 ## Evidence and trust invariants
 
 The pipeline never weakens GlassesResearch evidence standards for speed. Unknown stays unknown. Hands-on, primary-source, commercial, community, inferred, hypothesis, disproven, and unknown evidence lanes remain distinct. The optimizer must not add tracking, cookies, affiliate incentives, keyword stuffing, backlink schemes, fabricated freshness, or unverified claims merely to advance a priority.
