@@ -24,6 +24,7 @@ A concise list of the newest developments that crossed the GlassesResearch publi
 
 | Date | What changed | Read |
 |---|---|---|
+| Sep. 13 | **Viral fake Tube notices turn smart-glasses privacy backlash into public shaming** — an activist campaign's spoof London Underground-style notices spread to more than 34,000 Reddit upvotes, making social acceptance and bystander trust part of the smart-glasses adoption story. | [Article](news/articles/2026-09-13-london-underground-smart-glasses-backlash.md) |
 | Sep. 3 | **HTC VIVE Eagle reaches U.S. retail availability** — HTC’s U.S. VIVE product catalog now lists VIVE Eagle with a Buy path, while current U.S. coverage corroborates a $499 starting price and September 3 U.S. availability. | [Article](news/articles/2026-09-03-vive-eagle-us-availability.md) |
 | Aug. 28 | **Meta closes the mid-recording capture-LED bypass** — covering the front LED during an active recording now stops camera operation as the software update rolls out. | [Article](news/articles/2026-08-28-meta-capture-led-recording-fix.md) |
 | Jul. 14 | **New York courts prohibit recording-capable smart glasses in UCS facilities** — effective July 20, with safekeeping/vouchering for covered devices. | [Article](news/articles/2026-07-14-new-york-courts-smart-glasses-policy.md) |
@@ -34,6 +35,10 @@ A concise list of the newest developments that crossed the GlassesResearch publi
 
 <details>
 <summary><strong>Browse detailed newsroom notes</strong></summary>
+
+### September 13, 2026 — Viral fake Tube notices turn smart-glasses privacy backlash into public shaming
+
+Canonical coverage: [published article](news/articles/2026-09-13-london-underground-smart-glasses-backlash.md). Campaign provenance and online spread are corroborated; the notices are treated as spoof material rather than official Transport for London messaging, and GlassesResearch is watching for any first-party TfL response.
 
 ### September 3, 2026 — HTC VIVE Eagle reaches U.S. retail availability
 
