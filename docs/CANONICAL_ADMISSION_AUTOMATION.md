@@ -20,9 +20,9 @@ A model may receive a GLS ID automatically only when every deterministic gate pa
 
 If any condition fails, the automation does nothing canonical. The candidate remains ordinary research/review work.
 
-## What is deliberately not automatic
+## Scope of this lane
 
-The lane does not automatically perform:
+This admission lane itself does not perform:
 
 - removals or retirements;
 - alias, rebadge, merge, split, or disputed lineage decisions;
@@ -32,7 +32,7 @@ The lane does not automatically perform:
 - promotion between provenance/evidence classes;
 - privacy, openness, owner-control, cloud-independence, durability, support, value, or hands-on conclusions.
 
-Those are judgment-bearing decisions and remain subject to the normal authority-sensitive review path.
+That scope boundary does **not** create a blanket human-approval requirement for those categories. They may be handled by another already-approved deterministic pipeline when one exists. A case escalates only when its governing pipeline cannot resolve the evidence/judgment, the case falls outside delegated authority, or the governing policy itself would need to change.
 
 ## Stable-ID race safety
 

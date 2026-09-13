@@ -37,26 +37,29 @@ Green CI is necessary but not sufficient. The optimizer must also verify the act
 
 For ordinary reversible site and repository improvements, there is no blanket PR-review-only bottleneck. Once the three-part promotion gate is proven, the proposal is merge-qualified under standing optimizer authority.
 
+## Delegated automation authority
+
+Approval belongs primarily at the **rule/pipeline level**, not as a repetitive checkpoint on routine executions. When an already-approved pipeline's deterministic predicates are satisfied and the action remains inside its delegated authority, the pipeline should execute through completion without recurring Pete approval merely because the object is canonical, research, evidence, publication, scoring, or provenance state.
+
+A category label is never by itself an approval gate. If an approved deterministic policy exists for a class of operation, that policy delegates authority to the automation. Escalation occurs only when a case cannot be resolved by the established policy, crosses an explicitly documented boundary, or proposes changing the governing policy itself.
+
 ### Bounded canonical-admission authority
 
 Canonical admission is not blanket human-review work. A new GLS identity may be admitted and merged automatically through the dedicated bounded canonical-admission lane when **every** deterministic gate in `CANONICAL_ADMISSION_AUTOMATION.md` passes. That lane is deliberately narrower than ordinary optimizer authority: it requires a high-confidence verified-new-model finding, qualifying acquisition evidence, no existing GLS target, no identity edge, no unresolved question, a source-bound structured row, duplicate checks, complete validators, and a stable canonical base through merge.
 
-Automatic admission establishes only stable identity and documented acquisition history. It does not authorize inferred scores, product quality judgments, provenance promotion, privacy/openness conclusions, or relationship/lineage judgments. If the admission needs judgment rather than deterministic evidence checks, it leaves the automatic lane and escalates.
+Automatic admission establishes only stable identity and documented acquisition history. It does not by itself authorize unrelated inferences. Other downstream operations may nevertheless execute automatically when their own already-approved deterministic policy explicitly authorizes them.
 
-## Authority-sensitive exception
+## Escalation boundary
 
-Technical success cannot establish every research or authority judgment. Explicit Pete + ChatGPT review remains required before merge for changes such as:
+Technical success cannot resolve every research or authority judgment. Escalate when the **specific case** requires judgment that existing policy does not settle, including examples such as:
 
-- canonical model removals, retirements, identity corrections, or disputed/ambiguous admissions;
-- alias, rebadge, merge, split, or other judgment-bearing identity decisions;
-- Report Card scores or scoring-policy changes;
-- promotion between evidence/provenance lanes;
-- disputed or consequential lineage conclusions;
-- material changes to project canon or editorial/publication authority;
-- credentials, spending, external commitments, or irreversible actions;
-- comparable decisions where a green build cannot prove that the underlying judgment is appropriate.
+- disputed or ambiguous identity, alias, rebadge, merge, split, lineage, correction, removal, or retirement decisions not resolved by an approved deterministic rule;
+- a Report Card score, evidence/provenance transition, or publication decision for which no approved deterministic policy establishes the result;
+- material changes to project canon, scoring policy, evidence policy, or editorial/publication authority;
+- credentials, spending, external commitments, or irreversible actions outside delegated authority;
+- comparable cases where the pipeline's defined predicates cannot establish the appropriate action.
 
-These changes may still be fully constructed and validated before review; they simply do not become merge-qualified from technical checks alone. Evidence-clean admissions that satisfy the dedicated bounded canonical-admission lane are the explicit narrow exception described above.
+This is an **exception path, not a category-level Pete approval requirement**. If an approved pipeline already deterministically covers the operation, the automation should proceed. If it does not, the unresolved judgment escalates. Do not infer a new approval requirement from historical issue/PR/comment wording when current policy delegates the operation.
 
 ## Optimizer run behavior
 
@@ -69,9 +72,13 @@ Each optimizer run should:
 5. Keep VERY HIGH/HIGH findings in the active execution queue; keep MEDIUM/LOW findings in a concise ranked monitoring backlog unless promoted by changed conditions.
 6. Reuse or refresh existing issues/PRs instead of duplicating them.
 7. Construct worthwhile independent active improvements and validate them.
-8. Advance green, outcome-verified, non-authority-sensitive work through merge when the promotion gate is satisfied.
+8. Advance green, outcome-verified work through merge when the promotion gate is satisfied and no unresolved out-of-policy judgment remains.
 9. Re-check the live/resulting site after merge when the change affects public or operational behavior.
 10. Preserve blocked, deferred, disproven, retired, and monitored findings with concise dispositions.
+
+## Governance provenance
+
+The Sep. 13, 2026 approval-gate cleanup established that older PRs, issues, and comments may contain superseded blanket `Pete + ChatGPT review` language. Historical text remains provenance, not current authority. Current `main`, the active optimizer automation, and explicit later corrections govern future executions. Issue #565 records the audit and cleanup.
 
 ## Evidence and trust invariants
 
