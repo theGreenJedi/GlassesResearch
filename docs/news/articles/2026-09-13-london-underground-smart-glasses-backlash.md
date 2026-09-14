@@ -4,6 +4,7 @@
 
 **Published:** September 13, 2026  
 **Event date:** September 11, 2026  
+**Status:** Verified  
 **Evidence status:** STEADY  
 **Evidence posture:** campaign provenance and online spread are corroborated; Transport for London authorization is not established and the notices are treated as spoof material, not official TfL messaging
 
