@@ -14,6 +14,12 @@ GlassesResearch is an independent, vendor-neutral research institution for smart
 
 The public site leads with research. This page gathers the mission, operating principles, evidence rules, privacy promise, preservation methods, and project governance for readers who want to understand how the work is organized. For a compact map of every major public section, use the [complete site contents](CONTENTS.md).
 
+## Independence and funding
+
+GlassesResearch is an independent, self-funded project. There are no advertisers, sponsors, vendor relationships, or investors behind it. It is built and maintained by the community because reliable, independent information about smart glasses has been surprisingly hard to find.
+
+No company pays to be listed, reviewed, ranked, or recommended.
+
 ## Why the project exists
 
 - [Why GlassesResearch exists](../WHY.md)
