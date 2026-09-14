@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "action_id": "GRMA-4649CA10C1D2",
+  "source_package_id": "GRMP-W100C-20260913",
+  "source_proposal_id": "proposal-w100c-20260913",
+  "investigation_key": "catalog:w100c-identity-20260913",
+  "proposal_revision": "2026-09-13T21:08:00-04:00",
+  "proposal_kind": "catalog_admission",
+  "conclusion": "verified_new_model",
+  "confidence": "high",
+  "canonical_name": "Goodway W100C",
+  "target_gls_ids": [],
+  "requires_gls_allocation": true,
+  "disposition": "catalog_admission_candidate",
+  "blocked_reason": null,
+  "canonical_mutation_applied": false,
+  "repository_gate_required": true,
+  "verified_claims": [
+    {
+      "key": "identity",
+      "statement": "W100C is a separately named Goodway/OEM smart-glasses model rather than merely an undocumented seller alias for W100.",
+      "confidence": "high",
+      "source_urls": [
+        "https://www.goodwaytechs.com/goodway-w100c-ai-bluetooth-smart-glasses-for-real-time-translation.html",
+        "https://www.goodwaytechs.com/best-sell.html"
+      ]
+    },
+    {
+      "key": "noncollapse",
+      "statement": "Goodway markets W100 and W100C separately; published product material differs on radio generation, ingress rating, and frame/material description, so W100C should not be silently collapsed into canonical W100.",
+      "confidence": "high",
+      "source_urls": [
+        "https://www.goodwaytechs.com/goodway-w100c-ai-bluetooth-smart-glasses-for-real-time-translation.html",
+        "https://www.goodwaytechs.com/products_list5.html"
+      ]
+    },
+    {
+      "key": "acquisition",
+      "statement": "W100C has a current documented paid retail acquisition path.",
+      "confidence": "high",
+      "source_urls": [
+        "https://oriwhiz.com/products/w100c-smart-glasses-support-ai-conversation-ai-intelligent-translation-bluetooth-call"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "url": "https://www.goodwaytechs.com/goodway-w100c-ai-bluetooth-smart-glasses-for-real-time-translation.html",
+      "source_class": "primary",
+      "supports": "Goodway identifies W100C by model name and publishes W100C-specific chipset, radio, battery, materials, IP rating, Ear Dance app, and feature specifications.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://www.goodwaytechs.com/best-sell.html",
+      "source_class": "primary",
+      "supports": "Goodway lists W100C and W100 as separate named smart-glasses products, alongside W100B and W100D.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://www.goodwaytechs.com/products_list5.html",
+      "source_class": "primary",
+      "supports": "Goodway separately lists W100 and documents the W100 product family independently from W100C.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://oriwhiz.com/products/w100c-smart-glasses-support-ai-conversation-ai-intelligent-translation-bluetooth-call",
+      "source_class": "retailer",
+      "supports": "Current W100C retail listing with direct Add to cart purchase path and W100C model-specific specifications.",
+      "confidence": "high"
+    }
+  ],
+  "identity_edges": [],
+  "acquisition": {
+    "state": "paid_purchase",
+    "threshold_met": true,
+    "source_urls": [
+      "https://oriwhiz.com/products/w100c-smart-glasses-support-ai-conversation-ai-intelligent-translation-bluetooth-call"
+    ],
+    "note": "Current retailer page exposes W100C as a separately named product with an Add to cart purchase path."
+  },
+  "consequences": [
+    {
+      "destination": "catalog.admit_candidate",
+      "reason": "First-party identity evidence distinguishes W100C from W100 and current retailer evidence crosses the purchaser-history threshold.",
+      "payload": {
+        "catalog_row": {
+          "maker": "Goodway / shared Ear Dance OEM ecosystem",
+          "model": "W100C",
+          "era": "2026",
+          "state": "current/OEM-retail",
+          "type": "audio / AI translation",
+          "access": "retail/OEM",
+          "source_url": "https://oriwhiz.com/products/w100c-smart-glasses-support-ai-conversation-ai-intelligent-translation-bluetooth-call"
+        }
+      }
+    },
+    {
+      "destination": "research.dossier",
+      "reason": "Keep W100C bench observations and W100/W100C family differentiation attached to the durable identity record.",
+      "payload": {
+        "path": "research/model-investigations/2026-09-13-w100c-identity.md"
+      }
+    }
+  ],
+  "unresolved_questions": [],
+  "watch_targets": [
+    "Preserve project-held W100C bench observations under W100C rather than inheriting them to W100.",
+    "Map W100B/W100C/W100D family relationships without assuming shared firmware or identical internals."
+  ]
+}
