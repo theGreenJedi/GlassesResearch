@@ -1,40 +1,46 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-14T14:13:02.731597+00:00",
-  "candidate_count": 68,
-  "classifier_irrelevant_count": 57,
+  "discovered_utc": "2026-09-14T16:38:27.407375+00:00",
+  "candidate_count": 87,
+  "classifier_irrelevant_count": 65,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 15,
-    "broad_web": 39,
-    "community": 4,
-    "developer": 23,
-    "research": 5
+    "adjacent": 20,
+    "broad_web": 52,
+    "developer": 13,
+    "manufacturer_catalog": 2
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 1,
-    "adjacent": 10,
+    "direct": 2,
+    "enabling": 0,
+    "adjacent": 20,
     "speculative": 0,
-    "irrelevant": 57
+    "irrelevant": 65
   },
   "type_counts": {
-    "model": 1,
+    "model": 9,
     "review": 1,
-    "news": 38,
-    "tool": 23,
-    "sdk": 19,
+    "video": 2,
+    "news": 56,
+    "tool": 13,
+    "sdk": 15,
+    "hack": 2,
     "optics": 1,
-    "policy": 2,
-    "retail": 3,
-    "community": 2
+    "policy": 1,
+    "retail": 5,
+    "teardown": 1,
+    "rumor": 3
   },
   "routing_counts": {
-    "adjacent_radar": 10,
+    "adjacent_radar": 20,
     "development_hacking": 2,
-    "reject_noise": 57,
-    "research_news_review": 11,
-    "research_optics": 1
+    "model_catalog_review": 5,
+    "policy_privacy": 1,
+    "reject_noise": 65,
+    "report_card_evidence": 1,
+    "research_news_review": 22,
+    "research_optics": 1,
+    "watching": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,438 +54,659 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "a159295f62479c66",
-      "title": "Prescriptions - Chemist Warehouse",
-      "url": "https://www.chemistwarehouse.com.au/health-services-and-pharmacy/prescriptions",
-      "summary": "Need a prescription filled? Chemist Warehouse offers a convenient way to order and manage prescriptions, online or in-store. Find out more here.",
-      "discovery_channel": "adjacent+broad_web+research",
-      "query": "prescription smart glasses; prescription smart glasses lens research; prescription lens technology eyewear",
-      "source": "Bing web RSS",
+      "id": "9f92771e7b4dd520",
+      "title": "Manufacturer catalog lead: REEBOK OPTICAL",
+      "url": "https://lucyd.co/pages/reebok-optical-collection",
+      "summary": "Same-domain catalog/developer link discovered from https://lucyd.co/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://lucyd.co/",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "prescription"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "enabling",
+      "relationship": "direct",
       "content_types": [
+        "model",
+        "sdk",
         "optics"
       ],
-      "primary_type": "optics",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
         "research_optics"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "enabling technology signals: prescription",
+      "publication_gate_reason": "known smart-glasses source",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1f0b262eb3eb9480",
-      "title": "Cities Nearby Los Angeles, California, United States",
-      "url": "https://www.thecitiesnow.com/united_states/california/los_angeles",
-      "summary": "Find five hundred cities near Los Angeles, California, United States from closest to farthest by distance. Distances from Los Angeles to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d1771bb7fa05312b",
-      "title": "Employee Self-Service Software | ESS Portals | Paylocity",
-      "url": "https://www.paylocity.com/products/hr/human-resources-software/employee-self-service/",
-      "summary": "Give employees secure, 24/7 access to Paylocity via a single, convenient HR portal. Keep them connected to the tools they need — and to each other — while powering the automation you’ve been looking for.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a72a0a476867a911",
-      "title": "Login - Paylocity",
-      "url": "https://cobra.paylocity.com/employerportal/",
-      "summary": "Enter Login Information Username",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "236b7db87b62bf87",
-      "title": "Login | Paylocity",
-      "url": "https://access.paylocity.com/",
-      "summary": "Paylocity is not authorized to speak directly with employees. To Login Enter the Paylocity assigned Company ID. Enter the Username. Remember usernames are: Not case sensitive Contain 3 to 40 characters Can't contain special characters other than . and _ Enter the Password. Remember passwords are: ARE case sensitive Contain 8 to 72 characters",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fa3675dd31231871",
-      "title": "Paylocity",
-      "url": "https://go.paylocity.com/login",
-      "summary": "Log in to Paylocity’s online HR and payroll platform.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "047efb0a6c6d229d",
-      "title": "Paylocity - Triangle Services",
-      "url": "https://www.triangleservices.com/introduction-to-paylocity",
-      "summary": "Registering with Paylocity Paylocity can be accessed online through your internet browser or mobile application. Internet Browser Navigate to paylocity.com and select in the top menu bar. Access the Login screen directly at https://access.paylocity.com. Select Register New User to create a new User Name and confidential Password.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b698695179486c06",
-      "title": "Paylocity - WebClock",
-      "url": "https://webtime2.paylocity.com/WebTime/Login/WebClock",
-      "summary": "Access Paylocity's WebClock for time tracking and employee management.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a0d9bff4bf988302",
-      "title": "Payroll Software | Online Payroll Solution | Paylocity",
-      "url": "https://www.paylocity.com/products/hr/payroll/",
-      "summary": "Small business payroll Spend more time growing your business and less time stressing over payroll. Explore Paylocity’s solutions to streamline and automate your payroll, specifically tailored to small business needs.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ae22def9ee3edb9",
-      "title": "Single Sign-On Login | Paylocity",
-      "url": "https://access.paylocity.com/Saml/SignIn?ResponseType=code%20id",
-      "summary": "Paylocity is not authorized to speak directly with employees. To Login Enter the Paylocity assigned Company ID. Enter the Username. Remember usernames are: Not case sensitive Contain 3 to 40 characters Can't contain special characters other than . and _ Enter the Password. Remember passwords are: ARE case sensitive Contain 8 to 72 characters",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ea28d26eb26a9fe2",
-      "title": "Unify HR, Finance, & IT | HR & Payroll Simplified | Paylocity",
-      "url": "https://www.paylocity.com/",
-      "summary": "Paylocity unifies HR, Finance, and IT on one HCM platform, so you can stop piecing systems together and start moving forward together.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7114a3808628565d",
-      "title": "Home - Salehiya",
-      "url": "https://salehiya.com/",
-      "summary": "We have a comprehensive review of our diversified products, including pharmaceuticals, medical equipment, and patient & consumer care, as well as our expansive capabilities in service offerings such as digital and supply chain solutions.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "93b1238e502718e1",
-      "title": "‎Safari App - App Store",
-      "url": "https://apps.apple.com/no/app/safari/id1146562112",
-      "summary": "Explore the web with lightning-fast speed, powerful privacy protections and robust customisation options. With Safari, you can browse sites, translate web pages and access your tabs across iOS, iPadOS and macOS.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "privacy"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "policy"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "040341d4e419646a",
-      "title": "Afghanistan's Currency Exchange & Money Transfer Authority - Sarafi",
-      "url": "https://sarafi.af/en",
-      "summary": "Stay up to date on the rates of exchange market and crypto/metal/energies anywhere and anytime.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
+      "id": "1c0d208a1a954929",
+      "title": "Manufacturer catalog lead: VIEW ALL GLASSES",
+      "url": "https://lucyd.co/pages/all-collections",
+      "summary": "Same-domain catalog/developer link discovered from https://lucyd.co/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://lucyd.co/",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "direct",
       "content_types": [
-        "tool",
+        "model",
         "sdk"
       ],
-      "primary_type": "tool",
+      "primary_type": "model",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0d56f922e28b8844",
-      "title": "Bed Mattresses in Saudi Arabia | Since 1963 | Sleep High",
-      "url": "https://sleephigh.com/en",
-      "summary": "كل مستوى صلابة يقدم مستوى مختلف من الدعم حسب الوزن والاحتياجات والتفضيلات الشخصية والمشاكل الصحية الوضعية المفضلة للنوم. يعتمد اختيار المرتبة المناسبة على عدة عوامل منها: عدد الأشخاص، الأوزان، المشاكل الصحية، الوضعية المفضلة للنوم. نعم، للمنتجات التي تشملها خدمة التركيب، ويوضح ذلك في صفحة المنتج.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "84590f7b77868fc1",
+      "title": "Events | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/events",
+      "summary": "Two of the biggest independent empires in hip-hop announced the first-ever Cash Money Records & No Limit Records Tour is coming to FedExForum on Saturday, Oct. 24. The historic tour will include a star-studded lineup, featuring Master P, Birdman, Juvenile, Silkk the Shocker, Mannie Fresh, B.G., Mia X, Choppa Style, Mac, Mercedes, Fiend and Mr. Serv-On, along with special guest, Boosie. Tickets ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "126d880214f9cdc8",
-      "title": "Global Shipping and Logistics Services | UPS - United Kingdom",
-      "url": "https://www.ups.com/gb/en/home",
-      "summary": "Ship and track domestic and international deliveries with UPS, one of the largest and most trusted global shipping and logistics companies.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses; Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
       "keyword_hits": [
-        "shipping"
+        "announced"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af376ff96dce77e6",
+      "title": "Arena Maps | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/arena-info/seating-charts",
+      "summary": "Home of the Memphis Grizzlies",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9d7b4d75c55e4b08",
+      "title": "Careers | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/careers",
+      "summary": "Home of the Memphis Grizzlies The Executive Suite and Club Box Concierge is responsible for front line service to Executive Suites and Club Boxes, their guests and VIP’s for FedExForum and the Memphis Grizzlies. This role includes greeting, filling requests, and problem-solving during events. The concierge will monitor and control guest access to the Executive Suite level (s) and premium ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5527a1919028ea5e",
+      "title": "Code of Conduct | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/cofc",
+      "summary": "FedExForum Guest Code of Conduct FedExForum is committed to creating a safe, comfortable, and enjoyable entertainment experience. Accordingly, FedExForum guests are expected to conduct themselves in accordance with the following: Guests will refrain from disruptive behavior, including foul or abusive language or obscene gestures. Guests shall be respectful of others around",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "research_news_review",
+        "watching",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fa28a7be00ca8141",
+      "title": "Event Rentals | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/about-our-house/event-rentals",
+      "summary": "Let FedExForum help make your next party, reception or business meeting an event to remember. Let our staff provide top-quality assistance in planning, coordinating, and taking care of all of your in-house event catering needs.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3214cf886fb60711",
+      "title": "FedExForum Implements Clear Bag Policy",
+      "url": "https://www.fedexforum.com/news/detail/fedexforum-implements-clear-bag-policy",
+      "summary": "Home of the Memphis Grizzlies Effective immediately, FedExForum is implementing a clear bag policy that limits the size and types of bags that may be brought into the venue for all future events. Only clear bags made of plastic, vinyl or PVC no larger than 6x8x2 inches will be allowed inside FedExForum. Clear bags may not have an all-over print or decoration that prohibits full view of its ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "policy",
+        "teardown"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6cde459385664562",
+      "title": "Food & Beverage | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/plan-your-visit/food-beverage",
+      "summary": "Home of the Memphis Grizzlies Welcome to FedExForum! Below, you'll find a list of our typical concessions menu items. Please note that the availability of items may vary depending on the event. Additionally, we have multiple concession stands conveniently situated throughout the concourse or arena floor. These concession stand locations may be adjusted based on the specific event setup.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cb937af6da66ff5f",
+      "title": "Know Before You Go | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/plan-your-visit/know-before-you-go",
+      "summary": "The Memphis Grizzlies and FedExForum promote the inclusion of patrons with disabilities so that they may enjoy all of the same opportunities as patrons without disabilities by providing patrons the use of auxiliary aids and services.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c0d740c1aa5af0a1",
+      "title": "Parking & Directions | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/plan-your-visit/parking-directions",
+      "summary": "Parking for guests with disabilities is available in the FedExForum parking garage, and the Dr. M.L. King Jr. Avenue marshalling area. All vehicles must have a current state-issued hang tag or license plate. Drop Off / Pick Up Locations Guest, limo, taxi, and express shuttle bus drop off is located at the east end of the arena on Fourth Street between Beale and Dr. M.L. King Jr. Avenue ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6083f240636759a2",
+      "title": "Seating Charts | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/seating",
+      "summary": "Home of the Memphis Grizzlies",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fdcd8229333078aa",
+      "title": "Smartapp - 漢字・熟語検索サイト",
+      "url": "https://kanji.smartapp.jp/",
+      "summary": "漢検のレベルから漢字を検索する 10級（80字） 9級（240字） 8級（440字） 7級（640字） 6級（825字） 5級（1006字） 4級（1322字） 3級（1607字） 準2級（1940字） 2級（2136字） 準1級（3000字） 1級（6000字） 四字熟語を検索する（読みの頭文字で検索）",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bfb555b557923b17",
+      "title": "ことわざ・四字熟語・慣用句一覧検索",
+      "url": "https://kanji.reader.bz/stroke/list/",
+      "summary": "四字熟語、慣用句、故事成語、イディオム、ことわざの読み方やローマ字の一覧を簡単に検索できる無料オンライン辞典です。関連の言い回しや表現をお探しのときにご活用ください。また漢字や文字の書き方、書き順、画数の詳細ページにリンクしているので小学生や中学生、外国人の日本語 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cfe4351fe8467d18",
+      "title": "四字熟語辞典オンライン",
+      "url": "https://yoji.jitenon.jp/",
+      "summary": "四字熟語の読み方や意味・出典などを調べることができる辞典サイトです。 約6600語の四字熟語を収録しています。 同じ漢字を含む四字熟語や、共通する意味・場面、テーマ・用途ごとの一覧も見ることができます。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "67ee32436a24dd05",
+      "title": "故事・ことわざ・慣用句辞典オンライン",
+      "url": "https://kotowaza.jitenon.jp/",
+      "summary": "故事・ことわざ・慣用句辞典オンライン 故事、ことわざ、慣用句の意味や出典などを調べることができる辞書サイトです。 五十音、言葉に用いられている漢字などから言葉を探すことができます。 2026年9月時点の収録数は 「8078」です。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5827fdf861f9eeb",
+      "title": "漢字・熟語検索サイト",
+      "url": "https://kanji.nonai.jp/",
+      "summary": "悪, 安, 暗, 医, 委, 意, 育, 員, 院, 飲, 運, 泳, 駅, 央, 横, 屋, 温, 化, 荷, 界, 開, 階, 寒, 感, 漢, 館, 岸, 起, 期, 客, 究, 急, 級, 宮, 球, 去, 橋, 業, 曲, 局, 銀, 区, 苦, 具, 君, 係, 軽, 血, 決, 研, 県, 庫, 湖, 向, 幸, 港, 号, 根, 祭, 皿, 仕, 死, 使, 始, 指, 歯, 詩, 次, 事 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2dddf3c1862471bc",
+      "title": "漢字熟語検索",
+      "url": "https://idiom.mas3.net/",
+      "summary": "アプリのインストール不要で漢字クロスワード用に漢字の熟語が検索できます。 漢字抜け熟語や漢字ナンクロの回答補助としても使えます。 分からないところは「？ 」「＊」または数字にして入力してください。 それぞれ任意の1文字として扱われます。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2ae3c51f6b623560",
+      "title": "漢字熟語検索（かんじじゅくごさあち）",
+      "url": "https://ks.bearbench.com/",
+      "summary": "『任意の漢字1文字指定』には、漢字1字を入力してください。 （これは、結果として表示される熟語中に指定した1文字の漢字があることを指します） 『連なる二字から六字』には、漢字二文字から六文字を入力してください。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "92d5aa092b94c83e",
+      "title": "漢字辞典オンライン",
+      "url": "https://kanji.jitenon.jp/",
+      "summary": "漢字の部首・画数・読み方・筆順・意味などを調べることができる漢字辞典サイトです。JIS1・2水準のすべての漢字を含む約29,000字を収録しています。また、同時にその漢字を含む四字熟語や故事・ことわざなども一覧で見ることができます。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7eb31f7af0bbba26",
+      "title": "熟語辞典｜字源 - jigen.net",
+      "url": "https://jigen.net/jyukugo/",
+      "summary": "参考文献の項にはその熟語を含む一節を列挙し、末尾には当サイトに収録されている古典へのリンクを付与します。 熟語の多くは簡野道明著「字源」から得ています。 字源には旧仮名遣いが使用されていますが、基本的に修正は行いません。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0ab226827d7b7071",
+      "title": "言葉辞典 | ことわざ・四字熟語・慣用句を意味から探せる",
+      "url": "https://kotoba-jiten.com/",
+      "summary": "言葉辞典について 日本語のことわざ・四字熟語・慣用句・故事成語を収録した逆引き辞典です。 「伝えたい意味や感情から言葉を探す」という独自のアプローチで、 ぴったりの日本語表現を見つけるお手伝いをします。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6eabc65dbb90213",
+      "title": "Antonym of hate - Synonyms.com",
+      "url": "https://www.synonyms.com/antonyms/hate%20",
+      "summary": "Antonyms for hate at Synonyms.com with free online thesaurus, synonyms, definitions and translations.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e769e7ce3df6b320",
+      "title": "Antonyms for hate | List of English antonyms",
+      "url": "https://www.synonyms-thesaurus.com/antonyms-hate",
+      "summary": "Find all the antonyms of the word hate presented in a simple and clear manner. More than 47,200 antonyms available on synonyms-thesaurus.com.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -491,10 +718,284 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2095cdfa231ba683",
-      "title": "Is SARFI the next big thing in regulation? - Energy Central",
-      "url": "https://energycentral.com/energy-management/post/sarfi-next-big-thing-regulation-CubY3XOrWlLL8Hg",
-      "summary": "“The System Average RMS Variation Frequency Index (SARFI) Report shows the count of voltage sags and / or swells for the selected sources based on the SARFI indices.",
+      "id": "f121352d948ddec8",
+      "title": "Antonyms of hate - Wordhelp",
+      "url": "https://www.wordhelp.com/thesaurus/antonyms/?q=hate",
+      "summary": "Antonyms of hate are love, admire, and crave. Check all antonyms of hate in our online thesaurus for antonyms.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1c28d2ce3b5263da",
+      "title": "CIA Director John Brennan emails - WikiLeaks",
+      "url": "https://wikileaks.org/cia-emails/Brennan-Group.html",
+      "summary": "(on 2015-10-26) CIA Director John Brennan emails",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb3265f4c9af8dea",
+      "title": "HATE Antonyms: 3 646 Opposite Words & Phrases - Power Thesaurus",
+      "url": "https://www.powerthesaurus.org/hate/antonyms",
+      "summary": "Antonyms for Hate. 3 646 opposites of hate- words and phrases with opposite meaning. WordsPhrases. NounsVerbs. #dislike#favor#desire. Lists. synonyms. antonyms. definitions. sentences. thesaurus. related. rhymes. love. nounverb#affection. like. verbnoun#pleasure. desire. noun#favor#affection. affection. noun#desire#favor. fondness.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1ec5fc1f4b0fb4e8",
+      "title": "HATE Synonyms & Antonyms - 131 words | Thesaurus.com",
+      "url": "https://www.thesaurus.com/browse/%20hate",
+      "summary": "Find 131 different ways to say HATE, along with antonyms, related words, and example sentences at Thesaurus.com.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "07641127ea6d30de",
+      "title": "HATE! Synonyms: 121 Similar and Opposite Words - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/thesaurus/hate!",
+      "summary": "Synonyms for HATE: despise, loathe, detest, abhor, abominate, disdain, disapprove (of), have it in for; Antonyms of HATE: love, like, prefer, desire, enjoy, favor, fancy, relish",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c614e44a6923d607",
+      "title": "HATES Synonyms: 69 Similar and Opposite Words - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/thesaurus/hates",
+      "summary": "Synonyms for HATES: despises, loathes, detests, abhors, disdains, abominates, disapproves (of), has it in for; Antonyms of HATES: loves, prefers, likes, desires, enjoys, favors, fancies, relishes",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "93b9974acc5f48c8",
+      "title": "Opposite Of Hate, Antonyms of Hate, Meaning and Example Sentences ...",
+      "url": "https://englishgrammarhere.com/opposite-words/opposite-of-hate-antonyms-of-hate-meaning-and-example-sentences/",
+      "summary": "Here are 400 Important Opposite Words List.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f42642bdb19856aa",
+      "title": "Opposite word for HATE > Synonyms & Antonyms",
+      "url": "https://www.antonym.com/antonyms/hate",
+      "summary": "Opposite words for Hate. Definition: verb. ['ˈheɪt'] dislike intensely; feel antipathy or aversion towards.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "faf82ac6154ec37e",
+      "title": "Queen Anne - Seattle WA Real Estate - 295 Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/seattle-wa/queen-anne_att/",
+      "summary": "Zillow has 295 homes for sale in Seattle WA matching Queen Anne. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3ea76299c6ce3f9f",
+      "title": "Talk:Vault 7: CIA Hacking Tools Revealed - our.wikileaks.org",
+      "url": "https://our.wikileaks.org/Talk:Vault_7:_CIA_Hacking_Tools_Revealed",
+      "summary": "In order to use the WikiLeaks public submission system as detailed above you can download the Tor Browser Bundle, which is a Firefox-like browser available for Windows, Mac OS X and GNU/Linux and pre-configured to connect using the anonymising system Tor.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "hack"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "214776af0a59a7dc",
+      "title": "Vault 7: CIA Hacking Tools Revealed - WikiLeaks",
+      "url": "https://wikileaks.org/ciav7p1/cms/space_753667.html",
+      "summary": "Vault 7: CIA Hacking Tools Revealed Releases Documents Navigation: » Directory Owner: User #524297 Embedded Development Branch (EDB)",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -507,7 +1008,7 @@
       "content_types": [
         "tool",
         "sdk",
-        "policy"
+        "hack"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -519,172 +1020,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a0fa14c53a137dea",
-      "title": "Live cameras on the border of Georgia",
-      "url": "https://georgiacb.com/en/live-cameras-on-the-border-of-georgia",
-      "summary": "Stay connected to the Georgia border with our live cameras, offering a front-row seat to all the happenings along this vibrant region.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57348fe29651b64d",
-      "title": "References for SARFI PQ Index - Power Quality Blog",
-      "url": "https://powerquality.blog/2021/01/28/references-for-sarfi-pq-index/",
-      "summary": "An increasing popular use of SARFI is to define the threshold as a curve. For example, would represent the frequency of rms variation events outside the ITI curve voltage tolerance envelope.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "95e156a216d65a51",
-      "title": "SAIFI SARFI & SARFI (X) Indexes for Power Reliability & Power Quality",
-      "url": "https://powerquality.blog/2020/12/09/saifi-sarfi-and-sarfi-x-indexes-for-power-reliability-power-quality/",
-      "summary": "SAIFI SARFI & SARFI (X) Indexes for Power Reliability & Power Quality Published by Terry Chandler, Director of Engineering, Power Quality Thailand LTD/Power Quality Inc., USA.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5c22924fe487b69e",
-      "title": "SARFI",
-      "url": "https://sp.sarfionline.com/",
-      "summary": "SARFI ... SARFI",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "55dee91b1a6ecbc3",
-      "title": "SARFI Report - product-help.se.com",
-      "url": "https://product-help.se.com/docs/EcoStruxure/Power-Monitoring-Expert-2024/content/6_operating/webapps/reports/powerquality/sarfi.htm",
-      "summary": "The System Average RMS Variation Frequency Index (SARFI) Report shows the count of voltage sags and / or swells for the selected sources based on the SARFI indices.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1b4fb999d97db2bd",
-      "title": "Technical Guidelines and Methodology for Power Quality ... - EPRI",
-      "url": "https://restservice.epri.com/publicdownload/000000000001002191/0/Product",
-      "summary": "Momentary Average Interruption Frequency Index (MAIFI), also defined in IEEE 1366, and the System Average RMS variation Frequency Index (SARFI) are some of the indices often used for quantifying momentary interruptions and sags, respectively.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8c14c206d3115da1",
-      "title": "أرقام : معلومات الشركة - سليب هاي السعودية",
-      "url": "https://www.argaam.com/ar/company/companyoverview/marketid/3/companyid/3791",
-      "summary": "\"سليب هاي\" التابعة لـ\"صدق\" توقع عقداً مع \"إمداد للخدمات المساندة\" لتقديم خدمات النقل والمناولة والتخزين لمنتجاتها أرقام 2022/07/03 شركة تابعة لـ\"صدق\" تعتزم زيادة رأس مالها ...",
+      "id": "8f9088b1afa2d71d",
+      "title": "What is the opposite of hate? | Antonyms hate | Promova",
+      "url": "https://promova.com/antonyms-of/hate",
+      "summary": "A direct antonym of 'hate' is 'love.' While 'hate' expresses a strong dislike or aversion towards someone or something, 'love' signifies a deep affection or fondness.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -708,303 +1047,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "06cb18e4b0f0a7b6",
-      "title": "الرئيسية | سليب هاي – SleepHigh",
-      "url": "https://www.sleephigh-eg.com/ar",
-      "summary": "تأسست شركة سليب هاي عام 2014، وهي شركة مصرية رائدة متخصصة في تصنيع وبيع مجموعة واسعة من منتجات الفراش.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "de69e2698c97c975",
-      "title": "الشركة العالمية لتسويق مستلزمات النوم المحدودة - سليب هاي",
-      "url": "https://www.findsaudi.com/ar/CatView/336/1204.aspx",
-      "summary": "تتربع الشركة العالمية لتسويق مستلزمات النوم المحدودة (سليب هاي)، على قائمة الشركات الصناعية في المنطقة المحلية والعربية، وذلك بصدارتها للحصة السوقية لمنتجات أنظمة النوم.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0b13fea5f94e9751",
-      "title": "الشركة العالمية لتسويق مستلزمات النوم المحدودة - سليب هاي",
-      "url": "https://www.saudidirectory.net/ar/Annuaire/Details_infos.php?id=133&activite=Fabrication%20de%20matelas&ville=Jeddah",
-      "summary": "تتربع الشركة العالمية لتسويق مستلزمات النوم المحدودة (سليب هاي)، على قائمة الشركات الصناعية في المنطقة المحلية والعربية، وذلك بصدارتها للحصة السوقية لمنتجات أنظمة النوم.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8735ccd85f4140d9",
-      "title": "تفاصيل الإعلان إعلان الشركة السعودية للتنمية الصناعية \"صدق\" عن إطلاق ...",
-      "url": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-news/issuer-announcements/issuer-announcements-details/?locale=ar&anCat=67&anId=73867&cs=2130",
-      "summary": "كما يتحمل المصدر منفرداً المسؤولية كاملة عن دقة المعلومات الواردة في الإفصاح، ويقر بأنه اتخذ كافة الإجراءات اللازمة -بناءً على ما لديه من معلومات وحقائق- للتحقق عدم وجود أي معلومات أو حقائق ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "65aeed6ab938aff0",
-      "title": "سليب هاي - Find Saudi - دليل الشركات السعودية - الدليل السعودي",
-      "url": "https://www.findsaudi.com/ar/CatView/336/30200/%d8%b3%d9%84%d9%8a%d8%a8_%d9%87%d8%a7%d9%8a.aspx",
-      "summary": "سليب هاي هي شركة سعودية لتصنيع المراتب تأسست عام 1963، وتقدم مراتب طبية وفندقية بضمان يصل إلى 10 سنوات.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a782103c325ce46c",
-      "title": "مراتب سرير طبية وفندقية | المصنع الأول منذ 1963 | سليب هاي",
-      "url": "https://sleephigh.com/",
-      "summary": "سليب هاي المصنع الأول للمراتب في السعودية منذ 1963 تسوق مراتب سرير طبية وفندقية بضمان حتى 10 سنوات وتقسيط تابي وتمارا وتوصيل لكل المدن",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ad142ff3b687b800",
-      "title": "معلومات عن الشرکة العالمیة لتسویق مستلزمات النوم - سلیب هاي",
-      "url": "https://manhom.com/%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/%D8%B3%D9%84%D9%8A%D8%A8-%D9%87%D8%A7%D9%8A/",
-      "summary": "تأسّست \"الشرکة العالمیة لتسویق مستلزمات النوم - سلیب هاي\" عام 1963، المملكة العربية السعودية. وهي شركة تابعة لـ\"الشركة السعودية للتنمية الصناعية - صدق\"، أُنشئت تحت اسم \"المصنع العربي لمراتب السست\"، ومتخصّصة في صناعة مراتب ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "76e3613122782ff2",
-      "title": "All Volkswagen Dealers in Davis, CA 95616 - Autotrader",
-      "url": "https://www.autotrader.com/car-dealers/volkswagen/davis-ca",
-      "summary": "Find Davis Volkswagen Dealers. Search for all Volkswagen dealers in Davis, CA 95616 and view their inventory at Autotrader",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c809b58397bb87aa",
-      "title": "Bing",
-      "url": "https://www.bing.com/trends",
-      "summary": "Bing ... OK",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5f8aa5ab69283da2",
-      "title": "Bing News Quiz – Play Today’s 10 Daily News Trivia - Bing Quizzes",
-      "url": "https://bingquiz.com/bing-news-quiz/",
-      "summary": "Take the latest Bing News Quiz and challenge yourself with daily questions based on trending headlines from the United States, England UK, and global news.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ec1b83f0c9176442",
-      "title": "Bing News Quiz — Quiz d’Actualité Interactif du Jour",
-      "url": "https://bingnewsquizz.com/fr/",
-      "summary": "Le Bing News Quiz est votre voyage quotidien de 20 questions à travers les dernières nouvelles, les événements actuels, les gros titres mondiaux et les grandes histoires.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "254e69b8783c425e",
-      "title": "Cerro Navia - RedHoy",
-      "url": "https://hoycerronavia.cl/",
-      "summary": "Carabineros frustra robo de millonario cargamento electrónico y detiene a dos integrantes de banda en Cerro Navia 20 de Junio de 2026",
+      "id": "0a9522eb58522c25",
+      "title": "10 Fascinating Facts Every Pink Floyd Fan Should Know",
+      "url": "https://70smusicwisdoms.com/10-fascinating-facts-every-pink-floyd-fan-should-know/",
+      "summary": "Discover fascinating Pink Floyd facts that uncover the stories, innovations, and moments that shaped one of rock’s most influential bands.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1027,114 +1073,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "db154408bb6a292c",
-      "title": "Cerro Navia - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Cerro_Navia",
-      "summary": "As a commune, Cerro Navia is a third-level administrative division of Chile administered by a municipal council, headed by an alcalde who is directly elected every four years.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eb8dd4108d8a33c8",
-      "title": "Cerro Navia - Wikipedia, la enciclopedia libre",
-      "url": "https://es.m.wikipedia.org/wiki/Cerro_Navia",
-      "summary": "El proyecto contempla la construcción de un parque de más de 40 hectáreas y de 9 kilómetros de extensión, entre las comunas de Quinta Normal y Cerro Navia, que permitirá revalorizar y recuperar la ribera sur del río de esta área.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8118257ef81a722e",
-      "title": "El Cerro Navia: mapa, y todo lo que necesitas saber y más",
-      "url": "https://conociendochile.com/c-region-metropolitana-de-santiago/cerro-navia/",
-      "summary": "Conozca al Cerro Navia, una comuna ubicada al norponiente de Santiago, la capital chilena, una de las mas tranquilas y seguras de la Región.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e5934c8651cee358",
-      "title": "INICIO - Corporación Cerro Navia",
-      "url": "https://corporacion.cerronavia.cl/",
-      "summary": "Descubre todas las actividades, recintos deportivos, centros de salud y programas culturales que la Corporación de Inclusión Social tiene para los vecinos de Cerro Navia.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eacd9c9f8c2c0a6e",
-      "title": "John Mayer的《Neon》 歌词 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/581591733.html",
-      "summary": "John Mayer的《Neon》 歌词歌曲名:Neon歌手:John Mayer专辑:As-IsJohn Mayer - NeonWhen sky blue gets dark enoughTo see the colors of the city lightsA trail of ruby red and diamond whiteHits her like a sun",
+      "id": "45caf6d9921ba1a5",
+      "title": "10 VERY BEST Things to do in Queen Anne (Seattle) - with photos - citybop",
+      "url": "https://citybop.com/seattle/queen-anne-seattle",
+      "summary": "Queen Anne is an affluent, hilltop neighborhood in Seattle, 5 minutes from downtown. Its main shopping streets are West Galer Street, and Queen Anne Avenue North, with lots of restaurants and cafes.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1157,10 +1099,192 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d393be5aae78acc5",
-      "title": "Local Orlando Breaking News and Live Alerts - WESH 2 News",
-      "url": "https://www.wesh.com/local-news",
-      "summary": "WESH 2 News is your source for the latest local headlines and live alerts. Visit Orlando's most reliable source for breaking news.",
+      "id": "5fc0c7f04ad68c55",
+      "title": "15 Surprising Facts About Pink Floyd: Myths, Music & Madness",
+      "url": "https://15funfacts.com/pink-floyd",
+      "summary": "Prepare to explore the captivating myths, groundbreaking music, and brilliant madness that defined their monumental career through these bite-sized pieces of rock history. 1. The Mysterious Origins of the Band’s Name.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a1bc1640a896c39c",
+      "title": "15 Things to do in Queen Anne Seattle Neighborhood in 2026",
+      "url": "https://seeingwashington.com/queen-anne-seattle-guide/",
+      "summary": "Explore the best things to do in Queen Anne Seattle—from Kerry Park views and Seattle Center attractions to parks, dining, shopping, and local itineraries. A complete neighborhood guide by a Seattle local.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7847a7a698260391",
+      "title": "20 Facts You Probably Didn't Know About Pink Floyd",
+      "url": "https://ultimateclassicrock.com/pink-floyd-facts/",
+      "summary": "Did Roger Waters really buy a guitar to punish his mom? Find out the answers to these and other lesser-known things in our list of 20 Facts You Probably Didn't Know About Pink Floyd.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9da84a1cf2579d60",
+      "title": "50 Facts About Pink Floyd",
+      "url": "https://facts.net/celebrity/50-facts-about-pink-floyd/",
+      "summary": "Discover 50 fascinating facts about Pink Floyd, from their formation to their iconic albums and cultural impact. Dive into the legacy of this legendary rock band.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1df7312ad872445a",
+      "title": "Aichach – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Aichach",
+      "summary": "Seit 1862 bestand das Bezirksamt Aichach, Vorläufer des Landkreises Aichach. Er bildete im Zuge der Kreisreform 1972 mit dem Landkreis Friedberg sowie einzelnen Gemeinden weiterer Landkreise den provisorischen „Landkreis Augsburg-Ost“.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d4aa703ee4a2e3fe",
+      "title": "Aichach-Friedberg - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Aichach-Friedberg",
+      "summary": "Aichach-Friedberg is a Landkreis (district) in Bavaria, Germany. It is bounded by (from the northwest and clockwise) the districts of Augsburg, Donau-Ries, Neuburg-Schrobenhausen, Pfaffenhofen, Dachau, Fürstenfeldbruck and Landsberg, as well as by the city of Augsburg.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a2c7ef99679e14d1",
+      "title": "Aktuelles und Nachrichten aus Kreis Aichach-Friedberg | Lokale News",
+      "url": "https://aktuell.meinestadt.de/kreis-aichach-friedberg",
+      "summary": "Informiere dich hier über aktuelle Polizeiberichte und Feuerwehreinsätze aus Kreis Aichach-Friedberg und Umgebung.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "85ed0118d3307bd7",
+      "title": "Albuquerque, New Mexico - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Albuquerque,_New_Mexico",
+      "summary": "When the Atchison, Topeka and Santa Fe Railroad arrived in 1880, it bypassed the Plaza, locating the passenger depot and railyards about 2 miles (3 km) east in what quickly became known as New Albuquerque or New Town.",
       "discovery_channel": "broad_web",
       "query": "new smart glasses 2026",
       "source": "Bing web RSS",
@@ -1183,12 +1307,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2b262d777e26e021",
-      "title": "Mapa y calles en la Comuna Cerro Navia – Provincia de Santiago",
-      "url": "https://www.urbanocotidiano.com/mapa-y-calles-en-la-comuna-cerro-navia/",
-      "summary": "Descubre el mapa completo de la comuna de Cerro Navia, provincia de Santiago. Calles, avenidas, rutas y autopistas para moverte fácil.",
+      "id": "4bd178057f344044",
+      "title": "Ausflugsziele in Landkreis Aichach-Friedberg - Die Top 20",
+      "url": "https://www.komoot.com/de-de/guide/354122/ausflugsziele-in-landkreis-aichach-friedberg",
+      "summary": "Entdeck die schönsten Ausflugsziele in Landkreis Aichach-Friedberg. Plan deine nächste Wanderung oder Radtour zu einer der 20 Sehenswürdigkeiten.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1209,12 +1333,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6308cc91c128be4e",
-      "title": "Municipalidad de Cerro Navia | Santiago - Facebook",
-      "url": "https://www.facebook.com/CerroNaviaCL/",
-      "summary": "Municipalidad de Cerro Navia is in Cerro Navia. ¡Conectar con nuestras raíces y la naturaleza! 🌿 Vecinas y vecinos participaron en el Taller de Saberes Ancestrales y Sahumos Medicinales, donde aprendieron a elaborar sus propios sahumos naturales para la limpieza, protección y armonía del hogar.",
+      "id": "c98a2ce2882a9e52",
+      "title": "Best of Las Vegas",
+      "url": "https://www.bestoflasvegas.com/",
+      "summary": "Welcome to the Best of Las Vegas. Our reader's have chosen their favorite things to do, places to eat, entertainment and hotel and casino options...",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "best smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1235,400 +1359,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0afbe6eeede56080",
-      "title": "Municipalidad de Cerro Navia – El 17 de Marzo de 1981, dio origen a la ...",
-      "url": "https://www.cerronavia.cl/",
-      "summary": "Turn static files into dynamic content formats. and more. Sign up and create your flipbook. Create once, share everywhere. Issuu turns PDFs and other files into interactive flipbooks and engaging content for every channel.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3e3dfe5ec891d49e",
-      "title": "National Institutes of Health",
-      "url": "https://openi.nlm.nih.gov/",
-      "summary": "National Library of Medicine 8600 Rockville Pike Bethesda, MD 20894",
-      "discovery_channel": "broad_web",
-      "query": "open source smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "69704a53e8580bab",
-      "title": "Navia - Fund. Cerros Isla",
-      "url": "https://www.fundacioncerrosisla.cl/navia",
-      "summary": "El Cerro Navia se ubica en el límite oriente de la comuna del mismo nombre. Es el cerro más pequeño de todos los casos de estudio con sólo 2,72 ha de superficie.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c3324e116ebf8ae2",
-      "title": "open (2) - Linux manual page - man7.org",
-      "url": "https://www.man7.org/linux/man-pages/man2/open.2.html",
-      "summary": "On NFS filesystems with UID mapping enabled, open () may return a file descriptor but, for example, read (2) requests are denied with EACCES. This is because the client performs open () by checking the permissions, but UID mapping is performed by the server upon read and write requests.",
-      "discovery_channel": "broad_web",
-      "query": "open source smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "897bc44491c2ee29",
-      "title": "Opendoor Technologies Inc. (OPEN) 股價、新聞、報價和記錄 - Yahoo 財經",
-      "url": "https://hk.finance.yahoo.com/quote/OPEN/",
-      "summary": "Opendoor Technologies Inc. operates a digital platform for residential real estate transactions in the United States. It buys and sells homes through online e-commerce platform. The company also...",
-      "discovery_channel": "broad_web",
-      "query": "open source smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e70afd9148f8e09c",
-      "title": "Pacific Volkswagen | VW Dealer in L.A. | New and Used VW Vehicles for Sale",
-      "url": "https://www.pacificvolkswagen.com/",
-      "summary": "Pacific Volkswagen in Hawthorne, CA offers new and used Volkswagen cars, trucks, and SUVs to our customers near Los Angeles. Visit us for sales, financing, service, and parts!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "22c818c6fe5fb771",
-      "title": "Paga tu Permiso de Circulación en Cerro Navia: más rápido y más fácil",
-      "url": "https://www.cerronavia.cl/paga-tu-permiso-de-circulacion-en-cerro-navia-mas-rapido-y-mas-facil/",
-      "summary": "Sigue transformando Cerro Navia pagando tu Permiso de Circulación 2026 en la comuna. Cada aporte se traduce en más y mejores calles, nuevas luminarias, plazas renovadas, espacios deportivos y proyectos que impactan directamente en nuestros barrios.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2733510fde852d76",
-      "title": "Rastreo | UPS - Estados Unidos",
-      "url": "https://es-us.ups.com/track?loc=es_US&requester=ST/",
-      "summary": "Rastree uno o varios paquetes con el Rastreo de UPS; use su número de rastreo para rastrear el estado de su paquete.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses; Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0306d1d73b5630e2",
-      "title": "SMART PLC - 西门子中国",
-      "url": "https://w2.siemens.com.cn/smart/",
-      "summary": "SIMATIC S7-200 SMART 是西门子公司经过大量市场调研，为中国客户量身定制的一款高性价比小型 PLC 产品。 结合西门子 SINAMICS 驱动产品及 SIMATIC 人机界面产品以 S7-200 SMART 为核心的小型自动化解决方案将为中国客户创造更多的价值。",
-      "discovery_channel": "adjacent+broad_web+community+developer+research",
-      "query": "smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1b5300f8817afd4d",
-      "title": "SMART中文 (简体)翻译：剑桥词典 - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/smart",
-      "summary": "She tends to wear quite smart clothes for work. I need some smart trousers for work. I wanted a more casual jacket - that one's a bit smart. Paul had booked us into a very smart little hotel off the main square. The nightclub is popular with Berlin's smart set.",
-      "discovery_channel": "adjacent+broad_web+community+developer+research",
-      "query": "smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b901035787ca4557",
-      "title": "smart（英语单词）_百度百科",
-      "url": "https://baike.baidu.com/item/smart/16041586",
-      "summary": "smart是英语中兼具名词、形容词、副词和动词词性的多义词汇，作为名词时多指英格兰人姓氏\"斯马特\"，源于中世纪英语\"敏捷的\"之意。 英式发音为 [smɑːt]，美式发音为 [smɑːrt]。",
-      "discovery_channel": "adjacent+broad_web+community+developer+research",
-      "query": "smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2dfaa446165c2e2d",
-      "title": "Spotify - Web Player: Music for everyone",
-      "url": "https://open.spotify.com/",
-      "summary": "Spotify is a digital music service that gives you access to millions of songs.",
-      "discovery_channel": "broad_web",
-      "query": "open source smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f70110706f06dfae",
-      "title": "SunRise - Forum",
-      "url": "https://forum.sunmc.ru/",
-      "summary": "Подать жалобу на игрока CLASSIC-GRIEF-1 Подать жалобу на администратора CLASSIC-GRIEF-1",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6d838eccee6e06db",
-      "title": "SunRise - Forum",
-      "url": "https://forum.sunmc.ru/partition/70",
-      "summary": "Форум Основное Руководство Руководство",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d00482cce9c08232",
-      "title": "sunRise - 知乎",
-      "url": "https://www.zhihu.com/people/sunrise-57-99",
-      "summary": "sunRise 关注我一起提升认知，支持正义和公理，这样大家的生活才能更好。",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "61580e04468ea768",
-      "title": "Today's Play Bing Quiz - Trends 10+ Trivia Questions Daily Challenge",
-      "url": "https://bingquiz.popularnowonbing.com/bing-homepage-quiz/",
-      "summary": "Take on the daily challenge featuring 10+ fun trivia questions. Test your knowledge and discover quick facts now.",
+      "id": "228750fe27608afe",
+      "title": "Bioluminescence Explained: Why Deep-Sea Creatures Glow and How Their ...",
+      "url": "https://koriscience.com/bioluminescence-explained-en/",
+      "summary": "Most marine bioluminescence is blue or blue-green because blue light travels farther through seawater than many other colors. This makes it especially useful for communication, camouflage, and hunting in the ocean.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1651,10 +1385,140 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c35ee2f2206c8cbc",
-      "title": "Volkswagen Dealer Vacaville CA New & Used Cars for Sale near Fairfield ...",
-      "url": "https://www.vacavillevw.com/",
-      "summary": "Vacaville Volkswagen in Vacaville, CA offers new and used Volkswagen cars, trucks, and SUVs to our customers near Fairfield. Visit us for sales, financing, service, and parts!",
+      "id": "2d343bf76fccb397",
+      "title": "Bioluminescence in the Deep Sea How Animals Create Their Own Light ...",
+      "url": "https://discoverwildscience.com/bioluminescence-in-the-deep-sea-how-animals-create-their-own-light-5-271184/",
+      "summary": "Bioluminescence serves as a defense mechanism for many deep-sea inhabitants. Some species, such as the vampire squid, release a cloud of bioluminescent particles to confuse or startle predators, similar to an octopus’s ink.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7598d6cd12e3f2af",
+      "title": "Bioluminescence: The Glow of the Deep Sea | Strange Animals",
+      "url": "https://strangeanimals.info/marine-life/deep-sea/bioluminescence-how-deep-sea-creatures-create-their-own-light",
+      "summary": "Why do most deep-sea creatures glow blue? Blue light at wavelengths around 470-490 nm travels farthest through seawater because water absorbs red and yellow wavelengths much more rapidly.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "48bed910f9eea849",
+      "title": "Blue Light In Bioluminescence: How Ocean Creatures Glow And Survive In ...",
+      "url": "https://blulites.com/blue-light-in-bioluminescence-ocean-creatures/",
+      "summary": "Blue bioluminescence fills deep ocean habitats with vibrant light, driving complex ecological relationships. These glowing signals help marine life survive and interact in darkness, in ways both similar and distinct from artificial blue light influencing human health.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca564a8a29ef5c12",
+      "title": "Cameras - B&H Photo Video",
+      "url": "https://www.bhphotovideo.com/c/buy/cameras/ci/41772",
+      "summary": "Buy Cameras from top brands like Sony. Explore our website to see our extensive inventory, and enjoy great prices along with legendary service..",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "efdd47d9f73e6484",
+      "title": "Deep Ocean Bioluminescence: How and Why Animals Glow",
+      "url": "https://biologyinsights.com/deep-ocean-bioluminescence-how-and-why-animals-glow/",
+      "summary": "In the sunless depths, producing light is a matter of survival, serving functions for hunting, defense, and communication. For many predators, a glowing lure attracts smaller animals toward a predator’s waiting mouth, a deceptive beacon in the darkness.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4e92618a3b78f392",
+      "title": "Galpin Volkswagen: New &Used VW Dealership North Hills, San Fernando ...",
+      "url": "https://www.galpinvolkswagen.com/",
+      "summary": "Browse our vehicle inventory for new or used VW cars and SUVs for sale in North Hills at Galpin Volkswagen dealership near Los Angeles, CA.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1677,10 +1541,244 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fbe50c92ea7b9c5f",
-      "title": "Volkswagen for Sale in Davis, CA | ITS Auto Sales",
-      "url": "https://www.itsautos.com/inventory/volkswagen/",
-      "summary": "Trade ins are always welcome. We will also buy your used vehicle for cash. So, whether you’re shopping or selling, make sure to give us a call or visit! How to reach us 1700 Olive Dr Ste C, Davis, CA 95616 Business Hours Mon - Sat : 9:00 AM - 6:00 PM Sun : 10:00 AM - 4:00 PM",
+      "id": "8c60f6ade1b5012e",
+      "title": "KOB 4 Eyewitness News, Weather for Albuquerque, New Mexico",
+      "url": "https://www.kob.com/",
+      "summary": "KOB 4 is the latest Albuquerque, New Mexico local news, weather, politics, traffic and sports, covering Albuquerque, Santa Fe and New Mexico.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b4d46a9efab7c84d",
+      "title": "KRQE NEWS 13 - Breaking News, Albuquerque News, New Mexico News ...",
+      "url": "https://www.krqe.com/",
+      "summary": "Local reporting you can trust. Providing the latest news and accurate weather forecasts from Albuquerque to across the state of New Mexico.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca92cf5df989126b",
+      "title": "Landkreis - Landratsamt Aichach-Friedberg",
+      "url": "https://lra-aic-fdb.de/landkreis/",
+      "summary": "Im Herzen Bayerns, zentral zwischen München, Augsburg und Ingolstadt, liegt der Landkreis Aichach-Friedberg mit den Städten Aichach und Friedberg sowie 22 Märkten und Gemeinden.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b9b5c6a8e4b8391",
+      "title": "Landkreis Aichach-Friedberg – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Landkreis_Aichach-Friedberg",
+      "summary": "Der Landkreis Aichach-Friedberg ist der östlichste Landkreis im bayerischen Regierungsbezirk Schwaben. Der Landkreis liegt östlich von Augsburg; die Grenze zwischen den beiden Gebieten bildet meist der Lech.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "374a0aac9cb152c1",
+      "title": "Landratsamt Aichach-Friedberg - BayernPortal",
+      "url": "https://www.bayernportal.de/dokumente/behoerde/91553748389",
+      "summary": "Beschreibungen von Leistungen der staatlichen und kommunalen Verwaltungen mit Kontaktinformationen der zuständigen Behörde.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5019697a101d6916",
+      "title": "Local Albuquerque Breaking News and Live Alerts - KOAT Action 7 News",
+      "url": "https://www.koat.com/local-news",
+      "summary": "KOAT Action 7 News is your source for the latest local headlines and live alerts. Visit Albuquerque's most reliable source for breaking news.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "25c656f5f7a3b213",
+      "title": "New & Used Volkswagen Dealership in Los Angeles | Volkswagen of ...",
+      "url": "https://www.vwofdtla.com/",
+      "summary": "Volkswagen of Downtown L.A. 1900 South Figueroa Street (Entrance on Washington) Los Angeles, CA 90007",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8c074b004b8e327e",
+      "title": "New Century Volkswagen - VW dealership in Glendale, CA",
+      "url": "https://www.newcenturyvw.com/",
+      "summary": "Let us help you find your new or used vehicle in Southern California today. With our team of VW experts, we can walk you through the entire process, including searching for a car, test driving, financing, trading in your current car, and even planning your future service visits.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "800e9856c88a7991",
+      "title": "New Mexico News - KOB 4",
+      "url": "https://www.kob.com/new-mexico-news/",
+      "summary": "KOB 4 is your source for breaking news, weather, politics, traffic and sports. Covering Albuquerque, Santa Fe & all of New Mexico.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a6f9414642dcd088",
+      "title": "New Volkswagen Cars & SUVs for Sale in Los Angeles, CA",
+      "url": "https://www.vwofdtla.com/new-inventory/index.htm",
+      "summary": "Browse the New Volkswagen Lineup for Sale in Los Angeles, CA The new Volkswagen lineup is here to impress Los Angeles drivers, from Santa Monica to Pasadena, and beyond.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1703,10 +1801,478 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ec724470a7d0aed7",
-      "title": "Welcome to Volkswagen of Clovis | New and Used Dealer near Fresno",
-      "url": "https://www.volkswagenofclovis.com/",
-      "summary": "Volkswagen of Clovis is your source for all things Volkswagen in Clovis, CA. Shopping for your dream car is easy at Volkswagen of Clovis and from the moment you walk through our doors you’ll notice that we’re very different from other dealerships around.",
+      "id": "467422be996f9162",
+      "title": "New Volkswagen Los Angeles, CA - LAcarGUY",
+      "url": "https://www.lacarguy.com/new/volkswagen.htm",
+      "summary": "New Volkswagen for Sale Near Los Angeles, CA At Pacific Volkswagen we are proud to offer the widest selection of brand-new Volkswagen sedans and SUVs in the area.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8e1adb174414ecc5",
+      "title": "Pink Floyd - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pink_Floyd",
+      "summary": "Gaining an early underground following as one of the first British psychedelic groups, Pink Floyd were distinguished by their extended compositions, sonic experiments, philosophical lyrics, and elaborate live performances, becoming a leading progressive rock band.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1ba964534a6d6172",
+      "title": "Pink Floyd Biography: The Story, Albums, And Enduring Legacy",
+      "url": "https://70smusicwisdoms.com/pink-floyd-biography/",
+      "summary": "Explore the complete Pink Floyd biography, from their psychedelic beginnings to their groundbreaking 1970s albums and lasting influence on rock music.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6445fb009a5e6c98",
+      "title": "Pink Floyd facts: Members, concept albums, songs, bustups and ... - Gold",
+      "url": "https://www.goldradio.com/artists/pink-floyd/facts-members-albums-split/",
+      "summary": "But how much do you know about (The) Pink Floyd in all their incarnations? As surviving leaders Roger Waters and David Gilmour each continue to branch out in their separate ways, we're taking a look at the story of the band that made them superstars.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7eaddda731a9ffc5",
+      "title": "Pink Floyd | Members, Albums, Songs, & Facts | Britannica",
+      "url": "https://www.britannica.com/topic/Pink-Floyd",
+      "summary": "Pink Floyd is a British rock band that was at the forefront of 1960s psychedelia and popularized the concept album for mass rock audiences in the 1970s.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c1cdf746ad1ef2d5",
+      "title": "Pink Floyd | The Official Site",
+      "url": "https://archive.pinkfloyd.com/history/biography",
+      "summary": "It was a cathartic moment that gave birth to the Floyd's most ambitious project ever: The Wall, a largely autobiographical reflection by Waters on the nature of love, life and art. The double album charts the progress of a rock star, 'Pink', facing the break-up of his marriage while on tour.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "39fcf128e2d52eb8",
+      "title": "Pink Floyd | The Official Site: Music, History & Store",
+      "url": "https://www.pinkfloyd.com/",
+      "summary": "The official Pink Floyd website. Explore every album from Piper at the Gates of Dawn to The Endless River, dive into band history, and shop the store.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "16308850556d2977",
+      "title": "Queen Anne - Visit Seattle",
+      "url": "https://visitseattle.org/neighborhoods/queen-anne/",
+      "summary": "Visit long-standing neighborhood anchors Queen Anne Book Company and Stuhlbergs; check out staff picks and author events at the former and curated home goods, cheeky gifts, and whimsical toys at the latter. Shop chic streetwear and stylish essentials at boutiques MILLIE and Foundation.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bed2eafa413bb89a",
+      "title": "Queen Anne Map – Neighborhoods – Map of Seattle",
+      "url": "https://www.mapofseattle.com/neighborhoods/queen-anne/",
+      "summary": "Queen Anne is a neighborhood and physical feature located northwest of downtown Seattle, Washington, United States. The wealthy area is located atop the eponymous hill, which has a maximum elevation of 139 meters, making it Seattle’s highest-named hill.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "763484bc847d508b",
+      "title": "Queen Anne, Seattle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Queen_Anne,_Seattle",
+      "summary": "Queen Anne is a neighborhood in northwestern Seattle, Washington. Queen Anne covers an area of 2.8 square miles (7.3 km2), and has a population of about 34,000. It is bordered by Belltown to the south, Lake Union to the east, the Lake Washington Ship Canal to the north and Interbay to the west.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "632f9f5f595eb400",
+      "title": "Queen Anne, Seattle Neighborhood Guide | Redfin",
+      "url": "https://www.redfin.com/blog/seattle-wa-neighborhoods/queen-anne/",
+      "summary": "See what it's like to live in the Queen Anne neighborhood of Seattle. Top things to do, insights from locals, housing information, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ed824fd5f16439c",
+      "title": "Queen Anne, Seattle | Everything You Need to Know - Nextdoor",
+      "url": "https://nextdoor.com/neighborhood/queenanne--seattle--wa/",
+      "summary": "Queen Anne is a charming Seattle neighborhood known for its historic homes, sweeping city views, and the iconic Space Needle. It's a peaceful area with a mix of families and professionals, and offers a variety of local shops and restaurants.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed7b41d49834334a",
+      "title": "Queen Anne, Seattle, WA Homes for Sale & Real Estate | Redfin",
+      "url": "https://www.redfin.com/neighborhood/2212/WA/Seattle/Queen-Anne",
+      "summary": "Instantly search and view photos of all homes for sale in Queen Anne, Seattle, WA now. Queen Anne, Seattle, WA real estate listings updated every 15 to 30 minutes.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "93004c084397c973",
+      "title": "Queen Anne, Seattle, WA: Neighborhood Guide & Things to Do",
+      "url": "https://seattletravel.com/queen-anne-seattle/",
+      "summary": "Tourists and locals alike visit Queen Anne because of its rich architectural history, local eateries, and compelling attractions. Let’s dive into some of what makes Queen Anne so special! One of the most compelling reasons to live in Queen Anne is its breathtaking views.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0954896857b2a366",
+      "title": "Secret Light Shows: How Deep-Sea Creatures Use Bioluminescence to ...",
+      "url": "https://www.marinebiodiversity.ca/secret-light-shows-how-deep-sea-creatures-use-bioluminescence-to-survive-and-thrive/",
+      "summary": "The remarkable glow of deep-sea creatures stems from sophisticated chemical reactions in marine organisms that have evolved over millions of years. At the heart of bioluminescence is the interaction between two key molecules: luciferin and luciferase.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "015d9392478ab941",
+      "title": "Startseite / Aichach",
+      "url": "https://www.aichach.de/",
+      "summary": "Wir weisen ausdrücklich darauf hin, dass Sie mit Aufruf der Seite den geschützten Bereich der Website der Stadt Aichach verlassen und den Bestimmungen von Youtube unterliegen.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "70cdf8565d7330f1",
+      "title": "vhs Landkreis Aichach-Friedberg e.V.: vhs Landkreis Aichach-Friedberg e. V.",
+      "url": "https://www.vhs-aichach-friedberg.de/",
+      "summary": "All das in unterschiedlichen Formaten finden Sie bei der Volkshochschule Landkreis Aichach-Friedberg.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "38ec1e930090bfb1",
+      "title": "Vision in the Deep - NOAA Ocean Exploration",
+      "url": "https://oceanexplorer.noaa.gov/expedition-feature/19biolum-background-vision/",
+      "summary": "Most deep-sea animals do not have color vision. They have a single, blue-sensitive, visual pigment because 1) as you go deeper through water in the ocean, all the colors disappear except for blue and 2) most bioluminescence is blue.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f41d8ad930e1ab3e",
+      "title": "Volkswagen Pasadena | Trusted VW Dealership in Pasadena, CA",
+      "url": "https://www.volkswagenpasadena.com/",
+      "summary": "New & Certified Pre-Owned VW Sales in Pasadena, CA Whether you're interested in the sleek styling of the new VW Jetta or the versatility of a pre-owned Tiguan, Volkswagen Pasadena offers diverse options to meet your needs and budget.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1729,12 +2295,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "783aeb9e2c9518b5",
-      "title": "Where's My Package | UPS - United States",
-      "url": "https://www.ups.com/us/en/support/tracking-support/where-is-my-package",
-      "summary": "Where’s My UPS Package? Tracking your UPS package will show you the most up-to-date information on your delivery’s whereabouts.",
+      "id": "0edccd379c25bee5",
+      "title": "Why Do Deep-Sea Animals Have Transparent Bodies?",
+      "url": "https://biologyinsights.com/why-do-deep-sea-animals-have-transparent-bodies/",
+      "summary": "In the deeper, aphotic zone, transparency helps animals evade detection from the searchlights produced by bioluminescent predators. Any opaque body part would scatter or reflect this sudden burst of blue-green light, revealing the animal’s location.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses; Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1755,12 +2321,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f5788e44056841c1",
-      "title": "《memory》歌词中英文对照 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/17114998.html",
-      "summary": "《memory》歌词中英文对照Memory Midnight午夜 Not a sound from the pavement街道上静寂无声 Has the moon lost her memory月亮失去回忆了吗 She is smilling alone只在独自微笑 In the lamplight灯光下 The wither",
+      "id": "cef482a882892d79",
+      "title": "Why do some marine animals appear so colorful despite living in deep ...",
+      "url": "https://coloursinnature.com/faq/why-do-some-marine-animals-appear-so-colorful-despite-living-in-deep-water/",
+      "summary": "Many deep-sea creatures have evolved to use the available blue light effectively, either by producing their own light or by having specialized cells that can make the most of limited light conditions.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1769,9 +2335,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1781,64 +2347,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cdf1064d4a2a6b12",
-      "title": "【smart】_smart汽车价格_smart报价_图片_关注度高_在售_第1页-汽车之家",
-      "url": "https://www.autohome.com.cn/cars/brand-45-x-x-x-x-1.html",
-      "summary": "汽车之家smart汽车频道，提供2026在售smart车型的最新报价、图片、配置、外观颜色、级别、车身结构、口碑分、销量榜排名、成交价、二手车行情、4s ...",
-      "discovery_channel": "adjacent+broad_web+community+developer+research",
-      "query": "smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5701af1e9bf8b077",
-      "title": "如何查询自己往年高考成绩？ - 知乎",
-      "url": "https://www.zhihu.com/question/329089828",
-      "summary": "看完这个回答，大家都可以查到自己的高考成绩。 这么重要的东西，居然会忘了吗？别怕，记不住高考成绩也有办法查询啦！ 高考成绩一般有 网络数据 和 纸质数据 两种保存方式。我们可以从这两方面入手查询自己的高考成绩。以下就是几种查询往年高考成绩的方法啦！收藏点赞不迷路哦！ 一 ...",
+      "id": "c6eb7373ac7c36df",
+      "title": "Why Some Animals Glow: The Genetics of Bioluminescence and Light in the ...",
+      "url": "https://discoverwildscience.com/why-some-animals-glow-the-genetics-of-bioluminescence-and-light-in-the-deep-4-305169/",
+      "summary": "Explore why some animals glow, uncovering the genetics behind bioluminescence and how light serves survival in the ocean’s darkest depths.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3b56baa2aae0640f",
-      "title": "机动战士高达的总版权在哪个公司手里？SUNRISE？_百度知道",
-      "url": "https://zhidao.baidu.com/question/85949356.html",
-      "summary": "表面上来说SUNRISE有的是动画的版权。但是著作权是富野由悠季/矢立肇 而矢立肇是SUNRISE的企划工作室，富野封笔后只负责收钱 所以真正的版权就在SUNRISE手上， 目前为止所有的动画都是SUNRISE做的 玩具版权 是“创通” 创通其实是BANDAI持股的公司商标，贩卖和制造全部都是BANDAI，至于是买还是授权 ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
