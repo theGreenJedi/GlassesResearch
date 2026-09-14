@@ -1,40 +1,42 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-14T05:07:10.014090+00:00",
-  "candidate_count": 87,
-  "classifier_irrelevant_count": 53,
+  "discovered_utc": "2026-09-14T06:26:30.032004+00:00",
+  "candidate_count": 83,
+  "classifier_irrelevant_count": 71,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 34,
-    "broad_web": 39,
-    "developer": 13,
-    "research": 3,
-    "retail": 1
+    "adjacent": 11,
+    "broad_web": 50,
+    "community": 10,
+    "developer": 12
   },
   "relationship_counts": {
     "direct": 0,
-    "enabling": 0,
-    "adjacent": 34,
+    "enabling": 1,
+    "adjacent": 11,
     "speculative": 0,
-    "irrelevant": 53
+    "irrelevant": 71
   },
   "type_counts": {
-    "model": 4,
     "review": 2,
-    "video": 1,
-    "news": 62,
-    "tool": 15,
-    "sdk": 13,
-    "retail": 5,
-    "community": 1
+    "video": 7,
+    "news": 46,
+    "research": 10,
+    "tool": 16,
+    "sdk": 12,
+    "optics": 1,
+    "policy": 2,
+    "retail": 13,
+    "community": 10
   },
   "routing_counts": {
-    "adjacent_radar": 34,
-    "development_hacking": 1,
-    "model_catalog_review": 2,
-    "reject_noise": 53,
-    "research_news_review": 34,
-    "retail_rebrand_review": 2
+    "adjacent_radar": 11,
+    "development_hacking": 2,
+    "policy_privacy": 1,
+    "reject_noise": 71,
+    "report_card_evidence": 2,
+    "research_news_review": 12,
+    "research_optics": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -45,45 +47,48 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
   "candidates": [
     {
-      "id": "61749dbbbf5fde03",
-      "title": "California King Bed Frames | Cali King Memory Foam Frame - Wayfair",
-      "url": "https://www.wayfair.com/furniture/sb1/california-king-bed-frames-c296865-a5896~16902.html",
-      "summary": "Shop Wayfair for all the best California King Bed Frames. Enjoy Free Shipping on most stuff, even big stuff.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "93d6b15ac4b570bd",
+      "title": "Houston Camera Exchange - Buy New & Used Photography Gears",
+      "url": "https://www.houstoncameraexchange.com/",
+      "summary": "Houston Camera Exchange offers new and used camera equipment, cameras, lenses, and accessories. We sell and buy cameras and lenses in Houston Texas.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
+      "source_lane": "research_radar",
       "materiality_score": 2,
-      "keyword_hits": [
-        "shipping"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "enabling",
       "content_types": [
-        "model"
+        "optics"
       ],
-      "primary_type": "model",
+      "primary_type": "optics",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
+        "research_optics"
       ],
       "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lenses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2767dd30894a6673",
-      "title": "11 of the Best Cities Near Long Beach: Finding Your Quiet Oasis in ...",
-      "url": "https://www.pods.com/blog/cities-near-long-beach-ca",
-      "summary": "Explore the best cities near Long Beach, CA, before moving to this beautiful part of SoCal. Seal Beach, Cypress, Lomita, and more.",
+      "id": "703cb31f241cf5c5",
+      "title": "15 Best Examples of Effective Real Estate Ads That Convert Leads into ...",
+      "url": "https://www.sierrainteractive.com/insights/blog/15-examples-effective-real-estate-ads/",
+      "summary": "See 15 real estate ad examples across social, print, video and out-of-home, plus what makes each one convert. Steal these formats to generate more leads.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "AI wearable camera",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -92,11 +97,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "video"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "research_news_review",
+        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -105,12 +111,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3e541a13a7bbee5b",
-      "title": "7 Best California King Bed Frames Reviewed in Detail",
-      "url": "https://www.talkaboutsleep.com/california-king-bed-frame/",
-      "summary": "California king-size beds are very popular as bedroom furniture. When paired with a great mattress, these beds can help you to sleep so much better at night. It offers more than enough space for you and your partner. When buying such beds, you need to ensure that the mattress and frame fit well together. In this post, we will focus on the best California king bed frame that will serve you well ...",
+      "id": "a24d070984fc66e9",
+      "title": "9 Real Estate Advertising Tactics That Boost Engagement | Matterport",
+      "url": "https://matterport.com/learn/real-estate-marketing/advertising",
+      "summary": "Key advertising channels for real estate agents Real estate advertising in 2025 requires a multichannel approach. Each platform (both digital and traditional) plays a distinct role in reaching buyers, generating leads, and amplifying your marketing message.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "AI wearable camera",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -119,122 +125,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57f39f56a339bd51",
-      "title": "Amazon.com: California King - Beds, Frames & Bases / Bedroom Furniture ...",
-      "url": "https://www.amazon.com/Beds-Frames-Bases-California-King/s?rh=n%3A3733101%2Cp_n_g-1004162036091%3A368696011",
-      "summary": "Online shopping for Home & Kitchen from a great selection of Headboards & Footboards, Beds, Bed Frames, Bases & Foundations & more at everyday low prices.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a864ec2f16334a85",
-      "title": "Bed Frames - Quality & Affordable - IKEA",
-      "url": "https://www.ikea.com/us/en/cat/bed-frames-16284/",
-      "summary": "Our range of affordable bed frames are built to last for years. Visit IKEA in store or online to shop comfortable beds in various sizes and styles!",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1da69945368b76e1",
-      "title": "California King Bed Frames From Ikea: Reviews And Buying Guide",
-      "url": "https://www.eyeandpen.com/california-king-bed-frame-ikea/",
-      "summary": "If you’re looking for a California king bed frame, IKEA is a great option with stylish designs at affordable prices. In this comprehensive guide, we’ll walk you through everything you need to know about buying a California king bed frame from IKEA.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4be2fa2809d8c45e",
-      "title": "California King Platform Beds You'll Love | Wayfair",
-      "url": "https://www.wayfair.com/furniture/sb2/california-king-platform-beds-c46122-a115~129-a148522~482863.html",
-      "summary": "California king platform beds ensure a spacious, comfortable sleep without needing a box spring. Perfect for modern bedrooms. Financing options available.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model",
         "tool"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
         "development_hacking",
         "adjacent_radar"
       ],
@@ -244,10 +139,201 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1b6bf8a5fb026ea9",
-      "title": "Cities Nearby Long Beach, California, United States",
-      "url": "https://www.thecitiesnow.com/united_states/california/long_beach",
-      "summary": "Find five hundred cities near Long Beach, California, United States from closest to farthest by distance. Distances from Long Beach to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "id": "12164f31cfece4b3",
+      "title": "Definitive Guide to Google Adwords for Real Estate Business",
+      "url": "https://yoyofumedia.com/google-adwords-for-real-estate/",
+      "summary": "Learn how to effectively use Google AdWords for real estate to generate high-converting leads. Your ultimate guide to success starts here!",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d3aef74744ce684f",
+      "title": "Google Ads Agency | Expert PPC Management for B2B & SaaS - KlientBoost",
+      "url": "https://www.klientboost.com/services/google-ads-agency/",
+      "summary": "Google Ads agency driving qualified leads and revenue growth. 750+ 5-star reviews. PPC management, CRO, and attribution for growing brands.",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99888439cc412bca",
+      "title": "Google Ads for Real Estate: The Ultimate Step-by-Step Guide",
+      "url": "https://www.wordstream.com/blog/ws/2023/09/26/google-ads-for-real-estate",
+      "summary": "Google Ads is the most powerful tool for real estate professionals who want to connect with the increasing number of home buyers and sellers turning to the internet for their property needs. Yesterday’s real estate agents spent most of their time using antiquated marketing methods like cold-calling or postcard mailing.",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4f312e2bdb2e75c1",
+      "title": "Google Adwords For Real Estate Copy These 2 Ads To Win - Easy Agent PRO |",
+      "url": "https://www.easyagentpro.com/blog/google-adwords-for-real-estate/",
+      "summary": "Want to know how to make Google Adwords for real estate leads work? These two formulas and keywords will help you dominate your market in no time!",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e02ef0a477b748ab",
+      "title": "Reach Customers Across YouTube & Search - Google Ads",
+      "url": "https://business.google.com/us/google-ads/",
+      "summary": "Grow your business by running Google Ads. Start your first campaign, get quality leads, and reach new customers on Google and YouTube.",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c7cadab8a75d3c9",
+      "title": "Real Estate Agent Advertising | Zillow Premier Agent",
+      "url": "https://www.zillow.com/premier-agent/real-estate-agent/",
+      "summary": "Take your real estate agent marketing to the next level with direct connections to active home buyers, agent tools and advertising on leading real estate sites like Zillow.",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3623829e20cb0dee",
+      "title": "Real Estate Google Ads: The Best Types for Fast-Converting Leads",
+      "url": "https://www.tomferry.com/blog/real-estate-google-ads/",
+      "summary": "Google lists real estate services among its business examples, but agents should check local eligibility before relying on Local Services Ads as part of their lead generation strategy. What are the best real estate keywords for Google Ads? The best real estate keywords for Google Ads are local, intent-driven, and connected to a clear offer.",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c41c5a6fa4896c72",
+      "title": "THE 15 BEST Things to Do in Birmingham (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Attractions-g30375-Activities-Birmingham_Alabama.html",
+      "summary": "Things to Do in Birmingham, Alabama: See Tripadvisor's 76,267 traveler reviews and photos of Birmingham tourist attractions. Find what to do today, this weekend, or in September.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -271,12 +357,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9f047c3645da8a5f",
-      "title": "Dicas para planejar uma viagem às Ilhas Falkland",
-      "url": "https://www.grupodicas.com/dicas-para-planejar-uma-viagem-as-ilhas-falkland/",
-      "summary": "Onde ficam as Ilhas Falkland? As Ilhas Falkland estão localizadas no Atlântico Sul, a cerca de 500 km da costa da América do Sul, e são formadas por duas ilhas principais, mais centenas de ilhas menores que ficam ao redor.",
+      "id": "4192cab429634e64",
+      "title": "Top Google Ads Agencies in 2026 - DesignRush",
+      "url": "https://www.designrush.com/agency/paid-media-pay-per-click/google-adwords",
+      "summary": "Bird Marketing is a Google Ads agency managing search, display, remarketing, and ecommerce PPC campaigns across 50+ industries including healthcare, SaaS, real estate, and legal.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "AI wearable camera",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -285,11 +371,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "policy"
       ],
-      "primary_type": "news",
+      "primary_type": "policy",
       "routing_targets": [
         "research_news_review",
+        "policy_privacy",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -298,918 +385,28 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aaf861b21d40160a",
-      "title": "Die Gangbreite und -höhe für Gabelstapler im Lager - Mecalux.de",
-      "url": "https://www.mecalux.de/handbuch-lagerlogistik/lagerplanung/gangbreite-lager-gabelstapler",
-      "summary": "Die notwendige Breite und Höhe der Gänge für Gabelstapler im Lager hängt von den technischen Spezifikationen der jeweiligen Staplermodelle ab. Alle Hersteller verfügen über technische Datenblätter mit den entsprechenden Daten ihrer jeweiligen Modelle. Diesen Datenblättern können Sie wichtige Daten für die Planung Ihres Lagers, z. B. mit Einfahrregalanlagen, entnehmen. Zu den ...",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ee0a43fb7816ff3f",
-      "title": "Does IKEA Sell California King Bed Frames? (Explained)",
-      "url": "https://homefurniturediy.com/does-ikea-sell-california-king-bed-frames/",
-      "summary": "Many people search for California king bed frames at IKEA stores. It is one of the known sellers that provides multiple furniture-related items, including cupboard setup, wooden frames, mattresses, and sofas.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d747d3c025549e15",
-      "title": "Does IKEA Sell California King Bed Frames? - (The Truth!)",
-      "url": "https://lettiandco.com/does-ikea-sell-california-king-bed-frames/",
-      "summary": "Unfortunately, no, IKEA does not offer California King bed frames, as well as beds. Their typical large-sized bed frames are made for standard or Eastern-King mattresses, which are obviously different in thicknesses, lengths, and widths. IKEA is one of the best stores out there.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dd363c67d1744a90",
-      "title": "Ebenheit Boden in Lagerhallen vermessen und Boden korrigieren",
-      "url": "https://struktur-logistik.de/",
-      "summary": "Bodenebenheitsprüfung nach DIN & VDMA Gabelstapler können Lasten bis zu einer Höhe von 20 m transportieren. Bei unebenen Boden sind der Staplerfahrer, die Ladung und der Stapler selbst in Gefahr: Der Gabelstapler instabil, der Fahrer muss dann die Geschwindigkeit reduzieren, um Unfälle zu vermeiden, was die Produktivität im Lager verringert.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7fc33cbc2f47a8c9",
-      "title": "Falkland Islands - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Falkland_Islands",
-      "summary": "The archipelago, with an area of 4,700 sq mi (12,000 km2), comprises East Falkland, West Falkland, and 776 smaller islands. As a British Overseas Territory, the Falklands have internal self-governance, while the United Kingdom takes responsibility for their defence and foreign affairs.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2e604c3987bb3dc3",
-      "title": "Falklands: destino exótico, cheio de história e vida selvagem no ...",
-      "url": "https://www.melhoresdestinos.com.br/ilhas-falkland-malvinas-destino.html",
-      "summary": "Fomos às Ilhas Malvinas, no Atlântico Sul, e voltamos com uma série de posts com todas as informações que você precisa saber ao planejar uma viagem para lá.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6986b4070a369a7a",
-      "title": "Gabelstapler - Modelle für jeden Einsatz | Linde Material Handling",
-      "url": "https://www.linde-mh.de/gabelstapler/",
-      "summary": "Gabelstapler von Linde Material Handling: Für jede Tragkraft und jeden Einsatz, mit innovativen Antrieben, maximaler Sicherheit und flexiblen Lösungen.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9ac3ba30da85abf2",
-      "title": "Gabelstapler gebraucht oder neu kaufen - traktorpool.de",
-      "url": "https://www.traktorpool.de/gebraucht/a-Hoflader-Bagger-Stapler/14/b-Gabelstapler/89/",
-      "summary": "Gabelstapler gebraucht oder neu kaufen bei traktorpool.de zu besten Preisen von professionellen Händlern und privaten Anbietern. Attraktive Angebote für hochwertige Landtechnik auch in Ihrer Nähe.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4c90e10c93955e49",
-      "title": "Gabelstapler günstig kaufen oder mieten - HanseLifter",
-      "url": "https://www.hanselifter.de/gabelstapler.html",
-      "summary": "Gabelstapler kaufen oder vielleicht doch lieber mieten? Die Anschaffung von einem neuen Gabelstapler ist nicht gerade günstig. Wir haben für alle Kunden eine entsprechende Lösung. Wenn Sie Ihren Gabelstapler nur für einen bestimmten Zeitraum benötigen, können Sie von unserem Mietstapler-Service profitieren und Geld sparen.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a7f061b62d5cdb96",
-      "title": "Gabelstapler mieten, leasen, kaufen – jetzt Angebote vergleichen!",
-      "url": "https://www.stapler-vergleich.de/",
-      "summary": "Gabelstapler mieten, leasen oder kaufen – die passende Lösung für Ihren Bedarf Ein Gabelstapler ist das Herzstück moderner Logistik, denn auf täglicher Basis sorgen Flurförderzeuge dafür, dass Waren sicher von A nach B transportiert werden.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d8dca3e8ebbc7c0d",
-      "title": "Gabelstapler und Lagertechnik - STILL",
-      "url": "https://www.still.de/fahrzeuge/gabelstapler-und-lagertechnik.html",
-      "summary": "STILL überzeugt mit hochwertigen Gabelstaplern und Lagertechnik sowie der weltweiten Entwicklung und Fertigung von Elektro-, Nieder- und Hochhubwagen.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3afba0051ca059fb",
-      "title": "Gabelstapler | Toyota Material Handling",
-      "url": "https://toyota-forklifts.de/gabelstapler/",
-      "summary": "Unsere Gabelstapler stehen für Qualität und Innovation - Stapler von Toyota Material Handling Mit über 100 Jahren Erfahrung im Bereich Logistik vereinen die Marken Toyota und BT Innovationskraft und Zuverlässigkeit.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d8dc878ea8df3aa9",
-      "title": "História das Ilhas Malvinas – Wikipédia, a enciclopédia livre",
-      "url": "https://pt.wikipedia.org/wiki/Hist%C3%B3ria_das_Ilhas_Malvinas",
-      "summary": "A história das Ilhas Malvinas (ou Falkland Islands em inglês) remonta a pelo menos quinhentos anos, sendo que a exploração e a colonização ativas só ocorreram no século XVIII.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c864b2a05bd51bdd",
-      "title": "IKEA King Size Beds & Bed Frames for sale - eBay",
-      "url": "https://www.ebay.com/b/IKEA-King-Size-Beds-Bed-Frames/175758/bn_95229134",
-      "summary": "Upgrade your sleep with IKEA King Size Beds and Bed Frames, including Sealy Posturepedic and Luroy models. Find your ideal bed on eBay! Shop now!",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "60a10abbba43b998",
-      "title": "Ilhas Falkland - Micropedia",
-      "url": "https://www.micropedia.com.br/index.php/Ilhas_Falkland",
-      "summary": "As Falkland Islands, também chamadas Ilhas Falkland, constituem um arquipélago Antártico-patagônio localizado no sul do oceano Atlântico, na plataforma continental da Patagônia. As principais ilhas estão a cerca de 483 km a leste da costa do sul da América do Sul, a uma latitude de cerca de 52°S.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2536f9098065bf42",
-      "title": "Ilhas Falkland: Guia completo para você planejar sua viagem",
-      "url": "https://www.livemoretravelmore.com/pt-br/ilhas-falkland/",
-      "summary": "As Ilhas Falkland estão localizadas na América do Sul, a aproximadamente 480 km da costa Argentina. Cercado pelo Oceano Atlântico, o arquipélago é composto por duas ilhas principais, East Falkland e West Falkland, e mais de 700 outras ilhotas totalizando um território de pouco mais de 12.000 quilômetros quadrados.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e9f423455e2f72fc",
-      "title": "Ilhas Malvinas ou Falkland - principais dados, economia, soberania",
-      "url": "https://escolaeducacao.com.br/ilhas-malvinas-ou-falkland-principais-dados-economia-soberania/",
-      "summary": "As Ilhas Malvinas (ou Falkland, como os ingleses chamam) é um arquipélago na América do Sul, localizado próximo ao sul da Argentina e do Chile. Território ultramarino com governo autônomo do Reino Unido, a região também é reivindicada pela Argentina, posição que resultou, nos anos 80, em um conflito que teria nome de Guerra das Malvinas.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a7916f6e7dcc077b",
-      "title": "Ilhas Malvinas – Wikipédia, a enciclopédia livre",
-      "url": "https://pt.wikipedia.org/wiki/Ilhas_Malvinas",
-      "summary": "Ilhas Malvinas (em inglês: Falkland Islands; em castelhano: Islas Malvinas), também chamadas Ilhas Falkland, constituem um arquipélago britânico ultramarino, localizado no sul do oceano Atlântico, na plataforma continental da Patagônia.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9a55ba7d6302929a",
-      "title": "Ilhas Malvinas: onde ficam, história e conflito - Todo Estudo",
-      "url": "https://www.todoestudo.com.br/geografia/ilhas-malvinas",
-      "summary": "As Ilhas Malvinas (em inglês, Falkland Islands) são um arquipélago do Atlântico Sul situado a cerca de 500 km da costa da Argentina. Estão sob domínio do Reino Unido desde 1833, mas a Argentina reivindica a soberania sobre o território, disputa que levou à guerra de 1982.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7e6bf882b9df436b",
-      "title": "King Beds - King Size Bed Frames - IKEA",
-      "url": "https://www.ikea.com/us/en/cat/beds-bm003/f/king-beds-f-typed-reference-measurement--king-bed-frames/",
-      "summary": "Shop affordable king beds at IKEA! Find durable wood and metal king bed frames, including many designs with built-in storage.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "387703b9167b59f4",
-      "title": "Sind Ihre Lagerstapler die richtigen für Sie? - staplerfokus.com",
-      "url": "https://www.staplerfokus.com/erhohen-sie-die-produktivitat/sind-ihre-lagerstapler-die-richtigen-fur-sie/",
-      "summary": "Um herauszufinden, ob Ihre Stapler die richtigen für Sie – und Ihre Lagerhalle – sind, setzen Sie sich mit einem vertrauenswürdigen Anbieter in Ihrer Nähe in Verbindung. Dessen Lagerhallen-Experte kann eine Betriebsinspektion in die Wege leiten, die verborgenes Potenzial innerhalb Ihres Betriebsgeländes zum Vorschein bringen kann.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "097c920fb14531da",
-      "title": "Stapler mieten in München, Bayern & Süddeutschland",
-      "url": "https://roggermaier.de/gabelstapler/",
-      "summary": "In Lagerhallen ist ein Elektrostapler sinnvoll, während für schwieriges Außengelände ein Diesel-betriebener Geländestapler gebraucht wird. Unsere kompetenten und freundlichen Vertriebsmitarbeiter beraten Sie gerne, um Ihre Fragen zu beantworten und den für Ihr Projekt geeignetsten Gabelstapler mit Ihnen auszusuchen.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2cdb6463ec62dbed",
-      "title": "THE 15 BEST Things to Do in Long Beach (2026) - Tripadvisor",
-      "url": "https://www.tripadvisor.com/Attractions-g32648-Activities-Long_Beach_California.html",
-      "summary": "Things to Do in Long Beach, California: See Tripadvisor's 77,607 traveler reviews and photos of Long Beach tourist attractions. Find what to do today, this weekend, or in September.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "862e9bf6b250860b",
-      "title": "THE BEST 10 RESTAURANTS IN LONG BEACH, CA - Yelp",
-      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Long+Beach,+CA",
-      "summary": "Best Restaurants in Long Beach, CA - Last Updated September 2026 - Ammatoli, Bacari, The 908, Saint & Second, The Breakfast Bar, BO-beau kitchen + roof tap, Kin Long Beach, Buen Provecho, Ellie's, Boathouse on the Bay",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "63ac8e3142bb64ad",
-      "title": "Tudo o que você precisa saber para planejar uma viagem às Ilhas Falkland",
-      "url": "https://www.melhoresdestinos.com.br/dicas-de-como-planejar-uma-viagem-para-as-ilhas-falkland-malvinas.html",
-      "summary": "Saiba como planejar uma viagem para as Ilhas Falkland: como agendar passeios, voos, hotéis e sugestão de roteiro para conhecer as Malvinas.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "92517a7243e538a8",
-      "title": "Bài 8: Câu hỏi trắc nghiệm Chương 1 – Tổng quan về Tự động hóa quy ...",
-      "url": "https://tranduythanh.com/2025/03/23/bai-8-cau-hoi-trac-nghiem-chuong-1-tong-quan-ve-tu-dong-hoa-quy-trinh-bang-robot/",
-      "summary": "What role did Arden play in XYZ Inc.'s Change Management department after becoming an Automation Champion? Building software robots. Encouraging and supporting the adoption of automation. Implementing automation projects.",
+      "id": "411e4f53901130c5",
+      "title": "Used Cars for Sale Under $2,000 Near Me | Cars.com",
+      "url": "https://www.cars.com/shopping/price-under-2000/",
+      "summary": "Shop used vehicles for sale under $2,000 at Cars.com. Research, compare, and save listings, or contact sellers directly from 653 vehicles nationwide.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4afbc25fceadb50e",
-      "title": "Change Champion: Key Roles & Responsibilities - ProjectManager",
-      "url": "https://www.projectmanager.com/blog/change-champion",
-      "summary": "A change champion is part of the larger change management process. Learn who they are and what they do to manage organizational change.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3eb539e6236469f4",
-      "title": "Change Management Roles: The Most Important Change Positions Explained",
-      "url": "https://www.projectmanagertemplate.com/post/change-management-roles-the-most-important-change-positions-explained",
-      "summary": "Learn the essential change management roles required for successful transformation in large organisations.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "661f6108cfd42692",
-      "title": "Create a project | Microsoft Support",
-      "url": "https://support.microsoft.com/en-gb/project/create-a-project",
-      "summary": "Create a project for me. Note Microsoft Project for the web will soon become Microsoft Planner. You can continue using most of the Project for the web capabilities in the new Planner once it's rolled out to your organization. Learn more about the new Planner in Frequently asked questions about Planner and Planner help & learning.",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "baa38f7242cafb55",
-      "title": "Lesson 6 - How can automation fit into my business?",
-      "url": "https://coda.io/@goodwill-tech/introduction-to-automation/lesson-6-how-can-automation-fit-into-my-business-15",
-      "summary": "This lesson outlines organizational changes during automation journeys, exploring newly-created jobs, roles, and upskilling possibilities that come with the process.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f3eec6f844b5a27d",
-      "title": "MIS 3305 Exam 2 Flashcards | Quizlet",
-      "url": "https://quizlet.com/838578897/mis-3305-exam-2-flash-cards/",
-      "summary": "What role did Arden play in XYZ Inc.'s Change Management department after becoming an Automation Champion? Encouraging and supporting the adoption of automation. In what two ways should a task or process be like to be automatable? Rule-based and repetitive and predictable",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3882771d248a9e40",
-      "title": "Project help | Microsoft Support",
-      "url": "https://support.microsoft.com/en-au/project/project-help",
-      "summary": "Project 2016 is a desktop tool for managing individual projects. Leverage built-in templates, Gantt charts, timelines, out-of-box reports, resource planning, and many other features to help manage your projects successfully. Learn more.",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "129c30b0f7fa54ef",
-      "title": "Project training | Microsoft Support",
-      "url": "https://support.microsoft.com/en-gb/project/project-training",
-      "summary": "Project Online and Project desktop Quick Start Guides for Project Online and Project Server 2013 Create a project in Project desktop",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "451b938eaa80fc89",
-      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
-      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
-      "summary": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 4,
       "keyword_hits": [
-        "released"
+        "research"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "model",
+        "research",
+        "tool",
+        "sdk",
         "retail"
       ],
-      "primary_type": "model",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1219,118 +416,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8e33297f61721143",
-      "title": "Six Sigma Roles and Responsibilities [2026/27]",
-      "url": "https://www.sixsigma-institute.org/Six_Sigma_Roles_And_Responsibilities.php",
-      "summary": "Each role, whether a team member, team leader, manager, executive, change agent, stakeholder, or coach, carries specific duties crucial to the overall success of Six Sigma implementations.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "48d4349f2fbee8a6",
-      "title": "Solved What role did Arden play in XYZ Inc.'s Change - Chegg",
-      "url": "https://www.chegg.com/homework-help/questions-and-answers/role-arden-play-xyz-inc-s-change-management-department-becoming-automation-champion-buildi-q213289160",
-      "summary": "What role did Arden play in XYZ Inc. ' s Change Management department after becoming an Automation Champion? Building software robots. Implementing automation projects. Conducting Process Mining analysis.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d7a5082382b7aca3",
-      "title": "Specialize AI Quiz - wayground.com",
-      "url": "https://wayground.com/admin/quiz/66b2b419ab917406cfbe1f3b/specialize-ai",
-      "summary": "What role did Arden play in XYZ Inc.'s Change Management department after becoming an Automation Champion? Building software robots. Encouraging and supporting the adoption of automation. Implementing automation projects. Conducting Process Mining analysis. 3.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c3a4ad2156069a2d",
-      "title": "The AI Champion role - Resource | OpenAI Academy",
-      "url": "https://academy.openai.com/public/clubs/champions-ecqup/resources/the-ai-champion-role",
-      "summary": "This article will help you understand the two primary Champion roles, recognize how Champion work shows up across an organization, and identify where you may contribute.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "58cffe36d6e4ca05",
-      "title": "Today’s Wordle Hints for September 10, 2026 - The New York Times",
-      "url": "https://www.nytimes.com/2026/09/09/crosswords/wordle-review-1909.html",
-      "summary": "Wordle Review No. 1,909 Scroll down for hints and conversation about the puzzle for Thursday, Sept. 10, 2026.",
+      "id": "6ae5dd0d7e638fff",
+      "title": "2026 Harley-Davidson Nightster Review - Total Motorcycle",
+      "url": "https://www.totalmotorcycle.com/motorcycles/2026/2026-harley-davidson-nightster",
+      "summary": "Introducing the 2026 Harley-Davidson Nightster… Light, low, and loaded, the 2026 Nightster is built to be the bike you’ve been looking for. At 481 lbs wet with a low 27.1” seat height, the 2026 Nightster carries its weight where it counts: low, centered, and in your control.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1355,10 +444,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e4762170a4e7937f",
-      "title": "UiPath Certified Professional Automation Business Analyst Professional ...",
-      "url": "https://quizlet.com/760478184/uipath-certified-professionalautomation-business-analyst-professional-flash-cards/",
-      "summary": "What role did Arden play in XYZ Inc.'s Change Management department after becoming an Automation Champion? A) Encouraging and supporting the adoption of automation.",
+      "id": "5947fd27b65ff29f",
+      "title": "Cars for Sale Under $2,000 in georgia (Private Owners & Dealers)",
+      "url": "https://www.bestcarfinder.com/used-cars-under-2000-in-georgia",
+      "summary": "BestCarFinder has 30 cars for sale under $2,000 in georgia from private owners and dealers. Discover the best deals on used cars starting from $123.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -1370,7 +459,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "retail"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1382,10 +472,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7c0eebf8ee110ed7",
-      "title": "Wordle Review - The New York Times",
-      "url": "https://www.nytimes.com/spotlight/wordle-review",
-      "summary": "Need help with today's Wordle? Get hints for the puzzle and share your score with the Wordler community in the comments.",
+      "id": "b7a19856d690c8b4",
+      "title": "Create an account on YouTube",
+      "url": "https://support.google.com/youtube/answer/161805?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "Once you've signed in to YouTube with your Google Account, you can create a YouTube channel on your account. YouTube channels let you upload videos, leave comments, and create playlists.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "13f2a15f72d2b997",
+      "title": "Harley-davidson Nightster Review (2026) — Top Speed, Problems & Is It ...",
+      "url": "https://motoryk.com/bikes/harley-davidson/nightster",
+      "summary": "The Harley-Davidson Nightster was first introduced in 2022 as part of the Sportster S family, built on the Revolution Max 975T V-twin engine platform and designed to appeal to a new generation of riders with a modern, stripped-down aesthetic. It replaced the aging iron-block Sportster lineup and represented a significant technological leap with liquid cooling, dual overhead cams, and ride ...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1399,7 +517,7 @@
       "relationship": "irrelevant",
       "content_types": [
         "review",
-        "community"
+        "tool"
       ],
       "primary_type": "review",
       "routing_targets": [
@@ -1411,23 +529,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b8b23ed0f9cdb091",
-      "title": "Extreme - definition of extreme by The Free Dictionary",
-      "url": "https://www.thefreedictionary.com/extreme",
-      "summary": "Define extreme. extreme synonyms, extreme pronunciation, extreme translation, English dictionary definition of extreme. adj. 1. Most remote in any direction; outermost or farthest: the extreme edge of the field.",
+      "id": "e4fafcd002f3f1e8",
+      "title": "Jobs in Seattle | Microsoft Careers",
+      "url": "https://careers.microsoft.com/v2/global/en/locations/seattle-area.html",
+      "summary": "Upholds Microsoft standards of security, privacy, and other compliance requirements and expectations. Understands the importance of building solutions that expand upon the work of others. Contributes to the refinement of product features by escalating findings from analyses to inform decisions regarding the engineering of products.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "privacy"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "policy"
       ],
-      "primary_type": "news",
+      "primary_type": "policy",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1437,23 +557,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c73155811156d8c4",
-      "title": "EXTREME Definition & Meaning - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/dictionary/extreme",
-      "summary": "excessive, immoderate, inordinate, extravagant, exorbitant, extreme mean going beyond a normal limit. excessive implies an amount or degree too great to be reasonable or acceptable.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "4d41f133b57e215d",
+      "title": "Manage your home area or current location for YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "YouTube TV outside of your home area While outside of your home area, you can watch programming local to where you are, but you can’t record or watch networks local to your home area. Frequent travellers: To make sure you get the correct local networks, use YouTube TV at least once every 3 months in your home area.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video",
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1463,23 +585,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5ea00a4fd41bc730",
-      "title": "EXTREME Definition & Meaning | Dictionary.com",
-      "url": "https://www.dictionary.com/browse/extreme",
-      "summary": "Something extreme is far out, either in terms of distance or intensity. Extreme sports are wild or dangerous, and an extreme height is very high. When you talk about extreme things, you're talking about things that are very, very...something. An extreme point is the farthest distance from a place.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "d59d624cd03bc74f",
+      "title": "Qualitative Descriptive Methods in Health Science Research",
+      "url": "https://asu.elsevierpure.com/en/publications/qualitative-descriptive-methods-in-health-science-research/",
+      "summary": "Results: This paper presents steps to conducting a qualitative descriptive study under the following headings: describing the qualitative descriptive approach, designing a qualitative descriptive study, steps to data analysis, and ensuring rigor of findings.",
+      "discovery_channel": "community",
+      "query": "AI smart glasses real world test reddit",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research",
+        "study"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1489,23 +615,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d0f7d3f46af6c8e7",
-      "title": "EXTREME definition and meaning | Collins English Dictionary",
-      "url": "https://www.collinsdictionary.com/dictionary/english/extreme",
-      "summary": "You use extreme to describe situations and behaviour which are much more severe or unusual than you would expect, especially when you disapprove of them because of this.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "9bba60019df94136",
+      "title": "Qualitative Descriptive Methods in Health Science Research",
+      "url": "https://www.researchgate.net/profile/Bronwynne-Evans/publication/291396845_Qualitative_Descriptive_Methods_in_Health_Science_Research/links/5f9d7294a6fdccfd7b8e0119/Qualitative-Descriptive-Methods-in-Health-Science-Research.pdf?origin=publication_detail",
+      "summary": "Results: This paper presents steps to conducting a qualitative descriptive study under the following headings: describing the qualitative descriptive approach, designing a qualitative...",
+      "discovery_channel": "community",
+      "query": "AI smart glasses real world test reddit",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research",
+        "study"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1515,23 +645,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "836c013828d5f86d",
-      "title": "EXTREME | definition in the Cambridge English Dictionary",
-      "url": "https://dictionary.cambridge.org/us/dictionary/english/extreme",
-      "summary": "EXTREME meaning: 1. very large in amount or degree: 2. very severe or bad: 3. Extreme beliefs and political…. Learn more.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "595a541a539b082f",
+      "title": "Qualitative Descriptive Methods in Health Science Research",
+      "url": "https://sage.cnpereading.com/doi/10.1177/1937586715614171",
+      "summary": "This paper presents steps to conducting a qualitative descriptive study under the following headings: describing the qualitative descriptive approach, designing a qualitative descriptive study, steps to data analysis, and ensuring rigor of findings.",
+      "discovery_channel": "community",
+      "query": "AI smart glasses real world test reddit",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research",
+        "study"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1541,23 +675,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f510ab56149fc0a2",
-      "title": "EXTREME | English meaning - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/dictionary/english/extreme",
-      "summary": "EXTREME definition: 1. very large in amount or degree: 2. very severe or bad: 3. Extreme beliefs and political…. Learn more.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "1b2b8fa69364e7f5",
+      "title": "Qualitative Descriptive Methods in Health Science Research.",
+      "url": "https://read.qxmd.com/read/26791375/qualitative-descriptive-methods-in-health-science-research",
+      "summary": "RESULTS: This paper presents steps to conducting a qualitative descriptive study under the following headings: describing the qualitative descriptive approach, designing a qualitative descriptive study, steps to data analysis, and ensuring rigor of findings.",
+      "discovery_channel": "community",
+      "query": "AI smart glasses real world test reddit",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research",
+        "study"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1567,23 +705,26 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "77357cf77c5b180c",
-      "title": "EXTREMELY Definition & Meaning - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/dictionary/extremely",
-      "summary": "The meaning of EXTREMELY is in an extreme manner.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "4a2478b2b1ab35bd",
+      "title": "Used Cars for Sale by Owner Under $2,000 - Kelley Blue Book",
+      "url": "https://www.kbb.com/cars-for-sale/used/by-owner/cars-under-2000",
+      "summary": "Shop, watch video walkarounds and compare prices on Used Cars listings. See Kelley Blue Book pricing to get the best deal.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video",
+        "tool",
+        "sdk",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1593,10 +734,205 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4344864a29bc7d51",
-      "title": "Facts & Events That Happened Today In History - The Fact Site",
-      "url": "https://www.thefactsite.com/day/today/",
-      "summary": "Here you’ll find some interesting facts & events that happened today in history, as well as The Fact Site’s Fact of the Day! Learn what special holiday falls on this day and how to celebrate it.",
+      "id": "196140d7dc3e1515",
+      "title": "Used Cars for Sale by Owner Under $2,000 Near Me - Autotrader",
+      "url": "https://www.autotrader.com/cars-for-sale/by-owner/cars-under-2000",
+      "summary": "Test drive Used Cars at home from the top dealers in your area. Search from 326 Used cars for sale, including a 1996 Ford Explorer 4WD 4-Door, a 1997 Ford F150 2WD Regular Cab, and a 1997 Ford F150 4x4 SuperCab ranging in price from $100 to $2,000.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "79ceb0bc2928bd9b",
+      "title": "Used Cars for Sale Under $2,000 - Kelley Blue Book",
+      "url": "https://www.kbb.com/cars-for-sale/used/cars-under-2000",
+      "summary": "Shop, watch video walkarounds and compare prices on Used Cars listings. See Kelley Blue Book pricing to get the best deal.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "94f058db30ab81bd",
+      "title": "Used Cars for Sale Under $2,000 Near Me in Atlanta, GA - Autotrader",
+      "url": "https://www.autotrader.com/cars-for-sale/cars-under-2000/atlanta-ga",
+      "summary": "Used cars for sale under $2,000 in Atlanta, GA. Browse affordable sedans, SUVs and more near you on Autotrader.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a9ccf7d2bb33fcb0",
+      "title": "Used Cars for Under $2,000 - CarGurus",
+      "url": "https://www.cargurus.com/Cars/spt-cars-under-2000",
+      "summary": "Car shopping on a budget? Find great deals on used cars for under $2,000 near you - only on CarGurus!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "443ee9d6d58dca48",
+      "title": "Used Cars for Under $2,000 in Georgia - CarGurus",
+      "url": "https://www.cargurus.com/Cars/spt-cars-under-2000-Georgia_L5878",
+      "summary": "Car shopping on a budget? Find great deals on used cars for under $2,000 in Georgia - only on CarGurus!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "411538e5f46e3c40",
+      "title": "Used Cars Under $2,000 for Sale (with Photos) - CARFAX",
+      "url": "https://www.carfax.com/Used-Cars-Under-2000_f2",
+      "summary": "Find the best used car under $2,000 near you. Every used car for sale comes with a free CARFAX Report. We have 127 used cars under $2,000 for sale that are reported accident free, 9 1-Owner cars, and 212 personal use cars.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eee9bdd9cc846158",
+      "title": "Used Cars Under $2,000 for Sale in Atlanta, GA - Edmunds",
+      "url": "https://www.edmunds.com/used-cars-under-2000-atlanta-ga/",
+      "summary": "Save up to $1,859 on one of 20 used cars for sale in Atlanta, GA. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1bd6cc5edabe435e",
+      "title": "20 दाल के नाम | Pulses Name in Hindi and English Chart (Free PDF)",
+      "url": "https://worksheetworld.com/pulses-name-in-hindi/",
+      "summary": "दाल के नाम (Pulses Name in Hindi and English) worksheet में मसूर, मूंग, उड़द, चना, मटर और सोयाबीन जैसी प्रमुख दालों के नाम bilingual चार्ट में दिए गए हैं।",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1619,12 +955,509 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9fbec4fccffaa17c",
-      "title": "Huawei Mobile Phones: Latest & New Smartphones List (14th September ...",
-      "url": "https://www.gadgets360.com/mobiles/huawei-phones",
-      "summary": "List of all Huawei phones including latest, upcoming mobile phones from Huawei smartphone brands. Also find Huawei 5g smartphones, camera phones & best Huawei mobiles with price, specifications and reviews.",
+      "id": "df63939dd69b9318",
+      "title": "2025 Nightster Motorcycle | Harley-Davidson USA",
+      "url": "https://www.harley-davidson.com/us/en/motorcycles/2025/nightster.html",
+      "summary": "The Harley-Davidson 2025 Nightster motorcycle features a low-slung, stripped down look that evokes the bobber bikes of the '50s and '60s. See the specs now.",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e3cc20070ad6fdc3",
+      "title": "2026 Harley-Davidson Nightster – Bold Style & Performance",
+      "url": "https://classicharley.com/2026-nightster",
+      "summary": "Discover the 2026 Harley-Davidson Nightster. Blacked-out Revolution Max 975T, 27” seat, 481 lbs. Pure Sportster® style, tech, and custom attitude.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e9a66c546ad6c58",
+      "title": "2026 Nightster Motorcycles | Harley-Davidson USA",
+      "url": "https://www.harley-davidson.com/us/en/motorcycles/nightster.html",
+      "summary": "The 2026 Harley-Davidson Nightster motorcycle combines the timeless cruiser design with the performance and features of a modern motorcycle. As a member of the Sport family, it's known for its agile handling, powerful engines, and cust...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2b7d0ad922158504",
+      "title": "[Solved] निम्नलिखित में से सोयाबीन का वानस्पतिक नाम क",
+      "url": "https://testbook.com/question-answer/hn/which-of-the-following-is-the-botanical-name-of-so--68a239439a104341a0f66950",
+      "summary": "सोयाबीन प्रोटीन से भरपूर होता है और इसका उपयोग व्यापक रूप से टोफू, सोया दूध और सोया सॉस जैसे खाद्य उत्पादों के लिए किया जाता है।",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "82261f11fa051b90",
+      "title": "[Solved] सोयाबीन का वानस्पतिक नाम क्या है?",
+      "url": "https://testbook.com/question-answer/hn/what-is-the-botanical-name-of-soybean--5ba49aac50d5a10c381368a0",
+      "summary": "सोयाबीन या सोया बीन पूर्वी एशिया की मूल प्रजाति है, जो व्यापक रूप से इसकी खाने योग्य फली के लिए उगाई जाती है, जिसके कई उपयोग होते हैं।",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b823f97adbc38845",
+      "title": "About – Microsoft Rewards",
+      "url": "https://rewards.bing.com/welcome?lang=es-es",
+      "summary": "Earn points with Microsoft Rewards, redeemable for gift cards, bonus sweepstakes entries, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "35fd52a8bf411ed8",
+      "title": "Bank Indonesia dan PT. SBA Bangun Kolaborasi di Aceh",
+      "url": "https://www.acehstandar.com/news/bank-indonesia-dan-solusi-bangun-andalas-bangun-kolaborasi-di-aceh/index.html",
+      "summary": "Melalui kolaborasi antara Kantor Perwakilan Bank Indonesia Provinsi Aceh dan PT Solusi Bangun Andalas, Limbah Racik Uang Kertas (LRUK) hasil pemusnahan uang dimanfaatkan sebagai bahan bakar alternatif dalam proses produksi semen melalui teknologi co-processing.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e52a1f2c953f6c57",
+      "title": "Bank Indonesia dan Solusi Bangun Andalas Ubah Limbah Uang Kertas Jadi ...",
+      "url": "https://portalnusa.com/2026/07/30/bank-indonesia-dan-solusi-bangun-andalas-ubah-limbah-uang-kertas-jadi-bahan-bakar-industri/",
+      "summary": "Melalui kerja sama antara Kantor Perwakilan Bank Indonesia Provinsi Aceh dan PT Solusi Bangun Andalas, limbah hasil penghancuran uang kertas digunakan sebagai bahan bakar alternatif dalam proses produksi semen.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "09f7ad1a1c68c7e1",
+      "title": "Bank Indonesia Sulap 5 Ton Uang Rupiah Tak Layak Edar Jadi Bahan Bakar ...",
+      "url": "https://aspek.id/bank-indonesia-sulap-5-ton-uang-rupiah-tak-layak-edar-jadi-bahan-bakar-semen/",
+      "summary": "Kantor Perwakilan Bank Indonesia (BI) Provinsi Aceh berkolaborasi dengan PT Solusi Bangun Andalas memanfaatkan Limbah Racik Uang Kertas (LRUK) hasil pemusnahan uang sebagai bahan bakar alternatif ramah lingkungan untuk proses produksi semen.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "95af99a638f84b6f",
+      "title": "BI Aceh dan Pabrik Semen Solusi Bangun Andalas Sulap 5 Ton Limbah Uang ...",
+      "url": "http://www.porosaceh.com/detail/45898/bi-aceh-dan-pabrik-semen-solusi-bangun-andalas-sulap-5-ton-limbah-uang-kertas-jadi-bahan-bakar-industri",
+      "summary": "Bank Indonesia menyerahkan lima ton limbah uang kertas kepada PT Solusi Bangun Andalas untuk dijadikan bahan bakar alternatif di pabrik semen Lhoknga, Aceh Besar.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9862ef75d5f2b8bb",
+      "title": "BI Aceh dan PT SBA kolaborasi manfaatkan LRUK jadi energi ramah lingkungan",
+      "url": "https://popularitas.com/berita/bi-aceh-dan-pt-sba-kolaborasi-manfaatkan-lruk-jadi-energi-ramah-lingkungan/",
+      "summary": "POPULARITAS.COM – BI Aceh dan PT Solusi Bangun Andalas (PT SBA), kolaborasi manfaatkan uang tak layak edar. Kerja sama tersebut, memanfaatkan limbah racik uang kertas (LRUK) sebagai bahan bahan bakar alternatif ramah lingkungan dalam proses proses produksi semen melalui teknologi co-processing.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a75fcdcac4adcdf8",
+      "title": "BI Aceh dan PT Solusi Bangun Andalas Kerja Sama Olah Limbah Uang Jadi ...",
+      "url": "https://www.headline.co.id/113716/bi-aceh-dan-pt-solusi-bangun-andalas-kerja-sama-olah-limbah-uang-jadi-energi/",
+      "summary": "R. Adi Santosa, General Manager PT Solusi Bangun Andalas, menyatakan bahwa pemanfaatan limbah uang kertas merupakan bagian dari komitmen perusahaan dalam mengurangi emisi karbon melalui penggunaan bahan bakar alternatif.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64c86a236ef85c42",
+      "title": "BI Aceh Ubah Limbah Uang Rusak Jadi Bahan Bakar Alternatif Lewat Kerja ...",
+      "url": "https://harianrakyataceh.com/news/bi-aceh-ubah-limbah-uang-rusak-jadi-bahan-bakar-alternatif-lewat-kerja-sama-dengan-semen-andalas/index.html",
+      "summary": "Foto: Kepala Perwakilan Bank Indonesia (KPwBI) Aceh Agus Chusaini bersama General Manager PT Solusi Bangun Andalas (SBA) R. Adi Santosa menandatangani kerja sama pemanfaatan limbah racik uang kertas (LRUK) sebagai bahan bakar alternatif di pabrik SBA, Lhoknga, Kabupaten Aceh Besar, Kamis (30/7/2026 ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "006d6ff7ee97eb3d",
+      "title": "Bing",
+      "url": "https://global.bing.com/maps/",
+      "summary": "Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial and 3d imagery. Do more with Bing Maps.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bfffeb0d36e59146",
+      "title": "Bing",
+      "url": "https://es.bing.com/maps",
+      "summary": "Especifica varias ubicaciones en el mapa, obtén indicaciones de transporte público/a pie/en coche, consulta las condiciones del tráfico en directo, planifica viajes, mira imágenes por satélite, aéreas o en 3D. Haz más cosas con Bing Maps.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7a448ce9fa1f029d",
+      "title": "Bing",
+      "url": "https://www.microsoft.com/es-ar/bing/",
+      "summary": "Bing ... Bing",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bb44d77402e5b2d4",
+      "title": "Búsqueda: Microsoft Bing",
+      "url": "https://www.mx.bing.com/",
+      "summary": "Busca con Microsoft Bing y usa la eficacia de la inteligencia artificial para buscar información, explorar páginas web, imágenes, vídeos, mapas y mucho más. Un motor de búsqueda inteligente para los más curiosos.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "db4aeeb5f8123d58",
+      "title": "Colorafi, K. J., & Evans, B. (2016). Qualitative Descriptive Methods in ...",
+      "url": "https://www.scirp.org/reference/referencespapers?referenceid=3145531",
+      "summary": "Colorafi, K. J., & Evans, B. (2016). Qualitative Descriptive Methods in Health Science Research. HERD Health Environments Research & Design Journal, 9, 16-25.",
+      "discovery_channel": "community",
+      "query": "AI smart glasses real world test reddit",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "83d1ab90b0bbae8f",
+      "title": "Contact - Microsoft Support",
+      "url": "https://support.microsoft.com/home/contact?linkquery=How%20to%20investigate%20a%20billing%20charge%20from%20Microsoft",
+      "summary": "MICROSOFT SUPPORT When you see unexpected charges from Microsoft in a statement from your bank, credit card, or any other payment provider, we want to help you resolve your question as quickly as possible. Important If you don't recognize a charge on your account, go to the Manage your payments page of your Microsoft account dashboard and select \"Investigate\".",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "edcad9d77deefd92",
+      "title": "Harley-Davidson Nightster 2026 - technical data, prices, reviews",
+      "url": "https://www.1000ps.com/en-us/model/11161/harley-davidson-nightster/2026",
+      "summary": "FAQ Harley-Davidson Nightster What is the current market price of the Harley-Davidson Nightster? The current average market price of a Harley-Davidson Nightster, year of manufacture 2022, is 12,870 USD with an average mileage of 1,861 km. Which one is better? Harley-Davidson Nightster or Honda CMX1100 Rebel? You can compare these two ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1645,62 +1478,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3b7b6b877c517340",
-      "title": "I Know Why the Caged Bird Sings - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/I_Know_Why_the_Caged_Bird_Sings",
-      "summary": "I Know Why the Caged Bird Sings ... I Know Why the Caged Bird Sings is a 1969 autobiography describing the young and early years of American writer and poet Maya Angelou. The first in a seven-volume series, it is a coming-of-age story that illustrates how strength of character and a love of literature helped her to overcome racism and trauma.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c60adbff12e206a3",
-      "title": "IFA 2026: Visitor tickets available now - ifa-berlin.com",
-      "url": "https://www.ifa-berlin.com/press-releases/ifa-visitor-tickets-05-2026",
-      "summary": "IFA Berlin, the world’s largest event for home and consumer tech, opens ticket sales to visitors today. Under the theme “The future is now,” IFA will once again bring global brands, innovative technologies and inspiring experiences to the Messe Berlin exhibition grounds from 4 to 8 September 2026.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d820d4aeda595912",
-      "title": "Letter Boxed — The New York Times",
-      "url": "https://www.nytimes.com/puzzles/letter-boxed",
-      "summary": "In 2014, we introduced the Mini Crossword — followed by Spelling Bee, Letter Boxed, Tiles, Wordle, Connections and more. We strive to offer puzzles for all skill levels that everyone can enjoy ...",
+      "id": "c14b1f01a0079d12",
+      "title": "Harley-Davidson Nightster Buyer's Guide | Cycle World",
+      "url": "https://www.cycleworld.com/harley-davidson/nightster/",
+      "summary": "Powered by Harley-Davidson’s new Revolution Max 975T engine, the Nightster is reborn with familiar visual cues and a whole host of rider aids.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1723,322 +1504,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5573a7e1aece5e0e",
-      "title": "Maya Angelou - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Maya_Angelou",
-      "summary": "Angelou's series of seven autobiographies focus on her childhood and early adult experiences. The first, I Know Why the Caged Bird Sings (1969), tells of her life up to the age of 17 and brought her international recognition and acclaim. She became a poet and writer after a string of odd jobs during her young adulthood.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c89cf1126608b8ff",
-      "title": "Maya Angelou Autobiographies in Publication Order | Bookroo",
-      "url": "https://bookroo.com/books/series/maya-angelous-autobiography",
-      "summary": "There are 7 books in the Maya Angelou's Autobiography series. It began with I Know Why the Caged Bird Sings in 1969, and the newest book, Mom & Me & Mom, was published in 2013.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "480801a5fc45df3d",
-      "title": "Maya Angelou Books In Order | The Complete Book Checklist",
-      "url": "https://www.thebooksinorder.com/maya-angelou-books-in-order/",
-      "summary": "Her literary career took flight with I Know Why the Caged Bird Sings (1969), the first of seven autobiographies that candidly explored themes of racism, identity, and resilience. She also gained recognition for her poetry, including collections like And Still I Rise and Phenomenal Woman.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5448cb4994040791",
-      "title": "Maya Angelou | Biography, Books, Poems, Death, & Facts | Britannica",
-      "url": "https://www.britannica.com/biography/Maya-Angelou",
-      "summary": "Harriet Jacobs ’s Incidents in the Life of a Slave Girl (1861), the first autobiography by a formerly enslaved African American woman, candidly describes her experience of the sexual exploitation that made slavery especially oppressive for Black women.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "087eb370ef23cf77",
-      "title": "Maya Angelou's Autobiographies in Order - nonfictioned.com",
-      "url": "https://nonfictioned.com/maya-angelous-autobiographies-in-order/",
-      "summary": "Maya Angelou’s Seven Books in Order 1. I Know Why the Caged Bird Sings, by Maya Angelou Published in 1969 Maya’s childhood unfolds between the safe rhythms of her grandmother’s Arkansas store and the brutal realities of Jim Crow racism.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1c7e97d9ee273fdb",
-      "title": "Maya Angelou's Autobiography books in order | Ordered Books",
-      "url": "https://orderedbooks.com/series/maya-angelous-autobiography/",
-      "summary": "What is the first book in the Maya Angelou's Autobiography series? The first book in the Maya Angelou’s Autobiography series is I Know Why the Caged Bird Sings, published in 1969. Do you need to read Maya Angelou's autobiographies in order? Publication order is the best route because the core memoirs move forward through Angelou’s life.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0421bc608b6ff9ed",
-      "title": "Maya Angelou's Autobiography Series by Maya Angelou - Goodreads",
-      "url": "https://www.goodreads.com/series/51242-maya-angelou-s-autobiography",
-      "summary": "I Know Why the Caged Bird Sings (Maya Angelou's Autobiography, #1), Gather Together in My Name, Singin' and...",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ef24f67f92b1ae3c",
-      "title": "On This Day - What Happened Today In History | Britannica",
-      "url": "https://www.britannica.com/on-this-day",
-      "summary": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a856e643ba0e225",
-      "title": "On This Day in History — Real Historical Events Every Day | OnThisDayNow",
-      "url": "https://onthisdaynow.com/",
-      "summary": "Discover what happened on this day in history. Real historical events, births, deaths and a daily quiz — updated every day from Wikipedia.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4177b2464bf340e7",
-      "title": "On This Day in History: Events, Births & Deaths",
-      "url": "https://thisday.info/",
-      "summary": "Explore historical events, famous birthdays and notable deaths for every day of the year, with sourced timelines, quizzes and daily articles.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1529433890f257a2",
-      "title": "On This Day – What Happened Today in History - timeanddate.com",
-      "url": "https://www.timeanddate.com/on-this-day/",
-      "summary": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f8dbdb57aa636eb9",
-      "title": "On-This-Day.com - Daily history, famous birthdays and music history",
-      "url": "https://on-this-day.com/index.html",
-      "summary": "On-This-Day.com - Today in History: Daily historical facts, events, famous birthdays, world history, United States history and music history.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8fcf9eb9af4ef7aa",
-      "title": "Play Pips, our new dominoes game. — The New York Times",
-      "url": "https://www.nytimes.com/games/pips",
-      "summary": "In 2014, we introduced the Mini Crossword — followed by Spelling Bee, Letter Boxed, Tiles, Wordle, Connections and more. We strive to offer puzzles for all skill levels that everyone can enjoy ...",
+      "id": "a735ff02a23345b4",
+      "title": "Harley-Davidson Nightster Motorcycles For Sale - Cycle Trader",
+      "url": "https://www.cycletrader.com/Harley-Davidson-Nightster/motorcycles-for-sale?make=Harley-Davidson%7C2316294&model=NIGHTSTER%7C764949722",
+      "summary": "Cycle Trader has 423 listings to help you find the best deal on a Harley-Davidson Nightster Motorcycles",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -2049,9 +1518,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2061,12 +1530,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "31f233a2cae89601",
-      "title": "The best tech I found at IFA 2026 - YouTube",
-      "url": "https://m.youtube.com/watch?v=wWy5xjManMg",
-      "summary": "This video is sponsored by Blurams. I’ve been exploring IFA 2026 in Berlin with the Android Authority team, and these are some of the coolest products we found at the show.",
+      "id": "8a46f07304346ca7",
+      "title": "Harley-Davidson Sportster Nightster Motorcycles for Sale",
+      "url": "https://motorcycles.autotrader.com/motorcycles-for-sale/harley_davidson-sportster-nightster-for-sale",
+      "summary": "Find Harley-Davidson Sportster Nightster Motorcycles for sale near you by motorcycle dealers and private sellers on Motorcycles on Autotrader. See prices, photos and find dealers near you.",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ef3aea6d50beb1b6",
+      "title": "Houston TranStar Cameras",
+      "url": "https://traffic.houstontranstar.org/cctv/transtar/",
+      "summary": "Video from the traffic cameras is not archived.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2087,12 +1582,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2a33fcf8716d1243",
-      "title": "The New York Times Help Center Knowledge Base",
-      "url": "https://help.nytimes.com/",
-      "summary": "The New York Times Help Center Support Center helps you to find FAQ, how-to guides and step-by-step tutorials.",
+      "id": "c216c97e05d9cc32",
+      "title": "It - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/windows/",
+      "summary": "Windows brings your worlds together with the latest version of Windows OS. Learn how AI-powered features in Windows 11 give you more ways to work, play and create.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2113,12 +1608,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5c8af923f6309d29",
-      "title": "This Day in HISTORY Daily Briefing",
-      "url": "https://www.history.com/this-day-in-history-daily-briefing",
-      "summary": "Check in with your virtual assistant or wherever you get your podcasts to find out about the historical events that happened on this day and every other day of the year.",
+      "id": "18a3b5a9f9683d35",
+      "title": "Keren! Di Aceh Limbah Uang Kertas Bisa Disulap Jadi Bahan Bakar ...",
+      "url": "https://jurnalaceh.pikiran-rakyat.com/aceh/pr-17910374505/keren-di-aceh-limbah-uang-kertas-bisa-disulap-jadi-bahan-bakar-industri-semen",
+      "summary": "Hasil pengujian laboratorium mengonfirmasi dua hal penting terkait keamanan LRUK yang mana racikan uang kertas terbukti aman dan tidak tergolong Bahan Berbahaya dan Beracun serta memiliki karakteristik yang memenuhi syarat untuk dimanfaatkan sebagai bahan bakar alternatif pada tanur industri semen.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2139,12 +1634,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "17ee866f5612893f",
-      "title": "Today In History — What Happened On This Day",
-      "url": "https://todayinhistory.app/",
-      "summary": "Every date has a story. Every figure has a voice. Browse any day in history, talk to 5,000+ historical figures, and play 7 daily history games.",
+      "id": "59c31d52ae91f9f1",
+      "title": "Kolaborasi BI dan Solusi Bangun Andalas, Uang Rupiah Tak Layak Edar ...",
+      "url": "https://dialeksis.com/aceh/kolaborasi-bi-dan-solusi-bangun-andalas-uang-rupiah-tak-layak-edar-disulap-jadi-energi-ramah-lingkungan/",
+      "summary": "Melalui kolaborasi antara Kantor Perwakilan Bank Indonesia Provinsi Aceh dan PT Solusi Bangun Andalas, Limbah Racik Uang Kertas (LRUK) hasil pemusnahan uang dimanfaatkan sebagai bahan bakar alternatif dalam proses produksi semen melalui teknologi co-processing.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2153,9 +1648,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2165,12 +1660,116 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "025f2332d16db0cb",
-      "title": "Walmart Camera Store in Victorville, CA| Photo Camaras, Web ...",
-      "url": "https://www.walmart.com/store/1588-victorville-ca/camera-store",
-      "summary": "Shop for camera equipment at your local Victorville, CA Walmart. We have a great selection of camera equipment for any type of home. Save Money. Live Better.",
+      "id": "3949bb6bbba4a475",
+      "title": "Microsoft - LinkedIn",
+      "url": "https://www.linkedin.com/company/microsoft",
+      "summary": "Microsoft | 29,084,442 followers on LinkedIn. Every company has a mission. What's ours? To empower every person and every organization to achieve more.",
       "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b0515d026323d61",
+      "title": "Microsoft Bing",
+      "url": "https://bingapp.microsoft.com/bing",
+      "summary": "Bing: Search that gives you more. Get fast and trusted search results by text, voice, or image. Find stunning daily Bing wallpapers, design like a pro, and earn Microsoft Rewards points with every search.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "03e5302ab947193b",
+      "title": "Microsoft Bing | Conoce Bing",
+      "url": "https://www.microsoft.com/es-es/bing",
+      "summary": "Mejore su experiencia de búsqueda con Microsoft Bing, el motor de búsqueda rápido, seguro y con tecnología de IA. Descubra el rendimiento de clase mundial, la seguridad integrada y las herramientas avanzadas para ayudarlo a encontrar lo que necesita de forma rápida y segura.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f5cdf3fea137f68c",
+      "title": "New & Used VW Dealership in West Palm Beach, FL | Schumacher VW of West ...",
+      "url": "https://www.vwofwestpalmbeach.com/",
+      "summary": "Shop new and used Volkswagen vehicles at Volkswagen of West Palm Beach in FL. Browse cars and SUVs, view specials, and schedule a test drive today.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1a854f19f1441802",
+      "title": "New VW Cars and SUVs For Sale in Palm Beach Gardens, FL",
+      "url": "https://www.vwofnorthpalmbeach.com/new-inventory/index.htm",
+      "summary": "Located conveniently in Palm Beach Gardens, FL, our dealership offers a wide selection of new VW models. We also provide competitive lease and finance deals to help you get into your perfect vehicle.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2191,12 +1790,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ebf4788ed2b5b5ea",
-      "title": "What is the title of Maya Angelou's first autobiography? Crossword Clue",
-      "url": "https://www.wordplays.com/crossword-solver/What-is-the-title-of-Maya-Angelou's-first-autobiography%3F",
-      "summary": "The Crossword Solverfound 30 answers to \"What is the title of Maya Angelou's first autobiography?\", 5 letterscrossword clue. Enter the length or pattern for better results.",
+      "id": "377edc3ee9bc9eea",
+      "title": "Pulses Name in Hindi and English – दालों के नाम | Zayka Recipes",
+      "url": "https://zaykarecipes.com/pulses-name/",
+      "summary": "List of pulses name in Hindi and English with images. जानें सभी दालों के नाम हिंदी और इंग्लिश में – बच्चों और प्रतियोगी परीक्षा के लिए उपयोगी।",
       "discovery_channel": "broad_web",
-      "query": "display smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2217,12 +1816,71 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c96b13cbf4fd378a",
-      "title": "What Was Maya Angelou's First Book? - TheReadingTub",
-      "url": "https://thereadingtub.com/what-was-maya-angelou-s-first-book/",
-      "summary": "Maya Angelou’s journey as a literary luminary began with her groundbreaking autobiography, “I Know Why the Caged Bird Sings.” This remarkable work was published in 1969 and marked not only her first book but also a significant moment in American literature.",
+      "id": "54318018da0e8430",
+      "title": "Qualitative Descriptive Methods in Health Science Research",
+      "url": "https://www.healthdesign.org/knowledge-repository/qualitative-descriptive-methods-health-science-research",
+      "summary": "Qualitative Descriptive Methods in Health Science Research Colorafi, K. J., Evans, B. (2016). \"Qualitative Descriptive Methods in Health Science Research.\" HERD: Health Environments Research & Design Journal, 9 (4), 16-25. https://doi.org/10.1177/1937586715614171",
+      "discovery_channel": "community",
+      "query": "AI smart glasses real world test reddit",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "72a6bc8f97dd9fa8",
+      "title": "Qualitative Descriptive Methods in Health Science Research",
+      "url": "https://sage.cnpereading.com/paragraph/download/?doi=10.1177/1937586715614171",
+      "summary": "HERD: Health Environments Research & Design Journal Qualitative Descriptive Methods in Health Science Research Karen Jiggins Colorafi , Bronwynne Evans Published July 01, 2016",
+      "discovery_channel": "community",
+      "query": "AI smart glasses real world test reddit",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7d27c92f0bbebd29",
+      "title": "Schumacher Automotive Group | New INFINITI, Volkswagen, Volvo, Dodge ...",
+      "url": "https://www.schumacherauto.com/",
+      "summary": "Schumacher Automotive Group sells and services INFINITI, Volkswagen, Volvo, Dodge, Jeep, Subaru, Buick, Chevrolet, Polestar, Chrysler, GMC, Lincoln, Ram vehicles in the greater NORTH PALM BEACH • WEST PALM BEACH • DELRAY BEACH FL area.",
       "discovery_channel": "broad_web",
-      "query": "display smart glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2243,12 +1901,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d7cab38f8ee3d3f2",
-      "title": "Wordle - The New York Times Help Center",
-      "url": "https://help.nytimes.com/24611727334932-Wordle",
-      "summary": "Wordle Learn more about The New York Times game Wordle including access, how to play, and answers to common questions. About Wordle Wordle is a daily word game where players have six attempts to guess a five letter word. Feedback for each guess is given in the form of colored tiles to indicate if letters match the correct position.",
+      "id": "88dc94bd568ab584",
+      "title": "Schumacher Volkswagen of North Palm Beach - CARFAX",
+      "url": "https://www.carfax.com/Reviews-Schumacher-Volkswagen-of-North-Palm-Beach-Palm-Beach-Gardens-FL_OYB8BNJ7W4",
+      "summary": "Read verified reviews, shop for used cars and learn about shop hours and amenities. Visit Schumacher Volkswagen of North Palm Beach in Palm Beach Gardens, FL today!",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2269,12 +1927,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "169505e78a280d71",
-      "title": "Wordle Archive — Past Puzzles — The New York Times",
-      "url": "https://www.nytimes.com/games/wordle/archive",
-      "summary": "Access all past Wordle puzzles. Unlock the archive to play over 1,000 puzzles and save your history.",
+      "id": "c637a798dcb52825",
+      "title": "Schumacher Volkswagen of North Palm Beach in Palm Beach Gardens, FL ...",
+      "url": "https://www.autotrader.com/car-dealers/palm-beach-gardens-fl/68459121/schumacher-volkswagen-of-north-palm-beach",
+      "summary": "All incentives and discounts are calculated based on South Florida zip codes. Pricing includes all applicable manufacturer incentives and may not be combined with other exclusive offers.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2295,12 +1953,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0abf65c9a881a8cb",
-      "title": "Wordle Bot Your daily, personalized Wordle score - The New York Times",
-      "url": "https://www.nytimes.com/interactive/2022/upshot/wordle-bot.html",
-      "summary": "Wordle Lessons: Here are seven things we learned after analyzing 515 million Wordle games and comparing their results with the strategies that our Wordle Bot recommends. Wordle Bot: Our daily ...",
+      "id": "6d0f85402e438682",
+      "title": "Search - Microsoft Bing",
+      "url": "https://sg.bing.com/",
+      "summary": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart search engine for the forever curious.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2321,36 +1979,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "86714fda1639a3bd",
-      "title": "Wordle Words - The New York Times",
-      "url": "https://www.nytimes.com/spotlight/wordle-words",
-      "summary": "Wordle Wrap-Up: March 6 to 12 A recap of the Wordle answers for the past week. By New York Times Games",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "35660ab1dd4989e5",
-      "title": "请教Cadence Virtuoso Calculator settlingTime的用_百度知道",
-      "url": "https://zhidao.baidu.com/question/1241696839791975059.html",
-      "summary": "请教Cadence Virtuoso Calculator settlingTime的用virtuoso 没有windows版本，要在unix或linux下 装虚拟机或者直接双系统都行，前者方便，但是性能可能比不上后者。不过在个人电脑上装这种软件，都不会好到哪儿去。",
+      "id": "4846fe82e3de683f",
+      "title": "Uang Rupiah Tak Layak Edar Disulap Jadi Energi Ramah Lingkungan, Bank ...",
+      "url": "https://www.lintasatjeh.com/2026/07/uang-rupiah-tak-layak-edar-disulap-jadi.html",
+      "summary": "Melalui kolaborasi antara Kantor Perwakilan Bank Indonesia Provinsi Aceh dan PT Solusi Bangun Andalas, Limbah Racik Uang Kertas (LRUK) hasil pemusnahan uang dimanfaatkan sebagai bahan bakar alternatif dalam proses produksi semen melalui teknologi co-processing.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -2364,6 +1996,296 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f1ca4c3a3e13f80",
+      "title": "Used Harley-Davidson Nightster Motorcycles for sale",
+      "url": "https://www.cycletrader.com/Used-Harley-Davidson-Nightster/motorcycles-for-sale?make=Harley-Davidson%7C2316294&model=NIGHTSTER%7C764949722&condition=U",
+      "summary": "Cycle Trader has 204 listings to help you find the best deal on a Used Harley-Davidson Nightster Motorcycles",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "250d889406ef2905",
+      "title": "Volkswagen Dealer in Palm Beach Gardens, FL | New & Used VW Cars",
+      "url": "https://www.vwofnorthpalmbeach.com/",
+      "summary": "Schumacher Volkswagen of North Palm Beach 3720 Northlake BLVD Palm Beach Gardens, FL 33403-1630 Sales: (844) 783-3509",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0ab4fbbaa4feeac9",
+      "title": "किसानों के लिए बहुत फायदेमंद है ये दलहनी फसल, जानें क्यों बिकती है इतनी ...",
+      "url": "https://hindi.etnownews.com/agriculture/white-soyabean-is-very-useful-for-farmers-gives-huge-profit-and-income-farming-news-photo-gallery-115622979",
+      "summary": "सफेद सोयाबीन की खेती किसानों को बंपर मुनाफा करवा रही है।खाद्य तेलों के उत्‍पादन में सरसों के बाद दूसरा नाम सोयाबीन का ही आता है ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "34efa659ac9b9f98",
+      "title": "सोयाबीन (Soybean) - Gyan Pragya",
+      "url": "https://gyanpragya.com/geography/soybean/",
+      "summary": "सोयाबीन (Soybean) भारत की एक प्रमुख फसल है, जिसे ‘वंडर क्रॉप’ के रूप में भी जाना जाता है। यह एक अनोखी फसल है क्योंकि इसका उपयोग तिलहन (Oilseed) और ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f19ddb0f4224c62e",
+      "title": "सोयाबीन - Wikiwand",
+      "url": "https://www.wikiwand.com/hi/%E0%A4%B8%E0%A5%8B%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A5%80%E0%A4%A8",
+      "summary": "सोयाबीन - [वैज्ञानिक नाम=\"ग्लाईसीन मैक्स\"] सोयाबीन फसल है। यह तिलहन के बजाय दलहन की फसल मानी जाती है। सोयाबीन दलहन की फसल है शाकाहारी मनुष्यों के लिए इसको मांस भी कहा जाता है क्योंकि इसमें बहुत अधिक प्रोटीन होता है। इसका वानस्पतिक नाम ग्लाईसीन मैक्स है।स्वास्थ्य के लिए एक बहुउपयोगी खाद्य पदार्थ है। सोयाबीन एक महत्वपूर्ण खाद्य स्रोत है। इसके मुख्...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "84d6bc38378001d5",
+      "title": "सोयाबीन - भारतकोश, ज्ञान का हिन्दी महासागर",
+      "url": "https://bharatdiscovery.org/india/%E0%A4%B8%E0%A5%8B%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A5%80%E0%A4%A8",
+      "summary": "सोयाबीन का वैज्ञानिक नाम ग्लाईसिन मैक्स (Glycine max) हैं। यह शिम्बी कुल और सेम जाति का धान्य हैं। अंग्रेज़ी में इसे सोयाबीन तथा हिंदी सोया, सेवदाना भट्वास कहा जाता हैं। यह वसा हृदय रोग में हितकर हैं और घी व माखन के सामान रोग प्रतिरोधक हैं।.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b1010a842fa8d191",
+      "title": "सोयाबीन - विकिपीडिया",
+      "url": "https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A5%8B%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A5%80%E0%A4%A8",
+      "summary": "सोयाबीन - [वैज्ञानिक नाम=\"ग्लाईसीन मैक्स\"] सोयाबीन फसल है। यह तिलहन के बजाय दलहन की फसल मानी जाती है। सोयाबीन दलहन की फसल है शाकाहारी मनुष्यों के लिए इसको मांस भी कहा जाता है क्योंकि इसमें बहुत अधिक प्रोटीन होता है। इसका वानस्पतिक नाम ग्लाईसीन मैक्स है।स्वास्थ्य के लिए एक बहुउपयोगी खाद्य पदार्थ है। सोयाबीन एक महत्वपूर्ण खाद्य स्रोत है। इसके मुख्...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "085ec6c888337aae",
+      "title": "सोयाबीन - विकिपीडिया",
+      "url": "https://anp.wikipedia.org/wiki/%E0%A4%B8%E0%A5%8B%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A5%80%E0%A4%A8",
+      "summary": "सोयाबीन न केवल प्रोटीन का एक उत्कृष्ट स्त्रौत है बल्कि कई शारीरिक क्रियाओं को भी प्रभावित करता है। विभिन्न शोधकर्ताओं द्वारा सोया ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5a6555fdcec7fb48",
+      "title": "‪Karen Jiggins Colorafi‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=uNHJgggAAAAJ&hl=en",
+      "summary": "A Content Analysis of the MU Clinical Summary: Do Clinical Summaries Promote Patient Engagement? Conducting patient-centered research using qualitative descriptive design. Sage Research...",
+      "discovery_channel": "community",
+      "query": "AI smart glasses real world test reddit",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0ba7708ebbcece08",
+      "title": "(Open Access) Qualitative Descriptive Methods in Health Science ...",
+      "url": "https://scispace.com/papers/qualitative-descriptive-methods-in-health-science-research-hz39gyvz40",
+      "summary": "TL;DR: In this paper, the authors present strategies for qualitative data analysis, including context, process and theoretical integration, and provide a criterion for evaluation of these strategies and answers to student questions and answers.",
+      "discovery_channel": "community",
+      "query": "AI smart glasses real world test reddit",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f88360176ab1938",
+      "title": "pubmed.ncbi.nlm.nih.gov",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26791375/",
+      "summary": "pubmed.ncbi.nlm.nih.gov",
+      "discovery_channel": "community",
+      "query": "AI smart glasses real world test reddit",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
