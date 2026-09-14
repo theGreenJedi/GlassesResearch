@@ -53,7 +53,7 @@ Nor does the stunt erase the distinction between **recording-capable smart glass
 
 - [Everyone Hates Elon — Instagram post, September 11, 2026](https://www.instagram.com/p/DdJGDrbiIq4/)
 - [Famous Campaigns — Meta smart glasses mocked by fake notices on London Underground](https://www.famouscampaigns.com/2026/09/meta-smart-glasses-mocked-by-fake-notices-on-london-underground/)
-- [Reddit / r/interestingasfuck — Fake notice on London Underground mocks people wearing smart glasses](https://www.reddit.com/r/interestingasfuck/comments/1wdt8q2/fake_notice_on_london-underground-mocks-people/)
+- [Reddit / r/interestingasfuck — Fake notice on London Underground mocks people wearing smart glasses](https://www.reddit.com/r/interestingasfuck/comments/1wdt8q2/fake_notice_on_london_underground_mocks_people/)
 - [The Guardian — smart-glasses privacy and consent backlash](https://www.theguardian.com/technology/2026/aug/08/ai-smartglasses-camera-film-privacy-consent)
 
 ### Evidence note
