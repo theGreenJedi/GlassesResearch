@@ -30,6 +30,8 @@ Concrete primary sources and technical artifacts worth preserving because they d
 | PA-0024 | Even Realities G2 | [G2 specifications](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs) | Even Realities | Display, battery, BLE, microphones and hardware specifications. |
 | PA-0025 | Mentra Live | [Bluetooth SDK source and documentation](https://github.com/Mentra-Community/MentraOS/tree/dev/mobile/modules/bluetooth-sdk) | Mentra Community | React Native/Expo, Android and iOS host SDK; direct BLE control, capture, audio, settings, streaming, telemetry controls and version-linked OTA behavior. |
 | PA-0026 | Mentra Live | [Persistent Bluetooth SDK OTA release](https://github.com/Mentra-Community/MentraOS/releases/tag/bluetooth-sdk-ota) | Mentra Community | Version-keyed ASG client APK and firmware manifests intended to remain immutable for each published SDK version. |
+| PA-0027 | MYVU / Star Air XGA010C | [Panny777 Meizu-Myvu-Client](https://github.com/Panny777/Meizu-Myvu-Client) | Panny777 | Hardware-verified community replacement client implementing the reverse-engineered BLE + RFCOMM application path for one XGA010C specimen. |
+| PA-0028 | MYVU / Star Air XGA010C | [Panny777 Meizu-Myvu-SDK](https://github.com/Panny777/Meizu-Myvu-SDK) | Panny777 | Unofficial Android SDK and protocol documentation for XGA010C, including pairing/session behavior and owner-usable control surfaces. |
 
 ## Preservation rule
 
