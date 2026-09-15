@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Attach model-bound research links to generated canonical model pages.
+"""Attach model-bound research and community-scour indexes to canonical model pages.
 
-Research remains canonical in its own document. Model cards act as an index:
-any admitted research document in the configured research roots that explicitly
-names a GLS stable ID is automatically linked from that model's canonical card.
+Research remains canonical in its own document. Model cards are touchstones:
+formal/community research is indexed there, while retained scour findings are
+aggregated behind one per-model link so cards remain compact as findings grow.
 """
 from __future__ import annotations
 
@@ -17,108 +17,155 @@ EVIDENCE_RE = re.compile(r"^\*\*Evidence lane:\*\*\s*(.+?)\s*$", re.MULTILINE)
 STATUS_RE = re.compile(r"^\*\*Status:\*\*\s*(.+?)\s*$", re.MULTILINE)
 SECTION_RE = re.compile(r"\n## Related Research\n.*?(?=\n## |\Z)", re.DOTALL)
 
-# Deliberately scoped to admitted model-specific research surfaces. General
-# methodology/process documents under research/ are not model evidence merely
-# because they happen to mention an example GLS identifier.
-RESEARCH_ROOTS = (
-    "research/investigations",
-    "research/community-research",
-    "research/claims",
-    "docs/community-research",
-)
+RESEARCH_ROOTS = ("research/investigations", "research/community-research", "research/claims", "docs/community-research")
+SCOUR_ROOTS = ("research/community-research", "docs/community-research")
+SCOUR_INDEX_DIR = "research/community-research/by-model"
+SCOUR_INDEX_MARKER = "<!-- generated-model-scour-index -->"
+RESEARCH_INDEX_MARKER = "<!-- generated-research-corpus-index -->"
 
 
 def public_url(site_root: Path, path: Path) -> str:
     rel = path.relative_to(site_root).with_suffix("")
-    return "/" + rel.as_posix().strip("/") + "/"
+    if rel.name.lower() in {"index", "readme"}:
+        rel = rel.parent
+    value = rel.as_posix().strip("/")
+    return "/" + (value + "/" if value else "")
 
 
-def collect(site_root: Path) -> dict[str, list[dict[str, str]]]:
-    bindings: dict[str, list[dict[str, str]]] = {}
-    seen: set[tuple[str, str]] = set()
-    for root_name in RESEARCH_ROOTS:
+def document(path: Path, site_root: Path) -> dict[str, object] | None:
+    if path.name.lower() in {"readme.md", "index.md"}:
+        return None
+    text = path.read_text(encoding="utf-8")
+    ids = sorted(set(MODEL_ID_RE.findall(text)))
+    if not ids:
+        return None
+    title_match = TITLE_RE.search(text); evidence_match = EVIDENCE_RE.search(text); status_match = STATUS_RE.search(text)
+    meta = []
+    if evidence_match: meta.append(evidence_match.group(1).strip())
+    if status_match: meta.append(status_match.group(1).strip())
+    return {"ids": ids, "title": title_match.group(1).strip() if title_match else path.stem.replace("_", " "), "url": public_url(site_root, path), "meta": " · ".join(meta)}
+
+
+def collect(site_root: Path, roots: tuple[str, ...]) -> dict[str, list[dict[str, str]]]:
+    bindings: dict[str, list[dict[str, str]]] = {}; seen: set[tuple[str, str]] = set()
+    for root_name in roots:
         root = site_root / root_name
-        if not root.exists():
-            continue
+        if not root.exists(): continue
         for path in sorted(root.rglob("*.md")):
-            if path.name.lower() in {"readme.md", "index.md"}:
-                continue
-            text = path.read_text(encoding="utf-8")
-            ids = sorted(set(MODEL_ID_RE.findall(text)))
-            if not ids:
-                continue
-            title_match = TITLE_RE.search(text)
-            title = title_match.group(1).strip() if title_match else path.stem.replace("_", " ")
-            evidence_match = EVIDENCE_RE.search(text)
-            status_match = STATUS_RE.search(text)
-            meta = []
-            if evidence_match:
-                meta.append(evidence_match.group(1).strip())
-            if status_match:
-                meta.append(status_match.group(1).strip())
-            url = public_url(site_root, path)
-            for model_id in ids:
-                key = (model_id, url)
-                if key in seen:
-                    continue
+            text = path.read_text(encoding="utf-8", errors="replace")
+            if SCOUR_INDEX_MARKER in text or RESEARCH_INDEX_MARKER in text: continue
+            row = document(path, site_root)
+            if not row: continue
+            for model_id in row["ids"]:
+                key = (model_id, row["url"])
+                if key in seen: continue
                 seen.add(key)
-                bindings.setdefault(model_id, []).append({
-                    "title": title,
-                    "url": url,
-                    "meta": " · ".join(meta),
-                })
+                bindings.setdefault(model_id, []).append({"title": str(row["title"]), "url": str(row["url"]), "meta": str(row["meta"])})
     return bindings
 
 
-def attach(page: Path, model_id: str, rows: list[dict[str, str]]) -> None:
-    text = page.read_text(encoding="utf-8")
-    text = SECTION_RE.sub("", text)
-    if rows:
-        links = []
-        for row in sorted(rows, key=lambda item: (item["title"].lower(), item["url"])):
+def build_research_corpus_index(site_root: Path) -> None:
+    """Give every staged research document a deterministic inbound path.
+
+    The research tree is published as a corpus, so publishing a new document must
+    never create an orphan merely because a hand-maintained navigation page has not
+    been edited yet. This generated index is infrastructure, not evidence promotion.
+    """
+    research_root = site_root / "research"
+    if not research_root.exists():
+        return
+    rows: list[tuple[str, str]] = []
+    for path in sorted(research_root.rglob("*.md")):
+        if path == research_root / "index.md":
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        if SCOUR_INDEX_MARKER in text:
+            continue  # generated scour pages are reachable through their model hub
+        title_match = TITLE_RE.search(text)
+        title = title_match.group(1).strip() if title_match else path.stem.replace("_", " ")
+        rows.append((title, public_url(site_root, path)))
+    lines = [
+        "# Research corpus",
+        "",
+        RESEARCH_INDEX_MARKER,
+        "",
+        "Canonical and retained research material published by GlassesResearch. Evidence status remains attached to each source; inclusion here does not promote a claim to independent verification.",
+        "",
+    ]
+    for title, url in rows:
+        lines.append(f"- [{title}]({url})")
+    (research_root / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    public_landing = site_root / "docs" / "community-research" / "index.md"
+    if public_landing.exists():
+        text = public_landing.read_text(encoding="utf-8").rstrip()
+        link = "[Browse the published research corpus](/research/)"
+        if link not in text:
+            public_landing.write_text(text + "\n\n" + link + "\n", encoding="utf-8")
+
+
+def build_scour_indexes(site_root: Path, scour: dict[str, list[dict[str, str]]]) -> dict[str, dict[str, object]]:
+    out = site_root / SCOUR_INDEX_DIR; out.mkdir(parents=True, exist_ok=True)
+    for path in out.glob("gls-*.md"): path.unlink()
+    indexes: dict[str, dict[str, object]] = {}
+    hub_rows = []
+    for model_id, rows in sorted(scour.items()):
+        if not rows: continue
+        ordered = sorted(rows, key=lambda item: (item["title"].lower(), item["url"]))
+        lines = [f"# Community / Scour Findings — {model_id}", "", SCOUR_INDEX_MARKER, "", f"All retained community/scour findings currently bound to **{model_id}**. These remain attributed community evidence unless separately reproduced by GlassesResearch.", ""]
+        for row in ordered:
             suffix = f" — {row['meta']}" if row["meta"] else ""
-            links.append(f"- [{row['title']}]({row['url']}){suffix}")
-        section = (
-            "\n## Related Research\n\n"
-            "Research is maintained in its canonical source; this card indexes every admitted "
-            "model-bound research object. Evidence state remains attached to the source.\n\n"
-            + "\n".join(links)
-            + "\n"
-        )
-    else:
-        section = (
-            "\n## Related Research\n\n"
-            "No admitted model-specific research object is currently bound to this model.\n"
-        )
+            lines.append(f"- [{row['title']}]({row['url']}){suffix}")
+        path = out / f"{model_id.lower()}.md"; path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        url = public_url(site_root, path); indexes[model_id] = {"count": len(ordered), "url": url}
+        hub_rows.append((model_id, len(ordered), url))
+    hub = out / "index.md"
+    hub_lines = ["# Community / Scour Findings by model", "", SCOUR_INDEX_MARKER, "", "Retained community/scour findings grouped by canonical GLS identity. Model cards remain the primary entry point.", ""]
+    for model_id, count, url in hub_rows:
+        hub_lines.append(f"- [{model_id} — {count} finding{'s' if count != 1 else ''}]({url})")
+    hub.write_text("\n".join(hub_lines) + "\n", encoding="utf-8")
+
+    research_landing = site_root / "research" / "community-research" / "README.md"
+    if research_landing.exists():
+        text = research_landing.read_text(encoding="utf-8").rstrip()
+        link = "[Browse retained findings by model](/research/community-research/by-model/)"
+        if link not in text:
+            research_landing.write_text(text + "\n\n" + link + "\n", encoding="utf-8")
+
+    public_landing = site_root / "docs" / "community-research" / "index.md"
+    if public_landing.exists():
+        text = public_landing.read_text(encoding="utf-8").rstrip()
+        link = "[Browse the retained Community Research archive](/research/community-research/)"
+        if link not in text:
+            public_landing.write_text(text + "\n\n" + link + "\n", encoding="utf-8")
+    return indexes
+
+
+def attach(page: Path, rows: list[dict[str, str]], scour_index: dict[str, object] | None) -> None:
+    text = SECTION_RE.sub("", page.read_text(encoding="utf-8")); links = []
+    scour_urls = {row["url"] for row in rows if "/community-research/" in row["url"]}
+    for row in sorted(rows, key=lambda item: (item["title"].lower(), item["url"])):
+        if row["url"] in scour_urls: continue
+        suffix = f" — {row['meta']}" if row["meta"] else ""; links.append(f"- [{row['title']}]({row['url']}){suffix}")
+    if scour_index:
+        count = int(scour_index["count"]); links.append(f"- [Community / Scour Findings ({count})]({scour_index['url']}) — all retained community findings bound to this model")
+    body = "\n".join(links) if links else "No admitted model-specific research or retained scour finding is currently bound to this model."
+    section = "\n## Related Research\n\nResearch is maintained in its canonical source; this card is the touchstone for model-bound material. Community/scour findings are grouped behind one model-specific index. Evidence state remains attached to each source.\n\n" + body + "\n"
     marker = "\n## Sources\n"
-    if marker not in text:
-        raise ValueError(f"{page}: expected Sources section")
-    text = text.replace(marker, section + marker, 1)
-    page.write_text(text, encoding="utf-8")
+    if marker not in text: raise ValueError(f"{page}: expected Sources section")
+    page.write_text(text.replace(marker, section + marker, 1), encoding="utf-8")
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--site-root", type=Path, required=True)
-    args = parser.parse_args()
-    root = args.site_root
-    bindings = collect(root)
-    catalog = root / "models" / "catalog"
-    pages = sorted(catalog.glob("gls-*.md"))
-    if not pages:
-        raise SystemExit("No generated canonical model pages found")
-    linked_models = 0
-    linked_objects = 0
+    parser = argparse.ArgumentParser(); parser.add_argument("--site-root", type=Path, required=True); args = parser.parse_args(); root = args.site_root
+    bindings = collect(root, RESEARCH_ROOTS); scour = collect(root, SCOUR_ROOTS); scour_indexes = build_scour_indexes(root, scour); build_research_corpus_index(root)
+    pages = sorted((root / "models" / "catalog").glob("gls-*.md"))
+    if not pages: raise SystemExit("No generated canonical model pages found")
+    linked_models = linked_objects = 0
     for page in pages:
-        model_id = page.stem.upper()
-        rows = bindings.get(model_id, [])
-        attach(page, model_id, rows)
-        if rows:
-            linked_models += 1
-            linked_objects += len(rows)
-    print(f"Attached {linked_objects} research links across {linked_models} model cards ({len(pages)} cards audited)")
+        model_id = page.stem.upper(); rows = bindings.get(model_id, []); attach(page, rows, scour_indexes.get(model_id))
+        if rows: linked_models += 1; linked_objects += len(rows)
+    print(f"Attached/indexed {linked_objects} research objects across {linked_models} model cards; generated {len(scour_indexes)} per-model community/scour indexes ({len(pages)} cards audited)")
     return 0
 
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+if __name__ == "__main__": raise SystemExit(main())
