@@ -5,7 +5,7 @@ import re, shutil, subprocess, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / ".site-src"
-COPY_DIRS = ("artifacts","buyers","changes","comparisons","data","dataset","docs","evidence","glossary","guides","hacking","images","lineages","models","resources","timeline")
+COPY_DIRS = ("artifacts","buyers","changes","comparisons","data","dataset","docs","evidence","glossary","guides","hacking","images","lineages","models","research","resources","timeline")
 COPY_FILES = ("FOUNDING_CHARTER.md","WHY.md","CITATION.cff")
 PUBLIC_SITE_EXCLUDES = ("comparisons/README.md","data/family-trees-bounded.json","data/family-trees-researched.json","data/family-tree-audit-overrides.json","data/verified-changes.json","docs/AI610-Notes.md","docs/CONTENT_GAPS_WAVE_TWO.md","docs/HOMEPAGE_DESIGN_NOTES.md","docs/KISS_WORKING_NOTES.md","docs/LEGACY_STRUCTURE_AUDIT.md","docs/RESEARCH_AGENDA.md","docs/research/issue-381-validation.md","docs/ROADMAP_V1.md","docs/SEO_DISCOVERABILITY.md","docs/WEBSITE.md","docs/START_HERE.md","docs/news/WORKFLOW.md","docs/report-cards/PROFILE_AUDIT_03_06.md","docs/report-cards/SOURCES_01.md","resources/CHANGE_SCOPE.md","resources/PR_NOTES.md","resources/VALIDATION.md","timeline/README.md")
 PUBLIC_NARRATION_REPLACEMENTS = (
@@ -51,6 +51,7 @@ def main():
     run(ROOT/"scripts/build_site_status.py","--devices",database,"--report-cards",cards,"--output",DEST/"data/site-status.json","--homepage",DEST/"index.md")
     run(ROOT/"scripts/build_purchase_fallbacks.py","--models",ROOT/"models/THE_LIST.md","--curated",ROOT/"data/purchase-sources.json","--output",DEST/"data/purchase-fallbacks.json")
     run(ROOT/"scripts/build_model_pages.py","--data-dir",DEST/"data","--output-root",DEST)
+    run(ROOT/"scripts/attach_model_research.py","--site-root",DEST)
     run(ROOT/"scripts/build_gls_resolver.py","--devices",database,"--output-root",DEST)
     run(ROOT/"scripts/build_citation_distribution.py","--devices",database,"--scores",cards,"--output-root",DEST)
     catalog_index=DEST/"models"/"catalog"/"index.md"
