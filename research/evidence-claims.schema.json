@@ -66,5 +66,24 @@
         "properties": {"date": {"type": "string", "format": "date"}, "event": {"type": "string"}, "reference": {"type": ["string", "null"]}}
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"subject": {"properties": {"type": {"const": "model"}}, "required": ["type"]}}},
+      "then": {
+        "properties": {
+          "destinations": {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "target": {"const": "model_dossier"},
+                "disposition": {"enum": ["accepted", "proposed", "blocked", "superseded"]}
+              },
+              "required": ["target", "disposition"]
+            }
+          }
+        }
+      }
+    }
+  ]
 }
