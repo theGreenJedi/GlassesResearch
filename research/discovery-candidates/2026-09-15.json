@@ -1,38 +1,44 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-15T07:52:15.080889+00:00",
-  "candidate_count": 82,
-  "classifier_irrelevant_count": 70,
+  "discovered_utc": "2026-09-15T12:50:59.054823+00:00",
+  "candidate_count": 109,
+  "classifier_irrelevant_count": 83,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 12,
-    "broad_web": 50,
-    "developer": 20
+    "adjacent": 33,
+    "broad_web": 69,
+    "community": 9,
+    "developer": 25,
+    "research": 9
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 12,
+    "adjacent": 24,
     "speculative": 0,
-    "irrelevant": 70
+    "irrelevant": 83
   },
   "type_counts": {
-    "model": 10,
-    "review": 1,
-    "news": 44,
-    "tool": 27,
-    "sdk": 20,
-    "hack": 1,
-    "policy": 3,
-    "retail": 10,
-    "teardown": 1,
-    "community": 2
+    "model": 6,
+    "review": 3,
+    "video": 17,
+    "news": 58,
+    "research": 1,
+    "tool": 34,
+    "sdk": 16,
+    "policy": 5,
+    "retail": 6,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 12,
-    "development_hacking": 1,
-    "reject_noise": 70,
-    "research_news_review": 12
+    "adjacent_radar": 24,
+    "development_hacking": 4,
+    "model_catalog_review": 1,
+    "policy_privacy": 1,
+    "reject_noise": 83,
+    "report_card_evidence": 6,
+    "research_news_review": 26,
+    "retail_rebrand_review": 3
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -46,25 +52,83 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "a84eba0ea2a84d6f",
-      "title": "11 Best Cities Near Dallas, TX | PODS",
-      "url": "https://www.pods.com/blog/cities-near-dallas",
-      "summary": "Q: Which cities are close to Dallas, Texas? A: Irving, Richardson, and Arlington are among the nearest options, each offering a lifestyle that appeals to different types of residents seeking a city close to Dallas, Texas.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "id": "8fc7f7f5f7cb532c",
+      "title": "smart glasses – Hackaday",
+      "url": "https://hackaday.com/tag/smart-glasses/",
+      "summary": "Today’s highlight is [Mentra], who is releasing an open-source smart glasses OS for their own and others’ devices, letting you develop your smart glasses ideas just once, a single codebase ...",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "direct",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: mentra, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "795b2ff9d0b186fe",
+      "title": "The Best Smart Glasses for Every Type of Person on Your List",
+      "url": "https://lifehacker.com/tech/smart-glasses-gift-guide",
+      "summary": "Smart glasses are breaking big in 2026. From Ray-Ban Metas to XReal's XBX, here’s how to choose the best AI, AR, or audio smart glasses for your needs.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
         "research_news_review",
+        "policy_privacy"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses, xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6b17bf64f7b782f4",
+      "title": "NEAR – iShares Short Duration Bond Active ETF - Morningstar",
+      "url": "https://www.morningstar.com/etfs/BATS/NEAR/quote",
+      "summary": "NEAR – iShares Short Duration Bond Active ETF – Check NEAR price, review total assets, see historical growth, and review the analyst rating from Morningstar.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -73,37 +137,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a5b791d3a384c145",
-      "title": "9 Best Small Towns Near Dallas | Quaint Texas Getaways",
-      "url": "https://www.travelawaits.com/2841826/best-small-towns-to-visit-near-dallas/",
-      "summary": "Rural towns in Dallas, Texas offer a unique small-town experience while staying close to the DFW Metroplex Area. Rural towns near Dallas boast authentic country lifestyles, gorgeous scenery, historical landmarks, and attractions like Dinosaur Valley State Park and Texas Motor Speedway.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a7aad632bf6d47f9",
-      "title": "accounts.shopee.com.br",
-      "url": "https://accounts.shopee.com.br/",
-      "summary": "Access and manage your Shopee account for seamless shopping and selling experience.",
+      "id": "69895678b0d2feb5",
+      "title": "10 Best router bits in Canada - BestProductsCanada.com",
+      "url": "https://www.bestproductscanada.com/best-router-bits",
+      "summary": "Easy to Carry and Store: Flytuo 15pcs router bits set is sturdy and makes storing the high-quality router bits convenient while in-between jobs or DIY home improvement projects.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -127,37 +164,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9b1a56096dc80f53",
-      "title": "Cities Near Me - Dallas, Texas | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/Dallas,+TX",
-      "summary": "Find the top 15 cities, towns, and suburbs near Dallas, TX, like Highland Park and University Park, and explore the surrounding area for a day trip.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7939d99f48a20c2d",
-      "title": "Faça Login e comece suas Compras | Shopee Brasil",
-      "url": "https://shopee.com.br/buyer/login",
-      "summary": "Faça login agora e descubra as melhores ofertas e os melhores preços na Shopee Brasil!",
+      "id": "7077198dde26c3b1",
+      "title": "Best Quality Router Bits for Precision Woodworking",
+      "url": "https://axeandanswered.com/best-quality-router-bits/",
+      "summary": "This guide highlights five top-quality router bit sets that combine durability, versatility, and safety. Each option is crafted to handle soft and hardwoods, plywood, and composites with consistent results.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -181,10 +191,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "639daa296f2c1e83",
-      "title": "Leading Online Shopping Platform In Southeast Asia & Taiwan | Shopee",
-      "url": "https://shopee.com/",
-      "summary": "Shopee is the leading e-commerce online shopping platform in Southeast Asia and Taiwan. It provides customers with an easy, secure and fast online shopping experience through strong payment and logistical support.",
+      "id": "3931147dd5978297",
+      "title": "Best Router Bit Sets for Every Hobbyist and Pro – Tool Yard",
+      "url": "https://toolyard.org/the-best-router-bits/",
+      "summary": "Finding the right router bit set can dramatically improve the quality and speed of your woodworking projects. This guide highlights five top picks across budgets and use cases, from beginner-friendly sets to professional collections.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -209,10 +219,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9333cc99dc006c2b",
-      "title": "Shopee",
-      "url": "https://seller.shopee.com.br/",
-      "summary": "Descubra ofertas incríveis e os melhores preços no mercado na Shopee Brasil.",
+      "id": "6ff44df6010b9ef1",
+      "title": "Best Router Bits 2025: Top 12 Sets & Brands for Woodworking",
+      "url": "https://www.woodguide.org/best-router-bits-2025-top-12-sets-brands-for-woodworking/",
+      "summary": "After testing dozens of router bit sets throughout 2024 and early 2025, several standout options emerge as the best router bits for woodworking. These top-tier sets combine durability, precision, and value to deliver exceptional results across various projects.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -236,10 +246,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fe838151e2451b75",
-      "title": "Shopee",
-      "url": "https://seller.shopee.com.br/register/home",
-      "summary": "Acesse a Central do Vendedor da Shopee para gerenciar sua loja com eficiência e maximizar seu potencial de vendas!",
+      "id": "6b8575e2e4f19522",
+      "title": "Best Router Bits 2026 – Comparisons and Reviews - The Saw Guy",
+      "url": "https://www.thesawguy.com/best-router-bits/",
+      "summary": "Choosing the best router bits for your router can be a daunting task. So many options! Here is a complete guide to the best router bit sets for the money.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -263,10 +273,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d59ff6558f969216",
-      "title": "Shopee Brasil",
-      "url": "https://shopee.com.br/_from_login=true",
-      "summary": "Shopee Brasil",
+      "id": "a57512194cefe9c0",
+      "title": "Best Woodworking Router Bits - 2026 Reviews - Hobby Hustler",
+      "url": "https://hobbyhustler.com/best-woodworking-router-bits/",
+      "summary": "We surveyed the top woodworking router bits across major brands to help you find the right set or single bit. Compare carbide quality, piece counts, and shank compatibility in our 2026 buyer's guide.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -290,12 +300,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cc579120b3206300",
-      "title": "Shopee Brasil | Na Shopee Compensa Mais | Frete Grátis e Cupons",
-      "url": "https://shopee.com.br/",
-      "summary": "A Shopee é uma das maiores plataformas de compras online do Brasil, reunindo milhões de produtos com preços competitivos, Datas Duplas e a Black Friday Shopee, Frete Grátis, promoções diárias e opções de Envio Rápido para todo o país.",
+      "id": "985543f524e48db2",
+      "title": "Download Teams Desktop and Mobile Apps | Microsoft Teams",
+      "url": "https://www.microsoft.com/en-us/microsoft-teams/download-app",
+      "summary": "Download Microsoft Teams for desktop and mobile to stay connected on Windows, Mac, iOS, and Android. Enhance collaboration with the Microsoft Teams app.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -304,11 +314,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -317,12 +328,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0e80cfdfd5ac252f",
-      "title": "Shopee Việt Nam | Mua Sắm Online",
-      "url": "https://shopee.vn/",
-      "summary": "Đến với Shopee ngay hôm nay để mua hàng online giá rẻ và trải nghiệm dịch vụ chăm sóc khách hàng tuyệt vời tại đây. Đặc biệt, khi mua sắm trên Shopee Mall, bạn sẽ được Freeship, giao hàng tận nơi và 15 ngày miễn phí trả hàng.",
+      "id": "d70d28c0d4ed25db",
+      "title": "Free Microsoft Teams | Microsoft Teams",
+      "url": "https://www.microsoft.com/en-us/microsoft-teams/free",
+      "summary": "Learn how the free version of Teams can help you seamlessly meet and chat with others, share files online, and collaborate with anyone, from anywhere - all in one app.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -331,11 +342,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -344,10 +356,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e0c08430dab165c8",
-      "title": "The Best Things to Do in Dallas, Texas | Visit Dallas",
-      "url": "https://www.visitdallas.com/things-to-do/",
-      "summary": "From the classics like Reunion Tower and Perot Museum of Nature and Science, to new experiences in must-see spots like Trinity Groves and the Design District, there are endless ways to fill a trip to Dallas.",
+      "id": "953b1cb4f3bf6ce6",
+      "title": "Free Online Meetings & Video Calls | Microsoft Teams",
+      "url": "https://teams.live.com/free",
+      "summary": "Start free Teams video calls instantly! Connect, collaborate, and communicate effortlessly. Enjoy features like video calls, chat, file sharing, and more. Perfect for personal use, freelancers, solopreneurs, PTAs, teachers, small businesses and social events. Get started today!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6aa5ab8c958e676a",
+      "title": "Hire Top Remote Talent From Latin America | Hire With Near",
+      "url": "https://www.hirewithnear.com/",
+      "summary": "Hire With Near is a staffing and recruiting agency that helps US companies hire remote talent from Latin America across all industries and all departments. Get qualified candidate shortlists in under 5 days.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -371,244 +411,378 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "93972d95f102e129",
-      "title": "Air Purifiers | Dyson® Official Website",
-      "url": "https://www.dyson.com/air-treatment/air-purifiers",
-      "summary": "Exclusive colorways only when you buy from Dyson.com. Dyson air purifiers automatically purify the air to remove 99.97% of allergens, pollutants and gases. Heating and personal cooling, with air purification. Free shipping & 2 year warranty on all air purifiers.",
+      "id": "ea43f027dd33b5d2",
+      "title": "Home - Northeast Association of REALTORS®",
+      "url": "https://www.northeastrealtors.com/",
+      "summary": "Take your courses online and on demand with NEAR via The CE Shop. Use the promo code SAFETY35 to save 35% when you register for online CE courses in September! REGISTER TODAY. Commitment to Excellence empowers you to enhance and showcase your high level of professionalism.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6bb1c5d525e64e5c",
+      "title": "How do I get Microsoft Teams? | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/teams/platform/how-do-i-get-microsoft-teams",
+      "summary": "Learn how to download Microsoft Teams. Get Microsoft Teams with Microsoft 365 or download a free version of Teams.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "83995b8c245fdb29",
+      "title": "Microsoft Teams",
+      "url": "https://teams.microsoft.com/v2/download",
+      "summary": "Oops, unknown error!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "84447893fb1c5868",
+      "title": "Microsoft Teams - Download",
+      "url": "https://microsoft-teams.en.softonic.com/",
+      "summary": "It focuses on team messaging, video conferencing, and file collaboration, allowing users to centralize discussions, meetings, and shared resources in one workspace.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e75bef53a37a39c",
+      "title": "Microsoft Teams - Download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xp8bt8dw290mpq?hl=en-US&gl=US",
+      "summary": "Whether you’re connecting with a colleague at work or brainstorming with your local volunteer organization, Microsoft Teams helps bring people together to get things done.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8fa127b0c0ae02a1",
+      "title": "Microsoft Teams Download Free - 26213.1006.5011.1671 | TechSpot",
+      "url": "https://www.techspot.com/downloads/6976-microsoft-teams.html",
+      "summary": "Microsoft Teams is free to download for personal use or for organizations up to 300 users. Some of the limitations on the free plan include video group meetings for up to 60 minutes, up to...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7d4ed0addbb6e6ec",
+      "title": "Nearpod - Join a lesson",
+      "url": "https://nearpod.com/student/",
+      "summary": "Enter lesson code Join Lesson arrow_right_alt",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ea22e1abdea8a07",
+      "title": "Nextdoor",
+      "url": "https://nextdoor.com/",
+      "summary": "Stay informed with alerts and local news from trusted sources. Discover local favorites recommended by neighbors.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d56bbcc4ce29307f",
+      "title": "Router bit comparison - Canadian Woodworking",
+      "url": "https://canadianwoodworking.com/tools/router-bit-comparison/",
+      "summary": "The new Mastercraft, Power Sonic and Elite bits left small ridges on the surface, caused by nicks in the blade. The rest of the bits produced at least an acceptable edge that could be sanded and finished with mini­mal effort. Three bits – Freud, Dimar and Lee Valley – left a flawless surface.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dde1bf376ebf55e9",
+      "title": "The Best Router Bits for Woodworking Projects, Expert-Tested",
+      "url": "https://www.bobvila.com/articles/best-router-bits/",
+      "summary": "The best router bits make joinery and adding decorative details a cinch. We tested dozens of bits to find the right ones for every project.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "428f108148df2c2f",
+      "title": "Top 5 Best Router Bits in 2026 - Straight.com",
+      "url": "https://www.straight.com/guides/home/best-router-bits/",
+      "summary": "In this article, we’ve rounded up the best router bits available on Amazon to help you find the perfect set for your needs. From straight bits to chamfer bits, we’ve got you covered.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a44d02191a74d1f8",
+      "title": "Top Sources for Quality Router Bits and Accessories (Buying Guide)",
+      "url": "https://toolsradar.com/top-sources-for-quality-router-bits-and-accessories/",
+      "summary": "What are the top sources for quality router bits like Whiteside and Freud? Whiteside (USA-made, Woodcraft/Rockler) and Freud (coated, Amazon bundles) top lists for 5x longevity.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77dbdf9e05aa6d75",
+      "title": "Video Conferencing, Meetings, Calling | Microsoft Teams",
+      "url": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+      "summary": "Choose between plans with and without Microsoft Teams and get desktop versions of Microsoft 365 apps and Clipchamp. Get everything in Microsoft 365 Business Standard plus advanced security and device management. Add cloud-based phone service to Teams to get all the features of a landline.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9ea95e77a5d16063",
+      "title": "JAV Sub Indo & 65+ Situs Bokep Jepang Suka Javsubindo.com",
+      "url": "https://theporndude.com/id/8780/javsubindo",
+      "summary": "JAV Sub Indo Review https://javsubindo.com Aku yakin kalian pasti sering banget nonton situs bokep JAV seksi yang bisa bikin kalian sange seharian. Sayangnya, setiap kali nonton bokep jepang tentunya banyak orang yang nggak ngerti apa yang mereka obrolin di filmnya.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 4,
       "keyword_hits": [
-        "shipping"
+        "review"
       ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e67c8704ec3da70",
-      "title": "Air Treatment | Dyson® Official Website",
-      "url": "https://www.dyson.com/air-treatment",
-      "summary": "Exclusive colorways only when you buy from Dyson.com. Dyson air treatment products include air purifiers, humidifiers, heaters and fans. Free shipping & 2 year warranty available on all air purifiers for air treatment.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "31024b270ddef4a0",
-      "title": "Dyson Pure Cool Link™ Tower Purifier Fan White | Dyson",
-      "url": "https://www.dyson.com/air-treatment/air-purifiers/pure-cool-link-tower-tp02/white-silver",
-      "summary": "Dyson Pure Cool Link™ air purifier tower fan in White 305158-01. Removes 99.97% of allergens. Free shipping & 2 year warranty on all tower purifier fans.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dba3d420dba6f8fb",
-      "title": "Official Dyson® Website | Shop Dyson.com for Exclusive Savings",
-      "url": "https://www.dyson.com/en",
-      "summary": "Shop at Dyson.com for free shipping and warranty. Dyson vacuum cleaners, hair dryers, hair straighteners, hair stylers, air purifiers, humidifiers, hand dryers and lighting.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0ed59d91c565cdf5",
-      "title": "Air purifier filters | Dyson",
-      "url": "https://www.dyson.com/air-treatment/air-purifier-filters",
-      "summary": "Find the right replacement air purifier filter for your Dyson air purifier. Buy directly from Dyson for a 1-year warranty.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "12670c295da4e20c",
-      "title": "Buy & Sell Cars | Millions Listed, Prices & Deal Ratings | CarGurus",
-      "url": "https://www.cargurus.com/",
-      "summary": "Unbiased car reviews and over a million opinions and photos from real people. Use CarGurus to find the best used car deals.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d302ffdbd31222ed",
-      "title": "Dyson Cool™ tower fan AM07 (Satin Black/Nickel)",
-      "url": "https://www.dyson.com/air-treatment/fans-heaters/cool-tower-am07-satin-black-nickel",
-      "summary": "Dyson cooling fans feature Air Multiplier™ technology, which combines principles used in turbochargers and jet engines to amplify airflow up to 15 times. This enables the Dyson Cool tower fan to project up to 132 gallons of air per second. For powerful, long-range air projection to cool you quickly.³ Remote control with 10 airflow settings.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f718cd38ef18d1a1",
-      "title": "Dyson fans and heaters",
-      "url": "https://www.dyson.com/air-treatment/fans-heaters",
-      "summary": "Air Multiplier™ technology amplifies airflow to heat and cool you quickly and quietly. For a more comfortable home environment. , .",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f7ea204b9cf725ab",
-      "title": "Dyson Outlet. Expertly refurbished Dyson technology.",
-      "url": "https://www.dyson.com/outlet",
-      "summary": "Discover a range of refurbished machines at Dyson Outlet. Each machine has been rigorously tested by the same engineers who work on our new machines – with genuine Dyson replacement parts used where needed.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
@@ -627,981 +801,137 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "12d4aa9b95845c32",
-      "title": "New Cars For Sale. Find new cars in your area. - CarGurus",
-      "url": "https://www.cargurus.com/shop/new",
-      "summary": "Search new car listings to find the best local deals. We analyze millions of used cars daily.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "4ff8ab66a9d63249",
+      "title": "About the IfA - Home | UH Institute for Astronomy",
+      "url": "https://www.ifa.hawaii.edu/",
+      "summary": "Researchers at the University of Hawaiʻi Institute for Astronomy (IfA) are helping reshape how scientists study the Sun. The UH-led team has developed a new artificial intelligence (AI) tool that can map the Sun’s magnetic field in three dimensions with unprecedented...",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "study"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "21b70948bf6f6bac",
-      "title": "Sell your car for the best price | Compare multiple offers ... - CarGurus",
-      "url": "https://www.cargurus.com/sell-car",
-      "summary": "With CarGurus, you can sell your car to a local dealer in four easy steps. Enter your car’s details - License plate, VIN, mileage, etc. Get instant offers - View the best prices from local dealers. Choose the best offer - Bring it to the dealer along with your ID and supporting documents. Get paid right away - The dealer will inspect your car, verify the offer, and pay you the same day.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f3a677b9262ef59c",
-      "title": "Shop all air purifiers | Dyson® Official Website",
-      "url": "https://www.dyson.com/air-treatment/shop-all",
-      "summary": "Exclusive colorways only when you buy from Dyson.com. Dyson Fans and heaters. Shop All Air Purifiers: Shop all Dyson Air Purifiers, Purifiers + Heaters, and Purifiers + Humidifiers",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ed3862eec55b2bf2",
-      "title": "Support | Dyson Pure Cool™ tower purifier fan | Dyson",
-      "url": "https://www.dyson.com/support/air-treatment/purifiers/pure-cool-tower-advanced",
-      "summary": "Support for your Dyson Pure Cool™ tower purifier fan (Advanced Technology). Find product manuals, guides, tips and maintenance advice for your Dyson machine, including available spares and extra accessories.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6fb2d8ceaeeb398c",
-      "title": "Used Audi R8 for Sale Nationwide - CarGurus",
-      "url": "https://www.cargurus.com/Cars/l-Used-Audi-R8-d1019",
-      "summary": "Browse the best September 2026 deals on Audi R8 vehicles for sale. Save $29,483 this September on a Audi R8 on CarGurus.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3121a98226b22f8e",
-      "title": "Used Cars for Sale - CarGurus",
-      "url": "https://www.cargurus.com/Cars/spt-used-cars",
-      "summary": "Search used used cars listings to find the best local deals. We analyze millions of used cars daily.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f78b54b564ce684e",
-      "title": "Used Cars for Sale Near Me - CarGurus",
-      "url": "https://www.cargurus.com/shop/used",
-      "summary": "Search used car listings to find the best deals. Use the best tools & resources to help with your purchase. We analyze millions of used cars daily.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ada3f03b9d1c2bc7",
-      "title": "Used Chevrolet Corvette Z06 Coupe RWD for Sale - CarGurus",
-      "url": "https://www.cargurus.com/Cars/t-Used-Chevrolet-Corvette-Z06-Coupe-RWD-t31615",
-      "summary": "Browse the best September 2026 deals on Chevrolet Corvette Z06 Coupe RWD vehicles for sale. Save $11,555 this September on a Chevrolet Corvette Z06 Coupe RWD on CarGurus.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "149160aa437c9d63",
-      "title": "Used Lamborghini Huracan for Sale Nationwide - CarGurus",
-      "url": "https://www.cargurus.com/Cars/l-Used-Lamborghini-Huracan-d2285",
-      "summary": "Browse the best September 2026 deals on Lamborghini Huracan vehicles for sale. Save $89,155 this September on a Lamborghini Huracan on CarGurus.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c7c8ca0fde99d703",
-      "title": "Used Pickup Trucks for Sale Nationwide - CarGurus",
-      "url": "https://www.cargurus.com/Cars/l-Used-Pickup-Truck-bg5",
-      "summary": "Browse the best September 2026 deals on Pickup Trucks vehicles for sale. Save $20,018 this September on a Pickup Trucks on CarGurus.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e6e2f7a41161e38e",
-      "title": "Used Porsche 911 GT3 RS Coupe RWD for Sale - CarGurus",
-      "url": "https://www.cargurus.com/Cars/t-Used-Porsche-911-GT3-RS-Coupe-RWD-t40725",
-      "summary": "Browse the best September 2026 deals on Porsche 911 GT3 RS Coupe RWD vehicles for sale. Save $0 this September on a Porsche 911 GT3 RS Coupe RWD on CarGurus.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5bf8be6720053c1c",
-      "title": "10 logiciels de facturation en 2026 (testés) | Impli",
-      "url": "https://www.impli.fr/comparatif/logiciel-facturation",
-      "summary": "J'ai testé 10 logiciels de facturation sur plusieurs semaines, sur des cas réels : facturation de prestations de conseil, création de devis pour des missions freelance, suivi des paiements clients et relances d'impayés. Pas un survol de landing pages, un test en conditions réelles avec de vraies factures envoyées.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d0b20e1f40be4e52",
-      "title": "10 meilleurs logiciels de facturation et d’émission de factures évalués ...",
-      "url": "https://thecfoclub.com/fr/tools/meilleur-logiciel-facturation-gestion-factures/",
-      "summary": "J’ai examiné et évalué les logiciels de facturation et d’émission de factures les plus populaires, puis sélectionné les meilleurs afin d’améliorer la précision financière et l’efficacité du traitement des paiements.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2613c991d887387b",
-      "title": "12 Free Government Benefits for Seniors [2026 Update]",
-      "url": "https://savingsgrove.com/blogs/guides/free-government-benefits-for-seniors",
-      "summary": "Quick Answer Seniors 65+ qualify for numerous free federal benefits, including Medicare, Social Security (with a 2.8% COLA increase in 2026), SNAP food assistance, free home repair grants, subsidized meals through senior nutrition programs, and low-income energy assistance (LIHEAP). Many eligible seniors leave thousands unclaimed annually by not applying for all available programs.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "teardown"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a0cc787dd6885f53",
-      "title": "3500 soldater bidro under kong Harald Vs gravferd",
-      "url": "https://www.forsvaretsforum.no/hm-kongens-garde-haeren-kong-harald/pa-sorgeparadens-innbytterbenk/520577",
-      "summary": "Rundt 3500 fra Forsvaret bidro under kong Harald Vs begravelse. Omtrent 350 av dem var reservevakter for paraden.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bfea2795cf5e7eb8",
-      "title": "A Guide to Government Grants for Pensioners in the UK",
-      "url": "https://whentheygetolder.co.uk/financial/cost-of-living/a-guide-to-government-grants-for-pensioners-in-the-uk/",
-      "summary": "Eligibility criteria and application process Understanding the eligibility criteria is pivotal for pensioners wishing to benefit from grants available, including the free boiler and insulation grants. Eligibility often hinges on whether one receives pension credit, has a low household income, or receives certain benefits.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "41c6f6eae9febb96",
-      "title": "Action News 5 | Memphis, TN News | Arkansas, Mississippi",
-      "url": "https://www.actionnews5.com/news/",
-      "summary": "Council members will hold a final vote Tuesday on a 12-month moratorium on large-scale data centers, but competing proposals could steer the city toward new environmental regulations instead of a shutdown.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5f8cc5d7d5f8a507",
-      "title": "Action News 5 | WMC Memphis | Weather | Mid-South",
-      "url": "https://www.actionnews5.com/",
-      "summary": "WMC Action News 5 leads the Mid-South in breaking news and weather for Memphis, Germantown, Collierville, Bartlett, Olive Branch, Southaven and West Memphis.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c025e5a04aa761b8",
-      "title": "Benefits and entitlements for pensioners and the elderly | Age UK",
-      "url": "https://www.ageuk.org.uk/information-advice/money-legal/benefits-entitlements/",
-      "summary": "Information and advice from Age UK on claiming benefits and entitlements, including pension credit, attendance allowance, council tax benefit and many more.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1875b7bc3db70a59",
-      "title": "Benefits calculator – what am I entitled to? | Age UK",
-      "url": "https://www.ageuk.org.uk/information-advice/money-legal/benefits-entitlements/benefits-calculator/",
-      "summary": "Age UK's benefits calculator can help you find out which benefits you could be entitled to. It's free and simple to use and the details you provide are kept anonymous. Start the calculator You can also have a benefit check completed over the telephone and your results will be sent to you. To enquire about this service please call the Age UK Advice Line on 0800 678 1602, lines are open 8am-7pm ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c5538f4294ebf41e",
-      "title": "Benefits for the elderly in the UK | What you can claim",
-      "url": "https://www.elder.org/articles/legal/elderly-benefits/",
-      "summary": "Understand what benefits elderly people can claim in the UK and how to apply, with clear guidance and support.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8a74a5d1917e2749",
-      "title": "Benefits if you're over State Pension age - NHS",
-      "url": "https://www.nhs.uk/social-care-and-support/money-work-and-benefits/benefits-if-you-are-over-state-pension-age/",
-      "summary": "Find out what benefits you're entitled to if you're over State Pension age and have a disability or illness.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "84433be75c45f43d",
-      "title": "Facturation électronique : guide pratique de ... - impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/guide_pratique_facturation_electronique.pdf",
-      "summary": "Le deuxième est la continuité économique. La réforme modifie les modalités de transmission des factures entre entreprises, mais elle ne modifie pas les règles de fond relatives à l’existence de l’opération, à la dette commerciale, au paiement, à la comptabilisation de la facture ou au droit à déduction de la TVA.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c1a70062074e4a10",
-      "title": "Falklandsøyene straks minefrie - forsvaretsforum.no",
-      "url": "https://www.forsvaretsforum.no/argentina-storbritannia-utenriks/falklandsoyene-straks-minefrie/168569",
-      "summary": "Falklandsøyene straks minefrie Før uken er omme skal innbyggerne på Falklandsøyene sprenge den siste landminen i øyriket, 38 år etter at Falklandskrigen tok slutt.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a1c4f8e4c5d77847",
-      "title": "Fiche pays : Kosovo",
-      "url": "https://www.robert-schuman.eu/fr/nos-dossiers-pedagogiques/kosovo",
-      "summary": "Le 9 septembre 2010, l’assemblée générale des Nations Unies a adopté une résolution sans précédent sur le Kosovo commune à la Serbie et l’Union européenne appelant Belgrade et Pristina au « dialogue ».",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dca46b56068fc256",
-      "title": "Frem i lyset - forsvaretsforum.no",
-      "url": "https://www.forsvaretsforum.no/reportasje/frem-i-lyset/116854",
-      "summary": "Frem i lyset To spesialsoldater har gjenskapt Operasjon Muskedunder som vises på NRK. – Den har mange likheter med tungtvannsaksjonen, mener Ronny Bratli.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "de8c47ee08b02301",
-      "title": "Guide to Benefits for Seniors - USAging",
-      "url": "https://www.usaging.org/Files/Guide-to-Benefits%20508%20Compliant.pdf",
-      "summary": "The centerpiece of the campaign is the Guide to Benefits for Seniors, a publication we hope you will find useful as you explore the options to help you meet the costs of daily living. Assistance may come in the form of a voucher, discounts for goods, and free or reduced-price services. These resources are offered through federal, state and local benefit programs and nearly all are available ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a62fc20da1960e5d",
-      "title": "Henrri, le meilleur logiciel de facturation gratuit",
-      "url": "https://www.henrri.com/",
-      "summary": "Avec notre logiciel de facturation gratuit Henrri, créez devis et factures en ligne, gérez la facturation électronique, suivez paiements et relances. Gratuit, illimité, conforme à la loi !",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "089e261e0cef75bb",
-      "title": "Histoire du Kosovo — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Histoire_du_Kosovo",
-      "summary": "Les négociations sur le statut du Kosovo entre les autorités serbes et kosovares sont demeurées dans l’impasse, les premières ne parlant que d’une large autonomie du Kosovo au sein de la Serbie, les secondes ne voulant que l’indépendance.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2f740273ccd0ceda",
-      "title": "Kong Harald er død",
-      "url": "https://www.forsvaretsforum.no/akershus-festning-akershus-festning-oslo-det-kongelige-slott/kong-harald-er-dod/517357",
-      "summary": "Kong Harald V av Norge sovnet stille inn på Rikshospitalet fredag 28. august, klokken 06.35, melder slottet. Kong Haakon VIII har tatt samme valgspråk som sin far, bestefar og olderfar: «Alt for Norge».",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2c9b65095d005d67",
-      "title": "Kosovo - Actualités, vidéos et infos en direct - Le Monde.fr",
-      "url": "https://www.lemonde.fr/kosovo/",
-      "summary": "Toute l’actualité sur le sujet Kosovo. Consultez l’ensemble des articles, reportages, directs, photos et vidéos de la rubrique Kosovo publiés par Le Monde.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "86be816740571a4d",
-      "title": "Kosovo - Population, faits intéressants, devise, villes, informations ...",
-      "url": "https://countries-info.com/fr/countries/kosovo/",
-      "summary": "Situé au cœur des Balkans, le Kosovo est un pays enclavé qui partage ses frontières avec l'Albanie, la Macédoine du Nord, le Monténégro et la Serbie. Couvrant une superficie de 10 887 km², le Kosovo est légèrement plus grand que le Delaware ou Chypre.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "139310f818a2e105",
-      "title": "Kosovo - Présentation du Kosovo | France Diplomatie",
-      "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/kosovo/presentation-du-kosovo",
-      "summary": "Le Kosovo cherche à adhérer aux organisations internationales et à être reconnu par les Etats qui ne le reconnaissent pas encore. Relations avec la Serbie : la Serbie ne reconnaît pas l’indépendance du Kosovo. Un dialogue entre Belgrade et Pristina est conduit avec la médiation de l’Union européenne depuis 2011.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c414f56af9fbbe5c",
-      "title": "Kosovo : Politique, Relations avec l'UE, Géographie, Economie, Histoire ...",
-      "url": "https://www.touteleurope.eu/pays/kosovo/",
-      "summary": "Tout savoir sur le Kosovo : son régime, ses politiques, ses relations avec l'Union européenne, sa géographie, son économie et son histoire.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "64f605ea4ad1196e",
-      "title": "Kosovo — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Kosovo",
-      "summary": "Kosovo — Wikipédia",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "639252dbb2bb1462",
-      "title": "Kosovo, actualité et analyses - Le Courrier des Balkans",
-      "url": "https://www.courrierdesbalkans.fr/pays/kosovo/",
-      "summary": "Toute l'actualité de Kosovo suivie au quotidien par le Courrier des Balkans : politique, société, culture, économie. Analyses et reportages.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d428fbbb2e0a44c6",
-      "title": "Logiciel de facturation et de facturation électronique | Odoo",
-      "url": "https://www.odoo.com/fr_FR/app/invoicing",
-      "summary": "Facile Facturation électronique Envoyez et recevez un nombre illimité de factures électroniques gratuitement. Automatisez les paiements et les relances pour être payé plus rapidement. Lancez-vous - C'est gratuit !",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
+        "research",
         "tool"
       ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "899475976a4c30e2",
+      "title": "Institute for Astronomy",
+      "url": "https://home.ifa.hawaii.edu/",
+      "summary": "IfA astronomer David Tholen and his team have revealed critical new findings linked to a large asteroid expected to pass extremely close to Earth. They announced the detection of Yarkovsky acceleration on the near-Earth asteroid Apophis.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "rumor"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b4665ec04623d0e9",
+      "title": "JAV Indonesian Subtitles - JavSub.ai",
+      "url": "https://javsub.ai/subtitles/indonesian/",
+      "summary": "Download JAV Indonesian subtitles. Browse all available JAV videos with Indonesian subs. Translate and download instantly on JavSub.ai.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99c1bd5e719845db",
+      "title": "JAV Sub Indo - AVTub",
+      "url": "https://avtub.wiki/category/jav-sub-indo/",
+      "summary": "Jelajahi 4903 video JAV Sub Indo di AVTub",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ecc54144c43f5991",
+      "title": "Jav Sub Indo - SUBJAVID",
+      "url": "https://subjavid.com/category/jav-sub-indo",
+      "summary": "Jelajahi koleksi Jav Sub Indo di SUBJAVID.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
       "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
@@ -1612,12 +942,370 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ed973b88583cf3f1",
-      "title": "Logiciel gestion des ventes : devis & factures - MEG",
-      "url": "https://www.mon-expert-en-gestion.com/gestion-des-ventes/",
-      "summary": "Mes factures, devis et paiements en temps réel Avec la gestion des ventes dans MEG, suivez vos paiements en un clin d’œil et améliorez votre trésorerie. Vos devis et factures sont centralisés pour un suivi client plus fluide. En plus, votre cabinet comptable accède aux données en temps réel, sans échanges compliqués.",
+      "id": "7077b733c82cc619",
+      "title": "JAV Sub Indo Archives - ARENAJAV.COM",
+      "url": "https://arenajav.com/category/jav-sub-indo/",
+      "summary": "Streaming & download koleksi JAV Sub Indo JAV Subtitle Indonesia terbaru. Gratis, tanpa sensor, kualitas HD hanya di ARENAJAV.COM!",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0b5ad4ff01457682",
+      "title": "JAV SUB INDO Playlist - HD Porn Videos - SpankBang",
+      "url": "https://spankbang.com/dhld7/playlist/jav+sub+indo/",
+      "summary": "Watch JAV SUB INDO playlist for free on SpankBang - 36 movies and sexy clips. Play trending and hottest JAV SUB INDO movies.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c33f09c4bd6c0f7a",
+      "title": "Jav Sub Indo Porn - Sub Indo & Indo Bokep Videos - EPORNER",
+      "url": "https://www.eporner.com/tag/jav-sub-indo/",
+      "summary": "Watch Jav Sub Indo hd porn videos for free on Eporner.com. We have 926 videos with Jav Sub Indo, Sub Indo, Indo Bokep, Sub Espanol, Jav English Sub, Eng Sub, Jav Sub, Bokep Indo Terbaru, Jav Eng Sub, Hentai Sub Indo, English Sub in our database available for free.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f5f76268b1e66fc",
+      "title": "JAV Sub Indo Terbaru - arenajav.com",
+      "url": "https://arenajav.com/jav-sub-indo-terbaru/",
+      "summary": "SNOS-300 Tetangga Imut Digenjot di Bawah Hipnotis – Aika Yumeno 2026 1:58:37 JAV Acme · Orgasm Cuckold Decensored Drama Kiss solowork Titty fuck JP 2026-07-28",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5ba6d0b85116728a",
+      "title": "JAV Subtitle Indonesia Porn Tube : Free Japanese Sex Full DVD- Page 11 ...",
+      "url": "https://www.javxxx.me/v7/category/subtitle-indonesia/page/11/",
+      "summary": "Subtitle Indonesia | Watch HOT JAV Streaming HD Free Porn Japanese, Subtitle Indonesia Porn Movies Censored, Uncensored Online Update Daily on JAVXXX.Me",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "31e316d96520fff0",
+      "title": "Tesla (TSLA) Stock Price Quote, Value & News | Morningstar",
+      "url": "https://www.morningstar.com/stocks/xnas/tsla/quote",
+      "summary": "See the latest Tesla Inc stock price (NASDAQ:TSLA), related news, valuation, dividends and more to help you make your investing decisions.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "527bb3cfc6e3cec2",
+      "title": "Tesla (TSLA) Stock Price, News & Analysis - MarketBeat",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/TSLA/",
+      "summary": "Should You Buy or Sell Tesla Stock? Get The Latest TSLA Stock Analysis, Price Target, Earnings Estimates, Headlines, and Short Interest at MarketBeat.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8c3cf4f0ef2683b5",
+      "title": "Tesla (TSLA) Stock Price, Quote, News & History | Benzinga",
+      "url": "https://www.benzinga.com/quote/TSLA",
+      "summary": "Get real-time Tesla (TSLA) stock price, charts, news, and analyst ratings on Benzinga. Access forecasts, historical data, and expert insights to inform your investment decisions.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c54b54f7dfb58205",
+      "title": "Tesla News Today (TSLA) - Investing.com",
+      "url": "https://www.investing.com/equities/tesla-motors-news",
+      "summary": "Get today's Tesla stock news. We cover the latest Tesla headlines and breaking news impacting Tesla stock performance.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9d8986f443323aab",
+      "title": "TSLA News Today | Why did Tesla stock go down today?",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/TSLA/news/",
+      "summary": "Why Is Tesla Down Today? Tesla, Inc. (NASDAQ: TSLA) shares decreased as investors weighed renewed concerns about artificial-intelligence risks and Tesla’s autonomy strategy against expansion plans and potential new products.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d5beacfb4593d2c",
+      "title": "Uncensored Sub Indo Japanese Porn Videos, page 1 - VJAV.com",
+      "url": "https://vjav.com/search/1/?s=Uncensored+Sub+Indo",
+      "summary": "Uncensored Sub Indo and each beauty chick show themselves from different angles close-up or participate in ganbang giving nice blowjob to guys in jav porn movies.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fd4da71c8fad2897",
+      "title": "Why Did Tesla Stock Fall Today? - The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/04/why-did-tesla-stock-fall-today/",
+      "summary": "Why Did Tesla Stock Fall Today? Tesla shares sank 6% on Sept. 4, 2026, after a lackluster Cybercab unveiling met fresh regulatory scrutiny.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3c3aa94540a6515a",
+      "title": "Application Control for Windows | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/appcontrol",
+      "summary": "While Smart App Control is designed for consumers, we believe it's the ideal starting point for most organizations. And since we built it entirely upon App Control for Business, you can create a policy with the same security and compatibility as Smart App Control that also trusts the line-of-business (LOB) apps your organization needs.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7977f0b4f96471c9",
+      "title": "ATP & WTA Prize Money 2026 | Complete Breakdowns",
+      "url": "https://tenniscompanion.org/prize-money/",
+      "summary": "Explore the lucrative prize money distributed by the world's largest tennis tournaments worldwide for the ATP & WTA.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1638,12 +1326,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5cd43d2779be286d",
-      "title": "Logiciels de facturation : comparatif 2026 des meilleurs outils - Qonto",
-      "url": "https://qonto.com/fr/blog/gestion-entreprise/facturation/logiciel-facturation",
-      "summary": "Qonto, Abby, Tiime ou encore Axonaut font partie des meilleurs logiciels de facturation en 2026. Avec la réforme de la facturation électronique, toutes les entreprises assujetties à la TVA seront concernées par les e-factures. La compatibilité avec son statut juridique ou encore un accès dédié pour son expert-comptable sont des critères déterminants pour choisir son logiciel de ...",
+      "id": "614e2d0530c3cff7",
+      "title": "Catalogo Sidi: Sconti Fino Al 50% | Nencini Sport",
+      "url": "https://www.nencinisport.it/it/sidi.html",
+      "summary": "Novità Scarpe MTB Sidi TOP SELLERS SIDI Da oltre cinque decenni, Sidi è sinonimo di eccellenza nel mondo delle calzature per il ciclismo. Con una passione radicata nella ricerca della perfezione tecnica e del comfort ottimale, ogni paio di scarpe Sidi rappresenta l'unione perfetta tra innovazione e tradizione artigianale.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1664,12 +1352,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9014a1a31762904e",
-      "title": "Manngard - Forsvarets forum",
-      "url": "https://www.forsvaretsforum.no/forsvarsbygg-reportasje/manngard/101412",
-      "summary": "Det er funnet 505 000 kilo ammunisjonsrester i det tidligere skytefeltet på Hjerkinn. Og fortsatt letes det.",
+      "id": "9ff8f0a39035395b",
+      "title": "Coachella Valley Volkswagen - Cathedral City, CA | Cars.com",
+      "url": "https://www.cars.com/dealers/6062616/coachella-valley-volkswagen/",
+      "summary": "Read reviews by dealership customers, get a map and directions, contact the dealer, view inventory, hours of operation, and dealership photos and video. Learn about Coachella Valley Volkswagen in ...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1678,9 +1366,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "video"
       ],
-      "primary_type": "community",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1690,10 +1378,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "34bcc285c9b7f90e",
-      "title": "New & Used VW Dealership In Huntington Station, NY",
-      "url": "https://www.vwofhuntington.com/",
-      "summary": "Shop Volkswagen Of Huntington for our inventory of new 2026 VW vehicles and quality used cars in Huntington Station, NY.",
+      "id": "2c9a3c1bb31a0e43",
+      "title": "COACHELLA VALLEY VOLKSWAGEN - Indio CA - Hours, Directions, Reviews ...",
+      "url": "https://www.loc8nearme.com/california/indio/coachella-valley-volkswagen/4384605/",
+      "summary": "Coachella Valley Volkswagen at 79050 Varner Rd, Indio CA 92203 - hours, address, map, directions, phone number, customer ratings and reviews.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1716,10 +1404,114 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "eaefdb4d907af335",
-      "title": "News | WREG.com",
-      "url": "https://wreg.com/news/",
-      "summary": "Sweden may wait long for a new government as the … Indonesia intensifies search effort for 129 people … How a photographer sees images of daily life as a …",
+      "id": "a2e484c2f40a1798",
+      "title": "Coachella Valley Volkswagen - Indio, CA 92203 - The Real Yellow Pages",
+      "url": "https://www.yellowpages.com/indio-ca/mip/coachella-valley-volkswagen-470449710",
+      "summary": "Welcome to Coachella Valley Volkswagen, your trusted local dealership located at 79050 Varner Rd, Indio, CA 92203. Shop with Coachella Confidence and enjoy the benefits of our exclusive program, which includes a 3-day return policy, 30-day vehicle exchange program, 6-month powertrain warranty with every purchase, and your first 3 oil changes ...",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36bcb4d1a874a625",
+      "title": "Coachella Valley Volkswagen in Indio, CA 92203 - (760) 9...",
+      "url": "https://www.chamberofcommerce.com/united-states/california/indio/volkswagen-dealer/2003652563-coachella-valley-volkswagen",
+      "summary": "Coachella Valley Volkswagen located at 79050 Varner Rd, Indio, CA 92203 - reviews, ratings, hours, phone number, directions, and more.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99714d7f18b4a0a5",
+      "title": "Coachella Valley Volkswagen | Volkswagen Dealer in Cathedral City, CA",
+      "url": "https://www.coachellavw.com/",
+      "summary": "Coachella Valley Volkswagen is your local VW dealer in Cathedral City, CA and serving the entire Palm Springs, La Quinta area for years. Come for VW Sales, Service or Parts.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "500affa1ca0f5585",
+      "title": "Corporate Fact Sheet 250408 - www-file.huawei.com",
+      "url": "https://www-file.huawei.com/-/media/corp2020/media-center/pdf/corporate%20fact%20sheet%202025-04-08.pdf",
+      "summary": "Huawei Investment & Holding Co., Ltd. is a private company wholly owned by 161,749 of its employees and retired beneficiaries. As of December 31, 2024, Mr. Ren’s investment accounts for nearly 0.65% of the company’s total share capital.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "983310eb11c31e2f",
+      "title": "Denver's Leading Local News: Weather, Traffic, Sports and more | Denver ...",
+      "url": "https://www.9news.com/",
+      "summary": "9NEWS.com is the official website for KUSA-TV, your trusted source for breaking news, weather and sports in Denver, CO. 9NEWS.com",
       "discovery_channel": "broad_web",
       "query": "new smart glasses 2026",
       "source": "Bing web RSS",
@@ -1742,12 +1534,65 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ddd512cea50d7178",
-      "title": "Norge bør støtte Macrons kjernevåpeninitiativ",
-      "url": "https://www.forsvaretsforum.no/atomvapen-frankrike-kronikk/norge-bor-stotte-opp-under-macrons-kjernevapeninitiativ/490551",
-      "summary": "I en tid med mer usikker amerikansk sikkerhetsgaranti og et mer aggressivt Russland, bør Norge støtte en styrking av europeisk kjernefysisk avskrekking.",
+      "id": "c2f00c8c88e4124e",
+      "title": "Download & Install YouTube App on Your Windows PC or Laptop Now",
+      "url": "https://m.youtube.com/watch?v=hxUeYCR1vb0",
+      "summary": "Learn how to download & install the YouTube app on your Windows PC or laptop with our easy-to-follow guide. This tutorial is designed for Windows 11 and Windows 10 users, providing step-by-step...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "417ccaf57b3cbbe3",
+      "title": "Download Youtube Videos for Free",
+      "url": "https://en1.savefrom.net/1-youtube-video-downloader-8jH/",
+      "summary": "To download YouTube videos to your PC using SaveFrom.net, copy the video URL, paste it into the designated input field on our website, and click \"Download.\" ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da47d98d3d6a6d85",
+      "title": "Eidosper - 知乎",
+      "url": "https://www.zhihu.com/people/eidosper",
+      "summary": "2019年，一项研究 [1]发现，人类说话速度大约是每秒39bit。这项实验包括英语、汉语在内的17种语言。不同语言在说话时，信息输出速率都被限制在这个数值附近。 研究人员记录了发音人朗读相同语义文本的真实语速，并测算了每个音节承载的信息量。结果表明，语言之间存在平衡机制，单音节信息 ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1768,36 +1613,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "989654b51f6609dd",
-      "title": "Norge vil avgi ubåt til Canada",
-      "url": "https://www.forsvaretsforum.no/canada-norge-tyskland/norge-vil-avgi-ubat-til-canada/502181",
-      "summary": "Canada er i ferd med å velge leverandør av nye ubåter. Faller valget på tyske TKMS, kan Norge og Tyskland avgi planlagte ubåter til Canada.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a639974277c5f6d8",
-      "title": "Over 80 pension: Further information - GOV.UK",
-      "url": "https://www.gov.uk/over-80-pension/further-information",
-      "summary": "The over 80 pension counts as taxable income, so it may affect other benefits you’re getting. You must include the over 80 pension as income if you’re claiming other income related benefits.",
+      "id": "38dfa8eeb220a3b5",
+      "title": "Grand Slam Prize Money Breakdown — 2026 Tables (AO/RG/W/USO ...",
+      "url": "https://super.tennis/money/grand-slam-prize-money-breakdown/",
+      "summary": "2026 Grand Slam prize money: singles champion checks, per-round prize money, total prize pools at the Australian Open, Roland Garros, Wimbledon, and US Open. Doubles + qualifying + wheelchair amounts included.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1820,12 +1639,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b2628f8762ef17a2",
-      "title": "Over 80 pension: What you'll get - GOV.UK",
-      "url": "https://www.gov.uk/over-80-pension/what-youll-get",
-      "summary": "For example, you’re 80 years old and you get £45 a week basic State Pension, your basic State Pension may be topped up by £66.75 to £110.75 a week.",
+      "id": "324a7f2de3eac540",
+      "title": "Home – Sidi Sport Srl",
+      "url": "https://sidi.com/",
+      "summary": "Sidi è il negozio online di scarpe e abbigliamento per ciclisti e motociclisti: prodotti dall'anima italiana per aiutare gli atleti ad eccellere.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1846,12 +1665,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "22a55e9c59ace72e",
-      "title": "Over-60s benefits - Which?",
-      "url": "https://www.which.co.uk/money/pensions-and-retirement/accessing-your-pensions/perks-and-benefits-of-being-retired-aYK1U4o8AdIb",
-      "summary": "Senior railcard The Senior Railcard is available to travellers aged 60 or over. It costs £35 a year (or £80 for three years) and gives you a third off standard and first class anytime, off-peak and advance fares. Coach discounts Some travel operators offer discounts for older people.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "87f8d7485cc8fe4d",
+      "title": "how do I turn off smart app - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5858331/how-do-i-turn-off-smart-app",
+      "summary": "Smart App Control is only available on clean installs of Windows 11. If Smart App Control has already been turned off (manually or automatically during evaluation), it cannot be turned back on without resetting or reinstalling Windows.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1860,7 +1679,8 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "model",
+        "tool"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -1872,12 +1692,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8370145bbd4b9e44",
-      "title": "Reuters: Pentagon skal ha vurdert å kaste Spania ut av Nato",
-      "url": "https://www.forsvaretsforum.no/nato-pentagon-spania/reuters-pentagon-skal-ha-vurdert-a-kaste-spania-ut-av-nato/496838",
-      "summary": "Det sirkulerer en epost i Pentagon der det blir vurdert å kaste Spania ut av Nato som følge av manglende støtte til Iran-krigen, ifølge Reuters.",
+      "id": "e3d005e8e67c9e5d",
+      "title": "How Tennis Prize Money Works — Distribution, History & 2026 ...",
+      "url": "https://super.tennis/money/tennis-prize-money-explained/",
+      "summary": "Today every combined ATP/WTA event (Indian Wells, Miami, Madrid, Rome, Cincinnati, China Open) also pays equal prize money to men's and women's singles champions.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1898,10 +1718,219 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d93dbdd542de20cb",
-      "title": "Solution de dématérialisation des factures fournisseurs",
-      "url": "https://www.getyooz.com/fr/solution-dematerialisation",
-      "summary": "Logiciel cloud (outil SaaS), permettant de gérer la capture, l'enregistrement, la validation et l'intégration comptable des factures et achats.",
+      "id": "50ab682125aa64a4",
+      "title": "How Tennis Prize Money Works: A 2026 Fan's Guide",
+      "url": "https://blog.tweener.io/blog/how-tennis-prize-money-works-a-2026-fans-guide",
+      "summary": "Unlock the secrets of how tennis prize money works in 2026! Discover tiered payouts, tournament impacts, and maximize your fan knowledge.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b26abc10df3aafba",
+      "title": "How to turn Smart App Control on? - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5705026/how-to-turn-smart-app-control-on",
+      "summary": "How to turn on Smart App Control in current OS without clean install: In Regedit > Computer\\HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\CI\\Policy Rt Clk the pointed item, hit Modify and change the Value from 0 to 1. Go back to Smart App Control Settings and it will be ON 😊 Put it (back) to 0 to put Smart App Control (back) to Off.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b6cdedace4a0911",
+      "title": "Huawei AI Data Center Reference Design",
+      "url": "https://digitalpower.huawei.com/upload-pro/index/index/Huawei-AI-Data-Center-Reference-Design.pdf",
+      "summary": "The Huawei PowerPod FusionPower9000 provides a decoupled and flexible power supply and distribution system solution for medium and large data centers. This solution integrates power supply and distribution units, UPSs, lithium batteries, air conditioners, and fire extinguishing systems into a ultra-high protection 40-foot container.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e9fa53118b5d51e8",
+      "title": "Huawei eKitEngine AP772 Wireless Access Point Datasheet",
+      "url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/faf20e5d8d7749688cbd85377e48b0af/M3T1A590N1226502283536961582/HUAWEI%20eKitEngine%20AP772%20Wireless%20Access%20Point%20Datasheet.pdf",
+      "summary": "Product Overview Huawei eKitEngine AP772 is an outdoor access point (AP) that complies with Wi-Fi 7 (802.11be) and provides a maximum of six spatial streams. The AP leverages Wi-Fi 7 innovations to significantly improve users' wireless experience. It stands out with excellent outdoor coverage performance, IP68 waterproof and dustproof ratings, and strong surge protection capability. These ...",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "00404dcb66aba8a0",
+      "title": "I-10 Automall | New & used cars, trucks, & SUVs in Indio, CA",
+      "url": "https://i10automall.com/",
+      "summary": "Shop a wide selection of new & used cars, trucks, & SUVs at I-10 Automall. Near Indio, Palm Desert, La Quinta, & Coachella.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0682ec0c59cd92c5",
+      "title": "Intelligent World 2035 - www-file.huawei.com",
+      "url": "https://www-file.huawei.com/admin/asset/v1/pro/view/8c64c0710ee04bee8e85385be5d944ad.pdf",
+      "summary": "Huawei's Intelligent World 2035 report provides broad perspectives and profound insights into this topic, systematically outlining viable pathways for AI and what the intelligent world will look like over the next decade.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9d65ae7cd4b14bf1",
+      "title": "Measuring the true impact of the digital economy - Huawei",
+      "url": "https://www.huawei.com/minisite/gci/en/digital-spillover/files/gci_digital_spillover.pdf",
+      "summary": "Starting in 2014, Huawei began releasing an annual Global Connectivity Index (GCI) report to assess the development of countries from a technological perspective. This report on the digital economy expands on that work, aiming to verify the value of technologies on a broader economic scale.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a7718987b629b70f",
+      "title": "Microsoft Docs",
+      "url": "https://docs.microsoft.com/en-us/windows/uwp/toc.json",
+      "summary": "{\"items\":[{\"children\":[{\"children\":[{\"href\":\"get-started/\",\"toc_title\":\"Overview\"},{\"href\":\"get-started/universal-application-platform-guide\",\"toc_title\":\"What\\u0027s ...",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9c219a61ef80b231",
+      "title": "patchi巧克力怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/41781863",
+      "summary": "灰常灰常灰常灰常推荐的一款巧克力，简直爱死了，能去 Dubai Mall 的LG层买最好，机场都是包装好的，价格相对较高，适合送人。门店里的散装的可以自选口味，散称更实惠一点，推荐四方块咖啡色的一款，里面有曲奇粒，还有加了陈皮的，话说门店里的包装送人也足够好看了，在 Mirdif city center 也 ...",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1924,38 +1953,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4904be9099a9a4f1",
-      "title": "Storbritannia avviser Kinas støtte til Argentina i striden om ...",
-      "url": "https://www.forsvaretsforum.no/argentina-kina-storbritannia/storbritannia-avviser-kinas-stotte-til-argentina-i-striden-om-falklandsoyene/245473",
-      "summary": "Falklandsøyene straks minefrie Argentina mener Falklands øyene ble tatt fra dem på ulovlig vis i 1833 og invaderte det britiske territoriet i 1982. Storbritannia sendte soldater og Argentina tapte en to måneder lang krig om øyriket i Sør-Atlanteren. 649 argentinske og 244 britiske soldater ble drept. Argentina gjør fortsatt krav på ...",
+      "id": "2f3835bff2693686",
+      "title": "Prize Money - ATP & WTA Prize Money Breakdowns for 2026 ...",
+      "url": "https://www.perfect-tennis.com/prize-money/",
+      "summary": "Full 2026 ATP Prize Money List The table below shows the total prize money for every tournament on the 2026 ATP calendar, including Grand Slams, Masters 1000, ATP 500, and ATP 250 tournaments. Click through to the individual tournament page to see a full breakdown for singles and doubles, as well as historical comparisons.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "hack"
-      ],
-      "primary_type": "hack",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ffca047efcb253a6",
-      "title": "Suivi des Factures et Paiement des Clients : Tableau de bord Excel",
-      "url": "https://lecoursgratuit.com/suivi-des-factures-et-paiement-des-clients-tableau-de-bord-excel/",
-      "summary": "Le suivi des factures et des paiements clients est un processus essentiel pour maintenir la santé financière d’une entreprise. Un suivi efficace permet de garantir que les clients respectent les délais de paiement, d’éviter les retards de trésorerie, et de gérer les relations clients de manière proactive.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1976,12 +1979,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4c4b8bc2f56bf0b0",
-      "title": "Tag: argentina - forsvaretsforum.no",
-      "url": "https://www.forsvaretsforum.no/tag/argentina",
-      "summary": "Orion-flyene er solgt til Argentina Argentina kjøper norske P-3 Orion Storbritannia avviser Kinas støtte til Argentina i striden om Falklandsøyene Falklandsøyene straks minefrie",
+      "id": "594169d970f323d8",
+      "title": "Prize Money in Tennis - 2026 Update - Tennisnerd.net",
+      "url": "https://www.tennisnerd.net/prize-money",
+      "summary": "All about prize money for tennis tournaments and how it works. Complete list of ATP/WTA events. Which tournament get the biggest prize money?",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2002,12 +2005,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8f6b3b51e0c1ad1f",
-      "title": "Top 7 des logiciels de facturation électronique - Qonto",
-      "url": "https://qonto.com/fr/blog/gestion-entreprise/facturation/logiciel-facturation-electronique",
-      "summary": "Un logiciel de facturation électronique permet d'émettre et d'envoyer des e-factures en conformité avec la future réforme de 2026. Certains logiciels sont d'ores et déjà compatibles avec les règles de la facturation électronique obligatoire. C'est notamment le cas de Qonto, Henrri, Tiime, Facture.net, Esker, Sage et Evoliz. Pour choisir votre solution de facturation électronique ...",
+      "id": "1c04fd7a890dae48",
+      "title": "Scarpe Bici da Corsa Sidi: Modelli Top | Decathlon",
+      "url": "https://www.decathlon.it/tutti-gli-sport/ciclismo/scarpe-bici-da-corsa/f-brand_sidi",
+      "summary": "Scarpe bici da corsa Sidi con suola in carbonio per il ciclismo su strada Tagliare il traguardo dopo una salita estenuante richiede ogni watt trasferito senza dispersioni. Qui il piede diventa un'estensione della pedivella, e la rigidità della suola fa la differenza tra una pedalata fluida e una potenza sprecata.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2028,12 +2031,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ac695099e5e6411e",
-      "title": "TopCharacterTropes - Reddit",
-      "url": "https://www.reddit.com/r/TopCharacterTropes/",
-      "summary": "A community to share your favourite character tropes with the community. From characters with similar themes, to weapons with matching vibes.",
+      "id": "4a5d529a8f0f179c",
+      "title": "Scarpe Bici da Corsa: Van Rysel, Shimano, Sidi, Northwave | Decathlon",
+      "url": "https://www.decathlon.it/tutti-gli-sport/ciclismo/scarpe-bici-da-corsa",
+      "summary": "Scopri le scarpe bici da corsa Decathlon: modelli strada e MTB di Van Rysel, Shimano, Sidi e Northwave. Leggerezza, rigidità e comfort per ogni…",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2042,9 +2045,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2054,12 +2057,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "be75b24daacd0edd",
-      "title": "Upcoming TV Shows - Release Dates, Trailers, Info and more - IGN",
-      "url": "https://www.ign.com/upcoming/tv",
-      "summary": "Check out this list of upcoming releases.",
+      "id": "bb5a8bf5cd766bec",
+      "title": "Scarpe da ciclismo per Uomo e Donna | Sidi Sport",
+      "url": "https://sidi.com/collections/shoes",
+      "summary": "La collezione di scarpe da ciclismo SIDI per uomo e donna è stata pensata per ogni tipo di ciclista: modelli da strada, MTB, gravel e triathlon. Esperienza italiana, materiali premium e tecnologie avanzate per una calzata precisa che garantisce il massimo trasferimento di potenza sui pedali.",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2068,7 +2071,346 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a98d265d84b65159",
+      "title": "Scarpe da ciclismo SIDI per MTB e strada | BIKE24",
+      "url": "https://www.bike24.it/marchi/sidi",
+      "summary": "SIDI scarpe bici da corsa: da Prima a Wire 3 e Shot 3, suole in carbonio rigide, chiusure precise, calzata aderente da strada e gara. Le scarpe SIDI strada coprono ogni esigenza, dall'uscita cicloturistica alla competizione, e per le scarpe ciclismo strada SIDI più esigenti ogni scarpa SIDI strada nasce da decenni di esperienza in gara.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "86bcea294c1e7c07",
+      "title": "Scarpe per Bici da Corsa | Force | Gaerne | Giro | Fizik | SIDI",
+      "url": "https://www.gambacicli.com/it/abbigliamento-ciclismo/scarpe-ciclismo/scarpe-bici-corsa.html",
+      "summary": "Scarpe per bici da corsa troppo larghe generano continui sfregamenti, irritazioni e dolori. Se hai un piede a pianta larga ci sono scarpe specifiche, ad esempio SIDI identifica questi modelli con al dicitura MEGA. Suola: la rigidità della suola è fondamentale per trasferire la tua forza ai pedali.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "125c26cab636d563",
+      "title": "Scarpe strada Sidi | Cingolani",
+      "url": "https://www.cingolanibikeshop.com/abbigliamento/scarpe/strada/sidi/",
+      "summary": "Le scarpe per bici da corsa Sidi presentano attualmente delle funzionalità che le rendono uniche nel loro genere. Cingolani Bike Shop propone un ampio catalogo di scarpe da ciclismo su strada Sidi, aggiornato alle ultime novità.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f41146f662450765",
+      "title": "Sidi - Scarpe Bici da Corsa | Vendita Online - Cicli Viviani",
+      "url": "https://www.cicliviviani.com/it/cat/scarpe-bici-da-corsa-4/sidi-32",
+      "summary": "Scarpe Bici da Corsa delle migliori marche a prezzi convenienti. Vasta scelta di prodotti! Spedizioni garantite. Pagamenti sicuri. Scopri le Offerte!",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "178ca5ec498f69c2",
+      "title": "SIDI | Scarpe Sidi MTB e Bici de corsa | Alltricks.it",
+      "url": "https://www.alltricks.it/C-136912-sidi",
+      "summary": "ll Ampia scelta di scarpe Sidi MTB e bici da corsa disponibili in stock Alltricks il rivenditore N°1 per Sidi a prezzi imbattibili Consegna rapida",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "10954558e580e40c",
+      "title": "Smart App Control - Windows apps | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/apps/develop/smart-app-control/overview",
+      "summary": "Smart App Control is an app execution control feature that combines Microsoft’s app intelligence services and Windows' code integrity features to protect users from untrusted or potentially dangerous code. Smart App Control selectively allows apps and binaries to run only if they're likely to be safe. Microsoft's app intelligence services provide safety predictions for many popular apps. If ...",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6fdfd5398b33bc90",
+      "title": "Smart App Control Feature - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5742466/smart-app-control-feature",
+      "summary": "At this stage, the absence of the Smart App Control toggle is strictly due to your device not yet being included in the current server-side \"wave\" of the rollout. Since you are on such a recent build, your system is perfectly positioned to receive the entitlement flag as soon as Microsoft expands the deployment group.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2f5ad619eaf77828",
+      "title": "Stay protected on Windows 11 with smart security features",
+      "url": "https://support.microsoft.com/en-us/account-billing/stay-protected-on-windows-11-with-smart-security-features-5965fb4f-7a5a-418f-95a7-2fc2e63ecb5a",
+      "summary": "Stay protected on Windows 11 with smart security features As technology advances, the threat of cyberattacks grows more severe. Cybercriminals are becoming increasingly sophisticated, finding new ways to deceive individuals, steal personal information, and infiltrate accounts.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bb7302174afa7673",
+      "title": "SUN2000-330KTL-H1 - Huawei FusionSolar",
+      "url": "https://solar.huawei.com/download?p=%2f-%2fmedia%2fSolarV4%2fsolar-version2%2fcommon%2fprofessionals%2fall-products%2futility-smart-pv%2fsmart-pv-controller%2fSUN2000-330KTL-H1%2fsun2000-330ktl-h1-datasheet-20230515.pdf",
+      "summary": "SUN2000-330KTL-H1 Smart String Inverter For APAC, LATAM & EUROPE",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "15297abbbac4eb38",
+      "title": "Tennis Prize Money Breakdowns 2026 for ATP, WTA - Sportico.com",
+      "url": "https://www.sportico.com/feature/tennis-prize-money-breakdowns-atp-wta-1234769498/",
+      "summary": "Singles draws generally pay out more money than doubles draws, but singles players also pad their earnings by participating in doubles at events that feature both formats. The money at stake in different tournaments varies greatly.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "198772cd5295752e",
+      "title": "U.S. Restrictions on Huawei Technologies: National Security, Foreign ...",
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R47012/R47012.1.pdf",
+      "summary": "Huawei Technologies Co., Ltd., is a China-based company that designs, manufactures, and sells telecommunications network equipment and devices. Founded in 1987, the company has grown from a small reseller of imported telephone switches into a multinational conglomerate with revenues of $138 billion in 2020 and a presence in over 170 countries. Huawei is estimated to be the largest of the four ...",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "63f043fb1d707726",
+      "title": "unblock a file smart app blocked - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5765803/unblock-a-file-smart-app-blocked",
+      "summary": "unblock a file smart app blocked. My file is a Corel installation file .iso file. My system has blocked me .. How can I override this. Thanks",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f9fb8f69f7fde47",
+      "title": "UNITED STATES DISTRICT COURT UNITED STATES OF AMERICA SUPERSEDING ...",
+      "url": "https://www.justice.gov/archives/opa/press-release/file/1248961/dl",
+      "summary": "The core of the suggested talking points regarding Iran/Skycom: Huawei’s operation in Iran comports with the laws, regulations and sanctions as required by the United Nations, the United States and the European Union. The relationship with Skycom is that of normal business cooperation. Through regulated trade organizations and procedures, Huawei requires that Skycom promises to abide by ...",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "policy"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -2080,12 +2422,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a8666ef199073f62",
-      "title": "WREG.com | News Channel 3 | Memphis News and Weather | Memphis, TN",
-      "url": "https://wreg.com/",
-      "summary": "What to plant in September: Best vegetables and flowers … The best gifts, toys and collectibles to celebrate … Farmers’ Almanac predicts when first snow will fall … Balsam Hill’s cult-favorite...",
+      "id": "33ee3d81af8bb041",
+      "title": "UNITED STATES OF AMERICA MEMORANDUM DECISION AND ORDER HUAWEI ...",
+      "url": "https://attorneywire.com/wp-content/uploads/2026/09/huawei_order_on_motion_to_dismiss.pdf",
+      "summary": "April through December 2002, Huawei incorporated this source code into internet routers that rewei marketed as c (Id. ¶¶ 18–19.) In furtherance of this scheme, Huawei and Futurewei “hired or attempted to hire Company 1 employees and directed these employees to misappropriate Company 1 source",
       "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2106,10 +2448,140 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d54f0f6caa5e907e",
-      "title": "Приложение «Instagram» — App Store",
-      "url": "https://apps.apple.com/ru/app/instagram/id389801252",
-      "summary": "Загрузите приложение «Instagram» от этого разработчика (Instagram, Inc.) в App Store. См. скриншоты, оценки и отзывы, советы пользователей и другие похожие на «…",
+      "id": "6bca46d4fc3158f3",
+      "title": "Volkswagen Indio | Coachella Valley Volkswagen",
+      "url": "https://www.coachellavw.com/volkswagen-indio/",
+      "summary": "Indio Volkswagen Dealership selling New and Used Cars and SUVs! Explore the thrill of our Volkswagen dealership in Indio, CA! Dive into a world of the best Volkswagens in town!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a40e9f0410403ab",
+      "title": "Volkswagen of Palm Springs | Volkswagen Dealer in Cathedral City, CA",
+      "url": "https://www.vwofpalmsprings.com/",
+      "summary": "Volkswagen of Palm Springs serves the Cathedral City and Palm Desert area. We carry all the new and pre-owned Volkswagen vehicles you could want. Visit today!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb473d6639e0bda6",
+      "title": "WhatsApp",
+      "url": "https://wa.me/?l=es",
+      "summary": "Organizado por WhatsApp 2026 © WhatsApp LLC Privacidad y Condiciones",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "014c51369b8bbf2d",
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/index.html",
+      "summary": "Aquí nos gustaría mostrarte una descripción, pero el sitio web que estás mirando no lo permite.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8e9c4a50f15e9a27",
+      "title": "WhatsApp Web",
+      "url": "https://web-fallback.whatsapp.com/",
+      "summary": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with ease, all for free.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d0388c380c33f1c7",
+      "title": "WhatsApp Web: Iniciar sesión y entrar, app código QR",
+      "url": "https://www.mundocuentas.com/whatsapp/web/",
+      "summary": "En este artículo, te explicaremos cómo escanear el código QR para usar WhatsApp Web, las características de la plataforma y algunos trucos que debes conocer acerca de este servicio.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -2132,12 +2604,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8d900a6ae481541a",
-      "title": "‎Facebook App - App Store",
-      "url": "https://apps.apple.com/us/app/facebook/id284882215",
-      "summary": "Download Facebook by Meta Platforms, Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Facebook.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "bddf7e8ec201bf31",
+      "title": "windows turned on smart app control - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5727500/windows-turned-on-smart-app-control",
+      "summary": "Windows may have turned on Smart App Control automatically to enhance your device's security. Smart App Control is designed to protect users from untrusted or potentially dangerous applications by allowing only those that are likely to be safe to run. If your device was detected as a good candidate for this feature, it would enable it to help prevent malware and other threats. Additionally ...",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2158,12 +2630,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "164bb31843db1bc5",
-      "title": "‎Instagram App - App Store",
-      "url": "https://apps.apple.com/us/app/instagram/id389801252",
-      "summary": "Download Instagram by Instagram, Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Instagram.",
+      "id": "58e50b4ebc7640fb",
+      "title": "YouTube - App Store",
+      "url": "https://apps.apple.com/us/app/youtube/id544007664",
+      "summary": "Download YouTube by Google on the App Store. See screenshots, ratings and reviews, user tips, and more apps like YouTube.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2172,9 +2644,10 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
+        "video",
         "tool"
       ],
-      "primary_type": "tool",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2184,12 +2657,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6f73bdc069845691",
-      "title": "‎Instagram‑App – App Store",
-      "url": "https://apps.apple.com/de/app/instagram/id389801252",
-      "summary": "Lade „Instagram“ von Instagram, Inc. im App Store herunter. Sieh dir Bildschirmfotos, Bewertungen und Rezensionen, Benutzertipps und weitere Apps wie „Instagram…",
+      "id": "68b72edb5a4563b1",
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/app%20download",
+      "summary": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. Whatever you're into, it's on @YouTube.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2198,9 +2671,10 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
+        "video",
         "tool"
       ],
-      "primary_type": "tool",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2210,12 +2684,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cb7dd568418a5372",
-      "title": "‎Messages App - App Store",
-      "url": "https://apps.apple.com/us/app/messages/id1146560473",
-      "summary": "Download Messages by Apple on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Messages.",
+      "id": "b469019c9249259b",
+      "title": "YouTube APK for Android Download - APKPure.com",
+      "url": "https://apkpure.com/youtube-app/com.google.android.youtube",
+      "summary": "YouTube Latest Version APK download for Android. YouTube is a video streaming app that helps you watch, follow, and create content on Android.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2224,9 +2698,270 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
+        "video",
         "tool"
       ],
-      "primary_type": "tool",
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "30b41104c070c89b",
+      "title": "YouTube Video Downloader - turboscribe.ai",
+      "url": "https://turboscribe.ai/downloader/youtube/video/free",
+      "summary": "Paste a URL to download the video. Free, fast, and no ads. Download YouTube videos in moments with TurboScribe’s streamlined YouTube Video Downloader. It’s fast, clean, and hassle-free—no sign-ups, no clutter, just pure downloading power.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ac74a73b811e5de8",
+      "title": "YouTube Video Downloader - YTDown",
+      "url": "https://ytdown.tools/",
+      "summary": "YTDown is a free YouTube video downloader that lets you download YouTube videos and playlists in MP4 or MP3. Simply copy the link, paste it into the box, choose your preferred format, and download instantly.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da20f53437e44c7a",
+      "title": "YT Downloader - Fast & Free YouTube Video Downloader",
+      "url": "https://ytdownloader.io/",
+      "summary": "Easily YouTube Video Downloader with our free YT Downloader. Paste a URL to start your youtube video download in MP4, HD, and various formats instantly.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "952103ca5e89c861",
+      "title": "为何WPS文件打开很慢，很慢？ - 知乎",
+      "url": "https://www.zhihu.com/question/36743009",
+      "summary": "打开开始菜单。找到WPS 打开 wps office 工具 点击 wps office 工具 下面的配置工具 打开 配置工具 后，点击 高级 找到其他选项 将其他选项中箭头指出地方的勾选给去掉 另外：在 兼容设置 中把下面三个勾选去掉，可以防止保存的文档默认为WPS打开。",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b7c20e0f7c9337ad",
+      "title": "如何评价默罕默德·本·扎耶德人工智能大学？ - 知乎",
+      "url": "https://www.zhihu.com/question/351846700",
+      "summary": "10.31 update 对于有兴趣申请MBZUA感兴趣的同学可以联系MBZUAI中国区招生官、清华01级校友黄静静咨询申请及考试事宜，电话18611742282（同WeChat）",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6718ae0739a4b35",
+      "title": "手机报毒a.gray.crackgame? - 知乎",
+      "url": "https://www.zhihu.com/question/645441066",
+      "summary": "a.gray.Crackgame 属于移动端常见的报毒命名。 a : 前缀 ：通常表示这是该威胁的 检测名称 。有些厂商会用 Trojan、Backdoor、Worm 等直接说明类型，在移动端病毒名称中，a 通常代表 Android，即 Android 端。 gray : 类别 ：这是最关键的部分，代表病毒的大致类别。而 gray 明确指代 灰色软件 。 什么是灰色软件 ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5515a41eb33eca08",
+      "title": "有哪些比较好的电脑桌面时钟（提醒）软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/22841161",
+      "summary": "如果用的是Windows的电脑，其实可以用电脑自带的程序，LZ一直用这个定时提醒，挺方便的。 以下为具体的步骤： 单击开始菜单，在最下方的搜索框里搜索“计划任务”，再单击打开“任务计划程序”。 在“任务计划程序”窗口单击“创建基本任务”，打开“创建基本任务向导”。 输入任务的 ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "44ec6c624cda6a8c",
+      "title": "腾讯搜活帮真的能收到任务吗? - 知乎",
+      "url": "https://www.zhihu.com/question/333526262",
+      "summary": "用了一下，能是能。就是很无聊，本着赚钱的想法去吧，想着可能自己没有经验，所以任务不多。 后来也通过了几次考试，也看到有任务包，3000元宝一次哦，心动吧？可惜…就是雨你无瓜。 我的是华为手机，每次出的任务都只有魅族和荣耀可以做。 就很心累。 现在又过了一个考试，给出任务包 ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da60e38f9fc27f5b",
+      "title": "这个月亮建筑在哪？是已建还未来规划？ - 知乎",
+      "url": "https://www.zhihu.com/question/23787380",
+      "summary": "月亮塔（Crescent crescent moon Tower Dubai）也叫迪拜新月塔，是迪拜Za'abeel公园的新地标。 镰刀状的新月塔共33层，除了拥有大量高端住宅资源，还将建有儿童图书馆、高级餐厅、会议室、高档情调酒吧和最高层观景厅。",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cbbacdd2bbf92122",
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "summary": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 11.11号，买家收到机子后，以我电脑有问题为由，到手刀，并进行退款。协商之后，决定退款退货，我不懂平台交易模式，买家发起的退款，我点了同意。感觉不对之后 ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],

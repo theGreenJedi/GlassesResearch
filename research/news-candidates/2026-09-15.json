@@ -1,21 +1,32 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-15T08:59:56.115822+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 135,
+  "discovered_utc": "2026-09-15T12:50:33.163378+00:00",
+  "candidate_count": 5,
+  "precision_rejected_count": 146,
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 1,
-    "speculative": 0,
+    "adjacent": 2,
+    "speculative": 1,
     "irrelevant": 0
   },
   "type_counts": {
-    "news": 1
+    "video": 1,
+    "news": 2,
+    "tool": 1,
+    "hack": 1,
+    "policy": 1,
+    "community": 1,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 1,
-    "research_news_review": 1
+    "adjacent_radar": 2,
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "policy_privacy": 1,
+    "report_card_evidence": 1,
+    "research_news_review": 5,
+    "watching": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -26,16 +37,141 @@
   ],
   "candidates": [
     {
-      "id": "8bf5bcd4f9850845",
-      "title": "Haptic Feedback Medical Devices Market to Reach US$ 5.9 Billion - openPR.com",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObWJZZGlfY0pNUjc2WnNCeGVoQ3VqVUx4WFhYV19UTncycVVTcENLNTB1djV2Q0tKYUJSVTZoV3ZuekZCYi1KSzF6cFlpYVcwcVd2clVjTEFhcUFrVnBlVzdQTEYzOXRNLVcwcXlmUVNXYlUxbURDS2dYLTRzWXpaaUU1R1RmcVAtbWZKUEF4cElZQ0lHcFRESXFiNzNuNGs?oc=5",
-      "source": "Google News: wearable haptics interface",
-      "source_lane": "adjacent_hci",
-      "published": "Tue, 15 Sep 2026 06:09:55 GMT",
-      "summary": "Haptic Feedback Medical Devices Market to Reach US$ 5.9 Billion openPR.com",
+      "id": "7627e026ef6d3c58",
+      "title": "Meta Smart Glasses Spark Privacy Backlash Among Singles and Data Security Advocates - streamlinefeed.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZ18weDRiRXVUeXBMMTk5cU16THhOX1VBTGpLdW1BSTk4ZjJ5V1lEU2RnYjlqSldXSmtuQ3VIRkMxdWtzaktwY1VXRzl2WVJHM2wxZm5BXzN5MFV4OXBFS0xQckc5N0xzQ09Wd3BwWGJBVnpuV1JjaEZvZ1A4bGh0VXRkQXM3R0FZLWdJYw?oc=5",
+      "source": "Google News: smart glasses tools",
+      "source_lane": "core_glasses",
+      "published": "Tue, 15 Sep 2026 10:45:00 GMT",
+      "summary": "Meta Smart Glasses Spark Privacy Backlash Among Singles and Data Security Advocates streamlinefeed.co.ke",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "privacy",
+        "security"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "c0e0cf4a5c3d3f4d",
+      "title": "mentra-v3.2.0-dev.249: Recover SoftAP camera mid-call and bundle Mentra Call 2.1.10.",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.0-dev.249",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-09-15T09:12:54Z",
+      "summary": "A glasses UVC crash left ACS and BLE audio up while Mentra Call sat on Reconnecting. Re-issue start_stream on the standing ingest URL, and ship the miniapp that keeps the in-call header live when only video is rebuilding.",
       "materiality_score": 2,
       "keyword_hits": [
-        "haptic"
+        "ble",
+        "camera"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "video",
+        "tool",
+        "hack",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "3cae5e22c2949cfe",
+      "title": "Honor Magic9 and Magic9 Pro Max specs leak with large 8,800 mAh battery and major camera upgrades - notebookcheck.net",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOOUZOVW8xbE44Q1BHVFdHZEVSUGpuRHRnWnlvTW5TOWotQmZwMjgwZHlVdXBIc1R4RUJoYkJ0Ml9zbkdWWkRqMENZZ3VObHFQZlRfN2RHajV2VnNvXzduanlpV3oyMFlHVVRlSHZjeDVoVTIwZDBxXzNoWXRycGthc056U2p6MWVybkNWeEZjc3RVT3NBeXk4WERWd2xhcUI0a0ZMTmtlQ2o1ck1GdGt0R0RSOUwzUDc5c3ZSemtoUU5VamlGZjNRVjNubFRkc1hYMXh0RGpaR3BMZw?oc=5",
+      "source": "Google News: Snap Spectacles",
+      "source_lane": "core_glasses",
+      "published": "Mon, 14 Sep 2026 07:52:00 GMT",
+      "summary": "Honor Magic9 and Magic9 Pro Max specs leak with large 8,800 mAh battery and major camera upgrades notebookcheck.net",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "battery",
+        "camera",
+        "leak"
+      ],
+      "status": "candidate",
+      "relationship": "speculative",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "research_news_review",
+        "watching"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "future/rumor signals: leak",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "77a61f5c80734435",
+      "title": "Open-Source \"Kinesis\" Turns Meta's EMG Wristband into a Mac Controller - finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1raWpFZHlaVHlJVUNHNllMS0NGcnFtQlhUMFNYc290YUo2OEJWcEZid3J4MUtaTGNySnBPUGxpenZYRUlUbDVoVmlDenpLYzJBb2NkSUtsdVVaT0hvV1BMU1NhYmVtbEhVQ25KTEpMalJYcEU1MWc?oc=5",
+      "source": "Google News: AR glasses",
+      "source_lane": "core_glasses",
+      "published": "Tue, 15 Sep 2026 03:26:00 GMT",
+      "summary": "Open-Source \"Kinesis\" Turns Meta's EMG Wristband into a Mac Controller finance.biggo.com",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "emg"
+      ],
+      "status": "candidate",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "0d6b6194681ad65d",
+      "title": "Open-Source Kinesis reverse-engineers Meta’s Neural Band for muscle Mac controls - notebookcheck.net",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNGRZWHJoaFFhS3NMTFpYTmNZWkl3dTVac0p3cm9TdGZTZUxGNHRuRENmTWpWcENpYXRJTXNxVG1DdElNZ1NfcFh2cWFxUG5TN3k5OWozbjhPVlNESEVJdkMtS3dKc0JYbWswTmZqdVNPZnVLWHR1MG9LaGtQOEY4YnJBNUc5Vk9vbGIxX2lMN2VzT18tQy1nbHFTUE8wS3V2dS1PaVdJN01PNU1DU0trRFZKdXc4a05yb3VuQXhIOVNCUmc?oc=5",
+      "source": "Google News: wearable display glasses",
+      "source_lane": "core_glasses",
+      "published": "Mon, 14 Sep 2026 22:47:00 GMT",
+      "summary": "Open-Source Kinesis reverse-engineers Meta’s Neural Band for muscle Mac controls notebookcheck.net",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "neural"
       ],
       "status": "candidate",
       "relationship": "adjacent",
