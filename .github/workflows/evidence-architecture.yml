@@ -5,6 +5,9 @@ on:
     paths:
       - 'research/EVIDENCE_ENRICHMENT_ARCHITECTURE.md'
       - 'research/evidence-claims.schema.json'
+      - 'research/claims/**'
+      - 'research/dossiers/**'
+      - 'tests/fixtures/evidence-claims/**'
       - 'research/KNOWLEDGE_FLOW.md'
       - 'research/REPORT_CARD_PIPELINE.md'
       - 'scripts/validate_evidence_architecture.py'
@@ -14,6 +17,9 @@ on:
     paths:
       - 'research/EVIDENCE_ENRICHMENT_ARCHITECTURE.md'
       - 'research/evidence-claims.schema.json'
+      - 'research/claims/**'
+      - 'research/dossiers/**'
+      - 'tests/fixtures/evidence-claims/**'
       - 'research/KNOWLEDGE_FLOW.md'
       - 'research/REPORT_CARD_PIPELINE.md'
       - 'scripts/validate_evidence_architecture.py'
@@ -30,5 +36,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate evidence enrichment contracts
+      - name: Validate evidence enrichment contracts and persisted claims
         run: python scripts/validate_evidence_architecture.py
