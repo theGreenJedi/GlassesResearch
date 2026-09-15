@@ -17,6 +17,7 @@ A compact map of GlassesResearch. Use the Finder when choosing glasses; use Rese
 
 - [Open Research](OPEN_RESEARCH.md) — living, provenance-preserving technical investigations
 - [MYVU Open Research](../research/myvu-open-research/README.md) — XGA010C/MYVU lineage, protocol, compatibility and failure-mode research
+- [Community Research](community-research/index.md) — attributed technical work from owners, developers, reverse engineers, maintainers, and independent researchers
 
 ### Research & News
 
