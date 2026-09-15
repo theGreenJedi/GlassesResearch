@@ -6,6 +6,24 @@
 
 It is not a manufacturer, marketing site, product-review outlet, or piracy archive. It is a public research, engineering, preservation, and documentation project.
 
+## North Star Canon
+
+> **Authority is the product. Search visibility is one of its consequences.**
+
+GlassesResearch does not pursue authority through SEO, appearance, volume, engagement, or the simulation of expertise. It earns authority by providing genuinely authoritative answers.
+
+Every material decision should therefore favor factual accuracy, completeness, provenance, reproducibility, honest uncertainty, correction, and useful synthesis of the available evidence.
+
+Search optimization may improve the discoverability of that work, but it remains subordinate to the quality and integrity of the underlying knowledge. When priorities conflict, **improving the answer takes precedence over improving the appearance, reach, or ranking of the answer.**
+
+This canon governs the project's other operating principles. Model dossiers, Report Cards, research, community evidence, preservation, corrections, provenance, and automation exist to make GlassesResearch more capable of giving an authoritative answer and showing why that answer should be trusted.
+
+### Drift detector
+
+> **If we find ourselves optimizing the signals of authority rather than the substance of authority, we have departed from the mission.**
+
+A proposed feature, workflow, publication, optimization, or automation should be challenged when its primary value is traffic, ranking, engagement, activity, or the appearance of expertise without a corresponding improvement in the underlying knowledge or the reader's ability to understand it.
+
 ## Mission
 
 GlassesResearch exists to:
@@ -33,6 +51,12 @@ Every future contribution should be evaluated with this question:
 > Would a serious research library, engineering archive, or technical institution preserve this?
 
 If the answer is yes, the material belongs here when it can be lawfully documented and responsibly attributed.
+
+The North Star adds a second governing test:
+
+> Does this help GlassesResearch know the truth about these devices, preserve why it believes that answer, or give someone a better authoritative answer?
+
+If the answer is no and the principal benefit is merely visibility or the appearance of authority, it is not a project priority.
 
 ## Research principles
 
@@ -108,7 +132,7 @@ Every model page should evolve into a research dossier that can include:
 - known issues, compatibility, AI integrations, and preservation status;
 - sources, evidence labels, verification dates, and correction history.
 
-Each dossier should aim to become the most complete public research starting point available for that model.
+Each dossier should aim to become the most complete public research starting point available for that model. Model dossiers are touchstones: model-bound knowledge should converge on or be reachable from the canonical model record rather than remaining stranded elsewhere in the corpus.
 
 ## Relationships and discovery
 
@@ -122,9 +146,9 @@ Every recurring entity should have a canonical home and every relevant page shou
 
 Every merge should satisfy this question:
 
-> Does this make GlassesResearch more valuable as a research institution?
+> Does this make GlassesResearch more valuable as a research institution and more capable of providing an authoritative answer?
 
-The project measures success by verified and preserved knowledge, not by page count.
+The project measures success by verified and preserved knowledge, not by page count, search ranking, traffic, or the appearance of activity.
 
 ## Highest measure of success
 
