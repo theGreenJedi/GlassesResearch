@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-08-16 → 2026-09-12**.
+Google Search Console page/query pairs for **2026-08-17 → 2026-09-13**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -8,12 +8,10 @@ Google Search Console page/query pairs for **2026-08-16 → 2026-09-12**.
 
 | Page | Query | Impressions | Clicks | CTR | Position |
 |---|---|---:|---:|---:|---:|
-| https://glassesresearch.org/lineages/HEYCYAN/ | cyanbridge | 15 | 0 | 0.00% | 9.1 |
-| https://glassesresearch.org/models/BrilliantHalo/ | brilliant labs halo | 1 | 0 | 0.00% | 1.0 |
+| https://glassesresearch.org/lineages/HEYCYAN/ | cyanbridge | 12 | 0 | 0.00% | 9.3 |
 | https://glassesresearch.org/models/BrilliantHalo/ | brilliant labs halo github | 1 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/models/EvenG2/ | وش مواصفاتها | 1 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/lineages/META/ | meta gls | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/models/HuaweiEyewear2/ | eyewear 2 | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | ai glasses timeline | 6 | 0 | 0.00% | 21.7 |
 | https://glassesresearch.org/docs/faq/10-ownership-future/ | future of smart glasses ownership | 5 | 0 | 0.00% | 17.8 |
 | https://glassesresearch.org/models/HuaweiEyewear2/ | huawei eyewear 2 | 4 | 0 | 0.00% | 19.0 |
@@ -26,7 +24,6 @@ Google Search Console page/query pairs for **2026-08-16 → 2026-09-12**.
 | https://glassesresearch.org/models/RayNeoX3Pro/ | rayneox3pro | 1 | 0 | 0.00% | 16.0 |
 | https://glassesresearch.org/lineages/SNAP/ | snapchat spectacles website | 1 | 0 | 0.00% | 24.0 |
 | https://glassesresearch.org/resources/ECOSYSTEM_RESOURCE_CATALOG/ | smart glasses sdk | 1 | 0 | 0.00% | 27.0 |
-| https://glassesresearch.org/models/EvenG2/ | even realities secretlab | 1 | 0 | 0.00% | 29.0 |
 | https://glassesresearch.org/docs/faq/01-basics/ | ar glasses with screen | 1 | 0 | 0.00% | 30.0 |
 | https://glassesresearch.org/models/EvenG2/ | even g2 glasses | 1 | 0 | 0.00% | 30.0 |
 

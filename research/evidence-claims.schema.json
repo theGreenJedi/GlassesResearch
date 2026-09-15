@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://glassesresearch.org/schema/evidence-claims.schema.json",
+  "title": "GlassesResearch evidence claim",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "claim", "subject", "source", "evidence", "status", "destinations"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^GRCL-[0-9]{4}-[0-9]{4,}$"},
+    "claim": {"type": "string", "minLength": 1},
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "id"],
+      "properties": {
+        "type": {"enum": ["model", "family", "platform", "app", "manufacturer", "technology", "policy", "topic"]},
+        "id": {"type": "string", "minLength": 1},
+        "relationship_basis": {"type": "string"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reference", "observed_at"],
+      "properties": {
+        "reference": {"type": "string", "minLength": 1},
+        "observed_at": {"type": "string", "format": "date"},
+        "published_at": {"type": ["string", "null"], "format": "date"},
+        "locator": {"type": ["string", "null"]},
+        "archived_reference": {"type": ["string", "null"]}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lane", "strength"],
+      "properties": {
+        "lane": {"enum": ["community", "documentary_regulatory", "manufacturer", "commercial", "developer", "independent", "gr_lab", "inferred", "hypothesis", "unknown", "disproven"]},
+        "strength": {"enum": ["weak", "developing", "supported", "strong", "independently_verified"]},
+        "notes": {"type": ["string", "null"]}
+      }
+    },
+    "status": {"enum": ["candidate", "corroborated", "contradicted", "under_investigation", "established", "superseded", "disproven", "unknown"]},
+    "supports": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "contradicts": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "destinations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["target", "disposition"],
+        "properties": {
+          "target": {"enum": ["canonical_model", "model_dossier", "report_card", "cross_model", "research_queue", "finder_comparison", "public_research", "editorial"]},
+          "disposition": {"enum": ["proposed", "accepted", "rejected", "not_applicable", "blocked", "superseded"]},
+          "reference": {"type": ["string", "null"]},
+          "reason": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "event"],
+        "properties": {"date": {"type": "string", "format": "date"}, "event": {"type": "string"}, "reference": {"type": ["string", "null"]}}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"subject": {"properties": {"type": {"const": "model"}}, "required": ["type"]}}},
+      "then": {
+        "properties": {
+          "destinations": {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "target": {"const": "model_dossier"},
+                "disposition": {"enum": ["accepted", "proposed", "blocked", "superseded"]}
+              },
+              "required": ["target", "disposition"]
+            }
+          }
+        }
+      }
+    }
+  ]
+}
