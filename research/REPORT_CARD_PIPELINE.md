@@ -2,22 +2,28 @@
 
 A catalog row is an index entry, not completed research. GlassesResearch considers a model research-ready for editorial synthesis only after its Report Card is supported by traceable evidence.
 
+This pipeline consumes the shared provenance-bearing claim system defined in [`EVIDENCE_ENRICHMENT_ARCHITECTURE.md`](EVIDENCE_ENRICHMENT_ARCHITECTURE.md). Community, documentary/regulatory, manufacturer, commercial, developer, independent and GR-lab evidence can all inform a Report Card, but their provenance and evidentiary strength remain distinct.
+
 ## Required order
 
 For each canonical model in `models/THE_LIST.md`:
 
 1. **Investigate** — collect the strongest available evidence, preferring manufacturer/developer documentation, manuals, regulatory material, SDK/API documentation, archived first-party material for discontinued devices, credible independent testing, and GlassesResearch hands-on observations where available.
 2. **Correct the listing** — reconcile model name, generation, date, category, capabilities, availability, lineage, and other canonical facts when the evidence contradicts or improves the existing record.
-3. **Build the evidence package** — preserve source links and note which claims each source supports. Separate hands-on observations from externally sourced claims.
-4. **Complete the Report Card** — evaluate Hardware, Wearability, Visual AI, Software, Display/HUD, Openness, Owner Control, Cloud Independence, Hackability, and Value.
-5. **Write or audit the editorial summary** — only after the evidence and Report Card exist, synthesize what the device is, what it does well, its compromises, its ownership/developer posture, and why it matters.
+3. **Build the evidence package** — preserve source links and atomic claims each source supports, contradicts, or leaves unresolved. Separate GR hands-on observations from externally sourced claims and retain contradictions instead of overwriting them.
+4. **Complete the Report Card** — evaluate Hardware, Wearability, Visual AI, Software, Display/HUD, Openness, Owner Control, Cloud Independence, Hackability, and Value from the evidence package.
+5. **Propagate conclusions** — consider every established or materially changed conclusion against canonical model data, the model research dossier, Report Card dimensions, cross-model relationships, research debt, and structured decision attributes. Record `not_applicable` where appropriate rather than silently dropping a destination.
+6. **Write or audit the editorial summary** — only after the evidence and Report Card exist, synthesize what the device is, what it does well, its compromises, its ownership/developer posture, and why it matters.
 
 ## Scoring rules
 
 - A numerical score requires enough evidence to defend the judgment.
+- New evidence does **not** silently rewrite a score; it supports, challenges, or reopens the dimension and the score rationale must remain traceable.
 - **N/A** means the dimension genuinely does not apply to the device.
 - **Not yet graded** means the dimension applies but evidence is not yet sufficient for a defensible score.
 - Unknown facts are research debt, not permission to infer specifications.
+- Community repetition can raise investigation priority but is not independent verification.
+- Manufacturer documentation establishes what the manufacturer documents/claims; it does not automatically establish real-world performance.
 - A family-wide score must not hide materially different hardware generations; split the evaluation when necessary.
 - Value should be time-aware. If current price/availability cannot be established reliably, leave Value as Not yet graded rather than inventing a durable score.
 
@@ -25,9 +31,9 @@ For each canonical model in `models/THE_LIST.md`:
 
 A model progresses through these states:
 
-`Listed → Investigated → Canonical data checked/corrected → Evidence recorded → Report Card completed → Editorial summary written/audited`
+`Listed → Investigated → Canonical data checked/corrected → Evidence recorded → Contradictions/research debt assessed → Report Card completed → Conclusions propagated → Editorial summary written/audited`
 
-A model is **research complete** only when every applicable Report Card dimension is either scored with evidence or explicitly left Not yet graded with the missing evidence identified. It is **editorially complete** only after its human-readable summary has been written or re-audited from that research package.
+A model is **research complete** only when every applicable Report Card dimension is either scored with evidence or explicitly left Not yet graded with the missing evidence identified, and material conclusions have been considered against applicable downstream destinations. It is **editorially complete** only after its human-readable summary has been written or re-audited from that research package.
 
 ## Existing summaries
 
@@ -35,4 +41,4 @@ Existing profile paragraphs are retained. When their model reaches the Report Ca
 
 ## Project target
 
-The canonical target is every model in `models/THE_LIST.md`: one investigated evidence package, one defensible Report Card, and one evidence-derived human-readable summary per listing.
+The canonical target is every model in `models/THE_LIST.md`: one living provenance-bearing evidence package, one defensible Report Card, one explicit research-debt/contradiction state, and one evidence-derived human-readable summary per listing.
