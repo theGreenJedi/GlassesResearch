@@ -81,13 +81,23 @@ def build_scour_indexes(site_root: Path, scour: dict[str, list[dict[str, str]]])
     for model_id, count, url in hub_rows:
         hub_lines.append(f"- [{model_id} — {count} finding{'s' if count != 1 else ''}]({url})")
     hub.write_text("\n".join(hub_lines) + "\n", encoding="utf-8")
-    # Ensure the generated hub itself has an inbound public path from the existing
-    # Community Research landing page, without changing presentation/navigation.
-    landing = site_root / "research" / "community-research" / "README.md"
-    if landing.exists():
-        text = landing.read_text(encoding="utf-8").rstrip()
+
+    # Close the complete public reachability chain. The staged research README is
+    # intentionally public and links to the generated hub, so the existing public
+    # Community Research landing page must link to that archive entry point.
+    research_landing = site_root / "research" / "community-research" / "README.md"
+    if research_landing.exists():
+        text = research_landing.read_text(encoding="utf-8").rstrip()
         link = "[Browse retained findings by model](/research/community-research/by-model/)"
-        if link not in text: landing.write_text(text + "\n\n" + link + "\n", encoding="utf-8")
+        if link not in text:
+            research_landing.write_text(text + "\n\n" + link + "\n", encoding="utf-8")
+
+    public_landing = site_root / "docs" / "community-research" / "index.md"
+    if public_landing.exists():
+        text = public_landing.read_text(encoding="utf-8").rstrip()
+        link = "[Browse the retained Community Research archive](/research/community-research/)"
+        if link not in text:
+            public_landing.write_text(text + "\n\n" + link + "\n", encoding="utf-8")
     return indexes
 
 
