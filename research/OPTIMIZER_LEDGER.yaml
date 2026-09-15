@@ -1,0 +1,244 @@
+schema_version: 1
+updated: 2026-09-15
+mission: >-
+  Durable institutional memory for optimizer findings and research leads. Nothing
+  valuable should exist only because we remember talking about it.
+
+policy:
+  ui_moratorium_scope: "UI/presentation only"
+  public_surface: false
+  issue_role: "Execution objects for promoted actionable work; not the monitoring database."
+  lifecycle:
+    - discovered
+    - recorded
+    - monitored
+    - promoted
+    - execution
+    - commissioned
+    - closed
+  research_graduation:
+    states:
+      - needs_investigation
+      - under_investigation
+      - findings_established
+    rule: >-
+      A retained finding may graduate into Research when significance/evidence
+      warrants a durable public research subject. Research may contain work that
+      needs investigation or is actively being investigated; it need not wait for
+      a final answer.
+    evidence_lanes:
+      - community
+      - documentary_regulatory
+      - manufacturer
+      - commercial
+      - gr_lab
+      - inferred
+      - hypothesis
+      - disproven
+      - unknown
+    community_research: >-
+      Community Research is subordinate to Research as an evidence/source lane.
+      Preserve attribution and distinguish community findings from independent
+      GlassesResearch reproduction. A community-originated subject may graduate
+      into broader Research and later gain documentary or GR lab evidence without
+      rewriting its provenance.
+
+findings:
+  - id: OPT-2026-001
+    title: Host-compatibility Finder surfacing
+    grade: MEDIUM
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: monitored
+    evidence_strength: developing
+    rationale: Surface structured host-compatibility evidence when coverage is sufficient.
+    constraints: [ui_moratorium]
+    related: []
+
+  - id: OPT-2026-002
+    title: Finder-aware deep-research routing
+    grade: MEDIUM
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: monitored
+    evidence_strength: conceptual
+    rationale: Improve transition from discovery to deeper evidence and research.
+    constraints: [ui_moratorium]
+    related: []
+
+  - id: OPT-2026-003
+    title: Newsroom maker/ecosystem/technical desks
+    grade: MEDIUM
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: monitored
+    evidence_strength: supported
+    rationale: Preserve specialist newsroom segmentation opportunity.
+    related: ["#504"]
+
+  - id: OPT-2026-004
+    title: Post-purchase feature economics and service dependencies
+    grade: MEDIUM
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: monitored
+    research_state: needs_investigation
+    evidence_strength: developing
+    rationale: Track subscriptions, cloud dependencies, feature loss and continuing ownership cost.
+    related: []
+
+  - id: OPT-2026-005
+    title: Evidence-grounded decision and failure-mode comparison
+    grade: MEDIUM
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: monitored
+    evidence_strength: conceptual
+    rationale: Compare meaningful failure modes without collapsing evidence lanes.
+    constraints: [ui_moratorium]
+    related: []
+
+  - id: OPT-2026-006
+    title: Machine-readable archival and version packaging
+    grade: MEDIUM
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: monitored
+    evidence_strength: supported
+    rationale: Extend durable research packaging beyond existing CITATION.cff.
+    related: []
+
+  - id: OPT-2026-007
+    title: Competitor and reference hygiene
+    grade: MEDIUM
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: monitored
+    evidence_strength: supported
+    rationale: Maintain distinctions among competitors, authority benchmarks, discovery sentinels and UX/architecture references.
+    related: []
+
+  - id: OPT-2026-008
+    title: Richer Events filtering
+    grade: MEDIUM
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: monitored
+    evidence_strength: conditional
+    rationale: Promote only when event volume justifies additional interface complexity.
+    constraints: [ui_moratorium]
+    related: []
+
+  - id: OPT-2026-009
+    title: Developer opportunities competitions and grants
+    grade: MEDIUM
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: monitored
+    research_state: needs_investigation
+    evidence_strength: supported
+    rationale: Preserve developer-ecosystem opportunities as research; public surface waits for UI work.
+    constraints: [ui_moratorium_for_public_surface]
+    related: []
+
+  - id: OPT-2026-010
+    title: Institutional privacy and social-use restrictions
+    grade: MEDIUM
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: monitored
+    research_state: needs_investigation
+    evidence_strength: developing
+    rationale: Accumulate evidence on courts, workplaces, venues, schools, law enforcement, privacy and social acceptance.
+    related: []
+
+  - id: OPT-2026-011
+    title: Presentation architecture reference
+    grade: MEDIUM
+    first_seen: 2026-09-15
+    last_reviewed: 2026-09-15
+    state: monitored
+    evidence_strength: comparative
+    rationale: >-
+      Post-moratorium evaluate a task-oriented application/publication presentation
+      while preserving all canonical MkDocs/research work and minimizing recurring
+      cost and maintenance. The frontend must remain replaceable.
+    constraints: [ui_moratorium]
+    related: ["#578"]
+
+  - id: OPT-2026-012
+    title: Commissioning debt campaign
+    grade: HIGH
+    first_seen: 2026-09-15
+    last_reviewed: 2026-09-15
+    state: promoted
+    evidence_strength: strong
+    rationale: >-
+      Re-prove systems previously treated as complete at merge. Implemented,
+      integrated, commissioned and operational are distinct states; built means
+      commissioned, and operational means commissioned plus observably continuing.
+    constraints: [audit_tracking_now, ui_commissioning_post_moratorium, reliability_exception]
+    related: ["#392", "#406", "#568", "#578"]
+
+  - id: OPT-2026-013
+    title: XGA010C owner-control replication
+    grade: HIGH
+    first_seen: 2026-09-15
+    last_reviewed: 2026-09-15
+    state: promoted
+    research_state: under_investigation
+    evidence_strength: community_primary_pending_gr_replication
+    rationale: >-
+      Determine how much practical owner control can be recovered independently of
+      manufacturer application/cloud while preserving the boundary between
+      application-level interoperability and unproven firmware authority.
+    evidence_lanes: [community, documentary_regulatory, gr_lab]
+    related: ["#577"]
+
+  - id: OPT-2026-014
+    title: Canonical admission reliability
+    grade: VERY_HIGH
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: promoted
+    evidence_strength: strong
+    rationale: Remote proposal intake failure must not prevent eligible local canonical admission processing.
+    related: ["#568"]
+
+  - id: OPT-2026-015
+    title: WIRED Meta NameTag discovery and verification miss
+    grade: VERY_HIGH
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: promoted
+    research_state: under_investigation
+    evidence_strength: developing
+    rationale: Verify the legal/technical claims and diagnose why the discovery system missed a benchmark-source story.
+    related: ["#570"]
+
+  - id: OPT-2026-016
+    title: Rokid AIUI Studio and ROKID.js developer stack
+    grade: HIGH
+    first_seen: 2026-09-14
+    last_reviewed: 2026-09-15
+    state: promoted
+    research_state: under_investigation
+    evidence_strength: primary_documentation_available
+    rationale: Map generation applicability, licensing, account/cloud/offline boundaries, simulation and publishing claims.
+    related: ["#569"]
+
+  - id: OPT-2026-017
+    title: Newsroom freshness and collector health observability
+    grade: HIGH
+    first_seen: 2026-09-15
+    last_reviewed: 2026-09-15
+    state: promoted
+    evidence_strength: strong
+    rationale: Make collector staleness, processing backlog, coverage misses and publication lag distinguishable and machine-visible.
+    related: ["#406"]
+
+rejected_low_value:
+  - generic best-glasses rankings
+  - SEO-first comparison mechanics
+  - affiliate incentives
+  - copied competitor presentation branding or wording
