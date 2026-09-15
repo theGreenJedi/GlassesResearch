@@ -1,22 +1,30 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-15T01:55:54.874904+00:00",
-  "candidate_count": 3,
-  "precision_rejected_count": 111,
+  "discovered_utc": "2026-09-15T07:23:19.289527+00:00",
+  "candidate_count": 4,
+  "precision_rejected_count": 118,
   "relationship_counts": {
-    "direct": 3,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 0,
-    "speculative": 0,
+    "adjacent": 1,
+    "speculative": 1,
     "irrelevant": 0
   },
   "type_counts": {
-    "tool": 3,
-    "sdk": 2
+    "news": 1,
+    "tool": 2,
+    "sdk": 2,
+    "policy": 1,
+    "community": 1,
+    "rumor": 1
   },
   "routing_counts": {
-    "development_hacking": 3,
-    "research_news_review": 3
+    "adjacent_radar": 1,
+    "community_evidence_review": 1,
+    "development_hacking": 2,
+    "policy_privacy": 1,
+    "research_news_review": 4,
+    "watching": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -27,27 +35,63 @@
   ],
   "candidates": [
     {
-      "id": "2073ad6f8078ec6f",
-      "title": "A New App Uses Bluetooth to Detect Meta AI Glasses Nearby - gadgetreview.com",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeFJlcFQtbHhzMVhodm5QUmNsN1g5aHdQTHhqLXdiM3ZnenRlYlhiXzc0ajktVGZsSE9YWUczYy1nc244MGVwOGVrN1QzejRxYW5ISWlfZ1RoV3A2Z3FBMUJjV0FOX0M0cVo1WVNmM25EczN6aVVvMGhVTVdBaC1rekNhZldIUkw5OFkxbThVNA?oc=5",
-      "source": "Google News: smart glasses",
-      "source_lane": "core_glasses",
-      "published": "Mon, 14 Sep 2026 15:56:18 GMT",
-      "summary": "A New App Uses Bluetooth to Detect Meta AI Glasses Nearby gadgetreview.com",
-      "materiality_score": 2,
+      "id": "3042e71385002e90",
+      "title": "mentra-v3.1.1-beta.246",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.1-beta.246",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-09-15T00:43:56Z",
+      "summary": "Merge pull request #4060 from Mentra-Community/philippe/android-sdk-p…",
+      "materiality_score": 3,
       "keyword_hits": [
-        "ai",
-        "bluetooth"
+        "sdk"
       ],
       "status": "candidate",
       "relationship": "direct",
       "content_types": [
-        "tool"
+        "tool",
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
-        "development_hacking"
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "bbf3c40becf0164c",
+      "title": "Privacy concerns prompt developer to create ‘ZuckOff’ app to detect Meta, Snap AI glasses - mangaloretoday.com",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPN3p3RnNNU2VBV3NaeXJ0YWNVc2liLU8zTlQ2dG5ld3Zwal9QR3BlTTFZUGJqWm95SFhyaktvUjNpVXZMc20xYmtjWTdiR2FhSndJNloxMmF0Nm9pWUd0OXVVdmM3ZFE0bWtxSEd1WDhYX01yTmw4ZWo3VEpPaXBmeFY1QWp2QVZsQUtfVjR2MktwUXpOYkxha2tNeDdyMkhCeG1iY0c5RDYzZmNtdXdWT29CMldXdE1mbU5Mb05fNDVfM1ZTSE9zejZhQkU?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Tue, 15 Sep 2026 05:56:14 GMT",
+      "summary": "Privacy concerns prompt developer to create ‘ZuckOff’ app to detect Meta, Snap AI glasses mangaloretoday.com",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "ai",
+        "developer",
+        "privacy"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "policy_privacy"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
@@ -57,63 +101,62 @@
       "institution_test": "review durability"
     },
     {
-      "id": "7c40d5030aa9497f",
-      "title": "Annoyed by secret recordings, developer creates ZuckOff app to detect nearby Meta, Snap smart AI glasses - deccanherald.com",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQeDBoS1RBWlVUVkhidGRCQW13M05iNE5wODFTRnBheUVFMEI2R01mZU9VUjlRNmE0WVlYWklwb1g2TkRYVUxRWjJrdnpBS3RRVXBoLWF5dTMzZm5HbldjU1ZtYnRKNmx5RElQYXplQUMxWkVKLWJ0RHdyREY0V2NzX2tpYlY5UWVvLUFvdzVBeWxDRTVuSE5Bcml6NDlrX0dRQ3Y0TjBLdVpQZEROYm1tVEs1Xzhqa0VCZ19uU05wTDlSeXh1bEQ5UUs0cGNtbERXdXBteGJkRGZGMldWcnBINXM2OHpDLWVnX2JEZ3dkRjAwS3Y2ZHBrbi1kbk1ER1FhUHY4aQ?oc=5",
-      "source": "Google News: smart glasses",
-      "source_lane": "core_glasses",
-      "published": "Mon, 14 Sep 2026 13:34:48 GMT",
-      "summary": "Annoyed by secret recordings, developer creates ZuckOff app to detect nearby Meta, Snap smart AI glasses deccanherald.com",
-      "materiality_score": 2,
+      "id": "50b66ed7a349ed12",
+      "title": "OPPO A7 Pro Series Debuts in Malaysia With 50MP AI Selfie Camera and Massive 10,000mAh Battery - newswav.com",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWm1FN1BpVmN0WEhTX3JhTF9kWVRRXy1ZMEVWVC1zUnBWV3ZhbDZaQm1tQ09FdENlNS1FeTdqY08xYlNGbFM5UTVDb1BRcDNESFpsUDdHMW9oc3NkeE9rQllENmNBV1RHdlU0dU1OMG0zdFRZbER4bldqVnlhSnJScUFZNEUxMG1nQ1Iyak1XYUJLV3pyQXJEdFFNQ2xPLWtVMWUxenFyTk9EbmRCdDNLd0dvcGZ2UzA?oc=5",
+      "source": "Google News: AI wearable camera",
+      "source_lane": "adjacent_hci",
+      "published": "Tue, 15 Sep 2026 03:42:59 GMT",
+      "summary": "OPPO A7 Pro Series Debuts in Malaysia With 50MP AI Selfie Camera and Massive 10,000mAh Battery newswav.com",
+      "materiality_score": 3,
       "keyword_hits": [
         "ai",
-        "developer"
+        "battery",
+        "camera"
       ],
       "status": "candidate",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "development_hacking"
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
     },
     {
-      "id": "91eff07c211f7856",
-      "title": "Annoyed by secret recordings, developer creates ZuckOff app to detect nearby Meta, Snap smart AI glasses - deccanherald.com",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNeE9LamlDaTJhckRCMmZucVdvODRWWlprNnM0UzBTX3VldnlnTGdvMXE5enpmM0Q3ajZFSnBCT2VfclNOekpfeG5QT2E4RmFsNEFwUloxNm5Oc1lkU0lpZjNZSGVCakhabGd6NlozX3BaSkhwbFB4azRCeUEwMDZYU2VhTnNnVU1YbzJsQ0tGbnVTVldERWhTcUY5U0dWYWtTMXgyWk45N1dCd3hFT1Vmb2lhNWdxMzNiYzdwYVVkNi1TcERTdnU4d1padTVYLTMzNjViOG5QZ1o4UEpYdXljNXY2azJrQlhJWGlvTUlpaFhHY29xRTJNQnRpNzFzR3dnc3ZXZE9YS29RdGRKb1dyX2ItaVk1bms?oc=5",
-      "source": "Google News: smartglasses",
+      "id": "decd75805bdbdd0e",
+      "title": "OpenAI reportedly acquires AI camera startup Glass Imaging for more than US$300M - digitimes",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYVhOcDFQZHNaOWM4TTdNU1kyaTNjNWQ5bGYyUWdhMklOWmVkelQtTW9KQUJsZDBUcVZvc2htNHM0Y3Fvc0ZBamJRN0ZZazA4Qi1WUlUta2lpQ0wwd1JMUFAtV3Nkb3FUZFZSWjk0Q2ZHc1NMbnRabTM1SXBFUVJFV1JHMkYzMDRoZV9NUg?oc=5",
+      "source": "Google News: Huawei AI Glasses",
       "source_lane": "core_glasses",
-      "published": "Mon, 14 Sep 2026 13:34:00 GMT",
-      "summary": "Annoyed by secret recordings, developer creates ZuckOff app to detect nearby Meta, Snap smart AI glasses deccanherald.com",
+      "published": "Tue, 15 Sep 2026 02:11:31 GMT",
+      "summary": "OpenAI reportedly acquires AI camera startup Glass Imaging for more than US$300M digitimes",
       "materiality_score": 2,
       "keyword_hits": [
         "ai",
-        "developer"
+        "camera"
       ],
       "status": "candidate",
-      "relationship": "direct",
+      "relationship": "speculative",
       "content_types": [
-        "tool",
-        "sdk"
+        "rumor"
       ],
-      "primary_type": "tool",
+      "primary_type": "rumor",
       "routing_targets": [
         "research_news_review",
-        "development_hacking"
+        "watching"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "future/rumor signals: reportedly",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
