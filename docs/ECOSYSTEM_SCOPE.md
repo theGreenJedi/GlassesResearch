@@ -7,7 +7,7 @@ description: "GlassesResearch scope for the smart-glasses ecosystem: AI glasses,
 
 GlassesResearch covers the broader smart-glasses ecosystem, not one device family.
 
-The W610 remains the primary hands-on laboratory because a specimen is available for direct testing. That gives its chapter a richer evidence lane; it does not give the model priority over relevant knowledge from devices the maintainers do not own.
+That gives its chapter a richer evidence lane; it does not give the model priority over relevant knowledge from devices the maintainers do not own.
 
 ## Coverage layers
 
