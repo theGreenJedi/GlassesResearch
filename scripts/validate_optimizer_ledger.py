@@ -42,6 +42,7 @@ def main():
         if f.get("state") not in STATES: fail(f"{fid}: invalid state")
         first, last = as_date(f.get("first_seen"), "first_seen", fid), as_date(f.get("last_reviewed"), "last_reviewed", fid)
         if last < first: fail(f"{fid}: last_reviewed predates first_seen")
+        if not str(f.get("source", "")).strip(): fail(f"{fid}: source/reference required")
         if not str(f.get("rationale", "")).strip() or not str(f.get("evidence_strength", "")).strip(): fail(f"{fid}: rationale/evidence_strength required")
         if f.get("research_state") is not None and f.get("research_state") not in RESEARCH_STATES: fail(f"{fid}: invalid research_state")
         related = f.get("related", [])
