@@ -7,9 +7,11 @@ on:
       - 'research/evidence-claims.schema.json'
       - 'research/claims/**'
       - 'research/dossiers/**'
+      - 'research/model-evidence/**'
       - 'tests/fixtures/evidence-claims/**'
       - 'research/KNOWLEDGE_FLOW.md'
       - 'research/REPORT_CARD_PIPELINE.md'
+      - 'scripts/build_model_evidence_index.py'
       - 'scripts/validate_evidence_architecture.py'
       - '.github/workflows/evidence-architecture.yml'
   push:
@@ -19,9 +21,11 @@ on:
       - 'research/evidence-claims.schema.json'
       - 'research/claims/**'
       - 'research/dossiers/**'
+      - 'research/model-evidence/**'
       - 'tests/fixtures/evidence-claims/**'
       - 'research/KNOWLEDGE_FLOW.md'
       - 'research/REPORT_CARD_PIPELINE.md'
+      - 'scripts/build_model_evidence_index.py'
       - 'scripts/validate_evidence_architecture.py'
       - '.github/workflows/evidence-architecture.yml'
 
@@ -38,3 +42,8 @@ jobs:
           python-version: '3.12'
       - name: Validate evidence enrichment contracts and persisted claims
         run: python scripts/validate_evidence_architecture.py
+      - name: Prove model evidence index is reproducible
+        run: |
+          cp -R research/model-evidence /tmp/model-evidence-before
+          python scripts/build_model_evidence_index.py
+          diff -ru /tmp/model-evidence-before research/model-evidence
