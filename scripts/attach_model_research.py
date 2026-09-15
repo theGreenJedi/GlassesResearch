@@ -21,11 +21,15 @@ RESEARCH_ROOTS = ("research/investigations", "research/community-research", "res
 SCOUR_ROOTS = ("research/community-research", "docs/community-research")
 SCOUR_INDEX_DIR = "research/community-research/by-model"
 SCOUR_INDEX_MARKER = "<!-- generated-model-scour-index -->"
+RESEARCH_INDEX_MARKER = "<!-- generated-research-corpus-index -->"
 
 
 def public_url(site_root: Path, path: Path) -> str:
     rel = path.relative_to(site_root).with_suffix("")
-    return "/" + rel.as_posix().strip("/") + "/"
+    if rel.name.lower() in {"index", "readme"}:
+        rel = rel.parent
+    value = rel.as_posix().strip("/")
+    return "/" + (value + "/" if value else "")
 
 
 def document(path: Path, site_root: Path) -> dict[str, object] | None:
@@ -48,7 +52,8 @@ def collect(site_root: Path, roots: tuple[str, ...]) -> dict[str, list[dict[str,
         root = site_root / root_name
         if not root.exists(): continue
         for path in sorted(root.rglob("*.md")):
-            if SCOUR_INDEX_MARKER in path.read_text(encoding="utf-8", errors="replace"): continue
+            text = path.read_text(encoding="utf-8", errors="replace")
+            if SCOUR_INDEX_MARKER in text or RESEARCH_INDEX_MARKER in text: continue
             row = document(path, site_root)
             if not row: continue
             for model_id in row["ids"]:
@@ -57,6 +62,46 @@ def collect(site_root: Path, roots: tuple[str, ...]) -> dict[str, list[dict[str,
                 seen.add(key)
                 bindings.setdefault(model_id, []).append({"title": str(row["title"]), "url": str(row["url"]), "meta": str(row["meta"])})
     return bindings
+
+
+def build_research_corpus_index(site_root: Path) -> None:
+    """Give every staged research document a deterministic inbound path.
+
+    The research tree is published as a corpus, so publishing a new document must
+    never create an orphan merely because a hand-maintained navigation page has not
+    been edited yet. This generated index is infrastructure, not evidence promotion.
+    """
+    research_root = site_root / "research"
+    if not research_root.exists():
+        return
+    rows: list[tuple[str, str]] = []
+    for path in sorted(research_root.rglob("*.md")):
+        if path == research_root / "index.md":
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        if SCOUR_INDEX_MARKER in text:
+            continue  # generated scour pages are reachable through their model hub
+        title_match = TITLE_RE.search(text)
+        title = title_match.group(1).strip() if title_match else path.stem.replace("_", " ")
+        rows.append((title, public_url(site_root, path)))
+    lines = [
+        "# Research corpus",
+        "",
+        RESEARCH_INDEX_MARKER,
+        "",
+        "Canonical and retained research material published by GlassesResearch. Evidence status remains attached to each source; inclusion here does not promote a claim to independent verification.",
+        "",
+    ]
+    for title, url in rows:
+        lines.append(f"- [{title}]({url})")
+    (research_root / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    public_landing = site_root / "docs" / "community-research" / "index.md"
+    if public_landing.exists():
+        text = public_landing.read_text(encoding="utf-8").rstrip()
+        link = "[Browse the published research corpus](/research/)"
+        if link not in text:
+            public_landing.write_text(text + "\n\n" + link + "\n", encoding="utf-8")
 
 
 def build_scour_indexes(site_root: Path, scour: dict[str, list[dict[str, str]]]) -> dict[str, dict[str, object]]:
@@ -74,17 +119,12 @@ def build_scour_indexes(site_root: Path, scour: dict[str, list[dict[str, str]]])
         path = out / f"{model_id.lower()}.md"; path.write_text("\n".join(lines) + "\n", encoding="utf-8")
         url = public_url(site_root, path); indexes[model_id] = {"count": len(ordered), "url": url}
         hub_rows.append((model_id, len(ordered), url))
-    # The hub makes every generated collection intentionally reachable, satisfying
-    # the site's no-orphan invariant while model cards remain the primary touchstone.
     hub = out / "index.md"
-    hub_lines = ["# Community / Scour Findings by model", "", "Retained community/scour findings grouped by canonical GLS identity. Model cards remain the primary entry point.", ""]
+    hub_lines = ["# Community / Scour Findings by model", "", SCOUR_INDEX_MARKER, "", "Retained community/scour findings grouped by canonical GLS identity. Model cards remain the primary entry point.", ""]
     for model_id, count, url in hub_rows:
         hub_lines.append(f"- [{model_id} — {count} finding{'s' if count != 1 else ''}]({url})")
     hub.write_text("\n".join(hub_lines) + "\n", encoding="utf-8")
 
-    # Close the complete public reachability chain. The staged research README is
-    # intentionally public and links to the generated hub, so the existing public
-    # Community Research landing page must link to that archive entry point.
     research_landing = site_root / "research" / "community-research" / "README.md"
     if research_landing.exists():
         text = research_landing.read_text(encoding="utf-8").rstrip()
@@ -118,7 +158,7 @@ def attach(page: Path, rows: list[dict[str, str]], scour_index: dict[str, object
 
 def main() -> int:
     parser = argparse.ArgumentParser(); parser.add_argument("--site-root", type=Path, required=True); args = parser.parse_args(); root = args.site_root
-    bindings = collect(root, RESEARCH_ROOTS); scour = collect(root, SCOUR_ROOTS); scour_indexes = build_scour_indexes(root, scour)
+    bindings = collect(root, RESEARCH_ROOTS); scour = collect(root, SCOUR_ROOTS); scour_indexes = build_scour_indexes(root, scour); build_research_corpus_index(root)
     pages = sorted((root / "models" / "catalog").glob("gls-*.md"))
     if not pages: raise SystemExit("No generated canonical model pages found")
     linked_models = linked_objects = 0
