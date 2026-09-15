@@ -1,0 +1,34 @@
+name: Evidence enrichment architecture
+
+on:
+  pull_request:
+    paths:
+      - 'research/EVIDENCE_ENRICHMENT_ARCHITECTURE.md'
+      - 'research/evidence-claims.schema.json'
+      - 'research/KNOWLEDGE_FLOW.md'
+      - 'research/REPORT_CARD_PIPELINE.md'
+      - 'scripts/validate_evidence_architecture.py'
+      - '.github/workflows/evidence-architecture.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'research/EVIDENCE_ENRICHMENT_ARCHITECTURE.md'
+      - 'research/evidence-claims.schema.json'
+      - 'research/KNOWLEDGE_FLOW.md'
+      - 'research/REPORT_CARD_PIPELINE.md'
+      - 'scripts/validate_evidence_architecture.py'
+      - '.github/workflows/evidence-architecture.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate evidence enrichment contracts
+        run: python scripts/validate_evidence_architecture.py
