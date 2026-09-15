@@ -1,35 +1,36 @@
+# GlassesResearch durable optimizer/research ledger
+# Machine-readable institutional memory. Internal: this file is not a public research surface.
 schema_version: 1
 updated: 2026-09-15
-mission: >-
-  Durable institutional memory for optimizer findings and research leads. Nothing
-  valuable should exist only because we remember talking about it.
+mission: "Nothing valuable should exist only because we remember talking about it."
 
 policy:
   ui_moratorium_scope: "UI/presentation only"
   public_surface: false
   issue_role: "Execution objects for promoted actionable work; not the monitoring database."
   lifecycle: [discovered, recorded, monitored, promoted, execution, commissioned, closed]
+  optimizer_maintenance_contract:
+    - "Before proposing a finding, search this ledger and update the existing subject when equivalent."
+    - "Every retained meaningful finding gets a stable ledger record even when no execution issue is warranted."
+    - "Regrade when evidence, urgency, leverage, risk, dependencies or conditions materially change."
+    - "HIGH/VERY_HIGH actionable work links an existing execution object or creates one under existing optimizer authority."
+    - "Demotion, supersession and closure preserve the record and disposition; they do not erase history."
+    - "Future optimizer runs update last_reviewed only when the subject is actually reconsidered."
+    - "The ledger may incubate public Research, but it is never published directly."
   research_graduation:
     states: [needs_investigation, under_investigation, findings_established]
-    rule: >-
-      A retained finding may graduate into Research when significance/evidence warrants a
-      durable public research subject. Research includes work needing investigation and work
-      actively under investigation; it need not wait for a final answer.
+    rule: "A retained finding may graduate into Research when significance/evidence warrants a durable research subject. Research includes things GlassesResearch needs to investigate and things it is actively investigating; a final answer is not required."
     evidence_lanes: [community, documentary_regulatory, manufacturer, commercial, gr_lab, inferred, hypothesis, disproven, unknown]
-    community_research: >-
-      Community Research is subordinate to Research as an evidence/source lane. Preserve
-      attribution and distinguish community findings from independent GlassesResearch
-      reproduction. A community-originated subject may graduate into broader Research and
-      later gain documentary or GR lab evidence without rewriting its provenance.
+    community_research: "Community Research is subordinate to Research as an evidence/source lane. Preserve attribution and distinguish community findings from independent GlassesResearch reproduction. A community-originated subject may graduate into broader Research and later gain documentary or GR lab evidence without rewriting provenance."
   invariants:
-    - stable unique id required
-    - grade must be VERY_HIGH HIGH MEDIUM or LOW
-    - first_seen and last_reviewed required
-    - promoted actionable work links an execution issue when one exists
-    - closure or demotion preserves disposition/history rather than deleting the record
-    - public presentation is never generated directly from this internal ledger
-    - UI-bound findings remain non-implementable during the UI moratorium
-    - optimizer runs update existing subjects instead of creating duplicates for new evidence
+    - "stable unique id required"
+    - "grade must be VERY_HIGH HIGH MEDIUM or LOW"
+    - "first_seen and last_reviewed required"
+    - "promoted actionable work links an execution issue when one exists"
+    - "closure or demotion preserves disposition/history rather than deleting the record"
+    - "public presentation is never generated directly from this internal ledger"
+    - "UI-bound findings remain non-implementable during the UI moratorium"
+    - "optimizer runs update existing subjects instead of creating duplicates for new evidence"
 
 findings:
   - {id: OPT-2026-001, title: "Host-compatibility Finder surfacing", grade: MEDIUM, first_seen: 2026-09-14, last_reviewed: 2026-09-15, state: monitored, evidence_strength: developing, rationale: "Surface structured host-compatibility evidence when coverage is sufficient.", constraints: [ui_moratorium], related: []}
