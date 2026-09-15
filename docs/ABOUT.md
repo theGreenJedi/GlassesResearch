@@ -49,7 +49,7 @@ The scheduler manifest documents the public discovery, intake, editorial-triage,
 - [Ecosystem Scope](ECOSYSTEM_SCOPE.md)
 - [Institutional Collections](INSTITUTIONAL_COLLECTIONS.md)
 
-GlassesResearch covers current, historical, discontinued, obscure, industrial, experimental, white-label, and unsuccessful devices. The W610 is the current hands-on reference device, not the boundary of the project.
+GlassesResearch covers current, historical, discontinued, obscure, industrial, experimental, white-label, and unsuccessful devices.
 
 ## Privacy and analytics
 
