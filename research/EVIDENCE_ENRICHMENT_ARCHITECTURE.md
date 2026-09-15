@@ -33,7 +33,9 @@ Each retained item carries its source, date, evidence lane, status/strength, cla
 
 The model page therefore becomes progressively richer over the lifetime of the model rather than remaining a frozen article. Its synthesis and Report Card are views over the accumulated dossier; the underlying evidence corpus remains independently discoverable.
 
-**No-orphan invariant:** once useful model-specific evidence is retained, it must have a durable subject link and a model-dossier disposition. It may be rejected from canonical facts, scoring, cross-model propagation, or public synthesis, but it may not disappear merely because it is unverified.
+**No-orphan invariant:** once useful model-specific evidence is retained, it must have a durable subject link and a model-dossier disposition. It may be rejected from canonical facts, scoring, cross-model propagation, or synthesized editorial conclusions, but it may not disappear merely because it is unverified.
+
+Public model pages may expose retained unverified/community/contradicted material **as evidence**, with explicit provenance/status labels. That is distinct from publishing those claims as verified editorial conclusions. The UI renderer must preserve that distinction when implemented after the UI moratorium.
 
 ## Evidence lanes
 
