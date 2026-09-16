@@ -14,10 +14,16 @@ Community findings remain attributed to their authors and projects. Inclusion he
 
 These projects are included as standing Community Research resources independently of any GlassesResearch editorial coverage. Their profiles should remain useful even after individual articles rotate out of prominence.
 
+## Additional high-signal projects
+
+| Project | Primary scope | Why it is here |
+|---|---|---|
+| [BimaPDev / SmartGlasses](bimapdev-smartglasses.md) | Meizu MYVU / StarV Air / XGA010C firmware | Hardware-tested community firmware research covering compiled-code execution from PSRAM, LittleFS and BLE file-transfer behavior, and boot/power-off asset separation, with explicit verification boundaries. |
+
 ## Evidence rule
 
 A project's own claims remain attributed community evidence unless GlassesResearch separately reproduces them. Experimental, partial, inferred, or unverified capabilities must remain labeled as such. Community inclusion does not automatically change a model's Verified status, Report Card scores, or canonical specifications.
 
 ## Related editorial
 
-**[When owners take their glasses back](../news/articles/2026-09-06-when-owners-take-their-glasses-back.md)** — GlassesResearch's editorial interpretation of what these three projects collectively suggest about owner control, interoperability, and communities preserving practical authority over hardware.
+**[When owners take their glasses back](../news/articles/2026-09-06-when-owners-take-their-glasses-back.md)** — GlassesResearch's editorial interpretation of what the three founding projects collectively suggest about owner control, interoperability, and communities preserving practical authority over hardware.
