@@ -1,44 +1,40 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-16T23:02:31.430769+00:00",
-  "candidate_count": 67,
-  "classifier_irrelevant_count": 52,
+  "discovered_utc": "2026-09-16T22:53:03.876004+00:00",
+  "candidate_count": 73,
+  "classifier_irrelevant_count": 62,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 18,
-    "broad_web": 40,
-    "community": 2,
-    "developer": 12,
-    "retail": 2
+    "adjacent": 10,
+    "broad_web": 43,
+    "developer": 20
   },
   "relationship_counts": {
     "direct": 0,
-    "enabling": 0,
-    "adjacent": 15,
+    "enabling": 1,
+    "adjacent": 10,
     "speculative": 0,
-    "irrelevant": 52
+    "irrelevant": 62
   },
   "type_counts": {
-    "model": 2,
-    "review": 2,
-    "video": 10,
-    "news": 34,
-    "research": 9,
-    "tool": 19,
-    "sdk": 12,
-    "policy": 2,
-    "retail": 1,
-    "community": 5
+    "model": 1,
+    "review": 1,
+    "video": 1,
+    "news": 32,
+    "tool": 24,
+    "sdk": 20,
+    "hack": 1,
+    "optics": 1,
+    "policy": 3,
+    "retail": 6,
+    "community": 13
   },
   "routing_counts": {
-    "adjacent_radar": 15,
-    "community_evidence_review": 1,
-    "development_hacking": 2,
-    "model_catalog_review": 1,
-    "policy_privacy": 1,
-    "reject_noise": 52,
-    "report_card_evidence": 5,
-    "research_news_review": 15,
+    "adjacent_radar": 10,
+    "community_evidence_review": 2,
+    "reject_noise": 62,
+    "research_news_review": 11,
+    "research_optics": 1,
     "retail_rebrand_review": 1
   },
   "policy": {
@@ -50,267 +46,42 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [
-    {
-      "channel": "manufacturer_catalog",
-      "url": "https://www.everysight.com/",
-      "error": "HTTP Error 500: Internal Server Error"
-    }
-  ],
+  "collector_errors": [],
   "candidates": [
     {
-      "id": "21ee86d2b7605154",
-      "title": "Blue Cross and Blue Shield Nationwide Health Insurance",
-      "url": "https://www.bcbs.com/",
-      "summary": "Explore the health insurance options offered by Blue Cross and Blue Shield insurance agencies. Get insurance delivered through your local BCBS agency.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "3a627e5070c4e3e4",
+      "title": "Welcome to Competitive Cameras",
+      "url": "https://competitivecameras.com/",
+      "summary": "We’ll get you the best price possible. Biggest Selection in DFW! \"These guys rock! If you have ANY camera needs, this is your place. They are quick with their service and unbeatable with their knowledge on cameras! I purchased my a6500 here and constantly come back for lens rentals because they are just that dynamic.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "enabling",
       "content_types": [
-        "news"
+        "optics",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "optics",
       "routing_targets": [
         "research_news_review",
-        "adjacent_radar"
+        "research_optics",
+        "retail_rebrand_review"
       ],
       "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lens",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "332ae55dd5332281",
-      "title": "Blue Cross Blue Shield Association - Home - PxCSM",
-      "url": "https://pxcsm.bcbs.com/",
-      "summary": "How To Login BCBSA users Upon clicking the login button above, BCBSA users will have Single Sign-On (SSO) access to The Collaboration Portal. If prompted to sign in, you will use your network ID@bcbsa.com and password. Plan employees Click the LOGIN button above. Enter your email address associated with your BlueWeb account, and then select Next. If your organization has enabled SSO, you may ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "00527163cf803d23",
-      "title": "Cancel YouTube Premium or YouTube Music Premium",
-      "url": "https://support.google.com/youtube/answer/6308278?hl=en&co=GENIE.Platform%3DDesktop",
-      "summary": "Cancel YouTube Premium or YouTube Music Premium You can cancel, pause, or resume your paid membership at any time as a YouTube Premium and YouTube Music Premium subscriber. You can also switch to an annual plan or a family plan. Follow the steps in this article to cancel your YouTube Premium or YouTube Music Premium membership.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video",
-        "tool"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "45b46922b71cfe60",
-      "title": "Find a Doctor Near You - bcbs.com | Blue Cross Blue Shield",
-      "url": "https://www.bcbs.com/member-services/find-a-doctor",
-      "summary": "Find a doctor near me. Get help from Blue Cross and Blue Shield to find a doctor or specialist. Enter your location information and connect with a doctor near you.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f4e76895f9953132",
-      "title": "Find Care - Blue Cross Blue Shield Association",
-      "url": "https://provider.bcbs.com/",
-      "summary": "Find healthcare providers and specialists through Blue Cross and Blue Shield's search tool, connecting you with care near your location.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a72c7968912fd3c5",
-      "title": "Home [www.bcbsasupplier.bcbs.com]",
-      "url": "https://bcbsasupplier.bcbs.com/s/",
-      "summary": "Supplier portal for Blue Cross Blue Shield Association providing resources and information for suppliers to engage with the organization.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a16f6b6d8e94abc",
-      "title": "Home [www.fephub.bcbs.com]",
-      "url": "https://fephub.bcbs.com/s/",
-      "summary": "Welcome to the FEP Hub, your gateway to securely interface and track your interactions with the FEP Director’s Office (FEPDO). Through this portal you can submit an inquiry to the FEPDO, provide the FEPDO with data and search Knowledge Articles and Frequently Asked Question (FAQs).",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ecc5242ad5763f5b",
-      "title": "Login | Group Purchasing Organization - Blue Cross Blue Shield Association",
-      "url": "https://gpo.bcbs.com/okta/login",
-      "summary": "©2001-2024 Blue Cross Blue Shield Association. All rights reserved. This program includes confidential and proprietary information. Use is subject to the Terms and ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7f322be3dcd12707",
-      "title": "Looking for Your Blue Cross and Blue Shield Login? - Blue Cross Blue Shield",
-      "url": "https://www.bcbs.com/login",
-      "summary": "Get in touch with your local Blue Cross and Blue Shield company. Get information on your policy using the state website found on your membership ID card.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "597b95f0a1895a76",
-      "title": "NEAR Protocol Price Today | NEAR Price 2026 | KuCoin",
-      "url": "https://www.kucoin.com/price/NEAR",
-      "summary": "Check the latest NEAR Protocol (NEAR) price, price chart, market data and more on KuCoin.",
+      "id": "46ad2a52ed3c6d14",
+      "title": "23 Best & Fun Things To Do in Liberty (MO) - The Tourist Checklist",
+      "url": "https://thetouristchecklist.com/things-to-do-in-liberty-mo/",
+      "summary": "Liberty, MO, is a charming town that blends rich history with modern attractions. From peaceful parks and vibrant community spaces to historical landmarks, there’s something for everyone to enjoy.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -321,153 +92,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ef554d53f8679206",
-      "title": "Request a refund for YouTube Premium or YouTube Music Premium",
-      "url": "https://support.google.com/youtube/answer/12014038?hl=en",
-      "summary": "If videos or features related to your YouTube purchase don’t work, you may be eligible for a refund. If a refund request is granted, we'll remove access to your Premium membership and your money will be returned within the refund timelines listed here.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1d67dc6773f6c8c2",
-      "title": "Use automatic dubbing - Android - YouTube Help - Google Help",
-      "url": "https://support.google.com/youtube/answer/15569972?hl=en",
-      "summary": "Automatic dubbing generates translated audio tracks in different languages to make your videos more accessible to viewers around the world. Videos with these audio tracks are marked as “auto-dubbed” i",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3521acfc57d58351",
-      "title": "WalkingWorks: The Blue Program for a Healthier America",
-      "url": "http://apps.bcbs.com/walkingworks/index2.html",
-      "summary": "That is why Blue Cross and Blue Shield Plans have launched WalkingWorks, the Blue Program for a Healthier America. Welcome National Walk at Lunch Day Walking Works Walking Basics Starting the WalkingWorks Program Easy Ways to Add Steps WalkingWorks Log Blue Cross and Blue Shield Plan Programs Walking Resources Keeping Quality Healthcare Affordable",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "602926148979c622",
-      "title": "WalkingWorks: WalkingWorks Log - Blue Cross Blue Shield Association",
-      "url": "https://apps.bcbs.com/walkingworks/log.html",
-      "summary": "WalkingWorks Log Use this log to track your progress every day. Reward yourself as you make progress toward your goals. As you track your steps, take a few minutes each day to sit down and relax. Think about the good feelings that exercise gives you, and reflect on what you've accomplished. This type of internal reward can help you make a long-term commitment to regular exercise. Your ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "32d9c4a6cd4a4792",
-      "title": "YouTube - Need to setup broadcast before you can stream",
-      "url": "https://obsproject.com/forum/threads/youtube-need-to-setup-broadcast-before-you-can-stream.149849/",
-      "summary": "Now every time my broadcast runs it prompts me that I Need to setup broadcast before you can stream, I've done this. Also this prompt is stopping my automation, The whole idea was to have a headless machine and fully automate the whole OBS process, Up to this point all was great but not now.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video",
         "community"
       ],
-      "primary_type": "video",
+      "primary_type": "community",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
         "community_evidence_review",
         "adjacent_radar"
       ],
@@ -477,29 +106,268 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ada5ce98b035a43b",
-      "title": "AI Flashcards App – Study, Learn & Remember Faster | Flashcards.ai ...",
-      "url": "https://flashcards.ai/",
-      "summary": "Scientific study method that optimizes your review schedule Test your knowledge with automatically generated quizzes Multiple Ways to Generate Flashcards Our AI adapts to your learning style. Choose from various input methods to create personalized flashcard decks. Upload PDFs, Word docs, or presentations.",
+      "id": "0c539b0774ddc171",
+      "title": "gmail邮箱登陆入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/436896083505263292.html",
+      "summary": "gmail邮箱登陆入口gmail邮箱登陆入口：https://mail.google.com/Gmail是Google公司提供的一项免费电子邮件服务。要登录Gmail邮箱，可以 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e59ee0820fa0fa4",
+      "title": "Historique de Connexion Hotmail ? - Hotmail / Outlook.com",
+      "url": "https://forums.commentcamarche.net/forum/affich-36581433-historique-de-connexion-hotmail",
+      "summary": "Bonjour, J'ai un compte Hotmail accessible par mon ordinateur de salon et mon téléphone portable. Il y a environ 6 mois on m'a volé cet ordinateur. Il y a une semaine, en manipulant mon téléphone pour accèder à ma messagerie, un écran est apparu me relatant la liste de chaque connexion depuis environ 4 mois avec la date, le lieu où à eu lieu la connexion. De plus quand je me ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "08b65dbfd0503d8e",
+      "title": "hotmail免费邮箱怎么申请 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/125257788.html",
+      "summary": "申请hotmail邮箱，要进入到 官网 进行注册，其他的网站容易误导你。 申请hotmail邮箱的步骤： 1、进入到hotmail邮箱的官网： 官方注册网址，点击创建免费账户； 2、在创建账户的下拉处，选择hotmail.com后缀；在新建电子邮件处，点击，输入你的邮箱地址，注意邮箱地址不能与别人的重复。 3、创建密码 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "821b5fff90be5eb1",
+      "title": "hotmail邮箱怎么登录？_百度知道",
+      "url": "https://zhidao.baidu.com/question/402916655883659605.html",
+      "summary": "登录后缀@hotmail.com的邮箱一共有三种方法，具体如下： 方法一：官方登陆入口 首先我们想到的一定是官网登陆，是的，这也是最快捷的登陆方式。hotmail邮箱官网登陆地址： www.hotmail.com 大家复制到浏览器打开，点击登陆按钮，输入我们的hotmail邮箱账号密码即可成功登陆，不过这种方式是网页版使用 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "44941f5a3ec7268c",
+      "title": "Outlook邮箱注册入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/316431122890820204.html",
+      "summary": "Outlook邮箱注册入口Outlook.com 是 Microsoft 所提供的免费个人电子邮件服务，本文将分享Outlook邮箱注册入口＆注册教程。Outlook邮箱注册入口Outlook邮箱注册的唯一入口是：www.outlook.com，有且只有这一个注册入",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5e958fcfe614f5ac",
+      "title": "常用邮箱的后缀都有哪些 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1770685864994580980.html",
+      "summary": "常用邮箱后缀 @gmail.com；@yahoo.com；@msn.com；@hotmail.com；@aol.com；@ask.com；@live.com；@qq.com；@0355.net；@163.com；@163.net；@263.net；@3721.net；@yeah。 拓展： 1、信箱又称邮箱（postbox，mailbox）是一种人际的沟通工具之一。 信件送来，收件者因为外出或者忙碌著其他，无闲亲身接收，只有由信箱代劳，待收件人有 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "757eefd2f5e74c82",
+      "title": "微软帐户的密码是什么格式 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1366636001791886979.html",
+      "summary": "微软 帐户的密码是用户个人定的，但是最少不能低于8个字符，并且必须包括微软要求的两种字符格式才可以。 微软要求的密码字符有：大写字母（A~Z）、小写字母（a~z）、数字（0~9任意组合）、符号（，。；、等） 扩展资料： 微软会在以下情况下要求你验证 电子邮件地址：当你使用电子邮件创建 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c58f9d5ec7c273b",
+      "title": "微软有哪些后缀的邮箱？请尽量详细 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/42543187.html",
+      "summary": "截止2018年，微软统一使用 .outlook 邮箱后缀。 北京时间2012年8月1日微软宣布将为旗下Outlook品牌推出一种免费的、基于网络的电子邮件门户服务。Hotmail则很可能将在未来一年时间里逐步取消。 Microsoft Office Outlook是微软办公软件套装的组件之一，它对Windows自带的Outlook express的功能进行了扩充。Outlook的 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f68a18f5f81d1c9a",
+      "title": "怎样注册hotmail_百度知道",
+      "url": "https://zhidao.baidu.com/question/1780829424034580020.html",
+      "summary": "怎样注册hotmail注册Hotmail（现Outlook）账户需通过浏览器访问微软官方页面完成，以下是具体步骤：1. 准备工具与环境确保设备已连接网络，推荐使用电脑操作。打开浏览器（如Chrome、Edge等），访问微软邮箱登录页面",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fe541da82aee509b",
+      "title": "14 Famous People Who Have PhDs - Ranker",
+      "url": "https://www.ranker.com/list/famous-people-with-phds/celebrity-lists",
+      "summary": "Several famous actors, politicians, athletes, and musicians have furthered their education by earning doctorates and Ph.D.s. Some of these celebrities earned ...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 5,
-      "keyword_hits": [
-        "review",
-        "study"
-      ],
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "review",
-        "research",
         "tool",
         "sdk"
       ],
-      "primary_type": "review",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -509,58 +377,24 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9c706afa42d7dc2e",
-      "title": "10 Best Blockchain Explorers to Consider in 2026 - Quant Matter",
-      "url": "https://quantmatter.com/10-best-blockchain-explorers/",
-      "summary": "Find the best blockchain explorers in 2025. Compare features, speed, chains, APIs, and privacy to pick the right tool for crypto tracking and research.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "privacy",
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "policy"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8380188f36e65ddc",
-      "title": "AI-Powered Free Online Flashcards for Studying | Kahoot!",
-      "url": "https://kahoot.com/kahoot-study/flashcards/",
-      "summary": "Create, study and explore online flashcards with Kahoot!. Quickly make your own flashcards from pdf or use our flashcards app.",
+      "id": "4f8c609288032718",
+      "title": "17 celebrities with higher education degrees | Tatler Asia",
+      "url": "https://www.tatlerasia.com/lifestyle/entertainment/most-educated-actors-singers-stars-celebrities",
+      "summary": "While many celebrities forgo higher education in pursuit of stardom, there are those who’ve managed to balance the spotlight with intellectual growth. These stars prove that you don’t always have to choose between fame and education",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "study"
-      ],
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "research",
         "tool",
         "sdk"
       ],
-      "primary_type": "research",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -570,24 +404,345 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6a896bc6792505fd",
-      "title": "Create Virtual Flashcards: 7 Powerful Ways To Study Smarter (Most ...",
-      "url": "https://flashrecall.app/blog/create-virtual-flashcards",
-      "summary": "Create virtual flashcards that don’t suck: one idea per card, your own words, spaced repetition, and AI-generated cards from notes, PDFs, and YouTube.",
+      "id": "f1b9625cc0d0c5cb",
+      "title": "19 Celebrities With Unexpected College Degrees - BuzzFeed",
+      "url": "https://www.buzzfeed.com/jennaguillaume/celebrity-college-degrees",
+      "summary": "Sometimes, celebrities have hidden depths that have nothing to do with their public image or main career. Here are some famous people who have actual, proper degrees you might be surprised...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "study"
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
       ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c30d840ccf519553",
+      "title": "20 Famous People With Master's Degrees - Ranker",
+      "url": "https://www.ranker.com/list/famous-people-with-masters-degrees/celebrity-lists",
+      "summary": "Some famous figures possess more academic accolades than you might think. Among these standout individuals are celebrities who have taken their educational pursuits to impressive heights by earning master's degrees.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0f92038e492f5847",
+      "title": "20 Impressive Degrees Held By Famous People - Kate Knows",
+      "url": "https://kate-knows.com/20-impressive-degrees-held-by-famous-people/",
+      "summary": "Some of the Hollywood's biggest stars spent years studying for careers that had nothing to do with acting or music. Even more fascinating are those who went back to school, pursuing knowledge purely out of interest, long after they were already famous. Ready to know 20 of them?",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0c1384e750ac2cc3",
+      "title": "22 Celebrities With Prestigious College Degrees - BuzzFeed",
+      "url": "https://www.buzzfeed.com/kristenharris1/celebrities-prestigious-college-degrees",
+      "summary": "Adam Sandler graduated from NYU's Tisch School of the Arts in 1988 with a bachelor's in acting.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f16728e2a144af4",
+      "title": "Famous Celebrities With Unexpected Degrees - London Daily",
+      "url": "https://londondaily.com/famous-celebrities-with-unexpected-degrees",
+      "summary": "From rock legends like Gene Simmons, who studied education, to comedians like David Spade with a business degree, the list underscores the wide range of academic backgrounds among celebrities.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "010c0f25b9475c0c",
+      "title": "INHABIT Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/inhabit",
+      "summary": "The meaning of INHABIT is to occupy as a place of settled residence or habitat : live in. How to use inhabit in a sentence.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "afa6ad036ca34acd",
+      "title": "Inhabitant - definition of inhabitant by The Free Dictionary",
+      "url": "https://www.thefreedictionary.com/inhabitant",
+      "summary": "Define inhabitant. inhabitant synonyms, inhabitant pronunciation, inhabitant translation, English dictionary definition of inhabitant. n. One that inhabits a place, especially as a permanent resident: the inhabitants of a fishing village; snakes, lizards, and other inhabitants of the...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "76954e86beb4e4f5",
+      "title": "INHABITANT Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/inhabitant",
+      "summary": "The meaning of INHABITANT is one that occupies a particular place regularly, routinely, or for a period of time. How to use inhabitant in a sentence.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "324ed7c8fcfaca2b",
+      "title": "INHABITANT | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/inhabitant",
+      "summary": "INHABITANT meaning: 1. a person or animal that lives in a particular place: 2. a person or animal that lives in a…. Learn more.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "91776b8384379f88",
+      "title": "INHABITANT | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/inhabitant",
+      "summary": "INHABITANT definition: 1. a person or animal that lives in a particular place: 2. a person or animal that lives in a…. Learn more.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cfd1f526125b1294",
+      "title": "Inhabitat - Facebook",
+      "url": "https://www.facebook.com/Inhabitat/",
+      "summary": "Inhabitat. 1,092,917 likes · 14 talking about this. Inhabitat is a green design and lifestyle site that provides coverage of environmental news and the l",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3fd53be62933c164",
+      "title": "Inhabitat - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Inhabitat",
+      "summary": "Inhabitat is a blog focused on green design and lifestyle topics. The website covers the future of design as well as technology and architectural projects that emphasize energy efficiency, sustainability, and connection to the surrounding environment.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a624183241e9976b",
+      "title": "Inhabitat - YouTube",
+      "url": "https://www.youtube.com/@inhabitat",
+      "summary": "Inhabitat is an online magazine dedicated to showcasing the best and brightest new ideas in green design and innovation from around the globe.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
         "video",
-        "research",
         "tool",
         "sdk"
       ],
@@ -601,214 +756,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0cb177d96a23d346",
-      "title": "Free AI Flashcard Generator — Create Flashcards from Any Text or PDF",
-      "url": "https://studyglen.com/flashcards",
-      "summary": "A flashcard generator is a tool that automatically creates study flashcards from source material like notes, textbooks, or PDFs. Instead of typing each card by hand, you paste content or upload a document and the generator extracts key concepts into question-and-answer pairs.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "study"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0462101eaedf4269",
-      "title": "Free Online Flashcard Maker - Create, Study, Discover | Knowt",
-      "url": "https://knowt.com/flashcards",
-      "summary": "The free flashcard maker built to make your life easier. Everything you need to create flashcards efficiently and study them in one place. You can even study sets made by classmates or look through millions of flashcard decks from other students.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "study"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e16ca6be9fc4faa1",
-      "title": "Free Online Flashcard Maker — No Sign-Up Required | FlashcardMaker",
-      "url": "https://flashcardmaker.me/free-flashcard-maker",
-      "summary": "Creating flashcards online for free has never been easier. Our AI-powered flashcard maker turns your study material into interactive cards in three simple steps. Paste your notes, type a topic you want to study, or upload a document.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "study"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8924c1405aa2a23f",
-      "title": "Online Flashcard Maker & Flashcard App | Quizlet",
-      "url": "https://quizlet.com/features/flashcards",
-      "summary": "Make, study and find online flashcards on Quizlet. Create your own or find cards already created by students and teachers for any subject. Try it free!",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "study"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fda6d965470cb649",
-      "title": "Text to Flashcards - Fast & Free Flashcard Maker | StudyX",
-      "url": "https://studyx.ai/text-to-flashcards",
-      "summary": "Turn any text into lightning-fast flashcards and reclaim your study time. Create flashcards from text instantly, saving you time and helping you focus on studying. Whether it's lecture notes or textbooks, our flashcard generator makes study prep quick and easy.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "study"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "557d877ff22d3e2b",
-      "title": "Free flashcard and flip card maker - Genially",
-      "url": "https://genially.com/create/flashcards-flipcards/",
-      "summary": "Create online flashcards and flipcards with click-to flip and swipe animations. Build engaging learning aids and memory games — or make your website more interactive. Fast, free, and easy to use!",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f48566a098583094",
-      "title": "Free online flashcard maker – Create your own flashcards | Acrobat",
-      "url": "https://www.adobe.com/acrobat/online/flashcard-maker.html",
-      "summary": "A flashcard maker is a tool that turns your notes or readings into digital flashcards for faster studying. Our AI flashcard maker automatically pulls key terms and definitions from your content so you can focus on learning.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "32c4abd05c65148f",
-      "title": "Help! Windows 11 is not working : r/WindowsHelp - Reddit",
-      "url": "https://www.reddit.com/r/WindowsHelp/comments/qskww6/help_windows_11_is_not_working/",
-      "summary": "I just updated my pc from windows 10 to windows 11 and nothing is working. I couldnt open anything on the homescreen, not even the window key. So i…",
+      "id": "e671fa4cc6d6301c",
+      "title": "Inhabitat | Design For a Better World!",
+      "url": "https://inhabitat.com/",
+      "summary": "Inhabitat is a website dedicated to green design, innovation, and the future of clean technology, cataloging great ideas and emerging technologies which will change our world for the better.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -820,8 +771,7 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk",
-        "community"
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -833,10 +783,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f205fb9298fa574d",
-      "title": "windows11help - Reddit",
-      "url": "https://www.reddit.com/r/windows11help/",
-      "summary": "A community for helping people with all things windows 11 related. From installation to tips and tricks",
+      "id": "81db3efd5405464b",
+      "title": "Inhabitat | Inhabitat - Green Design, Innovation, Architecture, Green ...",
+      "url": "https://inhabitat.com/author/inhabitat/",
+      "summary": "Inhabitat, a leading website in green design and sustainable living, is seeking remote writers to contribute two...",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -848,10 +798,117 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ce44a71084343da2",
+      "title": "Success Stories: 5 Influential People With Degrees in Education",
+      "url": "https://online.utpb.edu/about-us/articles/education/success-stories-5-influential-people-with-degrees-in-education/",
+      "summary": "The people on this list, whether a renowned researcher or an award-winning principal, have devoted themselves to education. For them, education is not only a means to success and influence.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6cdac19e6d497b47",
+      "title": "The 100 Most Influential People in Education - The Tech Edvocate",
+      "url": "https://www.thetechedvocate.org/the-100-most-influential-people-in-education/",
+      "summary": "As we navigate an increasingly complex and interconnected world, the role of education has never been more crucial. This article highlights 100 individuals who are at the forefront of educational innovation, policy, and practice in 2025.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
         "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4992f95db7434afb",
+      "title": "Where 125 Celebrities Went To College (And What They Studied)",
+      "url": "https://www.degreequery.com/where-125-celebrities-went-to-school/",
+      "summary": "Or if your idol has little formal education, they can make you feel a whole lot better about doing it your own way. That’s why we researched the educational backgrounds of 125 celebrities, including Hollywood stars, professional athletes, musicians, models, popular YouTubers and famous authors.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4d341bcde4a23b75",
+      "title": "[Guide] How to redeem your Superhost bonus - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Host-guides/Guide-How-to-redeem-your-Superhost-bonus/m-p/1961398",
+      "summary": "I used the Superhost bonus coupon by following the link in the email I received from Airbnb about my Superhost status. You can either enter the code during the booking payment process or, like me, redeem the coupon to have it added to my payments & payouts page. When you book, look for link ‘manage your coupon’ and choose the coupon.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
         "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -861,12 +918,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f6c48bbcab2725f8",
-      "title": "8 BEST Blockchain Explorers (2026) - Guru99",
-      "url": "https://www.guru99.com/best-blockchain-explorers.html",
-      "summary": "FAQs 🔍 What is a blockchain explorer? 👁️ Can I see someone else’s crypto wallet balance on a blockchain explorer? ⏳ Why does my transaction show as pending on the blockchain explorer? 💰 Do blockchain explorers charge fees to view transactions? 🗑️ Can blockchain explorers show deleted or hidden transactions?",
+      "id": "1a10d904f15364a5",
+      "title": "A Host's guide to Airbnb: 60 tips - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Ask-about-your-listing/A-Host-s-guide-to-Airbnb-60-tips/m-p/409261",
+      "summary": "Hey Airbnb hosts, started this list as an answer to a question but it turned up pretty big so I shared it as a separate post that I believe helped a lot of people. Almost a year older in my Airbnb host age, I decided to update the list and add some stuff I gathered, plus some tips to new guests, who...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -875,9 +932,10 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -887,38 +945,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "421643f4faa86b39",
-      "title": "Artificial Intelligence - The New York Times",
-      "url": "https://www.nytimes.com/spotlight/artificial-intelligence",
-      "summary": "Explore the latest news and developments in artificial intelligence, including its impact on society, technology, and innovation.",
-      "discovery_channel": "adjacent+broad_web+community+retail",
-      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c2b7dfd7b88e3c55",
-      "title": "Baixar a última versão do WhatsApp APK grátis em Português no CCM - CCM",
-      "url": "https://br.ccm.net/download/baixaki-19041-whatsapp-apk",
-      "summary": "Baixar whatsapp apk - WhatsApp APK é uma versão do aplicativo de mensagens que roda em aparelhos com sistemas operacionais não compatíveis com a versão oferecida na Google Play ou celulares mais antigos e com poucos recursos. A versão APK oferecida pelo Facebook...",
+      "id": "fe7204d35ebeb770",
+      "title": "Airbnb updates - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Airbnb-updates/bd-p/blog_en",
+      "summary": "Airbnb updates Airbnb’s nondiscrimination policy and the Community Center Airbnb fosters connection and belonging by embracing inclusion and respect regardless of a person's background or identity. As members of the Airbnb community, these are values that we all have a responsibility to uphold and protect. To foster a space ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -927,9 +959,10 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "policy",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "policy",
       "routing_targets": [
         "reject_noise"
       ],
@@ -939,12 +972,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "72560aa718469a05",
-      "title": "Baixar a última versão do WhatsApp desktop grátis em ... - CCM",
-      "url": "https://br.ccm.net/download/baixaki-18026-whatsapp-desktop",
-      "summary": "WhatsApp desktop é o programa oficial do WhatsApp para computadores Windows. Ele sincroniza todas as atividades realizadas nos dois dispositivos (conversas, arquivos salvos e configurações), oferecendo as mesmas funcionalidades como editar perfil e...",
+      "id": "cf4956a1881e7590",
+      "title": "Community Center - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Community-Center/ct-p/community-center",
+      "summary": "Airbnb began with 2 hosts who needed help paying rent for their apartment. Nearly 20 years later, millions of hosts rely on Airbnb to help cover their rent or mortgage.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -953,9 +986,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -965,12 +998,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a5db4b54ba6da4f7",
-      "title": "Baixar a última versão do WhatsApp para Android grátis em ... - CCM",
-      "url": "https://br.ccm.net/download/baixaki-15982-whatsapp-para-android",
-      "summary": "Baixar whatsapp grátis - WhatsApp é um aplicativo de mensagens instantâneas que usa a conexão de Internet para enviar e receber mensagens de texto, compartilhar fotos e mensagens multimídia gratuitas com os contatos da lista telefônica, e que tenham o aplicativo instalado em...",
+      "id": "226db6cf1ff58f26",
+      "title": "Contact Airbnb: A Community Help Guide [UPDATED]",
+      "url": "https://community.withairbnb.com/t5/Host-guides/Contact-Airbnb-A-Community-Help-Guide-UPDATED/m-p/413245",
+      "summary": "This, I believe, is the most common questions on the Community Center. Below is a \"How To\" guide on contacting Airbnb. 3 easy ways to contact Airbnb: Airbnb Community Experts Via Twitter Direct Message @Airbnbhelp Calling Airbnb 1. Contacting Airbnb's Community Experts The easiest and quickest w...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -979,9 +1012,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -991,12 +1024,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "199853c61981504d",
-      "title": "Baixar a última versão do WhatsApp para iPhone grátis em ... - CCM",
-      "url": "https://br.ccm.net/download/baixaki-16186-whatsapp-messenger-para-iphone",
-      "summary": "WhatsApp Messenger para iPhone é um app de mensagens instantâneas que funciona com smartphones rodando com o iOS. Com uma interface bem simples, é possível conversar em grupo por texto, áudio e vídeo além de poder deixar recados de voz e transferir...",
+      "id": "5341ca18593ed071",
+      "title": "Convierte tus PDF a WORD editable - iLovePDF",
+      "url": "https://www.ilovepdf.com/es/pdf_a_word",
+      "summary": "Convierte cualquier archivo PDF a un archivo DOCX de WORD en un momento. La conversión tiene una precisión increíble.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1005,9 +1038,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "hack"
       ],
-      "primary_type": "tool",
+      "primary_type": "hack",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1017,166 +1050,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5ee7f91e7e8110c4",
-      "title": "Bitcoin Blocks (BTC) – Latest List & Search | CryptoExplorerHub",
-      "url": "https://cryptoexplorerhub.com/Bitcoin/block/latest",
-      "summary": "CryptoExplorerHub View the Most Recent Blocks on the Bitcoin (BTC). ⚡ Numbers, Hashes & Transaction Counts. ⭐Miners & Block Timestamps. Real-Time Data. 🔥 Fast, Reliable, Free!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cdf8f1a3270cacc2",
-      "title": "Blockchain Explorer: The 4 Best Tools for Crypto Tracking",
-      "url": "https://imiblockchain.com/best-blockchain-explorer-tools/",
-      "summary": "Blockchain or crypto explorer tools are essential for tracking and analyzing cryptocurrency transactions and activities. These tools provide a way to explore and understand the networks, including Bitcoin and other cryptocurrencies.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a46dfd48cb0e34d2",
-      "title": "Como instalar e usar o WhatsApp Web no seu computador",
-      "url": "https://br.ccm.net/faq/29184-como-instalar-e-usar-o-whatsapp-web-no-seu-computador",
-      "summary": "Usar o WhatsApp no PC é um jeito fácil de responder suas mensagens enquanto trabalha sem precisar pegar o celular. Saiba nesse artigo como baixar e ativar o software do aplicativo de mensagens no seu computador. Uma das formas de aproveitar o...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ec8fc73c0dc1cbdc",
-      "title": "Crypto Explorer - CryptoIndustry.com",
-      "url": "https://cryptoindustry.com/companies/crypto-explorer",
-      "summary": "About Crypto Explorer CryptoExplorer Hub is a blockchain explorer that provides access to block, transaction, and address data for Bitcoin and Ethereum networks with real-time updates. The platform displays on-chain statistics including network hashrate, blockchain size, unique address counts, and mempool information.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2dddc7ec37a8277e",
-      "title": "Crypto Explorer Hub - YouTube",
-      "url": "https://www.youtube.com/@CryptoExplorerHub",
-      "summary": "Learning and Sharing everything Crypto and market related. Please feel free to suggest any improvements or topic you want! Nothing on this channel is financial advice. ...more",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "236029f9c8938a1b",
-      "title": "CryptoExplorerHub — Bitcoin & Ethereum Blockchain Explorer",
-      "url": "https://cryptoexplorerhub.com/",
-      "summary": "Free blockchain explorer for Bitcoin and Ethereum. Real-time blocks, transactions, address tracking, live prices, and network analytics.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "99ccb2266e040a1b",
-      "title": "Engo - ironpigoffroad.com",
-      "url": "https://ironpigoffroad.com/index.php?route=product/category&path=104_112_113",
-      "summary": "With over 30 years of specialized experience, ENGO knows what it means to create a quality product that gets the job done. ENGO winches have world class features, innovative designs and the best warranty on the market.",
+      "id": "cc16bfafe0905ba7",
+      "title": "Dashboard - UnitedHealthcare",
+      "url": "https://prod.member.myuhc.com/content/myuhc/en/secure/communityplan/dashboard.html",
+      "summary": "We're currently experiencing an internal server problem. Try refreshing the page or check back soon. 1-866-414-1959.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1199,36 +1076,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2d41b394bd7652bd",
-      "title": "Experience AI in our products and experimental tools",
-      "url": "https://ai.google/products/",
-      "summary": "How anyone can experience the AI in Google products and services, and discover the latest experimental AI tools and technology.",
-      "discovery_channel": "adjacent+broad_web+community+retail",
-      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "42a4e02f298bc901",
-      "title": "Find NA - Narcotics Anonymous World Services",
-      "url": "https://na.org/MeetingSearch/",
-      "summary": "Find local NA websites and phonelines for in-person meetings or search for virtual NA meetings.",
+      "id": "2631f19ce161887a",
+      "title": "Editor PDF y Rellenador de Formularios gratis. Edita PDF online",
+      "url": "https://www.ilovepdf.com/es/editar-pdf",
+      "summary": "Añade fácilmente texto, formas, comentarios y subrayados a un archivo PDF. Rellena formularios en PDF y modifica tu PDF con anotaciones.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1251,38 +1102,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e762ddc516c1f1da",
-      "title": "Hub - Crypto Project Analytics Dashboard | Surf AI",
-      "url": "https://asksurf.ai/hub",
-      "summary": "Explore real-time crypto project analytics, on-chain data, market signals, and AI-powered insights on Surf Hub.",
+      "id": "a2682fb872ac9670",
+      "title": "Guide : Comment contacter Airbnb - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Aide/Guide-Comment-contacter-Airbnb/m-p/16456",
+      "summary": "C’est la question que beaucoup se posent sur la communauté. Ci-dessous vous trouverez comment rentrer en contact avec Airbnb que ce soit au travers de Twitter ou du Service Client. →Contacter Airbnb Via Twitter Le meilleur moyen et surement le plus simple de contacter Airbnb en cas de problème est...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "21330a258cbd2a03",
-      "title": "IFA | International Fistball Association |",
-      "url": "https://ifa.fistball.sport/",
-      "summary": "The IFA supports and promotes fistball worldwide. Our board, commissions, and team work together to develop the sport, assist national associations, and provide guidance for athletes and teams. We represent the interests of the international fistball community and act as a reliable point of contact for all matters related to the sport.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1303,12 +1128,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "682b9c4c98ac2412",
-      "title": "List of Blockchain Explorers - Blockchain Council",
-      "url": "https://www.blockchain-council.org/blockchain/list-of-blockchain-explorers/",
-      "summary": "There are many different Blockchain explorers available for various Blockchain networks, such as Bitcoin, Ethereum, and Litecoin. Some popular Blockchain explorers include Blockchain.com for Bitcoin, Etherscan.io for Ethereum, and Blockchair.com for multiple Blockchain networks.",
+      "id": "f3c8a3d4dfff7cab",
+      "title": "How do I make a Formal Complaint to Airbnb? - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Help-with-your-business/How-do-I-make-a-Formal-Complaint-to-Airbnb/m-p/1467296",
+      "summary": "There are many help support centre threads about this deceptive, abusive, threatening behaviour, third-party booking requests, UK Covid Travel Quarantine booking requests, How to make a Formal Complaint to Airbnb. All have been closed by Airbnb. Fellow Hosts please help, How do I make a Formal...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1317,7 +1142,35 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "policy",
+        "community"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d7f37d88723a9da6",
+      "title": "How to Start an Airbnb - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Host-guides/How-to-Start-an-Airbnb/m-p/126109",
+      "summary": "Go onto Airbnb, enter your city in the search bar but don’t enter any dates so you will get more representation of what is available in your area. Filter the results to what you are offering, whether it is an entire house or room.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "community"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -1329,12 +1182,248 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3be70927ecf16e34",
-      "title": "Login ke Gmail",
-      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
-      "summary": "Login ke Gmail Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel atau tablet Anda. Setelah Anda login, buka kotak masuk Anda untuk memeriksa email Anda.",
+      "id": "235bec6497fb0506",
+      "title": "iLovePDF | Free PDF Tools",
+      "url": "https://www.ilovepdf.io/",
+      "summary": "The quickest way to write on a PDF is to open it in an online editor, add text, drawings, shapes, comments, or images, then download the updated file. iLovePDF offers this through its PDF Editor, so basic annotation work can happen in the browser without installing desktop software.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fb56d27fa55242f3",
+      "title": "iLovePDF | Herramientas PDF Gratis",
+      "url": "https://www.ilovepdf.es/",
+      "summary": "La forma más rápida de agregar texto a un PDF es usar un editor de PDF online, subir el archivo, colocar un cuadro de texto en la página, ajustar el formato y exportar el documento actualizado.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a551aae05844107d",
+      "title": "iLovePDF | Herramientas PDF online gratis",
+      "url": "https://www.ilovepdf.com/es",
+      "summary": "Herramientas online y completamente gratuitas para unir PDF, separar PDF, comprimir PDF, convertir documentos Office a PDF, PDF a JPG y JPG a PDF. No se necesita instalación.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cd4d0f716f213e3a",
+      "title": "Merge PDF files online. Free service to merge PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/merge_pdf",
+      "summary": "Select multiple PDF files and merge them in seconds. Merge & combine PDF files online, easily and free.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af8af8dd60bc6a22",
+      "title": "Microsoft Corporation (MSFT) stock price, news, quote and history ...",
+      "url": "https://sg.finance.yahoo.com/quote/MSFT/",
+      "summary": "Find the latest Microsoft Corporation (MSFT) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "abdb6cd9e9ce8405",
+      "title": "Microsoft Stock Price Quote - NASDAQ: MSFT - Morningstar",
+      "url": "https://www.morningstar.com/stocks/xnas/msft/quote",
+      "summary": "Get the latest Microsoft stock price NASDAQ: MSFT stock rating and detailed information including MSFT news, historical charts and real-time prices.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "afa8020107ed8849",
+      "title": "Monthly Stays on Airbnb - Guide Revised - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Host-guides/Monthly-Stays-on-Airbnb-Guide-Revised/m-p/2031979",
+      "summary": "Understanding Airbnb Monthly Stays (28+days) - GUIDE Long Term Stays – Important Cautions Long term stays can be an option for Hosts and can be very successful. However, be sure you thoroughly familiarize yourself with Airbnb’s long term stay policies (and other OTA platform policies) before offer...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "tool",
+        "community"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0f4f16f6e4b41a34",
+      "title": "MSFT Analysis & News - Microsoft Corporation | Seeking Alpha",
+      "url": "https://seekingalpha.com/symbol/MSFT",
+      "summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8640b2e7573bd57c",
+      "title": "MSFT | Microsoft Corp. Stock Overview (U.S.: Nasdaq) | Barron's",
+      "url": "https://www.barrons.com/market-data/stocks/msft",
+      "summary": "Complete Microsoft Corp. stock information by Barron's. View real-time MSFT stock price and news, along with industry-best analysis.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d9aec6a2f42d1c63",
+      "title": "myuhc - Member Login | UnitedHealthcare",
+      "url": "https://prod.member.myuhc.com/content/myuhc/en/public/member-ei-login.html",
+      "summary": "Sign in for a personalized view of your benefits. Easy access to plan information anytime anywhere. Get the most out of your coverage. Download our app. Manage your health quickly and securely with the app. Scan the QR code to download. Find a Provider. Find a doctor, medical specialist, mental health care provider, hospital or lab. Find a Dentist.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1355,12 +1444,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a973ef6bdd75370b",
-      "title": "Movies & TV - YouTube",
-      "url": "https://shows.youtube.com/",
-      "summary": "HBO Max • Drama • 2026 Try now",
+      "id": "6dc9607f2851ef93",
+      "title": "myuhc - Member Login | UnitedHealthcare",
+      "url": "https://member.uhc.com/espresso/dashboard",
+      "summary": "Easy access to plan information anytime anywhere. Get the most out of your coverage. Download our app. Manage your health quickly and securely with the app. Scan the QR code to download. Find a Provider. Find a doctor, medical specialist, mental health care provider, hospital or lab. Find a Dentist. Find a local dentist or dental care in your area.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1369,9 +1458,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "tool"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1381,38 +1470,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6bf838c5e343cde3",
-      "title": "mtc.bonfirehub.com",
-      "url": "https://mtc.bonfirehub.com/opportunities/223055",
-      "summary": "We would like to show you a description here but the site won’t allow us.",
+      "id": "eee1191b2e085577",
+      "title": "myuhc - Member Login | UnitedHealthcare",
+      "url": "https://www.welcometomyuhc.com/demo/choice-plus-demo/",
+      "summary": "Register or login to your UnitedHealthcare health insurance member account. Have health insurance through your employer or have an individual plan? Login here!",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f28fd9c908f230d9",
-      "title": "Na - Dicio, Dicionário Online de Português",
-      "url": "https://www.dicio.com.br/na/",
-      "summary": "Significado de Na no Dicio, Dicionário Online de Português. O que é na: contr. Na parte interna ou superior de; sobre algo conhecido, determinado: entrou na sua casa; o filme...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1433,12 +1496,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "78e8f7a290d7ec30",
-      "title": "Narcotics Anonymous",
-      "url": "https://na.org/",
-      "summary": "The NA program started as a small US movement that has grown into one of the world’s oldest and largest organizations of its type. Today, Narcotics Anonymous is well established throughout much of the Americas, Western Europe, Australia, and New Zealand.",
+      "id": "14781158e3112002",
+      "title": "myuhc.com & other member websites | UnitedHealthcare",
+      "url": "https://www.uhc.com/member-resources/myuhc-member-website",
+      "summary": "Sign in or register for a member account to conveniently manage your health plan on your schedule. See your benefits, find network doctors, view and pay claims and more. The UnitedHealthcare app connects you to your health plan details anytime, anywhere. Get instant access to the answers and support you need, when you need it.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1447,9 +1510,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1459,12 +1522,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e696820135136130",
-      "title": "Narcóticos Anónimos",
-      "url": "https://na-pt.org/index.php/pt/",
-      "summary": "Espaço dedicado a organizações comunitárias, equipes clínicas e administrativas de centros de recuperação, e demais profissionais e interessados.",
+      "id": "9bf30ef9e4e96ca9",
+      "title": "SHARING MY HELPFUL HOUSE RULE TEMPLATE - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Ask-about-your-listing/SHARING-MY-HELPFUL-HOUSE-RULE-TEMPLATE/m-p/723915",
+      "summary": "Hi Airbnb Host Community, I have been an avid Airbnb user as a guest since 2014, and in the Summer of 2016, became a host. The last 2 years has been an incredible learning curve and my listing(s) today have drastically improved because I picked up new information and ways to host over time. I woul...",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1473,9 +1536,10 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1485,244 +1549,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a9103cc0f5fa4841",
-      "title": "Narcóticos Anônimos",
-      "url": "https://www.facebook.com/na.org.br/",
-      "summary": "Narcóticos Anônimos. 17,240 likes · 807 talking about this. Narcóticos Anônimos é uma organização sem fins lucrativos, de homens e mulheres para quem as drogas se tornaram um problema maior. Somos...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ee2493e2206be983",
-      "title": "Narcóticos Anônimos - Página Principal - Narcóticos Anônimos",
-      "url": "https://www.na.org.br/",
-      "summary": "NA é uma irmandade mundial ativa em 144 países e com mais de 72.000 reuniões semanais no mundo. Qualquer um, independente de raça, crença, opção sexual, cultura, idade ou situação financeira pode participar de nossas reuniões que são TOTALMENTE GRATUITAS.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3e92acffec283e18",
-      "title": "New Volkswagen and Used Car Dealership in Lynbrook, NY",
-      "url": "https://www.sunrisevolkswagen.com/",
-      "summary": "Our inventory of used cars in Lynbrook, New York, features a variety of makes and models, including certified preowned (CPO) Volkswagen that combine quality with exceptional value.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "76f0b0018be41ff8",
-      "title": "News - YouTube",
-      "url": "https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw",
-      "summary": "Discover videos, music, and more on this YouTube channel.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "889c6fe40666b339",
-      "title": "O que é o WhatsApp? Saiba tudo sobre o aplicativo - CCM",
-      "url": "https://br.ccm.net/faq/15037-whatsapp-o-que-e-isso",
-      "summary": "WhatsApp Web O WhatsApp também possui uma versão para desktops, embora com menos recursos - ainda não oferece videoconferência. Para saber como habilitar e utilizar o WhatsWeb no seu PC, veja Como instalar e usar o WhatsApp Web. WhatsApp Business O WhatsApp Business é a versão para empresas do aplicativo.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bf1ef47f46448cde",
-      "title": "Reuniões - virtual-na.org",
-      "url": "https://virtual-na.org/reunioes/",
-      "summary": "O horário das reuniões será mostrado na vossa hora local. Pesquisa de reuniões por Formatos e Línguas. Reuniões MARATONA em várias línguas na secção Marathons Eventos de NA na secção NA Events e na lista de reuniões em Formato “Special Events”",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7c330dd2c0c4c44d",
-      "title": "Reuniões Online Narcóticos Anónimos",
-      "url": "https://na-pt.org/reunioes_online/calendar.php",
-      "summary": "As reuniões de Narcóticos Anónimos destinam-se a aditos ou pessoas que julguem ter um problema com drogas. Por favor respeitem o anonimato e a privacidade dos nossos membros",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e997d19d56ea309",
-      "title": "Reuniões Virtuais de Narcóticos Anônimos - Narcóticos Anônimos",
-      "url": "https://www.na.org.br/virtual/",
-      "summary": "Encontre uma reunião virtual Abaixo segue uma lista das próximas reuniões virtuais de Narcóticos Anônimos. Baixe na internet o aplicativo:",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d6c37e321327115b",
-      "title": "Sódio – Wikipédia, a enciclopédia livre",
-      "url": "https://pt.wikipedia.org/wiki/S%C3%B3dio",
-      "summary": "O sódio é um elemento químico de símbolo Na (Natrium em latim), de número atômico 11 (11 prótons e 11 elétrons), massa atômica 23 u (nº de protões + nº de neutrões). É um metal alcalino, sólido na temperatura ambiente, macio, untuoso, de coloração branca, ligeiramente prateada.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "205c7fa06d12bbbf",
-      "title": "The Best Blockchain Explorers - Bitamp",
-      "url": "https://blog.bitamp.com/the-best-blockchain-explorers/",
-      "summary": "Blockchain explorers are indispensable tools that enable users to search, analyze, and visualize data on public blockchains like Bitcoin and Ethereum. Explorers allow anyone to track transactions, view balances, monitor network activity, and validate blocks with complete transparency.",
+      "id": "37f9a1d55410bc36",
+      "title": "Spanish words starting with the letters E F J K and LL?",
+      "url": "https://www.answers.com/other-arts/Spanish_words_starting_with_the_letters_E_F_J_K_and_LL",
+      "summary": "estár (to be); frente (front); jalar (to pull); kilometro (kilometer); llamar (to call)",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1745,12 +1575,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fae152c12431c566",
-      "title": "Volkswagen dealer in Orchard Park, NY | New and Used Volkswagen ...",
-      "url": "https://www.vwoforchardpark.com/",
-      "summary": "Volkswagen of Orchard Park serves Orchard Park NY, Buffalo NY, Niagra Falls NY, and Hamburg NY. Our impressive inventory of new and used Volkswagen SUVs, cars, and electric cars.",
+      "id": "ba280986150aec8a",
+      "title": "Spanish words that start with RR? - Answers",
+      "url": "https://www.answers.com/other-arts/Spanish_words_that_start_with_RR",
+      "summary": "A word in spanish never starts with RR... there is a rule that says that if there is an RR sound at the beginning of a word, only one R should be written. For example...",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1771,12 +1601,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aa7ea76e4dd30918",
-      "title": "Volkswagen Dealership in Nanuet, NY | New & Used Auto Sales",
-      "url": "https://www.vwnanuet.com/",
-      "summary": "Discover exceptional Volkswagen sales and service at Volkswagen of Nanuet in New York. Explore our new and used inventory, then buy a VW Tiguan or Atlas!",
+      "id": "9aa9512629486cb5",
+      "title": "Spanish Words with rr - Answers",
+      "url": "https://www.answers.com/other-arts/Spanish_Words_with_rr",
+      "summary": "There isn't any word in Spanish that starts with RR. However, the R at the start of a word is pronounced like a \"strong\" R or RR. For instance, the R in \"ropa\" (clothes) is pronounced like the R ...",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1797,12 +1627,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "85e1712e91265ba8",
-      "title": "WhatsApp: como encontrar a versão compatível com meu dispositivo? - CCM",
-      "url": "https://br.ccm.net/forum/affich-331348-whatsapp-como-encontrar-a-versao-compativel-com-meu-dispositivo",
-      "summary": "Olá, A mensagem alertar para a incompatibilidade do mensageiro para celulares com os tablets. Como o WhatsApp só funciona por meio de um número de telefone e para um só dispositivo móvel, ele não pode ser baixado diretamente nos tablets, a alternativa é usá-lo pela internet através do QR código. Para ver o passo a passo completo leia WhatsApp Web para Chrome. É possível também ...",
+      "id": "eafcb36df86e8575",
+      "title": "UHC Community Plan - Member Login - UnitedHealthcare",
+      "url": "https://prod.member.myuhc.com/content/myuhc/en/public/member-cs-login.html",
+      "summary": "Sign in and you'll get tools that help you use your plan. You can view your Member ID card and get help with using your benefits. It just takes a few minutes to register. Then you can log in anytime. New to this website? Register Now chevron_right. Find a doctor, hospital, or pharmacy. Find a Provider. Find forms for members. View Forms.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1823,12 +1653,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1a5e65f5782ce188",
-      "title": "YouTube - Apps no Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=pt-BR",
-      "summary": "Instale o app YouTube oficial em smartphones e tablets Android. Veja o que as pessoas ao redor do mundo mais gostam de assistir: desde vídeos de música famosos até conteúdo em alta sobre games,...",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "smartglasses; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "id": "4c5d0b249293ee72",
+      "title": "Unir PDF - Combina tus archivos PDF online y gratis - Smallpdf",
+      "url": "https://smallpdf.com/es/unir-pdf",
+      "summary": "Puedes combinar tus PDF y JPG en un solo archivo subiéndolos a la herramienta Unir PDF. Solo sube todos tus archivos, reordena las páginas según sea necesario y luego únelos en un solo archivo.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1837,10 +1667,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video",
-        "tool"
+        "news"
       ],
-      "primary_type": "video",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1850,12 +1679,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "02f090df73206445",
-      "title": "YouTube – Wikipédia, a enciclopédia livre",
-      "url": "https://pt.wikipedia.org/wiki/YouTube",
-      "summary": "O YouTube Premium (anteriormente YouTube Red) é o serviço de assinatura premium do YouTube. Oferece transmissão sem publicidade, acesso a conteúdo exclusivo, reprodução em segundo plano e de vídeo offline em dispositivos móveis e acesso ao serviço \"Acesso ilimitado\" do Google Play Music.",
+      "id": "6c47129ce4ce216b",
+      "title": "Unir PDF - en línea o local - rápido y gratis",
+      "url": "https://www.ilovepdf.es/unir_pdf/",
+      "summary": "Une PDF online o directamente en tu navegador (local, sin subirlos). Ordena las páginas y descarga un único PDF. Rápido, seguro y conforme al RGPD.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1864,9 +1693,295 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "news"
       ],
-      "primary_type": "video",
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4dec5d5a691b5949",
+      "title": "Unir PDF online | Combina tus archivos PDF en uno - iLovePDF",
+      "url": "https://www.ilovepdf.com/es/unir_pdf",
+      "summary": "Selecciona varios archivos PDF y únelos al instante. Unir PDF fácilmente y gratis.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77661a72217126bc",
+      "title": "UnitedHealthcare",
+      "url": "https://member.uhc.com/login",
+      "summary": "Sign in or register to manage your UnitedHealthcare member account, view benefits, claims, and health plan details anytime, anywhere.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f6422ae1d4f8246",
+      "title": "UnitedHealthcare",
+      "url": "https://member.uhc.com/myuhc/myuhc/content/myuhc/en/secure",
+      "summary": "Sign in to UnitedHealthcare for a personalized view of your benefits, health plan details, network providers, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a4839d022c95e43",
+      "title": "UnitedHealthcare",
+      "url": "https://member.uhc.com/sso?source=healthsafeid&callingAppId=myuhc",
+      "summary": "Sign in or register for easy access to UnitedHealthcare plan information anytime, anywhere.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b6b20045ec1e894f",
+      "title": "What are some Spanish words that begin with the letter rr?",
+      "url": "https://www.answers.com/education/What_are_some_Spanish_words_that_begin_with_the_letter_rr",
+      "summary": "No words begin with Rr in Spanish.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a3dca674e871fbd7",
+      "title": "What are some Spanish words that have RR in them and What is ... - Answers",
+      "url": "https://www.answers.com/education/What_are_some_Spanish_words_that_have_RR_in_them_and_What_is_the_meaning",
+      "summary": "What are some Spanish words that have RR in them and What is the meaning? - Answers Subjects > Jobs & Education > Education",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4ff32b1dcdc0b649",
+      "title": "What are some Spanish words that have RR in them? - Answers",
+      "url": "https://www.answers.com/other-arts/What_are_some_Spanish_words_that_have_RR_in_them",
+      "summary": "Some Spanish words with an RR in them are listed here:Carro - cartPerro - dogGuerrero - the surname GuerreroJarro - pitcherFierro - ironFerrocarril - railCarril - laneBarril - barrelBarro ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a70ccfabad46880f",
+      "title": "What are spanish words starting with PLA? - Answers",
+      "url": "https://www.answers.com/linguistics/What_are_spanish_words_starting_with_PLA",
+      "summary": "go to spanish.dictionary.com, at the bottom it says browse dictionary-click on p-and browse, it's in alphabetical order",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "15a67ea0d511f3af",
+      "title": "What are spanish words with rr in it? - Answers",
+      "url": "https://www.answers.com/education/What_are_spanish_words_with_rr_in_it",
+      "summary": "Rabioso (rabid)Rancio (rancid)Rapido (rapid)Razonable (reasonable)Rebelde (rebellious)Receloso (disrespectful)Reciente (recent)Redundante (redundant)Reverente ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "736531e59984f978",
+      "title": "What English to spanish cognates have a RR? - Answers",
+      "url": "https://www.answers.com/other-arts/What_English_to_spanish_cognates_have_a_RR",
+      "summary": "there is no Spanish words that start with RR but some cognates with RR would be Terrible-Terrible/Awful Guitarra-Guitar ....thats all i got, hope it helped. errar - to fail, miss the target ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca4e90d764f3c47d",
+      "title": "Words that has double '' rr''? - Answers",
+      "url": "https://www.answers.com/toys-and-games/Words_that_has_double_%27%27_rr%27%27",
+      "summary": "arrangearrestarrowberryblurrycarrycurrycherrycarrelcurrentdisarrayerrorferrygarretherringhorriblehurryirregularmerrynarrateoverrunoverreachporridgequarrysorrystarrysurroundsurrealterritorytorrentt ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
