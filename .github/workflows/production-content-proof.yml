@@ -1,0 +1,54 @@
+name: Prove deployed public content
+
+on:
+  workflow_run:
+    workflows: ["Deploy documentation site"]
+    types: [completed]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-content-proof-${{ github.event.workflow_run.head_sha }}
+  cancel-in-progress: true
+
+jobs:
+  prove-production:
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out deployed revision with parent
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          cache: pip
+          cache-dependency-path: requirements-docs.txt
+
+      - name: Install documentation dependencies
+        run: pip install -r requirements-docs.txt
+
+      - name: Rebuild deployed artifact
+        run: |
+          python scripts/prepare_site.py
+          mkdocs build --strict
+
+      - name: Prove changed public pages are served in production
+        env:
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          set -euo pipefail
+          BASE_SHA="$(git rev-parse HEAD^)"
+          python scripts/verify_changed_public_pages.py \
+            --base "$BASE_SHA" \
+            --head "$HEAD_SHA" \
+            --site-root site \
+            --origin https://glassesresearch.org
+
+      - name: Record invariant
+        run: echo "DEPLOYED means the changed public page body was retrieved from production and matched the built artifact exactly."
