@@ -1,39 +1,40 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-16T22:53:03.876004+00:00",
-  "candidate_count": 73,
-  "classifier_irrelevant_count": 62,
+  "discovered_utc": "2026-09-16T20:14:29.900548+00:00",
+  "candidate_count": 77,
+  "classifier_irrelevant_count": 69,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 10,
+    "adjacent": 6,
     "broad_web": 43,
-    "developer": 20
+    "community": 1,
+    "developer": 30,
+    "research": 1
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 1,
     "enabling": 1,
-    "adjacent": 10,
+    "adjacent": 6,
     "speculative": 0,
-    "irrelevant": 62
+    "irrelevant": 69
   },
   "type_counts": {
-    "model": 1,
-    "review": 1,
-    "video": 1,
-    "news": 32,
-    "tool": 24,
-    "sdk": 20,
-    "hack": 1,
+    "model": 2,
+    "review": 3,
+    "video": 2,
+    "news": 34,
+    "tool": 30,
+    "sdk": 29,
     "optics": 1,
-    "policy": 3,
-    "retail": 6,
-    "community": 13
+    "retail": 3,
+    "community": 4
   },
   "routing_counts": {
-    "adjacent_radar": 10,
-    "community_evidence_review": 2,
-    "reject_noise": 62,
-    "research_news_review": 11,
+    "adjacent_radar": 6,
+    "community_evidence_review": 4,
+    "development_hacking": 1,
+    "reject_noise": 69,
+    "research_news_review": 8,
     "research_optics": 1,
     "retail_rebrand_review": 1
   },
@@ -46,13 +47,75 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
   "candidates": [
     {
-      "id": "3a627e5070c4e3e4",
-      "title": "Welcome to Competitive Cameras",
-      "url": "https://competitivecameras.com/",
-      "summary": "We’ll get you the best price possible. Biggest Selection in DFW! \"These guys rock! If you have ANY camera needs, this is your place. They are quick with their service and unbeatable with their knowledge on cameras! I purchased my a6500 here and constantly come back for lens rentals because they are just that dynamic.",
+      "id": "62faba927dc0444b",
+      "title": "XREAL - Reddit",
+      "url": "https://www.reddit.com/r/Xreal/top/",
+      "summary": "An AR community supported by XREAL and some dedicated AR enthusiasts. Please check for more guidance on the use of XREAL products in the menu at the top and the sidebar on the community.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "59e90b6d6b02cf1f",
+      "title": "How Augmented Reality Works | HowStuffWorks",
+      "url": "https://computer.howstuffworks.com/augmented-reality.htm",
+      "summary": "Augmented reality is a form of mixed reality that blends of interactive digital elements – like dazzling visual overlays, buzzy haptic feedback, or other sensory projections – into our real-world environments. If you experienced the hubbub of Pokemon Go, you witnessed augmented reality in action.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8080e2671cf31bd5",
+      "title": "Welcome to the Bethesda Ritz Camera",
+      "url": "https://ritzcamera.com/pages/store-1124-htm",
+      "summary": "Whether you are looking to purchase your first digital camera, buy a new lens, or upgrade to the newest model Ritz Camera is ready to supply all of your photographic needs. Location: 6917 Arlington Road Bethesda, MD. 20814. Phone: 301-652-5646. Hours: Have any questions? Talk with us directly using LiveChat.",
       "discovery_channel": "broad_web",
       "query": "camera smart glasses",
       "source": "Bing web RSS",
@@ -63,14 +126,12 @@
       "disposition": "collected",
       "relationship": "enabling",
       "content_types": [
-        "optics",
-        "retail"
+        "optics"
       ],
       "primary_type": "optics",
       "routing_targets": [
         "research_news_review",
-        "research_optics",
-        "retail_rebrand_review"
+        "research_optics"
       ],
       "triage_priority": "low",
       "publication_eligible": true,
@@ -78,12 +139,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "46ad2a52ed3c6d14",
-      "title": "23 Best & Fun Things To Do in Liberty (MO) - The Tourist Checklist",
-      "url": "https://thetouristchecklist.com/things-to-do-in-liberty-mo/",
-      "summary": "Liberty, MO, is a charming town that blends rich history with modern attractions. From peaceful parks and vibrant community spaces to historical landmarks, there’s something for everyone to enjoy.",
+      "id": "0ca9b14a515998f3",
+      "title": "301 Moved Permanently",
+      "url": "https://www.triketalk.com/forum/threads/46627-Vibration-rattle-on-08-GL-1800-Motor-Trike",
+      "summary": "301 Moved Permanently Moved Permanently The document has moved here.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -106,37 +167,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0c539b0774ddc171",
-      "title": "gmail邮箱登陆入口 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/436896083505263292.html",
-      "summary": "gmail邮箱登陆入口gmail邮箱登陆入口：https://mail.google.com/Gmail是Google公司提供的一项免费电子邮件服务。要登录Gmail邮箱，可以 ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9e59ee0820fa0fa4",
-      "title": "Historique de Connexion Hotmail ? - Hotmail / Outlook.com",
-      "url": "https://forums.commentcamarche.net/forum/affich-36581433-historique-de-connexion-hotmail",
-      "summary": "Bonjour, J'ai un compte Hotmail accessible par mon ordinateur de salon et mon téléphone portable. Il y a environ 6 mois on m'a volé cet ordinateur. Il y a une semaine, en manipulant mon téléphone pour accèder à ma messagerie, un écran est apparu me relatant la liste de chaque connexion depuis environ 4 mois avec la date, le lieu où à eu lieu la connexion. De plus quand je me ...",
+      "id": "f7e7a38dfbdcec1e",
+      "title": "abonnements skype - Communauté Microsoft",
+      "url": "https://answers.microsoft.com/fr-fr/skype/forum/all/abonnements-skype/2cbfe577-9de4-49e7-9b49-bffacae7b110",
+      "summary": "Bonjour, J'utilise peu skype et je n'avais pas eu de paiement à effectuer jusqu'alors. Existe-t-il une solution gratuite pour des connexions occasionnelles ? Merci d'avance",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -161,12 +195,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "08b65dbfd0503d8e",
-      "title": "hotmail免费邮箱怎么申请 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/125257788.html",
-      "summary": "申请hotmail邮箱，要进入到 官网 进行注册，其他的网站容易误导你。 申请hotmail邮箱的步骤： 1、进入到hotmail邮箱的官网： 官方注册网址，点击创建免费账户； 2、在创建账户的下拉处，选择hotmail.com后缀；在新建电子邮件处，点击，输入你的邮箱地址，注意邮箱地址不能与别人的重复。 3、创建密码 ...",
+      "id": "fe120898e55d0a1b",
+      "title": "Best source for plastic five gallon bucket - Bushcraft USA Forums",
+      "url": "https://bushcraftusa.com/threads/best-source-for-plastic-five-gallon-bucket.400235/",
+      "summary": "Harbor Freight buckets are food grade I believe, and they give them away with purchases all the time. I usually buy the lid, and get the bucket free. I believe the regular price is under $4 On a weekend, one per day. You can get 3 buckets with lids for under $5. I've done it many times.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "72b5676cabf4fb49",
+      "title": "Harbor freight axe/hatchet - Bushcraft USA Forums",
+      "url": "https://bushcraftusa.com/threads/harbor-freight-axe-hatchet.165205/",
+      "summary": "sniper7369 said: I cut down an axe and hatchet over the weekend to keep in the truck. That's cool, looks like you scored an original German Harbor Freight fireman's hatchet",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -188,10 +250,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "821b5fff90be5eb1",
-      "title": "hotmail邮箱怎么登录？_百度知道",
-      "url": "https://zhidao.baidu.com/question/402916655883659605.html",
-      "summary": "登录后缀@hotmail.com的邮箱一共有三种方法，具体如下： 方法一：官方登陆入口 首先我们想到的一定是官网登陆，是的，这也是最快捷的登陆方式。hotmail邮箱官网登陆地址： www.hotmail.com 大家复制到浏览器打开，点击登陆按钮，输入我们的hotmail邮箱账号密码即可成功登陆，不过这种方式是网页版使用 ...",
+      "id": "50c11847cc4d271e",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/intermittent-stutter-security-event/9ac9ba31-8d8a-4a48-a04e-408175bf2ba1",
+      "summary": "Microsoft Community",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -202,11 +264,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "research_news_review",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -215,145 +278,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "44941f5a3ec7268c",
-      "title": "Outlook邮箱注册入口 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/316431122890820204.html",
-      "summary": "Outlook邮箱注册入口Outlook.com 是 Microsoft 所提供的免费个人电子邮件服务，本文将分享Outlook邮箱注册入口＆注册教程。Outlook邮箱注册入口Outlook邮箱注册的唯一入口是：www.outlook.com，有且只有这一个注册入",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e958fcfe614f5ac",
-      "title": "常用邮箱的后缀都有哪些 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/1770685864994580980.html",
-      "summary": "常用邮箱后缀 @gmail.com；@yahoo.com；@msn.com；@hotmail.com；@aol.com；@ask.com；@live.com；@qq.com；@0355.net；@163.com；@163.net；@263.net；@3721.net；@yeah。 拓展： 1、信箱又称邮箱（postbox，mailbox）是一种人际的沟通工具之一。 信件送来，收件者因为外出或者忙碌著其他，无闲亲身接收，只有由信箱代劳，待收件人有 ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "757eefd2f5e74c82",
-      "title": "微软帐户的密码是什么格式 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/1366636001791886979.html",
-      "summary": "微软 帐户的密码是用户个人定的，但是最少不能低于8个字符，并且必须包括微软要求的两种字符格式才可以。 微软要求的密码字符有：大写字母（A~Z）、小写字母（a~z）、数字（0~9任意组合）、符号（，。；、等） 扩展资料： 微软会在以下情况下要求你验证 电子邮件地址：当你使用电子邮件创建 ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6c58f9d5ec7c273b",
-      "title": "微软有哪些后缀的邮箱？请尽量详细 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/42543187.html",
-      "summary": "截止2018年，微软统一使用 .outlook 邮箱后缀。 北京时间2012年8月1日微软宣布将为旗下Outlook品牌推出一种免费的、基于网络的电子邮件门户服务。Hotmail则很可能将在未来一年时间里逐步取消。 Microsoft Office Outlook是微软办公软件套装的组件之一，它对Windows自带的Outlook express的功能进行了扩充。Outlook的 ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f68a18f5f81d1c9a",
-      "title": "怎样注册hotmail_百度知道",
-      "url": "https://zhidao.baidu.com/question/1780829424034580020.html",
-      "summary": "怎样注册hotmail注册Hotmail（现Outlook）账户需通过浏览器访问微软官方页面完成，以下是具体步骤：1. 准备工具与环境确保设备已连接网络，推荐使用电脑操作。打开浏览器（如Chrome、Edge等），访问微软邮箱登录页面",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fe541da82aee509b",
-      "title": "14 Famous People Who Have PhDs - Ranker",
-      "url": "https://www.ranker.com/list/famous-people-with-phds/celebrity-lists",
-      "summary": "Several famous actors, politicians, athletes, and musicians have furthered their education by earning doctorates and Ph.D.s. Some of these celebrities earned ...",
+      "id": "18eac504e505a0de",
+      "title": "About: List of noise rock bands - DBpedia Association",
+      "url": "https://dbpedia.org/resource/List_of_noise_rock_bands",
+      "summary": "This is a list of noise rock bands.(This is a dynamic list and may never be able to satisfy particular standards for completeness. You can help by adding missing items with reliable sources.)",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -377,10 +305,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4f8c609288032718",
-      "title": "17 celebrities with higher education degrees | Tatler Asia",
-      "url": "https://www.tatlerasia.com/lifestyle/entertainment/most-educated-actors-singers-stars-celebrities",
-      "summary": "While many celebrities forgo higher education in pursuit of stardom, there are those who’ve managed to balance the spotlight with intellectual growth. These stars prove that you don’t always have to choose between fame and education",
+      "id": "58acd1c0fcc15920",
+      "title": "Artists and bands from Oakland, CA - AllMusic",
+      "url": "https://www.allmusic.com/birthplace/oakland-ca-mz0000020420",
+      "summary": "Discover artists and bands from Oakland, CA, their birthplaces, and contributions to music on AllMusic.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -404,10 +332,199 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f1b9625cc0d0c5cb",
-      "title": "19 Celebrities With Unexpected College Degrees - BuzzFeed",
-      "url": "https://www.buzzfeed.com/jennaguillaume/celebrity-college-degrees",
-      "summary": "Sometimes, celebrities have hidden depths that have nothing to do with their public image or main career. Here are some famous people who have actual, proper degrees you might be surprised...",
+      "id": "f8cde60072eb09dc",
+      "title": "Atividade de História - Documentos e Registros - 2º e 3º ano - Com ...",
+      "url": "https://www.tudosaladeaula.com/2022/07/atividade-de-historia-documentos-e-registros-2o-e-3o-ano-com-texto-e-gabarito/",
+      "summary": "Excelente atividade sobre documentos e registros pessoais para o 2º e 3º ano do ensino fundamental com texto de apoio. Acesse já!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f6222f990301c395",
+      "title": "Atividade de objetos e documentos como fonte de memória - 2º ano com ...",
+      "url": "https://atividadesaulas.com/fundamental-1/atividade-de-objetos-e-documentos-como-fonte-de-memoria-2o-ano/",
+      "summary": "Confira a atividade de História sobre objetos e documentos como fonte de memória, elaborada para o 2º ano, com gabarito e alinhada à BNCC. Pronta para uso com tudo para sala de aula.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b5142776eabd6978",
+      "title": "Atividade sobre Objetos e Documentos Pessoais - 2º ano fundamental",
+      "url": "https://www.tudosaladeaula.com/2026/09/atividade-sobre-objetos-e-documentos-pessoais-2o-ano/",
+      "summary": "Baixe esta excelente atividade de História sobre Objetos e Documentos Pessoais para o 2º ano e aplique em sala de aula.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "125fefda9daef00c",
+      "title": "Atividades de Ensino: Documentos Pessoais 2º Ano",
+      "url": "https://pt.scribd.com/document/836895295/2%C2%BA-ANO-HIST-LP-ALUNO-31-05-a-23-06-Sequencia-de-Atividades-de-Ensino",
+      "summary": "Inclui instruções para ouvir videoaulas, responder perguntas e realizar atividades práticas relacionadas a certidões de nascimento, carteiras de identidade e vacinação.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18539e2fe0c13aff",
+      "title": "Atividades de História 2º ano em PDF De onde eu venho",
+      "url": "https://www.espacoprofessor.com/atividades-de-historia-2o-ano-em-pdf-de-onde-eu-venho/",
+      "summary": "Então, as atividades com a Certidão de Nascimento é o início do trabalho com documentos históricos, uma vez que o aluno vai utilizá-la para saber informações sobre sua própria trajetória de vida.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dfec77dffbed9755",
+      "title": "Atividades sobre Documentos Pessoais 2º Ano | PDF - Scribd",
+      "url": "https://pt.scribd.com/document/637258115/AVALIACAO-DE-HISTORIA-1%C2%BA-TRI-docx-Documentos-Google",
+      "summary": "Atividades sobre Documentos Pessoais 2º Ano Este documento contém 10 questões de avaliação de história para alunos do 2o ano sobre tópicos como documentos de registro civil, árvores genealógicas, hábitos de povos indígenas e calendários.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9f210524440f7c8c",
+      "title": "BLOCO 3 ATIVIDADES DE ENSINO 2º ANO - Paraná",
+      "url": "https://edu.umuarama.pr.gov.br/wp-content/uploads/2021/06/2o-ANO-HIST.-LP-ALUNO-31.05-a-23.06-Sequencia-de-Atividades-de-Ensino.pdf",
+      "summary": "A CERTIDÃO DE NASCIMENTO É UM DOCUMENTO PESSOAL QUE CONTÉM O NOME COMPLETO DA PESSOA, DIA, HORA, LOCAL DO NASCIMENTO, ALÉM DO NOME DO PAI E DA MÃE, DOS AVÓS MATERNOS E PATERNOS E O NOME DA LOCALIDADE ONDE NASCEU.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a781191dee604c5e",
+      "title": "Category:Musical groups from Oakland, California - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Category:Musical_groups_from_Oakland,_California",
+      "summary": "Pages in category \"Musical groups from Oakland, California\" The following 120 pages are in this category, out of 120 total. This list may not reflect recent changes.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -431,10 +548,227 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c30d840ccf519553",
-      "title": "20 Famous People With Master's Degrees - Ranker",
-      "url": "https://www.ranker.com/list/famous-people-with-masters-degrees/celebrity-lists",
-      "summary": "Some famous figures possess more academic accolades than you might think. Among these standout individuals are celebrities who have taken their educational pursuits to impressive heights by earning master's degrees.",
+      "id": "32dc1a7efa576f01",
+      "title": "História – Documentos pessoais – Conexão Escola SME",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-documentos-pessoais/",
+      "summary": "Esta proposta de atividade de HISTÓRIA é destinada aos estudantes do 2º ano do Ensino Fundamental.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b60bcb858c30b79a",
+      "title": "HTTP - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HTTP",
+      "summary": "HTTP is the foundation of data communication for the World Wide Web, where hypertext documents include hyperlinks to other resources that the user can easily access, for example by a mouse click or by tapping the screen in a web browser. HTTP is a request–response protocol in the client–server model.",
+      "discovery_channel": "developer",
+      "query": "smart glasses firmware GitHub",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c783f4f962e9b2c5",
+      "title": "HTTP Explained",
+      "url": "https://http.dev/explained",
+      "summary": "HTTP is the protocol behind nearly all communication on the web. A browser loading a page sends an HTTP request for the HTML document, parses the response, then sends additional requests for stylesheets, scripts, images, fonts, and other subresources.",
+      "discovery_channel": "developer",
+      "query": "smart glasses firmware GitHub",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ff1c53d9864894c6",
+      "title": "HTTP | Definition, Meaning, Versions, & Facts | Britannica",
+      "url": "https://www.britannica.com/technology/HTTP",
+      "summary": "HTTP, standard application-level protocol used for exchanging files on the World Wide Web. Web browsers are HTTP clients that send file requests to Web servers, which in turn handle the requests via an HTTP service. HTTP was originally proposed in 1989 by Tim Berners-Lee.",
+      "discovery_channel": "developer",
+      "query": "smart glasses firmware GitHub",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f61ae0d2da417c39",
+      "title": "HTTP: Hypertext Transfer Protocol - MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+      "summary": "HTTP is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes, such as machine-to-machine communication, programmatic access to APIs, and more.",
+      "discovery_channel": "developer",
+      "query": "smart glasses firmware GitHub",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "17040299486fb82a",
+      "title": "HTTPS - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HTTPS",
+      "summary": "Technical Difference from HTTP HTTPS URLs begin with \"https://\" and use port 443 by default, whereas HTTP URLs begin with \"http://\" and use port 80 by default.",
+      "discovery_channel": "developer",
+      "query": "smart glasses firmware GitHub",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9c25f14b111d9a89",
+      "title": "Hypertext Transfer Protocol - HTTP - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/html/what-is-http/",
+      "summary": "HTTP (Hypertext Transfer Protocol) is a core Internet protocol that defines how data is exchanged between clients and servers on the web. Enables communication between web browsers and web servers.",
+      "discovery_channel": "developer",
+      "query": "smart glasses firmware GitHub",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "26a529cf0bcc2580",
+      "title": "In-State Residents Tuition Rates - Financial Aid",
+      "url": "https://financialaid.pensacolastate.edu/in-state-resident-rates/",
+      "summary": "Review the in-state tuition rates for Florida residents with a full cost breakdown of books, supplies, and fees.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "faca5c096bd5297a",
+      "title": "List of Famous Bands from Oakland - Ranker",
+      "url": "https://www.ranker.com/list/oakland-bands-and-musical-artists-from-here/reference",
+      "summary": "This list of Oakland musical artists includes information like what genre the artist falls under, what albums they've put out and more. If you want to know more about these famous Oakland bands you can click on their names to learn more about them. Bands from every genre are listed here, including rock, pop, hip-hop/rap, jazz, and more.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -458,10 +792,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0f92038e492f5847",
-      "title": "20 Impressive Degrees Held By Famous People - Kate Knows",
-      "url": "https://kate-knows.com/20-impressive-degrees-held-by-famous-people/",
-      "summary": "Some of the Hollywood's biggest stars spent years studying for careers that had nothing to do with acting or music. Even more fascinating are those who went back to school, pursuing knowledge purely out of interest, long after they were already famous. Ready to know 20 of them?",
+      "id": "681cf3b727e45a5d",
+      "title": "List of noise rock bands - Grokipedia",
+      "url": "https://grokipedia.com/page/List_of_noise_rock_bands",
+      "summary": "Noise rock is a subgenre of rock music that originated in the late 1970s and early 1980s as a derivative of punk rock, particularly emphasizing abrasive, dissonant sounds through distorted electric guitars, unconventional song structures, and a deliberate rejection of traditional melody and harmony to create chaotic, experimental sonic landscapes. [1] [2] This list catalogs notable bands ...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -485,10 +819,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0c1384e750ac2cc3",
-      "title": "22 Celebrities With Prestigious College Degrees - BuzzFeed",
-      "url": "https://www.buzzfeed.com/kristenharris1/celebrities-prestigious-college-degrees",
-      "summary": "Adam Sandler graduated from NYU's Tisch School of the Arts in 1988 with a bachelor's in acting.",
+      "id": "3953aee69b21c685",
+      "title": "List of noise rock bands - Justapedia",
+      "url": "https://justapedia.org/wiki/List_of_noise_rock_bands",
+      "summary": "^ ab \"Noise Rock: A How-To Guide For The Perplexed\". toiletovhell.com. 12 February 2018. Retrieved 20 June 2020. ^ \"Reunited Punk Band Brings New Music To New SF Venue\". CBS San Francisco. May 11, 2018. Retrieved November 2, 2018. ^ DeShannon, Miz. \"DZ Deathrays - Black Rat - Albums - Reviews - Soundblab\". Soundblab. Retrieved 2017-03-29.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -512,228 +846,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5f16728e2a144af4",
-      "title": "Famous Celebrities With Unexpected Degrees - London Daily",
-      "url": "https://londondaily.com/famous-celebrities-with-unexpected-degrees",
-      "summary": "From rock legends like Gene Simmons, who studied education, to comedians like David Spade with a business degree, the list underscores the wide range of academic backgrounds among celebrities.",
+      "id": "a11133ef2039c731",
+      "title": "List of noise rock bands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_noise_rock_bands",
+      "summary": "AllMusic. \"Oakland Noise-Rock band Replicator calls it quits\". eastbayexpress.com. March 4, 2008. Retrieved June 20, 2020. \"Royal Trux Announce Reunion Show\". Stereogum.com. May 13, 2015. \"Royal Trux playing NYC in December ++ watch video from their Berserktown II comeback performance\". BrooklynVegan.com. October 5, 2015.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "010c0f25b9475c0c",
-      "title": "INHABIT Definition & Meaning - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/dictionary/inhabit",
-      "summary": "The meaning of INHABIT is to occupy as a place of settled residence or habitat : live in. How to use inhabit in a sentence.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "afa6ad036ca34acd",
-      "title": "Inhabitant - definition of inhabitant by The Free Dictionary",
-      "url": "https://www.thefreedictionary.com/inhabitant",
-      "summary": "Define inhabitant. inhabitant synonyms, inhabitant pronunciation, inhabitant translation, English dictionary definition of inhabitant. n. One that inhabits a place, especially as a permanent resident: the inhabitants of a fishing village; snakes, lizards, and other inhabitants of the...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "76954e86beb4e4f5",
-      "title": "INHABITANT Definition & Meaning - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/dictionary/inhabitant",
-      "summary": "The meaning of INHABITANT is one that occupies a particular place regularly, routinely, or for a period of time. How to use inhabitant in a sentence.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "324ed7c8fcfaca2b",
-      "title": "INHABITANT | definition in the Cambridge English Dictionary",
-      "url": "https://dictionary.cambridge.org/us/dictionary/english/inhabitant",
-      "summary": "INHABITANT meaning: 1. a person or animal that lives in a particular place: 2. a person or animal that lives in a…. Learn more.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "91776b8384379f88",
-      "title": "INHABITANT | English meaning - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/dictionary/english/inhabitant",
-      "summary": "INHABITANT definition: 1. a person or animal that lives in a particular place: 2. a person or animal that lives in a…. Learn more.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cfd1f526125b1294",
-      "title": "Inhabitat - Facebook",
-      "url": "https://www.facebook.com/Inhabitat/",
-      "summary": "Inhabitat. 1,092,917 likes · 14 talking about this. Inhabitat is a green design and lifestyle site that provides coverage of environmental news and the l",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3fd53be62933c164",
-      "title": "Inhabitat - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Inhabitat",
-      "summary": "Inhabitat is a blog focused on green design and lifestyle topics. The website covers the future of design as well as technology and architectural projects that emphasize energy efficiency, sustainability, and connection to the surrounding environment.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a624183241e9976b",
-      "title": "Inhabitat - YouTube",
-      "url": "https://www.youtube.com/@inhabitat",
-      "summary": "Inhabitat is an online magazine dedicated to showcasing the best and brightest new ideas in green design and innovation from around the globe.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -756,64 +874,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e671fa4cc6d6301c",
-      "title": "Inhabitat | Design For a Better World!",
-      "url": "https://inhabitat.com/",
-      "summary": "Inhabitat is a website dedicated to green design, innovation, and the future of clean technology, cataloging great ideas and emerging technologies which will change our world for the better.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "81db3efd5405464b",
-      "title": "Inhabitat | Inhabitat - Green Design, Innovation, Architecture, Green ...",
-      "url": "https://inhabitat.com/author/inhabitat/",
-      "summary": "Inhabitat, a leading website in green design and sustainable living, is seeking remote writers to contribute two...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ce44a71084343da2",
-      "title": "Success Stories: 5 Influential People With Degrees in Education",
-      "url": "https://online.utpb.edu/about-us/articles/education/success-stories-5-influential-people-with-degrees-in-education/",
-      "summary": "The people on this list, whether a renowned researcher or an award-winning principal, have devoted themselves to education. For them, education is not only a means to success and influence.",
+      "id": "d994f109cb9c693f",
+      "title": "List of noise rock bands - Wikiwand",
+      "url": "https://www.wikiwand.com/en/List_of_noise_rock_bands",
+      "summary": "List of noise rock bands From Wikipedia, the free encyclopedia This is a list of notable noise rock bands.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -837,38 +901,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6cdac19e6d497b47",
-      "title": "The 100 Most Influential People in Education - The Tech Edvocate",
-      "url": "https://www.thetechedvocate.org/the-100-most-influential-people-in-education/",
-      "summary": "As we navigate an increasingly complex and interconnected world, the role of education has never been more crucial. This article highlights 100 individuals who are at the forefront of educational innovation, policy, and practice in 2025.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "policy"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4992f95db7434afb",
-      "title": "Where 125 Celebrities Went To College (And What They Studied)",
-      "url": "https://www.degreequery.com/where-125-celebrities-went-to-school/",
-      "summary": "Or if your idol has little formal education, they can make you feel a whole lot better about doing it your own way. That’s why we researched the educational backgrounds of 125 celebrities, including Hollywood stars, professional athletes, musicians, models, popular YouTubers and famous authors.",
+      "id": "2f743ae4f8f2de18",
+      "title": "Oakland's Kowloon Walled City return after six years with a noise-rock ...",
+      "url": "https://chicagoreader.com/music/kowloon-walled-city-noise-rock/",
+      "summary": "Kowloon Walled City's new album Piecework smashes together the best sounds from the golden era of noise rock to create a daring masterpiece.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -892,23 +928,24 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4d341bcde4a23b75",
-      "title": "[Guide] How to redeem your Superhost bonus - Airbnb Community",
-      "url": "https://community.withairbnb.com/t5/Host-guides/Guide-How-to-redeem-your-Superhost-bonus/m-p/1961398",
-      "summary": "I used the Superhost bonus coupon by following the link in the email I received from Airbnb about my Superhost status. You can either enter the code during the booking payment process or, like me, redeem the coupon to have it added to my payments & payouts page. When you book, look for link ‘manage your coupon’ and choose the coupon.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "682c81c76f45e7b6",
+      "title": "Overview of HTTP - MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+      "summary": "HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser.",
+      "discovery_channel": "developer",
+      "query": "smart glasses firmware GitHub",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "community",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -918,443 +955,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1a10d904f15364a5",
-      "title": "A Host's guide to Airbnb: 60 tips - Airbnb Community",
-      "url": "https://community.withairbnb.com/t5/Ask-about-your-listing/A-Host-s-guide-to-Airbnb-60-tips/m-p/409261",
-      "summary": "Hey Airbnb hosts, started this list as an answer to a question but it turned up pretty big so I shared it as a separate post that I believe helped a lot of people. Almost a year older in my Airbnb host age, I decided to update the list and add some stuff I gathered, plus some tips to new guests, who...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fe7204d35ebeb770",
-      "title": "Airbnb updates - Airbnb Community",
-      "url": "https://community.withairbnb.com/t5/Airbnb-updates/bd-p/blog_en",
-      "summary": "Airbnb updates Airbnb’s nondiscrimination policy and the Community Center Airbnb fosters connection and belonging by embracing inclusion and respect regardless of a person's background or identity. As members of the Airbnb community, these are values that we all have a responsibility to uphold and protect. To foster a space ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy",
-        "community"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cf4956a1881e7590",
-      "title": "Community Center - Airbnb Community",
-      "url": "https://community.withairbnb.com/t5/Community-Center/ct-p/community-center",
-      "summary": "Airbnb began with 2 hosts who needed help paying rent for their apartment. Nearly 20 years later, millions of hosts rely on Airbnb to help cover their rent or mortgage.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "226db6cf1ff58f26",
-      "title": "Contact Airbnb: A Community Help Guide [UPDATED]",
-      "url": "https://community.withairbnb.com/t5/Host-guides/Contact-Airbnb-A-Community-Help-Guide-UPDATED/m-p/413245",
-      "summary": "This, I believe, is the most common questions on the Community Center. Below is a \"How To\" guide on contacting Airbnb. 3 easy ways to contact Airbnb: Airbnb Community Experts Via Twitter Direct Message @Airbnbhelp Calling Airbnb 1. Contacting Airbnb's Community Experts The easiest and quickest w...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5341ca18593ed071",
-      "title": "Convierte tus PDF a WORD editable - iLovePDF",
-      "url": "https://www.ilovepdf.com/es/pdf_a_word",
-      "summary": "Convierte cualquier archivo PDF a un archivo DOCX de WORD en un momento. La conversión tiene una precisión increíble.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "hack"
-      ],
-      "primary_type": "hack",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cc16bfafe0905ba7",
-      "title": "Dashboard - UnitedHealthcare",
-      "url": "https://prod.member.myuhc.com/content/myuhc/en/secure/communityplan/dashboard.html",
-      "summary": "We're currently experiencing an internal server problem. Try refreshing the page or check back soon. 1-866-414-1959.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2631f19ce161887a",
-      "title": "Editor PDF y Rellenador de Formularios gratis. Edita PDF online",
-      "url": "https://www.ilovepdf.com/es/editar-pdf",
-      "summary": "Añade fácilmente texto, formas, comentarios y subrayados a un archivo PDF. Rellena formularios en PDF y modifica tu PDF con anotaciones.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a2682fb872ac9670",
-      "title": "Guide : Comment contacter Airbnb - Airbnb Community",
-      "url": "https://community.withairbnb.com/t5/Aide/Guide-Comment-contacter-Airbnb/m-p/16456",
-      "summary": "C’est la question que beaucoup se posent sur la communauté. Ci-dessous vous trouverez comment rentrer en contact avec Airbnb que ce soit au travers de Twitter ou du Service Client. →Contacter Airbnb Via Twitter Le meilleur moyen et surement le plus simple de contacter Airbnb en cas de problème est...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f3c8a3d4dfff7cab",
-      "title": "How do I make a Formal Complaint to Airbnb? - Airbnb Community",
-      "url": "https://community.withairbnb.com/t5/Help-with-your-business/How-do-I-make-a-Formal-Complaint-to-Airbnb/m-p/1467296",
-      "summary": "There are many help support centre threads about this deceptive, abusive, threatening behaviour, third-party booking requests, UK Covid Travel Quarantine booking requests, How to make a Formal Complaint to Airbnb. All have been closed by Airbnb. Fellow Hosts please help, How do I make a Formal...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy",
-        "community"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d7f37d88723a9da6",
-      "title": "How to Start an Airbnb - Airbnb Community",
-      "url": "https://community.withairbnb.com/t5/Host-guides/How-to-Start-an-Airbnb/m-p/126109",
-      "summary": "Go onto Airbnb, enter your city in the search bar but don’t enter any dates so you will get more representation of what is available in your area. Filter the results to what you are offering, whether it is an entire house or room.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "community"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "235bec6497fb0506",
-      "title": "iLovePDF | Free PDF Tools",
-      "url": "https://www.ilovepdf.io/",
-      "summary": "The quickest way to write on a PDF is to open it in an online editor, add text, drawings, shapes, comments, or images, then download the updated file. iLovePDF offers this through its PDF Editor, so basic annotation work can happen in the browser without installing desktop software.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fb56d27fa55242f3",
-      "title": "iLovePDF | Herramientas PDF Gratis",
-      "url": "https://www.ilovepdf.es/",
-      "summary": "La forma más rápida de agregar texto a un PDF es usar un editor de PDF online, subir el archivo, colocar un cuadro de texto en la página, ajustar el formato y exportar el documento actualizado.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a551aae05844107d",
-      "title": "iLovePDF | Herramientas PDF online gratis",
-      "url": "https://www.ilovepdf.com/es",
-      "summary": "Herramientas online y completamente gratuitas para unir PDF, separar PDF, comprimir PDF, convertir documentos Office a PDF, PDF a JPG y JPG a PDF. No se necesita instalación.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cd4d0f716f213e3a",
-      "title": "Merge PDF files online. Free service to merge PDF - iLovePDF",
-      "url": "https://www.ilovepdf.com/merge_pdf",
-      "summary": "Select multiple PDF files and merge them in seconds. Merge & combine PDF files online, easily and free.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "af8af8dd60bc6a22",
-      "title": "Microsoft Corporation (MSFT) stock price, news, quote and history ...",
-      "url": "https://sg.finance.yahoo.com/quote/MSFT/",
-      "summary": "Find the latest Microsoft Corporation (MSFT) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+      "id": "489bc90034e7f591",
+      "title": "Residency - Admissions",
+      "url": "https://admissions.pensacolastate.edu/residency/",
+      "summary": "Review Florida residency requirements for tuition purposes, accepted documentation, classification guidelines, and residency updates at PSC.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "abdb6cd9e9ce8405",
-      "title": "Microsoft Stock Price Quote - NASDAQ: MSFT - Morningstar",
-      "url": "https://www.morningstar.com/stocks/xnas/msft/quote",
-      "summary": "Get the latest Microsoft stock price NASDAQ: MSFT stock rating and detailed information including MSFT news, historical charts and real-time prices.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "afa8020107ed8849",
-      "title": "Monthly Stays on Airbnb - Guide Revised - Airbnb Community",
-      "url": "https://community.withairbnb.com/t5/Host-guides/Monthly-Stays-on-Airbnb-Guide-Revised/m-p/2031979",
-      "summary": "Understanding Airbnb Monthly Stays (28+days) - GUIDE Long Term Stays – Important Cautions Long term stays can be an option for Hosts and can be very successful. However, be sure you thoroughly familiarize yourself with Airbnb’s long term stay policies (and other OTA platform policies) before offer...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool",
-        "community"
+        "review"
       ],
       "primary_type": "review",
       "routing_targets": [
@@ -1366,10 +983,327 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0f4f16f6e4b41a34",
-      "title": "MSFT Analysis & News - Microsoft Corporation | Seeking Alpha",
-      "url": "https://seekingalpha.com/symbol/MSFT",
-      "summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide.",
+      "id": "35654679bd1880f6",
+      "title": "Texto e Atividades - (EF02HI04) Selecionar e compreender o significado ...",
+      "url": "https://skooly.com.br/texto-e-atividades-ef02hi04-selecionar-e-compreender-o-significado-de-objetos-e-documentos-pessoais-como-fontes-de-memorias-e-historias-nos-ambitos-pessoal-familiar-escolar-e-comunitario-2o-ano/",
+      "summary": "Nesta postagem vamos disponibilizar um texto e atividades para trabalhar com alunos do 2º ano na disciplina História.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d7a0e17e77f32ea2",
+      "title": "What is HTTP - W3Schools",
+      "url": "https://www.w3schools.com/whatis/whatis_http.asp",
+      "summary": "All browsers have a built-in XMLHttpRequest Object (XHR). XHR is a JavaScript object that is used to transfer data between a web browser and a web server. XHR is often used to request and receive data for the purpose of modifying a web page.",
+      "discovery_channel": "developer",
+      "query": "smart glasses firmware GitHub",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aa922a512235589b",
+      "title": "What is HTTP? - Cloudflare",
+      "url": "https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/",
+      "summary": "Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web, and is used to load web pages using hypertext links. Learn more about HTTP.",
+      "discovery_channel": "developer",
+      "query": "smart glasses firmware GitHub",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "81f90408e336c742",
+      "title": "“Documentos Pessoais: Aula Lúdica para o 2º Ano do Ensino Fundamental”",
+      "url": "https://planejamentosdeaula.com/documentos-pessoais-aula-ludica-para-o-2o-ano-do-ensino-fundamental/",
+      "summary": "Neste plano, exploraremos diversos tipos de documentos, como o RG, a caderneta de vacinação, o passaporte, a carteira de motorista e o título de eleitor, promovendo o desenvolvimento das habilidades de identificação e compreensão, bem como a produção textual relacionada ao tema.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b3abf58476849f72",
+      "title": "Acesso negado ao portal e/ou problemas de bloqueio – Fale Conosco ...",
+      "url": "https://portal.fazenda.rj.gov.br/fale-conosco/inicio/bloqueio/",
+      "summary": "As operadoras de telecomunicação do Brasil possuem alguns de seus endereços IP usados por serviços residenciais que estão listados em catálogos internacionais devido ao uso indevido por indivíduos envolvidos em crimes cibernéticos através de conexões de banda larga. Como a Secretaria da Fazenda está firmemente comprometida com a proteção máxima dos dados sigilosos dos ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a66b3cd9791b86bc",
+      "title": "Benjean Utley-Judd Obituary in Fuquay-Varina at Trice Funeral Home, Inc ...",
+      "url": "https://www.articobits.com/obituaries/trice-fh/benjean-utleyjudd-obituary",
+      "summary": "Trice Funeral Home, Inc. | Fuquay-Varina, NC in Fuquay-Varina respectfully announces the passing of Benjean Utley-Judd on June 30, 2026.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3686740eabfb7fd4",
+      "title": "Best New Phones | Shop Top Smartphones | Boost Mobile",
+      "url": "https://www.boostmobile.com/shop/devices/handsets",
+      "summary": "Shop Boost Mobile for new cell phones from Apple, Samsung, Google & more. Compare deals, prices, & models on the best smartphones like the all new iPhone 17!",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f6770598ed391ef5",
+      "title": "Billing and Payments - Boost Mobile",
+      "url": "https://help.boostmobile.com/docs/boost-mobile-plan-billing-and-payments",
+      "summary": "Learn more information about how you will be billed or charged for your service with Boost Mobile. Learn when your bill or payment is do, how to pay it and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c90ecc95fdbbadf",
+      "title": "Boost Mobile Coverage Map",
+      "url": "https://www.boostmobile.com/coveragemap_xp",
+      "summary": "Unlock a better wireless experience. No long-term contracts and no surprises. Just the coverage you need at a price you’ll love.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "50751fdb0daec9c1",
+      "title": "Boost Mobile Login | Pay Your Bill & Manage Your Account",
+      "url": "https://www.boostmobile.com/my-account",
+      "summary": "Scan the QR code with your phone to download the Boost Mobile app and manage your account, pay your bill and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bd7dfa1269a4c51e",
+      "title": "Bring Your Own Phone (BYOP) or Device (BYOD) | Boost Mobile",
+      "url": "https://www.boostmobile.com/plans/byod",
+      "summary": "Bring your own phone (BYOP), tablet, watch, or other device to Boost Mobile and enjoy unlimited talk, text & data. No contract required.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6f2b0c3fa068a02e",
+      "title": "Diane Prout Obituary in Fuquay-Varina at Trice Funeral Home, Inc. | Obit",
+      "url": "https://www.articobits.com/obituaries/trice-fh/diane-prout-obituary",
+      "summary": "Trice Funeral Home, Inc. | Fuquay-Varina, NC in Fuquay-Varina respectfully announces the passing of Diane Prout on July 10, 2026.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80aad51e3ffe0c7d",
+      "title": "eLearning – @Pensacola State College",
+      "url": "https://elearning.pensacolastate.edu/",
+      "summary": "PSC will be offering eLearning courses in a variety of formats. Students new to online learning can get a head start by visiting our Canvas Student Orientation Course. The experience is free and is intended to help students become familiar with Canvas, PSC’s online course system.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1392,12 +1326,714 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8640b2e7573bd57c",
-      "title": "MSFT | Microsoft Corp. Stock Overview (U.S.: Nasdaq) | Barron's",
-      "url": "https://www.barrons.com/market-data/stocks/msft",
-      "summary": "Complete Microsoft Corp. stock information by Barron's. View real-time MSFT stock price and news, along with industry-best analysis.",
+      "id": "9c4eb93a85404ce3",
+      "title": "Florida Civic Literacy Exam (FCLE) - Testing",
+      "url": "https://testing.pensacolastate.edu/tests/florida-civic-literacy-exam-fcle/",
+      "summary": "Learn more about the FCLE civic literacy exam and its requirement by the Florida Legislature, and how you can take the test at PSC.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "349a6177997be352",
+      "title": "Geraldine Judd James Obituary in Fuquay-Varina at Trice Funeral Home ...",
+      "url": "https://www.articobits.com/obituaries/trice-fh/geraldine-judd-james-obituary",
+      "summary": "Trice Funeral Home, Inc. | Fuquay-Varina, NC in Fuquay-Varina respectfully announces the passing of Geraldine Judd James on June 18, 2026.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8f4c21d544ce8bb9",
+      "title": "Home - SMART",
+      "url": "https://smartmo.education/",
+      "summary": "The State of Missouri Alcohol Responsibility Training (SMART) is a free, online interactive training program operated by Missouri Partners in Prevention at the University of Missouri.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "259fec433d054f21",
+      "title": "Hugh M. Reid Obituary in Fuquay-Varina at Trice Funeral Home, Inc. | Obit",
+      "url": "https://www.articobits.com/obituaries/trice-fh/hugh-m-reid-obituary",
+      "summary": "Trice Funeral Home, Inc. | Fuquay-Varina, NC in Fuquay-Varina respectfully announces the passing of Hugh M. Reid on June 15, 2025.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "094ab61c3d601794",
+      "title": "Important Dates and Deadlines - Financial Aid",
+      "url": "https://financialaid.pensacolastate.edu/important-dates-and-deadlines/",
+      "summary": "View PSC's Financial Aid Services calendar to view upcoming deadlines and payment due dates for each semester.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "459d6679bee35a12",
+      "title": "La’Var Wayne Autry Obituary in Fuquay-Varina at Trice Funeral Home, Inc ...",
+      "url": "https://www.articobits.com/obituaries/trice-fh/lavar-wayne-autry-2-obituary",
+      "summary": "Trice Funeral Home, Inc. | Fuquay-Varina, NC in Fuquay-Varina respectfully announces the passing of La’Var Wayne Autry on November 16, 2025.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a88775be1dd8e6e8",
+      "title": "Mr. Darrell Lamar Murchison Obituary in Barnesville at Trice Funeral ...",
+      "url": "https://www.articobits.com/obituaries/trice-funeral-home-inc/mr-darrell-lamar-murchison-obituary",
+      "summary": "Trice Funeral Home, Inc. | Georgia in Barnesville respectfully announces the passing of Mr. Darrell Lamar Murchison on February 25, 2026.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "548d294fd1cd8f25",
+      "title": "Obituaries at Trice Funeral Home, Inc. | Fuquay-Varina, NC in Fuquay-Varina",
+      "url": "https://www.articobits.com/obituaries/trice-fh/",
+      "summary": "Paul Soong Kim, 82 of Apex, NC passed on August 10, 2026, at his home. The funeral will be at 11:00 am on Sunday, August 16, 2026, at Trice Funeral Home Chapel, 127 N. West Street in Fuquay-Varina, NC 27526.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "032af5d02de656eb",
+      "title": "Our Best Unlimited Cell Phone Plans - Boost Mobile",
+      "url": "https://www.boostmobile.com/plans",
+      "summary": "Save on the latest Boost Mobile Unlimited plan deals, prepaid plans, and multi-month plan bundles. No contracts or credit checks.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "188b258455a8440d",
+      "title": "Our Programs — Intercontinental Football Academy of New England",
+      "url": "https://www.ifanewengland.com/boys-academy",
+      "summary": "Learn more about our programming! IFA New England currently competes in the Northeast Academy League, MLS NEXT, and in tournament events located throughout the United States.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4597f040d486720d",
+      "title": "Pensacola State College Current Students",
+      "url": "https://pensacolastate.edu/current-students/",
+      "summary": "Access resources, services, and information tailored for current students at Pensacola State College.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "95f6fd507a68e2bb",
+      "title": "Pensacola State College | Degrees, Career Training & Online Programs",
+      "url": "https://pensacolastate.edu/",
+      "summary": "Pensacola State College offers bachelor's and associate degrees, career training, online classes, financial aid, and flexible pathways to reach your goals.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "947ad0d6b545c53a",
+      "title": "Phone Plans & Best New Phones | Boost Mobile",
+      "url": "https://www.boostmobile.com/",
+      "summary": "Find the best prepaid phone plans and new phones from Boost Mobile. Affordable prices, reliable coverage, and great deals, everything you need to stay connected.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f61beae31af98ffd",
+      "title": "Planes de telefonía y; Los mejores teléfonos nuevos | Boost Mobile",
+      "url": "https://es.boostmobile.com/",
+      "summary": "Encuentra los mejores planes de teléfonos prepagados y los nuevos teléfonos de Boost Mobile. Precios asequibles, cobertura confiable y excelentes ofertas: todo lo que necesitas para mantenerte conectado.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1d4f1c6f6682b33a",
+      "title": "Pohanka Volkswagen Dealership Capitol Heights MD New & Used Cars near ...",
+      "url": "https://www.pohankavw.com/",
+      "summary": "Pokanka VW of Capitol Heights in MD offers new & used Volkswagen cars, trucks & SUVs near Washington DC. Visit us for sales, financing, service & tires!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d9cb715086183c61",
+      "title": "portal.fazenda.rj.gov.br",
+      "url": "https://portal.fazenda.rj.gov.br/ipva/wp-content/uploads/sites/3/2021/03/Formula%CC%81rio-15-Modelo-de-laudo-me%CC%81dico-para-comprovar-deficie%CC%82ncia-03-01-2020.docx",
+      "summary": "portal.fazenda.rj.gov.br",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8c6505faa4935d8e",
+      "title": "Romie Burt, Jr. Obituary in Fuquay-Varina at Trice Funeral Home, Inc ...",
+      "url": "https://www.articobits.com/obituaries/trice-fh/romie-burt-jr-obituary",
+      "summary": "Trice Funeral Home, Inc. | Fuquay-Varina, NC in Fuquay-Varina respectfully announces the passing of Romie Burt, Jr. on June 18, 2026.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "37cd28d973874dfc",
+      "title": "Rosie L. Ballentine Obituary in Fuquay-Varina at Trice Funeral Home ...",
+      "url": "https://www.articobits.com/obituaries/trice-fh/rosie-l-ballentine-obituary",
+      "summary": "Trice Funeral Home, Inc. | Fuquay-Varina, NC in Fuquay-Varina respectfully announces the passing of Rosie L. Ballentine on June 18, 2026.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dd57b4758cde7e25",
+      "title": "Secretaria de Estado de Fazenda do Rio de Janeiro - Acesso bloqueado e ...",
+      "url": "https://portal.fazenda.rj.gov.br/ipva/",
+      "summary": "As operadoras de telecomunicação do Brasil possuem alguns de seus endereços IP usados por serviços residenciais que estão listados em catálogos internacionais devido ao uso indevido por indivíduos envolvidos em crimes cibernéticos através de conexões de banda larga. Como a Secretaria da Fazenda está firmemente comprometida com a proteção máxima dos dados sigilosos dos ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7245dedb8f5b07e8",
+      "title": "Segunda parcela do IPVA 2026 tem mais vencimentos ao longo desta semana ...",
+      "url": "https://portal.fazenda.rj.gov.br/noticias/segunda-parcela-do-ipva-2026-tem-mais-vencimentos-ao-longo-desta-semana/",
+      "summary": "Novos finais de placa têm vencimento da segunda parcela do Imposto sobre a Propriedade de Veículos Automotores (IPVA) de 2026 agendados a partir desta segunda-feira (23/02). O período da prosseguimento no calendário de pagamentos do tributo e contempla as placas terminadas em 1, 2, 3, 4 e 5.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e4d75fb92bc2b5e",
+      "title": "South Santa Rosa Center Testing Services",
+      "url": "https://testing.pensacolastate.edu/south-santa-rosa-center-testing-services/",
+      "summary": "Connect with the PSC Testing Center at the South Santa Rosa Center to schedule an exam or for more information about available exams.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7262fa99d8f8b6d3",
+      "title": "Staff | Foundation | Pensacola State College",
+      "url": "https://foundation.pensacolastate.edu/about-us/staff/",
+      "summary": "Mikenzie manages 300+ privately funded scholarships at the College and oversees volunteers for PSC Foundation events. Mina is an experienced Financial Administrator with a demonstrated history of work in the areas of health care, software, and religious institutions.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bf4407bbbcd3cede",
+      "title": "Stohlman Volkswagen - Volkswagen Dealer Tysons Corner VA New & Used ...",
+      "url": "https://www.stohlman-vw.com/",
+      "summary": "Stohlman Volkswagen in Tysons Corner, VA offers new and used Volkswagen cars, trucks, and SUVs to our customers near Vienna. Visit us for sales, financing, service, and parts!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9fd8c04fd2c876b4",
+      "title": "Support Center | Boost Mobile",
+      "url": "https://help.boostmobile.com/",
+      "summary": "Explore the Boost Mobile member Support Center. It's your one-stop-shop for resources on pre-activation, number transfers and everything in between.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7321ac346f48f6cb",
+      "title": "Support Teams - Boost Mobile",
+      "url": "https://help.boostmobile.com/docs/contact-our-support-teams",
+      "summary": "Looking to contact Boost Mobile customer support? We're available every day: 8 am-midnight ET.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4797c7e5443e252d",
+      "title": "Virginia L. Carrington Obituary in Fuquay-Varina at Trice Funeral Home ...",
+      "url": "https://www.articobits.com/obituaries/trice-fh/virginia-l-carrington-obituary",
+      "summary": "Trice Funeral Home, Inc. | Fuquay-Varina, NC in Fuquay-Varina respectfully announces the passing of Virginia L. Carrington on July 11, 2026.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9592194aab650222",
+      "title": "Volkswagen and Used Car Dealer in Alexandria | Alexandria Volkswagen",
+      "url": "https://www.alexandriavw.com/about-us/",
+      "summary": "Competitive prices, a friendly staff, and a wide selection of vehicles are just a few of the things that sets Alexandria Volkswagen apart. Visit us today near Arlington!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "75949b349f830953",
+      "title": "Volkswagen Dealership Bethesda MD | New & Used Cars | Ourisman ...",
+      "url": "https://www.volkswagenofbethesda.com/",
+      "summary": "Visit Ourisman Volkswagen of Bethesda for all of your Volkswagen needs in Bethesda, MD. Shop cars for sale, browse lease deals, or schedule service.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1418,64 +2054,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d9aec6a2f42d1c63",
-      "title": "myuhc - Member Login | UnitedHealthcare",
-      "url": "https://prod.member.myuhc.com/content/myuhc/en/public/member-ei-login.html",
-      "summary": "Sign in for a personalized view of your benefits. Easy access to plan information anytime anywhere. Get the most out of your coverage. Download our app. Manage your health quickly and securely with the app. Scan the QR code to download. Find a Provider. Find a doctor, medical specialist, mental health care provider, hospital or lab. Find a Dentist.",
+      "id": "82cdbe81af7e77f3",
+      "title": "Volkswagen Dealership in Alexandria | Alexandria Volkswagen",
+      "url": "https://www.alexandriavw.com/",
+      "summary": "When choosing from car dealerships in Alexandria, opt for the top Volkswagen dealership in VA —Alexandria Volkswagen. We’re your full-service VW dealership and more.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6dc9607f2851ef93",
-      "title": "myuhc - Member Login | UnitedHealthcare",
-      "url": "https://member.uhc.com/espresso/dashboard",
-      "summary": "Easy access to plan information anytime anywhere. Get the most out of your coverage. Download our app. Manage your health quickly and securely with the app. Scan the QR code to download. Find a Provider. Find a doctor, medical specialist, mental health care provider, hospital or lab. Find a Dentist. Find a local dentist or dental care in your area.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eee1191b2e085577",
-      "title": "myuhc - Member Login | UnitedHealthcare",
-      "url": "https://www.welcometomyuhc.com/demo/choice-plus-demo/",
-      "summary": "Register or login to your UnitedHealthcare health insurance member account. Have health insurance through your employer or have an individual plan? Login here!",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1496,481 +2080,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "14781158e3112002",
-      "title": "myuhc.com & other member websites | UnitedHealthcare",
-      "url": "https://www.uhc.com/member-resources/myuhc-member-website",
-      "summary": "Sign in or register for a member account to conveniently manage your health plan on your schedule. See your benefits, find network doctors, view and pay claims and more. The UnitedHealthcare app connects you to your health plan details anytime, anywhere. Get instant access to the answers and support you need, when you need it.",
+      "id": "c1816767ecf5dc20",
+      "title": "What is eLearning? – eLearning",
+      "url": "https://elearning.pensacolastate.edu/about/",
+      "summary": "What is eLearning? Pensacola State College has adopted the broad term, “eLearning” to refer to learning activities that utilize electronic technologies in general and the Internet in particular. The eLearning website is the focal point of Pensacola State College’s eLearning activities and serves as the gateway to Pensacola State College’s eLearning system called Canvas. PSC offers ...",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9bf30ef9e4e96ca9",
-      "title": "SHARING MY HELPFUL HOUSE RULE TEMPLATE - Airbnb Community",
-      "url": "https://community.withairbnb.com/t5/Ask-about-your-listing/SHARING-MY-HELPFUL-HOUSE-RULE-TEMPLATE/m-p/723915",
-      "summary": "Hi Airbnb Host Community, I have been an avid Airbnb user as a guest since 2014, and in the Summer of 2016, became a host. The last 2 years has been an incredible learning curve and my listing(s) today have drastically improved because I picked up new information and ways to host over time. I woul...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "37f9a1d55410bc36",
-      "title": "Spanish words starting with the letters E F J K and LL?",
-      "url": "https://www.answers.com/other-arts/Spanish_words_starting_with_the_letters_E_F_J_K_and_LL",
-      "summary": "estár (to be); frente (front); jalar (to pull); kilometro (kilometer); llamar (to call)",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba280986150aec8a",
-      "title": "Spanish words that start with RR? - Answers",
-      "url": "https://www.answers.com/other-arts/Spanish_words_that_start_with_RR",
-      "summary": "A word in spanish never starts with RR... there is a rule that says that if there is an RR sound at the beginning of a word, only one R should be written. For example...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9aa9512629486cb5",
-      "title": "Spanish Words with rr - Answers",
-      "url": "https://www.answers.com/other-arts/Spanish_Words_with_rr",
-      "summary": "There isn't any word in Spanish that starts with RR. However, the R at the start of a word is pronounced like a \"strong\" R or RR. For instance, the R in \"ropa\" (clothes) is pronounced like the R ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eafcb36df86e8575",
-      "title": "UHC Community Plan - Member Login - UnitedHealthcare",
-      "url": "https://prod.member.myuhc.com/content/myuhc/en/public/member-cs-login.html",
-      "summary": "Sign in and you'll get tools that help you use your plan. You can view your Member ID card and get help with using your benefits. It just takes a few minutes to register. Then you can log in anytime. New to this website? Register Now chevron_right. Find a doctor, hospital, or pharmacy. Find a Provider. Find forms for members. View Forms.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4c5d0b249293ee72",
-      "title": "Unir PDF - Combina tus archivos PDF online y gratis - Smallpdf",
-      "url": "https://smallpdf.com/es/unir-pdf",
-      "summary": "Puedes combinar tus PDF y JPG en un solo archivo subiéndolos a la herramienta Unir PDF. Solo sube todos tus archivos, reordena las páginas según sea necesario y luego únelos en un solo archivo.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6c47129ce4ce216b",
-      "title": "Unir PDF - en línea o local - rápido y gratis",
-      "url": "https://www.ilovepdf.es/unir_pdf/",
-      "summary": "Une PDF online o directamente en tu navegador (local, sin subirlos). Ordena las páginas y descarga un único PDF. Rápido, seguro y conforme al RGPD.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4dec5d5a691b5949",
-      "title": "Unir PDF online | Combina tus archivos PDF en uno - iLovePDF",
-      "url": "https://www.ilovepdf.com/es/unir_pdf",
-      "summary": "Selecciona varios archivos PDF y únelos al instante. Unir PDF fácilmente y gratis.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "77661a72217126bc",
-      "title": "UnitedHealthcare",
-      "url": "https://member.uhc.com/login",
-      "summary": "Sign in or register to manage your UnitedHealthcare member account, view benefits, claims, and health plan details anytime, anywhere.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1f6422ae1d4f8246",
-      "title": "UnitedHealthcare",
-      "url": "https://member.uhc.com/myuhc/myuhc/content/myuhc/en/secure",
-      "summary": "Sign in to UnitedHealthcare for a personalized view of your benefits, health plan details, network providers, and more.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9a4839d022c95e43",
-      "title": "UnitedHealthcare",
-      "url": "https://member.uhc.com/sso?source=healthsafeid&callingAppId=myuhc",
-      "summary": "Sign in or register for easy access to UnitedHealthcare plan information anytime, anywhere.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b6b20045ec1e894f",
-      "title": "What are some Spanish words that begin with the letter rr?",
-      "url": "https://www.answers.com/education/What_are_some_Spanish_words_that_begin_with_the_letter_rr",
-      "summary": "No words begin with Rr in Spanish.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a3dca674e871fbd7",
-      "title": "What are some Spanish words that have RR in them and What is ... - Answers",
-      "url": "https://www.answers.com/education/What_are_some_Spanish_words_that_have_RR_in_them_and_What_is_the_meaning",
-      "summary": "What are some Spanish words that have RR in them and What is the meaning? - Answers Subjects > Jobs & Education > Education",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4ff32b1dcdc0b649",
-      "title": "What are some Spanish words that have RR in them? - Answers",
-      "url": "https://www.answers.com/other-arts/What_are_some_Spanish_words_that_have_RR_in_them",
-      "summary": "Some Spanish words with an RR in them are listed here:Carro - cartPerro - dogGuerrero - the surname GuerreroJarro - pitcherFierro - ironFerrocarril - railCarril - laneBarril - barrelBarro ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a70ccfabad46880f",
-      "title": "What are spanish words starting with PLA? - Answers",
-      "url": "https://www.answers.com/linguistics/What_are_spanish_words_starting_with_PLA",
-      "summary": "go to spanish.dictionary.com, at the bottom it says browse dictionary-click on p-and browse, it's in alphabetical order",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "15a67ea0d511f3af",
-      "title": "What are spanish words with rr in it? - Answers",
-      "url": "https://www.answers.com/education/What_are_spanish_words_with_rr_in_it",
-      "summary": "Rabioso (rabid)Rancio (rancid)Rapido (rapid)Razonable (reasonable)Rebelde (rebellious)Receloso (disrespectful)Reciente (recent)Redundante (redundant)Reverente ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "736531e59984f978",
-      "title": "What English to spanish cognates have a RR? - Answers",
-      "url": "https://www.answers.com/other-arts/What_English_to_spanish_cognates_have_a_RR",
-      "summary": "there is no Spanish words that start with RR but some cognates with RR would be Terrible-Terrible/Awful Guitarra-Guitar ....thats all i got, hope it helped. errar - to fail, miss the target ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ca4e90d764f3c47d",
-      "title": "Words that has double '' rr''? - Answers",
-      "url": "https://www.answers.com/toys-and-games/Words_that_has_double_%27%27_rr%27%27",
-      "summary": "arrangearrestarrowberryblurrycarrycurrycherrycarrelcurrentdisarrayerrorferrygarretherringhorriblehurryirregularmerrynarrateoverrunoverreachporridgequarrysorrystarrysurroundsurrealterritorytorrentt ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
