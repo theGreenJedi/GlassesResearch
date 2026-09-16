@@ -1,37 +1,44 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-16T06:45:18.962797+00:00",
-  "candidate_count": 66,
-  "classifier_irrelevant_count": 46,
+  "discovered_utc": "2026-09-16T11:47:07.183860+00:00",
+  "candidate_count": 81,
+  "classifier_irrelevant_count": 60,
   "precision_rejected_count": 0,
   "channel_counts": {
     "adjacent": 20,
-    "broad_web": 32,
-    "developer": 14
+    "broad_web": 45,
+    "developer": 17,
+    "research": 1
   },
   "relationship_counts": {
     "direct": 0,
-    "enabling": 0,
-    "adjacent": 20,
+    "enabling": 2,
+    "adjacent": 19,
     "speculative": 0,
-    "irrelevant": 46
+    "irrelevant": 60
   },
   "type_counts": {
     "model": 2,
-    "review": 1,
-    "news": 37,
-    "research": 5,
+    "review": 2,
+    "video": 12,
+    "news": 31,
+    "research": 8,
     "tool": 23,
-    "sdk": 14,
-    "community": 1
+    "sdk": 19,
+    "optics": 3,
+    "retail": 11,
+    "community": 10
   },
   "routing_counts": {
-    "adjacent_radar": 20,
+    "adjacent_radar": 19,
+    "community_evidence_review": 2,
     "deep_research": 1,
-    "model_catalog_review": 1,
-    "reject_noise": 46,
-    "report_card_evidence": 1,
-    "research_news_review": 20
+    "development_hacking": 1,
+    "reject_noise": 60,
+    "report_card_evidence": 3,
+    "research_news_review": 21,
+    "research_optics": 3,
+    "retail_rebrand_review": 7
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -45,17 +52,46 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "13ea60d5ce3d48fb",
-      "title": "Programs of Study | Central Georgia Technical College",
-      "url": "https://www.centralgatech.edu/programs-of-study",
-      "summary": "Programs of Study Central Georgia Technical College offers technical certificates of credit, diploma, and associate degree programs at multiple locations and through distance education instruction. A CGTC education means hands-on, work-based learning on industry-standard equipment and technology that will prepare you for the career of your choice.",
+      "id": "ff3ee0029876bc7e",
+      "title": "Drug Directory: Browse Medications by Letter - GoodRx",
+      "url": "https://www.goodrx.com/drugs",
+      "summary": "Browse all medications on GoodRx from A-Z. All drugs are listed by brand or generic name. Find a coupon and save up to 80% on your prescription at more than 60,000 US pharmacies.",
+      "discovery_channel": "adjacent+broad_web+research",
+      "query": "prescription smart glasses; prescription smart glasses lens research; prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "enabling",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: prescription",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d6f6ab0bf872c13",
+      "title": "Quiz Widget - Figma",
+      "url": "https://www.figma.com/community/widget/1182906312337777792/quiz-widget",
+      "summary": "Whether it be adding to study guides or taking/creating quizzes with friends, the Quiz Widget is the all-in-one ultimate study review that mimics real test questions!",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 3,
       "keyword_hits": [
-        "hands-on",
+        "review",
         "study"
       ],
       "status": "candidate",
@@ -63,13 +99,15 @@
       "relationship": "adjacent",
       "content_types": [
         "review",
-        "research"
+        "research",
+        "community"
       ],
       "primary_type": "review",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
         "deep_research",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -78,796 +116,550 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1de2ba3e284675ee",
-      "title": "100 Funny Quotes That Will Make You Laugh (Instantly) - AZ Quotes",
-      "url": "https://www.azquotes.com/quotes/topics/funny.html",
-      "summary": "Enjoy our funny quotes collection by famous authors, comedians and presidents. Best funny quotes selected by thousands of our users!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0a74e71bd160d17",
-      "title": "A-Z Quotes | Quotes for All Occasions",
-      "url": "https://www.azquotes.com/",
-      "summary": "Discover inspirational quotes, collect and share famous and rare quotes. Create beautiful and unique picture quotes in one click. Sayings from famous authors, movies and people.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5b29b8bda82f8b68",
-      "title": "Blackboard | Central Georgia Technical College",
-      "url": "https://www.centralgatech.edu/academics/online-classes/blackboard",
-      "summary": "CGTC students will now access Blackboard based on the area of the college where they are taking courses. Please follow the appropriate link below to access Blackboard. Not sure which link to select? Contact the Customer Service Call Center at (478) 988-6800 (Press 1) for assistance.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "04ab06aa3de08626",
-      "title": "Central Georgia Technical College",
-      "url": "https://www.centralgatech.edu/",
-      "summary": "Central Georgia Technical College offers over 120 programs and is committed to providing career education and workforce development.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e7e1d60e2ef5755f",
-      "title": "Get Started on Your Future at Central Georgia Technical College",
-      "url": "https://apply.centralgatech.edu/",
-      "summary": "It is the vision of Central Georgia Technical College to lead a system of technical colleges in providing technical education, adult education, and customized business and industry training to meet the workforce needs of the future, focusing on preparation for emerging and transforming careers.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "831e63d8f1887cd1",
-      "title": "Home | Central Georgia Technical College",
-      "url": "https://ce.centralgatech.edu/",
-      "summary": "Continuing Education Central Georgia Technical College offers a wide range of continuing education programs for individuals and company employees seeking to build and expand their skillsets. Classes are offered in an array of subject areas and instruction is available in person and online.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2d50e83b5462f71b",
-      "title": "How do I check the status of my Admissions application ...",
-      "url": "https://libanswers.centralgatech.edu/enroll/faq/338862",
-      "summary": "You can check the status of your admissions acceptance in the Enrollment Hub at centralgatech.my.site.com/apply/. If you have questions, please contact the Office of ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4bad9078ce174907",
-      "title": "Online Courses from Central Georgia Technical College",
-      "url": "https://careertraining.centralgatech.edu/",
-      "summary": "Career Training Programs from Central Georgia Technical College Central Georgia Technical College, in partnership with ed2go, offers online open enrollment programs designed to provide the skills necessary to acquire professional level positions for many in-demand occupations. Our programs are designed by a team of professionals from each respective field, providing you with effective web ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "07dad095574dc5d7",
-      "title": "Online Sterile Processing Technician (Voucher Included) from Central ...",
-      "url": "https://careertraining.centralgatech.edu/training-programs/sterile-processing-technician-voucher-included/",
-      "summary": "Sterile Processing Technicians (SPT), also known as Central Service Technicians or Certified Sterilization Technicians, play a critical role in preventing infection by sterilizing, cleaning, processing, assembling, storing, and distributing medical supplies— and now is an excellent time to train for your sterile processing technician certification. With the support of an instructor, you will ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "18ab12b028b4c59e",
-      "title": "Programs | Central Georgia Technical College",
-      "url": "https://ce.centralgatech.edu/public/listProgramAreas.do?method=load",
-      "summary": "Courses and certificates are offered in the following programs. Click on a program title to view more information or click the expand icon to view subjects within each program.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "19c98e3e8e763a49",
-      "title": "Quote of the day \"】 は 日本語 で何と言いますか？ | HiNative",
-      "url": "https://ja.hinative.com/questions/19515539",
-      "summary": "「Quote of the day」を日本語でどう言うかについての質問と回答が掲載されています。",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d75e67592dd805ba",
-      "title": "Quote of the Day Protocol 这个协议有什么意义？ - 知乎",
-      "url": "https://www.zhihu.com/question/23918028",
-      "summary": "Quote of the Day Protocol 这个协议有什么意义？ 无意中看到这个RFC文档，RFC 865 - Quote of the Day Protocol 。 该文档定义了一个协议叫quote of the … 显示全部 关注者 14",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0045f78dc6a00ae8",
-      "title": "Quote of the Day | A-Z Quotes",
-      "url": "https://www.azquotes.com/quote_of_the_day.html",
-      "summary": "AzQuotes has millions of quotes. Every day we present the best ones! Improve yourself, find your inspiration, share with friends.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "66e14eb3281ed7f0",
-      "title": "Registration - bannerss.centralgatech.edu",
-      "url": "https://bannerss.centralgatech.edu/StudentRegistrationSsb/ssb/registration",
-      "summary": "View registration status, update student term data, and complete pre-registration requirements.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8399701c9f5399f5",
-      "title": "TOP 25 QUOTES BY ALBERT CAMUS (of 985) | A-Z Quotes",
-      "url": "https://www.azquotes.com/author/2398-Albert_Camus",
-      "summary": "In the midst of winter, I found there was, within me, an invincible summer. And that makes me happy. For it says that no matter how hard the world pushes against me, within me, there’s something stronger – something better, pushing right back. Truly yours, Albert Camus Albert Camus Summer, Wisdom, Hate 457 Copy quote",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "07af4f99f9a2c9d0",
-      "title": "TOP 25 QUOTES BY MARK TWAIN (of 2407) | A-Z Quotes",
-      "url": "https://www.azquotes.com/author/14883-Mark_Twain",
-      "summary": "Give every day the chance to become the most beautiful day of your life. Mark Twain Beautiful, Giving, Beautiful Day 778 Copy quote",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2e512cabebf31cf5",
-      "title": "TOP 25 QUOTES BY ROBIN WILLIAMS (of 360) | A-Z Quotes",
-      "url": "https://www.azquotes.com/author/15718-Robin_Williams",
-      "summary": "Sometimes you can have a whole lifetime in a day and never notice that this is a beautiful as it gets. Robin Williams Beautiful, Meaningful, Sometimes 55 Copy quote",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9c6e78296f0aafd1",
-      "title": "TOP 25 SAFETY QUOTES (of 1000) | A-Z Quotes",
-      "url": "https://www.azquotes.com/quotes/topics/safety.html",
-      "summary": "Enjoy our safety quotes collection by famous authors, poets and actors. Best safety quotes selected by thousands of our users!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c11cc00c91f4b91e",
-      "title": "【quote of the day】 は 日本語 で何と言いますか？ | HiNative",
-      "url": "https://ja.hinative.com/questions/6562590",
-      "summary": "【ネイティブが回答】「quote of the day」 は \"日本語\" でなんて言うの？質問に2件の回答が集まっています！Hinativeでは\"日本語\"や外国語の勉強で気になったことを、ネイティブスピーカーに簡単に質問できます。",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c21f0af9087842f1",
-      "title": "GitHub - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/GitHub",
-      "summary": "GitHub, headquartered in San Francisco, is operated by Github, Inc., a subsidiary of Microsoft since 2018. [10] It is commonly used to host open source software development projects. [11]",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 5,
-      "keyword_hits": [
-        "github",
-        "open source"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3d41698b6a723dce",
-      "title": "GitHub",
-      "url": "https://github.com/github",
-      "summary": "How people build software. GitHub has 559 repositories available. Follow their code on GitHub.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "github"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2d327c1aa42eae4",
-      "title": "GitHub - stephansturges/WALDO: Whereabouts Ascertainment for Low-lying ...",
-      "url": "https://github.com/stephansturges/WALDO",
-      "summary": "WALDO is a detection AI model, based on a large YOLO-v8 backbone and my own synthetic data pipeline. The model is capable of detecting these classes of items in overhead imagery ranging in altitude from about 30 feet to satellite imagery!",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "github"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "829e13b50e9c3b4c",
-      "title": "GitHub Education",
-      "url": "https://education.github.com/",
-      "summary": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "github"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "66364ee81a2e072d",
-      "title": "Home - The GitHub Blog",
-      "url": "https://github.blog/",
-      "summary": "Updates, ideas, and inspiration from GitHub to help developers build and design software.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "github"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c36a8501d6c293ff",
-      "title": "[business-logic] the just-landed IM/desktop vision fallback ... - GitHub",
-      "url": "https://github.com/topcheer/ggcode/issues/1670",
-      "summary": "[business-logic] the just-landed IM/desktop vision fallback (6d7555e6) is dead-on-arrival: daemon.go:906/912 and desktop chat.go:4466/4471/4495 all call ActivateCurrentSelection(cfg, \"\", \"\", model), but SetActiveSelection's first step is c.Vendors[\"\"] lookup which hard-errors 'vendor \"\" is not configured' with no empty-means-keep-current branch (the TUI original passes config.Vendor/Endpoint ...",
+      "id": "cd04f7632e3cebe6",
+      "title": "Welcome to San Jose Camera & Video",
+      "url": "https://sanjosecamera.com/",
+      "summary": "San Jose Camera & Video is the largest photo specialty shop in the South Bay. We offer a large selection of cameras, lenses and photography accessories.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
+      "materiality_score": 2,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "enabling",
+      "content_types": [
+        "video",
+        "optics"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "research_optics"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lenses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1fd90960a7c1e0d8",
+      "title": "Free English Quiz Widget — Embed Interactive Grammar Quizzes",
+      "url": "https://www.engquiz.pro/quiz-widget",
+      "summary": "Free English quiz widget for your website Embed an interactive grammar or vocabulary quiz on your blog, school site, or classroom page in seconds — pick a quiz, copy the code, paste it in.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c76db705fe3be4e",
+      "title": "Free Quiz Maker Widget - commoninja.com",
+      "url": "https://www.commoninja.com/widgets/quiz",
+      "summary": "Build a multi-question quiz with scored or personality-style results, or use the same widget in poll mode for single-question polls, image-versus-image votes, or photo-voting contests.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ab88fbdc11360a84",
+      "title": "Free Quiz Widget Generator & Playground - PlayQuizNow",
+      "url": "https://playquiznow.com/playground",
+      "summary": "Create embeddable quiz widgets for your website in seconds. Customize themes, preview in real-time, and copy the embed code. Free quiz widget generator with dark/light modes, responsive design for mobile, tablet & desktop.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "22667dccacd5b523",
+      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes (Embeddable ...",
+      "url": "https://embeddable.co/free-quiz-widgets",
+      "summary": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at Embeddable.co.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8fb834eac3f4a6cc",
+      "title": "How to eliminate all traces of Logitech drivers? | Seven Forums",
+      "url": "https://www.sevenforums.com/threads/how-to-eliminate-all-traces-of-logitech-drivers.362011/",
+      "summary": "Uninstalled all Logitech drivers (including the Unifying software) of all my Logitech products, because I have a serious mouse related conflicts in the Wikimedia/Wikipedia software as it interferes with my editing work in browsers. (I test browsers so I use them all, but mostly Firefox because...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "630e7100b3824fca",
+      "title": "Logitech Computer Accessories - Best Buy",
+      "url": "https://www.bestbuy.com/site/logitech/logitech-computer-accessories/pcmcat1524863416213.c?id=pcmcat1524863416213",
+      "summary": "Shop at Best Buy for Logitech computer accessories to make the most of your workspace.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "759a948b96fb10a4",
+      "title": "Logitech Computer Headsets - Best Buy",
+      "url": "https://www.bestbuy.com/site/logitech-computer-accessories/logitech-computer-headsets/pcmcat10900050017.c?id=pcmcat10900050017",
+      "summary": "Shop at Best Buy for Logitech computer headsets for rich sound and microphone capability.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2d37a0e6c7736ae4",
+      "title": "Logitech Computer Keyboards - Best Buy",
+      "url": "https://www.bestbuy.com/site/logitech-computer-accessories/logitech-computer-keyboards/pcmcat10900050011.c?id=pcmcat10900050011",
+      "summary": "Shop at Best Buy for Logitech computer keyboards for a custom workspace.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dca1cf4182cc175d",
+      "title": "logitech g510 adding applets | Seven Forums",
+      "url": "https://www.sevenforums.com/threads/logitech-g510-adding-applets.223194/",
+      "summary": "hey, so plain and simple. how and/or where can i find applets, namely the CoreTemp applet that will show temperatures or system usage or something to that effect on my lcd screen on my g510. if i find an applet, how do i add it to the list so i can actually use it? (see the picture)",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "710a80e8bf551477",
+      "title": "Logitech Gaming Headsets - Best Buy",
+      "url": "https://www.bestbuy.com/site/logitech-gaming-accessories/logitech-gaming-headsets/pcmcat1570549919163.c?id=pcmcat1570549919163",
+      "summary": "Shop at Best Buy for Logitech gaming headsets. Choose from wired and wireless headsets.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6620917354112f1",
+      "title": "Logitech Mice - Best Buy",
+      "url": "https://www.bestbuy.com/site/logitech-computer-accessories/logitech-mice/pcmcat10900050010.c?id=pcmcat10900050010",
+      "summary": "Shop at Best Buy for Logitech mice, including wireless options, optical mice and gaming mice.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "optics",
+        "retail"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7e6ea053f0df3318",
+      "title": "Logitech Webcams - Best Buy",
+      "url": "https://www.bestbuy.com/site/logitech-computer-accessories/logitech-webcams/pcmcat10900050018.c?id=pcmcat10900050018",
+      "summary": "Logitech offers web cams at Best Buy that make it easy to communicate via video from the convenience of your computer.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "06a2317896463ae3",
+      "title": "Logitech: Computer Accessories - Best Buy",
+      "url": "https://www.bestbuy.com/site/brands/logitech/pcmcat10900050009.c?id=pcmcat10900050009",
+      "summary": "Shop Best Buy for Logitech products including Harmony remotes, wireless mice and keyboards, and the Logi Circle camera.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4fd54754c28e8408",
+      "title": "Quiz Widget — Add It to Your Website Free | Webynize",
+      "url": "https://webynize.com/quiz-widget/",
+      "summary": "A Quiz widget makes your website interactive with engaging Quizzes that capture attention and turn visitors into active participants. It's built to feel native to your site, beautiful out of the box, effortless to control, and ready the moment you embed it.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4baf325b484196e4",
+      "title": "Quiz Widgets - Build Custom Assessments & Interactive Content",
+      "url": "https://embeddable.co/use-cases/interactive-quizzes",
+      "summary": "Create engaging quiz widgets with AI. Build personality quizzes, assessments, and interactive content that educates and captures leads.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d9b3f0e5d9663263",
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "summary": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify strengths and areas for improvement, enabling learners to refine their skills.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
       "content_types": [
         "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9da4f0151c6378d0",
-      "title": "Decoy font reader skill.md · GitHub",
-      "url": "https://gist.github.com/voidnullvalue/620607d3c1773f8e7d83fbc2232240bd",
-      "summary": "Exclude chat chrome, margins, captions, logos, and unrelated text. Low-pass filtering a whole screenshot often makes the target too small to decode. Record the crop as `left,top,right,bottom` pixel coordinates. Keep a small margin around the glyphs. If the image contains multiple lines or widely separated regions, decode each region ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "b0cf68b7416563ba",
+      "title": "Widgets Quizzes - Quotev",
+      "url": "https://www.quotev.com/quizzes/Widgets",
+      "summary": "since i really like strawberries and strawberry themed stuff have been popping up in my pintrest, i decided to make this quiz, not my pictures!",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3c351fd45278749f",
-      "title": "GitHub - azg1966/stripchat-proxy",
-      "url": "https://github.com/azg1966/stripchat-proxy",
-      "summary": "Contribute to azg1966/stripchat-proxy development by creating an account on GitHub.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "e19f375fd12dbef4",
+      "title": "Widgit Online",
+      "url": "https://widgitonline.com/en/home",
+      "summary": "What can you make with Widgit Online? You can use Widgit Online to create both print and interactive materials from a range of easy-to-use templates or from scratch using our intuitive document writer. Here are some popular visuals created by the Widgit community using Widgit Online:",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool"
+        "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "community",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5a6a74f1b834dda8",
-      "title": "GitHub - Raphire/Win11Debloat: A simple, lightweight PowerShell script ...",
-      "url": "https://github.com/Raphire/Win11Debloat",
-      "summary": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11. - Raphire/Win11Debloat",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "88984a55da40cb03",
+      "title": "10/11/23 : r/BingQuoteOfTheDay - Reddit",
+      "url": "https://www.reddit.com/r/BingQuoteOfTheDay/comments/178tf3u/101123/",
+      "summary": "Posted by u/Krazyblue123 - No votes and no comments",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2d18a6070af74335",
-      "title": "GitHub - Tyrrrz/DiscordChatExporter: Saves Discord chat logs to a file",
-      "url": "https://github.com/Tyrrrz/DiscordChatExporter",
-      "summary": "Saves Discord chat logs to a file. Contribute to Tyrrrz/DiscordChatExporter development by creating an account on GitHub.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
         "tool",
+        "sdk",
         "community"
       ],
       "primary_type": "tool",
@@ -880,38 +672,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f651ed259b181571",
-      "title": "GitHub Copilot Chat - GitHub Docs",
-      "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot",
-      "summary": "Use Copilot Chat in your editor to give you code suggestions, explain code, generate unit tests, and suggest code fixes.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bee1e9f109227147",
-      "title": "Login – Waldo Photos",
-      "url": "https://waldo.photos/app",
-      "summary": "By tapping Send SMS, you also agree to receive automated text messages from Waldo Photos at this number, including your sign-in code and notifications when we find your photos.",
+      "id": "46ccd54c0e80a35c",
+      "title": "2025 College Football Standings and Rankings | College Football at ...",
+      "url": "https://www.sports-reference.com/cfb/years/2025-standings.html",
+      "summary": "Check out the 2025 College Football Standings and Rankings, and more about College Football at Sports-Reference.com",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -935,23 +699,163 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "eef1ebdcb59e5c09",
-      "title": "Telethon telegram users scraper · GitHub",
-      "url": "https://gist.github.com/zztopper/6f35627acca669e0982c09dd5b23192d",
-      "summary": "Telethon telegram users scraper. GitHub Gist: instantly share code, notes, and snippets.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "8817de742c2f0cf3",
+      "title": "2025 FBS College Football Standings | The Football Database",
+      "url": "https://www.footballdb.com/college-football/standings.html?yr=2025",
+      "summary": "View the 2025 FBS college football standings for each conference.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "592a6910669597ff",
+      "title": "2025 Michigan Wolverines football team - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2025_Michigan_Wolverines_football_team",
+      "summary": "The 2025 Michigan Wolverines football team was an American football team that represented the University of Michigan as a member of the Big Ten Conference during the 2025 NCAA Division I FBS football season.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8249ed8fbed47ea8",
+      "title": "2025 Michigan Wolverines Schedule and Results | College Football at ...",
+      "url": "https://www.sports-reference.com/cfb/schools/michigan/2025-schedule.html",
+      "summary": "Rank: 21st in the Final AP poll Conference: Big Ten Conference Record: 7-2 Coach: Sherrone Moore (9-3), Biff Poggi (0-1) Points For: 358 Points/G: 27.5 (69th of 136) Points Against: 265 Opp Pts/G: 20.4 (29th of 136) SRS: 11.03 (22nd of 136) SOS: 5.88 (16th of 136) Bowl Game: Lost Citrus Bowl 41-27 versus Texas More Team Info Citrus Bowl 2025 Michigan Menu",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bbce1d3b35f6bde5",
+      "title": "2025 Michigan Wolverines Stats - Sports-Reference.com",
+      "url": "https://www.sports-reference.com/cfb/schools/michigan/2025.html",
+      "summary": "Bold season totals indicate player led conference. Black Ink appears for stats with a leaderboard.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "499d0942ce688499",
+      "title": "2025 Michigan | College Football Scores",
+      "url": "https://www.cfb-scores.com/Team/Michigan/2025",
+      "summary": "Live college football scores, schedules, conference standings, and rankings from around the FBS and FCS.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c006c1014575dd42",
+      "title": "[ALL] - Microsoft Rewards Daily Timeline - When Resets Happen, What Works, What Stops Working : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/ghul6f/all_microsoft_rewards_daily_timeline_when_resets/",
+      "summary": "When you say double dip, does this mean that you will get 100 points per day for one achievement if you do it after 7? Or that doing the achievement after 7 allows you to get the 50 points for that day and it also counts for the next day?",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -963,12 +867,124 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c73290d56243719c",
-      "title": "The Stylistics phenomenon of Ahmad Syauqi's Poetry \"The Noah ...",
-      "url": "https://www.researchgate.net/publication/348781213_The_Stylistics_phenomenon_of_Ahmad_Syauqi's_Poetry_The_Noah's_Ark_Semantic_analysis",
-      "summary": "This story is characterized by outstanding beautiful poetic style, which varying from the sounds to significance of the story. For this reason, this study aims to analyze semantically the ...",
+      "id": "fb35636ece03a1d9",
+      "title": "[GUIDE] How to get back Search Highlights images in your search box : r/Windows11 - Reddit",
+      "url": "https://www.reddit.com/r/Windows11/comments/15d0ws6/guide_how_to_get_back_search_highlights_images_in/",
+      "summary": "I saw this thread about someone wanting to get back the daily Search Highlight images (instead of the Bing Chat icon) and a lot of other people wanted this back too so I decided to make a guide on how to bring it back.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b97bdc50b5ccc76c",
+      "title": "How to configure vs code working directory in the launch.json",
+      "url": "https://stackoverflow.com/questions/47540627/how-to-configure-vs-code-working-directory-in-the-launch-json",
+      "summary": "There is a launch.json file...there you should be able to set the cwd property... (cwd stands for current working directory)",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "launch"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "301d4a58b53b9087",
+      "title": "In the word of John Cena,“Xiàn zài wǒ yǒu bing chilling Wǒ hěn xǐ huān bing chilling Dàn shì “sù dù yǔ jī qíng jiǔ” bǐ bing ...",
+      "url": "https://www.reddit.com/r/ChuckleSandwich/comments/16oi1r8/in_the_word_of_john_cenaxi%C3%A0n_z%C3%A0i_w%C7%92_y%C7%92u_bing/",
+      "summary": "In the word of John Cena,“Xiàn zài wǒ yǒu bing chilling Wǒ hěn xǐ huān bing chilling Dàn shì “sù dù yǔ jī qíng jiǔ” bǐ bing chilling” wins for X. Now is the day for Y!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c134a24dc3283833",
+      "title": "Interesting quote of the day from Bing : r/bing - Reddit",
+      "url": "https://www.reddit.com/r/bing/comments/13mnmmj/interesting_quote_of_the_day_from_bing/",
+      "summary": "Please only submit content that is helpful for others to better use and understand Bing services. Not actively monitored by Microsoft, please use the \"Share Feedback\" function in Bing.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "abe6b1c7f2de6881",
+      "title": "Map of Russia - Russia-Karta.ru",
+      "url": "http://russia-karta.com/en/russia.htm",
+      "summary": "A detailed map of Russia will allow you to study in detail any locality of the Russian Federation. Thanks to the interactive map of Russia, the scale of the terrain changes (approximation, distance).",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -991,16 +1007,46 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ea7de0b032e18481",
-      "title": "Waldo - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Waldo",
-      "summary": "This disambiguation page lists articles associated with the title Waldo. If an internal link incorrectly led you here, you may wish to change the link to point directly to the intended article.",
+      "id": "dc3c11b7b66b9373",
+      "title": "Michigan Wolverines 2025 Game Log | College Football at Sports ...",
+      "url": "https://www.sports-reference.com/cfb/schools/michigan/2025/gamelog/",
+      "summary": "Rank: 21st in the Final AP poll Conference: Big Ten Conference Record: 7-2 Coach: Sherrone Moore (9-3), Biff Poggi (0-1) Points For: 358 Points/G: 27.5 (69th of 136) Points Against: 265 Opp Pts/G: 20.4 (29th of 136) SRS: 11.03 (22nd of 136) SOS: 5.88 (16th of 136) Bowl Game: Lost Citrus Bowl 41-27 versus Texas More Team Info Citrus Bowl 2025 Michigan Menu",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b8eb7bd2d5a28a8f",
+      "title": "QNX® Software Development Platform 6.6 QNX® SDK for Apps and Media 1.0 ...",
+      "url": "https://www.qnx.com/developers/docs/660/com.qnx.doc.bsp_update.guide/topic/com.qnx.doc.neutrino.building/topic/com.qnx.doc.bsp_update.guide/topic/bsp_cleanup_warnings.html",
+      "summary": "QNX® Software Development Platform 6.6 QNX® SDK for Apps and Media 1.0 QNX® CAR Platform for Infotainment 2.1 QNX® Software Development Platform 6.6 QNX® SDK for Apps and Media 1.0 QNX® CAR Platform for Infotainment 2.1 Content Search Results Index",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "sdk"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
@@ -1018,12 +1064,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ce1ab86ff99d8dc1",
-      "title": "Waldo International School – Jersey City Private School and Daycare",
-      "url": "https://waldoschool.com/",
-      "summary": "We are a Jersey City private school, specializing in creating a nurturing and stimulating environment where your child’s potential can flourish.",
+      "id": "5a9e42943b091171",
+      "title": "Quote of the day? : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/112t4ri/quote_of_the_day/",
+      "summary": "This is Bing's Quote of the Day on Feb 15: A house divided against itself cannot stand. Abraham Lincoln 16th president of the United States Pretty sure someone else said it first, Bing.",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1033,7 +1079,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1045,412 +1092,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "75f8a0ca24f79e0d",
-      "title": "Waldo Photos | Photo Sharing for Events and Families",
-      "url": "https://waldophotos.com/",
-      "summary": "Welcome to Waldo’s home page. Discover advanced tools for sharing, storing, and selling photos with intuitive, secure, and user-friendly features for everyone.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "ce70cc206540ea90",
+      "title": "Releases · ra3xdh/qucs_s - GitHub",
+      "url": "https://github.com/ra3xdh/qucs_s/releases",
+      "summary": "What's Changed Bump pillow from 12.1.1 to 12.2.0 in /qucs/python by @dependabot [bot] in #1630 fix (port): handle empty case (terminated port) by @tskaar in #1628 Update qucs-s-spar-viewer submodule to v2026.04.14 by @andresmmera in #1631 Update IT translation by @ra3xdh in #1633 fix (Xyce): prevent segfault when netlisting without simulations by @tskaar in #1639 fix (saveAs): append '.sym ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
+      "keyword_hits": [
+        "github"
       ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "924455dca06a8d46",
-      "title": "Waldo | Waldo Wiki | Fandom",
-      "url": "https://waldo.fandom.com/wiki/Waldo",
-      "summary": "Waldo has a happy-go-lucky attitude and is often seen with a smile on his face. He is generally depicted as a friendly and adventurous traveler who enjoys exploring diverse and often chaotic environments.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "129ca0ab41485f5f",
-      "title": "Waldo: Agentic Brand Intelligence",
-      "url": "https://www.waldo.fyi/",
-      "summary": "Waldo is the only agentic brand intelligence platform purpose-built for marketing. Our data across (all) live social, audience, trends, paid ads, and more powers our infrastructure of AI agents that turn raw data into strategic output.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b9fe1d0246241c7c",
-      "title": "Where's Waldo? Play Free Online | Find Waldo, Odlaw, Wizard & Wenda in ...",
-      "url": "https://whereiswaldo.com/",
-      "summary": "Play Where's Waldo online for free! Search through 16 fun puzzle levels to find Waldo, Odlaw, Wizard Whitebeard, and Wenda. Works on mobile and desktop. No download needed.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e753e3266d1ad20e",
-      "title": "Where's Wally? - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Where%27s_Wally%3F",
-      "summary": "Where's Wally? (called Where's Waldo? in North America) is a series of children's puzzle books created by the English illustrator Martin Handford, first published on 25 June 1987.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "da61658494a7b840",
-      "title": "Where’s Waldo Game Online – Play Free & Find Waldo",
-      "url": "https://whereiswaldogame.com/",
-      "summary": "Play the best Where’s Waldo online game and Find Waldo, Wenda, Odlaw, and Wizard across 20+ detailed puzzle scenes. Challenge your focus and start playing instantly no signup needed.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d69f052e14bf1b38",
-      "title": "(PDF) IT'S ALL IN THE NAME: READING THE NOAH CYCLE IN THE ...",
-      "url": "https://www.academia.edu/44622201/ITS_ALL_IN_THE_NAME_READING_THE_NOAH_CYCLE_IN_THE_LIGHT_OF_ITS_PLOT_MARKERS",
-      "summary": "The aim of this article is to take a literary approach to the flood narrative, and examine the story in the light of its core plot markers. In final form, the Noah Cycle begins with Noah's birth at 5:28 and ends at 9:28.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "16955266d1beed9a",
-      "title": "(PDF) Retelling Noah and the Flood - Academia.edu",
-      "url": "https://www.academia.edu/38683087/Retelling_Noah_and_the_Flood",
-      "summary": "Turning to Noah’s reaction to God’s news about the coming ﬂood, all retellings problematize Noah’s apparent blind obedience by either openly criticizing his passivity or turning him into a more pro-active character.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e1150f77b1a51f8",
-      "title": "11 Best Medical Practice Management Software (2026)",
-      "url": "https://softwarefinder.com/resources/best-medical-practice-management-software",
-      "summary": "Discover the 11 best medical practice management software for streamlined workflows, efficient billing, and improved patient care. Compare top solutions for your practice needs.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4961b383742a8327",
-      "title": "11 Top Medical Practice Management Software Tools for 2026",
-      "url": "https://practicesuite.com/resources/medical-practice-management-software/",
-      "summary": "Simplify running your healthcare organization with medical practice management software. Discover the top medical solutions on the market in this guide.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "83d188a1fd50a712",
-      "title": "Best Medical Practice Management Software - Capterra",
-      "url": "https://www.capterra.com/medical-practice-management-software/",
-      "summary": "Find the top Medical Practice Management software of 2026 on Capterra. Based on millions of verified user reviews - compare and filter for whats important to you to find the best tools for your needs.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c298dabee8250c2e",
-      "title": "Best Medical Practice Management Software 2026 [Updated]",
-      "url": "https://www.heidihealth.com/blog/best-medical-practice-management-software",
-      "summary": "What is the Best Medical Practice Management Software? The best medical practice management software (MPMS) is the one well-suited to a practice's specific specialty and meets its interoperability requirements within its regulatory environment. It goes beyond consolidating administrative, operational, and financial workflows in practice, which also proves its effectiveness. As healthcare ...",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b8bb4cf4b72e82ad",
-      "title": "Best Medical Practice Management Software of 2026",
-      "url": "https://www.softwareadvice.com/medical/practice-management-software-comparison/",
-      "summary": "Practice management software handles the administration and coordination of a medical practice, including scheduling, billing, patient management, and regulatory compliance.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "625ce4302069effd",
-      "title": "Convert JPG to PDF - online or local - fast & free",
-      "url": "https://www.ilovepdf.io/jpg_to_pdf/",
-      "summary": "Convert JPG/PNG images to PDF online or directly in your browser (local, no upload). Reorder, choose page size & margin. Fast, secure & GDPR-compliant.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "250563191da27172",
-      "title": "Convert JPG to PDF Online Free | Image Converter - Dpdf",
-      "url": "https://www.dpdf.com/jpg-to-pdf",
-      "summary": "Convert JPG/JPEG images to PDF files online for free. Combine multiple JPGs, customize page size, orientation, and margins.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eb72ca573e16d3f6",
-      "title": "Convert JPG to PDF Online | Quickly Convert Images to PDF",
-      "url": "https://pdfguru.com/jpg-to-pdf",
-      "summary": "Easily convert JPEG or JPG to PDF in seconds with our online tool. Enjoy high-quality conversions with perfect accuracy every time.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
@@ -1467,47 +1120,22 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5988f95b80d43d7a",
-      "title": "Convert JPG to PDF. Images JPG to PDF online - iLovePDF",
-      "url": "https://www.ilovepdf.com/jpg_to_pdf",
-      "summary": "Convert JPG images to PDF, rotate them or set a page margin. Convert JPG to PDF online, easily and free.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "98c3d0a410cecb2a",
+      "title": "The Leaders and Best: Michigan Tops Ohio State, Big Ten in 2025-2026 ...",
+      "url": "https://www.si.com/college/michigan/football/the-leaders-and-best-michigan-tops-ohio-state-big-ten-in-2025-2026-athletic-standings",
+      "summary": "The Michigan baseball team didn't have the year it had hoped. The Wolverines fell to Nebraska in the Big Ten Tournament, and failed to make it to the NCAA Tournament.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "da6e166dc7e0aa48",
-      "title": "Free - JPG to PDF - Convert images to PDF - Adobe",
-      "url": "https://www.adobe.com/acrobat/online/jpg-to-pdf.html",
-      "summary": "Turn your images into PDFs quickly with our simple online tool. Supports JPEG, PNG, BMP, GIF, TIFF, and JPG files.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1519,10 +1147,118 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d6200055aaae7d23",
-      "title": "Free JPG to PDF Converter — Convert JPEG Images to PDF Online",
-      "url": "https://documentgenius.com/pdf-tools/jpg-to-pdf/",
-      "summary": "Convert JPG to PDF online free. Turn single images or multiple JPGs into one clean PDF — no software needed. Works on iPhone, Android, Mac, and Windows. Try Document Genius.",
+      "id": "e8e0ac8af0b42351",
+      "title": "Today's Bing Quote of The Day : r/scienceisdope - Reddit",
+      "url": "https://www.reddit.com/r/scienceisdope/comments/16vwd3s/todays_bing_quote_of_the_day/",
+      "summary": "20K subscribers in the scienceisdope community. 𝗦𝗰𝗶𝗲𝗻𝗰𝗲, 𝗿𝗮𝘁𝗶𝗼𝗻𝗮𝗹𝗶𝘁𝘆 𝗮𝗻𝗱 𝗺𝗲𝗺𝗲𝘀! The ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb941f1ad68c5f4a",
+      "title": "University Of Michigan Football Standings 2025 | StatMuse",
+      "url": "https://www.statmuse.com/cfb/ask/university-of-michigan-football-standings-2025",
+      "summary": "The Michigan Wolverines finished 18th in the AP Poll in 2025 with a record of 9-4.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "13e6cbdd57809d5d",
+      "title": "Windows 10 自带输入法如何快速切换简繁体? - 知乎",
+      "url": "https://www.zhihu.com/question/38400073",
+      "summary": "Ctrl + Shift + F在 visual studio 里面是全局查找的快捷键，经常冲突，你说蛋疼不。 可以修改输入法繁简切换这个快捷键么？",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e8787e963fa62ff1",
+      "title": "15 kart over Russland som forklarer økonomi, folk og",
+      "url": "https://russlandway.com/russia-maps/",
+      "summary": "I dette innlegget har jeg valgt ut de 15 beste kartene som kan gi deg bedre innsikt i Russland og hjelpe deg å oppdage helt spesifikke og nysgjerrige sider ved landet.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "504df027a65f1881",
+      "title": "Bot Channels Registration - Azure Bot Framework - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/61183292/bot-channels-registration-azure-bot-framework",
+      "summary": "A Bot in the Microsoft Bot Framework world basically consists of two things: a registration within the Microsoft Bot Framework services (which includes an Azure App registration) the \"bot\" itself, which is basically just a web-hosted resources that can receive and send json. In the Azure resource listing, there is the option for a \"Web Application Bot\", which combines 1 & 2 above together - it ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1533,9 +1269,10 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1545,36 +1282,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dab87181f89216e7",
-      "title": "Green Pitch Finals: Win a $400,000 Prize Pool!",
-      "url": "https://www.bydfi.com/en/activities/view?id=1279859906474762241&p=L2VuL2FjdGl2aXRpZXMvdmlldw%3D%3D",
-      "summary": "Green Pitch Finals: Win a $400,000 Prize Pool! BYDFi Event Details | Complete Tasks to Earn Crypto Rewards",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ebfc8f9202366dd9",
-      "title": "JPG to PDF converter - 100% free & online - PDF24",
-      "url": "https://tools.pdf24.org/en/jpg-to-pdf",
-      "summary": "Free online converter to convert JPG files to PDF. No limits and no watermarks. No installation or registration required.",
+      "id": "287a8cb51ff71cf2",
+      "title": "Can you call a webservice from TSQL code? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/33449/can-you-call-a-webservice-from-tsql-code",
+      "summary": "@Rostol Perhaps 15 years later I can attempt to explain it better. Calling a WebService from within SQL code is a bad idea for the performance reasons mentioned above -- but as you say, those can be rationalized away if you don't care about performancearen't a concern. The more important reason why this is a bad idea is that it violates conventions and expectations that other developers will ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1585,9 +1296,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "sdk",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1597,12 +1308,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7e615ab90954e477",
-      "title": "JPG to PDF Converter - Convert Images to PDF Online for Free",
-      "url": "https://www.pdfgear.com/jpg-to-pdf/",
-      "summary": "Convert JPG, JPEG, and other images to PDF online for free. Combine photos or screenshots in one PDF, or save each image as a separate PDF. No signup or watermark.",
+      "id": "8dd37f4a7e86d895",
+      "title": "Central Oregon News - KTVZ",
+      "url": "https://ktvz.com/news/central-oregon/",
+      "summary": "New Amazon facility adds over 300 jobs to central Oregon REDMOND, Ore. (KTVZ) — Amazon has formally established its presence in Central Oregon with the opening of an 80,000-square-foot logistics...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1611,9 +1322,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1623,114 +1334,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "87d41ce3d01278a4",
-      "title": "JPG to PDF Converter: Convert Image & Photo to PDF for Free",
-      "url": "https://smallpdf.com/jpg-to-pdf",
-      "summary": "Turn images and photos into PDFs in seconds. Smallpdf’s JPG to PDF converter is free, secure, and fast. Start immediately with no installation or account creation required.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dbd351b0b501ffac",
-      "title": "JPG to PDF Online - Sejda",
-      "url": "https://www.sejda.com/en/jpg-to-pdf",
-      "summary": "How to Convert JPG to PDF Below we show how to convert images to PDF. JPG is the most popular image format out there, but we also support all the other image formats: png, gif, tiff or bmp. Upload your files Files are safely uploaded over an encrypted connection. Files stay secure. After processing, they are permanently deleted.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f2a555fc169ffb90",
-      "title": "NOAH, THE ARK, AND THE FLOOD IN EARLY CHRISTIAN LITERATURE",
-      "url": "https://pdfs.semanticscholar.org/05fd/b638c7a62e4323ded08f348b4061f18abe28.pdf",
-      "summary": "The traditions related to Noah, the ark, and the flood were important for Jesus and the early church, and an attempt will be made to elucidate their significance for each author. Key Words: Noah; Ark; Flood; Repentance; Judgment; Ecology",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f4916bce9cc30670",
-      "title": "Perpetual Contract Chart | Real-Time Crypto Futures | BYDFi",
-      "url": "https://www.bydfi.com/en/futures/XRP-USDT",
-      "summary": "Trade perpetual contracts on BYDFi with up to 200x leverage. Access 500+ pairs, deep liquidity, and low fees on a leading crypto derivatives exchange.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3085e8b338aa349",
-      "title": "Sign in to your account",
-      "url": "https://mysignins.microsoft.com/",
-      "summary": "Access and manage your Microsoft account sign-ins securely.",
+      "id": "ea2c8246bfc0d355",
+      "title": "Cookiedatabase.org",
+      "url": "https://cookiedatabase.org/",
+      "summary": "Cookiedatabase.org is a project that started in 2019, and that wants to bring more transparency in the online world of website tracking and collecting personal data. Almost everybody gets targeted through the use of cookies and other online techniques. Often, the function and the duration they stay active are unknown to websitevisitors. We want to change this by describing the consequences for ...",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1753,12 +1360,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0a7fe5953fe1eadf",
-      "title": "The Flood Literary Analysis: Noah And The Flood | 123 Help Me",
-      "url": "https://www.123helpme.com/essay/The-Flood-Literary-Analysis-Noah-And-The-429654",
-      "summary": "The paper sought to analyze two different mediums depicting the story of Noah and the flood, comparing and relating the stories to the Genesis version and thus analyzing the impact of such misrepresentations.",
+      "id": "a2e4e78ac90f4aed",
+      "title": "Gyldendals kart over Russland - nb.no",
+      "url": "https://www.nb.no/items/9381fb230952fcdaf2d600a438a7fc21?page=0",
+      "summary": "Tittel Gyldendals kart over Russland Alternativ tittel Kart over Russland Kartograf Schløier, Einar (1884-1965) Publisert",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1767,9 +1374,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "news"
       ],
-      "primary_type": "research",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1779,12 +1386,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5c7c1c3fbfddc68e",
-      "title": "The Influence of Popular Culture’s Interpretation of Noah’s ...",
-      "url": "https://www.thefreelibrary.com/The+Influence+of+Popular+Culture%e2%80%99s+Interpretation+of+Noah%e2%80%99s+Ark+upon...-a0821974786",
-      "summary": "This paper has offered evidence of the way in which the popular cultural depictions of a biblical story, in this instance Noah’s ark, can influence the way in which the biblical text is interpretated and understood on three levels—the world behind the text, in the text and in front of the text.",
+      "id": "9a53d268bff41906",
+      "title": "How to access docker containers on wsl 2 - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/62753270/how-to-access-docker-containers-on-wsl-2",
+      "summary": "I can curl the localhost: form the ubuntu itself. And as I mentioned, the compose is already tested and working fine on prod, so the services are running as they should. It seems as a mapping issue between windows and the wsl.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1793,9 +1400,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "review"
       ],
-      "primary_type": "research",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1805,12 +1412,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d0ac5ae0a816718c",
-      "title": "The Influence of Popular Culture’s Interpretation of Noah’s ...",
-      "url": "https://www.mdpi.com/2077-1444/15/12/1535",
-      "summary": "This paper has offered evidence of the way in which the popular cultural depictions of a biblical story, in this instance Noah’s ark, can influence the way in which the biblical text is interpretated and understood on three levels—the world behind the text, in the text and in front of the text.",
+      "id": "98a7a7e74e7079c4",
+      "title": "How to Enter the SNL Ticket Lottery for Season 52 [DETAILS] - NBC",
+      "url": "https://www.nbc.com/nbc-insider/how-to-get-SNL-tickets",
+      "summary": "Discover how to enter the SNL Season 52 ticket lottery by email in August 2026 and how to get tickets to Saturday Night Live in New York City.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1819,9 +1426,818 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "news"
       ],
-      "primary_type": "research",
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "608b473cfd122380",
+      "title": "Icons missing in jQuery UI - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/19515943/icons-missing-in-jquery-ui",
+      "summary": "I'm using Modal Form and Widgets from jQuery, but the icons does not appear. for eg the Cross (X) and Plus-Minus (+-) Icons. When I load the page I et these errors. \"NetworkError: 404 NOT FOUND -...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5ecba808aeece0c7",
+      "title": "Microsoft Translator for Personal Use - Microsoft Translator",
+      "url": "https://www.microsoft.com/en-us/translator/personal/",
+      "summary": "Download our offline language packs and translate menus and phrases while traveling abroad. Have real-time, translated conversations with captions, translate menus and street signs without an internet connection, and translate web pages and app content with one tap.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f593eb7855d9b28",
+      "title": "NBC Account Registration - NBC.com",
+      "url": "https://www.nbc.com/sign-up",
+      "summary": "Unlock NBC Content with an NBCUniversal Profile Instantly get 3 credits to watch select locked content. More info",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a13d68478487fd6",
+      "title": "NBC Account Sign In - NBC.com",
+      "url": "https://www.nbc.com/sign-in",
+      "summary": "Sign into your NBC Account via google or email and watch your favorite shows.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dbf9943872d339e6",
+      "title": "NBC Apps - NBC.com",
+      "url": "https://www.nbc.com/apps",
+      "summary": "Watch your favorite shows on the go with the NBC App for iOS and Android. Also available on Apple TV, Roku, Amazon Fire, Xbox, and Samsung TV!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video",
+        "tool",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c0d276f41c281130",
+      "title": "NBC TV Network - Shows, Episodes, Schedule",
+      "url": "https://www.nbc.com/",
+      "summary": "Watch full episodes of current and classic NBC shows online. Plus find clips, previews, photos and exclusive online features on NBC.com.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "39c1aaa9f7e3bfcc",
+      "title": "New Volkswagen for Sale in Hawthorne, CA",
+      "url": "https://www.pacificvolkswagen.com/search/new-volkswagen-hawthorne-ca/?cy=90250&tp=new",
+      "summary": "New Volkswagen for Sale in Hawthorne, CA. View our Pacific Volkswagen inventory to find the right vehicle to fit your style and budget!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cfe137048e750bab",
+      "title": "Official definition of CSCI (Computer Software Configuration Item)",
+      "url": "https://stackoverflow.com/questions/4312760/official-definition-of-csci-computer-software-configuration-item",
+      "summary": "As far as I can tell, CSCI was defined in the same logic as HWCI (Hardware Configuration Item) in DOD-STD-2167A which simply defined CSCI as a configuration item. More clear definition is in MIL-STD-498 which superseded DOD-STD-2167A: CSCI - An aggregation of software that satisfies an end use function and is designated for separate configuration management by the acquirer. CSCIs are selected ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "16b6e86365e3ae35",
+      "title": "Pacific Volkswagen - Hawthorne, CA",
+      "url": "https://www.yelp.com/biz/pacific-volkswagen-hawthorne",
+      "summary": "PACIFIC VOLKSWAGEN, 14900 Hindry Ave, Hawthorne, CA 90250, 263 Photos, (424) 544-5598, Mon - 7:00 am - 8:00 pm, Tue - 7:00 am - 8:00 pm, Wed - 7:00 am - 8:00 pm, Thu - 7:00 am - 8:00 pm, Fri - 7:00 am - 8:00 pm, Sat - 7:00 am - 7:00 pm, Sun - 10:00 am - 6:00 pm",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cdcb5a8b8d7d6eb8",
+      "title": "Pacific Volkswagen - Hawthorne, CA - CarGurus",
+      "url": "https://www.cargurus.com/Cars/m-Pacific-Volkswagen-sp278907",
+      "summary": "Browse cars and read independent reviews from Pacific Volkswagen in Hawthorne, CA. Click here to find the car you’ll love near you.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77232ec095ba7f88",
+      "title": "Pacific Volkswagen - Hawthorne, CA | Cars.com",
+      "url": "https://www.cars.com/dealers/106773/pacific-volkswagen/",
+      "summary": "Read reviews by dealership customers, get a map and directions, contact the dealer, view inventory, hours of operation, and dealership photos and video. Learn about Pacific Volkswagen in...",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7463aea8a272596f",
+      "title": "Papir kart over Russland gratis - TakeMaps",
+      "url": "https://www.takemaps.com/no/kartet_av_russland_no.php",
+      "summary": "Kartet over Russland er spesialdesignet for utskrift på en dataskriver. Det er mulig å skrive ut ett kart på flere sider. Her er den enkle måten, hvordan du skriver ut et gratis kart for deg selv. Du kan også skrive ut til pdf.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c14c982221e9432f",
+      "title": "r/QuestPiracy Community Megathread – Piracy Info and Tools for the ...",
+      "url": "https://qpmegathread.top/",
+      "summary": "Your directory for Quest standalone piracy, tools, PCVR sources and setup guides – maintained by the community. Browse The Megathread Setup Guide – Start to Finish – Start here: Everything you need to know and do to start playing. FAQ / Troubleshooting – Frequently asked questions and troubleshooting. Public Server JSON – The current server info for Rookie and VR CyberDeck. Quest ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1d211e3c238aaca7",
+      "title": "RegEx match open tags except XHTML self-contained tags",
+      "url": "https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags",
+      "summary": "I believe it says: Find a less-than, then Find (and capture) a-z one or more times, then Find zero or more spaces, then Find any character zero or more times, greedy, except /, then Find a greater-than Do I have that right? And more importantly, what do you think?",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a7fc2e38ccd5fe4",
+      "title": "Run batch file as a Windows service - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/415409/run-batch-file-as-a-windows-service",
+      "summary": "In order to run one application, a batch file has to be kicked off (which does things like start Jetty, display live logs, etc). The application will work only if this batch file is running. I am h...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "850e58526b76a594",
+      "title": "Russia Map - Eastern Europe - Mapcarta",
+      "url": "https://mapcarta.com/Russia",
+      "summary": "Russia is the world's largest country, covering more than one-eighth of the Earth's inhabited land area. Russia boasts a rich history and culture, as well as a wealth of natural attractions for those willing to head off the beaten path.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "acc2dcbbf604a5d4",
+      "title": "Russland i Atlas av Verden: Detaljert informasjon og kartet",
+      "url": "https://www.iworldatlas.com/russland-verdensatlas-historie-statistikk-kart-no-13-2484",
+      "summary": "Russland i Atlas av Verden med kartet og detaljert informasjon om mennesker, økonomi, geografi og politikk av Russland. Inkludert statistikknumre, flagg og oversiktskart for alle land.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "441e7dd2df8cfedb",
+      "title": "Russland kart – Moscow og fakta | map.nu",
+      "url": "https://map.nu/no/russland",
+      "summary": "Russland kart – se interaktivt kart, Moscow og naboland. Valuta RUB og fakta i Europa.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ffd8ec11f2584536",
+      "title": "Russland politisk veggkart laminert 125 x 150cm",
+      "url": "https://incentives.no/product/russland-politisk-veggkart-laminert-125-x-150cm/",
+      "summary": "Politisk kart med landegrenser i forskjellige farger på hvit bakgrunn viser Russland samt nabolandene; Skandinavia og de Baltiske stater. Kartet viser også de provinsielle grenser i Russland.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c298705cea3059ff",
+      "title": "Russland – Wikipedia",
+      "url": "https://no.wikipedia.org/wiki/Russland",
+      "summary": "Topografisk kart over Russland. Områdene i sør og i øst er de mest fjellrike, mens det vestlige Sibir og den europeiske delen av landet er langt flatere. Russland dekker det meste av de nordlige områdene av superkontinentet Eurasia.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "12db2c49a2097707",
+      "title": "Russlands geografi – Wikipedia",
+      "url": "https://no.wikipedia.org/wiki/Russlands_geografi",
+      "summary": "Russland ligger på nordlige og midlere breddegrader på den nordlige halvkule og er mye nærmere Nordpolen enn ekvator. Landet er enormt stort, til sammenligning nesten to ganger så stort som USA og mer enn 50 ganger så stort som Norge, og dekker et areal på 17,1 millioner kvadratkilometer.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f12b920ddfa06eba",
+      "title": "Saturday Night Live - NBC.com",
+      "url": "https://www.nbc.com/saturday-night-live",
+      "summary": "Saturdays at 11:30 p.m., live coast-to-coast. NBC's Emmy-winning late-night comedy showcase enters its 50th season.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1aee4e1d642e776c",
+      "title": "Saturday Night Live Season 51 Cast Members: See the Full List - NBC",
+      "url": "https://www.nbc.com/nbc-insider/saturday-night-live-season-51-cast-members-2025-2026-full-list",
+      "summary": "SNL's Season 51 cast lineup is officially final. See photos of new additions and learn more about the returning cast members and new Featured Players, here.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "681d7a2c629d6ada",
+      "title": "Shop - San Jose Camera",
+      "url": "https://www.sanjosecamera.com/shop",
+      "summary": "San Jose Camera & Video. All Rights Reserved.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80bf0af1931a0271",
+      "title": "Tickets and NBC Studio Tour",
+      "url": "https://www.nbc.com/tickets/pages/tickets-and-nbc-studio-tour",
+      "summary": "Get tickets to the NBC Studio Tour New York and your favorite shows like The Tonight Show Starring Jimmy Fallon, Saturday Night Live and more on NBC.com.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ffc64030a0b768f0",
+      "title": "Tor Sudhu Tor ️ | DeSu7 | Dev & Subhashree #BengaliSong ... - YouTube",
+      "url": "https://m.youtube.com/watch?v=h8TFGehcq44",
+      "summary": "Tor Sudhu Tor ️ | DeSu7 | Dev & Subhashree 😍#BengaliSong #NewSong #Shorts ️🥰#priyastatuscreation🔍 Your Searches:-Tor Sudhu TorTor Sudhu Tor SongTor Sudhu...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "caec21c7aaa91ac7",
+      "title": "VW Offers and Lease Deals in Hawthorne, CA - New Century VW",
+      "url": "https://www.newcenturyvw.com/volkswagen-dealer-in-hawthorne-ca/",
+      "summary": "Volkswagen enthusiasts in Hawthorne, CA, have exciting options for their next vehicle purchase or lease. New Century Volkswagen, located near Hawthorne, offers various special offers and lease deals tailored to meet different needs.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2006b60787492a68",
+      "title": "Watch Harry Styles' SNL Monologue & Sketches from March 14, 2026 - NBC",
+      "url": "https://www.nbc.com/nbc-insider/watch-harry-styles-snl-monologue-sketches-march-14-2026",
+      "summary": "Watch all of Harry Styles' Saturday Night Live sketches from March 14, 2026, and his monologue featuring Ben Marshall, here.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3968781f95eadc47",
+      "title": "Watch the NBC Live Stream - NBC.com",
+      "url": "https://www.nbc.com/live",
+      "summary": "Live stream your favorite NBC content on NBC.com!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eefcdc1f468c8d86",
+      "title": "Watch this story by Trinkeds rolas y tinta on Instagram before it ...",
+      "url": "https://www.instagram.com/stories/trinkedsrolasytinta/3985759045271548946/",
+      "summary": "845 Followers, 389 Following, 0 Posts",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "985642adb9618480",
+      "title": "ごいんきょ(えりおっと) on X: \"ちゃんとお知らせしないと大変そう…\"",
+      "url": "https://x.com/bengalese/status/2099991539082821948",
+      "summary": "ルヴァンのチケット情報の件で駐車場に触れてて確かにそれはそうと思いました スタジアムに日帰りで行ける距離のJ1チームとの対戦は初めてよね… しかもFC大阪には東家選手がいるから観にくるアビサポさんもいるだろうし",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
