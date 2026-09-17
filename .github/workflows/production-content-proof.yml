@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   prove-production:
-    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push'
+    if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Check out deployed revision with parent
@@ -50,5 +50,32 @@ jobs:
             --site-root site \
             --origin https://glassesresearch.org
 
+      - name: Prove Community Research production canaries
+        env:
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://glassesresearch.org'
+          for attempt in $(seq 1 12); do
+            bust="community-proof=${HEAD_SHA}-${GITHUB_RUN_ID}-${attempt}"
+            if curl --fail --silent --show-error --location --max-time 20 \
+                -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+                "${base}/docs/community-research/?${bust}" -o /tmp/community-research.html \
+              && curl --fail --silent --show-error --location --max-time 20 \
+                -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+                "${base}/docs/community-research/bimapdev-smartglasses/?${bust}" -o /tmp/bimapdev.html \
+              && grep -Fq 'BimaPDev / SmartGlasses' /tmp/community-research.html \
+              && grep -Fq 'BimaPDev / SmartGlasses' /tmp/bimapdev.html \
+              && grep -Fq 'Community-primary' /tmp/bimapdev.html; then
+              echo 'PROVED: Community Research index and BimaPDev page are retrievable from production with expected content.'
+              exit 0
+            fi
+            echo "Attempt ${attempt}/12: Community Research canaries not proven yet."
+            sleep 15
+          done
+          echo 'ERROR: Community Research production canaries were not retrievable with expected content.' >&2
+          exit 1
+
       - name: Record invariant
-        run: echo "DEPLOYED means the changed public page body was retrieved from production and matched the built artifact exactly."
+        run: echo "DEPLOYED means changed public content and required production canaries were retrieved from production and verified."
