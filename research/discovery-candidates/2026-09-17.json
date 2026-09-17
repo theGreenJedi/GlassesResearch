@@ -1,39 +1,47 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-17T18:20:33.698441+00:00",
-  "candidate_count": 66,
-  "classifier_irrelevant_count": 46,
+  "discovered_utc": "2026-09-17T19:19:49.979151+00:00",
+  "candidate_count": 105,
+  "classifier_irrelevant_count": 75,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 21,
-    "broad_web": 37,
-    "developer": 9
+    "adjacent": 24,
+    "broad_web": 63,
+    "developer": 12,
+    "manufacturer_catalog": 1,
+    "research": 1,
+    "retail": 7
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 7,
     "enabling": 0,
-    "adjacent": 20,
+    "adjacent": 23,
     "speculative": 0,
-    "irrelevant": 46
+    "irrelevant": 75
   },
   "type_counts": {
-    "model": 1,
-    "review": 2,
-    "video": 3,
-    "news": 43,
-    "tool": 16,
-    "sdk": 9,
-    "retail": 1,
-    "community": 5
+    "model": 2,
+    "review": 6,
+    "video": 12,
+    "news": 66,
+    "research": 4,
+    "tool": 12,
+    "sdk": 13,
+    "hack": 1,
+    "optics": 1,
+    "retail": 26,
+    "community": 1
   },
   "routing_counts": {
-    "adjacent_radar": 20,
-    "community_evidence_review": 1,
-    "development_hacking": 7,
+    "adjacent_radar": 23,
+    "deep_research": 1,
+    "development_hacking": 1,
     "model_catalog_review": 1,
-    "reject_noise": 46,
-    "report_card_evidence": 1,
-    "research_news_review": 20
+    "reject_noise": 75,
+    "report_card_evidence": 6,
+    "research_news_review": 30,
+    "research_optics": 1,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -44,20 +52,278 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
   "candidates": [
     {
-      "id": "6bdbed8ab44953c7",
-      "title": "DIY Attic Storage Lift: Convenience in 8 Easy Steps",
-      "url": "https://theownerbuildernetwork.co/project/2017/02/26/attic-storage-lift/",
-      "summary": "Embarking on a DIY installation of an attic storage lift can be a rewarding experience for those adept at basic construction and who enjoy hands-on projects. This approach offers a significant cost benefit by saving on professional labor charges.",
+      "id": "767c5abba8d6786e",
+      "title": "Smart Glasses with Prescription Lenses: What Works in 2026",
+      "url": "https://dymesty.com/blogs/articles/smart-glasses-with-prescription-lenses-what-actually-works-costs-best-options",
+      "summary": "Prescription smart glasses combine corrective optics with wearable electronics across three hardware classes: display AI glasses, camera AI glasses, and professional AI glasses. Correction may use integrated prescription lenses, secondary inserts, or adjustable virtual-image focus.",
+      "discovery_channel": "broad_web",
+      "query": "prescription smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, dymesty, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ea4f019cf2ac90ff",
+      "title": "ActiveLook | Heads-Up, AR Smart Glasses",
+      "url": "https://www.activelook.net/",
+      "summary": "ActiveLook is a groundbreaking light AR smart glasses solution that brings a truly heads-up, hands-free experience to industry, sports, medicine and more. The lightest, brightest, longest-lasting display bringing real-time mission-critical information to users in a sleek, balanced, discrete form. ActiveLook introduces a whole new world.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c1eb30b732e2923d",
+      "title": "ActiveLook's Hyper-Focused Vision: Performance Data on the Edge",
+      "url": "https://smartglassesdaily.com/en/article/activelook-smart-glasses-guide-yvvw",
+      "summary": "As the smart glasses market chases generative AI and immersive AR, ActiveLook carves a sharp niche: purpose-built HUDs for elite athletes, delivering data without distraction.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3cba91bb1e55dbf7",
+      "title": "Everysight - YouTube",
+      "url": "https://www.youtube.com/@EverySight",
+      "summary": "Maverick Sport: Routes and Challenges (E-Sport App) Everysight 51 views • 4 days ago",
+      "discovery_channel": "broad_web+developer",
+      "query": "Everysight Maverick AI Kickstarter; Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: everysight, maverick",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b358781c946f17e3",
+      "title": "The World's First Eye-Tracking Smart Glasses Are Intriguing ... - Gizmodo",
+      "url": "https://gizmodo.com/the-worlds-first-eye-tracking-smart-glasses-are-intriguing-and-unpolished-2000743475",
+      "summary": "Thanks to a company called Everysight, we now have the first smart glasses capable of tracking your eyes, and I got a chance to try them out. Based on my experience, the future of smart glasses...",
+      "discovery_channel": "broad_web+developer",
+      "query": "Everysight Maverick AI Kickstarter; Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: everysight, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "546790f794448ec4",
+      "title": "xbx a01+ | Just Play - xreal.com",
+      "url": "https://www.xreal.com/us/xbxa01",
+      "summary": "Powered by our custom display chip, the a01+ upgrades all your content to HDR in real time. From scrolling short-form videos to playing AAA games, everything you watch is automatically upscaled with vivid HDR color and striking contrast.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5e5cf330e466fad5",
+      "title": "The Verge Archives - Wearable - Page 2",
+      "url": "https://www.theverge.com/wearables/archives/2",
+      "summary": "The EU is excluding wearable devices, including smartwatches, fitness trackers, and smart glasses, from an incoming rule that will require a wide range of electronics to have user-replaceable ...",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "27dd16c01cf409e2",
+      "title": "Google Pixel Watch 4 hands-on: big ideas for the AI wearable future ...",
+      "url": "https://www.theverge.com/hands-on/761918/google-pixel-watch-4-hands-on-smartwatch-wearable-gemini",
+      "summary": "The Google Pixel Watch 4 adds a host of new updates, including a new display, repairability, improved battery, Gemini, and an AI health coach.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
         "hands-on"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "video"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "65381e954e66cb3e",
+      "title": "Here’s where you can preorder the new Oura Ring 5 | The Verge",
+      "url": "https://www.theverge.com/gadgets/938380/oura-ring-5-preorder-price-release-date-availability",
+      "summary": "Here’s where you can preorder the new Oura Ring 5 Oura’s slimmest smart ring launches on June 4th starting at $399, but it’s already up for preorder at multiple retailers.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "preorder"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed4b38f4e52d4f52",
+      "title": "Humane AI Pin review: not even close - The Verge",
+      "url": "https://www.theverge.com/24126502/humane-ai-pin-review",
+      "summary": "Humane’s new device, a wearable with a projector and camera and access to AI, occasionally works really well. All too often, it doesn’t work at all — and it’s way too expensive for that.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -77,537 +343,649 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0664dd3434d76112",
-      "title": "Roblox - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Roblox",
-      "summary": "Roblox (/ ˈroʊ.blɒks / ⓘ, ROH-bloks) is an online game platform and game creation system developed by Roblox Corporation that allows users to program and play games created by themselves or other users. It was developed by David Baszucki and Erik Cassel in 2004, and released to the public in 2006. As of February 2025, the platform has reported an average of 85.3 million daily active users ...",
+      "id": "3ee8002318919a6b",
+      "title": "Motorola’s new watch and earbuds are a case study in deja vu",
+      "url": "https://www.theverge.com/wearables/655302/motowatch-fit-motobuds-loop-hands-on-motorola-wearables-headphones",
+      "summary": "The new Motowatch Fit and Motobuds Loop are heavier on style than real hardware innovations, with Swarovski crystals and an Apple Watch–like design.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "released"
+        "study"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
+        "review",
+        "video",
+        "research"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0ff694a1f44c3d3c",
+      "title": "Charming Cities Close To St. Augustine, FL: Top Coastal Towns To ...",
+      "url": "https://travelpander.com/cities-close-to-st-augustine-fl/",
+      "summary": "Major cities near St. Augustine, FL, include Jacksonville (37 miles), Orlando (94 miles), and Tampa (151 miles). Other nearby locations are Palm Coast, Atlantic Beach, and Flagler Beach. St. Augustine is known for its historic downtown, beautiful beaches, diverse activities, and excellent restaurants.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8613154d72fb7faf",
+      "title": "Cities Near Me - Saint Augustine, Florida | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Saint+Augustine,+FL",
+      "summary": "Find the top 15 cities, towns, and suburbs near Saint Augustine, FL, like Palm Valley and Palm Coast, and explore the surrounding area for a day trip.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cdda4cb0ab19d433",
+      "title": "Cities Nearby Saint Augustine, Florida, United States",
+      "url": "https://www.thecitiesnow.com/united_states/florida/saint_augustine",
+      "summary": "Find five hundred cities near Saint Augustine, Florida, United States from closest to farthest by distance. Distances from Saint Augustine to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1fae64acc135f7f7",
+      "title": "Here are the fitness trackers I actually recommend",
+      "url": "https://www.theverge.com/gadgets/924338/best-fitness-trackers-2026",
+      "summary": "Here are the fitness trackers I actually recommend ﻿It’s less about which gadget. It’s better to be honest about what slots best into your life right now.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "884ffba293b7d989",
+      "title": "PPT - 知乎",
+      "url": "https://www.zhihu.com/topic/19553567/hot",
+      "summary": "Microsoft Office PowerPoint做出来的东西叫演示文稿，其格式后缀名为：ppt、pptx；或者也可以保存为：pdf、图片格式等。 2010及以上版本中可保存为视频格式。 演示文稿中的每一页就叫幻灯片，每张幻灯片都是演示文稿中既相互独立又相互联系的内容。 查看更多简介",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a01031f2c2568fde",
+      "title": "PPT 模板的下载资源有哪些？ - 知乎",
+      "url": "https://www.zhihu.com/question/19644160",
+      "summary": "作为一名常年接PPT设计单子的男人！推荐10个超级小众，别人都没推荐过，但超级好用的PPT模板网站！让你的模板不跟别人撞衫，还有逼格！ 文章首发于公众号：PPT进化论 作者：宋雪贤 如需转载，请联系作者 不定时更新，不说了开整！",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d7a2290d3e544029",
+      "title": "PPT中如何制作目录页？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/ab69b2704390c22ca7189f02.html",
+      "summary": "PPT中如何制作目录页,用电脑制作PPT时，经常需要给幻灯片加上目录页，那么PPT的目录页要怎么制作，在PPT中如何制作目录页，还有怎么制作可以跳转其他幻灯片的目录页，为此本篇介绍以下方法，希望可以帮助到你。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "793cef5e96306565",
+      "title": "PPT制作教程：如何制作ppt - 百度经验",
+      "url": "https://jingyan.baidu.com/article/67508eb4fcf8c79ccb1ce474.html",
+      "summary": "PPT制作教程：如何制作ppt,PowerPoit（PPT）是专门用于制作演示文稿（俗称幻灯片）。广泛运用于各种会议、产品演示、学校教学等。学会如何制作t，成为提升工作效率的好帮手。PPT包含有很多的功能，我们可以根据个人喜欢和需求来选择其部分。这里为大家介绍制作PPT最常用的功能和PPT转视频的技巧 ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8f95ea2c386f429b",
+      "title": "PPT在保存时显示“储存此文件时发生错误”，该如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/298570897",
+      "summary": "这个可能是由于PPT的保存类型问题，比如 原PPT是97-2003（*.ppt）的演示文稿，编辑或修改内容后，直接 Ctrl+S保存，会弹出下面这个对话框 点击确定，又会出现下面的提示 最终反反复复无法保存 解决办法：文件-另存为-选择保存路径-更改保存类型（如 *.pptx）即可。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8f93c94a9a76db87",
+      "title": "ppt怎样给幻灯片分组 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/d7130635e7268313fdf475a0.html",
+      "summary": "在PPT中，可以通过幻灯片分组功能对幻灯片进行分类管理，方便查找和编辑。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9c7b560a4be34283",
+      "title": "PPT表格怎么设置虚线边框-百度经验",
+      "url": "https://jingyan.baidu.com/article/86f4a73e2ed5e777d652699d.html",
+      "summary": "PPT表格怎么设置虚线边框,PPT中，有时候可能需要插入表格，想给表格添加虚线边框，要怎么设置呢？本篇经验演示PPT中设置表格虚线边框的步骤。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ea67930535b9ab63",
+      "title": "Solitaire | Play it online - CardGames.io",
+      "url": "https://cardgames.io/solitaire/",
+      "summary": "Play classic Solitaire (Klondike) online for free. Simple gameplay, excellent graphics and unlimited undos!",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e70af03f6c439e8e",
+      "title": "The best fitness trackers and watches we’ve tested",
+      "url": "https://www.theverge.com/22985108/best-fitness-tracker",
+      "summary": "The forthcoming wearable covers all the fitness and smartwatch basics — from step tracking and heart rate monitoring to notifications — and features dual-frequency GPS, courtesy of a recent ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "efc82ad1a065c332",
+      "title": "The best smart rings of 2026 | The Verge",
+      "url": "https://www.theverge.com/tech/647901/best-smart-rings",
+      "summary": "Smart rings are a comfortable, discreet alternative to smartwatches. Here, we’ve rounded up the best options from Oura, Samsung, Ultrahuman, and others.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e32038657d4544f9",
+      "title": "The Verge Awards at CES 2026",
+      "url": "https://www.theverge.com/tech/858494/ces-2026-best-new-tech-tv-car-wearable",
+      "summary": "The Verge Awards at CES 2026 Rollable laptops, twice-folding phones, and a ‘longevity station.’ This is the CES tech we come back for.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ea5def1b822c2f0e",
+      "title": "There’s nothing wrong with a thong made out of a keyboard",
+      "url": "https://www.theverge.com/creators/647080/wearable-technology-art",
+      "summary": "Old tech finds a new life in wearable art. Old tech finds a new life in wearable art. In December 2024, actor and fashion icon Julia Fox stepped out on the street with a flip-phone buckle strapped ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7956f45a70e28075",
+      "title": "Wearable - The Verge",
+      "url": "https://www.theverge.com/wearables",
+      "summary": "The new $149 Meridian Band is a jewelry-inspired housing for the fifth-generation Whoop wearable that’s designed to make it look less like a boring gadget.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "07b8f9c8eec7c8da",
+      "title": "如何做好 PPT？ - 知乎",
+      "url": "https://www.zhihu.com/question/21149650",
+      "summary": "2、排 PPT始终是要为内容服务，选中的模板不可能什么都不做就与你的讲演内容相合，所以，首先你需要根据要展示的内容，排好讲演的逻辑顺序，再根据这个顺序，针对每个小部分，挑选合适的PPT模板。 你可以边排逻辑边选，也可以完全构思好了再行动，这个看个人习惯。 3、填 排好PPT页面顺序就 ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e92beacaf7b32964",
+      "title": "有没有一个 PPT 技巧让自己觉得人生都亮了？ - 知乎",
+      "url": "https://www.zhihu.com/question/21638597",
+      "summary": "有没有很震撼？是不是很熟悉，很多超级高大上的PPT是不是都有这个页面！据说收费死贵死贵的哦！ 当然，遮罩动画制作起来并没有你想象的那么难！学会这个小技巧，小白也能搞定!我们只需要在视频的上方，覆盖一层镂空的形状即可。 贴心的我，在这里也简单说一下具体的操作方法，很简单 ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "25a9b2eca28d200b",
+      "title": "2018 Acura RLX Review & Ratings | Edmunds",
+      "url": "https://www.edmunds.com/acura/rlx/2018/review/",
+      "summary": "Edmunds' expert review of the Used 2018 Acura RLX provides the latest look at trim-level features and specs, performance, safety, and comfort. At Edmunds we drive every car we review, performing ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ca0b7f28c9c57e2",
+      "title": "ActiveLook - Technology",
+      "url": "https://www.activelook.net/pages/the-tech",
+      "summary": "All ActiveLook apps and services can connect to any ActiveLook glasses. Our architecture is engineered to enable technology enables the integration of data source from any applications or smart devices. BLE API & Mobile SDK available.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "api",
+        "sdk"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
         "model",
-        "tool"
+        "sdk",
+        "hack"
       ],
       "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "development_hacking",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7adf1f6577cbc19c",
-      "title": "5 Convenient DIY Attic Lift Pulley System Plans (With Pictures)",
-      "url": "https://homegrail.com/diy-attic-lift-pulley-systems/",
-      "summary": "This simple DIY elevator runs on dozens of feet of cords, a stabilizing rig, and numerous pulleys. The job can be as simple or complex as you make it, depending on where you are installing, how much weight you need it to lift, and the size of the platform.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "4ff6f1560bdb56f1",
+      "title": "2026 Nursing Diagnosis Guide | NANDA List & Examples | Nurse.org",
+      "url": "https://nurse.org/resources/nursing-diagnosis-guide/",
+      "summary": "In this article, we'll explore the NANDA nursing diagnosis list, examples of nursing diagnoses, and the 4 types. Some nurses may see nursing diagnoses as outdated and arduous. However, it is an essential tool that promotes patient safety by utilizing evidence-based nursing research.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
+        "research",
         "tool"
       ],
-      "primary_type": "tool",
+      "primary_type": "research",
       "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "24235236c6eef8f3",
-      "title": "6 Best DIY-Friendly Clearfloor Lifts for Basement Entries",
-      "url": "https://www.journeymanhq.com/221456/6-best-diy-friendly-clearfloor-lifts-for-basement-entries/",
-      "summary": "Transform your basement accessibility with 6 top DIY clear floor lifts. Compare hydraulic, pneumatic & electric models from $8K-$18K for easy installation.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9bb5b13254df6bf2",
-      "title": "About Roblox | Roblox",
-      "url": "https://about.roblox.com/",
-      "summary": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each other in immersive, user-generated 3D worlds.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fde965348307f73c",
-      "title": "Cities Near Me - Corona, California | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/Corona,+CA",
-      "summary": "The center of each city listed is within 16 miles of Corona, CA. Scroll down the page to find a list of big cities if you're booking a flight between airports, or a list of smaller surrounding towns if you're doing a road trip.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e5fc7c914b79ed9b",
-      "title": "Cities Nearby Corona, California, United States",
-      "url": "https://www.thecitiesnow.com/united_states/california/corona",
-      "summary": "Find five hundred cities near Corona, California, United States from closest to farthest by distance. Distances from Corona to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8a06023771295d22",
-      "title": "DIY Attic Lift System | Attic Storage System - Auxx-Lift Store",
-      "url": "https://auxx-lift.com/pages/attic-lift",
-      "summary": "Transform your garage storage with our DIY attic lift system from Auxx-Lift. Our attic storage system uses two tubular motors to ensure a level platform.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "da2cacfe659f4cdf",
-      "title": "DIY Cargo Lift Installation | EasyLift™ - beachhouselifts.com",
-      "url": "https://beachhouselifts.com/diy-cargo-lift-installation/",
-      "summary": "If you’re considering a DIY cargo lift installation, call us at EasyLift and ask. Once you’ve decided, the steps you acquiring your kit are easy and we can help you through all of them.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fe010c9a29373a17",
-      "title": "Download Roblox",
-      "url": "https://www.roblox.com/download",
-      "summary": "Download the Roblox app to use Roblox on your smartphone, tablet, computer, console, VR headset, and more.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "05c2737d750e08f0",
-      "title": "How to Build a Stair Lift for Cargo - Engineer Fix",
-      "url": "https://engineerfix.com/how-to-build-a-stair-lift-for-cargo/",
-      "summary": "Master the mechanical and electrical principles required to safely construct an inclined lift system for moving household cargo.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "722338492fde1d2d",
-      "title": "How to Build a Stair Lift for Cargo [Heavy-Duty DIY Guide]",
-      "url": "https://engineerskill.blog/diy-cargo-stair-lift-guide",
-      "summary": "Learn how to build a stair lift for cargo with our step-by-step industrial-grade guide. Build a safe, high-capacity system today. Read the full blueprint here!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "143e7ce68c5f045a",
-      "title": "Movie Showtimes and Theaters near Corona, CA | Fandango",
-      "url": "https://www.fandango.com/corona_ca_movietimes",
-      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Corona, CA.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "17d52ea470f33c33",
-      "title": "Roblox",
-      "url": "https://www.roblox.com/",
-      "summary": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an infinite variety of immersive, user-generated 3D worlds.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "922df017676b2e8b",
-      "title": "Roblox - Windows – Kostenloser Download und Spielen unter Windows ...",
-      "url": "https://apps.microsoft.com/detail/9pmf91n3lz3m?hl=de-DE&gl=DE",
-      "summary": "ROBLOX – TOLLE SPIELE AUS ALLEN GENRES. KOSTENLOS SPIELEN Die Auswahl an Spielen auf Roblox ist unübertroffen. Entspanne dich bei Koch-, Bau- und Simulationsspielen oder stürze dich in Rennspiele, Shooter-Kämpfe und spannende Survival-Spiele. Erlebe epische RPG-Abenteuer, errichte Imperien in Tycoon-Spielen, tritt in Sportspielen gegen andere an oder tauche mit Freunden in Horror-, Anime ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5dd37c758703ad94",
-      "title": "Roblox Creator Hub",
-      "url": "https://create.roblox.com/",
-      "summary": "Make anything you can imagine. Everything you need to start building on Roblox for free; join a global community of Creators and publish instantly to the world.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "661df5d202182f07",
-      "title": "Roblox – Wikipedia",
-      "url": "https://de.wikipedia.org/wiki/Roblox",
-      "summary": "Roblox ist eine Online- Spieleplattform, auf der Nutzer eigene Computerspiele erstellen und von anderen Nutzern erstellte Spiele spielen können. Sie wurde von den Entwicklern David Baszucki und Erik Cassel entwickelt und im Februar 2006 veröffentlicht.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4da9e5b5be11d999",
-      "title": "Shuttle - Best DIY Cargo Lift - Galaxy Lifts",
-      "url": "https://galaxylifts.com/cargo-lifts/shuttle/",
-      "summary": "The Shuttle cargo lift offers a reduced footprint that is the perfect fit for tight locations. DIY installation along with smooth operation and long-lasting quality.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1dacf2bf50b1b61b",
-      "title": "Über | Roblox",
-      "url": "https://about.roblox.com/de",
-      "summary": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each other in immersive, user-generated 3D worlds.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1bb36b9a84c24f7f",
-      "title": "‎Roblox App - App Store",
-      "url": "https://apps.apple.com/us/app/roblox/id431946152",
-      "summary": "Download Roblox by Roblox Corporation on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Roblox.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8bc841b7a2b5abfd",
-      "title": "Cannot create a Yahoo email account : r/yahoo - Reddit",
-      "url": "https://www.reddit.com/r/yahoo/comments/xx4sqe/cannot_create_a_yahoo_email_account/",
-      "summary": "How many steps after this (I can't check on my end without going too far) does this show up for you? (Could the too many unsuccessful attempts be related to a limit on the phone number used, u/Yahoo-CustomerCare?)",
+      "id": "fb69445150a95c21",
+      "title": "Used 2014 Acura RLX for Sale in Baltimore, MD | Edmunds",
+      "url": "https://www.edmunds.com/used-2014-acura-rlx-baltimore-md/",
+      "summary": "Save up to $3,553 on one of 38 used 2014 Acura RLXs in Baltimore, MD. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -618,7 +996,7 @@
       "content_types": [
         "tool",
         "sdk",
-        "community"
+        "retail"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -630,10 +1008,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "eee1979a3f05c747",
-      "title": "Create and configure plan regions - Autodesk",
-      "url": "https://www.autodesk.com/learn/ondemand/course/revit-architectural-design-cert-prep/unit/4GGsCHRLKOhK0dgIVzEx7j",
-      "summary": "Create and configure plan regions in this video you'll learn how to create a plan region",
+      "id": "914e484600671770",
+      "title": "Used 2014 Acura RLX for Sale in Saint Paul, MN | Edmunds",
+      "url": "https://www.edmunds.com/used-2014-acura-rlx-saint-paul-mn/",
+      "summary": "Save money on one of 4 used 2014 Acura RLXs in Saint Paul, MN. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -644,9 +1022,313 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video",
         "tool",
-        "sdk"
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "634d679548d188ff",
+      "title": "Used 2019 Acura RLX Hybrid for Sale - Edmunds",
+      "url": "https://www.edmunds.com/acura/rlx/2019/hybrid/",
+      "summary": "Save up to $3,553 on one of 16 used 2019 Acura RLX Hybrids near you. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c88fbd926cfb54b5",
+      "title": "Used 2020 Acura RLX for Sale Near Me | Edmunds",
+      "url": "https://www.edmunds.com/acura/rlx/2020/",
+      "summary": "Save up to $3,553 on one of 134 used 2020 Acura RLXs near you. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "899e13a668a916d6",
+      "title": "Used Acura RLX for Sale in Kearney, NE | Edmunds",
+      "url": "https://www.edmunds.com/used-acura-rlx-kearney-ne/",
+      "summary": "Save up to $4,110 on one of 103 used Acura RLXs for sale in Kearney, NE. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e75eb390b1038aaf",
+      "title": "Used Acura RLX for Sale in Waterloo, IA | Edmunds",
+      "url": "https://www.edmunds.com/used-acura-rlx-waterloo-ia/",
+      "summary": "Save up to $2,540 on one of 34 used Acura RLXs for sale in Waterloo, IA. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cfc4de2f7d888f45",
+      "title": "Used Acura RLX for Sale Near Me | Edmunds",
+      "url": "https://www.edmunds.com/used-acura-rlx/",
+      "summary": "Save money on one of 136 used Acura RLXs near you. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dadb18d20e696564",
+      "title": "Used Acura RLX Hybrid for Sale Near Me | Edmunds",
+      "url": "https://www.edmunds.com/used-acura-rlx-hybrid/",
+      "summary": "Save money on one of 16 used Acura RLX Hybrids near you. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cf02532f54bb411d",
+      "title": "Used Certified Pre-Owned Acura RLX for Sale Near Me | Edmunds",
+      "url": "https://www.edmunds.com/used-certified-pre-owned-acura-rlx/",
+      "summary": "Save money on one of 2 used certified pre-owned Acura RLXs near you. Find your perfect car with Edmunds expert and consumer car reviews, dealer reviews, car comparisons and pricing tools.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "931c7b75e08726e3",
+      "title": "Used Volkswagen cars for sale near Council Bluffs, IA",
+      "url": "https://www.cars.com/shopping/volkswagen/council_bluffs-ia/",
+      "summary": "Shop Volkswagen vehicles in Council Bluffs, IA for sale at Cars.com. Research, compare, and save listings, or contact sellers directly from 172 Volkswagen models in Council Bluffs, IA.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "retail"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4e566f8e9c6c2de8",
+      "title": "10 Online Jewelry Stores Our Editors Swear By - People.com",
+      "url": "https://people.com/online-jewelry-stores-11843878",
+      "summary": "Editors share the online jewelry stores they swear by, and the winners include celeb-worn brands like BaubleBar and Bonheur. Our staff also wears bling from Mejuri, Kendra Scott, Catbird, and more ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c1b25913da84564",
+      "title": "24 Best Places to Buy Jewelry Online in 2025 - StyleCaster",
+      "url": "https://stylecaster.com/lists/best-places-to-buy-jewelry-online/",
+      "summary": "How to Shop Jewelry Online, According to a Pro We get that shopping for an investment piece online can be a bit intimidating, but Steven Singer, owner of Steven Singer Jewelers, has a few tips.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "27a3413b3ab16c22",
+      "title": "71 Things Only The Best Players Can Make in Minecraft",
+      "url": "https://minecraft.video.tm/71-things-only-the-best-players-can-make-in-minecraft",
+      "summary": "Minecraft Viki (video wiki) https://minecraft.viki.gg 71 Pro Minecraft Builds Follow me on Twitter @skipthetweets Check out my",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "retail"
       ],
       "primary_type": "video",
       "routing_targets": [
@@ -658,24 +1340,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0bcbd893cf52889f",
-      "title": "Help | About Plan Regions | Autodesk",
-      "url": "https://help.autodesk.com/cloudhelp/2022/ENU/Revit-DocumentPresent/files/GUID-231E2653-8369-4F02-A78E-8A66AF4E4CEE.htm",
-      "summary": "A plan region defines a cut plane at a different height than the cut plane that is used for the rest of the view. Plan regions are useful for split level plans or for displaying inserts above or below the cut plane.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "b90d63307815570c",
+      "title": "A to Z list of common illnesses and conditions | NHS inform",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/a-to-z",
+      "summary": "A to Z list of common illnesses and conditions including their symptoms, causes and treatments.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -685,24 +1366,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "55ad0963d4d7bf6f",
-      "title": "How to set different view ranges in one floor plan in Revit",
-      "url": "https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-set-different-view-ranges-in-one-floorplan-in-Revit.html",
-      "summary": "The floors have different elevations on the level in Revit. The elements being under the highest floor are visible in the view but they should not be visible. If the depth of the view is decreased, other elements being in the lowest floor area are not visible. Is it possible to set different view ranges in one floor plan in Revit? To set multiple view ranges in one view create Plan Regions in ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "cf45cd70081c7ad6",
+      "title": "All Volkswagen Dealers in Council Bluffs, IA - Autotrader",
+      "url": "https://www.autotrader.com/car-dealers/volkswagen/council-bluffs-ia",
+      "summary": "Find Council Bluffs Volkswagen Dealers. Search for all Volkswagen dealers in Council Bluffs, IA 51501 and view their inventory at Autotrader",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -712,24 +1392,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "43b1e14f87ed771a",
-      "title": "Overriding the view range with plan regions - LinkedIn",
-      "url": "https://www.linkedin.com/learning/revit-view-range/overriding-the-view-range-with-plan-regions",
-      "summary": "A plan region is a sketch-based element that defines an enclosed area that has its own view range settings. This is useful to display clerestory windows or split level plans.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "248c0442e035fdfd",
+      "title": "BEST definition in American English | Collins English Dictionary",
+      "url": "https://www.collinsdictionary.com/us/dictionary/english/best",
+      "summary": "(bɛst) 1. Bestis the superlative of good. If you want further information the best thing to do is have a word with the driver as you get on the bus. 2. Bestis the superlative of well. James Fox is best known as the author of \"White Mischief,\" and he is currently working on a new book.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -739,24 +1418,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "09953d6cd394fe62",
-      "title": "Plan Views - Autodesk Knowledge Network",
-      "url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-43780EA2-1B9A-4EEA-AFC4-101716E88510.htm",
-      "summary": "Control the Visibility of Plan Regions After creating a plan region, you can make it visible or hide it in the plan view. Modify the View Range Establish or change the horizontal planes that control an object's visibility in plan views.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "5ca103d4b9e71c24",
+      "title": "Best Online Jewelry Stores 2026 - Forbes Vetted",
+      "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/best-online-jewelry-store/",
+      "summary": "Our editors researched reputable brands and scoured the market to round up the best online jewelry stores based on quality, variety and excellent service.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -766,24 +1444,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4e87f20a14d2580e",
-      "title": "Revit Plan Region: Create Multiple View Ranges in One Plan",
-      "url": "https://mashyo.com/plan-regions-in-revit/",
-      "summary": "Learn how to create a Revit plan region, set a separate view range, show high windows or split levels, hide boundaries, and fix common issues.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "70edf1ff8ac8aef6",
+      "title": "BEST Synonyms & Antonyms - 222 words | Thesaurus.com",
+      "url": "https://www.thesaurus.com/browse/best",
+      "summary": "Find 222 different ways to say BEST, along with antonyms, related words, and example sentences at Thesaurus.com.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -793,25 +1470,155 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "17328e9ed44fcc1a",
-      "title": "Seeing the exact same region while switching between plan views",
-      "url": "https://forums.autodesk.com/t5/revit-architecture-forum/seeing-the-exact-same-region-while-switching-between-plan-views/td-p/9808889",
-      "summary": "Also if the views were at exact same zoom level with exact position, it would make view switching smoother for my eyes, therefore the workflow seamless for my mind. So , is there a way to switch between plan views of different levels and see the exact same region in revit ?",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "56ff98b2d5987f4a",
+      "title": "Cameras for sale in Tulsa, Oklahoma | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/tulsa/cameras/",
+      "summary": "New and used Cameras for sale near Tulsa, Oklahoma on Facebook Marketplace, or have something shipped to you. Find great deals and use tools to sell and...",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "733a9967a9fbef3c",
+      "title": "Diseases, Conditions, and Medical Tests A-Z List on RxList",
+      "url": "https://www.rxlist.com/diseases-conditions-medical-tests/article.htm",
+      "summary": "The RxList disease and condition listing contains explanations of many medical conditions and tests. Disease articles are written by U.S. Board Certified Physicians. To use the listing, browse the terms by selecting a letter. Stroke occurs when part of the brain loses its blood supply and stops working.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "38dc36bed96e721b",
+      "title": "Expert Home Remodeling & Renovations East Northport | Best GC",
+      "url": "https://bestgc.com/",
+      "summary": "Best Enterprises, family owned and operated, located in the heart of East Northport, has successfully become one of the most trusted Home Improvement and General Contracting companies.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc4ae6d5eae8ddbd",
+      "title": "Fine Jewelry For Every Day | Mejuri",
+      "url": "https://mejuri.com/",
+      "summary": "Shop Mejuri’s Spend More, Save More Sale and save up to 25% on your fine jewelry favorites.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a842972a58595c11",
+      "title": "For consumers - ActiveLook",
+      "url": "https://www.activelook.net/pages/for-consumers",
+      "summary": "With ActiveLook-compatible glasses, athletes can view real-time training data, heart-rate zones, structured workout guidance, GPX navigation and smart alerts directly in their field of vision. AI-Training also creates personalized training plans that adapt to the athlete's performance, recovery and feedback.",
+      "discovery_channel": "broad_web+manufacturer_catalog",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0184654b44746868",
+      "title": "friv and youtube - Google Chrome Community",
+      "url": "https://support.google.com/chrome/thread/45488834/friv-and-youtube?hl=en",
+      "summary": "friv and youtube login to friv and youtube Details Accessing Websites, Windows, Developer",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
         "sdk",
         "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -821,40 +1628,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "511a289385126988",
-      "title": "Solved: Plan Region view range issues - Autodesk Community",
-      "url": "https://forums.autodesk.com/t5/revit-architecture-forum/plan-region-view-range-issues/td-p/13014200",
-      "summary": "Hi I used plan region to show my widows at staircase. Unfortunatelly at level2 it shows window from level 3 although view range of plan region is right in my opinion.What's wrong? [ The subject line of this post has been edited for clarity by Original: views]",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2ca6de43f39ac7d4",
-      "title": "Affordable Extended Stay Hotels | InTown Suites",
-      "url": "https://www.intownsuites.com/",
-      "summary": "InTown Suites provides affordable weekly and monthly rates with low or no deposit and no lease or credit check. Pay as you stay with one weekly cash or credit payment. Conveniently extend your stay online and enjoy free parking and access to area attractions at 195 extended stay hotels in 22 states. Be An InTown Insider For Suite Offers & Deals!",
+      "id": "c34d7a97105fec7d",
+      "title": "Home page – ActiveLook",
+      "url": "https://shop.activelook.net/collections/frontpage",
+      "summary": "Home page – ActiveLook ... ActiveLook",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -875,114 +1654,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "27699d8433d89bb9",
-      "title": "Dog Boarding Springfield, VA | Olde Towne Pet Resort",
-      "url": "https://oldetownepetresort.com/locations/springfield-dog-boarding/",
-      "summary": "Our dog boarding suites provide spacious, climate-controlled comfort with plush bedding and access to amenities that keep tails wagging. Owners can add premium enrichment activities, and for extra peace of mind, our facility is equipped with webcams so you can check in anytime.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "403503296790de93",
-      "title": "Embassy Suites by Hilton Alexandria Old Town",
-      "url": "https://www.hilton.com/en/hotels/wasotes-embassy-suites-alexandria-old-town/",
-      "summary": "Stay at our hotel in Alexandria, VA and enjoy spacious two-room suites, free cooked-to-order breakfast and complimentary cocktails, all steps from the DC metro.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1f50f09272c8d6ea",
-      "title": "EXCEL中如何显示、隐藏网格线 - 百度经验",
-      "url": "https://jingyan.baidu.com/article/4853e1e5b8dcab1908f72658.html",
-      "summary": "EXCEL中如何显示、隐藏网格线,EXCEL是常用办公软件之一，有很多的功能和使用技巧，用好它可达到事半功倍的效果，大幅提高办公效率，下面介绍下“网格线”方面的知识。",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "67cc29a81f6d026e",
-      "title": "Google Translate",
-      "url": "https://translate.google.is/?hl=en",
-      "summary": "Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "23d4fdb3bcb32f15",
-      "title": "HC Newsroom - Huawei News, Reviews, Opinions, and Updates - Huawei Central",
-      "url": "https://www.huaweicentral.com/",
-      "summary": "Huawei believes that Chinese AI technology is not advanced enough to deal with safety risks and problems at present. Hence, China should continue to build more...",
+      "id": "4008b6b73dea45bf",
+      "title": "HP Drucker – Scannen mit HP Scan and Capture (Windows)",
+      "url": "https://support.hp.com/de-de/document/ish_8004885-8008778-16",
+      "summary": "Installieren Sie HP Scan and Capture zum Scannen, Bearbeiten und Freigeben von Elementen mit einem Windows-Computer.",
       "discovery_channel": "broad_web",
       "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
@@ -1005,10 +1680,192 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d7d61d8e8e3e30d0",
-      "title": "Old Town Luxury Suites",
-      "url": "https://www.oldtownluxurysuites.com/",
-      "summary": "Located in the historic district of Old Town and just steps away from popular restaurants, cafés, fitness centers, shopping and so much more, this 35-unit luxury rental has been developed to accentuate the area’s culture while maintaining the transitional design of the building.",
+      "id": "a3c3c0d14e49fb96",
+      "title": "HP LaserJet Pro MFP - 使用 HP Scan 软件进行扫描 (Windows)",
+      "url": "https://support.hp.com/cn-zh/document/ish_6238561-6226064-16",
+      "summary": "了解 Windows 版 HP Scan 软件。 还可使用 HP Smart 应用程序从打印机扫描文档和照片、用电脑相机拍摄物体或将扫描工具用于保存在电脑上的文件。 使用 HP Smart 并将打印机与 HP 帐户配对，即可访问高级扫描功能，如扫描到云位置。",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "85007a0a9ccc1f14",
+      "title": "HP printers - Scan with HP Scan and Capture (Windows)",
+      "url": "https://support.hp.com/us-en/document/ish_7719271-7719350-16",
+      "summary": "Install HP Scan and Capture to scan, edit, and share items with a Windows computer.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "93dc7b7335d46c4e",
+      "title": "HP Universal Scan Software Software and Driver Downloads | HP® Support",
+      "url": "https://support.hp.com/us-en/drivers/hp-universal-scan-software/2101620481",
+      "summary": "undefined HP Universal Scan Software. This is HP’s official website to download the correct drivers free of cost for Windows and Mac.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c2413ce2458c2458",
+      "title": "HP 打印机 - 使用 HP Scan and Capture 扫描 (Windows)",
+      "url": "https://support.hp.com/cn-zh/document/ish_8004924-8008822-16",
+      "summary": "在您的电脑上，转至 HP Scan and Capture，从 Microsoft 商店安装该应用程序。 安装应用程序后，单击 启动 或 打开。 如果提示选择设备，请单击 设置。 否则，请单击 菜单 图标 ，然后单击 设置。 单击 选择设备，然后单击您的打印机或 摄像头。",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b3ae720afe9d034f",
+      "title": "i-Ready Login | Log In to i-Ready Connect",
+      "url": "https://login.i-ready.com/",
+      "summary": "i-Ready Login for students and teachers: Access i-Ready personalized instruction and adaptive assessments for mathematics and reading online.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "348f5649f91352e6",
+      "title": "IMPORTHTML - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093339?hl=en",
+      "summary": "Imports data from a table or list within an HTML page. Sample Usage IMPORTHTML (\"http://en.wikipedia.org/wiki/Demographics_of_India\",\"table\",4) IMPORTHTML (A2,B2,C2 ...",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "612feedeb9d51d54",
+      "title": "Imprimantes HP - Numériser avec HP Scan and Capture (Windows)",
+      "url": "https://support.hp.com/fr-fr/document/ish_8004895-8008786-16",
+      "summary": "Installez HP Scan and Capture pour numériser, modifier et partager des images grâce à un ordinateur Windows.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "145491d12ef0edc1",
+      "title": "Jared | Your Jewelry Store for Engagement & Fashion Jewelry | Jared",
+      "url": "https://www.jared.com/",
+      "summary": "Shop the perfect piece of jewelry for any occasion at Jared Jewelers. Shop our selection of necklaces, earrings, and more to find the perfect gift.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1031,10 +1888,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b27fc883b73df168",
-      "title": "Old Town Suites Key West",
-      "url": "https://keywest-bedandbreakfast.com/old-town-suites-key-west-key-west/",
-      "summary": "Get the real-time pricing and room options for your dates. The 3-star Old Town Suites lies in Duval district within a walking distance to Key West Butterfly and Nature Conservatory. There is also an a parking. Ripley's Believe It or Not Museum is 1.3 km from the guest house, while The Ernest Hemingway Home and Museum is 0.3 km away.",
+      "id": "8cc05b5a1f707e33",
+      "title": "Jewelry, Rings, Necklaces, Earrings, Gemstones | JTV",
+      "url": "https://www.jtv.com/",
+      "summary": "JTV Jewelry: Discover your Jewelry Love! JTV (Jewelry Television) is your premier shopping destination for jewelry, featuring rings, earrings, necklaces, bracelets and watches you love at the prices you love even more.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1057,12 +1914,39 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8003daf16f12621f",
-      "title": "Old Town Suites, Key West (updated prices 2026) - Booking.com",
-      "url": "https://www.booking.com/hotel/us/fiveoneseven-trumanave.html",
-      "summary": "This guesthouse features two large two-bedroom Queen suites (sleep 5 ppl), a cigar cottage with a Queen bedroom and a living room with a futon (sleeps 3 ppl), and a ground-floor Queen Studio. All suites include a full kitchen with a dining area.",
+      "id": "70cd7acdc52f7e1d",
+      "title": "La Vergne, TN Local News and More | NewsBreak",
+      "url": "https://www.newsbreak.com/la-vergne-tn",
+      "summary": "A massive new shopping and dining complex is headed to Gallatin, and developers say it could become one of the most important retail destinations in Sumner County.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "508805538a1bf2fd",
+      "title": "List of Diseases & Conditions- A-Z Index of Diseases, Conditions ...",
+      "url": "https://www.diseasefix.com/diseases-and-conditions/",
+      "summary": "The page provides quick access to a list of common diseases, syndromes, health conditions, and other topics of health importance. The list is organized alphabetically.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1083,12 +1967,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e5e13a14c9a507fa",
-      "title": "Old Town Suites, Key West - Unofficial Hotel Guide",
-      "url": "https://oldtownsuites.com/",
-      "summary": "Old Town Suites is a guesthouse-type property located on Truman Avenue at the very center of what is considered the historic district of Key West.",
+      "id": "726f2a06f94da9bb",
+      "title": "List of mental disorders - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_mental_disorders",
+      "summary": "The following is a list of mental disorders as defined at any point by any of the two most prominent systems of classification of mental disorders, namely the Diagnostic and Statistical Manual of Mental Disorders (DSM) or the International Classification of Diseases (ICD).",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1109,12 +1993,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3d6c0cf0664e316d",
-      "title": "Olde Towne Corporate Suites in Winchester, VA 22601 - 540-323...",
-      "url": "https://www.chamberofcommerce.com/business-directory/virginia/winchester/furnished-apartment-building/2017053669-olde-towne-corporate-suites",
-      "summary": "Olde Towne Corporate Suites located at 317 S Cameron St, Winchester, VA 22601 - reviews, ratings, hours, phone number, directions, and more.",
+      "id": "888e398e653a8bcf",
+      "title": "Lists of diseases - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lists_of_diseases",
+      "summary": "This article includes a biology-related list of lists.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1135,10 +2019,328 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2ec5d24d3f64df91",
-      "title": "Olde Towne Corporate Suites | Extended Stay Suites | Winchester, VA",
-      "url": "https://oldetownecorpsuites.com/",
-      "summary": "We offer extended stay suites for executives and families relocating to the area for temporary to long term stays. The suites are located in Downtown Winchester which is convenient to major highways and is an easy commute to many surrounding cities in the Northern Virginia area.",
+      "id": "45879839c922cdb0",
+      "title": "Medical Diseases & Conditions - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/diseases-conditions",
+      "summary": "Explore comprehensive guides on hundreds of common and rare diseases and conditions from the experts at Mayo Clinic.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "696293d1442ce32c",
+      "title": "Minecraft - Topic - YouTube",
+      "url": "https://www.youtube.com/channel/UCQvWX73GQygcwXOTSf_VDVg",
+      "summary": "At night monsters come out, so make sure to build a shelter before that happens. After that, your world is your imagination. Turn your hours into minutes with Minecraft! 2009 • Mojang Studios",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99ef3e83f9871c44",
+      "title": "Minecraft - YouTube",
+      "url": "https://www.youtube.com/Minecraft",
+      "summary": "We tell stories about the Minecraft Universe. Mysterious rifts are opening across the Overworld... but where do they lead? To the Sift – a new dimension coming to Minecraft Dungeons II. Gear up...",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a24b3447b62215e",
+      "title": "Minecraft [Videos] - IGN",
+      "url": "https://www.ign.com/games/minecraft/videos",
+      "summary": "No other video game has unleashed my creativity like Minecraft. Explore randomly generated worlds and build amazing things from the simplest of homes to the grandest of castles in the...",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d995f3fc19d0661b",
+      "title": "Minecraft Official Channel - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLs3XCzazey5kp2wYocSGnCqMp0XYf3YQt",
+      "summary": "A complete archive of videos uploaded to the official Minecraft channel, which is run by Mojang Studios. ...more",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f9ef2f4c9f83e7e0",
+      "title": "Minecraft Videos - GameSpot",
+      "url": "https://www.gamespot.com/games/minecraft/videos/",
+      "summary": "Watch all the latest videos about Minecraft from GameSpot.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "422822c4d4fe1afc",
+      "title": "Minecraft：Spawning Point ｜ S01 • EP01 - video Dailymotion",
+      "url": "https://www.dailymotion.com/video/x9dqb2u",
+      "summary": "Welcome to the first episode of *Minecraft: Our Spawning Point*! 🌍 In this exciting journey, we’ll dive into a fresh Minecraft survival world, establish our base, and uncover hidden treasures.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7b5e24a64badb2f",
+      "title": "Open New York",
+      "url": "https://opennewyork.org/",
+      "summary": "Open New York believes in homes for all and homes of all types—from social and government-subsidized housing to market-rate options. Our vision is a state where housing laws and policies support inclusive, stable communities, not exclusive neighborhoods and unaffordable living.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "30be876298c9b50b",
+      "title": "Products – ActiveLook",
+      "url": "https://shop.activelook.net/collections/all",
+      "summary": "Products – ActiveLook ... ActiveLook",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6a23cb04d3c9d12b",
+      "title": "Software de digitalização universal HP Downloads de software e drivers ...",
+      "url": "https://support.hp.com/br-pt/drivers/hp-universal-scan-software/2101620481",
+      "summary": "undefined Software de digitalização universal HP. Este é o site oficial da HP para baixar gratuitamente os drivers corretos de Windows e Mac.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d66212ea34666cfa",
+      "title": "Software HP Universal Scan Descargas de software y controladores ...",
+      "url": "https://support.hp.com/mx-es/drivers/hp-universal-scan-software/2101620481",
+      "summary": "undefined Software HP Universal Scan. Este es el sitio web oficial de HP para descargar gratuitamente los controladores correctos para Windows y Mac.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3c248363a6d7c9cd",
+      "title": "Symptom Checker - MediFind",
+      "url": "https://www.medifind.com/symptom-checker",
+      "summary": "Just share a few details about your symptoms and some basic health info, and we’ll show you a list of the most likely diagnoses. Our symptom checker takes just a few minutes to complete and it is completely anonymous. You will be asked to enter all of your symptoms and some basic health information.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d939bbf17644ca63",
+      "title": "The 12 Best Online Jewelry Stores of 2025, Tested - Byrdie",
+      "url": "https://www.byrdie.com/best-online-jewelry-stores-11748789",
+      "summary": "I spoke to experts and tested pieces from jewelry brands to find the best online jewelry stores. Discover the top jewelry stores online, perfect for every season, style, and budget.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1161,10 +2363,36 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b941a6774beb2eff",
-      "title": "Pet Boarding, Daycare & Grooming | Olde Towne Pet Resort",
-      "url": "https://oldetownepetresort.com/",
-      "summary": "From daily daycare to overnight stays, Olde Towne Pet Resort provides comprehensive pet care services to meet every pet’s needs. Our dog boarding in Northern Virginia and Maryland provides a safe, structured stay with 24/7 supervision. Dogs enjoy a balance of play, rest, and attentive care.",
+      "id": "0bba652c7530a75b",
+      "title": "The 25 Most Common Medical Diagnoses | Practice Fusion",
+      "url": "https://www.practicefusion.com/blog/25-most-common-diagnoses/",
+      "summary": "The list of 25 common diagnoses represents a combination of the prevalence of certain conditions in the U.S., as well as the kinds of practices using the EHR.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bc5fd00930b059c0",
+      "title": "The 26 Best Online Jewelry Stores in 2025 - PureWow",
+      "url": "https://www.purewow.com/fashion/best-online-jewelry-stores",
+      "summary": "I asked PureWow editors and sifted through my own jewelry collection to find the 26 best online jewelry stores, from affordable necklaces to timeless gold earrings and even where to buy diamond engagement rings online.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1187,12 +2415,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d242e37d08cbdcab",
-      "title": "Resilier abonnement AOL - La Communauté SFR",
-      "url": "https://la-communaute.sfr.fr/t5/ma-facturation-et-mes-consommations/resilier-abonnement-aol/td-p/2144319",
-      "summary": "Bonjour Comment faire pour résilier un vieux abonnement AOL qui date de 1998. Je suis passée par Facebook, au bout de plusieurs jours, on me dit d'appeler le service client, ce que j'ai fait. Après 16 minutes passées au téléphone, on me répond qu'on ne trouve pas mon dossier. Pourtant SFR me trouv...",
+      "id": "ed133a75bbff54f4",
+      "title": "The Complete List of Diseases A-Z - A To Z Dex",
+      "url": "https://atozdex.com/lists/diseases-a-z/",
+      "summary": "There are a total of 838 Diseases that have been compiled and organized in this comprehensive list. The selection includes only recognized human diseases with established names and clinical significance, validated against WHO, CDC, ICD classifications, and major medical literature.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1213,12 +2441,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d50adb08d071dbac",
-      "title": "Sign in to your account with a security key | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/security/sign-in-to-your-account-with-a-security-key",
-      "summary": "If you’re tired of having to remember or reset your password, try using a FIDO2–compliant security key to sign in to your Microsoft account instead. What is a security key? A security key is a physical device that you can use instead of your user name and password to sign in. Since it needs to be unlocked with a fingerprint or PIN, even if someone has your security key, they won’t be ...",
+      "id": "423f76079fa52bb1",
+      "title": "Top 10 Best Online Jewelry Stores & Websites in USA",
+      "url": "https://www.top10.com/online-jewelry-stores",
+      "summary": "Top 10 Best Online Jewelry Stores & Websites in USA Whether you're shopping for chic earrings, personalized necklaces, or engagement rings, there are plenty of great online jewelry stores for you.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1239,36 +2467,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dc98cb6262387f37",
-      "title": "TOP 10 BEST Camera Store in Palmdale, CA - Updated 2026 - Yelp",
-      "url": "https://www.yelp.com/search?find_desc=camera+store&find_loc=Palmdale%2C+CA",
-      "summary": "Looking for a camera store that sells drones and photography gear.",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "camera smart glasses; near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f99a277b2ea7e68",
-      "title": "Used Volkswagen Cars for Sale near San Luis, AZ - CarGurus",
-      "url": "https://www.cargurus.com/Cars/l-Used-Volkswagen-San-Luis-m55_L1132",
-      "summary": "Browse the best August 2026 deals on Volkswagen vehicles for sale in San Luis, AZ. Save $7,321 right now on a Volkswagen on CarGurus.",
+      "id": "7a6326eb744d4fdc",
+      "title": "Used Volkswagen Cars for Sale in Council Bluffs, IA",
+      "url": "https://www.autotrader.com/cars-for-sale/volkswagen/council-bluffs-ia",
+      "summary": "Test drive Used Volkswagen Cars at home in Council Bluffs, IA. Search from 192 Used Volkswagen cars for sale, including a 2013 Volkswagen Beetle 2.5, a 2013 Volkswagen Tiguan SEL, and a 2017 Volkswagen GTI S ranging in price from $6,900 to $42,988.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1291,12 +2493,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e3e38a4f033c1c27",
-      "title": "zeitüberschreitung pop.aol.com - Allgemeines Arbeiten / Konten ...",
-      "url": "https://www.thunderbird-mail.de/forum/thread/38920-zeit%C3%BCberschreitung-pop-aol-com/",
-      "summary": "Neuerdings habe ich massive schwierigkeiten mit meinen Konten, die bei AOL liegen, Morgens beim ersten mal aufrufen des TB geht alles einwandfrei, danach dann leider nicht mehr, ich bekomme ständig die Meldung \"Zeitüberschreitung mit dem Server pop.aol.com\" Dazu muss ich noch sagen, dass ich ausserdem noch ein GMX Konto drauf habe, das geht ...",
+      "id": "41a516c658b564ee",
+      "title": "Used Volkswagen for Sale in Council Bluffs, IA - CARFAX",
+      "url": "https://www.carfax.com/Used-Volkswagen-Council-Bluffs-IA_m34_c1821",
+      "summary": "Find the perfect used Volkswagen in Council Bluffs, IA by searching CARFAX listings. We have 130 Volkswagen vehicles for sale that are reported accident free, 83 1-Owner cars, and 95 personal use cars",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1305,9 +2507,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "retail"
       ],
-      "primary_type": "community",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1317,64 +2519,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2e9e11adc4797d8a",
-      "title": "《暗黑破坏神 4》的主线剧情是怎样的？ - 知乎",
-      "url": "https://www.zhihu.com/question/604407190",
-      "summary": "最后的结果是莉莉丝被放逐出庇护之地，而伊纳瑞斯想回归天堂，天堂不愿意要他，还把他交给地狱去受刑。 至于如何应对庇护之地以及这块土地上的人类，成了天堂地狱的共同问题。 天堂经过投票，以微弱优势选择了保留庇护之地。",
+      "id": "f801c4cf9efcef69",
+      "title": "Volkswagen Dealers in Council Bluffs, IA | Cars.com",
+      "url": "https://www.cars.com/dealers/buy/volkswagen/council_bluffs-ia/",
+      "summary": "Search Volkswagen dealerships in Council Bluffs, IA, read dealer reviews, view inventory, find contact information or contact a dealer directly on Cars.com.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dc760b2bec794a0b",
-      "title": "【暗黑4】全网最专业终局玩法指南！分享所有玩法最优加点！",
-      "url": "https://www.bilibili.com/video/BV1te516mEjX/",
-      "summary": "从入门到毕业全流程+最优刷图路线，【暗黑4】5大最爽邪修方法，新号看完一天毕业，附战争计划最优加点，暗黑破坏神4国服萌新入门必看！ 1-70级练级流程，满级之后干什么？ 暗黑4国服免费！",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "de0021cd5282df2f",
-      "title": "下饭神器麻婆豆腐 - 百度经验",
-      "url": "https://jingyan.baidu.com/article/ea24bc3904e8329b63b3315b.html",
-      "summary": "下饭神器麻婆豆腐,滑滑嫩嫩，麻辣鲜香该文章来自豆果美食达人作者兔子爱暖食 调一碗料汁:郫县豆瓣酱1勺，生抽1勺，老抽1勺，白糖1勺，花椒粉半勺，清水半碗，倒入锅中",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1395,12 +2545,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ad2ed49d2c0b04f9",
-      "title": "二小姐的笔 的想法: 终于吃上这口地道的麻婆豆腐 | #美食随手晒一晒 #麻婆豆腐 #记录生活 #春熙路 号称 ...",
-      "url": "https://www.zhihu.com/pin/2026424638356374328",
-      "summary": "二小姐的笔 的想法: 终于吃上这口地道的麻婆豆腐😏😏 | #美食随手晒一晒 #麻婆豆腐 #记录生活 #春熙路 号称成都市最好吃… - 知乎 二小姐的笔 护士执业证持证人 终于吃上这口地道的麻婆豆腐😏😏 | #美食随手晒一晒 #麻婆豆腐 #记录生活 #春熙路 号称成都市最好吃最地道麻婆豆腐吃到了 运气超级 ...",
+      "id": "6512398cfcce76fe",
+      "title": "Volkswagen For Sale In Council Bluffs, IA - Carsforsale.com®",
+      "url": "https://www.carsforsale.com/volkswagen-for-sale-in-council-bluffs-ia-C744417-L105979",
+      "summary": "Find 88 Volkswagen as low as $7,200 in Council Bluffs, IA on Carsforsale.com®. Shop millions of cars from over 22,500 auto dealers and find the perfect vehicle.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "76b66aeefa7a4f14",
+      "title": "VW Lease & Finance Specials | VW Discounts near Council Bluffs, IA",
+      "url": "https://www.baxtervw.com/volkswagen-specials-near-la-vista-ne/",
+      "summary": "Our Volkswagen dealership near Council Bluffs, IA, makes it easy to finance or lease a new Volkswagen with our exclusive VW specials. View them now and save big!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1421,12 +2597,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1198231ff2ff6e6b",
-      "title": "家常版麻婆豆腐 - 百度经验",
-      "url": "https://jingyan.baidu.com/article/20b68a888d95b2386dec624a.html",
-      "summary": "步骤 1 老豆腐一块，根据个人需要采购 2 切成小方块，大小适中，大概两厘米左右，太小容易碎，太大不容易入味。 3 适量油，不用太多，因为肉馅会出油，1勺郫县豆瓣酱，1勺胖子麻辣鱼料（没有也可以不放，这个是重庆口味）炒制肉馅变色。 4 放入豆腐块，轻轻翻炒，避免豆腐散碎。翻至每块 ...",
+      "id": "e2e2f4356a983150",
+      "title": "Walmart Camera Store in Tulsa, OK| Photo Camaras, Web Cameras, Security ...",
+      "url": "https://www.walmart.com/store/576-tulsa-ok/camera-store",
+      "summary": "Shop for camera equipment at your local Tulsa, OK Walmart. We have a great selection of camera equipment for any type of home. Save Money. Live Better.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5df0a338ac555780",
+      "title": "Zales | Your Online and Local Jewelry Store",
+      "url": "https://www.zales.com/",
+      "summary": "Zales carries a wide selection of jewelry from engagement rings to fashion jewelry! Explore our jewelry online or find a store near you!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1447,12 +2649,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0d4be391f18af98d",
-      "title": "无敌下饭蒜香麻婆豆腐 - 百度经验",
-      "url": "https://jingyan.baidu.com/article/9989c746a2b4aab748ecfea3.html",
-      "summary": "无敌下饭蒜香麻婆豆腐,宝宝们你们是不是也喜欢吃麻婆豆腐呢？今天和大家分享一个简单方法就能做出饭店级别的麻婆豆腐豆腐，快和我一起做起来吧该文章来自豆果美食达人作者昊奕私厨",
+      "id": "7a3ee9c8fc662cd6",
+      "title": "Принтеры HP - Сканирование с помощью приложения HP Scan and Capture ...",
+      "url": "https://support.hp.com/kz-ru/document/ish_8004916-8008555-16",
+      "summary": "Установка приложения HP Scan and Capture для сканирования, редактирования и совместного использования элементов на компьютере с ОС Windows.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1473,38 +2675,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9e311ceda1c67889",
-      "title": "暗黑4 S15 符文之语配方、地狱火炬、毁灭及其他彩蛋清单",
-      "url": "https://www.bilibili.com/video/BV1kQex6AEv4/",
-      "summary": "，【琉璃】S15经典回归，现在可以在暗黑4制作符文之语装备了！ ，暗黑4游侠S15赛季BUG演示，暗黑破坏神4第15赛季术士开荒攻略，轻松自走全屏喷火。 暗黑4术士王朝了！",
+      "id": "5211b72daadc015a",
+      "title": "为什么喝西梅汁会拉肚子，但吃西梅或西梅干却一点效果都没有？ - 知乎",
+      "url": "https://www.zhihu.com/question/662278495",
+      "summary": "亲身体验 为了写篇文章， 昨天上午特意去便利店买了一瓶西梅汁，想试一下它的威力。 一口气把一瓶250ml喝完了，那效果真的是绝了，一下午跑厕所七八次。到后面肚子里都没货了，还要继续拉，人都快拉虚脱了，最后还是吃了止泻药才好转的，今天肚子都还在咕咕作响。（这效果比用于肠镜准备 ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "01d063a6cfa1660f",
-      "title": "暗黑4巅峰终局攻略｜老手实测，把每1点都用在刀刃上，100级后，巅峰加点“反着来” - 知乎",
-      "url": "https://zhuanlan.zhihu.com/p/2025541994299007886",
-      "summary": "玩 暗黑4 到100级， 巅峰点数 凑够225点，是不是反而更懵了？ 我前两个赛季，100级后犯了个致命错误：盲目补满所有过路点，把雕文平均升级，结果伤害没涨多少，高层还是被秒——后来实测优化了3次，才发现终局巅峰的核心，根本不是“补满”，而是“优化”。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1525,12 +2701,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "37f4985afdce7440",
-      "title": "暗黑4终局boss攻略-暗黑破坏神4终局boss攻略图文汇总-游侠网",
-      "url": "https://gl.ali213.net/html/2024-9/1490525.html",
-      "summary": "暗黑破坏神4中有许多的boss，很多玩家都想知道这些boss的位置、掉落物品都有哪些，终局一共有6位boss：格里戈利、瓦尔申、安达利尔、都瑞尔、齐尔领主、冰中野兽，以下就是详细的暗黑破坏神4终局boss攻略图文汇总，一起来看看吧。",
+      "id": "f02ac2c7e68e75dc",
+      "title": "交感神经、副交感神经、迷走神经的区别和功能是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/37461033",
+      "summary": "副交感神经是功能概念，而非形态概念。迷走神经中的副交感成分是副交感神经的一部分，也是最主要的一部分，司整个胸部与上腹部内脏。其余的副交感神经还有动眼神经、面神经、舌咽神经和盆神经中的副交感成分。 交感神经起源于骨髓胸腰段灰质侧角。 交感、副交感神经合称自主神经，主要 ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1551,12 +2727,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c2ba4943b8c8e299",
-      "title": "暗黑破坏神4剧情流程攻略-通关主线任务攻略_3DM单机",
-      "url": "https://www.3dmgame.com/gl/3878425.html",
-      "summary": "《暗黑破坏神4》剧情流程攻略，通关主线任务攻略。 《暗黑 破坏神4》是一款由暴雪娱乐公司开发的动作角色冒险游戏（俗称ARPG游戏）。 本作为经典的暗黑破坏神系列最新的续作，是一款强调玩家互动的开放世界arpg游戏。 故事发生在暗黑3夺魂之镰后几十年。",
+      "id": "d4a38ea96be5d97c",
+      "title": "各大软件公司如何发现企业/个人使用了盗版软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/341795543",
+      "summary": "比如网上经常看到Adobe，CoreDRAW等公司给某公司发律师函的情况。请问他们是通过何种技术或者手段锁定某…",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1577,12 +2753,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0c1335ae54dd8871",
-      "title": "暗黑破坏神4毁灭之域怎么做-毁灭之域任务攻略-游侠网",
-      "url": "https://gl.ali213.net/html/2023-6/1089867.html",
-      "summary": "暗黑破坏神4毁灭之域怎么做？ 一些玩家还不知道毁灭之域任务怎么完成，那么下面就给大家带来暗黑破坏神4毁灭之域任务攻略。 暗黑破坏神4毁灭之域任务攻略 1、首先我们需要与菲兰进行对话，结束对话即可开启毁灭之域任务。",
+      "id": "39f687866a5cef9f",
+      "title": "姜维临终一计害三贤，是怎么回事？ - 知乎",
+      "url": "https://www.zhihu.com/question/22801535",
+      "summary": "姜维的计策，从见到钟会时就开始酝酿了，因为他发现了一个秘密——钟会有异志！ 当时，钟会、邓艾两路大军进攻蜀国，在前期战事失利的情况下，姜维退兵据守剑阁，魏军一时无法攻入。 谁知邓艾偷渡阴平，击败诸葛瞻，兵临成都，刘禅投降，并下令姜维停止抵抗，就地投降。",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1603,12 +2779,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "06d3e7e46dcf10b9",
-      "title": "暗黑破坏神不朽毁灭终焉怎么过 毁灭终焉关卡攻略_百度贴吧",
-      "url": "https://tieba.baidu.com/p/7953940012",
-      "summary": "毁灭终焉这个本是在藏书馆，需要35级才能参与，副本的boss叫巴尔。 H1+会掉风手、随从腰带、狼鞋，H2+会掉落游商戒指1和裹布戒指1，遗泽项链以及敦促项链。 该副本分为多个阶段，第一阶段主要是帮助塔拉亚清小怪，在遇到该npc之前将遇到的小怪都清理了。",
+      "id": "7629fe3b13f176a5",
+      "title": "广州视源（CVTE）网上平均分歧很大，到底这个公司怎么样？待遇怎么样？有么有股票？",
+      "url": "https://www.zhihu.com/question/28530349",
+      "summary": "广州视源（CVTE）网上平均分歧很大，到底这个公司怎么样？待遇怎么样？有么有股票？",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1629,12 +2805,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4b7cf03ffc402625",
-      "title": "正宗四川麻婆豆腐 - 百度经验",
-      "url": "https://jingyan.baidu.com/article/a65957f47fc94565e67f9bfd.html",
-      "summary": "正宗四川麻婆豆腐,酷爱吃豆制品的我，喜欢把豆腐做成不同的菜式。当中必须有麻婆豆腐，虽然是豆腐，但非常下饭，比肉还受欢迎！麻辣口味的爽和豆瓣酱的咸香，完美搭配！该文章来自豆果美食达人作者颖淇宝贝",
+      "id": "35b0a502fdab7be9",
+      "title": "怎么评价蓝奏云这个网盘，他们靠什么盈利？ - 知乎",
+      "url": "https://www.zhihu.com/question/266046549",
+      "summary": "这个域名，是蓝奏盘（蓝奏·云存储 (lanzou.com)）的站长 站长 很早就注册的，比百度都注册的早，所以 lanzou.com 和 baidupan.com 的域名持有者是一个人， 跟 pan.baidu.com 没有一毛钱关系。 baidu.com 和 baidupan.com 都是一级域名， 而 pan.baidu.com 是二级域名，如同 pan.qq.com 是二级域名一样。 而且当初（大概2017 ...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1655,12 +2831,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0e3f340b767f5527",
-      "title": "笔记本外接显示器间歇性黑屏是什么原因？ - 知乎",
-      "url": "https://www.zhihu.com/question/52890380",
-      "summary": "最近发现有很多朋友有类似的问题，那我就较为系统地说一说我遇到的问题和解决方案。 问题描述： 华硕飞行堡垒笔记本电脑，通过HDMI接口外接显示器后，显示器出现间歇性黑屏的异常情况，但拔掉笔记本电源线后便恢复正常。 解决方案： 总体思路：重装华硕官方版本集成显卡驱动程序（Intel ...",
+      "id": "38491b1b852d2bd1",
+      "title": "惠普通用扫描软件 软件和驱动程序下载 | HP® 支持",
+      "url": "https://support.hp.com/cn-zh/drivers/hp-universal-scan-software/2101620481",
+      "summary": "undefined 惠普通用扫描软件. 这是 HP 官方网站，可免费为 Windows 和 Mac 下载正确的驱动程序。",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1681,116 +2857,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "11acd72167dc86da",
-      "title": "终章：承诺_暗黑破坏神4图文全攻略-剧情流程雕像支线全收集-全职业BD_3DM单机",
-      "url": "https://www.3dmgame.com/gl/3887317_131.html",
-      "summary": "《暗黑破坏神4》图文攻略百科，全流程全支线全地城事件及莉莉丝雕像收集。 《暗黑破坏神4》职业指南及系统详解。 憎恨之躯资料片全攻略。 《暗黑破坏神4》是一款由暴雪娱乐公司开发的动作角色冒险游戏（俗称ARPG",
+      "id": "89b88778768e8fd0",
+      "title": "火绒安全我在安装的时候把安装目录改成了D盘然后显示无法安装在加密目录下是咋回事啊？ - 知乎",
+      "url": "https://www.zhihu.com/question/400924117",
+      "summary": "火绒安全我在安装的时候把安装目录改成了D盘然后显示无法安装在加密目录下是咋回事啊？",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0eb4a82ef53082d0",
-      "title": "请问戈尔的毁灭之握真的是旋风蛮毕业装备吗？【暗黑4吧】_百度贴吧",
-      "url": "https://tieba.baidu.com/p/8458457525",
-      "summary": "请问戈尔的毁灭之握真..我看好多主播都说这个毕业，然后国外那个蛮神ROB毕业套也是配的这个。 但是为什么我自己用感觉这一下伤害不怎么高呢？ 我是转3圈放一下触发这个特效。 是不是我转的圈数不够？",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a11aa7764dc8fcf",
-      "title": "麻婆豆腐 - 知乎",
-      "url": "https://www.zhihu.com/topic/20436573/intro",
-      "summary": "麻婆豆腐也称为陈麻婆豆腐，是一道中国传统名菜，2010年入选成都“非遗”名录。制作原料主要有豆腐、牛肉（亦可使用猪肉）、辣椒和花椒等。麻婆豆腐始创于清代同治年间，据说因为其创始人陈刘氏脸上有麻子，所以便称为麻婆豆腐。 知乎小知 摘录于 2020-04-24 【小海家庭厨房】-下饭好菜麻婆 ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d09d2ba3a775d14f",
-      "title": "麻婆豆腐的做法（英文版) - 百度经验",
-      "url": "https://jingyan.baidu.com/article/08b6a591980fa455a80922c3.html",
-      "summary": "Mapo tofu is made as follows:（麻婆豆腐的做法如下：） 1、Prepare a fresh piece of tender tofu and a package of mapo tofu seasoning（准备一块新鲜的嫩豆腐，准备一包麻婆豆腐调料包）： 2、Cut the bean curd into 2*2cm pieces, then quickly boil them in boiling water, then remove（将豆腐切成2*2cm大小的块，在开水中快速烫开，随后捞起 ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "01b70c7a03f5f48e",
-      "title": "麻婆豆腐粉丝煲 - 百度经验",
-      "url": "https://jingyan.baidu.com/article/9113f81b2a94886a3214c7c4.html",
-      "summary": "麻婆豆腐粉丝煲,买了一块豆腐准备做麻婆豆腐的，然后找了点白菜，后来又找到了最爱吃的地瓜粉丝，于是就有了这次的豆腐白菜粉丝煲啦该文章来自豆果美食达人作者敏子945",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
