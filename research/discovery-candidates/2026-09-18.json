@@ -1,38 +1,42 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-18T19:43:34.579065+00:00",
-  "candidate_count": 91,
-  "classifier_irrelevant_count": 82,
+  "discovered_utc": "2026-09-18T20:11:21.853661+00:00",
+  "candidate_count": 111,
+  "classifier_irrelevant_count": 84,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 8,
-    "broad_web": 63,
-    "developer": 20
+    "adjacent": 27,
+    "broad_web": 65,
+    "developer": 10,
+    "research": 10
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 1,
-    "adjacent": 8,
+    "direct": 1,
+    "enabling": 0,
+    "adjacent": 26,
     "speculative": 0,
-    "irrelevant": 82
+    "irrelevant": 84
   },
   "type_counts": {
-    "model": 8,
-    "review": 1,
-    "news": 48,
-    "research": 1,
-    "tool": 37,
-    "sdk": 20,
+    "model": 4,
+    "review": 9,
+    "news": 59,
+    "research": 11,
+    "tool": 12,
+    "sdk": 10,
+    "hack": 2,
     "optics": 1,
-    "policy": 1,
-    "retail": 2,
-    "community": 3
+    "policy": 2,
+    "retail": 4,
+    "teardown": 2,
+    "community": 13
   },
   "routing_counts": {
-    "adjacent_radar": 8,
-    "development_hacking": 2,
-    "reject_noise": 82,
-    "research_news_review": 9,
+    "adjacent_radar": 26,
+    "model_catalog_review": 2,
+    "reject_noise": 84,
+    "report_card_evidence": 3,
+    "research_news_review": 27,
     "research_optics": 1
   },
   "policy": {
@@ -47,54 +51,57 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "3d9426971aaace1b",
-      "title": "Sam's Club Hours",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/171/~/sams-club-hours",
-      "summary": "Sam's Club Hours Find any club's location or directions, contact details by department, hours by department like pharmacy or optical and more by using the Sam's Club Finder.",
+      "id": "a3712b09b63cd15b",
+      "title": "AI Smart Glasses with Prescription | Smart Glasses with Rx Lenses ...",
+      "url": "https://eydology.com/collections/ai-smart-glasses",
+      "summary": "Shop AI smart glasses with prescription lenses. Enjoy real-time translation, voice control, and stylish frames with customizable Rx options for everyday use.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter; Xiaodu AI glasses",
+      "query": "prescription smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "enabling",
+      "relationship": "direct",
       "content_types": [
-        "tool",
         "optics"
       ],
-      "primary_type": "tool",
+      "primary_type": "optics",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
         "research_optics"
       ],
-      "triage_priority": "low",
+      "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "enabling technology signals: optical",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5ad02f92bb049050",
-      "title": "2026 Elevance Risk Assessment Flashcards | Quizlet",
-      "url": "https://quizlet.com/1057957506/2026-elevance-risk-assessment-flash-cards/",
-      "summary": "If a beneficiary currently has drug coverage through another carrier, you must verify their prescriptions would be covered under our plan's formulary, too. The drugs that are actually covered may vary from one carrier to another or one plan to another.",
+      "id": "99ee43d6c2d54c88",
+      "title": "SSRI Drugs - List of Common Brands & Generics",
+      "url": "https://www.drugs.com/drug-class/ssri-antidepressants.html",
+      "summary": "Browse the full SSRI drugs list of common brands and generics. See how each medication works, review side effects, doses and savings tips.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "review"
       ],
-      "primary_type": "news",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
+        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -103,37 +110,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1d6348f2271a861d",
-      "title": "Anthem - Risk Prevention Flashcards | Quizlet",
-      "url": "https://quizlet.com/603809188/anthem-risk-prevention-flash-cards/",
-      "summary": "If a beneficiary currently has drug coverage through another carrier, you must verify their prescriptions would be covered under our plan's formulary, too. The drugs that are actually covered may vary from one carrier to another or one plan to another. True.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "53ef6e99d63eaa83",
-      "title": "Home - City of Warren",
-      "url": "https://www.cityofwarren.org/",
-      "summary": "Seasonal Library and Parks and Recreation activities. Please be advised: Any exchange of information on The City of Warren’s website may be subject to The Freedom Of Information Act. (F.O.I.A.)",
+      "id": "57c545f3aa2adb64",
+      "title": "12 Gorgeous Beaches near Spring Hill, FL - Wild",
+      "url": "https://itiswild.com/best-beaches-near-spring-hill/",
+      "summary": "Spring Hill has a dozen beaches within an hour’s drive. Here, visitors will find quiet options that crowds have yet to discover, as well as bustling beaches near Clearwater. Alternatively, beachgoers can escape to remote islands operated by state parks and relax in a pristine natural setting.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -144,12 +124,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -158,12 +137,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "135a5a1dd5785c82",
-      "title": "If a beneficiary currently has drug coverage - studyx.ai",
-      "url": "https://studyx.ai/questions/4m9jhsz/if-a-beneficiary-currently-has-drug-coverage-through-another-carrier-you-must-verify",
-      "summary": "The text explicitly states the necessity of verifying a beneficiary's prescriptions when they have drug coverage through another carrier. This is because drug coverage can vary from one carrier or plan to another, meaning a drug covered under one plan might not be covered under another.",
+      "id": "7c50535f7b3c4399",
+      "title": "29 Best & Fun Things to Do in Spring Hill (FL)",
+      "url": "https://thetouristchecklist.com/things-to-do-in-spring-hill-fl/",
+      "summary": "Spring Hill, Florida, is a perfect destination for vacations, adventure tours, Outdoor relaxation, and other fun recreational activities, as there are quite some fun things to do in Spring Hill, FL.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -185,12 +164,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d3b26f5804cb531e",
-      "title": "If a beneficiary currently has drug coverage through another ...",
-      "url": "https://brainly.com/question/47575627",
-      "summary": "A Formulary cross-check is required when a beneficiary has drug coverage through another carrier to ensure their prescriptions would be covered under the new plan's formulary, due to differences in coverage between plans.",
+      "id": "9003de94ecd0e057",
+      "title": "Cities Near Me - Spring Hill, Florida | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Spring+Hill,+FL",
+      "summary": "Find the top 15 cities, towns, and suburbs near Spring Hill, FL, like Bayonet Point and Jasmine Estates, and explore the surrounding area for a day trip.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -212,12 +191,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c3d05584d602c912",
-      "title": "If a beneficiary currently has drug coverage through another ...",
-      "url": "https://brainly.com/question/38853434",
-      "summary": "It's essential to verify if a beneficiary's prescriptions are covered under a new drug plan since drug coverage can differ significantly among plans. Each plan may have its own formulary that lists the medications it covers, which necessitates this check. The statement is true.",
+      "id": "e7e61b62bbd09625",
+      "title": "Cities Nearby Spring Hill, Florida, United States",
+      "url": "https://www.thecitiesnow.com/united_states/florida/spring_hill",
+      "summary": "Find five hundred cities near Spring Hill, Florida, United States from closest to farthest by distance. Distances from Spring Hill to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -239,12 +218,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a62263257b704eb2",
-      "title": "If a beneficiary currently has drug coverage through another ...",
-      "url": "https://www.gauthmath.com/solution/c86EcY7ukWJ/If-a-beneficiary-currently-has-drug-coverage-through-another-carrier-you-must-ve",
-      "summary": "If a beneficiary currently has drug coverage through another carrier, you must verify their prescriptions would be covered under our plan's formulary, too. The drugs that are actually covered may vary from one carrier to another or one plan to another.",
+      "id": "7a8ad29a6c2d3c9d",
+      "title": "Escitalopram Dosage Guide + Max Dose, Adjustments - Drugs.com",
+      "url": "https://www.drugs.com/dosage/escitalopram.html",
+      "summary": "Detailed Escitalopram dosage information for adults, the elderly and children. Includes dosages for Depression and Generalized Anxiety Disorder; plus renal, liver and dialysis adjustments.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -266,12 +245,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cbe58eea827003f2",
-      "title": "If a beneficiary currently has drug coverage through another ...",
-      "url": "https://www.gauthmath.com/solution/1812922650536966/If-a-beneficiary-currently-has-drug-coverage-through-another-carrier-you-must-ve",
-      "summary": "If a beneficiary currently has drug coverage through another carrier, you must verify their prescriptions would be covered under our plan's formulary, too. The drugs that are actually covered may vary from one carrier to another or one plan to another.",
+      "id": "742f4b3c65a0baf4",
+      "title": "Escitalopram Patient Tips: 7 things you should know - Drugs.com",
+      "url": "https://www.drugs.com/tips/escitalopram-patient-tips",
+      "summary": "Easy-to-read patient tips for escitalopram covering how it works, benefits, risks, and best practices.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -293,142 +272,544 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9dd6a28f0e0c8bba",
-      "title": "Magnolia Tree - Trees - The Home Depot",
-      "url": "https://www.homedepot.com/b/Outdoors-Garden-Center-Outdoor-Plants-Trees/Magnolia-Tree/N-5yc1vZc8rqZ1z1bqm1",
-      "summary": "Get free shipping on qualified Magnolia Tree Trees products or Buy Online Pick Up in Store today in the Outdoors Department.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "5bce04d359650044",
+      "title": "Escitalopram Side Effects: Common, Severe, Long Term",
+      "url": "https://www.drugs.com/sfx/escitalopram-side-effects.html",
+      "summary": "Escitalopram Side Effects Written by Kristianne Hannemann, PharmD on Aug 5, 2026. Common side effects Serious side effects FAQ Generic name: escitalopram Brand name: Lexapro Key takeaways Escitalopram (Lexapro) can cause side effects that range from mild and short-lived to rare but serious. The most common escitalopram side effects include nausea, trouble sleeping, sleepiness, headache ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1b553f77adcfb5b5",
-      "title": "Magnolia Trees for Sale | 200+ Varieties - Nature Hills",
-      "url": "https://naturehills.com/collections/magnolia-trees",
-      "summary": "Shop 200+ Magnolia tree varieties online, from compact Little Gem to classic Southern Magnolia. Cold-hardy options for Zones 4-10. Expert-grown, backed by our guarantee, with free shipping on qualified orders. Find your perfect flowering tree today!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "efe0f9c3e2c89b9d",
-      "title": "12 Different Types of Magnolia Trees and Shrubs - The Spruce",
-      "url": "https://www.thespruce.com/twelve-species-magnolia-trees-and-shrubs-3269666",
-      "summary": "The magnolia tree is known for blooming eye-catching flowers and thriving across climates. Discover different types of magnolia trees with tips on identification and care.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "review"
       ],
-      "primary_type": "tool",
+      "primary_type": "review",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "70ec5c1c0047624d",
-      "title": "CBS Los Angeles - Breaking Local News, Weather & Investigations",
-      "url": "https://www.cbsnews.com/losangeles/",
-      "summary": "The Los Angeles Dodgers Foundation on Wednesday announced plans for a brand new set of Dodgers Dreamfields in Altadena as the city continues to recover from the devastating Eaton Fire in 2025.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "id": "e9f46a476174aa43",
+      "title": "Escitalopram Uses, Dosage, Side Effects, Warnings - Drugs.com",
+      "url": "https://www.drugs.com/escitalopram.html",
+      "summary": "Escitalopram is an SSRI antidepressant used to treat major depressive disorder in adults and teens, and generalized anxiety disorder in adults.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "announced"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af80e8205006d4fa",
+      "title": "Holiday Hours & Closings | Obstetrics & Gynecology of Atlanta",
+      "url": "https://www.obgynofatlanta.com/holiday-hours-closings",
+      "summary": "Closed – Friday, December 25, 2026 (Christmas Day) Please note that even when our offices are closed, a doctor and nurse-midwife are ALWAYS available at Northside Hospital for medical emergencies.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
       "content_types": [
         "model"
       ],
       "primary_type": "model",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2c0df9b8a1e46810",
-      "title": "College Students Membership Discount - Sam's Club",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/3938/~/college-students-membership-discount",
-      "summary": "Qualified college students who join Sam's Club online as a new member will receive a 60% discount on a Club membership or $50 off a Sam’s Club Plus membership. Join as a Plus member and get free Curbside Pickup, free Delivery from Club on eligible orders of $50 or more, free shipping on eligible orders of $50 or more and early shopping at select locations.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "04cdf907e3c096d4",
+      "title": "How Late Are Doctor's Offices Typically Open? Your After-Hours Guide",
+      "url": "https://wellbx.com/how-late-are-doctors-offices-typically-open-a-guide-to-after-hours-medical-care",
+      "summary": "Wondering how late are doctor's offices typically open? Learn about standard hours, plus options for urgent care, telehealth, and evening appointments.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6ec20f7c65a3686e",
+      "title": "Lexapro Dosage Guide - Drugs.com",
+      "url": "https://www.drugs.com/dosage/lexapro.html",
+      "summary": "Detailed dosage guidelines and administration information for Lexapro (escitalopram oxalate). Includes dose adjustments, warnings and precautions.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6eb20ef9734681de",
+      "title": "Lexapro Patient Tips: 7 things you should know - Drugs.com",
+      "url": "https://www.drugs.com/tips/lexapro-patient-tips",
+      "summary": "Lexapro (escitalopram) treats major depression in adults and teens 12+, and generalized anxiety disorder in adults and children 7+. It's generally well-tolerated with fewer side effects than many antidepressants.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "df99e4db52c33cbe",
+      "title": "Lexapro Side Effects: Common, Severe, Long Term - Drugs.com",
+      "url": "https://www.drugs.com/sfx/lexapro-side-effects.html",
+      "summary": "Learn about the side effects of Lexapro (escitalopram), from common to rare, for consumers and healthcare professionals.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "22592f73e3f3fe6d",
+      "title": "Lexapro Uses, Dosage, Side Effects & Warnings - Drugs.com",
+      "url": "https://www.drugs.com/lexapro.html",
+      "summary": "Lexapro is used to treat anxiety and major depressive disorder. Learn about side effects, interactions and indications.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f3dee041cf90c382",
+      "title": "Metformin: Dosage, Side Effects, Diabetes, PCOS - Drugs.com",
+      "url": "https://www.drugs.com/metformin.html",
+      "summary": "Learn how metformin treats type 2 diabetes, including dosage, side effects, warnings, and its off-label use for weight loss and PCOS. Reviewed drug info",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7b42745475e0982",
+      "title": "Spring Hill Florida - Things to Do & Attractions",
+      "url": "https://www.visitflorida.com/places-to-go/central-west/spring-hill/",
+      "summary": "Q. Where is Spring Hill? A. Spring Hill is situated 10-15 miles inland from the west coast of Florida, approximately 40 miles north of Tampa. It is part of Hernando County and is known for its beautiful natural surroundings and family-friendly atmosphere.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "806fc656d06d9900",
+      "title": "Spring Hill, Florida - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spring_Hill,_Florida",
+      "summary": "Spring Hill belongs to Florida's Nature Coast region and is in the Tampa-St. Petersburg-Clearwater metro area. It is east of Hernando Beach, southwest of Brooksville, and north of Tampa.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e9788f542b323a63",
+      "title": "Top 15 Things to Do in Spring Hill, FL - Spring Hill Attractions",
+      "url": "https://www.tripadvisor.com/Attractions-g34652-Activities-Spring_Hill_Florida.html",
+      "summary": "Locally owned microbrewery in the heart of Spring Hill, FL. All beers are brewed on premises. We also serve wine and cider. We do not serve food but are right next door to Rice and Beans (a Cuban …",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b5b8e91105f32577",
+      "title": "What Days Are Doctors Offices Closed? [The Complete Schedule]",
+      "url": "https://lifelogic.blog/what-days-are-doctors-offices-closed",
+      "summary": "Planning a visit? Learn what days doctors offices are closed, including weekends, federal holidays, and the common 'mid-week gap.' Find alternative care now.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1c382709559df70e",
+      "title": "What Days Are Doctor’s Offices Closed? - Biology Insights",
+      "url": "https://biologyinsights.com/what-days-are-doctors-offices-closed/",
+      "summary": "The majority of doctor’s offices operate on a standard Monday through Friday schedule, often aligning with a typical business day, such as 8:00 AM to 5:00 PM. This schedule reflects the traditional work week structure and allows time for administrative tasks.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "424dd36668223be2",
+      "title": "What Holidays Are Doctor's Offices Closed? Your Guide",
+      "url": "https://wellbx.com/general-health-guide-what-holidays-are-doctors-offices-closed",
+      "summary": "Learn what holidays are doctor's offices closed and what your options are for urgent medical care during these times. Plan ahead and avoid unexpected closures.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4dd0ad0a2133758b",
+      "title": "What holidays are doctors offices closed?- HotBot Topics",
+      "url": "https://www.hotbot.com/answers/what-holidays-are-doctors-offices-closed",
+      "summary": "Ultimately, knowing when doctors' offices are closed is crucial for ensuring you receive timely and appropriate medical care. By being aware of major national holidays, state and local observances, religious holidays, and even lesser-known holidays, you can plan ahead and avoid disruptions.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d79114a84ac9368",
+      "title": "What Holidays Are Most Doctor’s Offices Closed?",
+      "url": "https://biologyinsights.com/what-holidays-are-most-doctors-offices-closed/",
+      "summary": "Understand the holiday schedule for doctor’s offices. Determine guaranteed closures versus variable dates and find reliable options for urgent care.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "47d811330d300427",
+      "title": "What Time Do Doctor Offices Open? - ICGI",
+      "url": "https://www.icgi.org/what-time-do-doctor-offices-open/",
+      "summary": "What Time Do Doctor Offices Open? Exploring Scheduling and Accessibility Generally, doctor offices typically open around 8:00 AM or 9:00 AM on weekdays, although opening times can vary significantly depending on the specialty, location, and the individual practice’s scheduling preferences. Understanding Doctor Office Hours: A Comprehensive Guide Knowing what time do doctor offices open is ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c019cfcea97cc8b5",
+      "title": "When are most doctor`s offices open? - hospital-us.org",
+      "url": "https://hospital-us.org/medical-4980-when_are_most_doctor_s_offices_open.htm",
+      "summary": "In summary, while many doctor's offices are closed on weekends, there are alternative options available for those in need of medical care during these times. Always check with your healthcare provider or local urgent care centers for availability.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cc49c35591e97103",
+      "title": "Okta API call (LastLogIn) - API - Okta Developer Community",
+      "url": "https://devforum.okta.com/t/okta-api-call-lastlogin/23790",
+      "summary": "The Okta Usage report contains data about who has signed in to Okta during a specified time period. The report contains the following fields: User Login Number of Logins User Status Last Login_ISO8601 help.okta.com Report types | Okta A list of reports that you can run for your org.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 4,
       "keyword_hits": [
-        "shipping"
+        "api"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "model",
-        "tool"
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -438,10 +819,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bef9df534c78eb87",
-      "title": "Create SSRS Data Driven Subscriptions on Standard Edition",
-      "url": "https://www.sqlservercentral.com/articles/create-ssrs-data-driven-subscriptions-on-standard-edition",
-      "summary": "After some investigation, and much frustration, we realised that it was due to the fact that SQL Server Standard Edition doesn't support Data Driven Subscriptions.",
+      "id": "a6bbaa3f64559804",
+      "title": "\"Failed to fetch\" error on Sign In Widget - devforum.okta.com",
+      "url": "https://devforum.okta.com/t/failed-to-fetch-error-on-sign-in-widget/34656",
+      "summary": "This is a weird issue I’m baffled to not find any clues online so I’m not sure anyone outside our Okta host is experiencing. Prerequisites: Okta Client Application with email authenticator (can be a MFA) Either manually embedded Okta Sign In widget or the redirect sign in page from the Okta host. This can be reproduced accessing the Okta Admin Panel as well. Repro steps Sign in to the ...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -465,229 +846,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "575a51379613e32e",
-      "title": "Data driven subscription feature not available on standard edition ...",
-      "url": "https://learn.microsoft.com/en-us/answers/questions/1189212/data-driven-subscription-feature-not-available-on",
-      "summary": "According to the official documentation, the Standard edition of SQL Server Reporting Services does not support data-driven report subscriptions. I recommend you use the Developer version.",
+      "id": "a3dde3a2c2ecdfd3",
+      "title": "$ {source.login} - Questions - Okta Developer Community",
+      "url": "https://devforum.okta.com/t/source-login/5615",
+      "summary": "I am trying to change to use JSON web token and am trying to change my application to use Client_secret_jwt. From what I’ve read, I can only change it with Json as seen on the following link. https://developer.okta.com/…",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0d15fced3a2815af",
-      "title": "Data Driven Subscription Workaround – SQLServerCentral",
-      "url": "https://www.sqlservercentral.com/articles/data-driven-subscription-workaround",
-      "summary": "A guide for getting around the missing data driven subscription feature in Standard editions of Microsoft SQL Server.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7b701d781c0a2163",
-      "title": "Data-driven subscriptions in Reporting Services",
-      "url": "https://learn.microsoft.com/en-us/sql/reporting-services/subscriptions/data-driven-subscriptions?view=sql-server-ver17",
-      "summary": "For more information about the editions of SQL Server that support data-driven subscription functionality, see SQL Server Reporting Services features supported by its editions.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "62f9854d08af79d6",
-      "title": "Finding Missing Data-Driven Subscriptions after an SSRS Upgrade",
-      "url": "https://curatedsql.com/2026/03/19/finding-missing-data-driven-subscriptions-after-an-ssrs-upgrade/",
-      "summary": "Sandra Delany has misplaced some subscriptions: After migrating SSRS from SQL 2016 Enterprise Edition to SSRS SQL 2022 Standard Edition Data-driven subscriptions disappeared from within the SSRS web portal.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b6e8108d7d439828",
-      "title": "How To Grow And Care For Magnolia Trees - Southern Living",
-      "url": "https://www.southernliving.com/garden/magnolia-trees",
-      "summary": "Magnolia trees (Magnolia) are known for their waxy leaves and fragrant blooms. Ahead, discover our guide to choosing the right tree, plus a few growing tips.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9672ffd0bcfd263c",
-      "title": "Magnolia - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Magnolia",
-      "summary": "Magnolias are evergreen or deciduous trees or shrubs known for their large, fragrant, bowl- or star-shaped flowers with numerous spirally arranged reproductive parts, producing cone-like fruits in autumn that open to reveal seeds.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c4bd7dfc29288d05",
-      "title": "Magnolia Tree Guide | All You Need to Know about Magnolia Trees",
-      "url": "https://www.thetreecenter.com/complete-guide-to-magnolia-trees/",
-      "summary": "Read the Tree Center complete guide on Magnolia Trees. Understand how to care for Magnolia Trees, how to plant them, how much sun to allow, and more.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a39d5849fa4ce092",
-      "title": "Magnolia Tree Types, Planting & Care - Garden Design",
-      "url": "https://www.gardendesign.com/trees/magnolia.html",
-      "summary": "Learn about growing beautiful magnolia trees in your own garden. Discover the best magnolia varieties and get care tips.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9de01d93c8ab2b4a",
-      "title": "Magnolia Trees for Sale in Houston, Katy & Richmond TX - Bill Bownds ...",
-      "url": "https://bowndsnursery.com/trees/magnolias",
-      "summary": "Few trees match the elegance and drama of a Southern Magnolia (Magnolia grandiflora). With its massive, glossy evergreen leaves, fragrant white blooms that can measure 10 inches across, and velvety red seed pods, the Magnolia is the crown jewel of any Houston, Katy, or Richmond landscape.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -698,7 +862,7 @@
       "content_types": [
         "tool",
         "sdk",
-        "retail"
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -710,12 +874,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6c0f6d28f86327c7",
-      "title": "Magnolia Trees: Planting, Growing, and Pruning Magnolias",
-      "url": "https://www.almanac.com/plant/magnolia",
-      "summary": "Learn how to plant, grow, and care for magnolia trees. These fragrant, ancient bloomers add timeless beauty to any garden—big or small.",
+      "id": "a55523896e52640a",
+      "title": "AuthState is always null after Login is completed successfully",
+      "url": "https://devforum.okta.com/t/authstate-is-always-null-after-login-is-completed-successfully/25126",
+      "summary": "I using a react app with okta/okta-react: 6.7.0 I am having trouble making this work. I looked at a lot of posts and tried a lot of things but most seem older and do work for me. I am able to get to the Login Screen and login correctly. The Code calls my LoginCallbackPage but authState is always null. Below is the code from my code: App.tsx, ProtectedRoute.tsx, and LoginCallbackPage.tsx: App ...",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -737,12 +901,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f4c4962ac76c9d58",
-      "title": "Magnolia: All You Need To Know - Gardenia",
-      "url": "https://www.gardenia.net/genus/magnolia-tree",
-      "summary": "Magnolia trees are an ancient and diverse group of plants celebrated for their striking, aromatic flowers and broad, glossy leaves. This genus belongs to the family Magnoliaceae and comprises over 200 species, showcasing a rich variety of forms and adaptations.",
+      "id": "854f0146537ae056",
+      "title": "c# - Asp.net MVC integration with Okta - Issue Okta Claims replaced ...",
+      "url": "https://stackoverflow.com/questions/62302613/asp-net-mvc-integration-with-okta-issue-okta-claims-replaced-after-signinmanag",
+      "summary": "I am trying to implement Okta integration with Existing application. Current Application - it has login screen and user gets authenticated and signed in using SignInManager.PasswordSignInAsync meth...",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -764,12 +928,69 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bb32866d3c9d06b2",
-      "title": "MSFT - Microsoft Corp Financials | Morningstar",
-      "url": "https://www.morningstar.com/stocks/xnas/msft/financials",
-      "summary": "Review quarterly and annual revenue, net income, and cash flow for Microsoft Corp (MSFT:XNAS) stock through the last fiscal year.",
+      "id": "000e4ff5d1688401",
+      "title": "Correct behavior of Initiate login URI ( implicit/callback )",
+      "url": "https://devforum.okta.com/t/correct-behavior-of-initiate-login-uri-implicit-callback/14725",
+      "summary": "Okta will redirect users to the Initiate Login URI for your app if 1) your app is set to use the “OIDC Compliant” Login flow, 2) the user launches your application in their end-user dashboard (you would need to update your app to be visible to users), or 3) user is redirected to Okta via the App Embed Link What you are seeing is expected behavior: when the user clicks on that dashboard ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "889f11733d8f37a7",
+      "title": "GitHub - ignitrasusa/Ignitra",
+      "url": "https://github.com/ignitrasusa/Ignitra",
+      "summary": "Ignitra is a premium weight loss supplement formulated with natural, clinically-researched ingredients that work in synergy to support your body’s fat-burning processes. Unlike many other supplements that offer quick fixes or rely on artificial stimulants, Ignitra aims to deliver long-term weight management benefits by targeting the root causes of weight gain—slow metabolism, poor fat ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "tool",
+        "hack"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2e5afd0e4fe1bdc8",
+      "title": "Ignitra Ingredients, Side Effects + Supplement Dosage (Stop)",
+      "url": "https://oralhealthcomplete.com/ignitra-ingredients-side-effects/",
+      "summary": "Ignitra Ingredients, potential side effects, and proper supplement dosage. Learn why experts recommend stopping before use in this detailed review.",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -792,161 +1013,191 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4d857f692301b823",
-      "title": "SQL Server Case of the Week: SSRS Data-Driven Subscriptions Missing ...",
-      "url": "https://straightpathsql.com/sql-server-case-of-the-week-ssrs-data-driven-subscriptions-missing-after-migration-to-sql-server-2022/",
-      "summary": "After all of that, I found the answer: SSRS Standard Edition does not support data-driven subscriptions. You need Enterprise Edition. The original server was running SQL Server 2016 Enterprise. The new server, built from the AWS template, was SQL Server 2022 Standard.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5241ebeb55adf4bd",
-      "title": "SSRS Data Driven Subscription - SQL Server Tips",
-      "url": "https://www.mssqltips.com/sqlservertip/6616/ssrs-data-driven-subscription/",
-      "summary": "You should create the standard and data-driven subscription as per your requirements in the email or file share delivery. Go through the Microsoft SQL Server Reporting Services tutorial on MSSQLTips.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2dd70b2cb03fd984",
-      "title": "SSRS Data-Driven Subscriptions Missing After Migration to SQL Server ...",
-      "url": "https://straightpathsql.com/ssrs-data-driven-subscriptions-missing-after-migration-to-sql-server-2022-troubleshooting-guide/",
-      "summary": "If you’ve migrated SSRS to a new server and your data-driven subscriptions have disappeared, or new subscriptions are failing with a generic timeout error, this post walks through three separate issues we hit on a single migration and how we resolved each one.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b28abe381c83238c",
-      "title": "SSRS Data-Driven Subscriptions: A Developer's Complete Guide",
-      "url": "https://blog.christiansteven.com/blog/ssrs-data-driven-subscriptions",
-      "summary": "Unlock the power of SSRS data driven subscriptions. Learn to automate report delivery with dynamic recipient settings and parameters.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "24bf6554c918cceb",
-      "title": "SSRS subscription | Microsoft Community Hub",
-      "url": "https://techcommunity.microsoft.com/discussions/sql_server/ssrs-subscription/4364810",
-      "summary": "Data-driven report subscription is only available in the Enterprise edition; the OP uses Standard Edition. SQL Server Reporting Services features supported by editions - SQL Server Reporting Services (SSRS) | Microsoft Learn",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "67ad42ce61ac1292",
-      "title": "Study English, Stay Informed - Engoo Daily News",
-      "url": "https://engoo.com/app/daily-news",
-      "summary": "News content from around the world for English learners. Updated daily for all levels, beginner to advanced!",
+      "id": "4270f91bd08c454e",
+      "title": "Ignitra Review - Vital Verdict Lab | Expert Health Reviews",
+      "url": "https://vitalverdictlab.blog/ignitra-review/",
+      "summary": "Is Ignitra truly effective? Read VitalVerdictLab's 2026 independent review. We analyze clinical data, purity, and dosage to give you.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "study"
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f99ea03b84b5dcf4",
+      "title": "IGNITRA Review 2026: Does Ignitra Work? Find Out Now!",
+      "url": "https://partiotfix.substack.com/p/ignitra-review-2026",
+      "summary": "IGNITRA is a metabolic support supplement designed to help adults reactivate their metabolism and support healthy blood sugar levels. Unlike many weight management products on the market, IGNITRA takes a stimulant-free approach, relying on a proprietary blend of 11 natural, clinically studied ingredients to deliver results.",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7bc5c66b233b2fa8",
+      "title": "Login: Username and/or Email? - Okta Developer Community",
+      "url": "https://devforum.okta.com/t/login-username-and-or-email/8137",
+      "summary": "Hello, I’m attempting to create a login form that uses the fields: “Username or Email” and “Password”. I currently don’t have any restrictions set for login, but I was curious if it was possible for a user to login using their login and/or their primary_email?",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cbaa4039911ec514",
+      "title": "Okta Developer Community",
+      "url": "https://devforum.okta.com/login",
+      "summary": "A place for the Okta developer community to get information from the community in real time.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a99e1e87a49ac95",
+      "title": "spring - Login/Signin via Springboot with Okta - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/65004649/login-signin-via-springboot-with-okta",
+      "summary": "Login/Signin via Springboot with Okta Ask Question Asked 5 years, 9 months ago Modified 5 years, 9 months ago",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "19d68ca0bbee384c",
+      "title": "TOP 10 BEST Camera Stores in Clarksville, TN - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=camera+stores&find_loc=Clarksville%2C+TN",
+      "summary": "Which camera stores let you do hands-on demos and try gear before buying? What did people search for similar to camera stores in Clarksville, TN? People also searched for these in Clarksville:",
+      "discovery_channel": "adjacent+broad_web",
+      "query": "camera smart glasses; electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "hands-on"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a82ac3994d65c2b3",
+      "title": "Used Volkswagen cars for sale near Weaverville, NC",
+      "url": "https://www.cars.com/shopping/volkswagen/weaverville-nc/",
+      "summary": "Shop Volkswagen vehicles in Weaverville, NC for sale at Cars.com. Research, compare, and save listings, or contact sellers directly from 19 Volkswagen models in Weaverville, NC.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
         "research",
-        "tool"
+        "retail"
       ],
       "primary_type": "research",
       "routing_targets": [
@@ -958,125 +1209,22 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "28459d72bfe6044f",
-      "title": "Applying to Work at Penn",
-      "url": "https://www.hr.upenn.edu/PennHR/careers-at-penn/how-to-apply",
-      "summary": "Applying to Work at Penn Staff Positions at the University of Pennsylvania Penn's online jobs site allows candidates to easily search and apply for open staff positions. (Internal candidates can search jobs and apply by logging in to Workday.)",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "2b6352120499ace7",
+      "title": "why okta does not redirect back to service provider in SSO case",
+      "url": "https://stackoverflow.com/questions/70990384/why-okta-does-not-redirect-back-to-service-provider-in-sso-case",
+      "summary": "why okta does not redirect back to service provider in SSO case Ask Question Asked 4 years, 7 months ago Modified 3 years ago",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8d05710a55101c7c",
-      "title": "BancaNet - Citibanamex",
-      "url": "https://www.banamex.com/nuevabancanet/esp.html",
-      "summary": "Accede a BancaNet de Banamex para realizar operaciones bancarias en línea de manera fácil, segura y desde cualquier dispositivo.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "668f2ddba00150e1",
-      "title": "BancaNet Banca Electrónica Personal | Banamex",
-      "url": "https://www.banamex.com/personas/banca-digital/bancanet",
-      "summary": "Experimenta la seguridad y comodidad de BancaNet. Consulta saldos, realiza transferencias y paga servicios en línea. ¡Descubre más aquí!",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ec8afa43f5f680ca",
-      "title": "Bancanet Empresarial | Banamex",
-      "url": "https://www.banamex.com/es/empresasygobierno/cash-management/banca-electronica/bancanet.htm",
-      "summary": "BancaNet Empresarial es un producto ofrecido por Banco Nacional de México, S.A., Integrante del Grupo Financiero Banamex.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e1fe17bc672791ef",
-      "title": "BancaNet Empresarial | Banamex.com",
-      "url": "https://bancanetempresarial.citibanamex.com.mx/web-app/inicio",
-      "summary": "Accede a BancaNet Empresarial de Citibanamex para gestionar cuentas y realizar transacciones empresariales en línea de manera eficiente y segura.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1088,10 +1236,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ad565499bd813445",
-      "title": "BancaNet | Banamex.com",
-      "url": "https://bancanet.banamex.com/MXGCB/JPS/portal/LocaleSwitch.do?locale=es_MX",
-      "summary": "Descarga tus estados de cuenta, paga tu tarjeta, sevicios y mï¿½s desde donde estï¿½s.",
+      "id": "74010a3bc1275520",
+      "title": "(1 Pack) Ignitra ignitra Capsules | eBay Australia",
+      "url": "https://www.ebay.com.au/itm/306375648151",
+      "summary": "Expiry Date: 03/10/2027 Shipped promptly, received within 10 days despite overseas. Good seller and good product expiry 2028, all good. Thanks",
       "discovery_channel": "broad_web",
       "query": "upcoming smart glasses",
       "source": "Bing web RSS",
@@ -1114,10 +1262,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fe10644338b81c59",
-      "title": "BancaNet | Citibanamex.com",
-      "url": "https://bancanet.banamex.com/MXGCB/apps/hardtoken/flow.action",
-      "summary": "Accede a BancaNet de Citibanamex para realizar operaciones bancarias en línea con seguridad y comodidad.",
+      "id": "cc47b9ba44b308ce",
+      "title": "(@ignitra2026) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ignitra2026/",
+      "summary": "391 Followers, 9 Following, 30 Posts - @ignitra2026 on Instagram: \"IGNITRA ’26 STEP INTO THE GOLDEN ERA SEPTEMBER 1–2 | PON VIDYASHRAM VVKM\"",
       "discovery_channel": "broad_web",
       "query": "upcoming smart glasses",
       "source": "Bing web RSS",
@@ -1140,10 +1288,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c6a3d4f2f81dd818",
-      "title": "BancaNet | Citibanamex.com",
-      "url": "https://uat4.bancapersonal.banamex.com/MXGCB/",
-      "summary": "Accede a BancaNet de Citibanamex para realizar operaciones bancarias en línea de manera fácil y segura desde cualquier dispositivo.",
+      "id": "33e9cd133ee84358",
+      "title": "5 Myths About Ignitra Reviews and Complaints 2025 USA – Exposed! What ...",
+      "url": "https://emoryhealthblog.com/ignitra-reviews-and-complaints/",
+      "summary": "Uncover the 5 biggest myths about Ignitra Reviews and Complaints 2025 USA—debunked and exposed! Stop falling for the hype, read this first!",
       "discovery_channel": "broad_web",
       "query": "upcoming smart glasses",
       "source": "Bing web RSS",
@@ -1166,36 +1314,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2b6d24aa72b43219",
-      "title": "BancaNet | Citibanamex.com",
-      "url": "https://perftest.bancanet.banamex.com/apps/",
-      "summary": "¿Tienes una pregunta? Presiona Enter para iniciar la búsqueda Para obtener información sobre este tema comunícate al Centro de Atención Telefónica BancaNet Del Distrito Federal 1226-3990 Del Interior de la República 01 800 110 3990 De Estados Unidos y Canadá 01800 226 2639 / 01800 203 5093 De otro País por cobrar a EUA 1 314 275 6799",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "acdd17c339e7c01a",
-      "title": "Benefits of Club & Plus Membership - Sam's Club",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/382/~/benefits-of-club-&-plus-membership---sams-club",
-      "summary": "Free Delivery from Club: Plus members receive free select same-day or next-day free delivery from your local club on eligible orders over $50 ($12 fee for Club members). Early Shopping Hours: Plus members can shop up to an hour early in-club & avoid the crowds, select exclusions apply. See Sam's Club Hours.",
+      "id": "2b29085137c52d0d",
+      "title": "About - EA",
+      "url": "https://eaest.com/about/",
+      "summary": "Today, EA Engineering, Science, and Technology, Inc., PBC provides a broad range of environmental science and engineering solutions to a diverse customer base including federal and state government agencies, municipalities, private industry, and non-profit organizations.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1206,9 +1328,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1218,12 +1340,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b1dd6ce38f9960c4",
-      "title": "Bienvenido a IDSE :: Instituto Mexicano del Seguro Social",
-      "url": "https://idse.imss.gob.mx/imss/",
-      "summary": "Si deseas ingresar a IDSE utilizando los archivos de tu certificado digital e.firma del SAT, en el campo de Usuario deberás capturar el RFC de la empresa que representas y de la cual deseas enviar movimientos.",
+      "id": "ad115a8bdfa294fb",
+      "title": "Apply Now - EA",
+      "url": "https://eaest.com/apply-now/",
+      "summary": "Engineering services in Michigan, New York, and North Carolina are performed by affiliated entities of EA Engineering, Science, and Technology, Inc., PBC. Learn More About Affiliations",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1244,12 +1366,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d9c9d53496d79aee",
-      "title": "Bienvenido a IDSE :: Instituto Mexicano del Seguro Social",
-      "url": "https://idse.imss.gob.mx/imss/ResumenEmision.idse",
-      "summary": "Mensaje de acceso a IDSE Fecha: 17 de Septiembre de 2026 Ha ocurrido un mensaje con código #01001:",
+      "id": "40658e3151bdcdd2",
+      "title": "Asheville Volkswagen Dealership | Flow Volkswagen of Asheville",
+      "url": "https://www.flowvolkswagenasheville.com/",
+      "summary": "Let us help you find the perfect Volkswagen that suits your lifestyle and needs. We invite you to visit our dealership in Asheville, NC, where your satisfaction is our top priority. Join the Flow Volkswagen family and discover a community-focused dealership committed to excellence and innovation.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1258,9 +1380,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1270,12 +1392,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3bf32dca9c8db57f",
-      "title": "Bienvenido a IDSE :: Instituto Mexicano del Seguro Social",
-      "url": "https://idse.imss.gob.mx/imss/AccesoIDSE.idse",
-      "summary": "Mensaje de acceso a IDSE Fecha: 17 de Septiembre de 2026 Ha ocurrido un mensaje con código #000001: DATOS NULOS",
+      "id": "d00d57888d256cf3",
+      "title": "Baixa de empresa INAPTA - Legalização de Empresas",
+      "url": "https://www.contabeis.com.br/forum/legalizacao-de-empresas/16409/baixa-de-empresa-inapta/",
+      "summary": "Em SP, a RFB não aceita apenas a Certidão Simplificada para baixa de uma empresa, exigindo cópia do Distrato Social (ou Requerimento de Empresário de Encerramento). Mas esta regra não é valida para todos os Estados. Em MG, por exemplo, baixamos empresas apenas com a Certidão Simplificada emitida pela Junta Comercial. ...",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1284,9 +1406,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1296,12 +1418,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4a629927edebfcae",
-      "title": "Bienvenido a IDSE :: Instituto Mexicano del Seguro Social",
-      "url": "https://idse.imss.gob.mx/imss/MsgInicioIDSE.idse",
-      "summary": "Activa tu Buzón IMSS y mantén una comunicación directa, ágil y segura con el Instituto. Accede a servicios digitales para facilitar el cumplimiento oportuno de tus obligaciones fiscales en materia de seguridad social.",
+      "id": "cc3bf6b7a55496c3",
+      "title": "baixa empresa cancelada - ART.60 LEI 8934/94",
+      "url": "https://www.contabeis.com.br/forum/legalizacao-de-empresas/293461/baixa-empresa-cancelada-art-60-lei-8934-94/2",
+      "summary": "Boa tarde,Gostaria de saber qual o procedimento para baixar uma empresa que esta CANCELADA - ART.60 LEI 8934/94, em Curitiba?Obrigada. ... Veja as 33 respostas.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1310,9 +1432,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1322,12 +1444,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3ae2cfae9acd56b0",
-      "title": "Career Development Support - PublicWeb",
-      "url": "https://www.hr.upenn.edu/PennHR/learn-grow/career-development-support",
-      "summary": "Career Development Support As part of our commitment to your professional growth and development, we’re excited to offer you access to LinkedIn Learning resources, specifically tailored to career support. You will find courses designed to help you enhance your skills, explore new areas of interest, and advance your career. LinkedIn Learning offers a wide range of topics that are easily ...",
+      "id": "50fc6e79bcc321be",
+      "title": "Cameras for sale in Clarksville, Tennessee - Facebook",
+      "url": "https://www.facebook.com/marketplace/108534305837795/cameras/",
+      "summary": "New and used Cameras for sale in Clarksville, Tennessee on Facebook Marketplace. Find great deals and sell your items for free.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1336,9 +1458,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1348,88 +1470,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e47be87fc78a6fec",
-      "title": "Career Forward - PublicWeb",
-      "url": "https://www.hr.upenn.edu/PennHR/careers-at-penn/career-forward",
-      "summary": "Career Forward Penn supports career mobility and offers many avenues to success for its full- and part-time staff members. In our Career Forward profiles, staff share stories of how they achieved success at Penn.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aac6b2e5c501f876",
-      "title": "Careers at Penn - PublicWeb",
-      "url": "https://www.hr.upenn.edu/PennHR/careers-at-penn",
-      "summary": "A Great Place to Work Penn's innovative schools, centers, and divisions offer a vast array of positions in a broad range of fields. Penn is the largest private employer in Philadelphia. Here you can find new opportunities as your career develops—from your first job out of school to your first leadership role, and all points in between.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "049d93ab4ceaac78",
-      "title": "Contact Us - Sam's Club",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/167/~/contact-us---sams-club",
-      "summary": "Find help and answers you need by signing in first",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter; Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c2c3dae603ebe627",
-      "title": "Costco or Sam's Club : r/RioGrandeValley - Reddit",
-      "url": "https://www.reddit.com/r/RioGrandeValley/comments/1d6lrbb/costco_or_sams_club/",
-      "summary": "My Sam's Club membership is expiring soon and was thinking about switching to Costco. Any thoughts on which is better?",
+      "id": "0f5d96425a7643bd",
+      "title": "Careers - EA",
+      "url": "https://eaest.com/careers/",
+      "summary": "Community Support EA is proud of its longstanding commitment to promoting ecological sustainability, helping local charities, and volunteering at community events. We encourage everyone to incorporate community involvement into their work life, and we are always ready to support educational programs that mentor students of all ages who are interested in exploring careers in engineering or the ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1452,12 +1496,220 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "74d0088d3a3fd2cd",
-      "title": "Cómo Acceder a BancaNet | Banamex",
-      "url": "https://www.banamex.com/es/centro-de-ayuda/servicios-digitales/bancanet/acceso.htm",
-      "summary": "Accede a BancaNet y controla tus finanzas de forma segura. Visita nuestro centro de ayuda para conocer los pasos de acceso y registro.",
+      "id": "b152fbef7a6899c0",
+      "title": "certidão simplificada - Legalização de Empresas",
+      "url": "https://www.contabeis.com.br/forum/legalizacao-de-empresas/184781/certidao-simplificada/",
+      "summary": "olá bom dia, estou precisando emitir uma certidão simplificada da junta comercial, porém não estou conseguindo, alguém pode me dar o passo a passo para eu ver onde está o meu erro?só ... Veja as 5 respostas.",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0481621871c9bb6b",
+      "title": "Certidão Simplificada - SOBRE O PORTAL CONTÁBEIS",
+      "url": "https://www.contabeis.com.br/forum/sobre-o-portal-contabeis/184679/certidao-simplificada/",
+      "summary": "Fernando a certidao solicitada é exatamente essa da Junta comercial a Certidão Simplificada, gostaria de saber se ela tem uma validade especifica. Obrigada.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2629089bfa1776be",
+      "title": "Certidão Simplificada MEI - Legalização de Empresas",
+      "url": "https://www.contabeis.com.br/forum/legalizacao-de-empresas/243460/certidao-simplificada-mei/",
+      "summary": "Olá preciso de um comprovante de que o MEI micro empreendedor e enquadrado como ME micro empresa em contato com a junta eles mi informaram qe a devida certidão foi extinta que ah uma lei na instrução ... Veja as 4 respostas.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0a477c66974289b2",
+      "title": "CERTIDÃO SIMPLIFICADA: a emitida no cartório de registro e igual que a ...",
+      "url": "https://www.contabeis.com.br/forum/legalizacao-de-empresas/295330/certidao-simplificada-a-emitida-no-cartorio-de-registro-e-igual-que-a-da-junta-comercial/",
+      "summary": "Boa noite,Tenho uma empresa EIRELI de prestação de serviços médicos, a qual após ser criada o meu contador maudou registrar no cartório de registro meses atras.Num edital de licitação, ... Veja as 4 respostas.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "233152c32ba2d410",
+      "title": "Classificação de Fraturas Expostas",
+      "url": "https://pt.scribd.com/document/702877327/Classificacao-das-fraturas-expostas",
+      "summary": "A classificação de Gustilo e Anderson classifica fraturas expostas em três tipos com base no tamanho da ferida, contaminação e lesão óssea. O tipo I tem ferida pequena sem contaminação, enquanto o tipo II tem ferida maior e contaminação moderada.",
+      "discovery_channel": "research",
+      "query": "smart glasses LCoS projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "148b46c8153c1e29",
+      "title": "Classificação de Fraturas Expostas | PDF | Especialidades médicas ...",
+      "url": "https://pt.scribd.com/presentation/656448524/Aula-Fraturas-Expostas",
+      "summary": "Este documento descreve as fraturas expostas, sua classificação segundo Gustillo, sinais e sintomas, tratamento incluindo desbridamento, fixação interna ou externa, e possíveis complicações como infecção ou atraso na consolidação.",
+      "discovery_channel": "research",
+      "query": "smart glasses LCoS projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0e1ad92befa8974f",
+      "title": "Classificação de Gustilo-Anderson: Guia Completo para Fraturas Expostas",
+      "url": "https://hipocratico.com.br/classificacao-de-gustilo-anderson-guia-completo-para-fraturas-expostas/",
+      "summary": "Este sistema, desenvolvido por Claude Gustilo e Earl Anderson, se baseia principalmente no tamanho da ferida, na extensão do dano aos tecidos moles e na presença de fragmentos ósseos expostos. A classificação se divide em três tipos principais, cada um com características e exigências de tratamento distintas.",
+      "discovery_channel": "research",
+      "query": "smart glasses LCoS projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f3fcc5d0435dec85",
+      "title": "Desenquadramento do MEI na JUCESP - Certidão Simplificada",
+      "url": "https://www.contabeis.com.br/forum/legalizacao-de-empresas/369761/desenquadramento-do-mei-na-jucesp-certidao-simplificada/",
+      "summary": "Este ano tive que realizar o desenquadramento do MEI por motivo obrigatório.Solicitei a um contador para realizar o procedimento de desenquadramento na Junta Comercial de SP.Agora preciso renovar o meu certificado, ... Veja as 8 respostas.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "95e2a0278f5e65b9",
+      "title": "DETRAN define a documentação exigida na transferência de veículos por ...",
+      "url": "https://www.contabeis.com.br/legislacao/195939/portaria-detran-511-2007/",
+      "summary": "A realização da transferência de propriedade de veículos vendidos por pessoas jurídicas deve ser instruído à documentação normalmente exigida e ainda a Certidão Simplificada da Junta Comercial para Empresas Comerciais ou da Certidão de Cartório de Registro Civil para Sociedades Civis, Associações ou Entidades congêneres.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1478,12 +1730,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "02731aa20c182530",
-      "title": "DeMontrond Volkswagen | New & Used VW Cars & SUVs in Conroe, TX",
-      "url": "https://www.demontrondvwofconroe.com/",
-      "summary": "When searching for a Volkswagen dealer near Conroe, TX, drivers want more than just a place to buy a car. They want a dealership they can trust for years to come.",
+      "id": "0ef9b4596639ee88",
+      "title": "display - Wiktionary, the free dictionary",
+      "url": "https://en.wiktionary.org/wiki/display",
+      "summary": "(computing) An electronic screen that shows graphics or text. (computing) The presentation of information for visual or tactile reception. display (third-person singular simple present displays, present participle displaying, simple past and past participle displayed)",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "display smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1504,452 +1756,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a2e82420577de2ca",
-      "title": "El Banco Nacional de México | Banamex",
-      "url": "https://www.banamex.com/",
-      "summary": "¡Que viva pagar a tu manera con Pagos Fijos! Difiere tus compras o el saldo de tu tarjeta y paga a tu ritmo. Tu nómina en Banamex te hace decir \"guau\". Con tu nómina tienes un paquete de asistencias que te protege a ti y a tu mascota. Checa esto, tu anualidad (4), ahora más fácil de pagar.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fafb4ad770029cc5",
-      "title": "How do I check my credit card balance? - Sam's Club",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/2569/~/how-do-i-check-my-credit-card-balance%3F",
-      "summary": "You can check the balance and manage your credit card with an online credit account. Visit SamsClub.com/credit",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6693b57d7fa915c3",
-      "title": "How to add or update cardholders on membership - Sam's Club",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/1636/~/how-to-add-or-update-cardholders-on-membership",
-      "summary": "How to add or edit cardholders on a Membership* (desktop) Membership includes a complimentary card, free of charge Sign in to your online account Open the Account page Under the Membership section, select Manage Memberships Choose to \"Add\" or \"Edit\" a complimentary or add-on cardholder Add-ons can only be added to an account, 31 days or more before the membership renewal date. Enter the ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5d3af2ec907f3241",
-      "title": "How to sign in and out of my online account - Sam's Club",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/2865/~/how-to-sign-in-and-out-of-my-online-account",
-      "summary": "To Sign out: Highlight the Sign In / Account dropdown right of the Search bar and select Sign Out at the bottom of the account options.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "72358062c17deb14",
-      "title": "Human Resources Application Portal",
-      "url": "https://portal.hr.upenn.edu/",
-      "summary": "Welcome to the HR Application Portal The application you are attempting to access is restricted to authorized users only. In order to access the application, you will be required to identify yourself using your PennKey and Password. When you click on the button below, you will be redirected to the PennKey WebLogin Service. Upon successful authentication, you will be returned to the application ...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9af91ec2a0fee871",
-      "title": "Ice resurfacers for all ice rink sizes and any conditions from Engo.",
-      "url": "https://www.engo.it/en/ice-resurfacers.html",
-      "summary": "Welcome to Engo, the pioneers in making perfect ice since 1979. Discover our leading-edge ice resurfacers that produce the highest quality ice surfaces throughout the world.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3efee84add1debca",
-      "title": "IDSE (IMSS desde su Empresa)",
-      "url": "https://www.imss.gob.mx/patrones/idse",
-      "summary": "Servicio Electrónico para los movimientos patronales y obligaciones ante el IMSS",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2bb653ca11b2c107",
-      "title": "IDSE (IMSS Desde Su Empresa)",
-      "url": "https://www.imss.gob.mx/node/73973",
-      "summary": "IDSE (IMSS desde su Empresa) Con este servicio puedes realizar diferentes trámites electrónicos en línea, como presentación de movimientos afiliatorios, presentación de la determinación de la prima de riesgos de trabajo, entre otros.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7eba5b2b67867b5a",
-      "title": "IDSE Web - cessimss.com",
-      "url": "https://www.cessimss.com/IdseWeb/Inicio.sbk?dispatch=loginCess",
-      "summary": "Teléfonos: 01 (55) 9000-0790, 01 (55) 9000-0791, (+52) 56 2033-4432 E-mail: idseweb.soporte@cessimss.com.mx www.cessimss.com.mx",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3fed5b2c63f93d72",
-      "title": "Microsoft (MSFT) Financial Ratios - FinanceCharts.com",
-      "url": "https://www.financecharts.com/stocks/MSFT/financial-ratios",
-      "summary": "Get thefor Microsoft (MSFT). We're 100% free for everything. Get 20 years of historicalfor MSFT stock and other companies.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5c8fc1200689b521",
-      "title": "Microsoft (MSFT) Financial Ratios - Investing.com",
-      "url": "https://www.investing.com/equities/microsoft-corp-ratios",
-      "summary": "This MSFT page provides a table containing critical financial ratios such as P/E Ratio, EPS, ROI, and others.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0ca620808d198de",
-      "title": "Microsoft (MSFT) Financial Ratios - Stock Analysis",
-      "url": "https://stockanalysis.com/stocks/msft/financials/ratios/",
-      "summary": "Financial ratios for Microsoft (MSFT). Includes annual, quarterly and trailing numbers with history and charts.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eccd5eb00ba2256a",
-      "title": "Microsoft (MSFT) Financials 2026 - Income Statement and ... - MarketBeat",
-      "url": "https://www.marketbeat.com/stocks/NASDAQ/MSFT/financials/",
-      "summary": "This table shows Microsoft's income and expenses over time, based on annual financial data. All values are USD millions unless otherwise specified.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2f0557739cff171f",
-      "title": "Microsoft (MSFT) Financials Overview - Stock Analysis",
-      "url": "https://stockanalysis.com/stocks/msft/financials/",
-      "summary": "Financials overview for Microsoft (MSFT) with charts and tables for revenue, profits, cash, debt, cash flow, margins and dividends.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b70858b51481981b",
-      "title": "Microsoft Corporation (MSFT) Financial Ratios & Valuation Metrics ...",
-      "url": "https://stocknear.com/stocks/MSFT/financials/ratios",
-      "summary": "Explore Microsoft Corporation (MSFT) valuation, profitability, liquidity, leverage, dividend, and efficiency ratios across multiple periods.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3eaeaad8a58a31bd",
-      "title": "Microsoft Financial Ratios for Analysis 2012-2026 | MSFT",
-      "url": "https://www.macrotrends.net/stocks/charts/MSFT/microsoft/financial-ratios",
-      "summary": "Ten years of annual and quarterly financial ratios and margins for analysis of Microsoft (MSFT).",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e28191f9b680f1da",
-      "title": "Microsoft Financial Statements 2012-2026 | MSFT - Macrotrends",
-      "url": "https://www.macrotrends.net/stocks/charts/MSFT/microsoft/financial-statements",
-      "summary": "Ten years of annual and quarterly financial statements and annual report data for Microsoft (MSFT). Income statements, balance sheets, cash flow statements and key ratios.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ad1cdf001438e16c",
-      "title": "Military Membership Discount - Sam's Club",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/2637/~/military-membership-discount",
-      "summary": "Plus, join using the link above, and you’ll receive $10 in Sam's Cash when you renew your Sam’s Club membership in club or online! The Military Membership covers: Active military personnel Retired military personnel and veterans Civilian military employees Military spouses",
+      "id": "7f9cb4dde79c1bfc",
+      "title": "EA Engineering, Science, and Technology, Inc., PBC Supports Engineers ...",
+      "url": "https://eaest.com/ea-engineering-science-and-technology-inc-pbc-supports-engineers-of-tomorrow/",
+      "summary": "About EA Engineering, Science, and Technology, Inc., PBC EA is a 100% employee-owned public benefit corporation that provides environmental, compliance, natural resources, and infrastructure engineering and management solutions to a wide range of public and private sector clients.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1960,9 +1770,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1972,12 +1782,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a61ce7e162579ca6",
-      "title": "MSFT | Microsoft Corp. Financial Statements - WSJ",
-      "url": "https://www.wsj.com/market-data/quotes/MSFT/financials",
-      "summary": "Microsoft Corp. balance sheet, income statement, cash flow, earnings & estimates, ratio and margins. View MSFT financial statements in full.",
+      "id": "4c293254394bb69c",
+      "title": "EA Makes the First in a Series of Three Management Team Promotion ...",
+      "url": "https://eaest.com/ea-makes-the-first-in-a-series-of-three-management-team-promotion-announcements/",
+      "summary": "Hunt Valley, Maryland (29 October 2020) —EA Engineering, Science, and Technology, Inc., PBC (EA), a leading provider of interdisciplinary environmental services, recently promoted 17 company veterans to the position of Vice President. In this, the first in a series of three announcements, we highlight 7 officer appointments within our Client Programs structure. EA’s Client Programs ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1998,12 +1808,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "67441fb50cb63964",
-      "title": "myHR: September 9, 2026",
-      "url": "https://www.hr.upenn.edu/about-hr/news/myhr/myhr/2026/09/09/09092026",
-      "summary": "Penn health plans include behavioral health coverage for enrolled employees and their dependents. Coverage is available through each plan's provider network, offering access to licensed behavioral health professionals and treatment services, including addiction treatment.",
+      "id": "525bcb2e44877354",
+      "title": "edge浏览器网页与此站点链接不安全怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/487808345",
+      "summary": "方法一： 快捷方式添加参数 Chrome内核浏览器，例如 Edge 等，支持通过添加“--ignore-certificate-errors”参数改变浏览器默认设置，实现访问证书有误的网址。 例如，下图所示，添加该参数后并保存，再通过修改后的快捷方式打开浏览器访问网页，最终快捷方式的目标一项内容为：\"C:\\Program Files (x86 ...",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b73826a26c5ebcd2",
+      "title": "Engineering Services - EA",
+      "url": "https://eaest.com/service/engineering-services/",
+      "summary": "EA’s unique blend of experienced scientists and engineers enable us to provide full stormwater management services from site evaluation and stormwater modeling through facility design and permitting to construction management and long-term monitoring.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ecce05499ada0c43",
+      "title": "engo2 Smart Sports Glasses for Running & Cycling - Garmin ...",
+      "url": "https://engoeyewear.com/en-eu/products/engo-2",
+      "summary": "The ENGO display sits slightly left in your field of vision, like reading a road sign without turning your head. Available for your right eye, it's there instantly when you need data, invisible when you don't.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2024,10 +1886,192 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cd597184679e2b3d",
-      "title": "New VW Cars & SUVs in Houston | Momentum Volkswagen",
-      "url": "https://www.momentumvolkswagen.com/new-inventory/index.htm",
-      "summary": "We are a neighborhood dealership for the people, proudly serving drivers from Spring, TX and beyond, with long-tenured employees who are devoted to delivering nothing short of a stellar experience each time you visit us.",
+      "id": "54444630cafb4e8a",
+      "title": "FanFanFan - 知乎",
+      "url": "https://www.zhihu.com/people/ffancage/",
+      "summary": "FanFanFan是知乎的用户，拥有丰富的回答经验和高赞记录，分享知识与见解。",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "080ec09acd6a0013",
+      "title": "Filtration Plant - Industrialist Wiki",
+      "url": "https://industrialist.miraheze.org/wiki/Filtration_Plant",
+      "summary": "The Filtration Plant is a Tier II machine able to filter Water into Filtered Water and some other liquids into their better or alternative counterparts. Filtering Gasoline into Crude Diesel will provide the Every drop matters! Badge.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c504dd6dd64203ca",
+      "title": "Filtration Plant | Industrialist Wiki | Fandom",
+      "url": "https://industrialist.fandom.com/wiki/Filtration_Plant",
+      "summary": "The Filtration Plant is able to filter Water into Filtered Water and some other liquids into their better or alternative counterparts. Filtering Gasoline into Crude Diesel will provide the \"Every drop matters!\" Badge.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "09314345f63e58f4",
+      "title": "Fratura exposta: classificação, antibiótico e manejo inicial",
+      "url": "https://blog.manole.com.br/clinica-medica/fratura-exposta-classificacao-antibiotico-e-manejo-inicial/",
+      "summary": "A classificação de Gustilo-Anderson é a mais utilizada para estratificar a gravidade das fraturas expostas. Ela considera tamanho da ferida, grau de contaminação, lesão de partes moles, padrão da fratura e presença de lesão vascular.",
+      "discovery_channel": "research",
+      "query": "smart glasses LCoS projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e97e519a5dfabb4",
+      "title": "Fratura Exposta: classificação, complicações e manejo",
+      "url": "https://ojs.cuadernoseducacion.com/ojs/index.php/ced/article/view/8692",
+      "summary": "Este trabalho, desenvolvido por meio de uma revisão integrativa da literatura, teve como objetivo descrever as principais classificações, complicações e condutas terapêuticas no manejo de fraturas expostas no Brasil.",
+      "discovery_channel": "research",
+      "query": "smart glasses LCoS projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e9b1d500c79c11b",
+      "title": "Fratura Exposta: classificação, complicações e manejo",
+      "url": "https://ojs.cuadernoseducacion.com/ojs/index.php/ced/article/download/8692/5961/23541",
+      "summary": "questão norteadora definida para esta revisão foi: quais são as principais classificações, complicações e condutas terapêuticas adotadas no manejo de pacientes com fraturas expostas no Brasil?",
+      "discovery_channel": "research",
+      "query": "smart glasses LCoS projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "896a922f31080cbe",
+      "title": "Fraturas Expostas: Guia Completo sobre Classificação, Tratamento e ...",
+      "url": "https://www.resumosmedicina.com.br/blog/fraturas-expostas-guia-completo-sobre-classificacao-tratamento-e-recuperacao",
+      "summary": "Este guia completo foi elaborado para desmistificar desde a definição e classificação dessas fraturas até as nuances do tratamento cirúrgico e os cuidados essenciais para uma recuperação bem-sucedida, capacitando você com conhecimento vital para navegar por essa condição crítica.",
+      "discovery_channel": "research",
+      "query": "smart glasses LCoS projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e0225b3f6a421157",
+      "title": "German Auto Repair | Serving Weaverville & Greater Asheville",
+      "url": "https://mountaineuro.com/",
+      "summary": "Mountain Euro delivers expert German auto repair in Weaverville, NC, serving the greater Asheville area. From VW, Audi, BMW to Mercedes, trust our skilled team for precise diagnostics, reliable repairs, and honest service.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -2038,9 +2082,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "teardown"
       ],
-      "primary_type": "news",
+      "primary_type": "teardown",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2050,140 +2094,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "54b675c0894e2e4f",
-      "title": "Penn's Schools and Centers - PublicWeb",
-      "url": "https://www.hr.upenn.edu/PennHR/careers-at-penn/penn's-schools-and-centers",
-      "summary": "Penn's innovative schools, centers, and divisions offer a variety of positions in a broad range of career fields. Penn’s 12 schools include some of the top-rated undergraduate and graduate programs in the world.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f0a5060e8be1430f",
-      "title": "Portal de servicios IMSS digital",
-      "url": "https://serviciosdigitales.imss.gob.mx/portal-web/portal",
-      "summary": "Instituto Mexicano del Seguro Social Portal DELTA Si ya te encuentras registrado y cambiaste tu e.firma o CURP da clic aquí",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6aee910a1c1fdc72",
-      "title": "Potential Interview Questions",
-      "url": "https://www.hr.upenn.edu/docs/default-source/forms/interview-questions-samples.pdf",
-      "summary": "Potential Interview Questions Please keep in mind questions should be relevant to the job specifications (refer to job description).",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dafedf2cb2f2cb1a",
-      "title": "Registration & Online Account Help",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/13/~/registration-%26-online-account-help",
-      "summary": "Registration problems can occur due to one of the following reasons: Your membership number and first/last name must be entered exactly as they appear on your Sam’s Club membership card. If your email address was previously registered with another membership account, you will receive a prompt to reclaim your email.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cbb49dcc66a356b3",
-      "title": "Request a new Sam's Club Consumer Credit Card",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/2722/~/request-a-new-sams-club-consumer-credit-card",
-      "summary": "Sam's Club members who use the Sam's Club Credit Card and Mastercard can easily report their cards lost or stolen and order a replacement. Report a lost or stolen card 24/7:",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8df3e75a71b08b62",
-      "title": "Returns - Sam's Club",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/4072/~/returns---sams-club",
-      "summary": "Sam’s Club members who request online orders to ship to a third-party facility or to a freight forwarder are responsible for auditing and ensuring their orders arrive complete and free of damage. Note: Truckload orders delivered directly to members may be subject to specific delivery requirements.",
+      "id": "fe7c698ac8308a4d",
+      "title": "Home - EA",
+      "url": "https://eaest.com/",
+      "summary": "EA Engineering, Science, and Technology, Inc., PBC is an employee-owned public benefit corporation providing diverse environmental services.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -2194,9 +2108,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2206,37 +2120,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "25bca9592d7c0e63",
-      "title": "Sam's Club - Reddit",
-      "url": "https://www.reddit.com/r/samsclub/about/",
-      "summary": "r/samsclub: Sam's club A subreddit for Associates & Members Do not post for item availability: Please refrain from posting an item stock or availability related question. Instead visit your local club (s) or visit samsclub.com to learn about its current availability.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "community"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "262b9aeffa950c01",
-      "title": "Sam's Club Credit Types & Contact Information",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/1560/~/sams-club-credit-types-%26-contact-information",
-      "summary": "Call Sam's Club Credit 24 hours a day, 7 days a week! Call the number on the back of your card or see below for card types and contact information for each.",
+      "id": "c1f8646309bbcc56",
+      "title": "How Do Water Filtration Plants Work? A Comprehensive Guide to Their ...",
+      "url": "https://pristinewatersofteners.com/guide-to-how-water-filtration-plants-work/",
+      "summary": "Water filtration plants purify water to ensure it’s safe to drink, providing this daily convenience. But how do these plants work? In this blog post, we’ll explore the detailed processes, technologies, and challenges involved in water filtration.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -2247,9 +2134,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2259,10 +2146,36 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "656430f860cec5cf",
-      "title": "Sam's Club Tire & Battery Center Services",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/2659/~/sams-club-tire-%26-battery-center-services",
-      "summary": "Sam's Club tire experts use state-of-the-art equipment to mount your tires to manufacturer specifications. Plus, when purchasing tires at Sam's Club, you get members-only perks, like free balance and tire rotation for the life of the tires.",
+      "id": "c1b4f081f3c132ef",
+      "title": "How Water Treatment Works | Drinking Water | CDC",
+      "url": "https://www.cdc.gov/drinking-water/about/how-water-treatment-works.html",
+      "summary": "Water treatment plants commonly adjust water pH and add fluoride after the disinfection step. Adjusting the pH improves taste, reduces corrosion (breakdown) of pipes, and helps chemical disinfectants continue killing germs as the water travels through pipes.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64e72e11ab8f9aaf",
+      "title": "Ian D. MacFarlane - EA",
+      "url": "https://eaest.com/ian-d-macfarlane/",
+      "summary": "Ian MacFarlane is the President, CEO, and Chair of EA Engineering, Science, and Technology, Inc., PBC, a U.S. mid-sized environmental consulting services firm serving a wide range of clients in both the government and private sectors with more than 25 commercial offices nationwide, more than 700 employees, and annual revenues of approximately ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -2273,9 +2186,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2285,12 +2198,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "85f16d7bd25c9a52",
-      "title": "Shop Volkswagen Cars at DeMontrond Volkswagen in Houston, TX",
-      "url": "https://www.demontrondvw.com/",
-      "summary": "Shop new and used Volkswagen vehicles at DeMontrond Volkswagen in Houston, TX. Explore SUVs, sedans, EVs, financing, service, and specials today.",
+      "id": "3243d617c6391c96",
+      "title": "IN regula expedição de certidões - Portal Contábeis",
+      "url": "https://www.contabeis.com.br/legislacao/63568/instrucao-normativa-drei-20-2013/",
+      "summary": "Art. 6º As certidões simplificada e especifica poderão ser datilografadas ou impressas por qualquer outro meio, preferencialmente em papel de uso exclusivo para a finalidade, com fundo pré impresso com logotipo ou dizeres de personalização.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2311,12 +2224,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ba749e500c8d2028",
-      "title": "Sitio Web \"Acercando el IMSS al Ciudadano\"",
-      "url": "https://www.imss.gob.mx/patrones/idse/aplicativo",
-      "summary": "Bienvenidos a IDSE desde su empresa, c on este servicio podrás realizar, trámites electrónicos en línea, como la presentación de movimientos afiliatorios, descarga de la emisión y presentación de la determinación de la prima de riesgos de trabajo, entre otros.",
+      "id": "b6fdd9d151242693",
+      "title": "Ingredients - Ignitra™ - Premium, plant-based dietary supplement",
+      "url": "https://getignitra.org/ingredients/",
+      "summary": "If you are looking for a safe and natural way to boost metabolism, increase energy, and support overall wellness, Ignitra is a trusted solution. This advanced, plant-based dietary supplement is carefully crafted with more than 11 clinically studied ingredients designed to help restore healthy metabolic function, encourage fat-burning, and maintain balanced blood sugar levels.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2337,12 +2250,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "040c7a701f44a992",
-      "title": "Sitio Web del IMSS",
-      "url": "https://www.imss.gob.mx/?populate=idse+ingresar",
-      "summary": "El IMSS, es la institución con mayor presencia en la atención a la salud y en la protección social de los mexicanos.",
+      "id": "2957eaa96157e917",
+      "title": "Junta Comercial passa a emitir certidão simplificada com mais rapidez",
+      "url": "https://www.contabeis.com.br/noticias/28861/junta-comercial-passa-a-emitir-certidao-simplificada-com-mais-rapidez/",
+      "summary": "As empresas que desejaram emitir uma certidão simplificada poderão obtê-la com maior celeridade. É o que garante uma nova ferramenta na internet que já está disponível no site da Junta Comercial da Paraíba",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2363,12 +2276,91 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "335b409b67449df2",
-      "title": "Staff Requisitioning, Recruitment, Selection, Reference Checks ...",
-      "url": "https://www.hr.upenn.edu/policies-and-procedures/policy-manual/recruitment-and-staffing/staff-requisitioning-recruitment-selection-reference-checks-employment-offer-and-offer-letters",
-      "summary": "Staff Requisitioning, Recruitment, Selection, Reference Checks, Employment Offers, and Offer Letters Human Resources provides recruitment services for Hiring Officers of the University who are seeking candidates for posted staff positions. The University is committed to equal employment opportunity and to full compliance with federal, state and local regulations regarding employment. 101.1 ...",
+      "id": "0741f58985a3a6ba",
+      "title": "Manejo das Fraturas Expostas: Fisiopatologia, Classificação e ...",
+      "url": "https://static.even3.com/anais/1003018.pdf?v=638998075078505670",
+      "summary": "A classificação das fraturas expostas é fundamental para orientar o manejo clínico. O sistema de classificação de Gustilo-Anderson, amplamente utilizado, categoriza essas lesões em três tipos principais, considerando fatores como a extensão da lesão do tecido mole e a gravidade da fratura.",
+      "discovery_channel": "research",
+      "query": "smart glasses LCoS projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6f2988e99993b4c",
+      "title": "Manejo das Fraturas Expostas: Overview | Colunistas",
+      "url": "https://sanarmed.com/manejo-das-fraturas-expostas-overview-colunistas/",
+      "summary": "Esta classificação, conforme demostrado na tabela a seguir, propõe a subdivisão em três tipos principais, com base na possibilidade ou não de cobertura óssea por partes moles e presença de lesão vascular nas fraturas.",
+      "discovery_channel": "research",
+      "query": "smart glasses LCoS projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3bd74c26b6fd53cf",
+      "title": "Metabolic MD: Vanilla-Latte Hack",
+      "url": "https://getignitra.com/start",
+      "summary": "Ignitra is an advanced formula designed to support your metabolic health in a natural way. Inside every bottle is a unique proprietary blend of natural plants and nutrients, designed to help support your metabolic health.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "hack",
+        "teardown"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e7650120fe6e3357",
+      "title": "News, Breaking News from NBC4 WCMH-TV in Columbus, OH",
+      "url": "https://www.nbc4i.com/news/",
+      "summary": "COLUMBUS, Ohio (WCMH) — A volunteer soccer coach south of Columbus has been suspended from a youth sports program after sex crime allegations surfaced this week. According to court records,...",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2389,10 +2381,270 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ea2012ccd51bc314",
-      "title": "Support Home Page",
-      "url": "https://help.samsclub.com/",
-      "summary": "Sam's Club Credit Make a credit card payment. For other credit card related questions please call: (800) 964 - 1917 for personal credit (800) 203 - 5764 for business credit",
+      "id": "e7239e06d7e2d40c",
+      "title": "Office Locations - EA",
+      "url": "https://eaest.com/office-locations/",
+      "summary": "Engineering services in Michigan, New York, and North Carolina are performed by affiliated entities of EA Engineering, Science, and Technology, Inc., PBC. Learn More About Affiliations",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80d3779a2d8f09b5",
+      "title": "Ortopedia: Classificação das fraturas expostas - Artmed",
+      "url": "https://www.artmed.com.br/artigos/ortopedia-classificacao-das-fraturas-expostas",
+      "summary": "Mais recentemente, em 2010, foi publicada a Classificação AO/OTA para fraturas expostas (tabela III) a partir de dados da anatomia patológica reunidos em cinco critérios de avaliação. Esses critérios são: tipo de ferida na pele, dano muscular, lesão arterial, contaminação e perda óssea.",
+      "discovery_channel": "research",
+      "query": "smart glasses LCoS projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "96ef9c582620b06b",
+      "title": "Parent Login | OpenEd",
+      "url": "https://opened.co/login",
+      "summary": "Complete enrollment, submit learning logs, access resources, place direct orders, and handle reimbursements all in one place.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dfc135e55fdbd984",
+      "title": "Press Release - EA",
+      "url": "https://eaest.com/category/press-release/",
+      "summary": "Ivy Harvey Joins Engineering Society of Baltimore Board of Directors Hunt Valley, Maryland (13 August 2026)—EA Engineering, Science, and Technology, Inc., PBC (EA), a leading…",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e75311c64c3cca39",
+      "title": "The IFA World Franchise Show: Franchising Expo USA",
+      "url": "https://ifafranchiseshow.com/",
+      "summary": "Join the only IFA franchise exhibition in the US and become your own boss today! Meet 300+ leading brands covering all franchise sectors including food and drink, education, fitness, health and beauty, care, pet and much more!",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "520e3e3a572d39ca",
+      "title": "Used Volkswagens for Sale in Weaverville, NC - TrueCar",
+      "url": "https://www.truecar.com/used-cars-for-sale/listings/volkswagen/location-weaverville-nc/",
+      "summary": "Shop over 1,966 used Volkswagens for sale in Weaverville, NC with transparent pricing. Save time and money with TrueCar. Compare prices and view deals near you.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64f5f1b62780b224",
+      "title": "Visitor Info | Fort Lauderdale Franchise Expo 2026",
+      "url": "https://ifafranchiseshow.com/visitor-information",
+      "summary": "Plan your visit to the Fort Lauderdale franchise expo. Find venue details, travel info, and everything you need to attend.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8fc24e6d87dac65e",
+      "title": "Volkswagen near me in Weaverville, NC | Mapdoor",
+      "url": "https://mapdoor.com/us/nc/weaverville/volkswagen",
+      "summary": "Explore all Volkswagen dealers in Weaverville, NC, with contact details, opening hours, services, and more on our interactive map",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4a7b6f6b69002bd1",
+      "title": "VW SPECIALTIES - Updated September 2026 - 10 Photos - Yelp",
+      "url": "https://www.yelp.com/biz/vw-specialties-weaverville-2",
+      "summary": "VW SPECIALTIES, 186 Herron Cove Rd, Weaverville, NC 28787, 10 Photos, (828) 645-8989, Mon - 8:30 am - 5:00 pm, Tue - 8:30 am - 5:00 pm, Wed - 8:30 am - 5:00 pm, Thu - 8:30 am - 5:00 pm, Fri - Closed, Sat - Closed, Sun - Closed",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "172d33b6fa6d3acd",
+      "title": "Walmart Camera Store in Clarksville, TN| Photo Camaras, Web Cameras ...",
+      "url": "https://www.walmart.com/store/673-clarksville-tn/camera-store",
+      "summary": "Shop for camera equipment at your local Clarksville, TN Walmart. We have a great selection of camera equipment for any type of home. Save Money. Live Better.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dbc96f0784e3258a",
+      "title": "Water Filtration Plant Ultimate Safe Guide for 7 Steps 2026 8 | WCSP",
+      "url": "https://watercareservices.org/water-filtration-plant/",
+      "summary": "A Water Filtration Plant is a facility designed to purify water by removing impurities, contaminants, and particles through various filtration processes, ensuring the delivery of safe and clean drinking water.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -2415,12 +2667,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "002db5b53720452a",
-      "title": "Talent Acquisition-Hiring and Recruitment - PublicWeb",
-      "url": "https://www.hr.upenn.edu/for-managers/talent-aquisition",
-      "summary": "Talent Acquisition Updates Take Note: Professional Development Courses Penn staff and faculty have access to a wide range of free professional development courses through Workday Learning and LinkedIn Learning. Workday Learning is Penn’s central hub for required training, compliance courses, and Penn‑specific learning opportunities.",
+      "id": "757ecd0ecc7e4a8b",
+      "title": "Water purification - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Water_purification",
+      "summary": "Soil and rock layers naturally filter the ground water to a high degree of clarity and often, it does not require additional treatment besides adding chlorine or chloramines as secondary disinfectants. Such water may emerge as springs, artesian springs, or may be extracted from boreholes or wells.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2441,12 +2693,168 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b8b4b589e36756b6",
-      "title": "Terms and Conditions - Sam's Club",
-      "url": "https://help.samsclub.com/app/answers/detail/a_id/4075/~/terms-and-conditions---sams-club",
-      "summary": "For Sam's Club Members, these Terms also govern your Membership with Sam's Club as further set forth in the Membership section below (\"Membership Terms\"). By entering and maintaining your Sam's Club Membership, you agree to be bound by these Terms, including the Membership Terms and the terms and conditions related to related Sam's Club policies and programs cross-referenced in the Additional ...",
+      "id": "e635a46f4880af98",
+      "title": "Water treatment - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Water_treatment",
+      "summary": "Water treatment is used to reduce impact on equipment used in industrial processes, such as heating, cooling, processing, cleaning, and rinsing so that operating costs and risks are reduced.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7ce0c4e678852be",
+      "title": "Water Treatment Plants: Process, Steps & Components",
+      "url": "https://turn2engineering.com/civil-engineering/water-resources-engineering/water-treatment-plants",
+      "summary": "Learn how water treatment plants work, from intake and coagulation to filtration, disinfection, clearwells, components, and finished water distribution.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d97cefa510b2f948",
+      "title": "Weaverville NC - Hours, Directions, Reviews - Loc8NearMe",
+      "url": "https://www.loc8nearme.com/north-carolina/weaverville/vw-specialties/4432593/",
+      "summary": "VW Specialties at 186 Herron Cove Rd, Weaverville NC 28787 - hours, address, map, directions, phone number, customer ratings and reviews.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "589c4c5cd804ec30",
+      "title": "What Is A Water Filtration Plant And How It Works | ShunCy",
+      "url": "https://shuncy.com/article/what-is-water-filtration-plant",
+      "summary": "A water filtration plant is a facility that removes contaminants from water to make it safe for consumption or other uses. It typically employs multiple filtration stages such as sand filters, activated carbon, and membrane processes to eliminate particles, microorganisms, and chemicals.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dfc327c02d88e159",
+      "title": "What Water Filtration Plants Do: Processes, Benefits, And Public Health ...",
+      "url": "https://shuncy.com/article/what-do-water-filtration-plants-do",
+      "summary": "Water filtration plants process raw water to remove impurities and pathogens, delivering water that meets health and safety standards.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9c3bee1fda730b08",
+      "title": "wps2016版去哪里下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/317874836",
+      "summary": "谢邀！ 官网其实有2016版的，你可能没注意看，这个是下载链接： wdl1.cache.wps.cn/wps/d",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53f29f9d21aee1ce",
+      "title": "» IGNITRA - ges-coengg.org",
+      "url": "https://ce.ges-coengg.org/ignitra/",
+      "summary": "IGNITRA is a Technical and interpersonal showcase. It was started in 2014. Objectives : To explore the inherent skills of students To create a platform for exhibiting their talent To develop a team spirit amongst the students Events conducted Codeathon Blind coding Puzzles Technical Crosswords Technical quizzes Games IGNITRA 2019",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2458,6 +2866,136 @@
         "tool"
       ],
       "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dec8ee20dea1cd1d",
+      "title": "Официальный сайт для размещения информации об учреждениях",
+      "url": "https://bus.gov.ru/search/establishments",
+      "summary": "Официальный сайт для размещения информации об учреждениях",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e584689c544217a",
+      "title": "怎么查询法院的判决书？ - 知乎",
+      "url": "https://www.zhihu.com/question/374066304",
+      "summary": "查判决书有以下几种途径： 1、如果你是当事人，可以直接去法院档案室查询或委托别人去查询； 2、可以通过中国裁判文书网wenshu.court.gov.cn。裁判文书上网范围：根据最《关于人民法院在互联网公布裁判文书的规定》 第四条 人民法院作出的裁判文书有下列情形之一的，不在互联网公布： （一 ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "030b1570d4fea8c1",
+      "title": "怎样免费下载ISO国际标准？ - 知乎",
+      "url": "https://www.zhihu.com/question/24917424",
+      "summary": "大家要清楚，ISO属于国际标准，正规渠道是要付费购买的。 瑞友科技总结下载ISO标准购买正规官方渠道如下： 一、全国标准信息公共服务平台 链接： std.samr.gov.cn/",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3d97e4e3fba795fd",
+      "title": "知道科研项目的编号和名称，如何查询具体内容？ - 知乎",
+      "url": "https://www.zhihu.com/question/28822290",
+      "summary": "目前国家级课题主要是自科、社科、科技部管理的科研项目，如果知道具体是哪类项目可以直接去项目官网，如果不知道可以使用综合性查询网站。 综合性的： 【公益】 知领·全球科研项目库： 知领全球科研项目库_中国工程科技知识中心 (ckcest.cn) 2.【收费】 万方·科慧项目库： Sci-Fund (wanfangdata.com ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "76b132fa2cf07c61",
+      "title": "请问 方正仿宋GB2312 在哪可以下载呀？搜了好多搜索引擎都搜不到？",
+      "url": "https://www.zhihu.com/question/634192011",
+      "summary": "写报告需要方正仿宋gb2312 我听说过“仿宋_GB2312”以及“ 方正仿宋简体 ”这两款字体，唯独没有“方正仿宋_GB2312”，所以，题主是不是搞错了呀。GB2312是编码字符集，方正仿宋简体，就是采用的GB2312编码字符集。 而在Wps中的确能搜出来“方正仿宋_GB2312”这款字体，不过需要开SVIP，所以这款字体 ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
