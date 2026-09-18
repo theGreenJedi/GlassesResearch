@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
+      - 'scripts/analytics_report.py'
+      - 'scripts/analytics_history.py'
+      - 'scripts/cloudflare_rum.py'
       - 'scripts/search_impact.py'
       - 'analytics/search-interventions.json'
       - '.github/workflows/analytics-report.yml'
@@ -43,7 +46,7 @@ jobs:
 
       - name: Validate search impact tracker
         run: |
-          python -m py_compile scripts/search_impact.py
+          python -m py_compile scripts/analytics_report.py scripts/analytics_history.py scripts/cloudflare_rum.py scripts/search_impact.py
           python scripts/search_impact.py --validate-only
 
   analytics-report:
@@ -70,6 +73,8 @@ jobs:
           GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ANALYTICS_HOST: ${{ vars.CLOUDFLARE_ANALYTICS_HOST }}
         run: python scripts/analytics_report.py
 
       - name: Build page-query search opportunities
@@ -90,6 +95,8 @@ jobs:
           GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ANALYTICS_HOST: ${{ vars.CLOUDFLARE_ANALYTICS_HOST }}
         run: python scripts/analytics_history.py
 
       - name: Publish latest snapshot, opportunities, impact, and history
