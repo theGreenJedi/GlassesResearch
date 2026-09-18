@@ -15,6 +15,7 @@ from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 
 from analytics_report import _cf_slice, gsc_client, gsc_query
+from cloudflare_rum import rum_day
 
 SCHEMA_VERSION = 1
 SERIES = Path("analytics") / "series"
@@ -26,6 +27,7 @@ def load_month(month: str) -> dict:
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
             if data.get("schema_version") == SCHEMA_VERSION:
+                data.setdefault("cloudflare_web_analytics", {"days": {}, "summary": {}})
                 return data
         except Exception:
             pass
@@ -35,6 +37,7 @@ def load_month(month: str) -> dict:
         "updated_at": None,
         "google_search_console": {"days": {}, "summary": {}},
         "cloudflare": {"days": {}, "summary": {}},
+        "cloudflare_web_analytics": {"days": {}, "summary": {}},
     }
 
 
@@ -136,12 +139,25 @@ def summarize_cf(days: dict[str, dict]) -> dict:
     }
 
 
+def summarize_rum(days: dict[str, dict]) -> dict:
+    records = [days[k] for k in sorted(days)]
+    return {
+        "days_recorded": len(records),
+        "first_date": records[0]["date"] if records else None,
+        "last_date": records[-1]["date"] if records else None,
+        "pageviews": sum(int(r.get("pageviews", 0)) for r in records),
+        "visits": sum(int(r.get("visits", 0)) for r in records),
+    }
+
+
 def write_record(source: str, day_key: str, record: dict) -> Path:
     month = day_key[:7]
     data = load_month(month)
     data[source]["days"][day_key] = record
     if source == "google_search_console":
         data[source]["summary"] = summarize_gsc(data[source]["days"])
+    elif source == "cloudflare_web_analytics":
+        data[source]["summary"] = summarize_rum(data[source]["days"])
     else:
         data[source]["summary"] = summarize_cf(data[source]["days"])
     data["updated_at"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
@@ -163,6 +179,7 @@ def update_index() -> None:
                 "month": data.get("month"),
                 "google": data.get("google_search_console", {}).get("summary", {}),
                 "cloudflare": data.get("cloudflare", {}).get("summary", {}),
+                "cloudflare_web_analytics": data.get("cloudflare_web_analytics", {}).get("summary", {}),
             }
         )
     index = {
@@ -171,6 +188,19 @@ def update_index() -> None:
         "months": months,
     }
     (SERIES / "index.json").write_text(json.dumps(index, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def collect_rum_day() -> tuple[str | None, dict | None, str | None]:
+    token = os.getenv("CLOUDFLARE_API_TOKEN", "").strip()
+    zone = os.getenv("CLOUDFLARE_ZONE_ID", "").strip()
+    day = datetime.now(timezone.utc).date() - timedelta(days=1)
+    if not token or not zone:
+        return day.isoformat(), None, "token/zone variable not configured"
+    start = datetime.combine(day, time.min, tzinfo=timezone.utc)
+    try:
+        return day.isoformat(), rum_day(token, zone, start), None
+    except Exception as exc:
+        return day.isoformat(), None, str(exc)
 
 
 def main() -> int:
@@ -190,8 +220,15 @@ def main() -> int:
     elif c_error:
         print(f"Long-range Cloudflare retention unavailable for {c_day}: {c_error}", file=sys.stderr)
 
+    r_day, r_record, r_error = collect_rum_day()
+    if r_record:
+        write_record("cloudflare_web_analytics", r_day, r_record)
+        successes += 1
+    elif r_error:
+        print(f"Long-range Cloudflare Web Analytics retention unavailable for {r_day}: {r_error}", file=sys.stderr)
+
     update_index()
-    print(f"Long-range analytics retention updated; sources recorded: {successes}/2")
+    print(f"Long-range analytics retention updated; sources recorded: {successes}/3")
     return 0 if successes else 1
 
 

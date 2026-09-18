@@ -11,6 +11,7 @@ Google Search Console page/query pairs for **2026-08-20 → 2026-09-16**.
 | https://glassesresearch.org/lineages/HEYCYAN/ | cyanbridge | 5 | 0 | 0.00% | 9.4 |
 | https://glassesresearch.org/models/HuaweiEyewear2/ | huawei eyewear 2 | 2 | 0 | 0.00% | 6.0 |
 | https://glassesresearch.org/models/EvenG2/ | وش مواصفاتها | 1 | 0 | 0.00% | 8.0 |
+| https://glassesresearch.org/hacking/ | +github nashspence zetronix-lark-zshades-2k zetronix-lark-zshades-2k.py | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | ai glasses timeline | 7 | 0 | 0.00% | 20.7 |
 | https://glassesresearch.org/docs/faq/10-ownership-future/ | future of smart glasses ownership | 5 | 0 | 0.00% | 17.8 |
 | https://glassesresearch.org/ | research glasses | 2 | 0 | 0.00% | 15.0 |
