@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-08-19 → 2026-09-15**.
+Google Search Console page/query pairs for **2026-08-20 → 2026-09-16**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -8,18 +8,15 @@ Google Search Console page/query pairs for **2026-08-19 → 2026-09-15**.
 
 | Page | Query | Impressions | Clicks | CTR | Position |
 |---|---|---:|---:|---:|---:|
-| https://glassesresearch.org/lineages/HEYCYAN/ | cyanbridge | 7 | 0 | 0.00% | 9.1 |
-| https://glassesresearch.org/models/BrilliantHalo/ | brilliant labs halo github | 1 | 0 | 0.00% | 8.0 |
+| https://glassesresearch.org/lineages/HEYCYAN/ | cyanbridge | 5 | 0 | 0.00% | 9.4 |
+| https://glassesresearch.org/models/HuaweiEyewear2/ | huawei eyewear 2 | 2 | 0 | 0.00% | 6.0 |
 | https://glassesresearch.org/models/EvenG2/ | وش مواصفاتها | 1 | 0 | 0.00% | 8.0 |
-| https://glassesresearch.org/lineages/META/ | meta gls | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | ai glasses timeline | 6 | 0 | 0.00% | 21.7 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | ai glasses timeline | 7 | 0 | 0.00% | 20.7 |
 | https://glassesresearch.org/docs/faq/10-ownership-future/ | future of smart glasses ownership | 5 | 0 | 0.00% | 17.8 |
-| https://glassesresearch.org/models/XREALOne/ | xreal wiki | 4 | 0 | 0.00% | 22.0 |
-| https://glassesresearch.org/models/HuaweiEyewear2/ | huawei eyewear 2 | 3 | 0 | 0.00% | 13.7 |
 | https://glassesresearch.org/ | research glasses | 2 | 0 | 0.00% | 15.0 |
 | https://glassesresearch.org/models/HuaweiEyewear2/ | huawei eyewear 2022 | 2 | 0 | 0.00% | 18.5 |
+| https://glassesresearch.org/models/XREALOne/ | xreal wiki | 2 | 0 | 0.00% | 22.0 |
 | https://glassesresearch.org/models/HuaweiEyewear2/ | eyewear 2 huawei | 2 | 0 | 0.00% | 29.5 |
-| https://glassesresearch.org/models/RayNeoX3Pro/ | rayneox3pro | 1 | 0 | 0.00% | 16.0 |
 | https://glassesresearch.org/lineages/SNAP/ | snapchat spectacles website | 1 | 0 | 0.00% | 24.0 |
 | https://glassesresearch.org/models/EvenG2/ | even g2 glasses | 1 | 0 | 0.00% | 30.0 |
 
