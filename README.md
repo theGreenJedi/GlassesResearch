@@ -154,7 +154,7 @@
   <a class="gr-text-link" href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder &amp; Compare <span aria-hidden="true">→</span></a>
 </section>
 
-<section class="gr-section" aria-labelledby="gr-upcoming-title" data-home-events>
+<section class="gr-section" aria-labelledby="gr-upcoming-title" data-home-events hidden>
   <div class="gr-section-heading gr-heading-compact">
     <div>
       <p class="gr-kicker">Upcoming</p>
@@ -163,15 +163,14 @@
     <a class="gr-text-link" href="docs/EVENTS/">Open calendar <span aria-hidden="true">→</span></a>
   </div>
   <p>Verified public dates for launches, conferences, research, and developer events relevant to smart glasses and wearable AI.</p>
-  <div id="gr-home-events-list" class="gr-story-stack" aria-live="polite">
-    <p>Loading upcoming events…</p>
-  </div>
+  <div id="gr-home-events-list" class="gr-story-stack" aria-live="polite"></div>
 </section>
 
 <script>
 (() => {
   const list = document.getElementById('gr-home-events-list');
-  if (!list) return;
+  const section = document.querySelector('[data-home-events]');
+  if (!list || !section) return;
 
   const escapeHtml = (value) => String(value ?? '')
     .replaceAll('&', '&amp;')
@@ -201,7 +200,7 @@
       return response.json();
     })
     .then((state) => {
-      if (state?.schema_version !== 1 || !Array.isArray(state.events)) throw new Error('invalid events');
+      if (![1, 2].includes(state?.schema_version) || !Array.isArray(state.events)) throw new Error('invalid events');
       const today = new Date();
       today.setHours(0, 0, 0, 0);
       const items = state.events
@@ -213,19 +212,19 @@
         .sort((a, b) => parseDate(a.start_date) - parseDate(b.start_date))
         .slice(0, 3);
 
-      if (!items.length) {
-        list.innerHTML = '<p>No upcoming verified events are currently scheduled.</p>';
-        return;
-      }
+      if (!items.length) return;
 
       list.innerHTML = items.map((event) => {
         const meta = [displayDateRange(event), event.location].filter(Boolean).map(escapeHtml).join(' · ');
         const why = event.why_it_matters ? `<span>${escapeHtml(event.why_it_matters)}</span>` : '';
         return `<a href="${escapeHtml(event.source_url)}" target="_blank" rel="noopener noreferrer"><span class="gr-story-tag">${meta}</span><strong>${escapeHtml(event.title)}</strong>${why}</a>`;
       }).join('');
+      section.hidden = false;
     })
     .catch(() => {
-      list.innerHTML = '<p>Upcoming event data is temporarily unavailable. <a href="docs/EVENTS/">Open the full calendar →</a></p>';
+      // Optional homepage previews fail closed: no visitor-facing error state.
+      section.hidden = true;
+      list.replaceChildren();
     });
 })();
 </script>
