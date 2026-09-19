@@ -25,16 +25,12 @@
       <a class="gr-button gr-button-secondary" href="docs/RESEARCH_NEWS/">Follow what’s changing</a>
       <a class="gr-button gr-button-secondary" href="docs/ECOSYSTEM_MAP/">Explore ecosystem</a>
     </div>
-    <p class="gr-hero-note">No sponsored rankings. Unknown stays unknown. Owner control matters.</p>
+    <div class="gr-home-principles" aria-label="Research principles">
+      <p>No sponsored rankings. Unknown stays unknown. Owner control matters.</p>
+      <p><strong>Independent</strong> research. <strong>Evidence-linked</strong> claims. <strong>Owner-control</strong> lens. <strong>Historical</strong> preservation.</p>
+    </div>
   </div>
 </section>
-
-<div class="gr-trust-strip" aria-label="Research principles">
-  <span><strong>Independent</strong> research</span>
-  <span><strong>Evidence-linked</strong> claims</span>
-  <span><strong>Owner-control</strong> lens</span>
-  <span><strong>Historical</strong> preservation</span>
-</div>
 
 <section class="gr-section" aria-labelledby="gr-now-title">
   <div class="gr-section-heading gr-heading-compact">
