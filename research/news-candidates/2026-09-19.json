@@ -1,21 +1,27 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-19T18:59:27.103724+00:00",
+  "discovered_utc": "2026-09-19T20:49:26.863158+00:00",
   "candidate_count": 2,
-  "precision_rejected_count": 134,
+  "precision_rejected_count": 132,
   "relationship_counts": {
-    "direct": 2,
+    "direct": 1,
     "enabling": 0,
-    "adjacent": 0,
+    "adjacent": 1,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
+    "model": 1,
     "news": 1,
-    "tool": 1
+    "tool": 1,
+    "sdk": 1,
+    "community": 1
   },
   "routing_counts": {
+    "adjacent_radar": 1,
+    "community_evidence_review": 1,
     "development_hacking": 1,
+    "model_catalog_review": 1,
     "research_news_review": 2
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
@@ -27,60 +33,68 @@
   ],
   "candidates": [
     {
-      "id": "9f05591bc7efa36f",
-      "title": "Meta Connect 2026 Preview: Camera-Free AI Glasses, the ‘Phoenix’ Headset and Meta’s App Problem - egamers.io",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdkRDeWtjbnNaWHlPM2cxc0lmWHRkZThyWURUcW1JTU5aVTItTjVyY1hiX3p1bTVaMFZ2MTY3OC1ZcEdWNkNDaW5QTzJDamFoc2YtZVkwa1FHUGRLYVQ2c1lmWDFhZmFPTEtxUWRnNU5BUVJDYklaM1Fwb1otU0VWN1hybE1zNkFjV2lNVUt0QVBpS0JpOWNqREJGOXRyb1B2V3lENkZpdzNCbURKNTcw?oc=5",
-      "source": "Google News: AI glasses",
-      "source_lane": "core_glasses",
-      "published": "Sat, 19 Sep 2026 14:50:50 GMT",
-      "summary": "Meta Connect 2026 Preview: Camera-Free AI Glasses, the ‘Phoenix’ Headset and Meta’s App Problem egamers.io",
-      "materiality_score": 2,
+      "id": "0184e5b87cd3f612",
+      "title": "Mentra 3.2.1-dev.298",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.298",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-09-19T19:20:42Z",
+      "summary": "Mentra 3.2.1-dev.298 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) iOS IPA Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: e9563cb . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
       "keyword_hits": [
-        "ai",
-        "camera"
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
       ],
       "status": "candidate",
       "relationship": "direct",
       "content_types": [
-        "tool"
+        "model",
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "development_hacking"
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
       ],
-      "triage_priority": "normal",
+      "triage_priority": "high",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
+      "publication_gate_reason": "known smart-glasses source",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
+      "institution_test": "likely durable"
     },
     {
-      "id": "98acdded7e66d1cc",
-      "title": "Meta Luna, camera-free smart glasses packed with AI - korben.info",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kaXRfc3hTTXdKaUFSNnh1Tld4NnZTa2Y1aFRvOU0wYnVpTTh1STR0bklzM2JweER0TDJJNEtGenNIU0psY0liNGI2dGVwVmI0RGxEZmZKaUh2YUFjbUsySkFLOXpITmxNTDZNaDhmRWJ0V1B1?oc=5",
-      "source": "Google News: smartglasses",
-      "source_lane": "core_glasses",
-      "published": "Fri, 18 Sep 2026 16:30:16 GMT",
-      "summary": "Meta Luna, camera-free smart glasses packed with AI korben.info",
+      "id": "bea9cfe6f1dc4e7f",
+      "title": "Logitech Rally AI Camera and Rally AI Camera Pro Bring AI-Powered Intelligence to Large Meeting Spaces - pokde.net",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB1aEt6N0pMNHNGcGgwZ0R4NjFlMS1LSjFRS3VsR3RRSGdwYUhxS2VLYzZJY0pwYzExdTJXUjBadTZCZ1NLa2VfYUs2Y0JudHd6d1VqTXloRkpmSHQwQ253WU00aDRiLURQcFZ1U0RkOWxnRDlMZmc?oc=5",
+      "source": "Google News: AI wearable camera",
+      "source_lane": "adjacent_hci",
+      "published": "Sat, 19 Sep 2026 14:21:30 GMT",
+      "summary": "Logitech Rally AI Camera and Rally AI Camera Pro Bring AI-Powered Intelligence to Large Meeting Spaces pokde.net",
       "materiality_score": 2,
       "keyword_hits": [
         "ai",
         "camera"
       ],
       "status": "candidate",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
