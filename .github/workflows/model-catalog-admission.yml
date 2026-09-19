@@ -72,9 +72,18 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          oidc_json="$(curl --fail --silent --show-error \
-            -H "Authorization: Bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
-            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=${OIDC_AUDIENCE}")"
+
+          # Remote intake is opportunistic. Repository-resident proposals are
+          # authoritative input to the bounded actuator and must not be blocked
+          # by an OIDC/queue outage. Keep intake transactional: if any part of
+          # the remote fetch/filter/ingest fails, restore the exact canonical
+          # base before continuing.
+          intake_base="$(cat /tmp/base-sha)"
+          if ! (
+            set -euo pipefail
+            oidc_json="$(curl --fail --silent --show-error \
+              -H "Authorization: Bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+              "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=${OIDC_AUDIENCE}")"
           oidc_token="$(python -c 'import json,sys; print(json.load(sys.stdin)["value"])' <<<"${oidc_json}")"
           test -n "${oidc_token}"
           echo "::add-mask::${oidc_token}"
@@ -113,6 +122,12 @@ jobs:
           created = ingest(filtered, Path('research/model-proposals'), os.environ['MODEL_PROPOSAL_QUEUE_URL'])
           print(f"Ingested {len(created)} automatic-lane proposal candidate(s).")
           PY
+          ); then
+            echo "::warning::Remote model-proposal intake failed; restoring canonical base and continuing with repository-resident proposals."
+            git reset --hard "${intake_base}"
+            git clean -fd -- research/model-proposals
+            rm -f /tmp/model-proposal-queue.json
+          fi
 
       - name: Apply bounded automatic admission gate
         run: python scripts/model_catalog_admission_actuator.py --all
