@@ -2,7 +2,7 @@
 
 **Edition:** 2026-09-14
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 245 distinct purchasable models or explicitly marketed product generations
+**Count:** 246 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -444,6 +444,13 @@ These rows were already authorized in dated reconciliation packets. This section
 | GLS-0245 | Goodway / shared Ear Dance OEM ecosystem | W100C | 2026 | current/OEM-retail | audio / AI translation smart glasses | retail/OEM | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-14_HANGING_MODELS.md); [source](https://www.goodwaytechs.com/goodway-w100c-ai-bluetooth-smart-glasses-for-real-time-translation.html) |
 | GLS-0246 | Zetronix | Lark | 2021 | current/retail | camera sunglasses | manufacturer store | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-14_HANGING_MODELS.md); [source](https://www.zetronix.com/lark-superhd-wifi-video-recording-sports-camera-sunglasses.html) |
 
+
+## Reconciliation admission — CY03 MAX
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0247 | Shared OEM/ODM ecosystem / Dongguan Donghuasheng listing | CY03 MAX | ≤2026 | current/marketplace | camera/audio AI glasses | OEM/ODM marketplace | commercial; [registry](CATALOG.md); [Report Card](../docs/report-cards/CY03_MAX.md); supplier listing documents active two-piece ordering, model identity CY03 MAX, camera/audio/translation/AI-assistant claims, 290 mAh battery, IP65 and USB-C charging. Claims remain supplier-reported and unverified by GlassesResearch. |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -456,7 +463,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 245-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 246-row count:
 
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
