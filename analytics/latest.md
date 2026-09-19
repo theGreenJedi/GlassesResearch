@@ -1,14 +1,14 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-09-18T17:03:00+00:00**
+Generated automatically: **2026-09-19T11:56:02+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-09-10 → 2026-09-16):** 315 impressions, 0 clicks, 0.00% CTR, average position 9.1.
-- **7-day change:** impressions +28.0%; clicks -100.0%.
-- **Rolling 28 days:** 981 impressions, 5 clicks, 0.51% CTR, average position 19.1.
+- **Google, latest final 7 days (2026-09-11 → 2026-09-17):** 286 impressions, 0 clicks, 0.00% CTR, average position 9.2.
+- **7-day change:** impressions +13.9%; clicks -100.0%.
+- **Rolling 28 days:** 911 impressions, 5 clicks, 0.55% CTR, average position 17.6.
 
 ## Google — top queries
 
@@ -16,7 +16,7 @@ Generated automatically: **2026-09-18T17:03:00+00:00**
 |---|---:|---:|---:|---:|
 | +github nashspence zetronix-lark-zshades-2k zetronix-lark-zshades-2k.py | 0 | 1 | 0.00% | 10.0 |
 | ai glasses timeline | 0 | 2 | 0.00% | 14.5 |
-| ar eyeglass development case study | 0 | 6 | 0.00% | 48.3 |
+| ar eyeglass development case study | 0 | 5 | 0.00% | 49.4 |
 | augmented reality timeline | 0 | 1 | 0.00% | 43.0 |
 | glasses datasets | 0 | 1 | 0.00% | 54.0 |
 | google glass timeline | 0 | 1 | 0.00% | 74.0 |
@@ -28,61 +28,65 @@ Generated automatically: **2026-09-18T17:03:00+00:00**
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/ | 0 | 17 | 0.00% | 25.9 |
+| https://glassesresearch.org/ | 0 | 16 | 0.00% | 27.1 |
 | https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 1 | 0.00% | 4.0 |
 | https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 1 | 0.00% | 8.0 |
 | https://glassesresearch.org/docs/ABOUT/ | 0 | 1 | 0.00% | 3.0 |
 | https://glassesresearch.org/docs/BLE/ | 0 | 3 | 0.00% | 2.7 |
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 25 | 0.00% | 5.2 |
-| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 47 | 0.00% | 14.6 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 40 | 0.00% | 15.0 |
 | https://glassesresearch.org/docs/INSTITUTIONAL_COLLECTIONS/ | 0 | 2 | 0.00% | 2.0 |
-| https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 57 | 0.00% | 6.8 |
+| https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 56 | 0.00% | 6.9 |
 | https://glassesresearch.org/docs/SEO_DISCOVERABILITY/ | 0 | 1 | 0.00% | 5.0 |
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **7 browser pageviews**, **6 RUM visits**.
-- Rolling 7d: **145 browser pageviews**, **98 RUM visits**.
+- Rolling 24h: **11 browser pageviews**, **8 RUM visits**.
+- Rolling 7d: **139 browser pageviews**, **90 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
-| /docs/INDUSTRY_TIMELINE/ | 2 | 2 |
-| / | 2 | 2 |
-| /docs/COMPARISON_ENGINE/ | 1 | 0 |
-| /lineages/ROKID/ | 1 | 1 |
-| /docs/admin/SCHEDULER/ | 1 | 1 |
+| /docs/COMPARISON_ENGINE/ | 2 | 0 |
+| /models/catalog/gls-0051/ | 2 | 2 |
+| /models/AnkoCameraGlasses/ | 1 | 1 |
+| /docs/SDK_API_MATRIX/ | 1 | 1 |
+| /docs/RESEARCH_NEWS/ | 1 | 0 |
+| /models/catalog/gls-0232/ | 1 | 1 |
+| /models/PROFILES_2026_09_03_MYVU_STARV/ | 1 | 1 |
+| / | 1 | 1 |
+| /docs/REPORT_CARD/ | 1 | 1 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| chatgpt.com | 3 | 3 |
-| (direct / none) | 3 | 3 |
-| glassesresearch.org | 1 | 0 |
+| (direct / none) | 6 | 6 |
+| glassesresearch.org | 3 | 0 |
+| duckduckgo.com | 2 | 2 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **5,020 requests**, **939 HTTP visits**, **104.9 MB** served.
-- Rolling 7d: **45,625 requests**, **9,182 HTTP visits**, **868.3 MB** served.
+- Rolling 24h: **10,794 requests**, **1,927 HTTP visits**, **127.1 MB** served.
+- Rolling 7d: **52,363 requests**, **10,362 HTTP visits**, **903.0 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 3,118 | 730 |
-| NL | 710 | 0 |
-| BR | 252 | 0 |
-| MO | 165 | 0 |
-| CA | 151 | 129 |
-| AU | 129 | 7 |
-| AE | 81 | 2 |
-| CN | 78 | 5 |
-| IT | 72 | 3 |
-| HK | 70 | 1 |
+| US | 9,087 | 1,726 |
+| CA | 632 | 51 |
+| DE | 235 | 5 |
+| SE | 129 | 5 |
+| AU | 126 | 3 |
+| SG | 121 | 56 |
+| FI | 95 | 3 |
+| T1 | 70 | 0 |
+| BO | 65 | 1 |
+| CO | 55 | 0 |
 
 ## What to watch
 
