@@ -106,7 +106,7 @@ Continue: [current Halliday model](https://glassesresearch.org/models/catalog/gl
 
 </details>
 
-<details>
+<details id="verified-research-alerts" open>
 <summary><strong>Follow verified research by email</strong></summary>
 
 Receive only verified, published GlassesResearch work. Follow specific models, brands/lineages, or topics and choose delivery cadence. [How Verified Research Alerts work](alerts/README.md).
