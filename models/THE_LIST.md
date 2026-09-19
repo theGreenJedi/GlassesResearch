@@ -449,7 +449,7 @@ These rows were already authorized in dated reconciliation packets. This section
 
 | ID | Maker | Model | Era | State | Type | Access | Evidence / links |
 |---|---|---:|---:|---|---|---|---|
-| GLS-0247 | Shared OEM/ODM ecosystem / Dongguan Donghuasheng listing | CY03 MAX | ≤2026 | current/marketplace | camera/audio AI glasses | OEM/ODM marketplace | commercial; [registry](CATALOG.md); supplier listing documents active two-piece ordering, model identity CY03 MAX, camera/audio/translation/AI-assistant claims, 290 mAh battery, IP65 and USB-C charging. Claims remain supplier-reported and unverified by GlassesResearch. |
+| GLS-0247 | Shared OEM/ODM ecosystem / Dongguan Donghuasheng listing | CY03 MAX | ≤2026 | current/marketplace | camera/audio AI glasses | OEM/ODM marketplace | commercial; [registry](CATALOG.md); [Report Card](../docs/report-cards/CY03_MAX.md); supplier listing documents active two-piece ordering, model identity CY03 MAX, camera/audio/translation/AI-assistant claims, 290 mAh battery, IP65 and USB-C charging. Claims remain supplier-reported and unverified by GlassesResearch. |
 
 ## Google Glass is in scope
 
