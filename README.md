@@ -5,13 +5,6 @@
     <p class="gr-kicker">Independent wearable-intelligence research</p>
     <h1 id="gr-home-title">Understand the glasses.<br>Own the choices.</h1>
     <p class="gr-hero-lede">GlassesResearch investigates smart glasses and wearable AI as products, platforms, interfaces, and long-lived systems — with evidence linked back to the claims.</p>
-    <div class="gr-hero-actions">
-      <a class="gr-button gr-button-primary" href="docs/COMPARISON_ENGINE/">Find glasses</a>
-      <a class="gr-button gr-button-secondary" href="models/catalog/">Research a model</a>
-      <a class="gr-button gr-button-secondary" href="docs/RESEARCH_NEWS/">Follow what’s changing</a>
-      <a class="gr-button gr-button-secondary" href="docs/ECOSYSTEM_MAP/">Explore ecosystem</a>
-    </div>
-    <p class="gr-hero-note">No sponsored rankings. Unknown stays unknown. Owner control matters.</p>
   </div>
 
   <div class="gr-hero-panel" aria-label="GlassesResearch research system">
@@ -23,6 +16,16 @@
       <div><strong data-site-stat="report-cards">Scored research</strong><span>scored Report Cards</span></div>
       <div><strong data-site-stat="freshness">Continuously built</strong><span>catalog updated</span></div>
     </div>
+  </div>
+
+  <div class="gr-hero-followup">
+    <div class="gr-hero-actions">
+      <a class="gr-button gr-button-primary" href="docs/COMPARISON_ENGINE/">Find glasses</a>
+      <a class="gr-button gr-button-secondary" href="models/catalog/">Research a model</a>
+      <a class="gr-button gr-button-secondary" href="docs/RESEARCH_NEWS/">Follow what’s changing</a>
+      <a class="gr-button gr-button-secondary" href="docs/ECOSYSTEM_MAP/">Explore ecosystem</a>
+    </div>
+    <p class="gr-hero-note">No sponsored rankings. Unknown stays unknown. Owner control matters.</p>
   </div>
 </section>
 
