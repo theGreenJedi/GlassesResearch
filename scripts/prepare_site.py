@@ -52,6 +52,7 @@ def main():
     run(ROOT/"scripts/build_purchase_fallbacks.py","--models",ROOT/"models/THE_LIST.md","--curated",ROOT/"data/purchase-sources.json","--output",DEST/"data/purchase-fallbacks.json")
     run(ROOT/"scripts/verify_model_visuals.py","--registry",ROOT/"data/model-visuals.json","--root",ROOT,"--models",ROOT/"models/THE_LIST.md")
     run(ROOT/"scripts/build_model_pages.py","--data-dir",DEST/"data","--output-root",DEST)
+    run(ROOT/"scripts/attach_report_card_visuals.py","--site-root",DEST,"--visuals",ROOT/"data/model-visuals.json")
     run(ROOT/"scripts/attach_model_research.py","--site-root",DEST)
     run(ROOT/"scripts/build_gls_resolver.py","--devices",database,"--output-root",DEST)
     run(ROOT/"scripts/build_citation_distribution.py","--devices",database,"--scores",cards,"--output-root",DEST)
