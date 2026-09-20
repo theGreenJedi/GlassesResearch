@@ -54,6 +54,10 @@ The weekly sweep starts here and expands outward. Primary sources establish what
 - [IEEE Spectrum](https://spectrum.ieee.org/)
 - [Counterpoint Research](https://counterpointresearch.com/)
 - [IDC](https://www.idc.com/)
+- [PCMag smart-glasses coverage](https://www.pcmag.com/news/categories/smart-glasses) — **Competition**; editorial/review discovery source
+- [Tom's Guide smart-glasses coverage](https://www.tomsguide.com/computing/vr-ar/smart-glasses) — **Competition**; editorial/review discovery source
+- [WIRED smart-glasses coverage](https://www.wired.com/tag/smart-glasses/) — **Competition**; reporting/testing benchmark and discovery source
+- [Smart Glasses Geek](https://smartglassesgeek.com/) — **Competition**; specialist smart-glasses editorial/discovery source
 
 Independent coverage should add testing, sourcing, market data, correction, or context. Do not preserve copied press-release summaries merely to inflate volume.
 
