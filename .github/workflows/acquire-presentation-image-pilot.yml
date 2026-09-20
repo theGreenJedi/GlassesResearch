@@ -45,7 +45,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images/models/original data/model-visuals.json
-          git commit -m "Acquire Huawei Eyewear 2 presentation original"
+          if git diff --cached --quiet; then
+            echo "No new acquisition changes to commit"
+            exit 0
+          fi
+          git commit -m "Acquire governed presentation originals"
           git push origin HEAD:presentation-mission
 
 # acquisition-trigger: huawei-eyewear-2
