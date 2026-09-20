@@ -272,6 +272,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-dir", type=Path, required=True)
     parser.add_argument("--output-root", type=Path, required=True)
+    parser.add_argument("--visuals", type=Path)
     args = parser.parse_args()
     devices = load(args.data_dir / "devices.json")
     comparisons = load(args.data_dir / "comparisons.json")
