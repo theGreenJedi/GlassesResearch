@@ -21,9 +21,9 @@ jobs:
         run: |
           import json, pathlib, urllib.request
           items = {
-            "GLS-0072": ("https://us.shop.xreal.com/cdn/shop/files/air2pro.jpg?v=1719102328&width=1946", "jpg"),
-            "GLS-0104": ("https://shop.realwear.com/cdn/shop/files/127128_0.png?v=1779278187&width=3840", "png"),
-            "GLS-0105": ("https://shop.realwear.com/cdn/shop/files/127165_1.png?v=1779270275&width=500", "png"),
+            "GLS-0071": ("https://us.shop.xreal.com/cdn/shop/files/20241021-115847.jpg?v=1729483134&width=1946", "jpg"),
+            "GLS-0074": ("https://us.shop.xreal.com/cdn/shop/files/XREAL_One_AR_Glasses_White-Background.jpg?v=1784702696&width=1946", "jpg"),
+            "GLS-0075": ("https://us.shop.xreal.com/cdn/shop/files/XREAL_One_Pro.jpg?v=1756965858&width=1946", "jpg"),
           }
           root=pathlib.Path(".")
           out=root/"images/models/original"; out.mkdir(parents=True,exist_ok=True)
@@ -47,5 +47,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images/models/original data/model-visuals.json
-          git commit -m "Acquire first governed model presentation originals"
+          git commit -m "Acquire governed XREAL presentation originals"
           git push origin HEAD:presentation-mission
