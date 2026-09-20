@@ -18,9 +18,7 @@
   <span>Three community repositories show how reverse engineering, evidence discipline, and reusable software can give owners more practical authority over hardware they already possess.</span>
 </a>
 
-## Latest verified
-
-A concise list of the newest developments that crossed the GlassesResearch publication threshold. The live wire stays broad and fast; this desk stays selective.
+## Current Desk
 
 | Date | What changed | Read |
 |---|---|---|
