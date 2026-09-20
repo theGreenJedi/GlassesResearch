@@ -37,6 +37,12 @@ These documents explain how the project separates direct observation, primary-so
 
 GlassesResearch does not sell rankings. Lineage/OEM relationships, owner control, cloud independence, preservation, and reproducibility are treated as research questions in their own right.
 
+## Product imagery and rights
+
+GlassesResearch uses product imagery to identify, illustrate, compare, document, and discuss the products under independent research and editorial coverage. Manufacturer-published imagery may be used when reasonably necessary for those purposes; the image remains the property of its rights holder and is not offered for independent reuse or redistribution.
+
+Public availability is not treated as public-domain status. Each published model image must have recorded provenance and a publication basis. GlassesResearch prefers its own photography and explicitly licensed or press/media assets, and may use manufacturer-published product imagery under a documented editorial-use rationale. See the [model presentation imagery policy](../images/MODEL_PRESENTATION.md) for the full sourcing, attribution, publication, and rights-review rules.
+
 ## How the research conveyor runs
 
 - [Scheduler manifest](admin/SCHEDULER.md)
