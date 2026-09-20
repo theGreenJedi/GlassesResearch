@@ -41,3 +41,18 @@ Use `models/<canonical-model-id>/` for model-specific knowledge and shared catal
 Follow `docs/news/WORKFLOW.md` for periodic ecosystem sweeps. News is an intake layer, not a substitute for canonical knowledge: material developments must update the release tracker and affected model, glossary, resource, FAQ, or backlog pages in the same pull request when practical.
 
 Never create empty weekly digests. Distinguish announcement, preorder, targeted shipping, confirmed shipping, independent verification, and project hands-on status. Preserve corrections rather than silently rewriting old digests.
+
+## Mission-style execution protocol
+
+When a maintainer invokes **Mission Style**, treat the stated end state as commander's intent rather than as a request for one conversational step.
+
+1. Continue executing while useful actions remain within the stated objective and established project boundaries.
+2. After each action or tool result, ask whether the end state is actually achieved. If not, select and execute the next available action rather than returning control merely to report progress.
+3. A blocker on one branch of work is not a blocker on the mission. Continue independent branches while the blocked branch waits.
+4. Do not stop at “changed.” Validate downstream references, navigation, generated output, automation, and the deployed result when those surfaces are part of the mission.
+5. Fix unambiguous, reversible defects exposed by the mission when they are within scope; do not expand a maintenance mission into unrelated redesign or feature work.
+6. Escalate only decisions that genuinely require maintainer judgment, authority, credentials, irreversible/high-impact action, or a choice between materially different valid outcomes.
+7. Status reports are milestones, not completion gates. Do not end with “next we should” or “I can now” when the next action is already authorized and executable.
+8. Mission completion requires verified end-state evidence, or a clearly identified blocker that prevents further progress across the mission rather than a single branch.
+
+Execution loop: **intent → execute → check end state → next action if incomplete → verify → report**.
