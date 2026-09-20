@@ -46,14 +46,23 @@ jobs:
                 target=set(re.findall(r"[a-z0-9]+",rec.get("alt","").lower()))
                 target-={"smart","glasses","glass","the","and","with","black","frame"}
                 ranked=[]
+                candidates=[]
                 for tag in re.findall(r"<img\\b[^>]*>",html,re.I):
                   am=re.search(r'alt=["\\\']([^"\\\']*)',tag,re.I)
-                  sm=re.search(r'(?:src|data-src)=["\\\']([^"\\\']+)',tag,re.I)
-                  if not sm: continue
-                  u=urllib.parse.urljoin(page,sm.group(1).replace("&amp;","&"))
-                  hay=((am.group(1) if am else "")+" "+u).lower()
-                  score=sum(1 for t in target if t in hay)
-                  if any(x in hay for x in ("logo","icon","avatar","flag")): score-=5
+                  for sm in re.finditer(r'(?:src|data-src|srcset|data-srcset)=["\\\']([^"\\\']+)',tag,re.I):
+                    raw=sm.group(1).split(",")[0].strip().split(" ")[0]
+                    candidates.append(((am.group(1) if am else ""),raw))
+                for raw in re.findall(r'https?[^"\\\' ]+?\\.(?:png|jpe?g|webp)(?:\\?[^"\\\' ]*)?',html,re.I):
+                  candidates.append(("",raw))
+                seen=set()
+                for alt,raw in candidates:
+                  u=urllib.parse.urljoin(page,raw.replace("&amp;","&").replace("\\/","/"))
+                  if u in seen: continue
+                  seen.add(u)
+                  hay=(alt+" "+u).lower()
+                  score=sum(2 for t in target if t in hay)
+                  if any(x in hay for x in ("hero","product","front","angle")): score+=1
+                  if any(x in hay for x in ("logo","icon","avatar","flag","sprite")): score-=8
                   ranked.append((score,u))
                 ranked.sort(reverse=True)
                 if ranked and ranked[0][0]>0: image=ranked[0][1]
