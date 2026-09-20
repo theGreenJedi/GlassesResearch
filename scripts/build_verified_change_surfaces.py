@@ -137,8 +137,6 @@ def homepage_latest_section(events: list[dict[str, Any]]) -> str:
     </div>
     <a class="gr-text-link" href="/docs/RESEARCH_NEWS/">All verified <span aria-hidden="true">→</span></a>
   </div>
-  <p class="gr-news-column-explainer">Developments that have passed GlassesResearch evidence and verification standards.</p>
-
   <div class="gr-editorial-grid">
     <a class="gr-feature-story" href="{feature_href}" data-home-gre="{feature['id']}">
       <span class="gr-story-art" aria-hidden="true"></span>

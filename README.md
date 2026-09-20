@@ -23,7 +23,6 @@
       <a class="gr-button gr-button-primary" href="docs/COMPARISON_ENGINE/">Find glasses</a>
       <a class="gr-button gr-button-secondary" href="models/catalog/">Research a model</a>
       <a class="gr-button gr-button-secondary" href="docs/RESEARCH_NEWS/">Follow what’s changing</a>
-      <a class="gr-button gr-button-secondary" href="docs/ECOSYSTEM_MAP/">Explore ecosystem</a>
     </div>
     <div class="gr-home-principles" aria-label="Research principles">
       <p>No sponsored rankings. Unknown stays unknown. Owner control matters.</p>
@@ -42,11 +41,10 @@
   </div>
 
   <div class="gr-editorial-grid">
-    <a class="gr-feature-story" href="docs/news/articles/2026-09-06-when-owners-take-their-glasses-back/">
-      <span class="gr-story-art" aria-hidden="true"></span>
-      <span class="gr-story-tag">Community Research · Editorial</span>
-      <strong>When owners take their glasses back</strong>
-      <span>Three community projects show how interoperability research, evidence discipline, and reusable software can give owners more practical authority over hardware they possess.</span>
+    <a class="gr-feature-story" href="docs/news/articles/2026-09-19-right-to-repair-smart-glasses/">
+      <span class="gr-story-tag">Verified · Editorial · Right to repair</span>
+      <strong>You bought the glasses. Can you repair them?</strong>
+      <span>The lawsuit is new. The question is older: what does ownership mean when eyewear becomes computing hardware?</span>
       <em>Read the editorial →</em>
     </a>
 

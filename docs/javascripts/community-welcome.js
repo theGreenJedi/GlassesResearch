@@ -46,12 +46,10 @@ function showCommunityWelcome() {
     },
   };
 
-  const defaultGreeting = {
-    title: "Welcome to GlassesResearch",
-    message: "Choose a research collection below: questions, hacking, models, buying guidance, news, history, glossary, or the hands-on W610 investigation.",
-  };
-
-  const greeting = source ? greetings[source.toLowerCase()] : defaultGreeting;
+  // Only show a welcome when the visitor explicitly arrived through a supported
+  // community link. Ordinary homepage and Contribute visits get no generic banner.
+  if (!source) return;
+  const greeting = greetings[source.toLowerCase()];
   if (!greeting) return;
 
   const existing = article.querySelector(".glassesresearch-welcome");

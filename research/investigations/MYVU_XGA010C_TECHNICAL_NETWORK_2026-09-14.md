@@ -3,7 +3,8 @@
 **Date:** 2026-09-14  
 **Subject:** MYVU Air / StarV Air (`XGA010C`)  
 **Evidence lane:** Community-primary technical research + GlassesResearch investigation planning  
-**Independent GlassesResearch reproduction:** Pending controlled specimen
+**Independent GlassesResearch reproduction:** Pending controlled specimen  
+**Substantive update:** 2026-09-20 — BimaPDev firmware evidence admitted as community-primary, hardware-tested
 
 ## Mission
 
@@ -36,19 +37,47 @@ The useful connection is therefore **knowledge flow**, not automatic lineage:
 
 **Evidence state:** community-primary software project. Any XGA010C behavior attributed to CyanBridge must be traced to a concrete implementation or test before promotion.
 
-## Claims deliberately NOT promoted
+## BimaPDev — firmware modification and bounded native execution
 
-During discovery, a firmware/OTA experimentation lead was discussed that was described as involving an XGA010C OTA-bank-sized image of roughly 423 KB and hardware testing by a community developer. GlassesResearch has not yet located a directly inspectable primary artifact sufficient to establish that claim.
+The previously quarantined XGA010C firmware/OTA lead is now traceable to a directly inspectable public primary project: `BimaPDev/SmartGlasses`. The project documents firmware analysis and patching, hardware-visible modified firmware, execution of hand-written Thumb from PSRAM, and subsequent hardware-confirmed execution of compiled C from PSRAM with calls back into vendor firmware.
 
-Therefore, as of 2026-09-14:
+Follow-up hardware testing used multiple callback detours and visible rendering behavior as positive controls. This advances the old firmware lead from **unresolved** to **community-primary, hardware-tested**.
 
-- the ~423 KB figure is **not admitted as evidence**;
-- successful firmware replacement is **not established**;
-- arbitrary code execution is **not established**;
-- root access is **not established**;
-- a complete custom-firmware build/flash/recovery chain is **not established**.
+The evidence does **not** establish root access, unrestricted native applications, a complete replacement firmware, or a general custom-firmware build/flash/recovery chain. Published payload work still records explicit limits around payload-owned data/BSS/string-literal/literal-pool use.
 
-If the primary source is located later, it should receive its own provenance record and be evaluated independently. A hardware-tested OTA manipulation would still not, by itself, prove arbitrary code execution or a general custom-firmware path.
+BimaPDev also documented that assumptions about firmware regions and offsets can vary by build. Addresses, patch offsets and resource boundaries must therefore remain firmware-version-specific unless separately demonstrated.
+
+**Primary sources:**
+- https://github.com/BimaPDev/SmartGlasses
+- https://github.com/BimaPDev/SmartGlasses/commit/8f5c6b71a23de9d7453bb9d5df7f6a2993dbaae9
+- https://github.com/BimaPDev/SmartGlasses/commit/d2aa057a7de6dc7aa3cce0d4de68bc9e9ac99757
+
+### Filesystem and transfer boundary
+
+The same project documents a LittleFS-backed storage path plus a protobuf ShareMessage BLE transfer family with named chunked transfers, MD5 verification, acknowledgements and pull-by-known-filename behavior. Its negative tests report no filesystem-list operation in the examined transfer family, while the examined LittleFS adapter reports writes as unsupported and loads its partition from flash into PSRAM at boot.
+
+This is useful interoperability evidence but not evidence of arbitrary filesystem enumeration or a simple replacement-file path.
+
+**Primary source:** https://github.com/BimaPDev/SmartGlasses/commit/01a374068fba8730b4b497a82bacfda730412428
+
+### Boot versus shutdown assets
+
+A hardware-visible rebrand showed modified BIMA branding at power-off while boot still displayed MYVU. After correcting an earlier incomplete resource search, the project reported the shutdown asset inside the OTA-carried image but no boot/splash asset there.
+
+The empirical distinction is useful. The exact boot asset location remains unresolved.
+
+**Primary source:** https://github.com/BimaPDev/SmartGlasses/commit/b9bbe7dbe87660736c5016baef0fee36ab270cf4
+
+## Claims still deliberately NOT promoted
+
+Even with the stronger BimaPDev evidence, GlassesResearch does not presently claim:
+
+- root access;
+- unrestricted arbitrary native execution;
+- a complete owner-buildable replacement firmware;
+- a universal flash/recovery chain across XGA010C firmware versions;
+- the exact physical location of the boot asset;
+- GlassesResearch-independent reproduction of BimaPDev's firmware results.
 
 ## Owner-testing protocol for a GlassesResearch specimen
 
@@ -126,10 +155,11 @@ Do not convert one state into another through repetition.
 1. Acquire/control an XGA010C specimen and execute Stages 0–2 before considering firmware writes.
 2. Preserve exact versions/hashes of Panny777 artifacts used for replication.
 3. Trace CyanBridge's current MYVU integration to concrete source paths and document which behaviors are inherited, reimplemented or still planned.
-4. Locate the primary artifact behind the discussed firmware/OTA lead; until then keep it quarantined as a lead.
-5. If a firmware artifact is located, record provenance, hash, format, signature/verification behavior and recovery implications before testing.
-6. Promote only successfully reproduced results into GlassesResearch lab evidence and Report Card narratives.
+4. Preserve the exact BimaPDev commits, firmware-build identifiers and tooling used for any reproduction; do not transplant offsets across builds.
+5. Reproduce one deliberately benign, hardware-visible firmware modification only after recovery prerequisites are satisfied, then separately test the bounded PSRAM execution path.
+6. Record provenance, hashes, format, signature/verification behavior and recovery implications before any GlassesResearch write experiment.
+7. Promote only successfully reproduced results into GlassesResearch lab evidence and Report Card narratives.
 
 ## Disposition
 
-The XGA010C now has a single cross-project technical map and a specimen-ready, preservation-first owner-testing protocol. The strongest present conclusion remains: **third-party application-level interoperability is well supported by community-primary, hardware-tested work; firmware-level owner control remains unproven.**
+The XGA010C now has a cross-project technical map spanning Panny777 application/protocol interoperability, CyanBridge knowledge flow, and BimaPDev firmware work. The evidence now supports a stronger but bounded conclusion: **third-party application-level interoperability and a firmware-level owner-controlled execution path are supported by community-primary, hardware-tested work. GlassesResearch has not independently reproduced either result, and complete custom firmware/root/general native execution remain unproven.**
