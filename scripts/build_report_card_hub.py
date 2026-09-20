@@ -126,6 +126,7 @@ def main() -> int:
     parser.add_argument("--devices", type=Path, required=True)
     parser.add_argument("--scores", type=Path, required=True)
     parser.add_argument("--aliases", type=Path)
+    parser.add_argument("--visuals", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
@@ -152,6 +153,9 @@ def main() -> int:
         )
 
     aliases = alias_map(args.aliases)
+    visual_records = {}
+    if args.visuals and args.visuals.exists():
+        visual_records = load(args.visuals).get("records", {})
     rows: list[str] = []
     sorted_records = sorted(
         records,
@@ -173,14 +177,23 @@ def main() -> int:
                 + "</small>"
             )
         search_terms = " ".join([model_id, model_name, *known_as]).casefold()
+        visual = visual_records.get(model_id, {})
+        image_html = '<span class="gr-report-card-image-missing" aria-hidden="true">GLASSES</span>'
+        if visual.get("state") == "published" and visual.get("primary_image"):
+            src = "/" + str(visual["primary_image"]).lstrip("/")
+            alt = str(visual.get("alt") or model_name)
+            image_html = (
+                f'<img class="gr-report-card-image" src="{html.escape(src, quote=True)}" '
+                f'alt="{html.escape(alt, quote=True)}" loading="lazy" decoding="async">'
+            )
         cells = "".join(
             f"<td>{html.escape(format_score(score_records[model_id]['scores'].get(dim)))}</td>"
             for dim in dimension_ids
         )
         rows.append(
             f'<tr data-search="{html.escape(search_terms, quote=True)}">'
-            f'<td><a href="{html.escape(record["public"]["model_page"], quote=True)}">'
-            f"<strong>{html.escape(model_name)}</strong></a>{alias_text}</td>"
+            f'<td class="gr-report-card-model"><a href="{html.escape(record["public"]["model_page"], quote=True)}">'
+            f'{image_html}<span><strong>{html.escape(model_name)}</strong>{alias_text}</span></a></td>'
             f"<td><code>{html.escape(model_id)}</code></td>{cells}</tr>"
         )
 
