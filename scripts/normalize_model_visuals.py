@@ -16,7 +16,7 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument("--registry",type=Path,required=True)
     p.add_argument("--root",type=Path,required=True)
-    p.add_argument("--write-registry",action="store_true")
+    p.add_argument("--write-registry",action="store_true")\n    p.add_argument("--output-root",type=Path)
     a=p.parse_args()
     try:
         from PIL import Image
@@ -32,7 +32,7 @@ def main():
         if not src.exists():
             raise SystemExit(f"{model_id}: original_image missing: {original}")
         out_rel=f"images/models/presentation/{model_id.lower()}.png"
-        out=a.root/out_rel
+        output_root=a.output_root or a.root\n        out=output_root/out_rel
         out.parent.mkdir(parents=True,exist_ok=True)
         with Image.open(src) as im:
             im=im.convert("RGBA")
