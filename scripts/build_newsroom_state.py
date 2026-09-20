@@ -176,7 +176,7 @@ def build(payload: dict, editorial_lead: dict | None = None) -> dict:
         "derived_from": "data/verified-changes.json",
         "semantics": "Verified desk state is derived only from verified published changes; an explicit editorial lead pin may feature a reviewed external article without changing verification state. No lead may be more than seven days old.",
         "latest_verified_at": latest_at,
-        "lead": editorial_lead or automatic_lead,
+        "lead": lead,
         "latest": [story(event) for event in ordered[:9]],
         "convergence": convergence(events),
     }
