@@ -36,6 +36,24 @@
   {% endif %}
 {% endblock %}
 
+{% block header %}
+<header class="gr-site-header">
+  <div class="gr-site-header__inner">
+    <a class="gr-site-brand" href="{{ config.site_url }}"><span>Glasses</span>Research</a>
+    <nav class="gr-primary-nav" aria-label="Primary">
+      <a href="/docs/COMPARISON_ENGINE/">Find &amp; Compare</a>
+      <a href="/models/catalog/">Models</a>
+      <a href="/docs/RESEARCH_NEWS/">Research &amp; News</a>
+      <a href="/hacking/">Develop</a>
+      <a href="/docs/ABOUT/">About</a>
+    </nav>
+    <label class="gr-search-button" for="__search" aria-label="Search GlassesResearch">Search</label>
+    <label class="gr-menu-button" for="__drawer" aria-label="Open menu">Menu</label>
+  </div>
+</header>
+{{ super() }}
+{% endblock %}
+
 {% block toc %}
   {% if page and not page.is_homepage %}{{ super() }}{% endif %}
 {% endblock %}
