@@ -97,7 +97,10 @@ jobs:
               sheet.paste(bg.convert("RGB"),(x,y))
               draw.text((x,y+th-42),mid+"  "+rec.get("alt","")[:42],fill="black")
           out=root/"research/visual-audits"; out.mkdir(parents=True,exist_ok=True)
-          sheet.save(out/"presentation-contact-sheet.jpg",quality=88,optimize=True)
+          jpg=out/"presentation-contact-sheet.jpg"
+          sheet.save(jpg,quality=88,optimize=True)
+          import base64
+          (out/"presentation-contact-sheet.b64").write_text(base64.b64encode(jpg.read_bytes()).decode("ascii"))
       - name: Validate candidate originals
         run: |
           pip install -r requirements-docs.txt
@@ -109,7 +112,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images/models/original data/model-visuals.json research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-geometry-audit.md
+          git add images/models/original data/model-visuals.json research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-contact-sheet.b64 research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-geometry-audit.md
           if git diff --cached --quiet; then
             echo "No new candidate images"
             exit 0
