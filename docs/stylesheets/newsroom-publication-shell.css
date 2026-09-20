@@ -27,16 +27,11 @@ body.gr-newsroom-enhanced .gr-newsroom-hero {
   overflow: hidden;
   margin-top: .7rem;
   padding: clamp(1.25rem, 4vw, 3.25rem);
-  border-radius: 1.5rem;
+  border-radius: var(--gr-radius-lg);
 }
 
 body.gr-newsroom-enhanced .gr-newsroom-hero::after {
-  content: "";
-  position: absolute;
-  inset: auto -8% -42% 38%;
-  height: 17rem;
-  pointer-events: none;
-  background: radial-gradient(circle, color-mix(in srgb, var(--md-accent-fg-color) 20%, transparent), transparent 68%);
+  content: none;
 }
 
 body.gr-newsroom-enhanced .gr-newsroom-deck {
@@ -61,11 +56,8 @@ body.gr-newsroom-enhanced .gr-newsroom-lead-card {
   min-height: clamp(18rem, 34vw, 28rem);
   align-content: end;
   padding: clamp(1.4rem, 5vw, 4rem);
-  border-radius: 1.45rem;
-  background:
-    linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--md-default-bg-color) 82%, transparent) 100%),
-    radial-gradient(circle at 88% 10%, color-mix(in srgb, var(--md-accent-fg-color) 21%, transparent), transparent 43%),
-    color-mix(in srgb, var(--md-default-bg-color) 91%, var(--md-primary-fg-color) 9%);
+  border-radius: var(--gr-radius-lg);
+  background: color-mix(in srgb, var(--md-default-bg-color) 96%, var(--md-primary-fg-color) 4%);
 }
 
 body.gr-newsroom-enhanced .gr-newsroom-lead-card strong {
@@ -115,7 +107,7 @@ body.gr-newsroom-enhanced .gr-convergence-radar {
   margin-block: 3.6rem;
   padding: clamp(1.25rem, 3.5vw, 2.35rem);
   border-left-width: .36rem;
-  border-radius: 1.2rem;
+  border-radius: var(--gr-radius-md);
 }
 
 body.gr-newsroom-enhanced .gr-convergence-card {
