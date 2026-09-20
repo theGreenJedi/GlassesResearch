@@ -3,7 +3,7 @@
 
 :root {
   --gr-bg: #f6f8f7;
-  --gr-surface: rgba(255, 255, 255, 0.86);
+  --gr-surface: #ffffff;
   --gr-surface-strong: #ffffff;
   --gr-ink: #111817;
   --gr-muted: #66706d;
@@ -11,12 +11,12 @@
   --gr-line-strong: rgba(17, 24, 23, 0.2);
   --gr-accent: #2f7d72;
   --gr-accent-soft: rgba(47, 125, 114, 0.11);
-  --gr-glow: rgba(76, 168, 154, 0.16);
-  --gr-radius-sm: 0.55rem;
-  --gr-radius-md: 0.9rem;
-  --gr-radius-lg: 1.25rem;
-  --gr-shadow: 0 18px 50px rgba(24, 42, 38, 0.08);
-  --gr-shadow-soft: 0 8px 28px rgba(24, 42, 38, 0.06);
+  --gr-glow: rgba(76, 168, 154, 0.08);
+  --gr-radius-sm: 0.3rem;
+  --gr-radius-md: 0.45rem;
+  --gr-radius-lg: 0.65rem;
+  --gr-shadow: 0 10px 30px rgba(24, 42, 38, 0.045);
+  --gr-shadow-soft: 0 4px 16px rgba(24, 42, 38, 0.035);
   --gr-ease: 180ms ease;
 }
 
@@ -32,9 +32,7 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at 85% 8%, var(--gr-glow), transparent 24rem),
-    linear-gradient(180deg, #fafcfb 0%, var(--gr-bg) 38rem, var(--gr-bg) 100%);
+  background: var(--gr-bg);
   color: var(--gr-ink);
 }
 
@@ -126,7 +124,7 @@ input[type="search"] {
 
 .md-button,
 button {
-  border-radius: 999px !important;
+  border-radius: var(--gr-radius-sm) !important;
 }
 
 .md-button:hover,
@@ -143,9 +141,8 @@ a:focus-visible {
 }
 
 .md-header {
-  background: rgba(246, 248, 247, 0.78);
+  background: rgba(246, 248, 247, 0.98);
   color: var(--gr-ink);
-  backdrop-filter: blur(16px) saturate(140%);
   border-bottom: 1px solid var(--gr-line);
   box-shadow: none;
 }
@@ -156,10 +153,9 @@ a:focus-visible {
 }
 
 .md-tabs {
-  background: rgba(246, 248, 247, 0.84);
+  background: rgba(246, 248, 247, 0.98);
   border-bottom: 1px solid var(--gr-line);
   box-shadow: none;
-  backdrop-filter: blur(14px);
 }
 
 .md-tabs__link {
@@ -174,9 +170,9 @@ a:focus-visible {
 }
 
 .md-search__form {
-  background: rgba(255,255,255,.7) !important;
+  background: #fff !important;
   border: 1px solid var(--gr-line) !important;
-  border-radius: 999px !important;
+  border-radius: var(--gr-radius-sm) !important;
   box-shadow: none !important;
 }
 
@@ -289,21 +285,7 @@ a:focus-visible {
 }
 
 .md-typeset {
-  font-size: .82rem;
-}
-
-.md-typeset > p:first-of-type {
-  font-size: 1.02rem;
-  line-height: 1.7;
-}
-
-.md-typeset h2 {
-  padding-top: .35rem;
-  border-top: 1px solid var(--gr-line);
-}
-
-.md-typeset h2:first-of-type {
-  border-top: 0;
+  font-size: .88rem;
 }
 
 .md-typeset table:not([class]) {
@@ -339,10 +321,4 @@ a:focus-visible {
 }
 
 @media screen and (max-width: 44.984375rem) {
-  .md-typeset {
-    font-size: .8rem;
-  }
-  .md-typeset > p:first-of-type {
-    font-size: .94rem;
-  }
 }
