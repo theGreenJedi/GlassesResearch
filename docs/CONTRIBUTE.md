@@ -1,12 +1,15 @@
 # Want to contribute?
 
-GlassesResearch is being built for everyone interested in AI eyeglasses, smart eyewear, wearable computing, open hardware, reverse engineering, accessibility, privacy, and user-controlled ecosystems.
+## Start here
 
-You do not need to be a professional developer or researcher to help.
+- Have smart glasses in hand? Open the [Fieldwork app](FIELDWORK_APP.md).
+- Browse [The List](../models/THE_LIST.md) and look for a device you know.
+- Review the [Evidence Standard](EVIDENCE_STANDARD.md).
+- Read the [Investigation Workflow](INVESTIGATION_WORKFLOW.md).
+- Explore the [Resource Catalog](../resources/ECOSYSTEM_RESOURCE_CATALOG.md).
+- Open an issue or submit a pull request on the [GitHub repository](https://github.com/theGreenJedi/GlassesResearch).
 
-If you own a device, found a manual, captured a Bluetooth packet, tested a feature, preserved an APK, photographed hardware, discovered a supplier, corrected a model name, or simply noticed that something on this site is wrong or incomplete, you can contribute.
-
-> **Help build the smart-glasses knowledge base you wish already existed.**
+**Own glasses? Know something? Found something? Preserve it with us.**
 
 ## What the community means here
 
@@ -191,14 +194,3 @@ A submission may be:
 - declined when it creates legal, privacy, safety, or evidentiary problems.
 
 Questions and incomplete leads are welcome. This is a research institution under construction, not a finished encyclopedia.
-
-## Start here
-
-- Have smart glasses in hand? Open the [Fieldwork app](FIELDWORK_APP.md).
-- Browse [The List](../models/THE_LIST.md) and look for a device you know.
-- Review the [Evidence Standard](EVIDENCE_STANDARD.md).
-- Read the [Investigation Workflow](INVESTIGATION_WORKFLOW.md).
-- Explore the [Resource Catalog](../resources/ECOSYSTEM_RESOURCE_CATALOG.md).
-- Open an issue or submit a pull request on the [GitHub repository](https://github.com/theGreenJedi/GlassesResearch).
-
-**Own glasses? Know something? Found something? Preserve it with us.**
