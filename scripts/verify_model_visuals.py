@@ -34,6 +34,12 @@ def main():
                 errors.append(f"{model_id}: primary_image does not exist: {image}")
         try_on=str(record.get("try_on_asset",""))
         if try_on:
+            runtime = (
+                a.root / "docs/vendor/mediapipe/vision_bundle.mjs",
+                a.root / "docs/vendor/mediapipe/face_landmarker.task",
+            )
+            if any(not path.exists() for path in runtime):
+                errors.append(f"{model_id}: try_on_asset cannot publish until the self-hosted face-tracking runtime is present")
             if try_on.startswith(("http://","https://")):
                 errors.append(f"{model_id}: try_on_asset must be a preserved local site asset")
             elif not (a.root / try_on.lstrip("/")).exists():
