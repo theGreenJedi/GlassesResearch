@@ -58,7 +58,7 @@ def main():
     catalog_index=DEST/"models"/"catalog"/"index.md"
     if catalog_index.exists():
         catalog_index.write_text(catalog_index.read_text(encoding="utf-8")+"\n[Resolve any GLS identifier](/gls/) · [Machine-readable GLS index](/data/gls-index.json)\n",encoding="utf-8")
-    run(ROOT/"scripts/build_report_card_hub.py","--devices",database,"--scores",cards,"--aliases",ROOT/"data/lineage-aliases.json","--output",DEST/"docs/REPORT_CARD.md")
+    run(ROOT/"scripts/build_report_card_hub.py","--devices",database,"--scores",cards,"--aliases",ROOT/"data/lineage-aliases.json","--visuals",ROOT/"data/model-visuals.json","--output",DEST/"docs/REPORT_CARD.md")
     report_hub=DEST/"docs"/"REPORT_CARD.md"
     report_hub.write_text(report_hub.read_text(encoding="utf-8")+"\n\n## Freshness and refresh queue\n\nA score is not considered current merely because this site was rebuilt. [Open the Report Card freshness dashboard](/docs/REPORT_CARD_FRESHNESS/) to see score-specific verification dates, freshness policy, research-health counts, and the prioritized refresh queue.\n",encoding="utf-8")
     lineage_index=DEST/"data"/"lineage-index.json"
