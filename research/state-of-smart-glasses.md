@@ -30,3 +30,12 @@ Devices whose principal value is owner/developer access to sensors, display, fir
 The important long-term question is not which single form wins. It is which capabilities can coexist at ordinary-eyeglasses weight and power: all-day audio, useful cameras, private visual output, contextual sensing, local compute, user-selected AI, prescription lenses and meaningful owner control.
 
 GlassesResearch tracks those capabilities independently so convergence can be measured rather than assumed from marketing labels.
+
+
+## 2026 market checkpoint — IDC Q1 tracker
+
+IDC's June 15, 2026 market analysis reports approximately 2.25 million display-less smart-glasses shipments in Q1 2026, up 167% year over year, while display eyewear in its AR/VR segment grew 86% year over year. IDC reports Q1 share of Meta 69.2%, RayNeo 3.4%, Xiaomi 3.1%, VITURE 2.5%, XREAL 2.0%, and a 19.8% combined long tail. These are **IDC tracker estimates**, not GlassesResearch measurements.
+
+IDC forecasts about 13.6 million display-less-glasses shipments for full-year 2026 and 27.3 million in 2030, while optical-see-through display glasses are forecast to grow from about 3 million units in 2026 to 12.2 million in 2030. Forecasts are preserved as dated analyst projections, not future facts.
+
+Source: IDC, “Smart Glasses Surge: The XR Market Is Rewriting Its Own Rules,” 2026-06-15: https://www.idc.com/resource-center/blog/smart-glasses-surge-the-xr-market-is-rewriting-its-own-rules/

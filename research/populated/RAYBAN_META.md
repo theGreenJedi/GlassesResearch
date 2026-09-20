@@ -61,3 +61,25 @@ The HSTN is a useful example of why repairability must be decomposed: replaceabl
 
 ## Research priorities
 Current value, exact regional/version rollout, prescription service workflows by model, battery aging, warranty/depot repair, account/offline survival, media export, recording/privacy indicators, developer access evolution and post-service survivability.
+
+## September 2026 privacy, detection, and biometric-evidence update
+
+### ZuckOff Bluetooth detection — independent reporting
+
+WIRED reported on 2026-09-15 that the ZuckOff mobile app detects nearby smart-glasses families from Bluetooth advertising fingerprints assembled from physical devices, including Ray-Ban Meta, Oakley Meta, and Snap Spectacles. The report says the detector can indicate approximate proximity but cannot establish whether a wearer is recording or identify the wearer. Treat this as **independent reporting about externally observable radio behavior**, not as GlassesResearch bench verification and not as proof of a stable undocumented identifier across firmware revisions.
+
+This is relevant to the site's privacy model because smart-glasses presence can sometimes be inferred by a third party even when camera state cannot. It also creates a reproducible future bench question: characterize BLE advertisements for owned devices across pairing, idle, capture/AI use, firmware updates, and factory reset, while avoiding claims of identity or recording detection that the evidence does not support.
+
+Source: WIRED, “ZuckOff Is a Free App That Sees Meta Glasses Before They See You,” 2026-09-15: https://www.wired.com/story/zuckoff-app-sees-meta-glasses-before-they-see-you/
+
+### NameTag / training-data litigation — allegations, not product verification
+
+A proposed class action filed in the Northern District of Illinois on 2026-09-04 alleges that Meta used Facebook and Instagram images without required consent to develop biometric identifiers connected to an unreleased smart-glasses facial-recognition capability referred to as NameTag, alongside generative-AI training. WIRED and Bloomberg Law reported the complaint; Meta told WIRED that NameTag remains exploratory/unreleased and disputed the plaintiffs' characterization of its data practices.
+
+The filing is useful documentary evidence that the alleged system and data practices are now subjects of litigation, but the complaint **does not verify that a universal facial-recognition feature is deployed in current consumer glasses**. Preserve the distinction between court-filed allegation, Meta response, and shipped product behavior.
+
+Sources: WIRED, 2026-09; Bloomberg Law, 2026-09-04. Case: *Alvarez v. Meta Platforms Inc.*, N.D. Ill., No. 1:26-cv-10773.
+
+### Separate Meta AI Glasses privacy litigation
+
+A September 15 order in *In re Meta AI Glasses Litigation*, N.D. Cal. No. 26-cv-01897-EMC, confirms an active putative class action alleging privacy harms involving Meta AI Glasses. The order concerns plaintiffs' use of pseudonyms and recounts allegations from the consolidated complaint; it does not adjudicate those underlying allegations. Keep this litigation distinct from the Illinois NameTag/training-data case.
