@@ -3,6 +3,8 @@
 *The lawsuit is new. The question is older: what does ownership mean when eyewear becomes computing hardware?*
 
 **Published:** September 19, 2026  
+**Status:** Verified  
+**Evidence status:** STEADY  
 **Type:** GlassesResearch editorial / right to repair  
 **Evidence posture:** lawsuit allegations are attributed and unadjudicated; statutory and plaintiff-history context is independently sourced
 

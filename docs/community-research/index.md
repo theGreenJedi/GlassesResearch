@@ -2,7 +2,7 @@
 
 **[When owners take their glasses back](../news/articles/2026-09-06-when-owners-take-their-glasses-back.md)** — GlassesResearch's editorial interpretation of community work around owner control, interoperability, and preserving practical authority over hardware.
 
-[Browse the retained Community Research archive](../../research/community-research/README.md) · [Browse the published research corpus](../research/)
+[Browse the retained Community Research archive](../../research/community-research/README.md) · [Browse Open Research](../OPEN_RESEARCH.md)
 
 ## Community Research projects
 
@@ -13,7 +13,7 @@
 | [CyanBridge / Alternative HeyCyan App and SDK](cyanbridge.md) | HeyCyan-compatible glasses and experimental multi-vendor interoperability | Alternative companion software and reusable owner-facing interoperability. |
 | [BimaPDev / SmartGlasses](bimapdev-smartglasses.md) | Meizu MYVU / StarV Air / XGA010C firmware | Hardware-tested firmware research into execution, storage, BLE transfer, and boot behavior. |
 
-[**Browse the broader Community Directory**](../resources/COMMUNITY_AND_DEVELOPMENT.md) — forums, repositories, developer communities, and other public community resources.
+[**Browse the broader Community Directory**](../../resources/COMMUNITY_AND_DEVELOPMENT.md) — forums, repositories, developer communities, and other public community resources.
 
 ## Evidence rule
 

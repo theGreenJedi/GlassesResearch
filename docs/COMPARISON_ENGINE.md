@@ -27,6 +27,8 @@ Loading Glasses Finder data…
 
 <p class="gr-surface-freshness" data-finder-freshness><strong>Evidence freshness</strong> loading Finder evidence dates…</p>
 
+**Current live controls:** verified price ceilings, Report Card minimum-score thresholds, practical-needs filters, buying-route filters, and shortlist checkboxes for multi-device comparison.
+
 Finder results use documented research data rather than inferred claims. Price filters use documented current acquisition-price observations; models without a usable price observation remain unknown rather than being guessed into a budget. Practical-needs filters, buying-route filters, Report Card thresholds, exact/near-match discovery, purchase routes, shortlists, and multi-device comparison are available in the Finder when useful.
 
 ## Need the full research?
