@@ -4,9 +4,11 @@
   let faceLandmarker = null;
 
   const MEDIAPIPE_VERSION = '0.10.22-rc.20250304';
-  const MEDIAPIPE_MODULE = `https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@${MEDIAPIPE_VERSION}/vision_bundle.mjs`;
-  const MEDIAPIPE_WASM = `https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@${MEDIAPIPE_VERSION}/wasm`;
-  const FACE_MODEL = 'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task';
+  // Runtime files are intentionally self-hosted. Try-on must not contact a CDN,
+  // analytics service, or model host when a visitor turns on their camera.
+  const MEDIAPIPE_MODULE = '/vendor/mediapipe/vision_bundle.mjs';
+  const MEDIAPIPE_WASM = '/vendor/mediapipe/wasm';
+  const FACE_MODEL = '/vendor/mediapipe/face_landmarker.task';
 
   const stop = () => {
     cancelAnimationFrame(animationFrame);
