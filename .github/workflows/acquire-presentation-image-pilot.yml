@@ -64,7 +64,8 @@ jobs:
           pip install -r requirements-docs.txt
           python scripts/normalize_model_visuals.py --registry data/model-visuals.json --root . --output-root .site-image-pilot
           python scripts/verify_model_visuals.py --registry .site-image-pilot/data/model-visuals.json --root .site-image-pilot --models models/THE_LIST.md
-          python scripts/build_visual_contact_sheet.py\n          python scripts/audit_presentation_geometry.py
+          python scripts/build_visual_contact_sheet.py
+          python scripts/audit_presentation_geometry.py
       - name: Commit candidate originals
         run: |
           git config user.name "github-actions[bot]"
