@@ -93,21 +93,21 @@ jobs:
           import json,pathlib,math
           root=pathlib.Path("."); data=json.loads((root/"data/model-visuals.json").read_text())
           items=[(mid,rec) for mid,rec in data["records"].items() if rec.get("original_image")]
-          tw,th=360,250; cols=4; rows=math.ceil(len(items)/cols)
+          tw,th=120,90; cols=4; rows=math.ceil(len(items)/cols)
           sheet=Image.new("RGB",(cols*tw,rows*th),"white"); draw=ImageDraw.Draw(sheet)
           for i,(mid,rec) in enumerate(items):
             p=root/rec["original_image"].lstrip("/")
             with Image.open(p) as im:
               im=ImageOps.exif_transpose(im).convert("RGBA")
-              bg=Image.new("RGBA",(tw-20,th-50),"white")
-              im.thumbnail((tw-30,th-65),Image.Resampling.LANCZOS)
+              bg=Image.new("RGBA",(tw-8,th-24),"white")
+              im.thumbnail((tw-12,th-30),Image.Resampling.LANCZOS)
               bg.alpha_composite(im,((bg.width-im.width)//2,(bg.height-im.height)//2))
-              x=(i%cols)*tw+10; y=(i//cols)*th+10
+              x=(i%cols)*tw+4; y=(i//cols)*th+4
               sheet.paste(bg.convert("RGB"),(x,y))
-              draw.text((x,y+th-42),mid+"  "+rec.get("alt","")[:42],fill="black")
+              draw.text((x,y+th-20),mid,fill="black")
           out=root/"research/visual-audits"; out.mkdir(parents=True,exist_ok=True)
           jpg=out/"presentation-contact-sheet.jpg"
-          sheet.save(jpg,quality=88,optimize=True)
+          sheet.save(jpg,quality=35,optimize=True)
           import base64
           encoded=base64.b64encode(jpg.read_bytes()).decode("ascii")
           (out/"presentation-contact-sheet.b64").write_text(encoded)
