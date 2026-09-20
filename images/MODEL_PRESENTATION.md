@@ -34,6 +34,23 @@ Each model visual record is keyed by its stable `GLS-####` identifier and record
 
 A remote image URL is not sufficient. Public presentation imagery must be preserved locally and have a documented publication basis before GlassesResearch republishes it. Acceptable bases include original photography, explicit license/permission, manufacturer press/media permission, public-domain/open license, or a documented manufacturer-imagery editorial-use rationale under this policy.
 
+## Presentation normalization
+
+Public model imagery should read as one coherent catalog even when source photography comes from different manufacturers. GlassesResearch therefore normalizes the **presentation**, not the underlying evidence:
+
+- one representative product-identification image per model
+- prefer a front or shallow three-quarter view of the glasses alone
+- avoid lifestyle/model photography when a clean product view exists
+- use a consistent neutral presentation canvas and optical centering
+- preserve the entire product; do not crop temples or frame edges merely to make the object appear larger
+- normalize apparent object scale within the canvas while preserving the source image's aspect ratio
+- do not alter frame geometry, color, logos, controls, cameras, lenses, or other product features
+- do not use generative reconstruction to manufacture a missing pose
+- retain the original acquired file as provenance; any publication derivative must be reproducible and linked to that original
+- when the only defensible source uses a materially different pose, publish it rather than falsifying uniformity
+
+The target is a visually calm, comparable catalog—not an implication that every manufacturer supplied the same studio photograph.
+
 ## Separation from evidence
 
 A presentation image answers **what does this model look like?** It does not automatically prove a specification. Evidence photographs continue to live in the Visual Evidence Archive with their original provenance.
