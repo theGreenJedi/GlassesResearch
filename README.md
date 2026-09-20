@@ -4,18 +4,13 @@
   <div class="gr-hero-copy">
     <p class="gr-kicker">Independent wearable-intelligence research</p>
     <h1 id="gr-home-title">Understand the glasses.<br>Own the choices.</h1>
-    <p class="gr-hero-lede">GlassesResearch investigates smart glasses and wearable AI as products, platforms, interfaces, and long-lived systems — with evidence linked back to the claims.</p>
+    <p class="gr-hero-lede">Find the glasses. See what they actually do. Follow the evidence when you want to go deeper.</p>
   </div>
 
-  <div class="gr-hero-panel" aria-label="GlassesResearch research system">
-    <div class="gr-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
-    <p class="gr-panel-label">The research system</p>
-    <p class="gr-panel-title">Research.<br>Preserve.<br>Compare.</p>
-    <div class="home-status" id="homepage-status" aria-label="Research status">
-      <div><strong data-site-stat="models">Living catalog</strong><span>canonical models</span></div>
-      <div><strong data-site-stat="report-cards">Scored research</strong><span>scored Report Cards</span></div>
-      <div><strong data-site-stat="freshness">Continuously built</strong><span>catalog updated</span></div>
-    </div>
+  <div class="gr-hero-panel gr-hero-object" aria-label="Browse smart-glasses models">
+    <p class="gr-panel-label">The glasses come first</p>
+    <p class="gr-panel-title">See them.<br>Compare them.<br>Understand them.</p>
+    <a class="gr-button gr-button-secondary" href="models/catalog/">Browse all models</a>
   </div>
 
   <div class="gr-hero-followup">
@@ -228,33 +223,18 @@
 <section class="gr-section" aria-labelledby="gr-explore-title">
   <div class="gr-section-heading">
     <div>
-      <p class="gr-kicker">Explore the research</p>
-      <h2 id="gr-explore-title">Find the part of the ecosystem you want to understand.</h2>
+      <p class="gr-kicker">Choose a door</p>
+      <h2 id="gr-explore-title">What do you want to do?</h2>
     </div>
-    <p>Start with a model, a score, a development path, or the history behind the technology.</p>
+    <p>Five entrances lead into the complete research system. The machinery stays behind them until you need it.</p>
   </div>
 
   <div class="gr-explore-grid">
-    <a href="models/">
-      <span class="gr-card-number">01</span>
-      <strong>Models</strong>
-      <span>Browse the living catalog and historical archive without reducing every device to a shopping listing.</span>
-    </a>
-    <a href="docs/REPORT_CARD/">
-      <span class="gr-card-number">02</span>
-      <strong>Report Cards</strong>
-      <span>See hardware, software, openness, owner control, cloud independence, hackability, and value scored explicitly.</span>
-    </a>
-    <a href="hacking/">
-      <span class="gr-card-number">03</span>
-      <strong>Development</strong>
-      <span>Follow SDKs, APIs, BLE, firmware, local AI, companion apps, and routes around unnecessary lock-in.</span>
-    </a>
-    <a href="docs/INDUSTRY_TIMELINE/">
-      <span class="gr-card-number">04</span>
-      <strong>History &amp; lineages</strong>
-      <span>Preserve what disappeared and connect products that share hardware, software, and platform ancestry.</span>
-    </a>
+    <a href="docs/COMPARISON_ENGINE/"><span class="gr-card-number">01</span><strong>Find &amp; Compare</strong><span>Start with what you need and narrow the catalog.</span></a>
+    <a href="models/catalog/"><span class="gr-card-number">02</span><strong>Models</strong><span>Browse the glasses visually, then open the evidence.</span></a>
+    <a href="docs/RESEARCH_NEWS/"><span class="gr-card-number">03</span><strong>Research &amp; News</strong><span>Follow verified work and developing signals.</span></a>
+    <a href="hacking/"><span class="gr-card-number">04</span><strong>Develop</strong><span>SDKs, APIs, firmware, local AI and owner-controlled paths.</span></a>
+    <a href="docs/ABOUT/"><span class="gr-card-number">05</span><strong>About</strong><span>Methods, standards, privacy, preservation and the complete contents.</span></a>
   </div>
 </section>
 
