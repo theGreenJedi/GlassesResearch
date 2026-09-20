@@ -86,7 +86,7 @@ def source_links(record: dict) -> str:
     return "\n".join(f"- [{item['label']}]({item['url']})" for item in external) or "- No external source recorded."
 
 
-def model_page(record: dict, profile: str, comparison: dict | None, capability: dict, score: dict | None, labels: dict[str, str], score_labels: dict[str, str], related: list[dict]) -> str:
+def model_page(record: dict, profile: str, comparison: dict | None, capability: dict, score: dict | None, labels: dict[str, str], score_labels: dict[str, str], related: list[dict], visual: dict | None = None) -> str:
     title = f"{record['maker']} {record['model']} ({record['id']})"
     description = f"Verified specifications, capabilities, status, sources, and research links for {record['maker']} {record['model']} smart glasses."
     confirmed = [(labels.get(k, k.replace("_", " ").title()), v["provenance"]) for k, v in capability["capabilities"].items() if v["value"] == "yes"]
@@ -113,6 +113,20 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
     fact_rows = "\n".join(f"| {a} | {b} | {c} |" for a, b, c in facts) or "| Research depth | No structured specification record yet | unknown |"
     cap_rows = "\n".join(f"| {name} | Yes | {prov} |" for name, prov in confirmed) or "| Confirmed capabilities | None yet | unresolved |"
     neg_text = ", ".join(negatives) if negatives else "No capability negatives are currently verified."
+    visual = visual or {}
+    visual_html = ""
+    if visual.get("state") == "published" and visual.get("primary_image"):
+        alt = visual.get("alt", f"{record['maker']} {record['model']} smart glasses")
+        visual_html = f"""<figure class="gr-model-hero">
+  <img src="{visual['primary_image']}" alt="{alt}" loading="eager" decoding="async">
+</figure>"""
+    try_on_asset = visual.get("try_on_asset") if visual.get("state") == "published" else None
+    try_on_html = ""
+    if try_on_asset:
+        try_on_html = f"""<section class="gr-try-on" data-gr-try-on data-model-id="{record['id']}" data-asset="{try_on_asset}">
+  <button type="button" class="gr-button gr-button-secondary" data-gr-try-on-open>View these glasses on my face</button>
+  <p class="gr-try-on-note">Camera processing stays on this device. This is a visual preview, not a physical or prescription fit measurement.</p>
+</section>"""
     scores = ""
     if score:
         rows = "\n".join(f"| {score_labels.get(k, k.replace('_', ' ').title())} | {md_value(v)} |" for k, v in score["scores"].items())
@@ -128,7 +142,11 @@ model_category: "{str(record['type']).replace('"', '\\"')}"
 
 # {title}
 
+{visual_html}
+
 {profile}
+
+{try_on_html}
 
 ## At a glance
 
@@ -244,6 +262,8 @@ def main() -> None:
     comparisons = load(args.data_dir / "comparisons.json")
     capabilities = load(args.data_dir / "finder-capabilities.json")
     scores = load(args.data_dir / "report-card-scores.json")
+    visual_path = ROOT / "data" / "model-visuals.json"
+    visuals = load(visual_path).get("records", {}) if visual_path.exists() else {}
     records = devices["records"]
     profile_map = profiles()
     comparison_map = {r["id"]: r for r in comparisons["records"]}
@@ -261,7 +281,7 @@ def main() -> None:
         related = [x for x in makers[r["maker"]] if x["id"] != r["id"]]
         if len(related) < 3:
             related += [x for x in records if x["id"] != r["id"] and x["type"] == r["type"] and x not in related]
-        page = model_page(r, profile_map[r["id"]], comparison_map.get(r["id"]), cap_map[r["id"]], score_map.get(r["id"]), labels, score_labels, related)
+        page = model_page(r, profile_map[r["id"]], comparison_map.get(r["id"]), cap_map[r["id"]], score_map.get(r["id"]), labels, score_labels, related, visuals.get(r["id"]))
         (catalog / f"{r['id'].lower()}.md").write_text(page, encoding="utf-8")
     index_rows = "\n".join(f"| [{r['maker']} {r['model']}]({r['public']['model_page']}) | {r['id']} | {r['era']} | {r['state']} | {r['type']} |" for r in records)
     (catalog / "index.md").write_text(f"# Canonical smart-glasses model pages\n\nAll {len(records)} individually indexable model records. Each page preserves the stable GLS identity and separates verified facts from unknowns.\n\n[Use the Finder](/docs/COMPARISON_ENGINE/) · [Read the search-intent guides](/guides/) · [View the canonical ledger](/models/THE_LIST/)\n\n| Model | ID | Era | Status | Type |\n|---|---|---:|---|---|\n{index_rows}\n", encoding="utf-8")
