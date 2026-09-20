@@ -254,6 +254,9 @@ jobs:
               version="$(python -c "import json; print(json.load(open('/tmp/dataset-manifest.json'))['version'].lower())")"
               if curl_live "/data/public/releases/${version}/manifest.json" /tmp/dataset-release-manifest.json \
                 && python -c "import json, os; p=json.load(open('/tmp/deployment.json')); expected=os.environ['GITHUB_SHA']; actual=p.get('sha'); assert actual==expected, f'stale production: expected {expected}, got {actual}'; print(f'Live deployment SHA verified: {actual}')" \
+                && grep -Fq 'You bought the glasses. Can you repair them?' /tmp/home.html \
+                && ! grep -Fq 'When owners take their glasses back.' /tmp/home.html \
+                && ! grep -Fq 'Developments that have passed GlassesResearch evidence and verification standards.' /tmp/home.html \
                 && grep -Fq 'Sitemap: https://glassesresearch.org/sitemap.xml' /tmp/robots.txt \
                 && grep -Fq 'https://glassesresearch.org/' /tmp/sitemap.xml \
                 && grep -Fq 'TL-0001' /tmp/timeline.json \
