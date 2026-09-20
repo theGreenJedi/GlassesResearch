@@ -21,7 +21,8 @@ jobs:
         run: |
           import json, pathlib, urllib.request
           items = {
-            "GLS-0103": ("https://shop.realwear.com/cdn/shop/files/127127_0.png?v=1779278187&width=3840", "png"),
+            "GLS-0064": ("https://global.rokid.com/cdn/shop/files/Rokid_Glasses.png", "png"),
+            "GLS-0094": ("https://global.rokid.com/cdn/shop/files/Rokid_Max_2.png", "png"),
           }
           root=pathlib.Path(".")
           out=root/"images/models/original"; out.mkdir(parents=True,exist_ok=True)
@@ -45,5 +46,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images/models/original data/model-visuals.json
-          git commit -m "Acquire RealWear Navigator 500 presentation original"
+          git commit -m "Acquire governed Rokid presentation originals"
           git push origin HEAD:presentation-mission
