@@ -5,6 +5,8 @@ on:
     paths:
       - 'data/**'
       - 'docs/javascripts/glasses-finder-v3.js'
+      - 'docs/javascripts/homepage-finder.js'
+      - 'docs/javascripts/homepage-finder.js'
       - 'docs/javascripts/finder-shortlist.js'
       - 'docs/javascripts/purchase-fallbacks.js'
       - 'docs/javascripts/purchase-link-health.js'
@@ -80,6 +82,7 @@ jobs:
       - name: Check Finder JavaScript syntax
         run: |
           node --check docs/javascripts/glasses-finder-v3.js
+          node --check docs/javascripts/homepage-finder.js
           node --check docs/javascripts/finder-shortlist.js
           node --check docs/javascripts/purchase-fallbacks.js
           node --check docs/javascripts/purchase-link-health.js

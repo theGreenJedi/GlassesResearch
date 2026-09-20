@@ -36,20 +36,11 @@
     return `${Math.floor(hours / 24)}d ago`;
   };
 
-  const about = document.createElement("section");
-  about.className = "gr-newsroom-hero gr-newsroom-about";
-  about.innerHTML = `
-    <div class="gr-newsroom-kicker">What is GlassesResearch?</div>
-    <p class="gr-newsroom-deck">Independent research into smart glasses and wearable computing — focused on what the hardware actually does, what owners actually control, and what the evidence supports.</p>
-    <p><a href="/docs/ABOUT/">About GlassesResearch →</a></p>
-  `;
-  title.insertAdjacentElement("afterend", about);
-
   const lead = document.createElement("section");
   lead.id = "gr-lead-story";
   lead.className = "gr-newsroom-section gr-newsroom-lead";
   lead.hidden = true;
-  about.insertAdjacentElement("afterend", lead);
+  title.insertAdjacentElement("afterend", lead);
 
   const hero = document.createElement("section");
   hero.className = "gr-newsroom-hero gr-newsroom-desk-nav";
@@ -75,7 +66,7 @@
   desk.className = "gr-newsroom-section";
   desk.innerHTML = `
     <div class="gr-newsroom-section-head">
-      <div><div class="gr-newsroom-kicker">Current desk</div><h2>Latest verified</h2></div>
+      <div><h2>Current Desk</h2></div>
       <p>Verified material changes, newest first. Repetition and syndication do not become separate stories unless they add something substantive.</p>
     </div>
     <div class="gr-newsroom-card-grid" data-newsroom-latest></div>
@@ -87,7 +78,7 @@
   wire.className = "gr-newsroom-section gr-newsroom-wire";
   wire.hidden = true;
   wire.innerHTML = `
-    <div class="gr-newsroom-section-head"><div><div class="gr-newsroom-kicker">Across the wire</div><h2>Developing now</h2></div><p>Current source reports surfaced by commodity search/news feeds. These are discovery signals, not verified GlassesResearch claims; the desk's job is to decide what matters, verify it and publish the useful result.</p></div>
+    <div class="gr-newsroom-section-head"><div><h2>Across the Wire</h2></div><p>Current source reports surfaced by commodity search/news feeds. These are discovery signals, not verified GlassesResearch claims; the desk's job is to decide what matters, verify it and publish the useful result.</p></div>
     <div class="gr-wire-list" data-newsroom-wire></div>`;
   desk.insertAdjacentElement("afterend", wire);
 
@@ -102,22 +93,10 @@
   browse.innerHTML = `<div class="gr-newsroom-section-head"><div><div class="gr-newsroom-kicker">Browse the beat</div><h2>Research & News by job</h2></div><p>The same verified event may feed several research surfaces at once.</p></div><div class="gr-newsroom-topic-grid"><a class="gr-topic-card" href="#watching"><strong>Releases & models</strong><span>Announcements, availability, model identity and developing launches.</span></a><a class="gr-topic-card" href="#deep-research"><strong>Research & market</strong><span>Papers, market structure, technology shifts and evidence that changes our understanding.</span></a><a class="gr-topic-card" href="#hacks-tools"><strong>Openness & tools</strong><span>SDKs, firmware, alternative apps, owner control and engineering paths.</span></a><a class="gr-topic-card" href="/docs/community-research/"><strong>Community Research</strong><span>Reverse engineering, alternative clients, protocol research and other serious community work.</span></a><a class="gr-topic-card" href="#policy-society"><strong>Policy & society</strong><span>Privacy, workplace rules, accessibility and institutional response.</span></a></div>`;
   convergence.insertAdjacentElement("afterend", browse);
 
-  const latestHeading = [...root.querySelectorAll("h2")].find((heading) => heading.textContent?.trim() === "Latest verified");
+  const latestHeading = [...root.querySelectorAll("h2")].find((heading) => heading.textContent?.trim() === "Current Desk");
   const latestTable = latestHeading?.nextElementSibling?.tagName === "TABLE" ? latestHeading.nextElementSibling : null;
   const latestGrid = desk.querySelector("[data-newsroom-latest]");
   const wireList = wire.querySelector("[data-newsroom-wire]");
-
-  const renderTableFallback = () => {
-    const rows = latestTable ? [...latestTable.querySelectorAll("tbody tr")].slice(0, 6) : [];
-    for (const row of rows) {
-      const cells = row.querySelectorAll("td");
-      if (cells.length < 3) continue;
-      const card = document.createElement("article");
-      card.className = "gr-newsroom-card";
-      card.innerHTML = `<div class="gr-newsroom-date">${cells[0].innerHTML}</div><div class="gr-newsroom-card-copy">${cells[1].innerHTML}</div><div class="gr-newsroom-card-links">${cells[2].innerHTML}</div>`;
-      latestGrid?.append(card);
-    }
-  };
 
   const renderStoryCard = (story) => {
     const age = relativeAge(story.published_at);
@@ -154,7 +133,7 @@
         : state.lead.change_type.replaceAll("_", " ");
       lead.hidden = false;
       lead.innerHTML = `<div class="gr-newsroom-kicker">Featured</div><a class="gr-newsroom-lead-card" href="${escapeHtml(state.lead.url)}"${leadRel}><span class="gr-newsroom-date">${escapeHtml(displayDate(state.lead.published_at))} · ${escapeHtml(relativeAge(state.lead.published_at))} · ${escapeHtml(leadType)}</span><strong>${escapeHtml(state.lead.title)}</strong><span>${escapeHtml(state.lead.summary)}</span><em>${leadCta}</em></a>`;
-      if (latestGrid) latestGrid.innerHTML = state.latest.slice(0, 6).map(renderStoryCard).join("");
+      if (latestGrid) latestGrid.innerHTML = state.latest.slice(0, 3).map(renderStoryCard).join("");
       latestHeading?.classList.add("gr-newsroom-enhanced-hide"); latestTable?.classList.add("gr-newsroom-enhanced-hide");
       if (Array.isArray(state.convergence) && state.convergence.length) {
         convergence.hidden = false;
@@ -162,7 +141,7 @@
         convergence.innerHTML = `<div class="gr-newsroom-section-head"><div><div class="gr-newsroom-kicker">Convergence radar</div><h2>Where independent signals are beginning to agree</h2></div><p>Convergence requires multiple verified story signals and multiple source families. Rewrites of one source do not manufacture momentum.</p></div><div class="gr-convergence-grid">${cards}</div>`;
       }
     })
-    .catch(() => { const freshness = hero.querySelector("[data-newsroom-freshness]"); if (freshness) freshness.textContent = "Verified newsroom state unavailable · showing published-page fallback"; renderTableFallback(); });
+    .catch(() => { const freshness = hero.querySelector("[data-newsroom-freshness]"); if (freshness) freshness.textContent = "Verified newsroom state temporarily unavailable · browse the full archive"; });
 
   const loadWireState = async () => {
     let emptyState = null;
