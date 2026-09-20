@@ -143,7 +143,11 @@ def main() -> int:
         for item in failures:
             print(f"WARNING {item}")
             print(f"::warning::{item}")
-        print(\n            f"Built-site link audit FAILED: {len(pages)} HTML pages, {checked} internal href/src references, "\n            f"and {model_paths_checked} canonical model research paths checked."\n        )\n        return 1
+        print(
+            f"Built-site link audit FAILED: {len(pages)} HTML pages, {checked} internal href/src references, "
+            f"and {model_paths_checked} canonical model research paths checked."
+        )
+        return 1
 
     print(
         f"Built-site link audit passed: {len(pages)} HTML pages, {checked} internal href/src references, "
