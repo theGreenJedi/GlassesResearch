@@ -22,7 +22,8 @@ This policy is an editorial risk framework, not legal advice or a guarantee that
 
 Each model visual record is keyed by its stable `GLS-####` identifier and records:
 
-- primary image path
+- original locally preserved image path
+- normalized primary publication image path
 - source URL or original-photography evidence folder
 - creator / rights holder when known
 - rights basis for publication
