@@ -75,6 +75,8 @@ jobs:
           regp.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
           print("ACQUIRED",len(success),success)
           print("FAILED",len(failed),failed)
+      - name: Install image tooling
+        run: pip install "Pillow>=10,<13"
       - name: Build visual QA contact sheet
         shell: python
         run: |
