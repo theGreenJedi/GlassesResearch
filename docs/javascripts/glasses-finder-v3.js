@@ -61,43 +61,6 @@
     (bundle.groups || []).forEach((group) => (group.fields || []).forEach((field) =>
       fieldMap.set(field.id, { ...field, groupLabel: group.label })));
 
-    const aliases = {
-      camera: (r) => Number(valueOf(r, 'camera_count')) > 0 || /camera/.test(`${r.type} ${textOf(r, 'category')}`.toLowerCase()),
-      no_camera: (r) => {
-        const count = valueOf(r, 'camera_count');
-        if (count !== null) return Number(count) === 0;
-        const camera = r.capabilityFacts?.camera?.value;
-        return camera === 'no' || camera === 'na';
-      },
-      photo_capture: (r) => yes(r, 'photo_capture') || yes(r, 'photos') || Number(valueOf(r, 'camera_count')) > 0,
-      video_recording: (r) => yes(r, 'video_recording') || /video/.test(`${textOf(r, 'camera')} ${textOf(r, 'recording')} ${textOf(r, 'video')}`),
-      live_video: (r) => yes(r, 'live_video') || yes(r, 'streaming') || /stream|rtmp|live video/.test(`${textOf(r, 'api')} ${textOf(r, 'sdk')} ${textOf(r, 'video')}`),
-      prescription_support: (r) => yes(r, 'prescription_support'),
-      progressive_lenses: (r) => yes(r, 'progressive_lenses') || /progressive/.test(textOf(r, 'prescription_support')),
-      ordinary_optician: (r) => yes(r, 'ordinary_optician') || /ordinary|local opti|any opti|optical shop/.test(`${textOf(r, 'prescription_serviceability')} ${textOf(r, 'prescription_support')}`),
-      adjustable_diopter: (r) => yes(r, 'adjustable_diopter') || /diopter|myopia adjustment/.test(`${textOf(r, 'display')} ${textOf(r, 'optics')}`),
-      speakers: (r) => yes(r, 'speakers') || (known(r.fields?.speakers) && !/^no$/i.test(String(valueOf(r, 'speakers')))) || /audio/.test(`${r.type}`.toLowerCase()),
-      microphones: (r) => yes(r, 'microphones') || Number(valueOf(r, 'microphone_count')) > 0 || known(r.fields?.microphones),
-      phone_calls: (r) => yes(r, 'phone_calls') || /call/.test(`${textOf(r, 'audio')} ${textOf(r, 'features')}`),
-      music: (r) => yes(r, 'music') || /music|audio/.test(`${r.type} ${textOf(r, 'audio')}`.toLowerCase()),
-      display: (r) => known(r.fields?.display) || known(r.fields?.display_type) || /display|ar|xr|hud/.test(`${r.type} ${textOf(r, 'category')}`.toLowerCase()),
-      full_color_display: (r) => /color|micro-?oled|oled/.test(`${textOf(r, 'display')} ${textOf(r, 'display_type')}`),
-      binocular_display: (r) => /binocular|dual-eye|two-eye/.test(`${textOf(r, 'display')} ${textOf(r, 'display_type')}`),
-      ai_assistant: (r) => yes(r, 'ai_assistant') || /ai|assistant|alexa|gemini|meta ai/.test(`${r.type} ${textOf(r, 'features')} ${textOf(r, 'ai')}`.toLowerCase()),
-      visual_ai: (r) => yes(r, 'visual_ai') || (aliases.camera(r) && /ai|vision|visual/.test(`${r.type} ${textOf(r, 'ai')}`.toLowerCase())),
-      translation: (r) => known(r.fields?.translation) && !/^no$/i.test(String(valueOf(r, 'translation'))),
-      transcription: (r) => yes(r, 'transcription') || /transcri|caption|speech.?to.?text/.test(`${textOf(r, 'features')} ${textOf(r, 'ai')}`),
-      navigation: (r) => yes(r, 'navigation') || /navigation|directions|maps/.test(`${textOf(r, 'features')} ${textOf(r, 'software')}`),
-      bluetooth: (r) => yes(r, 'bluetooth'),
-      ble: (r) => yes(r, 'ble'),
-      wifi: (r) => yes(r, 'wifi'),
-      sdk_api: (r) => known(r.fields?.sdk) || known(r.fields?.api) || /developer|sdk|api|open/.test(`${r.type} ${textOf(r, 'category')}`.toLowerCase()),
-      open_source: (r) => yes(r, 'open_source') || /open source|open-source|mit licensed/.test(`${textOf(r, 'openness')} ${textOf(r, 'sdk')}`),
-      custom_ai: (r) => yes(r, 'custom_ai') || /custom ai|own endpoint|replaceable|webhook|self-host/.test(`${textOf(r, 'owner_control')} ${textOf(r, 'api')} ${textOf(r, 'sdk')}`),
-      offline_operation: (r) => { const v = textOf(r, 'offline_operation'); return Boolean(v && !/unknown|none|^no$/.test(v)); },
-      self_hostable: (r) => yes(r, 'self_hostable') || /self-host|self host|local cloud/.test(`${textOf(r, 'cloud_independence')} ${textOf(r, 'owner_control')}`),
-    };
-
     const capabilityState = (r, field) => r.capabilityFacts?.[field]?.value || 'unknown';
     const currentAvailable = (r) => /current|shipping|available|preorder/i.test(`${r.state} ${textOf(r, 'status')}`) && !/legacy|discontinued|end of life|eol/i.test(`${r.state} ${textOf(r, 'status')}`);
     const purchaseMatches = (r, filter) => {
@@ -114,9 +77,7 @@
         if (canonical === 'yes') return 'yes';
         if (canonical === 'no') return 'no';
         if (canonical === 'na') return 'na';
-        if (filter.field === 'no_display') return 'unknown';
-        const fn = aliases[filter.field];
-        return (fn ? Boolean(fn(r)) : yes(r, filter.field)) ? 'inferred-yes' : 'unknown';
+        return 'unknown';
       }
       if (filter.type === 'report_score') {
         const score = r.reportCardScores?.[filter.field];
@@ -130,7 +91,7 @@
       }
       return purchaseMatches(r, filter) ? 'yes' : 'no';
     };
-    const filterMatches = (r, filter) => ['yes', 'inferred-yes'].includes(filterState(r, filter));
+    const filterMatches = (r, filter) => filterState(r, filter) === 'yes';
 
     const params = new URLSearchParams(location.search);
     const initialCompare = ['left','right','third','fourth'].map((k) => params.get(k)).filter((id) => records.some((r) => r.id === id));
