@@ -75,6 +75,27 @@ jobs:
           regp.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
           print("ACQUIRED",len(success),success)
           print("FAILED",len(failed),failed)
+      - name: Build visual QA contact sheet
+        shell: python
+        run: |
+          from PIL import Image,ImageOps,ImageDraw
+          import json,pathlib,math
+          root=pathlib.Path("."); data=json.loads((root/"data/model-visuals.json").read_text())
+          items=[(mid,rec) for mid,rec in data["records"].items() if rec.get("original_image")]
+          tw,th=360,250; cols=4; rows=math.ceil(len(items)/cols)
+          sheet=Image.new("RGB",(cols*tw,rows*th),"white"); draw=ImageDraw.Draw(sheet)
+          for i,(mid,rec) in enumerate(items):
+            p=root/rec["original_image"].lstrip("/")
+            with Image.open(p) as im:
+              im=ImageOps.exif_transpose(im).convert("RGBA")
+              bg=Image.new("RGBA",(tw-20,th-50),"white")
+              im.thumbnail((tw-30,th-65),Image.Resampling.LANCZOS)
+              bg.alpha_composite(im,((bg.width-im.width)//2,(bg.height-im.height)//2))
+              x=(i%cols)*tw+10; y=(i//cols)*th+10
+              sheet.paste(bg.convert("RGB"),(x,y))
+              draw.text((x,y+th-42),mid+"  "+rec.get("alt","")[:42],fill="black")
+          out=root/"research/visual-audits"; out.mkdir(parents=True,exist_ok=True)
+          sheet.save(out/"presentation-contact-sheet.jpg",quality=88,optimize=True)
       - name: Validate candidate originals
         run: |
           pip install -r requirements-docs.txt
@@ -86,7 +107,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images/models/original data/model-visuals.json research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-geometry-audit.md
+          git add images/models/original data/model-visuals.json research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-geometry-audit.md
           if git diff --cached --quiet; then
             echo "No new candidate images"
             exit 0
