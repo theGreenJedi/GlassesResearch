@@ -259,7 +259,7 @@ GlassesResearch records those roles separately until evidence says otherwise.
 
 ## Related research
 
-- [Ecosystem relationship map](ECOSYSTEM_MAP.md)
+- [Technology lineages](../lineages/README.md)
 - [W610 Manufacturing Intelligence](../models/W610/manufacturing/README.md)
 - [W610 Manufacturing Intelligence Map](../models/W610/manufacturing/INTELLIGENCE_MAP.md)
 - [W610 identity investigation](../models/W610/investigations/001-identity.md)
