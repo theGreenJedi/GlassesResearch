@@ -299,6 +299,7 @@ def main() -> None:
         page = model_page(r, profile_map[r["id"]], comparison_map.get(r["id"]), cap_map[r["id"]], score_map.get(r["id"]), labels, score_labels, related, visuals.get(r["id"]))
         (catalog / f"{r['id'].lower()}.md").write_text(page, encoding="utf-8")
     cards = []
+    missing_visuals = []
     for r in records:
         visual = visuals.get(r["id"], {})
         image = ""
@@ -306,6 +307,7 @@ def main() -> None:
             alt = visual.get("alt", f"{r['maker']} {r['model']} smart glasses")
             image = f'<img class="gr-model-card__image" src="{visual["primary_image"]}" alt="{alt}" loading="lazy" decoding="async">'
         else:
+            missing_visuals.append(r)
             image = '<div class="gr-model-card__placeholder" aria-hidden="true"><span>GLASSES</span></div>'
         cards.append(f"""<a class="gr-model-card" href="{r['public']['model_page']}">
   <div class="gr-model-card__media">{image}</div>
@@ -329,6 +331,23 @@ Browse {len(records)} canonical models. Choose the object first; GlassesResearch
 </div>
 
 [Find & compare glasses](/docs/COMPARISON_ENGINE/) · [Use-case guides](/guides/) · [Canonical identity ledger](/models/THE_LIST/)
+""", encoding="utf-8")
+    visual_report = ROOT / "research" / "MODEL_VISUAL_COVERAGE.md"
+    published_visuals = len(records) - len(missing_visuals)
+    missing_rows = "\n".join(f"| {r['id']} | {r['maker']} | {r['model']} | {r['state']} |" for r in missing_visuals)
+    visual_report.write_text(f"""# Model visual coverage
+
+Generated from the canonical catalog and `data/model-visuals.json`.
+
+- Canonical models: **{len(records)}**
+- Published, rights-cleared primary images: **{published_visuals}**
+- Still requiring cleared primary imagery: **{len(missing_visuals)}**
+
+A model is counted as covered only when its registry state is `published` and a primary image is present. Candidate URLs and unverified redistribution rights do not count.
+
+| ID | Maker | Model | Status |
+|---|---|---|---|
+{missing_rows or '| — | — | All canonical models currently have published imagery | — |'}
 """, encoding="utf-8")
     guide_dir = args.output_root / "guides"
     guide_dir.mkdir(parents=True, exist_ok=True)
