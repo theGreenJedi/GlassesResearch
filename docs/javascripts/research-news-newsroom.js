@@ -98,18 +98,6 @@
   const latestGrid = desk.querySelector("[data-newsroom-latest]");
   const wireList = wire.querySelector("[data-newsroom-wire]");
 
-  const renderTableFallback = () => {
-    const rows = latestTable ? [...latestTable.querySelectorAll("tbody tr")].slice(0, 6) : [];
-    for (const row of rows) {
-      const cells = row.querySelectorAll("td");
-      if (cells.length < 3) continue;
-      const card = document.createElement("article");
-      card.className = "gr-newsroom-card";
-      card.innerHTML = `<div class="gr-newsroom-date">${cells[0].innerHTML}</div><div class="gr-newsroom-card-copy">${cells[1].innerHTML}</div><div class="gr-newsroom-card-links">${cells[2].innerHTML}</div>`;
-      latestGrid?.append(card);
-    }
-  };
-
   const renderStoryCard = (story) => {
     const age = relativeAge(story.published_at);
     const when = [displayDate(story.published_at), age].filter(Boolean).join(" · ");
@@ -145,7 +133,7 @@
         : state.lead.change_type.replaceAll("_", " ");
       lead.hidden = false;
       lead.innerHTML = `<div class="gr-newsroom-kicker">Featured</div><a class="gr-newsroom-lead-card" href="${escapeHtml(state.lead.url)}"${leadRel}><span class="gr-newsroom-date">${escapeHtml(displayDate(state.lead.published_at))} · ${escapeHtml(relativeAge(state.lead.published_at))} · ${escapeHtml(leadType)}</span><strong>${escapeHtml(state.lead.title)}</strong><span>${escapeHtml(state.lead.summary)}</span><em>${leadCta}</em></a>`;
-      if (latestGrid) latestGrid.innerHTML = state.latest.slice(0, 6).map(renderStoryCard).join("");
+      if (latestGrid) latestGrid.innerHTML = state.latest.slice(0, 3).map(renderStoryCard).join("");
       latestHeading?.classList.add("gr-newsroom-enhanced-hide"); latestTable?.classList.add("gr-newsroom-enhanced-hide");
       if (Array.isArray(state.convergence) && state.convergence.length) {
         convergence.hidden = false;
@@ -153,7 +141,7 @@
         convergence.innerHTML = `<div class="gr-newsroom-section-head"><div><div class="gr-newsroom-kicker">Convergence radar</div><h2>Where independent signals are beginning to agree</h2></div><p>Convergence requires multiple verified story signals and multiple source families. Rewrites of one source do not manufacture momentum.</p></div><div class="gr-convergence-grid">${cards}</div>`;
       }
     })
-    .catch(() => { const freshness = hero.querySelector("[data-newsroom-freshness]"); if (freshness) freshness.textContent = "Verified newsroom state unavailable · showing published-page fallback"; renderTableFallback(); });
+    .catch(() => { const freshness = hero.querySelector("[data-newsroom-freshness]"); if (freshness) freshness.textContent = "Verified newsroom state temporarily unavailable · browse the full archive"; });
 
   const loadWireState = async () => {
     let emptyState = null;
