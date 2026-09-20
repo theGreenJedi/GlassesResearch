@@ -1,38 +1,39 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-20T12:06:22.325303+00:00",
-  "candidate_count": 63,
-  "classifier_irrelevant_count": 47,
+  "discovered_utc": "2026-09-20T12:28:48.754840+00:00",
+  "candidate_count": 47,
+  "classifier_irrelevant_count": 45,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 22,
-    "broad_web": 30,
-    "community": 10,
-    "developer": 11
+    "adjacent": 1,
+    "broad_web": 28,
+    "community": 6,
+    "developer": 14
   },
   "relationship_counts": {
-    "direct": 4,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 12,
+    "adjacent": 0,
     "speculative": 0,
-    "irrelevant": 47
+    "irrelevant": 45
   },
   "type_counts": {
     "model": 3,
-    "review": 9,
-    "video": 3,
-    "news": 31,
-    "research": 1,
-    "tool": 22,
-    "sdk": 12,
-    "retail": 5,
-    "community": 10
+    "review": 1,
+    "video": 2,
+    "news": 23,
+    "tool": 14,
+    "sdk": 14,
+    "optics": 1,
+    "policy": 2,
+    "retail": 1,
+    "community": 6
   },
   "routing_counts": {
-    "adjacent_radar": 12,
-    "reject_noise": 47,
-    "report_card_evidence": 4,
-    "research_news_review": 16
+    "reject_noise": 45,
+    "report_card_evidence": 1,
+    "research_news_review": 2,
+    "research_optics": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -43,459 +44,106 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
   "candidates": [
     {
-      "id": "f0d003be3331b594",
-      "title": "Smart glasses review: honest 5/10 hands-on test | TikTok",
-      "url": "https://www.tiktok.com/@jradthered.official/video/7663946534072945934",
-      "summary": "92 Likes, TikTok video from jradthered.official (@jradthered.official): “A concise hands-on review of entry-level smart glasses — video quality, audio, and key drawbacks explained. #SmartGlasses #TechReview #WearableTech”.",
+      "id": "a4696290fa972a78",
+      "title": "ENGO 3 Close-Up — Detailed Look at the HUD Smart Glasses",
+      "url": "https://m.youtube.com/watch?v=2oRoC64W_Fs",
+      "summary": "A detailed close-up look at the ENGO 3 HUD smart glasses — the frame, the lens, the display module and the build up close, so you can see exactly what you’re getting before you buy.",
+      "discovery_channel": "broad_web+developer",
+      "query": "ENGO smart glasses; Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "video",
+        "optics"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7a392c57d9c8f7ae",
+      "title": "engo3 Cyclist - us.engoeyewear.com",
+      "url": "https://us.engoeyewear.com/products/engo3-cyclist",
+      "summary": "\"French brand engo just did what Meta couldn’t with its new smart glasses.\" \"The real heads-up display people picture when they imagine futuristic smart glasses.\" A miracle of engineering. \"These glasses offer some real benefits.\"",
       "discovery_channel": "broad_web",
-      "query": "smart glasses review",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e19a497746170735",
+      "title": "Fallen Releases - The Evanescence Reference",
+      "url": "https://www.evanescencereference.info/wiki/index.php?title=Fallen_Releases",
+      "summary": "In celebration of Fallen 's 20th anniversary, a special edition remaster with bonus material was released on November 17, 2023 through Craft Recordings. The box sets were going to be released in February 2024 but pushed back a week, to be shipped by March 1, due to various production factors.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 4,
       "keyword_hits": [
-        "hands-on",
-        "review"
+        "released"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "irrelevant",
       "content_types": [
-        "review",
-        "video"
+        "model",
+        "tool",
+        "sdk"
       ],
-      "primary_type": "review",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "report_card_evidence"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses, smartglasses",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0494d406e4375019",
-      "title": "Are Metal Smart Glasses Weird? Honest Review & First Impressions | TikTok",
-      "url": "https://www.tiktok.com/@charlottegannon1/video/7672851338966945046",
-      "summary": "Share your thoughts and experiences. Keywords: metal smart glasses review, are metal glasses weird, metal glasses first impressions, smart glasses pros cons, wearing metal glasses in public, POV glasses review, metal frames smart glasses This is an AI-generated summary of the content, and is not intended to provide factual context.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses review",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "direct",
-      "content_types": [
-        "review",
-        "video"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1c66603ded6bbbca",
-      "title": "Smart Glasses Review: Stylish & Functional Features | TikTok",
-      "url": "https://www.tiktok.com/@pauleenespina_/video/7553518644911787272",
-      "summary": "Keywords: smart glasses review, features of smart glasses, TikTok Shop smart glasses, stylish smart glasses, smart glasses with charger, smart glasses for kids, anti-radiation glasses benefits, how to use smart glasses, smart glasses for teens, smart glasses with audio This information is AI generated and may return results that are not relevant.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses review",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "direct",
-      "content_types": [
-        "review",
-        "video"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f99791bb822bdd36",
-      "title": "tiktok shop smart glasses review - TikTok Shop",
-      "url": "https://shop.tiktok.com/us/k/tiktok-shop-smart-glasses-review",
-      "summary": "Smart glasses have become a trending accessory, especially with platforms like TikTok Shop showcasing various models.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses review",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "direct",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bc48da1a11ef01b7",
-      "title": "Emerging Electrochromic Materials and Devices for Future Displays",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9523732/",
-      "summary": "With the rapid development of optoelectronic fields, electrochromic (EC) materials and devices have received remarkable attention and have shown attractive potential for use in emerging wearable and portable electronics, electronic ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e3221aeaa605e05e",
-      "title": "Toronto - Hourly Forecast - Environment Canada",
-      "url": "https://weather.gc.ca/en/forecast/hourly/index.html?coords=43.655,-79.383",
-      "summary": "Canada.ca Weather information Weather Local forecasts Ontario Toronto Weather shortcuts Access city Last updated11:44 PM PDT Sat 19 Sep 2026",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "400a59373fc40f09",
-      "title": "Toronto Weather Forecast — Hourly, 7-Day & 14-Day | ClearCast",
-      "url": "https://clearcastweather.com/weather/toronto-on",
-      "summary": "Live forecast for Toronto, Canada — updated in real time. Check today's temperature, UV index, hourly breakdown, and 14-day outlook. ← Back to ClearCast °C °F 12h 24h 🔍 Search",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b2bacdcf59710874",
-      "title": "Toronto Weather | Today & 14-Day Forecast",
-      "url": "https://weatherin.org/canada/ontario/toronto",
-      "summary": "Toronto, Ontario, Weather Forecast with current conditions, temperature, precipitation and wind for the next 14 days.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0eee357a52c6df76",
-      "title": "Toronto, Canada 10-Day Weather Forecast | Weather Underground",
-      "url": "https://www.wunderground.com/forecast/ca/toronto",
-      "summary": "Toronto Weather Forecasts. Weather Underground provides local & long-range weather forecasts, weatherreports, maps & tropical weather conditions for the Toronto area.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "60da81c60cde3ccf",
-      "title": "Toronto, Canada 16 day weather forecast | The Weather Outlook",
-      "url": "https://www.theweatheroutlook.com/forecast/43d66-n79d39/toronto--ontario--canada",
-      "summary": "Get the detailed weather forecast for Toronto, Ontario, Canada. Access daily, 10 day and 16 day views, maps, meteograms and timelines for accurate predictions.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9ea018ed7a33a2cc",
-      "title": "Toronto, ON - 7 Day Forecast - Environment Canada",
-      "url": "https://weather.gc.ca/en/location/index.html?coords=43.655,-79.383",
-      "summary": "Current conditions and forecasts including 7 day outlook, daily high/low temperature, warnings, chance of precipitation, pressure, humidity/wind chill (when applicable), normals, and sunrise/sunset times",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "25575c3c3c64a1f5",
-      "title": "Toronto, ON - 7 Day Forecast - Environment Canada",
-      "url": "https://beta.weather.gc.ca/en/location/index.html?coords=43.655,-79.383",
-      "summary": "Historical Weather Data The Historical Climate Data website provides a Historical data search and download for past Canadian hourly, daily and monthly weather data. It also provides Almanac Averages and Extremes temperature and precipitation values for a particular station over its entire period of record.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8fd987458fbd6b65",
-      "title": "Toronto, ON 7 Days Weather - The Weather Network",
-      "url": "https://www.theweathernetwork.com/en/city/ca/ontario/toronto/7-days",
-      "summary": "See the Toronto, ON extended weather forecast including feels like temperature, wind gust and chance of rain or snow from TheWeatherNetwork.com",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a81c43302526490e",
-      "title": "Toronto, Ontario Weather Today, Hourly & 10-Day Forecast",
-      "url": "https://checkweather.io/ca/toronto/",
-      "summary": "Toronto, Ontario (also TO) weather today and tomorrow, hour by hour and 10 days ahead: Env. Canada, European, American compared side by side.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d581f0eef1b13a2a",
-      "title": "Toronto, Ontario, Canada Weather Forecast | MSN Weather",
-      "url": "https://www.msn.com/en-xl/weather/forecast/in-Toronto,Ontario,Canada",
-      "summary": "Get accurate hourly forecasts for today, tonight, and tomorrow, along with 10-day daily forecasts and weather radar for Toronto, Ontario, Canada with MSN Weather. Stay updated on precipitation ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b41515fb7fdc5b03",
-      "title": "Weather Tomorrow for Toronto, Ontario, Canada | AccuWeather",
-      "url": "https://www.accuweather.com/en/ca/toronto/m5h/weather-tomorrow/55488",
-      "summary": "Everything you need to know about tomorrow's weather in Toronto, Ontario, Canada. High/Low, Precipitation Chances, Sunrise/Sunset, and tomorrow's Temperature History.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9331e125aa47b350",
-      "title": "Best Farm Stays for Families in Granada in 2026",
-      "url": "https://www.farmstayplanet.com/farmstays/category/family-friendly-1/spain-1/granada-1/",
-      "summary": "Our choices for best child friendly/family friendly agritourism farm stays, countryside cottages & rural retreats in Granada, Spain in 2026. B&B & Self Catering. Many are organic, and some are pet friendly too. And they all come with instant online booking & lowest price guaranteed via Booking.com.",
+      "id": "662c0503546b58c2",
+      "title": "10 Cities In Florida With The Highest Crime Risk (& Tips For Staying ...",
+      "url": "https://alwaysontheshore.com/cities-in-florida-with-highest-crime-risk/",
+      "summary": "Whether you’re planning a vacation or just want to stay informed, knowing which cities carry the highest risk can help you travel smarter and safer. Here are 10 Florida cities with the highest crime rates in 2025, plus additional places where caution is advised.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -505,10 +153,92 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "195b965115b4c103",
+      "title": "10 Worst Cities to Call Home in Florida, According to Crime Statistics",
+      "url": "https://southhillenterprise.com/10-worst-cities-to-call-home-in-florida-according-to-crime-statistics/",
+      "summary": "This guide highlights the 10 most dangerous cities in Florida, based on the latest FBI Uniform Crime Reporting (UCR) data, to help travelers and residents make informed decisions.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "379fe7b41a486bf2",
+      "title": "10 Worst Places to Live in Florida for Families and Retirees in 2026",
+      "url": "https://mebaneenterprise.com/10-worst-places-to-live-in-florida-for-families-and-retirees-in-2026/",
+      "summary": "Before making a move, it’s important to understand both the advantages and challenges of each area. Here are 10 places in Florida that families and retirees may want to think twice about before relocating.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f241285ec3aa114b",
+      "title": "53 Easy Cake Recipes for Last-Minute Entertaining - Taste of Home",
+      "url": "https://www.tasteofhome.com/collection/easy-cake-recipes/",
+      "summary": "Need a simple cake recipe for a last-minute party or bake sale? We've got 50+ easy cake recipes that require 15 minutes (or less!) of hands-on time. The hardest part: waiting for dessert.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "hands-on"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
         "retail"
       ],
-      "primary_type": "tool",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -518,119 +248,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d4110d20e2cd79b5",
-      "title": "Best Luxury Farm Stays in Granada for 2026",
-      "url": "https://www.farmstayplanet.com/farmstays/category/luxury-farm-stays/spain-1/granada-1/",
-      "summary": "The best luxury farm stays in Granada, Spain for 2026. Discover exceptional farmhouse accommodation in beautiful settings with premium amenities. Filter by price, type and facilities.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cc17aff8c658e902",
-      "title": "English-Catalan Quiz - Restaurant (Multiple-choice, Flashcards and ...",
-      "url": "http://iteslj.org/v/cat/mm_transportation-b.html",
-      "summary": "A Flash multiple-choice quiz for studying Catalan and English vocabulary.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eea755841624b839",
-      "title": "ESL Conversation Questions - Restaurants & Eating Out (I-TESL-J)",
-      "url": "http://iteslj.org/questions/restaurants.html",
-      "summary": "Was the taste as good as a regular restaurant? Why do you think westerners are usually heavier than Asians? Do you ever order out from a restaurant? What kind of foods? Do you think this area has a good variety of foreign restaurants? What other kinds of restaurants would you like to see opened? Can kids eat free at any of the restaurants you ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e585c342969d4fc9",
-      "title": "ESL Conversation Questions - Tell me about...? (I-TESL-J)",
-      "url": "http://iteslj.org/questions/tell.html",
-      "summary": "Can you tell me about a prize you won? Can you tell me about your favorite restaurant? Can you tell me about your favorite movie? Can you tell me about your dreams? Can you tell me about your dream car? Can you tell me about your country? Can you tell me about your fears? Can you tell me about your hopes? Can you tell me about love?",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f8cd18939bd61288",
-      "title": "Granada Family-Friendly Vacation Rentals | Airbnb",
-      "url": "https://www.airbnb.com/granada-region-spain/stays/family-friendly",
-      "summary": "Located in the heart of Albayzin in Granada and surrounded by typical shops, bakeries, cafes and tapas bars. In our house you can feel the way that people from Al Andalus lived, with a central patio, plants and decorated with our own designs.",
+      "id": "88416c0154cb59b9",
+      "title": "CELEBRATING THE 20TH ANNIVERSARY OF EVANESCENCE’S STRATOSPHERIC DEBUT,",
+      "url": "https://craftrecordings.com/blogs/news/evanescence-fallen-20",
+      "summary": "The expanded set also includes a trove of bonus material – ten tracks in all – comprising previously-unreleased demos and live recordings plus a selection of rare B-sides.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -654,10 +275,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "35eb2618a9585a9e",
-      "title": "Granada Farmstay Vacation Rentals | Airbnb",
-      "url": "https://www.airbnb.com/granada-region-spain/stays/farmstays",
-      "summary": "Find the perfect farmstay rentals for your trip to Granada Family-friendly farm stay rentals, farm stay rentals with a patio, farmstay rentals with a washer and dryer, and other farmstay vacation rentals.",
+      "id": "e1eb7a5ee73c1572",
+      "title": "Craft Recordings Celebrates the 20th Anniversary of Evanescence’s ...",
+      "url": "https://concord.com/news/craft-recordings-celebrates-the-20th-anniversary-of-evanescences-stratospheric-debut-fallen-with-deluxe-reissue/",
+      "summary": "The expanded set also includes a trove of bonus material – ten tracks in all – comprising previously-unreleased demos and live recordings plus a selection of rare B-sides.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -681,37 +302,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a7dd27a608550d40",
-      "title": "Tell Me More - Chapter 7 - Teacher's Notes",
-      "url": "http://iteslj.org/t/tmm/07t.htm",
-      "summary": "Restaurant language Recycle: Likes/dislikes Free Talking: \"Kimch'i\" Comments: Students begin the second half of the course. Hopefully they will have things to report that can become the subject of casual conversation in English. Because this is the second half of the book, a number of functions will be 'recycled' in addition to new ones being ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e2f81fc53117bf86",
-      "title": "THE 10 BEST Granada Family Hotels - Tripadvisor",
-      "url": "https://www.tripadvisor.com/Hotels-g187441-zff4-Granada_Province_of_Granada_Andalucia-Hotels.html",
-      "summary": "Best Family Hotels in Granada on Tripadvisor: Find 63,859 traveler reviews, 41,781 candid photos, and prices for 155 family hotels in Granada, Province of Granada, Spain.",
+      "id": "9d7ffb4713d7b33a",
+      "title": "Evanescence Celebrates 20th Anniversary Of Fallen With The 20 Deluxe ...",
+      "url": "https://rocknloadmag.com/evanescence-celebrates-20th-anniversary-of-fallen-with-the-20-deluxe-edition-re-issue/",
+      "summary": "The expanded set also includes a trove of bonus material – ten tracks in all – comprising previously unreleased demos and live recordings plus a selection of rare B-sides.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -735,10 +329,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bc2e9ac480666438",
-      "title": "THE 5 BEST Luxury Family Hotels in Granada - Tripadvisor",
-      "url": "https://www.tripadvisor.com/HotelsList-Granada-Luxury-Family-Hotels-zfp29666013.html",
-      "summary": "Properties ranked using exclusive Tripadvisor data, including traveler ratings, confirmed availability from our partners, prices, booking popularity and location, as well as personal user preferences and recently viewed hotels. Highest rated hotels on Tripadvisor, based on traveler reviews.",
+      "id": "a076653587a9dd10",
+      "title": "EVANESCENCE RELEASES 20TH ANNIVERSARY DELUXE EDITION OF STRATOSPHERIC ...",
+      "url": "https://www.revelationmgmt.com/news/evanescence-releases-20th-anniversary-deluxe-edition-of-stratospheric-debut-album-fallen",
+      "summary": "EVANESCENCE RELEASES 20TH ANNIVERSARY DELUXE EDITION OF STRATOSPHERIC DEBUT ALBUM FALLEN. The remastered and expanded album includes hits “My Immortal,” “Everybody’s Fool,” “Going Under,” and the GRAMMY®-winning “Bring Me To Life,” plus bonus material – including B-sides, previously unreleased demos and live recordings. STREAM/ORDER THE ALBUM HERE.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6ff98d76bbd19395",
+      "title": "Evanescence – Fallen - 20th Anniversary Edition (Deluxe, Limited ...",
+      "url": "https://craftrecordings.com/products/fallen-20th-anniversary-edition-2-lp-limited-edition-black-white-color-on-color-splatter-vinyl",
+      "summary": "The expanded set also includes a trove of bonus material – ten tracks in all – comprising previously-unreleased demos, live recordings, and outtakes, plus a selection of rare B-sides.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0765b86c88b5a1d1",
+      "title": "Evanescence – Fallen – 2 x CD (20th Anniversary Edition ... - Discogs",
+      "url": "https://www.discogs.com/release/28949089-Evanescence-Fallen",
+      "summary": "View credits, reviews, tracks and shop for the 2023 CD release of \"Fallen\" on Discogs.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -763,10 +411,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d060b9350ccda268",
-      "title": "The best farm stays in Granada Province, Spain - Booking.com",
-      "url": "https://www.booking.com/farm-holidays/region/es/grenade.html",
-      "summary": "Find and book deals on the best farm stays in Granada Province, Spain! Explore guest reviews and book the perfect farm stay for your trip.",
+      "id": "2638ee264f2f3818",
+      "title": "Fallen - 20th Anniversary Edition (2-LP Black Vinyl)",
+      "url": "https://intlstore.concord.com/products/fallen-20th-anniversary-edition-2-lp-black-vinyl-cod",
+      "summary": "The expanded set also includes a trove of bonus material – ten tracks in all – comprising previously-unreleased demos, live recordings, and outtakes, plus a selection of rare B-sides.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -790,737 +438,78 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "856893ecabc4acc3",
-      "title": "Top 10 Best Audit AI Software – 2026 Buyer's Guide",
-      "url": "https://worldmetrics.org/best/audit-ai-software/",
-      "summary": "Audit AI software is shifting from static document review into continuous, workflow-driven assurance using anomaly detection, risk scoring, and evidence automation. This guide ranks the top 10 platforms and explains how each handles audit planning, control and compliance evidence management, automated test selection, and AI-powered document extraction so teams can streamline execution and ...",
+      "id": "ab786b8ff7ec0aa2",
+      "title": "Fallen | Evanescence Wiki | Fandom",
+      "url": "https://evanescence.fandom.com/wiki/Fallen",
+      "summary": "The physical (2-CD and 2-LP) and digital releases include the original album, plus three B-sides and six bonus material, including live versions and the 2002 demo version of \"Bring Me to Life\".",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f9df570f83597853",
+      "title": "Fallen – 20th Anniversary Edition (Deluxe, Limited Edition 2-LP)",
+      "url": "https://evanescence.craftrecordings.com/products/fallen-20th-anniversary-edition-2-lp-limited-edition-black-white-color-on-color-splatter-vinyl/",
+      "summary": "The expanded set also includes a trove of bonus material – ten tracks in all – comprising previously-unreleased demos, live recordings, and outtakes, plus a selection of rare B-sides.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "34521158f7ddc5ff",
+      "title": "Spells Bee Privacy Policy",
+      "url": "https://spellsbee.com/android-app-privacy",
+      "summary": "Application Users Spells Bee Game may collect non-personally-identifying information, such as the device type, language preference, referral, and the date and time of each user request. Spells Bee Game's purpose in collecting non-personally identifying information is to better understand how Spells Bee Game's users use its App.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "review"
+        "privacy"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "74a8133f4a0c7a18",
-      "title": "10 Best AI Tools for Automating Internal Audits 2026",
-      "url": "https://aistoryland.com/best-ai-tools-for-automating-internal-audits/",
-      "summary": "Discover the top 10 AI tools for automating internal audits, boosting efficiency, accuracy, and compliance across your organization.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d6ecb3f4aae980ce",
-      "title": "10 Best Internal Audit Management Software Picked for 2026",
-      "url": "https://thecfoclub.com/tools/best-internal-audit-management-software/",
-      "summary": "Choosing internal audit management software comes down to whether it connects evidence collection, compliance tracking, and audit workflow execution. I evaluated 17 tools, drawing on years building finance infrastructure, and prioritized ERP integration, workflow automation, and board-level reporting. Here’s what I’d actually use.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cbf460d1d87fe47d",
-      "title": "About Marbella AI — Our Mission & Team",
-      "url": "https://marbella-ai-education.lovable.app/about",
-      "summary": "Hands-on AI workshops, masterclasses and mentor-led projects that empower the next generation with AI literacy.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "hands-on"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
         "tool",
-        "community"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3a645a0c2ab6174",
-      "title": "AI Audit Tools for Internal Audit and Risk Teams - chatfin.ai",
-      "url": "https://chatfin.ai/guide/top-10-best-ai-tools-for-internal-audit-risk/",
-      "summary": "AI tools for internal audit and risk: continuous controls monitoring, transaction testing and audit evidence. Why a named person still signs.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d47422235425035d",
-      "title": "AI Auditing Tools: Features & How to Pick | Vero AI",
-      "url": "https://www.vero-ai.com/blog/ai-auditing-tools-review",
-      "summary": "Find the top ai auditing tools for internal audit teams. Compare features, benefits, and use cases to help your organization improve audit quality and efficiency.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3374215c3877ed84",
-      "title": "AI Training Program for Beginners & Professionals | AI Launchpad",
-      "url": "https://fwa-ai-launchpad.lovable.app/",
-      "summary": "A 10-week hands-on AI training experience where beginners and professionals build AI apps, automations, workflows and agents.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "hands-on"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool",
-        "community"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "17f662df7751e5e8",
-      "title": "Airo GPT – Smart AI Assistant | Chat, Images, Music & More",
-      "url": "https://airogpt.lovable.app/",
-      "summary": "Airo GPT is a smart AI assistant developed by Aarav Thakur. Get instant answers, creative help, coding support, and intelligent research assistance. Start free today.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "community"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "18b67d1f830d3c3c",
-      "title": "Best AI Audit Management Software",
-      "url": "https://www.softwareworld.co/ai-audit-management-software/",
-      "summary": "AI audit management software is transforming how organizations handle compliance, internal audits, and risk oversight. These platforms use artificial intelligence to automate critical tasks like risk assessment, evidence gathering, and anomaly detection across large data sets. With features like real-time dashboards, predictive insights, and seamless collaboration tools, AI audit software ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fc64668a4a1c8486",
-      "title": "Best AI Internal Audit Software in 2026: AuditBoard vs Diligent vs ...",
-      "url": "https://www.techno-pulse.com/2026/07/best-ai-internal-audit-software-in-2026.html",
-      "summary": "What is AI internal audit software? AI internal audit software uses machine learning and automation to help audit teams plan audits, assess risk, test controls, document findings, and report results.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ecc8718c54d6d244",
-      "title": "Best Currys Cookers Electric Comparison - September 2026",
-      "url": "https://www.topchoice.co.uk/currys-cookers-electric",
-      "summary": "7 Best Currys Cookers Electric In the UK Last Updated - 20/09/2026 Advertising Disclosure Electronics Home & Kitchen Computers Office Supplies Toys & Games Sports & Fitness Home Large Appliances Ovens & hobs Range ovens Freestanding ranges",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ff4e4cc74a8efec8",
-      "title": "Best Currys Electric Fan Ovens Comparison - September 2026",
-      "url": "https://www.topchoice.co.uk/currys-electric-fan-ovens",
-      "summary": "SPACIOUS 70L CAPACITY – With plenty of space for everything from family roasts to weekend bakes, this 70L Electric Fan Oven makes everything from everyday meals to entertaining effortless",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f16c4aeab602150c",
-      "title": "Best Currys Electric Fan Ovens of 2026",
-      "url": "https://www.bestproductsreviews.co.uk/currys-electric-fan-ovens",
-      "summary": "Easily compare & choose from the 10 best Currys Electric Fan Ovens for you. Don't buy Currys Electric Fan Ovens in the UK before reading our rankings | bestproductsreviews.co.uk",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "18d52bb89c755b9e",
-      "title": "Built-in ovens - Currys Business",
-      "url": "https://business.currys.co.uk/catalogue/domestic-appliances/cooking/built-in-ovens",
-      "summary": "Over 30,000 products with FREE DELIVERY including Laptops, Desktops, Apple, Dell, Tablets. Talk to us about your business needs in any Currys store.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e22c020b7d6c747c",
-      "title": "Currys Cooking | Best Deals on Cookers, Ovens (built-in) and more",
-      "url": "https://www.currys.ie/appliances/cooking",
-      "summary": "Don’t like gas or want it all? No problem, we also have electric cookers and dual fuel cookers. Now you’re cooking! Get some more ideas with our Cooker Buying Guide. You’ll find all kinds of ovens - including hybrid, gas and electric ovens in a range of sizes and styles to fit into any kitchen.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1d3a3a5a2d5082e1",
-      "title": "Currys Electric Double Ovens | Built In | DealDoodle",
-      "url": "https://dealdoodle.co.uk/shop/currys-electric-double-ovens",
-      "summary": "Revolutionize your kitchen experience with Currys Electric Double Ovens. Boasting a spacious double oven design, advanced cooking features, and intuitive controls, these ovens are essential for any home chef.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "88ec6de580b20ef8",
-      "title": "Flow Volkswagen of Greensboro - Greensboro, NC | Cars.com",
-      "url": "https://www.cars.com/dealers/6043118/flow-volkswagen-of-greensboro/",
-      "summary": "Flow Volkswagen of Greensboro Not rated (40 reviews) 4100 W. Wendover Ave., Greensboro, NC 27407 Claim your store (free)",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f1573c5cd7d0efad",
-      "title": "Flow Volkswagen of Greensboro in Greensboro, NC - Autotrader",
-      "url": "https://www.autotrader.com/car-dealers/greensboro-nc/70677681/flow-volkswagen-of-greensboro",
-      "summary": "GREENSBORO, NC Flow Volkswagen of Greensboro 5601 ROANNE WAY, GREENSBORO, NC 27409 8 miles away (336) 617-9711 Visit Dealer Website",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5642e56853317d94",
-      "title": "Free standing cookers - Currys Business",
-      "url": "https://business.currys.co.uk/catalogue/domestic-appliances/cooking/free-standing-cookers",
-      "summary": "Over 30,000 products with FREE DELIVERY including Laptops, Desktops, Apple, Dell, Tablets. Talk to us about your business needs in any Currys store.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c97b60b9f1f1b1e8",
-      "title": "Huawei Mobile Phones: Latest & New Smartphones List (20th September ...",
-      "url": "https://www.gadgets360.com/mobiles/huawei-phones",
-      "summary": "List of all Huawei phones including latest, upcoming mobile phones from Huawei smartphone brands. Also find Huawei 5g smartphones, camera phones & best Huawei mobiles with price, specifications and reviews.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b69092fab9a000fd",
-      "title": "Internal Audit Management Software & Tools | Optro",
-      "url": "https://optro.ai/product/operational-audit",
-      "summary": "Optro's Internal Audit Management software streamlines and automates audit activities, procedures, and reporting. Request a demo today.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c4756d705403da74",
-      "title": "Internal Audit Process Automation Guide [2026] | Trullion",
-      "url": "https://trullion.com/blog/internal-audit-process-automation-guide/",
-      "summary": "Faster issue detection, more efficient operations, real-time control visibility—these capabilities change how leadership views internal audit. Finance leaders evaluating the best AI software for finance and accounting consistently find audit automation delivers some of the highest returns on technology investment.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "efafb7b6b62dd4ac",
-      "title": "Local Volkswagen Dealership | Flow Volkswagen of Greensboro",
-      "url": "https://www.flowvolkswagengreensboro.com/",
-      "summary": "At Flow Volkswagen of Greensboro, we pride ourselves on delivering an exceptional automotive experience to drivers in Greensboro, North Carolina, and the surrounding areas.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "219d71e1e6f16153",
-      "title": "Local Volkswagen Dealership | Flow Volkswagen of Winston-Salem",
-      "url": "https://www.flowvolkswagenwinstonsalem.com/",
-      "summary": "Looking to buy or service a Volkswagen car? Visit Flow Volkswagen of Winston-Salem, NC. Browse popular models like the Volkswagen Atlas and more.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e09dc651175a99e7",
-      "title": "Multifunction ovens - Cheap Multifunction oven Deals | Currys",
-      "url": "https://www.currys.ie/appliances/cooking/ovens-built-in/multifunction-ovens",
-      "summary": "Find the perfect Multifunction ovens for you in our full Ovens (built-in) range here at Currys. Shop online for delivery or order & collect.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab05ebe5a03f3805",
-      "title": "New Volkswagen Cars and SUVs For Sale in Greensboro, NC",
-      "url": "https://www.flowvolkswagengreensboro.com/new-inventory/index.htm",
-      "summary": "Searching for a stylish and dependable new Volkswagen in Greensboro, NC? At Flow Volkswagen of Greensboro, we're proud to offer an exceptional selection of new Volkswagen cars and SUVs-each built with renowned German engineering, cutting-edge safety features, and sophisticated design.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1f3cb610d21a791f",
-      "title": "Shop Currys Built In Ovens up to 20% Off | DealDoodle",
-      "url": "https://www.dealdoodle.co.uk/shop/currys-built-in-ovens",
-      "summary": "Enhance your kitchen with top-tier built-in ovens from renowned brands like Montpellier, Beko, Hotpoint, and Bosch, available at Currys. Designed for superior performance and style, these ovens offer a range of features to suit every culinary need.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "28d7cc22c92ae038",
-      "title": "The 6 Best AI Auditing Tools Reviewed for 2026 | Vero AI",
-      "url": "https://www.vero-ai.com/blog/ai-auditing-tools-list",
-      "summary": "Find out how AI auditing tools support financial audits, compliance checks, and risk assessment. Compare features to choose the right tool for your team.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
+        "policy"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1532,23 +521,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5c5a1372332c376f",
-      "title": "Used Volkswagen for Sale in Greensboro, NC - CARFAX",
-      "url": "https://www.carfax.com/Used-Volkswagen-Greensboro-NC_m34_c8633",
-      "summary": "Find the perfect used Volkswagen in Greensboro, NC by searching CARFAX listings. We have 154 Volkswagen vehicles for sale that are reported accident free, 67 1-Owner cars, and 103 personal use cars",
+      "id": "2e9f1b470c512760",
+      "title": "SpellsBee.com Privacy Policy",
+      "url": "https://spellsbee.com/privacy-policy",
+      "summary": "Privacy Policy and Terms Overview : SpellsBee.com LLC is located at: SpellsBee.com LLC 279 Tyler Avenue, Ft Lauderdale, Florida, US It is SpellsBee.com LLC's policy ...",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "privacy"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "policy"
       ],
-      "primary_type": "retail",
+      "primary_type": "policy",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1558,22 +549,335 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1b662da159419a14",
-      "title": "About PROTA AI Studio - Founded by PeeyushShaw",
-      "url": "https://prota-ai.lovable.app/about",
-      "summary": "Passionate about democratizing AI and making cutting-edge technology available to all. PeeyushShaw leads the entire development, design, and strategy of PROTA AI Studio.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "id": "b0c444943036be13",
+      "title": "19 Easy Cake Recipes for Beginners",
+      "url": "https://www.allrecipes.com/gallery/best-easy-cake-recipes-for-beginners/",
+      "summary": "Beginner bakers can have their cake and eat it, too, with these 19 easy-to-make cake recipes.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 1,
+      "materiality_score": 2,
       "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7fcf9a08821b8ccc",
+      "title": "30 Best Cake Recipes Made from Scratch - The Pioneer Woman",
+      "url": "https://www.thepioneerwoman.com/food-cooking/meals-menus/g39178045/cake-recipes-made-from-scratch/",
+      "summary": "The 30 cake recipes made from scratch here have easy-to-follow instructions and plenty of standard ingredients you're sure to already have or find easily. So just go for it!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c216b66c92bb3d35",
+      "title": "31 Easy Cake Recipes That Every Home Baker Will Love",
+      "url": "https://www.marthastewart.com/274319/easy-cake-recipes",
+      "summary": "From simple loaf to snacking cakes—and everything in between. When you need a simple dessert for a party, birthday, or just because, turn to this collection of easy-to-make and easy-to-love cakes.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c488a519bfd65dea",
+      "title": "75 From-Scratch Cake Recipes That Are Sure To Impress",
+      "url": "https://www.southernliving.com/made-from-scratch-cake-recipes-12016672",
+      "summary": "These are our best homemade cake recipes to make from scratch. There’s nothing wrong with a boxed mix, but when you want to make something special, these homemade cakes are best.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a2844f9a0795adb",
+      "title": "Cake Recipes",
+      "url": "https://www.allrecipes.com/recipes/276/desserts/cakes/",
+      "summary": "Trusted recipes for chocolate cake, white cake, banana cakes, and carrot cakes with photos and tips from home cooks.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6f91284960aa31b3",
+      "title": "Cake recipes - BBC Food",
+      "url": "https://www.bbc.co.uk/food/cake",
+      "summary": "Browse our easy cake recipes: from birthday cakes, chocolate cakes and lemon drizzle cakes to the perfect Victoria sponge - not forgetting plenty of gluten-free options.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "869fb38c29602d6d",
+      "title": "Cake Recipes - Betty Crocker",
+      "url": "https://www.bettycrocker.com/recipes/dishes/cake-recipes",
+      "summary": "Discover a world of delicious cake recipes with Betty Crocker. Find the perfect recipe for your next special occasion or casual baking day.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "158a08ee02cc0241",
+      "title": "DODAに職務経歴書についての質問です。 - 職務経歴書を送ろう ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1328878153",
+      "summary": "DODAに職務経歴書についての質問です。 職務経歴書を送ろうとしたところ、アップロードエラーファイル情報を読み取れませんでした。アップロードできるファイルの拡張子は『.doc.xls.pdf.txt』となります。また、職務経歴書を開いたままアップロードを行っている際は一度閉じてからお試し ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bf471d4f861b8785",
+      "title": "dodaを介して仕事内定をいただいたのですがdoda紹介料が高く ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12325996307",
+      "summary": "dodaを介して仕事内定をいただいたのですがdoda紹介料が高く、dodaでは不採用にします。紹介が高い為です。 あなた様は大変好印象な為…ハローワークか、わたしたちに直接連絡くれれば採用にしますと言われましたがそのような会社などはあるのでしょうか？？普通？ですか？私は好印象な ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3569c9123f9dea3c",
+      "title": "DOTA IMBA 命令大全 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/348801255.html",
+      "summary": "DOTA正式版常用命令 -ap 全选模式 玩家可以选择所有酒馆的英雄。 -ar 全体随机模式 玩家从所有酒馆的范围里自动随机得到一个英雄。 -sd sd模式是ar的升级版，每个人会从三个英雄——力量\\敏捷\\智力中选择一个 -dm 死亡竞赛 如果你的英雄死了，你会在复活时间到的时候重新选一个英雄。如果主游戏 ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "02ad3f44eedd6f0f",
+      "title": "engo2 Smart Sports Glasses for Running & Cycling - Garmin & Apple Watch ...",
+      "url": "https://engoeyewear.com/en-ww/products/engo-2",
+      "summary": "For data-driven, high-performing endurance athletes, engo2 enables instant and intuitive access to real-time data, in their field of view. For training and competition - ENGO.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "356c4cfb963de07b",
+      "title": "Homemade Cake Recipes - Cakes - Sally's Baking",
+      "url": "https://sallysbakingaddiction.com/category/desserts/cakes/",
+      "summary": "Find trusted recipes for homemade cakes, from layer cakes to bundt cakes, 6-inch cakes, pound cakes, cheesecakes, and wedding cakes.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "03efb88bac8bf03b",
+      "title": "Roblox - Windows - Free download and play on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9pmf91n3lz3m?hl=en-US&gl=US",
+      "summary": "ROBLOX – GREAT GAMES ACROSS EVERY GENRE. PLAY FREE The range of games on Roblox is unmatched. Relax with cooking, building and simulator games, or jump into racing, shooter battles, and intense survival games. Explore epic RPG adventures, build empires in tycoon games, compete in sports games, or dive into horror, anime, and multiplayer games with friends. New games launch on Roblox every ...",
+      "discovery_channel": "community",
+      "query": "smart glasses community database",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "launch"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
         "model",
-        "tool",
         "community"
       ],
       "primary_type": "model",
@@ -1586,25 +890,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "683c0ecc9f5677da",
-      "title": "AI PPT Maker Free, No Signup — 8 Tools Tested (2026)",
-      "url": "https://buildmyppt.lovable.app/guide/ai-ppt-maker-free-no-signup",
-      "summary": "We tested 8 AI PPT makers that claim \"free, no signup\". Only 2 deliver a real .pptx with no account and no watermark. See the results and make a deck in 30s.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "id": "cc92544083885945",
+      "title": "Spelling Bee Game - Online and Free",
+      "url": "https://spellsbee.com/",
+      "summary": "Play Spelling Bee game online and free. Make as many words as possible using 7 letters and test your vocabulary. Find pangrams and become the genius Bee!",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 1,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "review",
-        "tool",
-        "community"
+        "news"
       ],
-      "primary_type": "review",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1614,24 +916,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b8093d92825005cd",
-      "title": "ANT — AI Agents That Work Together",
-      "url": "https://ant-colony-ai.lovable.app/",
-      "summary": "ANT is building an AI ecosystem where specialized agents work together to accomplish real-world tasks. One command. Multiple agents. One outcome.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "id": "8841d71f1628ff6a",
+      "title": "Spelling Bee Solver - Load Today's Puzzle and See Every Answer",
+      "url": "https://spellsbee.com/solver",
+      "summary": "Drop in today's hive with one tap or type any seven letters, and the solver lists every word this site accepts, scored and grouped by length, with pangrams marked.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 1,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "community"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1641,24 +942,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bb41fa85209a3fc6",
-      "title": "Chinese AI bot",
-      "url": "https://chinese-ai-bot.lovable.app/",
-      "summary": "Lovable Generated Project",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "id": "67b29c8725c9fba6",
+      "title": "Spelling Bee Unlimited - Free Game",
+      "url": "https://spellsbee.com/unlimited",
+      "summary": "Play Spelling Bee in Unlimited mode. Now you have access to more than one game per day. Use the unlimited version to practice finding words.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 1,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "community"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1668,24 +968,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a652de4303d8c1e0",
-      "title": "Dashboard — FlowDesk AI Workplace Assistant",
-      "url": "https://ai-focus-desk.lovable.app/",
-      "summary": "Today's tasks, productivity score and quick AI actions — no account required.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "id": "5cfd25edc63ccf37",
+      "title": "SpellsBee.com Terms of Use",
+      "url": "https://spellsbee.com/terms",
+      "summary": "Terms of Use Overview : SpellsBee.com LLC is located at: SpellsBee.com LLC 279 Tyler Avenue, Ft Lauderdale, Florida, US Welcome to SpellsBee.com! These terms and ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 1,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "community"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1695,24 +994,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "27730e0f8af65bc0",
-      "title": "Lovable Academy — Learn to build with AI",
-      "url": "https://academy.lovable.app/academy",
-      "summary": "Go from idea to working app with AI. Tutorials, templates, and guided learning paths.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "id": "9ca412d62de4356f",
+      "title": "Suggest a Word - SpellsBee Dictionary",
+      "url": "https://spellsbee.com/word-submission",
+      "summary": "Think a word is missing from the game, or that one shouldn't be accepted? Suggest a change and help improve the SpellsBee dictionary.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 1,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "community"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1722,12 +1020,168 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "68141934d154445a",
-      "title": "Priyam Singh — AI Engineer · ML & LLM Developer",
-      "url": "https://priyamsingh.lovable.app/",
-      "summary": "Portfolio of Priyam Singh — AI Engineer building production-ready applications with Large Language Models, Machine Learning, Deep Learning and modern data engineering.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "id": "b2eafa611083c205",
+      "title": "The 50 Best Cake Recipes in the World - i am baker",
+      "url": "https://iambaker.net/cake-recipes/",
+      "summary": "Is there anything better than a perfectly moist CAKE?!? I am sharing 50 of the top Cake Recipes as rated by YOU! Every cake recipe you could want!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9b2c42528f82da0d",
+      "title": "至急です。dodaの採用プロジェクト担当で応募した求人で、担当 ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11329244531",
+      "summary": "至急です。 dodaの採用プロジェクト担当で応募した求人で、担当から面接の日程調整の連絡が来ました。 当初、6/30~7/10で調整をしてくださいとのことで、7/2（木）で依頼をかけたのですが、企業側の都合で7/6（月）以降で再調整してくださいと連絡が来まし ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2c6a87597f67e7a9",
+      "title": "転職について - 先ほどDODAに登録をしました。その10分後に ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1427374489",
+      "summary": "転職について 先ほどDODAに登録をしました。その10分後に早速電話がかかってき、ぜひカウンセリング来てほしいという連絡が入りました。これって、私が登録した内容に合う職があるからでしょうか？転職は希望していますが、今すぐわけではなかったつもりなのですが・・・。同じような ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2822dbafd4136f4e",
+      "title": "転職をしようとdodaの求人に応募したところ、エージェント ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10323502150",
+      "summary": "転職をしようと doda の求人に応募したところ、エージェント？から連日電話とメールが届くのですが、こちらを対応しないと求人に応募できないのでしょうか。 メールの記載は任意っぽい書き方をしてあるけど、文中の※部分を読むと必須にも思えます。 現職に勤務しながらの 転職活動 なの ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "902921abe6f015be",
+      "title": "転職サイトのdodaについてです。dodaの書類選考で選考準備中 ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11326533186",
+      "summary": "転職サイトのdodaについてです。dodaの書類選考で選考準備中から選考中になって選考不採用のメールが届きました、 自分で調べた限り、選考中で落ちるということは、企業側に書類が渡り、不採用になるという内容ですがあっていますでしょうか？AIに聞いたところ、あなたの「選考準備中→ ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e764637b050dff81",
+      "title": "転職活動中です。dodaの採用プロジェクト担当紹介の求人に応募 ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11328206706",
+      "summary": "dodaの採用プロジェクト担当紹介の求人に応募して、選考準備中の段階から選考中にならずにいきなり落選の連絡が来ました。 これは企業の選考ではなく、dodaの中での選考で落とされたということでしょうか。 …続きを読む 転職 | 就職、転職 ・ 2,018 閲覧",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b7c873af4bb1c0e",
+      "title": "Explore \"games\" on Roblox",
+      "url": "https://www.roblox.com/discover?Keyword=games",
+      "summary": "Explore \"games\" on Roblox Search through thousands of Roblox games. Discover high quality experiences across every genre. Join millions of users playing for free!",
+      "discovery_channel": "community",
+      "query": "smart glasses community database",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 1,
@@ -1736,11 +1190,114 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aba5ac62b05646c1",
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "summary": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.",
+      "discovery_channel": "community",
+      "query": "smart glasses community database",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "42825c6bec056d4c",
+      "title": "Roblox",
+      "url": "https://www.roblox.com/pt",
+      "summary": "A Roblox inaugura uma nova geração de entretenimento. Imagine, crie e divirta-se com milhões de pessoas em uma infinita variedade de mundos 3D imersivos gerados pela comunidade.",
+      "discovery_channel": "community",
+      "query": "smart glasses community database",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "285ebc1ae100e943",
+      "title": "Roblox - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=en_US",
+      "summary": "ROBLOX – MILLIONS OF GAMES ACROSS EVERY GENRE. PLAY FREE. Roblox is home to every kind of game, for every kind of player. Compete in high-octane racing games, battle it out in hardcore tactical shooters, or put your survival skills to the test in unpredictable environments. Embark on an epic adventure in immersive RPGs, build massive empires in tycoons, or dive into horror, anime, and sports ...",
+      "discovery_channel": "adjacent+community",
+      "query": "smart glasses community database; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "365f7dfa7f571334",
+      "title": "Roblox Wiki | Fandom",
+      "url": "https://roblox.fandom.com/wiki/Roblox_Wiki",
+      "summary": "The Roblox Wiki is a collaborative wiki and social forum about Roblox that anyone can contribute to. We are the largest growing resource for info on your favorite Roblox experiences, developers, avatar accessories, and more!",
+      "discovery_channel": "community",
+      "query": "smart glasses community database",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
         "sdk",
         "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "sdk",
       "routing_targets": [
         "reject_noise"
       ],
