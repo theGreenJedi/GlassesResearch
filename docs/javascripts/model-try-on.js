@@ -42,14 +42,18 @@
     const rightOuter = landmarks[33];
     const leftOuter = landmarks[263];
     if (!rightOuter || !leftOuter) return;
-    const x1 = 1 - rightOuter.x;
-    const x2 = 1 - leftOuter.x;
-    const y1 = rightOuter.y;
-    const y2 = leftOuter.y;
-    const cx = ((x1 + x2) / 2) * 100;
-    const cy = ((y1 + y2) / 2) * 100 + calibration.yOffset;
-    const dx = (x2 - x1) * video.clientWidth;
-    const dy = (y2 - y1) * video.clientHeight;
+    // Mirroring reverses screen X. Sort the mirrored eye points so roll is
+    // always measured screen-left to screen-right instead of occasionally
+    // producing a 180-degree frame flip.
+    const eyes = [
+      { x: 1 - rightOuter.x, y: rightOuter.y },
+      { x: 1 - leftOuter.x, y: leftOuter.y }
+    ].sort((a, b) => a.x - b.x);
+    const [screenLeft, screenRight] = eyes;
+    const cx = ((screenLeft.x + screenRight.x) / 2) * 100;
+    const cy = ((screenLeft.y + screenRight.y) / 2) * 100 + calibration.yOffset;
+    const dx = (screenRight.x - screenLeft.x) * video.clientWidth;
+    const dy = (screenRight.y - screenLeft.y) * video.clientHeight;
     const eyeDistance = Math.hypot(dx, dy);
     const angle = Math.atan2(dy, dx) * 180 / Math.PI + calibration.rotationOffset;
     glasses.style.left = `${cx}%`;
