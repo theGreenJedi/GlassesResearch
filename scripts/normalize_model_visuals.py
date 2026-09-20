@@ -5,7 +5,7 @@ import argparse, json
 from pathlib import Path
 CANVAS=(1600,900)
 MAX_BOX=(1320,650)
-NORMALIZATION="centered-contain-1600x900-v2"
+NORMALIZATION="centered-contain-1600x900-v3"
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--registry",type=Path,required=True)
