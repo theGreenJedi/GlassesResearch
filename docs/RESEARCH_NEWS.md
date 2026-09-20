@@ -4,15 +4,15 @@
   <div class="gr-newsroom-kicker">GlassesResearch Intelligence Desk</div>
   <p class="gr-newsroom-deck">Verified developments, developing signals, community research and durable analysis — kept in separate evidence lanes so speed never masquerades as verification.</p>
   <div class="gr-newsroom-actions" aria-label="Research and News shortcuts">
-    <a href="#latest-verified">Verified</a>
-    <a href="FEEDS.md#across-the-wire">Across the Wire</a>
-    <a href="community-research/">Community Research</a>
-    <a href="news/ARCHIVE.md">Archive</a>
+    <a href="#current-desk">Verified</a>
+    <a href="../FEEDS/#across-the-wire">Across the Wire</a>
+    <a href="../community-research/">Community Research</a>
+    <a href="../news/ARCHIVE/">Archive</a>
     <a href="https://glassesresearch.org/feed.xml">Verified RSS</a>
   </div>
 </div>
 
-<a class="gr-newsroom-static-feature" href="news/articles/2026-09-19-right-to-repair-smart-glasses.md">
+<a class="gr-newsroom-static-feature" href="../news/articles/2026-09-19-right-to-repair-smart-glasses/">
   <span class="gr-newsroom-kicker">Featured editorial · September 19, 2026</span>
   <strong>You bought the glasses. Can you repair them?</strong>
   <span>A Colorado lawsuit puts a larger ownership question in focus: smart-glasses repairability depends on more than whether the frame can be opened.</span>
