@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+"""Validate canonical presentation imagery before public model pages consume it."""
+from __future__ import annotations
+import argparse, json
+from pathlib import Path
+
+REQUIRED = ("primary_image", "credit", "rights_basis", "retrieved_or_captured", "alt")
+
+def main():
+    p=argparse.ArgumentParser()
+    p.add_argument("--registry",type=Path,required=True)
+    p.add_argument("--root",type=Path,required=True)
+    a=p.parse_args()
+    data=json.loads(a.registry.read_text(encoding="utf-8"))
+    errors=[]
+    for model_id, record in data.get("records",{}).items():
+        state=record.get("state","missing")
+        if state not in {"missing","candidate","cleared","published"}:
+            errors.append(f"{model_id}: invalid state {state!r}")
+            continue
+        if state!="published":
+            continue
+        for field in REQUIRED:
+            if not str(record.get(field,"")).strip():
+                errors.append(f"{model_id}: published visual missing {field}")
+        if not str(record.get("source_url","")).strip() and not str(record.get("original_photo_provenance","")).strip():
+            errors.append(f"{model_id}: published visual needs source_url or original_photo_provenance")
+        image=str(record.get("primary_image",""))
+        if image.startswith(("http://","https://")):
+            errors.append(f"{model_id}: primary_image must be a preserved local site asset, not a hotlink")
+        elif image:
+            local=a.root / image.lstrip("/")
+            if not local.exists():
+                errors.append(f"{model_id}: primary_image does not exist: {image}")
+        try_on=str(record.get("try_on_asset",""))
+        if try_on:
+            if try_on.startswith(("http://","https://")):
+                errors.append(f"{model_id}: try_on_asset must be a preserved local site asset")
+            elif not (a.root / try_on.lstrip("/")).exists():
+                errors.append(f"{model_id}: try_on_asset does not exist: {try_on}")
+    if errors:
+        print("\n".join(errors))
+        raise SystemExit(1)
+    print(f"Validated model visual registry ({len(data.get('records',{}))} records)")
+
+if __name__=="__main__":
+    main()
