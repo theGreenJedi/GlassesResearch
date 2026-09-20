@@ -12,6 +12,12 @@ For manufacturer imagery used editorially, GlassesResearch should use only what 
 
 The legal backdrop is 17 U.S.C. §107's case-specific fair-use analysis. Research, criticism, comment, and news reporting are among the purposes named in the statute, but no single factor—including noncommercial publication—automatically establishes fair use. The site therefore records the publication rationale rather than treating public availability as permission.
 
+## Fair-use research note
+
+The policy is intentionally narrower than "anything public is fair use." Section 107 requires a case-by-case four-factor analysis. The U.S. Copyright Office's Fair Use Index includes both favorable and unfavorable photograph cases, so publication purpose and context matter. Relevant precedents include *Kelly v. Arriba Soft* (search thumbnails; fair use), *Núñez v. Caribbean International News* (published photographs used in news reporting; fair use), and more recent photograph cases where fair use was not found. The operational consequence for GlassesResearch is conservative: prefer manufacturer-owned product-identification imagery tied directly to the model being researched; use one representative image rather than reproducing galleries; keep attribution and source provenance; avoid decorative/lifestyle copying; and document the editorial purpose per asset.
+
+This policy is an editorial risk framework, not legal advice or a guarantee that a court would find any particular use fair.
+
 ## Required record
 
 Each model visual record is keyed by its stable `GLS-####` identifier and records:
