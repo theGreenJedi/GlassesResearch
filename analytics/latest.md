@@ -1,14 +1,14 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-09-19T11:56:02+00:00**
+Generated automatically: **2026-09-20T12:22:09+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-09-11 → 2026-09-17):** 286 impressions, 0 clicks, 0.00% CTR, average position 9.2.
-- **7-day change:** impressions +13.9%; clicks -100.0%.
-- **Rolling 28 days:** 911 impressions, 5 clicks, 0.55% CTR, average position 17.6.
+- **Google, latest final 7 days (2026-09-12 → 2026-09-18):** 349 impressions, 0 clicks, 0.00% CTR, average position 9.2.
+- **7-day change:** impressions +36.3%; clicks -100.0%.
+- **Rolling 28 days:** 964 impressions, 4 clicks, 0.41% CTR, average position 15.7.
 
 ## Google — top queries
 
@@ -17,76 +17,80 @@ Generated automatically: **2026-09-19T11:56:02+00:00**
 | +github nashspence zetronix-lark-zshades-2k zetronix-lark-zshades-2k.py | 0 | 1 | 0.00% | 10.0 |
 | ai glasses timeline | 0 | 2 | 0.00% | 14.5 |
 | ar eyeglass development case study | 0 | 5 | 0.00% | 49.4 |
-| augmented reality timeline | 0 | 1 | 0.00% | 43.0 |
-| glasses datasets | 0 | 1 | 0.00% | 54.0 |
 | google glass timeline | 0 | 1 | 0.00% | 74.0 |
-| inmo air 3 industrial version vs realwear vuzix iristick | 0 | 1 | 0.00% | 61.0 |
+| heycyan sdk | 0 | 1 | 0.00% | 18.0 |
+| inmo air 3 industrial version vs realwear vuzix iristick | 0 | 7 | 0.00% | 15.1 |
+| name brands in smart glasses that have a strong history of consistent product performance over the years. | 0 | 1 | 0.00% | 1.0 |
 | open source ar glasses | 0 | 1 | 0.00% | 48.0 |
-| open source meta glasses | 0 | 7 | 0.00% | 39.6 |
+| open source meta glasses | 0 | 6 | 0.00% | 39.0 |
+| smart glasses startup | 0 | 1 | 0.00% | 49.0 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/ | 0 | 16 | 0.00% | 27.1 |
+| https://glassesresearch.org/ | 0 | 14 | 0.00% | 24.6 |
 | https://glassesresearch.org/FOUNDING_CHARTER/ | 0 | 1 | 0.00% | 4.0 |
 | https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 1 | 0.00% | 8.0 |
-| https://glassesresearch.org/docs/ABOUT/ | 0 | 1 | 0.00% | 3.0 |
-| https://glassesresearch.org/docs/BLE/ | 0 | 3 | 0.00% | 2.7 |
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 25 | 0.00% | 5.2 |
-| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 40 | 0.00% | 15.0 |
+| https://glassesresearch.org/docs/BLE/ | 0 | 1 | 0.00% | 4.0 |
+| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 34 | 0.00% | 6.1 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 67 | 0.00% | 13.1 |
 | https://glassesresearch.org/docs/INSTITUTIONAL_COLLECTIONS/ | 0 | 2 | 0.00% | 2.0 |
-| https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 56 | 0.00% | 6.9 |
+| https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 58 | 0.00% | 6.9 |
 | https://glassesresearch.org/docs/SEO_DISCOVERABILITY/ | 0 | 1 | 0.00% | 5.0 |
+| https://glassesresearch.org/docs/faq/01-basics/ | 0 | 7 | 0.00% | 7.0 |
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **11 browser pageviews**, **8 RUM visits**.
-- Rolling 7d: **139 browser pageviews**, **90 RUM visits**.
+- Rolling 24h: **110 browser pageviews**, **40 RUM visits**.
+- Rolling 7d: **230 browser pageviews**, **124 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
-| /docs/COMPARISON_ENGINE/ | 2 | 0 |
-| /models/catalog/gls-0051/ | 2 | 2 |
-| /models/AnkoCameraGlasses/ | 1 | 1 |
-| /docs/SDK_API_MATRIX/ | 1 | 1 |
-| /docs/RESEARCH_NEWS/ | 1 | 0 |
-| /models/catalog/gls-0232/ | 1 | 1 |
-| /models/PROFILES_2026_09_03_MYVU_STARV/ | 1 | 1 |
-| / | 1 | 1 |
-| /docs/REPORT_CARD/ | 1 | 1 |
+| /docs/COMPARISON_ENGINE/ | 26 | 7 |
+| / | 14 | 5 |
+| /docs/RESEARCH_NEWS/ | 7 | 0 |
+| /models/SolosAirGo/ | 5 | 5 |
+| /models/W610/software/ | 4 | 3 |
+| /docs/CONTRIBUTE/ | 4 | 0 |
+| /models/W610/software/companion-app/ | 3 | 0 |
+| /docs/EVENTS/ | 3 | 0 |
+| /docs/community-research/ | 3 | 0 |
+| /docs/ECOSYSTEM_MAP/ | 3 | 0 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 6 | 6 |
-| glassesresearch.org | 3 | 0 |
-| duckduckgo.com | 2 | 2 |
+| glassesresearch.org | 70 | 0 |
+| (direct / none) | 23 | 23 |
+| chatgpt.com | 15 | 15 |
+| duckduckgo.com | 1 | 1 |
+| www.google.com | 1 | 1 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **10,794 requests**, **1,927 HTTP visits**, **127.1 MB** served.
-- Rolling 7d: **52,363 requests**, **10,362 HTTP visits**, **903.0 MB** served.
+- Rolling 24h: **12,324 requests**, **1,975 HTTP visits**, **192.0 MB** served.
+- Rolling 7d: **60,897 requests**, **11,477 HTTP visits**, **999.9 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 9,087 | 1,726 |
-| CA | 632 | 51 |
-| DE | 235 | 5 |
-| SE | 129 | 5 |
-| AU | 126 | 3 |
-| SG | 121 | 56 |
-| FI | 95 | 3 |
-| T1 | 70 | 0 |
-| BO | 65 | 1 |
-| CO | 55 | 0 |
+| US | 8,532 | 1,691 |
+| T1 | 1,258 | 0 |
+| CN | 478 | 18 |
+| BR | 414 | 17 |
+| NL | 390 | 9 |
+| DE | 165 | 11 |
+| CA | 158 | 114 |
+| EC | 136 | 0 |
+| CO | 128 | 1 |
+| GB | 99 | 0 |
 
 ## What to watch
 
