@@ -21,9 +21,7 @@ jobs:
         run: |
           import json, pathlib, urllib.request
           items = {
-            "GLS-0098": ("https://cdn.shopify.com/s/files/1/0014/0342/0765/files/M400_Main_Product_Image.png", "png"),
-            "GLS-0056": ("https://cdn.shopify.com/s/files/1/0014/0342/0765/files/Z100_Main_Product_Image.png", "png"),
-            "GLS-0121": ("https://cdn.shopify.com/s/files/1/0014/0342/0765/files/Shield_Main_Product_Image.png", "png"),
+            "GLS-0056": ("https://es.vuzix.com/cdn/shop/files/Z100-Untinted-Press_Release_1800x1800.png?v=1704463973", "png"),
           }
           root=pathlib.Path(".")
           out=root/"images/models/original"; out.mkdir(parents=True,exist_ok=True)
@@ -47,5 +45,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images/models/original data/model-visuals.json
-          git commit -m "Acquire governed Vuzix presentation originals"
+          git commit -m "Acquire verified Vuzix Z100 presentation original"
           git push origin HEAD:presentation-mission
