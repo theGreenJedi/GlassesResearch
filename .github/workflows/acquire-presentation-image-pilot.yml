@@ -21,7 +21,7 @@ jobs:
         run: |
           import json, pathlib, urllib.request
           items = {
-            "GLS-0001": ("https://about.fb.com/wp-content/uploads/2021/09/Ray-Ban-Stories-Product.jpg", "jpg"),
+            "GLS-0103": ("https://shop.realwear.com/cdn/shop/files/127127_0.png?v=1779278187&width=3840", "png"),
           }
           root=pathlib.Path(".")
           out=root/"images/models/original"; out.mkdir(parents=True,exist_ok=True)
@@ -45,5 +45,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images/models/original data/model-visuals.json
-          git commit -m "Acquire Ray-Ban Stories presentation original"
+          git commit -m "Acquire RealWear Navigator 500 presentation original"
           git push origin HEAD:presentation-mission
