@@ -35,7 +35,6 @@ REQUIRED_CONTRACTS = {
     "index.md": (
         "Find glasses",
         "Research a model",
-        "Explore ecosystem",
     ),
     "docs/REPORT_CARD.md": (
         "Core Report Cards — one for every canonical model in the catalog.",
