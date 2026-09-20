@@ -5,6 +5,14 @@ import argparse, json
 from pathlib import Path
 
 REQUIRED = ("primary_image", "credit", "rights_basis", "retrieved_or_captured", "alt")
+RIGHTS_BASES = {
+    "original-photography",
+    "licensed",
+    "manufacturer-press-media",
+    "manufacturer-editorial-use",
+    "open-license",
+    "public-domain",
+}
 
 def main():
     p=argparse.ArgumentParser()
@@ -35,6 +43,14 @@ def main():
                 errors.append(f"{model_id}: published visual missing {field}")
         if not str(record.get("source_url","")).strip() and not str(record.get("original_photo_provenance","")).strip():
             errors.append(f"{model_id}: published visual needs source_url or original_photo_provenance")
+        rights_basis=str(record.get("rights_basis","")).strip()
+        if rights_basis not in RIGHTS_BASES:
+            errors.append(f"{model_id}: published visual has unsupported rights_basis {rights_basis!r}")
+        if rights_basis == "manufacturer-editorial-use":
+            if not str(record.get("source_url","")).strip():
+                errors.append(f"{model_id}: manufacturer-editorial-use requires source_url")
+            if not str(record.get("editorial_purpose","")).strip():
+                errors.append(f"{model_id}: manufacturer-editorial-use requires editorial_purpose")
         image=str(record.get("primary_image",""))
         if image.startswith(("http://","https://")):
             errors.append(f"{model_id}: primary_image must be a preserved local site asset, not a hotlink")
