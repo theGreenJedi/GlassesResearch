@@ -4,7 +4,7 @@ Things you can use to compare, investigate, develop, repair, or work with smart 
 
 ## Compare and check
 
-The Finder supports **verified price ceilings** and **Report Card minimum scores**. Every canonical model retains a **six-subject Core Report Card**, with **Extended Research** available where deeper evidence has been published.
+The Finder supports **verified price ceilings** and **Report Card minimum scores**. GlassesResearch maintains **six-subject Core Report Cards for every canonical model**, with **Extended Research** available where deeper evidence has been published.
 
 
 - [**Glasses Finder & Compare**](COMPARISON_ENGINE.md) — filter the catalog, build a shortlist, and compare models.
