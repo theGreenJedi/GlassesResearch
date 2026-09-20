@@ -50,7 +50,7 @@ def main():
     run(ROOT/"scripts/build_report_card_freshness.py","--scores",cards,"--comparisons",comparisons,"--overrides",ROOT/"data/core-report-card-overrides.json","--output-scores",cards,"--output",freshness,"--page-output",DEST/"docs/REPORT_CARD_FRESHNESS.md")
     run(ROOT/"scripts/build_site_status.py","--devices",database,"--report-cards",cards,"--output",DEST/"data/site-status.json","--homepage",DEST/"index.md")
     run(ROOT/"scripts/build_purchase_fallbacks.py","--models",ROOT/"models/THE_LIST.md","--curated",ROOT/"data/purchase-sources.json","--output",DEST/"data/purchase-fallbacks.json")
-    run(ROOT/"scripts/verify_model_visuals.py","--registry",ROOT/"data/model-visuals.json","--root",ROOT)
+    run(ROOT/"scripts/verify_model_visuals.py","--registry",ROOT/"data/model-visuals.json","--root",ROOT,"--models",ROOT/"models/THE_LIST.md")
     run(ROOT/"scripts/build_model_pages.py","--data-dir",DEST/"data","--output-root",DEST)
     run(ROOT/"scripts/attach_model_research.py","--site-root",DEST)
     run(ROOT/"scripts/build_gls_resolver.py","--devices",database,"--output-root",DEST)
