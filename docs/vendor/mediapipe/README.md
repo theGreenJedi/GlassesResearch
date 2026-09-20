@@ -19,3 +19,21 @@ Try-on is a visual appearance preview. It must not claim optical, prescription, 
 ## Dependency publication gate
 
 Do not copy third-party runtime files into this repository until their exact version, upstream source, license, integrity hash, and redistribution basis have been recorded. Until then, model try-on assets remain unpublished and no visitor is offered a broken or privacy-weakened try-on button.
+
+
+## Publication hold — telemetry and artifact provenance
+
+**Do not publish this runtime yet.** Current upstream MediaPipe privacy documentation states that MediaPipe Tasks sends performance and utilization metrics to Google and places informed-consent responsibilities on the integrating application. That conflicts with GlassesResearch's no-tracking requirement for camera activation unless a specific Web build can be independently verified to make no third-party requests.
+
+Self-hosting the JavaScript, WASM, and task model is therefore necessary but not sufficient.
+
+Before this directory may contain an enabled production runtime, record and verify all of the following:
+
+1. exact Web package/runtime version and immutable upstream source;
+2. exact model artifact provenance and redistribution basis;
+3. SHA-256 hashes for every shipped JS/WASM/model artifact;
+4. a network test demonstrating zero third-party requests during initialization, camera use, tracking, and shutdown;
+5. the license notices required for redistribution;
+6. an explicit GlassesResearch approval record naming the tested artifacts and date.
+
+If the stock Web runtime cannot meet the zero-third-party-request requirement, use a different locally executed landmark implementation or a reproducible telemetry-free build. Do not weaken the site's privacy promise to accommodate the library.
