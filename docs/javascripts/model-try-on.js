@@ -36,7 +36,7 @@
     return faceLandmarker;
   };
 
-  const placeAsset = (video, glasses, landmarks) => {
+  const placeAsset = (video, glasses, landmarks, calibration) => {
     // MediaPipe canonical outer-eye landmarks. Coordinates are normalized to
     // the unmirrored camera frame; the preview is mirrored, so X is inverted.
     const rightOuter = landmarks[33];
@@ -47,19 +47,19 @@
     const y1 = rightOuter.y;
     const y2 = leftOuter.y;
     const cx = ((x1 + x2) / 2) * 100;
-    const cy = ((y1 + y2) / 2) * 100;
+    const cy = ((y1 + y2) / 2) * 100 + calibration.yOffset;
     const dx = (x2 - x1) * video.clientWidth;
     const dy = (y2 - y1) * video.clientHeight;
     const eyeDistance = Math.hypot(dx, dy);
-    const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+    const angle = Math.atan2(dy, dx) * 180 / Math.PI + calibration.rotationOffset;
     glasses.style.left = `${cx}%`;
     glasses.style.top = `${cy}%`;
-    glasses.style.width = `${Math.max(80, eyeDistance * 2.25)}px`;
+    glasses.style.width = `${Math.max(80, eyeDistance * calibration.scale)}px`;
     glasses.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
     glasses.hidden = false;
   };
 
-  const track = async (video, glasses, status) => {
+  const track = async (video, glasses, status, calibration) => {
     let tracker;
     try {
       tracker = await ensureLandmarker();
@@ -76,7 +76,7 @@
       try {
         const result = tracker.detectForVideo(video, performance.now());
         const face = result?.faceLandmarks?.[0];
-        if (face) placeAsset(video, glasses, face);
+        if (face) placeAsset(video, glasses, face, calibration);
         else glasses.hidden = true;
       } catch (_) {}
       animationFrame = requestAnimationFrame(render);
@@ -87,6 +87,11 @@
   const openTryOn = async (root) => {
     const asset = root.dataset.asset;
     if (!asset) return;
+    const calibration = {
+      scale: Number(root.dataset.scale || 2.25),
+      yOffset: Number(root.dataset.yOffset || 0),
+      rotationOffset: Number(root.dataset.rotationOffset || 0)
+    };
     let dialog = root.querySelector('.gr-try-on-dialog');
     if (!dialog) {
       dialog = document.createElement('dialog');
@@ -124,7 +129,7 @@
       });
       video.srcObject = stream;
       await video.play();
-      track(video, glasses, status);
+      track(video, glasses, status, calibration);
     } catch (error) {
       stop();
       status.textContent = error?.name === 'NotAllowedError'
