@@ -64,12 +64,12 @@ jobs:
           pip install -r requirements-docs.txt
           python scripts/normalize_model_visuals.py --registry data/model-visuals.json --root . --output-root .site-image-pilot
           python scripts/verify_model_visuals.py --registry .site-image-pilot/data/model-visuals.json --root .site-image-pilot --models models/THE_LIST.md
-          python scripts/build_visual_contact_sheet.py
+          python scripts/build_visual_contact_sheet.py\n          python scripts/audit_presentation_geometry.py
       - name: Commit candidate originals
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images/models/original data/model-visuals.json research/visual-audits/presentation-contact-sheet.jpg
+          git add images/models/original data/model-visuals.json research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-geometry-audit.md
           if git diff --cached --quiet; then
             echo "No new candidate images"
             exit 0
