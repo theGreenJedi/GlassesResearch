@@ -13,6 +13,8 @@
 | [CyanBridge / Alternative HeyCyan App and SDK](cyanbridge.md) | HeyCyan-compatible glasses and experimental multi-vendor interoperability | Alternative companion software and reusable owner-facing interoperability. |
 | [BimaPDev / SmartGlasses](bimapdev-smartglasses.md) | Meizu MYVU / StarV Air / XGA010C firmware | Hardware-tested firmware research into execution, storage, BLE transfer, and boot behavior. |
 
+[**Browse the broader Community Directory**](../resources/COMMUNITY_AND_DEVELOPMENT.md) — forums, repositories, developer communities, and other public community resources.
+
 ## Evidence rule
 
 A project's own claims remain attributed community evidence unless GlassesResearch separately reproduces them. Experimental, partial, inferred, or unverified capabilities must remain labeled as such. Community inclusion does not automatically change a model's Verified status, Report Card scores, or canonical specifications.
