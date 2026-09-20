@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse, json
 from pathlib import Path
 
-REQUIRED = ("primary_image", "credit", "rights_basis", "retrieved_or_captured", "alt")
+REQUIRED = ("primary_image", "credit", "rights_basis", "retrieved_or_captured", "alt", "original_image", "normalization")
 RIGHTS_BASES = {
     "original-photography",
     "licensed",
@@ -51,6 +51,11 @@ def main():
                 errors.append(f"{model_id}: manufacturer-editorial-use requires source_url")
             if not str(record.get("editorial_purpose","")).strip():
                 errors.append(f"{model_id}: manufacturer-editorial-use requires editorial_purpose")
+        original=str(record.get("original_image",""))
+        if original.startswith(("http://","https://")):
+            errors.append(f"{model_id}: original_image must be locally preserved")
+        elif original and not (a.root / original.lstrip("/")).exists():
+            errors.append(f"{model_id}: original_image does not exist: {original}")
         image=str(record.get("primary_image",""))
         if image.startswith(("http://","https://")):
             errors.append(f"{model_id}: primary_image must be a preserved local site asset, not a hotlink")
