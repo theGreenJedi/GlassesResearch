@@ -1,6 +1,7 @@
-name: Acquire presentation image pilot
+name: Acquire candidate presentation images
 
 on:
+  workflow_dispatch:
   push:
     branches: [presentation-mission]
     paths:
@@ -16,40 +17,61 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: presentation-mission
-      - name: Acquire governed manufacturer originals
+      - name: Discover manufacturer page images
         shell: python
         run: |
-          import json, pathlib, urllib.request
-          items = {
-            "GLS-0068": ("https://images.ctfassets.net/o1znirz7lzo4/2McB2LNo526D1eHfxqAJQq/d474131f1115255b908c5bcf5c0b2309/Spectacles_Black_BG.png?fm=png&w=1600&q=90", "png"),
-          }
+          import json, pathlib, urllib.request, urllib.parse, re
           root=pathlib.Path(".")
           out=root/"images/models/original"; out.mkdir(parents=True,exist_ok=True)
           regp=root/"data/model-visuals.json"; data=json.loads(regp.read_text())
-          for mid,(url,ext) in items.items():
-            path=out/f"{mid.lower()}.{ext}"
-            req=urllib.request.Request(url,headers={"User-Agent":"GlassesResearch/1.0 editorial research"})
-            with urllib.request.urlopen(req,timeout=45) as r: path.write_bytes(r.read())
-            rec=data["records"][mid]
-            rec["original_image"]="/"+str(path).replace("\\","/")
-            rec["source_asset_url"]=url
-            rec["state"]="cleared"
+          success=[]; failed=[]
+          for mid,rec in data["records"].items():
+            if rec.get("state")!="candidate" or rec.get("original_image"): continue
+            page=rec.get("source_url","")
+            if not page: continue
+            try:
+              req=urllib.request.Request(page,headers={"User-Agent":"Mozilla/5.0 GlassesResearch editorial research"})
+              html=urllib.request.urlopen(req,timeout=30).read().decode("utf-8","ignore")
+              pats=[
+                r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+                r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)'
+              ]
+              image=None
+              for pat in pats:
+                m=re.search(pat,html,re.I)
+                if m: image=urllib.parse.urljoin(page,m.group(1).replace("&amp;","&")); break
+              if not image: raise RuntimeError("no og:image")
+              req=urllib.request.Request(image,headers={"User-Agent":"Mozilla/5.0 GlassesResearch editorial research","Referer":page})
+              with urllib.request.urlopen(req,timeout=45) as resp:
+                blob=resp.read(); ctype=resp.headers.get_content_type()
+              if not ctype.startswith("image/") or len(blob)<5000: raise RuntimeError(f"bad image {ctype} {len(blob)}")
+              ext={"image/jpeg":"jpg","image/png":"png","image/webp":"webp"}.get(ctype)
+              if not ext: raise RuntimeError(f"unsupported {ctype}")
+              path=out/f"{mid.lower()}.{ext}"; path.write_bytes(blob)
+              rec["original_image"]="/"+str(path).replace("\\","/")
+              rec["source_asset_url"]=image
+              rec["acquisition_note"]=(rec.get("acquisition_note","")+" Candidate image auto-discovered from manufacturer-controlled page metadata; requires visual QA before clearance.").strip()
+              success.append(mid)
+            except Exception as e:
+              failed.append((mid,str(e)))
+              print(f"::warning::{mid}: {e}")
           regp.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
-      - name: Validate acquired originals
+          print("ACQUIRED",len(success),success)
+          print("FAILED",len(failed),failed)
+      - name: Validate candidate originals
         run: |
           pip install -r requirements-docs.txt
           python scripts/normalize_model_visuals.py --registry data/model-visuals.json --root . --output-root .site-image-pilot
           python scripts/verify_model_visuals.py --registry .site-image-pilot/data/model-visuals.json --root .site-image-pilot --models models/THE_LIST.md
-      - name: Commit acquired originals
+      - name: Commit candidate originals
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images/models/original data/model-visuals.json
           if git diff --cached --quiet; then
-            echo "No new acquisition changes to commit"
+            echo "No new candidate images"
             exit 0
           fi
-          git commit -m "Acquire governed presentation originals"
+          git commit -m "Acquire manufacturer-page candidate presentation images"
           git push origin HEAD:presentation-mission
-
-# acquisition-trigger: huawei-eyewear-2
