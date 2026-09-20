@@ -283,8 +283,38 @@ def main() -> None:
             related += [x for x in records if x["id"] != r["id"] and x["type"] == r["type"] and x not in related]
         page = model_page(r, profile_map[r["id"]], comparison_map.get(r["id"]), cap_map[r["id"]], score_map.get(r["id"]), labels, score_labels, related, visuals.get(r["id"]))
         (catalog / f"{r['id'].lower()}.md").write_text(page, encoding="utf-8")
-    index_rows = "\n".join(f"| [{r['maker']} {r['model']}]({r['public']['model_page']}) | {r['id']} | {r['era']} | {r['state']} | {r['type']} |" for r in records)
-    (catalog / "index.md").write_text(f"# Canonical smart-glasses model pages\n\nAll {len(records)} individually indexable model records. Each page preserves the stable GLS identity and separates verified facts from unknowns.\n\n[Use the Finder](/docs/COMPARISON_ENGINE/) · [Read the search-intent guides](/guides/) · [View the canonical ledger](/models/THE_LIST/)\n\n| Model | ID | Era | Status | Type |\n|---|---|---:|---|---|\n{index_rows}\n", encoding="utf-8")
+    cards = []
+    for r in records:
+        visual = visuals.get(r["id"], {})
+        image = ""
+        if visual.get("state") == "published" and visual.get("primary_image"):
+            alt = visual.get("alt", f"{r['maker']} {r['model']} smart glasses")
+            image = f'<img class="gr-model-card__image" src="{visual["primary_image"]}" alt="{alt}" loading="lazy" decoding="async">'
+        else:
+            image = '<div class="gr-model-card__placeholder" aria-hidden="true"><span>GLASSES</span></div>'
+        cards.append(f"""<a class="gr-model-card" href="{r['public']['model_page']}">
+  <div class="gr-model-card__media">{image}</div>
+  <div class="gr-model-card__body">
+    <span class="gr-model-card__maker">{r['maker']}</span>
+    <strong>{r['model']}</strong>
+    <span>{r['state']} · {r['type']}</span>
+  </div>
+</a>""")
+    (catalog / "index.md").write_text(f"""---
+title: "Smart-glasses models"
+description: "Browse the GlassesResearch canonical smart-glasses catalog visually, then open the evidence behind any model."
+---
+
+# Smart-glasses models
+
+Browse {len(records)} canonical models. Choose the object first; GlassesResearch exposes the evidence, specifications, provenance, and research depth after you open it.
+
+<div class="gr-model-grid">
+{chr(10).join(cards)}
+</div>
+
+[Find & compare glasses](/docs/COMPARISON_ENGINE/) · [Use-case guides](/guides/) · [Canonical identity ledger](/models/THE_LIST/)
+""", encoding="utf-8")
     guide_dir = args.output_root / "guides"
     guide_dir.mkdir(parents=True, exist_ok=True)
     guide_links = []
