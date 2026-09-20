@@ -5,6 +5,7 @@ import argparse, json
 from pathlib import Path
 CANVAS=(1600,900)
 MAX_BOX=(1320,650)
+NORMALIZATION="centered-contain-1600x900-v2"
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--registry",type=Path,required=True)
@@ -31,6 +32,10 @@ def main():
         out.parent.mkdir(parents=True,exist_ok=True)
         with Image.open(src) as im:
             im=im.convert("RGBA")
+            alpha=im.getchannel("A")
+            bbox=alpha.getbbox()
+            if bbox:
+                im=im.crop(bbox)
             im.thumbnail(MAX_BOX,Image.Resampling.LANCZOS)
             canvas=Image.new("RGBA",CANVAS,(0,0,0,0))
             x=(CANVAS[0]-im.width)//2
@@ -38,7 +43,7 @@ def main():
             canvas.alpha_composite(im,(x,y))
             canvas.save(out,optimize=True)
         record["primary_image"]="/"+out_rel
-        record["normalization"]="centered-contain-1600x900-v1"
+        record["normalization"]=NORMALIZATION
         made+=1
     if a.write_registry and made:
         a.registry.write_text(json.dumps(data,indent=2)+"\n",encoding="utf-8")
