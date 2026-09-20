@@ -4,4 +4,4 @@ Community Research is a public-facing editorial/research category for attributed
 
 It does not alter Verified-news promotion rules. Community repository claims remain attributed unless separately reproduced and verified by GlassesResearch.
 
-[Browse retained findings by model](/research/community-research/by-model/)
+[Browse retained findings by model](/docs/community-research/by-model/)
