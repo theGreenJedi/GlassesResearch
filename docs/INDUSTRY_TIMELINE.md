@@ -65,7 +65,7 @@ Snap OS, Android XR, vendor SDKs, community software, and open-hardware projects
 
 - [Browse the canonical smart-glasses model catalog](/models/THE_LIST/)
 - [Compare models in the Glasses Finder](/docs/COMPARISON_ENGINE/)
-- [Read the ecosystem map](/docs/ECOSYSTEM_MAP/)
+- [Trace technology lineages](/lineages/)
 - [Explore Bluetooth and BLE research](/docs/BLE/)
 - [Explore firmware research](/docs/Firmware/)
 - [See the evidence standard used by GlassesResearch](/docs/EVIDENCE_STANDARD/)

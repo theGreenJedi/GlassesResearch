@@ -11,9 +11,8 @@ Find information in GlassesResearch.
 
 - [**GlassesResearch Report Cards**](REPORT_CARD.md) — Core Report Cards and deeper Extended Research.
 
-## Ecosystem
+## Relationships & dependencies
 
-- [**Ecosystem relationship map**](ECOSYSTEM_MAP.md) — connections among models, lineages, apps, platforms, SDKs, protocols, services, and communities.
 - [**Technology lineages**](../lineages/README.md) — OEM, rebrand, firmware, app, and platform relationships.
 - [**Companion App Database**](COMPANION_APP_DATABASE.md) — pairing, firmware, accounts, AI, media, and survivability research.
 - [**Survival / Cloud-Independence Matrix**](SURVIVAL_MATRIX.md) — app, account, AI-service, and cloud-independence research.
