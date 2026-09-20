@@ -335,6 +335,12 @@ Browse {len(records)} canonical models. Choose the object first; GlassesResearch
     visual_report = args.output_root / "research" / "MODEL_VISUAL_COVERAGE.md"
     visual_report.parent.mkdir(parents=True, exist_ok=True)
     published_visuals = len(records) - len(missing_visuals)
+    try_on_ready = sum(
+        1 for r in records
+        if visuals.get(r["id"], {}).get("state") == "published"
+        and visuals.get(r["id"], {}).get("try_on_asset")
+    )
+    report_card_visuals = published_visuals
     missing_rows = "\n".join(f"| {r['id']} | {r['maker']} | {r['model']} | {r['state']} |" for r in missing_visuals)
     visual_report.write_text(f"""# Model visual coverage
 
@@ -342,9 +348,11 @@ Generated from the canonical catalog and `data/model-visuals.json`.
 
 - Canonical models: **{len(records)}**
 - Published, rights-cleared primary images: **{published_visuals}**
+- Core/extended Report Card sections eligible for governed imagery: **{report_card_visuals}**
+- Published model-specific try-on assets: **{try_on_ready}**
 - Still requiring cleared primary imagery: **{len(missing_visuals)}**
 
-A model is counted as covered only when its registry state is `published` and a primary image is present. Candidate URLs and unverified redistribution rights do not count.
+A model is counted as visually covered only when its registry state is `published` and a primary image is present. The same governed image is then available to canonical model pages, the visual catalog, the Core Report Card directory, and staged deep Report Card sections. A try-on asset is counted separately and must be model-specific. Candidate URLs and unverified redistribution rights do not count.
 
 | ID | Maker | Model | Status |
 |---|---|---|---|
