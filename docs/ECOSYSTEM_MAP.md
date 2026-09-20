@@ -2,6 +2,20 @@
 
 Smart glasses are rarely isolated products. They sit inside a stack of platforms, apps, SDKs, transports, services, lineages, and community projects. This surface lets you see that stack as a living system instead of a table of links.
 
+## Explore an ecosystem
+
+Follow documented relationships between glasses, hardware lineages, software, platforms, services, and community projects.
+
+| Ecosystem | Hardware starting points | Connected layers | Research path |
+|---|---|---|---|
+| HeyCyan | Anko Camera Glasses; W610 | lineage, software platform, companion app, CyanBridge community project | [HeyCyan lineage](../lineages/HEYCYAN.md) |
+| Shenzhen reference-platform / manufacturing provenance | W610 and recurring V821/V821L2 camera-glasses families | silicon, solution houses, ODM/factory leads, app operators, commercial suppliers, rebrands | [Supply-chain investigation](SHENZHEN_SMART_GLASSES_SUPPLY_CHAIN.md) |
+| Solos | AirGo V2 | AirGo lineage, Solos SDK, BLE control | [Solos lineage](../lineages/SOLOS.md) |
+| Even Realities | G2 | Even companion application, cloud AI and translation services | [G2 model research](../models/EvenG2/README.md) |
+| Mentra | Mentra Live | MentraOS, SDK, BLE transport, Mentra Community | [Mentra Live in the canonical ledger](../models/THE_LIST.md) |
+
+## Trace relationships
+
 <div class="gr-ecosystem-shell" data-ecosystem-constellation>
   <header class="gr-ecosystem-head">
     <p class="gr-kicker">Ecosystem map</p>
@@ -33,17 +47,7 @@ Smart glasses are rarely isolated products. They sit inside a stack of platforms
   </div>
 </div>
 
-## Seeded ecosystems
-
-| Ecosystem | Hardware starting points | Connected layers | Research path |
-|---|---|---|---|
-| HeyCyan | Anko Camera Glasses; W610 | lineage, software platform, companion app, CyanBridge community project | [HeyCyan lineage](../lineages/HEYCYAN.md) |
-| Shenzhen reference-platform / manufacturing provenance | W610 and recurring V821/V821L2 camera-glasses families | silicon, solution houses, ODM/factory leads, app operators, commercial suppliers, rebrands | [Supply-chain investigation](SHENZHEN_SMART_GLASSES_SUPPLY_CHAIN.md) |
-| Solos | AirGo V2 | AirGo lineage, Solos SDK, BLE control | [Solos lineage](../lineages/SOLOS.md) |
-| Even Realities | G2 | Even companion application, cloud AI and translation services | [G2 model research](../models/EvenG2/README.md) |
-| Mentra | Mentra Live | MentraOS, SDK, BLE transport, Mentra Community | [Mentra Live in the canonical ledger](../models/THE_LIST.md) |
-
-## Evidence rules
+## How this map works
 
 **Established** means cited evidence directly supports the edge. **Inferred** means multiple clues support it but direct confirmation is incomplete. **Unresolved** records a material hypothesis without presenting it as fact. Confidence expresses the strength of the current support independently of whether the source is primary, independent, community-produced, or hands-on.
 
