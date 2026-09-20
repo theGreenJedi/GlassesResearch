@@ -4,6 +4,9 @@ Things you can use to compare, investigate, develop, repair, or work with smart 
 
 ## Compare and check
 
+The Finder supports **verified price ceilings** and **Report Card minimum scores**. Every canonical model retains a **six-subject Core Report Card**, with **Extended Research** available where deeper evidence has been published.
+
+
 - [**Glasses Finder & Compare**](COMPARISON_ENGINE.md) — filter the catalog, build a shortlist, and compare models.
 - [**Host Compatibility**](HOST_COMPATIBILITY.md) — check transport, power, adapter, software, and operating-mode evidence for glasses/host combinations.
 - [**SDK / API Compatibility Matrix**](SDK_API_MATRIX.md) — check documented access to displays, cameras, audio, sensors, transports, and custom AI integration.
