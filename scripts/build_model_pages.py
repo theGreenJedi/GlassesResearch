@@ -332,7 +332,8 @@ Browse {len(records)} canonical models. Choose the object first; GlassesResearch
 
 [Find & compare glasses](/docs/COMPARISON_ENGINE/) · [Use-case guides](/guides/) · [Canonical identity ledger](/models/THE_LIST/)
 """, encoding="utf-8")
-    visual_report = ROOT / "research" / "MODEL_VISUAL_COVERAGE.md"
+    visual_report = args.output_root / "research" / "MODEL_VISUAL_COVERAGE.md"
+    visual_report.parent.mkdir(parents=True, exist_ok=True)
     published_visuals = len(records) - len(missing_visuals)
     missing_rows = "\n".join(f"| {r['id']} | {r['maker']} | {r['model']} | {r['state']} |" for r in missing_visuals)
     visual_report.write_text(f"""# Model visual coverage
