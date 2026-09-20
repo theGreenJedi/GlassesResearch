@@ -171,6 +171,10 @@ def build(payload: dict, editorial_lead: dict | None = None) -> dict:
     ordered = sorted(events, key=lambda e: stamp(e["publication"]["published_at"]), reverse=True)
     latest_at = ordered[0]["publication"]["published_at"] if ordered else None
     automatic_lead = choose_lead(events) if events else None
+    lead = editorial_lead or automatic_lead
+    if editorial_lead and automatic_lead:
+        if stamp(automatic_lead["published_at"]) > stamp(editorial_lead["published_at"]):
+            lead = automatic_lead
     return {
         "schema_version": 1,
         "derived_from": "data/verified-changes.json",
