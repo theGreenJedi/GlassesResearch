@@ -10,10 +10,20 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument("--registry",type=Path,required=True)
     p.add_argument("--root",type=Path,required=True)
+    p.add_argument("--models",type=Path)
     a=p.parse_args()
     data=json.loads(a.registry.read_text(encoding="utf-8"))
     errors=[]
-    for model_id, record in data.get("records",{}).items():
+    records=data.get("records",{})
+    if a.models:
+        import re
+        canonical=set(re.findall(r"^\|\s*(GLS-\d{4})\s*\|",a.models.read_text(encoding="utf-8"),re.MULTILINE))
+        registered=set(records)
+        for model_id in sorted(canonical-registered):
+            errors.append(f"{model_id}: missing canonical visual registry record")
+        for model_id in sorted(registered-canonical):
+            errors.append(f"{model_id}: visual registry record is not a canonical model")
+    for model_id, record in records.items():
         state=record.get("state","missing")
         if state not in {"missing","candidate","cleared","published"}:
             errors.append(f"{model_id}: invalid state {state!r}")
@@ -47,7 +57,7 @@ def main():
     if errors:
         print("\n".join(errors))
         raise SystemExit(1)
-    print(f"Validated model visual registry ({len(data.get('records',{}))} records)")
+    print(f"Validated model visual registry ({len(records)} records)")
 
 if __name__=="__main__":
     main()
