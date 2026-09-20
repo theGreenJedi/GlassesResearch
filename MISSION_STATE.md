@@ -6,10 +6,10 @@ Draft PR: #624
 Expected canonical count: 246
 
 ## Current workstream and step
-WS0 — Baseline and inventory — reconstructing and saving the pre-presentation baseline before further restructuring. Existing presentation work predates this state file and remains on the branch; do not treat it as accepted until the ordered workstreams validate it.
+WS0 — Baseline and inventory — stack/contracts baseline saved; next step is generating a reproducible baseline built-route inventory and route diff.
 
 ## Workstream checklist
-- WS0 Baseline and inventory — **in progress**. Stack/CI inventory captured; baseline route/contracts artifacts still required.
+- WS0 Baseline and inventory — **in progress**. Contracts baseline saved at `research/PRESENTATION_BASELINE_CONTRACTS.md`; route ledger started at `research/PRESENTATION_ROUTE_LEDGER.md`; reproducible baseline built-route inventory still required.
 - WS1 Information architecture — **in progress**. Five primary entrances implemented; route ledger not yet proven zero-unmapped.
 - WS2 Hide MkDocs implementation — **in progress**. Custom public shell exists; desktop/phone acceptance not yet evidenced.
 - WS3 Visual registry and provenance — **in progress**. 246 registry records now explicit; validator enforces canonical membership and published provenance.
@@ -47,8 +47,8 @@ Generated 2026-09-20 from canonical `models/THE_LIST.md` and registry synchroniz
 Do not use the pending values as counts.
 
 ## Route ledger
-Planned tracked artifact: `research/PRESENTATION_ROUTE_LEDGER.md`
-Last verified: not yet. WS0 must establish baseline before WS1 acceptance.
+Tracked artifact: `research/PRESENTATION_ROUTE_LEDGER.md`
+Created 2026-09-20 from the baseline navigation contract. Full built-route baseline/status verification is still pending.
 
 ## Baseline / contracts
 Baseline commit for the presentation mission: `50b6267ad6e2e43d68c4c240182816cd53fbe3b2` (PR #624 base).
@@ -76,6 +76,10 @@ Known critical contracts to baseline explicitly in WS0:
 - Self-hosted try-on runtime/model absent by design. Status: blocked pending license/source/redistribution/hash verification.
 - Registry imagery coverage is currently content-incomplete; exact deficit must come from saved WS11 audit.
 - PR remains draft; do not merge until Definition of Done is evidenced.
+
+## WS0 evidence
+- `research/PRESENTATION_BASELINE_CONTRACTS.md` records critical pre-presentation plumbing contracts from baseline commit `50b6267...`.
+- `research/PRESENTATION_ROUTE_LEDGER.md` records the nine baseline top-level entrances and their mapping into the five presentation entrances; full generated-route inventory remains pending.
 
 ## Validation record
 2026-09-20 — head `5d2328b9852510a11b30e3e9c8b49249b195d0cf`: GitHub Actions completed successfully for Deploy documentation site, Daily whole-site link review, Lighthouse performance, Finder consistency, Catalog consistency, Newsroom presentation contract, Follow surface contract, Feed reader live smoke test, and Validate Community Review Intake.
