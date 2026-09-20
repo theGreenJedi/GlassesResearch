@@ -117,8 +117,23 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
     visual_html = ""
     if visual.get("state") == "published" and visual.get("primary_image"):
         alt = visual.get("alt", f"{record['maker']} {record['model']} smart glasses")
+        credit = visual.get("credit", "")
+        source_url = visual.get("source_url", "")
+        rights = visual.get("rights_basis", "")
+        credit_bits = []
+        if credit:
+            credit_bits.append(credit)
+        if rights:
+            credit_bits.append(rights)
+        credit_text = " · ".join(credit_bits)
+        if source_url and credit_text:
+            credit_text = f'<a href="{source_url}" rel="nofollow noopener">{credit_text}</a>'
+        elif source_url:
+            credit_text = f'<a href="{source_url}" rel="nofollow noopener">Image source</a>'
+        caption = f'<figcaption>{credit_text}</figcaption>' if credit_text else ""
         visual_html = f"""<figure class="gr-model-hero">
   <img src="{visual['primary_image']}" alt="{alt}" loading="eager" decoding="async">
+  {caption}
 </figure>"""
     try_on_asset = visual.get("try_on_asset") if visual.get("state") == "published" else None
     try_on_html = ""
