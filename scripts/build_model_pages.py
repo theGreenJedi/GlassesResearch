@@ -138,7 +138,7 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
     try_on_asset = visual.get("try_on_asset") if visual.get("state") == "published" else None
     try_on_html = ""
     if try_on_asset:
-        try_on_html = f"""<section class="gr-try-on" data-gr-try-on data-model-id="{record['id']}" data-asset="{try_on_asset}">
+        try_on_html = f"""<section class="gr-try-on" data-gr-try-on data-model-id="{record['id']}" data-asset="{try_on_asset}" data-scale="{visual.get('try_on_scale', 2.25)}" data-y-offset="{visual.get('try_on_y_offset', 0)}" data-rotation-offset="{visual.get('try_on_rotation_offset', 0)}">
   <button type="button" class="gr-button gr-button-secondary" data-gr-try-on-open>View these glasses on my face</button>
   <p class="gr-try-on-note">Camera processing stays on this device. This is a visual preview, not a physical or prescription fit measurement.</p>
 </section>"""
