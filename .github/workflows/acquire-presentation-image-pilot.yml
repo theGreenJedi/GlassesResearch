@@ -21,7 +21,7 @@ jobs:
         run: |
           import json, pathlib, urllib.request
           items = {
-            "GLS-0073": ("https://us.shop.xreal.com/cdn/shop/files/XREAL_Air_2_Ultra.png?v=1719076738&width=1946", "png"),
+            "GLS-0001": ("https://about.fb.com/wp-content/uploads/2021/09/Ray-Ban-Stories-Product.jpg", "jpg"),
           }
           root=pathlib.Path(".")
           out=root/"images/models/original"; out.mkdir(parents=True,exist_ok=True)
@@ -45,5 +45,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images/models/original data/model-visuals.json
-          git commit -m "Acquire XREAL Air 2 Ultra presentation original"
+          git commit -m "Acquire Ray-Ban Stories presentation original"
           git push origin HEAD:presentation-mission
