@@ -42,7 +42,22 @@ jobs:
               for pat in pats:
                 m=re.search(pat,html,re.I)
                 if m: image=urllib.parse.urljoin(page,m.group(1).replace("&amp;","&")); break
-              if not image: raise RuntimeError("no og:image")
+              if not image:
+                target=set(re.findall(r"[a-z0-9]+",rec.get("alt","").lower()))
+                target-={"smart","glasses","glass","the","and","with","black","frame"}
+                ranked=[]
+                for tag in re.findall(r"<img\\b[^>]*>",html,re.I):
+                  am=re.search(r'alt=["\\\']([^"\\\']*)',tag,re.I)
+                  sm=re.search(r'(?:src|data-src)=["\\\']([^"\\\']+)',tag,re.I)
+                  if not sm: continue
+                  u=urllib.parse.urljoin(page,sm.group(1).replace("&amp;","&"))
+                  hay=((am.group(1) if am else "")+" "+u).lower()
+                  score=sum(1 for t in target if t in hay)
+                  if any(x in hay for x in ("logo","icon","avatar","flag")): score-=5
+                  ranked.append((score,u))
+                ranked.sort(reverse=True)
+                if ranked and ranked[0][0]>0: image=ranked[0][1]
+              if not image: raise RuntimeError("no model-matched image")
               req=urllib.request.Request(image,headers={"User-Agent":"Mozilla/5.0 GlassesResearch editorial research","Referer":page})
               with urllib.request.urlopen(req,timeout=45) as resp:
                 blob=resp.read(); ctype=resp.headers.get_content_type()
