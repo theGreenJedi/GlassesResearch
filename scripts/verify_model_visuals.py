@@ -44,6 +44,13 @@ def main():
                 errors.append(f"{model_id}: primary_image does not exist: {image}")
         try_on=str(record.get("try_on_asset",""))
         if try_on:
+            for field, default in (("try_on_scale", 2.25), ("try_on_y_offset", 0), ("try_on_rotation_offset", 0)):
+                value=record.get(field, default)
+                if not isinstance(value,(int,float)):
+                    errors.append(f"{model_id}: {field} must be numeric")
+            scale=record.get("try_on_scale",2.25)
+            if isinstance(scale,(int,float)) and not (1.0 <= float(scale) <= 4.0):
+                errors.append(f"{model_id}: try_on_scale must be between 1.0 and 4.0")
             runtime = (
                 a.root / "docs/vendor/mediapipe/vision_bundle.mjs",
                 a.root / "docs/vendor/mediapipe/face_landmarker.task",
