@@ -6,6 +6,26 @@
     "camera_upload": false,
     "camera_recording": false
   },
-  "asset_states": ["missing", "candidate", "cleared", "published"],
-  "records": {}
+  "asset_states": [
+    "missing",
+    "candidate",
+    "cleared",
+    "published"
+  ],
+  "records": {},
+  "schema": {
+    "record_key": "GLS stable identifier",
+    "fields": {
+      "state": "missing | candidate | cleared | published",
+      "primary_image": "site-relative path to rights-cleared primary presentation image",
+      "source_url": "source page for the asset",
+      "credit": "creator or rights holder",
+      "rights_basis": "documented basis permitting GlassesResearch redistribution",
+      "retrieved_or_captured": "YYYY-MM-DD",
+      "alt": "model-specific accessible description",
+      "try_on_asset": "optional transparent front-facing asset suitable for face overlay",
+      "asset_dimensions_mm": "optional calibrated physical frame dimensions"
+    }
+  },
+  "publication_gate": "A visual record may be state=published only when primary_image, source_url or original-photography provenance, credit, rights_basis, retrieval/capture date, and alt text are documented. try_on_asset additionally requires a model-specific transparent asset; visual try-on is not a fit measurement."
 }
