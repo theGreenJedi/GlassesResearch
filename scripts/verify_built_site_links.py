@@ -139,15 +139,11 @@ def main() -> int:
     model_paths_checked = verify_public_model_paths(parsed_pages, failures)
 
     if failures:
-        print(f"Built-site link audit found {len(failures)} issue(s); reporting as maintenance debt without blocking deployment:")
+        print(f"Built-site link audit found {len(failures)} issue(s):")
         for item in failures:
             print(f"WARNING {item}")
             print(f"::warning::{item}")
-        print(
-            f"Built-site link audit completed with warnings: {len(pages)} HTML pages, {checked} internal href/src references, "
-            f"and {model_paths_checked} canonical model research paths checked."
-        )
-        return 0
+        print(\n            f"Built-site link audit FAILED: {len(pages)} HTML pages, {checked} internal href/src references, "\n            f"and {model_paths_checked} canonical model research paths checked."\n        )\n        return 1
 
     print(
         f"Built-site link audit passed: {len(pages)} HTML pages, {checked} internal href/src references, "
