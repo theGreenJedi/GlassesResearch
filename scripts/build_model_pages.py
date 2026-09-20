@@ -277,7 +277,7 @@ def main() -> None:
     comparisons = load(args.data_dir / "comparisons.json")
     capabilities = load(args.data_dir / "finder-capabilities.json")
     scores = load(args.data_dir / "report-card-scores.json")
-    visual_path = ROOT / "data" / "model-visuals.json"
+    visual_path = args.visuals or (ROOT / "data" / "model-visuals.json")
     visuals = load(visual_path).get("records", {}) if visual_path.exists() else {}
     records = devices["records"]
     profile_map = profiles()
