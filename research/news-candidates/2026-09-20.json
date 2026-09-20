@@ -1,28 +1,28 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-20T16:52:31.822524+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 163,
+  "discovered_utc": "2026-09-20T18:50:20.968083+00:00",
+  "candidate_count": 3,
+  "precision_rejected_count": 162,
   "relationship_counts": {
     "direct": 0,
     "enabling": 0,
-    "adjacent": 0,
-    "speculative": 1,
+    "adjacent": 1,
+    "speculative": 2,
     "irrelevant": 0
   },
   "type_counts": {
-    "rumor": 1
+    "model": 1,
+    "news": 1,
+    "rumor": 2
   },
   "routing_counts": {
-    "research_news_review": 1,
-    "watching": 1
+    "adjacent_radar": 1,
+    "model_catalog_review": 1,
+    "research_news_review": 3,
+    "watching": 2
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
-    {
-      "url": "https://global.rokid.com/blogs/news",
-      "error": "<urlopen error [Errno 104] Connection reset by peer>"
-    },
     {
       "url": "https://brilliant.xyz/blog",
       "error": "HTTP Error 404: Not Found"
@@ -30,13 +30,45 @@
   ],
   "candidates": [
     {
-      "id": "9322984a5a2c8255",
-      "title": "Massive OnePlus 16 Specs Leak: 9,000mAh Battery, 165Hz Display, and 200MP Camera - Nokiamob",
+      "id": "1f1ea3269e21a709",
+      "title": "Honor Magic 9 & Pro Max Specs Leak Before September 28 Launch - TechnoSports Media Group",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1YZ0d2QUN6Qmh4ZWFtZVhZd2hMLXZfQ01KTFg5bDVxdEdjMlZXMjhsQVdjQjEybjJ4eGFuMVVOWXBQbjhESlpheGVIZGxVNm5DakVKXzVvNDg3VDRabjZvWVZPQVpBTkhlRUw2TEtZUWRuQVM2TXlvanNn?oc=5",
+      "source": "Google News: Snap Spectacles",
+      "source_lane": "core_glasses",
+      "published": "Sun, 20 Sep 2026 17:12:26 GMT",
+      "summary": "Honor Magic 9 & Pro Max Specs Leak Before September 28 Launch TechnoSports Media Group",
+      "materiality_score": 5,
+      "keyword_hits": [
+        "launch",
+        "leak"
+      ],
+      "status": "candidate",
+      "relationship": "speculative",
+      "content_types": [
+        "model",
+        "rumor"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "watching",
+        "model_catalog_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": false,
+      "publication_gate_reason": "future/rumor signals: leak",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "30500862a94f0a9c",
+      "title": "Massive OnePlus 16 Specs Leak: 9,000mAh Battery, 165Hz Display, and 200MP Camera - nokiamob.net",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQR0oyX2ZfX2tEb0liaTdqbS1JVmUwQXFGWGptcWdINnJ1TGYtQ1QzY1dxTVRNZDMxNjBpRnVBd3A2WW8tc2FENG9EMFRtNWIwVUFIMWZjRVhCUS02a1VWbGhzQVphWENrVm5WMExpQ2t4M3dvQ0IxNkZfU0ZHYXRab2FURjZzQ3RnRGlj?oc=5",
       "source": "Google News: Snap Spectacles",
       "source_lane": "core_glasses",
       "published": "Sat, 19 Sep 2026 07:54:48 GMT",
-      "summary": "Massive OnePlus 16 Specs Leak: 9,000mAh Battery, 165Hz Display, and 200MP Camera Nokiamob",
+      "summary": "Massive OnePlus 16 Specs Leak: 9,000mAh Battery, 165Hz Display, and 200MP Camera nokiamob.net",
       "materiality_score": 4,
       "keyword_hits": [
         "battery",
@@ -57,6 +89,36 @@
       "triage_priority": "normal",
       "publication_eligible": false,
       "publication_gate_reason": "future/rumor signals: leak",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "0cd0d28cb9647753",
+      "title": "Noctua fans prevent the CAIM1 ‘Anti-AI’ 4K camera from throttling — unusual camera’s processor gets toasty as it records while performing cryptographic calculations - tech.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOb3NpbjNWbFA1bnFOcmdZdUZvQzB5T2ZwWFluN1gtMHN4SzFsRlhSYmZhX1JYUGdSdEttYW5Kc1gtNTZPZzcwUkZDU2ZJbXVSRDc0Ui0xazRGekRJRmNKOWJBTnJUdlBZdzFVcUwtR2xoc0JFVzd4Z1FHVmNjSW9abVgwNGdNV1l3TGZ1dDVR?oc=5",
+      "source": "Google News: AI wearable camera",
+      "source_lane": "adjacent_hci",
+      "published": "Sun, 20 Sep 2026 12:20:57 GMT",
+      "summary": "Noctua fans prevent the CAIM1 ‘Anti-AI’ 4K camera from throttling — unusual camera’s processor gets toasty as it records while performing cryptographic calculations tech.yahoo.com",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "camera"
+      ],
+      "status": "candidate",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
