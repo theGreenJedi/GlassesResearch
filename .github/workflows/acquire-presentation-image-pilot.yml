@@ -21,8 +21,7 @@ jobs:
         run: |
           import json, pathlib, urllib.request
           items = {
-            "GLS-0064": ("https://global.rokid.com/cdn/shop/files/Rokid_Glasses.png", "png"),
-            "GLS-0094": ("https://global.rokid.com/cdn/shop/files/Rokid_Max_2.png", "png"),
+            "GLS-0021": ("https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/audio/huawei-eyewear-2/images/kv/huawei-eyewear-2-kv.png", "png"),
           }
           root=pathlib.Path(".")
           out=root/"images/models/original"; out.mkdir(parents=True,exist_ok=True)
@@ -46,5 +45,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images/models/original data/model-visuals.json
-          git commit -m "Acquire governed Rokid presentation originals"
+          git commit -m "Acquire Huawei Eyewear 2 presentation original"
           git push origin HEAD:presentation-mission
