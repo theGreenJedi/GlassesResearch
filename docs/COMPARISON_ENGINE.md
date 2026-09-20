@@ -7,8 +7,6 @@ description: "Find and compare smart glasses quickly, then open deeper evidence 
 
 **Start with the answer you need, not the size of our database.**
 
-The quick view keeps unlike products understandable. Pick a category, scan the essentials, then compare two-to-four models using fields that matter for that kind of glasses. The deeper GlassesResearch evidence remains one click lower rather than occupying the whole screen at once.
-
 <div class="gr-task-presets" aria-label="Quick Finder tasks">
   <a href="?filters=no_camera,display#comparison-engine-app">Camera-free display</a>
   <a href="?filters=prescription#comparison-engine-app">Prescription-ready</a>
@@ -17,13 +15,19 @@ The quick view keeps unlike products understandable. Pick a category, scan the e
   <a href="#comparison-engine-app">Compare two-to-four</a>
 </div>
 
-<p class="gr-surface-freshness" data-finder-freshness><strong>Evidence freshness</strong> loading Finder evidence dates…</p>
+## Start broad. Go deep only when you need to.
 
-**Current live controls:** practical-needs filters, buying-route filters, verified price ceilings, Report Card minimum-score thresholds, exact/near-match discovery, purchase routes, shortlist checkboxes, and multi-device comparison. Price filters only use documented current acquisition-price observations; models without a usable price observation remain unknown rather than being guessed into a budget.
+Pick the path that matches what you are trying to learn, then narrow the results or compare two-to-four models. Deeper evidence remains available when you need it rather than occupying the whole screen at once.
 
 <div id="comparison-engine-app">
 Loading Glasses Finder data…
 </div>
+
+## How this Finder works
+
+<p class="gr-surface-freshness" data-finder-freshness><strong>Evidence freshness</strong> loading Finder evidence dates…</p>
+
+Finder results use documented research data rather than inferred claims. Price filters use documented current acquisition-price observations; models without a usable price observation remain unknown rather than being guessed into a budget. Practical-needs filters, buying-route filters, Report Card thresholds, exact/near-match discovery, purchase routes, shortlists, and multi-device comparison are available in the Finder when useful.
 
 ## Need the full research?
 
