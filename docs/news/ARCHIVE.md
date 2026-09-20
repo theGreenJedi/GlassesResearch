@@ -2,6 +2,16 @@
 
 Older published GlassesResearch research and ecosystem developments live here. For the newest reviewed changes, return to [Research & News](../RESEARCH_NEWS.md).
 
+## September 19, 2026 — You bought the glasses. Can you repair them?
+
+A Colorado right-to-repair lawsuit involving Ray-Ban Meta smart glasses raises a broader ownership question: a device can be physically repairable while remaining functionally unrepairable if parts, documentation, firmware, diagnostics, calibration or commissioning tools remain inaccessible.
+
+**Why it matters:** repairability overlaps with Openness, Owner Control, Cloud Independence and Hackability, but is not identical to any of them. GlassesResearch will begin treating practical repair access as evidence worth collecting during device research and bench work.
+
+Canonical coverage: [You bought the glasses. Can you repair them?](articles/2026-09-19-right-to-repair-smart-glasses.md)
+
+---
+
 ## August 6, 2026 — UK venues tighten rules around recording with Meta smart glasses
 
 Restaurants, private clubs, pubs, and theatres in the UK have begun clarifying or enforcing restrictions on recording with smart glasses. *The Guardian* reported that Wetherspoons applies its existing rule against filming customers or employees without permission to Meta glasses; ATG Theatres similarly treats them under its no-filming rules, while other venues have taken stricter approaches.
