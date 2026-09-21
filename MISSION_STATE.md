@@ -1,6 +1,6 @@
 # GlassesResearch Presentation Mission State
 
-Last updated: 2026-09-20
+Last updated: 2026-09-21
 Branch: `presentation-mission`
 Draft PR: #624
 Expected canonical count: 246
@@ -12,7 +12,7 @@ WS0 — Baseline and inventory — stack/contracts baseline saved; next step is 
 - WS0 Baseline and inventory — **in progress**. Contracts baseline saved at `research/PRESENTATION_BASELINE_CONTRACTS.md`; route ledger started at `research/PRESENTATION_ROUTE_LEDGER.md`; reproducible baseline built-route inventory still required.
 - WS1 Information architecture — **in progress**. Five primary entrances implemented; route ledger not yet proven zero-unmapped.
 - WS2 Hide MkDocs implementation — **in progress**. Custom public shell exists; desktop/phone acceptance not yet evidenced.
-- WS3 Visual registry and provenance — **in progress**. 246 registry records now explicit; validator enforces canonical membership and published provenance.
+- WS3 Visual registry and provenance — **in progress**. 246 registry records now explicit; validator enforces canonical membership and published provenance. Smart Glasses Geek is now an approved locator-only shortcut: use its visual catalog to identify the correct model, then trace publication assets to the manufacturer/rightsholder.
 - WS4 Visual model catalog — **in progress**. Object-first generated grid exists; acceptance pending ordered validation.
 - WS5 Model pages and Report Cards — **in progress**. Canonical visual registry feeds model pages and Report Card directory; published-image behavior still needs evidence.
 - WS6 Homepage — **in progress**. Five-door presentation implemented; acceptance pending first-time-visitor and route checks.
@@ -28,6 +28,7 @@ WS0 — Baseline and inventory — stack/contracts baseline saved; next step is 
 - Public navigation ceiling is six; preferred/current five: Find & Compare, Models, Research & News, Develop, About.
 - Hide plumbing; never remove working research plumbing.
 - No indiscriminate image scraping or hotlinking. Generic illustrations do not count.
+- Third-party smart-glasses catalogs may be used as visual locators only. Smart Glasses Geek is explicitly approved for this role; its image bytes are not publication provenance. Every published asset must still trace to an independent manufacturer/rightsholder source and be preserved locally.
 - Visual states are `missing / candidate / cleared / published`; only `published` is public.
 - Try-on is visualization only, explicit camera action, no audio/upload/recording/account/analytics dependency, camera stops on close.
 - Try-on runtime/model must be self-hosted with documented license, version, source, redistribution basis and integrity hash.
@@ -38,9 +39,12 @@ WS0 — Baseline and inventory — stack/contracts baseline saved; next step is 
 None currently. Stop for owner only at the handoff-defined decision boundaries.
 
 ## Latest coverage numbers
-Generated 2026-09-20 from canonical `models/THE_LIST.md` and registry synchronization change:
+Generated 2026-09-21 from canonical `models/THE_LIST.md` and `data/model-visuals.json` after held-image QA:
 - Canonical models: 246
 - Registry records: 246
+- Cleared locally preserved originals: 35
+- Candidate records: 36
+- Missing records: 175
 - Published images: pending saved WS11 audit
 - Report Cards missing images: pending saved WS11 audit
 - Try-on ready: pending saved WS11 audit
@@ -81,7 +85,16 @@ Known critical contracts to baseline explicitly in WS0:
 - `research/PRESENTATION_BASELINE_CONTRACTS.md` records critical pre-presentation plumbing contracts from baseline commit `50b6267...`.
 - `research/PRESENTATION_ROUTE_LEDGER.md` records the nine baseline top-level entrances and their mapping into the five presentation entrances; full generated-route inventory remains pending.
 
+## Visual-locator shortcut
+- Policy: `research/SMART_GLASSES_GEEK_VISUAL_LOCATOR.md`
+- Internal locator ledger: `research/visual-audits/model-image-locators.json`
+- Enforcement: `scripts/verify_visual_locators.py` runs during site staging and before presentation-image acquisition.
+- Initial verified locator entries: Meta Ray-Ban Display, Mentra Live, RayNeo X3 Pro, and Snap SPECS.
+- Locator plumbing is excluded from the public site; it exists only to reduce blind acquisition work while preserving provenance.
+
 ## Validation record
+2026-09-21 — Smart Glasses Geek visual-locator shortcut committed and provenance guard wired into staging/acquisition; current registry state is 35 cleared / 36 candidate / 175 missing.
+
 2026-09-20 — head `5d2328b9852510a11b30e3e9c8b49249b195d0cf`: GitHub Actions completed successfully for Deploy documentation site, Daily whole-site link review, Lighthouse performance, Finder consistency, Catalog consistency, Newsroom presentation contract, Follow surface contract, Feed reader live smoke test, and Validate Community Review Intake.
 
 ## Session protocol
