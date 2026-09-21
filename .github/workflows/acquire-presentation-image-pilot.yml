@@ -1,6 +1,6 @@
 name: Acquire candidate presentation images
 # discovery-pass: model-specific-sources-2
-# normalization-audit: v3
+# normalization-audit: v4
 
 on:
   workflow_dispatch:
@@ -139,6 +139,12 @@ jobs:
             r["acquisition_note"]=(r.get("acquisition_note","")+" Auto-discovered page image rejected: not sufficiently model-specific for publication.").strip()
           p.write_text(json.dumps(d,indent=2,ensure_ascii=False)+"\n")
           print("QA cleared",len(clear),"rejected",len(reject))
+      - name: Rebuild normalized audit after QA
+        run: |
+          rm -rf .site-image-pilot
+          python scripts/normalize_model_visuals.py --registry data/model-visuals.json --root . --output-root .site-image-pilot
+          python scripts/verify_model_visuals.py --registry .site-image-pilot/data/model-visuals.json --root .site-image-pilot --models models/THE_LIST.md
+          python scripts/audit_presentation_geometry.py
       - name: Build compact visual QA sheet
         shell: python
         run: |
