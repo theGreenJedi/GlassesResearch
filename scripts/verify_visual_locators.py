@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from urllib.parse import urlparse
 
-ALLOWED_CLASSES = {"locator-primary", "locator-router", "locator-secondary"}
+ALLOWED_CLASSES = {"locator-primary", "locator-router", "locator-secondary", "marketplace-oem-locator", "marketplace-retail-locator"}
 
 def host(url: str) -> str:
     return (urlparse(url).hostname or "").lower()
