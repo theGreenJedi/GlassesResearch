@@ -1,43 +1,122 @@
 {
-  "schema_version": 1,
-  "purpose": "Third-party visual locators used only to identify the correct model and trace back to an official/rightsholder source.",
+  "schema_version": 2,
+  "purpose": "Curated third-party locator network used only to identify the correct model and trace publication assets to an independent manufacturer/rightsholder source.",
   "rules": {
     "locator_only": true,
     "hotlinking_allowed": false,
     "direct_asset_reuse_allowed": false,
     "publication_requires_independent_source_provenance": true
   },
+  "providers": {
+    "Smart Glasses Geek": {
+      "class": "locator-primary",
+      "domains": [
+        "smartglassesgeek.com",
+        "www.smartglassesgeek.com"
+      ],
+      "use": "Dedicated model visual/comparison locator."
+    },
+    "smartglasses.today": {
+      "class": "locator-router",
+      "domains": [
+        "smartglasses.today",
+        "www.smartglasses.today"
+      ],
+      "use": "Industry index/router to original publishers and maker channels."
+    },
+    "Wareable": {
+      "class": "locator-secondary",
+      "domains": [
+        "wareable.com",
+        "www.wareable.com"
+      ],
+      "use": "Model-specific editorial/review locator; useful for visual identity and legacy-product leads."
+    },
+    "UploadVR": {
+      "class": "locator-secondary",
+      "domains": [
+        "uploadvr.com",
+        "www.uploadvr.com"
+      ],
+      "use": "Model-specific XR/editorial locator; useful for visual identity and legacy-product leads."
+    }
+  },
   "records": {
+    "GLS-0002": {
+      "reference_model_label": "Ray-Ban Meta (Gen 1)",
+      "canonical_source_url": "https://www.meta.com/ai-glasses/ray-ban-meta/",
+      "locators": [
+        {
+          "provider": "Wareable",
+          "url": "https://www.wareable.com/wearable-tech/rayban-meta-smartglasses-review",
+          "status": "locator-verified"
+        }
+      ],
+      "note": "Wareable is visual/reference confirmation only; publication asset provenance must remain independent."
+    },
     "GLS-0004": {
-      "provider": "Smart Glasses Geek",
       "reference_model_label": "Meta Ray-Ban Display",
-      "locator_url": "https://smartglassesgeek.com/compare/?compare=meta-ray-ban-display%2Crayneo-x3-pro",
       "canonical_source_url": "https://www.meta.com/ai-glasses/",
-      "status": "locator-verified",
-      "note": "Use only to identify the correct model/image presentation; publication asset must be traced to Meta/Ray-Ban."
+      "locators": [
+        {
+          "provider": "Smart Glasses Geek",
+          "url": "https://smartglassesgeek.com/compare/?compare=meta-ray-ban-display%2Crayneo-x3-pro",
+          "status": "locator-verified"
+        },
+        {
+          "provider": "UploadVR",
+          "url": "https://www.uploadvr.com/meta-ray-ban-display-review/",
+          "status": "locator-verified"
+        }
+      ],
+      "note": "Use locators only to identify the correct model/presentation; publication asset must be traced to Meta/Ray-Ban."
     },
     "GLS-0038": {
-      "provider": "Smart Glasses Geek",
       "reference_model_label": "Mentra Live",
-      "locator_url": "https://smartglassesgeek.com/compare/?compare=mentra-live",
       "canonical_source_url": "https://mentraglass.com/live",
-      "status": "locator-verified",
+      "locators": [
+        {
+          "provider": "Smart Glasses Geek",
+          "url": "https://smartglassesgeek.com/compare/?compare=mentra-live",
+          "status": "locator-verified"
+        }
+      ],
       "note": "Use only to identify the correct model/image presentation; publication asset must be traced to Mentra."
     },
-    "GLS-0066": {
-      "provider": "Smart Glasses Geek",
-      "reference_model_label": "RayNeo X3 Pro",
-      "locator_url": "https://smartglassesgeek.com/compare/?compare=meta-ray-ban-display%2Crayneo-x3-pro",
+    "GLS-0065": {
+      "reference_model_label": "RayNeo X2",
       "canonical_source_url": "https://www.rayneo.com/",
-      "status": "locator-verified",
+      "locators": [
+        {
+          "provider": "UploadVR",
+          "url": "https://www.uploadvr.com/rayneo-x2-standalone-ar-glasses-review/",
+          "status": "locator-verified"
+        }
+      ],
+      "note": "UploadVR is visual/reference confirmation only; publication asset provenance must remain independent."
+    },
+    "GLS-0066": {
+      "reference_model_label": "RayNeo X3 Pro",
+      "canonical_source_url": "https://www.rayneo.com/",
+      "locators": [
+        {
+          "provider": "Smart Glasses Geek",
+          "url": "https://smartglassesgeek.com/compare/?compare=meta-ray-ban-display%2Crayneo-x3-pro",
+          "status": "locator-verified"
+        }
+      ],
       "note": "Use only as visual/reference confirmation; current cleared asset remains sourced from RayNeo."
     },
     "GLS-0146": {
-      "provider": "Smart Glasses Geek",
       "reference_model_label": "Snap Specs",
-      "locator_url": "https://smartglassesgeek.com/compare/?compare=snap-specs%2Crayneo-x3-pro",
       "canonical_source_url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
-      "status": "locator-verified",
+      "locators": [
+        {
+          "provider": "Smart Glasses Geek",
+          "url": "https://smartglassesgeek.com/compare/?compare=snap-specs%2Crayneo-x3-pro",
+          "status": "locator-verified"
+        }
+      ],
       "note": "Use only to identify the correct product presentation; publication asset must be traced to Snap."
     }
   }
