@@ -121,6 +121,24 @@ jobs:
           python scripts/verify_model_visuals.py --registry .site-image-pilot/data/model-visuals.json --root .site-image-pilot --models models/THE_LIST.md
           python scripts/build_visual_contact_sheet.py
           python scripts/audit_presentation_geometry.py
+      - name: Apply first-pass model-specific QA decisions
+        shell: python
+        run: |
+          import json,pathlib
+          p=pathlib.Path("data/model-visuals.json"); d=json.loads(p.read_text())
+          clear={"GLS-0001","GLS-0025","GLS-0027","GLS-0031","GLS-0033","GLS-0037","GLS-0052","GLS-0078","GLS-0079","GLS-0080","GLS-0081","GLS-0082","GLS-0091","GLS-0100","GLS-0106","GLS-0107","GLS-0108","GLS-0109","GLS-0110","GLS-0111","GLS-0112","GLS-0115"}
+          reject={"GLS-0036","GLS-0051","GLS-0094","GLS-0137","GLS-0138","GLS-0139"}
+          for mid in clear:
+            r=d["records"][mid]
+            if r.get("original_image"): r["state"]="cleared"
+          for mid in reject:
+            r=d["records"][mid]; old=r.pop("original_image",None); r.pop("source_asset_url",None)
+            if old:
+              q=pathlib.Path(old.lstrip("/"))
+              if q.exists(): q.unlink()
+            r["acquisition_note"]=(r.get("acquisition_note","")+" Auto-discovered page image rejected: not sufficiently model-specific for publication.").strip()
+          p.write_text(json.dumps(d,indent=2,ensure_ascii=False)+"\n")
+          print("QA cleared",len(clear),"rejected",len(reject))
       - name: Build compact visual QA sheet
         shell: python
         run: |
