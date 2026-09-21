@@ -20,6 +20,8 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: presentation-mission
+      - name: Enforce third-party locator boundary
+        run: python scripts/verify_visual_locators.py --registry data/model-visuals.json --locators research/visual-audits/model-image-locators.json
       - name: Discover manufacturer page images
         shell: python
         run: |
