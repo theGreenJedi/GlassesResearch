@@ -11,6 +11,10 @@ ALLOWED_CLASSES = {"locator-primary", "locator-router", "locator-secondary", "ma
 def host(url: str) -> str:
     return (urlparse(url).hostname or "").lower()
 
+def host_matches(candidate: str, domains: set[str]) -> bool:
+    candidate = candidate.lower()
+    return any(candidate == domain or candidate.endswith("." + domain) for domain in domains)
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--registry", required=True)
@@ -39,7 +43,7 @@ def main() -> None:
             errors.append(f"{mid}: locator references unknown model")
             continue
         source_url = entry.get("canonical_source_url", "")
-        if not source_url or host(source_url) in locator_hosts:
+        if source_url and host_matches(host(source_url), locator_hosts):
             errors.append(f"{mid}: canonical source must be independent of locator network")
 
         refs = entry.get("locators", [])
@@ -52,13 +56,14 @@ def main() -> None:
             if provider is None:
                 errors.append(f"{mid}: unknown provider {provider_name!r}")
                 continue
-            if host(ref.get("url", "")) not in {d.lower() for d in provider.get("domains", [])}:
+            provider_domains = {d.lower() for d in provider.get("domains", [])}
+            if not host_matches(host(ref.get("url", "")), provider_domains):
                 errors.append(f"{mid}: locator URL does not match provider {provider_name}")
 
     for mid, rec in registry.get("records", {}).items():
         for field in ("source_url", "source_asset_url", "primary_image"):
             value = rec.get(field)
-            if isinstance(value, str) and host(value) in locator_hosts:
+            if isinstance(value, str) and host_matches(host(value), locator_hosts):
                 errors.append(f"{mid}: {field} must not use locator-network domains as publication provenance")
 
     if errors:
