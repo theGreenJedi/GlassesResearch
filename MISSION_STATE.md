@@ -30,6 +30,7 @@ WS0 — Baseline and inventory — stack/contracts baseline saved; next step is 
 - No indiscriminate image scraping or hotlinking. Generic illustrations do not count.
 - Curated third-party smart-glasses catalogs, routers, and editorial outlets may be used as locator-only acquisition shortcuts. Phase 1 providers are Smart Glasses Geek, smartglasses.today, Wareable, and UploadVR. Locator image bytes are not publication provenance. Every published asset must still trace to an independent manufacturer/rightsholder source and be preserved locally.
 - Visual states are `missing / candidate / cleared / published`; only `published` is public.
+- Missing or not-yet-publishable model imagery must never remove a Report Card or collapse its media slot. Core Report Cards, deep Report Cards, and canonical model pages render reserved blank media space labeled `No Picture Available` until a governed image is published.
 - Try-on is visualization only, explicit camera action, no audio/upload/recording/account/analytics dependency, camera stops on close.
 - Try-on runtime/model must be self-hosted with documented license, version, source, redistribution basis and integrity hash.
 - No Google Play or Google Play Store applications in recommendations, tools, or dependencies.
@@ -107,6 +108,9 @@ Known critical contracts to baseline explicitly in WS0:
 
 ## Marketplace locator record
 2026-09-21 — Alibaba first-pass searched across all 135 models left after Phase 1. Nine exact model matches were accepted as locator-only evidence and promoted to governed candidates. AliExpress direct search/fetch was attempted but produced no verifiable direct listing URLs through the current retrieval path; no AliExpress-only promotions were made. Subsequent spot audit found additional admitted-network hits among the 126 remainder, proving the shortcut search was not exhaustive. The outside-shortcut stop remains active while a systematic second pass is pending.
+
+## Missing-image presentation rule
+2026-09-21 — Report Cards and canonical model pages now preserve the image slot when no governed image is publishable and render `No Picture Available`. Report Card/model content remains fully present; no broken-image icons or generic GLASSES token are used.
 
 ## Validation record
 2026-09-21 — Visual-locator shortcut expanded to a curated Phase 1 network: Smart Glasses Geek, smartglasses.today, Wareable, and UploadVR. Provider classes and multi-locator records are enforced by `verify_visual_locators.py`; locator domains remain forbidden as publication provenance. Current registry state remains 35 cleared / 36 candidate / 175 missing.
