@@ -114,7 +114,10 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
     cap_rows = "\n".join(f"| {name} | Yes | {prov} |" for name, prov in confirmed) or "| Confirmed capabilities | None yet | unresolved |"
     neg_text = ", ".join(negatives) if negatives else "No capability negatives are currently verified."
     visual = visual or {}
-    visual_html = ""
+    missing_alt = f"No picture available for {record['maker']} {record['model']}"
+    visual_html = f"""<figure class="gr-model-hero gr-model-hero--missing" data-model-id="{record['id']}">
+  <div class="gr-model-hero__missing" role="img" aria-label="{missing_alt}">No Picture Available</div>
+</figure>"""
     if visual.get("state") == "published" and visual.get("primary_image"):
         alt = visual.get("alt", f"{record['maker']} {record['model']} smart glasses")
         credit = visual.get("credit", "")
