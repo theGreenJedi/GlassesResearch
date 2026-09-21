@@ -178,7 +178,7 @@ def main() -> int:
             )
         search_terms = " ".join([model_id, model_name, *known_as]).casefold()
         visual = visual_records.get(model_id, {})
-        image_html = '<span class="gr-report-card-image-missing" aria-hidden="true">GLASSES</span>'
+        image_html = '<span class="gr-report-card-image-missing" role="img" aria-label="No picture available">No Picture Available</span>'
         if visual.get("state") == "published" and visual.get("primary_image"):
             src = "/" + str(visual["primary_image"]).lstrip("/")
             alt = str(visual.get("alt") or model_name)
