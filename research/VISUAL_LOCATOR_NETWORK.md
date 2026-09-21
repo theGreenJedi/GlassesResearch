@@ -17,6 +17,14 @@ Editorial/review outlets with model-specific reporting and useful product imager
 - Wareable — `wareable.com`
 - UploadVR — `uploadvr.com`
 
+### marketplace-oem-locator
+B2B marketplace listings useful for OEM/ODM model-number, supplier, app, chipset, and rebrand tracing.
+- Alibaba — `alibaba.com`
+
+### marketplace-retail-locator
+Consumer marketplace listings useful for retail rebrands, surviving listings, and visual cross-checks.
+- AliExpress — `aliexpress.com`
+
 ## Allowed use
 - identify the exact glasses/model visually
 - distinguish generations, variants, and similarly named products
@@ -36,9 +44,11 @@ Editorial/review outlets with model-specific reporting and useful product imager
 1. Check locator-primary sources for exact model identity and presentation.
 2. Check locator-router sources for paths to maker/original-publisher material.
 3. Check locator-secondary sources for model-specific visual confirmation, especially for legacy or poorly maintained manufacturer pages.
-4. Trace the selected image to the manufacturer/rightsholder or another independently documented lawful source.
-5. Preserve the selected original locally.
-6. Record source, asset URL, credit, rights basis, retrieval date, and model-specific alt text.
-7. Pass normal visual QA and publication validation.
+4. Check Alibaba for OEM/ODM model-number and supplier matches.
+5. Check AliExpress only when Alibaba does not resolve the model or when a retail/rebrand trail is needed.
+6. Trace the selected image to the manufacturer/rightsholder or another independently documented lawful source.
+7. Preserve the selected original locally.
+8. Record source, asset URL, credit, rights basis, retrieval date, and model-specific alt text.
+9. Pass normal visual QA and publication validation.
 
 The locator network is a discovery shortcut. It does not lower the publication gate.
