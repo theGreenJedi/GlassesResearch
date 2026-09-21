@@ -9,6 +9,13 @@ from pathlib import Path
 
 GLS_HEADING = re.compile(r"^(#{2,3})\s+(GLS-\d{4})\s+[—-]\s+(.+?)\s*$", re.MULTILINE)
 
+def missing_figure(model_id: str) -> str:
+    return (
+        f'\n\n<figure class="gr-model-hero gr-report-card-hero gr-model-hero--missing" data-model-id="{model_id}">\n'
+        f'  <div class="gr-model-hero__missing" role="img" aria-label="No picture available">No Picture Available</div>\n'
+        f'</figure>'
+    )
+
 def figure(model_id: str, visual: dict) -> str:
     src = "/" + str(visual["primary_image"]).lstrip("/")
     alt = str(visual.get("alt") or f"{model_id} smart glasses")
@@ -36,25 +43,26 @@ def main() -> int:
     a = p.parse_args()
     records = json.loads(a.visuals.read_text(encoding="utf-8")).get("records", {})
     report_dir = a.site_root / "docs" / "report-cards"
-    pages = sections = images = 0
+    pages = sections = images = placeholders = 0
     for path in sorted(report_dir.glob("*.md")):
         text = path.read_text(encoding="utf-8")
         touched = False
         def inject(match: re.Match) -> str:
-            nonlocal sections, images, touched
+            nonlocal sections, images, placeholders, touched
             sections += 1
             model_id = match.group(2)
             visual = records.get(model_id, {})
-            if visual.get("state") != "published" or not visual.get("primary_image"):
-                return match.group(0)
             touched = True
+            if visual.get("state") != "published" or not visual.get("primary_image"):
+                placeholders += 1
+                return match.group(0) + missing_figure(model_id)
             images += 1
             return match.group(0) + figure(model_id, visual)
         updated = GLS_HEADING.sub(inject, text)
         if touched:
             path.write_text(updated, encoding="utf-8")
             pages += 1
-    print(f"Report Card visual pass: {sections} model sections inspected; {images} governed images attached across {pages} pages")
+    print(f"Report Card visual pass: {sections} model sections inspected; {images} governed images and {placeholders} no-picture placeholders attached across {pages} pages")
     return 0
 
 if __name__ == "__main__":
