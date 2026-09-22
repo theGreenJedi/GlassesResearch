@@ -86,7 +86,7 @@ def source_links(record: dict) -> str:
     return "\n".join(f"- [{item['label']}]({item['url']})" for item in external) or "- No external source recorded."
 
 
-def model_page(record: dict, profile: str, comparison: dict | None, capability: dict, score: dict | None, labels: dict[str, str], score_labels: dict[str, str], related: list[dict]) -> str:
+def model_page(record: dict, profile: str, comparison: dict | None, capability: dict, score: dict | None, labels: dict[str, str], score_labels: dict[str, str], related: list[dict], visual: dict | None = None) -> str:
     title = f"{record['maker']} {record['model']} ({record['id']})"
     description = f"Verified specifications, capabilities, status, sources, and research links for {record['maker']} {record['model']} smart glasses."
     confirmed = [(labels.get(k, k.replace("_", " ").title()), v["provenance"]) for k, v in capability["capabilities"].items() if v["value"] == "yes"]
@@ -113,6 +113,38 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
     fact_rows = "\n".join(f"| {a} | {b} | {c} |" for a, b, c in facts) or "| Research depth | No structured specification record yet | unknown |"
     cap_rows = "\n".join(f"| {name} | Yes | {prov} |" for name, prov in confirmed) or "| Confirmed capabilities | None yet | unresolved |"
     neg_text = ", ".join(negatives) if negatives else "No capability negatives are currently verified."
+    visual = visual or {}
+    missing_alt = f"No picture available for {record['maker']} {record['model']}"
+    visual_html = f"""<figure class="gr-model-hero gr-model-hero--missing" data-model-id="{record['id']}">
+  <div class="gr-model-hero__missing" role="img" aria-label="{missing_alt}">No Picture Available</div>
+</figure>"""
+    if visual.get("state") == "published" and visual.get("primary_image"):
+        alt = visual.get("alt", f"{record['maker']} {record['model']} smart glasses")
+        credit = visual.get("credit", "")
+        source_url = visual.get("source_url", "")
+        rights = visual.get("rights_basis", "")
+        credit_bits = []
+        if credit:
+            credit_bits.append(credit)
+        if rights:
+            credit_bits.append(rights)
+        credit_text = " · ".join(credit_bits)
+        if source_url and credit_text:
+            credit_text = f'<a href="{source_url}" rel="nofollow noopener">{credit_text}</a>'
+        elif source_url:
+            credit_text = f'<a href="{source_url}" rel="nofollow noopener">Image source</a>'
+        caption = f'<figcaption>{credit_text}</figcaption>' if credit_text else ""
+        visual_html = f"""<figure class="gr-model-hero">
+  <img src="{visual['primary_image']}" alt="{alt}" loading="eager" decoding="async">
+  {caption}
+</figure>"""
+    try_on_asset = visual.get("try_on_asset") if visual.get("state") == "published" else None
+    try_on_html = ""
+    if try_on_asset:
+        try_on_html = f"""<section class="gr-try-on" data-gr-try-on data-model-id="{record['id']}" data-asset="{try_on_asset}" data-scale="{visual.get('try_on_scale', 2.25)}" data-y-offset="{visual.get('try_on_y_offset', 0)}" data-rotation-offset="{visual.get('try_on_rotation_offset', 0)}">
+  <button type="button" class="gr-button gr-button-secondary" data-gr-try-on-open>View these glasses on my face</button>
+  <p class="gr-try-on-note">Camera processing stays on this device. This is a visual preview, not a physical or prescription fit measurement.</p>
+</section>"""
     scores = ""
     if score:
         rows = "\n".join(f"| {score_labels.get(k, k.replace('_', ' ').title())} | {md_value(v)} |" for k, v in score["scores"].items())
@@ -128,7 +160,11 @@ model_category: "{str(record['type']).replace('"', '\\"')}"
 
 # {title}
 
+{visual_html}
+
 {profile}
+
+{try_on_html}
 
 ## At a glance
 
@@ -239,11 +275,14 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-dir", type=Path, required=True)
     parser.add_argument("--output-root", type=Path, required=True)
+    parser.add_argument("--visuals", type=Path)
     args = parser.parse_args()
     devices = load(args.data_dir / "devices.json")
     comparisons = load(args.data_dir / "comparisons.json")
     capabilities = load(args.data_dir / "finder-capabilities.json")
     scores = load(args.data_dir / "report-card-scores.json")
+    visual_path = args.visuals or (ROOT / "data" / "model-visuals.json")
+    visuals = load(visual_path).get("records", {}) if visual_path.exists() else {}
     records = devices["records"]
     profile_map = profiles()
     comparison_map = {r["id"]: r for r in comparisons["records"]}
@@ -261,10 +300,68 @@ def main() -> None:
         related = [x for x in makers[r["maker"]] if x["id"] != r["id"]]
         if len(related) < 3:
             related += [x for x in records if x["id"] != r["id"] and x["type"] == r["type"] and x not in related]
-        page = model_page(r, profile_map[r["id"]], comparison_map.get(r["id"]), cap_map[r["id"]], score_map.get(r["id"]), labels, score_labels, related)
+        page = model_page(r, profile_map[r["id"]], comparison_map.get(r["id"]), cap_map[r["id"]], score_map.get(r["id"]), labels, score_labels, related, visuals.get(r["id"]))
         (catalog / f"{r['id'].lower()}.md").write_text(page, encoding="utf-8")
-    index_rows = "\n".join(f"| [{r['maker']} {r['model']}]({r['public']['model_page']}) | {r['id']} | {r['era']} | {r['state']} | {r['type']} |" for r in records)
-    (catalog / "index.md").write_text(f"# Canonical smart-glasses model pages\n\nAll {len(records)} individually indexable model records. Each page preserves the stable GLS identity and separates verified facts from unknowns.\n\n[Use the Finder](/docs/COMPARISON_ENGINE/) · [Read the search-intent guides](/guides/) · [View the canonical ledger](/models/THE_LIST/)\n\n| Model | ID | Era | Status | Type |\n|---|---|---:|---|---|\n{index_rows}\n", encoding="utf-8")
+    cards = []
+    missing_visuals = []
+    for r in records:
+        visual = visuals.get(r["id"], {})
+        image = ""
+        if visual.get("state") == "published" and visual.get("primary_image"):
+            alt = visual.get("alt", f"{r['maker']} {r['model']} smart glasses")
+            image = f'<img class="gr-model-card__image" src="{visual["primary_image"]}" alt="{alt}" loading="lazy" decoding="async">'
+        else:
+            missing_visuals.append(r)
+            image = '<div class="gr-model-card__placeholder" aria-hidden="true"><span>GLASSES</span></div>'
+        cards.append(f"""<a class="gr-model-card" href="{r['public']['model_page']}">
+  <div class="gr-model-card__media">{image}</div>
+  <div class="gr-model-card__body">
+    <span class="gr-model-card__maker">{r['maker']}</span>
+    <strong>{r['model']}</strong>
+    <span>{r['state']} · {r['type']}</span>
+  </div>
+</a>""")
+    (catalog / "index.md").write_text(f"""---
+title: "Smart-glasses models"
+description: "Browse the GlassesResearch canonical smart-glasses catalog visually, then open the evidence behind any model."
+---
+
+# Smart-glasses models
+
+Browse {len(records)} canonical models. Choose the object first; GlassesResearch exposes the evidence, specifications, provenance, and research depth after you open it.
+
+<div class="gr-model-grid">
+{chr(10).join(cards)}
+</div>
+
+[Find & compare glasses](/docs/COMPARISON_ENGINE/) · [Use-case guides](/guides/) · [Canonical identity ledger](/models/THE_LIST/)
+""", encoding="utf-8")
+    visual_report = args.output_root / "research" / "MODEL_VISUAL_COVERAGE.md"
+    visual_report.parent.mkdir(parents=True, exist_ok=True)
+    published_visuals = len(records) - len(missing_visuals)
+    try_on_ready = sum(
+        1 for r in records
+        if visuals.get(r["id"], {}).get("state") == "published"
+        and visuals.get(r["id"], {}).get("try_on_asset")
+    )
+    report_card_visuals = published_visuals
+    missing_rows = "\n".join(f"| {r['id']} | {r['maker']} | {r['model']} | {r['state']} |" for r in missing_visuals)
+    visual_report.write_text(f"""# Model visual coverage
+
+Generated from the canonical catalog and `data/model-visuals.json`.
+
+- Canonical models: **{len(records)}**
+- Published, rights-cleared primary images: **{published_visuals}**
+- Core/extended Report Card sections eligible for governed imagery: **{report_card_visuals}**
+- Published model-specific try-on assets: **{try_on_ready}**
+- Still requiring cleared primary imagery: **{len(missing_visuals)}**
+
+A model is counted as visually covered only when its registry state is `published` and a primary image is present. The same governed image is then available to canonical model pages, the visual catalog, the Core Report Card directory, and staged deep Report Card sections. A try-on asset is counted separately and must be model-specific. Candidate URLs and unverified redistribution rights do not count.
+
+| ID | Maker | Model | Status |
+|---|---|---|---|
+{missing_rows or '| — | — | All canonical models currently have published imagery | — |'}
+""", encoding="utf-8")
     guide_dir = args.output_root / "guides"
     guide_dir.mkdir(parents=True, exist_ok=True)
     guide_links = []

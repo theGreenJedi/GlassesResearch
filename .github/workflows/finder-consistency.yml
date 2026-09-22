@@ -54,6 +54,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      - name: Install documentation dependencies
+        run: pip install -r requirements-docs.txt
       - name: Validate Finder data relationships
         run: python scripts/check_finder_consistency.py
       - name: Validate Finder frontend semantics

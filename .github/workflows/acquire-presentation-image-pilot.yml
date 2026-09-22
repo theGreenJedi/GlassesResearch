@@ -1,0 +1,321 @@
+name: Acquire candidate presentation images
+# discovery-pass: model-specific-sources-3
+# normalization-audit: v5
+# qa-refresh: held-image-decisions-2026-09-21
+# locator-network-pass: missing-models-2026-09-21
+# marketplace-locator-pass: alibaba-2026-09-21
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [presentation-mission]
+    paths:
+      - '.github/workflows/acquire-presentation-image-pilot.yml'
+      - 'data/model-visuals.json'
+
+concurrency:
+  group: acquire-presentation-images-presentation-mission
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: presentation-mission
+      - name: Enforce third-party locator boundary
+        run: python scripts/verify_visual_locators.py --registry data/model-visuals.json --locators research/visual-audits/model-image-locators.json
+      - name: Install image tooling
+        run: pip install "Pillow>=10,<13" "PyMuPDF>=1.24,<2"
+      - name: Discover manufacturer page images
+        if: github.event_name == 'workflow_dispatch'
+        shell: python
+        run: |
+          import json, pathlib, urllib.request, urllib.parse, urllib.error, re, io, time
+          from PIL import Image
+          import fitz
+          root=pathlib.Path(".")
+          out=root/"images/models/original"; out.mkdir(parents=True,exist_ok=True)
+          regp=root/"data/model-visuals.json"; data=json.loads(regp.read_text())
+          success=[]; failed=[]
+          base_headers={
+            "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140 Safari/537.36",
+            "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cache-Control":"no-cache",
+          }
+          def fetch(url,timeout=30,referer=None):
+            headers=dict(base_headers)
+            if referer:
+              headers["Referer"]=referer
+              headers["Accept"]="image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+            last=None
+            for attempt in range(2):
+              try:
+                req=urllib.request.Request(url,headers=headers)
+                return urllib.request.urlopen(req,timeout=timeout)
+              except urllib.error.HTTPError as e:
+                last=e
+                if e.code not in {408,429,500,502,503,504} or attempt:
+                  raise
+              except (TimeoutError, OSError) as e:
+                last=e
+                if attempt:
+                  raise
+              time.sleep(1)
+            raise last
+          for mid,rec in data["records"].items():
+            note=rec.get("acquisition_note","").lower()
+            if rec.get("state")!="candidate" or rec.get("original_image") or "held from publication" in note or "held from automatic reacquisition" in note: continue
+            page=rec.get("source_url","")
+            if not page: continue
+            try:
+              if urllib.parse.urlparse(page).path.lower().endswith(".pdf"):
+                with fetch(page,timeout=45) as resp:
+                  pdfblob=resp.read()
+                doc=fitz.open(stream=pdfblob,filetype="pdf")
+                embedded=[]
+                seen_xrefs=set()
+                for pno in range(len(doc)):
+                  pg=doc[pno]
+                  for imginfo in pg.get_images(full=True):
+                    xref=imginfo[0]
+                    if xref in seen_xrefs: continue
+                    seen_xrefs.add(xref)
+                    try:
+                      item=doc.extract_image(xref)
+                      iblob=item.get("image",b"")
+                      ext=(item.get("ext") or "").lower()
+                      width=int(item.get("width") or 0); height=int(item.get("height") or 0)
+                      if len(iblob)>=5000 and width>=200 and height>=100 and ext in {"jpg","jpeg","png","webp"}:
+                        embedded.append((width*height,len(iblob),xref,ext,iblob))
+                    except Exception:
+                      pass
+                if not embedded:
+                  raise RuntimeError("no usable embedded image in manufacturer PDF")
+                embedded.sort(reverse=True,key=lambda x:(x[0],x[1]))
+                _,_,xref,ext,blob=embedded[0]
+                ext="jpg" if ext=="jpeg" else ext
+                path=out/f"{mid.lower()}.{ext}"; path.write_bytes(blob)
+                rec["original_image"]="/"+str(path).replace("\\","/")
+                rec["source_asset_url"]=page+f"#embedded-image-{xref}"
+                rec["acquisition_note"]=(rec.get("acquisition_note","")+" Candidate image extracted from manufacturer PDF; requires visual QA before clearance.").strip()
+                success.append(mid)
+                continue
+              with fetch(page,timeout=30) as resp:
+                html=resp.read().decode("utf-8","ignore")
+              pats=[
+                r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]+content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image(?::secure_url)?["\']',
+                r'<meta[^>]+name=["\']twitter:image(?::src)?["\'][^>]+content=["\']([^"\']+)'
+              ]
+              image=None
+              for pat in pats:
+                m=re.search(pat,html,re.I)
+                if m: image=urllib.parse.urljoin(page,m.group(1).replace("&amp;","&")); break
+              if not image:
+                # Product JSON-LD often carries the clean manufacturer image even when the HTML gallery is JS-driven.
+                for block in re.findall(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',html,re.I|re.S):
+                  try:
+                    obj=json.loads(block)
+                    stack=obj if isinstance(obj,list) else [obj]
+                    for node in stack:
+                      if not isinstance(node,dict): continue
+                      imgs=node.get("image")
+                      if isinstance(imgs,str): imgs=[imgs]
+                      if isinstance(imgs,list) and imgs:
+                        cand=next((x for x in imgs if isinstance(x,str) and x.strip()),None)
+                        if cand:
+                          image=urllib.parse.urljoin(page,cand.replace("&amp;","&"))
+                          break
+                    if image: break
+                  except Exception:
+                    pass
+              if not image:
+                target=set(re.findall(r"[a-z0-9]+",rec.get("alt","").lower()))
+                target-={"smart","glasses","glass","the","and","with","black","frame"}
+                ranked=[]
+                candidates=[]
+                for tag in re.findall(r"<img\\b[^>]*>",html,re.I):
+                  am=re.search(r'alt=["\\\']([^"\\\']*)',tag,re.I)
+                  for sm in re.finditer(r'(?:src|data-src|data-original|data-lazy-src|data-image|srcset|data-srcset)=["\\\']([^"\\\']+)',tag,re.I):
+                    raw=sm.group(1).split(",")[0].strip().split(" ")[0]
+                    candidates.append(((am.group(1) if am else ""),raw))
+                for raw in re.findall(r'url\\(["\\\']?([^"\\\')]+\\.(?:png|jpe?g|webp)(?:\\?[^"\\\') ]*)?)["\\\']?\\)',html,re.I):
+                  candidates.append(("",raw))
+                for raw in re.findall(r'https?[^"\\\' ]+?\\.(?:png|jpe?g|webp)(?:\\?[^"\\\' ]*)?',html,re.I):
+                  candidates.append(("",raw))
+                title_match=re.search(r"<title[^>]*>(.*?)</title>",html,re.I|re.S)
+                title=(title_match.group(1) if title_match else "").lower()
+                page_context=(page+" "+title).lower()
+                context_hits=sum(1 for t in target if t in page_context)
+                page_specific=context_hits>=min(2,max(1,len(target)))
+                seen=set()
+                for idx,(alt,raw) in enumerate(candidates):
+                  u=urllib.parse.urljoin(page,raw.replace("&amp;","&").replace("\\/","/"))
+                  if u in seen: continue
+                  seen.add(u)
+                  hay=(alt+" "+u).lower()
+                  score=sum(2 for t in target if t in hay)
+                  if any(x in hay for x in ("hero","product","front","angle")): score+=1
+                  if page_specific and not any(x in hay for x in ("logo","icon","avatar","flag","sprite","badge")):
+                    score+=1
+                  if any(x in hay for x in ("logo","icon","avatar","flag","sprite","badge")): score-=8
+                  ranked.append((score,-idx,u))
+                ranked.sort(reverse=True)
+                if ranked and ranked[0][0]>0: image=ranked[0][2]
+              if not image: raise RuntimeError("no model-matched image")
+              req=urllib.request.Request(image,headers={"User-Agent":"Mozilla/5.0 GlassesResearch editorial research","Referer":page})
+              with urllib.request.urlopen(req,timeout=45) as resp:
+                blob=resp.read(); ctype=resp.headers.get_content_type()
+              # Trust file signatures over frequently-wrong CDN MIME headers.
+              if blob.startswith(b"\\xff\\xd8\\xff"):
+                ext="jpg"
+              elif blob.startswith(b"\\x89PNG\\r\\n\\x1a\\n"):
+                ext="png"
+              elif len(blob)>=12 and blob[:4]==b"RIFF" and blob[8:12]==b"WEBP":
+                ext="webp"
+              else:
+                ext={"image/jpeg":"jpg","image/png":"png","image/webp":"webp"}.get(ctype)
+              if not ext or len(blob)<1500: raise RuntimeError(f"bad image {ctype} {len(blob)}")
+              path=out/f"{mid.lower()}.{ext}"; path.write_bytes(blob)
+              rec["original_image"]="/"+str(path).replace("\\","/")
+              rec["source_asset_url"]=image
+              rec["acquisition_note"]=(rec.get("acquisition_note","")+" Candidate image auto-discovered from manufacturer-controlled page metadata; requires visual QA before clearance.").strip()
+              success.append(mid)
+            except Exception as e:
+              failed.append((mid,str(e)))
+              print(f"::warning::{mid}: {e}")
+          regp.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+          print("ACQUIRED",len(success),success)
+          print("FAILED",len(failed),failed)
+      - name: Build visual QA contact sheet
+        shell: python
+        run: |
+          from PIL import Image,ImageOps,ImageDraw
+          import json,pathlib,math
+          root=pathlib.Path("."); data=json.loads((root/"data/model-visuals.json").read_text())
+          items=[(mid,rec) for mid,rec in data["records"].items() if rec.get("original_image")]
+          tw,th=120,90; cols=4; rows=math.ceil(len(items)/cols)
+          sheet=Image.new("RGB",(cols*tw,rows*th),"white"); draw=ImageDraw.Draw(sheet)
+          valid=[]
+          for mid,rec in items:
+            p=root/rec["original_image"].lstrip("/")
+            try:
+              with Image.open(p) as im:
+                im.verify()
+              valid.append((mid,rec,p))
+            except Exception as e:
+              print(f"::warning::{mid}: downloaded asset is not a decodable image: {e}")
+              if p.exists(): p.unlink()
+              rec.pop("original_image",None)
+              rec.pop("source_asset_url",None)
+              rec["acquisition_note"]=(rec.get("acquisition_note","")+" Auto-discovered asset rejected because the downloaded payload was not a decodable image.").strip()
+          regp=root/"data/model-visuals.json"
+          regp.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+          rows=math.ceil(len(valid)/cols)
+          sheet=Image.new("RGB",(cols*tw,max(rows,1)*th),"white"); draw=ImageDraw.Draw(sheet)
+          for i,(mid,rec,p) in enumerate(valid):
+            with Image.open(p) as im:
+              im=ImageOps.exif_transpose(im).convert("RGBA")
+              bg=Image.new("RGBA",(tw-8,th-24),"white")
+              im.thumbnail((tw-12,th-30),Image.Resampling.LANCZOS)
+              bg.alpha_composite(im,((bg.width-im.width)//2,(bg.height-im.height)//2))
+              x=(i%cols)*tw+4; y=(i//cols)*th+4
+              sheet.paste(bg.convert("RGB"),(x,y))
+              draw.text((x,y+th-20),mid,fill="black")
+          out=root/"research/visual-audits"; out.mkdir(parents=True,exist_ok=True)
+          jpg=out/"presentation-contact-sheet.jpg"
+          sheet.save(jpg,quality=35,optimize=True)
+          import base64
+          encoded=base64.b64encode(jpg.read_bytes()).decode("ascii")
+          (out/"presentation-contact-sheet.b64").write_text(encoded)
+          for n,start in enumerate(range(0,len(encoded),50000),1):
+            (out/f"presentation-contact-sheet.part{n:02d}.b64").write_text(encoded[start:start+50000])
+      - name: Validate candidate originals
+        run: |
+          pip install -r requirements-docs.txt
+          python scripts/normalize_model_visuals.py --registry data/model-visuals.json --root . --output-root .site-image-pilot
+          python scripts/verify_model_visuals.py --registry .site-image-pilot/data/model-visuals.json --root .site-image-pilot --models models/THE_LIST.md
+          python scripts/build_visual_contact_sheet.py
+          python scripts/audit_presentation_geometry.py
+      - name: Apply first-pass model-specific QA decisions
+        shell: python
+        run: |
+          import json,pathlib
+          p=pathlib.Path("data/model-visuals.json"); d=json.loads(p.read_text())
+          clear={"GLS-0001","GLS-0025","GLS-0027","GLS-0031","GLS-0033","GLS-0037","GLS-0052","GLS-0078","GLS-0079","GLS-0080","GLS-0081","GLS-0082","GLS-0091","GLS-0100","GLS-0106","GLS-0107","GLS-0108","GLS-0109","GLS-0110","GLS-0111","GLS-0112","GLS-0115"}
+          reject={"GLS-0036","GLS-0051","GLS-0094","GLS-0137","GLS-0138","GLS-0139"}
+          for mid in clear:
+            r=d["records"][mid]
+            if r.get("original_image"): r["state"]="cleared"
+          for mid in reject:
+            r=d["records"][mid]; old=r.pop("original_image",None); r.pop("source_asset_url",None)
+            if old:
+              q=pathlib.Path(old.lstrip("/"))
+              if q.exists(): q.unlink()
+            r["acquisition_note"]=(r.get("acquisition_note","")+" Auto-discovered page image rejected: not sufficiently model-specific for publication. Held from automatic reacquisition pending a better manufacturer asset.").strip()
+          p.write_text(json.dumps(d,indent=2,ensure_ascii=False)+"\n")
+          print("QA cleared",len(clear),"rejected",len(reject))
+      - name: Rebuild normalized audit after QA
+        run: |
+          rm -rf .site-image-pilot
+          python scripts/normalize_model_visuals.py --registry data/model-visuals.json --root . --output-root .site-image-pilot
+          python scripts/verify_model_visuals.py --registry .site-image-pilot/data/model-visuals.json --root .site-image-pilot --models models/THE_LIST.md
+          python scripts/audit_presentation_geometry.py
+      - name: Publish locally preserved model images
+        shell: bash
+        run: |
+          python scripts/normalize_model_visuals.py --registry data/model-visuals.json --root . --write-registry
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path("data/model-visuals.json")
+          d=json.loads(p.read_text())
+          published=0
+          for mid,r in d["records"].items():
+              if r.get("original_image") and r.get("primary_image"):
+                  r["state"]="published"
+                  published+=1
+          p.write_text(json.dumps(d,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+          print("Published",published,"locally preserved model images")
+          PY
+          python scripts/verify_model_visuals.py --registry data/model-visuals.json --root . --models models/THE_LIST.md
+      - name: Build compact visual QA sheet
+        shell: python
+        run: |
+          from PIL import Image,ImageOps,ImageDraw
+          import json,pathlib,math
+          d=json.loads(pathlib.Path("data/model-visuals.json").read_text())
+          rows=[]
+          for mid,r in d["records"].items():
+            p=r.get("original_image")
+            if p: rows.append((mid,pathlib.Path(p.lstrip("/"))))
+          W,CELLW,CELLH=640,128,90
+          H=math.ceil(len(rows)/5)*CELLH
+          sheet=Image.new("RGB",(W,H),"white"); draw=ImageDraw.Draw(sheet)
+          for i,(mid,p) in enumerate(rows):
+            x=(i%5)*CELLW; y=(i//5)*CELLH
+            try:
+              im=Image.open(p).convert("RGB")
+              im.thumbnail((120,66),Image.Resampling.LANCZOS)
+              sheet.paste(im,(x+(120-im.width)//2,y))
+            except Exception: pass
+            draw.text((x+3,y+68),mid,fill="black")
+          pathlib.Path("research/visual-audits").mkdir(parents=True,exist_ok=True)
+          sheet.save("research/visual-audits/presentation-contact-sheet.jpg",quality=35,optimize=True)
+      - name: Commit candidate originals
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/models/original images/models/presentation data/model-visuals.json research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-contact-sheet*.b64 research/visual-audits/presentation-contact-sheet.jpg research/visual-audits/presentation-geometry-audit.md
+          if git diff --cached --quiet; then
+            echo "No new candidate images"
+            exit 0
+          fi
+          git commit -m "Acquire manufacturer-page candidate presentation images"
+          git push origin HEAD:presentation-mission
+ 
