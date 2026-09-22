@@ -11,6 +11,11 @@ on:
     branches: [presentation-mission]
     paths:
       - '.github/workflows/acquire-presentation-image-pilot.yml'
+      - 'data/model-visuals.json'
+
+concurrency:
+  group: acquire-presentation-images-presentation-mission
+  cancel-in-progress: false
 
 permissions:
   contents: write
