@@ -9,6 +9,8 @@ on:
     paths:
       - '.github/workflows/daily-site-link-review.yml'
       - 'scripts/verify_built_site_links.py'
+      - 'scripts/public_route_contract.py'
+      - 'data/public-route-contract.json'
       - 'scripts/audit_repository.py'
       - 'requirements-docs.txt'
       - 'mkdocs.yml'
@@ -50,6 +52,12 @@ jobs:
       - name: Verify every internal page, anchor, and asset
         run: python scripts/verify_built_site_links.py
 
+      - name: Install public compatibility routes
+        run: python scripts/public_route_contract.py --contract data/public-route-contract.json install --site-root site
+
+      - name: Verify built public route contract
+        run: python scripts/public_route_contract.py --contract data/public-route-contract.json verify-built --site-root site
+
       - name: Verify JavaScript syntax
         shell: bash
         run: |
@@ -89,6 +97,7 @@ jobs:
               echo "- HTML pages built: $(find site -type f -name '*.html' | wc -l)"
             fi
             echo "- Internal pages, fragments, static assets, JavaScript, and canonical model paths were checked before the external crawl."
+            echo "- Promised public routes and compatibility aliases were verified from data/public-route-contract.json."
             if [[ -f build/external-link-report.md ]]; then
               echo
               cat build/external-link-report.md
