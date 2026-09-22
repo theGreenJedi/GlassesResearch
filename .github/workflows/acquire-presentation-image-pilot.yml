@@ -115,18 +115,25 @@ jobs:
                   candidates.append(("",raw))
                 for raw in re.findall(r'https?[^"\\\' ]+?\\.(?:png|jpe?g|webp)(?:\\?[^"\\\' ]*)?',html,re.I):
                   candidates.append(("",raw))
+                title_match=re.search(r"<title[^>]*>(.*?)</title>",html,re.I|re.S)
+                title=(title_match.group(1) if title_match else "").lower()
+                page_context=(page+" "+title).lower()
+                context_hits=sum(1 for t in target if t in page_context)
+                page_specific=context_hits>=min(2,max(1,len(target)))
                 seen=set()
-                for alt,raw in candidates:
+                for idx,(alt,raw) in enumerate(candidates):
                   u=urllib.parse.urljoin(page,raw.replace("&amp;","&").replace("\\/","/"))
                   if u in seen: continue
                   seen.add(u)
                   hay=(alt+" "+u).lower()
                   score=sum(2 for t in target if t in hay)
                   if any(x in hay for x in ("hero","product","front","angle")): score+=1
-                  if any(x in hay for x in ("logo","icon","avatar","flag","sprite")): score-=8
-                  ranked.append((score,u))
+                  if page_specific and not any(x in hay for x in ("logo","icon","avatar","flag","sprite","badge")):
+                    score+=1
+                  if any(x in hay for x in ("logo","icon","avatar","flag","sprite","badge")): score-=8
+                  ranked.append((score,-idx,u))
                 ranked.sort(reverse=True)
-                if ranked and ranked[0][0]>0: image=ranked[0][1]
+                if ranked and ranked[0][0]>0: image=ranked[0][2]
               if not image: raise RuntimeError("no model-matched image")
               req=urllib.request.Request(image,headers={"User-Agent":"Mozilla/5.0 GlassesResearch editorial research","Referer":page})
               with urllib.request.urlopen(req,timeout=45) as resp:
