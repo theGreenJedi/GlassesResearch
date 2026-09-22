@@ -1,0 +1,137 @@
+{
+  "schema": 3,
+  "discovered_utc": "2026-09-22T06:16:45.420572+00:00",
+  "candidate_count": 3,
+  "precision_rejected_count": 196,
+  "relationship_counts": {
+    "direct": 2,
+    "enabling": 0,
+    "adjacent": 1,
+    "speculative": 0,
+    "irrelevant": 0
+  },
+  "type_counts": {
+    "model": 2,
+    "tool": 2,
+    "sdk": 1,
+    "community": 1
+  },
+  "routing_counts": {
+    "adjacent_radar": 1,
+    "community_evidence_review": 1,
+    "development_hacking": 2,
+    "model_catalog_review": 2,
+    "research_news_review": 3
+  },
+  "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
+  "collector_errors": [
+    {
+      "url": "https://brilliant.xyz/blog",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.everysight.com/pages/maverick-ai",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "df6f9060cc614ee7",
+      "title": "Mentra 3.3.0-dev.316",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.316",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-09-22T05:42:55Z",
+      "summary": "Mentra 3.3.0-dev.316 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) iOS IPA Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 63243ae . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "a89a67237ac35eee",
+      "title": "Paweł Szydłowski’s ZuckOff App Decodes Hidden Camera Glasses through Bluetooth Signals - freeyork.org",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5Kakwwc2k3VWRYcEJnTHJRbTBZMy02YVMwVEhoRi1ULThuQ0tuSzh5X2k4OUpUODN4VU1BMzFDVVYyQ0Q1ZU9lbjhObUxZbTFkdGtXNGM3WXRMbUJTSG1Fc3BPZUt5aFdtZThfeU9EVW1MeU1DdFBiTUYzQXRIem8?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Mon, 21 Sep 2026 23:27:26 GMT",
+      "summary": "Paweł Szydłowski’s ZuckOff App Decodes Hidden Camera Glasses through Bluetooth Signals freeyork.org",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "bluetooth",
+        "camera"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: camera glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "878cf2b8d9b83b35",
+      "title": "BRN:ASX Announcement - AI and Semiconductor Webinar Presentation - 22 Sep 2026 - Market Index",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeXRKeXVseXJTUE05VS16Wlc3VDJyNlR2SVZENGFxVDl3TlQ1ekZhMEhNbWJ6UVh1VXVFUFl6QngydlphX1h6Z0hHbXBOeWdvcWVycHNscmVNU1FhYWE2MGNkaDA2MkQ3Y2N2NTNMMkxQWlMwUGcyZDZWZTVMTDlfVTJQdk5BdVhpS3hYT1p3Y1JDZUxmbjNWT1E3R0w0R2ZXVE1iUTFPQQ?oc=5",
+      "source": "Google News: edge AI wearable processor",
+      "source_lane": "adjacent_hci",
+      "published": "Tue, 22 Sep 2026 05:03:53 GMT",
+      "summary": "BRN:ASX Announcement - AI and Semiconductor Webinar Presentation - 22 Sep 2026 Market Index",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "announcement"
+      ],
+      "status": "candidate",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    }
+  ]
+}
