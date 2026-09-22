@@ -1,6 +1,6 @@
 <div class="gr-home">
 
-<section class="gr-hero" data-gr-tone="intro" aria-labelledby="gr-home-title">
+<section class="gr-hero" aria-labelledby="gr-home-title">
   <div class="gr-hero-copy">
     <p class="gr-kicker">Independent wearable-intelligence research</p>
     <h1 id="gr-home-title">Understand the glasses.<br>Own the choices.</h1>
@@ -32,7 +32,7 @@
   </div>
 </section>
 
-<section class="gr-section" data-gr-tone="curated" aria-labelledby="gr-now-title">
+<section class="gr-section" aria-labelledby="gr-now-title">
   <div class="gr-section-heading gr-heading-compact">
     <div>
       <p class="gr-kicker">Curated now</p>
@@ -64,7 +64,7 @@
   </div>
 </section>
 
-<section class="gr-section" data-gr-tone="wire" aria-labelledby="gr-home-wire-title" data-home-wire>
+<section class="gr-section" aria-labelledby="gr-home-wire-title" data-home-wire>
   <div class="gr-section-heading gr-heading-compact">
     <div>
       <p class="gr-kicker">Across the wire</p>
@@ -139,7 +139,7 @@
 })();
 </script>
 
-<section class="gr-section gr-finder-section" data-gr-tone="finder" aria-labelledby="gr-finder-title">
+<section class="gr-section gr-finder-section" aria-labelledby="gr-finder-title">
   <div class="gr-section-heading">
     <div>
       <p class="gr-kicker">Discovery</p>
@@ -152,7 +152,7 @@
   <a class="gr-text-link" href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder &amp; Compare <span aria-hidden="true">→</span></a>
 </section>
 
-<section class="gr-section" data-gr-tone="events" aria-labelledby="gr-upcoming-title" data-home-events hidden>
+<section class="gr-section" aria-labelledby="gr-upcoming-title" data-home-events hidden>
   <div class="gr-section-heading gr-heading-compact">
     <div>
       <p class="gr-kicker">Upcoming</p>
@@ -226,7 +226,7 @@
 })();
 </script>
 
-<section class="gr-section" data-gr-tone="explore" aria-labelledby="gr-explore-title">
+<section class="gr-section" aria-labelledby="gr-explore-title">
   <div class="gr-section-heading">
     <div>
       <p class="gr-kicker">Choose a door</p>
@@ -244,7 +244,7 @@
   </div>
 </section>
 
-<section class="gr-mission-band" data-gr-tone="closing" aria-label="GlassesResearch mission">
+<section class="gr-mission-band" aria-label="GlassesResearch mission">
   <div>
     <p class="gr-kicker">Why GlassesResearch exists</p>
     <h2>Document today.<br>Understand tomorrow.</h2>
