@@ -7,6 +7,25 @@ from PIL import ImageChops
 CANVAS=(1600,900)
 MAX_BOX=(1320,650)
 NORMALIZATION="centered-object-1600x900-v3"
+PUBLISH_RIGHTS={
+    "original-photography",
+    "licensed",
+    "manufacturer-press-media",
+    "manufacturer-editorial-use",
+    "open-license",
+    "public-domain",
+}
+def publishable(record: dict) -> bool:
+    required=("credit","rights_basis","retrieved_or_captured","alt")
+    if any(not str(record.get(k,"")).strip() for k in required):
+        return False
+    if str(record.get("rights_basis","")).strip() not in PUBLISH_RIGHTS:
+        return False
+    if not str(record.get("source_url","")).strip() and not str(record.get("original_photo_provenance","")).strip():
+        return False
+    if str(record.get("rights_basis","")).strip()=="manufacturer-editorial-use" and not str(record.get("editorial_purpose","")).strip():
+        return False
+    return True
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--registry",type=Path,required=True)
@@ -58,6 +77,8 @@ def main():
             canvas.save(out,optimize=True)
         record["primary_image"]="/"+out_rel
         record["normalization"]=NORMALIZATION
+        if publishable(record):
+            record["state"]="published"
         made+=1
     if a.write_registry and made:
         a.registry.write_text(json.dumps(data,indent=2)+"\n",encoding="utf-8")
@@ -65,6 +86,7 @@ def main():
         staged=a.output_root/"data/model-visuals.json"
         staged.parent.mkdir(parents=True,exist_ok=True)
         staged.write_text(json.dumps(data,indent=2)+"\n",encoding="utf-8")
-    print(f"Normalized {made} model presentation images")
+    published=sum(1 for r in data.get("records",{}).values() if r.get("state")=="published" and r.get("primary_image"))
+    print(f"Normalized {made} model presentation images; {published} publication-ready")
 if __name__=="__main__":
     main()
