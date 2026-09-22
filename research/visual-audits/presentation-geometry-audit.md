@@ -1,7 +1,7 @@
 # Presentation geometry audit
 
-Models measured: **105**.
-Median occupied canvas area: **42.9%**.
+Models measured: **112**.
+Median occupied canvas area: **44.0%**.
 
 | Model | bbox px | area | min edge px | state |
 |---|---:|---:|---:|---|
@@ -78,6 +78,13 @@ Median occupied canvas area: **42.9%**.
 | GLS-0111 | 926×650 | 41.8% | 125 | cleared |
 | GLS-0112 | 1056×650 | 47.7% | 125 | cleared |
 | GLS-0115 | 1156×650 | 52.2% | 125 | cleared |
+| GLS-0134 | 1238×650 | 55.9% | 125 | candidate |
+| GLS-0145 | 1229×650 | 55.5% | 125 | candidate |
+| GLS-0122 | 1156×650 | 52.2% | 125 | candidate |
+| GLS-0127 | 1068×650 | 48.2% | 125 | candidate |
+| GLS-0131 | 1320×595 | 54.5% | 140 | candidate |
+| GLS-0133 | 1155×650 | 52.1% | 125 | candidate |
+| GLS-0144 | 889×650 | 40.1% | 125 | candidate |
 | GLS-0151 | 649×650 | 29.3% | 125 | candidate |
 | GLS-0152 | 1238×650 | 55.9% | 125 | candidate |
 | GLS-0153 | 1242×650 | 56.1% | 125 | candidate |
