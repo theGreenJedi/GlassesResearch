@@ -30,12 +30,13 @@ jobs:
       - name: Enforce third-party locator boundary
         run: python scripts/verify_visual_locators.py --registry data/model-visuals.json --locators research/visual-audits/model-image-locators.json
       - name: Install image tooling
-        run: pip install "Pillow>=10,<13"
+        run: pip install "Pillow>=10,<13" "PyMuPDF>=1.24,<2"
       - name: Discover manufacturer page images
         shell: python
         run: |
           import json, pathlib, urllib.request, urllib.parse, urllib.error, re, io, time
           from PIL import Image
+          import fitz
           root=pathlib.Path(".")
           out=root/"images/models/original"; out.mkdir(parents=True,exist_ok=True)
           regp=root/"data/model-visuals.json"; data=json.loads(regp.read_text())
@@ -72,6 +73,38 @@ jobs:
             page=rec.get("source_url","")
             if not page: continue
             try:
+              if urllib.parse.urlparse(page).path.lower().endswith(".pdf"):
+                with fetch(page,timeout=45) as resp:
+                  pdfblob=resp.read()
+                doc=fitz.open(stream=pdfblob,filetype="pdf")
+                embedded=[]
+                seen_xrefs=set()
+                for pno in range(len(doc)):
+                  pg=doc[pno]
+                  for imginfo in pg.get_images(full=True):
+                    xref=imginfo[0]
+                    if xref in seen_xrefs: continue
+                    seen_xrefs.add(xref)
+                    try:
+                      item=doc.extract_image(xref)
+                      iblob=item.get("image",b"")
+                      ext=(item.get("ext") or "").lower()
+                      width=int(item.get("width") or 0); height=int(item.get("height") or 0)
+                      if len(iblob)>=5000 and width>=200 and height>=100 and ext in {"jpg","jpeg","png","webp"}:
+                        embedded.append((width*height,len(iblob),xref,ext,iblob))
+                    except Exception:
+                      pass
+                if not embedded:
+                  raise RuntimeError("no usable embedded image in manufacturer PDF")
+                embedded.sort(reverse=True,key=lambda x:(x[0],x[1]))
+                _,_,xref,ext,blob=embedded[0]
+                ext="jpg" if ext=="jpeg" else ext
+                path=out/f"{mid.lower()}.{ext}"; path.write_bytes(blob)
+                rec["original_image"]="/"+str(path).replace("\\","/")
+                rec["source_asset_url"]=page+f"#embedded-image-{xref}"
+                rec["acquisition_note"]=(rec.get("acquisition_note","")+" Candidate image extracted from manufacturer PDF; requires visual QA before clearance.").strip()
+                success.append(mid)
+                continue
               with fetch(page,timeout=30) as resp:
                 html=resp.read().decode("utf-8","ignore")
               pats=[
