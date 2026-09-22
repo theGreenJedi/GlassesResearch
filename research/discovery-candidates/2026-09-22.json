@@ -1,39 +1,49 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-22T15:02:08.711813+00:00",
-  "candidate_count": 75,
-  "classifier_irrelevant_count": 56,
+  "discovered_utc": "2026-09-22T16:47:03.289053+00:00",
+  "candidate_count": 100,
+  "classifier_irrelevant_count": 49,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 19,
-    "broad_web": 42,
-    "developer": 14
+    "adjacent": 49,
+    "broad_web": 36,
+    "community": 1,
+    "developer": 4,
+    "manufacturer_catalog": 1,
+    "research": 11,
+    "retail": 1
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 19,
+    "adjacent": 49,
     "speculative": 0,
-    "irrelevant": 56
+    "irrelevant": 49
   },
   "type_counts": {
-    "model": 2,
-    "review": 1,
-    "video": 5,
-    "news": 44,
-    "research": 1,
-    "tool": 16,
-    "sdk": 16,
+    "model": 3,
+    "review": 2,
+    "news": 63,
+    "research": 11,
+    "tool": 5,
+    "sdk": 5,
+    "hack": 1,
+    "policy": 1,
     "retail": 2,
-    "community": 12
+    "teardown": 1,
+    "community": 14
   },
   "routing_counts": {
-    "adjacent_radar": 19,
-    "community_evidence_review": 2,
+    "adjacent_radar": 49,
+    "community_evidence_review": 3,
+    "deep_research": 1,
     "development_hacking": 2,
     "model_catalog_review": 2,
-    "reject_noise": 56,
-    "research_news_review": 19
+    "policy_privacy": 1,
+    "reject_noise": 49,
+    "report_card_evidence": 1,
+    "research_news_review": 51,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -47,29 +57,871 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "4d8423a17d54db37",
-      "title": "DeepSeek Platform",
-      "url": "https://platform.deepseek.com/sign_in",
-      "summary": "The official version of DeepSeek-V4.1-Flash has been released, featuring comprehensive improvements in text and Agent performance, along with native multimodal visual understanding capabilities.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "released"
-      ],
+      "id": "e8ff50882fd0dc65",
+      "title": "Manufacturer catalog lead: INTRODUCING VIVE EAGLE AI GLASSES",
+      "url": "https://lucyd.co/products/vive-eagle-ai-glasses",
+      "summary": "Same-domain catalog/developer link discovered from https://lucyd.co/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://lucyd.co/",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "direct",
       "content_types": [
         "model",
-        "tool"
+        "sdk"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
         "model_catalog_review",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "58df1d623fb747d8",
+      "title": "Best Live-Captioning Smart Glasses (2026), WIRED Tested | WIRED",
+      "url": "https://www.wired.com/gallery/best-captioning-glasses/",
+      "summary": "Captioning glasses are a distinct subset of smart glasses, and they work exactly as the name suggests, displaying real-time subtitles in front of your eyes—transcribing everything you hear (or ...",
+      "discovery_channel": "broad_web+community+research+retail",
+      "query": "smart glasses; smart glasses site:amazon.com; smart glasses site:walmart.com; smart glasses site:aliexpress.com; smart glasses site:alibaba.com; smart glasses site:spectrum.ieee.org; smart glasses site:reddit.com/r/SmartGlasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "631f7aba61fce734",
+      "title": "Derivative Classification Flashcards - Answers",
+      "url": "https://www.answers.com/guide/55655",
+      "summary": "Start studying Derivative Classification flashcards. Learn terms, definitions, and more with flashcards. Use the interactive study modes to quiz yourself.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "study"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a3b032cdc60c44ce",
+      "title": "\"Signal faible ou inexistant\" TV SAMSUNG [Résolu] - TV & Vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-26446259-ma-tv-samsung-ne-marche-plus-signal-faible-ou-inexistant",
+      "summary": "Bonjour, J'ai acheté un télé samsung (qui est aussi un écran d'ordi) il y a 2 mois. Elle marchait à merveille jusqu'à hier : quand j'ai voulu l'allumer c'est affiché \"signal faible ou inexistant\". Depuis je ne capte plus aucunes chaînes. J'ai tenté de brancher et débrancher les câbles à plusieurs reprises, aucun résultat. J'ai également tenté de faire des recherches automatiques ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "90c0e5a915306419",
+      "title": "Answers about Physics",
+      "url": "https://www.answers.com/t/physics",
+      "summary": "Physics regards the physical aspects of the natural world. It includes topics that deal with forces on different bodies within the universe and phenomena that explain how the universe works.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b4758be97798bbc4",
+      "title": "Benelli choke tube markings? - Answers",
+      "url": "https://www.answers.com/weaponry/Benelli_choke_tube_markings",
+      "summary": "Notches on the Choke TubeMost standard choke tubes have notches on their ends. The notches can be used to identity your choke tube, but they can be difficult to see. The following list shows what ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b2765a90b33eaeef",
+      "title": "Best Beauty Salons near me in Mision del Arco, Hermosillo",
+      "url": "https://www.fresha.com/lp/en/bt/beauty-salons/in/mx-hermosillo/mision-del-arco",
+      "summary": "‎ Book online with the best Beauty Salons near you in Mision del Arco. Great offers and discounts! Read reviews and compare the top rated Beauty Salons near you on Fresha.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "829e57f1dac147f3",
+      "title": "Casa Ley",
+      "url": "https://www.casaley.com.mx/",
+      "summary": "Descubre los 3 pasos para obtenerla Ver más Información legal Aviso de privacidad Aviso de privacidad de reclutamiento Factura electrónica Derechos del consumidor Régimen opcional para grupos de sociedades u otros Denuncia confidencial Nuevo domicilio fiscal",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7a95842268389642",
+      "title": "ClassLink - Login",
+      "url": "https://launchpad.classlink.com/",
+      "summary": "Can't find your login page? Login here © 2026",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "917b09ba4c34ca47",
+      "title": "ClassLink | Identity & Access Management for Education",
+      "url": "https://www.classlink.com/",
+      "summary": "ClassLink is a provider of identity and access management products offering instant access to apps and files with SSO, class rostering, account provisioning, and analytics.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e258953ba9fbc198",
+      "title": "ClassLink | Statewide Overview",
+      "url": "https://www.classlink.com/solutions/statewide-overview",
+      "summary": "Ensure equitable digital learning access and safeguard Personally Identifiable Information (PII) for every learner with a statewide ClassLink adoption.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "75a7e30e84864d08",
+      "title": "Collateralized Stablecoin Definition | CoinMarketCap",
+      "url": "https://coinmarketcap.com/academy/glossary/collateralized-stablecoin",
+      "summary": "A “collateralized stablecoin” is a stablecoin that is entirely or almost entirely backed by collateral held in a reserve. A stablecoin is a digital asset built on the blockchain that is designed to maintain a price peg at a designated price, most often $1. In order to maintain their use and ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bc0a4b0d85a17e16",
+      "title": "Create and edit documents for free | Microsoft Word for the Web",
+      "url": "https://word.cloud.microsoft/en-us/",
+      "summary": "Create, edit, and share documents from any location with Word online. Work confidently from any device with features like real-time updates, automatic saving, and version history.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "55ab5817b16310b7",
+      "title": "Crypto-Collateralized Stablecoins Explained: How They Work and Why They ...",
+      "url": "https://www.bleap.finance/blog/crypto-collateralized-stablecoins-explained",
+      "summary": "Discover how crypto-collateralized stablecoins work, how over-collateralization keeps their peg stable, and why they’re vital for DeFi. Learn about DAI, sUSD, and LUSD — and how to store them safely with non-custodial wallets like Bleap.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "671f4428d4075c88",
+      "title": "Directorio de Negocios de MISION DEL ARCO, HERMOSILLO, Sonora",
+      "url": "https://www.yaloencontre.mx/mx/sonora/hermosillo/mision-del-arco",
+      "summary": "Bienvenido al Directorio de Empresas y Negocios más Completo de Mision Del Arco, Hermosillo, Sonora, donde encontrarás Bienes, Productos o Servicios que buscas.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0887313696de829d",
+      "title": "Driver creative labs inc vf 0050 [Résolu] - Pilotes (drivers)",
+      "url": "https://forums.commentcamarche.net/forum/affich-6836513-driver-creative-labs-inc-vf-0050",
+      "summary": "Driver creative labs inc vf 0050 Résolu Windows Pilote badra - Modifié le 15 juin 2008 à 23:18 milovva - 29 nov. 2012 à 20:53 svp je veux telecharger le driver de creative labs inc vf 0050 sur Windows XP Configuration: Windows XP Internet Explorer 7.0 Répondre (18) Moi aussi (3) Posez votre question Partager",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "694493d090520e9f",
+      "title": "Free Microsoft 365 Online | Word, Excel, PowerPoint",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/free-office-online-for-the-web",
+      "summary": "Access web and mobile versions of apps including Word, Excel, PowerPoint, OneDrive, and Outlook. Save and share your photos, videos, and documents more securely in OneDrive. Use Microsoft 365 apps across your browser, iOS, and Android devices. Create inspiring designs with free templates.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b1ce4ca67bdb033a",
+      "title": "Free Online Document Editing with Microsoft Word | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/word",
+      "summary": "Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and clarity. Write, edit, and collaborate anywhere.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bb9e2babef6cf775",
+      "title": "Free online document editor | Microsoft Word",
+      "url": "https://word.cloud.microsoft/create/en/document-editor/",
+      "summary": "Create and edit web-based documents with Microsoft Word. Store documents online and access them from any computer.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fdbc25cc6aeb0818",
+      "title": "Google Maps",
+      "url": "https://maps.google.com.mx/mapfiles//home3.html",
+      "summary": "Explore the world and navigate your surroundings with Google Maps, offering tools for planning trips, discovering places, and much more.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71ddda6fb74487dc",
+      "title": "Google Maps",
+      "url": "https://maps.l.google.com/",
+      "summary": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c7badbbd91ccfeac",
+      "title": "Google Maps",
+      "url": "https://maps.google.co.uk/maps?oe=UTF-8",
+      "summary": "We would like to show you a description here but the site won’t allow us.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "791bbe2b1a6638f0",
+      "title": "La Cabina Facial de Celia, Avenida Navojoa Col. misión del arco ...",
+      "url": "https://www.beautynailhairsalons.com/MX/Hermosillo/113193760542812/La-Cabina-Facial-de-Celia",
+      "summary": "Información de contacto, mapa y direcciones, formulario de contacto, horario de apertura, servicios, puntuaciones, fotos, videos y anuncios de La Cabina Facial de Celia, Belleza, cosmética y cuidado personal, Avenida Navojoa Col. misión del arco, Hermosillo.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c3bab7db8eda0fa",
+      "title": "Login",
+      "url": "https://login.classlink.com/my/charlestonsc",
+      "summary": "Login with ClassLink Welcome to Charleston County's ClassLink. Username",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "830cb60e4dc206f3",
+      "title": "Login - ClassLink",
+      "url": "https://launchpad.classlink.com/login",
+      "summary": "Sign in to ClassLink Username",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2b91c634c6e44f2e",
+      "title": "Login - my.classlink.com",
+      "url": "https://my.classlink.com/interlakes",
+      "summary": "Login with ClassLink Sign in with Google Or sign in using:",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "baba2d8f3df54335",
+      "title": "Login - my.classlink.com",
+      "url": "https://my.classlink.com/aacps",
+      "summary": "Sign in with Microsoft ClassLink",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "228c25d704f59e62",
+      "title": "Los mejores salones de belleza cerca de mí en Hermosillo",
+      "url": "https://www.fresha.com/lp/es/bt/salones-de-belleza/mx-hermosillo",
+      "summary": "Hermosillo cuenta con una amplia variedad de maquilladores profesionales para eventos, bodas y looks diarios. Explora y reserva a los mejores maquilladores cerca de ti en Hermosillo.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "567840ee8f80eda2",
+      "title": "Mapas de Bing - mx.bing.com",
+      "url": "https://www.mx.bing.com/maps",
+      "summary": "Especifica varias ubicaciones en el mapa, obtén indicaciones de transporte público/a pie/en coche, consulta las condiciones del tráfico en directo, planifica viajes, mira imágenes por satélite, aéreas o en 3D. Haz más cosas con Bing Maps.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "17eedf9efc90a7e6",
+      "title": "Maps, directions & route finder for UK & Europe - RAC",
+      "url": "https://www.rac.co.uk/route-planner/",
+      "summary": "Our route finder service offers driving directions and maps for the UK, Europe and beyond. You can get live route planning, with real-time traffic updates. The Maps feature allows you to find hotels, garages and car dealerships by location or along your route.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0adf436731a99220",
+      "title": "Mexico address format & Mexican mailing address examples - Smarty",
+      "url": "https://www.smarty.com/global-address-formatting/mexico-address-format-examples",
+      "summary": "Postal code format 99999 Postal service provider and website Correos de México https://www.correosdemexico.gob.mx/",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b50da2da85e970e6",
+      "title": "Microsoft Word - App Store",
+      "url": "https://apps.apple.com/us/app/microsoft-word/id586447913",
+      "summary": "Draft, edit, collaborate, and share with confidence – anytime, anywhere. Create impactful blogs, proposals, CVs, branding materials and more. Customise every document with rich formatting options and professionally designed templates.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
         "development_hacking",
         "adjacent_radar"
       ],
@@ -79,18 +931,233 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3499587f808ed3c4",
-      "title": "DeepSeek | Into the Unknown",
-      "url": "https://deepseek.com/en/index.html",
-      "summary": "The official version of DeepSeek-V4.1-Flash has been released, featuring comprehensive improvements in text and Agent performance, along with native multimodal visual understanding capabilities.",
+      "id": "34ae4581807ebacd",
+      "title": "Microsoft Word - Download",
+      "url": "https://microsoft-word.en.softonic.com/",
+      "summary": "Microsoft Word continues to prove why it remains the default choice for document creation across schools, businesses, and personal use. Its blend of familiar tools, powerful formatting, and evolving collaboration features keeps it relevant in a changing digital workspace.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable eye tracking",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "released"
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
       ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ef2c1368812422ce",
+      "title": "Microsoft Word - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft_Word",
+      "summary": "Word files are commonly used as the format for sending text documents via e-mail because almost every user with a computer can read a Word document by using the Word application, a Word viewer or a word processor that imports the Word format (see Microsoft Word Viewer).",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4e9bfe65bfb4e106",
+      "title": "MISION DEL ARCO (Hermosillo) Street Guide and Map",
+      "url": "https://mexico-streets.openalfa.com/mision-del-arco_hermosillo",
+      "summary": "Street directory and street map of MISION DEL ARCO. Directory of services in MISION DEL ARCO: shops, restaurants, leisure and sports facilities, hospitals, gas stations and other places of interest.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c06db9b538cb7b8b",
+      "title": "My Classes - mybackpack.classlink.com",
+      "url": "https://mybackpack.classlink.com/login?force=true",
+      "summary": "Sign in to console Login with LaunchPad below. Login",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a7f3748eac479a1f",
+      "title": "Problème carte réseau [Résolu] - Carte-mère / RAM",
+      "url": "https://forums.commentcamarche.net/forum/affich-37522737-probleme-carte-reseau",
+      "summary": "Bonjour, Windows + R Tape --> devmgmt.msc et OK. Tu as quoi dans cartes réseau ? Donne le no. d'identification de matériel de la carte intel (R) wireless-AC 9462 Regarde ceci --> Trouver le numéro d'identification d'un périphérique Poste le no. dans ton prochain message. Marque et no. du modèle du pc ? Windows 8, 10 ou 11 ? 32 ou 64 bits ?",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8fc6075209c6e917",
+      "title": "Route Planner | Directions, traffic and maps | AA",
+      "url": "https://www.theaa.com/route-planner/route",
+      "summary": "Use AA Route Planner to get directions. Find routes from a street, postcode, town, city or landmark to your destination. With maps, times, distance and miles.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "12ee2ff7e8ae683c",
+      "title": "Sign in to ClassLink - beta-login.classlink.com",
+      "url": "https://beta-login.classlink.com/my/cl",
+      "summary": "Login with ClassLink Sign in with ADFS Sign in with Google",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7fb501287aff3508",
+      "title": "Sign in to LaunchPad - login.classlink.com",
+      "url": "https://login.classlink.com/my/ocps",
+      "summary": "Login with ClassLink Department of Children and Families Abuse Hotline: 1-800-962-2873 Parent Login",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7afd50ee2971ab70",
+      "title": "Sign in to your account",
+      "url": "https://www.office.com/launch/word",
+      "summary": "Sign in to access Microsoft Word and collaborate on documents online with OneDrive.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
@@ -109,230 +1176,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2bd6998178a6e60b",
-      "title": "DeepSeek网页版 · 无需下载 · 网页版在线聊天",
-      "url": "https://pc.deepseeks-ai.com.cn/index.html",
-      "summary": "DeepSeek网页版：无需下载，网页版在线聊天。deepseek AI 智能问答、写作与编程一站完成，deepseek下载全平台客户端，deepseek开放平台 API 服务，deepseek官网入口直达。deepseek - 探索未至之境。",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "api"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "sdk"
-      ],
-      "primary_type": "sdk",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a5c21135387b34c",
-      "title": "AFFCU WITH YOU FOR LIFE 2021 - ReadkonG.com",
-      "url": "https://www.readkong.com/page/affcu-with-you-for-life-2021-8770905",
-      "summary": "These include the Million Summer Meals (Director and Chairman of the Supervisory program and support for Honor Flight. This Committee), Ms. Georgia Snodgrass (Director), Mr. community support along with the Credit Union’s Brian K. Rawls (Director), and Mr. John A. Szulta financial education program and products and (Director).",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8df0cebb00b5e9d3",
-      "title": "Air Force Federal Credit Union Board of Directors",
-      "url": "http://www.usacreditunions.com/air-force-federal-credit-union-8169/board-of-directors",
-      "summary": "The full list of the current Air Force FCU board of directors is listed here. The board of directors is responsible for the general direction and control of the credit union.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d698ed8f67dc7128",
-      "title": "Brian K. Rawls - MarketScreener",
-      "url": "https://www.marketscreener.com/insider/BRIAN-K-RAWLS-A2G9GQ/experience/",
-      "summary": "Find out more about Brian K. Rawls's international, operational and industry experience. 1 positions known in addition to Director/Board Member at Air Force Federal Credit Union",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b856e6e65ed74c0",
-      "title": "Brian K. Rawls: Empleo, Relaciones y Red - MarketScreener",
-      "url": "https://es.marketscreener.com/insider/BRIAN-K-RAWLS-A2G9GQ/",
-      "summary": "Director/Board Member en Air Force Federal Credit Union., Descubre el historial de cargos conocidos de Brian K. Rawls, la red y las relaciones 9. Descubre sus activos públicos conocidos.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4c53449e68005329",
-      "title": "Brian K. Rawls: Positions, Relations and Network - MarketScreener",
-      "url": "https://in.marketscreener.com/insider/BRIAN-K-RAWLS-A2G9GQ/",
-      "summary": "Director/Board Member at Air Force Federal Credit Union, Discover Brian K. Rawls's known position history, network and 9 relationships. Find out about his known public assets.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f66fa8ad8f8069ba",
-      "title": "Brian K. Rawls: Postes, Relations & Réseau - Zonebourse",
-      "url": "https://www.zonebourse.com/insider/BRIAN-K-RAWLS-A2G9GQ/",
-      "summary": "Director/Board Member chez Air Force Federal Credit Union, Découvrez l'historique des postes connus de Brian K. Rawls, le réseau et les 9 relations de Brian K. Rawls.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "11b8d35cb48565fa",
-      "title": "Brian Rawls - ZoomInfo",
-      "url": "https://www.zoominfo.com/p/Brian-Rawls/1593821939",
-      "summary": "Brian Rawls is a Vice Chair at U.S. Air Force based in Washington, D.C., District of Columbia. Previously, Brian was a Member at Professional Housing Management Association.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f79de5ac830616f5",
-      "title": "DeepSeek",
-      "url": "https://cdn.deepseek.com/",
-      "summary": "Upload documents, engage in long-context conversations, and get expert help in AI, natural language processing, and beyond. | 深度求索（DeepSeek）助力编程代码开发、创意写作、文件处理等任务，支持文件上传及长文本对话，随时为您提供高效的AI支持。",
+      "id": "27da8bf998d4bfa8",
+      "title": "Stablecoin - Binance",
+      "url": "https://www.binance.com/en/academy/glossary/stablecoin",
+      "summary": "A stablecoin is a cryptocurrency designed to maintain a stable market value, typically by pegging to a fiat currency, commodity, or other asset. Most stablecoins are fiat-collateralized, backed 1:1 by reserves held by the issuing entity.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -356,10 +1203,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3233fa7f4d0fc404",
-      "title": "DeepSeek - Into the Unknown",
-      "url": "https://chat.deepseek.com/sign_in",
-      "summary": "Upload documents, engage in long-context conversations, and get expert help in AI, natural language processing, and beyond. | 深度求索（DeepSeek）助力编程代码开发、创意写作、文件处理等任务，支持文件上传及长文本对话，随时为您提供高效的AI支持。",
+      "id": "ab0ebbb4fe98fbd0",
+      "title": "Stablecoins Explained: Why Collateral Matters More Than Interest",
+      "url": "https://moneyonchain.com/what-is-a-stablecoin-and-why-is-collateral-more-important-than-interest-rates/",
+      "summary": "Discover what stablecoins are, how different collateral models work—from fiat and crypto to algorithmic—and why robust backing is more critical than interest rates for stability and trust.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -383,10 +1230,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d687c090640f9650",
-      "title": "DeepSeek 网页版｜免费 AI 智能助手",
-      "url": "https://deepseek-baby.com.cn/",
-      "summary": "DeepSeek 网页版｜免费 AI 智能助手。无需下载，打开即用，支持深度推理、文档解析、代码生成、多语言翻译。探索未至之境。 帮我写作 学习关于 分析图像 摘要文本 分析数据 头脑风暴 提升写作水平 翻译 生成图像 生成创意 + 查看更多",
+      "id": "18c584d53a07cfe0",
+      "title": "Stablecoins: Definition, How They Work, and Types - Investopedia",
+      "url": "https://www.investopedia.com/terms/s/stablecoin.asp",
+      "summary": "Commodity-backed stablecoins, a type of fiat-collateralized coin, are linked to commodities like gold or oil. They typically hold the commodity through third-party custodians or related...",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -410,10 +1257,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "85bd634c7a3171b1",
-      "title": "deepseek在线版登录入口 deepseek官网直达链接_百度知道",
-      "url": "https://zhidao.baidu.com/question/1396836794070558740.html",
-      "summary": "通过官网 https://chat.deepseek.com 访问后，用户可根据需求选择登录方式，并体验多端同步、文件上传、深度思考等核心功能，满足从日常问答到专业分析的多样化需求。",
+      "id": "9437c93a9abb26f8",
+      "title": "What are Stablecoins? (Tether, BUSD, DAI, USDC) -2026 Updated - 99Bitcoins",
+      "url": "https://99bitcoins.com/what-are-stablecoins/",
+      "summary": "TUSD: TrueUSD is a newer fiat-collateralized stablecoin that attempts to address the criticism directed at Tether. Collateral US dollars are held in the bank accounts of multiple trust companies. These bank accounts are now publicly audited in real-time by a third-party accounting firm.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -437,10 +1284,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4b3d020b4a6e9f3b",
-      "title": "deepseek官方免费版 deepseek网页在线使用_百度知道",
-      "url": "https://zhidao.baidu.com/question/630928773807665692.html",
-      "summary": "DeepSeek官方免费版可通过网页在线使用，访问入口为： https://chat.deepseek.com。 以下是详细说明： 一、平台访问与账号设置 访问方式 直接通过浏览器输入网址 https://chat.deepseek.com 进入主页面。 新用户需使用 手机号或邮箱 完成注册，系统会发送验证码进行身份核验。",
+      "id": "11b2fae917cc29b7",
+      "title": "What are stablecoins? How USDC and USDT work in 2026",
+      "url": "https://nexo.com/blog/what-are-stablecoins-explained",
+      "summary": "Crypto-collateralized stablecoins: These are backed by other cryptocurrencies. For example, you might add $150 worth of Ether (ETH) into a smart contract to receive $100 worth of a stablecoin like DAI. The extra cushion (called overcollateralization) ensures the stablecoin stays close to $1, even if the value of Ether falls.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -464,37 +1311,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "695622523cc657ea",
-      "title": "deepseek网页版入口在哪里 - 智能助手",
-      "url": "https://agents.baidu.com/content/question/fc457ed9dc1b71f2d1e651c7",
-      "summary": "打开浏览器，访问DeepSeek的官方网站： https://www.deepseek.com。 如果是首次使用DeepSeek，需要点击“注册”按钮，按照提示填写相关信息并完成注册。 注册成功后，使用注册邮箱和密码登录。 登录后，用户将进入DeepSeek的主界面，就可以开始使用啦！",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "54d4f7794bfa8b9a",
-      "title": "LinkedIn",
-      "url": "https://www.linkedin.com/feed/",
-      "summary": "We would like to show you a description here but the site won’t allow us.",
+      "id": "ea2f676baba4a8e9",
+      "title": "What is 0050 normal time? - Answers",
+      "url": "https://www.answers.com/health-conditions/What_is_0050_normal_time",
+      "summary": "Normal time? 0050 is 50 minutes after midnight - based on the 24 hour clock system. Or it could be classed as being ten minutes to one o'clock in the morning (am).",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -518,10 +1338,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c4ae9fd8b846a4f7",
-      "title": "Network of Brian K. Rawls, Analysis of 9 relations - MarketScreener",
-      "url": "https://www.marketscreener.com/insider/BRIAN-K-RAWLS-A2G9GQ/network/",
-      "summary": "Identify the source of Brian K. Rawls's network. Among these 1 positions of which Director/Board Member at Air Force Federal Credit Union, he knows 9 people directly.",
+      "id": "225e25bf6190f877",
+      "title": "What is a Stablecoin: types, trade-offs, and how they run in 2026",
+      "url": "https://chainstack.com/what-is-a-stablecoin/",
+      "summary": "A stablecoin is different: it’s issued to track the dollar or another currency, backed by cash or collateral, and meant to hold steady so it can be used like digital cash on-chain. How does a Stablecoin work to maintain value? Stablecoins hold their peg with different mechanisms: Fiat-backed coins use bank reserves in cash and short-term ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e0d7479e6a941d72",
+      "title": "What Is Collateralized Stablecoin? Meaning & Definition",
+      "url": "https://blockinsider.com/glossary/collateralized-stablecoin",
+      "summary": "What is a Collateralized Stablecoin? A Collateralized Stablecoin is a digital asset that is designed to have a stable value, reducing the volatility often associated with cryptocurrencies.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77522f3b04dba08a",
+      "title": "Where is telephone country code 0050? - Answers",
+      "url": "https://www.answers.com/telecommunications/Where_is_telephone_country_code_0050",
+      "summary": "Telephone country codes never begin with zero.Country code +5, dialed as 00 5 from many places, is an incomplete code somewhere in the Americas. You need one or two more digits to specify the ...",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -545,12 +1419,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "20f05ad46f7ce04a",
-      "title": "William Rawls - -- | LinkedIn",
-      "url": "https://www.linkedin.com/in/william-rawls-934080118",
-      "summary": "View William Rawls’ profile on LinkedIn, a professional community of 1 billion members.",
+      "id": "953a7bb4876f5786",
+      "title": "Word help & learning | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/word/",
+      "summary": "Get answers to all of your Microsoft Word questions. Find Word help, how-to articles, training videos, tutorials, and more.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable eye tracking",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -559,12 +1433,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -573,167 +1446,186 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a1af17b0d0317021",
-      "title": "Canlı yayın özelliğini kullanmaya başlama - YouTube Yardım",
-      "url": "https://support.google.com/youtube/answer/2474026?hl=tr",
-      "summary": "Canlı yayın sırasında ve sonrasında YouTube Studio'daki Canlı Yayın Kontrol Odası'nda iki yayın için birleştirilmiş canlı yayın metriklerinizi görüntüleyebilirsiniz. Yalnızca dikey yayınınıza ait metrikler, yayından 24 saat sonra kullanılabilir. Yayın metriklerinizi nasıl görüntüleyeceğinizi öğrenin.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "da76c5545cae3cbb",
+      "title": "DOT Oral Fluid Specimen Collection Procedures Guidelines",
+      "url": "https://www.transportation.gov/sites/dot.gov/files/2025-01/oral-fluid-specimen-collection-procedures-guidelines-january-2025.pdf",
+      "summary": "You will need to review the procedures required for a successful oral fluid specimen collection with the employee, as stated in the manufacturer’s instructions for the specimen collection device that will be used.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1dc66d2d96127ac7",
-      "title": "Create & manage playlists - Computer - YouTube Help",
-      "url": "https://support.google.com/youtube/answer/57792",
-      "summary": "You can also manage your playlists in YouTube Studio. If a video or channel’s audience is \"made for kids\" and you’re on a homepage, you can't add it to a playlist. You can still add content from search results into playlists. Subscribe to the YouTube Viewers channel for the latest news, updates, and tips.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "849985e28edc29ef",
-      "title": "Dangal TV Channel - YouTube",
-      "url": "https://www.youtube.com/channel/UCNzmmbXIbMzlqE8nD1PBXfg",
-      "summary": "Welcome to Dangal TV – India’s Favorite Family Entertainment Channel! 📺 Dangal TV is a leading 24-hour Hindi General Entertainment Channel, bringing powerful stories and unforgettable ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0d6c97086bde1c76",
-      "title": "r/mapswithoutnewzealand - Reddit",
-      "url": "https://www.reddit.com/r/mapswithoutnewzealand/",
-      "summary": "r/mapswithoutnewzealand: r/mapswithoutnewzealand will be going private in protest of Reddit's recent behavior and planned changes to the API, heavily…",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 3,
       "keyword_hits": [
-        "api"
+        "review"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "sdk",
-        "community"
-      ],
-      "primary_type": "sdk",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "951d3c242ae5e0ab",
-      "title": "Rozwiązywanie problemów z błędami dotyczącymi filmów ...",
-      "url": "https://support.google.com/youtube/answer/3037019?hl=pl",
-      "summary": "Aby chronić społeczność YouTube, możemy zablokować niezalogowanym użytkownikom dostęp do filmów na YouTube, gdy próbują pobrać materiał do odtwarzania offline lub wyświetlić określone treści z udziałem nieletnich. Jeśli zajmujesz się pracą naukową i próbujesz uzyskać dostęp do danych YouTube na potrzeby badań akademickich, możesz zgłosić się do programu dla ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "be28fb70e59fb843",
-      "title": "Used Volkswagen cars for sale near Desert Hot Springs, CA",
-      "url": "https://www.cars.com/shopping/volkswagen/desert_hot_springs-ca/",
-      "summary": "Shop Volkswagen vehicles in Desert Hot Springs, CA for sale at Cars.com. Research, compare, and save listings, or contact sellers directly from 20 Volkswagen models in Desert Hot Springs, CA.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
+        "review",
         "research"
       ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7c34aa22d023a81d",
+      "title": "git - Volver a commit anterior - Stack Overflow en español",
+      "url": "https://es.stackoverflow.com/questions/41489/volver-a-commit-anterior",
+      "summary": "Puedes volver a una revisión antigua usando checkout y pasando el hash del commit. Por ejemplo: git checkout ab25f1ln2b4o3a9c4u1v6k4n1m7 . No olvides el punto al final. También puedes descartar cambios mediante reset pasándole el numero de commits. Por ejemplo, para descartar los últimos 3 commits: git reset --hard HEAD~3 La diferencia entre checkout y reset es que en éste último se ...",
+      "discovery_channel": "developer",
+      "query": "Project Aria developer smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ef510447c43c62b",
+      "title": "how to change name on Polish airlines ticket | Complete Guide to ...",
+      "url": "https://colorado.forums.rivals.com/threads/how-to-change-name-on-polish-airlines-ticket-complete-guide-to-changing-name-on-polish-airlines.62448/",
+      "summary": "Call ☎️📞+1-833- 235-4951‬ now to change, edit, or correct your name on a Polish Airlines ticket fast and easily. Whether you're dealing with a simple spelling error, a name correction due to marriage, or need to switch the passenger name entirely, getting in touch with Polish Airlines' customer...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d1dc88bf625fc6f9",
+      "title": "Qué hago si no encuentro el Sql Server Configuration Manager en Windows ...",
+      "url": "https://es.stackoverflow.com/questions/35963/qu%C3%A9-hago-si-no-encuentro-el-sql-server-configuration-manager-en-windows-10-para",
+      "summary": "Tengo entendido de que en Windows 10 se busca de la siguiente manera Control Panel→Administrative Tools→Computer Management, pero cuando llego a Computer Management no me aparece el Sql Server",
+      "discovery_channel": "developer",
+      "query": "Project Aria developer smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dac50e6495d51129",
+      "title": "What is the difference between a .py file and .ipynb file?",
+      "url": "https://stackoverflow.com/questions/57502484/what-is-the-difference-between-a-py-file-and-ipynb-file",
+      "summary": ".py is a regular python file. It's plain text and contains just your code. .ipynb is a python notebook and it contains the notebook code, the execution results and other internal settings in a specific format. You can just run .ipynb on the jupyter environment. Better way to understand the difference: open each file using a regular text editor like notepad (on Windows) or gedit (on Linux ...",
+      "discovery_channel": "developer",
+      "query": "Project Aria developer smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "67f7f8c6b981bd3b",
+      "title": "Apache OpenOffice - Official Download",
+      "url": "https://www.openoffice.org/download/index.html",
+      "summary": "Official Apache OpenOffice download page. Join the OpenOffice revolution, the free office productivity suite with over 390 million trusted downloads.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0793be174c43cf4d",
+      "title": "Best Buy Albuquerque",
+      "url": "https://stores.bestbuy.com/nm/albuquerque/55-hotel-cir-ne-223.html",
+      "summary": "At Best Buy Albuquerque, we specialize in helping you find the best technology to enrich your life. Together, we can transform your living space with the latest smart home technology, HDTVs, computers and gaming consoles from your favorite brands.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
         "retail"
       ],
-      "primary_type": "research",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -743,803 +1635,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "85bf3ee9af61c6dd",
-      "title": "आपकी रसोई के मसाले कितने शुद्ध? हल्दी, मिर्च, जीरा और धनिया की इन ...",
-      "url": "https://www.jagran.com/lifestyle/food-news-how-pure-are-your-kitchen-spices-check-turmeric-chili-cumin-and-coriander-with-these-methods-40381069.html",
-      "summary": "सावधान! आप भी तो नहीं खा रहे नकली काली मिर्च, गोंद और मैदा में डुबोकर चमकदार बनाने वाली फैक्ट्री का भंडाफोड़ त्योहार आते ही बाजार में मिलावटी सामानों की भरमार, नवादा में जांच टीम नदारद; सैंपल ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a53178e740d56850",
-      "title": "बाल झड़ने से पहले शरीर देता है ये 5 संकेत, समय रहते पहचानेंगे तो बच ...",
-      "url": "https://ndtv.in/lifestyle/hair-loss-5-early-signs-before-baldness-how-to-stop-hair-fall-12039410",
-      "summary": "Hair Loss Signs: बाल झड़ने से पहले शरीर कई संकेत देता है. जैसे बाल पतले होना, मांग चौड़ी होना और हेयरलाइन पीछे जाना. इसके अलावा, समय रहते पहचान और सही इलाज से गंजेपन का खतरा कम किया जा सकता है.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3553030c65692774",
-      "title": "शरीर में विटामिन डी की कमी होने पर कौन से लक्षण दिखते हैं, बता रहे हैं ...",
-      "url": "https://www.indiatv.in/health/doctors-explain-the-symptoms-of-vitamin-d-deficiency-in-the-body-2026-09-20-1244320",
-      "summary": "विटामिन D एक ज़रूरी पोषक तत्व है जो हड्डियों को मजबूत बनाए रखने में मदद करता है। डॉक्टर बता रहे हैं इसकी कमी से शरीर में कौन से लक्षण नज़र आने लगते हैं।",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8cee7b77eadf8a1f",
-      "title": "सिर में बार बार होती है खुजली और रूसी? हो सकता है Seborrheic Dermatitis ...",
-      "url": "https://www.patrika.com/health-news/seborrheic-dermatitis-symptoms-causes-and-treatment-20900035",
-      "summary": "Seborrheic Dermatitis: सिर में बार बार डैंड्रफ, खुजली और पपड़ी बनने से परेशान हैं तो यह सेबोरिक डर्मेटाइटिस हो सकता है। आइए मेयो क्लिनिक और ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "df88d6d0a44dcf53",
-      "title": "सिर्फ मसाला नहीं, दवा बनाने में भी काम आती है दालचीनी? शरीर पर इसके असर ...",
-      "url": "https://www.jansatta.com/health-news-hindi/cinnamon-health-benefits-and-medicinal-uses-doctor-advice-hindi-news/4704714/",
-      "summary": "Hindi News health news hindi cinnamon health benefits and medicinal uses doctor advice hindi news",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5dc765cf09619a3e",
-      "title": "सीर माल डिश किससे बनती है English-speaking jobs in Switzerland",
-      "url": "https://englishjobsearch.ch/jobs/%e0%a4%b8%e0%a5%80%e0%a4%b0_%e0%a4%ae%e0%a4%be%e0%a4%b2_%e0%a4%a1%e0%a4%bf%e0%a4%b6_%e0%a4%95%e0%a4%bf%e0%a4%b8%e0%a4%b8%e0%a5%87_%e0%a4%ac%e0%a4%a8%e0%a4%a4%e0%a5%80_%e0%a4%b9%e0%a5%88",
-      "summary": "Oversee and optimize the distribution network for global clinical trials, managing over 100k shipments and 50m CHF in spend. Requires strong supply chain expertise, GxP knowledge, and SRM skills.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "efd955f4701fd104",
-      "title": "सीर माल डिश किससे बनती है Jobs in United States (11,000+ Open Roles ...",
-      "url": "https://www.linkedin.com/jobs/%E0%A4%B8%E0%A5%80%E0%A4%B0-%E0%A4%AE%E0%A4%BE%E0%A4%B2-%E0%A4%A1%E0%A4%BF%E0%A4%B6-%E0%A4%95%E0%A4%BF%E0%A4%B8%E0%A4%B8%E0%A5%87-%E0%A4%AC%E0%A4%A8%E0%A4%A4%E0%A5%80-%E0%A4%B9%E0%A5%88-jobs",
-      "summary": "Today's top 11,000+ सीर माल डिश किससे बनती है jobs in United States. Leverage your professional network, and get hired.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4a0c7fcb53a0dbc5",
-      "title": "सीर+माल+डिश+किससे+बनती+है latest price in india with comparison ...",
-      "url": "https://www.cheapestinindia.com/price/%e0%a4%b8%e0%a5%80%e0%a4%b0%2b%e0%a4%ae%e0%a4%be%e0%a4%b2%2b%e0%a4%a1%e0%a4%bf%e0%a4%b6%2b%e0%a4%95%e0%a4%bf%e0%a4%b8%e0%a4%b8%e0%a5%87%2b%e0%a4%ac%e0%a4%a8%e0%a4%a4%e0%a5%80%2b%e0%a4%b9%e0%a5%88",
-      "summary": "Compare सीर+माल+डिश+किससे+बनती+है Pricesat CheapestInIndia.com.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "67f090895f15d8da",
-      "title": "सीर+माल+डिश+किससे+बनती+है | Indian Case Law | Law",
-      "url": "https://www.casemine.com/search/in/%E0%A4%B8%E0%A5%80%E0%A4%B0%2B%E0%A4%AE%E0%A4%BE%E0%A4%B2%2B%E0%A4%A1%E0%A4%BF%E0%A4%B6%2B%E0%A4%95%E0%A4%BF%E0%A4%B8%E0%A4%B8%E0%A5%87%2B%E0%A4%AC%E0%A4%A8%E0%A4%A4%E0%A5%80%2B%E0%A4%B9%E0%A5%88",
-      "summary": "Can't display summary as content is Scanned, Please open the judgment to see full content.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "76911c8d11ab2675",
-      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有 ...",
-      "url": "https://www.zhihu.com/question/1903231775980913051",
-      "summary": "与 B 站 的双栏布局不同，YouTube 采用单栏排列展示。 B 站的双栏设计主要用于展示广告位以获取收益，而 YouTube 则无需依赖这种盈利模式。 个人更偏好单栏布局，因其浏览体验更为清晰舒适。 在操作方面： 1. 上滑 可立即进入 全屏模式 2. 双击屏幕右侧实现 快进 ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "527c204ca94da049",
-      "title": "/r/pt - Reddit",
-      "url": "https://www.reddit.com/r/pt/",
-      "summary": "r/pt: Portugal, oficialmente República Portuguesa, é um país soberano unitário localizado no sudoeste da Europa, cujo território se situa na zona…",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "88e545024d77eaaf",
-      "title": "30 Best Playlists on Spotify Right Now in 2026 - SoundCampaign",
-      "url": "https://soundcamps.com/blog/best-playlists-on-spotify/",
-      "summary": "Discover the best playlists on Spotify! Explore curated collections spanning genres, moods, and moments for your perfect soundtrack.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6cebdc76d0488ae0",
-      "title": "Adventure-seeker Killy in the Cyber Dungeon quest! - Reddit",
-      "url": "https://www.reddit.com/r/Netsphere/",
-      "summary": "A place for all that has to do with Tsutomu Nihei's Blame! manga and his other series.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba26331701c2d621",
-      "title": "Are these processes legit? And if so, what is their purpose?",
-      "url": "https://www.reddit.com/r/antivirus/comments/18t9st5/are_these_processes_legit_and_if_so_what_is_their/",
-      "summary": "Likely so that things can't run and execute arbitrarily without requesting permission. If you're running as the highest level of permission then so is everything you're running, I personally haven't ever created a non admin account on my personal computers but this sounds like a good rule of thumb. Reply reply TheRealDealTys •",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bf00496f4c932fa9",
-      "title": "Best Club Playlists on Spotify - playlistscaler.com",
-      "url": "https://playlistscaler.com/blog/club-playlist",
-      "summary": "Looking for club playlist? Here are 23 Spotify playlists to explore, ranked and compared in one place. Compare the current playlist options, then open the guide or Spotify link for the one that fits best.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "23336e64b142fb35",
-      "title": "Best Club Playlists | Spotify Playlists - artist.tools",
-      "url": "https://www.artist.tools/top-playlists/club",
-      "summary": "High-energy dance music with festival drops, club anthems, upbeat house, clean hits, and electrifying tracks for celebrations with no explicit lyrics. Listen on Spotify",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c33061e6e4c99034",
-      "title": "BEST CLUB SONGS 2010-2025 - playlist by BEST SONGS | Spotify",
-      "url": "https://open.spotify.com/playlist/6lfVWV3kq7FMiN9hzqljW4",
-      "summary": "Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8426f4a00434ee4a",
-      "title": "Best Club Spotify Playlists | PlaylistSupply",
-      "url": "https://playlistsupply.com/playlistcurator/genre/club/",
-      "summary": "The best Club Spotify playlists and the curators behind them: 352 playlists across 314 curators, 19M combined followers. Run a quality check before you pitch.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b2ffc480f74405f9",
-      "title": "Club Beats Spotify - Best Club Music To Dance To (Spotify Club Playlist ...",
-      "url": "https://www.redlist.com/playlist/spotify/20702",
-      "summary": "Hips Don't Lie (feat. Wyclef Jean) Uptown Funk (feat. Bruno Mars) Mi Gente (feat. Beyoncé) Give Me Everything (feat. Nayer) Work from Home (feat. Ty Dolla $ign) Memories (feat. Kid Cudi) Rockabye (feat. Sean Paul & Anne-Marie) WHERE IS MY HUSBAND! Taste (feat. Offset)",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "454d9b1268e64e78",
-      "title": "Club Hits 2026 | Spotify Playlist",
-      "url": "https://open.spotify.com/playlist/37i9dQZF1DX7SEhw42DW5b",
-      "summary": "Public Playlist Club Hits 2026 The biggest hits from the world of dance music! Cover: Cloonee",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "475583146fa9ce42",
-      "title": "Current Time in London, UK | Live Clock & Calendar 2026",
-      "url": "https://timein.london/",
-      "summary": "Live clock showing exact time, today's date, and the current month's calendar. London operates on Greenwich Mean Time (GMT) and British Summer Time (BST).",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "019649133e6e8b96",
-      "title": "Die 11 besten Spotify-Playlists für das richtige Bar-, Club- und Loung",
-      "url": "https://pacific-lime.com/blogs/mezcal-gin/die-11-besten-spotify-playlists-fuer-das-richtige-bar-club-und-lounge-feeling",
-      "summary": "Daher haben wir hier eine Auswahl von 11 Spotify-Playlists mit dem richtigen Bar-, Lounge- oder Club-Feeling nach unterschiedlichen Genres und Stimmungen zusammengestellt, damit ihr, egal wo ihr gerade seid, immer die passende Klangkulisse zur Hand habt.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b8724600900283ab",
-      "title": "DJ Hits 2026 Spotify Playlist: The Ultimate Club Music & House Tracks ...",
-      "url": "https://klangspot.com/dj-hits-2026-spotify-playlist-the-ultimate-club-music-house-tracks-guide/",
-      "summary": "A regularly updated Spotify playlist of DJ hits for 2026, including tech house, vocal club tracks and peak-time dance music selected by Klangspot.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a152dc53492eec34",
-      "title": "Everything Microgreens - Reddit",
-      "url": "https://www.reddit.com/r/microgreens/",
-      "summary": "All things Microgreens. Post your crops, methods and stories or ask a question for experienced growers.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9337af99f1e76641",
-      "title": "Mixtape Club Music: Die besten Techno und House Music Releases auf Spotify",
-      "url": "https://www.tonspion.de/news/dance-music-neue-elektronische-musik-aus-aller-welt",
-      "summary": "In unserer Dance Music Playlist präsentiert unsere Redakteurin und DJ AXENTE die beste elektronische Musik.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "561a9945774f981d",
-      "title": "More 1580 Will Synonyms. Similar words for Will. - Thesaurus.plus",
-      "url": "https://thesaurus.plus/synonyms/will",
-      "summary": "What are another words for Will? Volition, leave, wish, bequeath. Full list of synonyms for Will is here.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "121e70d0e33795a1",
-      "title": "MrBeast Snark - Reddit",
-      "url": "https://www.reddit.com/r/mrbeastsnark/",
-      "summary": "This subreddit is to talk about all things Mr Beast, including controversies, lies, manipulation, projects, videos, leaks, and more. Many things and truths have been exposed about Mr Beast but there hasn't been a central location to discuss them.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a6f8386b7e0121e4",
-      "title": "Pale Moon Browser - Reddit",
-      "url": "https://www.reddit.com/r/palemoon/",
-      "summary": "r/palemoon: Unofficial Reddit community for Pale Moon, the web browser.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a9ee9c16d7b926de",
-      "title": "Puzzle - Reddit",
-      "url": "https://www.reddit.com/r/puzzle/",
-      "summary": "r/puzzle 👋 Hi All, As the title implies I'm fairly new to mobile game development but have made an Android and iOS app for my logic puzzle game called Crowns. The idea is you try to place the crowns on the board while following the placement rules (no two crowns in the same row or column or adjacent to each other) and within their unique color region. Would love to see if anyone has ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "35d97a77151c8125",
-      "title": "Re: Starting life in another world from zero - Reddit",
-      "url": "https://www.reddit.com/r/ReZero/",
-      "summary": "r/ReZero: A place to discuss about the novel, Re: Starting life in another world from zero. Submit your own fanart as well!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6bfa280f9ed3817f",
-      "title": "SI-PNI",
-      "url": "https://si-pni.saude.gov.br/",
-      "summary": "SI-PNI Programa Nacional de Imunizações Versão 2.0.57",
+      "id": "0e54c49f62abb197",
+      "title": "Bisquick Impossible Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/18432/impossible-pumpkin-pie-ii/",
+      "summary": "This impossible pumpkin pie with Bisquick baking mix, evaporated milk, and pumpkin purée is a great option if you don’t feel like making a crust!",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1562,10 +1661,114 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "46acbdca708fa8b5",
-      "title": "Solresol: Langue musicale universelle - Reddit",
-      "url": "https://www.reddit.com/r/solresol/",
-      "summary": "Simi! I have created this topic for a preparation of the annual Solresol almanac (ladosol lasimîre dorêla). As I think, one of the biggest problem of Solresol is a lack of texts in a traditional book form. Nobody wants to search Solresol texts in different sites, and many people think, that Solresol has no its now-day literature, which shows Solresol as a language without a future in the ...",
+      "id": "482afc397b5dcb76",
+      "title": "Chef John's Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/230132/chef-johns-pumpkin-pie/",
+      "summary": "The best pumpkin pie recipe is made with a rich, custard-like filling that's easy to make with sweetened condensed milk, egg yolks, and spices.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "25683d7b194f9575",
+      "title": "City Volkswagen of Evanston: New & Used VW Vehicles",
+      "url": "https://www.cityvwofevanston.com/",
+      "summary": "New Volkswagen and used cars, trucks, SUVs at City Volkswagen of Evanston in Evanston, IL. VW dealership near Wilmette, Glenview, and Skokie, IL. Auto repair, parts ...",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "237f36ba8af8015f",
+      "title": "Classic Peanut Butter Cookies Recipe",
+      "url": "https://www.allrecipes.com/recipe/10275/classic-peanut-butter-cookies/",
+      "summary": "These peanut butter cookies are soft, chewy, and absolutely delicious! Easy to make with smooth or crunchy peanut butter for a crowd-pleasing treat.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5308f113167c7736",
+      "title": "Comment Scanner avec Epson Stylus SX400. - Forum scanner",
+      "url": "https://forums.commentcamarche.net/forum/affich-11101576-comment-scanner-avec-epson-stylus-sx400",
+      "summary": "Résumé de la discussion Plusieurs utilisateurs rencontrent des difficultés à scanner avec l'Epson Stylus SX400, la procédure varie entre l'utilisation du panneau de configuration Windows et le logiciel Epson fourni, selon les modèles et les systèmes. Réponses indiquent de passer par le panneau de configuration pour accéder au scanner, ou d'utiliser MFP Manager et Epson Scan; déposer ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "52cec7519f693cd0",
+      "title": "Dallas - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dallas",
+      "summary": "There is a large Protestant Christian influence in the Dallas community, though the city of Dallas and Dallas County have more Catholic than Protestant residents, while the reverse is usually true for the suburban areas of Dallas and the city of Fort Worth.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1588,12 +1791,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8314ffc5f99177af",
-      "title": "Synonyms and Antonyms of Words | Thesaurus.com",
-      "url": "https://www.thesaurus.com/",
-      "summary": "Thesaurus.com is the world's largest and most trusted online thesaurus for 25+ years. Join millions of people and grow your mastery of the English language.",
+      "id": "a7cc2162d1e89e8e",
+      "title": "Dallas - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Dallas",
+      "summary": "There is a large Protestant Christian influence in the Dallas community, though the city of Dallas and Dallas County have more Catholic than Protestant residents, while the reverse is usually true for the suburban areas of Dallas and the city of Fort Worth.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1836f36fe23a1411",
+      "title": "Dallas | History, Population, Map, & Points of Interest | Britannica",
+      "url": "https://www.britannica.com/place/Dallas",
+      "summary": "Dallas, city in north-central Texas, the third most populous in the state and the metropolis of the sprawling Dallas–Fort Worth urban area, known as the Metroplex.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1614,38 +1843,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9e64e6d2dc0a6200",
-      "title": "The 8 Best Cameras of 2026 - RTINGS.com",
-      "url": "https://www.rtings.com/camera/reviews/best/camera",
-      "summary": "The Nikon Z 6III is one of the best cameras we've tested. It's a fantastic hybrid camera, featuring a unique partially stacked sensor that delivers excellent image quality and reduces rolling shutter distortion.",
+      "id": "ba7c30c7d4170698",
+      "title": "Dallas, Texas - New World Encyclopedia",
+      "url": "https://www.newworldencyclopedia.org/entry/Dallas,_Texas",
+      "summary": "Dallas makes up one-fifth of the much larger urbanized area known as the Dallas/Fort Worth Metroplex, in which one-quarter of all Texans live. Topography Dallas and its surrounding area are mostly flat; the city itself lies at elevations ranging from 450 feet (137 m) to 550 feet (168 m).",
       "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "beb3b48abdc77c78",
-      "title": "Time in England, United Kingdom now",
-      "url": "https://time.is/England",
-      "summary": "Exact time now, time zone, time difference, sunrise/sunset time and key facts for England, United Kingdom.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1666,12 +1869,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a8e40108f4983df6",
-      "title": "Time in United Kingdom now",
-      "url": "https://time.is/United_Kingdom",
-      "summary": "Exact time now, time zone, time difference, sunrise/sunset time and key facts for United Kingdom.",
+      "id": "80da61faff299776",
+      "title": "Dallas–Fort Worth metroplex - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dallas%E2%80%93Fort_Worth_metroplex",
+      "summary": "The Dallas–Fort Worth metroplex is situated in the Texas blackland prairies region, [23] so named for its fertile black soil found especially in the rural areas of Collin, Dallas, Ellis, Hunt, Kaufman, and Rockwall counties.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1692,12 +1895,142 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b1662c4fe882d592",
-      "title": "Time in United Kingdom Now (BST) - Live Clock",
-      "url": "https://time.now/countries/united-kingdom/",
-      "summary": "Current time in United Kingdom right now in BST. Live clock with seconds, today's sunrise/sunset, public holidays, and interactive map - updated every…",
+      "id": "f38a428c981641ee",
+      "title": "DOT Rule 49 CFR Part 40 Section 40.210 - Department of Transportation",
+      "url": "https://www.transportation.gov/odapc/part40/40-210",
+      "summary": "Both urine and oral fluid specimens are authorized for collection and testing under this part. An employer can use one or the other, but not both at the beginning of the testing event.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3c25aa219e8a5dad",
+      "title": "Driver du scanner Epson 1200 perfection pour Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-33820786-driver-du-scanner-epson-1200-perfection-pour-windows-10",
+      "summary": "Bonjour, Je voudrais trouver le driver du scanner Epson 1200 perfection pour Windows 10. A chaque nouvelle version ou nouveau chargement du Windows, les pilotes de périphériques sont introuvables. Je sais bien que ça fait marcher le commerce...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1303a3f8ee4d4d04",
+      "title": "Drug Testing Speciemen Types. National Drug Testing",
+      "url": "https://www.nationaldrugscreening.com/blogs/category/specimen-types/",
+      "summary": "Types of specimen types for drug testing. Articles on types of drug testing used today. Urine testing, hair testing, blood tests, turnaround times, and more",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "afb4c2597f31a38e",
+      "title": "Epson scan message erreur [Résolu] - Imprimante - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-33906371-epson-scan-message-erreur",
+      "summary": "Bonjour, J'ai une imprimante epson xp-520. Une fois connecté au pc elle imprime, photocopie mais pas de scan. Chaque fois que je scanne, j'ai ce message d'erreur qui apparait: Communication avec le scanner impossible. vérifiez que le...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "526f56e473644cfc",
+      "title": "Forum scanner - Périphériques - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/scanner-254",
+      "summary": "Scanner epson perfection v39 + windows 10 Bonjour, je viens d'acquérir un scanner Epson V39, je fonctionne sous windows 10 : Édition Windows 10 Professionnel Version 21H2 Installé le ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7677c8c5cf0fdf5a",
+      "title": "Free Online Translator — Polytranslator",
+      "url": "https://www.polytranslator.com/translator/",
+      "summary": "Free, instant online translator for text, documents, and images. Translate between English, Spanish, French, German, Chinese, Arabic, Latin, Old English, and 474 ...",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1718,12 +2051,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8b84cc65dd3bf982",
-      "title": "Time Now in England, United Kingdom",
-      "url": "https://time.now/country/england/",
-      "summary": "Get the exact current time in England, United Kingdom. Live clock with seconds, UTC offset and daylight-saving status for the Europe/London time zone -…",
+      "id": "6657aae70143ecc7",
+      "title": "Fresh Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/12433/fresh-pumpkin-pie/",
+      "summary": "This fresh pumpkin pie recipe is made with fresh puréed pumpkin, honey, spices, eggs, milk, and cream, poured into a pie shell, and baked until set.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1744,12 +2077,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bb8cf58b030865e2",
-      "title": "Today's Date and Time - Current Date, Time & More",
-      "url": "https://todaydateandtime.com/",
-      "summary": "Find out today's date, current time, day of the week, week number, and more. Your complete date and time resource.",
+      "id": "09c70cf6c2b61214",
+      "title": "Homemade Fresh Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/13711/homemade-fresh-pumpkin-pie/",
+      "summary": "Delicious homemade pumpkin pie made with mashed, cooked pumpkin. Skip the canned stuff and make this classic Thanksgiving pumpkin pie from scratch.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1770,12 +2103,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f4bf3e603a3240c0",
-      "title": "Today’s Date in the UK",
-      "url": "https://todaysdatenow.com/en-GB/",
-      "summary": "Today's date for UK. Access a massive list of dates and 🗓️ calendars from around the world. What is the date today? - Click here.",
+      "id": "f917513f4313292e",
+      "title": "Homepage - Volkswagen of Downtown Chicago",
+      "url": "https://www.dtvwchicago.com/",
+      "summary": "Welcome to Volkswagen of Downtown Chicago in Chicago, IL. Shop new Volkswagen and used vehicles, finance, service, and more today!",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1796,12 +2129,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "619d0a0c5f2956cf",
-      "title": "UK Time Now - Live Clock & Time Tools | TimeInUK",
-      "url": "https://timeinuk.co.uk/",
-      "summary": "See the live UK time now, check GMT or BST, convert time zones and count down to UK bank holidays, Christmas and exam results days.",
+      "id": "f271d13dfba1d533",
+      "title": "Installer Pilote TWAIN [Résolu] - Scanner - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34755039-installer-pilote-twain",
+      "summary": "Bonjour, j'ai un scanner Epson Perfection 2480 photo... qui a 10 ans fonctionnait parfaitement sous XP. Là, j'ai un Netbook HP- 64 bits- Windows 10- j'ai mis le CD d'origine, il ne fonctionne pas, on me réclame l'installation du Pilote TWAIN. Qui peut m'aider à le trouver, le télécharger sans qu'il soit accompagné d'un virus et le rendre opérationnel. Merci.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c77131385d993e54",
+      "title": "Is Dallas in the north central region? - Mike Gravel",
+      "url": "https://www.mikegravel.org/is-dallas-in-the-north-central-region/",
+      "summary": "No, Dallas is not typically considered part of the north central region of the United States. Rather, it’s located in North Texas, which falls within the South Central United States.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1822,12 +2181,65 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7819ac9a76c453de",
-      "title": "What Day Is Today United Kingdom — Free & Instant | DateTimeLab",
-      "url": "https://datetimelab.com/gb/calendar/what-day-is-today/",
-      "summary": "Find out today's date, day of the week, week number, and more. Instant answer with full calendar context for today.",
+      "id": "dfa221eca7232f64",
+      "title": "L'imprimante imprime, mais le scan ne passe pas.",
+      "url": "https://forums.commentcamarche.net/forum/affich-34395050-l-imprimante-imprime-mais-le-scan-ne-passe-pas",
+      "summary": "Mais pour scanner il me dit sur l'imprimante : \"pc introuvable\", et sur le pc depuis le logiciel epson de scan : \"imprimante introuvable\". (L'on peut lancer le scan sur l'imprimante ou le pc, à choix) Je précise que mon pc est relier au modem via câble ethernet, et que je le co sous le wifi juste pour utiliser l'imprimante.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "hack",
+        "community"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "07268242e8f83103",
+      "title": "Laboratory Samples: 120+ Specimen Types, Anticoagulants & Preservatives ...",
+      "url": "https://www.labtestsguide.com/samples",
+      "summary": "Discover 120+ laboratory sample types including blood, urine, stool, CSF, swabs, tissues, body fluids, and molecular specimens. Learn anticoagulants, preservatives, transport media, collection methods, sample handling, rejection criteria, and best laboratory practices.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "696f7106a3bfe3b7",
+      "title": "Libby's Famous Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/22755/libbys-famous-pumpkin-pie/",
+      "summary": "Libby's pumpkin pie is synonymous with the holiday season. The famous recipe, which the iconic brand made famous almost 100 years ago, is a tradition in homes around the country — once you try it, you'll understand why Libby's pumpkin pie recipe is so beloved.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1848,12 +2260,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "94fb6a7dab478477",
-      "title": "What is another word for will? | Will Synonyms - WordHippo",
-      "url": "https://www.wordhippo.com/what-is/another-word-for/will.html",
-      "summary": "Find 3,619 synonyms for will and other similar words that you can use instead based on 29 separate contexts from our thesaurus.",
+      "id": "e4b7c15655534962",
+      "title": "No-Bake Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/15564/no-bake-pumpkin-pie-i/",
+      "summary": "This no-bake pumpkin pie has a rich and creamy filling in a prepared graham cracker crust. An excellent make-ahead dessert for the holidays!",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1874,12 +2286,90 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e32c07ad189fa67e",
-      "title": "WILL - 59 Synonyms and Antonyms - Cambridge English",
-      "url": "https://dictionary.cambridge.org/thesaurus/will",
-      "summary": "These are words and phrases related to will. Click on any word or phrase to go to its thesaurus page. Or, go to the definition of will.",
+      "id": "4c9fc26834f6102a",
+      "title": "Oral Fluid Collection - CRL Corp",
+      "url": "https://www.crlcorp.com/test-catalog/oral-fluid-collection",
+      "summary": "An Oral collection device, such as Epitope’s OraSure, consists of a Collection Pad (looks like a flat toothbrush) and a Specimen Vial. The vial contains a blue, non-toxic liquid which preserves the specimen during shipment to the laboratory.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b07e1b50a6dae940",
+      "title": "Oral Fluid Testing",
+      "url": "https://www.aegislabs.com/wp-content/uploads/2024/04/PM155-Clinical-Reference-Guide-E.pdf",
+      "summary": "Oral fluid testing has provided an excellent alternative to urine with its accuracy, ease of collection, and resistance to tampering.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6d9a1775f0e101e",
+      "title": "Perdu \"raccourci\" scan epson sur bureau [Résolu] - Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-18096619-perdu-raccourci-scan-epson-sur-bureau",
+      "summary": "scan Bonjour, en général je sais comment créer un raccourci bureau mais là je sèche pour créer le raccourci \"SCAN\" imprimante epson j'arrive à créer le raccourci \"imprimante epson\" mais c'était plus pratique quand j'avais directement le scan:-) j'ai cherché sur ce site une réponse appropriée mais je tourne en rond car au et à mesure je trouve des astuces vraiment intéressantes et ...",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8e35bef675f1870c",
+      "title": "Perfect Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/23439/perfect-pumpkin-pie/",
+      "summary": "This pumpkin pie recipe makes a smooth and creamy filling with canned pumpkin and sweetened condensed milk for the perfect Thanksgiving dessert.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1900,12 +2390,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6da1a32c51985051",
-      "title": "WILL Definition & Meaning - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/dictionary/will",
-      "summary": "called also joint and reciprocal will. Note: A joint and mutual will is a joint will, but a joint will need not contain reciprocal provisions.",
+      "id": "8845a20e0991a229",
+      "title": "Pilote imprimante et scanner Epson SX215 - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35348704-pilote-imprimante-et-scanner-epson-sx215",
+      "summary": "Bonjour, Je souhaite installer une imprimante multi fonction scanner Epson SX215 j’ai fait plusieurs recherches pour trouver les pilotes de l’imprimante et du scanner sans succès. Dans l’attente de votre aide je vous remercie par avance.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "75bf25da4e101662",
+      "title": "Pumpkin Pie Recipes",
+      "url": "https://www.allrecipes.com/recipes/819/desserts/pies/pumpkin-pie/",
+      "summary": "Make a perfect pumpkin pie, with over 130 recipes for homemade and pumpkin pie from scratch, or with the canned pumpkin everybody loves.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1926,12 +2442,39 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "657e50f9936e3b5b",
-      "title": "WILL in Thesaurus: All Synonyms & Antonyms",
-      "url": "https://www.powerthesaurus.org/will",
-      "summary": "Browse the complete thesaurus entry for Will, including synonyms and antonyms, and related words.",
+      "id": "2dfe310c27ba71ab",
+      "title": "Selection of Specimen Type: Urine, Oral Fluid, Blood, and Hair",
+      "url": "https://d3s279ah1qv4h7.cloudfront.net/wp-content/uploads/2024/04/22082919/PM155-Clinical-Reference-Guide-D.pdf",
+      "summary": "As analytical techniques have evolved, more specimen types have become available for testing in pain management. This section reviews the advantages and disadvantages of each.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "research"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4ebb6ef48f9e74bd",
+      "title": "Simple Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/229932/simple-pumpkin-pie/",
+      "summary": "This easy pumpkin pie recipe requires few ingredients yet creates the perfect, fuss-free pie that’s a delicious Thanksgiving or any-time dessert.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1952,12 +2495,90 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5173dffbb283367b",
-      "title": "WILL Synonyms & Antonyms - 171 words | Thesaurus.com",
-      "url": "https://www.thesaurus.com/browse/will",
-      "summary": "Find 171 different ways to say WILL, along with antonyms, related words, and example sentences at Thesaurus.com.",
+      "id": "b395f007d23cc202",
+      "title": "Specimen Collection and Preparation - Mayo Clinic Laboratories",
+      "url": "https://www.mayocliniclabs.com/specimen/preparation/index.php",
+      "summary": "For instructions about collecting and preparing your specimen, you need to identify and select your specimen type: View or print complete instruction guide.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "155313fcf8c55206",
+      "title": "Types of Drug Testing Specimens: Urine, Blood, Hair, Saliva & Sweat",
+      "url": "https://teamcme.com/resources/providers/how-to-become-a-dot-urine-specimen-collector/different-types-of-specimens-used-for-drug-testing/",
+      "summary": "In this guide, we’ll explore the most common specimen types used in drug testing, their pros and cons, detection windows, and whether each type is allowed under DOT, non-DOT, or both testing programs.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9d719776fa2d5622",
+      "title": "Validating Specimen Collection Devices for Oral Fluid Drug Testing",
+      "url": "https://forensicrti.org/wp-content/uploads/2023/10/NLCP_DTM_2023_5_Validation_Part5.pdf",
+      "summary": "Recovery can be determined by spiking three sources of certified negative oral fluid or freshly collected oral fluid (synthetic oral fluid is not acceptable). Samples are collected by dipping the device into the oral fluid until the volume indicator indicates a complete collection.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f0b34f388d5bc5f",
+      "title": "Volkswagen of Orland Park | New & Used VW Dealership in Orland Park, IL",
+      "url": "https://www.vworland.com/",
+      "summary": "Browse new Volkswagen models and used cars at Volkswagen of Orland Park. Visit our VW service and parts center in Orland Park, IL, serving Tinley Park and Chicago drivers.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1978,12 +2599,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "79e8e023419ba8ea",
-      "title": "Will Synonyms and Antonyms - YourDictionary.com",
-      "url": "https://thesaurus.yourdictionary.com/will",
-      "summary": "Synonyms for WILL: pleasure, inclination, wish, fancy, disposition, yearning, liking, craving, longing; Antonyms for WILL: command, indifference, distaste, doubt, vacillation, indecision, keep, receive, neglect.",
+      "id": "40843941983a3aa2",
+      "title": "What region is Dallas in Texas? - StudyCountry.com",
+      "url": "https://www.studycountry.com/wiki/what-region-is-dallas-in-texas",
+      "summary": "The Prairies and Lakes Region is dominated by the Dallas/Fort Worth Metroplex, which – with its vibrant nightlife, cuisine, shopping and culture – is likely one of the first areas tourists visit.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2004,12 +2625,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "322e9fe4f7ca2f21",
-      "title": "WILL Synonyms: 1 598 Similar Words & Phrases - Power Thesaurus",
-      "url": "https://www.powerthesaurus.org/will/synonyms",
-      "summary": "Find 1 598 synonyms for Will to improve your writing and expand your vocabulary.",
+      "id": "13ff4dca53c9d33f",
+      "title": "What Region Is Dallas, Texas In? - LifeOutOfTheBox",
+      "url": "https://lifeoutofthebox.com/what-region-is-dallas-texas-in/",
+      "summary": "It is unequivocally in North Texas, forming the core of the Dallas–Fort Worth Metroplex. Simultaneously, it retains significant cultural and historical connections to the American South and serves as a strategic economic and transportation hub within the broader Southwestern United States.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2030,12 +2651,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5b57013ee322f36c",
-      "title": "WILL Synonyms: 125 Similar and Opposite Words - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/thesaurus/will",
-      "summary": "Synonyms for WILL: leave, bequeath, devise, pass (down), deed, hand on, hand down, want; Antonyms of WILL: gratification, indulgence, failing, fault, intemperance, vice, weakness, shortcoming",
+      "id": "5e396a7315707294",
+      "title": "What region of Texas is Dallas in? - StudyCountry.com",
+      "url": "https://www.studycountry.com/wiki/what-region-of-texas-is-dallas-in",
+      "summary": "The central region of Texas lies in between the state's three largest metropolitan areas - Houston, Dallas-Fort Worth, and San Antonio - and along its three largest interior rivers: the Trinity, the Brazos, and the Colorado.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2047,6 +2668,58 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6df32860cb10a929",
+      "title": "Where is Dallas, Tx? / Where is Dallas Texas Located in the US Map",
+      "url": "https://www.whereig.com/usa/states/texas/dallas-location-map.html",
+      "summary": "Dallas is located in the southern part of the United States and central-north of Texas.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9cea26cfb67a9550",
+      "title": "Windows 11 et Epson perfection V330 [Résolu] - Scanner",
+      "url": "https://forums.commentcamarche.net/forum/affich-37379367-windows-11-et-epson-perfection-v330",
+      "summary": "Windows 11 et Epson perfection V330 Résolu Windows Pilote Download Epson Scan RG1945 - Modifié le 15 oct. 2021 à 12:44 bazfile - 17 oct. 2021 à 14:19",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
