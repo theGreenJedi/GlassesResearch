@@ -1,23 +1,30 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-22T16:46:30.653448+00:00",
-  "candidate_count": 10,
-  "precision_rejected_count": 176,
+  "discovered_utc": "2026-09-22T18:59:33.322605+00:00",
+  "candidate_count": 6,
+  "precision_rejected_count": 178,
   "relationship_counts": {
-    "direct": 8,
+    "direct": 5,
     "enabling": 0,
-    "adjacent": 2,
-    "speculative": 0,
+    "adjacent": 0,
+    "speculative": 1,
     "irrelevant": 0
   },
   "type_counts": {
-    "news": 3,
-    "policy": 7
+    "model": 2,
+    "tool": 1,
+    "sdk": 1,
+    "policy": 4,
+    "community": 1,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 2,
-    "policy_privacy": 7,
-    "research_news_review": 10
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 2,
+    "policy_privacy": 4,
+    "research_news_review": 6,
+    "watching": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -28,101 +35,83 @@
   ],
   "candidates": [
     {
-      "id": "9e1b37ec8e555b82",
-      "title": "Some cheap smart glasses are a security disaster - Malwarebytes",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMGxSNVRwV25NZktubFVfOXcyd0tGYk5US1dDYUFlSTNyRUtBeEoxQ1I1d0pLbmtJVHZyMkstaXY5VkNLWC1Jell6SVJCVVFIdUFmdHVXWXNablRNRmJIV3FPZFdieTVBSF9PUmlFTk5JTWtwaEVXa2FUOFFLSDgyOHFMZXIzMHBSTEdLZEdYYnZaN3N2Yk44TE9ZRQ?oc=5",
-      "source": "Google News: smart glasses",
-      "source_lane": "core_glasses",
-      "published": "Tue, 22 Sep 2026 15:14:35 GMT",
-      "summary": "Some cheap smart glasses are a security disaster Malwarebytes",
-      "materiality_score": 3,
+      "id": "ccc722a3a82515e2",
+      "title": "Mentra 3.3.0-dev.317",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.317",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-09-22T17:45:24Z",
+      "summary": "Mentra 3.3.0-dev.317 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) iOS IPA Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: f5be01b . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
       "keyword_hits": [
-        "security"
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
       ],
       "status": "candidate",
       "relationship": "direct",
       "content_types": [
-        "news"
+        "model",
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
       ],
-      "triage_priority": "normal",
+      "triage_priority": "high",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "publication_gate_reason": "known smart-glasses source",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "likely durable"
     },
     {
-      "id": "96ce9c37a6b1d274",
-      "title": "AI devices face privacy concerns as smart glasses gain ground - Daily Times",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOOUNidDNGOVJ5dVoybE51Z05OY2pvX0tCTVdLX1VCV1N4WnNpenJUcUZ0TjJPbTBENmtnY3hhWnVSUThCb1VMMERoUzVkQllIaVI4dUV3SGtzMXV2NkdNR3JCUFNNN0NiTXRyTDNUWDdtRGZvSGhJVTVuV3BtVFNxSGU5LVozcXBHSUpGX2VRRGNPUUk2MGtXN1lYN3U?oc=5",
-      "source": "Google News: new smart glasses",
+      "id": "2cbe5d95a1e190a0",
+      "title": "iPhone 20 Pro Display Sizes Leak Ahead of 2027 Launch - MacRumors",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE11S0hQb2dDVjd1aU8yM3M5b0FscjMzeGZsRGZvR3oyN2t0cThZcTJHYWM0bmJqcjcwdzlka2lERXRGRjlHVl9tRUJHSW9JTkY2TGdwd055Wjg0dTZHaFRXZkZya3hCREh0Q2lmNkZRUFIxWE9ZMDFoMHVn?oc=5",
+      "source": "Google News: smart glasses rumor",
       "source_lane": "core_glasses",
-      "published": "Tue, 22 Sep 2026 12:50:54 GMT",
-      "summary": "AI devices face privacy concerns as smart glasses gain ground Daily Times",
-      "materiality_score": 2,
+      "published": "Mon, 21 Sep 2026 11:29:51 GMT",
+      "summary": "iPhone 20 Pro Display Sizes Leak Ahead of 2027 Launch MacRumors",
+      "materiality_score": 6,
       "keyword_hits": [
-        "ai",
-        "privacy"
+        "display",
+        "launch",
+        "leak"
       ],
       "status": "candidate",
-      "relationship": "direct",
+      "relationship": "speculative",
       "content_types": [
-        "policy"
+        "model",
+        "rumor"
       ],
-      "primary_type": "policy",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "policy_privacy"
+        "watching",
+        "model_catalog_review"
       ],
       "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "publication_eligible": false,
+      "publication_gate_reason": "future/rumor signals: leak",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
+      "institution_test": "likely durable"
     },
     {
-      "id": "8704512fe2091c0c",
-      "title": "Analysis-From smart glasses to AI pins, privacy fears challenge tech's next big bet - Euronext Markets: Real-time Stock Market Data | live",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZ2tla1N5Q0xjTjlxMk5WUjZMcThSZHpvbzl2YlpfUlF5THpFNUFxeFg4ZFdiTVpyeS1RUGxDQkdiQUU5Q1R0LWpTelNCZEtjV3EtRVA1cDhRekJhTHhQLXJBV2tXOFNKVUl6ZHZfeVVSalBZRWVudjJLMmFJU3JMOXJjbUhMd2N2MDJya3NBaHV4MzNOeUlWQTFnSldPSGNITHhWeHdrSDJSTGlWeXBYTm5KUmR4d1N6?oc=5",
-      "source": "Google News: smart glasses",
-      "source_lane": "core_glasses",
-      "published": "Tue, 22 Sep 2026 15:22:13 GMT",
-      "summary": "Analysis-From smart glasses to AI pins, privacy fears challenge tech's next big bet Euronext Markets: Real-time Stock Market Data | live",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "ai",
-        "privacy"
-      ],
-      "status": "candidate",
-      "relationship": "direct",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
-      "disposition": "collected",
-      "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
-    },
-    {
-      "id": "84c1a179b3efd1f9",
-      "title": "Analysis:From smart glasses to AI pins, privacy fears challenge tech's next big bet - channelnewsasia.com",
+      "id": "c375f95450bed200",
+      "title": "Analysis:From smart glasses to AI pins, privacy fears challenge tech's next big bet - CNA",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMUhFbTFnZzhzUlIzenk2WVVEc2drYmc1Wk9lRnE0ZUVLaVlnVC1QU3ZJbkVCUTBCZzNVeE91TEY0X1FZcFFsMHdJWnU1U19NR1JaeUdOVjNabkJab3paTVZ2QncwblFvLVNaa2RZeEhDSUtxNUVxZ0xoS2RSaTBRbUw0ZVBYQmxpdzZ3LXVTaHFRZHQ5d1NER1JvSFVBeWhCa2M3Wk1JamZCeFJ5RWNURGljQ1BzYk1RYU0zX2RnNjd2V1hQ?oc=5",
       "source": "Google News: smart glasses",
       "source_lane": "core_glasses",
       "published": "Tue, 22 Sep 2026 10:01:44 GMT",
-      "summary": "Analysis:From smart glasses to AI pins, privacy fears challenge tech's next big bet channelnewsasia.com",
+      "summary": "Analysis:From smart glasses to AI pins, privacy fears challenge tech's next big bet CNA",
       "materiality_score": 2,
       "keyword_hits": [
         "ai",
@@ -146,103 +135,73 @@
       "institution_test": "review durability"
     },
     {
-      "id": "5065244379e201dc",
-      "title": "From smart glasses to AI pins, privacy fears challenge tech's next big bet - The Business Standard",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOVpMQy1XeGdSUW9mbHRhOGRDakFRTlY0X0ZJb0lOY1l6SkdXWFhuUUZOWnJadGJKNl9nMjV1dFMzM1Q1RDl6YzFsRUUyUXNXRHA1dXRxVGxad2JWb2pTcTlxaWEtMkZJYnJJSm5XVWRrMnlMTzM3aEIxeVNOcXNQMm9DUXlmaXZVRURCdkhneDZWY1p3U1JOYkY1ajRpVkNoLTZR?oc=5",
-      "source": "Google News: smart glasses tools",
-      "source_lane": "core_glasses",
-      "published": "Tue, 22 Sep 2026 11:40:00 GMT",
-      "summary": "From smart glasses to AI pins, privacy fears challenge tech's next big bet The Business Standard",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "ai",
-        "privacy"
-      ],
-      "status": "candidate",
-      "relationship": "direct",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
-      "disposition": "collected",
-      "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
-    },
-    {
-      "id": "d1e582b8cfd5e7cd",
-      "title": "From smart glasses to AI pins, privacy fears challenge tech's next big bet - The Express Tribune",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxON0dfVnNudDBZS05KRFpkdjJXQWlGWllxODBWbWtXd3F4UnJaWU9HN1h5ZTVCaWRBZzk4eEx4ZmgxM0ZmdVlfeFVySFYxNU55OWRXN0pzU0dHMzlyVTFKd2VQQzNDcWQ2el9aeUpnb1dlUWhPMlotWGw0OVgyWUZCWWhvbWNpX0kxRllETkRoVDY3ZjBtREhEVFRpNXVEdDdTQWZXMFBid2RPSzd6aEHSAbYBQVVfeXFMT1Y4SDdBQ1FSY3RQQlRCenNlRExNUndLald5VE9CRFA0RVJ3b1Q3R2pGeVg2d2lQZ2cyT1BEOTFzRDhud0dGX09KVnJkWUZ5cWItd21ScEFfMkhRd0dfR1I2SlNxei1sQ1RFQmVvdW0wcHUyWFBqaHZDOHhwcjVObnNqcmkzOFVfWHN6b19uaDdwUXFTWlU5VHhhTHRfbkx0MzJWN21NLVQ0WVVMWk5VRkFLN2d5Nmc?oc=5",
-      "source": "Google News: wearable display glasses",
-      "source_lane": "core_glasses",
-      "published": "Tue, 22 Sep 2026 13:01:44 GMT",
-      "summary": "From smart glasses to AI pins, privacy fears challenge tech's next big bet The Express Tribune",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "ai",
-        "privacy"
-      ],
-      "status": "candidate",
-      "relationship": "direct",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
-      "disposition": "collected",
-      "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
-    },
-    {
-      "id": "6460b3a1298323bc",
-      "title": "From smart glasses to AI pins, privacy fears challenge tech’s next big bet - BNN Bloomberg",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSkRWdkFzM2lja3B0UDBrVHVWYm1YZTc3a0NzbjRUOTRxZl9qT2lkRnFOZldFaTl5S1VXQkNkaWN3eTlPaGY0RDNTNEFIZFFsTVNmTHZ0VEgwZVFaOE8yeGlTcnpLS2hNdHE3R1ZJWFpNdHFUZ2Zwanh1cG9JcFpyQ1VuZWZiZElVWFBUd3dwTmRBR0xaUGZTQmhsM2g4OXhpTXpfdGI5SVRCZUM5OGh1QjBERFk4TjhFcE52akxQbXRUODFxWXVxYWRQRTN0djdiTTB2dWJWXzVwODVfY1E?oc=5",
-      "source": "Google News: new smart glasses",
-      "source_lane": "core_glasses",
-      "published": "Tue, 22 Sep 2026 14:32:38 GMT",
-      "summary": "From smart glasses to AI pins, privacy fears challenge tech’s next big bet BNN Bloomberg",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "ai",
-        "privacy"
-      ],
-      "status": "candidate",
-      "relationship": "direct",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
-      "disposition": "collected",
-      "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
-    },
-    {
-      "id": "e524557393c9db9f",
-      "title": "These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP - Android Central",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBCOW0zaEh2UEthaGJYYl9CZDVrVTBUdHJTbFZ1Nll0WkpOSmpaWHlraTNtbTdqUmpwb0JhbS16ZlZQbzN2djF4cGNuYVNNWW1PRE9WMVA0Y2ZCZDNINVJaeDdrQ21CWjl1aFY4bG42YUZ0Z1hkNlE?oc=5",
+      "id": "45e3fe31dcd5a476",
+      "title": "From smart glasses to AI pins, privacy fears challenge tech's next big bet - ET Enterprise AI",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPSXZlUG8tdUFaTzk2enNQcC1ReGNHeGdDeURfVUdELVJ2LUo4OW4yUjFOYlBKOFZQWDRvZ3U5RzJLSE92YllUb1d2d2lhajNnTEpnTHQyejZTelJuTkx0Mmhmd2NTWThUOTBkN0FMcXB0OHdQM0E5ZlFrMXVkUmVoZTA0czRILTJ5Y2VsYzFhdWxrdzl1SEtNWlNWZ1BlTHZKWFhuaFk0ZHQ0T2Z3WjBlOGUxTXdBa01oMGN6S0VLUFBrVnNleHctVVFGV3EyTVRPcjk3ZmtCWkJwNDhIcklPM0NuT0TSAeQBQVVfeXFMT0l2ZVBvLXVBWk85NnpzUHAtUXhjR3hnQ3lEX1VHRC1Sdi1KODluMlIxTmJQSjhWUFg0b2d1OUcyS0hPdmJZVG9XdndpYWozZ0xKZ0x0Mno2U3pSbk5MdDJoZndjU1k4VDkwZDdBTHFwdDh3UDNBOWZRazF1ZFJlaGUwNHM0SC0yeWNlbGMxYXVsa3c5dUhLTVpTVmdQZUx2SlhYbmhZNGR0NE9md1owZThlMU13QWtNaDBjektFS1BQa1ZzZXh3LVVRRldxMk1UT3I5N2ZrQlpCcDQ4SHJJTzNDbk9E?oc=5",
       "source": "Google News: smart glasses",
       "source_lane": "core_glasses",
+      "published": "Tue, 22 Sep 2026 13:50:35 GMT",
+      "summary": "From smart glasses to AI pins, privacy fears challenge tech's next big bet ET Enterprise AI",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "privacy"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "e9aac44f4bd46f8f",
+      "title": "From smart glasses to AI pins, privacy fears challenge tech’s next big bet - CTV News",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONjUzYjlhNDZPbWZMVmgyaDNHSFNUcE5UMl9UN0p5YUtxUnJsc3JZamVRRFNOX1BPWVJka2JKME1PdGlvWDduQS1hdk1uSFIxWnBuZ3NmOERYNjF3bHJVTUw3ZTl2V01oMW9TU1RrOG5QeVFzTlVQSmhRX1VlX0l0OUlGSm5lWXhOakZpUDMzNjlhRExnd0hrZWZKV2tDdWJWVk5sUlBzeU92UEpVY1NEa3R4dw?oc=5",
+      "source": "Google News: smart glasses review",
+      "source_lane": "core_glasses",
+      "published": "Tue, 22 Sep 2026 14:32:38 GMT",
+      "summary": "From smart glasses to AI pins, privacy fears challenge tech’s next big bet CTV News",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "privacy"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "8ace3db728d681dc",
+      "title": "These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP - Yahoo Tech",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWXZzUHY2UXllYWhMQllvQ2Z6ZGplbkNCMjZrUzh3Njd6WTV6SVByR3NoM3llUlNsUkEzNzRqbV91a2JNYmFRdTc5NnNXTmRiSmZzN1RYTnREZ0pveERxZ3NtaHVwT25Va09tb2c2dHFUMmVxUWd5QW9RN3hSTVVRVEZuNWlKMVA1LXdVWGJfRkZ6SGdwdER4SQ?oc=5",
+      "source": "Google News: AR glasses",
+      "source_lane": "core_glasses",
       "published": "Tue, 22 Sep 2026 15:42:52 GMT",
-      "summary": "These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP Android Central",
+      "summary": "These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP Yahoo Tech",
       "materiality_score": 2,
       "keyword_hits": [
         "ai",
@@ -261,65 +220,6 @@
       "triage_priority": "normal",
       "publication_eligible": true,
       "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
-      "disposition": "collected",
-      "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
-    },
-    {
-      "id": "fe80a50128ec7dfb",
-      "title": "Global Wearable Eye Tracking Device Market Size, Share, - openPR.com",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONVN1eFFaaHFDdExIRzRwMUdJVTFyTUJsYmRsazR6MUFRRGZVbDdCVEU0YkUtM09pbGQ0cEZtVGl3NUw0SEtwdks4TWYwYmxHMEYwQUNzMDl0STRGM2lGRTZQeEVidzduVVVTeWtRR3NxWGlzOVJpRkxiYUpIajktaENuRTVtQUJkbVVhaFplMFRkUEk?oc=5",
-      "source": "Google News: wearable human computer interface",
-      "source_lane": "adjacent_hci",
-      "published": "Tue, 22 Sep 2026 14:44:41 GMT",
-      "summary": "Global Wearable Eye Tracking Device Market Size, Share, openPR.com",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "eye tracking"
-      ],
-      "status": "candidate",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "disposition": "collected",
-      "site_action": "none_pending_editorial_review",
-      "institution_test": "likely durable"
-    },
-    {
-      "id": "973392e1835783f6",
-      "title": "Qualcomm to unveil next-generation Snapdragon products for agentic AI - digitaltoday.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZTh3ZFlCQjV0bEQ5UFdPNzNISWY0R2pIekFwWk5yOGVwVWxiZUk4ek5HaTVSa0plRHc1YlVtNER0YkxadTU2OUFoREctV25CTy0zLTh1LTZ0d0JxTEpUZ1o1aGtrTERfb1Zpb3JtTUpWV3VHQzloRnhxeGZfTVZkTXZNVFhxNHY2eEs3YlZRaXZKNlYxeENHQlNvR3VYTzFVMUNmSWw5RFpzS2tDOGNtQkVFYW1ncEVvc3V1UmF0eGdTZE5qWjFERXhCSWd6NWsxSS1YNzl1cTM5RU9BRGIzMml3bw?oc=5",
-      "source": "Google News: Android XR wearable",
-      "source_lane": "adjacent_hci",
-      "published": "Tue, 22 Sep 2026 12:13:58 GMT",
-      "summary": "Qualcomm to unveil next-generation Snapdragon products for agentic AI digitaltoday.co.kr",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "ai",
-        "snapdragon"
-      ],
-      "status": "candidate",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
