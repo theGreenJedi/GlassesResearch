@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/verify_public_follow_surfaces.py'
+      - 'scripts/public_route_contract.py'
+      - 'data/public-route-contract.json'
       - '.github/workflows/public-surface-smoke.yml'
   workflow_run:
     workflows: ['Deploy documentation site']
@@ -30,7 +32,10 @@ jobs:
         with:
           python-version: '3.x'
       - name: Check smoke-test syntax
-        run: python -m py_compile scripts/verify_public_follow_surfaces.py
+        run: python -m py_compile scripts/verify_public_follow_surfaces.py scripts/public_route_contract.py
+
+      - name: Validate public route contract
+        run: python scripts/public_route_contract.py --contract data/public-route-contract.json validate
 
   smoke:
     # Pages runs for pull requests build and validate the site but intentionally
@@ -60,3 +65,4 @@ jobs:
             args+=(--attempts 3 --sleep-seconds 10)
           fi
           python scripts/verify_public_follow_surfaces.py "${args[@]}"
+          python scripts/public_route_contract.py --contract data/public-route-contract.json verify-live --base-url https://glassesresearch.org --attempts 3 --sleep-seconds 10
