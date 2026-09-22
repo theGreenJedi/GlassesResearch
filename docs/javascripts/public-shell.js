@@ -25,7 +25,9 @@
       department = "finder";
     } else if (
       path.startsWith("/models") ||
-      path.includes("/report_card")
+      path.startsWith("/docs/report-cards") ||
+      path.includes("/report_card") ||
+      path.includes("/report-card")
     ) {
       department = "models";
     } else if (
