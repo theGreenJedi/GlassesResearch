@@ -106,8 +106,24 @@ jobs:
           items=[(mid,rec) for mid,rec in data["records"].items() if rec.get("original_image")]
           tw,th=120,90; cols=4; rows=math.ceil(len(items)/cols)
           sheet=Image.new("RGB",(cols*tw,rows*th),"white"); draw=ImageDraw.Draw(sheet)
-          for i,(mid,rec) in enumerate(items):
+          valid=[]
+          for mid,rec in items:
             p=root/rec["original_image"].lstrip("/")
+            try:
+              with Image.open(p) as im:
+                im.verify()
+              valid.append((mid,rec,p))
+            except Exception as e:
+              print(f"::warning::{mid}: downloaded asset is not a decodable image: {e}")
+              if p.exists(): p.unlink()
+              rec.pop("original_image",None)
+              rec.pop("source_asset_url",None)
+              rec["acquisition_note"]=(rec.get("acquisition_note","")+" Auto-discovered asset rejected because the downloaded payload was not a decodable image.").strip()
+          regp=root/"data/model-visuals.json"
+          regp.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\\n",encoding="utf-8")
+          rows=math.ceil(len(valid)/cols)
+          sheet=Image.new("RGB",(cols*tw,max(rows,1)*th),"white"); draw=ImageDraw.Draw(sheet)
+          for i,(mid,rec,p) in enumerate(valid):
             with Image.open(p) as im:
               im=ImageOps.exif_transpose(im).convert("RGBA")
               bg=Image.new("RGBA",(tw-8,th-24),"white")
