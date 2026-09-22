@@ -103,6 +103,14 @@ jobs:
       - name: Verify every public page has an intentional path
         run: python scripts/verify_public_reachability.py
 
+      - name: Install public compatibility routes
+        shell: bash
+        run: |
+          set -euo pipefail
+          install -d site/docs/contribute
+          cp site/docs/CONTRIBUTE/index.html site/docs/contribute/index.html
+          cmp -s site/docs/CONTRIBUTE/index.html site/docs/contribute/index.html
+
       - name: Verify built JavaScript syntax
         shell: bash
         run: |
@@ -145,6 +153,9 @@ jobs:
           test -s site/docs/START_BY_NEED/index.html
           test -s site/docs/RESEARCH_STANDARDS/index.html
           test -s site/docs/CONTRIBUTORS/index.html
+          test -s site/docs/CONTRIBUTE/index.html
+          test -s site/docs/contribute/index.html
+          cmp -s site/docs/CONTRIBUTE/index.html site/docs/contribute/index.html
           test -s site/docs/PRESERVATION/index.html
           test -s site/docs/TOOLS/index.html
           test -s site/resources/COMMUNITY_AND_DEVELOPMENT/index.html
@@ -246,6 +257,8 @@ jobs:
               && curl_live /javascripts/glassesresearch-model-card.js /tmp/model-card.js \
               && curl_live /docs/TOOLS/ /tmp/tools.html \
               && curl_live /docs/REFERENCE_DESK/ /tmp/reference-desk.html \
+              && curl_live /docs/CONTRIBUTE/ /tmp/contribute-canonical.html \
+              && curl_live /docs/contribute/ /tmp/contribute-lowercase.html \
               && curl_live /docs/EMBED_GLASSESRESEARCH/ /tmp/embed.html \
               && curl_live /docs/javascripts/comparison-engine.js /tmp/comparison-engine.js \
               && curl_live /resources/COMMUNITY_AND_DEVELOPMENT/ /tmp/community.html \
@@ -272,6 +285,9 @@ jobs:
                 && grep -Fq 'verified price ceilings, and Report Card minimum scores' /tmp/tools.html \
                 && grep -Fq 'Open Smart-Glasses Dataset' /tmp/tools.html \
                 && grep -Fq 'Reference desk' /tmp/reference-desk.html \
+                && grep -Fq 'Want to contribute?' /tmp/contribute-canonical.html \
+                && grep -Fq 'Want to contribute?' /tmp/contribute-lowercase.html \
+                && ! grep -Fq '/docs/contribute/' /tmp/sitemap.xml \
                 && grep -Fq 'Embed a GlassesResearch model card' /tmp/embed.html \
                 && grep -Fq 'GLS-0039' /tmp/gls-0039.bib \
                 && grep -Fq 'cookie-free' /tmp/model-card.js \
