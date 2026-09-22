@@ -6,31 +6,31 @@
 
 
 /* Homepage tonal zoning: one teal family, visibly different section depths. */
-.gr-hero[data-gr-tone="intro"]{
+.gr-home>.gr-hero{
   background:color-mix(in srgb,var(--gr-accent) 8%,#fff);
   border-color:color-mix(in srgb,var(--gr-accent) 18%,var(--gr-line));
 }
-.gr-home .gr-section[data-gr-tone]{
+.gr-home .gr-section{
   padding:clamp(1.35rem,3vw,2.4rem);
   border:1px solid color-mix(in srgb,var(--gr-accent) 16%,var(--gr-line));
   border-radius:.7rem;
   box-shadow:inset 0 1px 0 rgba(255,255,255,.72);
 }
-.gr-home .gr-section[data-gr-tone="curated"]{background:color-mix(in srgb,var(--gr-accent) 6%,#fff)}
-.gr-home .gr-section[data-gr-tone="wire"]{background:color-mix(in srgb,var(--gr-accent) 11%,#fff)}
-.gr-home .gr-section[data-gr-tone="finder"]{background:color-mix(in srgb,var(--gr-accent) 16%,#fff)}
-.gr-home .gr-section[data-gr-tone="events"]{background:color-mix(in srgb,var(--gr-accent) 8%,#fff)}
-.gr-home .gr-section[data-gr-tone="explore"]{background:color-mix(in srgb,var(--gr-accent) 13%,#fff)}
-.gr-home .gr-section[data-gr-tone] .gr-section-heading{
+.gr-home .gr-section:has(#gr-now-title){background:color-mix(in srgb,var(--gr-accent) 6%,#fff)}
+.gr-home .gr-section[data-home-wire]{background:color-mix(in srgb,var(--gr-accent) 11%,#fff)}
+.gr-home .gr-finder-section{background:color-mix(in srgb,var(--gr-accent) 16%,#fff)}
+.gr-home .gr-section[data-home-events]{background:color-mix(in srgb,var(--gr-accent) 8%,#fff)}
+.gr-home .gr-section:has(#gr-explore-title){background:color-mix(in srgb,var(--gr-accent) 13%,#fff)}
+.gr-home .gr-section .gr-section-heading{
   border-bottom-color:color-mix(in srgb,var(--gr-accent) 24%,var(--gr-line));
 }
-.gr-home .gr-section[data-gr-tone] .gr-story-stack a,
-.gr-home .gr-section[data-gr-tone] .home-finder{
+.gr-home .gr-section .gr-story-stack a,
+.gr-home .gr-section .home-finder{
   background:color-mix(in srgb,#fff 94%,var(--gr-accent) 6%);
 }
-.gr-mission-band[data-gr-tone="closing"]{
+.gr-home .gr-mission-band{
   background:linear-gradient(145deg,var(--home-dark),color-mix(in srgb,var(--home-dark) 74%,var(--gr-accent) 26%));
 }
 @media(max-width:720px){
-  .gr-home .gr-section[data-gr-tone]{padding:1rem;border-radius:.6rem}
+  .gr-home .gr-section{padding:1rem;border-radius:.6rem}
 }
