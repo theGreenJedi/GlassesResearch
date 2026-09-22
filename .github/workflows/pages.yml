@@ -103,14 +103,6 @@ jobs:
       - name: Verify every public page has an intentional path
         run: python scripts/verify_public_reachability.py
 
-      - name: Install public compatibility routes
-        shell: bash
-        run: |
-          set -euo pipefail
-          install -d site/docs/contribute
-          cp site/docs/CONTRIBUTE/index.html site/docs/contribute/index.html
-          cmp -s site/docs/CONTRIBUTE/index.html site/docs/contribute/index.html
-
       - name: Verify built JavaScript syntax
         shell: bash
         run: |
@@ -121,6 +113,14 @@ jobs:
 
       - name: Verify search discoverability signals
         run: python scripts/verify_discoverability.py
+
+      - name: Install public compatibility routes
+        shell: bash
+        run: |
+          set -euo pipefail
+          install -d site/docs/contribute
+          cp site/docs/CONTRIBUTE/index.html site/docs/contribute/index.html
+          cmp -s site/docs/CONTRIBUTE/index.html site/docs/contribute/index.html
 
       - name: Verify built research endpoints
         shell: bash
