@@ -81,7 +81,7 @@ Known critical contracts to baseline explicitly in WS0:
 - scheduled newsroom/news/search/archive/catalog/link automation workflows
 
 ## Known regressions / risks
-- Branch diverged from `main`: 34 commits ahead, 1 behind as of 2026-09-20. Status: open; reconcile before merge.
+- Branch divergence resolved 2026-09-21: the 12 upstream `main` commits (wire/news, analytics, timeline, and purchase-link-health refreshes) were merged into `presentation-mission` via PR #625. Current presentation branch is 0 commits behind `main` at reconciliation.
 - No saved WS0 route baseline/ledger yet. Status: active blocker to WS1 acceptance, not to baseline work.
 - Self-hosted try-on runtime/model absent by design. Status: blocked pending license/source/redistribution/hash verification.
 - Registry imagery coverage is currently content-incomplete; exact deficit must come from saved WS11 audit.
@@ -111,6 +111,9 @@ Known critical contracts to baseline explicitly in WS0:
 
 ## Missing-image presentation rule
 2026-09-21 — Report Cards and canonical model pages now preserve the image slot when no governed image is publishable and render `No Picture Available`. Report Card/model content remains fully present; no broken-image icons or generic GLASSES token are used.
+
+## Pre-launch reconciliation
+2026-09-21 — PR #625 merged `main` into `presentation-mission` at merge commit `7927f850e5d9411b61d2c1dbb74e1cf3dcc6337f`, preserving 12 upstream wire/news, analytics, timeline, and purchase-link-health commits. No upstream commits were discarded. The branch was 0 commits behind `main` immediately after reconciliation.
 
 ## Validation record
 2026-09-21 — Visual-locator shortcut expanded to a curated Phase 1 network: Smart Glasses Geek, smartglasses.today, Wareable, and UploadVR. Provider classes and multi-locator records are enforced by `verify_visual_locators.py`; locator domains remain forbidden as publication provenance. Current registry state remains 35 cleared / 36 candidate / 175 missing.
