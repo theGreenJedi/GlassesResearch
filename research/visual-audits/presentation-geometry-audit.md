@@ -1,34 +1,72 @@
 # Presentation geometry audit
 
-Models measured: **35**.
-Median occupied canvas area: **41.8%**.
+Models measured: **105**.
+Median occupied canvas area: **42.9%**.
 
 | Model | bbox px | area | min edge px | state |
 |---|---:|---:|---:|---|
 | GLS-0001 | 867×650 | 39.1% | 125 | cleared |
+| GLS-0003 | 1156×650 | 52.2% | 125 | candidate |
+| GLS-0007 | 1156×650 | 52.2% | 125 | candidate |
+| GLS-0008 | 1156×650 | 52.2% | 125 | candidate |
 | GLS-0021 | 749×650 | 33.8% | 125 | cleared |
+| GLS-0022 | 1320×407 | 37.3% | 140 | candidate |
+| GLS-0024 | 650×650 | 29.3% | 125 | candidate |
 | GLS-0025 | 1320×630 | 57.8% | 135 | cleared |
 | GLS-0027 | 1281×650 | 57.8% | 125 | cleared |
+| GLS-0028 | 1030×650 | 46.5% | 125 | candidate |
+| GLS-0029 | 1030×650 | 46.5% | 125 | candidate |
+| GLS-0030 | 650×650 | 29.3% | 125 | candidate |
 | GLS-0031 | 975×650 | 44.0% | 125 | cleared |
 | GLS-0033 | 650×650 | 29.3% | 125 | cleared |
+| GLS-0034 | 975×650 | 44.0% | 125 | candidate |
+| GLS-0035 | 1320×387 | 35.5% | 140 | candidate |
 | GLS-0037 | 962×650 | 43.4% | 125 | cleared |
 | GLS-0042 | 1156×650 | 52.2% | 125 | cleared |
 | GLS-0047 | 1320×424 | 38.9% | 140 | cleared |
+| GLS-0048 | 1238×650 | 55.9% | 125 | candidate |
+| GLS-0049 | 1238×650 | 55.9% | 125 | candidate |
 | GLS-0052 | 650×650 | 29.3% | 125 | cleared |
+| GLS-0053 | 1320×235 | 21.5% | 140 | candidate |
+| GLS-0054 | 1320×235 | 21.5% | 140 | candidate |
+| GLS-0055 | 1320×235 | 21.5% | 140 | candidate |
+| GLS-0056 | 1320×235 | 21.5% | 140 | candidate |
+| GLS-0057 | 1242×650 | 56.1% | 125 | candidate |
+| GLS-0058 | 1242×650 | 56.1% | 125 | candidate |
+| GLS-0059 | 1242×650 | 56.1% | 125 | candidate |
+| GLS-0060 | 1242×650 | 56.1% | 125 | candidate |
+| GLS-0063 | 650×650 | 29.3% | 125 | candidate |
+| GLS-0064 | 650×650 | 29.3% | 125 | candidate |
+| GLS-0065 | 1257×650 | 56.7% | 125 | candidate |
 | GLS-0066 | 1257×650 | 56.7% | 125 | cleared |
+| GLS-0067 | 1320×502 | 46.0% | 140 | candidate |
 | GLS-0068 | 950×650 | 42.9% | 125 | cleared |
+| GLS-0069 | 487×650 | 22.0% | 125 | candidate |
+| GLS-0070 | 487×650 | 22.0% | 125 | candidate |
 | GLS-0071 | 854×650 | 38.5% | 125 | cleared |
 | GLS-0072 | 855×650 | 38.6% | 125 | cleared |
+| GLS-0073 | 487×650 | 22.0% | 125 | candidate |
 | GLS-0074 | 872×650 | 39.4% | 125 | cleared |
 | GLS-0075 | 911×650 | 41.1% | 125 | cleared |
+| GLS-0076 | 1238×650 | 55.9% | 125 | candidate |
+| GLS-0077 | 1238×650 | 55.9% | 125 | candidate |
 | GLS-0078 | 1238×650 | 55.9% | 125 | cleared |
 | GLS-0079 | 894×650 | 40.4% | 125 | cleared |
 | GLS-0080 | 893×650 | 40.3% | 125 | cleared |
 | GLS-0081 | 1238×650 | 55.9% | 125 | cleared |
 | GLS-0082 | 893×650 | 40.3% | 125 | cleared |
+| GLS-0088 | 1257×650 | 56.7% | 125 | candidate |
+| GLS-0089 | 1257×650 | 56.7% | 125 | candidate |
+| GLS-0090 | 1257×650 | 56.7% | 125 | candidate |
 | GLS-0091 | 790×650 | 35.7% | 125 | cleared |
+| GLS-0092 | 650×650 | 29.3% | 125 | candidate |
+| GLS-0093 | 650×650 | 29.3% | 125 | candidate |
+| GLS-0096 | 1320×235 | 21.5% | 140 | candidate |
+| GLS-0097 | 1320×235 | 21.5% | 140 | candidate |
 | GLS-0098 | 1320×531 | 48.7% | 140 | cleared |
+| GLS-0099 | 1320×235 | 21.5% | 140 | candidate |
 | GLS-0100 | 715×650 | 32.3% | 125 | cleared |
+| GLS-0121 | 1320×235 | 21.5% | 140 | candidate |
 | GLS-0103 | 674×650 | 30.4% | 125 | cleared |
 | GLS-0104 | 846×650 | 38.2% | 125 | cleared |
 | GLS-0105 | 1216×650 | 54.9% | 125 | cleared |
@@ -40,3 +78,35 @@ Median occupied canvas area: **41.8%**.
 | GLS-0111 | 926×650 | 41.8% | 125 | cleared |
 | GLS-0112 | 1056×650 | 47.7% | 125 | cleared |
 | GLS-0115 | 1156×650 | 52.2% | 125 | cleared |
+| GLS-0151 | 649×650 | 29.3% | 125 | candidate |
+| GLS-0152 | 1238×650 | 55.9% | 125 | candidate |
+| GLS-0153 | 1242×650 | 56.1% | 125 | candidate |
+| GLS-0155 | 768×650 | 34.7% | 125 | candidate |
+| GLS-0156 | 932×650 | 42.1% | 125 | candidate |
+| GLS-0157 | 1320×202 | 18.5% | 140 | candidate |
+| GLS-0158 | 1320×544 | 49.9% | 140 | candidate |
+| GLS-0159 | 1320×558 | 51.1% | 140 | candidate |
+| GLS-0160 | 1170×650 | 52.8% | 125 | candidate |
+| GLS-0163 | 650×650 | 29.3% | 125 | candidate |
+| GLS-0169 | 1320×511 | 46.8% | 140 | candidate |
+| GLS-0172 | 640×650 | 28.9% | 125 | candidate |
+| GLS-0173 | 840×650 | 37.9% | 125 | candidate |
+| GLS-0174 | 840×650 | 37.9% | 125 | candidate |
+| GLS-0175 | 987×650 | 44.6% | 125 | candidate |
+| GLS-0178 | 1320×560 | 51.3% | 140 | candidate |
+| GLS-0180 | 1320×582 | 53.3% | 140 | candidate |
+| GLS-0185 | 796×650 | 35.9% | 125 | candidate |
+| GLS-0186 | 1257×650 | 56.7% | 125 | candidate |
+| GLS-0187 | 1257×650 | 56.7% | 125 | candidate |
+| GLS-0189 | 1231×650 | 55.6% | 125 | candidate |
+| GLS-0213 | 758×650 | 34.2% | 125 | candidate |
+| GLS-0217 | 1208×650 | 54.5% | 125 | candidate |
+| GLS-0218 | 1238×650 | 55.9% | 125 | candidate |
+| GLS-0219 | 803×650 | 36.2% | 125 | candidate |
+| GLS-0220 | 650×650 | 29.3% | 125 | candidate |
+| GLS-0221 | 1320×485 | 44.5% | 140 | candidate |
+| GLS-0229 | 1320×426 | 39.1% | 140 | candidate |
+| GLS-0236 | 650×650 | 29.3% | 125 | candidate |
+| GLS-0237 | 653×650 | 29.5% | 125 | candidate |
+| GLS-0238 | 1078×650 | 48.7% | 125 | candidate |
+| GLS-0245 | 1320×580 | 53.2% | 140 | candidate |
