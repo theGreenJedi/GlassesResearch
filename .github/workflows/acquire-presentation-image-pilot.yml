@@ -38,21 +38,40 @@ jobs:
           regp=root/"data/model-visuals.json"; data=json.loads(regp.read_text())
           success=[]; failed=[]
           for mid,rec in data["records"].items():
-            if rec.get("state")!="candidate" or rec.get("original_image") or "held from publication" in rec.get("acquisition_note",""): continue
+            note=rec.get("acquisition_note","").lower()
+            if rec.get("state")!="candidate" or rec.get("original_image") or "held from publication" in note or "held from automatic reacquisition" in note: continue
             page=rec.get("source_url","")
             if not page: continue
             try:
               req=urllib.request.Request(page,headers={"User-Agent":"Mozilla/5.0 GlassesResearch editorial research"})
               html=urllib.request.urlopen(req,timeout=30).read().decode("utf-8","ignore")
               pats=[
-                r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)',
-                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
-                r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)'
+                r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]+content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image(?::secure_url)?["\']',
+                r'<meta[^>]+name=["\']twitter:image(?::src)?["\'][^>]+content=["\']([^"\']+)'
               ]
               image=None
               for pat in pats:
                 m=re.search(pat,html,re.I)
                 if m: image=urllib.parse.urljoin(page,m.group(1).replace("&amp;","&")); break
+              if not image:
+                # Product JSON-LD often carries the clean manufacturer image even when the HTML gallery is JS-driven.
+                for block in re.findall(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',html,re.I|re.S):
+                  try:
+                    obj=json.loads(block)
+                    stack=obj if isinstance(obj,list) else [obj]
+                    for node in stack:
+                      if not isinstance(node,dict): continue
+                      imgs=node.get("image")
+                      if isinstance(imgs,str): imgs=[imgs]
+                      if isinstance(imgs,list) and imgs:
+                        cand=next((x for x in imgs if isinstance(x,str) and x.strip()),None)
+                        if cand:
+                          image=urllib.parse.urljoin(page,cand.replace("&amp;","&"))
+                          break
+                    if image: break
+                  except Exception:
+                    pass
               if not image:
                 target=set(re.findall(r"[a-z0-9]+",rec.get("alt","").lower()))
                 target-={"smart","glasses","glass","the","and","with","black","frame"}
@@ -60,9 +79,11 @@ jobs:
                 candidates=[]
                 for tag in re.findall(r"<img\\b[^>]*>",html,re.I):
                   am=re.search(r'alt=["\\\']([^"\\\']*)',tag,re.I)
-                  for sm in re.finditer(r'(?:src|data-src|srcset|data-srcset)=["\\\']([^"\\\']+)',tag,re.I):
+                  for sm in re.finditer(r'(?:src|data-src|data-original|data-lazy-src|data-image|srcset|data-srcset)=["\\\']([^"\\\']+)',tag,re.I):
                     raw=sm.group(1).split(",")[0].strip().split(" ")[0]
                     candidates.append(((am.group(1) if am else ""),raw))
+                for raw in re.findall(r'url\\(["\\\']?([^"\\\')]+\\.(?:png|jpe?g|webp)(?:\\?[^"\\\') ]*)?)["\\\']?\\)',html,re.I):
+                  candidates.append(("",raw))
                 for raw in re.findall(r'https?[^"\\\' ]+?\\.(?:png|jpe?g|webp)(?:\\?[^"\\\' ]*)?',html,re.I):
                   candidates.append(("",raw))
                 seen=set()
@@ -81,9 +102,16 @@ jobs:
               req=urllib.request.Request(image,headers={"User-Agent":"Mozilla/5.0 GlassesResearch editorial research","Referer":page})
               with urllib.request.urlopen(req,timeout=45) as resp:
                 blob=resp.read(); ctype=resp.headers.get_content_type()
-              if not ctype.startswith("image/") or len(blob)<5000: raise RuntimeError(f"bad image {ctype} {len(blob)}")
-              ext={"image/jpeg":"jpg","image/png":"png","image/webp":"webp"}.get(ctype)
-              if not ext: raise RuntimeError(f"unsupported {ctype}")
+              # Trust file signatures over frequently-wrong CDN MIME headers.
+              if blob.startswith(b"\\xff\\xd8\\xff"):
+                ext="jpg"
+              elif blob.startswith(b"\\x89PNG\\r\\n\\x1a\\n"):
+                ext="png"
+              elif len(blob)>=12 and blob[:4]==b"RIFF" and blob[8:12]==b"WEBP":
+                ext="webp"
+              else:
+                ext={"image/jpeg":"jpg","image/png":"png","image/webp":"webp"}.get(ctype)
+              if not ext or len(blob)<1500: raise RuntimeError(f"bad image {ctype} {len(blob)}")
               path=out/f"{mid.lower()}.{ext}"; path.write_bytes(blob)
               rec["original_image"]="/"+str(path).replace("\\","/")
               rec["source_asset_url"]=image
@@ -162,7 +190,7 @@ jobs:
             if old:
               q=pathlib.Path(old.lstrip("/"))
               if q.exists(): q.unlink()
-            r["acquisition_note"]=(r.get("acquisition_note","")+" Auto-discovered page image rejected: not sufficiently model-specific for publication.").strip()
+            r["acquisition_note"]=(r.get("acquisition_note","")+" Auto-discovered page image rejected: not sufficiently model-specific for publication. Held from automatic reacquisition pending a better manufacturer asset.").strip()
           p.write_text(json.dumps(d,indent=2,ensure_ascii=False)+"\n")
           print("QA cleared",len(clear),"rejected",len(reject))
       - name: Rebuild normalized audit after QA
