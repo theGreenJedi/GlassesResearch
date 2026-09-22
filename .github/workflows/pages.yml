@@ -302,5 +302,13 @@ jobs:
           echo "Live deployment verification failed: production did not prove SHA ${GITHUB_SHA} with required feature surfaces." >&2
           exit 1
 
+      - name: Check out route contract
+        uses: actions/checkout@v6
+
+      - name: Set up Python for route contract
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
       - name: Verify live public route contract
         run: python scripts/public_route_contract.py --contract data/public-route-contract.json verify-live --base-url https://glassesresearch.org --attempts 3 --sleep-seconds 10
