@@ -10,6 +10,7 @@
   <div class="gr-hero-panel gr-hero-object" aria-label="Browse smart-glasses models">
     <p class="gr-panel-label">The glasses come first</p>
     <p class="gr-panel-title">See them.<br>Compare them.<br>Understand them.</p>
+    <div class="gr-hero-showcase" id="homepage-model-showcase" aria-label="Examples from the visual model catalog" hidden></div>
     <div class="home-status gr-home-status-quiet" id="homepage-status" aria-label="Research status">
       <div><strong data-site-stat="models">Living catalog</strong><span>canonical models</span></div>
       <div><strong data-site-stat="report-cards">Scored research</strong><span>scored Report Cards</span></div>
