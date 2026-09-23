@@ -1,38 +1,42 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-23T11:49:30.161991+00:00",
-  "candidate_count": 61,
-  "classifier_irrelevant_count": 54,
+  "discovered_utc": "2026-09-23T06:26:54.459546+00:00",
+  "candidate_count": 63,
+  "classifier_irrelevant_count": 51,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 4,
-    "broad_web": 45,
-    "developer": 10,
-    "manufacturer_catalog": 2
+    "adjacent": 10,
+    "broad_web": 35,
+    "developer": 18,
+    "retail": 1
   },
   "relationship_counts": {
-    "direct": 3,
-    "enabling": 0,
-    "adjacent": 4,
+    "direct": 1,
+    "enabling": 1,
+    "adjacent": 10,
     "speculative": 0,
-    "irrelevant": 54
+    "irrelevant": 51
   },
   "type_counts": {
-    "model": 3,
-    "video": 6,
+    "model": 1,
+    "review": 1,
+    "video": 5,
     "news": 37,
-    "tool": 11,
-    "sdk": 12,
-    "retail": 3,
-    "community": 2
+    "tool": 18,
+    "sdk": 18,
+    "hack": 1,
+    "optics": 1,
+    "retail": 2,
+    "teardown": 1,
+    "community": 11
   },
   "routing_counts": {
-    "adjacent_radar": 4,
-    "community_evidence_review": 1,
-    "development_hacking": 2,
-    "model_catalog_review": 3,
-    "reject_noise": 54,
-    "research_news_review": 7
+    "adjacent_radar": 10,
+    "reject_noise": 51,
+    "report_card_evidence": 5,
+    "research_news_review": 12,
+    "research_optics": 1,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -46,70 +50,41 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "4f742f48909489bc",
-      "title": "Manufacturer catalog lead: Buy Now",
-      "url": "https://www.inmoxr.com/collections/inmo-go3-bundles",
-      "summary": "Same-domain catalog/developer link discovered from https://www.inmoxr.com/",
-      "discovery_channel": "manufacturer_catalog",
-      "query": "",
-      "source": "https://www.inmoxr.com/",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "direct",
-      "content_types": [
-        "model",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "development_hacking"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "known smart-glasses source",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e4adac481a12ec3d",
-      "title": "Manufacturer catalog lead: Smarter Everyday, $150 OFF GO3 · SHOP NOW Smarter Everyday, $150 OFF GO3 · SHOP NOW",
-      "url": "https://www.inmoxr.com/pages/inmo-go3-ai-glasses",
-      "summary": "Same-domain catalog/developer link discovered from https://www.inmoxr.com/",
-      "discovery_channel": "manufacturer_catalog",
-      "query": "",
-      "source": "https://www.inmoxr.com/",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "direct",
-      "content_types": [
-        "model",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "development_hacking"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "known smart-glasses source",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9050bbceb648273f",
-      "title": "10 Best Smart Glasses for AI, AR & Entertainment (September 2026)",
-      "url": "https://www.ofzenandcomputing.com/best-smart-glasses/",
-      "summary": "Expert reviews of the top 10 smart glasses for 2026, covering AI translation, AR displays, and entertainment features.",
+      "id": "ea2e58f901070654",
+      "title": "About ENGO | Smart AR Sports Glasses Designed in the French Alps",
+      "url": "https://us.engoeyewear.com/pages/about-1",
+      "summary": "ENGO helps athletes gain a competitive advantage with instant, frictionless, hands-free access to sports performance data projected inside your lens. This data allows you to stay focused and execute in real-time.",
       "discovery_channel": "broad_web",
-      "query": "smart glasses review",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "enabling",
+      "content_types": [
+        "optics",
+        "teardown"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lens",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2f0ecf15792be097",
+      "title": "ENGO 3 Photochromic Unboxing - light-AR HUD Smart Glasses for Runners ...",
+      "url": "https://www.youtube.com/watch?v=TOY61cpGb7M",
+      "summary": "Unboxing the ENGO 3 Photochromic — the latest light-AR HUD glasses that project your live data (heart rate, pace, power + 40 more metrics) right into your field of view, and darken...",
+      "discovery_channel": "broad_web+retail",
+      "query": "ENGO smart glasses; titanium AI glasses ChatGPT site:walmart.com",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -118,22 +93,244 @@
       "disposition": "collected",
       "relationship": "direct",
       "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: hud glasses, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36174f2caff621a0",
+      "title": "Roseville CA Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/roseville-ca/",
+      "summary": "Zillow has 693 homes for sale in Roseville CA. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d8d2769ea7efd0b0",
+      "title": "British Columbia Weather Radar | AccuWeather",
+      "url": "https://www.accuweather.com/en/ca/british-columbia/weather-radar",
+      "summary": "See the latest British Columbia Doppler radar weather map including areas of rain, snow and ice. Our interactive map allows you to see the local & national weather.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8418ce90c791b008",
-      "title": "AITAH - Reddit",
-      "url": "https://www.reddit.com/r/AITAH/",
-      "summary": "r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA but is…",
+      "id": "ed571944aedae310",
+      "title": "Canada Satellite Weather Map | AccuWeather",
+      "url": "https://www.accuweather.com/en/ca/national/satellite",
+      "summary": "See the latest Canada RealVue™ weather satellite map, showing a realistic view of Canada from space, as taken from weather satellites. The interactive map makes it easy to navigate around the...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc6853979dda36ce",
+      "title": "Cities Nearby Roseville, California, United States",
+      "url": "https://www.thecitiesnow.com/united_states/california/roseville",
+      "summary": "Find five hundred cities near Roseville, California, United States from closest to farthest by distance. Distances from Roseville to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "98693482cb5b1c54",
+      "title": "GOES Imagery Viewer - NOAA / NESDIS / STAR",
+      "url": "https://www.star.nesdis.noaa.gov/GOES/index.php",
+      "summary": "Click on a region to view images and animations for that region. Coverage area depictions are approximate.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "069371f62f8f3b5d",
+      "title": "Movie Showtimes and Theaters near Roseville, CA | Fandango",
+      "url": "https://www.fandango.com/roseville_ca_movietimes",
+      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Roseville, CA.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bb7679a3cde6928c",
+      "title": "Placer County, CA Events Calendar",
+      "url": "https://www.visitplacer.com/events/",
+      "summary": "Find upcoming events in Placer County, CA, including festivals, live music, holiday events, food and wine experiences, and family-friendly activities. Browse by date, location, or event type.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2ea9e26fa48861f0",
+      "title": "Vancouver, British Columbia Radar and Infrared Satellite",
+      "url": "https://www.localconditions.com/canada/british-columbia/vancouver/radar/",
+      "summary": "Vancouver British Columbia radar weather maps and infrared satellite providing current Base and Composite Reflectivity views of storm severity from precipitation levels and cloud cover; with the option of seeing an animated loop.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a0c83b922556589d",
+      "title": "Watching videos with branded content, sponsorships & endorsements",
+      "url": "https://support.google.com/youtube/answer/10588440?hl=en",
+      "summary": "Keep in mind that even with YouTube Premium, you may still get disclosures for sponsored content directly added by creators. If you're a creator, learn how to add branded content , sponsorships & endorsements to your content.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -144,12 +341,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "video"
       ],
-      "primary_type": "community",
+      "primary_type": "video",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
+        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -158,12 +355,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5e0a2a4b19539ca2",
-      "title": "Find Wells Fargo bank and ATM locations in Minnesota | Wells Fargo",
-      "url": "https://locations.wellsfargo.com/mn",
-      "summary": "Locate banks or ATMs in Minnesota. Find drive-thru ATMs, banking services available, store hours, customer service numbers, directions and more.",
+      "id": "9fcf09442bf206ff",
+      "title": "YouTube Ajutor - Google Help",
+      "url": "https://support.google.com/youtube/?hl=ro",
+      "summary": "Centrul oficial de ajutor YouTube unde puteţi găsi sfaturi şi tutoriale despre utilizarea produsului şi alte răspunsuri la întrebări frecvente.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -172,12 +369,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "model"
+        "video"
       ],
-      "primary_type": "model",
+      "primary_type": "video",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
+        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -186,64 +383,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e3b88cbb8853d78f",
-      "title": "How To Use \"Near\" in English LanGeek",
-      "url": "https://langeek.co/en/grammar/course/983/near",
-      "summary": "As stated above, one of the main functions of 'near' is to be a preposition. Below, we are going to learn all about the different kinds of prepositions it can be: 'Near' can mainly function as a preposition of place. Below, we are going to learn all about its different meanings:",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f6d6d4266b514799",
-      "title": "Near Meaning, Definition & Synonyms | VocabDictionary",
-      "url": "https://vocabdictionary.com/english/near",
-      "summary": "Learn the English meaning of Near: Located a short distance away; close. Includes phonetic IPA (//nɪr//), CEFR level, synonyms, audio, and 10-language translations.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e28fb96c64e0cb85",
-      "title": "AMC Pacific Place 11 Seattle | Movie Session Times & Tickets, Contacts ...",
-      "url": "https://www.flicks.us/cinema/amc-pacific-place-11-seattle/",
-      "summary": "Find session times and book tickets for AMC Pacific Place 11 Seattle, Seattle.",
+      "id": "56026f17f6ac22c6",
+      "title": "bbb.wikipedia.de",
+      "url": "https://bbb.wikipedia.de/html5client/join?sessionToken=ayck0yniemnblsti",
+      "summary": "It looks like you're using an older version of a supported browser. Please upgrade your browser for full support.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -267,10 +410,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "27ecb4cb6b5e1bc8",
-      "title": "AMC Pacific Place 11 Showtimes Schedule - Seattle, Washington ...",
-      "url": "https://www.bigscreen.com/Marquee.php?theater=5235&view=sched&printable=1",
-      "summary": "What's playing and when? View showtimes for movies playing at AMC Pacific Place 11 in Seattle, Washington (WA 98101) with links to movie information (plot summary, reviews, actors, actresses, etc.) and more information about the theater.",
+      "id": "40ad0886845bcc51",
+      "title": "BigBlueButton - bbb.wikipedia.de",
+      "url": "https://bbb.wikipedia.de/signup",
+      "summary": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online learning experiences.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -294,39 +437,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a5bdb6cc5d60e4c6",
-      "title": "AMC Seattle 10. Movie Showtimes & Tickets | Fever",
-      "url": "https://feverup.com/movies/en/united-states/movie-theaters/amc-seattle-10",
-      "summary": "Find movie showtimes, choose the best seats and buy tickets for AMC Seattle 10. We make going to the movies easy!",
+      "id": "a6ecddd44ca691bd",
+      "title": "Can't download Spotify on Apple Watch SE3",
+      "url": "https://community.spotify.com/t5/Premium-Family/Can-t-download-Spotify-on-Apple-Watch-SE3/td-p/7369560",
+      "summary": "When you update your Spotify on your iPhone app, the watch app will be removed. You can still use your watch to control Spotify on the phone without the Spotify watch app. There's more info on using Spotify on Apple Watch here. Hope this helps! Billy-JSpotify Star Help others find this answer and click \"Accept as Solution\".",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "41f65936255889d0",
-      "title": "AMC Theatres",
-      "url": "https://www.amctheatres.com/movie-theatres/seattle-tacoma/amc-seattle-10/showtimes",
-      "summary": "Find showtimes, buy movie tickets, watch trailers, and get directions to AMC Seattle 10.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -337,7 +453,8 @@
       "content_types": [
         "video",
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
       "primary_type": "video",
       "routing_targets": [
@@ -349,10 +466,66 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1f114b53c5601ea0",
-      "title": "Cinema Seattle - Seattle Movie Showtimes & Cinema Map",
-      "url": "https://www.cinemaseattle.com/",
-      "summary": "Daily and weekly movie showtimes for Seattle cinemas, plus an interactive map of Seattle movie theater locations.",
+      "id": "790c4ede7d01de10",
+      "title": "Download Spotify on iPhone/iPad without AppStore",
+      "url": "https://community.spotify.com/t5/iOS-iPhone-iPad/Download-Spotify-on-iPhone-iPad-without-AppStore/td-p/1653454",
+      "summary": "I am a premium account member living outside of my home country. I want to add my peeps in a family account, but the AppStore does not allow download into iPhones/iPads since it is not a supported country. Is there a way to download directly or bypass the AppStore limitation? Downloading with a VP...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4cbacf3cfb880ef2",
+      "title": "Downloading and Installing Spotify on Mac OS X 10.6.8",
+      "url": "https://community.spotify.com/t5/Desktop-Mac/Downloading-and-Installing-Spotify-on-Mac-OS-X-10-6-8/td-p/1117271",
+      "summary": "Description I am just updated my OS to 10.6.8, and am trying to download the latest version of Spotify that I can. A more detailed description, using numbered steps 1. First I tried downloading Spotify from the Download page. 2. Then it said \"Safari can’t open the file 'Install Spotify' because no...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "21c86dd84e586668",
+      "title": "Förderberatung - bbb.wikipedia.de",
+      "url": "https://bbb.wikipedia.de/rooms/wir-76h-a2w-0gm/join",
+      "summary": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online learning experiences.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -376,10 +549,180 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9b997b2b5eaabb79",
-      "title": "Synonyms for Hate: Alternative Words to Describe Dislike",
-      "url": "https://completeera.com/synonyms-for-hate-alternative-words-to-describe-dislike/",
-      "summary": "This guide breaks down synonyms for hate, from mild dislikes to intense loathing, with contextual examples, comparison tables, and practical tips for writing, speaking, or emotional expression.",
+      "id": "738ec97fd8e7bf04",
+      "title": "Installing Spotify - The Spotify Community",
+      "url": "https://community.spotify.com/t5/FAQs/Installing-Spotify/ta-p/4831284",
+      "summary": "Here's how you can install Spotify on your device: Windows: Head over here, a file will start to download automatically The file will download to your default download-folder. On windows this folder is called Downloads by default The file you download looks like this: You can double-click thi...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c04e1af92734918",
+      "title": "Solved: How do I fix “device limit reached” trying to down... - The ...",
+      "url": "https://community.spotify.com/t5/Your-Library/How-do-I-fix-device-limit-reached-trying-to-download-music-onto/td-p/5370968",
+      "summary": "I can’t download my music onto my phone, I recently just got a new phone and can’t fix this problem. I want to download my likes on my library but “device limit reached remove all downloads from another device to listen offline with this one”",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "783cf2f469b1cedd",
+      "title": "Spenden-Kommentar-Ticker",
+      "url": "https://ticker.wikipedia.de/",
+      "summary": "Herbstkampagne 2022 Spendenkommentare Letzte Kommentare",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "476fcadb50ba6f54",
+      "title": "Spotify download - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Content-Questions/Spotify-download/td-p/5776018",
+      "summary": "How do I delete the downloads on my lost phone on my new phone. Spotify keeps saying download limit and I have lost my old phone how can I delete the downloads on my old phone?",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "005f3e0d4ff87ec5",
+      "title": "Spotify Needs to Up the Offline Download Device Limit",
+      "url": "https://community.spotify.com/t5/Social-Random/Spotify-Needs-to-Up-the-Offline-Download-Device-Limit/td-p/7371470",
+      "summary": "Spotify needs to up the device limit, as realistically it is not preventing account sharing as a root problem. Competitors such as Apple Music already have cheaper plans and allow for up to 10 devices to download songs, and frankly Spotify isn't doing enough to improve actual features rather than implementing pointless AI features.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "hack",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e3c60ae3fa78a976",
+      "title": "Spotify no longer availible on Amazon Fire",
+      "url": "https://community.spotify.com/t5/Other-Podcasts-Partners-etc/Spotify-no-longer-availible-on-Amazon-Fire/td-p/6464751",
+      "summary": "Thanks for posting this thread in the Community! Since you mentioned that the device you're trying to download Spotify on is an Amazon Fire HD 10 tablet (7th generation), make sure that the device meets our minimum system requirements as this can be the reason why it says that the app isn't available. You can check our system requirements here.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "retail",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d1dbd69233e3f22a",
+      "title": "Spotify 登录遇到 Accesspoint:17 的问题，如何解决？",
+      "url": "https://www.zhihu.com/question/477038979",
+      "summary": "Spotify 登录遇到 wrong country settings Accesspoint:17 的问题，如何解决 只有你换个地区，下拉列表中才会有新地区的选项。 然后选择新地区。 这时候重启spotify再登陆还是不行的。然后我重启电脑再试就行了。原因也可能是数据更新延迟，不确定。 建议记住登陆的节点，以后登陆不上时救急。 因为一开始 ...",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -403,10 +746,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ffa6f81562b652a1",
-      "title": "Synonyms of - Merriam-Webster Thesaurus",
-      "url": "https://www.merriam-webster.com/thesaurus/hates",
-      "summary": "Synonyms for HATES: despises, loathes, detests, abhors, disdains, abominates, disapproves (of), has it in for; Antonyms of HATES: loves, prefers, likes, desires, enjoys, favors, fancies, relishes",
+      "id": "9664730e3ddc73d3",
+      "title": "Spotify电脑下载的歌在哪里怎么看？ - 知乎",
+      "url": "https://www.zhihu.com/question/377073202",
+      "summary": "Spotify電腦下載的歌曲位置 特點： 特色功能：Spotify 音樂MP3轉換、Spotify 音樂下載、無需Spotify Premium 下載音樂、Spotify 音樂免費下載 高音質設置：可自定義音頻輸出格式， 比特率可選 320 Kbps 輸出格式：MP3、M4A、AIFF、AAC、WAV 或 FLAC 格式。",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -430,12 +773,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "210e42d38fada368",
-      "title": "Synonyms of hate | English Thesaurus",
-      "url": "https://www.synonymer.com/en/english/?q=hate",
-      "summary": "Are you looking for synonyms of hate in English? We have 90 synonyms of the word hate in our database with definitions and usage examples.",
+      "id": "2f674ddb23b8570f",
+      "title": "Wiki Loves Earth 2026 – Vorjury Deutschland",
+      "url": "https://www.festivalsommer.wikipedia.de/prejury/",
+      "summary": "Tool: 2011–2015 Ruben Demusfür Wikimedia Austria (WMAT), graphisch überarbeitet von Martin Kraft",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -457,12 +800,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cd7ffc6ed706d059",
-      "title": "Synonyms of Hate|From Dislike to Detestation — Find the Perfect Word ...",
-      "url": "https://synonymplanet.com/synonyms-of-hate/",
-      "summary": "Hate means to feel an extremely strong dislike or intense negative emotion toward someone or something. The most common synonym is dislike, while stronger alternatives include despise, loathe, and detest.",
+      "id": "5494009d196d3674",
+      "title": "WikidataCon 2027/Call for expressions of interest to host",
+      "url": "https://bbb.wikipedia.de/rooms/plp-qml-xrj-9ib/",
+      "summary": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online learning experiences.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -484,12 +827,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4c7032f3b5d6232a",
-      "title": "What is another word for to hate? - WordHippo",
-      "url": "https://www.wordhippo.com/what-is/another-word-for/to+hate.html",
-      "summary": "Find 1,073 synonyms for to hate and other similar words that you can use instead based on 7 separate contexts from our thesaurus.",
+      "id": "1d7caee2f4a20cb4",
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/",
+      "summary": "Wir sind der gemeinnützige Verein hinter der Wikipedia und unterstützen die Ehrenamtlichen, sichern und entwickeln die technische Infrastruktur und setzen uns für den freien Zugang zu Wissen ein.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -511,12 +854,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5677e16655a9f846",
-      "title": "233 Entertainment Quizzes with Question & Answers - ProProfs",
-      "url": "https://www.proprofs.com/quiz-school/topic/entertainment",
-      "summary": "Entertainment Quizzes, Questions & Answers You have found the jackpot if you are looking for some entertainment and fun-based trivia quizzes. With our entertainment quiz questions and answers, which cover music, movies, television series, and novels, you can test your knowledge and discover more about the entertainment industry.",
+      "id": "0dfd7bbe2109f7ec",
+      "title": "Zwischen Einsamkeit und Community: Wie gemeinschaftlich ist Wikipedia?",
+      "url": "https://bbb.wikipedia.de/rooms/uk8-3ex-nad-tua/join",
+      "summary": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online learning experiences.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c3b71d47f8f39fb",
+      "title": "24 (number) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/24_(number)",
+      "summary": "24 is an even composite number, a highly composite number, an abundant number, a practical number, and a congruent number. The many ways 24 can be constructed inspired a children's mathematical game involving the use of any of the four standard operations on four numbers on a card to get 24.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -537,10 +908,36 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5093ca6bc71cd7e6",
-      "title": "APA Psychologist Locator – American Psychological Association",
-      "url": "https://locator.apa.org/",
-      "summary": "Find the right psychologist for you. Become a Part of a Brand that Clients Trust -- Join APA Psychologist Locator Today! Type in a ZIP code or city & state to find a psychologist near you. To further refine your search, type in the name of a provider or the specialty for which you’d like help.",
+      "id": "7264ab877048bb6a",
+      "title": "776 Live Traffic Cameras in Seattle, Washington (2026) - Watch Live ...",
+      "url": "https://opencctv.org/cameras/united-states/washington/seattle",
+      "summary": "Watch 775 live traffic cameras in Seattle, Washington, United States. Live webcams updated in real time - traffic, weather, beach cams, and more.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d59f2006ad0d5cb",
+      "title": "Acerca de Power Query en Excel | Microsoft Support",
+      "url": "https://support.microsoft.com/es-es/excel/about-power-query-in-excel",
+      "summary": "Con Power Query, puede buscar orígenes de datos, realizar conexiones y, después, dar forma a esos datos (por ejemplo, quitar una columna, cambiar un tipo de datos o combinar tablas) de formas que satisfagan sus necesidades.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -563,12 +960,376 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4aaa9cfa3316b0dc",
-      "title": "Bing Entertainment Quiz (9-21-2022) : r/BingQuizAnswers - Reddit",
-      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/xjr0zx/bing_entertainment_quiz_9212022/",
-      "summary": "Bing Entertainment News Quiz: Questions Answers (09-21-2022) 21 September 2022 1: Which singer was just honored with a star on the Hollywood Walk of…",
+      "id": "b0b08ca6de8ec35d",
+      "title": "Best - Definition, Meaning & Synonyms | Vocabulary.com",
+      "url": "https://www.vocabulary.com/dictionary/best",
+      "summary": "Nothing is better than the best — this is a word for the absolute number one example of something. Best is the opposite of worst.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "51d396a0a58beb8d",
+      "title": "BigQuery | Plataforma de datos de IA | EDW - Google Cloud",
+      "url": "https://cloud.google.com/bigquery?hl=es",
+      "summary": "BigQuery es una plataforma de datos e IA autónoma que automatiza todo el ciclo de vida de los datos para que puedas pasar de los datos a la IA y, de ahí, a la acción más rápido.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "63a2f9c5dbb5b507",
+      "title": "CA DMV Duplicate Title | Order Your Replacement Faster Online",
+      "url": "https://www.needtags.com/dmv-duplicate-title.php",
+      "summary": "Skip DMV lines! Get a duplicate title faster online with rush replacement processing and guaranteed delivery. We make replacing your California car title easy.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6164d191a4a6c636",
+      "title": "CA DMV Registration Renewal | Renew Online & Avoid The Fine",
+      "url": "https://www.needtags.com/dmv-registration-renewal.php",
+      "summary": "Avoid long DMV lines! Renew your California vehicle registration online with NeedTags. Get instant registration, free e-Card download, and stickers next-day.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7537c9a49c310cfa",
+      "title": "Consulta SQL (query): qué es y cómo leer el resultado · AprenderSQL.es",
+      "url": "https://aprendersql.es/glosario-sql/query/",
+      "summary": "Técnicamente conviene distinguir una query o consulta de lectura, que obtiene un resultado, de sentencias de modificación como INSERT, UPDATE y DELETE, que cambian datos.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0671d426ca9cea73",
+      "title": "Even and Odd Numbers - Math is Fun",
+      "url": "https://www.mathsisfun.com/numbers/even-odd.html",
+      "summary": "Make pairs. If one is left over, it is odd: Any integer that can be divided exactly by 2 is an even number. The last digit is 0, 2, 4, 6 or 8.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0571ead0625369c2",
+      "title": "Even Numbers - Definition, Chart, List, Types, and Examples",
+      "url": "https://mathmonks.com/integer/even-numbers",
+      "summary": "What are even numbers, and how to identify them with examples and diagrams. Also, see the list of even numbers from 1 to 100 with a chart",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9468b602f46affb3",
+      "title": "Even or Odd Calculator to Check if the number is Even or Odd",
+      "url": "https://onlinecalculator.guru/numbers/is-24-an-even-or-odd-number/",
+      "summary": "Even Numbers are those that usually end with 0,2, 4, 6, 8, and odd numbers are those that end with 1, 3, 5, 7, 9. Check out the one's place firstly and you will understand whether the entire number is even or odd.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "543c59f3250f3310",
+      "title": "Find DMV Offices | Arcadia, CA | Appointments & Hours - NeedTags",
+      "url": "https://www.needtags.com/dmv-office-location/arcadia",
+      "summary": "DMV office locations in and near Arcadia, CA. Get in & out faster with the information you need and an appointment to help you save time. View office hours, locations, maps, online services and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1832de430546441f",
+      "title": "Find DMV Offices | Castro Valley, CA | Appointments & Hours",
+      "url": "https://www.needtags.com/dmv-office-location/castro-valley",
+      "summary": "DMV office locations in and near Castro Valley, CA. Get in & out faster with the information you need and an appointment to help you save time. View office hours, locations, maps, online services and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ca4dd032928ae74",
+      "title": "Find DMV Offices | Citrus Heights, CA | Appointments & Hours",
+      "url": "https://www.needtags.com/dmv-office-location/citrus-heights",
+      "summary": "DMV office locations in and near Citrus Heights, CA. Get in & out faster with the information you need and an appointment to help you save time. View office hours, locations, maps, online services and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dc47d510a84c3df5",
+      "title": "Find DMV Offices | Lake Forest, CA | Appointments & Hours",
+      "url": "https://www.needtags.com/dmv-office-location/lake-forest",
+      "summary": "DMV office locations in and near Lake Forest, CA. Get in & out faster with the information you need and an appointment to help you save time. View office hours, locations, maps, online services and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0bd08e8c6c9bddb6",
+      "title": "Find DMV Offices | Los Alamitos, CA | Appointments & Hours",
+      "url": "https://www.needtags.com/dmv-office-location/los-alamitos",
+      "summary": "DMV office locations in and near Los Alamitos, CA. Get in & out faster with the information you need and an appointment to help you save time. View office hours, locations, maps, online services and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "865d39f4e0f7e3ca",
+      "title": "Free Even or Odd Number Checker - Test Multiple Numbers at Once",
+      "url": "https://miniwebtool.com/even-or-odd-number-checker/",
+      "summary": "Even or Odd Number Checker - Quickly check if numbers are even or odd. Supports batch input with visual grouping, divisibility explanations, number line visualization, and detailed parity analysis.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f3c36e95ecd2b07b",
+      "title": "How To Clear a Suspended Registration Faster - CA DMV - NeedTags",
+      "url": "https://www.needtags.com/forum/Suspended-Registration/1/How-Do-I-Clear-a-Suspended-Registration",
+      "summary": "How Do I Clear a Suspended Registration? Find the answers you need to get your California Vehicle Registration faster.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -589,10 +1350,114 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "94aa622c84580659",
-      "title": "Boston VW Dealers | Colonial Volkswagen Dealerships in Boston MA",
-      "url": "https://colonialvw.com/",
-      "summary": "When it comes to service and maintenance, Colonial’s premier Massachusetts Volkswagen dealerships are committed to providing top-notch care for our customers and their vehicles.",
+      "id": "6c790f7a66f415a7",
+      "title": "Is 24 even? - Answers",
+      "url": "https://math.answers.com/math-and-arithmetic/Is_24_even",
+      "summary": "A number is even if it can be divided by two without a remainder. 24 / 2 = 12r0. So yes, 24 is even.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e6cc31da57c5de29",
+      "title": "Is 24 even? | Math Tools",
+      "url": "https://math.tools/numbers/is-even/24",
+      "summary": "Is 24 even? 24 is even. It is evenly divisible by 2.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7a2bc59f710b39fa",
+      "title": "Is 24 odd or even - Answers",
+      "url": "https://math.answers.com/other-math/Is_24_odd_or_even",
+      "summary": "An even number can be divided by 2 evenly. An odd number will have a remainder of 1 when divided by 2. 24 is an even number.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d156bb293fa57e3d",
+      "title": "Is Odd/Even Calculator",
+      "url": "https://calculatordaily.com/is-odd-even-calculator",
+      "summary": "Is Odd/Even Calculator Use this Is Odd/Even Calculator to figure out if a number is an odd or even number. An even number is any whole number that is divisible by two (2). On the other hand, an odd number is not exactly divisible by 2. This calculator quickly decides whether an entered number is an odd or even number.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "757fb554d89e1bb6",
+      "title": "Kearny Mesa Volkswagen - San Diego, CA",
+      "url": "https://www.yelp.com/biz/kearny-mesa-volkswagen-san-diego",
+      "summary": "KEARNY MESA VOLKSWAGEN, 8040 Balboa Ave, San Diego, CA 92111, 242 Photos, (858) 300-8160, Mon - 9:00 am - 8:00 pm, Tue - 9:00 am - 8:00 pm, Wed - 9:00 am - 8:00 pm, Thu - 9:00 am - 8:00 pm, Fri - 9:00 am - 8:00 pm, Sat - 9:00 am - 8:00 pm, Sun - 10:00 am - 7:00 pm",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -615,10 +1480,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "becb5f4c11a6926f",
-      "title": "Contests - FOX 2 Detroit",
-      "url": "https://www.fox2detroit.com/contests",
-      "summary": "This material may not be published, broadcast, rewritten, or redistributed. ©2026 FOX Television Stations",
+      "id": "32032aa4310babd4",
+      "title": "List of even numbers between 0 and 1000",
+      "url": "https://primenumbers.info/even.htm",
+      "summary": "Even numbers are numbers that are divisible by 2 without any remainder. The list below displays even numbers that are between 0 and 1000 (inclusive). In total there are 501 such numbers.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -641,36 +1506,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0d284239f5b9af26",
-      "title": "Cooking School - FOX 2 Detroit",
-      "url": "https://www.fox2detroit.com/tag/series/cooking-school",
-      "summary": "Stories and video from FOX 2's Cooking School.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "53a7c2e2f241ef30",
-      "title": "Crescent High Lunge Pose Yoga(High Lunge Pose)| Yoga Sequences ...",
-      "url": "https://www.tummee.com/yoga-poses/high-lunge-pose",
-      "summary": "Crescent High Lunge Pose, or Ashta Chandrasana, meaning 'Eight Moon' in Sanskrit, is a standing balancing asana akin to the Warrior poses. This dynamic pose, resembling a crescent moon, is a preparatory pose for Warrior I and offers a deep stretch to the hamstrings and hips. Benefits include impr... sign-up to view complete summary.",
+      "id": "e21acf28e562d32a",
+      "title": "Mettre à jour les pilotes via Gestionnaire de périphériques dans ...",
+      "url": "https://support.microsoft.com/fr-fr/windows/mettre-%C3%A0-jour-les-pilotes-via-gestionnaire-de-p%C3%A9riph%C3%A9riques-dans-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+      "summary": "Découvrez comment mettre à jour ou réinstaller des pilotes dans Windows à l’aide de Gestionnaire de périphériques.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -693,12 +1532,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1db0bf239e8e0883",
-      "title": "Cricket Quiz: How Much You Know About Cricket? - Quiz & Trivia - ProProfs",
-      "url": "https://www.proprofs.com/quiz-school/story.php?title=online-cricket-quiz",
-      "summary": "Step onto the pitch and test your knowledge with the ultimate cricket quiz, a meticulously crafted challenge designed for fans of this beloved sport. This quiz offers a broad spectrum of questions covering historic matches, legendary players, iconic stadiums, and unforgettable moments that have defined cricket over the years. From the early days of test matches to the thrilling energy of T20 ...",
+      "id": "d2325c08cd3c6409",
+      "title": "NeedTags: Simpler, Better, Faster CA DMV Registration™",
+      "url": "https://www.needtags.com/",
+      "summary": "Simpler, Better, Faster CA DMV Registration Services. ™ Everything DMV registration related at your fingertips. Save time and get back to doing something you love.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -719,36 +1558,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0e0bf8a392579c64",
-      "title": "Entertainment - FOX 2 Detroit",
-      "url": "https://www.fox2detroit.com/tag/entertainment",
-      "summary": "News from the entertainment world, including TV, movies, music and celebrity news.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7f7a8bce246fba36",
-      "title": "Find a Therapist, Psychologist, Counselor - Psychology Today",
-      "url": "https://www.psychologytoday.com/us/therapists/",
-      "summary": "Browse our extensive directory of therapists, psychologists and counselors near you. Search by location, speciality and insurance.",
+      "id": "b8c29cca6b2c4548",
+      "title": "query - English-Spanish Dictionary - WordReference.com",
+      "url": "https://www.wordreference.com/enes/query",
+      "summary": "In Lists: Things that can be canceled, essay words, c2 THINKING AND SPEAKING, more... Synonyms: ask, inquire, enquire, question, question, more... Collocations: submit a [formal, written] query, please send all queries to, any queries from the crowd, more...",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -771,10 +1584,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1e0fa42a5437f187",
-      "title": "Find a Therapist: License-Verified Directory, Free - Psychology",
-      "url": "https://psychology.com/therapist/",
-      "summary": "Search 347 licensed therapists by location and specialty from the directory, or browse by state or by area of focus. Each profile shows the therapist's credentials, specialties, session formats, fees, and how to get in touch.",
+      "id": "dd3a46f07fed799d",
+      "title": "Query - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Query",
+      "summary": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to change the link to point directly to the intended article.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -797,478 +1610,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "97bdf9c7fd173c5e",
-      "title": "Fort Worth Camera | Fort Worth TX - Facebook",
-      "url": "https://www.facebook.com/fwcamera/",
-      "summary": "Meet the Canon R6V now in stock at Fort Worth Camera. If you’re ready to step into true cinema shooting, this camera gets you there, around 2500 dollars.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "64ce76bc25c57d5a",
-      "title": "FOX 2 Detroit | Local News, Weather, and Live Streams | WJBK",
-      "url": "https://www.fox2detroit.com/",
-      "summary": "Detroit news, weather, sports, and traffic serving all of southeast Michigan and Metro Detroit. Watch breaking news live or see the latest videos from programs like The Nine, Let it Rip, and FOX 2 ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c96e97a22b9bd939",
-      "title": "High Lunge (Ashta Chandrasana) - Yoga Pose Guide",
-      "url": "https://yoga-bits.com/poses/high-lunge/",
-      "summary": "A dynamic standing lunge that builds significant leg strength and balance while generating heat throughout the body. Unlike Low Lunge, the back knee stays lifted, demanding more from the quadriceps and core.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f022de2a9f4058ee",
-      "title": "High Lunge Pose (Ashta Chandrasana): Form & Benefits - yogajala",
-      "url": "https://yogajala.com/high-lunge-pose-ashta-chandrasana/",
-      "summary": "Build leg strength and hip flexibility with high lunge pose (ashta chandrasana). Learn alignment cues, arm variations, and common mistakes to avoid.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5915b0354fcd33d6",
-      "title": "High Lunge Pose (Utthita Ashwa Sanchalanasana) Instructions & Photos",
-      "url": "https://www.yogabasics.com/asana/high-lunge/",
-      "summary": "Benefits: High lunge opens the hips and chest, stretches the groin and legs, lengthens the spine and strengthens the lower body. Contraindications: Recent or chronic injury to the legs or hips.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7864f733a8b2dc3e",
-      "title": "High Lunge Pose - Yogapedia",
-      "url": "https://www.yogapedia.com/yoga-poses/high-lunge-pose/11/11234",
-      "summary": "What is High Lunge Pose? High lunge pose, or utthita ashwa sanchalanasana in Sanskrit, is a beginner's standing posture that builds strength and stamina. It's similar to but more accessible than warrior I as the back heel is lifted and the arms are parallel rather than touching.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b1bb7597ed8c0089",
-      "title": "High Lunge Yoga Pose - Yoga With Adriene",
-      "url": "https://yogawithadriene.com/high-lunge/",
-      "summary": "Learn the High Lunge yoga pose! This video is part of our Foundations of Yoga series suitable for beginners and great for anyone attempting to get back to a practice or deepen a current practice.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "937c19edc486aff0",
-      "title": "High Lunge: Benefits, How To & Variations - Yoga 15",
-      "url": "https://yoga15.com/pose/high-lunge/",
-      "summary": "High Lunge pose in yoga builds leg strength, stretches the hip flexors, and can help to ease knee and lower back pain. Free how-to video.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1531df6a96dd302c",
-      "title": "High Lunge: How to Practice the Yoga Pose",
-      "url": "https://www.yogajournal.com/poses/high-lunge/",
-      "summary": "High Lunge is a demanding, somewhat advanced pose that requires balance and strength. It asks for power to firm the feet, legs, and glutes, and the flexibility to lengthen the front hamstring while opening the back hip flexor.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c1175dba5fce9166",
-      "title": "How To Do High Lunge Pose - Brett Larkin Yoga",
-      "url": "https://www.brettlarkin.com/high-lunge-pose-alana/",
-      "summary": "High Lunge Pose (Alana) is a basic yoga posture that shows up in almost every sequence or vinyasa flow. Learn how to do it, variations, and modifications.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "18cd1c95cb0cc0f1",
-      "title": "How to Practice High Lunge | YogaRenew",
-      "url": "https://www.yogarenewteachertraining.com/yoga-poses/high-lunge/",
-      "summary": "High Lunge is a dynamic, energizing pose that invites stability, strength, and awareness. It strengthens the lower body, opens the front body, and sharpens mental focus—making it both empowering and accessible.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d10fe36ccbac2110",
-      "title": "IFA COUNTRY STORE - TREMONTON - Updated September 2026 - Yelp",
-      "url": "https://www.yelp.com/biz/ifa-country-store-tremonton-tremonton",
-      "summary": "IFA Country Store in Tremonton offers a variety of products and services for agricultural and outdoor needs, including animal feed, gardening supplies, and more.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "22e0e5f969ee2a6e",
-      "title": "Live News Stream: Watch FOX 2 Detroit",
-      "url": "https://www.fox2detroit.com/live",
-      "summary": "Stream local news and weather live from FOX 2 Detroit. Plus watch LiveNow, FOX SOUL, and more exclusive coverage from around the country.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "863e23f0b630c25b",
-      "title": "Local News - FOX 2 Detroit",
-      "url": "https://www.fox2detroit.com/local-news",
-      "summary": "Local News on FOX 2 Detroit Detroit man charged with murder after deadly dispute over how to cook chicken in Hazel Park",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "652a3d3f160ce984",
-      "title": "Mastria Volkswagen in Raynham | Massachusetts VW Dealership",
-      "url": "https://www.mastriavw.com/",
-      "summary": "Visit our Volkswagen dealership in Raynham, MA, for all your new VW and used car sales. Apply for auto financing or enjoy professional VW service nearby.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a5faff2a223085dc",
-      "title": "Meet the Team - FOX 2 Detroit",
-      "url": "https://www.fox2detroit.com/team",
-      "summary": "Meet the personalities and team members of FOX 2 Detroit, including anchors, reporters, and contributors.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c4d1a5fcc6c943e5",
-      "title": "News - FOX 2 Detroit",
-      "url": "https://www.fox2detroit.com/news",
-      "summary": "Local and breaking news reports from the Detroit metro area in southeast Michigan.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c8eeb34b9d5cbf1e",
-      "title": "Online Quizzes: Take Online Quiz - ProProfs",
-      "url": "https://www.proprofs.com/quiz-school/browse",
-      "summary": "Find Quizzes for Your Learning Goals Browse and take quizzes across topics people come back to again and again: Education & Learning - quizzes designed for students, teachers, and classrooms Trivia & General Knowledge - history, science, space, animals, and more Pop Culture - movies, music, quiz games, superheroes, and cartoons Personality & Self-Discovery - fun quizzes to compare and share ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2289e1c6f749dc7",
-      "title": "Psychosocial Assessment | Worksheet | Therapist Aid",
-      "url": "https://www.therapistaid.com/therapy-worksheet/psychosocial-assessment",
-      "summary": "Our Psychosocial Assessment provides an outline for gathering a wide range of information about your client. The assessment includes broad categories to explore, along with reminders for important information.",
+      "id": "a4dfdfdf06babd85",
+      "title": "Query Informática | Soluciones informáticas definitivas",
+      "url": "https://query.es/",
+      "summary": "En Query Informática, queremos informarte sobre los pasos que estamos dando y nuestra hoja de ruta para adaptar nuestras aplicaciones a estas nuevas exigencias.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1291,10 +1636,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "58f360d5b24206a7",
-      "title": "Psychosocial Rehabilitation: Benefits and Objectives",
-      "url": "https://www.verywellmind.com/psychosocial-rehabilitation-4589796",
-      "summary": "Psychosocial rehabilitation helps people with mental illness build skills to live and work independently. The approach focuses on empowering individuals and helping them feel hopeful about their future. Treatment is tailored to each person, focusing on strengths and potential, not just symptoms.",
+      "id": "b6bfed09af8edbbb",
+      "title": "QUERY | traducir al español - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/es/diccionario/ingles-espanol/query",
+      "summary": "traducir QUERY: pregunta, duda, cuestionar, preguntar, pregunta [feminine, singular], consulta [feminine…. Más información en el diccionario inglés-español.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1317,10 +1662,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6d1c8a3ef2388e50",
-      "title": "Psychosocial Therapy: Holistic Mental Health Treatment Explained",
-      "url": "https://neurolaunch.com/psychosocial-therapy/",
-      "summary": "A psychosocial therapist combines individual psychological work with systemic assessment. Sessions typically involve identifying unhelpful thought patterns and coping behaviors, exploring how relationships and life circumstances maintain problems, and collaboratively developing practical strategies.",
+      "id": "ce4d828c791a8fd0",
+      "title": "Qué es una Query: tipos principales - Arimetrics",
+      "url": "https://www.arimetrics.com/glosario-digital/query",
+      "summary": "Una query es una consulta formulada para recuperar información de un sistema. En un buscador, corresponde a las palabras, frases, preguntas u operadores que una persona introduce para obtener resultados.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1343,10 +1688,36 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "031581ab6067e561",
-      "title": "Psychosocial Therapy: Its Types, Examples and Why Is It Used?",
-      "url": "https://www.calmsage.com/psychosocial-therapy/",
-      "summary": "Psychosocial therapists must get to know their patient’s personal and professional life so that they can help them perform better in a social setting. Once the therapist knows their patients well, they come up with potentially successful treatment plans.",
+      "id": "393b6c2160cb4ace",
+      "title": "Which DMV Offices Are Open on Saturdays? - NeedTags",
+      "url": "https://www.needtags.com/forum/Registration-Renewal/1/Which-DMV-Offices-Are-Open-on-Saturdays",
+      "summary": "Which DMV Offices Are Open on Saturdays? Find the answers you need to get your California Vehicle Registration faster.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7d4d577af0797c5d",
+      "title": "¿Qué es Power Query? - Power Query | Microsoft Learn",
+      "url": "https://learn.microsoft.com/es-es/power-query/power-query-what-is-power-query",
+      "summary": "Obtenga información sobre qué es Power Query y cómo puede ayudarle a obtener y transformar datos.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1360,292 +1731,6 @@
         "news"
       ],
       "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "54b8d94e85a4b1a2",
-      "title": "Psychosocial Therapy: What It Is, Types, and Examples - MEDvidi",
-      "url": "https://medvidi.com/blog/psychosocial-therapy",
-      "summary": "Psychosocial therapy offers support and practical tools for those facing social or emotional challenges. Explore its benefits and types here.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "05808b7c6dc972dc",
-      "title": "Psychosocial Treatments - NAMI",
-      "url": "https://www.nami.org/treatments-and-approaches/psychosocial-treatments/",
-      "summary": "Psychosocial treatments include different types of psychotherapy and social and vocational training, and aim to provide support, education and guidance to people with mental illness and their families.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d607be8f290e1c56",
-      "title": "Psychotherapy: Definition, Types, Techniques, & Efficacy",
-      "url": "https://www.simplypsychology.org/psychotherapy.html",
-      "summary": "Psychotherapy, often called talk therapy or simply therapy, involves using verbal and psychological techniques to treat emotional distress and mental health conditions. It is delivered by trained professionals, such as psychologists, psychotherapists, counselors, psychiatrists, or social workers.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "25f6950c53fe337f",
-      "title": "Quirk Volkswagen | Dealership in Braintree, MA | View New VW ...",
-      "url": "https://www.quirkvw.com/",
-      "summary": "At Quirk Volkswagen MA, we have all the VW models that you are looking for including the adventurous Atlas and Tiguan, along with the sporty Jetta, Arteon, and Passat.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bba447a5008ac904",
-      "title": "Senate debate: Mike Rogers declined, Abdul El-Sayed confirmed",
-      "url": "https://www.fox2detroit.com/news/mike-rogers-abdul-el-sayed-debate-detroit-senate",
-      "summary": "The Brief FOX 2’s \"The Pulse\" hosted the U.S. Senate debate on Tuesday, Sept. 15. Democratic nominee Abdul El-Sayed committed to the event, while Republican Mike Rogers and his campaign declined ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ed4f80ad042726a7",
-      "title": "Tremonton IFA Country Store | Tremonton UT - Facebook",
-      "url": "https://www.facebook.com/TremontonIFA/",
-      "summary": "Tremonton IFA Country Store, Tremonton. 1,972 followers · 13 talking about this · 49 were here. Helping to grow the things you love. A locally owned farmer's cooperative since 1923.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ca1991c99cac0c76",
-      "title": "Volkswagen Dealer Boston, MA | Volkswagen Dealership Boston",
-      "url": "https://www.vwmedford.com/volkswagen-dealer-boston/",
-      "summary": "Colonial Volkswagen of Medford near Boston, MA is your local Volkswagen dealer. Shop our Volkswagen dealership for a new Volkswagen. Find used Volkswagen cars and SUVs for sale or get Volkswagen service Boston, MA.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "118ace807fba98dc",
-      "title": "Volkswagen Dealer Medford MA New & Used Cars for Sale near ...",
-      "url": "https://www.vwmedford.com/",
-      "summary": "Colonial Volkswagen of Medford in Medford, MA offers new and used Volkswagen cars, trucks, and SUVs to our customers near Boston. Visit us for sales, financing, service, and parts!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3448b5022196027c",
-      "title": "Volkswagen Dealer near Boston, MA",
-      "url": "https://www.bostonvw.com/cc-volkswagen-dealer-near-boston-ma/",
-      "summary": "Volkswagen Dealer near Boston, MA If you are looking for a new-to-you vehicle to take you around Boston, then you are in luck! We at Boston Volkswagen have a plethora of cars in stock for you, so read on to see how you can benefit from shopping at our location. Inventory",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "36ff4d414f09f3ad",
-      "title": "Volkswagen Dealer Watertown MA New & Used Cars for Sale near ...",
-      "url": "https://www.bostonvw.com/",
-      "summary": "Boston Volkswagen in Watertown, MA offers new and used Volkswagen cars, trucks, and SUVs to our customers near Boston. Visit us for sales, financing, service, and parts!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7e6bb12b658b74c4",
-      "title": "Weather - FOX 2 Detroit",
-      "url": "https://www.fox2detroit.com/weather",
-      "summary": "The Weatherboys Podcast: Foodie Carlos Parisi Live FOX Weather Download the FOX 2 Weather App!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
