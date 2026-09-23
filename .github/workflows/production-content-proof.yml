@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   prove-production:
-    if: github.event.workflow_run.conclusion == 'success'
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Check out deployed revision with parent
@@ -38,7 +38,7 @@ jobs:
           python scripts/prepare_site.py
           mkdocs build --strict
 
-      - name: Prove changed public pages are served in production
+      - name: Prove changed and canary public pages are served in production
         env:
           HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
         run: |
@@ -78,4 +78,4 @@ jobs:
           exit 1
 
       - name: Record invariant
-        run: echo "DEPLOYED means changed public content and required production canaries were retrieved from production and verified."
+        run: echo "DEPLOYED means changed public pages and regression canaries were retrieved from production with the expected build content digests and required production canaries were verified."

@@ -26,6 +26,7 @@
     <meta name="twitter:description" content="{{ page_description }}">
     <meta name="twitter:image" content="{{ social_image }}">
     <meta name="twitter:image:alt" content="GlassesResearch — independent evidence for smart glasses">
+    {% if page.meta.gr_content_sha256 %}<meta name="gr-content-sha256" content="{{ page.meta.gr_content_sha256 }}">{% endif %}
     <script type="application/ld+json">{{ page.meta.seo_core_json | safe }}</script>
     {% if page.meta.seo_faq_json %}<script type="application/ld+json">{{ page.meta.seo_faq_json | safe }}</script>{% endif %}
     {% if page.meta.seo_model_json %}<script type="application/ld+json">{{ page.meta.seo_model_json | safe }}</script>{% endif %}
