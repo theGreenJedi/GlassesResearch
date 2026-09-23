@@ -1,8 +1,8 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-09-23
+**Edition:** 2026-09-14
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 249 distinct purchasable models or explicitly marketed product generations
+**Count:** 248 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -470,7 +470,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 246-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 248-row count:
 
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
