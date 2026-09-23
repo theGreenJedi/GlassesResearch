@@ -1,36 +1,42 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-23T06:05:06.342371+00:00",
-  "candidate_count": 50,
-  "classifier_irrelevant_count": 30,
+  "discovered_utc": "2026-09-23T06:26:54.459546+00:00",
+  "candidate_count": 63,
+  "classifier_irrelevant_count": 51,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 19,
-    "broad_web": 20,
-    "developer": 10,
-    "manufacturer_catalog": 1
+    "adjacent": 10,
+    "broad_web": 35,
+    "developer": 18,
+    "retail": 1
   },
   "relationship_counts": {
     "direct": 1,
-    "enabling": 0,
-    "adjacent": 19,
+    "enabling": 1,
+    "adjacent": 10,
     "speculative": 0,
-    "irrelevant": 30
+    "irrelevant": 51
   },
   "type_counts": {
     "model": 1,
-    "news": 26,
-    "research": 1,
-    "tool": 13,
-    "sdk": 11,
-    "retail": 10
+    "review": 1,
+    "video": 5,
+    "news": 37,
+    "tool": 18,
+    "sdk": 18,
+    "hack": 1,
+    "optics": 1,
+    "retail": 2,
+    "teardown": 1,
+    "community": 11
   },
   "routing_counts": {
-    "adjacent_radar": 19,
-    "development_hacking": 3,
-    "model_catalog_review": 1,
-    "reject_noise": 30,
-    "research_news_review": 20
+    "adjacent_radar": 10,
+    "reject_noise": 51,
+    "report_card_evidence": 5,
+    "research_news_review": 12,
+    "research_optics": 1,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -41,978 +47,360 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [
-    {
-      "channel": "manufacturer_catalog",
-      "url": "https://www.everysight.com/",
-      "error": "HTTP Error 500: Internal Server Error"
-    }
-  ],
+  "collector_errors": [],
   "candidates": [
     {
-      "id": "e810dbb95f29c02b",
-      "title": "Manufacturer catalog lead: congratulations to our magic ai glasses giveaway winners",
-      "url": "https://www.inmoxr.com/blogs/news/congratulations-to-our-magic-ai-glasses-giveaway-winners",
-      "summary": "Same-domain catalog/developer link discovered from https://www.inmoxr.com/",
-      "discovery_channel": "manufacturer_catalog",
-      "query": "",
-      "source": "https://www.inmoxr.com/",
+      "id": "ea2e58f901070654",
+      "title": "About ENGO | Smart AR Sports Glasses Designed in the French Alps",
+      "url": "https://us.engoeyewear.com/pages/about-1",
+      "summary": "ENGO helps athletes gain a competitive advantage with instant, frictionless, hands-free access to sports performance data projected inside your lens. This data allows you to stay focused and execute in real-time.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "enabling",
+      "content_types": [
+        "optics",
+        "teardown"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lens",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2f0ecf15792be097",
+      "title": "ENGO 3 Photochromic Unboxing - light-AR HUD Smart Glasses for Runners ...",
+      "url": "https://www.youtube.com/watch?v=TOY61cpGb7M",
+      "summary": "Unboxing the ENGO 3 Photochromic — the latest light-AR HUD glasses that project your live data (heart rate, pace, power + 40 more metrics) right into your field of view, and darken...",
+      "discovery_channel": "broad_web+retail",
+      "query": "ENGO smart glasses; titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "direct",
       "content_types": [
-        "model",
-        "sdk"
+        "video"
       ],
-      "primary_type": "model",
+      "primary_type": "video",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
-        "development_hacking"
+        "report_card_evidence"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "known smart-glasses source",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: hud glasses, smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "33c82c3d565d1710",
-      "title": "A mediação docente na construção de uma aprendizagem ...",
-      "url": "https://www.researchgate.net/publication/394126114_A_mediacao_docente_na_construcao_de_uma_aprendizagem_significativa_uma_analise_sobre_o_papel_do_professor_no_seculo_XXI",
-      "summary": "O presente artigo tem como objetivo analisar o papel do professor como mediador da aprendizagem significativa no contexto da educação contemporânea.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "49770ca8ee102219",
-      "title": "A relação educador - educando em Paulo Freire",
-      "url": "https://encruzilhadas.pt/p/a-relacao-educador-educando-em-paulo",
-      "summary": "Retomo um texto que escrevi, em 2021, para tentar caraterizar os processos de comunicação naquelas salas de aula onde o reconhecimento dos alunos como interlocutores privilegiados, conduz os seus professores a assumirem-se como interlocutores qualificados.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "051f556bf9c604f8",
-      "title": "Cities Near Me - River Rouge, Michigan | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/River+Rouge,+MI",
-      "summary": "Find the top 15 cities, towns, and suburbs near River Rouge, MI, like Ecorse and Melvindale, and explore the surrounding area for a day trip.",
+      "id": "36174f2caff621a0",
+      "title": "Roseville CA Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/roseville-ca/",
+      "summary": "Zillow has 693 homes for sale in Roseville CA. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "96d7837309528b56",
-      "title": "Cities Nearby River Rouge, Michigan, United States",
-      "url": "https://www.thecitiesnow.com/united_states/michigan/river_rouge",
-      "summary": "Find five hundred cities near River Rouge, Michigan, United States from closest to farthest by distance. Distances from River Rouge to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6c2c63844d468ecd",
-      "title": "Educador e Educando : Relações Possíveis*",
-      "url": "https://mariaflaviafigueiredo.com.br/downloads/27.%20Educador%20e%20Educando%20-%20Rela%C3%A7%C3%B5es%20Poss%C3%ADveis.pdf",
-      "summary": "O presente artigo aborda aspectos que perpassam as possíveis relações que se constroem entre o educador e o educando no contexto de sala de aula.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b5ae45e4a55c33e3",
-      "title": "FUNDAMENTOS TEÓRICOS DA EDUCAÇÃO E O PAPEL DO PROFESSOR COMO ...",
-      "url": "https://www.academia.edu/144819370/FUNDAMENTOS_TE%C3%93RICOS_DA_EDUCA%C3%87%C3%83O_E_O_PAPEL_DO_PROFESSOR_COMO_MEDIADOR_DO_CONHECIMENTO_UM_DI%C3%81LOGO_ENTRE_FREIRE_VYGOTSKY_PIAGET_WALLON_DEWEY_SAVIANI_E_LIB%C3%82NEO",
-      "summary": "Este artigo propõe uma reflexão teórico-analítica sobre os fundamentos da educação e o papel do professor como mediador do conhecimento, estabelecendo um diálogo entre as contribuições de Paulo Freire, Lev Vygotsky, Jean Piaget, Henri Wallon, John Dewey, Dermeval Saviani e José Carlos Libâneo.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "30908233c29c0431",
-      "title": "INTRODUÇÃO - Universidade Estadual de Goiás",
-      "url": "https://www.anais.ueg.br/index.php/cepe/article/view/8129/5573",
-      "summary": "Um educador precisa se aprimorar constantemente e se humanizar diariamente, para conseguir educar seu educando como pessoa humana, preparando-o para a realidade do mundo, para que seja um ser capaz de exercer a cidadania por onde quer que esteja ou viva.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "62dea050f689d271",
-      "title": "M12 ONEHPT-202C U-Set Perstang FORCE LOGIC Hydraulische ...",
-      "url": "https://www.milwaukeemani.nl/m12-onehpt-202c-u-set-perstang-force-logic-hydraul.html",
-      "summary": "In combinatie met de M12™ en M18™ FORCE LOGIC™ perstools bieden ze een oplossing voor het persen met één hand van buizen tot 108 mm. De persbekken leveren kwaliteitsvolle persverbindingen voor alle grote merken van fittingen.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a6a65c7f0c468d92",
-      "title": "Mediação Docente na Educação Moderna | PDF | Pedagogia ...",
-      "url": "https://pt.scribd.com/document/944068083/Fundamentos-Teoricos-Da-Educacao-e-o-Papel-Do-Professor-Como-Mediador-Do-Conhecimento",
-      "summary": "Mediação Docente na Educação Moderna O artigo analisa os fundamentos teóricos da educação e o papel do professor como mediador do conhecimento, dialogando com pensadores como Freire, Vygotsky, Piaget, entre outros.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d8ca434e94499ccd",
-      "title": "Milwaukee 12V perstang M12 ONEHPT-202C U-Set – licht en krachtig",
-      "url": "https://www.aicvisser.com/p/milwaukee-12v-perstang-one-key-3x-u-bek-162025-2x-20ah-m12-onehpt-202c-u-set",
-      "summary": "Milwaukee 12V perstang met krachtige perskracht tot 35 mm en 180° draaibare kop voor optimale flexibiliteit, bestel direct bij AIC Visser. Komt goed.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e259bbfed4fcd17f",
-      "title": "Milwaukee 12V perstang M12ONEHPT-202C met krachtige perskracht",
-      "url": "https://www.aicvisser.com/p/milwaukee-12v-perstang-one-key-3x-th-bek-16-20-26-2x-20ah-m12-onehpt-202c-th-set",
-      "summary": "De Milwaukee 12V perstang M12ONEHPT-202C TH-Set is een krachtige en compacte perstool die geschikt is voor het persen van metalen buizen tot 35 mm en composieten buizen tot 40 mm. Dankzij het lichte gewicht van slechts 1,8 kg is de perstang gemakkelijk te hanteren en ideaal voor langdurig gebruik.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "58729f4feaec24e5",
-      "title": "Milwaukee 4933481037 M12 ONEHPT-202C U-Set Accu Perstang 12V 2.0 Ah Li ...",
-      "url": "https://www.toolnation.nl/milwaukee-4933481037-m12o-hydraulische-subcompactperstool.html",
-      "summary": "Bij Toolnation bent u daarvan verzekerd. Milwaukee 4933481037 M12 ONEHPT-202C U-Set Accu Perstang 12V 2.0 Ah Li-ion U 16/20/25 mm nu voordelig op Toolnation.nl Alle bekende merken Topkwaliteit De beste prijs!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "806845ca077fce84",
-      "title": "Milwaukee M12 ONEHPT-202C 12V Li-ion accu hydraulische perstang set (2x ...",
-      "url": "https://www.gereedschapcentrum.nl/milwaukee-m12-onehpt-202c-12v-li-ion-accu-hydraulische-perstang-set-2x-2.0ah-accu-in-koffer-u-set.html",
-      "summary": "De Milwaukee M12 ONEHPT-202C 12V Li-ion accu hydraulische perstang set biedt de ultieme combinatie van flexibiliteit, gebruiksgemak en betrouwbaarheid voor professionals die dagelijks perswerkzaamheden uitvoeren.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f3f0d8fce1cbd0c6",
-      "title": "Milwaukee M12 ONEHPT-202C 12V Li-ion accu hydraulische perstang set (2x ...",
-      "url": "https://www.technischeartikelen.com/product/milwaukee-m12-onehpt-202c-12v-li-ion-accu-hydraulische-perstang-set-2x-2-0ah-accu-in-koffer-v-set-2/",
-      "summary": "Met een perscapaciteit tot 35 mm in metaal en 40 mm in kunststof is deze perstang breed inzetbaar. De set is uitgerust met het krachtige M12 accuplatform en wordt geleverd met twee 2.0Ah accus, zodat je nooit stil staat tijdens het werk.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "73681dcb78848405",
-      "title": "Milwaukee M12 ONEHPT-202C 12V Li-ion accu hydraulische perstang set (2x ...",
-      "url": "https://www.fixami.be/milwaukee-m12-onehpt-202c-12v-li-ion-accu-hydraulische-perstang-set-2x-2.0ah-accu-in-koffer.html",
-      "summary": "Met een voltage van 12V en twee krachtige 2.0Ah accu’s uit het M12 platform biedt deze hydraulische perstang set niet alleen een indrukwekkende perscapaciteit van 35 mm op metaal en 40 mm op kunststof, maar ook maximale flexibiliteit dankzij de 180° draaibare kop en gepatenteerde éénhandsbediening.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cc1954cbcfc46915",
-      "title": "Milwaukee M12 ONEHPT-202C Geberit Mapress Set FORCE LOGIC™ Accu ...",
-      "url": "https://mastertools.nl/nl_nl/product/milwaukee-accu-perstool-4933481038",
-      "summary": "Deze specifieke set wordt geleverd met een hoogwaardige Geberit Mapress-persbekkenset. Hiermee bent u direct uitgerust voor professionele installaties met dit systeem.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "adab67bcd4058c1d",
-      "title": "Milwaukee M12 ONEHPT-202c perstang U-kit - BMB Techniek",
-      "url": "https://bmbshop.nl/milwaukee_1/accu-platform-m12_3/m12-persgereedschap/milwaukee-m12-onehpt-202c-perstang-u-kit/",
-      "summary": "Flexibel accusysteem: werkt met alle MILWAUKEE® M12™ accu’s Spanning [V]: 12 Type accu: Li-ion Geleverd in: Transportkoffer Standaard toebehoren: Standaard toebehoren: 3 x TH profiel persbekken (16, 20, 26 mm) Gewicht (kg): 1.9 (M12 B2) System: M12 Technology: Koolborstel Charger included: C12 C Battery included: 2 x M12 B2 Delen:",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e021f92b62a0b5e6",
-      "title": "Milwaukee M12™ ONEHPT-202C M-Set FORCE LOGIC™ Accu Hydraulische ...",
-      "url": "https://mastertools.nl/nl_nl/product/milwaukee-accu-perstool-4933481033",
-      "summary": "Met zijn geavanceerde functies en robuuste ontwerp is de Milwaukee M12™ ONEHPT-202C een uitstekende keuze voor professionals die op zoek zijn naar een betrouwbaar en efficiënt perstool.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c24130dec17fc0b2",
-      "title": "O PROFESSOR COMO MEDIADOR DE PROCESSO DE ENSINO APRENDIZAGEM",
-      "url": "https://revistaft.com.br/o-professor-como-mediador-de-processo-de-ensino-aprendizagem/",
-      "summary": "O educador que possui essas características se destaca ao desenvolver sua prática docente pelo fato de todas as suas ações estarem em evidência e refletirem diretamente na vida escolar de seus alunos.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7055927fd0b3669b",
-      "title": "15 Varainhankinta ja varainkeruu ideaa - kahvikassa.fi",
-      "url": "https://www.kahvikassa.fi/blogi/varainhankinta-varainkeruu-ideoita/",
-      "summary": "Varainhankinta ideoita joukkueelle, luokalle ja muille ryhmille. Mikä on paras varainhankinta? Entä miten kerätä rahaa luokalle tai urheilujoukkueelle?",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d213da6074fd3a1e",
-      "title": "Blogi - varainhankintataiturit.fi",
-      "url": "https://www.varainhankintataiturit.fi/blogi",
-      "summary": "Varainhankinta seuralle – opas onnistuneeseen rahankeruuseen Varainhankinta seuralle auttaa kattamaan toimintakuluja, hankintoja ja tapahtumia. Tästä oppaasta löydät käytännön vinkit onnistuneeseen rahankeruuseen.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "10af1bab1dc47681",
-      "title": "Jar-X Oy - Helppo varainkeruu ja varainhankinta suomalaisilla GreenGo ...",
-      "url": "https://jar-x.fi/",
-      "summary": "Lähetä tutuillesi linkki verkkokauppaamme ja tienaa rahaa, me hoidamme kaiken muun. Helppoa, modernia ja tuottavaa varainhankintaa netissä!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "124169ba400a3b75",
-      "title": "Joukkueen ja urheiluseuran varainhankinta - Tuetiimiä.fi",
-      "url": "https://tuetiimia.fi/urheiluseura-varainhankinta/",
-      "summary": "Seuran ja joukkueen varainhankinta vaivattomasti laadukkailla tuotteilla verkkokaupasta. Ei tilauslistoja, ei rahankeruuta eikä tuotteiden jakelua.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4f4e2be462fbb363",
-      "title": "Urheiluseuran varainhankinta – täydellinen opas aloittelijoille - Gutz",
-      "url": "https://gutz.fi/fi/urheiluseura-varainhankinta-taydellinen-opas-aloittelijoille/",
-      "summary": "Tehosta urheiluseura varainhankintaa! Löydä 5 tehokkainta keinoa ja luo toimiva suunnitelma. Täydellinen opas aloittelijoille, jolla käynnistät varainkeruun ja varmistat seurasi taloudellisen vakauden.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e7f0b730d5283fe9",
-      "title": "Varainhankinta",
-      "url": "https://www.varainhankinta.fi/",
-      "summary": "Tarvitsetko helpon ja tehokkaan varainhankintatavan joukkueellesi tai seuralle? Nuorelle Siivet -arpojen avulla sinun tarvitsee vain tilata ja myydä arvat niin me hoidamme loput! Voit saada jopa 50 % tuottoa, ja parasta on, että arpojen myynti on verotonta.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8f0c3329fdc9557b",
-      "title": "Varainhankinta 4. Varainhankinta ja laki - Opintokeskus Sivis",
-      "url": "https://www.opintokeskussivis.fi/yhdistystoimija/varainhankinta-4-varainhankinta-ja-laki/",
-      "summary": "Mitä laki sanoo varainhankinnasta? -osiossa pääset tutustumaan lakeihin, säädöksiin ja lupa-asioihin, mitkä säätelevät varainhankintaa.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c6aacebe10fa27f4",
-      "title": "Varainhankinta urheiluseuralle tai luokalle – Onnistu Puttipajan kanssa",
-      "url": "https://www.puttipaja.fi/i/varainhankinta-urheiluseuralle-tai-luokalle-miksi-kotimaisuus-ja-kokemus-ratkaisevat/111/",
-      "summary": "Varainhankinta urheiluseuralle tai luokalle: Miksi kotimaisuus ja kokemus ratkaisevat? Varainhankinta urheiluseuralle tai luokalle – miksi kotimaisuus ja kokemus ratkaisevat? 💰 Useimmat luokat ja joukkueet keräävät tällä mallilla 800–3000 € muutamassa viikossa – ilman talkoostressiä.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b1ed1f84fd1bbe47",
-      "title": "Varainhankintakumppani jo lähes 40 vuoden kokemuksella | Pilkkoset",
-      "url": "https://pilkkoset.fi/",
-      "summary": "Pilkkoset aloitti toimintansa jo vuonna 1988 ja siitä lähtien olemme olleet luotettava ja reilu varainhankintakumppani. Tutustu meihin!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a1d92f13b3734621",
-      "title": "Varainvirta — Varainhankinta urheiluseuroille ja luokille | 50 % kate",
-      "url": "https://www.varainvirta.fi/",
-      "summary": "Varainhankinta joukkueille, koululuokille ja yhdistyksille. 50 % kate, ei etumaksuja, 30 päivän maksuaika. Tehdään yhdessä haaveista totta.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e9fb965c9568fcee",
-      "title": "XR650Rocketman Memorial Ride Mar 26-29 2026 | Two Wheeled Texans",
-      "url": "https://www.twtex.com/forums/threads/xr650rocketman-memorial-ride-mar-26-29-2026.140293/",
-      "summary": "The purpose of this post is to let everyone know that there is an upcoming ride in Study Butte for Rocketman March 26 to 29. Rocketman passed away a few years ago and it was difficult for his family and friends. We finally thought it was time to close a chapter.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [
-        "study"
+        "review"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cc8402de62660561",
-      "title": "42 Inch Refrigerator - Walmart.com",
-      "url": "https://www.walmart.com/c/kp/42-inch-refrigerator",
-      "summary": "Forno Rivestito 42 Inch Panel Ready Bottom Freezer combo, 16.9 cu. ft., Ice Maker, Total No Frost, Fast Cool & Fast Freeze Ca'Lefort Wine Cooler Beverage Refrigerator, Hold 220 Cans and 54 Bottles Dual Zone Wine Fridge with Stainless Steel frame, $1,299.99",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
+        "review",
         "retail"
       ],
-      "primary_type": "retail",
+      "primary_type": "review",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bc90ff69a8f279d1",
-      "title": "42 Inch Wide - Refrigerators - The Home Depot",
-      "url": "https://www.homedepot.com/b/Appliances-Refrigerators/42-Inch-Wide/N-5yc1vZc3piZ1z197dt",
-      "summary": "Browse our online aisle of 42 Inch Wide Refrigerators. Shop The Home Depot for all your Appliances and DIY needs.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "id": "d8d2769ea7efd0b0",
+      "title": "British Columbia Weather Radar | AccuWeather",
+      "url": "https://www.accuweather.com/en/ca/british-columbia/weather-radar",
+      "summary": "See the latest British Columbia Doppler radar weather map including areas of rain, snow and ice. Our interactive map allows you to see the local & national weather.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "514410e5dac32c41",
-      "title": "42 inches Refrigerators - Best Buy",
-      "url": "https://www.bestbuy.com/site/searchpage.jsp?browsedCategory=pcmcat367400050001&id=pcat17071&qp=standardizedwidth_facet%3DStandard%20Width~42%20inches&st=categoryid%24pcmcat367400050001",
-      "summary": "Shop for 42 inches Refrigerators at Best Buy. Find low everyday prices and buy online for delivery or in-store pick-up",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses; camera smart glasses",
+      "id": "ed571944aedae310",
+      "title": "Canada Satellite Weather Map | AccuWeather",
+      "url": "https://www.accuweather.com/en/ca/national/satellite",
+      "summary": "See the latest Canada RealVue™ weather satellite map, showing a realistic view of Canada from space, as taken from weather satellites. The interactive map makes it easy to navigate around the...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "71c291987bd31e05",
-      "title": "42-inch Built-in Refrigerators | Thermador",
-      "url": "https://www.thermador.com/us/products/refrigeration/42-inch-refrigeration",
-      "summary": "Thermador 42-inch Bottom Freezer Refrigerator measures 41 1/4 inches wide, 83 9/16 to 85 1/2 inches tall, and 24 to 27 3/4 inches deep, fitting a cutout size of 84 inches by 41 ½ to 42 inches by 24 to 25 inches. Please view product specifications to see measurements for specific skus. An excellent choice for those with spacious kitchens seeking ample storage, innovative features, and stunning ...",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b4ada507d52fabe1",
-      "title": "42-Inch Built-In Side-by-Side Refrigerator - Dacor US",
-      "url": "https://www.dacor.com/us/products/refrigeration/side-by-side-refrigeration/42-inch-built-in-side-by-side-refrigerator-silver-stainless-drs425300sr/",
-      "summary": "The 42-Inch Built-In Side-by-Side Refrigerator takes performance and luxury to the next level. This Energy Star Qualified unit provides an interior capacity to fit every need while offering amenities such as Power Cool and Power Freeze settings to quickly respond to changing environments. Elegant touches such as self closing hinges and LED lighting make this refrigerator an enticing addition ...",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "id": "fc6853979dda36ce",
+      "title": "Cities Nearby Roseville, California, United States",
+      "url": "https://www.thecitiesnow.com/united_states/california/roseville",
+      "summary": "Find five hundred cities near Roseville, California, United States from closest to farthest by distance. Distances from Roseville to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "98693482cb5b1c54",
+      "title": "GOES Imagery Viewer - NOAA / NESDIS / STAR",
+      "url": "https://www.star.nesdis.noaa.gov/GOES/index.php",
+      "summary": "Click on a region to view images and animations for that region. Coverage area depictions are approximate.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "069371f62f8f3b5d",
+      "title": "Movie Showtimes and Theaters near Roseville, CA | Fandango",
+      "url": "https://www.fandango.com/roseville_ca_movietimes",
+      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Roseville, CA.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bb7679a3cde6928c",
+      "title": "Placer County, CA Events Calendar",
+      "url": "https://www.visitplacer.com/events/",
+      "summary": "Find upcoming events in Placer County, CA, including festivals, live music, holiday events, food and wine experiences, and family-friendly activities. Browse by date, location, or event type.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2ea9e26fa48861f0",
+      "title": "Vancouver, British Columbia Radar and Infrared Satellite",
+      "url": "https://www.localconditions.com/canada/british-columbia/vancouver/radar/",
+      "summary": "Vancouver British Columbia radar weather maps and infrared satellite providing current Base and Composite Reflectivity views of storm severity from precipitation levels and cloud cover; with the option of seeing an animated loop.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a0c83b922556589d",
+      "title": "Watching videos with branded content, sponsorships & endorsements",
+      "url": "https://support.google.com/youtube/answer/10588440?hl=en",
+      "summary": "Keep in mind that even with YouTube Premium, you may still get disclosures for sponsored content directly added by creators. If you're a creator, learn how to add branded content , sponsorships & endorsements to your content.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9fcf09442bf206ff",
+      "title": "YouTube Ajutor - Google Help",
+      "url": "https://support.google.com/youtube/?hl=ro",
+      "summary": "Centrul oficial de ajutor YouTube unde puteţi găsi sfaturi şi tutoriale despre utilizarea produsului şi alte răspunsuri la întrebări frecvente.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "56026f17f6ac22c6",
+      "title": "bbb.wikipedia.de",
+      "url": "https://bbb.wikipedia.de/html5client/join?sessionToken=ayck0yniemnblsti",
+      "summary": "It looks like you're using an older version of a supported browser. Please upgrade your browser for full support.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1022,10 +410,482 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1fbc66a0f2b9b748",
-      "title": "About Walmart: People‑Led, Tech‑Powered Retail",
-      "url": "https://corporate.walmart.com/about",
-      "summary": "About Walmart Walmart today is a people-led, tech-powered omnichannel retailer dedicated to helping people save money and live better. Since Sam Walton opened the first Walmart, we have opened thousands of stores across the U.S. and internationally.",
+      "id": "40ad0886845bcc51",
+      "title": "BigBlueButton - bbb.wikipedia.de",
+      "url": "https://bbb.wikipedia.de/signup",
+      "summary": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online learning experiences.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a6ecddd44ca691bd",
+      "title": "Can't download Spotify on Apple Watch SE3",
+      "url": "https://community.spotify.com/t5/Premium-Family/Can-t-download-Spotify-on-Apple-Watch-SE3/td-p/7369560",
+      "summary": "When you update your Spotify on your iPhone app, the watch app will be removed. You can still use your watch to control Spotify on the phone without the Spotify watch app. There's more info on using Spotify on Apple Watch here. Hope this helps! Billy-JSpotify Star Help others find this answer and click \"Accept as Solution\".",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "790c4ede7d01de10",
+      "title": "Download Spotify on iPhone/iPad without AppStore",
+      "url": "https://community.spotify.com/t5/iOS-iPhone-iPad/Download-Spotify-on-iPhone-iPad-without-AppStore/td-p/1653454",
+      "summary": "I am a premium account member living outside of my home country. I want to add my peeps in a family account, but the AppStore does not allow download into iPhones/iPads since it is not a supported country. Is there a way to download directly or bypass the AppStore limitation? Downloading with a VP...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4cbacf3cfb880ef2",
+      "title": "Downloading and Installing Spotify on Mac OS X 10.6.8",
+      "url": "https://community.spotify.com/t5/Desktop-Mac/Downloading-and-Installing-Spotify-on-Mac-OS-X-10-6-8/td-p/1117271",
+      "summary": "Description I am just updated my OS to 10.6.8, and am trying to download the latest version of Spotify that I can. A more detailed description, using numbered steps 1. First I tried downloading Spotify from the Download page. 2. Then it said \"Safari can’t open the file 'Install Spotify' because no...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "21c86dd84e586668",
+      "title": "Förderberatung - bbb.wikipedia.de",
+      "url": "https://bbb.wikipedia.de/rooms/wir-76h-a2w-0gm/join",
+      "summary": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online learning experiences.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "738ec97fd8e7bf04",
+      "title": "Installing Spotify - The Spotify Community",
+      "url": "https://community.spotify.com/t5/FAQs/Installing-Spotify/ta-p/4831284",
+      "summary": "Here's how you can install Spotify on your device: Windows: Head over here, a file will start to download automatically The file will download to your default download-folder. On windows this folder is called Downloads by default The file you download looks like this: You can double-click thi...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c04e1af92734918",
+      "title": "Solved: How do I fix “device limit reached” trying to down... - The ...",
+      "url": "https://community.spotify.com/t5/Your-Library/How-do-I-fix-device-limit-reached-trying-to-download-music-onto/td-p/5370968",
+      "summary": "I can’t download my music onto my phone, I recently just got a new phone and can’t fix this problem. I want to download my likes on my library but “device limit reached remove all downloads from another device to listen offline with this one”",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "783cf2f469b1cedd",
+      "title": "Spenden-Kommentar-Ticker",
+      "url": "https://ticker.wikipedia.de/",
+      "summary": "Herbstkampagne 2022 Spendenkommentare Letzte Kommentare",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "476fcadb50ba6f54",
+      "title": "Spotify download - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Content-Questions/Spotify-download/td-p/5776018",
+      "summary": "How do I delete the downloads on my lost phone on my new phone. Spotify keeps saying download limit and I have lost my old phone how can I delete the downloads on my old phone?",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "005f3e0d4ff87ec5",
+      "title": "Spotify Needs to Up the Offline Download Device Limit",
+      "url": "https://community.spotify.com/t5/Social-Random/Spotify-Needs-to-Up-the-Offline-Download-Device-Limit/td-p/7371470",
+      "summary": "Spotify needs to up the device limit, as realistically it is not preventing account sharing as a root problem. Competitors such as Apple Music already have cheaper plans and allow for up to 10 devices to download songs, and frankly Spotify isn't doing enough to improve actual features rather than implementing pointless AI features.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "hack",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e3c60ae3fa78a976",
+      "title": "Spotify no longer availible on Amazon Fire",
+      "url": "https://community.spotify.com/t5/Other-Podcasts-Partners-etc/Spotify-no-longer-availible-on-Amazon-Fire/td-p/6464751",
+      "summary": "Thanks for posting this thread in the Community! Since you mentioned that the device you're trying to download Spotify on is an Amazon Fire HD 10 tablet (7th generation), make sure that the device meets our minimum system requirements as this can be the reason why it says that the app isn't available. You can check our system requirements here.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "retail",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d1dbd69233e3f22a",
+      "title": "Spotify 登录遇到 Accesspoint:17 的问题，如何解决？",
+      "url": "https://www.zhihu.com/question/477038979",
+      "summary": "Spotify 登录遇到 wrong country settings Accesspoint:17 的问题，如何解决 只有你换个地区，下拉列表中才会有新地区的选项。 然后选择新地区。 这时候重启spotify再登陆还是不行的。然后我重启电脑再试就行了。原因也可能是数据更新延迟，不确定。 建议记住登陆的节点，以后登陆不上时救急。 因为一开始 ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9664730e3ddc73d3",
+      "title": "Spotify电脑下载的歌在哪里怎么看？ - 知乎",
+      "url": "https://www.zhihu.com/question/377073202",
+      "summary": "Spotify電腦下載的歌曲位置 特點： 特色功能：Spotify 音樂MP3轉換、Spotify 音樂下載、無需Spotify Premium 下載音樂、Spotify 音樂免費下載 高音質設置：可自定義音頻輸出格式， 比特率可選 320 Kbps 輸出格式：MP3、M4A、AIFF、AAC、WAV 或 FLAC 格式。",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2f674ddb23b8570f",
+      "title": "Wiki Loves Earth 2026 – Vorjury Deutschland",
+      "url": "https://www.festivalsommer.wikipedia.de/prejury/",
+      "summary": "Tool: 2011–2015 Ruben Demusfür Wikimedia Austria (WMAT), graphisch überarbeitet von Martin Kraft",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5494009d196d3674",
+      "title": "WikidataCon 2027/Call for expressions of interest to host",
+      "url": "https://bbb.wikipedia.de/rooms/plp-qml-xrj-9ib/",
+      "summary": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online learning experiences.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1d7caee2f4a20cb4",
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/",
+      "summary": "Wir sind der gemeinnützige Verein hinter der Wikipedia und unterstützen die Ehrenamtlichen, sichern und entwickeln die technische Infrastruktur und setzen uns für den freien Zugang zu Wissen ein.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0dfd7bbe2109f7ec",
+      "title": "Zwischen Einsamkeit und Community: Wie gemeinschaftlich ist Wikipedia?",
+      "url": "https://bbb.wikipedia.de/rooms/uk8-3ex-nad-tua/join",
+      "summary": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online learning experiences.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c3b71d47f8f39fb",
+      "title": "24 (number) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/24_(number)",
+      "summary": "24 is an even composite number, a highly composite number, an abundant number, a practical number, and a congruent number. The many ways 24 can be constructed inspired a children's mathematical game involving the use of any of the four standard operations on four numbers on a card to get 24.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1036,9 +896,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "news"
       ],
-      "primary_type": "retail",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1048,12 +908,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1d1e395203c04a77",
-      "title": "Amazon.com: 42 Inch Refrigerator",
-      "url": "https://www.amazon.com/42-inch-refrigerator/s?k=42+inch+refrigerator",
-      "summary": "1-16 of 288 results for \"42 inch refrigerator\" Results Check each product page for other buying options.",
+      "id": "7264ab877048bb6a",
+      "title": "776 Live Traffic Cameras in Seattle, Washington (2026) - Watch Live ...",
+      "url": "https://opencctv.org/cameras/united-states/washington/seattle",
+      "summary": "Watch 775 live traffic cameras in Seattle, Washington, United States. Live webcams updated in real time - traffic, weather, beach cams, and more.",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1062,9 +922,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "video"
       ],
-      "primary_type": "retail",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1074,10 +934,530 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "66229c63a963c065",
-      "title": "Bay Ridge Volkswagen | Volkswagen Dealers Near Brooklyn, NY",
-      "url": "https://www.bayridgevolkswagen.com/",
-      "summary": "Turn to Bay Ridge Volkswagen for new and used VW sales, auto financing and certified Volkswagen service. Our NYC VW dealer can help you buy your next car!",
+      "id": "0d59f2006ad0d5cb",
+      "title": "Acerca de Power Query en Excel | Microsoft Support",
+      "url": "https://support.microsoft.com/es-es/excel/about-power-query-in-excel",
+      "summary": "Con Power Query, puede buscar orígenes de datos, realizar conexiones y, después, dar forma a esos datos (por ejemplo, quitar una columna, cambiar un tipo de datos o combinar tablas) de formas que satisfagan sus necesidades.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b0b08ca6de8ec35d",
+      "title": "Best - Definition, Meaning & Synonyms | Vocabulary.com",
+      "url": "https://www.vocabulary.com/dictionary/best",
+      "summary": "Nothing is better than the best — this is a word for the absolute number one example of something. Best is the opposite of worst.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "51d396a0a58beb8d",
+      "title": "BigQuery | Plataforma de datos de IA | EDW - Google Cloud",
+      "url": "https://cloud.google.com/bigquery?hl=es",
+      "summary": "BigQuery es una plataforma de datos e IA autónoma que automatiza todo el ciclo de vida de los datos para que puedas pasar de los datos a la IA y, de ahí, a la acción más rápido.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "63a2f9c5dbb5b507",
+      "title": "CA DMV Duplicate Title | Order Your Replacement Faster Online",
+      "url": "https://www.needtags.com/dmv-duplicate-title.php",
+      "summary": "Skip DMV lines! Get a duplicate title faster online with rush replacement processing and guaranteed delivery. We make replacing your California car title easy.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6164d191a4a6c636",
+      "title": "CA DMV Registration Renewal | Renew Online & Avoid The Fine",
+      "url": "https://www.needtags.com/dmv-registration-renewal.php",
+      "summary": "Avoid long DMV lines! Renew your California vehicle registration online with NeedTags. Get instant registration, free e-Card download, and stickers next-day.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7537c9a49c310cfa",
+      "title": "Consulta SQL (query): qué es y cómo leer el resultado · AprenderSQL.es",
+      "url": "https://aprendersql.es/glosario-sql/query/",
+      "summary": "Técnicamente conviene distinguir una query o consulta de lectura, que obtiene un resultado, de sentencias de modificación como INSERT, UPDATE y DELETE, que cambian datos.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0671d426ca9cea73",
+      "title": "Even and Odd Numbers - Math is Fun",
+      "url": "https://www.mathsisfun.com/numbers/even-odd.html",
+      "summary": "Make pairs. If one is left over, it is odd: Any integer that can be divided exactly by 2 is an even number. The last digit is 0, 2, 4, 6 or 8.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0571ead0625369c2",
+      "title": "Even Numbers - Definition, Chart, List, Types, and Examples",
+      "url": "https://mathmonks.com/integer/even-numbers",
+      "summary": "What are even numbers, and how to identify them with examples and diagrams. Also, see the list of even numbers from 1 to 100 with a chart",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9468b602f46affb3",
+      "title": "Even or Odd Calculator to Check if the number is Even or Odd",
+      "url": "https://onlinecalculator.guru/numbers/is-24-an-even-or-odd-number/",
+      "summary": "Even Numbers are those that usually end with 0,2, 4, 6, 8, and odd numbers are those that end with 1, 3, 5, 7, 9. Check out the one's place firstly and you will understand whether the entire number is even or odd.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "543c59f3250f3310",
+      "title": "Find DMV Offices | Arcadia, CA | Appointments & Hours - NeedTags",
+      "url": "https://www.needtags.com/dmv-office-location/arcadia",
+      "summary": "DMV office locations in and near Arcadia, CA. Get in & out faster with the information you need and an appointment to help you save time. View office hours, locations, maps, online services and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1832de430546441f",
+      "title": "Find DMV Offices | Castro Valley, CA | Appointments & Hours",
+      "url": "https://www.needtags.com/dmv-office-location/castro-valley",
+      "summary": "DMV office locations in and near Castro Valley, CA. Get in & out faster with the information you need and an appointment to help you save time. View office hours, locations, maps, online services and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ca4dd032928ae74",
+      "title": "Find DMV Offices | Citrus Heights, CA | Appointments & Hours",
+      "url": "https://www.needtags.com/dmv-office-location/citrus-heights",
+      "summary": "DMV office locations in and near Citrus Heights, CA. Get in & out faster with the information you need and an appointment to help you save time. View office hours, locations, maps, online services and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dc47d510a84c3df5",
+      "title": "Find DMV Offices | Lake Forest, CA | Appointments & Hours",
+      "url": "https://www.needtags.com/dmv-office-location/lake-forest",
+      "summary": "DMV office locations in and near Lake Forest, CA. Get in & out faster with the information you need and an appointment to help you save time. View office hours, locations, maps, online services and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0bd08e8c6c9bddb6",
+      "title": "Find DMV Offices | Los Alamitos, CA | Appointments & Hours",
+      "url": "https://www.needtags.com/dmv-office-location/los-alamitos",
+      "summary": "DMV office locations in and near Los Alamitos, CA. Get in & out faster with the information you need and an appointment to help you save time. View office hours, locations, maps, online services and more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "865d39f4e0f7e3ca",
+      "title": "Free Even or Odd Number Checker - Test Multiple Numbers at Once",
+      "url": "https://miniwebtool.com/even-or-odd-number-checker/",
+      "summary": "Even or Odd Number Checker - Quickly check if numbers are even or odd. Supports batch input with visual grouping, divisibility explanations, number line visualization, and detailed parity analysis.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f3c36e95ecd2b07b",
+      "title": "How To Clear a Suspended Registration Faster - CA DMV - NeedTags",
+      "url": "https://www.needtags.com/forum/Suspended-Registration/1/How-Do-I-Clear-a-Suspended-Registration",
+      "summary": "How Do I Clear a Suspended Registration? Find the answers you need to get your California Vehicle Registration faster.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c790f7a66f415a7",
+      "title": "Is 24 even? - Answers",
+      "url": "https://math.answers.com/math-and-arithmetic/Is_24_even",
+      "summary": "A number is even if it can be divided by two without a remainder. 24 / 2 = 12r0. So yes, 24 is even.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e6cc31da57c5de29",
+      "title": "Is 24 even? | Math Tools",
+      "url": "https://math.tools/numbers/is-even/24",
+      "summary": "Is 24 even? 24 is even. It is evenly divisible by 2.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7a2bc59f710b39fa",
+      "title": "Is 24 odd or even - Answers",
+      "url": "https://math.answers.com/other-math/Is_24_odd_or_even",
+      "summary": "An even number can be divided by 2 evenly. An odd number will have a remainder of 1 when divided by 2. 24 is an even number.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d156bb293fa57e3d",
+      "title": "Is Odd/Even Calculator",
+      "url": "https://calculatordaily.com/is-odd-even-calculator",
+      "summary": "Is Odd/Even Calculator Use this Is Odd/Even Calculator to figure out if a number is an odd or even number. An even number is any whole number that is divisible by two (2). On the other hand, an odd number is not exactly divisible by 2. This calculator quickly decides whether an entered number is an odd or even number.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "757fb554d89e1bb6",
+      "title": "Kearny Mesa Volkswagen - San Diego, CA",
+      "url": "https://www.yelp.com/biz/kearny-mesa-volkswagen-san-diego",
+      "summary": "KEARNY MESA VOLKSWAGEN, 8040 Balboa Ave, San Diego, CA 92111, 242 Photos, (858) 300-8160, Mon - 9:00 am - 8:00 pm, Tue - 9:00 am - 8:00 pm, Wed - 9:00 am - 8:00 pm, Thu - 9:00 am - 8:00 pm, Fri - 9:00 am - 8:00 pm, Sat - 9:00 am - 8:00 pm, Sun - 10:00 am - 7:00 pm",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1100,12 +1480,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "945f3022c396bad4",
-      "title": "Best 42 Inch Refrigerator 2026: Expert Reviews & Comparisons",
-      "url": "https://www.ofzenandcomputing.com/best-42-inch-refrigerator/",
-      "summary": "Discover the best 42-inch refrigerators after testing 12 models. Compare features, prices, and real installation costs. Expert reviews updated for 2026.",
+      "id": "32032aa4310babd4",
+      "title": "List of even numbers between 0 and 1000",
+      "url": "https://primenumbers.info/even.htm",
+      "summary": "Even numbers are numbers that are divisible by 2 without any remainder. The list below displays even numbers that are between 0 and 1000 (inclusive). In total there are 501 such numbers.",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1126,64 +1506,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d390557459ed33fe",
-      "title": "Check gift card balance - Walmart Business",
-      "url": "https://business.walmart.com/account/giftcards/balance",
-      "summary": "Don’t have a PIN? To check your balance, you’ll need to exchange your gift card for one with a PIN. You can do this at any Walmart store. For additional help, call 1-888-537-5503",
+      "id": "e21acf28e562d32a",
+      "title": "Mettre à jour les pilotes via Gestionnaire de périphériques dans ...",
+      "url": "https://support.microsoft.com/fr-fr/windows/mettre-%C3%A0-jour-les-pilotes-via-gestionnaire-de-p%C3%A9riph%C3%A9riques-dans-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+      "summary": "Découvrez comment mettre à jour ou réinstaller des pilotes dans Windows à l’aide de Gestionnaire de périphériques.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d1b4ae2bbb0c9942",
-      "title": "Collectibles Drawing Assortment - Walmart.com",
-      "url": "https://www.walmart.com/shop/collectibles/draw",
-      "summary": "Shop for Collectibles Drawing Assortment at Walmart and save.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "383e556839a47817",
-      "title": "Counter Depth - 42 Inch Wide - Refrigerators - The Home Depot",
-      "url": "https://www.homedepot.com/b/Appliances-Refrigerators/Counter-Depth/42-Inch-Wide/N-5yc1vZc3piZ1z197dtZ1z1a95q",
-      "summary": "Browse our online aisle of 42 Inch Wide, Counter Depth Refrigerators. Shop The Home Depot for all your Appliances and DIY needs.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1204,12 +1532,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b02320328fbf946b",
-      "title": "GE Profile™ Series 42\" Built-In Side-by-Side Refrigerator with ...",
-      "url": "https://www.geappliances.com/appliance/GE-Profile-Series-42-Built-In-Side-by-Side-Refrigerator-with-Dispenser-PSB42YSKSS",
-      "summary": "GE Appliances is your home for the best kitchen appliances, home products, parts and accessories, and support.",
+      "id": "d2325c08cd3c6409",
+      "title": "NeedTags: Simpler, Better, Faster CA DMV Registration™",
+      "url": "https://www.needtags.com/",
+      "summary": "Simpler, Better, Faster CA DMV Registration Services. ™ Everything DMV registration related at your fingertips. Save time and get back to doing something you love.",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1230,117 +1558,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "42e6a8514ba1d433",
-      "title": "Live Better U: Walmart’s Education & Career Benefits",
-      "url": "https://corporate.walmart.com/about/working-at-walmart/live-better-u",
-      "summary": "Explore Live Better U—Walmart’s education program offering degrees and skills training for associates, with pathways to advance careers and grow with the company.",
+      "id": "b8c29cca6b2c4548",
+      "title": "query - English-Spanish Dictionary - WordReference.com",
+      "url": "https://www.wordreference.com/enes/query",
+      "summary": "In Lists: Things that can be canceled, essay words, c2 THINKING AND SPEAKING, more... Synonyms: ask, inquire, enquire, question, question, more... Collocations: submit a [formal, written] query, please send all queries to, any queries from the crowd, more...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7412f98ccd7efe60",
-      "title": "Sign up - drive4spark.walmart.com",
-      "url": "https://drive4spark.walmart.com/register",
-      "summary": "Turn on location services to allow the Spark Driver platform to determine your location.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bd6c70e1ca55c795",
-      "title": "Students - Walmart Careers",
-      "url": "https://careers.walmart.com/us/en/home/careers-areas/students",
-      "summary": "We’re looking for ambitious and motivated summer interns - undergraduates, graduates, and MBAs - to join us in powering the future of retail. There’s a path for everyone to start a purpose-driven career at Walmart and Sam's Club. Here you will unlock your potential while impacting millions of people. Are you ready?",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3b252fd2283e49d4",
-      "title": "THE 10 BEST Restaurants in Lancaster - Tripadvisor",
-      "url": "https://www.tripadvisor.com/Restaurants-g52970-Lancaster_Lancaster_County_Pennsylvania.html",
-      "summary": "Best Dining in Lancaster, Lancaster County: See 31,352 Tripadvisor traveler reviews of 577 Lancaster restaurants and search by cuisine, price, location, and more.",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f3a6ca53a064605f",
-      "title": "Things to Do in Lancaster, PA: 2026 Guide",
-      "url": "https://lancasterpa.com/things-to-do/",
-      "summary": "What are the best things to do in Lancaster, PA? Lancaster County, PA offers Amish farmland tours, historic shopping downtown, farm and farmers markets, and family attractions including Sight & Sound Theatres, covered bridges and even outlet shopping.",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1361,10 +1584,140 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d40492cb6979111a",
-      "title": "Yet another reason not to trust dealers...Long",
-      "url": "https://www.twtex.com/forums/threads/yet-another-reason-not-to-trust-dealers-long.25781/",
-      "summary": "You represent Bogart's Motorsports in Birmingham, Alabama. On Thursday, 15 Feb, A customer drops his Ducati 998 off for you to check out the ECU. He called on Monday to make an appointment. On the work order, the customer specifies, \"Customer would like a diagnostic check to see if the ECU is...",
+      "id": "dd3a46f07fed799d",
+      "title": "Query - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Query",
+      "summary": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to change the link to point directly to the intended article.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a4dfdfdf06babd85",
+      "title": "Query Informática | Soluciones informáticas definitivas",
+      "url": "https://query.es/",
+      "summary": "En Query Informática, queremos informarte sobre los pasos que estamos dando y nuestra hoja de ruta para adaptar nuestras aplicaciones a estas nuevas exigencias.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b6bfed09af8edbbb",
+      "title": "QUERY | traducir al español - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/es/diccionario/ingles-espanol/query",
+      "summary": "traducir QUERY: pregunta, duda, cuestionar, preguntar, pregunta [feminine, singular], consulta [feminine…. Más información en el diccionario inglés-español.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ce4d828c791a8fd0",
+      "title": "Qué es una Query: tipos principales - Arimetrics",
+      "url": "https://www.arimetrics.com/glosario-digital/query",
+      "summary": "Una query es una consulta formulada para recuperar información de un sistema. En un buscador, corresponde a las palabras, frases, preguntas u operadores que una persona introduce para obtener resultados.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "393b6c2160cb4ace",
+      "title": "Which DMV Offices Are Open on Saturdays? - NeedTags",
+      "url": "https://www.needtags.com/forum/Registration-Renewal/1/Which-DMV-Offices-Are-Open-on-Saturdays",
+      "summary": "Which DMV Offices Are Open on Saturdays? Find the answers you need to get your California Vehicle Registration faster.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7d4d577af0797c5d",
+      "title": "¿Qué es Power Query? - Power Query | Microsoft Learn",
+      "url": "https://learn.microsoft.com/es-es/power-query/power-query-what-is-power-query",
+      "summary": "Obtenga información sobre qué es Power Query y cómo puede ayudarle a obtener y transformar datos.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
