@@ -20,11 +20,11 @@ Halo combines a heads-up color display with audio, microphones, low-power sensin
 - an adjustable display optic spanning approximately +2 to -6 diopters;
 - prescription and sunglass lens options through a partner optical service.
 
-The earlier published hardware stack identifies the compute platform as an **Alif Balletto B1** with Cortex-M55 CPU/NPU resources, with software built around **ZephyrOS** and a Lua-oriented application layer.
+The published firmware identifies the compute platform as an **Alif Balletto B1** (Cortex-M55 + Ethos-U55 NPU) with **Zephyr RTOS**, a Lua 5.4 runtime for on-device applications, documented BLE services/protocols, and a MIPI-DSI display path.
 
 ## Open source and developer access
 
-Halo's clearest differentiator is development access. Brilliant says the device's design files and code are open source and provides a **Brilliant SDK** plus a **Flutter SDK** for iOS and Android development.
+Halo's clearest differentiator is development access. Brilliant publishes the Halo firmware workspace and documents an owner-buildable OTA path. Owners can build modified firmware and deliver it wirelessly; the documented update design uses MCUboot test boot and automatic rollback if a test image fails to become healthy. The repository also exposes the Lua runtime, BLE protocol/services, sensor/audio modules, board definition, and host-facing development surfaces.
 
 That makes Halo relevant to several GlassesResearch criteria at once:
 
@@ -54,7 +54,7 @@ Important open questions include:
 - independently measured battery life under standardized workloads;
 - exact offline behavior for Noa, Miniapps, speech, and other AI functions;
 - repairability and parts availability;
-- firmware replacement and boot-chain access;
+- the remaining boot-chain and recovery boundaries beyond the documented owner-buildable OTA/MCUboot path;
 - low-level sensor/API completeness;
 - long-term app and cloud-service dependence;
 - real-world prescription serviceability outside the designated partner path.
@@ -66,6 +66,7 @@ Unknowns remain unknown rather than being inferred from the product's open-sourc
 - [Brilliant Labs Halo product page](https://brilliant.xyz/products/halo)
 - [Brilliant Labs developer documentation](https://docs.brilliant.xyz/)
 - [Brilliant Labs GitHub organization](https://github.com/brilliantlabsAR)
+- [Halo firmware — Zephyr / Alif Balletto / Lua / BLE OTA](https://github.com/brilliantlabsAR/halo-firmware)
 
 ## Related GlassesResearch resources
 

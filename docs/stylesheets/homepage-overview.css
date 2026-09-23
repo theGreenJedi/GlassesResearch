@@ -34,3 +34,38 @@
 @media(max-width:720px){
   .gr-home .gr-section{padding:1rem;border-radius:.6rem}
 }
+
+
+/* 2026-09-23 recovered presentation decision: sections are fields, not white cards.
+   Keep whitespace inside the tonal field and make transitions unmistakable on mobile. */
+.gr-home .gr-section{
+  margin-bottom:0;
+  border-left:0;
+  border-right:0;
+  border-radius:0;
+  box-shadow:none;
+  padding-block:clamp(2.5rem,6vw,5.5rem);
+}
+.gr-home .gr-news-pair{
+  gap:0;
+  margin-bottom:0;
+}
+.gr-home .gr-news-pair>.gr-section{
+  border-radius:0;
+  box-shadow:none;
+  padding:clamp(2.5rem,4vw,4rem);
+}
+.gr-home .gr-news-column-wire{background:color-mix(in srgb,var(--gr-accent) 11%,#fff)}
+.gr-home .gr-news-column-verified{background:color-mix(in srgb,var(--gr-accent) 17%,#fff)}
+.gr-home .gr-finder-section{border-radius:0}
+@media(max-width:720px){
+  .gr-home .gr-section,
+  .gr-home .gr-news-pair>.gr-section{
+    padding:2rem 1rem;
+    border-radius:0;
+  }
+  .gr-home .gr-section + .gr-section,
+  .gr-home .gr-news-pair + .gr-section{
+    border-top-color:color-mix(in srgb,var(--gr-accent) 30%,var(--gr-line));
+  }
+}

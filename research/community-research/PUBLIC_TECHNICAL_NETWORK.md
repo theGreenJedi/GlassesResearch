@@ -7,6 +7,7 @@ Purpose: track public technical contributors, projects and discussion nodes that
 | Node | Public technical signal | GlassesResearch relevance | Status / disposition |
 |---|---|---|---|
 | `Panny777` | Maintains `Meizu-Myvu-Client` and `Meizu-Myvu-SDK`; documented MYVU / Star Air XGA010C transport, pairing, relay and feature behavior. | Primary MYVU/XGA010C reverse-engineering source and anchor for MYVU Open Research. | Continue monitoring repository changes, issues, forks and technically relevant interactions. Preserve upstream attribution. |
+| `BimaPDev` | Maintains `SmartGlasses`; public XGA010C firmware analysis with hardware-tested modified firmware, PSRAM Thumb/compiled-C execution, BLE file-transfer mapping, and post-flash iOS/ANCS bond diagnostics. | High-signal firmware/owner-control source complementary to Panny777's application/protocol work. | Continue monitoring commits and technical interactions. Treat hardware-test reports as community-primary until GlassesResearch reproduces them. |
 | `FerSaiyan` / CyanBridge | Maintains `Alternative-HeyCyan-App-and-SDK`; active HeyCyan interoperability research and downstream MYVU integration using Panny777's work. | Important bridge between protocol research and owner-usable companion software; useful for W610/HeyCyan lineage and cross-project reuse. | Continue monitoring releases, issues and hardware-validation notes. Distinguish downstream adoption from independent confirmation. |
 | `vladislavkyzmenkov304-cpu` | Public participant in CyanBridge issue #5; supplied a concrete CY01 owner test with reproducible device-state observations and follow-up compatibility data. | High-value owner-testing signal for CY01 / HeyCyan compatibility research. | Track future public technical results, especially exact hardware identity and cross-device comparison. Do not generalize one specimen to the family. |
 | `jacob-kruger-work` | Opened CyanBridge issue #5 and repeatedly supplied test requirements, build/test feedback and interoperability use cases around device video access. | Useful source of reproducible test scenarios and owner-facing interoperability requirements. | Track technically substantive follow-ups and resulting implementation/test evidence. |
@@ -16,6 +17,7 @@ Purpose: track public technical contributors, projects and discussion nodes that
 
 - [Panny777/Meizu-Myvu-Client](https://github.com/Panny777/Meizu-Myvu-Client)
 - [Panny777/Meizu-Myvu-SDK](https://github.com/Panny777/Meizu-Myvu-SDK)
+- [BimaPDev/SmartGlasses](https://github.com/BimaPDev/SmartGlasses)
 - [FerSaiyan/Alternative-HeyCyan-App-and-SDK](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK)
 - [ebowwa/HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK)
 - [aimindseye/rokid-ai-glasses](https://github.com/aimindseye/rokid-ai-glasses)
