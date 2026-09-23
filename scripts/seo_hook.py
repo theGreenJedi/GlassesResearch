@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import re
@@ -230,6 +231,10 @@ def _article_schema(
 
 def on_page_markdown(markdown: str, page: Any, config: Any, files: Any) -> str:
     """Populate per-page metadata before Material renders the page."""
+    source_uri = getattr(getattr(page, "file", None), "src_uri", "") or ""
+    digest_payload = f"{source_uri}\n{markdown}".encode("utf-8")
+    page.meta["gr_content_sha256"] = hashlib.sha256(digest_payload).hexdigest()
+
     page_title = page.title or config.site_name
     if not page.meta.get("description"):
         page.meta["description"] = _first_description(markdown, page_title)
@@ -254,7 +259,6 @@ def on_page_markdown(markdown: str, page: Any, config: Any, files: Any) -> str:
     if dataset_json:
         page.meta["seo_dataset_json"] = dataset_json
 
-    source_uri = getattr(getattr(page, "file", None), "src_uri", "") or ""
     article_json = _article_schema(
         markdown,
         page_title,
