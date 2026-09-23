@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-23T17:31:03.513827+00:00`
+Generated: `2026-09-23T17:32:02.413578+00:00`
 
 - Intake files inspected: **325**
 - Candidates retained in this review window/history: **15723**
@@ -12,10 +12,10 @@ Generated: `2026-09-23T17:31:03.513827+00:00`
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 568
+- `needs_editorial_verification`: 572
 - `rejected_noise`: 11672
 - `source_monitor`: 1
-- `source_review`: 77
+- `source_review`: 73
 - `watching`: 78
 
 ## Action queue
@@ -109,6 +109,7 @@ Generated: `2026-09-23T17:31:03.513827+00:00`
 | high | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [French authorities launch criminal probe into sexual harassment involving smart glasses - AnewZ](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSkZUTVA2aDd0UUplWG5rRzVsZU5zT1dYMS1IdUhPVFB5LUxGLUJrenRVTElzTkpRQU1JX0JlUHZPUG9oZW84SWJBZ3dFWlMwSjFmVko0TmwwaTdSZmhRMnk3LS16WllRQ3BiRmNrcjlYOWFQTGdULU45aGJRazRBenNSVXUwdXNtcHhhQ3JJUThyOFFWRjBqWHNXWXk3UDBNalFwVHdnTGRpNUpfNWhZdEdsd3dqdHU0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [French authorities launch criminal probe into sexual harassment involving smart glasses - anewz.tv](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMUFNV1VJSGJVRUdCQkI2R1k2ZmZlRWxnT0FQZlgtNUZrajM0NUVFbDhGbFRWLXY1OG1WWXNTdUFvR1RxaXkxTUxETUUxNzZ2bThwODJfQURUUTBBY2RDMmluMmVGOTJMdkxBVHZMZGlPTlp2OXBteGpkWFlhdkV5Y3Q2NzdwQjM1bkg0VkVmazVBWjFoZG9Zam91YmRXYW9jZGgxY25pSDVhcFpwVXNzdGhmQ0FjNlBC?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [From smart glasses to AI pins, privacy fears challenge tech's next big bet](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab402faf5b9448dbc70ea7bb10f0571&url=https%3a%2f%2fwww.reuters.com%2fbusiness%2fmedia-telecom%2fsmart-glasses-ai-pins-privacy-fears-challenge-techs-next-big-bet-2026-09-22%2f&c=15942713156455209250&mkt=en-us) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Google announces the launch of its first smart glasses this fall with a pleasant surprise for iPhone users! - iphoneislam.com](https://news.google.com/rss/articles/CBMi7gFBVV95cUxQYS1iSmRITmRpZEhLTF9HTnlNYi0xNWJpbEgteFR2ZVF2cjBPVXlDVG5hd0UweV81bEZ2dmY0OWxUal9ienktdFVvMldUelM4c2JLWVI5akd5Q29wa2ZWeG1fb1NJRGZJOER1XzcyVHJ2UVFCVFVxWU44dm02YnhzeTdYWnJjcWhtZk1ZdHJzLUFPcGRjekczaHVfamMxajZvTml3MTR2VERqYTZkbV8xdGpCMzA3eVlsV0pyY3NLWnUtOFAzLWtDWmt0eW9fX2k0ZGxPNW1hdTFhM2ZHSUpVTjNZVHJPOWg3ZU5YTmZB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Hands-on: XREAL Aura AR Glasses with Android XR and a 70-degree Field ...](https://www.roadtovr.com/xreal-aura-ar-glasses-android-xr-hands-on-preview/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
 | high | needs_editorial_verification | direct | [I went hands-on with XREAL’s Android XR glasses, and I didn’t ...](https://www.xda-developers.com/hands-on-with-xreals-android-xr-project-aura-glasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, development_hacking |
@@ -218,6 +219,7 @@ Generated: `2026-09-23T17:31:03.513827+00:00`
 | normal | needs_editorial_verification | enabling | [Sam's Club - Wholesale Prices on Top Brands](https://links.samsclub.com/welcome) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | normal | needs_editorial_verification | direct | [Smart Glass Reviews From Our Experts \| PCMag](https://www.pcmag.com/categories/smart-glasses) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Smart Glasses - Target](https://www.target.com/c/smart-glasses-wearable-technology-electronics-tech/-/N-ky6nj) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Smart Glasses And AI In The U.S.: Benefits And Opportunities](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab402fbf0c7455c814d1f52bb5ab926&url=https%3a%2f%2fseekingalpha.com%2farticle%2f4948889-smart-glasses-ai-in-us-benefits-opportunities&c=12372629987487904289&mkt=en-us) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Smart glasses are already causing havoc in India](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab402f4af1c4d9dac40b70bf8ddeb31&url=https%3a%2f%2fwww.technologyreview.com%2f2026%2f09%2f23%2f1144953%2fsmart-glasses-havoc-india%2f&c=2773969703275709871&mkt=en-us) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Smart Glasses Geek: Everything About AI, AR & XR Glasses](https://smartglassesgeek.com/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Smart Glasses in 2026: AI Glasses, AR Glasses and the Market Leaders](https://gadgets.smartscope.blog/en/articles/smart-glasses-2026-landscape/) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
@@ -270,8 +272,6 @@ Generated: `2026-09-23T17:31:03.513827+00:00`
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses for AI, AR & Entertainment (September 2026)](https://www.ofzenandcomputing.com/best-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses in 2026: Camera, AI & AR Features Compared](https://memeburn.com/best-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [10 Best Smart Glasses in 2026: Camera, AI & AR Features Compared - memeburn.com](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9wbmdNZ0FxVWpyMXd1OGFuYTF6MExCX2Z6WW9pZllHR2FuTk9rTlI0Q1RlaUhCX0hKTnRhUXpwRTItTVF4Z3JUNlpvUWtzSzg2S2c?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [8 Best Smart Glasses (August 2026) Trusted Reviews](https://www.sarahleeandjohnny.com/best-smart-glasses/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
-| normal | needs_editorial_verification | direct | [A New App Uses Bluetooth to Detect Meta AI Glasses Nearby - tech.yahoo.com](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLWNqVm8wa25DeGdTelhHMlRZNzBSRHdWVnZBYkJiUE1lSGpDNzVJdWFxYU5ZUjdLU1JTVldkQ3FwRkl0aTBMNzZZV3BhMmFlSUJGM2lJdFhSZkJ6dDRHNGtCc1U4ajU3YUp6ZVV2b2xmcEtLWXBlQnc1VzdpdnRoN3AyUUN2TTc2a1Ew?oc=5) | reachable (200) | research_news_review, development_hacking |
 
 ## Meaning of states
 
