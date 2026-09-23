@@ -88,4 +88,3 @@ This editorial synthesizes documented product and platform directions. Manufactu
 - [Nuance Audio — manufacturer product family](https://www.nuanceaudio.com/en-us/hearing-glasses)
 - [Brilliant Labs Halo firmware](https://github.com/brilliantlabsAR/halo-firmware)
 - [Mentra — company and platform overview](https://mentraglass.com/about)
-- [GlassesResearch — institutional privacy investigation](../../research/investigations/)
