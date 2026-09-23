@@ -116,7 +116,6 @@ jobs:
           python scripts/apply_editorial_decisions.py
           cat research/news-reviews/latest.md >> "$GITHUB_STEP_SUMMARY"
           printf '\n\n' >> "$GITHUB_STEP_SUMMARY"
-          cat research/news-reviews/health.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Persist durable editorial triage
         if: steps.cadence.outputs.run == 'true' && steps.intake.outputs.found == 'true'

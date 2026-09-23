@@ -4,6 +4,8 @@ description: "State of the State: smart glasses are no longer converging on one 
 
 # State of the State: Smart glasses are no longer becoming one thing
 
+**Published:** September 23, 2026  
+
 For years, smart glasses were discussed as though the category were moving toward a single destination: ordinary-looking eyewear with a display, cameras, audio, an assistant, and enough compute to replace pieces of the phone.
 
 The evidence now points somewhere more interesting.
@@ -88,4 +90,3 @@ This editorial synthesizes documented product and platform directions. Manufactu
 - [Nuance Audio — manufacturer product family](https://www.nuanceaudio.com/en-us/hearing-glasses)
 - [Brilliant Labs Halo firmware](https://github.com/brilliantlabsAR/halo-firmware)
 - [Mentra — company and platform overview](https://mentraglass.com/about)
-- [GlassesResearch — institutional privacy investigation](../../research/investigations/)

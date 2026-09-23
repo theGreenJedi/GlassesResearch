@@ -51,6 +51,6 @@ Use explicit relationships instead of a generic "same hardware" label:
 4. Region-specific and marketplace models whose brand identity may obscure a shared platform.
 5. Open platforms where public firmware can expose architecture relationships that marketing pages do not.
 
-## Publication rule
+## Evidence threshold
 
 Do not collapse models or assert an OEM/ODM relationship until evidence supports the specific relationship. Preserve uncertainty publicly when lineage affects purchasing, interoperability, firmware, owner control, or sourcing.
