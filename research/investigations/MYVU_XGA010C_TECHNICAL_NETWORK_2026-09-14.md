@@ -4,7 +4,7 @@
 **Subject:** MYVU Air / StarV Air (`XGA010C`)  
 **Evidence lane:** Community-primary technical research + GlassesResearch investigation planning  
 **Independent GlassesResearch reproduction:** Pending controlled specimen  
-**Substantive update:** 2026-09-20 — BimaPDev firmware evidence admitted as community-primary, hardware-tested
+**Substantive update:** 2026-09-23 — BimaPDev firmware evidence expanded with post-flash iOS/ANCS bond failure mode
 
 ## Mission
 
@@ -67,6 +67,17 @@ A hardware-visible rebrand showed modified BIMA branding at power-off while boot
 The empirical distinction is useful. The exact boot asset location remains unresolved.
 
 **Primary source:** https://github.com/BimaPDev/SmartGlasses/commit/b9bbe7dbe87660736c5016baef0fee36ab270cf4
+
+
+### Post-flash iOS / ANCS bond state
+
+BimaPDev reports that flashing firmware clears the glasses' LE bond database while iOS may retain its prior bond record. Because the proprietary MYVU application session uses a separate application-layer ECDH exchange, that path can continue to appear functional while ANCS notifications fail for lack of the expected encrypted BLE bond. The reported recovery is to forget the glasses in iOS and pair again.
+
+**Evidence state:** community-primary, hardware-tested by the project author; not yet reproduced by GlassesResearch.
+
+**Primary source:** https://github.com/BimaPDev/SmartGlasses/commit/2702c70247af7d3458c9cc4ea2881f36d21bfd09
+
+**Test implication:** after any firmware flash, explicitly reset/re-establish the phone bond before using ANCS failure as evidence of a firmware or notification regression.
 
 ## Claims still deliberately NOT promoted
 
@@ -157,8 +168,9 @@ Do not convert one state into another through repetition.
 3. Trace CyanBridge's current MYVU integration to concrete source paths and document which behaviors are inherited, reimplemented or still planned.
 4. Preserve the exact BimaPDev commits, firmware-build identifiers and tooling used for any reproduction; do not transplant offsets across builds.
 5. Reproduce one deliberately benign, hardware-visible firmware modification only after recovery prerequisites are satisfied, then separately test the bounded PSRAM execution path.
-6. Record provenance, hashes, format, signature/verification behavior and recovery implications before any GlassesResearch write experiment.
-7. Promote only successfully reproduced results into GlassesResearch lab evidence and Report Card narratives.
+6. After any firmware flash, forget/re-pair the specimen on iOS before ANCS validation and record bond state as part of the test evidence.
+7. Record provenance, hashes, format, signature/verification behavior and recovery implications before any GlassesResearch write experiment.
+8. Promote only successfully reproduced results into GlassesResearch lab evidence and Report Card narratives.
 
 ## Disposition
 
