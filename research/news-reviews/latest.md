@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-23T22:55:42.363225+00:00`
+Generated: `2026-09-23T23:53:02.246994+00:00`
 
-- Intake files inspected: **323**
-- Candidates retained in this review window/history: **15579**
+- Intake files inspected: **325**
+- Candidates retained in this review window/history: **15666**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3251
+- `adjacent_radar`: 3270
 - `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 606
-- `rejected_noise`: 11556
+- `needs_editorial_verification`: 618
+- `rejected_noise`: 11618
 - `source_monitor`: 1
-- `source_review`: 67
+- `source_review`: 61
 - `watching`: 78
 
 ## Action queue
@@ -63,6 +63,7 @@ Generated: `2026-09-23T22:55:42.363225+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.335](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.335) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.338](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.338) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.339](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.339) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.341](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.341) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta Plans Camera-Free Smart Glasses Launch This Fall Amid Privacy Backlash - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE5tdWZNZTNwNkVqVWVfb0wzWXdOUTJCWDdaWXN0Y3pVOHFtS3pnaENCcjFZeHdqUzdELWtHc1FUNHlQc2E5dmFRQ1FTSUhfN2UxM3JxREQtaUV3bWJIUHB2a0tabEJwaHRiNnFyMVZOR3JDa2J0a0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta to launch AI glasses without camera - Daily Observer](https://news.google.com/rss/articles/CBMiSkFVX3lxTFBtNkZGNVpiMDdhWk80MW8yQXVDUGJpUnV1QmI5Sk81VHgwRmk0T2ktcHpuUUJmRmZGZXY4WmNUSjRMcVJWX0d4cHRR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,7 +272,6 @@ Generated: `2026-09-23T22:55:42.363225+00:00`
 | normal | needs_editorial_verification | direct | [Vuzix Corporation y Commsplus Distribution expanden la distribución de gafas inteligentes para empresas en Australia, Nueva Zelanda y el Pac](https://news.google.com/rss/articles/CBMi7AFBVV95cUxOOFF5RDZ6UE4yOUJQOGNDVWdwV3BWU0pQemRDRndUVTRIY0Z4bC1IbTd4V1ZMd1JFbVBYa3ZOb2U5UHk5MnJrY3pobWJibGpRN1ktSWtrX0EtNm9JY3kxN1drN2hYN0pBR040WGFBMUpveWVKU1lDZlNrRURybzFybFRHZGwzUldUc3NicFh5aC1DRmRsVWJ1ZnJrUjVuOHNQNGcyMkRqcmkxNEFJdDhZOENyR0gxWjVtT3M5V3ZGbFEtYThfSFpGSGJ0bGJWMk9Gel9fZ1FmaDNHTmczVlNnemJmZTl0SWdGdG1ncA?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Vuzix expands enterprise smart glasses distribution to Australia and Pacific through CommsPlusD partnership - Traders Union](https://news.google.com/rss/articles/CBMigwFBVV95cUxQYldIcHhGdUFhdXZTS1FLWVZXZUVvU2N4RXBlNDl3bU1uQXltY25vY1JXTTZWaDJyNUJjQUd0Tl9kbS1QQXpvQ2Q0RWxQcElVLXlLdDlJdW94X2RmZGJRYjBvOW02TnZINGwyTlV4RjhqVE1IdDhrYmlmakpEX1FvLXEyUQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Vuzix inks distribution deal with CommsPlus for smart glasses in Australia and Pacific markets - Pluang](https://news.google.com/rss/articles/CBMimAFBVV95cUxQNC1WeWxvQkdwUjY0eV9xSm8tVGpIOXBLVGloSnp3dXluRnBFMk10cnBZMUlOUWw1ZGpiYzNCUHVKa0RGc3BaNXJnMkM3emNWNUhQc1FvaU1xQlZDQ3hUa2FOTS1jdlc1OUtGY190SndCRS0ybnFDV2ZuZWFsYzdGRTI3RVFyQlFTam5JX2ZtdkVaSHhhS05LSg?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [VuzixがCommsPlus社と太平洋地域での販売契約を締結 執筆 - Investing.com - FX \| 株式市場 \| ファイナンス \| 金融ニュース](https://news.google.com/rss/articles/CBMicEFVX3lxTFBrOHptRDRIQmRWUmtXUU5vb3ZzM0lwZ0ExNjlOZXJhdllVUkZrSGZpZUZXWDNBRW5OUE1tSGQ3X2ZIYmJTRmppUHV1MldtT0FtdnRRZThEQ0V4ZHNTWmxnTlc5QXR4a1RsN1NwUzUyWEI?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
