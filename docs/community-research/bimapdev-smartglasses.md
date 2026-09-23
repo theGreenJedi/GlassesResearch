@@ -3,7 +3,7 @@
 **Scope:** Meizu MYVU / StarV Air / XGA010C firmware research  
 **Evidence class:** Community-primary; hardware-tested where explicitly stated by the project  
 **GlassesResearch verification:** Not independently reproduced  
-**Last substantive review:** 2026-09-20
+**Last substantive review:** 2026-09-23
 
 BimaPDev's public SmartGlasses work is tracked here because it provides unusually concrete firmware-level evidence about the XGA010C family. Findings below remain attributed to the project until GlassesResearch reproduces them on its own hardware.
 
@@ -63,6 +63,17 @@ The project explicitly corrected an earlier incomplete search that had covered o
 
 **Primary source:** https://github.com/BimaPDev/SmartGlasses/commit/b9bbe7dbe87660736c5016baef0fee36ab270cf4
 
+
+## Post-flash iOS / ANCS bond failure mode
+
+BimaPDev reports a hardware-tested interoperability failure after firmware flashing: the flash process clears the glasses' BLE LE bond database while iOS can retain its side of the prior bond. In that state, the proprietary MYVU application protocol may still appear healthy because its application-layer ECDH session is separate, while ANCS notifications fail because ANCS depends on the encrypted BLE bond.
+
+The reported recovery is to forget the glasses in iOS Bluetooth settings and pair again after flashing. GlassesResearch has not independently reproduced this behavior.
+
+**Why it matters:** this is a concrete owner-testing trap. A successful custom flash followed by failed notifications should not automatically be classified as broken ANCS support or a failed firmware modification until BLE bond state has been reset and re-tested.
+
+**Primary source:** https://github.com/BimaPDev/SmartGlasses/commit/2702c70247af7d3458c9cc4ea2881f36d21bfd09
+
 ## GlassesResearch disposition
 
 - Promote the former firmware/OTA lead from **unresolved lead** to **community-primary, hardware-tested evidence**.
@@ -70,6 +81,7 @@ The project explicitly corrected an earlier incomplete search that had covered o
 - Record hardware-visible firmware modification as a positive-control result, distinct from arbitrary custom firmware.
 - Add LittleFS and the BLE transfer behavior to Software / Firmware evidence, preserving the read-only/no-listing boundary.
 - Add the boot-versus-power-off asset distinction to firmware-layout research; keep the boot asset's exact location unresolved.
+- Record post-flash iOS/ANCS bond loss as a community-primary owner-testing failure mode; require forget/re-pair as a diagnostic control before concluding notification support is broken.
 - Treat firmware offsets and region boundaries as build-specific until independently mapped for each version.
 - Keep BimaPDev as a high-signal public technical contributor for XGA010C-family firmware work and monitor the project alongside Panny777's MYVU client/SDK work.
 - When GlassesResearch controls an XGA010C specimen, prioritize reproduction of one deliberately benign, hardware-visible modification before broader write experiments.
