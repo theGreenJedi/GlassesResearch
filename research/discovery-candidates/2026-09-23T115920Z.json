@@ -1,0 +1,1658 @@
+{
+  "schema": 3,
+  "discovered_utc": "2026-09-23T11:49:30.161991+00:00",
+  "candidate_count": 61,
+  "classifier_irrelevant_count": 54,
+  "precision_rejected_count": 0,
+  "channel_counts": {
+    "adjacent": 4,
+    "broad_web": 45,
+    "developer": 10,
+    "manufacturer_catalog": 2
+  },
+  "relationship_counts": {
+    "direct": 3,
+    "enabling": 0,
+    "adjacent": 4,
+    "speculative": 0,
+    "irrelevant": 54
+  },
+  "type_counts": {
+    "model": 3,
+    "video": 6,
+    "news": 37,
+    "tool": 11,
+    "sdk": 12,
+    "retail": 3,
+    "community": 2
+  },
+  "routing_counts": {
+    "adjacent_radar": 4,
+    "community_evidence_review": 1,
+    "development_hacking": 2,
+    "model_catalog_review": 3,
+    "reject_noise": 54,
+    "research_news_review": 7
+  },
+  "policy": {
+    "collection": "high recall across ordinary search surfaces",
+    "classification": "relationship + content type + routing target before review",
+    "publication": "editorial verification required",
+    "retail": "lead only; resolve manufacturer/OEM/rebrand before canonical identity",
+    "research": "source lead; classify question answered before promotion",
+    "community": "attributed experience lead; never canonical specification evidence by itself",
+    "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
+  },
+  "collector_errors": [],
+  "candidates": [
+    {
+      "id": "4f742f48909489bc",
+      "title": "Manufacturer catalog lead: Buy Now",
+      "url": "https://www.inmoxr.com/collections/inmo-go3-bundles",
+      "summary": "Same-domain catalog/developer link discovered from https://www.inmoxr.com/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://www.inmoxr.com/",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e4adac481a12ec3d",
+      "title": "Manufacturer catalog lead: Smarter Everyday, $150 OFF GO3 · SHOP NOW Smarter Everyday, $150 OFF GO3 · SHOP NOW",
+      "url": "https://www.inmoxr.com/pages/inmo-go3-ai-glasses",
+      "summary": "Same-domain catalog/developer link discovered from https://www.inmoxr.com/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://www.inmoxr.com/",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9050bbceb648273f",
+      "title": "10 Best Smart Glasses for AI, AR & Entertainment (September 2026)",
+      "url": "https://www.ofzenandcomputing.com/best-smart-glasses/",
+      "summary": "Expert reviews of the top 10 smart glasses for 2026, covering AI translation, AR displays, and entertainment features.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses review",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8418ce90c791b008",
+      "title": "AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "summary": "r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA but is…",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5e0a2a4b19539ca2",
+      "title": "Find Wells Fargo bank and ATM locations in Minnesota | Wells Fargo",
+      "url": "https://locations.wellsfargo.com/mn",
+      "summary": "Locate banks or ATMs in Minnesota. Find drive-thru ATMs, banking services available, store hours, customer service numbers, directions and more.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e3b88cbb8853d78f",
+      "title": "How To Use \"Near\" in English LanGeek",
+      "url": "https://langeek.co/en/grammar/course/983/near",
+      "summary": "As stated above, one of the main functions of 'near' is to be a preposition. Below, we are going to learn all about the different kinds of prepositions it can be: 'Near' can mainly function as a preposition of place. Below, we are going to learn all about its different meanings:",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f6d6d4266b514799",
+      "title": "Near Meaning, Definition & Synonyms | VocabDictionary",
+      "url": "https://vocabdictionary.com/english/near",
+      "summary": "Learn the English meaning of Near: Located a short distance away; close. Includes phonetic IPA (//nɪr//), CEFR level, synonyms, audio, and 10-language translations.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e28fb96c64e0cb85",
+      "title": "AMC Pacific Place 11 Seattle | Movie Session Times & Tickets, Contacts ...",
+      "url": "https://www.flicks.us/cinema/amc-pacific-place-11-seattle/",
+      "summary": "Find session times and book tickets for AMC Pacific Place 11 Seattle, Seattle.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "27ecb4cb6b5e1bc8",
+      "title": "AMC Pacific Place 11 Showtimes Schedule - Seattle, Washington ...",
+      "url": "https://www.bigscreen.com/Marquee.php?theater=5235&view=sched&printable=1",
+      "summary": "What's playing and when? View showtimes for movies playing at AMC Pacific Place 11 in Seattle, Washington (WA 98101) with links to movie information (plot summary, reviews, actors, actresses, etc.) and more information about the theater.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5bdb6cc5d60e4c6",
+      "title": "AMC Seattle 10. Movie Showtimes & Tickets | Fever",
+      "url": "https://feverup.com/movies/en/united-states/movie-theaters/amc-seattle-10",
+      "summary": "Find movie showtimes, choose the best seats and buy tickets for AMC Seattle 10. We make going to the movies easy!",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "41f65936255889d0",
+      "title": "AMC Theatres",
+      "url": "https://www.amctheatres.com/movie-theatres/seattle-tacoma/amc-seattle-10/showtimes",
+      "summary": "Find showtimes, buy movie tickets, watch trailers, and get directions to AMC Seattle 10.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f114b53c5601ea0",
+      "title": "Cinema Seattle - Seattle Movie Showtimes & Cinema Map",
+      "url": "https://www.cinemaseattle.com/",
+      "summary": "Daily and weekly movie showtimes for Seattle cinemas, plus an interactive map of Seattle movie theater locations.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9b997b2b5eaabb79",
+      "title": "Synonyms for Hate: Alternative Words to Describe Dislike",
+      "url": "https://completeera.com/synonyms-for-hate-alternative-words-to-describe-dislike/",
+      "summary": "This guide breaks down synonyms for hate, from mild dislikes to intense loathing, with contextual examples, comparison tables, and practical tips for writing, speaking, or emotional expression.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ffa6f81562b652a1",
+      "title": "Synonyms of - Merriam-Webster Thesaurus",
+      "url": "https://www.merriam-webster.com/thesaurus/hates",
+      "summary": "Synonyms for HATES: despises, loathes, detests, abhors, disdains, abominates, disapproves (of), has it in for; Antonyms of HATES: loves, prefers, likes, desires, enjoys, favors, fancies, relishes",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "210e42d38fada368",
+      "title": "Synonyms of hate | English Thesaurus",
+      "url": "https://www.synonymer.com/en/english/?q=hate",
+      "summary": "Are you looking for synonyms of hate in English? We have 90 synonyms of the word hate in our database with definitions and usage examples.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cd7ffc6ed706d059",
+      "title": "Synonyms of Hate|From Dislike to Detestation — Find the Perfect Word ...",
+      "url": "https://synonymplanet.com/synonyms-of-hate/",
+      "summary": "Hate means to feel an extremely strong dislike or intense negative emotion toward someone or something. The most common synonym is dislike, while stronger alternatives include despise, loathe, and detest.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c7032f3b5d6232a",
+      "title": "What is another word for to hate? - WordHippo",
+      "url": "https://www.wordhippo.com/what-is/another-word-for/to+hate.html",
+      "summary": "Find 1,073 synonyms for to hate and other similar words that you can use instead based on 7 separate contexts from our thesaurus.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5677e16655a9f846",
+      "title": "233 Entertainment Quizzes with Question & Answers - ProProfs",
+      "url": "https://www.proprofs.com/quiz-school/topic/entertainment",
+      "summary": "Entertainment Quizzes, Questions & Answers You have found the jackpot if you are looking for some entertainment and fun-based trivia quizzes. With our entertainment quiz questions and answers, which cover music, movies, television series, and novels, you can test your knowledge and discover more about the entertainment industry.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5093ca6bc71cd7e6",
+      "title": "APA Psychologist Locator – American Psychological Association",
+      "url": "https://locator.apa.org/",
+      "summary": "Find the right psychologist for you. Become a Part of a Brand that Clients Trust -- Join APA Psychologist Locator Today! Type in a ZIP code or city & state to find a psychologist near you. To further refine your search, type in the name of a provider or the specialty for which you’d like help.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4aaa9cfa3316b0dc",
+      "title": "Bing Entertainment Quiz (9-21-2022) : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/xjr0zx/bing_entertainment_quiz_9212022/",
+      "summary": "Bing Entertainment News Quiz: Questions Answers (09-21-2022) 21 September 2022 1: Which singer was just honored with a star on the Hollywood Walk of…",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "94aa622c84580659",
+      "title": "Boston VW Dealers | Colonial Volkswagen Dealerships in Boston MA",
+      "url": "https://colonialvw.com/",
+      "summary": "When it comes to service and maintenance, Colonial’s premier Massachusetts Volkswagen dealerships are committed to providing top-notch care for our customers and their vehicles.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "becb5f4c11a6926f",
+      "title": "Contests - FOX 2 Detroit",
+      "url": "https://www.fox2detroit.com/contests",
+      "summary": "This material may not be published, broadcast, rewritten, or redistributed. ©2026 FOX Television Stations",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d284239f5b9af26",
+      "title": "Cooking School - FOX 2 Detroit",
+      "url": "https://www.fox2detroit.com/tag/series/cooking-school",
+      "summary": "Stories and video from FOX 2's Cooking School.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53a7c2e2f241ef30",
+      "title": "Crescent High Lunge Pose Yoga(High Lunge Pose)| Yoga Sequences ...",
+      "url": "https://www.tummee.com/yoga-poses/high-lunge-pose",
+      "summary": "Crescent High Lunge Pose, or Ashta Chandrasana, meaning 'Eight Moon' in Sanskrit, is a standing balancing asana akin to the Warrior poses. This dynamic pose, resembling a crescent moon, is a preparatory pose for Warrior I and offers a deep stretch to the hamstrings and hips. Benefits include impr... sign-up to view complete summary.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1db0bf239e8e0883",
+      "title": "Cricket Quiz: How Much You Know About Cricket? - Quiz & Trivia - ProProfs",
+      "url": "https://www.proprofs.com/quiz-school/story.php?title=online-cricket-quiz",
+      "summary": "Step onto the pitch and test your knowledge with the ultimate cricket quiz, a meticulously crafted challenge designed for fans of this beloved sport. This quiz offers a broad spectrum of questions covering historic matches, legendary players, iconic stadiums, and unforgettable moments that have defined cricket over the years. From the early days of test matches to the thrilling energy of T20 ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0e0bf8a392579c64",
+      "title": "Entertainment - FOX 2 Detroit",
+      "url": "https://www.fox2detroit.com/tag/entertainment",
+      "summary": "News from the entertainment world, including TV, movies, music and celebrity news.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f7a8bce246fba36",
+      "title": "Find a Therapist, Psychologist, Counselor - Psychology Today",
+      "url": "https://www.psychologytoday.com/us/therapists/",
+      "summary": "Browse our extensive directory of therapists, psychologists and counselors near you. Search by location, speciality and insurance.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e0fa42a5437f187",
+      "title": "Find a Therapist: License-Verified Directory, Free - Psychology",
+      "url": "https://psychology.com/therapist/",
+      "summary": "Search 347 licensed therapists by location and specialty from the directory, or browse by state or by area of focus. Each profile shows the therapist's credentials, specialties, session formats, fees, and how to get in touch.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "97bdf9c7fd173c5e",
+      "title": "Fort Worth Camera | Fort Worth TX - Facebook",
+      "url": "https://www.facebook.com/fwcamera/",
+      "summary": "Meet the Canon R6V now in stock at Fort Worth Camera. If you’re ready to step into true cinema shooting, this camera gets you there, around 2500 dollars.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64ce76bc25c57d5a",
+      "title": "FOX 2 Detroit | Local News, Weather, and Live Streams | WJBK",
+      "url": "https://www.fox2detroit.com/",
+      "summary": "Detroit news, weather, sports, and traffic serving all of southeast Michigan and Metro Detroit. Watch breaking news live or see the latest videos from programs like The Nine, Let it Rip, and FOX 2 ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c96e97a22b9bd939",
+      "title": "High Lunge (Ashta Chandrasana) - Yoga Pose Guide",
+      "url": "https://yoga-bits.com/poses/high-lunge/",
+      "summary": "A dynamic standing lunge that builds significant leg strength and balance while generating heat throughout the body. Unlike Low Lunge, the back knee stays lifted, demanding more from the quadriceps and core.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f022de2a9f4058ee",
+      "title": "High Lunge Pose (Ashta Chandrasana): Form & Benefits - yogajala",
+      "url": "https://yogajala.com/high-lunge-pose-ashta-chandrasana/",
+      "summary": "Build leg strength and hip flexibility with high lunge pose (ashta chandrasana). Learn alignment cues, arm variations, and common mistakes to avoid.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5915b0354fcd33d6",
+      "title": "High Lunge Pose (Utthita Ashwa Sanchalanasana) Instructions & Photos",
+      "url": "https://www.yogabasics.com/asana/high-lunge/",
+      "summary": "Benefits: High lunge opens the hips and chest, stretches the groin and legs, lengthens the spine and strengthens the lower body. Contraindications: Recent or chronic injury to the legs or hips.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7864f733a8b2dc3e",
+      "title": "High Lunge Pose - Yogapedia",
+      "url": "https://www.yogapedia.com/yoga-poses/high-lunge-pose/11/11234",
+      "summary": "What is High Lunge Pose? High lunge pose, or utthita ashwa sanchalanasana in Sanskrit, is a beginner's standing posture that builds strength and stamina. It's similar to but more accessible than warrior I as the back heel is lifted and the arms are parallel rather than touching.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b1bb7597ed8c0089",
+      "title": "High Lunge Yoga Pose - Yoga With Adriene",
+      "url": "https://yogawithadriene.com/high-lunge/",
+      "summary": "Learn the High Lunge yoga pose! This video is part of our Foundations of Yoga series suitable for beginners and great for anyone attempting to get back to a practice or deepen a current practice.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "937c19edc486aff0",
+      "title": "High Lunge: Benefits, How To & Variations - Yoga 15",
+      "url": "https://yoga15.com/pose/high-lunge/",
+      "summary": "High Lunge pose in yoga builds leg strength, stretches the hip flexors, and can help to ease knee and lower back pain. Free how-to video.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1531df6a96dd302c",
+      "title": "High Lunge: How to Practice the Yoga Pose",
+      "url": "https://www.yogajournal.com/poses/high-lunge/",
+      "summary": "High Lunge is a demanding, somewhat advanced pose that requires balance and strength. It asks for power to firm the feet, legs, and glutes, and the flexibility to lengthen the front hamstring while opening the back hip flexor.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c1175dba5fce9166",
+      "title": "How To Do High Lunge Pose - Brett Larkin Yoga",
+      "url": "https://www.brettlarkin.com/high-lunge-pose-alana/",
+      "summary": "High Lunge Pose (Alana) is a basic yoga posture that shows up in almost every sequence or vinyasa flow. Learn how to do it, variations, and modifications.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18cd1c95cb0cc0f1",
+      "title": "How to Practice High Lunge | YogaRenew",
+      "url": "https://www.yogarenewteachertraining.com/yoga-poses/high-lunge/",
+      "summary": "High Lunge is a dynamic, energizing pose that invites stability, strength, and awareness. It strengthens the lower body, opens the front body, and sharpens mental focus—making it both empowering and accessible.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d10fe36ccbac2110",
+      "title": "IFA COUNTRY STORE - TREMONTON - Updated September 2026 - Yelp",
+      "url": "https://www.yelp.com/biz/ifa-country-store-tremonton-tremonton",
+      "summary": "IFA Country Store in Tremonton offers a variety of products and services for agricultural and outdoor needs, including animal feed, gardening supplies, and more.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "22e0e5f969ee2a6e",
+      "title": "Live News Stream: Watch FOX 2 Detroit",
+      "url": "https://www.fox2detroit.com/live",
+      "summary": "Stream local news and weather live from FOX 2 Detroit. Plus watch LiveNow, FOX SOUL, and more exclusive coverage from around the country.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "863e23f0b630c25b",
+      "title": "Local News - FOX 2 Detroit",
+      "url": "https://www.fox2detroit.com/local-news",
+      "summary": "Local News on FOX 2 Detroit Detroit man charged with murder after deadly dispute over how to cook chicken in Hazel Park",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "652a3d3f160ce984",
+      "title": "Mastria Volkswagen in Raynham | Massachusetts VW Dealership",
+      "url": "https://www.mastriavw.com/",
+      "summary": "Visit our Volkswagen dealership in Raynham, MA, for all your new VW and used car sales. Apply for auto financing or enjoy professional VW service nearby.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5faff2a223085dc",
+      "title": "Meet the Team - FOX 2 Detroit",
+      "url": "https://www.fox2detroit.com/team",
+      "summary": "Meet the personalities and team members of FOX 2 Detroit, including anchors, reporters, and contributors.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c4d1a5fcc6c943e5",
+      "title": "News - FOX 2 Detroit",
+      "url": "https://www.fox2detroit.com/news",
+      "summary": "Local and breaking news reports from the Detroit metro area in southeast Michigan.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c8eeb34b9d5cbf1e",
+      "title": "Online Quizzes: Take Online Quiz - ProProfs",
+      "url": "https://www.proprofs.com/quiz-school/browse",
+      "summary": "Find Quizzes for Your Learning Goals Browse and take quizzes across topics people come back to again and again: Education & Learning - quizzes designed for students, teachers, and classrooms Trivia & General Knowledge - history, science, space, animals, and more Pop Culture - movies, music, quiz games, superheroes, and cartoons Personality & Self-Discovery - fun quizzes to compare and share ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d2289e1c6f749dc7",
+      "title": "Psychosocial Assessment | Worksheet | Therapist Aid",
+      "url": "https://www.therapistaid.com/therapy-worksheet/psychosocial-assessment",
+      "summary": "Our Psychosocial Assessment provides an outline for gathering a wide range of information about your client. The assessment includes broad categories to explore, along with reminders for important information.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "58f360d5b24206a7",
+      "title": "Psychosocial Rehabilitation: Benefits and Objectives",
+      "url": "https://www.verywellmind.com/psychosocial-rehabilitation-4589796",
+      "summary": "Psychosocial rehabilitation helps people with mental illness build skills to live and work independently. The approach focuses on empowering individuals and helping them feel hopeful about their future. Treatment is tailored to each person, focusing on strengths and potential, not just symptoms.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d1c8a3ef2388e50",
+      "title": "Psychosocial Therapy: Holistic Mental Health Treatment Explained",
+      "url": "https://neurolaunch.com/psychosocial-therapy/",
+      "summary": "A psychosocial therapist combines individual psychological work with systemic assessment. Sessions typically involve identifying unhelpful thought patterns and coping behaviors, exploring how relationships and life circumstances maintain problems, and collaboratively developing practical strategies.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "031581ab6067e561",
+      "title": "Psychosocial Therapy: Its Types, Examples and Why Is It Used?",
+      "url": "https://www.calmsage.com/psychosocial-therapy/",
+      "summary": "Psychosocial therapists must get to know their patient’s personal and professional life so that they can help them perform better in a social setting. Once the therapist knows their patients well, they come up with potentially successful treatment plans.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "54b8d94e85a4b1a2",
+      "title": "Psychosocial Therapy: What It Is, Types, and Examples - MEDvidi",
+      "url": "https://medvidi.com/blog/psychosocial-therapy",
+      "summary": "Psychosocial therapy offers support and practical tools for those facing social or emotional challenges. Explore its benefits and types here.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "05808b7c6dc972dc",
+      "title": "Psychosocial Treatments - NAMI",
+      "url": "https://www.nami.org/treatments-and-approaches/psychosocial-treatments/",
+      "summary": "Psychosocial treatments include different types of psychotherapy and social and vocational training, and aim to provide support, education and guidance to people with mental illness and their families.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d607be8f290e1c56",
+      "title": "Psychotherapy: Definition, Types, Techniques, & Efficacy",
+      "url": "https://www.simplypsychology.org/psychotherapy.html",
+      "summary": "Psychotherapy, often called talk therapy or simply therapy, involves using verbal and psychological techniques to treat emotional distress and mental health conditions. It is delivered by trained professionals, such as psychologists, psychotherapists, counselors, psychiatrists, or social workers.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "25f6950c53fe337f",
+      "title": "Quirk Volkswagen | Dealership in Braintree, MA | View New VW ...",
+      "url": "https://www.quirkvw.com/",
+      "summary": "At Quirk Volkswagen MA, we have all the VW models that you are looking for including the adventurous Atlas and Tiguan, along with the sporty Jetta, Arteon, and Passat.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bba447a5008ac904",
+      "title": "Senate debate: Mike Rogers declined, Abdul El-Sayed confirmed",
+      "url": "https://www.fox2detroit.com/news/mike-rogers-abdul-el-sayed-debate-detroit-senate",
+      "summary": "The Brief FOX 2’s \"The Pulse\" hosted the U.S. Senate debate on Tuesday, Sept. 15. Democratic nominee Abdul El-Sayed committed to the event, while Republican Mike Rogers and his campaign declined ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed4f80ad042726a7",
+      "title": "Tremonton IFA Country Store | Tremonton UT - Facebook",
+      "url": "https://www.facebook.com/TremontonIFA/",
+      "summary": "Tremonton IFA Country Store, Tremonton. 1,972 followers · 13 talking about this · 49 were here. Helping to grow the things you love. A locally owned farmer's cooperative since 1923.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca1991c99cac0c76",
+      "title": "Volkswagen Dealer Boston, MA | Volkswagen Dealership Boston",
+      "url": "https://www.vwmedford.com/volkswagen-dealer-boston/",
+      "summary": "Colonial Volkswagen of Medford near Boston, MA is your local Volkswagen dealer. Shop our Volkswagen dealership for a new Volkswagen. Find used Volkswagen cars and SUVs for sale or get Volkswagen service Boston, MA.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "118ace807fba98dc",
+      "title": "Volkswagen Dealer Medford MA New & Used Cars for Sale near ...",
+      "url": "https://www.vwmedford.com/",
+      "summary": "Colonial Volkswagen of Medford in Medford, MA offers new and used Volkswagen cars, trucks, and SUVs to our customers near Boston. Visit us for sales, financing, service, and parts!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3448b5022196027c",
+      "title": "Volkswagen Dealer near Boston, MA",
+      "url": "https://www.bostonvw.com/cc-volkswagen-dealer-near-boston-ma/",
+      "summary": "Volkswagen Dealer near Boston, MA If you are looking for a new-to-you vehicle to take you around Boston, then you are in luck! We at Boston Volkswagen have a plethora of cars in stock for you, so read on to see how you can benefit from shopping at our location. Inventory",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36ff4d414f09f3ad",
+      "title": "Volkswagen Dealer Watertown MA New & Used Cars for Sale near ...",
+      "url": "https://www.bostonvw.com/",
+      "summary": "Boston Volkswagen in Watertown, MA offers new and used Volkswagen cars, trucks, and SUVs to our customers near Boston. Visit us for sales, financing, service, and parts!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7e6bb12b658b74c4",
+      "title": "Weather - FOX 2 Detroit",
+      "url": "https://www.fox2detroit.com/weather",
+      "summary": "The Weatherboys Podcast: Foodie Carlos Parisi Live FOX Weather Download the FOX 2 Weather App!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    }
+  ]
+}
