@@ -2,6 +2,14 @@
 
 Older published GlassesResearch research and ecosystem developments live here. For the newest reviewed changes, return to [Research & News](../RESEARCH_NEWS.md).
 
+## September 23, 2026 — State of the State: Smart glasses are no longer becoming one thing
+
+The category is separating into distinct tools and ownership models rather than converging on one universal device. The editorial connects specialization, camera/no-camera architecture, open development platforms, hardware lineage, and owner control without collapsing those evidence lanes into one score.
+
+Canonical coverage: [State of the State: Smart glasses are no longer becoming one thing](articles/2026-09-23-state-of-the-state-smart-glasses-are-no-longer-becoming-one-thing.md)
+
+---
+
 ## September 19, 2026 — You bought the glasses. Can you repair them?
 
 A Colorado right-to-repair lawsuit involving Ray-Ban Meta smart glasses raises a broader ownership question: a device can be physically repairable while remaining functionally unrepairable if parts, documentation, firmware, diagnostics, calibration or commissioning tools remain inaccessible.

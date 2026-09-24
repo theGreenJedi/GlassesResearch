@@ -99,8 +99,7 @@
   const wireList = wire.querySelector("[data-newsroom-wire]");
 
   const renderStoryCard = (story) => {
-    const age = relativeAge(story.published_at);
-    const when = [displayDate(story.published_at), age].filter(Boolean).join(" · ");
+    const when = displayDate(story.published_at);
     return `<article class="gr-newsroom-card"><div class="gr-newsroom-date">${escapeHtml(when)}</div><div class="gr-newsroom-card-copy"><strong>${escapeHtml(story.title)}</strong><p>${escapeHtml(story.summary)}</p></div><div class="gr-newsroom-card-links"><a href="${escapeHtml(story.url)}">Read the research →</a></div></article>`;
   };
   const wireStatusLabel = (status) => status === "under_review" ? "Under review" : "Reported";
@@ -118,21 +117,27 @@
       if (freshness) {
         const latestAt = new Date(state.latest_verified_at);
         const ageHours = Number.isNaN(latestAt.getTime()) ? null : Math.max(0, (Date.now() - latestAt.getTime()) / 36e5);
-        const age = ageHours === null ? "" : ageHours < 48 ? ` · ${Math.floor(ageHours)}h ago` : ` · ${Math.floor(ageHours / 24)}d ago`;
-        freshness.textContent = `Latest verified ${displayDate(state.latest_verified_at)}${age}`;
+        freshness.textContent = `Latest verified ${displayDate(state.latest_verified_at)}`;
         if (ageHours !== null && ageHours > 48) freshness.classList.add("is-stale");
       }
       const leadUrl = new URL(state.lead.url, window.location.origin);
       const editorialPin = state.lead.lead_mode === "editorial_pin";
+      const firstPartyEditorial = state.lead.lead_mode === "first_party_editorial";
       const externalEditorialLead = editorialPin && leadUrl.origin !== window.location.origin;
       const leadPublisher = state.lead.publisher || state.lead.source_label || state.lead.source || "original publisher";
-      const leadCta = externalEditorialLead ? `Read the original at ${escapeHtml(leadPublisher)} →` : "Read the story →";
+      const leadCta = externalEditorialLead
+        ? `Read the original at ${escapeHtml(leadPublisher)} →`
+        : firstPartyEditorial
+          ? "Read the editorial →"
+          : "Read the story →";
       const leadRel = externalEditorialLead ? ' target="_blank" rel="noopener"' : "";
-      const leadType = editorialPin
-        ? (state.lead.source_label === "GlassesResearch" ? "GlassesResearch editorial" : "Editorial pick")
-        : state.lead.change_type.replaceAll("_", " ");
+      const leadType = firstPartyEditorial
+        ? "GlassesResearch editorial"
+        : editorialPin
+          ? (state.lead.source_label === "GlassesResearch" ? "GlassesResearch editorial" : "Editorial pick")
+          : state.lead.change_type.replaceAll("_", " ");
       lead.hidden = false;
-      lead.innerHTML = `<div class="gr-newsroom-kicker">Featured</div><a class="gr-newsroom-lead-card" href="${escapeHtml(state.lead.url)}"${leadRel}><span class="gr-newsroom-date">${escapeHtml(displayDate(state.lead.published_at))} · ${escapeHtml(relativeAge(state.lead.published_at))} · ${escapeHtml(leadType)}</span><strong>${escapeHtml(state.lead.title)}</strong><span>${escapeHtml(state.lead.summary)}</span><em>${leadCta}</em></a>`;
+      lead.innerHTML = `<div class="gr-newsroom-kicker">Featured</div><a class="gr-newsroom-lead-card" href="${escapeHtml(state.lead.url)}"${leadRel}><span class="gr-newsroom-date">${escapeHtml(displayDate(state.lead.published_at))} · ${escapeHtml(leadType)}</span><strong>${escapeHtml(state.lead.title)}</strong><span>${escapeHtml(state.lead.summary)}</span><em>${leadCta}</em></a>`;
       if (latestGrid) latestGrid.innerHTML = state.latest.slice(0, 3).map(renderStoryCard).join("");
       latestHeading?.classList.add("gr-newsroom-enhanced-hide"); latestTable?.classList.add("gr-newsroom-enhanced-hide");
       if (Array.isArray(state.convergence) && state.convergence.length) {

@@ -5,6 +5,7 @@ description: "State of the State: smart glasses are no longer converging on one 
 # State of the State: Smart glasses are no longer becoming one thing
 
 **Published:** September 23, 2026  
+**Type:** GlassesResearch editorial / state of the market  
 
 For years, smart glasses were discussed as though the category were moving toward a single destination: ordinary-looking eyewear with a display, cameras, audio, an assistant, and enough compute to replace pieces of the phone.
 

@@ -193,6 +193,14 @@ def inject_homepage(site_root: Path, events: list[dict[str, Any]]) -> list[str]:
     wire_start = text.find(wire_marker, start)
     if wire_start < 0:
         raise RuntimeError("Homepage Across the Wire section is missing")
+
+    # Preserve the curated/newsroom lead exactly as authored in the homepage source.
+    # The GRE builder owns the Verified column, not the editorial lead. Keeping those
+    # surfaces separate prevents first-party synthesis from being mislabeled as a
+    # verified-change event and prevents the build from silently hiding current editorials.
+    curated_block = text[start:wire_start].rstrip()
+    if 'data-homepage-newsroom-lead' not in curated_block:
+        raise RuntimeError("Homepage curated newsroom lead is missing its state hook")
     wire_end = text.find("</section>", wire_start)
     if wire_end < 0:
         raise RuntimeError("Homepage Across the Wire section is malformed")
@@ -223,7 +231,7 @@ def inject_homepage(site_root: Path, events: list[dict[str, Any]]) -> list[str]:
         + homepage_latest_section(events)
         + "\n</div>"
     )
-    replacement = paired_news + "\n\n" + homepage_follow_panel()
+    replacement = curated_block + "\n\n" + paired_news + "\n\n" + homepage_follow_panel()
     path.write_text(text[:start] + replacement + text[script_end:], encoding="utf-8")
     return [event["id"] for event in latest]
 

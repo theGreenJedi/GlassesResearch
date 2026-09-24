@@ -192,7 +192,7 @@ def main() -> None:
                 errors.append(f"{html_path}: question collection is missing FAQPage structured data")
         if relative.startswith("docs/news/articles/"):
             if "Article" not in types:
-                errors.append(f"{html_path}: verified research article is missing Article structured data")
+                errors.append(f"{html_path}: public news/research article is missing Article structured data")
 
     duplicates = {description: paths for description, paths in descriptions.items() if len(paths) > 1}
     for description, paths in list(duplicates.items())[:10]:
