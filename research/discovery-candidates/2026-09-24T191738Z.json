@@ -1,43 +1,40 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-24T19:18:58.395041+00:00",
-  "candidate_count": 63,
-  "classifier_irrelevant_count": 50,
+  "discovered_utc": "2026-09-24T16:44:19.754009+00:00",
+  "candidate_count": 60,
+  "classifier_irrelevant_count": 49,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 13,
+    "adjacent": 11,
     "broad_web": 38,
-    "community": 1,
-    "developer": 12,
-    "research": 1,
-    "retail": 1
+    "developer": 11,
+    "research": 1
   },
   "relationship_counts": {
     "direct": 0,
-    "enabling": 2,
+    "enabling": 0,
     "adjacent": 11,
     "speculative": 0,
-    "irrelevant": 50
+    "irrelevant": 49
   },
   "type_counts": {
-    "model": 3,
-    "review": 5,
-    "video": 1,
-    "news": 35,
-    "research": 1,
-    "tool": 14,
-    "sdk": 13,
-    "optics": 2,
+    "review": 1,
+    "news": 29,
+    "research": 2,
+    "tool": 13,
+    "sdk": 11,
     "policy": 1,
-    "retail": 5,
-    "community": 1,
-    "rumor": 1
+    "retail": 2,
+    "teardown": 1,
+    "community": 15
   },
   "routing_counts": {
     "adjacent_radar": 11,
-    "reject_noise": 50,
-    "research_news_review": 13,
-    "research_optics": 2
+    "community_evidence_review": 2,
+    "policy_privacy": 1,
+    "reject_noise": 49,
+    "report_card_evidence": 1,
+    "research_news_review": 11
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -51,81 +48,28 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "c0eea46b34cc1c87",
-      "title": "Prescription Drugs and Over-the-Counter (OTC) Drugs: Q & A",
-      "url": "https://www.fda.gov/drugs/frequently-asked-questions-popular-topics/prescription-drugs-and-over-counter-otc-drugs-questions-and-answers",
-      "summary": "What’s the difference: Prescription drugs versus over-the-counter (OTC) drugs? A drug is a substance intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease ...",
-      "discovery_channel": "adjacent+broad_web+research",
-      "query": "prescription smart glasses; prescription smart glasses lens research; prescription lens technology eyewear",
+      "id": "77113ee9517213de",
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/mail",
+      "summary": "Can’t access your account? Terms of use Privacy & cookies ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "prescription"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "enabling",
-      "content_types": [
-        "optics"
-      ],
-      "primary_type": "optics",
-      "routing_targets": [
-        "research_news_review",
-        "research_optics"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "enabling technology signals: prescription",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d8eef79ac3ccfc1f",
-      "title": "Pro Photo - Pro Photo",
-      "url": "https://www.prophotodc.com/",
-      "summary": "Explore top-brand cameras, premium lenses, passport photo services, and professional gear repairs at Pro Photo.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "adjacent_hci",
       "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "enabling",
-      "content_types": [
-        "optics"
+      "keyword_hits": [
+        "privacy"
       ],
-      "primary_type": "optics",
-      "routing_targets": [
-        "research_news_review",
-        "research_optics"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": true,
-      "publication_gate_reason": "enabling technology signals: lenses",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a3a87b851610f69f",
-      "title": "Accueil impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/accueil",
-      "summary": "Incendies : mesures d'accompagnement des sinistrés et dons aux collectivités publiques Suite aux incendies survenus sur le territoire durant l'été, différentes mesures d'accompagnement ont été mises en place pour les particuliers et les entreprises. Par ailleurs, l'élan de générosité de la population peut prendre la forme de dons aux collectivités pour les aider dans leurs actions ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "policy"
       ],
-      "primary_type": "news",
+      "primary_type": "policy",
       "routing_targets": [
         "research_news_review",
+        "policy_privacy",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -134,297 +78,299 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7d6709609b5efc20",
-      "title": "Avis d'impôt sur les revenus - impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/particulier/avis-dimpot-sur-le-revenu",
-      "summary": "Votre avis d'impôt sur les revenus vous permet de justifier des revenus que vous avez déclarés à l'administration fiscale. Cet avis est accessible dans votre espace Finances publiques.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fa1714f83fa1d744",
-      "title": "Buffalo, New York - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Buffalo,_New_York",
-      "summary": "Buffalo is the county seat of Erie County. Before the 17th century, the region was inhabited by nomadic Paleo-Indians who were succeeded by the Neutral, Erie, and Iroquois nations. In the early 17th century, the French began to explore the region.",
+      "id": "ba09ba3ac454ff20",
+      "title": "TOP 10 BEST Things to Do in French Valley, CA - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=things+to+do&find_loc=French+Valley%2C+CA",
+      "summary": "This is a review for things to do in French Valley, CA: \"Worth the drive to visit my friend and check out this salt cave as they had an open house special to try a sampling for $30 for services they offer.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e246ce3a9f67226d",
-      "title": "Connexion à l'espace professionnel | impots.gouv.fr",
-      "url": "https://cfspro.impots.gouv.fr/",
-      "summary": "Pour prouver que vous n'êtes pas un robot, veuillez recopier les caractères restitués dans l'extrait sonore alternatif à l'image suivante.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1d423bcbca47b526",
-      "title": "Créer et accéder à mon espace - impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/particulier/acceder-mon-espace",
-      "summary": "Le site impots.gouv.fr vous propose des accès simplifiés pour vous connecter à votre espace Finances publiques avec vos identifiants impots.gouv.fr ou via l’icône FranceConnect.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f8d19c05e1bb01df",
-      "title": "Déclarer mes revenus | impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/particulier/declarer-mes-revenus",
-      "summary": "les questions - réponses : Quelle est la date limite de dépôt de ma déclaration de revenus ? Puis-je déclarer en ligne pour ma première déclaration de revenus ? Comment puis-je me procurer les formulaires pour déclarer mes revenus la première fois et où les déposer? C'est ma première déclaration, que dois-je déclarer ? Je veux corriger la déclaration que j'ai déjà déposée ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0700522778a595e",
-      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
-      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
-      "summary": "Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez accéder à vos différents avis et déclarations, déclarer vos revenus, payer vos impôts, gérer votre prélèvement à la source, gérer vos paiements, effectuer des démarches ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1fc8ee4692295b55",
-      "title": "Particulier - impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/particulier",
-      "summary": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez jusqu'au 30 septembre inclus pour vérifiez votre éligibilité afin de pouvoir faire votre demande. Commencer la démarche Besoin d'aide ? Consultez notre foire aux questions et le pas-à-pas pour faire votre demande (PDF). Attention aux arnaques : à l ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e6a8de51598769bd",
-      "title": "Particuliers | authentification",
-      "url": "https://cfspart.impots.gouv.fr/",
-      "summary": "Les services disponibles Avec vos identifiants impots.gouv.fr, vous pouvez effectuer des démarches administratives sur des sites partenaires de FranceConnect. Le logo FranceConnect figure sur l'espace d'authentification de ces sites. Un accès unique et personnel L'identification sur un site proposant le bouton FranceConnect est strictement personnelle. Chaque membre d'un foyer fiscal ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ddb2173f19066bc",
-      "title": "Payer mes impôts, taxes, amendes... - impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/particulier/payer-mes-impots-taxes",
-      "summary": "Gérer mon prélèvement à la source, utiliser les services en ligne... Déclarer mes revenus Payer mes impôts, taxes, amendes... Signaler mes changements de situation Gérer mon patrimoine/mon logement Prévenir et résoudre mes difficultés ; corriger mes erreurs Effectuer une démarche concernant une succession vacante",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5820e7f04baf2f5f",
-      "title": "Your personal account - impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/international-particulier/your-personal-account",
-      "summary": "The impots.gouv.fr website provides two simple ways for you to log in to your personal account : using your impots.gouv.fr log-in details or by clicking on the FranceConnect icon. Using your impots.gouv.fr log-in details Why do I need to log in? Your personal account contains private data. It's normal that it should be protected. Your online personal account is specific to you. Thus, every ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "16afc5f5f72a5627",
-      "title": "CPT Code 96366 - Description and Fee Schedule 2026 | PayerPrice",
-      "url": "https://payerprice.com/rates/96366-CPT-fee-schedule",
-      "summary": "Review description and fee schedules for CPT Code 96366, intended for Medicine Services and Procedures, and compare rates across different payers.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
+      "materiality_score": 2,
       "keyword_hits": [
         "review"
       ],
       "status": "candidate",
       "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9d01a2ce37928f74",
+      "title": "Chat GPT Exploits : r/ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/zeva2r/chat_gpt_exploits/",
+      "summary": "Chat GPT Exploits This post serves to be the exploit thread and guide of Chat GPT. Comment down below exploits you've used, once verified, it will be added on here with your username credited. (I can't seem to find where the followings came from. Dm me to be credited.) To make it continue writing: Continue/Continue Code. [Still works]",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "62b77fcc6a2a5e33",
+      "title": "GPT Zero is not accurate at all : r/ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1155shx/gpt_zero_is_not_accurate_at_all/",
+      "summary": "GPT Zero is a joke. I was testing its accuracy after it flagged one of my assignments as written by AI when I wrote the majority of it myself without the use of ChatGPT.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e9036c289f75fc8a",
+      "title": "How to determine if an email from Microsoft support is genuine",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/azure/general/email-domains-support-agent",
+      "summary": "Explains how to determine if an email claiming to be from Microsoft support is genuine or a phishing scam.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b2d66185d19d7e3",
+      "title": "Is abc@microsoft.com a Real Microsoft Email? | SafeBrowz",
+      "url": "https://safebrowz.com/blog/is-abc-microsoft-com-email-real-2026",
+      "summary": "Verdict: not an address Microsoft writes to you from abc@microsoft.com is not a mailbox Microsoft uses to contact customers, and no official Microsoft page lists it; it circulates in spam footers and on junk pages that copy them.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f0a954015d3360ae",
+      "title": "Is this email real or a scam? - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/4673990/is-this-email-real-or-a-scam",
+      "summary": "Do not click on any links or download any attachments from the email if you suspect it to be phishing. It could potentially be a phishing attempt or contain malware.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "68a43d268d036d6a",
+      "title": "Microsoft “Important Mail” email is a scam: How to spot it",
+      "url": "https://cyberguy.com/scams/microsoft-important-mail-email-scam-spot-it/",
+      "summary": "A fake Microsoft “Important Mail” email is spreading fast. Learn the red flags, what happens if you click and how to protect yourself now.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2258fd4fa1bd19b1",
+      "title": "Outlook - Use the OWA login for email - Microsoft Office",
+      "url": "https://www.microsoft.com/en/microsoft-365/outlook/web-email-login-for-outlook",
+      "summary": "With your Outlook login and Outlook on the web (OWA), you can send email, check your calendar and more from – all your go-to devices.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "269cab9e4b38439a",
+      "title": "The Microsoft Account Team Email Scam: What You Need to Know to Stay ...",
+      "url": "https://www.uctoday.com/unified-communications/the-microsoft-account-team-email-scam-what-you-need-to-know",
+      "summary": "Essentially, these deceptive messages mimic official Microsoft communications. They often incorporate convincing elements like official logos or carefully crafted email addresses designed to appear legitimate.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "391499184a3d6936",
+      "title": "What Does 'abc@microsoft.com' Mean — Is It a Real Micr...",
+      "url": "https://factually.co/fact-checks/technology/microsoft-email-address-abc-microsoft-com-2711a0",
+      "summary": "The string \"abc@microsoft.com\" most commonly appears in public reporting and forums as an example or placeholder email address — notably in crossword-solver results and technical-help threads — rather than as a documented, authoritative Microsoft support address [1] [2] [3].",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "afaeabda99d1eb0a",
+      "title": "10 Genius Home Upgrades That Instantly Boost- New House Project",
+      "url": "https://newhouseproject.com/home-maintenance/home-upgrades-boost-property-value/",
+      "summary": "Boost your property’s worth with 10 genius home upgrades. From smart fixes to stylish updates, discover simple ways to add instant value .",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "review",
         "tool",
         "sdk"
       ],
-      "primary_type": "review",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -434,27 +380,24 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e286f493c0b72404",
-      "title": "Medically unlikely edits (MUE) - Novitas Solutions",
-      "url": "https://www.novitas-solutions.com/webcenter/portal/MedicareJH/pagebyid?contentId=00088725",
-      "summary": "An MUE for a HCPCS / CPT code is the maximum units of service that a provider would report under most circumstances for a single beneficiary on a single date of service. MUE values are not utilization guidelines. They do not represent units of service reported without concern about medical review.",
+      "id": "4369fba7ab59ecaa",
+      "title": "10 Must-Have Home Upgrades That Are Actually Worth It",
+      "url": "https://www.bhg.com/home-improvement/advice/expert-advice/must-have-home-upgrades/",
+      "summary": "Whether you recently purchased a new house or you're planning a long-dreamt-of remodel, you can feel good about investing in your home, and ultimately your quality of life, with these expert-approved upgrades.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "review"
-      ],
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "review",
         "tool",
         "sdk"
       ],
-      "primary_type": "review",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -464,10 +407,147 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f8abc86dc89ab8d0",
-      "title": "1News",
-      "url": "https://www.1news.co.nz/",
-      "summary": "MetService said a series of fronts was expected to bring unsettled weather over the coming days, before a stronger system arrived on Sunday. Serene Peters, alongside three of her sons and an associate, allegedly obtained credit and properties by making false claims on home loan applications.",
+      "id": "39821a9e813c1e94",
+      "title": "10 Must-Have Home Upgrades That Are Actually Worth It",
+      "url": "https://storables.com/articles/10-must-have-home-upgrades-that-are-actually-worth-it/",
+      "summary": "Discover the top 10 home upgrades that are truly worth the investment. From stunning renovations to practical enhancements, these articles will guide you towards creating your dream home.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8360cc88bb7613e9",
+      "title": "15 Low-Cost Home Updates That Look Expensive - Better Homes & Gardens",
+      "url": "https://www.bhg.com/home-improvement/remodeling/budget-remodels/make-your-home-look-expensive/",
+      "summary": "Give your home a fresh, upscale look without embarking on an extensive and costly remodel with a few quick, affordable upgrades that will make your home feel more updated, custom, and more expensive.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d7eaf1c6f90ccf60",
+      "title": "20 Cheap Home Upgrades That Make a Huge Difference",
+      "url": "https://www.homeaswemakeit.com/20-cheap-home-upgrades-that-make-a-huge-difference/",
+      "summary": "Creating a refreshed, more functional home doesn’t require emptying your savings account or taking out a second mortgage. Here is a list of 20 budget-friendly home upgrades that deliver impressive results without breaking the bank.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a4bd8d6af62df531",
+      "title": "[OC] How Wikipedia classifies its most commonly referenced ... - Reddit",
+      "url": "https://www.reddit.com/r/dataisbeautiful/comments/srpv7d/oc_how_wikipedia_classifies_its_most_commonly/",
+      "summary": "Wikipedia is an aggregate for information, not a source. If you're using Wikipedia for research, you've always got to check Wikipedia's sources and cite them where appropriate. It's not that Wikipedia is inaccurate as a rule, but that it's an extremely big site and things like vandalism, editorialization, or misinformation can fly under the radar.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d273c44f7e9b4c5d",
+      "title": "Best Home Upgrades (2026): ROI, Smart, Efficiency & Resale",
+      "url": "https://goodlifeinspections.com/blog/best-home-upgrade-ideas/",
+      "summary": "Looking for the best home upgrades that save money now and help your home sell for more later? This guide shows you the top ROI projects, the best smart home upgrades, and the best home efficiency upgrades —plus inexpensive and home-office ideas that make daily life better.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9d1453056e56d116",
+      "title": "Dealing with an odd number of managers in a Yahoo league",
+      "url": "https://www.reddit.com/r/fantasyfootball/comments/z4vgq/dealing_with_an_odd_number_of_managers_in_a_yahoo/",
+      "summary": "Yahoo will autodraft you a backup kicker and a backup tight end (it always drafts backups for every position). Then, just set the lineup every week going by Yahoo's rankings. I advise against trying to go the bye week route. First of all, it's impossible on Yahoo. It literally won't allow you to hold the draft unless you have an even number of ...",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -480,7 +560,7 @@
       "content_types": [
         "tool",
         "sdk",
-        "rumor"
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -492,12 +572,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "495790b8ec86167a",
-      "title": "AR Reading Level Explained: What It Means & Full Chart (2026)",
-      "url": "https://brighterly.com/blog/ar-reading-level/",
-      "summary": "Confused by your child’s AR reading level? This guide breaks down what the number means, how it’s calculated, and includes a full AR-to-grade chart for 2026",
-      "discovery_channel": "developer",
-      "query": "AR glasses SDK developer",
+      "id": "545b88f091876439",
+      "title": "Home - Project Online",
+      "url": "https://project-online.com/",
+      "summary": "Many organizations choose OnePlan as their replacement because it delivers the full project, portfolio, resource, and financial management capabilities that Project Online users rely on, all within a modern Microsoft 365–aligned platform.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -519,37 +599,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bdf519ba385bcee7",
-      "title": "CPT 96360, 96361: Hydration Billing Guide & Rules (2026)",
-      "url": "https://carecostestimate.com/billing/cpt/96360-96361",
-      "summary": "96360 and 96361 allowed amounts vary by contract and locality; the page’s Venofer 200 mg example under Aetna, Anthem/BCBS, Cigna, UnitedHealthcare, Medicare and Medicaid is in CareCost Estimate’s demo: 200 mg estimate. 96360 and 96361 per-day MUEs are in the MUE lookup; the 96365/96360 and 96360/96413 edits, on pair pages.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3715433611be11c",
-      "title": "CPT 96365, 96366: Description, Units & Billing Guide (2026)",
-      "url": "https://carecostestimate.com/billing/cpt/96365-96366",
-      "summary": "96365 reports the first 16 to 90 minutes of an IV infusion of a therapeutic, prophylactic, or diagnostic drug or substance — the non-chemo half of the infusion coding world. 96366 is the “each additional hour” add-on that bills, in units, every hour beyond the first when the time exceeds 30 minutes.",
+      "id": "ac13eb69d0cc7b90",
+      "title": "The Home Depot",
+      "url": "https://www.homedepot.com/",
+      "summary": "Shop online for all your home improvement needs: appliances, bathroom decorating ideas, kitchen remodeling, patio furniture, power tools, bbq grills, carpeting, lumber, concrete, lighting, ceiling fans and more at The Home Depot.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -573,10 +626,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f355449de8ac9a1b",
-      "title": "CPT 96366: Ther/proph/diag iv inf addon, 2026 Fee & RVUs",
-      "url": "https://www.gomedicalbilling.com/codes/cpt/96366",
-      "summary": "CPT 96366 is a Current Procedural Terminology code in the Infusion/Chemotherapy category maintained by the American Medical Association. The CMS short descriptor reads \"Ther/proph/diag iv inf addon\".",
+      "id": "68e73f74e07785c7",
+      "title": "Top 10 Renovations to Increase Home Value in 2026 - HomeLight",
+      "url": "https://www.homelight.com/blog/which-renovations-increase-home-value/",
+      "summary": "Discover which renovations increase home value the most. These smart upgrades attract top buyers and pay off big.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -600,10 +653,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1b9cb14b16cf7c98",
-      "title": "CPT® Code 96366 - Coding Ahead",
-      "url": "https://www.codingahead.com/cpt/codes/96366",
-      "summary": "Code definition: Add-on code for each additional hour of intravenous infusion of the same drug or substance beyond the initial hour billed under 96365, used for therapeutic, prophylactic, or diagnostic infusions.",
+      "id": "b20ec3a53fec8919",
+      "title": "What Upgrades Increase Home Value? 25 High-ROI Improvements",
+      "url": "https://www.homelight.com/blog/what-upgrades-increase-home-value/",
+      "summary": "Flex rooms and outdoor spaces, for example, are now extremely coveted features. Our newest list of home improvements that add value takes these recent trends into account and incorporates specific product suggestions, updated for 2026.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -627,208 +680,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6f344b8b54b384a5",
-      "title": "How can I see hidden app data in Google Drive? - Stack Overflow",
-      "url": "https://stackoverflow.com/questions/22832104/how-can-i-see-hidden-app-data-in-google-drive",
-      "summary": "Indeed, Google does not let you access this hidden app-data folder directly. But, if you can get your hands on the app's client ID/client secret/digital signature that is used for authentication against Google's servers - then yes, you can basically emulate the app and access the hidden data in your Google Drive using the Drive API.",
+      "id": "2148bde1338daf89",
+      "title": "Add google translate to my google site",
+      "url": "https://support.google.com/sites/thread/190779094/add-google-translate-to-my-google-site?hl=en",
+      "summary": "I want add multiple language to my google site (English, Arabic, chines, etc) as drop dawn menu",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "api"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b80c86115404f3b5",
-      "title": "Is Titanium Toxic to Humans? A Look at the Evidence",
-      "url": "https://biologyinsights.com/is-titanium-toxic-to-humans-a-look-at-the-evidence/",
-      "summary": "A growing body of research shows that titanium particles and ions, once liberated from their source, can trigger inflammation, provoke immune reactions, and cause DNA damage in laboratory settings. The question is not simply whether titanium is toxic but under what circumstances it becomes so.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7bb54be531f9d919",
-      "title": "Medically Unlikely Edits (MUE) Policy, Professional and Facility ...",
-      "url": "https://www.uhcprovider.com/content/dam/provider/docs/public/policies/medadv-reimbursement/MEDADV-Medically-Unlikely-Edits-Policy.pdf",
-      "summary": "An MUE for a HCPCS/CPT code is the maximum units of service that a provider would report under most circumstances for a single beneficiary on a single date of service. The first edits were implemented January 1, 2007 and even today not all HCPCS/CPT codes have an MUE.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "policy"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3a916d2bbc3ab04a",
-      "title": "Medicare NCCI Medically Unlikely Edits | CMS",
-      "url": "https://www.cms.gov/medicare/coding-billing/national-correct-coding-initiative-ncci-edits/medicare-ncci-medically-unlikely-edits-mues",
-      "summary": "An MUE is the maximum units of service (UOS) reported for a HCPCS/CPT code on the vast majority of appropriately reported claims by the same provider/supplier for the same beneficiary on the same date of service.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a6f0c197efc1367c",
-      "title": "MUE Lookup - CGS Medicare",
-      "url": "https://www.cgsmedicare.com/medicare_dynamic/j15/partb/mue/mue_tool.aspx",
-      "summary": "A Medically Unlikely Edit (MUE) value assigned to a CPT/HCPCS code indicates the maximum units of service (UOS) for a single beneficiary on a single date of service (on most appropriately reported claims). Use this tool to determine the MUE value for a CPT/HCPCS code.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9cefbf014c5b68a4",
-      "title": "Palmetto GBA - Medically Unlikely Edits Lookup Tool",
-      "url": "https://palmettogba.com/jjb/admin/tools/mue",
-      "summary": "An MUE for a HCPCS/CPT code is the maximum units of service (UOS) that a provider would report under most circumstances for a single beneficiary on a single date of service.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3c733277a017e0b",
-      "title": "Welcome to My Activity",
-      "url": "https://myactivity.google.com/",
-      "summary": "Data helps make Google services more useful for you. Sign in to review and manage your activity, including things you’ve searched for, websites you’ve visited, and videos you’ve watched.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4a5e2f0d1f718b4e",
-      "title": "2026 Podcast Advertising Guide: Effectiveness, Statistics & More",
-      "url": "https://www.adresultsmedia.com/news-insights/is-podcast-advertising-effective/",
-      "summary": "When evaluating the effectiveness of podcast advertising in 2026, audience behavior and adoption remain foundational to understanding podcast ad impact. According to The Infinite Dial 2025, podcast consumption in the United States has reached all-time highs across multiple measures.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -849,36 +706,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0f3d4f2e575ca268",
-      "title": "38 Podcast Advertising Stats Every Marketer Should Know in 2025",
-      "url": "https://www.marketingscoop.com/marketing/38-podcast-advertising-stats-every-marketer-should-know-in-2024/",
-      "summary": "In this post, we‘ve compiled the most essential podcast advertising statistics for 2025, along with expert insights and actionable tips to help you optimize your strategy.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "22b4f77209c4b67f",
-      "title": "All Volkswagen Dealers in Palm Bay, FL 32907 - Autotrader",
-      "url": "https://www.autotrader.com/car-dealers/volkswagen/palm-bay-fl",
-      "summary": "Find Palm Bay Volkswagen Dealers. Search for all Volkswagen dealers in Palm Bay, FL 32907 and view their inventory at Autotrader",
+      "id": "6243e0e2294dc2e4",
+      "title": "Beutler Auto Sales – Car Dealer in Clearfield, UT",
+      "url": "https://www.beutlerautosales.net/",
+      "summary": "We Sell Quality - Beutler Auto Sales in Clearfield, UT • Browse Inventory • Vehicle Specials • Find a Vehicle • Value Your Trade • Testimonials • Contact Dealership",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -901,12 +732,586 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5f357bd0b4782b07",
-      "title": "Back up photos & videos - Computer - Google Photos Help",
-      "url": "https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DDesktop",
-      "summary": "To continue backing up folders after this date, you must add photos & videos from Google Drive to Google Photos. To stop backing up a specific folder: On your computer, open Drive for desktop. Log into your Google Account with your username and password. At the top right, click Settings Preferences. On the left, click Folders from your computer.",
+      "id": "de4b012c5aaa3e20",
+      "title": "Determining maximum MSNF compatible with normal fat agglomeration in ...",
+      "url": "https://www.dairyscience.info/newcalculators/ag1.asp",
+      "summary": "Calculator for determining maximum MSNF compatible with normal fat agglomeration in ice cream or gelato",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7afc02200fd5ba9c",
+      "title": "EXAMPLE OF A SPREADSHEET CALCULATOR FOR DETERMINING INGREDIENTS FOR ICE ...",
+      "url": "https://www.dairyscience.info/b1/b1.asp",
+      "summary": "Spreadsheets for calculating the weights of ingredients for ice cream mixes have been designed by Dr Michael Mullan at www.dairyscience.info",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "90bae8fdfc48d48e",
+      "title": "Farmington IFA Country Store | Farmington NM - Facebook",
+      "url": "https://www.facebook.com/FarmingtonIFA/",
+      "summary": "For over a century, our cooperative has been built on the hard work, passion, and pride of people who love to grow.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2dfc84e352fe826d",
+      "title": "Gillette Stadium",
+      "url": "https://www.gillettestadium.com/",
+      "summary": "Gillette Stadium hosts events year-round, including Patriots games, Revolution matches, concerts and more.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2fc16b0fcdfc08ae",
+      "title": "Hilarious Edits Found on Wikipedia - Reddit",
+      "url": "https://www.reddit.com/r/WikipediaVandalism/",
+      "summary": "3 You got to cite the link to the edit.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "69f47093b93117bf",
+      "title": "Home - AT&T Stadium",
+      "url": "https://attstadium.com/",
+      "summary": "Host your event at AT&T Stadium and experience an amazing venue, designed to exceed guests’ expectations. Find information about stadium services, important policies, venue diagrams and much more to make your next visit to AT&T Stadium convenient and enjoyable. ©2026 Dallas Cowboys, All Rights Reserved. This site is protected by reCAPTCHA.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4f193bdd523bdf3",
+      "title": "Home | StadiumSport US",
+      "url": "https://www.stadiumsportus.com/",
+      "summary": "StadiumSport US is the definitive guide to American stadiums and live sports. Offering venue profiles, seating charts, interactive maps, plus schedules and ticketing for the NFL, NBA, MLB, NHL, MLS and more. It's the home of USA Stadium Sports.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8528491fd63d237a",
+      "title": "Houston Astros - ClutchFans",
+      "url": "https://bbs.clutchfans.net/forums/houston-astros.39/",
+      "summary": "Houston Astros -- the dish for Houston's Major League Baseball fans",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80cb22b0021f969c",
+      "title": "Houston Rockets Fan Forum - ClutchFans",
+      "url": "https://bbs.clutchfans.net/",
+      "summary": "Houston Rockets coverage from the leading Houston Rockets fan site on the web, CLUTCHFANS.NET! Houston Rockets news, Houston Rockets NBA trade rumors and daily links to Houston Rockets news stories from across the web. Houston Rockets forums, Houston Texans forums, Houston Astros forums as well.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b099422563ba392d",
+      "title": "How to translate? - Google Translate Community",
+      "url": "https://support.google.com/translate/thread/354953313/how-to-translate?hl=en",
+      "summary": "I used Google Translate to translate a text into the following languages: Putonghua (普通话), Hanyu (汉语) and Hua Yu (华语). However, I couldn't find these languages in Google Translate. Does Google Translate translate into the languages described?",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e2facdd239a064c5",
+      "title": "I’m pretty bummed about the new update. : r/wikipedia - Reddit",
+      "url": "https://www.reddit.com/r/wikipedia/comments/10g2cir/im_pretty_bummed_about_the_new_update/",
+      "summary": "Wikipedia isn’t for its audience For example sections of Wikipedia are controlled by moderators and they can make changes against the will of the audience. Case and point - the pro wrestling section of Wikipedia used to have information about a wrestlers move set and old entrance themes until one mod decided it made the page look messy.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d29364d14dfe524",
+      "title": "Library Genesis - Reddit",
+      "url": "https://www.reddit.com/r/libgen/",
+      "summary": "Library Genesis (LibGen) is the largest free library in history: giving the world free access to 84 million scholarly journal articles, 6.6 million academic and general-interest books, 2.2 million comics, and 381 thousand magazines. /r/libgen and its moderators are not directly affiliated with Library Genesis. No book requests.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "180b56895f1a0f12",
+      "title": "List of U.S. stadiums by capacity - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/List_of_U.S._stadiums_by_capacity",
+      "summary": "They are ranked by capacity, which is the maximum number of spectators the stadium can normally accommodate. All U.S. stadiums with a current capacity of 10,000 or more are included in the list. The majority of these stadiums are used for American football, either in college football or the National Football League (NFL).",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "35b7503afe5ac3b9",
+      "title": "New and used Volkswagens for sale in Clearfield, UT | KSL Cars",
+      "url": "https://cars.ksl.com/search/make/Volkswagen/city/Clearfield/state/UT",
+      "summary": "2017 Volkswagen Jetta 1.4T SE 94,678 Miles | Clearfield, UT | 11 Days $8,351 est. $128 /mo* 2",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6df3092fbc362914",
+      "title": "Official Anna's Archive links : r/Annas_Archive - Reddit",
+      "url": "https://www.reddit.com/r/Annas_Archive/comments/14f0b9a/official_annas_archive_links/",
+      "summary": "https://en.wikipedia.org/wiki/Anna's_Archive If you want to help out, you can translate this article to more languages, so that we can safely link to Anna's Archive in other languages.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9196cf2ef45dde3c",
+      "title": "Pearson square calculator - Dairy Science",
+      "url": "https://www.dairyscience.info/newCalculators/pearson.asp",
+      "summary": "Pearson’s Square Calculator The Pearson Square (or Rectangle) is a simple method for solving a two-component standardisation problem. Although used here with milk, it’s also common in sausage, jam, and beverage blending—anywhere you need the amounts of two ingredients to reach a desired final concentration. For more detail see the article on the Pearson Square. Microsoft Excel ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3941a879eaf90e75",
+      "title": "Shop Hype Sneakers Apparel & Collectibles – Stadium Goods",
+      "url": "https://www.stadiumgoods.com/",
+      "summary": "Shop the world's most sought-after sneakers, streetwear, and collectibles at Stadium Goods. Discover rare and authentic finds from top brands like Nike, Air Jordan, Adidas, Supreme, SP5DER, Asics, New Balance and more. In stock and ready to ship.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "94dc10e750209f91",
+      "title": "Stadium - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Stadium",
+      "summary": "5Spectator areas and seating.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fd8a1f9603218d59",
+      "title": "STADIUM Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/stadium",
+      "summary": "The meaning of STADIUM is a large usually roofless building with tiers of seats for spectators at sports events.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ebda7b3c3852ca55",
+      "title": "Stadium | Definition, History, & Facts | Britannica",
+      "url": "https://www.britannica.com/technology/stadium",
+      "summary": "stadium, enclosure that combines broad space for athletic games and other exhibitions with large seating capacity for spectators. The name derives from the Greek unit of measurement, the stade, the distance covered in the original Greek footraces (about 600 feet [180 metres]).",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "743026bc9194b942",
+      "title": "Stadium.com",
+      "url": "https://www.stadium.com/",
+      "summary": "Welcome to the world of Stadium. Our vision is to activate the world – today and tomorrow. This is why we are actively contributing to a more sustainable world. By acting in a socially, financially and environmentally conscious manner, we promote a healthy lifestyle today and for future generations.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80385020dce4fc19",
+      "title": "Stadium: Global Recognition programs, Group Gifting and Swag",
+      "url": "https://www.bystadium.com/",
+      "summary": "Store, distribute, and organize your swag inventory with Stadium. Centralize all your approved designs.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fa29a68b045bed54",
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "summary": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou avec la saisie vocale dans plus de 200 langues à l'aide de l'application Google Traduction, ou en utilisant ce service sur le Web. Vous pouvez obtenir de l'aide de Google Traduction de différentes manières.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -927,10 +1332,62 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0768b292fdbdf998",
-      "title": "District Camera | District Camera and Imaging",
-      "url": "https://www.districtcamera.com/",
-      "summary": "District Camera and Imaging is a Family Owned, 3 Store - Independant Camera store. Founded in 1978, we take great pride of having the very best customer service to go along with a full suite of photographic products and services.",
+      "id": "1689ba85d4799709",
+      "title": "Volkswagen near me in Clearfield, UT | Mapdoor",
+      "url": "https://mapdoor.com/us/ut/clearfield/volkswagen",
+      "summary": "Explore all Volkswagen dealers in Clearfield, UT, with contact details, opening hours, services, and more on our interactive map",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36d02edf1fbf4046",
+      "title": "Volkswagen Repair Services in Clearfield, UT",
+      "url": "https://cuttingedgeautocare.com/vehicles/volkswagen-service-repair/",
+      "summary": "Cutting Edge Auto Care serves Volkswagen owners in Clearfield, Salt Lake City, Ogden, and surrounding Utah communities. If your VW needs maintenance, diagnostics, brake work, electrical service, or more involved repairs, our team is ready to help.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c46053e42ec8d928",
+      "title": "Walmart Camera Store in Antioch, CA| Photo Camaras, Web Cameras ...",
+      "url": "https://www.walmart.com/store/2697-antioch-ca/camera-store",
+      "summary": "Shop for camera equipment at your local Antioch, CA Walmart. We have a great selection of camera equipment for any type of home. Save Money. Live Better.",
       "discovery_channel": "broad_web",
       "query": "camera smart glasses",
       "source": "Bing web RSS",
@@ -941,630 +1398,6 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "637babbd249b4745",
-      "title": "Google Drive ‑työpöytäsovelluksen käyttö - Drive Ohjeet",
-      "url": "https://support.google.com/drive/answer/10838124?hl=fi",
-      "summary": "Haluatko monipuolisempia asetuksia? Tutustu tarkemmin esimerkiksi asetusten muokkaamiseen, offline-käyttöön ja kuvien varmuuskopioiden ylläpitoon Drive-työpöytäsovellu",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1e5d06d85f212e49",
-      "title": "Holman PartnerConnect for Suppliers",
-      "url": "https://partnerconnect.holman.com/login",
-      "summary": "Holman PartnerConnect® is designed to save you time and money by providing a fast and easy way to handle the bulk of your Holman business interactions.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eca3d5319fa81eff",
-      "title": "Mama Mill's Jamaican Kitchen Menu (Updated 2026)",
-      "url": "https://mama-mills-jamaican-kitchen.wheree.com/menu",
-      "summary": "At Mama Mill's Jamaican Kitchen, located at 110 Meek St, Cibolo, TX, a vibrant culinary journey awaits with a menu that celebrates authentic Jamaican flavors. ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d94a3071b0dd9d7c",
-      "title": "Mama Mill's Jamaican Kitchen Menu - Cibolo, TX",
-      "url": "https://www.roostcafeandbistro.com/mama-mills-jamaican-kitchen-78108/",
-      "summary": "Mama Mill's Jamaican Kitchen is Jamaican restaurant at 110 Meek St, Cibolo, TX 78108. Check out their menu with prices, hours, read reviews, and make a reservation online.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "108dbd717cafc47a",
-      "title": "Mama Mill's Jamaican Kitchen Menu - Cibolo, TX",
-      "url": "https://www.roostcafeandbistro.com/mama-mills-jamaican-kitchen-menu-78108/",
-      "summary": "Mama Mill's Jamaican Kitchen is Jamaican restaurant, at 110 Meek St, Cibolo, TX 78108. Check out their menu, read reviews, and make a reservation online.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2986baa22e27a0d7",
-      "title": "Mama Mill's Jamaican Kitchen Menu - Updated November 2025",
-      "url": "https://www.checkle.com/biz/mama-mills-jamaican-kitchen-cibolo/menu",
-      "summary": "One of our most popular dishes, marinated in our spicy jerk marinade then grilled View up-to-date menus for Mama Mill's Jamaican Kitchen located at 110 Meek St in Cibolo, TX 78108. Come enjoy Jamaican Food with a Texas twist… JamTex Food! Located in the heart of Cibolo. Dine-in, Carry-out, or Delivery available via Doordash & Grubhub.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d7ba87435dccf18e",
-      "title": "Mama Mill's Jamaican Kitchen Menu in Cibolo, TX | Order ...",
-      "url": "https://www.menupix.com/texas/restaurants/32115434/Mama-Mills-Jamaican-Kitchen-Cibolo-TX",
-      "summary": "View the menu for Mama Mill's Jamaican Kitchen in Cibolo, TX. Order Online, get delivery, see prices and reviews.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cc049251a73e6c53",
-      "title": "Mama Mill's Jamaican Kitchen | Cibolo TX - Facebook",
-      "url": "https://www.facebook.com/mamamillskitchen/",
-      "summary": "All You Can Eat Buffet Now available every Tuesday-Saturday, 11am-4pm 🌴 Ready to indulge in some authentic Jamaican flavors? 🌴 Come down to Mama Mill’s Jamaican Kitchen for our All You Can Eat Buffet!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "45bd5198c94714d6",
-      "title": "Mama Mill's Jamaican Kitchen, 110 Meek Street, Cibolo, TX (2026)",
-      "url": "https://www.findglocal.com/US/Cibolo/110820243847637/Mama-Mill%27s-Jamaican-Kitchen",
-      "summary": "When the temperature drops, there’s nothing better than a hearty plate of Mama Mill’s Oxtail to keep you cozy! ️ Slow-cooked, tender, and bursting with authentic Jamaican flavors, it’s the comfort food you didn’t know you needed—but won’t be able to resist.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cdf8af172262aad7",
-      "title": "Mama Mill's Jamaican Kitchen, Cibolo - Menu, Reviews (224 ...",
-      "url": "https://www.restaurantji.com/tx/cibolo/mama-mills-jamaican-kitchen-/",
-      "summary": "Latest reviews, photos and ratings for Mama Mill's Jamaican Kitchen at 110 Meek St in Cibolo - view the menu, hours, phone number, address and map.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d493b90e434ff720",
-      "title": "MAMA MILL'S JAMAICAN KITCHEN, Cibolo - Tripadvisor",
-      "url": "https://www.tripadvisor.com/Restaurant_Review-g55628-d23278959-Reviews-Mama_Mill_s_Jamaican_Kitchen-Cibolo_Texas.html",
-      "summary": "Mama Mill's Jamaican Kitchen, Cibolo: See 4 unbiased reviews of Mama Mill's Jamaican Kitchen, rated 4.8 of 5 on Tripadvisor and ranked #9 of 18 restaurants in Cibolo.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aa5d60c863027a0a",
-      "title": "Mama Mill’s Jamaican Kitchen / The Cibolo Well ... - Instagram",
-      "url": "https://www.instagram.com/mamamillskitchen/",
-      "summary": "971 Followers, 339 Following, 384 Posts - Mama Mill’s Jamaican Kitchen / The Cibolo Well (@mamamillskitchen) on Instagram: \"Come enjoy Jamaican Food with a Texas twist… JamTex Food! 🇯🇲 Dine-in, Carry-out, or Delivery available via Doordash & Grubhub.\"",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9c8d0117e877b8da",
-      "title": "New Podcast Measurement Tools Sharpen Advertising ROI in 2025 | ANA Report",
-      "url": "https://thepodcasting.org/new-podcast-measurement-tools-sharpen-advertising-roi-in-2025-ana-report/",
-      "summary": "Podcast advertising ROI is becoming clearer in 2025 as new measurement tools and analytics validate reach, trust, and performance. Discover how improved attribution is driving $6B in ad growth.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "68829a5ca7544822",
-      "title": "partnerconnect.holman.com",
-      "url": "https://partnerconnect.holman.com/fonts/fontawesome-webfont.eot",
-      "summary": "þÇ cþ`(8ý „ `(û€(88( @(8( Dþˆ 9 ú 8( ú ÿ€ € , #!\"&= 46; 46; 2 . 6 $ $ € þÀ à @ ’úþØú’’ú (ú rÎþŸþ^þŸÎÎ a ¢ a àþ@ @ ` ýþ ...",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "967be51dbed31954",
-      "title": "partnerconnect.holman.com",
-      "url": "https://partnerconnect.holman.com/fonts/fontawesome-webfont.woff2",
-      "summary": "wOF2 -h †˜ - Ë?FFTM `…r ‰™(‡¶X 6 $ •p – ‰ ´u[R rGa÷‘„*º 'í=ë:µ &ÓÍ=r·* å ñö] t ÜEªn£²ÿÿÿÿä¤1FÛ Ü@àÕôû|­Š f“m’`›$Ø‘¡@d[BQ $([U+(­¸@PÐ5 ä` ° Ú>öP ;á(‘Ñ1³ýlÛþhÔ¨¢Â)ŸÜYy”òJiéë ­…Î|%Û ·^¬ G‚¢3¸ nž•èºÚ•Ü ÄÍ DŠžp\\Yr ”LßPô ƒt¥)Ë ˜ï §6RÂ^\"S L~ñYR×CXR Š4 ŽæFúy\\[¿è7n¡â ...",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "47f5677ab77becec",
-      "title": "Podcast advertising in the United States - statistics & facts",
-      "url": "https://www.statista.com/topics/7990/podcast-advertising/",
-      "summary": "Even though podcast advertising revenues remain lower than that of established media such as pay TV or out-of-home, the industry is thriving and has successfully surpassed the threshold of...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8f08ffac72b1c9d8",
-      "title": "Podcast Advertising Rates 2025: Is It Worth the Investment?",
-      "url": "https://www.brandmag.net/podcast-advertising-rates-2025-is-it-worth-the-investment/",
-      "summary": "We dive into current podcast advertising rates; learn how to maximize your ROI with our expert insights and data-driven strategies in our ultimate guide.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "64b79d545fe11f9f",
-      "title": "Podcast Advertising Report 2025: Impact & Industry Insights",
-      "url": "https://mediabodies.com/guides-and-reports/podcast-advertising-report-2025/",
-      "summary": "Explore the 2025 Podcast Advertising Report - insights on ad impact, audience engagement and how podcasts compare to digital and social media.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0adc3b7c5b070b9",
-      "title": "Podcast Advertising Statistics | Fact-Checked 2026",
-      "url": "https://wifitalents.com/podcast-advertising-statistics/",
-      "summary": "Podcast advertising is clearly accelerating as 80% of advertisers plan to raise budgets in 2025, with host read ads still leading at 68% and programmatic and AI adoption pushing growth, shown by programmatic rising to 25% in 2023 and AI targeting reaching 40% of networks in 2024.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ee5e3f762fe32ac8",
-      "title": "Podcast Advertising Trends 2025: Key Insights & Growth Strategies",
-      "url": "https://www.accio.com/business/podcast_advertising_trends",
-      "summary": "Discover 2025's podcast advertising trends: AI-driven targeting, video integration, and audience engagement strategies. Learn how top brands optimize ROI. Click for expert analysis!",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "100310372d774381",
-      "title": "Podcast Marketing Trends 2025 Report",
-      "url": "https://podcastmarketingacademy.com/podcast-marketing-trends-report-2025/",
-      "summary": "The 2025 Podcast Marketing Trends Report: original data from 400+ business podcasters on growth rates, revenue, and what's actually working now.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "218aaae3ba13a786",
-      "title": "Podcast Statistics for Marketers 2025 | Listeners, Ads & Demographics ...",
-      "url": "https://podscan.fm/blog/podcast-statistics-for-marketers-2025",
-      "summary": "Essential podcast statistics for 2025: listener demographics, advertising benchmarks, engagement rates, and industry growth trends every marketer should know.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "73f238f2a250921f",
-      "title": "Prestige Volkswagen in Melbourne, FL | New & Used VW Dealer",
-      "url": "https://www.melbournevw.com/",
-      "summary": "We maintain a large selection of new Volkswagen vehicles at our Melbourne, FL dealership. Whether you're looking for a stylish sedan, a versatile SUV, or a fun hatchback, we have the right Volkswagen for your lifestyle.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bff2c6779283599c",
-      "title": "Used Volkswagen Cars for Sale in Palm Bay, FL - Autotrader",
-      "url": "https://www.autotrader.com/cars-for-sale/volkswagen/palm-bay-fl",
-      "summary": "Test drive Used Volkswagen Cars at home in Palm Bay, FL. Search from 270 Used Volkswagen cars for sale, including a 2017 Volkswagen Jetta SE, a 2018 Volkswagen Tiguan SEL Premium, and a 2019 Volkswagen Jetta GLI ranging in price from $3,495 to $57,722.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
         "retail"
       ],
       "primary_type": "retail",
@@ -1577,145 +1410,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "37362da86bcfab0d",
-      "title": "Volkswagen Car Sales Near Palm Bay, Florida - Orlando VW North",
-      "url": "https://www.orlandovwnorth.com/near/palm-bay.htm",
-      "summary": "MSRP:$25,566 Dealer Discount:$1,320 Price:$24,246 Volkswagen Offer:$1,750 Price:$22,496 College Grad Offer:$1,000 Military Offer:$500 Engine: 1.5L I-4 cyl,Transmission: 8 speed automatic,Exterior Color: Pure White,Interior Color: Black Orlando VW North 1050 Lee RoadOrlando,FL32810 Sales:844-879-9584 Visit us at: 1050 Lee Road Orlando, FL 32810",
+      "id": "79261fcec4bef9d4",
+      "title": "What is the most terrifying wikipedia page to read? - Reddit",
+      "url": "https://www.reddit.com/r/AskReddit/comments/7sxbxj/what_is_the_most_terrifying_wikipedia_page_to_read/",
+      "summary": "36K votes, 15K comments. 45M subscribers in the AskReddit community. r/AskReddit is the place to ask and answer thought-provoking questions.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f46c414242834997",
-      "title": "Volkswagen Dealership Near Palm Bay FL",
-      "url": "https://www.napletonorlandovw.com/volkswagen-dealership-near-palm-bay-fl.htm",
-      "summary": "Conveniently located just off of Highway 50 in Orlando, our Volkswagen dealership is easily accessible to our clientele coming from Palm Bay, FL.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6f49691d1f4d2ea2",
-      "title": "Volkswagen Dealership Near Palm Bay FL - sanfordvw.com",
-      "url": "https://www.sanfordvw.com/volkswagen-dealership-near-palm-bay-fl.htm",
-      "summary": "Visit our local Volkswagen Dealer near Palm Bay, FL. Shop Volkswagen New & Used Cars For Sale.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f1a87c4f40bbee27",
-      "title": "Volkswagen For Sale In Palm Bay, FL - Carsforsale.com®",
-      "url": "https://www.carsforsale.com/volkswagen-for-sale-in-palm-bay-fl-C744417-L120351",
-      "summary": "Shop 295 used Volkswagen in Palm Bay, FL as low as $5,650. Get free history reports, credit checks, expert reviews & online financing.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "980466eb49f37e4c",
-      "title": "مساعدة Google Drive",
-      "url": "https://support.google.com/drive/?hl=ar",
-      "summary": "مركز مساعدة Google Drive الرسمي حيث يمكنك العثور على نصائح وبرامج تعليمية حول استخدام المنتج وأجوبة أخرى للأسئلة الشائعة.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3407cd5507a0c9a7",
-      "title": "Microsoft Copilot",
-      "url": "https://copilot.microsoft.com/",
-      "summary": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1724,6 +1427,214 @@
         "community"
       ],
       "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7c2a242f424f0655",
+      "title": "What's going on with Wikipedia asking for donations and ... - Reddit",
+      "url": "https://www.reddit.com/r/OutOfTheLoop/comments/wr1uyf/whats_going_on_with_wikipedia_asking_for/",
+      "summary": "A subreddit to help you keep up to date with what's going on with reddit and other stuff.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d40beb86d02dfde",
+      "title": "Whole milk powder and cream ice cream mix calculator",
+      "url": "https://www.dairyscience.info/example.asp",
+      "summary": "Whole milk powder and cream ice cream mix calculator Calculator",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "95d9c53a495c6a38",
+      "title": "Wikipedia is generally a reliable source : r/memes - Reddit",
+      "url": "https://www.reddit.com/r/memes/comments/1atrduf/wikipedia_is_generally_a_reliable_source/",
+      "summary": "16K votes, 405 comments. 30M subscribers in the memes community. Memes! A way of describing cultural information being shared. An element of a…",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "548c18d0ba1c77c9",
+      "title": "Wikipedia's 372 most interesting articles and 140 most useful ...",
+      "url": "https://www.reddit.com/r/wikipedia/comments/9p4x9/wikipedias_372_most_interesting_articles_and_140/",
+      "summary": "Wikipedia does not have an article with this exact name. Please search for USS S-51 (SS-162 in Wikipedia to check for alternative titles or spellings. Reply reply rickyisawesome •",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f86ad79c2dd10fea",
+      "title": "Wikipedians - The subreddit for Wikipedia contributors",
+      "url": "https://www.reddit.com/r/wikipedians/",
+      "summary": "Wikipedians is a subreddit created for discussion amongst Wikipedia contributors",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "309e7024f41e1f03",
+      "title": "华为商城VMALL",
+      "url": "https://www.vmall.com/index.html",
+      "summary": "双向 66 W 超级快充 ¥269 MatePad Air 12英寸 智能磁吸键盘 仅适配于 HUAWEI MatePad Air（第三代） ¥479 M-Pencil（第三代）平板创作笔套装 专业写绘",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "041375b544f4b13f",
+      "title": "即将上映 - 最新待映电影预告 | 电影街",
+      "url": "https://www.dianyingjie.cn/upcoming",
+      "summary": "即将上映的最新电影列表，抢先了解未来档期的新片资讯和上映日期。",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f610b4b3faa49f5",
+      "title": "即将上映电影 未来30天上映热门电影汇总 | 电影志",
+      "url": "https://www.dianyingzhi.com/now-playing/upcoming",
+      "summary": "电影志即将上映电影专区：实时更新未来新片排期，同步影院排期，提供电影评分、演员阵容与剧情简介。提前了解热门影片 ...",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
