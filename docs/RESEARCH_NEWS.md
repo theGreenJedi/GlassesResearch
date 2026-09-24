@@ -31,6 +31,15 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 <details>
 <summary><strong>Browse detailed newsroom notes</strong></summary>
 
+### September 23, 2026 — Meta announces camera-free Ray-Ban Meta Audio
+
+**Across the Wire · Reported.** Meta and EssilorLuxottica's camera-free AI-glasses announcement is a first-class taxonomy signal: camera presence is becoming a deliberate architecture choice rather than an assumed capability. [Read the evidence-bounded wire note](news/articles/2026-09-23-meta-ray-ban-audio-camera-free.md).
+
+### September 23, 2026 — Meta externalizes compute in new VR-glasses architecture
+
+**Across the Wire · Reported.** GlassesResearch is tracking this as wearable-computing architecture rather than broadening the smart-glasses catalog into VR: moving substantial compute off the face changes the weight, thermal, battery and serviceability boundary. [Read the architecture wire note](news/articles/2026-09-23-meta-vr-glasses-external-compute.md).
+
+
 ### September 19, 2026 — You bought the glasses. Can you repair them?
 
 Canonical coverage: [published editorial](news/articles/2026-09-19-right-to-repair-smart-glasses.md). The Acme Revival allegations remain unadjudicated; the editorial uses the dispute to examine repairability, software-controlled servicing, and whether ownership survives hardware failure.
