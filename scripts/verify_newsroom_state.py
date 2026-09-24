@@ -63,6 +63,13 @@ def main() -> int:
                 raise SystemExit("Editorial pin lacks source label")
             if not str(lead.get("url", "")).startswith("https://"):
                 raise SystemExit("Editorial pin must use HTTPS")
+        elif mode == "first_party_editorial":
+            if lead.get("review_status") != "first_party_published":
+                raise SystemExit("First-party editorial lacks published status")
+            if lead.get("source_label") != "GlassesResearch":
+                raise SystemExit("First-party editorial lacks GlassesResearch source label")
+            if not str(lead.get("url", "")).startswith(SITE_ORIGIN):
+                raise SystemExit("First-party editorial left the GlassesResearch canonical publication surface")
         else:
             known_ids = {item["event_id"] for item in latest}
             if lead.get("event_id") not in known_ids:
