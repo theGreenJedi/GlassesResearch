@@ -64,10 +64,15 @@ jobs:
           with tempfile.TemporaryDirectory() as tmp:
               article = Path(tmp) / "plumbing-proof.md"
               article.write_text(
-                  '---\ndescription: "Synthetic newsroom plumbing proof."\n---\n\n'
-                  '# Plumbing proof\n\n'
-                  f'**Published:** {published}  \n'
-                  '**Type:** GlassesResearch editorial / test  \n',
+                  f"""---
+description: "Synthetic newsroom plumbing proof."
+---
+
+# Plumbing proof
+
+**Published:** {published}  
+**Type:** GlassesResearch editorial / test  
+""",
                   encoding="utf-8",
               )
               lead = load_first_party_editorial(Path(tmp))
