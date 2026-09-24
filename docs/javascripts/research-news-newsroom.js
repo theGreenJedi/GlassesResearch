@@ -124,13 +124,20 @@
       }
       const leadUrl = new URL(state.lead.url, window.location.origin);
       const editorialPin = state.lead.lead_mode === "editorial_pin";
+      const firstPartyEditorial = state.lead.lead_mode === "first_party_editorial";
       const externalEditorialLead = editorialPin && leadUrl.origin !== window.location.origin;
       const leadPublisher = state.lead.publisher || state.lead.source_label || state.lead.source || "original publisher";
-      const leadCta = externalEditorialLead ? `Read the original at ${escapeHtml(leadPublisher)} →` : "Read the story →";
+      const leadCta = externalEditorialLead
+        ? `Read the original at ${escapeHtml(leadPublisher)} →`
+        : firstPartyEditorial
+          ? "Read the editorial →"
+          : "Read the story →";
       const leadRel = externalEditorialLead ? ' target="_blank" rel="noopener"' : "";
-      const leadType = editorialPin
-        ? (state.lead.source_label === "GlassesResearch" ? "GlassesResearch editorial" : "Editorial pick")
-        : state.lead.change_type.replaceAll("_", " ");
+      const leadType = firstPartyEditorial
+        ? "GlassesResearch editorial"
+        : editorialPin
+          ? (state.lead.source_label === "GlassesResearch" ? "GlassesResearch editorial" : "Editorial pick")
+          : state.lead.change_type.replaceAll("_", " ");
       lead.hidden = false;
       lead.innerHTML = `<div class="gr-newsroom-kicker">Featured</div><a class="gr-newsroom-lead-card" href="${escapeHtml(state.lead.url)}"${leadRel}><span class="gr-newsroom-date">${escapeHtml(displayDate(state.lead.published_at))} · ${escapeHtml(relativeAge(state.lead.published_at))} · ${escapeHtml(leadType)}</span><strong>${escapeHtml(state.lead.title)}</strong><span>${escapeHtml(state.lead.summary)}</span><em>${leadCta}</em></a>`;
       if (latestGrid) latestGrid.innerHTML = state.latest.slice(0, 3).map(renderStoryCard).join("");
