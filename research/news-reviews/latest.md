@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-24T08:48:57.653352+00:00`
+Generated: `2026-09-24T09:35:05.158127+00:00`
 
-- Intake files inspected: **321**
-- Candidates retained in this review window/history: **15347**
+- Intake files inspected: **320**
+- Candidates retained in this review window/history: **15210**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3197
-- `catalog_review`: 16
+- `adjacent_radar`: 3158
+- `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 660
-- `rejected_noise`: 11311
+- `needs_editorial_verification`: 664
+- `rejected_noise`: 11216
 - `source_monitor`: 2
-- `source_review`: 69
+- `source_review`: 63
 - `watching`: 88
 
 ## Action queue
@@ -268,10 +268,10 @@ Generated: `2026-09-24T08:48:57.653352+00:00`
 | normal | needs_editorial_verification | direct | [OpenAI、CEOの個人的感情でスマートグラス参入に｢ノー｣ - ギズモード](https://news.google.com/rss/articles/CBMiigFBVV95cUxPYXZmdlJpWUQyVm9lbEJQX1UyY0w3c3V2MGU4dU5FbHY2REpqNHhGdkViNUFqZHppWnFyVzc3bmRvQUJmZUo2dVIyemlKbF9zVnF5djg3ajBNZHpoTTZXSmEwUVpkcFdLaTdhMmY1QVVqYVo2TWppWUhUUVU3YTRHbno4cmdueE5CVmc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Prescription Smart Glasses Buying Guide 2026: How to Choose](https://dymesty.com/blogs/articles/the-practical-buyer-s-guide-7-things-to-know-about-prescription-smart-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Prescription Smart Glasses: 2026 Picks \| AR Compare](https://www.arcompare.com/best/prescription-wearers/) | reachable (200) | research_news_review, research_optics |
+| normal | needs_editorial_verification | direct | [Prescription Smart Glasses: Complete Buying Guide 2025](https://banna-tech.com/prescription-smart-glasses-guide/) | reachable (200) | research_news_review, research_optics, policy_privacy |
 | normal | needs_editorial_verification | direct | [Prescription Smart Glasses: How They Work & What to Know - RayNeo](https://www.rayneo.com/blogs/news/smart-glasses-with-prescription-lenses-guide) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Privacy concerns prompt developer to create ‘ZuckOff’ app to detect Meta, Snap AI glasses - Mangalore Today](https://news.google.com/rss/articles/CBMizAFBVV95cUxPN3p3RnNNU2VBV3NaeXJ0YWNVc2liLU8zTlQ2dG5ld3Zwal9QR3BlTTFZUGJqWm95SFhyaktvUjNpVXZMc20xYmtjWTdiR2FhSndJNloxMmF0Nm9pWUd0OXVVdmM3ZFE0bWtxSEd1WDhYX01yTmw4ZWo3VEpPaXBmeFY1QWp2QVZsQUtfVjR2MktwUXpOYkxha2tNeDdyMkhCeG1iY0c5RDYzZmNtdXdWT29CMldXdE1mbU5Mb05fNDVfM1ZTSE9zejZhQkU?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Qualcomm Just Reminded Everyone That Google's Smart Glasses Are Still Coming This Year - Android Headlines](https://news.google.com/rss/articles/CBMiywFBVV95cUxQUnNNTnZvbVBpUDBTMjJaTVBTem1pdTRKZlYweHFkUUFGM2dGeldha29NVkFMZ29CNTJRdnktMnRaT3loVm04WEdQNHdoR2lIOVExVjFFbWZmZEZMY2RXMW5WeVBDYlA3MDVDVDlsMFdUVEUzUmRSMjdRaldsNXQzOWw3ZWduX1lVX0tJbzBUSi1DVXZFSFotWFdubGZibGg5bjFWMjJ6QWZ4MDdyUE9lcGRTbGg0NlN0aThraUJ0YURZQWZ0Q3M4UHBzMA?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Recurso de aprimoramento auditivo, atualizações de óculos inteligentes... Veja o que mais a Meta anunciou nesta quarta (23) - Olhar Digital](https://news.google.com/rss/articles/CBMi-AFBVV95cUxOVWhPVHowaUtBVWhLQVpZcU85TXJyT3dLeUlaZUpFbmtwdzEyRjZFczl3S29kZ0pGYjZWY0pVc2U0WHhpbXYteEFyYlZUcjV3SWVVTmFkb1BGaXdtZlZMWTlnN0ozOEFrNHIyU0VGYUh3eXg0dksxUnkzMFBENjVSUzJjakc0cE5vQzdGMWhjdHRvbHRIUW8tdFVkTXo1cTM2YXpHZU9VZ21nOEZ0UUxkalhiVGZwdWNsYU05cHFQTkVCUHFuZ2xqampMdWhuWnE0S29xWTNheUdWcTdPaFpHQlBZYkJNb3pQcWFpM0dZSDBYVERsSEstSg?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
