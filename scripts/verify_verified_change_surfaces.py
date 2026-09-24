@@ -65,6 +65,9 @@ def main() -> int:
         raise SystemExit("Homepage verified changes are not newest-first")
     if "Read the verified change" in homepage:
         raise SystemExit("Homepage uses infrastructure-facing verified-change copy")
+    editorial_hook = 'data-homepage-newsroom-lead'
+    if homepage.count(editorial_hook) != 1:
+        raise SystemExit("Homepage curated newsroom lead is missing or duplicated after staging")
     for required in (
         'class="follow-research gr-home-follow"',
         '/docs/RESEARCH_NEWS/#verified-research-alerts',
@@ -93,7 +96,10 @@ def main() -> int:
         raise SystemExit(
             "Homepage hierarchy must be introduction → paired newsroom → developing news → verified research → Finder → research exploration"
         )
+    editorial_at = homepage.index(editorial_hook)
     newsroom_start = homepage.index('class="gr-news-pair"')
+    if not publication_first_positions[0] < editorial_at < newsroom_start:
+        raise SystemExit("Homepage curated newsroom lead must survive between the introduction and paired newsroom")
     newsroom_close_marker = '\n</div>\n\n<section class="follow-research gr-home-follow"'
     newsroom_end = homepage.find(newsroom_close_marker, homepage.index("data-home-verified-stream"))
     if newsroom_end < 0:
