@@ -67,20 +67,39 @@ def load(path: Path = DEFAULT_CHANGES) -> dict[str, Any]:
 def public_headings() -> tuple[dict[str, str], set[str]]:
     section = ""
     headings: dict[str, str] = {}
-    watching: set[str] = set()
-    for raw in RESEARCH_NEWS.read_text(encoding="utf-8").splitlines():
+    non_verified: set[str] = set()
+    lines = RESEARCH_NEWS.read_text(encoding="utf-8").splitlines()
+
+    for index, raw in enumerate(lines):
         section_match = SECTION.match(raw)
         if section_match:
             section = section_match.group(1).strip()
             continue
+
         heading_match = DATE_HEADING.match(raw)
         if not heading_match:
             continue
+
         heading = heading_match.group(1).strip()
         headings[heading] = section
+
         if section.casefold() == "watching":
-            watching.add(heading)
-    return headings, watching
+            non_verified.add(heading)
+            continue
+
+        # Across the Wire notes are intentionally reported/unverified discovery signals.
+        # They may live inside the detailed newsroom notes without becoming GRE events.
+        for following in lines[index + 1:]:
+            stripped = following.strip()
+            if not stripped:
+                continue
+            if stripped.startswith("#"):
+                break
+            if stripped.casefold().startswith("**across the wire ·"):
+                non_verified.add(heading)
+            break
+
+    return headings, non_verified
 
 
 def canonical_model_ids() -> set[str]:
@@ -94,7 +113,7 @@ def _string_list(value: Any) -> bool:
 def validate(path: Path = DEFAULT_CHANGES) -> dict[str, Any]:
     payload = load(path)
     events = payload["events"]
-    headings, watching = public_headings()
+    headings, non_verified = public_headings()
     canonical = canonical_model_ids()
     errors: list[str] = []
     seen_event_ids: set[str] = set()
@@ -176,8 +195,8 @@ def validate(path: Path = DEFAULT_CHANGES) -> dict[str, Any]:
             errors.append(f"{event_id or label}: publication.source_heading is required")
         elif heading not in headings:
             errors.append(f"{event_id}: source_heading is not a dated heading in docs/RESEARCH_NEWS.md")
-        elif heading in watching:
-            errors.append(f"{event_id}: Watching items cannot become GRE events")
+        elif heading in non_verified:
+            errors.append(f"{event_id}: non-verified newsroom items cannot become GRE events")
         if heading in seen_headings:
             errors.append(f"duplicate source_heading: {heading}")
         seen_headings.add(heading)
@@ -211,7 +230,7 @@ def validate(path: Path = DEFAULT_CHANGES) -> dict[str, Any]:
 
     if event_ids_in_order != sorted(event_ids_in_order):
         errors.append("GRE events must remain ordered by stable event ID")
-    alertable_headings = {heading for heading in headings if heading not in watching}
+    alertable_headings = {heading for heading in headings if heading not in non_verified}
     missing = sorted(alertable_headings - seen_headings)
     if missing:
         errors.append("Every dated non-Watching Research & News item needs one GRE event; missing: " + " | ".join(missing))
@@ -224,7 +243,7 @@ def validate(path: Path = DEFAULT_CHANGES) -> dict[str, Any]:
     dispatched = sum(bool(event["publication"]["dispatch"]) for event in events)
     print(
         f"Verified change ledger valid: {len(events)} GRE events, {dispatched} dispatch-enabled, "
-        f"{len(watching)} Watching headings excluded."
+        f"{len(non_verified)} non-verified headings excluded."
     )
     return payload
 
