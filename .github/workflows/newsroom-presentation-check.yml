@@ -63,18 +63,18 @@ jobs:
           published = f"{now:%B} {now.day}, {now.year}"
           with tempfile.TemporaryDirectory() as tmp:
               article = Path(tmp) / "plumbing-proof.md"
-              article.write_text(
-                  f"""---
-description: "Synthetic newsroom plumbing proof."
----
-
-# Plumbing proof
-
-**Published:** {published}  
-**Type:** GlassesResearch editorial / test  
-""",
-                  encoding="utf-8",
-              )
+              body = "\n".join([
+                  "---",
+                  'description: "Synthetic newsroom plumbing proof."',
+                  "---",
+                  "",
+                  "# Plumbing proof",
+                  "",
+                  f"**Published:** {published}  ",
+                  "**Type:** GlassesResearch editorial / test  ",
+                  "",
+              ])
+              article.write_text(body, encoding="utf-8")
               lead = load_first_party_editorial(Path(tmp))
               assert lead is not None
               assert lead["lead_mode"] == "first_party_editorial"
