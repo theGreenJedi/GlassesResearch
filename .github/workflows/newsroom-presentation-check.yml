@@ -14,7 +14,7 @@ on:
       - "mkdocs.yml"
       - "scripts/build_newsroom_state.py"
       - "scripts/verify_newsroom_state.py"
-      - "scripts/feature_community_editorial.py"
+      - "scripts/verify_first_party_editorial_discovery.py"\n      - "scripts/feature_community_editorial.py"
       - "scripts/prepare_site.py"
       - ".github/workflows/newsroom-presentation-check.yml"
   push:
@@ -31,7 +31,7 @@ on:
       - "mkdocs.yml"
       - "scripts/build_newsroom_state.py"
       - "scripts/verify_newsroom_state.py"
-      - "scripts/feature_community_editorial.py"
+      - "scripts/verify_first_party_editorial_discovery.py"\n      - "scripts/feature_community_editorial.py"
       - "scripts/prepare_site.py"
       - ".github/workflows/newsroom-presentation-check.yml"
 
@@ -47,41 +47,8 @@ jobs:
         with:
           python-version: "3.x"
       - name: Compile newsroom builders
-        run: python -m py_compile scripts/build_newsroom_state.py scripts/verify_newsroom_state.py scripts/feature_community_editorial.py
-      - name: Prove first-party editorial auto-discovery
-        run: |
-          python - <<'PY'
-          import sys
-          import tempfile
-          from datetime import datetime, timezone
-          from pathlib import Path
-
-          sys.path.insert(0, "scripts")
-          from build_newsroom_state import load_first_party_editorial
-
-          now = datetime.now(timezone.utc)
-          published = f"{now:%B} {now.day}, {now.year}"
-          with tempfile.TemporaryDirectory() as tmp:
-              article = Path(tmp) / "plumbing-proof.md"
-              body = "\n".join([
-                  "---",
-                  'description: "Synthetic newsroom plumbing proof."',
-                  "---",
-                  "",
-                  "# Plumbing proof",
-                  "",
-                  f"**Published:** {published}  ",
-                  "**Type:** GlassesResearch editorial / test  ",
-                  "",
-              ])
-              article.write_text(body, encoding="utf-8")
-              lead = load_first_party_editorial(Path(tmp))
-              assert lead is not None
-              assert lead["lead_mode"] == "first_party_editorial"
-              assert lead["source_label"] == "GlassesResearch"
-              assert lead["title"] == "Plumbing proof"
-              assert lead["url"].endswith("/docs/news/articles/plumbing-proof/")
-          PY
+        run: python -m py_compile scripts/build_newsroom_state.py scripts/verify_newsroom_state.py scripts/verify_first_party_editorial_discovery.py scripts/feature_community_editorial.py\n      - name: Prove first-party editorial auto-discovery
+        run: python scripts/verify_first_party_editorial_discovery.py
       - name: Build reader-facing newsroom state
         run: python scripts/build_newsroom_state.py --changes data/verified-changes.json --output /tmp/newsroom-state.json
       - name: Verify newsroom state contract
