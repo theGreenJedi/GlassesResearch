@@ -1,42 +1,49 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-24T20:12:25.747307+00:00",
-  "candidate_count": 89,
-  "classifier_irrelevant_count": 68,
+  "discovered_utc": "2026-09-24T23:15:55.060087+00:00",
+  "candidate_count": 106,
+  "classifier_irrelevant_count": 58,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 20,
-    "broad_web": 49,
+    "adjacent": 46,
+    "broad_web": 32,
+    "community": 1,
     "developer": 20,
-    "retail": 1
+    "research": 1,
+    "retail": 9
   },
   "relationship_counts": {
-    "direct": 1,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 20,
+    "adjacent": 46,
     "speculative": 0,
-    "irrelevant": 68
+    "irrelevant": 58
   },
   "type_counts": {
-    "model": 3,
-    "review": 2,
-    "video": 2,
-    "news": 33,
-    "tool": 38,
+    "model": 4,
+    "review": 4,
+    "video": 1,
+    "news": 50,
+    "research": 3,
+    "tool": 21,
     "sdk": 20,
-    "policy": 10,
-    "retail": 7,
-    "community": 3
+    "hack": 1,
+    "policy": 2,
+    "retail": 17,
+    "community": 16,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 20,
-    "community_evidence_review": 1,
-    "development_hacking": 1,
-    "model_catalog_review": 1,
-    "reject_noise": 68,
-    "report_card_evidence": 1,
-    "research_news_review": 21,
-    "retail_rebrand_review": 2
+    "adjacent_radar": 46,
+    "community_evidence_review": 4,
+    "deep_research": 1,
+    "model_catalog_review": 2,
+    "policy_privacy": 2,
+    "reject_noise": 58,
+    "report_card_evidence": 3,
+    "research_news_review": 48,
+    "retail_rebrand_review": 1,
+    "watching": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -50,12 +57,41 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "4d33b4b8db6fa352",
-      "title": "G5 AI Smart Glasses with Camera and Bluetooth, 13MP Video ... - Amazon",
-      "url": "https://www.amazon.com/Smart-Glasses-Camera-Bluetooth-Recording/dp/B0HJ5NJV7M",
-      "summary": "AI Image Recognition for Everyday Discovery: With built-in AI image recognition, G5 can identify objects, landmarks, and scenes you look at and provide helpful information instantly. Whether you're exploring a new city or learning about your surroundings, these ai glasses with camera become a hands-free knowledge companion.",
-      "discovery_channel": "broad_web+retail",
-      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "id": "beba825282c7d1ec",
+      "title": "XREAL Aura First Look: Lightweight XR Glasses Tested - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/xreal-aura-first-look/",
+      "summary": "XREAL Aura XR glasses could finally make virtual workflows practical. The sub-95g headset and its multi-display features revealed during hands-on demo.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL AURA",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "hands-on"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cb771bf23cfc54a0",
+      "title": "Best smart glasses in 2026: Top AR and AI glasses worth your money ...",
+      "url": "https://www.tomsguide.com/computing/vr-ar/best-smart-glasses",
+      "summary": "I’ve been wearing and testing smart glasses for over 5 years — here are the best AR and AI glasses you can buy right now.",
+      "discovery_channel": "broad_web+community+research+retail",
+      "query": "smart glasses; smartglasses; AR glasses; best smart glasses; smart glasses site:amazon.com; smart glasses site:walmart.com; smart glasses site:aliexpress.com; smart glasses site:alibaba.com; smart glasses site:spectrum.ieee.org; smart glasses site:reddit.com/r/SmartGlasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -64,14 +100,11 @@
       "disposition": "collected",
       "relationship": "direct",
       "content_types": [
-        "video",
-        "retail"
+        "news"
       ],
-      "primary_type": "video",
+      "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "retail_rebrand_review"
+        "research_news_review"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
@@ -79,25 +112,28 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "07cd5affb87c3f36",
-      "title": "Adult Collector Shirts – In-N-Out Burger Company Store",
-      "url": "https://shop.in-n-out.com/collections/adult-collector-shirts",
-      "summary": "Our adult collector t-shirts feature classic cars and various In-N-Out restaurants serving quality and freshness since 1948.",
+      "id": "02861fb33f88b178",
+      "title": "3rd Grade - Beyond Textbooks",
+      "url": "https://www.beyondtextbooks.org/Parent_Portal/Benchmark_Quarterly_Review_Handbooks/3rd_Grade",
+      "summary": "Sign in to your MagicSchool AI account. Expand/collapse global hierarchy Home Parent Portal Benchmark/Quarterly Review Handbooks 3rd Grade",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "review"
       ],
-      "primary_type": "news",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
+        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -106,10 +142,132 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c99af05839742f74",
-      "title": "Caviar and DoorDash Gift Cards",
-      "url": "https://help.doordash.com/en-us/consumers/article/doordash-gift-cards",
-      "summary": "Buy, redeem, and manage DoorDash gift cards in the US, Canada, Australia, and New Zealand. Learn how to purchase, check balances, and troubleshoot delivery issues.",
+      "id": "30d10747db702969",
+      "title": "Elections | WA Secretary of State",
+      "url": "https://www.sos.wa.gov/elections",
+      "summary": "3 Ways to Register to Vote Print a Voter Registration Form Agency-based Voter Registration Forms HAVA Complaint Form (PDF) Voter Registration Cancellation Form (PDF) Federal Impacts on Washington State Elections Current Election Information Frequently Asked Questions on Voting By Mail Rumor Has It…Rumors vs. Reality Top Two Primary: FAQs for ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "rumor"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "policy",
+        "rumor"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "watching",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53bf8810b8276814",
+      "title": "Family History Records - Ancestry®",
+      "url": "https://www.ancestry.com/genealogy/records/",
+      "summary": "Discover your family history by searching your ancestor's name on Ancestry®, the leading online resource for genealogy research. Start your person search here.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9717c39a583f0f28",
+      "title": "On | Free Shipping $99+ | Fleet Feet",
+      "url": "https://www.fleetfeet.com/browse/on-running",
+      "summary": "Shop the best and newest shoes and apparel from On. Our wide selection of On running shoes and apparel has something for every runner, no matter where you run. Find your perfect pair today.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d10c217ec262e1b",
+      "title": "The Best 10 Restaurants near West Sacramento, CA 95691",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=West+Sacramento%2C+CA+95691",
+      "summary": "What are people saying about restaurants near West Sacramento, CA? This is a review for restaurants near West Sacramento, CA: \"Fabulous fried fish tacos, I can't believe I haven't tried these before, do good. My friend had the friend chicken tacos, she loved hers too. Fantastic atmosphere, excellent customer service (thank you Weds Joe).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d77494fc112b167c",
+      "title": "200 Peacehealth Jobs, Employment in Oregon | Indeed",
+      "url": "https://www.indeed.com/q-company%3apeacehealth-l-oregon-jobs.html",
+      "summary": "231 Peacehealth jobs in Oregon. Apply to Patient Access Representative, Operating Room Technician, Nursing Assistant and more. Hiring now on Indeed.com.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -133,12 +291,255 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "19fae330615007fe",
-      "title": "Community - In-N-Out Burger",
-      "url": "https://www.in-n-out.com/community",
-      "summary": "In-N-Out Burger provides donations in the form of fundraising bundles, including merchandise and meal cards for fundraising raffles or auctions. When applying for support, please keep in mind our guidelines: 100% of the proceeds from your fundraising effort, such as raffles and auctions, must go directly back into your organization.",
+      "id": "5dded4cfa4babd89",
+      "title": "311 Peacehealth jobs in Oregon - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/peacehealth-jobs-oregon",
+      "summary": "Today's top 311 Peacehealth jobs in Oregon. Leverage your professional network, and get hired. New Peacehealth jobs added daily.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "42304277b272023a",
+      "title": "About Office: What version of Office am I using? | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/office/lifecycle/lc-account/about-office-what-version-of-office-am-i-using",
+      "summary": "Learn how to check what version of Office your using. Find your product name and version number of Office apps.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "32eac58591c76868",
+      "title": "Ancestry Account",
+      "url": "https://support.ancestry.com/s/ancestry-account?language=en_US",
+      "summary": "Easily find answers to all of your account related questions.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dc570e07bff9fd9d",
+      "title": "Ancestry | Family Tree, Genealogy & Family History Records",
+      "url": "https://www.ancestry.com/",
+      "summary": "Learn more about what you can do with Ancestry. Discovering your family history is a journey, and we’re here to guide you. Get a deeper understanding of our products, learn from experts, and find inspiration that can show you how exciting and meaningful this experience can be.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b84671a406213e6a",
+      "title": "Ancestry | Genealogy, Family Trees & Family History Records",
+      "url": "https://www.ancestry.co.uk/",
+      "summary": "Discover your family history and build a family tree with the world’s largest genealogy website. Search birth records, census data, obituaries and more!",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e534a320aeaa3827",
+      "title": "Ancestry | Genealogy, Family Trees & Family History Records",
+      "url": "https://www.ancestry.com.au/",
+      "summary": "Search the world's largest collection of online family history records, from archives in Australia, New Zealand and around the world. Keep your family story alive for future generations by preserving your family tree online. Automated Hints help you pinpoint your ancestors in the records.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c75af2d034fdb07c",
+      "title": "AncestryDNA® | DNA Tests for Ethnicity & Genealogy DNA Test",
+      "url": "https://www.ancestry.com/dna/",
+      "summary": "This service combines advanced DNA science with the world's largest online family history resource to identify your genetic origins and help you find new family connections.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "60d94eeb34a729ff",
+      "title": "Ancestry® | Genealogy, Family Trees & Family History Records",
+      "url": "https://www.ancestry.ca/",
+      "summary": "Discover your family history and start your family tree. Try free and access billions of genealogy records including Census, SSDI & Military records.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5323cd52601e526",
+      "title": "Calgen",
+      "url": "https://calgen.beyondtextbooks.org/users/sign_in",
+      "summary": "Welcome back Sign in to your account Email Password Remember me",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c548ae7c77d37c6",
+      "title": "Community + Events - Fleet Feet Spokane",
+      "url": "https://www.fleetfeet.com/s/spokane/community",
+      "summary": "Fleet Feet Spokane is your home for Running and Walking Shoes, Apparel and Accessories to keep you moving. Our FIT Experience will help you find the best products to meet your needs. Our Training Programs will help you achieve your goals while meeting friends along the way. If you want to complete a 5k, 10k, Half or Full Marathon, or simply walk a mile, we have the coaches and mentors to help ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -161,10 +562,174 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c0e1f7722e4744dd",
-      "title": "Cookout Truck - In-N-Out Burger",
-      "url": "https://www.in-n-out.com/cookout",
-      "summary": "Whether it’s a corporate picnic, birthday or wedding, our Cookout Trucks are a great way for your guests to enjoy a hamburger, cheeseburger or Double-Double® without leaving the party. Every burger is made fresh to order and served by our team of friendly Associates who know how to make your event a big hit! We can’t wait to bring the In-N-Out experience to you.",
+      "id": "ba5a6347cb85f29f",
+      "title": "Current BT Partners - Beyond Textbooks",
+      "url": "https://www.beyondtextbooks.org/About_Us/Beyond_Textbooks_Partnerships/Current_BT_Partners",
+      "summary": "Discover current partners of Beyond Textbooks, collaborating to enhance student learning through innovative educational frameworks.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fede775acce75e02",
+      "title": "Curriculum Calendar Generator",
+      "url": "https://calgen.beyondtextbooks.org/auth",
+      "summary": "CALGEN - Calgen Login here Username: Password:",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e925d2af7d4e9b0c",
+      "title": "Family History | Ancestry",
+      "url": "https://www.ancestry.com/c/ancestry-family",
+      "summary": "Discover your family history with Ancestry to trace generations of your family & their stories. Try an Ancestry 14 days free trial and find your family history.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "65b9fe30c46e8c9d",
+      "title": "Fleet Feet Locations",
+      "url": "https://www.fleetfeet.com/locations",
+      "summary": "Fleet Feet Locations With more than 280 locations across the country, Fleet Feet is your best resource for local running. Click on a city name to explore store details, view locations on a map and connect with your local running community.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4cb5ed03a30df6b2",
+      "title": "Fleet Feet | Shop Running Shoes, Clothes & Gear | Est. 1976",
+      "url": "https://www.fleetfeet.com/",
+      "summary": "Find Your Comfort Zone Running, walking or everyday movement. Find shoes and gear that fit your feet, your routine and your goals. Shop Women's Shop Men's",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d7fbd2a39c740056",
+      "title": "Home - Beyond Textbooks",
+      "url": "https://www.beyondtextbooks.org/",
+      "summary": "Beyond Textbooks, the online resource and collaborative community created by teachers and district leaders in the Vail Unified School District, is used by organizations in Arizona, California, Idaho, Kansas, New Mexico, and Wyoming.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c7cd66cab3cf9841",
+      "title": "How to register in Washington | Vote.gov",
+      "url": "https://vote.gov/register/washington",
+      "summary": "You can use Washington’s mail-in registration form to register for local, state, and national elections for the first time or update your registration with a new name or address, and for some states, political party. You’ll need to print the form, fill it out, and mail it to your state election office.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -188,119 +753,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e724674dee2a15e5",
-      "title": "Customer Support | Customer Support | DoorDash Help Center",
-      "url": "https://help.doordash.com/en-us/consumers/category/customer-support",
-      "summary": "Customer Support help and FAQs for DoorDash Customer Support. Find answers, troubleshoot issues, or contact our team.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8aa5f43ef1e07ca4",
-      "title": "Dasher Support | DoorDash Help Center",
-      "url": "https://help.doordash.com/en-us/dashers",
-      "summary": "Dasher help center: find answers about deliveries, earnings, the Dasher app, ratings, account updates, and Dasher perks, or chat with our 24/7 support team.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1fa4d93b24af6202",
-      "title": "DashPass for Students | Customer Support - DoorDash",
-      "url": "https://help.doordash.com/en-us/consumers/article/dashpass-for-students",
-      "summary": "Learn how to sign up for DoorDash Student DashPass, verify eligibility, and save 50% on delivery fees. Get answers to FAQs about the student discount plan.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "214d53717ad4c683",
-      "title": "DoorDash Help Center",
-      "url": "https://help.doordash.com/en-us",
-      "summary": "Get help with your DoorDash orders, account, or payments. Support for Customers, Dashers, Merchants, Businesses, and Advertisers via automated tools or live agents.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ef94a23dd8a4d634",
-      "title": "Employment - In-N-Out Burger",
-      "url": "https://www.in-n-out.com/employment",
-      "summary": "Since 1948, In-N-Out has been a great place to work and grow. Our Founders, Harry and Esther Snyder, wanted not only to take care of our customers but to take care of our Associates as well. More than 70 years later, that focus still remains firmly in place. We’re committed to offering higher starting wages, great benefits and opportunities to grow. Quality is our most important ingredient ...",
+      "id": "75f8b4719249e79c",
+      "title": "How to vote in Washington",
+      "url": "https://voting.democracy.works/en/vote/wa.html",
+      "summary": "Registration Summary Washington offers online voter registration. You can register by mail to vote in Washington by printing a voter registration form, filling it out, and mailing it to your local election office. You can also register to vote in person if you prefer.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -324,64 +780,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6be6413c179e6dcb",
-      "title": "Free Student DashPass FAQs | Customer Support | DoorDash Help Center",
-      "url": "https://help.doordash.com/en-us/consumers/article/free-student-dashpass-faqs",
-      "summary": "Eligible college students at select universities can get Free Student DashPass with $0 delivery fees. Learn how to sign up, verify enrollment, and enjoy benefits while enrolled.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "955f07ac6eee38b4",
-      "title": "How do I cancel my DashPass subscription? - DoorDash",
-      "url": "https://help.doordash.com/en-us/consumers/article/how-do-i-cancel-my-dashpass-subscription",
-      "summary": "Learn how to cancel or pause your DashPass membership on DoorDash in minutes. Step-by-step guide to manage your subscription and avoid future charges.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cd5ef7c7064896a9",
-      "title": "In-N-Out Burger",
-      "url": "https://www.in-n-out.com/",
-      "summary": "At In-N-Out Burger, quality is everything. That's why in a world where food is often over-processed, prepackaged and frozen, In-N-Out makes everything the old fashioned way.",
+      "id": "80964b0c2f249626",
+      "title": "How to vote in Washington",
+      "url": "https://voting.democracy.works/en/register/wa.html",
+      "summary": "Washington offers online voter registration. You can register by mail to vote in Washington by printing a voter registration form, filling it out, and mailing it to your local election office. You can also register to vote in person if you prefer. You can register or update your address online or by mail until 8 days before an election.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -405,10 +807,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "39ff3a220b974819",
-      "title": "In-N-Out Burger - Avondale, AZ, 1525 Dysart Rd..",
-      "url": "https://locations.in-n-out.com/148",
-      "summary": "In-N-Out Burger Restaurant located in Avondale, AZ. Serving the highest quality burgers, fries and shakes since 1948.",
+      "id": "9a884f66c182f5d6",
+      "title": "How to Vote in Washington (2026): Registration, Polling ...",
+      "url": "https://www.decodethevote.com/vote/washington",
+      "summary": "Register to vote in Washington, check your registration, find your polling place, and learn how mail voting works — official Washington links plus a nonpartisan guide to everyone on your 2026 ballot.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -432,10 +834,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7448f3571c1e0afa",
-      "title": "In-N-Out Burger - Ridgefield, WA, 5801 N. Pioneer Canyon Dr..",
-      "url": "https://locations.in-n-out.com/424-Ridgefield",
-      "summary": "In-N-Out Burger Restaurant located in Ridgefield, WA. Serving the highest quality burgers, fries and shakes since 1948.",
+      "id": "d3665f5f6f9fb1ad",
+      "title": "How to Vote in Washington - VoteAmerica",
+      "url": "https://www.voteamerica.org/how-to-vote/washington/",
+      "summary": "Learn how to vote in Washington. Voter registration, absentee ballots, early voting, and voter ID information.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -459,10 +861,91 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f1f2d35c777f35d1",
-      "title": "Is DoorDash available in my city?",
-      "url": "https://help.doordash.com/en-us/consumers/article/is-doordash-available-in-my-city",
-      "summary": "Check if DoorDash delivers to your city. Enter your address at doordash.com/food-delivery to find available restaurants and explore nearby service areas.",
+      "id": "5f3b8c274385c498",
+      "title": "Kindergarten - Beyond Textbooks",
+      "url": "https://www.beyondtextbooks.org/Parent_Portal/What_is_My_Child_Learning_and_How_Can_I_Help/Kindergarten",
+      "summary": "Kindergarten Parents, these are the standards taught by Beyond Textbooks partner schools. This list is in alphanumeric order, and your school will likely teach them in a different order. For help deciphering the code in front of the standard, please click here.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ba2642b2c0016c2",
+      "title": "Log in - Ancestry",
+      "url": "https://ancestrycontent.com/Ancestry/Account/Login",
+      "summary": "Sign In Forgot Password / Unlock User",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c9c868dfc95803f4",
+      "title": "North Spokane - Fleet Feet",
+      "url": "https://www.fleetfeet.com/s/spokane/locations/north-spokane",
+      "summary": "Fleet Feet Spokane is your home for Running and Walking Shoes, Apparel and Accessories to keep you moving. Our FIT Experience will help you find the best products to meet your needs. Our Training Programs will help you achieve your goals while meeting friends along the way. If you want to complete a 5k, 10k, Half or Full Marathon, or simply walk a mile, we have the coaches and mentors to help ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a62b309b7ddec370",
+      "title": "Oregon Careers - PeaceHealth",
+      "url": "https://careers.peacehealth.org/search/jobs/in/or-oregon",
+      "summary": "Search 290 Oregon Careers available at PeaceHealth.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -487,10 +970,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "61022e74e931426d",
-      "title": "Manage Your Account | Customer Support | DoorDash Help Center",
-      "url": "https://help.doordash.com/en-us/consumers/category/manage-your-account",
-      "summary": "Manage Your Account help and FAQs for DoorDash Customer Support. Find answers, troubleshoot issues, or contact our team.",
+      "id": "25e30007c295ef27",
+      "title": "Oregon Nursing Jobs | PeaceHealth",
+      "url": "https://www.peacehealth.org/job-opportunities/nursing-jobs/nursing-jobs-oregon",
+      "summary": "PeaceHealth has growth opportunities for clinical nurses at all stages in their careers. Ask around and you’ll find it’s common for a caregiver to start with us as a CNA or nurse tech and stay at PeaceHealth for their full career.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -514,10 +997,118 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "efa1b5f2b806ac44",
-      "title": "Menu - In-N-Out Burger",
-      "url": "https://www.in-n-out.com/menu",
-      "summary": "Menu Double-Double ® Cheeseburger Hamburger French Fries Beverages Shakes Not So Secret Menu Food Quality Nutrition Info",
+      "id": "58026b1e129e4891",
+      "title": "Parent Portal - Beyond Textbooks",
+      "url": "https://www.beyondtextbooks.org/Parent_Portal",
+      "summary": "About Beyond Textbooks What is Beyond Textbooks? Teacher Testimonials What is My Child Learning, and How Can I Help? Useful Web Links Preschool and Pre-K Kindergarten 1st Grade 2nd Grade 3rd Grade 4th Grade 5th Grade 6th Grade 7th Grade 8th Grade High School Math High School Reading High School Writing High School Science High School Social Studies High School ACT Resources Benchmark/Quarterly ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "58cc6ef51e6f4a9e",
+      "title": "PeaceHealth Careers",
+      "url": "https://careers.peacehealth.org/",
+      "summary": "Who is PeaceHealth? PeaceHealth, based in Vancouver, Washington, is a not-for-profit Catholic health system offering care to communities in Washington, Oregon and Alaska.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c115d7a7e94578c8",
+      "title": "PeaceHealth Jobs & Careers | Health eCareers",
+      "url": "https://www.healthecareers.com/healthcare-employers/peacehealth-2/40858",
+      "summary": "PeaceHealth, a non-profit Catholic health system, serves urban and rural communities across Washington, Oregon and Alaska. Its 3,200 physicians and clinicians offer comprehensive healthcare at more than 160 multi-specialty clinics and nine medical centers throughout the Pacific Northwest.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4d60d0ea82ed437f",
+      "title": "PeaceHealth | Care for everyone",
+      "url": "https://www.peacehealth.org/",
+      "summary": "Speak with a PeaceHealth provider from the comfort of your own home. All you need is a computer or other preferred mobile device and a working internet connection.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e6f0a28460a6bf6",
+      "title": "Register to Vote in Washington | WA Secretary of State",
+      "url": "https://www.sos.wa.gov/elections/voters/voter-registration/register-vote-washington",
+      "summary": "Automatic Voter Registration: If you get a Washington state enhanced driver license or enhanced ID, election officials will automatically register you to vote or update your existing record.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -541,12 +1132,67 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1e0d7714608607c9",
-      "title": "Retail Locations – In-N-Out Burger Company Store",
-      "url": "https://shop.in-n-out.com/pages/retail-locations",
-      "summary": "Visit us at one of our two retail locations in Baldwin Park, CA and Las Vegas, NV.",
+      "id": "2cb3855a59fae0c6",
+      "title": "Returns | Fleet Feet",
+      "url": "https://www.fleetfeet.com/returns",
+      "summary": "Fleet Feet reserves the right and has the discretion to decline an exchange and issue a full refund. Any abuse of this returns policy, including fraudulent, excessive, or unreasonable returns, may result in the rejection of future transactions or returns.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0f4154bea8bf9c4b",
+      "title": "Search - Ancestry",
+      "url": "https://www.ancestry.com/search?searchMode=advanced",
+      "summary": "Stories, memories & histories Newspapers Periodicals & magazines Pictures Maps, atlases & gazetteers African American collections American Indian records Jewish family history New York state records Quaker collections",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f55da3c65e2e6be",
+      "title": "Shop Running Shoes, Walking Shoes & Gear | Fleet Feet Vancouver",
+      "url": "https://www.fleetfeet.com/s/spokane/retail",
+      "summary": "Shop running shoes, walking shoes, apparel and gear at Fleet Feet Spokane. Get personalized outfitting, 3D foot scanning, sports bra fittings and expert advice to find your best fit.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -569,12 +1215,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2df9121ea71d68f0",
-      "title": "Support / Corporate Home - In-N-Out Burger",
-      "url": "https://www.in-n-out.com/employment/corporate/home",
-      "summary": "Since 1948, we have maintained a simple philosophy — serve only the highest quality product, prepare it in a clean and sparkling environment, and serve it in a warm and friendly manner. We have built a reputation for fresh, made-to-order foods prepared and served by friendly, well-trained Associates. Today, our Baldwin Park complex and Irvine offices serve as our corporate facilities. We ...",
+      "id": "4dc23c94ba7ee42c",
+      "title": "Spokane - Fleet Feet",
+      "url": "https://www.fleetfeet.com/s/spokane/locations/spokane",
+      "summary": "Fleet Feet Spokane is your home for Running and Walking Shoes, Apparel and Accessories to keep you moving. Our FIT Experience will help you find the best products to meet your needs. Our Training Programs will help you achieve your goals while meeting friends along the way. If you want to complete a 5k, 10k, Half or Full Marathon, or simply walk a mile, we have the coaches and mentors to help ...",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -596,12 +1242,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "39cd4255f7461229",
-      "title": "What is DashPass? | Customer Support | DoorDash Help Center",
-      "url": "https://help.doordash.com/en-us/consumers/article/what-is-dashpass",
-      "summary": "Get $0 delivery fees with DashPass! Learn about benefits, pricing, free trials, eligibility, and how to sign up for DoorDash's subscription service.",
+      "id": "792f91faf4c027cc",
+      "title": "Spokane | Fitness | Run | Walk | Training Programs - Fleet Feet",
+      "url": "https://www.fleetfeet.com/s/spokane",
+      "summary": "Fleet Feet Spokane is your home for Running and Walking Shoes, Apparel and Accessories to keep you moving. Our FIT Experience will help you find the best products to meet your needs. Our Training Programs will help you achieve your goals while meeting friends along the way. If you want to complete a 5k, 10k, Half or Full Marathon, or simply walk a mile, we have the coaches and mentors to help ...",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -623,25 +1269,215 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "30d134f475324e14",
-      "title": "56 Tool Box for sale | eBay",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=56+tool+box&_sop=12",
-      "summary": "Get the best deals for 56 Tool Box at eBay.com. We have a great online selection at the lowest prices with Fast & Free shipping on many items!",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "fc62b20d83c5ccfb",
+      "title": "Submit a request – Beyond Textbooks Support",
+      "url": "https://help.beyondtextbooks.org/hc/en-us/requests/new",
+      "summary": "Please enter the details of your request. A member of our support staff will respond as soon as possible.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eccb111c7d3b69f7",
+      "title": "Topics – Beyond Textbooks Support",
+      "url": "https://help.beyondtextbooks.org/hc/en-us/community/topics",
+      "summary": "Submit a request Community Search Beyond Textbooks Support Community Community Topics Show topics Show all posts New post Nothing to see here yet",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e36c52b82d594865",
+      "title": "Upcoming Races - Fleet Feet Spokane",
+      "url": "https://www.fleetfeet.com/s/spokane/races",
+      "summary": "Fleet Feet Spokane is your home for Running and Walking Shoes, Apparel and Accessories to keep you moving. Our FIT Experience will help you find the best products to meet your needs. Our Training Programs will help you achieve your goals while meeting friends along the way. If you want to complete a 5k, 10k, Half or Full Marathon, or simply walk a mile, we have the coaches and mentors to help ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "98acc494ef1d03c4",
+      "title": "What is BT? - Beyond Textbooks",
+      "url": "https://www.beyondtextbooks.org/About_Us/About_Beyond_Textbooks/What_is_BT",
+      "summary": "In practice, Beyond Textbooks, a comprehensive program of curriculum development, instructional improvement, student assessment, and multi-level interventions, is the result of this philosophy of planning, teaching, and sharing.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "afd34eb7a9cb2091",
+      "title": "302 Moved",
+      "url": "https://www.google.de/travel/",
+      "summary": "302 Moved 302 Moved The document has moved here.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
       ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9dceb0d43d74f6ec",
+      "title": "amazon - How to make S3 Presigned url single use only? - Information ...",
+      "url": "https://security.stackexchange.com/questions/227748/how-to-make-s3-presigned-url-single-use-only",
+      "summary": "Amazon S3 provides read-after-write consistency for PUTS of new objects in your S3 bucket in all Regions with one caveat. The caveat is that if you make a HEAD or GET request to a key name before the object is created, then create the object shortly after that, a subsequent GET might not return the object due to eventual consistency.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed45d89c2cde8c08",
+      "title": "Best practices for managing AWS EC2 Key Pairs",
+      "url": "https://security.stackexchange.com/questions/129521/best-practices-for-managing-aws-ec2-key-pairs",
+      "summary": "Regarding AWS specific details: you can and should create your own key pairs outside of AWS and upload the public keys to Amazon. You can find the documentation for creating your own keys for both Linux and Windows systems in the Amazon EC2 documentation.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "015d52723f0341b5",
+      "title": "Current (Feb 2024) High-Severity unfixed Linux Kernel CVEs",
+      "url": "https://security.stackexchange.com/questions/275821/current-feb-2024-high-severity-unfixed-linux-kernel-cves",
+      "summary": "Our vulnerability scanner (AWS Inspector V2) in the last couple of weeks started reporting ~10 High severity CVEs with the Linux kernel in our version of Debian (Bookworm, upgraded to latest available kernel version - 6.1.76) used by our app's Docker image, along with dozens more Medium severity CVEs. All of these are unfixed / unpatched.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
         "model",
         "tool",
-        "retail"
+        "sdk"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -653,66 +1489,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d191a113ac92155d",
-      "title": "Campus Apps and Links | Chico Portal",
-      "url": "https://portal.csuchico.edu/uPortal/f/TEST/normal/render.uP?pCt=csuc-campus-apps-and-links.u18l1n1111&pCs=minimized&pCp",
-      "summary": "uPortal by Apereo: The academic open source portal built for higher education by higher education",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "open source"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5106a197b77950ce",
-      "title": "Campus Emergency Preparedness | Chico Portal",
-      "url": "https://portal.csuchico.edu/uPortal/p/csuc-emergency-preparedness.ctf1/max/render.uP",
-      "summary": "uPortal by Apereo: The academic open source portal built for higher education by higher education",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "open source"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "64cefcc812d69946",
-      "title": "Current Local Time in Dubai, Dubai, United Arab Emirates",
-      "url": "https://www.timeanddate.com/worldclock/united-arab-emirates/dubai",
-      "summary": "Current local time in United Arab Emirates – Dubai – Dubai. Get Dubai's weather and area codes, time zone and DST. Explore Dubai's sunrise and sunset, moonrise and moonset.",
+      "id": "414d9c1bde766080",
+      "title": "Does domain resolve to CDN (Cloudfront) IP and not the actual web-app ...",
+      "url": "https://security.stackexchange.com/questions/246264/does-domain-resolve-to-cdn-cloudfront-ip-and-not-the-actual-web-app-server",
+      "summary": "If a web-app is using cloudfront as CDN, what happens if I ping the domain? You are pinging CloudFront, not the domain. The DNS entry for the domain point to CloudFront, and CloudFront stays in the middle between you and the domain. The name resolves to different IPs for load balancing. As CloudFront primarly is a cache (among other things), answering with different IP addresses means clients ...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -736,118 +1516,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "115d3e03a21ef050",
-      "title": "Current local time in Dubai, United Arab Emirates",
-      "url": "https://www.worldtimeserver.com/current_time_in_AE.aspx?city=Dubai",
-      "summary": "Try our World Meeting Planner and get a color-coded chart comparing the time of day in Dubai, United Arab Emirates with all of the other international locations where others will be participating.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c5628fb02561f827",
-      "title": "Current Time in Dubai — Live Clock, Time Zone & UTC Offset",
-      "url": "https://www.worldtimenow.net/time/dubai/",
-      "summary": "What time is it in Dubai right now? See the live clock, UTC+4 offset, time zone details, and Daylight Saving Time info for Dubai, UAE.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b04432798601c24a",
-      "title": "Current Time in Dubai, United Arab Emirates (+04) | Time.now",
-      "url": "https://time.now/dubai/",
-      "summary": "Dubai keeps its clocks on UTC +04:00, in the Asia/Dubai time zone. There is no daylight-saving shift here; the offset stays fixed year-round. Day and night are close to even today, with about 12 hours of daylight. At these subtropical latitudes the seasonal spread in daylight is noticeable but mild. At about 24 m, Dubai is practically at sea level.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "468e8f9c9a4006d3",
-      "title": "Current Time in Dubai, United Arab Emirates — Live Clock, Weather ...",
-      "url": "https://worldclocklive.com/time/dubai/",
-      "summary": "What time is it in Dubai right now? Live clock with seconds, current weather, timezone info, top attractions, restaurants, hotels and travel tips for Dubai, United Arab Emirates.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0858bfb872f9153e",
-      "title": "Directions to Owl & Company Bookshop - MapQuest",
-      "url": "https://www.mapquest.com/directions/to/us/california/owl-company-bookshop-345792026",
-      "summary": "Driving directions to Owl & Company Bookshop, 3941 Piedmont Ave, Oakland, CA including road conditions, live traffic updates, and reviews of local businesses along the way.",
+      "id": "4126235f47f592ba",
+      "title": "Erweiterte Bildersuche von Google",
+      "url": "https://images.google.de/advanced_image_search?hl=de-US&authuser=0",
+      "summary": "Suche in einer Website, zum Beispiel sfmoma.org , oder schränke deine Ergebnisse auf eine Domain wie .edu, .org oder .gov ein.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -871,23 +1543,22 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "206b8eb85226a442",
-      "title": "Faculty Links | Chico Portal",
-      "url": "https://portal.csuchico.edu/uPortal/p/csuc-faculty-links.ctf1/max/render.uP?pCp",
-      "summary": "uPortal by Apereo: The academic open source portal built for higher education by higher education",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "ba9624094e92a776",
+      "title": "Erweiterte Buchsuche - Google",
+      "url": "https://books.google.de/advanced_book_search",
+      "summary": "Erweiterte Buchsuche Erweiterte Buchsuche",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "open source"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -899,218 +1570,26 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ecef977aae5f1a5c",
-      "title": "Important Links | Chico Portal",
-      "url": "https://portal.csuchico.edu/uPortal/f/u18l1s4/p/csuc-student-important-links.u18l1n35/max/render.uP?pCp",
-      "summary": "uPortal by Apereo: The academic open source portal built for higher education by higher education",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "open source"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6f150aa85ab07924",
-      "title": "Link to Student Center | Chico Portal",
-      "url": "https://portal.csuchico.edu/uPortal/p/csuc-student-link-to-student-center.ctf1/max/render.uP",
-      "summary": "uPortal by Apereo: The academic open source portal built for higher education by higher education",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "open source"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6dcf973fa402b07d",
-      "title": "Log in - My Court Services - Los Angeles Superior Court",
-      "url": "https://mycourtservices.lacourt.org/",
-      "summary": "Login to My Court Services Returning Customers Sign in using our secure server for access to your information. View privacy policy.",
+      "id": "2fd8ed12b61cb048",
+      "title": "Fauci's newly released COVID diaries reveal bizarre fixation on fame as ...",
+      "url": "https://www.city-data.com/forum/politics-other-controversies/3534989-faucis-newly-released-covid-diaries-reveal-7.html",
+      "summary": "Fauci's newly released COVID diaries reveal bizarre fixation on fame as pandemic deaths mounted",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "privacy"
+        "released"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5befefc01b9e19fc",
-      "title": "Official Email Communications | Chico Portal",
-      "url": "https://portal.csuchico.edu/uPortal/p/csuc-email-policies.ctf1/max/render.uP?pCp",
-      "summary": "California State University, Chico considers e-mail to be the essential method for communicating official University business with students. Each student is provided with a campus WildcatMail account. Review the contents of your WildcatMail account on a frequent and regular basis. Official notifications from the University related to enrollment, academic status, fees, holds, and financial aid ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "49f75974cb8b6c63",
-      "title": "OWL & COMPANY BOOKSHOP - Oakland CA - Hours, Directions, Reviews ...",
-      "url": "https://www.loc8nearme.com/california/oakland/owl-and-company-bookshop/3160934/",
-      "summary": "Owl & Company Bookshop at 3941 Piedmont Ave, Oakland CA 94611 - hours, address, map, directions, phone number, customer ratings and reviews.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "26c530cdaa38b5b0",
-      "title": "Owl & Company Bookshop in 3941 Piedmont Ave, Oakland, CA 94611 ...",
-      "url": "https://wanderboat.ai/local-businesses/united-states/oakland/owl-%26-company-bookshop/QMET9IrYQU-wSPBii6kXbQ",
-      "summary": "Plan your visit to Owl & Company Bookshop in 3941 Piedmont Ave, Oakland, CA 94611. Check opening hours, address, photos, visitor reviews, directions, nearby restaurants, attractions, hotels and itinerary ideas of Owl & Company Bookshop with Wanderboat.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9f80a56bdcf1f97f",
-      "title": "Owl & Company Bookshop in Oakland, CA 94611 - Chamber of Commerce",
-      "url": "https://www.chamberofcommerce.com/business-directory/california/oakland/book-store/2013278204-owl-company-bookshop",
-      "summary": "Owl & Company Bookshop located at 3941 Piedmont Ave, Oakland, CA 94611 - reviews, ratings, hours, phone number, directions, and more.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a39655c9c2c775a6",
-      "title": "Owl & Company Bookshop, 3941 Piedmont Ave, Oakland, CA 94611, US - MapQuest",
-      "url": "https://www.mapquest.com/us/california/owl-company-bookshop-345792026",
-      "summary": "Owl & Company Bookshop is an independent bookstore in Oakland, CA, offering a diverse selection of new and used books across various genres. The shop includes a dedicated children's section and frequently hosts community events such as author signings and book clubs.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
+        "model",
         "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1120,10 +1599,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "392732e5f902bac3",
-      "title": "Owl & Company Bookshop, 3941 Piedmont Avenue, Oakland, CA (2026)",
-      "url": "https://www.findglocal.com/US/Oakland/191052194313276/Owl-%26-Company-Bookshop",
-      "summary": "Contact information, map and directions, contact form, opening hours, services, ratings, photos, videos and announcements from Owl & Company Bookshop, Independent Bookstore, 3941 Piedmont Avenue, Oakland, CA.",
+      "id": "6c8bb4c1788b9b33",
+      "title": "Google",
+      "url": "https://www.google.de/index.html",
+      "summary": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -1147,10 +1626,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7bd02cea9c9363fe",
-      "title": "Owl & Company Bookshop, Oakland, CA - 3941 Piedmont Avenue - Book Stores",
-      "url": "https://www.whereorg.com/owl-company-bookshop-24319070",
-      "summary": "Business profile of Owl & Company Bookshop, located at 3941 Piedmont Avenue, Oakland, CA 94611. Browse reviews, directions, phone numbers and more info on Owl & Company Bookshop.",
+      "id": "5be07eede5db9eaa",
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.de/?hl=it",
+      "summary": "Cerca nel più grande indice di testi integrali mai esistito. La tua raccolta",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -1174,1000 +1653,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7a873d1f24efbc6e",
-      "title": "Owl & Company Bookshop, Oakland, CA - Wanderlog",
-      "url": "https://wanderlog.com/place/details/5942993/owl--company-bookshop",
-      "summary": "Owl & Company Bookshop is a charming and cozy secondhand bookstore that offers a wide variety of new and used books across different genres such as psychology, history, fiction, science fiction, and children's literature.",
+      "id": "bf9823f5911c97f8",
+      "title": "Google Earth",
+      "url": "https://www.google.de/intl/de/earth/index.html",
+      "summary": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie zusammengesetzt? Und wie oft werden sie aktualisiert? In diesem Video erfährst du mehr über Pixel, Ebenen und die Personen, die die 3D-Bilder von Google Earth erstellen.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "91c45c24940a8c25",
-      "title": "Owl and Co.",
-      "url": "https://owlandco.square.site/",
-      "summary": "You don't have any items in your cart.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "42ee96b71261ba7d",
-      "title": "Owl and Company Bookshop",
-      "url": "https://bookshop.org/shop/owlandcompany",
-      "summary": "Owl and Company Bookshop is a women owned independent bookstore in Oakland, California.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "81a033bb6fa31bc6",
-      "title": "Student Center | Chico Portal",
-      "url": "https://portal.csuchico.edu/uPortal/p/csuc-student-center.ctf1/max/render.uP?pCp",
-      "summary": "uPortal by Apereo: The academic open source portal built for higher education by higher education",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "open source"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9dfbc406e4008496",
-      "title": "Superior Court of Los Angeles County | Access a Case",
-      "url": "https://www.lacourt.ca.gov/pages/lp/access-a-case",
-      "summary": "Whether you need to search for a case, review case details, check court calendars or order copies of records, this page offers a streamlined process to access the information you need.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "policy"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "684265a5ec39619b",
-      "title": "Time in Dubai, United Arab Emirates - World Time Buddy",
-      "url": "https://www.worldtimebuddy.com/united-arab-emirates-dubai",
-      "summary": "Find current time in Dubai, United Arab Emirates and quickly convert it other time zones with this easy-to-use, modern time zone converter.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0e46e48642730053",
-      "title": "Time in Dubai, United Arab Emirates now",
-      "url": "https://time.is/Dubai?v=1.0.20",
-      "summary": "Exact time now, time zone, time difference, sunrise/sunset time and key facts for Dubai, United Arab Emirates.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "647c054af0b5ce1f",
-      "title": "Time Now in Dubai (Emirate), United Arab Emirates",
-      "url": "https://time.now/emirate/dubai/",
-      "summary": "Get the exact current time in the Emirate of Dubai, United Arab Emirates. Live clock with seconds, UTC offset and daylight-saving status for the Asia/Dubai…",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "22da5d67fd32d4ea",
-      "title": "Time Zone in Dubai, Dubai, United Arab Emirates (Dubayy)",
-      "url": "https://www.timeanddate.com/time/zone/united-arab-emirates/dubai",
-      "summary": "Historic, present and future dates for daylight saving time and clock changes. Time changes between years 2020 and 2029 in United Arab Emirates – Dubai – Dubai are shown here.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "386f44c23b4a2d91",
-      "title": "Welcome | Chico Portal",
-      "url": "https://portal.csuchico.edu/uPortal/",
-      "summary": "uPortal by Apereo: The academic open source portal built for higher education by higher education",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "open source"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6764e125870dbb8b",
-      "title": "What time is it in Dubai, United Arab Emirates right now?",
-      "url": "https://24timezones.com/Dubai/time",
-      "summary": "Exact time in Dubai time zone now. Official Dubai timezone and time change dates for year 2026.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fc86a234df3b9119",
-      "title": "12 Best Places to Visit in Wales - Lonely Planet",
-      "url": "https://www.lonelyplanet.com/articles/best-places-to-visit-in-wales",
-      "summary": "Writer Kerry Walker picks 12 Wales favorites, from rugged mountains to puffin islands. Head to Eryri (Snowdonia) for Snowdon's summit or Bannau Brycheiniog's bracken-cloaked moors. Cardiff rewards culture lovers with its castle, Bute Park and the National Museum. For literary wanders, try Hay-on-Wye; for wild coasts, head to Pembrokeshire or Gower.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8e5ed9d229af1e40",
-      "title": "27 Best Places to Visit in Wales (By a Local) - Travel Lemming",
-      "url": "https://travellemming.com/places-to-visit-in-wales/",
-      "summary": "Many visitors head to Wales’ highest mountain, Yr Wyddfa (Snowdon), but there is so much more to see! Seasoned hikers could head up a lesser-known peak such as Y Garn, or take on some of the Wales Coast Path.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5666e51282d16c0a",
-      "title": "56 in. Top Chests - Harbor Freight Tools",
-      "url": "https://www.harborfreight.com/tool-storage-organization/tool-storage/top-chests/56-in.html",
-      "summary": "Harbor Freight buys their top quality tools from the same factories that supply our competitors. We cut out the middleman and pass the savings to you!",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cce0d7a522a9c3e0",
-      "title": "56 in. x 22 in. Roll Cab, Series 3, Red - Harbor Freight Tools",
-      "url": "https://www.harborfreight.com/56-in-x-22-in-roll-cab-series-3-red-58714.html",
-      "summary": "Amazing deals on this Red 56In Roller Cabinet, Series 3 at Harbor Freight. Quality tools & low prices.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "346a2586ee106337",
-      "title": "56\" U.S. General Roller Cabinet (Various Colors) - 2024-12-22",
-      "url": "https://slickdeals.net/f/18012939-u-s-general-56-roller-cabinet-at-harbor-freight-599-99",
-      "summary": "That is the main difference between a consumer and pro tool box is the gauge of the steel, the slides and how deep the drawers are. The box specs say 22\" so the draws are going to be maybe 19\" deep.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8dcae15ba345aa16",
-      "title": "Campus Apps & Links | Chico Portal",
-      "url": "https://portal.csuchico.edu/uPortal/f/TEST/p/csuc-campus-apps-and-links.u18l1n1111/max/render.uP?pCp",
-      "summary": "Chico State's \"official\" online bookstore where you can buy text books, course materials, schools supplies, clothing, gifts, and many other items.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "34371618fed719f8",
-      "title": "Coupons for - Harbor Freight Tools",
-      "url": "https://go.harborfreight.com/sku/70388/",
-      "summary": "The U.S. GENERAL® Series 3 Tool Storage line is designed to be modular to offer endless configurations for maximum flexibility so the system can grow with your needs.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "40f275828e9157f0",
-      "title": "Court Access Portal",
-      "url": "https://cap.lacourt.ca.gov/",
-      "summary": "Court Access Portal",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2d3de2c81ac7cf9",
-      "title": "Create or open a map - Computer - My Maps Help - Google Help",
-      "url": "https://support.google.com/mymaps/answer/3024454?hl=en&co=GENIE.Platform%3DDesktop",
-      "summary": "View maps you can’t edit If you can open a map but can’t edit what’s on it, you're in the map viewer. While in the map viewer, you can still: Search the map contents Show or hide layers View the map with satellite imagery Share, export, and print the map If you own a map and want to see how it looks in the map viewer, click Preview .",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e2d335d274caac4b",
-      "title": "CSU Connect Federation - California State University, Chico",
-      "url": "https://portal.csuchico.edu/uPortal/f/my-portal/normal/render.uP",
-      "summary": "Access CSU Chico's portal for academic and administrative resources, student services, and learning management tools.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dca94c5ba311418f",
-      "title": "History of Wales - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/History_of_Wales",
-      "summary": "The history of what is now Wales (Welsh: Cymru) begins with evidence of a Neanderthal presence from at least 230,000 years ago, while Homo sapiens arrived by about 31,000 BC.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5041ddca8eeb793a",
-      "title": "ICON 56 in. Professional Top Chest – Black - Harbor Freight Tools",
-      "url": "https://go.harborfreight.com/sku/56281/",
-      "summary": "Compare our price of $1299.00 to SNAP-ON at $6425.00 (model number: KRL791APBO). Save $3,871.00 by shopping at Harbor Freight. The ICON™ Professional Top Chest provides even more storage and drawer space, again, with the same construction and drawer slides found in the base cabinets.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c691bd1fc88c0b21",
-      "title": "Introduction to Wales | VisitWales",
-      "url": "https://www.visitwales.com/info/introduction-wales",
-      "summary": "Find out key facts and figures about Wales - the country and its history, getting there, climate, culture and other useful information.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6cf4c9dab8cc0979",
-      "title": "LA Court",
-      "url": "https://ww2.lacourt.org/home.htm",
-      "summary": "In addition to forms approved by the State Judicial Council, the Superior Court of Los Angeles has approved a variety of local forms that you may need to use as your case continues.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "84538b32a4253a4a",
-      "title": "Los Angeles County Court Case Search",
-      "url": "https://www.lacountyca.org/Court_Case_Search.html",
-      "summary": "The Superior Court of California, County of Los Angeles maintains the official online systems for cases filed in the county’s trial courts. The court provides separate access options for appellate, civil, criminal, residential eviction, family law, probate, and small claims cases.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fc669651e79ebe36",
-      "title": "Los Angeles County Superior Court - Central District - Los Angeles",
-      "url": "https://locator.lacounty.gov/lac/Location/3176801/los-angeles-county-superior-court---central-district---los-angeles",
-      "summary": "Los Angeles County Superior Court - Central District - Los Angeles This state trial court is an L A County Superior Court with jurisdiction over cases that take place in the county of Los Angeles.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "69b32b5b9eba36e9",
-      "title": "Los Angeles County Superior Court - CourtConnect",
-      "url": "https://lacc.lacourt.org/",
-      "summary": "The Superior Court of Los Angeles County will introduce a new department (courtroom) numbering system at the Stanley Mosk Courthouse. Click here for information.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8a06bb2ea1e21781",
-      "title": "Los Angeles County Superior Court - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Los_Angeles_County_Superior_Court",
-      "summary": "Los Angeles County Superior Court ... The Superior Court of California, County of Los Angeles, informally known as the Los Angeles County Superior Court, is the California Superior Court with jurisdiction over Los Angeles County. It is the largest single unified trial court in the United States.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f58217c56b00e62",
-      "title": "Measure distance between points - Computer - Google Maps Help",
-      "url": "https://support.google.com/maps/answer/1628031?hl=en&co=GENIE.Platform%3DDesktop",
-      "summary": "Important: If you're using Maps in Lite mode, you can’t measure the distance between points. If there’s a lightning bolt at the bottom, you’re in Lite mode. Learn more about other versions of Google Maps.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8919df12daa5eb9e",
-      "title": "Obtenir et afficher les itinéraires dans Google Maps",
-      "url": "https://support.google.com/maps/answer/144339?hl=fr&co=GENIE.Platform%3DDesktop",
-      "summary": "Google Maps vous permet d'obtenir des itinéraires en voiture, en transports en commun, à pied, en partage de course, à vélo, en avion ou à moto. Si plusieurs itinéraires vers votre destination sont possibles, le meilleur s'affiche en bleu et tous les autres en gris. Certains itinéraires Google Maps sont en cours de développement, et leur disponibilité peut être limitée.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9a6939ae42af6636",
-      "title": "Online Services - LA Court",
-      "url": "https://ww2.lacourt.org/website/FindaCase.aspx",
-      "summary": "Document searches incur a public access fee to reimburse the Court for the costs of providing public access to its electronic records (California Rule of Court 2.506 and Government Code Section 68150 (l)). To access our online services, first-time users must create an account or sign-in as a guest.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "575648c67d8763e0",
-      "title": "Salem Used Car Dealer | Volkswagen of Salem",
-      "url": "https://www.vwofsalem.com/used-inventory/index.htm",
-      "summary": "Our team looks forward to welcoming you, learning about your needs, and helping you discover the used vehicle that will enhance your daily life and adventures throughout Oregon and beyond.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ccf29cc3172d8187",
-      "title": "Superior Court of Los Angeles County | Home",
-      "url": "https://www.lacourt.ca.gov/home",
-      "summary": "The Superior Court of Los Angeles County serves our community by providing equal access to justice through the fair, timely and effective resolution of all cases.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy",
-        "community"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "430600af94a6f2bf",
-      "title": "Top Translation Services in Phoenix - Sep 2026 Rankings - Clutch",
-      "url": "https://clutch.co/translation/phoenix",
-      "summary": "Kathy Hansen Interpreting & Translation Services is a small Translation company located in Phoenix, Arizona. The team provides Translation and Language Interpretation.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8f4a41ff0173d730",
-      "title": "U.S. General Series 3 56\" Roll Cab | Vehicle Service Pros",
-      "url": "https://www.vehicleservicepros.com/directory/equipment/tool-storage/toolboxes-and-tool-carts/product/53071740/harbor-freight-us-general-series-3-56-roll-cab",
-      "summary": "Four 6\" casters (two fixed and two swivel-locking) allow the unit to be moved around the workspace, even when fully loaded. To minimize tool movement, pre-cut nonslip drawer liners are included.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2cf0b70552e89aed",
-      "title": "UK breaks and family holiday destinations | Visit Wales",
-      "url": "https://www.visitwales.com/",
-      "summary": "Home to Caerdydd (Cardiff), the young and creative capital city, South Wales is a hub of sporting events and Welsh culture. Discover coastal hikes, vibrant communities and the serenity of the Wye Valley.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4c962ff26d8aea75",
-      "title": "US General 56 inch Tool Box, Top Chest. How is the quality ... - YouTube",
-      "url": "https://www.youtube.com/watch?v=5mO95rHxalI",
-      "summary": "US General 56 inch Tool Box, Top Chest. How is quality? Is it worth the money? When should you buy? Harbor Freight U.S. ...more",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
         "video",
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "video",
       "routing_targets": [
@@ -2179,12 +1681,445 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "051e6c45dec754f0",
-      "title": "Volkswagen of Salem - Salem, OR | Cars.com",
-      "url": "https://www.cars.com/dealers/195558/volkswagen-of-salem/",
-      "summary": "They said that \"in Oregon this is a contract sale and we have no obligation to do anything at this point\". I bought the car from a guy named Azael Cardoza. He goes by AZ. I would avoid him.",
+      "id": "d5344fdf24a7762a",
+      "title": "Google Translate",
+      "url": "https://translate.google.de/?hl=nl",
+      "summary": "Deze kosteloze service van Google kan woorden, zinnen en webpagina's onmiddellijk vertalen tussen het Nederlands en meer dan 100 andere talen.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5140446761920740",
+      "title": "Google Trends",
+      "url": "https://trends.google.de/trends/?hl=en",
+      "summary": "Explore search interest of terms and topics by time, location and popularity on Google Trends",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b5a335869b6ff430",
+      "title": "How hard to hack are S3 Last-Modified timestamps?",
+      "url": "https://security.stackexchange.com/questions/259919/how-hard-to-hack-are-s3-last-modified-timestamps",
+      "summary": "See the Cohasset Associates Assessment of the security compliance of S3: It is Cohasset’s opinion that Amazon S3, when properly configured and when Object Lock mode is set to Compliance, retains records in nonrewriteable and non-erasable format and meets the relevant storage requirements set forth in the above Rules.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "hack",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d882740de38a1b0f",
+      "title": "How to Fix DKIM Alignment Issues with AWS SES in Lambda Emails to ...",
+      "url": "https://security.stackexchange.com/questions/279092/how-to-fix-dkim-alignment-issues-with-aws-ses-in-lambda-emails-to-prevent-spam-f",
+      "summary": "Question:How can I resolve this DKIM alignment issue with AWS SES to prevent emails from going to the spam folder? Is there a way to ensure the DKIM alignment is correct when sending emails from a Lambda function?",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77477dd79f87cc1e",
+      "title": "Is an AWS \"Access Key ID\" a secret?",
+      "url": "https://security.stackexchange.com/questions/187992/is-an-aws-access-key-id-a-secret",
+      "summary": "While the AWS Access Key ID is like a username (and the Secret Access Key is like a password), the Access Key ID is also designed to be shared and AWS does this explicitly with the AWS Presigned Object URL feature as mentioned by John Hanley in a previous comment. This is an expanded response.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c406c6a11c1be032",
+      "title": "Keeping AWS account ID secret - Information Security Stack Exchange",
+      "url": "https://security.stackexchange.com/questions/192539/keeping-aws-account-id-secret",
+      "summary": "Must my AWS account ID be kept secret? Can anything at all be done using just the AWS account ID? From the AWS documentation: The AWS account ID is a 12-digit number, such as 123456789012, that you use to construct Amazon Resource Names (ARNs).",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d2e30457f2ca0db1",
+      "title": "More than three domains hosted on the same IP address",
+      "url": "https://security.stackexchange.com/questions/216640/more-than-three-domains-hosted-on-the-same-ip-address",
+      "summary": "Therefore, if you discovered that the DNS for other domains was pointing to the IP address of your VPS on AWS, and confirmed that the sites in question are actually being hosted on that IP address, then yes this would be a sign that your site had been hacked.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "106047210543a631",
+      "title": "Search Clara Newell Obituaries and Funeral Services",
+      "url": "https://www.legacy.com/obituaries/name/newell/clara",
+      "summary": "Search all Clara Newell Obituaries and Death Notices to find upcoming funeral home services, leave condolences for the family, and research genealogy.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b26eb319b5d65801",
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.de/intl/de/landing/transit/",
+      "summary": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your participation - it is simple and free.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d0a8a5905fc30a44",
+      "title": "Vulnerabilities – Application Security – Google",
+      "url": "https://maps.google.de/intl/ro/about/appsecurity/research/",
+      "summary": "Vulnerabilities – Application Security – Google",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "09fd5101d6ae8ff5",
+      "title": "Why is my computer connected to amazon instances",
+      "url": "https://security.stackexchange.com/questions/232053/why-is-my-computer-connected-to-amazon-instances",
+      "summary": "Under Amazon, it's something under amazonaws.com, (and in fact, the ec2-XX-XX-XX-XX should correspond to the IP of the host), and under Google Cloud it's \"googleusercontent.com\". So, in summary, what you're seeing is that some resource requested by your computer is hosted by someone using AWS as their service provider. It's not inherently ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0443c4d1ae6a2a9e",
+      "title": ".net - Uninstalling an MSI file from the command line without using ...",
+      "url": "https://stackoverflow.com/questions/450027/uninstalling-an-msi-file-from-the-command-line-without-using-msiexec",
+      "summary": "msiexec is command prompt software that installs an MSI program. But I have found that you can install an MSI file from the command line by just typing in the name of the MSI file on the command li...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dbcf1676d5f683cf",
+      "title": "California Obituaries - over 9,000 CA Obituary Indexes",
+      "url": "https://www.newspaperobituaries.net/california/index.html",
+      "summary": "browse over 9,000 California obituary indexes, including newspaper obituaries, death indexes, funeral home obituaries..",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fe9d3525ae5d25bf",
+      "title": "California Obituaries Archives Online | Obits Archive",
+      "url": "https://www.obitsarchive.com/obituaries/usa/california",
+      "summary": "Find your ancestry info and recent death notices for relatives and friends.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f75f5a3c80593606",
+      "title": "COLD: Woman Writes Book & Does Interview On Grieving Loss of Husband ...",
+      "url": "https://www.city-data.com/forum/current-events/3527617-cold-woman-writes-book-does-interview.html",
+      "summary": "City-Data Forum > General Forums > Current Events COLD: Woman Writes Book & Does Interview On Grieving Loss of Husband... Now Convicted of His Murder",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb454b3190c94f1d",
+      "title": "Creation of mother nature (genesis, faith, Catholic, Biblical ...",
+      "url": "https://www.city-data.com/forum/religion-spirituality/3512326-creation-mother-nature-3.html",
+      "summary": "City-Data Forum > General Forums > Religion and Spirituality Creation of mother nature (genesis, faith, Catholic, Biblical)",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "331e6a1354401574",
+      "title": "Customize the Desktop Icons in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/personalization/customize-the-desktop-icons-in-windows",
+      "summary": "Learn how to customize the default desktop icons in Windows, adjust their size to suit your preferences, and show or hide all icons as needed.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2205,12 +2140,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2344c58cad4884de",
-      "title": "VOLKSWAGEN OF SALEM - Updated September 2026 - Yelp",
-      "url": "https://www.yelp.com/biz/volkswagen-of-salem-salem-2",
-      "summary": "Specialties: Why is Volkswagen of Salem the Go-To Spot for Portland, Corvallis, Keizer and McMinnville Drivers Seeking a New or Used Volkswagen Vehicle? It could be our varied and accommodating selection of new Volkswagen models, including the much-loved Volkswagen Jetta, Passat, Tiguan, Golf Alltrack, Golf GTI, and Atlas. Perhaps it's our equally vast range of high-quality, competitively ...",
+      "id": "93b8c6cf60fa7e06",
+      "title": "Day Drinking? - Retirement -Social Security, age, moving, relocation ...",
+      "url": "https://www.city-data.com/forum/retirement/3534766-day-drinking-11.html",
+      "summary": "I was a regular bourbon drinker for at least 30 years. Two years ago my wife suffered a stroke and never recovered. I quit drinking then and have not",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2219,9 +2154,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2231,12 +2166,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5ba076f5a22facc7",
-      "title": "Volkswagen of Salem in Salem, OR | Cars Available | Autotrader",
-      "url": "https://www.autotrader.com/car-dealers/salem-or/68208039/volkswagen-of-salem",
-      "summary": "View new, used and certified cars in stock. Get a free price quote, or learn more about Volkswagen of Salem amenities and services.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "id": "d9219a877d62b51d",
+      "title": "Download and install the latest printer drivers | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/printer/download-and-install-the-latest-printer-drivers",
+      "summary": "Find out how to install the latest driver for your printer. If you recently upgraded Windows, your printer driver might need to be reinstalled.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2245,10 +2180,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "model",
         "retail"
       ],
-      "primary_type": "model",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2258,12 +2192,91 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8e79e9ae7ddd954a",
-      "title": "Volkswagen of Salem | Salem OR - Facebook",
-      "url": "https://www.facebook.com/vwofsalem/",
-      "summary": "Volkswagen of Salem, Salem. 1,609 followers · 12 talking about this · 1,853 were here. Volkswagen of Salem is focused on providing customers with an honest and simple buying experience.",
+      "id": "21839f22f4e7ceab",
+      "title": "Find your Windows product key | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/activation/find-your-windows-product-key",
+      "summary": "Learn how to find a Windows product key for activation, and when you'll use a digital license instead.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0caadd0a8e9cc880",
+      "title": "Getting Tested for HIV | HIV | CDC",
+      "url": "https://www.cdc.gov/hiv/testing/index.html",
+      "summary": "If you test in a community program or take an HIV self-test and it's positive, you should go to a health care provider for follow-up testing. If you test in a health care setting or a lab and it's positive, the lab will conduct the follow-up testing, usually on the same blood sample as the first test.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "community"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5ff76e1fb99ee837",
+      "title": "How do you know if a gap is big enough to make an unprotected left-hand ...",
+      "url": "https://www.city-data.com/forum/automotive/3535409-how-do-you-know-if-gap.html",
+      "summary": "Depends on too many things to state a hard and fast rule. - How wide are the lanes? - How many lanes do you cross? - Is there crosswalk traffic? - How fast is the opposing traffic moving? - How quick is your car? - How good is your grip (your tires, weight distribution) - How good is the road for grip (dry? layer of dust? Rough surface?) Lastly, what is the local driving culture like? Are ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "857ab812bc4de957",
+      "title": "How to pass arguments to a Button command in Tkinter?",
+      "url": "https://stackoverflow.com/questions/6920302/how-to-pass-arguments-to-a-button-command-in-tkinter",
+      "summary": "See Python Argument Binders for standard techniques (not Tkinter-specific) for solving the problem. Working with callbacks in Tkinter (or other GUI frameworks) has some special considerations because the return value from the callback is useless. If you try to create multiple Buttons in a loop, passing each one different arguments based on the loop counter, you may run into problems due to ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2284,12 +2297,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "afe312ca09b60a5d",
-      "title": "Wales - Simple English Wikipedia, the free encyclopedia",
-      "url": "https://simple.wikipedia.org/wiki/Wales",
-      "summary": "Wales is one of the Celtic areas of Britain. The native people of Wales, the Welsh, have their own culture and traditions. They have their own Celtic language, Welsh. Not all Welsh people can speak Welsh, and it is primarily spoken in North Wales. It is mandatory for all children until the age of 16 to learn Welsh in schools.",
+      "id": "c7dcd884484e9536",
+      "title": "Huawei Mobile Phones: Latest & New Smartphones List (24th ...",
+      "url": "https://www.gadgets360.com/mobiles/huawei-phones",
+      "summary": "List of all Huawei phones including latest, upcoming mobile phones from Huawei smartphone brands. Also find Huawei 5g smartphones, camera phones & best Huawei mobiles with price, specifications and reviews.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "48ed198c815f98d4",
+      "title": "IFA’s 4Plus Lawn Care Program | IFA's Helping to Grow Blog",
+      "url": "https://grow.ifa.coop/lawn-care/four-easy-steps-for-a-beautiful-lawn",
+      "summary": "Having the best lawn in the neighborhood starts with the best lawn fertilizer. IFA's easy 4 step lawn care program will help you get that deep green envy.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2310,12 +2349,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7cfd3e2b767cd59e",
-      "title": "Wales - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Wales",
-      "summary": "Two-thirds of the population live in South Wales, including Cardiff, Swansea, Newport, and the nearby valleys. The eastern region of North Wales has about a sixth of the overall population, with Wrexham being the largest northern city. The remaining parts of Wales are sparsely populated.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "059f3cc022f1939c",
+      "title": "Install PowerShell 7 on Windows - PowerShell | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6",
+      "summary": "Learn how to install the latest version of PowerShell 7, which runs side-by-side with Windows PowerShell 5.1.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2324,9 +2363,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2336,12 +2375,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cff061fc437638a5",
-      "title": "Wales Maps & Facts - World Atlas",
-      "url": "https://www.worldatlas.com/maps/united-kingdom/wales",
-      "summary": "Wales, a country located in the southwest of The United Kingdom, shares its eastern border with England and its northern and western borders with the Irish Sea.",
+      "id": "df004a1e70dbee1f",
+      "title": "Juneteenth (parade, poll, boycott, KKK) - Politics and Other ...",
+      "url": "https://www.city-data.com/forum/politics-other-controversies/3532728-juneteenth-6.html",
+      "summary": "Juneteenth celebrates Republicans freeing the Democrat's slaves and the Democrats got so mad about it, they formed the KKK.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2350,9 +2389,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2362,64 +2401,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2f37b824844742a2",
-      "title": "Wales | History, Geography, Facts, & Points of Interest | Britannica",
-      "url": "https://www.britannica.com/place/Wales",
-      "summary": "Wales, constituent unit of the United Kingdom that forms a westward extension of the island of Great Britain. Its capital and main commercial and financial center is Cardiff.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6e570539683f8b6a",
-      "title": "What is Wales Famous For? 20 Things That Define Wales",
-      "url": "https://wales.org/what-is-wales-famous-for-food-landmarks-celebs-more/",
-      "summary": "What is Wales famous for? Discover 20 things that make Wales unique—from castles to coal—plus the best places to visit for each.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6bf54606f384624e",
-      "title": "When Do Harbor Freight Tool Boxes Go On sale? (Tools Selling FAST!)",
-      "url": "https://timetobuying.com/when-do-harbor-freight-tool-boxes-go-on-sale/",
-      "summary": "The ICON 56-inch Professional Roller Cabinet represents Harbor Freight’s premium industrial tier, engineered to compete directly with tool-truck brands like Snap-on and Matco.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "269d47c2c461db10",
+      "title": "Latest Supported Visual C++ Redistributable Downloads",
+      "url": "https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170",
+      "summary": "If you need to install Visual C++ Runtime libraries with you app, this article includes downloads for ARM64, x86, and x64, plus legacy packages.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2432,6 +2419,501 @@
         "retail"
       ],
       "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cc808dcb944a5caa",
+      "title": "Lindsay Clancy case - Current Events -Non-political discussion of the ...",
+      "url": "https://www.city-data.com/forum/current-events/3535737-lindsay-clancy-case-6.html",
+      "summary": "I don't think she will go to prison or spend much time in the psych ward. She somehow became a hero for the deranged blue haired septum ring folks despite her being an educated medical professional and knowing what was going on. She cycled on and off meds knowing they weren't in her system long enough to work before quitting them to try another. Yet she is now considered a hero by some. Unreal ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2ce0e10df6c4dd27",
+      "title": "Microsoft Learn: Build with answers in reach",
+      "url": "https://learn.microsoft.com/en-us/",
+      "summary": "Find official documentation, practical know-how, and expert guidance for builders working and troubleshooting in Microsoft products.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "20d84127de8986f3",
+      "title": "Obituaries in Twentynine Palms, CA | Who Passed On",
+      "url": "https://whopassedon.com/obituaries/local/california/twentynine-palms/",
+      "summary": "Browse obituaries from funeral homes in Twentynine Palms, California. Find recent obituaries, leave condolences, and share memories.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ab510c30aec36015",
+      "title": "Overview of Testing for SARS-CoV-2 | COVID-19 | CDC",
+      "url": "https://www.cdc.gov/covid/hcp/clinical-care/overview-testing-sars-cov-2.html",
+      "summary": "This overview describes current information on the types of tests used to detect SARS-CoV-2 infection and their intended uses. This information is intended for use by healthcare providers, public health professionals, and those organizing and implementing testing in non-healthcare settings.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "76ad20221887c8d0",
+      "title": "Questions - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/?page=47631",
+      "summary": "Discover questions on Microsoft Q&A that will help you on every step of your technical journey.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "04d5fa9bd02f7e07",
+      "title": "regex - Test filename with regular expression - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6768779/test-filename-with-regular-expression",
+      "summary": "I am trying to test a filename string with this pattern: ^[A-Za-z0-9-_,\\s]+[.]{1}[A-Za-z]{3}$ I want to ensure there is a three letter extension and allow letters, numbers and these symbols: - _ , \\s to precede it but I don't want to have to include all of the letters and characters in the filename. I could just use a * instead of a + but that would match 0 or more which wouldn't be a valid ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bb0e966fe7f244eb",
+      "title": "Run a task every x-minutes with Windows Task Scheduler",
+      "url": "https://stackoverflow.com/questions/4249542/run-a-task-every-x-minutes-with-windows-task-scheduler",
+      "summary": "I'm trying to get Windows Task Scheduler to run a particular .exe every 10 minutes or so, but the options only allow for once a day execution. Is there a way I can get it to run a .exe every 10 or...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2330a703d213ec84",
+      "title": "South Beacon Hill (Seattle, Bellevue, Renton: rentals, high crime ...",
+      "url": "https://www.city-data.com/forum/seattle-area/2776451-south-beacon-hill.html",
+      "summary": "South Beacon Hill is rapidly changing. Good proximity to Seattle. Just talk to neighbors in the area you are thinking of living, they will always give you the straight scoop.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b68f79eb3b8acd67",
+      "title": "test data - Is there a Social Security Number reserved for testing ...",
+      "url": "https://stackoverflow.com/questions/2313704/is-there-a-social-security-number-reserved-for-testing-examples",
+      "summary": "If your testing requires pulling quasi-real credit reports from the bureaus, the inactive SSNs of other answers won't work and you'll need designated test numbers. I found this site Which appears to contain test social security numbers with associated test names and credit card numbers. Transunion has a test environment you can link and send data to, including associated dummy credit reports ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "535970dfe337cdae",
+      "title": "Testing for COVID-19 | Covid | CDC",
+      "url": "https://www.cdc.gov/covid/testing/index.html",
+      "summary": "Getting a COVID-19 test Buy self-tests (at-home tests) Buy self-tests (at-home tests) online or in pharmacies and retail stores. If you have health insurance, it may reimburse the cost of purchasing self-tests. Visit FDA's website for a list of authorized tests. Go to a testing location Visit a community-based testing location, such as a pharmacy or health center near you. These locations may ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e25448a63a0166ff",
+      "title": "Trump to Demand “Proof of U.S. Citizenship” Before Parents Can Get ...",
+      "url": "https://www.city-data.com/forum/politics-other-controversies/3537085-trump-demand-proof-u-s-citizenship-4.html",
+      "summary": "There are two problems with this statement. First, the citizenship of the parents is irrelevant. The child is a U.S. citizen; the child is eligible for a U.S. passport. Second, how can granting a passport to a U.S. citizen create alleged loopholes that allow for illegal entry into the country? Please explain your \"logic\". Maybe because citizenship of parents status is not a requirement? Hmmm ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "605883d93ea2897e",
+      "title": "Twentynine Palms Obituaries - echovita.com",
+      "url": "https://www.echovita.com/us/obituaries/ca/twentynine-palms",
+      "summary": "Search Twentynine Palms, California recent obituaries and death notices. Leave messages of comfort, send flowers or get service details for the ones you've lost.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18bd65f8eaa47a69",
+      "title": "Twentynine Palms Obituaries | Local Obits for Twentynine ...",
+      "url": "https://www.legacy.com/us/obituaries/local/california/twentynine-palms",
+      "summary": "Browse Twentynine Palms area obituaries on Legacy.com. Find service information, send flowers, and leave memories in the Guestbook for your loved one.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "534d3653df9fa319",
+      "title": "Twentynine Palms, CA Obituaries, 25+ indexes",
+      "url": "https://www.newspaperobituaries.net/california/san-bernadino-county/twentynine-palms-obituaries.htm",
+      "summary": "browse over 25 Twentynine Palms, California obituary indexes, including newspaper obituaries, death indexes, funeral home obituaries..",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a684dee4d986985a",
+      "title": "Walmart Camera Store in Maricopa, AZ| Photo Camaras, Web Cameras ...",
+      "url": "https://www.walmart.com/store/4430-maricopa-az/camera-store",
+      "summary": "Shop for camera equipment at your local Maricopa, AZ Walmart. We have a great selection of camera equipment for any type of home. Save Money. Live Better.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be9e708bb7ce0a62",
+      "title": "What Makes a Good Unit Test? [closed] - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/61400/what-makes-a-good-unit-test",
+      "summary": "An acid test would be to find someone who isn't part of your team and asking him/her to figure out the behavior under test within a couple of minutes. Tests need to be maintained just like production code - so make it easy to read even if it takes more effort. Tests should be symmetric (follow a pattern) and concise (test one behavior at a time).",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ce15b0e3953a9c47",
+      "title": "What's the difference between faking, mocking, and stubbing?",
+      "url": "https://stackoverflow.com/questions/346372/whats-the-difference-between-faking-mocking-and-stubbing",
+      "summary": "Test doubles Fakes, stubs, and mocks all belong to the category of test doubles. A test double is any object or system you use in a test instead of something else. Most automated software testing involves the use of test doubles of some kind or another. Some other kinds of test doubles include dummy values, spies, and I/O blackholes.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1bff4de1fb2bc97d",
+      "title": "When a neighbor violates HOA rules - Real Estate -Brokers, appraisals ...",
+      "url": "https://www.city-data.com/forum/real-estate/3537076-when-neighbor-violates-hoa-rules-7.html",
+      "summary": "Well, if you buy a house in an HOA, you sign the contract that you'll abide by the rules. If you don't like the rules, don't sign the contract, or suck it up and decide to follow the rules even though you don't like them. I don't LIKE to wait at a stop light when there's no oncoming traffic; I don't LIKE to get my car inspected and registered every year; I don't LIKE to pay my income tax; I ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "db032331e8f97ec7",
+      "title": "Windows Mobile | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/archive/technet-wiki/4380.windows-mobile",
+      "summary": "This update includes some significant new added features, such as a revamped GUI , a new Today screen resembling that of Microsoft's Zune player with vertically scrollable labels (called 'Titanium'). Windows Mobile 6.5 also includes the new Internet Explorer Mobile 6 browser, with improved interface.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
