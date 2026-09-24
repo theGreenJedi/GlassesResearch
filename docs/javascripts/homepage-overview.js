@@ -90,3 +90,53 @@
       root.hidden = true;
     });
 })();
+
+(() => {
+  const root = document.querySelector("[data-homepage-newsroom-lead]");
+  if (!root) return;
+
+  const displayDate = (value) => {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+    return new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric", year: "numeric" }).format(date);
+  };
+
+  fetch("/data/newsroom-state.json", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error("newsroom state unavailable");
+      return response.json();
+    })
+    .then((state) => {
+      const lead = state?.lead;
+      if (!lead?.title || !lead?.summary || !lead?.url) return;
+
+      const tag = root.querySelector(".gr-story-tag");
+      const title = root.querySelector("strong");
+      const summary = root.querySelector("span:not(.gr-story-tag)");
+      const cta = root.querySelector("em");
+      const mode = lead.lead_mode;
+      const label = mode === "first_party_editorial"
+        ? "Editorial"
+        : mode === "editorial_pin"
+          ? "Editorial pick"
+          : "Verified";
+
+      root.href = lead.url;
+      if (tag) tag.textContent = [label, displayDate(lead.published_at)].filter(Boolean).join(" · ");
+      if (title) title.textContent = lead.title;
+      if (summary) summary.textContent = lead.summary;
+      if (cta) cta.textContent = mode === "auto" ? "Read the research →" : "Read the editorial →";
+
+      const target = new URL(lead.url, window.location.origin);
+      if (target.origin !== window.location.origin) {
+        root.target = "_blank";
+        root.rel = "noopener";
+      } else {
+        root.removeAttribute("target");
+        root.removeAttribute("rel");
+      }
+    })
+    .catch(() => {
+      // Keep the built-in canonical fallback if live newsroom state is unavailable.
+    });
+})();

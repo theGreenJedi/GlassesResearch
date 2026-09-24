@@ -12,10 +12,10 @@
   </div>
 </div>
 
-<a class="gr-newsroom-static-feature" href="../news/articles/2026-09-19-right-to-repair-smart-glasses/">
-  <span class="gr-newsroom-kicker">Featured editorial · September 19, 2026</span>
-  <strong>You bought the glasses. Can you repair them?</strong>
-  <span>A Colorado lawsuit puts a larger ownership question in focus: smart-glasses repairability depends on more than whether the frame can be opened.</span>
+<a class="gr-newsroom-static-feature" href="../news/articles/2026-09-23-state-of-the-state-smart-glasses-are-no-longer-becoming-one-thing/">
+  <span class="gr-newsroom-kicker">Featured editorial · September 23, 2026</span>
+  <strong>State of the State: Smart glasses are no longer becoming one thing</strong>
+  <span>The market is separating into distinct products, ownership models, and use cases rather than converging on one universal device.</span>
 </a>
 
 ## Current Desk

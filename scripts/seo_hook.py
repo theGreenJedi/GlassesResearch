@@ -12,6 +12,7 @@ from typing import Any
 
 FAQ_HEADING = re.compile(r"^##\s+(?:\d+\.\s+)?(.+\?)\s*$", re.MULTILINE)
 PUBLISHED = re.compile(r"^\*\*Published:\*\*\s+(.+?)\s*$", re.MULTILINE)
+WIRE_REPORTED = re.compile(r"^\*\*Across the Wire\s+·\s+(?:Reported|Under review)\s+·\s+(.+?)\*\*\s*$", re.MULTILINE | re.IGNORECASE)
 LINK = re.compile(r"!?\[([^\]]+)\]\([^\)]+\)")
 HTML_TAG = re.compile(r"<[^>]+>")
 MARKDOWN_MARKS = re.compile(r"[`*_~]+")
@@ -198,9 +199,10 @@ def _article_schema(
     if not source_uri.startswith("docs/news/articles/"):
         return None
     published = PUBLISHED.search(markdown)
-    if not published:
+    wire_reported = WIRE_REPORTED.search(markdown)
+    if not published and not wire_reported:
         return None
-    raw_date = published.group(1).strip()
+    raw_date = (published or wire_reported).group(1).strip()
     try:
         date_published = datetime.strptime(raw_date, "%B %d, %Y").date().isoformat()
     except ValueError:
