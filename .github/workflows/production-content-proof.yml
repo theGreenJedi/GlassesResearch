@@ -50,6 +50,25 @@ jobs:
             --site-root site \
             --origin https://glassesresearch.org
 
+      - name: Prove production newsroom state matches deployed build
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in $(seq 1 12); do
+            bust="newsroom-proof=${GITHUB_RUN_ID}-${attempt}"
+            if curl --fail --silent --show-error --location --max-time 20 \
+                -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' \
+                "https://glassesresearch.org/data/newsroom-state.json?${bust}" -o /tmp/newsroom-state.json \
+              && cmp -s .site-src/data/newsroom-state.json /tmp/newsroom-state.json; then
+              echo 'PROVED: production newsroom state matches the deployed build.'
+              exit 0
+            fi
+            echo "Attempt ${attempt}/12: newsroom state has not converged to deployed build yet."
+            sleep 15
+          done
+          echo 'ERROR: production newsroom state does not match the deployed build.' >&2
+          exit 1
+
       - name: Prove Community Research production canaries
         env:
           HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
