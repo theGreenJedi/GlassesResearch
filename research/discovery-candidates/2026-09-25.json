@@ -1,40 +1,39 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-25T06:46:46.889666+00:00",
-  "candidate_count": 48,
-  "classifier_irrelevant_count": 37,
+  "discovered_utc": "2026-09-25T07:57:58.331994+00:00",
+  "candidate_count": 57,
+  "classifier_irrelevant_count": 55,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 12,
-    "broad_web": 22,
-    "community": 1,
-    "developer": 6,
-    "research": 11,
+    "adjacent": 1,
+    "broad_web": 36,
+    "developer": 20,
     "retail": 1
   },
   "relationship_counts": {
-    "direct": 1,
-    "enabling": 0,
-    "adjacent": 10,
+    "direct": 0,
+    "enabling": 1,
+    "adjacent": 1,
     "speculative": 0,
-    "irrelevant": 37
+    "irrelevant": 55
   },
   "type_counts": {
-    "video": 3,
-    "news": 14,
-    "research": 11,
-    "tool": 10,
-    "sdk": 7,
-    "retail": 10,
-    "community": 2,
-    "rumor": 2
+    "model": 7,
+    "video": 2,
+    "news": 23,
+    "tool": 20,
+    "sdk": 20,
+    "hack": 2,
+    "optics": 1,
+    "retail": 5,
+    "community": 6
   },
   "routing_counts": {
-    "adjacent_radar": 10,
-    "deep_research": 1,
-    "reject_noise": 37,
-    "research_news_review": 11,
-    "retail_rebrand_review": 9
+    "adjacent_radar": 1,
+    "model_catalog_review": 1,
+    "reject_noise": 55,
+    "research_news_review": 2,
+    "research_optics": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -45,107 +44,46 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [
-    {
-      "channel": "manufacturer_catalog",
-      "url": "https://dumall.baidu.com/product/902971303493639",
-      "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>"
-    }
-  ],
+  "collector_errors": [],
   "candidates": [
     {
-      "id": "ea4c0aa96c48187e",
-      "title": "Best smart glasses in 2026: Top AR and AI glasses worth your ...",
-      "url": "https://www.tomsguide.com/computing/vr-ar/best-smart-glasses",
-      "summary": "I’ve been wearing and testing smart glasses for over 5 years — here are the best AR and AI glasses you can buy right now.",
-      "discovery_channel": "broad_web+community+research+retail",
-      "query": "smart glasses; smartglasses; AI glasses; AR glasses; best smart glasses; smart glasses site:amazon.com; smart glasses site:walmart.com; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com; smart glasses site:aliexpress.com; smart glasses site:alibaba.com; smart glasses site:spectrum.ieee.org; smart glasses site:reddit.com/r/SmartGlasses",
+      "id": "a6da0a961d17f032",
+      "title": "Target Optical",
+      "url": "https://www.target.com/c/target-optical/-/N-4y8o9",
+      "summary": "Get eye-catching styles and supplies for everyone. Shop Target for optical products at great prices. Free shipping on orders $35+ or free same-day pickup in store.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "enabling",
       "content_types": [
-        "news"
+        "model",
+        "optics"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "model_catalog_review",
+        "research_optics"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, smart glasses",
+      "publication_gate_reason": "enabling technology signals: optical",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9b48f52b15cc0ade",
-      "title": "Used Toyota Camry for Sale in Seattle, WA - Cars.com",
-      "url": "https://www.cars.com/shopping/toyota-camry/seattle-wa/",
-      "summary": "Shop Toyota Camrys in Seattle, WA for sale at Cars.com. Research, compare, save listings or contact sellers directly from 147 Camrys in Seattle, WA.",
+      "id": "7cab840c147eae31",
+      "title": "THE BEST 10 RESTAURANTS IN QUINCY, IL - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Quincy%2C+IL",
+      "summary": "Top 10 Best Restaurants Near Quincy, Illinois - With Real Reviews Sort: Recommended",
       "discovery_channel": "adjacent",
-      "query": "prescription lens technology eyewear",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3100fe49a40e7e2b",
-      "title": "New Toyota Camry for Sale in Seattle WA | New Toyota Dealer Seattle",
-      "url": "https://www.toyotaofseattle.com/toyota-camry-for-sale-seattle-wa",
-      "summary": "Toyota of Seattle provides access to a wide selection of new Toyota Camry models with various trims, features, and color options. This allows drivers to explore multiple configurations to find the sedan that fits their lifestyle and driving needs.",
-      "discovery_channel": "adjacent",
-      "query": "prescription lens technology eyewear",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8ab58132b6bcf451",
-      "title": "The Latest Wearable News and Analysis | PCMag",
-      "url": "https://www.pcmag.com/news/categories/wearables",
-      "summary": "Get the latest Wearable news and in-depth analysis from the experts at PCMag.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -167,220 +105,56 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c10564ca9ce64784",
-      "title": "Toyota Camry For Sale In Seattle, WA - Carsforsale.com®",
-      "url": "https://www.carsforsale.com/toyota-camry-for-sale-in-seattle-wa-C648148-L124186",
-      "summary": "Shop 164 used Toyota Camry in Seattle, WA as low as $6,600. Get free history reports, credit checks, expert reviews & online financing.",
-      "discovery_channel": "adjacent",
-      "query": "prescription lens technology eyewear",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "af8e500f1778e7c3",
-      "title": "Toyota Camry for Sale in Seattle, WA - Toyota of Seattle",
-      "url": "https://www.toyotaofseattle.com/inventory/New/Toyota/Camry",
-      "summary": "Explore the new Toyota Camry at Toyota of Seattle. Find your ideal sedan with hybrid-focused efficiency and advanced safety features, perfect for commuting in Seattle, WA.",
-      "discovery_channel": "adjacent",
-      "query": "prescription lens technology eyewear",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "09ebdb5076ee8ad5",
-      "title": "Used Toyota Camry for Sale in Seattle, WA (with Photos) - TRUECar",
-      "url": "https://www.truecar.com/used-cars-for-sale/listings/toyota/camry/location-seattle-wa/",
-      "summary": "Shop over 1,263 used Toyota Camry for sale in Seattle, WA with transparent pricing. Save time and money with TrueCar. Compare prices and view deals near you.",
-      "discovery_channel": "adjacent",
-      "query": "prescription lens technology eyewear",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1e261b4893e9496d",
-      "title": "Used Toyota Camry for Sale in Seattle, WA - Autotrader",
-      "url": "https://www.autotrader.com/cars-for-sale/toyota/camry/seattle-wa",
-      "summary": "Used Toyota Camry for sale in Seattle, WA. Browse local listings near you on Autotrader.",
-      "discovery_channel": "adjacent",
-      "query": "prescription lens technology eyewear",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d24baccb5cbeb51d",
-      "title": "Used Toyota Camry for Sale in Seattle, WA - CARFAX",
-      "url": "https://www.carfax.com/Used-Toyota-Camry-Seattle-WA_w630_c15895",
-      "summary": "Find the perfect used Toyota Camry in Seattle, WA by searching CARFAX listings. We have 78 Toyota Camry vehicles for sale that are reported accident free, 99 1-Owner cars, and 113 personal use cars.",
-      "discovery_channel": "adjacent",
-      "query": "prescription lens technology eyewear",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c3a0676f13d7fbb4",
-      "title": "Used Toyota Camry for Sale Near Me - Autotrader",
-      "url": "https://www.autotrader.com/cars-for-sale/toyota/camry",
-      "summary": "Test drive Used Toyota Camry at home from the top dealers in your area. Search from 18494 Used Toyota Camry cars for sale, including a 2022 Toyota Camry TRD, a 2022 Toyota Camry XSE, and a 2023 Toyota Camry XSE ranging in price from $995 to $47,990.",
-      "discovery_channel": "adjacent",
-      "query": "prescription lens technology eyewear",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a5ff377814ba1bdb",
-      "title": "Used Toyota Camry for Sale near Seattle, WA - CarGurus",
-      "url": "https://www.cargurus.com/Cars/l-Used-Toyota-Camry-Seattle-d292_L37788",
-      "summary": "Browse the best September 2026 deals on Toyota Camry vehicles for sale in Seattle, WA. Save $5,838 right now on a Toyota Camry on CarGurus.",
-      "discovery_channel": "adjacent",
-      "query": "prescription lens technology eyewear",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9c35b7c9bd667038",
-      "title": "TEN Brands Unite | Star Leasing and Partners Rebrand as TEN",
-      "url": "https://tenleasing.com/en/news/star-leasing-company-commercial-trailer-leasing-inc-cooling-concepts-and-north-east-trailer/",
-      "summary": "Star Leasing and its partners adopt the name TEN, strengthening a unified identity across North America’s leasing network.",
+      "id": "23c4a0b2bb03b17c",
+      "title": "Pinnacle Cottage Corinth, MS | Apartment Rentals",
+      "url": "https://jumperrealty.com/pinnacle-cottage/",
+      "summary": "Jumper Realty & Associates is excited to launch its newest addition to the local rental community, Pinnacle Cottages. Units boast large master bedrooms, en suite bathrooms, dedicated laundry rooms with full sized washer and dryer and modern fixtures.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 4,
       "keyword_hits": [
-        "rebrand"
+        "launch"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1828ccda4c9e748a",
+      "title": "UL 6362-2 AI Checks for Smart Breakers in 2027 - indufacthub.com",
+      "url": "https://www.indufacthub.com/news/Electrical_Hub/Circuit_Breakers/UL_Sets_Jan_2027_AI_Checks_for_Smart_Breakers.html",
+      "summary": "UL 6362-2 sets Jan 2027 AI checks for smart breakers. Learn how edge-AI verification, secure firmware, and pre-certification deadlines could impact product launches and compliance plans.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "firmware"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "hack"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -392,10 +166,66 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3885cafbefec5341",
-      "title": "Full-Service Trailer Solutions | TEN",
-      "url": "https://tenleasing.com/en/",
-      "summary": "Introducing TEN (Transportation Equipment Network), the unified brand of Star Leasing, CTL, Cooling Concepts, NETS Leasing, TIP Canada, and Boston Trailer. With decades of expertise, a proven customer track record, and a forward-looking approach, TEN is your go-to for full-service trailer solutions that keep your business moving down the road.",
+      "id": "8ed1e1c6613b968d",
+      "title": "135 Jumper Ln, Corinth, MS 38834 | Zillow",
+      "url": "https://www.zillow.com/homedetails/135-Jumper-Ln-Corinth-MS-38834/2096886793_zpid/",
+      "summary": "135 Jumper Ln, Corinth, MS 38834 is currently not for sale. The 1,200 Square Feet apartment home is a 2 beds, 2 baths property. This home was built in 2016 and last sold on 2017-08-23 for $1,000. View more property details, sales history, and Zestimate data on Zillow.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6af39dffdd813271",
+      "title": "38834, MS homes for sale & real estate - Realtor.com®",
+      "url": "https://www.realtor.com/realestateandhomes-search/38834",
+      "summary": "Realtor.com® has 189 homes for sale in 38834, MS. The median listing price is $150,000. Browse the latest listings and find your dream home today.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0e0ac22ec1fdce33",
+      "title": "Alicia C Mccartney · 153 Jumper Ln, Corinth, MS 38834 - OpenGovUS",
+      "url": "https://opengovus.com/florida-health-care-practitioner/1701-496902",
+      "summary": "Overview Alicia C Mccartney is a licensed Registered Nurse, by Florida Department of Health (DOH), Division of Medical Quality Assurance (MQA). The license number is #RN9385712. The business address is 153 Jumper Ln, Corinth, MS 38834. The license issue date is June 19, 2014. The license expiration date is April 30, 2024.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -419,10 +249,121 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1e16ba067d5b475e",
-      "title": "Star Leasing Co LLC - Company Profile and News - Bloomberg Markets",
-      "url": "https://www.bloomberg.com/profile/company/2550499D:US",
-      "summary": "The Company provides full-service leasing as well as maintenance, advanced technological solutions, consultation services, and other innovative offerings across numerous industry verticals. Star...",
+      "id": "4b9c4d088ffe6c2c",
+      "title": "Corinth Property Records (Mississippi) - County Office",
+      "url": "https://www.countyoffice.org/corinth-ms-property-records/",
+      "summary": "Search Corinth, Mississippi property records by address. Find owner names, sale prices, deed transfers, mortgages, and tax records.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4df047a6a97c4e8d",
+      "title": "FinancialContent - UL Solutions Issues First Certifications Under AI ...",
+      "url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-12-ul-solutions-issues-first-certifications-under-ai-safety-testing-service-for-ai-enabled-products?Language=english",
+      "summary": "UL Solutions issued the first certifications for products powered by artificial intelligence (AI) under its AI safety certification program, marking a key milestone in independently confirming trustworthy AI for complex, mission-critical environments.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "88ccecf7a367486a",
+      "title": "Kids’ Clothing - Target",
+      "url": "https://www.target.com/c/kids/-/N-xcoz4",
+      "summary": "Shop kids' clothing for every season with cute, comfy and durable styles from top brands for boys and girls. Free shipping on orders $35+.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed848647e6bd75eb",
+      "title": "Leon Lee - ThinkAR | LinkedIn",
+      "url": "https://tw.linkedin.com/in/leon-lee-6b7681142",
+      "summary": "Experienced Embedded Firmware Engineer with over 15 years of experience in MCU/SoC-based… · 工作經歷：ThinkAR · 教育背景：國立臺北科技大學 · 地點：台北 · 77 位 LinkedIn 聯絡人。上 LinkedIn 查看Leon Lee的個人檔案，LinkedIn 是擁有 10 億會員的專業社群。",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "firmware"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "hack"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fb9164d3cb908e41",
+      "title": "People who live on Jumper Ln in Corinth, Mississippi",
+      "url": "https://voterrecords.com/street/jumper+ln-corinth-ms/6",
+      "summary": "There are 70 people who live on Jumper Ln in Corinth, Mississippi that are registered to vote.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -446,66 +387,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ada36de03152039c",
-      "title": "Star Leasing Co. in Conley, GA 30288 - (470) 4... - Chamber of Commerce",
-      "url": "https://www.chamberofcommerce.com/united-states/georgia/conley/trailer-dealer/2001776674-star-leasing-co",
-      "summary": "Star Leasing Co. located at 1300 Henrico Rd, Conley, GA 30288 - reviews, ratings, hours, phone number, directions, and more.",
+      "id": "ee0195e84d6764fe",
+      "title": "Pinnacle Apartments: Corinth, MS Rentals with Jumper Realty",
+      "url": "https://jumperrealty.com/pinnacle-apartments/",
+      "summary": "Corinth, Mississippi's finest rental community. You will find local schools, shopping and restaurants are just minutes away. Our spacious two and three bedroom apartments feature gourmet kitchens, stained concrete flooring, spacious closets, 2 car garages and washer/dryer.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bd7d430f38037dac",
-      "title": "Star Leasing Company - Facebook",
-      "url": "https://www.facebook.com/starleasingco/",
-      "summary": "We stand behind our equipment. 💯 At Star Leasing, we only work with the top manufacturers in the industry to ensure that our trailers will not only be long-lasting but also safe.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a3a036dfc4e5de30",
-      "title": "What’s New in Microsoft Copilot | August 2026 | Microsoft Community Hub",
-      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%e2%80%99s-new-in-microsoft-copilot--august-2026/4551960",
-      "summary": "Welcome to the August 2026 edition of What's New in Microsoft Copilot!",
-      "discovery_channel": "adjacent+developer",
-      "query": "ActiveLook API BLE; hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -528,153 +415,24 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ff7959179a6993b2",
-      "title": "780 Live Traffic Cameras in Seattle, Washington (2026) - Watch Live ...",
-      "url": "https://opencctv.org/cameras/united-states/washington/seattle",
-      "summary": "Watch 775 live traffic cameras in Seattle, Washington, United States. Live webcams updated in real time - traffic, weather, beach cams, and more.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "id": "9937125e2ee902ab",
+      "title": "Pinnacle Cottages Apartments | Corinth, MS Apartments For Rent",
+      "url": "https://www.apartmenthomeliving.com/apartment-finder/Pinnacle-Cottages-Corinth-MS-38834-19093392",
+      "summary": "Experience your new place at Pinnacle Cottages in Corinth. In the 38834 neighborhood of Corinth on McCreary lane, renters have a quick connection to a number of enjoyable highlights and attractions. The leasing staff is ready to help you find your perfect floorplan. It's time to love where you live. Stop by for a visit today.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6aebfd9cd72f1297",
-      "title": "Download, install, or reinstall Microsoft 365 or Office 2024 on a PC or ...",
-      "url": "https://support.microsoft.com/en-us/office/lifecycle/officeinstall/download-install-or-reinstall-microsoft-365-or-office-2024-on-a-pc-or-mac",
-      "summary": "Ready to install Microsoft 365 or Office 2024? Before you begin, make sure your PC or Mac meets the system requirements. If you already redeemed a product key, reinstalling the apps, or you have an assigned license through work or school, you can skip ahead and go to the section sign in to download and install Microsoft 365 or Office.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a7ec4acf6dd2e316",
-      "title": "Home | Subway®",
-      "url": "https://www.subway.com/en-us/home",
-      "summary": "Discover customized sandwiches at Subway. Take a look at the sandwich menu, place your order online, find the nearest restaurant, order catering service, or purchase gift cards.",
-      "discovery_channel": "research",
-      "query": "prescription smart glasses lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "84999df7fbeb7ac6",
-      "title": "How to Print Java Objects, Arrays & Collections Without 'SomeType ...",
-      "url": "https://www.javathinking.com/blog/how-do-i-print-my-java-object-without-getting-sometype-2f92e0f4/",
-      "summary": "In this guide, we’ll demystify why this \"hashcode\" output occurs and provide step-by-step solutions to print objects, arrays, and collections in a human-friendly format.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9da3e3b700d8a527",
-      "title": "Install or reinstall classic Outlook on a Windows PC",
-      "url": "https://support.microsoft.com/en-us/outlook/install-or-reinstall-classic-outlook-on-a-windows-pc",
-      "summary": "To install a standalone version of classic Outlook for Windows, select your language from the dropdown, and then select Download. Follow the prompts to complete the installation.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c668171acdaa6f97",
-      "title": "Java Print Object: A Comprehensive Guide - javaspring.net",
-      "url": "https://www.javaspring.net/blog/java-print-object/",
-      "summary": "Printing objects in Java is a fundamental yet powerful operation. By understanding the basic concepts, different usage methods, and following common and best practices, developers can effectively use object printing for debugging, logging, and presenting data.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
+        "tool",
         "sdk"
       ],
-      "primary_type": "sdk",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -684,23 +442,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7be63281cd6c277f",
-      "title": "Java: How to Print Objects for Debugging – Including All Variables ...",
-      "url": "https://www.javathinking.com/blog/java-printing-out-an-object-for-debugging/",
-      "summary": "In this blog, we’ll explore **practical methods** to print objects comprehensively, from manual implementations to leveraging powerful libraries, with a focus on handling nested structures and special values like `Infinity` and `NaN`.",
+      "id": "4ca1e960eff5aa70",
+      "title": "Pokémon - Target",
+      "url": "https://www.target.com/c/pokemon/-/N-4yka5",
+      "summary": "Go catch 'em all! Shop Target for Pokemon games, clothing, accessories and more at great prices. Free shipping on orders $35+ or free same-day pickup in store.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -710,49 +470,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4f9991a5f0b47e6c",
-      "title": "Microsoft Outlook - Apps on Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en-US",
-      "summary": "Outlook is free for personal use and supports Microsoft Exchange, Microsoft 365, Outlook.com, Gmail, Yahoo Mail, iCloud, IMAP and POP3. Write polished emails with built in tools for grammar,...",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "Everysight Maverick AI Kickstarter; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "318145657043ea64",
-      "title": "Microsoft Outlook - Download",
-      "url": "https://microsoft-outlook.en.softonic.com/",
-      "summary": "Microsoft Outlook is built for people who live in their inbox and calendar, combining email, meetings, and contacts in one place. With Focused Inbox and Conversation view, it helps cut noise and keep threads readable when projects get hectic.",
+      "id": "62d27e0fdb450123",
+      "title": "Pokémon Trading Card Game: 30th Celebration Elite Trainer Box - Target",
+      "url": "https://www.target.com/p/pok-233-mon-trading-card-game-30th-celebration-elite-trainer-box/-/A-1010892076",
+      "summary": "Shop Pokémon Trading Card Game: 30th Celebration Elite Trainer Box at Target. Choose from Same Day Delivery, Drive Up or Order Pickup. Free standard shipping with $35 orders.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -762,151 +498,22 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1d663888e48f0f9e",
-      "title": "National Weather Service",
-      "url": "https://forecast.weather.gov/zipcity.php?inputstring=Cashmere,WA",
-      "summary": "A strong coastal storm will bring moderate to major coastal flooding, strong winds, heavy rainfall and high surf to the Mid-Atlantic and New England. Tropical Storm Nolo is expected to strengthen into a hurricane today as it moves north toward the Big Island of Hawaii. Heavy rainfall may produce life-threatening, catastrophic flooding and mudslides. Read More > Current conditions at",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "d57219428cc0a67b",
+      "title": "THE PINNACLE APARTMENTS - Corinth MS - Hours, Directions, Reviews ...",
+      "url": "https://www.loc8nearme.com/mississippi/corinth/the-pinnacle-apartments/8786985/",
+      "summary": "The Pinnacle Apartments at Jumper Ln, Corinth MS 38834 - hours, address, map, directions, phone number, customer ratings and reviews.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "rumor"
-      ],
-      "primary_type": "rumor",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c33eeae394741bc4",
-      "title": "National Weather Service",
-      "url": "https://forecast.weather.gov/MapClick.php?lat=47.5174&lon=-120.4677",
-      "summary": "A strong coastal storm will bring moderate to major coastal flooding, strong winds, heavy rainfall and high surf to the Mid-Atlantic and New England. Tropical Storm Nolo is expected to strengthen into a hurricane today as it moves north toward the Big Island of Hawaii. Heavy rainfall may produce life-threatening, catastrophic flooding and mudslides. Read More > Current conditions at",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "rumor"
-      ],
-      "primary_type": "rumor",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9d93c8d95022b34e",
-      "title": "NBC News – Breaking Headlines and Video Reports on World, U.S. and …",
-      "url": "https://www.nbcnews.com/",
-      "summary": "Go to NBCNews.com for breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "40e31753fd06e88e",
-      "title": "Order Subway - Lake Forest, CA Menu Delivery [Menu & Prices ...",
-      "url": "https://www.doordash.com/store/subway-lake-forest-568331",
-      "summary": "Get delivery or takeout from Subway at 21701 Lake Forest Drive in Lake Forest. Order online and track your order live. No delivery fee on your first order!",
-      "discovery_channel": "research",
-      "query": "prescription smart glasses lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "efe839c6899f77e4",
-      "title": "Our Menu | Subway®",
-      "url": "https://www.subway.com/en-us/menunutrition/menu",
-      "summary": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
-      "discovery_channel": "research",
-      "query": "prescription smart glasses lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3a384068f2b419d8",
-      "title": "Outlook for Windows - Free download and install on Windows | Microsoft ...",
-      "url": "https://apps.microsoft.com/detail/9nrx63209r7b?hl=en-US&gl=US",
-      "summary": "The new Outlook for Windows is a best-in-class email experience that is free for anyone with Windows. Easily connect and coordinate your personal and work email accounts and calendars in one app. Write clear, concise mails and get intelligent suggestions with built-in AI.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -918,21 +525,22 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "63b43ff752f88c22",
-      "title": "Outlook for Windows | Microsoft 365",
-      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-for-windows",
-      "summary": "Get free email and calendar with the Microsoft Outlook app on Windows. Connect accounts such as Gmail, Yahoo!, IMAP, and iCloud to see everything in one place.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "1527a9452f65cebc",
+      "title": "The Pinnacle Apartments in Corinth, MS 38834 - 662-286...",
+      "url": "https://www.chamberofcommerce.com/business-directory/mississippi/corinth/apartment-complex/2027287613-the-pinnacle-apartments",
+      "summary": "The Pinnacle Apartments located at Jumper Ln, Corinth, MS 38834 - reviews, ratings, hours, phone number, directions, and more.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -944,12 +552,257 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "49b4c71c1037b8e2",
-      "title": "Print all objects (Beginning Java forum at Coderanch)",
-      "url": "https://coderanch.com/t/611868/java/Print-objects",
-      "summary": "How do you think you'd do it? Describe it in English, without worrying about anything Java-related. If you had a group of students, and you wanted to find out which of them were in a particular class, how would you do it? Be as precise as possible, and use small, simple steps.",
+      "id": "8644e2f3972a1c2f",
+      "title": "TIC_CMIT | UL Solutions",
+      "url": "https://www.ul.com/taxonomy/term/4786",
+      "summary": "Learn how IEC 81001-5-1 services can support cybersecurity expectations for connected medical devices across multiple markets. Explore AI regulations, safety challenges and best practices for responsible adoption, including insights into the UL 3115 AI safety evaluation framework.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "49089880a5d1d228",
+      "title": "Toasters - Target",
+      "url": "https://www.target.com/c/toasters-kitchen-appliances-dining/-/N-5xtre",
+      "summary": "Find toasters & toaster ovens at Target, in a variety of colors, finishes and brands. Shop a wide selection at Target.com. Free shipping on orders $35+ & free returns plus same-day in-store pickup.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ae33d01d5372f85",
+      "title": "UL Solutions Issues First Certifications Under AI Safety Testing ...",
+      "url": "https://www.ul.com/news/ul-solutions-issues-first-certifications-under-ai-safety-testing-service-ai-enabled-products",
+      "summary": "By demonstrating alignment with UL 3115, both companies have shown that AI-enabled systems can meet strict requirements without compromising operational reliability or regulatory readiness. Learn about UL Solutions testing and certification for AI-enabled products.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b54c3025fddf3b00",
+      "title": "UL Solutions Issues First Certifications Under AI Safety Testing ...",
+      "url": "https://mwbn.bio/midwest-life-science-news/2026/03/12/ul-solutions-issues-first-certifications-under-ai-safety-testing-service-for-ai-enabled-products/",
+      "summary": "These certifications are the first evaluations completed globally under UL 3115, the Outline of Investigation for the Safety of AI-Based Produ. Click Here to Publish/Feature Your Company or Product News with Biotech Networks.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d6d4090f88f639b5",
+      "title": "UL Solutions Issues First Certifications Under AI Safety Testing ...",
+      "url": "https://www.tmcnet.com/usubmit/2026/03/12/10347156.htm",
+      "summary": "UL Solutions issued the first certifications for products powered by artificial intelligence (AI) under its AI safety certification program, marking a key milestone in independently confirming trustworthy AI for complex, mission-critical environments.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "88c0321198088597",
+      "title": "UL Solutions Issues First Certifications Under AI Safety Testing ...",
+      "url": "https://markets.ft.com/data/announce/detail?dockey=600-202603120920BIZWIRE_USPRX____20260312_BW607831-1",
+      "summary": "UL Solutions issued the first certifications for products powered by artificial intelligence (AI) under its AI safety certification program, marking a key milestone in independently...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "948a81fc93113511",
+      "title": "UL Solutions Issues First Certifications Under AI Safety Testing ...",
+      "url": "https://article.wn.com/view/2026/03/12/UL_Solutions_Issues_First_Certifications_Under_AI_Safety_Tes/",
+      "summary": "UL Solutions Issues First Certifications Under AI Safety Testing Service for AI-Enabled Products",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e5f7b77c24237e8c",
+      "title": "UL Solutions Unveils New Safety Certification Services for AI-Enabled ...",
+      "url": "https://www.securityinfowatch.com/ai/press-release/55327763/underwriters-laboratories-ul-solutions-unveils-new-safety-certification-services-for-ai-enabled-products",
+      "summary": "UL Solutions has introduced new certification services to evaluate the safety, reliability and ethical performance of AI-enabled products across their full life cycle.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7213ed2b9f577e54",
+      "title": "UL Solutions | UL Solutions Issues First Certifications Under AI Safety ...",
+      "url": "https://ir.ul.com/news/news-details/2026/UL-Solutions-Issues-First-Certifications-Under-AI-Safety-Testing-Service-for-AI-Enabled-Products/default.aspx",
+      "summary": "UL Solutions issued the first certifications for products powered by artificial intelligence (AI) under its AI safety certification program, marking a key milestone in independently confirming trustworthy AI for complex, mission-critical environments.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "46249d1b3cdde9b4",
+      "title": "Akira Takemoto - Head of Marketing & Sales at ThinkAR | LinkedIn",
+      "url": "https://jp.linkedin.com/in/akira-takemoto-bb5b7a217/en",
+      "summary": "Head of Marketing & Sales at ThinkAR · Experience: ThinkAR · Education: 上智大学 Sophia University · Location: Minato · 500+ connections on LinkedIn. View Akira Takemoto’s profile on LinkedIn, a professional community of 1 billion members.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -970,10 +823,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "847f99001be7d4ed",
-      "title": "Print Objects of a Class in Python - GeeksforGeeks",
-      "url": "https://www.geeksforgeeks.org/python/print-objects-of-a-class-in-python/",
-      "summary": "Printing objects helps us inspect their state, which is especially useful for debugging or displaying information to users. In languages like C++, this is achieved by overloading the ostream& operator << as a friend function.",
+      "id": "69e61ba3fb392b8d",
+      "title": "Brown Pelican Life Cycle: From Egg to Expert Diver",
+      "url": "https://nativesofnature.com/animal-facts/brown-pelican-life-cycle-from-egg-to-expert-diver/",
+      "summary": "Explore the Brown Pelican life cycle from egg to expert diver, incubation, chick development, and the learning process behind plunge-diving.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -996,10 +849,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "161658f0c5932a54",
-      "title": "Printing a list of objects of user defined class - Stack Overflow",
-      "url": "https://stackoverflow.com/questions/12933964/printing-a-list-of-objects-of-user-defined-class",
-      "summary": "If you just want to print the label for each object, you could use a loop or a list comprehension: ... But to answer your original question, you need to define the __repr__ method to get the list output right. It could be something as simple as this:",
+      "id": "ed6e9eaf21f764aa",
+      "title": "Brown Pelican Life History, All About Birds, Cornell Lab of Ornithology",
+      "url": "https://www.allaboutbirds.org/guide/Brown_Pelican/lifehistory",
+      "summary": "Brown Pelicans live year-round in estuaries and coastal marine habitats along both the east and west coasts. They breed between Maryland and Venezuela, and between southern California and southern Ecuador—often wandering farther north after breeding as far as British Columbia or New York.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1022,12 +875,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "141444f62b99f622",
-      "title": "Printing a list of objects of user defined class in python",
-      "url": "https://www.iditect.com/faq/python/printing-a-list-of-objects-of-user-defined-class-in-python.html",
-      "summary": "To print a list of objects of a user-defined class in Python, you need to define a __str__ method in your class. The __str__ method should return a string representation of the object, which will be used when you call print () on an instance of the class.",
+      "id": "f4672f7e6b2102d9",
+      "title": "Calvin Lee - ThinkAR | LinkedIn",
+      "url": "https://www.linkedin.com/in/shiweilee",
+      "summary": "I transform complex, data-rich systems into simple, elegant experiences. My work lives at… · Experience: ThinkAR · Education: New York University · Location: New York · 271 connections on ...",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1048,12 +901,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e4fc05ae2c0acb91",
-      "title": "Printing all instances of a class in python - iDiTect.com",
-      "url": "https://www.iditect.com/faq/python/printing-all-instances-of-a-class-in-python.html",
-      "summary": "To print all instances of a class in Python, you can maintain a class-level variable that keeps track of all created instances and then iterate through that list to print them.",
+      "id": "85697f30bafa55b9",
+      "title": "Design Thinkar - Beverly Hills, California, United States ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/design-thinkar-17389712",
+      "summary": "Education: Institute of Design · Location: Beverly Hills. View Design Thinkar’s profile on LinkedIn, a professional community of 1 billion members.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bb33bbd5688e7b75",
+      "title": "Evans Motorworks | BMW, Volvo & Volkswagen Dealer in Dayton, OH",
+      "url": "https://www.evansmotorworks.com/evansvolkswagen",
+      "summary": "Volkswagen & Quality Pre-Owned in Dayton If you're in the market for a new Volkswagen in Dayton, Kettering, Beavercreek, or Fairborn, look no further than Evans Volkswagen! We have a fantastic selection of Volkswagen vehicles waiting for you, and our friendly, knowledgeable team is here to help you every step of the way on your car-buying journey. In addition to our new and pre-owned vehicles ...",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1074,12 +953,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f18da80fe271300f",
-      "title": "python - Printing all objects from a class - Stack Overflow",
-      "url": "https://stackoverflow.com/questions/20163906/printing-all-objects-from-a-class",
-      "summary": "I currently have a class that turns my list of lists into a list of objects, where every object has a certain amount of stuff from the constructor. Lets say they have names, and some random numbers.",
+      "id": "61d28d0006003c1f",
+      "title": "Evans Volkswagen | New & Used VW Dealer in Dayton, OH",
+      "url": "https://www.evansvolkswagen.com/",
+      "summary": "Evans Volkswagen has New VW models, as well as Used Cars, Trucks & SUVs. Visit our VW Dealership in Dayton, OH and claim $4,000 in VIP Perks with purchase.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1100,12 +979,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1d5b4f97bb1df57f",
-      "title": "Python: find all instances of a class with gc.get_objects () - Adam Johnson",
-      "url": "https://adamj.eu/tech/2026/07/14/python-all-instances-class/",
-      "summary": "The approach in this post uses the garbage collector module, gc, to leverage its already-tracked references to the class in question, no restart required. The function gc.get_objects () traverses (nearly) all live objects tracked by the garbage collector and returns a list of them.",
+      "id": "095f05bb574f3de9",
+      "title": "Evans Volkswagen | New Volkswagen Inventory For Sale in Dayton, OH",
+      "url": "https://www.evansvolkswagen.com/searchnew.aspx",
+      "summary": "Browse our wide selection of new VW cars & SUVs, and take advantage of great incentives and special offers. Serving Dayton, Beavercreek, Vandalia and the surrounding area of Western Ohio, we are driven to offer unprecedented value to our customers.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1114,88 +993,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d3b8c55a84fada7b",
-      "title": "Subway Locations in Lake Forest, CA| Subs, Sandwiches, Salads",
-      "url": "https://restaurants.subway.com/united-states/ca/lake-forest",
-      "summary": "Browse all Subway locations in Lake Forest, CA to find a restaurant near you that serves fresh subs, sandwiches, salads, & more. View the abundant options on the SUBWAY® menu and discover better-for-you meals!",
-      "discovery_channel": "research",
-      "query": "prescription smart glasses lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2eef016e73dc59a",
-      "title": "Subway Menu 2026 - Prices, Calories & New $3.99 Menu Items",
-      "url": "https://subwaymenuprices.org/",
-      "summary": "This page has the complete Subway Menu 2026 with prices, including every sandwich, the Subway Series, the brand-new Fresh Value Menu, breakfast, sides, drinks and more.",
-      "discovery_channel": "research",
-      "query": "prescription smart glasses lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "be845c975ba4babd",
-      "title": "Subway Menu with Prices - Updated Price List September (2026)",
-      "url": "https://subwaymenupedia.com/",
-      "summary": "Subway menu with prices for sandwiches, wraps, salads, and more. Navigate through a variety of options and plan your next Subway meal freely!",
-      "discovery_channel": "research",
-      "query": "prescription smart glasses lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
         "retail"
       ],
-      "primary_type": "research",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1205,23 +1005,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4265be55f71a9d1e",
-      "title": "Subway Menu With Prices, Pictures & Latest Deals 2026",
-      "url": "https://thesubwaymenus.com/",
-      "summary": "Explore the Subway menu prices with pictures so you can see exactly what you’re ordering before visiting a store. From loaded Footlong sandwiches and fresh wraps to protein bowls, salads, cookies, and drinks, each category shows clear visuals with updated 2026 prices in the United States.",
-      "discovery_channel": "research",
-      "query": "prescription smart glasses lens research",
+      "id": "730b8e69bf0b912a",
+      "title": "Germain Volkswagen | New & Used Auto Dealer",
+      "url": "https://www.germainvolkswagen.com/",
+      "summary": "1495 Auto Mall Dr, Columbus, OH 43228 Sales: 614-362-5065 Service: 614-618-0085 Parts: 614-618-0550 Visit Website New Inventory Used Inventory Schedule Service Order Parts",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
-      "source_lane": "research",
+      "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "news"
       ],
-      "primary_type": "research",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1231,24 +1031,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "01df39f8935cb56c",
-      "title": "Subway Menu – Lake Forest, CA - roostcafeandbistro.com",
-      "url": "https://www.roostcafeandbistro.com/subway-92630-3/",
-      "summary": "We deliver these mouth-watering flavors with our famous Footlongs, 6” sandwiches, wraps and salads. And we offer a variety of ways to order—quick and easy in the app or online, convenient delivery, come into your neighborhood shop for an in-restaurant meal, or pick up curbside.",
-      "discovery_channel": "research",
-      "query": "prescription smart glasses lens research",
+      "id": "ea0cadb67ceee675",
+      "title": "Koi Jhang - ThinkAR - IT | LinkedIn",
+      "url": "https://tw.linkedin.com/in/koi-jhang-2b41933a5",
+      "summary": "ThinkAR - IT · 工作經歷：ThinkAR · 地點：臺北市。上 LinkedIn 查看Koi Jhang的個人檔案，LinkedIn 是擁有 10 億會員的專業社群。",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
-      "source_lane": "research",
+      "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "research",
-        "tool"
+        "news"
       ],
-      "primary_type": "research",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1258,23 +1057,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2dedd54535fc3b7d",
-      "title": "Subway Sandwiches Menu Sept 2026 | Prices & Calories Guide",
-      "url": "https://subwaymenuusa.com/subway-sandwiches-menu/",
-      "summary": "Explore the full Subway sandwiches menu for September 2026. Find prices, calories, and details for every subway sandwich including BMT, tuna, BLT, and more.",
-      "discovery_channel": "research",
-      "query": "prescription smart glasses lens research",
+      "id": "8a66566eadce22ca",
+      "title": "Michael (Hui) Sun – CEO of Thinkcar Europe | LinkedIn",
+      "url": "https://de.linkedin.com/in/michael-hui-sun-a7a59465",
+      "summary": "THINKAR Europe is looking for new talents THINKCAR Europe will operate in June 2022 in Frankfort Germany. Now we have three position open! Marketing Manager…",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
-      "source_lane": "research",
+      "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "news"
       ],
-      "primary_type": "research",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1284,24 +1083,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b77e83c6356f839c",
-      "title": "Subway® Restaurants - Sandwiches, Salads, Wraps & More ...",
-      "url": "https://restaurants.subway.com/united-states/ca/lake-forest/21701-lake-forest-drive",
-      "summary": "Enjoy our famous Footlongs, 6\" sandwiches, wraps, and salads, ordered quickly in the app or online, through convenient delivery, in-restaurant dining, or curbside pickup.",
-      "discovery_channel": "research",
-      "query": "prescription smart glasses lens research",
+      "id": "37a31673bb7d9f9d",
+      "title": "Mini Fridges, Refrigerators & Freezers : Target",
+      "url": "https://www.target.com/c/refrigerators-freezers-kitchen-appliances-dining/-/N-4ybfb",
+      "summary": "Shop refrigerators and freezers at Target, including mini fridges, wine fridges and compact options for dorms, kitchens, apartments and small spaces.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
-      "source_lane": "research",
+      "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "research",
-        "tool"
+        "news"
       ],
-      "primary_type": "research",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1311,10 +1109,374 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ced54171de600f9e",
-      "title": "YouTube",
-      "url": "https://www.youtube.com/feed./",
-      "summary": "YouTube",
+      "id": "f5a007d5ab30658c",
+      "title": "Natural History: Eastern Brown Pelican - Biological Diversity",
+      "url": "https://www.biologicaldiversity.org/species/birds/eastern_brown_pelican/natural_history.html",
+      "summary": "LIFE CYCLE: Pelicans typically begin breeding at ages three to five, but some breed after one or two years. Pelicans usually live for more than a decade, but only three individuals have been known to live more than 20 years, reaching 31, 37 and 43 years of age.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "37dc82a0c5021a65",
+      "title": "New & Used VW Dealer in Dayton, OH | White Allen VW",
+      "url": "https://www.whiteallenvw.com/",
+      "summary": "Shop new, used & certified Volkswagen models at White Allen VW in Dayton, OH. Serving Beavercreek, Kettering, Miamisburg & more with sales & service.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "486ba8cb46ce7ffc",
+      "title": "Nompumelelo Sibalukhulu Runji - Political & Stakeholder Intelligence ...",
+      "url": "https://za.linkedin.com/in/nompumelelo-runji",
+      "summary": "Critical ThinkAR® is an independent political risk and stakeholder engagement advisory helping organisations navigate South Africa's complex socio-political landscape. We serve investors, business, government, and civil society.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6f5f92e88d88d832",
+      "title": "Paul Jones - CEO of ThinkAR JPN | LinkedIn",
+      "url": "https://jp.linkedin.com/in/paul-jones-5795b3184",
+      "summary": "CEO of ThinkAR JPN · Executive Leader with success in Real Estate , Retail and Technology. An APAC Market Strategist. Experienced leader in strategy &amp; commercial roles, with success leading teams from start to change. Over two decades leading growth, strategy, and transformation across the APAC region, I’ve built a career at the intersection of technology, real estate, finance, and ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "20fac09492ff7cc9",
+      "title": "Pelican - Species, Size, Habitat, Diet, Lifespan, Predators & Pictures",
+      "url": "https://www.animalspot.net/pelican",
+      "summary": "Reproduction and Life Cycle Most pelican species breed annually in large, noisy colonies (colonial breeding). They form monogamous pair bonds that last for a single breeding season, with the bond maintained only within the nesting area. The breeding season varies among the different species.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e626ab16159863d",
+      "title": "Pelican - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pelican",
+      "summary": "The throat pouch of the Californian subspecies of the brown pelican turns bright red, and fades to yellow after the eggs are laid, while the throat pouch of the Peruvian pelican turns blue. The American white pelican grows a prominent knob on its bill that is shed once females have laid eggs. [5]",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "97903e04a30deeae",
+      "title": "Pelican Life Cycle: Egg to Adult in 30 Sec #PelicanLifeCycle ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=mlYcvcfxBbA",
+      "summary": "Watch the complete pelican life cycle — from a chalky egg in a coastal nest to a featherless hatchling, a growing fledgling, and finally a fully grown adult ...",
+      "discovery_channel": "broad_web+retail",
+      "query": "ENGO smart glasses; titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "58f97323cf4d8178",
+      "title": "Pelican Life Cycle: From Juvenile Development to Aging and Threats",
+      "url": "https://biologyinsights.com/pelican-life-cycle-from-juvenile-development-to-aging-and-threats/",
+      "summary": "Explore the fascinating life cycle of pelicans, from their early development stages to the challenges they face in adulthood and aging.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9f7bec8df8728047",
+      "title": "Pelican Life Cycle: Juvenile Development to Aging [Guide]",
+      "url": "https://academicpath.org/pelican-life-cycle-development-threats",
+      "summary": "Discover the pelican life cycle from hatching to adulthood. Learn about juvenile development milestones and the major threats to their survival. Read more.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0731af8647f09c88",
+      "title": "Pelican | Taxonomy, Habitat, Description, & Facts | Britannica",
+      "url": "https://www.britannica.com/animal/pelican",
+      "summary": "Pelicans lay one to four bluish white eggs in a stick nest, and the young hatch in about a month. The young live on regurgitated food obtained by thrusting their bills down the parent’s gullet. The young mature at three to four years. Though ungainly on land, pelicans are impressive in flight.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "78d08d064742586f",
+      "title": "Praveen Srivatsa - Thinkar Foundation | LinkedIn",
+      "url": "https://in.linkedin.com/in/srivatsapraveen",
+      "summary": "Praveen Srivatsa is a technology architect and advisor to multiple startups and product… · Experience: Thinkar Foundation · Location: Bengaluru · 500+ connections on LinkedIn. View Praveen Srivatsa’s profile on LinkedIn, a professional community of 1 billion members.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d580683c674deae7",
+      "title": "Shop All Categories : Target",
+      "url": "https://www.target.com/c/shop-all-categories/-/n-5xsxf",
+      "summary": "Shop Target online and in-store for everything you need, from groceries and essentials to clothing and electronics.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "61daed80e707fb1b",
+      "title": "Shop New Volkswagen Models | VW Cars & SUV's Near Dayton, OH",
+      "url": "https://www.whiteallenvw.com/new-inventory/index.htm",
+      "summary": "Explore the latest Volkswagen lineup at White Allen VW in Dayton, OH. Browse new Jetta, Tiguan, Atlas, Taos & more with financing and local deals.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "88b5f14db2204d3f",
+      "title": "Tapasya Rajaram (She/Her) - Principal Consultant at Thinkar Foundation ...",
+      "url": "https://in.linkedin.com/in/tapasya",
+      "summary": "Principal Consultant at Thinkar Foundation · With over 20 plus years of dynamic experience in the social development sector, I have specialised in working with diverse groups and organisations. My core areas of expertise include program design, strategy development, partnerships, grant-making, project and program evaluations, resource mobilisation, and volunteer engagement, with a particular ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f3c3a31b83771f2",
+      "title": "Target",
+      "url": "https://www.target.com/orders",
+      "summary": "Target New Arrivals Halloween Clothing, Shoes & Accessories Home & Decor Kitchen & Dining Patio, Lawn & Garden Grocery Household Essentials Baby Beauty Target Beauty Studio Personal Care Sports & Outdoors Pets Health Wellness School & Office Supplies Toys & Games Electronics & Tech Video Games Books, Music & Movies Party Supplies Gift Ideas ...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1328,6 +1490,84 @@
         "video"
       ],
       "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "db3e5fcbc2fc9981",
+      "title": "Target Circle account",
+      "url": "https://www.target.com/help/articles/target-circle/manage-your-target-circle-account",
+      "summary": "Why aren't my Target Circle Rewards or community support votes showing up? To see your community support votes and Target Circle Rewards, make sure you are signed into your Target account. For example, if you have two accounts then you'll need to check to see which account has the community support votes and Target Circle Rewards.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb06af955d8019fb",
+      "title": "Target GiftCard balance",
+      "url": "https://www.target.com/help/articles/gift-cards/check-your-target-giftcard-balance",
+      "summary": "Articles associated to Target GiftCard balance Checking your balance by phone You can call 1-800-544-2943 to check your Target GiftCard balance and hear your last five transactions. Checking your balance online If you don’t already have a Target account, you will need to create one to check the balance of your Target GiftCard.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7b375d6af5bb3d79",
+      "title": "Volkswagen Dealer Serving Columbus OH | Germain VW of Columbus",
+      "url": "https://www.germainvwofcolumbus.com/",
+      "summary": "As a part of the Germain Automotive Group, you can rest assured that we’ll go the extra mile to meet your automotive needs at our Volkswagen dealership near Columbus, Dublin, and Hilliard, Ohio.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],

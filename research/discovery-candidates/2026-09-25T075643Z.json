@@ -1,0 +1,1340 @@
+{
+  "schema": 3,
+  "discovered_utc": "2026-09-25T06:46:46.889666+00:00",
+  "candidate_count": 48,
+  "classifier_irrelevant_count": 37,
+  "precision_rejected_count": 0,
+  "channel_counts": {
+    "adjacent": 12,
+    "broad_web": 22,
+    "community": 1,
+    "developer": 6,
+    "research": 11,
+    "retail": 1
+  },
+  "relationship_counts": {
+    "direct": 1,
+    "enabling": 0,
+    "adjacent": 10,
+    "speculative": 0,
+    "irrelevant": 37
+  },
+  "type_counts": {
+    "video": 3,
+    "news": 14,
+    "research": 11,
+    "tool": 10,
+    "sdk": 7,
+    "retail": 10,
+    "community": 2,
+    "rumor": 2
+  },
+  "routing_counts": {
+    "adjacent_radar": 10,
+    "deep_research": 1,
+    "reject_noise": 37,
+    "research_news_review": 11,
+    "retail_rebrand_review": 9
+  },
+  "policy": {
+    "collection": "high recall across ordinary search surfaces",
+    "classification": "relationship + content type + routing target before review",
+    "publication": "editorial verification required",
+    "retail": "lead only; resolve manufacturer/OEM/rebrand before canonical identity",
+    "research": "source lead; classify question answered before promotion",
+    "community": "attributed experience lead; never canonical specification evidence by itself",
+    "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
+  },
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://dumall.baidu.com/product/902971303493639",
+      "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "ea4c0aa96c48187e",
+      "title": "Best smart glasses in 2026: Top AR and AI glasses worth your ...",
+      "url": "https://www.tomsguide.com/computing/vr-ar/best-smart-glasses",
+      "summary": "I’ve been wearing and testing smart glasses for over 5 years — here are the best AR and AI glasses you can buy right now.",
+      "discovery_channel": "broad_web+community+research+retail",
+      "query": "smart glasses; smartglasses; AI glasses; AR glasses; best smart glasses; smart glasses site:amazon.com; smart glasses site:walmart.com; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com; smart glasses site:aliexpress.com; smart glasses site:alibaba.com; smart glasses site:spectrum.ieee.org; smart glasses site:reddit.com/r/SmartGlasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9b48f52b15cc0ade",
+      "title": "Used Toyota Camry for Sale in Seattle, WA - Cars.com",
+      "url": "https://www.cars.com/shopping/toyota-camry/seattle-wa/",
+      "summary": "Shop Toyota Camrys in Seattle, WA for sale at Cars.com. Research, compare, save listings or contact sellers directly from 147 Camrys in Seattle, WA.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "research",
+        "retail"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3100fe49a40e7e2b",
+      "title": "New Toyota Camry for Sale in Seattle WA | New Toyota Dealer Seattle",
+      "url": "https://www.toyotaofseattle.com/toyota-camry-for-sale-seattle-wa",
+      "summary": "Toyota of Seattle provides access to a wide selection of new Toyota Camry models with various trims, features, and color options. This allows drivers to explore multiple configurations to find the sedan that fits their lifestyle and driving needs.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ab58132b6bcf451",
+      "title": "The Latest Wearable News and Analysis | PCMag",
+      "url": "https://www.pcmag.com/news/categories/wearables",
+      "summary": "Get the latest Wearable news and in-depth analysis from the experts at PCMag.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c10564ca9ce64784",
+      "title": "Toyota Camry For Sale In Seattle, WA - Carsforsale.com®",
+      "url": "https://www.carsforsale.com/toyota-camry-for-sale-in-seattle-wa-C648148-L124186",
+      "summary": "Shop 164 used Toyota Camry in Seattle, WA as low as $6,600. Get free history reports, credit checks, expert reviews & online financing.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af8e500f1778e7c3",
+      "title": "Toyota Camry for Sale in Seattle, WA - Toyota of Seattle",
+      "url": "https://www.toyotaofseattle.com/inventory/New/Toyota/Camry",
+      "summary": "Explore the new Toyota Camry at Toyota of Seattle. Find your ideal sedan with hybrid-focused efficiency and advanced safety features, perfect for commuting in Seattle, WA.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "09ebdb5076ee8ad5",
+      "title": "Used Toyota Camry for Sale in Seattle, WA (with Photos) - TRUECar",
+      "url": "https://www.truecar.com/used-cars-for-sale/listings/toyota/camry/location-seattle-wa/",
+      "summary": "Shop over 1,263 used Toyota Camry for sale in Seattle, WA with transparent pricing. Save time and money with TrueCar. Compare prices and view deals near you.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e261b4893e9496d",
+      "title": "Used Toyota Camry for Sale in Seattle, WA - Autotrader",
+      "url": "https://www.autotrader.com/cars-for-sale/toyota/camry/seattle-wa",
+      "summary": "Used Toyota Camry for sale in Seattle, WA. Browse local listings near you on Autotrader.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d24baccb5cbeb51d",
+      "title": "Used Toyota Camry for Sale in Seattle, WA - CARFAX",
+      "url": "https://www.carfax.com/Used-Toyota-Camry-Seattle-WA_w630_c15895",
+      "summary": "Find the perfect used Toyota Camry in Seattle, WA by searching CARFAX listings. We have 78 Toyota Camry vehicles for sale that are reported accident free, 99 1-Owner cars, and 113 personal use cars.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c3a0676f13d7fbb4",
+      "title": "Used Toyota Camry for Sale Near Me - Autotrader",
+      "url": "https://www.autotrader.com/cars-for-sale/toyota/camry",
+      "summary": "Test drive Used Toyota Camry at home from the top dealers in your area. Search from 18494 Used Toyota Camry cars for sale, including a 2022 Toyota Camry TRD, a 2022 Toyota Camry XSE, and a 2023 Toyota Camry XSE ranging in price from $995 to $47,990.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5ff377814ba1bdb",
+      "title": "Used Toyota Camry for Sale near Seattle, WA - CarGurus",
+      "url": "https://www.cargurus.com/Cars/l-Used-Toyota-Camry-Seattle-d292_L37788",
+      "summary": "Browse the best September 2026 deals on Toyota Camry vehicles for sale in Seattle, WA. Save $5,838 right now on a Toyota Camry on CarGurus.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9c35b7c9bd667038",
+      "title": "TEN Brands Unite | Star Leasing and Partners Rebrand as TEN",
+      "url": "https://tenleasing.com/en/news/star-leasing-company-commercial-trailer-leasing-inc-cooling-concepts-and-north-east-trailer/",
+      "summary": "Star Leasing and its partners adopt the name TEN, strengthening a unified identity across North America’s leasing network.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "rebrand"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3885cafbefec5341",
+      "title": "Full-Service Trailer Solutions | TEN",
+      "url": "https://tenleasing.com/en/",
+      "summary": "Introducing TEN (Transportation Equipment Network), the unified brand of Star Leasing, CTL, Cooling Concepts, NETS Leasing, TIP Canada, and Boston Trailer. With decades of expertise, a proven customer track record, and a forward-looking approach, TEN is your go-to for full-service trailer solutions that keep your business moving down the road.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e16ba067d5b475e",
+      "title": "Star Leasing Co LLC - Company Profile and News - Bloomberg Markets",
+      "url": "https://www.bloomberg.com/profile/company/2550499D:US",
+      "summary": "The Company provides full-service leasing as well as maintenance, advanced technological solutions, consultation services, and other innovative offerings across numerous industry verticals. Star...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ada36de03152039c",
+      "title": "Star Leasing Co. in Conley, GA 30288 - (470) 4... - Chamber of Commerce",
+      "url": "https://www.chamberofcommerce.com/united-states/georgia/conley/trailer-dealer/2001776674-star-leasing-co",
+      "summary": "Star Leasing Co. located at 1300 Henrico Rd, Conley, GA 30288 - reviews, ratings, hours, phone number, directions, and more.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bd7d430f38037dac",
+      "title": "Star Leasing Company - Facebook",
+      "url": "https://www.facebook.com/starleasingco/",
+      "summary": "We stand behind our equipment. 💯 At Star Leasing, we only work with the top manufacturers in the industry to ensure that our trailers will not only be long-lasting but also safe.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a3a036dfc4e5de30",
+      "title": "What’s New in Microsoft Copilot | August 2026 | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%e2%80%99s-new-in-microsoft-copilot--august-2026/4551960",
+      "summary": "Welcome to the August 2026 edition of What's New in Microsoft Copilot!",
+      "discovery_channel": "adjacent+developer",
+      "query": "ActiveLook API BLE; hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ff7959179a6993b2",
+      "title": "780 Live Traffic Cameras in Seattle, Washington (2026) - Watch Live ...",
+      "url": "https://opencctv.org/cameras/united-states/washington/seattle",
+      "summary": "Watch 775 live traffic cameras in Seattle, Washington, United States. Live webcams updated in real time - traffic, weather, beach cams, and more.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6aebfd9cd72f1297",
+      "title": "Download, install, or reinstall Microsoft 365 or Office 2024 on a PC or ...",
+      "url": "https://support.microsoft.com/en-us/office/lifecycle/officeinstall/download-install-or-reinstall-microsoft-365-or-office-2024-on-a-pc-or-mac",
+      "summary": "Ready to install Microsoft 365 or Office 2024? Before you begin, make sure your PC or Mac meets the system requirements. If you already redeemed a product key, reinstalling the apps, or you have an assigned license through work or school, you can skip ahead and go to the section sign in to download and install Microsoft 365 or Office.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a7ec4acf6dd2e316",
+      "title": "Home | Subway®",
+      "url": "https://www.subway.com/en-us/home",
+      "summary": "Discover customized sandwiches at Subway. Take a look at the sandwich menu, place your order online, find the nearest restaurant, order catering service, or purchase gift cards.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "84999df7fbeb7ac6",
+      "title": "How to Print Java Objects, Arrays & Collections Without 'SomeType ...",
+      "url": "https://www.javathinking.com/blog/how-do-i-print-my-java-object-without-getting-sometype-2f92e0f4/",
+      "summary": "In this guide, we’ll demystify why this \"hashcode\" output occurs and provide step-by-step solutions to print objects, arrays, and collections in a human-friendly format.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9da3e3b700d8a527",
+      "title": "Install or reinstall classic Outlook on a Windows PC",
+      "url": "https://support.microsoft.com/en-us/outlook/install-or-reinstall-classic-outlook-on-a-windows-pc",
+      "summary": "To install a standalone version of classic Outlook for Windows, select your language from the dropdown, and then select Download. Follow the prompts to complete the installation.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c668171acdaa6f97",
+      "title": "Java Print Object: A Comprehensive Guide - javaspring.net",
+      "url": "https://www.javaspring.net/blog/java-print-object/",
+      "summary": "Printing objects in Java is a fundamental yet powerful operation. By understanding the basic concepts, different usage methods, and following common and best practices, developers can effectively use object printing for debugging, logging, and presenting data.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7be63281cd6c277f",
+      "title": "Java: How to Print Objects for Debugging – Including All Variables ...",
+      "url": "https://www.javathinking.com/blog/java-printing-out-an-object-for-debugging/",
+      "summary": "In this blog, we’ll explore **practical methods** to print objects comprehensively, from manual implementations to leveraging powerful libraries, with a focus on handling nested structures and special values like `Infinity` and `NaN`.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4f9991a5f0b47e6c",
+      "title": "Microsoft Outlook - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en-US",
+      "summary": "Outlook is free for personal use and supports Microsoft Exchange, Microsoft 365, Outlook.com, Gmail, Yahoo Mail, iCloud, IMAP and POP3. Write polished emails with built in tools for grammar,...",
+      "discovery_channel": "adjacent+broad_web",
+      "query": "Everysight Maverick AI Kickstarter; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "318145657043ea64",
+      "title": "Microsoft Outlook - Download",
+      "url": "https://microsoft-outlook.en.softonic.com/",
+      "summary": "Microsoft Outlook is built for people who live in their inbox and calendar, combining email, meetings, and contacts in one place. With Focused Inbox and Conversation view, it helps cut noise and keep threads readable when projects get hectic.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1d663888e48f0f9e",
+      "title": "National Weather Service",
+      "url": "https://forecast.weather.gov/zipcity.php?inputstring=Cashmere,WA",
+      "summary": "A strong coastal storm will bring moderate to major coastal flooding, strong winds, heavy rainfall and high surf to the Mid-Atlantic and New England. Tropical Storm Nolo is expected to strengthen into a hurricane today as it moves north toward the Big Island of Hawaii. Heavy rainfall may produce life-threatening, catastrophic flooding and mudslides. Read More > Current conditions at",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c33eeae394741bc4",
+      "title": "National Weather Service",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=47.5174&lon=-120.4677",
+      "summary": "A strong coastal storm will bring moderate to major coastal flooding, strong winds, heavy rainfall and high surf to the Mid-Atlantic and New England. Tropical Storm Nolo is expected to strengthen into a hurricane today as it moves north toward the Big Island of Hawaii. Heavy rainfall may produce life-threatening, catastrophic flooding and mudslides. Read More > Current conditions at",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9d93c8d95022b34e",
+      "title": "NBC News – Breaking Headlines and Video Reports on World, U.S. and …",
+      "url": "https://www.nbcnews.com/",
+      "summary": "Go to NBCNews.com for breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40e31753fd06e88e",
+      "title": "Order Subway - Lake Forest, CA Menu Delivery [Menu & Prices ...",
+      "url": "https://www.doordash.com/store/subway-lake-forest-568331",
+      "summary": "Get delivery or takeout from Subway at 21701 Lake Forest Drive in Lake Forest. Order online and track your order live. No delivery fee on your first order!",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "efe839c6899f77e4",
+      "title": "Our Menu | Subway®",
+      "url": "https://www.subway.com/en-us/menunutrition/menu",
+      "summary": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a384068f2b419d8",
+      "title": "Outlook for Windows - Free download and install on Windows | Microsoft ...",
+      "url": "https://apps.microsoft.com/detail/9nrx63209r7b?hl=en-US&gl=US",
+      "summary": "The new Outlook for Windows is a best-in-class email experience that is free for anyone with Windows. Easily connect and coordinate your personal and work email accounts and calendars in one app. Write clear, concise mails and get intelligent suggestions with built-in AI.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "63b43ff752f88c22",
+      "title": "Outlook for Windows | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-for-windows",
+      "summary": "Get free email and calendar with the Microsoft Outlook app on Windows. Connect accounts such as Gmail, Yahoo!, IMAP, and iCloud to see everything in one place.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "49b4c71c1037b8e2",
+      "title": "Print all objects (Beginning Java forum at Coderanch)",
+      "url": "https://coderanch.com/t/611868/java/Print-objects",
+      "summary": "How do you think you'd do it? Describe it in English, without worrying about anything Java-related. If you had a group of students, and you wanted to find out which of them were in a particular class, how would you do it? Be as precise as possible, and use small, simple steps.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "847f99001be7d4ed",
+      "title": "Print Objects of a Class in Python - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/python/print-objects-of-a-class-in-python/",
+      "summary": "Printing objects helps us inspect their state, which is especially useful for debugging or displaying information to users. In languages like C++, this is achieved by overloading the ostream& operator << as a friend function.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "161658f0c5932a54",
+      "title": "Printing a list of objects of user defined class - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/12933964/printing-a-list-of-objects-of-user-defined-class",
+      "summary": "If you just want to print the label for each object, you could use a loop or a list comprehension: ... But to answer your original question, you need to define the __repr__ method to get the list output right. It could be something as simple as this:",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "141444f62b99f622",
+      "title": "Printing a list of objects of user defined class in python",
+      "url": "https://www.iditect.com/faq/python/printing-a-list-of-objects-of-user-defined-class-in-python.html",
+      "summary": "To print a list of objects of a user-defined class in Python, you need to define a __str__ method in your class. The __str__ method should return a string representation of the object, which will be used when you call print () on an instance of the class.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e4fc05ae2c0acb91",
+      "title": "Printing all instances of a class in python - iDiTect.com",
+      "url": "https://www.iditect.com/faq/python/printing-all-instances-of-a-class-in-python.html",
+      "summary": "To print all instances of a class in Python, you can maintain a class-level variable that keeps track of all created instances and then iterate through that list to print them.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f18da80fe271300f",
+      "title": "python - Printing all objects from a class - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/20163906/printing-all-objects-from-a-class",
+      "summary": "I currently have a class that turns my list of lists into a list of objects, where every object has a certain amount of stuff from the constructor. Lets say they have names, and some random numbers.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1d5b4f97bb1df57f",
+      "title": "Python: find all instances of a class with gc.get_objects () - Adam Johnson",
+      "url": "https://adamj.eu/tech/2026/07/14/python-all-instances-class/",
+      "summary": "The approach in this post uses the garbage collector module, gc, to leverage its already-tracked references to the class in question, no restart required. The function gc.get_objects () traverses (nearly) all live objects tracked by the garbage collector and returns a list of them.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d3b8c55a84fada7b",
+      "title": "Subway Locations in Lake Forest, CA| Subs, Sandwiches, Salads",
+      "url": "https://restaurants.subway.com/united-states/ca/lake-forest",
+      "summary": "Browse all Subway locations in Lake Forest, CA to find a restaurant near you that serves fresh subs, sandwiches, salads, & more. View the abundant options on the SUBWAY® menu and discover better-for-you meals!",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d2eef016e73dc59a",
+      "title": "Subway Menu 2026 - Prices, Calories & New $3.99 Menu Items",
+      "url": "https://subwaymenuprices.org/",
+      "summary": "This page has the complete Subway Menu 2026 with prices, including every sandwich, the Subway Series, the brand-new Fresh Value Menu, breakfast, sides, drinks and more.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be845c975ba4babd",
+      "title": "Subway Menu with Prices - Updated Price List September (2026)",
+      "url": "https://subwaymenupedia.com/",
+      "summary": "Subway menu with prices for sandwiches, wraps, salads, and more. Navigate through a variety of options and plan your next Subway meal freely!",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "retail"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4265be55f71a9d1e",
+      "title": "Subway Menu With Prices, Pictures & Latest Deals 2026",
+      "url": "https://thesubwaymenus.com/",
+      "summary": "Explore the Subway menu prices with pictures so you can see exactly what you’re ordering before visiting a store. From loaded Footlong sandwiches and fresh wraps to protein bowls, salads, cookies, and drinks, each category shows clear visuals with updated 2026 prices in the United States.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "01df39f8935cb56c",
+      "title": "Subway Menu – Lake Forest, CA - roostcafeandbistro.com",
+      "url": "https://www.roostcafeandbistro.com/subway-92630-3/",
+      "summary": "We deliver these mouth-watering flavors with our famous Footlongs, 6” sandwiches, wraps and salads. And we offer a variety of ways to order—quick and easy in the app or online, convenient delivery, come into your neighborhood shop for an in-restaurant meal, or pick up curbside.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2dedd54535fc3b7d",
+      "title": "Subway Sandwiches Menu Sept 2026 | Prices & Calories Guide",
+      "url": "https://subwaymenuusa.com/subway-sandwiches-menu/",
+      "summary": "Explore the full Subway sandwiches menu for September 2026. Find prices, calories, and details for every subway sandwich including BMT, tuna, BLT, and more.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b77e83c6356f839c",
+      "title": "Subway® Restaurants - Sandwiches, Salads, Wraps & More ...",
+      "url": "https://restaurants.subway.com/united-states/ca/lake-forest/21701-lake-forest-drive",
+      "summary": "Enjoy our famous Footlongs, 6\" sandwiches, wraps, and salads, ordered quickly in the app or online, through convenient delivery, in-restaurant dining, or curbside pickup.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ced54171de600f9e",
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed./",
+      "summary": "YouTube",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    }
+  ]
+}
