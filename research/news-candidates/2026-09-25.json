@@ -1,54 +1,108 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-25T13:55:46.035657+00:00",
-  "candidate_count": 6,
-  "precision_rejected_count": 233,
+  "discovered_utc": "2026-09-25T17:28:41.853381+00:00",
+  "candidate_count": 15,
+  "precision_rejected_count": 229,
   "relationship_counts": {
-    "direct": 3,
-    "enabling": 0,
-    "adjacent": 3,
+    "direct": 9,
+    "enabling": 2,
+    "adjacent": 4,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "news": 2,
-    "policy": 4
+    "model": 4,
+    "review": 2,
+    "news": 6,
+    "tool": 1,
+    "sdk": 1,
+    "optics": 1,
+    "policy": 4,
+    "retail": 1,
+    "community": 1
   },
   "routing_counts": {
-    "adjacent_radar": 3,
+    "adjacent_radar": 4,
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 4,
     "policy_privacy": 4,
-    "research_news_review": 6
+    "report_card_evidence": 2,
+    "research_news_review": 15,
+    "research_optics": 2,
+    "retail_rebrand_review": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
     {
       "url": "https://brilliant.xyz/blog",
       "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.everysight.com/pages/maverick-ai",
+      "error": "HTTP Error 500: Internal Server Error"
     }
   ],
   "candidates": [
     {
-      "id": "f973ea66cbf5a852",
-      "title": "When Surveillance Becomes Wearable: AI Smart Glasses and the New Threat to Women’s Security - natoassociation.ca",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYzRuTldWemhuTHR6WVZEbHpBajBWVzhyR1NaYzhCTy1JbVlwbzVWenljMlB3TmVoUFVKQUFuVm5zTVphdU9XdHQ2cWpRXzlOTVJ3U0ViMlQxMDMxSlE0N2xsWjU1S1JuNk9oMHRHb216SVJpbDFRbkpia2JGM2dKcExZMXplVHNpTlNDWHpNT3ZDOGtzLU9pWlJHQzk5cDVSenZ3cTlKdTRnR3l1My1DNVNsYm5rVThJ?oc=5",
-      "source": "Google News: smart glasses",
-      "source_lane": "core_glasses",
-      "published": "Fri, 25 Sep 2026 12:00:00 GMT",
-      "summary": "When Surveillance Becomes Wearable: AI Smart Glasses and the New Threat to Women’s Security natoassociation.ca",
-      "materiality_score": 4,
+      "id": "5197c5ccb281239c",
+      "title": "Mentra 3.3.0-dev.369",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.369",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-09-25T16:23:46Z",
+      "summary": "Mentra 3.3.0-dev.369 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 6b1af8f . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
       "keyword_hits": [
-        "ai",
-        "security"
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
       ],
       "status": "candidate",
       "relationship": "direct",
       "content_types": [
-        "policy"
+        "model",
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "policy",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "policy_privacy"
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "4d523889b7da2b8b",
+      "title": "Canada-wide recall issued for AI smart glasses due to burn hazard - dailyhive.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5yUHBUa3lqY1FfaTBoTEJncnYtdXhNelVCbHdFZUFIV3UxZGRrV21JeksyZW9oeGtRQjZPX1NRcE1iS1RuelZCamFqd21DNmh0MTBjdjNuemNSZmNSYXNtb0ZJVE1TZG50UkE?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Fri, 25 Sep 2026 14:21:00 GMT",
+      "summary": "Canada-wide recall issued for AI smart glasses due to burn hazard dailyhive.com",
+      "materiality_score": 5,
+      "keyword_hits": [
+        "ai",
+        "recall"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review"
       ],
       "triage_priority": "high",
       "publication_eligible": true,
@@ -58,13 +112,104 @@
       "institution_test": "likely durable"
     },
     {
-      "id": "9a517c6c3a84c3b2",
-      "title": "Meta doubles down on AI glasses as privacy concerns grow around always-on wearables - storyboard18.com",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZXVUQTVjSXF4NzN2QkJBN2FCY09JRHlOUmxsVVhpalFVWmQtQlRLMGlVQm1rU21EVG96clpXcS1zSVh1SGZGVGRIaThITzBLbzJaSzdFT1A5cFViMGNabk5oVVd3anZfTFYwNDFfSjItZ2NtSG55dXJiZ1dqQ3BnVEczcVV4SlA0V2dBZlRFNjVDUjNPTUhNelYzeGpNYS1QV2hyZGhseTlmZldIc0drLXVUTFBhU3pYOHpneWF6VUVKR25wZjFocXJZQdIB0AFBVV95cUxOSjczZzZqMXVpOFVyN2VmQU9xbWo0amdHRFN3cXlnYUEzd2JLX3p3SkF4alplQjl4T09GYW03U3duXzdWaXFBNEZONmR2MVZkcUtwOEpnWmM3YmJhVFMtN3JQLWhSV0d6WFZBOHBYSTc0NDdKaThHODV5V1RmV2NrM1dJZWVWQ1VudEtScEVmQkFVem5INHotMVd5QnZOR1VkVDY0cEtjSXc3cndyRC1wRW84eEE4R2RPTzhfZXNQUDBZaHh1a0QxR1RVc1BJdTgz?oc=5",
-      "source": "Google News: Oakley Meta glasses",
+      "id": "11f46cfaff0d6aff",
+      "title": "Canada-wide recall issued for AI smart glasses due to burn hazard - dailyhive.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1PQU5LUVNiTFd5VXFCcm9ncUpJQjYwWVRoTTRWZTQxdXY4dkhZOHdQX082cFFpbWI4NEJJYXQ3eUN5NFYtT1VrYk5MNVQ4S0V3ZV95cWFndVV6Q29yd1lHSS00bUdiWDQ?oc=5",
+      "source": "Google News: smartglasses",
       "source_lane": "core_glasses",
-      "published": "Thu, 24 Sep 2026 07:21:43 GMT",
-      "summary": "Meta doubles down on AI glasses as privacy concerns grow around always-on wearables storyboard18.com",
+      "published": "Fri, 25 Sep 2026 14:21:00 GMT",
+      "summary": "Canada-wide recall issued for AI smart glasses due to burn hazard dailyhive.com",
+      "materiality_score": 5,
+      "keyword_hits": [
+        "ai",
+        "recall"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "346f4e1db8302eaf",
+      "title": "Health Canada warns against use of AI smart glasses, issues immediate recall - The News International",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMHhXN2E3NjZMOTBsajRrOHpOTDl2MUY4S1ktLU9XNDZBZjJ1Nks5NnFoUkJ3cFhYeGhQYXhXbjZLYlRJR3R5NW4tX19qSkVZeEIzRTBzbklIaEFxMHdxaFROcnk3aS0zY3dwRm9lZmpRMTNMQldlak1zLU8tdWRaZmtpNnpRcUROQ0poWFNaRE1Cb1ZnTlZVUmRHQmh0MkpiLVRZREJqLUVoTXdZYTZLTFZ1dC1VLS0x0gG0AUFVX3lxTE1OaFB0RXJWUkxJaEZUVnRnRGthMEFlY2lsN2ZxZktjamtmSTA3UkVGZTcxdUxtLW0tbG9JUjlac0V6TWVLYzJUSzlOeS1FaGdqSTFfR1ZUVV82VDVkZVgwZVh0Mm1OQ2NJQXpCWDFuX01hOUNCcmwtNEFGVFNDMi1TNUVnbHB0OUMwOEpxOHlsS3otSy1VMjZsU3FuVWNqQ0J5dlA2NjhMZHJlQWw3LVpPQ0tvVA?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Fri, 25 Sep 2026 16:50:17 GMT",
+      "summary": "Health Canada warns against use of AI smart glasses, issues immediate recall The News International",
+      "materiality_score": 5,
+      "keyword_hits": [
+        "ai",
+        "recall"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "d99e1e39a206ea3e",
+      "title": "Meta VR Glasses Hands-On: Hand And Eye Tracking Is So Much Better Than A Controller - engadget.com",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBZNFBJN2FZLUJIZDQ1dnlydXk1QUJBUXdYTVAtV3VJOGNTSkZlekpfMURwWkdUTVNtYUxGWHFhUG1kZjhlQXhuMGhVWUNHSHJYRW5VQ2ZRZlBDa1lmLVp0UDQyYXZzb1hzeVdHLXppQ0dQOTFSOUY5UGtPZW0?oc=5",
+      "source": "Google News: Even Realities glasses",
+      "source_lane": "core_glasses",
+      "published": "Thu, 24 Sep 2026 01:00:00 GMT",
+      "summary": "Meta VR Glasses Hands-On: Hand And Eye Tracking Is So Much Better Than A Controller engadget.com",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "eye tracking",
+        "hands-on"
+      ],
+      "status": "candidate",
+      "relationship": "enabling",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: eye tracking",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "b741c3890484cf81",
+      "title": "Meta leans into AI, smart glasses amid privacy pushback - Khaleej Times",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObkU1OXFhbmNDV0VJckdVdUdnZXV2MVpBcWNuVE9faEMtZU9CT1k2VVk2ZEVDZkJ6X2NiSklzZXJsQTdmOVlWYWd0aVdvSVA5OEc2SjNoVVF5Q05rcUJLUm91dy1XUU1NWG9CT3NOeUhScWMxTWN3MWx0NTAtdXQzWnpXa2pPVHJvRjZNRzBtMFI3bXp2M2ktS0Vn0gGiAUFVX3lxTE5MWWRIZFN4ZVV0TlB3SEVzVnZZU2hyTDhfalk3MFptMXZraTZXNUZHLUxBbzdQUU82azgtUEN1R2V1OEFDNUctRUQ3NElibGo4Qm0zcEZfNXF2Yzc1dHhLRnZ3aWRoMnE1ckQ2eXFsV01tNVFuR1o3Y0hfWXZ3dUVEMWRKbE1wUXItMnJ0Z3RyVTd2ZG9JeGpnV3pRXzNTX2x2Zw?oc=5",
+      "source": "Google News: smart glasses rumor",
+      "source_lane": "core_glasses",
+      "published": "Wed, 23 Sep 2026 18:15:50 GMT",
+      "summary": "Meta leans into AI, smart glasses amid privacy pushback Khaleej Times",
       "materiality_score": 2,
       "keyword_hits": [
         "ai",
@@ -82,23 +227,113 @@
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "8a7db156da177c61",
+      "title": "Meta Ray-Ban Display Getting Feature Updates Including Holographic Avatar Support - engadget.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOHBQMVV1dXd0OG0xakw4SU9hVjBiYjh4ZzAtMG1BVktQSzVacldtd0JleWVkQ1NxOWduRG5UNzFhUVRSQmIzM1FEZ0dYbUJpSmFzR1YtVUI2aGVPemFJZ3Vmb3A4QzMzcFRzVG9zX2JEODBBR0NMRldVTEh5eHFiSFBpSktSRm45RHo3NmFPMkxKX0FqYzFBdEFqcGxod1JXSzdPTks2c2tWQW5TYm8zWWhCTkRaQQ?oc=5",
+      "source": "Google News: smart glasses tools",
+      "source_lane": "core_glasses",
+      "published": "Wed, 23 Sep 2026 23:44:51 GMT",
+      "summary": "Meta Ray-Ban Display Getting Feature Updates Including Holographic Avatar Support engadget.com",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "display",
+        "holographic"
+      ],
+      "status": "candidate",
+      "relationship": "enabling",
+      "content_types": [
+        "optics",
+        "policy"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics",
+        "policy_privacy"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: holographic",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "3723776e62052f26",
+      "title": "Meta unveils camera-free audio AI glasses - kiro7.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOU1FnOTZ6cHBNX25CRElmWUJ4T1ByN21uX3Z2ek00dWRNWWFISlY0MWFJYTFhTnNJbll2QzZkSUpZT0kydWRmeE1zTXpmMndiYW5XMkh4R3VVS0Q3NGd1bE1KVEhuM2RydWtFclk0S25sOVFaSEd6VjM5b1R6LUZFN2FvOUZ4MUs3Z0VlVGpOZ2k4SGVPanJtT05CMDBxTVhCZllpeUJ5LVlDZVBTcW5meDJ3?oc=5",
+      "source": "Google News: AI glasses",
+      "source_lane": "core_glasses",
+      "published": "Thu, 24 Sep 2026 19:12:52 GMT",
+      "summary": "Meta unveils camera-free audio AI glasses kiro7.com",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "camera"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
       "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
     },
     {
-      "id": "29581c850dd443d4",
-      "title": "Would you know if you were being recorded? Meta’s AI glasses raise privacy questions - explain.co.za",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNzNyam1mWHA0Y0wyZlVpZ19jcUNkNm1pOUFaNmdad3hjSWFVMHNsWlZsZnd3eE83bVJCUlZUQ0FRVHVQcF8zanl1ZDVzQ0VVRkRNOFJlUW94Z1pLMEI5eTVSWFlVei1nbFcxZXNWVFduY3VMVW9VVGZFN1FfS1g3NHowWVYxWEtGQWF5MEprSC1qU2tZYXQyZ1RacmVhNGRBXzlMYWM5U1BnWkJFLUZvc3FMQUo3bDg?oc=5",
-      "source": "Google News: smart glasses privacy",
+      "id": "e5e50e1246b08abc",
+      "title": "New York Times Cooking Is Coming To Meta's AI And Display Glasses - engadget.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdHBQcE16NHQ2UHBxemEzdzZSV3hqVS1DOFhwRTFKem5rS2UyOFdrQlJ6RHYzbGNkR0w0UGV4N0xUWnFxMHlKSUFvdTM2WWVGOUNHdXVkY05UZ1YzZUszQkJWU2QxamtrQVhoeHhHeVRJWGttWXV4Y2xybFR5MWZkY1BHdVVuNk93WHBSU2NLVWZUVW1xT1l1U0xhWXc4anM?oc=5",
+      "source": "Google News: AI glasses",
       "source_lane": "core_glasses",
-      "published": "Fri, 25 Sep 2026 13:05:52 GMT",
-      "summary": "Would you know if you were being recorded? Meta’s AI glasses raise privacy questions explain.co.za",
+      "published": "Thu, 24 Sep 2026 19:24:34 GMT",
+      "summary": "New York Times Cooking Is Coming To Meta's AI And Display Glasses engadget.com",
       "materiality_score": 2,
       "keyword_hits": [
         "ai",
-        "privacy"
+        "display"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: display glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "9a5083a0f580cb86",
+      "title": "Ray-Ban and Meta Ripped the Camera Out of Their Smart Glasses and Tripled the Battery - hiconsumption.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBCWjFKUHNOZ2lFbG4zRzA4aWppNlg4ODNwQklHelpaanM1MzktVGl4d2pwODFfcW9pcVVSYnRWRDlULTNhUUE1NWZhV2QxMjRtLU5Ob3NmaThOV1VxYkM0Z1lQZkFqWTZHUnc?oc=5",
+      "source": "Google News: Meta Ray-Ban glasses",
+      "source_lane": "core_glasses",
+      "published": "Thu, 24 Sep 2026 21:36:38 GMT",
+      "summary": "Ray-Ban and Meta Ripped the Camera Out of Their Smart Glasses and Tripled the Battery hiconsumption.com",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "battery",
+        "camera"
       ],
       "status": "candidate",
       "relationship": "direct",
@@ -112,24 +347,58 @@
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
     },
     {
-      "id": "abc3a3fb04806e22",
-      "title": "Qualcomm Snapdragon Sound Elite Gen 2 Integrates AI and Wi-Fi for Next-Generation Hearables - audioxpress.com",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTDNyQ3JFZy1JVi0wamdfTElnUkd3NzBBVjJ3ZEJZMzNrbFhmOW1MdEFHMExuVThMUmxDWlViWXRQejhxYklycTFuelQ4Mm81OG9qNDM5NXlHNmlxdTNveTUxSjZjX25zYV8yX3RqMlNXU29BWTNYTTN2Q1JGZlhvN2trNFBRblI3Q0R3bC13TE9Ba29LaUlSamU4WXZGZUFIamkxTWhfcXlQV2VvNURhUWZuQ0dZV1A4UkE?oc=5",
-      "source": "Google News: wearable AI interface",
+      "id": "104be930070802e9",
+      "title": "Ray-Ban Meta Gen 3 Hands-On: Better Battery Life And A Price Hike - engadget.com",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS2xnLVZzcnl6cmg4TXNFWHB0ME5XTWhzZjg4WUkxMXdzYVF0Z2liNFZ0R1NTOUJuX3pMOVBVVW10M1RCdE51MXc5Ry1mQWJ4c2hzbDJtd2NuTHFmY3dDZS1EWXM2ZUh4UGw1VG9lWElFNENIcVFzenpHbmpTT3ViT05qLVJNQXBa?oc=5",
+      "source": "Google News: Meta Ray-Ban glasses",
+      "source_lane": "core_glasses",
+      "published": "Wed, 23 Sep 2026 23:35:54 GMT",
+      "summary": "Ray-Ban Meta Gen 3 Hands-On: Better Battery Life And A Price Hike engadget.com",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "battery",
+        "hands-on"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "review",
+        "policy",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "policy_privacy",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ray-ban meta",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "e23f8c5254d898f1",
+      "title": "Qualcomm debuts Snapdragon Sound Elite Gen 2 to power camera-equipped AI audio wearables - Wareable",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWkNZNkNhdDBQRUpYMVpqaWs4NjF4V0tXanRHdWtBQW9ma2x4Q01JbGV2cG1rNHZ6QWhpd1ZWR05NVFMzdmw4bWJjYTdZcktDWGVWRk1sZFNmdUdBNnFpdzJSNHJya01SR1Q0S1F2Y3lCSFpQQkZVTUE1bVFPdGYzWUZqeVlqUDhjY2RxZmcxZTBiaGI3T3BhOXF5STlodS1yR0JQZUhfOWI?oc=5",
+      "source": "Google News: AI wearable camera",
       "source_lane": "adjacent_hci",
-      "published": "Wed, 23 Sep 2026 18:30:00 GMT",
-      "summary": "Qualcomm Snapdragon Sound Elite Gen 2 Integrates AI and Wi-Fi for Next-Generation Hearables audioxpress.com",
+      "published": "Thu, 24 Sep 2026 14:49:39 GMT",
+      "summary": "Qualcomm debuts Snapdragon Sound Elite Gen 2 to power camera-equipped AI audio wearables Wareable",
       "materiality_score": 3,
       "keyword_hits": [
         "ai",
-        "snapdragon",
-        "wi-fi"
+        "camera",
+        "snapdragon"
       ],
       "status": "candidate",
       "relationship": "adjacent",
@@ -149,27 +418,55 @@
       "institution_test": "review durability"
     },
     {
-      "id": "bca65bf05fab6020",
-      "title": "Meta Ray-Ban Audio Launches at USD 349 with Camera-Free AI - analyticsinsight.net",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaHJuaVc5dEhpM1dxOEp5LXhObGg3d3g4MnU4NEhoSXhtUDBFcnl1NDc2czRSWXZSdVdLdkNsMHNrY1BlTmZFUFRMVGhRYmtRdEROQ2wzWnRFVFBjRlVtTllhYWZTa2k2WndpMW00M1d2R1Q1VmNNWXFyZjhBNG9tRWRxS25uWHpMbzFLbDdlNmFUS1NBdEZOLWRRRUxCc2FFeFBBQVdkX0JXd9IBqgFBVV95cUxQaHJuaVc5dEhpM1dxOEp5LXhObGg3d3g4MnU4NEhoSXhtUDBFcnl1NDc2czRSWXZSdVdLdkNsMHNrY1BlTmZFUFRMVGhRYmtRdEROQ2wzWnRFVFBjRlVtTllhYWZTa2k2WndpMW00M1d2R1Q1VmNNWXFyZjhBNG9tRWRxS25uWHpMbzFLbDdlNmFUS1NBdEZOLWRRRUxCc2FFeFBBQVdkX0JXdw?oc=5",
-      "source": "Google News: AI wearable camera",
+      "id": "a030e12e312012c3",
+      "title": "Cerebionics Builds Brain-Computer Interface for Machines - konsulteer.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbmpqenlRaG5WQWdySzZZM0VCX0ZlS3J6cDc5M1U5UlZNRllBeVVGVDJXVXp0T1daS1BNS0NZdjR2eXRJczUwVXN0ZHRINWttV0hNNnRUblBxSlI4bmtuZ29MTk10SngzUDJjNW9YcUxvTGVuNmRhNk5HamZrV2JXY0hPZEJDRi0taFNHN253aTQ1SFNJbEgxNUUyUFpmVE9QcVBNV2dYeGhUZ3Byb25BU1ZyOHNlTU02MkV1My1Nbw?oc=5",
+      "source": "Google News: wearable human computer interface",
       "source_lane": "adjacent_hci",
-      "published": "Thu, 24 Sep 2026 06:23:06 GMT",
-      "summary": "Meta Ray-Ban Audio Launches at USD 349 with Camera-Free AI analyticsinsight.net",
+      "published": "Fri, 25 Sep 2026 14:20:09 GMT",
+      "summary": "Cerebionics Builds Brain-Computer Interface for Machines konsulteer.com",
       "materiality_score": 2,
       "keyword_hits": [
-        "ai",
-        "camera"
+        "brain-computer"
       ],
       "status": "candidate",
       "relationship": "adjacent",
       "content_types": [
-        "policy"
+        "news"
       ],
-      "primary_type": "policy",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "153446c92ea5fdf6",
+      "title": "Meta unveils Muse AI keychain gadget at Connect 2026, signalling shift to ambient computing - streamlinefeed.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNlJpUHNJRnpBalAyVjlBSW9kaEZPQkNmc0JHX3h6eTNxN0RoOWMyanFZTGhZaU9qVWNrQWtsSzBCT19xdkZsTWtaZWFxZFAxU00ta0ZabGJHWW0zT0o1eUZQY08yQm5jRExmaU12ZHQyOEJRek4tZGF1S1pGRnZqQmlCUUZYcW1iZHN5SU1UMkd5Y2REV00tY2ExbzF6NkNHa0IzQUpiaDdOeTlrVXNLOGJsa05ZSHQxZFE?oc=5",
+      "source": "Google News: wearable human computer interface",
+      "source_lane": "adjacent_hci",
+      "published": "Thu, 24 Sep 2026 07:00:00 GMT",
+      "summary": "Meta unveils Muse AI keychain gadget at Connect 2026, signalling shift to ambient computing streamlinefeed.co.ke",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "ambient computing"
+      ],
+      "status": "candidate",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -180,12 +477,12 @@
       "institution_test": "review durability"
     },
     {
-      "id": "a226a9176b1a54cb",
+      "id": "8d8aaa0ee2408c0c",
       "title": "Snapdragon Summit 2026 Hits and Misses: Qualcomm Makes Big Agentic AI Bet - TelecomLead",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPU2VnTVhLWFFEb2pDZnpvc2dnUzc1OURuSGFobDh1U0NIYUNiQkt1NXVabEtpU0V0TWVOdDA2bkxCUEN3Q3Rra28xM1IwR3RFRUlTbkM3UGlIdld6al9vUnQ5d05kTTlxZTdYRGcwVEhvWlNyc3NaVkFLRC04OVdkN084Z2pVcjlBMklkQnFxeVFXZDBXbDhObGI1T3AwYzJGZW0xRm55em5xOE5RazZMT3BZUXp6c29MX2NoUGN4TzLSAcABQVVfeXFMT1NlZ01YS1hRRG9qQ2Z6b3NnZ1M3NTlEbkhhaGw4dVNDSGFDYkJLdTV1WmxLaVNFdE1lTnQwNm5MQlBDd0N0a2tvMTNSMEd0RUVJU25DN1BpSHZXempfb1J0OXdOZE05cWU3WERnMFRIb1pTcnNzWlZBS0QtODlXZDdPOGdqVXI5QTJJZEJxcXlRV2QwV2w4TmxiNU9wMGMyRmVtMUZueXpucThOUWs2TE9wWVF6enNvTF9jaFBjeE8y?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPY0hhZGxqdkVxeWc3amY1elZlWnN1R3F5RV9ZZHVneU5ZMWtGYWk2TUh2V2poSEhNOVJSLVgzUmdtaFV0dmFSMnBIemNnZzlTaVlBQTlXcGQ1a29iRDJnSzRsMG10TkZsRi02cEdjQko0akc3S2FpUEtTTWNpWXlpR3A0Mmxsb0JxTUlKS3lsdHVvMmg2N1JyZ3h1SDh2U09XQnQwVS0wNlI3WDlCbWlPNlFiT0ZrUWxU0gHAAUFVX3lxTE9TZWdNWEtYUURvakNmem9zZ2dTNzU5RG5IYWhsOHVTQ0hhQ2JCS3U1dVpsS2lTRXRNZU50MDZuTEJQQ3dDdGtrbzEzUjBHdEVFSVNuQzdQaUh2V3pqX29SdDl3TmRNOXFlN1hEZzBUSG9aU3Jzc1pWQUtELTg5V2Q3TzhnalVyOUEySWRCcXF5UVdkMFdsOE5sYjVPcDBjMkZlbTFGbnl6bnE4TlFrNkxPcFlRenpzb0xfY2hQY3hPMg?oc=5",
       "source": "Google News: edge AI wearable processor",
       "source_lane": "adjacent_hci",
-      "published": "Fri, 25 Sep 2026 10:46:33 GMT",
+      "published": "Fri, 25 Sep 2026 10:47:46 GMT",
       "summary": "Snapdragon Summit 2026 Hits and Misses: Qualcomm Makes Big Agentic AI Bet TelecomLead",
       "materiality_score": 2,
       "keyword_hits": [
