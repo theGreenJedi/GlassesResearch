@@ -5,7 +5,7 @@ description: "Direct smart-glasses SDK, API, BLE protocol, firmware, open-hardwa
 
 # Open Development Resource Ledger
 
-Last reviewed: **2026-08-21**
+Last reviewed: **2026-09-25**
 
 This page lists concrete public resources that owners, developers, and researchers can actually use. It does not contain placeholder categories or generic instructions to search elsewhere.
 
@@ -83,6 +83,10 @@ Forks and mirrors of the same reverse-engineering project are preservation or de
 
 - [Rokid SDK documentation](https://x-docs.rokid.com/docs/en/terminal-sdk/) — **Project-primary** — official unified SDK index with quick start, glasses-side SDK, phone-side SDK, capability scenarios, samples and API references.
 - [Rokid Glasses SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/glasses/) — **Project-primary** — official device-side SDK for media capture, voice, recognition, messaging, device state, Bluetooth and P2P on supported Rokid glasses.
+- [Rokid Nexus](https://github.com/Anezium/Rokid-Nexus) — **Community** — owner/developer hub for display-equipped Rokid Glasses. Its architecture keeps a persistent glasses-side hub while extending capabilities through ordinary Android APK plugins on the phone; the public project exposes HUD, camera-question, speech/AI, notification and calendar integrations and supports selectable AI providers/self-hosted endpoints. Treat compatibility and behavior as community evidence until independently reproduced.
+- [Rokid Live Studio](https://github.com/Anezium/Rokid-Live-Studio) — **Community** — phone-hosted live-media project demonstrating glasses camera/microphone transport over Wi-Fi Direct while preview, encoding and streaming remain on the phone. Useful for transport and host-boundary investigation; not independent confirmation of every Nexus claim merely because the projects share an author.
+- [aimindseye / rokid-ai-glasses](https://github.com/aimindseye/rokid-ai-glasses) — **Community research** — evidence-labeled investigation of the display-free RV203/Style family. Public work reports qualified RSA-protected USB ADB access with Developer Mode enabled, maps phone/cloud/glasses responsibilities, and investigates AI/media paths. Findings remain community-attributed until GlassesResearch reproduction.
+- [GlassesResearch: aimindseye Community Research profile](../docs/community-research/aimindseye-rokid-ai-glasses.md) — GR evidence-boundary summary and investigation link.
 
 ## Project Aria research tooling
 
