@@ -24,3 +24,12 @@ GlassesResearch will not infer that an external module automatically improves ow
 
 - [Reuters — Meta Connect 2026 hardware coverage](https://www.reuters.com/business/meta-expected-unveil-smart-glasses-without-camera-privacy-concerns-grow-2026-09-23/)
 - [UploadVR — Project Phoenix architecture background](https://www.uploadvr.com/meta-project-phoenix-headset-first-clear-visuals/)
+
+## Developer-platform update — September 24–25
+
+Unity now documents Meta VR Glasses support in Unity 6.6 through OpenXR, including a Quest-based starting profile, hand/eye interaction tooling, and simulator workflows before retail hardware arrives. This strengthens the architectural evidence that the external-compute hardware is being integrated into Meta's existing XR software ecosystem rather than treated as a one-off prototype.
+
+This remains platform evidence, not evidence of production thermals, endurance, latency, comfort or serviceability.
+
+- [Unity — Meta VR Glasses development support](https://unity.com/blog/build-for-meta-vr-glasses-with-unity)
+- [GlassesResearch developer-surface research note](../../../research/META_WEARABLES_DEVELOPER_SURFACE_2026_09_25.md)
