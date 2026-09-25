@@ -1,40 +1,40 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-25T01:38:13.282085+00:00",
-  "candidate_count": 60,
-  "classifier_irrelevant_count": 54,
+  "discovered_utc": "2026-09-25T06:46:46.889666+00:00",
+  "candidate_count": 48,
+  "classifier_irrelevant_count": 37,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 6,
-    "broad_web": 43,
-    "developer": 12,
+    "adjacent": 12,
+    "broad_web": 22,
+    "community": 1,
+    "developer": 6,
+    "research": 11,
     "retail": 1
   },
   "relationship_counts": {
     "direct": 1,
     "enabling": 0,
-    "adjacent": 5,
+    "adjacent": 10,
     "speculative": 0,
-    "irrelevant": 54
+    "irrelevant": 37
   },
   "type_counts": {
-    "model": 1,
-    "review": 2,
-    "video": 5,
-    "news": 29,
-    "tool": 15,
-    "sdk": 12,
-    "policy": 1,
-    "retail": 2,
-    "teardown": 1,
-    "community": 9
+    "video": 3,
+    "news": 14,
+    "research": 11,
+    "tool": 10,
+    "sdk": 7,
+    "retail": 10,
+    "community": 2,
+    "rumor": 2
   },
   "routing_counts": {
-    "adjacent_radar": 5,
-    "model_catalog_review": 1,
-    "reject_noise": 54,
-    "report_card_evidence": 2,
-    "research_news_review": 6
+    "adjacent_radar": 10,
+    "deep_research": 1,
+    "reject_noise": 37,
+    "research_news_review": 11,
+    "retail_rebrand_review": 9
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -45,62 +45,65 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://dumall.baidu.com/product/902971303493639",
+      "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>"
+    }
+  ],
   "candidates": [
     {
-      "id": "6bd9d28275221af1",
-      "title": "Shop Meta Glasses: AI Glasses Starting at $249 | Meta Store",
-      "url": "https://www.meta.com/ai-glasses/meta-glasses/",
-      "summary": "Shop new Meta Glasses with built-in Meta AI, 3K video, and 12MP camera. Three AI glasses styles starting at $249. Free shipping.",
-      "discovery_channel": "broad_web+retail",
-      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "id": "ea4c0aa96c48187e",
+      "title": "Best smart glasses in 2026: Top AR and AI glasses worth your ...",
+      "url": "https://www.tomsguide.com/computing/vr-ar/best-smart-glasses",
+      "summary": "I’ve been wearing and testing smart glasses for over 5 years — here are the best AR and AI glasses you can buy right now.",
+      "discovery_channel": "broad_web+community+research+retail",
+      "query": "smart glasses; smartglasses; AI glasses; AR glasses; best smart glasses; smart glasses site:amazon.com; smart glasses site:walmart.com; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com; smart glasses site:aliexpress.com; smart glasses site:alibaba.com; smart glasses site:spectrum.ieee.org; smart glasses site:reddit.com/r/SmartGlasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
+      "materiality_score": 2,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "direct",
       "content_types": [
-        "model",
-        "video"
+        "news"
       ],
-      "primary_type": "model",
+      "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "report_card_evidence"
+        "research_news_review"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3bd71b51fb3aa860",
-      "title": "Run code before and after each test in py.test? - Stack Overflow",
-      "url": "https://stackoverflow.com/questions/22627659/run-code-before-and-after-each-test-in-py-test",
-      "summary": "I want to run additional setup and teardown checks before and after each test in my test suite. I've looked at fixtures but not sure on whether they are the correct approach. I need to run the setu...",
+      "id": "9b48f52b15cc0ade",
+      "title": "Used Toyota Camry for Sale in Seattle, WA - Cars.com",
+      "url": "https://www.cars.com/shopping/toyota-camry/seattle-wa/",
+      "summary": "Shop Toyota Camrys in Seattle, WA for sale at Cars.com. Research, compare, save listings or contact sellers directly from 147 Camrys in Seattle, WA.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "teardown"
+        "research"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "teardown"
+        "research",
+        "retail"
       ],
-      "primary_type": "teardown",
+      "primary_type": "research",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
+        "retail_rebrand_review",
+        "deep_research",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -109,12 +112,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "33c8fc3f6a6e35a5",
-      "title": "batch file from scheduled task returns code 2147942401",
-      "url": "https://stackoverflow.com/questions/48343993/batch-file-from-scheduled-task-returns-code-2147942401",
-      "summary": "I am trying to schedule a job to run a batch file with Windows 10 Task Scheduler, but it results in return code 2147942401. The batch file is on remote location so I am giving the absolute path \"\\\\\\\\",
+      "id": "3100fe49a40e7e2b",
+      "title": "New Toyota Camry for Sale in Seattle WA | New Toyota Dealer Seattle",
+      "url": "https://www.toyotaofseattle.com/toyota-camry-for-sale-seattle-wa",
+      "summary": "Toyota of Seattle provides access to a wide selection of new Toyota Camry models with various trims, features, and color options. This allows drivers to explore multiple configurations to find the sedan that fits their lifestyle and driving needs.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ab58132b6bcf451",
+      "title": "The Latest Wearable News and Analysis | PCMag",
+      "url": "https://www.pcmag.com/news/categories/wearables",
+      "summary": "Get the latest Wearable news and in-depth analysis from the experts at PCMag.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -136,12 +167,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4e78a9635ddfb039",
-      "title": "c++ - GoogleTest: How to skip a test? - Stack Overflow",
-      "url": "https://stackoverflow.com/questions/7208070/googletest-how-to-skip-a-test",
-      "summary": "Using Google Test 1.6 (Windows 7, Visual Studio C++). How can I turn off a given test? (aka how can I prevent a test from running). Is there anything I can do besides commenting out the whole test?",
+      "id": "c10564ca9ce64784",
+      "title": "Toyota Camry For Sale In Seattle, WA - Carsforsale.com®",
+      "url": "https://www.carsforsale.com/toyota-camry-for-sale-in-seattle-wa-C648148-L124186",
+      "summary": "Shop 164 used Toyota Camry in Seattle, WA as low as $6,600. Get free history reports, credit checks, expert reviews & online financing.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -150,11 +181,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -163,12 +195,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "690cd16d44702bb6",
-      "title": "Cities Nearby Quincy, Illinois, United States",
-      "url": "https://www.thecitiesnow.com/united_states/illinois/quincy",
-      "summary": "Find five hundred cities near Quincy, Illinois, United States from closest to farthest by distance. Distances from Quincy to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "id": "af8e500f1778e7c3",
+      "title": "Toyota Camry for Sale in Seattle, WA - Toyota of Seattle",
+      "url": "https://www.toyotaofseattle.com/inventory/New/Toyota/Camry",
+      "summary": "Explore the new Toyota Camry at Toyota of Seattle. Find your ideal sedan with hybrid-focused efficiency and advanced safety features, perfect for commuting in Seattle, WA.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -177,11 +209,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -190,12 +223,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "92c477a63c2b29ba",
-      "title": "Movie Showtimes and Theaters near Quincy, IL | Fandango",
-      "url": "https://www.fandango.com/quincy_il_movietimes",
-      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Quincy, IL.",
+      "id": "09ebdb5076ee8ad5",
+      "title": "Used Toyota Camry for Sale in Seattle, WA (with Photos) - TRUECar",
+      "url": "https://www.truecar.com/used-cars-for-sale/listings/toyota/camry/location-seattle-wa/",
+      "summary": "Shop over 1,263 used Toyota Camry for sale in Seattle, WA with transparent pricing. Save time and money with TrueCar. Compare prices and view deals near you.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -204,11 +237,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -217,81 +251,138 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "72ed9859d64c26fa",
-      "title": "8 31 26 - Mike Gallagher | AM 970 The Answer - New York, NY",
-      "url": "https://am970theanswer.com/columnists/mike-gallagher/broadcast/8-31-26",
-      "summary": "Please Welcome Joey Hudson, Who is Guest-Hosting for Mike Gallagher Today! Find Joey Hudson’s Podcast: “Just The Truth” at JoeyHudson.com Trump vows to report NBC anchor Kristen Welker to FCC over ‘purposeful inaccuracy’ on endorsements Clyburn: We Need to Expand t",
+      "id": "1e261b4893e9496d",
+      "title": "Used Toyota Camry for Sale in Seattle, WA - Autotrader",
+      "url": "https://www.autotrader.com/cars-for-sale/toyota/camry/seattle-wa",
+      "summary": "Used Toyota Camry for sale in Seattle, WA. Browse local listings near you on Autotrader.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d24baccb5cbeb51d",
+      "title": "Used Toyota Camry for Sale in Seattle, WA - CARFAX",
+      "url": "https://www.carfax.com/Used-Toyota-Camry-Seattle-WA_w630_c15895",
+      "summary": "Find the perfect used Toyota Camry in Seattle, WA by searching CARFAX listings. We have 78 Toyota Camry vehicles for sale that are reported accident free, 99 1-Owner cars, and 113 personal use cars.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c3a0676f13d7fbb4",
+      "title": "Used Toyota Camry for Sale Near Me - Autotrader",
+      "url": "https://www.autotrader.com/cars-for-sale/toyota/camry",
+      "summary": "Test drive Used Toyota Camry at home from the top dealers in your area. Search from 18494 Used Toyota Camry cars for sale, including a 2022 Toyota Camry TRD, a 2022 Toyota Camry XSE, and a 2023 Toyota Camry XSE ranging in price from $995 to $47,990.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5ff377814ba1bdb",
+      "title": "Used Toyota Camry for Sale near Seattle, WA - CarGurus",
+      "url": "https://www.cargurus.com/Cars/l-Used-Toyota-Camry-Seattle-d292_L37788",
+      "summary": "Browse the best September 2026 deals on Toyota Camry vehicles for sale in Seattle, WA. Save $5,838 right now on a Toyota Camry on CarGurus.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9c35b7c9bd667038",
+      "title": "TEN Brands Unite | Star Leasing and Partners Rebrand as TEN",
+      "url": "https://tenleasing.com/en/news/star-leasing-company-commercial-trailer-leasing-inc-cooling-concepts-and-north-east-trailer/",
+      "summary": "Star Leasing and its partners adopt the name TEN, strengthening a unified identity across North America’s leasing network.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d6213c6b30b6f05d",
-      "title": "Back to School Giveaway 2026 | AM 970 The Answer - New York, NY",
-      "url": "https://am970theanswer.com/members/member-contests-and-sweepstakes/enter-the-back-to-school-sweepstakes",
-      "summary": "CONGRATULATIONS to Jeffery R. from New Jersey He's the GRAND PRIZE winner of the Back to School Giveaway 2026. Check out our other giveaways to enter!",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0ae6e583ff93f6b",
-      "title": "Change video privacy settings - Android - YouTube Help",
-      "url": "https://support.google.com/youtube/answer/157177?hl=en-gb&co=GENIE.Platform%3DAndroid",
-      "summary": "Update the privacy settings of your video to control where your video can appear and who can watch it.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 4,
       "keyword_hits": [
-        "privacy"
+        "rebrand"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video",
         "tool",
-        "policy"
+        "sdk"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -301,10 +392,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "96b102a4ed4df00b",
-      "title": "Dr. Eric Kaplan Talks National Stroke Awareness Month",
-      "url": "https://am970theanswer.com/podcasts/boost-your-brain-power/dr-eric-kaplan-talks-national-stroke-awareness-month",
-      "summary": "BOOST YOUR BRAIN POWER with Dr. Eric Kaplan SHOW 196 5-9-26 Eric Kaplan, DC, DACNB, FACFN, FABVR, FABCDD Dr. Kaplan is the founder and sole proprietor of Kaplan Brain ...",
+      "id": "3885cafbefec5341",
+      "title": "Full-Service Trailer Solutions | TEN",
+      "url": "https://tenleasing.com/en/",
+      "summary": "Introducing TEN (Transportation Equipment Network), the unified brand of Star Leasing, CTL, Cooling Concepts, NETS Leasing, TIP Canada, and Boston Trailer. With decades of expertise, a proven customer track record, and a forward-looking approach, TEN is your go-to for full-service trailer solutions that keep your business moving down the road.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -328,10 +419,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "161cc36f1da2e87c",
-      "title": "FROM THE ARCHIVES: Ultimate Issues Hour -- Life Changing Verses",
-      "url": "https://am970theanswer.com/podcasts/dennis-prager-podcasts/from-the-archives-ultimate-issues-hour-life-changing-verses",
-      "summary": "Originally broadcast March 29, 2016. Dennis asks what two verses from the Bible have had the most impact on your life and you wish would impact people more. Dennis shares his selections. Callers weigh in.",
+      "id": "1e16ba067d5b475e",
+      "title": "Star Leasing Co LLC - Company Profile and News - Bloomberg Markets",
+      "url": "https://www.bloomberg.com/profile/company/2550499D:US",
+      "summary": "The Company provides full-service leasing as well as maintenance, advanced technological solutions, consultation services, and other innovative offerings across numerous industry verticals. Star...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -355,10 +446,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "05c78bb66534702a",
-      "title": "Listen Live | AM 970 The Answer - New York, NY",
-      "url": "https://am970theanswer.com/listenlive?trk=public_post-text",
-      "summary": "Listen live to AM 970 The Answer, a New York-based radio station offering diverse programming and news updates.",
+      "id": "ada36de03152039c",
+      "title": "Star Leasing Co. in Conley, GA 30288 - (470) 4... - Chamber of Commerce",
+      "url": "https://www.chamberofcommerce.com/united-states/georgia/conley/trailer-dealer/2001776674-star-leasing-co",
+      "summary": "Star Leasing Co. located at 1300 Henrico Rd, Conley, GA 30288 - reviews, ratings, hours, phone number, directions, and more.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -382,39 +473,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dd5c34a77e97af8e",
-      "title": "Make Chrome your default browser - Computer - Google Help",
-      "url": "https://support.google.com/chrome/answer/95417?hl=en&co=GENIE.Platform%3DDesktop",
-      "summary": "To make sure the change is applied to the correct file types, review the list under the \"Set default file types or link types.\" To easily open Chrome later, add a shortcut to your taskbar.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "69d6b97650634b1e",
-      "title": "Retired Nurse Charged With Juror Intimidation After Taking Photos Of ...",
-      "url": "https://am970theanswer.com/columnists/charlie-kirk/posts/retired-nurse-charged-with-juror-intimidation-after-taking-photos-of-lindsay-clancy-jurors",
-      "summary": "Light was found in a restricted parking area behind the courthouse that is used by people involved in the proceedings but is closed to the public.",
+      "id": "bd7d430f38037dac",
+      "title": "Star Leasing Company - Facebook",
+      "url": "https://www.facebook.com/starleasingco/",
+      "summary": "We stand behind our equipment. 💯 At Star Leasing, we only work with the top manufacturers in the industry to ensure that our trailers will not only be long-lasting but also safe.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -438,12 +500,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0584bc0cc4a3bb26",
-      "title": "Sign in - Google Sheets",
-      "url": "https://docs.google.com/spreadsheets/u/0/?ths=true",
-      "summary": "Access Google Sheets with a personal Google account or Google Workspace account (for business use).",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "a3a036dfc4e5de30",
+      "title": "What’s New in Microsoft Copilot | August 2026 | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%e2%80%99s-new-in-microsoft-copilot--august-2026/4551960",
+      "summary": "Welcome to the August 2026 edition of What's New in Microsoft Copilot!",
+      "discovery_channel": "adjacent+developer",
+      "query": "ActiveLook API BLE; hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -453,7 +515,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -465,172 +528,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "52fbe498218e3ece",
-      "title": "Syracuse 2019 Football Schedule | AM 970 The Answer - New York, NY",
-      "url": "https://am970theanswer.com/all/syracuse-2018-football-schedule",
-      "summary": "Schedule date/times subject to change. Day Date Opponent PreGame GameTime Station Saturday 8/31/2019 Syracuse @ Liberty 5:00PM 6:00PM AM970 Saturd...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0366a26eab2fab12",
-      "title": "The Joe Piscopo Show | AM 970 The Answer - New York, NY",
-      "url": "https://am970theanswer.com/podcasts/the-joe-piscopo-show",
-      "summary": "Everybody remembers Joe Piscopo from his years on Saturday Night Live from 1980-84. His bits are legendary and unforgettable. What you may not know is that Joe is better known as Jersey Joe, knows everybody in the garden state and New York and was inducted into the New Jersey hall of fame. He is a d",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "69368e1548efaacf",
-      "title": "The Josh Hammer Show | AM 970 The Answer - New York, NY",
-      "url": "https://am970theanswer.com/podcasts/the-josh-hammer-show/podcast",
-      "summary": "Politics, law, and culture collide as Newsweek Senior Editor-at-Large Josh Hammer charts a path forward for American conservatism and exposes the woke Left. A voice for the New Right, Hammer delivers blistering commentary and weekly interviews with today's top conservative thinkers.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0f148cf3272fb99f",
-      "title": "Trafalgar’s Cahaly Polls Expose Volatility In Neck-and-Neck SC Runoff",
-      "url": "https://am970theanswer.com/columnists/mike-gallagher/video/6a8de5fcffe080e33259481c",
-      "summary": "Trafalgar’s Robert Cahaly joins Mike live to unpack the shifting numbers, regional rivalries, and questions over who really owns the data that keep this race on a knife’s edge—with turnout the only remaining decider.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fe737953d6a9a881",
-      "title": "مستندات Google: تسجيل الدخول",
-      "url": "https://docs.google.com/document/create?hl=ar",
-      "summary": "يمكنك الوصول إلى \"مستندات Google\" باستخدام حساب شخصي على Google أو حساب على Google Workspace (للاستخدام التجاري).",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1812380b71be629b",
-      "title": "11 Types of Soil: Which Soil Type Is Right for Your Garden?",
-      "url": "https://evergreenseeds.com/types-of-soil/",
-      "summary": "There are different types of soil, but which one is best for your plants? This guide helps you to understand various soil types and how to improve them.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "318d57b38573ba95",
-      "title": "15 Live Traffic Cameras in Bloomington, Illinois (2026) - Watch Live ...",
-      "url": "https://opencctv.org/cameras/united-states/illinois/bloomington",
-      "summary": "Watch 15 live traffic cameras in Bloomington, Illinois, United States. Live webcams updated in real time - traffic, weather, beach cams, and more.",
+      "id": "ff7959179a6993b2",
+      "title": "780 Live Traffic Cameras in Seattle, Washington (2026) - Watch Live ...",
+      "url": "https://opencctv.org/cameras/united-states/washington/seattle",
+      "summary": "Watch 775 live traffic cameras in Seattle, Washington, United States. Live webcams updated in real time - traffic, weather, beach cams, and more.",
       "discovery_channel": "broad_web",
       "query": "camera smart glasses",
       "source": "Bing web RSS",
@@ -653,62 +554,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c003c21e202e7e73",
-      "title": "9 Best Soil for Growing Plants [Expert-Recommended Options]",
-      "url": "https://gardeningelsa.com/best-soil-for-growing-plants/",
-      "summary": "The best soil for growing plants depends on the specific type of plant and where it will be grown. Some plants do well in regular potting soil, while others",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a665af2752700797",
-      "title": "DFW Honda - Grapevine, TX - \"We're the One for Fun!\" - Family Owned ...",
-      "url": "https://www.dfwhonda.com/",
-      "summary": "DFW Honda is a Honda Powerhouse dealer in Grapevine, Texas, specializing in motorcycles, ATVs, scooters, and MUVs. We're family owned and oriented, selling, servicing and satisfying customers since 1976.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "75a7009fc726d317",
-      "title": "Does anyone actually get jobs through LinkedIn and Indeed?",
-      "url": "https://www.reddit.com/r/jobs/comments/b321mi/does_anyone_actually_get_jobs_through_linkedin/",
-      "summary": "I graduate in May and was applying through linkedIn and Indeed and never once got an email back. I started applying through my University's job board and got 3 interviews and a job offer within a month.",
+      "id": "6aebfd9cd72f1297",
+      "title": "Download, install, or reinstall Microsoft 365 or Office 2024 on a PC or ...",
+      "url": "https://support.microsoft.com/en-us/office/lifecycle/officeinstall/download-install-or-reinstall-microsoft-365-or-office-2024-on-a-pc-or-mac",
+      "summary": "Ready to install Microsoft 365 or Office 2024? Before you begin, make sure your PC or Mac meets the system requirements. If you already redeemed a product key, reinstalling the apps, or you have an assigned license through work or school, you can skip ahead and go to the section sign in to download and install Microsoft 365 or Office.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -719,9 +568,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -731,12 +580,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d6d84d6b7b75ebb0",
-      "title": "DSP Motorsports is the largest Honda motorcycle dealership in Chicago ...",
-      "url": "https://www.dspmotorsports.com/",
-      "summary": "At DSP Motorsports, you’ll find the full lineup of Honda Kawasaki, and Suzuki motorcycles, ATVs, and side-by-sides—machines built for speed, strength, and unforgettable fun.",
+      "id": "a7ec4acf6dd2e316",
+      "title": "Home | Subway®",
+      "url": "https://www.subway.com/en-us/home",
+      "summary": "Discover customized sandwiches at Subway. Take a look at the sandwich menu, place your order online, find the nearest restaurant, order catering service, or purchase gift cards.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "84999df7fbeb7ac6",
+      "title": "How to Print Java Objects, Arrays & Collections Without 'SomeType ...",
+      "url": "https://www.javathinking.com/blog/how-do-i-print-my-java-object-without-getting-sometype-2f92e0f4/",
+      "summary": "In this guide, we’ll demystify why this \"hashcode\" output occurs and provide step-by-step solutions to print objects, arrays, and collections in a human-friendly format.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -757,62 +632,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6782ba5d9b7b538f",
-      "title": "Find a Dealer - Honda Powersports Locations",
-      "url": "https://powersports.honda.com/find-a-dealer",
-      "summary": "Locate your nearest Honda Powersports dealer for motorcycles, ATVs, scooters, and more. Expert service, exclusive offers, and a community awaits you.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "420dd02f134a699b",
-      "title": "Google Help",
-      "url": "https://support.google.com/Android/Answer/9059108?Hl=En",
-      "summary": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can check for outages and downtime on the Google Workspace Status Dashboard.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cf4546625064c32f",
-      "title": "Having little success with indeed.com are there any other ... - Reddit",
-      "url": "https://www.reddit.com/r/jobs/comments/5savjx/having_little_success_with_indeedcom_are_there/",
-      "summary": "Indeed is still the gold standard, so the answer in my opinion is no, there aren't any alternatives that are better. Keep in mind Indeed is often the final stop for a job, and like any job board, those roles get cancelled often due to so many factors (like \"oh great, we found someone in-house who can do the job!).",
+      "id": "9da3e3b700d8a527",
+      "title": "Install or reinstall classic Outlook on a Windows PC",
+      "url": "https://support.microsoft.com/en-us/outlook/install-or-reinstall-classic-outlook-on-a-windows-pc",
+      "summary": "To install a standalone version of classic Outlook for Windows, select your language from the dropdown, and then select Download. Follow the prompts to complete the installation.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -823,9 +646,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -835,12 +658,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a801484c4fcc3c2c",
-      "title": "Honda Motorcycle Dealers: Find a Honda Motorcycle Dealer",
-      "url": "https://www.motorcycle.com/dealers/honda",
-      "summary": "Find a local Motorcycle Dealer, as well as Motorcycle Reviews, Prices and Specs.",
+      "id": "c668171acdaa6f97",
+      "title": "Java Print Object: A Comprehensive Guide - javaspring.net",
+      "url": "https://www.javaspring.net/blog/java-print-object/",
+      "summary": "Printing objects in Java is a fundamental yet powerful operation. By understanding the basic concepts, different usage methods, and following common and best practices, developers can effectively use object printing for debugging, logging, and presenting data.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7be63281cd6c277f",
+      "title": "Java: How to Print Objects for Debugging – Including All Variables ...",
+      "url": "https://www.javathinking.com/blog/java-printing-out-an-object-for-debugging/",
+      "summary": "In this blog, we’ll explore **practical methods** to print objects comprehensively, from manual implementations to leveraging powerful libraries, with a focus on handling nested structures and special values like `Infinity` and `NaN`.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -861,12 +710,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7d9641d7d9a7a478",
-      "title": "Honda Motorcycle, Dirt Bike, ATV, SxS Powersports Dealer in Scottsdale ...",
-      "url": "https://www.westernhonda.com/",
-      "summary": "We carry both new Honda powersports vehicles including the new 2026 Honda models and used motorcycles, and we can work with you on trading in your old bike or we are happy to buy your used bike directly.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "4f9991a5f0b47e6c",
+      "title": "Microsoft Outlook - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en-US",
+      "summary": "Outlook is free for personal use and supports Microsoft Exchange, Microsoft 365, Outlook.com, Gmail, Yahoo Mail, iCloud, IMAP and POP3. Write polished emails with built in tools for grammar,...",
+      "discovery_channel": "adjacent+broad_web",
+      "query": "Everysight Maverick AI Kickstarter; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -887,192 +736,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b1aed5cf7de87d82",
-      "title": "Honda Motorsports Vehicles for Sale | New & Used Inventory | Honda ...",
-      "url": "https://www.hondaoftheozarks.com/",
-      "summary": "Check out our used motorcycles for sale. We also sell Honda scooters, ATVs and Power Equipment. And if you need to sell your motorcycle or ATV, we buy pre-owned. We also offer consignments for all makes and models.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8e7d3da0aaff10d7",
-      "title": "Honda of Houston - Offering New & Used Honda Motorcycles, ATVs, UTVs ...",
-      "url": "https://www.hondaofhouston.com/",
-      "summary": "Honda of Houston is a powersport dealership located in Houston, TX. We carry the latest Honda models, including Motorcycles, Dirt bikes, Scooters, ATVs, UTVs and Power Equipment. We also offer service, and financing near the areas of Pasadena, Baytown, Humble and Spring.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2bc05ac04d945461",
-      "title": "Honda of Knoxville - Knoxville, TN - Offering New & Used Motorcycles ...",
-      "url": "https://www.hondaofknoxville.com/",
-      "summary": "Honda of Knoxville is a powersports dealership located in Knoxville, TN. We carry the latest Honda, Yamaha, Suzuki, Oakley, and Fox, including Motorcycles, ATVs, Side by Sides, Trikes, Goldwings and Scooters.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6bf66ee12b528288",
-      "title": "Honda Powersports & Motorcycle Dealerships - Honda",
-      "url": "https://powersports.honda.com/powerhouse-dealers",
-      "summary": "Find the best Honda motorcycle dealerships near you. Explore an extensive range of bikes, ATVs and side-by-sides. Experience exceptional service and selection.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bf8d59036e3df478",
-      "title": "Honda Powersports - Motorcycles, ATVs & Side-by-Sides",
-      "url": "http://adventure.honda.com/find-a-dealer",
-      "summary": "Score unbeatable deals on motorcycles, ATVs, and side-by-sides, and ride into savings now. Discover Honda Powersports: motorcycles, ATVs, and side-by-sides built with legendary quality, innovation, and performance.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6f25eeab3017b7ca",
-      "title": "How do i create a second email address in my gmail account.",
-      "url": "https://support.google.com/accounts/thread/11146908/how-do-i-create-a-second-email-address-in-my-gmail-account?hl=en",
-      "summary": "Learn how to create a second email address in your Gmail account with step-by-step guidance and helpful tips.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2065658177c8cbb8",
-      "title": "How to make a cell not turn into a formula",
-      "url": "https://support.google.com/docs/thread/4471662/how-to-make-a-cell-not-turn-into-a-formula?hl=en",
-      "summary": "How to make a cell not turn into a formula I'm trying to put '+1 ATK' into a cell, but it keeps trying to parse it as a formula. How do I make it not do that?",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "086d62d382faebcf",
-      "title": "Indeed is such a waste of fucking time. : r/jobs - Reddit",
-      "url": "https://www.reddit.com/r/jobs/comments/w6faqe/indeed_is_such_a_waste_of_fucking_time/",
-      "summary": "Indeed does offer this exact thing, but companies have to pay each time they attempt to make contact with an applicant, even if the applicant never replies. They are called “credits”. But Indeed becomes a searchable database of resumes if you buy the credits. Reply reply The_Sign_of_Zeta •",
+      "id": "318145657043ea64",
+      "title": "Microsoft Outlook - Download",
+      "url": "https://microsoft-outlook.en.softonic.com/",
+      "summary": "Microsoft Outlook is built for people who live in their inbox and calendar, combining email, meetings, and contacts in one place. With Focused Inbox and Conversation view, it helps cut noise and keep threads readable when projects get hectic.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1083,84 +750,6 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f6a9e437410f8b3",
-      "title": "Is there anything better than Indeed for job listings? - Reddit",
-      "url": "https://www.reddit.com/r/jobs/comments/5u8ovd/is_there_anything_better_than_indeed_for_job/",
-      "summary": "Browsing sites like Indeed seems so boring and discouraging because 1) I don't know what I want to do now. and 2) There are thousands of many bullshit postings and hundreds of other generic users applying to the same dinky jobs. The only things I have seen that are interesting to me are jobs posted directly on some companys' direct websites.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d88b2ffa655ca92d",
-      "title": "LinkedIn vs. indeed : r/recruitinghell - Reddit",
-      "url": "https://www.reddit.com/r/recruitinghell/comments/10ufp5w/linkedin_vs_indeed/",
-      "summary": "Indeed is just littered with sketchy companies and little to no reviews. LinkedIn on the other hand has reputable jobs but you’ll have to suffer looking at the ass licking employees do for companies and people they don’t know just to look like “that exceptional employee”.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fd0dbbf9998a5dd3",
-      "title": "Make .gdoc file read only, even from owner - Google Help",
-      "url": "https://support.google.com/docs/thread/12343581/make-gdoc-file-read-only-even-from-owner?hl=en",
-      "summary": "Make .gdoc file read only, even from owner I am the owner of a .gdoc file. I am the only person using the file, and have shared it with no one. I need to lock the file down and prevent all edits, including my own, until some future time and place. Stated another way, I need to be able to toggle on and off whether a .gdoc can be changed.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
         "news"
       ],
       "primary_type": "news",
@@ -1173,10 +762,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e882ab0dadc324cb",
-      "title": "Make cell in a conditional formatting rule variable",
-      "url": "https://support.google.com/docs/thread/5253660/make-cell-in-a-conditional-formatting-rule-variable?hl=en",
-      "summary": "As far as making a rule apply to a whole column, you can do that by making sure the \"apply to range\" includes the whole column. Any relative references (without a $) will automatically adjust for each item in the range from the top-left corner (see #2 in my general rules below for more).",
+      "id": "1d663888e48f0f9e",
+      "title": "National Weather Service",
+      "url": "https://forecast.weather.gov/zipcity.php?inputstring=Cashmere,WA",
+      "summary": "A strong coastal storm will bring moderate to major coastal flooding, strong winds, heavy rainfall and high surf to the Mid-Atlantic and New England. Tropical Storm Nolo is expected to strengthen into a hurricane today as it moves north toward the Big Island of Hawaii. Heavy rainfall may produce life-threatening, catastrophic flooding and mudslides. Read More > Current conditions at",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1187,9 +776,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "rumor"
       ],
-      "primary_type": "news",
+      "primary_type": "rumor",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1199,12 +788,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d50be9be62184f56",
-      "title": "OPEN - YouTube",
-      "url": "https://www.youtube.com/@opentvgr",
-      "summary": "Μπορείτε να την παρακολουθήσετε μέσα από την υβριδική τηλεόραση του OPEN ή online στο tvopen.gr.",
+      "id": "c33eeae394741bc4",
+      "title": "National Weather Service",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=47.5174&lon=-120.4677",
+      "summary": "A strong coastal storm will bring moderate to major coastal flooding, strong winds, heavy rainfall and high surf to the Mid-Atlantic and New England. Tropical Storm Nolo is expected to strengthen into a hurricane today as it moves north toward the Big Island of Hawaii. Heavy rainfall may produce life-threatening, catastrophic flooding and mudslides. Read More > Current conditions at",
       "discovery_channel": "broad_web",
-      "query": "open source smart glasses",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9d93c8d95022b34e",
+      "title": "NBC News – Breaking Headlines and Video Reports on World, U.S. and …",
+      "url": "https://www.nbcnews.com/",
+      "summary": "Go to NBCNews.com for breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1225,90 +840,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "edaf26ffbfc74a52",
-      "title": "Send follow-up messages to hiring firm on Indeed? : r/jobs - Reddit",
-      "url": "https://www.reddit.com/r/jobs/comments/lvj2fa/send_followup_messages_to_hiring_firm_on_indeed/",
-      "summary": "That was two days ago, and Indeed has already let me know that my application has been viewed by the hiring firm (whatever that means). Today Indeed sent me a prompt to \"Message the employer directly.",
+      "id": "40e31753fd06e88e",
+      "title": "Order Subway - Lake Forest, CA Menu Delivery [Menu & Prices ...",
+      "url": "https://www.doordash.com/store/subway-lake-forest-568331",
+      "summary": "Get delivery or takeout from Subway at 21701 Lake Forest Drive in Lake Forest. Order online and track your order live. No delivery fee on your first order!",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "efe839c6899f77e4",
+      "title": "Our Menu | Subway®",
+      "url": "https://www.subway.com/en-us/menunutrition/menu",
+      "summary": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place your order online.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a384068f2b419d8",
+      "title": "Outlook for Windows - Free download and install on Windows | Microsoft ...",
+      "url": "https://apps.microsoft.com/detail/9nrx63209r7b?hl=en-US&gl=US",
+      "summary": "The new Outlook for Windows is a best-in-class email experience that is free for anyone with Windows. Easily connect and coordinate your personal and work email accounts and calendars in one app. Write clear, concise mails and get intelligent suggestions with built-in AI.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e7fcb399cad4650b",
-      "title": "Soil Buying Guide - The Home Depot",
-      "url": "https://www.homedepot.com/c/ab/soil-buying-guide/9ba683603be9fa5395fab9017d314c59",
-      "summary": "Soil is an important building block to growing strong, healthy and beautiful plants. The best soil for planting will depend on what you’re planting and where you’re planting. Different plants need different types of support from soil. In-ground garden plantings benefit from additions of garden soil and compost mixed into your native soil. Certain plants, like blueberries and azaleas, for ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3e319eccd15c65e",
-      "title": "Starting sentence with \"indeed\" to complete previous statement",
-      "url": "https://english.stackexchange.com/questions/2754/starting-sentence-with-indeed-to-complete-previous-statement",
-      "summary": "Is it correct to add a sentence that starts with indeed in order to complete a previous statement? For example, The political crisis has a negative influence on the economy. Indeed, foreign",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "678307783fed593d",
-      "title": "Teach English Online With Engoo",
-      "url": "https://engoo.com/app/teach/",
-      "summary": "Become an online English tutor and teach one-on-one 25 minute lessons for the #1 ESL company in Japan and Taiwan. Work from the comfort of your own home with a flexible schedule.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1329,12 +918,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9824118a5901ca3d",
-      "title": "The 7 Best Potting Soils, Researched by BHG",
-      "url": "https://www.bhg.com/best-potting-soils-8642177",
-      "summary": "We researched potting soils to find the best mixtures for growing all types of indoor and outdoor plants.",
+      "id": "63b43ff752f88c22",
+      "title": "Outlook for Windows | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-for-windows",
+      "summary": "Get free email and calendar with the Microsoft Outlook app on Windows. Connect accounts such as Gmail, Yahoo!, IMAP, and iCloud to see everything in one place.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "49b4c71c1037b8e2",
+      "title": "Print all objects (Beginning Java forum at Coderanch)",
+      "url": "https://coderanch.com/t/611868/java/Print-objects",
+      "summary": "How do you think you'd do it? Describe it in English, without worrying about anything Java-related. If you had a group of students, and you wanted to find out which of them were in a particular class, how would you do it? Be as precise as possible, and use small, simple steps.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "847f99001be7d4ed",
+      "title": "Print Objects of a Class in Python - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/python/print-objects-of-a-class-in-python/",
+      "summary": "Printing objects helps us inspect their state, which is especially useful for debugging or displaying information to users. In languages like C++, this is achieved by overloading the ostream& operator << as a friend function.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1355,38 +996,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fc74ad130af2a201",
-      "title": "The Best Soil for Houseplants, According to Experts",
-      "url": "https://www.marthastewart.com/best-soil-for-houseplants-11908923",
-      "summary": "The right potting soil supports strong roots, balanced moisture, and long-term health for houseplants. Here's what experts say matters most when choosing soil for your houseplants.",
+      "id": "161658f0c5932a54",
+      "title": "Printing a list of objects of user defined class - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/12933964/printing-a-list-of-objects-of-user-defined-class",
+      "summary": "If you just want to print the label for each object, you could use a loop or a list comprehension: ... But to answer your original question, you need to define the __repr__ method to get the list output right. It could be something as simple as this:",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "81ffbffb3591ce3c",
-      "title": "The Best Soil Types for Different Plants: A Complete Guide",
-      "url": "https://greengardenguide.com/best-soil-types-for-plants/",
-      "summary": "Discover the best soil types for different plants with our complete guide. Learn how to choose the right soil for optimal growth and plant health in your garden.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1407,12 +1022,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f62518843cba7db9",
-      "title": "TOP 10 BEST Camera Store in Bloomington, IL - (2026 Guide) - Yelp",
-      "url": "https://www.yelp.com/search?find_desc=camera+store&find_loc=Bloomington%2C+IL",
-      "summary": "What are people saying about photography stores & services in Bloomington, IL? \"Best Buy is my favorite electronics store. They are tops on customer service and price matching. My husband and I just bought our iPhone 8 Plus cell phones at Best Buy and it was a great experience as always.",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "camera smart glasses; near-eye display optics",
+      "id": "141444f62b99f622",
+      "title": "Printing a list of objects of user defined class in python",
+      "url": "https://www.iditect.com/faq/python/printing-a-list-of-objects-of-user-defined-class-in-python.html",
+      "summary": "To print a list of objects of a user-defined class in Python, you need to define a __str__ method in your class. The __str__ method should return a string representation of the object, which will be used when you call print () on an instance of the class.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1421,9 +1036,166 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e4fc05ae2c0acb91",
+      "title": "Printing all instances of a class in python - iDiTect.com",
+      "url": "https://www.iditect.com/faq/python/printing-all-instances-of-a-class-in-python.html",
+      "summary": "To print all instances of a class in Python, you can maintain a class-level variable that keeps track of all created instances and then iterate through that list to print them.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f18da80fe271300f",
+      "title": "python - Printing all objects from a class - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/20163906/printing-all-objects-from-a-class",
+      "summary": "I currently have a class that turns my list of lists into a list of objects, where every object has a certain amount of stuff from the constructor. Lets say they have names, and some random numbers.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1d5b4f97bb1df57f",
+      "title": "Python: find all instances of a class with gc.get_objects () - Adam Johnson",
+      "url": "https://adamj.eu/tech/2026/07/14/python-all-instances-class/",
+      "summary": "The approach in this post uses the garbage collector module, gc, to leverage its already-tracked references to the class in question, no restart required. The function gc.get_objects () traverses (nearly) all live objects tracked by the garbage collector and returns a list of them.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d3b8c55a84fada7b",
+      "title": "Subway Locations in Lake Forest, CA| Subs, Sandwiches, Salads",
+      "url": "https://restaurants.subway.com/united-states/ca/lake-forest",
+      "summary": "Browse all Subway locations in Lake Forest, CA to find a restaurant near you that serves fresh subs, sandwiches, salads, & more. View the abundant options on the SUBWAY® menu and discover better-for-you meals!",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d2eef016e73dc59a",
+      "title": "Subway Menu 2026 - Prices, Calories & New $3.99 Menu Items",
+      "url": "https://subwaymenuprices.org/",
+      "summary": "This page has the complete Subway Menu 2026 with prices, including every sandwich, the Subway Series, the brand-new Fresh Value Menu, breakfast, sides, drinks and more.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be845c975ba4babd",
+      "title": "Subway Menu with Prices - Updated Price List September (2026)",
+      "url": "https://subwaymenupedia.com/",
+      "summary": "Subway menu with prices for sandwiches, wraps, salads, and more. Navigate through a variety of options and plan your next Subway meal freely!",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
         "retail"
       ],
-      "primary_type": "retail",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1433,23 +1205,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dea8df50b82e4d2d",
-      "title": "Usage of \"Indeed\" in \"Thank you very much indeed\"",
-      "url": "https://english.stackexchange.com/questions/344523/usage-of-indeed-in-thank-you-very-much-indeed",
-      "summary": "I constantly hear the expression \"Thank you very much indeed\" in the BBC, both TV and radio. However, I never listen to it on day-to-day conversation, either formal or informal. Moreover,...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "4265be55f71a9d1e",
+      "title": "Subway Menu With Prices, Pictures & Latest Deals 2026",
+      "url": "https://thesubwaymenus.com/",
+      "summary": "Explore the Subway menu prices with pictures so you can see exactly what you’re ordering before visiting a store. From loaded Footlong sandwiches and fresh wraps to protein bowls, salads, cookies, and drinks, each category shows clear visuals with updated 2026 prices in the United States.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1459,23 +1231,24 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b80613d28757443d",
-      "title": "What job sites is everyone using? : r/jobs - Reddit",
-      "url": "https://www.reddit.com/r/jobs/comments/18wzqxe/what_job_sites_is_everyone_using/",
-      "summary": "Hey y’all! Any suggestions for job sites? Indeed is getting exhausting and without hearing much of anything back. Just curious if there is a better avenue to search for jobs. Share Sort by: Best Open comment sort options Best Top New Controversial Old Q&A Add a Comment parkhiker •",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "01df39f8935cb56c",
+      "title": "Subway Menu – Lake Forest, CA - roostcafeandbistro.com",
+      "url": "https://www.roostcafeandbistro.com/subway-92630-3/",
+      "summary": "We deliver these mouth-watering flavors with our famous Footlongs, 6” sandwiches, wraps and salads. And we offer a variety of ways to order—quick and easy in the app or online, convenient delivery, come into your neighborhood shop for an in-restaurant meal, or pick up curbside.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "research",
+        "tool"
       ],
-      "primary_type": "community",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1485,23 +1258,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "963804c3238efa4e",
-      "title": "What Soil Best for Plants? – Perfect Garden Mix - GardenerBible",
-      "url": "https://gardenerbible.com/what-soil-best-for-plants/",
-      "summary": "The best soil for plants is a well-balanced, nutrient-rich soil that contains a mix of clay, silt, and sand particles. This type of soil is often referred to as “loamy” soil.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "2dedd54535fc3b7d",
+      "title": "Subway Sandwiches Menu Sept 2026 | Prices & Calories Guide",
+      "url": "https://subwaymenuusa.com/subway-sandwiches-menu/",
+      "summary": "Explore the full Subway sandwiches menu for September 2026. Find prices, calories, and details for every subway sandwich including BMT, tuna, BLT, and more.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1511,23 +1284,24 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "db48b22a33fcc826",
-      "title": "What Soil Is Best for Growing Plants? - ScienceInsights",
-      "url": "https://scienceinsights.org/what-soil-is-best-for-growing-plants/",
-      "summary": "Most garden plants thrive in this mix, though some species need soil adjusted further in one direction or another. What makes loam so effective isn’t just its texture. The best soil is a living system where mineral particles, organic matter, air pockets, and microbial life all work together to feed roots.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "b77e83c6356f839c",
+      "title": "Subway® Restaurants - Sandwiches, Salads, Wraps & More ...",
+      "url": "https://restaurants.subway.com/united-states/ca/lake-forest/21701-lake-forest-drive",
+      "summary": "Enjoy our famous Footlongs, 6\" sandwiches, wraps, and salads, ordered quickly in the app or online, through convenient delivery, in-restaurant dining, or curbside pickup.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research",
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1537,12 +1311,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5ff2be68851a27a0",
-      "title": "What's with the scam job postings on indeed? : r/orlando - Reddit",
-      "url": "https://www.reddit.com/r/orlando/comments/diw9zf/whats_with_the_scam_job_postings_on_indeed/",
-      "summary": "What's with the scam job postings on indeed? My girlfriend and I, and other friends have all been suckered into these sketchy interviews where you apply for a \"marketing\" or business development job and very quickly get an offer to come interview usually via text, which is sketchy by itself.",
+      "id": "ced54171de600f9e",
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed./",
+      "summary": "YouTube",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1551,87 +1325,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "video"
       ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "324fffe466441874",
-      "title": "What’s the Best Soil for Plants: Finding the Perfect Growth Medium",
-      "url": "https://evergreenseeds.com/whats-the-best-soil-for-plants/",
-      "summary": "Choosing the best soil for plants is a crucial decision that can greatly affect their health and growth. I’ve learned that soil quality can influence a plant’s access to water, nutrients, and air—the three essentials for any plant to thrive. Organic potting soils are often the top choice because they are enriched with natural materials like peat, wood chips, or compost, which help in ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c75bc4db78c4700e",
-      "title": "Where to make suggestions to improve Google Forms functionality?",
-      "url": "https://support.google.com/docs/thread/3902339/where-to-make-suggestions-to-improve-google-forms-functionality?hl=en",
-      "summary": "Where to make suggestions to improve Google Forms functionality? If I found that Forms should have some kind of functionality or can make better in some way, where I can post such suggestions? And who gonna deal with such suggestions?",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dfe3b66ad9d06f6f",
-      "title": "Which Soil Is Best for Growing Most Plants: A Gardener’s Guide",
-      "url": "https://gardenerbible.com/which-soil-is-best-for-growing-most-plants/",
-      "summary": "In this guide, we’ll explore which soil is best for growing most plants, providing you with the knowledge to create a flourishing garden. We’ll examine the characteristics of different soil types, discuss their pros and cons, and offer practical advice on how to improve your soil for optimal plant growth.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
