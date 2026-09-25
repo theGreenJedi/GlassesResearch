@@ -7,7 +7,7 @@ This is the cross-ecosystem discovery layer. For the canonical purchaser-history
 | Manufacturer / project | Model or family | Category | Current evidence | Openness or research signal | Canonical starting source |
 |---|---|---|---|---|---|
 | Shared OEM/ODM ecosystem | [W610](W610/README.md) | Camera/audio AI glasses | Hands-on specimen + commercial and primary-source leads | HeyCyan app; BLE and firmware investigation active | [W610 research portal](W610/resources/RESEARCH_PORTAL.md) |
-| Meta / EssilorLuxottica | Ray-Ban Meta | Camera/audio AI glasses | Primary | Large deployed ecosystem; vendor-controlled software | [Meta product page](https://www.meta.com/ai-glasses/ray-ban-meta/) |
+| Meta / EssilorLuxottica | Ray-Ban Meta | Camera/audio AI glasses | Primary + public SDK | Large deployed ecosystem; Device Access Toolkit documents vendor-supported camera/audio and mobile-app integration without establishing open firmware or cloud independence | [Meta developer-surface research](../research/META_WEARABLES_DEVELOPER_SURFACE_2026_09_25.md) |
 | Meta / EssilorLuxottica | Meta Glasses | Camera/audio AI glasses | Primary announcement | New multi-style family announced June 2026; availability tracking active | [Meta announcement](https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/) |
 | Meta | Adventurer | Camera/audio AI glasses | Primary + major retail; current | Distinct Meta-branded frame; preserve model identity without inheriting scores from Ray-Ban Meta or Oakley Meta | [Meta Adventurer](https://www.meta.com/ai-glasses/meta-glasses/adventurer/) |
 | Meta / EssilorLuxottica | Oakley Meta | Camera/audio sport glasses | Primary | Related Meta wearable platform | [Meta AI glasses](https://www.meta.com/ai-glasses/) |
@@ -59,7 +59,7 @@ This is the cross-ecosystem discovery layer. For the canonical purchaser-history
 | INMO | [INMO X AI+Camera Glasses](INMOX/README.md) | Camera / AI smart glasses | Primary company history + >10,000 blind-order batch; canonical `GLS-0194` | 2024 orderable identity admitted while 2021 X-series relationship remains unresolved | [INMO company history](https://www.inmoxr.com/pages/about-us) |
 | Amazon | Echo Frames | Audio smart glasses | Primary | Discontinued/current-generation history and Alexa integration | [Amazon Echo Frames](https://www.amazon.com/echo-frames/) |
 | Snap | Spectacles | Standalone AR developer glasses | Primary | Snap OS and developer platform | [Spectacles](https://www.spectacles.com/) |
-| Snap | SPECS | Standalone spatial AR glasses | Primary; preorder | Consumer-orderable platform announced June 2026; fall shipping target | [Snap launch](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses) |
+| Snap | SPECS | Standalone spatial AR glasses | Primary + independent hands-on; preorder | Consumer-orderable platform; independent evidence now separates strong tracking/scene meshing from optical artifacts and visible-FOV limits | [Snap hands-on evidence](../research/SNAP_SPECS_HANDS_ON_2026_09_24.md) |
 | Xiaomi | AI Glasses family | Camera/audio AI glasses | Primary | Regional app, firmware, and ecosystem research | [Xiaomi](https://www.mi.com/global/) |
 | HTC | VIVE Eagle | Camera/audio AI glasses | Primary | Multi-model AI-provider and regional-platform research | [VIVE](https://www.vive.com/) |
 | Halliday | Halliday Glasses | Display AI glasses | Primary | Near-eye display architecture and companion-platform research | [Halliday](https://hallidayglobal.com/) |
