@@ -30,6 +30,15 @@ The Hi Rokid companion app manages setup, media, settings, AI services and updat
 
 Rokid also publishes an official terminal/glasses SDK covering device-side capabilities including media capture, voice, recognition, messaging, device state, Bluetooth and P2P.
 
+## Community owner-control evidence
+
+Two public Anezium projects materially expand the owner/developer evidence surface for this branch:
+
+- **Rokid Nexus** implements a persistent hub on the glasses while extending capabilities with ordinary Android APK plugins on the phone. Its published integrations include HUD rendering, camera-assisted questions, speech/AI, notifications and calendar functions, with selectable AI providers and a self-hosted endpoint option.
+- **Rokid Live Studio** demonstrates a related phone-hosted media architecture: camera/microphone data cross the glasses/phone boundary over Wi-Fi Direct while preview, encoding and streaming remain on the phone.
+
+These are community implementations, not Rokid API guarantees and not yet GlassesResearch laboratory reproduction. They nevertheless strengthen the evidence that GLS-0064 supports useful owner-directed development beyond the stock companion experience. They also give the Report Card concrete tests for **Software, Openness, Owner Control, Cloud Independence and Hackability** rather than relying on manufacturer positioning alone.
+
 ## Lineage boundary
 
 Rokid Glasses are part of Rokid's **integrated AI-eyewear branch**. Do not transfer their camera, onboard-compute, AI-service, account, or cloud-dependence claims to Rokid Air/Max/Max 2 display glasses. Likewise, the display-free [Rokid AI Glasses Style](../RokidAIStyle/README.md) is a distinct eyewear model and requires separate service-survival and SDK verification.
@@ -41,6 +50,8 @@ Rokid Glasses are part of Rokid's **integrated AI-eyewear branch**. Do not trans
 - [Rokid lens service](https://global.rokid.com/pages/lens-service)
 - [Rokid terminal SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/)
 - [Rokid glasses SDK](https://x-docs.rokid.com/docs/en/terminal-sdk/glasses/)
+- [Anezium / Rokid Nexus](https://github.com/Anezium/Rokid-Nexus)
+- [Anezium / Rokid Live Studio](https://github.com/Anezium/Rokid-Live-Studio)
 
 ## Related GlassesResearch resources
 
