@@ -15,7 +15,7 @@ The Finder supports **verified price ceilings, and Report Card minimum scores**.
 ## Build, hack, investigate, or repair
 
 - [**Development & Hacking**](../hacking/README.md) — SDKs, firmware, BLE, APIs, repair, reverse engineering, and local AI.
-- [**Projects & SDKs**](../hacking/OPEN_HACKING_RESOURCE_LEDGER.md) — open projects and development resources.
+- [**Projects & SDKs**](../hacking/OPEN_HACKING_RESOURCE_LEDGER.md) — open projects and development resources. The Rokid section now tracks the official SDK alongside Rokid Nexus, Rokid Live Studio, and the independent RV203 research wiki.
 - [**Manuals, firmware, and technical files**](../artifacts/README.md) — preserved primary technical materials.
 - [**Reverse engineering**](ReverseEngineering.md) — a safety- and evidence-conscious path for investigating undocumented systems.
 - [**Ecosystem resource catalog**](../resources/ECOSYSTEM_RESOURCE_CATALOG.md) — cross-vendor technical resources.
