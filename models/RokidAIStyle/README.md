@@ -48,6 +48,10 @@ Shared chipset family and companion software with Rokid Glasses do not prove ide
 
 The independent [aimindseye / rokid-ai-glasses Community Research profile](/docs/community-research/aimindseye-rokid-ai-glasses/) tracks a public research wiki focused specifically on this display-free family. Its findings remain community-attributed unless separately reproduced by GlassesResearch; the project's own qualification boundaries should be preserved when citing it.
 
+Material community findings now include a **qualified RSA-protected USB ADB surface when Developer Mode is enabled**, architecture work separating glasses, phone and cloud responsibilities, and observation of a tested visual-assistant path in which a WebP frame passed through the phone to Rokid-managed object storage before AI processing. The project also reports a Qwen3-family local component while distinguishing that component from the tested assistant-response path, which remained cloud-mediated in that experiment.
+
+For the Report Card, these findings are directly relevant to **Software, Owner Control, Cloud Independence and Hackability**, but they do not automatically change a score. The correct next step is GlassesResearch reproduction of the ADB gate, network/data path and local-versus-cloud behavior on a controlled specimen.
+
 ## Style Pack identity
 
 **Rokid AI Glasses Style Pack is not a second glasses model.** Rokid's current collection describes the Pack as the same underlying eyewear with additional power/accessory capacity. It remains a retail configuration of `GLS-0063`.
@@ -63,9 +67,10 @@ Rokid's security center separately lists **Bolon Ai Glasses** model numbers `RV2
 3. Test capture behavior, recording indicator behavior, file export, metadata, and local storage access.
 4. Map companion-app permissions, account requirements, endpoints, update behavior, and data retention.
 5. Determine whether Rokid's current terminal/glasses SDK explicitly supports RV203 and which APIs are exposed.
-6. Check ADB, USB, Bluetooth services, Wi-Fi services, firmware packages, update manifests, and recoverability paths.
-7. Verify prescription-lens serviceability with ordinary optical shops and regional constraints.
-8. Resolve RV203 versus Bolon RV201/RV202 electrical/mechanical differences before any additional canonical admission.
+6. Reproduce the community-reported Developer Mode → RSA-protected USB ADB path; then inspect USB, Bluetooth services, Wi-Fi services, firmware packages, update manifests, and recoverability paths.
+7. Reproduce the reported visual-assistant WebP/object-storage path and determine which AI stages, if any, can remain local or owner-selected.
+8. Verify prescription-lens serviceability with ordinary optical shops and regional constraints.
+9. Resolve RV203 versus Bolon RV201/RV202 electrical/mechanical differences before any additional canonical admission.
 
 ## Primary sources
 

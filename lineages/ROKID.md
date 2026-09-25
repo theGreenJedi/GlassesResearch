@@ -74,13 +74,13 @@ Max 2 is the current principal host-driven display glasses model in Rokid's cons
 
 The display-free camera/audio branch is now resolved under one stable identity. Rokid's security center identifies **Rokid Ai Glasses model `RV203`**; current global retail uses **Rokid AI Glasses Style**, while regional pages also use **Neo** / **Neo (Style)**. GlassesResearch preserves those real-world names as aliases rather than creating duplicate GLS rows.
 
-The approximately 38.5 g architecture uses AR1/RT600-class processing, 12 MP camera, open-ear audio, four microphones, Wi-Fi 6, Bluetooth 5.3 and local storage, but no in-lens display. Its service-survival and SDK behavior must be tested independently from display-equipped Rokid Glasses.
+The approximately 38.5 g architecture uses AR1/RT600-class processing, 12 MP camera, open-ear audio, four microphones, Wi-Fi 6, Bluetooth 5.3 and local storage, but no in-lens display. Its service-survival and SDK behavior must be tested independently from display-equipped Rokid Glasses. The aimindseye community research project reports qualified RSA-protected ADB access under Developer Mode and a tested cloud-mediated visual-assistant data path; both are now explicit GR reproduction targets rather than assumed properties.
 
 Rokid also lists **Bolon AI Glasses `RV201` / `RV202`**. Available evidence shows a close shared-platform relationship, but a co-brand/frame treatment alone does not earn another canonical model. Bolon remains a lineage/registry target until materially distinct hardware is established.
 
 ### Rokid Glasses — GLS-0064
 
-Rokid Glasses combine a wearer-view camera, microphones, speakers, onboard compute, wireless connectivity, and a binocular monochrome MicroLED waveguide display. The Hi Rokid/Rokid AI companion layer handles activation, settings, media management, updates, and connected AI services. Some useful offline or phone-peripheral behavior remains after provisioning, but defining AI services remain materially service-dependent.
+Rokid Glasses combine a wearer-view camera, microphones, speakers, onboard compute, wireless connectivity, and a binocular monochrome MicroLED waveguide display. The Hi Rokid/Rokid AI companion layer handles activation, settings, media management, updates, and connected AI services. Some useful offline or phone-peripheral behavior remains after provisioning, but defining AI services remain materially service-dependent. Community development now adds a concrete owner-control test surface: Anezium's Rokid Nexus uses a persistent glasses-side hub with phone APK plugins, while Rokid Live Studio demonstrates Wi-Fi Direct camera/microphone transport with phone-side preview/encoding/streaming. These are community-primary observations pending GR reproduction.
 
 ## Adjacent industrial branch — X-Craft
 

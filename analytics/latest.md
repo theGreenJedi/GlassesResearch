@@ -1,26 +1,27 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-09-24T12:44:07+00:00**
+Generated automatically: **2026-09-25T12:46:27+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-09-16 → 2026-09-22):** 246 impressions, 0 clicks, 0.00% CTR, average position 9.8.
-- **7-day change:** impressions -20.9%; clicks n/a.
-- **Rolling 28 days:** 974 impressions, 4 clicks, 0.41% CTR, average position 13.8.
+- **Google, latest final 7 days (2026-09-17 → 2026-09-23):** 274 impressions, 2 clicks, 0.73% CTR, average position 10.1.
+- **7-day change:** impressions -13.0%; clicks n/a.
+- **Rolling 28 days:** 1038 impressions, 6 clicks, 0.58% CTR, average position 13.1.
+- **Milestone:** organic Google clicks appeared after a previous zero-click week.
 
 ## Google — top queries
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| +github nashspence zetronix-lark-zshades-2k zetronix-lark-zshades-2k.py | 0 | 1 | 0.00% | 10.0 |
 | github nashspence zetronix-lark-zshades-2k tinyorch.core | 0 | 1 | 0.00% | 6.0 |
 | glasses timeline | 0 | 1 | 0.00% | 49.0 |
 | heycyan sdk | 0 | 1 | 0.00% | 18.0 |
-| inmo air 3 industrial version vs realwear vuzix iristick | 0 | 14 | 0.00% | 18.3 |
+| inmo air 3 industrial version vs realwear vuzix iristick | 0 | 17 | 0.00% | 16.4 |
 | name brands in smart glasses that have a strong history of consistent product performance over the years. | 0 | 1 | 0.00% | 1.0 |
-| open source meta glasses | 0 | 2 | 0.00% | 37.5 |
+| open source meta glasses | 0 | 1 | 0.00% | 34.0 |
+| open source smart glasses | 0 | 1 | 0.00% | 38.0 |
 | smart glasses startup | 0 | 1 | 0.00% | 49.0 |
 | when did meta glasses come out | 0 | 1 | 0.00% | 88.0 |
 | when were meta glasses invented | 0 | 2 | 0.00% | 51.0 |
@@ -29,67 +30,66 @@ Generated automatically: **2026-09-24T12:44:07+00:00**
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/ | 0 | 3 | 0.00% | 28.3 |
-| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 1 | 0.00% | 11.0 |
-| https://glassesresearch.org/docs/BLE/ | 0 | 1 | 0.00% | 4.0 |
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 27 | 0.00% | 12.4 |
-| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 50 | 0.00% | 12.1 |
-| https://glassesresearch.org/docs/INSTITUTIONAL_COLLECTIONS/ | 0 | 2 | 0.00% | 2.0 |
-| https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 22 | 0.00% | 7.0 |
+| https://glassesresearch.org/docs/news/digests/2026-08-05/ | 1 | 7 | 14.29% | 6.9 |
+| https://glassesresearch.org/resources/ECOSYSTEM_RESOURCE_CATALOG/ | 1 | 7 | 14.29% | 9.1 |
+| https://glassesresearch.org/ | 0 | 4 | 0.00% | 22.5 |
+| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 2 | 0.00% | 11.0 |
+| https://glassesresearch.org/docs/ABOUT/ | 0 | 1 | 0.00% | 3.0 |
+| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 33 | 0.00% | 12.1 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 55 | 0.00% | 13.9 |
+| https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 17 | 0.00% | 7.5 |
 | https://glassesresearch.org/docs/SEO_DISCOVERABILITY/ | 0 | 1 | 0.00% | 8.0 |
-| https://glassesresearch.org/docs/faq/01-basics/ | 0 | 1 | 0.00% | 10.0 |
-| https://glassesresearch.org/docs/faq/02-buying/ | 0 | 3 | 0.00% | 9.3 |
+| https://glassesresearch.org/docs/faq/01-basics/ | 0 | 3 | 0.00% | 13.3 |
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **28 browser pageviews**, **21 RUM visits**.
-- Rolling 7d: **249 browser pageviews**, **125 RUM visits**.
+- Rolling 24h: **17 browser pageviews**, **13 RUM visits**.
+- Rolling 7d: **258 browser pageviews**, **131 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
-| /resources/ECOSYSTEM_RESOURCE_CATALOG/ | 4 | 4 |
-| /models/catalog/ | 4 | 3 |
-| / | 3 | 2 |
-| /docs/report-cards/HIGH_THROUGHPUT_BATCH_03/ | 2 | 2 |
-| /docs/RESEARCH_NEWS/ | 2 | 0 |
-| /models/BrilliantFrame/ | 2 | 2 |
-| /models/catalog/gls-0166/ | 2 | 1 |
-| /models/CATALOG/ | 1 | 1 |
+| /docs/INDUSTRY_TIMELINE/ | 4 | 2 |
+| /models/catalog/ | 3 | 3 |
+| / | 3 | 3 |
 | /docs/news/RELEASE_TRACKER/ | 1 | 1 |
-| /models/catalog/gls-0161/ | 1 | 1 |
+| /docs/news/articles/2026-09-19-right-to-repair-smart-glasses/ | 1 | 1 |
+| /buyers/BUYER_AND_OPENNESS_GUIDE/ | 1 | 1 |
+| /guides/smart-glasses-for-developers/ | 1 | 1 |
+| /glossary/applications/APP-0001-hecyan/ | 1 | 0 |
+| /models/W610/software/ | 1 | 1 |
+| /glossary/organizations/ORG-0001-hecyan-qingcheng-future/ | 1 | 0 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 16 | 16 |
-| glassesresearch.org | 7 | 0 |
-| www.google.com | 4 | 4 |
-| chatgpt.com | 1 | 1 |
+| (direct / none) | 12 | 12 |
+| glassesresearch.org | 4 | 0 |
+| www.bing.com | 1 | 1 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **6,949 requests**, **1,951 HTTP visits**, **244.1 MB** served.
-- Rolling 7d: **60,803 requests**, **11,642 HTTP visits**, **1283.6 MB** served.
+- Rolling 24h: **4,418 requests**, **1,523 HTTP visits**, **137.4 MB** served.
+- Rolling 7d: **59,464 requests**, **12,179 HTTP visits**, **1306.7 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 4,747 | 1,656 |
-| KR | 534 | 8 |
-| CN | 385 | 6 |
-| SG | 307 | 74 |
-| DE | 279 | 12 |
-| CA | 207 | 72 |
-| MX | 90 | 27 |
-| CY | 79 | 1 |
-| GB | 78 | 10 |
-| TW | 68 | 10 |
+| US | 1,902 | 921 |
+| SG | 798 | 516 |
+| GB | 499 | 0 |
+| CN | 492 | 6 |
+| TW | 267 | 0 |
+| PL | 113 | 8 |
+| BR | 102 | 7 |
+| FR | 64 | 1 |
+| VE | 51 | 6 |
+| NL | 18 | 6 |
 
 ## What to watch
 
