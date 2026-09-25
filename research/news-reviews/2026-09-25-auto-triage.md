@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-25T06:47:07.861651+00:00`
+Generated: `2026-09-25T07:58:37.994468+00:00`
 
-- Intake files inspected: **315**
-- Candidates retained in this review window/history: **14859**
+- Intake files inspected: **317**
+- Candidates retained in this review window/history: **14918**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3109
+- `adjacent_radar`: 3112
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 683
-- `rejected_noise`: 10897
+- `needs_editorial_verification`: 680
+- `rejected_noise`: 10952
 - `source_monitor`: 1
-- `source_review`: 58
+- `source_review`: 62
 - `watching`: 92
 
 ## Action queue
@@ -156,7 +156,6 @@ Generated: `2026-09-25T06:47:07.861651+00:00`
 | high | needs_editorial_verification | direct | [Meta unveils camera-free Ray-Ban smart glasses amid privacy concerns: All details](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab617dda3004c1ea51e865e427e76c3&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2fmeta-unveils-camera-free-ray-ban-smart-glasses-amid-privacy-concerns-all-details%2far-AA2cRrg3&c=18096259211715222671&mkt=en-us) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta unveils camera-free smart glasses amid privacy concerns](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab617dd411f41558d9c2f6c8ef2217a&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fmeta-unveils-camera-free-smart-glasses-amid-privacy-concerns%2far-AA2cUejR&c=16497325445706464529&mkt=en-us) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta VR Glasses and a Ton of Smart Glasses – Everything Announced at Meta Connect 2026 - ign.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE45R0gzWnZyZjZObXQtQ3ZUSTJEYzZwdGRLWEJhckNYdVJNaVR1NmNWUmZ2SGJ3TFNOUzhsYTFnbTBWbC1jaFdPNkNSZWZQSGlQRGs3cFlHSW1OSF9GNHFaSFpPN29QTWVnNUkxemlmeHFRdzFDZEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Meta's new smart glasses bring an AI agent and fresh privacy fears](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab617d8815846b792663efdb841418d&url=https%3a%2f%2fwww.msn.com%2fen-us%2ftechnology%2ftech-companies%2fmeta-s-new-smart-glasses-bring-an-ai-agent-and-fresh-privacy-fears%2far-AA2cRknk&c=14396917359684741394&mkt=en-us) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta's new smart glasses skip the cameras, and the privacy backlash that came with them](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab617dd411f41558d9c2f6c8ef2217a&url=https%3a%2f%2fwww.techspot.com%2fnews%2f113968-meta-new-smart-glasses-skip-cameras-privacy-backlash.html&c=14234309617302908278&mkt=en-us) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta, Google, Qualcomm are Shaping the Future of AI Glasses](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab617dae85e4c6aa9908652a07a1d62&url=https%3a%2f%2fwww.analyticsinsight.net%2fnews%2fmeta-google-qualcomm-are-shaping-the-future-of-ai-glasses&c=17577927042101723532&mkt=en-us) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Meta’s New Smart Glasses Ditch the Camera Amid Privacy Backlash](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab617dd411f41558d9c2f6c8ef2217a&url=https%3a%2f%2fwww.vogue.com%2farticle%2fmetas-new-smart-glasses-ditch-the-camera-amid-privacy-backlash&c=14614783358112098871&mkt=en-us) | reachable (200) | research_news_review, policy_privacy |
@@ -272,6 +271,7 @@ Generated: `2026-09-25T06:47:07.861651+00:00`
 | normal | needs_editorial_verification | direct | [Meta’s new $1,300 VR Glasses will weigh less than a stick of butter when they hit the market in 2027](https://www.popsci.com/gear/meta-connect-vr-glasses-ray-ban-meta-audio/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | enabling | [Midwest Photo \| Cameras, Lenses, Video & Photography Equipment](https://mpex.com/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [Muse is coming to Meta smart glasses](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab617de7f5f4b4f9793fcdacafcbf14&url=https%3a%2f%2fwww.theverge.com%2ftech%2f999673%2fmeta-connect-2026-muse-glasses-features&c=5982097785613780373&mkt=en-us) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [New Meta software to tackle hearing loss with $150 smart glasses add-on](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab617ddf5374d16b2dd98532385fdb7&url=https%3a%2f%2fwww.msn.com%2fen-us%2ftechnology%2fhardware-and-devices%2fnew-meta-software-to-tackle-hearing-loss-with-150-smart-glasses-add-on%2far-AA2cTm5N&c=21949867139243616&mkt=en-us) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
