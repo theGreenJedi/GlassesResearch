@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-25T12:19:38.917816+00:00`
+Generated: `2026-09-25T13:56:42.991888+00:00`
 
 - Intake files inspected: **315**
-- Candidates retained in this review window/history: **14829**
+- Candidates retained in this review window/history: **14789**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3106
+- `adjacent_radar`: 3105
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 710
-- `rejected_noise`: 10848
+- `needs_editorial_verification`: 712
+- `rejected_noise`: 10811
 - `source_monitor`: 1
-- `source_review`: 53
-- `watching`: 92
+- `source_review`: 51
+- `watching`: 90
 
 ## Action queue
 
@@ -182,7 +182,7 @@ Generated: `2026-09-25T12:19:38.917816+00:00`
 | high | needs_editorial_verification | direct | [TechRadar Aug 28, 2026 'We don't want another damaged generation' — Inside the grassroots campaign demanding a ban on smart glasses](https://www.techradar.com/vpn/vpn-privacy-security/we-dont-want-another-damaged-generation-inside-the-grassroots-campaign-demanding-a-ban-on-smart-glasses) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [The 7 Best Prescription Smart Glasses with Display in 2026: An Expert](https://www.osawalla.com/blogs/news/the-7-best-prescription-smart-glasses-with-display-in-2026-an-expert-review) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, research_optics |
 | high | needs_editorial_verification | direct | [The Verge 17h ago These smart glasses have been recalled for overheating temples causing burns Subscription Coverage Amazon](https://www.theverge.com/tech/1000085/inmo-air3-smart-glasses-recall-cpsc-free-software-update) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [When Surveillance Becomes Wearable: AI Smart Glasses and the New Threat to Women’s Security - NATO Association](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYzRuTldWemhuTHR6WVZEbHpBajBWVzhyR1NaYzhCTy1JbVlwbzVWenljMlB3TmVoUFVKQUFuVm5zTVphdU9XdHQ2cWpRXzlOTVJ3U0ViMlQxMDMxSlE0N2xsWjU1S1JuNk9oMHRHb216SVJpbDFRbkpia2JGM2dKcExZMXplVHNpTlNDWHpNT3ZDOGtzLU9pWlJHQzk5cDVSenZ3cTlKdTRnR3l1My1DNVNsYm5rVThJ?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [When Surveillance Becomes Wearable: AI Smart Glasses and the New Threat to Women’s Security - natoassociation.ca](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYzRuTldWemhuTHR6WVZEbHpBajBWVzhyR1NaYzhCTy1JbVlwbzVWenljMlB3TmVoUFVKQUFuVm5zTVphdU9XdHQ2cWpRXzlOTVJ3U0ViMlQxMDMxSlE0N2xsWjU1S1JuNk9oMHRHb216SVJpbDFRbkpia2JGM2dKcExZMXplVHNpTlNDWHpNT3ZDOGtzLU9pWlJHQzk5cDVSenZ3cTlKdTRnR3l1My1DNVNsYm5rVThJ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Выпущены очки Ray-Ban Meta* Audio без камер и с автономностью до 60 часов - Mobile-review.com](https://news.google.com/rss/articles/CBMisgFBVV95cUxQNy0tOFhiaTM3eDVrdFBzTG9KejdNNVIzeTdINklheGJpOE1fS29nWVNYeUo2dXVRVGZTQ25qOXpUbGg4d2tWQ1lCNWJBSVFQblM5Z1ZZLWJSdDJMV0thQnhzRW1GWmR2SHAydUxzT1h2VHI5dVlHYmsyTFF1X2xUWnpLbVFicE54Szd2YnpiWkxWYkhTeHZqWEJsbG5vbVdfUE9CTXJreDJlaWtBaVRZTDBn?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [‘Immediately stop using’: AI smart glasses recalled in Canada, U.S. - CP24](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWGtUM1lqMUFqdFFja2I5X25sNGN6TE15M2ZadkFqdWhzRERWZFBUUlNzYmU3X0I0NWxseS1HS1NtWmJqbFNyTVZvaG56UXJUZC1UOGE1aWtZczY2MnUzd2UzdTdyb0t1Qk90aE56cktHRW5DTkVHbTdjRzdtazhXNWJ3LXhnQjhiOFVZRnB6X1RCMTVVazdhWWNTV0ZuNUU3WkZrSzVoRG9nQQ?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [ソフトバンク、新型AIグラス「Ray-Ban Meta (Gen 3)」の取り扱いを開始 - 株式会社インプレス](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9EMmx2SmRmWExtRi1Jc01uZXFnN2NvNTN0eC01ZzEwUUo3aGE4cFZXVjdha01hUzBTOXkyVmdWVHlYeHVmQUpOUEM5WHlzMFRTdlloNnJHa01iQWEwa2hBZ0pmbw?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -218,7 +218,6 @@ Generated: `2026-09-25T12:19:38.917816+00:00`
 | normal | needs_editorial_verification | direct | [Auganix Jul 22, 2026 Jorjin and MultiSet AI Partner on Physical AI Applications for Lightweight AR Glasses](https://www.auganix.org/ar-news-jorjin-multiset-ai-collaboration/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Augmented Reality News - AR Glasses & Spatial Computing \| VR.org](https://vr.org/ar) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Augmented Reality/Virtual Reality (AR/VR) Technology – Arm®](https://www.arm.com/markets/consumer-technologies/ar-vr) | reachable (200) | research_news_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Best AI & Prescription Smart Glasses 2026 - GlassesShop](https://www.glassesshop.com/smart-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [BLACKPINK's Lisa Designed Meta Glasses With Charms Inspired by Her Pets & Exclusive Digital Treats - Billboard](https://news.google.com/rss/articles/CBMivgFBVV95cUxOOVg3SmUtWHc4cU5EOVRCLVkxc1JTWmcxREtzQ1lfalU5Tm8tZ296YzVkaXVOazJwVkZ3Q25VR2cxMnRHNlJtM2tMU013RjZabG5nanQ4WGIxdDJ3NmlNUzBJMmdhZEJjX3dsNW9wYTlJWHdOcEJoRXktRTRYQnktSFJzOHp2aUowT1IyUE1WS1FWNlctVnc4VEtOSTR2cW4zVGs4Q0hQbU9fTHlEbFZ6bUdjREFUaHFHMHJsZWFn?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Buy Vicent Chase &amp; John Jacobs glasses frames for ... - Lenskart](https://www.lenskart.com/eyeglasses.html) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [Can You Get Smart Glasses with a Prescription? (2026 Guide) - RayNeo](https://www.rayneo.com/blogs/news/smart-glasses-with-prescription) | reachable (200) | research_news_review, research_optics |
@@ -272,6 +271,7 @@ Generated: `2026-09-25T12:19:38.917816+00:00`
 | normal | needs_editorial_verification | direct | [Meta unveils camera-free AI glasses amid privacy pushback - Punch Newspapers](https://news.google.com/rss/articles/CBMihAFBVV95cUxQWGh5OWZSSEtXelQ2NGJIbnRkRHJWSDFBNUFmck9WM2JOWTl3cEJRWGdGd2NEWFJZOHYtYUY3cnQyTEkwN2tSZFZ3amhpSlBRZXBwRnVwUWlUTGdITks3Qk96Q0M1bWhOQktfUVM0aXl0YVo5azFsaWVoVVpsbUg3cTR0U1E?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta unveils camera-free AI glasses as privacy concerns mount - thestar.ng](https://news.google.com/rss/articles/CBMijgFBVV95cUxNams3MGdINGk4cHpic3Y5ZU95Um5CUFpIbk1fUDlBNTNMX3dXWUlPdVdYclNXS19EbC1RNWprcG4telZreUEzS3d4ZG03X2hVMTZFUlRjVVJLZDlIQTM1ckd1MVlRUEpfWmtmZGpWWEJ5bnVkREttdDQ2a2ZST0xLWDlwNDlOZkdITC1LWmJR0gGTAUFVX3lxTE9aNkVVekgwXzJyYjVTc2ZVQjJqaXg2Q0dTdDQ2c1Rmd3pxenhBVTRmdXRQbGk4WEszY0JlZGVOc0VVV0pLbFJNQllyQlRVNEQ1OGY5UXg2WEpnYkJrNjY5NWFwSTk2NHRxNUhOZUx6WWxYbWY4T1NzbFBsakZFWlM2UFNIMjQtcTFoWkQ5dG5xUzh4RQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta unveils camera-free smart glasses amid privacy concerns - the-review.com](https://news.google.com/rss/articles/CBMingFBVV95cUxQd1ZjM0VUaXR2MmV3VGtPYk9hRUhWZXprNjAwMW9hTWxCbUo0VUQ1MlpxTlBPMUtfWlp5VF9seHRQWl94YWFvT3RqaTdjSG5IbkpSTExzSHJBNktYRWZlakxVN2UwaTdtR2hqUWJyRGtabG9sTEs5X1h4Q3F6U1Nac2FiaEN6eVZ1a0xuR0kwazhVbWxIMWF5eXNLejNlQQ?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
+| normal | needs_editorial_verification | direct | [Meta unveils camera-free smart glasses at $349 as AI gadgets face privacy backlash - Telegraph India](https://news.google.com/rss/articles/CBMizgFBVV95cUxPb0hGUWNWVzdJWnVDcmpjVDBjSkJWcE4wNEdWMnhjVmRPSlg3YV9jM2hoUVlLdDhoY3ZwbER3Q29OSy1vdWNLWThRODNtRkhibUc4YzM3VnR6STBiTV90WXNrUHVpLWtwcjJuSTBpb1VtaHFMQjROV3VHcUp0QkpuR0kwcUpOZDJWbWgzb1dkZFZSYmUycU4xS08xN1ZzRzhESkUzb01Wck1TS1JHeUJLNWNwaEtmX050MnNfdl9HOUI2TzYxM1RfOGFnUU9EUdIB0wFBVV95cUxQTVRLd1h3dkxJbUtxcUk0ME0zVWVBQ2xHa2x0TEdoQlZPbnQ1WW5raU5fUHRuaTdCcGs3aklQQ2x0aEYtMm5EbG1nbUprTFZieTZhSVRZTzBlc0pES3JBWlRFMlM2cTNKVmMzeFRpVVBKWGlraXFLTVFER2tHLTktRWY0NHdIOVBrSXJvY3hkZi1odzdMeXN6cnN1YUcwakhibWJNYnZfZ2dpZTMxRFJ0OUIyNmVoWDI1ZHR5aURIZXBXYVNhZ2ppUVBSRkZLZXdYWnlR?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
