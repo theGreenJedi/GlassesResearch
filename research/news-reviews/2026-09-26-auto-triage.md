@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-26T12:31:57.164507+00:00`
+Generated: `2026-09-26T13:13:50.836808+00:00`
 
 - Intake files inspected: **314**
-- Candidates retained in this review window/history: **14482**
+- Candidates retained in this review window/history: **14483**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3090
+- `adjacent_radar`: 3095
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 707
-- `rejected_noise`: 10535
+- `needs_editorial_verification`: 700
+- `rejected_noise`: 10530
 - `source_monitor`: 1
-- `source_review`: 40
-- `watching`: 90
+- `source_review`: 47
+- `watching`: 91
 
 ## Action queue
 
@@ -236,7 +236,6 @@ Generated: `2026-09-26T12:31:57.164507+00:00`
 | normal | needs_editorial_verification | direct | [Augmented Reality News - AR Glasses & Spatial Computing \| VR.org](https://vr.org/ar) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Augmented Reality/Virtual Reality (AR/VR) Technology – Arm®](https://www.arm.com/markets/consumer-technologies/ar-vr) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Best smart glasses in 2026: Top AR and AI glasses worth your ...](https://www.tomsguide.com/computing/vr-ar/best-smart-glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Buy Vicent Chase &amp; John Jacobs glasses frames for ... - Lenskart](https://www.lenskart.com/eyeglasses.html) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [Can You Get Smart Glasses with a Prescription? (2026 Guide) - RayNeo](https://www.rayneo.com/blogs/news/smart-glasses-with-prescription) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [CNET Aug 24, 2026 If You Don’t Want Smart Glasses to Spy, Try a Bluetooth Detector App](https://www.cnet.com/tech/mobile/if-you-dont-want-smart-glasses-to-spy-try-a-bluetooth-detector-app/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Engadget 11h ago How to stop Meta training its AI models on your smart glasses' visual data Coverage Meta](https://www.engadget.com/2269454/how-to-stop-meta-training-its-ai-models-on-your-smart-glasses-visual-data/) | reachable (200) | research_news_review |
@@ -272,6 +271,7 @@ Generated: `2026-09-26T12:31:57.164507+00:00`
 | normal | needs_editorial_verification | direct | [Meta Has New, No-Camera Smart Glasses. Does Anyone Care? - VICE](https://news.google.com/rss/articles/CBMibkFVX3lxTE5vcFJYaTVhTkxNNkJ6WEMyNkcyMXZFb1k1cFpRbTk1SFNZaFd2S0FBTnFqQmwySXJFX3gzejE1VTJ2b3llQlRadjV4NnYzWVlIREl5QkVLVVJrNmMwY0tRd3hZWjFxOURZUDhBeDlR?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Meta has unveiled new AI-powered hardware, including camera-free Ray-Ban Meta Audio glasses, a $1,299 VR device and the tiny Meta Charm. But](https://news.google.com/rss/articles/CBMirAFBVV95cUxOTlBIbzQ4Zm5kZmhlZHRxMHM4blVfdENTZURCbk1hRkpqRmlzejgyNF9CNHJDODZkeE9xS1NqOWt0TkxRZi1pZlllRUY3WVlmMHliU05WSlVURHZWZkszbFFYY0ZrLTUwRUZ0NlZ4SHNzSkk4VlZVRmI4Rlpfa0hrdW51b09vWEpuSk5fbExsY3NPUzBza1QzUkFWOGp5NzFmdVFJS3ZuMVBFUktI?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Malay Mail](https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbHlLNEN1bHVRZ0hoejRDSHFyLXZSdElFbEV3a0UxenJ2dlEtOEhndURPeG9RM2xJd29lU2xGU0hKOWE4TVRkVkpKV2tvWklLZXpFaV9POGJUb05jbmVaTHVrSFpUYXhVYV9sWl9FaFJGRGpzNlpzOXlBTFRrWGZQX1VERGw3SzFNV3dlUV91elVWZVVfV3hMVkRHQWRSVEsteFZxWDJiZ0g3SURUNUptelNueHpYdldwTmtxTGVXUmZ5anBNekRFRXRCTHBjSmdSdjAwMUVBa1NXODJMT0xtWjJNNlFCOTNT0gHuAUFVX3lxTFBuVU96Q2NxX1lndTJ1RFJQaTFlRE9pb0NIN3A4LXpfR2NVVm15VE1CVEkxdnpTLXZ5UGxaMzVmRkl3VlQ0MTliY1VkSjVMQUs4QjZsMkpXbjVIRDNsLTI5SlI0NDA4XzZuWFZxNTdiLWtWTzVhb1dZUlBNQmhBNGpoNnlHYWJnUF9UanZWNmpvb1E4ZGFMbGNXalZ5Zk4yc3lZTGdPSkZUNmJ6U3lvYkFjeXd0UHRNTXNCRlZpM1hteWJ0c3RXcmdxLW9xX3JPbDdmMGpuVzRaNHZDWmZWc01lanB5R3BjR25Wdk1FUVE?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Newswav](https://news.google.com/rss/articles/CBMitwFBVV95cUxONVBIMWxsUDJhRWp3aUlkZGdzUks4Q044dWIzQktmd1JfdGFPMFR4MUx0cERQQXZ1ZTFjeklRQjl2c180LW9IWWhWa1lwOUhmbUJuYktNN09DNjRnaGRRMnJJOXlEVnZjdk1Vby1Za1FoQ0hoVnpzcXVxWktLcU9oNV9KSk9rYUVMSDBWbmxZRklXMVB0b0xsZUNvOTUtRC1vbDhJVkN2ay1iXzdLbHdCTWlKSjE3XzQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
