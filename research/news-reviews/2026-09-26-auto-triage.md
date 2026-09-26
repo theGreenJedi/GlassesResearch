@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-26T22:10:46.104538+00:00`
+Generated: `2026-09-26T22:59:05.670368+00:00`
 
 - Intake files inspected: **314**
-- Candidates retained in this review window/history: **14365**
+- Candidates retained in this review window/history: **14247**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3037
+- `adjacent_radar`: 3033
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 720
-- `rejected_noise`: 10461
+- `needs_editorial_verification`: 721
+- `rejected_noise`: 10347
 - `source_monitor`: 1
-- `source_review`: 36
+- `source_review`: 35
 - `watching`: 91
 
 ## Action queue
@@ -113,8 +113,8 @@ Generated: `2026-09-26T22:10:46.104538+00:00`
 | high | needs_editorial_verification | direct | [Meta2026 Developer Conference kicks off this week: smart glasses and Phoenix are poised to launch, with Muse AI as the biggest highlight, wh](https://news.google.com/rss/articles/CBMirAFBVV95cUxOeTZ1d0o0YzV2TjdEY1FBdnh3Ul9ZZjdMelk2S0JWYUNESWdEN09TTkRTX0hjcTZjZzhqMFoyRG1rcFJENnpKZE40QXNlR202Y3VsWVB2MVJtRUFsVHVNV2Q2NjdtMmRUdG02S3dkbGpPUnVHb2F4YllOWjI0NV9WZjhNYVl4VWNidGNvd0JwX2tqc0EwUWFBWkJsaVpWakxRVzdtOUZlMlVCdHow?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [AI Glasses Launch Could Be A Game Changer For EssilorLuxottica (ENXTPA:EL) - simplywall.st](https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVkdTa3d6aHlMbkpDSkg4STRGTXI5bkFlZVJ6RWFGSWpUT1E3MURCQTVIUXhyM1RiZW9fV0N6RkxWVzlQTUVlMjRuZ2IzY0JJejl2aU83VTUwTjVnc2FpeGdzb29ZSGZQeHJweXRVaWVYMTRaX2Q1aC1sNXp5WFNSM2JwaWZENW53TWtQRUh6Z0Jad2tTQlBqM0JreG9VRzhrd2YzaDZqMEFBUElpZWxRNWlJS0huaW9UNVRKbVpYZTVNSUN4V1c1dENoa3ZBNjJmS2tJdGJJVkhrOUJKV2ttU2wwd2JUbEtJWDFj0gHwAUFVX3lxTE1WbWFSeTAtajY4Z0RTVGFFdTFDUktOZDRKbkd5T3VTbFkySUsza2hWc1FBSjFZdWFTQUVlc0gyYjdKbi1vWEZQZXRoS1NEY1pNa2NqWnlrcDc1X3JuazNWZHdwcVIyeFJnS1NMNVlmWFZNWDBBRnlORFhhdjRxbjRRTDBJaFJZN0NVMEI4T09VOXZ0ZDJybVBMSXJDNTNDVm5DN2JqLXRWUG45dXgtYWs1bXhKZjNjd0VSZElNUWkxanhLa1JMXzNjRHZZdFNZN2R0cUYxZHFIZXgtUVBra3dXQ3pIQjZiYTFhQ2txdVV6OQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - Daily Hive](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1PQU5LUVNiTFd5VXFCcm9ncUpJQjYwWVRoTTRWZTQxdXY4dkhZOHdQX082cFFpbWI4NEJJYXQ3eUN5NFYtT1VrYk5MNVQ4S0V3ZV95cWFndVV6Q29yd1lHSS00bUdiWDQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - Daily Hive](https://news.google.com/rss/articles/CBMia0FVX3lxTE92a3RtRVk2Ql91d0tIbWhLMXZyTm4tejhNYnBaXzB0Q0xGS21nUWNabl8zSjRrYnoyYlhyVGpFWWFrdnkyY0lKcGFSOXBTcG9OS1pmYTEzbVp0WWlyMEQ1bThVcjEtWE10LUJv?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - dailyhive.com](https://news.google.com/rss/articles/CBMiakFVX3lxTE5yUHBUa3lqY1FfaTBoTEJncnYtdXhNelVCbHdFZUFIV3UxZGRrV21JeksyZW9oeGtRQjZPX1NRcE1iS1RuelZCamFqd21DNmh0MTBjdjNuemNSZmNSYXNtb0ZJVE1TZG50UkE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - dailyhive.com](https://news.google.com/rss/articles/CBMia0FVX3lxTE92a3RtRVk2Ql91d0tIbWhLMXZyTm4tejhNYnBaXzB0Q0xGS21nUWNabl8zSjRrYnoyYlhyVGpFWWFrdnkyY0lKcGFSOXBTcG9OS1pmYTEzbVp0WWlyMEQ1bThVcjEtWE10LUJv?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [EssilorLuxottica falls despite new AI glasses launch with Meta - Investing.com](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYjQtOVdyZ01HbjV1X0lQLV9FRk5wdDRrN0tqc0g3dTBFazFhMDBDQmdPWWJxVndscjVfZmd2aDdpemRCLTBOYXdwNWlIcEpObjVTWmszU3NMLUVya3BZdEtkWUJ6WmJnZVVzQ3dTWVZ5akxLakprQjlUSXdmSFo0OEg0UkIxR3JwX0tMTVlSV2xjRG5ZUklsWDZUYUx2SWEzeVFWUGY4OThmY2tKU1pmTlpPdGg4c2pDX19z?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Health Canada warns against use of AI smart glasses, issues immediate recall - thenews.com.pk](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMHhXN2E3NjZMOTBsajRrOHpOTDl2MUY4S1ktLU9XNDZBZjJ1Nks5NnFoUkJ3cFhYeGhQYXhXbjZLYlRJR3R5NW4tX19qSkVZeEIzRTBzbklIaEFxMHdxaFROcnk3aS0zY3dwRm9lZmpRMTNMQldlak1zLU8tdWRaZmtpNnpRcUROQ0poWFNaRE1Cb1ZnTlZVUmRHQmh0MkpiLVRZREJqLUVoTXdZYTZLTFZ1dC1VLS0x0gG0AUFVX3lxTE1OaFB0RXJWUkxJaEZUVnRnRGthMEFlY2lsN2ZxZktjamtmSTA3UkVGZTcxdUxtLW0tbG9JUjlac0V6TWVLYzJUSzlOeS1FaGdqSTFfR1ZUVV82VDVkZVgwZVh0Mm1OQ2NJQXpCWDFuX01hOUNCcmwtNEFGVFNDMi1TNUVnbHB0OUMwOEpxOHlsS3otSy1VMjZsU3FuVWNqQ0J5dlA2NjhMZHJlQWw3LVpPQ0tvVA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [HTC Vive Eagle AI Smart Glasses Launch In Australia - channelnews.com.au](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZ3FUbUM4SnpWbFRveTUzcDJpLXZoQWpXdzd5OHZYNTg3cHpwcTFoeXlwQ3hfWXFMbHlVaGQ0LTA4bF9ld3RfbDItXzJHc0NGVTVENGYyejVuend3bnpCR3lJVUxkNGljZGRNdW5KVUREWFpjNlpWU3NZWWxTQzExRWoxUzhNeEZtYktz?oc=5) | reachable (200) | research_news_review, model_catalog_review |
