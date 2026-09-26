@@ -87,7 +87,7 @@ Status is last checked on the edition date and can vary by country. Frame colors
 | GLS-0057 | INMO | Air | 2022 | legacy | standalone display | crowdfunding/retail | primary; [source](https://www.inmoglass.com/) |
 | GLS-0058 | INMO | Air 2 | 2023 | current | standalone display | retail | primary; [source](https://www.inmoglass.com/) |
 | GLS-0059 | INMO | GO | 2024 | current | discreet display | retail | primary; [source](https://www.inmoglass.com/) |
-| GLS-0060 | INMO | Air 3 | 2025 | preorder/current | standalone display | preorder/retail | primary; [source](https://www.inmoglass.com/) |
+| GLS-0060 | INMO | Air 3 | 2025 | current/recall | standalone display | retail | primary + U.S. regulatory recall; [verified recall](../docs/news/articles/2026-09-24-inmo-air3-cpsc-recall.md); [CPSC](https://www.cpsc.gov/Recalls/2026/INMO-International-Technology-Limited-Recalls-INMO-Air3-Smart-Glasses-Due-to-Risk-of-Serious-Injury-or-Death-from-Burn-Hazard) |
 | GLS-0061 | Rokid | Rokid Glass | 2018 | legacy | standalone AR | enterprise/developer | primary; [lineage](../lineages/ROKID.md); [source](https://www.rokid.com/en-US/about) |
 | GLS-0062 | Rokid | Rokid Glass 2 | 2020 | enterprise | standalone AR | enterprise | primary; [lineage](../lineages/ROKID.md); [source](https://www.rokid.com/en-US/about) |
 | GLS-0063 | Rokid | Rokid AI Glasses / Style / Neo (RV203) | 2025 | current | camera/audio | retail | primary; [chapter](RokidAIStyle/README.md); [source](https://global.rokid.com/pages/security-center) |

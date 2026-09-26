@@ -30,3 +30,9 @@ Primary source:
 - https://unity.com/blog/build-for-meta-vr-glasses-with-unity
 
 This strengthens the architectural record: the external-compute glasses are being introduced as part of an existing software/tooling continuum rather than as an isolated hardware prototype. Production performance remains unverified.
+
+## Community and web-app implementation evidence
+
+Meta's public Web App AI Toolkit and the community SpecBridge/MetaBridge project provide implementation-level evidence that the developer surface is already being used beyond documentation examples. Preserve these as practical Hackability/programmability evidence without promoting them into claims of open firmware or owner sovereignty.
+
+See [Meta wearable community bridges](META_WEARABLES_COMMUNITY_BRIDGES_2026_09_25.md).
