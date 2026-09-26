@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-26T07:51:20.241549+00:00`
+Generated: `2026-09-26T08:51:52.629190+00:00`
 
 - Intake files inspected: **316**
-- Candidates retained in this review window/history: **14580**
+- Candidates retained in this review window/history: **14582**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3118
+- `adjacent_radar`: 3119
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 704
+- `needs_editorial_verification`: 707
 - `rejected_noise`: 10608
 - `source_monitor`: 1
-- `source_review`: 39
-- `watching`: 91
+- `source_review`: 38
+- `watching`: 90
 
 ## Action queue
 
@@ -25,7 +25,7 @@ Generated: `2026-09-26T07:51:20.241549+00:00`
 | high | needs_editorial_verification | direct | [CyanBridge v2.3.0](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/releases/tag/v2.3.0) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [Meta has announced 'Ray-Ban Meta Audio,' smart glasses without a camera, boasting up to 12 hours of battery life and shipping starting Octob](https://news.google.com/rss/articles/CBMibEFVX3lxTE1qOVd2aU82Ri1fZ1NOYng5YXpNR1UtZFE1Z09tSl92ZVRTeDZxd1NRaFJfMEt0cUtERzJ3cWIwUlpyTjA2NHM0eGE3N3ZLT0xxTG16NXE1NXVlQS1ORExGN3pjVGFzVUYxeGJpaA?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta has announced 'Ray-Ban Meta Audio,' smart glasses without a camera, boasting up to 12 hours of battery life and shipping starting Octob](https://news.google.com/rss/articles/CBMibkFVX3lxTE9IWTJ3blV4VFltTDRtNnVCZUdMdFBFd2MzM2xMNkNEZl8tUVhWaktaTDlBbXBuT3ZLM2pVWDJqODhvQS1yVUJpX3ZsVU1ZVUZabXl5SW5ZWXozUVV5eHZmZ2FDcUNGbjBTemJRS213?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Meta unveils $1,299 VR glasses, camera-free AI glasses and Muse Charm; India launch yet to be announced - IBTimes India](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSnVhRVc4RU5CUkxFc29jQ29sdy1qc1pEZUlpSnlOWUlETDRuRDVSRDh0TzJtbXBzNTRhLXNNaGRhb3hyY3RTSEtSTEd1OGk1cUZrOHZRb1ZQQWJfZWFVZERJMXdzYlVuUTdNNnNXcG5HWS16QXJ1X0VPQWhYRmgzVl9VT0FQU0loOHd4RHYzV05sVEFzcUVURENfOGJzMzRFYXVHRVUzazRUd3k0OTZOdVNaZWl0bVJ1VVppNHA0T3MzSmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Meta unveils $1,299 VR glasses, camera-free AI glasses and Muse Charm; India launch yet to be announced - ibtimes.co.in](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSnVhRVc4RU5CUkxFc29jQ29sdy1qc1pEZUlpSnlOWUlETDRuRDVSRDh0TzJtbXBzNTRhLXNNaGRhb3hyY3RTSEtSTEd1OGk1cUZrOHZRb1ZQQWJfZWFVZERJMXdzYlVuUTdNNnNXcG5HWS16QXJ1X0VPQWhYRmgzVl9VT0FQU0loOHd4RHYzV05sVEFzcUVURENfOGJzMzRFYXVHRVUzazRUd3k0OTZOdVNaZWl0bVJ1VVppNHA0T3MzSmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | ["You can see them from a mile away" – new Snap Specs smart glasses released on pre-order, boasting an all-new solution to the backlash again](https://news.google.com/rss/articles/CBMixwJBVV95cUxOMFlmUVpTa01RcktWRXFKd2p6YUU3YVpzclUyMC1iTGRUdDViVUlKQ0xWNUdqUG1HRUlqVDNkVEh0YXFvTC16SnN4b3k0U29MUF9xRVRrU3U2cDhjaTBRajVBUTBDT3M4c2Rzc2doQzdxdUFraVctNzFEUmdOVGdrTlhfUzRLUTgtSV9WdFJhUHk5T241Ty14U0ZEQ2Z3STZGRk1Ub1NSUjJVNTRPSkNOaGZhYmx3bmI5QkRkcEZrNFcwSmdPY0tfT2RfbnBBN3ZIZWdXOVRkQzg0eUZaLTB4bXg5V0ppajhTcjZJOThDUXdRMW1IZ0lwTnNUOFNwb2dRdHQ2WTQyNWgtc0Nkcmx6allteGxzbWhJTzVSUjNxa3E3ZldUaVRxVVdXYklFd3pMVWFDZ3NuNEZkV2hfS3hmVnN4ZWUyYm8?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [AI camera glasses can be worn in Commons despite security and privacy risk - The Sun](https://news.google.com/rss/articles/CBMijwFBVV95cUxQa24yY3ZaZzA3WE9BZjhIWVN2dDdWLVVWV0tJa1pkdS1MV0lDWGRvUGxyQ20yTnFsMlNEd2stRjliaDltM01nS1pXSHZaTkRrWjJsR2Q5b0dJNVFUSzZIZWxQN2FQc0xob0x1VndkN2NZMHA0SzJEaG1sSkhtdU14UEQxZHR4VFJWX282T2NlSQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI camera glasses can be worn in Commons despite security and privacy risk - thesun.co.uk](https://news.google.com/rss/articles/CBMikAFBVV95cUxQYnN4R0UyemE3emFHUFFsSlRScFFFV1doMlZxaDRnMGFPd0FsZkg5aDlXS19GS1dHV2JHYmNRSkphZ296Zm5jZ2RLU2hVZkZiWVV6SUR0ZjhSblYwV21fYXFoM2dNV05EajVmRlZ1SEFwQ2hhZHg1ak1uT1JmTnRGeGpkZFRfMXZzdi1YMGR4eHE?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -89,6 +89,7 @@ Generated: `2026-09-26T07:51:20.241549+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.404](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.404) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.405](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.405) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.406](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.406) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.413](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.413) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta Plans Camera-Free Smart Glasses Launch This Fall Amid Privacy Backlash - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE5tdWZNZTNwNkVqVWVfb0wzWXdOUTJCWDdaWXN0Y3pVOHFtS3pnaENCcjFZeHdqUzdELWtHc1FUNHlQc2E5dmFRQ1FTSUhfN2UxM3JxREQtaUV3bWJIUHB2a0tabEJwaHRiNnFyMVZOR3JDa2J0a0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta to launch AI glasses without camera - Daily Observer](https://news.google.com/rss/articles/CBMiSkFVX3lxTFBtNkZGNVpiMDdhWk80MW8yQXVDUGJpUnV1QmI5Sk81VHgwRmk0T2ktcHpuUUJmRmZGZXY4WmNUSjRMcVJWX0d4cHRR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,7 +272,6 @@ Generated: `2026-09-26T07:51:20.241549+00:00`
 | normal | needs_editorial_verification | direct | [Meta has unveiled new AI-powered hardware, including camera-free Ray-Ban Meta Audio glasses, a $1,299 VR device and the tiny Meta Charm. But](https://news.google.com/rss/articles/CBMirAFBVV95cUxOTlBIbzQ4Zm5kZmhlZHRxMHM4blVfdENTZURCbk1hRkpqRmlzejgyNF9CNHJDODZkeE9xS1NqOWt0TkxRZi1pZlllRUY3WVlmMHliU05WSlVURHZWZkszbFFYY0ZrLTUwRUZ0NlZ4SHNzSkk4VlZVRmI4Rlpfa0hrdW51b09vWEpuSk5fbExsY3NPUzBza1QzUkFWOGp5NzFmdVFJS3ZuMVBFUktI?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Malay Mail](https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbHlLNEN1bHVRZ0hoejRDSHFyLXZSdElFbEV3a0UxenJ2dlEtOEhndURPeG9RM2xJd29lU2xGU0hKOWE4TVRkVkpKV2tvWklLZXpFaV9POGJUb05jbmVaTHVrSFpUYXhVYV9sWl9FaFJGRGpzNlpzOXlBTFRrWGZQX1VERGw3SzFNV3dlUV91elVWZVVfV3hMVkRHQWRSVEsteFZxWDJiZ0g3SURUNUptelNueHpYdldwTmtxTGVXUmZ5anBNekRFRXRCTHBjSmdSdjAwMUVBa1NXODJMT0xtWjJNNlFCOTNT0gHuAUFVX3lxTFBuVU96Q2NxX1lndTJ1RFJQaTFlRE9pb0NIN3A4LXpfR2NVVm15VE1CVEkxdnpTLXZ5UGxaMzVmRkl3VlQ0MTliY1VkSjVMQUs4QjZsMkpXbjVIRDNsLTI5SlI0NDA4XzZuWFZxNTdiLWtWTzVhb1dZUlBNQmhBNGpoNnlHYWJnUF9UanZWNmpvb1E4ZGFMbGNXalZ5Zk4yc3lZTGdPSkZUNmJ6U3lvYkFjeXd0UHRNTXNCRlZpM1hteWJ0c3RXcmdxLW9xX3JPbDdmMGpuVzRaNHZDWmZWc01lanB5R3BjR25Wdk1FUVE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Newswav](https://news.google.com/rss/articles/CBMitwFBVV95cUxONVBIMWxsUDJhRWp3aUlkZGdzUks4Q044dWIzQktmd1JfdGFPMFR4MUx0cERQQXZ1ZTFjeklRQjl2c180LW9IWWhWa1lwOUhmbUJuYktNN09DNjRnaGRRMnJJOXlEVnZjdk1Vby1Za1FoQ0hoVnpzcXVxWktLcU9oNV9KSk9rYUVMSDBWbmxZRklXMVB0b0xsZUNvOTUtRC1vbDhJVkN2ay1iXzdLbHdCTWlKSjE3XzQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Meta Just Got a Big New Partner for Its AI Glasses Push - Yahoo Finance](https://news.google.com/rss/articles/CBMikwFBVV95cUxQZUE3VUEwWHAwSDQxLVo4dWZ5ZC1jSi16U2J2QVhKMDU5R0NPRENqUHVadEZ5eEVadklFUUMyWUIxQWN5VWdWYnBHNENQenhDbk5nYmpqU1VxNHoxdTB1bzBMcTVHbWJCOWRXdXBpc3M0ZXdDZU4xRy0wWmxvYUVVNF9VLWNBM25oNFZlR28xLVhPSEU?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
