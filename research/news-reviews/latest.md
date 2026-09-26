@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-25T23:37:56.641155+00:00`
+Generated: `2026-09-26T01:40:40.155738+00:00`
 
-- Intake files inspected: **315**
-- Candidates retained in this review window/history: **14543**
+- Intake files inspected: **314**
+- Candidates retained in this review window/history: **14475**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3076
+- `adjacent_radar`: 3049
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 702
-- `rejected_noise`: 10618
+- `needs_editorial_verification`: 698
+- `rejected_noise`: 10582
 - `source_monitor`: 1
-- `source_review`: 36
+- `source_review`: 35
 - `watching`: 91
 
 ## Action queue
@@ -82,6 +82,7 @@ Generated: `2026-09-25T23:37:56.641155+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.371](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.371) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.382](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.382) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.388](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.388) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.391](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.391) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta Plans Camera-Free Smart Glasses Launch This Fall Amid Privacy Backlash - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE5tdWZNZTNwNkVqVWVfb0wzWXdOUTJCWDdaWXN0Y3pVOHFtS3pnaENCcjFZeHdqUzdELWtHc1FUNHlQc2E5dmFRQ1FTSUhfN2UxM3JxREQtaUV3bWJIUHB2a0tabEJwaHRiNnFyMVZOR3JDa2J0a0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta to launch AI glasses without camera - Daily Observer](https://news.google.com/rss/articles/CBMiSkFVX3lxTFBtNkZGNVpiMDdhWk80MW8yQXVDUGJpUnV1QmI5Sk81VHgwRmk0T2ktcHpuUUJmRmZGZXY4WmNUSjRMcVJWX0d4cHRR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -267,11 +268,10 @@ Generated: `2026-09-25T23:37:56.641155+00:00`
 | normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Newswav](https://news.google.com/rss/articles/CBMitwFBVV95cUxONVBIMWxsUDJhRWp3aUlkZGdzUks4Q044dWIzQktmd1JfdGFPMFR4MUx0cERQQXZ1ZTFjeklRQjl2c180LW9IWWhWa1lwOUhmbUJuYktNN09DNjRnaGRRMnJJOXlEVnZjdk1Vby1Za1FoQ0hoVnpzcXVxWktLcU9oNV9KSk9rYUVMSDBWbmxZRklXMVB0b0xsZUNvOTUtRC1vbDhJVkN2ay1iXzdLbHdCTWlKSjE3XzQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta Is Bringing Muse To Its AI Glasses - WeRSM](https://news.google.com/rss/articles/CBMibkFVX3lxTE12MnF1aUFfcGE3eFAzVm1DaVQwUEpDV29vTENzdUt2cW1PVFdkb3ltQjRpUjBJa09VVWxjNzJfQ21WQzh4NDZJMDFRWUsxbkpqLW5oS3hHVzZwUFMtRE5xODlTOG93d21xSmcxSy1B?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Meta Just Got a Big New Partner for Its AI Glasses Push - TradingView](https://news.google.com/rss/articles/CBMitgFBVV95cUxNQk9welFnaFUyWmlVWFVBeTJhZUJjNEE2NVBLVnV1c3RhSDRrWG9pWmxjVlFYeUx6UHNjclc0NHZUdXVmcEdwYTE3WHhxY3NxU0FBS3BQYXJKeW15dlVfc1pQOW9pSDRiOVhsVEEtcTJWSzZpbmIwRFlIRUl2SFVnRkozdFhGOHZvU0s3dlZNRmtsaWZfT0hlcHhXX19tckdUcFozeW9pb2pwVVBvQklnTW56eVNpUQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Meta Launches Camera-Free AI Glasses Amid Growing Privacy Concerns - The Trumpet Newspaper Nigeria](https://news.google.com/rss/articles/CBMikwFBVV95cUxOdmwzNU9QWU1SRE1Zc1p2OE1nZkxBWTBPTzRsMmh6WUtRZFh5VUprN2JFZGpiNmNnUlktOUFuQS1qV1M5RG5mZEM0VDktVVNYZW9Bal9qbGc1QmZOYk5pU2VHUjhFY2VVYUdWYVp0THVJSlBKRTNudDI5bFRJZUxPR1puQU9aRHBSa0tiZ2RpbWFmQms?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Meta Launches Camera-Free AI Glasses Amid Growing Privacy Concerns - thetrumpet.ng](https://news.google.com/rss/articles/CBMikwFBVV95cUxOdmwzNU9QWU1SRE1Zc1p2OE1nZkxBWTBPTzRsMmh6WUtRZFh5VUprN2JFZGpiNmNnUlktOUFuQS1qV1M5RG5mZEM0VDktVVNYZW9Bal9qbGc1QmZOYk5pU2VHUjhFY2VVYUdWYVp0THVJSlBKRTNudDI5bFRJZUxPR1puQU9aRHBSa0tiZ2RpbWFmQms?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta launches camera-free AI glasses amid privacy pushback - 24NewsHD](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTm5JeklON1dpbWg5TTRhZzgyQ2hOX0JaSVpSMzRTVlB2N1JwbnBIa09qc0FEc0dDWUZud1lqeVExVUNNVC1xTTBJeEYtdTNoQWVNdElWcEVZVXpVM1FMOXh1SlhJSlh5enJ2dUJ6d0xiMEhWUU00U3pfdGFXaTVLbG5ZY3M2RDhibnBJZlUtbUVtUUtwOERubjV4YU5LbXRHeUl2d1RiZE5EUdIBqgFBVV95cUxNTm5JeklON1dpbWg5TTRhZzgyQ2hOX0JaSVpSMzRTVlB2N1JwbnBIa09qc0FEc0dDWUZud1lqeVExVUNNVC1xTTBJeEYtdTNoQWVNdElWcEVZVXpVM1FMOXh1SlhJSlh5enJ2dUJ6d0xiMEhWUU00U3pfdGFXaTVLbG5ZY3M2RDhibnBJZlUtbUVtUUtwOERubjV4YU5LbXRHeUl2d1RiZE5EUQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta launches camera-free AI glasses amid privacy pushback - abs-cbn.com](https://news.google.com/rss/articles/CBMirAFBVV95cUxNOThwdFhuRkFsbzFhUmtIVlBDVXlXX1FwdDZKbjBRSDlhdm9GYXRjY0RVZkJxc0pSNEI4TVJUbXRlc0ZiN0lJUUlzMW42N294WVFEcWFwa0xSM2R3TTBhd01EVG41djlIcmtBclp1RkwyamxSTEpQRFh3aFQxSFpyY2h3b2hKY3c1T2Z4cVFUR2dsRkhfREhoaENwcUlqNkU4ODVTRHhIVDJtUmYw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta launches camera-free AI glasses amid privacy pushback - CNA](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVlA2NWMwckZjd183b1RCOG44YnU4aWVVLUY5WHVON3ZiQ2huendUX1lfRUJEcE9MR0dybzRkeVBzQlJQeG5mcXpQQmZQWWk0Z05uNXVMZ2lIVko0Y0xFd1RaWVVldEpPaXZUTGhkaHFmSnllRnlxbkw4VDBfVEt5TmVMWnlsaEZya1k4?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Meta launches camera-free AI glasses amid privacy pushback - France 24](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeHFobldwdjZxMEVnY19HeUNMVkg1UU8yQmVfcHU1LUFvUW9UNlpwRERIbWxGT2ZkZUhDZGVhT25LZVJPYlppSm8welN4aE9Kd2o3UDhXWXBUZy1wR1Zwd3lyWHRiQlVqajlHdVZWOUZlTjZUZnJMaWlzWmE5elNwaEtnaS1Sc2tOQVlzNVkwVVN1dTZsbmhyTUc1aExOTkFXcDB2WGNUNEE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
