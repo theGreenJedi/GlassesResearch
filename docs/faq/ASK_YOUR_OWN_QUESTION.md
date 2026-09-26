@@ -1,6 +1,6 @@
 # Ask Your Own Question
 
-Didn't find your question in the existing 100 Questions? Ask it.
+Didn't find your question in the existing answers? Ask it.
 
 > **No question is too basic or too advanced. If you couldn't easily find the answer, someone else probably can't either.**
 
@@ -46,7 +46,7 @@ Submitted questions are added to the [Community Questions](COMMUNITY_QUESTIONS.m
 - **Unable to Verify** — evidence remains insufficient or contradictory.
 - **Removed — Off Topic** — the question does not materially concern smart glasses, AI glasses, wearable display systems, their software, hardware, ownership, privacy, accessibility, development, repair, history, or closely related research.
 
-A broadly useful answered question may eventually become part of the main FAQ collection.
+A broadly useful answered question may eventually become part of the main answer collection. The collection has no target size or ceiling: it grows from materially distinct questions people actually ask.
 
 ## Moderation
 
