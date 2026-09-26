@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-26T19:30:09.569138+00:00`
+Generated: `2026-09-26T19:59:06.507826+00:00`
 
-- Intake files inspected: **311**
-- Candidates retained in this review window/history: **14279**
+- Intake files inspected: **313**
+- Candidates retained in this review window/history: **14340**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3020
+- `adjacent_radar`: 3025
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 713
-- `rejected_noise`: 10397
+- `needs_editorial_verification`: 715
+- `rejected_noise`: 10453
 - `source_monitor`: 1
-- `source_review`: 38
+- `source_review`: 36
 - `watching`: 91
 
 ## Action queue
@@ -229,6 +229,8 @@ Generated: `2026-09-26T19:30:09.569138+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경으로 성관계 몰카·시험 부정행위…규제는 뒷북 - 매일신문](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5iTW9GODZHY2JUa0RvdEhjZUcwVnAzaGFwemphSHdfUnhWVHcxMDVwd0xJZndPa2NYZmFhME9HWjBXb25IWkN2RWx0WGd6TmNvZkcxX0k0Vl9kSElkd0FjRHlR?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜“最后一公里”如何破？深圳这家全国首店给出答案 - 中国科技网](https://news.google.com/rss/articles/CBMicEFVX3lxTFBaTThlRldsZTd5dFk1ZThLek9hU0MxdzFMeWh6OXBjdVJ4aTZyQ3pRcGlzUEpNdjF0TkZGOVQ0U1BHRUhRWi1ZX1pEejFja3hfbXkwdElFaEhJOEt3emVsQ2lrMWpzeWxJN0NEZzRaNFE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜市场爆发式增长，苹果首款智能眼镜预计2027年末入局 - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVEJYb1RWel93OFhmUmtFREt3LWFzZ0JfeWZaa1JaMGtWVDBvTEhUMWNmd0hPRFFHeE5QU0dsQVg4d1pFWWhkUFQzYllTYXhISXNVMlExYnFSRjRLOHgtNTBWQWNsYlZGeFJxMHJmeXlkcXdEeUJ6M05CUFptT0ZNa29PbEpoRWRE?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ30gHfAUFVX3lxTE1KV1c3ZzZwVk90MjdZVDZ6Zi1tN1UtTm04UnhvMjFPT0dzcTdHakNzaXAtdElUR1dFUUdWLXA2a25Ba0ZMVjVndll1c3M4WUk3bE95T18xQ2ktWno5NnB4RzBBWkFZdW5wUFBMZXQtai15TDdaR0tBSDkyTmkybUZhOEhKaDdraXlWMjN6dEtGU2VuTXJuSWpmcWgwMWJ6MVlNYXZXMEtKek1mbDQ1amJqa1R6RE1tV0VUaEh4cU1XN3RMUDNuR1V0aFVadXRjMlI3WVF2dlVNbW9qQlN0dnc?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -270,8 +272,6 @@ Generated: `2026-09-26T19:30:09.569138+00:00`
 | normal | needs_editorial_verification | direct | [INVISION 1d ago EssilorLuxottica and Meta Further Advance AI Glasses Category With New Products Revealed at Meta Connect Coverage Meta](https://invisionmag.com/essilorluxottica-and-meta-further-advance-ai-glasses-category-with-new-products-revealed-at-meta-connect/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [INVISION Jul 31, 2026 EssilorLuxottica H1 2026: Revenue Up 9.7%, Myopia Sales Up 24%, AI Glasses Nearly Double](https://invisionmag.com/essilorluxottica-h1-2026-revenue-up-9-7-myopia-sales-up-24-ai-glasses-nearly-double/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | enabling | [Lenskart Eyeglasses Online \| Prescription Eyeglasses & Sunglasses](https://partners.lenskart.com/) | reachable (200) | research_news_review, development_hacking, research_optics |
-| normal | needs_editorial_verification | direct | [Lisa de Blackpink se une a Meta para crear las nuevas gafas inteligentes que querrás llevar esta temporada - Vogue México](https://news.google.com/rss/articles/CBMinwFBVV95cUxQYlY4M1hjUXRhb19xSGhUTnZnNDdzWm5MYzNXQ044c1JJbTRKaTh5blNVT3ZaXzhxYWpEN1g3SmlHYnVtUmxuUGR6Q1dFWjdJc1N0T3lfWVpDT3NUak5LVzg0T3Q1Rm13Yk4zNGR6YXNwbXlZcWhPeGQ1Mlo1UVVEOGVaT1NPR0pCQUh4YWhsRFo2cHZWVzBHY2RVaEp3dFE?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [mentra-v3.1.1-beta.246](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.1.1-beta.246) | reachable (200) | research_news_review, development_hacking, community_evidence_review |
 
 ## Meaning of states
 
