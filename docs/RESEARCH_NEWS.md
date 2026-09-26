@@ -31,6 +31,11 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 <details>
 <summary><strong>Browse detailed newsroom notes</strong></summary>
 
+### September 24, 2026 — INMO Air3 recalled for overheating hazard
+
+Canonical coverage: [verified CPSC recall note](news/articles/2026-09-24-inmo-air3-cpsc-recall.md). The official remedy is a V3.16 system update; GlassesResearch is preserving pre-/post-update thermal and performance behavior as a testing target without assuming what the firmware changes.
+
+
 ### September 23, 2026 — Meta announces camera-free Ray-Ban Meta Audio
 
 **Across the Wire · Reported.** Meta and EssilorLuxottica's camera-free AI-glasses announcement is a first-class taxonomy signal: camera presence is becoming a deliberate architecture choice rather than an assumed capability. [Read the evidence-bounded wire note](news/articles/2026-09-23-meta-ray-ban-audio-camera-free.md).
