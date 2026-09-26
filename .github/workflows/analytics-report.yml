@@ -8,6 +8,8 @@ on:
       - 'scripts/analytics_history.py'
       - 'scripts/cloudflare_rum.py'
       - 'scripts/search_impact.py'
+      - 'scripts/question_discovery.py'
+      - 'research/questions/registry.json'
       - 'analytics/search-interventions.json'
       - '.github/workflows/analytics-report.yml'
   push:
@@ -18,6 +20,8 @@ on:
       - 'scripts/cloudflare_rum.py'
       - 'scripts/search_opportunities.py'
       - 'scripts/search_impact.py'
+      - 'scripts/question_discovery.py'
+      - 'research/questions/registry.json'
       - 'analytics/search-interventions.json'
       - '.github/workflows/analytics-report.yml'
   schedule:
@@ -47,7 +51,7 @@ jobs:
 
       - name: Validate search impact tracker
         run: |
-          python -m py_compile scripts/analytics_report.py scripts/analytics_history.py scripts/cloudflare_rum.py scripts/search_impact.py
+          python -m py_compile scripts/analytics_report.py scripts/analytics_history.py scripts/cloudflare_rum.py scripts/search_impact.py scripts/question_discovery.py
           python scripts/search_impact.py --validate-only
 
   analytics-report:
@@ -77,6 +81,13 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_ANALYTICS_HOST: ${{ vars.CLOUDFLARE_ANALYTICS_HOST }}
         run: python scripts/analytics_report.py
+
+      - name: Discover real user questions
+        env:
+          GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
+          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
+          QUESTION_DISCOVERY_FEEDS: ${{ vars.QUESTION_DISCOVERY_FEEDS }}
+        run: python scripts/question_discovery.py
 
       - name: Build page-query search opportunities
         env:
@@ -117,6 +128,10 @@ jobs:
           mkdir -p "$tmpdir/analytics/history" "$tmpdir/analytics/series"
           cp analytics/latest.md "$tmpdir/analytics/latest.md"
           cp analytics/latest.json "$tmpdir/analytics/latest.json"
+          cp analytics/question-discovery.md "$tmpdir/analytics/question-discovery.md"
+          cp analytics/question-discovery.json "$tmpdir/analytics/question-discovery.json"
+          mkdir -p "$tmpdir/research/questions"
+          cp research/questions/registry.json "$tmpdir/research/questions/registry.json"
           cp analytics/search-opportunities.md "$tmpdir/analytics/search-opportunities.md"
           cp analytics/search-opportunities.json "$tmpdir/analytics/search-opportunities.json"
           cp analytics/search-impact.md "$tmpdir/analytics/search-impact.md"
@@ -130,6 +145,10 @@ jobs:
             mkdir -p analytics/history
             cp "$tmpdir/analytics/latest.md" analytics/latest.md
             cp "$tmpdir/analytics/latest.json" analytics/latest.json
+            cp "$tmpdir/analytics/question-discovery.md" analytics/question-discovery.md
+            cp "$tmpdir/analytics/question-discovery.json" analytics/question-discovery.json
+            mkdir -p research/questions
+            cp "$tmpdir/research/questions/registry.json" research/questions/registry.json
             cp "$tmpdir/analytics/search-opportunities.md" analytics/search-opportunities.md
             cp "$tmpdir/analytics/search-opportunities.json" analytics/search-opportunities.json
             cp "$tmpdir/analytics/search-impact.md" analytics/search-impact.md
@@ -139,12 +158,12 @@ jobs:
             mkdir -p analytics/series
             cp -a "$tmpdir/analytics/series/." analytics/series/
 
-            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/)" ]; then
+            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json analytics/question-discovery.md analytics/question-discovery.json research/questions/registry.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/)" ]; then
               echo 'Analytics snapshot already current.'
               exit 0
             fi
 
-            git add analytics/latest.md analytics/latest.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/
+            git add analytics/latest.md analytics/latest.json analytics/question-discovery.md analytics/question-discovery.json research/questions/registry.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/
             git commit -m "analytics: refresh automated report"
             if git push origin HEAD:main; then
               exit 0
@@ -165,6 +184,10 @@ jobs:
             cat analytics/latest.md >> "$GITHUB_STEP_SUMMARY"
           else
             echo 'Analytics report was not generated.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f analytics/question-discovery.md ]; then
+            printf '\n\n' >> "$GITHUB_STEP_SUMMARY"
+            cat analytics/question-discovery.md >> "$GITHUB_STEP_SUMMARY"
           fi
           if [ -f analytics/search-opportunities.md ]; then
             printf '\n\n' >> "$GITHUB_STEP_SUMMARY"
