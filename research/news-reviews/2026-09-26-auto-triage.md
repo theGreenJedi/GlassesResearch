@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-26T16:44:50.005093+00:00`
+Generated: `2026-09-26T17:17:21.321912+00:00`
 
-- Intake files inspected: **312**
-- Candidates retained in this review window/history: **14417**
+- Intake files inspected: **313**
+- Candidates retained in this review window/history: **14389**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3074
+- `adjacent_radar`: 3057
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 714
-- `rejected_noise`: 10481
+- `needs_editorial_verification`: 712
+- `rejected_noise`: 10471
 - `source_monitor`: 1
-- `source_review`: 38
+- `source_review`: 39
 - `watching`: 90
 
 ## Action queue
@@ -234,7 +234,6 @@ Generated: `2026-09-26T16:44:50.005093+00:00`
 | normal | needs_editorial_verification | direct | [At Meta Connect, the company’s smart glasses were everywhere - TechCrunch](https://news.google.com/rss/articles/CBMimAFBVV95cUxNZjFPMGtJUkQzUUZNVFczdGtycGRFeGN0UnlZMVJVWEdsbEpVaUxUbDVLVUpHZkJaeU9aZzZ2aTFRLW1uUnlvb3ltdXRTXzg2VFJQYmNoVVFPNGxTRjNfUmpMT2hrX1luTjI2QkVKeFUzWE16bHhONXNwLTlaUG41VGFTS2ZwQXRLczBuX1R5bldacXhDM0hUTQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZTloUUpQcEExXzNSSGVLRFJmSXJZYU9mRDJpUEIxaDZXOWRLYzh0bTI5aHZfaXpjR2wxTkVlOGxEVk5TaVBscDVqZEFIU212WXVENFZxZ1VxUzJiREFWMXFEMlFNNXFCUjdvTlZVOGFEb0VKTVJDMjV5UTV4UER6dnRFSVFSTFIwSV9lSzU5V0poWTFBUFp1MHNWVFloTlpLb09xWUxwc1R0YXlUMDJ6cndycWlqdUlEVFVNYXJXM3RHdWhhR1F5di1mbmpjcXV5RUFEaGdIQWpSMzVnTHM1eFZ4OWU?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMitwJBVV95cUxNT0lweE5ENU5XUTRUZ3dnNVd1cWdhejN3OUJ4bHBYWXQ0eDNOMlN3NkwtZXBjaTFSNi14RExxbEc2MXBDT05ham9laEZINWUxcDVaZXdLc0otWjMtRWN5SmpmTGdacGw5Y09vUzVXYmdoTkpOdHZSMlJIMTN6ODZhZElJd2pkS3EyRGNKeS0zWDZpd0pubWdnWEt1QUxOcXFiNmE5VDdYd1ZpbTBpWW80aENhVHBIZWJPY0ZnR25zaEd1UDc3TXloYmxLUlJVWXU1U3pJTEpWTkJZQ1YzdFd0Wk1Cbk5BSVo3OEZ6WkF4SldWQ3NyeEEySU5lbjZhUFQ2eHlTVVBlSzZOakIydUdja2thcWtZZVJ3b0xfcmhpeWNoUmdVMGNOTXJQdXNoUVdtWlZXNS15dw?oc=5) | reachable (200) | research_news_review, research_optics |
-| normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMipgFBVV95cUxQQTgwQ2tHeFpwM0d6UUxmS1psdVNZMEdkLXM1TW81LVkyeEQyd2ZrX1lXTm5FRHFraGV0SnNzM3pmSG8zQ0QxbzFXTl80NHBYVFZjdjUtcExLZzJsakI1SmJ2dmhUR3JlTjcycnpsck95T2hrMExxOWxpa1BNZWxjMHUxdGpYVkhkUkdPakVQLVBNTS1PLWFBeDRmemlCMG1jRlo4VG5B?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMivgJBVV95cUxNMTZqcEpYaF9BMG5ZUFh2NHEzRV9SdmJSeERnc0pxX18xXzJobjNRb3Iyb0FjTFo0dkxjQmVWQXplZ3VhYjlWem5CeG9TQU1EWHBJa3ZTaXJFZGZrd2FDVGRvanJ3NHRXTVhxVkFVdFdTSmoyVkQ0N1RvQXM4THZMRXQ4UEwxRHpEVmZIRmVxVmdzbDJwaFVfdklBeS1OYXptNElNVm40MENObHBHdWF2dC0yWVBtSVNBWW5URElwd2xDblpKbC12YUVDUEw4d3dveFRacVFjOUVxVW1nX1hYMDlYNE1CR2tINjFmT293YW85YTBwalBmVWx1MmxoUmwzaWdrRTJFUDR1X25EOWM3WGQ5amVIOFZaNGYxQXN1RHVTQ1BLa1NYMTZ0aEc2cm51SnBfTnJKTEVjdUNYWmc?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Auganix 11d ago ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Auganix 23d ago TDK Acquires OQmented Assets to Strengthen Smart Glasses Display Business](https://www.auganix.org/ar-news-tdk-acquires-oqmented-assets/) | reachable (200) | research_news_review |
@@ -272,6 +271,7 @@ Generated: `2026-09-26T16:44:50.005093+00:00`
 | normal | needs_editorial_verification | direct | [Meta aposta em óculos inteligentes sem câmera no Connect - Boa Informação](https://news.google.com/rss/articles/CBMimgFBVV95cUxOR0dGbEJnNHhEdVM2eVlxdE91RGtQV3lTZm9MR0RUaEc2M1l2enZSMW1UWVNyMlhzLWdWZWFMb3lkWkkzYlJmTHFHbmJhOU01NmxQQmJXZE9EaUpkZEI5OW5OOUpKMDdXeXR0emY0aFlraUVGOEpRM0MyVmp6MFdueXNvLUl1a2l6S3NUSkdwdmdxMGFaYjJQVDln?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Meta Brings Camera-Free AI Glasses Amid Privacy Concerns - ndtv.com](https://news.google.com/rss/articles/CBMiygFBVV95cUxQLVZ3akhpQmNVUWRYQjMxSnkxUFRURG5ldnVQcTU5Tmhuc294aEdHUkFOV19PNXRYZk96NTBqbGpubkwzTHp0ZWFFbDZYTXQyM0I0OExtaGNLVFBZeWhJNEl0dlhOWFNSRk15bFkwTVhtUzRhcWF6UWFIVGZvWVN2ZVZydW5kbWZnQ1FnclZRQ0plRmJxemxPSU9INER6SFVNdnRyY3o1SFhWaHVVQnIyNkR2SlNBWVpaQ2U2QXgxUWpWZm5tRi1XMWxR0gHKAUFVX3lxTFAtVndqSGlCY1VRZFhCMzFKeTFQVFREbmV2dVBxNTlOaG5zb3hoR0dSQU5XX081dFhmT3o1MGpsam5uTDNMenRlYUVsNlhNdDIzQjQ4TG1oY0tUUFl5aEk0SXR2WE5YU1JGTXlsWTBNWG1TNGFxYXpRYUhUZm9ZU3ZlVnJ1bmRtZmdDUWdyVlFDSmVGYnF6bE9JT0g0RHpIVU12dHJjejVIWFZodVVCcjI2RHZKU0FZWlpDZTZBeDFRalZmbm1GLVcxbFE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta Brings Camera-Free AI Glasses Amid Privacy Concerns - ndtv.com](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNN2h4S0g5OS02WnJHNFNTdDg2RVVmNV9pUnFFOFlQZUdyMHdKVEV2V0ozQnhIcFVOcXIwVk1lNEM2eDhtT1BTeEc0WWhYU0hRMHdFV25qMm11TXZiQTQtSEdBYW5EMlFaRjJxUGJRaENFZ1o4U3FJWHY4a3BQZXEwVzRiSjh3eGpTNU1DWlNNcFpUY1V2NEIxUHE2LVJrcEN3Q2F2SkVORHFsTEJ1VC1HSjYyNGJvbE4zWl9fVWo5LTVnZ9IBygFBVV95cUxQLVZ3akhpQmNVUWRYQjMxSnkxUFRURG5ldnVQcTU5Tmhuc294aEdHUkFOV19PNXRYZk96NTBqbGpubkwzTHp0ZWFFbDZYTXQyM0I0OExtaGNLVFBZeWhJNEl0dlhOWFNSRk15bFkwTVhtUzRhcWF6UWFIVGZvWVN2ZVZydW5kbWZnQ1FnclZRQ0plRmJxemxPSU9INER6SFVNdnRyY3o1SFhWaHVVQnIyNkR2SlNBWVpaQ2U2QXgxUWpWZm5tRi1XMWxR?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Meta Camera-Free AI Smart Glasses Unveiled at Connect Conference to Tackle Global Privacy Backlash - LatestLY](https://news.google.com/rss/articles/CBMi4AFBVV95cUxQaWEwejU1cDlpU1l6WGhCYldOZXVMQXpkSm9uS2poSkJETUU4aGh1N3I1UHlMdWxUbHBtelJJSml4bzQzbzFkVkxnOWNaTXVlU1ppSHJJN2IxR2Z5U2lNZkhyYlBDUExadkVpMkZmM2lFVHhYV2syT2lKcmRLYzItVzd0YjI2T1g3S2pfTjkwR1hXVGg3Z0kwa3Vyand5NFpnbXdSY29MNnM1RG1yM3RCb1RrQnNVOC1IRFR5a1Z5aUxLUnZ1T1VfTXZ4UzFNVTIwbGtMYy1FQ3dfa0o4aHNaS9IB5gFBVV95cUxONzBhdXlQNE1qT293azhGM05hNXlpYlVWcVlhdThvYnZzbVZtTWM4NGtha3B4RXAtTmRLUHhHNlVsX2szTFNzT3FJb1A4eEtWN21BR3Ixa1FzSEViWVdsTVFkY1NHREduVDlWRlUtUVFBYnE1QlRBUXp3UWtOQlliUmdYTEVraVVpRWNlWm9aU2xyb2RhblpadWNUT2d6MlhRaVlPVnQ1RlhrQVB5Z2daMmczMHhuc0dOb3N1NEJvSHdGVWxpNUFBamJnLXU0OGc4RHpYZC1uT002UHpnaTl6RmdmanlGZw?oc=5) | reachable (200) | research_news_review, policy_privacy, deep_research |
 
 ## Meaning of states
 
