@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-26T08:52:42.350113+00:00`
+Generated: `2026-09-26T09:34:10.551592+00:00`
 
-- Intake files inspected: **316**
-- Candidates retained in this review window/history: **14582**
+- Intake files inspected: **314**
+- Candidates retained in this review window/history: **14493**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3119
+- `adjacent_radar`: 3090
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 708
-- `rejected_noise`: 10608
+- `needs_editorial_verification`: 706
+- `rejected_noise`: 10554
 - `source_monitor`: 1
-- `source_review`: 37
+- `source_review`: 33
 - `watching`: 90
 
 ## Action queue
@@ -102,7 +102,6 @@ Generated: `2026-09-26T08:52:42.350113+00:00`
 | high | needs_editorial_verification | direct | [AI Glasses Launch Could Be A Game Changer For EssilorLuxottica (ENXTPA:EL) - simplywall.st](https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVkdTa3d6aHlMbkpDSkg4STRGTXI5bkFlZVJ6RWFGSWpUT1E3MURCQTVIUXhyM1RiZW9fV0N6RkxWVzlQTUVlMjRuZ2IzY0JJejl2aU83VTUwTjVnc2FpeGdzb29ZSGZQeHJweXRVaWVYMTRaX2Q1aC1sNXp5WFNSM2JwaWZENW53TWtQRUh6Z0Jad2tTQlBqM0JreG9VRzhrd2YzaDZqMEFBUElpZWxRNWlJS0huaW9UNVRKbVpYZTVNSUN4V1c1dENoa3ZBNjJmS2tJdGJJVkhrOUJKV2ttU2wwd2JUbEtJWDFj0gHwAUFVX3lxTE1WbWFSeTAtajY4Z0RTVGFFdTFDUktOZDRKbkd5T3VTbFkySUsza2hWc1FBSjFZdWFTQUVlc0gyYjdKbi1vWEZQZXRoS1NEY1pNa2NqWnlrcDc1X3JuazNWZHdwcVIyeFJnS1NMNVlmWFZNWDBBRnlORFhhdjRxbjRRTDBJaFJZN0NVMEI4T09VOXZ0ZDJybVBMSXJDNTNDVm5DN2JqLXRWUG45dXgtYWs1bXhKZjNjd0VSZElNUWkxanhLa1JMXzNjRHZZdFNZN2R0cUYxZHFIZXgtUVBra3dXQ3pIQjZiYTFhQ2txdVV6OQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - Daily Hive](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1PQU5LUVNiTFd5VXFCcm9ncUpJQjYwWVRoTTRWZTQxdXY4dkhZOHdQX082cFFpbWI4NEJJYXQ3eUN5NFYtT1VrYk5MNVQ4S0V3ZV95cWFndVV6Q29yd1lHSS00bUdiWDQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - dailyhive.com](https://news.google.com/rss/articles/CBMiakFVX3lxTE5yUHBUa3lqY1FfaTBoTEJncnYtdXhNelVCbHdFZUFIV3UxZGRrV21JeksyZW9oeGtRQjZPX1NRcE1iS1RuelZCamFqd21DNmh0MTBjdjNuemNSZmNSYXNtb0ZJVE1TZG50UkE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Google Samsung Smart Glasses First AI Model Launch - en.cryptonomist.ch](https://news.google.com/rss/articles/CBMidkFVX3lxTFBkN2VTVTBQZTREcTRVbTdVVE5nYjI0eTIycl9sSWlWNmhBdFdxaGJTUGhIQzdYRTFXanJObkJzRXllZnlBTDVsbVdKSkY4RDgxQWZoN0tZUEEwc3ZRN0FBTHE3OHhVMUs5WFo3Q1lMYzV4alYtTVE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Health Canada warns against use of AI smart glasses, issues immediate recall - thenews.com.pk](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMHhXN2E3NjZMOTBsajRrOHpOTDl2MUY4S1ktLU9XNDZBZjJ1Nks5NnFoUkJ3cFhYeGhQYXhXbjZLYlRJR3R5NW4tX19qSkVZeEIzRTBzbklIaEFxMHdxaFROcnk3aS0zY3dwRm9lZmpRMTNMQldlak1zLU8tdWRaZmtpNnpRcUROQ0poWFNaRE1Cb1ZnTlZVUmRHQmh0MkpiLVRZREJqLUVoTXdZYTZLTFZ1dC1VLS0x0gG0AUFVX3lxTE1OaFB0RXJWUkxJaEZUVnRnRGthMEFlY2lsN2ZxZktjamtmSTA3UkVGZTcxdUxtLW0tbG9JUjlac0V6TWVLYzJUSzlOeS1FaGdqSTFfR1ZUVV82VDVkZVgwZVh0Mm1OQ2NJQXpCWDFuX01hOUNCcmwtNEFGVFNDMi1TNUVnbHB0OUMwOEpxOHlsS3otSy1VMjZsU3FuVWNqQ0J5dlA2NjhMZHJlQWw3LVpPQ0tvVA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [HTC Vive Eagle AI Smart Glasses Launch In Australia - channelnews.com.au](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZ3FUbUM4SnpWbFRveTUzcDJpLXZoQWpXdzd5OHZYNTg3cHpwcTFoeXlwQ3hfWXFMbHlVaGQ0LTA4bF9ld3RfbDItXzJHc0NGVTVENGYyejVuend3bnpCR3lJVUxkNGljZGRNdW5KVUREWFpjNlpWU3NZWWxTQzExRWoxUzhNeEZtYktz?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta (NASDAQ: META) To Launch Camera-Free Smart Glasses After "Pervert Glasses" Controversy - foreignpolicyjournal.com](https://news.google.com/rss/articles/CBMi0AFBVV95cUxNazJUcnYwQnJZbUd0RTFDbTFZT1pKQi1XM0NTQk8tdld0djNIb2pocGN1Zm42dzlndmpMZElNcUhuZm9KT0VsVmlhSEVfblpjVXdHbnBqLWZmZll1SlpuTS1EOWFHaUhrZW03T2xCaXFpd1BabzVXdmZzR2p1Z3RNOXdaemZPaTFSR1p5STQxcGN5RzUxOEVKc08wa1g2UXlrZFlwaEdoZEVET1BTbnVHUEJxQTdJZ3hlUTh5VVhzUGtaZ3VMa3U1ZTkzSjNYN1Qy?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -216,6 +215,8 @@ Generated: `2026-09-26T08:52:42.350113+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses with Prescription \| Smart Glasses with Rx Lenses ...](https://eydology.com/collections/ai-smart-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI 안경으로 성관계 몰카·시험 부정행위…규제는 뒷북 - imaeil.com](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5iTW9GODZHY2JUa0RvdEhjZUcwVnAzaGFwemphSHdfUnhWVHcxMDVwd0xJZndPa2NYZmFhME9HWjBXb25IWkN2RWx0WGd6TmNvZkcxX0k0Vl9kSElkd0FjRHlR?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI搭載メガネ 新型スマートグラス公開 リアルタイムで翻訳し字幕表示 最新の経済ニュース【随時更新】 - ABEMA](https://news.google.com/rss/articles/CBMiW0FVX3lxTE44UWRYWlRtM0oybS1QbUQzcFRPaldOWlRXRmhOX2tQdTBuVThKNGp5aW1uWEVuT1FJREtIMkJvcVVjREZwLTVxMC1lTEp1b1VwTVp2RGNYX3Y0MEk?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ30gHfAUFVX3lxTE1KV1c3ZzZwVk90MjdZVDZ6Zi1tN1UtTm04UnhvMjFPT0dzcTdHakNzaXAtdElUR1dFUUdWLXA2a25Ba0ZMVjVndll1c3M4WUk3bE95T18xQ2ktWno5NnB4RzBBWkFZdW5wUFBMZXQtai15TDdaR0tBSDkyTmkybUZhOEhKaDdraXlWMjN6dEtGU2VuTXJuSWpmcWgwMWJ6MVlNYXZXMEtKek1mbDQ1amJqa1R6RE1tV0VUaEh4cU1XN3RMUDNuR1V0aFVadXRjMlI3WVF2dlVNbW9qQlN0dnc?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -271,7 +272,6 @@ Generated: `2026-09-26T08:52:42.350113+00:00`
 | normal | needs_editorial_verification | direct | [Meta Has New, No-Camera Smart Glasses. Does Anyone Care? - VICE](https://news.google.com/rss/articles/CBMibkFVX3lxTE5vcFJYaTVhTkxNNkJ6WEMyNkcyMXZFb1k1cFpRbTk1SFNZaFd2S0FBTnFqQmwySXJFX3gzejE1VTJ2b3llQlRadjV4NnYzWVlIREl5QkVLVVJrNmMwY0tRd3hZWjFxOURZUDhBeDlR?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Meta has unveiled new AI-powered hardware, including camera-free Ray-Ban Meta Audio glasses, a $1,299 VR device and the tiny Meta Charm. But](https://news.google.com/rss/articles/CBMirAFBVV95cUxOTlBIbzQ4Zm5kZmhlZHRxMHM4blVfdENTZURCbk1hRkpqRmlzejgyNF9CNHJDODZkeE9xS1NqOWt0TkxRZi1pZlllRUY3WVlmMHliU05WSlVURHZWZkszbFFYY0ZrLTUwRUZ0NlZ4SHNzSkk4VlZVRmI4Rlpfa0hrdW51b09vWEpuSk5fbExsY3NPUzBza1QzUkFWOGp5NzFmdVFJS3ZuMVBFUktI?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Malay Mail](https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbHlLNEN1bHVRZ0hoejRDSHFyLXZSdElFbEV3a0UxenJ2dlEtOEhndURPeG9RM2xJd29lU2xGU0hKOWE4TVRkVkpKV2tvWklLZXpFaV9POGJUb05jbmVaTHVrSFpUYXhVYV9sWl9FaFJGRGpzNlpzOXlBTFRrWGZQX1VERGw3SzFNV3dlUV91elVWZVVfV3hMVkRHQWRSVEsteFZxWDJiZ0g3SURUNUptelNueHpYdldwTmtxTGVXUmZ5anBNekRFRXRCTHBjSmdSdjAwMUVBa1NXODJMT0xtWjJNNlFCOTNT0gHuAUFVX3lxTFBuVU96Q2NxX1lndTJ1RFJQaTFlRE9pb0NIN3A4LXpfR2NVVm15VE1CVEkxdnpTLXZ5UGxaMzVmRkl3VlQ0MTliY1VkSjVMQUs4QjZsMkpXbjVIRDNsLTI5SlI0NDA4XzZuWFZxNTdiLWtWTzVhb1dZUlBNQmhBNGpoNnlHYWJnUF9UanZWNmpvb1E4ZGFMbGNXalZ5Zk4yc3lZTGdPSkZUNmJ6U3lvYkFjeXd0UHRNTXNCRlZpM1hteWJ0c3RXcmdxLW9xX3JPbDdmMGpuVzRaNHZDWmZWc01lanB5R3BjR25Wdk1FUVE?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Newswav](https://news.google.com/rss/articles/CBMitwFBVV95cUxONVBIMWxsUDJhRWp3aUlkZGdzUks4Q044dWIzQktmd1JfdGFPMFR4MUx0cERQQXZ1ZTFjeklRQjl2c180LW9IWWhWa1lwOUhmbUJuYktNN09DNjRnaGRRMnJJOXlEVnZjdk1Vby1Za1FoQ0hoVnpzcXVxWktLcU9oNV9KSk9rYUVMSDBWbmxZRklXMVB0b0xsZUNvOTUtRC1vbDhJVkN2ay1iXzdLbHdCTWlKSjE3XzQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
