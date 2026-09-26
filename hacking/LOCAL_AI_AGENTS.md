@@ -112,3 +112,17 @@ GlassesResearch does not assume that local AI is always superior to cloud AI. Cl
 The most resilient architecture is one in which the glasses remain useful as hardware even when the original AI service, companion application, or business model changes.
 
 See also: [Research & News](../docs/RESEARCH_NEWS.md) and [Developer Resources and Vendor Independence](README.md).
+
+## On-frame multimodal inference: PrismML Bonsai on AR1
+
+September 2026 adds another architecture to the map. PrismML demonstrated a roughly 2B-parameter vision-language model running locally on a Snapdragon AR1 Gen 1 smart-glasses platform. The published configuration uses a 1.7B 1-bit language model plus a 0.3B 4-bit vision encoder. Qualcomm-attributed testing reports 0.43 GB of LLM-weight memory and 15.36 tokens/s under the stated test configuration.
+
+Those figures are vendor/partner benchmarks rather than GlassesResearch measurements, and no commercial Bonsai glasses have been announced. The architectural implication is nevertheless important: the glasses themselves can plausibly become one rung of the inference hierarchy rather than only a sensor/interface endpoint.
+
+A more complete hierarchy is therefore:
+
+**on-frame → phone/nearby host → owner-controlled larger compute → optional external cloud**
+
+The router should still choose the smallest layer that meets the task's quality, latency, privacy, thermal and battery requirements.
+
+Evidence and benchmark conditions: [PrismML Bonsai on Snapdragon AR1](../research/PRISMML_BONSAI_AR1_LOCAL_VLM_2026_09_25.md).
