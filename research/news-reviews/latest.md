@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-26T07:45:33.679183+00:00`
+Generated: `2026-09-26T07:51:20.241549+00:00`
 
-- Intake files inspected: **314**
-- Candidates retained in this review window/history: **14496**
+- Intake files inspected: **316**
+- Candidates retained in this review window/history: **14580**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3098
+- `adjacent_radar`: 3118
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 707
-- `rejected_noise`: 10545
+- `needs_editorial_verification`: 704
+- `rejected_noise`: 10608
 - `source_monitor`: 1
-- `source_review`: 35
+- `source_review`: 39
 - `watching`: 91
 
 ## Action queue
@@ -175,6 +175,7 @@ Generated: `2026-09-26T07:45:33.679183+00:00`
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Gen 3 or Audio? How I’m deciding amid the growing ‘creep’ factor - ZDNET](https://news.google.com/rss/articles/CBMieEFVX3lxTE1MWllpS25WSmhSSXJwYWVveF9SSU5CcUlHd0k1WkduVWJ6Ul9ZWFcwR1VpRVJpckZGY3IyNXFTZll0SHVwSlRiZUJPeV9CSHAxMExnejJEWHhmY3MyX2NwTXd3ZUYwREJCLUJPeG5uM08yTjhseWlUZw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Gen 3 vs. Gen 2: It’s better, but I wouldn’t rush to upgrade - Digital Trends](https://news.google.com/rss/articles/CBMirgFBVV95cUxNXzN1eENFRWllMHdtV2N0REhzaTJzWWRLMUdSSmlDZnFEWUs0dFJwd3oxWTFxYmhrOEdRU0RjaktaYkxaV3VMNkVOTEROcG1RaVhXbE8wQjNKdGFQWFdqOWlnUDdQQW03UFk5UUdIMjhnNDJOWGx3eWxOZ2RHRkZ6MmJPMDBIOEt2N091MmtadWhhNGVSU1NxNjR5eVJwNjJSRS1WN1IxS04yLTV5S0E?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta lança nova geração de óculos com IA e o icônico Aviator - Estado de Minas](https://news.google.com/rss/articles/CBMivwFBVV95cUxPMUt4aDZaYnducW9lSmp2OGRNZXVmdTlkNkhmMmpMdkNWbkxjNExzak1NOVRBSkZNdEZfdm5hYVZtS3dmVjZtVm9PUGQzYWh6c0l1dVJOcFZrMnBVTmEzVGRrYUpMQ1BLZE8zM24zRjBVRTNPdkh0MmppZUZVMTM5ZXJKbE1hR25pXy1vVWo4SllTOGhkVUhRbllkUlpPQnZBdUxUTmduNnc0UjloNWo2dDZMZjNYNFZJaUx2WFNGUdIBxAFBVV95cUxNTWlubjZwcFBHMDBvVUhRNENwOEVYUHFlSzlQWVRwNWdEdFlyZHJSMWJVam1rcjRxM0N1T3E2LW9jQTMxT1NvbXVha3dwYmY5NmFJU3lJRExmN2tFaDVLVTkyU3pYdzZ6ZXQzVFpmZmRKd1lTYlFmZ1ZtT0JKZXhtNXhOT2lZVFYyWFZBeGdGQnlWRm1TMkRYOUQyeEtOUXc3VmhxdlkxczZOSExpQTFRRmZpd2hQX0toWWRYUlZsMVN6WGVO?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Ray-Ban Meta Philippines Launch Confirmed at Meta Connect - Gadget Pilipinas](https://news.google.com/rss/articles/CBMifEFVX3lxTE9YWmJreE9tWEZXTm1hTGExZE9xWkNkUm05NHdOTjZjMXgtcS0wTEZUTmV0YklpNTJ2czg2dU1IWXJUS2g3TWZFd3Q3eDBPSWVtN2FIeVpheHFncnNGTW1xNFFxYjllZjc4SE12M2tYYl85bVpDa3JHR0xQcHM?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Unveils Largest Smart Eyewear Collection with Gen 3 Launch - Indian Retailer](https://news.google.com/rss/articles/CBMiygFBVV95cUxPOEtnOEN2TTVybV95emNMZkRtVzJpc1RBTm4zSWNTOV8zNVZnLXRjZEVGQ3Z1M2xiWDFUNU8wRDg4bnJtZUFyanhWSUlaWGdkLWxFSUR2eTBPTU5scUdYbXhKTzB2eEdGMERldlNlbmRNYzl0dzFUU0RPTW9KeGxDRWJiQW9tcDdfanhEZ3UtQzZ6VVFMVTVYeUZlVXFiQWduSE9tLWxqWFFCbmU5UkYwRllZTnFrbzhtOWJsc3NNQk9TSEhYMFd0Z0FR?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta vs Nuance Audio Plus: Which Smart Glasses Are Better for Hearing? - techrepublic.com](https://news.google.com/rss/articles/CBMiggFBVV95cUxPTmJOcWJSUUxXSWR0Y1NSYXdlcjdhVGhRNEpjZ2JuWUdDQXVweDZuRUFWZkxLYkV1T3RIeEt6YzdWUE1HbzJuNXQyNHFDY2hUVzdvcW1wY09nODlaV2pMR1BidU5xTkdsOV9kd2NLVURMZUtTX092WmJvOXJhc294V1dn?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [RECALL: Smart glasses sold in Canada could overheat - insauga.com](https://news.google.com/rss/articles/CBMigAFBVV95cUxNRXpOeTdhdW9ndnFMVzVHTko0bm5IaVl2VXJsU2xwdUIwMm5YMUF5VUEyM0JhOEJHY3FSeERTbm9tRVQ5UXliWHdrMnhRX3NtUmg0UUgtVG1ZX2ZGU3l1bGhHelRoUXBWSzZDYU9iV0RaOEdhclFOVlNMLWwzYWotOQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,7 +272,6 @@ Generated: `2026-09-26T07:45:33.679183+00:00`
 | normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Malay Mail](https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbHlLNEN1bHVRZ0hoejRDSHFyLXZSdElFbEV3a0UxenJ2dlEtOEhndURPeG9RM2xJd29lU2xGU0hKOWE4TVRkVkpKV2tvWklLZXpFaV9POGJUb05jbmVaTHVrSFpUYXhVYV9sWl9FaFJGRGpzNlpzOXlBTFRrWGZQX1VERGw3SzFNV3dlUV91elVWZVVfV3hMVkRHQWRSVEsteFZxWDJiZ0g3SURUNUptelNueHpYdldwTmtxTGVXUmZ5anBNekRFRXRCTHBjSmdSdjAwMUVBa1NXODJMT0xtWjJNNlFCOTNT0gHuAUFVX3lxTFBuVU96Q2NxX1lndTJ1RFJQaTFlRE9pb0NIN3A4LXpfR2NVVm15VE1CVEkxdnpTLXZ5UGxaMzVmRkl3VlQ0MTliY1VkSjVMQUs4QjZsMkpXbjVIRDNsLTI5SlI0NDA4XzZuWFZxNTdiLWtWTzVhb1dZUlBNQmhBNGpoNnlHYWJnUF9UanZWNmpvb1E4ZGFMbGNXalZ5Zk4yc3lZTGdPSkZUNmJ6U3lvYkFjeXd0UHRNTXNCRlZpM1hteWJ0c3RXcmdxLW9xX3JPbDdmMGpuVzRaNHZDWmZWc01lanB5R3BjR25Wdk1FUVE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Newswav](https://news.google.com/rss/articles/CBMitwFBVV95cUxONVBIMWxsUDJhRWp3aUlkZGdzUks4Q044dWIzQktmd1JfdGFPMFR4MUx0cERQQXZ1ZTFjeklRQjl2c180LW9IWWhWa1lwOUhmbUJuYktNN09DNjRnaGRRMnJJOXlEVnZjdk1Vby1Za1FoQ0hoVnpzcXVxWktLcU9oNV9KSk9rYUVMSDBWbmxZRklXMVB0b0xsZUNvOTUtRC1vbDhJVkN2ay1iXzdLbHdCTWlKSjE3XzQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta Just Got a Big New Partner for Its AI Glasses Push - Yahoo Finance](https://news.google.com/rss/articles/CBMikwFBVV95cUxQZUE3VUEwWHAwSDQxLVo4dWZ5ZC1jSi16U2J2QVhKMDU5R0NPRENqUHVadEZ5eEVadklFUUMyWUIxQWN5VWdWYnBHNENQenhDbk5nYmpqU1VxNHoxdTB1bzBMcTVHbWJCOWRXdXBpc3M0ZXdDZU4xRy0wWmxvYUVVNF9VLWNBM25oNFZlR28xLVhPSEU?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Meta lanza unas gafas inteligentes sin cámara. - Vietnam.vn](https://news.google.com/rss/articles/CBMidEFVX3lxTE8xRzJLanJ1cE8zbFc0Y2E4M25nVDVnTExLT1FSSlE1NHROcE5HbFc4eUszY2FfdXAxTmFlYkJON3U2VUhKMmh3dXhiazNGb1dtNXZSckZRM2I3MHNwZ2d5UW91ZGx4RGp2eHJDRW83UTZqUzd1?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
