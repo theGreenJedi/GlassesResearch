@@ -462,7 +462,7 @@ These rows were already authorized in dated reconciliation packets. This section
 
 | ID | Maker | Model | Era | State | Type | Access | Evidence / links |
 |---|---|---:|---:|---|---|---|---|
-| GLS-0250 | Sender / Huizhou JTLlink Technology | G600Pro | 2026 | current/marketplace | camera/audio AI glasses | OEM/ODM marketplace | regulatory + commercial; [reconciliation](THE_LIST_RECONCILIATION_2026-09-27_G600PRO.md); [lineage](../lineages/JTLLINK_G600PRO.md); [FCC test report](https://device.report/m/c17704d2ba8dd1f6287b235cf907a530475c9791ae9e68700d366468c4c10379.pdf); [supplier listing](https://www.alibaba.com/product-detail/2026-New-Sender-AI-Smart-Camera_1601726521408.html) |
+| GLS-0250 | Sender / Huizhou JTLlink Technology | G600Pro | 2026 | current/marketplace | camera/audio AI glasses | OEM/ODM marketplace | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-27_G600PRO.md); [source](https://device.report/m/c17704d2ba8dd1f6287b235cf907a530475c9791ae9e68700d366468c4c10379.pdf) |
 
 ## Google Glass is in scope
 
