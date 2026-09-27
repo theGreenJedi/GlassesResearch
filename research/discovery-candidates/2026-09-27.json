@@ -1,39 +1,38 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-27T19:38:48.142809+00:00",
-  "candidate_count": 53,
-  "classifier_irrelevant_count": 42,
+  "discovered_utc": "2026-09-27T22:19:17.040431+00:00",
+  "candidate_count": 79,
+  "classifier_irrelevant_count": 41,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 10,
-    "broad_web": 33,
-    "developer": 10,
-    "manufacturer_catalog": 1
+    "adjacent": 38,
+    "broad_web": 31,
+    "developer": 10
   },
   "relationship_counts": {
-    "direct": 1,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 10,
+    "adjacent": 38,
     "speculative": 0,
-    "irrelevant": 42
+    "irrelevant": 41
   },
   "type_counts": {
-    "model": 1,
-    "review": 7,
-    "video": 1,
-    "news": 28,
-    "research": 1,
-    "tool": 13,
+    "model": 3,
+    "video": 2,
+    "news": 52,
+    "tool": 16,
     "sdk": 10,
-    "retail": 3,
-    "community": 4
+    "policy": 2,
+    "retail": 7,
+    "community": 3
   },
   "routing_counts": {
-    "adjacent_radar": 10,
-    "development_hacking": 1,
-    "reject_noise": 42,
-    "report_card_evidence": 6,
-    "research_news_review": 11
+    "adjacent_radar": 38,
+    "community_evidence_review": 1,
+    "development_hacking": 3,
+    "model_catalog_review": 1,
+    "reject_noise": 41,
+    "research_news_review": 38
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -44,58 +43,334 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
   "candidates": [
     {
-      "id": "e150f01ddedb9eb1",
-      "title": "AR Glasses - RayNeo",
-      "url": "https://www.rayneo.com/collections/ar-glasses",
-      "summary": "AR Glasses Turn your phone, laptop, and console into a personal big-screen experience with RayNeo AR glasses, featuring vivid displays, smooth gaming, spatial sound, eye-comfort technologies, and lightweight designs for movies, travel, focused work, and entertainment.",
-      "discovery_channel": "broad_web+manufacturer_catalog",
-      "query": "AR glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "direct",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, rayneo",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1e4becdcb2682654",
-      "title": "Bluehost Web Hosting - Review 2026 - PCMag Australia",
-      "url": "https://au.pcmag.com/web-hosting/52256/bluehost-web-hosting",
-      "summary": "Bluehost is a feature-rich web host that has numerous e-commerce add-ons and a WordPress-enhancing AI tool that gives the popular CMS even more flexibility.",
+      "id": "1ab804a04b486749",
+      "title": "How to Return a Defective Service Part to Dell After Receiving a ...",
+      "url": "https://www.dell.com/support/kbdoc/en-us/000178919/returning-service-parts-to-dell-us-only",
+      "summary": "Do one of the following: Place the package in a residential mailbox. Drop the package in a USPS mailbox. Take the package to a Post Office. Schedule a pickup with USPS. Drop the package at a FedEx Service Station or an authorized FedEx shipping site. Step 6. Keep your tracking record Keep a record of your return waybill number.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable eye tracking",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "review"
+        "shipping"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "review",
-        "tool"
+        "model"
       ],
-      "primary_type": "review",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0fbb30daa7f4732b",
+      "title": "2024 Draft Tracker - MLB.com",
+      "url": "https://www.mlb.com/draft/tracker/2024",
+      "summary": "The official draft tracker of the Major League Baseball draft including ranking, schools, and draft order.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "beab5ab4666e1609",
+      "title": "2024 MLB Draft News, Dates, Tracker and Prospects | MLB.com",
+      "url": "https://www.mlb.com/draft/2024",
+      "summary": "The 2024 MLB First-Year Player Draft will take place in July, in Arlington, Texas,, in conjunction with the 2024 MLB All-Star Game on July 16.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2cbe70b86e4ed6bc",
+      "title": "2024 MLB Standings and Records: Regular Season | MLB.com",
+      "url": "https://www.mlb.com/standings/2024",
+      "summary": "The official standings for Major League Baseball including division and league standings for regular season, wild card, and playoffs.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "449a24871dd4b903",
+      "title": "2026 MLB Player Hitting Stat Leaders | MLB.com",
+      "url": "https://www.mlb.com/stats/",
+      "summary": "The official source for player hitting stats, MLB home run leaders, batting average, OPS and stat leaders",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "309fafd0863a7acc",
+      "title": "2026 MLB Standings and Records: Wild Card | MLB.com",
+      "url": "https://www.mlb.com/standings/wild-card/mlb",
+      "summary": "The official standings for Major League Baseball including division and league standings for regular season, wild card, and playoffs.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b67e61709713c97",
+      "title": "CCC - Starbucks Coffee Company",
+      "url": "https://customerservice.starbucks.com/c/ivory-coast",
+      "summary": "CCC - Starbucks Coffee Company ... CCC",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d425000d3dc8a62",
+      "title": "Daily Themed Crossword Halloween Minis Level 7 Answers",
+      "url": "https://dailythemedcrosswordanswers.com/daily-themed-crossword-halloween-minis-level-7-answers/",
+      "summary": "Every clue and answer for Halloween Minis Level 7 in Daily Themed Crossword, listed in game order with letter counts.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3ea7ad3e08ef6a60",
+      "title": "FedEx Freight | - What is FedEx Multimodal? | Page 2 | Truckingboards ...",
+      "url": "https://www.truckingboards.com/bb/threads/what-is-fedex-multimodal.2514/page-2",
+      "summary": "After we are back to 10 hours driving, it will save FEDEX from hiring ALL the drivers needed to convert our system back to 10 hours linehaul driving time. Our drivers can only drive 10 hours a day so, we need to hire a bunch more Road drivers to cover the new and reconfigured linehaul system that is now built on 11 hours driving time.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2f232f0dda0ffc73",
+      "title": "FedEx 追跡詐欺とは — 削除する方法 - SensorsTechForum.com",
+      "url": "https://sensorstechforum.com/ja/fedex-tracking-scam/",
+      "summary": "The FedEx Tracking Scam is a malware infection that is being spread on the Internet by unknown computer hackers.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "67e03bd8f8043f01",
+      "title": "How many hours different is California time zone than Denver ... - Answers",
+      "url": "https://www.answers.com/natural-sciences/How_many_hours_different_is_California_time_zone_than_Denver_time_zone",
+      "summary": "Colorado (MST/MDT, UTC-7/UTC-6) is one hour ahead of California (PST/PDT, UTC-8/UTC-7).",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4ecabbe5ab9de8d",
+      "title": "Hvad er FedEx-sporingsfidus - Sådan fjerner du det",
+      "url": "https://sensorstechforum.com/da/fedex-tracking-scam/",
+      "summary": "Hvad er FedEx Tracking scam? Denne artikel er blevet oprettet for at hjælpe dig med at forstå, hvad der er den FedEx Tracking fidus fidus side og hvad er ”virus” app der forårsager sådanne sider skal vises, og hvordan man kan fjerne det helt.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
         "development_hacking",
         "adjacent_radar"
       ],
@@ -105,28 +380,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "31b5aed685889e1a",
-      "title": "GoDaddy Web Hosting - Review 2023 - PCMag Middle East",
-      "url": "https://me.pcmag.com/en/web-hosting/13318/godaddy-web-hosting",
-      "summary": "The Bottom Line GoDaddy is a robust web hosting service with good customer service and well-integrated Microsoft Office email features.",
+      "id": "922ff7f65c56be5f",
+      "title": "Is AZ Pacific time - Answers",
+      "url": "https://www.answers.com/natural-sciences/Is_AZ_Pacific_time",
+      "summary": "Arizona is never on Pacific time. Arizona is in the Mountain Time Zone, and (except the Navajo Nation in the northeast corner of the state) does not observe Daylight Saving Time, and therefore ...",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "review"
+        "news"
       ],
-      "primary_type": "review",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -135,28 +407,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1e4c319f23071254",
-      "title": "HostGator Web Hosting - Review 2026 - PCMag UK",
-      "url": "https://uk.pcmag.com/web-hosting/880/hostgator-web-hosting",
-      "summary": "HostGator is a terrific web hosting service that offers excellent shared plans, helpful customer service, and powerful tools for bloggers and small businesses.",
+      "id": "bc795b5f585e876a",
+      "title": "Is California in the same time zone as Miami? - Answers",
+      "url": "https://www.answers.com/travel-destinations/Is_California_in_the_same_time_zone_as_Miami",
+      "summary": "California is in the Pacific Time Zone while Miami and the rest of Florida is in the Easter Time Zone. When it is 3 PM in California, is it 6 PM in Miami.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "review"
+        "news"
       ],
-      "primary_type": "review",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -165,28 +434,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0b7d86384b051b8d",
-      "title": "Ionos Web Hosting - Review 2026 - PCMag UK",
-      "url": "https://uk.pcmag.com/web-hosting/8478/11-ionos-web-hosting",
-      "summary": "The web host, which caters to small and large hosting needs, offers a wide array of enticing packages, including shared, virtual private server (VPS), WordPress, and dedicated hosting.",
+      "id": "cad76a2b724b1106",
+      "title": "Justin Verlander",
+      "url": "https://www.baseball-reference.com/players/v/verlaju01.shtml",
+      "summary": "Check out the latest Stats, Height, Weight, Position, Rookie Status & More of Justin Verlander. Get info about his position, age, height, weight, draft status, bats, throws, school and more on Baseball-reference.com",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "review"
+        "news"
       ],
-      "primary_type": "review",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -195,10 +461,172 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d0ed3a0420b377d9",
-      "title": "The 6 Best Free Web Hosting Services for Tight Budgets",
-      "url": "https://www.pcmag.com/picks/the-best-free-web-hosting-services-for-tight-budgets",
-      "summary": "That’s especially important in the free web hosting realm, as even the best, free hosts have limited and underpowered plans compared to what's on offer from basic, paid services.",
+      "id": "eba262c67a469651",
+      "title": "Justin Verlander - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Justin_Verlander",
+      "summary": "Justin Brooks Verlander (/ ˈvɜːrlændər / VUR-land-ər; born February 20, 1983) is an American professional baseball pitcher who played 21 seasons in Major League Baseball (MLB) for the Detroit Tigers, Houston Astros, New York Mets, and San Francisco Giants.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "75ff9511e34f5eb0",
+      "title": "Justin Verlander makes final MLB start with Tigers",
+      "url": "https://www.mlb.com/news/justin-verlander-final-mlb-start",
+      "summary": "DETROIT -- Years from now, when folks mention Vintage Verlander, this is what they’ll mean. For days, the Tigers had joked about sending Justin Verlander out like Billy Chapel. Never mind that the latter is a fictional character, an aging, once-great Tigers pitcher portrayed by Kevin Costner in the 1999",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e1327598df3b8ad7",
+      "title": "Justin Verlander retirement: Age, wife Kate Upton, children, net worth ...",
+      "url": "https://www.hindustantimes.com/sports/us-sports/justin-verlander-retirement-age-wife-kate-upton-children-net-worth-injury-update-career-stats-and-more-101790444811110.html",
+      "summary": "As Justin Verlander gears up for his final MLB start, here's a look at his age, his family with Kate Upton, his net worth and his historic career.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d12741e557ca661",
+      "title": "Justin Verlander shares retirement moment with Kate Upton",
+      "url": "https://nypost.com/2026/09/26/sports/justin-verlander-shares-retirement-moment-with-kate-upton/",
+      "summary": "Justin Verlander is getting a sendoff befitting a three-time Cy Young Award winner, and his family’s inclusion has only made it more emotional. Verlander, 43, was honored on the field at ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d91476eb2b12d5db",
+      "title": "Justin Verlander Stats, Age, Position, Height, Weight, Fantasy & News",
+      "url": "https://www.mlb.com/player/justin-verlander-434378",
+      "summary": "Led all American League pitchers with 24 wins, a 2.40 ERA and 250 strikeouts during the 2011 season to become just the second Tigers pitcher to ever lead all three categories in a single season -- Hal Newhouser accomplished the feat for the Tigers in 1945...he is the first pitcher to lead the league in all three categories since Minnesota's Johan Santana did so in 2006...Selected the American League Most Valuable Player and he was unanimously named the American League Cy Young Award winner -- became the seventh Tigers player to win the Most Valuable Player Award, joining Mickey Cochrane (1934), Hank Greenberg (1935, 1940), Charlie Gehringer (1937), Hal Newhouser (1944, 1945), Denny McLain (1968) and Guillermo Hernandez (1984)...became the third pitcher in Tigers history to win the Cy Young Award, joining McLain (1968, 1969) and Hernandez (1984)...became the 10th pitcher in major league history to win both the Most Valuable Player and Cy Young Awards during the same season...joined Don Newcombe (1956), Sandy Koufax",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2ae2becce87016ec",
+      "title": "Justin Verlander's final MLB start: Stats, highlights from outing",
+      "url": "https://www.usatoday.com/story/sports/mlb/tigers/2026/09/26/justin-verlander-final-start-tigers-pirates-mlb-retirement--live/91955141007/",
+      "summary": "See how Justin Verlander fared in the final start of his Hall of Fame career, including stats, highlights and reaction from Tigers vs. Pirates.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "378dcf32df0cf937",
+      "title": "MLB Awards: MVP, Cy Young, Rookie of the Year, Gold Glove | MLB.com",
+      "url": "https://www.mlb.com/awards/2024",
+      "summary": "MLB Awards All-MLB Team The annual All-MLB Team honored the best at each position from the 2024 season, and the Padres led the way with four selections, while the Royals, Astros and Dodgers each had three. Meanwhile, the Dodgers, Yankees and Guardians were the only clubs with multiple First Team honorees.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -222,38 +650,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bb82e0f5585347cc",
-      "title": "The Best Cheap Web Hosting Services for 2026 - PCMag",
-      "url": "https://www.pcmag.com/picks/the-best-cheap-web-hosting-services",
-      "summary": "Building a website on a tight budget? The top cheap web hosting services we've tested provide all the features you need for $10 per month or less.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f13c51395c6381a9",
-      "title": "The Best Reseller Web Hosting Services for 2026",
-      "url": "https://ca.pcmag.com/web-hosting/388/the-best-reseller-web-hosting-services",
-      "summary": "Reselling is an easy way to enter the web hosting business without owning and operating your own servers. These top-rated services provide the useful features you need to get started making money online.",
+      "id": "998ed0e3bb01cedd",
+      "title": "MLB Scores: Scoreboard, Results and Highlights",
+      "url": "https://www.mlb.com/scores",
+      "summary": "Get up-to-date MLB scores from today’s games, as well as scores from all the 2026 MLB season games.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -277,38 +677,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1cd9ccc806038f0e",
-      "title": "The Best Web Hosting Services We've Tested for 2026",
-      "url": "https://www.pcmag.com/picks/the-best-web-hosting-services",
-      "summary": "Selecting the right web host is essential for online success. The best web hosting services we've tested cater to a wide range of users, from small bloggers to big businesses, and everyone in between.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b5583796958e92b6",
-      "title": "The Best Website Builders for 2026",
-      "url": "https://ca.pcmag.com/web-hosting/229/the-best-website-builders",
-      "summary": "The best website builders let you carefully craft online pages with more design flexibility than anything you'll find on social media, though with fewer tools than traditional web hosting services. We've been testing website builders for a decade, regularly updating our reviews as companies add and remove features.",
+      "id": "46d340885c9746db",
+      "title": "MLB World Series: Historical winners and highlights | MLB.com",
+      "url": "https://www.mlb.com/postseason/history/world-series",
+      "summary": "A guide to all World Series winners by year, from World Series 2023 to the inception of the postseason championship in 1903.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -332,10 +704,66 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "978f0fc0985dfd0b",
-      "title": "The Best WordPress Web Hosting Services for 2026 - PCMag",
-      "url": "https://www.pcmag.com/picks/the-best-wordpress-web-hosting-services",
-      "summary": "The Best WordPress Web Hosting Services for 2026 WordPress is a powerful content management system that makes building a website a whole lot easier.",
+      "id": "053f7db2afc33078",
+      "title": "Redirecting...",
+      "url": "https://customerservice.starbucks.com/app/home/kw/Latte%20Starbucks",
+      "summary": "Redirecting... ... Redirecting...",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c82a291109d52e8b",
+      "title": "Starbucks Coffee Company",
+      "url": "https://customerservice.starbucks.com/app/home/kw/wrong%20drink%20order",
+      "summary": "We would like to show you a description here but the site won’t allow us.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f61fdfbfcd266be4",
+      "title": "Statcast Leaderboard | baseballsavant.com",
+      "url": "https://baseballsavant.mlb.com/leaderboard/statcast",
+      "summary": "Explore MLB Statcast leaderboard for exit velocity, barrels, and more on Baseball Savant.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -359,378 +787,323 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "05f32d2f918dbf2c",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/introducing-tcu-online-brightspace-by-d2l/",
-      "summary": "Introducing TCU Online – Brightspace by D2L Posted February 1, 2016 & filed under Migration, New Release, TCU Online. Brightspace by D2L has been selected as TCU’s new Learning Management System (LMS). It will be referred to as TCU Online. Review the features of Brightspace by D2L.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "8dbaa38393e0a75a",
+      "title": "Statcast Outs Above Average Leaderboard | baseballsavant.com",
+      "url": "https://baseballsavant.mlb.com/leaderboard/outs_above_average",
+      "summary": "Baseball Savant Outs Above Average (OAA) is the cumulative effect of all individual plays a fielder has been credited or debited with, making it a range-based metric of fielding skill that accounts for the number of plays made and the difficulty of them. For example, a fielder who catches a 25% Out Probability play gets +.75; one who fails to make the play gets -.25. Read more about how Outs ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "review",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "642eb82d002fc794",
-      "title": "NearMe Tech Blog",
-      "url": "https://tech.nearme.jp/en/3/",
-      "summary": "Hello, I am Hosoda, CTO of NearMe, Inc. At NearMe, we provide Smart Shuttle, a ride-sharing transportation service powered by AI. We started this tech blog to share the technical depth and excitement of the field we are tackling, along with insights from daily problem-solving and technical research.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a4d690583de7bc2b",
-      "title": "TCU Online",
-      "url": "https://tcuonline.tcu.edu/",
-      "summary": "Need help with TCU Online? There are various options for getting the TCU Online support you need. View the Support for TCU Online page for D2L contact information, Koehler Center contact information, and self-guided support resources. This page also includes contact information for tools associated with TCU Online such as, Panopto, ReadSpeaker, Respondus, and Turnitin.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f12eb6bbdbe83b58",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/kb/how-do-i-log-in/",
-      "summary": "Contact TCU’s IT Support HelpDesk for assistance with TCU usernames and passwords. Start with going to the Password Self Service page to unlock your account and reset your password.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab2d4be7bbdf412d",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/how-to-hub/instructor-how-to-hub-for-tcu-online/get-started/",
-      "summary": "Students: Go to the Get Started with TCU Online page for Students What is TCU Online? Brightspace by D2L, referred to as TCU Online, is TCU’s learning management system. Using TCU Online is optional for face-to-face classes, and each faculty member may utilize different tools. In TCU Online, instructors are able to: Post syllabi Maintain a secure gradebook Share accessible course content ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "212bdb5c764df912",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/kb/student-access-to-tcu-online-from-my-tcu-edu-faq/",
-      "summary": "Student access to TCU Online FAQ I enrolled in a class, but am unable to access it in TCU Online. If you are officially registered for a course and your instructor is using TCU Online, then you will have access to the course at 12:01 AM on the first day of the semester. Courses may not be visible in the My Courses area until that time. Note: Enrollments in TCU Online are not instantaneous ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6b89f45b0f12ebf3",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/how-to-hub/",
-      "summary": "Select one of the boxes below to view Student resources or Instructor resources.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "03f8cab668aaf767",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/ramping-up-rapidly/",
-      "summary": "TCU Online offers ways to deliver content and learning activities, engage students, evaluate student work, and give feedback. Additionally, TCU Online offers communication tools and data analytics that help you support student learning.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b2274b2d9e1341ff",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/kb/customizing-class-and-user-progress/",
-      "summary": "Customizing Class and User Progress One important tool to know about in TCU Online is Class Progress. It will show you data (such as time spent in the course or content, grade details, activity participation, etc.) about your students as a class or for a specific student. This page will introduce you to Class Progress and User Progress.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5b0838e774ff709a",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/tcu-online-resources-for-students/",
-      "summary": "TCU Online Resources for Students TCU Online Student Orientation Tutorial All students are automatically enrolled into a Student Orientation Tutorial for TCU Online. The tutorial provides information about the TCU Online platform, shows how to use specific tools, and lists some student success strategies.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5ad264f122a9ab14",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/home/training/",
-      "summary": "TCU Online Workshops The Koehler Center provides a variety of face-to-face and online (webinar) training opportunities for TCU Online. Please see our Events page for details about current offerings, and to register.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a9fa94dd41e36fd",
-      "title": "72 Live Traffic Cameras in Naperville, Illinois (2026) - Watch Live ...",
-      "url": "https://opencctv.org/cameras/united-states/illinois/naperville",
-      "summary": "Watch 72 live traffic cameras in Naperville, Illinois, United States. Live webcams updated in real time - traffic, weather, beach cams, and more.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "98131519bf17078e",
-      "title": "Buying a Silencer through Scheels? > Silencers > AR15.COM",
-      "url": "https://www.ar15.com/forums/Armory/Buying-a-Silencer-through-Scheels-/20-562046/",
-      "summary": "Scheels is one of the better big box stores in my experience but you're far less likely to run into any issues buying NFA items from a reputable smaller gun store, especially one that does lots of NFA sales.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b9be9f2748434fa2",
-      "title": "Cabelas vs. Scheels - General Discussion Forum - General Discussion ...",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/cabelas-vs-scheels/page/2/",
-      "summary": "Scheels for me growing up was a cool store but with no name brand/quality items…you could buy bats, balls, and gloves, but it wasn’t the best quality. I’m not really looking for that anymore, but it seems like the selection has improved. I also agree that their online service by far outweighs Cabelas.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "ec24666bf115d8b1",
+      "title": "Tigers' emotional Justin Verlander leaves final career start to hugs",
+      "url": "https://www.espn.com/mlb/story/_/id/50035748/tigers-emotional-justin-verlander-leaves-final-career-start-hugs",
+      "summary": "Justin Verlander got an unexpected hook in his major league finale when the 7-year-old daughter of the pitcher came to the mound.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e342b5eb79212b3b",
+      "title": "Wat is FedEx Tracking Scam - Hoe het te verwijderen",
+      "url": "https://sensorstechforum.com/nl/fedex-tracking-scam/",
+      "summary": "The FedEx Tracking Scam is a malware infection that is being spread on the Internet by unknown computer hackers.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "50907cd3c97635ee",
+      "title": "What and California time zone? - Answers",
+      "url": "https://www.answers.com/natural-sciences/What_and_California_time_zone",
+      "summary": "pacific",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f5d8aac6aa661594",
+      "title": "What are the time zones between Los Angeles California and ... - Answers",
+      "url": "https://www.answers.com/natural-sciences/What_are_the_time_zones_between_Los_Angeles_California_and_London_England",
+      "summary": "Los Angeles is in Pacific Time Zone (GMT -8). When you fly east to England you pass through: Mountain Time -7 Central Time -6 Eastern Time -5 Atlantic Time -4 (Newfoundland Time -4½) Greenland ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "165fa04f1a152c73",
+      "title": "What countries are in the same time zone as the Philippines?",
+      "url": "https://www.answers.com/natural-sciences/What_countries_are_in_the_same_time_zone_as_the_Philippines",
+      "summary": "The following places always have the same time as the Philippines (UTC+8):Krasnoyarsk, Khakassia and Tuva, RussiaDzavhan, Govi-Altay, HÃƒÂ¶vsgÃƒÂ¶l, Bayanhongor, Arhangay, Ãƒâ ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e04e1bd2aa7ee7e1",
+      "title": "What is California time zone? - Answers",
+      "url": "https://www.answers.com/natural-sciences/What_is_California_time_zone",
+      "summary": "California is Pacific Time, GMT-8.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "130028b7fc89bd6c",
+      "title": "What time zone is 3 hours ahead California? - Answers",
+      "url": "https://www.answers.com/travel-destinations/What_time_zone_is_3_hours_ahead_California",
+      "summary": "When California is on Standard Time from November to March, it is 3 hours behind...Eastern Standard Time, in Canada, the United States, the Bahamas, Haiti, Jamaica, the Cayman Islands, Mexico ...",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f0dd54f6145dc38d",
+      "title": "What time zone is 3 hours behind California? - Answers",
+      "url": "https://www.answers.com/natural-sciences/What_time_zone_is_3_hours_behind_California",
+      "summary": "If you mean the time zone where the clock is three hours behind California, then it would be the \"Eastern\" time zone - when it's 7 pm in San Francisco, it's 10 pm in New York.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77724aaf059ffe9e",
+      "title": "XPO Logistics | Truckingboards | The Premier LTL Trucking Forum ...",
+      "url": "https://www.truckingboards.com/bb/forums/xpo-logistics.47/",
+      "summary": "Real-time updates on XPO operations, terminal changes, and lane adjustments. Share your layout and dock experiences here.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
       "content_types": [
         "community"
       ],
       "primary_type": "community",
       "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5ecbb025685c885e",
+      "title": "‘Perfect’ – Justin Verlander’s final moment on MLB field ... - HITC",
+      "url": "https://www.hitc.com/perfect-justin-verlanders-final-moment-on-mlb-field-with-daughter-has-left-all-fans-emotional/",
+      "summary": "Detroit Tigers RHP Justin Verlander has played his final game in the MLB, as the 43-year-old steps away in an incredible on-field moment.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "702e3d92b0612a9c",
+      "title": "Accelerated Reader Student Home",
+      "url": "https://ar-uk-help.renaissance.com/hc/en-gb/articles/14851769750811-Accelerated-Reader-Student-Home",
+      "summary": "On this page, you can find books and articles to read or search for a book or article so you can take a quiz. If the software asked you to choose a class when you came to this page, you can use the drop-down list to switch to a different class. Books and Articles You Can Read Right Now Accelerated Reader includes articles that you can read on the computer - simply select one of the articles ...",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
         "reject_noise"
       ],
       "triage_priority": "low",
@@ -739,10 +1112,259 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0c43319b2227feb9",
-      "title": "Iowa voters to decide on state constitutional amendment limiting ... - MSN",
-      "url": "https://www.msn.com/en-us/politics/government/iowa-voters-to-decide-on-state-constitutional-amendment-limiting-income-tax-increases/ar-AA2csKCS",
-      "summary": "Iowa voters face a pivotal choice in November: deciding whether to amend the state constitution to require a two-thirds legislative vote to raise income taxes.",
+      "id": "3614117189d7bfe6",
+      "title": "How To Factory Reset Amazon Fire Tablet - thetechgorilla.com",
+      "url": "https://thetechgorilla.com/how-to-factory-reset-amazon-fire-tablet/",
+      "summary": "Learn how to factory reset an Amazon Fire Tablet to erase all data. Step-by-step guide to restore default settings and troubleshoot issues",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f19367341d4a4711",
+      "title": "How to Factory Reset Kindle Fire - thetechgorilla.com",
+      "url": "https://thetechgorilla.com/how-to-factory-reset-kindle-fire/",
+      "summary": "Learn how to factory reset Kindle Fire—via settings or recovery mode to erase all data, fix issues, or prep for resale.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "27458582dd94efdd",
+      "title": "How to Reset a Kindle Fire: Soft & Factory Reset Instructions",
+      "url": "https://www.wikihow.com/Reset-a-Kindle-Fire",
+      "summary": "Do a Soft Resets by holding down the Power and Volume buttons simultaneously, or a Factory Resets by selecting “Reset to Factory Defaults” in settings. Try a Soft Reset to reset the settings on your Kindle Fire. A Soft Reset restores your Kindle to its factory settings without deleting any data.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "81bc2f2f81f0e4b4",
+      "title": "How to Reset an Amazon Fire Tablet - How-To Geek",
+      "url": "https://www.howtogeek.com/740437/how-to-reset-an-amazon-fire-tablet/",
+      "summary": "First, open up the \"Settings\" app by finding it in the home screen, or by swiping down twice from the top of the screen and tapping the gear icon in the notification shade. Next, scroll down and select \"Device Options.\" Now, select \"Reset to Factory Defaults.\"",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5204e6997d05cafc",
+      "title": "How to reset Fire tablet - About Amazon",
+      "url": "https://www.aboutamazon.com/news/devices/reset-fire-tablet",
+      "summary": "Here is a step-by-step guide on how to reset your Fire tablet: 1. First, you’ll want to understand what a factory reset will do to your device and check that there’s nothing you won’t want to lose. A factory reset of your device removes all downloaded content, including in-app purchases and returns the device to its original factory settings.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "843a09c101ceb5be",
+      "title": "How to reset your Amazon Fire tablet - Tom's Guide",
+      "url": "https://www.tomsguide.com/how-to/how-to-reset-your-amazon-fire-tablet",
+      "summary": "In the Device Options menu, tap the \"Reset to Factory Defaults\" button to initiate the reset process. You will be asked to enter the PIN you use to unlock the tablet in order to begin the...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e610172495fd716",
+      "title": "How to reset your Amazon Fire tablet in 4 easy steps",
+      "url": "https://www.aboutamazon.co.uk/news/devices/amazon-fire-tablet-reset",
+      "summary": "Here is a step-by-step guide on how to reset your Fire tablet: 1. First, you’ll want to understand what a factory reset will do to your device and check that there’s nothing you won’t want to lose. A factory reset of your device removes all downloaded content, including in-app purchases and returns the device to its original factory settings.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4dc3cbf1b74391a2",
+      "title": "Marine Online",
+      "url": "https://www.mol.usmc.mil/mol",
+      "summary": "We would like to show you a description here but the site won’t allow us.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "944a0266a8cdeb1c",
+      "title": "Reset Fire Tablet, Fire TV, Kindle, and Echo - Amazon Customer Service",
+      "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GCY6UVMHJ9M2X2A6",
+      "summary": "Learn the step-by-step process to factory reset your Fire tablets, Fire TV, Kindle e-readers, Alexa and Echo devices. Reset your Amazon product to its default settings to troubleshoot issues, remove personal data.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ae5853fd036dc930",
+      "title": "Are any of the Hells Angels christian? - Answers",
+      "url": "https://www.answers.com/religion-and-spirituality/Are_any_of_the_Hells_Angels_christian",
+      "summary": "While the Hells Angels Motorcycle Club is primarily known for its rebellious and outlaw image, individual members may have diverse personal beliefs, including Christianity. However, the club ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -765,12 +1387,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c41c7f476cc05a0a",
-      "title": "Luther Westside Volkswagen",
-      "url": "https://www.lutherauto.com/locations/luther-westside-volkswagen/",
-      "summary": "Luther Westside Volkswagen 2370 Highway 100 South, St Louis Park, MN 55416 New Inventory Pre-Owned Inventory Value Your Trade Schedule Service",
+      "id": "25fdf409a2ac8b52",
+      "title": "Are hells angels white supremacists - Answers",
+      "url": "https://www.answers.com/law-and-legal-issues/Are_hells_angels_white_supremacists",
+      "summary": "No race is superior to the next, Hells Angels aren't white supremacists there's Blacks, Latinos, Asians, Etc. in Hells Angles cause they accept any member(no matter the race) that's down for ...",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -779,9 +1401,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "policy"
       ],
-      "primary_type": "news",
+      "primary_type": "policy",
       "routing_targets": [
         "reject_noise"
       ],
@@ -791,10 +1413,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "89af517b2bd166c8",
-      "title": "NearMe Blog",
-      "url": "https://blog.nearme.jp/en/11/",
-      "summary": "When you need to stay near Haneda Airport the night before or after a flight, many people choose a budget-friendly capsule hotel. However, compared to business hotels, you may have concerns about security, amenities, and cleanliness.",
+      "id": "16dfab4cfc375d43",
+      "title": "Career Areas - Domino's Careers",
+      "url": "https://jobs.dominos.com/us/career-areas/",
+      "summary": "From corporate and franchise store roles to supply chain jobs and corporate positions, a Domino’s career delivers. And with locations across North America, it’s highly likely there’s a Domino's hiring near you!",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -817,377 +1439,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d039994e3617e684",
-      "title": "NearMe ニアミー | 9周年キャンペーン",
-      "url": "https://campaign.nearme.jp/anniversary",
-      "summary": "NearMe ニアミーは今年で9周年！おトクな情報がいっぱいの特設ページへようこそ！空港だけじゃない。行きたい場所を ...",
+      "id": "e0cb040f65ca2d74",
+      "title": "Cashless payment at Madeira Beach parking lot outrageously ...",
+      "url": "https://www.city-data.com/forum/politics-other-controversies/3536919-cashless-payment-madeira-beach-parking-lot-27.html",
+      "summary": "City-Data Forum > General Forums > Politics and Other Controversies Cashless payment at Madeira Beach parking lot outrageously discriminates, violates 14th Amendment.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1e50bc39ae5812d8",
-      "title": "NearMe（ニアミー）で移動｜予約でおトク、ラクちん。",
-      "url": "https://app.nearme.jp/",
-      "summary": "空港送迎・タクシー・大型車の予約ならNearMe。羽田・成田などへドアツードアで快適移動。最大50%お得、事前予約で安心。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ca7b9c0d0d86802",
-      "title": "Obituaries - Red Lake Nation News",
-      "url": "https://www.redlakenationnews.com/section/obituaries",
-      "summary": "Leroy \"Blaine\" Freeman September 9, 1955 ~ September 17, 2026 (age 71) Leroy \"Blaine\" Freeman, Makwa \"Bear\" of the Eagle Clan, age 71, began his journey to the spirit world on September 17, 2026 in Red Lake, MN.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "783e20e6fc7ce203",
-      "title": "Obituaries - Red Lake Nation News Archives",
-      "url": "https://www.redlakenationnews.com/section/obituaries/151",
-      "summary": "A wake for Justin will begin at 4 PM on Saturday, April 5, 2025 at the Cass Lake Veteran's Building and continue at the New Red Lake Center in Red Lake, MN on Sunday, April 6, 2025 until the service at 12 PM on Monday, April 7, 2025 with Spiritual Leader Allen Hardy.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "87d5fa4353a63ef5",
-      "title": "Obituaries and area death notices | Detroit Lakes Tribune",
-      "url": "https://www.dl-online.com/obituaries",
-      "summary": "She graduated high school in Redfield, SD and slowly made her way to the Red River Valley area where she raised her five children. Mary eventually moved east to Detroit Lakes, the town she...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b3dc52343d80c43",
-      "title": "Obituary Listing - Red Lake Funeral Chapel Limited | Red Lake, ON",
-      "url": "https://www.rlfuneralchapel.com/obituaries",
-      "summary": "View recent obituaries & subscribe for alerts. Join our grief support program for weekly messages to help you through this time.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab5f6c67ea2e13a0",
-      "title": "Obituary Listings - Green-Larsen",
-      "url": "https://www.greenlarsen.com/obituaries/obituary-listings",
-      "summary": "Browse obituary listings to share memories, express condolences, and find information about loved ones at Green-Larsen Mortuary Inc.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d3b44177ec9da62b",
-      "title": "Red Lake County & Red Lake Falls, MN Obituaries",
-      "url": "https://www.newspaperobituaries.net/minnesota/red-lake-county.htm",
-      "summary": "browse over 25 Red Lake County & Red Lake Falls, Minnesota obituary indexes, including newspaper obituaries, death indexes, funeral home obituaries..",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "13907220c0febb7c",
-      "title": "Red Lake County Obituaries | Obits for the Red Lake County, MN",
-      "url": "https://www.legacy.com/us/obituaries/local/minnesota/red-lake-county",
-      "summary": "Browse Red Lake County obituaries on Legacy.com. Find service information, send flowers, and leave memories in the Guestbook for your loved one.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "97af54709621ddcf",
-      "title": "Red Lake Funeral Chapel Limited",
-      "url": "https://www.rlfuneralchapel.com/",
-      "summary": "Red Lake Funeral Chapel Limited provides compassionate funeral services & grief support. Contact us for pre-planning options & memorial products.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "741f4e76d32efc94",
-      "title": "Red Lake Obituaries | Local Obits for Red Lake, MN - Legacy.com",
-      "url": "https://www.legacy.com/us/obituaries/local/minnesota/red-lake",
-      "summary": "Browse Red Lake area obituaries on Legacy.com. Find service information, send flowers, and leave memories in the Guestbook for your loved one.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aae8cf669635b66b",
-      "title": "Red Lake, MN Obituaries: Search by Name, Date or Location",
-      "url": "https://epilogg.com/obituaries/red-lake-mn",
-      "summary": "Search Red Lake, MN obituaries by name, date, or location. Find loved ones, explore life stories, and access funeral or memorial service details.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1889e7341669d1c0",
-      "title": "scheels goes woke? cuts off affiliate link to mrgunsngear because of ...",
-      "url": "https://www.ar15.com/forums/general/scheels-goes-woke-cuts-off-affiliate-link-to-mrgunsngear-because-of-politics/5-2840538/&page=2",
-      "summary": "have we done this yet?looks like they are about to Bud Light/Dicks themselves.eta: apparently the title isn't detailed enough. Scheels corporate sent an email to MrGunsnGear saying because he's too p",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "551279fef0523659",
-      "title": "Scheels got me again… - In-Depth Outdoors",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/scheels-got-me-again/",
-      "summary": "Scheels is by far the best sporting goods retail store ever. They have the best selection of hunting/fishing and the people actually know what they’re talking about.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "240a33765a566962",
-      "title": "Scheels Walleye Series Rods - General Discussion Forum - General ...",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/scheels-walleye-series-toda/",
-      "summary": "The Scheels rods are very nice, but you can’t go off what the rod says the action and power is. They are generally a bit stiffer of a rod compared to some others. I found the Tournament series 7’6″ ML to be somewhere in between a M and ML with a bit slower than fast action. They’re a decent rod with an absolutely fantastic warranty.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1208,12 +1465,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "319c1e684bc6640a",
-      "title": "Scheels – Blaine, MN - General Discussion Forum - General Discussion ...",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/scheels-blaine-mn/",
-      "summary": "Scheels can be trouble on the credit card no matter where you live. They have excellent on-line ordering and customer service with price matching.",
+      "id": "f75d7530591e3c49",
+      "title": "Classroom Help",
+      "url": "https://support.google.com/edu/classroom/?hl=en",
+      "summary": "Official Google Classroom Help Center where you can find tips and tutorials on using Google Classroom and other answers to frequently asked questions.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1222,8 +1479,371 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "retail",
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "19673a10f5d63ddd",
+      "title": "Converse pulls 'deeply upsetting' advert after backlash",
+      "url": "https://www.city-data.com/forum/politics-other-controversies/3538040-converse-pulls-deeply-upsetting-advert-after.html",
+      "summary": "American footwear brand Converse has pulled an advert that social media users said evoked Ku Klux Klan imagery, saying it recognised \"that we got this wrong\". The photo, posted to the company's Instagram account, received backlash online after critics described lighting in the image as looking like a white pointed hood. A pair of shoes, dangling in the picture, were also likened to an image of ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
         "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bd015b7addfadc7b",
+      "title": "Demo account - Analytics Help - Google Help",
+      "url": "https://support.google.com/analytics/answer/6367342?hl=en",
+      "summary": "The Google Analytics demo account is a fully functional Google Analytics account that any Google user can access. It contains 2 Google Analytics properties. The demo account is a great way to look at real business data and experiment with Google Analytics features.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "776ab3914610f1a6",
+      "title": "Dominos' Menu - Order Pizza, Pasta, Wings & More Online!",
+      "url": "https://www.dominos.com/en/menu",
+      "summary": "Order Domino's pizza, pasta, sandwiches & more, available for carryout or delivery. Sign up for Domino's email & text offers for great deals on your next order.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e110c6f424c2256",
+      "title": "Find Domino's Pizza Near Me | Order Food Delivery Now",
+      "url": "https://pizza.dominos.com/search",
+      "summary": "Order from your nearest Domino's for pizza, pasta, chicken, salad, sandwiches, dessert, and more. Get tasty food for delivery or takeout now!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af0ba89e2a03829a",
+      "title": "Find Domino’s jobs near you - Domino's Careers",
+      "url": "https://jobs.dominos.com/us/",
+      "summary": "Feed your ambition at a world-renowned brand. From store positions and warehouse roles to Domino's careers in corporate, there’s a Domino's hiring near you.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36582cd2d1220ef0",
+      "title": "Get National & Local Dominos Pizza Coupons for Carryout or Delivery",
+      "url": "https://www.dominos.com/en/pages/order/coupon",
+      "summary": "Order pizza, pasta, sandwiches & more online for carryout or delivery from Domino's. View menu, find locations, track orders. Sign up for Domino's email & text offers to get great deals on your next order.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0ae7bd7119e43743",
+      "title": "Hells Angels Charlotte NC July 4 1979 what happened to the ... - Answers",
+      "url": "https://www.answers.com/motorcycles-and-offroad-vehicles/Hells_Angels_Charlotte_NC_July_4_1979_what_happened_to_the_Outlaws",
+      "summary": "Sometime between 2 and 5 A.M July 4, 1979, a person or persons approached a small house at 2500 Allen Road South, Charlotte N.C. and murdered 5 persons associated with the Outlaws MC. The dead ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b04714d771a49106",
+      "title": "html - How to show google.com in an iframe? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/8700636/how-to-show-google-com-in-an-iframe",
+      "summary": "This Stack Overflow page discusses how to display google.com in an iframe and addresses related technical challenges.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "65d0d0becc164f08",
+      "title": "LEADERSHIP - Domino's Pizza",
+      "url": "https://biz.dominos.com/about-us/leadership/",
+      "summary": "LEADERSHIP Russell Weiner BIO Chief Executive Officer Russell Weiner Chief Executive Officer Russell Weiner has served as Domino's chief executive officer since May 2022. Prior to that, he was chief operating officer and president - Domino's U.S. from July 2020 to April 2022, during which he oversaw Domino's U.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d277196a1eb29cdb",
+      "title": "linux - curl: (6) Could not resolve host: google.com; Name or service ...",
+      "url": "https://stackoverflow.com/questions/24967855/curl-6-could-not-resolve-host-google-com-name-or-service-not-known",
+      "summary": "Try nslookup google.com to determine if there's a DNS issue. 192.168.1.254 is your local network address and it looks like your system is using it as a DNS server.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d1899369f9566367",
+      "title": "Login - Domino's Pizza",
+      "url": "https://pienet.dominos.com/login",
+      "summary": "Please log in with your login.dominos.com credentials OR your store Pulse ID and system password, like below:",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4277aa4ddc8a5c0",
+      "title": "login.dominos.com",
+      "url": "https://login.dominos.com/",
+      "summary": "Domino's Portal WRC, SCC & corporate marketplace team members click here to recover your password. Please contact the Domino’s Service Desk at 888-265-3030. Our options have recently changed, please listen carefully, and choose the option that best suits your needs.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7dec4c38b8143176",
+      "title": "Menu Items - Domino's Pizza",
+      "url": "http://media.dominos.com/multimedia/menu-items/",
+      "summary": "Bread Bites (3 images) VIEW Chicken Wings (2 images) VIEW Chocolate Lava Cakes (2 images) VIEW Handmade Pan Pizza (2 images) VIEW Hand Tossed Pizza (5 images) VIEW Gluten Free Crust (1 image) DOWNLOAD Loaded Chicken (5 images) VIEW Marbled Cookie Brownie (1 image) DOWNLOAD New York Style Pizza (5",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c0e813c162f8d7b6",
+      "title": "New Volkswagens for Sale in Manassas, VA | Volkswagen Dealership",
+      "url": "https://www.manassasvw.com/inventory/new",
+      "summary": "Looking for a new Volkswagen in Manassas, VA? Browse our extensive selection of cars, SUVs, and vans to find your ideal ride. Start your journey here!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
       ],
       "primary_type": "retail",
       "routing_targets": [
@@ -1235,12 +1855,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1b06f1ab8c57ddff",
-      "title": "Volkswagen Dealership near Minneapolis, MN - Schmelz VW",
-      "url": "https://www.schmelzvw.com/minneapolis-mn-volkswagen-dealership.html",
-      "summary": "Visit the showroom at our Volkswagen dealership near Minneapolis, Minnesota, to explore our current inventory. Stop by to test drive the sleek and innovative Volkswagen Jetta or cruise around town in a fully-loaded Volkswagen Golf.",
+      "id": "e2d52be1417a282d",
+      "title": "Orkut Help",
+      "url": "https://support.google.com/orkut/?hl=en",
+      "summary": "Official Orkut Help Center where you can find tips and tutorials on using Orkut and other answers to frequently asked questions.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1261,62 +1881,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ea5108fc055aaebf",
-      "title": "Volkswagen Dealership Serving Minneapolis, MN | Luther Westside Volkswagen",
-      "url": "https://www.westsidevw.com/volkswagen-dealership-serving-minneapolis/",
-      "summary": "Looking for a new or used Volkswagen dealer near Minneapolis, MN? Luther Westside Volkswagen has an enormous inventory of new and used vehicles at competitive prices, and we’re located less than 15 minutes southwest of Minneapolis in St. Louis Park, MN.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f42968600ecd8f27",
-      "title": "www.fishexplorer.com",
-      "url": "https://www.fishexplorer.com/co/fxrforum.asp?action=det&pid=797269",
-      "summary": "www.fishexplorer.com",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2596ed35fad035a3",
-      "title": "【京都】NearMe.Town",
-      "url": "https://guide.nearme.jp/ad46f0ed-30df-4412-ad6d-55c56836cea0",
-      "summary": "[京都/観光シャトル] 料金計算について",
+      "id": "e10a1ce4038269ec",
+      "title": "Pizza Delivery & Carryout in Houston, Texas| Domino's Pizza",
+      "url": "https://pizza.dominos.com/texas/houston",
+      "summary": "Order pizza delivery or carryout from Domino's in Houston, Texas. Find your nearest location, view hours, and start your order online.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1339,38 +1907,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a81a4ac9d51debd2",
-      "title": "キャンセル方法 - nearMe.Airport（ニアミーエアポート）",
-      "url": "https://guide.nearme.jp/6053454b-669d-4f3c-9c46-6ad9d260e543",
-      "summary": "キャンセル方法｜「nearMe.Airport（ニアミーエアポート）」は空港と自宅・ホテルをつなぐドアツードアのシャトルサービスです。全国の主要空港でご利用可能です。",
+      "id": "a05e3237ab53036d",
+      "title": "Speed Safety Cameras Pilot Program | City of Oakland, CA",
+      "url": "https://www.oaklandca.gov/Public-Safety-Streets/Traffic-Safety/Speed-Safety-Cameras-Pilot-Program",
+      "summary": "Speed safety cameras are a proven, life-saving tool to reduce injuries and fatalities on city streets. Oakland is one of six cities in California participating in a five-year pilot program to install and operate speed cameras under Assembly Bill 645. Cameras have began issuing warnings on January 14, 2026 and speeding tickets on March 15, 2026.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a368fd970ace8e88",
-      "title": "シェアでおトクな空港定額タクシー | ニアミー - NearMe",
-      "url": "https://app.nearme.jp/airport-shuttle/",
-      "summary": "【空港行くならニアミー】累計予約100万人突破！定額タクシーで、ドアツードアの快適な空港送迎。シェア乗り（相乗り）だから、タクシーより最大80%おトクな料金プラン、電車、リムジンバス、自家用車（駐車場利用）より便利。プロのドライバーが運転するから安心。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1391,12 +1933,90 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e7d24b2d48e84bd7",
-      "title": "ニュース｜株式会社NearMe（ニアミー）",
-      "url": "https://corp.nearme.jp/news",
-      "summary": "株式会社NearMe（ニアミー）のプレスリリースや各種取り組みを紹介、最新情報を掲載しています。",
+      "id": "285f7a92d8f86239",
+      "title": "Steve Hoffman Music Forums",
+      "url": "https://forums.stevehoffman.tv/",
+      "summary": "Music, audio, tubes, hi-fi, stereo, vinyl, CDs, hi-res, SACDs, video, and the mastering of Steve Hoffman!",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e2587d93293771f9",
+      "title": "Upcoming Bollywood Movies | New Movie Releases & Trailers",
+      "url": "https://www.bollywoodmdb.com/movies/upcoming",
+      "summary": "Explore upcoming Bollywood movies and discover new film releases, trailers, star cast, and release updates. Stay updated with the latest movies coming soon.",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "78202cb374fa1af7",
+      "title": "What does the number 13 mean to the hells angels? - Answers",
+      "url": "https://www.answers.com/law-and-legal-issues/What_does_the_number_13_mean_to_the_hells_angels",
+      "summary": "The Frisco Hells Angels were formed in 1953 by Rocky Graves, a member of the Berdoo Hells Angels. The group fell apart and was reformed in the summer of 1955 with thirteen living members.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2f8d3a231c30132d",
+      "title": "Where did sandy Alexander hells angel member die? - Answers",
+      "url": "https://www.answers.com/motorcycles-and-offroad-vehicles/Where_did_sandy_Alexander_hells_angel_member_die",
+      "summary": "Sandy Alexander, a member of the Hells Angels, died in 2022 in a shooting incident in East Los Angeles, California. His death was part of a violent altercation that involved multiple individuals ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1417,12 +2037,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c6c50d71007958c9",
-      "title": "採用情報｜株式会社NearMe（ニアミー）",
-      "url": "https://corp.nearme.jp/jobs/",
-      "summary": "シャトル事業 -「第4の公共交通機関」をつくる 「NearMe | ニアミー」は車両をシェアすることで、それぞれの目的地にお得に移動できるシャトルサービスです。現在は空港、ゴルフ場、街中、通勤の移動をメインとしていますが、その他地域の交通問題の解決などさまざまな機会を模索してい ...",
+      "id": "751547c035207319",
+      "title": "which Altamont attendee was scarier? The Wolfman or the Angel?",
+      "url": "https://forums.stevehoffman.tv/threads/which-altamont-attendee-was-scarier-the-wolfman-or-the-angel.419682/page-3",
+      "summary": "When I first watched that clip, I assumed it was a Hells Angel having a freak out on the stage, but the more I watch it, I think it's an audience member. He's not wearing a vest or anything remotely similar to what the Angels are wearing and, if you think about it, the Angels at the show do not seem to be whacked out on anything.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ee6f8a1a6ce61fa9",
+      "title": "Why Did Evel Knievel fight with a hell angel? - Answers",
+      "url": "https://www.answers.com/automotive-information/Why_Did_Evel_Knievel_fight_with_a_hell_angel",
+      "summary": "1972, when Evel Knievel came into town, he obviously had a beef ongoing with the Hells Angels. At his first Cow Palace jump, he egged on the Angels in attendance over loudspeaker, as he made ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1443,12 +2089,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9d774e0de1a97c22",
-      "title": "株式会社NearMe｜人と地域の豊かさを紡ぎ、未来を拓く",
-      "url": "https://nearme.jp/",
-      "summary": "株式会社NearMeは「人と地域に寄り添うソーシャルデザインカンパニー」です。遊休資産や潜在資源という「もったいない」を、未知への発見や未来資源に変換し、人や地域の新たな可能性につなげるために、一人ひとりとそれぞれの地域の暮らしの中に、ゆとりや自分らしく生きる楽しさを ...",
+      "id": "3db2edf88f7cf6a2",
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th-th&co=GENIE.Platform%3DDesktop",
+      "summary": "คุณสามารถดาวน์โหลดและติดตั้งเว็บเบราว์เซอร์ Chrome ได้โดยไม่ ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c1b309c7c7b8c94a",
+      "title": "บัญชี Google ความช่วยเหลือ",
+      "url": "https://support.google.com/accounts/?hl=th",
+      "summary": "ศูนย์ช่วยเหลืออย่างเป็นทางการของ บัญชี Google ที่คุณสามารถพบ ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1460,6 +2132,32 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a1b6b2dc5331abbf",
+      "title": "建立 Google 帳戶 - 電腦 - Google 帳戶說明",
+      "url": "https://support.google.com/accounts/answer/27441?hl=zh-Hant&co=GENIE.Platform%3DDesktop",
+      "summary": "重要事項： 如要為貴商家建立 Google 帳戶， 可以開啟商家帳戶個人化設定。此外，如果建立商家帳戶，還能更輕鬆地 設定 Google 商家檔案，協助提升貴商家的能見度及管理商家的線上資訊。 建立 Google 帳戶時，我們會要求你提供一些個人資訊。請提供正確資訊，藉此確保你的帳戶安全，並協助我們 ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
