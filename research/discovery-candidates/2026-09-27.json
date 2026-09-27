@@ -1,42 +1,45 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-27T14:45:40.930729+00:00",
-  "candidate_count": 55,
-  "classifier_irrelevant_count": 42,
+  "discovered_utc": "2026-09-27T15:50:42.363386+00:00",
+  "candidate_count": 81,
+  "classifier_irrelevant_count": 62,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 12,
-    "broad_web": 24,
-    "developer": 19
+    "adjacent": 17,
+    "broad_web": 44,
+    "developer": 20,
+    "retail": 1
   },
   "relationship_counts": {
     "direct": 1,
-    "enabling": 0,
-    "adjacent": 12,
+    "enabling": 1,
+    "adjacent": 17,
     "speculative": 0,
-    "irrelevant": 42
+    "irrelevant": 62
   },
   "type_counts": {
-    "model": 1,
-    "video": 3,
-    "news": 27,
-    "research": 2,
-    "tool": 19,
-    "sdk": 19,
+    "model": 2,
+    "review": 1,
+    "video": 2,
+    "news": 35,
+    "research": 1,
+    "tool": 25,
+    "sdk": 22,
+    "hack": 1,
+    "optics": 1,
     "policy": 2,
-    "retail": 2,
-    "community": 12
+    "retail": 8,
+    "teardown": 2,
+    "community": 9
   },
   "routing_counts": {
-    "adjacent_radar": 12,
-    "community_evidence_review": 2,
+    "adjacent_radar": 17,
     "deep_research": 1,
-    "model_catalog_review": 1,
-    "policy_privacy": 2,
-    "reject_noise": 42,
+    "development_hacking": 2,
+    "reject_noise": 62,
     "report_card_evidence": 1,
-    "research_news_review": 13,
-    "retail_rebrand_review": 2
+    "research_news_review": 19,
+    "research_optics": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -50,12 +53,42 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "f32166f88d9141fd",
-      "title": "10 Best Smart Glasses (September 2026) Top Picks Reviewed",
-      "url": "https://fypower.org/best-smart-glasses/",
-      "summary": "The best smart glasses in 2026 fall into three distinct camps, and understanding the difference between them is the single most important thing to figure out before you buy. AI glasses like the Ray-Ban Meta series pack cameras, microphones, and AI assistants into frames that look like normal sunglasses.",
+      "id": "c35ed16182ab0c68",
+      "title": "Pimax Dream Air - The world's smallest full-feature 8K resolution VR ...",
+      "url": "https://store.pimax.com/pages/dream-air",
+      "summary": "Pimax's pancake lenses achieve the widest field of view of any micro-OLED VR headset, while maintaining ultra-high clarity. This is due to the three-layer lens design, with the top layer being concave.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "enabling",
+      "content_types": [
+        "tool",
+        "sdk",
+        "optics"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lens, lenses, micro-oled",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1d3d22e8884dc655",
+      "title": "Best Smart Glasses With a Display in 2026 | Cybernews",
+      "url": "https://cybernews.com/vr-ar/best-smart-glasses-with-a-display/",
+      "summary": "Looking to spice up your daily routine with tech glasses? Explore the top smart glasses with a display in 2026, offering stylish designs and AI assistance.",
       "discovery_channel": "broad_web",
-      "query": "best smart glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -64,25 +97,24 @@
       "disposition": "collected",
       "relationship": "direct",
       "content_types": [
-        "policy"
+        "news"
       ],
-      "primary_type": "policy",
+      "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "policy_privacy"
+        "research_news_review"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, smart glasses",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8916650edbb972a8",
-      "title": "Home Page | Priceline Cruises",
-      "url": "https://cruises.priceline.com/",
-      "summary": "Find the best cruise and vacation deals on the Internet, make cruise and hotel and reservations online, and research vacation destinations online at Priceline Cruises",
+      "id": "7d9c01ce8c05f016",
+      "title": "OpenEarable - Fully Open-Source AI Sensing Earphones Platform",
+      "url": "https://open-earable.teco.edu/",
+      "summary": "OpenEarable is the world's first fully open-source AI platform for ear-based sensing applications with true wireless audio. Packed with an unprecedented array of high-precision sensors, OpenEarable redefines what's possible in wearable tech. Designed for both development and research applications, OpenEarable is modular, reconfigurable, and built for the future.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
@@ -93,11 +125,13 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "research"
+        "research",
+        "tool"
       ],
       "primary_type": "research",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
         "deep_research",
         "adjacent_radar"
       ],
@@ -107,131 +141,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "667b11ec49cdafb4",
-      "title": "Cruise Deals, Cheap Cruises, Cruise Lines, Discount Cruises - Priceline ...",
-      "url": "https://cruises.priceline.com/promotion/cruise-deals.do",
-      "summary": "Find cruise deals and cheap cruises on top cruise lines at Priceline Cruises. Expert advice how to save up to 75% on discount cruises with unbeatable cruise deals.",
+      "id": "e977fed206230d5f",
+      "title": "Phearable.net: Honda & Acura Performance Solutions",
+      "url": "https://www.phearable.net/",
+      "summary": "Founded in 2004, Phearable.net has grown to become a world renowned performance company with extensive knowledge. Utilizing over 21 years of experience, we offer industry leading solutions. For guidance on modifying your vehicle, please review the modification guides we have put together by clicking here.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "review"
       ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "364c41155b20abdb",
-      "title": "Executive Team - Priceline Press Center",
-      "url": "https://press.priceline.com/executive-team/",
-      "summary": "Executive Team Do you need imagery, commentary or additional info? Here you’ll find photos and bios of the Priceline Executive team. Contact us if you need anything else. Contact Us",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "94541182c3c5a667",
-      "title": "Flights: Find Cheap Flights & Airfares | Priceline",
-      "url": "https://www.priceline.com/flights",
-      "summary": "Looking to save on your next flight? We compare thousands of flight deals to get you there. Book a cheap flight today with free cancellation for more flexibility.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b99d75b3b723fea0",
-      "title": "Group Hotel Quote Request - Priceline.com",
-      "url": "https://groupdeals.priceline.com/Group-Rate/",
-      "summary": "A group hotel reservation request form. Submit your request and receive hotel bids back for your group.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ea5df69bf21b16af",
-      "title": "Homepage [careers.priceline.com]",
-      "url": "https://careers.priceline.com/",
-      "summary": "Priceline’s Dallas office gathers for an epic eclipse watch party.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
@@ -243,10 +171,37 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e16812e49c054665",
-      "title": "Nothing hotter than a farm girl - Reddit",
-      "url": "https://www.reddit.com/r/FarmGirls/",
-      "summary": "This community is for Farm Girls to post their nudes! Please read the rules before posting",
+      "id": "515f7f98065cab45",
+      "title": "25 Things to Do in St Louis with Family and Friends",
+      "url": "https://explorestlouis.com/see-and-do/25-things-to-do-in-st-louis/",
+      "summary": "With a vibrant arts-and-culture scene, acclaimed restaurants, top-notch bars and free, family-friendly fun to boot, St. Louis is your gateway to a good time. These are our picks for the top 25 things to do in St. Louis, but the list doesn’t stop here.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d6c8ccbf9b8e94d",
+      "title": "A guide to hearables and the advent of Headphone 3.0",
+      "url": "https://www.soundguys.com/a-guide-to-hearables-and-the-advent-of-headphone-3-0-82925/",
+      "summary": "Smart headphone and hearing aid technologies are converging into a new hearable market, and the results are pretty exciting.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -257,12 +212,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -271,38 +225,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a3c6b5882ff64649",
-      "title": "NSFWTeenBeauties - Reddit",
-      "url": "https://www.reddit.com/r/NSFWTeenBeauties/",
-      "summary": "Our subreddit is dedicated to the phenomenal beauty of 18 and 19 year old women.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "547547e20337a25c",
-      "title": "Priceline Press Center - About Priceline - Priceline Press Center",
-      "url": "https://press.priceline.com/about-priceline/",
-      "summary": "Our mission is simple: to be the world’s best travel dealmaker. Launched in 1998, Priceline pioneered the online travel category by pairing negotiation and technology to make smarter savings possible for everyone. We’ve helped millions go farther, experience more, and reach their happy place for a happy price. Powered by advanced AI and decades of dealmaking expertise, Priceline delivers ...",
+      "id": "0e4eeeffb61a8bec",
+      "title": "Advisories - Sun Country Airlines",
+      "url": "https://www.suncountry.com/advisory/alerts",
+      "summary": "Sun Country provides safe, reliable, hassle-free flights at affordable prices with warm and friendly service. Sun Country’s mission is to connect guests to their favorite people and places, to create lifelong memories and transformative experiences.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -313,128 +239,395 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e36fba44a7b597fe",
+      "title": "Baggage/Luggage and Seat Help - Sun Country Airlines",
+      "url": "https://www.suncountry.com/help-center/bags-and-seats",
+      "summary": "Get help and learn more about Sun Country baggage/luggage options and policies, delayed or damage bags, and seat assignments.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2c2a12fd1cd5cefa",
+      "title": "Best seats in the sky: A guide to our seating options - Stories",
+      "url": "https://stories.suncountry.com/post/best-seats-in-the-sky-a-guide-to-our-seating-options",
+      "summary": "Explore Sun Country Airlines' optimal seating options for your journey. From extra legroom to premium perks, find your perfect seat with us!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8083d02d82844cbd",
+      "title": "Bridge Pilot Program | Careers",
+      "url": "https://careers.suncountry.com/bridge-pilot-program",
+      "summary": "Start your career with Sun Country Airlines' in our Bridge Pilot Program. Designed for aspiring pilots entrolled at SDSU, UND and MSU, this program offers college graduates with the technical knowledge of the B-737, SOPs, and leadership abilities.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "273225d9ca72deff",
+      "title": "Careers | Sun Country Airlines",
+      "url": "https://careers.suncountry.com/",
+      "summary": "Discover careers at Sun Country Airlines. Join a dynamic and innovative airline that prioritizes safety, connection, and growth. Explore roles across our operations, from pilots to customer service, and become part of a team dedicated to making travel more attainable.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3e060b799ff6c5b8",
+      "title": "Cheap Flights from Minneapolis/St. Paul | Sun Country",
+      "url": "https://www.suncountry.com/flights/en/flights-from-minneapolis-st-paul",
+      "summary": "Save with nonstop low fares from Minneapolis/St. Paul on Sun Country. Enjoy comfortable seating with onboard power. Inflight Entertainment. Bundle Flights, Rental Cars & Hotels.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c4fb99a64be4dea6",
+      "title": "Cities near St. Louis",
+      "url": "https://citiesnear.com/St--Louis",
+      "summary": "Find destinations nearby to plan a road trip from St. Louis.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3de424f9b2212cce",
+      "title": "Cities Nearby Saint Louis, Missouri, United States",
+      "url": "https://www.thecitiesnow.com/united_states/missouri/saint_louis",
+      "summary": "Find five hundred cities near Saint Louis, Missouri, United States from closest to farthest by distance. Distances from Saint Louis to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8d9601b91a8806f9",
+      "title": "Featured Fares | Sun Country Airlines",
+      "url": "https://www.suncountry.com/flights/en/deals",
+      "summary": "Sun Country Airlines offers cheap flights, hotels, and car rental bundles.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5a0e4e3942ca4ef8",
+      "title": "Low Fare Map - Sun Country Airlines",
+      "url": "https://www.suncountry.com/flights/en/low-fare-map",
+      "summary": "Find Cheap Flights from your origin airport with the Sun Country Airlines Low Fare Map and Save on low fares today!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a0da1091df5e04eb",
+      "title": "Route Map - Sun Country Airlines",
+      "url": "https://www.suncountry.com/route-map",
+      "summary": "Sun Country offers flights across the U.S. as well as to beach destinations in Mexico, Central America, and the Caribbean.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "639774d40c0f015f",
+      "title": "Sun Country Airlines - Low Fares. Nonstop Flights.",
+      "url": "https://www.suncountry.com/",
+      "summary": "Sun Country Airlines offers affordable flights and vacation packages to destinations across the U.S. and in Mexico, Central America, and the Caribbean.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "325250c795952960",
+      "title": "The 10 Best Small Towns to Visit Near St. Louis, Missouri",
+      "url": "https://todostl.com/f/the-10-best-small-towns-to-visit-near-st-louis-missouri",
+      "summary": "From historic sites to scenic views, these towns capture the essence of Missouri’s beauty and culture. Here are the top 10 small towns near St. Louis that you won’t want to miss.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5b2c6716c2e32366",
+      "title": "Downloads | Pimax",
+      "url": "https://www.pimax.com/support/downloads",
+      "summary": "Software, firmware, drivers, and documentation for all Pimax products.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "firmware"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "hack"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5190d0af84e59706",
+      "title": "Pimax Day 2026 – Pimax Store - me.pimax.com",
+      "url": "https://me.pimax.com/pages/pimax-day-2026",
+      "summary": "Pimax latest deal: Best value pcvr headsets in 2026,high resolution and PPD, and Eye-tracking, free Shipping and protection.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
         "model",
-        "retail"
+        "tool",
+        "sdk"
       ],
       "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f81b34492b11ad04",
-      "title": "Priceline.com - The Best Deals on Hotels, Flights and Rental Cars.",
-      "url": "https://www.priceline.com/",
-      "summary": "Deep Discounts on Hotels, Flights and Rental Cars. Get Exclusive Savings with Priceline.com.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1cb3b468cf1b2cc5",
-      "title": "Sign In - groupdeals.priceline.com",
-      "url": "https://groupdeals.priceline.com/login/",
-      "summary": "Sign In - groupdeals.priceline.com ... Sign In",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9867731f2bcf90b2",
-      "title": "We Guarantee the lowest price - Priceline.com",
-      "url": "https://img1.priceline.com/static-pages/best-price-guarantee.html",
-      "summary": "The lower price must be an exact match to the itinerary booked on priceline.com, including offering a comparable cancellation policy. For reservations that are not pre-paid, we will either help you cancel your reservation so you can rebook at the lower price, or we will refund 100% of the difference after travel is completed.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "policy",
-        "retail"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d35d4e14c6033322",
-      "title": "A Study in Scarlet - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/A_Study_in_Scarlet",
-      "summary": "Published in 1887, the story marks the first appearance of Sherlock Holmes and Dr. Watson, who would go on to become one of the most well-known detective duos in literature.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "study"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
         "reject_noise"
       ],
       "triage_priority": "low",
@@ -443,18 +636,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "de5bbfe02ee775fb",
-      "title": "Best OEM website for Tundra parts diagrams",
-      "url": "https://www.tundras.com/threads/best-oem-website-for-tundra-parts-diagrams.161669/",
-      "summary": "2014 Super White Tundra SR5 CrewMax 4x4 bradleydavidgood [OP] initial post: ↑ Hi, What is the best website for OEM Tundra parts diagrams and parts lookup? For example, I would like to find the bolts that hold the skid plate up. The one you remove when you change the oil. But many other times I want to search all kinds of parts too. Thanks!",
+      "id": "bc3fc10d3404f798",
+      "title": "#1 yaoi hater (@myreadingmanga) / X",
+      "url": "https://x.com/myreadingmanga",
+      "summary": "Only approved followers can see @myreadingmanga’s posts.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "oem"
-      ],
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
@@ -472,10 +663,118 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b23f91efce1e9d7a",
-      "title": "Any Major problems with the 2026's | Toyota Tundra Forum",
-      "url": "https://www.tundras.com/threads/any-major-problems-with-the-2026s.171575/",
-      "summary": "Any Major problems with the 2026's Discussion in ' 3rd Gen Tundras (2022+) ' started by blittlej, May 12, 2026.",
+      "id": "4dee4c76d85ac97a",
+      "title": "Affiliate Portal",
+      "url": "https://affiliate.pimax.com/",
+      "summary": "Join the Pimax Affiliate Program to earn rewards by promoting innovative VR products and services. Sign up now to start your journey!",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8db55bd94916f004",
+      "title": "Common error codes and solutions : Pimax Support",
+      "url": "https://support.pimax.com/en/support/solutions/articles/60001644623-common-error-codes-and-solutions",
+      "summary": "Open the Pimax Play main interface, then click the blue icon next to \"Device Not Connected\" .",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71fba25d7ff4bc67",
+      "title": "Is myreadingmanga.info Down Right Now? Live Status | DownOrNot",
+      "url": "https://downornot.net/check/myreadingmanga.info",
+      "summary": "Check real-time status, uptime history, and global outage reports.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b47d9b65289e4fc6",
+      "title": "Is Myreadingmanga.info down? Live status and problems past 24 hours",
+      "url": "https://downforeveryoneorjustme.com/myreadingmanga.info",
+      "summary": "Live problems for Myreadingmanga.info. Error received? Down? Slow? Check what is going on.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2dbef2f1e0ee85a0",
+      "title": "Is the site down?? : r/MyReadingManga - Reddit",
+      "url": "https://www.reddit.com/r/MyReadingManga/comments/1at8x5x/is_the_site_down/",
+      "summary": "They may have traced deep into the western websites to see how far these leaks have reached and Myreadingmanga is one of the few that is a lot of p*rated works that are unverified.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -500,39 +799,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9720b1fdcbbf6f12",
-      "title": "Best head unit for complete system upgrade - Toyota Tundra Forum",
-      "url": "https://www.tundras.com/threads/best-head-unit-for-complete-system-upgrade.139193/",
-      "summary": "Best head unit for complete system upgrade Discussion in ' Audio & Video ' started by LSU777, Mar 8, 2024.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "485eb08bdfac0f4a",
-      "title": "Category:Rowley Jefferson's Awesome Friendly Adventure - Diary of a ...",
-      "url": "https://diary-of-a-wimpy-kid.fandom.com/wiki/Category:Rowley_Jefferson%27s_Awesome_Friendly_Adventure",
-      "summary": "These are things related to/in Rowley Jefferson's Awesome Friendly Adventure.",
+      "id": "aa943f8029cd68aa",
+      "title": "Login - Pimax Store",
+      "url": "https://affiliate.pimax.com/login",
+      "summary": "CUSTOM DOMAINS ARE NOT SUPPORTED ON THE FREE PLAN. PLEASE UPGRADE YOUR PLAN TO USE THE CUSTOM DOMAIN. CONTACT admin@goaffpro.com TO UPGRADE",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -556,40 +826,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f553e367dbf0f75b",
-      "title": "Discussion Topics | Toyota Tundra Forum",
-      "url": "https://www.tundras.com/forums/",
-      "summary": "Discussion forum for Tundra owners, enthusiasts and modders. Learn about your truck and talk with other owners! Show off your Tundra in the free gallery.",
+      "id": "1cf19d1a7ea267c8",
+      "title": "My Reading Manga",
+      "url": "https://myreadingmangas.com/",
+      "summary": "NSFW Read Yaoi, Bara manga, Yaoi Anime, Gay Movies, and Doujinshi Online.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "47cf5ea75c420021",
-      "title": "Fan Casting Sherlock Holmes in Rowley Jefferson's Awesome Friendly ...",
-      "url": "https://www.mycast.io/stories/rowley-jefferson-s-awesome-friendly-adventure/roles/sherlock-holmes/5131512",
-      "summary": "Who do you think should play Sherlock Holmes in Rowley Jefferson's Awesome Friendly Adventure? Vote now! myCast lets YOU choose your dream cast to play each role in upcoming movies and TV shows.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -611,12 +853,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9b4284fb2b455454",
-      "title": "List of actors who have played Sherlock Holmes - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/List_of_actors_who_have_played_Sherlock_Holmes",
-      "summary": "Sherlock Holmes is the most portrayed literary human character in film and television history, having appeared on screen 254 times as of 2012. [1] Additionally, many actors have portrayed Sherlock Holmes in audio dramas and stage productions.",
+      "id": "485e974d8bb017c9",
+      "title": "My Reading Manga - MangaDex",
+      "url": "https://mangadex.org/list/596376ce-9914-47cf-a246-ed252a358f26/my-reading-manga",
+      "summary": "Read comics and manga online at MangaDex, with high quality images and support creators and translators!",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -638,10 +880,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3cd98f23c0c67b5d",
-      "title": "List of maintenance items and intervals | Toyota Tundra Forum",
-      "url": "https://www.tundras.com/threads/list-of-maintenance-items-and-intervals.165920/",
-      "summary": "Hi, I wish to compile a list of maintenance items for the 3rd Gen Tundra so that people know what to change. Intervals specified by the official...",
+      "id": "0f3cd54279ced7d5",
+      "title": "My Reading Manga — Manga, Manhwa and Manhua Library",
+      "url": "https://myreadingsmanga.com/",
+      "summary": "Read manhwa, manhua and manga free — start a series, keep your place, come back for the next chapter.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -653,8 +895,7 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk",
-        "community"
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -666,10 +907,37 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "905e3d985c103ac6",
-      "title": "Manual transmission converted Tundra! | Toyota Tundra Forum",
-      "url": "https://www.tundras.com/threads/manual-transmission-converted-tundra.55086/",
-      "summary": "Manual transmission converted Tundra! Discussion in ' New Member Introductions ' started by Northboundtundra, Oct 19, 2019.",
+      "id": "dcd044a219521eb9",
+      "title": "MyReadingManga",
+      "url": "https://myreadingmanga.info/",
+      "summary": "MyReadingManga",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "28912a4a36c54af5",
+      "title": "MyReadingManga - Reddit",
+      "url": "https://www.reddit.com/r/MyReadingManga/about/",
+      "summary": "r/MyReadingManga: Read Bara, shota, furry, yaoi manga and doujinshi online for free. BL Anime, Gay movie and much more online.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -694,270 +962,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5a6e43acb1302f03",
-      "title": "Marketplace - Wheels & Tires - Toyota Tundra Forum",
-      "url": "https://www.tundras.com/forums/marketplace-wheels-tires.49/",
-      "summary": "Classifieds for wheels and tires Welcome to Tundras.com! You are currently viewing as a guest! To get full-access, you need to register for a FREE account.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "565467c3413eb0e2",
-      "title": "Rowley Jefferson's Awesome Friendly Adventure",
-      "url": "https://en.everybodywiki.com/Rowley_Jefferson%27s_Awesome_Friendly_Adventure",
-      "summary": "Thor, Minotaur, Huckleberry Finn, Cowardly Lion, Sherlock Holmes, and Garg were all turned into stone by Medusa. Rowley found a One-Eyed Witch and turned all the statues to normal, so they added them to the mission.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b6e2a09d6cbeda5",
-      "title": "Rowley Jefferson's Awesome Friendly Adventure - Goodreads",
-      "url": "https://www.goodreads.com/book/show/54837107",
-      "summary": "Rowley kirjoittaa fantasiaromaania, joka kertoo äitiään pelastamaan lähtevästä Roland-sankarista ja hänen ystävistään, joihin sisältyvät muun muassa Sherlock Holmes, vampyyri/ihmissusi (kaikkien tyttöjen suosikkihahmo, tietysti) ja lehmäkentauri Stephen.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "06afabff075d90b7",
-      "title": "ROWLEY JEFFERSON'S AWESOME FRIENDLY ADVENTURE - Kirkus Reviews",
-      "url": "https://www.kirkusreviews.com/book-reviews/jeff-kinney/rowley-jeffersons-awesome-friendly-adventure/?page=6",
-      "summary": "Rowley’s previous adventure breathed new life into the Wimpy Kid franchise, but here Rowley comes into his own as a driving force. This entry improves upon its predecessor in every way: The gags are funnier, the storytelling is sharper, and the characters are crisper.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e2aaa5577789228f",
-      "title": "Sherlock Holmes Fan Casting for Rowley Jeffersons Awesome Friendly ...",
-      "url": "https://www.mycast.io/stories/rowley-jeffersons-awesome-friendly-adventure/roles/sherlock-holmes/1370378",
-      "summary": "Who do you think should play Sherlock Holmes in Rowley Jeffersons Awesome Friendly Adventure? Vote now! myCast lets YOU choose your dream cast to play each role in upcoming movies and TV shows.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "51c63f3ded0980e8",
-      "title": "Sherlock Holmes | Diary of a Wimpy Kid Wiki | Fandom",
-      "url": "https://diary-of-a-wimpy-kid.fandom.com/wiki/Sherlock_Holmes",
-      "summary": "He appears in Rowley Jefferson's Awesome Friendly Adventure when he is trying to solve the disappearances of the people who ventured into Razor Range, later joining the questing party of Roland the Kind.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "400214cc7029e05e",
-      "title": "Toyota Tundra Discussion Forum",
-      "url": "https://www.tundratalk.net/threads/vibration-may-finally-be-solved.602881/",
-      "summary": "Toyota Tundra Discussion Forum",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3d1cf1133ebdcfcd",
-      "title": "Tundra Model Codes - Toyota Tundra Forum",
-      "url": "https://www.tundras.com/threads/tundra-model-codes.135824/",
-      "summary": "Tundra Model Codes Discussion in ' 3rd Gen Tundras (2022+) ' started by nodak67, Jan 3, 2024.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0b4ce815ee532611",
-      "title": "Tundras.com | Toyota Tundra Forum",
-      "url": "https://www.tundras.com/",
-      "summary": "Discussion forum for Tundra owners, enthusiasts and modders. Learn about your truck and talk with other owners! Show off your Tundra in the free gallery.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "55af5303e8854fe2",
-      "title": "5 Common Activities That Cause or Worsen Spider and Varicose ...",
-      "url": "https://www.everydayhealth.com/skin-care/everyday-habits-that-can-cause-spider-and-varicose-veins/",
-      "summary": "Staying in one position — seated or standing — for long stretches of time can allow blood to pool in your legs, which can worsen varicose and spider veins because it increases pressure in...",
+      "id": "7a79f24930cdd97e",
+      "title": "mywebiste · GitHub",
+      "url": "https://gist.github.com/maledonato/2eeb8325437f4b93d9e823d65a1a97b7",
+      "summary": "mywebiste. GitHub Gist: instantly share code, notes, and snippets.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "github"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -967,23 +990,24 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "23bb8f2994c9152a",
-      "title": "7 tips to lower varicose vein risk - Mayo Clinic Health System",
-      "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/7-tips-to-lower-varicose-vein-risk",
-      "summary": "Standing or sitting for an extended period can decrease blood circulation in your legs and increase your risk for developing varicose veins. Many careers, especially those in health care or factory work, require people to stand on their feet most of the day.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "6ab9bda943830450",
+      "title": "Pimax - Wide FOV VR Headsets for Simulation & Beyond",
+      "url": "https://www.pimax.com/",
+      "summary": "Discover Pimax VR headsets: Crystal Super 8K, Crystal Light, Dream Air. Industry-leading FOV for flight simulation, sim racing, and immersive VR experiences.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -993,10 +1017,119 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7f70514ec4631bfa",
-      "title": "Best Time to Visit Chile | Acqua Travels",
-      "url": "https://www.acqua.travel/best-time-to-visit/chile",
-      "summary": "January - REVEL IN CHILE’S PEAK SUMMER VIBES January is the heart of Chile’s summer, drawing crowds with warm, sunny weather perfect for exploring Patagonia’s Torres del Paine National Park, where temperatures reach 11°C to 20°C (52°F to 68°F). The long daylight hours are ideal for hiking the W Trek or cruising the fjords near Punta Arenas. Santiago buzzes with vibrant energy, though ...",
+      "id": "35ae4d24b6667a3f",
+      "title": "Pimax | Highest Clarity VR Headsets – Pimax Store",
+      "url": "https://store.pimax.com/",
+      "summary": "Pimax: Leading Innovator in Wide-FOV & High-Resolution VR Headsets for Gaming & Simulation. Dive into a world of unparalleled clarity and immersion with our high-end VR headsets.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "352f28a1b8d8f684",
+      "title": "Pimax小派",
+      "url": "https://cn.pimax.com/",
+      "summary": "Pimax官方网站提供虚拟现实头显及相关产品，致力于为用户带来沉浸式的多维空间体验。",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4ecc923e3c51d30e",
+      "title": "Purchase | Pimax Dream Air",
+      "url": "https://cn.pimax.com/products/pimax-dream-air",
+      "summary": "Pimax Dream Air is impressively lightweight for a full-featured VR headset. It offers 8K resolution with 3840×3552 pixels per eye and a 90Hz refresh rate on a Micro - OLED screen, presenting sharp and smooth images. It also features integrated eye-tracking, hand-tracking, inside-out tracking, and spatial audio, all while using a Display Port connection.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "teardown"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "10aba559741c1586",
+      "title": "Spanish Archives - Read Bara Manga Online",
+      "url": "https://baramangaonline.com/category/languages/spanish/",
+      "summary": "[SPA] Chabashira Tatsukichi 茶柱立吉 (Ocha Ocha Honpo おちゃおちゃ本舗) – Los Gritos Nocturnos del Carbonero en el Bosque",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "03c0047cffef340e",
+      "title": "Annoyed with Lowes over abandoning Kobalt. | 5thGenRams Forum",
+      "url": "https://5thgenrams.com/community/threads/annoyed-with-lowes-over-abandoning-kobalt.4456/",
+      "summary": "So, contrary to earlier widespread reports, Lowes is in fact abandoning Kobalt hand tools for Craftsman. Now, I have boxes full of generations of REAL Craftsman tools, but I stopped even looking at them after Stanley Black & Decker bought the brand because they further cheapened their design...",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1007,9 +1140,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1019,12 +1152,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6493e30aa185b16b",
-      "title": "Bonjour - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Bonjour",
-      "summary": "Bonjour is a French word meaning (literally translated) \"good day\", and is commonly used as a greeting. It is the standard, polite way to acknowledge someone during the daytime hours.",
+      "id": "6109f9dfe2ee0ed3",
+      "title": "c - What is newline character -- '\\n' - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/3267311/what-is-newline-character-n",
+      "summary": "Escape characters are dependent on whatever system is interpreting them. \\n is interpreted as a newline character by many programming languages, but that doesn't necessarily hold true for the other utilities you mention.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1045,12 +1178,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4e5e036700ca4bc0",
-      "title": "BONJOUR translation in English | French-English Dictionary | Reverso",
-      "url": "https://dictionary.reverso.net/french-english/bonjour",
-      "summary": "Translations of “bonjour” into English: hello, goodbye, well, that's just great. Interjection, noun, definitions, pronunciation, synonyms, idiomatic expressions in French, and examples in context from the Reverso Dictionary.",
+      "id": "4c312bdfa7e462c8",
+      "title": "ConvertKit",
+      "url": "https://app.convertkit.com/forms/success?form_id=5282611",
+      "summary": "Want to grow your own audience? The best creators on the web use ConvertKit to build their audiences.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c165ea3424bf6f0f",
+      "title": "ConvertKit",
+      "url": "https://forms.convertkit.com/175463?v=6",
+      "summary": "Subscribe (free!) to my newsletter with updates and tips PLUS get instant access to my resource library with this file and all of my other free files, printables, and patterns! Once subscribed, I will send you a newsletter with details about my new free files each week.\\/p>\\n \\/div>\\n \\/div>\\n\\n",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0a9429b8302b7fbb",
+      "title": "ConvertKit Migrations",
+      "url": "https://migrations.convertkit.com/reset_password",
+      "summary": "Lorem ipsum dolor sit amet, elit. Lorem ipsum dolor sit amet, elit.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1071,10 +1256,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0a6309e322080984",
-      "title": "Chile in January: Weather, Tips and More I Bookmundi",
-      "url": "https://www.bookmundi.com/ng/chile-in-january-all-you-need-to-know",
-      "summary": "Planning a vacation to Chile in January? Pretty scenery and festivals in different destinations are just some of the perks of visiting the country in January.",
+      "id": "425505f4fe1bd58b",
+      "title": "Don't buy anything that needs installation from LOWES! (Punta Gorda ...",
+      "url": "https://www.city-data.com/forum/port-st-lucie-sebastian-vero-beach/2986724-dont-buy-anything-needs-installation-lowes.html",
+      "summary": "November 16, 2018 - Lowes on St Lucie West Blvd, Port St Lucie,FL I bought a new refrigerator to replace the one I have that died. I was very specific about everything, even the door opening on the right, an ice maker, and the fact that it was available to be delivered immediately. I spent an entire DAY calling everywhere for this.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1085,9 +1270,10 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1097,194 +1283,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c452a2d907fdcd77",
-      "title": "English translation of 'bonjour' - Collins Online Dictionary",
-      "url": "https://www.collinsdictionary.com/dictionary/french-english/bonjour",
-      "summary": "English Translation of “BONJOUR” | The official Collins French-English Dictionary online. Over 100,000 English translations of French words and phrases.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0046231a037542d9",
-      "title": "Houtlook tegels (2026): 80+ Vloer- & Wandtegels - TegelMegaStore",
-      "url": "https://tegelmegastore.nl/pages/houtlook-tegels",
-      "summary": "Het juiste duurzame keramische parket beschermt tegen vocht en vuil en is makkelijk in onderhoud. Daarnaast kun je kiezen uit diverse kleuren houtlook, waardoor je de vloer of wand helemaal laat aansluiten bij jouw voorkeuren.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6f53185d1cfaaa6d",
-      "title": "Houtlook tegels 20×120 cm | De Vloerenman IJsselstein",
-      "url": "https://www.vloerenmantegels.nl/tegels/houtlook-tegels-20x120-cm/page/5/",
-      "summary": "Prachtige houtlook tegels 20×120 van keramiek Houtlook tegels van 20×120 cm maken uw woning helemaal af. Dankzij de afmetingen en de unieke afwerking zijn ze niet te onderscheiden van een echte houten vloer.Deze keramische tegels, ook wel keramisch parket genoemd, van de Vloerenman zijn perfect voor vloerverwarming en zijn van hoge kwaliteit.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b4813e9e4bbe85ad",
-      "title": "Houtlook Tegels Kopen | Vanaf €22,95/m² | Tegels in Huis",
-      "url": "https://www.tegelsinhuis.nl/houtlook-tegels/",
-      "summary": "Houtlook tegels combineren het beste van twee werelden: de natuurlijke schoonheid van hout met de duurzaamheid van keramiek. Bij Tegels in Huis vind je meer dan 88 houtlook tegels in diverse kleuren, formaten en legpatronen.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7afba22bbaf2f33e",
-      "title": "Houtlook tegels kopen – groot assortiment | Jan Groen Tegels",
-      "url": "https://www.jangroentegels.nl/tegels/houtlook/",
-      "summary": "Met 200.000 vierkante meter en 1.500 verschillende soorten tegels heeft Jan Groen een enorme tegelvoorraad. Wat op voorraad is, kan direct worden besteld en bij ons worden opgehaald.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6d8a7a95a065f9b4",
-      "title": "Houtlook tegels kopen — 203 soorten uit voorraad",
-      "url": "https://www.rbtegels.nl/houtlook-tegels/",
-      "summary": "Houtlook tegels in visgraat, plank en tegelvorm. 203 soorten, veel direct leverbaar. Gratis bezorgd vanaf 50 m².",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9b9ef422191f1caf",
-      "title": "Mayo Clinic",
-      "url": "https://www.mayoclinic.org/diseases-conditions/spider-veins/symptoms-causes/syc-20314661",
-      "summary": "Mayo Clinic",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1fb2159c03c555ac",
-      "title": "NBC News – Breaking Headlines and Video Reports on World, U.S ...",
-      "url": "https://www.nbcnews.com/",
-      "summary": "Women are collaborators and subjects of ridicule in the influencer’s online world. The dynamic is under new scrutiny as he faces criminal charges.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "id": "515c9ef91a0d9d52",
+      "title": "engo3 is everything you have asked for. - YouTube",
+      "url": "https://m.youtube.com/watch?v=kwgd7nXIRos",
+      "summary": "Meet the engo3 — the smartest way to train.Stop looking down. The engo3 are connected sports glasses that bring your performance data directly into your fiel...",
+      "discovery_channel": "broad_web+retail",
+      "query": "ENGO smart glasses; titanium AI glasses ChatGPT site:walmart.com",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1305,12 +1309,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d0d007dca6b09a50",
-      "title": "Phil Weintraub card - Net54baseball.com Forums",
-      "url": "https://www.net54baseball.com/showthread.php?t=79931",
-      "summary": "Net54baseball.com Forums > Net54baseball Main Forum - WWII & Older Baseball Cards > Net54baseball Vintage (WWII & Older) Baseball Cards & New Member Introductions Phil Weintraub card",
+      "id": "2f29bb02dd724fe1",
+      "title": "HK subwoofer ohm rating | 5thGenRams Forum",
+      "url": "https://5thgenrams.com/community/threads/hk-subwoofer-ohm-rating.17630/",
+      "summary": "I am looking to disconnect the factory hk sub and put an aftermarket under rear seat. I want to use the factory amp. I wondered if anyone knows the impedance of the factory sub. I don't want to fry my amp. 2019 Ram 1500 Laramie. U connect 12\" with Harmon Karson System.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1331,12 +1335,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "870fea66dde20771",
-      "title": "Spider veins - Mayo Clinic Connect",
-      "url": "https://connect.mayoclinic.org/discussion/spider-veins/",
-      "summary": "\"Avoid sitting or standing for too long at a time. Take a quick break every 30 minutes if sitting too long. Avoid wearing tight clothing. Exercise regularly. Moving can help increase blood flow in your legs. Keep a weight that’s healthy for you. Elevate your legs regularly.",
+      "id": "82da6067a3824a0d",
+      "title": "Huawei Technical Support",
+      "url": "https://support.huawei.com/supportindex/index",
+      "summary": "Carrier Support. Serves Huawei's carrier customers with a suite of comprehensive technical support services including product documents, software downloads, troubleshooting cases,",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1357,12 +1361,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "82db4094d658c3e1",
-      "title": "Spider Veins: Causes, Symptoms & Treatment - Cleveland Clinic",
-      "url": "https://my.clevelandclinic.org/health/diseases/24567-spider-veins",
-      "summary": "Spider veins are damaged blood vessels under your skin that look red, blue or purple. They’re harmless but may signal serious blood flow issues that need treatment.",
+      "id": "2e2c015f796a0490",
+      "title": "Kit",
+      "url": "https://api.convertkit.com/landing_pages/80634/subscribe",
+      "summary": "Sweet! You've subscribed. Now check your email for the link. Awesome! Check your email to get your ebook!",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bbd8ff60848ca5de",
+      "title": "Kit",
+      "url": "https://api.convertkit.com/landing_pages/339709/subscribe",
+      "summary": "Want to grow your own audience? The best creators on the web use Kit to build their audiences.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5ea2bdcff1d5fbb",
+      "title": "Kit",
+      "url": "https://preview.convertkit.com/preferences",
+      "summary": "This is a preview page for the subscriber profile update form. A last_name field will be shown if that field is used in your account.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1383,12 +1439,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "89bb9ec3a074a876",
-      "title": "Tegels & PVC vloeren kopen en laten leggen | De Vloerenman ...",
-      "url": "https://www.vloerenmantegels.nl/",
-      "summary": "We verkopen niet alleen tegels, we verkopen complete vloeren. Sinds 1999 verzorgen we de hele vloer, zodat jij je op andere zaken kunt focussen. Centraal in Nederland, vanuit IJsselstein.",
+      "id": "eefade45dcdcc55b",
+      "title": "Log In - ConvertKit",
+      "url": "https://forms.convertkit.com/448916?v=7",
+      "summary": "Success! Now check your email, which contains the link to the quiz. \\n \\n\\n \\n \\n \\n \\n \\n \\n \\n",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1409,12 +1465,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a864b5cc58039eea",
-      "title": "Tegels IJsselstein | Showroom op 15 minuten — Tegeleend",
-      "url": "https://tegeleend.nl/pages/tegels-ijsselstein-stijlvolle-wand-en-vloertegels",
-      "summary": "Wij voeren een breed assortiment houtlook-tegels in verschillende formaten, kleuren en nerfpatronen. Kom langs in de showroom om samples te zien en te vergelijken — beeldmateriaal op een scherm geeft nooit hetzelfde beeld als het echte product onder daglicht.",
+      "id": "8b07b28f33f54868",
+      "title": "Log In - Kit",
+      "url": "https://cksn.convertkit.com/users/login",
+      "summary": "Log in to your Kit account and connect with your audience.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1435,10 +1491,62 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1a0481a6f4dd72e0",
-      "title": "Translate \"BONJOUR\" from French into English | Collins French-English ...",
-      "url": "https://www.collinsdictionary.com/us/dictionary/french-english/bonjour",
-      "summary": "French-English translation of \"BONJOUR\" | The official Collins French-English Dictionary with over 100,000 English translations.",
+      "id": "819877c530a10331",
+      "title": "Louisville, Tennessee (TN 37777) profile: population, maps, real estate ...",
+      "url": "https://www.city-data.com/city/Louisville-Tennessee.html",
+      "summary": "Louisville, Tennessee detailed profile Mean prices in 2024: all housing units: $789,811; detached houses: $836,311; townhouses or other attached units: $952,641; mobile homes: $54,398 Median gross rent in 2024: $960. December 2024 cost of living index in Louisville: 80.3 (low, U.S. average is 100) Louisville, TN residents, houses, and apartments details Percentage of residents living in ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "93b178f1775382ab",
+      "title": "Mansion off of Callaghan... (San Antonio, Van: house, live, Lowes ...",
+      "url": "https://www.city-data.com/forum/san-antonio/1370906-mansion-off-callaghan-2.html",
+      "summary": "The one that comes to my mind was the former estate of oilman Strauder G. Nelson. It was the mansion that sat high on top of a hill, and was torn down to make way for the Lowe's that is there now. You could actually see it from Chacho's front patio. The mansion originally faced the point where Tupelo curved around and intersected with Kenney Road (now part of Callaghan Road). Mockingbird Lane ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b5f9b068fadf9f77",
+      "title": "Michael's Toyota of Bellevue | Toyota dealership in Bellevue, WA near ...",
+      "url": "https://www.toyotaofbellevue.com/",
+      "summary": "For two decades, Toyota of Bellevue has been the top volume dealership for Toyota in the Pacific Northwest. Find out why customers love our services and vehicles by visiting our dealership and viewing our expansive inventory.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1461,12 +1569,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "39abb0f8f37ce44e",
-      "title": "Varicose veins - Symptoms and causes - Mayo Clinic",
-      "url": "https://www.mayoclinic.org/diseases-conditions/varicose-veins/symptoms-causes/syc-20350643",
-      "summary": "This common condition causes lines or cords to develop under the skin. Learn self-care steps to take and what treatments there are.",
+      "id": "bac175c013822eca",
+      "title": "Microsoft Teams",
+      "url": "https://teams.microsoft.com/v2/%C2%A0",
+      "summary": "Oops, unknown error!",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1487,12 +1595,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c0c3d21a63ac3597",
-      "title": "What is chronic venous insufficiency? - Mayo Clinic Press",
-      "url": "https://mcpress.mayoclinic.org/living-well/what-is-chronic-venous-insufficiency/",
-      "summary": "Deep vein thrombosis (DVT), in which a blood clot in the leg blocks blood from flowing freely Leg injury or surgery that blocks flow through a leg vein Excess weight or lack of exercise Repeatedly standing or sitting for prolonged periods of time Leg veins and valves may be damaged or not work properly due to other factors as well.",
+      "id": "26a34a795c3d43a7",
+      "title": "N With Accent Marks on Keyboard (ñ, Ñ, ń, Ń, ň, Ň) — Windows, Mac, Word ...",
+      "url": "https://howtotypeanything.com/n-with-accent/",
+      "summary": "“N with accents” means the letter N with a small mark added to change pronunciation or spelling in certain languages. Most people who search “n with accent” actually mean ñ (N with tilde), used in Spanish words like niño and jalapeño.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1513,12 +1621,586 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2f5042208843ca24",
-      "title": "华为企业业务官网-迈向行业全面智能化 - Huawei Enterprise",
-      "url": "https://e.huawei.com/cn/",
-      "summary": "面对智能时代的机遇与挑战，华为引领数智基础设施，深入场景，赋能千行万业，携手合作伙伴和客户迈向行业全面智能化。",
+      "id": "a1af6c0119978267",
+      "title": "New & Used Toyota Dealer | Rodland Toyota of Everett",
+      "url": "https://www.rodlandtoyota.com/",
+      "summary": "Rodland Toyota of Everett in Everett, WA offers new and used Toyota cars, trucks, and SUVs. Visit us for sales, financing, service, and parts today!",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8f1846331f2c1397",
+      "title": "New & Used Toyota Dealership in Burien Washington | Burien Toyota",
+      "url": "https://www.burientoyota.com/",
+      "summary": "Discover great deals on new & used Toyota vehicles at Burien Toyota. Serving the Seattle area with expert service, financing, & large inventory! Stop in today!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e1dbf55cb83c7f1e",
+      "title": "New Cars for Sale in Seattle, WA | New Car Dealer in Seattle, WA",
+      "url": "https://www.toyotaofseattle.com/inventory/new",
+      "summary": "Use your visit to compare Toyota options by seating position, cargo access, visibility, and the way each option fits your normal driving in Seattle, WA. You can also use our digital tools to value your trade or explore financing options before visiting the dealership.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cf80485cc3a59354",
+      "title": "Newsletters for Creat s - media.convertkit.com",
+      "url": "https://media.convertkit.com/2021/04/CONVERTKIT-finalnewslettercourse-script.pdf",
+      "summary": "CONVERTKIT.COM Feel free to access that step by step newsletter landing page goals sheet in your course workbook, which you can grab in the resource section of this module. I’ll see you in the next lesson, where we’ll walk through a demo of putting it all into action by creating a high-converting newsletter landing page right inside ConvertKit",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b285682ed32139d",
+      "title": "Nice small towns outside Charlottesville (Richmond, Harrisonburg ...",
+      "url": "https://www.city-data.com/forum/charlottesville/1276372-nice-small-towns-outside-charlottesville.html",
+      "summary": "There is a large shopping district with the popular big box stores like Lowes, Home Depot, & Walmart Supercenter and the newer Waynesboro Town Center has Target, Kohls, Bed Bath & Beyond,etc.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f95ab196d579550c",
+      "title": "Nnn… Nest in the Tree | N is for Nest Song | Phonics & Alphabet ...",
+      "url": "https://www.youtube.com/watch?v=_BHnPrnpWkE",
+      "summary": "Nest in the Tree” from KidsCraft Network’s Phonics & Alphabet A–Z Series 🪺🌙 This calm and cozy phonics song introduces the /n/ sound of the letter N with examples like Nest, Net, Night, Nine,...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f5b3e604ea78072",
+      "title": "Phonemic Awareness & Phonics - Letter N n - Super Teacher Worksheets",
+      "url": "https://www.superteacherworksheets.com/letter-n.html",
+      "summary": "Learn to recognize, write, and pronounce the letter N n. Phonics, phonemic awareness, and handwriting printables.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "89410bdbfba3e33d",
+      "title": "railroad ties wanted (Graham, Spencer: Home Depot, rail, Lowes ...",
+      "url": "https://www.city-data.com/forum/charlotte/380433-railroad-ties-wanted.html",
+      "summary": "railroad ties wanted (Graham, Spencer: Home Depot, rail, Lowes) - Charlotte - North Carolina (NC) -North Carolina's banking hub forum. Discuss Charlotte housing, Queen City professional life, and relocation advice for the Metrolina area.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "10ed66e406b95235",
+      "title": "Replacement for DTC cabinet hinge? (Home Depot, Lowes, furniture ...",
+      "url": "https://www.city-data.com/forum/house/2302395-replacement-dtc-cabinet-hinge.html",
+      "summary": "Lowes/Home Depot carries replacement hinges for most cabinets. Make sure you get the exact one, as many look alike with tiny differences.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be86b5c7cb65ad39",
+      "title": "Reset your password - Kit",
+      "url": "https://cksn.convertkit.com/users/password/new",
+      "summary": "Forgot your password? Enter the email address you use to log in and we’ll send you a link to reset your password.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0620fb3125305829",
+      "title": "Saturday! Huge Flea Market for Autism (Lowes Foods Davidson)",
+      "url": "http://www.jlaforums.com/viewtopic.php?t=53051341",
+      "summary": "Autism Fundraiser! Many vendors, raffle prizes, an auction and a cookout! Garage sale items as well. Something for everyone. All proceeds will go to Autism Speaks. Raffles/auction items include NASCAR tickets, restaurant gift cards, golf, bowling, Discovery Place, and many more! Come out for a great deal and to support a wonderful cause. Lowes Foods Davidson, corner of Hwy 73 & Poplar Tent ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fa1d577c79102ce3",
+      "title": "SCRIBE.OLOGY LLC | Translation and Interpretation Services in Southlake, TX",
+      "url": "https://naicslist.com/company-profile/scribeology-llc-southlake-tx-76092",
+      "summary": "Scribe.ology LLC is a specialized Translation and Interpretation Services firm based in Southlake, TX (76092). Functioning as a Limited Liability Company (llc), they have been operating for over 2 years and maintain a team of approximately 242 employees.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c5819a38704f5af5",
+      "title": "Southlake Translation Services - RushTranslate",
+      "url": "https://rushtranslate.com/locations/texas/southlake",
+      "summary": "RushTranslate provides certified translation services to customers in and around Southlake, Texas. Our fully online platform makes it easy to get accurate, USCIS-accepted translations for immigration, education, legal, and business documents.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d4bf6e4e43ac41d7",
+      "title": "Southlake Translation Services - U.S. Language Services",
+      "url": "https://www.uslanguageservices.com/texas/southlake-translation-services/",
+      "summary": "We offer professional translation services for law firms, companies and individuals in 35 languages including those in highest demand: Spanish, French, German, Portuguese, Arabic, Russian and Chinese. Whether you need to translate legal, business or academic documents, we’ve got you covered.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "439400dadb537e32",
+      "title": "Toyota Dealer Burlington WA New & Used Cars for Sale near Seattle WA ...",
+      "url": "https://www.foothillstoyota.com/",
+      "summary": "Foothills Toyota in Burlington, WA offers new and used Toyota cars, trucks, and SUVs to our customers near Seattle. Visit us for sales, financing, service, and parts!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "68e252a1f314eeb8",
+      "title": "Toyota Dealer | New and Used Car dealer in Seattle, WA",
+      "url": "https://www.toyotaofseattle.com/",
+      "summary": "Ready to get behind the wheel but have some questions? Toyota of Seattle specializes in new and used Toyota vehicles for sale to meet every budget. Visit our dealership today. One Price. Simple.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "85896369fe7208b7",
+      "title": "Toyota Dealership in Edmonds WA | Serving Edmonds and Tacoma | Swickard ...",
+      "url": "https://www.swickardtoyota.com/",
+      "summary": "At Swickard Toyota, we believe in a transparent, no-hassle buying experience. Our Swickard Price Promise ensures you get the most competitive price on all new Toyota models.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "957e7033cb24bd1f",
+      "title": "Toyota Dealership in Seattle WA | Serving Seattle and Lynnwood | Toyota ...",
+      "url": "https://www.toyotaoflakecity.com/",
+      "summary": "Toyota of Lake City is the premier Toyota dealership in Seattle, offering a convenient location, a great selection of new Toyota models, and truly exceptional customer service.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc76b84ea12d65ce",
+      "title": "Toyota of Kirkland | Toyota dealership in Kirkland, WA | near Seattle",
+      "url": "https://www.toyotaofkirkland.com/",
+      "summary": "Our local dealership keeps a great stock of used cars, trucks and SUVs in inventory. With competitive prices offered on every pre-owned model for sale on our lot, you won't find a reason to visit any other dealership in Kirkland.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ab7a0c898f0fb709",
+      "title": "Toyota of Renton | Toyota dealership in Renton, WA | Near Seattle",
+      "url": "https://www.toyotaofrenton.com/",
+      "summary": "Our local dealership keeps a great stock of used cars, trucks and SUVs in inventory. With competitive prices offered on every pre-owned model for sale on our lot, you won't find a reason to visit any other dealership in Renton.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b674e537b1079d86",
+      "title": "Typing Lessons | C, G, and N Keys - Typing.com",
+      "url": "https://www.typing.com/student/lesson/33078/c-g-and-n-keys",
+      "summary": "You are now going to learn the C key, which is your first time typing a Bottom Row letter. To type the C key, move your middle finger down from the D key, which it rests on when not typing.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be75caf9f953fc5f",
+      "title": "Unchained Melody by Bebs66 - singsnap.com",
+      "url": "https://www.singsnap.com/play/14149555",
+      "summary": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArYAAAGuCAIAAADqDNLQAAAQAElEQVR4ASR6BaAcRdb1LWkbl+eucXdPIARCcHddXJbFFtuFXXZxWNzd3SFICCSBuLs+dxmfaa+qv/n ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "edeed8f75883197d",
+      "title": "USPS.com",
+      "url": "https://tools.usps.com/tracking/940550899562047491383",
+      "summary": "I\\֋u001a Prc au0002P| Qh N u0011\\ H Ɍb 6) Z f C 'jܐr Y pu0014 Y TՃ / -` u0002u0012 h b >n k ! u0003@6* (bb & F BB ( Z u u0003 Ru0012 h u0001 _%Z u000f ) 5 b ~ ԪǊAu000e'EB z\\u0007 ; (CC T ے u001f u0006\\ -u000b a^u001a D ҙu0004 bu0010 n |yu KB lu0004 T\"΢H ,u0010u0006߹Q Ed u001c &u0002R5u000e u001f ة u00044߇ Gu0017 u0015 f 0 ׊ k5 ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
