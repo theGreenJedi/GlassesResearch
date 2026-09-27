@@ -4,7 +4,8 @@ description: "Verified: U.S. CPSC recalls INMO Air3 smart glasses after overheat
 
 # INMO Air3 recalled for left-temple overheating
 
-**Verified · September 24, 2026**
+**Published:** September 24, 2026  
+**Status:** Verified
 
 The U.S. Consumer Product Safety Commission announced recall **26-797** for INMO Air3 smart glasses after reports that the left temple can overheat during extended use, creating a burn hazard.
 

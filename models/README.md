@@ -1,6 +1,6 @@
 # Model Research Chapters
 
-[`The List`](THE_LIST.md) is the canonical smart-glasses index. Following the 2026-08-12 lineage reconciliation, the smart-glasses ledger reached **145** purchasable models and generations. After the later retirement of unsupported `GLS-0032` and subsequent evidence-backed admissions, including the 2026-09-05 Rokid historical audit, the active canonical count is now **248**. The stable additions `GLS-0122` through `GLS-0145` are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md), while later corrections and additions remain anchored by the permanent identifier policy. Devices that belong to the same augmented-human research universe but are not fundamentally eyewear live in the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) and are never silently included in the smart-glasses count.
+[`The List`](THE_LIST.md) is the canonical smart-glasses index. Following the 2026-08-12 lineage reconciliation, the smart-glasses ledger reached **145** purchasable models and generations. After the later retirement of unsupported `GLS-0032` and subsequent evidence-backed admissions, including the 2026-09-05 Rokid historical audit, the active canonical count is now **249**. The stable additions `GLS-0122` through `GLS-0145` are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md), while later corrections and additions remain anchored by the permanent identifier policy. Devices that belong to the same augmented-human research universe but are not fundamentally eyewear live in the separate [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md) and are never silently included in the smart-glasses count.
 
 ## Canonical catalogs
 
@@ -13,7 +13,7 @@
 
 ## Read the models, not just the database
 
-The human-readable profile library now contains an evidence-backed paragraph or dedicated model chapter for **every one of the 248 active canonical smart-glasses records**. A paragraph is not permission to guess: when acquisition is established but generation-specific internals remain incomplete, the profile says so explicitly and points to the unresolved archival work rather than borrowing specifications from a neighboring generation. Approved pending admissions also receive profiles before synchronization so they cannot enter the ledger without an evidence boundary.
+The human-readable profile library now contains an evidence-backed paragraph or dedicated model chapter for **every one of the 249 active canonical smart-glasses records**. A paragraph is not permission to guess: when acquisition is established but generation-specific internals remain incomplete, the profile says so explicitly and points to the unresolved archival work rather than borrowing specifications from a neighboring generation. Approved pending admissions also receive profiles before synchronization so they cannot enter the ledger without an evidence boundary.
 
 Editorial volumes:
 
@@ -31,6 +31,7 @@ Editorial volumes:
 - [Rokid historical admissions — 2026-09-05](PROFILES_2026_09_05_ROKID.md) — Air Pro, Max Pro, Glass 3, and the corrected RV203 / Style / Neo identity boundary.
 - [Manufacturer Completeness Wave 01 profiles](PROFILES_2026_09_05_MANUFACTURER_WAVE_01.md) — RayNeo iO/GT, VITURE Pro 2, Epson BT-350/BT-30E, Lucyd Loud generations and INMO X.
 - [Manufacturer Completeness Wave 02 profiles](PROFILES_2026_09_05_MANUFACTURER_WAVE_02.md) — Vuzix legacy display eyewear and M400-C, ROG XREAL R1, and recovered Solos generations.
+- [Sender G600Pro / JTLlink family profile — 2026-09-27](PROFILES_2026_09_27_G600PRO.md) — canonical `GLS-0250`, regulatory manufacturer identity, commercial acquisition evidence, FCC sibling-family boundary, and unresolved app/cloud behavior.
 - [Additional high-throughput profiles — Batch 05](PROFILES_HIGH_THROUGHPUT_05.md)
 - [Additional high-throughput profiles — Batch 06](PROFILES_HIGH_THROUGHPUT_06.md)
 - [Additional XR display profiles](PROFILES_XR_DISPLAY_02.md)
