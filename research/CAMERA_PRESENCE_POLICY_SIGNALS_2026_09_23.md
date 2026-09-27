@@ -11,8 +11,25 @@ As camera-equipped glasses become visually closer to ordinary eyewear, are insti
 - Camera-free AI eyewear is now an explicit commercial product direction rather than merely an absence of features.
 - GlassesResearch already tracks device-specific institutional restrictions, including court-facility rules.
 - Same-day reporting around Meta Connect describes growing privacy scrutiny around recording-capable eyewear.
+- Snap SPECS provides a contrasting product-design signal: camera-equipped spatial glasses can make the sensing hardware visually conspicuous and pair capture with visible signaling rather than attempting to resemble ordinary camera-free eyewear.
 
 These facts justify structured tracking. They do **not** yet justify a universal claim that regulation is converging, that camera-equipped glasses are broadly prohibited, or that camera-free devices are intrinsically private.
+
+## Hardware-design divergence — September 2026
+
+Two current product directions make the distinction concrete.
+
+**Ray-Ban Meta Audio:** Meta and EssilorLuxottica announced an AI/audio line without a world-facing camera. This removes visual capture capability while leaving microphones, software, accounts, telemetry and cloud behavior as separate privacy questions.
+
+**Snap SPECS:** independent hands-on reporting describes a deliberately conspicuous standalone AR form factor, while reporting around the launch documents prominent capture signaling. SPECS therefore represents a different response to camera/social-legibility concerns: retain visual sensing and spatial capability while making the device and capture state more apparent to bystanders.
+
+This is a useful contrast in **hardware architecture and social signaling**, not a GlassesResearch judgment that either approach is categorically private or socially acceptable.
+
+Evidence:
+- https://www.reuters.com/business/meta-expected-unveil-smart-glasses-without-camera-privacy-concerns-grow-2026-09-23/
+- https://www.uploadvr.com/snap-specs-hands-on-minimum-viable-consumer-true-ar-glasses/
+- https://www.theverge.com/tech/996422/snap-specs-hands-on-ar-glasses
+- [GlassesResearch SPECS independent hands-on evidence](SNAP_SPECS_HANDS_ON_2026_09_24.md)
 
 ## Capture rule
 
