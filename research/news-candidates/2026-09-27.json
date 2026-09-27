@@ -1,28 +1,23 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-27T09:33:37.335778+00:00",
+  "discovered_utc": "2026-09-27T11:39:32.425252+00:00",
   "candidate_count": 2,
-  "precision_rejected_count": 188,
+  "precision_rejected_count": 179,
   "relationship_counts": {
-    "direct": 2,
+    "direct": 1,
     "enabling": 0,
     "adjacent": 0,
-    "speculative": 0,
+    "speculative": 1,
     "irrelevant": 0
   },
   "type_counts": {
-    "model": 1,
-    "tool": 1,
-    "sdk": 1,
-    "policy": 1,
-    "community": 1
+    "policy": 2,
+    "rumor": 1
   },
   "routing_counts": {
-    "community_evidence_review": 1,
-    "development_hacking": 1,
-    "model_catalog_review": 1,
-    "policy_privacy": 1,
-    "research_news_review": 2
+    "policy_privacy": 2,
+    "research_news_review": 2,
+    "watching": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -31,56 +26,19 @@
       "error": "HTTP Error 404: Not Found"
     },
     {
-      "url": "https://www.everysight.com/pages/maverick-ai",
-      "error": "HTTP Error 500: Internal Server Error"
+      "url": "https://smart-bike.net/pages/press",
+      "error": "HTTP Error 503: Service Unavailable"
     }
   ],
   "candidates": [
     {
-      "id": "b57856024c20c5f7",
-      "title": "Mentra 3.3.0-dev.435",
-      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.435",
-      "source": "direct-feed",
-      "source_lane": "research_radar",
-      "published": "2026-09-27T08:57:00Z",
-      "summary": "Mentra 3.3.0-dev.435 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 9a2ecfa . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
-      "materiality_score": 6,
-      "keyword_hits": [
-        "bluetooth",
-        "developer",
-        "release",
-        "sdk"
-      ],
-      "status": "candidate",
-      "relationship": "direct",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "development_hacking",
-        "community_evidence_review"
-      ],
-      "triage_priority": "high",
-      "publication_eligible": true,
-      "publication_gate_reason": "known smart-glasses source",
-      "disposition": "collected",
-      "site_action": "none_pending_editorial_review",
-      "institution_test": "likely durable"
-    },
-    {
-      "id": "4a31f5ca7517e6d0",
-      "title": "Meta launches camera-free AI glasses amid privacy pushback - Manila Standard",
+      "id": "c1bc509c9323521a",
+      "title": "Meta launches camera-free AI glasses amid privacy pushback - manilastandard.net",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFByejk2TUE4ZUF6bE5vYXFFV0MzLVNKYlNfVXNablNtUTlPUzBzclZETHpyYmdFeUcxN2ZPdzNJX3Zzd3JvS25MQlc4X3pjc2ct?oc=5",
       "source": "Google News: smart glasses privacy",
       "source_lane": "core_glasses",
       "published": "Sat, 26 Sep 2026 02:02:36 GMT",
-      "summary": "Meta launches camera-free AI glasses amid privacy pushback Manila Standard",
+      "summary": "Meta launches camera-free AI glasses amid privacy pushback manilastandard.net",
       "materiality_score": 3,
       "keyword_hits": [
         "ai",
@@ -100,6 +58,38 @@
       "triage_priority": "normal",
       "publication_eligible": true,
       "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "1d5614f0ea49f402",
+      "title": "Meta expected to unveil smart glasses without camera as privacy concerns grow - tbsnews.net",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMkN4em9pQUVzMExOVGxwUGxqVmFtblpCYWtpTUJJVEs0dG90OGdrVFlqeElGbFh5dUdfLWw3bW1SRWJwMzQ2LUJ6eFpUTjdGay1CbVVDVnBtdmF3ZERrWWpDaEx4Z1g1aWtKOFVtRHhBenk1dl91R2RDUGhCSlVVRDU1ekNOR2QyQ0JkTGpGYUJselU5QkFMZFRBMnFYTENxVk5HQm04eDBvWF9X?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 26 Sep 2026 17:14:03 GMT",
+      "summary": "Meta expected to unveil smart glasses without camera as privacy concerns grow tbsnews.net",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "camera",
+        "privacy"
+      ],
+      "status": "candidate",
+      "relationship": "speculative",
+      "content_types": [
+        "policy",
+        "rumor"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "watching",
+        "policy_privacy"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "future/rumor signals: expected to",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
