@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-27T05:51:40.510339+00:00`
+Generated: `2026-09-27T08:32:19.784674+00:00`
 
-- Intake files inspected: **316**
-- Candidates retained in this review window/history: **14250**
+- Intake files inspected: **317**
+- Candidates retained in this review window/history: **14237**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3018
+- `adjacent_radar`: 3011
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 727
-- `rejected_noise`: 10357
+- `needs_editorial_verification`: 726
+- `rejected_noise`: 10351
 - `source_monitor`: 1
-- `source_review`: 37
+- `source_review`: 38
 - `watching`: 91
 
 ## Action queue
@@ -106,6 +106,7 @@ Generated: `2026-09-27T05:51:40.510339+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.430](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.430) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.432](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.432) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.433](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.433) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.434](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.434) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta Plans Camera-Free Smart Glasses Launch This Fall Amid Privacy Backlash - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE5tdWZNZTNwNkVqVWVfb0wzWXdOUTJCWDdaWXN0Y3pVOHFtS3pnaENCcjFZeHdqUzdELWtHc1FUNHlQc2E5dmFRQ1FTSUhfN2UxM3JxREQtaUV3bWJIUHB2a0tabEJwaHRiNnFyMVZOR3JDa2J0a0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta to launch AI glasses without camera - Daily Observer](https://news.google.com/rss/articles/CBMiSkFVX3lxTFBtNkZGNVpiMDdhWk80MW8yQXVDUGJpUnV1QmI5Sk81VHgwRmk0T2ktcHpuUUJmRmZGZXY4WmNUSjRMcVJWX0d4cHRR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -236,6 +237,7 @@ Generated: `2026-09-27T05:51:40.510339+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경으로 성관계 몰카·시험 부정행위…규제는 뒷북 - 매일신문](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5iTW9GODZHY2JUa0RvdEhjZUcwVnAzaGFwemphSHdfUnhWVHcxMDVwd0xJZndPa2NYZmFhME9HWjBXb25IWkN2RWx0WGd6TmNvZkcxX0k0Vl9kSElkd0FjRHlR?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜“最后一公里”如何破？深圳这家全国首店给出答案 - 中国科技网](https://news.google.com/rss/articles/CBMicEFVX3lxTFBaTThlRldsZTd5dFk1ZThLek9hU0MxdzFMeWh6OXBjdVJ4aTZyQ3pRcGlzUEpNdjF0TkZGOVQ0U1BHRUhRWi1ZX1pEejFja3hfbXkwdElFaEhJOEt3emVsQ2lrMWpzeWxJN0NEZzRaNFE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜市场爆发式增长，苹果首款智能眼镜预计2027年末入局 - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVEJYb1RWel93OFhmUmtFREt3LWFzZ0JfeWZaa1JaMGtWVDBvTEhUMWNmd0hPRFFHeE5QU0dsQVg4d1pFWWhkUFQzYllTYXhISXNVMlExYnFSRjRLOHgtNTBWQWNsYlZGeFJxMHJmeXlkcXdEeUJ6M05CUFptT0ZNa29PbEpoRWRE?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Reorganizes Its Priorities: Smart Glasses Take Center Stage as Vision Pro Takes a Backseat - آي-فون إسلام](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMjY3NUFaeWhSVHVwbDE1Y25hS2xyWGFmT1hXTFJWR3kwenJJamlpMGM1T0lHS1djTmtDbWxzQTVxSXVEUVJURC1Wc0RkNEZtODJqb0thX1RpSTM0OVYzX1YtWUdQNVJCVnFlUl9UOUxkd3VEalBFdmdwWGQzcTZwbUE0ZEcxNEtpdmdjQklyZEp6RWRXTktEQUdjVi1LRDQzSlZ6cEJRbV9La0RrcWkyVGNtdjRMaTdTZGZBazEwODVKRTdXYVVIWEJ4c0ZweEphWFNmdFV4eW1KZDdraW9z?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses: Will they be the most stylish alternative to Vision Pro in 2026? - آي-فون إسلام](https://news.google.com/rss/articles/CBMizwFBVV95cUxNOWtfaW1abUJ5TldUR3dLMmNKUHhaU05PdVdEVkJrRzczRXJPeUVPMEQtSnZDM2o1SlBLcnZmZEZTTGdudnFyZjU0U1NsVlNNRTQ0WWxPTS1iWFQ0YXZhQnp0ekEtR2VYQXE0NDc0eV9qRDB5UkVZMDFZME5KLVJTOGRaelhiQmF1Mzk0SkZvZzd4Q2ZFRUdnTUlEWFUyOHJDR0szRGE4blNaMUdUNWF1VktZNnJvVlBSWXFTTTRuam5fc3QyR2N2ay0waHhCTGc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -265,8 +267,6 @@ Generated: `2026-09-27T05:51:40.510339+00:00`
 | normal | needs_editorial_verification | direct | [From smart glasses to AI pins, privacy fears challenge tech's next big bet - Herald-Review.com](https://news.google.com/rss/articles/CBMimAFBVV95cUxQT1JzTFZJTmVTWVd5WFhQX0FfdG9zQnVGdldVNTN4cTJucHVaeklGMTZ1dkpzRXhwaG16NHg5ck5ZRzJTaEd4WlNaMUdFUVR4anFFQ1BzR0J5b2pBSl9maXRHb1ZZTWVZQ1BENTdCaFRfVnhaWng0YU43Q2VYWGgydlRzdzdveng3cXYwY2lqajgwN2cwLW1qUg?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Full review of the Ai Smart Glasses. Let me know your favorite feature ...](https://www.tiktok.com/@iamsmarttips/video/7624495414401633558) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Fã cria duelos reais de Yu-Gi-Oh! usando óculos inteligentes e realidade aumentada - estadao.com.br](https://news.google.com/rss/articles/CBMivgFBVV95cUxPcjZlX1VUYVhxUllPaEVVeV81THhSM09KRnRjU3BpQkx2RUpjVjNVSXYyXzNQTTBjMTdzQm1zSk5FNThCcFNJOVBIajRTOVJvVnVUX1NtenJjeU94M3JTV1B4dFFqWkJmY055R1IzNlJma3haZkVPSFdKQ051UFBNYmpubm9hVGtzdF9FaGtzZ1NjTjhjeHl2d1YtM0pLS180OFBYZWFNOTZ4R3dMQmh2Z1pZZlVGanJTS2hYWmxR?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | enabling | [How To Scan a QR Code on Your Computer (Windows and Mac)](https://www.the-qrcode-generator.com/blog/how-to-scan-qr-code-on-computer) | reachable (200) | research_news_review, development_hacking, research_optics |
-| normal | needs_editorial_verification | enabling | [How To Scan A QR Code — Easy Step-By-Step Guide!](https://thetechgorilla.com/how-to-scan-a-qr-code/) | reachable (200) | research_news_review, development_hacking, research_optics |
 | normal | needs_editorial_verification | direct | [How To Stop Meta Training Its AI Models On Your Smart Glasses' Visual Data - Engadget](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQ3lWOW9IS0xNU2RnVmdsNkRyUm1YbUdmUWpUMzRIdGg4V2U3UmNXZVU3dnRSSkxGbjFCM3RWbVJOQ1I1SVRkd1RyM0ZaVERMNUlrVTRiOHR6V0FWX1dFemRqOEFiMElXdkNPS0prZTRzbTVVMDZBNC1aRWlIdXBaZjc0TEFtSVFUdUlXQXZIRjhoRmVLbU95ejEwMExZSVVINUdxMjlsdHZQV2c?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Huawei AI Glasses boasts a 12MP camera, 12-hour battery ... - Notebookcheck](https://www.notebookcheck.net/Huawei-AI-Glasses-boasts-a-12MP-camera-12-hour-battery-life-and-three-designs.1278357.0.html) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [I tried the $2,200 Snap Specs and AR glasses are exciting again - PhoneArena](https://news.google.com/rss/articles/CBMioAFBVV95cUxQSDlJcVNwLTlaY2w2YkJSblA1OWdWUTQ0Z0FkdEZldTQ4U2xTelltVlp0VFhpNW5RZ2F0MFdQZVZhYXA0QTlaYVEwX0xrU2ZScmptZ2ZJcmUybWF6YzJnN3QweTVlRkJUeEk4OVpMUjN2bmVWREl0eVRkcGtDdTUtN1VYNmZ5SkZicTBlVjZBWDlvNTVHY0ZRY1BaOGQ4dnJG?oc=5) | reachable (200) | research_news_review |
