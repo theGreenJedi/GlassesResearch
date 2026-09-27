@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-27T08:32:19.784674+00:00`
+Generated: `2026-09-27T09:33:59.286902+00:00`
 
-- Intake files inspected: **317**
-- Candidates retained in this review window/history: **14237**
+- Intake files inspected: **318**
+- Candidates retained in this review window/history: **14239**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
@@ -12,10 +12,10 @@ Generated: `2026-09-27T08:32:19.784674+00:00`
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 726
+- `needs_editorial_verification`: 733
 - `rejected_noise`: 10351
 - `source_monitor`: 1
-- `source_review`: 38
+- `source_review`: 33
 - `watching`: 91
 
 ## Action queue
@@ -107,6 +107,7 @@ Generated: `2026-09-27T08:32:19.784674+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.432](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.432) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.433](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.433) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.434](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.434) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.435](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.435) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta Plans Camera-Free Smart Glasses Launch This Fall Amid Privacy Backlash - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE5tdWZNZTNwNkVqVWVfb0wzWXdOUTJCWDdaWXN0Y3pVOHFtS3pnaENCcjFZeHdqUzdELWtHc1FUNHlQc2E5dmFRQ1FTSUhfN2UxM3JxREQtaUV3bWJIUHB2a0tabEJwaHRiNnFyMVZOR3JDa2J0a0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta to launch AI glasses without camera - Daily Observer](https://news.google.com/rss/articles/CBMiSkFVX3lxTFBtNkZGNVpiMDdhWk80MW8yQXVDUGJpUnV1QmI5Sk81VHgwRmk0T2ktcHpuUUJmRmZGZXY4WmNUSjRMcVJWX0d4cHRR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,7 +272,6 @@ Generated: `2026-09-27T08:32:19.784674+00:00`
 | normal | needs_editorial_verification | direct | [Huawei AI Glasses boasts a 12MP camera, 12-hour battery ... - Notebookcheck](https://www.notebookcheck.net/Huawei-AI-Glasses-boasts-a-12MP-camera-12-hour-battery-life-and-three-designs.1278357.0.html) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [I tried the $2,200 Snap Specs and AR glasses are exciting again - PhoneArena](https://news.google.com/rss/articles/CBMioAFBVV95cUxQSDlJcVNwLTlaY2w2YkJSblA1OWdWUTQ0Z0FkdEZldTQ4U2xTelltVlp0VFhpNW5RZ2F0MFdQZVZhYXA0QTlaYVEwX0xrU2ZScmptZ2ZJcmUybWF6YzJnN3QweTVlRkJUeEk4OVpMUjN2bmVWREl0eVRkcGtDdTUtN1VYNmZ5SkZicTBlVjZBWDlvNTVHY0ZRY1BaOGQ4dnJG?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [INMO отозвала умные очки Air 3. Есть риск ожогов из-за дужки - Рамблер](https://news.google.com/rss/articles/CBMiogFBVV95cUxPQzhlNGhpRThxaFk2bk51R1cyclBJUk5zVnVFUnNacGxMUmhhOEFLbzM4WnVFZHp4eVNHbF85Ql9SRHJXTFVNY2VzY0I2emJVODVyWm56YjI4ZVY1SnRWUVVYaDlwUzZWa2FRVHEzMWg2WXVGZUpMSkN2a3hUZ1JCVnJMa0w2WDNxUWJYMGNQakM2dmZPTGhHQUEwVFBLeUwtSnfSAacBQVVfeXFMT2w3Skx3eUlydVA4TWhZQTNZRlF3R3RoT1BkcnIwTFZhRGR3dExBV1pNaVlOSF9SRlBSVTZMVkNVT2JhZGZVYXRjdlMwWE1hTUU0a3Z2VnhhTXpPbjJ0UGlTSmNNcU9HNWFieHFJNG5GVzZEb01mZEYtVFZZWkV3X3JNb3Z5a1ozcWJJSHNhTWRKZHJTT1BVNFNSQXphN3ZVSGpIYkhyLUk?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Insta360 Could Shake Up Smart Glasses with Tech That Puts Frame Comfort First - Android Headlines](https://news.google.com/rss/articles/CBMingFBVV95cUxOR1NmWTRPeHYxQld4N2E3WF9nQlNmbDM2N1pjcFIyZzRiMXQzU2ZnWW9LR0U4WFA0djVlQTFrQnFPc3puZzJIUmQzZmNDSE9vWFM1ZGR4SVJ6QzBvRDdDYUNGdUR3LXhGQm9nSlhVN2U4RWdfcEptZzhYOEJaNDVIbDk2MDVfR1VOVzdfZ0tBNjNVdUZ5Q21BVlZxM3ptdw?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
