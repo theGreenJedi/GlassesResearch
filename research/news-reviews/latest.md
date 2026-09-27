@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-27T19:39:11.459735+00:00`
+Generated: `2026-09-27T22:19:40.358466+00:00`
 
 - Intake files inspected: **319**
-- Candidates retained in this review window/history: **14124**
+- Candidates retained in this review window/history: **14064**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 2998
+- `adjacent_radar`: 3005
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 742
-- `rejected_noise`: 10238
+- `needs_editorial_verification`: 741
+- `rejected_noise`: 10172
 - `source_monitor`: 1
 - `source_review`: 37
 - `watching`: 89
@@ -111,6 +111,7 @@ Generated: `2026-09-27T19:39:11.459735+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.436](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.436) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.437](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.437) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.438](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.438) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.439](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.439) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta Plans Camera-Free Smart Glasses Launch This Fall Amid Privacy Backlash - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE5tdWZNZTNwNkVqVWVfb0wzWXdOUTJCWDdaWXN0Y3pVOHFtS3pnaENCcjFZeHdqUzdELWtHc1FUNHlQc2E5dmFRQ1FTSUhfN2UxM3JxREQtaUV3bWJIUHB2a0tabEJwaHRiNnFyMVZOR3JDa2J0a0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta to launch AI glasses without camera - Daily Observer](https://news.google.com/rss/articles/CBMiSkFVX3lxTFBtNkZGNVpiMDdhWk80MW8yQXVDUGJpUnV1QmI5Sk81VHgwRmk0T2ktcHpuUUJmRmZGZXY4WmNUSjRMcVJWX0d4cHRR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,7 +272,6 @@ Generated: `2026-09-27T19:39:11.459735+00:00`
 | normal | needs_editorial_verification | direct | [Engadget 1d ago How to stop Meta training its AI models on your smart glasses' visual data Coverage Meta](https://www.engadget.com/2269454/how-to-stop-meta-training-its-ai-models-on-your-smart-glasses-visual-data/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [From smart glasses to AI pins, privacy fears challenge tech's next big bet - Herald-Review.com](https://news.google.com/rss/articles/CBMimAFBVV95cUxQT1JzTFZJTmVTWVd5WFhQX0FfdG9zQnVGdldVNTN4cTJucHVaeklGMTZ1dkpzRXhwaG16NHg5ck5ZRzJTaEd4WlNaMUdFUVR4anFFQ1BzR0J5b2pBSl9maXRHb1ZZTWVZQ1BENTdCaFRfVnhaWng0YU43Q2VYWGgydlRzdzdveng3cXYwY2lqajgwN2cwLW1qUg?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Full review of the Ai Smart Glasses. Let me know your favorite feature ...](https://www.tiktok.com/@iamsmarttips/video/7624495414401633558) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Fã cria duelos “reais” de Yu-Gi-Oh! usando óculos inteligentes e realidade aumentada - Estadão](https://news.google.com/rss/articles/CBMizAFBVV95cUxPUXpxVm9NOTNzNVU5UEtSUXJZNC02T2dmUXNMNnp2S3dNenZxUHJsbmgzbF9jeU1HcEVpNHA0bFRSSk4yaUVROUs1ZFViT1ZDX2RaVDNaSG8yTTlHdXdTcHY3YTB1YzdhZWgxd2JjamdGSTJ3ZS1EUTZZZ3RxQVkzT3FUZTJJRjV0QmhrRjZuTVB0M1NkM0NmMGcwWXR3T0VRQ1QtU3MyXzg2d25lVkJwa3NWUFgxMUF6MWpXWG5EQnQ4Vlg5ejZFaVNaSTQ?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
