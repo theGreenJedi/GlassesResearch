@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-27T00:39:56.461463+00:00`
+Generated: `2026-09-27T01:34:32.691316+00:00`
 
-- Intake files inspected: **316**
-- Candidates retained in this review window/history: **14336**
+- Intake files inspected: **315**
+- Candidates retained in this review window/history: **14267**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3045
+- `adjacent_radar`: 3021
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 724
-- `rejected_noise`: 10420
+- `needs_editorial_verification`: 722
+- `rejected_noise`: 10375
 - `source_monitor`: 1
-- `source_review`: 36
+- `source_review`: 38
 - `watching`: 91
 
 ## Action queue
@@ -103,6 +103,7 @@ Generated: `2026-09-27T00:39:56.461463+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.424](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.424) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.425](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.425) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.428](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.428) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.430](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.430) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta Plans Camera-Free Smart Glasses Launch This Fall Amid Privacy Backlash - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE5tdWZNZTNwNkVqVWVfb0wzWXdOUTJCWDdaWXN0Y3pVOHFtS3pnaENCcjFZeHdqUzdELWtHc1FUNHlQc2E5dmFRQ1FTSUhfN2UxM3JxREQtaUV3bWJIUHB2a0tabEJwaHRiNnFyMVZOR3JDa2J0a0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta to launch AI glasses without camera - Daily Observer](https://news.google.com/rss/articles/CBMiSkFVX3lxTFBtNkZGNVpiMDdhWk80MW8yQXVDUGJpUnV1QmI5Sk81VHgwRmk0T2ktcHpuUUJmRmZGZXY4WmNUSjRMcVJWX0d4cHRR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,7 +272,6 @@ Generated: `2026-09-27T00:39:56.461463+00:00`
 | normal | needs_editorial_verification | direct | [Insta360 ya hace cámaras 360 y drones… así que ahora está desarrollando gafas inteligentes impulsadas por IA - Xataka México](https://news.google.com/rss/articles/CBMi2wFBVV95cUxOS1FrQmp4R2ZQVXBFS005R0YwNzVSdXpPWUlLSnRaVmtseFVjS056SGp3UjNuZzh3VG5LUHhZRmlFcEpmNW95c0l1djNnNEZGWlJ6NS1uUVZYZTZNTjNlZTk5QlczOEFQeW9yUm01RFF4Y2h0bDNKOHFrTmowTGlJY2VkQm1nMlRhMnRxYllEcHVzSnpaaTMxbnpHYnhFNnhyVE5ndXIyMUJEeHcxa0hKRGhHMmtLU1JuS2hWd2J2X3hGZkp2ejFQZkxUSnNNZS1adWZVdlY5dVVZUGPSAeABQVVfeXFMTUxnMEZrVXVsaE1yVjdIT1UxSXlIMUs0NW9qTGxOay16VUJ2YlZLZXFVWXh2NkcxSmxIUlNMb0RyZm90aDZJVTVXMDgwZHpXTDJWOTdBbktRcWJwOEhWSkRVYXZoSE8tTHdScThfRlFLYjU0Vk5XM1BGcndBYjJBbjBBcGtHZW5CaTJiMGlwd1VqM2J0cEpEZjlmcE5YNlIwS2ZCZ3lYWTFnellLd19Wamk3eGI5OTN3UUhzYlc3bEJxS3ZObEt4dmtQX0VtN1VtNHkxYmx3ZVk4ODlram9sRkM?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [INVISION 2d ago EssilorLuxottica and Meta Further Advance AI Glasses Category With New Products Revealed at Meta Connect Coverage Meta](https://invisionmag.com/essilorluxottica-and-meta-further-advance-ai-glasses-category-with-new-products-revealed-at-meta-connect/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [INVISION Jul 31, 2026 EssilorLuxottica H1 2026: Revenue Up 9.7%, Myopia Sales Up 24%, AI Glasses Nearly Double](https://invisionmag.com/essilorluxottica-h1-2026-revenue-up-9-7-myopia-sales-up-24-ai-glasses-nearly-double/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | enabling | [Lenskart Eyeglasses Online \| Prescription Eyeglasses & Sunglasses](https://partners.lenskart.com/) | reachable (200) | research_news_review, development_hacking, research_optics |
 
 ## Meaning of states
 
