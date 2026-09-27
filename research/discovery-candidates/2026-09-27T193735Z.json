@@ -1,39 +1,44 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-27T19:38:48.142809+00:00",
-  "candidate_count": 53,
-  "classifier_irrelevant_count": 42,
+  "discovered_utc": "2026-09-27T19:03:08.474571+00:00",
+  "candidate_count": 55,
+  "classifier_irrelevant_count": 48,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 10,
-    "broad_web": 33,
-    "developer": 10,
-    "manufacturer_catalog": 1
+    "adjacent": 7,
+    "broad_web": 31,
+    "developer": 17,
+    "research": 1,
+    "retail": 1
   },
   "relationship_counts": {
-    "direct": 1,
-    "enabling": 0,
-    "adjacent": 10,
+    "direct": 0,
+    "enabling": 1,
+    "adjacent": 6,
     "speculative": 0,
-    "irrelevant": 42
+    "irrelevant": 48
   },
   "type_counts": {
-    "model": 1,
-    "review": 7,
+    "model": 3,
+    "review": 3,
     "video": 1,
-    "news": 28,
-    "research": 1,
-    "tool": 13,
-    "sdk": 10,
-    "retail": 3,
-    "community": 4
+    "news": 23,
+    "research": 2,
+    "tool": 17,
+    "sdk": 17,
+    "hack": 1,
+    "optics": 1,
+    "retail": 8,
+    "teardown": 1,
+    "community": 13
   },
   "routing_counts": {
-    "adjacent_radar": 10,
-    "development_hacking": 1,
-    "reject_noise": 42,
-    "report_card_evidence": 6,
-    "research_news_review": 11
+    "adjacent_radar": 6,
+    "community_evidence_review": 1,
+    "reject_noise": 48,
+    "research_news_review": 7,
+    "research_optics": 1,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -47,56 +52,54 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "e150f01ddedb9eb1",
-      "title": "AR Glasses - RayNeo",
-      "url": "https://www.rayneo.com/collections/ar-glasses",
-      "summary": "AR Glasses Turn your phone, laptop, and console into a personal big-screen experience with RayNeo AR glasses, featuring vivid displays, smooth gaming, spatial sound, eye-comfort technologies, and lightweight designs for movies, travel, focused work, and entertainment.",
-      "discovery_channel": "broad_web+manufacturer_catalog",
-      "query": "AR glasses",
+      "id": "667865df3831f57a",
+      "title": "GetMyRx",
+      "url": "https://www.getmyrx.com/",
+      "summary": "Get More from your Local Pharmacy. Free Prescription Delivery Free Express Store Pickup Free Medication Counseling",
+      "discovery_channel": "adjacent+broad_web+research",
+      "query": "prescription smart glasses; prescription smart glasses lens research; prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "enabling",
       "content_types": [
-        "news"
+        "optics"
       ],
-      "primary_type": "news",
+      "primary_type": "optics",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "research_optics"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, rayneo",
+      "publication_gate_reason": "enabling technology signals: prescription",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1e4becdcb2682654",
-      "title": "Bluehost Web Hosting - Review 2026 - PCMag Australia",
-      "url": "https://au.pcmag.com/web-hosting/52256/bluehost-web-hosting",
-      "summary": "Bluehost is a feature-rich web host that has numerous e-commerce add-ons and a WordPress-enhancing AI tool that gives the popular CMS even more flexibility.",
+      "id": "5123c88aaff5a6f7",
+      "title": "Cities Near Me - Carson City, Nevada | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Carson+City,+NV",
+      "summary": "Find the top 15 cities, towns, and suburbs near Carson City, NV, like South Lake Tahoe and Truckee, and explore the surrounding area for a day trip.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "review",
-        "tool"
+        "news"
       ],
-      "primary_type": "review",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
-        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -105,100 +108,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "31b5aed685889e1a",
-      "title": "GoDaddy Web Hosting - Review 2023 - PCMag Middle East",
-      "url": "https://me.pcmag.com/en/web-hosting/13318/godaddy-web-hosting",
-      "summary": "The Bottom Line GoDaddy is a robust web hosting service with good customer service and well-integrated Microsoft Office email features.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1e4c319f23071254",
-      "title": "HostGator Web Hosting - Review 2026 - PCMag UK",
-      "url": "https://uk.pcmag.com/web-hosting/880/hostgator-web-hosting",
-      "summary": "HostGator is a terrific web hosting service that offers excellent shared plans, helpful customer service, and powerful tools for bloggers and small businesses.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0b7d86384b051b8d",
-      "title": "Ionos Web Hosting - Review 2026 - PCMag UK",
-      "url": "https://uk.pcmag.com/web-hosting/8478/11-ionos-web-hosting",
-      "summary": "The web host, which caters to small and large hosting needs, offers a wide array of enticing packages, including shared, virtual private server (VPS), WordPress, and dedicated hosting.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d0ed3a0420b377d9",
-      "title": "The 6 Best Free Web Hosting Services for Tight Budgets",
-      "url": "https://www.pcmag.com/picks/the-best-free-web-hosting-services-for-tight-budgets",
-      "summary": "That’s especially important in the free web hosting realm, as even the best, free hosts have limited and underpowered plans compared to what's on offer from basic, paid services.",
+      "id": "d911a97de1666dab",
+      "title": "Disk management options greyed out for external drive",
+      "url": "https://www.tenforums.com/drivers-hardware/208476-disk-management-options-greyed-out-external-drive.html",
+      "summary": "Disk management options greyed out for external drive Running Windows 10 version 22H2 Hi, I'm trying to recover some space on an external hard drive using Disk Management. This is because it shows as two separate drives when plugged in and I'd like it all combined as a single drive letter.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -222,12 +135,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bb82e0f5585347cc",
-      "title": "The Best Cheap Web Hosting Services for 2026 - PCMag",
-      "url": "https://www.pcmag.com/picks/the-best-cheap-web-hosting-services",
-      "summary": "Building a website on a tight budget? The top cheap web hosting services we've tested provide all the features you need for $10 per month or less.",
+      "id": "d633edb28bed28e1",
+      "title": "For Sale near Carson City, NV - craigslist",
+      "url": "https://www.craigslist.org/search/city/carson-city-nv?cat=sss",
+      "summary": "Warn winch rare classic X8000i USA made, renewed, synthetic rope.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -236,12 +149,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "review"
+        "retail"
       ],
-      "primary_type": "review",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -250,67 +163,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f13c51395c6381a9",
-      "title": "The Best Reseller Web Hosting Services for 2026",
-      "url": "https://ca.pcmag.com/web-hosting/388/the-best-reseller-web-hosting-services",
-      "summary": "Reselling is an easy way to enter the web hosting business without owning and operating your own servers. These top-rated services provide the useful features you need to get started making money online.",
+      "id": "6393b02adc7b50bf",
+      "title": "Movie Showtimes and Theaters near Carson City, NV | Fandango",
+      "url": "https://www.fandango.com/carson-city_nv_movietimes",
+      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Carson City, NV.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1cd9ccc806038f0e",
-      "title": "The Best Web Hosting Services We've Tested for 2026",
-      "url": "https://www.pcmag.com/picks/the-best-web-hosting-services",
-      "summary": "Selecting the right web host is essential for online success. The best web hosting services we've tested cater to a wide range of users, from small bloggers to big businesses, and everyone in between.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b5583796958e92b6",
-      "title": "The Best Website Builders for 2026",
-      "url": "https://ca.pcmag.com/web-hosting/229/the-best-website-builders",
-      "summary": "The best website builders let you carefully craft online pages with more design flexibility than anything you'll find on social media, though with fewer tools than traditional web hosting services. We've been testing website builders for a decade, regularly updating our reviews as companies add and remove features.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -332,12 +190,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "978f0fc0985dfd0b",
-      "title": "The Best WordPress Web Hosting Services for 2026 - PCMag",
-      "url": "https://www.pcmag.com/picks/the-best-wordpress-web-hosting-services",
-      "summary": "The Best WordPress Web Hosting Services for 2026 WordPress is a powerful content management system that makes building a website a whole lot easier.",
+      "id": "1b4542817f98921a",
+      "title": "Nevada Appeal | Carson City’s Trusted News Source Since 1865",
+      "url": "https://www.nevadaappeal.com/",
+      "summary": "Stay informed with NevadaAppeal.com, Carson City's trusted source for breaking news, politics, sports, and community updates.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b629f27333f3d9c",
+      "title": "Wildfires/Smoke near Carson City, Nevada, United States Today",
+      "url": "https://wildfiretrackers.com/f/us-nv-carson-city/fires",
+      "summary": "Carson City, Nevada, United States Wildfires - Maps and Info about active and inactive fires, smoke plumes, and 2026 Wildfires",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -359,28 +245,26 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "05f32d2f918dbf2c",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/introducing-tcu-online-brightspace-by-d2l/",
-      "summary": "Introducing TCU Online – Brightspace by D2L Posted February 1, 2016 & filed under Migration, New Release, TCU Online. Brightspace by D2L has been selected as TCU’s new Learning Management System (LMS). It will be referred to as TCU Online. Review the features of Brightspace by D2L.",
+      "id": "fa13aee06a93c150",
+      "title": "Facebook Access Token for Pages - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/8231877/facebook-access-token-for-pages",
+      "summary": "Go to the Graph API Explorer Choose your app from the dropdown menu Click \"Get Access Token\" Choose the manage_pages permission (you may need the user_events permission too, not sure) Now access the me/accounts connection and copy your page's access_token Click on your page's id Add the page's access_token to the GET fields Call the connection you want (e.g.: PAGE_ID/events)",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 4,
       "keyword_hits": [
-        "review"
+        "api"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "model",
-        "review",
         "tool",
         "sdk"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -390,12 +274,70 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "642eb82d002fc794",
-      "title": "NearMe Tech Blog",
-      "url": "https://tech.nearme.jp/en/3/",
-      "summary": "Hello, I am Hosoda, CTO of NearMe, Inc. At NearMe, we provide Smart Shuttle, a ride-sharing transportation service powered by AI. We started this tech blog to share the technical depth and excitement of the field we are tackling, along with insights from daily problem-solving and technical research.",
+      "id": "f5decce663a77507",
+      "title": "Facebook: Permanent Page Access Token? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/17197970/facebook-permanent-page-access-token",
+      "summary": "Following the instructions laid out in Facebook's extending page tokens documentation I was able to get a page access token that does not expire. I suggest using the Graph API Explorer for all of these steps except where otherwise stated. 0. Create Facebook App If you already have an app, skip to step 1. Go to My Apps. Click \"+ Add a New App\". Setup a website app. You don't need to change its ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "api"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2093883331b2b858",
+      "title": "Implement Facebook API login with reactjs - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/27717555/implement-facebook-api-login-with-reactjs",
+      "summary": "I have figured out how to modify the Facebook tutorial for the Login API with ReactJS. Firstly, in the react component where you want the Login link, include this code:",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "api"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "34ca05548ebc30da",
+      "title": "Apartments for Rent, Houses & Local Rentals | Trulia.com",
+      "url": "https://www.trulia.com/rent/",
+      "summary": "Search rental listings for houses, apartments, townhomes and condominiums in your neighborhood. Research prices, neighborhood info and more on Trulia.com.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -418,10 +360,39 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a4d690583de7bc2b",
-      "title": "TCU Online",
-      "url": "https://tcuonline.tcu.edu/",
-      "summary": "Need help with TCU Online? There are various options for getting the TCU Online support you need. View the Support for TCU Online page for D2L contact information, Koehler Center contact information, and self-guided support resources. This page also includes contact information for tools associated with TCU Online such as, Panopto, ReadSpeaker, Respondus, and Turnitin.",
+      "id": "dd208cef7aebfa66",
+      "title": "DE Real Estate - Delaware Homes For Sale | Zillow",
+      "url": "https://www.zillow.com/de/",
+      "summary": "Zillow has 5772 homes for sale in Delaware. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "44f556b3f31d2c2b",
+      "title": "Facebook GraphAPI Reduce amount of data with limit",
+      "url": "https://stackoverflow.com/questions/29351125/facebook-graphapi-reduce-amount-of-data-with-limit",
+      "summary": "Facebook GraphAPI Reduce amount of data with limit Ask Question Asked 11 years, 6 months ago Modified 9 years, 2 months ago",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -445,10 +416,66 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f12eb6bbdbe83b58",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/kb/how-do-i-log-in/",
-      "summary": "Contact TCU’s IT Support HelpDesk for assistance with TCU usernames and passwords. Start with going to the Password Self Service page to unlock your account and reset your password.",
+      "id": "0d469b19aba7122f",
+      "title": "For International Jazz Day, residents walk paths of Nat King Cole ...",
+      "url": "https://chicago.suntimes.com/arts-and-culture/2026/04/26/for-international-jazz-day-residents-walk-paths-of-nat-king-cole-louis-armstrong-in-bronzeville",
+      "summary": "For International Jazz Day, residents walk paths of Nat King Cole, Louis Armstrong in Bronzeville A neighborhood tour included stops at Louis Armstrong’s former home and the historic Forum Hall ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca10920ee88a4218",
+      "title": "Future — The Forum",
+      "url": "https://www.theforumbronzeville.com/future",
+      "summary": "Our vision of The Forum is as the central hub for music, history, and community in Bronzeville. A place that is alive 7 days per week every week of the year. The Forum is poised to serve, once again, as the heart of social, political, cultural and commercial life in Bronzeville.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "90fe271f67df1348",
+      "title": "How to add facebook share button on my website? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/16463030/how-to-add-facebook-share-button-on-my-website",
+      "summary": "I want to add facebook share button on my website, that should just post my website's content on the wall. Can anyone help me?",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -472,10 +499,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ab2d4be7bbdf412d",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/how-to-hub/instructor-how-to-hub-for-tcu-online/get-started/",
-      "summary": "Students: Go to the Get Started with TCU Online page for Students What is TCU Online? Brightspace by D2L, referred to as TCU Online, is TCU’s learning management system. Using TCU Online is optional for face-to-face classes, and each faculty member may utilize different tools. In TCU Online, instructors are able to: Post syllabi Maintain a secure gradebook Share accessible course content ...",
+      "id": "f63b2bcdd05de5cf",
+      "title": "List of Facebook CDN addresses - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/19568411/list-of-facebook-cdn-addresses",
+      "summary": "Yes, we took that into account, and want to have the list downloaded regularly from our server, but still, we need a way to find all the CDN domains. Plus, while IP addresses can change often for CDNs, I believe that the domain names are pretty stable. They need to be to make sure that the FB scripts can access the resources they need.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -499,10 +526,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "212bdb5c764df912",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/kb/student-access-to-tcu-online-from-my-tcu-edu-faq/",
-      "summary": "Student access to TCU Online FAQ I enrolled in a class, but am unable to access it in TCU Online. If you are officially registered for a course and your instructor is using TCU Online, then you will have access to the course at 12:01 AM on the first day of the semester. Courses may not be visible in the My Courses area until that time. Note: Enrollments in TCU Online are not instantaneous ...",
+      "id": "bd78369657adcefc",
+      "title": "MLB Stats for Justin Verlander - Baseball Almanac",
+      "url": "https://www.baseball-almanac.com/players/player.php?p=verlaju01",
+      "summary": "Justin Verlander stats, height, weight, history, research, and more on Baseball Almanac.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0f94e1efcd8e9479",
+      "title": "Responsive width Facebook Page Plugin - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/29429296/responsive-width-facebook-page-plugin",
+      "summary": "This will make the Facebook Page Plugin responsive, but only on the initial page render, with a minimum width of 180px. I'm still trying to figure out how to make it truly dynamically responsive, in spite of Facebook's caveat (I'll post an update if I ever find the answer).",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -526,12 +581,41 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6b89f45b0f12ebf3",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/how-to-hub/",
-      "summary": "Select one of the boxes below to view Student resources or Instructor resources.",
+      "id": "b7635f717df48930",
+      "title": "San Angelo TX Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/san-angelo-tx/",
+      "summary": "Zillow has 630 homes for sale in San Angelo TX. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "479de0647daa2f76",
+      "title": "The Forum",
+      "url": "https://www.theforumbronzeville.com/",
+      "summary": "The Forum is located at 318-328 East 43rd Street (adjacent to the CTA station) in Chicago’s historic Bronzeville community. Built in 1897, The Forum includes a beautiful social and assembly hall and several oversized retail slots located adjacent to the 43rd Street Green Line Station.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -541,7 +625,9 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "retail",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -553,12 +639,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "03f8cab668aaf767",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/ramping-up-rapidly/",
-      "summary": "TCU Online offers ways to deliver content and learning activities, engage students, evaluate student work, and give feedback. Additionally, TCU Online offers communication tools and data analytics that help you support student learning.",
+      "id": "93726f2f84bdcf24",
+      "title": "The Forum (Chicago) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Forum_(Chicago)",
+      "summary": "The Forum is a historic event venue at 318-328 E. 43rd Street in the Bronzeville neighborhood of the Grand Boulevard community area of Chicago, Illinois. Chicago alderman William Kent and his father Albert had the venue built in 1897, intending it to be a social and political meeting hall.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -568,7 +654,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -580,12 +667,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b2274b2d9e1341ff",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/kb/customizing-class-and-user-progress/",
-      "summary": "Customizing Class and User Progress One important tool to know about in TCU Online is Class Progress. It will show you data (such as time spent in the course or content, grade details, activity participation, etc.) about your students as a class or for a specific student. This page will introduce you to Class Progress and User Progress.",
+      "id": "09c6954b7f934d73",
+      "title": "The Forum - Bronzeville | Chicago IL - Facebook",
+      "url": "https://www.facebook.com/TheForumBronzeville/",
+      "summary": "The Forum - Bronzeville, Chicago. 2,469 followers · 1 talking about this · 459 were here. Help us \"Raise The Roof\" and fund The Forum!",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -595,7 +682,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -607,12 +695,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5b0838e774ff709a",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/tcu-online-resources-for-students/",
-      "summary": "TCU Online Resources for Students TCU Online Student Orientation Tutorial All students are automatically enrolled into a Student Orientation Tutorial for TCU Online. The tutorial provides information about the TCU Online platform, shows how to use specific tools, and lists some student success strategies.",
+      "id": "1df240fa2acaad80",
+      "title": "The Forum - Bronzeville, 324 E 43rd Street, Chicago, IL (2026)",
+      "url": "https://www.findglocal.com/US/Chicago/221929784581033/The-Forum---Bronzeville",
+      "summary": "The Forum is located at 318-328 East 43rd Street (adjacent to the CTA station) in Chicago’s historic Bronzeville community. Built in the 1890s, the structure contains one of the most important assembly/performance halls of this community, as well as several transit-friendly retail spaces.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -622,7 +710,9 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "retail",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -634,12 +724,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5ad264f122a9ab14",
-      "title": "TCU Online - Texas Christian University",
-      "url": "https://tcuonline.tcu.edu/home/training/",
-      "summary": "TCU Online Workshops The Koehler Center provides a variety of face-to-face and online (webinar) training opportunities for TCU Online. Please see our Events page for details about current offerings, and to register.",
+      "id": "fd1a1fee5f2df092",
+      "title": "The Forum Bronzeville in Chicago - Ask AI | mindtrip",
+      "url": "https://mindtrip.ai/attraction/chicago-illinois/forum-bronzeville/at-0e2AoD0V",
+      "summary": "The Forum Bronzeville is a historic venue located in the heart of Chicago's Bronzeville neighborhood. Originally built in the early 1900s, it has served as a significant hub for cultural and musical events within the African American community.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -649,7 +739,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -661,23 +752,112 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0a9fa94dd41e36fd",
-      "title": "72 Live Traffic Cameras in Naperville, Illinois (2026) - Watch Live ...",
-      "url": "https://opencctv.org/cameras/united-states/illinois/naperville",
-      "summary": "Watch 72 live traffic cameras in Naperville, Illinois, United States. Live webcams updated in real time - traffic, weather, beach cams, and more.",
+      "id": "61d5e97fd340f760",
+      "title": "The Forum | Sir Storia",
+      "url": "https://sirstoria.com/locations/illinois/chicago/the-forum",
+      "summary": "Nestled in Chicago's storied Bronzeville neighborhood stands The Forum, a remarkably preserved relic of the city's political golden age.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "884e712e34f17137",
+      "title": "The Forum — Build Bronzeville",
+      "url": "https://www.buildbronzeville.com/the-forum/",
+      "summary": "Since 1897, The Forum’s muscular presence at 43rd Street, with the “El”, its distinctive “Forum Hall”, and it’s six large retail slots, made it a South Side Hub for prominent performers, powerful politicians, parties and partygoers, and peddlers and patrons of all persuasions.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4184255a3efa9a1",
+      "title": "The Forum: A Bronzeville Icon of the Past, Bridge to the Future",
+      "url": "https://wgntv.com/daytime-chicago/the-forum-a-bronzeville-icon-of-the-past-bridge-to-the-future/",
+      "summary": "For more than 70 years, The Forum was a beautiful gathering place where music legends performed, community leaders organized and political movements took root.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "hack",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1a0acf914ba291fd",
+      "title": "TOP 10 BEST Camera Shops in Antioch, CA - Updated 2026 - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Camera+Shops&find_loc=Antioch%2C+CA",
+      "summary": "See more camera shops in Antioch. What are people saying about photography stores & services in Antioch, CA? This is a review for photography stores & services in Antioch, CA: \"OMG- Jessica is everything! I had some old family video that needed to be digitized and she really helped me through the process.",
       "discovery_channel": "broad_web",
       "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
+        "review",
         "video"
       ],
-      "primary_type": "video",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -687,10 +867,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "98131519bf17078e",
-      "title": "Buying a Silencer through Scheels? > Silencers > AR15.COM",
-      "url": "https://www.ar15.com/forums/Armory/Buying-a-Silencer-through-Scheels-/20-562046/",
-      "summary": "Scheels is one of the better big box stores in my experience but you're far less likely to run into any issues buying NFA items from a reputable smaller gun store, especially one that does lots of NFA sales.",
+      "id": "cbfa88cb78757f3a",
+      "title": "Apartment - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Apartment",
+      "summary": "An apartment (North American English), flat (British English, Indian English, South African English) or unit (Australian English), is a self-contained housing unit that occupies part of a building.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -713,10 +893,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b9be9f2748434fa2",
-      "title": "Cabelas vs. Scheels - General Discussion Forum - General Discussion ...",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/cabelas-vs-scheels/page/2/",
-      "summary": "Scheels for me growing up was a cool store but with no name brand/quality items…you could buy bats, balls, and gloves, but it wasn’t the best quality. I’m not really looking for that anymore, but it seems like the selection has improved. I also agree that their online service by far outweighs Cabelas.",
+      "id": "0cea31a1651c1870",
+      "title": "Apartment List - More than 7 Million Apartments for Rent",
+      "url": "https://www.apartmentlist.com/",
+      "summary": "Start matching—and find your dream place, fast. Tell us what matters, from must-haves to extra-nice-to-haves. We’ll only show you places you’ll love—not 1000s of no’s. Book a tour, or apply. We’ve got you all the way. “It does all the homework for you. The website is fantastic.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -727,9 +907,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -739,10 +919,166 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0c43319b2227feb9",
-      "title": "Iowa voters to decide on state constitutional amendment limiting ... - MSN",
-      "url": "https://www.msn.com/en-us/politics/government/iowa-voters-to-decide-on-state-constitutional-amendment-limiting-income-tax-increases/ar-AA2csKCS",
-      "summary": "Iowa voters face a pivotal choice in November: deciding whether to amend the state constitution to require a two-thirds legislative vote to raise income taxes.",
+      "id": "cf7d8c0690b9c607",
+      "title": "ApartmentFinder.com: Apartments and Homes for Rent",
+      "url": "https://www.apartmentfinder.com/",
+      "summary": "Apartment Finder has the most accurate availability and pricing info to help you find the top deals, best values and true cost of your next apartment.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "23c8a57f48e91dff",
+      "title": "Apartments / Flats to Rent in Cape Town - Property24",
+      "url": "https://www.property24.com/apartments-to-rent/cape-town/western-cape/432",
+      "summary": "Apartments / flats to rent in Cape Town. The largest selection of apartments, flats, farms, repossessed property, private property and houses to Rent in Cape Town by estate agents. Property24.com",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cce0433667f9b9ca",
+      "title": "Apartments for Rent in Charlotte NC",
+      "url": "https://www.apartments.com/charlotte-nc/",
+      "summary": "Compare rent prices and available listings in nearby cities to find better value or more options that fit your budget. Average Monthly Rent is calculated using the average rent of active one-bedroom apartment listings.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "741e91c311d993a7",
+      "title": "Apartments For Rent in Chicago IL - 15029 Rentals - Zillow",
+      "url": "https://www.zillow.com/chicago-il/apartments/",
+      "summary": "Find your next apartment in Chicago IL on Zillow. Use our detailed filters to find the perfect place, then get in touch with the property manager.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c386d0e83dc8f02c",
+      "title": "Apartments For Rent in New York NY - 14140 Rentals - Zillow",
+      "url": "https://www.zillow.com/new-york-ny/apartments/",
+      "summary": "Find your next apartment in New York NY on Zillow. Use our detailed filters to find the perfect place, then get in touch with the property manager.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "34bfa1354316a712",
+      "title": "Apartments.com: Apartments and Homes for Rent",
+      "url": "https://www.apartments.com/",
+      "summary": "Find apartments, homes, townhomes and condos for rent in your area. Compare up to date rates and availability, HD videos, high resolution photos, pet policies and more!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3497b25874e04803",
+      "title": "Citigroup Interview Questions (2026) - Wall Street Oasis",
+      "url": "https://www.wallstreetoasis.com/company/citigroup/interview",
+      "summary": "Citigroup interview details: 1140 interview reviews posted anonymously by Citigroup interview candidates.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -765,429 +1101,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c41c7f476cc05a0a",
-      "title": "Luther Westside Volkswagen",
-      "url": "https://www.lutherauto.com/locations/luther-westside-volkswagen/",
-      "summary": "Luther Westside Volkswagen 2370 Highway 100 South, St Louis Park, MN 55416 New Inventory Pre-Owned Inventory Value Your Trade Schedule Service",
+      "id": "c3a979e5a3b283d6",
+      "title": "Does Wikipedia really, genuinely need donations? - Reddit",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/ztvq2w/does_wikipedia_really_genuinely_need_donations/",
+      "summary": "Don't donate to Wikipedia, the people that do the actual work don't get paid at all, donate to them instead, Wikipedia gets plenty of donations from corporations and such. Wikipedia's own creator says you shouldn't trust Wikipedia in an article, with their history erasing / manipulation and political bias no one should.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "89af517b2bd166c8",
-      "title": "NearMe Blog",
-      "url": "https://blog.nearme.jp/en/11/",
-      "summary": "When you need to stay near Haneda Airport the night before or after a flight, many people choose a budget-friendly capsule hotel. However, compared to business hotels, you may have concerns about security, amenities, and cleanliness.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d039994e3617e684",
-      "title": "NearMe ニアミー | 9周年キャンペーン",
-      "url": "https://campaign.nearme.jp/anniversary",
-      "summary": "NearMe ニアミーは今年で9周年！おトクな情報がいっぱいの特設ページへようこそ！空港だけじゃない。行きたい場所を ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1e50bc39ae5812d8",
-      "title": "NearMe（ニアミー）で移動｜予約でおトク、ラクちん。",
-      "url": "https://app.nearme.jp/",
-      "summary": "空港送迎・タクシー・大型車の予約ならNearMe。羽田・成田などへドアツードアで快適移動。最大50%お得、事前予約で安心。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ca7b9c0d0d86802",
-      "title": "Obituaries - Red Lake Nation News",
-      "url": "https://www.redlakenationnews.com/section/obituaries",
-      "summary": "Leroy \"Blaine\" Freeman September 9, 1955 ~ September 17, 2026 (age 71) Leroy \"Blaine\" Freeman, Makwa \"Bear\" of the Eagle Clan, age 71, began his journey to the spirit world on September 17, 2026 in Red Lake, MN.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "783e20e6fc7ce203",
-      "title": "Obituaries - Red Lake Nation News Archives",
-      "url": "https://www.redlakenationnews.com/section/obituaries/151",
-      "summary": "A wake for Justin will begin at 4 PM on Saturday, April 5, 2025 at the Cass Lake Veteran's Building and continue at the New Red Lake Center in Red Lake, MN on Sunday, April 6, 2025 until the service at 12 PM on Monday, April 7, 2025 with Spiritual Leader Allen Hardy.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "87d5fa4353a63ef5",
-      "title": "Obituaries and area death notices | Detroit Lakes Tribune",
-      "url": "https://www.dl-online.com/obituaries",
-      "summary": "She graduated high school in Redfield, SD and slowly made her way to the Red River Valley area where she raised her five children. Mary eventually moved east to Detroit Lakes, the town she...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b3dc52343d80c43",
-      "title": "Obituary Listing - Red Lake Funeral Chapel Limited | Red Lake, ON",
-      "url": "https://www.rlfuneralchapel.com/obituaries",
-      "summary": "View recent obituaries & subscribe for alerts. Join our grief support program for weekly messages to help you through this time.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab5f6c67ea2e13a0",
-      "title": "Obituary Listings - Green-Larsen",
-      "url": "https://www.greenlarsen.com/obituaries/obituary-listings",
-      "summary": "Browse obituary listings to share memories, express condolences, and find information about loved ones at Green-Larsen Mortuary Inc.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d3b44177ec9da62b",
-      "title": "Red Lake County & Red Lake Falls, MN Obituaries",
-      "url": "https://www.newspaperobituaries.net/minnesota/red-lake-county.htm",
-      "summary": "browse over 25 Red Lake County & Red Lake Falls, Minnesota obituary indexes, including newspaper obituaries, death indexes, funeral home obituaries..",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "13907220c0febb7c",
-      "title": "Red Lake County Obituaries | Obits for the Red Lake County, MN",
-      "url": "https://www.legacy.com/us/obituaries/local/minnesota/red-lake-county",
-      "summary": "Browse Red Lake County obituaries on Legacy.com. Find service information, send flowers, and leave memories in the Guestbook for your loved one.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "97af54709621ddcf",
-      "title": "Red Lake Funeral Chapel Limited",
-      "url": "https://www.rlfuneralchapel.com/",
-      "summary": "Red Lake Funeral Chapel Limited provides compassionate funeral services & grief support. Contact us for pre-planning options & memorial products.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "741f4e76d32efc94",
-      "title": "Red Lake Obituaries | Local Obits for Red Lake, MN - Legacy.com",
-      "url": "https://www.legacy.com/us/obituaries/local/minnesota/red-lake",
-      "summary": "Browse Red Lake area obituaries on Legacy.com. Find service information, send flowers, and leave memories in the Guestbook for your loved one.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aae8cf669635b66b",
-      "title": "Red Lake, MN Obituaries: Search by Name, Date or Location",
-      "url": "https://epilogg.com/obituaries/red-lake-mn",
-      "summary": "Search Red Lake, MN obituaries by name, date, or location. Find loved ones, explore life stories, and access funeral or memorial service details.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1889e7341669d1c0",
-      "title": "scheels goes woke? cuts off affiliate link to mrgunsngear because of ...",
-      "url": "https://www.ar15.com/forums/general/scheels-goes-woke-cuts-off-affiliate-link-to-mrgunsngear-because-of-politics/5-2840538/&page=2",
-      "summary": "have we done this yet?looks like they are about to Bud Light/Dicks themselves.eta: apparently the title isn't detailed enough. Scheels corporate sent an email to MrGunsnGear saying because he's too p",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "551279fef0523659",
-      "title": "Scheels got me again… - In-Depth Outdoors",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/scheels-got-me-again/",
-      "summary": "Scheels is by far the best sporting goods retail store ever. They have the best selection of hunting/fishing and the people actually know what they’re talking about.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "240a33765a566962",
-      "title": "Scheels Walleye Series Rods - General Discussion Forum - General ...",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/scheels-walleye-series-toda/",
-      "summary": "The Scheels rods are very nice, but you can’t go off what the rod says the action and power is. They are generally a bit stiffer of a rod compared to some others. I found the Tournament series 7’6″ ML to be somewhere in between a M and ML with a bit slower than fast action. They’re a decent rod with an absolutely fantastic warranty.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1208,12 +1127,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "319c1e684bc6640a",
-      "title": "Scheels – Blaine, MN - General Discussion Forum - General Discussion ...",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/scheels-blaine-mn/",
-      "summary": "Scheels can be trouble on the credit card no matter where you live. They have excellent on-line ordering and customer service with price matching.",
+      "id": "12ec4b470bc8e833",
+      "title": "Financial Model Color Formatting - Best Practices Financial Modeling",
+      "url": "https://www.wallstreetoasis.com/resources/financial-modeling/financial-model-color-formatting",
+      "summary": "The financial model color formatting refers to the presentation of data in a way that makes it easier for the user or reader to easily recognise and correlate certain ...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1222,8 +1141,111 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "retail",
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "11de493b50a2562a",
+      "title": "HOF lock? Where Justin Verlander stands among baseball legends",
+      "url": "https://en.as.com/mlb/where-does-justin-verlander-rank-among-the-greatest-pitchers-of-all-time-f202607-n/",
+      "summary": "MLB Where does Justin Verlander rank among the greatest pitchers of all time? As Justin Verlander prepares to retire, we break down his career and where he stands among baseball’s greatest pitchers.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6fdd04c9a03033e6",
+      "title": "Home - Zillow Careers",
+      "url": "https://www.zillow.com/careers/",
+      "summary": "Benefits Our benefits are a promise of support and security for every unique individual who chooses to call Zillow home, as well as that employee’s family. We are committed to designing benefit programs that create a sense of belonging; represent our dynamic, innovative culture; and care for our community through every chapter of life’s incredible journey.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
         "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "20104296feda43b8",
+      "title": "How Much is My House Worth? Free Home Value Estimator | Zillow",
+      "url": "https://www.zillow.com/how-much-is-my-home-worth/",
+      "summary": "What is your house worth? Check your Zestimate instantly. Improve your home’s value estimate with updated home facts. Request a free market value estimate today.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8648696d5ef9d213",
+      "title": "Huawei Mobile Phones: Latest & New Smartphones List (27th September ...",
+      "url": "https://www.gadgets360.com/mobiles/huawei-phones",
+      "summary": "List of all Huawei phones including latest, upcoming mobile phones from Huawei smartphone brands. Also find Huawei 5g smartphones, camera phones & best Huawei mobiles with price, specifications and reviews.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
       ],
       "primary_type": "retail",
       "routing_targets": [
@@ -1235,12 +1257,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1b06f1ab8c57ddff",
-      "title": "Volkswagen Dealership near Minneapolis, MN - Schmelz VW",
-      "url": "https://www.schmelzvw.com/minneapolis-mn-volkswagen-dealership.html",
-      "summary": "Visit the showroom at our Volkswagen dealership near Minneapolis, Minnesota, to explore our current inventory. Stop by to test drive the sleek and innovative Volkswagen Jetta or cruise around town in a fully-loaded Volkswagen Golf.",
+      "id": "e17a710caebc217f",
+      "title": "Justin Verlander - Baseball-Reference.com",
+      "url": "https://www.baseball-reference.com/players/v/verlaju01.shtml",
+      "summary": "Check out the latest Stats, Height, Weight, Position, Rookie Status & More of Justin Verlander. Get info about his position, age, height, weight, draft status, bats, throws, school and more on Baseball-reference.com",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1261,12 +1283,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ea5108fc055aaebf",
-      "title": "Volkswagen Dealership Serving Minneapolis, MN | Luther Westside Volkswagen",
-      "url": "https://www.westsidevw.com/volkswagen-dealership-serving-minneapolis/",
-      "summary": "Looking for a new or used Volkswagen dealer near Minneapolis, MN? Luther Westside Volkswagen has an enormous inventory of new and used vehicles at competitive prices, and we’re located less than 15 minutes southwest of Minneapolis in St. Louis Park, MN.",
+      "id": "1a990717b812248b",
+      "title": "Justin Verlander Career Stats (Pitching) | StatMuse",
+      "url": "https://www.statmuse.com/mlb/player/justin-verlander-62482/career-stats",
+      "summary": "He has won 1 Comeback Player of the Year award, 3 Cy Young awards, 1 MVP award, the Rookie of the Year award, 1 League Championship MVP award and 2 World Series.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1287,10 +1309,166 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f42968600ecd8f27",
-      "title": "www.fishexplorer.com",
-      "url": "https://www.fishexplorer.com/co/fxrforum.asp?action=det&pid=797269",
-      "summary": "www.fishexplorer.com",
+      "id": "d9048b714e66a074",
+      "title": "Justin Verlander Career Stats - MLB - ESPN",
+      "url": "https://www.espn.com/mlb/player/stats/_/id/6341/justin-verlander",
+      "summary": "Complete career MLB stats for the Detroit Tigers Starting Pitcher Justin Verlander on ESPN. Includes games played, hits and home runs per MLB season.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d8f04101b2108fbb",
+      "title": "Justin Verlander Career Stats | MLB Pitching Summary (2005–2025)",
+      "url": "https://beautifulchart.com/section/baseball-pitcher/justin-verlander/",
+      "summary": "Justin Verlander played in Major League Baseball from 2005 to 2025, appearing in 555 games over 20 seasons. He recorded a total of 266 W and 158 L, an ERA of 3.32, 3,553 SO, a WHIP of 1.135, and a WAR of 82.3. This chart shows the season-by-season changes in ERA, SO, and IP for Justin Verlander.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "372f80722269d608",
+      "title": "Justin Verlander Pitcher Ranking All-time | StatMuse",
+      "url": "https://www.statmuse.com/mlb/ask?q=justin+verlander+pitcher+ranking+all-time",
+      "summary": "Justin Verlander has played 21 seasons for 4 teams, including the Tigers and Astros. He has 266 wins, 159 losses, an ERA of 3.33 and 3,560 strikeouts. He has won 1 Comeback Player of the Year award, 3 Cy Young awards, 1 MVP award, the Rookie of the Year award, 1 League Championship MVP award and 2 World Series.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a45827f20dfa009",
+      "title": "Justin Verlander Stats, Bio & Career Records - Baseball Data Hub",
+      "url": "https://baseballdatahub.com/players/verlander-justin-verlaju01",
+      "summary": "Complete stats for Justin Verlander: MVP Award winner, 266 career wins. Career 2005-2026. 3.33 ERA. View career stats, awards, and season-by-season records.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e082f892a9612290",
+      "title": "Justin Verlander#35 - MLB.com",
+      "url": "https://www.mlb.com/player/justin-verlander-434378",
+      "summary": "Pitched collegiately at Old Dominion University where he is the all-time strikeout leader (427)...had his No. 35 jersey retired in 2010 and was inducted into the ODU Hall of Fame in 2012...drafted second overall by the Detroit Tigers in the 2004 MLB Draft out of Old Dominion University...one of two players in MLB history to win a Rookie of the Year, Cy Young and MVP...nine-time All-Star (2007 ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fa93d6797255a42e",
+      "title": "Justin Verlander's career numbers: Where does the Tigers legend rank ...",
+      "url": "https://zooomsports.com/en/justin-verlanders-career-numbers-where-does-the-tigers-legend-rank-all-time/",
+      "summary": "Over 19 seasons, primarily with the Tigers and Houston Astros, he has amassed 262 wins, a 3.29 ERA, and 3,416 strikeouts. His three Cy Young Awards (2011, 2019, 2022) are tied for the fourth-most all-time, and his MVP award in 2011 makes him one of only 11 pitchers to win both in the same season.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71ab2a7e54013434",
+      "title": "NYC Apartments for Rent - Updated Daily | StreetEasy",
+      "url": "https://streeteasy.com/for-rent/nyc",
+      "summary": "Find your ideal NYC rental on StreetEasy! Browse 15,866 apartments with your favorite amenities, such as elevator and central AC.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1313,12 +1491,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2596ed35fad035a3",
-      "title": "【京都】NearMe.Town",
-      "url": "https://guide.nearme.jp/ad46f0ed-30df-4412-ad6d-55c56836cea0",
-      "summary": "[京都/観光シャトル] 料金計算について",
+      "id": "6a1d93b06c9c739a",
+      "title": "Rental Listings - 319 Rentals | Zillow",
+      "url": "https://www.zillow.com/homes/for_rent/",
+      "summary": "This is a list of all of the rental listings. Don't forget to use the filters and set up a saved search.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1339,12 +1517,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a81a4ac9d51debd2",
-      "title": "キャンセル方法 - nearMe.Airport（ニアミーエアポート）",
-      "url": "https://guide.nearme.jp/6053454b-669d-4f3c-9c46-6ad9d260e543",
-      "summary": "キャンセル方法｜「nearMe.Airport（ニアミーエアポート）」は空港と自宅・ホテルをつなぐドアツードアのシャトルサービスです。全国の主要空港でご利用可能です。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "2d33f0b6392d846f",
+      "title": "Titanium Chemical & Physical Properties - ThoughtCo",
+      "url": "https://www.thoughtco.com/titanium-facts-606609",
+      "summary": "Titanium is a strong metal, 45% lighter than steel but just as strong. Titanium is safe for medical use because it does not react inside the body. Titanium dioxide is widely used as a bright white pigment in paints and many other products.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1353,113 +1531,10 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail",
+        "teardown"
       ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a368fd970ace8e88",
-      "title": "シェアでおトクな空港定額タクシー | ニアミー - NearMe",
-      "url": "https://app.nearme.jp/airport-shuttle/",
-      "summary": "【空港行くならニアミー】累計予約100万人突破！定額タクシーで、ドアツードアの快適な空港送迎。シェア乗り（相乗り）だから、タクシーより最大80%おトクな料金プラン、電車、リムジンバス、自家用車（駐車場利用）より便利。プロのドライバーが運転するから安心。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e7d24b2d48e84bd7",
-      "title": "ニュース｜株式会社NearMe（ニアミー）",
-      "url": "https://corp.nearme.jp/news",
-      "summary": "株式会社NearMe（ニアミー）のプレスリリースや各種取り組みを紹介、最新情報を掲載しています。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c6c50d71007958c9",
-      "title": "採用情報｜株式会社NearMe（ニアミー）",
-      "url": "https://corp.nearme.jp/jobs/",
-      "summary": "シャトル事業 -「第4の公共交通機関」をつくる 「NearMe | ニアミー」は車両をシェアすることで、それぞれの目的地にお得に移動できるシャトルサービスです。現在は空港、ゴルフ場、街中、通勤の移動をメインとしていますが、その他地域の交通問題の解決などさまざまな機会を模索してい ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9d774e0de1a97c22",
-      "title": "株式会社NearMe｜人と地域の豊かさを紡ぎ、未来を拓く",
-      "url": "https://nearme.jp/",
-      "summary": "株式会社NearMeは「人と地域に寄り添うソーシャルデザインカンパニー」です。遊休資産や潜在資源という「もったいない」を、未知への発見や未来資源に変換し、人や地域の新たな可能性につなげるために、一人ひとりとそれぞれの地域の暮らしの中に、ゆとりや自分らしく生きる楽しさを ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
