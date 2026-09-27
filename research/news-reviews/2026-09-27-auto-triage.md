@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-27T09:34:50.926269+00:00`
+Generated: `2026-09-27T10:14:14.072057+00:00`
 
 - Intake files inspected: **318**
 - Candidates retained in this review window/history: **14239**
@@ -12,10 +12,10 @@ Generated: `2026-09-27T09:34:50.926269+00:00`
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 729
+- `needs_editorial_verification`: 731
 - `rejected_noise`: 10351
 - `source_monitor`: 1
-- `source_review`: 37
+- `source_review`: 35
 - `watching`: 91
 
 ## Action queue
@@ -238,7 +238,7 @@ Generated: `2026-09-27T09:34:50.926269+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경으로 성관계 몰카·시험 부정행위…규제는 뒷북 - 매일신문](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5iTW9GODZHY2JUa0RvdEhjZUcwVnAzaGFwemphSHdfUnhWVHcxMDVwd0xJZndPa2NYZmFhME9HWjBXb25IWkN2RWx0WGd6TmNvZkcxX0k0Vl9kSElkd0FjRHlR?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜“最后一公里”如何破？深圳这家全国首店给出答案 - 中国科技网](https://news.google.com/rss/articles/CBMicEFVX3lxTFBaTThlRldsZTd5dFk1ZThLek9hU0MxdzFMeWh6OXBjdVJ4aTZyQ3pRcGlzUEpNdjF0TkZGOVQ0U1BHRUhRWi1ZX1pEejFja3hfbXkwdElFaEhJOEt3emVsQ2lrMWpzeWxJN0NEZzRaNFE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜市场爆发式增长，苹果首款智能眼镜预计2027年末入局 - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVEJYb1RWel93OFhmUmtFREt3LWFzZ0JfeWZaa1JaMGtWVDBvTEhUMWNmd0hPRFFHeE5QU0dsQVg4d1pFWWhkUFQzYllTYXhISXNVMlExYnFSRjRLOHgtNTBWQWNsYlZGeFJxMHJmeXlkcXdEeUJ6M05CUFptT0ZNa29PbEpoRWRE?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Reorganizes Its Priorities: Smart Glasses Take Center Stage as Vision Pro Takes a Backseat - آي-فون إسلام](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMjY3NUFaeWhSVHVwbDE1Y25hS2xyWGFmT1hXTFJWR3kwenJJamlpMGM1T0lHS1djTmtDbWxzQTVxSXVEUVJURC1Wc0RkNEZtODJqb0thX1RpSTM0OVYzX1YtWUdQNVJCVnFlUl9UOUxkd3VEalBFdmdwWGQzcTZwbUE0ZEcxNEtpdmdjQklyZEp6RWRXTktEQUdjVi1LRDQzSlZ6cEJRbV9La0RrcWkyVGNtdjRMaTdTZGZBazEwODVKRTdXYVVIWEJ4c0ZweEphWFNmdFV4eW1KZDdraW9z?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses: Will they be the most stylish alternative to Vision Pro in 2026? - آي-فون إسلام](https://news.google.com/rss/articles/CBMizwFBVV95cUxNOWtfaW1abUJ5TldUR3dLMmNKUHhaU05PdVdEVkJrRzczRXJPeUVPMEQtSnZDM2o1SlBLcnZmZEZTTGdudnFyZjU0U1NsVlNNRTQ0WWxPTS1iWFQ0YXZhQnp0ekEtR2VYQXE0NDc0eV9qRDB5UkVZMDFZME5KLVJTOGRaelhiQmF1Mzk0SkZvZzd4Q2ZFRUdnTUlEWFUyOHJDR0szRGE4blNaMUdUNWF1VktZNnJvVlBSWXFTTTRuam5fc3QyR2N2ay0waHhCTGc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -262,6 +262,7 @@ Generated: `2026-09-27T09:34:50.926269+00:00`
 | normal | needs_editorial_verification | direct | [Best smart glasses in 2026: Top AR and AI glasses worth your money ...](https://www.tomsguide.com/computing/vr-ar/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [BLACKPINKのLISAがコラボ！ MetaのAIグラスがおしゃれな人に選ばれる理由。 - madameFIGARO.jp](https://news.google.com/rss/articles/CBMiaEFVX3lxTE81RkFSSjBCSUs5TDZxRXlHd2liLWU3RHVSZmRJUHBhZ2xpQUlWdmh2OUJOaElZdklwUkxxU2ZlLTNBRTh2UkJUbEdXSUpwTWhLS2gtcm5MaWZXa3lkWEVUU3pveS1xbUpq?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Buy Vicent Chase &amp; John Jacobs glasses frames for ... - Lenskart](https://www.lenskart.com/eyeglasses.html) | reachable (200) | research_news_review, model_catalog_review |
+| normal | needs_editorial_verification | direct | [Can You Get Smart Glasses with a Prescription? (2026 Guide) - RayNeo](https://www.rayneo.com/blogs/news/smart-glasses-with-prescription) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [CNET Aug 24, 2026 If You Don’t Want Smart Glasses to Spy, Try a Bluetooth Detector App](https://www.cnet.com/tech/mobile/if-you-dont-want-smart-glasses-to-spy-try-a-bluetooth-detector-app/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Engadget 1d ago How to stop Meta training its AI models on your smart glasses' visual data Coverage Meta](https://www.engadget.com/2269454/how-to-stop-meta-training-its-ai-models-on-your-smart-glasses-visual-data/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [From smart glasses to AI pins, privacy fears challenge tech's next big bet - Herald-Review.com](https://news.google.com/rss/articles/CBMimAFBVV95cUxQT1JzTFZJTmVTWVd5WFhQX0FfdG9zQnVGdldVNTN4cTJucHVaeklGMTZ1dkpzRXhwaG16NHg5ck5ZRzJTaEd4WlNaMUdFUVR4anFFQ1BzR0J5b2pBSl9maXRHb1ZZTWVZQ1BENTdCaFRfVnhaWng0YU43Q2VYWGgydlRzdzdveng3cXYwY2lqajgwN2cwLW1qUg?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
@@ -271,7 +272,6 @@ Generated: `2026-09-27T09:34:50.926269+00:00`
 | normal | needs_editorial_verification | direct | [Huawei AI Glasses boasts a 12MP camera, 12-hour battery ... - Notebookcheck](https://www.notebookcheck.net/Huawei-AI-Glasses-boasts-a-12MP-camera-12-hour-battery-life-and-three-designs.1278357.0.html) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [I tried the $2,200 Snap Specs and AR glasses are exciting again - PhoneArena](https://news.google.com/rss/articles/CBMioAFBVV95cUxQSDlJcVNwLTlaY2w2YkJSblA1OWdWUTQ0Z0FkdEZldTQ4U2xTelltVlp0VFhpNW5RZ2F0MFdQZVZhYXA0QTlaYVEwX0xrU2ZScmptZ2ZJcmUybWF6YzJnN3QweTVlRkJUeEk4OVpMUjN2bmVWREl0eVRkcGtDdTUtN1VYNmZ5SkZicTBlVjZBWDlvNTVHY0ZRY1BaOGQ4dnJG?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [INMO отозвала умные очки Air 3. Есть риск ожогов из-за дужки - Рамблер](https://news.google.com/rss/articles/CBMiogFBVV95cUxPQzhlNGhpRThxaFk2bk51R1cyclBJUk5zVnVFUnNacGxMUmhhOEFLbzM4WnVFZHp4eVNHbF85Ql9SRHJXTFVNY2VzY0I2emJVODVyWm56YjI4ZVY1SnRWUVVYaDlwUzZWa2FRVHEzMWg2WXVGZUpMSkN2a3hUZ1JCVnJMa0w2WDNxUWJYMGNQakM2dmZPTGhHQUEwVFBLeUwtSnfSAacBQVVfeXFMT2w3Skx3eUlydVA4TWhZQTNZRlF3R3RoT1BkcnIwTFZhRGR3dExBV1pNaVlOSF9SRlBSVTZMVkNVT2JhZGZVYXRjdlMwWE1hTUU0a3Z2VnhhTXpPbjJ0UGlTSmNNcU9HNWFieHFJNG5GVzZEb01mZEYtVFZZWkV3X3JNb3Z5a1ozcWJJSHNhTWRKZHJTT1BVNFNSQXphN3ZVSGpIYkhyLUk?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Insta360 Could Shake Up Smart Glasses with Tech That Puts Frame Comfort First - Android Headlines](https://news.google.com/rss/articles/CBMingFBVV95cUxOR1NmWTRPeHYxQld4N2E3WF9nQlNmbDM2N1pjcFIyZzRiMXQzU2ZnWW9LR0U4WFA0djVlQTFrQnFPc3puZzJIUmQzZmNDSE9vWFM1ZGR4SVJ6QzBvRDdDYUNGdUR3LXhGQm9nSlhVN2U4RWdfcEptZzhYOEJaNDVIbDk2MDVfR1VOVzdfZ0tBNjNVdUZ5Q21BVlZxM3ptdw?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
