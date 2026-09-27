@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-27T15:51:02.014903+00:00`
+Generated: `2026-09-27T19:03:31.521138+00:00`
 
-- Intake files inspected: **319**
-- Candidates retained in this review window/history: **14244**
+- Intake files inspected: **318**
+- Candidates retained in this review window/history: **14138**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 3029
+- `adjacent_radar`: 2998
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 737
-- `rejected_noise`: 10328
+- `rejected_noise`: 10255
 - `source_monitor`: 1
 - `source_review`: 39
-- `watching`: 91
+- `watching`: 89
 
 ## Action queue
 
@@ -110,6 +110,7 @@ Generated: `2026-09-27T15:51:02.014903+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.435](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.435) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.436](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.436) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.437](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.437) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.438](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.438) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta Plans Camera-Free Smart Glasses Launch This Fall Amid Privacy Backlash - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE5tdWZNZTNwNkVqVWVfb0wzWXdOUTJCWDdaWXN0Y3pVOHFtS3pnaENCcjFZeHdqUzdELWtHc1FUNHlQc2E5dmFRQ1FTSUhfN2UxM3JxREQtaUV3bWJIUHB2a0tabEJwaHRiNnFyMVZOR3JDa2J0a0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta to launch AI glasses without camera - Daily Observer](https://news.google.com/rss/articles/CBMiSkFVX3lxTFBtNkZGNVpiMDdhWk80MW8yQXVDUGJpUnV1QmI5Sk81VHgwRmk0T2ktcHpuUUJmRmZGZXY4WmNUSjRMcVJWX0d4cHRR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -192,7 +193,6 @@ Generated: `2026-09-27T15:51:02.014903+00:00`
 | high | needs_editorial_verification | direct | [Meta VR Glasses and a Ton of Smart Glasses – Everything Announced at Meta Connect 2026 - ign.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE45R0gzWnZyZjZObXQtQ3ZUSTJEYzZwdGRLWEJhckNYdVJNaVR1NmNWUmZ2SGJ3TFNOUzhsYTFnbTBWbC1jaFdPNkNSZWZQSGlQRGs3cFlHSW1OSF9GNHFaSFpPN29QTWVnNUkxemlmeHFRdzFDZEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta’s smart glasses privacy defense falters when AI can use camera without recording light - Biometric Update](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTWxOWHJfQ0o4NWprYy1tMm1OMm9BckdWcldFbzhSZURhdTNZcl8wX0tUY25wVzlOSlA1WFRZV2JrZXcyTzdVNl9CTTBqaUs4WFhycnZyNlJCTmdWVmRyWW0zWERmaUxZUTlZNnl2bnRPYThyczY5QlRyM2JlbnBrUG8yeG1sQ2pzY3NmYkxrTlpkam1JMmVSQXZKVTM2SzIwX2JOSndIV1pvRXJvUFRPOEJlM1VOMjB5YVgxZ1JNTzZtaU83NEdpcw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Must Read: Puck Uncovers Previous Steven Kolb Incidents at CFDA, Meta To Launch Smart Glasses Without Cameras - fashionista.com](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV25wOF9sN0RBdzZlalNuSUZJT3RrMHk1eUEzZWg4cUlhSnlYcEdlb2tCX29Ba1hmMUpYX2JUTEtUQ2lBOGJoWVFuSnY2VmNMRDFqZHp3aDVBTkxkR0hoS0RLaDZKdXdac3REN0dhUHk1SDVVNW5LekR2Z1FPOE85aUxmZnZCMGxV?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Neuro Vision 3 Smart Glasses Review - TikTok](https://www.tiktok.com/@synesterkhal/video/7650246772517834014) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
 | high | needs_editorial_verification | direct | [Privacy, child safety chief concerns behind call to ban 'creepy' smartglasses - Illawarra Mercury](https://news.google.com/rss/articles/CBMitAFBVV95cUxPdnBBX1JkaVFaVXJmN0s5WkdCTUdVZDJMQkhtVUxEZkd6dEFzbEZrbHNUa1M0SEdHOXllNnpfekt4Nmp2clFlR3B1cGNLbk1lbkw5MFRkSmw3X2FWYWdkcm5sYzltbTlSSjZBdkY4OWRwZk11NnY5QWlqOEx3Zk8za1hIQWdVbnRqS1JpT2FZcEduQk44bUZYOFIxdVJBemwweWRSRldKWlhFMThQVTM3Y0ZNV1M?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Audio vs. Gen 3: What You Gain and Lose Without a Camera - Tech My Money](https://news.google.com/rss/articles/CBMipgFBVV95cUxNSlAzUlhEemJaQ0ZTNGlrRTZwUGlUR0NJTUNlVWtoV0EwdnRrS3M3dWFLZV90dmcySjNaUW9YMnFxRE9veUlaa0RfTzNDUkJtZWQwMHA4eGw3OGFJZGd4NHFqcEQ1ZXhpeG5WZkhoMzk4enlrRU5aMXN0SGhaTnpUbzJ5MGw2cjNFdVZQbzZRb3VmOXh6VFlqZU5tbkRsdzhYRXB1SXRB0gGmAUFVX3lxTE1KUDNSWER6YlpDRlM0aWtFNnBQaVRHQ0lNQ2VVa2hXQTB2dGtLczd1YUtlX3R2ZzJKM1pRb1gycXFET295SVprRF9PM0NSQm1lZDAwcDh4bDc4YUlkZ3g0cWpwRDVleGl4blZmSGgzOTh6eWtFTloxc3RIaFpOelRvMnkwbDZyM0V1VlBvNlFvdWY5eHpUWWplTm1uRGx3OFhFcHVJdEE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta confirmed to officially launch in PH - gizguide.com](https://news.google.com/rss/articles/CBMifkFVX3lxTE1jTUo4ODd6eEJuMmpZemwxbXNHbzNuaFp6czE1M0FYc09DWS1yaHMwYjd1OWlITUQ4RjIyR1lGNHNmdnhVaWpLbkp6X0NlSWlGYVdaMmJlelpreEpnWUNsZlRUZkpnbU9VNkpUdmdaSW1FOUhjbVJ6eC0xd2paUQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
