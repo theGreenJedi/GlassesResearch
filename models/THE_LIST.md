@@ -1,8 +1,8 @@
 # The List — Smart-Glasses Models Past and Present
 
-**Edition:** 2026-09-14
+**Edition:** 2026-09-27
 **Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 248 distinct purchasable models or explicitly marketed product generations
+**Count:** 249 distinct purchasable models or explicitly marketed product generations
 
 This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
 
@@ -458,6 +458,12 @@ These rows were already authorized in dated reconciliation packets. This section
 | GLS-0248 | EssilorLuxottica / Nuance Audio | Nuance Audio | 2025 | current | hearing-assistance audio smart glasses | manufacturer/optical retail | primary; [family research](NuanceAudio/README.md); [source](https://www.nuanceaudio.com/en-us/hearing-glasses) |
 | GLS-0249 | EssilorLuxottica / Nuance Audio | Nuance Audio Plus | 2026 | current | hearing-assistance audio smart glasses | manufacturer/optical retail | primary; [family research](NuanceAudio/README.md); [source](https://www.nuanceaudio.com/en-us/l/discover-nuance-audio-plus) |
 
+## Reconciliation admission — Sender G600Pro / JTLlink G600Pro family
+
+| ID | Maker | Model | Era | State | Type | Access | Evidence / links |
+|---|---|---:|---:|---|---|---|---|
+| GLS-0250 | Sender / Huizhou JTLlink Technology | G600Pro | 2026 | current/marketplace | camera/audio AI glasses | OEM/ODM marketplace | primary; [reconciliation](THE_LIST_RECONCILIATION_2026-09-27_G600PRO.md); [source](https://device.report/m/c17704d2ba8dd1f6287b235cf907a530475c9791ae9e68700d366468c4c10379.pdf) |
+
 ## Google Glass is in scope
 
 Google Glass is not a footnote or a prototype in this catalog. The Explorer Edition was sold through a paid access program, and both Enterprise Editions were commercial products deployed through partners. All three therefore receive stable entries.
@@ -470,7 +476,7 @@ Remaining archival work includes ODG R-8/R-9 and earlier R-series hardware, unna
 
 ## Not rows yet
 
-An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 248-row count:
+An announcement is not a purchasable model. The following remain in the [research registry](CATALOG.md) or [release tracker](../docs/news/RELEASE_TRACKER.md), not in the 249-row count:
 
 - Google/Samsung/Gentle Monster and Google/Samsung/Warby Parker intelligent eyewear: previewed partner products without final sale identities.
 - VITURE Helix: announced industrial product with a future target, not yet established as delivered.
