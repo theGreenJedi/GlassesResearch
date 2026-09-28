@@ -1,14 +1,67 @@
 (() => {
-  const activate = (event) => {
-    if (event.key !== 'Enter' && event.key !== ' ') return;
-    const control = event.target.closest('.gr-search-button, .gr-menu-button');
-    if (!control) return;
-    event.preventDefault();
-    control.click();
-  };
-  document.addEventListener('keydown', activate);
-})();
+  const searchControl = () => document.querySelector('.gr-search-button');
+  const menuControl = () => document.querySelector('.gr-menu-button');
+  const searchToggle = () => document.getElementById('__search');
+  const drawerToggle = () => document.getElementById('__drawer');
 
+  const setChecked = (toggle, checked) => {
+    if (!toggle || toggle.checked === checked) return;
+    toggle.checked = checked;
+    toggle.dispatchEvent(new Event('change', { bubbles: true }));
+  };
+
+  const syncSearch = () => {
+    const open = Boolean(searchToggle()?.checked);
+    document.documentElement.classList.toggle('gr-search-open', open);
+    searchControl()?.setAttribute('aria-expanded', String(open));
+    if (open) {
+      window.requestAnimationFrame(() => {
+        document.querySelector('.md-search__input')?.focus();
+      });
+    }
+  };
+
+  const syncMenu = () => {
+    const open = Boolean(drawerToggle()?.checked);
+    document.documentElement.classList.toggle('gr-menu-open', open);
+    menuControl()?.setAttribute('aria-expanded', String(open));
+  };
+
+  const bindControls = () => {
+    const search = searchControl();
+    const menu = menuControl();
+    const searchState = searchToggle();
+    const drawerState = drawerToggle();
+
+    if (search && !search.dataset.grBound) {
+      search.dataset.grBound = 'true';
+      search.addEventListener('click', () => setChecked(searchState, true));
+    }
+    if (menu && !menu.dataset.grBound) {
+      menu.dataset.grBound = 'true';
+      menu.addEventListener('click', () => setChecked(drawerState, !drawerState?.checked));
+    }
+    if (searchState && !searchState.dataset.grBound) {
+      searchState.dataset.grBound = 'true';
+      searchState.addEventListener('change', syncSearch);
+    }
+    if (drawerState && !drawerState.dataset.grBound) {
+      drawerState.dataset.grBound = 'true';
+      drawerState.addEventListener('change', syncMenu);
+    }
+
+    syncSearch();
+    syncMenu();
+  };
+
+  document.addEventListener('DOMContentLoaded', bindControls);
+  if (window.document$?.subscribe) window.document$.subscribe(bindControls);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    if (searchToggle()?.checked) setChecked(searchToggle(), false);
+  });
+})();
 
 /* Visual department routing only. Public URLs remain authoritative; this assigns presentation tokens. */
 (() => {
