@@ -78,3 +78,27 @@ body[data-gr-department] .gr-menu-button{
     background-image:linear-gradient(180deg,color-mix(in srgb,var(--gr-page-wash) 88%,#fff) 0,transparent 13rem);
   }
 }
+
+/* Keep Material's native search engine hidden until the public Search control opens it.
+   The public header remains visible; only the native search surface is temporarily restored. */
+html.gr-search-open .md-header{
+  display:block!important;
+  position:fixed;
+  inset:0;
+  z-index:30;
+  background:transparent;
+  box-shadow:none;
+  pointer-events:none;
+}
+html.gr-search-open .md-header__inner{
+  max-width:none;
+  pointer-events:none;
+}
+html.gr-search-open .md-header__button,
+html.gr-search-open .md-header__title{
+  visibility:hidden!important;
+  pointer-events:none!important;
+}
+html.gr-search-open .md-search{
+  pointer-events:auto;
+}
