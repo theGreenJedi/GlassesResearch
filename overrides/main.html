@@ -48,10 +48,42 @@
       <a href="/hacking/">Develop</a>
       <a href="/docs/ABOUT/">About</a>
     </nav>
-    <button class="gr-search-button" type="button" aria-label="Search GlassesResearch" aria-controls="__search" aria-expanded="false">Search</button>
-    <button class="gr-menu-button" type="button" aria-label="Open menu" aria-controls="__drawer" aria-expanded="false">Menu</button>
+    <button class="gr-search-button" type="button" aria-label="Search GlassesResearch" aria-controls="gr-site-search-panel" aria-expanded="false">Search</button>
+    <button class="gr-menu-button" type="button" aria-label="Open menu" aria-controls="gr-site-menu-panel" aria-expanded="false">Menu</button>
   </div>
 </header>
+<div id="gr-site-search-panel" class="gr-header-panel gr-header-panel--search" hidden>
+  <div class="gr-header-panel__backdrop" data-gr-close-panel></div>
+  <section class="gr-header-panel__sheet" role="dialog" aria-modal="true" aria-labelledby="gr-site-search-title">
+    <div class="gr-header-panel__topline">
+      <strong id="gr-site-search-title">Search GlassesResearch</strong>
+      <button type="button" class="gr-header-panel__close" data-gr-close-panel aria-label="Close search">Close</button>
+    </div>
+    <label class="gr-header-search-field">
+      <span class="gr-header-search-field__label">Search models, brands, research, and guides</span>
+      <input id="gr-site-search-input" type="search" autocomplete="off" inputmode="search" placeholder="Search GlassesResearch…">
+    </label>
+    <div id="gr-site-search-status" class="gr-header-search-status" aria-live="polite">Type to search the site.</div>
+    <div id="gr-site-search-results" class="gr-header-search-results"></div>
+  </section>
+</div>
+<div id="gr-site-menu-panel" class="gr-header-panel gr-header-panel--menu" hidden>
+  <div class="gr-header-panel__backdrop" data-gr-close-panel></div>
+  <section class="gr-header-panel__sheet" role="dialog" aria-modal="true" aria-labelledby="gr-site-menu-title">
+    <div class="gr-header-panel__topline">
+      <strong id="gr-site-menu-title">Menu</strong>
+      <button type="button" class="gr-header-panel__close" data-gr-close-panel aria-label="Close menu">Close</button>
+    </div>
+    <nav class="gr-header-menu-nav" aria-label="Mobile navigation">
+      <a href="/">Home</a>
+      <a href="/docs/COMPARISON_ENGINE/">Find &amp; Compare</a>
+      <a href="/models/catalog/">Models</a>
+      <a href="/docs/RESEARCH_NEWS/">Research &amp; News</a>
+      <a href="/hacking/">Develop</a>
+      <a href="/docs/ABOUT/">About</a>
+    </nav>
+  </section>
+</div>
 {{ super() }}
 {% endblock %}
 
