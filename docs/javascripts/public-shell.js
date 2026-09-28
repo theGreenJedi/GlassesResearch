@@ -35,11 +35,17 @@
 
     if (search && !search.dataset.grBound) {
       search.dataset.grBound = 'true';
-      search.addEventListener('click', () => setChecked(searchState, true));
+      search.addEventListener('click', () => {
+        setChecked(drawerState, false);
+        setChecked(searchState, !searchState?.checked);
+      });
     }
     if (menu && !menu.dataset.grBound) {
       menu.dataset.grBound = 'true';
-      menu.addEventListener('click', () => setChecked(drawerState, !drawerState?.checked));
+      menu.addEventListener('click', () => {
+        setChecked(searchState, false);
+        setChecked(drawerState, !drawerState?.checked);
+      });
     }
     if (searchState && !searchState.dataset.grBound) {
       searchState.dataset.grBound = 'true';
@@ -60,6 +66,7 @@
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return;
     if (searchToggle()?.checked) setChecked(searchToggle(), false);
+    if (drawerToggle()?.checked) setChecked(drawerToggle(), false);
   });
 })();
 
