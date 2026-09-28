@@ -119,13 +119,14 @@ jobs:
         run: |
           set -euo pipefail
           grep -Fq 'class="gr-search-button"' site/models/catalog/index.html
-          grep -Fq 'aria-controls="__search"' site/models/catalog/index.html
+          grep -Fq 'aria-controls="gr-site-search-panel"' site/models/catalog/index.html
           grep -Fq 'class="gr-menu-button"' site/models/catalog/index.html
-          grep -Fq 'aria-controls="__drawer"' site/models/catalog/index.html
-          grep -Fq "document.getElementById('__search')" site/docs/javascripts/public-shell.js
-          grep -Fq "document.getElementById('__drawer')" site/docs/javascripts/public-shell.js
-          grep -Fq 'html.gr-search-open .md-header' site/docs/stylesheets/public-shell.css
-          echo 'Public Search/Menu control contract verified.'
+          grep -Fq 'aria-controls="gr-site-menu-panel"' site/models/catalog/index.html
+          grep -Fq 'id="gr-site-search-panel"' site/models/catalog/index.html
+          grep -Fq 'id="gr-site-menu-panel"' site/models/catalog/index.html
+          grep -Fq "fetch('/search/search_index.json'" site/docs/javascripts/public-header-controls-20260928.js
+          grep -Fq 'gr-header-menu-nav' site/docs/stylesheets/public-header-controls-20260928.css
+          echo 'Public Search/Menu native-panel contract verified.'
       - name: Verify search discoverability signals
         run: python scripts/verify_discoverability.py
 
