@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-28T10:12:46.078709+00:00`
+Generated: `2026-09-28T10:13:37.768899+00:00`
 
 - Intake files inspected: **319**
 - Candidates retained in this review window/history: **13990**
@@ -12,10 +12,10 @@ Generated: `2026-09-28T10:12:46.078709+00:00`
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 750
+- `needs_editorial_verification`: 749
 - `rejected_noise`: 10100
 - `source_monitor`: 1
-- `source_review`: 33
+- `source_review`: 34
 - `watching`: 90
 
 ## Action queue
@@ -245,7 +245,6 @@ Generated: `2026-09-28T10:12:46.078709+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses with Prescription \| Smart Glasses with Rx Lenses ...](https://eydology.com/collections/ai-smart-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI眼镜产业链进入放量周期，南方基金旗下恒生科技ETF南方(520570)覆盖光学与硬件核心环节 - Jiemian.com](https://news.google.com/rss/articles/CBMiWEFVX3lxTFBtSUZybWlWYzdkOFEzYllvMkNYQ2RzMGFlLTRQRUVQdUxuQjMtWVVUMWVzTFZ3YXRnQ2ZMQVBzaFpkWl9Pdm43NW9DMjNqUEhMNk53NkIzbXc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI设备隐私担忧升温 Meta据悉将推出无摄像头智能眼镜 - 财联社](https://news.google.com/rss/articles/CBMiSEFVX3lxTFBQR3dYcElwRkdjZlBpLVdnUXBHSHdicHNaRUJ1RGlNcUxPS0t0a3BkbnRSQm55bU5SN3lZVXlPbHNfMFhLdkNOYQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Explores Lighter Vision Pro Successor Amid AR Glasses Push - Dainik Jagran MP CG](https://news.google.com/rss/articles/CBMixAFBVV95cUxQTjBwd0FGa1hlS3FXRU5fY0N5QWJJTTFkSFJ1NkEyY3lmUlRhamlvODlXeU1iQTBBYXhWSXY4Wld0dFhxNHJIV2NLQUJsTU4xN0JiWS1LNmVmYjU1ZTJTMmtVcWhWcThnVW00ZFdiRVhmelU0YTd2NElFN3JqTFlIbEM1SjhORUdCMVIyQzl2bnEzZURMZlFDSmR5cTZNYmdycWxRanRyRVhiQlQxMmU0R0ItOHh2dzZKVmtveldSeWtSbWRv?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple prepara sus primeras gafas inteligentes para 2027 y replantea el futuro de Vision Pro - teknofilo.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxOMXVuVTZnd3pYbnBnUXcyTHJ2QjFoVUZENDJtY3BVLVk3YXJmVUtpZkpKTEJuZUY1Smg5OXN4dXl3ZWs4U1lkbmtxb2NjWkg1Y1FaeEtib25BWU5IRXBzQ0owbko3VmpPLVVsY2ZWMzVQdjVUSU1GQ0cwVjFNenlRM1VpOV8wd9IBiwFBVV95cUxNRUhJMWRIWG5STkpiQTNEd2MySFFabkZ3Mi1zbEVtdWVHLUN3NWZESFAxcGE1SlhTZmtoM1FlSF8xOWUxRmtramd0RE90Z0MtamVqSmJWb2xlN1BTQkpyVHlYR1ZhT0VHczhJV3JsdUlHd2N2bFBGUkF5eTBJMXQ1eUFDUnA1UllZRTlB?oc=5) | reachable (200) | research_news_review |
@@ -272,6 +271,7 @@ Generated: `2026-09-28T10:12:46.078709+00:00`
 | normal | needs_editorial_verification | direct | [CNET Aug 24, 2026 If You Don’t Want Smart Glasses to Spy, Try a Bluetooth Detector App](https://www.cnet.com/tech/mobile/if-you-dont-want-smart-glasses-to-spy-try-a-bluetooth-detector-app/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Council Responds to Data Centres and Smart Glasses - Yass Valley Council](https://news.google.com/rss/articles/CBMihgFBVV95cUxNLXNSWEY0NWtyRHZ0Nnk0dEZGU0ozSzJxbW9tTEFwdlRrZ0V2RENEbVdGcGxsUGUwUGdVTmNfanlfd3pQSjlUemFnZHhCdHAxQWhQUVBNTENlZjIzSVI5ak9mcUNNaTl0dTViMTAwZGxnWEhVOUlaeFZ3UmtmNHhMcmdicGZtQQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Editorial: New Zealand needs a public debate before smart glasses become normal - NZ Herald](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPdkxzM0ExemFpajNhLTZ2bm5jdC1nMmdIdlUtWWtQS1pXRDRVbzZqQ0Y3SkM0cWZNelI5NnBOOGxESlNlSDVobHIxZzlmMnBCQjBmYlNhTEZOSGVRcUJoVUhvVTV4VGVZZkpjWmwzXzRaX1lURWFqOWE5Qkxydzd4ZWx5YzhFUUxPczVyR3dTWVpmLTNwRDNoaVA0ZXV2dVhsaVc4S1FmQ2VkLUl4YlhhbHF2NE1FY09LVUdRZjNXbi1HUVhPa3JpazdWY0ZoM25TRWhEVA?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Engadget 2d ago How to stop Meta training its AI models on your smart glasses' visual data Coverage Meta](https://www.engadget.com/2269454/how-to-stop-meta-training-its-ai-models-on-your-smart-glasses-visual-data/) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
