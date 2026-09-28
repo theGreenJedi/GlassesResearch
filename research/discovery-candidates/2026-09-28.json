@@ -1,34 +1,44 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-28T07:02:28.846995+00:00",
-  "candidate_count": 72,
-  "classifier_irrelevant_count": 53,
+  "discovered_utc": "2026-09-28T08:47:35.491662+00:00",
+  "candidate_count": 85,
+  "classifier_irrelevant_count": 66,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 18,
-    "broad_web": 38,
-    "developer": 16
+    "adjacent": 29,
+    "broad_web": 45,
+    "community": 10,
+    "developer": 11,
+    "research": 1,
+    "retail": 10
   },
   "relationship_counts": {
-    "direct": 1,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 18,
+    "adjacent": 19,
     "speculative": 0,
-    "irrelevant": 53
+    "irrelevant": 66
   },
   "type_counts": {
-    "model": 1,
-    "video": 11,
-    "news": 47,
-    "tool": 21,
-    "sdk": 16,
-    "policy": 1,
-    "retail": 2
+    "model": 4,
+    "review": 2,
+    "video": 4,
+    "news": 35,
+    "tool": 13,
+    "sdk": 11,
+    "hack": 1,
+    "policy": 3,
+    "retail": 19,
+    "teardown": 2,
+    "community": 28
   },
   "routing_counts": {
-    "adjacent_radar": 18,
-    "reject_noise": 53,
-    "research_news_review": 19
+    "adjacent_radar": 19,
+    "community_evidence_review": 10,
+    "reject_noise": 66,
+    "report_card_evidence": 3,
+    "research_news_review": 19,
+    "retail_rebrand_review": 4
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -39,39 +49,167 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
   "candidates": [
     {
-      "id": "b0ef52b70a2c424b",
-      "title": "XREAL xbx a01+ – XREAL AU Shop",
-      "url": "https://au.shop.xreal.com/products/xreal-xbx-a01",
-      "summary": "Delivers all-day comfort and freedom at only 62g.| Every detail pops with 1600 nits peak brightness. | Unique front frame designs to match your look.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
+      "id": "1e351f18fbfe17c2",
+      "title": "Chelmsford MA Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/chelmsford-ma/",
+      "summary": "Zillow has 78 homes for sale in Chelmsford MA. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "adjacent_hci",
       "materiality_score": 2,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "news"
+        "review",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "review",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c750e91b5f2cef81",
-      "title": "100+ Things To Do In Springfield | Springfield, Missouri",
-      "url": "https://www.springfieldmo.org/blog/post/100-things-to-do-on-your-trip-to-springfield-missouri/",
-      "summary": "If you haven't been to Springfield, Missouri yet, or you're a local looking for something new to do, you're in for a treat. Springfield is home to hundreds of local attractions, 600 restaurants, and many shopping opportunities.",
+      "id": "c764318650c9b8c8",
+      "title": "The Best 10 Restaurants near Chelmsford, MA 01824",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Chelmsford%2C+MA+01824",
+      "summary": "What are people saying about restaurants near Chelmsford, MA? This is a review for restaurants near Chelmsford, MA: \"Went for the first time on a Friday night. You order at the counter, then sit and wait. The kitchen was turning out orders ( mostly takeout) non stop. Waited close to an hour to be served. But the food was GREAT!! Fresh ...",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "767b69219e8f3685",
+      "title": "Anthropologie Carlsbad | Shop at The Forum",
+      "url": "https://theforumcarlsbad.com/stores/anthropologie/",
+      "summary": "Anthropologie Carlsbad location at The Forum features unique fashion, home décor, and accessories in our outdoor setting.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a7780295ab00f7e",
+      "title": "Gorjana Carlsbad | Jewelry Store at The Forum Carlsbad",
+      "url": "https://theforumcarlsbad.com/stores/gorjana/",
+      "summary": "Gorjana Carlsbad boutique at The Forum showcases California-inspired jewelry designs in our Mediterranean setting.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "23119eb5ffbb928c",
+      "title": "Grotto Spa Carlsbad | Wellness at The Forum Carlsbad",
+      "url": "https://theforumcarlsbad.com/stores/grotto-spa/",
+      "summary": "Grotto Spa at The Forum Carlsbad is the premier place for a great massage without the spa price. Enjoy the many benefits of foot reflexology, Swedish massage, couples massage, deep tissue massage, and more to experience reduced stress, relaxation, relief from headaches, and reduced back and neck pain.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a1b104aaf199fb27",
+      "title": "Homepage - Orthopaedic Surgical Associates",
+      "url": "https://www.orthsurg.com/",
+      "summary": "Orthopaedic Surgical Associates and Merrimack Spine Center provide fellowship trained orthopedic and spine specialists who deliver excellence in patient treatment and experience. So, skip the drive to Boston. With over 30 years of experience, see one of our sub-specialists that have been trained at the best institutions–right in your own backyard. Take the first step. Orthopaedic Surgical ...",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -95,226 +233,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "324ba40ffb954aba",
-      "title": "AEST Time Converter - Savvy Time",
-      "url": "https://savvytime.com/converter/aest",
-      "summary": "AEST time converter with Savvy Time. Compare current local time, UTC offsets, time difference, daylight saving time, table and map.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e6899eb3f8007854",
-      "title": "AEST Time Now — Australian Eastern Standard Time",
-      "url": "https://worldclocklive.com/time/aest/",
-      "summary": "AEST stands for Australian Eastern Standard Time. It is UTC+10:00 (standard time) and UTC+11:00 during Daylight Saving Time (AEDT).",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ce70053e7f86f129",
-      "title": "AEST to EST Converter - Convert Australian Time to Eastern Time - World ...",
-      "url": "https://www.worldtimebuddy.com/aest-to-est-converter",
-      "summary": "Quickly convert Australian Eastern Standard Time (AEST) to Eastern Standard Time (EST) with this easy-to-use, modern time zone converter.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0187d8a78f277065",
-      "title": "Agriculture Education Services and Technology - AEST",
-      "url": "https://aest.ag/certify/",
-      "summary": "Studies show individuals who receive certification are more successful in their current education environment. Students who earn certifications are better prepared for college. Mastering these skills helps them succeed in the rigorous, technology-driven learning environment.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1e5484356ef0b1ba",
-      "title": "All Wearables | Shop Smartwatches & Accessories | Samsung USA",
-      "url": "https://www.samsung.com/us/watches/all-watches/",
-      "summary": "Select and compare the latest features and innovations across Samsung's entire line of wearables. Find the perfect Samsung wearable for you!",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bd32011b66b528e9",
-      "title": "Australian Eastern Standard Time",
-      "url": "https://time.is/AEST",
-      "summary": "Exact time now, time zone, time difference, sunrise/sunset time and key facts for Australian Eastern Standard Time (AEST).",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "738c7fbff6b7cc03",
-      "title": "Australian Eastern Standard Time – AEST Time Zone",
-      "url": "https://www.timeanddate.com/time/zones/aest",
-      "summary": "Australian Eastern Standard Time (AEST) is the easternmost time zone in Australia. It is used in five Australian states and territories: Australian Capital Territory, New South Wales, Tasmania, Victoria, and Queensland.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "83e2dbcfdb8d8692",
-      "title": "Australian Eastern Time – AET Time Zone",
-      "url": "https://www.timeanddate.com/time/zones/aet",
-      "summary": "The term Australian Eastern Time (AET) is often used to denote the local time in areas observing either Australian Eastern Standard Time (AEST) or Australian Eastern Daylight Time (AEDT).",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3250586fbea583eb",
-      "title": "Best Gas Prices & Local Gas Stations in Springfield, MO",
-      "url": "https://www.gasbuddy.com/gasprices/missouri/springfield",
-      "summary": "Today's best 10 gas stations with the cheapest prices near you, in Springfield, MO. GasBuddy provides the most ways to save money on fuel.",
+      "id": "b20a6741b63b683f",
+      "title": "Integrated Gastroenterology Consultants",
+      "url": "https://www.integratedgic.com/",
+      "summary": "Integrated Gastroenterology Consultants serves the Greater Boston, Merrimack Valley and Southern New Hampshire with locations in Lowell, Lawrence, Andover, Haverhill and Newburyport. We specialize in endoscopy and colonoscopies, IBD, IBS, weight management / obesity and endobariatrics (including gas",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -338,12 +260,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "24bab30ec024cb0f",
-      "title": "Certifications – AEST – Agriculture Education Services and Technology",
-      "url": "https://aest.ag/certify/certifications-2/",
-      "summary": "AEST certifications were developed as a result of a need within the agricultural industry. Florida Farm Bureau saw that agriculturists needed a trusted, reliable credential that could be used when hiring employees.",
+      "id": "9f3629d73d2aa79c",
+      "title": "Mass Auto School | A Complete Drivers Educational Program",
+      "url": "https://www.massautoschool.com/",
+      "summary": "Massachusetts Auto School has been providing top quality driver education for over a decade at an affordable price. Our objective is for drivers to be safe and cautious, while also being aware of their surroundings at all times when behind the wheel. We offer training for both teens and adults. Our teen program includes 30 of classroom time, 12 hours behind the wheel, 6 hours of observation ...",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -352,11 +274,12 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -365,10 +288,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b47f45acfdbae6be",
-      "title": "Cities Nearby Springfield, Missouri, United States",
-      "url": "https://www.thecitiesnow.com/united_states/missouri/springfield",
-      "summary": "Find five hundred cities near Springfield, Missouri, United States from closest to farthest by distance. Distances from Springfield to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "id": "311c9c1d72b12ec2",
+      "title": "Movie Showtimes and Theaters near Chelmsford, MA | Fandango",
+      "url": "https://www.fandango.com/chelmsford_ma_movietimes",
+      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Chelmsford, MA",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -392,12 +315,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aaec032f6a8a7bcd",
-      "title": "Estate Sales in Springfield, MO",
-      "url": "https://www.estatesales.net/MO/Springfield",
-      "summary": "View the best estate sales happening in Springfield, MO. Find pictures, descriptions, and directions to local estate sales & auctions.",
+      "id": "e5ad32d02e1b40b5",
+      "title": "Mulloys Fine Jewelry Carlsbad | The Forum Carlsbad",
+      "url": "https://theforumcarlsbad.com/stores/mulloys-fine-jewelry/",
+      "summary": "Mulloys Fine Jewelry at The Forum Carlsbad. Mulloys Fine Jewelry has been North County's leading jeweler for over 25 years featuring many of the industry's top brands in fashion jewelry, watches, engagement rings, and bridal jewelry designs. An on-site master jeweler and jewelry repair department offers watch repair and custom designs.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -405,310 +328,298 @@
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9a00c7174c407980",
-      "title": "Fall Festivals You Have To Attend This Year Around The Ozarks",
-      "url": "https://www.springfieldmo.org/blog/post/fall-festivals-you-have-to-attend-this-year-around-the-ozarks/",
-      "summary": "If you love fall festivals, pumpkin patches, great food, live music and fun, here are a few fall events you need to attend this year around Springfield, Missouri and the Ozarks.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ceb274f9297f7b1f",
-      "title": "Time in Australia - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Time_in_Australia",
-      "summary": "Australia uses three main time zones: Australian Western Standard Time (AWST; UTC+08:00), Australian Central Standard Time (ACST; UTC+09:30) and Australian Eastern Standard Time (AEST; UTC+10:00).",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "47f698e3bc29caf9",
-      "title": "Time Now in AEST (Australian Eastern Standard Time)",
-      "url": "https://time.now/timezones/aest/",
-      "summary": "The abbreviation AEST stands for Australian Eastern Standard Time, distinct from AEDT (Australian Eastern Daylight Time) which is UTC+11:00 and used during summer months in most of the region.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "90112f59ebe10902",
-      "title": "Top wading spots and swimming holes in Springfield, Mo.",
-      "url": "https://sgfcitizen.org/springfield-culture/outdoors/outdoor-guide-wading-spots-and-swimming-holes-near-springfield/",
-      "summary": "Explore the best wading spots and swimming holes in and near Springfield, Mo. Cool off at local rivers and creeks, perfect for families.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b9787e8ed60f7796",
-      "title": "Towns Near Springfield MO: Best Small Towns Area Guide",
-      "url": "https://springfieldmohomesforsale.com/towns-near-springfield-mo/",
-      "summary": "Here’s a local broker’s honest, direction-by-direction guide to the best small towns near Springfield, MO — what they’re known for, how far out they are, and who each one tends to fit.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9c51073c6c006930",
-      "title": "Last Night (2010 film) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Last_Night_(2010_film)",
-      "summary": "Last Night was produced by Entertainment One in association with Gaumont, and deals with questions about emotional and physical infidelity. The film was developed as a romance and suspense story before Tadjedin recognized its moral significance.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7aaafaaa070aa9c4",
-      "title": "Last Night (2010) - IMDb",
-      "url": "https://www.imdb.com/title/tt1294688/",
-      "summary": "Joanna accuses her husband, Michael, of being attracted to his co-worker. Wanting to make-up before he goes on a business trip, she assumes she over-reacted. But when they are both away from each other for one night, Michael ends up testing his loyalty to Joanna and his attraction to Laura.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "09a11eede9b2c4fe",
-      "title": "Last Night (2014) - Stream Free | Tubi",
-      "url": "https://tubitv.com/movies/477493/last-night",
-      "summary": "Right before a model is about to finally move in with her long-time boyfriend, she meets an attractive stranger out of the blue and is sidetracked.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "17ea0902482a5763",
-      "title": "Last Night (Morgan Wallen song) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Last_Night_(Morgan_Wallen_song)",
-      "summary": "\" Last Night \" is a song written by John Byron, Ashley Gorley, Jacob Kasher Hindlin, and Ryan Vojtesak. It was recorded by American country music singer Morgan Wallen, the third single from his 2023 album One Thing at a Time. [2]",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab21641db17f361f",
-      "title": "Last Night - YouTube Music",
-      "url": "https://music.youtube.com/watch?v=bUjPPBxbQrQ",
-      "summary": "Sign in to create & share playlists, get personalized recommendations, and more.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
       "content_types": [
         "video",
-        "tool",
-        "sdk"
+        "teardown",
+        "community"
       ],
       "primary_type": "video",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "report_card_evidence",
+        "community_evidence_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d9f9db0389f47627",
-      "title": "Last Night streaming: where to watch movie online? - JustWatch",
-      "url": "https://www.justwatch.com/us/movie/last-night-2010",
-      "summary": "Find out how and where to watch \"Last Night\" online on Netflix, Prime Video, and Disney+ today – including 4K and free options.",
+      "id": "91b1598d0a5b8ffb",
+      "title": "Powersports Dealer | BRP Can-Am, Yamaha Watercraft, Kawasaki Motorcycles",
+      "url": "https://tyngsboro.moms73.com/",
+      "summary": "MOMS Tyngsboro is your premier MA powersports dealer specializing in BRP Can-Am off-road vehicles, BRP Can-Am Spyders & Rykers, Yamaha watercraft, Kawasaki motorcycles, and more. Visit us today!",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2cb763ae378bbdbd",
+      "title": "Princeton Station - Home",
+      "url": "https://www.princetonstation.com/",
+      "summary": "Full service restaurant, lounge and banquet facility.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "91e888298a545dde",
+      "title": "Shopping Center Hours | The Forum Carlsbad",
+      "url": "https://theforumcarlsbad.com/hours/",
+      "summary": "Carlsbad mall hours for The Forum's stores, restaurants, and services. Plan your visit to our North County shopping center.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "28a454466dfc47a1",
+      "title": "The Forum Carlsbad Store Guide | Carlsbad Shopping Directory",
+      "url": "https://theforumcarlsbad.com/stores/",
+      "summary": "Carlsbad shopping destination featuring 50+ curated stores, from organic grocers to activewear boutiques in our open-air Mediterranean center.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f767489aea907edd",
+      "title": "The Forum Carlsbad | Outdoor Shopping in Carlsbad | North County ...",
+      "url": "https://theforumcarlsbad.com/",
+      "summary": "Outdoor shopping in Carlsbad at The Forum - featuring health-conscious dining, boutique retailers & wellness services and events. The Forum Carlsbad – North County’s destination for shopping, dining, wellness, and events.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "332166c55224ca13",
+      "title": "The Henry | Carlsbad | The Forum Carlsbad",
+      "url": "https://theforumcarlsbad.com/stores/the-henry/",
+      "summary": "NOW OPENThe Henry at The Forum Carlsbad. Follow the arrow to the greatest neighborhood restaurant, a place where you can always count on a warm welcome from baristas, servers and bartenders who know your order by heart.A fusion of industrial and classical influences, our open dining spaces are bursting with charm and energy. Come and go with ease for your morning coffee, enjoy lunch with a ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6010033552ea4317",
+      "title": "Urban Outfitters Carlsbad | Fashion at The Forum Carlsbad",
+      "url": "https://theforumcarlsbad.com/stores/urban-outfitters/",
+      "summary": "Urban Outfitters at The Forum Carlsbad is a lifestyle retailer dedicated to inspiring customers through a unique combination of product, creativity and cultural understanding.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "408b49f1a3bfa5f6",
+      "title": "Urban Plates Carlsbad | Fresh Dining at The Forum Carlsbad",
+      "url": "https://theforumcarlsbad.com/stores/urban-plates/",
+      "summary": "Urban Plates at The Forum Carlsbad is a counter-serve stop for quick, farm-to-table cuisine such as pizzas, sandwiches & salads in mod digs.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e7a7db91e33bd842",
+      "title": "Weston Nurseries – The Best Plant Selection in MA",
+      "url": "https://westonnurseries.com/",
+      "summary": "Thanks to Weston Nurseries for the beautiful flowers and plant arrangements that brighten up our grounds here at Golden Pond Assisted Living. Their high-quality selections add vibrant color and a welcoming touch that our residents, families, and staff truly enjoy.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1d01ecd4aa3e7a7b",
+      "title": "When will lossless be released on LATAM? - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Live-Ideas/When-will-lossless-be-released-on-LATAM/idi-p/7320037",
+      "summary": "I'm from Argentina, and I find it absolutely insane that even Amazon Music is lossless, while Spotify, the number one music streaming service, still isn't in 2026.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
+      "materiality_score": 4,
+      "keyword_hits": [
+        "released"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video",
+        "model",
         "tool",
-        "sdk"
+        "sdk",
+        "retail",
+        "community"
       ],
-      "primary_type": "video",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -718,12 +629,41 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cf21c1d71486e6c6",
-      "title": "Last Night | Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/m/1211199-last_night",
-      "summary": "Discover reviews, ratings, and trailers for Last Night on Rotten Tomatoes. Stay updated with critic and audience scores today!",
+      "id": "5f5b1050e8531201",
+      "title": "[All Platforms] [Music] HiFi Quality - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Implemented-Ideas/All-Platforms-Music-HiFi-Quality-Lossless-Streaming-16bit-44/idi-p/700006/page/532",
+      "summary": "Will Spotify HiFi still be launched in 2025 as rumored? Also, will there be any spatial audio support (like Dolby Atmos) included in the future? Thanks in advance for your response, and please consider prioritizing HiFi quality — it’s something the community truly values. Kind regards, Victor Guminski",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2960784dca9394de",
+      "title": "[All Platforms] [Music] HiFi Quality - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Implemented-Ideas/All-Platforms-Music-HiFi-Quality-Lossless-Streaming-16bit-44/idi-p/700006/page/533",
+      "summary": "I would like to formally request that Spotify prioritize releasing true CD-quality lossless streaming (1,411 kbps FLAC/ALAC) for Premium or higher users. This level of quality is standard in competing services like Qobuz, Tidal HiFi, and Apple Music Lossless, and it would allow Spotify users with high-end equipment to experience music as the ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -733,7 +673,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -745,12 +686,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a4fcf18d899bfb12",
-      "title": "Sign in to your account",
-      "url": "https://to-do.live.com/tasks?app",
-      "summary": "Sign-in options Terms of use Privacy & cookies ...",
+      "id": "248d2a74c3c755db",
+      "title": "[Country] Spotify in Ukraine - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Implemented-Ideas/Country-Spotify-in-Ukraine/idi-p/1512615",
+      "summary": "Hi Spotify team! When watching Eurovision on TV in Stockholm this year I couldn't but think why Spotify is not yet registered in Ukraine? Eurovision 2017 in Ukraine would be a great marketing kick-start for the app in this country. Unlike Russia's personal data laws, Ukraine has no such restriction...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3550b56ae7916944",
+      "title": "Amazon.com: Sign In",
+      "url": "https://www.amazon.com/sign/s?k=sign+in",
+      "summary": "Patient sign-in sheets with privacy protection and organized record-keeping for front desks.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -761,8 +730,36 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
+        "policy",
+        "retail"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6f2655aa94065a8",
+      "title": "Enable Spotify HiFi / Lossless support for Audiola... - The Spotify ...",
+      "url": "https://community.spotify.com/t5/Live-Ideas/Enable-Spotify-HiFi-Lossless-support-for-Audiolab-6000N-and/idi-p/7283751",
+      "summary": "Enable Spotify HiFi / Lossless over Spotify Connect on devices like Audiolab 6000N Or clearly communicate which hardware platforms will be supported, and when Spotify already dominates usability and music discovery. Adding proper lossless support on established hi-fi streamers would make it a complete solution for serious listeners as well.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
         "tool",
-        "policy"
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -774,10 +771,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "affb4c0dc55b8306",
-      "title": "The 25 best movies on Tubi to watch for free! (September 2026)",
-      "url": "https://ew.com/best-movies-on-tubi-11884789",
-      "summary": "But where to even begin? Well, you’ve come to the right place. Ahead, we’ve narrowed it down to the 25 best movies streaming for free on Tubi.",
+      "id": "f3ec29230a0e181c",
+      "title": "Lossless en Colombia - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Subscriptions/Lossless-en-Colombia/td-p/7343280",
+      "summary": "Plan Premium Country Colombia (COL) Device Todos Operating System Todos My Question or Issue Quiero saber cuándo será lanzada la función lossless en Colombia.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -788,11 +785,11 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video",
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -802,10 +799,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "995802d61f0550dc",
-      "title": "Tubi - Watch Free Movies and TV Shows in 1080p Quality",
-      "url": "https://tubi-v1.storage.googleapis.com/index.html",
-      "summary": "Discover Tubi, your ultimate destination for streaming thousands of free movies and TV shows in stunning 1080p HD quality. No subscription needed.",
+      "id": "bb45fea3eb51d00d",
+      "title": "Lossless in Brazil - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Live-Ideas/Lossless-in-Brazil/idi-p/7470229",
+      "summary": "Spotify is charging premium prices while still delivering inferior audio quality compared to its competitors. Apple Music, TIDAL, and Qobuz already include lossless and high-resolution audio in their subscriptions. In 2026, there is no technical or business justification for Spotify users to keep paying similar prices for lower-quality audio. Spotify excels in playlists, recommendations, and ...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -816,11 +813,11 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video",
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -830,10 +827,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6ff648b5604ca5e3",
-      "title": "Tubi - Watch Free Movies and TV Shows in 1080p Quality",
-      "url": "https://tubi--ts.s3.amazonaws.com/index.html",
-      "summary": "Stream the latest movies and TV shows for free in 1080p HD on Tubi. No subscriptions, no ads—just unlimited entertainment.",
+      "id": "928ab5861476fa25",
+      "title": "LOSSLESS MEXICO - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Music-Discussion/LOSSLESS-MEXICO/td-p/7137563",
+      "summary": "Agradecería una actualización oficial sobre la fecha de disponibilidad del servicio de audio de alta fidelidad (Hi-Fi) en el mercado mexicano. Como suscriptor, me interesa conocer la implementación de esta función en nuestra región. Agradezco de antemano su atención.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -844,11 +841,11 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video",
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -858,152 +855,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7b53ee1e7a0303da",
-      "title": "Tubi TV - full list of movies and TV shows online - JustWatch",
-      "url": "https://www.justwatch.com/us/provider/tubi-tv",
-      "summary": "The full list of movies and TV shows on Tubi TV. Find out what to watch on Tubi TV with JustWatch.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "42367a9cdc390832",
-      "title": "Tubi TV: Free Movies Online – A Complete Guide (2025)",
-      "url": "https://cineparenting.com/tubi-tv-free-movies-online-2025/",
-      "summary": "Watch thousands of free movies online with Tubi TV. This 2025 guide covers Tubi’s massive library, top free films, horror hits, blockbuster dramas, Black Cinema, and more.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ff2df9a00f3d7908",
-      "title": "Watch Free Movies and TV Shows Online | Tubi",
-      "url": "https://tubitv.com/",
-      "summary": "Watch free movies and TV shows online in HD on any device. Tubi offers streaming movies in genres like Action, Horror, Sci-Fi, Crime and Comedy. Watch now.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ced50b406d5fbbf5",
-      "title": "Watch Free Movies Online | Tubi TV",
-      "url": "https://tubitv.com/movies",
-      "summary": "Watch movies for FREE on Tubi. Tubi offers more than 40,000 full movies in genres like Action, Horror, Sci-Fi, Crime and Originals. Stream Now.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fcd07b0add711c13",
-      "title": "Watch Free TV & Movies Online | Stream Full Length Videos | Tubi",
-      "url": "https://link.tubi.tv/Download",
-      "summary": "Watch free movies and TV shows online in HD on any device. Tubi - streaming movies and TV free.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1af92632fb969501",
-      "title": "Welcome to Tubi!",
-      "url": "https://link.tubi.tv/",
-      "summary": "Thousands of movies and TV shows. Always Free.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "d3c47db25ab3fba0",
+      "title": "ProjectSight | Construction Project Management Software | Trimble",
+      "url": "https://www.trimble.com/en/products/projectsight",
+      "summary": "Streamline construction project management with Trimble ProjectSight. Gain control in minutes, simplify paperwork and maximize productivity.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1025,10 +882,145 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c12891bccfa346cf",
-      "title": "2026 English Premier League Standings & Table | FOX Sports",
-      "url": "https://www.foxsports.com/soccer/premier-league/standings",
-      "summary": "View the English Premier League table and standings on FOXSports.com. Table includes games played, points, wins, draws, & losses for your favorite teams!",
+      "id": "acd1531ea1254a31",
+      "title": "Spotify HiFi on Linux desktop player - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Desktop-Linux/Spotify-HiFi-on-Linux-desktop-player/td-p/6320672",
+      "summary": "Whenever Spotify HiFi “Supremium” comes out, I sure hope the Linux desktop player works with it. Tidal has dropped its Plex partnership, so I'm losing the ability to play a streaming music service (TIDAL) through Plexamp, which was the best (only?) way to play lossless, gapless music directly on Linux desktop from a music streaming provider.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99f0018737ebdbbd",
+      "title": "Spotify Malaysia Lossless - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Live-Ideas/Spotify-Malaysia-Lossless/idi-p/7444263",
+      "summary": "Spotify Malaysia still has no Lossless in 2026 while Apple Music and Tidal already had it for years. Premium price keeps increasing but we’re still stuck at 320kbps “Very High”. Why are Malaysian users always left behind in feature rollouts?",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8c71873e22899621",
+      "title": "#aiconfluence2026 #artificialintelligence #computerscience #btech # ...",
+      "url": "https://ro.linkedin.com/posts/ayush-singh-841333436_aiconfluence2026-artificialintelligence-activity-7504196012165447680-EcjN",
+      "summary": "AI CONFLUENCE ( Microsoft) Had a great experience attending AI CONFLUENCE 2026 at Microsoft Office, Gurugram! 🤖 It was a valuable opportunity to learn about AI, emerging technologies and industry perspectives. I’m grateful to Sahil Anand, Ravi Verma and Sachin V.. for their guidance and for helping make this learning opportunity possible. As a first-year B.Tech CSE student, this ...",
+      "discovery_channel": "adjacent+community+retail",
+      "query": "AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "359e2d1d959196b3",
+      "title": "#allin #allin2026 #ai #artificialintelligence #data #ia # ... - LinkedIn",
+      "url": "https://fr.linkedin.com/posts/chhivtexung_allin-allin2026-ai-activity-7507101163255832577-4IXV",
+      "summary": "One of the highlights of the ALL IN event was the Compass Data & AI booth. Being an F1 fan and seeing an F1 simulator that sends real-time race data for a real-time analysis with AI was quite interesting. Thanks to Vincent Fortier from Databricks for the demo, discussions and explanations. --- Un des faits saillants de l'événement ALL IN était le kiosque de Compass Data & AI. Étant un fan ...",
+      "discovery_channel": "adjacent+community+retail",
+      "query": "AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6588b1d48c6df053",
+      "title": "#artificialintelligence #ai #healthcare #innovation # ... - LinkedIn",
+      "url": "https://fr.linkedin.com/posts/david-veillette-mba-b2873a2b2_artificialintelligence-ai-healthcare-activity-7509339306180726784-lJvU",
+      "summary": "Great to reconnect with the Honourable Evan Solomon, Minister of Artificial Intelligence and Digital Innovation, at the Empire Club of Canada today, alongside my colleagues Victor Sami, VP Digital Innovation & Data, and Jharna Bajaj, for an important conversation on “AI for All: Building Canada’s AI Future.” As AI continues to evolve, so will the legislative and regulatory environment ...",
+      "discovery_channel": "adjacent+community+retail",
+      "query": "AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d9a005064672bf1b",
+      "title": "'23 Ninja 400 - Minor Resurrection and Corner Carver Build",
+      "url": "https://www.twtex.com/forums/threads/23-ninja-400-minor-resurrection-and-corner-carver-build.137185/",
+      "summary": "The Bike: 2023 Ninja 400 KRT Edition I picked up the bike on the cheap with an unrelated trade where no money changed hands. It had been on both its sides and I had test rode it before. On the right, the brake hand and foot levers were bent and some minor fairing scratches. On the left, the...",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1051,12 +1043,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "32a81f05875a792e",
-      "title": "2026 NFL Scores - Live Updates for Today's Games | FOX Sports",
-      "url": "https://www.foxsports.com/nfl/scores",
-      "summary": "View live NFL scores for today's games. Real time NFL scores include box scores, updated odds, video highlights and stats.",
+      "id": "e4e4e89cc22f98dd",
+      "title": "6abc Action News - WPVI Philadelphia, Pennsylvania, New ...",
+      "url": "https://6abc.com/",
+      "summary": "Action News and 6abc.com are Philadelphia's source for breaking news and live streaming video online, covering Philadelphia, Pennsylvania, New Jersey, Delaware.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1077,12 +1069,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6a9419d7c9dafdf3",
-      "title": "About Molle Volkswagen in Kansas City, MO",
-      "url": "https://www.mollevwofkansascity.com/aboutus.aspx",
-      "summary": "Check out our new specials and used specials for additional savings on your next vehicle. As a premier Missouri Volkswagen dealer, we have a huge selection of new and used vehicles from which to choose. Molle Volkswagen online and offline customers enjoy vehicle specials every day.",
+      "id": "1cb2ec1c2474f650",
+      "title": "a good free \"Auto-Clicker\" program? : r/software - Reddit",
+      "url": "https://www.reddit.com/r/software/comments/7mfxmh/a_good_free_autoclicker_program/",
+      "summary": "this looks perfect, thanks looks like this guy is taking food out of Murgee's kids mouths by making a comparable auto-clicker free of charge. what an asshole!",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1091,9 +1083,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1103,12 +1095,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "253aead1f56d2235",
-      "title": "About Our Volkswagen Dealership | VW Lee’s Summit serving Kansas City, MO",
-      "url": "https://www.vwleessummit.com/aboutus.aspx",
-      "summary": "Because we have longstanding relationships with banks and lenders in Kansas City, Missouri, Lee’s Summit, Overland Park, Kansas and surrounding areas, we have financing options for all credit types.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "id": "5ee7478f8ea4e981",
+      "title": "AI Is the Witch in Our Modern-Day Hunt | Andre SHOJAIE | 28 comments",
+      "url": "https://www.linkedin.com/posts/andresho_artificialintelligence-ai-allin2026-activity-7505292166978609152-7i9G",
+      "summary": "𝐀𝐈 𝐈𝐬 𝐭𝐡𝐞 𝐖𝐢𝐭𝐜𝐡 𝐢𝐧 𝐎𝐮𝐫 𝐌𝐨𝐝𝐞𝐫𝐧-𝐃𝐚𝐲 𝐇𝐮𝐧𝐭 This week, as AI leaders gather at ALL IN, a major international AI ...",
+      "discovery_channel": "adjacent+community+retail",
+      "query": "AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1117,9 +1109,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1129,12 +1121,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "353a9628f8feb5b8",
-      "title": "Audi, Chevrolet, Toyota, Scion and Volkswagen Dealer Kansas City MO New ...",
-      "url": "https://www.mollecars.com/",
-      "summary": "Molle Cars in Kansas City, MO offers new and used Audi, Chevrolet, Toyota, Scion and Volkswagen cars, trucks, and SUVs to our customers near Overland Park. Visit us for sales, financing, service, and parts!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "id": "cfa832b08b3d354c",
+      "title": "AI-briefing – 21. september 2026 | Martin Sattrup Christensen",
+      "url": "https://dk.linkedin.com/posts/martin-sattrup-christensen_ai-briefing-21-september-2026-activity-7507655035053420545-KoUq",
+      "summary": "Kan din virksomhed vokse uden at ansætte tilsvarende flere mennesker – og samtidig undgå at købe software, som AI snart kan erstatte? Og er EU på vej til at begrænse børns adgang til bestemte AI-chatbots? Det er to af de spørgsmål, jeg tager fat på i denne uges Mandagsbrief om AI. For første gang har vi danske data, der peger på, at virksomheder, som tager AI i brug ...",
+      "discovery_channel": "adjacent+community+retail",
+      "query": "AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1143,9 +1135,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1155,88 +1147,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bed540c4f0dc50f2",
-      "title": "Austin News & Weather | Austin, TX | KXAN Austin",
-      "url": "https://www.kxan.com/",
-      "summary": "We tell local Austin news & weather stories, and we do what we do to make Austin, Round Rock, Georgetown, Dripping Springs, Bastrop and the rest of Central Texas a better place to live.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3c2d7fc40eac11be",
-      "title": "Bud Brown Volkswagen Olathe | Kansas City VW Dealer",
-      "url": "https://www.budbrownvw.com/",
-      "summary": "Bud Brown Volkswagen in Olathe, KS. 4.7★ rated dealer near Kansas City with new & used VW sales, certified service, parts and easy financing.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6d02ae1073f8b7d2",
-      "title": "Customize the Taskbar in Windows | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/windows/experience/personalization/customize-the-taskbar-in-windows",
-      "summary": "Learn how to use the taskbar features in Windows. Hide the taskbar, pin an app, change the location, and more with taskbar settings.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "315e924e89c66ff0",
-      "title": "Football Tables and Standings - Football - BBC Sport",
-      "url": "https://www.bbc.co.uk/sport/football/tables",
-      "summary": "Please note: All times are UK. Some content is provided by third parties, is subject to change, and is unverified.",
+      "id": "c660dd6cd2c05567",
+      "title": "AMP Reviews",
+      "url": "https://www.ampreviews.net/index.php?forums/reviews-north-nj.98/filters",
+      "summary": "Started by: Last updated: Any time 7 days 14 days 30 days 2 months 3 months 6 months 1 year Sort by: Sort order Last message First message Title Replies Views First message likes Sort direction Descending Ascending Filter Forums",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1259,12 +1173,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "18e707801a1ddb91",
-      "title": "Free To Do List Online - No Signup or Login Required",
-      "url": "https://www.freetodolist.com/",
-      "summary": "Create a free to do list or checklist online - no signup, no login, no registration needed. Share with anyone. Free forever, no account required.",
+      "id": "23ecdfe40c0152c9",
+      "title": "Any virus-free Autoclicker out there? : r/pcmasterrace - Reddit",
+      "url": "https://www.reddit.com/r/pcmasterrace/comments/jr9e5c/any_virusfree_autoclicker_out_there/",
+      "summary": "I mainly suggest this instead of a straight up auto-clicker because 1. Safer, it is known to be safe software, downloaded from a known to be safe location. 2. If it doesn't work it is your fault and you are able to fix it, compared to trying many different auto-hotkey programs trying to find one that works, while risking possible malware from unknown sites. Reply reply BladePocok •",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4704eab99c86b4cd",
+      "title": "ApartmentHomeLiving.com (@apartmenthomeliving) - Instagram",
+      "url": "https://www.instagram.com/apartmenthomeliving/",
+      "summary": "7,722 Followers, 1,189 Following, 1,176 Posts - ApartmentHomeLiving.com (@apartmenthomeliving) on Instagram: \"Enhancing the rental experience. apartmenthomeliving.com Link in bio 👇\"",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1285,38 +1225,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "86559943cc92207d",
-      "title": "Google Tasks",
-      "url": "https://tasks.google.com/",
-      "summary": "Google Tasks helps you manage, capture, and edit your tasks from anywhere, at any time.",
+      "id": "7bd836226a721087",
+      "title": "Apartments and Homes For Rent - ApartmentHomeLiving.com",
+      "url": "https://www.apartmenthomeliving.com/",
+      "summary": "Apartments For Rent - Find the best Apartment. Official prices, pictures and floorplans. Get accurate, up-to-date and detailed information on apartments. Check Today's Availability.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a69a43fcf4c26cca",
-      "title": "Houston Translation Services - Translation company - JR Language",
-      "url": "https://jrlanguage.com/locations/houston-translation-services/",
-      "summary": "Are you are looking for Language Translation Services in Houston? Look no more, JR Language is your reliable one-stop Translation Agency serving Houston. We have an experienced multilingual and multidisciplinary translation team available to work on your translation project in over 100 languages.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1337,10 +1251,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "60266d439985d956",
-      "title": "How to hide or show the taskbar in Windows 11 - Digital Citizen",
-      "url": "https://www.digitalcitizen.life/hide-unhide-taskbar-windows-11/",
-      "summary": "When the taskbar is not visible, press the Windows key to make it visible, and then press the Windows key again to hide the taskbar. This keyboard shortcut works like in the GIF animation below, and it also opens the Start Menu.",
+      "id": "646c58f0d00e8c77",
+      "title": "Apartments for Rent Near Me | ApartmentHomeLiving.com",
+      "url": "https://www.apartmenthomeliving.com/near-me/apartment-rentals",
+      "summary": "Find Top Nearby Apartments for rent at ApartmentHomeLiving.com. See official pricing, pictures, and detailed info on apartments near you.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1363,166 +1277,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4c94d0e5648c25b0",
-      "title": "How To Hide the Taskbar in Windows 10 (Auto Hide)",
-      "url": "https://windowsloop.com/how-to-hide-taskbar-in-windows-10/",
-      "summary": "To increase the overall screen space and make the desktop look cleaner, you can hide the taskbar in Windows 10. Here are the steps to do so.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "885c396d77f1303d",
-      "title": "How to Hide the Taskbar in Windows 11 and 10: Quick Steps - wikiHow",
-      "url": "https://www.wikihow.com/Hide-the-Windows-Taskbar",
-      "summary": "You can do this from the Settings menu in Windows 10 and 11, or you can use the taskbar's Properties in older versions. This wikiHow will show you how to hide the Windows taskbar, plus what to do if the taskbar isn't working.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d96f83ba8fa7cbf1",
-      "title": "How to Hide the Taskbar on Windows 10 - How-To Geek",
-      "url": "https://www.howtogeek.com/677619/how-to-hide-the-taskbar-on-windows-10/",
-      "summary": "The Windows taskbar is great for quickly accessing frequently used applications on your computer. However, some users prefer to hide it in order to save screen space. Here's how to hide the taskbar on Windows 10. Automatically Hide the Taskbar in Settings",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c5271935d20f9970",
-      "title": "How to Hide the Taskbar on Windows 11 - How-To Geek",
-      "url": "https://www.howtogeek.com/743060/how-to-hide-the-taskbar-on-windows-11/",
-      "summary": "In Windows 11, the taskbar takes up a small portion of the screen. Luckily, it's easy to reclaim that space by configuring the taskbar to hide itself automatically.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f08c7c83dede9ad0",
-      "title": "How to Permanently Hide Taskbar in Windows 11 [2 Ways]",
-      "url": "https://windowsreport.com/windows-11-hide-taskbar/",
-      "summary": "Are you trying to hide the taskbar on Windows 11? Have a look at our complete guide on how to do that in no time and how to customize your OS.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "91807a31690e67f7",
-      "title": "Huawei Mobile Phones: Latest & New Smartphones List (28th September ...",
-      "url": "https://www.gadgets360.com/mobiles/huawei-phones",
-      "summary": "List of all Huawei phones including latest, upcoming mobile phones from Huawei smartphone brands. Also find Huawei 5g smartphones, camera phones & best Huawei mobiles with price, specifications and reviews.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bfe676012f209173",
-      "title": "Joe Machens Volkswagen of Columbia | McLarty Automotive Group",
-      "url": "https://www.joemachensvw.net/",
-      "summary": "Joe Machens Volkswagen of Columbia is your Missouri VW destination. We’ve got you covered with new Volkswagen models, pre-owned vehicles, VW service and parts, all conveniently located at our dealership near Jefferson City and Sedalia, MO.",
+      "id": "6817b35f0e751e4d",
+      "title": "Baton Rouge Volkswagen Dealer in Baton Rouge LA | New Orleans ...",
+      "url": "https://www.southpointvw.com/",
+      "summary": "Southpoint Volkswagen of Baton Rouge LA serving New Orleans, Hammond, Metairie, is one of the finest Baton Rouge Volkswagen dealers.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1545,10 +1303,114 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bd83172b441b2ebf",
-      "title": "Microsoft To Do: Lists, Tasks & Reminders",
-      "url": "https://apps.microsoft.com/detail/9nblggh5r558?hl=en-US&gl=US",
-      "summary": "Got something on your mind? Get Microsoft To Do. Whether you want to increase your productivity, decrease your stress levels, or just free up some mental space, Microsoft To Do makes it easy to plan your day and manage your life. With Microsoft To Do, you can: • Stay focused with My Day, a personalized daily planner with suggested tasks • Get your lists anywhere, on any device • Share ...",
+      "id": "a0fd14ea693ad2a6",
+      "title": "Best Auto clicker? : r/incremental_games - Reddit",
+      "url": "https://www.reddit.com/r/incremental_games/comments/74g35c/best_auto_clicker/",
+      "summary": "I've tried multiple auto-clicker apps (not all).. and so far this \"Fast Mouse Clicker\" is best one. If you're searching for one, try this one first to save yourself from spending time checking out on others.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "57c97eb801151508",
+      "title": "Celebrity News and Gossip - Lipstick Alley",
+      "url": "https://www.lipstickalley.com/forums/celebrity-news-and-gossip.15/",
+      "summary": "We discuss the latest celebrity news and gossip with wit, humor and occasional insider knowledge",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5e6f4175d27a980",
+      "title": "Does anyone have a good autoclicker? (One that clicks in ... - Reddit",
+      "url": "https://www.reddit.com/r/ClickerHeroes/comments/2xj9sp/does_anyone_have_a_good_autoclicker_one_that/",
+      "summary": "18 votes, 61 comments. true There are no autoclickers that can click anywhere but where your mouse is. An autoclicker is just that, a program that clicks automatically. Clicks are registered where your mouse pointer is. There's no way to register a click in a random part of the screen without manually moving your mouse to it, or using scripts (i.e. AHK). Reply reply Dylan5504 •",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "73bcb2b9854d9d2e",
+      "title": "Fast autoclicker for G Hub : r/LogitechG - Reddit",
+      "url": "https://www.reddit.com/r/LogitechG/comments/hlihhi/fast_autoclicker_for_g_hub/",
+      "summary": "Fast autoclicker for G Hub now that i use the new logitech G Hub for my G502 HERO i noticed that my auto click macro is slower than my own fingers. this gives me about 7 cps which doesnt make any sense. ALSO does anybody know how to delete a macro?",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "11acd43761b32786",
+      "title": "Guide - The Complete Hypixel SkyBlock Modding Guide (MC 1.21+): Full ...",
+      "url": "https://hypixel.net/threads/the-complete-hypixel-skyblock-modding-guide-mc-1-21-full-mod-list-with-descriptions-installation-troubleshooting-pre-configured-modpack.5937304/",
+      "summary": "The Complete Hypixel SkyBlock Modding Guide (MC 1.21+): Full Mod List with Descriptions, Installation, Troubleshooting & Pre-Configured Modpack Quick navigation: Introduction Why use mods? Which Minecraft version should I use? Why use a third-party launcher? Geting help SkyBlock Enhanced (my...",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1571,10 +1433,169 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "be8fd16a561625ec",
-      "title": "Molle Volkswagen of Kansas City | VW Dealer In Kansas City",
-      "url": "https://www.mollevwofkansascity.com/",
-      "summary": "Visit us in Kansas City, MO, and experience the welcoming atmosphere that makes us a trusted name in the region. Discover how we can assist you in finding the perfect vehicle and maintaining it for years to come.",
+      "id": "5ab3020bea145a70",
+      "title": "Has anyone greatly reduced their dark under eye circles?",
+      "url": "https://www.lipstickalley.com/threads/has-anyone-greatly-reduced-their-dark-under-eye-circles.5288903/",
+      "summary": "More collagen in your diet. (Bone broth.) Acid peels. Microneedling. Vitamin C. Sunscreen. Guasha Enough minerals in your diet. Detox. Exercise. Face workouts.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8715eef8c6753e0b",
+      "title": "I'm looking for an auto clicker app : r/ios - Reddit",
+      "url": "https://www.reddit.com/r/ios/comments/dk27t7/im_looking_for_an_auto_clicker_app/",
+      "summary": "I'm looking for an auto-clicker app that will click any place of the screen with delays in between but i cant find any. I'll take it even if it requires a jailbreak. The purpose of this is to click watch a video, wait 30 seconds, exit the ad and get my reward or whatever. Share Add a Comment Sort by: Best Open comment sort options Best Top New Controversial Old Q&A murpoh •",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "hack",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "029e9fae759a58a7",
+      "title": "In Love with Dove Intensive Repair Mask - Lipstick Alley",
+      "url": "https://www.lipstickalley.com/threads/in-love-with-dove-intensive-repair-mask.6173937/",
+      "summary": "Just wanted to come on here and say I tried Dove’s Intensive Repair Mask and I’m in love. This will be a new staple for me. The slip is exceptional, my hair drank it up, my hair is prone to dryness and it’s nice and moist a week post wash day. My hair also felt strong and juicy afterwards. I use...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c7b019cf87448496",
+      "title": "Indian Premier League - Live Cricket Scores, Match Schedules ...",
+      "url": "https://www.espn.com/cricket/series/_/id/8048/ipl",
+      "summary": "Check Indian Premier League Schedule Live Cricket Score Ball-by-Ball Commentary Results only on ESPN.com. Read Indian Premier League Match Highlights News Photos Videos Articles",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eca84ebf3536546f",
+      "title": "Is an auto-clicker allowed for building in Skyblock?",
+      "url": "https://hypixel.net/threads/is-an-auto-clicker-allowed-for-building-in-skyblock.2522759/",
+      "summary": "Hi. I'm just wondering, is it against the rules to use an auto-clicker for building in skyblock? I don't want to be banned for using an auto-clicker just to rest my fingers a bit. Pls advise :) Thanks.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "67f09b588df6dba3",
+      "title": "Is OP autoclicker a Virus? : r/antivirus - Reddit",
+      "url": "https://www.reddit.com/r/antivirus/comments/xl2cpc/is_op_autoclicker_a_virus/",
+      "summary": "Just Google Gary's hood auto clicker, free to download, miniscule filesize and last but not least no keyloggers or remote access tools 😊",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "50876b6a63f78cd8",
+      "title": "Lafayette LA Volkswagen dealer serving Lafayette - New and ...",
+      "url": "https://www.southwestvw.com/",
+      "summary": "We invite customers from all over Southern Louisiana, including New Iberia and Lake Charles, to stop by Southwest VW in Lafayette to view our inventory. Southwest in Lafayette carries a huge selection of both new and WorldAuto Certified Pre-Owned cars and SUVs.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1597,10 +1618,114 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "68317b821ba152aa",
-      "title": "New Volkswagen in Kansas City - Northtowne VW",
-      "url": "https://www.northtownevw.com/new-inventory/index.htm",
-      "summary": "Browse our searchable online inventory for a new Tiguan, Jetta, Taos, Atlas or Atlass Cross Sport in the Kansas City area. Shop and get quotes from Northtowne Volkswagen's huge inventory of new Volkswagen vehicles.",
+      "id": "6a24e1bd1df98ea6",
+      "title": "Lipstick Alley",
+      "url": "https://www.lipstickalley.com/",
+      "summary": "Shaunie isn’t aging well! (She looks like I did people wrong and now it’s all on my face)",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d427a2f4cd6d122e",
+      "title": "Live Cricket Score, Schedule & Results | IPL.com",
+      "url": "https://www.ipl.com/matches",
+      "summary": "Follow live cricket scores, upcoming fixtures, completed results, scorecards, and match updates across IPL, Test, ODI, and T20 on IPL.com.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e5660708d42f9fb9",
+      "title": "Live Cricket Scores | Today's Match Scorecard & Ball-by-Ball ...",
+      "url": "https://www.cricinfo.com/live-cricket-score",
+      "summary": "Catch the fastest live cricket scores and ball-by-ball commentary. Get real-time updates, full scorecards, and match analysis for the IPL 2026 & all global and domestic series.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d6da4e7742392ac6",
+      "title": "Live Cricket Scores, News, Schedule & Match Updates - IPL.com",
+      "url": "https://h5.ipl.com/matches",
+      "summary": "Get live cricket scores, match schedules, fixtures, results, news, team updates, records, shorts and latest cricket coverage from IPL.com on mobile.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f2ac2e5c56003d4d",
+      "title": "New Volkswagen & Used Car Dealer Near New Orleans, LA",
+      "url": "https://www.premiervwharvey.com/serving-louisiana/new-orleans/",
+      "summary": "New Orleans, LA, is the perfect place to visit in your new Volkswagen to take in great music and nightlife like a local on Frenchman Street. This is the lesser-known alternative to Bourbon Street that offers a huge number of jazz establishments and entertainment.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1623,12 +1748,91 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7fef510660eaec73",
-      "title": "News - FOX 7 Austin",
-      "url": "https://www.fox7austin.com/news",
-      "summary": "Local and breaking news reports from around the Central Texas region, brought to you by FOX 7 Austin News, serving Austin, Round Rock and San Marcos.",
+      "id": "f599cde570a14f92",
+      "title": "New Volkswagen For Sale in Metairie, LA",
+      "url": "https://www.walkervw.com/new-inventory/index.htm",
+      "summary": "Shop new Volkswagen vehicles in Metairie, LA. Explore Jetta, Tiguan, Atlas, Taos, and ID.4 models with available pricing and options at Walker Volkswagen.",
       "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "66d048d8f93415a4",
+      "title": "People started by asking AI questions. Now they're delegating tasks ...",
+      "url": "https://www.linkedin.com/posts/jaredspa_people-started-by-asking-ai-questions-now-share-7509223581118021632-JWPg",
+      "summary": "People started by asking AI questions. Now they're delegating tasks, building solutions, and automating work that runs in the background. We see those patterns in trillions of productivity signals ...",
+      "discovery_channel": "adjacent+community+retail",
+      "query": "AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "05d1305403b997ed",
+      "title": "Post di IT4LIA AI Factory - LinkedIn Italia",
+      "url": "https://it.linkedin.com/posts/it4lia-ai-factory_%F0%9D%97%A6%F0%9D%98%86%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%B5%F0%9D%97%B2%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%B0-%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%85%F0%9D%98%81-%F0%9D%97%97%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%AE-%F0%9D%97%9A%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BC%F0%9D%97%BB-activity-7509174931985801216-S6nz",
+      "summary": "This course provides a theoretical and practical introduction to synthetic text data generation, helping participants understand how Large Language Models can be used to create high-quality datasets for Machine Learning and Natural Language Processing applications. 🎯 Key themes include • synthetic data generation for AI applications ...",
+      "discovery_channel": "adjacent+community+retail",
+      "query": "AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ab48301c5e397830",
+      "title": "Premier Volkswagen of Harvey I Your Volkswagen Dealership in ...",
+      "url": "https://www.premiervwharvey.com/",
+      "summary": "Welcome to Premier Volkswagen of Harvey, your Volkswagen dealership in Harvey! Browse our inventory today and let us know which VW model you want to test drive.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1649,36 +1853,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7eceb9cc44ed4493",
-      "title": "NFL Game Scores - - CBS Sports",
-      "url": "https://www.cbssports.com/nfl/scoreboard/regular/",
-      "summary": "Fast, updating NFL football game scores and stats as games are in progress are provided by CBSSports.com.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "45e5f69758cd773d",
-      "title": "NYC Events - Upcoming Public Events - nyc.gov",
-      "url": "https://www.nyc.gov/main/events/",
-      "summary": "Explore upcoming events in NYC that are open to the public. Check out parks and recreation events, parades, farmers markets, athletic events, and more.",
+      "id": "f126a96bb424b9a0",
+      "title": "Prime Video - amazon.com",
+      "url": "https://www.amazon.com/gp/video/splash/device_linking",
+      "summary": "Streaming media player and set-top box 1. Download the Prime Video app. 2. Open the Prime Video app. 3. Register your device—here are two ways: (1) Select “Sign in and start watching” and enter your Amazon account information. (2) Choose “Register on the Amazon website” to get a 5–6 character code, then sign in to your Amazon account and enter your code. Sign in to your Amazon ...",
       "discovery_channel": "broad_web",
       "query": "upcoming smart glasses",
       "source": "Bing web RSS",
@@ -1689,9 +1867,11 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video",
+        "tool",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1701,220 +1881,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ae35da12358e8514",
-      "title": "Organize & Track To-Dos with Google Tasks | Google Workspace",
-      "url": "https://workspace.google.com/products/tasks/",
-      "summary": "Capture, organize, and track your to-dos with Google Tasks – right in the Google apps you use daily. Stay focused and keep track of your tasks directly in Gmail, Calendar, Chat, and Docs.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a5a8004e2b102a94",
-      "title": "Premier League - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Premier_League",
-      "summary": "1.2Founding and Manchester United dominance (1990s) 1.3Emergence of the \"Big Four\" (2000s) 1.4Emergence of the \"Big Six\" (2010s) 1.52020s. 2Corporate structure. Toggle Corporate structure subsection. 2.1Criticism of governance.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cd145df30d401cab",
-      "title": "PREMIER LEAGUE FOOTBALL TABLE AND RESULTS",
-      "url": "https://fbtod.com/en/epl/results",
-      "summary": "English Premier League standings, scores and results of today's, yesterday's and recent games. All matches played this season.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e27340222545aaa6",
-      "title": "Taskbar Hide",
-      "url": "https://github.com/amnweb/thide",
-      "summary": "Taskbar Hide A lightweight Windows 10/11 application to hide/show the taskbar with system tray and CLI control.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b000a7ef4921babd",
-      "title": "Taskbar Hide - Download",
-      "url": "https://taskbar-hide.en.softonic.com/",
-      "summary": "Taskbar Hide is a utility tool that helps you hide program windows in the simplest way possible. It will reduce the applications in the tray and keep the clutter of icons in the taskbar to a minimum. You will be able to hide your taskbar or any part of it using this lightweight program too.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "777a8c487447d96a",
-      "title": "To Do List and Task Management App | Microsoft To Do",
-      "url": "https://www.microsoft.com/en-us/microsoft-365/microsoft-to-do-list-app",
-      "summary": "Set yourself up for success with My Day—intelligent and personalized suggestions to update your daily or weekly to-do list. Whether you're using the desktop app at home or the mobile app on the go, access your task list and stay organized.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aecab7d3dfc8bb1c",
-      "title": "Todoist | A To-Do List to Organize Your Work & Life",
-      "url": "https://www.todoist.com/",
-      "summary": "Make fitness a habit by adding your favorite exercises to your to-do list. Build a system that connects your high-level goals to your daily actions. Keep your grocery list wherever you go by adding it all to your Todoist. Keep all the many details of your class plans organized and in one place.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4ec09b7772719838",
-      "title": "Volkswagen Dealership in Kansas City | Northtowne Volkswagen",
-      "url": "https://www.northtownevw.com/",
-      "summary": "Northtowne Volkswagen 6728 N Oak Trafficway Kansas City, MO 64118 Sales: (816) 468-2239",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bafa6cf0d0bb1bea",
-      "title": "VW Lee's Summit - New & Used Volkswagen Cars and SUVs for Sale",
-      "url": "https://www.vwleessummit.com/",
-      "summary": "Read on to learn more about how the best Volkswagen dealership in Lee’s Summit, MO, can support you. We offer one of the largest selections from all local new and used car dealerships.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "id": "4291034c3ecc528d",
+      "title": "QCon AI Boston 2026 | Context Engineering at LinkedIn: How We Built an ...",
+      "url": "https://es.linkedin.com/posts/aiselva_qcon-ai-boston-2026-context-engineering-activity-7507741213098422272-Iwlc",
+      "summary": "La IA necessita context: què sap realment de la teva empresa? InfoQ ha publicat el 19 de setembre una presentació d’Ajay Prakash, de LinkedIn, sobre el seu sistema de context per a agents d’IA. La fitxa original de QCon explica com combina eines internes amb procediments que els agents poden seguir. És un cas d’enginyeria de LinkedIn; no és un servei nou disponible per a qualsevol ...",
+      "discovery_channel": "adjacent+community+retail",
+      "query": "AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1935,12 +1907,428 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a45f727ac46a4ab1",
-      "title": "Welcome to To Do",
-      "url": "https://to-do.office.com/tasks/",
-      "summary": "To Do gives you focus, from work to play.",
+      "id": "66efc8b436e95cce",
+      "title": "RHOM - TMZ: Lisa Hochstein Turns Herself In To Police to Face Felony ...",
+      "url": "https://www.lipstickalley.com/threads/tmz-lisa-hochstein-turns-herself-in-to-police-to-face-felony-wiretapping-charges-arrignment-planned-for-later-today-4-15-26-mugshot-in-post-28.6111461/",
+      "summary": "RHOM TMZ: Lisa Hochstein Turns Herself In To Police to Face Felony Wiretapping Charges ~ Arrignment Planned for Later Today 4/15/26 ~ Mugshot in Post #28",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a326f1c3b62edf5b",
+      "title": "Shocking! L&HH Sierra Shows Off Her Mutilated Face!",
+      "url": "https://www.lipstickalley.com/threads/shocking-l-hh-sierra-shows-off-her-mutilated-face.6093591/page-2",
+      "summary": "Shocking! L&HH Sierra Shows Off Her Mutilated Face! Dior Addict Yesterday at 5:01 PM her l&hh shocking sierra Prev 1 2",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a6d15674743e6a7a",
+      "title": "Shocking! L&HH Sierra Shows Off Her Mutilated Face!",
+      "url": "https://www.lipstickalley.com/threads/shocking-l-hh-sierra-shows-off-her-mutilated-face.6093591/",
+      "summary": "Shocking! L&HH Sierra Shows Off Her Mutilated Face! Dior Addict Yesterday at 5:01 PM her l&hh shocking sierra",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c85e34b64a8b226",
+      "title": "The Michael Jackson Forum | Page 90 | Lipstick Alley",
+      "url": "https://www.lipstickalley.com/forums/the-michael-jackson-forum.227/page-90",
+      "summary": "Your views on the King of Pop -- the good, bad and ugly.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9fa7d509e67072ca",
+      "title": "Three Haitian bands were banned from this year's Labor Day carnival by ...",
+      "url": "https://www.lipstickalley.com/threads/three-haitian-bands-were-banned-from-this-years-labor-day-carnival-by-the-trinidadian-run-organizers-for-lacking-trinidadian-style-costume-mas.6187075/",
+      "summary": "Three Haitian bands were banned from this year's Labor Day carnival by the Trinidadian-run organizers for lacking Trinidadian-style costume mas.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ceffb8192fc5ee67",
+      "title": "Today IPL Match 2026 — Live Fixtures & Upcoming IPL Schedule",
+      "url": "https://ipl-cricbuzz.com/match",
+      "summary": "This page keeps you updated on today's IPL match, along with the full list of upcoming fixtures, so you never miss a moment of the action.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "993b95c54bc3691c",
+      "title": "TWI-Government-and-Election-2022-Handbook - Twitter Blog",
+      "url": "https://blog.twitter.com/content/dam/blog-twitter/official/en_au/company/2022/2022-federal-election/candidate-handbook-campaigning-on-twitter-during-the-2022-australian-federal-election.pdf",
+      "summary": "Twitter name Your @username is your unique identity on Twitter and is always preceded by the @ symbol. Make your @username something clear, concise, and similar to your real name so your account is easy for users to find.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b17f93f7e9682a5a",
+      "title": "Volkswagen Dealer New Orleans LA | Walker Volkswagen",
+      "url": "https://www.walkervw.com/",
+      "summary": "Explore new Volkswagen models, finance online, and book factory-trained service at Walker Volkswagen, serving New Orleans, LA.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e4eef43bef9177fb",
+      "title": "Volkswagen Dealership in Mandeville LA | Volkswagen of Mandeville",
+      "url": "https://www.vwmandeville.com/",
+      "summary": "Get Volkswagen service and repairs in Mandeville, LA with help from our experts. Quick service, parts replacement, and more at Volkswagen of Mandeville.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ace6b44235ca1b06",
+      "title": "Why Do Makeup Trends For Women Look So Drag Queen-ish These Days?",
+      "url": "https://www.lipstickalley.com/threads/why-do-makeup-trends-for-women-look-so-drag-queen-ish-these-days.1493511/",
+      "summary": "Is it just me?? Or have the makeup trends for women taken on a more drag-queenish look these days?? Whatever happened to just a \"natural\" makeup look? Now days on IG, SC, and other social media outlets, it seems like the trend is more for women to look OVERdone with makeup. I see even 14 year old girls with their face beat. My 14 year-old cousin has been beating her face since she was 13 (13 ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36418551db626f77",
+      "title": "Windows Display Settings: Brightness, Color, Scaling, - Dell",
+      "url": "https://www.dell.com/support/contents/us-en/article/product-support/self-support-knowledgebase/operating-systems/windows-operating-systems/change-windows-display-settings",
+      "summary": "Customizing your display settings in Windows can significantly enhance your computing experience. Whether you're adjusting brightness, changing resolution, or setting up multiple monitors, understanding these options allows you to tailor your desktop environment to your needs.",
+      "discovery_channel": "broad_web",
+      "query": "display smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c5f556c4c9b98cb1",
+      "title": "Zuflah Camping, Tents, Sleeping Bags, Online Store in Pakistan.",
+      "url": "https://zuflah.com/",
+      "summary": "The Zuflah is synonymous with high quality design and innovation in camping and outdoor and Military products - manufacturing premium tents, sleeping bags, rucksacks, mosquito nets and camping equipment.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a175a03be3b5cc21",
+      "title": "Zuflah | Raiwind - Facebook",
+      "url": "https://www.facebook.com/p/Zuflah-61558260503632/",
+      "summary": "Zuflah, Raiwind. 610 likes · 66 talking about this. Vision Zuflah's vision is to be a world class outdoor equipment manufacturer exceeding the customer's...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2441ddf0c0fc2c74",
+      "title": "“Jeg hader AI. Hvad bliver der overhovedet tilbage af job til unge ...",
+      "url": "https://dk.linkedin.com/posts/michafuglede_jeg-hader-ai-hvad-bliver-der-overhovedet-activity-7509250664191918080-pJTr",
+      "summary": "“Jeg hader AI. Hvad bliver der overhovedet tilbage af job til unge?” Sådan sagde min 19-årige søn dagen før, vi i DI Rådgiverne tog hul på Attraktive Arbejdspladser i en AI-tid: Mennesket og maskinen. Dagen efter var han til terminsprøve i 3.g. Uden AI. Bagefter ringede han og sagde: “Jeg lavede en virkelig god opgave, og jeg er faktisk stolt.” Ordet “stolt” blev hængende ...",
+      "discovery_channel": "adjacent+community+retail",
+      "query": "AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "54743506f0a8acc1",
+      "title": "ニュースから紐解く最新セキュリティ事情 〜AI・サイバー攻撃・情報漏えいのリスクが1時間で早わかり〜 · Vent… | 堀田 直孝",
+      "url": "https://jp.linkedin.com/posts/naotaka1224_%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9%E3%81%8B%E3%82%89%E7%B4%90%E8%A7%A3%E3%81%8F%E6%9C%80%E6%96%B0%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E4%BA%8B%E6%83%85-ai%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E6%94%BB%E6%92%83%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E3%81%AE%E3%83%AA%E3%82%B9%E3%82%AF%E3%81%8C-activity-7481922754242310144-_x-K",
+      "summary": "8月6日（木）、虎ノ門、Venture Café Tokyo（Thursday Gathering #392）にて開催されるセッション『ニュースから紐解く最新セキュリティ事情 〜AI・サイバー攻撃・情報漏えいのリスクが1時間で早わかり〜』**に、モデレーターとして登壇することになりました！",
+      "discovery_channel": "adjacent+community+retail",
+      "query": "AI glasses site:visionexpress.com; AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "afb44c52bd1babc5",
+      "title": "岡崎工科高等学校 - okazaki-te.aichi-c.ed.jp",
+      "url": "https://okazaki-te.aichi-c.ed.jp/cms/",
+      "summary": "企業が出題するテーマに、高校生がチームで挑むビジネスアイデアコンテスト。 本校は改修工事中につき校内スペースが限られており、見学会当日は生徒及び来校者の安全確保並びに事故防止のため、保護者の皆様の自家用車による来校はご遠慮いただいております。 ご不便をおかけしま. 剣道部とヤマサ言語文化学院に短期留学されるアメリカ人大学生が、剣道交流会を行いました。 楽しい1日になりました！ 台風等異常気象時における対応（令和8年5月改訂版）をアップしました。 在校生 → 総務部 → 台風等異常気象時における対応（令和8年5月改訂版） よりご覧ください。 もしくは こち. 東海大会 優勝！ 第3種電気主任技術者試験合格！ FM AICHI「DD HIGH SCHOOL☆トライーネ！ 」取材について.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b5cce07593b99a9e",
+      "title": "進路情報 – 岡崎工科高等学校",
+      "url": "https://okazaki-te.aichi-c.ed.jp/cms/page-175.html",
+      "summary": "愛知県立岡崎工科高等学校 tel 0564-51-1646 fax 0564-51-1648 〒444-8555 愛知県岡崎市羽根町字陣場47番地 © 2026 Aichi Prefectural Education Planning Division",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
