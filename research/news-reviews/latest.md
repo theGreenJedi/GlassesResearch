@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-28T21:22:36.093191+00:00`
+Generated: `2026-09-28T23:23:23.887015+00:00`
 
 - Intake files inspected: **316**
-- Candidates retained in this review window/history: **13858**
+- Candidates retained in this review window/history: **13853**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 2979
+- `adjacent_radar`: 2967
 - `catalog_review`: 13
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 749
-- `rejected_noise`: 9986
+- `needs_editorial_verification`: 759
+- `rejected_noise`: 9983
 - `source_monitor`: 1
-- `source_review`: 37
-- `watching`: 89
+- `source_review`: 36
+- `watching`: 90
 
 ## Action queue
 
@@ -125,6 +125,8 @@ Generated: `2026-09-28T21:22:36.093191+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.454](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.454) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.458](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.458) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.460](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.460) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.461](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.461) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.463](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.463) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta Plans Camera-Free Smart Glasses Launch This Fall Amid Privacy Backlash - finance.biggo.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE5tdWZNZTNwNkVqVWVfb0wzWXdOUTJCWDdaWXN0Y3pVOHFtS3pnaENCcjFZeHdqUzdELWtHc1FUNHlQc2E5dmFRQ1FTSUhfN2UxM3JxREQtaUV3bWJIUHB2a0tabEJwaHRiNnFyMVZOR3JDa2J0a0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta to launch AI glasses without camera - Daily Observer](https://news.google.com/rss/articles/CBMiSkFVX3lxTFBtNkZGNVpiMDdhWk80MW8yQXVDUGJpUnV1QmI5Sk81VHgwRmk0T2ktcHpuUUJmRmZGZXY4WmNUSjRMcVJWX0d4cHRR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -247,6 +249,7 @@ Generated: `2026-09-28T21:22:36.093191+00:00`
 | normal | needs_editorial_verification | direct | [AI 스마트 안경: 휴대폰의 지배력에 도전하는 웨어러블 기기 - Vietnam.vn](https://news.google.com/rss/articles/CBMipgFBVV95cUxPVEwwNm0wNnE0S1V0U2JOWkh5N1Awcm5mU3FKWUIwY3dVMEVWR1luOTFEa1h6S3NtZXM5NTZWUHVyTUhqTWp2TXVvUWtjZXVIUXBkWXZ3NlFDT0J0SnExQzQ4ano4dHBaNHdPMmJXZnRBTWlSMHF6LWpPLVpIUnVDQkhNX1BYbEFkSFZrQmtrYUhjbjRRVUN2WnJYSkNoS0wxN3FRV1Z3?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 韓 공략 넓힌 메타…시장 커질수록 커지는 '카메라 딜레마' - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5CNDdDXzJsaG5hMklvdDJZOEZjOWZyUzZMZ3FtM0pmTENETzdabWhyYWhtTktlaGJ5T21SU1hqaVlzZk9fdm95SDdMZVBxYVRFV2JJR3pkb3RwX2h6V3hZUNIBeEFVX3lxTE1CeFBYUXpPM1psNVUxdkdLMnZwVW5Pdy03UjhDaUNkVklhQWx0RWk2Y3R1bGF2TkIxRW53Y2RxaTV1d2htSlJKWmhFNU11LXFCNE5CM081Q2Z6VUU0M3VWUVNnNnFTaTJuSnJoWU1tWWZCRWk1elVxVQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI搭載スマートグラス：携帯電話の優位性を脅かすウェアラブルデバイス - Vietnam.vn](https://news.google.com/rss/articles/CBMipgFBVV95cUxNVnZDUkZidkNSN3Y0eHdJMTN0U0pHTnc1aHhrOFpZbGRRa3k5WTNsMmEzRlVpMm1vdlFVVXVRamhWbTltRnpibmFXS28tTTVDelNQdUlUR0cxRDhiQXlfSE82bjFzVWNucWpLa0NpMldOZzkxcU5FczV4bnJUUW9EdXo4MmRhaG9GR3dlRG5yY05YZ2JzcUZQaThETFBtWkhRcG1HMnh3?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple smart glasses: Everything we know about Apple’s next major wearable - The Apple Post](https://news.google.com/rss/articles/CBMiugFBVV95cUxNRVNVSkVaTFpMSW9IR1NQcFdqODQwTDEyYk5CUkJ6aVJ4SWF3MkNVVmlBd3ZkbXdfQkM0blBQa1RSNkV2ZWJaUnRPVW1NdFVmd1ZhSTJubWYyZkJKQU41V1RqNzV6NkVuQjdKWUc2UGlLVnNDU3ZXaVZpdEJrU0NBSk1rQnNVMVI0ejJYV3l4anlqOHJCZzBmTVprRGhYR29mdU5TeWRHdTNULXc3TDdVdk1XRERkWmMzaHfSAb8BQVVfeXFMUEJ5Y25xSFhyVi1pbXZWcjdfQWh4aGFXRUNZRFNrT3M2YV9UZjh2QjhOS2RsaTIxc1hUVUMtdUJsaFhENzhVR1BrOURuLUJnaU1nSHF5QUVCRW1rOG9FMkZ5NXdHZ1E2SGM2Z1BrZEgzSFE3Z2laV1VwTEZDWVg2azJkT3RkRHI4cFhtVUZVeHVEV2Nzb1F3VUxNcTYwNnNNQVBzaGZSbkRPZWdqdUZOV1BSMXVNOGxDREVMMWV1X3c?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses: Will they be the most stylish alternative to Vision Pro in 2026? - آي-فون إسلام](https://news.google.com/rss/articles/CBMizwFBVV95cUxNOWtfaW1abUJ5TldUR3dLMmNKUHhaU05PdVdEVkJrRzczRXJPeUVPMEQtSnZDM2o1SlBLcnZmZEZTTGdudnFyZjU0U1NsVlNNRTQ0WWxPTS1iWFQ0YXZhQnp0ekEtR2VYQXE0NDc0eV9qRDB5UkVZMDFZME5KLVJTOGRaelhiQmF1Mzk0SkZvZzd4Q2ZFRUdnTUlEWFUyOHJDR0szRGE4blNaMUdUNWF1VktZNnJvVlBSWXFTTTRuam5fc3QyR2N2ay0waHhCTGc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -269,9 +272,6 @@ Generated: `2026-09-28T21:22:36.093191+00:00`
 | normal | needs_editorial_verification | direct | [CNET Aug 24, 2026 If You Don’t Want Smart Glasses to Spy, Try a Bluetooth Detector App](https://www.cnet.com/tech/mobile/if-you-dont-want-smart-glasses-to-spy-try-a-bluetooth-detector-app/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [El ‘gadget’ de lujo que se ha convertido en una trampa: retiran unas gafas inteligentes por quemar la cara de los usuarios - La Vanguardia](https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYWpEREo4b0xLUUl0M3ZUaWpoZDhKUERMMmV4ZkMwZ0czZGF6ZlNVdFlfb3p1eFpOMUxoZUZ3ZDRVdnhmLUxfVE5YdUZJVXJLWkZCNzAtN1kxT0xkalhLZFJiSUQ1cUNGT2pBQkY5ekFvN3Z1eUVNdWd6OEpJNklGX2xFQnlWei1yWkR4WE5FNFN4V1FwaXNpRlAtcmlXcnppMzlkQlRaODR6TWJqQjI5LTM3a0lmMUxxMk5kTk13ZVJCcUlUMF9COXJ0V0NPUVY5YnF4dFBSc2jSAd4BQVVfeXFMT0FiZV9xZEZmNTVLRFB2eXI1Vm56SExicEwwVk42N0Y5RW9vWEIzSmxnWUViVzB3SER1c2RDcWd1WVdybmJUZV9NSW1LdkZBUk9oQi1wYUJ5c1E3VUJvU3pyYUx1d1MzZ2l6SDlXWU82NmtZVkluUmE3dmNDNDNycE9tQ0pIVTVsbm4tRHpsMjI0VUVOcEV3LVlkRkJ6bjVTMlRMRzZ0Ui1SSnV5RkRSclJjUWN3eC1CVzZHVXdJMDFlekNHMUJHWUI3ZEFNenU5Z3dzUFpsVFhrS3RuVTR3?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Engadget 3d ago How to stop Meta training its AI models on your smart glasses' visual data Coverage Meta](https://www.engadget.com/2269454/how-to-stop-meta-training-its-ai-models-on-your-smart-glasses-visual-data/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Forrester anticipa el próximo gran mercado publicitario: anuncios en las conversaciones con la IA y en las gafas inteligentes - Reason Why](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQS0lYeHd0SGV1V2pKYXRkZm8yN0ZXclJJSV9qVnh0ZG82Ry1qQmlnWEJ5c2dDNzMyRndpZWI4ekliVlVRZFJTdGdlbzRzSnlzblJUblo3dUpEc2l6N3psTDRQaHFzTnRDQ2JyZ2YzdFg1S0tyNG0tSXRjN1NPMjg5T3VWWlhTQVBUY0tneFJWSU93SVJ5bW5iNk8tV2dXcENaM0ZqU19JSGd5VGliWmxLSk53TGxZcFU1aTVDZmJXa2Y0dFJBc2ZiZjJvNmI5NndfTFlNMnJqQ3hpZw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [From smart glasses to AI pins, privacy fears challenge tech's next big bet - Herald-Review.com](https://news.google.com/rss/articles/CBMimAFBVV95cUxQT1JzTFZJTmVTWVd5WFhQX0FfdG9zQnVGdldVNTN4cTJucHVaeklGMTZ1dkpzRXhwaG16NHg5ck5ZRzJTaEd4WlNaMUdFUVR4anFFQ1BzR0J5b2pBSl9maXRHb1ZZTWVZQ1BENTdCaFRfVnhaWng0YU43Q2VYWGgydlRzdzdveng3cXYwY2lqajgwN2cwLW1qUg?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
-| normal | needs_editorial_verification | direct | [Full review of the Ai Smart Glasses. Let me know your favorite feature ...](https://www.tiktok.com/@iamsmarttips/video/7624495414401633558) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
