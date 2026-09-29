@@ -1,22 +1,26 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-29T13:04:12.985087+00:00",
-  "candidate_count": 4,
+  "discovered_utc": "2026-09-29T13:53:46.589625+00:00",
+  "candidate_count": 5,
   "precision_rejected_count": 183,
   "relationship_counts": {
     "direct": 4,
     "enabling": 0,
-    "adjacent": 0,
+    "adjacent": 1,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "model": 3,
-    "news": 1
+    "model": 4,
+    "tool": 1,
+    "optics": 1
   },
   "routing_counts": {
-    "model_catalog_review": 3,
-    "research_news_review": 4
+    "adjacent_radar": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 4,
+    "research_news_review": 5,
+    "research_optics": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -27,42 +31,75 @@
   ],
   "candidates": [
     {
-      "id": "7cb44d7ea23c607d",
-      "title": "[SMM Analysis] Consumer Lithium Battery Market Diverges; High-End Lithium Cobalt Oxide and AI Glasses Emerge - Shanghai Metals Market",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcXIwVUc5SWFuY2RUcDlraUZpbUtLQzZhbWFUdEx6Vm9YRWNWUTBXSHVuZ0VJTFFKUE04ek9XQjBheUd3SFc1Ukt5WWc5WDRiTGxYWC0tYTZad0xuUmNSVlB6STFBZ1QtOTFVcXBOOVZRRF9PV05XWkIyQUZhUzVGenlmWGsxb0ducjVYR0ZYSGRfYlhDZ0lZM1NmUEQzbVFiaksyblF2R19KY29nWHR0RjZyM1pJSElVUlRpZWZaUzBRYVU2VHRZVzFUWDlWczlFYURDNDktOWhBeFVoMUFvMGF1b20?oc=5",
-      "source": "Google News: AI glasses",
+      "id": "e9a141d82ed6f77a",
+      "title": "Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5",
+      "source": "Google News: smart glasses",
       "source_lane": "core_glasses",
-      "published": "Tue, 29 Sep 2026 06:50:00 GMT",
-      "summary": "[SMM Analysis] Consumer Lithium Battery Market Diverges; High-End Lithium Cobalt Oxide and AI Glasses Emerge Shanghai Metals Market",
-      "materiality_score": 2,
+      "published": "Tue, 29 Sep 2026 01:46:28 GMT",
+      "summary": "Meta adds camera-free AI glasses as Samsung prepares 2026 launch digitimes.com",
+      "materiality_score": 6,
       "keyword_hits": [
         "ai",
-        "battery"
+        "camera",
+        "launch"
       ],
       "status": "candidate",
       "relationship": "direct",
       "content_types": [
-        "news"
+        "model"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "model_catalog_review"
       ],
-      "triage_priority": "normal",
+      "triage_priority": "high",
       "publication_eligible": true,
       "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
+      "institution_test": "likely durable"
     },
     {
-      "id": "53b87a052825c50a",
-      "title": "Free AI Smart Glasses Available to Visually Impaired Veterans in Suffern - rocklandreport.com",
+      "id": "f4b3ac3dc3630d49",
+      "title": "Vuzix launches Shrike, a customizable waveguide display for defense and security wearables. - Pluang",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMlFCYWZ2eUNsd1lZdTV2OWtma0xTbnBBSF9qaU5JQXJqV2JYR1B5WjJfT01IMEZEc3NtV2tsb0ZHUzRwUWRGRlJ5eldrajZWSjV0N0NYSWJ3NlltbXdta3Z4aG1vVVN1MHZkTmhveFRxc0l4Qk92bHhYUHpueWs2VnFhTVBrRUJQNWJIZnpSOEp6V1BBbFk2ZkxB?oc=5",
+      "source": "Google News: waveguide display wearable",
+      "source_lane": "adjacent_hci",
+      "published": "Tue, 29 Sep 2026 13:30:29 GMT",
+      "summary": "Vuzix launches Shrike, a customizable waveguide display for defense and security wearables. Pluang",
+      "materiality_score": 5,
+      "keyword_hits": [
+        "display",
+        "security",
+        "waveguide"
+      ],
+      "status": "candidate",
+      "relationship": "direct",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: vuzix",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "ce6845c2a25b8195",
+      "title": "Free AI Smart Glasses Available to Visually Impaired Veterans in Suffern - Rockland Report",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMnhiQldBVVRja05rTXRJVzRTZElxZGxwSmdVR3ZKcGtjZGJVYUNxVWF6TUh3a2ZqbUloZ19sR3BNSlluOUpvUk9rWnh3MnJaelV2a18wcTI2WmZEOXhydUw1bTMxaUV1TEM2WlhKMXp1UzhXQ0V2NVZDU0N4ZUw3Q2ROQjNVUUtNWW9wSXg5bzI5dzJ5N0ZGb2V4T2d6UTM4MWc?oc=5",
       "source": "Google News: smart glasses hands-on",
       "source_lane": "core_glasses",
       "published": "Tue, 29 Sep 2026 11:31:19 GMT",
-      "summary": "Free AI Smart Glasses Available to Visually Impaired Veterans in Suffern rocklandreport.com",
+      "summary": "Free AI Smart Glasses Available to Visually Impaired Veterans in Suffern Rockland Report",
       "materiality_score": 2,
       "keyword_hits": [
         "ai",
@@ -86,61 +123,64 @@
       "institution_test": "review durability"
     },
     {
-      "id": "a12cd6cdc2b28faa",
-      "title": "Naver Partners with Meta: \"Naver Map Navigation Now Available on AI Glasses\" - asiae.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5RQXJTVXk2X2lSaUNMVEhaaTQtbEJlY1FvNjdXZEMxbFpEcV9MeEM2Rmx0VWY0R3VVTXREWGZwOWlXWi1jcXB0Ulc1ZHRwanNjM1hTN3c5M2JNRS12YzZNVmpZZjY?oc=5",
-      "source": "Google News: Meta Ray-Ban glasses",
+      "id": "8c5a68afdc92f3c9",
+      "title": "Vuzix Introduces Shrike Defense Display Platform and Ships Initial Evaluation Units – Company Announcement - Financial Times",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcWZkb0Zwb0N2TnlUYUFud1Z0eTJtczNuMXZKSUdyaXB0cnVKWW5DYl9fdXpnV2RfXzc4QkVTVExtWTgycmdJcWxUazJNa0VNTDltd2JEVHJLcFp0a2NseGQ3Tl9oTldnQklRWDBFcGZLb01XTjZZaXRLOXBTcWZTS1RqbWUzcXVKNHlQYTd5U1hLNjF3RG5OaQ?oc=5",
+      "source": "Google News: smartglasses",
       "source_lane": "core_glasses",
-      "published": "Tue, 29 Sep 2026 00:40:17 GMT",
-      "summary": "Naver Partners with Meta: \"Naver Map Navigation Now Available on AI Glasses\" asiae.co.kr",
+      "published": "Tue, 29 Sep 2026 13:15:00 GMT",
+      "summary": "Vuzix Introduces Shrike Defense Display Platform and Ships Initial Evaluation Units – Company Announcement Financial Times",
       "materiality_score": 2,
       "keyword_hits": [
-        "ai",
-        "available"
+        "announcement",
+        "display"
       ],
       "status": "candidate",
       "relationship": "direct",
       "content_types": [
-        "model"
+        "model",
+        "tool"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review"
+        "model_catalog_review",
+        "development_hacking"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: vuzix",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
     },
     {
-      "id": "3090bca2e48f16b2",
-      "title": "Naver Partners with Meta: \"Naver Map Navigation Now Available on AI Glasses\" - asiae.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5TTldtV0RUOXl0d25CRVplX1llOGNqa3VsaDItUFZDSGFYNjhGRllnMl9QVVhFdG10V2VrektDU2Jia19ETmlFNnJZSU5kLWNheURrRWhkNk5NaEhlOXlvd19JZXN4enRJ?oc=5",
-      "source": "Google News: Oakley Meta glasses",
-      "source_lane": "core_glasses",
-      "published": "Tue, 29 Sep 2026 00:40:17 GMT",
-      "summary": "Naver Partners with Meta: \"Naver Map Navigation Now Available on AI Glasses\" asiae.co.kr",
+      "id": "55d71fd5881e73d6",
+      "title": "Samsung Galaxy A08 Now Available In Malaysia Featuring 6,000mAh Battery - pokde.net",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9tNEpVYUFrRGc2VkNEUF9NckhTZ0hGVVpzc01KdEdNS29wNlBBM3FJbHhWNnZhcmZOcTZaRTRlbHUtS0p4MVFsb3ZHaFRZSTlGM3dyRE9kMGc0TjRuMFJ1ZTN4ODFuRHdFa1dDMEg3WUU?oc=5",
+      "source": "Google News: AI wearable camera",
+      "source_lane": "adjacent_hci",
+      "published": "Mon, 28 Sep 2026 17:50:21 GMT",
+      "summary": "Samsung Galaxy A08 Now Available In Malaysia Featuring 6,000mAh Battery pokde.net",
       "materiality_score": 2,
       "keyword_hits": [
-        "ai",
-        "available"
+        "available",
+        "battery"
       ],
       "status": "candidate",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
         "model"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review"
+        "model_catalog_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"

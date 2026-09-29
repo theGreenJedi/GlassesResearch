@@ -1,44 +1,35 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-29T13:05:05.087731+00:00",
-  "candidate_count": 122,
-  "classifier_irrelevant_count": 73,
+  "discovered_utc": "2026-09-29T13:54:22.012541+00:00",
+  "candidate_count": 53,
+  "classifier_irrelevant_count": 40,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 49,
-    "broad_web": 56,
-    "developer": 11,
-    "retail": 8
+    "adjacent": 11,
+    "broad_web": 32,
+    "developer": 12
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 48,
-    "speculative": 1,
-    "irrelevant": 73
+    "adjacent": 11,
+    "speculative": 0,
+    "irrelevant": 40
   },
   "type_counts": {
-    "model": 8,
-    "review": 2,
-    "video": 5,
-    "news": 69,
-    "research": 5,
-    "tool": 18,
-    "sdk": 11,
-    "retail": 10,
-    "community": 16,
-    "rumor": 1
+    "model": 5,
+    "news": 30,
+    "tool": 11,
+    "sdk": 10,
+    "optics": 1,
+    "teardown": 1,
+    "community": 5
   },
   "routing_counts": {
-    "adjacent_radar": 48,
-    "deep_research": 5,
-    "development_hacking": 2,
-    "model_catalog_review": 4,
-    "reject_noise": 73,
-    "report_card_evidence": 3,
-    "research_news_review": 49,
-    "retail_rebrand_review": 1,
-    "watching": 1
+    "adjacent_radar": 11,
+    "reject_noise": 40,
+    "research_news_review": 13,
+    "research_optics": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -49,200 +40,66 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [
-    {
-      "channel": "manufacturer_catalog",
-      "url": "https://dumall.baidu.com/product/902971303493639",
-      "error": "The read operation timed out"
-    }
-  ],
+  "collector_errors": [],
   "candidates": [
     {
-      "id": "cfaa5e24cc5b05e4",
-      "title": "Meta VR Glasses vs Xreal Aura: Which spatial computing glasses will win ...",
-      "url": "https://www.tomsguide.com/computing/smart-glasses/meta-vr-glasses-vs-xreal-aura-which-spatial-computing-glasses-will-win",
-      "summary": "The Meta VR Glasses, which won't launch until spring 2027 for $1,299, were announced at an interesting time, just as Google and Xreal's collaborative Project Aura is expected to launch before the ...",
-      "discovery_channel": "broad_web",
-      "query": "XREAL AURA",
+      "id": "41b749d4bb0b23fd",
+      "title": "About Everysight",
+      "url": "https://www.everysight.com/pages/about",
+      "summary": "Everysight creates lightweight smart eyewear that seamlessly blends digital information into the real world. Born from decades of aerospace display innovation, we've reimagined advanced optics, AI, and intelligent software into products designed for everyday life.",
+      "discovery_channel": "broad_web+developer",
+      "query": "Everysight Maverick AI Kickstarter; Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "announced",
-        "launch"
-      ],
+      "materiality_score": 2,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "speculative",
+      "relationship": "direct",
       "content_types": [
-        "model",
-        "rumor"
+        "optics"
       ],
-      "primary_type": "model",
+      "primary_type": "optics",
       "routing_targets": [
         "research_news_review",
-        "watching",
-        "model_catalog_review"
+        "research_optics"
       ],
       "triage_priority": "normal",
-      "publication_eligible": false,
-      "publication_gate_reason": "future/rumor signals: expected to",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: everysight, smart eyewear",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e37f2697e3022ccc",
-      "title": "Hebrews 5 - Bible Study & Commentary - John Calvin's Commentary on the ...",
-      "url": "https://www.bibleportal.com/commentary/chapter/john-calvin/hebrews/5",
-      "summary": "Read Hebrews 5 bible commentary & study from John Calvin's Commentary on the Bible by John Calvin FREE on BiblePortal.com",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
+      "id": "e7635fe05eea5401",
+      "title": "Technology – Everysight",
+      "url": "https://www.everysight.com/pages/technology",
+      "summary": "Maintain a stylish and unobtrusive appearance using smart eyewear design with elegantly integrated electronics that represent a convergence of fashion and technology, thus enhancing the way we perceive and interact with the world around us.",
+      "discovery_channel": "broad_web+developer",
+      "query": "Everysight Maverick AI Kickstarter; Everysight Maverick SDK",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
+      "source_lane": "research_radar",
       "materiality_score": 2,
-      "keyword_hits": [
-        "study"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "394fcddde4e715b0",
-      "title": "Hebrews 5 - John Calvin's Bible Commentary - Bíblia Plus",
-      "url": "https://www.bibliaplus.org/en/commentaries/3/john-calvins-bible-commentary/hebrews/5",
-      "summary": "What does Hebrews 5 mean? Commentary, explanation and study verse by verse by John Calvin's Bible Commentary. ONLINE and FREE",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "study"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b9506afda24ef295",
-      "title": "Hebrews 5:11 - John Calvin's Bible Commentary - Bíblia Plus",
-      "url": "https://www.bibliaplus.org/en/commentaries/3/john-calvins-bible-commentary/hebrews/5/11",
-      "summary": "What does Hebrews 5:11 mean? Commentary, explanation and study verse by verse by John Calvin's Bible Commentary. ONLINE and FREE",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "study"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5434bde1e930f410",
-      "title": "Tustin CA Real Estate & Homes For Sale - Zillow",
-      "url": "https://www.zillow.com/tustin-ca/",
-      "summary": "Zillow has 126 homes for sale in Tustin CA. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "review",
-        "retail"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57eb18407b5f3204",
-      "title": "5. Warnings Against Apostasy (Hebrews 5:11-6:12) - JesusWalk",
-      "url": "https://www.jesuswalk.com/hebrews/5_warnings.htm",
-      "summary": "The author chides the Hebrews for being too lazy in their growth. Then he warns Spirit-filled believers from falling away in apostacy. He calls them to diligence to hold onto the promises.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "adjacent",
+      "relationship": "direct",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "research_news_review"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: everysight, smart eyewear",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fab51fff94ee9d90",
-      "title": "Apartments for Rent in Tustin CA",
-      "url": "https://www.apartments.com/tustin-ca/",
-      "summary": "Find 1,529 apartments for rent in Tustin, CA with new listings daily. Compare verified, detailed unit listings, explore 3D tours, and find your next rental today.",
+      "id": "2a6fa24c816adc89",
+      "title": "15 Hidden Gems Near Tampa (Off-the-Beaten-Path Places Locals Love)",
+      "url": "https://wanderflorida.net/hidden-gems-near-tampa/",
+      "summary": "These hidden gems near Tampa aren’t just places to kill time; they’re places that stick with you. Some offer a glimpse into Florida’s quieter, weirder history. Others serve up strong local flavor without the long lines or social media hype.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -266,92 +123,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1ba115bde39d5c7d",
-      "title": "Arlington, MA Internet Providers | Compare Prices & Speeds",
-      "url": "https://www.inmyarea.com/internet/massachusetts/arlington",
-      "summary": "The best internet service providers in Arlington, MA are AT&T, EarthLink, Xfinity, Starlink, Verizon, T-Mobile, Viasat, Astound Broadband, XNET WiFi, and Hughesnet. Enter your address to compare your options and pick the best provider.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8e5c83679067a542",
-      "title": "Brea, CA Internet Providers | Compare Prices & Speeds",
-      "url": "https://www.inmyarea.com/internet/california/brea",
-      "summary": "The best internet service providers in Brea, CA are AT&T, Spectrum, Starlink, T-Mobile, Viasat, Mint Mobile, Verizon, XNET WiFi, and Hughesnet. Enter your address to compare your options and pick the best provider.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f1a53e1fcc6f9535",
-      "title": "Chapters Available - Hebrews - Calvin's Commentary on the Bible - Bible ...",
-      "url": "https://www.studylight.org/commentaries/eng/cal/hebrews.html",
-      "summary": "After having thus brought the angels under the power and dominion of Christ, the Apostle having, as it were, gained confidence, declares that Moses was so much inferior to him as a servant is to his master.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4993ea0f4d055429",
-      "title": "Cities Near Me - Tustin, California | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/Tustin,+CA",
-      "summary": "Find the top 15 cities, towns, and suburbs near Tustin, CA, like Tustin Foothills and Santa Ana, and explore the surrounding area for a day trip.",
+      "id": "4757ab6918498918",
+      "title": "16 Best Vacation Spots to Check Out Near Tampa – Holidays",
+      "url": "https://www.holidays.com/best-vacation-spots-near-tampa/",
+      "summary": "Organized by distance away from the city, you’ll find plenty of beautiful beaches and exciting attractions to explore. Looking for an all-in-one package destination? Less than an hour from Tampa is Clearwater Beach. It will lure you in with its white sandy beaches and clear blue waters.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -375,10 +150,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "eee9830aa495a7fd",
-      "title": "Cities Nearby Tustin, California, United States",
-      "url": "https://www.thecitiesnow.com/united_states/california/tustin",
-      "summary": "Find five hundred cities near Tustin, California, United States from closest to farthest by distance. Distances from Tustin to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "id": "016bc81919db81e8",
+      "title": "Cities Nearby Tampa, Florida, United States",
+      "url": "https://www.thecitiesnow.com/united_states/florida/tampa",
+      "summary": "Find five hundred cities near Tampa, Florida, United States from closest to farthest by distance. Distances from Tampa to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -402,10 +177,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f9d3670682314ae9",
-      "title": "Clearwater, FL Internet Providers | Compare Prices & Speeds",
-      "url": "https://www.inmyarea.com/internet/florida/clearwater",
-      "summary": "The top internet service providers in Clearwater, FL are AT&T, EarthLink, Spectrum, Starlink, Frontier, T-Mobile, Viasat, Mint Mobile, Verizon, XNET WiFi, WOW!, and Hughesnet. Enter your address to compare your options and pick the best provider.",
+      "id": "bb08f18b177ad691",
+      "title": "LebeL (ルベル) / ザ・モイ バーム アンビエントデュウ 37gの公式商品情報｜美容・化粧品情報はアットコスメ",
+      "url": "https://www.cosme.net/variations/1161295/",
+      "summary": "【アットコスメ】LebeL (ルベル) / ザ・モイ バーム アンビエントデュウ 37g（ヘアワックス・クリーム）の公式商品情報。 口コミ（2件）や写真による評判、ザ・モイ バーム アンビエントデュウに関する記事やQ&Aをチェックできます。",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -429,256 +204,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aa88ddc8597d0263",
-      "title": "Detroit Red Wings Hockey Standings - NHL.com",
-      "url": "https://www.nhl.com/redwings/standings",
-      "summary": "The official standings for the Detroit Red Wings.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c752185f316b64ea",
-      "title": "Detroit Red Wings News, Scores and Stats 2026-27 - CBS Sports",
-      "url": "https://www.cbssports.com/nhl/teams/det/detroit-red-wings/",
-      "summary": "CBS Sports has the latest Detroit Red Wings news and information, including team scores, stats, highlights and more for the 2026 NHL season.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ee35d48a2f891b2f",
-      "title": "Detroit Red Wings News, Videos, Schedules, Roster, Stats - Yahoo Sports",
-      "url": "https://sports.yahoo.com/nhl/teams/detroit/",
-      "summary": "Get the latest news and information for the Detroit Red Wings. 2026 season schedule, scores, stats, and highlights.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "42ed6b600ab708d6",
-      "title": "Detroit Red Wings NHL Standings - Detroit Hockey Now",
-      "url": "https://detroithockeynow.com/detroit-red-wings-nhl-standings/",
-      "summary": "Detroit Red Wings NHL Standings Bookmark and come back for the latest Detroit Red Wings standings. Switch between conference, division, and other options on the interactive table below.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "02b4617d9779486f",
-      "title": "Detroit Red Wings Preseason Standings | FOX Sports",
-      "url": "https://www.foxsports.com/nhl/detroit-red-wings-team-standings",
-      "summary": "Detroit Red Wings Preseason standings, conference rankings, updated Detroit Red Wings records and playoff standings.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ca318df538421caa",
-      "title": "Detroit Red Wings Scores, Stats and Highlights - ESPN",
-      "url": "https://www.espn.com/nhl/team/_/name/det/detroit-red-wings",
-      "summary": "Visit ESPN for Detroit Red Wings live scores, video highlights, and latest news. Find standings and the full 2026-27 season schedule.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "261c08e52f95d989",
-      "title": "Detroit Red Wings standings - Hockey, USA - Flashscore.com",
-      "url": "https://www.flashscore.com/team/detroit-red-wings/dnJdmCF0/standings/",
-      "summary": "Explore the latest standings of Detroit Red Wings in the Hockey/USA section. Track position of Detroit Red Wings in the table.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6f9711d4c7adf139",
-      "title": "Detroit Red Wings Standings - Sporting News",
-      "url": "https://www.sportingnews.com/us/nhl/detroit-red-wings/standings",
-      "summary": "Stay updated on the Detroit Red Wings with the latest standings from Sporting News. Something went wrong...",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d29d044614a2dc41",
-      "title": "Detroit Red Wings Standings | Hockey Alchemy",
-      "url": "https://www.hockeyalchemy.com/teams/DET/standings",
-      "summary": "Detroit Red Wings 2025-26 standings — Atlantic Division and full Eastern table with the playoff cut, record, points and goal differential (final table).",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dcc072c9109d63af",
-      "title": "Downers Grove, IL Internet Providers | Compare Prices & Speeds",
-      "url": "https://www.inmyarea.com/internet/illinois/downers-grove",
-      "summary": "The best internet service providers in Downers Grove, IL are AT&T, Xfinity, Starlink, Viasat, Mint Mobile, Verizon, Ezee Fiber, XNET WiFi, and Hughesnet. Enter your address to compare your options and pick the best provider.",
+      "id": "143fab2f42b44c12",
+      "title": "LebeL (ルベル) / ザ・モイ バーム アンビエントデュウの公式商品情報｜美容・化粧品情報はアットコスメ",
+      "url": "https://www.cosme.net/products/10246978/",
+      "summary": "【アットコスメ】LebeL (ルベル) / ザ・モイ バーム アンビエントデュウ（ヘアワックス・クリーム）の公式商品情報。 口コミ（2件）や写真による評判、ザ・モイ バーム アンビエントデュウに関する記事やQ&Aをチェックできます。",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -702,38 +231,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b56132fe87521ae1",
-      "title": "Fiber Internet Providers Available In Your Area - InMyArea.com",
-      "url": "https://www.inmyarea.com/internet/fiber",
-      "summary": "Frontier FiOS also reaches about 3% of the nation. These fiber optic internet plans provide download speeds up to 500 Mbps. Another option is Cox Communications' Gigablast internet, which offers download speeds up to 1,000 Mbps. Type in your zipcode at the top of the page to see which fiber providers are available in your area!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "500a1409f5b8a845",
-      "title": "Greensboro, NC Internet Providers | Compare Prices & Speeds",
-      "url": "https://www.inmyarea.com/internet/north-carolina/greensboro",
-      "summary": "The best internet service providers in Greensboro, NC are AT&T, Spectrum, Starlink, T-Mobile, Viasat, Mint Mobile, Verizon, XNET WiFi, and Hughesnet. Enter your address to compare your options and pick the best provider.",
+      "id": "7663c9e2fe7a2ad0",
+      "title": "THE MOII | PRODUCTS | LebeL（ルベル）オフィシャルサイト",
+      "url": "https://www.lebel.co.jp/products/series/themoii/",
+      "summary": "THE MOII（ザ・モイ）。 それは、どこまでもイノベーティブなナチュラル。 自然由来成分*で、肌にも髪にも心地いい。 でもそろそろ、やさしいだけではもの足りない。 髪質、年齢、ジェンダーなど、 あらゆるフレームを軽やかに解き放つデザイン性。",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -757,174 +258,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8e93e7bc3d33a34d",
-      "title": "Hebrews 5 - Calvin's Commentary on the Bible - Bible Commentaries ...",
-      "url": "https://www.studylight.org/commentaries/eng/cal/hebrews-5.html",
-      "summary": "Hebrews 5, Calvin's Commentary on the Bible, John Calvin's Commentaries offer Christians profound insights by blending careful analysis of original texts with historical context.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3e740e30d4b6b248",
-      "title": "Hebrews 5 Calvin's Commentaries - Bible Hub",
-      "url": "https://biblehub.com/commentaries/calvin/hebrews/5.htm",
-      "summary": "He compares Christ with the Levitical priests, and he teaches us what is the likeness and the difference between them; and the object of the whole discourse is, to show what Christ's office really is, and also to prove that whatever was ordained under the law was ordained on his account.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "30c250919045b57e",
-      "title": "Internet Providers In My Area By ZIP Code » Compare Deals & Save",
-      "url": "https://www.inmyarea.com/internet",
-      "summary": "Find Internet Providers In Your Area Compare plans, prices, and check for internet providers by ZIP code, address, or location.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "88605c5c0c269f37",
-      "title": "John Calvin: Calvin's Commentaries—Complete - Christian Classics ...",
-      "url": "https://ccel.org/ccel/calvin/commentaries.i.html",
-      "summary": "These electronic texts of Calvin's Commentaries were prepared through the labor of volunteers for the OnLine Bible project and the Christian Classics Ethereal Library in conjunction with the good folks at Ages Software. Much work in programming and editing was done by Skip Gaede.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f5c502969f99cc3d",
-      "title": "John Calvin: Commentary on Hebrews - Christian Classics Ethereal Library",
-      "url": "https://ccel.org/ccel/calvin/calcom44/calcom44.xi.iii.html",
-      "summary": "He says that it was unreasonable and disgraceful that they should still continue in the elements, in the first rudiments of knowledge, while they ought to have been teachers.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e77dcd93e7abba8",
-      "title": "Lexington, KY Internet Providers | Compare Prices & Speeds",
-      "url": "https://www.inmyarea.com/internet/kentucky/lexington",
-      "summary": "The top internet service providers in Lexington, KY are AT&T, Spectrum, EarthLink, Starlink, T-Mobile, Viasat, Mint Mobile, Verizon, Kinetic, XNET WiFi, Metronet, and Hughesnet. Enter your address to compare your options and pick the best provider.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "310d8695065260aa",
-      "title": "Movie Showtimes and Theaters near Tustin, CA | Fandango",
-      "url": "https://www.fandango.com/tustin_ca_movietimes",
-      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Tustin, CA.",
+      "id": "93bbb4ea3224618c",
+      "title": "Top 15 Things to Do in Tampa, FL - Tampa Attractions",
+      "url": "https://www.tripadvisor.com/Attractions-g34678-Activities-Tampa_Florida.html",
+      "summary": "Experience wildlife like nowhere else! See Florida manatees receiving lifesaving care. Get up-close to a rescued Florida panther. Take a stroll down a shaded boardwalk – where you’ll find native birds…",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -948,37 +285,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8ebc5aea3efb56b4",
-      "title": "New & Used Buick GMC Dealer Near Me in Tustin, CA | TUSTIN ...",
-      "url": "https://www.tustingmc.com/",
-      "summary": "If you are looking to get the top value for your life, come to see us at Tustin Buick GMC, where we offer a variety of vehicles that help you explore your life in Orange County. This is your chance to start driving a vehicle you truly adore. Call us today and talk with the knowledgeable sales staff at (714) 669-3699.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "17ada1605cb93f06",
-      "title": "New York City (NYC), NY Internet Providers | Compare Prices & Speeds",
-      "url": "https://www.inmyarea.com/internet/new-york/new-york",
-      "summary": "The top internet service providers in New York City (NYC), NY are AT&T, EarthLink, Optimum, Spectrum, Starlink, Verizon, Viasat, Mint Mobile, Astound Broadband, XNET WiFi, Starry Internet, and Hughesnet. Enter your address to compare your options and pick the best provider.",
+      "id": "f965505a18290faf",
+      "title": "【新品】ルベル ザ・モイ バーム アンビエントデュウ スタイリング剤 ヘアケア 【公式通販】",
+      "url": "https://rossbikes.com/subminister/heyduk/22637735749",
+      "summary": "コメリポイント ： 140ポイント獲得 コメリポイントについて 購入個数 お店で受け取る （送料無料） 受け取り店舗： お店を選ぶ 近くの店舗を確認する 納期目安： 13時 までに注文→ 17時 までにご用意 17時 までに注文→ 翌朝 までにご用意",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -1002,38 +312,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a831d228ef432ae3",
-      "title": "Official Detroit Red Wings Website | Detroit Red Wings - NHL.com",
-      "url": "https://www.nhl.com/redwings/",
-      "summary": "The official National Hockey League website including news, rosters, stats, schedules, teams, and video.",
-      "discovery_channel": "adjacent",
-      "query": "wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4745d20ac06acee3",
-      "title": "Satellite Internet Providers Available In Your Area - InMyArea.com",
-      "url": "https://www.inmyarea.com/internet/satellite",
-      "summary": "Satellite internet is available anywhere in the United States. Satellite internet is a more reliable option in rural areas than DSL, because it doesn't require ground infrastructure. Satellite internet is an option for those who live in remote areas or dead zones.",
+      "id": "752498ad4bffa432",
+      "title": "ザ・モイ バーム アンビエントデュウ - BEAUTY CITY",
+      "url": "https://salon.beauty-city.jp/bc/shop/goods/index.html?ggcd=334601971477",
+      "summary": "THE MOII ザ・モイ バーム アンビエントデュウ 敏感肌の方によるパッチテスト済み すべての方に皮膚刺激が起きないというわけではありません。 ケアしながら、髪質やスタイルに合わせて質感チェンジ。 ＜ボディ・ヘアトリートメントバーム＞",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -1044,12 +326,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "model"
+        "news"
       ],
-      "primary_type": "model",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -1058,12 +339,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a83293d6dfa434c6",
-      "title": "SchoolsFirst FCU: Welcome",
-      "url": "https://www.schoolsfirstfcu.org/",
-      "summary": "Apply for preapproval and visit the dealer with your financing in hand. If you're looking for a low payment that won't increase, and plan on staying in your home at least five years, a fixed-term mortgage may be right for you. See rates and disclosures.",
+      "id": "338b98fb7972b3da",
+      "title": "ザ・モイ バーム アンビエントデュウ - LebeL（ルベル）｜hairinfo（ヘアインフォ）",
+      "url": "https://hairinfo.jp/products/G4o2JlK0qmLa/4952195628940",
+      "summary": "カテゴリー スタイリング剤 商品種類 ヘアバーム・バター メーカー名 LebeL（ルベル） ブランド名 THE MOII（ザ・モイ） 商品名 ザ・モイ バーム アンビエントデュウ 容量 37g 価格 3,520円",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -1085,12 +366,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9bab2d1b2ee32343",
-      "title": "vindicate - definition and meaning - Wordnik",
-      "url": "https://www.wordnik.com/words/vindicate",
-      "summary": "vindicate: To clear of accusation, blame, suspicion, or doubt with supporting arguments or proof.",
+      "id": "feeedfbb588daffe",
+      "title": "ザ・モイ バーム アンビエントデュウ | PRODUCTS | LebeL（ルベル）オフィシャルサイト",
+      "url": "https://www.lebel.co.jp/products/item/402131/",
+      "summary": "STYLING HAIR CARE OTHER THE MOII ザ・モイ バーム アンビエントデュウ ボディ・ヘアトリートメントバーム ヘアサロン専売品 シアバター*¹とシュガーオイル*²が、しっとりとしたうるおいをキープ。 ウェットな束感や重めのスタイルに。 自然由来成分*³ 100%",
       "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -1112,309 +393,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9d47b785e528201f",
-      "title": "Vindicate - definition of vindicate by The Free Dictionary",
-      "url": "https://en.thefreedictionary.com/vindicate",
-      "summary": "vin•di•cate (ˈvɪn dɪˌkeɪt) v.t. -cat•ed, -cat•ing. 1. to clear, as from an accusation or suspicion: to vindicate someone's honor. 2. to afford justification for; justify. 3. to uphold or justify by argument or evidence. 4. to maintain or defend against opposition.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "396d3f5cd4452f25",
-      "title": "VINDICATE Definition & Meaning - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/dictionary/vindicate",
-      "summary": "Vindicate, which has been used in English since at least the mid-16th century, comes from a form of the Latin verb vindicare, meaning “to set free, avenge, or lay claim to.”",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "912ae62616d3d184",
-      "title": "VINDICATE Definition & Meaning | Dictionary.com",
-      "url": "https://www.dictionary.com/browse/vindicate?misspelling=vendicaste&noredirect=true",
-      "summary": "Vindicate means to justify, prove, or reinforce an idea — or to absolve from guilt. If your family thinks you hogged the last piece of pie on Thanksgiving, you'll be vindicated when your younger brother fesses up.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "11d3950e4961cbd5",
-      "title": "vindicate verb - Definition, pictures, pronunciation and usage notes ...",
-      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/vindicate",
-      "summary": "vindicate somebody to prove that somebody is not guilty when they have been accused of doing something wrong or illegal; to prove that somebody is right about something. New evidence emerged, vindicating him completely.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e864a47f7acad1fe",
-      "title": "VINDICATE | definition in the Cambridge English Dictionary",
-      "url": "https://dictionary.cambridge.org/us/dictionary/english/vindicate",
-      "summary": "VINDICATE meaning: 1. to prove that what someone said or did was right or true, after other people thought it was…. Learn more.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e5cb969836c5397c",
-      "title": "VINDICATE | English meaning - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/dictionary/english/vindicate?q=vindicated",
-      "summary": "VINDICATE definition: 1. to prove that what someone said or did was right or true, after other people thought it was…. Learn more.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "efc00a49b4f592cf",
-      "title": "Vindicate – Meaning and Examples: A Complete Guide to Using and ...",
-      "url": "https://englishwordchamps.com/vindicate-meaning-and-examples/",
-      "summary": "Words like vindicate can often be tricky—its meaning can seem straightforward but can have many shades depending on the context. Today, I’ll walk you through what it really means, how to use it correctly, and share some handy tips to make sure you're never in doubt.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "be70e0f02cdf601a",
-      "title": "VINDICATION Definition & Meaning - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/dictionary/vindication",
-      "summary": "The meaning of VINDICATION is an act of vindicating : the state of being vindicated; specifically : justification against denial or censure : defense.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b16f0645392be8f5",
-      "title": "What does Hebrews 5:11-6:12 really mean? - God's Blessing",
-      "url": "https://godsbless.ing/commentary/hebrews/hebrews_5_11-6_12/",
-      "summary": "In Hebrews 5:11-6:12, the writer addresses the issue of spiritual maturity and the necessity of progressing in faith. The context of this passage is crucial, as it speaks to a specific audience – likely Jewish Christians facing persecution.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "084d0ac8989f48a3",
-      "title": "What does vindicate mean? - Definitions.net",
-      "url": "https://www.definitions.net/definition/vindicate",
-      "summary": "To vindicate means to clear someone of blame, suspicion, or accusations, providing justification or proof for their actions or behavior. It can also refer to the act of defending or maintaining a right or cause against criticism or affirming its credibility or validity.",
-      "discovery_channel": "adjacent",
-      "query": "wearable gesture control interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "de388af42cae94e0",
-      "title": "Wildfires/Smoke near Tustin, California, United States Today",
-      "url": "https://wildfiretrackers.com/f/us-ca-tustin/fires",
-      "summary": "Tustin, California, United States Wildfires - Maps and Info about active and inactive fires, smoke plumes, and 2026 Wildfires",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cb513eceb37ba4b7",
-      "title": "11 Health Benefits of Eating a Spoonful of Honey Every Day - MedicineNet",
-      "url": "https://www.medicinenet.com/11_health_benefits_eating_spoonful_honey_everyday/article.htm",
-      "summary": "What to know about honey. Learn about the likely health benefits of eating a spoonful of honey every day.",
+      "id": "3e3c04afc3086c6d",
+      "title": "ACTUS - RDL - L'info de la région",
+      "url": "https://www.rdlradio.fr/actus/locales",
+      "summary": "13 juillet 2026 Wingles: Un jeune perd la vie, noyé à la base de loisirs",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1436,12 +420,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a842b88af97357e3",
-      "title": "8 Strongest and Most Powerful Aphrodisiacs for Sexual Arousal - MedicineNet",
-      "url": "https://www.medicinenet.com/what_are_8_strongest_most_powerful_aphrodisiacs/article.htm",
-      "summary": "Learn more about aphrodisiacs — which are foods, drinks, and natural supplements that are known or suspected to boost your sex drive — and determine which type is best for you.",
+      "id": "3c8fb26031828d0e",
+      "title": "ACTUS - RDL - L'info de la région",
+      "url": "https://www.rdlradio.fr/actualites/1",
+      "summary": "27 septembre 2026 Les pronostics hippiques de Sébastien Mortagne : Lundi 28 Septembre",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1463,12 +447,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6e149682e8e9292a",
-      "title": "Colon Cancer: 8 Early Warning Signs and 4 Stages - MedicineNet",
-      "url": "https://www.medicinenet.com/early_warning_signs_and_stages_of_colon_cancer/article.htm",
-      "summary": "Learn about colon cancer warning signs to know that you should watch and shouldn't ignore. Colon cancer usually does not cause signs or symptoms in the early stages. As cancer grows, signs may include blood in the stool, bowel habit changes, abdominal pain, and fatigue. Learn about 4 stages and conditions that have the same colon cancer symptoms.",
+      "id": "34596c9c116590db",
+      "title": "ACTUS - RDL - Les Pronostics Hippiques",
+      "url": "https://www.rdlradio.fr/news/pronostics-de-christian-179/1",
+      "summary": "Les pronostics hippiques de Sébastien Mortagne : Mardi 29 Septembre Mardi 29 Septembre",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1477,37 +461,8 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "video",
         "tool",
         "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "581659867059a731",
-      "title": "Diseases & Conditions Index - MedicineNet",
-      "url": "https://www.medicinenet.com/diseases_and_conditions/article.htm",
-      "summary": "Index of comprehensive articles on medical diseases and conditions, a listing. Covers all aspects of medicine produced by doctors.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1519,17 +474,179 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "98f475030e5f4f77",
-      "title": "Failed to add Microsoft 365 account or cannot sync new messages with ...",
-      "url": "https://support.microsoft.com/en-us/outlook/failed-to-add-microsoft-365-account-or-cannot-sync-new-messages-with-your-existing-microsoft-365-acc",
-      "summary": "For Huawei devices, the setting can be found in Phone Manager > Auto-launch > Secondary launch management > Enable Authenticator/Company Portal. For other devices, you may need to consult with the device vendor. Disable power optimization for Authenticator/Company Portal so it can continue to run in the background.",
+      "id": "9f0bb3f393a8a23d",
+      "title": "ACTUS - RDL - Les Pronostics Hippiques",
+      "url": "https://www.rdlradio.fr/news/pronostics-de-christian-179/4",
+      "summary": "Les pronostics hippiques de Sébastien Mortagne : Vendredi 11 Septembre Vendredi 11 Septembre",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "265155a3d849e42e",
+      "title": "Fréquences - RDL",
+      "url": "https://www.rdlradio.fr/frequences",
+      "summary": "Découvrez les fréquences de RDL \"La Radio qui chante\" : Béthune 99.2 - Dunkerque 89.8 - Montreuil 92.3 - St Omer 89.6 - St Pol-sur-Ternoise 89.1",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed90aa1058ab6ea9",
+      "title": "Les pronostics hippiques de Sébastien Mortagne - RDL",
+      "url": "https://www.rdlradio.fr/page-contenu-article-1514",
+      "summary": "Les pronostics hippiques de Sébastien Mortagne : Jeudi 16 Juillet Crédit image: RDL - 2021",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8dd0e38ff62258d1",
+      "title": "Les pronostics hippiques de Sébastien Mortagne - RDL",
+      "url": "https://www.rdlradio.fr/page-contenu-article-1513",
+      "summary": "Mercredi 15 Juillet Arrivée : 11 - 3 - 4 - 5 - 14 Meilleur impression : 3 Jackson Touch - 5 Jade Hippodrome de Lisieux - Trot - 18h30 Prix de Coquainvillers - 8éme course - 14 pts - 2675 m Mon Prono : 11 - 3 - 1 - 7 - 13 - 12 - 4 Ma dernière mnute : 3 JACKSON TOUCH 11 JURELLA DE PALM : Quand elle ne se montre pas fautive, elle est capable de belles choses. En se référençant à sa ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "15a6e8e486ca60c2",
+      "title": "Les pronostics hippiques de Sébastien Mortagne - RDL",
+      "url": "https://www.rdlradio.fr/page-contenu-article-1518",
+      "summary": "Lundi 20 Juillet Arrivée : 15 - 11 - 1 - 13 - 2 Meileures impressions : 15 Chaldero - 1 Ten Horns Hippodrome de Vichy - Galop - 18h30 Prix Hubert de Catheu - 8éme course - 16 pts - 1400 m Mon Prono : 2 - 1 - 11 - 5 - 3 - 14 - 12 Ma dernière minute : 1 TEN HORNS 2 BREIZH SKY : Déjà vu à son avantage dans les courses de Groupe I, il a eu ensuite du mal à digérer le haut niveau mais ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "24d3f8c1ff4a1783",
+      "title": "Les pronostics hippiques de Sébastien Mortagne - RDL",
+      "url": "https://www.rdlradio.fr/page-contenu-article-1567",
+      "summary": "Les pronostics hippiques de Sébastien Mortagne : Mardi 8 Septembre Crédit image: RDL - 2021",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d2bce87bd491b50f",
+      "title": "Magical Girl Witch Trial | Magical Girl Witch Trial Wiki | Fandom",
+      "url": "https://13witch-trials.fandom.com/wiki/Magical_Girl_Witch_Trial",
+      "summary": "Magical Girl Witch Trials, known in Japanese as 'Mahou Shoujo no Majo Saiban' is a Japanese psychological horror mystery adventure game developed by Acacia, released on 18th July 2025 in Japanese and Chinese on Steam, with other languages confirmed to be in development, as well as a Nintendo Switch version to be released in July of 2026.",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "launch"
+        "released"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -1547,466 +664,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2a0f6fc2a470df09",
-      "title": "Flakka Drug: Symptoms, Side Effects & Complications - MedicineNet",
-      "url": "https://www.medicinenet.com/flakka/article.htm",
-      "summary": "Read about the so-called zombie drug known as Flakka which can cause agitation, superhuman strength, paranoia & bizarre behavior.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "ad2c4127beb43711",
+      "title": "Magical Girl Witch Trials (Visual Novel) - TV Tropes",
+      "url": "https://tvtropes.org/pmwiki/pmwiki.php/VisualNovel/MagicalGirlWitchTrials",
+      "summary": "Magical Girl Witch Trials (Japanese Title: 魔法少女ノ魔女裁判, Mahou Shoujo no Majo Saiban) is a Visual Novel developed by Acacia and published by Re,AER. It was released on Steam on July 18, 2025 in Japanese, with a later release on the Nintendo Switch in July 9, 2026.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
+      "keyword_hits": [
+        "released"
       ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "48c89ee75236f9dc",
-      "title": "MedicineNet - Health and Medical Information Produced by Doctors",
-      "url": "https://www.medicinenet.com/",
-      "summary": "Read doctor-produced health and medical information written for you to make informed decisions about your health concerns.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ad3fabe38c442b5",
-      "title": "Rigor Mortis: Overview, Causes, 6 Stages, Duration, Death - MedicineNet",
-      "url": "https://www.medicinenet.com/what_are_the_stages_of_rigor_mortis/article.htm",
-      "summary": "Rigor mortis is the third stage after death, in which the muscles harden and become stiff. Learn about its causes, stages, and more.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "25dbb00a457cfeda",
-      "title": "Stages of Pregnancy: Week by Week - MedicineNet",
-      "url": "https://www.medicinenet.com/stages_of_pregnancy_pictures_slideshow/article.htm",
-      "summary": "The Three Stages of Pregnancy (1 st, 2 nd, and 3 rd Trimester) Conception to about the 12th week of pregnancy marks the first trimester. The second trimester is weeks 13 to 27, and the third trimester starts about 28 weeks and lasts until birth. This slide show will discuss what occurs to both the mother and baby during each trimester.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "40538e37e156b551",
-      "title": "Urobilinogen in Urine: Ranges, Tests, Causes, Treatment - MedicineNet",
-      "url": "https://www.medicinenet.com/what_does_it_mean_urobilinogen_in_your_urine/article.htm",
-      "summary": "Urobilinogen forms as the liver processes bilirubin from red blood cells and releases it into the intestine. Learn about its low, normal and high ranges, causes, and more.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a792801c6656e755",
-      "title": "What Are the Chances of Surviving Bleeding in the Brain? - MedicineNet",
-      "url": "https://www.medicinenet.com/chances_of_surviving_bleeding_in_the_brain/article.htm",
-      "summary": "Bleeding in the brain or brain hemorrhage can be life-threatening, with an estimated 5-year survival rate of about 26.7%. Learn about the causes of hemorrhagic strokes.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f3dc4fa89e732e88",
-      "title": "What Is Augmented Reality (AR)? | Coursera",
-      "url": "https://www.coursera.org/articles/ar",
-      "summary": "Key takeaways Augmented reality (AR) is a technology that projects digital information, including images and animations, into the real world, enhancing it while still allowing you to interact with it. Augmented reality works using a combination of parts, including cameras, sensors, projection, and artificial intelligence, along with processing power. The benefits of augmented reality include ...",
-      "discovery_channel": "developer",
-      "query": "AR glasses SDK developer",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d93a00becb478005",
-      "title": "2026 주목받는 스마트안경 AR 글래스 총정리",
-      "url": "https://tali.kr/best-ar-glass",
-      "summary": "Q. 스마트안경과 AR 글래스의 차이는 무엇인가? 스마트안경은 카메라, 스피커, AI 어시스턴트 등 스마트 기능을 탑재했지만 시야에 화면을 표시하지 않는 제품이다. AR 글래스는 여기에 더해 렌즈에 직접 정보를 투사해 증강현실 화면을 보여주는 기능을 갖춘다.",
-      "discovery_channel": "broad_web",
-      "query": "AR glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0c1bb4d8dba2fa66",
-      "title": "24 Best Petite Formal Dresses for Weddings - The Knot",
-      "url": "https://www.theknot.com/content/petite-formal-dresses",
-      "summary": "Where to Buy the Best Formal Dresses for Petites If you feel like you're regularly getting your wedding guest dresses altered, consider buying a petite formal gown or dress from a retailer that offers special sizing. They'll come much better fitted to your body—little to no alteration required. Here are a few petite-size retails we recommend:",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ca860b8745e5c56",
-      "title": "Bravest Convertible Dress - Little Petal",
-      "url": "https://www.littlepetal.net/shop-all-dresses/bravest",
-      "summary": "The teal, gold, and brown straps on this dress can transform into countless styles. Whether you're practicing your archery or practicing your politics, there's a style that will suit the occasion!",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "db8081aaf512feea",
-      "title": "Charles Schwab Symbol Lookup",
-      "url": "https://client.schwab.com/symluphtmfiles/SymbolLookup.html",
-      "summary": "Find stock or index symbols by entering a company name or partial information using Charles Schwab's symbol lookup tool.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "742f492e8189cea9",
-      "title": "COD MW is saying i have to repurchase game - Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/xbox/forum/all/cod-mw-is-saying-i-have-to-repurchase-game/5d85184a-9df4-44b2-9bc9-eb448b4c0ca6",
-      "summary": "so I preordered COD MW before it came out, I played a lot and had stopped playing for a few weeks. got on to play a few weeks ago and saw that the game is nowhere to be found. Its not in my owned",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f184af771a5c0f0",
-      "title": "Convertible Wedding Dress Ideas Trending In 2027",
-      "url": "https://www.weddingforward.com/convertible-wedding-dress/",
-      "summary": "Discover the latest convertible wedding dress ideas trending now, from detachable skirts to removable sleeves and versatile bridal looks!",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6513acc28aac2366",
-      "title": "Convertible Wedding Dresses & Bridal Gowns | Transformer Dresses ...",
-      "url": "https://www.oliviabottega.com/collections/convertible-dresses",
-      "summary": "Our transformer wedding dresses offer endless options for brides to create their perfect look. Detachable sleeves, trains, and skirts allow for various styles and moods on your special day.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9d5cf2f0dc0a48d2",
-      "title": "Convertible Wedding Dresses | Detachable Skirts, Sleeves & Trains ...",
-      "url": "https://www.moonlightbridal.com/all-wedding-dresses/convertible/",
-      "summary": "Shop 60+ convertible wedding dresses from Moonlight Bridal — gowns with detachable skirts, sleeves, trains & jackets. Transform your look from ceremony to reception.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f092189204530491",
-      "title": "Copilot chat (The question is below). - Microsoft Q&A",
-      "url": "https://answers.microsoft.com/en-us/microsoftedge/forum/all/copilot-chatthe-question-is-below/bf1df4e7-874e-4a5f-824d-0524f5ad297f",
-      "summary": "Locked Question. This question was migrated from the Microsoft Support Community. You can vote on whether it's helpful, but you can't add comments or replies or follow the question.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f9960aaea942051",
-      "title": "Daenerys Inspired Convertible Dress — Little Petal",
-      "url": "https://www.littlepetal.net/shop-all-dresses/daenerys-pinkbrown-inspired-convertible-dress",
-      "summary": "The convertible dress gives the bride the option of having her wedding party all in the same gown, with each gal styled the same or uniquely. Bridesmaids love these soft jersey gowns because they are incredibly comfortable and can be worn again and again after the wedding.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9a711b58bd0adb32",
-      "title": "Download Microsoft Authenticator | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/authenticator/download-microsoft-authenticator",
-      "summary": "Note Microsoft Authenticator is not available for PC or Mac, because authenticator apps are designed for smartphones for security reasons. Learn more. Microsoft no longer supports Authenticator versions that are more than one year old. Always keep your device up to date. Users in China should read how to download and use Microsoft Authenticator in China.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
@@ -2023,231 +692,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d745e53ff1e27c82",
-      "title": "Find a Branch | Financial Services | Brokerage Firm | Charles Schwab",
-      "url": "https://client.schwab.com/Public/BranchLocator/branchdetails.aspx?branchid=1995",
-      "summary": "The Charles Schwab Corporation provides a full range of brokerage, banking and financial advisory services through its operating subsidiaries. Its broker-dealer subsidiary, Charles Schwab & Co., Inc. (member SIPC), and its affiliates offer investment services and products.",
+      "id": "7f70c0267f7f0b50",
+      "title": "Magical Girl Witch Trials - Acacia Wiki",
+      "url": "https://acacia.wiki.gg/wiki/Magical_Girl_Witch_Trials",
+      "summary": "Demo Mahou Shoujo no Majo Saiban Demo: First-victim Edition [note 5] was released on June 9th 2025, in both Japanese and Chinese languages, on Steam. The demo's contents remained largely the same as the finalized game, going up to the death of Noah Jogasaki, hence the name, and the beginning of the subsequent trial.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "released"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "94c536eb8023354b",
-      "title": "Find Financial Consultants and Advisors Near Me | Charles Schwab",
-      "url": "https://client.schwab.com/public/consultant/find",
-      "summary": "The Charles Schwab Corporation provides a full range of brokerage, banking and financial advisory services through its operating subsidiaries. Its broker-dealer subsidiary, Charles Schwab & Co., Inc. (member SIPC), and its affiliates offer investment services and products.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7f61decbc0e688f7",
-      "title": "Flower Girl Dresses 2026 for Toddlers and Juniors at Madame Bridal",
-      "url": "https://madamebridal.com/flower-girl-dresses",
-      "summary": "Here at Madame Bridal you can find beautiful flower girl dresses specifically made to fit little girls, with sizes from infant and toddler to teen. Featuring sweet, simple lines, delicate fabrics and delightful colors, our selection of dresses will delight everyone in your bridal party and bring a smile to your wedding guests’ faces.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f5e2b6a33ac7d747",
-      "title": "Frame rate issues after latest update? - Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/xbox/forum/all/frame-rate-issues-after-latest-update/adc313ea-c79b-401f-b1f1-04637ca32d0f",
-      "summary": "after the latest up date all of my FPS games (Halo-Destany 2 ect) are basically un playable. Anybody else experiencing this issue?",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ede60c0fac1fcbfc",
-      "title": "HDHub4u",
-      "url": "https://hdhub4u.gd/",
-      "summary": "HDHub4u offers a diverse library of movies and TV shows spanning all kinds of genres, from action and drama to comedy, horror, documentaries, and more. This ...",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "67d23ba12d7a81e5",
-      "title": "Help me decide - Charles Schwab",
-      "url": "https://client.schwab.com/public/app/service/accountselector/",
-      "summary": "The Charles Schwab Corporation provides a full range of brokerage, banking and financial advisory services through its operating subsidiaries. Its broker-dealer subsidiary, Charles Schwab & Co., Inc. (member SIPC), and its affiliates offer investment services and products.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ed509fc14f3b2d35",
-      "title": "Investing and Financial Planning Workshops | Charles Schwab",
-      "url": "https://client.schwab.com/public/workshops",
-      "summary": "Explore financial workshops from Schwab on investing, retirement, and money management. Find an event online or at a branch near you.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6f437fabf7558e9b",
-      "title": "Jack Reacher (2012) - Quotes - IMDb",
-      "url": "https://m.imdb.com/title/tt0790724/quotes/",
-      "summary": "Jack Reacher: Directed by Christopher McQuarrie. With Tom Cruise, Rosamund Pike, Richard Jenkins, David Oyelowo. Jack Reacher, a homicide investigator, digs deeper into a case involving a trained military sniper responsible for a mass shooting.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a75ee0bc08e1f550",
-      "title": "Jack Reacher 3 Movie: Will Tom Cruise Release a New Sequel?",
-      "url": "https://www.imdb.com/news/ni64773656/",
-      "summary": "Following Tom Cruise 's first two Jack Reacher movies, many fans would be very happy to watch a Jack Reacher 3. But will it ever come to fruition? Based on Lee Child 's Reacher book series, Tom Cruise first played ex-Army special investigator Jack Reacher in 2012 and returned to the role in 2015's Jack Reacher: Never Look Back.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "video"
+        "model"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -2259,23 +720,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "62c96093607acd84",
-      "title": "Jack Reacher: Never Go Back (2016) - Parents guide - IMDb",
-      "url": "https://m.imdb.com/title/tt3393786/parentalguide/",
-      "summary": "Jack Reacher: Never Go Back (2016) - Parents guide and Certifications from around the world.",
+      "id": "2872ea413aba1ae5",
+      "title": "Magical Girl Witch Trials - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Magical_Girl_Witch_Trials",
+      "summary": "Magical Girl Witch Trials (Japanese: 魔法少女ノ魔女裁判, Hepburn: Mahō Shōjo no Majo Saiban), abbreviated as Manosaba (Japanese: まのさば), is a 2025 psychological horror mystery adventure [2] game by Re,AER & Acacia, a scenario writing company. The game was released on Microsoft Windows. The Nintendo Switch version was released on July 9, 2026. [3] The game was developed by ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "released"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2285,23 +748,24 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "15172f2217562c06",
-      "title": "Jack Reacher: Never Go Back (2016) - Plot - IMDb",
-      "url": "https://m.imdb.com/title/tt3393786/plotsummary/",
-      "summary": "Investigator Jack Reacher goes on the lam to uncover the truth behind a major government conspiracy that involves the death of U.S. soldiers. After accomplishing the assignment of dismantling a human trafficking organization, the former military and drifter Jack Reacher goes to Washington to invite ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "dd54ba9132ad0a44",
+      "title": "RDL - La Radio qui Chante",
+      "url": "https://www.rdlradio.fr/",
+      "summary": "RDL \"La Radio qui Chante\" à Béthune, Dunkerque, St Omer, Montreuil et St Pol-sur-Ternoise... Les plus belles chansons françaises",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2311,37 +775,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3fbae7baa89a8e91",
-      "title": "Joining email not received - Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/feedback/forum/all/joining-email-not-received/c6172907-5c7f-4925-a6b4-5cb7f733f380",
-      "summary": "Hi We had an employee due on the Azure Fundamental training on 4th and 5th November but he did not receive any emails from yourself. If an employee was previously due to attend virtually and they sign",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3a8de5092aebe60d",
-      "title": "Kansas Rehabilitation Hospital, A Joint Venture Of",
-      "url": "https://ourhealthnetwork.com/inpatient-rehab/kansas-rehabilitation-hospital-a-joint-venture-of-topeka-ks-173025",
-      "summary": "Kansas Rehabilitation Hospital, A Joint Venture Of is a for-profit inpatient rehabilitation facility in Topeka, KS, serving patients in Shawnee County and the surrounding region. Medicare certified since 1988, the facility has provided 38 years of intensive rehabilitation care.",
+      "id": "f82f51efe5d39298",
+      "title": "**New Series Translation!** Magical Girl Witch Trials",
+      "url": "https://avelilium.com/2026/07/30/new-series-translation-magical-girl-witch-trials/",
+      "summary": "Despite their anxieties, these girls begin to grow closer — but the fragile peace they maintain is shattered when a murder occurs. The owl assembles the captive girls and declares the start of a witch trial: a brutal game to identify the culprit of the murder — to identify who is to be executed.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -2364,612 +801,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1f3a2ccaa2014014",
-      "title": "Login | Charles Schwab",
-      "url": "https://client.schwab.com/public/branchlocator/PrintPage.aspx?Access=P",
-      "summary": "Log in to Charles Schwab to access your account and manage your investments securely and efficiently.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2a05e20d3d0b42ee",
-      "title": "Manage devices used with your Microsoft account",
-      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/manage-devices-used-with-your-microsoft-account",
-      "summary": "Learn how to manage your Microsoft devices. Add, remove, register, or rename a device on your Microsoft account.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "295482e6a466918a",
-      "title": "Manage Mobile devices in Windows | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/windows/apps/phonelink/manage-mobile-devices-in-windows",
-      "summary": "Manage Mobile devices in Windows How to manage your mobile device on your PC? Now you can link and manage your mobile devices directly from your PC. This link between your Android device and PC provides instant access to your mobile device with just a few simple steps. The following are required for this to work: A PC running Windows 11. An Android device running Android 10 or later. Your ...",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7be14243c22571b9",
-      "title": "Manage your account - Comenity",
-      "url": "https://d.comenity.net/ultabeautyrewardscreditcard/",
-      "summary": "Manage your account",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "40577108c8ce9097",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/windows/forum/all/windows-10-auto-adjusting-brightness/23c9d776-be06-4a94-9fa0-f5a008c15b74",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fcf7120325d7e2e4",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/very-frustrating-i-am-trying-to-format-number-into/cb18c42a-8548-4b86-82c1-c6051189e4b8",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e26f6f16dd408ab5",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/windows/forum/all/activation-failed-free-digital-licence-after/ffd10950-c3bb-4e13-a53d-1131dea67197",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c20f8ddd8b942958",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/windows/forum/all/error-encountered-message-in-the-windows-update/995bab88-c7b9-463d-85ae-c8f22aa41c90",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "364f4eba06140011",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/windows/forum/all/vs-code-not-running-due-to-npav-installed/fc8d28c3-0e10-4bd5-b584-bd4f26bd8331",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web+retail",
-      "query": "IFA smart glasses; titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e3cb511cd6da5ab",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/while-typing-an-e-mail-in-microsoft-outlook-these/a3036f21-b766-4b24-8ae9-af4a9f5358d6",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "917ebf10a83de07a",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/when-going-to-options-in-file-excel-to-download/35e80cf5-4071-467f-a7fb-d9cab5b60bd3",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "43d98da46c467ffa",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/windows/forum/all/unable-re-activate-windows-10-from-previous/c2d65eee-47a6-4e36-8fa8-ac03c982888f",
-      "summary": "Microsoft Community",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b1846fea7168e408",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/windows/forum/all/getting-error-0x80070522-based-from-blueboxlog/b1137d4b-5ac5-4f58-b13f-ebedc992df39",
-      "summary": "Microsoft Community",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c989d9958af386b8",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-to-forcefully-display-correct-words-as/b7c514d3-ddea-4d09-8712-a0ac23d244d5",
-      "summary": "Microsoft Community",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d76bb3345f30b56d",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/microsoftedge/forum/all/when-are-you-going-to-replace-microsoft-edge/b97b4b2f-539c-4271-a83a-7c4953c3b7ff",
-      "summary": "Microsoft Community",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cffd082b48d24e81",
-      "title": "Microsoft 问答 | Microsoft Learn",
-      "url": "https://www.answers.microsoft.com/zh-hans/windowslive/forum/all/%E4%BD%BF%E7%94%A8msn%E6%94%B6%E5%88%B0%E5%AF%B9/3ec015a3-7ea6-467d-9a19-c354ed40908b",
-      "summary": "Microsoft技术问答平台。 开始询问、回答和浏览有关 .Net、Azure 或 Teams 等产品的问题。",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ef64bde469ac994d",
-      "title": "Move Assets from My Schwab Brokerage Account - Charles Schwab",
-      "url": "https://client.schwab.com/Areas/MvcGlobal/PdfTemplates/ThirdPartyTransfer.pdf",
-      "summary": "Return the completed form by using Secure Messaging on www.Schwab.com or www.SchwabAlliance.com or Fax to 888-526-7252. Please use this form to move (or transfer) cash and/or assets from your Schwab brokerage account to another Schwab brokerage account(s). Please use a separate form for each originating account. If your request exceeds the lines on page 2, please attach a separate spreadsheet ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e06e43e3b96d8fb3",
-      "title": "Neagley (TV Series 2026– ) - IMDb",
-      "url": "https://m.imdb.com/title/tt33539520/",
-      "summary": "Neagley: With Maria Sten, Greyston Holt, Adeline Rudolph, Jasper Jones. Neagley, drawing from her experience with Jack Reacher and the 110 Special Investigators, embarks on a perilous mission to expose a sinister threat, risking her life to unravel the mystery.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "78cd1ec4165597b5",
-      "title": "Phone Link requirements and setup | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/windows/apps/phonelink/phone-link-requirements-and-setup",
-      "summary": "Phone Link lets you connect your Android or iPhone to your Windows PC, allowing you to access many phone features directly on your computer. You can easily read and reply to text messages, view recent photos from your mobile device, use your favorite mobile apps, make and receive calls, and manage notifications from your mobile device on your PC.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d23cd892a21b963c",
-      "title": "Reacher (TV Series 2022– ) - Episode list - IMDb",
-      "url": "https://m.imdb.com/title/tt9288030/episodes/?season=4",
-      "summary": "A chance encounter with a distraught stranger on a Philadelphia subway car draws Jack Reacher into a deadly mystery involving a missing flash drive that contains secrets worth killing for. Tamara becomes entangled in the mystery when she, Reacher, and Jacob run into shady government agents and ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "11c0465046e871fb",
-      "title": "Reacher (TV Series 2022– ) - IMDb",
-      "url": "https://m.imdb.com/title/tt9288030/",
-      "summary": "Reacher: Created by Nick Santora. With Alan Ritchson, Maria Sten, Malcolm Goodwin, Sydelle Noel. Itinerant former military policeman Jack Reacher solves crimes and metes out his own brand of street justice. Based on the novels by Lee Child.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e38abad9b3288347",
-      "title": "Schwab Intelligent Portfolios",
-      "url": "https://client.schwab.com/public/app/sip/enrollment/",
-      "summary": "Sign up for Schwab Intelligent Portfolios to access automated investment solutions tailored to your goals and risk profile.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0c527d9bd1c3e784",
-      "title": "Send and receive files over Bluetooth in Windows | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/send-and-receive-files-over-bluetooth-in-windows",
-      "summary": "Bluetooth file sharing allows you to wirelessly send files—such as photos, videos, and documents—between devices like phones, laptops, and PCs. In Windows, you can use Bluetooth to quickly transfer files between nearby devices without cables or an internet connection. To send a file and receive a file from a Windows device, select the appropriate task from the following list:",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "04d86df67a8a28dc",
-      "title": "Super Cool People: Little Petal – jordandene",
-      "url": "https://jordandene.com/blogs/blog/super-cool-people-doing-cool-things-that-i-like-right-now-little-petal",
-      "summary": "It is also the first high-low convertible dress that I made, and I am a sucker for that style. When you walk with one on, they flare out in the back like a cape.",
+      "id": "d832ee854eaa5104",
+      "title": "2026 Island Hop Craft Beer & Spirits Festival",
+      "url": "https://www.fernandinamainstreet.com/post/2026-island-hop-craft-beer-spirits-festival",
+      "summary": "Fernandina Beach Main Street is excited to announce the return of the 2026 Island Hop Craft Beer & Spirits Festival, taking place on Saturday, October 3, 2026, at Central Park in the heart of historic downtown Fernandina Beach.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -2992,64 +827,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0394efa415807c6e",
-      "title": "Supported devices for Phone Link experiences | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/windows/apps/phonelink/supported-devices-for-phone-link-experiences",
-      "summary": "A list of devices supported with Link to Windows and other features in the Phone Link app.",
+      "id": "fad64ebb0ced30cb",
+      "title": "Belmont Market",
+      "url": "https://www.belmontmarket.com/",
+      "summary": "Wakefield, Rhode Island's premier supermarket shopping experience. Boasts the best bakery in town, the best locally sourced produce, and the finest, freshest meats as well.",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f042a223042c64ca",
-      "title": "The Best Dresses for Petite Women, Tested and Reviewed - TODAY",
-      "url": "https://www.today.com/shop/best-dresses-for-petites-rcna213759",
-      "summary": "Experts share tips for finding the right dresses for petite women. Shop dresses for petites from Loft, Banana Republic Factory, J. Crew and more.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "672eb2eb3bf07a16",
-      "title": "The Best Petite Wedding Guest Dresses, Curated by Short Editors",
-      "url": "https://www.theknot.com/content/petite-wedding-guest-dresses",
-      "summary": "Looking for petite wedding guest outfits? Shop this list of the best petite dresses for weddings and top brands, curated by editors all under 5 '4.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -3070,12 +853,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4753f8637483562e",
-      "title": "Tom Cruise - IMDb",
-      "url": "https://m.imdb.com/name/nm0000129/",
-      "summary": "2017 Jack Reacher: Never Go Back 6.2 Jack Reacher 2016 Mission: Impossible - Rogue Nation 7.4",
+      "id": "3a8e49fc9c31443c",
+      "title": "BELMONT MARKET - Reviews, Photos & Phone Number (2026) - Grocery Store ...",
+      "url": "https://belmont-market-1.wheree.com/",
+      "summary": "Belmont Market is a community-focused grocery store located in Wakefield, Rhode Island. Reviews indicate that it offers a straightforward shopping experience with an easy-to-follow layout and maintained cleanliness.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "86cc14f75fb805a3",
+      "title": "Belmont Market - Wakefield, RI - Yelp",
+      "url": "https://www.yelp.com/biz/belmont-market-wakefield",
+      "summary": "Belmont Market specializes in fresh, high quality product at the lowest prices. A breathtaking environment with helpful and knowledgeable staff. This certainly is a better place to shop.…",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -3096,38 +905,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cdbd23f37a9f7b10",
-      "title": "TOP 10 BEST Camera Store in La Mesa, CA - Yelp",
-      "url": "https://www.yelp.com/search?find_desc=Camera+Store&find_loc=La+Mesa%2C+CA",
-      "summary": "\"It's a great courtesy that the George's Camera stores go out of their way to ensure the best service...\" more. 2. George's Camera. \"I have gone to countless camera stores up and down California. This is hands down my favorite shop.\" more. 3. Nelson Photo & Video.",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "camera smart glasses; near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eacedcdf385886cf",
-      "title": "ULTA BEAUTY - 1 Mills Circle Ste 113, Ontario CA - Hours ...",
-      "url": "https://www.loc8nearme.com/california/ontario/ulta/1133328/",
-      "summary": "Ulta Beauty at 1 Mills Circle Ste 113, Ontario CA 91764 - hours, address, map, directions, phone number, customer ratings and reviews.",
+      "id": "f3257b4679ff3ef9",
+      "title": "Belmont Market in Wakefield, RI 02879 - 401-783... - Chamber of Commerce",
+      "url": "https://www.chamberofcommerce.com/business-directory/rhode-island/wakefield/grocery-store/2003469920-belmont-market",
+      "summary": "Belmont Market is located at 600 Kingstown Rd in Wakefield, Rhode Island 02879. Belmont Market can be contacted via phone at 401-783-4656 for pricing, hours and directions.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -3148,64 +931,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aea9898ddae12e62",
-      "title": "Ulta Beauty - Ontario, CA - Hours & Store Location",
-      "url": "https://www.storeopeninghours.com/ulta-beauty-ontario-ca",
-      "summary": "Here you will find some pertinent information about Ulta Beauty Ontario, CA, including the hours of business, address description and phone info.",
+      "id": "ce720ef7a4f6d8f3",
+      "title": "Belmont Market Weekly Ad Sales",
+      "url": "https://www.iweeklyads.com/belmont-market-weekly-ad-sales/",
+      "summary": "Belmont Market is located at 600 Kingstown Road, Wakefield, RI 02879. Explore all the current deals and specials in the latest Belmont Market weekly ad. Promotions, discounts, rebates, coupons, specials, and the best sales of the week are available in your store's weekly ad circular. iWeeklyAds.com is the essential website for your weekly shopping.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "376e5f89e1c31ee4",
-      "title": "Ulta Beauty - Ontario, California | Hours & Location ...",
-      "url": "https://www.storesinfo.com/ulta-beauty/california/ontario/1-mills-circle-ste-113.html",
-      "summary": "Just off 1 Mills Circle, Ste 113, this Ulta Beauty store in Ontario offers a wide selection of cosmetics, skincare products, and salon services. Shoppers can find everything from prestige brands to mass-market favorites, making it easy to pamper yourself or pick up gifts for beauty enthusiasts. The location is conveniently close to Uniqlo, providing additional shopping options nearby.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5ecda1d3b0b3ec5e",
-      "title": "Ulta Beauty | Makeup, Skin Care, Fragrance, Hair Care ...",
-      "url": "https://www.ulta.com/",
-      "summary": "Shop top beauty brands & new arrivals at Ulta Beauty. Join Ulta Beauty Rewards. Free store pickup & curbside available.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -3226,12 +957,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "08d4392cff7748d9",
-      "title": "Ulta Locations - Find an Ulta Near You | Ulta Beauty",
-      "url": "https://www.ulta.com/stores/directory",
-      "summary": "Find directions, store hours, phone numbers & beauty brands carried at an Ulta Beauty store near you. Find your Ulta store location by entering your city & state or zip code.",
+      "id": "7659e8b3abef0a7f",
+      "title": "Belmont Market Weekly Ads & Flyers | WeeklyAd.io",
+      "url": "https://www.weeklyad.io/belmont-market",
+      "summary": "View the Belmont Market weekly ad for fresh produce, local meats, and grocery savings at our Wakefield, Rhode Island store. Plan your shopping list today.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -3252,12 +983,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "df1b01d0dad05ba0",
-      "title": "Use an eSIM to get a cellular data connection on your Windows PC",
-      "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/use-an-esim-to-get-a-cellular-data-connection-on-your-windows-pc",
-      "summary": "Learn how to use an eSIM to connect your Windows PC to the internet over a cellular data connection.",
+      "id": "d386782cb5023552",
+      "title": "Belmont Market | Wakefield RI - Facebook",
+      "url": "https://www.facebook.com/belmontmarketri/",
+      "summary": "The evening brought together some of the best restaurants, chefs and culinary businesses from across Southern Rhode Island for an incredible night of food, drinks and community.",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71f8b3e917a1fcab",
+      "title": "Belmont Market, 600 Kingstown Road, Wakefield, RI (2026)",
+      "url": "https://www.findglocal.com/US/Wakefield/152072028162127/Belmont-Market",
+      "summary": "Belmont Market is proud to be a sponsor of Bark on the Beach happening this Sunday! 🐾 Join Animal Rescue Rhode Island on Sunday, September 13th from 9:30–11:30 AM at Narragansett Town Beach for a fun morning supporting dogs like Prairie who are still waiting for their second chance. 💙",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -3278,12 +1035,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6ab465e5465f9930",
-      "title": "Using Microsoft Launcher on Android",
-      "url": "https://support.microsoft.com/en-us/office/using-microsoft-launcher-on-android",
-      "summary": "Why did my lock screen wallpaper revert to the default Huawei wallpaper? If you update Huawei while running Android 10.0.0.182, the lock screen wallpaper reverts to Huawei's default. Simply reset your wallpaper in Launcher settings and that should resolve the problem moving forward. Widget Why are my widgets not working properly on my MI device?",
+      "id": "348105e3904b0bc6",
+      "title": "Discover Belmont Market: A Culinary Gem in Wakefield, Rhode Island",
+      "url": "https://evendo.com/locations/rhode-island/narragansett-beach/shop/belmont-market",
+      "summary": "Experience the best of local flavors at Belmont Market in Wakefield, Rhode Island, featuring organic produce, gourmet meats, and artisan baked goods.",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -3304,12 +1061,376 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e0a739c0a008dc56",
-      "title": "Welcome to Ulta!",
-      "url": "https://beautyservices.ulta.com/appointment/",
-      "summary": "Book beauty services at Ulta Beauty online for hair, skin, and eyebrow care in one convenient location.",
+      "id": "16d5791c7aadeb14",
+      "title": "Google Translate",
+      "url": "https://translate.google.pl/m?etc",
+      "summary": "Google Translate",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "111de6f754947a0b",
+      "title": "Island Hop Beer & Spirits Fest Amelia Island: Oct 2026",
+      "url": "https://jaxhumor.com/blogs/jacksonville-events/island-hop-craft-beer-fest-2026",
+      "summary": "The Island Hop Craft Beer and Spirits Fest hits Amelia Island Oct 3, 2026 with live music, food trucks, and a dog park. What to know.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1ffb9906f7db27a4",
+      "title": "Island Hop Craft Beer & Spirits Fest - Amelia Island",
+      "url": "https://www.ameliaisland.com/festivals-events/island-hop-craft-beer-festival/",
+      "summary": "Island Hop Craft Beer & Spirits Fest Presenting Sponsor First Love Brewing Corporate Sponsor IQ Fiber Saturday, October 3, 2026 Central Park VIP Admission at 12PM | General Admission at 1pm This year’s event promises to be the best yet, featuring a tasting experience that now includes craft spirits, in addition to local and regional beer and ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f882e17168174744",
+      "title": "Island Hop Craft Beer & Spirits Fest - Amelia Island",
+      "url": "https://aic.uat.starmarkcloud.com/festivals-events/island-hop-craft-beer-festival/",
+      "summary": "The Island Hop Craft Beer and Spirits Fest helps fund vital programs that preserve the charm of Fernandina Beach’s historic district and support its business community. Breweries, wineries, and now distilleries from across Northeast Florida and Southeast Georgia have been invited to participate.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "674c5bb212e9bf94",
+      "title": "Island Hop Craft Beer & Spirits Festival 2026 — Fernandina ...",
+      "url": "https://www.incomfortliving.com/guide/events/island-hop-craft-beer-spirits-festival-2026",
+      "summary": "The Island Hop Craft Beer & Spirits Festival takes over Central Park in the heart of historic downtown Fernandina Beach on Saturday, October 3, 2026 — a tasting event covering craft spirits alongside local and regional beer and wine. Music and tastings Local favorites The Honey Badgers and Andria Shinn and the Loyal Souls perform throughout the day while attendees work through the pour list ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c342d1053e75863",
+      "title": "Island Hop Craft Beer Festival 2026 - Amelia Island",
+      "url": "https://www.ameliaisland.com/activity/island-hop-craft-beer-festival-3/",
+      "summary": "« All Activities Island Hop Craft Beer Festival 2026 Join us in historic downtown Fernandina Beach for one of Northeast Florida’s favorite craft beverage and spirits festivals, bringing together breweries, distilleries, live music, and more for an unforgettable day of island vibes and community fun.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1115e129d98dc12e",
+      "title": "Island Hop | Fernandina Main St",
+      "url": "https://www.fernandinamainstreet.com/islandhopcraftbeerfest",
+      "summary": "Island Hop Craft Beer & Spirits Festival! October 3, 2026 Join us in historic downtown Fernandina Beach for one of Northeast Florida’s favorite craft beverage and spirits festivals, bringing together breweries, distilleries, live music, and more for an unforgettable day of island vibes and community fun.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "605f790e0c818c9b",
+      "title": "Location - Belmont Market",
+      "url": "https://www.belmontmarket.com/location/",
+      "summary": "Belmont Market. Website by DW Green Company.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "363b372f8c8b1189",
+      "title": "Mahou Shoujo no Majo Saiban",
+      "url": "https://magical-girl-mahou-shoujo.fandom.com/wiki/Mahou_Shoujo_no_Majo_Saiban",
+      "summary": "Japanese Title: 魔法少女ノ魔女裁判. English Title: Magical Girl Witch Trials. \"There is a girl among you who has become a witch.\" On the morning she was supposed to start her first year of high school, Ema woke up inside a dimly lit cage.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "34027729a2c0b689",
+      "title": "Mahou Shoujo no Majo Saiban - MangaDex",
+      "url": "https://mangadex.org/title/f5218b50-8846-44ec-b4d5-fba2ae2fff54/maho-shojo-no-majo-saiban",
+      "summary": "Imprisoned within a remote island prison mansion for a crime she doesn't remember committing, a confused Emma receives a declaration from a single owl: “You have been identified as a potential witch — one who brings harm to this world.” “You will spend the rest of your life here as a prisoner.”",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "78ab1637f1118256",
+      "title": "Mahou Shoujo no Majo Saiban | vndb",
+      "url": "https://vndb.org/v50283",
+      "summary": "Imprisoned within a remote island prison mansion for a crime she doesn't remember committing, a confused Ema receives a declaration from a single owl: \"You have been identified as a potential witch — one who brings harm to this world.\" \"You will spend the rest of your life here as a prisoner.\"",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e0807299ce7aa2c6",
+      "title": "Save 20% on Magical Girl Witch Trials on Steam",
+      "url": "https://store.steampowered.com/app/3101040/Magical_Girl_Witch_Trials/",
+      "summary": "Thirteen girls awaken, only to find themselves in a prison. What awaits them: a Witch Trial. Help them prepare for the trial by exploring the prison in order to find the witch hidden amongst them. Find the witch, learn what kind of magic she holds, dispel the lies, and prepare for the execution. Accessibility Features (4)?",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7c3edab00af3c4a3",
+      "title": "Tłumacz Google",
+      "url": "https://translate.google.pl/",
+      "summary": "Bezpłatna usługa Google, umożliwiająca szybkie tłumaczenie słów, zwrotów i stron internetowych w języku angielskim i ponad 100 innych językach.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be22a2fc61bb337e",
+      "title": "Tłumacz Google",
+      "url": "https://translate.google.pl/details",
+      "summary": "Tłumacz Google umożliwia szybkie tłumaczenie tekstów na różne języki, wspierając komunikację i zrozumienie.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e829c4df15bba6c0",
+      "title": "魔法少女ノ魔女裁判 公式",
+      "url": "https://manosaba.com/",
+      "summary": "「この中に、魔女になった少女がいる」――魔法少女ノ魔女裁判は、Acaciaがお届けする魔法議論ミステリゲームです。",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
