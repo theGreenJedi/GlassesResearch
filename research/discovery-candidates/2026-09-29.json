@@ -1,41 +1,38 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-29T19:12:54.140932+00:00",
-  "candidate_count": 51,
-  "classifier_irrelevant_count": 47,
+  "discovered_utc": "2026-09-29T23:11:36.142695+00:00",
+  "candidate_count": 83,
+  "classifier_irrelevant_count": 68,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 1,
-    "broad_web": 46,
-    "developer": 9
+    "adjacent": 15,
+    "broad_web": 58,
+    "developer": 10
   },
   "relationship_counts": {
-    "direct": 3,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 1,
+    "adjacent": 15,
     "speculative": 0,
-    "irrelevant": 47
+    "irrelevant": 68
   },
   "type_counts": {
-    "model": 1,
-    "review": 1,
-    "video": 5,
-    "news": 25,
-    "tool": 8,
-    "sdk": 6,
-    "policy": 2,
-    "retail": 8,
-    "teardown": 1,
-    "community": 3,
-    "rumor": 1
+    "model": 10,
+    "review": 3,
+    "news": 53,
+    "research": 1,
+    "tool": 13,
+    "sdk": 10,
+    "policy": 1,
+    "community": 2
   },
   "routing_counts": {
-    "adjacent_radar": 1,
-    "development_hacking": 1,
-    "reject_noise": 47,
+    "adjacent_radar": 15,
+    "community_evidence_review": 1,
+    "development_hacking": 2,
+    "reject_noise": 68,
     "report_card_evidence": 1,
-    "research_news_review": 4,
-    "retail_rebrand_review": 2
+    "research_news_review": 15
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -46,99 +43,131 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
   "candidates": [
     {
-      "id": "b6569b9e18737966",
-      "title": "XREAL xbx a01+ Review - XR Glasses That Feel Unreal For The Price Tag",
-      "url": "https://steamdeckhq.com/news/xreal-xbx-a01-review/",
-      "summary": "XREAL's xbx a01+ AR glasses are an incredible way to enhance playing games on the Steam Deck, especially for the $299 price tag.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
+      "id": "db1d18d45e3c0364",
+      "title": "Online Banking Help - Wells Fargo",
+      "url": "https://www.wellsfargo.com/help/online-banking/",
+      "summary": "Sign on to Wells Fargo Online ®, go to Transfer & Pay, and select Wire Money to get started. Add your recipient, select funding account and amount (along with any additional details required for certain countries). Review and send your payment. You must have a current residence in the United States to send a Digital Wire.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
       "keyword_hits": [
         "review"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "review",
-        "retail"
+        "review"
       ],
       "primary_type": "review",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
-        "retail_rebrand_review"
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c1a31ed7b9ab9f44",
-      "title": "ActiveLook - LinkedIn",
-      "url": "https://www.linkedin.com/showcase/activelook",
-      "summary": "ActiveLook is a breakthrough smartglasses technology platform that provides highly compact head-up display capabilities to the eyeware industry and to the application developers.",
-      "discovery_channel": "broad_web+developer",
-      "query": "ActiveLook smart glasses; ActiveLook API BLE",
+      "id": "0d6cb6817d4df927",
+      "title": "Acumatica Implementation | Sub Specialty Contractor",
+      "url": "https://cafe.cfma.org/discussion/acumatica-implementation-1",
+      "summary": "Curious how the experience has been for contractors that migrated to Acumatica, from implementation to going live, inhouse payroll, report creation etc. We are",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3ddf776f2ed06777",
+      "title": "ADP | Gr. Cinn., Cinn. OH - cafe.cfma.org",
+      "url": "https://cafe.cfma.org/discussion/adp",
+      "summary": "We are currently evaluating ADP as a potential payroll and HRIS provider and would appreciate hearing from anyone with direct experience. Specifically, we're interested in your feedback on the following areas: Quality and responsiveness of customer service Functionality and support on the HR side Efficiency and reliability of payroll processing",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "588e1c36892dea10",
+      "title": "CFMA’s Newest Elite Partner: Miter",
+      "url": "https://cafe.cfma.org/blogs/connor-watumull/2026/02/23/cfmas-newest-elite-partner-miter",
+      "summary": "Miter brings payroll, HR, time tracking, and expenses into a single platform built for construction — so finance teams can spend less time wrestling with disconnected systems and more time on what matters most: driving strategic decisions and strengthening their organizations.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
-        "development_hacking"
+        "development_hacking",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smartglasses",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5bb6c45ff1edf805",
-      "title": "xbx a01+ AR Glasses, by XREAL - 62g Ultralight, 147 ... - Amazon",
-      "url": "https://www.amazon.com/XREAL-Glasses-Lightest-HDR10-Display-Virtual/dp/B0H44Y6F33",
-      "summary": "Amazon.com: xbx a01+ AR Glasses, by XREAL - 62g Ultralight, 147” Portable Big-Screen Display for Movies & Gaming, Bright 1600-nit HDR10, USB-C DP for iPhone, iPad, Android, Steam Deck, ROG & PC : Health & Household About this item YOUR PRIVATE 147” BIG SCREEN, ANYWHERE — Plug the a01+ into your phone, tablet, handheld, or laptop and a giant 147” screen appears in front of you—for ...",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "direct",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "74b13553843aa24b",
-      "title": "Movie Showtimes and Theaters near Kingsville, TX | Fandango",
-      "url": "https://www.fandango.com/kingsville_tx_movietimes",
-      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Kingsville, TX.",
+      "id": "aac6c62ee9d30c87",
+      "title": "Cities Near Me - Moreno Valley, California | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Moreno+Valley,+CA",
+      "summary": "Find the top 15 cities, towns, and suburbs near Moreno Valley, CA, like Loma Linda and Grand Terrace, and explore the surrounding area for a day trip.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -162,27 +191,324 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d4a3c58789f5b4f6",
-      "title": "GitHub - ActiveLook/Activelook-API-Documentation: Activelook API ...",
-      "url": "https://github.com/ActiveLook/Activelook-API-Documentation",
-      "summary": "ActiveLook® is a wireless micro display technology platform designed to be embedded in \"regular\" glasses and to provide key visual information to end users.",
-      "discovery_channel": "broad_web+developer",
-      "query": "ActiveLook smart glasses; ActiveLook API BLE",
+      "id": "e3a8e16dcffea307",
+      "title": "Cities Nearby Moreno Valley, California, United States",
+      "url": "https://www.thecitiesnow.com/united_states/california/moreno_valley",
+      "summary": "Find five hundred cities near Moreno Valley, California, United States from closest to farthest by distance. Distances from Moreno Valley to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d3a57448d50e7e7",
+      "title": "Client Login - Wells Fargo Advisors",
+      "url": "https://www.wellsfargoadvisors.com/ONLINE-ACCESS/SIGNON.HTM",
+      "summary": "Wells Fargo Advisors secure sign in to view your Wells Fargo Advisors Accounts. Use your Wells Fargo username and password.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2cbead3a19d4a6c1",
+      "title": "Harkins Theatres | Moreno Valley",
+      "url": "https://www.harkins.com/theatres/moreno-valley",
+      "summary": "With mobile ordering at Harkins Theatres, you can reserve your tickets and order your food and drinks to be ready when you arrive. Download the Harkins mobile app or order food and drinks when reserving your seats on Harkins.com. Feel good about treating yourself to Harkins delicious, award-winning popcorn!",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c7aa373aefa20ef1",
+      "title": "meaning - What does \"triage an issue\" mean? - English Language & Usage ...",
+      "url": "https://english.stackexchange.com/questions/38642/what-does-triage-an-issue-mean",
+      "summary": "\"Triage\" also has this meaning: the determination of priorities for action in an emergency. So, if I was to triage an issue, I would just determine how important this issue was, whether it is an urgent matter, then on the basis of my diagnosis, put this issue on a list, based on its importance.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ff956c64c1852c0a",
+      "title": "Movie Showtimes and Theaters near Moreno Valley, CA",
+      "url": "https://www.fandango.com/moreno-valley_ca_movietimes",
+      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Moreno Valley, CA.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4990c38759a22935",
+      "title": "Sage 300 CRE and ADP Payroll Integration | Software Hardware",
+      "url": "https://cafe.cfma.org/discussion/sage-300-cre-and-adp-payroll-integration",
+      "summary": "Mount Juliet TN (615) 351-4953 Attachment(s) ADP Payroll Sage 300 CRE Integration.pdf 271 KB1 version × New Best Answer This thread already has a best answer. Would you like to mark this message as the new best answer?",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d6e690e44e0057c4",
+      "title": "Sage 300 CRE and ADP Payroll Integration | Sub Specialty Contractor",
+      "url": "https://cafe.cfma.org/discussion/sage-300-cre-and-adp-payroll-integration-1",
+      "summary": "ADP had limitations on data fields so depending upon the outcome desired, you may need to look at another, more robust - payroll provider for Sage 300 integration.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f2827b1e33c2799",
+      "title": "Users - cafe.cfma.org",
+      "url": "https://cafe.cfma.org/discussion/re-webinar-event-recordings-1",
+      "summary": "To unlock your member benefits, shop, and gain access to exclusive content, please loginto your CFMA account. Don't have a CFMA account? Click hereto create an account.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "27edec81c47286a9",
+      "title": "Viewpoint Spectrum payroll to ADP integration | Iowa, Des Moines, IA - CFMA",
+      "url": "https://cafe.cfma.org/communities/community-home/digestviewer/viewthread?GroupId=649&MessageKey=d8355e13-93d1-4285-a17b-248b804382c7",
+      "summary": "As we evaluate both ADP and Ultimate Software they both recommend Contractor Central as the middleware to integrate payroll data back to Spectrum for posting to job cost, billing, and union / Davis Bacon reporting.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "686b7244a07b2480",
+      "title": "Wells Fargo Branch with ATM at 169 SW 8th St in Miami FL 33130 | Wells ...",
+      "url": "https://locations.wellsfargo.com/fl/miami/169-sw-8th-st",
+      "summary": "Most Wells Fargo branches accept walk-ins for everyday transactions. You can also schedule an appointment online or within the Wells Fargo Mobile® app1 to meet with a banker for assistance opening an account or for specialized services such as notary or wire transfer.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bec61c51b218e6a8",
+      "title": "Information for visitors",
+      "url": "https://www.nhmuseum.gr/en/about-us/information-for-visitors",
+      "summary": "March 25 - October 31: Monday – Sunday, 10:00-16:00. Groups can visit the museums during winter upon reservation. Tickets: Admission to the Museums is free on March 25, May 18, October 28. Closed on Easter Sunday.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a853ac8997f8b07b",
+      "title": "Macy's - Shop Fashion Clothing & Accessories - Official Site - Macys.com",
+      "url": "https://www.macys.com/",
+      "summary": "Shop your favorite brands all in one place at Macy’s for clothing, shoes, beauty & home. Enjoy free shipping options, fast pickup & today’s best deals.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [
-        "api",
-        "github"
+        "shipping"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "model"
       ],
-      "primary_type": "tool",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -192,12 +518,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d36722c83fd773e2",
-      "title": "Arnold Schwarzenegger Eye Color - wiki.rschooltoday",
-      "url": "https://wiki.rschooltoday.com/filedownload.ashx/HomePages/595/496/aL0D4K/ArnoldSchwarzeneggerEyeColor.pdf",
-      "summary": "Among the many details that shape his public image, one subtle yet striking feature stands out: his piercing green eyes. Far more than a cosmetic trait, his eye color weaves through themes of identity, perception, and even performance—rooted in both biology and cultural mythology.",
+      "id": "ce269796803b83fa",
+      "title": "National Historical Museum",
+      "url": "https://nhmuseum.gr/En/",
+      "summary": "The Anniversary Program of the National Historical Museum (NHM) entitled “ΕΠΑΝΑCYΣΤΑΣΗ ‘21” (Revolution ‘21 Reframed) aims to celebrate the 200th anniversary of the Greek Revolution.",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -219,12 +545,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e5c2eadf629dd45c",
-      "title": "Arnold Schwarzenegger Eye Color What images - Shutterstock",
-      "url": "https://www.shutterstock.com/search/arnold-schwarzenegger-eye-color-what",
-      "summary": "Find 85,834 Arnold Schwarzenegger Eye Color What stock images in HD and millions of other royalty-free stock photos, 3D objects, illustrations and vectors in the Shutterstock collection.",
+      "id": "8ec99bde3639a728",
+      "title": "National Historical Museum (Old Parliament House) Guide",
+      "url": "https://www.kupi.com/en/explore/greece/athens/national-historical-museum-old-parliament-house",
+      "summary": "Explore the National Historical Museum in the Old Parliament House. Discover Greek history, stunning architecture, and unique exhibits. Plan your visit today!",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -246,12 +572,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "836c2506831b9607",
-      "title": "Arnold Schwarzenegger: Bio, Height, Weight, Age, Measurements",
-      "url": "https://www.celebsfacts.com/arnold-schwarzenegger/",
-      "summary": "Arnold Schwarzenegger is an Austrian-American actor, film producer, screenwriter, director, and former politician and professional bodybuilder who served as the 38th Governor of California for two consecutive terms from 2003 to 2011.",
+      "id": "f931701036ddc328",
+      "title": "National Historical Museum - Athens Greece",
+      "url": "http://www.athens-greece.us/athens-museums/national-historical-museum/",
+      "summary": "Housed in the Old Parliament, building which was founded in 1835 and is an architectural jewel in the centre of Athens, the museum serves the purpose of collecting, saving and presenting relics and documentary evidence relating to modern history.",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -273,12 +599,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "047f98fea14e9316",
-      "title": "In promo posters for Jingle All The Way (1996) Arnold Schwarzenegger ...",
-      "url": "https://www.reddit.com/r/MovieMistakes/comments/gc2eiz/in_promo_posters_for_jingle_all_the_way_1996/",
-      "summary": "There's a couple promos with blue eyes, but most are brown eyed and on varying colour schemes. The fact that there's an inconsistency with not just the actor and characters eyes, but within multiple of their own promo pictures and posters, would definitely be a mistake. That's fair.",
+      "id": "b83d5ba3c73599ea",
+      "title": "National Historical Museum - Old Parliament House in Athens, Greece ...",
+      "url": "https://33travels.com/museums/national-historical-museum-old-parliament-house/",
+      "summary": "The National Historical Museum, located in the esteemed Old Parliament House, showcases a collection dedicated to modern Greek history, spanning from the fall of Constantinople in 1453 to World War II.",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -288,8 +614,7 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk",
-        "community"
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -301,10 +626,333 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6654714c62251058",
-      "title": "1966 lincoln continential - JLA FORUMS",
-      "url": "http://www.jlaforums.com/viewtopic.php?t=4672998",
-      "summary": "Antique Cars - How do I remove the power window motor from the drivers side door?",
+      "id": "07bf4f02de67b3be",
+      "title": "National Historical Museum Athens: Old Parliament Guide",
+      "url": "https://mygreecetours.org/national-historical-museum-athens/",
+      "summary": "The National Historical Museum in Athens, housed in the Old Parliament building, tells modern Greek history from the fall of Constantinople through the 1821 War of Independence.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da631d4189097789",
+      "title": "National Historical Museum | The Official Athens Guide",
+      "url": "https://www.thisisathens.org/museums/national-historic-museum",
+      "summary": "A museum of the history of modern Greece from the period of Ottoman rule to today.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f456d5c96baaa6ed",
+      "title": "National Historical Museum, Athens - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/National_Historical_Museum,_Athens",
+      "summary": "It is located in the Old Parliament House at Stadiou Street in Athens, which housed the Hellenic Parliament from 1875 until 1932. A branch of the National History Museum has been organized and operated there since 2001.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80923b2c5e0a9882",
+      "title": "Natural History Museum",
+      "url": "https://nhm.org/",
+      "summary": "Discover the wonders of our natural and cultural worlds through captivating exhibits like our renowned Dino Hall, ancient artifacts, blooming nature gardens, interactive learning labs, and more. Get news, stories, and videos that showcase the spectacular diversity of Los Angeles and beyond.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bba289fb1020aadc",
+      "title": "Nordstrom Online & in Store: Shoes, Jewelry, Clothing, Makeup, Dresses",
+      "url": "https://www.nordstrom.com/",
+      "summary": "Shop online for shoes, clothing, jewelry, dresses, makeup and more from top brands. Free shipping. Free returns. Exclusions apply.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "60487de58e23ef31",
+      "title": "Old Parliament House - National Historical Museum - Athens Attica",
+      "url": "https://athensattica.com/point/old-parliament-house-national-historical-museum/",
+      "summary": "The National Historical Museum has been permanently housed in the Old Parliament building on Stadiou Street (Kolokotronis Square) since 1962. It was founded in 1884 by the Historical and Ethnological Society of Greece, which began collecting historical material from its establishment in 1882.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0fd9911c1add4419",
+      "title": "Shop Women's Dresses & Clothing Online - Lulus",
+      "url": "https://www.lulus.com/",
+      "summary": "Shop Lulus for must-have dresses, tops, shoes and accessories. Curated collections, exclusive styles and new items added daily. Everyday free shipping.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5549692d248de4ce",
+      "title": "What is the difference between Verapamil (Calcium Channel Blocker ...",
+      "url": "https://www.droracle.ai/articles/45674/what-is-the-difference-between-verapamil-calcium-channel-blocker",
+      "summary": "Both Verapamil ER and SR formulations should be swallowed whole and not crushed or chewed, as this would destroy the release mechanism and potentially cause too much medication to be released at once, increasing the risk of side effects like low blood pressure, headache, or constipation.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "released"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "32aae7342898a586",
+      "title": "1800+ \"Renisha\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Renisha/+/",
+      "summary": "View the profiles of professionals named \"Renisha\" on LinkedIn. There are 1800+ professionals named \"Renisha\", who use LinkedIn to exchange information, ideas, and opportunities.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "58df5096fbb557bb",
+      "title": "21 Best Online Clothing Stores, According to Our Style Pros",
+      "url": "https://www.goodhousekeeping.com/what-to-buy/g71868202/best-online-clothing-stores-reviews/",
+      "summary": "Our fashion pros tested top online clothing stores for women and men, including affordable online clothing brands like Uniqlo and Gap, and high-quality brands like Mint Velvet and Aritzia",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "89f0c6b5e805d175",
+      "title": "3 \"Renisha Woods\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Renisha/Woods+",
+      "summary": "View the profiles of professionals named \"Renisha Woods\" on LinkedIn. There are 3 professionals named \"Renisha Woods\", who use LinkedIn to exchange information,...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e7a11d2ecdadcba5",
+      "title": "90+ \"Regina Woods\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Regina/Woods",
+      "summary": "View the profiles of professionals named \"Regina Woods\" on LinkedIn. There are 90+ professionals named \"Regina Woods\", who use LinkedIn to exchange information, ideas, and opportunities.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aa9ce7dcb2db5abd",
+      "title": "About Lions Gate Hotel | Historic Hotel in Sacramento, CA",
+      "url": "https://www.lionsgatehotel.com/about.htm",
+      "summary": "Discover Lions Gate Hotel-set on a former Air Force base with historic charm, modern amenities, and a peaceful setting near Sacramento.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -327,38 +975,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "84176c3f8251f357",
-      "title": "50 Live Traffic Cameras in Cincinnati, Ohio (2026) - Watch Live ...",
-      "url": "https://opencctv.org/cameras/united-states/ohio/cincinnati",
-      "summary": "Watch 50 live traffic cameras in Cincinnati, Ohio, United States. Live webcams updated in real time - traffic, weather, beach cams, and more.",
+      "id": "719931ac55c0358f",
+      "title": "au.pinterest.com",
+      "url": "https://au.pinterest.com/login/",
+      "summary": "turn on JavaScript.",
       "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "27a582891cc0389a",
-      "title": "ActiveLook",
-      "url": "https://shop.activelook.net/",
-      "summary": "ActiveLook is a head-up display for eyewear that provides just the information you need, in real time, right in your field of view. Improve your performance, focus on what matters.",
-      "discovery_channel": "broad_web+developer",
-      "query": "ActiveLook smart glasses; ActiveLook API BLE",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -379,38 +1001,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "78050ebc849bbf36",
-      "title": "Activelook - YouTube",
-      "url": "https://www.youtube.com/@activelook7232",
-      "summary": "ActiveLook is a true heads-up display technology for sports eyewear that provides the information you need, in real time, at a glance.",
-      "discovery_channel": "broad_web+developer",
-      "query": "ActiveLook smart glasses; ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3c3e93fabc202335",
-      "title": "Activelook • Camel Active Cyprus • Official website",
-      "url": "https://activelook.com.cy/",
-      "summary": "Camel active clothes are contemporary, qualitative and of high functionality, with a casual style. Camel Active typifies casual and modern clothing like jackets, trousers, knitwear, shirts and T-shirts as well as accessories, shoes and bags.",
-      "discovery_channel": "broad_web+developer",
-      "query": "ActiveLook smart glasses; ActiveLook API BLE",
+      "id": "be128d86a4c51377",
+      "title": "boohoo | Womens and Mens Clothes | Shop Online Fashion",
+      "url": "https://us.boohoo.com/",
+      "summary": "Shop boohoo's range of women's and men's clothing for the latest fashion pieces you need to be adding-to-basket, with 100s of new styles landing every day!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -431,10 +1027,36 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "da28464ef147539b",
-      "title": "Best Toyota Dealerships in Seattle, Ranked by CarEdge Data",
-      "url": "https://caredge.com/guides/best-toyota-dealerships-seattle",
-      "summary": "This is the CarEdge Dealer Transparency Index ranking for Toyota dealers in the Seattle metro. We graded every Toyota dealer in the area with enough verified out-the-door quotes to score with confidence — using real PDFs, emails, and signed deals, not Google star ratings.",
+      "id": "0ff2a75bca3f8051",
+      "title": "Bridget, I’m a little confused regarding verapamil sr caps vs verapamil ...",
+      "url": "https://www.justanswer.com/pharmacy/bzyu5-bridget-i-m-little-confused-regarding-verapamil-sr-caps.html",
+      "summary": "Verapamil SR (sustained-release) capsules typically require twice-daily dosing, while verapamil ER (extended-release) tablets are designed for once-daily use. Both forms release medication gradually but differ in duration and timing.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "85a6de8100cfc254",
+      "title": "Chase",
+      "url": "https://secure07b.chase.com/web/auth/dashboard",
+      "summary": "Chase",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -457,10 +1079,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "eb4ac6e54b95bd1f",
-      "title": "Burien Toyota - New & Used Toyota Dealership in Burien Washington",
-      "url": "https://www.burientoyota.com/",
-      "summary": "Discover great deals on new & used Toyota vehicles at Burien Toyota. Serving the Seattle area with expert service, financing, & large inventory! Stop in today!",
+      "id": "b5d4bb1a79807208",
+      "title": "Chase Account login",
+      "url": "https://secure01a.chase.com/web/auth/logonbox",
+      "summary": "Chase Account login",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -483,90 +1105,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "40114a91d8b6005f",
-      "title": "Dejero - EnGo 3 - Product Brief",
-      "url": "https://www.dejero.com/wp-content/uploads/2025/08/Dejero-EnGo3-EN-Web.pdf",
-      "summary": "Unmatched 5G performance allows you to go live and transfer files from anywhere. Reliable, fast, and easy to use, EnGo 3 can harness the power of 5G networks to offer unmatched connectivity to mobile video professionals. It efficiently encodes and securely transmits live video from the field with superior picture quality. Use the integrated GateWay mode to maximize performance and productivity ...",
+      "id": "5066105eff298f83",
+      "title": "Chase Account login",
+      "url": "https://secure08ea.chase.com/web/auth/logonbox",
+      "summary": "Forgot username/password? Not Enrolled? Sign Up Now.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8bf9584dd3247556",
-      "title": "ELECTRIC ICE RESURFACER - engo.it",
-      "url": "https://www.engo.it/media/056aebc1-cbc7-441c-9086-cde1c82d68db/20240703081502/engo-technicaldata-icedingo-eng.pdf",
-      "summary": "LEGAL NOTICE Editor: engo Ltd, Via Forch 9, 39040 Varna (BZ) Italy Pictures: Archive Engo Ltd, photographer: Christian Vorhofer, Renderings: Christof Schiner 07/2024",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "672437bcf051182b",
-      "title": "ENGO 265 - ipinternational.net",
-      "url": "https://www.ipinternational.net/wp-content/uploads/2026/06/ENGO-265.pdf",
-      "summary": "Reliable, simple to use, and built tough for field use, EnGo 265 is designed for mobile video professionals who demand high performance. EnGo 265 efficiently encodes and securely transmits high-quality live video from the field while also empowering mobile teams to work more efficiently with resilient, high-bandwidth, wireless internet access. Featuring Dejero's renowned Smart Blending ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "945acb53c46dfd62",
-      "title": "EnGo illumo TDS",
-      "url": "https://www.engoplanet.com/wp-content/uploads/2023/11/EnGo-illumo-TDS.pdf",
-      "summary": "EnGo illumo COMPACT AND POWERFUL Environmental Sensors Remote Management System Easy Installation & Maintenance",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -587,166 +1131,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5ef51dddde6ca6ee",
-      "title": "ENGO Winches & Accessories Users Manual - CARiD",
-      "url": "https://images.carid.com/engo/items/pdf/77-09000-users-manual.pdf",
-      "summary": "While standing aside the pulling path, press the push button on the Switch Assy (5) to the desired function. Wait until the motor stops before reversing directions.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fd7406b2d375dcc2",
-      "title": "GATE Installation",
-      "url": "https://engocontrols.com/wp-content/uploads/2024/07/EGATE-PRO_QG-A3_ENG-v1.3.pdf",
-      "summary": "Engo Smart users. It is very easy to configure the network and the communication method can be chosen bet een Wi-Fi or LAN. An external antenna increases the range which ensures stable communication even in larg",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "501360234069840c",
-      "title": "Green bits in the ice maker | General Repairs & Maintenance",
-      "url": "https://www.meridianyachtowners.com/threads/green-bits-in-the-ice-maker.14279/",
-      "summary": "I was going to replace my uline that crapped out but decided it was easier to just install the icemaker that came with our new refrigerator in its freezer and just store things in the uline. The cooling part of the Uline failed while we left frozen meat in it when we left the boat in Maryland for a few weeks on our trip from NY to Miami.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2af1fbc858fc2a7a",
-      "title": "Home > ENGO > ENGO E20i Series Wi-Fi Wireless Internet ... - Manuals+",
-      "url": "https://manuals.plus/engo/e20i-series-wi-fi-wireless-internet-thermostat-manual.pdf",
-      "summary": "The built-in Wi-Fi module enables easy and quick configuration of the device in the ENGO Smart mobile application. The controller can be shared with many users, has a scheduling function and a PIN lock. Factory paired and ready to work.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ead62e2d8cf5cced",
-      "title": "How to cycle ULine Icemaker? | General Repairs & Maintenance",
-      "url": "https://www.meridianyachtowners.com/threads/how-to-cycle-uline-icemaker.4039/",
-      "summary": "I have a Uline ULN-WH95TP-03 icemaker installed on my 2005 Meridian 408. I had it serviced about a year ago and it was fully operational, but for some reason it has now ceased to make ice again. It appears to have stopped putting water into the tray. Water supply otherwise appears OK...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1bf3e1395a2a650f",
-      "title": "icemaker | Meridian Yacht Owners Forum",
-      "url": "https://www.meridianyachtowners.com/tags/icemaker/",
-      "summary": "I have a Uline ULN-WH95TP-03 icemaker installed on my 2005 Meridian 408. I had it serviced about a year ago and it was fully operational, but for some reason it has now ceased to make ice again.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c9e7cafe5c0d08d0",
-      "title": "Login for g mail account - Gmail Community - Google Help",
-      "url": "https://support.google.com/mail/thread/448098181/login-for-g-mail-account?hl=en",
-      "summary": "Without registered recovery options or access to active/working recovery phone or email address and other verification details such as back up codes, last used password, most likely (almost zero chance) your account can not be recovered.",
+      "id": "8f5e236858eaa25c",
+      "title": "Craft Ideas (craft_ideas) - Profile - Pinterest",
+      "url": "https://www.pinterest.com/craft_ideas/",
+      "summary": "Craft Ideas | Whether you need to make a quick gift, love to decorate your home, or want to learn a new creative technique, Craft Ideas is your source for inspiration!",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -757,9 +1145,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -769,12 +1157,402 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "abd355d667c1df9f",
-      "title": "Login ke Gmail - Komputer - Bantuan Gmail - Google Help",
-      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
-      "summary": "Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel atau tablet Anda. Setelah Anda login, buka kotak masuk Anda untuk memeriksa email Anda.",
+      "id": "cc4a542cae5512dd",
+      "title": "Credit Card Resources, Login & Customer Service | Chase",
+      "url": "https://www.chase.com/personal/credit-cards/card-resource-center",
+      "summary": "Find online tools and guides to help pay your Chase credit card bill, setup automatic payments, login to your account and more.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2dc39e9122fea8c8",
+      "title": "Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.com",
+      "url": "https://www.chase.com/",
+      "summary": "Chase online lets you manage your Chase accounts, view statements, monitor activity, pay bills or transfer funds securely from one central place. To learn more, visit the Banking Education Center.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9b45ea7e96066ce8",
+      "title": "Discover 900+ EVERYTHING and landscape architect ideas in 2026 - Pinterest",
+      "url": "https://www.pinterest.com/maryannrizzo/everything/",
+      "summary": "From landscape architect to house interior decor, find what you're looking for on Pinterest!",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1fe53ea21ea471a1",
+      "title": "Enroll in Chase Online Banking | Chase",
+      "url": "https://www.chase.com/digital/online-banking",
+      "summary": "Chase Online Banking transformed the banking experience so you can bank your way. Get started with convenient and secure banking now.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d3b8f9f0e1196dd",
+      "title": "H&M | Online Fashion, Homeware & Kids Clothes | H&M US",
+      "url": "https://www2.hm.com/en_us/index.html",
+      "summary": "H&M is your shopping destination for fashion, home, beauty, kids' clothes and more. Browse the latest collections and find quality pieces at affordable prices.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "005c3bd53e8da74b",
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://gb.linkedin.com/",
+      "summary": "Build and engage with your professional network. Access knowledge, insights and opportunities.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5adf3ff7a7d35919",
+      "title": "Lion Gate Hotel | Boutique Hotel in Saranda",
+      "url": "https://liongatehotel.com/",
+      "summary": "From compact elegance to expansive sea-view suites, every space at Lion Gate Hotel blends Scandinavian-inspired interiors, premium bedding, and thoughtful amenities to create a stay that feels effortless and restorative.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e7d29255ca24fc64",
+      "title": "Lions Gate Hotel - 3410 Westover St - Hotels-Rates.com",
+      "url": "https://www.hotels-rates.com/hotel/us-ca-sacramento-127793.html",
+      "summary": "The hotel restaurant, The O' Club, serves breakfast, lunch and dinner daily, as well as, provide room service. Just some of the many guest amenities you will find include: business center, laundry facility, outdoor pool and special privileges at nearby California Family fitness.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3e9840b0f8712551",
+      "title": "Lions Gate Hotel - Check Reviews 2026 - Expedia",
+      "url": "https://www.expedia.com/Sacramento-Hotels-Lions-Gate-Hotel.h692819.Hotel-Information",
+      "summary": "The Lions Gate Hotel brings a quiet, tree-lined feel to the heart of McClellan Business Park, set among restored historic buildings with a welcoming, relaxing atmosphere.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f6a16c8eb8136f16",
+      "title": "Lions Gate Hotel - Hotels.com",
+      "url": "https://www.hotels.com/ho196010/lions-gate-hotel-mcclellan-united-states-of-america/",
+      "summary": "We had a very nice stay at lions gate as we were visiting Sacramento and nearby areas. It’s a very comfortable stay and quite different setup than regular hotel.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d8f6db38116e8a5",
+      "title": "LIONS GATE HOTEL - Updated 2026 Reviews (McClellan Park, CA) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g12713586-d235398-Reviews-Lions_Gate_Hotel-McClellan_Park_California.html",
+      "summary": "Book Lions Gate Hotel, McClellan Park on Tripadvisor: See 467 traveler reviews, 208 candid photos, and great deals for Lions Gate Hotel, ranked #1 of 1 hotel in McClellan Park and rated 3 of 5 at Tripadvisor.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0c34d1c6771d94df",
+      "title": "LIONS GATE HOTEL - Updated September 2026 - Yelp",
+      "url": "https://www.yelp.com/biz/lions-gate-hotel-mcclellan-park",
+      "summary": "Deposit required upon check in? I'll be book through Wyndham/lions gate directly, not a third party.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2de09f63d7a1e2fa",
+      "title": "Lions Gate Hotel | Sacramento CA - Facebook",
+      "url": "https://www.facebook.com/LionsGateHotel/",
+      "summary": "Everything you need for your next Sacramento stay. 🛏️ Our Two Bedroom Suite at Lions Gate Hotel, located in the West Lodge, offers a spacious layout with two queen-sized beds, a fully equipped kitchen, a separate living area, and a dining space.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a95ae317b57d42fb",
+      "title": "Lions Gate Hotel, Sacramento (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/us/lions-gate-and-conference-center.html",
+      "summary": "Located on the edge of McClellan Air Force Base, this California hotel features an on-site restaurant, lounge and outdoor pool. Its spacious rooms offer a flat-screen TV and free Wi-Fi.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e02cc62ca8bbbe9e",
+      "title": "Men's & Women's Clothing - Express",
+      "url": "https://www.express.com/",
+      "summary": "Real inspo from everyday style icons. What to wear, how to style it and where to take it. © 2026 Express. All rights reserved.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c90d8191d7b55a7e",
+      "title": "Online Bill Pay | Personal Banking | Chase",
+      "url": "https://www.chase.com/digital/online-bill-pay",
+      "summary": "Sign in to Chase Online℠ or the Chase Mobile ® app and choose “Pay bills” then “Schedule payment” in the navigation menu. Choose your payee, enter the amount, “Pay from” account and “Send on” or “Deliver by” date, then verify your details and submit.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -795,62 +1573,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1fbc126443ddab41",
-      "title": "Madison Used Car Dealer | Carlock Volkswagen of North Nashville",
-      "url": "https://www.volkswagenofnorthnashville.com/used-inventory/index.htm",
-      "summary": "If you are in the market for a used vehicle in the Madison area, then you've found the right dealership. Browse our inventory and come on in for a test drive.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "87374268e7b207cb",
-      "title": "New and Used Volkswagen Dealer Madison | Carlock Volkswagen of North ...",
-      "url": "https://www.volkswagenofnorthnashville.com/",
-      "summary": "Visit Carlock Volkswagen of North Nashville for a variety of new and used cars by Volkswagen in the Madison area. Our Volkswagen dealership, serving Nashville TN, Hendersonville TN and Gallatin TN, is ready to assist you!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2581c205c8dd2bac",
-      "title": "New Cars for Sale in Seattle, WA | New Car Dealer ... - Toyota of Seattle",
-      "url": "https://www.toyotaofseattle.com/inventory/new",
-      "summary": "Use your visit to compare Toyota options by seating position, cargo access, visibility, and the way each option fits your normal driving in Seattle, WA. You can also use our digital tools to value your trade or explore financing options before visiting the dealership.",
+      "id": "1ffe375425e011fc",
+      "title": "online-banking - Chase.com",
+      "url": "https://www.chase.com/content/chase-ux/en/structured/module/stickysubheader/digital/online-banking/_jcr_content",
+      "summary": "Sign in to your chase.com account and choose the account that you would like to see. The Account Activity page displays your payment and deposit information with your present and available balances at the top of the page.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -861,9 +1587,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "model"
       ],
-      "primary_type": "retail",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -873,10 +1599,348 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "28c7c2d95e8166ae",
-      "title": "News | KXAN Austin",
-      "url": "https://www.kxan.com/news/",
-      "summary": "Record quiet Atlantic for the 2026 hurricane season … DHS seeks federal charge against man shot by ICE … Why do we vote on Tuesdays? DHS seeks federal charge against man shot by ICE …",
+      "id": "471990301140f9fd",
+      "title": "personal - Chase.com",
+      "url": "https://www.chase.com/content/chase-ux/en/personal",
+      "summary": "Chase serves millions of people with a broad range of products. Chase onlinelets you manage your Chase accounts, view statements, monitor activity, pay bills or transfer funds securely from one central place.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1746deeb4c782024",
+      "title": "Pinterest (pinterest) - Profile | Pinterest",
+      "url": "https://www.pinterest.com/pinterest/",
+      "summary": "Pinterest | Find your reason to go offline. 📌",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8a8bb69bf29b1dce",
+      "title": "Pinterest - Nederland",
+      "url": "https://nl.pinterest.com/login/",
+      "summary": "Oh no! Pinterest doesn't work unless you turn on JavaScript.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d3e8590ea8ab823",
+      "title": "Pinterest Trends",
+      "url": "https://trends.pinterest.com/",
+      "summary": "Understand the trends your audience is searching. Discover trends based on interests, demographics, season and more using Pinterest Trends.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bccdd2d4c0e8f91b",
+      "title": "Renisha Woods - OneSource Virtual | LinkedIn",
+      "url": "https://www.linkedin.com/in/renisha-woods-a716134b",
+      "summary": "Process payroll as a 3rd party processor using the Workday product. Audit and Reconcile… · Experience: OneSource Virtual · Education: Liberty University · Location: Grand Prairie · 80 connections...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aab8bc71b6574c01",
+      "title": "Renisha Woods - Senior Property Manager at CHARLES TINI ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/renisha-woods-40312b321",
+      "summary": "View Renisha Woods’ profile on LinkedIn, a professional community of 1 billion members.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c4813bded7d5a546",
+      "title": "Renishaw - LinkedIn",
+      "url": "https://www.linkedin.com/company/renishaw",
+      "summary": "Renishaw | 110,502 followers on LinkedIn. Renishaw is one of the world's leading engineering and scientific technology companies, with expertise in precision measurement and healthcare.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d5242fc1e9962147",
+      "title": "Sacramento Hotel Near Downtown & Airport | Lions Gate Hotel",
+      "url": "https://www.lionsgatehotel.com/",
+      "summary": "Stay at Lions Gate Hotel in Sacramento, featuring spacious suites with kitchenettes, free breakfast, and easy access to downtown, SMF Airport, and top attractions.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da0a88fe721a76a8",
+      "title": "Sacramento Translation & Interpreting Services | ATIS",
+      "url": "https://americantranslate.com/sacramento-translation-services/",
+      "summary": "Local certified translation services in Sacramento with digital delivery, hard copies, and convenient support for immigration, legal, academic, and official documents.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "abf6dd936914ca8c",
+      "title": "Search for people on LinkedIn | LinkedIn Help",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a525054/searching-for-people-on-linkedin?lang=en",
+      "summary": "You can use the LinkedIn Search bar to look for people with similar interests, role models, and Top Voices to broaden your professional network and expertise. Search results are always...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5793adde4aa04ef4",
+      "title": "Select Your Country or Region - HUAWEI Global",
+      "url": "https://consumer.huawei.com/en/worldwide/",
+      "summary": "This icon represents that Huawei e-commerce is available in this country or region.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f3e46453b6605d9",
+      "title": "Shop Top Designer Clothing Brands Online at REVOLVE",
+      "url": "https://www.revolve.com/",
+      "summary": "REVOLVE is Home to the World's Most-Coveted Designer Apparel, Shoes & Accessories. Shop the Latest Trendy Styles with Afterpay. Buy Now and Pay in Just 4 Installments!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bb3fd0abcabc38d2",
+      "title": "Sign In - Chase",
+      "url": "https://customerservicing.chase.com/portal/Desktop.action?SMSESSION=NO",
+      "summary": "JPMorgan Chase & Co. Authentication is required Please login with your desktop password to continue Sign in",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e73bc83cef70aa50",
+      "title": "Temecula News, Breaking News in Temecula, CA - Patch",
+      "url": "https://patch.com/california/temecula",
+      "summary": "From a brand partner: From making new friends to trying new things, readers offer words of wisdom for students heading back to class. We specialize in helping small businesses to have a unique...",
       "discovery_channel": "broad_web",
       "query": "new smart glasses 2026",
       "source": "Bing web RSS",
@@ -899,12 +1963,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3729f7541629924a",
-      "title": "Saturn - JLA FORUMS",
-      "url": "http://www.jlaforums.com/viewforum.php?f=245",
-      "summary": "Discussion about all things having to do with Saturn Vehicles",
+      "id": "e9b827bcaf3f1b55",
+      "title": "The 24 Best Online Clothing Stores of 2026 - InStyle",
+      "url": "https://www.instyle.com/fashion/clothing/best-online-clothing-stores",
+      "summary": "The best online clothing stores, curated by editors and fashion experts, include retailers that offer affordable basic, trend-focused styles, and size-inclusive fashion.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -925,12 +1989,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cf9676380c8be3c6",
-      "title": "Slim All Models TDS 2023 - EnGoPlanet",
-      "url": "https://www.engoplanet.com/wp-content/uploads/2023/11/EnGo-Slim-TDS-2023.pdf",
-      "summary": "Over–charge Protection Over–discharge Protection Temperature Protection Balanced Function ↔ +158 °F",
+      "id": "df7081da591c0247",
+      "title": "TOP 10 BEST Camera Stores in Vallejo, CA - Updated 2025 - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Camera+Stores&find_loc=vallejo%2C+ca",
+      "summary": "What are people saying about photography stores & services in Vallejo, CA?",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -951,39 +2015,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2108bb1463a90fc0",
-      "title": "Smyrna Translation Services - RushTranslate",
-      "url": "https://rushtranslate.com/locations/tennessee/smyrna",
-      "summary": "RushTranslate provides certified translation services to customers in and around Smyrna, Tennessee. Our fully online platform makes it easy to get accurate, USCIS-accepted translations for immigration, education, legal, and business documents.",
+      "id": "3b5e080d542d089d",
+      "title": "Urban Outfitters: Men’s & Women’s Clothing, Homeware & Decor",
+      "url": "https://www.urbanoutfitters.com/",
+      "summary": "Shop men’s and women’s apparel, streetwear clothing, and stylish apartment décor and furniture at Urban Outfitters. Explore new arrivals today.",
       "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "policy"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dfcd814c4379faeb",
-      "title": "Technical data sheet - engo.it",
-      "url": "https://www.engo.it/media/cabd5d58-c6b2-4c69-991b-c9d05a305502/20240703085712/engo-technicaldata-icelion-eng.pdf",
-      "summary": "SAFETY SYSTEMS Quick-blade change system, developed by ENGO in 1997",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1004,115 +2041,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aa5d32ff4b21af4b",
-      "title": "Tower All Models TDS",
-      "url": "https://us.engoplanet.com/wp-content/uploads/2024/03/Tower-All-Models-TDS.pdf",
-      "summary": "*varies based on specific requirements **weight does not include pole and light head",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "77f1f4ca27ffbc75",
-      "title": "Toyota Cars for Sale in Seattle, WA | AutoNation",
-      "url": "https://www.autonation.com/cars-for-sale/toyota/seattle-wa",
-      "summary": "Search through our inventory of Toyota for sale near Seattle, WA and view pricing, photos, and more. Browse our selection of Toyotas that will fit your lifestyle and budget.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c1a338d42a9bc997",
-      "title": "Toyota For Sale In Seattle, WA - Carsforsale.com®",
-      "url": "https://www.carsforsale.com/toyota-for-sale-in-seattle-wa-C648118-L124186",
-      "summary": "Find 1,265 Toyota as low as $9,799 in Seattle, WA on Carsforsale.com®. Shop millions of cars from over 22,500 auto dealers and find the perfect vehicle.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "76665c033856e85a",
-      "title": "Toyota of Seattle in Seattle, WA | 213 Cars Available | Autotrader",
-      "url": "https://www.autotrader.com/car-dealers/seattle-wa/73726/toyota-of-seattle",
-      "summary": "View new, used and certified cars in stock. Get a free price quote, or learn more about Toyota of Seattle amenities and services.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6e67c2b12514592f",
-      "title": "Trump Dangles $5,000 Bribe for Voters to Keep GOP in Power",
-      "url": "https://nymag.com/intelligencer/article/donald-trump-5000-midterms-promise.html",
-      "summary": "Donald Trump’s vow to give voters $5,000 if Republicans keep Congress follows the president’s previous promise to give Americans money that never materialized.",
+      "id": "3e6fe42eddcad8d4",
+      "title": "Verapamil Alternatives Compared - Drugs.com",
+      "url": "https://www.drugs.com/compare/verapamil",
+      "summary": "Compare Verapamil head-to-head with other drugs for uses, ratings, cost, side effects and interactions.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1135,38 +2067,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "28b6ac634739c70e",
-      "title": "U-Line Ice Maker on 411 | General Repairs & Maintenance",
-      "url": "https://www.meridianyachtowners.com/threads/u-line-ice-maker-on-411.9731/",
-      "summary": "Everything seems ti be breaking this summer (forward escape hatch, swim ladder, ice maker now). Our ice maker seems to have a leak in the unit such that water is leaking into the freezer area from the cube maker, and making icicles and freezing the bottom of the ice cubes in the bin. The model...",
+      "id": "9bc5769932c60a1d",
+      "title": "Verapamil Difference Between Sr And Er (Top voted first)",
+      "url": "https://rxchat.com/Discuss/verapamil-difference-between-SR-and-ER-211642_s3.htm",
+      "summary": "When I take the brand name I only require 180 mg/day but with one generic that is ER, i need 240 mg for the same symptom control. My cardiologist says this is not uncommon.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "rumor"
-      ],
-      "primary_type": "rumor",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c61f62e729b47110",
-      "title": "U-Line Ice Maker suddenly stops working",
-      "url": "https://www.meridianyachtowners.com/threads/u-line-ice-maker-suddenly-stops-working.14546/",
-      "summary": "Our uline ice maker suddenly stopped working. I have checked to make sure the front switch is on and moved the “colder/warmer” dial around, nothing. Any ideas?",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1187,12 +2093,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c7488f0b6a352da9",
-      "title": "U-Line Ice Maker: replacing water valve switch",
-      "url": "https://www.meridianyachtowners.com/threads/u-line-ice-maker-replacing-water-valve-switch.10940/",
-      "summary": "From the preliminary troubleshooting I have done, I am pretty sure I need to replace the water valve micro-switch in my Uline icemaker. The unit gets cold, but the solenoid water valve doesn't open so no water getting to the tray. I checked voltage to the valve it and it only gets between 6-13...",
+      "id": "68fe7ae3d12cc096",
+      "title": "Verapamil Difference Between Sr And Er - RxChat",
+      "url": "https://rxchat.com/Discuss/verapamil-difference-between-SR-and-ER-211642.htm",
+      "summary": "There is a difference between verapamil ER and SR. One is taken once a day and the other is meant to be taken twice a day. That is what the pharmacist told me. Although they are meant to be interchangeable, there are ALWAYS slight differences in the generics depending on who is manufacturing them.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1213,12 +2119,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5f4482ae3921ae5f",
-      "title": "U-Line icemaker tray assembly ? | General Repairs & Maintenance",
-      "url": "https://www.meridianyachtowners.com/threads/u-line-icemaker-tray-assembly.8099/",
-      "summary": "My U-line icemaker model #SP-18 freezes its contents, but it won’t make ice. I’ve tried the screw adjustment to resize the cubes, but no luck. No problem with supply of water. It started acting up the last few weeks. Making ice intermittently, then it went to just dumping water into the...",
+      "id": "ca3eecd9be01a1bb",
+      "title": "verapamil ER (SR) 180 mg tablet,extended release - Kaiser Permanente",
+      "url": "https://healthy.kaiserpermanente.org/health-wellness/drug-encyclopedia/drug.verapamil-er-sr-180-mg-tablet-extended-release.190699",
+      "summary": "Take this medication by mouth with food as directed by your doctor, usually once daily in the morning or every 12 hours. Do not crush or chew extended-release tablets. Doing so can release all of the drug at once, increasing the risk of side effects.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f6798be4366f5dd",
+      "title": "Verapamil ER (Verelan): Uses, Side Effects, Dosage & Reviews - GoodRx",
+      "url": "https://www.goodrx.com/verapamil-er/what-is",
+      "summary": "Learn about verapamil ER (Verelan) usage and dosing. Read the latest news and reviews about the drug as well as potential side effects and popular alternatives.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1239,12 +2171,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c0187f30124d7be4",
-      "title": "Uline ice maker | Meridian Aft Cabin Motor Yachts",
-      "url": "https://www.meridianyachtowners.com/threads/uline-ice-maker.18680/",
-      "summary": "Uline, Isotherm and Virtifrigo all have direct replacements - the virti has a removable ice maker inside with separate switch so it can also double up as an extra freezer if doing a long trip",
+      "id": "48de2cb9ee70642d",
+      "title": "Verapamil er vs sr interchangeable? - DrugChatter",
+      "url": "https://www.drugchatter.com/chat/40267/verapamil-er-vs-sr-interchangeable",
+      "summary": "Are verapamil ER and SR interchangeable? Generally, no. Verapamil ER (extended-release) and verapamil SR (sustained-release) are often treated as different formulations because they can use different release mechanisms and dosing schedules, even though both are “release” versions of verapamil.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1253,9 +2185,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "teardown"
+        "model"
       ],
-      "primary_type": "teardown",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1265,12 +2197,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f388ffccb0cfade1",
-      "title": "Used Toyota for Sale in Seattle, WA (with Photos) - CARFAX",
-      "url": "https://www.carfax.com/Used-Toyota-Seattle-WA_m33_c15895",
-      "summary": "Find the perfect used Toyota in Seattle, WA by searching CARFAX listings. We have 1,670 Toyota vehicles for sale that are reported accident free, 886 1-Owner cars, and 1,160 personal use cars.",
+      "id": "3593bcb0a090bbae",
+      "title": "Verapamil Extended Release Tablets: Package Insert / Prescribing Info",
+      "url": "https://www.drugs.com/pro/verapamil-extended-release-tablets.html",
+      "summary": "Good correlation of dose and response is not available, but controlled studies of verapamil hydrochloride extended-release tablets have shown effectiveness of doses similar to the effective doses of verapamil hydrochloride tablets (immediate release).",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1279,9 +2211,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "model"
       ],
-      "primary_type": "retail",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1291,12 +2223,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9093d9426e757fe9",
-      "title": "Volkswagen Car Dealerships | Find VW Dealers, Vehicles & Pricing",
-      "url": "https://volkswagen.cardealerships.com/",
-      "summary": "Find Volkswagen dealerships, browse new and used VW vehicles, compare models, get pricing, and connect with certified dealers. Your complete resource for buying a Volkswagen.",
+      "id": "0e577e1f9ffeef59",
+      "title": "What are the differences in indications and dosing between Verapamil ...",
+      "url": "https://www.droracle.ai/articles/97759/what-are-the-differences-in-indications-and-dosing-between",
+      "summary": "Verapamil ER and SR are different formulations of the same calcium channel blocker medication, with Verapamil ER releasing the medication more gradually over 24 hours, allowing for once-daily dosing, and Verapamil SR having a shorter duration of action, requiring twice-daily dosing.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1308,84 +2240,6 @@
         "news"
       ],
       "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f6c7d16a178447d0",
-      "title": "Volkswagen Dealer Franklin, TN | Volkswagen of Cool Springs",
-      "url": "https://www.volkswagenofcoolsprings.com/",
-      "summary": "Visit us at Carlock Volkswagen of Cool Springs in Franklin for your new or used Volkswagen car. We are a premier Volkswagen dealer providing a comprehensive inventory, always at a great price. We're proud to serve Nashville TN, Brentwood TN and Spring Hill TN.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6678f93e50078208",
-      "title": "Volkswagen of Nashville",
-      "url": "http://ww.volkswagenofnashville.com/",
-      "summary": "Volkswagen of Nashville Welcome! Volkswagen of Nashville by Hallmark Volkswagen at Cool Springs and Rivergate features a great selection of Certified Volkswagens, used cars in Nashville,trucks, and SUVs. We have two dealers to serve you. Hallmark Volkswagen of Rivergate in Madison on Gallatin Rd. North and in Franklin on Baker's Bridge between Cool Springs and Moore's Lane. Be sure to visit ...",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3d9740de99555070",
-      "title": "【LIVE】 Webcam Cincinnati | SkylineWebcams",
-      "url": "https://www.skylinewebcams.com/en/webcam/united-states/ohio/cincinnati/skyline.html",
-      "summary": "Watch the Queen City come to life with our Cincinnati live webcam, where modernity meets the Ohio River's elegance!",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
