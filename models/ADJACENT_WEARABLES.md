@@ -1,6 +1,6 @@
 # Adjacent Wearable-HCI Catalog
 
-**Edition:** 2026-09-10  
+**Edition:** 2026-09-29  
 **Scope:** purchasable or documented-procurement wearable-HCI devices that belong in GlassesResearch's broader augmented-human research universe but are **not fundamentally smart glasses**.
 
 This catalog implements the form-factor rule in [`WEARABLE_HCI.md`](../docs/taxonomy/WEARABLE_HCI.md): one research umbrella, separate catalogs by physical interface type, shared evidence standards and shared ownership/control philosophy. Entries here must never be silently included in the smart-glasses count in [`THE_LIST.md`](THE_LIST.md).
@@ -39,6 +39,15 @@ These acquired head-worn systems participate in the same near-eye computing rese
 | ADJ-0017 | RealMax | Qian | 2020 | legacy | standalone AR/VR headset | [Identity Forensics Wave 03](../research/investigations/IDENTITY_FORENSICS_WAVE_03_2026-09-10.md); [Kickstarter](https://www.kickstarter.com/projects/realmax100/realmax-qian-the-1008-fov-ar-glasses-for-a-more-immersive/faqs) |
 
 Qian Light and Qian Standard are retained as configurations of one adjacent headset identity. The manufacturer's campaign FAQ describes the Standard package chiefly as Qian plus additional accessories, including the magnetic VR cover and Leap Motion mounting hardware, rather than a second core headset generation.
+
+
+## Specialized masks / task-specific visual augmentation
+
+These systems are worn over the eyes and place computation or visual information directly into the user's task environment, but their physical form is a mask rather than eyeglass-frame smart glasses.
+
+| ID | Maker | Model | Era | State | Form | Evidence / research |
+|---|---|---|---:|---|---|---|
+| ADJ-0018 | AREX / Arexvision | [AREX ONE](ArexOne/README.md) | 2026 | preorder / crowdfunding | AR dive mask with waveguide HUD and onboard dive computer | Functional engineering prototype + primary crowdfunding/product claims; safety certification pending; [research profile](ArexOne/README.md) |
 
 ## Eyeglass-mounted assistive modules
 
