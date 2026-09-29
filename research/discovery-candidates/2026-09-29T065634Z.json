@@ -1,0 +1,1904 @@
+{
+  "schema": 3,
+  "discovered_utc": "2026-09-29T05:52:38.632180+00:00",
+  "candidate_count": 69,
+  "classifier_irrelevant_count": 66,
+  "precision_rejected_count": 0,
+  "channel_counts": {
+    "adjacent": 2,
+    "broad_web": 49,
+    "developer": 18,
+    "retail": 1
+  },
+  "relationship_counts": {
+    "direct": 1,
+    "enabling": 0,
+    "adjacent": 2,
+    "speculative": 0,
+    "irrelevant": 66
+  },
+  "type_counts": {
+    "model": 4,
+    "review": 4,
+    "video": 8,
+    "news": 26,
+    "tool": 20,
+    "sdk": 18,
+    "policy": 9,
+    "retail": 8,
+    "teardown": 2,
+    "community": 3,
+    "rumor": 7
+  },
+  "routing_counts": {
+    "adjacent_radar": 2,
+    "community_evidence_review": 1,
+    "reject_noise": 66,
+    "report_card_evidence": 1,
+    "research_news_review": 3,
+    "retail_rebrand_review": 1
+  },
+  "policy": {
+    "collection": "high recall across ordinary search surfaces",
+    "classification": "relationship + content type + routing target before review",
+    "publication": "editorial verification required",
+    "retail": "lead only; resolve manufacturer/OEM/rebrand before canonical identity",
+    "research": "source lead; classify question answered before promotion",
+    "community": "attributed experience lead; never canonical specification evidence by itself",
+    "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
+  },
+  "collector_errors": [],
+  "candidates": [
+    {
+      "id": "fb12fd33417f23d2",
+      "title": "The Truth About AI Glasses | Are Smart Glasses Worth It?",
+      "url": "https://emeraldpointeyecare.com/blog/ai-glasses/",
+      "summary": "AI glasses (sometimes called smart glasses or AR glasses) are wearable devices that look like regular eyewear but pack in built-in technology. Think cameras, microphones, speakers, sensors, and AI assistants.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, ar glasses, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a48e84a02305ec95",
+      "title": "Nederland TX Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/nederland-tx/",
+      "summary": "Zillow has 53 homes for sale in Nederland TX. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99b67a32f546edc9",
+      "title": "Nederland, TX",
+      "url": "https://www.ci.nederland.tx.us/",
+      "summary": "Nederland, Texas, a thriving community located in the heart of Jefferson County, blends small-town charm with modern amenities. Established in 1897, Nederland is proud of its rich history, strong local values, and a welcoming atmosphere for residents and visitors.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da825ce10d2bdb66",
+      "title": "Sam Bankman-Fried Asks Supreme Court to Review Fraud Conviction",
+      "url": "https://www.nytimes.com/2026/09/10/us/politics/sam-bankman-fried-supreme-court.html",
+      "summary": "Sam Bankman-Fried Asks Supreme Court to Review Fraud Conviction The disgraced founder of the crypto exchange FTX is serving a 25-year prison sentence.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3e329ed90d5209e5",
+      "title": "Sam Bankman-Fried Supreme Court Fraud Appeal - Crypto News",
+      "url": "https://cryptonews.com/news/sam-bankman-fried-supreme-court-appeal/",
+      "summary": "Sam Bankman-Fried asks the Supreme Court to review his FTX fraud conviction, 25-year sentence and roughly $11Bn forfeiture in a petition",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d295cc9f4db9f34f",
+      "title": "Accelerated Reader - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Accelerated_Reader",
+      "summary": "Accelerated Reader (AR) is an educational program created by Renaissance Learning. It is designed to monitor and manage students' independent reading practice and comprehension in both English and Spanish.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b7db21f608e0571a",
+      "title": "Bankman-Fried Asks Supreme Court to Void $11B Forfeiture",
+      "url": "https://financefeeds.com/sam-bankman-fried-supreme-court-ftx-conviction/",
+      "summary": "Sam Bankman-Fried has asked the U.S. Supreme Court to throw out his fraud conviction and cancel the $11 billion a court ordered him to forfeit, the last stage of his direct appeal. The former crypto billionaire filed the petition on Thursday, seeking a new trial and asking the justices to drop the ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "78a81f810d604c0c",
+      "title": "Best Pizza Delivery in Olathe, KS | Sarpino's Pizzeria",
+      "url": "https://www.gosarpinos.com/pizza-delivery/sarpinos-olathe",
+      "summary": "Enjoy handcrafted pizzas, calzones, and Italian favorites with fast delivery in Olathe, KS. Open late to satisfy your pizza cravings anytime.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3f8b22fa66be63bc",
+      "title": "Delivery & Take Out From 15225 W 151st Street - Pizza Hut",
+      "url": "https://locations.pizzahut.com/ks/olathe/15225-w-151st-street",
+      "summary": "Order online from our menu of pizzas, wings, desserts, sides and more! Start with one of our popular recipes like Ultimate Cheese Lover’s® pizza, Pepperoni Lover’s® pizza, Meat Lover's® pizza, Veggie Lover's® pizza, or Supreme.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bec5de04b0cfa6c9",
+      "title": "Delivery & Take Out From 180 S Parker St - Pizza Hut",
+      "url": "https://locations.pizzahut.com/ks/olathe/180-s-parker-st",
+      "summary": "Order online from our menu of pizzas, wings, desserts, sides and more! Start with one of our popular recipes like Ultimate Cheese Lover’s® pizza, Pepperoni Lover’s® pizza, Meat Lover's® pizza, Veggie Lover's® pizza, or Supreme.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2d923e10bf1ee3ad",
+      "title": "FTX Founder Sam Bankman-Fried Takes Fraud Conviction Appeal to Supreme ...",
+      "url": "https://blockonomi.com/ftx-founder-sam-bankman-fried-takes-fraud-conviction-appeal-to-supreme-court/",
+      "summary": "Sam Bankman-Fried has filed a Supreme Court petition challenging his fraud conviction and $11B forfeiture, claiming he was denied the right to present key evidence.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b78c10eb7531a5db",
+      "title": "Getting Started - CITY OF FULLERTON",
+      "url": "https://buslic.cityoffullerton.com/PrimeWeb/Apply/GettingStarted/SidewalkPermit",
+      "summary": "Contact the City of Fullerton Fire Department (714-738-6500) for review of vending equipment by the Fire Marshall and obtain clearance from same, if applicable. • Provide proof of seller’s permit/resale number from the California Department of Tax and Fee Administration, as required by the California Department of Tax and Fee Administration.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c64ce82ff8cb025",
+      "title": "Home - Ava Rae's Pizzeria & Pub - Pizza Restaurant in Olathe, KS",
+      "url": "https://www.avaraespizzeriapub.com/",
+      "summary": "Get ready to experience the heart of local flavor at Ava Rae's Pizzeria, opening in January 2025! Alongside our mouthwatering pizzas, pastas, and sandwiches, we're proud to offer not only the largest selection in the area of local craft beers, but also regional craft beers.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5af12dcb33d6c084",
+      "title": "Pizza Delivery & Carryout in Olathe, Kansas| Domino's Pizza",
+      "url": "https://pizza.dominos.com/kansas/olathe",
+      "summary": "Order pizza delivery or carryout from Domino's in Olathe, Kansas. Find your nearest location, view hours, and start your order online.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "deb453c79541c142",
+      "title": "Pizza Shoppe - Kansas City's Original Neighborhood Pizza Place",
+      "url": "https://pizzashoppe.com/",
+      "summary": "Our founder, Dick Ryan, realized that his community was hungry for irresistible pizzas, pastas and more, served up with authentic Kansas City hospitality. The answer was Pizza Shoppe — a cozy, neighborhood hangout with a welcoming atmosphere and some of the best, most original tastes in town.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "174d56467e2b15e8",
+      "title": "Sam Bankman-Fried appeals conviction to Supreme Court - CNN",
+      "url": "https://www.cnn.com/2026/09/10/politics/sam-bankman-fried-appeals-conviction-to-supreme-court",
+      "summary": "Sam Bankman-Fried, the former crypto mogul who was convicted of defrauding investors by secretly diverting billions of dollars of their money, asked the Supreme Court on Thursday for a new trial ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3cca55283be8bf81",
+      "title": "Sam Bankman-Fried appeals FTX fraud conviction to Supreme Court - Yahoo",
+      "url": "https://www.yahoo.com/news/us/articles/sam-bankman-fried-appeals-ftx-124440507.html",
+      "summary": "Sam Bankman-Fried asked the Supreme Court on Thursday to overturn his fraud conviction and vacate a court order requiring him to forfeit $11 billion, according to CNN.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f74c0f2f282503c9",
+      "title": "Sam Bankman-Fried Appeals to Supreme Court After FTX Conviction Upheld",
+      "url": "https://www.cryptometer.io/news/sam-bankman-fried-appeals-to-supreme-court-after-ftx-conviction-upheld/",
+      "summary": "Sam Bankman-Fried has asked the U.S. Supreme Court to overturn his fraud conviction, opening a new chapter in his legal battle over the collapse of cryptocurrency exchange FTX. The former FTX chief is serving a 25-year prison sentence after a federal jury convicted him in 2023 on seven fraud and conspiracy counts.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a73d7330f4897e0",
+      "title": "Sam Bankman-Fried Loses Appeal to Overturn FTX Fraud Conviction",
+      "url": "https://activistpost.com/sam-bankman-fried-loses-appeal-to-overturn-ftx-fraud-conviction/",
+      "summary": "Discover the latest on Sam Bankman-Fried as the court upholds his fraud conviction and 25-year sentence amidst crypto's downfall.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "acf09aefff7ff094",
+      "title": "Sam Bankman-Fried's appeal denied by federal court - ABC News",
+      "url": "https://abcnews.com/US/sam-bankman-frieds-appeal-denied-federal-court/story?id=135356716",
+      "summary": "A federal appeals court in New York upheld Sam Bankman-Fried's conviction fraud and conspiracy charges that followed the collapse of his crypto exchange, FTX.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "715c904b06f9e610",
+      "title": "Shop – Wu-Tang Clan Shop",
+      "url": "https://thewutangclan.com/pages/shop",
+      "summary": "Shop the official Wu-Tang Clan store for exclusive Wu-Wear, limited edition vinyl, hoodies, and accessories. Enter the 36 Chambers and get the latest gear from the RZA, GZA, and the rest of the Clan. Fast worldwide shipping available.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c3556a04817ff9e3",
+      "title": "Tees – Wu-Tang Clan Shop",
+      "url": "https://thewutangclan.com/collections/tees",
+      "summary": "Shop the official Wu-Tang Clan store for exclusive Wu-Wear, limited edition vinyl, hoodies, and accessories. Enter the 36 Chambers and get the latest gear from the RZA, GZA, and the rest of the Clan. Fast worldwide shipping available.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3f702a348bd4c503",
+      "title": "THE 10 BEST Pizza Places in Olathe (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g38954-c31-Olathe_Kansas.html",
+      "summary": "Best Pizza in Olathe, Kansas: Find Tripadvisor traveller reviews of Olathe Pizza places and search by price, location, and more.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed187fb602d8429c",
+      "title": "THE BEST 10 PIZZA PLACES IN OLATHE, KS - Yelp",
+      "url": "https://www.yelp.com/search?cflt=pizza&find_loc=Olathe%2C+KS",
+      "summary": "Best Pizza in Olathe, KS - Last Updated September 2026 - Sarpino's Pizzeria, Pizza Tascio, Apogee, Rosati's Pizza, MOD Pizza, Pizza 51, Smokin’ Oak Wood-Fired Pizza & Taproom, KJ's Pizzeria, Third Coast Pizza, Ava Rae's Pizzeria & Pub",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "479f42000dd7b9d6",
+      "title": "2024 NFL Playoff Bracket - ESPN",
+      "url": "https://www.espn.com/nfl/playoff-bracket/_/season/2024",
+      "summary": "Visit ESPN to view the 2024 NFL Playoff bracket for live scores and results.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6510d2e6c8f4544b",
+      "title": "2024 NFL Regular Season Schedule | Pro-Football-Reference.com",
+      "url": "https://www.pro-football-reference.com/years/2024/games.htm",
+      "summary": "Check out the 2024 NFL Regular Season Schedule, and Preseason schedule and know when does NFL regular season starts and ends.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "62cd4a8186abc623",
+      "title": "2024 NFL Schedule - ESPN",
+      "url": "https://www.espn.co.uk/nfl/fixtures/_/year/2024",
+      "summary": "Visit ESPN to view the NFL Schedule for the current and previous seasons",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2eff5488fc1ea142",
+      "title": "2024 NFL season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2024_NFL_season",
+      "summary": "The 2024 NFL season was the 105th season of the National Football League (NFL). The season began on September 5, 2024, with reigning Super Bowl champion Kansas City defeating Baltimore in the NFL Kickoff Game. The regular season concluded on January 5, 2025.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d4f8cbd649347770",
+      "title": "2024 NFL Standings & Team Stats | Pro-Football-Reference.com",
+      "url": "https://www.pro-football-reference.com/years/2024/index.htm",
+      "summary": "Check out the 2024 NFL Standings & Team Stats including AFC and NFC results and standings on Pro-football-reference.com",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "065c6dec11bb3cbe",
+      "title": "2024–25 NFL playoffs - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_NFL_playoffs",
+      "summary": "The NFL playoffs for the 2024 season began on January 11, 2025, and concluded with Super Bowl LIX on February 9 at Caesars Superdome in New Orleans, Louisiana, when the Philadelphia Eagles defeated the two-time defending champion Kansas City Chiefs 40–22 to win their second Super Bowl and fifth NFL championship in franchise history.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1ffc62bb58059ae5",
+      "title": "Amazon.com: Wu-tang Clan T-shirt",
+      "url": "https://www.amazon.com/wu-tang-clan-t-shirt/s?k=wu-tang+clan+t-shirt",
+      "summary": "Shop Wu-Tang Clan t-shirts with iconic logos and vintage designs celebrating hip-hop culture.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "75e789bf524086d8",
+      "title": "Amazon.com: Wutang Mens T-shirts Big And Tall",
+      "url": "https://www.amazon.com/wutang-mens-t-shirts-big-tall/s?k=wutang+mens+t-shirts+big+and+tall",
+      "summary": "Price and other details may vary based on product size and color. Results from the web. Prices may differ.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "11c83d262f0ab969",
+      "title": "Apply - City of Fullerton",
+      "url": "https://buslic.cityoffullerton.com/Primeweb",
+      "summary": "Apply for a Sidewalk Vendor Permit Renew Renew Business Registration Certificate",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e297bd99765968f6",
+      "title": "Calls for Service - City of Fullerton",
+      "url": "https://apps.cityoffullerton.com/webdata/apps/cfs/",
+      "summary": "Access real-time information on calls for service in Fullerton, CA, including police, fire, and emergency services.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2e027fb748c56f99",
+      "title": "Eich Volkswagen | Official Site",
+      "url": "https://www.eichvw.com/",
+      "summary": "Thank you for making your way to Eich Volkswagen, your certified Volkswagen dealer serving drivers throughout St Cloud and the surrounding areas. At our dealership, you’ll find a solid selection of new Volkswagen for sale, as well as a carefully inspected lineup of pre-owned vehicles. We also have a well-connected finance center run by a qualified team of finance experts, who can help you ...",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "019f188e45f72a31",
+      "title": "Free zoeyava Porn Videos (44) - ThotHD",
+      "url": "https://m.thothd.com/tags/zoeyava/",
+      "summary": "Watch 44 free zoeyava porn videos and leaked content on ThotHD. New zoeyava uploads added daily in HD.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "rumor"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2b8828855b432f0e",
+      "title": "Live Traffic Cameras in and near Fort Dodge, Iowa (IA), 50501 | Trucker ...",
+      "url": "https://truckerguideapp.com/fort-dodge.iowa/type=traffic-cameras",
+      "summary": "Trucker Guide allows you to quickly locate Penske centers in Fort Dodge, Iowa (IA), 50501, check services, and plan trailer repair or engine maintenance stops efficiently.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eec50254c4f86e0c",
+      "title": "Manage Autocorrect in Google Docs",
+      "url": "https://support.google.com/docs/answer/12022089?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "Important: You can only manage Autocorrect in Google Docs on a computer. You can't do this on an Android or an iPhone and iPad. To fix spelling and capitalization, you can use Autocorrect in Google Docs. This feature can also find links, lists, and quotes. You can turn Autocorrect on or off.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "73f48df40c62e818",
+      "title": "Missing Person | Fullerton, CA",
+      "url": "https://www2.cityoffullerton.com/Webdata/Apps/pd/MissingPersons/Report.aspx",
+      "summary": "Police Services Missing Person Font Size: + - Log In User Name: * Password: * Remember me next time.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e674a4ca68b79ef",
+      "title": "NFL regular season schedule 2024: Complete week-by-week slate of games",
+      "url": "https://www.usatoday.com/story/sports/nfl/2024/05/15/nfl-regular-season-schedule-2024/73678456007/",
+      "summary": "The complete schedule for the 2024 NFL season has been revealed. Check out the week-by-week slate for all 18 weeks of the season.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77959eb2659143f8",
+      "title": "NFL Scores - Regular Season Week 1, 2024 - ESPN",
+      "url": "https://www.espn.com/nfl/scoreboard/_/week/1/year/2024/seasontype/2",
+      "summary": "Live scores for every 2024 NFL Regular Season game on ESPN. Includes box scores, video highlights, play breakdowns and updated odds.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "21f690bab73b959e",
+      "title": "Pay to Stay - City of Fullerton Police",
+      "url": "https://apps.cityoffullerton.com/WebData/apps/pdPayToStay/default.aspx",
+      "summary": "person. PDF Application | PDF Application español In order for this application to be processed a non-refundable cash fee must be paid in person at the Fullerton Police Department, 237 W. Commonwealth, Fullerton, CA 92832. You must agree to the rules and regulations. Person Info Last Name †",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b86ebd84e12f7b66",
+      "title": "Pisanie i edytowanie za pomocą głosu - Google Help",
+      "url": "https://support.google.com/docs/answer/4492226?hl=pl",
+      "summary": "Możesz pisać i edytować dokumenty w Dokumentach Google oraz notatki prelegenta i napisy w Prezentacjach Google za pomocą głosu. Ta funkcja działa w najnowszych wersjach tych przeglądarek: Chrome",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f0001cfedd0dd7fb",
+      "title": "Police Services | Fullerton, CA",
+      "url": "https://www.cityoffullerton.com/government/departments/police/police-services",
+      "summary": "The Fullerton Police Department provides various services, including non-emergency assistance, vehicle impound payments, and crime reporting options for residents.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "205667dfe2476696",
+      "title": "Police | Fullerton, CA",
+      "url": "https://www.cityoffullerton.com/government/departments/police/",
+      "summary": "Fullerton Police 237 W. Commonwealth Ave. Fullerton, CA 92832 www.fullertonpd.org Contact Us Non-Emergency 714.738.6700 Business Line 714.738.6800 For Emergency Dial 911 Hours Front Desk-Hours Monday - Friday 8:00 AM - 6:00 PM Saturday 8:00 AM - 1:00 PM Sunday - Closed Meetings & Agendas Pay Water Bill Careers Report an Issue Contact Us",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "481823398d8b8ca7",
+      "title": "Protect, hide & edit sheets - Computer - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/1218656?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "In a Google Sheet, click Data Protect Sheets and ranges. On the right panel that appears, to view all of the ranges with protections, click Cancel. Find protection you want to delete Click delete .",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5984891d038d0848",
+      "title": "Request Police Report - Fullerton, CA",
+      "url": "https://www.cityoffullerton.com/government/departments/police/police-services/request-police-report",
+      "summary": "Request A Police Report The Fullerton Police Department's Records Bureau is responsible for receiving, maintaining and archiving police records in compliance with department policies, city policies and state law. Request a copy of a police report online Requests can also be made via US Postal Mail by submitting a notarized written request and a check/money order in the amount of $20.00. Mail ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "747e83148681af66",
+      "title": "SelfService Public Site - City of Fullerton",
+      "url": "https://easydev.cityoffullerton.com/energov_prod/selfservice",
+      "summary": "Citizen Self Service website",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3cbc58696f08604b",
+      "title": "Sign in to City of Fullerton",
+      "url": "https://gis.cityoffullerton.com/portal/sharing/rest/login",
+      "summary": "Sign in to City of Fullerton City of Fullerton",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d5999c873d67fc3e",
+      "title": "Troubleshoot errors while you edit Google Docs, Sheets, Slides, Vids ...",
+      "url": "https://support.google.com/docs/answer/7505592?hl=en",
+      "summary": "If you still have any questions, you can visit the Google Docs Editors Help Community to ask for help. To report an issue, open your Docs, Sheets, Slides file and at the top, click Help Help us improve.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "216525e7c5f135ff",
+      "title": "Used Volkswagen Cars for Sale in Brainerd, MN - Autotrader",
+      "url": "https://www.autotrader.com/cars-for-sale/volkswagen/brainerd-mn",
+      "summary": "Test drive Used Volkswagen Cars at home in Brainerd, MN. Search from 12 Used Volkswagen cars for sale, including a 2015 Volkswagen Tiguan S, a 2016 Volkswagen GTI SE, and a 2018 Volkswagen Golf 4-Door ranging in price from $10,999 to $33,349.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d25e5cdfa986d756",
+      "title": "Used Volkswagen for Sale in Brainerd, MN - CARFAX",
+      "url": "https://www.carfax.com/Used-Volkswagen-Brainerd-MN_m34_c24380",
+      "summary": "Find the perfect used Volkswagen in Brainerd, MN by searching CARFAX listings. We have 539 Volkswagen vehicles for sale that are reported accident free, 361 1-Owner cars, and 399 personal use cars",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5e26ea2e989dc36d",
+      "title": "Volkswagen near me in Brainerd, MN | Mapdoor",
+      "url": "https://mapdoor.com/us/mn/brainerd/volkswagen",
+      "summary": "Explore all Volkswagen dealers in Brainerd, MN, with contact details, opening hours, services, and more on our interactive map",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "02d8dd82049cac17",
+      "title": "Volkswagen- Brainerd, 22 Washington St, Brainerd, MN 56401, US - MapQuest",
+      "url": "https://www.mapquest.com/us/minnesota/volkswagen-brainerd-448954002",
+      "summary": "Volkswagen Of America in Brainerd, MN is a dealership that specializes in selling Volkswagen vehicles to customers in the local area. They offer a range of new and pre-owned Volkswagen models for interested buyers to explore. With a focus on customer service and automotive expertise, Volkswagen Of America aims to provide a seamless and informative car-buying experience for those in the market ...",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9faa77334e0a6d38",
+      "title": "Wu Tang 5XL for sale | eBay",
+      "url": "https://www.ebay.ca/sch/i.html?_nkw=wu+tang+5+xl",
+      "summary": "Find great deals on eBay for Wu Tang 5XL. Shop with confidence.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bca8c402ff22a760",
+      "title": "Wu Tang Clan Shirt 5xl - Etsy",
+      "url": "https://www.etsy.com/market/wu_tang_clan_shirt_5xl",
+      "summary": "Check out our wu tang clan shirt 5xl selection for the very best in unique or custom, handmade pieces from our t-shirts shops.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6ba3a927d51d2a23",
+      "title": "Wu Tang Shirt, Wutang T shirt, Wu Tang Tee S-5XL FREESHIPS - eBay",
+      "url": "https://www.ebay.com/itm/398281715373",
+      "summary": "This Wu Tang shirt is a stylish and comfortable option for any hip hop enthusiast. Made of cotton with a crew neck and short sleeves, it is perfect for the summer and spring seasons. The black tee features the iconic Wu Tang logo as an accent, adding a touch of urban flair to your wardrobe. Easy to care for with machine washable instructions ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c1c03b6657028a1b",
+      "title": "Wu-Tang Clan Silver Symbol Vintage Look 90s Rap Hip Hop T-Shirt S-5XL ...",
+      "url": "https://www.ebay.com/itm/187910985665",
+      "summary": "Ironing: If ironing is required, iron inside-out on a low setting. Never iron directly over the printed design. These shirts follow standard US sizing with a classic boxy fit. Instead, we provide rare and specialized designs that capture the essence of the golden age.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da705c094a02afab",
+      "title": "WUTANG Clan Japanese Wave 90s Metal Music Plus Size Oversize Women T ...",
+      "url": "https://us.shein.com/WUTANG-Clan-Japanese-Wave-90s-Metal-Music-Plus-Size-Oversize-Women-T-Shirt-For-Women-p-57977411.html",
+      "summary": "WUTANG Clan Japanese Wave 90s Metal Music Plus Size Oversize Women T-Shirt For Women SKU: sz25021650199114271 (61 Reviews) $16.68",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bd72ae36edf0bc93",
+      "title": "Wutang Clan T-Shirt - TeePublic",
+      "url": "https://www.teepublic.com/t-shirt/97140510-wutang-clan",
+      "summary": "Shop Wutang Clan wutang-clan t-shirts designed by colter_dawson as well as other wutang-clan merchandise at TeePublic.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c5350560397c13aa",
+      "title": "Zoey Ava Fingering Pussy Closeup Zoeyavaa Onlyfans Video",
+      "url": "https://gotanynudes.com/zoey-ava-fingering-pussy-closeup-zoeyavaa-onlyfans-video/",
+      "summary": "Zoey Ava fingering pussy closeup in this OnlyFans leak video. 5 min 32 sec long. Only on GotAnyNudes — free streaming, no account needed.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "rumor"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a6d437eaff42165d",
+      "title": "Zoey Ava Nude OnlyFans Exclusives (2026) [UPDATED DAILY]",
+      "url": "https://fapthot.com/models/zoey-ava/",
+      "summary": "New content added regularly! Explore Zoey Ava OnlyFans archives, including exclusive photos, private videos, and premium content. Free updates now - only on FapThot.com!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "81c289abb8f7f59e",
+      "title": "Zoey Ava Nude Onlyfans Riding Dildo Zoeyavaa Leaked Video",
+      "url": "https://gotanynudes.com/zoey-ava-nude-onlyfans-riding-dildo-zoeyavaa-leaked-video/",
+      "summary": "Zoey Ava leaked video — nude riding dildo. 9 min 48 sec long. Free to watch on GotAnyNudes. New drops daily.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "rumor"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7dc593de6f0f79ee",
+      "title": "Zoeyava Leaked Onlyfans Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=zoeyava+leaked+onlyfans",
+      "summary": "Browse through our impressive selection of porn videos in HD quality on any device you own.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "rumor"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1668a73cd5faa2f9",
+      "title": "zoeyava Onlyfans leaked video 18616169 on Hotleaks.tv",
+      "url": "https://hotleaks.tv/zoeyava/video/18616169",
+      "summary": "Watch Exclusive Leaked videos and photos of Onlyfans, Patreon, Snapchat, Cosplay, Twitch, Celebrity of zoeyava video 18616169.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "rumor"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1cf7ae5a6c2f4be8",
+      "title": "Zoeyava shaking her fat ass compilation - Thothub",
+      "url": "https://thethothub.com/videos/1349918/zoeyava-shaking-her-fat-ass-compilation/",
+      "summary": "Small compilation of Zoeyava, hot onlyfans model Tags: fat ass onlyfans model fat as ass compilation zoeyava shaking her fat ass compilation small of hot onlyfans model",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "989d75a777f19bd4",
+      "title": "ZoeyAva- BJ & Facial",
+      "url": "https://notfans.com/videos/84898/zoeyava-bj-facial/",
+      "summary": "The best OnlyFans leaks are available for free at NotFans. Visit us to start watching the hottest OnlyFans influencers, cosplayers and gamer girls in solo, lesbian, and hardcore videos!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "645df2ad6bfc3d6f",
+      "title": "Zoeyavaa POV Blowjob Video Leaked - notfans.com",
+      "url": "https://notfans.com/videos/142488/zoeyavaa-pov-blowjob-video-leaked/",
+      "summary": "The best OnlyFans leaks are available for free at NotFans. Visit us to start watching the hottest OnlyFans influencers, cosplayers and gamer girls in solo, lesbian, and hardcore videos!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video",
+        "rumor"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c5f521552bacfde0",
+      "title": "Zoeyavaa POV Blowjob Video Leaked - Thothub",
+      "url": "https://thothub.org/videos/1393771/zoeyavaa-pov-blowjob-video-leaked/",
+      "summary": "Thothub is a parody. It provides a fully autonomous stream of daily content sent in from sources all over the world.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "rumor"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    }
+  ]
+}
