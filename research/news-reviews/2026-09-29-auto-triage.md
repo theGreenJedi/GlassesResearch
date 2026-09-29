@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-29T13:54:42.381356+00:00`
+Generated: `2026-09-29T18:42:23.974674+00:00`
 
-- Intake files inspected: **313**
-- Candidates retained in this review window/history: **13635**
+- Intake files inspected: **311**
+- Candidates retained in this review window/history: **13569**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 2935
+- `adjacent_radar`: 2958
 - `catalog_review`: 13
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 767
-- `rejected_noise`: 9793
+- `needs_editorial_verification`: 757
+- `rejected_noise`: 9712
 - `source_monitor`: 1
-- `source_review`: 32
-- `watching`: 90
+- `source_review`: 35
+- `watching`: 89
 
 ## Action queue
 
