@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-29T10:55:50.914096+00:00`
+Generated: `2026-09-29T13:05:28.531411+00:00`
 
 - Intake files inspected: **312**
-- Candidates retained in this review window/history: **13621**
+- Candidates retained in this review window/history: **13631**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 2912
+- `adjacent_radar`: 2934
 - `catalog_review`: 13
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 757
-- `rejected_noise`: 9810
+- `needs_editorial_verification`: 753
+- `rejected_noise`: 9800
 - `source_monitor`: 1
-- `source_review`: 34
+- `source_review`: 36
 - `watching`: 90
 
 ## Action queue
@@ -209,7 +209,6 @@ Generated: `2026-09-29T10:55:50.914096+00:00`
 | high | needs_editorial_verification | direct | [Meta doubles down on AR glasses amid privacy storm - Information Age \| ACS](https://news.google.com/rss/articles/CBMilAFBVV95cUxNYTQ4b05WQ1BMYWpUMVNKcy1Bak9FclhZbG9qUlNDRTdGUUVuWVY1ZUgzLVZxV2RSTXVfRTlBX2dKb2J1S2ZzaGw2TmRBTjBTeXhYd0hsbi15QXN2MldSZUgtdlpSQklJTEVPbFUyMjdQYURaOE5yRnZTUmV6aUU4SHE1SlYwaU1hTWZkNjI2QU8zQVdf?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta Glasses by Lisa launch: Price, styles, and where to buy - Mashable](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9EVTNaWVZ6TlgxSlVVcmZ0YXJyVDRsLVpEYVFyNTZlUnN0V2NZYlBWUDBycEF3emptakxhQzhtMGhVNlUwMU9DbHVUUTdTc0dVWnM2MXRGOEJMM3IyWE8zelVWOUthVmM?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Meta reveals next-gen smart glasses: Meta Ray-Ban Gen 3, VR glasses - Mashable](https://news.google.com/rss/articles/CBMiggFBVV95cUxPVy11YWtnc0xCV3NFZG1YVlEzbjZBNks3azloSWRiQ0JwR0pBUmliNGVHcFh2Q1VaUENVSmhORjEwdTVGQXI3dTJrSktuRHBnbTJ4Tlc3dldtaWVkSTFsQlNjWWV6UjNvaks5Zk9adFBDcVR4ZjJNeGxtNXBvTGQwbERB?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Meta Smart Glasses Spark Privacy Backlash Among Singles and Data Security Advocates - streamlinefeed.co.ke](https://news.google.com/rss/articles/CBMijAFBVV95cUxNZ18weDRiRXVUeXBMMTk5cU16THhOX1VBTGpLdW1BSTk4ZjJ5V1lEU2RnYjlqSldXSmtuQ3VIRkMxdWtzaktwY1VXRzl2WVJHM2wxZm5BXzN5MFV4OXBFS0xQckc5N0xzQ09Wd3BwWGJBVnpuV1JjaEZvZ1A4bGh0VXRkQXM3R0FZLWdJYw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta To Launch Smart Glasses Without Cameras - dealbreaker.com](https://news.google.com/rss/articles/CBMiggFBVV95cUxNVnJPMU1BUmo4M3A4NnJpT1dPUDBDRllGX1IyclZOcmtxRVE0WUlhbGM0TUFvYWhZWlRYenh3dkwySzYxSWg4d2FySXNrOS01WlRjVlhnbXZac0w1MW9ZY2p3ZW5EUng3OG1SVV9HZ3dhdWt6WmZ6WGRKeDFoSkhBWG93?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta VR Glasses and a Ton of Smart Glasses – Everything Announced at Meta Connect 2026 - ign.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE45R0gzWnZyZjZObXQtQ3ZUSTJEYzZwdGRLWEJhckNYdVJNaVR1NmNWUmZ2SGJ3TFNOUzhsYTFnbTBWbC1jaFdPNkNSZWZQSGlQRGs3cFlHSW1OSF9GNHFaSFpPN29QTWVnNUkxemlmeHFRdzFDZEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Must Read: Puck Uncovers Previous Steven Kolb Incidents at CFDA, Meta To Launch Smart Glasses Without Cameras - fashionista.com](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV25wOF9sN0RBdzZlalNuSUZJT3RrMHk1eUEzZWg4cUlhSnlYcEdlb2tCX29Ba1hmMUpYX2JUTEtUQ2lBOGJoWVFuSnY2VmNMRDFqZHp3aDVBTkxkR0hoS0RLaDZKdXdac3REN0dhUHk1SDVVNW5LekR2Z1FPOE85aUxmZnZCMGxV?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -256,7 +255,7 @@ Generated: `2026-09-29T10:55:50.914096+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 韓 공략 넓힌 메타…시장 커질수록 커지는 '카메라 딜레마' - 뉴시스](https://news.google.com/rss/articles/CBMieEFVX3lxTE1CeFBYUXpPM1psNVUxdkdLMnZwVW5Pdy03UjhDaUNkVklhQWx0RWk2Y3R1bGF2TkIxRW53Y2RxaTV1d2htSlJKWmhFNU11LXFCNE5CM081Q2Z6VUU0M3VWUVNnNnFTaTJuSnJoWU1tWWZCRWk1elVxVdIBeEFVX3lxTE1CeFBYUXpPM1psNVUxdkdLMnZwVW5Pdy03UjhDaUNkVklhQWx0RWk2Y3R1bGF2TkIxRW53Y2RxaTV1d2htSlJKWmhFNU11LXFCNE5CM081Q2Z6VUU0M3VWUVNnNnFTaTJuSnJoWU1tWWZCRWk1elVxVQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 쓰면 최대 5년간 토픽시험 못 본다 - 파이낸셜뉴스](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9id0o5emlJWjU3QVNIQ0U1akpJUzVXNmVhbWw5R0s5ZElVd3Z4SlZnel9QTUJIRU5MLThWekRBcUZiQ2h0b1hrQUZRNk9FZTI5N2tBRzY1dVUzdw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경·이어폰 '커닝' 땐 2년 제한…조직적 부정행위는 5년 퇴출 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5qbU5McHpHVkxrYXJHZ2FkejVkczIxem5OWFFqcTFfenE3OEhTdDh4OXpIVlBtaFhPcVhBeFNwTXd2UUpEWEVrZGV4UWVIVUx6RTR3OGNqaGpuZXhk?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses Could Hit Stores Before Next-Gen Vision Pro - ChannelNews.com.au](https://news.google.com/rss/articles/CBMimwFBVV95cUxOenJ5OXFET1c0STJacTdYVUw0bkl1eEpYVHY4ZENERWhHeFZ6di1FQUxKQ3laZjZzbHdkOTRadHZESmZ6ZjNVekdMcEFVTS1JRmhfdXJaV3F1eVRvU1ZmQ3AtVS1GcEVQUVYyYVF1bEJKVHFzU0liMnBCZmo5XzQ1WDBPbjNWZDBzb2l4Tzg5bDZ0dHpSUHYxQkRLVQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple smart glasses: Everything we know about Apple’s next major wearable - The Apple Post](https://news.google.com/rss/articles/CBMiugFBVV95cUxNRVNVSkVaTFpMSW9IR1NQcFdqODQwTDEyYk5CUkJ6aVJ4SWF3MkNVVmlBd3ZkbXdfQkM0blBQa1RSNkV2ZWJaUnRPVW1NdFVmd1ZhSTJubWYyZkJKQU41V1RqNzV6NkVuQjdKWUc2UGlLVnNDU3ZXaVZpdEJrU0NBSk1rQnNVMVI0ejJYV3l4anlqOHJCZzBmTVprRGhYR29mdU5TeWRHdTNULXc3TDdVdk1XRERkWmMzaHfSAb8BQVVfeXFMUEJ5Y25xSFhyVi1pbXZWcjdfQWh4aGFXRUNZRFNrT3M2YV9UZjh2QjhOS2RsaTIxc1hUVUMtdUJsaFhENzhVR1BrOURuLUJnaU1nSHF5QUVCRW1rOG9FMkZ5NXdHZ1E2SGM2Z1BrZEgzSFE3Z2laV1VwTEZDWVg2azJkT3RkRHI4cFhtVUZVeHVEV2Nzb1F3VUxNcTYwNnNNQVBzaGZSbkRPZWdqdUZOV1BSMXVNOGxDREVMMWV1X3c?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses: Will they be the most stylish alternative to Vision Pro in 2026? - iphoneislam.com](https://news.google.com/rss/articles/CBMizwFBVV95cUxNOWtfaW1abUJ5TldUR3dLMmNKUHhaU05PdVdEVkJrRzczRXJPeUVPMEQtSnZDM2o1SlBLcnZmZEZTTGdudnFyZjU0U1NsVlNNRTQ0WWxPTS1iWFQ0YXZhQnp0ekEtR2VYQXE0NDc0eV9qRDB5UkVZMDFZME5KLVJTOGRaelhiQmF1Mzk0SkZvZzd4Q2ZFRUdnTUlEWFUyOHJDR0szRGE4blNaMUdUNWF1VktZNnJvVlBSWXFTTTRuam5fc3QyR2N2ay0waHhCTGc?oc=5) | reachable (200) | research_news_review |
@@ -272,6 +271,7 @@ Generated: `2026-09-29T10:55:50.914096+00:00`
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMivgJBVV95cUxNMTZqcEpYaF9BMG5ZUFh2NHEzRV9SdmJSeERnc0pxX18xXzJobjNRb3Iyb0FjTFo0dkxjQmVWQXplZ3VhYjlWem5CeG9TQU1EWHBJa3ZTaXJFZGZrd2FDVGRvanJ3NHRXTVhxVkFVdFdTSmoyVkQ0N1RvQXM4THZMRXQ4UEwxRHpEVmZIRmVxVmdzbDJwaFVfdklBeS1OYXptNElNVm40MENObHBHdWF2dC0yWVBtSVNBWW5URElwd2xDblpKbC12YUVDUEw4d3dveFRacVFjOUVxVW1nX1hYMDlYNE1CR2tINjFmT293YW85YTBwalBmVWx1MmxoUmwzaWdrRTJFUDR1X25EOWM3WGQ5amVIOFZaNGYxQXN1RHVTQ1BLa1NYMTZ0aEc2cm51SnBfTnJKTEVjdUNYWmc?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Auganix 26d ago TDK Acquires OQmented Assets to Strengthen Smart Glasses Display Business](https://www.auganix.org/ar-news-tdk-acquires-oqmented-assets/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Augmented Reality News - AR Glasses & Spatial Computing \| VR.org](https://vr.org/ar) | reachable (200) | research_news_review, development_hacking |
+| normal | needs_editorial_verification | direct | [Augmented Reality/Virtual Reality (AR/VR) Technology – Arm®](https://www.arm.com/markets/consumer-technologies/ar-vr) | reachable (200) | research_news_review, development_hacking |
 
 ## Meaning of states
 
