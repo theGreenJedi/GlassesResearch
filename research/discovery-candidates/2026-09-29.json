@@ -1,35 +1,45 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-29T13:54:22.012541+00:00",
-  "candidate_count": 53,
-  "classifier_irrelevant_count": 40,
+  "discovered_utc": "2026-09-29T18:41:59.775784+00:00",
+  "candidate_count": 134,
+  "classifier_irrelevant_count": 80,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 11,
-    "broad_web": 32,
-    "developer": 12
+    "adjacent": 54,
+    "broad_web": 77,
+    "developer": 3
   },
   "relationship_counts": {
-    "direct": 2,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 11,
+    "adjacent": 54,
     "speculative": 0,
-    "irrelevant": 40
+    "irrelevant": 80
   },
   "type_counts": {
-    "model": 5,
-    "news": 30,
-    "tool": 11,
-    "sdk": 10,
-    "optics": 1,
+    "model": 9,
+    "review": 3,
+    "video": 8,
+    "news": 80,
+    "research": 7,
+    "tool": 6,
+    "sdk": 6,
+    "hack": 1,
+    "policy": 1,
+    "retail": 13,
     "teardown": 1,
-    "community": 5
+    "community": 13
   },
   "routing_counts": {
-    "adjacent_radar": 11,
-    "reject_noise": 40,
-    "research_news_review": 13,
-    "research_optics": 1
+    "adjacent_radar": 54,
+    "community_evidence_review": 1,
+    "deep_research": 1,
+    "development_hacking": 4,
+    "model_catalog_review": 4,
+    "reject_noise": 80,
+    "report_card_evidence": 6,
+    "research_news_review": 54,
+    "retail_rebrand_review": 10
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -40,66 +50,177 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [],
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
   "candidates": [
     {
-      "id": "41b749d4bb0b23fd",
-      "title": "About Everysight",
-      "url": "https://www.everysight.com/pages/about",
-      "summary": "Everysight creates lightweight smart eyewear that seamlessly blends digital information into the real world. Born from decades of aerospace display innovation, we've reimagined advanced optics, AI, and intelligent software into products designed for everyday life.",
-      "discovery_channel": "broad_web+developer",
-      "query": "Everysight Maverick AI Kickstarter; Everysight Maverick SDK",
+      "id": "ca560cec0e967ee3",
+      "title": "9 Life-Changing AI Wearable Devices in 2026 - plaud.ai",
+      "url": "https://www.plaud.ai/blogs/articles/9-life-changing-ai-wearable-devices-in-2026",
+      "summary": "Looking for the best AI wearable devices of 2026? The team at Plaud have made this guide based on our research, products, and experience in the tech industry...",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "adjacent_hci",
       "materiality_score": 2,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "research"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "optics"
+        "research"
       ],
-      "primary_type": "optics",
+      "primary_type": "research",
       "routing_targets": [
         "research_news_review",
-        "research_optics"
+        "deep_research",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: everysight, smart eyewear",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e7635fe05eea5401",
-      "title": "Technology – Everysight",
-      "url": "https://www.everysight.com/pages/technology",
-      "summary": "Maintain a stylish and unobtrusive appearance using smart eyewear design with elegantly integrated electronics that represent a convergence of fashion and technology, thus enhancing the way we perceive and interact with the world around us.",
-      "discovery_channel": "broad_web+developer",
-      "query": "Everysight Maverick AI Kickstarter; Everysight Maverick SDK",
+      "id": "89eb735e9b6af37e",
+      "title": "Best Buy in Pineville, NC - 10600 Centrum Pkwy - Electronics ...",
+      "url": "https://stores.bestbuy.com/nc/pineville/10600-centrum-pkwy-2653.html",
+      "summary": "Visit your local Best Buy Outlet at 10600 Centrum Pkwy in Pineville, NC for electronics, computers, appliances, cell phones, video games more new tech In store pickup free shipping",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "adjacent_hci",
       "materiality_score": 2,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "news"
+        "model",
+        "video",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "model_catalog_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: everysight, smart eyewear",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2a6fa24c816adc89",
-      "title": "15 Hidden Gems Near Tampa (Off-the-Beaten-Path Places Locals Love)",
-      "url": "https://wanderflorida.net/hidden-gems-near-tampa/",
-      "summary": "These hidden gems near Tampa aren’t just places to kill time; they’re places that stick with you. Some offer a glimpse into Florida’s quieter, weirder history. Others serve up strong local flavor without the long lines or social media hype.",
+      "id": "179d6ea5ef968bec",
+      "title": "Best Buy in Rock Hill, SC - 1775 Chamberside Dr - Electronics ...",
+      "url": "https://stores.bestbuy.com/sc/rock-hill/1775-chamberside-dr-894.html",
+      "summary": "Visit your local Best Buy at 1775 Chamberside Dr in Rock Hill, SC for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free shipping.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "video",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3ff1f3f9550edc36",
+      "title": "Djork-Arné Clevert | OpenReview",
+      "url": "https://openreview.net/profile?id=~Djork-Arn%C3%A9_Clevert2",
+      "summary": "Promoting openness in scientific communication and the peer-review process",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2d76589f675c7314",
+      "title": "Looki L1 Review: I Wore an AI Companion for 30 Days",
+      "url": "https://www.dapperandgroomed.com/blog/looki-l1-ai-device-review",
+      "summary": "After wearing the Looki L1 for 30 days, I no longer see it as a small wearable camera. It has become my AI wearable companion: a device that documents parts of my life, remembers small details and gives advice based on what is actually happening around me.",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e1ae531e24e86097",
+      "title": "101 Best Attractions & Things To Do In Omaha, Nebraska (2026)",
+      "url": "https://ohmyomaha.com/things-to-do-omaha/",
+      "summary": "Omaha's Henry Doorly Zoo & Aquarium operates a second animal attraction just outside of Omaha, the Nebraska Wildlife Safari. It's mostly a drive-through experience where you'll see bison, Sandhill cranes, and elk.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -123,10 +244,315 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4757ab6918498918",
-      "title": "16 Best Vacation Spots to Check Out Near Tampa – Holidays",
-      "url": "https://www.holidays.com/best-vacation-spots-near-tampa/",
-      "summary": "Organized by distance away from the city, you’ll find plenty of beautiful beaches and exciting attractions to explore. Looking for an all-in-one package destination? Less than an hour from Tampa is Clearwater Beach. It will lure you in with its white sandy beaches and clear blue waters.",
+      "id": "2dab2abf01a91fe3",
+      "title": "All Outlet - Best Buy",
+      "url": "https://www.bestbuy.com/site/outlet-refurbished-clearance/all-outlet/pcmcat1708045838024.c?id=pcmcat1708045838024",
+      "summary": "Find brand names and top-quality deals on tech in the Best Buy Outlet. Products returned under Best Buy’s Return and Exchange Promise. New-in-box products that have been discontinued by the manufacturer or Best Buy. Products repaired and restored to a like-new state. New!",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f71867438ca3c080",
+      "title": "Analytics Security Implementation Guide - Salesforce",
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/bi_admin_guide_security.pdf",
+      "summary": "Note: CRM Analytics supports security predicates, a robust row-level security feature that enables you to model many different types of access controls on datasets. Also, CRM Analytics supports sharing inheritance, to synchronize with sharing that's configured in Salesforce, subject to certain limitations.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a80ac030951d8798",
+      "title": "Bee - Your new wearable personal AI",
+      "url": "https://bee.computer/",
+      "summary": "Come build the future of ambient AI with us! Bee is the personal wearable Ai that understands you.",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b5fc944eb524bfae",
+      "title": "BEST BUY - 1775 Chamberside Dr, Rock Hill SC - Hours, Directions ...",
+      "url": "https://www.loc8nearme.com/south-carolina/rock-hill/best-buy/255543/",
+      "summary": "Best Buy at 1775 Chamberside Dr, Rock Hill SC 29730 - hours, address, map, directions, phone number, customer ratings and reviews.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "16970a91ba250d17",
+      "title": "Best Buy Outlet",
+      "url": "https://www.bestbuy.com/site/electronics/outlet-refurbished-clearance/pcmcat142300050026.c?id=pcmcat142300050026",
+      "summary": "Shop Best Buy Outlet for refurbished, clearance and open-box electronics. Find big savings on TVs, computers, appliances and cell phones at our outlet store.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "900c568c0e32e62e",
+      "title": "Best Buy Outlet Store Hours & Locations - All States",
+      "url": "https://www.storeshours.com/best-buy-outlet",
+      "summary": "Find opening hours, addresses and phone numbers for Best Buy Outlet locations near you. Select a state below, or enter your ZIP code to find the closest stores.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "61448305029005c7",
+      "title": "Best Buy Outlet Store Locator",
+      "url": "https://www.factoryoutletstores.info/store-locator/best-buy/",
+      "summary": "Find the nearest Best Buy outlet store. Enter your ZIP code to see Best Buy outlet locations sorted by distance, with mall addresses, phone numbers and directions.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "65b1982ec1840d40",
+      "title": "Best Buy Outlet Stores - The Freebie Guy®",
+      "url": "https://thefreebieguy.com/online-and-in-store-best-buy-outlet-stores/",
+      "summary": "Best Buy brick-and-mortar outlet stores offer a wide range of open-box and clearance products, while the online Outlet features four categories of discounted delights: clearance, open-box, refurbished, and pre-owned.",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b5781ef825fe3a2e",
+      "title": "C&N Business Loans",
+      "url": "https://businessloans.cnbankpa.com/reset-username/",
+      "summary": "Loan Origination System Enter your registered email below and we will send you an email containing your username. Please contact us if you do not receive an email containing your username. Email*",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "083eeca5209d9926",
+      "title": "C&N Business Loans",
+      "url": "https://businessloans.cnbankpa.com/rest-auth/login/",
+      "summary": "Welcome to C&N's business lending solution Consider this your one-stop-shop for your loan application. Once you've registered, this online system will make your loan process easy and convenient.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "650668422484ea69",
+      "title": "C&N | Bank in PA and NY | Banking & Loans | C&N",
+      "url": "https://www.cnbankpa.com/",
+      "summary": "Bank with C&N in PA and NY and enjoy great personal and business banking solutions. Explore accounts, mortgages, loans and more.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c761a62a5c9822ea",
+      "title": "Cities Near Me - Omaha, Nebraska | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Omaha,+NE",
+      "summary": "Find the top 15 cities, towns, and suburbs near Omaha, NE, like Council Bluffs and La Vista, and explore the surrounding area for a day trip.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -150,10 +576,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "016bc81919db81e8",
-      "title": "Cities Nearby Tampa, Florida, United States",
-      "url": "https://www.thecitiesnow.com/united_states/florida/tampa",
-      "summary": "Find five hundred cities near Tampa, Florida, United States from closest to farthest by distance. Distances from Tampa to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "id": "bf75c3cbdc9aa4ce",
+      "title": "Cities Nearby Omaha, Nebraska, United States",
+      "url": "https://www.thecitiesnow.com/united_states/nebraska/omaha",
+      "summary": "Find five hundred cities near Omaha, Nebraska, United States from closest to farthest by distance. Distances from Omaha to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -177,12 +603,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bb08f18b177ad691",
-      "title": "LebeL (ルベル) / ザ・モイ バーム アンビエントデュウ 37gの公式商品情報｜美容・化粧品情報はアットコスメ",
-      "url": "https://www.cosme.net/variations/1161295/",
-      "summary": "【アットコスメ】LebeL (ルベル) / ザ・モイ バーム アンビエントデュウ 37g（ヘアワックス・クリーム）の公式商品情報。 口コミ（2件）や写真による評判、ザ・モイ バーム アンビエントデュウに関する記事やQ&Aをチェックできます。",
+      "id": "231047b985d81fdb",
+      "title": "Clearance Electronics Outlet - Best Buy",
+      "url": "https://www.bestbuy.com/site/outlet-refurbished-clearance/clearance-electronics/pcmcat748300666044.c?id=pcmcat748300666044",
+      "summary": "Find brand names and top-quality deals on tech in the Best Buy Outlet. Shop Best Buy Outlet for a great selection of clearance electronics, including TVs, computers, cell phones, appliances and more.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "94c29cb7762145b7",
+      "title": "Clever: A Curated Benchmark for Formally Verified Code Generation",
+      "url": "https://openreview.net/attachment?id=pqNFDA2TFm&name=pdf",
+      "summary": "We introduce CLEVER, the first curated benchmark for evaluating the generation of specifications and formally verified code in Lean. The benchmark comprises of 161 programming problems; it evaluates both formal speci-fication generation and implementation synthesis from natural language, requiring formal correctness proofs for both.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -204,12 +658,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "143fab2f42b44c12",
-      "title": "LebeL (ルベル) / ザ・モイ バーム アンビエントデュウの公式商品情報｜美容・化粧品情報はアットコスメ",
-      "url": "https://www.cosme.net/products/10246978/",
-      "summary": "【アットコスメ】LebeL (ルベル) / ザ・モイ バーム アンビエントデュウ（ヘアワックス・クリーム）の公式商品情報。 口コミ（2件）や写真による評判、ザ・モイ バーム アンビエントデュウに関する記事やQ&Aをチェックできます。",
+      "id": "6a42cc1b12d8b88d",
+      "title": "CLEVER: A Curated Benchmark for Formally Verified Code Generation",
+      "url": "https://openreview.net/forum?id=IbOacMF5qd",
+      "summary": "TL;DR: We introduce CLEVER, a hand-curated benchmark for verified code generation in Lean. It requires full formal specs and proofs. No few-shot method solves all stages, making it a strong testbed for synthesis and formal reasoning.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -217,763 +671,913 @@
       "status": "candidate",
       "disposition": "collected",
       "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7663c9e2fe7a2ad0",
-      "title": "THE MOII | PRODUCTS | LebeL（ルベル）オフィシャルサイト",
-      "url": "https://www.lebel.co.jp/products/series/themoii/",
-      "summary": "THE MOII（ザ・モイ）。 それは、どこまでもイノベーティブなナチュラル。 自然由来成分*で、肌にも髪にも心地いい。 でもそろそろ、やさしいだけではもの足りない。 髪質、年齢、ジェンダーなど、 あらゆるフレームを軽やかに解き放つデザイン性。",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "93bbb4ea3224618c",
-      "title": "Top 15 Things to Do in Tampa, FL - Tampa Attractions",
-      "url": "https://www.tripadvisor.com/Attractions-g34678-Activities-Tampa_Florida.html",
-      "summary": "Experience wildlife like nowhere else! See Florida manatees receiving lifesaving care. Get up-close to a rescued Florida panther. Take a stroll down a shaded boardwalk – where you’ll find native birds…",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f965505a18290faf",
-      "title": "【新品】ルベル ザ・モイ バーム アンビエントデュウ スタイリング剤 ヘアケア 【公式通販】",
-      "url": "https://rossbikes.com/subminister/heyduk/22637735749",
-      "summary": "コメリポイント ： 140ポイント獲得 コメリポイントについて 購入個数 お店で受け取る （送料無料） 受け取り店舗： お店を選ぶ 近くの店舗を確認する 納期目安： 13時 までに注文→ 17時 までにご用意 17時 までに注文→ 翌朝 までにご用意",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "752498ad4bffa432",
-      "title": "ザ・モイ バーム アンビエントデュウ - BEAUTY CITY",
-      "url": "https://salon.beauty-city.jp/bc/shop/goods/index.html?ggcd=334601971477",
-      "summary": "THE MOII ザ・モイ バーム アンビエントデュウ 敏感肌の方によるパッチテスト済み すべての方に皮膚刺激が起きないというわけではありません。 ケアしながら、髪質やスタイルに合わせて質感チェンジ。 ＜ボディ・ヘアトリートメントバーム＞",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "338b98fb7972b3da",
-      "title": "ザ・モイ バーム アンビエントデュウ - LebeL（ルベル）｜hairinfo（ヘアインフォ）",
-      "url": "https://hairinfo.jp/products/G4o2JlK0qmLa/4952195628940",
-      "summary": "カテゴリー スタイリング剤 商品種類 ヘアバーム・バター メーカー名 LebeL（ルベル） ブランド名 THE MOII（ザ・モイ） 商品名 ザ・モイ バーム アンビエントデュウ 容量 37g 価格 3,520円",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "feeedfbb588daffe",
-      "title": "ザ・モイ バーム アンビエントデュウ | PRODUCTS | LebeL（ルベル）オフィシャルサイト",
-      "url": "https://www.lebel.co.jp/products/item/402131/",
-      "summary": "STYLING HAIR CARE OTHER THE MOII ザ・モイ バーム アンビエントデュウ ボディ・ヘアトリートメントバーム ヘアサロン専売品 シアバター*¹とシュガーオイル*²が、しっとりとしたうるおいをキープ。 ウェットな束感や重めのスタイルに。 自然由来成分*³ 100%",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3e3c04afc3086c6d",
-      "title": "ACTUS - RDL - L'info de la région",
-      "url": "https://www.rdlradio.fr/actus/locales",
-      "summary": "13 juillet 2026 Wingles: Un jeune perd la vie, noyé à la base de loisirs",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3c8fb26031828d0e",
-      "title": "ACTUS - RDL - L'info de la région",
-      "url": "https://www.rdlradio.fr/actualites/1",
-      "summary": "27 septembre 2026 Les pronostics hippiques de Sébastien Mortagne : Lundi 28 Septembre",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "34596c9c116590db",
-      "title": "ACTUS - RDL - Les Pronostics Hippiques",
-      "url": "https://www.rdlradio.fr/news/pronostics-de-christian-179/1",
-      "summary": "Les pronostics hippiques de Sébastien Mortagne : Mardi 29 Septembre Mardi 29 Septembre",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9f0bb3f393a8a23d",
-      "title": "ACTUS - RDL - Les Pronostics Hippiques",
-      "url": "https://www.rdlradio.fr/news/pronostics-de-christian-179/4",
-      "summary": "Les pronostics hippiques de Sébastien Mortagne : Vendredi 11 Septembre Vendredi 11 Septembre",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "265155a3d849e42e",
-      "title": "Fréquences - RDL",
-      "url": "https://www.rdlradio.fr/frequences",
-      "summary": "Découvrez les fréquences de RDL \"La Radio qui chante\" : Béthune 99.2 - Dunkerque 89.8 - Montreuil 92.3 - St Omer 89.6 - St Pol-sur-Ternoise 89.1",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ed90aa1058ab6ea9",
-      "title": "Les pronostics hippiques de Sébastien Mortagne - RDL",
-      "url": "https://www.rdlradio.fr/page-contenu-article-1514",
-      "summary": "Les pronostics hippiques de Sébastien Mortagne : Jeudi 16 Juillet Crédit image: RDL - 2021",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8dd0e38ff62258d1",
-      "title": "Les pronostics hippiques de Sébastien Mortagne - RDL",
-      "url": "https://www.rdlradio.fr/page-contenu-article-1513",
-      "summary": "Mercredi 15 Juillet Arrivée : 11 - 3 - 4 - 5 - 14 Meilleur impression : 3 Jackson Touch - 5 Jade Hippodrome de Lisieux - Trot - 18h30 Prix de Coquainvillers - 8éme course - 14 pts - 2675 m Mon Prono : 11 - 3 - 1 - 7 - 13 - 12 - 4 Ma dernière mnute : 3 JACKSON TOUCH 11 JURELLA DE PALM : Quand elle ne se montre pas fautive, elle est capable de belles choses. En se référençant à sa ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "15a6e8e486ca60c2",
-      "title": "Les pronostics hippiques de Sébastien Mortagne - RDL",
-      "url": "https://www.rdlradio.fr/page-contenu-article-1518",
-      "summary": "Lundi 20 Juillet Arrivée : 15 - 11 - 1 - 13 - 2 Meileures impressions : 15 Chaldero - 1 Ten Horns Hippodrome de Vichy - Galop - 18h30 Prix Hubert de Catheu - 8éme course - 16 pts - 1400 m Mon Prono : 2 - 1 - 11 - 5 - 3 - 14 - 12 Ma dernière minute : 1 TEN HORNS 2 BREIZH SKY : Déjà vu à son avantage dans les courses de Groupe I, il a eu ensuite du mal à digérer le haut niveau mais ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "24d3f8c1ff4a1783",
-      "title": "Les pronostics hippiques de Sébastien Mortagne - RDL",
-      "url": "https://www.rdlradio.fr/page-contenu-article-1567",
-      "summary": "Les pronostics hippiques de Sébastien Mortagne : Mardi 8 Septembre Crédit image: RDL - 2021",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2bce87bd491b50f",
-      "title": "Magical Girl Witch Trial | Magical Girl Witch Trial Wiki | Fandom",
-      "url": "https://13witch-trials.fandom.com/wiki/Magical_Girl_Witch_Trial",
-      "summary": "Magical Girl Witch Trials, known in Japanese as 'Mahou Shoujo no Majo Saiban' is a Japanese psychological horror mystery adventure game developed by Acacia, released on 18th July 2025 in Japanese and Chinese on Steam, with other languages confirmed to be in development, as well as a Nintendo Switch version to be released in July of 2026.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "released"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ad2c4127beb43711",
-      "title": "Magical Girl Witch Trials (Visual Novel) - TV Tropes",
-      "url": "https://tvtropes.org/pmwiki/pmwiki.php/VisualNovel/MagicalGirlWitchTrials",
-      "summary": "Magical Girl Witch Trials (Japanese Title: 魔法少女ノ魔女裁判, Mahou Shoujo no Majo Saiban) is a Visual Novel developed by Acacia and published by Re,AER. It was released on Steam on July 18, 2025 in Japanese, with a later release on the Nintendo Switch in July 9, 2026.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "released"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7f70c0267f7f0b50",
-      "title": "Magical Girl Witch Trials - Acacia Wiki",
-      "url": "https://acacia.wiki.gg/wiki/Magical_Girl_Witch_Trials",
-      "summary": "Demo Mahou Shoujo no Majo Saiban Demo: First-victim Edition [note 5] was released on June 9th 2025, in both Japanese and Chinese languages, on Steam. The demo's contents remained largely the same as the finalized game, going up to the death of Noah Jogasaki, hence the name, and the beginning of the subsequent trial.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "released"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2872ea413aba1ae5",
-      "title": "Magical Girl Witch Trials - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Magical_Girl_Witch_Trials",
-      "summary": "Magical Girl Witch Trials (Japanese: 魔法少女ノ魔女裁判, Hepburn: Mahō Shōjo no Majo Saiban), abbreviated as Manosaba (Japanese: まのさば), is a 2025 psychological horror mystery adventure [2] game by Re,AER & Acacia, a scenario writing company. The game was released on Microsoft Windows. The Nintendo Switch version was released on July 9, 2026. [3] The game was developed by ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "released"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dd54ba9132ad0a44",
-      "title": "RDL - La Radio qui Chante",
-      "url": "https://www.rdlradio.fr/",
-      "summary": "RDL \"La Radio qui Chante\" à Béthune, Dunkerque, St Omer, Montreuil et St Pol-sur-Ternoise... Les plus belles chansons françaises",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f82f51efe5d39298",
-      "title": "**New Series Translation!** Magical Girl Witch Trials",
-      "url": "https://avelilium.com/2026/07/30/new-series-translation-magical-girl-witch-trials/",
-      "summary": "Despite their anxieties, these girls begin to grow closer — but the fragile peace they maintain is shattered when a murder occurs. The owl assembles the captive girls and declares the start of a witch trial: a brutal game to identify the culprit of the murder — to identify who is to be executed.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d832ee854eaa5104",
-      "title": "2026 Island Hop Craft Beer & Spirits Festival",
-      "url": "https://www.fernandinamainstreet.com/post/2026-island-hop-craft-beer-spirits-festival",
-      "summary": "Fernandina Beach Main Street is excited to announce the return of the 2026 Island Hop Craft Beer & Spirits Festival, taking place on Saturday, October 3, 2026, at Central Park in the heart of historic downtown Fernandina Beach.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fad64ebb0ced30cb",
-      "title": "Belmont Market",
-      "url": "https://www.belmontmarket.com/",
-      "summary": "Wakefield, Rhode Island's premier supermarket shopping experience. Boasts the best bakery in town, the best locally sourced produce, and the finest, freshest meats as well.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3a8e49fc9c31443c",
-      "title": "BELMONT MARKET - Reviews, Photos & Phone Number (2026) - Grocery Store ...",
-      "url": "https://belmont-market-1.wheree.com/",
-      "summary": "Belmont Market is a community-focused grocery store located in Wakefield, Rhode Island. Reviews indicate that it offers a straightforward shopping experience with an easy-to-follow layout and maintained cleanliness.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
       "content_types": [
         "community"
       ],
       "primary_type": "community",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "86cc14f75fb805a3",
-      "title": "Belmont Market - Wakefield, RI - Yelp",
-      "url": "https://www.yelp.com/biz/belmont-market-wakefield",
-      "summary": "Belmont Market specializes in fresh, high quality product at the lowest prices. A breathtaking environment with helpful and knowledgeable staff. This certainly is a better place to shop.…",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "38fae57047eb2a3d",
+      "title": "Consumer Application | C&N Bank",
+      "url": "https://www.easyopen.cnbankpa.com/s/consumer-application",
+      "summary": "Important information about opening a new account: To help the government fight the funding of terrorism and money laundering activities, federal law requires all financial institutions to obtain, verify and record information that identifies each person who opens an account.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f3257b4679ff3ef9",
-      "title": "Belmont Market in Wakefield, RI 02879 - 401-783... - Chamber of Commerce",
-      "url": "https://www.chamberofcommerce.com/business-directory/rhode-island/wakefield/grocery-store/2003469920-belmont-market",
-      "summary": "Belmont Market is located at 600 Kingstown Rd in Wakefield, Rhode Island 02879. Belmont Market can be contacted via phone at 401-783-4656 for pricing, hours and directions.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "a88d7e725021e86a",
+      "title": "Contact Us | Form, Phone, Email | Bank in PA & NY | C&N",
+      "url": "https://www.cnbankpa.com/About/Lets-Connect/Contact-Us",
+      "summary": "Contact C&N, a bank in PA and NY, through our contact form, by phone or email. Get customer support, answers about our products and services and more.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ce720ef7a4f6d8f3",
-      "title": "Belmont Market Weekly Ad Sales",
-      "url": "https://www.iweeklyads.com/belmont-market-weekly-ad-sales/",
-      "summary": "Belmont Market is located at 600 Kingstown Road, Wakefield, RI 02879. Explore all the current deals and specials in the latest Belmont Market weekly ad. Promotions, discounts, rebates, coupons, specials, and the best sales of the week are available in your store's weekly ad circular. iWeeklyAds.com is the essential website for your weekly shopping.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "855e525a314b7287",
+      "title": "craigslist | nebraska",
+      "url": "https://geo.craigslist.org/iso/us/ne",
+      "summary": "choose the site nearest you: grand island lincoln north platte omaha / council bluffs scottsbluff / panhandle sioux city, IA",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7c1f9afe7ab0dcf0",
+      "title": "Create bell curve chart in Excel - ExtendOffice",
+      "url": "https://www.extendoffice.com/excel/excel-charts/excel-create-bell-curve-chart.html",
+      "summary": "Learn how to create a bell curve chart in Excel to visualize data distribution, ideal for statistical analysis and understanding data variability.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d38ab678f4f6f56f",
+      "title": "Developer Portal | Salesforce Developers",
+      "url": "https://developer.salesforce.com/",
+      "summary": "Learn to build mobile and enterprise apps in the cloud on Salesforce. Access docs, tools, tutorials, and more on the Salesforce Developers website.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71bfb2959bfa48bf",
+      "title": "Digital Banking Services | NY And PA Online Banking | C&N",
+      "url": "https://www.cnbankpa.com/Personal/Bank/Digital-Banking/Online-Banking",
+      "summary": "Enroll in online banking services from C&N in PA & NY through C&N's Digital Banking. Access and monitor accounts anytime, transfer funds, pay bills & more.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "19b2e2838a0a8f49",
+      "title": "Experian Data Validation for Sales/Service Cloud: Address, email ...",
+      "url": "https://appexchange.salesforce.com/appxListingDetail?listingId=a0N300000055e86EAA",
+      "summary": "Power your business with complete and accurate customer contact data. Experian’s real-time email, phone, and address validation solutions ensure only accurate, complete and correctly formatted contact data enters Salesforce.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e0c456f1d0733e03",
+      "title": "Home | C&N Bank",
+      "url": "https://www.easyopen.cnbankpa.com/s/",
+      "summary": "Information for all people associated with the account (including contact information, date of birth, government-issued ID & social security number)",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "578599c684e87298",
+      "title": "How to create a bell curve chart template in Excel? - ExtendOffice",
+      "url": "https://www.extendoffice.com/documents/excel/2404-excel-template-bell-curve-chart.html",
+      "summary": "This article will walk you through step-by-step instructions to create a bell curve chart using your own dataset in Excel and further guide you on how to save this setup as a reusable chart template for future analyses.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d6107b57d7700b92",
+      "title": "How to Create a Bell Curve Chart | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/excel/how-to-create-a-bell-curve-chart",
+      "summary": "A bell curve is a plot of normal distribution of a given data set. This article describes how you can create a chart of a bell curve in Microsoft Excel.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0c4de7642a0b46eb",
+      "title": "How to Create a Bell Curve Graph in Excel (Step-by-Step)",
+      "url": "https://gptforwork.com/blog/how-to-create-a-bell-curve-graph-in-excel",
+      "summary": "Learn how to create a bell curve graph in Excel with the NORM.DIST function and a scatter chart. Step-by-step formulas, chart setup, and the 68-95-99.7 rule.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "50d5b9a6e68d6803",
+      "title": "How to Create a Bell Curve in Excel (2 Methods) - ExcelDemy",
+      "url": "https://www.exceldemy.com/create-a-bell-curve-in-excel/",
+      "summary": "In this article, we will show you 2 easy methods of how to create a Bell Curve in Excel with and without dataset.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b0a1c986b74dac38",
+      "title": "How to Curve Grades in Excel (Formulas) — or Skip the Spreadsheet",
+      "url": "https://wiztag.io/blog/curve-grades-in-excel/",
+      "summary": "Step-by-step Excel formulas for flat, linear, square root, and bell curves — plus a faster free alternative. Curve whole-class scores without the spreadsheet headache.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "hack"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "76aaf049ff92a59f",
+      "title": "How to Make a Bell Curve in Excel (3 Easy Ways) - Spreadsheet Planet",
+      "url": "https://spreadsheetplanet.com/bell-curve-excel/",
+      "summary": "I’ll show you how to draw a bell curve from a known mean and standard deviation, then build one from your own data. You’ll also see how to shade the area between two limits.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "93bbedb3a1283b20",
+      "title": "How to Make a Bell Curve in Excel (Step-by-step Guide)",
+      "url": "https://trumpexcel.com/bell-curve/",
+      "summary": "Learn how to create a bell curve in Excel. It's widely used for performance appraisals in jobs and grade evaluations in schools.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "604224c3ce75ece0",
+      "title": "How to Make a Grade Distribution Chart in Excel | Graphed Blog",
+      "url": "https://www.graphed.com/blog/how-to-make-a-grade-distribution-chart-in-excel",
+      "summary": "Create a grade distribution chart in Excel effortlessly. Follow our step-by-step guide to visualize student scores and spot performance trends instantly.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8a5206f74a79ecc8",
+      "title": "Introducing SQL for CRM Analytics - Salesforce Developers",
+      "url": "https://developer.salesforce.com/docs/analytics/bi-dev-guide-sql/guide/bi-sql-intro.html",
+      "summary": "Introducing SQL for CRM Analytics SQL for CRM Analytics is a query language that lets you execute queries against your CRM Analytics datasets. SQL (Structured Query Language) is typically used for working with data stored in relational databases—you might already be familiar with variants like MySQL and PostGreSQL.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f847509a2128be8",
+      "title": "Local Omaha Breaking News and Live Alerts - KETV NewsWatch 7",
+      "url": "https://www.ketv.com/local-news",
+      "summary": "KETV NewsWatch 7 is your source for the latest local headlines and live alerts. Visit Omaha's most reliable source for breaking news.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5775276ae1ee4e89",
+      "title": "Looki L1 | AI Wearable Camera That Journals Your Life",
+      "url": "https://sea.looki.ai/",
+      "summary": "Looki L1 is an AI wearable camera that captures everyday moments hands-free and turns them into lifelogs, comics, auto vlogs, and searchable memories.",
+      "discovery_channel": "adjacent",
+      "query": "AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c134be3ff8fc8123",
+      "title": "Map Data Effectively and Create Unified Customer Profiles",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/data-cloud-connect-and-unify/map-and-unify-data",
+      "summary": "These profiles are mutable, meaning they update and improve in accuracy as source data changes, new data sources are processed, or you adjust your identity resolution rules. Think of a unified profile like a key ring.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d41a13d805b5fa4c",
+      "title": "On the Planning Abilities of Large Language Models : A Critical ...",
+      "url": "https://openreview.net/pdf?id=X6dEqXIsEW",
+      "summary": "While, as we mentioned earlier, there can be thorny “clever hans” issues about humans prompting LLMs, an automated verifier mechanically backprompting the LLM doesn’t suffer from these. We tested this setup on a subset of the failed instances in the one-shot natural language prompt configuration using GPT-4, given its larger context window.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a82513ba3b5ef862",
+      "title": "Outlet Deals - Best Buy",
+      "url": "https://www.bestbuy.com/site/promo/outlet-deals",
+      "summary": "outlet-deals Geek Squad Refurbished Good - Apple Watch Series 10 (GPS) 46mm Aluminum Case with Black Sport Band - M/L - Jet Black - (2024)",
+      "discovery_channel": "adjacent",
+      "query": "wearable gesture control interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e90347ba7cd67ec3",
+      "title": "Personal Banking | PA & NY Personal Accounts and Loans | C&N",
+      "url": "https://www.cnbankpa.com/Personal",
+      "summary": "As Your Bank for a Lifetime, it’s our mission to create value through lifelong relationships with our neighbors in Pennsylvania and New York. C&N offers a variety of banking solutions, including checking accounts, savings accounts, mortgages, business loans and more.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "70be5224abff7ea9",
+      "title": "Salesforce CRM Basics - Trailhead",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/lex_implementation_basics/lex_implementation_basics_welcome",
+      "summary": "Learn about Salesforce CRM, its features, customization options, standard and custom objects, and how Salesforce organizes your data.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d074eb31bfc64e85",
+      "title": "Salesforce.com, Inc. - Investor Events",
+      "url": "https://investor.salesforce.com/events-and-presentations/default.aspx",
+      "summary": "Speakers: Robin Washington, Chief Operating and Financial Officer, & Joe Inzerillo, President, Enterprise and AI Technology",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0cdaccd1d3bc4d56",
+      "title": "Salesforce: The #1 Agentic AI CRM",
+      "url": "https://www.salesforce.com/",
+      "summary": "Salesforce is the #1 AI CRM, helping companies become Agentic Enterprises where humans and agents drive success together through a unified AI, data, and Customer 360 platform.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "df1a31e28da254ef",
+      "title": "Things to Do in Omaha | Top Attractions, Events & Family Fun",
+      "url": "https://www.visitomaha.com/things-to-do/",
+      "summary": "Explore Omaha's top things to do, from the nation's best zoo and interactive museums to outdoor adventures, live entertainment, and local gems.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8689a39accadebc2",
+      "title": "Ultimate Bell Curve Guide – Create Grade Distribution Chart in Excel",
+      "url": "https://www.myexcelonline.com/blog/grade-distribution-chart-in-excel/",
+      "summary": "Learn how to create grade distribution chart in Excel. This guide covers data preparation, chart adjustments, and insights for educators.",
+      "discovery_channel": "adjacent",
+      "query": "wearable eye tracking",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9857355b28f43e8d",
+      "title": "Wellsboro PA Bank Branch | Checking & Savings Accounts | C&N",
+      "url": "https://www.cnbankpa.com/About/Lets-Connect/Locations/Wellsboro-PA",
+      "summary": "C&N’s Wellsboro, PA bank branch offers checking and savings accounts with personal, local service. Visit our team to open an account that fits your goals.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "592dbeb46caad1a7",
+      "title": "West Milton, PA Branch | Mortgage Loans and Refinancing | C&N",
+      "url": "https://www.cnbankpa.com/About/Lets-Connect/Locations/West-Milton-PA",
+      "summary": "C&N's West Milton, PA branch team is here to help walk you through our different mortgage loans and refinancing options. Stop in today to get started.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af3cef8855372854",
+      "title": "What Is CRM (Customer Relationship Management)? | Salesforce",
+      "url": "https://www.salesforce.com/crm/what-is-crm/",
+      "summary": "What Is CRM (Customer Relationship Management)? CRM is an AI-powered system that unifies all of your company’s data, connects every customer touchpoint, and powers employee tools, so you can improve relationships, streamline processes, and drive growth.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "03dd9386df452c7e",
+      "title": "| Agentic Patterns and Implementation with Agentforce | Agentforce",
+      "url": "https://architect.salesforce.com/docs/architect/fundamentals/guide/agentic-patterns.html",
+      "summary": "CRM Data: Customer data available in CRM that provides context to one or more agents Data 360 components, including DLOs and DMOs, that store relevant customer data ingested from different sources Calculated, streaming, and real-time insights supply agents with immediate, pertinent data regarding customers, their activity, and critical insights.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
       "content_types": [
         "model"
       ],
       "primary_type": "model",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7659e8b3abef0a7f",
-      "title": "Belmont Market Weekly Ads & Flyers | WeeklyAd.io",
-      "url": "https://www.weeklyad.io/belmont-market",
-      "summary": "View the Belmont Market weekly ad for fresh produce, local meats, and grocery savings at our Wakefield, Rhode Island store. Plan your shopping list today.",
+      "id": "22698812eb4bd3a5",
+      "title": "2026 Toyota Tacoma SR Delray Beach FL | Ed Morse Delray Toyota ...",
+      "url": "https://delraytoyota.com/new-Delray+Beach-2026-Toyota-Tacoma-SR-3TYKD5HN7TT09A705",
+      "summary": "Research the 2026 Toyota Tacoma SR in Delray Beach, FL at Ed Morse Delray Toyota. View pictures, specs, and pricing on our huge selection of vehicles. 3TYKD5HN7TT09A705",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "open source smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -983,23 +1587,24 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d386782cb5023552",
-      "title": "Belmont Market | Wakefield RI - Facebook",
-      "url": "https://www.facebook.com/belmontmarketri/",
-      "summary": "The evening brought together some of the best restaurants, chefs and culinary businesses from across Southern Rhode Island for an incredible night of food, drinks and community.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "033e34d7eaf0a246",
+      "title": "Army Publishing Directorate",
+      "url": "https://armypubs.army.mil/",
+      "summary": "We would like to show you a description here but the site won’t allow us.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "community",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1009,23 +1614,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "71f8b3e917a1fcab",
-      "title": "Belmont Market, 600 Kingstown Road, Wakefield, RI (2026)",
-      "url": "https://www.findglocal.com/US/Wakefield/152072028162127/Belmont-Market",
-      "summary": "Belmont Market is proud to be a sponsor of Bark on the Beach happening this Sunday! 🐾 Join Animal Rescue Rhode Island on Sunday, September 13th from 9:30–11:30 AM at Narragansett Town Beach for a fun morning supporting dogs like Prairie who are still waiting for their second chance. 💙",
+      "id": "2778b5db97a4d449",
+      "title": "Generation X - Research and data from Pew Research Center",
+      "url": "https://www.pewresearch.org/topic/generations-age/generations/generation-x/",
+      "summary": "Gen X rebounds as the only generation to recover the wealth lost after the housing crash Generation Xers were hit particularly hard in the recession. Yet Gen Xers are the only generation of households to recover the wealth they lost in the downturn.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1035,23 +1642,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "348105e3904b0bc6",
-      "title": "Discover Belmont Market: A Culinary Gem in Wakefield, Rhode Island",
-      "url": "https://evendo.com/locations/rhode-island/narragansett-beach/shop/belmont-market",
-      "summary": "Experience the best of local flavors at Belmont Market in Wakefield, Rhode Island, featuring organic produce, gourmet meats, and artisan baked goods.",
+      "id": "0d99f28a41bdd14f",
+      "title": "How Millennials Approach Family Life | Pew Research Center",
+      "url": "https://www.pewresearch.org/social-trends/2020/05/27/as-millennials-near-40-theyre-approaching-family-life-differently-than-previous-generations/",
+      "summary": "Three-in-ten Millennials live with a spouse and child, compared with 40% of Gen Xers at a comparable age.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1061,101 +1670,136 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "16d5791c7aadeb14",
-      "title": "Google Translate",
-      "url": "https://translate.google.pl/m?etc",
-      "summary": "Google Translate",
+      "id": "32c06fb584c7f281",
+      "title": "How Millennials compare with prior generations | Pew Research Center",
+      "url": "https://www.pewresearch.org/social-trends/2019/02/14/millennial-life-how-young-adulthood-today-compares-with-prior-generations-2/",
+      "summary": "Gen X women were the first to outpace men in terms of education, with a 3-percentage-point advantage over Gen X men in 2001. Before that, late Boomer men in 1989 had a 2-point advantage over Boomer women. Employment Boomer women surged into the workforce as young adults, setting the stage for more Gen X and Millennial women to follow suit.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "19c03eb38250ef4f",
+      "title": "Reggie Jackson - ClutchFans",
+      "url": "https://bbs.clutchfans.net/threads/reggie-jackson.313442/",
+      "summary": "Welcome! Please take a few seconds to create your free account to post threads, make some friends, remove a few ads while surfing and much more. ClutchFans has been bringing fans together to talk Houston Sports since 1996. Join us!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ba48403ee3d60019",
+      "title": "Site calculators - Dairy Science",
+      "url": "https://www.dairyscience.info/index.php/site-calculators/site-calculators.html",
+      "summary": "This section offers a comprehensive suite of calculators and models for food scientists and technologists. Key tools cover Dairy Science and Technology (e.g., Van Slyke cheese yield, milk standardization, casein/fat ratios, ice cream mix formulation), Food Technology (e.g., food energy value), and Thermal Processing (e.g., F-value calculation software for teaching principles and checking ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f37aef6641b5f00",
+      "title": "The Generation Gap in American Politics | Pew Research Center",
+      "url": "https://www.pewresearch.org/politics/2018/03/01/the-generation-gap-in-american-politics/",
+      "summary": "Half of white Millennials say racial discrimination is the main reason many blacks are unable to get ahead, which is 15 percentage points or more higher than any older generation of whites (35% of Gen X whites say this). The pattern of generational differences in political attitudes varies across issues.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8d637c6089adb496",
+      "title": "UPDATED 5/6/26 Fidelity Updates - Quicken",
+      "url": "https://community.quicken.com/discussion/7965464/updated-5-6-26-fidelity-updates",
+      "summary": "Hi everyone, We know some of you have been running into issues with your Fidelity accounts in Quicken. Thanks for your patience while we work through these. Below is the latest update on what’s happening, what’s fixed, and what you can do in the meantime. Fixed or Being Released * Duplicate Transactions (Windows) –Some…",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "released"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "111de6f754947a0b",
-      "title": "Island Hop Beer & Spirits Fest Amelia Island: Oct 2026",
-      "url": "https://jaxhumor.com/blogs/jacksonville-events/island-hop-craft-beer-fest-2026",
-      "summary": "The Island Hop Craft Beer and Spirits Fest hits Amelia Island Oct 3, 2026 with live music, food trucks, and a dog park. What to know.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1ffb9906f7db27a4",
-      "title": "Island Hop Craft Beer & Spirits Fest - Amelia Island",
-      "url": "https://www.ameliaisland.com/festivals-events/island-hop-craft-beer-festival/",
-      "summary": "Island Hop Craft Beer & Spirits Fest Presenting Sponsor First Love Brewing Corporate Sponsor IQ Fiber Saturday, October 3, 2026 Central Park VIP Admission at 12PM | General Admission at 1pm This year’s event promises to be the best yet, featuring a tasting experience that now includes craft spirits, in addition to local and regional beer and ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f882e17168174744",
-      "title": "Island Hop Craft Beer & Spirits Fest - Amelia Island",
-      "url": "https://aic.uat.starmarkcloud.com/festivals-events/island-hop-craft-beer-festival/",
-      "summary": "The Island Hop Craft Beer and Spirits Fest helps fund vital programs that preserve the charm of Fernandina Beach’s historic district and support its business community. Breweries, wineries, and now distilleries from across Northeast Florida and Southeast Georgia have been invited to participate.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
+        "model",
         "community"
       ],
-      "primary_type": "community",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1165,23 +1809,26 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "674c5bb212e9bf94",
-      "title": "Island Hop Craft Beer & Spirits Festival 2026 — Fernandina ...",
-      "url": "https://www.incomfortliving.com/guide/events/island-hop-craft-beer-spirits-festival-2026",
-      "summary": "The Island Hop Craft Beer & Spirits Festival takes over Central Park in the heart of historic downtown Fernandina Beach on Saturday, October 3, 2026 — a tasting event covering craft spirits alongside local and regional beer and wine. Music and tastings Local favorites The Honey Badgers and Andria Shinn and the Loyal Souls perform throughout the day while attendees work through the pour list ...",
+      "id": "793d10824deed167",
+      "title": "Where Millennials end and Generation Z begins | Pew Research Center",
+      "url": "https://www.pewresearch.org/short-reads/2019/01/17/where-millennials-end-and-generation-z-begins/",
+      "summary": "Generation X grew up as the computer revolution was taking hold, and Millennials came of age during the internet explosion. In this progression, what is unique for Generation Z is that all of the above have been part of their lives from the start. The iPhone launched in 2007, when the oldest Gen Zers were 10.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model",
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1191,12 +1838,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4c342d1053e75863",
-      "title": "Island Hop Craft Beer Festival 2026 - Amelia Island",
-      "url": "https://www.ameliaisland.com/activity/island-hop-craft-beer-festival-3/",
-      "summary": "« All Activities Island Hop Craft Beer Festival 2026 Join us in historic downtown Fernandina Beach for one of Northeast Florida’s favorite craft beverage and spirits festivals, bringing together breweries, distilleries, live music, and more for an unforgettable day of island vibes and community fun.",
+      "id": "dee50ec3b6838d57",
+      "title": "409 ways to trust God • Denison Forum",
+      "url": "https://www.denisonforum.org/resources/409-ways-to-trust-god/",
+      "summary": "Topical Scripture: Revelation 3:7-13 Do you know why Formula 409 is so named? Its developers experienced 408 failed attempts before their final product was created. Edmund Mcilhenny operated a sugar plantation and saltworks in Louisiana before the Civil War. When...",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1205,9 +1852,10 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
+        "sdk",
         "community"
       ],
-      "primary_type": "community",
+      "primary_type": "sdk",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1217,142 +1865,38 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1115e129d98dc12e",
-      "title": "Island Hop | Fernandina Main St",
-      "url": "https://www.fernandinamainstreet.com/islandhopcraftbeerfest",
-      "summary": "Island Hop Craft Beer & Spirits Festival! October 3, 2026 Join us in historic downtown Fernandina Beach for one of Northeast Florida’s favorite craft beverage and spirits festivals, bringing together breweries, distilleries, live music, and more for an unforgettable day of island vibes and community fun.",
+      "id": "6ceacc5c7633a4e0",
+      "title": "All your favorite porn niches and categories - Mature.nl",
+      "url": "https://www.mature.nl/en/niches",
+      "summary": "Browse through a complete list of all our juicy mature porn scenes we have available for you to stream and download! Find everything your favorite paysite Mature.nl has to offer!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bf83845f68d31141",
+      "title": "ambulatorychange.myhealthrecord.com",
+      "url": "https://ambulatorychange.myhealthrecord.com/",
+      "summary": "9/23/2026 11:12 AM App_Data 12/12/2014 4:06 PM Areas 10/31/2023 5:24 AM bin 12/12/2014 4:06 PM Content 8/20/2026 3:25 AM 32038 favicon.ico 8/20/2026 3:25 AM 134 Global.asax 12/12/2014 4:06 PM Images 8/20/2026 3:25 AM 7948 packages.config 12/12/2014 4:06 PM Scripts 12/12/2014 4:06 PM Views 8/20/2026 3:26 AM 24187 Web.config",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "605f790e0c818c9b",
-      "title": "Location - Belmont Market",
-      "url": "https://www.belmontmarket.com/location/",
-      "summary": "Belmont Market. Website by DW Green Company.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "363b372f8c8b1189",
-      "title": "Mahou Shoujo no Majo Saiban",
-      "url": "https://magical-girl-mahou-shoujo.fandom.com/wiki/Mahou_Shoujo_no_Majo_Saiban",
-      "summary": "Japanese Title: 魔法少女ノ魔女裁判. English Title: Magical Girl Witch Trials. \"There is a girl among you who has become a witch.\" On the morning she was supposed to start her first year of high school, Ema woke up inside a dimly lit cage.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "34027729a2c0b689",
-      "title": "Mahou Shoujo no Majo Saiban - MangaDex",
-      "url": "https://mangadex.org/title/f5218b50-8846-44ec-b4d5-fba2ae2fff54/maho-shojo-no-majo-saiban",
-      "summary": "Imprisoned within a remote island prison mansion for a crime she doesn't remember committing, a confused Emma receives a declaration from a single owl: “You have been identified as a potential witch — one who brings harm to this world.” “You will spend the rest of your life here as a prisoner.”",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "78ab1637f1118256",
-      "title": "Mahou Shoujo no Majo Saiban | vndb",
-      "url": "https://vndb.org/v50283",
-      "summary": "Imprisoned within a remote island prison mansion for a crime she doesn't remember committing, a confused Ema receives a declaration from a single owl: \"You have been identified as a potential witch — one who brings harm to this world.\" \"You will spend the rest of your life here as a prisoner.\"",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e0807299ce7aa2c6",
-      "title": "Save 20% on Magical Girl Witch Trials on Steam",
-      "url": "https://store.steampowered.com/app/3101040/Magical_Girl_Witch_Trials/",
-      "summary": "Thirteen girls awaken, only to find themselves in a prison. What awaits them: a Witch Trial. Help them prepare for the trial by exploring the prison in order to find the witch hidden amongst them. Find the witch, learn what kind of magic she holds, dispel the lies, and prepare for the execution. Accessibility Features (4)?",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1373,10 +1917,88 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7c3edab00af3c4a3",
-      "title": "Tłumacz Google",
-      "url": "https://translate.google.pl/",
-      "summary": "Bezpłatna usługa Google, umożliwiająca szybkie tłumaczenie słów, zwrotów i stron internetowych w języku angielskim i ponad 100 innych językach.",
+      "id": "69fc45213074d3f0",
+      "title": "ambulatorychange.myhealthrecord.com - /Areas/",
+      "url": "https://ambulatorychange.myhealthrecord.com/Areas/",
+      "summary": "[To Parent Directory] 12/12/2014 4:06 PM HelpPage",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e2adbdcf5f16c0e3",
+      "title": "ambulatorychange.myhealthrecord.com - /Scripts/",
+      "url": "https://ambulatorychange.myhealthrecord.com/Scripts/",
+      "summary": "ambulatorychange.myhealthrecord.com - /Scripts/ ambulatorychange.myhealthrecord.com - /Scripts/",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d0161f782dc12027",
+      "title": "BIT Investment Financial Planning",
+      "url": "https://www2.montgomerycountymd.gov/bitpublic/FidelityMain.aspx",
+      "summary": "Fidelity Investments offers, One-On-One Investment/Financial Planning sessions and Investment Seminars to Retirement Savings Plan participants. Fidelity representatives are available to help participants understand financial issues, investments, and what impact market factors such as inflation, increases in interest rates, etc may have on their portfolio. Fidelity can guide you in planning for ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "19f5e104249b4e2d",
+      "title": "BrokerageLink_brochure_autotag",
+      "url": "https://assets.montgomerycountymd.gov/files/2026-04/BrokerageLink_brochure_autotag.pdf",
+      "summary": "Fidelity BrokerageLink® integrated brokerage services combines the convenience of your workplace retirement plan account with the additional flexibility of a brokerage account. It gives you expanded investment choices and the opportunity to more actively manage your retirement contributions.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1399,10 +2021,192 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "be22a2fc61bb337e",
-      "title": "Tłumacz Google",
-      "url": "https://translate.google.pl/details",
-      "summary": "Tłumacz Google umożliwia szybkie tłumaczenie tekstów na różne języki, wspierając komunikację i zrozumienie.",
+      "id": "a5f654ab455b4e20",
+      "title": "Career and Employment Opportunities at Ed Morse Delray Toyota | Delray ...",
+      "url": "https://www.delraytoyota.com/careers.aspx",
+      "summary": "Ed Morse Delray Toyota is always looking for automotive professionals to add to our team! Check out our open positions in Delray Beach and apply today!",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3622d71df226bdbb",
+      "title": "Civilization (series) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Civilization_%28series%29",
+      "summary": "Civilization uses historical aspects from the development of mankind's civilization, and turns take place over a time scale that starts with the dawn of civilization in the millennia before 1 A.D., and continue through present times and beyond.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40ef120d5c6061ef",
+      "title": "Civilization - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Civilization",
+      "summary": "Civilizations are organized around densely populated settlements, divided into more or less rigid hierarchical social classes of division of labour, often with a ruling elite and subordinate urban and rural populations, which engage in intensive agriculture, mining, small-scale manufacture and trade.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "afdbe4f6f544075a",
+      "title": "CIVILIZATION Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/civilization",
+      "summary": "The meaning of CIVILIZATION is a relatively high level of cultural and technological development; specifically : the stage of cultural development at which writing and the keeping of written records is attained.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8501f7f968f9b586",
+      "title": "Civilization: From Nomadic Life to the Farm and City - World History ...",
+      "url": "https://www.worldhistory.org/civilization/",
+      "summary": "Civilization (from the Latin civis =citizen and civitas = city) is a term applied to any society which has developed a writing system, government, production of surplus food, division of labor, and urbanization.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "04e3d9a696b68c64",
+      "title": "Ed Morse Delray Toyota Staff | Delray Beach Toyota dealer in Delray ...",
+      "url": "https://www.delraytoyota.com/staff.aspx",
+      "summary": "TEXT MESSAGE CONSENT. By submitting my cell phone number to the Dealership, I agree to receive text messages and phone calls, which may be recorded and/or sent using automated dialing equipment or software, from Ed Morse Ed Morse Delray Toyota in Delray Beach and its affiliates, unless I opt out of such communications.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d9751638caefe1c7",
+      "title": "Ed Morse Delray Toyota: Toyota Dealership in Delray Beach, FL",
+      "url": "https://www.delraytoyota.com/",
+      "summary": "Ed Morse Delray Toyota offers a wide range of vehicles and services, making it one of the best Toyota dealerships in Delray Beach, FL.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e97a80dba3a0907",
+      "title": "FAQs - Montgomery County Employee Retirement Plans - Montgomery County, MD",
+      "url": "https://www.montgomerycountymd.gov/montgomery-county-employee-retirement-plans/faqs",
+      "summary": "Find answers to common questions regarding retirement, including cost of living adjustments, withdrawals, beneficiary updates, leave policies, address changes, annuity payments, deductions, loan confirmations, and health insurance for retirees in Montgomery County, MD.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1425,10 +2229,1416 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e829c4df15bba6c0",
-      "title": "魔法少女ノ魔女裁判 公式",
-      "url": "https://manosaba.com/",
-      "summary": "「この中に、魔女になった少女がいる」――魔法少女ノ魔女裁判は、Acaciaがお届けする魔法議論ミステリゲームです。",
+      "id": "7c04660941f9af53",
+      "title": "Fidelity Investments - Download issues - Quicken",
+      "url": "https://community.quicken.com/discussion/7971874/fidelity-investments-download-issues",
+      "summary": "I’ve spent many, MANY hours trying to resolve the problems downloading data from my accounts at Fidelity Investments into my Quicken account. I’ve deactivated, reactivated the accounts, linked them as required, etc., ad nauseam for months now. I’ve worked with your community people who are very competent and have provided…",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2c8d061a7d3a67c6",
+      "title": "Forgot Password: My Health Record",
+      "url": "https://demo.myhealthrecord.com/Portal/SSO/ForgotPassword",
+      "summary": "View and Manage Health Records View, download, and send your most up-to-date health records on any internet-enabled device. View your current vitals, immunizations, lab results, and other important health information.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6826c67ca16fb2a6",
+      "title": "Generation X: America’s neglected ‘middle child’",
+      "url": "https://www.pewresearch.org/short-reads/2014/06/05/generation-x-americas-neglected-middle-child/",
+      "summary": "Generation X has a gripe with pulse takers, zeitgeist keepers, and population counters. We keep squeezing them out of the frame.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0759a3aac6f24485",
+      "title": "Generation Z Looks a Lot Like Millennials on Key Social and Political ...",
+      "url": "https://www.pewresearch.org/social-trends/2019/01/17/generation-z-looks-a-lot-like-millennials-on-key-social-and-political-issues/",
+      "summary": "As Gen Z moves toward adulthood, their views mirror those of Millennials on a range of issues, from Trump’s presidency to the role of government to racial equality. Among Republicans, Gen Z stands out on some key issues.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b577192a15916565",
+      "title": "God goes where he’s wanted - Denison Forum",
+      "url": "https://www.denisonforum.org/resources/god-goes-where-hes-wanted/",
+      "summary": "Topical Scripture: Luke 1:26-38 The Golden Compass opened on Friday. Starring Nicole Kidman and Daniel Craig (the new James Bond), the movie is a spectacular fantasy on the lines of the Lord of the Rings trilogy and The Chronicles of...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed65c7bc2476a3f1",
+      "title": "Help for a family feud - Denison Forum",
+      "url": "https://www.denisonforum.org/resources/help-for-a-family-feud/",
+      "summary": "Topical Scripture: Exodus 20:12 Do you remember the game show Family Feud? 100 people were surveyed on a subject. Then two families, five members each, tried to guess the most popular answers on these surveys. Richard Dawson’s “Survey says . ....",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "60e1caccf7a315ce",
+      "title": "Japanese updates - page 1 - Mature.nl",
+      "url": "https://www.mature.nl/en/niche/240/1/japanese",
+      "summary": "Page 1 of japanese updates. Japanese MILF, 30 Plus, Asian creampie, Ass, Beautiful Ass, Big Pussy Lips, Blowjob, Bra, Brunette, Brunette MILFS, Cock Sucking, Creampie ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb33c47348826163",
+      "title": "Looking back on a world I don’t remember - denisonforum.org",
+      "url": "https://www.denisonforum.org/daily-article/looking-back-on-a-world-i-dont-remember/",
+      "summary": "Twenty-five years after 9/11, the attack remains a defining moment for many Americans—but for younger generations, it is one crisis among many that have shaped a world marked by war, recession, pandemics, and uncertainty. Those different experiences can shape not only how we remember the past but also what we expect from the future. As we commemorate 9/11, where should Christians look for ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e78bc63b514f50d1",
+      "title": "Making the past into the future • Denison Forum",
+      "url": "https://www.denisonforum.org/resources/making-the-past-into-the-future/",
+      "summary": "Topical Scripture: Isaiah 55:12-13 In the United States, the standard distance between the rails of railroad tracks is 4 feet 8.5 inches, and has been since the first railroads were built in this country more than 170 years ago. Why...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f88dcae9d98c4201",
+      "title": "Mature Porn Videos: Experienced mature women sex videos - #1 - mature.nl",
+      "url": "https://www.mature.nl/en/niche/58/1/mature",
+      "summary": "Mature.nl features porn videos of experienced lusty older women with big tits and wet pussies! Watch these passionate sex scenes right here on the largest mature database on the net!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c8fea7d34b46f729",
+      "title": "Mature.nl - the largest mature porn database on the net",
+      "url": "https://www.mature.nl/en/home",
+      "summary": "Join now and watch over 4500 mature porn scenes on Mature.nl now! We have the largest collection of mature porn videos featuring the best MILFs, grannies, gangbangs and the biggest tits, so get your daily fill of mature sex right here!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b2248f50aaa14a8",
+      "title": "mature.nl ~ live webcams",
+      "url": "https://live.mature.nl/",
+      "summary": "Because you demanded it! We from mature.nl got a lot of questions, if there's a chance to contact and see naughty mature women live! Well, there is now! Check out the naughtiest mature women and get in touch with them!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a28574bc84fb39c0",
+      "title": "Meet the Team at Delray Toyota Service near West Palm Beach and ...",
+      "url": "https://service.delraytoyota.com/meet-the-team/",
+      "summary": "At Ed Morse Toyota Delray, we believe in making and maintaining long-lasting relationships with all of our customers. That’s why people needing service continue to make the short drive from West Palm Beach, Boynton Beach, Deerfield to Delray, FL.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "355b0bf2e1644a5b",
+      "title": "Members login - Mature.nl",
+      "url": "https://members.mature.nl/en/account/login",
+      "summary": "Not a member yet? Over 3000 models Daily updates Movies in HD quality Photos in high res. quality No download limits Dozens of mature niches Movies in 3D SBS Join now!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b089c511d2083c3",
+      "title": "Miami Translation Services - Protranslating",
+      "url": "https://protranslating.com/pages/miami-translation-services/",
+      "summary": "Miami’s law firms, businesses, and individuals rely on Protranslating for accurate, professional translations from certified translators and subject matter experts.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "327504f78d19c049",
+      "title": "Miami Translation Services - Translation company - JR Language",
+      "url": "https://jrlanguage.com/locations/miami-translation-services-florida/",
+      "summary": "We provide professional certified translations for business and individual in Miami and in other cities around Florida. Our certified translation services cover documents of all kinds and are accepted for USCIS purposes.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "62e3d1913940798a",
+      "title": "Miami Translation Services | Certified & Professional Translation Company",
+      "url": "https://www.gts-translation.com/locations-2/miami-translation-services/",
+      "summary": "GTS Translation Services provides professional translation in more than 100 languages including Spanish, Portuguese, French, Chinese, Arabic, Hebrew, Russian, Italian, German, and Japanese. If you need professional translation services in Miami, GTS is ready to help.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "05dd3ce6fef04326",
+      "title": "Millennials approach Baby Boomers as America’s largest generation in ...",
+      "url": "https://www.pewresearch.org/short-reads/2018/04/03/millennials-approach-baby-boomers-as-largest-generation-in-u-s-electorate/",
+      "summary": "Millennials, who are projected to surpass Baby Boomers next year as the United States’ largest living adult generation, are also approaching the Boomers in their share of the American electorate. As of November 2016, an estimated 62 million Millennials (adults ages 20 to 35 in 2016) were voting-age U.S. citizens, surpassing the 57 million Generation X members (ages 36 to 51) in the nation ...",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a2799bc9ddc3f55b",
+      "title": "Movierulz | Watch Bollywood and Hollywood Full Movies ...",
+      "url": "https://www.5movierulz.army/",
+      "summary": "MovieRulz | Latest / Featured Bollywood - Hollywood Movies Watch Online Download Full Free, Collection Of Telugu Movies Tamil, Malayalam, Bengali, Kannada..",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "de69bcc78ef44b46",
+      "title": "Naughty toyboy gets to fuck his hot stepmom Eve Black in ... - Mature.nl",
+      "url": "https://free.mature.nl/g/7610",
+      "summary": "At Mature.nl we love to keep you entertained. That is why we have daily picture sets and fullHD video updates for you to enjoy. As a member you can also stream or download unlimited videos for free. Lastly, discover thousands hot mature models and from all over the world.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "385c0adf16e80331",
+      "title": "New 2026 Toyota RAV4 LE | Ed Morse Delray Toyota Specials Delray Beach, FL",
+      "url": "https://www.delraytoyota.com/offerdetails-New-Delray-Beach-Florida-New-2026-Toyota-RAV4-LE-1129592",
+      "summary": "New 2026 Toyota RAV4 LE Lease for $299 per mo. Or Make 0 Payments for 3 months! For well-qualified buyers through Southeast Toyota Finance. Offer Expires 9/30/2026 For well-qualified buyers through Southeast Toyota Finance Example STK#TC021622. Payments may be deferred for first 90 days. Interest accrues from inception/contract date.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7c98cc6606701dbb",
+      "title": "New Toyota Cars, SUVs, and Trucks For Sale in Delray Beach, FL",
+      "url": "https://www.delraytoyota.com/searchnew.aspx",
+      "summary": "New Toyota Cars, SUVs, and Trucks Available in Delray Beach Toyota builds vehicles that hold up well over years of driving and hold their value when it's time to upgrade. Every new Toyota includes ToyotaCare, a no-cost maintenance plan with roadside assistance, plus Toyota Safety Sense as standard equipment.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "30e7ecd18f901c6c",
+      "title": "New Volkswagen for Sale near Tavares, FL - U.S. News & World Report",
+      "url": "https://cars.usnews.com/cars-trucks/new-cars/for-sale/volkswagen_tavares_fl",
+      "summary": "Find a new Volkswagen for sale near Tavares, FL. Browse through our 33 Volkswagen listings to compare deals and get the best price for your next car.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c98c9c3d1f2da89",
+      "title": "Nischen - Mature.nl",
+      "url": "https://soft.mature.nl/de/niches",
+      "summary": "German Amateur (196) German Granny (119) German MILF (179) German Mature (374) German Vintage (104) Glasses (674) Grannies Masturbating (175)",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "205bcf676839a275",
+      "title": "PATIENT REGISTRATION INFORMATION - My Health Record",
+      "url": "https://myhealthrecord.com:9999/documents/1298/edb7f52c-c5e1-49d5-8de3-bdf75c07d779.pdf",
+      "summary": "PATIENT REGISTRATION INFORMATION - Continued IN ORDER TO PROCESS YOUR CLAIM PROPERLY AND ADHERE TO THE HIPAA REQUIREMENTS ALL APPLICABLE INFORMATION MUST BE COMPLETED BELOW.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f1941aecb9c777f6",
+      "title": "Play Civilization I, II & Colonization in Your Browser",
+      "url": "https://civ.games/play",
+      "summary": "Play Sid Meier's Civilization, Civilization II (with both expansions, Gold and Test of Time), Colonization and CivNet free in your browser — fullscreen, touch controls, synced save states, nothing to install.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "465cb58c0fddf3bd",
+      "title": "President Trump renames Lake Ontario as “Lake America”",
+      "url": "https://www.denisonforum.org/current-events/president-trump-renames-lake-ontario-as-lake-america/",
+      "summary": "President Trump renamed Lake Ontario to Lake America—but Canada won't follow. A reflection on what real power is, and where it comes from.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8c18764a79a53563",
+      "title": "President Trump says ceasefire with Iran is over",
+      "url": "https://www.denisonforum.org/daily-article/president-trump-says-ceasefire-with-iran-is-over/",
+      "summary": "President Trump said this morning that he believes his ceasefire deal with Iran is over, the latest development in a conflict that has been going on for months with no apparent end. While we may not feel personally connected to the ninety-three million people living in Iran or those threatened by Iranian aggression in the region, the good news is that God does not feel the same way. The Lord ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cb97ce5302cfc1a2",
+      "title": "Quicken add Fidelity acct stuck on \"bank hosted sign-in page\"",
+      "url": "https://community.quicken.com/discussion/7972724/quicken-add-fidelity-acct-stuck-on-bank-hosted-sign-in-page",
+      "summary": "Still the same old problem, too many people are still talking about... I disconnected my Fidelity account as told by Quicken due to the change in connecting method, yet now I cannot add back the accounts to download transactions from Fidelity; every time, it just gets stuck on the screen \"sign in through bank-hosted sign-in page\".",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9de19c7053a97917",
+      "title": "Quicken Community",
+      "url": "https://community.quicken.com/discussions/p2",
+      "summary": "Quicken Fidelity Account Transactions Not Downloading DPar 402 views 21 comments 0 points Most recent by Quicken Laura September 28 Errors and Troubleshooting (Windows)",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5a95eb2672617fef",
+      "title": "Quicken Community",
+      "url": "https://community.quicken.com/discussions",
+      "summary": "Get resources and help from expert Quicken users and our Customer Care Team.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "028b5f2efa1b9606",
+      "title": "Retirees - Montgomery County Employee Retirement Plans - Montgomery ...",
+      "url": "https://www.montgomerycountymd.gov/montgomery-county-employee-retirement-plans/retirees",
+      "summary": "Discover essential resources for retirees in Montgomery County, Maryland, including information on the Employees' Retirement System, Guaranteed Retirement Income Plan, and more. Access important forms, tax info, and retiree support services.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a8e1449c3df1de6",
+      "title": "Service Appointment | Auto repair Delray, near West Palm Beach ...",
+      "url": "https://service.delraytoyota.com/service-appointment/",
+      "summary": "Certified Auto repair in Delray, West Palm Beach, Deerfield in South Florida. We also service all makes & models! Schedule your appointment today!",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c57e601f60c44a3d",
+      "title": "Sid Meier's Civilization VII | Official Site",
+      "url": "https://civilization.2k.com/civ-vii/",
+      "summary": "Learn more about the civilizations, leaders, and gameplay mechanics in Sid Meier's Civilization VII so you can build the greatest empire the world has ever known!",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6f265a55df694fe8",
+      "title": "Sid Meier's Civilization | Official Site",
+      "url": "https://civilization.2k.com/",
+      "summary": "Since 1991, the award-winning Civilization series of turn-based strategy games has challenged players to guide a civilization through history and build an empire to stand the test of time.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3769f23915a9f838",
+      "title": "Sid Meier’s Civilization Official Site | 2K Games",
+      "url": "https://www.2k.com/games/civilization/",
+      "summary": "Since 1991, the award-winning Civilization series of turn-based strategy games has challenged players to guide a civilization through history and build an empire to stand the test of time.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "07c64f67129461ff",
+      "title": "Sid Meier’s Civilization | Play game online!",
+      "url": "https://playclassic.games/games/4x-dos-games-online/play-sid-meiers-civilization-online/",
+      "summary": "Play Civilization online! It’s a good feeling to destroy the Middle Ages civilization with nuclear rockets!",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36868cafa43b2829",
+      "title": "Sid Meier’s Civilization® VI on Steam",
+      "url": "https://store.steampowered.com/app/289070/sid_meiers_civilization_vi/",
+      "summary": "Expand your empire, advance your culture and go head-to-head against history’s greatest leaders. Will your civilization stand the test of time?",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7719f229fecb20c4",
+      "title": "Sign in Help",
+      "url": "https://signinhelp.myhealthrecord.com/",
+      "summary": "In the myhealthrecord.com sign in page, enter your username. If you forgot your username, select the Forgot Username? link. See the Forgot Username help topic for instructions on retrieving your username. Select Continue. Enter your password. Select the eye icon if you wish to display your password.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "49465f2f88574a24",
+      "title": "Sign In Help",
+      "url": "https://portalhelp.myhealthrecord.com/",
+      "summary": "Sign In Help If you are having difficulty accessing the MyHealthRecord.com (forgotten password or user name, or registration issues), the topics listed below may help you pinpoint and resolve the issue. If none of these solutions resolve your access issues, contact your provider. If you forgot your username or password, please see the Forgot Username topic. Are you having problems registering ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0b8c9cdf8668997a",
+      "title": "Sign In Help - My Health Record",
+      "url": "https://portalhelp.myhealthrecord.com/Default.htm",
+      "summary": "Find solutions for sign-in issues and learn how to access your My Health Record account efficiently with step-by-step assistance.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "91b51e3299999abf",
+      "title": "Sign In: My Health Record",
+      "url": "https://www.myhealthrecord.com/Portal/SSO",
+      "summary": "Having issues Signing in? Try clearing your browser’s cache and cookies for myhealthrecord.com, and ensure that your browser is up to date. If you're using a work device or network, access may be restricted due to internal policies—try switching to a personal device with secure Wi-Fi, 5G, or home internet.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4363bad601d84bc2",
+      "title": "Sign In: My Health Record",
+      "url": "https://demo.myhealthrecord.com/Portal/SSO",
+      "summary": "View and Manage Health Records View, download, and send your most up-to-date health records on any internet-enabled device. View your current vitals, immunizations, lab results, and other important health information.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a763217b1107aecd",
+      "title": "The Hottest Mature Lesbian Porn Videos - Mature.nl - #1 - mature.nl",
+      "url": "https://www.mature.nl/en/niche/29/1/lesbian",
+      "summary": "Watch Mature Lesbian porn Videos on Mature.nl. Discover our exclusive collection of high quality Mature Porn and XXX movies.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e4773cfb7dd16d70",
+      "title": "The largest mature community on the net - Mature.nl",
+      "url": "https://soft.mature.nl/en/",
+      "summary": "Coming soon to mature.nl If you’re looking for the hottest mature women, then Mature.nl is the place to be. Here you can view our best HD adult videos showcasing the most exciting content and the most delicious ladies from all around the globe.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ff1a154a17e47f9b",
+      "title": "Toyota New Car Specials | Delray Beach Toyota dealer in Delray Beach FL",
+      "url": "https://www.delraytoyota.com/newspecials.html",
+      "summary": "New car specials - deep discounts and savings on our entire line of vehicles. Learn more about our specials and internet only prices.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ac6dd89403e1c25a",
+      "title": "U.S. views on climate change differ by generation, party and more: Key ...",
+      "url": "https://www.pewresearch.org/short-reads/2021/05/26/key-findings-how-americans-attitudes-about-climate-change-differ-by-generation-party-and-other-factors/",
+      "summary": "And two-thirds of Gen Zers, as well as 61% of Millennials, say they’ve talked with friends or family about the need for action on climate change in the past few weeks. Smaller shares of Gen X and Baby Boomer and older adults say they’ve done these things.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "177b3a30ee18270f",
+      "title": "Updated 10/28/25 Fidelity Migration - Quicken",
+      "url": "https://community.quicken.com/discussion/7967601/updated-10-28-25-fidelity-migration",
+      "summary": "Fidelity “Updates” Rollup (Post-Migration Adjustments) Status: Complete Reported: August 29, 2025 What’s Happening: After the July migration, some users experienced security mismatches, cash balance shifts, and other synchronization issues. Resolution: These issues have been addressed through backend adjustments and product updates. What ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "69493bf2bd40976c",
+      "title": "US views of Israel, Netanyahu more negative in 2026, especially among ...",
+      "url": "https://www.pewresearch.org/short-reads/2026/04/07/negative-views-of-israel-netanyahu-continue-to-rise-among-americans-especially-young-people/",
+      "summary": "Views of Israel and Benjamin Netanyahu have grown more negative among U.S. adults, with majorities under 50 in both parties rating them poorly.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1359993dfcd15382",
+      "title": "Used Cars, SUVs, and Trucks For Sale in Delray Beach, FL",
+      "url": "https://www.delraytoyota.com/searchused.aspx",
+      "summary": "Find quality used and certified pre-owned cars, SUVs, and trucks in Delray Beach, FL. All makes and models, with competitive pricing.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c5bb8643cba28791",
+      "title": "Volkswagen of Gainesville | Volkswagen Dealership in Gainesville, FL",
+      "url": "https://www.vwofgainesville.com/",
+      "summary": "Whether you are searching for a high-powered hatchback, a versatile family SUV, or the latest in sustainable electric mobility, the impressive selection at our Volkswagen dealership in Gainesville, FL, is here to deliver.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ee3765f662ee1df3",
+      "title": "VW Service & Parts Specials and Coupons | Leesburg Volkswagen",
+      "url": "https://www.jenkinsvolkswagen.com/service/service-parts-special-coupons.htm",
+      "summary": "Visit Leesburg Volkswagen in Leesburg, FL, conveniently close to Tavares, FL, to access exclusive discounts on routine Volkswagen maintenance, ensuring your vehicle receives the best care possible.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2837c6e10f5585c1",
+      "title": "Webcam Test",
+      "url": "https://webcamtests.com/",
+      "summary": "Press “Test my cam” to check the functionality and supported properties of your camera.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99e80941cafffee2",
+      "title": "What Jesus doesn't know • Denison Forum",
+      "url": "https://www.denisonforum.org/resources/what-jesus-doesnt-know/",
+      "summary": "Topical Scripture: Matthew 24.36-44 This morning we begin with life-changing facts: the shortest war in history was fought between Zanzibar and England in 1896; Zanzibar surrendered after 38 minutes. Dueling is legal in Paraguay so long as both parties are registered...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy",
+        "community"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "51903d3ac36540c4",
+      "title": "“The year that shattered the Middle East”",
+      "url": "https://www.denisonforum.org/daily-article/the-year-that-shattered-the-middle-east/",
+      "summary": "Today marks one year since Hamas brutally invaded Israel and massacred 1,195 people, taking 251 hostage. The Middle East hasn't been the same.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
