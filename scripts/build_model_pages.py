@@ -100,6 +100,25 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
             facts.append((labels.get(key, key.replace("_", " ").title()), md_value(fact["value"]), fact["evidence"]))
     facts = facts[:16]
     public = record["public"]
+    recall_links = [
+        item for item in record["links"]
+        if item["kind"] == "internal" and "recall" in item["label"].lower()
+    ]
+    recall_notice = ""
+    if "recall" in str(record["state"]).lower():
+        if recall_links:
+            item = recall_links[0]
+            recall_notice = (
+                '\n!!! danger "Safety recall"\n'
+                f"    This exact model is under a documented recall. "
+                f"[Read the verified recall notice]({item['url']}) before using or purchasing it.\n"
+            )
+        else:
+            recall_notice = (
+                '\n!!! danger "Safety recall"\n'
+                "    This exact model is marked recalled in the canonical catalog. "
+                "Follow the catalog evidence before using or purchasing it.\n"
+            )
     paths = [f"[Editorial profile]({public['profile']})"]
     if public.get("report_card"):
         paths.append(f"[Report Card]({public['report_card']})")
@@ -165,7 +184,7 @@ model_category: "{str(record['type']).replace('"', '\\"')}"
 {profile}
 
 {try_on_html}
-
+{recall_notice}
 ## At a glance
 
 | Field | Verified catalog value |
