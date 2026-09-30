@@ -237,6 +237,7 @@
 
   <div class="gr-explore-grid">
     <a href="docs/COMPARISON_ENGINE/"><span class="gr-card-number">01</span><strong>Find &amp; Compare</strong><span>Start with what you need and narrow the catalog.</span></a>
+    <a href="docs/faq/"><span class="gr-card-number">Q&amp;A</span><strong>Practical Answers</strong><span>Direct answers to the questions people actually ask about smart glasses.</span></a>
     <a href="models/catalog/"><span class="gr-card-number">02</span><strong>Models</strong><span>Browse the glasses visually, then open the evidence.</span></a>
     <a href="docs/RESEARCH_NEWS/"><span class="gr-card-number">03</span><strong>Research &amp; News</strong><span>Follow verified work and developing signals.</span></a>
     <a href="hacking/"><span class="gr-card-number">04</span><strong>Develop</strong><span>SDKs, APIs, firmware, local AI and owner-controlled paths.</span></a>
