@@ -105,7 +105,9 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
         if item["kind"] == "internal" and "recall" in item["label"].lower()
     ]
     recall_notice = ""
+    recall_question = ""
     if "recall" in str(record["state"]).lower():
+        question = f"Is {record['maker']} {record['model']} recalled?"
         if recall_links:
             item = recall_links[0]
             recall_notice = (
@@ -113,10 +115,20 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
                 f"    This exact model is under a documented recall. "
                 f"[Read the verified recall notice]({item['url']}) before using or purchasing it.\n"
             )
+            recall_question = (
+                f"\n## {question}\n\n"
+                f"Yes. **{record['maker']} {record['model']}** is under a documented recall. "
+                f"[Read the verified recall notice]({item['url']}) for the affected population, hazard, and remedy.\n"
+            )
         else:
             recall_notice = (
                 '\n!!! danger "Safety recall"\n'
                 "    This exact model is marked recalled in the canonical catalog. "
+                "Follow the catalog evidence before using or purchasing it.\n"
+            )
+            recall_question = (
+                f"\n## {question}\n\n"
+                f"Yes. **{record['maker']} {record['model']}** is marked recalled in the canonical catalog. "
                 "Follow the catalog evidence before using or purchasing it.\n"
             )
     paths = [f"[Editorial profile]({public['profile']})"]
@@ -184,7 +196,7 @@ model_category: "{str(record['type']).replace('"', '\\"')}"
 {profile}
 
 {try_on_html}
-{recall_notice}
+{recall_notice}{recall_question}
 ## At a glance
 
 | Field | Verified catalog value |
