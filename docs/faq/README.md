@@ -1,4 +1,4 @@
-# 100 Smart-Glasses Questions and Answers
+# Smart-Glasses Practical Answers
 
 A current, evidence-aware FAQ for buyers, researchers, developers, accessibility users, and anyone trying to understand AI glasses, display glasses, AR glasses, and the wider smart-eyewear ecosystem.
 
@@ -35,7 +35,7 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - Safety, medical, accessibility, and legal questions receive cautious, nonprofessional guidance.
 - Corrections should preserve the previous claim and identify the stronger evidence.
 
-## All 100 questions
+## Foundation questions
 
 1. [What is the difference between AI glasses, smart glasses, display glasses, AR glasses, and XR glasses?](01-basics.md#1-what-is-the-difference-between-ai-glasses-smart-glasses-display-glasses-ar-glasses-and-xr-glasses)
 2. [Do all smart glasses have a display?](01-basics.md#2-do-all-smart-glasses-have-a-display)
