@@ -100,7 +100,7 @@ def _core_schema(page_title: str, description: str, canonical_url: str, site_url
 def _faq_schema(markdown: str, canonical_url: str) -> str | None:
     """Build FAQPage JSON-LD only when visible H2 question/answer pairs exist."""
     matches = list(FAQ_HEADING.finditer(markdown))
-    if len(matches) < 2:
+    if len(matches) < 1:
         return None
 
     entities: list[dict[str, Any]] = []
@@ -120,7 +120,7 @@ def _faq_schema(markdown: str, canonical_url: str) -> str | None:
             }
         )
 
-    if len(entities) < 2:
+    if len(entities) < 1:
         return None
 
     return json.dumps(
