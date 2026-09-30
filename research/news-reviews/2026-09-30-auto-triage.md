@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-30T15:23:33.758876+00:00`
+Generated: `2026-09-30T15:59:54.240476+00:00`
 
-- Intake files inspected: **306**
-- Candidates retained in this review window/history: **13163**
+- Intake files inspected: **308**
+- Candidates retained in this review window/history: **13247**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 2835
+- `adjacent_radar`: 2851
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 734
-- `rejected_noise`: 9454
+- `rejected_noise`: 9518
 - `source_monitor`: 1
-- `source_review`: 34
-- `watching`: 86
+- `source_review`: 36
+- `watching`: 88
 
 ## Action queue
 
@@ -218,6 +218,7 @@ Generated: `2026-09-30T15:23:33.758876+00:00`
 | normal | needs_editorial_verification | direct | [Meta locks itself out of user data on its AI glasses - Help Net Security](https://news.google.com/rss/articles/CBMiigFBVV95cUxPcmdsQ0hQZ3hETXlGa1RmX1lhRFpxNnNnV2JBU0lhTFE5d3MzQlI0SXlFSDRDQTNUTmY4NnhfX3VtUWtObEpOY0RFYkd5c2RwUzBQUEljS3UtT3lENjNzTEt0TDlhdlZVWEY5eGk3dF93UlVsdmxMZXIwNnRfUlN5UDJVQXlicXBWeXc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Meta makes big bets on AI and smart glasses amidst security storms - news.laodong.vn](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY0pCT29ESVBBcEwwcS1oQ05xN0VCbmVDR2pYZVBXbmlQS1IxV2MwWGdZeV9lczBNa0tiTTBZTjc2NzUxT2ZIZ0RUZUxRSjFnNVpLb2F4a0tqaUlIb3RlRFRCbC1WazI2NG9QV1hIeTg4N3RoZ0QxX0p0NW5iRjBkVkY2SzZoMVlsMFByaFl5QU9aSTluMFZselNFeWxRZXNaV0FlZVpJYkNBeDQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Smart glasses review: honest 5/10 hands-on test \| TikTok](https://www.tiktok.com/@jradthered.official/video/7663946534072945934) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [XREAL XBX A01+ Review: $299 AR Glasses, Tested and Compared (2026)](https://monarchxr.com/xreal-xbx-a01-plus-review/) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | ['Disturbing' security flaw in cheap smart glasses - ABC News & Headlines – Australian Broadcasting Corporation](https://news.google.com/rss/articles/CBMiogFBVV95cUxQVHdVRVU2RUp1dGg4VDVtT0dzYnA1SGwwajVGNi1uSVJpRjNVOXNrdkU0NGlYLU5IYU5MOEhHZmp3MzVCU0RLeFVkWTVteVpjV2RXODEycnpzWUJMaTZtYnNZQXF3cEtRUzhKSU9MZW5jcGRKTE13UmhaaTVRVjNMTDJKaTdSaEtLSUJ0UzdqMW1GQTRpOFNOVlI0czFPNk8wMnc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ['Meta launches camera-free AI glasses amid privacy pushback' - The Manila Times](https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWlFSeTBvb202eC1NS2tMeUJkc2o3Zm81NkY5c2ZJT2dHZmQ0aUZROU94TDNINy0xV2xMSlY5X0JFRHFWMER3ZmIzVk5wc0x0a29wSDYxUzA2R0VpV21MdXpBWERjVjJoTkhzbHJnQy1vUUJSWEJDTnQwUDRZdzQzcExuczVFNktFRTZOSWswSkhPU3VfNE01NE0tNTJhdFlSakE3SkZ5d2V4azJoSml1eFU0RUNNUU1jRGU1VmxrREprVktnaHpxczRYMDZGQnhfdDUw0gHTAUFVX3lxTE1aUVJ5MG9vbTZ4LU1La0x5QmRzajdmbzU2RjlzZklPZ0dmZDRpRlE5T3hMM0g3LTFXbExKVjlfQkVEcVYwRHdmYjNWTnBzTHRrb3BINjFTMDZHRWlXbUx1ekFYRGNWMmhOSHNscmdDLW9RQlJYQkNOdDBQNFl3NDNwTG5zNUU2S0VFNk5JazBKSE9TdV80TTU0TS01MmF0WVJqQTdKRnl3ZXhrMmhKaXV4VTRFQ01RTWNEZTVWbGtESmtWS2doenFzNFgwNkZCeF90NTA?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | ['Meta launches camera-free AI glasses amid privacy pushback' - The Manila Times](https://news.google.com/rss/articles/CBMizgFBVV95cUxQNlN6Nk96bUpyMnVHZFhPSEFtTjZPWnJTWHUxdUpyY3JHbHE1SEM5MVBTNTJUV3dLbmJrcHZxV3ZNZkRRYmJLV1BMbFdyZ0dwVlJNck9TS2p0VUNFWU5JaGQ3N2xLUzE2ODEzSFRUTHdfcG1GbG1BbmJvMVpEZEtTX1phMmxrekhZbTJRMXB1THVrZjF1N1pwc1JmZFlOLTdzM1lIQjM5N3g2RGE0QU1iUTJiLTZrbTEzWTdlLUpGbGEwR1Bnd3RBMHRpQjY0UdIB0wFBVV95cUxNWlFSeTBvb202eC1NS2tMeUJkc2o3Zm81NkY5c2ZJT2dHZmQ0aUZROU94TDNINy0xV2xMSlY5X0JFRHFWMER3ZmIzVk5wc0x0a29wSDYxUzA2R0VpV21MdXpBWERjVjJoTkhzbHJnQy1vUUJSWEJDTnQwUDRZdzQzcExuczVFNktFRTZOSWswSkhPU3VfNE01NE0tNTJhdFlSakE3SkZ5d2V4azJoSml1eFU0RUNNUU1jRGU1VmxrREprVktnaHpxczRYMDZGQnhfdDUw?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -271,7 +272,6 @@ Generated: `2026-09-30T15:23:33.758876+00:00`
 | normal | needs_editorial_verification | direct | [Meta has unveiled new AI-powered hardware, including camera-free Ray-Ban Meta Audio glasses, a $1,299 VR device and the tiny Meta Charm. But](https://news.google.com/rss/articles/CBMirAFBVV95cUxOTlBIbzQ4Zm5kZmhlZHRxMHM4blVfdENTZURCbk1hRkpqRmlzejgyNF9CNHJDODZkeE9xS1NqOWt0TkxRZi1pZlllRUY3WVlmMHliU05WSlVURHZWZkszbFFYY0ZrLTUwRUZ0NlZ4SHNzSkk4VlZVRmI4Rlpfa0hrdW51b09vWEpuSk5fbExsY3NPUzBza1QzUkFWOGp5NzFmdVFJS3ZuMVBFUktI?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Malay Mail](https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbHlLNEN1bHVRZ0hoejRDSHFyLXZSdElFbEV3a0UxenJ2dlEtOEhndURPeG9RM2xJd29lU2xGU0hKOWE4TVRkVkpKV2tvWklLZXpFaV9POGJUb05jbmVaTHVrSFpUYXhVYV9sWl9FaFJGRGpzNlpzOXlBTFRrWGZQX1VERGw3SzFNV3dlUV91elVWZVVfV3hMVkRHQWRSVEsteFZxWDJiZ0g3SURUNUptelNueHpYdldwTmtxTGVXUmZ5anBNekRFRXRCTHBjSmdSdjAwMUVBa1NXODJMT0xtWjJNNlFCOTNT0gHuAUFVX3lxTFBuVU96Q2NxX1lndTJ1RFJQaTFlRE9pb0NIN3A4LXpfR2NVVm15VE1CVEkxdnpTLXZ5UGxaMzVmRkl3VlQ0MTliY1VkSjVMQUs4QjZsMkpXbjVIRDNsLTI5SlI0NDA4XzZuWFZxNTdiLWtWTzVhb1dZUlBNQmhBNGpoNnlHYWJnUF9UanZWNmpvb1E4ZGFMbGNXalZ5Zk4yc3lZTGdPSkZUNmJ6U3lvYkFjeXd0UHRNTXNCRlZpM1hteWJ0c3RXcmdxLW9xX3JPbDdmMGpuVzRaNHZDWmZWc01lanB5R3BjR25Wdk1FUVE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Meta introduces camera‑free smart glasses and Muse AI assistant amid global privacy concerns - Newswav](https://news.google.com/rss/articles/CBMitwFBVV95cUxONVBIMWxsUDJhRWp3aUlkZGdzUks4Q044dWIzQktmd1JfdGFPMFR4MUx0cERQQXZ1ZTFjeklRQjl2c180LW9IWWhWa1lwOUhmbUJuYktNN09DNjRnaGRRMnJJOXlEVnZjdk1Vby1Za1FoQ0hoVnpzcXVxWktLcU9oNV9KSk9rYUVMSDBWbmxZRklXMVB0b0xsZUNvOTUtRC1vbDhJVkN2ay1iXzdLbHdCTWlKSjE3XzQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Meta lanza unas gafas inteligentes sin cámara para vencer la desconfianza del mercado - La Voz de Galicia](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMDZOdU95MC1uZm42ZWxZNWFWODZXN0Z4SzdoUmFZOWstcF9iZ1FkX3R5cWg2enYxMkY1WmhWUXZMN3FReWNCYXFxSXEyY3FvUl9HWU1SV1ZnNEtRQ3NCeFlxWHNONVpDYjFVOXVPVzNMaTcwa2VoTlZjaDB2TlFZMnllYlVhRGtfcVBuVFBmVmdzTERneEkzSjYySktyWF9OOTFSb0llS2hrRlR5dW90WENTTU96SEdzbDMydi1WQnJ3WDNSdWtZZWtBUjFRUkdhSXlwaWFZdmRyOWItdGFwddIB_AFBVV95cUxPN2tvQ3RTay1xVUNyRDVRWHdXelNwNFVrRkV1dnlKV2NQWlJsXzZLYU16dGgtZnI5TFljVVVvSlpJNElQNkVNVDRybXJTZTVHVEpuT0NiZmgzV3dPYVUtRnNfNU9HVFdGNVNHdVlxb25oZ2ZwN1dCRFNKQ1VsUVZqTFBrRXlpN2plMFUwS3k3WTBkTk9sTU9mUzRNUTBGY3RUYTlPZzJPZ2tRQnFXZjg3QUprQWpkLXRlX3ZzY3c1UGZWb0RxTWNpbjBvRXB5Zl9sZkNPMGI3QTFJRG9JVTh4N0k0bXlJU3FVLTlYVXBDSDVBYWplNmFSanoxcTk?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
