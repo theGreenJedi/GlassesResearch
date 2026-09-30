@@ -1,45 +1,35 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-30T02:02:54.256455+00:00",
-  "candidate_count": 78,
-  "classifier_irrelevant_count": 55,
+  "discovered_utc": "2026-09-30T02:11:49.950069+00:00",
+  "candidate_count": 44,
+  "classifier_irrelevant_count": 32,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 20,
-    "broad_web": 49,
-    "developer": 9,
-    "retail": 1
+    "adjacent": 12,
+    "broad_web": 30,
+    "developer": 2
   },
   "relationship_counts": {
-    "direct": 3,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 20,
+    "adjacent": 12,
     "speculative": 0,
-    "irrelevant": 55
+    "irrelevant": 32
   },
   "type_counts": {
-    "model": 7,
-    "review": 1,
-    "video": 2,
-    "news": 48,
-    "research": 2,
-    "tool": 13,
-    "sdk": 9,
-    "optics": 1,
-    "policy": 1,
-    "retail": 6,
-    "community": 3
+    "model": 6,
+    "news": 20,
+    "tool": 8,
+    "sdk": 3,
+    "community": 9,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 20,
-    "deep_research": 2,
+    "adjacent_radar": 12,
     "development_hacking": 1,
     "model_catalog_review": 2,
-    "reject_noise": 55,
-    "report_card_evidence": 2,
-    "research_news_review": 23,
-    "research_optics": 1,
-    "retail_rebrand_review": 1
+    "reject_noise": 32,
+    "research_news_review": 12
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -53,128 +43,62 @@
   "collector_errors": [
     {
       "channel": "manufacturer_catalog",
-      "url": "https://dumall.baidu.com/product/902971303493639",
-      "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>"
+      "url": "https://www.everysight.com/",
+      "error": "HTTP Error 500: Internal Server Error"
     }
   ],
   "candidates": [
     {
-      "id": "c600c52bcf0271d4",
-      "title": "XREAL XBX A01+ Review: $299 AR Glasses, Tested and Compared (2026)",
-      "url": "https://monarchxr.com/xreal-xbx-a01-plus-review/",
-      "summary": "My hands-on XREAL XBX A01+ review covers the $299 price, 1600-nit display, and how it compares to the XREAL 1S. Are these the budget AR glasses to beat in 2026?",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
+      "id": "0ff9d7615ac43368",
+      "title": "How to change your Microsoft account name or address",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/how-to-change-your-microsoft-account-name-or-address",
+      "summary": "Change the billing or shipping address for your Microsoft account To change your billing or shipping address, select Billing & shipping addresses, make your changes, and then select Save. Note If you change your billing address, it will only be applied to new purchases.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
       "keyword_hits": [
-        "hands-on",
-        "review"
+        "shipping"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "review",
-        "retail"
+        "model"
       ],
-      "primary_type": "review",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
-        "retail_rebrand_review"
+        "model_catalog_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "38fc1db4896a7f58",
-      "title": "AI Smart Glasses with Prescription | Smart Glasses with Rx ...",
-      "url": "https://eydology.com/collections/ai-smart-glasses",
-      "summary": "Shop AI smart glasses with prescription lenses. Enjoy real-time translation, voice control, and stylish frames with customizable Rx options for everyday use.",
-      "discovery_channel": "broad_web",
-      "query": "prescription smart glasses",
+      "id": "5711b1f0f7edaa18",
+      "title": "BUNDTASTIC REWARDS™ – Earn Free Bundt Cakes & Exclusive Perks - Nothing ...",
+      "url": "https://www.nothingbundtcakes.com/bundtastic-rewards/",
+      "summary": "Join Nothing Bundt Cakes' Bundtastic Rewards™ program to earn points toward free and discounted cakes, enjoy a complimentary Bundtlet on your birthday, and access exclusive member events. Download our app to start earning sweet rewards today.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "prescription"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "optics"
-      ],
-      "primary_type": "optics",
-      "routing_targets": [
-        "research_news_review",
-        "research_optics"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7521a92c15657991",
-      "title": "Open Source Smart Glasses - DIY AR - YouTube",
-      "url": "https://www.youtube.com/watch?v=PwmGNWkpKW8",
-      "summary": "Watch the journey to develop a prototype Open Source Smart Glasses, an early version of fully DIY AR glasses. Designed by Cayden Pierce and Team Open Smart Glasses (TOSG), these...",
-      "discovery_channel": "broad_web+retail",
-      "query": "open source smart glasses; titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "open source"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "direct",
-      "content_types": [
-        "video",
-        "research",
         "tool"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
         "development_hacking",
-        "deep_research"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, smart glasses",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ea7ef576f087cd87",
-      "title": "Bison Genocide - Bison/Buffalo - Research Guides at South ...",
-      "url": "https://libguides.sdstate.edu/c.php?g=1358402&p=10030696",
-      "summary": "Generals William T. Sherman and Philip Sheridan sent soldiers to the plains with U.S. Cavalry guns to kill buffalo. The soldiers would use buffalo as target practice, killing them in massive numbers daily and then leaving them there to rot.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "deep_research",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -183,37 +107,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ec1fbb9ff6e17065",
-      "title": "Cities Near Me - Buford, Georgia | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/Buford,+GA",
-      "summary": "Find the top 15 cities, towns, and suburbs near Buford, GA, like Sugar Hill and Suwanee, and explore the surrounding area for a day trip.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c901342aa1e61c24",
-      "title": "CONTACT US - Stage Bonita",
-      "url": "https://www.stagebonita.com/contact-us",
-      "summary": "The Stage Bonita Contact Us page tells our clients how to get in touch with us.",
+      "id": "bfecc55291da09be",
+      "title": "Burlington Cake Shop & Bakery | Nothing Bundt Cakes #2001",
+      "url": "https://www.nothingbundtcakes.com/find-a-bakery/on/burlington/bakery-2001.html",
+      "summary": "Stop by your local Nothing Bundt Cakes bakery at 3350 Fairview St in Burlington, ON L7N3L5. Our cakes are baked fresh daily. Place your order online for easy pickup or delivery.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -237,10 +134,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6b78bb5e3b1dd774",
-      "title": "FAQ's - Stage Bonita",
-      "url": "https://www.stagebonita.com/faqs",
-      "summary": "The Stage Bonita FAQ's Page has the answers to frequently asked questions.",
+      "id": "32f7dd79871d85ba",
+      "title": "Evansville Cake Shop & Bakery | Nothing Bundt Cakes #507",
+      "url": "https://www.nothingbundtcakes.com/find-a-bakery/in/evansville/bakery-507.html",
+      "summary": "Stop by your local Nothing Bundt Cakes bakery at 6436 E. Florida St in Evansville, IN 47715. Our cakes are baked fresh daily. Place your order online for easy pickup or delivery.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -264,37 +161,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aaad767f49fa5d2c",
-      "title": "Google Fitbit Air, Fitness Activity Tracker Band",
-      "url": "https://store.google.com/product/google_fitbit_air?hl=en-US",
-      "summary": "Effortless tracking meets personal health coaching built with Gemini. Comfortable 24/7 tracking, powerful sensors, and up to a week of battery. Explore special partner editions, designed for...",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fc59f1984acb4796",
-      "title": "Group Reservations & Private Parties | The Stage Bonita Springs",
-      "url": "https://www.stagebonita.com/parties",
-      "summary": "Plan your next celebration with us! Book group reservations & private parties for birthdays & office gatherings. Fill out our form today!",
+      "id": "1b9abb35733d0b9b",
+      "title": "Johnson City Cake Shop & Bakery | Nothing Bundt Cakes #412",
+      "url": "https://www.nothingbundtcakes.com/find-a-bakery/tn/johnsoncity/bakery-412.html",
+      "summary": "Stop by your local Nothing Bundt Cakes bakery at 1900 N Roan St in Johnson City, TN 37601. Our cakes are baked fresh daily. Place your order online for easy pickup or delivery.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -318,10 +188,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "80c69ced9a766eb4",
-      "title": "Home Page | The Stage Bonita Springs",
-      "url": "https://www.stagebonita.com/",
-      "summary": "The Stage Restaurant and Bar is your local paradise for things to do in Southwest Florida, offering a variety of entertainment from live music tribute bands, fine dining, dancing, and all around fun.",
+      "id": "f41de8d5808090e9",
+      "title": "Naperville Cake Shop & Bakery | Nothing Bundt Cakes #73",
+      "url": "https://www.nothingbundtcakes.com/find-a-bakery/il/naperville/bakery-73.html",
+      "summary": "Stop by your local Nothing Bundt Cakes bakery at 2860 Showplace Drive in Naperville, IL 60564. Our cakes are baked fresh daily. Place your order online for easy pickup or delivery.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -345,37 +215,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2364a6fdff8232bb",
-      "title": "How Many Buffalo Were Killed to Starve Indians? [The Reality]",
-      "url": "https://biocritter.blog/buffalo-decimation-historical-impact",
-      "summary": "Explore the history of how over 10 million buffalo were killed to destabilize Native American tribes. Read the facts about this systematic ecological warfare.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "48b125340758f15c",
-      "title": "Menu Page - Stage Bonita",
-      "url": "https://www.stagebonita.com/menu",
-      "summary": "The menu page for The Stage Bonita Springs shows our clients what we have available to enhance their dining and dancing experience.",
+      "id": "bd3ab8df7515a2de",
+      "title": "Nothing Bundt Cakes",
+      "url": "https://www.nothingbundtcakes.com/",
+      "summary": "Shop for decorated and customizable cakes for all occasions. Birthdays, Weddings, Anniversaries, Just Because, and more. Cakes are available for Pickup and Delivery!",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -400,37 +243,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "29e683536e60d50a",
-      "title": "PBS - THE BUFFALO WAR: The Buffalo",
-      "url": "https://www.pbs.org/buffalowar/buffalo.html",
-      "summary": "To make matters worse for wild buffalo, some U.S. government officials actively destroyed bison to defeat their Native American enemies who resisted the takeover of their lands by white settlers.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7c5904fcc79728e2",
-      "title": "Photos Page - Stage Bonita",
-      "url": "https://www.stagebonita.com/photos",
-      "summary": "The Stage Bonita Photos Page show our potential guests what our other guest have experienced during their visit at our restaurant.",
+      "id": "bb1ad14edccd69da",
+      "title": "Reno Cake Shop & Bakery | Nothing Bundt Cakes #4",
+      "url": "https://www.nothingbundtcakes.com/find-a-bakery/nv/reno/bakery-4.html",
+      "summary": "Stop by your local Nothing Bundt Cakes bakery at 5051 S. McCarran Boulevard in Reno, NV 89502. Our cakes are baked fresh daily. Place your order online for easy pickup or delivery.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -454,92 +270,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "86dc2e8c89decca2",
-      "title": "Reviews - stagebonita.com",
-      "url": "https://www.stagebonita.com/reviews",
-      "summary": "The Stage Bonita customer reviews. Dining & Dancing Located in the ACE Sunshine Plaza The Stage is Available to Host or Cater your Next Party, Quinceanera,Wedding or Event! Call for more info.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "658afffb7f60b0a4",
-      "title": "Revisiting the Buffalo Slaughter, One of the Darkest Chapters ...",
-      "url": "https://www.outdoorlife.com/conservation/buffalo-slaughter-archive-feature/",
-      "summary": "A man could kill a vast number of bulls that way, if his horse didn’t stumble in a prairie dog’s hole and break his neck. But there was a hitch: the method scattered carcasses all over the countryside and made things tough for the skinners.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5ca415e0492789a5",
-      "title": "The Great Bison Slaughter of the 1870s | Ecological ...",
-      "url": "https://texapedia.info/bison-extermination/",
-      "summary": "Hunters killed millions of bison across the Great Plains during the 1870s, bringing the species to the brink of extinction. In Texas, the killing intensified as railroads expanded and markets for hides and bones grew.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fba27b9c803c1225",
-      "title": "The Stage Bonita Springs",
-      "url": "https://www.stagebonita.com/calendar",
-      "summary": "The Stage Bonita Springs is a venue that features live entertainment from tribute bands to special performers from worldwide locations. The Stage offers dinner and dancing to the top tribute bands in the nation. These bands sound and perform like the original artists.",
+      "id": "37e2ad37d3db3669",
+      "title": "Roseville Cake Shop & Bakery | Nothing Bundt Cakes #45",
+      "url": "https://www.nothingbundtcakes.com/find-a-bakery/ca/roseville/bakery-45.html",
+      "summary": "About Our Bakery Since winter 2011, Nothing Bundt Cakes® - Roseville, CA at 1112 Galleria Boulevard Suite 140 has become a beloved destination for cake enthusiasts in Roseville. Our bakery, renowned for its delightful selection of Bundt Cakes, Bundtlets, and Bundtinis®, brings a touch of sweetness to every celebration.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -563,37 +297,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "285e7dddf77115f4",
-      "title": "Top 15 Things to Do in Buford, GA - Buford Attractions",
-      "url": "https://www.tripadvisor.com/Attractions-g34806-Activities-Buford_Georgia.html",
-      "summary": "Book these experiences for a closer look at the region. These rankings are informed by Tripadvisor data —we consider traveler reviews, ratings, number of page views, and user location. 1. Regal Mall Of Georgia. At Mall of Georgia, we know what our shoppers want.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5cc4733843288bc7",
-      "title": "Upcoming Entertainment Schedule - Stage Bonita",
-      "url": "https://www.stagebonita.com/upcoming-entertainment-schedule",
-      "summary": "The Stage Bonita Upcoming Entertainment Schedule Page provides information about all of our upcoming events.",
+      "id": "2165b13eeefb00cf",
+      "title": "Taylors Cake Shop & Bakery | Nothing Bundt Cakes #930",
+      "url": "https://www.nothingbundtcakes.com/find-a-bakery/sc/taylors/bakery-930.html",
+      "summary": "Stop by your local Nothing Bundt Cakes bakery at 5314 Wade Hampton Blvd in Taylors, SC 29687. Our cakes are baked fresh daily. Place your order online for easy pickup or delivery.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -617,10 +324,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d0ec17e49bd6a0d5",
-      "title": "Videos - Stage Bonita",
-      "url": "https://www.stagebonita.com/videos",
-      "summary": "The Stage Bonita Videos page shows our clients some of the entertainment that we have to offer.",
+      "id": "1058fac5e9ebd685",
+      "title": "Temple Cake Shop & Bakery | Nothing Bundt Cakes #331",
+      "url": "https://www.nothingbundtcakes.com/find-a-bakery/tx/temple/bakery-331.html",
+      "summary": "Stop by your local Nothing Bundt Cakes bakery at 2320 S 31st Street in Temple, TX 76504. Our cakes are baked fresh daily. Place your order online for easy pickup or delivery.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -644,10 +351,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3b6bd8d4b0d8b5dd",
-      "title": "Why did the US Army set out to destroy the buffalo? - iere.org",
-      "url": "https://iere.org/why-did-the-us-army-set-out-to-destroy-the-buffalo/",
-      "summary": "As westward expansion gained momentum, the US government faced what they termed the “Indian problem.” The presence of numerous, independent tribes controlling vast swathes of land was seen as an obstacle to progress, resource exploitation, and the establishment of a transcontinental nation.",
+      "id": "2af65b58886ca975",
+      "title": "Windows 11 - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/heic-image-extension-not-working-on-windows-11-are-there-any-heic-extension-alte/4387238",
+      "summary": "Hello everyone, help!Recently I transferred some HEIC photos from my iPhone to my Windows 11 computer, and I realized that the HEIC image extension suddenly...",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -671,51 +378,133 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8762d59e53cb690e",
-      "title": "Why was the buffalo bison killed off nearly to extinction?",
-      "url": "https://iere.org/why-was-the-buffalo-bison-killed-off-nearly-to-extinction/",
-      "summary": "The near extinction of the American buffalo bison was primarily driven by deliberate policies of the U.S. government aimed at weakening Native American tribes, coupled with unchecked commercial hunting.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "56b107df38b9d489",
-      "title": "USPS.com",
-      "url": "https://store.usps.com/store/shipping-supplies",
-      "summary": "Shop our selection of Shipping Supplies on the USPS.com Postal Store",
+      "id": "d5bfe23e61a85d7b",
+      "title": "FREE Homework Answers from Subject Matter Experts | Brainly",
+      "url": "https://brainly.com/app/all-questions",
+      "summary": "Get FREE, expert-verified answers to your homework questions in any subject on Brainly. Learn faster and boost your grades - ask your question now!",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "08a9f23afd7a786a",
+      "title": "GitHub - mega-ia-web/Chat-gpt",
+      "url": "https://github.com/mega-ia-web/Chat-gpt",
+      "summary": "Contribute to mega-ia-web/Chat-gpt development by creating an account on GitHub.",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [
-        "shipping"
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "37196c5eb6ee3e43",
+      "title": "Meaning of \"To all whom these presents come, greetings\"",
+      "url": "https://english.stackexchange.com/questions/22400/meaning-of-to-all-whom-these-presents-come-greetings",
+      "summary": "It is a very formal (or dated) version of “to whom it may concern”. You write it in particular on letters patent, such as royal, presidential, diplomatic proclamations. Because these are not sent to a named recipient, but open letters intended to proclaim or attest of something, and thus be presented to the public at large. As you noted, they are also used in diplomas and academic degrees.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses hands-on",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "patent"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e1ee342eaa330db6",
+      "title": "Mortgage FAQs - Navy Federal Credit Union",
+      "url": "https://www.navyfederal.org/loans-cards/mortgage/frequently-asked-questions.html",
+      "summary": "Read these frequently asked questions about Navy Federal mortgage loans. Learn more and apply today.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e6ba9888cccc57fb",
+      "title": "PC Gamer - The Witcher 3 Remastered announced: another huge free update ...",
+      "url": "https://store.steampowered.com/news/group/1850/view/683011022886274878",
+      "summary": "The Witcher 3 got a \"Next-Gen Update\" back in 2022, and CD Projekt Red is doing it again: The developer announced at Gamescom today that The Witcher 3 Remastered is coming September 29 as a free update for all owners of the RPG...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "announced"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
         "model",
-        "tool",
         "sdk"
       ],
       "primary_type": "model",
@@ -728,25 +517,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "808c77acef47247a",
-      "title": "USPS.com® - Sign In",
-      "url": "https://reg.usps.com/entreg/LoginAction",
-      "summary": "Create a USPS.com (registered trademark symbol) account to print shipping labels, request a Carrier Pickup, buy stamps, shop, plus much more.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "13f45c5a57909b99",
+      "title": "RPG Site - The Witcher 3: Wild Hunt - Remastered announced & coming ...",
+      "url": "https://store.steampowered.com/news/group/6070552/view/671752657526849572",
+      "summary": "Starting today, the Hearts of Stone & Blood and Wine previous DLCs will be available for free to all owners.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
+      "materiality_score": 3,
       "keyword_hits": [
-        "shipping"
+        "announced"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "model",
-        "tool",
-        "sdk"
+        "model"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -758,12 +545,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "516e444d4bb90429",
-      "title": "Asylum Records | Discogs",
-      "url": "https://www.discogs.com/label/33574-Asylum-Records",
-      "summary": "In the mid and late 1970s, Asylum released records by such influential artists as Tom Waits, Joni Mitchell, and Warren Zevon, as well as albums by former members of the Eagles, the Byrds and Buffalo Springfield.",
+      "id": "95e07ee232ea88f7",
+      "title": "Welcome to Steam",
+      "url": "https://store.steampowered.com/",
+      "summary": "The Witcher 3: Wild Hunt - Complete Edition Open World, RPG, Story Rich, Atmospheric Released: May 18, 2015 -50% $49.99 $24.99 -50% $49.99 $24.99 The Last of Us™ Part II Remastered Story Rich, Post-apocalyptic, Third-Person Shooter, Action-Adventure Released: Apr 3, 2025 -33% $49.99 $33.49 -33% $49.99 $33.49 Persona 3 Reload JRPG, Anime, RPG ...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -786,72 +573,380 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b122ab09cc6ef295",
-      "title": "Informed Delivery - Mail & Package Notifications | USPS",
-      "url": "https://informeddelivery.usps.com/",
-      "summary": "Informed Delivery is a free service from USPS that shows you preview images of incoming mail, plus status updates about your incoming and outbound packages. Get notifications in a morning Daily Digest email, or at any time from the dashboard using your smartphone, computer, or USPS Mobile app.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bbcfd1ed7b9cd2e1",
-      "title": "Informed Delivery App | USPS",
-      "url": "https://www.usps.com/apps/informed-delivery.htm",
-      "summary": "Download the Informed Delivery Mobile App Experience the Informed Delivery ® service at your fingertips. Our new mobile app features all the Informed Delivery essentials you love and more, allowing you to seamlessly manage your mail and packages—anytime, anywhere.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dfc3160c5c63637a",
-      "title": "List of Asylum Records artists - Grokipedia",
-      "url": "https://grokipedia.com/page/List_of_Asylum_Records_artists",
-      "summary": "Cate Brothers: American country soul duo from Arkansas that released their debut album Cate Bros. on Asylum Records in 1975, produced by Steve Cropper, blending R&B and rock elements.",
+      "id": "47d8c92525503a13",
+      "title": "Anime-Sama - Streaming et catalogage d'animes et scans.",
+      "url": "https://anime-sama.org/",
+      "summary": "Anime-Sama est un site de catalogue et de référencement d'animation APAC. Navigation optimisée, publicités réduites et fiches organisées pour faciliter vos ...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "released"
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
       ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "33a7794f52325a4d",
+      "title": "apostrophe - How is a' in mathematics pronounced? - English Language ...",
+      "url": "https://english.stackexchange.com/questions/26530/how-is-a-in-mathematics-pronounced",
+      "summary": "It often happens that two or more similar values are distinguished with the ' symbol, e.g. a, a', a'' and similar. How is this pronounced?",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses hands-on",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9402eeb8cffaf623",
+      "title": "chat gpt plus值得买吗？为什么呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/5432388703",
+      "summary": "GPT 免费版：每五小时十次5.3模型（只有这个，没得选），但有几乎无限量的5mini（但在有图有文件的窗口无法继续对话），还有每天若干次的画图、附件和深度思考。 codex 也有每周重置的免费额度，但很少，我试了下解决三个偏难的问题就差不多没了。",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "349ba3dc6ed28228",
+      "title": "Do I use italics for hotel and restaurant names?",
+      "url": "https://english.stackexchange.com/questions/19739/do-i-use-italics-for-hotel-and-restaurant-names",
+      "summary": "I would say no. Here is a quick guide on the correct usage of italics. To summarize: Don't use it for the proper noun. They example they give for a restaurant: if you write about a certain dish you ate that might not be commonly known, italicize it, but do not italicize the restaurant name.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses hands-on",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "535932757e58d4aa",
+      "title": "etymology - What are the origins of \"what's up\"? - English Language ...",
+      "url": "https://english.stackexchange.com/questions/22021/what-are-the-origins-of-whats-up",
+      "summary": "@mplungjan In fact, it is not the etymology of what's up; I simply reported where whatsup was used. Basing on the title of the short story, it's probably clear that Whatsup is a joke on the name Watson used in the Conan Doyle's stories. It is probably true that Whatsup should not had been chosen if what's up were not an already used expression.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses hands-on",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "20a92fe2d8e09019",
+      "title": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+      "url": "https://myanimelist.net/anime/60522/Gaikotsu_Kishi-sama_Tadaima_Isekai_e_Odekakechuu_II",
+      "summary": "Looking for information on the anime Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II (Skeleton Knight in Another World II)? Find out more with MyAnimeList, the world's most active online anime and manga community and database. Second season of Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6b5783abfa9ed7d2",
+      "title": "How do I properly hyphenate \"well thought out\"?",
+      "url": "https://english.stackexchange.com/questions/10959/how-do-i-properly-hyphenate-well-thought-out",
+      "summary": "I would use well-thought-out if it would means something different from well thought-out; in the example sentence, well can only be applied to thought-out, not to answer.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses hands-on",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "876690e2cabe9779",
+      "title": "Is \"whatsoever\" a formal word in written English?",
+      "url": "https://english.stackexchange.com/questions/15476/is-whatsoever-a-formal-word-in-written-english",
+      "summary": "@Hapreet Whatosever is a very categorical word, so in many forms of formal writing, especially academic writing, I'd be wary of using it as its use implies a very strong position, but it might serve a splendid role, in say, a formal denunciation: \"SIR, your recent actions lead me to conclude you have no honour whatsoever. I demand satisfaction. Meet in the square to-night, twenty paces à deux.\"",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses hands-on",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "46a46d86df3a13af",
+      "title": "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen",
+      "url": "https://myanimelist.net/anime/40591/Kaguya-sama_wa_Kokurasetai_Tensai-tachi_no_Renai_Zunousen",
+      "summary": "Looking for information on the anime Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen (Kaguya-sama: Love is War?)? Find out more with MyAnimeList, the world's most active online anime and manga community and database. After a slow but eventful summer vacation, Shuchiin Academy's second term is now starting in full force.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e7c11ebc1421275",
+      "title": "Kaichou wa Maid-sama! (Maid Sama!, TV 2010) - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/7054/Kaichou_wa_Maid-sama",
+      "summary": "Looking for information on the anime Kaichou wa Maid-sama! (Maid Sama!)? Find out more with MyAnimeList, the world's most active online anime and manga community and database. Misaki Ayuzawa is a unique phenomenon within Seika High School.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "023d1d52892c0df7",
+      "title": "Kaichou wa Maid-sama! (Maid-sama!) | Manga - MyAnimeList.net",
+      "url": "https://myanimelist.net/manga/2921/Kaichou_wa_Maid-sama",
+      "summary": "Looking for information on the manga Kaichou wa Maid-sama! (Maid-sama!)? Find out more with MyAnimeList, the world's most active online anime and manga community and database.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "817c1e7539db05ea",
+      "title": "Kosuke-sama Rikimaru-sama: Konpeitou no Ryuu - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/3214/Kosuke-sama_Rikimaru-sama__Konpeitou_no_Ryuu",
+      "summary": "Looking for information on the anime Kosuke-sama Rikimaru-sama: Konpeitou no Ryuu? Find out more with MyAnimeList, the world's most active online anime and manga community and database. Kosukesama Rikimarusama: Konpeito no Ryu was a 45 minute long anime TV special produced by J.C. Staff and broadcast on Japanese television in 1988. Similar to Dragon Ball, it was a martial arts adventure story ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ccd2d954da56cbd",
+      "title": "Maou-sama, Retry! (Demon Lord, Retry!) - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/38297/Maou-sama_Retry",
+      "summary": "Looking for information on the anime Maou-sama, Retry! (Demon Lord, Retry!)? Find out more with MyAnimeList, the world's most active online anime and manga community and database. Akira Oono is an ordinary working adult who manages the MMORPG Infinity Game. Fifteen years after creating the game, Oono decides to shut the servers down once and for all. However, as the clock strikes midnight, he ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "78d4ff8a74d12c4f",
+      "title": "MyAnimeList.net - Anime and Manga Database and Community",
+      "url": "https://myanimelist.net/",
+      "summary": "Welcome to MyAnimeList, the world's most active online anime and manga community and database. Join the online community, create your anime and manga list, read reviews, explore the forums, follow news, and so much more!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "15aa6652181638a6",
+      "title": "News - Pre-Purchase Now - The Witcher® 3: Wild Hunt - Steam",
+      "url": "https://store.steampowered.com/news/13596/",
+      "summary": "The Witcher® 3: Wild Hunt is Now Available for Pre-Purchase on Steam and is 10% off!* Save an additional 5% if you own The The Witcher: Enhanced Edition or The Witcher 2: Assassins of Kings Enhanced Edition on Steam. The Witcher 3: Wild Hunt is a story-driven, next-generation open world role-playing game, set in a graphically stunning fantasy universe, full of meaningful choices and impactful ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
@@ -868,187 +963,23 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3ff525eea6432ad0",
-      "title": "One of These Nights - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/One_of_These_Nights",
-      "summary": "One of These Nights is the fourth studio album by American rock band Eagles, released on June 10, 1975, by Asylum Records. The album was the band's commercial breakthrough, transforming them into international superstars.",
+      "id": "671c75a97e49ff57",
+      "title": "Ojousama wa H ga Osuki: The Animation - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/8291/Ojousama_wa_H_ga_Osuki__The_Animation/",
+      "summary": "Looking for information on the anime Ojousama wa H ga Osuki: The Animation? Find out more with MyAnimeList, the world's most active online anime and manga community and database.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "released"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "91060914050ea2ea",
-      "title": "Postal Facts - U.S. Postal Service",
-      "url": "https://facts.usps.com/",
-      "summary": "Everyone living in the United States and its territories has access to postal products and services and pays the same for a First-Class Mail postage stamp, regardless of location. For 250 years, we’ve been making the connections with friends and families and businesses and customers.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a579b39e5eadab6",
-      "title": "Postmaster Finder - Who we are - About.usps.com",
-      "url": "https://about.usps.com/who/profile/history/postmaster-finder/",
-      "summary": "What you will find: Most postmasters appointed after 1971 and some postmasters appointed before 1971, back to the 1700s. Presently, we offer complete information on more than 17,000 Post Offices, and the number increases weekly. Postmasters Postmasters by city Postmasters by where they served Post Offices Post Offices by county Post Offices by state Post Offices by established date Post ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a094ea31c7d8061f",
-      "title": "Site Index | USPS",
-      "url": "https://www.usps.com/globals/site-index.htm",
-      "summary": "USPS.com Site Index Find the information you're looking for on the site map. Send Mail & Packages",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8fafbf4b0727adec",
-      "title": "USPS.com® - Sign In or Sign Up",
-      "url": "https://reg.usps.com/informeddelivery/welcome",
-      "summary": "This includes the following limited circumstances: to a congressional office on your behalf; to financial entities regarding financial transaction issues; to a U.S. Postal Service auditor; to entities, including law enforcement, as required by law or in legal proceedings; and to contractors and other entities aiding us to fulfill the service ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "policy"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "76bda2335dcba12e",
-      "title": "USPS.com® - USPS Tracking®",
-      "url": "https://tools.usps.com/tracking/.Here",
-      "summary": "If a package qualifies for the USPS Delivery Instructions™ service, you can tell USPS where to leave a package at your address, send it to a different address, or send it to your Post Office. Click Change Delivery Instructions on the tracking results page to leave your request.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e724d28c9285a966",
-      "title": "3 \"Jaclyn Bevis\" profiles | LinkedIn",
-      "url": "https://www.linkedin.com/pub/dir/Jaclyn/Bevis",
-      "summary": "View the profiles of professionals named \"Jaclyn Bevis\" on LinkedIn. There are 3 professionals named \"Jaclyn Bevis\", who use LinkedIn to exchange information, ideas, and opportunities.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses OEM ODM rebrand",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1058,114 +989,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8b10fb5451018af8",
-      "title": "All Volkswagen Dealers in Mount Laurel, NJ 08054 - Autotrader",
-      "url": "https://www.autotrader.com/car-dealers/volkswagen/mount-laurel-nj",
-      "summary": "Find Mount Laurel Volkswagen Dealers. Search for all Volkswagen dealers in Mount Laurel, NJ 08054 and view their inventory at Autotrader",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8453490c9d1de334",
-      "title": "Best Blue Chip IT Stocks in NSE/BSE - MoneyWorks4Me",
-      "url": "https://www.moneyworks4me.com/best-index/top-stocks/top-it-companies-list",
-      "summary": "Here's a complete list of Top IT Stocks in Indian Share Market. Filter, Compare & Analyse list of Top IT Stocks and Find out Best IT Stocks using MoneyWorks4Me Screener and DeciZen Ratings!",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d5ee29313e1e0a0d",
-      "title": "Best of D.C. 2026 Results",
-      "url": "https://bestof2026.washingtoncitypaper.com/",
-      "summary": "As longtime lovers of our city, it’s always a joy to put together our Best of D.C. (including our recommendations on where to cry in public, the hyped-up restaurant that’s actually worth the...",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "44e4848bd335125d",
-      "title": "Best Volkswagen Dealership Philadelphia, Cherry Hill, Marlton, Mount ...",
-      "url": "https://www.cherryhillvw.com/",
-      "summary": "Cherry Hill Volkswagen in Cherry Hill NJ., serving Greater Philadelphia. Dive into a vast selection of New Cars and top-quality Used Cars at Cherry Hill VW. Whether its VW Sales, Service, or Parts our team is dedicated to ensuring unparalleled customer satisfaction. Experience the difference today!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e192175b85f86a22",
-      "title": "Daily 4 Evening - Michigan (MI) - Results & Winning Numbers - Lottery USA",
-      "url": "https://www.lotteryusa.com/michigan/daily-4/",
-      "summary": "The last 10 results for the Michigan (MI) Daily 4 Evening, with winning numbers and jackpots.",
+      "id": "a61b8280b7c6ab7b",
+      "title": "PC Gamer - The Witcher 3 Remastered makes the original's best HD mod ...",
+      "url": "https://store.steampowered.com/news/group/1850/view/668374957802127706",
+      "summary": "It's been a long road, but a mod we called The Witcher 3's best graphics overhaul will no longer be needed—and for once, I can talk about a mod becoming obsolete with a smile on my face, because the reasons involved here are all good ones...",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1188,12 +1015,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1472a1d857d9416a",
-      "title": "ENGO Controls - Heating control",
-      "url": "https://engocontrols.com/",
-      "summary": "The ENGO Controls brand opens up to integration with devices from different manufacturers. With the ENGO Smart mobile app, you can create a comprehensive smart home ecosystem that supports WiFi, Zigbee 3.0 and TUYA protocol equipment.",
+      "id": "33acbb0cb3eb008a",
+      "title": "Should north, south, east and west be capitalised?",
+      "url": "https://english.stackexchange.com/questions/14965/should-north-south-east-and-west-be-capitalised",
+      "summary": "Should cardinal points be capitalised? Please give a reason why they should or should not.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "smart glasses hands-on",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "86d81ccc0e3b4f8c",
+      "title": "Steam Search",
+      "url": "https://store.steampowered.com/search/?term=The+Witcher+3",
+      "summary": "19 results match your search. The Witcher 3: Wild Hunt - Complete Edition",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f31a256cc531ba90",
+      "title": "The Witcher 3: Wild Hunt - Complete Edition - Steam",
+      "url": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt__Complete_Edition/",
+      "summary": "Take this game anywhere! The Witcher 3: Wild Hunt - Complete Edition is one of the top played games on Steam Deck!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1214,246 +1093,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3491195ba829c9f1",
-      "title": "Fantasy 5 - Michigan (MI) - Results & Winning Numbers - Lottery USA",
-      "url": "https://www.lotteryusa.com/michigan/fantasy-5/",
-      "summary": "The last 10 results for the Michigan (MI) Fantasy 5 , with winning numbers and jackpots.",
+      "id": "25d4312dc0b8f645",
+      "title": "The Witcher 3: Wild Hunt - NEW GAME + в Steam",
+      "url": "https://store.steampowered.com/agecheck/app/378647/?l=russian",
+      "summary": "Рвётесь в гущу боя? Начните новую игру, сохранив при себе все ранее приобретенные навыки и предметы, получайте лучшую добычу, убивайте ещё более свирепых монстров и снова испытайте невероятные приключения в игре ...",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a8b086a61c753649",
-      "title": "Fresco y Más - Company Profile & Staff Directory | ContactOut",
-      "url": "https://contactout.com/company/fresco-y-mas-8714",
-      "summary": "Fresco y Más is a Retail company located in 8928 Prominence Pkwy, Jacksonville, Florida 32256, US with 298 employees. Access Fresco y Más's email format and staff directory for direct contact details.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses OEM ODM rebrand",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8254e0ff2c37a892",
-      "title": "Fresco Y Más - Employees, Contact info, Overview - Wiza",
-      "url": "https://wiza.co/d/fresco-y-mas/22ba",
-      "summary": "Fresco Y Más is a company located in Jacksonville, Florida, United States. Find employees, official website, emails, phone numbers, revenue, employee headcount, social accounts, and anything related to Fresco Y Más.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses OEM ODM rebrand",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a68b89e1f3b27b86",
-      "title": "Fresco y Más - LinkedIn",
-      "url": "https://www.linkedin.com/company/fresco-y-mas",
-      "summary": "Fresco y Más | 2,523 followers on LinkedIn. Founded in 2016, Fresco y Más grocery stores serve Hispanic and Caribbean communities throughout South, West and Central Florida. For more...",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses OEM ODM rebrand",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6e93f5bb494e50fa",
-      "title": "Friday's Lottery Numbers & Results for Michigan",
-      "url": "https://www.lotteryusa.com/michigan/friday",
-      "summary": "Check out Friday's Lottery Results and jackpots for Michigan and see if you're a winner.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c81238805ca0c2d9",
-      "title": "Jaclyn Bevis - -- | LinkedIn",
-      "url": "https://www.linkedin.com/in/jaclyn-bevis-6097a1124",
-      "summary": "View Jaclyn Bevis’ profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses OEM ODM rebrand",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "822c18a911262a32",
-      "title": "Jaclyn Bevis - Communications and Marketing Director at ... - LinkedIn",
-      "url": "https://www.linkedin.com/in/jaclyn-bevis-318a9912",
-      "summary": "View Jaclyn Bevis’ profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses OEM ODM rebrand",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d11f5147971ed5e1",
-      "title": "Jaclyn Bevis Email & Phone Number - RocketReach",
-      "url": "https://rocketreach.co/jaclyn-bevis-email_176563884",
-      "summary": "Jaclyn Bevis, based in Fort Myers, FL, US, is currently a Media Relations Manager at Lee Health. Jaclyn Bevis brings experience from previous roles at American Heart Association, WBBH and WTHI-TV.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses OEM ODM rebrand",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4c99b1f6ccc61cfa",
-      "title": "Jaclyn Bevis Rodriguez - Tax Preparer quickbooks | LinkedIn",
-      "url": "https://www.linkedin.com/in/jaclyn-bevis-rodriguez-53245b237",
-      "summary": "Tax Preparer quickbooks · Experience: Bebe consulting · Location: 33024. View Jaclyn Bevis Rodriguez’s profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses OEM ODM rebrand",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "42dbf6811fc22c44",
-      "title": "Jaclyn Bevis | Source | Media Relations Manager ... | Qwoted",
-      "url": "https://app.qwoted.com/sources/jaclyn-bevis",
-      "summary": "On the record Share profile Bio Jaclyn is the Media Relations Manager at Lee Health. She is looking to grow in storytelling, communicating, and fact finding to better educate. Jaclyn is writing, leadership, organization, time management, and communication. Employment Sign up to view all Lee Health Media Relations Manager",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses OEM ODM rebrand",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1474,10 +1119,62 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e0ace116fb2f9d41",
-      "title": "List of country rock albums - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/List_of_country_rock_albums",
-      "summary": "\"The Best of Doug Sahm & the Sir Douglas Quintet 1968–1975 - Doug Sahm, the Sir Douglas Quintet | Songs, Reviews, Credits | AllMusic\". AllMusic. \"More a Legend Than a Band - the Flatlanders | Songs, Reviews, Credits | AllMusic\". AllMusic.",
+      "id": "3b0e1f8e9fba96c1",
+      "title": "The Witcher 3: Wild Hunt — Remastered - Announcing The Witcher 3: Wild ...",
+      "url": "https://store.steampowered.com/news/app/292030/view/676255623445218403",
+      "summary": "Get ready to experience Geralt’s adventures in this enhanced version, coming as a free upgrade on Steam.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5cbc52629d9c56bc",
+      "title": "When do we use \"arrive at\" versus \"arrive in\"?",
+      "url": "https://english.stackexchange.com/questions/20768/when-do-we-use-arrive-at-versus-arrive-in",
+      "summary": "Arrive carries 3 prepositions: in, on, or at. He arrived in New York. He arrived at the station. He arrived on the scene of the accident. Also: He arrived here. [no preposition] He arrived at 12 o'clock. He arrived within 10 minutes. He will arrive in an hour. So it turns out that ' arrive ' either carries or doesn't carry a preposition depending on the place or time that follows it, i.e. if ...",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses hands-on",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "59e994a636432afa",
+      "title": "Yowaki Max Reijou nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte ...",
+      "url": "https://myanimelist.net/anime/62753/Yowaki_Max_Reijou_nanoni_Ratsuwan_Konyakusha-sama_no_Kake_ni_Notte_Shimatta",
+      "summary": "Looking for information on the anime Yowaki Max Reijou nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta (Even Though I'm a Super Timid Noble Girl, I Accepted the Bet From My Cunning Fiancé)? Find out more with MyAnimeList, the world's most active online anime and manga community and database. I was reborn as a villainous daughter in a reverse harem otome game. After being sick with ...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1488,9 +1185,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1500,636 +1197,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cd3fdce465b5f97d",
-      "title": "Lotto 47 - Michigan (MI) - Results & Winning Numbers - Lottery USA",
-      "url": "https://www.lotteryusa.com/michigan/classic-lotto-47/",
-      "summary": "Lottery results for the Michigan (MI) Lotto 47 and winning numbers for the last 10 draws.",
+      "id": "014e5437cf9e0a4e",
+      "title": "在 Steam 購買 巫師3：狂獵 — 重製版 即可省下 50%",
+      "url": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/?l=tchinese",
+      "summary": "《巫師 3：狂獵－重製版》帶來多項升級與強化，讓這款備受好評的角色扮演遊戲重煥新生。化身受雇的狩魔獵人「利維亞的傑洛特」，踏入黑暗奇幻的開放世界，展開尋找養女希里的壯闊冒險。",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba9aab0129bc5557",
-      "title": "Michigan (MI) Lottery - Winning Numbers & Results",
-      "url": "https://www.lotteryusa.com/michigan/",
-      "summary": "Up to date Michigan (MI) lottery results, such as the winning numbers for Powerball, Mega Millions and Classic Lotto 47.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7d9504a641061637",
-      "title": "Michigan (MI) Mega Millions - Results & Winning Numbers - Lottery USA",
-      "url": "https://www.lotteryusa.com/michigan/mega-millions/",
-      "summary": "Lottery results for the Michigan (MI) Mega Millions and winning numbers for the last 10 draws.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "26833e8765aabd80",
-      "title": "Michigan (MI) Powerball - Results & Winning Numbers - Lottery USA",
-      "url": "https://www.lotteryusa.com/michigan/powerball/",
-      "summary": "Lottery results for the Michigan (MI) Powerball and winning numbers for the last 10 draws.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "89fcb3184906b741",
-      "title": "Minnesota (MN) Lottery - Results and Winning Numbers",
-      "url": "https://www.lotteryusa.com/minnesota/",
-      "summary": "Minnesota Lottery winning numbers and results as well as MN Powerball and Mega Millions.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "88c20a4424fb5e23",
-      "title": "Muscle Shoals Rhythm Section - Encyclopedia of Alabama",
-      "url": "https://encyclopediaofalabama.org/article/muscle-shoals-rhythm-section-msrs/",
-      "summary": "After leaving FAME in the spring of 1969, the quartet established itself as the Muscle Shoals (Sound) Rhythm Section and cultivated its definitive country-soul-tinged \"Muscle Shoals\" sound.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d054d6785165b0dd",
-      "title": "Muscle Shoals Sound Studios - Discogs",
-      "url": "https://www.discogs.com/label/264127-Muscle-Shoals-Sound-Studios",
-      "summary": "Explore music from the Muscle Shoals Sound Studios label. Discover what's missing in your collection and shop for Muscle Shoals Sound Studios releases.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "825b6295a1106bdf",
-      "title": "Nifty 100 Stocks List | List of Nifty 100 Companies 2026 - MoneyWorks4Me",
-      "url": "https://www.moneyworks4me.com/best-index/nse-stocks/top-nse100-companies-list",
-      "summary": "Get Complete list of Nifty 100 Stocks in Indian Share Market. Compare and Analyse list of Top Nifty 100 Companies. Also find out Best Bluechip Stocks in Nifty 100 Index using MoneyWorks4Me Screener.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "60669d87fd28b3b9",
-      "title": "Nifty 50 Companies - List of all Nifty 50 Stocks - MoneyWorks4Me",
-      "url": "https://www.moneyworks4me.com/best-index/nse-stocks/top-nifty50-companies-list",
-      "summary": "Get the updated Nifty 50 companies list for 2025 with stock prices, market cap, PE ratio, PBV, RoE, and weightage. Check the fundamentals of all Nifty 50 Stocks and make informed investment decisions.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6dea3fb300cadd80",
-      "title": "Nifty 50 Stocks - List of Nifty 50 Stocks 2026 - MoneyWorks4Me",
-      "url": "https://www.moneyworks4me.com/best-index/nse-stocks/nifty-50",
-      "summary": "The Nifty 50, often referred to as the Nifty, is a stock market index in India. It represents a diversified basket of the 50 largest and most actively traded stocks listed on the National Stock Exchange (NSE).",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3dad78c2b16c323b",
-      "title": "Nifty 50 uptrend stocks - MoneyWorks4Me",
-      "url": "https://www.moneyworks4me.com/stock-market/stock-screener/nifty-50-uptrend-stocks",
-      "summary": "Nifty 50 uptrend stocks - Explore undervalued and high-quality Indian stocks with MoneyWorks4Me's Stock Screener. Use fair-value insights and DeciZen Ratings to identify stocks worth investing in.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "de992e5f77c3241f",
-      "title": "Nifty Bank Stocks - Nifty Bank Index Companies | MoneyWorks4me.com",
-      "url": "https://www.moneyworks4me.com/nse-index/top-nse-bank-companies-list/",
-      "summary": "Nifty Bank Index is an index comprised of the most liquid and large capitalised Indian Banking stocks. It provides investors and market intermediaries with a benchmark that captures the capital market performance of Indian Banks.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "32e9912fb9cb36fe",
-      "title": "Nifty It Stocks - Nifty It Index Companies | MoneyWorks4me.com",
-      "url": "https://www.moneyworks4me.com/nse-index/top-nse-it-companies-list",
-      "summary": "Nifty It Stocks - Analyze the Fundamentals of Nifty It index companies & keep a track of their Current Price, Price Change, 52 Week High/Low, Market Cap, Latest PE and much more…",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e4a92e105b458a71",
-      "title": "Nifty Low Volatility 50 Stocks - Nifty Low Volatility 50 Index ...",
-      "url": "https://www.moneyworks4me.com/nse-index/top-nse-low-volatility-50-companies-list",
-      "summary": "Nifty Low Volatility 50 Stocks - Analyze the Fundamentals of Nifty Low Volatility 50 index companies & keep a track of their Current Price, Price Change, 52 Week High/Low, Market Cap, Latest PE and much more…",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b8ccf56b720a06f4",
-      "title": "Nifty Transportation & Logistics Stocks - Nifty Transportation ...",
-      "url": "https://www.moneyworks4me.com/nse-index/top-nse-transportation-logistics-companies-list",
-      "summary": "Nifty Transportation & Logistics Stocks - Analyze the Fundamentals of Nifty Transportation & Logistics index companies & keep a track of their Current Price, Price Change, 52 Week High/Low, Market Cap, Latest PE and much more…",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7e439f7098998d02",
-      "title": "Ohio (OH) Lottery Results & Winning Numbers",
-      "url": "https://www.lotteryusa.com/ohio/",
-      "summary": "We offer all Ohio lottery results, including information on the winning numbers for Mega Millions and Classic Lotto.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0825609e55d4a3a3",
-      "title": "Powerball - Lottery USA",
-      "url": "https://www.lotteryusa.com/powerball/",
-      "summary": "Everything you need to know about the Powerball lottery, including winning numbers, prizes, how to play, ticket cost, and draw schedules.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b0cc87c9589c079d",
-      "title": "The Muscle Shoals Rhythm Section - AllMusic",
-      "url": "https://www.allmusic.com/artist/the-muscle-shoals-rhythm-section-mn0001352027",
-      "summary": "The Muscle Shoals Rhythm Section (Roger Hawkins, Jimmy Johnson, Barry Beckett, and David Hood, often affectionately called \"the Swampers\") is widely regarded as one of the most important American recording studio \"house bands\" emerging in the golden age of rock and soul.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d44d894a05e5a448",
-      "title": "TOP 10 BEST Camera Store in Rockford, IL - (2026 Guide) - Yelp",
-      "url": "https://www.yelp.com/search?find_desc=camera+store&find_loc=Rockford%2C+IL",
-      "summary": "\"I've had this service done on a different camera by an independent camera specialist and it cost $60...\" more. 3. CTEC Shack. \"They have local books and security cameras, antennas and more. Thank you for all your help!\" more. 4. Vip Pro Lab & Video, Inc. \"Igor is the best!",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2eb67b4360b71299",
-      "title": "Top 25 Stocks in India | Top Indian Companies by Market Cap",
-      "url": "https://www.moneyworks4me.com/screener/top-25-stocks-in-india",
-      "summary": "Investing in the top 25 stocks in India can offer several advantages: Stability and Reliability: Top stocks are typically from established companies with a proven track record. They often have stable financials, making them a relatively safer investment compared to smaller or riskier companies.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "72a348e77ef4e62c",
-      "title": "Used Car Dealer Mount Laurel NJ | Toms River Volkswagen",
-      "url": "https://www.tomsrivervw.com/used-car-dealer-mount-laurel-nj/",
-      "summary": "Feel free to stop by Toms River Volkswagen, your used Volkswagen dealer serving Mount Laurel, NJ. We’re just down the road in Toms River, and we’ll help you find all that you’re looking for.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9703e28b2c359b20",
-      "title": "Volkswagen Dealer Burlington NJ New & Used Cars for Sale near Cherry ...",
-      "url": "https://www.burlingtonvw.com/",
-      "summary": "Burlington Volkswagen in Burlington, NJ offers new and used Volkswagen cars, trucks, and SUVs to our customers near Cherry Hill. Visit us for sales, financing, service, and parts!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "afa933ff94ec5420",
-      "title": "Volkswagen Dealer near Mount Laurel NJ | Toms River Volkswagen",
-      "url": "https://www.tomsrivervw.com/volkswagen-dealer-mount-laurel-nj-2/",
-      "summary": "Whether you’re looking to add some zip to your commute, refinance your Volkswagen, or need service, our Volkswagen dealer near Mount Laurel, NJ, is ready for you!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fb42c4cbee1fd2dc",
-      "title": "Volkswagen Dealer Vineland NJ",
-      "url": "https://www.prestigevolkswagen.com/volkswagen-dealer-vineland-nj.htm",
-      "summary": "Looking for a Volkswagen dealer near Vineland NJ? Prestige Volkswagen is New Jersey's VW dealership with a huge inventory of new and used cars.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "779c6e8b380d078e",
-      "title": "Welcome to Fresco y Mas!",
-      "url": "https://link.frescoymas.com/",
-      "summary": "The Fresco y Más app is here to help you save big and earn points toward free groceries!",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses OEM ODM rebrand",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
