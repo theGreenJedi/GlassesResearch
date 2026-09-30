@@ -10,7 +10,7 @@ import re
 from datetime import datetime
 from typing import Any
 
-FAQ_HEADING = re.compile(r"^##\s+(?:\d+\.\s+)?(.+\?)\s*$", re.MULTILINE)
+H2_HEADING = re.compile(r"^##\s+(.+?)\s*$", re.MULTILINE)
 PUBLISHED = re.compile(r"^\*\*Published:\*\*\s+(.+?)\s*$", re.MULTILINE)
 WIRE_REPORTED = re.compile(r"^\*\*Across the Wire\s+·\s+(?:Reported|Under review)\s+·\s+(.+?)\*\*\s*$", re.MULTILINE | re.IGNORECASE)
 LINK = re.compile(r"!?\[([^\]]+)\]\([^\)]+\)")
@@ -98,19 +98,24 @@ def _core_schema(page_title: str, description: str, canonical_url: str, site_url
 
 
 def _faq_schema(markdown: str, canonical_url: str) -> str | None:
-    """Build FAQPage JSON-LD only when visible H2 question/answer pairs exist."""
-    matches = list(FAQ_HEADING.finditer(markdown))
-    if len(matches) < 1:
+    """Build FAQPage JSON-LD from visible H2 question sections only."""
+    headings = list(H2_HEADING.finditer(markdown))
+    if not headings:
         return None
 
     entities: list[dict[str, Any]] = []
-    for index, match in enumerate(matches):
+    for index, match in enumerate(headings):
+        question = _plain_text(match.group(1))
+        if not question.endswith("?"):
+            continue
+        # An answer belongs only to its visible H2 section. Stopping at the
+        # next H2 prevents unrelated model-page sections from being folded
+        # into a single FAQ acceptedAnswer.
         answer_start = match.end()
-        answer_end = matches[index + 1].start() if index + 1 < len(matches) else len(markdown)
+        answer_end = headings[index + 1].start() if index + 1 < len(headings) else len(markdown)
         answer_markdown = markdown[answer_start:answer_end].strip()
         answer = _plain_text(answer_markdown)
-        question = _plain_text(match.group(1))
-        if not question or not answer:
+        if not answer:
             continue
         entities.append(
             {
