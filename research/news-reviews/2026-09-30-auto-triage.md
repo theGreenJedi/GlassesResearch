@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-30T10:03:33.978215+00:00`
+Generated: `2026-09-30T10:46:29.847763+00:00`
 
 - Intake files inspected: **308**
 - Candidates retained in this review window/history: **13283**
@@ -12,10 +12,10 @@ Generated: `2026-09-30T10:03:33.978215+00:00`
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 739
+- `needs_editorial_verification`: 743
 - `rejected_noise`: 9539
 - `source_monitor`: 1
-- `source_review`: 35
+- `source_review`: 31
 - `watching`: 91
 
 ## Action queue
@@ -244,6 +244,7 @@ Generated: `2026-09-30T10:03:33.978215+00:00`
 | normal | needs_editorial_verification | direct | [Alibaba представила умные очки Qwen Glasses N1 Pro с отслеживанием взгляда и оплатой по радужке - New-Science.ru](https://news.google.com/rss/articles/CBMiwAFBVV95cUxORDBmSkxrWWNVekQxa0kwVWNUYnZES1NpX2x1TUR5bjlMOFhINUJyMTk1dmptZFJEYnI4UU5XajNGaGtSaE1ZWFl4R2NVUHJqamh4V2g3SW53RncxWVZLLUNuZDJsbHQ1VWlmdFpJMWN6TGcwZms1Z3JfT0ZhdGlQSE1rZk56TTVtdEhfeV91VndzM3JaX1NYSnlFdEFjdmRyZzBfQ05jVVItR1h4ekZYelJwVmZhZTZhXzhteXY3ZVg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon Prime Day Early Deals Include Smart Glasses, Air Fryers, and More Up to 50% Off - bestproducts.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPM1BDNmd0ZV9uQWYxQnBTaFJHSmZ1QmpHRnRTMV9ZXzFDNEJsYzJqNm5XR05hZjg5WHc3alZVMmVuQ1lHdmhSb0VkZUVQVjVBUldKelotbDlBd3lmS243b3JweWJkQTlSZFgtMXhjd0lZSUNya3g1WWZsanl0OWZQOEVkOHNnUTRKTEowSFlWZHZyd0E?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon's $60 AI smart glasses can take live HD video - Currently.com](https://news.google.com/rss/articles/CBMihAFBVV95cUxQVThSUlJNNWNtb2FHU2Rad0txYjVReTV0cWV2TDJLd3NNWnFFTGhuT2FZeV95eHhkSkcwSk96NmRsQkN2MlJTeElyNnRORFZoSGlYVThYdmJaS2pXYUxXSDU1MlFCVi13bEM1RmcyM0VmRmtsbjRBTzFyNU4zdWstS29QV0k?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple A empresa planeja lançar seus óculos inteligentes em 2027. - Letem světem Applem](https://news.google.com/rss/articles/CBMi3wFBVV95cUxORHdZSUpibzZhVkd3Zk9Jal9zdER3WkVCcW5YUEsxbWNwMzUwYVVzaHFzZUpseGF2S3FWdkVhRTlQU1IxclZfX2FEd0NuRTR3enJneGlMT3dXMWpJelFCX1VJclBTa0hSM0VTT1l1cnpsSW5YWlhQaGNMOTAyMElhakU0bThXNkdIUGxEWUpTNkFJNUxwOXRPaVh6Z1VQUFQ2amk5dHdaUTdQdjdwaFFSVG9PYlZUSEdERmRtN3RFdnR4WU5yNnA1OENnVWtydHZKZjVuMG9pdWZIV3RTQnFn?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple is preparing another big news. Smart glasses are due to arrive in 2027, a new Vision Pro later - Letem světem Applem](https://news.google.com/rss/articles/CBMi3wFBVV95cUxQUHJRVGhIRExGYkdkZ2JOVVRTR2hwM2paeGFNZUtQN2x2TFc5bDhWcmo0WDhUTngxeWFwb285Z3R1S1hGdG94Q2M4emJ1d3Exczk2R1NCQ3lPbmdSYUFqbUhFRWhrWjdzZF9YNmZPNVBkb1BWLTFlUDZzZFg5Mmk3Zm1vNEVqR3BPckdFNVNndWQ5WDhndXgybUNrbm9zOVBNaGRseWREQnljc0pMblhnUjFNZDR1MnpyLXktb3NpbjllbXUwOGpzLTUwTmpkSGVYenk1UUpiajQxTEZtTDlF?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple planea sus gafas inteligentes para 2027 y renovar las Vision Pro - Actualidad iPhone](https://news.google.com/rss/articles/CBMihgFBVV95cUxNMlFQNWlIWHplXy16TUNPUEdqcGNaTDc4d1Vyd3k1TndHLU9mZEtZVXZscnF4RGZBTElhbUNNU1ZIMkFsMzlkdkZSMEJWczdvSjVmUUpoVDBSZ0VMamJEWURKaUdObVp3N28wZC1sdy1Vd0ZyNUJKSTVBVTFSVGRNVXVpOVNKQQ?oc=5) | reachable (200) | research_news_review |
@@ -271,7 +272,6 @@ Generated: `2026-09-30T10:03:33.978215+00:00`
 | normal | needs_editorial_verification | direct | [Insta360 trabaja en gafas inteligentes con IA y batería externa - laverdad.com.mx](https://news.google.com/rss/articles/CBMinAFBVV95cUxOdGlXS0VmUGEyd0hWS3JLclN0QlAzWkswLVY2QTc1Ui1PZzZuTmg3VTI5MURnUzB0QW9JeEZxLXJwMllWRFVselpmR01TRkV4eTVRR3cyR3hHVldDU3NJTnEwdVRaRDc2eWV5MUp2SWtnbTBOUkd2ZW5icnpSMWVtOXAzSWRnU3BwSFhIbklkWWQ3VHJKZnZCaHZZNHI?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Jornal Midiamax. . Faltando cinco dias para o primeiro turno das Eleições 2026, os óculos inteligentes, aqueles com uma microcâmera acoplada](https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWkJqZmxQaDlOWTY0TXc2TXU3V0U5RU9kWHRzWTEzMDhNYks0VVp4Ul9BSTRPS29DQjhRRy1ubU00TWNEV1dueGx4SlBIZlpuNXZZd3huSFlUcDZTTlRVVkJCS2FPcWZNRzFURmpLNDAwNktYbFByNmRBcnNfQU00aTg0cndkaG4zSUJSYXdpNXlKaTRZczBQSy1LaVBhWHJ3RjF2eHUtWkIyM2p0Wlk5azZIWFhpVk5nV216RlZBVENDb2FnZ0NPT3JZazJNUFoxTVhPSWs2VlA1YlJHM0plUHFyT2w4YWdRekE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Meta AI glasses could go camera-free with privacy-focused Luna - YourStory.com](https://news.google.com/rss/articles/CBMicEFVX3lxTE1Idm04WGNfczR2cEp0SEd6U0hvekVfcWJRMjRZNjhjSjA4b3pzNEFFRTB0MWsxYXMyQS1sOWV2SGhEX1BFWVVZYkVEYl9FeDBHaHZpRWdzbVdvdkxzUm1Rek1HS0pyTGtiMHBQeXpsQXo?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Meta Brings Camera-Free AI Glasses Amid Privacy Concerns - ndtv.com](https://news.google.com/rss/articles/CBMiygFBVV95cUxQLVZ3akhpQmNVUWRYQjMxSnkxUFRURG5ldnVQcTU5Tmhuc294aEdHUkFOV19PNXRYZk96NTBqbGpubkwzTHp0ZWFFbDZYTXQyM0I0OExtaGNLVFBZeWhJNEl0dlhOWFNSRk15bFkwTVhtUzRhcWF6UWFIVGZvWVN2ZVZydW5kbWZnQ1FnclZRQ0plRmJxemxPSU9INER6SFVNdnRyY3o1SFhWaHVVQnIyNkR2SlNBWVpaQ2U2QXgxUWpWZm5tRi1XMWxR0gHKAUFVX3lxTFAtVndqSGlCY1VRZFhCMzFKeTFQVFREbmV2dVBxNTlOaG5zb3hoR0dSQU5XX081dFhmT3o1MGpsam5uTDNMenRlYUVsNlhNdDIzQjQ4TG1oY0tUUFl5aEk0SXR2WE5YU1JGTXlsWTBNWG1TNGFxYXpRYUhUZm9ZU3ZlVnJ1bmRtZmdDUWdyVlFDSmVGYnF6bE9JT0g0RHpIVU12dHJjejVIWFZodVVCcjI2RHZKU0FZWlpDZTZBeDFRalZmbm1GLVcxbFE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
