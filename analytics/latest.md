@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-09-30T11:35:18+00:00**
+Generated automatically: **2026-09-30T13:43:50+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -55,8 +55,8 @@ Generated automatically: **2026-09-30T11:35:18+00:00**
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **34 browser pageviews**, **30 RUM visits**.
-- Rolling 7d: **163 browser pageviews**, **131 RUM visits**.
+- Rolling 24h: **33 browser pageviews**, **29 RUM visits**.
+- Rolling 7d: **164 browser pageviews**, **132 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
@@ -64,8 +64,8 @@ Generated automatically: **2026-09-30T11:35:18+00:00**
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
 | / | 7 | 7 |
-| /docs/news/articles/2026-09-24-inmo-air3-cpsc-recall/ | 5 | 5 |
 | /models/catalog/ | 5 | 4 |
+| /docs/news/articles/2026-09-24-inmo-air3-cpsc-recall/ | 3 | 3 |
 | /models/SnapSpectacles5/ | 3 | 3 |
 | /research/myvu-open-research/COMPATIBILITY/ | 1 | 1 |
 | /docs/CONTENTS/ | 1 | 0 |
@@ -80,25 +80,25 @@ Generated automatically: **2026-09-30T11:35:18+00:00**
 |---|---:|---:|
 | (direct / none) | 26 | 26 |
 | glassesresearch.org | 4 | 0 |
-| chatgpt.com | 3 | 3 |
+| chatgpt.com | 2 | 2 |
 | bing.com | 1 | 1 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **6,495 requests**, **2,295 HTTP visits**, **252.7 MB** served.
-- Rolling 7d: **35,656 requests**, **11,251 HTTP visits**, **1139.7 MB** served.
+- Rolling 24h: **6,973 requests**, **2,450 HTTP visits**, **277.0 MB** served.
+- Rolling 7d: **36,178 requests**, **11,367 HTTP visits**, **1159.9 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 4,072 | 2,069 |
+| US | 4,558 | 2,224 |
 | CN | 998 | 16 |
-| NL | 178 | 6 |
+| NL | 177 | 5 |
 | AU | 172 | 0 |
-| CA | 152 | 19 |
-| DE | 126 | 54 |
+| CA | 149 | 16 |
+| DE | 129 | 55 |
 | T1 | 110 | 1 |
 | IT | 93 | 1 |
 | BG | 84 | 1 |
