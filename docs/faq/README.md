@@ -1,4 +1,4 @@
-# 100 Smart-Glasses Questions and Answers
+# Smart-Glasses Practical Answers
 
 A current, evidence-aware FAQ for buyers, researchers, developers, accessibility users, and anyone trying to understand AI glasses, display glasses, AR glasses, and the wider smart-eyewear ecosystem.
 
@@ -22,6 +22,11 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [Development and openness](09-development-openness.md)
 - [Ownership and future](10-ownership-future.md)
 
+## Current safety answers
+
+- [**What smart glasses are recalled?**](10-ownership-future.md#what-smart-glasses-are-recalled) — Current verified recall records, affected models, primary regulatory evidence, and remedies.
+- [**Is the INMO Air3 recalled?**](10-ownership-future.md#is-the-inmo-air3-recalled) — Yes. See the verified recall, stop-use guidance, and announced remedy.
+
 ## How to read the recommendations
 
 - “Best” means the strongest current match for a stated use case, not a universal winner.
@@ -31,7 +36,7 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - Safety, medical, accessibility, and legal questions receive cautious, nonprofessional guidance.
 - Corrections should preserve the previous claim and identify the stronger evidence.
 
-## All 100 questions
+## Foundation questions
 
 1. [What is the difference between AI glasses, smart glasses, display glasses, AR glasses, and XR glasses?](01-basics.md#1-what-is-the-difference-between-ai-glasses-smart-glasses-display-glasses-ar-glasses-and-xr-glasses)
 2. [Do all smart glasses have a display?](01-basics.md#2-do-all-smart-glasses-have-a-display)

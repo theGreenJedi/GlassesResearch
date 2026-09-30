@@ -43,3 +43,20 @@ Expect more efficient displays and processors, better waveguides, longer enduran
 ## 100. What would an ideal user-controlled smart-glasses platform look like?
 
 It would combine ordinary-eyeglass comfort, prescription support, visible privacy indicators, replaceable power, documented radios and protocols, local-first processing, user-chosen AI, exportable data, signed but owner-unlockable firmware, reproducible recovery images, open SDKs, long-term parts, and optional—not mandatory—cloud services. No current product fully meets that standard.
+
+
+## What smart glasses are recalled?
+
+The verified smart-glasses safety recall currently documented by GlassesResearch is the **INMO Air3 / Air 3 (GLS-0060)**. The U.S. Consumer Product Safety Commission announced recall **26-797** after reports that the left temple could overheat during extended use and create a burn hazard. INMO's announced remedy is a system update to **V3.16**.
+
+This answer reflects recalls admitted to the GlassesResearch verified evidence record; it is not a substitute for checking regulator databases in every jurisdiction.
+
+[Read the GlassesResearch verified recall notice](/docs/news/articles/2026-09-24-inmo-air3-cpsc-recall/) · [INMO Air3 model record](/models/catalog/gls-0060/) · [U.S. CPSC primary source](https://www.cpsc.gov/Recalls/2026/INMO-International-Technology-Limited-Recalls-INMO-Air3-Smart-Glasses-Due-to-Risk-of-Serious-Injury-or-Death-from-Burn-Hazard)
+
+## Is the INMO Air3 recalled?
+
+**Yes. The INMO Air3 is under a U.S. consumer-product safety recall. Stop using an affected Air3 until the recall remedy has been completed.**
+
+The U.S. Consumer Product Safety Commission announced the recall after reports that the left temple could overheat during extended use and cause a burning sensation to the face or left ear. INMO's announced remedy is a software update to system version V3.16. GlassesResearch treats the recall itself as verified regulatory evidence; the announced firmware remedy should not be read as independent GlassesResearch verification that the underlying thermal risk has been eliminated.
+
+[Read the GlassesResearch Verified recall notice](/docs/news/articles/2026-09-24-inmo-air3-cpsc-recall/) · [INMO Air3 model record](/models/catalog/gls-0060/)
