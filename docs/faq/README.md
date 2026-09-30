@@ -22,6 +22,10 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [Development and openness](09-development-openness.md)
 - [Ownership and future](10-ownership-future.md)
 
+## Current safety answers
+
+- [**Is the INMO Air3 recalled?**](10-ownership-future.md#is-the-inmo-air3-recalled) — Yes. See the verified recall, stop-use guidance, and announced remedy.
+
 ## How to read the recommendations
 
 - “Best” means the strongest current match for a stated use case, not a universal winner.
