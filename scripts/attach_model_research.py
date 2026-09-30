@@ -17,7 +17,7 @@ EVIDENCE_RE = re.compile(r"^\*\*Evidence lane:\*\*\s*(.+?)\s*$", re.MULTILINE)
 STATUS_RE = re.compile(r"^\*\*Status:\*\*\s*(.+?)\s*$", re.MULTILINE)
 SECTION_RE = re.compile(r"\n## Related Research\n.*?(?=\n## |\Z)", re.DOTALL)
 
-RESEARCH_ROOTS = ("research/investigations", "research/community-research", "research/claims", "docs/community-research")
+RESEARCH_ROOTS = ("research/investigations", "research/community-research", "research/claims", "docs/community-research", "docs/news/articles")
 SCOUR_ROOTS = ("research/community-research", "docs/community-research")
 SCOUR_INDEX_DIR = "research/community-research/by-model"
 SCOUR_INDEX_MARKER = "<!-- generated-model-scour-index -->"

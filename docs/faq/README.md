@@ -24,6 +24,7 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 
 ## Current safety answers
 
+- [**What smart glasses are recalled?**](10-ownership-future.md#what-smart-glasses-are-recalled) — Current verified recall records, affected models, primary regulatory evidence, and remedies.
 - [**Is the INMO Air3 recalled?**](10-ownership-future.md#is-the-inmo-air3-recalled) — Yes. See the verified recall, stop-use guidance, and announced remedy.
 
 ## How to read the recommendations

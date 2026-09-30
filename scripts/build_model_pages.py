@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import posixpath
 import re
 from pathlib import Path
 
@@ -74,6 +75,20 @@ def md_value(value: object) -> str:
     return str(value)
 
 
+def ledger_internal_public_url(target: str) -> str:
+    """Resolve an internal link from models/THE_LIST.md into its public site URL."""
+    if target.startswith("/"):
+        return target
+    path, separator, fragment = target.partition("#")
+    normalized = posixpath.normpath(posixpath.join("models", path))
+    if normalized.endswith("/README.md"):
+        normalized = normalized[:-len("README.md")]
+    elif normalized.endswith(".md"):
+        normalized = normalized[:-3] + "/"
+    url = "/" + normalized.lstrip("/")
+    return url + (f"#{fragment}" if separator and fragment else "")
+
+
 def score_average(record: dict | None) -> float:
     if not record:
         return -1
@@ -105,18 +120,31 @@ def model_page(record: dict, profile: str, comparison: dict | None, capability: 
         if item["kind"] == "internal" and "recall" in item["label"].lower()
     ]
     recall_notice = ""
+    recall_question = ""
     if "recall" in str(record["state"]).lower():
+        question = f"Is {record['maker']} {record['model']} recalled?"
         if recall_links:
             item = recall_links[0]
+            recall_url = ledger_internal_public_url(item["url"])
             recall_notice = (
                 '\n!!! danger "Safety recall"\n'
                 f"    This exact model is under a documented recall. "
-                f"[Read the verified recall notice]({item['url']}) before using or purchasing it.\n"
+                f"[Read the verified recall notice]({recall_url}) before using or purchasing it.\n"
+            )
+            recall_question = (
+                f"\n## {question}\n\n"
+                f"Yes. **{record['maker']} {record['model']}** is under a documented recall. "
+                f"[Read the verified recall notice]({recall_url}) for the affected population, hazard, and remedy.\n"
             )
         else:
             recall_notice = (
                 '\n!!! danger "Safety recall"\n'
                 "    This exact model is marked recalled in the canonical catalog. "
+                "Follow the catalog evidence before using or purchasing it.\n"
+            )
+            recall_question = (
+                f"\n## {question}\n\n"
+                f"Yes. **{record['maker']} {record['model']}** is marked recalled in the canonical catalog. "
                 "Follow the catalog evidence before using or purchasing it.\n"
             )
     paths = [f"[Editorial profile]({public['profile']})"]
@@ -184,7 +212,7 @@ model_category: "{str(record['type']).replace('"', '\\"')}"
 {profile}
 
 {try_on_html}
-{recall_notice}
+{recall_notice}{recall_question}
 ## At a glance
 
 | Field | Verified catalog value |
