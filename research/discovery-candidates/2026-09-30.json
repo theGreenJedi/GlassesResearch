@@ -1,37 +1,40 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-09-30T08:42:14.731428+00:00",
-  "candidate_count": 56,
-  "classifier_irrelevant_count": 46,
+  "discovered_utc": "2026-09-30T15:23:02.529547+00:00",
+  "candidate_count": 59,
+  "classifier_irrelevant_count": 36,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 17,
-    "broad_web": 46
+    "adjacent": 25,
+    "broad_web": 36,
+    "community": 3,
+    "developer": 6,
+    "manufacturer_catalog": 2,
+    "research": 3
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 10,
+    "adjacent": 21,
     "speculative": 0,
-    "irrelevant": 46
+    "irrelevant": 36
   },
   "type_counts": {
-    "model": 1,
+    "model": 6,
     "video": 1,
-    "news": 30,
-    "research": 1,
+    "news": 46,
+    "research": 2,
     "tool": 1,
+    "sdk": 3,
     "hack": 1,
-    "policy": 2,
-    "retail": 1,
-    "community": 20,
-    "rumor": 1
+    "retail": 1
   },
   "routing_counts": {
-    "adjacent_radar": 10,
-    "community_evidence_review": 10,
-    "reject_noise": 46,
-    "research_news_review": 10
+    "adjacent_radar": 21,
+    "development_hacking": 2,
+    "model_catalog_review": 2,
+    "reject_noise": 36,
+    "research_news_review": 23
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -45,10 +48,95 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "ff1f882fba5db865",
-      "title": "500KC Phantom Muspah : r/2007scape - Reddit",
-      "url": "https://www.reddit.com/r/2007scape/comments/14x0pms/500kc_phantom_muspah/",
-      "summary": "The community for Old School RuneScape discussion on Reddit. Join us for game discussions, tips and tricks, and all things OSRS! OSRS is the official legacy version of RuneScape, the largest free-to-play MMORPG. MembersOnline • HM02_ ADMIN MOD",
+      "id": "ba9abe809680aa87",
+      "title": "Manufacturer catalog lead: HSA/FSA",
+      "url": "https://www.evenrealities.com/hsa-fsa-smart-glasses",
+      "summary": "Same-domain catalog/developer link discovered from https://www.evenrealities.com/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://www.evenrealities.com/",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e5ee9889609bc85c",
+      "title": "Manufacturer catalog lead: Smarter Everyday, $100 OFF GO3 · SHOP NOW Smarter Everyday, $100 OFF GO3 · SHOP NOW",
+      "url": "https://www.inmoxr.com/pages/inmo-go3-ai-glasses",
+      "summary": "Same-domain catalog/developer link discovered from https://www.inmoxr.com/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://www.inmoxr.com/",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "15c11622b7bbb952",
+      "title": "2025十大AI穿戴式裝置｜智慧手錶、戒指與耳機，進化智能新生活",
+      "url": "https://www.myfeel-tw.com/media/ai-wearable-devices-2025",
+      "summary": "如果說智能手錶是戴在手腕的 AI 助手，那麼 AI Pin 穿戴裝置（AI Assistant Pins / Wearable Clips）就是把 AI 直接「掛在胸前」。 這類裝置強調輕便、低存在感，透過觸控板、語音控制與投影技術，嘗試顛覆我們對「螢幕」的依賴，讓使用者用聲音與手勢就能與 AI 對話。",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5cffef7441109a2d",
+      "title": "Arctic Ocean currents - Woods Hole Oceanographic Institution",
+      "url": "https://www.whoi.edu/ocean-learning-hub/multimedia/arctic-currents-mapped/",
+      "summary": "Detailed map illustrating Arctic currents and the surrounding sovereign regions in flat projection.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -59,12 +147,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -73,10 +160,64 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a5a6f27da145e9ff",
-      "title": "Elite void at Muspah : r/2007scape - Reddit",
-      "url": "https://www.reddit.com/r/2007scape/comments/10bl87f/elite_void_at_muspah/",
-      "summary": "Join us for game discussions, tips and tricks, and all things OSRS! OSRS is the official legacy version of RuneScape, the largest free-to-play MMORPG. Official Sub-Reddit for the Mobile game Seven Knights! Global and Asia server players unite and discuss strategies, give advice and communicate with one another! Korea server is welcome too!",
+      "id": "06204d12fa10e6b2",
+      "title": "Award-Winning Day Spa in Draper, UT | The Spa Lounge",
+      "url": "https://www.thespalounge.com/locations/draper/",
+      "summary": "The Spa Lounge™ in Draper, Utah and experience a sanctuary designed around you. From the moment you walk through our doors, calming aromas, warm lighting, and soft music set the tone for deep relaxation.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "82779af2aa5d1eff",
+      "title": "Cities Nearby Draper, Utah, United States",
+      "url": "https://www.thecitiesnow.com/united_states/utah/draper",
+      "summary": "Find five hundred cities near Draper, Utah, United States from closest to farthest by distance. Distances from Draper to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1dab37eeed60cb7e",
+      "title": "Currents, gyres, & eddies - Woods Hole Oceanographic Institution",
+      "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/how-the-ocean-works/ocean-circulation/currents-gyres-eddies/",
+      "summary": "At the surface and beneath, currents, gyres and eddies physically shape the coasts and ocean bottom, and transport and mix energy, chemicals, within and among ocean basins.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -87,12 +228,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -101,10 +241,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "090ac511582fd70a",
-      "title": "Is there anyway to get a sub 3 minute muspah kill without tbow ... - Reddit",
-      "url": "https://www.reddit.com/r/2007scape/comments/10aj59c/is_there_anyway_to_get_a_sub_3_minute_muspah_kill/",
-      "summary": "The community for Old School RuneScape discussion on Reddit. Join us for game discussions, tips and tricks, and all things OSRS! OSRS is the official legacy version of RuneScape, the largest free-to-play MMORPG.",
+      "id": "6484961a24e09b65",
+      "title": "Currents, gyres, & eddies - Woods Hole Oceanographic Institution",
+      "url": "https://www.whoi.edu/oceanus/topics/how-the-ocean-works/ocean-circulation/currents-gyres-eddies/",
+      "summary": "The ocean currents behind Brazil’s pollution problem South America's largest country reckons with both history and ocean currents in a recent spree…",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -115,12 +255,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -129,10 +268,91 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "77cc1e6632b82a6f",
-      "title": "It's it worth it to bgs spec muspah using range only if i don ... - Reddit",
-      "url": "https://www.reddit.com/r/ironscape/comments/135xq43/its_it_worth_it_to_bgs_spec_muspah_using_range/",
-      "summary": "It's it worth it to bgs spec muspah using range only if i don't have any other spec weapons?",
+      "id": "c54795011e46bb8b",
+      "title": "Find a Food Pantry - Utah Food Bank",
+      "url": "https://www.utahfoodbank.org/find-a-pantry/",
+      "summary": "To find help, please use our map below to find the nearest location by address, neighborhood, or zip code. To further customize your results, click on “More Filters” where you can narrow options by program features, operating hours, or even locations that are open today.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36381af75dd9ab87",
+      "title": "Ford Dealership Near Me | Ford Dealer Near Me",
+      "url": "https://www.lhmforddraper.com/",
+      "summary": "Visit our Ford dealership in Draper, Utah for an exceptional car buying experience and world-class service. Our knowledgeable and experienced staff is committed to your satisfaction, and we strive to exceed your expectations.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d164cc34e0833e7",
+      "title": "Hoopes Vision | Best LASIK & Eye Surgery Specialists Utah",
+      "url": "https://hoopesvision.com/",
+      "summary": "We are a Utah-based ophthalmology practice specializing in advanced vision correction procedures such as LASIK, PRK, SMILE, EVO ICL, and other surgical treatments designed to help patients achieve clearer vision.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cb1b4f61f90f117c",
+      "title": "How the ocean works - Woods Hole Oceanographic Institution",
+      "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/how-the-ocean-works/",
+      "summary": "How the ocean works: currents, chemistry, zones, and a restless seafloor move heat and carbon and shape life on Earth. Explore the science with WHOI.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -143,12 +363,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -157,10 +376,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d0a1220c3a71fef9",
-      "title": "Muspah step-back method starting example : r/2007scape - Reddit",
-      "url": "https://www.reddit.com/r/2007scape/comments/10gpm29/muspah_stepback_method_starting_example/",
-      "summary": "The community for Old School RuneScape discussion on Reddit. Join us for game discussions, tips and tricks, and all things OSRS! OSRS is the official legacy version of RuneScape, the largest free-to-play MMORPG. MembersOnline • Solo_Jawn ADMIN MOD",
+      "id": "6634aefba59eca5d",
+      "title": "Iron fertilization - Woods Hole Oceanographic Institution",
+      "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/climate-weather/ocean-based-climate-solutions/iron-fertilization/",
+      "summary": "Iron fertilization is a technique that would artificially add iron to the ocean’s surface, triggering massive blooms of phytoplankton that could remove substantial amounts of carbon dioxide from the atmosphere.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -171,12 +390,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -185,10 +403,37 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "354bf3ae3a666ce9",
-      "title": "Phantom Muspah - Too easy/too hard : r/2007scape - Reddit",
-      "url": "https://www.reddit.com/r/2007scape/comments/10a1bwf/phantom_muspah_too_easytoo_hard/",
-      "summary": "The community for Old School RuneScape discussion on Reddit. Join us for game discussions, tips and tricks, and all things OSRS! OSRS is the official legacy version of RuneScape, the largest free-to-play MMORPG. MembersOnline • Chris_Chops ADMIN MOD",
+      "id": "85ff9e70883e19af",
+      "title": "Loveland Living Planet Aquarium | Draper, UT",
+      "url": "https://livingplanetaquarium.org/",
+      "summary": "Embark on a quantum voyage to colorful coral reefs or the verdant rainforest. Included in each Aquarium admission with regular departures every day!",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6bb0b57f48ecec3d",
+      "title": "Mid-ocean ridges - Woods Hole Oceanographic Institution",
+      "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/how-the-ocean-works/seafloor-below/mid-ocean-ridges/",
+      "summary": "Mid-ocean ridges are the planet’s longest mountain range — nearly 65,000 kilometers (about 40,000 miles) — winding across the seafloor where tectonic plates spread apart and magma rises to create new oceanic crust. Spreading rates shape each ridge: some plates separate less than 40 millimeters a year while the fastest move about 150 millimeters (6 inches), producing rifts, valleys ...",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -199,12 +444,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -213,10 +457,37 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "83b92f88631b976a",
-      "title": "Phantom Muspah is my favourite boss. Why does everyone hate it?",
-      "url": "https://www.reddit.com/r/2007scape/comments/16wartt/phantom_muspah_is_my_favourite_boss_why_does/",
-      "summary": "One of the annoying truths of OSRS is that tbow/shadow are going to shit on every boss. Muspah is maybe 3m an hr bowfa only, a lil more if you mage switch... but likely 4m+ with either god weapon.",
+      "id": "3450300620cb7c83",
+      "title": "Movie Theater In Draper, Utah | Cinemark Draper and XD",
+      "url": "https://www.cinemark.com/theatres/ut-draper/cinemark-draper-and-xd",
+      "summary": "Visit Our Cinemark Theater in Draper, UT. Check movie times and more. Upgrade Your Movie With recliner chair Loungers and Cinemark XD! Buy Tickets Online Now!",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "98998c9ab218e90b",
+      "title": "Ocean circulation roadmap - Woods Hole Oceanographic Institution",
+      "url": "https://www.whoi.edu/ocean-learning-hub/multimedia/ocean-circulation-road-map/",
+      "summary": "Illustrated roadmap of global ocean circulation, with temperature and flow shown as highways connecting gyre \"roundabouts\" across the world's oceans.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -227,12 +498,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -241,10 +511,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e67dda76f5d67405",
-      "title": "Phantom Muspah Radius Markers : r/2007scape - Reddit",
-      "url": "https://www.reddit.com/r/2007scape/comments/10jpaij/phantom_muspah_radius_markers/",
-      "summary": "The community for Old School RuneScape discussion on Reddit. Join us for game discussions, tips and tricks, and all things OSRS! OSRS is the official legacy version of RuneScape, the largest free-to-play MMORPG. MembersOnline • [deleted] ADMIN MOD",
+      "id": "2c7f1b63eedd5c34",
+      "title": "Ocean Topics - Woods Hole Oceanographic Institution",
+      "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/",
+      "summary": "Explore how the ocean shapes life on Earth. It sustains us, surprises us, and holds mysteries we're only beginning to understand. Dive into key topics here.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -255,12 +525,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -269,10 +538,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c291351dc2c26bce",
-      "title": "Phantom Muspah Shadow Orb Phase Safespot for 10 range weapons",
-      "url": "https://www.reddit.com/r/2007scape/comments/109mj9k/phantom_muspah_shadow_orb_phase_safespot_for_10/",
-      "summary": "The community for Old School RuneScape discussion on Reddit. Join us for game discussions, tips and tricks, and all things OSRS! OSRS is the official legacy version of RuneScape, the largest free-to-play MMORPG. MembersOnline • XITangoIX ADMIN MOD",
+      "id": "9adec97f9289827e",
+      "title": "Plastic Particles Permeate the Atlantic - Woods Hole Oceanographic ...",
+      "url": "https://www.whoi.edu/oceanus/feature/plastic-particles-permeate-the-atlantic/",
+      "summary": "Red and yellow areas indicate where scientists found high concentrations of plastic. About 83 percent of all the plastic debris collected was concentrated in the North Atlantic subtropical gyre, a part of the ocean bounded by a series of wind-driven currents, such as the Gulf Stream, that collectively flow clockwise around the subtropical North Atlantic. The gyre is marked by the black-line ...",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -283,12 +552,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -297,10 +565,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c741c35f08fdc896",
-      "title": "What reliable bosses should i start killing on a shadow ... - Reddit",
-      "url": "https://www.reddit.com/r/2007scape/comments/1btkk79/what_reliable_bosses_should_i_start_killing_on_a/",
-      "summary": "I'm missing hat, boots and ring for max mage. Managed to keep crystal, bofa, and fang for the rebuild. Got about 8k charges to rebuild with What's a good reliable money maker with the staff? I'm thinking zulrah or maybe mole or muspah Share Sort by: Best Open comment sort options Best Top New Controversial Old Q&A Add a Comment IVSVF •",
+      "id": "89dd3d1abdfdad41",
+      "title": "The monsoon circulation of the Indian Ocean",
+      "url": "https://www.whoi.edu/cms/files/schott_mccreary_41948.pdf",
+      "summary": "Recent studies based on analyses of historical data, new observations, and modeling have focussed on the interannual variability in the monsoon circulation, noting the existence of prominent ocean-atmosphere events in the Indian Ocean region.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -311,12 +579,11 @@
       "disposition": "collected",
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -325,25 +592,104 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "607aa5412eb2905d",
-      "title": "El Paso Translators and Interpreters | Translators USA, LLC",
-      "url": "https://translators-usa.com/locations/texas-tx/el-paso/",
-      "summary": "Translators USA provides the highest quality translations from accredited linguists. Whether it’s translating a patent or legal document, or interpreting a live conference or business meeting – Translators USA has the experienced staff trained to deliver.",
+      "id": "e75c84080adb944e",
+      "title": "Top 15 Things to Do in Draper, UT - Draper Attractions",
+      "url": "https://www.tripadvisor.com/Attractions-g56964-Activities-Draper_Utah.html",
+      "summary": "Good place to see a movie in Draper, Utah. Easy to find, plenty of parking, normal pricing, variety of movies.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f43048bda6d28134",
+      "title": "Utah's Best Full Service Day Spa - 6 Premier Spa Locations",
+      "url": "https://www.thespalounge.com/",
+      "summary": "As Utah's largest full-service day spa, we are dedicated to providing an unparalleled experience of relaxation and rejuvenation. Unlike many others, we steer clear of gimmicks and pushy sales tactics, focusing instead on delivering exceptional service and results in all of our world class facilities.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4715de772d017a92",
+      "title": "wearable是什么意思_wearable的翻译_音标_读音_用法_例句_爱词霸在线词典",
+      "url": "https://www.iciba.com/word?w=wearable",
+      "summary": "爱词霸权威在线词典,为您提供wearable的中文意思,wearable的用法讲解,wearable的读音,wearable的同义词,wearable的反义词,wearable的例句等英语服务。",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "39c54405cae53522",
+      "title": "2005 Toyota camry 2.4L Specifications| Toyota Specs",
+      "url": "https://toyota-specs.com/cars/2005/camry2.4/specs.php",
+      "summary": "Research Toyota camry specs. Including Dimensions, Horsepower, Engine Size, Oil Capacity, and Tire Size.",
       "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "patent"
+        "research"
       ],
       "status": "candidate",
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "research",
-        "policy",
-        "rumor"
+        "research"
       ],
       "primary_type": "research",
       "routing_targets": [
@@ -355,12 +701,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2868cf215ee396db",
-      "title": "What to do if Surface is running slower | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/surface/performance/what-to-do-if-surface-is-running-slower",
-      "summary": "For Power mode, select Better performance or Best performance. This setting can be set up differently based on when the device is plugged in or running on battery. If still needed, there are additional things to try: Get the latest updates You can quickly check the health of your Surface drivers and firmware using the Surface app.",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "Xiaodu AI glasses; electrochromic eyeglass lenses",
+      "id": "2a3b780302db89fc",
+      "title": "Arsenal Gift Cards | Official Online Store",
+      "url": "https://giftcards.arsenal.com/",
+      "summary": "Perfect for all occasions, we have 3 Gift Cards for those special occasions worthy of an Arsenal themed celebration - Free Shipping - Official Online Store",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "981f68fab36755a1",
+      "title": "Official HP® Printer Drivers and Software Download | HP® Support",
+      "url": "https://support.hp.com/us-en/drivers/printers",
+      "summary": "Download the latest drivers, software, firmware, and diagnostics for your HP printers from the official HP Support website.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -371,10 +745,9 @@
       "disposition": "collected",
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
         "hack"
       ],
-      "primary_type": "tool",
+      "primary_type": "hack",
       "routing_targets": [
         "reject_noise"
       ],
@@ -384,10 +757,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1237d9ba7f1c8a75",
-      "title": "\"The Invisible Man\" movie times - showtimes.com",
-      "url": "https://www.showtimes.com/movies/the-invisible-man-145685/movie-times/",
-      "summary": "Find local showtimes & movie tickets for The Invisible Man.",
+      "id": "7f649957586f9c65",
+      "title": "2005 Toyota Camry Dimensions - carclubsusa.com",
+      "url": "https://carclubsusa.com/toyota/camry/specs/dimensions/2005/",
+      "summary": "Browse & Compare 2005 Toyota Camry Popular Exterior Dimensions By Trim Levels.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -410,194 +783,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1ff2910a9dce810c",
-      "title": "100+ \"Maria-rivera\" profiles | LinkedIn",
-      "url": "https://www.linkedin.com/pub/dir/Maria-rivera/+",
-      "summary": "Maria Concesa Rivera Lavadia Operations Manager for Sizzling Plate Rizal Lemon Square Bakery Treats, +6 more St. Scholastica's College Manila, +1 more",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c00194889d6831a0",
-      "title": "18300+ \"Maria Rivera\" profiles | LinkedIn",
-      "url": "https://www.linkedin.com/pub/dir/Maria+/+Rivera",
-      "summary": "View the profiles of professionals named \"Maria Rivera\" on LinkedIn. There are 18300+ professionals named \"Maria Rivera\", who use LinkedIn to exchange information, ideas, and...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8994f6ec00fae112",
-      "title": "Accurate Texas Translation Services at Affordable Prices",
-      "url": "https://texas.vanantranslationsolutions.com/",
-      "summary": "Our comprehensive Texas translation services include specialized handwritten document translation with expert attention to detail and accuracy. We provide flexible digital and physical copy delivery options to meet your specific preferences and requirements.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3b47aa3755172e2d",
-      "title": "Austin movie showtimes today at indie & arthouse theaters",
-      "url": "https://www.poorstuart.com/austin-movie-showtimes-citywide-by-arthouse/",
-      "summary": "Now in Theaters Austin movie showtimes today at indie & arthouse theaters For Saturday, September 26th, 2026 all theaters arthouse by title Austin arts AFS Cinema 6406 N I-35 Suite 3100, Austin, TX phone tickets map website",
+      "id": "ff79a36fce40834b",
+      "title": "2005 Toyota Camry Dimensions - iSeeCars.com",
+      "url": "https://www.iseecars.com/car/2005-toyota-camry-dimensions",
+      "summary": "Find 2005 Toyota Camry interior, exterior and cargo dimensions for the trims and styles available. Choose the desired trim / style from the dropdown list to see the corresponding dimensions.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dccc9cc4042c046f",
-      "title": "Austin movie showtimes today by theater - Poor Stuart's Guide",
-      "url": "https://www.poorstuart.com/austin-movie-showtimes-citywide-by-theater/",
-      "summary": "Now in Theaters Austin movie showtimes today by theater For Thursday, September 24th, 2026 all theaters arthouse by title Austin arts The Odyssey, written and directed by Christopher Nolan",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9efa65293d6fc953",
-      "title": "Austin | Alamo Drafthouse Cinema",
-      "url": "https://drafthouse.com/austin/show/the-invisible-man1",
-      "summary": "Alamo Drafthouse Cinema — food and drinks, reserved seating, and the best movies. Find showtimes and buy tickets.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "96de40a6f3cda842",
-      "title": "Best Free Porn Videos",
-      "url": "https://onlybestporn.com/",
-      "summary": "Scroll through the best porn videos out there! No matter your tastes, you'll love every single video in this site. Find new fetishes and explore the steamiest porn out there.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c3fa0e0b8fe66b75",
-      "title": "Cancel an order or pre-order from Microsoft Store",
-      "url": "https://support.microsoft.com/en-us/accounts-billing/cancel-an-order-or-pre-order-from-microsoft-store",
-      "summary": "Get steps for how to cancel one ore more items in a Microsoft Store order or pre-order.",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "Xiaodu AI glasses; electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -618,12 +809,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d4200642dfb8633d",
-      "title": "Certified Interpretations & Translations | El Paso, TX Professional ...",
-      "url": "https://www.translateelpaso.com/",
-      "summary": "Certified Interpretations and Translations offers professional, accurate, and high-quality translation and interpretation services from any language to American English.",
+      "id": "3035abcaa995a946",
+      "title": "2005 Toyota Camry Dimensions, Sizes & Specifications",
+      "url": "https://specsizes.com/toyota/camry/2005",
+      "summary": "Proportional size visualization from measured dimensions — not exact body geometry.",
       "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -644,38 +835,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5f495a4383f8c881",
-      "title": "Certified Interpretations & Translations | El Paso, TX | Contact",
-      "url": "https://www.translateelpaso.com/contact",
-      "summary": "Certified Interpretation & Translations El Paso offers professional, accurate, reliable, and court-certified translation services for government, legal, commercial, and/or other professional and personal clientele Get in touch with us today.",
+      "id": "63abfc67118ce309",
+      "title": "2005 Toyota Camry Specifications & Dimensions - Conceptcarz.com",
+      "url": "https://www.conceptcarz.com/s8379/toyota-camry.aspx",
+      "summary": "2005 Toyota Camry technical specifications and data. Engine, horsepower, torque, dimensions and mechanical details for the 2005 Toyota Camry. CO2, em...",
       "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d1487c058eb47aaa",
-      "title": "Change the display name that email recipients see in classic Outlook",
-      "url": "https://support.microsoft.com/en-us/outlook/change-the-display-name-that-email-recipients-see-in-classic-outlook",
-      "summary": "If the account Type is Microsoft Exchange, contact your Exchange administrator to make the name change. You can change your name on the Account Settings screen. To change the name that displays when you send email, update the Your name field. Unless you specifically need to change any of the other fields, you can leave the default values in place.",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "Xiaodu AI glasses; electrochromic eyeglass lenses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -696,10 +861,348 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "558460ff5a9be4fa",
-      "title": "Democrat and Chronicle - Rochester news, sports, things to do in ...",
-      "url": "https://www.democratandchronicle.com/",
-      "summary": "DemocratandChronicle.com is the home page of Rochester NY, with in-depth and updated local news, sports, things to do, investigative journalism and opinions.",
+      "id": "4c5be25958e0839a",
+      "title": "2005 Toyota Camry Specs, Dimensions & Colors | Cars.com",
+      "url": "https://www.cars.com/research/toyota-camry-2005/specs/",
+      "summary": "See detailed specs, features, packages and dimensions by trim level for the 2005 Toyota Camry.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ef3f28e290f15383",
+      "title": "Alaska Ferry Tickets | Inter-Island Ferry",
+      "url": "https://interislandferry.com/tickets/",
+      "summary": "Celebrate the beauty of the Inter-Island Ferry Authority with stunning prints by artist Brenda Schwartz. Featuring detailed drawings of IFA vessels, these prints are a perfect keepsake or gift for ferry enthusiasts. Add a touch of maritime charm to your home or office with these timeless pieces.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2ae4c71030f8d6b1",
+      "title": "Are Stadium Tour tickets refundable or transferable?",
+      "url": "https://help.arsenal.com/support/solutions/articles/101000584148-are-stadium-tour-tickets-refundable-or-transferable-",
+      "summary": "Stadium Tour tickets can be cancelled and refunded up to 14 days after purchase. Legend Tour and Matchday Tour tickets can be cancelled and refunded up to 14 days before the tour takes place. For Legend and Matchday tours, dates can be changed a minimum of 7 days in advance of your scheduled tour (subject to availability). No Stadium Tour product can be sold on.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bc79a01cd12c715d",
+      "title": "Augmented Reality Coverage | Tom's Guide",
+      "url": "https://www.tomsguide.com/computing/vr-ar/augmented-reality",
+      "summary": "The latest Augmented Reality news, comment, reviews and features from the experts at Tom's Guide",
+      "discovery_channel": "broad_web+developer",
+      "query": "AR glasses; AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e1cfe9fe8eaf3a9",
+      "title": "Basic Integrated Visibility | FedEx Developer Portal",
+      "url": "https://developer.fedex.com/api/en-us/catalog/track.html",
+      "summary": "Key Features Tracking Status Track FedEx Express®, FedEx Ground, FedEx Ground® Economy and FedEx Freight® packages with a tracking number. Estimated Delivery Get Estimated delivery date of FedEx shipments, by providing a tracking number.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3c32c5e3c770565b",
+      "title": "Brother Drivers: Info & Downloads - Printer Drivers & More | Brother",
+      "url": "https://www.brother-usa.com/support/drivers",
+      "summary": "If there are any updates or new features or bug fixes available, you can download them easily from the Brother website. Just follow the simple instructions and you’ll be all set.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5ac54eac5bf5a79d",
+      "title": "Canon Support | Software and Drivers | Canon U.S.A., Inc.",
+      "url": "https://www.usa.canon.com/support/software-and-drivers",
+      "summary": "Need help with your Canon product? Find support & more information regarding Software and Drivers only at Canon U.S.A., Inc.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ac9b060a0b886cba",
+      "title": "Contact Microsoft customer support",
+      "url": "https://support.microsoft.com/en-us/support/index",
+      "summary": "Contact Microsoft customer support The type of support Microsoft provides depends on the product you're calling about and if you have a product for home or for business use. It can also depend on if you want help for an issue with a service like OneDrive or Outlook.com, or help with Windows, but you don't have an existing Microsoft 365 ...",
+      "discovery_channel": "adjacent+broad_web+developer",
+      "query": "Xiaodu AI glasses; Everysight Maverick SDK; electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3383211f1c813fb9",
+      "title": "Download Canon Printer Drivers and Software (TEXT) (VIDEO)",
+      "url": "https://support.usa.canon.com/kb/s/article/ART116480",
+      "summary": "To get your printer and scanner working smoothly, install the drivers and software that connect it to your computer. We’ll show you how to find the right driver and software for your operating system.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "abaf38e274500b29",
+      "title": "Epson Printer Drivers Support",
+      "url": "https://epson.com/support/epson-printer-drivers",
+      "summary": "Get Epson printer drivers and maintenance box support. Find the latest drivers and information to maintain performance and reliability.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b281c284534cdea7",
+      "title": "Find HP printer software, drivers, apps, and updates",
+      "url": "https://support.hp.com/us-en/document/ish_3485141-1949286-16",
+      "summary": "Download and install drivers, apps, and useful printing and scanning software for your HP printer. Also find updates that might include performance enhancements, bug fixes, and new features.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ad4a73f7989223cc",
+      "title": "HP Printer Software Download: How To Download And Install The Latest ...",
+      "url": "https://www.hp.com/us-en/tech-takes/software/how-to/how-to-download-and-install-latest-hp-printer-software.html",
+      "summary": "Learn how to download and install the latest HP printer software. Our guide covers drivers, management tools, and tips for keeping your printer software up-to-date.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5adc1331e2f4b9c5",
+      "title": "Inter Island Ferry Authority | Hollis AK - Facebook",
+      "url": "https://www.facebook.com/InterIslandFerry/",
+      "summary": "The overwhelming volume of fish and game transported aboard the IFA moves from Prince of Wales Island to Ketchikan, particularly during the busy fishing season.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aee298bbb4230d02",
+      "title": "Local – NBC 7 San Diego",
+      "url": "https://www.nbcsandiego.com/news/local/",
+      "summary": "On Monday, the Revive and Survive campaign hosted by the county and UC San Diego confirmed that 1,011,034 people have been trained in CPR. Going used car shopping? Here's the buying ‘sweet spot'...",
       "discovery_channel": "broad_web",
       "query": "new smart glasses 2026",
       "source": "Bing web RSS",
@@ -722,452 +1225,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "92ac089311e04a42",
-      "title": "EL PASO, TX CERTIFIED TRANSLATION SERVICES",
-      "url": "https://officialtranslations.com/texas/el-paso-certified-translation",
-      "summary": "Our certified translation service covers 100+ language pairs and is designed to meet the formatting and certification standards required by USCIS, the US federal courts, and all Texas public institutions.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0c120992e2c1f358",
-      "title": "Free Porn Videos - Its.PORN",
-      "url": "https://www.its.porn/",
-      "summary": "Free HD porn videos - ItsPorn! Best XXX movies on the web, new sex videos added to our porn site every day.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8fb8f4d228e72048",
-      "title": "Free Porn Videos – HD Porno Tube & XXX Sex Videos: Pornicom",
-      "url": "https://www.pornicom.com/",
-      "summary": "We are always working to make out porn tube faster and better so you will get the best porn experience possible. If you have any comments or questions, please feel free to send it to us and we will do anything possible to make your stay here as pleasant as possible.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e4a58ca47f21b894",
-      "title": "Hardware Dev Center | Microsoft Community Hub",
-      "url": "https://techcommunity.microsoft.com/category/winhec-online/blog/hardware-dev-center",
-      "summary": "Today we are introducing a new Hardware Dev Center capability for ARM system makers that lets hardware partners request approval for a specific System Manifest version to be delivered during the Wind...",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "Xiaodu AI glasses; electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a7b3eba61b6a684c",
-      "title": "Local - WHAM",
-      "url": "https://13wham.com/news/local",
-      "summary": "New Yorkers who rely on unemployment benefits will face a temporary shutdown of online and phone services this fall as the state begins a major overhaul.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9f04312ceee42f12",
-      "title": "Maria G. W. - The Bahamas | Real Estate Sales - LinkedIn",
-      "url": "https://bs.linkedin.com/in/mariagwells",
-      "summary": "The Bahamas | Real Estate Sales | Rentals | Appraisals | Property Management | Private House Management | Staff Housing Management · Experience: Coldwell Banker Lightbourn Realty · Location: New Providence · 442 connections on LinkedIn. View Maria G. W.’s profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5f192c92e47d6192",
-      "title": "Maria Mena - Director Business Development at Coldwell Banker | LinkedIn",
-      "url": "https://www.linkedin.com/in/maria-mena-8073427",
-      "summary": "View Maria Mena’s profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "143a3c3d165a58b3",
-      "title": "Maria Rivera - Fair Housing & Fair Lending Compliance ... - LinkedIn",
-      "url": "https://www.linkedin.com/in/maria-rivera-593175b9",
-      "summary": "View Maria Rivera’s profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1c312e86689719f9",
-      "title": "Maria Rivera - Technology Specialist at Coldwell Banker ... - LinkedIn",
-      "url": "https://www.linkedin.com/in/maria-rivera-2007307",
-      "summary": "View Maria Rivera’s profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dbeb8533f09bfc71",
-      "title": "Maria Rizzo - Rea;tpr Associate at Coldwell Banker Riviera ... - LinkedIn",
-      "url": "https://www.linkedin.com/in/maria-rizzo-1b382227",
-      "summary": "View Maria Rizzo’s profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5cbf5909ed25cd7a",
-      "title": "Maria Silver - Realtor at Coldwell Banker Realty | LinkedIn",
-      "url": "https://www.linkedin.com/in/maria-silver-97248427",
-      "summary": "View Maria Silver’s profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "109b60936d193930",
-      "title": "maritere Rivera - Real Estate Agent at Coldwell Banker Real ... - LinkedIn",
-      "url": "https://www.linkedin.com/in/maritere-rivera-67b5a7166",
-      "summary": "View maritere Rivera’s profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0a61a6c6bc5dc3a",
-      "title": "Microsoft Security | Microsoft Community Hub",
-      "url": "https://techcommunity.microsoft.com/category/microsoft-security",
-      "summary": "Learn how Microsoft Defender Experts deliver expert-led security services to help organizations modernize security operations, outpace bad actors, defend against threats, and build cyber resilience. ...",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "Xiaodu AI glasses; electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eb8cc916cd09d3a6",
-      "title": "Monica Rivera - Business & Real Estate Strategist | Talent ... - LinkedIn",
-      "url": "https://www.linkedin.com/in/monicabmh",
-      "summary": "View Monica Rivera’s profile on LinkedIn, a professional community of 1 billion members.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a576e82a854774f3",
-      "title": "Movie Showtimes and Theaters near Austin, TX | Fandango",
-      "url": "https://www.fandango.com/austin_tx_movietimes",
-      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Austin, TX.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "41a27d7f1305cd9a",
-      "title": "Movies & Showtimes in Austin | StayNxplore",
-      "url": "https://staynxplore.com/austin-tx/movies",
-      "summary": "Find movies now playing in Austin, see which theaters are showing them, and check showtimes on StayNxplore.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8fab8b97c976540a",
-      "title": "Movies & showtimes · Austin | Alamo Drafthouse Cinema",
-      "url": "https://drafthouse.com/austin",
-      "summary": "See what is playing at Alamo Drafthouse in Austin and buy tickets.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4b63ad7a9a2df779",
-      "title": "New VW and Used Car Dealer near Irving, TX",
-      "url": "https://www.principlevwgrapevine.com/dealership/volkswagen-dealer-near-irving-tx.htm",
-      "summary": "Our selection of new Volkswagen models offers other SUVs like the Taos, Tiguan, Atlas, and Atlas Cross Sport. Reach out to our team to schedule a test drive near Irving, TX.",
+      "id": "068ad663a3ae7b52",
+      "title": "New Volkswagen Dealership Near Smyrna, GA | New VW Models, Used Cars ...",
+      "url": "https://www.volkswagenofmarietta.com/serving-georgia/smyrna/",
+      "summary": "Volkswagen of Marietta is proud to be the trusted Volkswagen dealership serving drivers from Smyrna, Georgia. Whether you’re looking for a new Volkswagen or a high-quality used vehicle, our team is here to help you every step of the way.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1190,10 +1251,140 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "24f6d2c5554d2850",
-      "title": "Now Playing Showtimes - IPIC Austin",
-      "url": "https://www.ipic.com/austin-tx-the-domain/showtimes",
-      "summary": "Showtimes For IPIC Austin Now Playing Advance Tickets Coming Soon",
+      "id": "429e7b05f9a9ae5b",
+      "title": "Printers | Epson® Official Support",
+      "url": "https://epson.com/Support/Printers/sh/s1",
+      "summary": "Official Epson® printer support and customer service is always free. Download drivers, access FAQs, manuals, warranty, videos, product registration and more.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4e1c26ed313e78aa",
+      "title": "Sign in to Microsoft 365",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/subscriptions/sign-in-to-microsoft-365",
+      "summary": "For Microsoft 365 or Office apps installed on a Windows PC: If you're not already in a Microsoft 365 or Office file or document, open an app such as Word or Excel, and open an existing file, or create a new one. Select File > Account (or Office Account if you're using Outlook). If you're not already signed in, click Sign In. In the Sign in window, type the email address and password you use ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c514d8ebcc2c5e45",
+      "title": "Smart",
+      "url": "https://smart.com.ph/prepaid",
+      "summary": "Smart Prepaid offers affordable mobile plans, eSIMs, and devices with great features and discounts for seamless connectivity.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "358052dd41ba53dc",
+      "title": "Smart Help - Smart Help",
+      "url": "https://help.smart.com.ph/",
+      "summary": "Get help with SIM registration, Mobile Number Portability, eSIM activation, and more at the Smart Help Center.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b847168e952fa8ee",
+      "title": "Smart SIM Registration",
+      "url": "https://simreg.smart.com.ph/",
+      "summary": "Register your Smart SIM card online to continue enjoying services with ease and convenience.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9636697031b16bf6",
+      "title": "Specs of Toyota Camry V (XV30, facelift 2005) 2.4 16V (160 Hp ...",
+      "url": "https://www.auto-data.net/en/toyota-camry-v-xv30-facelift-2005-2.4-16v-160hp-automatic-31314",
+      "summary": "What is the length of 2005 Toyota Camry Sedan? What is the width of 2005 Toyota Camry Sedan? What is the kerb weight of 2005 Toyota Camry V (XV30, facelift 2005) 2.4 16V (160 Hp) Automatic? What is the trunk (boot) capacity of 2005 Toyota Camry Sedan?",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1216,140 +1407,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ae714ff2f48f588b",
-      "title": "Principle Volkswagen Grapevine | VW Dealer in Grapevine, TX",
-      "url": "https://www.principlevwgrapevine.com/",
-      "summary": "Located off TX-121 in the Dallas Metro area, we offer an extensive selection of the latest Volkswagen models alongside high-quality pre-owned vehicles. Step into our state-of-the-art facility and experience a dedicated approach to customer service that extends throughout your vehicle's lifespan.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7fc2f8c5f2353fb0",
-      "title": "Professional Translation and Interpreting Services in El Paso, Texas ...",
-      "url": "https://crestls.com/el-paso-texas-translation-services-and-interpreting-services/",
-      "summary": "For businesses and organizations in Professional Translation and Interpreting Services in El Paso, Texas that need live communication with Arabic-speaking clients or teams, we provide both on-site and remote interpreting solutions.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "588cfe5495043e55",
-      "title": "Remove a watermark | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/word/remove-a-watermark",
-      "summary": "Newer Windows versions Newer Mac versions Select Design > Watermark. Select Remove Watermark. Remove a watermark by clicking the header area If you can't delete a watermark using Remove Watermark, try this: Double-click near the top of the page to open the header area. Put your cursor over the watermark until you see a 4-way arrow. Select the watermark. Press the Delete key on your keyboard ...",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "Xiaodu AI glasses; electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9792cf8c71cf7e2f",
-      "title": "Rochester News, Weather, Sports, Breaking News",
-      "url": "https://13wham.com/",
-      "summary": "A Rochester man is awaiting sentencing after pleading guilty to his role in a yearslong gun trafficking conspiracy that prosecutors said brought firearms from North Carolina to western New York.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "444e4656f0bd2f72",
-      "title": "Surface Pro 6 specs and features | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/surface/models/surface-pro-6-specs-and-features",
-      "summary": "Get things done with Windows, Microsoft Office, and OneDrive Surface Pro 6 runs the Windows you know and trust—and Microsoft Office, including Word, Excel, and PowerPoint, for producing your best work.",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "Xiaodu AI glasses; electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f8fd2a47f530b7ec",
-      "title": "The Invisible Man movie times near Austin, TX - showtimes.com",
-      "url": "https://www.showtimes.com/movie-times/the-invisible-man-145685/austin-tx/",
-      "summary": "No showtimes found for \"The Invisible Man\" near Austin, TX Please select another movie from list. \"The Invisible Man\" plays in the following states",
+      "id": "714ca1be88c06044",
+      "title": "Toyota Camry Dimensions 2005 - Length, Width, Height ... - CarsGuide",
+      "url": "https://www.carsguide.com.au/toyota/camry/car-dimensions/2005",
+      "summary": "See the table below for a comprehensive list of dimensions for the Toyota Camry 2005 including the height, width, length and more for each vehicle.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1372,10 +1433,88 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d90221493de1b142",
-      "title": "The Invisible Man Showtimes Near Me - Moviefone",
-      "url": "https://www.moviefone.com/movie/the-invisible-man/nrN1SS8DW875PINLgYqHn2/showtimes/",
-      "summary": "The Invisible Man showtimes near me. Find today's times at theaters near you, compare showtimes across locations, and buy tickets.",
+      "id": "7c345a890f61b3d1",
+      "title": "Tracking Your Shipment | FedEx Belgium",
+      "url": "https://www.fedex.com/en-be/tracking.html",
+      "summary": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6ef2605dedfd4aea",
+      "title": "Télécharger et installer les derniers pilotes d’imprimante | Microsoft ...",
+      "url": "https://support.microsoft.com/fr-fr/windows/hardware/printer/download-and-install-the-latest-printer-drivers",
+      "summary": "Microsoft recommande de télécharger et d’installer le dernier pilote d’imprimante pour une imprimante. L’installation du dernier pilote d’imprimante peut résoudre les problèmes connus de l’imprimante, augmenter les performances ou ajouter des fonctionnalités supplémentaires.",
+      "discovery_channel": "broad_web+developer",
+      "query": "smartglasses; ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f7b2f8246943ece",
+      "title": "Updating Printer Drivers: Complete Guide For 2026 - TechCommuters",
+      "url": "https://www.techcommuters.com/updating-printer-drivers/",
+      "summary": "Learn how to update printer drivers the easy way. This guide covers 3 Windows methods, precautions, tips, and FAQs to keep your printer running perfectly.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5ee9dfe0c133caaa",
+      "title": "Used 2005 Toyota Camry Specs & Features | Edmunds",
+      "url": "https://www.edmunds.com/toyota/camry/2005/features-specs/",
+      "summary": "Detailed specs and features for the Used 2005 Toyota Camry including dimensions, horsepower, engine, capacity, fuel economy, transmission, engine type, cylinders, drivetrain and more.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1398,12 +1537,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e86a80b42f267d30",
-      "title": "Top Translation Services El Paso, Texas - Goodfirms",
-      "url": "https://www.goodfirms.co/translation-services-companies/el-paso",
-      "summary": "Find and compare reviews of leading translation and interpretation companies in El Paso, Texas and pick the best translators for your needs.",
+      "id": "6dbcfafe36ea3b60",
+      "title": "Used 2005 Toyota Camry Standard Specs & Features | Edmunds",
+      "url": "https://www.edmunds.com/toyota/camry/2005/st-100395306/features-specs/",
+      "summary": "Detailed specs and features for the Used 2005 Toyota Camry Standard including dimensions, horsepower, engine, capacity, fuel economy, transmission, engine type, cylinders, drivetrain and...",
       "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1424,62 +1563,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d6b72ad61f59983f",
-      "title": "Tube Pleasure | Free Tube Porn Videos",
-      "url": "https://tubepleasure.com/en/",
-      "summary": "Porn videos: Mom, Stepmom, Vintage, Milf, Wife, Mature, Shemale, Interracial, Teen (18+), Cartoon, Granny, Lesbian, Crossdresser, Cuckold, Creampie and much more.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "37ad9423b54630c3",
-      "title": "Volkswagen Dealer Near Irving, TX | Clay Cooley Volkswagen of Lewisville",
-      "url": "https://www.lewisvillevw.com/volkswagen-dealer-irving-tx",
-      "summary": "Your trusted Volkswagen dealer near Irving, TX. Visit Clay Cooley Volkswagen of Lewisville for new and used vehicles, financing, and expert service.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f5094aa36acfdd2c",
-      "title": "Volkswagen for Sale | New & Used VW Vehicles",
-      "url": "https://www.hileyvw.com/",
-      "summary": "We suggest you browse our online inventory, and once you're ready, schedule a test drive with one of our sales representatives at our VW dealership serving Dallas, Fort Worth, Lewisville, McKinney, Denton, TX.",
+      "id": "6eb46d4d11c4da58",
+      "title": "Volkswagen Dealer Near Marietta, GA | New & Used VW Cars For Sale",
+      "url": "https://www.jimellisvwatlanta.com/marietta-ga-volkswagen-dealer/",
+      "summary": "Visit your local Volkswagen dealer near Marietta, GA, to explore a fantastic selection of new and used vehicles or take advantage of auto maintenance.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1502,12 +1589,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f7469dbf5cb7e4d0",
-      "title": "xxx-porn videos - XVIDEOS.COM",
-      "url": "https://www.xvideos.com/tags/xxx-porn",
-      "summary": "Vacation at the Step-Uncle's House Steamy hard-core porn with a insane redhead in a miniskirt and panties. She's a young, petite, skinny damsel with a trimmed pussy.",
+      "id": "bf497220b7ec8b5d",
+      "title": "What do I do if I don’t have a tracking number? - FedEx",
+      "url": "https://www.fedex.com/en-us/customer-support/faqs/receiving/tracking-questions/track-package-without-tracking-number.html",
+      "summary": "If you don’t have a tracking number, you can still track your package by using a reference number associated with your shipment, or a purchase order number.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
