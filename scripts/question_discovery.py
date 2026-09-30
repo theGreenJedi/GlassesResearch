@@ -14,6 +14,7 @@ from urllib.parse import quote
 import requests
 
 REGISTRY = Path("research/questions/registry.json")
+FAQ_ROOT = Path("docs/faq")
 REPORT_JSON = Path("analytics/question-discovery.json")
 REPORT_MD = Path("analytics/question-discovery.md")
 QUESTION_WORDS = ("who ","what ","when ","where ","why ","how ","can ","could ","do ","does ","did ","is ","are ","will ","would ","should ","which ")
@@ -63,9 +64,33 @@ def external_questions():
             print(f"question feed unavailable {url}: {exc}",file=sys.stderr)
     return out
 
+def seed_published_answers(reg):
+    """Seed the canonical registry from already-published Practical Answers."""
+    by_norm={q["normalized"]:q for q in reg["questions"]}
+    pattern=re.compile(r"^##\\s+(?:\\d+\\.\\s+)?(.+?\\?)\\s*$",re.M)
+    for path in sorted(FAQ_ROOT.glob("*.md")):
+        if path.name in {"README.md","ASK_YOUR_OWN_QUESTION.md","COMMUNITY_QUESTIONS.md"}: continue
+        text=path.read_text(encoding="utf-8")
+        for match in pattern.finditer(text):
+            question=match.group(1).strip(); n=norm(question)
+            if n in by_norm:
+                item=by_norm[n]
+                if item.get("answer_url") is None:
+                    slug=re.sub(r"[^a-z0-9 -]","",match.group(0).lstrip("# ").casefold())
+                    slug=re.sub(r"[\\s]+","-",slug).strip("-")
+                    item["answer_url"]=f"/docs/faq/{path.stem}/#{slug}"
+                    item["status"]="answered"; item["evidence_state"]="published"
+                continue
+            qid=f"Q-{reg['next_id']:06d}"; reg["next_id"]+=1
+            slug=re.sub(r"[^a-z0-9 -]","",match.group(0).lstrip("# ").casefold())
+            slug=re.sub(r"[\\s]+","-",slug).strip("-")
+            item={"id":qid,"canonical_question":question,"normalized":n,"variants":[question],"status":"answered","first_observed":"published_corpus","last_observed":"published_corpus","observations":[{"question":question,"source":"published_practical_answers","observed_at":"published_corpus"}],"answer_url":f"/docs/faq/{path.stem}/#{slug}","evidence_state":"published"}
+            reg["questions"].append(item); by_norm[n]=item
+    return reg
+
 def load_registry():
-    if REGISTRY.exists(): return json.loads(REGISTRY.read_text())
-    return {"schema_version":1,"principle":"The registry grows only from questions people actually ask. It has no target size and no ceiling.","next_id":1,"questions":[]}
+    if REGISTRY.exists(): return seed_published_answers(json.loads(REGISTRY.read_text()))
+    return seed_published_answers({"schema_version":1,"principle":"The registry grows only from questions people actually ask. It has no target size and no ceiling.","next_id":1,"questions":[]})
 
 def main():
     reg=load_registry(); now=datetime.now(timezone.utc).replace(microsecond=0).isoformat()
