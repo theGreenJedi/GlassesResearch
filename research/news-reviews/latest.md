@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-09-30T20:15:43.523874+00:00`
+Generated: `2026-09-30T20:53:10.634099+00:00`
 
-- Intake files inspected: **302**
-- Candidates retained in this review window/history: **12731**
+- Intake files inspected: **303**
+- Candidates retained in this review window/history: **12797**
 - **Publication authority: none.** This is triage state, not factual verification or publication approval.
 
 ## Queue state
 
-- `adjacent_radar`: 2797
+- `adjacent_radar`: 2817
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 721
-- `rejected_noise`: 9072
+- `needs_editorial_verification`: 724
+- `rejected_noise`: 9118
 - `source_monitor`: 1
-- `source_review`: 36
+- `source_review`: 33
 - `watching`: 85
 
 ## Action queue
@@ -233,6 +233,7 @@ Generated: `2026-09-30T20:15:43.523874+00:00`
 | normal | needs_editorial_verification | direct | [Amazon Drivers’ Smart Glasses Are Going to Be an Image Problem - Bloomberg.com](https://news.google.com/rss/articles/CBMitgFBVV95cUxOMmgzMTFzU1ozNzR0cHZpRUZ6cXJxWUd2Ri1MOFBqeWMxdUVzcGdJWlF6dURvMkNEcVlZc04yYWZ5SjBfNzc1YXVsVURzTW1NbW1GdUcwcFFuRzNiN3FXLVNfZnIzY3ZWTU0ycUxfcUU1LVp0MXpJSjJyMWxFZU1kRWF1aERwS1J5MzJ4UjV3NFNuVkJKbjY3aGhRc0l6by1ZZDAtQUJ2anZ0T3R1XzdxMnJxTU5nZw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon Plans 20,000+ Smart Glasses for Delivery Drivers in 2027 - TechRepublic](https://news.google.com/rss/articles/CBMigwFBVV95cUxQN0Z0a1ZIU05pTVRldTRrbEI1VndsWDB6OXU5cHR5SXFNdGY3eENTTmJCZFAzcHhlSHM5TUc4OVNqT3JyTENEd05wRlpnRW9QRmlfYktrTG5NN295X1hGclZfMTBHaE5BT0NJX3p3dmtlZ0oxcUhRUkd0bmRSM085a3VwWQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon smart glasses will photograph homes, with no opt-out - The Next Web](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdVE2WTAtUkVZRzBTb0N1UFJNYzBabC0zMDcycEx5YUtDOVgwQXhMbHRRbkd0aEx1Yl9leGlMbVVEeDc5S3RnQ0RMLVJkYlhaV0k0MGEyQnAycnZNVElpZi11MVBScUd2b2lrcXdnYVRoUzgxRzc3bFBGNHZfR1Uyenp1TG9mNzMwUkhN?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon’s delivery driver smart glasses will reportedly take photos ‘almost constantly’ - The Verge](https://news.google.com/rss/articles/CBMiigFBVV95cUxNS0p4UXRqSmJUeTU0UHNZUWxqRmd1RVVkT0VhVEhpd0p0S2pNMGxwLXhpR2x3TDRtaW5tWDRoT3VSV085YzVoNFAySkpBR1cxeDNFY1RtanV3MlhlT0JXRWxnb1NCQmlNc1pQUUVDTnJBbDFSZVJfLVA5RkN3Q09vbDdCMlJsVS1adkE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Está previsto que lance sus gafas inteligentes en 2027. - Letem světem Applem](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZzlsWmVBSEU2b3dqTDE2Sk1JdXNtNjVxdGZzbUh2WFlZU1J5QlhCMkpkS0pnaThyWEI1X3FWRVUzTE5zNTBobWRKMEUwakhqY2RaSER2ZkV2cV9qNlI1VFVUZV9XN1BRcVhkYzBzZlhDTk1YZ2lid1owVV9xNTNJRG9mVlJMS0JBemppeTNxREZjY1lvWGlQTGVVT2VMaWhIem5RWllOak10QVZtVE1ucnFxXzFBSWJoYnNlc1ZCT1d5eERTbElQVndtSHJhN2w0X0pEVndZMndxaWVSTWRJ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -265,7 +266,6 @@ Generated: `2026-09-30T20:15:43.523874+00:00`
 | normal | needs_editorial_verification | direct | [Gafas inteligentes y privacidad - www.metrolibre.com](https://news.google.com/rss/articles/CBMiigFBVV95cUxNb29DWlhyclduZUxDQ0I2c1NUWWF0N3FHWXFyNDl1Q2ZBNmdjMEtpRWZCaHA5aGNFQjc4el9UNlNnNnRpRlkxY0FXT3RtVFYyQ0FLT0lGRXh2VTJfN1JLQlZWVXh4RnNLQWJXQ01vSWlyWEVkSEozNFFuc0V4WFlZNEdCYklXa3VrSWc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Halliday G2预购突破6000台， 广纳四维光波导助力量产 - abvr360.com](https://news.google.com/rss/articles/CBMiRkFVX3lxTE1lQjFJWWpKQlNsc3BwRFVNNmNmMy1jbU9ZRmdvQzJmcF9wQm5ZVFFZV21XR1g1LW8wY1dfYm1YWnN0TE1OZ0E?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Huawei AI Glasses boasts a 12MP camera, 12-hour battery ... - Notebookcheck](https://www.notebookcheck.net/Huawei-AI-Glasses-boasts-a-12MP-camera-12-hour-battery-life-and-three-designs.1278357.0.html) | reachable (200) | research_news_review, model_catalog_review |
-| normal | needs_editorial_verification | direct | [Huawei AI Glasses debuted with camera + built-in translation tool](https://www.huaweicentral.com/huawei-ai-glasses-debuted-with-camera-built-in-translation-tool/) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Justiça Eleitoral vetará óculos inteligentes na urna após caso de gravação secreta de votos no Pará - Diário do Litoral](https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdllLX1BZWm90ak1BX2xyNERuWGRONFJqWVFlRE5KZldEdm1kdWVEdjhlX3EwRkpqb2hLNWRiSG1iWVNPTDRlay00elpWYVhVbmhGLTRrbHVCbjVBaHNtY1BndnJkM2kyaEx2V1doWndQYVJIYWN3cmRyU2VmcnVZaWNac3VlMG14Tmc3MVlKSHp2SEk0RzlyTndONHZ4SkF6eTFwcHJuUGVGSjZsT2pybUhkTDNReEx0OVhPQTZoNGh3Y0REcHJyTnhWa2lyUkxKZVU0T0dpQmRkRDEz?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Kylie Jenner’s new AI glasses: 5 things that make her Meta tech stand out](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6abd6d6471464a73a28332fb9cdfe899&url=https%3a%2f%2fjang.com.pk%2fen%2f74013-kylie-jenners-new-ai-glasses-5-things-that-make-her-meta-tech-stand-out-news&c=13792032406592305286&mkt=en-us) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Las gafas inteligentes de Apple llegarían antes de 2027 con funciones de IA - Infobae](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWkc0UkdtbnQ3TVdYczhkNWNKNEQ2akdHdWoxbng0blVPYTQ3dkk0TWRsM2NoNTVWTDQ5cktKYXF5cW85U3M4WVE1enQ5d3hFZFFqMVozaEdWWDd2UnRla2c4SVVzWkxsSHh0ZE5lS0V6UXhYd040MHprWU45Y3JzQ0JjaTNJQTMzSmhOM3NLUmhwTVB2SWdDeGV0eUhOMy1NQlN5bEM0eHh2anFWZlBtRzg0NjNET2lz0gHTAUFVX3lxTE5LeVZYVDZfMjl4SjdzcWdtSjl5Ymx6MzRQbTA1TjNsUWxPSXRxbHZxcHJZeTR4cFFQZXRvZjFsVm83M05EMExubUxVSjBrMVg0YXJjekVaUWZnNTFocm5KTXpWcGtHcDIwaHpoMHRseGRuU18xUURYQ2tPTmxnY095dkF0QmV3dldKQWhNemdhazZxNWVReEVfNGM3Ti1lYXpxZnhRVUhXRUt5Uk4tckJHTmtGQTJlZlFOTi1IMDlpWFE5WXMyejVMRDJ0UkVNUDB5azQ?oc=5) | reachable (200) | research_news_review |
