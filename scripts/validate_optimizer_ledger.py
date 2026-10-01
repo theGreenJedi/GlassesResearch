@@ -30,6 +30,15 @@ def main():
     graduation = policy.get("research_graduation") or {}
     if set(graduation.get("states") or []) != RESEARCH_STATES: fail("canonical research states missing")
     if "Community Research is subordinate to Research" not in str(graduation.get("community_research", "")): fail("Community Research must remain subordinate to Research")
+    contract = "\n".join(str(x) for x in (policy.get("optimizer_maintenance_contract") or []))
+    for required in (
+        "bounded recovery before escalation",
+        "actual failed action",
+        "not_attempted and attempted_failed",
+        "after recovery/continuation",
+    ):
+        if required not in contract:
+            fail(f"closed-loop optimizer invariant missing: {required}")
     findings = data.get("findings")
     if not isinstance(findings, list): fail("findings must be a list")
     seen = set()
