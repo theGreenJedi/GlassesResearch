@@ -1,40 +1,39 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-01T20:23:59.603773+00:00",
-  "candidate_count": 57,
-  "classifier_irrelevant_count": 36,
+  "discovered_utc": "2026-10-01T21:59:49.092020+00:00",
+  "candidate_count": 67,
+  "classifier_irrelevant_count": 57,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 21,
-    "broad_web": 27,
-    "developer": 9
+    "adjacent": 9,
+    "broad_web": 48,
+    "developer": 10,
+    "research": 1
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 0,
-    "adjacent": 21,
+    "direct": 1,
+    "enabling": 1,
+    "adjacent": 8,
     "speculative": 0,
-    "irrelevant": 36
+    "irrelevant": 57
   },
   "type_counts": {
     "model": 4,
-    "review": 3,
-    "news": 28,
+    "video": 9,
+    "news": 35,
     "research": 1,
-    "tool": 16,
-    "sdk": 9,
-    "retail": 5,
-    "community": 3
+    "tool": 13,
+    "sdk": 10,
+    "optics": 2,
+    "retail": 6,
+    "teardown": 2,
+    "community": 2
   },
   "routing_counts": {
-    "adjacent_radar": 21,
-    "community_evidence_review": 3,
-    "development_hacking": 5,
-    "model_catalog_review": 2,
-    "reject_noise": 36,
-    "report_card_evidence": 3,
-    "research_news_review": 21,
-    "retail_rebrand_review": 2
+    "adjacent_radar": 8,
+    "reject_noise": 57,
+    "research_news_review": 10,
+    "research_optics": 2
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,17 +47,390 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "f94a30c2583c3b04",
-      "title": "Synder for QuickBooks & Xero - Effortless sales reconciliation with ...",
-      "url": "https://apps.shopify.com/synder",
-      "summary": "Automate sync of your financial data to NetSuite, Sage Intacct, QuickBooks & Xero Synder syncs your Shopify sales, fees, taxes, refunds, discounts, gift cards, shipping, and customers into NetSuite, Sage Intacct, Xero, and QuickBooks. Payouts match to bank feeds automatically, COGS and inventory update in real time, and Transaction Reconciliation flags only entries that need review. Import ...",
+      "id": "1695907740dfce6b",
+      "title": "AI Prescription Glasses Guide: Smart Eyewear for Vision Correction",
+      "url": "https://www.evenrealities.com/blogs/buyers-guide/ai-prescription-glasses",
+      "summary": "Discover how AI prescription glasses work, compare bonded lenses vs inserts, and learn why Even G2 offers the best prescription smart glasses experience.",
+      "discovery_channel": "broad_web",
+      "query": "prescription smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart eyewear, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d8710b2bd66c1e8e",
+      "title": "USED PHOTO - Houston Camera Exchange",
+      "url": "https://www.houstoncameraexchange.com/used-photo.html",
+      "summary": "Houston Camera Exchange offers new and used camera equipment, cameras, lenses, and accessories. We sell and buy cameras and lenses in Houston Texas",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lenses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7e5660620ec6c2e3",
+      "title": "140 Cool and Unusual Things to Do in Seattle - Atlas Obscura",
+      "url": "https://www.atlasobscura.com/things-to-do/seattle-washington",
+      "summary": "Discover 140 hidden attractions, cool sights, and unusual things to do in Seattle from Fremont Troll to Steve's Weird House.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8267957f016ae926",
+      "title": "45 Things To Do In Seattle Washington | Local Guide 2026",
+      "url": "https://seeingwashington.com/seattle-guide/",
+      "summary": "Best things to do in Seattle include visiting Pike Place Market, riding ferries across Puget Sound, exploring neighborhoods like Capitol Hill and Fremont, relaxing at scenic parks and beaches, and taking short trips to places like Snoqualmie Falls and Bainbridge Island.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "de7e0b95c02ee451",
+      "title": "Crazy Fun Things To Do in Seattle (Bucket List + FREE Map)",
+      "url": "https://www.twowanderingsoles.com/blog/best-things-to-do-in-seattle",
+      "summary": "After countless visits to this PNW city, we are sharing our very favorite things to do in Seattle to help you plan the perfect trip.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "12700d5234f4c792",
+      "title": "THE 15 BEST Things to Do in Seattle (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Attractions-g60878-Activities-zfr7917667-Seattle_Washington.html",
+      "summary": "Things to Do in Seattle, Washington: See Tripadvisor's 617,279 traveler reviews and photos of Seattle tourist attractions. Find what to do today, this weekend, or in October. We have reviews of the best places to see in Seattle. Visit top-rated & must-see attractions.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e746e8fe258b83d5",
+      "title": "The 27 Essential Things to Do in Seattle, Washington",
+      "url": "https://travel.usnews.com/seattle_wa/things_to_do/",
+      "summary": "The best things to do in Seattle include popular landmarks like the Space Needle, as well as lesser-known attractions like the Underground Walking Tour.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b81ef755dac20941",
+      "title": "The 68 Best Things to Do in Seattle (A Local’s List) - Travel Lemming",
+      "url": "https://travellemming.com/things-to-do-in-seattle/",
+      "summary": "Don’t miss this Seattle local’s list of the 68 best things to do. All the popular sites & attractions, plus local secrets & hidden gems.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1057418d4954ff74",
+      "title": "The Ultimate Seattle Bucket List: 70 Things To Do At Least Once",
+      "url": "https://secretseattle.co/seattle-bucket-list/",
+      "summary": "70 Things You Need To Experience In Seattle At Least Once Sunny or rainy, these activities are a must-do in Emerald City! How many do you have on your bucket list?",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "675fccc982003200",
+      "title": "Things to Do in Seattle This Week",
+      "url": "https://www.seattlemet.com/arts-and-culture/things-to-do-in-seattle-events",
+      "summary": "Those with little ones (human or furred) can rejoice at a bevy of great playgrounds, spray parks, and zoos. But if you just want a guide already, we’ve got plenty for food, outdoors, shopping, and entertainment. Plus, a shortlist of what to do in Washington this month. Or find below the best things to do in Seattle, updated weekly.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e196433a687c48ee",
+      "title": "9 Pumpkin Patches Near Naperville to Visit This Fall",
+      "url": "https://naperville.com/things-to-do/pumpkin-patches-near-naperville/",
+      "summary": "Find 9 pumpkin patches near Naperville with verified 2026 dates, admission, corn mazes, animals, U-pick fields and practical family planning tips for fall.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b6a1d489ca8664d",
+      "title": "Bengtson's Pumpkin Farm | Fall Fest & Family Farm Park | Homer Glen, IL",
+      "url": "https://www.pumpkinfarm.com/",
+      "summary": "Bengtson's has been Chicagoland's favorite fall festival and pumpkin patch since 1981. Experience unlimited rides, award-winning food, and family-friendly fun around every corner. Make Bengtson's a part of your family's fall tradition. Subscribe below to stay informed on 2026 news.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f27f53cd55240cdc",
+      "title": "Express Scripts Pharmacy Home Delivery",
+      "url": "https://www.express-scripts.com/rx",
+      "summary": "Manage prescriptions online and get medications delivered right to your door. Enjoy free standard shipping and automatic refills. Talk to specially trained pharmacists, 24/7. Learn more about how Express Scripts Pharmacy can help you.",
+      "discovery_channel": "adjacent+research",
+      "query": "prescription smart glasses lens research; prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "research",
       "materiality_score": 3,
       "keyword_hits": [
-        "review",
         "shipping"
       ],
       "status": "candidate",
@@ -67,1087 +439,12 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "model",
-        "review"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5a473fd3d47e794d",
-      "title": "Bold QuickBooks Sync Pro - Shopify App Store",
-      "url": "https://apps.shopify.com/quickbooks-online",
-      "summary": "The App Sync orders to QuickBooks, refunds, inventory, products and fees with QuickBooks in minutes. Get the app trusted by Shopify merchants and retail accounting teams to connect Shopify stores to QuickBooks. Simplify financial reporting, payment management, and inventory tracking. QUICKBOOKS SYNC allows you to easily sync all products, line items, sales, taxes, shipping, gift cards and ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "model",
-        "tool",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "development_hacking",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "25a1a879ce517314",
-      "title": "Snap Compare: Compare Products - Side-by-side product comparison with ...",
-      "url": "https://apps.shopify.com/snap-compare",
-      "summary": "Compare products side-by-side with variants, metafields, and custom attributes. Shareable links, analytics, and review widget integration.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e4aed0191951112a",
-      "title": "The Best 10 Restaurants near Draper, UT 84020 - Yelp",
-      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Draper%2C+UT+84020",
-      "summary": "See more restaurants near Draper. What are people saying about restaurants near Draper, UT? This is a review for restaurants near Draper, UT: \"Our friends took us to Cultivate Craft Kitchen for lunch. The restaurant is nice and clean, our server was great. He described items on the menu to us which was helpful, he was very informative.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f082e1ac0916bad0",
-      "title": "A2X Sync for QuickBooks & Xero - Shopify App Store",
-      "url": "https://apps.shopify.com/a2x",
-      "summary": "Join the thousands of merchants, accountants, and bookkeepers that trust A2X to accurately automate their Shopify accounting in QuickBooks Online or Xero.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e7e2950c790d291b",
-      "title": "California - localthriftstores.com",
-      "url": "https://www.localthriftstores.com/savers-thrift-store-locations/california",
-      "summary": "California Savers Value Village Thrift Stores where you can shop thrift store items while supporting a good cause.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b0b0db8da01d9b74",
-      "title": "Connecticut, Brookfield CT Savers Value Village",
-      "url": "https://www.localthriftstores.com/savers-thrift-store-locations/connecticut/brookfield-ct-savers-value-village",
-      "summary": "Brookfield, Connecticut's Savers Value Village, located on Federal Road, stands as a unique thrift store with a distinctive purpose—it actively supports the Hartsprings Foundation. Beyond offering an array of affordable and unique items, this Savers location plays a crucial role in contributing to the mission of the Hartsprings Foundation with each purchase made by shoppers in Brookfield ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ec104c1770aac371",
-      "title": "Find Local Thrift Stores Near Me | Thrift Store Locator",
-      "url": "https://www.localthriftstores.com/",
-      "summary": "The Best Thrift Stores Near Me Savers Thrift Stores Find Savers thrift store locations near you by using our handy directory. Savers' business model of purchasing, reselling and recycling gives communities a great way to shop and keep over 700 million pounds of used goods from landfills every year.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d772fc5d11845f14",
-      "title": "Maryland, Adelphi MD Savers Value Village",
-      "url": "https://www.localthriftstores.com/savers-thrift-store-locations/maryland/adelphi-md-savers-value-village",
-      "summary": "Adelphi, Maryland's Savers Value Village, located on University Boulevard East, is more than just a thrift store; it actively supports the Lupus Foundation of America. Beyond providing an extensive range of affordable and unique items, this Savers location plays a crucial role in contributing to the mission of the Lupus Foundation with each shopper's purchase. Residents of Adelphi not only ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "95a6cfa5e8b4481f",
-      "title": "Maryland, Bladensburg MD A2 Thrift Super Store",
-      "url": "https://www.localthriftstores.com/savers-thrift-store-locations/maryland/bladensburg-md-a2-thrift-super-store",
-      "summary": "Bladensburg, Maryland's A2 Thrift Superstore is a local haven for bargain hunters and treasure seekers alike. Conveniently located at Annapolis Rd, this thrift store stands out as a community gem, offering a diverse array of affordable and unique items. From vintage clothing to home decor and a myriad of accessories, A2 Thrift Superstore provides a curated selection that appeals to a broad ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cdacc072f2fb71c7",
-      "title": "Maryland, Laurel MD A2 Thrift Super Store",
-      "url": "https://www.localthriftstores.com/savers-thrift-store-locations/maryland/laurel-md-a2-thrift-super-store",
-      "summary": "Laurel, Maryland's A2 Thrift Superstore is a local gem for residents seeking affordable and unique finds. Conveniently located at Fort Meade Rd, this thrift store provides a diverse selection of items, ranging from clothing to home decor, offering something for every taste. A2 Thrift Superstore stands out not only as a shopping destination but also as a champion of sustainability by promoting ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "45bc76f6d2ca8df4",
-      "title": "Massachusetts - Local Thrift Stores",
-      "url": "https://www.localthriftstores.com/savers-thrift-store-locations/massachusetts",
-      "summary": "Massachusetts Savers Value Village Thrift Stores where you can shop thrift store items while supporting a good cause.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ad169db797841604",
-      "title": "New Jersey, Pennsauken Township NJ A2 Thrift Super Store",
-      "url": "https://www.localthriftstores.com/savers-thrift-store-locations/new-jersey/pennsauken-township-nj-a2-thrift-super-store",
-      "summary": "Pennsauken Township, New Jersey's A2 Thrift Super Store is more than just a thrift store; it is a community-oriented haven located in the heart of the township. Nestled in Pennsauken Plaza, this thrift store offers an eclectic array of affordable and unique items, making it a go-to destination for savvy shoppers seeking budget-friendly treasures.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d1fd9487f5c2c182",
-      "title": "New Jersey, Union NJ A2 Thrift Super Store",
-      "url": "https://www.localthriftstores.com/savers-thrift-store-locations/new-jersey/union-nj-a2-thrift-super-store",
-      "summary": "Union, New Jersey's A2 Thrift Super Store stands out as more than just a thrift store; it's a community-centric establishment situated in the heart of Union. Located in the Union Plaza Shopping Center, this thrift store offers an extensive range of affordable and unique items, making it a popular destination for budget-conscious shoppers ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c709655e700ee83f",
-      "title": "QuickBooks Bridge by Parex - Shopify App Store",
-      "url": "https://apps.shopify.com/quickbooks-bridge",
-      "summary": "Automated Sales Sync to QuickBooks Online & Intuit Enterprise Suite – Individual Order or Summary Simplify your Shopify accounting and reconciliation with a flexible sync solution designed for your business. Individual Order Sync lets you export Orders, Products, Customers, Taxes, and other order details to QuickBooks Online or Intuit Enterprise Suite, either automatically or manually at ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c90836d31abade93",
-      "title": "QuickBooks Desktop Connector - Simplify Accounting: Sync Sales ...",
-      "url": "https://apps.shopify.com/quickbooks-desktop-connector",
-      "summary": "Seamlessly migrate QuickBooks Desktop POS, integrate with POS and sync data to QuickBooks accounting Seamlessly migrate from QuickBooks Desktop POS, integrate with Shopify POS & B2B (Shopify Plus), & sync data to QuickBooks Desktop accounting. The app syncs product, accounting, & sales data seamlessly, ensuring an easy switch. Our new B2B workflows includes features like customer & class sync ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2dcf2e1690e16d18",
-      "title": "QuickBooks Online - Sync your retail and B2B sales activity to ...",
-      "url": "https://apps.shopify.com/qbconnector",
-      "summary": "QuickBooks provides accounting software for Shopify retail and B2B merchants that brings sales activity, payments, customers, and product details into one centralized place for smoother bookkeeping and easier oversight. Categories are mapped for you to reduce manual entry and help keep your books accurate as you sell and your shop evolves.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f21d964c100f2276",
-      "title": "QuickSync‑QuickBooks Connector - Seamlessly syncs sales, updates ...",
-      "url": "https://apps.shopify.com/quickbooks-online-connector",
-      "summary": "QuickBooks Online Order Sync with Shopify Easily integrates QuickBooks Online. It automatically syncs Shopify stores Orders, Customers, Inventory, and Products to QuickBooks Online. Integration for Shopify and QuickBooks allows you to sync real-time order info directly from Shopify To Quickbooks Online based on various triggers.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8104f07e9bae5f90",
-      "title": "SaversValueVillage - Local Thrift Stores",
-      "url": "https://www.localthriftstores.com/savers-thrift-store-locations",
-      "summary": "Savers Value Village Thrift Stores in the United States where you can shop thrift store items while supporting a good cause. Savers Thrift Store locations are great for resellers too!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "848a90d1537506ef",
-      "title": "TaxCloud Sales Tax Automation - Shopify App Store",
-      "url": "https://apps.shopify.com/taxcloud-sales-tax-automation",
-      "summary": "TaxCloud helps Shopify brands automate sales tax filing with SST savings and responsive US-based customer support. Trusted by hundreds of Shopify merchants.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3edb17f6028874b7",
-      "title": "Webgility ‑ QuickBooks Online - Sync Quickbooks Online, Xero & Automate ...",
-      "url": "https://apps.shopify.com/ecc-quickbooks-integration-for-shopify",
-      "summary": "Webgility connects Shopify to QuickBooks Online & Xero, so orders, expenses, inventory, and more are consistent, reducing errors and manual data entry.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "551071ad7c555890",
-      "title": "Commercial Hydroponic Reverse Osmosis: HyperLogic® - HydroLogic Systems",
-      "url": "https://www.hydrologicsystems.com/products/hyperlogic",
-      "summary": "HydroLogic’s Commercial Hydroponic Reverse Osmosis line includes system configurations that product 5,500to 19,000 gallons of purified water, per day. Our Industrial Reverse Osmosis systems produce 28,800 gallons per day, and greater. Each system is custom built based on site specific water chemistry. For more information about all of our HyperLogic products please visit: Hyper-Logic.com.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab09f06281baab12",
-      "title": "HyperLogic Commercial - hydrologicsystems.com",
-      "url": "https://www.hydrologicsystems.com/collections/hyperlogic-commercial",
-      "summary": "Manuals Systems Pumps HyperLogic Commercial RO SOPs HydroLogic Breakwater RO SOPs Education Articles What’s In Your Water Filter Replacement Guide Marketing & Videos",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "987328a1522373cc",
-      "title": "Maintenance & Filter Replacement Guide - HyperLogic",
-      "url": "https://hyper-logic.com/wp-content/uploads/Filter-Replacement-Guide.pdf",
-      "summary": "Maintenance & Filter Replacement Guide Below are some general recommendations on the maintenance of the HyperLogic commercial RO system. When the equipment needs to be changed is highly dependent upon the feed water quality, pre-filtration, run time hours, number of membranes, and previous maintenance.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e9dfabb5f0de29a",
-      "title": "Polish Pottery Nativity Set (Preorder) | Uno Alla Volta",
-      "url": "https://www.unoallavolta.com/products/polish-pottery-nativity-set",
-      "summary": "Artisans Arek and Ewa of Brzeg, Poland create this lovely nativity set made from native clay, then hand-stamped and detailed with fine brushwork in iconic blue patterns. The set of 4 includes figurines of Mary, Joseph and Baby Jesus and the creche features the star of Bethlehem, the wise men on camels, traveling in the",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "preorder"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "43aa0eb89975c89d",
-      "title": "Product Support for HyperLogic Water Filtration Systems",
-      "url": "https://hyper-logic.com/product-support-for-water-filtration-system/",
-      "summary": "Instruction Guides Membrane Cartridge Cleaning Membrane Changing Membrane O-ring Replacement Membrane Add-On Kit Solenoid Replacement Troubleshooting Membrane TDS Error",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f462da959309ac32",
-      "title": "R13 RO System Membrane Housing O-Ring - Buckeye Hydro",
-      "url": "https://www.buckeyehydro.com/r13-ro-system-membrane-housing-o-ring/",
-      "summary": "Product Description Replacement o-ring for R13-0250, R13-0600 and R13-1200 RO System membrane housing.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f00daa5233dde670",
-      "title": "Replacement RO Parts - Reverse Osmosis Superstore",
-      "url": "https://www.reverseosmosis.com/collections/reverse-osmosis-parts",
-      "summary": "Maintain the performance and reliability of your reverse osmosis system with quality replacement parts designed for residential and commercial RO configurations. From membranes and pre-filters to fittings, tubing, flow restrictors, and check valve...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4fa5190dc82ff7e5",
-      "title": "RO Membrane Replacement: Complete 9-Step Installation & Removal Guide",
-      "url": "https://stark-water.com/blog/ro-membrane-replacement-installation-removal/",
-      "summary": "RO membrane replacement made simple. This practical guide explains when to replace RO membranes, 9-step installation and removal techniques, and storage tips to protect industrial RO system performance and membrane life.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1334d934375f74ff",
-      "title": "Standard Operating Procedure (SOP); HGC741671 Membrane Replacement",
-      "url": "https://scotts-hawthorne-public-prod.s3-us-west-2.amazonaws.com/PROD/documents/Documents/1000976534_HGC_SOP_Membrane_Replacement.pdf",
-      "summary": "Standard Operating Procedure (SOP); HGC741671 Membrane Replacement Purpose The purpose of this SOP is to aid users in the general maintenance replacement of the HyperLogic membrane; Hawthorne HGC741671 Applicable To This SOP is applicable to all HyperLogic Commercial Series RO systems [1-12 membranes] which feature the stainless-steel membrane housings, utilizing the 4x38” membrane element ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "08e564d7831e6e66",
-      "title": "Standard Operating Procedure (SOP); Membrane End Cap Inspection",
-      "url": "https://scotts-hawthorne-public-prod.s3-us-west-2.amazonaws.com/PROD/documents/Documents/1000976497_HGC_SOP_O-Ring_Replacement.pdf",
-      "summary": "Purpose end cap and related O-Ring seals. Periodic maintenance and/or replacement of the O-Rings may be required Applicable To This SOP is applicable to all HyperLogic Commercial Series RO systems [1-12 membranes] which feature the stainless-steel membrane housings, utilizing the 4x38” membrane element; Hawthorne HGC741671 Prerequisites",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "87edf66251736c1f",
-      "title": "Active Offers - Coupons, Discounts, & Promotions - Uno Alla Volta",
-      "url": "https://www.unoallavolta.com/pages/active-offers",
-      "summary": "Uno Alla Volta *Prices as marked. Offers are not transferable and cannot be applied to prior purchases. Sale ends 10/4/26 at Midnight PST.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ac8772048011a4ce",
-      "title": "Best Volkswagen Lease Deals in Montebello, CA | Puente Hills VW",
-      "url": "https://www.vwpuentehills.com/best-volkswagen-lease-deals-and-finance-offers-in-montebello-california/",
-      "summary": "Find the best Volkswagen lease deals and finance offers near Montebello, CA. Monthly specials on the Jetta, Tiguan, Atlas, ID.4 & more. Zero down, trade-in programs, and low APR options available. Puente Hills Volkswagen — serving Montebello and Southeast Los Angeles.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2e53c87d967d2b00",
-      "title": "Clearance Sale | Handmade Jewelry, Décor & Gifts - Uno Alla Volta",
-      "url": "https://www.unoallavolta.com/collections/clearance-sale",
-      "summary": "Enjoy clearance prices on these handmade gifts, artisan made gifts, and unique gifts at Uno Alla Volta. Shop all budget-friendly handcrafted goods. Limited quantities. All sales final.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3bba764c8f04a6a3",
-      "title": "CST to EST conversion - World Time Clock & Map",
-      "url": "https://24timezones.com/difference/cst/est",
-      "summary": "When planning a call between CST and EST, you need to consider time difference between these time zones. CST is 1 hour behind of EST. If you are in CST, the most convenient time to accommodate all parties is between 9:00 am and 5:00 pm for a conference call or meeting. In EST, this will be a usual working time of between 10:00 am and 6:00 pm.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
         "research"
       ],
-      "primary_type": "research",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1157,15 +454,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "16a71b3cf9b41d01",
-      "title": "CST to EST Converter - Central Time to Eastern Time",
-      "url": "https://timezonecalc.net/cst-to-est/",
-      "summary": "Convert CST to EST. Eastern Standard Time is 1 hour ahead of Central Standard Time. See a 24-hour conversion table and Central to Eastern time conversions.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "da47f642e622d51c",
+      "title": "Find Pumpkin Patches Near You",
+      "url": "https://www.pumpkinpatches.com/",
+      "summary": "A wonderful tradition for the family to participate in, pumpkin picking can be found at local farms and patches, and is usually a main attraction at many seasonal events, including Fall Festivals. Check out our directory to easily find a local pumpkin patch nearest you and choose your ideal pumpkins to put to use this Fall and Halloween Season!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1175,127 +472,8 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0d042e1b55ae29b9",
-      "title": "CST to EST Converter - Convert Central Time to Eastern Time - World ...",
-      "url": "https://www.worldtimebuddy.com/cst-to-est-converter",
-      "summary": "Quickly convert Central Standard Time (CST) to Eastern Standard Time (EST) with this easy-to-use, modern time zone converter.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7084e0ff650e7c55",
-      "title": "CST to EST Converter - Savvy Time",
-      "url": "https://savvytime.com/converter/cst-to-est",
-      "summary": "Convert CST time to EST time with Savvy Time. Compare current local time, UTC offsets, time difference, daylight saving time, table and map.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9a5ba4cfeb89cb71",
-      "title": "CST to EST Converter - Time Difference & Current Time",
-      "url": "https://timealigner.com/timezone-converter/cst-to-est",
-      "summary": "Convert CST to EST time instantly. View the current time difference between Central Standard Time and Eastern Standard Time. Perfect for scheduling meetings and calls.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a30f3059b50360d9",
-      "title": "CST to EST Converter - Time Zone Tool - The Time Now",
-      "url": "https://www.thetimenow.com/timezones/convert/cst/est",
-      "summary": "Convert Central Standard Time (CST) now to Eastern Standard Time (EST) now with this free and simple time zone converter and time zone table!",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1307,15 +485,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4d2d445d3262e450",
-      "title": "CST to EST Converter - time.now",
-      "url": "https://time.now/tool/cst-to-est-converter/",
-      "summary": "Convert CST to EST with this simple time tool. Handles Daylight Saving Time, offers live CST clock, and supports both 12H and 24H formats.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "945c11535179e765",
+      "title": "Illinois Pumpkin Patches, Corn Mazes, Hayrides and More - Find ...",
+      "url": "https://www.pumpkinpatchesandmore.org/ILpumpkins.php",
+      "summary": "Complete list of 2026 pumpkin patches, corn mazes and other Halloween activities in Illinois IL (and the the website has rest of the United States, Canada, and other countries) along with pumpkin carving tips, the history of Halloween, corn mazes, spook houses, instructions on how to make a pumpkin pie from a pumpkin and other related information; all free, well-organized and up to date!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1325,7 +503,8 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1337,15 +516,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "78159ade10e7b6ea",
-      "title": "CST to EST Converter — Central Time to Eastern Time",
-      "url": "https://worldtimeconverter.net/time-zone-converter/cst-to-est",
-      "summary": "Convert CST to EST instantly. EST is always 1 hour ahead of CST — the gap never changes for daylight saving. Full 24-hour CST to EST conversion table.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "c4955abf5f9c43b0",
+      "title": "Johansen Farms Children's Zoo, Pumpkin Patch & Fall Festival JOHANSEN ...",
+      "url": "https://johansenfarms.com/",
+      "summary": "OPEN DAILY! MONDAY-SUNDAY - FREE Open Market & Pumpkin Patch, 9am-6pm and Children’s Zoo, 10am-6pm (No need to pre-purchase - pay at the Zoo entrance) 710 W. Boughton Rd., Bolingbrook, IL Location PLAN YOUR VISIT - SEE OUR FULL ADMISSION INFO AND CALENDAR HERE",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1355,9 +534,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1367,15 +547,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "264f2a41b5afa897",
-      "title": "CST to EST — Central Standard Time to Eastern Standard Time",
-      "url": "https://timezonebase.com/convert/cst-to-est.html",
-      "summary": "Convert CST to EST instantly. Central Standard Time is 1 hour behind Eastern Standard Time. Free converter with live clocks and full time table.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "502177d2058fd03a",
+      "title": "Naperville Farmstand - Keller's Farmstand",
+      "url": "https://kellersfarmstand.com/locations/naperville-farmstand/",
+      "summary": "Our Cut Flower Field, apple orchard, pumpkin patch, and Fall Festivities are located at our OSWEGO farm, about 25 minutes southwest of our Naperville Farmstand.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1385,9 +565,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1397,10 +578,134 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f35dbf769064f1f9",
-      "title": "Current Time in GMT (Greenwich Mean Time) - aflipclock.com",
-      "url": "https://aflipclock.com/time/gmt/",
-      "summary": "What time is it in GMT right now? The live Greenwich Mean Time clock, its UTC offset, daylight saving dates and a table to convert GMT to other time zones.",
+      "id": "b6c34e8ee03cded9",
+      "title": "Pumpkin Patches Near Naperville (2026) | NaperKids",
+      "url": "https://naperkids.com/pumpkin-patches/",
+      "summary": "Pumpkin patches and fall farms near Naperville IL 2026. Pick-your-own pumpkins, corn mazes, hayrides, and petting zoos in Naperville, Aurora, Bolingbrook, and West Chicago.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bfe7f96bc83b34af",
+      "title": "Pumpkin Patches Near Naperville, IL",
+      "url": "https://www.pumpkinpatches.com/illinois/naperville",
+      "summary": "Pumpkin Patches Near Naperville, IL Siegel's Cottonwood Farm Pumpkin Fest & Sniper Paintball Ride Lockport, IL Over 30 attractions included in your General Admission! Harvest your Family Memories on our 40 acres of \"Affordable Fun on the Farm.\" Everyone 2 and under enters FREE and you can stay as long as you l...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a727863e52708f6",
+      "title": "Pumpkin Patches Near Naperville, IL & Western Suburbs (2026)",
+      "url": "https://pumpkinspatchesnearme.com/illinois/naperville/",
+      "summary": "Best pumpkin patches near Naperville, Plainfield, Oswego, and Aurora. Complete with driving distance, admission details, and corn mazes.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2b9b89cabf529f9f",
+      "title": "THE BEST 10 Pumpkin Patches in NAPERVILLE, IL - Yelp",
+      "url": "https://www.yelp.com/search?cflt=pumpkinpatches&find_loc=Naperville%2C+IL",
+      "summary": "Top 10 Best Pumpkin Patches Near Naperville, Illinois - With Real Reviews",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "55cca9f0a8897165",
+      "title": "5900 Costanero RD, Saint Augustine, FL 32080 - Realty.com",
+      "url": "https://www.realty.com/home-listings/348339053/5900-Costanero-Rd-Saint-Augustine-FL-32080",
+      "summary": "5900 Costanero Rd, Saint Augustine, FL 32080 is a Single Family 2,904 sq. ft. home listed for sale. Realty.com has 50 photos available of this 3 bed, 4 bath house, listed at $999,900.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1415,9 +720,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1427,192 +733,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9f40adb80cbdd98f",
-      "title": "Current time in GMT-7 | Time.now",
-      "url": "https://time.now/timezones/gmt-7/",
-      "summary": "Current local times for every time zone at GMT-7. See live clocks for the countries and cities on this UTC offset, plus daylight-saving status, updated every second.",
+      "id": "b3aa8a21d59d8ed9",
+      "title": "5900 Costanero Rd, Saint Augustine, FL 32080 - Trulia",
+      "url": "https://www.trulia.com/home/5900-costanero-rd-saint-augustine-fl-32080-103490877",
+      "summary": "5900 Costanero Rd, Saint Augustine, FL 32080 is a 3 bedroom, 4 bathroom, 2,833 sqft single-family home in Butler Beach, built in 2023. It last sold for $900,000 on Sep 1, 2026 (3% below the $925,000 asking price).",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "604423f5c198efbb",
-      "title": "Handcrafted Artisan Jewelry | Uno Alla Volta",
-      "url": "https://www.unoallavolta.com/collections/jewelry",
-      "summary": "Explore handcrafted artisan jewelry made in small batches by makers around the world. Unique necklaces, earrings, bracelets, and rings created one at a time with exquisite detail. From freshwater pearls to Murano glass to gleaming British sterling silver, each unique piece is sure to delight.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "df0a44ca48b7033a",
-      "title": "Handcrafted Home Decor | Artisan Home Accents | Uno Alla Volta",
-      "url": "https://www.unoallavolta.com/collections/home-decor",
-      "summary": "Discover unique handmade home accents and Polish pottery crafted by artisans at Uno Alla Volta to add charm to your living space.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "04dca6d829633b50",
-      "title": "Handcrafted Polish Pottery | Uno Alla Volta",
-      "url": "https://www.unoallavolta.com/collections/polish-pottery",
-      "summary": "Discover handcrafted Polish pottery from Bolesławiec, made in small batches using traditional techniques. Durable, hand-painted stoneware for baking, serving, and everyday use.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b381a7d01ea796e4",
-      "title": "Handmade Jewelry, Murano Glass, Polish Pottery | Uno Alla Volta",
-      "url": "https://www.unoallavolta.com/",
-      "summary": "Artisan-Made Fashion & Decor — Check out our exclusive Polish pottery, Murano glass jewelry, handcrafted apparel and more. Uno Alla Volta means one at a time, & describes how our artisans handcraft our treasures.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9276a662961bab40",
-      "title": "Online Catalog - Uno Alla Volta",
-      "url": "https://www.unoallavolta.com/pages/online-catalog",
-      "summary": "Browse Uno Alla Volta's online catalog for unique, handcrafted items including jewelry, gifts, and home decor by artisans worldwide.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "142e1c86e0722b7c",
-      "title": "Sale | Deals, Discounts, Markdowns | Uno Alla Volta",
-      "url": "https://www.unoallavolta.com/collections/sale",
-      "summary": "Shop unique handmade gifts on sale at Uno Alla Volta! If you're looking for deals, discounts or markdowns, we know you'll love these affordable items.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1637,10 +763,311 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8495ff8090453465",
-      "title": "Uno Alla Volta - Shop The Latest Catalog",
-      "url": "https://www.unoallavolta.com/collections/catalog",
-      "summary": "Uno Alla Volta - Shop The Latest Catalog Discover one-of-a-kind treasures from around the world! Browse our curated collection of handcrafted jewelry, home accents, and distinctive gifts made by skilled artisans. From Murano glass masterpieces to Polish pottery, each piece tells a story of exceptional craftsmanship and artistic tradition.",
+      "id": "fdeccf6148ef6ba6",
+      "title": "5900 Costanero Rd, Saint Augustine, FL 32080 [Updated 5/5]",
+      "url": "https://homefinder.com/realestateandhomes-detail/5900-Costanero-Rd_St-Augustine_FL_32080_M54448-69822",
+      "summary": "5900 Costanero Rd, Saint Augustine, FL 32080 is a single family home for sale listed on the market for 24 Minutes. 5900 Costanero Rd, Saint Augustine, FL 32080 is in the Treasure Beach neighborhood, which has a median listing home price of $670000.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "605d8c34657e27fa",
+      "title": "5900 Costanero Rd, Saint Augustine, FL 32080 [Updated 8/20]",
+      "url": "https://www.realtor.com/realestateandhomes-detail/5900-Costanero-Rd_St-Augustine_FL_32080_M54448-69822",
+      "summary": "Pending: View 63 photos for 5900 Costanero Rd, this 3 bed, 4 bath, 2833 sqft. single family home in Saint Augustine, FL listed at $925,000. MLS #262210",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "889445be5943082c",
+      "title": "5900 Costanero Rd, Saint Augustine, FL 32080 | Homes.com",
+      "url": "https://www.homes.com/property/5900-costanero-rd-saint-augustine-fl/vsp1s63pzeh6y/",
+      "summary": "5900 Costanero Rd, Saint Augustine, FL 32080 - 2,833 sqft home built in 2023 . Browse photos, take a 3D tour & see transaction details about this recently sold property. MLS# 2143493.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ecdd36703806b9cf",
+      "title": "5900 Costanero Rd, Saint Augustine, FL 32080 | Zillow",
+      "url": "https://www.zillow.com/homedetails/5900-Costanero-Rd-Saint-Augustine-FL-32080/103490877_zpid/",
+      "summary": "5900 Costanero Rd, Saint Augustine, FL 32080 is currently not for sale. The 2,833 Square Feet single family home is a 3 beds, 4 baths property. This home was built in 2023 and last sold on 2026-09-01 for $900,000. View more property details, sales history, and Zestimate data on Zillow.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8931ad93722cc667",
+      "title": "5900 Costanero RD, St Augustine, FL 32080 - Realty.com",
+      "url": "https://www.realty.com/home-listings/1059113963/5900-Costanero-Rd-St-Augustine-FL-32080",
+      "summary": "5900 Costanero Rd, St Augustine, FL 32080 listed at $955,000. Single family features 3 bed, 4 bath, 2,833 sq ft. See photos and sales history on Realty.com.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fbe9f50cfd2d921d",
+      "title": "5900 Costanero Rd, St Augustine, FL 32080 | MLS #262210 | Berkshire ...",
+      "url": "https://www.teamtownsendflorida.com/realestate/details/25132302/5900-costanero-road-st-augustine-fl-32080",
+      "summary": "For Sale: 3 beds, 4 baths, 2833 SqFt, 5900 Costanero Rd, St Augustine, FL 32080 is a Single Family Residence home listed at $925,000, MLS #262210",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a400cd92a19d7f14",
+      "title": "5900 Costanero Road",
+      "url": "https://yourkeytostaugustine.com/5900-costanero-road/",
+      "summary": "Discover 5900 Costanero: A custom 3BR/3.5BA St. Augustine coastal home with 2,833 sq ft, impact glass, & preserve views. Walking distance to the beach!",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a037e7abd83fcf96",
+      "title": "5900 Costanero Road, St. Augustine, FL 32080 (MLS #2076441) :: Engel ...",
+      "url": "https://www.evfirstcoast.com/homes/5900-Costanero-Road/St-Augustine/FL/32080/161577033/",
+      "summary": "Residential property for sale in St. Augustine,FL (MLS #2076441). Learn more from Engel & Volkers First Coast. SELLER IS HIGHLY MOTIVATED! ALL REASONABLE OFFERS CONSIDERED! Most Furnishings Included! Welcome to 5900 Costanero Road, your private beachside sanctuary in the sought-after Treasure Beach community of St.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "41f819f652c5c029",
+      "title": "8 No Outlier Effects | Regression Diagnostics with R",
+      "url": "https://sscc.wisc.edu/sscc/pubs/RegDiag-R/no-outlier-effects.html",
+      "summary": "8.1 Example Model If you have not already done so, download the example dataset, read about its variables, and import the dataset into R. Then, use the code below to fit this page’s example model.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d75419a593b5529",
+      "title": "BTS' V - YouTube",
+      "url": "https://www.youtube.com/channel/UCCgwtp8MIE4qaotCu_nH9kQ",
+      "summary": "Kim Tae-hyung (Korean: 김태형; born December 30, 1995),[1] also known professionally as V (Korean: 뷔), is a South Korean singer and a member of the boy band BTS.[2] Since his debut with the ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e413108d2f1323f",
+      "title": "Change your purchase verification settings for purchases on YouTube",
+      "url": "https://support.google.com/youtube/answer/7577041?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "When purchase verification is on, that means certain info, like your Google Account password, is required to make a purchase on YouTube. Having purchase verification turned on can help prevent accidental or unauthorized charges. If you don’t want to require verification, see below for how to turn on quick purchases instead.",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1655,9 +1082,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video",
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1667,12 +1095,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "84b8eb770ba3adca",
-      "title": "Vindicate - Definition, Meaning & Synonyms | Vocabulary.com",
-      "url": "https://www.vocabulary.com/dictionary/Vindicate%20",
-      "summary": "Vindicate means to justify, prove, or reinforce an idea — or to absolve from guilt. If your family thinks you hogged the last piece of pie on Thanksgiving, you'll be vindicated when your younger brother fesses up.",
+      "id": "2a2d9da9b6f45f66",
+      "title": "City Volkswagen of Chicago | Volkswagen dealership in Chicago, IL",
+      "url": "https://www.cityvwofchicago.com/",
+      "summary": "New Volkswagen and used cars, trucks, SUVs at City Volkswagen of Chicago in Chicago, IL. VW dealership near Elmwood Park, Oak Park, and Niles, IL. Auto repair, parts, finance, deals.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36150680e8bf7df5",
+      "title": "davies.test - R Package Documentation",
+      "url": "https://rdrr.io/cran/segmented/man/davies.test.html",
+      "summary": "Warning The Davies test is not aimed at obtaining the estimate of the breakpoint. The Davies test is based on k evaluation points, thus the value returned in the statistic component (and printed as \"'best' at\") is the best among the k points, and typically it will differ from the maximum likelihood estimate returned by segmented. Use segmented if you are interested in the point estimate. To ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1697,12 +1155,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aa399819f602030b",
-      "title": "VINDICATE definition in American English | Collins English Dictionary",
-      "url": "https://www.collinsdictionary.com/us/dictionary/english/vindicate",
-      "summary": "vindicate in American English (ˈvɪndəˌkeɪt ) verb transitive Word forms: vindicated, vindicating Origin: < L vindicatus, pp. of vindicare, to claim, avenge < ? vim, force (see vim) + dicere, to say: see diction",
+      "id": "4f72f74eaec21b4a",
+      "title": "davies.test function - RDocumentation",
+      "url": "https://www.rdocumentation.org/packages/segmented/versions/2.2-2/topics/davies.test",
+      "summary": "Warning The Davies test is not aimed at obtaining the estimate of the breakpoint. The Davies test is based on k evaluation points, thus the value returned in the statistic component (and printed as \"'best' at\") is the best among the k points, and typically it will differ from the maximum likelihood estimate returned by segmented. Use segmented if you are interested in the point estimate. To ...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1727,12 +1185,43 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f0097b36d219bb5f",
-      "title": "vindicate verb - Definition, pictures, pronunciation and usage notes ...",
-      "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/vindicate",
-      "summary": "Definition of vindicate verb in Oxford Advanced American Dictionary. Meaning, pronunciation, picture, example sentences, grammar, usage notes, synonyms and more.",
+      "id": "54f967d5eea091d3",
+      "title": "Displaying YouTube LiveChat Comments on Stream - OBS",
+      "url": "https://obsproject.com/forum/threads/displaying-youtube-livechat-comments-on-stream-without-streamyard-free.144897/",
+      "summary": "Displaying and selecting youtube stream comments in your stream is a pretty simple task. Although, this feature has been completely blown out. In the market right now, there are very few software that can help you do this and none of them are natively integrated into OBS. Software like...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53e412aff4240268",
+      "title": "How to Run Piecewise Regression in R | MetricGate",
+      "url": "https://metricgate.com/blogs/how-to-run-piecewise-regression-in-r/",
+      "summary": "Piecewise regression tutorial in R with segmented package. Learn breakpoint estimation, Davies test, and slope change detection.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1757,12 +1246,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "20eca3eec5111773",
-      "title": "VINDICATED | English meaning - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/dictionary/english/vindicated",
-      "summary": "VINDICATED definition: 1. past simple and past participle of vindicate 2. to prove that what someone said or did was right…. Learn more.",
+      "id": "ff886f154ec118e5",
+      "title": "Inside this update | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/inside-this-update",
+      "summary": "New integrations allow sending content to Copilot or Microsoft Copilot, launching Reading Coach for fluency practice, or opening Immersive Reader for distraction-free reading. The experience includes a tutorial, supports multiple languages, and works across apps like Teams and Word.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8458775e55c9dbbb",
+      "title": "KB5121794: Feature update to Windows 11, version 26H2 by using an ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/09/kb5121794-feature-update-to-windows-11-version-26h2",
+      "summary": "This enables devices to take advantage of new features now. For versions 24H2 or 25H2 devices that receive updates directly from Windows Update or Windows Server Updates Services (WSUS), devices automatically get the enablement package by installing the feature update to Windows 11, version 26H2.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1787,10 +1306,550 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5b21f13e49df5835",
-      "title": "Volkswagen Offers in Montebello, California - VW Puente Hills",
-      "url": "https://www.vwpuentehills.com/vw-offers-in-montebello-ca/",
-      "summary": "Volkswagen offers in Montebello, CA at VW Puente Hills. Explore unbeatable VW lease deals, financing and specials on Jetta, Tiguan, Atlas, and more.",
+      "id": "b871ddbba75e94c0",
+      "title": "Need help for using davies.test in segmented package",
+      "url": "https://stackoverflow.com/questions/33162957/need-help-for-using-davies-test-in-segmented-package",
+      "summary": "Although the answer is correct for the specific problem at hand, davies.test does accept a segmented object. From the help: obj: a fitted model typically returned by glm or lm. Even an object returned by segmented can be set (e.g. if interest lies in testing for an additional breakpoint).",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "75f3120026380e09",
+      "title": "New SharePoint experience - SharePoint in Microsoft 365",
+      "url": "https://learn.microsoft.com/en-us/sharepoint/enable-new-sharepoint-experience",
+      "summary": "The new SharePoint experience consists of the following changes: The SharePoint home page is replaced with a Discover experience. The SharePoint app bar is refreshed with a newer experience. The new app bar has two new destinations, Publish and Build destinations. The new app bar will show global navigation at the top with the logo and name, if it is enabled and configured in your Home site ...",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e4ecfb762a7ba15e",
+      "title": "r - Function accessing data from enclosing environment - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/34591647/function-accessing-data-from-enclosing-environment",
+      "summary": "The problem seems to be with the way that davies.test is trying to access the data encapsulated in fit: it doesn't seem to look for fit in the enclosing scope (which in this case is the testit function), but skips directly to the global scope. I'm sure that the problem relates to some subtlety with R's scoping rules.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a714d9e5196d6b0a",
+      "title": "R: Testing for a change in the slope",
+      "url": "https://search.r-project.org/CRAN/refmans/segmented/html/davies.test.html",
+      "summary": "Warning The Davies test is not aimed at obtaining the estimate of the breakpoint. The Davies test is based on k evaluation points, thus the value returned in the statistic component (and printed as \"'best' at\") is the best among the k points, and typically it will differ from the maximum likelihood estimate returned by segmented. Use segmented if you are interested in the point estimate. To ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c7a8f17aa9192f9",
+      "title": "Retract a copyright removal request - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2807691?hl=en",
+      "summary": "Note:YouTube channel profile pictures are hosted by Google. To retract a copyright removal request for a profile picture, reply to the confirmation email you got from Google about your original removal request.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2781ebf86e1beda4",
+      "title": "See What's New in the August 2026 Power BI Update - Power BI",
+      "url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new",
+      "summary": "Discover the August 2026 Power BI update. See the latest feature highlights across Power BI and links to detailed documentation.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0c77121e1953e808",
+      "title": "Segmented Regression in R: Find the Breakpoints",
+      "url": "https://r-statistics.co/Segmented-Regression-in-R.html",
+      "summary": "Fit segmented regression in R with the segmented package. Estimate breakpoints, piecewise linear slopes, test threshold effects with davies.test and selgmented.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0e08a48aea860445",
+      "title": "segmented/man/davies.test.Rd at master · cran/segmented",
+      "url": "https://github.com/cran/segmented/blob/master/man/davies.test.Rd",
+      "summary": "Given a generalized linear model, the Davies' test can be employed to test for a non-constant regression parameter",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "78a5f00df2eb4afe",
+      "title": "segmented: davies.test – R documentation – Quantargo",
+      "url": "https://www.quantargo.com/help/r/latest/packages/segmented/1.3-4/davies.test",
+      "summary": "The Davies test is not aimed at obtaining the estimate of the breakpoint. The Davies test is based on k evaluation points, thus the value returned in the statistic component (and printed as \"'best' at\") is the best among the k points, and typically it will differ from the maximum likelihood estimate returned by segmented. Use segmented if you are interested in the point estimate.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0eaad06390af39a8",
+      "title": "Taehyung (BTS) Profile and Facts (Updated!) - Kpop Profiles",
+      "url": "https://kprofiles.com/v-taehyung-bts-profile/",
+      "summary": "V / Taehyung (BTS) Profile and Facts: V (뷔) / Taehyung (태형) is a soloist & member of the South Korean boy group BTS under Big Hit Music. He made his solo debut on September 8, 2023 with the mini album “ Layover “.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1335ede86bd28cb2",
+      "title": "Update to the new Microsoft Edge",
+      "url": "https://support.microsoft.com/en-us/edge/update-to-the-new-microsoft-edge",
+      "summary": "Update to the new Microsoft Edge Why move to Microsoft Edge? Microsoft Edge provides a fast, secure, and modern browsing experience built on Chromium. Support for legacy browsers such as Internet Explorer and Microsoft Edge Legacy has ended. Some Microsoft services, including Microsoft 365 web apps, may not work as expected in older browsers. Faster performance Microsoft Edge is designed for ...",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6ea4ae37275fa285",
+      "title": "V (@thv) • Instagram photos and videos",
+      "url": "https://www.instagram.com/thv/",
+      "summary": "77M Followers, 8 Following, 185 Posts - See Instagram photos and videos from V (@thv)",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f47d1a9dd4906044",
+      "title": "V (BTS) — Kpop Idol Profile | kpopping",
+      "url": "https://kpopping.com/profiles/idol/V",
+      "summary": "V (BTS) is a Kpop idol from KR, debuted 2013. View full profile, biography, discography, music show wins, and photos.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e1a98615e93dfbd",
+      "title": "V (Kim Taehyung) BTS Member Profile 2026: Age, Songs & Facts",
+      "url": "https://kpopbio.com/v-kim-taehyung-bts-member-profile-age-songs/",
+      "summary": "V, also known as Kim Taehyung, is a BTS vocalist and soloist known for Layover, Hwarang, Christmas Tree, and major global music achievements.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1afb39570b6b471f",
+      "title": "V (singer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/V_(singer)",
+      "summary": "V was born Kim Tae-hyung on December 30, 1995, in the Seo District of Daegu, [4][5] and grew up in Geochang County. [6] He is the eldest of three children, with a younger brother and sister. [1] He is of the Gwangsan Kim clan. [7] V first aspired to be a professional singer in elementary school. [8] With his father's support, [9] he began taking saxophone lessons in early middle school as a ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40ef06b8ae64ba68",
+      "title": "V (뷔) - MyDramaList",
+      "url": "https://mydramalist.com/people/11489-v",
+      "summary": "V (뷔); South Korean; Kim Tae Hyung, known professionally as V, is a South Korean singer-songwriter, dancer, lyricist, actor, and member of BTS (방탄소년단).",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e1ae3ef338225e42",
+      "title": "V - IMDb",
+      "url": "https://www.imdb.com/name/nm6229009/",
+      "summary": "V. Actor: Hwarang: The Poet Warrior Youth. Kim Tae-Hyung known professionally as V is a South Korean singer, song-writer, dancer, actor and a member of the boy band BTS. After graduating from Korean Arts High School in 2014, V enrolled in Global Cyber University, graduating in August 2020 with a major in Broadcasting and Entertainment.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4ba2ea4ba1b85539",
+      "title": "V - Topic - YouTube",
+      "url": "https://www.youtube.com/channel/UCFqldK305KOVQXbAIGi-flg",
+      "summary": "Kim Tae-hyung, known professionally as V, is a South Korean singer, songwriter, and dancer and a member of the boy band BTS. Since his debut with the band in 2013, V has performed three solo songs ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "272291cbe6a43bf8",
+      "title": "Volkswagen of Palatine | Arlington Heights, IL & Palatine, IL",
+      "url": "https://www.vwofpalatine.com/",
+      "summary": "Welcome to Volkswagen of Palatine! From new and used cars to auto service, our experts in Palatine, IL, are here to help. Visit us near Arlington Heights, IL!",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1808,6 +1867,218 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "117c7e4fb3b9d48c",
+      "title": "What is an Art Track? - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6007071?hl=en",
+      "summary": "YouTube creates one Art Track for each track that you upload using the YouTube Music DDEX feed or the \"Audio - Art Tracks\" bulk upload spreadsheet. It identifies tracks based on their ISRC, release identifier (UPC, EAN, GRid), and partner. YouTube will create Art Tracks for each unique combination of these fields.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4098f624f2fd235",
+      "title": "What's new in Windows 11, version 24H2 for IT pros",
+      "url": "https://learn.microsoft.com/en-us/windows/whats-new/whats-new-windows-11-version-24h2",
+      "summary": "Learn more about what's new in Windows 11 version 24H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b882d32468984a64",
+      "title": "What's new in Windows 11, version 26H2 for IT pros",
+      "url": "https://learn.microsoft.com/en-us/windows/whats-new/whats-new-windows-11-version-26h2",
+      "summary": "Learn more about what's new in Windows 11, version 26H2, including servicing updates.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5df93d9ccab9a740",
+      "title": "Windows 11, version 26H2 update history | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/09/windows-11-version-26h2-update-history",
+      "summary": "Windows 11, version 26H2 — also known as the Windows 11 2026 Update — is built on the same servicing foundation as recent Windows 11 releases. It delivers the latest Windows innovations with a streamlined update experience designed to minimize disruption and help you stay secure, productive, and up to date. For many eligible devices, moving to version 26H2 is as simple as installing a ...",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "976b030d1db0abfb",
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/channel/UCFqldK305KOVQXbAIGi-flg",
+      "summary": "Kim Tae-hyung, known professionally as V, is a South Korean singer, songwriter, and dancer and a member of the boy band BTS. Since his debut with the band in 2013, V has performed three solo songs under their name—\"Stigma\" in 2016, \"Singularity\" in 2018, and \"Inner Child\" in 2020—all of which charted on South Korea's Gaon Digital Chart. Outside of his projects with BTS, V appeared in the ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "63804b4b49d56e2b",
+      "title": "YouTube Nonprofit Program overview",
+      "url": "https://support.google.com/youtube/answer/3545195?hl=en",
+      "summary": "YouTube Nonprofit Program overview The YouTube Nonprofit Program helps nonprofits connect with supporters, volunteers, and donors. For many causes, video is a new but essential format for storytelling. With one billion viewers on YouTube every month, nonprofits of all sizes can use YouTube videos to share their stories with a global audience.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aa7a226149346efc",
+      "title": "YouTube Premium & YouTube Music Premium supported devices",
+      "url": "https://support.google.com/youtube/answer/6308244?hl=en",
+      "summary": "YouTube Premium & YouTube Music Premium supported devices If you have YouTube Premium or YouTube Music Premium, your membership benefits are available across all devices with access to YouTube. Learn more about our paid YouTube memberships. Note: YouTube Music Premium members may still experience ads on podcasts.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video"
+      ],
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
