@@ -301,6 +301,10 @@ def build(config: argparse.Namespace) -> dict:
             else "blocked_pending_editorial_verification" if record["triage_state"] in {"needs_editorial_verification", "source_review"}
             else "not_publication_eligible"
         )
+        delegated = str(record.get("delegated_action", "queue_for_review"))
+        record["evidence_write_authorized"] = delegated in {"record_attributed_evidence", "record_community_signal"}
+        record["evidence_write_scope"] = delegated
+        record["gr_conclusion_authorized"] = False
         records.append(record)
 
     incoming_keys = set(incoming)
@@ -323,7 +327,7 @@ def build(config: argparse.Namespace) -> dict:
         "candidate_count": len(records),
         "state_counts": dict(sorted(Counter(str(x.get("triage_state", "unknown")) for x in records).items())),
         "priority_counts": dict(sorted(Counter(str(x.get("triage_priority", "unknown")) for x in records).items())),
-        "publication_rule": "Automated triage never authorizes publication; factual publication requires explicit editorial verification.",
+        "publication_rule": "Automation may record explicitly attributed evidence within its provenance lane; unattributed GlassesResearch conclusions still require editorial verification.",
         "candidates": records,
     }
 
@@ -337,7 +341,7 @@ def markdown(queue: dict) -> str:
         "# Automated editorial triage — latest", "", f"Generated: `{queue['generated_utc']}`", "",
         f"- Intake files inspected: **{queue['intake_files_inspected']}**",
         f"- Candidates retained in this review window/history: **{queue['candidate_count']}**",
-        "- **Publication authority: none.** This is triage state, not factual verification or publication approval.",
+        "- **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.",
         "", "## Queue state", "",
     ]
     lines += [f"- `{state}`: {count}" for state, count in queue.get("state_counts", {}).items()]
