@@ -1,8 +1,7 @@
 """Shared GlassesResearch knowledge-flow classification and routing.
 
 Discovery stays deliberately broad. This module decides what a candidate is,
-how it relates to smart glasses, and where it should go next. Classification is
-descriptive; it never authorizes publication.
+how it relates to smart glasses, and where it should go next. Classification is descriptive. It may authorize bounded evidence recording when provenance is explicit; it never authorizes an unattributed GlassesResearch conclusion.
 """
 from __future__ import annotations
 
@@ -194,6 +193,32 @@ def triage_priority(materiality_score: int, relationship: str, content_types: li
     return "low"
 
 
+
+
+EVIDENCE_CLASSES = ("regulatory", "manufacturer_primary", "primary_artifact", "community", "secondary", "unknown")
+
+def classify_evidence_authority(candidate: dict) -> dict:
+    """Return the maximum automated action permitted by explicit provenance."""
+    source = str(candidate.get("source", "")).lower()
+    url = str(candidate.get("url", "")).lower()
+    text = " ".join(str(candidate.get(k, "")) for k in ("title","summary","url","source")).lower()
+    if any(x in url for x in ("cpsc.gov","fcc.gov","ecfr.gov","gov.uk","europa.eu")) or "regulatory" in source:
+        evidence_class, action = "regulatory", "record_attributed_evidence"
+    elif "github.com/" in url:
+        evidence_class, action = "primary_artifact", "record_attributed_evidence"
+    elif any(x in source for x in ("manufacturer","official")):
+        evidence_class, action = "manufacturer_primary", "record_attributed_evidence"
+    elif any(x in url for x in ("reddit.com/","discord.com/","facebook.com/")) or "community" in source:
+        evidence_class, action = "community", "record_community_signal"
+    else:
+        evidence_class, action = "secondary", "queue_for_review"
+    return {
+        "evidence_class": evidence_class,
+        "delegated_action": action,
+        "gr_conclusion_authorized": False,
+        "attribution_required": action.startswith("record_"),
+    }
+
 def enrich_candidate(
     candidate: dict,
     *,
@@ -217,6 +242,7 @@ def enrich_candidate(
         relationship=relationship,
         channel_hint=channel_hint,
     )
+    candidate.update(classify_evidence_authority(candidate))
     candidate.update(
         {
             "relationship": relationship,
