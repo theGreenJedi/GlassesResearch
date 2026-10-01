@@ -44,6 +44,18 @@ Approval belongs primarily at the rule/pipeline level, not as a repetitive check
 
 Escalate only when a case falls outside established policy or cannot be resolved by existing deterministic rules—for example unresolved ambiguity or conflicting evidence, disputed identity/lineage, a proposed canon or publication-policy change, credentials/spending, irreversible external actions, or another explicitly documented delegated-authority boundary.
 
+## Evidence-class write authority
+
+Routine intake does not need a human checkpoint merely to preserve evidence that already carries explicit provenance.
+
+- **Regulatory/documentary evidence** may be written automatically to the relevant evidence/research record, attributed to the issuing authority. Unresolved identity or lineage remains unresolved.
+- **Manufacturer-primary evidence** may be written automatically as an attributed manufacturer claim. It must not be relabeled independently verified.
+- **Primary technical artifacts** such as public source repositories, SDK releases, firmware artifacts, and developer documentation may be recorded automatically with their provenance and verification boundary intact.
+- **Community reports** may be preserved automatically in the community-evidence lane, explicitly labeled community-reported. They do not become GlassesResearch conclusions or Verified Working procedures.
+- **Secondary reporting, rumors, conflicting evidence, ambiguous lineage, or claims requiring interpretation** remain review-gated.
+
+This delegated authority permits evidence preservation and deterministic metadata updates. It does **not** authorize automation to invent a GlassesResearch conclusion, change evidence standards, resolve disputed lineage, assign a Report Card judgment from unverified evidence, or erase contradictory evidence.
+
 ## Durable monitoring
 
 Every meaningful retained finding belongs in the ledger even when it does not deserve a GitHub issue. GitHub issues are execution objects for promoted actionable work, not the monitoring database.
