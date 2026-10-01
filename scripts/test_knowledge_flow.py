@@ -32,6 +32,36 @@ def main() -> int:
     )
     assert direct["relationship"] == "direct"
     assert "development_hacking" in direct["routing_targets"]
+    assert direct["evidence_class"] == "primary_artifact"
+    assert direct["delegated_action"] == "record_attributed_evidence"
+    assert direct["gr_conclusion_authorized"] is False
+
+    regulatory = enrich_candidate(
+        {
+            "title": "Smart Glasses FCC filing",
+            "summary": "Regulatory filing for smart glasses",
+            "url": "https://www.fcc.gov/example",
+            "materiality_score": 7,
+        },
+        trusted_direct_source=True,
+    )
+    assert regulatory["evidence_class"] == "regulatory"
+    assert regulatory["delegated_action"] == "record_attributed_evidence"
+    assert regulatory["gr_conclusion_authorized"] is False
+
+    community = enrich_candidate(
+        {
+            "title": "Owner reports smart glasses call bug",
+            "summary": "Community report",
+            "url": "https://www.reddit.com/r/SmartGlasses/example",
+            "materiality_score": 5,
+        },
+        trusted_direct_source=True,
+        channel_hint="community",
+    )
+    assert community["evidence_class"] == "community"
+    assert community["delegated_action"] == "record_community_signal"
+    assert community["gr_conclusion_authorized"] is False
 
     rumor = enrich_candidate(
         {
