@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-01T10:30:22.214967+00:00`
+Generated: `2026-10-01T10:31:17.230520+00:00`
 
 - Intake files inspected: **298**
 - Candidates retained in this review window/history: **12528**
@@ -12,10 +12,10 @@ Generated: `2026-10-01T10:30:22.214967+00:00`
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 733
+- `needs_editorial_verification`: 728
 - `rejected_noise`: 8872
 - `source_monitor`: 1
-- `source_review`: 33
+- `source_review`: 38
 - `watching`: 82
 
 ## Action queue
@@ -233,7 +233,6 @@ Generated: `2026-10-01T10:30:22.214967+00:00`
 | normal | needs_editorial_verification | direct | [Amazon Plans 20,000+ Smart Glasses for Delivery Drivers in 2027 - TechRepublic](https://news.google.com/rss/articles/CBMigwFBVV95cUxQN0Z0a1ZIU05pTVRldTRrbEI1VndsWDB6OXU5cHR5SXFNdGY3eENTTmJCZFAzcHhlSHM5TUc4OVNqT3JyTENEd05wRlpnRW9QRmlfYktrTG5NN295X1hGclZfMTBHaE5BT0NJX3p3dmtlZ0oxcUhRUkd0bmRSM085a3VwWQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon smart glasses will photograph homes, with no opt-out - The Next Web](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdVE2WTAtUkVZRzBTb0N1UFJNYzBabC0zMDcycEx5YUtDOVgwQXhMbHRRbkd0aEx1Yl9leGlMbVVEeDc5S3RnQ0RMLVJkYlhaV0k0MGEyQnAycnZNVElpZi11MVBScUd2b2lrcXdnYVRoUzgxRzc3bFBGNHZfR1Uyenp1TG9mNzMwUkhN?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon’s delivery driver smart glasses will reportedly take photos ‘almost constantly’ - The Verge](https://news.google.com/rss/articles/CBMiigFBVV95cUxNS0p4UXRqSmJUeTU0UHNZUWxqRmd1RVVkT0VhVEhpd0p0S2pNMGxwLXhpR2x3TDRtaW5tWDRoT3VSV085YzVoNFAySkpBR1cxeDNFY1RtanV3MlhlT0JXRWxnb1NCQmlNc1pQUUVDTnJBbDFSZVJfLVA5RkN3Q09vbDdCMlJsVS1adkE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon、配送員向けスマートグラス活用拡大 プライバシー懸念も - 디지털투데이](https://news.google.com/rss/articles/CBMingFBVV95cUxNWGVPTlEycVVqUGtwQVUtelpqb3RfYzRiTU9pZjNXNG5MTGppV3RYOC1jNEthU0lZcmd1N1kzMmRRdHdhelVCNU5TTnQ1VmNFM0JGUkozRHoxZzdmTGZCdUkyQ2twaGFjaVJLdlZxWW9MeTgyby1PVkZJNDZaUTMzSF9iT3RNY3lhYVd0TWRrNEgtemFhdVpOLU85SE4wZw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -272,6 +271,7 @@ Generated: `2026-10-01T10:30:22.214967+00:00`
 | normal | needs_editorial_verification | direct | [I found smart glasses that actually look normal](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6abde67a0b96430d914f9abbbc1d98e0&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fi-found-smart-glasses-that-actually-look-normal%2fvi-AA2diMzo&c=5139977652897782644&mkt=en-us) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [I tried the Oakley Meta Vanguard glasses for my Half-Marathon. Here’s what happened. - Women's Health Australia](https://news.google.com/rss/articles/CBMilAFBVV95cUxOSTk4QURHQ2RBNjV3VHNQSDR2UnVTSllCNEFOdlBmcHFoLXJWb191MDRCX2d4aHRnQk1FQW80UEVOdDg3QkRGZ1hsNVE5d0xxWlUxbXE3UTAwVkpKRjEtdmxlenI2WlR3MnprbWwxdjE5algtazRsZUpqenc1SWVqZ1hGY1djb1VwRFBaQXJkTHU1bG42?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Justiça Eleitoral vetará óculos inteligentes na urna após caso de gravação secreta de votos no Pará - Diário do Litoral](https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdllLX1BZWm90ak1BX2xyNERuWGRONFJqWVFlRE5KZldEdm1kdWVEdjhlX3EwRkpqb2hLNWRiSG1iWVNPTDRlay00elpWYVhVbmhGLTRrbHVCbjVBaHNtY1BndnJkM2kyaEx2V1doWndQYVJIYWN3cmRyU2VmcnVZaWNac3VlMG14Tmc3MVlKSHp2SEk0RzlyTndONHZ4SkF6eTFwcHJuUGVGSjZsT2pybUhkTDNReEx0OVhPQTZoNGh3Y0REcHJyTnhWa2lyUkxKZVU0T0dpQmRkRDEz?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Las gafas inteligentes de Apple llegarían antes de 2027 con funciones de IA - Infobae](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWkc0UkdtbnQ3TVdYczhkNWNKNEQ2akdHdWoxbng0blVPYTQ3dkk0TWRsM2NoNTVWTDQ5cktKYXF5cW85U3M4WVE1enQ5d3hFZFFqMVozaEdWWDd2UnRla2c4SVVzWkxsSHh0ZE5lS0V6UXhYd040MHprWU45Y3JzQ0JjaTNJQTMzSmhOM3NLUmhwTVB2SWdDeGV0eUhOMy1NQlN5bEM0eHh2anFWZlBtRzg0NjNET2lz0gHTAUFVX3lxTE5LeVZYVDZfMjl4SjdzcWdtSjl5Ymx6MzRQbTA1TjNsUWxPSXRxbHZxcHJZeTR4cFFQZXRvZjFsVm83M05EMExubUxVSjBrMVg0YXJjekVaUWZnNTFocm5KTXpWcGtHcDIwaHpoMHRseGRuU18xUURYQ2tPTmxnY095dkF0QmV3dldKQWhNemdhazZxNWVReEVfNGM3Ti1lYXpxZnhRVUhXRUt5Uk4tckJHTmtGQTJlZlFOTi1IMDlpWFE5WXMyejVMRDJ0UkVNUDB5azQ?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
