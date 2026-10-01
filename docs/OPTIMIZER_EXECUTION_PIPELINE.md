@@ -44,6 +44,20 @@ Approval belongs primarily at the rule/pipeline level, not as a repetitive check
 
 Escalate only when a case falls outside established policy or cannot be resolved by existing deterministic rules—for example unresolved ambiguity or conflicting evidence, disputed identity/lineage, a proposed canon or publication-policy change, credentials/spending, irreversible external actions, or another explicitly documented delegated-authority boundary.
 
+## Closed-loop controller and recovery
+
+The optimizer owns the routine completion loop:
+
+`observe -> decide -> act -> verify -> recover -> escalate-if-needed -> record -> continue`
+
+**Pete is not the optimizer's routine error handler.** A normal in-policy failure must enter bounded recovery before human escalation. Recovery includes re-reading current state, retrying transient operations, refreshing stale refs/branches, rerunning eligible failed checks, testing the specific permission or dependency implicated by an error, and continuing automatically after recovery succeeds.
+
+A blocker may be reported only when there is evidence from an **actual attempted action**. `not_attempted` and `attempted_failed` are distinct states and must never be collapsed. "Could not complete" is not evidence that GitHub, CI, deployment, credentials, policy, or another dependency denied the action.
+
+After bounded recovery is exhausted, classify the blocker (for example: permissions, CI, deployment, credentials, external dependency, policy/authority, evidence ambiguity, or persistent tool failure), retain the failed action/error evidence, and escalate only when current policy requires human authority/judgment or the verified persistent failure cannot be repaired automatically.
+
+Routine reporting occurs **after** recovery and continuation, not at the first sign of friction. Healthy cycles should be exception-based and concise: what advanced, what completed, and whether Pete needs to act. Intermediate diagnostics belong in durable execution evidence, not in the morning report unless they remain material after recovery.
+
 ## Durable monitoring
 
 Every meaningful retained finding belongs in the ledger even when it does not deserve a GitHub issue. GitHub issues are execution objects for promoted actionable work, not the monitoring database.
