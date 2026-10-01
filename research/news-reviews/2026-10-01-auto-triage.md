@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-01T09:10:06.870379+00:00`
+Generated: `2026-10-01T09:11:04.097202+00:00`
 
 - Intake files inspected: **297**
 - Candidates retained in this review window/history: **12521**
@@ -12,10 +12,10 @@ Generated: `2026-10-01T09:10:06.870379+00:00`
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 721
+- `needs_editorial_verification`: 722
 - `rejected_noise`: 8872
 - `source_monitor`: 1
-- `source_review`: 38
+- `source_review`: 37
 - `watching`: 82
 
 ## Action queue
@@ -216,6 +216,7 @@ Generated: `2026-10-01T09:10:06.870379+00:00`
 | normal | needs_editorial_verification | direct | ['Meta launches camera-free AI glasses amid privacy pushback' - The Manila Times](https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWlFSeTBvb202eC1NS2tMeUJkc2o3Zm81NkY5c2ZJT2dHZmQ0aUZROU94TDNINy0xV2xMSlY5X0JFRHFWMER3ZmIzVk5wc0x0a29wSDYxUzA2R0VpV21MdXpBWERjVjJoTkhzbHJnQy1vUUJSWEJDTnQwUDRZdzQzcExuczVFNktFRTZOSWswSkhPU3VfNE01NE0tNTJhdFlSakE3SkZ5d2V4azJoSml1eFU0RUNNUU1jRGU1VmxrREprVktnaHpxczRYMDZGQnhfdDUw0gHTAUFVX3lxTE1aUVJ5MG9vbTZ4LU1La0x5QmRzajdmbzU2RjlzZklPZ0dmZDRpRlE5T3hMM0g3LTFXbExKVjlfQkVEcVYwRHdmYjNWTnBzTHRrb3BINjFTMDZHRWlXbUx1ekFYRGNWMmhOSHNscmdDLW9RQlJYQkNOdDBQNFl3NDNwTG5zNUU2S0VFNk5JazBKSE9TdV80TTU0TS01MmF0WVJqQTdKRnl3ZXhrMmhKaXV4VTRFQ01RTWNEZTVWbGtESmtWS2doenFzNFgwNkZCeF90NTA?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | ['Meta launches camera-free AI glasses amid privacy pushback' - The Manila Times](https://news.google.com/rss/articles/CBMizgFBVV95cUxQNlN6Nk96bUpyMnVHZFhPSEFtTjZPWnJTWHUxdUpyY3JHbHE1SEM5MVBTNTJUV3dLbmJrcHZxV3ZNZkRRYmJLV1BMbFdyZ0dwVlJNck9TS2p0VUNFWU5JaGQ3N2xLUzE2ODEzSFRUTHdfcG1GbG1BbmJvMVpEZEtTX1phMmxrekhZbTJRMXB1THVrZjF1N1pwc1JmZFlOLTdzM1lIQjM5N3g2RGE0QU1iUTJiLTZrbTEzWTdlLUpGbGEwR1Bnd3RBMHRpQjY0UdIB0wFBVV95cUxNWlFSeTBvb202eC1NS2tMeUJkc2o3Zm81NkY5c2ZJT2dHZmQ0aUZROU94TDNINy0xV2xMSlY5X0JFRHFWMER3ZmIzVk5wc0x0a29wSDYxUzA2R0VpV21MdXpBWERjVjJoTkhzbHJnQy1vUUJSWEJDTnQwUDRZdzQzcExuczVFNktFRTZOSWswSkhPU3VfNE01NE0tNTJhdFlSakE3SkZ5d2V4azJoSml1eFU0RUNNUU1jRGU1VmxrREprVktnaHpxczRYMDZGQnhfdDUw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [10 Best AR Glasses (September 2026) Models Buy for Gaming, Work, and Travel](https://www.ofzenandcomputing.com/best-ar-glasses/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [9to5Google 10d ago The camera is my favorite part of smart glasses, but it just feels wrong now](https://9to5google.com/2026/09/20/smart-glasses-camera-newsletter/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI glasses offset my hearing loss and help me interact with the arts - theglobeandmail.com](https://news.google.com/rss/articles/CBMiigFBVV95cUxNSFpENmdLcEVmclJoZG5RRnBscFdIcjVFQ3VuaHA5VFFWZlpGNm9wdE5RUllCQTl1XzR1cFNWVEFVdm96UEQ2SVlOcEQydTh1TlAyeDNyUjkyTWpfODI0Z1pmTnpGc1gwLVRERjdnUUZ4ZHhiZlRUYW4yR2NXbVlULWJxNG5SZDBZbmc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Prescription Glasses Guide: Smart Eyewear for Vision ...](https://www.evenrealities.com/blogs/buyers-guide/ai-prescription-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses with Prescription \| Smart Glasses with Rx ...](https://eydology.com/collections/ai-smart-glasses) | reachable (200) | research_news_review, research_optics |
@@ -228,7 +229,6 @@ Generated: `2026-10-01T09:10:06.870379+00:00`
 | normal | needs_editorial_verification | direct | [Amazon Delivery Drivers’ Smart Glasses Will Photograph Homes and Passersby - Northeast Times](https://news.google.com/rss/articles/CBMisgFBVV95cUxPM2NVMWZlUDgxXzhXTU1tdm9SaUtIVXhJRGMtYWp0ZnNvMnhUWmdvUWFGSTc3c0dSdXR4Z3dBd3NWR0dQb3FreEthTHJUY1M1d2ZuV1VIbmNwQUtlT3hWMTJhcmhMQ0o5VTV3RnZxbFBHRzRKSXl4TU0zNmVOU0Nzbzd2NHVmcXFQWHBpdGVfNTlEcFdvaF9yUTBoZk1mQVdnV25wUjVLQ0gzcFY3LWwzYVdB?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon Plans 20,000+ Smart Glasses for Delivery Drivers in 2027 - TechRepublic](https://news.google.com/rss/articles/CBMigwFBVV95cUxQN0Z0a1ZIU05pTVRldTRrbEI1VndsWDB6OXU5cHR5SXFNdGY3eENTTmJCZFAzcHhlSHM5TUc4OVNqT3JyTENEd05wRlpnRW9QRmlfYktrTG5NN295X1hGclZfMTBHaE5BT0NJX3p3dmtlZ0oxcUhRUkd0bmRSM085a3VwWQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon smart glasses will photograph homes, with no opt-out - The Next Web](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdVE2WTAtUkVZRzBTb0N1UFJNYzBabC0zMDcycEx5YUtDOVgwQXhMbHRRbkd0aEx1Yl9leGlMbVVEeDc5S3RnQ0RMLVJkYlhaV0k0MGEyQnAycnZNVElpZi11MVBScUd2b2lrcXdnYVRoUzgxRzc3bFBGNHZfR1Uyenp1TG9mNzMwUkhN?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon’s delivery driver smart glasses will reportedly take photos ‘almost constantly’ - The Verge](https://news.google.com/rss/articles/CBMiigFBVV95cUxNS0p4UXRqSmJUeTU0UHNZUWxqRmd1RVVkT0VhVEhpd0p0S2pNMGxwLXhpR2x3TDRtaW5tWDRoT3VSV085YzVoNFAySkpBR1cxeDNFY1RtanV3MlhlT0JXRWxnb1NCQmlNc1pQUUVDTnJBbDFSZVJfLVA5RkN3Q09vbDdCMlJsVS1adkE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon、配送員向けスマートグラス活用拡大 プライバシー懸念も - 디지털투데이](https://news.google.com/rss/articles/CBMingFBVV95cUxNWGVPTlEycVVqUGtwQVUtelpqb3RfYzRiTU9pZjNXNG5MTGppV3RYOC1jNEthU0lZcmd1N1kzMmRRdHdhelVCNU5TTnQ1VmNFM0JGUkozRHoxZzdmTGZCdUkyQ2twaGFjaVJLdlZxWW9MeTgyby1PVkZJNDZaUTMzSF9iT3RNY3lhYVd0TWRrNEgtemFhdVpOLU85SE4wZw?oc=5) | reachable (200) | research_news_review |
