@@ -61,6 +61,21 @@ Technical success cannot resolve every research or authority judgment. Escalate 
 
 This is an **exception path, not a category-level Pete approval requirement**. If an approved pipeline already deterministically covers the operation, the automation should proceed. If it does not, the unresolved judgment escalates. Do not infer a new approval requirement from historical issue/PR/comment wording when current policy delegates the operation.
 
+## Closed-loop automation contract
+
+The optimizer is responsible for finishing routine work, not merely detecting it. Every active run follows:
+
+`observe -> decide -> act -> verify -> recover -> escalate-if-needed -> record -> continue`
+
+Rules:
+
+1. Never report a blocker without evidence from an actual failed action.
+2. Preserve `not_attempted` separately from `attempted_failed`; absence of execution is not a denial by a dependency.
+3. Attempt bounded deterministic recovery for in-policy failures before escalation: refresh state, retry transient actions, repair stale refs/branches, rerun eligible checks, test implicated permissions/dependencies, then continue automatically if recovery succeeds.
+4. Escalate only after recovery is exhausted and the blocker is classified with retained failure evidence, or when the case already requires Pete's authority/judgment under the escalation boundary.
+5. Pete is not a routine retry button or error handler.
+6. Produce the routine human report after the execution/recovery loop completes. Report exceptions and required decisions, not transient diagnostics that were successfully repaired.
+
 ## Optimizer run behavior
 
 Each optimizer run should:
@@ -75,6 +90,8 @@ Each optimizer run should:
 8. Advance green, outcome-verified work through merge when the promotion gate is satisfied and no unresolved out-of-policy judgment remains.
 9. Re-check the live/resulting site after merge when the change affects public or operational behavior.
 10. Preserve blocked, deferred, disproven, retired, and monitored findings with concise dispositions.
+11. Recover from routine in-policy failures before reporting them as blockers; continue the run after successful recovery.
+12. Emit a concise post-cycle status. If no human action is required, say so plainly.
 
 ## Governance provenance
 
