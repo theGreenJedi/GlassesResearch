@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-02T23:12:30.839207+00:00`
+Generated: `2026-10-02T23:52:27.394418+00:00`
 
-- Intake files inspected: **288**
-- Candidates retained in this review window/history: **11983**
+- Intake files inspected: **290**
+- Candidates retained in this review window/history: **12072**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2650
+- `adjacent_radar`: 2667
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 718
-- `rejected_noise`: 8469
+- `needs_editorial_verification`: 723
+- `rejected_noise`: 8540
 - `source_monitor`: 1
-- `source_review`: 43
+- `source_review`: 39
 - `watching`: 84
 
 ## Action queue
@@ -221,7 +221,7 @@ Generated: `2026-10-02T23:12:30.839207+00:00`
 | high | needs_editorial_verification | direct | [SamMobile 1d ago Samsung’s smart glasses are now ready for launch Coverage Samsung](https://www.sammobile.com/news/samsungs-smart-glasses-are-now-ready-for-launch/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Samsung official confirms first smart glasses launch in November - Phandroid](https://news.google.com/rss/articles/CBMipAFBVV95cUxPenAweEEzODJkS2FKZm5XZElPbTM4Yjd1d2J2c3o4UjdmVUtYVFljODRJVVNoTWE4YkhWSDIxNE80bWNCQ1NTakhFWUhxY210WHlqZzY0Y2lDUEIwTFdNbWRrcVBCbUdOZkxLbmVmdzlQWm4yWHlrRkFRYjNid2F1YzR6MGJoT1JVNHY5U3d0X2hyRG0tNzRjMEdsTklvMy0zOHBhR9IBpAFBVV95cUxPenAweEEzODJkS2FKZm5XZElPbTM4Yjd1d2J2c3o4UjdmVUtYVFljODRJVVNoTWE4YkhWSDIxNE80bWNCQ1NTakhFWUhxY210WHlqZzY0Y2lDUEIwTFdNbWRrcVBCbUdOZkxLbmVmdzlQWm4yWHlrRkFRYjNid2F1YzR6MGJoT1JVNHY5U3d0X2hyRG0tNzRjMEdsTklvMy0zOHBhRw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung official confirms first smart glasses launch in November - phandroid.com](https://news.google.com/rss/articles/CBMinwFBVV95cUxPcFk3NVYtVTJJMldzN2paUHhIdTZjX2VIN2JVaE1mMExtbmxCU0pRZXZaZ3ZKSGh6WFg1OVlTVmx1aWJrSFJ4bVdTTTNOdHpvcktMYl96Y1hTRUlZd2VLRDZkV0JFdnBiTHRQZE05a1d5ODJtcHZKREJ5MTVybUF0TjNRU0JUNE9QY2xRX0FyTDdQLXc4STBKN0FCZ1NaSlnSAaQBQVVfeXFMT3pwMHhBMzgyZEthSmZuV2RJT20zOGI3dXdidnN6OFI3ZlVLWFRZYzg0SVVTaE1hOGJIVkgyMTRPNG1jQkNTU2pIRVlIcWNtdFh5amc2NGNpQ1BCMExXTW1ka3FQQm1HTmZMS25lZnc5UFpuMlh5a0ZBUWIzYndhdWM0ejBiaE9SVTR2OVN3dF9ockRtLTc0YzBHbE5JbzMtMzhwYUc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung's smart glasses are now ready for launch - SamMobile](https://news.google.com/rss/articles/CBMihgFBVV95cUxQejloQmVzQzVJSWx6d0prdVB0OHdYdVV3NTRrMnlqdXZGSjA3ZG1PN0JCbGgwWG51LXg4cDdyNTQzY0N2c0VSUVVwX3FwWlhJZHhPeThtRXZadnVGTVEtU0FsYWticmhKaldFMVc2V29JRVRZSThMYkNZTEk0TDNqOGI5ajZXUQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung's smart glasses are now ready for launch - sammobile.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQejloQmVzQzVJSWx6d0prdVB0OHdYdVV3NTRrMnlqdXZGSjA3ZG1PN0JCbGgwWG51LXg4cDdyNTQzY0N2c0VSUVVwX3FwWlhJZHhPeThtRXZadnVGTVEtU0FsYWticmhKaldFMVc2V29JRVRZSThMYkNZTEk0TDNqOGI5ajZXUQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's smart glasses featuring Gemini are due to be released in November - Mezha](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbi0wdXRLWG56c0tEeHozbG5rOEQtV0VoR3Nhc0d0bXRPSTNyZDB4SGNNMDNRQkFRbXlld1c3VHFzYkR1MkpHVmVadXNIZ1FlUDgwblVMZzFGcDVTb1FJSXQzWDFrb0NMZGtEUVk1cUZuUGpQdERGMVpsMlBoYWNLQUJ2RHpwT1N60gGOAUFVX3lxTE1nbTZIWHVBMjVJOERmZVRzNWs2eGgtckwzR1ZyV2VkYXc0WmRmVUlLa01HQ0xKTjZ1WnN2NkRob3kwRkhoWUIzdFlXWjB3WmlQU21tdTJpR2hSd3JMLXJqazl0WF9zb08xQ3paR2FCZG1MSklOdlU2Q3hBTm9aVWoyMU5qNHVIeFJkTThObHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's smart glasses featuring Gemini are due to be released in November - Mezha](https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ202SFh1QTI1SThEZmVUczVrNnhoLXJMM0dWcldlZGF3NFpkZlVJS2tNR0NMSk42dVpzdjZEaG95MEZIaFlCM3RZV1owd1ppUFNtbXUyaUdoUndyTC1yams5dFhfc29PMUN6WkdhQmRtTEpJTnZVNkN4QU5vWlVqMjFOajR1SHhSZE04Tmx30gGOAUFVX3lxTE1nbTZIWHVBMjVJOERmZVRzNWs2eGgtckwzR1ZyV2VkYXc0WmRmVUlLa01HQ0xKTjZ1WnN2NkRob3kwRkhoWUIzdFlXWjB3WmlQU21tdTJpR2hSd3JMLXJqazl0WF9zb08xQ3paR2FCZG1MSklOdlU2Q3hBTm9aVWoyMU5qNHVIeFJkTThObHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's smart glasses just took their next step toward launch - androidauthority.com](https://news.google.com/rss/articles/CBMiggFBVV95cUxNcVlxQmJ1djJ3X3ZQQTN1WXZmajZISXJVOGNRbGJWbmhkb1YwUnQwMGNkUG1zSUNOWEt1YmV6TzdETUlFMDlUQmw3d3VqWUJWMmU4UUJlYVFrcjY2NWdUOVNsaW0wVHk1c3UxLXFLb2dkZndhRHA2VzVMUzBxTUc5alZ3?oc=5) | reachable (200) | research_news_review, model_catalog_review |
