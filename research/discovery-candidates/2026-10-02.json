@@ -1,41 +1,43 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-02T14:11:12.887548+00:00",
-  "candidate_count": 103,
-  "classifier_irrelevant_count": 79,
+  "discovered_utc": "2026-10-02T19:22:15.077937+00:00",
+  "candidate_count": 57,
+  "classifier_irrelevant_count": 40,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 34,
-    "broad_web": 29,
-    "community": 10,
-    "developer": 30,
-    "research": 10,
-    "retail": 10
+    "adjacent": 17,
+    "broad_web": 36,
+    "developer": 6
   },
   "relationship_counts": {
     "direct": 0,
-    "enabling": 0,
-    "adjacent": 24,
+    "enabling": 2,
+    "adjacent": 15,
     "speculative": 0,
-    "irrelevant": 79
+    "irrelevant": 40
   },
   "type_counts": {
-    "model": 2,
-    "video": 4,
-    "news": 44,
-    "research": 6,
-    "tool": 34,
-    "sdk": 32,
-    "retail": 14,
-    "community": 22,
-    "rumor": 2
+    "model": 4,
+    "review": 3,
+    "video": 7,
+    "news": 12,
+    "research": 2,
+    "tool": 11,
+    "sdk": 8,
+    "optics": 2,
+    "retail": 25,
+    "teardown": 1,
+    "community": 13
   },
   "routing_counts": {
-    "adjacent_radar": 24,
-    "community_evidence_review": 5,
-    "development_hacking": 2,
-    "reject_noise": 79,
-    "research_news_review": 24
+    "adjacent_radar": 15,
+    "development_hacking": 3,
+    "model_catalog_review": 1,
+    "reject_noise": 40,
+    "report_card_evidence": 3,
+    "research_news_review": 17,
+    "research_optics": 2,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -49,16 +51,18 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "431212f139cb92ae",
-      "title": "Account setup for Verizon.net email | Thunderbird Support Forum ...",
-      "url": "https://support.mozilla.org/en-US/questions/1402529",
-      "summary": "I have an existing Verizon email account (which is accessed through AOL mail) and I'm trying to setup this account on Thunderbird, which I just downloaded on my new computer.",
+      "id": "5cf7c30d0ec4eb9a",
+      "title": "Pharr TX Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/pharr-tx/",
+      "summary": "Zillow has 444 homes for sale in Pharr TX. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -67,12 +71,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "review",
+        "retail"
       ],
-      "primary_type": "community",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -81,15 +87,46 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d995d54910c35418",
-      "title": "Alternate links that are working : r/TPB - Reddit",
-      "url": "https://www.reddit.com/r/TPB/comments/a1srj3/alternate_links_that_are_working/",
-      "summary": "The whole point of this post is to show alternate links that are working in case thepiratebay.org is down and to show other urls that are faster, for example the thepiratebay10.org, is faster and is not blocked by my ISP and you don't need to buy a vpn in order to access thepiratebay you can use TOR browser, which is free by the way, to access any site blocked by your ISP so your comment is ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "1e6e04a097e7ba95",
+      "title": "Roberts Camera - New, Refurbished Cameras & Photo Equipment",
+      "url": "https://robertscamera.com/",
+      "summary": "Family owned since 1957. Shop new and refurbished cameras, lenses, and photo gear.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lenses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "035d5d0677087d74",
+      "title": "Roberts Camera | Indianapolis IN - Facebook",
+      "url": "https://www.facebook.com/RobertsCamera/",
+      "summary": "Roberts Camera, Indianapolis. 18,210 followers · 95 talking about this · 2,649 were here. Indianapolis' trusted camera store since 1957. Cameras, lenses, lighting, studio gear, photo lab & rentals....",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -97,14 +134,47 @@
       "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
       "attribution_required": true,
-      "relationship": "adjacent",
+      "relationship": "enabling",
       "content_types": [
-        "community"
+        "optics"
       ],
-      "primary_type": "community",
+      "primary_type": "optics",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
+        "research_optics"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lenses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f0e6014966f11429",
+      "title": "Search vnextrichcontenttestquery - SHEIN USA",
+      "url": "https://m.shein.com/us/pdsearch/vnextrichcontenttestquery/?cdn_rsite=cf&ref=m&rep=dir&ret=mus",
+      "summary": "Free Returns Free Shipping 1000+ New Arrivals Dropped Daily Shop online for the latest vnextrichcontenttestquery at SHEIN. 100% guaranteed quality. With plenty of trends for you to discover.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -113,10 +183,44 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "95161434fcf5b66a",
-      "title": "Changing gmail email address when using old AOL email",
-      "url": "https://support.google.com/accounts/thread/167160646/changing-gmail-email-address-when-using-old-aol-email?hl=en",
-      "summary": "I created a gmail account years ago using a AOL email. I created a new gmail email few years ago to test a computer and it somehow linked the two emails.",
+      "id": "b31dd1bc5b1fbcd0",
+      "title": "Update Income Request - Capital One - myFICO® Forums - 6740245",
+      "url": "https://ficoforums.myfico.com/t5/Credit-Cards/Update-Income-Request-Capital-One/td-p/6740245",
+      "summary": "Capital One confirms your income and employment information on a regular basis to make sure we’re serving your specific credit needs. Please review the income and employment information on your account ending in XXXX, and confirm or update it as needed.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6457e185c1cb9df3",
+      "title": "Capital One Reviews: 87,369 User Ratings - WalletHub",
+      "url": "https://wallethub.com/profile/capital-one-13001087i",
+      "summary": "Capital One reviews, contact info, products & FAQ. Get the full story from fellow consumers' unbiased Capital One reviews.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -144,10 +248,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5af3315e18feb706",
-      "title": "Connecting to AOL email servers using Verizon email accounts",
-      "url": "https://support.mozilla.org/en-US/questions/1345282",
-      "summary": "If you've activated 2-step verification for your AOL account, you'll need to generate and use an \"app password\" to access AOL Mail from these apps. 1. Sign in and go to the AOL Account security page. 2. Click Generate app password or Manage app passwords. 3. Select your app from the drop down menu and click Generate. 4.",
+      "id": "49f9702922c38483",
+      "title": "Capital One Venture X vs. Chase Sapphire Reserve: Capital ... - WalletHub",
+      "url": "https://wallethub.com/compare/cc/capital-one-venture-x-vs-chase-sapphire-reserve",
+      "summary": "Capital One Venture X vs. Chase Sapphire Reserve: Rewards Chase Sapphire Reserve is the winner when it comes to rewards. It offers an initial bonus of 100,000 points for spend $6,000 on purchases in the first 3 months. Those bonus points are worth $1,000 when redeemed for cash, gift cards, and travel.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -162,11 +266,137 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c83c4ccc86bb3d18",
+      "title": "Cities Nearby Pharr, Texas, United States",
+      "url": "https://www.thecitiesnow.com/united_states/texas/pharr",
+      "summary": "Cities Nearby Pharr, Texas, United States Find five hundred cities near Pharr, Texas, United States from closest to farthest by distance. Distances from Pharr to nearby cities are shown in miles, kilometers (km) and nautical miles (nm). Cities near Pharr",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d54510063a64f04",
+      "title": "Google Rich Results Test: 2026 Eligibility & Validation Guide",
+      "url": "https://squin.org/seo-tools/rich-results-test-guide/",
+      "summary": "Google’s Rich Results Test does one thing: it tells you whether your structured data qualifies for rich results in Google Search. It parses your JSON-LD, renders JavaScript the way Googlebot does, and reports which enhanced SERP features your page is eligible for. Most guides stop at “paste a URL and look for green checkmarks.” This one covers the rendering pipeline, both testing modes ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b0ba2b7bb46d4345",
+      "title": "How to Test Your Structured Data with Google's Rich Results Test (Plain ...",
+      "url": "https://freesiteaudit.com/blog/how-to-test-your-structured-data-with-googles-rich-results-test",
+      "summary": "A step-by-step, non-technical walkthrough of using Google's Rich Results Test to validate structured data, fix warnings, and earn rich snippets in search.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "49c9e5af186e5d7e",
+      "title": "How to Use Google’s Rich Results Tester - YouTube",
+      "url": "https://m.youtube.com/watch?v=Gusz4_nDHAg",
+      "summary": "Rich Results Tester is a tool that can be used to test and validate Structured Data Google supports. Part of Google Search Console Enhancement reports you ca...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
         "development_hacking",
         "adjacent_radar"
       ],
@@ -176,12 +406,136 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0064f4f57aaa7cba",
-      "title": "How to add AOL email to my gmail app - Gmail Community",
-      "url": "https://support.google.com/mail/thread/31555821/how-to-add-aol-email-to-my-gmail-app?hl=en",
-      "summary": "Can you please include details of the exact issue you experience? I am sort of confused over whether you want to add AOL to your Gmail account or to the Gmail app.",
+      "id": "01eebf22ee40359d",
+      "title": "Rich Results Test - Google Search Console",
+      "url": "https://search.google.com/test/rich-results/result/preview",
+      "summary": "Rich results are experiences on Google surfaces, such as Search, that go beyond the standard blue link. Rich results can include carousels, images, or other non-textual elements.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cd7e6ff549e976d7",
+      "title": "Rich Results Test - Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7445569?hl=en-WS",
+      "summary": "Put structured data on your page to enable special features in Google Search results, then test it with the Rich Results test.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d2fcdf14af07630e",
+      "title": "Rich Results Test – Google Search Console",
+      "url": "https://search.google.com/test/rich-results?hl=en-gb",
+      "summary": "Rich results are experiences on Google surfaces, such as Search, that go beyond the standard blue link. Rich results can include carousels, images or other non-textual elements.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "04c1955a82e7e634",
+      "title": "Rich Snippets & Rich Results: Which Schema Triggers What (2026)",
+      "url": "https://schemavalidator.org/guides/rich-snippets-guide",
+      "summary": "Rich snippets (officially called rich results by Google) are enhanced search listings that show additional information — star ratings, FAQ dropdowns, recipe cards, event listings, and more — directly in Google search results. They require no paid ads. They are earned purely by implementing the correct structured data markup (JSON-LD) on your pages.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "115b07197045ad2e",
+      "title": "Schema Markup Testing Tool - Google Developers",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data",
+      "summary": "Use the Rich Result Test to see what Google results can be generated for your pages and the schema markup validator for generic schema validation.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -195,13 +549,12 @@
       "relationship": "adjacent",
       "content_types": [
         "tool",
-        "community"
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
         "development_hacking",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -210,476 +563,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b691082ff1452e69",
-      "title": "how to stop new tab opening to aol.com - Mozilla Support",
-      "url": "https://support.mozilla.org/en-US/questions/1052409",
-      "summary": "everytime i open a new tab it goes to aol.com. how do i stop this?? i deleted the aol toolbar extension, and i checked all add-ons and settings. my homepage is set to google.com.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e87744c9263bd924",
-      "title": "I use Firefox to access AOL e mail, I want to delete a username where I ...",
-      "url": "https://support.mozilla.org/en-US/questions/902189",
-      "summary": "For instance if I would use Safari to access AOL e mail, the undesirable username '''''does not''''' appear. It only appears when I'm using Firefox to access AOL and then sign in for my AOL e mail and click on the username space.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6685eb8eb9a276b2",
-      "title": "I'm getting emails addressed to \"myname@aol.com\". I don't have an aol ...",
-      "url": "https://support.google.com/mail/thread/70941648/i-m-getting-emails-addressed-to-myname-aol-com-i-don-t-have-an-aol-account?hl=en",
-      "summary": "That countless people are getting aol.com e-mails in their GMail account should raise all kinds of red flags. I get up to 10 spam e-mails EVERY SINGLE DAY. And, I created a filter to move any e-mails with my name@aol.com to send these damn e-mails to delete but today I still received yet another spam e-mail in my primary folder.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "14934956955891d6",
-      "title": "Is vortexwand legit or not? : r/Hairloss - Reddit",
-      "url": "https://www.reddit.com/r/Hairloss/comments/1831g2r/is_vortexwand_legit_or_not/",
-      "summary": "seems to focus on scalp stimulation through sonic massage (without massaging ur hairs around in a way that could cause breakage, red light therapy, and heat.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c87f398800819e7b",
-      "title": "Maran on X: \"\" / X",
-      "url": "https://x.com/TheMaran/status/2101981304699125859",
-      "summary": "Maran on X: \"\" / X 21 Sep 2026 10:26:10",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0262aca57da9278b",
-      "title": "Maran on X: \"\" / X",
-      "url": "https://x.com/TheMaran/status/2103490515530633219",
-      "summary": "Maran on X: \"\" / X 25 Sep 2026 14:23:14",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d26d8663872a89ed",
-      "title": "Maran on X: \"\" / X",
-      "url": "https://x.com/TheMaran/status/2101694086285795675",
-      "summary": "Maran on X: \"\" / X 20 Sep 2026 15:24:52",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4944c0da42557259",
-      "title": "Maran on X: \"\" / X",
-      "url": "https://x.com/TheMaran/status/2096205319500406984",
-      "summary": "Maran on X: \"\" / X 05 Sep 2026 11:54:28",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9a8c43ef698cffb1",
-      "title": "Maran on X: \"\" / X",
-      "url": "https://x.com/TheMaran/status/2097558125046050921",
-      "summary": "Maran on X: \"\" / X 09 Sep 2026 05:30:02",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f2c1ddd5debbb7f1",
-      "title": "Maran on X: \"\" / X",
-      "url": "https://x.com/TheMaran/status/2101355705261572114",
-      "summary": "Maran on X: \"\" / X 19 Sep 2026 17:00:16",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "75f5c4272a2c322f",
-      "title": "Maran on X: \"\" / X",
-      "url": "https://x.com/TheMaran/status/2102360085804843127",
-      "summary": "Maran on X: \"\" / X 22 Sep 2026 11:31:19",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2d5ce4054198da70",
-      "title": "Maran on X: \"best 15 accounts to follow in near memes: - @nekotoken_xyz ...",
-      "url": "https://x.com/TheMaran/status/2104524799603363971",
-      "summary": "best 15 accounts to follow in near memes: - @nekotoken_xyz = first meme on near - @shitzuonnear = og dog, still posting since 2022 - @ShitzuCommunity = shitzu intern / shitpost account - @dragonisnear = black dragon, illia lore coin - @NearKatToken = near mascot meerkat (native, not sol) - @NEAR_I…",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "228f457ff7d92e31",
-      "title": "Maran on X: \"how to actually trade near memes without becoming exit liq ...",
-      "url": "https://x.com/TheMaran/status/2104473693644816530",
-      "summary": "how to actually trade near memes without becoming exit liq near trenches is new and most people do not know the tools yet so get an edge 1) @rhea_finance - main dex. amm + dcl. this is where almost every graduated near meme actually trades - size off the wnear pool, not just look at fdv 2) @meme…",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "251f4fb3fff5d5d3",
-      "title": "Maran on X: \"upcoming nft projects on near right now 1) @Nearlios ...",
-      "url": "https://x.com/TheMaran/status/2104866286035722413",
-      "summary": "upcoming nft projects on near right now 1) @Nearlios - 5,555 milady style pfps, free mint - registration live, only 1,000 spots, loudest timeline on the chain this week 2) @cnf_cats - zun made a post about them, be cautious - sealed bids, clearance open at cnfcats. fun 3) @VenearsNFT - 3,333 sup…",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f078e897de501af5",
-      "title": "OAuth2 Authentication for Yahoo, AOL and ATT | Thunderbird Help",
-      "url": "https://support.mozilla.org/en-US/kb/thunderbird-et-yahoo",
-      "summary": "How to set up Yahoo! services (including AOL, ATT and other services that use Yahoo servers) in Thunderbird.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4d900fad779ea654",
-      "title": "Please help me type myself â€“ xNxx ??? | Typology Central",
-      "url": "https://www.typologycentral.com/threads/please-help-me-type-myself-%C3%A2%E2%82%AC%E2%80%9C-xnxx.104166/",
-      "summary": "Please help me type myself â€“ xNxx Hi everybody! This is my first post here on Typologycentral, although Iâ€™ve been reading about MBTI and Jung typology here and elsewhere for a long, long time. Iâ€™m writing because Iâ€™m stuck with clarifying my type, so I decided to ask for help â€“...",
+      "id": "e5500f592bda2837",
+      "title": "Structured data markup that Google Search supports",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/search-gallery",
+      "summary": "Explore the structured data-powered features that can appear in Google Search, including examples of how they appear in search results. Learn how to add structured data to help your site display in rich results on Google Search.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -694,11 +581,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "sdk",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -707,566 +595,96 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4ddb0d58e8b8281b",
-      "title": "Thunderbird e Yahoo | Ajuda do Thunderbird - Mozilla Support",
-      "url": "https://support.mozilla.org/pt-BR/kb/thunderbird-e-yahoo",
-      "summary": "Basta você entrar (\"autenticar\"), fornecendo sua conta de e-mail e senha da conta (senhas de aplicativo não funcionam com OAuth2) e, em seguida, confirmar que o Thunderbird pode acessar dados nos servidores do provedor (AOL, ATT, Yahoo, etc). Este é um processo normal e seguro.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4c05468ec3b7ad58",
-      "title": "Why is my junk mail folder in Thunderbird's trash?",
-      "url": "https://support.mozilla.org/en-US/questions/1500771",
-      "summary": "In Thunderbird, the junk mail folder - which AOL call \"Bulk Mail\" for some reason - has moved to the Trash folder and I can't get it out. It's a Thunderbird problem - if I go onto my account at AOL.com, everything is normal. How do I get it out? I've tried cutting and pasting it, creating a new folder...nothing seems to work.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5273441d1066b226",
-      "title": "Xnxx : u/m-bilal - Reddit",
-      "url": "https://www.reddit.com/user/m-bilal/comments/absyqv/xnxx/",
-      "summary": "Posted in the u_m-bilal community. Archived post. New comments cannot be posted and votes cannot be cast. Sort by: Q&A Open comment sort options Best Top New Controversial Old Q&A JoseMiguel2 • Buao",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4b6baee94b772a09",
-      "title": "Careers at Hilton | Students & early career: United States, Canada ...",
-      "url": "https://jobs.hilton.com/early-career-paths/early-career-americas",
-      "summary": "Conrad Washington D.C. Our early talent and student programs in the United States offer a world of opportunity to students interested in a hospitality career. Launch your career with Hilton and learn from a company that has redefined what it means to provide excellent guest experiences.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "078b3cbae9e5b85b",
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero. · GitHub",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "summary": "🧠 Use GPT to generate reply text: support gpt-3.5-turbo and gpt-4 🏷️ Command tags: Click once to accelerate your research. 💬 Ask questions about current PDF file (full-text or selected text). 💬 Ask questions about selected paper (Abstract). 📝 Summarize the selected paper into several highly condensed sentences.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 4,
       "keyword_hits": [
-        "launch"
+        "github",
+        "research"
       ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f30eac5a4f96bb89",
+      "title": "Angie Nixon, Democrats’ pick for Senate in Florida, resolves ... - MSN",
+      "url": "https://www.msn.com/en-us/news/other/angie-nixon-democrats-pick-for-senate-in-florida-resolves-case-over-capitol-protest/ar-AA2cOZZi",
+      "summary": "The state representative was arrested in May for refusing to leave the building while attempting to meet with Gov. Ron DeSantis about a redistricting plan that favored Republicans.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5a40d33ae6d4d499",
+      "title": "Can amazon employees see who orders what? : r/amazon - Reddit",
+      "url": "https://www.reddit.com/r/amazon/comments/3dch70/can_amazon_employees_see_who_orders_what/",
+      "summary": "Based on Amazon's values, I doubt anyone can see more than the shipping label attached to the box and the contents of what you ordered while packing your items.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
         "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "705fe4a946251712",
-      "title": "Art Project Amazona Part 1.mp4 | Bunkr",
-      "url": "https://bunkr.cr/f/2BrnLk2neWVBK",
-      "summary": "File hosted for free on Bunkr. bunkr-albums.io is now balbums.st (old domain isn't working anymore), click here to visit",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7d0944a0df9b2014",
-      "title": "Art Project GIRLS IN ARMOR. Part 2. Guennadi Ulibin - Guennadi Ulibin ...",
-      "url": "https://dl.bunkr.cr/file/51108654",
-      "summary": "Art Project GIRLS IN ARMOR. Part 2. Guennadi Ulibin - Guennadi Ulibin (1).mp4 178.82 MB Download",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "04799a80b5a419c7",
-      "title": "Art Project Sword Part 5.mp4 | Bunkr",
-      "url": "https://bunkr.cr/f/IbnJQ9PNKs8EO",
-      "summary": "Server under maintenance The server hosting this file is temporarily unavailable for maintenance. Playback and downloads are disabled while maintenance is in progress. Please check back again later.",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b6dfcd171b453a6a",
-      "title": "Best 4-channel amp to power new Kicker KS series setup?",
-      "url": "https://www.caraudio.com/threads/best-4-channel-amp-to-power-new-kicker-ks-series-setup.582255/",
-      "summary": "I just setup my Chevy Cobalt with kicker KS components in the front and matching 6x9's in the rear deck. The front speakers are rated at 125RMS and the rear at 150. I'm looking for the best amp I can get that will do my speakers justice and leave me with room for some real improvement when I...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cb4a7fb69dbc3d24",
-      "title": "Best settings on A kicker CXA1200.1 - CarAudio.com Car Audio Forum",
-      "url": "https://www.caraudio.com/threads/best-settings-on-a-kicker-cxa1200-1.614362/",
-      "summary": "So I have a 12” Kicker Comp Q and a kicker amp CXA 1200.1 I don’t think it’s hitting hard like my other amp",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6e941e4495d2a110",
-      "title": "Besty | Bunkr",
-      "url": "https://bunkr.cr/a/i5Uds9nx",
-      "summary": "Explore this album with 80 files.",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cd71f23ca62b0371",
-      "title": "box for 6x9\" speakers - CarAudio.com Car Audio Forum",
-      "url": "https://www.caraudio.com/threads/box-for-6x9-speakers.612641/",
-      "summary": "i have a van with 6\" speakers that cant produce any good sound. i bought pair of 6x9\" speakers and would mount them into MDF box. mounting location can only be done behind and at the bottom of the seats. there is not a lot of space but box of 16 liters (see picture) can be done. will it be...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e583949c3b373745",
-      "title": "Careers at Hilton | Hotel career paths",
-      "url": "https://jobs.hilton.com/hotel-career-paths",
-      "summary": "Hotel careers at Hilton Hilton Vienna Park, Austria Conrad Washington, DC Hilton Frankfurt City Centre, Germany Our hotel team is the heart of Hilton—filling the earth with the light and warmth of hospitality. These Team Members create exceptional experiences at our hotels for every guest, every stay, every day.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b84b6725ca850b96",
-      "title": "Conrad Hotels & Resorts Launches 1/3/5 Program to Inspire Meaningful ...",
-      "url": "https://stories.hilton.com/releases/conrad-hotels-resorts-launches-1-3-5-program-to-inspire-meaningful-travel-experiences",
-      "summary": "Available at the Concierge desk, the Conrad 1/3/5 program will be localized by each property, allowing every hotel to bring the concept to life in its own distinctive and culturally relevant way. Experiences in Americas Leonessa rooftop bar - Credit - Michael Persico Courtesy of Conrad New York Downtown",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk",
-        "rumor"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0778ec339a57b476",
-      "title": "Conrad New York Downtown | All-Suite Hotel in Downtown Manhattan - Hilton",
-      "url": "https://www.hilton.com/en/hotels/nyccici-conrad-new-york-downtown/",
-      "summary": "Conrad New York Downtown Located in Downtown Manhattan, our 463 all-suite luxury hotel is less than 10 minutes from the city’s most iconic attractions, including One World Trade Observatory, Tribeca, Greenwich Village, SoHo, and Wall Street.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bbeabafa005d0747",
-      "title": "DoubleTree by Hilton Unveils ‘piebird,’ New StiR Creative Collective ...",
-      "url": "https://stories.hilton.com/releases/doubletree-by-hilton-unveils-piebird-newest-dining-concept-from-stir-creative-collective",
-      "summary": "In the last two years, the collective has debuted several, leading-edge projects, including Leonessa, a sophisticated aperitivo rooftop bar at Conrad New York Downtown; Ayda, an eclectic, Mediterranean brasserie at Waldorf Astoria Cairo Heliopolis; five bespoke restaurant and bar concepts at Conrad Orlando (Ceiba, Sophia’s Trattoria, Papaya ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "rumor"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "83261a29eeadfee6",
-      "title": "Download PROJECT 2 【4K】【60FPS】.mp4",
-      "url": "https://dl.bunkr.cr/file/35178997",
-      "summary": "PROJECT 2 【4K】【60FPS】.mp4 209.19 MB Download",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6f5c3742c223f80a",
-      "title": "Downtown NYC Restaurant & Rooftop Bar | Conrad New York Downtown - Hilton",
-      "url": "https://www.hilton.com/en/hotels/nyccici-conrad-new-york-downtown/dining/",
-      "summary": "Discover luxury dining at its finest. From inventive American dishes at ATRIO Wine Bar & Restaurant to signature cocktails at our rooftop bar, you’ll experience the best luxury cuisine that downtown Manhattan has to offer.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6a5914b10fc60f57",
-      "title": "Ds 18 amps, good or not - CarAudio.com Car Audio Forum",
-      "url": "https://www.caraudio.com/threads/ds-18-amps-good-or-not.560850/",
-      "summary": "Hey guys i have 2 kicker solo classics and i the amp i have atm is not powerful enough to get the best out of them and the amp is also cutting out. I was looking for a new amp and i came across these ds 18 amps which seem to have really good power output for a really cheap price, i was wondering...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
         "retail",
         "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1276,103 +694,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c8b336680a89b538",
-      "title": "FACT SHEET - Hilton",
-      "url": "https://stories-editor.hilton.com/emea/wp-content/uploads/sites/2/2022/12/Conrad-Hotels-Fact-Sheet.pdf",
-      "summary": "Bold Design Each Conrad property appeals to the cultured world traveler with contemporary, bold design that is locally inspired and connects the guest with the place. From the 13-story Sol LeWitt painting in the lobby of Conrad New York Downtown, to the large-scale sculptures by Kyoto-based artist Kohei Nawa at Conrad Osaka and Conrad London St. James' veritable gallery of artwork influenced ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2e0a29a76486628a",
-      "title": "Hotel Near World Trade Center NYC | Conrad New York Downtown - Hilton",
-      "url": "https://www.hilton.com/en/hotels/nyccici-conrad-new-york-downtown/hotel-location/",
-      "summary": "Find Conrad New York Downtown near the World Trade Center, with Fulton Street and Oculus subway access, ferry service, parking and local Lower Manhattan attractions.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ed7f95bc6db635c5",
-      "title": "IR Calendar :: Investor Relations Hilton Worldwide Holdings Inc. (HLT)",
-      "url": "https://ir.hilton.com/news-events/ir-calendar",
-      "summary": "Stay up to date with key investor events, including earnings calls, conferences, and important dates relevant to our financial calendar.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d41c9d4f8bf5f9fa",
-      "title": "kicker vs alpine? - CarAudio.com Car Audio Forum",
-      "url": "https://www.caraudio.com/threads/kicker-vs-alpine.446757/",
-      "summary": "im trying to decide between an alpine 1000 watt mono amp and kicker 1000 watt mono amp. alpine mrp1000 is rated at 1000x1 at 2 ohms and 600x1 at 4 ohms. kicker is 1000x1 at 2ohms and 500x1 at 4 ohms. they will be powering 2 15\" kicker cvrs. which one would deliver cleaner and louder bass?",
+      "id": "1348928d5f5ed485",
+      "title": "Comunidade YouTube - Google Help",
+      "url": "https://support.google.com/youtube/community?hl=pt-BR",
+      "summary": "37 respostas Sobre o programa Colaboradores do YouTube Atualizações de @TeamYouTube Experimentos Sobre a comunidade Visão geral da comunidade Política de conteúdo",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -1387,11 +712,12 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
+        "video",
         "tool",
         "sdk",
         "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1401,264 +727,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c26a0d34deeb04ba",
-      "title": "kicker vs infinity - CarAudio.com Car Audio Forum",
-      "url": "https://www.caraudio.com/threads/kicker-vs-infinity.351901/",
-      "summary": "lookin at 6.5\" coax speakers by either company. ds series from kicker and referenece/ kappa from infinty. just wonderin what you guys thought of these. id...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0430f5c6246a78be",
-      "title": "Kicker, Alpine, Focal or Ground zero speaker for sound quality?",
-      "url": "https://www.caraudio.com/threads/kicker-alpine-focal-or-ground-zero-speaker-for-sound-quality.610992/",
-      "summary": "A $2000 set of comps will sound like a $20 Walmart special with a bad install. Like I said, the Type-R comps are decent. Focus on your install more than your speaker 90% of a sound system is install and tuning. Specific speakers have the smallest impact on sound quality and performance compared to everything else in a stereo system. Matt",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b266047cfe081c19",
-      "title": "Luxury Suites in Downtown Manhattan | Conrad New York Downtown - Hilton",
-      "url": "https://www.hilton.com/en/hotels/nyccici-conrad-new-york-downtown/suites/",
-      "summary": "Discover spacious luxury suites with separate living and sleeping areas, Hudson River views, upscale amenities and in-room water filtration in Lower Manhattan.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "806741b6f4389c26",
-      "title": "NaughtyGardenGirl - The Blair Bitch Project.mp4 | Bunkr",
-      "url": "https://bunkr.cr/f/ChyjkgZUHvGyZ",
-      "summary": "File hosted for free on Bunkr. bunkr-albums.io is now balbums.st (old domain isn't working anymore), click here to visit",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "64915ead322ecfdd",
-      "title": "NVX vs CT vs Kicker - CarAudio.com Car Audio Forum",
-      "url": "https://www.caraudio.com/threads/nvx-vs-ct-vs-kicker.615007/",
-      "summary": "I know this is a little apples to oranges, but looking for some opinions. My amp is the Kicker CXA1800.1. It's 1800w RMS and 3600w peak @ 2ohms. I don't have a box yet but it will either be a dual ported 10\" or dual ported 12\" depending on which sub I go with. I was originally aiming for two...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b05e8f616c0db99",
-      "title": "Project 21_11_2024.mp4 | Bunkr",
-      "url": "https://bunkr.cr/f/AC1LBuz1y0QBA",
-      "summary": "File hosted for free on Bunkr. bunkr-albums.io is now balbums.st (old domain isn't working anymore), click here to visit",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "69d9e9b4e5001b87",
-      "title": "Project 8.mp4 | Bunkr",
-      "url": "https://bunkr.cr/f/xzxRJWlobdetE",
-      "summary": "File hosted for free on Bunkr. bunkr-albums.io is now balbums.st (old domain isn't working anymore), click here to visit Debug: Original=Project 8.mp4, Size=38270588",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2f4c554dacd1d260",
-      "title": "Speaker upgrade advice needed Silverado - CarAudio.com Car Audio Forum",
-      "url": "https://www.caraudio.com/threads/speaker-upgrade-advice-needed-silverado.613970/",
-      "summary": "New guy here. 2023 High Country. Bose. I want to replace the stock speakers then eventually adding the GM Kicker subwoofer that goes under the back seat. I've heard the stock speakers have different ohms. Probably buying everything at Crutchfield. Looking for some advice what to buy. Front and...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "94a21204b45e9415",
-      "title": "The Horseshoe Crab: Natural History, Anatomy, Conservation and Current ...",
-      "url": "https://horseshoecrab.org/",
-      "summary": "A comprehensive exploration of horseshoe crab natural history, anatomy and conservation: contains research and educational material, plus collections of poems, images and activities.",
+      "id": "2e883150701bb0ec",
+      "title": "How to Call Amazon: 11 Steps (with Pictures) - wikiHow",
+      "url": "https://www.wikihow.com/Call-Amazon",
+      "summary": "Dial 1 (888) 280-4331 for customer support in the United States. The customer service line is available 24 hours a day for your convenience. Dial the number and wait for either an automated message or representative to answer and walk you through the call. [1] Research source You’ll need to have an Amazon account linked to your phone number to use this support line.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1673,9 +747,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "model",
+        "research",
+        "retail"
       ],
-      "primary_type": "research",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1685,75 +761,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aab018b393e5690d",
-      "title": "The Lilly Joey Project | Bunkr",
-      "url": "https://bunkr.cr/a/MEJhLFAJ",
-      "summary": "Explore this album with 2 files.",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ab5091384632ecb",
-      "title": "Trying to get as much low end as possible from 6.5 speakers...",
-      "url": "https://www.caraudio.com/threads/trying-to-get-as-much-low-end-as-possible-from-6-5-speakers.605458/",
-      "summary": "Are Kicker 46CSS654 probably going to give me the best bass from 6.5 inch speakers that fit in the rear doors of my 2019 Forte? I know specs can be fudged but \"frequency response: 35-21,000 Hz\" paired with \"sensitivity: 90 dB\" sounds powerful on paper. Also don't want to spend more than $150...",
+      "id": "58ecc15dcfb6609a",
+      "title": "How to earn money on YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/72857?hl=en",
+      "summary": "Your YouTube earnings and tax liability Earning money on YouTube or receiving Shorts bonuses are a great way to be rewarded for good, engaging content on the platform. Keep in mind that you may be liable to pay taxes to your country of residence on any income earned from your monetized videos on YouTube.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1beee6ba21ef481b",
-      "title": "Video Project (2).mp4 | Bunkr",
-      "url": "https://bunkr.cr/f/sIlUkeJnjWERS",
-      "summary": "File hosted for free on Bunkr. bunkr-albums.io is now balbums.st (old domain isn't working anymore), click here to visit Debug: Original=Video Project (2).mp4, Size=8409151",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1780,28 +793,31 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d34b1467c9689db9",
-      "title": "2025-26 NHL Standings | Hockey-Reference.com",
-      "url": "https://www.hockey-reference.com/leagues/NHL_2026_standings.html",
-      "summary": "Check out the 2026 NHL Eastern Conference Standings, Western Conference Standings, and more for the 2025-26 NHL season on Hockey-Reference.com",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "id": "b56e2a68a5054d90",
+      "title": "LPT: When searching for items, paste \"&sort=review-count-rank ... - Reddit",
+      "url": "https://www.reddit.com/r/amazon/comments/6f4wqy/lpt_when_searching_for_items_paste/",
+      "summary": "So, open Amazon and search for something, To clarify, this only works when you click a department after performing the initial search. select a category then open that bookmark. The page should refresh with \"&sort=review-count-rank\" at the end, sorting them by the number of reviews.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "research",
-        "retail"
+        "review",
+        "retail",
+        "community"
       ],
-      "primary_type": "research",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1811,12 +827,108 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2732768cd5f39747",
-      "title": "2026-27 NHL Hockey Standings - CBS Sports",
-      "url": "https://www.cbssports.com/nhl/standings/",
-      "summary": "Get the latest NHL Hockey standings from across the league. Follow your favorite team through the 2026-27 season. 2026-27 team records, home and away records, win percentage, current streak, and ...",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "id": "e8c54dd71c39677b",
+      "title": "YouTube",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en_US",
+      "summary": "Share your videos with friends, family, and the world. Start watching videos to help us build a feed of videos you'll love.",
+      "discovery_channel": "adjacent+developer",
+      "query": "ActiveLook API BLE; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "504cf029af901dfe",
+      "title": "YouTube channel monetization policies - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/1311392?hl=en",
+      "summary": "ी‎हिन्दी‎অসমীয়া‎বাংলা‎ਪੰਜਾਬੀ‎ગુજરાતી‎ଓଡ଼ିଆ‎தமிழ்‎తెలుగు‎ಕನ್ನಡ‎മലയാളം‎සිංහල‎ไทย‎ລາວ‎မြန်မာ‎ქართული‎አማርኛ‎ខ្មែរ‎中文（简体）‎中文（繁體）‎中文（香港 ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4177ea9ff9f42fb6",
+      "title": "YouTube チャンネルの作成 - YouTube ヘルプ - Google Help",
+      "url": "https://support.google.com/youtube/answer/1646861?hl=ja",
+      "summary": "Google アカウントがあれば、動画の再生、評価、チャンネル登録ができます。動画をアップロードしたり、コメントを投稿したり、再生リストを作成したりするには、YouTube チャンネルが必要です。チャンネルを作成しない限り、YouTube でアカウントの存在が公開されることはありません。",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8234a66aa8a17657",
+      "title": "Amazon Customer Service Phone Number 1-888-280-4331, Email, Live Person",
+      "url": "https://amazon.pissedconsumer.com/customer-service.html",
+      "summary": "Yes, 1-888-280-4331 is the official Amazon customer service phone number for U.S. users. It is also used as the Amazon Prime customer service phone number. Through this Amazon support phone number, customers can resolve order issues, account problems, returns, and payments. Amazon customer service operates 24/7.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1841,25 +953,26 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6869b664fe72f132",
-      "title": "999 Vanderbilt Beach Rd, Naples, FL 34108 - Fifth Third Center | LoopNet",
-      "url": "https://www.loopnet.com/Listing/999-Vanderbilt-Beach-Rd-Naples-FL/41634256/",
-      "summary": "Newly remodeled & re-branded, the offices at 999 Vanderbilt offer professional, Class A office spaces. Conveniently located adjacent to Mercato, North Naples' premier lifestyle center. The offices at 999 Vanderbilt offers ease of access to Vanderbilt Beach Road, Tamiami Trail North, and Mercato, Naples' premier retail/lifestyle center.",
+      "id": "3a02cc7ccf51b100",
+      "title": "Amazon Fire TV Stick - Firestick - Reddit",
+      "url": "https://www.reddit.com/r/firetvstick/",
+      "summary": "PS5 and Amazon Firestick HDMI issue Since I've bought an amazon firestick and plugged it in to a HDMI slot, my PlayStation display is not detected although the Samsung TV knows there is a game console connected to the HDMI. If I remove my firestick the PlayStation display seems to work fine but if I then add the firestick, it says no signal for ...",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Huawei AI Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "retail",
+        "community"
       ],
       "primary_type": "retail",
       "routing_targets": [
@@ -1871,40 +984,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7b575fa34b9b1070",
-      "title": "999 Vanderbilt Beach Rd, Naples, FL 34108 - Office For Rent | Office Hub",
-      "url": "https://www.office-hub.com/properties/999-vanderbilt-beach-rd-naples-fl-a0v3m00000N7nGGAAZ",
-      "summary": "Discover office space at Vanderbilt Beach Rd, Naples. We provide flexible workspace, hot desking and serviced offices with flexible terms. Call/book an online consultation with our expert team today.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "92888dcee758abbb",
-      "title": "AOL Mail for Verizon Customers",
-      "url": "https://help.aol.com/products/aol-mail-verizon",
-      "summary": "AOL Mail welcomes Verizon customers to our safe and delightful email experience!",
+      "id": "c21c380fc406f04f",
+      "title": "Amazon Subscribe And Save: How To Cancel Your Subscriptions - SlashGear",
+      "url": "https://www.slashgear.com/1772228/amazon-subscribe-and-save-how-cancel-why-you-should/",
+      "summary": "Go to Amazon's Subscribe & Save page in your browser. Navigate to the Subscriptions tab to view all your active subscriptions. Find the subscription you want to cancel and click on the product image.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1919,9 +1002,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1931,12 +1014,43 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "95d80b5aebd92ee4",
-      "title": "Camera Online Store || Toko Kamera Online",
-      "url": "https://camera.co.id/",
-      "summary": "Camera.co.id adalah camera online store terpercaya di Indonesia. Jual Kamera DSLR, Mirrorless, Action Cam & Lensa Original dengan Garansi Resmi.",
+      "id": "46c8da09ff5e3e9a",
+      "title": "Anyone ever order their tv through amazon? How’d it go?",
+      "url": "https://www.reddit.com/r/hometheater/comments/8mrmob/anyone_ever_order_their_tv_through_amazon_howd_it/",
+      "summary": "Amazon doesn't charge anything if it's defective or arrives damaged. I do agree with just going to best buy though, I'd rather pick it up and drive it home myself, especially since amazon charges tax now.. best buy's price on TV's is usually the same as amazon anyway.",
       "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d0a854b032768261",
+      "title": "Cancel Your Subscribe & Save Subscription - Amazon Customer Service",
+      "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GQBVD8QMLXXV5GLV",
+      "summary": "You can cancel your subscription through Your Subscribe & Save in Your Account. To cancel your Subscribe & Save subscription: Go to Your Subscribe & Save Items. Select the Subscriptions tab. Select the product image or select Edit to view Subscription details. Select Cancel subscription. Optional: Select a cancellation reason to help us to improve your experience. Select Cancel my subscription.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter; Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1949,9 +1063,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1961,100 +1075,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "eedd2e37a8ea3d5a",
-      "title": "CEO CONCIERGE EXECUTIVE OFFICES - Naples FL - Hours, Directions ...",
-      "url": "https://www.loc8nearme.com/florida/naples/suite-200-by-naples-executive-suites/6642018/",
-      "summary": "CEO Concierge Executive Offices at 999 Vanderbilt Beach Rd Suite 200, Naples FL 34108 - hours, address, map, directions, phone number, customer ratings and reviews.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6497c93f0bc08328",
-      "title": "CEO Concierge Executive Offices in Naples, FL 34108 - (239) 3...",
-      "url": "https://www.chamberofcommerce.com/business-directory/florida/naples/office-space-rental-agency/11501827-ceo-concierge-executive-offices",
-      "summary": "CEO Concierge Executive Offices located at 999 Vanderbilt Beach Rd Ste 200, Naples, FL 34108 - reviews, ratings, hours, phone number, directions, and more.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "71a3260edabdb7bc",
-      "title": "CEO Concierge Executive Offices, 999 Vanderbilt Beach Road, Ste 200 ...",
-      "url": "https://www.findglocal.com/US/Naples/369732859805694/CEO-Concierge-Executive-Offices",
-      "summary": "Visit us at 999 Vanderbilt Beach Rd in Naples, where our CEO Concierge Executive Offices redefine productivity and professionalism. We provide beautifully designed individual offices and unique private suites in the landmark Fifth Third Bank Center.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aff712b3e4e9e88b",
-      "title": "Evolution of the Horseshoe Crab",
-      "url": "https://dnr.maryland.gov/ccs/Pages/horseshoecrab-evolution.aspx",
-      "summary": "The horseshoe crab (Limulus polyphemus), is the oldest living fossil in Maryland. Horseshoe Crabs evolved much earlier than humans or the Chesapeake Bay. Fossils of horseshoe crabs have been dated at 445 million years old.",
+      "id": "fbb9259cbaca0c79",
+      "title": "Changing the name displayed when I call someone",
+      "url": "https://forum.telus.com/discussions/my_home_services_and_devices/changing-the-name-displayed-when-i-call-someone/100803",
+      "summary": "Hey, So, the Telus account is in my wife's name. The account has the phone and internet on it along with her internet at her new home. If I call someone from my home phone it displays her name. How would I (or how would she) go about getting the displayed name changed so that it reflects the fact that I'm the only person using that land-line? Just wondered if it's possible on a Home Phone Lite ...",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -2069,9 +1093,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2081,12 +1105,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bec4de4986bf21cc",
-      "title": "Financial Advisor in Naples, FL | Advantage Wealth Partners",
-      "url": "https://advantagewealthpartners.com/locations/naples-fl",
-      "summary": "Retirement planning and wealth management in Naples, FL. Visit Advantage Wealth Partners at 999 Vanderbilt Beach Road, Suite 200, or call 239.747.0552.",
+      "id": "95672578ec446829",
+      "title": "Cut cost | TELUS Neighbourhood",
+      "url": "https://forum.telus.com/discussions/My_Home_Services_and_Devices/what-are-the-proper-imap-and-smtp-server-settings-for-telus-email/111534",
+      "summary": "I'm trying to setup a Telus Email in Outlook, and need to know the right server settings. What are the port numbers and authentication types required? and is...",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2099,9 +1123,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2111,10 +1135,376 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c3b6de1cb12295a7",
-      "title": "HATE Synonyms & Antonyms - 131 words | Thesaurus.com",
-      "url": "https://www.thesaurus.com/browse/hate?q=HATE",
-      "summary": "Find 131 different ways to say HATE, along with antonyms, related words, and example sentences at Thesaurus.com.",
+      "id": "ad87b2630ed547ce",
+      "title": "Do all Amazon packages come in Amazon-branded boxes?",
+      "url": "https://www.reddit.com/r/amazon/comments/833kos/do_all_amazon_packages_come_in_amazonbranded_boxes/",
+      "summary": "Just curious if all packages ordered from Amazon directly comes in Amazon-branded (smiles) boxes? If one were to order something that is already in a box, would it always get re-packaged in an Amazon box?",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c05ea78c795d914e",
+      "title": "Fire Tv remote control app on windows PC? : r/amazon - Reddit",
+      "url": "https://www.reddit.com/r/amazon/comments/3hhx3a/fire_tv_remote_control_app_on_windows_pc/",
+      "summary": "Most of the time though I'm watching TV in the background while on my computer windows 10 seems to have an ability to use apps on it is there a way to get the remote control app directly on my PC so I don't have to keep searching for the remote?",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "retail",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "158451617adf7019",
+      "title": "France travel plan - TELUS Neighbourhood",
+      "url": "https://forum.telus.com/discussions/Mobile_Devices/france-travel-plan-/135749",
+      "summary": "Hi ! we will be in France for 40 days this summer. Paying 15$ per day is too much. I'm with Telus wuth an EPP plan. Do Telus offer international monthly plan...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "58d26c676144a20e",
+      "title": "Gmail migration with MS Outlook 365 | TELUS Neighbourhood",
+      "url": "https://forum.telus.com/discussions/My_Home_Services_and_Devices/gmail-migration-with-ms-outlook-365/118428",
+      "summary": "I know there's another thread on the Gmail migration and Outlook 2016 but we now use Office 365 and none of the Telus links include Outlook 365, they latest...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb8cfc6da60cb2aa",
+      "title": "Good alternatives to amazon? : r/amazonprime - Reddit",
+      "url": "https://www.reddit.com/r/amazonprime/comments/13vcj7a/good_alternatives_to_amazon/",
+      "summary": "Amazon delivers stuff in a few days, 90% within a week. eBay, on the other hand, can take 3+ months to deliver, and the delivery companies sucks a lot, as they never truly attempt to deliver the package and make me go pick it up some far place that work on really bad hours, usually crowded with people.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6cce644b80187fc9",
+      "title": "How do I cancel my Amazon auto subscriptions?",
+      "url": "https://www.amazonforum.com/s/question/0D56Q0000E3A3vjSQC/how-do-i-cancel-my-amazon-auto-subscriptions",
+      "summary": "Hi @Holl, and welcome to the Amazon Forums. I understand you want to cancel your Subscribe and Save order. You can manage it from the website. Cancel Your Subscribe & Save Subscription You can cancel your subscription through Your Subscribe & Save in Your Account. To cancel your Subscribe & Save subscription: Go to Your Subscribe & Save Items. Select the Subscriptions tab. Select the product ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9b7b110f35083a56",
+      "title": "How To Cancel A Subscription On Amazon? [Explained]",
+      "url": "https://explaincharges.com/how-to-cancel-a-subscription-on-amazon/",
+      "summary": "Learn how to cancel a subscription on Amazon, including Prime, Subscribe & Save, Prime Video Channels, Kindle Unlimited, Music, and app subs.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e2416cbb27829c3a",
+      "title": "How to Cancel Amazon Subscribe & Save",
+      "url": "https://www.not-subscribed.com/guides/how-to-cancel-amazon-subscribe-save",
+      "summary": "Learn how to cancel Amazon Subscribe & Save, stop recurring deliveries, skip shipments, adjust delivery schedules, avoid common cancellation roadblocks, and confirm your subscription is actually canceled. Perfect for anyone trying to manage Amazon recurring orders and subscription billing.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ddb3ac698f2d6e4f",
+      "title": "How to Cancel Amazon Subscribe & Save - Techlicious",
+      "url": "https://www.techlicious.com/tip/how-to-cancel-amazon-subscribe-and-save/",
+      "summary": "How to cancel all future shipments of Subscribe & Save 1. Go to the Amazon Subscribe & Save page. 2. Go to the Subscriptions tab and click on the image of the product you want to cancel (do not ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c15fc275e8172bd8",
+      "title": "How to Cancel Amazon Subscribe & Save - Technobezz",
+      "url": "https://www.technobezz.com/how-to-cancel-an-amazon-subscribe-and-save-subscription",
+      "summary": "Cancel Amazon Subscribe & Save with the exact US and UK steps, check the delivery cutoff, and get help if cancellation fails.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a0c082e2c7a6bd04",
+      "title": "How to Cancel Amazon Subscribe and Save (2026): Stop Auto Deliveries in ...",
+      "url": "https://www.izoate.com/blog/how-to-cancel-amazon-subscribe-and-save-2026-stop-auto-deliveries-in-minutes/",
+      "summary": "Can't find the cancel button on Amazon Subscribe & Save? Learn where the hidden cancel button is, how to cancel Amazon Subscribe and Save, and stop recurring deliveries fast.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3fe74ba259edf48a",
+      "title": "How to Cancel Amazon Subscribe and Save? [Explained]",
+      "url": "https://explaincharges.com/how-to-cancel-amazon-subscribe-and-save/",
+      "summary": "Learn how to cancel Amazon Subscribe and Save in minutes. Stop unwanted recurring deliveries, avoid extra charges and learn tips to save more.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "302a4a99302f36e3",
+      "title": "How to Contact Amazon Customer Service and Talk to a Real Person in ...",
+      "url": "https://lifehacker.com/money/how-to-speak-with-a-real-person-at-amazon-customer-service",
+      "summary": "The Fastest Way to Talk to a Real Person at Amazon Customer Service Here's the easiest, quickest way to reach a real human at Amazon during the October Prime Day sale.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -2129,246 +1519,6 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f71bbd1954a90f4d",
-      "title": "Horseshoe Crab - National Wildlife Federation",
-      "url": "https://www.nwf.org/Educational-Resources/Wildlife-Guide/Invertebrates/Horseshoe-Crab",
-      "summary": "Learn facts about the horseshoe crab’s habitat, diet, life history, and more.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9ac0e336b400bc86",
-      "title": "Horseshoe crab - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Horseshoe_crab",
-      "summary": "Horseshoe crabs are arthropods of the family Limulidae and the only surviving xiphosurans. Despite their name, they are not crabs or even crustaceans; they are chelicerates, more closely related to arachnids like spiders, ticks, and scorpions. The body of a horseshoe crab is divided into three main parts: the cephalothorax, abdomen, and telson.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7013b37a275f69c4",
-      "title": "Horseshoe Crab Evolution: A Living Fossil’s Journey",
-      "url": "https://scienceinsights.org/horseshoe-crab-evolution-a-living-fossils-journey/",
-      "summary": "Horseshoe crabs (members of the order Xiphosura) represent a remarkable continuity in the history of life, with an anatomical design that has persisted for hundreds of millions of years. These marine arthropods, including the Atlantic horseshoe crab (Limulus polyphemus), are often described as “living fossils.” This term refers to organisms whose physical forms have remained largely ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "da51c8ec1f113c32",
-      "title": "Horseshoe Crab History | Sacred Heart University",
-      "url": "https://www.sacredheart.edu/academics/colleges--schools/college-of-arts--sciences/departments--schools/biology/project-limulus/horseshoe-crab-history/",
-      "summary": "Horseshoe Crab History Limulus polyphemus has existed for over 300 million years. Horseshoe crabs evolved together with trilobites (see left hand side of the picture below).",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57c247ff2c451efc",
-      "title": "Horseshoe Crab Life History",
-      "url": "https://dnr.maryland.gov/fisheries/Pages/horseshoe-crab.aspx",
-      "summary": "Life History The horsehoe crab, a close relative of the extant trilobite, is the oldest living fossil in Maryland, living here for approximately 360 million years. Horseshoe crabs are bottom-dwelling organisms that belong to the largest group of all living animals, the phylum known as arthropods. The presence of chelicera (pincer-like appendages), 5 pairs of walking legs and book gills, and ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0632391bb9f3ce7d",
-      "title": "Horseshoe crab | Blood & Facts | Britannica",
-      "url": "https://www.britannica.com/animal/horseshoe-crab",
-      "summary": "Horseshoe crab, common name of four species of marine arthropods found on the east coasts of Asia and North America. They are not crabs, however, and are related to scorpions, spiders, and trilobites. Two species are harvested for their coagulogen, which is used to test for the presence of gram-negative bacteria.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "41154ee49e310251",
-      "title": "How Long Have Horseshoe Crabs Existed? - Biology Insights",
-      "url": "https://biologyinsights.com/how-long-have-horseshoe-crabs-existed/",
-      "summary": "Explore how horseshoe crabs have survived 450 million years unchanged, their link to spiders, and their modern medical and ecological importance.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba69f7546e228385",
-      "title": "Law Firm | Sarrett Price | Naples",
-      "url": "https://www.sarrettprice.com/",
-      "summary": "Address 999 Vanderbilt Beach Road Suite 200, Naples, Florida 34108 Phone: 239-325-3350",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
         "retail"
       ],
       "primary_type": "retail",
@@ -2381,464 +1531,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "14126fdb9ce4a1d4",
-      "title": "Naples Office - Osterhout & McKinney, PA",
-      "url": "https://osterhoutmckinney.com/locations/naples-office/",
-      "summary": "Osterhout & McKinney, P.A. 3783 Seago Lane Fort Myers, FL 33901 Osterhout & McKinney, P.A. CEO Concierge Executive Offices 999 Vanderbilt Beach Road, Suite 200 Naples, FL 34108",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a873940f32025d67",
-      "title": "NHL Hockey Standings | NHL.com",
-      "url": "https://www.nhl.com/standings",
-      "summary": "The official standings for the National Hockey League.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "acd4b595f41faa56",
-      "title": "NHL Scores, News & Highlights - tsn.ca",
-      "url": "https://www.tsn.ca/nhl/",
-      "summary": "Live National Hockey League News, Highlights & Teams Stats. Watch Leafs, Oilers, Flames games on TSN",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "retail"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0c821d306314bb0a",
-      "title": "NHL Standings - 2026-27 Regular Season Division Standings - ESPN",
-      "url": "https://www.espn.com/nhl/standings/_/view/vs-division",
-      "summary": "Visit ESPN for the complete 2026-27 NHL Regular Season Division standings. Includes winning percentage, home and away record, and current streak.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c4f204d39dd01ffe",
-      "title": "NHL Standings - 2026-27 season - ESPN",
-      "url": "https://www.espn.com/nhl/standings",
-      "summary": "Visit ESPN for the complete 2026-27 NHL season standings. Includes league, conference and division standings for regular season and playoffs.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "50a7929eef4151be",
-      "title": "NHL Standings - Hockey - TSN",
-      "url": "https://www.tsn.ca/nhl/standings/",
-      "summary": "Track playoff spots, stats, games analysis & Canadian Hockey news on TSN. Live National Hockey League Team Standings.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "724b2edb5122001a",
-      "title": "nhl standings - Search",
-      "url": "https://www.bing.com/sportsdetails?q=nhl%20standings&sport=IceHockey&scenario=League&TimezoneId=Eastern%20Standard%20Time&IANATimezoneId=America/New_York&ISOTimezoneKey=EDT&league=IceHockey_NHL&intent=Standings&seasonyear=2025&segment=sports&isl2=true",
-      "summary": "2025-26 Season Games",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a0d03530abd905c6",
-      "title": "NHL Standings 2026-27 - Yahoo Sports",
-      "url": "https://sports.yahoo.com/nhl/standings/",
-      "summary": "Get the latest NHL standings for the 2026-27 season, including Eastern and Western Conference standings, the wild card race, and playoff seeding.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d7c37bcaba2848c0",
-      "title": "Official Site of the National Hockey League | NHL.com",
-      "url": "https://www.nhl.com/",
-      "summary": "The official National Hockey League website including news, rosters, stats, schedules, teams, and video.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "retail"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "28da525663a23cfb",
-      "title": "PST to EST Converter - Time Difference & Current Time",
-      "url": "https://timealigner.com/timezone-converter/pst-to-est",
-      "summary": "Convert PST to EST time instantly. View the current time difference between Pacific Standard Time and Eastern Standard Time. Perfect for scheduling meetings and calls.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e4676fa84ed855d1",
-      "title": "PST to EST Converter — Convert Pacific Standard Time to Eastern ...",
-      "url": "https://calendarhours.com/pst-to-est/",
-      "summary": "Convert Pacific Standard Time (PST) to Eastern Standard Time (EST) with a live calculator, complete 24-hour table, next-day rollover notes and date-aware PT/ET guidance.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ec9d17a46aac87a3",
-      "title": "PST to EST Time Converter · Convert Pacific Standard Time (North ...",
-      "url": "https://utctime.info/converter/pst-to-est/",
-      "summary": "Convert PST (Pacific Standard Time (North America)) to EST (Eastern Standard Time (North America)). See the time difference, compare clocks, and use our calculator for exact conversions.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f02ec4b5b76ea127",
-      "title": "Rent Physical or Virtual Office Space in Naples, FL",
-      "url": "https://ceonaples.com/",
-      "summary": "Located at 999 Vanderbilt Beach Road #200, Naples, FL, 34108, our executive offices are set in the heart of the business district. We offer flexible terms and office space for rent that can adapt to your professional needs.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ad911b6ac1d1358f",
-      "title": "The History – Horseshoe Crab Recovery Coalition",
-      "url": "https://hscrabrecovery.org/the-history/",
-      "summary": "Fossil of Mesolimulus, a horseshoe crab species that existed during the Late Jurassic period, about 150 million years ago. Despite its ancient origins, the horseshoe crab has managed to persist through the ages. Because the horseshoe crabs we see today are mostly the same in shape and structure to those seen in the fossil record, horseshoe crabs are referred to as \"living fossils.\"",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a04b98c46fd40295",
-      "title": "Virtual Office Address at 999 Vanderbilt Beach Road, Naples, Florida 34108",
-      "url": "https://www.davincivirtual.com/loc/us/florida/naples-virtual-offices/facility-1269",
-      "summary": "Thank you for visiting Davinci Virtual. Our virtual office locations at 999 Vanderbilt Beach Road in Naples, FL have everything to meet your virtual business needs. Find business centers, day offices, part-time offices, and other virtual meeting facilities all equipped with live receptionist services and professional lobby greeters.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "99a1b850b06b11f5",
-      "title": "What is the opposite of hatred? - WordHippo",
-      "url": "https://www.wordhippo.com/what-is/the-opposite-of/hatred.html",
-      "summary": "Antonyms for hatred include love, affection, fondness, liking, admiration, joy, pleasure, goodwill, regard and respect. Find more opposite words at wordhippo.com!",
+      "id": "61f292a4c295adff",
+      "title": "How to contact Amazon customer service: A complete guide",
+      "url": "https://www.aboutamazon.com/news/company-news/contact-amazon-customer-service",
+      "summary": "How to contact Amazon Customer Service 24/7 When you need a little extra help with your Amazon experience, Amazon Customer Service is always there for you.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -2853,9 +1549,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2865,12 +1561,163 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "968807fd77f6502b",
-      "title": "Why Does the Sky Turn Red at Sunrise and Sunset?",
-      "url": "https://www.timeanddate.com/astronomy/red-sunset.html",
-      "summary": "Why does the morning and evening sky sometimes turn a shade of red, orange, or yellow? A phenomenon called Rayleigh scattering is responsible.",
+      "id": "3186d8f0602627ae",
+      "title": "How to contact Amazon customer service: Phone number, live chat, more",
+      "url": "https://www.usatoday.com/story/money/retail/2022/09/14/how-to-contact-amazon-account-inquiries/7867529001/",
+      "summary": "We've got Amazon's customer service phone number, live chat details and a guide on how to contact a seller for you. Here's how to resolve issues.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "957674ebe5c2fc2d",
+      "title": "How to Contact Amazon: Customer Service, Phone, Live Chat - Business ...",
+      "url": "https://www.businessinsider.com/guides/tech/how-to-contact-amazon-customer-service-phone-email-chat",
+      "summary": "For any product inquiries or order issues, contact Amazon's customer service team through the website or by calling 1-888-280-4331.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "91d9001d634cc8c3",
+      "title": "How to Contact Amazon: Phone Numbers, Live Chat, & More",
+      "url": "https://www.wikihow.com/Contact-Amazon",
+      "summary": "Phone Number: Call Amazon at 1-888-280-4331 for 24/7 customer service. Live Chat: Try Amazon’s chat feature to solve your problem. Customer Help Page: Use Amazon’s customer support page to find answers to common questions, tutorials, and troubleshooting tips.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c23a0808576e39d8",
+      "title": "How to Reach Amazon Customer Service - WalletHub",
+      "url": "https://wallethub.com/answers/how-to-reach-amazon-customer-service-2140887431/",
+      "summary": "You can reach Amazon customer service by calling 888-280-4331, available 24/7 for any questions, account issues, or membership concerns. You can also request a callback through the Amazon website to avoid waiting on hold, or contact them via live chat.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "088929435e30effa",
+      "title": "Sign In - TELUS Neighbourhood",
+      "url": "https://forum.telus.com/discussions/my_mobility_account/customers-with-dementia-or-alzheimers/telusWise-link",
+      "summary": "Keep me signed inWe'll keep you signed in on this device. We will only ask for your password when updating sensitive account information. For security reasons, don't select this option on a public device. Please check this box Sign In",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e16e0022dedec6d2",
+      "title": "TechNet",
+      "url": "https://social.technet.microsoft.com/Forums/en-US/01e9e7ec-6a09-4876-9060-cbcdffc3a0c6",
+      "summary": "TechNet",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2895,12 +1742,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7695b18226bed4a5",
-      "title": "Why Is the Sky Blue and Not Violet? - Biology Insights",
-      "url": "https://biologyinsights.com/why-is-the-sky-blue-and-not-violet/",
-      "summary": "The sky’s blue color raises a sophisticated question: why is it not violet? Sunlight contains all colors of the visible spectrum, and violet light has the shortest wavelength. Since the shortest wavelengths scatter most effectively in the atmosphere, the expectation is that the sky should appear violet. Resolving this paradox requires understanding the mechanics of light scattering, the ...",
+      "id": "4812048e93c23828",
+      "title": "TOP 10 BEST Volkswagen Dealer in Woodbury, MN - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Volkswagen+Dealer&find_loc=Woodbury%2C+MN",
+      "summary": "Auto Repair Cost Guide Car Stereo Installation Cost Guide Motorsport Vehicle Repairs Cost Guide Frequently Asked Questions and Answers What did people search for similar to volkswagen dealer in Woodbury, MN?",
+      "discovery_channel": "adjacent+broad_web",
+      "query": "Volkswagen Smart Glasses; near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "47500a4bf5944c95",
+      "title": "Volkswagen Service Near Woodbury, MN | Schmelz Countryside VW",
+      "url": "https://www.schmelzvw.com/woodbury-mn-service.html",
+      "summary": "For Volkswagen auto service near Woodbury, MN, by certified and experienced technicians, you are welcome to visit us at Schmelz Countryside Volkswagen.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2925,15 +1802,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "21f3949d3f6a090e",
-      "title": "Model Gallery - aistudio.yandex.ru",
-      "url": "https://aistudio.yandex.ru/en/model-gallery",
-      "summary": "Join the Yandex AI Studio community Join our community of developers and companies creating AI solutions based on AI Studio. Ask questions and share your experience, consult with experts and participants, learn about new platform features, take part in meetings, workshops, and private announcements.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "id": "6f76b19522e71241",
+      "title": "World News – Latest Breaking Headlines, Photos, Videos | New York Post",
+      "url": "https://nypost.com/world-news/",
+      "summary": "Read today’s latest world news for all the breaking international stories from Europe, Asia, the Middle East, and more, on the New York Post.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 1,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -2943,285 +1820,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk",
-        "community"
+        "news"
       ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e1b8768a1547f336",
-      "title": "Yandex AI Studio — Yandex AI technologies for business",
-      "url": "https://aistudio.yandex.ru/en",
-      "summary": "Join the Yandex AI Studio community Join our community of developers and companies creating AI solutions based on AI Studio. Ask questions and share your experience, consult with experts and participants, learn about new platform features, take part in meetings, workshops, and private announcements.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "db1614372712b315",
-      "title": "Введение в ИИ | Яндекс Лицей",
-      "url": "https://lyceum.yandex.ru/ai-basics",
-      "summary": "python ai algorithms очно в твоём городе откроем регистрацию в августе 2027 года начать путь в IT",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c2ffe547b83c357e",
-      "title": "Искусственный интеллект — ВсОШ — Всероссийская олимпиада школьников",
-      "url": "https://vsosh.yandex.ru/ai",
-      "summary": "Сегодня весь мир обсуждает стремительное развитие систем искусственного интеллекта. Эта олимпиада даёт школьникам возможность заглянуть глубже: понять, что стоит за современными ИИ-технологиями, и попробовать ...",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dde805c3534e71d3",
-      "title": "Как заШАДить ИИ",
-      "url": "https://education.yandex.ru/journal/shad-ai",
-      "summary": "Артём Галян рассказывает о том, как поступил в ШАД (и зачем) — и на чём важно сфокусироваться в процессе обучения",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "community"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "88dda148f2b47a03",
-      "title": "Нейросеть Алиса AI - бесплатный ии-чат Яндекса с генерацией текстов и ...",
-      "url": "https://alice.yandex.ru/",
-      "summary": "Работает на Alice AI — самом мощном семействе генеративных моделей Яндекса. Анализируйте файлы, ищите ответы, генерируйте тексты и изображения в чате. Бесплатно и без VPN",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0356816a7e2a859b",
-      "title": "Неросеть показала нам как выглядит Лукоморье. ИИ ролик ко Дню Рождения ...",
-      "url": "https://yandex.ru/video/preview/4197875973325718015",
-      "summary": "Источник видео: VK Видео",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "community"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8f7437ae1cc63df6",
-      "title": "Образовательная студия - Яндекс",
-      "url": "https://yandex.ru/alice/education",
-      "summary": "Работает на Alice AI — самом мощном семействе генеративных моделей Яндекса. Анализируйте файлы, ищите ответы, генерируйте тексты и изображения в чате. Бесплатно и без VPN",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c796ac9bf785f7e5",
-      "title": "Оживляйте ваши фото — с Алисой AI",
-      "url": "https://alice.yandex.ru/skills/animating-photo/",
-      "summary": "Превращайте обычные снимки в короткие атмосферные видео и делитесь имиu2028с близкими или публикуйте в социальных сетях. Просто отправьте фото Алисе AI и придумайте сюжет.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "689d4ac0d0e11c36",
-      "title": "Онлайн-курс «Нейросети для маркетинга»: обучение работе с ИИ и ...",
-      "url": "https://practicum.yandex.ru/ai-for-marketing/",
-      "summary": "Курс «Нейросети для маркетинга» от Яндекс Практикума — практическое обучение для специалистов по маркетингу и руководителей маркетинговых команд, желающих освоить современные нейросетевые инструменты для ...",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
