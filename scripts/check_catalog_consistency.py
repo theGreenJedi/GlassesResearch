@@ -31,7 +31,7 @@ def approved_pending_ids() -> set[str]:
     for path in MODELS.glob("THE_LIST_RECONCILIATION_*.md"):
         text = path.read_text(encoding="utf-8")
         match = re.search(
-            r"## Admit to canonical purchaser-history ledger\n(.*?)(?=\n## |\Z)",
+            r"## Admit to canonical (?:purchaser-history|real-world model) ledger\n(.*?)(?=\n## |\Z)",
             text,
             flags=re.S,
         )
