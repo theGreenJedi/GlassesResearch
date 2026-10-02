@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-09-02 → 2026-09-29**.
+Google Search Console page/query pairs for **2026-09-03 → 2026-09-30**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -13,12 +13,12 @@ Google Search Console page/query pairs for **2026-09-02 → 2026-09-29**.
 | https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | name brands in smart glasses that have a strong history of consistent product performance over the years. | 1 | 0 | 0.00% | 1.0 |
 | https://glassesresearch.org/hacking/ | github nashspence zetronix-lark-zshades-2k tinyorch.core | 1 | 0 | 0.00% | 6.0 |
 | https://glassesresearch.org/models/EvenG2/ | وش مواصفاتها | 1 | 0 | 0.00% | 8.0 |
-| https://glassesresearch.org/ | research glasses | 1 | 0 | 0.00% | 9.0 |
 | https://glassesresearch.org/hacking/ | +github nashspence zetronix-lark-zshades-2k zetronix-lark-zshades-2k.py | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | inmo air 3 industrial version vs realwear vuzix iristick | 30 | 0 | 0.00% | 13.0 |
+| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | inmo air 3 industrial version vs realwear vuzix iristick | 32 | 0 | 0.00% | 12.5 |
 | https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | ai glasses timeline | 6 | 0 | 0.00% | 15.2 |
 | https://glassesresearch.org/docs/REPORT_CARD/ | inmo air 3 industrial version vs realwear vuzix iristick | 3 | 0 | 0.00% | 22.0 |
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | smart glasses comparison | 2 | 0 | 0.00% | 14.0 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | when did ai glasses come out | 1 | 0 | 0.00% | 11.0 |
 | https://glassesresearch.org/hacking/ | heycyan sdk | 1 | 0 | 0.00% | 18.0 |
 | https://glassesresearch.org/docs/REPORT_CARD/ | mutrics gb 30 amazon | 1 | 0 | 0.00% | 20.0 |
 | https://glassesresearch.org/lineages/SNAP/ | snapchat spectacles website | 1 | 0 | 0.00% | 24.0 |
