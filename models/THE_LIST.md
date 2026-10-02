@@ -1,10 +1,10 @@
 # The List — Smart-Glasses Models Past and Present
 
 **Edition:** 2026-09-27
-**Scope:** products that were publicly sold, offered for preorder, or made available through documented enterprise/developer procurement  
-**Count:** 249 distinct purchasable models or explicitly marketed product generations
+**Scope:** distinct smart-glasses models with credible evidence of real-world hardware, whether publicly purchasable or not  
+**Count:** 249 canonical real-world models or explicitly marketed product generations
 
-This is the repository's canonical model index. It is a living purchasing-history ledger, not a claim that discovery is finished. A row means that a named product crossed the line from concept into a documented route to acquisition. It does **not** mean the product is still supported, was delivered in every region, or is recommended.
+This is the repository's canonical model index. It is a living real-world model ledger, not a claim that discovery is finished. A row means that a distinct named smart-glasses model has credible evidence of real hardware beyond a concept, rumor, or render. Public purchasability is recorded as access metadata, not used as the admission gate. It does **not** mean the product is still supported, was publicly sold, was delivered in every region, or is recommended.
 
 Use the stable `GLS-####` identifier when linking from the [glossary](../glossary/README.md), [FAQ](../docs/faq/README.md), [news archive](../docs/news/README.md), model chapters, issues, or research notes. The broader [research registry](CATALOG.md) remains the place for platforms, prototypes, unnamed partner devices, and early leads. Non-eyewear products in the broader wearable-HCI research universe are kept separately in the [Adjacent Wearable-HCI Catalog](ADJACENT_WEARABLES.md); they are never silently included in this count. The 2026-08-12 lineage admissions are recorded in the [catalog reconciliation ledger](THE_LIST_RECONCILIATION_2026-08-12.md). Later identity corrections, including retired IDs, are recorded in [catalog corrections](CATALOG_CORRECTIONS.md).
 
@@ -12,10 +12,11 @@ Use the stable `GLS-####` identifier when linking from the [glossary](../glossar
 
 | Field | Meaning |
 |---|---|
-| State | `current` = manufacturer still offers it; `preorder` = money/reservation accepted but broad delivery is not established; `legacy` = formerly obtainable; `enterprise` = sold primarily by quote/deployment channel; `developer` = access restricted to developers or program members |
+| State | Lifecycle/operational state: `current`, `preorder`, `deployed`, `pilot`, `production`, `legacy`/`discontinued`, `cancelled-after-production`, or `unknown` when evidence cannot establish the present state. Region/recall qualifiers may be appended where useful. |
+| Access | How hardware is obtained: `retail`, `preorder`, `enterprise/procurement`, `developer`, `closed/internal`, `marketplace`, `crowdfunding`, or `unknown`. Access is independent of lifecycle state. |
 | Type | `camera/audio`, `audio`, `display`, `XR display`, `enterprise monocular`, `accessibility`, or `open/developer` |
 | Evidence | `primary` = maker store, support, manual, release, or maintained product history; `commercial` = documented retail route; `secondary` = reputable contemporaneous reporting used when old primary pages are unavailable |
-| Era | First documented sale or order year, not prototype announcement year; `c.` marks an approximate year pending archival confirmation; `≤2026` means the current evidence proves the product was obtainable by this edition but has not yet pinned the earliest sale year |
+| Era | First documented real-world hardware year (sale, production, deployment, field/pilot use, or other evidenced physical existence), not a concept/render announcement year; `c.` marks an approximate year pending archival confirmation; `≤2026` means current evidence proves real hardware existed by this edition but has not yet pinned the earliest year |
 
 Status is last checked on the edition date and can vary by country. Frame colors, lens packages, prescription options, storage bundles, and unchanged co-brands are not separate models. A materially named generation or different hardware platform is.
 
