@@ -31,7 +31,7 @@ THE_LIST = ROOT / "models" / "THE_LIST.md"
 MODELS_README = ROOT / "models" / "README.md"
 
 GLS_ROW_RE = re.compile(r"^\| (GLS-\d{4}) \|", re.M)
-COUNT_RE = re.compile(r"(\*\*Count:\*\* )\d+( distinct purchasable models or explicitly marketed product generations)")
+COUNT_RE = re.compile(r"(\*\*Count:\*\* )\d+( canonical real-world models or explicitly marketed product generations)")
 
 
 def packet_admissions() -> list[tuple[str, str, bool]]:
@@ -40,7 +40,7 @@ def packet_admissions() -> list[tuple[str, str, bool]]:
     for path in sorted((ROOT / "models").glob("THE_LIST_RECONCILIATION_*.md")):
         text = path.read_text(encoding="utf-8")
         match = re.search(
-            r"## Admit to canonical purchaser-history ledger\n(.*?)(?=\n## |\Z)",
+            r"## Admit to canonical (?:purchaser-history|real-world model) ledger\n(.*?)(?=\n## |\Z)",
             text,
             flags=re.S,
         )

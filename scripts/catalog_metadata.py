@@ -17,7 +17,7 @@ import re
 
 EDITION_RE = re.compile(r"(\*\*Edition:\*\*\s*)(20\d{2}-\d{2}-\d{2})")
 ADMISSION_SECTION_RE = re.compile(
-    r"## Admit to canonical purchaser-history ledger\n(.*?)(?=\n## |\Z)",
+    r"## Admit to canonical (?:purchaser-history|real-world model) ledger\n(.*?)(?=\n## |\Z)",
     flags=re.S,
 )
 DATE_LINE_RE = re.compile(r"^Date:\s*(20\d{2}-\d{2}-\d{2})\s*$", flags=re.M)
@@ -54,7 +54,7 @@ def canonical_model_count(root: Path, the_list_text: str | None = None) -> int:
 
 
 def canonical_event_dates(root: Path) -> list[str]:
-    """Return dates of events that can change the canonical purchaser ledger."""
+    """Return dates of events that can change the canonical real-world model ledger."""
     dates: list[str] = []
     models = root / "models"
 
