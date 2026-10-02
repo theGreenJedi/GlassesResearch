@@ -54,7 +54,7 @@ def canonical_model_count(root: Path, the_list_text: str | None = None) -> int:
 
 
 def canonical_event_dates(root: Path) -> list[str]:
-    """Return dates of events that can change the canonical purchaser ledger."""
+    """Return dates of events that can change the canonical real-world model ledger."""
     dates: list[str] = []
     models = root / "models"
 
