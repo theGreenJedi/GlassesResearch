@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-02T19:22:39.909794+00:00`
+Generated: `2026-10-02T19:25:15.470935+00:00`
 
-- Intake files inspected: **291**
-- Candidates retained in this review window/history: **12160**
+- Intake files inspected: **293**
+- Candidates retained in this review window/history: **12246**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2670
+- `adjacent_radar`: 2687
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 729
-- `rejected_noise`: 8620
+- `needs_editorial_verification`: 732
+- `rejected_noise`: 8688
 - `source_monitor`: 1
-- `source_review`: 38
+- `source_review`: 36
 - `watching`: 84
 
 ## Action queue
@@ -147,7 +147,7 @@ Generated: `2026-10-02T19:22:39.909794+00:00`
 | high | needs_editorial_verification | direct | [Meta To Launch Smart Glasses Without Camera As Privacy Backlash Grows - uploadvr.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxPRU83UGZPeWFKTk91S2xlUU5xeVhTVDcyVVZZaW5jem5sZXQ5WGFyV3NkNUN6SGhTV3hMV0JXdWFpN3R2RndfaWx0OFhRRVFBQ0Y2UFlhdHp4TlREeURodjJkX1RUQjNBQnFxS3EwSlNELUpXc3Z0bnpPdWtLUTkzdDdXdjJ4X0lKWlY2T2Y4Y0tUczh6MjEwdVY1RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta VR Glasses, VR/AR glasses weighing just 100g, have been released, featuring a micro-OLED display and supporting 5K resolution. - GIGAZI](https://news.google.com/rss/articles/CBMiakFVX3lxTE9DVUQxdDBmX181aHJKMXNqN1JnRlRoUjVCV1lCTzc3Zl93YmUzQ2xEMDVfSXlZUzd6aE9GbnRhWEw4aEt6S0NzQ19fN1hPU3RXWjRKSDM1Nk1tbFhYOEp0cHhBUS13ZVlwMVE?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Meta2026 Developer Conference kicks off this week: smart glasses and Phoenix are poised to launch, with Muse AI as the biggest highlight, wh](https://news.google.com/rss/articles/CBMirAFBVV95cUxOeTZ1d0o0YzV2TjdEY1FBdnh3Ul9ZZjdMelk2S0JWYUNESWdEN09TTkRTX0hjcTZjZzhqMFoyRG1rcFJENnpKZE40QXNlR202Y3VsWVB2MVJtRUFsVHVNV2Q2NjdtMmRUdG02S3dkbGpPUnVHb2F4YllOWjI0NV9WZjhNYVl4VWNidGNvd0JwX2tqc0EwUWFBWkJsaVpWakxRVzdtOUZlMlVCdHow?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
-| high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - mixed-news.com](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [AI Glasses Launch Could Be A Game Changer For EssilorLuxottica (ENXTPA:EL) - simplywall.st](https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVkdTa3d6aHlMbkpDSkg4STRGTXI5bkFlZVJ6RWFGSWpUT1E3MURCQTVIUXhyM1RiZW9fV0N6RkxWVzlQTUVlMjRuZ2IzY0JJejl2aU83VTUwTjVnc2FpeGdzb29ZSGZQeHJweXRVaWVYMTRaX2Q1aC1sNXp5WFNSM2JwaWZENW53TWtQRUh6Z0Jad2tTQlBqM0JreG9VRzhrd2YzaDZqMEFBUElpZWxRNWlJS0huaW9UNVRKbVpYZTVNSUN4V1c1dENoa3ZBNjJmS2tJdGJJVkhrOUJKV2ttU2wwd2JUbEtJWDFj0gHwAUFVX3lxTE1WbWFSeTAtajY4Z0RTVGFFdTFDUktOZDRKbkd5T3VTbFkySUsza2hWc1FBSjFZdWFTQUVlc0gyYjdKbi1vWEZQZXRoS1NEY1pNa2NqWnlrcDc1X3JuazNWZHdwcVIyeFJnS1NMNVlmWFZNWDBBRnlORFhhdjRxbjRRTDBJaFJZN0NVMEI4T09VOXZ0ZDJybVBMSXJDNTNDVm5DN2JqLXRWUG45dXgtYWs1bXhKZjNjd0VSZElNUWkxanhLa1JMXzNjRHZZdFNZN2R0cUYxZHFIZXgtUVBra3dXQ3pIQjZiYTFhQ2txdVV6OQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - Daily Hive](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1PQU5LUVNiTFd5VXFCcm9ncUpJQjYwWVRoTTRWZTQxdXY4dkhZOHdQX082cFFpbWI4NEJJYXQ3eUN5NFYtT1VrYk5MNVQ4S0V3ZV95cWFndVV6Q29yd1lHSS00bUdiWDQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - Daily Hive](https://news.google.com/rss/articles/CBMia0FVX3lxTE92a3RtRVk2Ql91d0tIbWhLMXZyTm4tejhNYnBaXzB0Q0xGS21nUWNabl8zSjRrYnoyYlhyVGpFWWFrdnkyY0lKcGFSOXBTcG9OS1pmYTEzbVp0WWlyMEQ1bThVcjEtWE10LUJv?oc=5) | reachable (200) | research_news_review, model_catalog_review |
