@@ -36,6 +36,9 @@ def main():
         "actual failed action",
         "not_attempted and attempted_failed",
         "after recovery/continuation",
+        "direct connector route",
+        "verify the mutation by re-read",
+        "not recurring Pete approval gates",
     ):
         if required not in contract:
             fail(f"closed-loop optimizer invariant missing: {required}")
