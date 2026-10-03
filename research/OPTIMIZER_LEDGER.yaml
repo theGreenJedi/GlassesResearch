@@ -1,7 +1,7 @@
 # GlassesResearch durable optimizer/research ledger
 # Machine-readable institutional memory. Internal: this file is not a public research surface.
 schema_version: 1
-updated: 2026-10-01
+updated: 2026-10-03
 mission: "Nothing valuable should exist only because we remember talking about it."
 research_principle: "Research is the umbrella. Community Research is subordinate to Research as a source/evidence lane. Subjects may graduate into Research because they need investigation or because GlassesResearch is actively investigating them; completion is not a prerequisite."
 
@@ -21,6 +21,7 @@ policy:
     - "Routine failures enter bounded recovery before escalation; Pete is not the optimizer routine error handler."
     - "A blocker requires evidence from an actual failed action; not_attempted and attempted_failed are distinct states."
     - "Routine human reporting occurs after recovery/continuation and is exception-based."
+    - "Authorized GitHub write-path friction must retry through the direct connector route, verify the mutation by re-read, and continue; standing write permission and repository identity are not recurring Pete approval gates."
   research_graduation:
     states: [needs_investigation, under_investigation, findings_established]
     rule: "A retained finding may graduate into Research when significance/evidence warrants a durable research subject. Research includes things GlassesResearch needs to investigate and things it is actively investigating; a final answer is not required."
@@ -57,7 +58,7 @@ findings:
   - {id: OPT-2026-017, title: "Newsroom freshness and collector health observability", grade: HIGH, first_seen: 2026-09-15, last_reviewed: 2026-09-15, source: "newsroom observability audit #406", state: promoted, evidence_strength: strong, rationale: "Make collector staleness, processing backlog, coverage misses and publication lag distinguishable and machine-visible.", related: ["#406"]}
   - {id: OPT-2026-018, title: "Complete model evidence dossiers and no-orphan model routing", grade: HIGH, first_seen: 2026-09-15, last_reviewed: 2026-09-15, source: "evidence enrichment architecture; #579; CI run 34964235714", state: commissioned, research_state: under_investigation, evidence_strength: strong, rationale: "Every retained model-specific evidence resource must remain discoverable through that model's dossier regardless of verification state; deterministic per-model indexes now enforce completeness and reproducibility. Public model-page rendering remains UI-bound.", constraints: [public_rendering_ui_moratorium, continuous_producer_integration_pending], related: ["#579"]}
 
-  - {id: OPT-2026-019, title: "Closed-loop optimizer recovery and escalation", grade: VERY_HIGH, first_seen: 2026-10-01, last_reviewed: 2026-10-01, source: "optimizer supervision failure analysis; execution issue #660", state: execution, evidence_strength: strong, rationale: "Prevent intermediate or unattempted friction from becoming human-facing blockers by making recovery, evidence-backed blocker classification, continuation, and exception-only escalation part of the optimizer contract.", related: ["#660"]}
+  - {id: OPT-2026-019, title: "Closed-loop optimizer recovery and escalation", grade: VERY_HIGH, first_seen: 2026-10-01, last_reviewed: 2026-10-03, source: "optimizer supervision failure analysis; execution issue #660; 2026-10-03 write-path regression", state: execution, evidence_strength: strong, rationale: "Prevent intermediate or unattempted friction from becoming human-facing blockers. The 2026-10-03 regression proved policy-only commissioning was insufficient: authorized GitHub writes must recover through the direct connector path, verify by re-read, and continue without asking Pete to reconfirm standing permission.", related: ["#660"]}
 
 rejected_low_value:
   - generic best-glasses rankings
