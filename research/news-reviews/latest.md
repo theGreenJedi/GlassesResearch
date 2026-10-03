@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-03T09:28:58.294628+00:00`
+Generated: `2026-10-03T10:05:21.123643+00:00`
 
-- Intake files inspected: **289**
-- Candidates retained in this review window/history: **12072**
+- Intake files inspected: **287**
+- Candidates retained in this review window/history: **12018**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2655
+- `adjacent_radar`: 2648
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 723
-- `rejected_noise`: 8551
+- `needs_editorial_verification`: 722
+- `rejected_noise`: 8507
 - `source_monitor`: 1
-- `source_review`: 41
+- `source_review`: 39
 - `watching`: 83
 
 ## Action queue
@@ -26,7 +26,6 @@ Generated: `2026-10-03T09:28:58.294628+00:00`
 | high | needs_editorial_verification | direct | [Meta has announced 'Ray-Ban Meta Audio,' smart glasses without a camera, boasting up to 12 hours of battery life and shipping starting Octob](https://news.google.com/rss/articles/CBMibkFVX3lxTE9IWTJ3blV4VFltTDRtNnVCZUdMdFBFd2MzM2xMNkNEZl8tUVhWaktaTDlBbXBuT3ZLM2pVWDJqODhvQS1yVUJpX3ZsVU1ZVUZabXl5SW5ZWXozUVV5eHZmZ2FDcUNGbjBTemJRS213?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta unveils $1,299 VR glasses, camera-free AI glasses and Muse Charm; India launch yet to be announced - ibtimes.co.in](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSnVhRVc4RU5CUkxFc29jQ29sdy1qc1pEZUlpSnlOWUlETDRuRDVSRDh0TzJtbXBzNTRhLXNNaGRhb3hyY3RTSEtSTEd1OGk1cUZrOHZRb1ZQQWJfZWFVZERJMXdzYlVuUTdNNnNXcG5HWS16QXJ1X0VPQWhYRmgzVl9VT0FQU0loOHd4RHYzV05sVEFzcUVURENfOGJzMzRFYXVHRVUzazRUd3k0OTZOdVNaZWl0bVJ1VVppNHA0T3MzSmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | ["You can see them from a mile away" – new Snap Specs smart glasses released on pre-order, boasting an all-new solution to the backlash again](https://news.google.com/rss/articles/CBMixwJBVV95cUxOMFlmUVpTa01RcktWRXFKd2p6YUU3YVpzclUyMC1iTGRUdDViVUlKQ0xWNUdqUG1HRUlqVDNkVEh0YXFvTC16SnN4b3k0U29MUF9xRVRrU3U2cDhjaTBRajVBUTBDT3M4c2Rzc2doQzdxdUFraVctNzFEUmdOVGdrTlhfUzRLUTgtSV9WdFJhUHk5T241Ty14U0ZEQ2Z3STZGRk1Ub1NSUjJVNTRPSkNOaGZhYmx3bmI5QkRkcEZrNFcwSmdPY0tfT2RfbnBBN3ZIZWdXOVRkQzg0eUZaLTB4bXg5V0ppajhTcjZJOThDUXdRMW1IZ0lwTnNUOFNwb2dRdHQ2WTQyNWgtc0Nkcmx6allteGxzbWhJTzVSUjNxa3E3ZldUaVRxVVdXYklFd3pMVWFDZ3NuNEZkV2hfS3hmVnN4ZWUyYm8?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.297](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.297) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.298](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.298) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.299](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.299) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.300](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.300) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -182,7 +181,6 @@ Generated: `2026-10-03T09:28:58.294628+00:00`
 | high | needs_editorial_verification | direct | [French authorities launch criminal probe into sexual harassment involving smart glasses - anewz.tv](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMUFNV1VJSGJVRUdCQkI2R1k2ZmZlRWxnT0FQZlgtNUZrajM0NUVFbDhGbFRWLXY1OG1WWXNTdUFvR1RxaXkxTUxETUUxNzZ2bThwODJfQURUUTBBY2RDMmluMmVGOTJMdkxBVHZMZGlPTlp2OXBteGpkWFlhdkV5Y3Q2NzdwQjM1bkg0VkVmazVBWjFoZG9Zam91YmRXYW9jZGgxY25pSDVhcFpwVXNzdGhmQ0FjNlBC?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [From Muse Charm Audio Glasses To New VR Glasses And More, Everything Announced At Meta Connect 2026 - ETV Bharat](https://news.google.com/rss/articles/CBMivwFBVV95cUxQMS05MDg4LWM4Ym40UnotM1VKR2p5ZEpPVklNSkdPTUNTQ2g3Vm5iR1BzcC1zcTlPZ25WU2NkZUtKX2Vac3hVYXNNelp2SUtfZThBZkhwZWRIVjFzVDVFcURZSFpIWHk1UGZSQ2tIQ3BkNGhzOHhVb0lYTUJyamdwWFRtRFJzTnRORlpMazV2a2NFMEs5dU50N24xcGUzeF9kd182OEt6c0hVSVFxbDlBNDh1NGlkWFJTYTRXN01FNNIBvwFBVV95cUxQMS05MDg4LWM4Ym40UnotM1VKR2p5ZEpPVklNSkdPTUNTQ2g3Vm5iR1BzcC1zcTlPZ25WU2NkZUtKX2Vac3hVYXNNelp2SUtfZThBZkhwZWRIVjFzVDVFcURZSFpIWHk1UGZSQ2tIQ3BkNGhzOHhVb0lYTUJyamdwWFRtRFJzTnRORlpMazV2a2NFMEs5dU50N24xcGUzeF9kd182OEt6c0hVSVFxbDlBNDh1NGlkWFJTYTRXN01FNA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [From Muse Charm Audio Glasses To New VR Glasses And More, Everything Announced At Meta Connect 2026 - etvbharat.com](https://news.google.com/rss/articles/CBMiugFBVV95cUxPUUEzX0xSN0pWcEw3RmRiM3RlUkJzcmJBc04xTnR5OTFDcDJDb1hfMm9mUFVaNXpNYU0ycFRaNDBxVmFNVFZXeVlSWS1GWHgxWWJaU0l0WTdoU0E2bGNTdG4tM0pRZGh5WXdVMWltNkl0eUZDaW4zR3MzNUhQOF9QSm9TcjRuQzZIM3h5Qm1sckYzSlNBYXhxNjJRM3FOdHE5Q1BVRU1hRGp3UnRIVlk1MGl6bktnaU16MlHSAb8BQVVfeXFMUDEtOTA4OC1jOGJuNFJ6LTNVSkdqeWRKT1ZJTUpHT01DU0NoN1ZuYkdQc3Atc3E5T2duVlNjZGVLSl9lWnN4VWFzTXpadklLX2U4QWZIcGVkSFYxc1Q1RXFEWUhaSFh5NVBmUkNrSENwZDRoczh4VW9JWE1CcmpncFhUbURSc050TkZaTGs1dmtjRTBLOXVOdDduMXBlM3hfZHdfNjhLenNIVUlRcWw5QTQ4dTRpZFhSU2E0VzdNRTQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Hands-on: XREAL Aura AR Glasses with Android XR and a 70-degree Field ...](https://www.roadtovr.com/xreal-aura-ar-glasses-android-xr-hands-on-preview/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
 | high | needs_editorial_verification | direct | [Hans Anders critica las gafas inteligentes Ray-Ban de Meta por cuestiones de privacidad. - es.qz.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQQ05ySW4zVW9rMm50RE5wd3ZnTXp3VkpZazA1SDZKUWVPanVlUGg3bUE0S3pLTTN1dDlhcUNQLVhKd1JRYjZHVjhBMERmSzN1Vm8tV3RMcTBFYmgwQUpGMExqelJfbmJpN3hKNVVpNGoxMXJNa21ubjEtQlVpM1l2bjY5dkdHZw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Hans Anders Suspends Meta Ray-Ban Smart Glasses Sales Over Privacy - Global Banking & Finance Review](https://news.google.com/rss/articles/CBMinAFBVV95cUxNU3lSNFh0MEJRVG9PVGctRXFMZERjTHp5MDhESS1FNnB0cVFtZEQ5NUxOZF9zQlVITU9RZ2o0My1yS1FVQ0JDYVAwdV9rd1pZbVpIclVDVktaSUlqOERWR1UxX3pRaGZHUHVRSWtfZVBwbENJLXBXWEhLN0pLMjJ1WFk1dTFFalBkTzJHdWZKUjI2bkgwY3FjTEZwUXo?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Huawei AI Glasses Launch: Full Price, Specs, and AI Features Guide](https://aivisorglasses.com/latest/huawei-ai-glasses-official-launch) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, retail_rebrand_review |
@@ -272,6 +270,8 @@ Generated: `2026-10-03T09:28:58.294628+00:00`
 | normal | needs_editorial_verification | direct | [Hans Anders Halts Smart Glasses Sales in Europe - dailybeirut.com](https://news.google.com/rss/articles/CBMirAFBVV95cUxQNVJ2Z1RFVlBnNVM2aktHNEVLZUlfMlJ2UkZRaHN1OVdPWEhpRWxPVllrei1xQUFlYjhnMHF5c2FwcjJxa09HMUtUMGl1cGhybWRkblZaZ2dNUWZOUTh3T045aGx3NWdOY3JvbUU5U2J4eXhGMjVGWkpDT2NIdVg1VVhMZm0wY3RKcWEyUGNjVERYM1NVYnVDNDNSS1ctWDBOS2tKcjJFU0xxNzll?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Hans Anders retira las gafas inteligentes de sus tiendas en Bélgica y - dailybeirut.com](https://news.google.com/rss/articles/CBMixAFBVV95cUxPNWp1TFhxc1Z4VlJQVFNWRXlHZXNTMHBFTDgzal93eDQtNEVTb1hLN2ZqS1E5Y2h4MFFIRW1BRG1zSElqcS1MclJvVGxUSFVHSmVHaUZTTGNRTnRQa3RxckItb08zeXVRejBUcjhyZV9nd25fb3pNOURNZjZCQXA0Nk50UTlGamVpYmwxUW1mdU5DZFRaOVhTRF80T1F1cU00dHlVUWVVNkhsbkY1cmNUa3MxY1BwQ2FHa3NKMFE4X2wzYzU5?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Hans Anders suspende la venta de gafas inteligentes de Meta por la polémica de privacidad - DiarioBitcoin](https://news.google.com/rss/articles/CBMiywFBVV95cUxPVklfRENhTVpIZVNFTGs4YkN0aW14dnh2ZW1NcHh0WTN0N0VoZUUxcms0ZVkydERjZF9hU2ROaDdEYUVtYnpOVXlOZGVvLS1jZjhmN3NvMFJOUGVndVdVazRCTVMxUU5vcDhubHc1VHYtRUxpS2NKemtIRnRGanVJN0JVWV9zSGI4TDE3b0RzN29jNWVtR1VQWktNRl9pb1VBdHBpMWxoU01nbEJ0UG5oQkdXQzl4LWxTWE4ycHBwSGdLNkRVcjJiVGo1WQ?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [How to Use Meta Smart Glasses Without Being a Creep](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ac0b581be4d4c76b66b68dbfdfa0997&url=https%3a%2f%2fwww.popularmechanics.com%2ftechnology%2fgear%2fa73926209%2fmeta-smart-glasses-etiquette%2f&c=5066078992257857754&mkt=en-us) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Huawei AI Glasses boasts a 12MP camera, 12-hour battery ... - Notebookcheck](https://www.notebookcheck.net/Huawei-AI-Glasses-boasts-a-12MP-camera-12-hour-battery-life-and-three-designs.1278357.0.html) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
