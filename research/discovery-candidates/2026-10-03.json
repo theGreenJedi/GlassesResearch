@@ -1,40 +1,39 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-03T17:33:08.519250+00:00",
-  "candidate_count": 44,
-  "classifier_irrelevant_count": 39,
+  "discovered_utc": "2026-10-03T20:00:03.123442+00:00",
+  "candidate_count": 63,
+  "classifier_irrelevant_count": 54,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 5,
-    "broad_web": 19,
-    "community": 1,
-    "developer": 20
+    "adjacent": 9,
+    "broad_web": 33,
+    "developer": 21
   },
   "relationship_counts": {
-    "direct": 1,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 4,
+    "adjacent": 9,
     "speculative": 0,
-    "irrelevant": 39
+    "irrelevant": 54
   },
   "type_counts": {
     "model": 3,
     "review": 1,
-    "video": 2,
-    "news": 14,
-    "research": 3,
-    "tool": 20,
-    "sdk": 20,
-    "retail": 3,
-    "community": 9
+    "news": 27,
+    "research": 1,
+    "tool": 22,
+    "sdk": 21,
+    "policy": 1,
+    "retail": 10,
+    "community": 10,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 4,
-    "deep_research": 2,
-    "reject_noise": 39,
-    "report_card_evidence": 3,
-    "research_news_review": 5,
-    "retail_rebrand_review": 1
+    "adjacent_radar": 9,
+    "deep_research": 1,
+    "reject_noise": 54,
+    "research_news_review": 9,
+    "watching": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -45,29 +44,52 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [
-    {
-      "channel": "manufacturer_catalog",
-      "url": "https://www.everysight.com/",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "channel": "manufacturer_catalog",
-      "url": "https://smart-bike.net/collections/accessories",
-      "error": "HTTP Error 503: Service Unavailable"
-    }
-  ],
+  "collector_errors": [],
   "candidates": [
     {
-      "id": "d721b10351c43449",
-      "title": "XREAL xbx a01+ & XREAL Beam Pro Bundle – XREAL US Shop",
-      "url": "https://us.shop.xreal.com/products/xreal-xbx-a01-xreal-beam-pro-bundle",
-      "summary": "Learn more about ️XREAL xbx a01+ Learn more about ️XREAL Beam Pro What's in the box? Glasses Unit XREAL Beam Pro C-C cable Nose pad (S/M/L) Cleaning cloth Protective case User manual",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
+      "id": "a84c30a227e6a29c",
+      "title": "2 News KTVN",
+      "url": "https://www.2news.com/",
+      "summary": "State troopers are investigating a rollover crash that happened along I-580 on Friday evening. FTD Awareness Week highlights the need for greater understanding and research into Frontotemporal Degeneration, a rare dementia that primarily…",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "adjacent_hci",
       "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c3e284a8375db6e3",
+      "title": "2 (number) - New World Encyclopedia",
+      "url": "https://www.newworldencyclopedia.org/entry/2_(number)",
+      "summary": "The glyph currently used in the Western world to represent the number 2 traces its roots back to the Brahmin Indians, who wrote 2 as two horizontal lines. (It is still written that way in modern Chinese and Japanese.)",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -75,29 +97,406 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0a7ede7f44be1530",
-      "title": "Clarksburg MD Real Estate & Homes For Sale - Zillow",
-      "url": "https://www.zillow.com/clarksburg-md/",
-      "summary": "Zillow has 80 homes for sale in Clarksburg MD. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "id": "78e25f71f9fe655b",
+      "title": "2 (number) - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/2_(number)",
+      "summary": "2 (Two; / ˈtuː / ( ⓘ)) is a number, numeral, and glyph. It is the number after 1 (one), followed by 3 (three), then 4 (four). In Roman numerals, it is II.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "746fc168f331b3ea",
+      "title": "2 - HandWiki",
+      "url": "https://handwiki.org/wiki/2",
+      "summary": "2 (two) is a number, numeral and digit. It is the natural number following 1 and preceding 3. It is the smallest and only even prime number. Because it forms the basis of a duality, it has religious and spiritual significance in many cultures.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "22cce7bba92a9e12",
+      "title": "FedEx Advanced Shipment Tracking",
+      "url": "https://images.fedex.com/wtrk/fedextracking/",
+      "summary": "FedEx Advanced Shipment Tracking",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "465f28970cb3ead0",
+      "title": "Local News - 2 News Nevada KTVN | 2news.com - 2 News KTVN",
+      "url": "https://www.2news.com/news/local/",
+      "summary": "Meals are free for all children between the ages of 2 and 18 and children do not have to be a part of any program to eat.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "acff2215984d6e9a",
+      "title": "The number two - Britannica",
+      "url": "https://www.britannica.com/science/the-number-two",
+      "summary": "The number two, represented as '2', is a fundamental concept in mathematics, signifying one more than one. It is the base for the binary number system, which uses only 0 and 1, crucial for computers. Culturally, the number 2 often symbolizes dualities such as male/female, yes/no, and yin/yang. It can also represent concepts like \"double\" or \"dual\". In some contexts, like the Mayan number ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "research_news_review",
+        "watching",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "739b2a561fbaa255",
+      "title": "Tracking and Managing Deliveries | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking/guide-for-tracking-managing-deliveries.html",
+      "summary": "Find out FedEx delivery hours, discover ways to get more control of your shipments, and learn about your package status and tracking.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "465fe4be89273d84",
+      "title": "What does 2 mean? - Definitions.net",
+      "url": "https://www.definitions.net/definition/2",
+      "summary": "In mathematics, the number 2 is an integer that follows 1 and precedes 3. It is considered a prime number because it is divisible only by 1 and itself. Additionally, 2 is the base of the binary number system, which is widely used in computing and digital electronics.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5e1ca53543b16f80",
+      "title": "All about Berlin‘s official marketing company | about.visitBerlin.de",
+      "url": "https://about.visitberlin.de/en",
+      "summary": "Promoting Berlin globally visitBerlin is the city's official marketing agency and promotes Berlin as a tourism and convention destination worldwide. Together with partners from politics, business and society, visitBerlin pursues the goal of further developing Berlin tourism and positioning it for the future.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2550b016ff2e751c",
+      "title": "Alles über Berlins offizielle Tourismus- und Kongressorganisation ...",
+      "url": "https://about.visitberlin.de/",
+      "summary": "Weltweites und stadtverträgliches Berlin-Marketing visitBerlin ist die offizielle Marketingagentur der Stadt und wirbt weltweit für Berlin als Tourismus- und Kongressdestination. Gemeinsam mit Partnern aus Politik, Wirtschaft und Gesellschaft verfolgt visitBerlin das Ziel, den Berlin-Tourismus weiterzuentwickeln und zukunftsfähig aufzustellen.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7655347772ef188d",
+      "title": "Appointment - Apple Community",
+      "url": "https://discussions.apple.com/thread/255221134",
+      "summary": "You can use this link to make an appointment. Genius Bar Reservation and Apple Support Options - Apple",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5585bbee3bd662fa",
+      "title": "Appointment Apple store Rancho Cucamonga - Apple Community",
+      "url": "https://discussions.apple.com/thread/252628041",
+      "summary": "Appointment Apple store Rancho Cucamonga How do I make an appointment there? Planning to purchase a new iphone, maybe the 12Pro Max. and how to transfer my data and other stuff from my old phone to the new one.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "97a06e7eae3d015f",
+      "title": "Appointment at Genius Bar in Albuquerque … - Apple Community",
+      "url": "https://discussions.apple.com/thread/254901372",
+      "summary": "Appointment at Genius Bar in Albuquerque New Mexico for my iphone How do I make an appointment for my iPhone iPhone 14 Pro Posted on Jun 2, 2023 7:23 PM 􁂫 Top-ranking reply",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "339e3a5c4b36abed",
+      "title": "Benefit Calculators | SSA",
+      "url": "https://www.ssa.gov/benefits/calculators/",
+      "summary": "Benefit Calculators (En español) The best way to plan for your retirement is to create a personal my Social Security account. With my Social Security, you can verify your earnings, review your Social Security Statement, and much more. We also have a variety of online calculators to help you with your planning.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [
         "review"
       ],
@@ -107,147 +506,12 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "review",
-        "retail"
+        "review"
       ],
       "primary_type": "review",
       "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "69d6b76a7fccb44f",
-      "title": "College Football Scores - Sun Belt Conference 2026 Season - ESPN",
-      "url": "https://www.espn.com/college-football/scoreboard/_/group/37",
-      "summary": "Live scores for every Sun Belt Conference 2026 NCAAF season game on ESPN. Includes box scores, video highlights, play breakdowns and updated odds.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "video",
-        "research"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ea0cd9396cfafe4b",
-      "title": "College Football Scores Week 2, Big Ten Conference 2026 Regular ... - ESPN",
-      "url": "https://www.espn.com/college-football/scoreboard/_/week/2/year/2026/seasontype/2/group/5",
-      "summary": "Live scores for week 2 of the Big Ten Conference 2026 NCAAF Regular Season on ESPN. Includes box scores, video highlights, play breakdowns and updated odds.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "video",
-        "research"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cd8b527e83afa5b6",
-      "title": "NCAA Football RealTime Scores, College Football RealTime Scores - ESPN",
-      "url": "https://insider.espn.com/ncf/realTime",
-      "summary": "College RealTime delivers scores directly from every College Football stadium scoreboard -- so live that it's just like being there! View every score discreetly on your desktop, updated instantly with NO refreshing.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ba9c37e76b6f0f8",
-      "title": "Creating holes in the same way as Tinkercad - Autodesk Community",
-      "url": "https://forums.autodesk.com/t5/fusion-design-validate-document/creating-holes-in-the-same-way-as-tinkercad/td-p/8215332",
-      "summary": "Hi all I'm trying to switch from Tinkercad to Fusion 360 as Tinkercad is becoming less and less stable. I've become very used to creating shapes by taking a solid shape and a 'hole' shape and merging them together. I've looked to see if this is possible in Fusion 360 but really struggling to find ...",
-      "discovery_channel": "developer",
-      "query": "smart glasses developer API",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
         "reject_noise"
       ],
       "triage_priority": "low",
@@ -256,18 +520,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b49dba4e8a75e7f2",
-      "title": "Nike Shoes - DSW",
-      "url": "https://www.dsw.com/brands/nike/shoes",
-      "summary": "Shop Nike Shoes at DSW. Free shipping, convenient returns and extra perks for VIPs. See what's new from Nike on DSW.com today!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "a2ee330ff6f4388f",
+      "title": "Berlin for a bargain price | visitBerlin.de",
+      "url": "https://www.visitberlin.de/en/berlin-bargain-price",
+      "summary": "Berlin by train - accommodation already included The train travel deals are bargain deals for getting to Berlin – including train journey and hotel. Only available within Germany. For more information, please contact our travel advisor. Give us a call: +49 30 - 25 00 23 33* Send us an E-Mail: info@visitBerlin.de *Please note: telephone costs on a local rate, varies from mobile phone. We’re ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -276,7 +538,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "model",
+        "tool",
+        "sdk",
+        "retail"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -288,76 +553,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e6491bfc15e57ace",
-      "title": "Nike Shoes | Sign in for Free Shipping - Famous Footwear",
-      "url": "https://www.famousfootwear.com/browse/brands/nike",
-      "summary": "From Nike running shoes and Nike high tops to Nike slides and Nike basketball shoes, find all the hottest styles right here at Famous Footwear. You’re in the right place for the latest Nike shoes for the family, boasting the biggest trends of the year for women, men and kids.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8e725b06801f71f3",
-      "title": "Nike Shoes, Apparel, and Accessories | Foot Locker",
-      "url": "https://www.footlocker.com/category/brands/nike.html",
-      "summary": "Shop the latest selection of Nike at Foot Locker. Find the hottest sneaker drops from brands like Jordan, Nike, Under Armour, New Balance, and a bunch more. Free shipping for FLX members.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a40797fc800ad5dc",
-      "title": "rc roof rack by Brett1974 - Thingiverse",
-      "url": "https://www.thingiverse.com/thing:348795",
-      "summary": "rc roof rack by Brett1974 is licensed under the Creative Commons - Attribution - Share Alike license.",
+      "id": "d88c2a579fce6d5a",
+      "title": "Berlin Websites and Berlin-Apps | visitBerlin.de",
+      "url": "https://www.visitberlin.de/en/berlin-websites-and-berlin-apps",
+      "summary": "Berlin Apps - Discover Berlin online. We've put together some tips for Berlin apps, blogs and websites for you. Read more here!",
       "discovery_channel": "developer",
-      "query": "smart glasses developer API",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -383,12 +584,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "18a44cd07bba4b7b",
-      "title": "REBECA MAYER - Lic. en Psicología - Tecnica Superior en ... - LinkedIn",
-      "url": "https://ar.linkedin.com/in/rebeca-mayer",
-      "summary": "Esta semana cerramos las actividades del workshop Bienestar Organizacional dictado por REBECA MAYER ( Lic. en Psicología y Profesional de RRHH) junto a Carolina Sayago (CEO, Profesional de RRHH...",
+      "id": "043b749987866e8e",
+      "title": "Berlin's official travel website - visitBerlin.de",
+      "url": "https://www.visitberlin.de/en",
+      "summary": "Berlin's official travel portal visitBerlin.de: sights hotels tips events & tickets Here you can find out everything about the capital!",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -414,12 +615,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8b86481c38179d22",
-      "title": "Rebeca Mayer - Nutricionista e Mestra em Ciências da Saúde | LinkedIn",
-      "url": "https://br.linkedin.com/in/nutri-rebeca-mayer",
-      "summary": "Nutricionista e mestra em Ciências da Saúde, pós-graduanda em Neurociência e Comportamento Alimentar. Experiência em atendimentos com foco em saúde da mulher, lipedema e emagrecimento. Palestrante...",
+      "id": "9dedd705065c1c16",
+      "title": "Congress and Event Highlights in Berlin 2026",
+      "url": "https://convention.visitberlin.de/en/newsroom/blog/kongress-event-highlights-berlin-2026",
+      "summary": "Blog Congress and Event Highlights in Berlin 2026: The Key Dates Berlin will once again take centre stage in 2026, hosting leading international trade fairs, specialist congresses and major sporting events with global appeal. For event planners, associations and companies, the capital offers a unique combination of short distances, outstanding infrastructure, strong industry clusters and a ...",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -445,10 +646,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3fe769199a5b5edd",
-      "title": "REBECCA MAYER - Director at MAYER EARTHWORKS LIMITED | LinkedIn",
-      "url": "https://uk.linkedin.com/in/rebecca-mayer-85b9ba15b",
-      "summary": "View REBECCA MAYER’s profile on LinkedIn, a professional community of 1 billion members.",
+      "id": "419133112588da9f",
+      "title": "How can I schedule an Apple store appoint… - Apple Community",
+      "url": "https://discussions.apple.com/thread/255979686",
+      "summary": "You can also contact Apple Support and request an appointment or use the link below to schedule a date. If you’re in the US please call 1-800-MY-APPLE or outside the US, consult the support articles below.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -477,10 +678,41 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dfba48d1c3b8e90f",
-      "title": "Rebecca Mayer - Executive Producer | Consultant - LinkedIn",
-      "url": "https://www.linkedin.com/in/remayer",
-      "summary": "View Rebecca Mayer’s profile on LinkedIn, a professional community of 1 billion members.",
+      "id": "78a7fc7b3dec9d9c",
+      "title": "How do I cancel Apple Genius Bar appointment?",
+      "url": "https://discussions.apple.com/thread/255856205",
+      "summary": "Find your upcoming Genius Bar appointment and select it. You’ll see options to Cancel or Reschedule. Choose the one that suits your needs and follow the prompts. If you have trouble accessing the system, you can also call the Apple Store where your appointment is scheduled, and they’ll assist you with the cancellation or rescheduling.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e51be675c9cb5657",
+      "title": "How to schedule an appointment with apple… - Apple Community",
+      "url": "https://discussions.apple.com/thread/251769298",
+      "summary": "Click on the \"Contact Support\" link at the top of this page, and that will take you to webpages where you can schedule a genius bar appointment. Or call the Aventura Mall Apple Store and speak to the people there.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -509,103 +741,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9061ea6b49660185",
-      "title": "Rebecca Mayer - Registered Psychologist with Rebecca Mayer ... - LinkedIn",
-      "url": "https://ca.linkedin.com/in/rebecca-mayer-5437748a",
-      "summary": "Registered Psychologist with Rebecca Mayer Psychology Services Inc. & Recovery Alberta. Registered Psychologist in good standing with the College of Alberta Psychologists.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f8bbf8efb2b8ca4",
-      "title": "Rebecca Mayer - Senior Product Manager - Extremities & Trauma - LinkedIn",
-      "url": "https://uk.linkedin.com/in/rebecca-mayer-827243234",
-      "summary": "Senior Product Manager - Extremities & Trauma · Experience: Arthrex UK · Education: University of Nottingham · Location: North Yorkshire · 500+ connections on LinkedIn. View Rebecca Mayer’s...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0aedce779ff0a63",
-      "title": "Rebecca Mayer - Support Advisor - VetStrategy | LinkedIn",
-      "url": "https://ca.linkedin.com/in/rebecca-mayer-7a224395",
-      "summary": "Support Advisor - VetStrategy · My name is Rebecca Mayer, and I am a Certified Nutritional Practitioner with the Institute of Holistic Nutrition and a Registered Orthomolecular Health...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bec728e93e81dea8",
-      "title": "Rebecca Mayer - Whistleblower Attorney I Former Federal ... - LinkedIn",
-      "url": "https://www.linkedin.com/in/rebecca-mayer-b99bb327",
-      "summary": "View Rebecca Mayer’s profile on LinkedIn, a professional community of 1 billion members.",
+      "id": "92a0d1d1b46a1d17",
+      "title": "make an appointment at Brea Apple store i… - Apple Community",
+      "url": "https://discussions.apple.com/thread/252932964",
+      "summary": "make an appointment at Brea Apple store in California Hello !!! I'd like to make an appointment at Brea Apple store in California. Please tell me how ??? They said need to make an appointment, before youare walk in, but I do not know where and how ..... Please help !!! Thank you, Tuba8822.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -634,10 +773,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "72a4db29be093b42",
-      "title": "Rebecca Mayer – Recht kreativ | Ass. Jur. | PR | LinkedIn",
-      "url": "https://de.linkedin.com/in/rebecca-mayer-984b4b209",
-      "summary": "Ich verabschiede mich von den Bildschirmen der PR, von #ProSieben, aus München. Lasse ein grandioses Team da und behalte die besten Erinnerungen. Danke an alle, die mich in den vergangenen 1,5...",
+      "id": "ca67d8d1a746dd0c",
+      "title": "make an appointment at the Tacoma Mall st… - Apple Community",
+      "url": "https://discussions.apple.com/thread/8598239",
+      "summary": "make an appointment at the Tacoma Mall store 10/24/2018 make an appointment at the Tacoma Mall store 10/24/2018 iPhone 7 Plus, make an appointment at the Tacoma M Posted on Oct 23, 2018 8:42 PM 1 reply Sort By:",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -653,7 +792,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -665,10 +805,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5edc7189fd867b55",
-      "title": "Rebecca Mayer – Schaeffler | LinkedIn",
-      "url": "https://de.linkedin.com/in/rebecca-mayer-1b641a235",
-      "summary": "Wir freuen uns, Gastgeber des ersten Partner-Roundtables der Europäischen Metropolregion Nürnberg gewesen zu sein. Der gelungene Auftakt dieses neuen Formats stellte regionalen Austausch,...",
+      "id": "715b0c881222a0fd",
+      "title": "make an appointment for genius bar - Apple Community",
+      "url": "https://discussions.apple.com/thread/253556304",
+      "summary": "Several ways. You can start on the Apple support page, but one could also make an appointment through the Apple Support app, calling the Apple customer support phone number (which is the same as calling any Apple Store's listed phone number), or going in person and making an appointment.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -684,7 +824,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -696,43 +837,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7fb94c6492f84904",
-      "title": "Servo - MG90S by lylesvendsen - Thingiverse",
-      "url": "https://www.thingiverse.com/thing:2641076",
-      "summary": "I created this MG90S servo in TinkerCAD as part of another project and thought others may find it useful. Enjoy!The overall dimensions should be within +/- 0.2mm. The gear size is correct, but the teeth are an approximation.",
+      "id": "6dce39024b881a95",
+      "title": "make appt in Boca Raton store - Apple Community",
+      "url": "https://discussions.apple.com/thread/8512069",
+      "summary": "Hi there, hkerk1604! Thanks for reaching out to the Apple Support Communities! That is an excellent question you have about making an appointment at an Apple Store and I am more than happy to help! Please check out this link to t he Genius Bar Reservation and Apple Support Options . This will get you to the appropriate link for setting up your appointment based on your situation and needs ...",
       "discovery_channel": "developer",
-      "query": "smart glasses developer API",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "14ec815de70c5bc6",
-      "title": "Solved: Annoying lines in TinkerCad - Autodesk Community",
-      "url": "https://forums.autodesk.com/t5/autocad-forum/annoying-lines-in-tinkercad/td-p/7939061",
-      "summary": "Please change this! Sometimes when I group shapes, I get these useless lines that are so annoying! Now I remember why I tried blender... But it was too hard and I went back to this. And now I'm stuck with these lines! <<The thick blue line on top<< Dear TinkerCad team- please fix this issue! I don't know if this will show up in a print, but it's ugly in the program anyways! I'll continue to ...",
-      "discovery_channel": "developer",
-      "query": "smart glasses developer API",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -759,108 +869,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "29b25911ab40be9e",
-      "title": "Thingiverse - TinkerCAD | 3D Printing Group & Community",
-      "url": "https://www.thingiverse.com/groups/tinkercad",
-      "summary": "Join and explore 3D printing groups and communities on Thingiverse. Connect with like-minded makers, share your projects, and collaborate on exciting designs.",
+      "id": "8b98bf996844d9d2",
+      "title": "NTI Nordic Travel Incoming GmbH | Berlin Convention Office",
+      "url": "https://convention.visitberlin.de/veranstaltungsplanung/berlin-convention-finder/servicepartner/nti-nordic-travel-incoming-gmbh",
+      "summary": "NTI Nordic Travel Incoming GmbH Servicepartner Als DMC produzieren wir maßgeschneiderte Reisepakete für Corporate & Leisure Gruppen in Berlin & Deutschland nach den Bedürfnissen unserer internationalen Kunden. Ob Hotel, Bustransfer, Restaurant, Meeting, Sightseeing - wir buchen alle Leistungen vor Ort auf höchstem Qualitätsniveau.",
       "discovery_channel": "developer",
-      "query": "smart glasses developer API",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c2f0455cdd983a48",
-      "title": "Tikercad Project Missing (Deleted?) - Autodesk Community",
-      "url": "https://forums.autodesk.com/t5/the-community-room/tikercad-project-missing-deleted/td-p/11879859",
-      "summary": "When I logged back into Tinkercad this morning, the project I was working on has disappeared. The most recently edited project (that I didn't open looing for the missing on) shows as being edited 14 days ago.",
-      "discovery_channel": "developer",
-      "query": "smart glasses developer API",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d7a3a61fe6d38b05",
-      "title": "TinkerCAD 円の中心を併せる方法 - Autodesk Community",
-      "url": "https://forums.autodesk.com/t5/sono-tano-zhi-pinnitsuiteno-zhi-wen-ri-ben-yuforamu/tinkercad-yuanno-zhong-xinwo-bingseru-fang-fa/td-p/7952150",
-      "summary": "ホーム コミュニティ ハブ その他の製品についての質問 - 日本語フォーラム TinkerCAD 円の中心を併せる方法",
-      "discovery_channel": "developer",
-      "query": "smart glasses developer API",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0fb76ddcd546139d",
-      "title": "Trophy Base by willsri - Thingiverse",
-      "url": "https://www.thingiverse.com/thing:1662875",
-      "summary": "I needed a trophy base for a project that I was working on. I liked the design of the first one, but ended up making a new one based off the design. I created mine using tinkercad.",
-      "discovery_channel": "developer",
-      "query": "smart glasses developer API",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -886,12 +900,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b238a30bdc282e50",
-      "title": "WAGO 221 mounts by joochung - Thingiverse",
-      "url": "https://www.thingiverse.com/thing:2075219",
-      "summary": "- I originally designed the mounts using Tinkercad and only for the 5 conductor version, 221-415. I've now designed it using OpenSCAD. Its now configurable for any of the 3 versions of the WAGO 221 connectors: 221-412 (2 conductors), 221-413 (3 conductors), and 221-415 (5 conductors).",
+      "id": "12b825286af7e6f6",
+      "title": "Tickets & Tours for Groups in Berlin | visitBerlin.de",
+      "url": "https://www.visitberlin.de/en/tickets-tours-groups-berlin",
+      "summary": "Book tickets and tours for groups in Berlin: city walks, boat trips, sightseeing tours, a guided tour of the Reichstag, and experiences for companies, clubs and tour groups.",
       "discovery_channel": "developer",
-      "query": "smart glasses developer API",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -917,12 +931,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "99750b68e2cd0f22",
-      "title": "Wearable Clone Trooper Armor by wizzardofboz - Thingiverse",
-      "url": "https://www.thingiverse.com/thing:1591539",
-      "summary": "This is a remix of MasterDarkOnyx's Clone trooper, scaled up to ~6' 2\" and converted to wearable pieces. I did this to use some of the pieces for a Clone Wars Obi Wan costume, but I thought I would do the whole thing. I didn't chop the files since everyone will have a different size printer. I happen to have a huge one and can print most of the parts in one or two pieces. I included the ...",
+      "id": "5a261443a15937e3",
+      "title": "Tickets for Boat tours & Spree cruises | visitBerlin.de",
+      "url": "https://www.visitberlin.de/en/tickets-boat-tours-river-cruises-berlin",
+      "summary": "River cruises in Berlin - City sightseeing tours from a new perspective Whether you are looking for a romantic evening river cruise on the Spree, a short sightseeing tour of Berlin city centre or a flexible Hop On Hop Off sightseeing cruise - here you will recommended boat tours.",
       "discovery_channel": "developer",
-      "query": "smart glasses developer API",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -948,10 +962,72 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2444c3b31c2e9550",
-      "title": "Conformity - Simply Psychology",
-      "url": "https://www.simplypsychology.org/conformity.html",
-      "summary": "Conformity, or majority influence, is when a person changes their attitudes, beliefs, or behaviour to match a group or a perceived social norm. This change happens in response to real or imagined group pressure, even without any direct request to comply.",
+      "id": "e5c4e4bd66115159",
+      "title": "Tickets for events, sights and attractions | visitBerlin.de",
+      "url": "https://www.visitberlin.de/en/tickets-events-attractions-berlin",
+      "summary": "Plan your Berlin trip with us and book your entry tickets for the most popular sights online. From museums to walking and city tours – visitberlin.de has a wide range of tickets for everything from sights to events.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9883dc24661d75b8",
+      "title": "What is VR, AR & XR? A guide to virtual, augmented and extended ...",
+      "url": "https://www.verizon.com/home/internet/guides/virtual-reality/",
+      "summary": "Virtual reality and augmented reality are two forms of extended reality (XR). Learn the difference between AR & VR, how they are used, and where they are going.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c12b086914c4599c",
+      "title": "2025-26 Los Angeles Lakers Roster and Stats | Basketball-Reference.com",
+      "url": "https://www.basketball-reference.com/teams/LAL/2026.html",
+      "summary": "Checkout the latest Los Angeles Lakers Roster and Stats for 2025-26 on Basketball-Reference.com",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -978,12 +1054,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4343d60d9fb4b7a1",
-      "title": "Convergence Theory in Psychology | Definition, Use & Examples",
-      "url": "https://study.com/academy/lesson/convergence-in-psychology-definition-theory.html",
-      "summary": "Convergence theory proposes group members bring with them their own influences and often join a group because they subconsciously sympathize with the group's message.",
+      "id": "cc2e2b0f41ac1dcc",
+      "title": "Amazon Careers: Impact the Future, Today",
+      "url": "https://www.amazon.jobs/en-gb",
+      "summary": "Every Amazonian, from warehouse floor to corporate HQ, shares a drive to impact the future, today. Our unmatched scale offers every employee endless opportunities to reimagine how customers shop, stream, eat, connect and live. United by our peculiar culture of curiosity, bold ownership and fearless initiative, we channel our customer obsession into making everyday impact—big and small.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -996,9 +1072,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "retail"
       ],
-      "primary_type": "research",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1008,10 +1084,280 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8c9ee1c29323cb06",
-      "title": "False consensus effect - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/False_consensus_effect",
-      "summary": "Ross, Green and House first defined the false consensus effect in 1977 with emphasis on the relative commonness that people perceive about their own responses; however, similar projection phenomena had already caught attention in psychology.",
+      "id": "8e27e52c3fc77d0b",
+      "title": "Amazon Operations",
+      "url": "https://www.amazon.jobs/content/en/teams/amazon-operations",
+      "summary": "84 OPEN JOBS Unbox your amazing with Amazon Operations Amazon Operations is at the heart of Amazon’s mission to be Earth’s most customer-centric company. It’s more than packing and delivering boxes; it’s making an impact for customers around the world. We lead around-the-clock efforts to ensure we keep our delivery promise.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ade45cab045f3107",
+      "title": "Beginner’s Guide to Ifá Concepts and Beliefs: Essential Terms Explained",
+      "url": "https://asanee44.com/ifa-beginners-guide-concepts-beliefs/",
+      "summary": "This beginner’s resource introduces the core concepts and beliefs of Ifá. Discover the meaning of essential terms in the tradition.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "88fe4c980475c1c5",
+      "title": "Costa Rica - Amazon.jobs",
+      "url": "https://www.amazon.jobs/content/locations/costa-rica",
+      "summary": "At Amazon, we’re looking for passionate innovators across the world to create the next best thing for our customers. Explore open roles at each of our locations and apply today.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "86636ac15269e1ab",
+      "title": "Email Our Support Team, Email Our Support Team, Social Security",
+      "url": "https://secure.ssa.gov/emailus/",
+      "summary": "Section 205 of the Social Security Act, as amended, allows us to collect this information, which we will use to respond to your inquiry. Providing this information is voluntary, but not providing all or part of the information may prevent us from providing a response to your email. As law permits, we may use and share the information you submit, including with other Federal, State, or local ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8a63db3dcb786a03",
+      "title": "How to Report Your Wages | Choose Work! - Ticket to Work - Social Security",
+      "url": "https://choosework.ssa.gov/library/wage-reporting",
+      "summary": "To report wages online, you must have your own my Social Security account. SSI recipients and the spouse, parent (s), sponsor (s), and representative payees of SSI recipients may report wages by the telephone or mobile app.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18dd16da1b4cfadd",
+      "title": "Identity Theft and Your Social Security Number",
+      "url": "https://www.ssa.gov/pubs/EN-05-10064.pdf",
+      "summary": "Identity theft is one of the fastest growing crimes in America. Scammers use your Social Security number (SSN) to get other personal information about you. They can use your SSN and your good credit to apply for more credit in your name. Then, when they use the credit cards and don't pay the bills, it damages your credit. You may not find out that someone is using your SSN until you're turned ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6396a1235d9739a9",
+      "title": "IFA Residential Academy At The MacDuffie School — Intercontinental ...",
+      "url": "https://www.ifanewengland.com/ifa-residential-academy-at-macduffie-school",
+      "summary": "Starting in the fall of 2024, the IFA Residential Academy at The MacDuffie School will offer top athletes the chance to train in an elite development environment while gaining access to enriching educational opportunities in one of Massachusetts’ top college preparatory boarding schools.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d4438faa9e5d800e",
+      "title": "Job categories - Amazon.jobs",
+      "url": "https://www.amazon.jobs/content/job-categories",
+      "summary": "Explore diverse job categories at Amazon.jobs, offering opportunities across teams and locations with resources for career growth.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ee7a886b1a19baa",
+      "title": "Job search | Amazon.jobs",
+      "url": "https://www.amazon.jobs/en/search",
+      "summary": "Every Amazonian, from warehouse floor to corporate HQ, shares a drive to impact the future, today. Our unmatched scale offers every employee endless opportunity to reimagine how customers shop, stream, eat, connect and live. United by our peculiar culture of curiosity, bold ownership and fearless initiative, we channel our customer obsession into making everyday impact—big and small.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7a84a77b334e2102",
+      "title": "Lakers Roster - NBA.com",
+      "url": "https://www.nba.com/lakers/team/roster-coaches",
+      "summary": "Learn about the members of the Lakers coaching staff. See what everyone brings to the team with complete player stats. See the team that keeps the squad game-ready.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1038,10 +1384,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7cfec01b96ea1ca5",
-      "title": "Groupthink - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Groupthink",
-      "summary": "Collective illusions are a specific form of Groupthink where individuals mistakenly assume the group's wants, leading everyone to behave in ways that don't reflect their true preferences.",
+      "id": "3fb6e79f39627d74",
+      "title": "Los Angeles Lakers 2025-2026 Roster",
+      "url": "https://www.lakersuniverse.com/seasons/2025_2026_roster.htm",
+      "summary": "Information about all players that were on the Los Angeles Lakers roster in the 2025-2026 NBA season including player position, height, weight, DOB (date of birth) and college",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1068,10 +1414,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f7c28015e7ce5c9e",
-      "title": "Groupthink: Definition, Signs, Examples, and How to Avoid It",
-      "url": "https://www.verywellmind.com/what-is-groupthink-2795213",
-      "summary": "Groupthink is a psychological phenomenon in which people strive for consensus within a group. In many cases, people will set aside their own personal beliefs or adopt the opinions of the rest of the group. The term was first used in 1972 by social psychologist Irving L. Janis.",
+      "id": "8991fb7015fffc75",
+      "title": "Los Angeles Lakers NBA Roster - - ESPN (SG)",
+      "url": "https://www.espn.com.sg/nba/team/roster/_/name/lal/los-angeles-lakers",
+      "summary": "Explore the 2026-27 Los Angeles Lakers NBA roster on - ESPN (SG). Includes full details on point guards, shooting guards, power forwards, small forwards and centers.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1098,10 +1444,190 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c4538c0fda9c7e65",
-      "title": "Language Bank - Interpretation, Translation, Training, and More.",
-      "url": "https://thelanguagebank.org/",
-      "summary": "Language Bank is here for all of your interpretation, translation, and interpreter training needs. Get a free quote today!",
+      "id": "9ceadf56da3f2efa",
+      "title": "Los Angeles Lakers Roster - RealGM",
+      "url": "https://basketball.realgm.com/nba/teams/Los-Angeles-Lakers/13/Rosters/Regular",
+      "summary": "Los Angeles Lakers scores, news, schedule, players, stats, rumors, depth charts and more on RealGM.com",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a736e0d777320e1d",
+      "title": "Los Angeles Lakers Roster 2025-26 | ClutchPoints",
+      "url": "https://clutchpoints.com/nba/los-angeles-lakers/roster",
+      "summary": "Explore the current Los Angeles Lakers roster with in-depth player profiles. Get insights into the Lakers' starting lineup and key performers.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "190b94fe4764f507",
+      "title": "Los Angeles Lakers Team Roster - Yahoo Sports",
+      "url": "https://sports.yahoo.com/nba/teams/la-lakers/roster/",
+      "summary": "Get the latest news and information for the Los Angeles Lakers. 2026 season schedule, scores, stats, and highlights.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5d3a8a72da009a6",
+      "title": "Los Angeles Lakers: Roster & Players Stats - 365Scores",
+      "url": "https://www.365scores.com/en-us/basketball/team/los-angeles-lakers-1317/squad",
+      "summary": "Get the complete detailed squad and player information for Los Angeles Lakers. See player position, jersey numbers and more.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b74162ba39b89f5",
+      "title": "Madison, WI | Amazon.jobs",
+      "url": "https://www.amazon.jobs/en/location/madison-wi",
+      "summary": "Madison is located in Southcentral Wisconsin, and serves as the state capital. Madison ranks nationally for educational excellence, which has resulted in many high tech and biomedical firms opening offices there. With a reputation as a health-conscious city, Madison has one of the most extensive bike trail systems in the US, and many major streets have designated bike lanes for safe travel ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6f37b3d18a9ee8c5",
+      "title": "my Social Security | SSA",
+      "url": "https://www.ssa.gov/myaccount/",
+      "summary": "my Social Security | Open a my Social Security account today and rest easy knowing that you're in control of your future.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5673029b6be28f8c",
+      "title": "Ohio Translation Services",
+      "url": "https://ohiotranslationservices.com/",
+      "summary": "Get professional interpreting from anywhere. Secure, fast, and available for legal, medical, business, and community needs.",
       "discovery_channel": "broad_web",
       "query": "translation smart glasses",
       "source": "Bing web RSS",
@@ -1116,309 +1642,341 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "92a99b2736088990",
-      "title": "Nike Shoes & Sneakers",
-      "url": "https://www.nike.com/w/shoes-y7ok/",
-      "summary": "Discover a wide selection of Nike shoes, sneakers, and cleats for all activities at Nike.com.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4fdbbe3ebe0a45cc",
-      "title": "Nike Shoes - Macy's",
-      "url": "https://www.macys.com/shop/brands/nike/nike-shoes?id=377577",
-      "summary": "Step into style and performance with Nike shoes at Macy’s. Shop the latest sneakers, running shoes and casual styles for men, women and kids—all in one place.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d00e107d69d579d3",
-      "title": "Nike Shoes - Nordstrom",
-      "url": "https://www.nordstrom.com/brands/nike/shoes",
-      "summary": "Shop all Nike shoes for men, women and kids. Find sneakers, slippers, sandals and more.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0abe01267a173e29",
-      "title": "Nike Shoes for Men, Women, & Kids | Foot Locker",
-      "url": "https://www.footlocker.com/category/shoes/nike.html",
-      "summary": "Shop the latest selection of Nike Shoes at Foot Locker. Find the hottest sneaker drops from brands like Jordan, Nike, Under Armour, New Balance, and a bunch more.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "41441f219d1fa7ae",
-      "title": "Nike Shoes | DICK'S Sporting Goods",
-      "url": "https://www.dickssportinggoods.com/f/nike-athletic-sneakers",
-      "summary": "Shop Nike Shoes at DICK'S Sporting Goods. Browse a wide selection Nike shoes and Nike sneakers in a variety of styles for the whole family at low prices with our Best Price Guarantee.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a47ee97032441199",
-      "title": "Nike. Just Do It. Nike.com",
-      "url": "https://www.nike.com/",
-      "summary": "Inspiring the world's athletes, Nike delivers innovative products, experiences and services.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bef3b9738ca940c7",
-      "title": "Shop Nike Shoes & Sneakers Amazon",
-      "url": "https://www.amazon.com/nike-shoes/s?k=nike+shoes",
-      "summary": "Get Nike shoes built for performance and style. Browse men's and women's collections featuring cushioning, support, and classic designs.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "00fc50f061c0fa2a",
-      "title": "Understanding Social Conformity: Influences and Impacts on ...",
-      "url": "https://psychology.town/social/social-conformity-influences-impacts-behavior/",
-      "summary": "Social conformity is the process by which individuals adjust their behaviors, attitudes, or beliefs to align with the expectations of a group – whether that pressure is real or simply imagined. It’s one of the most fundamental and far-reaching forces in human social life, shaping everything from fashion trends to political opinions.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "17ae1ede05376aa4",
-      "title": "What Is Proximity Psychology? | BetterHelp",
-      "url": "https://www.betterhelp.com/advice/psychologists/what-is-proximity-psychology/",
-      "summary": "What is proximity psychology in relationships, and how do we perceive it? The principle of proximity psychology can be applied to relationships, too. People often unconsciously form social relationships with those who are physically or visually closest to themselves.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ca83bba84d6d5171",
-      "title": "Introducing Gemini, your new personal AI assistant",
-      "url": "https://gemini.google/assistant/",
-      "summary": "Gemini is our AI-powered assistant, that offers the hands-free help that you love from Google Assistant, but can go far beyond in conversationality and complexity of the tasks it can help with.",
-      "discovery_channel": "adjacent+community",
-      "query": "AI smart glasses real world test reddit; AI wearable camera",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
+        "model",
+        "policy",
         "community"
       ],
-      "primary_type": "community",
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7053461afd5e9bc3",
+      "title": "Our Workplace - Amazon.jobs",
+      "url": "https://www.amazon.jobs/content/en/our-workplace",
+      "summary": "Curious what it’s like working at Amazon? You’ll get to work on amazing projects, innovate across industries, and be part of an inclusive workplace that empowers our people to do the best work of their careers. Learn more about our culture, get familia...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7498e9ab0628bdc5",
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/login",
+      "summary": "Access your mailbox, manage emails and organize your communication seamlessly by signing in to your account.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "820e951e95dec36c",
+      "title": "Report Fraud | SSA Office of the Inspector General",
+      "url": "https://oig.ssa.gov/report/",
+      "summary": "Pretend to be from the Social Security Administration or the Office of the Inspector General? Say there is a problem with your Social Security number, your account, or promise to increase your benefit in exchange for payment? Pressure you to act immediately? Tell you to pay in a specific way? Visit ssa.gov/scam for more information. Report Scams",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "13400af6a2a8ff32",
+      "title": "Security and Loss Prevention - Amazon.jobs",
+      "url": "https://www.amazon.jobs/content/en/teams/fulfillment-and-operations/security-loss-prevention",
+      "summary": "We protect Amazon’s people, operations, reputation, and assets by fostering a safe, secure, and resilient end-to-end supply chain that our associates and customers value and trust.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "35f22b6196e3a2bb",
+      "title": "Social Security",
+      "url": "https://secure.ssa.gov/RIL/SiView.action",
+      "summary": "Sign-In-To-Your-Account Sign In or Create an Account",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af351ff05c8f71d5",
+      "title": "SSA Office of the Inspector General Warns Public of Surge in Fraudulent ...",
+      "url": "https://oig.ssa.gov/scam-alerts/2026-02-20-ssa-office-of-the-inspector-general-warns-public-of-surge-in-fraudulent-social-security-statement-emails/",
+      "summary": "The Social Security Administration (SSA) Office of the Inspector General (OIG) is warning the public about a significant increase in government imposter scam emails that falsely claim to provide access to a recipient’s Social Security statement. Clicking links within the email may lead to identity theft, financial loss, or compromised data.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d1dd4dbe1ab0c5b",
+      "title": "SSA Web Services Status",
+      "url": "https://status.ssa.gov/",
+      "summary": "About This Site Welcome to the Social Security Administration's home for real-time and historical web services availability. You can read more about our programs at https://www.ssa.gov.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fe22f9ed8c61ac10",
+      "title": "Synonyms for Hate| Powerful Alternatives, Meanings & Better Words for ...",
+      "url": "https://synonymsgalaxy.com/synonyms-for-hate/",
+      "summary": "Milder alternatives include dislike, resent, and can’t stand. As a noun, hate can be replaced with hatred, animosity, hostility, contempt, or aversion, depending on how intense and how formal the feeling is.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d35f3481a2fc0f1c",
+      "title": "Team - NBA.com",
+      "url": "https://www.nba.com/lakers/team",
+      "summary": "View the Lakers roster page",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0286466809694f57",
+      "title": "The United States Social Security Administration",
+      "url": "https://www.ssa.gov/",
+      "summary": "Your most-needed services, online With a secure my Social Security account, you can get services and manage your benefits—anywhere, anytime.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "86ff2b4ad6e9874d",
+      "title": "University Operations - Amazon.jobs",
+      "url": "https://www.amazon.jobs/content/en/career-programs/university-ops",
+      "summary": "Our mission is to be Earth’s most customer-centric company. Our Operations teams are at the heart of that mission. Backed by innovative technologies, our global network of fulfillment centers and delivery stations supports customers around the world. ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],

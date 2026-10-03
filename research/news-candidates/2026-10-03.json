@@ -1,23 +1,34 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-03T17:32:42.193054+00:00",
-  "candidate_count": 2,
-  "precision_rejected_count": 139,
+  "discovered_utc": "2026-10-03T19:59:37.765496+00:00",
+  "candidate_count": 7,
+  "precision_rejected_count": 135,
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 0,
-    "adjacent": 1,
+    "direct": 5,
+    "enabling": 1,
+    "adjacent": 0,
     "speculative": 1,
     "irrelevant": 0
   },
   "type_counts": {
     "model": 2,
+    "video": 1,
+    "tool": 3,
+    "sdk": 2,
+    "hack": 2,
+    "optics": 2,
+    "policy": 2,
+    "community": 2,
     "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 1,
+    "community_evidence_review": 2,
+    "development_hacking": 4,
     "model_catalog_review": 2,
-    "research_news_review": 2,
+    "policy_privacy": 2,
+    "report_card_evidence": 1,
+    "research_news_review": 7,
+    "research_optics": 2,
     "watching": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
@@ -29,53 +40,99 @@
   ],
   "candidates": [
     {
-      "id": "9cce37c11cfe1735",
-      "title": "6000mAh Battery and 64MP Sony Camera Lead HMD Vibe2 Pro 5G Launch at ₹14,999 - Prittle Prattle News",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbE9HMnBwSGV6NHk1czZGcGRBV0VydENzNExtMkpJS1c4SmxmNHRGRkRYc190cGs1ckxCVWtQSjIzX0NTUFZTVEcxNUkyTTI2el9KYmhVc2FxUThWYnp3UWZZVzZGU2FBMU5fSGtoLWlxcnphTW9wT1JBblFfb3hMYmJVTTQ0SWRMd3YxY3V6Mi1CSU94YUE?oc=5",
-      "source": "Google News: AI wearable camera",
-      "source_lane": "adjacent_hci",
-      "published": "Fri, 02 Oct 2026 00:34:59 GMT",
-      "summary": "6000mAh Battery and 64MP Sony Camera Lead HMD Vibe2 Pro 5G Launch at ₹14,999 Prittle Prattle News",
+      "id": "7a5241427f3a7a1a",
+      "title": "Mentra 3.3.0-dev.575",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.575",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-03T18:19:39Z",
+      "summary": "Mentra 3.3.0-dev.575 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: fa0dd2e . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
       "materiality_score": 6,
       "keyword_hits": [
-        "battery",
-        "camera",
-        "launch"
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
       ],
       "status": "candidate",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
+      "attribution_required": true,
+      "relationship": "direct",
       "content_types": [
-        "model"
+        "model",
+        "tool",
+        "sdk",
+        "community"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
         "model_catalog_review",
-        "adjacent_radar"
+        "development_hacking",
+        "community_evidence_review"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "likely durable"
     },
     {
-      "id": "cc527af8739631e7",
-      "title": "Samsung Smart Glasses Launching Soon: Samsung Intelligent Eyewear May Launch in November With Gemini AI; Check Expected Date, Timing, Prices, Colours, Features, Design and All You Need to Know - The Sunday Guardian",
-      "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxPa01aemRZMzdTTzFzNm1ncGpzbmVkQ0UxeUxvWkhPRzFVam9XeElybE5OOURodHQ5U3ZPN19DbDA5UktSOTNrTjl4R1dUQUN0bVcweDd1RF9ka2JUQm0wTzdxMXFrWElkS0ZHRFpiWk1BdVFXMTlvclpFNmp2Nk44bmhJZFBpWWx3dmdveEdaRjJKdGMwSjllZkh5WklyQU9PVmQwMXh3SkFxVERhX3QxVWhNMWFsOTV2ZlFhRGEzUFVYN3ZIMU9VbTNKM3MyTmJZaVYxQUQxTG9pQXFtTFRrbGdRLXc4VEU4TTNRMGR5N3ZJLUhpd1MzXzR5U1F2aFQ4Mmt6OWNfT29IUzJZY193SkNPU3dsZXd4TGF0dHo0cnhTYnlRS3pUWlhMMGNIcnlxb3lkbFpOZXNqZ0hncGhQVkxIMkFCVjNFNEJxcy1RV0hDa3NL0gHaAkFVX3lxTE9RTU85QXF4Qm5odXZzcFFJSmN0cEFEUWdEY0dPcWdZaklWWEI2dE41RTFPUDd4ZDltX3JoWDhnQ3ZyRDRGUkNLMG9hVlBJSFJDekl2WVVjNktlLTdjZnNseVBQTjlqWXhvUXF6UVhZTWtTVTllSG9YQ2NZcW5LM195MG5IWEpHRzdHUjdyeEwxUmwwUkd3NjhVejVLVFhPTEd5TVByTXlZcWQ5N0RSbXZQV2hXb293UEpSQl90RC1HajlFazhhMkhIN3pxODRCUGlUWElQSy10d1ZIUXV5aXA0Z0o2dUpWZ2RuZF9fZzRPa0pvQkJ5VU9jN25TbXZ2YkxxanNPa0w4TmpWem1HTUh4dlhoSEozWXBWMjNac2Fwcm5WcVdVaU42UDhBWG9jMTJYcDgza1dsUDFXX1BTSVpHSHdCRDBIQlYycWpJNDd2czY1bDlUMVhDNWc?oc=5",
-      "source": "Google News: smartglasses",
-      "source_lane": "core_glasses",
-      "published": "Thu, 01 Oct 2026 17:40:32 GMT",
-      "summary": "Samsung Smart Glasses Launching Soon: Samsung Intelligent Eyewear May Launch in November With Gemini AI; Check Expected Date, Timing, Prices, Colours, Features, Design and All You Need to Know The Sunday Guardian",
-      "materiality_score": 5,
+      "id": "1149c2d0d4ea2b90",
+      "title": "Mentra 3.3.0-dev.577",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.577",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-03T19:15:56Z",
+      "summary": "Mentra 3.3.0-dev.577 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 852135a . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
       "keyword_hits": [
-        "ai",
-        "launch"
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "446271b9d35377cc",
+      "title": "Maximizing Privacy? New Apple Home Security Cameras Reportedly Won’t Record Video - Yahoo Tech",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOY2U1MktNYUNLSGZoWDlHQ0Y4V2Z3RUt6b25NMFdzSmN3NlI0NGVFRG5Nb09HdDFHa0kxVkU4dnhKWVh6T2l5bWFXRjk1OHozanp5U2dOYTdmNzVXRDFGWE1paldUdVdoOTBoYzVvbVdESmhydDF3a2xUZFU5cGJ3ZFl5WjN4SmM4Z1NIZGhhaFRmX3l2M01sY1lEUzViWUFQcDVfdXFoUGt1UUU?oc=5",
+      "source": "Google News: AR glasses",
+      "source_lane": "core_glasses",
+      "published": "Fri, 02 Oct 2026 22:25:49 GMT",
+      "summary": "Maximizing Privacy? New Apple Home Security Cameras Reportedly Won’t Record Video Yahoo Tech",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "privacy",
+        "security"
       ],
       "status": "candidate",
       "evidence_class": "secondary",
@@ -84,18 +141,158 @@
       "attribution_required": false,
       "relationship": "speculative",
       "content_types": [
-        "model",
+        "video",
+        "policy",
         "rumor"
       ],
-      "primary_type": "model",
+      "primary_type": "video",
       "routing_targets": [
         "research_news_review",
         "watching",
-        "model_catalog_review"
+        "report_card_evidence",
+        "policy_privacy"
       ],
       "triage_priority": "normal",
       "publication_eligible": false,
-      "publication_gate_reason": "future/rumor signals: may launch",
+      "publication_gate_reason": "future/rumor signals: reportedly",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "ad3f166be6bfcb39",
+      "title": "Even Realities' app 2.3.2 needs new firmware on both the G2 glasses and the R1 ring - MIXED Reality News",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZVZrWnFJeWlfVGlLdlVieE5CSzc2NnBxR1VuTTZUbG4xLW5tcUt1b0hNMnRNR3ktVm5WYnJqNnBjdlVxdE11LTROZ2x6ZEE2Zk5uSU1zZ0ZfZ29udS1OTzNYSEdRVzhuN01YNUdSTHZRWWdSa2dPSG11dWJfSTEtZnVpazBfdw?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 03 Oct 2026 19:44:52 GMT",
+      "summary": "Even Realities' app 2.3.2 needs new firmware on both the G2 glasses and the R1 ring MIXED Reality News",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "firmware"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "tool",
+        "hack"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: even realities",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "127e7caafbdc28ad",
+      "title": "TDK Creates a Transparent Display with Retinal Projection - root-nation.com",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMXBDeWRiOE5OUUFwVlJsMTl3V0hobkJkbzVVcUhabGRuRWlGdnF6aHZQOXM4RmFwbjhDSklTUlc0Q2xOTDZsVHNhOU5rWnotNXJnc3YwNTZwQlZrNkhvRzdHeURzTE9tck9kX0hYSjFXaWtTRXpGa0h1NWFVaHliZ2JSOA?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 03 Oct 2026 05:45:04 GMT",
+      "summary": "TDK Creates a Transparent Display with Retinal Projection root-nation.com",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "display",
+        "retinal"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "hack",
+        "optics"
+      ],
+      "primary_type": "hack",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: retinal",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "412749436827bfc6",
+      "title": "Ray-Ban Meta Audio Glasses: What’s New, AI Features, Privacy Explained - Analytics Insight",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLW5YeVQweW5Bakk2SUZySWpkYzNDNUwtNm9EUXFuVzFxNHZzYllOWWRLbGJYX05rNGRYTmdpeG5JR0VYSGxKejlOVGg3QWNqVm81MGhSSTB1aUZEakp3ZlVhM2hVeVNGSnRSOEFyY193NVF1VjM3VHlKU1RaQWw1MHBFWGZEMEdsUmk0ckd3RU10ZUhWMHVvMzFuZ1FUNEdfaXNHaG96UkNIODTSAbgBQVVfeXFMUGdRdzd6U3lKMm1URmw5anQxUm1RRTBaQ0owbG01TzJNeHFZamV6RWRFZWE5VHZCQVNtVU01VllIQjBaMHNsQ3dtZENZOVZjQTJ5X1d3WjRTdEt0Z1dMVmcwME11NFFCR0N0YkhDeVdwSGxTQTZlTXhtOU5TcTZjMm81MGMyRjNPY1ItVV9yWXR2QU5SazF2d1RCUjhXNkdhZU1rejN3X0RSZGJWMUl0LWIxRnl4enlaWQ?oc=5",
+      "source": "Google News: smartglasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 03 Oct 2026 19:30:00 GMT",
+      "summary": "Ray-Ban Meta Audio Glasses: What’s New, AI Features, Privacy Explained Analytics Insight",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "privacy"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: audio glasses, ray-ban meta",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "4ba8a9f20072f434",
+      "title": "Vuzix ships a 3,000-nit waveguide display for defence, but only as evaluation units - MIXED Reality News",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSWRCLWJ4dzlDR2ZHS040N1QxbkFBdklpTWQwYlBvd2pOSk9mT0Rlb29oSzFYRWVGNXJSYWNuZHM5ZzVCQ1FNT3pVSGhQSDl0UHNxckpGd3h1b0gzUmpaOWhXX2FEeEhYcmxWQTd2X010akdSX3hvZVZNVWNPQzRaMWVyWnBDb0FRNXR5RQ?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 03 Oct 2026 18:09:52 GMT",
+      "summary": "Vuzix ships a 3,000-nit waveguide display for defence, but only as evaluation units MIXED Reality News",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "display",
+        "waveguide"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: vuzix",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "likely durable"
