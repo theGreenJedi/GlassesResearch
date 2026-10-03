@@ -1,0 +1,115 @@
+{
+  "schema": 3,
+  "discovered_utc": "2026-10-03T02:00:02.584235+00:00",
+  "candidate_count": 2,
+  "precision_rejected_count": 144,
+  "relationship_counts": {
+    "direct": 2,
+    "enabling": 0,
+    "adjacent": 0,
+    "speculative": 0,
+    "irrelevant": 0
+  },
+  "type_counts": {
+    "model": 1,
+    "tool": 1,
+    "sdk": 1,
+    "policy": 1,
+    "retail": 1,
+    "community": 1
+  },
+  "routing_counts": {
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 1,
+    "policy_privacy": 1,
+    "research_news_review": 2,
+    "retail_rebrand_review": 1
+  },
+  "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
+  "collector_errors": [
+    {
+      "url": "https://brilliant.xyz/blog",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "2e94e7a75bad07f7",
+      "title": "Mentra 3.3.0-dev.572",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.572",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-03T01:44:44Z",
+      "summary": "Mentra 3.3.0-dev.572 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 6eb6174 . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "54303cc78e098854",
+      "title": "Meta's AI Glasses Face Privacy Reckoning as Dutch Retailer Halts Sales - finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8xOHVMLXdwNk1GdU12aFhidGZfYkQwWHhhQW9mWHpDZjJrRm9KX1VVTWZKbG5YYmpuaUQ5ZVdscFgzdnNlclBHV3VnNTlmaFZrMERJYnNwYzBxTkpZbkgwb1NkRzd4LXpTZDJnS3dOYXNIY3BzalE?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 03 Oct 2026 01:25:00 GMT",
+      "summary": "Meta's AI Glasses Face Privacy Reckoning as Dutch Retailer Halts Sales finance.biggo.com",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "privacy"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "policy",
+        "retail"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    }
+  ]
+}
