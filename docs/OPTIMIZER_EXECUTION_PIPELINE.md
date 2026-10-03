@@ -38,6 +38,18 @@ After merge, verify the live/public result when applicable and record the dispos
 
 A merge proves code integration; it does not prove the mission succeeded. Treat `implemented`, `integrated`, `commissioned`, and `operational` as distinct states. **Built means commissioned. Operational means commissioned and observably continuing to work.**
 
+## Standing operating canon
+
+### GitHub write authority
+
+Pete has granted standing write permission for the canonical GlassesResearch repository, `theGreenJedi/GlassesResearch`. Treat that permission as durable project canon, not a per-session fact and not a recurring approval gate. For routine in-policy repository work, use the authorized GitHub write mechanisms directly. Do not ask Pete whether write permission exists when the operation is already within delegated authority.
+
+### Mission Style
+
+When Pete directs work to proceed **Mission Style**, the optimizer/agent owns the approved mission end-to-end: understand the objective and acceptance conditions; inspect current state; choose and execute the necessary in-policy steps; use judgment within established canon without returning routine choices to Pete; recover from ordinary/transient failures; verify the actual outcome rather than merely the attempted action; record durable state; and continue until the mission is complete.
+
+Mission Style is **not** "make a recommendation and wait," "stop at the first error," "ask Pete to reconfirm standing permission," or "treat every implementation choice as a new approval gate." Return to Pete only when an unresolved case crosses an established human authority/judgment boundary, requires credentials/spending/irreversible external commitment outside delegated authority, or remains blocked after bounded recovery with concrete failure evidence.
+
 ## Delegated authority
 
 Approval belongs primarily at the rule/pipeline level, not as a repetitive checkpoint on routine executions. When an already-approved pipeline's deterministic predicates are satisfied and the action remains inside its delegated authority, advance it through completion without recurring approval merely because the object is canonical, research, evidence, or publication state.
