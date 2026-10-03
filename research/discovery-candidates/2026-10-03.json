@@ -1,40 +1,40 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-03T16:30:30.341187+00:00",
-  "candidate_count": 64,
-  "classifier_irrelevant_count": 40,
+  "discovered_utc": "2026-10-03T17:33:08.519250+00:00",
+  "candidate_count": 44,
+  "classifier_irrelevant_count": 39,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 24,
-    "broad_web": 30,
-    "developer": 10
+    "adjacent": 5,
+    "broad_web": 19,
+    "community": 1,
+    "developer": 20
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 1,
     "enabling": 0,
-    "adjacent": 24,
+    "adjacent": 4,
     "speculative": 0,
-    "irrelevant": 40
+    "irrelevant": 39
   },
   "type_counts": {
-    "model": 2,
+    "model": 3,
     "review": 1,
-    "video": 1,
-    "news": 36,
-    "tool": 15,
-    "sdk": 10,
-    "retail": 8,
-    "teardown": 1,
-    "community": 6,
-    "rumor": 1
+    "video": 2,
+    "news": 14,
+    "research": 3,
+    "tool": 20,
+    "sdk": 20,
+    "retail": 3,
+    "community": 9
   },
   "routing_counts": {
-    "adjacent_radar": 24,
-    "reject_noise": 40,
-    "report_card_evidence": 1,
-    "research_news_review": 24,
-    "retail_rebrand_review": 4,
-    "watching": 1
+    "adjacent_radar": 4,
+    "deep_research": 2,
+    "reject_noise": 39,
+    "report_card_evidence": 3,
+    "research_news_review": 5,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -49,15 +49,50 @@
     {
       "channel": "manufacturer_catalog",
       "url": "https://www.everysight.com/",
-      "error": "HTTP Error 500: Internal Server Error"
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://smart-bike.net/collections/accessories",
+      "error": "HTTP Error 503: Service Unavailable"
     }
   ],
   "candidates": [
     {
-      "id": "0c9efe7ff7363921",
-      "title": "Tea SD Real Estate & Homes For Sale - Zillow",
-      "url": "https://www.zillow.com/tea-sd/",
-      "summary": "Zillow has 102 homes for sale in Tea SD. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "id": "d721b10351c43449",
+      "title": "XREAL xbx a01+ & XREAL Beam Pro Bundle – XREAL US Shop",
+      "url": "https://us.shop.xreal.com/products/xreal-xbx-a01-xreal-beam-pro-bundle",
+      "summary": "Learn more about ️XREAL xbx a01+ Learn more about ️XREAL Beam Pro What's in the box? Glasses Unit XREAL Beam Pro C-C cable Nose pad (S/M/L) Cleaning cloth Protective case User manual",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0a7ede7f44be1530",
+      "title": "Clarksburg MD Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/clarksburg-md/",
+      "summary": "Zillow has 80 homes for sale in Clarksburg MD. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -90,73 +125,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "74b2c69c35ddaefb",
-      "title": "Adult Stay Puft Inflatable Costume - Ghostbusters Classic",
-      "url": "https://www.spirithalloween.com/product/adult-stay-puft-inflatable-costume-ghostbusters-classic/149922.uts",
-      "summary": "You'll have the absolute sweetest costume this Halloween when you slip into this inflatable Stay Puft costume! Let the included fan blow you up, so you can blow your friends away!",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c7b35146f8f92d5d",
-      "title": "Amazon.com: Stay Puft Costume",
-      "url": "https://www.amazon.com/stay-puft-costume/s?k=stay+puft+costume",
-      "summary": "Explore Stay Puft costume options including inflatable jumpsuits, hats, collars, and accessories for Halloween and cosplay events.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aed3e58739f5dab5",
-      "title": "Central European Time – CET Time Zone - timeanddate.com",
-      "url": "https://www.timeanddate.com/time/zones/cet",
-      "summary": "Central European Time (CET) is the standard time zone used by many countries in Europe and parts of northern Africa. Major countries using CET include Germany, France, Italy, Spain (mainland), Poland, Norway, Sweden, Austria, and several others.",
+      "id": "69d6b76a7fccb44f",
+      "title": "College Football Scores - Sun Belt Conference 2026 Season - ESPN",
+      "url": "https://www.espn.com/college-football/scoreboard/_/group/37",
+      "summary": "Live scores for every Sun Belt Conference 2026 NCAAF season game on ESPN. Includes box scores, video highlights, play breakdowns and updated odds.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -171,1523 +143,111 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "611cdf122017f8f7",
-      "title": "Eastern European Summer Time – EEST Time Zone",
-      "url": "https://www.timeanddate.com/time/zones/eest",
-      "summary": "Information about the time zone abbreviation EEST – Eastern European Summer Time - where it is observed and when it is observed",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "585c077932e88bb9",
-      "title": "Eastern European Time – EET Time Zone - timeanddate.com",
-      "url": "https://www.timeanddate.com/time/zones/eet",
-      "summary": "Eastern European Time (EET) is 2 hours ahead of Coordinated Universal Time (UTC). This time zone is in use during standard time in: Europe, Asia, Africa. See full time zone map",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bbd2d0058ea9a799",
-      "title": "Ghostbusters Adult Inflatable Stay Puft Costume",
-      "url": "https://www.halloweencostumes.com/ghostbusters-adult-inflatable-stay-puft-costume.html",
-      "summary": "Show the world a friendlier, less monstrous version of the Marshmallow Man with this Ghostbusters Stay Puft Inflatable Costume! This officially licensed costume is inspired by the villain from the 1984 movie, Ghostbusters.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6b80ecb2d8141c6e",
-      "title": "Ghostbusters Men's Stay Puft Marshmallow Hooded Union Suit Costume ...",
-      "url": "https://www.target.com/p/ghostbusters-men-s-stay-puft-marshmallow-hooded-union-suit-costume-pajama-s-m-white/-/A-94162777",
-      "summary": "Embrace your love for classic pop funure with this Stay Puft Marshmallow Man Fleece Costume Union Suit! Inspired by the character, it features an embroidered applique of his angry face on the hood, complete with his white sailor cap, red ribbon, and blue hatband.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d5dc590b26c71b5c",
-      "title": "Ghostbusters Stay Puft Marshmallow Man Adult Costume ... - Amazon",
-      "url": "https://www.amazon.com/Ghostbusters-Marshmallow-Costume-Character-Costumes/dp/B0D61V36KQ",
-      "summary": "Embrace the spirit of Halloween and Ghostbusters cosplay with our versatile Stay Puft Man Costume. Get ready to turn heads and embody the spirit of this classic character as you step into the world of Ghostbusters with confidence and flair.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2fef8c62ed2b249",
-      "title": "Ghostbusters Stay Puft Marshmallow Man Spirit Halloween ... - eBay",
-      "url": "https://www.ebay.com/itm/256711998571",
-      "summary": "Get ready to bust some ghosts with this awesome Ghostbusters Stay Puft Marshmallow Man Spirit Halloween Inflatable Costume! Made with high-quality polyester material, this inflatable costume is perfect for any Ghostbusters fan.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eaeedcdf6ac9caee",
-      "title": "History of DST in Europe – When Did It Start? - timeanddate.com",
-      "url": "https://www.timeanddate.com/time/europe/daylight-saving-history.html",
-      "summary": "Germany was the first country to implement Daylight Saving Time (DST). From here, the concept quickly spread across Europe and the world.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "rumor"
-      ],
-      "primary_type": "rumor",
-      "routing_targets": [
-        "research_news_review",
-        "watching",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f7efe9ca0864e013",
-      "title": "Kids' Ghostbusters Classic Stay Puft Marshmallow Man Inflatable Costume",
-      "url": "https://costumes.com/products/kids-ghostbusters-classic-stay-puft-marshmallow-man-inflatable-costume",
-      "summary": "Inspired by one of the most iconic and lovable movie villains, this inflatable costume will have your child looking like the giant, fluffy marshmallow monster straight from the Ghostbusters universe.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f892cc5afce10a92",
-      "title": "near - WordReference.com Dictionary of English",
-      "url": "https://www.wordreference.com/definition/near%20",
-      "summary": "near - WordReference English dictionary, questions, discussion and forums. All Free.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "43d8e8b14265b78b",
-      "title": "Party City Inflatable Stay Puft Marshmallow Man Halloween Costume for ...",
-      "url": "https://www.walmart.com/ip/Party-City-Inflatable-Stay-Puft-Marshmallow-Man-Halloween-Costume-for-Adults-Ghostbusters-Standard-Size/921837500",
-      "summary": "Iconic Design: Features a white nylon jumpsuit with a screen-printed \"Stay Puft\" headpiece, replicating the classic Ghostbusters character. Effortless Inflation: Includes a built-in, battery-operated fan that inflates the suit in seconds (requires 4 AA batteries).",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "541f2899e6d87e86",
-      "title": "Pederson's Classics – Car Dealer in Tea, SD",
-      "url": "https://www.pedersonautobrokers.com/",
-      "summary": "Find great deals at Pederson's Classics in Tea, SD.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "43761106ace64310",
-      "title": "Stay Puft Marshmallow Man Costumes - Halloween.com",
-      "url": "https://halloween.com/stay-puft-marshmallow-man-costumes.html",
-      "summary": "Browse our collection of Stay Puft Marshmallow Man costumes and unleash your inner giant marshmallow. Perfect for Ghostbusters fans, these costumes are sure to make you the highlight of any party.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "78ace2e405441212",
-      "title": "Stay Puft Marshmallow Man Costumes | Ghostbusters Costumes",
-      "url": "https://www.halloweencostumes.com/stay-puft-marshmallow-man-costumes.html",
-      "summary": "Ensure Halloween is scary and sweet with a Stay Puft Marshmallow Man costume! Inspired by Gozer’s chosen form, a Ghostbusters Stay Puft costume from our selection is perfect for finishing your classic Ghostbusters group look.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1c53d5f16cd5d40e",
-      "title": "The World Clock – Time Zones – Europe - timeanddate.com",
-      "url": "https://www.timeanddate.com/worldclock/custom.html?continent=europe",
-      "summary": "The World Clock – Time Zones – Europe Find current time, weather, sun, moon, and much more...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1bb234a69ff9810f",
-      "title": "The World Clock — Capitals in Europe - timeanddate.com",
-      "url": "https://www.timeanddate.com/worldclock/?continent=europe&low=c",
-      "summary": "World time and date for cities in all time zones. International time right now. Takes into account all DST clock changes.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0813bad67fba400",
-      "title": "Time Zone Abbreviations - Time Zones in Europe",
-      "url": "https://www.timeanddate.com/time/zones/eu",
-      "summary": "Information about the time zone acroynms/abbreviations in Europe - which time zones are observed where and when",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7b3c314d3339ff32",
-      "title": "Time Zones and DST in Europe",
-      "url": "https://www.timeanddate.com/time/europe/",
-      "summary": "Daylight Saving Time and Time Zones in Europe Europe is divided into four main time zones that span from UTC+0 hours in western European countries to UTC+3 hours in Belarus and parts of Russia.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "696a194bbd696fe9",
-      "title": "Time Zones in Belgium",
-      "url": "https://www.timeanddate.com/time/zone/belgium",
-      "summary": "In which time zone is Belgium? What are the time zone names for standard time and Daylight Saving Time in 2026?",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cfd2755a87e7e91a",
-      "title": "Western European Time – WET Time Zone",
-      "url": "https://www.timeanddate.com/time/zones/wet",
-      "summary": "Information about the time zone abbreviation WET – Western European Time - where it is observed and when it is observed",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "10506f36b6e8f915",
-      "title": "Your Flooring Source | Thornton Flooring",
-      "url": "https://www.thorntonflooring.com/",
-      "summary": "Learn why Thornton Flooring is the Sioux Falls, SD area's most trusted provider of high-quality, affordable flooring products & services for your home.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "060e950a19b5bacd",
-      "title": "Car Hire | Free Pick Up and Drop Off | Enterprise Rent-A-Car",
-      "url": "https://www.enterprise.co.uk/en/home.html",
-      "summary": "Best price car & van hire from Enterprise Rent-A Car. Get free pick up, great customer service and no hidden costs. Save up to 15% when you prepay online.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "77a1141cfac33a9b",
-      "title": "Car Rental | Enterprise Rent-A-Car",
-      "url": "https://www.enterprise.com/en/car-rental.html",
-      "summary": "Rent a car that fits your travel needs with a selection of cars, trucks, SUV's, vans, luxury and exotic cars. Start your reservation online and only pay when you pick up. We know that travel plans can change, so we offer a flexible no cancellation fee.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fbe475c0234af327",
-      "title": "Enterprise Rent-A-Car - Official Site",
-      "url": "https://www.enterprise.com/en/home.html",
-      "summary": "Enjoy fast and easy car rental bookings from Enterprise Rent-A-Car at one of our 7,200 branches in cities, airports and neighborhoods near you.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bd85dba5c4d39336",
-      "title": "Enterprise Rent-A-Car - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Enterprise_Rent-A-Car",
-      "summary": "Enterprise Rent-A-Car is an American car rental agency headquartered in Clayton, Missouri, in Greater St. Louis. Enterprise is the flagship brand of Enterprise Holdings, which also owns other agencies including Alamo Rent a Car and National Car Rental.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9af0022603e021a8",
-      "title": "Enterprise Rent-A-Car | Araç Kiralama Sektörünün Dünya Lideri",
-      "url": "https://www.enterprise.com.tr/",
-      "summary": "Rent a car sektörünün global lideri Enterprise güvencesiyle araç kiralamak ve kaliteli sürüş keyfini deneyimlemek için hemen tıklayın!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2a07488db638e5f2",
-      "title": "Enterprise Rent-A-Car, 1545 E Euclid Ave, Des Moines, IA 50313, US ...",
-      "url": "https://www.mapquest.com/us/iowa/enterprise-rent-a-car-6714922",
-      "summary": "Enterprise Rent-A-Car is Here For It. Whether your car is in the shop, you're running errands, or planning a weekend getaway, we're ready with a wide range of vehicles and flexible rental options.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a68ad0955de27f9e",
-      "title": "Facebook Marketplace is dying, what are the alternatives?",
-      "url": "https://www.reddit.com/r/FacebookMarketplace/comments/v56ve0/facebook_marketplace_is_dying_what_are_the/",
-      "summary": "Facebook Marketplace is trying so hard to get everyone's money - even if it just a few dollars from individuals like me by pushing boost opportunities or shipping options.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "community"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3a495d84644ac46d",
-      "title": "Home | Enterprise Mobility Careers",
-      "url": "https://www.enterprisemobility.com/en/careers.html",
-      "summary": "Search and apply for jobs, internships, head office and corporate roles with Enterprise Mobility.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "49258b4f427795d4",
-      "title": "Montreal Car Rental - Book Now | Enterprise Rent-A-Car",
-      "url": "https://www.enterprise.ca/en/car-rental-locations/ca/qc/montreal.html",
-      "summary": "Lock in great rates when you book your rental car at our Montreal airport or neighborhood locations. Book now to secure your ride with Enterprise!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "792bf2dc4b88030b",
-      "title": "United States Car Rental - Book Now | Enterprise Rent-A-Car",
-      "url": "https://www.enterprise.ca/en/car-rental-locations/us.html",
-      "summary": "Lock in great rates when you book your rental car at our United States airport or city locations. Book now to secure your ride with Enterprise!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3d84f41d395d8dd6",
-      "title": "Used Cars For Sale Online Or At A Dealership | Enterprise Car Sales",
-      "url": "https://www.enterprisecarsales.com/",
-      "summary": "Find used cars for sale near you at Enterprise Car Sales. Shop online or visit a dealership, value your trade, apply for financing, & schedule a test drive.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f8bcad10af192b73",
-      "title": "Why are there so many people asking for phone numbers on Facebook ...",
-      "url": "https://www.reddit.com/r/FacebookMarketplace/comments/q2tw2e/why_are_there_so_many_people_asking_for_phone/",
-      "summary": "In one of the groups for FB sellers on Facebook, someone posted screen shots of what appears to be from FB Marketplace asking the seller to provide personal information which apparently is going to be disclosed on all listings with shipping starting on June 2nd (email, home address, phone number, seller type) as part of their new \"transparency ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "community"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8e74c218fb6d1eb9",
-      "title": "100 Great Bhagavad Gita Quotes From Krishna | Sunil Daman - Patheos",
-      "url": "https://www.patheos.com/blogs/hindu2/2014/10/100-great-bhagavad-gita-quotes-from-krishna/",
-      "summary": "Krishna Quotes App You may also be interested in the Spiritual Quote of the Day Android App, which includes quotes from Lord Krishna, Mahatma Gandhi, Swami Vivekananda and many more great beings.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba83e1738db8cac9",
-      "title": "101 Chanakya Quotes Everyone Can Learn From - Patheos",
-      "url": "https://www.patheos.com/blogs/hindu2/2015/01/chanakya-quotes-management/",
-      "summary": "Don’t forget, more great quotes can be found in the Spiritual Quote of the Day Android App, which includes quotes from Mahatma Gandhi, Swami Vivekananda, Gautama Buddha and many more great beings.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d1c7ff8c954343b4",
-      "title": "101 Inspiring Swami Vivekananda Quotes To Fire Your Spirit",
-      "url": "https://www.patheos.com/blogs/hindu2/2014/09/swami-vivekananda-quotes-thoughts/",
-      "summary": "You may also be interested in the Spiritual Quote of the Day Android App, which includes quotes from Mahatma Gandhi, Swami Vivekananda, Gautama Buddha and many more great beings.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "afcdf1dd6b729a3b",
-      "title": "101 Mahatma Gandhi Quotes To Inspire Yourself | Sunil Daman",
-      "url": "https://www.patheos.com/blogs/hindu2/2015/03/mahatma-gandhi-quotes-inspire/",
-      "summary": "Quotes App You may also be interested in the Spiritual Quote of the Day Android App, which includes quotes from Mahatma Gandhi, Swami Vivekananda, Gautama Buddha and many more great beings.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7b59ec7142894ef3",
-      "title": "2026 Blue Jays Standings and Record: Regular Season",
-      "url": "https://www.mlb.com/bluejays/standings/",
-      "summary": "The official standings for the Blue Jays including division and league standings for regular season, wild card, and playoffs.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "329cd9bf97a1bcd3",
-      "title": "2026 MLB Player Pitching Stat Leaders",
-      "url": "https://www.mlb.com/stats/pitching",
-      "summary": "The official source for MLB player pitching stats, including wins, ERA, and strikeout leaders.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a46ca1ed84e7f2da",
-      "title": "2026 MLB Standings and Records: Regular Season",
-      "url": "https://www.mlb.com/standings/",
-      "summary": "The official standings for Major League Baseball including division and league standings for regular season, wild card, and playoffs.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "59d93e9049c7da82",
-      "title": "2026 MLB Standings and Records: Spring Training",
-      "url": "https://www.mlb.com/standings/spring-training",
-      "summary": "The official standings for Major League Baseball including division and league standings for regular season, wild card, and playoffs.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "10e9464ccd2a4557",
-      "title": "30 Days of Hekate: 11 – Festivals and Sacred Days - Patheos",
-      "url": "https://www.patheos.com/blogs/hearthwitchdownunder/2016/08/30-days-of-hekate-11-festivals-and-sacred-days.html",
-      "summary": "30 Days of Devotion to Hekate. Day 11 and we are looking at the festivals and sacred days and times of Hekate.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7d04f4600b81b53b",
-      "title": "30 Days Of Hekate: 27 – Hymns To Hekate | Bekah Evie Bel - Patheos",
-      "url": "https://www.patheos.com/blogs/hearthwitchdownunder/2016/08/30-days-of-hekate-27-hymns-to-hekate.html",
-      "summary": "30 Days of Devotion to Hekate. It's day 27 and today I am sharing some classic hymns to Hekate.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1959ec3ea3d65763",
-      "title": "Ancira Volkswagen of San Antonio | New & Used VW in Texas",
-      "url": "https://www.anciravolkswagen.com/",
-      "summary": "New Volkswagen and used cars, SUVs, trucks at Ancira Volkswagen of San Antonio in San Antonio, TX. Car dealership near Alamo Heights, New Braunfels, Seguin, TX. Auto repair, parts, finance, deals.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab50f23873c3c618",
-      "title": "Are there only bots on facebook marketplace?? - Reddit",
-      "url": "https://www.reddit.com/r/FacebookMarketplace/comments/qcweay/are_there_only_bots_on_facebook_marketplace/",
-      "summary": "The marketplace on Facebook is ridiculous. it is all bots. Not even mean people trying to waste your time meeting and no show, just bots waiting for a bite. I've been stood up because they've gotten so good at pretending to answers like real people. Free items and I'm still getting stood up. That's how ridiculous this platform is.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "53b77f08082da066",
-      "title": "Contact - Illinois Finance Authority",
-      "url": "https://www.il-fa.com/contact/",
-      "summary": "Alexandria Gunn Accounting and Debt Administration Specialist EMAIL ALEXANDRIA",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "476e5d6706ad6e68",
-      "title": "Did The Pope Really Say That? | Deacon Greg Kandra - Patheos",
-      "url": "https://www.patheos.com/blogs/deaconsbench/2013/07/did-the-pope-really-say-that/",
-      "summary": "All day, my FB feed has been filling up with this particular quote, attributed to Pope Francis, discussing World Youth Day: We need saints without cassocks, without veils. We need saints with ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "27347592b0bd9738",
-      "title": "Explore New Volkswagen Models in Austin, TX | Onion Creek VW",
-      "url": "https://www.onioncreekvw.com/searchnew.aspx",
-      "summary": "Explore new Volkswagen vehicles at Onion Creek VW in Austin, TX. Browse popular models like the Atlas, Tiguan, and ID.4 with expert help and local offers.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1fd36bd9f24970ec",
-      "title": "Illinois Finance Authority",
-      "url": "https://www.illinois.gov/agencies/agency.ifa.html",
-      "summary": "Illinois Finance Authority Since our creation in January 2004, the Illinois Finance Authority (IFA) has provided access to low-cost capital to public and private institutions that are aligned with our mission of fostering economic development, creating and retaining jobs, and improving quality of life for Illinois residents",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f2f5a408fc709ffe",
-      "title": "MLB Postseason 2026: Playoff Bracket and World Series Schedule | MLB.com",
-      "url": "https://www.mlb.com/postseason",
-      "summary": "The official home of the Major League Baseball Postseason including playoff news, schedule, bracket, and video.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
+        "video",
+        "research"
       ],
       "primary_type": "video",
       "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ea0cd9396cfafe4b",
+      "title": "College Football Scores Week 2, Big Ten Conference 2026 Regular ... - ESPN",
+      "url": "https://www.espn.com/college-football/scoreboard/_/week/2/year/2026/seasontype/2/group/5",
+      "summary": "Live scores for week 2 of the Big Ten Conference 2026 NCAAF Regular Season on ESPN. Includes box scores, video highlights, play breakdowns and updated odds.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video",
+        "research"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cd8b527e83afa5b6",
+      "title": "NCAA Football RealTime Scores, College Football RealTime Scores - ESPN",
+      "url": "https://insider.espn.com/ncf/realTime",
+      "summary": "College RealTime delivers scores directly from every College Football stadium scoreboard -- so live that it's just like being there! View every score discreetly on your desktop, updated instantly with NO refreshing.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6ba9c37e76b6f0f8",
+      "title": "Creating holes in the same way as Tinkercad - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/fusion-design-validate-document/creating-holes-in-the-same-way-as-tinkercad/td-p/8215332",
+      "summary": "Hi all I'm trying to switch from Tinkercad to Fusion 360 as Tinkercad is becoming less and less stable. I've become very used to creating shapes by taking a solid shape and a 'hole' shape and merging them together. I've looked to see if this is possible in Fusion 360 but really struggling to find ...",
+      "discovery_channel": "developer",
+      "query": "smart glasses developer API",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
         "reject_noise"
       ],
       "triage_priority": "low",
@@ -1696,10 +256,702 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3d95824c67c4c967",
-      "title": "MLB Schedule 2026: Baseball Games Today | MLB Schedule",
-      "url": "https://www.mlb.com/schedule",
-      "summary": "The official schedule of Major League Baseball including probable pitchers, Gameday, ticket and postseason information.",
+      "id": "b49dba4e8a75e7f2",
+      "title": "Nike Shoes - DSW",
+      "url": "https://www.dsw.com/brands/nike/shoes",
+      "summary": "Shop Nike Shoes at DSW. Free shipping, convenient returns and extra perks for VIPs. See what's new from Nike on DSW.com today!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e6491bfc15e57ace",
+      "title": "Nike Shoes | Sign in for Free Shipping - Famous Footwear",
+      "url": "https://www.famousfootwear.com/browse/brands/nike",
+      "summary": "From Nike running shoes and Nike high tops to Nike slides and Nike basketball shoes, find all the hottest styles right here at Famous Footwear. You’re in the right place for the latest Nike shoes for the family, boasting the biggest trends of the year for women, men and kids.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8e725b06801f71f3",
+      "title": "Nike Shoes, Apparel, and Accessories | Foot Locker",
+      "url": "https://www.footlocker.com/category/brands/nike.html",
+      "summary": "Shop the latest selection of Nike at Foot Locker. Find the hottest sneaker drops from brands like Jordan, Nike, Under Armour, New Balance, and a bunch more. Free shipping for FLX members.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a40797fc800ad5dc",
+      "title": "rc roof rack by Brett1974 - Thingiverse",
+      "url": "https://www.thingiverse.com/thing:348795",
+      "summary": "rc roof rack by Brett1974 is licensed under the Creative Commons - Attribution - Share Alike license.",
+      "discovery_channel": "developer",
+      "query": "smart glasses developer API",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18a44cd07bba4b7b",
+      "title": "REBECA MAYER - Lic. en Psicología - Tecnica Superior en ... - LinkedIn",
+      "url": "https://ar.linkedin.com/in/rebeca-mayer",
+      "summary": "Esta semana cerramos las actividades del workshop Bienestar Organizacional dictado por REBECA MAYER ( Lic. en Psicología y Profesional de RRHH) junto a Carolina Sayago (CEO, Profesional de RRHH...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b86481c38179d22",
+      "title": "Rebeca Mayer - Nutricionista e Mestra em Ciências da Saúde | LinkedIn",
+      "url": "https://br.linkedin.com/in/nutri-rebeca-mayer",
+      "summary": "Nutricionista e mestra em Ciências da Saúde, pós-graduanda em Neurociência e Comportamento Alimentar. Experiência em atendimentos com foco em saúde da mulher, lipedema e emagrecimento. Palestrante...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3fe769199a5b5edd",
+      "title": "REBECCA MAYER - Director at MAYER EARTHWORKS LIMITED | LinkedIn",
+      "url": "https://uk.linkedin.com/in/rebecca-mayer-85b9ba15b",
+      "summary": "View REBECCA MAYER’s profile on LinkedIn, a professional community of 1 billion members.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dfba48d1c3b8e90f",
+      "title": "Rebecca Mayer - Executive Producer | Consultant - LinkedIn",
+      "url": "https://www.linkedin.com/in/remayer",
+      "summary": "View Rebecca Mayer’s profile on LinkedIn, a professional community of 1 billion members.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9061ea6b49660185",
+      "title": "Rebecca Mayer - Registered Psychologist with Rebecca Mayer ... - LinkedIn",
+      "url": "https://ca.linkedin.com/in/rebecca-mayer-5437748a",
+      "summary": "Registered Psychologist with Rebecca Mayer Psychology Services Inc. & Recovery Alberta. Registered Psychologist in good standing with the College of Alberta Psychologists.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3f8bbf8efb2b8ca4",
+      "title": "Rebecca Mayer - Senior Product Manager - Extremities & Trauma - LinkedIn",
+      "url": "https://uk.linkedin.com/in/rebecca-mayer-827243234",
+      "summary": "Senior Product Manager - Extremities & Trauma · Experience: Arthrex UK · Education: University of Nottingham · Location: North Yorkshire · 500+ connections on LinkedIn. View Rebecca Mayer’s...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c0aedce779ff0a63",
+      "title": "Rebecca Mayer - Support Advisor - VetStrategy | LinkedIn",
+      "url": "https://ca.linkedin.com/in/rebecca-mayer-7a224395",
+      "summary": "Support Advisor - VetStrategy · My name is Rebecca Mayer, and I am a Certified Nutritional Practitioner with the Institute of Holistic Nutrition and a Registered Orthomolecular Health...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bec728e93e81dea8",
+      "title": "Rebecca Mayer - Whistleblower Attorney I Former Federal ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/rebecca-mayer-b99bb327",
+      "summary": "View Rebecca Mayer’s profile on LinkedIn, a professional community of 1 billion members.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "72a4db29be093b42",
+      "title": "Rebecca Mayer – Recht kreativ | Ass. Jur. | PR | LinkedIn",
+      "url": "https://de.linkedin.com/in/rebecca-mayer-984b4b209",
+      "summary": "Ich verabschiede mich von den Bildschirmen der PR, von #ProSieben, aus München. Lasse ein grandioses Team da und behalte die besten Erinnerungen. Danke an alle, die mich in den vergangenen 1,5...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5edc7189fd867b55",
+      "title": "Rebecca Mayer – Schaeffler | LinkedIn",
+      "url": "https://de.linkedin.com/in/rebecca-mayer-1b641a235",
+      "summary": "Wir freuen uns, Gastgeber des ersten Partner-Roundtables der Europäischen Metropolregion Nürnberg gewesen zu sein. Der gelungene Auftakt dieses neuen Formats stellte regionalen Austausch,...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7fb94c6492f84904",
+      "title": "Servo - MG90S by lylesvendsen - Thingiverse",
+      "url": "https://www.thingiverse.com/thing:2641076",
+      "summary": "I created this MG90S servo in TinkerCAD as part of another project and thought others may find it useful. Enjoy!The overall dimensions should be within +/- 0.2mm. The gear size is correct, but the teeth are an approximation.",
+      "discovery_channel": "developer",
+      "query": "smart glasses developer API",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "14ec815de70c5bc6",
+      "title": "Solved: Annoying lines in TinkerCad - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/autocad-forum/annoying-lines-in-tinkercad/td-p/7939061",
+      "summary": "Please change this! Sometimes when I group shapes, I get these useless lines that are so annoying! Now I remember why I tried blender... But it was too hard and I went back to this. And now I'm stuck with these lines! <<The thick blue line on top<< Dear TinkerCad team- please fix this issue! I don't know if this will show up in a print, but it's ugly in the program anyways! I'll continue to ...",
+      "discovery_channel": "developer",
+      "query": "smart glasses developer API",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "29b25911ab40be9e",
+      "title": "Thingiverse - TinkerCAD | 3D Printing Group & Community",
+      "url": "https://www.thingiverse.com/groups/tinkercad",
+      "summary": "Join and explore 3D printing groups and communities on Thingiverse. Connect with like-minded makers, share your projects, and collaborate on exciting designs.",
+      "discovery_channel": "developer",
+      "query": "smart glasses developer API",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c2f0455cdd983a48",
+      "title": "Tikercad Project Missing (Deleted?) - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/the-community-room/tikercad-project-missing-deleted/td-p/11879859",
+      "summary": "When I logged back into Tinkercad this morning, the project I was working on has disappeared. The most recently edited project (that I didn't open looing for the missing on) shows as being edited 14 days ago.",
+      "discovery_channel": "developer",
+      "query": "smart glasses developer API",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d7a3a61fe6d38b05",
+      "title": "TinkerCAD 円の中心を併せる方法 - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/sono-tano-zhi-pinnitsuiteno-zhi-wen-ri-ben-yuforamu/tinkercad-yuanno-zhong-xinwo-bingseru-fang-fa/td-p/7952150",
+      "summary": "ホーム コミュニティ ハブ その他の製品についての質問 - 日本語フォーラム TinkerCAD 円の中心を併せる方法",
+      "discovery_channel": "developer",
+      "query": "smart glasses developer API",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0fb76ddcd546139d",
+      "title": "Trophy Base by willsri - Thingiverse",
+      "url": "https://www.thingiverse.com/thing:1662875",
+      "summary": "I needed a trophy base for a project that I was working on. I liked the design of the first one, but ended up making a new one based off the design. I created mine using tinkercad.",
+      "discovery_channel": "developer",
+      "query": "smart glasses developer API",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b238a30bdc282e50",
+      "title": "WAGO 221 mounts by joochung - Thingiverse",
+      "url": "https://www.thingiverse.com/thing:2075219",
+      "summary": "- I originally designed the mounts using Tinkercad and only for the 5 conductor version, 221-415. I've now designed it using OpenSCAD. Its now configurable for any of the 3 versions of the WAGO 221 connectors: 221-412 (2 conductors), 221-413 (3 conductors), and 221-415 (5 conductors).",
+      "discovery_channel": "developer",
+      "query": "smart glasses developer API",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99750b68e2cd0f22",
+      "title": "Wearable Clone Trooper Armor by wizzardofboz - Thingiverse",
+      "url": "https://www.thingiverse.com/thing:1591539",
+      "summary": "This is a remix of MasterDarkOnyx's Clone trooper, scaled up to ~6' 2\" and converted to wearable pieces. I did this to use some of the pieces for a Clone Wars Obi Wan costume, but I thought I would do the whole thing. I didn't chop the files since everyone will have a different size printer. I happen to have a huge one and can print most of the parts in one or two pieces. I included the ...",
+      "discovery_channel": "developer",
+      "query": "smart glasses developer API",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2444c3b31c2e9550",
+      "title": "Conformity - Simply Psychology",
+      "url": "https://www.simplypsychology.org/conformity.html",
+      "summary": "Conformity, or majority influence, is when a person changes their attitudes, beliefs, or behaviour to match a group or a perceived social norm. This change happens in response to real or imagined group pressure, even without any direct request to comply.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1726,10 +978,160 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c98c0d6216cb7a79",
-      "title": "Occult In America: Albert Pike & Freemasonry | Jason Mankey",
-      "url": "https://www.patheos.com/blogs/panmankey/2013/07/pike/",
-      "summary": "Albert Pike will never make my list of “favorite occultists,” but he was influential in spreading European occult philosophies and ideas within the United States through Freemasonry.",
+      "id": "4343d60d9fb4b7a1",
+      "title": "Convergence Theory in Psychology | Definition, Use & Examples",
+      "url": "https://study.com/academy/lesson/convergence-in-psychology-definition-theory.html",
+      "summary": "Convergence theory proposes group members bring with them their own influences and often join a group because they subconsciously sympathize with the group's message.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8c9ee1c29323cb06",
+      "title": "False consensus effect - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/False_consensus_effect",
+      "summary": "Ross, Green and House first defined the false consensus effect in 1977 with emphasis on the relative commonness that people perceive about their own responses; however, similar projection phenomena had already caught attention in psychology.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7cfec01b96ea1ca5",
+      "title": "Groupthink - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Groupthink",
+      "summary": "Collective illusions are a specific form of Groupthink where individuals mistakenly assume the group's wants, leading everyone to behave in ways that don't reflect their true preferences.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7c28015e7ce5c9e",
+      "title": "Groupthink: Definition, Signs, Examples, and How to Avoid It",
+      "url": "https://www.verywellmind.com/what-is-groupthink-2795213",
+      "summary": "Groupthink is a psychological phenomenon in which people strive for consensus within a group. In many cases, people will set aside their own personal beliefs or adopt the opinions of the rest of the group. The term was first used in 1972 by social psychologist Irving L. Janis.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c4538c0fda9c7e65",
+      "title": "Language Bank - Interpretation, Translation, Training, and More.",
+      "url": "https://thelanguagebank.org/",
+      "summary": "Language Bank is here for all of your interpretation, translation, and interpreter training needs. Get a free quote today!",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "92a99b2736088990",
+      "title": "Nike Shoes & Sneakers",
+      "url": "https://www.nike.com/w/shoes-y7ok/",
+      "summary": "Discover a wide selection of Nike shoes, sneakers, and cleats for all activities at Nike.com.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1756,42 +1158,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a8bde5e3272317bf",
-      "title": "Tips on buying a car from FB Marketplace? : r/askcarguys - Reddit",
-      "url": "https://www.reddit.com/r/askcarguys/comments/1bl2jzy/tips_on_buying_a_car_from_fb_marketplace/",
-      "summary": "Do not let problems deter you from buying. Finding a perfect used car on the marketplace is like finding a UNICORN. You probably wont be fast enough to react to get those car since every flipper and their moms is also trying to find a deal on there. So if the car passes all these test then you put yourself in the BEST position you physically could.",
+      "id": "4fdbbe3ebe0a45cc",
+      "title": "Nike Shoes - Macy's",
+      "url": "https://www.macys.com/shop/brands/nike/nike-shoes?id=377577",
+      "summary": "Step into style and performance with Nike shoes at Macy’s. Shop the latest sneakers, running shoes and casual styles for men, women and kids—all in one place.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "34c94659436ecf5b",
-      "title": "Upload image on Facebook Marketplace with selenium (python)",
-      "url": "https://stackoverflow.com/questions/74479046/upload-image-on-facebook-marketplace-with-selenium-python",
-      "summary": "I am trying to automatize the creation of ads on facebook marketplace. I success in log in and go on the correct page. But I don't how to upload an image with selenium. Indeed, the element which ha...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1816,12 +1188,72 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "571bfade14cc1c56",
-      "title": "Volkswagen Dealer in Austin, TX | New and Used VW Cars, Financing and ...",
-      "url": "https://www.onioncreekvw.com/",
-      "summary": "Discover new VW vehicles and used cars for sale at Onion Creek VW in Austin, TX. Explore Volkswagen financing, certified pre-owned vehicles, VW leases, new and used car deals, and expert VW service.",
+      "id": "d00e107d69d579d3",
+      "title": "Nike Shoes - Nordstrom",
+      "url": "https://www.nordstrom.com/brands/nike/shoes",
+      "summary": "Shop all Nike shoes for men, women and kids. Find sneakers, slippers, sandals and more.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0abe01267a173e29",
+      "title": "Nike Shoes for Men, Women, & Kids | Foot Locker",
+      "url": "https://www.footlocker.com/category/shoes/nike.html",
+      "summary": "Shop the latest selection of Nike Shoes at Foot Locker. Find the hottest sneaker drops from brands like Jordan, Nike, Under Armour, New Balance, and a bunch more.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "41441f219d1fa7ae",
+      "title": "Nike Shoes | DICK'S Sporting Goods",
+      "url": "https://www.dickssportinggoods.com/f/nike-athletic-sneakers",
+      "summary": "Shop Nike Shoes at DICK'S Sporting Goods. Browse a wide selection Nike shoes and Nike sneakers in a variety of styles for the whole family at low prices with our Best Price Guarantee.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1846,70 +1278,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4e986d8a31258be9",
-      "title": "Volkswagen Dealership in Austin, TX | Charles Maund VW",
-      "url": "https://www.vanguardvw.com/austin-tx/volkswagen-dealership.htm",
-      "summary": "As your local VW dealership in Austin, TX, Vanguard Volkswagen proudly offers a great selection of new VW vehicles. Stop by for a test drive today!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "25db28e81297f79b",
-      "title": "Waco's Volkswagen Of Waco | New and Used Volkswagen Cars",
-      "url": "https://www.vwofwaco.com/",
-      "summary": "Search Volkswagen Of Waco's online Volkswagen dealership and browse our comprehensive selection of new models. Buy a new or used Volkswagen in Waco at Volkswagen Of Waco. Serving Hewitt TX, Woodway TX, Hillsboro TX and Marlin TX.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fb62e79dcc4e8744",
-      "title": "What Ever Happened To Hagoth? | Gina Colvin - Patheos",
-      "url": "https://www.patheos.com/blogs/kiwimormon/2012/02/what-ever-happened-to-hagoth/",
-      "summary": "On this marae visit I shared with them a quote by Victor, a black man speaking to Dave, a white man, in the documentary film by Lee Mun Wah, The Color of Fear (1992) who said: ‘Don’t expect me ...",
+      "id": "a47ee97032441199",
+      "title": "Nike. Just Do It. Nike.com",
+      "url": "https://www.nike.com/",
+      "summary": "Inspiring the world's athletes, Nike delivers innovative products, experiences and services.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1936,26 +1308,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ffc7fa89c2766df4",
-      "title": "why are there so many lowballers?? : r/FacebookMarketplace",
-      "url": "https://www.reddit.com/r/FacebookMarketplace/comments/1cobwuf/why_are_there_so_many_lowballers/",
-      "summary": "Facebook marketplace is basically a digital yard sale, so if you have a switch game like that listed for $35 expect to get offers of $15-25. You can either ignore them or try and haggle it's up to you.",
+      "id": "bef3b9738ca940c7",
+      "title": "Shop Nike Shoes & Sneakers Amazon",
+      "url": "https://www.amazon.com/nike-shoes/s?k=nike+shoes",
+      "summary": "Get Nike shoes built for performance and style. Browse men's and women's collections featuring cushioning, support, and classic designs.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "retail",
-        "community"
+        "retail"
       ],
       "primary_type": "retail",
       "routing_targets": [
@@ -1967,42 +1338,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c4e7fe3c059aa69f",
-      "title": "Why do people save items on Facebook Marketplace? - Reddit",
-      "url": "https://www.reddit.com/r/Flipping/comments/j4go25/why_do_people_save_items_on_facebook_marketplace/",
-      "summary": "I sell a few handmade items on Facebook Marketplace and I get a lot of views, shares and saves. What’s the point of saving an item on there? The items are first come, first serve, so if you saved the item for a later date, it will be gone. Share Sort by: Best Open comment sort options Best Top New Controversial Old Q&A Add a Comment hogua •",
+      "id": "00fc50f061c0fa2a",
+      "title": "Understanding Social Conformity: Influences and Impacts on ...",
+      "url": "https://psychology.town/social/social-conformity-influences-impacts-behavior/",
+      "summary": "Social conformity is the process by which individuals adjust their behaviors, attitudes, or beliefs to align with the expectations of a group – whether that pressure is real or simply imagined. It’s one of the most fundamental and far-reaching forces in human social life, shaping everything from fashion trends to political opinions.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f98e73c1da34542d",
-      "title": "“Surrounded!” A Sermon For All Saints Day | Alyce McKenzie",
-      "url": "https://www.patheos.com/blogs/knackfornoticing/2010/10/surrounded-a-sermon-for-all-saints-day/",
-      "summary": "Surrounded! 1 Kings 3: 3-12; Hebrews 12:1, 2; 12, 13 \" Sermon for All Saints Day\" My grandmother, after whom I am named, passed away in 2000 at age 95",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2018,6 +1359,66 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "17ae1ede05376aa4",
+      "title": "What Is Proximity Psychology? | BetterHelp",
+      "url": "https://www.betterhelp.com/advice/psychologists/what-is-proximity-psychology/",
+      "summary": "What is proximity psychology in relationships, and how do we perceive it? The principle of proximity psychology can be applied to relationships, too. People often unconsciously form social relationships with those who are physically or visually closest to themselves.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca83bba84d6d5171",
+      "title": "Introducing Gemini, your new personal AI assistant",
+      "url": "https://gemini.google/assistant/",
+      "summary": "Gemini is our AI-powered assistant, that offers the hands-free help that you love from Google Assistant, but can go far beyond in conversationality and complexity of the tasks it can help with.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
