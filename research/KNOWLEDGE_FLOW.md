@@ -48,6 +48,12 @@ Automated collectors persist their queue on the `knowledge-intake` branch. The q
 
 The public site's synthesized claims should receive only evidence appropriate to their verification/editorial status. Subscriber delivery occurs after publication, using the same model/topic relationships that routed the underlying evidence. **That threshold does not hide retained model-specific evidence from the model evidence corpus:** unverified material remains discoverable as explicitly unverified evidence rather than being promoted as verified fact. Internal enrichment may continue even when a finding is not suitable for editorial publication.
 
+## Delegated evidence actuator
+
+After automated triage, candidates carrying `evidence_write_authorized=true` are materialized by `scripts/delegated_evidence_actuator.py` into `research/delegated-evidence/` during the unattended daily-triage workflow. This is the durable handoff that turns delegated evidence authority into an actual repository write.
+
+The actuator is intentionally narrower than publication: it preserves the source, evidence class/lane, relationship, routing targets, and attribution boundary. It cannot publish a GlassesResearch conclusion, alter Report Card scores, resolve lineage, or make canonical model mutations. Those actions continue through their existing gates.
+
 ## Provenance invariant
 
 A source observation never becomes stronger merely because it was ingested, routed, repeated, indexed, or published. Community evidence remains community evidence until separately corroborated; manufacturer claims remain manufacturer claims; GR-lab verification is recorded only after an actual reproducible GR observation. Contradictions are retained as first-class relationships rather than overwritten.
