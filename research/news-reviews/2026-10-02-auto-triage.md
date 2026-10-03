@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-03T03:46:58.163215+00:00`
+Generated: `2026-10-03T03:47:52.901294+00:00`
 
 - Intake files inspected: **288**
 - Candidates retained in this review window/history: **12006**
@@ -12,10 +12,10 @@ Generated: `2026-10-03T03:46:58.163215+00:00`
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 724
+- `needs_editorial_verification`: 723
 - `rejected_noise`: 8474
 - `source_monitor`: 1
-- `source_review`: 36
+- `source_review`: 37
 - `watching`: 83
 
 ## Action queue
@@ -250,7 +250,6 @@ Generated: `2026-10-03T03:46:58.163215+00:00`
 | normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Amazon is rolling out AI smart glasses for their delivery drivers - celebitchy.com](https://news.google.com/rss/articles/CBMiowFBVV95cUxOUDB2eHR0aG5wQmozekNvZERLeDFNbFE0WGhWRVd0M0ZGOVpGZXJJQzZaYnIwbl9WbDRsYkNkb1pWUHhhZVBCMWpaX0NSYXIzZE9Xc1I5ejNxYVNWcjYtVlQyY3JxdEVubXE0TFBtTllSbXZDcEwwdVFaQUZsR19RaVlTQ3dHLXU1MkFia3pQZWdOLWVEeERVRTFvRDRkbE9zeXpz?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon llevará sus gafas inteligentes a 5.000 repartidores y las usará para alimentar su IA de última milla - CdeComunicacion.es](https://news.google.com/rss/articles/CBMi9wFBVV95cUxNWDVsckI3VHBhVGRfT3A0TDB5X0RBZTNNWlFwcWR4OGItV2NTQlA5YjJaVXl4TG5OS1BIekRQQnFEVmJhWElPSHhsN09WRVV5cUphYkVjNEl1ekZNWmd0dllkMFJSNnhoV1hLMk1PVlZ3aU5WM0FYRXZLN3NvYlRLcFVMblNFdjlBQ0VpZ0RyM3NHTkhDTWtTaXdwQjVxeHl2N3hTV0xXb25TbDlHeklsaVVMMFNLZUJZQlJ0c29qdGZVUnVtVllUQW9rZ2dmS1RSbFdxUnZIMU91NDRSSlpsSURuRkdFX2RTQ3daMUY3TEdLbk5hWTZv0gH8AUFVX3lxTE90Z1lMYkwtVnN5THdkRUE4WTNZX05BWTVXVk1wQW1ONHM4QWNIU0VuUGVPSDU1bWlTVDBacHRROU5vcnAzOFdXeE5UdzB6SjVuNXhfbEZBdUdhSTRZZmlad2NHaC1ONDl0MGFsQ0pIaUpYaVJFQnQ2bnEtMXdVem4zN2RVZ293a3g0UzFJUDc3QjBBWFFfUjJGYXFKR1NkOFg1Zl9IcjF1QUNmOW1RNHJ2YUZIMGJnWjMtZ1A5bHdEOUpnVTBYQXMxNDZQU3E0OFBHQ292Mk1yenhpMzBSWjVNdUQ0XzVseTRpR0dicVJuOGRiRHdHZm05b1c5MQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ30gHfAUFVX3lxTE1KV1c3ZzZwVk90MjdZVDZ6Zi1tN1UtTm04UnhvMjFPT0dzcTdHakNzaXAtdElUR1dFUUdWLXA2a25Ba0ZMVjVndll1c3M4WUk3bE95T18xQ2ktWno5NnB4RzBBWkFZdW5wUFBMZXQtai15TDdaR0tBSDkyTmkybUZhOEhKaDdraXlWMjN6dEtGU2VuTXJuSWpmcWgwMWJ6MVlNYXZXMEtKek1mbDQ1amJqa1R6RE1tV0VUaEh4cU1XN3RMUDNuR1V0aFVadXRjMlI3WVF2dlVNbW9qQlN0dnc?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -272,6 +271,7 @@ Generated: `2026-10-03T03:46:58.163215+00:00`
 | normal | needs_editorial_verification | direct | [Entidades pedem ao TSE reforço na proibição de óculos inteligentes durante votação - GP1](https://news.google.com/rss/articles/CBMi4wFBVV95cUxNRE44dnAtc2JjVDZ1S3dISVR4RVFGSU9CMVFIX051amJ5YzEzSUtwZmJ4RldYZFVzc0cwcVFOdHl2WkZQRHVTOVFTMWN2Y0dGRWhfR2JYam1kOGFZUExmenZMeWhLZjJKam1sTWdLb0VnRXlnV2JGbE1zR2NoVUdtd0pqN1NhZzljbE00SFBHTW8zTmJqQ3RUal8tbHk2MlV1Yi1qTmRBemdIbGRKYzRsanF4bDJ4STQ1Uk81X0s5bEppWTVuLXFEUmVmNGROdFgtSlkyTnU1RTZHWGc5WWljWlBTa9IB6AFBVV95cUxPanlIdkIwR21HaDJQcGtuUlBQQlRSaWVqV2txM2dxV1Vna21mamJIbHVrTmRrWG1KaEo3VzhXQk9VNW9FV0tHMzdCa2tMaXlaOS00MEc4TFBfSU5HNmZXRkxvOXEwMHdVNmpSOHpDUVdUSGVfaHBLVmIwNFBDOWRNMmdLbGZqaEZRa1JpZ19Ma0REMzBYTWxuTXdsVzlVZjJzek9EQ1l6TjVETkkza3ljOWJZVU5GY2RFc3hlT0IxX0ZySWxkdnJuZEVoV0dmTEpGaDU5WXM4UGlOMDVqd2dfRjY2eU5Cb2wt?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Eyewear chain pulls Meta glasses off Dutch store shelves over social concerns - nltimes.nl](https://news.google.com/rss/articles/CBMinwFBVV95cUxQdGF3Rm1vYnBfbElCX3AxMkgxQ25oMTV1dnRBTkowWGRIRDlpUURadHdRR1ZBeDJMaFg0ZTFWa013VUprSDlveEcwLTBHeV85MlZDclJkMmN0ZUptcmN2WFRqdFl0NGFicVBwNmFUbEZkZ1FRcUhKeDFkR1plbEhaV2YzWTRreC1mdDh6Nzk0R1luZjJmbmV0TjBZeGFTZzQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Finalmente, las gafas inteligentes de Samsung llegarían en noviembre: qué se sabe de su lanzamiento - Pisapapeles](https://news.google.com/rss/articles/CBMivwFBVV95cUxNV2RubUdYNmZQYmtfazZZUmZSVC1oSmlZY001VW0zaWxabjUwNkdOUDZ4QzhXT2Rkai1aRFJDSTMyMEVqd0hXQ004ZHFWbFJ5N0JMWFAtNFpRQ1pDSEtlZzhxeldYZkItdGV4aXdSa0lKdWVwMHFmM3Y5bmhYN1Y1ZVJzWFFTeHpodVI1VUZMSmtDeEk1Z2FJU2xCU3pCSzBIRUMtZGNUN21QLUhYSnNGM3hWZWNNUWZMR2xIbUVVRdIBxAFBVV95cUxPWmFHUVFGanlvcTQtTFNnM2hETlpoQlhqUGxRVndRVlM0WjRVT0tYTlFDc2dnN3lvZzdSR2VIRmdBbVVkOEtEMW1yQTJuWWJOcEJfcWFVODl6bW84aUNkeUhFZUNxWnl4enlRVHNxckRBMDhNRl9pNElBdklaOW10MFAxckxFMFpTT2hrTUNJaTBaY3FnNk16QlFBbjFhWnlFVlZyR1o0MGZicTQ0YWRidXVhQTZBVkc5dGpTZlU5X2w3UGxM?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [From smart glasses to AI pins, privacy fears challenge tech's next big bet - Herald-Review.com](https://news.google.com/rss/articles/CBMimAFBVV95cUxQT1JzTFZJTmVTWVd5WFhQX0FfdG9zQnVGdldVNTN4cTJucHVaeklGMTZ1dkpzRXhwaG16NHg5ck5ZRzJTaEd4WlNaMUdFUVR4anFFQ1BzR0J5b2pBSl9maXRHb1ZZTWVZQ1BENTdCaFRfVnhaWng0YU43Q2VYWGgydlRzdzdveng3cXYwY2lqajgwN2cwLW1qUg?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 
 ## Meaning of states
 
