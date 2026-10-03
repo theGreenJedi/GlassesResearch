@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-03T17:33:34.180709+00:00`
+Generated: `2026-10-03T20:00:31.348303+00:00`
 
-- Intake files inspected: **289**
-- Candidates retained in this review window/history: **11895**
+- Intake files inspected: **288**
+- Candidates retained in this review window/history: **11800**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2594
+- `adjacent_radar`: 2562
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 727
-- `rejected_noise`: 8432
+- `needs_editorial_verification`: 728
+- `rejected_noise`: 8367
 - `source_monitor`: 1
-- `source_review`: 37
-- `watching`: 86
+- `source_review`: 36
+- `watching`: 88
 
 ## Action queue
 
@@ -132,6 +132,8 @@ Generated: `2026-10-03T17:33:34.180709+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.572](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.572) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.573](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.573) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.574](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.574) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.575](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.575) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.577](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.577) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta To Launch Smart Glasses Without Camera As Privacy Backlash Grows - uploadvr.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxPRU83UGZPeWFKTk91S2xlUU5xeVhTVDcyVVZZaW5jem5sZXQ5WGFyV3NkNUN6SGhTV3hMV0JXdWFpN3R2RndfaWx0OFhRRVFBQ0Y2UFlhdHp4TlREeURodjJkX1RUQjNBQnFxS3EwSlNELUpXc3Z0bnpPdWtLUTkzdDdXdjJ4X0lKWlY2T2Y4Y0tUczh6MjEwdVY1RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
@@ -270,8 +272,6 @@ Generated: `2026-10-03T17:33:34.180709+00:00`
 | normal | needs_editorial_verification | direct | [Concern over covert filming devices in Senedd after Reform MS accused of using smart glasses - Nation.Cymru](https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZmhsenNBSE53Xy1jbWlnX1hNaEZEMzlJamdhVHl5aFhSWFdpTjA1VzM2cjhfUlJIbGRfcjRhdU9CMDBxZWlnSUk5SElUNVFhdTVSeHlLLXBhWmNhMU5ycTZoWW55LUNGT2lLSjllXzZzdjRydlM4RUxNZWp0anNLSC1iQjQtbkVOcllXR0tOR2NnbVF4TzI1ZFV6YzRVbFVaV3ZFQXRQdE1Mc0dDeXJ5NXI3RlJPWkREMFQ0?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Dutch retailer pulls Meta glasses as hundreds of women reportedly filmed - cybernews.com](https://news.google.com/rss/articles/CBMib0FVX3lxTE5mR21kaDJXSE1hSmdTYk9BN25XZnoxZmJ0X1JpQlI5Z1NJNkJGT093S0FZQ1pGSjd0aUlpclh4bEFoM1IwMEVmb2pVTjlxbDB5dUlWS3AwLUF3cWVIeU41OFpVSk0tQUVWTWZZOGM2VQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Entidades pedem ao TSE reforço na proibição de óculos inteligentes durante votação - gp1.com.br](https://news.google.com/rss/articles/CBMi4wFBVV95cUxNRE44dnAtc2JjVDZ1S3dISVR4RVFGSU9CMVFIX051amJ5YzEzSUtwZmJ4RldYZFVzc0cwcVFOdHl2WkZQRHVTOVFTMWN2Y0dGRWhfR2JYam1kOGFZUExmenZMeWhLZjJKam1sTWdLb0VnRXlnV2JGbE1zR2NoVUdtd0pqN1NhZzljbE00SFBHTW8zTmJqQ3RUal8tbHk2MlV1Yi1qTmRBemdIbGRKYzRsanF4bDJ4STQ1Uk81X0s5bEppWTVuLXFEUmVmNGROdFgtSlkyTnU1RTZHWGc5WWljWlBTa9IB6AFBVV95cUxPanlIdkIwR21HaDJQcGtuUlBQQlRSaWVqV2txM2dxV1Vna21mamJIbHVrTmRrWG1KaEo3VzhXQk9VNW9FV0tHMzdCa2tMaXlaOS00MEc4TFBfSU5HNmZXRkxvOXEwMHdVNmpSOHpDUVdUSGVfaHBLVmIwNFBDOWRNMmdLbGZqaEZRa1JpZ19Ma0REMzBYTWxuTXdsVzlVZjJzek9EQ1l6TjVETkkza3ljOWJZVU5GY2RFc3hlT0IxX0ZySWxkdnJuZEVoV0dmTEpGaDU5WXM4UGlOMDVqd2dfRjY2eU5Cb2wt?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Entidades pedem ao TSE veto a óculos inteligentes - gp1.com.br](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNaWdqb1Z0cVVwekxHN3hnV2JXNjJiVmJ5YXVtT1RqdnhhemhNRnh2S1F3Y2M0TWdNNU40Y0hQR2IzdHRuMTNxc0J5WVFSNUpzOE1td09QSWJpMGMzSjFfZ3lFbUxzaHgyZEtWSU9FTWlYUk42YzRXTHVwdnZJUlYxbWppZGtsY3QyZkxFbjN2MlNpV0dRai1Mb3Nab2xLYkJwYWdOSnpUSUFUc2hBa3Q1TU8xLTFicGkwNXVsVTVXTVdETWpYOVJicDRROF9ZYVVGRm9UT2UyVXZZUdIB2gFBVV95cUxNaWdqb1Z0cVVwekxHN3hnV2JXNjJiVmJ5YXVtT1RqdnhhemhNRnh2S1F3Y2M0TWdNNU40Y0hQR2IzdHRuMTNxc0J5WVFSNUpzOE1td09QSWJpMGMzSjFfZ3lFbUxzaHgyZEtWSU9FTWlYUk42YzRXTHVwdnZJUlYxbWppZGtsY3QyZkxFbjN2MlNpV0dRai1Mb3Nab2xLYkJwYWdOSnpUSUFUc2hBa3Q1TU8xLTFicGkwNXVsVTVXTVdETWpYOVJicDRROF9ZYVVGRm9UT2UyVXZZUQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Entidades sugerem ao TSE que reforce a proibição de óculos inteligentes para votar - Estadão](https://news.google.com/rss/articles/CBMi3AFBVV95cUxPY1NLbTBCNGhoQnZNS01ZQkNaUGx6S0NKTUV4SGt6QTFsQkxJS3ZEV1NRZTk2cDhPVzM0Qi1OWXNESWRORF90UzY4UnZOajZERjhGbkZKSU05Qnc5V2llQ1JWRjBWRDlCRkVJUzZsSk5LUDh2cDFuV1c1cjBGaTNCWHpvXzdRZW9oVEJldjJnSEtaelpjU1pDdjlXWGxWUFFyc1NvdDFJTFVOak5yaV9OaW55S0hGdFc1a2F1UVNMX1J4NHpkTmhWTkM4SmJDRUl6RG40UDRUMjNqQllK?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
