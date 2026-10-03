@@ -38,6 +38,18 @@ After merge, verify the live/public result when applicable and record the dispos
 
 A merge proves code integration; it does not prove the mission succeeded. Treat `implemented`, `integrated`, `commissioned`, and `operational` as distinct states. **Built means commissioned. Operational means commissioned and observably continuing to work.**
 
+## Standing operating canon
+
+### GitHub write authority
+
+Pete has granted standing write permission for the canonical GlassesResearch repository, `theGreenJedi/GlassesResearch`. Treat that permission as durable project canon, not a per-session fact and not a recurring approval gate. For routine in-policy repository work, use the authorized GitHub write mechanisms directly. Do not ask Pete whether write permission exists when the operation is already within delegated authority.
+
+### Mission Style
+
+When Pete directs work to proceed **Mission Style**, the optimizer/agent owns the approved mission end-to-end: understand the objective and acceptance conditions; inspect current state; choose and execute the necessary in-policy steps; use judgment within established canon without returning routine choices to Pete; recover from ordinary/transient failures; verify the actual outcome rather than merely the attempted action; record durable state; and continue until the mission is complete.
+
+Mission Style is **not** "make a recommendation and wait," "stop at the first error," "ask Pete to reconfirm standing permission," or "treat every implementation choice as a new approval gate." Return to Pete only when an unresolved case crosses an established human authority/judgment boundary, requires credentials/spending/irreversible external commitment outside delegated authority, or remains blocked after bounded recovery with concrete failure evidence.
+
 ## Delegated authority
 
 Approval belongs primarily at the rule/pipeline level, not as a repetitive checkpoint on routine executions. When an already-approved pipeline's deterministic predicates are satisfied and the action remains inside its delegated authority, advance it through completion without recurring approval merely because the object is canonical, research, evidence, or publication state.
@@ -69,6 +81,20 @@ A blocker may be reported only when there is evidence from an **actual attempted
 After bounded recovery is exhausted, classify the blocker (for example: permissions, CI, deployment, credentials, external dependency, policy/authority, evidence ambiguity, or persistent tool failure), retain the failed action/error evidence, and escalate only when current policy requires human authority/judgment or the verified persistent failure cannot be repaired automatically.
 
 Routine reporting occurs **after** recovery and continuation, not at the first sign of friction. Healthy cycles should be exception-based and concise: what advanced, what completed, and whether Pete needs to act. Intermediate diagnostics belong in durable execution evidence, not in the morning report unless they remain material after recovery.
+
+### Repository-write recovery route
+
+For GlassesResearch, the canonical repository is `theGreenJedi/GlassesResearch`. Repository identity is durable project state; an optimizer run must resolve it from current repository/project context or this contract rather than asking Pete to repeat it.
+
+When an in-policy GitHub mutation is authorized but the first execution mechanism refuses, rejects, or cannot route the write, that is **execution-path friction**, not evidence that repository writes are blocked. The optimizer must, within the same run:
+
+1. re-read repository permissions and current target state;
+2. use the authorized GitHub connector write action directly (contents/issues/pull requests/workflows as appropriate);
+3. refresh stale SHAs/refs before retrying a conflicting write;
+4. verify the mutation by re-reading GitHub state; and
+5. continue the mission from the verified state.
+
+Do not ask Pete to reconfirm standing write permission, repository identity, or routine delegated authority. Escalate only after the direct authorized route has actually failed and bounded recovery is exhausted, retaining the concrete error evidence.
 
 ## Durable monitoring
 
