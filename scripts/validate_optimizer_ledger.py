@@ -36,6 +36,11 @@ def main():
         "actual failed action",
         "not_attempted and attempted_failed",
         "after recovery/continuation",
+        "direct connector route",
+        "verify the mutation by re-read",
+        "not recurring Pete approval gates",
+        "Pete has granted GitHub write permission",
+        "Mission Style means own the approved mission end-to-end",
     ):
         if required not in contract:
             fail(f"closed-loop optimizer invariant missing: {required}")
