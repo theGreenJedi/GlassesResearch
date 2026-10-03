@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-03T13:19:11.248561+00:00`
+Generated: `2026-10-03T16:31:31.096185+00:00`
 
-- Intake files inspected: **290**
-- Candidates retained in this review window/history: **12086**
+- Intake files inspected: **289**
+- Candidates retained in this review window/history: **11948**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2665
+- `adjacent_radar`: 2611
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 724
-- `rejected_noise`: 8550
+- `needs_editorial_verification`: 725
+- `rejected_noise`: 8468
 - `source_monitor`: 1
-- `source_review`: 43
+- `source_review`: 40
 - `watching`: 85
 
 ## Action queue
@@ -255,6 +255,7 @@ Generated: `2026-10-03T13:19:11.248561+00:00`
 | normal | needs_editorial_verification | direct | [AI Prescription Glasses Guide: Smart Eyewear for Vision Correction](https://www.evenrealities.com/blogs/buyers-guide/ai-prescription-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses with Prescription \| Smart Glasses with Rx ...](https://eydology.com/collections/ai-smart-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ30gHfAUFVX3lxTE1KV1c3ZzZwVk90MjdZVDZ6Zi1tN1UtTm04UnhvMjFPT0dzcTdHakNzaXAtdElUR1dFUUdWLXA2a25Ba0ZMVjVndll1c3M4WUk3bE95T18xQ2ktWno5NnB4RzBBWkFZdW5wUFBMZXQtai15TDdaR0tBSDkyTmkybUZhOEhKaDdraXlWMjN6dEtGU2VuTXJuSWpmcWgwMWJ6MVlNYXZXMEtKek1mbDQ1amJqa1R6RE1tV0VUaEh4cU1XN3RMUDNuR1V0aFVadXRjMlI3WVF2dlVNbW9qQlN0dnc?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Are Metal Smart Glasses Weird? Honest Review & First Impressions \| TikTok](https://www.tiktok.com/@charlottegannon1/video/7672851338966945046) | reachable (200) | research_news_review, report_card_evidence |
@@ -271,7 +272,6 @@ Generated: `2026-10-03T13:19:11.248561+00:00`
 | normal | needs_editorial_verification | direct | [CNET 2d ago Amazon Delivery Driver Smart Glasses Will Snap Pictures of… Everything? Coverage Amazon](https://www.cnet.com/tech/amazon-delivery-driver-ai-smart-glasses-privacy/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [CNET Aug 24, 2026 If You Don’t Want Smart Glasses to Spy, Try a Bluetooth Detector App](https://www.cnet.com/tech/mobile/if-you-dont-want-smart-glasses-to-spy-try-a-bluetooth-detector-app/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Concern over covert filming devices in Senedd after Reform MS accused of using smart glasses - Nation.Cymru](https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZmhsenNBSE53Xy1jbWlnX1hNaEZEMzlJamdhVHl5aFhSWFdpTjA1VzM2cjhfUlJIbGRfcjRhdU9CMDBxZWlnSUk5SElUNVFhdTVSeHlLLXBhWmNhMU5ycTZoWW55LUNGT2lLSjllXzZzdjRydlM4RUxNZWp0anNLSC1iQjQtbkVOcllXR0tOR2NnbVF4TzI1ZFV6YzRVbFVaV3ZFQXRQdE1Mc0dDeXJ5NXI3RlJPWkREMFQ0?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Dutch retailer pulls Meta glasses as hundreds of women reportedly filmed - Cybernews](https://news.google.com/rss/articles/CBMib0FVX3lxTE5mR21kaDJXSE1hSmdTYk9BN25XZnoxZmJ0X1JpQlI5Z1NJNkJGT093S0FZQ1pGSjd0aUlpclh4bEFoM1IwMEVmb2pVTjlxbDB5dUlWS3AwLUF3cWVIeU41OFpVSk0tQUVWTWZZOGM2VQ?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
