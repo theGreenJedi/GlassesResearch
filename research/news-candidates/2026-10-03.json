@@ -1,71 +1,176 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-03T07:59:13.828510+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 151,
+  "discovered_utc": "2026-10-03T09:27:45.467479+00:00",
+  "candidate_count": 4,
+  "precision_rejected_count": 147,
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 1,
-    "adjacent": 0,
+    "direct": 3,
+    "enabling": 0,
+    "adjacent": 1,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "hack": 1,
-    "optics": 1
+    "model": 1,
+    "review": 1,
+    "news": 1,
+    "policy": 1,
+    "retail": 1
   },
   "routing_counts": {
-    "development_hacking": 1,
-    "research_news_review": 1,
-    "research_optics": 1
+    "adjacent_radar": 1,
+    "model_catalog_review": 1,
+    "policy_privacy": 1,
+    "report_card_evidence": 1,
+    "research_news_review": 4,
+    "retail_rebrand_review": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
     {
       "url": "https://brilliant.xyz/blog",
       "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "url": "https://www.everysight.com/pages/maverick-ai",
-      "error": "HTTP Error 500: Internal Server Error"
     }
   ],
   "candidates": [
     {
-      "id": "935ad009e822f62c",
-      "title": "TDK Creates a Transparent Display with Retinal Projection - Root-Nation.com",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMXBDeWRiOE5OUUFwVlJsMTl3V0hobkJkbzVVcUhabGRuRWlGdnF6aHZQOXM4RmFwbjhDSklTUlc0Q2xOTDZsVHNhOU5rWnotNXJnc3YwNTZwQlZrNkhvRzdHeURzTE9tck9kX0hYSjFXaWtTRXpGa0h1NWFVaHliZ2JSOA?oc=5",
-      "source": "Google News: smart glasses",
+      "id": "6ac2b84171dd868f",
+      "title": "Meta will launch its smart glasses in South Africa - bandwidthblog.co.za",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ZQnhXSDRmVm9uc2tXaDNvX2Y3SVUxSmowR2pwc1FFclNzZnFQaTBjbVdlS3l1NEZNYnZLTnpjeG55elVjR3VSSlkzcXNHUkZZS0taYTRBX3dwRS15RnE3R055ZUkyZUJXOC1rMF9FVDVBQmM2Zl9taUljbw?oc=5",
+      "source": "Google News: new smart glasses",
       "source_lane": "core_glasses",
-      "published": "Sat, 03 Oct 2026 05:45:04 GMT",
-      "summary": "TDK Creates a Transparent Display with Retinal Projection Root-Nation.com",
-      "materiality_score": 3,
+      "published": "Fri, 02 Oct 2026 13:42:25 GMT",
+      "summary": "Meta will launch its smart glasses in South Africa bandwidthblog.co.za",
+      "materiality_score": 4,
       "keyword_hits": [
-        "display",
-        "retinal"
+        "launch"
       ],
       "status": "candidate",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "enabling",
+      "relationship": "direct",
       "content_types": [
-        "hack",
-        "optics"
+        "model"
       ],
-      "primary_type": "hack",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
-        "research_optics"
+        "model_catalog_review"
       ],
-      "triage_priority": "normal",
+      "triage_priority": "high",
       "publication_eligible": true,
-      "publication_gate_reason": "enabling technology signals: retinal",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "likely durable"
+    },
+    {
+      "id": "b10a50a1c12effac",
+      "title": "Amazon's $53 AI-enabled solar security camera has color night vision - tech.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZHotNWVFcVBOZzhTTldkb1VqVENqdzl2VGphNUlCTFJJSGxoamlMTTVxeWc3eFpPX0JpeVpYYmNzMlJTWUpYdmN3UW1lVjVQU3VRVjExRlFFUjhrTGRYNHhNNEhKQnN1Ukx5bzI4NjBHNjVwVV83SUg5QnJEN0xOSzdGMW9fb0pNY3F6TmF3?oc=5",
+      "source": "Google News: AI wearable camera",
+      "source_lane": "adjacent_hci",
+      "published": "Thu, 01 Oct 2026 23:45:00 GMT",
+      "summary": "Amazon's $53 AI-enabled solar security camera has color night vision tech.yahoo.com",
+      "materiality_score": 5,
+      "keyword_hits": [
+        "ai",
+        "camera",
+        "security"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "34687f6f955c3cb7",
+      "title": "\"It's both brilliant and profoundly unsettling at the same time\" – I finally had a hands-on test of the new Meta Ray-Ban Display glasses - Digital Camera World",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNZ1JJcXV2Y1RCdXpSZ2RzLVJxQUdaWGdycEFuMS1QMmNFbzNndWlWem5xS3NYS0NtS283bUZiNmFpcHhYMXNTdmp4azV6WVpIUy1HSDk3cTBjY2ZmOTRSN052bDdqWjNlaGhDaGZPUHZpOG9SNXBMX3d1R3RKUzYtcHBJeUxpY0oxekVjN2RBT3ZUcWIyQ2ZVeHRpcUZyUFZ0a193aWEzMWI4NlNnQ3hrN0ZGa3pZRlV5V0lSazNPVWZEQ3UzWnJra0N4Tm5YRVI1U1NoSUdjWlJvemprNi1jelZCZ1lQZ2wwVmJFYmdlMTRiTTRJZEhzWGp1V1kxLWlt?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 03 Oct 2026 09:10:00 GMT",
+      "summary": "\"It's both brilliant and profoundly unsettling at the same time\" – I finally had a hands-on test of the new Meta Ray-Ban Display glasses Digital Camera World",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "camera",
+        "display",
+        "hands-on"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "review",
+        "policy"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "policy_privacy"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: display glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "d75d000a31469b13",
+      "title": "Rokid says Counterpoint ranks it first in AI glasses that have a display, at 41% - MIXED Reality News",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYWxBWl8tb2pVVU1vWE9zcFBDU0txR1ZiTHFueVNmQ0VOa21EZjNKNGVYM01tOUVKZTdBUWVuS0dHTWwtaXNmWnlGdkFrcXotV2pYVzZOUlpuUnFFb0JrN0w4ejlCdlMwNzlNQ0szME5ncFZjTkFROFRpazhvdnBrelRqR3owZVZlU0Z3?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 03 Oct 2026 08:39:52 GMT",
+      "summary": "Rokid says Counterpoint ranks it first in AI glasses that have a display, at 41% MIXED Reality News",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "display"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, rokid",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
     }
   ]
 }
