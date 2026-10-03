@@ -70,6 +70,20 @@ After bounded recovery is exhausted, classify the blocker (for example: permissi
 
 Routine reporting occurs **after** recovery and continuation, not at the first sign of friction. Healthy cycles should be exception-based and concise: what advanced, what completed, and whether Pete needs to act. Intermediate diagnostics belong in durable execution evidence, not in the morning report unless they remain material after recovery.
 
+### Repository-write recovery route
+
+For GlassesResearch, the canonical repository is `theGreenJedi/GlassesResearch`. Repository identity is durable project state; an optimizer run must resolve it from current repository/project context or this contract rather than asking Pete to repeat it.
+
+When an in-policy GitHub mutation is authorized but the first execution mechanism refuses, rejects, or cannot route the write, that is **execution-path friction**, not evidence that repository writes are blocked. The optimizer must, within the same run:
+
+1. re-read repository permissions and current target state;
+2. use the authorized GitHub connector write action directly (contents/issues/pull requests/workflows as appropriate);
+3. refresh stale SHAs/refs before retrying a conflicting write;
+4. verify the mutation by re-reading GitHub state; and
+5. continue the mission from the verified state.
+
+Do not ask Pete to reconfirm standing write permission, repository identity, or routine delegated authority. Escalate only after the direct authorized route has actually failed and bounded recovery is exhausted, retaining the concrete error evidence.
+
 ## Durable monitoring
 
 Every meaningful retained finding belongs in the ledger even when it does not deserve a GitHub issue. GitHub issues are execution objects for promoted actionable work, not the monitoring database.
