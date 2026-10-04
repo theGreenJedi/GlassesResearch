@@ -1,8 +1,8 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-03T14:44:50+00:00**
+Generated: **2026-10-04T10:54:26+00:00**
 
-- Observations processed: **0**
+- Observations processed: **2**
 - New materially distinct questions: **0**
 - Canonical registry size: **3**
 
