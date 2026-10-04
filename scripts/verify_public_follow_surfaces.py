@@ -58,9 +58,15 @@ def display_date(raw_date: str) -> str:
 
 
 def rendered_catalog_count(the_list: str) -> int:
-    match = re.search(r"\bCount:\s*</?[^>]*>?\s*(\d+)\s+distinct purchasable models", the_list, flags=re.I)
-    if not match:
-        match = re.search(r"\bCount:\s*(\d+)\s+distinct purchasable models", re.sub(r"<[^>]+>", "", the_list), flags=re.I)
+    # The canonical catalog tracks distinct real-world models regardless of
+    # whether they are currently purchasable. Match the current public canon
+    # rather than the superseded purchasability wording.
+    text = re.sub(r"<[^>]+>", " ", the_list)
+    match = re.search(
+        r"\bCount:\s*(\d+)\s+canonical\s+real-world\s+models?",
+        text,
+        flags=re.I,
+    )
     if not match:
         raise AssertionError("The List: could not resolve rendered canonical Count")
     return int(match.group(1))
