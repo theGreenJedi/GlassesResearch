@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-04T18:25:57.167642+00:00`
+Generated: `2026-10-04T19:43:42.083404+00:00`
 
-- Intake files inspected: **284**
-- Candidates retained in this review window/history: **11694**
+- Intake files inspected: **283**
+- Candidates retained in this review window/history: **11660**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2572
+- `adjacent_radar`: 2570
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 733
-- `rejected_noise`: 8245
+- `needs_editorial_verification`: 731
+- `rejected_noise`: 8214
 - `source_monitor`: 1
-- `source_review`: 41
-- `watching`: 84
+- `source_review`: 43
+- `watching`: 83
 
 ## Action queue
 
@@ -143,6 +143,7 @@ Generated: `2026-10-04T18:25:57.167642+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.591](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.591) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.592](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.592) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.593](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.593) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.594](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.594) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta To Launch Smart Glasses Without Camera As Privacy Backlash Grows - uploadvr.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxPRU83UGZPeWFKTk91S2xlUU5xeVhTVDcyVVZZaW5jem5sZXQ5WGFyV3NkNUN6SGhTV3hMV0JXdWFpN3R2RndfaWx0OFhRRVFBQ0Y2UFlhdHp4TlREeURodjJkX1RUQjNBQnFxS3EwSlNELUpXc3Z0bnpPdWtLUTkzdDdXdjJ4X0lKWlY2T2Y4Y0tUczh6MjEwdVY1RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
@@ -271,7 +272,6 @@ Generated: `2026-10-04T18:25:57.167642+00:00`
 | normal | needs_editorial_verification | direct | [Celulares, smartwatches e óculos inteligentes terão de ficar fora da cabine de votação - folhams.com.br](https://news.google.com/rss/articles/CBMigwFBVV95cUxOaTdKSlZCeTl2QWhiQ2I4NTNuR3Q0cThyV1AwRDBqanlLaVNSaHc3RWNlV0dVSVk4Nk9BVTV4SGMwVFdmRm5sbVZNY1hUX3JWYnB0RkdMQ0RYaUFpUHBWVUxWTWhIUjk2b2s2OEdjcFV1UDdueXcxVW5sV3JPY2pHNkw1aw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [CNET Aug 24, 2026 If You Don’t Want Smart Glasses to Spy, Try a Bluetooth Detector App](https://www.cnet.com/tech/mobile/if-you-dont-want-smart-glasses-to-spy-try-a-bluetooth-detector-app/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Dutch retailer pulls Meta glasses as hundreds of women reportedly filmed - Cybernews](https://news.google.com/rss/articles/CBMib0FVX3lxTE5mR21kaDJXSE1hSmdTYk9BN25XZnoxZmJ0X1JpQlI5Z1NJNkJGT093S0FZQ1pGSjd0aUlpclh4bEFoM1IwMEVmb2pVTjlxbDB5dUlWS3AwLUF3cWVIeU41OFpVSk0tQUVWTWZZOGM2VQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Eleições 2026: óculos inteligentes não podem ser usados dentro da cabine de votação - Portal M1](https://news.google.com/rss/articles/CBMiekFVX3lxTE5uUTBFLU9IR0pFbjhFc3Rzbk1xNERoZ3o1NjB6cWNxTXdpTDk3SlI0azNQMkdsQXlwbnhiNGNOZ1hDT2c5WDZlbGFmUFZmLWZYV291d3FacE9oR2dzYk9YMjNqbk90SmVSNklTUDRzSU1mUDdDakw1Zl9n?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
