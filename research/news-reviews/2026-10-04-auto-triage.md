@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-04T08:51:45.495439+00:00`
+Generated: `2026-10-04T09:56:41.647228+00:00`
 
-- Intake files inspected: **284**
-- Candidates retained in this review window/history: **11613**
+- Intake files inspected: **286**
+- Candidates retained in this review window/history: **11665**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2545
+- `adjacent_radar`: 2555
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 734
-- `rejected_noise`: 8189
+- `needs_editorial_verification`: 735
+- `rejected_noise`: 8230
 - `source_monitor`: 1
 - `source_review`: 39
 - `watching`: 87
@@ -141,6 +141,7 @@ Generated: `2026-10-04T08:51:45.495439+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.588](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.588) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.590](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.590) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.591](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.591) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.592](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.592) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta To Launch Smart Glasses Without Camera As Privacy Backlash Grows - uploadvr.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxPRU83UGZPeWFKTk91S2xlUU5xeVhTVDcyVVZZaW5jem5sZXQ5WGFyV3NkNUN6SGhTV3hMV0JXdWFpN3R2RndfaWx0OFhRRVFBQ0Y2UFlhdHp4TlREeURodjJkX1RUQjNBQnFxS3EwSlNELUpXc3Z0bnpPdWtLUTkzdDdXdjJ4X0lKWlY2T2Y4Y0tUczh6MjEwdVY1RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
@@ -271,7 +272,6 @@ Generated: `2026-10-04T08:51:45.495439+00:00`
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMipgFBVV95cUxQQTgwQ2tHeFpwM0d6UUxmS1psdVNZMEdkLXM1TW81LVkyeEQyd2ZrX1lXTm5FRHFraGV0SnNzM3pmSG8zQ0QxbzFXTl80NHBYVFZjdjUtcExLZzJsakI1SmJ2dmhUR3JlTjcycnpsck95T2hrMExxOWxpa1BNZWxjMHUxdGpYVkhkUkdPakVQLVBNTS1PLWFBeDRmemlCMG1jRlo4VG5B?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMivgJBVV95cUxNMTZqcEpYaF9BMG5ZUFh2NHEzRV9SdmJSeERnc0pxX18xXzJobjNRb3Iyb0FjTFo0dkxjQmVWQXplZ3VhYjlWem5CeG9TQU1EWHBJa3ZTaXJFZGZrd2FDVGRvanJ3NHRXTVhxVkFVdFdTSmoyVkQ0N1RvQXM4THZMRXQ4UEwxRHpEVmZIRmVxVmdzbDJwaFVfdklBeS1OYXptNElNVm40MENObHBHdWF2dC0yWVBtSVNBWW5URElwd2xDblpKbC12YUVDUEw4d3dveFRacVFjOUVxVW1nX1hYMDlYNE1CR2tINjFmT293YW85YTBwalBmVWx1MmxoUmwzaWdrRTJFUDR1X25EOWM3WGQ5amVIOFZaNGYxQXN1RHVTQ1BLa1NYMTZ0aEc2cm51SnBfTnJKTEVjdUNYWmc?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Auganix 19d ago ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Auganix Sep 3, 2026 TDK Acquires OQmented Assets to Strengthen Smart Glasses Display Business](https://www.auganix.org/ar-news-tdk-acquires-oqmented-assets/) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
