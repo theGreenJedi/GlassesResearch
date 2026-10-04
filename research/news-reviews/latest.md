@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-04T21:50:08.481862+00:00`
+Generated: `2026-10-04T23:28:52.897877+00:00`
 
-- Intake files inspected: **284**
-- Candidates retained in this review window/history: **11632**
+- Intake files inspected: **283**
+- Candidates retained in this review window/history: **11538**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2567
+- `adjacent_radar`: 2563
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 740
-- `rejected_noise`: 8192
+- `needs_editorial_verification`: 737
+- `rejected_noise`: 8102
 - `source_monitor`: 1
-- `source_review`: 31
+- `source_review`: 34
 - `watching`: 83
 
 ## Action queue
@@ -26,7 +26,6 @@ Generated: `2026-10-04T21:50:08.481862+00:00`
 | high | needs_editorial_verification | direct | [Meta has announced 'Ray-Ban Meta Audio,' smart glasses without a camera, boasting up to 12 hours of battery life and shipping starting Octob](https://news.google.com/rss/articles/CBMibkFVX3lxTE9IWTJ3blV4VFltTDRtNnVCZUdMdFBFd2MzM2xMNkNEZl8tUVhWaktaTDlBbXBuT3ZLM2pVWDJqODhvQS1yVUJpX3ZsVU1ZVUZabXl5SW5ZWXozUVV5eHZmZ2FDcUNGbjBTemJRS213?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta unveils $1,299 VR glasses, camera-free AI glasses and Muse Charm; India launch yet to be announced - ibtimes.co.in](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSnVhRVc4RU5CUkxFc29jQ29sdy1qc1pEZUlpSnlOWUlETDRuRDVSRDh0TzJtbXBzNTRhLXNNaGRhb3hyY3RTSEtSTEd1OGk1cUZrOHZRb1ZQQWJfZWFVZERJMXdzYlVuUTdNNnNXcG5HWS16QXJ1X0VPQWhYRmgzVl9VT0FQU0loOHd4RHYzV05sVEFzcUVURENfOGJzMzRFYXVHRVUzazRUd3k0OTZOdVNaZWl0bVJ1VVppNHA0T3MzSmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | ["You can see them from a mile away" – new Snap Specs smart glasses released on pre-order, boasting an all-new solution to the backlash again](https://news.google.com/rss/articles/CBMixwJBVV95cUxOMFlmUVpTa01RcktWRXFKd2p6YUU3YVpzclUyMC1iTGRUdDViVUlKQ0xWNUdqUG1HRUlqVDNkVEh0YXFvTC16SnN4b3k0U29MUF9xRVRrU3U2cDhjaTBRajVBUTBDT3M4c2Rzc2doQzdxdUFraVctNzFEUmdOVGdrTlhfUzRLUTgtSV9WdFJhUHk5T241Ty14U0ZEQ2Z3STZGRk1Ub1NSUjJVNTRPSkNOaGZhYmx3bmI5QkRkcEZrNFcwSmdPY0tfT2RfbnBBN3ZIZWdXOVRkQzg0eUZaLTB4bXg5V0ppajhTcjZJOThDUXdRMW1IZ0lwTnNUOFNwb2dRdHQ2WTQyNWgtc0Nkcmx6allteGxzbWhJTzVSUjNxa3E3ZldUaVRxVVdXYklFd3pMVWFDZ3NuNEZkV2hfS3hmVnN4ZWUyYm8?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.299](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.299) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.300](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.300) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.301](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.301) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.302](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.302) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -145,6 +144,7 @@ Generated: `2026-10-04T21:50:08.481862+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.593](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.593) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.594](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.594) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.595](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.595) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.596](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.596) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta To Launch Smart Glasses Without Camera As Privacy Backlash Grows - uploadvr.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxPRU83UGZPeWFKTk91S2xlUU5xeVhTVDcyVVZZaW5jem5sZXQ5WGFyV3NkNUN6SGhTV3hMV0JXdWFpN3R2RndfaWx0OFhRRVFBQ0Y2UFlhdHp4TlREeURodjJkX1RUQjNBQnFxS3EwSlNELUpXc3Z0bnpPdWtLUTkzdDdXdjJ4X0lKWlY2T2Y4Y0tUczh6MjEwdVY1RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
@@ -260,8 +260,6 @@ Generated: `2026-10-04T21:50:08.481862+00:00`
 | normal | needs_editorial_verification | direct | [Amazon drivers are getting AI smart glasses — but my warehouse tour reveals their 1-million strong automated robot workforce is the real sto](https://news.google.com/rss/articles/CBMivgFBVV95cUxNWmFBQWh0bVFEN1o1Yk5XUmxyY1UtRTRmTWpFZ2s5N0pxSW9mSXY0ODZCYUZkMG9STlI4QXQzY3dGSVFfZ2VieU1POHJvYzNGTGpKbDdXUFBFRlNmdmVYS2h0S0hzSllfc2prQ0NoN1ZZU21pZ2lqY2xPalpaaEZuaEd0WXRLZXpJWHVxalNUMTE4UVpuenFlYnVEeDcyY1BnWjFyRUhmdmJ1U0hrbzluaThUZ0ZlM3RBVU5EcTZR?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon Drivers Are Photographing Your House With AI Glasses - Komando.com](https://news.google.com/rss/articles/CBMilAFBVV95cUxNUm1qSnZfZkFfbVhQbnh6NjJZQmV6bXhwTTg3UVJVbUsxSDk1RWNWeTJCNk5RcWhTd2JhYWhFVk43WnBxVmpqMzhhLWw2clhfQXdKbjB1elgxTGEtR3R1U0VrRnluWFBva1BwV3Nnd0hqbXM0SllGVmdoR0gwWUY2NW5VUzMxSE9jNVhock1jaFAzcTF6?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon prepara gafas inteligentes para 20.000 repartidores: capturan imágenes durante las entregas - Softonic](https://news.google.com/rss/articles/CBMizAFBVV95cUxOMm5MYkpfSUsySE9ieGppMzA3WU1YVlFrZFNBYy02NzVEUXZoRVlfN2hnM0VPRTRMc3NIRFc4Y01ONnl1OEtldlVYd2s1OHZDOVh2dkRSeHRvM0FiODVVWUR0WkJhNXEwelloX0dneVYyNjhFMkhaZk5JTEdhUVlpSmdLYTJ6UE1Ec0xUeHV4ZGxheHcyNHRJTHZKR2RuNFd5Q2RmM0N1VVNIVnY4cHdtRU5jWkJCbF96Q0o4ZEc4Nkp2ellXRUp2V2Z6a0E?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ30gHfAUFVX3lxTE1KV1c3ZzZwVk90MjdZVDZ6Zi1tN1UtTm04UnhvMjFPT0dzcTdHakNzaXAtdElUR1dFUUdWLXA2a25Ba0ZMVjVndll1c3M4WUk3bE95T18xQ2ktWno5NnB4RzBBWkFZdW5wUFBMZXQtai15TDdaR0tBSDkyTmkybUZhOEhKaDdraXlWMjN6dEtGU2VuTXJuSWpmcWgwMWJ6MVlNYXZXMEtKek1mbDQ1amJqa1R6RE1tV0VUaEh4cU1XN3RMUDNuR1V0aFVadXRjMlI3WVF2dlVNbW9qQlN0dnc?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple's 2026 Roadmap: 18 New Products from the Foldable iPhone to Augmented Reality Glasses - آي-فون إسلام](https://news.google.com/rss/articles/CBMi1wFBVV95cUxQTE9ENFVjbUVNUDR0RTBQR1d4THROWkFwNWhrZkEyWkMwZEZKQTFfcHZTXzY3V0lfTHJ0YVE2bzNta0tDUVZuSWJCZ190VlZIV0xMZ0NXaXlNY0RpeVpkWTBJS3JXeDJ1YjF5SFhtZWFuNHhNUllaZW16NlpGYk5YOWtvWUtfbDZ1NTN0b3R1MV9oLUhvWE52ME9ocjRoWXJqT054TlgyQ2t2RWVlREZYbmZ0MXVjNWNRbUlUZ0w4VGtncGZuYjlSSHNTYU51YWNXWjJJb0h1cw?oc=5) | reachable (200) | research_news_review |
@@ -272,6 +270,8 @@ Generated: `2026-10-04T21:50:08.481862+00:00`
 | normal | needs_editorial_verification | direct | [Auganix 19d ago ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Auganix Sep 3, 2026 TDK Acquires OQmented Assets to Strengthen Smart Glasses Display Business](https://www.auganix.org/ar-news-tdk-acquires-oqmented-assets/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses Compared: Side-by-Side Review (2026)](https://smartglasses.computer/blog/best-smart-glasses-compared-2026) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best smart glasses in 2026: Top AR and AI glasses worth your money ...](https://www.tomsguide.com/computing/vr-ar/best-smart-glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Can AI Glasses Properly Handle Translation, Food Ordering, and Route Finding? 6-Day Overseas Real-World Test - 36Kr](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9UZTA3TlU0cmN4MEJYbGpSbU9jWVlaem9WMnJHSmF6RE90Y2d4MHFQRk9Ib3dvRDcwSjBrQWlRNWprTWI5RFl0WlM0d1gwbnRpdlFV?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
