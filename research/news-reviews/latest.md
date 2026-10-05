@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-05T15:12:28.113167+00:00`
+Generated: `2026-10-05T18:35:48.818873+00:00`
 
-- Intake files inspected: **283**
-- Candidates retained in this review window/history: **11284**
+- Intake files inspected: **285**
+- Candidates retained in this review window/history: **11331**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2548
+- `adjacent_radar`: 2553
 - `catalog_review`: 6
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 755
-- `rejected_noise`: 7851
+- `needs_editorial_verification`: 759
+- `rejected_noise`: 7887
 - `source_monitor`: 1
 - `source_review`: 37
-- `watching`: 82
+- `watching`: 84
 
 ## Action queue
 
@@ -153,6 +153,8 @@ Generated: `2026-10-05T15:12:28.113167+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.606](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.606) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.611](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.611) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.612](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.612) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.613](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.613) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.614](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.614) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta VR Glasses, VR/AR glasses weighing just 100g, have been released, featuring a micro-OLED display and supporting 5K resolution. - GIGAZI](https://news.google.com/rss/articles/CBMiakFVX3lxTE9DVUQxdDBmX181aHJKMXNqN1JnRlRoUjVCV1lCTzc3Zl93YmUzQ2xEMDVfSXlZUzd6aE9GbnRhWEw4aEt6S0NzQ19fN1hPU3RXWjRKSDM1Nk1tbFhYOEp0cHhBUS13ZVlwMVE?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
@@ -270,8 +272,6 @@ Generated: `2026-10-05T15:12:28.113167+00:00`
 | normal | needs_editorial_verification | direct | [Meta locks itself out of user data on its AI glasses - Help Net Security](https://news.google.com/rss/articles/CBMiigFBVV95cUxPcmdsQ0hQZ3hETXlGa1RmX1lhRFpxNnNnV2JBU0lhTFE5d3MzQlI0SXlFSDRDQTNUTmY4NnhfX3VtUWtObEpOY0RFYkd5c2RwUzBQUEljS3UtT3lENjNzTEt0TDlhdlZVWEY5eGk3dF93UlVsdmxMZXIwNnRfUlN5UDJVQXlicXBWeXc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Meta makes big bets on AI and smart glasses amidst security storms - news.laodong.vn](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY0pCT29ESVBBcEwwcS1oQ05xN0VCbmVDR2pYZVBXbmlQS1IxV2MwWGdZeV9lczBNa0tiTTBZTjc2NzUxT2ZIZ0RUZUxRSjFnNVpLb2F4a0tqaUlIb3RlRFRCbC1WazI2NG9QV1hIeTg4N3RoZ0QxX0p0NW5iRjBkVkY2SzZoMVlsMFByaFl5QU9aSTluMFZselNFeWxRZXNaV0FlZVpJYkNBeDQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [XREAL XBX A01+ Review: $299 AR Glasses, Tested and Compared (2026)](https://monarchxr.com/xreal-xbx-a01-plus-review/) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | ["It's both brilliant and profoundly unsettling at the same time" – I finally had a hands-on test of the new Meta Ray-Ban Display glasses - D](https://news.google.com/rss/articles/CBMigAJBVV95cUxNZ1JJcXV2Y1RCdXpSZ2RzLVJxQUdaWGdycEFuMS1QMmNFbzNndWlWem5xS3NYS0NtS283bUZiNmFpcHhYMXNTdmp4azV6WVpIUy1HSDk3cTBjY2ZmOTRSN052bDdqWjNlaGhDaGZPUHZpOG9SNXBMX3d1R3RKUzYtcHBJeUxpY0oxekVjN2RBT3ZUcWIyQ2ZVeHRpcUZyUFZ0a193aWEzMWI4NlNnQ3hrN0ZGa3pZRlV5V0lSazNPVWZEQ3UzWnJra0N4Tm5YRVI1U1NoSUdjWlJvemprNi1jelZCZ1lQZ2wwVmJFYmdlMTRiTTRJZEhzWGp1V1kxLWlt?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
-| normal | needs_editorial_verification | direct | ['Disturbing' security flaw in cheap smart glasses - ABC News & Headlines – Australian Broadcasting Corporation](https://news.google.com/rss/articles/CBMiogFBVV95cUxQVHdVRVU2RUp1dGg4VDVtT0dzYnA1SGwwajVGNi1uSVJpRjNVOXNrdkU0NGlYLU5IYU5MOEhHZmp3MzVCU0RLeFVkWTVteVpjV2RXODEycnpzWUJMaTZtYnNZQXF3cEtRUzhKSU9MZW5jcGRKTE13UmhaaTVRVjNMTDJKaTdSaEtLSUJ0UzdqMW1GQTRpOFNOVlI0czFPNk8wMnc?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
