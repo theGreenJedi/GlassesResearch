@@ -20,7 +20,7 @@ from urllib.parse import urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-INTAKE_DIRS = (ROOT / "research/news-candidates", ROOT / "research/discovery-candidates")
+INTAKE_DIRS = (ROOT / "research/news-candidates", ROOT / "research/discovery-candidates", ROOT / "research/community-candidates")
 REVIEWS_DIR = ROOT / "research/news-reviews"
 QUEUE_PATH = REVIEWS_DIR / "queue.json"
 LATEST_PATH = REVIEWS_DIR / "latest.md"
