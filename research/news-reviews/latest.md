@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-05T10:38:41.041375+00:00`
+Generated: `2026-10-05T10:54:19.284446+00:00`
 
-- Intake files inspected: **284**
-- Candidates retained in this review window/history: **11342**
+- Intake files inspected: **285**
+- Candidates retained in this review window/history: **11348**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2568
+- `adjacent_radar`: 2569
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 745
+- `needs_editorial_verification`: 749
 - `rejected_noise`: 7888
 - `source_monitor`: 1
-- `source_review`: 39
+- `source_review`: 40
 - `watching`: 83
 
 ## Action queue
@@ -148,6 +148,7 @@ Generated: `2026-10-05T10:38:41.041375+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.600](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.600) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.601](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.601) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.602](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.602) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.603](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.603) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta (META.US) Developer Conference 2026 kicks off this week: Smart glasses and Phoenix poised for launch, with Muse AI as the highlight; We](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkUxZzBKRnpKb1UxRFNPNUpfNFN6bURtYTZhZVduaFg1azJuMVVPWC1xWDZkTEZNRHdua1FMcXU0ZUhrcWlKWjhCbkdlVFlPT1lvMXktRDYteXo1T3VULWVYbWRHWUZkV1UydjJ0UkFrMVN5NWZUeXpLaThvLTdfa1hCLTh3a2o1UTR1NGdOQVQxeWdqRlZHeHlBNk1YZ3Q3WXdGT05yWV8?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta To Launch Smart Glasses Without Camera As Privacy Backlash Grows - uploadvr.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxPRU83UGZPeWFKTk91S2xlUU5xeVhTVDcyVVZZaW5jem5sZXQ5WGFyV3NkNUN6SGhTV3hMV0JXdWFpN3R2RndfaWx0OFhRRVFBQ0Y2UFlhdHp4TlREeURodjJkX1RUQjNBQnFxS3EwSlNELUpXc3Z0bnpPdWtLUTkzdDdXdjJ4X0lKWlY2T2Y4Y0tUczh6MjEwdVY1RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
@@ -192,6 +193,7 @@ Generated: `2026-10-05T10:38:41.041375+00:00`
 | high | needs_editorial_verification | direct | [Android Authority 12d ago These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Authority 3d ago Samsung’s first Android XR smart glasses finally have a launch window Coverage Samsung](https://www.androidauthority.com/samsung-smart-glasses-launch-date-3717873/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Android Central 12d ago These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Apple said to delay smart glasses launch after Meta backlash - Mashable](https://news.google.com/rss/articles/CBMidEFVX3lxTFAzODlmSld2el9xcHg1STB1bU8zYW9aa2EyVVVEZHE5V08zX0g3azN5UzZjdjBzbnBaZEl5Y1dVak1wME5RU1puaG5yOXIxSjc4S2ZuV041UUdWaF9Ba1pzcXU1LTI4UXpQTkp6N1NMM1dIdGI0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Build for AI glasses from Meta](https://developers.meta.com/wearables/) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [Engadget 3d ago Newsom vetoes smart glasses privacy bill Coverage Industry](https://www.engadget.com/2274526/newsom-vetoes-smart-glasses-privacy-bill/) | reachable (200) | research_news_review, policy_privacy |
@@ -270,8 +272,6 @@ Generated: `2026-10-05T10:38:41.041375+00:00`
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMitwJBVV95cUxNT0lweE5ENU5XUTRUZ3dnNVd1cWdhejN3OUJ4bHBYWXQ0eDNOMlN3NkwtZXBjaTFSNi14RExxbEc2MXBDT05ham9laEZINWUxcDVaZXdLc0otWjMtRWN5SmpmTGdacGw5Y09vUzVXYmdoTkpOdHZSMlJIMTN6ODZhZElJd2pkS3EyRGNKeS0zWDZpd0pubWdnWEt1QUxOcXFiNmE5VDdYd1ZpbTBpWW80aENhVHBIZWJPY0ZnR25zaEd1UDc3TXloYmxLUlJVWXU1U3pJTEpWTkJZQ1YzdFd0Wk1Cbk5BSVo3OEZ6WkF4SldWQ3NyeEEySU5lbjZhUFQ2eHlTVVBlSzZOakIydUdja2thcWtZZVJ3b0xfcmhpeWNoUmdVMGNOTXJQdXNoUVdtWlZXNS15dw?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMipgFBVV95cUxQQTgwQ2tHeFpwM0d6UUxmS1psdVNZMEdkLXM1TW81LVkyeEQyd2ZrX1lXTm5FRHFraGV0SnNzM3pmSG8zQ0QxbzFXTl80NHBYVFZjdjUtcExLZzJsakI1SmJ2dmhUR3JlTjcycnpsck95T2hrMExxOWxpa1BNZWxjMHUxdGpYVkhkUkdPakVQLVBNTS1PLWFBeDRmemlCMG1jRlo4VG5B?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMivgJBVV95cUxNMTZqcEpYaF9BMG5ZUFh2NHEzRV9SdmJSeERnc0pxX18xXzJobjNRb3Iyb0FjTFo0dkxjQmVWQXplZ3VhYjlWem5CeG9TQU1EWHBJa3ZTaXJFZGZrd2FDVGRvanJ3NHRXTVhxVkFVdFdTSmoyVkQ0N1RvQXM4THZMRXQ4UEwxRHpEVmZIRmVxVmdzbDJwaFVfdklBeS1OYXptNElNVm40MENObHBHdWF2dC0yWVBtSVNBWW5URElwd2xDblpKbC12YUVDUEw4d3dveFRacVFjOUVxVW1nX1hYMDlYNE1CR2tINjFmT293YW85YTBwalBmVWx1MmxoUmwzaWdrRTJFUDR1X25EOWM3WGQ5amVIOFZaNGYxQXN1RHVTQ1BLa1NYMTZ0aEc2cm51SnBfTnJKTEVjdUNYWmc?oc=5) | reachable (200) | research_news_review, research_optics |
-| normal | needs_editorial_verification | direct | [Auganix 19d ago ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Auganix Sep 3, 2026 TDK Acquires OQmented Assets to Strengthen Smart Glasses Display Business](https://www.auganix.org/ar-news-tdk-acquires-oqmented-assets/) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
