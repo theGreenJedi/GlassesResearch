@@ -54,7 +54,7 @@ jobs:
           set -euo pipefail
           DATE="$(date -u +%F)"
           STAMP="$(date -u +%Y-%m-%dT%H%M%SZ)"
-          for DIR in research/news-candidates research/discovery-candidates; do
+          for DIR in research/news-candidates research/discovery-candidates research/community-candidates; do
             for EXT in json md; do
               SRC="${DIR}/${DATE}.${EXT}"
               if [ -f "$SRC" ]; then
@@ -76,7 +76,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add research/news-candidates research/discovery-candidates
+          git add research/news-candidates research/discovery-candidates research/community-candidates
           if ! git diff --cached --quiet; then
             STAMP="$(TZ=America/New_York date +%Y-%m-%d-%H%M)"
             git commit -m "Persist high-recall smart-glasses intake ${STAMP} ET"
@@ -87,7 +87,7 @@ jobs:
             echo "### Knowledge intake"
             echo ""
             echo "The durable editorial queue is stored on the \`knowledge-intake\` branch."
-            echo "Hourly intake combines institutional news, ordinary-web discovery, and the public commodity wire before editorial triage."
+            echo "Hourly intake combines institutional news, ordinary-web discovery, public community candidates, and the public commodity wire before editorial triage."
             echo "Commodity wire reports remain unverified candidates; discovery cannot authorize publication."
             echo "A visible wire change dispatches this intake directly; the hourly schedule is only a dead-man fallback."
             echo "Discovery optimizes for recall; triage and verification remain downstream precision gates."
