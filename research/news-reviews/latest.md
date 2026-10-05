@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-05T10:55:13.381649+00:00`
+Generated: `2026-10-05T11:52:32.720304+00:00`
 
 - Intake files inspected: **285**
 - Candidates retained in this review window/history: **11348**
@@ -12,10 +12,10 @@ Generated: `2026-10-05T10:55:13.381649+00:00`
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 750
+- `needs_editorial_verification`: 751
 - `rejected_noise`: 7888
 - `source_monitor`: 1
-- `source_review`: 39
+- `source_review`: 38
 - `watching`: 83
 
 ## Action queue
@@ -264,6 +264,7 @@ Generated: `2026-10-05T10:55:13.381649+00:00`
 | normal | needs_editorial_verification | direct | [AI眼镜导览、科学实验秀……国庆假期广东文旅消费新意满满 - 广州日报新花城](https://news.google.com/rss/articles/CBMiigFBVV95cUxQOEFQdi03LW9iQ280T1Nqak92MnE2Q0sxVmkzYXIzUlU5amh6aVF2aTJmbVcxVjBUMHItZzN3cXVEc00xMW1iRE5lZnBLNGd1X3hMZElqcDZfSl9UMExFd0I3WWlQa1Jta2RzWTNrZUE4ZXNodF9RRWY1Yk9INXg5VmtERHNIZ2pZZXc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon drivers are getting AI smart glasses — but my warehouse tour reveals their 1-million strong automated robot workforce is the real sto](https://news.google.com/rss/articles/CBMivgFBVV95cUxNWmFBQWh0bVFEN1o1Yk5XUmxyY1UtRTRmTWpFZ2s5N0pxSW9mSXY0ODZCYUZkMG9STlI4QXQzY3dGSVFfZ2VieU1POHJvYzNGTGpKbDdXUFBFRlNmdmVYS2h0S0hzSllfc2prQ0NoN1ZZU21pZ2lqY2xPalpaaEZuaEd0WXRLZXpJWHVxalNUMTE4UVpuenFlYnVEeDcyY1BnWjFyRUhmdmJ1U0hrbzluaThUZ0ZlM3RBVU5EcTZR?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon prepara gafas inteligentes para 20.000 repartidores: capturan imágenes durante las entregas - Softonic](https://news.google.com/rss/articles/CBMizAFBVV95cUxOMm5MYkpfSUsySE9ieGppMzA3WU1YVlFrZFNBYy02NzVEUXZoRVlfN2hnM0VPRTRMc3NIRFc4Y01ONnl1OEtldlVYd2s1OHZDOVh2dkRSeHRvM0FiODVVWUR0WkJhNXEwelloX0dneVYyNjhFMkhaZk5JTEdhUVlpSmdLYTJ6UE1Ec0xUeHV4ZGxheHcyNHRJTHZKR2RuNFd5Q2RmM0N1VVNIVnY4cHdtRU5jWkJCbF96Q0o4ZEc4Nkp2ellXRUp2V2Z6a0E?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Android XR搭載のSamsungスマートグラス、ついに11月リリース？ - Gizmodo](https://news.google.com/rss/articles/CBMijwFBVV95cUxOc0t2Z3dtQ2o2SlM1WEd3VEZ0cHRTSkJOby1CbVlCN0xjSlNxS0hxb053NUMwLWdOYUVMTUEta203b0ZLbkVYbnVSUHp6S2xLS1EyVjFtUzZZUDBkUFZ1LWJEQWc3ekZQaHBLMFZaY2pLWjE2U0J5d1JzdzdWTTZ0QkM0RlhqdV85cERuSTFPdw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ30gHfAUFVX3lxTE1KV1c3ZzZwVk90MjdZVDZ6Zi1tN1UtTm04UnhvMjFPT0dzcTdHakNzaXAtdElUR1dFUUdWLXA2a25Ba0ZMVjVndll1c3M4WUk3bE95T18xQ2ktWno5NnB4RzBBWkFZdW5wUFBMZXQtai15TDdaR0tBSDkyTmkybUZhOEhKaDdraXlWMjN6dEtGU2VuTXJuSWpmcWgwMWJ6MVlNYXZXMEtKek1mbDQ1amJqa1R6RE1tV0VUaEh4cU1XN3RMUDNuR1V0aFVadXRjMlI3WVF2dlVNbW9qQlN0dnc?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -271,7 +272,6 @@ Generated: `2026-10-05T10:55:13.381649+00:00`
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZTloUUpQcEExXzNSSGVLRFJmSXJZYU9mRDJpUEIxaDZXOWRLYzh0bTI5aHZfaXpjR2wxTkVlOGxEVk5TaVBscDVqZEFIU212WXVENFZxZ1VxUzJiREFWMXFEMlFNNXFCUjdvTlZVOGFEb0VKTVJDMjV5UTV4UER6dnRFSVFSTFIwSV9lSzU5V0poWTFBUFp1MHNWVFloTlpLb09xWUxwc1R0YXlUMDJ6cndycWlqdUlEVFVNYXJXM3RHdWhhR1F5di1mbmpjcXV5RUFEaGdIQWpSMzVnTHM1eFZ4OWU?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMitwJBVV95cUxNT0lweE5ENU5XUTRUZ3dnNVd1cWdhejN3OUJ4bHBYWXQ0eDNOMlN3NkwtZXBjaTFSNi14RExxbEc2MXBDT05ham9laEZINWUxcDVaZXdLc0otWjMtRWN5SmpmTGdacGw5Y09vUzVXYmdoTkpOdHZSMlJIMTN6ODZhZElJd2pkS3EyRGNKeS0zWDZpd0pubWdnWEt1QUxOcXFiNmE5VDdYd1ZpbTBpWW80aENhVHBIZWJPY0ZnR25zaEd1UDc3TXloYmxLUlJVWXU1U3pJTEpWTkJZQ1YzdFd0Wk1Cbk5BSVo3OEZ6WkF4SldWQ3NyeEEySU5lbjZhUFQ2eHlTVVBlSzZOakIydUdja2thcWtZZVJ3b0xfcmhpeWNoUmdVMGNOTXJQdXNoUVdtWlZXNS15dw?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMipgFBVV95cUxQQTgwQ2tHeFpwM0d6UUxmS1psdVNZMEdkLXM1TW81LVkyeEQyd2ZrX1lXTm5FRHFraGV0SnNzM3pmSG8zQ0QxbzFXTl80NHBYVFZjdjUtcExLZzJsakI1SmJ2dmhUR3JlTjcycnpsck95T2hrMExxOWxpa1BNZWxjMHUxdGpYVkhkUkdPakVQLVBNTS1PLWFBeDRmemlCMG1jRlo4VG5B?oc=5) | reachable (200) | research_news_review, research_optics |
-| normal | needs_editorial_verification | direct | [Atlas Signal Initiates Coverage of Vuzix: Passive Glass Waveguide Targets Projected $39 Billion Co-Packaged Optics Market as AI Moves Light ](https://news.google.com/rss/articles/CBMivgJBVV95cUxNMTZqcEpYaF9BMG5ZUFh2NHEzRV9SdmJSeERnc0pxX18xXzJobjNRb3Iyb0FjTFo0dkxjQmVWQXplZ3VhYjlWem5CeG9TQU1EWHBJa3ZTaXJFZGZrd2FDVGRvanJ3NHRXTVhxVkFVdFdTSmoyVkQ0N1RvQXM4THZMRXQ4UEwxRHpEVmZIRmVxVmdzbDJwaFVfdklBeS1OYXptNElNVm40MENObHBHdWF2dC0yWVBtSVNBWW5URElwd2xDblpKbC12YUVDUEw4d3dveFRacVFjOUVxVW1nX1hYMDlYNE1CR2tINjFmT293YW85YTBwalBmVWx1MmxoUmwzaWdrRTJFUDR1X25EOWM3WGQ5amVIOFZaNGYxQXN1RHVTQ1BLa1NYMTZ0aEc2cm51SnBfTnJKTEVjdUNYWmc?oc=5) | reachable (200) | research_news_review, research_optics |
 
 ## Meaning of states
 
