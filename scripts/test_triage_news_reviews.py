@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Regression checks for durable editorial triage state."""
 from triage_news_reviews import (
+    INTAKE_DIRS,
     automated_state,
     preserve_editorial_fields,
     review_key,
@@ -9,6 +10,7 @@ from triage_news_reviews import (
 
 
 def main() -> int:
+    assert any(path.name == "community-candidates" for path in INTAKE_DIRS)
     assert automated_state(
         {"relationship": "direct", "content_types": ["model"]},
         {"status": "reachable"},
