@@ -1,108 +1,105 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-04T10:54:15+00:00**
+Generated automatically: **2026-10-05T12:03:04+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-09-26 → 2026-10-02):** 335 impressions, 0 clicks, 0.00% CTR, average position 7.1.
-- **7-day change:** impressions -15.8%; clicks -100.0%.
-- **Rolling 28 days:** 1338 impressions, 3 clicks, 0.22% CTR, average position 8.7.
+- **Google, latest final 7 days (2026-09-27 → 2026-10-03):** 530 impressions, 2 clicks, 0.38% CTR, average position 11.3.
+- **7-day change:** impressions +16.7%; clicks +0.0%.
+- **Rolling 28 days:** 1605 impressions, 5 clicks, 0.31% CTR, average position 9.7.
 
 ## Practical Answers — search discovery
 
-- Latest 7 days: **10 impressions**, **0 clicks**, **0.00% CTR**, average position **2.8**, across **1 answer pages receiving impressions**.
-- Week-over-week: impressions +150.0%; clicks n/a.
+- Latest 7 days: **0 impressions**, **0 clicks**, **0.00% CTR**, average position **0.0**, across **0 answer pages receiving impressions**.
+- Week-over-week: impressions -100.0%; clicks n/a.
 - Rolling 28 days: **14 impressions**, **0 clicks**, **1 answer pages receiving impressions**.
 
 ### Queries reaching Practical Answers
 
-| Item | Clicks | Impressions | CTR | Position |
-|---|---:|---:|---:|---:|
-| future of smart glasses ownership | 0 | 10 | 0.00% | 2.8 |
+_No rows yet._
 
 ## Google — top queries
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| ai glasses timeline | 0 | 1 | 0.00% | 4.0 |
-| daqri smart glasses | 0 | 2 | 0.00% | 70.5 |
-| ee2 smart glasses | 0 | 1 | 0.00% | 49.0 |
-| eyewear database | 0 | 1 | 0.00% | 80.0 |
-| future of smart glasses ownership | 0 | 10 | 0.00% | 2.8 |
-| glasses for developers | 0 | 1 | 0.00% | 39.0 |
-| inmo air 3 industrial version vs realwear vuzix iristick | 0 | 11 | 0.00% | 9.1 |
-| smart glasses comparison | 0 | 1 | 0.00% | 26.0 |
-| when did ai glasses come out | 0 | 1 | 0.00% | 11.0 |
+| audio glasses | 0 | 5 | 0.00% | 62.4 |
+| audio glasses features | 0 | 1 | 0.00% | 30.0 |
+| best ai glasses without camera | 0 | 1 | 0.00% | 42.0 |
+| best audio smart glasses | 0 | 1 | 0.00% | 11.0 |
+| best bluetooth glasses | 0 | 1 | 0.00% | 47.0 |
+| best smart glasses for prescription | 0 | 1 | 0.00% | 66.0 |
+| best smart glasses prescription | 0 | 1 | 0.00% | 66.0 |
+| best smartglasses for video recording | 0 | 1 | 0.00% | 33.0 |
+| bluetooth audio glasses best models | 0 | 2 | 0.00% | 13.0 |
+| bluetooth audio glasses comparison | 0 | 2 | 0.00% | 21.5 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/ | 0 | 4 | 0.00% | 22.8 |
-| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 11 | 0.00% | 4.0 |
-| https://glassesresearch.org/docs/ABOUT/ | 0 | 2 | 0.00% | 5.0 |
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 58 | 0.00% | 6.4 |
-| https://glassesresearch.org/docs/CONTRIBUTE/ | 0 | 1 | 0.00% | 2.0 |
-| https://glassesresearch.org/docs/HISTORICAL_ARCHIVE/ | 0 | 2 | 0.00% | 8.0 |
-| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 0 | 46 | 0.00% | 6.2 |
-| https://glassesresearch.org/docs/PRESERVATION_PROGRAM/ | 0 | 1 | 0.00% | 7.0 |
-| https://glassesresearch.org/docs/REPORT_CARD/ | 0 | 55 | 0.00% | 6.9 |
-| https://glassesresearch.org/docs/faq/ | 0 | 1 | 0.00% | 6.0 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | 1 | 44 | 2.27% | 6.3 |
+| https://glassesresearch.org/hacking/ | 1 | 14 | 7.14% | 30.1 |
+| https://glassesresearch.org/ | 0 | 12 | 0.00% | 22.5 |
+| https://glassesresearch.org/artifacts/ | 0 | 1 | 0.00% | 10.0 |
+| https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 9 | 0.00% | 3.9 |
+| https://glassesresearch.org/changes/ | 0 | 1 | 0.00% | 3.0 |
+| https://glassesresearch.org/changes/gre-000002/ | 0 | 1 | 0.00% | 9.0 |
+| https://glassesresearch.org/changes/gre-000003/ | 0 | 4 | 0.00% | 10.0 |
+| https://glassesresearch.org/docs/ABOUT/ | 0 | 6 | 0.00% | 4.3 |
+| https://glassesresearch.org/docs/CITING_GLASSESRESEARCH/ | 0 | 4 | 0.00% | 4.0 |
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **23 browser pageviews**, **21 RUM visits**.
-- Rolling 7d: **175 browser pageviews**, **150 RUM visits**.
+- Rolling 24h: **29 browser pageviews**, **14 RUM visits**.
+- Rolling 7d: **180 browser pageviews**, **143 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
-| / | 9 | 9 |
-| /models/catalog/ | 5 | 4 |
-| /docs/faq/03-use-cases/ | 2 | 2 |
-| /models/catalog/gls-0027/ | 1 | 1 |
-| /hacking/LOCAL_AI_AGENTS/ | 1 | 1 |
-| /docs/PRACTICAL_ANSWERS/ | 1 | 1 |
-| /models/catalog/gls-0039/ | 1 | 1 |
-| /docs/report-cards/BATCH_06/ | 1 | 1 |
-| /guides/prescription-smart-glasses/ | 1 | 1 |
-| /models/catalog/gls-0024/ | 1 | 0 |
+| /docs/COMPARISON_ENGINE/ | 4 | 0 |
+| / | 4 | 2 |
+| /models/catalog/ | 3 | 3 |
+| /artifacts/ | 3 | 0 |
+| /hacking/ | 2 | 0 |
+| /guides/open-source-smart-glasses/ | 1 | 1 |
+| /models/catalog/gls-0212/ | 1 | 1 |
+| /models/catalog/gls-0167/ | 1 | 0 |
+| /docs/Firmware/ | 1 | 0 |
+| /research/investigations/MYVU_STARV_LINEAGE_2026-09-02/ | 1 | 1 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 16 | 16 |
-| glassesresearch.org | 2 | 0 |
-| www.bing.com | 2 | 2 |
-| chatgpt.com | 1 | 1 |
-| mail.google.com | 1 | 1 |
-| www.researchgate.net | 1 | 1 |
+| glassesresearch.org | 15 | 0 |
+| (direct / none) | 12 | 12 |
+| www.douyin.com | 1 | 1 |
+| www.google.com | 1 | 1 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **4,598 requests**, **1,083 HTTP visits**, **146.1 MB** served.
-- Rolling 7d: **43,288 requests**, **13,574 HTTP visits**, **1225.7 MB** served.
+- Rolling 24h: **4,675 requests**, **999 HTTP visits**, **110.4 MB** served.
+- Rolling 7d: **42,699 requests**, **12,817 HTTP visits**, **1184.4 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 2,280 | 875 |
-| CN | 811 | 30 |
-| KR | 152 | 5 |
-| HK | 143 | 10 |
-| DE | 139 | 18 |
-| FR | 124 | 27 |
-| NL | 95 | 4 |
-| SE | 88 | 5 |
-| IN | 86 | 4 |
-| ES | 84 | 3 |
+| US | 2,136 | 864 |
+| CN | 769 | 24 |
+| SG | 422 | 15 |
+| JP | 358 | 10 |
+| TR | 228 | 1 |
+| BE | 171 | 5 |
+| CA | 109 | 3 |
+| DE | 93 | 14 |
+| PL | 73 | 2 |
+| KZ | 70 | 1 |
 
 ## What to watch
 
