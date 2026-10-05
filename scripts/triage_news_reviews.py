@@ -191,6 +191,15 @@ def collect(cutoff: dt.datetime) -> tuple[dict[str, dict], int]:
                 record = dict(item)
                 record["id"] = candidate_id(record)
                 record["intake_file"] = str(path.relative_to(ROOT))
+                if directory.name == "community-candidates":
+                    record["intake_lane"] = "community"
+                    record.setdefault("source", "community")
+                    # The lane itself never upgrades provenance. Community reports
+                    # stay community evidence unless the candidate explicitly points
+                    # to a stronger primary/documentary artifact.
+                    if not record.get("evidence_class"):
+                        record["evidence_class"] = "community"
+                        record["delegated_action"] = "record_community_signal"
                 record["intake_discovered_utc"] = stamp.isoformat() if stamp else ""
                 key = review_key(record)
                 prior = found.get(key)
