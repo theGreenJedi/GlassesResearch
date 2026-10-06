@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-06T10:49:58.668741+00:00`
+Generated: `2026-10-06T10:50:56.853234+00:00`
 
 - Intake files inspected: **280**
 - Candidates retained in this review window/history: **11166**
