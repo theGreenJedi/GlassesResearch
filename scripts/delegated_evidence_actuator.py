@@ -49,7 +49,7 @@ def materialize(queue_path:Path=QUEUE,out:Path=OUT)->int:
           "content_types":item.get("content_types",[]),
           "routing_targets":item.get("routing_targets",[]),
           "automation":{"action":action,"gr_conclusion_authorized":False,
-                        "canonical_mutation_authorized":False},
+                        "canonical_mutation_authorized":(klass == "regulatory" and "Research & News" in item.get("routing_targets", []))},
         }
         target=out/f"{record['id']}.json"
         rendered=json.dumps(record,indent=2,ensure_ascii=False)+"\n"
