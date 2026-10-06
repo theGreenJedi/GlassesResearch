@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-06T16:03:32.847879+00:00`
+Generated: `2026-10-06T20:26:10.278906+00:00`
 
-- Intake files inspected: **280**
-- Candidates retained in this review window/history: **11186**
+- Intake files inspected: **276**
+- Candidates retained in this review window/history: **10740**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2487
-- `catalog_review`: 9
+- `adjacent_radar`: 2396
+- `catalog_review`: 8
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 754
-- `rejected_noise`: 7814
+- `needs_editorial_verification`: 746
+- `rejected_noise`: 7469
 - `source_monitor`: 1
 - `source_review`: 31
-- `watching`: 86
+- `watching`: 85
 
 ## Action queue
 
@@ -26,8 +26,6 @@ Generated: `2026-10-06T16:03:32.847879+00:00`
 | high | needs_editorial_verification | direct | [Meta has announced 'Ray-Ban Meta Audio,' smart glasses without a camera, boasting up to 12 hours of battery life and shipping starting Octob](https://news.google.com/rss/articles/CBMibEFVX3lxTE1qOVd2aU82Ri1fZ1NOYng5YXpNR1UtZFE1Z09tSl92ZVRTeDZxd1NRaFJfMEt0cUtERzJ3cWIwUlpyTjA2NHM0eGE3N3ZLT0xxTG16NXE1NXVlQS1ORExGN3pjVGFzVUYxeGJpaA?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta has announced 'Ray-Ban Meta Audio,' smart glasses without a camera, boasting up to 12 hours of battery life and shipping starting Octob](https://news.google.com/rss/articles/CBMibkFVX3lxTE9IWTJ3blV4VFltTDRtNnVCZUdMdFBFd2MzM2xMNkNEZl8tUVhWaktaTDlBbXBuT3ZLM2pVWDJqODhvQS1yVUJpX3ZsVU1ZVUZabXl5SW5ZWXozUVV5eHZmZ2FDcUNGbjBTemJRS213?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta unveils $1,299 VR glasses, camera-free AI glasses and Muse Charm; India launch yet to be announced - ibtimes.co.in](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSnVhRVc4RU5CUkxFc29jQ29sdy1qc1pEZUlpSnlOWUlETDRuRDVSRDh0TzJtbXBzNTRhLXNNaGRhb3hyY3RTSEtSTEd1OGk1cUZrOHZRb1ZQQWJfZWFVZERJMXdzYlVuUTdNNnNXcG5HWS16QXJ1X0VPQWhYRmgzVl9VT0FQU0loOHd4RHYzV05sVEFzcUVURENfOGJzMzRFYXVHRVUzazRUd3k0OTZOdVNaZWl0bVJ1VVppNHA0T3MzSmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.317](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.317) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.320](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.320) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.322](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.322) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.323](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.323) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.325](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.325) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -218,7 +216,7 @@ Generated: `2026-10-06T16:03:32.847879+00:00`
 | high | needs_editorial_verification | direct | [Norway preparing its first major ban on AI glasses in public places - ukranews.com](https://news.google.com/rss/articles/CBMisAFBVV95cUxQNUlXUklsa2ViQlRWX0dINjR3YnZuTUgyY29RSUg2dE8xSWNBdVJYeS1oODBWR0gwUmppX29fa2psTkNTZ0w4UHdfMGJsSEl3UWtPUElPaUtvNzNScVBhTE1KZmgtNER2SkZtVV81NHJfbXlHZk5tLUozdVBXVF9fcGQ0X1FyM29HSnJSdUVSbWwxTWRnWHhvMGRveVhKOHpPY0FTcTAzRHVJU2dSWkQ5cNIBsAFBVV95cUxQNUlXUklsa2ViQlRWX0dINjR3YnZuTUgyY29RSUg2dE8xSWNBdVJYeS1oODBWR0gwUmppX29fa2psTkNTZ0w4UHdfMGJsSEl3UWtPUElPaUtvNzNScVBhTE1KZmgtNER2SkZtVV81NHJfbXlHZk5tLUozdVBXVF9fcGQ0X1FyM29HSnJSdUVSbWwxTWRnWHhvMGRveVhKOHpPY0FTcTAzRHVJU2dSWkQ5cA?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Norway says its proposed smart glasses ban is a ‘high priority’ as government promises ‘informed debate’ on wearable tech - TechRadar](https://news.google.com/rss/articles/CBMi1gJBVV95cUxQUDVkd1hwVkkySC0zMXVKN0RLdGdwZVZEb2l0M3YwM1R5Y1BpeFQ2SXItckVjRG5aV0x3cTM5TnpuWmtHWmMzazRGQkdCMUJTVy0zbXVVUTZHQzB0QjFOQ1pYcjBGdVNpWE5nTnpKRVgyS1IzbE1wTVN1blJiZENhWG11WlRBaGt5b0xuRjBzbGdZdEhBZHFSbGd5YVBOei1Vc1Y4c2YxTnhCRnVpU2tULTQwZmw0T3pZeGd1TXE5RHA4OW00WHpYbF82VTJwLVFUNmUyME1HZC1rTXdsZGhRMHdIVDVQUzM4LUttandabG11Rm5pb1ZyV3dZQ3BvVkZiVlU0eGx6dFBQSHVYejdYWTR5b2NxQ2dDTHdLVTB6dmlVdHdRWW5jY2RHLTlaeGp0MDdZLWJYV0dic0o2VmsyT0ZreE9WVF9wNV82YUkzQ1RyUWgtMlE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Norway smart glasses ban targets public privacy risks - Cybernews](https://news.google.com/rss/articles/CBMiZkFVX3lxTE8xcWJFZzA2SWs5UmN4LXNOMC1rSXlFWU5PTzhWb0M4eFEtMmdhSnJpZlJIYlpPMGtyZDg4Uld2Z3dKQ2hJOFJsWTBILW9EeUFyT0s4NThaR3RsT1RiMGI5MVFkUTR1UQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Oakley & Meta launch sports smart glasses in New Zealand - channellife.co.nz](https://news.google.com/rss/articles/CBMijwFBVV95cUxOS2htVVdRV1pTQnlpWXROa2ltQ0ZOcW1udlp4QXR0b2didGZaeW5HWDNQUmR4dDlacWVwZ3BVUjlUQUNUMnNpMXVVVVZ1ay12LXgyWFliQTBvbzZSdFI3MDRyOS1hdWt1Vy1PZDhndmpBWlQ1VGRQN3NHN1JyRVYwbmJ3QXdhSWY4MVFMVU4yZw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Oakley & Meta launch sports smart glasses in New Zealand - ChannelLife New Zealand](https://news.google.com/rss/articles/CBMijwFBVV95cUxOS2htVVdRV1pTQnlpWXROa2ltQ0ZOcW1udlp4QXR0b2didGZaeW5HWDNQUmR4dDlacWVwZ3BVUjlUQUNUMnNpMXVVVVZ1ay12LXgyWFliQTBvbzZSdFI3MDRyOS1hdWt1Vy1PZDhndmpBWlQ1VGRQN3NHN1JyRVYwbmJ3QXdhSWY4MVFMVU4yZw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Oakley & Meta launch sports smart glasses in New Zealand - FutureFive New Zealand](https://news.google.com/rss/articles/CBMijgFBVV95cUxPbVpmTHlRRU45eE5wSkpaTVdlYXhXM3VVRVVyQzZmd3NTRlByVzlneWZmemkxU2VxUDdQbTBtcVkzY0dfekd1eHRBdTE2VFVrX3c1TFlVTnpKczRMQTgyNDhwV3h6alFXV2puNTF0dkM4cmlMX0RPYXVOeXd3dzhzcGdtS3ZnS3ZxVGhMOWZB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [One country is mulling a temporary AI glasses ban, and gyms are on the list - Phandroid](https://news.google.com/rss/articles/CBMirAFBVV95cUxQeVY2LXRQMWotX0h6RXFmU1JRYXJFSDc4VDVhRUgwcVFzb3pBZENVaVNQWHFHdURQSlNuem1tdzZkajN2UGVwaHMwVF9VbC04TFplX25wRG9FT1pYbW5TSmxaZzNwSmFVOV8zQnJWQnRJZl9ITG5heDhxMGdNejZvbkpZTGlReGtQU0hhbmF4ekZzYWF4QVpyNmJreXhmR21QX3FyRXJOV0lrV21x0gGyAUFVX3lxTE9ubDVWOV9zQ3dsdktUaXA0el9ldmtVVWpaQnBYamhtNU9xd19Gdm5fTXc2ZGR2SkNrZnRDZmc5OGFCN0xJbWNueFpVdkZIa0hJd004dzVxZU5rV1lnbEcwaGJHcFhQV0tMSXEyeXBrdW9HcHZvUEVvQjQxUDhzZmVJV093MGJ3MW92RUpiOWlYaVJxM2swcnQ1U18wczZqNGNBRy1qR1hfRmhaVUVFUE1KMmc?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Portaltic.-Las gafas inteligentes Ray-Ban Meta incorporan el ajuste de sonido en los altavoces y la navegación paso a paso - Notimérica](https://news.google.com/rss/articles/CBMigAJBVV95cUxPdVJ3U0U4TTFpMWZldVlVcWVhUXEzRzlvUENVRnF5cEM0UHNoS0VMbWFpa0Z0Ny1hc2FRVGV1ZGRuSTB6bVNQMkdsdlBiX2o5UFVOMDJvNzdfRzg1QXJGWmZLb0dDbmR3OFNESVJySmNZY09XTkVhd1FuV1h5TUM4SDVpSXJYM2tkOTlNU2F3MGpKcEMwNk9YT3JIMUM0OVR2Q01NVjRGSFBOb1RJNU9faHB1cmQ5aXVuRGZveERSY3ZTZXRNVVpfTjhXTFVnNHBCbFU5TDZwdzc3cms5V3JnN0FyZ1dCczdXOU5FYnI4b0NTbFQ4ZlhOM2k2bjdPVVNs?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -272,6 +270,8 @@ Generated: `2026-10-06T16:03:32.847879+00:00`
 | normal | needs_editorial_verification | direct | [Amazon、配達員向けAIスマートグラスを2027年末までに2万台超へ 周囲の画像を配送改善に活用と報道 - ledge.ai](https://news.google.com/rss/articles/CBMidEFVX3lxTE8xeWVPazd3WkE4M2h1TjRPZTN5Z0gzVlF2ZzRqUW1XZG85WE1CSDBTektiS01jN2hDenBpVllFenlTaHpLb3I2YmdvYzQ3ZlVlU0dWUzJ4WG9SeGpmNGVxNmxyckxnaUhDZzJNeDlXV2VoVVIy?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Android Authority 7h ago Your Meta glasses just got better at telling you where to go without pulling out your phone Coverage Meta](https://www.androidauthority.com/meta-glasses-navigation-audio-update-3719444/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi2gFBVV95cUxONmYwX2RqZXB1ZnphNC11X19CVVZqSmQ5TEtDZTQtNnJTdlN0YnFPVGtacTFZQ0h5T29HQWhaa3V0cHowUERZU1BPcmtiSzJGbVpRcjNZVEZ6NlFHb2JINTZ6N0JpcllMUkg4WmNOVHUtbGdMdXFhd2gxa0MwdW8teEhFUjFzMHo4ZmZYVW9MdFgwWG03dV9XNi1rQUpIdXlLNS0xb2p0eDIzQWdmT244YjNrYmZXVTQ2SHV0bFNVQmtSbVZ4WVhEaS1nUl9FMlVreTdublZBTkcxQdIB3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ3?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ30gHfAUFVX3lxTE1KV1c3ZzZwVk90MjdZVDZ6Zi1tN1UtTm04UnhvMjFPT0dzcTdHakNzaXAtdElUR1dFUUdWLXA2a25Ba0ZMVjVndll1c3M4WUk3bE95T18xQ2ktWno5NnB4RzBBWkFZdW5wUFBMZXQtai15TDdaR0tBSDkyTmkybUZhOEhKaDdraXlWMjN6dEtGU2VuTXJuSWpmcWgwMWJ6MVlNYXZXMEtKek1mbDQ1amJqa1R6RE1tV0VUaEh4cU1XN3RMUDNuR1V0aFVadXRjMlI3WVF2dlVNbW9qQlN0dnc?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
