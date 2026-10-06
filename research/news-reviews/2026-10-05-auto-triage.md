@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-05T22:04:05.017924+00:00`
+Generated: `2026-10-06T00:53:37.704369+00:00`
 
-- Intake files inspected: **283**
-- Candidates retained in this review window/history: **11258**
+- Intake files inspected: **281**
+- Candidates retained in this review window/history: **11229**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2531
+- `adjacent_radar`: 2518
 - `catalog_review`: 6
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 761
-- `rejected_noise`: 7834
+- `needs_editorial_verification`: 750
+- `rejected_noise`: 7827
 - `source_monitor`: 1
-- `source_review`: 36
+- `source_review`: 38
 - `watching`: 85
 
 ## Action queue
@@ -26,8 +26,6 @@ Generated: `2026-10-05T22:04:05.017924+00:00`
 | high | needs_editorial_verification | direct | [Meta has announced 'Ray-Ban Meta Audio,' smart glasses without a camera, boasting up to 12 hours of battery life and shipping starting Octob](https://news.google.com/rss/articles/CBMibkFVX3lxTE9IWTJ3blV4VFltTDRtNnVCZUdMdFBFd2MzM2xMNkNEZl8tUVhWaktaTDlBbXBuT3ZLM2pVWDJqODhvQS1yVUJpX3ZsVU1ZVUZabXl5SW5ZWXozUVV5eHZmZ2FDcUNGbjBTemJRS213?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta unveils $1,299 VR glasses, camera-free AI glasses and Muse Charm; India launch yet to be announced - ibtimes.co.in](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSnVhRVc4RU5CUkxFc29jQ29sdy1qc1pEZUlpSnlOWUlETDRuRDVSRDh0TzJtbXBzNTRhLXNNaGRhb3hyY3RTSEtSTEd1OGk1cUZrOHZRb1ZQQWJfZWFVZERJMXdzYlVuUTdNNnNXcG5HWS16QXJ1X0VPQWhYRmgzVl9VT0FQU0loOHd4RHYzV05sVEFzcUVURENfOGJzMzRFYXVHRVUzazRUd3k0OTZOdVNaZWl0bVJ1VVppNHA0T3MzSmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | ["You can see them from a mile away" – new Snap Specs smart glasses released on pre-order, boasting an all-new solution to the backlash again](https://news.google.com/rss/articles/CBMixwJBVV95cUxOMFlmUVpTa01RcktWRXFKd2p6YUU3YVpzclUyMC1iTGRUdDViVUlKQ0xWNUdqUG1HRUlqVDNkVEh0YXFvTC16SnN4b3k0U29MUF9xRVRrU3U2cDhjaTBRajVBUTBDT3M4c2Rzc2doQzdxdUFraVctNzFEUmdOVGdrTlhfUzRLUTgtSV9WdFJhUHk5T241Ty14U0ZEQ2Z3STZGRk1Ub1NSUjJVNTRPSkNOaGZhYmx3bmI5QkRkcEZrNFcwSmdPY0tfT2RfbnBBN3ZIZWdXOVRkQzg0eUZaLTB4bXg5V0ppajhTcjZJOThDUXdRMW1IZ0lwTnNUOFNwb2dRdHQ2WTQyNWgtc0Nkcmx6allteGxzbWhJTzVSUjNxa3E3ZldUaVRxVVdXYklFd3pMVWFDZ3NuNEZkV2hfS3hmVnN4ZWUyYm8?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.306](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.306) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.307](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.307) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.311](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.311) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.2.1-dev.314](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.2.1-dev.314) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.316](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.316) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -272,6 +270,8 @@ Generated: `2026-10-05T22:04:05.017924+00:00`
 | high | needs_editorial_verification | direct | [TechRadar Aug 28, 2026 'We don't want another damaged generation' — Inside the grassroots campaign demanding a ban on smart glasses](https://www.techradar.com/vpn/vpn-privacy-security/we-dont-want-another-damaged-generation-inside-the-grassroots-campaign-demanding-a-ban-on-smart-glasses) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [The first national ban on smart glasses could happen soon - Android Authority](https://news.google.com/rss/articles/CBMiggFBVV95cUxPUkZHTV8xY21KVUQ1TjJ5VGM4RklQZU11YlhCa21pZ05ObXVULU9sODVUeGFzMldzWWxjM0lsZERfNTRWalZMbjVsZ0ttNkF3ZFhyZHBBaWdhUGRDU284NDgxcVluMWZjcmhYdWVDSjc5elhwSGd2eEJ1eVFoUnB0V0tR?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Tom's Guide Sep 2, 2026 'I find it very uncomfortable talking to people with a camera and a light': OpenAI's Sam Altman weighs in on smart g](https://www.tomsguide.com/computing/smart-glasses/i-find-it-very-uncomfortable-talking-to-people-with-a-camera-and-a-light-openais-sam-altman-weighs-in-on-smart-glasses-and-privacy) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Travis Japan松田元太、次世代AIグラスに興奮 Ray-Ban Metaで「生活が彩り豊かになりそう」 - 山陽新聞](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9rc2hMRmduZHo0QVVWUUQ2SnNqS1d6SDZBc0xEVFNfazNzNjRxeXJhS2NrWkRlU0trUHE1S1k4d01TWFJNcGlhZW5xX09SR204b3c?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [When Surveillance Becomes Wearable: AI Smart Glasses and the New Threat to Women’s Security - natoassociation.ca](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYzRuTldWemhuTHR6WVZEbHpBajBWVzhyR1NaYzhCTy1JbVlwbzVWenljMlB3TmVoUFVKQUFuVm5zTVphdU9XdHQ2cWpRXzlOTVJ3U0ViMlQxMDMxSlE0N2xsWjU1S1JuNk9oMHRHb216SVJpbDFRbkpia2JGM2dKcExZMXplVHNpTlNDWHpNT3ZDOGtzLU9pWlJHQzk5cDVSenZ3cTlKdTRnR3l1My1DNVNsYm5rVThJ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
