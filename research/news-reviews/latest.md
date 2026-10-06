@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-06T09:17:27.827501+00:00`
+Generated: `2026-10-06T10:49:58.668741+00:00`
 
-- Intake files inspected: **281**
-- Candidates retained in this review window/history: **11227**
+- Intake files inspected: **280**
+- Candidates retained in this review window/history: **11166**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2502
+- `adjacent_radar`: 2482
 - `catalog_review`: 9
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 749
-- `rejected_noise`: 7839
+- `needs_editorial_verification`: 748
+- `rejected_noise`: 7800
 - `source_monitor`: 1
-- `source_review`: 37
+- `source_review`: 36
 - `watching`: 86
 
 ## Action queue
@@ -152,7 +152,6 @@ Generated: `2026-10-06T09:17:27.827501+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.614](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.614) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta VR Glasses, VR/AR glasses weighing just 100g, have been released, featuring a micro-OLED display and supporting 5K resolution. - GIGAZI](https://news.google.com/rss/articles/CBMiakFVX3lxTE9DVUQxdDBmX181aHJKMXNqN1JnRlRoUjVCV1lCTzc3Zl93YmUzQ2xEMDVfSXlZUzd6aE9GbnRhWEw4aEt6S0NzQ19fN1hPU3RXWjRKSDM1Nk1tbFhYOEp0cHhBUS13ZVlwMVE?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
-| high | needs_editorial_verification | direct | [Meta2026 Developer Conference kicks off this week: smart glasses and Phoenix are poised to launch, with Muse AI as the biggest highlight, wh](https://news.google.com/rss/articles/CBMirAFBVV95cUxOeTZ1d0o0YzV2TjdEY1FBdnh3Ul9ZZjdMelk2S0JWYUNESWdEN09TTkRTX0hjcTZjZzhqMFoyRG1rcFJENnpKZE40QXNlR202Y3VsWVB2MVJtRUFsVHVNV2Q2NjdtMmRUdG02S3dkbGpPUnVHb2F4YllOWjI0NV9WZjhNYVl4VWNidGNvd0JwX2tqc0EwUWFBWkJsaVpWakxRVzdtOUZlMlVCdHow?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [AI Glasses Launch Could Be A Game Changer For EssilorLuxottica (ENXTPA:EL) - simplywall.st](https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVkdTa3d6aHlMbkpDSkg4STRGTXI5bkFlZVJ6RWFGSWpUT1E3MURCQTVIUXhyM1RiZW9fV0N6RkxWVzlQTUVlMjRuZ2IzY0JJejl2aU83VTUwTjVnc2FpeGdzb29ZSGZQeHJweXRVaWVYMTRaX2Q1aC1sNXp5WFNSM2JwaWZENW53TWtQRUh6Z0Jad2tTQlBqM0JreG9VRzhrd2YzaDZqMEFBUElpZWxRNWlJS0huaW9UNVRKbVpYZTVNSUN4V1c1dENoa3ZBNjJmS2tJdGJJVkhrOUJKV2ttU2wwd2JUbEtJWDFj0gHwAUFVX3lxTE1WbWFSeTAtajY4Z0RTVGFFdTFDUktOZDRKbkd5T3VTbFkySUsza2hWc1FBSjFZdWFTQUVlc0gyYjdKbi1vWEZQZXRoS1NEY1pNa2NqWnlrcDc1X3JuazNWZHdwcVIyeFJnS1NMNVlmWFZNWDBBRnlORFhhdjRxbjRRTDBJaFJZN0NVMEI4T09VOXZ0ZDJybVBMSXJDNTNDVm5DN2JqLXRWUG45dXgtYWs1bXhKZjNjd0VSZElNUWkxanhLa1JMXzNjRHZZdFNZN2R0cUYxZHFIZXgtUVBra3dXQ3pIQjZiYTFhQ2txdVV6OQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - Daily Hive](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1PQU5LUVNiTFd5VXFCcm9ncUpJQjYwWVRoTTRWZTQxdXY4dkhZOHdQX082cFFpbWI4NEJJYXQ3eUN5NFYtT1VrYk5MNVQ4S0V3ZV95cWFndVV6Q29yd1lHSS00bUdiWDQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -175,7 +174,7 @@ Generated: `2026-10-06T09:17:27.827501+00:00`
 | high | needs_editorial_verification | direct | [Samsung prepares to launch AI smart glasses in November 2026 - sammyfans.com](https://news.google.com/rss/articles/CBMinwFBVV95cUxOb1lDSk9YcEowLTAtSHV4X1lzTThRUUhiOVctR09fSHRrNkJaVURDMUQyWVdDQjRRemFBaFF4UDJYMXVSc2FOd3dXbDNWdGNJN1pTNkZiX09vbHdRWGE1U2U4VEI1ZGp4RXRpWjh5SFZWZGh3Rm1WYVdnamxHM3BBeXJIc0VYY2c1ZFYtWTI3WWpTeF9aZ080RGVMd0w1R2_SAaQBQVVfeXFMUDkyc2U1MkhmX2FrUUxVT2hJSFl2QnZad1hNcGZSRWFJeXY1NXBaQkI2SkJaeGVVdTN3V0xNOHJVU01YeEZ6MG5reFF5R3NvX0g3dUxzWkR2ajBlT0Y5RXp2V1VHQTdQSlltVVV4alYtSFVGcmg5Y1VTNGRYMnJyRjdKRHNFUUN0OUdkQUE5OHViamJ3ZHdDTWtzT0puYndpQTRsaFM?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Smart Glasses Clear FCC for November Launch - dailybeirut.com](https://news.google.com/rss/articles/CBMioAFBVV95cUxNcTRqaUtrRzk3Q1lvOXZVZUliU3AyeUhDVmZ4b3N2TnpNelgzS0dGdE5aZWxPZEZWeEZhNmJCTXlOVTBDemFRSjB6V3duYURING1vRG8yMHo5S1o5X2J2SzVFNllxNE44TlhSbDROWlNOSFhyMVRzckhNcTBNWmZYNmRmZmNhRE40Yzk5alhNU3I5WVhNY2NJcUF6RmVVcTZ0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Targets Meta With November Launch of Gemini-Powered AI Glasses - konsulteer.com](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSGpqNlg2UkRCdGVFWU81cEw3a0l3SEo5eFRsbTMxc0JfdXVUdjQ4MDEtVW15NEtQNDJyMTVLRzQxaFl2NXN6SjJVcGNFZEQ1RTRWMGhOR1BMaEpYT01kbVl4YnJncVFPRXN3cmpsRVliNksxSl9jeXZWU3dZWlNhTXM2cFlYTXNBSHB2RjV4OTNWcXhWVjgtNWdxeldMMkxiLUVDel84TUc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung to Launch AI-Powered Smart Glasses in November 2026 - Tempo.co English](https://news.google.com/rss/articles/CBMilwFBVV95cUxNN3V5OGI0dzJ6YW5SV1MySk1QZEJRLVctTTBUd2g0cXRRb19HUlh6UDdsdDRIdzFXWldlb2VjLVRLdks2X0RQU3RPQ2tLWlRld3hYc3UwbUxKY21FN3NfbWxxc3hQT1NLYTVteWJIY2FpaGtHRGExaUFDcl9Ydll2RS16ODJ0SVFjdW9pY1ZmOUpLRDlXeXBn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung to Launch AI-Powered Smart Glasses in November 2026 - en.tempo.co](https://news.google.com/rss/articles/CBMilwFBVV95cUxNN3V5OGI0dzJ6YW5SV1MySk1QZEJRLVctTTBUd2g0cXRRb19HUlh6UDdsdDRIdzFXWldlb2VjLVRLdks2X0RQU3RPQ2tLWlRld3hYc3UwbUxKY21FN3NfbWxxc3hQT1NLYTVteWJIY2FpaGtHRGExaUFDcl9Ydll2RS16ODJ0SVFjdW9pY1ZmOUpLRDlXeXBn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to launch first AI glasses in November, taking aim at Meta - koreaherald.com](https://news.google.com/rss/articles/CBMiV0FVX3lxTE1ONmdjMUZCc0llcVNiNHc1ekZocFM4RU9fM2lJcHJuZzUtYlZyUE81Mk1vaWxGQ29CcGppRlh4eXl6TThuYTc1QUE5dVItamJwWHdOaTRQaw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to launch first AI glasses in November, taking aim at Meta - theinvestor.co.kr](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mMFpLaTB1cHF5Tlplek5NX1RiVkI4YjhQMHp6VDAtVUZ6ZFQtZUc4ZXNIbjF5QlZ2SHM4T05xbkFJakw0NF9aaWxweWFBb1RkaE55NHljMzZ0dw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung To Launch Its First AI Smart Glasses In November: Report - Free Press Journal](https://news.google.com/rss/articles/CBMiogFBVV95cUxOYzFHYk1DV3hYYW5nNHdLQ3lwWnlaeGVPeXlBUW1hZXNFakNHY29DM19fbFRpNnk1ek1xSnh6YUswZVMxLVlzWER4aHkzUk9DZ3FaN1U0SVdqci1fUGxWSzhtQlVOTFl0TFpmdFYtTXo2UE1ybGIyQjdacVcwVDYxVFhxeDlPQlhRTVdMel82ZmRNcE5nN2NwejhHa3JpbEJxdVHSAacBQVVfeXFMT2hfd3E2czFGVS1pMGJYUXh3S0hYNVNRb2NHcjR6WEVkMjhuU2hJOTJheF9WRTNYX3lTWE95QjA4ejJhdFZNbXdiY25WUDZCLTc3VDJ2V2ZFdFprWEo0MGhMaWVjMjFMekpwaXdLSjdQUWYzMUhtU1dPRkF6TUZlQl9DR3MzSU4tT0w3aG9uLXZGXzQ0b05hX2t5Y3ZEclBqMVVKc2dyVWM?oc=5) | reachable (200) | research_news_review, model_catalog_review, deep_research |
@@ -272,6 +271,7 @@ Generated: `2026-10-06T09:17:27.827501+00:00`
 | normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AIスマートグラス、ノルウェーが一時禁止へ。公園や学校、病院などでの使用が対象になる可能性 - 千葉テレビ放送株式会社](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1qeUgxZXR4MGlxS1FWT1UyVmV5V283T0o5Rm1DY0EyZGl0ODRseDZHWGVYMk9NeFU1ZHhxdEljc3RUM09sTkU0OUlMZGpmYTlxY1puVFJjWlZjekV3Mllr?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AIスマートグラス用チップの世界市場（2026年～2032年）、市場規模（4nm-5nm、6nm-12nm、12nm以上）・分析レポートを発表 - アットプレス](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9sMXNBSUl4cXUzaTJqYUthcmkwWkZrTnpMNkZNWXBlaW1YYnhxcmJzTXJuSEVwaFl3M1NIOWtCbWVMcVU5NUlHdWJ4bW9OQU0?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [AI搭載スマートグラス「レイバン メタ」に最新モデルが登場！ - Numero TOKYO](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBXTzVvSDAwSmdDQVFyS2s0SldkRnlBeEtoT3RKTmltRmRWb3d2R0Ewd0pLRW82aUh1Ui13U0ZkbmtSd2FCa3gzcDJYbnY2M1BZY1dKUDFR?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
