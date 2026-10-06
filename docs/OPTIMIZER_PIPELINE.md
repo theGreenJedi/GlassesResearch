@@ -93,6 +93,22 @@ Each optimizer run should:
 11. Recover from routine in-policy failures before reporting them as blockers; continue the run after successful recovery.
 12. Emit a concise post-cycle status. If no human action is required, say so plainly.
 
+## Morning report contract
+
+The optimizer's human-facing overnight report is an **exception summary, not the execution log**. Detailed findings, recovery attempts, evidence, lifecycle transitions, and diagnostics belong in the durable ledger/issues/PRs.
+
+When Pete does not need to act, the routine morning report is limited to three short lines:
+
+1. **GR overnight:** Healthy / Degraded.
+2. **Done:** completed merges, verified research/evidence advances, or "No material changes."
+3. **Pete needed:** Nothing.
+
+If Pete must act, replace the third line with the single concrete decision or external action required. Additional human-facing detail is permitted only when a genuine unresolved Pete-only blocker remains after bounded recovery, or when Pete asks for detail.
+
+A run must not use reporting as a substitute for execution. Finding actionable VERY HIGH/HIGH work without advancing it through the authorized lifecycle is an incomplete run. "Repository mutation blocked", "execution layer blocked", or equivalent language is prohibited unless the direct authorized GitHub connector route was actually attempted, current state/refs were refreshed, bounded recovery was exhausted, and concrete failure evidence was durably recorded.
+
+The morning report must never dump the competitor survey, monitoring backlog, transient CI failures, successful recovery diagnostics, or evidence packet merely because they were processed overnight. Those remain durable machine/project state and are surfaced on request.
+
 ## Governance provenance
 
 The Sep. 13, 2026 approval-gate cleanup established that older PRs, issues, and comments may contain superseded blanket `Pete + ChatGPT review` language. Historical text remains provenance, not current authority. Current `main`, the active optimizer automation, and explicit later corrections govern future executions. Issue #565 records the audit and cleanup.
