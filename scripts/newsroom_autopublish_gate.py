@@ -5,7 +5,7 @@ This is deliberately narrower than the ordinary newsroom publication queue.  A p
 may bypass the repository's final human merge gate only when all of these are true:
 
 * the semantic route is exactly ``news.publish``;
-* the story is high confidence and not a privacy/policy or rumor beat;
+* the story is high confidence; rumors are blocked, while privacy/policy stories require primary evidence;
 * every claim is high-confidence and verified/corroborated, except that a high-confidence
   single-source claim is allowed when the package includes a primary source;
 * evidence includes either a primary source or at least two independent source hosts.
@@ -24,7 +24,7 @@ from urllib.parse import urlparse
 from newsroom_publication_intake import normalize_package, package_id
 
 SAFE_DESTINATIONS = {"news.publish"}
-BLOCKED_BEATS = {"privacy_policy", "rumor"}
+BLOCKED_BEATS = {"rumor"}
 GOOD_VERIFICATIONS = {"verified", "corroborated"}
 
 
@@ -59,6 +59,8 @@ def eligibility(raw: Any) -> tuple[bool, str, str | None]:
     sources = package["sources"]
     has_primary = any(source["source_class"] == "primary" for source in sources)
     independent_hosts = {source_host(source["url"]) for source in sources if source_host(source["url"])}
+    if package["beat"] == "privacy_policy" and not has_primary:
+        return False, "policy_requires_primary_evidence", pid
     if not has_primary and len(independent_hosts) < 2:
         return False, "insufficient_independent_evidence", pid
 
@@ -149,9 +151,13 @@ def self_test() -> None:
     })
     assert eligibility(mixed)[1] == "mixed_or_non_news_route"
 
-    privacy = json.loads(json.dumps(base))
-    privacy["beat"] = "privacy_policy"
-    assert eligibility(privacy)[1] == "blocked_beat:privacy_policy"
+    policy = json.loads(json.dumps(base))
+    policy["beat"] = "privacy_policy"
+    assert eligibility(policy)[0]
+
+    policy_secondary = json.loads(json.dumps(policy))
+    policy_secondary["sources"][0]["source_class"] = "secondary"
+    assert eligibility(policy_secondary)[1] == "policy_requires_primary_evidence"
 
     weak = json.loads(json.dumps(base))
     weak["sources"][0]["source_class"] = "secondary"
@@ -169,11 +175,11 @@ def self_test() -> None:
 
     with tempfile.TemporaryDirectory() as directory:
         root = Path(directory)
-        payload = {"schema_version": 1, "packages": [base, privacy, corroborated]}
+        payload = {"schema_version": 1, "packages": [base, policy, policy_secondary, corroborated]}
         filtered, report = filter_payload(payload)
-        assert len(filtered["packages"]) == 2
-        assert report["eligible_count"] == 2
-        assert len(report["eligible_ids"]) == 2
+        assert len(filtered["packages"]) == 3
+        assert report["eligible_count"] == 3
+        assert len(report["eligible_ids"]) == 3
         (root / "report.json").write_text(json.dumps(report), encoding="utf-8")
     print("Newsroom automatic-publication gate self-test passed")
 
