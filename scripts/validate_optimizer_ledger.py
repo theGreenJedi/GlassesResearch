@@ -41,6 +41,8 @@ def main():
         "not recurring Pete approval gates",
         "Pete has granted GitHub write permission",
         "Mission Style means own the approved mission end-to-end",
+        "Routine morning reports are three short lines",
+        "Reporting never substitutes for execution",
     ):
         if required not in contract:
             fail(f"closed-loop optimizer invariant missing: {required}")
