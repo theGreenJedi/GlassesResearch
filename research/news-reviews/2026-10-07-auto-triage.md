@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-07T19:54:15.808140+00:00`
+Generated: `2026-10-07T21:23:35.162557+00:00`
 
-- Intake files inspected: **273**
-- Candidates retained in this review window/history: **10670**
+- Intake files inspected: **271**
+- Candidates retained in this review window/history: **10592**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2349
+- `adjacent_radar`: 2350
 - `catalog_review`: 6
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 692
-- `rejected_noise`: 7508
+- `needs_editorial_verification`: 681
+- `rejected_noise`: 7440
 - `source_monitor`: 1
-- `source_review`: 41
-- `watching`: 69
+- `source_review`: 45
+- `watching`: 65
 
 ## Action queue
 
@@ -27,8 +27,6 @@ Generated: `2026-10-07T19:54:15.808140+00:00`
 | high | needs_editorial_verification | direct | [Meta has announced 'Ray-Ban Meta Audio,' smart glasses without a camera, boasting up to 12 hours of battery life and shipping starting Octob](https://news.google.com/rss/articles/CBMibEFVX3lxTE1qOVd2aU82Ri1fZ1NOYng5YXpNR1UtZFE1Z09tSl92ZVRTeDZxd1NRaFJfMEt0cUtERzJ3cWIwUlpyTjA2NHM0eGE3N3ZLT0xxTG16NXE1NXVlQS1ORExGN3pjVGFzVUYxeGJpaA?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta has announced 'Ray-Ban Meta Audio,' smart glasses without a camera, boasting up to 12 hours of battery life and shipping starting Octob](https://news.google.com/rss/articles/CBMibkFVX3lxTE9IWTJ3blV4VFltTDRtNnVCZUdMdFBFd2MzM2xMNkNEZl8tUVhWaktaTDlBbXBuT3ZLM2pVWDJqODhvQS1yVUJpX3ZsVU1ZVUZabXl5SW5ZWXozUVV5eHZmZ2FDcUNGbjBTemJRS213?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta unveils $1,299 VR glasses, camera-free AI glasses and Muse Charm; India launch yet to be announced - ibtimes.co.in](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSnVhRVc4RU5CUkxFc29jQ29sdy1qc1pEZUlpSnlOWUlETDRuRDVSRDh0TzJtbXBzNTRhLXNNaGRhb3hyY3RTSEtSTEd1OGk1cUZrOHZRb1ZQQWJfZWFVZERJMXdzYlVuUTdNNnNXcG5HWS16QXJ1X0VPQWhYRmgzVl9VT0FQU0loOHd4RHYzV05sVEFzcUVURENfOGJzMzRFYXVHRVUzazRUd3k0OTZOdVNaZWl0bVJ1VVppNHA0T3MzSmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.333](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.333) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.335](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.335) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.338](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.338) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.339](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.339) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.341](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.341) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -144,6 +142,7 @@ Generated: `2026-10-07T19:54:15.808140+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.695](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.695) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.696](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.696) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.698](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.698) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.706](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.706) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta VR Glasses, VR/AR glasses weighing just 100g, have been released, featuring a micro-OLED display and supporting 5K resolution. - GIGAZI](https://news.google.com/rss/articles/CBMiakFVX3lxTE9DVUQxdDBmX181aHJKMXNqN1JnRlRoUjVCV1lCTzc3Zl93YmUzQ2xEMDVfSXlZUzd6aE9GbnRhWEw4aEt6S0NzQ19fN1hPU3RXWjRKSDM1Nk1tbFhYOEp0cHhBUS13ZVlwMVE?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -233,6 +232,7 @@ Generated: `2026-10-07T19:54:15.808140+00:00`
 | high | needs_editorial_verification | direct | [Xreal Aura Launches at $1,279 With Android XR and a Compute Puck - Gadget Review](https://news.google.com/rss/articles/CBMilgFBVV95cUxPTXVETWNwMnpuMlVmaERUaWhzNDhPVncwbzFXbjZuaWRaeVUyS3pta2NSbFg3QkJKX1JDT2RubWo2X0dsYjZ4aVhvSXp6cXBmN0xIbDZXQmRsTmFOZW9ITjJqcDBxd3ZBRExGT05Gclk4TjlJVl9RV1ZQUXVNeXJTVThPbENfdkpwQU8yR0lJSUpjYmF6enc?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Xreal Aura Launches: AR Glasses with Micro-OLED Weigh Just 95 g - Root-Nation.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxOa25lbVE4bjB1QVN4TkFfZHMwX21zbE9SNlFpMHgtN2lzMV9vQU9yNnR2dXNpbFRnOWctZUxKWnhjMVI1NHZfX1lTdUhiZXJhcUVUdENUaVVxRkNicjBfY21SR1BhYXJtZmw5dExVVWctUUVPSE5ORlIzVnFubGtacDR3NktwZw?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [XREAL Aura Priced at $1,279 With Preorders Opening in October - AndroidPure](https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ZdVJINlRPMGhXeHlwS1NaZ09ZcE5hczVxVGp5TjlZY3RINW5iMVkzWko1UG1scmdwRW9ZT2JaTWZjQjl2QXJQbHVvak52bkkzZTZSZ1Q0VEI?oc=5) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Xreal Aura pricing revealed: shipping to start 'before the holidays' - Yahoo Tech](https://news.google.com/rss/articles/CBMikwFBVV95cUxOYWdCOW0xOGJnYXVWUjV5SVFsVmFCcXBIcDI2RWhQVkQ0cEtJdGVSc3pOOXBuVmpxMWRuY3djS1NoLTg0ZXN4WnFmcHVfNDdscUtvc3ZyQW5fVFEtdDdFVjd4SXFvSkZ0SThWTVZKNXZUaDlwa2kzbTdiWXg4UnVveWF4dkxLaWRzZUhfekNudDA1ekU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Xreal Aura pricing revealed: shipping to start before the holidays](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ac6a2e4c6074507bceb6fc024033a84&url=https%3a%2f%2fwww.msn.com%2fen-us%2ftechnology%2fconsumer-electronics%2fxreal-aura-pricing-revealed-shipping-to-start-before-the-holidays%2far-AA2dLpWE&c=6863835735739318671&mkt=en-us) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Xreal Aura release date is ‘just weeks away,’ and coming to Canada - MobileSyrup](https://news.google.com/rss/articles/CBMibkFVX3lxTE1nN3ZpMmNqd1F5bHFKVHJVcVBnbGIwXzFnTjU3aGFRdkdEYmQ2Q09Cb0hwcHNlWWFTSEpyWjNKVDBSNWxRMG94MnhxUFNzRmxQUnVyOHJjMGtBOUhMTVZ5MlZMR0dsdTlGaVB2c0l3?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [XREAL AURA XR glasses priced from $1,279, shipping later in 2026 - StreetInsider](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPN0tyU3UwZXpzbmMwbGVvT18wYjlSdzRpaHBLcXZMaE8wX2dXdi1KTHlZUnRONWJ2Wlp4bXRSMDdPVUI5N1pnTEhqRGkzMVFJM0ZaOVZsT0E0bzNla25MMGdvRUc5X3BNdTVYNDZhTk42dnpjeEJja0VWelFyVUM4TC00dkNqUWZKOVFud2xmbmVodkV3bnlkelAwLTVHUFNuRDI2cDBIS3VwLW5UblZaZDlJWlo1RGZYZ3lKeG44ODJvdUdJbHFsZA?oc=5) | reachable (200) | research_news_review |
@@ -256,8 +256,7 @@ Generated: `2026-10-07T19:54:15.808140+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses with Prescription \| Smart Glasses with Rx ...](https://eydology.com/collections/ai-smart-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AIグラスが外国人客に人気、100以上の言語に対応＝広東省深セン市 - Record China](https://news.google.com/rss/articles/CBMiXEFVX3lxTE4wUTE5STlmaE53ekN2UE5rdW1LRlVBczFaS2QtSmVhYU5TWHd4MHozeGlnV3dON0MteWwwU1ZveDJGU1g2TWhHTEZ6WFRjMWdmdFdOdEQzcGx3TE01?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Android Central 1h ago Xreal Aura official pricing revealed: Priority Deposit remains active as we look to the holidays Coverage Xreal](https://www.androidcentral.com/gaming/virtual-reality/xreal-aura-official-pricing-revealed-priority-deposit-remains-active-as-we-look-to-the-holidays) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Android XRグラス「XREAL AURA」、日本価格は22万9800円からと決定 - すまほん!!](https://news.google.com/rss/articles/CBMib0FVX3lxTE03SnlCOW1uU1FVYzMxNWt4OVNkeklQeGVkWnZZaFQ2MlBrLS10Z0V5bUtiSTZIQzJqcVR5V0VQUVBEdmZRMGJkNWtVVmUyWndsUThsU0EyeWtGaGVSMnVWSy1lSlVQakxuUlY5Z2tWSdIBb0FVX3lxTE03SnlCOW1uU1FVYzMxNWt4OVNkeklQeGVkWnZZaFQ2MlBrLS10Z0V5bUtiSTZIQzJqcVR5V0VQUVBEdmZRMGJkNWtVVmUyWndsUThsU0EyeWtGaGVSMnVWSy1lSlVQakxuUlY5Z2tWSQ?oc=5) | reachable (200) | research_news_review |
@@ -272,6 +271,7 @@ Generated: `2026-10-07T19:54:15.808140+00:00`
 | normal | needs_editorial_verification | direct | [Cumberland County Schools Tells Employees to Turn Off Smart Glasses - CityView NC](https://news.google.com/rss/articles/CBMipgFBVV95cUxPWE1Jd3JNVmthZy0wRjNaaUhIRzRqNWNPX0pNM0N1YUxNWURaMG9OM1M4cEZZbXhtTVBNSVFzc015WHp6SEFuNGZERkczdFpxSlNQZkdOY3ktTGV0RXRoV2tvOHM1MXdkNUlmbHYyQWVwOVctOHI2NTIyV2lhTU43SXlYTjNjaENDc1Jpb1M4dXZJQ0w0NWNtdDE5b1M0ckZXM1BiZGJB?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [El precio de las gafas XREAL AURA es de 1.279 o 1.499 dólares - Real o Virtual](https://news.google.com/rss/articles/CBMinAFBVV95cUxQSnJqS3RpMHF4SFo4QXdzTGE5Z0FEWjVUU3NXallfQVk4YkdlenJDQUJZWDFUOVVQQkRVSDNDT0pueldFMkIzQ3VIeVVpOV9vQmhpY3dqOU1iY0tyNDhZWldnWHZaVmJuRHJicDM0MndSTjdKQjNrUTJvVi1SOHZ1cU0wZDRUekdmRjNyazd1TnctM19fMDdrX2RuUFk?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Engadget 7h ago Xreal's Aura Android XR smartglasses will cost you at least $1,279 Coverage Xreal](https://www.engadget.com/2279737/xreals-aura-android-xr-smartglasses-will-cost-you-at-least-1279/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Even Realities' app 2.3.2 needs new firmware on both the G2 glasses and the R1 ring - mixed-news.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQZVZrWnFJeWlfVGlLdlVieE5CSzc2NnBxR1VuTTZUbG4xLW5tcUt1b0hNMnRNR3ktVm5WYnJqNnBjdlVxdE11LTROZ2x6ZEE2Zk5uSU1zZ0ZfZ29udS1OTzNYSEdRVzhuN01YNUdSTHZRWWdSa2dPSG11dWJfSTEtZnVpazBfdw?oc=5) | reachable (200) | research_news_review, development_hacking |
 
 ## Meaning of states
 
