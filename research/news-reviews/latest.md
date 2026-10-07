@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-07T06:33:31.768272+00:00`
+Generated: `2026-10-07T07:30:42.058226+00:00`
 
-- Intake files inspected: **273**
-- Candidates retained in this review window/history: **10674**
+- Intake files inspected: **275**
+- Candidates retained in this review window/history: **10759**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2347
+- `adjacent_radar`: 2356
 - `catalog_review`: 7
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 725
-- `rejected_noise`: 7469
+- `needs_editorial_verification`: 728
+- `rejected_noise`: 7542
 - `source_monitor`: 1
 - `source_review`: 38
 - `watching`: 83
@@ -144,6 +144,7 @@ Generated: `2026-10-07T06:33:31.768272+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.613](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.613) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.614](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.614) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.693](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.693) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.695](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.695) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta VR Glasses, VR/AR glasses weighing just 100g, have been released, featuring a micro-OLED display and supporting 5K resolution. - GIGAZI](https://news.google.com/rss/articles/CBMiakFVX3lxTE9DVUQxdDBmX181aHJKMXNqN1JnRlRoUjVCV1lCTzc3Zl93YmUzQ2xEMDVfSXlZUzd6aE9GbnRhWEw4aEt6S0NzQ19fN1hPU3RXWjRKSDM1Nk1tbFhYOEp0cHhBUS13ZVlwMVE?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -271,7 +272,6 @@ Generated: `2026-10-07T06:33:31.768272+00:00`
 | normal | needs_editorial_verification | direct | [Apple Unveils Under-Display iPhone Camera for the First Time While Ray-Ban Meta Smart Glasses Spark Privacy Concerns - inkorr.com](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSldXN2c2cFZPdDI3WVQ2emYtbTdVLU5tOFJ4bzIxT09Hc3E3R2pDc2lwLXRJVEdXRVFHVi1wNmtuQWtGTFY1Z3ZZdXNzOFlJN2xPeU9fMUNpLVp6OTZweEcwQVpBWXVucFBQTGV0LWoteUw3WkdLQUg5Mk5pMm1GYThISmg3a2l5VjIzenRLRlNlbk1ybklqZnFoMDFiejFZTWF2VzBLSnpNZmw0NWpiamtUekRNbVdFVGhIeHFNVzd0TFAzbkdVdGhVWnV0YzJSN1lRdnZVTW1vakJTdHZ30gHfAUFVX3lxTE1KV1c3ZzZwVk90MjdZVDZ6Zi1tN1UtTm04UnhvMjFPT0dzcTdHakNzaXAtdElUR1dFUUdWLXA2a25Ba0ZMVjVndll1c3M4WUk3bE95T18xQ2ktWno5NnB4RzBBWkFZdW5wUFBMZXQtai15TDdaR0tBSDkyTmkybUZhOEhKaDdraXlWMjN6dEtGU2VuTXJuSWpmcWgwMWJ6MVlNYXZXMEtKek1mbDQ1amJqa1R6RE1tV0VUaEh4cU1XN3RMUDNuR1V0aFVadXRjMlI3WVF2dlVNbW9qQlN0dnc?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Así son las primeras gafas inteligentes de Samsung con Gemini: llegarían en noviembre y no tendrán pantalla - 20Minutos](https://news.google.com/rss/articles/CBMi9AFBVV95cUxPRGZiSFNwUFJvVkVKdlZEZWNyTmZnOEJJemNYNTJENmZnMlU5Tzl0SkJGZVhMSlNZWjVGSU1vOElQZEkwbi04RHdwNmtnX2VHeU1EV3ZPTS1XcDVLdW5tWkI5dzcybkRYNEtUOUlZcTRTVDZYdlhJVTNBa1VmcUtqcmF4eXlfNE1VTWZ2VUN3bTNJMEx2TWNKWXpLU3JNV3pPVGxhcDZRWDBFUW96Uk1Ranl6MVYzdEFfWEhSMUZvUjRybml1ZUtmWUxLdjRUdXRDMGJ3SGFOUXNnVVZvNnhEelhBUkNab2MtTHZScHVrN0F6Qm02?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Auganix 21d ago ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Auganix 23h ago Cellid Partners With Japanese Eyewear Retailer Megane Top to Commercialize AR Glasses Coverage Cellid](https://www.auganix.org/ar-news-cellid-megane-top-ar-glasses-partnership/) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
