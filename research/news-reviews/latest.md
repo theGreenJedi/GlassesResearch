@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-07T10:37:39.805429+00:00`
+Generated: `2026-10-07T10:38:39.543750+00:00`
 
 - Intake files inspected: **275**
 - Candidates retained in this review window/history: **10752**
@@ -12,10 +12,10 @@ Generated: `2026-10-07T10:37:39.805429+00:00`
 - `catalog_review`: 7
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 723
+- `needs_editorial_verification`: 721
 - `rejected_noise`: 7542
 - `source_monitor`: 1
-- `source_review`: 36
+- `source_review`: 38
 - `watching`: 83
 
 ## Action queue
@@ -264,6 +264,7 @@ Generated: `2026-10-07T10:37:39.805429+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경부터 몰입형 체험까지...中 광둥, 국경절 문화관광 '새단장'-Xinhua - 신화망](https://news.google.com/rss/articles/CBMidkFVX3lxTFBXS0tyS0d5dnZHRXFleGgtLUE0QkhmVW9oT0NZYXFDbHhfUkZ0Q3VxRzd0ZzYzZl9QSlg0TGducVg4SHNMb0NDWi1MQmVNcEJ1azRhZ1o0UVM3d3VYTXQ1YW40UXVhY2paQU5TSTRxNEhRaFZBYkE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AIグラス、中国・深圳で外国人客に人気 100以上の言語に対応 - UQライフ](https://news.google.com/rss/articles/CBMigAFBVV95cUxOOFlZTXZ4MmdrOXpBcUpHc0tPQ2tjamxOdmhucC1DLW5TTFVyWmtPaEFSQzhQTVhtX2R6NDJCU2RtcFJwTkpjSzJGc2xtUVFyRzVad181amJrdFlLanNmbzk0WVF3RWNrV1lHYVpTbklvT3poUm9NVjBtNHplS2YtRg?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Analizan prohibir gafas inteligentes por riesgos a la privacidad - Periodismo digital](https://news.google.com/rss/articles/CBMinAFBVV95cUxNZ2RTZTVqd1JpTU5fOXFFOU1mWkF2NEw0dTlIcm9tbFY1UVdRdlhsMUN3ODNxVmlZSFpGUWxFWnBYcElkb3hBSXUxV1MwYzVkbnFOUkptbmtyMFlKc2RkN1BpVERHeXlWeFJ2blRjQlkzSkQ2cllhOGhzVGdJWkJSbS1BdGxaVks2MGlzci1BRVpydVlqUGN0ZU5fMnk?oc=5) | reachable (200) | research_news_review |
@@ -271,7 +272,6 @@ Generated: `2026-10-07T10:37:39.805429+00:00`
 | normal | needs_editorial_verification | direct | [Análise: DT H03, óculos inteligentes com câmara e IA low cost - Pplware](https://news.google.com/rss/articles/CBMiekFVX3lxTE5ZU2NkZnJ3a21pZ3JNOVEyQzgtSmNTYkVnb0szNjFnY2FSOE1palRacFlQWHpiZjl4OG83Y3RFWnRWc3RJc1lHVVI3bU9IVnhJTVh2T3FFSDRVeEo2ai1XaTNCUFZLWG9GN0VYZ2ZBZEwyWFNvLS04UGFn0gF_QVVfeXFMUHVQYUFwNFpGQTFrbE1NZ2N2RDRmR2x6OEc4NGF1MGctUzlLQmRpS0tTSDE4QURWZk15d0JBQlZWYV9pblhCQkRkbWZWUmlXRHlCRnk2bXE5b3BtdTgwZlg2cl9reUFqWnBiTUx4LXRobkRIcFlQT2xWQ2h3YzBkTQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Así son las primeras gafas inteligentes de Samsung con Gemini: llegarían en noviembre y no tendrán pantalla - 20Minutos](https://news.google.com/rss/articles/CBMi9AFBVV95cUxPRGZiSFNwUFJvVkVKdlZEZWNyTmZnOEJJemNYNTJENmZnMlU5Tzl0SkJGZVhMSlNZWjVGSU1vOElQZEkwbi04RHdwNmtnX2VHeU1EV3ZPTS1XcDVLdW5tWkI5dzcybkRYNEtUOUlZcTRTVDZYdlhJVTNBa1VmcUtqcmF4eXlfNE1VTWZ2VUN3bTNJMEx2TWNKWXpLU3JNV3pPVGxhcDZRWDBFUW96Uk1Ranl6MVYzdEFfWEhSMUZvUjRybml1ZUtmWUxLdjRUdXRDMGJ3SGFOUXNnVVZvNnhEelhBUkNab2MtTHZScHVrN0F6Qm02?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Auganix 21d ago ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Auganix 23h ago Cellid Partners With Japanese Eyewear Retailer Megane Top to Commercialize AR Glasses Coverage Cellid](https://www.auganix.org/ar-news-cellid-megane-top-ar-glasses-partnership/) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
