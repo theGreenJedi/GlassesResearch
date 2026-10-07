@@ -4,6 +4,7 @@ description: "Verified procedural record: Alvarez v. Meta Platforms challenges a
 
 # Meta faces biometric lawsuit over alleged NameTag training data
 
+**Published:** October 6, 2026  
 **Event date:** September 4, 2026  
 **Status:** Verified procedural fact; underlying biometric and training claims remain allegations
 
