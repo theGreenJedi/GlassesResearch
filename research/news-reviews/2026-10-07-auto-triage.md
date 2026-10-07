@@ -1,22 +1,22 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-07T14:00:11.208944+00:00`
+Generated: `2026-10-07T15:39:05.575461+00:00`
 
-- Intake files inspected: **273**
-- Candidates retained in this review window/history: **10697**
+- Intake files inspected: **275**
+- Candidates retained in this review window/history: **10781**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2354
+- `adjacent_radar`: 2386
 - `catalog_review`: 6
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 714
-- `rejected_noise`: 7501
+- `needs_editorial_verification`: 717
+- `rejected_noise`: 7545
 - `source_monitor`: 1
-- `source_review`: 38
-- `watching`: 79
+- `source_review`: 42
+- `watching`: 80
 
 ## Action queue
 
@@ -144,6 +144,7 @@ Generated: `2026-10-07T14:00:11.208944+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.693](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.693) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.695](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.695) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.696](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.696) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.698](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.698) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Meta VR Glasses, VR/AR glasses weighing just 100g, have been released, featuring a micro-OLED display and supporting 5K resolution. - GIGAZI](https://news.google.com/rss/articles/CBMiakFVX3lxTE9DVUQxdDBmX181aHJKMXNqN1JnRlRoUjVCV1lCTzc3Zl93YmUzQ2xEMDVfSXlZUzd6aE9GbnRhWEw4aEt6S0NzQ19fN1hPU3RXWjRKSDM1Nk1tbFhYOEp0cHhBUS13ZVlwMVE?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -180,8 +181,6 @@ Generated: `2026-10-07T14:00:11.208944+00:00`
 | high | needs_editorial_verification | direct | [Vuzix Announces Shrike Waveguide Display Platform for Defense, Security and First Responder Applications - auganix.org](https://news.google.com/rss/articles/CBMie0FVX3lxTE5FdkR2cWwzRFZrVTF3dGo4SnljcUN4RVZFMmdrRXRwckdkVUU0VmFEVEZSNEtScU05VnU5UFJRM2hkZExmbHBiNVJYT3NEbVVkd3E5RlhCN1g3cGQ5R2NyRWJLUmVrb1NYQUVmMGFNbDVBTFQ3azdHU256SQ?oc=5) | reachable (200) | research_news_review, development_hacking, research_optics |
 | high | needs_editorial_verification | direct | [Vuzix launches Shrike, a customizable waveguide display for defense and security wearables. - pluang.com](https://news.google.com/rss/articles/CBMimgFBVV95cUxPMlFCYWZ2eUNsd1lZdTV2OWtma0xTbnBBSF9qaU5JQXJqV2JYR1B5WjJfT01IMEZEc3NtV2tsb0ZHUzRwUWRGRlJ5eldrajZWSjV0N0NYSWJ3NlltbXdta3Z4aG1vVVN1MHZkTmhveFRxc0l4Qk92bHhYUHpueWs2VnFhTVBrRUJQNWJIZnpSOEp6V1BBbFk2ZkxB?oc=5) | reachable (200) | research_news_review, research_optics |
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Android Authority 15d ago These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Android Authority 22h ago XREAL xbx a01 Plus AR Glasses drop to $254 in first discount since launch Coverage Xreal](https://www.androidauthority.com/xreal-xbx-a01-plus-ar-glasses-deals-3719395/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Apple said to delay smart glasses launch after Meta backlash - Mashable](https://news.google.com/rss/articles/CBMidEFVX3lxTFAzODlmSld2el9xcHg1STB1bU8zYW9aa2EyVVVEZHE5V08zX0g3azN5UzZjdjBzbnBaZEl5Y1dVak1wME5RU1puaG5yOXIxSjc4S2ZuV041UUdWaF9Ba1pzcXU1LTI4UXpQTkp6N1NMM1dIdGI0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Auganix 6h ago ENGO Launches engo Titanium, 28.9-Gram AR Smart Glasses for Runners and Cyclists Coverage Industry](https://www.auganix.org/ar-news-engo-titanium-smart-glasses/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Australia probes app used in cheap smart glasses over privacy fears - The Economic Times](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQR3dTZWI5enBtVmNWMjNvMUUxbmFYQmpMSlVPWjBfOERmTWxVZ2xWcmluWGpnRlJINFQ1NzJZdkFuY051MTJ6YV96NDhOVUtLS1ZfeHhOenJtZWN4Qkp0NThCTENIbDJReWxzaFN6UTN6N0k1bGNtOENzdFFOeWFoaWpuSDk4a2pqM3dNT3A1b0xPSVBkZlFqNmZHcHl4X191MWNWUWdvRjJxTllRRlV1cTUtSkFOUFhvdkRDSlRSQ3YybGM1dTBmeTBCandxRVd5UFQw0gHYAUFVX3lxTFBTblhoT2xCY1BzZWg5TmVZRGhjQXBBNGlQSFdYMUtNSjZKdXk1VFl3bUxSX0wxQk5YaERnRVU0dk9YX3Z4aC1qUmlTT3gteHNkRXN6VzVzQ0ZXR1pLWWJPMXd3WUk3a015Vmw5dEU0NGN0Q1p5QW5xZ28wQmJrbnFwbDBCal9iV3hUVG9uOEwyUmtsUzlCVkh2RUVYRm5kMl8zUHFIcHFrSGpoZkFWbWtRWmM2Z2VkRGxDU0ZscEhtR3hJRnBPc2xJWU8xZVFKTEpTMEk2bDlZbQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -266,12 +265,13 @@ Generated: `2026-10-07T14:00:11.208944+00:00`
 | normal | needs_editorial_verification | direct | [AI眼镜出海、5G/VR业务推进 宏达电9月营收创17个月新高 - DIGITIMES](https://news.google.com/rss/articles/CBMinAFBVV95cUxOVmdReW5TZ1pTTlF0S2pWWnN6VnNIUkFrNnRZUmtlb2ZRR3FPa3VjbjhiaTQ1SnhPQnVFVWFTN3hfaFY0aWtFRGV5ai1aTHVBQUQ1dkcxeHBjeVhRa24zSjdwTTd6RHNqUXlVWWpuSzJHRlJHZXFTWno0MDNiS1hBaGRfeUk5LU1VRFE0VEh3cnFrTnRjTFd1SjAxQ24?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
-| normal | needs_editorial_verification | direct | [Android Authority 1d ago Your Meta glasses just got better at telling you where to go without pulling out your phone Coverage Meta](https://www.androidauthority.com/meta-glasses-navigation-audio-update-3719444/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Aston University trials smart glasses for continuous eye-health monitoring - The Engineer](https://news.google.com/rss/articles/CBMilAFBVV95cUxNa1pIdHAtOUNpTVRfbS12d2dmMlpsaGR0QzFPY0RjaS1YMTFMWWV1bjlRZFVYbFlQTk9iTm9XQ3RQdC1uZmh3eUs5cm9lWjFHTjZXaU1aSEtMcnFDakE3U09ZMHhia0NVZkxiR2lUM0RYYXRwVVBZSng1YTY3UnZxRlpoT1hPelBpbkkxTEZXcnlselM4?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [At $1,279, Google’s Xreal Aura will go head-to-head with Meta’s VR Glasses - The Verge](https://news.google.com/rss/articles/CBMilgFBVV95cUxQWEdYQWU0RDAxRmkxUlRyR2lZbGZPdURZbmJDT2pHaHY0TTcyejFXN2o5WG9OTmM4cDVMSEJURlNWN1NqdjJ6SzZyMzZLZjJ2QklWNDlLZ3dxUGxuVnV5TE1VV0szUE9vUXhFZTg4Z2ZJZWtqZlBsWnVNMTBJTmNuUUVxWEJ4RFQ0eldkek5vNERLUFZ5WlE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Auganix 1d ago Cellid Partners With Japanese Eyewear Retailer Megane Top to Commercialize AR Glasses Coverage Cellid](https://www.auganix.org/ar-news-cellid-megane-top-ar-glasses-partnership/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Auganix 22d ago ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Austrália abre inquérito sobre utilização de dados recolhidos por óculos inteligentes - Jornal de Notícias](https://news.google.com/rss/articles/CBMitwFBVV95cUxQLXV2ZFJIOGhtQjJWeWhUcGxwNExOQUhwanpRTnREX0RFTFFlM3NXa3o3VUE5LWswUkJvV2EtWTJVWC1peF9ZY2d3YmdNLW1yelpybDg4UEJrOGktcWlLTzNwb2pWd0ZxVWJpbnFHM0hkaE5ULUZVSTJUeXptMFZBcmtSVHEtbjRwOXFuTEd1NkZlS1Rrc3M0VlJZd1BET2ZtcHU0Wi1QY1RNUnFnNW1pZTFHVDFIS2vSAbcBQVVfeXFMUC11dmRSSDhobUIyVnloVHBscDRMTkFIcGp6UU50RF9ERUxRZTNzV2t6N1VBOS1rMFJCb1dhLVkyVVgtaXhfWWNnd2JnTS1tcnpacmw4OFBCazhpLXFpS08zcG9qVndGcVViaW5xRzNIZGhOVC1GVUkyVHl6bTBWQXJrUlRxLW40cDlxbkxHdTZGZUtUa3NzNFZSWXdQRE9mbXB1NFotUGNUTVJxZzVtaWUxR1QxSEtr?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses Compared: Side-by-Side Review (2026)](https://smartglasses.computer/blog/best-smart-glasses-compared-2026) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best XR/AR smart glasses Prime Big Deal Day 2026 deals: Viture, Xreal, and more - Sportskeeda Tech](https://news.google.com/rss/articles/CBMisAFBVV95cUxOWTRxU2hCbnN1T0pEMHhQc1BhRk5iaTF2NUU5LU1McXJEV1VmdE9mYnEtUFBmZlBFZmFBbFlVWXA2TllRQ3ZGa2E4Qm5LT2ZUWXM2b0NGSGx5UXdIdkVORXFPZzFRSlpSN29sVGREMElNdVB1S3REendBQzA4bU9hSnA3T0Fpd1d5bTdGNW1jOHlpanVhRWVUV29ScE95VE5mbXN1MEdkbE42X1Rsd2lJUw?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
