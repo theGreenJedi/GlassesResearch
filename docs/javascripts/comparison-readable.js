@@ -56,11 +56,13 @@
     const options=()=>records.map(r=>`<option value="${esc(r.id)}">${esc(r.maker)} ${esc(r.model)}</option>`).join(''); a.innerHTML=options(); b.innerHTML=options(); if(records[1]) b.value=records[1].id;
 
     const cell=(r,f,derive)=> derive ? derive(r) : fmt(val(r,f));
+    const modelHref=(r)=>r.public?.model_page || `/models/catalog/${String(r.id||'').toLowerCase()}/`;
+    const modelLink=(r)=>`<a class="gr-model-link" href="${esc(modelHref(r))}">${esc(r.maker)} ${esc(r.model)}<small>${esc(r.id)}</small></a>`;
     const quick=()=>{
       const query=q.value.trim().toLowerCase(); const rows=records.filter(r=>(active==='All'||category(r)===active)&&(!query||`${r.maker} ${r.model}`.toLowerCase().includes(query))).slice(0,50);
-      out.innerHTML=`<div class="gr-table-wrap"><table class="gr-quick-table"><thead><tr><th>Model</th>${quickFields.map(x=>`<th>${x[1]}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr><th>${esc(r.maker)} ${esc(r.model)}<small>${esc(r.id)}</small></th>${quickFields.map(([f,l,d])=>`<td>${esc(cell(r,f,d))}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="gr-result-count">Showing ${rows.length} of ${records.filter(r=>active==='All'||category(r)===active).length} in this view.</p>`;
+      out.innerHTML=`<div class="gr-table-wrap"><table class="gr-quick-table"><thead><tr><th>Model</th>${quickFields.map(x=>`<th>${x[1]}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr><th>${modelLink(r)}</th>${quickFields.map(([f,l,d])=>`<td>${esc(cell(r,f,d))}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="gr-result-count">Showing ${rows.length} of ${records.filter(r=>active==='All'||category(r)===active).length} in this view.</p>`;
     };
-    const table=(selected,fields)=>`<div class="gr-table-wrap"><table><thead><tr><th>What matters</th>${selected.map(r=>`<th>${esc(r.maker)} ${esc(r.model)}</th>`).join('')}</tr></thead><tbody>${fields.map(([f,l])=>`<tr><th>${esc(l)}</th>${selected.map(r=>`<td>${esc(fmt(val(r,f)))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+    const table=(selected,fields)=>`<div class="gr-table-wrap"><table><thead><tr><th>What matters</th>${selected.map(r=>`<th><a class="gr-model-link" href="${esc(modelHref(r))}">${esc(r.maker)} ${esc(r.model)}</a></th>`).join('')}</tr></thead><tbody>${fields.map(([f,l])=>`<tr><th>${esc(l)}</th>${selected.map(r=>`<td>${esc(fmt(val(r,f)))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
     const focus=()=>{
       const selected=[a.value,b.value].map(id=>records.find(r=>r.id===id)).filter(Boolean); if(selected.length<2)return;
       const shared=category(selected[0])===category(selected[1])?category(selected[0]):'mixed categories';
