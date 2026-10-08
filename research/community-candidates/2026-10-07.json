@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "discovered_utc": "2026-10-08T02:46:23+00:00",
+  "source_run": "public-community-scour",
+  "candidates": [
+    {
+      "id": "COMM-20261007-OAIC-HEYCYAN",
+      "title": "Australian privacy regulator opens formal HeyCyan app investigation",
+      "summary": "On October 7 the OAIC announced a formal investigation of Shenzhen Qingcheng Future Technology, maker of the HeyCyan app used by Anko and other rebranded glasses. The OAIC says the vendor did not respond to its preliminary data-handling inquiries. Investigation is not a finding of violation; do not infer identical data flows for every HeyCyan-compatible model.",
+      "url": "https://www.oaic.gov.au/news/media-centre/oaic-opens-investigation-into-maker-of-heycyan-smart-glasses-phone-app",
+      "source": "regulator",
+      "evidence_class": "documentary",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "direct",
+      "content_types": [
+        "privacy",
+        "regulatory",
+        "app-ecosystem",
+        "vendor-aliases"
+      ],
+      "routing_targets": [
+        "privacy/policy",
+        "Research & News",
+        "HeyCyan/W610 ecosystem"
+      ],
+      "triage_priority": "critical",
+      "materiality_score": 98
+    },
+    {
+      "id": "COMM-20261007-XREAL-AURA-PRICE",
+      "title": "XREAL AURA opens paid full-payment preorder with $1,279 base price",
+      "summary": "On October 7 XREAL staff announced AURA 12GB/256GB for $1,279 and 16GB/512GB for $1,499. The official US store confirms full-payment preorders for existing AURA Pass holders, Android XR spatial computing with companion compute puck, and expected shipping before the holidays in initial regions. Do not mark as shipping/available inventory yet; it is not a simple virtual-monitor-only product.",
+      "url": "https://us.shop.xreal.com/products/xreal-aura",
+      "source": "manufacturer",
+      "evidence_class": "manufacturer_primary",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "direct",
+      "content_types": [
+        "pricing",
+        "lifecycle",
+        "spatial-computing",
+        "Android-XR"
+      ],
+      "routing_targets": [
+        "model lifecycle",
+        "Research & News"
+      ],
+      "triage_priority": "high",
+      "materiality_score": 90
+    },
+    {
+      "id": "COMM-20261007-MENTRA-PRIVATE-CLOUD",
+      "title": "MentraOS adds version-verified Private Cloud bootstrap",
+      "summary": "October 7 MentraOS commit publishes a stable Private Cloud installer channel and a bootstrap that verifies SHA-256, pins versioned packages, and avoids silently switching an existing deployment. The documented reference deployment uses Azure; private-cloud is not equivalent to offline/local execution. Treat this as a code-published capability, not a deployment tested by GlassesResearch.",
+      "url": "https://github.com/Mentra-Community/MentraOS/commit/801ee044144fe964eaa24e8b7c3b1326458c931b",
+      "source": "github",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "direct",
+      "content_types": [
+        "software",
+        "owner-control",
+        "private-cloud",
+        "supply-chain"
+      ],
+      "routing_targets": [
+        "development/hacking",
+        "cloud independence",
+        "owner control"
+      ],
+      "triage_priority": "high",
+      "materiality_score": 91
+    },
+    {
+      "id": "COMM-20261007-FACECLAW-EVENHUB",
+      "title": "Faceclaw expands third-party Even G2 EvenHub compatibility",
+      "summary": "October 7 Faceclaw code adds EvenHub fonts, per-window icons, touch-start and gesture source extensions, plus live glasses status. This is a community implementation and may improve independent G2 application control; compatibility and hardware behavior remain unverified by GlassesResearch.",
+      "url": "https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5",
+      "source": "github",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "direct",
+      "content_types": [
+        "software",
+        "SDK",
+        "owner-control",
+        "Even-G2"
+      ],
+      "routing_targets": [
+        "development/hacking",
+        "community research",
+        "owner control"
+      ],
+      "triage_priority": "high",
+      "materiality_score": 89
+    },
+    {
+      "id": "COMM-20261007-OPENG-REGIONS",
+      "title": "OpenGlasses/Avenkin documents EU feature restrictions and availability",
+      "summary": "October 7 OpenGlasses upstream adds EU/EEA availability and AI Act notes, including its stated December 2 2027 cutoff for face-recognition features in EU/EEA App Store regions and exclusions for some camera triage functions. Preserve as project-declared policy, not independent compliance certification or endorsement of face identification.",
+      "url": "https://github.com/straff2002/OpenGlasses/commit/38a8ed5f83222f6f9662706b30caa25b22c65a09",
+      "source": "github",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "direct",
+      "content_types": [
+        "software",
+        "privacy",
+        "policy",
+        "regional-availability"
+      ],
+      "routing_targets": [
+        "development/hacking",
+        "privacy/policy"
+      ],
+      "triage_priority": "medium",
+      "materiality_score": 77
+    },
+    {
+      "id": "COMM-20261007-RAYNEO-GT-USB",
+      "title": "RayNeo GT firmware reportedly breaks third-party 3DoF tools",
+      "summary": "October 6 user report (surfaced October 7) says September 22 firmware changed USB descriptor/interface mapping and broke VertoXR, Decky XR Gaming and AirPin integrations while IMU streaming persists. Community-reported, not independently replicated. GT virtual-screen branch is out of the main GlassesResearch model scope; retain as peripheral developer compatibility signal only.",
+      "url": "https://www.reddit.com/r/RayNeo/comments/1wzcua4/warning_new_gt_series_fw_update_22_sept_2026/",
+      "source": "reddit",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "relationship": "adjacent",
+      "content_types": [
+        "firmware",
+        "compatibility",
+        "owner-control",
+        "out-of-scope-monitor"
+      ],
+      "routing_targets": [
+        "development/hacking",
+        "community research"
+      ],
+      "triage_priority": "medium",
+      "materiality_score": 80
+    },
+    {
+      "id": "COMM-20261007-GARMIN-VANGUARD",
+      "title": "Garmin user reports Oakley Meta Vanguard audio integration regression",
+      "summary": "October 7 Garmin Connect IQ bug report says Garmin Connect no longer appears as a Meta AI app connection and audio workout prompts stopped reaching Oakley Meta Vanguard around September 30/October 1. Single-user report under review, not confirmed platform-wide regression.",
+      "url": "https://forums.garmin.com/developer/connect-iq/i/bug-reports/garmin-connect-no-longer-works-with-meta-ai-on-oakley-meta-vanguard",
+      "source": "specialist_forum",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "relationship": "direct",
+      "content_types": [
+        "software",
+        "interoperability",
+        "wearable-integration"
+      ],
+      "routing_targets": [
+        "community research",
+        "Research & News"
+      ],
+      "triage_priority": "medium",
+      "materiality_score": 78
+    },
+    {
+      "id": "COMM-20261007-TRACKER-91",
+      "title": "Community smart-glasses tracker grows to 91 devices and 25 comparison fields",
+      "summary": "October 7 r/augmentedreality post says an independent 91-device, 25-field tracker added seven glasses. Cross-check against GlassesResearch canonical 248-model ledger for identity/alias gaps and useful fields, without treating the spreadsheet or counts as independently verified.",
+      "url": "https://www.reddit.com/r/augmentedreality/comments/1wzsc8m/smartglasses_tracker_updated_91_glasses_x_25/",
+      "source": "reddit",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "relationship": "direct",
+      "content_types": [
+        "catalog",
+        "comparison",
+        "community-resource"
+      ],
+      "routing_targets": [
+        "community research",
+        "model discovery"
+      ],
+      "triage_priority": "medium",
+      "materiality_score": 76
+    }
+  ]
+}
