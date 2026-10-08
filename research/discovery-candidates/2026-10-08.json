@@ -1,42 +1,46 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-08T00:04:47.803576+00:00",
-  "candidate_count": 77,
-  "classifier_irrelevant_count": 64,
+  "discovered_utc": "2026-10-08T02:03:40.685203+00:00",
+  "candidate_count": 97,
+  "classifier_irrelevant_count": 75,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 13,
-    "broad_web": 54,
+    "adjacent": 22,
+    "broad_web": 65,
     "community": 1,
-    "developer": 11,
-    "research": 3,
-    "retail": 1
+    "developer": 12,
+    "research": 3
   },
   "relationship_counts": {
     "direct": 1,
     "enabling": 0,
-    "adjacent": 12,
+    "adjacent": 21,
     "speculative": 0,
-    "irrelevant": 64
+    "irrelevant": 75
   },
   "type_counts": {
     "model": 5,
     "review": 1,
-    "news": 50,
+    "video": 3,
+    "news": 48,
     "research": 2,
-    "tool": 15,
-    "sdk": 14,
-    "retail": 6,
-    "teardown": 1,
-    "community": 4
+    "tool": 19,
+    "sdk": 12,
+    "optics": 1,
+    "policy": 3,
+    "retail": 5,
+    "community": 19
   },
   "routing_counts": {
-    "adjacent_radar": 12,
+    "adjacent_radar": 21,
     "community_evidence_review": 1,
-    "reject_noise": 64,
+    "development_hacking": 3,
+    "model_catalog_review": 2,
+    "reject_noise": 75,
     "report_card_evidence": 1,
-    "research_news_review": 13,
-    "retail_rebrand_review": 1
+    "research_news_review": 22,
+    "research_optics": 1,
+    "retail_rebrand_review": 3
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -47,50 +51,120 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [
-    {
-      "channel": "manufacturer_catalog",
-      "url": "https://www.everysight.com/",
-      "error": "HTTP Error 500: Internal Server Error"
-    }
-  ],
+  "collector_errors": [],
   "candidates": [
     {
-      "id": "ef44d09890336099",
-      "title": "Smart Glasses - Reddit",
-      "url": "https://www.reddit.com/r/SmartGlasses/",
-      "summary": "r/SmartGlasses: Track the evolution of Smart Glasses and supporting wearable computing devices and software.",
+      "id": "a2fad5ca53158380",
+      "title": "XREAL AURA Starts at $1,279, Bringing Wired XR Glasses with Android XR ...",
+      "url": "https://markets.ft.com/data/announce/detail?dockey=600-202610070800PR_NEWS_USPRX____NY65455-1",
+      "summary": "XREAL AURA is coming soon and combines XREAL optics, Android XR, Gemini and Snapdragon Reality Elite for comfortable, high-powered spatial computing glasses – and there's even more coming soon SUNNYVALE, Calif. , Oct. 7, 2026 /PRNewswire/ -- XREAL, the global leader in lightweight XR glasses, today announced that XREAL AURA will be priced starting at $1,279 USD, with pre-orders now open ...",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "XREAL AURA",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "announced"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "direct",
       "content_types": [
-        "community"
+        "model",
+        "optics"
       ],
-      "primary_type": "community",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review"
+        "model_catalog_review",
+        "research_optics"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses, smartglasses",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1a6b4519dc233d5e",
-      "title": "Odenville AL Real Estate & Homes For Sale - Zillow",
-      "url": "https://www.zillow.com/odenville-al/",
-      "summary": "Zillow has 121 homes for sale in Odenville AL. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "id": "b10e8148a46a7e97",
+      "title": "GPT-API-free / DeepSeek-API-free - GitHub",
+      "url": "https://github.com/chatanywhere/GPT_API_free?tab=readme-ov-file",
+      "summary": "️ 免费API Key gpt-5系列模型的推理能力较弱，若需要更强的推理能力，可以购买付费API ️ 免费API Key仅可用于个人非商业用途，教育，非营利性科研工作中。 免费API Key严禁商用，严禁大规模训练商用模型！",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "api",
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a20585c622e7c7b1",
+      "title": "Changing the AI model for GitHub Copilot Chat",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/change-the-chat-model",
+      "summary": "In the popup menu, click Open Chat. In the bottom right of the chat panel, click the currently selected AI model, then select an alternative model from the popup menu. If you select Auto, Copilot auto model selection will select the best model based on availability and to help reduce rate limiting. See About Copilot auto model selection.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "tool"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ba1d66d6f927aa14",
+      "title": "Vancouver WA Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/vancouver-wa/",
+      "summary": "Zillow has 1587 homes for sale in Vancouver WA. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -123,12 +197,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4b9681cade84a2b8",
-      "title": "BKCM Music Therapy Institute - Brooklyn Conservatory of Music",
-      "url": "https://bkcm.org/music-therapy/",
-      "summary": "In music therapy, the developmental, emotional, psychological and social needs of children and adults are addressed through active music-making in a relationship with a music therapist.",
+      "id": "f04c1faba5e32458",
+      "title": "Car Dealership in Vancouver, Wa | New & Used Cars for Sale",
+      "url": "https://www.vancouvertoyota.com/",
+      "summary": "Located right in Vancouver, WA, our family-owned dealership is dedicated to providing an exceptional automotive buying and ownership experience. Whether you're shopping for a brand-new vehicle or scheduling expert service, our knowledgeable team delivers personalized attention every step of the way.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -141,472 +215,29 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4a9c9b9a9e28b1f2",
-      "title": "Find a Music Therapy Therapist - Psychology Today",
-      "url": "https://www.psychologytoday.com/us/therapists?category=music-therapy",
-      "summary": "Browse our extensive directory of the best Music Therapy, Music Therapy Psychologists and Music Therapy Counselors near you.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "43360f4180e0541c",
-      "title": "Find Music Therapy Services Near You | Find Music Therapy",
-      "url": "https://findmusictherapy.com/",
-      "summary": "Find board-certified music therapists and practices by location, setting, and area of focus. Browse reviewed listings at FindMusicTherapy.com.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "09a890645ea85fcf",
-      "title": "How to Find a Music Therapist | American Music Therapy Association (AMTA)",
-      "url": "https://www.musictherapy.org/about/find/",
-      "summary": "Music Therapy is the clinical and evidence-based use of music interventions to accomplish individualized goals within a therapeutic relationship by a credentialed professional who has completed an approved music therapy degree program.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8306f415ee6e11d6",
-      "title": "Music therapy - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Music_therapy",
-      "summary": "Music therapists are generally trained musicians who have completed an accredited music therapy program. Although established as a profession only relatively recently, the connection between music and therapy is not new. [2]",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e17541a14322d26",
-      "title": "Music Therapy in New York - Psychology Today",
-      "url": "https://www.psychologytoday.com/us/therapists/new-york?category=music-therapy",
-      "summary": "As a Creative Arts Therapist, Music Therapist, and Credentialed Alcohol & Substance Abuse Counselor, I offer talk therapy with the option of using creative arts tools to assist you in your...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b7379a6b11eace80",
-      "title": "Music Therapy, Psychotherapy | Missy Fogarty LCAT | New York, NY",
-      "url": "https://www.missymusictherapist.com/",
-      "summary": "I am passionate about helping people feel better and improve their lives through music psychotherapy. I am a licensed creative arts therapist and board-certified music therapist.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6cdf138558e3b76b",
-      "title": "Music Therapy: Types & Benefits - Cleveland Clinic",
-      "url": "https://my.clevelandclinic.org/health/treatments/8817-music-therapy",
-      "summary": "Music therapy is a healthcare profession in which a qualified music therapist designs your sessions with specific, individualized goals in mind. Therapeutic music is a method for relaxing you or lifting your emotions in times of need.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f135db9c631bc4fa",
-      "title": "The Best Fitness Trackers, Smart Rings & Wearables 2026 ...",
-      "url": "https://athletechnews.com/best-fitness-trackers-smart-watches-rings/",
-      "summary": "We've rounded up the best health and fitness trackers and wearables for every type of person and activity, from watches to rings & more.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2a0359731b1d77cd",
-      "title": "What Does a Music Therapist Do? (Jobs, Salary, Degree, & More)",
-      "url": "https://ledgernote.com/columns/careers-marketing/music-therapist/",
-      "summary": "Ready to learn more about music therapy, including how to become a music therapist and what degree you need to make it happen? Read on for those details and more.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3472c77432505a2e",
-      "title": "What is Music Therapy? | What is Music Therapy? | American Music ...",
-      "url": "https://www.musictherapy.org/about/musictherapy/",
-      "summary": "Music Therapy is the clinical & evidence-based use of music interventions to accomplish individualized goals within a therapeutic relationship by a credentialed professional who has completed an approved music therapy program.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "37f3532243084bee",
-      "title": "View All Women Shoes Collection | Merrell US Footwear",
-      "url": "https://www.merrell.com/US/en/women-footwear/",
-      "summary": "Discover the latest Merrell shoes women collection. Shop now and enjoy free shipping on all orders.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "610f07b853cffec3",
-      "title": "Women's Merrell Shoes - DSW",
-      "url": "https://www.dsw.com/brands/womens/merrell/shoes",
-      "summary": "Shop Women's Merrell Shoes at DSW. Free shipping, convenient returns and extra perks for VIPs. See what's new from Merrell on DSW.com today!",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e8603e951f88b42b",
-      "title": "Women's Merrell Shoes - Nordstrom Rack",
-      "url": "https://www.nordstromrack.com/shop/women/shoes?filterByBrand=merrell",
-      "summary": "Browse our collection of Women's Merrell Shoes with up to 70% off your favorite brands and get free shipping on most orders over $89.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "66769fd3cf3c7827",
-      "title": "Amazon.com: Merrell Women Shoes",
-      "url": "https://www.amazon.com/merrell-women-shoes/s?k=merrell+women+shoes",
-      "summary": "Browse Merrell women's shoes in various styles including waterproof hiking boots, trail runners, and comfortable slip-ons for any occasion.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
         "retail"
       ],
-      "primary_type": "tool",
+      "primary_type": "retail",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "930871fc18bfc908",
-      "title": "Amazon.com: Merrell+shoes+for+women",
-      "url": "https://www.amazon.com/merrell-shoes-women/s?k=merrell%2Bshoes%2Bfor%2Bwomen",
-      "summary": "Price and other details may vary based on product size and color. Results from the web. Prices may differ.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "467a5a618edb5934",
+      "title": "Chocolate chips conversion to baker's chocolate square?",
+      "url": "https://www.answers.com/food-ec/Chocolate_chips_conversion_to_baker%27s_chocolate_square",
+      "summary": "1 ounce (1 square) unsweetened Baking Chocolate is equal to 3 ounces or ½ cup of semi sweet Chocolate Chips. You can substitute it in recipes by decreasing the shortening by 1 tablespoon and ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -614,109 +245,541 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk",
-        "retail"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1c8929109b8a09e1",
-      "title": "api.twitter.com",
-      "url": "https://api.twitter.com/cdn-cgi/trace",
-      "summary": "fl=1025f112 h=api.twitter.com ip=52.167.144.150 ts=1791397099.000 visit_scheme=https uag=Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0 ...",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "id": "90cd006fdd9b5f32",
+      "title": "Cities near Vancouver (Washington)",
+      "url": "https://citiesnear.com/Vancouver-WA",
+      "summary": "Planning a short road trip to a new destination that's within driving distance for the weekend? Try adjusting the number of miles, results will vary depending on the distance or time. Find destinations nearby to plan a road trip from Vancouver (Washington).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "api"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "sdk"
+        "news"
       ],
-      "primary_type": "sdk",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f2646b07ae31d94d",
-      "title": "api.twitter.com",
-      "url": "https://api.twitter.com/i/users/username_available.json",
-      "summary": "{\"valid\":false,\"reason\":\"invalid_username\",\"msg\":\"Username is too short\",\"desc\":\"Your username must be longer than 4 characters.\"}",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "id": "513cc802febb9223",
+      "title": "Do you write western Canada or Western Canada? - Answers",
+      "url": "https://www.answers.com/linguistics/Do_you_write_western_Canada_or_Western_Canada",
+      "summary": "The two phrases \"western Canada\" and \"Western Canada\" are not entirely interchangeable. Depending on the context, either one of them or both of them may be correct.If you are referring to Canada's ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "api"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "model",
-        "sdk"
+        "news"
       ],
-      "primary_type": "model",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cf2e864471acbdb4",
-      "title": "GitHub - jqssun/android-titanium-browser: Secure open-source ...",
-      "url": "https://github.com/jqssun/android-titanium-browser",
-      "summary": "To maintain a fast and native experience for everyone, advanced features are modularized into Titanium Extension for Android. For the latest builds, see Releases. You can also update between GitHub and Google Play releases seamlessly.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "id": "0efb3e3dd4fb967a",
+      "title": "From a beginner perspective, chat GPT can be a good tool to ... - Reddit",
+      "url": "https://www.reddit.com/r/learnprogramming/comments/zdp46e/from_a_beginner_perspective_chat_gpt_can_be_a/",
+      "summary": "should chat gpt be used for learning It's answer was: It depends on the context and the specific use case. GPT-3, which is a large language model trained by OpenAI, can be used to generate text that is similar to human language. This can be useful for a variety of applications, such as language translation, text summarization, and content ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
       "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a0a968330a459f8",
+      "title": "How do you say 'the capital of Canada is Ottawa' in French?",
+      "url": "https://www.answers.com/other-arts/How_do_you_say_%27the_capital_of_Canada_is_Ottawa%27_in_French",
+      "summary": "La capitale du Canada est Ottawa.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5cca7b1b50149e73",
+      "title": "ilani Casino Hotel Resort in Vancouver (WA) near Portland | ilani",
+      "url": "https://ilaniresort.com/",
+      "summary": "Experience ilani Casino Resort in Ridgefield, WA with world-class gaming, dining, shopping and entertainment. Plan your unforgettable visit today!",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "04d4007befe6b4ad",
+      "title": "ilani Sportsbook | Sports Betting near Vancouver, WA | ilani",
+      "url": "https://ilaniresort.com/gaming/ilani-sportsbook/",
+      "summary": "Place bets on NFL, NBA, UFC & more at ilani Sportsbook, located near Vancouver, WA in Ridgefield, WA. Live odds, self-service kiosks and online bet builders, just minutes from Portland, OR.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18665be583e218a0",
+      "title": "Is Central 1 Credit Union the same as Coastal Capital Savings?",
+      "url": "https://www.answers.com/finance/Is_Central_1_Credit_Union_the_same_as_Coastal_Capital_Savings",
+      "summary": "Central 1 Credit Union is actually the central financial facility and service provider for credit unions in British Columbia and Ontario, while Coastal Capital Savings is one of the credit unions ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "238e1c99d0b4cf86",
+      "title": "New & Used Car Dealership | Portland, OR & Vancouver, WA | Dick Hannah",
+      "url": "https://www.dickhannah.com/",
+      "summary": "Your local, award-winning new car dealership & used car dealership since 1949. Shop 1000's of new & used cars for sale in Portland, OR & Vancouver, WA.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "42e94946718a95bd",
+      "title": "THE BEST 10 RESTAURANTS IN VANCOUVER, WA - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Vancouver,+WA",
+      "summary": "Top 10 Best Restaurants Near Vancouver, Washington - With Real Reviews Sort: Recommended",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1019f9e03878b15d",
+      "title": "Things To Do in Vancouver, WA | Activities & Attractions",
+      "url": "https://www.visitvancouverwa.com/things-to-do/",
+      "summary": "Discover all the fun things to do in Vancouver, WA! Get outdoors for a hike on the many trails or grab a bite to eat with friends down at the waterfront.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "014b243a13dd6c9b",
+      "title": "what capital Citys on each coast are located on islands ... - Answers",
+      "url": "https://www.answers.com/geography/What-capital-citys-on-each-coast-are-located-on-islands-atlantic-pasific",
+      "summary": "The capital cities of each coast that are located on islands in the Atlantic and Pacific Oceans are: Atlantic: Halifax, Nova Scotia St. John's, Newfoundland Charlottetown, Prince Edward Island ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed29187163b6b748",
+      "title": "What is the capital and continent of Canada? - Answers",
+      "url": "https://www.answers.com/movies-and-television/What_is_the_capital_and_continent_of_Canada",
+      "summary": "Canada's capital is Ottawa, and it is located on the continent of North America.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77c20ca3dadf310e",
+      "title": "What is the capital of canada called? - Answers",
+      "url": "https://www.answers.com/geography/What_is_the_capital_of_canada_called",
+      "summary": "Ottawa, Ontario is the capital city of Canada.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f2a45e1cc9be41fe",
+      "title": "Which capital cities are on the coast? - Answers",
+      "url": "https://www.answers.com/geography/Which_capital_cities_are_on_the_coast",
+      "summary": "Washington, D.C., USA Panama City, Panama Havana, Cuba Nassau, Bahamas Kingston, Jamaica Port-au-Prince, Haiti Santo Domingo, Dominican Republic Roseau, Dominica St ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d36e815cdceaff52",
+      "title": "Which capital city is named after Queen Victoria in Canada?",
+      "url": "https://www.answers.com/movies-and-television/Which_capital_city_is_named_after_Queen_Victoria_in_Canada",
+      "summary": "Victoria, the capital of the Canadian province of British Columbia, and Regina, the capital of the Canadian province Saskatchewan, were both named for Queen Victoria. \"Regina\" is the Latin word ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f71afa55c739e479",
+      "title": "Who possesses the factors of production in Canada? - Answers",
+      "url": "https://www.answers.com/movies-and-television/Who_possesses_the_factors_of_production_in_Canada",
+      "summary": "In Canada, the factors of production—land, labor, capital, and entrepreneurship—are owned and managed by a combination of private individuals, businesses, and the government.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "342d600de86ef334",
+      "title": "American Girl Doll Package - The Godfrey Hotel Chicago",
+      "url": "https://www.godfreyhotelchicago.com/offers/american-girl-doll-package",
+      "summary": "Create unforgettable memories with our American Girl Doll package at The Godfrey Hotel Chicago. Includes special amenities and surprises for your little one.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "retail"
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -728,17 +791,425 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4f0b51f34e0f8672",
-      "title": "Home Services Statistics (2026) | SchedulingKit",
-      "url": "https://schedulingkit.com/statistics/home-services-statistics",
-      "summary": "40 Home Services Industry Statistics (2026) reveal key trends in scheduling and appointment management. This page compiles 23 data points from industry sources to help you make informed decisions. Sources include G2, Capterra, and published industry research.",
+      "id": "ebb80ee7a337ea05",
+      "title": "Biomedical Engineering — Harare Polytechnic - Sytbay Academy",
+      "url": "https://sytbay.co.zw/programme/harare-polytechnic-biomedical-engineering/",
+      "summary": "Harare Polytechnic offers Biomedical Engineering through its Applied Sciences division at National Certificate and National Diploma levels. The programme combines engineering with medical and biological sciences, covering medical instrumentation, electronics, embedded systems and healthcare equipment. Source verified from Harare Polytechnic’s official Applied Sciences page on 17 September 2026.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8234fa929bfdbf58",
+      "title": "Boutique Hotel Amenities | Chicago Hotels with Parking | The Godfrey",
+      "url": "https://www.godfreyhotelchicago.com/amenities",
+      "summary": "The Godfrey Chicago offers the best boutique hotel amenities including a rooftop bar, onsite spa, 24-hr gym, free Wi-Fi plus valet & self-parking.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9f42d5e5e44dadc2",
+      "title": "Boutique Hotel in River North Chicago | The Godfrey Hotel",
+      "url": "https://www.godfreyhotelchicago.com/",
+      "summary": "Experience modern luxury at The Godfrey Hotel Chicago, a boutique hotel in River North featuring upscale amenities, rooftop lounge, and stylish accommodations.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e18dfe71521aa689",
+      "title": "Chicago Meeting & Event Space | The Godfrey Hotel",
+      "url": "https://www.godfreyhotelchicago.com/meetings-events/",
+      "summary": "The Godfrey Hotel Chicago seamlessly blends the quintessential downtown meeting experience with contemporary elegance and vitality. Our technologically advanced event spaces and stunning indoor-outdoor urban roofscape are meticulously crafted to inspire and ignite creativity.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d738b3af50e3d8fc",
+      "title": "Finnair | Finnair Plus - FlyerTalk Forums",
+      "url": "https://www.flyertalk.com/forum/finnair-finnair-plus-636/",
+      "summary": "Finnair | Finnair Plus By logging into your account, you agree to our Terms of Use and Privacy Policy, and to the use of cookies as described therein.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "research"
+        "privacy"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy",
+        "community"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aeab341c3e92c8c2",
+      "title": "Godfrey Hotel Chicago FAQ | Check In, Parking & More",
+      "url": "https://www.godfreyhotelchicago.com/Frequently_Asked_Questions",
+      "summary": "Get the answers to our most frequently asked questions including check-in & check-out times, onsite parking & more at The Godfrey Hotel Chicago.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "85637df59edd5fb5",
+      "title": "I|O Rooftop Lounge Chicago | Skyline Views of Chicago - The Godfrey Chicago",
+      "url": "https://www.godfreyhotelchicago.com/i-o-rooftop-lounge",
+      "summary": "Nestled atop The Godfrey Hotel in the vibrant River North district, I|O Rooftop Lounge stands as Chicago's premier year-round rooftop bar. With its innovative retractable roof, breathtaking skyline vistas, and all-season seating arrangements, I|O provides an unparalleled rooftop experience for cocktails, brunch, and private events—whether by day or night, in any season. Ideal for: - Savoring ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f3a97a4bf06a1f81",
+      "title": "Login - lns-sso.lww.com",
+      "url": "https://lns-sso.lww.com/openid_connect_login",
+      "summary": "Forgot username or password? For technical assistance, please contact Wolters Kluwer Technical Support. © 2026 Wolters Kluwer Health, Inc. and/or its subsidiaries. All rights reserved. License Agreement & Disclaimer Privacy Statement.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "privacy"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6024377ad697569c",
+      "title": "Luxury Hotel Rooms & Suites in Chicago | The Godfrey Hotel",
+      "url": "https://www.godfreyhotelchicago.com/rooms-suites",
+      "summary": "Discover spacious rooms and chic suites at The Godfrey Hotel Chicago. Enjoy modern amenities, ergonomic workspaces, and comfort in the heart of downtown.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9614b5799be08655",
+      "title": "One Bedroom King Suite - The Godfrey Hotel Chicago",
+      "url": "https://www.godfreyhotelchicago.com/rooms-suites/one-bedroom-king-suite",
+      "summary": "Relax in luxury with our One Bedroom King Suite at The Godfrey Hotel Chicago. Enjoy ample space, a separate living area, and modern comforts.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1edb294d385df299",
+      "title": "Park & Stay Package | The Godfrey Hotel Chicago",
+      "url": "https://www.godfreyhotelchicago.com/offers/park-stay",
+      "summary": "Enjoy hassle-free parking in downtown Chicago with our Park & Stay package at The Godfrey Hotel Chicago. Convenient, secure parking included with your stay.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "25d1592d2a8f3ff8",
+      "title": "SAS | EuroBonus - FlyerTalk Forums",
+      "url": "https://www.flyertalk.com/forum/sas-eurobonus-499/",
+      "summary": "SAS | EuroBonus By logging into your account, you agree to our Terms of Use and Privacy Policy, and to the use of cookies as described therein.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "privacy"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy",
+        "community"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2f72e67a3bbe7278",
+      "title": "Sign Up and Save | The Godfrey Chicago",
+      "url": "https://www.godfreyhotelchicago.com/offers/sign-up-and-save",
+      "summary": "Your exclusive savings are ready! Unlock exclusive Members Only Deals and private sales. Simply Select your dates and occupancy, and sign-up with your email address.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c7e5c59c76ae363",
+      "title": "the Point for Students",
+      "url": "https://thepoint.lww.com/student",
+      "summary": "Want to study online or on the go? We offer a variety of mobile study tools and we support multiple eBook platforms and systems. We have options for whatever kind of device you want to use.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "study"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -760,16 +1231,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ec4e5219a6ad6ce6",
-      "title": "Merrell Shoes for Women - DICK'S Sporting Goods",
-      "url": "https://www.dickssportinggoods.com/a/merrell-shoes-women.html",
-      "summary": "Discover the latest collection of Merrell shoes for women at Dick's Sporting Goods. Shop stylish, comfortable, and durable footwear perfect for any adventure. Elevate your outdoor experience today!",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "badb5627040ac57c",
+      "title": "Used Volkswagen cars for sale in Allen, TX",
+      "url": "https://www.cars.com/shopping/volkswagen/allen-tx/",
+      "summary": "Shop Volkswagen vehicles in Allen, TX for sale at Cars.com. Research, compare, save listings or contact sellers directly from 867 Volkswagen models in Allen, TX.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "research"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -778,10 +1251,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "research",
+        "retail"
       ],
-      "primary_type": "tool",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -791,134 +1264,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "887f3de35168d4fa",
-      "title": "Merrell Women's Shoes - REI Co-op",
-      "url": "https://www.rei.com/b/merrell/c/womens-shoes",
-      "summary": "Shop for Merrell Women's Shoes at REI - Browse our extensive selection of trusted outdoor brands and high-quality recreation gear. Top quality, great selection and expert advice you can trust. 100% Satisfaction Guarantee.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e71d3fc698791264",
-      "title": "Women's Merrell Shoes, Slip Ons, Sandals & Dress Shoes | DSW",
-      "url": "https://www.dsw.com/brands/womens/merrell",
-      "summary": "Find women's Merrell slip ons, sandals, dress shoes and more, all at great prices.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d79f3c92140ae34d",
-      "title": "Women's Shoes for Outdoor Adventure | Merrell",
-      "url": "https://www.merrell.com/US/en/womens-shoes/",
-      "summary": "Discover Merrell’s Women's Shoes for every journey. Enjoy cushioned comfort, durable materials, and stylish performance from city streets to rugged trails.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d1355c60bae025ab",
-      "title": "Womens Merrell Shoes - Macy's",
-      "url": "https://www.macys.com/shop/featured/womens-merrell-shoes",
-      "summary": "Find womens merrell shoes at Macy's.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "de4e190a09cde927",
-      "title": "130+ Home Service Industry Statistics: 2026 Verified Report",
-      "url": "https://gitnux.org/home-service-industry-statistics/",
-      "summary": "Home Service Industry Statistics Global home services reached $1.2T in 2023—see what’s driving growth and how homeowners book, from apps to online scheduling.",
+      "id": "1a91ae7b40722e4b",
+      "title": "122 Sinsinawa Ave, East Dubuque, Illinois - Bridge City Collective ...",
+      "url": "https://www.yelp.com/biz/bridge-city-collective-east-dubuque",
+      "summary": "Bridge City Collective East Dubuque is your trusted weed dispensary, offering top-quality products in a convenient location near Galena and the Mississippi River.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -945,12 +1294,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aca572dfd85e4084",
-      "title": "2026 Home Services Trends: What's Coming in the US Market",
-      "url": "https://servicenation.com/resources/what-s-coming-in-2026-a-first-look-at-the-trends-shaping-home-services",
-      "summary": "Discover the 2026 home services trends that will separate top contractors from the pack. Get insights on macro forces reshaping trades. Read the report now.",
+      "id": "1f0b2e52bc9205e9",
+      "title": "48 Mi - Distance from Dayton to Richmond",
+      "url": "https://www.distancesfrom.com/us/distance-from-Dayton-to-Richmond/DistanceHistory/22745664.aspx",
+      "summary": "The distance between Dayton to Richmond is 78 Mi by road. You can also find the distance from Dayton to Richmond using other travel options like bus, subway, tram, train and rail.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -975,10 +1324,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8407579208714e05",
-      "title": "All Volkswagen Dealers in Surprise, AZ 85374 - Autotrader",
-      "url": "https://www.autotrader.com/car-dealers/volkswagen/surprise-az",
-      "summary": "Find Surprise Volkswagen Dealers. Search for all Volkswagen dealers in Surprise, AZ 85374 and view their inventory at Autotrader",
+      "id": "f11f8c2025c97e89",
+      "title": "Air France, KLM, and Other Partners | Flying Blue - FlyerTalk",
+      "url": "https://www.flyertalk.com/forum/air-france-klm-other-partners-flying-blue-594/",
+      "summary": "Air France, KLM, and Other Partners | Flying Blue - Air France, KLM, TAROM, and Aircalin",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "237d0ee5e25cf96e",
+      "title": "All Volkswagen Dealers in Allen, TX 75002 - Autotrader",
+      "url": "https://www.autotrader.com/car-dealers/volkswagen/allen-tx",
+      "summary": "Find Allen Volkswagen Dealers. Search for all Volkswagen dealers in Allen, TX 75002 and view their inventory at Autotrader",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1005,12 +1384,72 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e388b2e445a263e1",
-      "title": "asmeninis vertėjas telefone arba kompiuteryje - Google Translate",
-      "url": "https://translate.google.com/intl/lt/about/",
-      "summary": "Sužinokite, kaip išversti tekstus, kalbą, vaizdus, dokumentus, svetaines ir kitokį turinį naudojantis „Google“ vertėjo paslauga.",
+      "id": "db334bca051b9597",
+      "title": "AMEX Delta Reserve additional card member benefits? - FlyerTalk",
+      "url": "https://www.flyertalk.com/forum/delta-air-lines-skymiles/2151183-amex-delta-reserve-additional-card-member-benefits.html",
+      "summary": "Delta Air Lines | SkyMiles - AMEX Delta Reserve additional card member benefits? - Hello friends- I am trying to get clarity on which benefits apply to additional card members paid on my reserve account. I am not asking about the complimentary platinum card but if you pay the $195 for an added card member who gets a",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cf5ae659194e97a1",
+      "title": "Anyone here have any experience flying with Hong Kong Airlines? - FlyerTalk",
+      "url": "https://www.flyertalk.com/forum/other-asian-australian-south-pacific-airlines/1879601-anyone-here-have-any-experience-flying-hong-kong-airlines.html",
+      "summary": "Other Asian, Australian, and South Pacific Airlines - Anyone here have any experience flying with Hong Kong Airlines? - Is it just me or that their website is utter crap? I recently booked a YVR-HKG with HX and I can't figure out if I can start selecting my seats now or I'll have to wait until 24 hours before departure",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9ecfbace95ed8d02",
+      "title": "Are Frontier's Stretch Seats Worth the Money? - FlyerTalk",
+      "url": "https://www.flyertalk.com/articles/frontiers-stretch-seats-is-it-worth-it.html",
+      "summary": "Are Frontier Airline's Stretch Seats worth the extra money? If you're on a long-haul flight, then the extra cost could be worth it for added comfort.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1035,462 +1474,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4da3c942cccfc357",
-      "title": "Business Travel Discounts With CLC Lodging",
-      "url": "https://landingpage.clclodging.com/business-travel-discounts/",
-      "summary": "With over 15,000 locations across North America, CLC Lodging negotiates the best possible rates for our members. Save up to 25% on hotel costs every time you travel for work with the CLC Lodging card.",
+      "id": "80b837a11d4415ee",
+      "title": "Best Streaming service for NBA games? : r/nba - Reddit",
+      "url": "https://www.reddit.com/r/nba/comments/17lq7dh/best_streaming_service_for_nba_games/",
+      "summary": "Yep, adblocker + streameast. If Streameast doesn't have a game I go to one that ends in surge and find a stream there. There's always 10+ sources. Works pretty nicely with the BrowseHere browser on a Google TV, it often fetches the video stream from the page and plays it optimized without even having to fuss with blank pop-up ad whack-a-mole",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "40650a7fc2aff584",
-      "title": "CLC Lodging - wynhg-myportalbs-prod65.adobecqms.net",
-      "url": "https://wynhg-myportalbs-prod65.adobecqms.net/content/myportal/en-us/MainNavigationFuture/GenerateRevenue/GlobalSales/GlobalSalesCustomerSegments/CLCLodging.html",
-      "summary": "The Contracted Hotel Network continues to be the primary source in generating the highest volume of CLC room nights into hotels. Offering 12 -24 month contracts that allows hotels the visibility to travelers throughout various CLC Account Directories.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7805321ccb6a462b",
-      "title": "CLC Lodging Becomes Corpay Lodging: More Power, Same Trusted Solution ...",
-      "url": "https://www.corpay.com/corporate-newsroom/18566/clc-lodging-becomes-corpay-lodging-more-power-same-trusted-solution-and-savings",
-      "summary": "Corpay Lodging, formerly CLC Lodging, is a leader in workforce travel solutions, providing businesses with cost-saving lodging programs, centralized booking and billing, and advanced travel management tools, technology, and support.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d5624d468ca2efa3",
-      "title": "Corpay’s Lodging’s Discount Hotels Network | Corpay Lodging",
-      "url": "https://www.corpaylodging.com/hotel-partners",
-      "summary": "Check out Corpay Lodging's network of valued hotel partners. There are over 46,000 hotels that accept Corpay Lodging and offer our customers pre-negotiated and discounted rates.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c607c557db1eea97",
-      "title": "Corporate Travel Management & Workforce Lodging | Corpay Lodging",
-      "url": "https://www.corpaylodging.com/",
-      "summary": "Save time and money on corporate travel management. Join for free and access pre-negotiated business hotel rates, flexible reservations, reporting, and 24/7 support today.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f06249ad0ef15f08",
-      "title": "Google Prevajalnik – osebni tolmač v vašem ... - Google Translate",
-      "url": "https://translate.google.com/intl/sl/about/",
-      "summary": "Naučite se prevajati besedilo, govor, slike, dokumente, spletna mesta in drugo z Google Prevajalnikom.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0ae3df09a48ac5d9",
-      "title": "Google Çeviri: Telefon veya Bilgisayarınızdaki Özel Çevirmeniniz",
-      "url": "https://translate.google.com/intl/tr/about/",
-      "summary": "Google Çeviri ile metin, konuşma, resim, doküman, web sitesi ve diğer içerikleri nasıl çevireceğinizi öğrenin.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a52a4da004ce6495",
-      "title": "Home Service Base — Local service business insights",
-      "url": "https://homeservicebase.com/",
-      "summary": "Understand the market, stay ahead of trends, and make confident decisions with real, actionable data — every home service business in the US, with their locations, reviews, ads, software and map rankings, in one place.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f238f50048225003",
-      "title": "Home Service Reports - Jobber",
-      "url": "https://www.getjobber.com/home-service-reports/",
-      "summary": "Home Service Economic Reports Jobber’s position as the leading software for Home Service businesses uniquely enables us to identify aggregated trends and insights.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9f7e7942d00a1a0e",
-      "title": "Home Services Industry & Marketing Statistics (2026)",
-      "url": "https://www.thomastowndigital.com/home-services-marketing-statistics",
-      "summary": "More than 80 statistics on the home services industry, in one place, including our own Local Services Ads cost-per-lead benchmark: how big the market is, who does the work, what a lead costs in every trade, how homeowners find and choose a contractor, and how fast you have to respond.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a28574e926a03ed6",
-      "title": "Home Services Industry Statistics 2025–2026: Market Size ...",
-      "url": "https://www.einvoicegenerator.com/blog/home-services-industry-statistics",
-      "summary": "Discover the latest home services industry statistics for 2025-2026, including market size, growth projections, and workforce trends. Stay informed and ahead.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7b46a32de636c769",
-      "title": "Home Services Industry Statistics 2026: trends, market, brand ...",
-      "url": "https://leads4build.com/insights/home-services-industry-statistics",
-      "summary": "For U.S.-focused analysis, Mordor Intelligence estimates the domestic home services market at $842.04 billion in 2026, advancing at a 3.27% CAGR [4]. A narrower cut focused on home maintenance and repair specifically puts that segment at $543 billion in 2025, growing at 5.3% CAGR through 2030 [5].",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "399afc54f5b9eb95",
-      "title": "Home Services Marketing Statistics 2026: Benchmarks & Trends",
-      "url": "https://sociallyin.com/home-services-marketing-statistics/",
-      "summary": "Get the latest 2026 home services ad benchmarks (CPC, CPL, CTR) and consumer trends. See how online reviews and new tech are shaping the trillion-dollar market.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "174df648465040b2",
-      "title": "Hotel Search and Booking - CLC Lodging",
-      "url": "https://vendordirectory.shrm.org/company/908664/products/236265/hotel-search-and-booking",
-      "summary": "Empower your travelers to find and book hotels in minutes: online, via the CLC app, direct with the hotel, or by calling CLC. Enforce your travel policies by budget, proximity and...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "74cd66ec05de8709",
-      "title": "Login - CLC Lodging",
-      "url": "https://account.clclodging.com/login.cfm",
-      "summary": "The information entered below must exactly match the information supplied by your employer to CLC. For JR, SR, etc., follow your last name with one space and the appropriate suffix.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "17f11080f2907995",
-      "title": "Meta Ads Manager: Ad Campaign Hub for Facebook & Instagram",
-      "url": "https://www.facebook.com/business/tools/ads-manager/",
-      "summary": "Discover how Meta Ads Manager can help you can manage your Facebook & Instagram ad campaigns in your web browser or on the mobile app.",
-      "discovery_channel": "broad_web+research",
-      "query": "Meta NameTag smart glasses; Meta NameTag biometrics",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1503,6 +1492,247 @@
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
+        "video",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c80e1e2ef0418a1a",
+      "title": "Bridge City Collective - East Dubuque - Cannabis Dispensary, East ...",
+      "url": "https://dutchie.com/dispensary/bridge-city-collective-east-dubuque/collection/272d00e6-623e-4f00-93cc-4cf0216ca628",
+      "summary": "Order cannabis online for delivery or pick up from Bridge City Collective - East Dubuque a recreational dispensary in East Dubuque, IL. View the dispensary menu, photos, hours, and more.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "017b12dcfec5d397",
+      "title": "Bridge City Collective - East Dubuque - Dutchie",
+      "url": "https://dutchie.com/dispensary/bridge-city-collective-east-dubuque",
+      "summary": "Browse the current menu from Bridge City Collective - East Dubuque in East Dubuque, IL. View products, prices, hours, and pickup or delivery options.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4aeae0592f019e86",
+      "title": "Bridge City Collective - East Dubuque - East Dubuque, IL Dispensaries ...",
+      "url": "https://cannapages.com/dispensaries/bridge-city-collective-east-dubuque/",
+      "summary": "Bridge City Collective - East Dubuque is a marijuana dispensary in East Dubuque, IL. Check out their reviews, menu, and weed deals.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e6ec6e7b0b0817a8",
+      "title": "Bridge City Collective - East Dubuque, IL | JointCommerce",
+      "url": "https://www.jointcommerce.com/dispensaries/bridge-city-collective-east-dubuque",
+      "summary": "Bridge City Collective - East Dubuque is a licensed cannabis dispensary in East Dubuque, IL 61025. Browse the live menu to see where to buy, plus hours, deals, and verified reviews.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da27985b72697eb5",
+      "title": "Bridge City Collective - Illinois | Dispensary Menu, Reviews & Photos",
+      "url": "https://www.leafly.com/dispensary-info/bridge-city-collective-illinois",
+      "summary": "Conveniently located along US Hwy 20, Bridge City Collective is the closest dispensary to Dubuque, IA, and just across the Julien Dubuque Bridge, making it an ideal stop for all your...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ce46d1226b5005b",
+      "title": "Bridge City Collective Dispensary East Dubuque IL",
+      "url": "https://www.localdispensaryguide.com/illinois/east-dubuque/bridge-city-collective-dispensary-east-dubuque-il",
+      "summary": "Bridge City Collective Dispensary East Dubuque IL is a highly-rated recreational and medical cannabis dispensary in East Dubuque, Illinois, with a 5-star average across 3,486+ customer reviews. The shop carries a full selection of flower, vaporizers, edibles, concentrates, tinctures, and topicals.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "05a5d6b0e497e058",
+      "title": "Bridge City Collective Menu, Reviews, Deals - Weed Dispensary in East ...",
+      "url": "https://weedmaps.com/dispensaries/bridge-city-collective-3",
+      "summary": "Conveniently located along US Hwy 20, Bridge City Collective is the closest dispensary to Dubuque, IA, and just across the Julien Dubuque Bridge, making it an ideal stop for all your cannabis needs. We also serve customers from neighboring communities like Platteville, WI.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7c96c01e4c656eeb",
+      "title": "Calculate Distance Between Two Cities Places Locations Addresses Zip ...",
+      "url": "https://www.distancecalculator.us/",
+      "summary": "This tool helps in calculating mileage and distance between cities, places, locations, points, zip codes, coordinates, or addresses on map. Please enter the origin and destination locations and press calculate button.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
         "tool"
       ],
       "primary_type": "tool",
@@ -1515,10 +1745,520 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0322caa59df9d155",
-      "title": "Meta Platforms - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Meta_Platforms",
-      "summary": "Meta Platforms, Inc. (doing business as Meta), headquartered in Menlo Park, California, is an American multinational technology company and is one of the Big Tech companies. Meta owns and operates several prominent social media platforms and communication services, including Facebook, Instagram, WhatsApp, Messenger, and Threads.",
+      "id": "6ca03bed66880b53",
+      "title": "Citi | ThankYou Rewards - FlyerTalk Forums",
+      "url": "https://www.flyertalk.com/forum/citi-thankyou-rewards-739/",
+      "summary": "Citi | ThankYou Rewards - Discuss Citi cards which earn ThankYou points including Rewards+, Premier, Prestige and CitiBusiness cards. This forum also hosts discussion of co-branded cards issued by Citibank for American Airlines, AT&T, Costco, Expedia and Sears. Note that AAdvantage mileage redemption and valuation",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e32f41842d033bc",
+      "title": "Directions - MapQuest",
+      "url": "https://www.mapquest.com/directions/to/us/index.htm",
+      "summary": "Driving directions to your destination including road conditions, live traffic updates, and reviews of local businesses along the way.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "936e63bed2f30930",
+      "title": "Discover the sophisticated electric compact SUV - smart #1",
+      "url": "https://uk.smart.com/en/models/hashtag-one/",
+      "summary": "Everyday adventurers and city explorers, hit the road with the smart #1. Our fully electric compact SUV car will take you anywhere in style.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses biometric lawsuit; smart glasses facial recognition privacy lawsuit; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart glasses biometric privacy litigation; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "db885b15511d2a08",
+      "title": "Distance between Dayton and Richmond",
+      "url": "https://www.us-distances.com/us/ohio/dayton-oh/richmond-va/",
+      "summary": "On the map you can see the driving itinerary, fuel consumption and estimated driving time from Dayton to Richmond. The direct distance and driving distance are both displayed.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d93337feaec03be7",
+      "title": "Distance between Dayton, OH and Richmond, VA",
+      "url": "https://www.distance-cities.com/distance-dayton-oh-to-richmond-va",
+      "summary": "This location is 254.97 miles away from Dayton, OH and Richmond, VA and it would take approximately 4 hours 8 mins to reach the halfway point from both locations.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d877584f4e14a327",
+      "title": "Distance Between Dayton, OH to Richmond, VA",
+      "url": "https://www.distance-between.com/from/us/ohio/dayton/to/us/virginia/richmond",
+      "summary": "Find the distance between Dayton, OH and Richmond, VA. More details such as how long to walk, riding a bike and fuel costs are available.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5740b5414824ba50",
+      "title": "Distance Between Richmond, IN to Dayton, OH",
+      "url": "https://www.distance-between.com/from/us/indiana/richmond/to/us/ohio/dayton",
+      "summary": "Find the distance between Richmond, IN and Dayton, OH. More details such as how long to walk, riding a bike and fuel costs are available.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d9b7239dfc43e28d",
+      "title": "Distance between Richmond, VA and Dayton, OH",
+      "url": "https://www.distance-cities.com/distance-richmond-va-to-dayton-oh",
+      "summary": "There are 395.30 miles from Richmond to Dayton in northwest direction and 510 miles (820.77 kilometers) by car, following the I-64 W route. Richmond and Dayton are 8 hours 16 mins far apart, if you drive non-stop .",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7b5607846d72c68b",
+      "title": "Distance Calculator - 247 Calculator",
+      "url": "https://247calculator.com/distance-calculator/",
+      "summary": "Use this Distance Calculator to find the distance between two locations, cities, towns, addresses, or landmarks. Enter a starting location and destination, then the calculator searches worldwide map data, calculates an available driving route, and shows driving distance, estimated driving time, straight-line distance, kilometres, miles ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4392862d87235974",
+      "title": "Duplicate Teams entries in Volume Mixer Windows 11",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5508399/duplicate-teams-entries-in-volume-mixer-windows-11",
+      "summary": "It doesn't work properly, calls come in without sound. I have to manually change the mixer volume and leave it open. I updated to the latest version 24H2 with its latest build, and the problem persists. This needs to be fixed, as it is affecting several calls received per day.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a7adbb73a69cfaf2",
+      "title": "East Dubuque Dispensary East Dubuque Dispensary - Bridge City Collective",
+      "url": "https://bridgecitycollective.com/east-dubuque-dispensary/",
+      "summary": "Bridge City Collective’s weed dispensary in East Dubuque IL delivers a cannabis shopping experience centered on community and care. Our cannabis store is dedicated to customer satisfaction and education and offers a wide range of premium products, from local strains to edibles and vapes.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "76224b184bf4522e",
+      "title": "East Dubuque Menu - Bridge City Collective",
+      "url": "https://bridgecitycollective.com/east-dubuque-menu/",
+      "summary": "Bridge City Collective is proud to serve the East Dubuque cannabis community with a wide-ranging dispensary menu, friendly staff, and premium products from Illinois’ best brands.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d0acb82d01260db5",
+      "title": "Fix app audio not working while system sounds work in Windows",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/audio/fix-app-audio-not-working-while-system-sounds-work-in-windows",
+      "summary": "If system sounds play but audio doesn’t work in some apps, app‑specific volume settings, per‑app output device selection, audio services, or audio drivers might be causing the issue.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "46db3786c0f8b8dd",
+      "title": "Free Printable Calendar 2026 - timeanddate.com",
+      "url": "https://www.timeanddate.com/calendar/create.html",
+      "summary": "Print a calendar with holidays for 2026 or any year. Add holidays or events, and use our monthly, weekly, or daily calendar templates.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7afbb3affaa93474",
+      "title": "Lippincott | thePoint - LWW",
+      "url": "https://phoenix-ccm.thepoint.lww.com/landing/",
+      "summary": "Please log in to view this content. All Materials Copyright © 2026 by Wolters Kluwer. All Rights Reserved.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "016ad7dd2f98802b",
+      "title": "Lippincott® Learning - LWW",
+      "url": "https://learning.lww.com/login",
+      "summary": "Forgot username or password? For technical assistance, please contact Wolters Kluwer Technical Support. © 2026 Wolters Kluwer Health, Inc. and/or its subsidiaries. All rights reserved.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ad0e38e076e43cc8",
+      "title": "LWW - Course Point",
+      "url": "https://phoenix-app.thepoint.lww.com/",
+      "summary": "Fri: 8am–7pm (EST) Sun: 4pm–12am (EST) Online Support FAQ ThePoint Help Center Email techsupp@lww.com",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "457160cbc810b406",
+      "title": "Meta",
+      "url": "https://auth.meta.com/register/",
+      "summary": "Create and register a Meta account to manage your devices and access Meta services.",
       "discovery_channel": "broad_web+research",
       "query": "Meta NameTag smart glasses; Meta NameTag biometrics",
       "source": "Bing web RSS",
@@ -1545,10 +2285,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8add099f4b4a77d4",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/word-365-account-for-an-english-teacher-forces-all/0c2eb3d7-dcc6-4b16-a365-3c9235c84b04",
-      "summary": "Microsoft Community",
+      "id": "76a5cd7ab19fdb75",
+      "title": "Microsoft Teams Cannot Adjust Volume [Reasons & Solutions]",
+      "url": "https://freedom251.com/microsoft-teams-cannot-adjust-volume-reasons-solutions/",
+      "summary": "Microsoft Teams cannot adjust volume? Fix stuck call audio by matching Teams Speaker to Windows/macOS output, disabling audio enhancements, and resolving Bluetooth conflicts.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1563,9 +2303,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1575,12 +2315,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9d6e58df283b6bbf",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlookcom-cant-remove-added-mail-accounts/77d7001f-6a4a-43e8-9dbf-bedc56f40b42",
-      "summary": "Microsoft Community",
+      "id": "0efabc648cdeb269",
+      "title": "Moon Phases 2026 – Lunar Calendar - timeanddate.com",
+      "url": "https://www.timeanddate.com/moon/phases/",
+      "summary": "Moon phases for 2026 or any year. New Moon and Full Moon calendar with precise times and simulation of the Moon phase today. When is the next Full Moon?",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1593,9 +2333,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1605,10 +2345,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9239c3acd5e8c522",
-      "title": "NBC10 Philadelphia – Local news, breaking news, weather",
-      "url": "https://www.nbcphiladelphia.com/",
-      "summary": "Find the latest Philadelphia local news on NBC10. NBC Philadelphia brings you weather forecasts, breaking news alerts and more Philly news.",
+      "id": "5ddd00788ba5a278",
+      "title": "NewsDakota.com - Your Source for News Weather Sports Info",
+      "url": "https://www.newsdakota.com/",
+      "summary": "NWDK (NewsDakota) Southeastern and South Central North Dakota's home for News, Sports & Weather.",
       "discovery_channel": "broad_web",
       "query": "new smart glasses 2026",
       "source": "Bing web RSS",
@@ -1635,12 +2375,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "55e26d4ccc140c62",
-      "title": "SMART Dog Rescue Flagler County | Adopt, Foster & Donate ...",
-      "url": "https://smartflagler.com/",
-      "summary": "At Smart of Flagler County, we are committed to rescuing, rehabilitating, and rehoming dogs in need. Our mission is to provide compassionate care, medical attention, and safe shelter for abandoned and stray animals.",
-      "discovery_channel": "adjacent+broad_web+community+developer+research",
-      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses biometric lawsuit; smart glasses facial recognition privacy lawsuit; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses biometric privacy litigation; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "id": "a83678bb60ed9d7b",
+      "title": "October 2026 Calendar – United States - timeanddate.com",
+      "url": "https://www.timeanddate.com/calendar/monthly.html?year=2026&month=10&country=1",
+      "summary": "United States October 2026 – Calendar with American holidays. Monthly calendar for the month October in year 2026. Calendars – online and print friendly – for any year and month",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1665,12 +2405,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b532c29689522188",
-      "title": "The 2026 State of Home Services Benchmark Report | Applause",
-      "url": "https://www.applausehq.com/research-reports/2026-state-of-home-services-benchmark-report",
-      "summary": "The 2026 State of Home Services Benchmark Report analyzes more than 18,000 real performance data points across 3,000 home services companies to show what great technician performance actually looks like today across productivity, quality, reviews, compensation, and motivation.",
+      "id": "f44a257929265c09",
+      "title": "Out of market watching : r/detroitlions - Reddit",
+      "url": "https://www.reddit.com/r/detroitlions/comments/15i4ngr/out_of_market_watching/",
+      "summary": "Streameast is a godsend to the people if you ask me. Hulu scammed me out of the UFC PPV last weekend. Charged $80 and I couldn’t access my PPV live, didn’t even get it til the next day. I got a refund and watched it on steameast, and I didn’t feel shitty about it. These big streaming services are scamming the hell out of us. Reply reply",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b7ffc151942c5584",
+      "title": "Per Diem when you depart home Thurs, arrive Fri - FlyerTalk",
+      "url": "https://www.flyertalk.com/forum/travelbuzz/1937039-per-diem-when-you-depart-home-thurs-arrive-fri.html",
+      "summary": "TravelBuzz - Per Diem when you depart home Thurs, arrive Fri - For years I've traveled LAX-JFK, departing Thursday afternoon or evening, arriving home Friday morning. In expense reports, I've submitted full-day per diems Thurs, and breakfast per diems Fri. Always approved without issues. Recently the company reworded",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1683,9 +2453,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "community"
       ],
-      "primary_type": "research",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1695,10 +2465,341 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "69bb8eecf42f3ae6",
-      "title": "Tractor Supply Co. in Calimesa, CA - Store #2134",
-      "url": "https://www.tractorsupply.com/tsc/store_Calimesa-CA-92320_2134",
-      "summary": "Locate store hours, directions, address and phone number for the Tractor Supply Company store in Calimesa, CA. We carry products for lawn and garden, livestock, pet care, equine, and more!",
+      "id": "69c52abc7b46eb64",
+      "title": "PVG T2 - which lounge is best? - FlyerTalk Forums",
+      "url": "https://www.flyertalk.com/forum/china/1718634-pvg-t2-lounge-best.html",
+      "summary": "China - PVG T2 - which lounge is best? - i'll be flying through PVG T2 with a 6 hour layover. It appears I can choose from First Class Lounge 66, 69 or 73. Lounge 69 has showers while the two do not. Does anyone know if there are any other differences/benefits between the three?",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d717b7a9964970a9",
+      "title": "quizlet.knoji.com",
+      "url": "https://quizlet.knoji.com/robots.txt",
+      "summary": "User-agent: * Disallow: /admin/ Disallow: /admintools/ Disallow: /analytics/ Disallow: /coupon/ Disallow: /cron/ Disallow: /details/ Disallow: /editor/ Disallow ...",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0ea4ec9ebf6ce924",
+      "title": "Sound for 2 apps stuck at 1 percent in volume mixer",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/4079103/sound-for-2-apps-stuck-at-1-percent-in-volume-mixe",
+      "summary": "Sometimes, updates or other system changes can cause temporary issues with drivers, and a restart can often fix these. If the issue recurs, you might want to check for updates for your sound drivers, or consider reinstalling them.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "683cf57f11f3e0d0",
+      "title": "Sound for 2 apps stuck at 1 percent in volume mixer",
+      "url": "https://www.windowsphoneinfo.com/threads/sound-for-2-apps-stuck-at-1-percent-in-volume-mixer.1127247/",
+      "summary": "Result: As before, there is no separate entry in the volume mixer, and the app's volume slider only affects the master volume of the sound device. Did I miss any suggestions?",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8439766a622f79a9",
+      "title": "streameast - Reddit",
+      "url": "https://www.reddit.com/r/streameast_1/",
+      "summary": "StreamEast searches all over the world to bring you the best sports live streaming. You can find all sports here. Check out the schedule for all the games today and more. Streameast brings you all genres of football. From European football leagues like EPL, SPL and La Liga to Asian, African and American leagues.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c6f6def69d52ec2",
+      "title": "streameast - Reddit",
+      "url": "https://www.reddit.com/r/streameast_1/about/",
+      "summary": "r/streameast_1: WELCOME TO STREAMEAST SAFE AND GOOD Get appGet the Reddit appLog InLog in to Reddit",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7c16173e3d9a2209",
+      "title": "StreamEast - Watch Live Sports Free | NBA, NFL, Soccer, UFC ...",
+      "url": "https://www.hiyoshi-oral-health-center.org/",
+      "summary": "StreamEast offers free live sports streaming in HD quality. Watch NBA, NFL, UFC, MLB, NHL, soccer matches, and more. Experience reliable sports broadcasting ...",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "31db34298f55e609",
+      "title": "Streameast not working for anyone? : r/steelers - Reddit",
+      "url": "https://www.reddit.com/r/steelers/comments/xbnqhd/streameast_not_working_for_anyone/",
+      "summary": "Streameast not working for anyone? Not sure what’s going on today. Stream east has been reliable for the most part. Keep getting an error message when trying to watch.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eacc64460d75f58d",
+      "title": "Teams call volume in volume mixer is greyed out - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftTeams/comments/tbblf9/teams_call_volume_in_volume_mixer_is_greyed_out/",
+      "summary": "Then all of a sudden the call in teams just did not detect my speakers. It's weird that the driver installation was the problem because teams was the only sound that did not work.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4969efab8c8f5d2a",
+      "title": "Teams call volume in volume mixer is greyed out : r/Windows11 - Reddit",
+      "url": "https://www.reddit.com/r/Windows11/comments/tbbmyk/teams_call_volume_in_volume_mixer_is_greyed_out/",
+      "summary": "Notice that the one for calls is greyed out and it does not have an output device selected. When I click on the output device, it only shows 1 speaker: Compared to others which shows 2 including the Default: What's going on here? I can't do any call on Teams anymore because of this. Archived post.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "595a40d3dda8bfd6",
+      "title": "Teams Volume issues - BEMO Docs",
+      "url": "https://support.bemopro.com/hc/en-us/articles/11645080730771-Teams-Volume-issues",
+      "summary": "When using Teams, you may encounter volume issues, there are a couple of settings to check to get this solved. Method 1: Check that...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "50be7ac8ef3bb294",
+      "title": "The Point",
+      "url": "https://thepoint.lww.com/",
+      "summary": "Inspired Learning for Life. When it comes to providing students and teachers in nursing, medicine, and the health professions with the educational materials they need, our philosophy is simple: learning never ends.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1725,10 +2826,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "103b32a767f20fa8",
-      "title": "Tractor Supply Co. in Corydon, IN - Store #617",
-      "url": "https://www.tractorsupply.com/tsc/store_Corydon-IN-47112_617",
-      "summary": "Locate store hours, directions, address and phone number for the Tractor Supply Company store in Corydon, IN. We carry products for lawn and garden, livestock, pet care, equine, and more!",
+      "id": "2e6cd4baa06649bb",
+      "title": "the Point for Faculty",
+      "url": "https://thepoint.lww.com/faculty",
+      "summary": "For more than 150 years, we've listened to you, visiting campuses, hospitals, clinics, and conferences to make sure we provide the educational solutions you need. …with the solutions you need today…",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1755,10 +2856,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "037d751055ca1003",
-      "title": "Tractor Supply Co. in Garner, NC - Store #2523",
-      "url": "https://www.tractorsupply.com/tsc/store_Garner-NC-27529_2523",
-      "summary": "Locate store hours, directions, address and phone number for the Tractor Supply Company store in Garner, NC. We carry products for lawn and garden, livestock, pet care, equine, and more!",
+      "id": "21ab50c921d26b5e",
+      "title": "thePoint",
+      "url": "https://thepoint.lww.com/coursepointplus",
+      "summary": "Also included is Lippincott Advisor for Education, which gives students access to the same evidence-based information used in hospitals nationwide. Students learn with the most up-to-date information and gain valuable experience with the point-of-care content they will encounter in practice.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1785,10 +2886,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "37c6fd84b9380b69",
-      "title": "Tractor Supply Co. in Gulfport, MS - Store #1538",
-      "url": "https://www.tractorsupply.com/tsc/store_GULFPORT-MS-39503_1538",
-      "summary": "Locate store hours, directions, address and phone number for the Tractor Supply Company store in Gulfport, MS. We carry products for lawn and garden, livestock, pet care, equine, and more!",
+      "id": "21b7ddc27754bd92",
+      "title": "thePoint / Students",
+      "url": "https://thepoint.lww.com/Marketing/Student",
+      "summary": "Log in or create an account today. You’ll have access to resources that will give you an edge in your studies. Take advantage of having your own library online. thePoint is a student’s destination for making the grade!",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1803,9 +2904,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1815,282 +2916,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "43b2e29b96fa0a39",
-      "title": "Tractor Supply Co. in Lewiston, ME - Store #1362",
-      "url": "https://www.tractorsupply.com/tsc/store_Lewiston-ME-04240_1362",
-      "summary": "Locate store hours, directions, address and phone number for the Tractor Supply Company store in Lewiston, ME. We carry products for lawn and garden, livestock, pet care, equine, and more!",
+      "id": "68c5467a1a8b26f8",
+      "title": "Used Volkswagen Cars for Sale in Allen, TX - Autotrader",
+      "url": "https://www.autotrader.com/cars-for-sale/volkswagen/allen-tx",
+      "summary": "Test drive Used Volkswagen Cars at home in Allen, TX. Search from 1018 Used Volkswagen cars for sale, including a 2015 Volkswagen GTI SE, a 2016 Volkswagen Jetta S, and a 2022 Volkswagen Jetta GLI Autobahn ranging in price from $1,400 to $51,412.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "499396cd1191b495",
-      "title": "Tractor Supply Co. in Olive Branch, MS - Store #2690",
-      "url": "https://www.tractorsupply.com/tsc/store_OliveBranch-MS-38654_2690",
-      "summary": "Locate store hours, directions, address and phone number for the Tractor Supply Company store in Olive Branch, MS. We carry products for lawn and garden, livestock, pet care, equine, and more!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "97aec21c9ffb1127",
-      "title": "Tractor Supply Co. in Palmyra, VA - Store #2526",
-      "url": "https://www.tractorsupply.com/tsc/store_palmyra-va-22963_2526",
-      "summary": "Locate store hours, directions, address and phone number for the Tractor Supply Company store in Palmyra, VA. We carry products for lawn and garden, livestock, pet care, equine, and more!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fd803f08e69c8e3b",
-      "title": "Tractor Supply Co. in Rosenberg, TX - Store #310",
-      "url": "https://www.tractorsupply.com/tsc/store_Rosenberg-TX-77471_310",
-      "summary": "Locate store hours, directions, address and phone number for the Tractor Supply Company store in Richmond, TX. We carry products for lawn and garden, livestock, pet care, equine, and more!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a5b3e3f726f15386",
-      "title": "Tractor Supply Co. Store Locator : Learn Store Hours, Find Address ...",
-      "url": "https://www.tractorsupply.com/tsc/store-locator",
-      "summary": "Find a Tractor Supply Company Store near you. Browse the TSC store locator to find address, hours and store services. Everything needed For Life Out Here.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "267cc065441fa923",
-      "title": "Tractor Supply Rockaway, NJ Store | Shop for Pet, Gardening, Hardware ...",
-      "url": "https://www.tractorsupply.com/tsc/store_Rockaway-NJ-07866_2594",
-      "summary": "Locate store hours, directions, address and phone number for the Tractor Supply Company store in Rockaway, NJ. We carry products for lawn and garden, livestock, pet care, equine, and more!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "863d0473f2747a96",
-      "title": "Twitter",
-      "url": "https://ton.twitter.com/adseditor/syntax_sheet_export.xlsx",
-      "summary": "Twitter",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9e3843304814aca2",
-      "title": "Twitter",
-      "url": "https://about.twitter.com/robots.txt",
-      "summary": "User-agent: * Disallow: User-agent: Twitterbot Disallow: User-agent: QuerySeekerSpider Disallow: / User-agent: DirBuster-0.12 Disallow: / Sitemap: https://about.x.com ...",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "86bcf0b34bcc2416",
-      "title": "Twitter Analytics",
-      "url": "https://analytics.twitter.com/mob_idsync_click?slug=m0QXBDxn9D&idb=AAAAEICQZCdRGt9LVVUKopkpbU0AQ07jWRf74zU4yw69dywIR5pIMi8LVmWsBuE97QrUNlDigF8RaH5hWS1XPP6nsNz91ijHc_KkxZSgQPReslpj8t9p4F5f7JXjMDTcj40RmGtz4gDt0Hwdh6IublPFfCWYw9uYa4vSDU8NqNePKvbENpWCTrPNRr9pbxrJTTkZUn9_Ke22O_xrmV6lwQPqIAUhFEMKTt-Or8PiC07ky6NJWY9-gvZ7i1KMpZV43TDVDqtl-WCQeF4iKFLMq0ZuGg&tailored_ads=true&ad_tracking=true",
-      "summary": "Twitter Analytics",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57327a65590383aa",
-      "title": "Twitter Analytics",
-      "url": "https://analytics.twitter.com/i/adsct?p_id=Twitter&p_user_id=0&txn_id=nw99g&events=%5B%5B%22viewcontent%22%2Cnull%5D%5D&tw_sale_amount=0&tw_order_quantity=0&tw_iframe_status=0&tpx_cb=twttr.conversion.loadPixels",
-      "summary": "twttr.conversion.loadPixels({}) twttr.conversion.loadPixels({})",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2115,104 +2946,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7f3ca0d60ea85cc7",
-      "title": "Twitter Developer Platform",
-      "url": "https://developer.twitter.com/en/portal/apps/21542338",
-      "summary": "Twitter Developer Platform",
+      "id": "98d352724677d6b9",
+      "title": "volume mixer doesnt go below 1 (even if you're on 0 it still has noise ...",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/volume-mixer-doesnt-go-below-1-even-if-youre-on-0-it-still-has-noise/4034333",
+      "summary": "It looks like a bug in the volume mixer where setting the slider to 0 doesn't fully mute the sound, as it still stays at level 1. While you can manually mute using the icons, the expected behavior should be that 0 completely silences the output.",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8ecb56ace56694de",
-      "title": "Twitter Developer Platform",
-      "url": "https://dev.twitter.com/robots.txt",
-      "summary": "User-agent: * Disallow: User-agent: Twitterbot Disallow: User-agent: QuerySeekerSpider Disallow: / User-agent: DirBuster-0.12 Disallow: / Sitemap: https://developer.x ...",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8eaa81f7801c7e40",
-      "title": "Upcoming movie release countdowns | The Movie Countdown",
-      "url": "https://themoviecountdown.com/",
-      "summary": "Find your next movie and count down to its theatrical release. Browse upcoming movies and opening dates.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "baba373f2d886869",
-      "title": "Volkswagen Dealer near Surprise AZ - peoriavw.com",
-      "url": "https://www.peoriavw.com/volkswagen-dealer-surprise-az.html",
-      "summary": "Surprise, AZ, is growing fast — and so are the needs of its drivers. At Lunde’s Peoria Volkswagen, we’re here to match you with a Volkswagen that fits your active lifestyle, whether you’re commuting toward the city or exploring White Tank Mountain Regional Park.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2237,12 +2976,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "89e004260f63794f",
-      "title": "Volkswagen Dealer Near Surprise, AZ | Berge Volkswagen",
-      "url": "https://www.bergevw.com/surprise-az-volkswagen-dealer/",
-      "summary": "New Volkswagen models are here for you to tour in our showroom near Surprise, AZ. These models range from the timeless Jetta to the vibrant, all-electric Volkswagen ID.",
+      "id": "feab2706d8d78121",
+      "title": "Volume Mixer is all the way down and stuck at 1 locked in grey",
+      "url": "https://forum.vatsim.net/t/volume-mixer-is-all-the-way-down-and-stuck-at-1-locked-in-grey/4745",
+      "summary": "I have reinstalled vPilot and did numerous checks with regards to sound but have not found a solution to why it stays locked at 1%. I have also ran vPilot with and without administrator but the same thing happens.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2255,40 +2994,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "54417ecf9e4e7fc1",
-      "title": "Volkswagen Dealer Peoria AZ | Lunde’s Peoria Volkswagen",
-      "url": "https://www.peoriavw.com/",
-      "summary": "As your local Volkswagen Dealer in Peoria, AZ, we proudly serve the community with new Volkswagen, certified pre-owned Volkswagen and used cars for sale.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
         "community"
       ],
-      "primary_type": "retail",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2298,102 +3006,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "71336b0f82c2d5b4",
-      "title": "Workforce Travel Savings & Solutions | CLC Lodging | Purchasing/Supply ...",
-      "url": "https://account.clclodging.com/psm/Service.cfm",
-      "summary": "More than 575,000 workforce travelers depend on CLC to save money and man-hours on their workforce travel needs. We have been assisting businesses like yours for more than 30 years, providing a full suite of workforce lodging solutions to maximize efficiency:",
+      "id": "58dbb1e313cb93ca",
+      "title": "Wolters Kluwer Health Single SignOn Login - The Point",
+      "url": "https://thepoint.lww.com/Login",
+      "summary": "Login Email Address or Username * Password * Forgot your password? Remember me next time I visit (Not recommended for public or shared computers.)",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ae87af9f9a5e6680",
-      "title": "Workforce Travel Savings & Solutions | CLC Lodging | Travel/Operations ...",
-      "url": "https://account.clclodging.com/tom/Overview.cfm",
-      "summary": "As a leading negotiator of workforce lodging rates, CLC Lodging offers deep discounts, the best hotel network, buying power and billing options to save meaningful time and budget on workforce lodging.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f75e63cb2240ba6c",
-      "title": "www.clchotels.com",
-      "url": "https://www.clchotels.com/",
-      "summary": "We would like to show you a description here but the site won’t allow us.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e6d26beb63cfccaf",
-      "title": "Μετάφραση Google – Ένας προσωπικός διερμηνέας στο τηλέφωνο ή στον ...",
-      "url": "https://translate.google.com/intl/el/about/",
-      "summary": "Μάθετε πώς μπορείτε να μεταφράσετε κείμενο, ομιλία, εικόνες, έγγραφα, ιστοτόπους και πολλά άλλα με τη Μετάφραση Google.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
