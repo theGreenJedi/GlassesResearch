@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "discovered_utc": "2026-10-09T02:25:31+00:00",
+  "source_run": "public-community-scour",
+  "candidates": [
+    {
+      "id": "COMM-20261008-ROKID-LUMEN-NEURAL-BAND",
+      "title": "Rokid Lumen publishes unofficial Meta Neural Band control bridge for Rokid RG",
+      "summary": "Open-source Rokid Lumen uses a reverse-engineered Meta Neural Band Bluetooth protocol to control Rokid RG glasses, launch web apps and route phone notifications. The author reports a band-side handwriting model, but the published demonstration uses simulated gestures and independent end-to-end hardware replication is not established. The project's own security documentation warns that its optional self-arm setup leaves authenticated ADB TCP port 5555 listening on all glasses network interfaces, with non-expiring paired keys; this is a disclosed risk of the unofficial installation, not a vulnerability claim about stock Rokid glasses. The band is unlinked from Meta's ecosystem during claiming and future firmware may break compatibility.",
+      "url": "https://github.com/beyondlevi/rokid-lumen",
+      "source": "github",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "direct",
+      "content_types": [
+        "reverse-engineering",
+        "interoperability",
+        "owner-control",
+        "input",
+        "security",
+        "Rokid-RG"
+      ],
+      "routing_targets": [
+        "development/hacking",
+        "owner control",
+        "security/privacy",
+        "Research & News"
+      ],
+      "triage_priority": "high",
+      "materiality_score": 93
+    },
+    {
+      "id": "COMM-20261008-CYBERNEWS-COMPANION-PRIVACY",
+      "title": "Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps",
+      "summary": "Cybernews published a seven-brand comparison on October 8 using Exodus Privacy static app reports and vendor privacy documents. It reports 70 declared Android permissions (18 Android-classified dangerous) in the scanned Meta AI build, six detected tracker signatures each in INMO Global and Solos AirGo, and none in the scanned Hi Rokid build. The underlying Exodus snapshots include September 2026 versions, so these are version-specific manifest/signature observations, not verified current-build counts, network exfiltration findings, or proof of misuse. Independent secondary analysis; queue for source/version review before turning into GlassesResearch conclusions or Report Card scores.",
+      "url": "https://cybernews.com/ai-news/smart-glasses-privacy/",
+      "source": "specialist_reporting",
+      "evidence_class": "independent_secondary",
+      "delegated_action": "queue_for_review",
+      "relationship": "direct",
+      "content_types": [
+        "privacy",
+        "companion-app",
+        "permissions",
+        "trackers",
+        "methodology"
+      ],
+      "routing_targets": [
+        "privacy/policy",
+        "app ecosystem",
+        "Research & News",
+        "Report Card evidence review"
+      ],
+      "triage_priority": "high",
+      "materiality_score": 89
+    },
+    {
+      "id": "COMM-20261008-TDK-META-OPTIC-DRP",
+      "title": "TDK announces 150 nm meta-optic mirror prototype for retinal-projection smart glasses",
+      "summary": "TDK's October 2 manufacturer announcement says it demonstrated a direct-retinal-projection smart-glasses prototype with a 150 nm flat meta-optic mirror embedded in a lens and approximately 80% visible-light transmission. The current mirror demonstration is monochrome; the cited 4K-capable laser-control technology and future full-color goal must not be misrepresented as a 4K full-color glasses prototype. TDK plans to exhibit the prototype at CEATEC from October 13. Treat claimed first-of-kind, transparency, eye-box/visual quality and manufacturability as manufacturer assertions pending independent measurements; this is an enabling optical technology, not a buyable glasses model.",
+      "url": "https://www.tdk.com/en/news_center/press/20261002_01.html",
+      "source": "manufacturer",
+      "evidence_class": "manufacturer_primary",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "enabling",
+      "content_types": [
+        "optics",
+        "retinal-projection",
+        "meta-optics",
+        "prototype",
+        "display-engine"
+      ],
+      "routing_targets": [
+        "deep research",
+        "display technology",
+        "Research & News"
+      ],
+      "triage_priority": "high",
+      "materiality_score": 90
+    }
+  ]
+}
