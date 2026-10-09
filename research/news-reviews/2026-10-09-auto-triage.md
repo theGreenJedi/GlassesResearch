@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-09T18:08:33.812428+00:00`
+Generated: `2026-10-09T21:47:15.957943+00:00`
 
-- Intake files inspected: **266**
-- Candidates retained in this review window/history: **10237**
+- Intake files inspected: **264**
+- Candidates retained in this review window/history: **10426**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2294
+- `adjacent_radar`: 2279
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 595
-- `rejected_noise`: 7237
-- `source_review`: 48
-- `watching`: 47
+- `needs_editorial_verification`: 586
+- `rejected_noise`: 7448
+- `source_review`: 51
+- `watching`: 46
 
 ## Action queue
 
@@ -29,8 +29,6 @@ Generated: `2026-10-09T18:08:33.812428+00:00`
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
 | high | needs_editorial_verification | direct | [Meta unveils $1,299 VR glasses, camera-free AI glasses and Muse Charm; India launch yet to be announced - ibtimes.co.in](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSnVhRVc4RU5CUkxFc29jQ29sdy1qc1pEZUlpSnlOWUlETDRuRDVSRDh0TzJtbXBzNTRhLXNNaGRhb3hyY3RTSEtSTEd1OGk1cUZrOHZRb1ZQQWJfZWFVZERJMXdzYlVuUTdNNnNXcG5HWS16QXJ1X0VPQWhYRmgzVl9VT0FQU0loOHd4RHYzV05sVEFzcUVURENfOGJzMzRFYXVHRVUzazRUd3k0OTZOdVNaZWl0bVJ1VVppNHA0T3MzSmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.371](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.371) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.382](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.382) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.388](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.388) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.391](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.391) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.398](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.398) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -155,9 +153,10 @@ Generated: `2026-10-09T18:08:33.812428+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.764](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.764) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.765](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.765) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.766](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.766) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.767](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.767) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.770](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.770) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - Daily Hive](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1PQU5LUVNiTFd5VXFCcm9ncUpJQjYwWVRoTTRWZTQxdXY4dkhZOHdQX082cFFpbWI4NEJJYXQ3eUN5NFYtT1VrYk5MNVQ4S0V3ZV95cWFndVV6Q29yd1lHSS00bUdiWDQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - Daily Hive](https://news.google.com/rss/articles/CBMia0FVX3lxTE92a3RtRVk2Ql91d0tIbWhLMXZyTm4tejhNYnBaXzB0Q0xGS21nUWNabl8zSjRrYnoyYlhyVGpFWWFrdnkyY0lKcGFSOXBTcG9OS1pmYTEzbVp0WWlyMEQ1bThVcjEtWE10LUJv?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [EssilorLuxottica falls despite new AI glasses launch with Meta - Investing.com](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYjQtOVdyZ01HbjV1X0lQLV9FRk5wdDRrN0tqc0g3dTBFazFhMDBDQmdPWWJxVndscjVfZmd2aDdpemRCLTBOYXdwNWlIcEpObjVTWmszU3NMLUVya3BZdEtkWUJ6WmJnZVVzQ3dTWVZ5akxLakprQjlUSXdmSFo0OEg0UkIxR3JwX0tMTVlSV2xjRG5ZUklsWDZUYUx2SWEzeVFWUGY4OThmY2tKU1pmTlpPdGg4c2pDX19z?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
@@ -221,7 +220,6 @@ Generated: `2026-10-09T18:08:33.812428+00:00`
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Gen 3 Holds 1,000 High-Res Photos with 32GB of Storage - Geeky Gadgets](https://news.google.com/rss/articles/CBMiakFVX3lxTE5DT3lSZ1NncmFaRmtpeXljNFdxSkIwZDkzVlYxX3h3UUpHUlN2TWZnVHNZWEtyeEZqb3pWaUFqMWhNa3IwM3lNYzlUOWdWYmpGTThKdnNKMG1hTWl1YmFCay12NDhiRFlaTVE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Philippines Launch Confirmed at Meta Connect - gadgetpilipinas.net](https://news.google.com/rss/articles/CBMifEFVX3lxTE9YWmJreE9tWEZXTm1hTGExZE9xWkNkUm05NHdOTjZjMXgtcS0wTEZUTmV0YklpNTJ2czg2dU1IWXJUS2g3TWZFd3Q3eDBPSWVtN2FIeVpheHFncnNGTW1xNFFxYjllZjc4SE12M2tYYl85bVpDa3JHR0xQcHM?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta to Launch in the Philippines - manilashaker.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE1FNXN4d0JObWo4UC1FcndqSl9rYkkxUlNuQldkVGpoTm5HanlOa2ZOYmFVOXB3THpHalltWF90RHRNU2Jrd1RHem9yTy0yMm9OMWNRUUljSHNZRG8tZnJwcnZldlRFMVlyRzF3enYxQWlCU0JkM0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Ray-Ban Meta Unveils Largest Smart Eyewear Collection with Gen 3 Launch - Indian Retailer](https://news.google.com/rss/articles/CBMiygFBVV95cUxPOEtnOEN2TTVybV95emNMZkRtVzJpc1RBTm4zSWNTOV8zNVZnLXRjZEVGQ3Z1M2xiWDFUNU8wRDg4bnJtZUFyanhWSUlaWGdkLWxFSUR2eTBPTU5scUdYbXhKTzB2eEdGMERldlNlbmRNYzl0dzFUU0RPTW9KeGxDRWJiQW9tcDdfanhEZ3UtQzZ6VVFMVTVYeUZlVXFiQWduSE9tLWxqWFFCbmU5UkYwRllZTnFrbzhtOWJsc3NNQk9TSEhYMFd0Z0FR?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Road to VR 2d ago Norway Proposes Temporary Ban on Smart Glasses in Public Places Coverage Industry](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Samsung official confirms first smart glasses launch in November - phandroid.com](https://news.google.com/rss/articles/CBMipAFBVV95cUxPenAweEEzODJkS2FKZm5XZElPbTM4Yjd1d2J2c3o4UjdmVUtYVFljODRJVVNoTWE4YkhWSDIxNE80bWNCQ1NTakhFWUhxY210WHlqZzY0Y2lDUEIwTFdNbWRrcVBCbUdOZkxLbmVmdzlQWm4yWHlrRkFRYjNid2F1YzR6MGJoT1JVNHY5U3d0X2hyRG0tNzRjMEdsTklvMy0zOHBhR9IBpAFBVV95cUxPenAweEEzODJkS2FKZm5XZElPbTM4Yjd1d2J2c3o4UjdmVUtYVFljODRJVVNoTWE4YkhWSDIxNE80bWNCQ1NTakhFWUhxY210WHlqZzY0Y2lDUEIwTFdNbWRrcVBCbUdOZkxLbmVmdzlQWm4yWHlrRkFRYjNid2F1YzR6MGJoT1JVNHY5U3d0X2hyRG0tNzRjMEdsTklvMy0zOHBhRw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung official confirms first smart glasses launch in November - phandroid.com](https://news.google.com/rss/articles/CBMinwFBVV95cUxPcFk3NVYtVTJJMldzN2paUHhIdTZjX2VIN2JVaE1mMExtbmxCU0pRZXZaZ3ZKSGh6WFg1OVlTVmx1aWJrSFJ4bVdTTTNOdHpvcktMYl96Y1hTRUlZd2VLRDZkV0JFdnBiTHRQZE05a1d5ODJtcHZKREJ5MTVybUF0TjNRU0JUNE9QY2xRX0FyTDdQLXc4STBKN0FCZ1NaSlnSAaQBQVVfeXFMT3pwMHhBMzgyZEthSmZuV2RJT20zOGI3dXdidnN6OFI3ZlVLWFRZYzg0SVVTaE1hOGJIVkgyMTRPNG1jQkNTU2pIRVlIcWNtdFh5amc2NGNpQ1BCMExXTW1ka3FQQm1HTmZMS25lZnc5UFpuMlh5a0ZBUWIzYndhdWM0ejBiaE9SVTR2OVN3dF9ockRtLTc0YzBHbE5JbzMtMzhwYUc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -265,12 +263,14 @@ Generated: `2026-10-09T18:08:33.812428+00:00`
 | normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI眼镜公司「比特幻境」完成数亿元天使轮融资 - 品牌方舟](https://news.google.com/rss/articles/CBMiS0FVX3lxTFB5X0FFUDJtMWVJbjFsT1hjNnNmRVl0ZHRRbW1lOUp5Unhva0Jrb2V5Zm5qZGcxY1JRWWhuNktZUDVBak0yZDFxRjM4NA?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜初创公司NIMO完成数亿元天使轮融资 - 87870](https://news.google.com/rss/articles/CBMicEFVX3lxTE4tSFljTUwtM0NsUHFJVy03VnlocTlYRlFqWnI1UGFWVFNLTjJvamNxTXROQ2lkaXlLeVVDRm1xX0hMZHVpbzdqNVdaQjVHR3ZxTVpYdE1weEF2ekJGaENTM1V2NXJVUVB1NXRTM20xOFM?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Android Central 1d ago These smart glasses put a 171-inch screen right in front of your eyes, and they're $50 off Coverage Xreal](https://www.androidcentral.com/wearables/xreal-one-pro-ar-prime-big-deal-days-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Android Central 2d ago Xreal Aura official pricing revealed: Priority Deposit remains active as we look to the holidays Coverage Xreal](https://www.androidcentral.com/gaming/virtual-reality/xreal-aura-official-pricing-revealed-priority-deposit-remains-active-as-we-look-to-the-holidays) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR Insider 13h ago AI/XR Beats: Xreal Aura Prices Up, Cinematic AI Presses On Coverage Xreal](https://arinsider.co/2026/10/09/ai-xr-beats-xreal-aura-prices-up-cinematic-ai-presses-on/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Auganix 24d ago ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Auganix Sep 3, 2026 TDK Acquires OQmented Assets to Strengthen Smart Glasses Display Business](https://www.auganix.org/ar-news-tdk-acquires-oqmented-assets/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best Smart Glasses Compared: Side-by-Side Review (2026)](https://smartglasses.computer/blog/best-smart-glasses-compared-2026) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Best smart glasses in 2026: Top AR and AI glasses worth your money ...](https://www.tomsguide.com/computing/vr-ar/best-smart-glasses) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
