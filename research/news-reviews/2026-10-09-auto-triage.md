@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-09T05:09:21.472681+00:00`
+Generated: `2026-10-09T09:20:22.227056+00:00`
 
-- Intake files inspected: **269**
-- Candidates retained in this review window/history: **10139**
+- Intake files inspected: **266**
+- Candidates retained in this review window/history: **10080**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2275
+- `adjacent_radar`: 2270
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 597
-- `rejected_noise`: 7159
-- `source_review`: 47
-- `watching`: 45
+- `needs_editorial_verification`: 592
+- `rejected_noise`: 7110
+- `source_review`: 46
+- `watching`: 46
 
 ## Action queue
 
@@ -28,9 +28,7 @@ Generated: `2026-10-09T05:09:21.472681+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA opens paid full-payment preorder with $1,279 base price](https://us.shop.xreal.com/products/xreal-aura) | reachable (200) | model lifecycle, Research & News |
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
-| high | needs_editorial_verification | direct | [Meta has announced 'Ray-Ban Meta Audio,' smart glasses without a camera, boasting up to 12 hours of battery life and shipping starting Octob](https://news.google.com/rss/articles/CBMibEFVX3lxTE1qOVd2aU82Ri1fZ1NOYng5YXpNR1UtZFE1Z09tSl92ZVRTeDZxd1NRaFJfMEt0cUtERzJ3cWIwUlpyTjA2NHM0eGE3N3ZLT0xxTG16NXE1NXVlQS1ORExGN3pjVGFzVUYxeGJpaA?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta unveils $1,299 VR glasses, camera-free AI glasses and Muse Charm; India launch yet to be announced - ibtimes.co.in](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSnVhRVc4RU5CUkxFc29jQ29sdy1qc1pEZUlpSnlOWUlETDRuRDVSRDh0TzJtbXBzNTRhLXNNaGRhb3hyY3RTSEtSTEd1OGk1cUZrOHZRb1ZQQWJfZWFVZERJMXdzYlVuUTdNNnNXcG5HWS16QXJ1X0VPQWhYRmgzVl9VT0FQU0loOHd4RHYzV05sVEFzcUVURENfOGJzMzRFYXVHRVUzazRUd3k0OTZOdVNaZWl0bVJ1VVppNHA0T3MzSmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.366](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.366) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.369](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.369) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.371](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.371) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.382](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.382) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -150,6 +148,8 @@ Generated: `2026-10-09T05:09:21.472681+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.752](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.752) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.753](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.753) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.755](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.755) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.756](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.756) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.757](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.757) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - Daily Hive](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1PQU5LUVNiTFd5VXFCcm9ncUpJQjYwWVRoTTRWZTQxdXY4dkhZOHdQX082cFFpbWI4NEJJYXQ3eUN5NFYtT1VrYk5MNVQ4S0V3ZV95cWFndVV6Q29yd1lHSS00bUdiWDQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -270,7 +270,7 @@ Generated: `2026-10-09T05:09:21.472681+00:00`
 | normal | needs_editorial_verification | direct | [Auganix Sep 3, 2026 TDK Acquires OQmented Assets to Strengthen Smart Glasses Display Business](https://www.auganix.org/ar-news-tdk-acquires-oqmented-assets/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses Compared: Side-by-Side Review (2026)](https://smartglasses.computer/blog/best-smart-glasses-compared-2026) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best smart glasses in 2026: Top AR and AI glasses worth your money ...](https://www.tomsguide.com/computing/vr-ar/best-smart-glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | enabling | [Calagaz Photo and Digital Imaging \| Mobile, AL](https://calagaz.com/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
+| normal | needs_editorial_verification | direct | [Even Realities' app 2.3.2 needs new firmware on both the G2 glasses and the R1 ring - mixed-news.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQZVZrWnFJeWlfVGlLdlVieE5CSzc2NnBxR1VuTTZUbG4xLW5tcUt1b0hNMnRNR3ktVm5WYnJqNnBjdlVxdE11LTROZ2x6ZEE2Zk5uSU1zZ0ZfZ29udS1OTzNYSEdRVzhuN01YNUdSTHZRWWdSa2dPSG11dWJfSTEtZnVpazBfdw?oc=5) | reachable (200) | research_news_review, development_hacking |
 
 ## Meaning of states
 
