@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-09T10:58:34.206617+00:00`
+Generated: `2026-10-09T11:32:16.359139+00:00`
 
 - Intake files inspected: **267**
 - Candidates retained in this review window/history: **10083**
@@ -12,9 +12,9 @@ Generated: `2026-10-09T10:58:34.206617+00:00`
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 595
+- `needs_editorial_verification`: 596
 - `rejected_noise`: 7110
-- `source_review`: 45
+- `source_review`: 44
 - `watching`: 47
 
 ## Action queue
@@ -265,12 +265,12 @@ Generated: `2026-10-09T10:58:34.206617+00:00`
 | normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI眼镜品牌「NIMO」宣布完成数亿元人民币天使轮融资 - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPd1ZXVXlwOEpNY1ZJOVhxbDBtS2pkem5pQllySHY5UkZNN2dLMmhPQXdWamllUG9BekUweXU0OXBiaEdNLTdFTS1VUFRub3MzQ0YtTW5DcGJmZWdZWjlVd21Ta3JleDZadk1SaERwN3dLUHJySk8zWXNMZlFxRjhZQm5jczdfcTFa?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜新玩家NIMO杀入战场，数亿元融资背后藏着什么？ - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNd0NQWXp4U3hzY1NTU3owVUVIWF9rTHdkazhkRGdncm55RW13dlRrYUFONGpianI5a0cxb0ZydjJVeU53X2o1VjJOdVpjT2FpX2V3WjNFZzBtQ3RsSjQ3ZGh5NENtMXdndnZHaGNBRkt4UzhQSXU2b0pQNmh3X2VzakFfbWxhTWFR?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Smart Glasses](https://www.amazon.com/ai-smart-glasses/s?k=ai+smart+glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Android Central 1d ago These smart glasses put a 171-inch screen right in front of your eyes, and they're $50 off Coverage Xreal](https://www.androidcentral.com/wearables/xreal-one-pro-ar-prime-big-deal-days-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Android Central 1d ago Xreal Aura official pricing revealed: Priority Deposit remains active as we look to the holidays Coverage Xreal](https://www.androidcentral.com/gaming/virtual-reality/xreal-aura-official-pricing-revealed-priority-deposit-remains-active-as-we-look-to-the-holidays) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Auganix 23d ago ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Auganix Sep 3, 2026 TDK Acquires OQmented Assets to Strengthen Smart Glasses Display Business](https://www.auganix.org/ar-news-tdk-acquires-oqmented-assets/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Best Smart Glasses Compared: Side-by-Side Review (2026)](https://smartglasses.computer/blog/best-smart-glasses-compared-2026) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
