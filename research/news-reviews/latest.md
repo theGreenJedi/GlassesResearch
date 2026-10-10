@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-10T08:39:02.753570+00:00`
+Generated: `2026-10-10T10:10:18.449212+00:00`
 
 - Intake files inspected: **260**
-- Candidates retained in this review window/history: **10624**
+- Candidates retained in this review window/history: **10620**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
@@ -12,9 +12,9 @@ Generated: `2026-10-10T08:39:02.753570+00:00`
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 582
+- `needs_editorial_verification`: 575
 - `rejected_noise`: 7704
-- `source_review`: 52
+- `source_review`: 55
 - `watching`: 44
 
 ## Action queue
@@ -28,8 +28,6 @@ Generated: `2026-10-10T08:39:02.753570+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA opens paid full-payment preorder with $1,279 base price](https://us.shop.xreal.com/products/xreal-aura) | reachable (200) | model lifecycle, Research & News |
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
-| high | needs_editorial_verification | direct | [Meta unveils $1,299 VR glasses, camera-free AI glasses and Muse Charm; India launch yet to be announced - ibtimes.co.in](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSnVhRVc4RU5CUkxFc29jQ29sdy1qc1pEZUlpSnlOWUlETDRuRDVSRDh0TzJtbXBzNTRhLXNNaGRhb3hyY3RTSEtSTEd1OGk1cUZrOHZRb1ZQQWJfZWFVZERJMXdzYlVuUTdNNnNXcG5HWS16QXJ1X0VPQWhYRmgzVl9VT0FQU0loOHd4RHYzV05sVEFzcUVURENfOGJzMzRFYXVHRVUzazRUd3k0OTZOdVNaZWl0bVJ1VVppNHA0T3MzSmc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.413](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.413) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.414](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.414) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.415](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.415) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.416](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.416) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -246,7 +244,6 @@ Generated: `2026-10-10T08:39:02.753570+00:00`
 | high | needs_editorial_verification | direct | [XREAL xbx a01 Plus AR Glasses drop to $254 in first discount since launch - Android Authority](https://news.google.com/rss/articles/CBMigwFBVV95cUxOUkhHWndxRWlndkYtaVRCcktWdWF6aUtfbWF3U2FpcGhhY3JUZ0FOUXlaUklqNnQwRnY1RkFhZ2JNakZZUVd6OVdoYWNhNWdBQ2lubFZ2QXQ5TUx2NHlpV1AzNnlvVEM4TTRBaUtBQUVRYUJsa3JSZE55N3lPdTBkMGpkSQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Xreal's Aura store page lists four versions its own FAQ says are not announced - MIXED Reality News](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX01JSkFseVhPVFJycl91ZXB0OW5oa1VpTmJfWG9wTTlmTy1UOU5HN1JXVEZ3Nk1xeE9lMVJDc1h0VzdPVVp0UFNXcjVraHlfeTdmT3FRMzhuendaR1NJSUN0dkZCVGt3bXplTnl1S2tUdTcxUDdxMzdFRXU4UnpCaDJYa3hkTmZV?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [Meta makes big bets on AI and smart glasses amidst security storms - news.laodong.vn](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY0pCT29ESVBBcEwwcS1oQ05xN0VCbmVDR2pYZVBXbmlQS1IxV2MwWGdZeV9lczBNa0tiTTBZTjc2NzUxT2ZIZ0RUZUxRSjFnNVpLb2F4a0tqaUlIb3RlRFRCbC1WazI2NG9QV1hIeTg4N3RoZ0QxX0p0NW5iRjBkVkY2SzZoMVlsMFByaFl5QU9aSTluMFZselNFeWxRZXNaV0FlZVpJYkNBeDQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [XREAL XBX A01+ Review: $299 AR Glasses, Tested and Compared (2026)](https://monarchxr.com/xreal-xbx-a01-plus-review/) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | ["AI 안경 100대 중 94대는 메타"…시장 독주 체제 \| - 하이테크정보](https://news.google.com/rss/articles/CBMibEFVX3lxTE9fXy1ZS3JKVmRQbV9FQ1FMUk5CLXRXZXlGQlZ0Y2xOcHRfTnBVNmZNSTJvWUNxUFZsZDE2ZjFpdHJYd2QzdmRwTGdYOE94VzNXUHlkbmpaa0poejAzMGplVlZtaU1qZ0Jma0hWVA?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ["It's both brilliant and profoundly unsettling at the same time" – I finally had a hands-on test of the new Meta Ray-Ban Display glasses - D](https://news.google.com/rss/articles/CBMigAJBVV95cUxNZ1JJcXV2Y1RCdXpSZ2RzLVJxQUdaWGdycEFuMS1QMmNFbzNndWlWem5xS3NYS0NtS283bUZiNmFpcHhYMXNTdmp4azV6WVpIUy1HSDk3cTBjY2ZmOTRSN052bDdqWjNlaGhDaGZPUHZpOG9SNXBMX3d1R3RKUzYtcHBJeUxpY0oxekVjN2RBT3ZUcWIyQ2ZVeHRpcUZyUFZ0a193aWEzMWI4NlNnQ3hrN0ZGa3pZRlV5V0lSazNPVWZEQ3UzWnJra0N4Tm5YRVI1U1NoSUdjWlJvemprNi1jelZCZ1lQZ2wwVmJFYmdlMTRiTTRJZEhzWGp1V1kxLWlt?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [100多副AI眼镜集体亮相国际峰会，背后是一家中国科技公司 - 新浪网](https://news.google.com/rss/articles/CBMif0FVX3lxTE5nUW04NW50UF9yUTBTamp5SGo0anNnM1VQbGNmVFFYYlNURmlWSHBiYjFtT25vX0RhV21TOThlbExxb2RmdjU2LWFFMUVOZXBtbS1sanR6bUNJOEl2UVBaVFFZaUREbm8taVc2eXJnZHE2SkdqaEdhb041WWZ0ZVk?oc=5) | reachable (200) | research_news_review |
@@ -271,6 +268,9 @@ Generated: `2026-10-10T08:39:02.753570+00:00`
 | normal | needs_editorial_verification | direct | [Did someone wearing Meta Glasses film you today? Are you sure? – The Guardian - PSU Sites](https://news.google.com/rss/articles/CBMivAFBVV95cUxPT2pQTmdLTGViRjgwN3JnUVpSaV80bmw3bmVXN0pndG5uRVdpVWt1TE5mcDVULUJCSzRwYS1lbWtyazNTeTZ1RFZWUzhRdElra3FlbGlCcmhIZ1lSUTVZREtZajRjekFCVjlVY3JUS3NKTGRqaEg3YWlodzJHQTNjdjhublU5ZDJtb2NkSU1sS2Ztd3ZqcTVYME5Gd3I4OW9CNXAtbDJBMkM4bkoyc1NlRWdIRVY1dXplZ09NSg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [EO Adapt Smart Glasses review: mabilis na features at verdict \| TikTok](https://www.tiktok.com/@burnvlog/video/7675008571389594900) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [Even Realities microdrama explores the horrors of smart-glasses surveillance - Ad Age](https://news.google.com/rss/articles/CBMibEFVX3lxTE85UDMzcUFtYjVxOEFlM09oLUdRajJnZ1hWMGlXN01VTmFISXlWcmhXeDRVLXVBOEIwQWpPQ2dONm5pTGhNTk5FRzdkVVBreThBaEVseDE1enJoOWFhWHVObmlGdUN3MlJoUEpQYQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Even Realities' app 2.3.2 needs new firmware on both the G2 glasses and the R1 ring - mixed-news.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQZVZrWnFJeWlfVGlLdlVieE5CSzc2NnBxR1VuTTZUbG4xLW5tcUt1b0hNMnRNR3ktVm5WYnJqNnBjdlVxdE11LTROZ2x6ZEE2Zk5uSU1zZ0ZfZ29udS1OTzNYSEdRVzhuN01YNUdSTHZRWWdSa2dPSG11dWJfSTEtZnVpazBfdw?oc=5) | reachable (200) | research_news_review, development_hacking |
+| normal | needs_editorial_verification | direct | [First Look: Project Aura — The Next Step in XR for Android XR and Gemini](https://www.xreal.com/blog/aura-25-tas-release-en) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
+| normal | needs_editorial_verification | enabling | [Foundation for Polish Science - A two-photon vision-based retinal display for augmented reality applications - Fundacja na rzecz Nauki](https://news.google.com/rss/articles/CBMilwFBVV95cUxPaGswWTFEV3o2NWJTVDB2Ym1sM1ZyOFZpZWZWc1ZSREVkTURjOF9fSW9ndFVscXhYY2ZRYmEteFJxcENfVDhaNWxheXpIUGtkMkhod0dldTNEaV9kRnhBNV9PcVQ4M1RIdDlUUXRFOVBVQzVOX0M4OGdfcThZMVpxOGZNRmtmWGlqbG1PWEJKb3BNaFkwcGNj?oc=5) | reachable (200) | research_news_review, research_optics |
 
 ## Meaning of states
 
