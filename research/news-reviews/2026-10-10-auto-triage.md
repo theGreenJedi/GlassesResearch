@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-10T08:15:17.948079+00:00`
+Generated: `2026-10-10T08:39:02.753570+00:00`
 
-- Intake files inspected: **259**
-- Candidates retained in this review window/history: **10568**
+- Intake files inspected: **260**
+- Candidates retained in this review window/history: **10624**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2217
+- `adjacent_radar`: 2226
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 583
-- `rejected_noise`: 7657
-- `source_review`: 51
+- `needs_editorial_verification`: 582
+- `rejected_noise`: 7704
+- `source_review`: 52
 - `watching`: 44
 
 ## Action queue
@@ -258,7 +258,6 @@ Generated: `2026-10-10T08:15:17.948079+00:00`
 | normal | needs_editorial_verification | direct | [AI Prescription Glasses Guide: Smart Eyewear for Vision Correction](https://www.evenrealities.com/blogs/buyers-guide/ai-prescription-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses with Prescription \| Smart Glasses with Rx ...](https://eydology.com/collections/ai-smart-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Android Central 2d ago These smart glasses put a 171-inch screen right in front of your eyes, and they're $50 off Coverage Xreal](https://www.androidcentral.com/wearables/xreal-one-pro-ar-prime-big-deal-days-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Android Central 2d ago Xreal Aura official pricing revealed: Priority Deposit remains active as we look to the holidays Coverage Xreal](https://www.androidcentral.com/gaming/virtual-reality/xreal-aura-official-pricing-revealed-priority-deposit-remains-active-as-we-look-to-the-holidays) | reachable (200) | research_news_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-10T08:15:17.948079+00:00`
 | normal | needs_editorial_verification | enabling | [Calagaz Photo and Digital Imaging \| Mobile, AL](https://calagaz.com/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [Did someone wearing Meta Glasses film you today? Are you sure? – The Guardian - PSU Sites](https://news.google.com/rss/articles/CBMivAFBVV95cUxPT2pQTmdLTGViRjgwN3JnUVpSaV80bmw3bmVXN0pndG5uRVdpVWt1TE5mcDVULUJCSzRwYS1lbWtyazNTeTZ1RFZWUzhRdElra3FlbGlCcmhIZ1lSUTVZREtZajRjekFCVjlVY3JUS3NKTGRqaEg3YWlodzJHQTNjdjhublU5ZDJtb2NkSU1sS2Ztd3ZqcTVYME5Gd3I4OW9CNXAtbDJBMkM4bkoyc1NlRWdIRVY1dXplZ09NSg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [EO Adapt Smart Glasses review: mabilis na features at verdict \| TikTok](https://www.tiktok.com/@burnvlog/video/7675008571389594900) | reachable (200) | research_news_review, report_card_evidence, research_optics |
+| normal | needs_editorial_verification | direct | [Even Realities microdrama explores the horrors of smart-glasses surveillance - Ad Age](https://news.google.com/rss/articles/CBMibEFVX3lxTE85UDMzcUFtYjVxOEFlM09oLUdRajJnZ1hWMGlXN01VTmFISXlWcmhXeDRVLXVBOEIwQWpPQ2dONm5pTGhNTk5FRzdkVVBreThBaEVseDE1enJoOWFhWHVObmlGdUN3MlJoUEpQYQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
