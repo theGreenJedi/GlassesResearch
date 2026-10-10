@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-10T14:32:35.971122+00:00`
+Generated: `2026-10-10T15:28:45.698285+00:00`
 
-- Intake files inspected: **258**
-- Candidates retained in this review window/history: **10581**
+- Intake files inspected: **259**
+- Candidates retained in this review window/history: **10663**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2203
+- `adjacent_radar`: 2214
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 576
-- `rejected_noise`: 7689
-- `source_review`: 54
+- `needs_editorial_verification`: 580
+- `rejected_noise`: 7760
+- `source_review`: 50
 - `watching`: 43
 
 ## Action queue
@@ -22,6 +22,7 @@ Generated: `2026-10-10T14:32:35.971122+00:00`
 | Priority | State | Relationship | Candidate | Source check | Routes |
 |---|---|---|---|---|---|
 | high | needs_editorial_verification | direct | [Rokid Lumen publishes unofficial Meta Neural Band control bridge for Rokid RG](https://github.com/beyondlevi/rokid-lumen) | reachable (200) | development/hacking, owner control, security/privacy, Research & News |
+| high | needs_editorial_verification | direct | [MentraOS adds version-verified Private Cloud bootstrap](https://github.com/Mentra-Community/MentraOS/commit/801ee044144fe964eaa24e8b7c3b1326458c931b) | reachable (200) | development/hacking, cloud independence, owner control |
 | high | needs_editorial_verification | direct | [OpenVision 2.14 adds ChatGPT/SuperGrok sign-in and follows with Keychain credential fix](https://github.com/rayl15/OpenVision) | reachable (200) | development/hacking, owner control, deep research |
 | high | needs_editorial_verification | direct | [Qdrant Edge demonstrates local-first visual memory for smart glasses](https://github.com/qdrant/qdrant-edge-demo) | reachable (200) | development/hacking, cloud independence, deep research |
 | high | needs_editorial_verification | direct | [XREAL AURA opens paid full-payment preorder with $1,279 base price](https://us.shop.xreal.com/products/xreal-aura) | reachable (200) | model lifecycle, Research & News |
@@ -154,6 +155,7 @@ Generated: `2026-10-10T14:32:35.971122+00:00`
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Canada-wide recall issued for AI smart glasses due to burn hazard - Daily Hive](https://news.google.com/rss/articles/CBMia0FVX3lxTE92a3RtRVk2Ql91d0tIbWhLMXZyTm4tejhNYnBaXzB0Q0xGS21nUWNabl8zSjRrYnoyYlhyVGpFWWFrdnkyY0lKcGFSOXBTcG9OS1pmYTEzbVp0WWlyMEQ1bThVcjEtWE10LUJv?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [EssilorLuxottica falls despite new AI glasses launch with Meta - Investing.com](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYjQtOVdyZ01HbjV1X0lQLV9FRk5wdDRrN0tqc0g3dTBFazFhMDBDQmdPWWJxVndscjVfZmd2aDdpemRCLTBOYXdwNWlIcEpObjVTWmszU3NMLUVya3BZdEtkWUJ6WmJnZVVzQ3dTWVZ5akxLakprQjlUSXdmSFo0OEg0UkIxR3JwX0tMTVlSV2xjRG5ZUklsWDZUYUx2SWEzeVFWUGY4OThmY2tKU1pmTlpPdGg4c2pDX19z?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [RayNeo iO AR Glasses Launch for $449 with 48-Hour Battery - Geeky Gadgets](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBhOWhLWi0xRFhVeFk1S0tvbVBaNmtoa3IyZ1JVYU5BdlZIdVBZQW1TNWlhaEdZZDRLR1dPUzdjRjNhUE1nOGJXRXUwLWlXVHVtRnhybjdzVFNpa1pPZHpSMklvQ2c?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung 1st AI Glasses Launch in November Powered by Google Gemini: Report - LatestLY](https://news.google.com/rss/articles/CBMivwFBVV95cUxPdUJfTXRyYURkN2M2NVplZVpZQTVRR2JUanFMbkdURTY5Tmh3Ym9IX29idVVxXy1sZ25GRV9QeTY0aktxVjg2NTV5TWhZeU51ZzVqWDdHX2tIRDJycnl6WHhqTi1Kc2R2anFNcnc2eEFvZDhERC1JcExGRDNJc1ZwVUV4ZUtRSEZnUHBqZGx5SXJSQ3NMWmM1UlVhckZiVWk1cFQteVJsOFljcS1fekQzMENDZWV5eWh0T1dTRHB5RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung 1st AI Glasses Launch in November Powered by Google Gemini: Report - latestly.com](https://news.google.com/rss/articles/CBMixAFBVV95cUxQS0dTdFRycm5yTE1qNFRXMUhjRVVrSTZHQ0wtZ2tGR0JKYUhNYzlycWdTRlRNTEhFYUVLZlRtZ0Z2YVN3VFZEVWhQWmkwZ2ZldFhEU2xzSDUyQi1pY2Y0eXRNeVVrdHFmN2ZneGtYREhwaHg2eXJKbXRsNmp5RTBvN0t0UGUxdkpHX3hUeW96Zm9DZ216dy1TLVhqaS0xOEkyaWpIeE5JUjJhSmZIV2RNS2FKVkhYLW5zR1ZweVRMa1E5cnN60gHEAUFVX3lxTFBLR1N0VHJybnJMTWo0VFcxSGNFVWtJNkdDTC1na0ZHQkphSE1jOXJxZ1NGVE1MSEVhRUtmVG1nRnZhU3dUVkRVaFBaaTBnZmV0WERTbHNINTJCLWljZjR5dE15VWt0cWY3Zmd4a1hESHBoeDZ5ckptdGw2anlFMG83S3RQZTF2SkdfeFR5b3pmb0NnbXp3LVMtWGppLTE4STJpakh4TklSMmFKZkhXZE1LYUpWSFgtbnNHVnB5VExrUTlyc3o?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -269,8 +271,6 @@ Generated: `2026-10-10T14:32:35.971122+00:00`
 | normal | needs_editorial_verification | direct | [Duas redes suspendem venda de óculos inteligentes da Meta na Holanda após dúvidas sobre gravações e privacidade - O POVO](https://news.google.com/rss/articles/CBMi-wFBVV95cUxNWEhDbS15VkgtTV9wRXNSZTlxa1pmUnBpX0IwdlhlbkNHaDUtZEp5TjJnam84NnQ3RFljNjczcFNOUEg3NWFtMHVfRUY1QWZUMXNIb05HUTQ3aWotUGpTVTNIYzByQl8xbE5NSDZTZmRKZWZKYXhoai13RWlPVU5nZmxfNDhXUldzalFrcW9JOHREb1VXR1huZ1ZXYkhndS03WktYWFFMMzVhOXNsUjhpb05JNWw2QXU1b0pMYWZuWXpUY0NxcmozeFNvM04wVlBVOWtTODRVUEp6b1N4Um5oVmlhMHBEczE0M0dyakNTTmdaT1JQN0o4bGZpRQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [ENGO发布28.9克钛合金AR眼镜，面向公路跑者与骑行者 - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQ0dQVWtuWGpuOVFnRlhORGl0U2ZmRmNac3ctbmMzVDBDM1V5SXhneTdOVFBvN0tpNmJ0OE84bGRBT21IUU95WGdDY0VYMmVJNTQtZzNwcmcyLUstQ0tmVDlSaU5YTlVuaE1mRTU3OHZITXVxQ2NIUEE5XzhjOXJCdUtjNnRsMU9I?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [EO Adapt Smart Glasses review: mabilis na features at verdict \| TikTok](https://www.tiktok.com/@burnvlog/video/7675008571389594900) | reachable (200) | research_news_review, report_card_evidence, research_optics |
-| normal | needs_editorial_verification | direct | [Even Realities microdrama explores the horrors of smart-glasses surveillance - Ad Age](https://news.google.com/rss/articles/CBMibEFVX3lxTE85UDMzcUFtYjVxOEFlM09oLUdRajJnZ1hWMGlXN01VTmFISXlWcmhXeDRVLXVBOEIwQWpPQ2dONm5pTGhNTk5FRzdkVVBreThBaEVseDE1enJoOWFhWHVObmlGdUN3MlJoUEpQYQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Even Realities' app 2.3.2 needs new firmware on both the G2 glasses and the R1 ring - mixed-news.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQZVZrWnFJeWlfVGlLdlVieE5CSzc2NnBxR1VuTTZUbG4xLW5tcUt1b0hNMnRNR3ktVm5WYnJqNnBjdlVxdE11LTROZ2x6ZEE2Zk5uSU1zZ0ZfZ29udS1OTzNYSEdRVzhuN01YNUdSTHZRWWdSa2dPSG11dWJfSTEtZnVpazBfdw?oc=5) | reachable (200) | research_news_review, development_hacking |
 
 ## Meaning of states
 
