@@ -31,6 +31,12 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 <details>
 <summary><strong>Browse detailed newsroom notes</strong></summary>
 
+### October 10, 2026 — MentraOS community engineering findings
+
+**Across the Wire · Community-reported · Not GR verified.** Three upstream investigations cover BLE photo-transfer corruption during audio startup, dark-scene camera exposure timing, and G1 firmware-supported Latin characters. [Read the attributed technical wire report](../news/articles/2026-10-10-mentra-community-firmware-camera-and-g1-findings/).
+
+
+
 ### September 24, 2026 — INMO Air3 recalled for overheating hazard
 
 Canonical coverage: [verified CPSC recall note](news/articles/2026-09-24-inmo-air3-cpsc-recall.md). The official remedy is a V3.16 system update; GlassesResearch is preserving pre-/post-update thermal and performance behavior as a testing target without assuming what the firmware changes.
